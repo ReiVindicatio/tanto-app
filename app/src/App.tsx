@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import { applyFilter, getHistory, summarize, type Filter } from "./history";
 import { MINPO_REFORM_YEAR } from "./LawNote";
 import { shuffle } from "./shuffle";
+import { buildSession, dueSummary, NEW_PER_DAY } from "./srs";
 
 type Screen =
   | { kind: "home" }
@@ -43,7 +44,7 @@ export default function App() {
   const [screen, setScreen] = useState<Screen>({ kind: "home" });
   const [filter, setFilter] = useState<Filter>("all");
   const [includePreReform, setIncludePreReform] = useState(false);
-  const [ids, setIds] = useState<Map<string, string[]>>(new Map()); // 束 → 肢カードの ID（履歴の集計用）
+  const [ids, setIds] = useState<Map<string, { id: string; question_id: string }[]>>(new Map()); // 束 → 肢カード（集計用）
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/index.json`)
@@ -55,7 +56,9 @@ export default function App() {
   // 履歴の集計のため、ホームに戻るたびに各束の肢 ID を読み込む（キャッシュ済み）
   useEffect(() => {
     if (!sets || screen.kind !== "home") return;
-    Promise.all(sets.map(async (s) => [s.id, (await loadSet(s)).statements.filter((x) => x.truth_at_exam).map((x) => x.id)] as const)).then(
+    Promise.all(
+      sets.map(async (s) => [s.id, (await loadSet(s)).statements.filter((x) => x.truth_at_exam).map((x) => ({ id: x.id, question_id: x.question_id }))] as const),
+    ).then(
       (pairs) => setIds(new Map(pairs)),
     );
   }, [sets, screen.kind]);
@@ -68,6 +71,14 @@ export default function App() {
     let cards = data.statements.filter((s) => s.truth_at_exam);
     cards = applyFilter(cards, filter, history);
     if (infos.length > 1) cards = shuffle(cards);
+    setScreen({ kind: "statements", title, data, cards, examName: infos[0].exam_name, subjectName: infos[0].subject_name });
+  }
+
+  async function openReview(infos: SetInfo[], title: string) {
+    const data = merge(await Promise.all(infos.map(loadSet)));
+    // 新規カードは新しい年度から順に入れる（pool は新しい年度が先）
+    const pool = data.statements.filter((s) => s.truth_at_exam);
+    const { cards } = buildSession(pool);
     setScreen({ kind: "statements", title, data, cards, examName: infos[0].exam_name, subjectName: infos[0].subject_name });
   }
 
@@ -105,13 +116,25 @@ export default function App() {
             {subjects.map(([subjectName, infos]) => {
               const isMinpo = infos[0].subject === "minpo";
               const pool = infos.filter((s) => includePreReform || !isMinpo || s.exam.year >= MINPO_REFORM_YEAR);
-              const poolIds = pool.flatMap((s) => ids.get(s.id) ?? []);
-              const st = summarize(poolIds, history);
+              const poolItems = pool.flatMap((s) => ids.get(s.id) ?? []);
+              const st = summarize(poolItems.map((x) => x.id), history);
+              const srs = dueSummary(poolItems);
               return (
                 <div className="subject" key={subjectName}>
                   <h2>
                     {infos[0].exam_name} {subjectName}
                   </h2>
+                  <div className="set review">
+                    <div className="set-title">今日の復習（FSRS）</div>
+                    <div className="muted small">
+                      期限が来た肢 {srs.due}枚・今日の新規の残り {srs.newLeft}枚（1日{NEW_PER_DAY}枚まで）。同じ問の肢は1回に1枚まで
+                    </div>
+                    <div className="row">
+                      <button disabled={pool.length === 0} onClick={() => openReview(pool, `${subjectName} 今日の復習`)}>
+                        復習をはじめる
+                      </button>
+                    </div>
+                  </div>
                   {infos.length > 1 && (
                     <div className="set">
                       <div className="set-title">全年度から（シャッフル）</div>
@@ -135,7 +158,7 @@ export default function App() {
                   <details open={infos.length === 1}>
                     <summary>年度ごと</summary>
                     {infos.map((s) => {
-                      const y = summarize(ids.get(s.id) ?? [], history);
+                      const y = summarize((ids.get(s.id) ?? []).map((x) => x.id), history);
                       return (
                         <div className="set" key={s.id}>
                           <div className="set-title">
