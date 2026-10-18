@@ -39,7 +39,7 @@ export default function ExplanationView({ e }: { e: Explanation }) {
                 <div className="small">
                   {c.court} {c.date}
                 </div>
-                <blockquote>{c.holding}</blockquote>
+                <p className="small">判示の要旨（このアプリによる要約）：{c.holding}</p>
               </li>
             ))}
           </ul>

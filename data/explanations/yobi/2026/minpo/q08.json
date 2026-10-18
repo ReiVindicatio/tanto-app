@@ -1,0 +1,272 @@
+{
+ "question_id": "yobi-2026-minpo-q08",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-18",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q08-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。詐害行為取消権の行使には、詐害行為の時と、訴訟の口頭弁論終結時の両方で債務者が無資力であることが必要と解されている。",
+   "body": "詐害行為取消請求は、債務者が「債権者を害することを知ってした行為」の取消しを裁判所に請求するものである（424条1項）。債権者を害するとは、その行為によって債務者が無資力となり、債権者が十分な弁済を受けられなくなることをいうと解されている。そして、取消しの時点までに債務者が資力を回復していれば、取り消して財産を戻す必要がない。そのため、詐害行為の時だけでなく、口頭弁論終結時にも無資力であることが必要と解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者は、債務者が債権者を害することを知ってした行為の取消しを裁判所に請求することができる。",
+     "text_sha256": "22d988d8231e843109818b8d2f93e8f2bb2ba972e98650a949757943ef28191d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。無資力の要件と、それが口頭弁論終結時にも必要であることは解釈による説明で、判例は確認していない。"
+   ],
+   "id": "exp-yobi-2026-minpo-q08-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q08-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、離婚に伴う慰謝料の支払合意のうち、負担すべき額を超える部分について詐害行為取消権の行使を認める。",
+   "body": "財産権を目的としない行為は、詐害行為取消請求の対象にならない（424条2項）。しかし、離婚に伴う慰謝料の支払合意は、金銭を支払う合意なので、財産権を目的とする行為として扱われうる。判例（最判平成12年3月9日）は、離婚に伴う慰謝料として、配偶者が負担すべき損害賠償債務の額を超える金額を支払う合意をした場合、その超える部分について詐害行為取消権の対象になるとする。本肢では、相当な額300万円を超える400万円の限度で取り消すことができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、財産権を目的としない行為については、適用しない。",
+     "text_sha256": "22d988d8231e843109818b8d2f93e8f2bb2ba972e98650a949757943ef28191d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "離婚に伴う慰謝料の支払合意と詐害行為取消権",
+     "court": "最高裁判所",
+     "date": "平成12年3月9日",
+     "holding": "離婚に伴う慰謝料の支払合意のうち、配偶者の一方が負担すべき損害賠償債務の額を超える部分は、詐害行為取消権行使の対象となりうる（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/580"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は検索（二次資料）で年月日と判示の内容を確認した。"
+   ],
+   "id": "exp-yobi-2026-minpo-q08-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q08-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、債権譲渡の通知だけを切り離して詐害行為取消権の対象とすることはできないとする。",
+   "body": "詐害行為取消請求の対象は、債務者が債権者を害することを知ってした「行為」である（424条1項）。判例（最判平成10年6月12日）は、債務者が債権を譲渡し、確定日付のある通知をした場合、その通知は詐害行為取消権の対象とならないとする。通知は、債権譲渡を債務者や第三者に対抗するための要件にすぎず、それ自体は債務者の財産を減少させる行為ではないからである。したがって、債権譲渡そのものが詐害行為に当たらない以上、通知だけを取り消すことはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者は、債務者が債権者を害することを知ってした行為の取消しを裁判所に請求することができる。",
+     "text_sha256": "22d988d8231e843109818b8d2f93e8f2bb2ba972e98650a949757943ef28191d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "債権譲渡の通知と詐害行為取消権",
+     "court": "最高裁判所",
+     "date": "平成10年6月12日",
+     "holding": "債務者が自己の第三者に対する債権を譲渡した場合において、債務者がこれについてした確定日付のある債権譲渡の通知は、詐害行為取消権行使の対象とならない。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/578"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は検索（二次資料）で年月日と判示の内容を確認した。通知が財産を減少させる行為でないという理由づけは解説としての説明。"
+   ],
+   "id": "exp-yobi-2026-minpo-q08-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q08-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。相当の対価を得てした処分行為を取り消すには、その行為が隠匿等の処分をするおそれを現に生じさせるものであることも必要である。",
+   "body": "債務者が相当の対価を得て財産を処分した場合、債権者は、424条の2の3つの要件の「いずれにも該当する場合に限り」詐害行為取消請求をすることができる。すなわち、①その行為が、財産の種類の変更により、隠匿等の処分を「するおそれを現に生じさせるものであること」（同条1号）、②債務者がその行為の当時、隠匿等の処分をする意思を有していたこと（同条2号）、③受益者がその意思を知っていたこと（同条3号）である。本肢は②③だけで足りるとし、①を不要としている点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者が、その有する財産を処分する行為をした場合において、受益者から相当の対価を取得しているときは、債権者は、次に掲げる要件のいずれにも該当する場合に限り、その行為について、詐害行為取消請求をすることができる。",
+     "text_sha256": "183316633ad3c4ab7d5257e83b912117b52897c4d3698c6562722d7a54036026",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一　その行為が、不動産の金銭への換価その他の当該処分による財産の種類の変更により、債務者において隠匿、無償の供与その他の債権者を害することとなる処分（以下この条において「隠匿等の処分」という。）をするおそれを現に生じさせるものであること。",
+     "text_sha256": "183316633ad3c4ab7d5257e83b912117b52897c4d3698c6562722d7a54036026",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二　債務者が、その行為の当時、対価として取得した金銭その他の財産について、隠匿等の処分をする意思を有していたこと。",
+     "text_sha256": "183316633ad3c4ab7d5257e83b912117b52897c4d3698c6562722d7a54036026",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "三　受益者が、その行為の当時、債務者が隠匿等の処分をする意思を有していたことを知っていたこと。",
+     "text_sha256": "183316633ad3c4ab7d5257e83b912117b52897c4d3698c6562722d7a54036026",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minpo-q08-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q08-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。詐害行為取消権は訴えによって行使しなければならず、抗弁によって行使することはできない。",
+   "body": "債権者は、詐害行為の取消しを「裁判所に請求することができる」（424条1項）。民法は、この請求について「詐害行為取消請求に係る訴え」の被告や訴訟告知を定めており（424条の7）、訴えによる行使を前提としている。判例（最判昭和39年6月12日）も、詐害行為の取消しは訴えの方法によるべきであり、抗弁の方法によることは許されないとする。抗弁でも行使できるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者は、債務者が債権者を害することを知ってした行為の取消しを裁判所に請求することができる。",
+     "text_sha256": "22d988d8231e843109818b8d2f93e8f2bb2ba972e98650a949757943ef28191d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐害行為取消請求に係る訴えについては、次の各号に掲げる区分に応じ、それぞれ当該各号に定める者を被告とする。",
+     "text_sha256": "d2c8f7dd0b10714b9615fa2e4c3e90314c9ae3e5e366b765d756474a75d74594",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_7",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権者は、詐害行為取消請求に係る訴えを提起したときは、遅滞なく、債務者に対し、訴訟告知をしなければならない。",
+     "text_sha256": "d2c8f7dd0b10714b9615fa2e4c3e90314c9ae3e5e366b765d756474a75d74594",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "詐害行為取消権の行使方法（抗弁による行使の可否）",
+     "court": "最高裁判所",
+     "date": "昭和39年6月12日",
+     "holding": "民法424条の詐害行為の取消しは、訴えの方法によるべきであり、抗弁の方法によることは許されない。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/573"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は検索（二次資料）で年月日と判示の内容を確認した（判決の日付は二次資料の記載による）。判例は改正前の424条についてのもの。"
+   ],
+   "id": "exp-yobi-2026-minpo-q08-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

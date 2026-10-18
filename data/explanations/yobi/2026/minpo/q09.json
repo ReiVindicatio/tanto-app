@@ -1,0 +1,233 @@
+{
+ "question_id": "yobi-2026-minpo-q09",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-18",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q09-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。充当の順序について合意があるときは、弁済者の指定より合意が優先する。",
+   "body": "弁済者は、給付の時に充当すべき債務を指定できる（488条1項）。しかし、「前二条の規定にかかわらず、弁済をする者と弁済を受領する者との間に弁済の充当の順序に関する合意があるときは、その順序に従い、その弁済を充当する」（490条）。ＡＢ間に債務α、債務βの順に充当する合意がある以上、Ａが給付の際に債務βからと指定しても、合意の順序（α→β）で充当される。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "488",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁済をする者は、給付の時に、その弁済を充当すべき債務を指定することができる。",
+     "text_sha256": "a5dd9e0c39c43543240176fad5e48e73072ec85140eaa28915757124c584fb3c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "490",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の規定にかかわらず、弁済をする者と弁済を受領する者との間に弁済の充当の順序に関する合意があるときは、その順序に従い、その弁済を充当する。",
+     "text_sha256": "211a651aa59b8181b51a33ba31a1fccdd7c70ec40f5d02c33d7f20a91f06e916",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minpo-q09-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q09-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。数個の債務に費用・利息・元本があるときは、まず全ての債務の費用、次に利息、最後に元本の順で充当され、弁済者の指定はその各段階の中でしか働かない。",
+   "body": "債務者が数個の債務について元本のほか利息及び費用を支払うべき場合、全部を消滅させるのに足りない給付は、「順次に費用、利息及び元本に充当しなければならない」（489条1項）。弁済者による指定（488条）は、費用・利息・元本のいずれかの全てを消滅させるのに足りない場合に、その中でどの債務に充てるかについてだけ準用される（489条2項）。したがって、Ａが債務αからと指定しても、債務αの費用・利息・元本を済ませてから債務βに移るのではなく、まずα・βの費用、次にα・βの利息（その中でαを優先）、という順になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "489",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者が一個又は数個の債務について元本のほか利息及び費用を支払うべき場合（債務者が数個の債務を負担する場合にあっては、同一の債権者に対して同種の給付を目的とする数個の債務を負担するときに限る。）において、弁済をする者がその債務の全部を消滅させるのに足りない給付をしたときは、これを順次に費用、利息及び元本に充当しなければならない。",
+     "text_sha256": "539b3ed0f13f3072a315ebb00d339981665c4a1fe067afcdd1f5d9b9654cb74d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "489",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前条の規定は、前項の場合において、費用、利息又は元本のいずれかの全てを消滅させるのに足りない給付をしたときについて準用する。",
+     "text_sha256": "539b3ed0f13f3072a315ebb00d339981665c4a1fe067afcdd1f5d9b9654cb74d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "488",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁済をする者は、給付の時に、その弁済を充当すべき債務を指定することができる。",
+     "text_sha256": "a5dd9e0c39c43543240176fad5e48e73072ec85140eaa28915757124c584fb3c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minpo-q09-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q09-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。異議によって指定の効力を失わせられるのは、受領者が指定した場合に弁済者が異議を述べるときであり、弁済者の指定に受領者が異議を述べても効力は妨げられない。",
+   "body": "弁済者は、給付の時に充当すべき債務を指定できる（488条1項）。弁済者が指定しないときは受領者が指定できるが、「弁済をする者がその充当に対して直ちに異議を述べたときは、この限りでない」（同条2項）。異議の規定は、受領者による指定に対して弁済者が述べる場合のものである。弁済者Ａの指定に対して受領者Ｂが異議を述べても、Ａの指定の効力は妨げられない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "488",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁済をする者は、給付の時に、その弁済を充当すべき債務を指定することができる。",
+     "text_sha256": "a5dd9e0c39c43543240176fad5e48e73072ec85140eaa28915757124c584fb3c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "488",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "弁済をする者が前項の規定による指定をしないときは、弁済を受領する者は、その受領の時に、その弁済を充当すべき債務を指定することができる。ただし、弁済をする者がその充当に対して直ちに異議を述べたときは、この限りでない。",
+     "text_sha256": "a5dd9e0c39c43543240176fad5e48e73072ec85140eaa28915757124c584fb3c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minpo-q09-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q09-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。法定充当では、全ての債務が弁済期にあるときは、弁済期の先後より、債務者にとっての弁済の利益が多いものが優先する。",
+   "body": "合意も指定もないときは、488条4項の法定充当による。全ての債務が弁済期にあるときは、「債務者のために弁済の利益が多いものに先に充当する」（同項2号）。弁済期の先後が問題になるのは、「債務者のために弁済の利益が相等しいとき」である（同項3号）。債務α・βともに弁済期が到来している以上、債務βの方がＡにとって弁済の利益が多ければ、債務βから充当される。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "488",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "二　全ての債務が弁済期にあるとき、又は弁済期にないときは、債務者のために弁済の利益が多いものに先に充当する。",
+     "text_sha256": "a5dd9e0c39c43543240176fad5e48e73072ec85140eaa28915757124c584fb3c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "488",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "三　債務者のために弁済の利益が相等しいときは、弁済期が先に到来したもの又は先に到来すべきものに先に充当する。",
+     "text_sha256": "a5dd9e0c39c43543240176fad5e48e73072ec85140eaa28915757124c584fb3c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公式の○×は慣行（convention）による導出だったが、条文（488条4項2号・3号）からも○であることを確認した。"
+   ],
+   "id": "exp-yobi-2026-minpo-q09-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q09-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。弁済期も弁済の利益も等しいときは、各債務の額に応じて充当される。",
+   "body": "合意も指定もないときの法定充当では、弁済期・弁済の利益の順に比べ（488条4項2号・3号）、「前二号に掲げる事項が相等しい債務の弁済は、各債務の額に応じて充当する」（同項4号）。いずれの債務も弁済期が同時で、弁済の利益も等しいので、債務の額に応じて債務αと債務βに充当される。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "488",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "四　前二号に掲げる事項が相等しい債務の弁済は、各債務の額に応じて充当する。",
+     "text_sha256": "a5dd9e0c39c43543240176fad5e48e73072ec85140eaa28915757124c584fb3c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minpo-q09-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,213 @@
+{
+ "question_id": "yobi-2026-minpo-q07",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-18",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q07-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。将来発生する可能性のある条件付債権も抵当権の被担保債権にでき、登記の表示が実体と多少異なっても、真実その抵当権を登記する意思で登記した以上、設定は有効とされる。",
+   "body": "抵当権は、債務の担保に供した不動産から他の債権者に先立って弁済を受ける権利である（369条1項）。判例（最判昭和33年5月9日）は、将来発生する可能性のある条件付債権を被担保債権とする抵当権の設定も許されるとする。また、登記の表示が実体と完全に一致していなくても、当事者が真実その設定した抵当権を登記する意思で登記手続をしたのであれば、抵当権の設定は有効と解されている。本肢は、現存の債権と将来の条件付債権を「現存の貸金債権」として登記した場合でも有効とするもので、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "369",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権者は、債務者又は第三者が占有を移転しないで債務の担保に供した不動産について、他の債権者に先立って自己の債権の弁済を受ける権利を有する。",
+     "text_sha256": "d6b78d480b2f8cc38269bf4edd902590ef68b3386bc5d121e5b4b9ccdb6522e4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "将来の条件付債権を被担保債権とする抵当権",
+     "court": "最高裁判所",
+     "date": "昭和33年5月9日",
+     "holding": "将来発生する可能性のある条件付債権を被担保債権として抵当権を設定することも許される。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/496"
+     ]
+    }
+   ],
+   "notes": [
+    "本肢の事実（現存の債権と将来の条件付債権を現存の貸金債権として表示した登記）を直接扱った判例は、検索で特定できなかった。登記の表示が実体と異なっても有効とする部分は解釈による説明（要確認）。"
+   ],
+   "id": "exp-yobi-2026-minpo-q07-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q07-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。被担保債務の弁済が先で、抵当権設定登記の抹消はその後なので、同時履行を理由に支払を拒むことはできない。",
+   "body": "同時履行の抗弁（533条）は、双務契約の当事者が、相手方の債務の履行の提供があるまで自己の債務の履行を拒める権利である。判例（最判昭和57年1月19日）は、債務の弁済と抵当権設定登記の抹消登記手続とは、弁済が先に履行すべきもの（先履行）であり、同時履行の関係に立たないとする。抵当権は弁済によって消滅し、抹消登記はその結果として行うものだからである。したがって、Ｂは抹消登記と引換えでなければ支払わないと主張することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "533",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "双務契約の当事者の一方は、相手方がその債務の履行（債務の履行に代わる損害賠償の債務の履行を含む。）を提供するまでは、自己の債務の履行を拒むことができる。",
+     "text_sha256": "95fda827e77316b7aae0167132d09d24763b8a7bcc53a41b785f0fa63eff6774",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "被担保債務の弁済と抵当権設定登記の抹消の関係",
+     "court": "最高裁判所",
+     "date": "昭和57年1月19日",
+     "holding": "債務の弁済と抵当権設定登記の抹消登記手続とは、前者が後者に対し先履行の関係にあり、同時履行の関係に立つものではない。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/665"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は検索（二次資料）で年月日と判示の内容を確認した。"
+   ],
+   "id": "exp-yobi-2026-minpo-q07-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q07-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。免責的債務引受で担保権を引受人の債務に移すには、担保権を設定したのが引受人以外の者（物上保証人Ｃ）であれば、その承諾が必要である。",
+   "body": "債権者は、免責的債務引受によって債務者が免れる債務の担保として設定された担保権を、引受人が負担する債務に移すことができる（472条の4第1項本文）。ただし、「引受人以外の者がこれを設定した場合には、その承諾を得なければならない」（同項ただし書）。物上保証人Ｃは、Ｂのために担保を提供したのであり、新たな債務者Ｄのために担保を負担することまで引き受けたわけではないからである。Ｃの承諾がなくても移せるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者は、第四百七十二条第一項の規定により債務者が免れる債務の担保として設定された担保権を引受人が負担する債務に移すことができる。ただし、引受人以外の者がこれを設定した場合には、その承諾を得なければならない。",
+     "text_sha256": "7acc2c279f7f4b582c6cc074df77dbeffcdeb76235eece54104388fd9162809f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minpo-q07-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q07-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。被担保債権は金銭債権に限られず、売買契約に基づく引渡請求権のような債権を担保するためにも抵当権を設定できる。",
+   "body": "抵当権は、債務の担保に供した不動産から「自己の債権の弁済を受ける権利」であり（369条1項）、条文は被担保債権を金銭債権に限っていない。引渡請求権のような金銭債権以外の債権も、不履行になれば損害賠償債権（金銭債権）に変わるので、抵当権によって担保することができると解されている。設定できないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "369",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権者は、債務者又は第三者が占有を移転しないで債務の担保に供した不動産について、他の債権者に先立って自己の債権の弁済を受ける権利を有する。",
+     "text_sha256": "d6b78d480b2f8cc38269bf4edd902590ef68b3386bc5d121e5b4b9ccdb6522e4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "金銭債権以外の債権を被担保債権にできることは、解釈による説明。判例は確認していない。"
+   ],
+   "id": "exp-yobi-2026-minpo-q07-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q07-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。利息等を「最後の二年分」に限る規定は、後順位の抵当権者など他の債権者との関係のためのものであり、抵当不動産の第三取得者は、それだけを弁済しても抵当権を消滅させられない。",
+   "body": "抵当権者が利息その他の定期金を請求する権利を有するときは、「その満期となった最後の二年分についてのみ、その抵当権を行使することができる」（375条1項本文）。遅延損害金も同様である（同条2項）。この制限は、後順位抵当権者や一般債権者など他の債権者を保護するためのものと解されている。債務者や抵当不動産の第三取得者との関係では、抵当権は元本・利息・遅延損害金の全部を担保するので、Ｃが最後の2年分だけを弁済しても、抵当権は消滅しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "375",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権者は、利息その他の定期金を請求する権利を有するときは、その満期となった最後の二年分についてのみ、その抵当権を行使することができる。",
+     "text_sha256": "f107b60752dc2f052e9aacfb4f337f2133f027b1bcd42f1cf881feb2e7b52bbd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "375",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、抵当権者が債務の不履行によって生じた損害の賠償を請求する権利を有する場合におけるその最後の二年分についても適用する。",
+     "text_sha256": "f107b60752dc2f052e9aacfb4f337f2133f027b1bcd42f1cf881feb2e7b52bbd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。375条の制限が第三取得者との関係では働かないことは解釈による説明で、判例は確認していない（判例が存在するかも未確認）。"
+   ],
+   "id": "exp-yobi-2026-minpo-q07-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
