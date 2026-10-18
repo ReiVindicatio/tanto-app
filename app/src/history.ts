@@ -1,48 +1,26 @@
-// 正答履歴。端末内（localStorage）にだけ保存する。サーバーには送らない
-// 肢カードの回答を肢 ID ごとに記録する（FSRS を入れるときの土台）
+// 正答履歴の集計と絞り込み。中身は回答ログから作った状態（learning.ts）を読むだけ
+import { currentState, type HistoryRecord } from "./learning";
 
-export type Record = { attempts: number; correct: number; last: boolean; at: string };
-type Store = { [statementId: string]: Record };
-
-const KEY = "tanto.history.v1";
-
-function load(): Store {
-  try {
-    return JSON.parse(localStorage.getItem(KEY) ?? "{}") as Store;
-  } catch {
-    return {};
-  }
-}
+export type { HistoryRecord as Record };
+type Store = Map<string, HistoryRecord>;
 
 export function getHistory(): Store {
-  return load();
-}
-
-export function recordAnswer(statementId: string, isCorrect: boolean): void {
-  const store = load();
-  const prev = store[statementId] ?? { attempts: 0, correct: 0, last: false, at: "" };
-  store[statementId] = {
-    attempts: prev.attempts + 1,
-    correct: prev.correct + (isCorrect ? 1 : 0),
-    last: isCorrect,
-    at: new Date().toISOString(),
-  };
-  localStorage.setItem(KEY, JSON.stringify(store));
+  return currentState().history;
 }
 
 export type Filter = "all" | "unanswered" | "wrong";
 
-export function applyFilter<T extends { id: string }>(cards: T[], filter: Filter, store: Store = load()): T[] {
-  if (filter === "unanswered") return cards.filter((c) => !store[c.id]);
-  if (filter === "wrong") return cards.filter((c) => store[c.id] && !store[c.id].last);
+export function applyFilter<T extends { id: string }>(cards: T[], filter: Filter, store: Store = getHistory()): T[] {
+  if (filter === "unanswered") return cards.filter((c) => !store.has(c.id));
+  if (filter === "wrong") return cards.filter((c) => store.has(c.id) && !store.get(c.id)!.last);
   return cards;
 }
 
-export function summarize(ids: string[], store: Store = load()): { answered: number; lastCorrect: number } {
+export function summarize(ids: string[], store: Store = getHistory()): { answered: number; lastCorrect: number } {
   let answered = 0;
   let lastCorrect = 0;
   for (const id of ids) {
-    const r = store[id];
+    const r = store.get(id);
     if (!r) continue;
     answered++;
     if (r.last) lastCorrect++;

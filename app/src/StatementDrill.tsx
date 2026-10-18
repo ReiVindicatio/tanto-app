@@ -4,8 +4,7 @@ import QuestionBody, { Context } from "./QuestionBody";
 import ExplanationView from "./ExplanationView";
 import LawNote from "./LawNote";
 import { shuffle } from "./shuffle";
-import { recordAnswer } from "./history";
-import { review } from "./srs";
+import { recordAnswer } from "./learning";
 
 const BASIS_NOTE: Record<string, string> = {
   convention: "この肢の○×は、出題形式の慣行（正解の組合せ＝該当する肢の全部）から導いたものです。",
@@ -82,7 +81,6 @@ export default function StatementDrill({
     if (answer !== null) return;
     setAnswer(v);
     recordAnswer(s.id, v === truth);
-    review(s.id, v === truth);
     setScore((sc) => ({ correct: sc.correct + (v === truth ? 1 : 0), total: sc.total + 1 }));
   }
 
