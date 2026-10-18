@@ -1,6 +1,6 @@
 # T001 自動テストと CI
 
-- 状態：設計レビュー
+- 状態：実装レビュー（設計レビュー OK：2026-10-18）
 - マイルストーン：M1 基盤
 - 優先度：高
 - 依存：
@@ -59,13 +59,42 @@ cd app && npm run e2e     # E2E
 
 README と CLAUDE.md（進め方）に、「チケットの実装レビューに出す前に、この3つを流す」と書く。
 
-## 設計で決めてほしいこと
+## 設計レビューで決まったこと（2026-10-18）
+
+1. 正答 PDF の `-tsv` を段階1で保存する（「保存したほうがいい」）
+2. ツールは勧めどおり（作り直して差分を見る／Vitest＋Playwright）
+3. push は案A：チケットが完了したときに Claude が main に push してよい（CLAUDE.md に書く）
+
+## 設計で決めてほしいこと（レビュー前の記録）
 
 1. 正答 PDF の `-tsv` を段階1で保存し、段階2以降を保存済みファイルだけから作り直せるようにする（`data/extracted/` に .tsv が増える）
 2. ツール：パイプラインは「作り直して差分を見る」方式、アプリは Vitest＋Playwright
 3. **CI を動かすには GitHub への push が要る**（今は手元に commit がたまっていて、push はしていない）。push をどうするか
    - 案A（勧め）：チケットが完了したときに、Claude が main に push してよい（CLAUDE.md に書く）
    - 案B：今まで通り、ユーザーが指示したときだけ push する（CI は push したときにだけ流れる）
+
+## 実装（2026-10-18）
+
+| 対象 | ファイル |
+|---|---|
+| 段階1で正答表の座標を保存 | `pipeline/extract.py`（`<名前>_正答.tsv`、99件・約3MB）、`pipeline/parse_answers.py` は .tsv を読むだけに（PDF・poppler を使わない） |
+| パイプラインの回帰 | `pipeline/targets.json`（対象16件）、`pipeline/regen.py`（段階2以降と解説の検査・書き出しを作り直す。約10秒） |
+| 単体テスト（Vitest・19件） | `app/src/{learning,store,srs,history,grade}.test.ts`、`app/src/test/fakes.ts` |
+| E2E（Playwright・6件） | `app/e2e/{drill,records}.spec.ts`、`app/playwright.config.ts` |
+| CI | `.github/workflows/ci.yml`（pipeline：Python 3.9 で regen → git diff／app：build → Vitest → Playwright） |
+| 文書 | README（テストの流し方）、CLAUDE.md（実装レビューの前に3つとも流す） |
+
+### 確認した結果（手元）
+
+- regen を流すと、小問の欄（`sub_questions: []`）を足す前に作った `data/parsed/` の古いファイル13件に、その欄が増えた（正本・アプリのデータは変化なし）。**作り直していない古いファイルが見つかった**ので、作り直した結果をコミットする。2回目の regen は差分なし（決定的）
+- 段階1を流し直しても `.txt` は1件も変わらない（`.meta.json` に `tsv` 欄が増えただけ）
+- 単体テスト 19件・E2E 6件がすべて通る（E2E 約11秒）
+- **わざと壊した確認**：導出の根拠ラベルを1行変える → regen で32ファイルに差分。採点の順不同の判定を1行変える → 単体テストが1件落ちる。元に戻すと通る
+- 途中で E2E が1件落ちた：年度が1つの科目は「年度ごと」が最初から開いているのに、テストがクリックで閉じていた（テスト側の誤り。開いた状態にするよう直した）
+
+### 残っていること
+
+- **GitHub Actions はまだ動かしていない**（push は完了時の約束なので）。実装レビュー OK の後に push して、CI が緑になるのを確かめてから完了にする。CI の Python 3.9 が使えないなど、環境の差で落ちたら直す
 
 ## 完了条件
 

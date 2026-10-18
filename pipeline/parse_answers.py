@@ -1,7 +1,7 @@
 """段階2b：正答 PDF の表を構造化する（決定的）。
 
 正答表は2段組（または1段）で、「問」「配点」「備考」のセルが複数の No 行にまたがって縦に結合されている。
--layout の文字並びでは結合セルの位置がずれるので、pdftotext -tsv の座標で読む。
+-layout の文字並びでは結合セルの位置がずれるので、pdftotext -tsv の座標で読む（段階1で保存した .tsv を読む）。
 
 - 列：見出し行（問・No・解答・配点・備考）の x 座標に、各語を最も近い列として割り当てる
 - 行：No 列の語が1行
@@ -16,11 +16,10 @@ from __future__ import annotations
 import argparse
 import re
 import statistics
-import subprocess
 import sys
 from dataclasses import dataclass
 
-from common import EXAM_IDS, GROUP_IDS, PARSED, ROOT, manifest_entry, nfkc, write_json, year_parts
+from common import EXAM_IDS, EXTRACTED, GROUP_IDS, PARSED, ROOT, manifest_entry, nfkc, write_json, year_parts
 
 HEADER_WORDS = {"問": "q", "No": "no", "№": "no", "解答": "ans", "配点": "pts", "備": "rem", "考": "rem2", "備考": "rem"}
 CENTER_TOL = 3.0  # 結合セルの中央と No 行の範囲の中央の許容差（pt）
@@ -44,10 +43,10 @@ class Word:
         return self.y + self.h / 2
 
 
-def read_words(pdf) -> list[Word]:
-    r = subprocess.run(["pdftotext", "-tsv", str(pdf), "-"], capture_output=True, text=True, check=True)
+def read_words(tsv_path) -> list[Word]:
+    """段階1で保存した pdftotext -tsv の出力を読む（PDF は直接読まない。T001）"""
     words = []
-    for line in r.stdout.splitlines()[1:]:
+    for line in tsv_path.read_text(encoding="utf-8").splitlines()[1:]:
         f = line.split("\t")
         if f[0] != "5":
             continue
@@ -90,8 +89,8 @@ def columns_for_page(words: list[Word]) -> tuple[float, list[tuple[str, int, flo
     return hy, cols
 
 
-def parse(pdf) -> list[dict]:
-    words = read_words(pdf)
+def parse(tsv_path) -> list[dict]:
+    words = read_words(tsv_path)
     questions: list[dict] = []
     for page in sorted({w.page for w in words}):
         pw = [w for w in words if w.page == page]
@@ -189,8 +188,11 @@ def main() -> None:
 
     rel = f"data/raw/{args.exam}/短答/{args.year}/{args.group}_正答.pdf"
     entry = manifest_entry(rel)
+    tsv = EXTRACTED / args.exam / "短答" / args.year / f"{args.group}_正答.tsv"
+    if not tsv.exists():
+        sys.exit(f"🔴 {tsv.relative_to(ROOT)} がない（pipeline/extract.py で作る）")
     try:
-        questions = parse(ROOT / rel)
+        questions = parse(tsv)
     except ValueError as e:
         sys.exit(f"🔴 正答表のパースで停止：{e}")
     if not questions:

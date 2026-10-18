@@ -9,7 +9,7 @@
 Python 3.9 以上（標準ライブラリのみ）と poppler（`brew install poppler`）が要る。
 
 ```
-python3 pipeline/extract.py --match R08-2026                      # 段階1：テキスト化（品質スコア・科目見出し）
+python3 pipeline/extract.py --match R08-2026                      # 段階1：テキスト化（品質スコア・科目見出し・正答表の座標 .tsv）
 python3 pipeline/parse_answers.py R08-2026 刑法刑事訴訟法           # 段階2b：正答表
 python3 pipeline/parse_questions.py R08-2026 刑法刑事訴訟法 刑法    # 段階2a：問題文
 python3 pipeline/validate.py R08-2026 刑法刑事訴訟法 刑法           # 段階3：検証 → reports/validation/
@@ -18,6 +18,16 @@ python3 pipeline/egov.py 民法 5 6                                  # 保存済
 python3 pipeline/check_explanations.py yobi 2026 minpo 1           # 段階6の検査：解説と公式の○×・条文の照合
 python3 pipeline/export.py                                         # 段階7：検証が ✅ のものだけ app/public/data/ へ
 ```
+
+## テスト（T001）
+
+```
+python3 pipeline/regen.py && git diff --exit-code --stat data/ app/public/data/ reports/   # パイプラインの回帰（作り直して差分なし）
+cd app && npm test                         # 単体テスト（Vitest）
+cd app && npm run build && npm run e2e     # E2E（Playwright。初回は npx playwright install chromium）
+```
+
+GitHub Actions（`.github/workflows/ci.yml`）が push ごとに同じものを流す。取り込みを足したら `pipeline/targets.json` に1行足す。
 
 ## アプリの起動
 

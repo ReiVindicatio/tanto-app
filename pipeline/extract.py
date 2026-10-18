@@ -4,6 +4,7 @@
 - 出力は data/extracted/ に data/raw/ と同じ構成で <名前>.txt と <名前>.meta.json
   - .txt は pdftotext の出力そのもの（ページ境界は \\f のまま）。AI 補正はかけない
   - .meta.json に方式・ツールの版・ページ境界・品質スコア・科目見出しの位置を残す
+  - 正答 PDF は表の座標（pdftotext -tsv）も <名前>.tsv に保存する（parse_answers.py が読む）
 - 品質スコアが閾値未満のものは status=needs_ocr とし、後段では使わない
 
 使い方：
@@ -106,6 +107,16 @@ def extract(entry: dict, tool_version: str) -> dict:
     out_txt.parent.mkdir(parents=True, exist_ok=True)
     out_txt.write_text(text, encoding="utf-8")
 
+    # 正答 PDF は表を座標で読む（parse_answers.py）。段階2以降を保存済みファイルだけで作り直せるよう、
+    # pdftotext -tsv の出力もここで保存する（poppler の版の違いで結果が変わらないように。T001）
+    tsv_path = None
+    if entry.get("kind") == "正答":
+        t = subprocess.run(["pdftotext", "-tsv", str(pdf), "-"], capture_output=True)
+        if t.returncode != 0:
+            raise SystemExit(f"🔴 pdftotext -tsv が失敗：{entry['path']}")
+        tsv_path = out_txt.with_suffix(".tsv")
+        tsv_path.write_text(t.stdout.decode("utf-8"), encoding="utf-8")
+
     meta = {
         "source": {"path": entry["path"], "sha256": entry["sha256"], "source_url": entry.get("source_url")},
         "method": "pdftotext",
@@ -116,6 +127,7 @@ def extract(entry: dict, tool_version: str) -> dict:
         "pages": len(pages),
         "page_start_lines": page_start_lines,
         "sections": find_sections(lines) if status == "ok" else [],
+        "tsv": str(tsv_path.relative_to(ROOT)) if tsv_path else None,
     }
     out_meta.write_text(json.dumps(meta, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     return meta

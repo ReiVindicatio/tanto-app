@@ -1,0 +1,42 @@
+# T001：push ごとに、パイプラインの回帰とアプリのテストを流す
+name: CI
+on:
+  push:
+  pull_request:
+
+jobs:
+  pipeline:
+    # 段階2以降を保存済みファイルだけから作り直し、コミット済みの結果と差分がないことを確かめる
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.9" # 手元と同じ版（Unicode の正規化の結果をそろえる）
+      - run: python pipeline/regen.py
+      - run: git diff --exit-code --stat data/ app/public/data/ reports/
+
+  app:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - run: npm ci
+      - run: npm run build
+      - run: npm test
+      - run: npx playwright install --with-deps chromium
+      - run: npm run e2e
+        env:
+          CI: "true"
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-results
+          path: app/test-results
