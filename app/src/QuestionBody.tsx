@@ -45,8 +45,13 @@ export default function QuestionBody({
       <Context q={q} />
       {statements.length > 0 && (
         <ol className="statements">
-          {statements.map((s) => (
+          {statements.map((s, i) => (
             <li key={s.id} className={s.id === highlight ? "highlight" : ""}>
+              {s.sub !== undefined && s.sub !== statements[i - 1]?.sub && (
+                <p className="stem">
+                  {q.sub_questions[s.sub].marker} {q.sub_questions[s.sub].stem}
+                </p>
+              )}
               <span className="label">{s.label}．</span>
               <span>{s.text}</span>
               {showTruth && s.truth_at_exam && (

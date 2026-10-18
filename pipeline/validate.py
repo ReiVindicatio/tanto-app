@@ -42,6 +42,8 @@ def rebuild(q: dict) -> str:
     pieces = [(q["line_range"][0], f"〔第{q['number']}問〕(配点:{q['points']})"), (q["line_range"][0] + 0.5, q["stem"])]
     for c in q["context"]:
         pieces.append((c["line_range"][0], f"【{c['kind']}】" + c["text"]))
+    for sq in q.get("sub_questions", []):
+        pieces.append((sq["line_range"][0], sq["marker"] + sq["stem"]))
     for s in q["statements"]:
         tail = f"[No.{s['slot_no']}]" if "slot_no" in s else ""
         pieces.append((s["line_range"][0], f"{s['label']}." + s["text"] + tail))
@@ -100,7 +102,11 @@ def validate_question(r: Report, q: dict, a: dict | None, lines: list[str]) -> N
     if not all(isinstance(x, int) for x in answers):
         return
 
-    r.check(f"{p} 肢ラベルが連番", label_sequence_ok(st_labels), "".join(st_labels))
+    if fmt == "compound":
+        groups = [[s["label"] for s in q["statements"] if s.get("sub") == g] for g in range(len(q["sub_questions"]))]
+        r.check(f"{p} 小問ごとに肢ラベルが連番", all(gr and label_sequence_ok(gr) for gr in groups), str(groups))
+    else:
+        r.check(f"{p} 肢ラベルが連番", label_sequence_ok(st_labels), "".join(st_labels))
     if q["choices"]:
         nums = [c["number"] for c in q["choices"]]
         r.check(f"{p} 選択肢が1からの連番", nums == list(range(1, len(nums) + 1)), str(nums))
@@ -134,6 +140,10 @@ def validate_question(r: Report, q: dict, a: dict | None, lines: list[str]) -> N
                if not c["blanks"] or any(b["word"] not in words or (max_blank and b["blank"] > max_blank) for b in c["blanks"])]
         r.check(f"{p} 穴埋め：選択肢の空欄と語が実在する", not bad and max_blank is not None, f"不正な選択肢 {bad}／空欄 ①〜{max_blank}")
         r.check(f"{p} 穴埋め：解答が選択肢の範囲", len(answers) == 1 and 1 <= answers[0] <= len(q["choices"]), str(answers))
+    elif fmt == "compound":
+        groups = [[s for s in q["statements"] if s.get("sub") == g] for g in range(len(q["sub_questions"]))]
+        r.check(f"{p} 小問：解答欄が小問ごとに1つ", [s.get("sub") for s in q["answer_slots"]] == list(range(len(groups))))
+        r.check(f"{p} 小問：解答が小問の肢の範囲", all(1 <= answers[g] <= len(groups[g]) for g in range(len(groups))) if len(answers) == len(groups) else False, str(answers))
     elif fmt == "true_false_each":
         r.check(f"{p} 各肢○×：No の数と肢の数が一致", len(q_nos) == len(st_labels), f"No {len(q_nos)}／肢 {len(st_labels)}")
         mapping = {s["no"]: s.get("statement_label") for s in q["answer_slots"]}

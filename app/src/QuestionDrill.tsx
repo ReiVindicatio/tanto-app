@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import type { DataSet, Question, SetInfo } from "./types";
 import QuestionBody from "./QuestionBody";
 import { grade, slotOptions, type Grade } from "./grade";
+import LawNote from "./LawNote";
 
 export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; data: DataSet; onExit: () => void }) {
   const [i, setI] = useState(0);
@@ -39,7 +40,6 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
 
   const q = data.questions[i];
   const statements = q.statements.map((id) => sById.get(id)!);
-  const options = slotOptions(q);
 
   function pick(k: number, v: number) {
     if (result) return;
@@ -78,10 +78,11 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
             <div className="slot-name">
               No.{slot.no}
               {slot.statement_label && `（${slot.statement_label}）`}
+              {slot.sub !== undefined && `（小問${q.sub_questions[slot.sub].marker}）`}
               {q.unordered && k === 0 && <span className="muted small">　順不同</span>}
             </div>
             <div className="row">
-              {options.map((o) => {
+              {slotOptions(q, k, statements).map((o) => {
                 const chosen = picks[k] === o.value;
                 const cls = [
                   "opt",
@@ -114,6 +115,7 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
             {result.earned} / {q.points} 点
           </div>
           {q.scoring.raw_note && <div className="muted small">正答表の備考：{q.scoring.raw_note}</div>}
+          <LawNote q={q} />
           <button onClick={next}>次へ</button>
         </div>
       )}

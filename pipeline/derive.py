@@ -17,7 +17,7 @@ from common import EXAM_IDS, GROUP_IDS, PARSED, ROOT, SUBJECT_IDS, year_parts
 
 QUESTIONS = ROOT / "data" / "questions"
 SITE_URL = "https://www.moj.go.jp/jinji/shihoushiken/"
-DERIVABLE = {"combination", "single_choice", "multi_select_unordered", "true_false_each"}
+DERIVABLE = {"combination", "single_choice", "multi_select_unordered", "true_false_each", "compound"}
 
 
 class DeriveError(Exception):
@@ -25,11 +25,30 @@ class DeriveError(Exception):
 
 
 def derive_truths(q: dict, answers: list[int]) -> dict[str, dict] | None:
-    """肢ラベル → {value, basis}。導出しない問は None。"""
+    """肢ID → {value, basis}。導出しない問は None。"""
+    if q["format"] not in DERIVABLE:
+        return None
+    if q["format"] == "compound":
+        # 小問ごとに単一選択として導出する
+        out = {}
+        for g, sq in enumerate(q["sub_questions"]):
+            sub_q = {**q, "format": sq["format"], "polarity": sq["polarity"],
+                     "statements": [s for s in q["statements"] if s.get("sub") == g]}
+            t = derive_truths(sub_q, [answers[g]])
+            if t is None:
+                return None
+            out.update(t)
+        return out
+    by_label = derive_by_label(q, answers)
+    if by_label is None:
+        return None
+    return {s["id"]: by_label[s["label"]] for s in q["statements"]}
+
+
+def derive_by_label(q: dict, answers: list[int]) -> dict[str, dict] | None:
+    """肢ラベル → {value, basis}（小問のない問）。"""
     fmt, pol = q["format"], q["polarity"]
     labels = [s["label"] for s in q["statements"]]
-    if fmt not in DERIVABLE:
-        return None
 
     if fmt == "true_false_each":
         by_label = {s["statement_label"]: s["no"] for s in q["answer_slots"]}
@@ -71,13 +90,22 @@ def derive_truths(q: dict, answers: list[int]) -> dict[str, dict] | None:
 
 
 def check_consistency(q: dict, truths: dict[str, dict], answers: list[int]) -> None:
-    """導出した○×から公式解答が再現できるか（想定外の分布はここで止める）。"""
+    """導出した○×から公式解答が再現できるか（想定外の分布はここで止める）。truths は肢ID → {value, basis}。"""
     n = q["number"]
     fmt, pol = q["format"], q["polarity"]
     if fmt == "true_false_each":
         return
+    if fmt == "compound":
+        for g, sq in enumerate(q["sub_questions"]):
+            side = sq["polarity"] == "correct"
+            ids = [s["id"] for s in q["statements"] if s.get("sub") == g]
+            hits = [k + 1 for k, sid in enumerate(ids) if truths[sid]["value"] == side]
+            if hits != [answers[g]]:
+                raise DeriveError(f"問{n} {sq['marker']}：導出した○×で当てはまる肢が {hits}（公式解答 {answers[g]}）")
+        return
+    label_of = {s["id"]: s["label"] for s in q["statements"]}
     side = pol == "correct"
-    p_side = {lab for lab, t in truths.items() if t["value"] == side}
+    p_side = {label_of[sid] for sid, t in truths.items() if t["value"] == side}
     if fmt == "combination":
         matches = [c["number"] for c in q["choices"] if set(c["labels"]) <= p_side]
         if q["exhaustive"]:
@@ -106,7 +134,7 @@ def build(qdoc: dict, adoc: dict, meta: dict) -> dict:
         answers = [s["answer"] for s in a["slots"]]
         truths = derive_truths(q, answers)
         if truths is not None:
-            if set(truths) != {s["label"] for s in q["statements"]}:
+            if set(truths) != {s["id"] for s in q["statements"]}:
                 raise DeriveError(f"問{q['number']}：○×が決まらない肢がある")
             check_consistency(q, truths, answers)
         flags = list(q["flags"])
@@ -124,12 +152,15 @@ def build(qdoc: dict, adoc: dict, meta: dict) -> dict:
             "unordered": q["unordered"],
             "stem": q["stem"],
             "context": [{"kind": c["kind"], "text": c["text"]} for c in q["context"]],
+            "sub_questions": [{"marker": sq["marker"], "stem": sq["stem"], "format": sq["format"],
+                               "polarity": sq["polarity"]} for sq in q.get("sub_questions", [])],
             "requires_context": q["requires_context"],
             "choices": q["choices"],
             "answer_slots": [
                 {"no": s["no"], "official_answer": s["answer"],
                  **({"statement_label": slot_by_no[s["no"]]["statement_label"]}
-                    if slot_by_no[s["no"]].get("statement_label") else {})}
+                    if slot_by_no[s["no"]].get("statement_label") else {}),
+                 **({"sub": slot_by_no[s["no"]]["sub"]} if "sub" in slot_by_no[s["no"]] else {})}
                 for s in a["slots"]
             ],
             "scoring": {"partial_credit": a["partial_credit"], "no_partial_credit": a["no_partial_credit"],
@@ -149,18 +180,24 @@ def build(qdoc: dict, adoc: dict, meta: dict) -> dict:
         questions.append(qrec)
 
         for s in q["statements"]:
-            t = truths[s["label"]] if truths else None
+            t = truths[s["id"]] if truths else None
             truth = None
             if t:
+                if q["format"] == "true_false_each":
+                    used = [x for x in a["slots"] if x["no"] == s.get("slot_no")]
+                elif q["format"] == "compound":
+                    used = [x for x in a["slots"] if slot_by_no[x["no"]].get("sub") == s.get("sub")]
+                else:
+                    used = a["slots"]
                 truth = {"value": t["value"], "derivation": q["format"], "basis": t["basis"],
-                         "derived_from": {"slots": [{"no": x["no"], "official_answer": x["answer"]} for x in a["slots"]
-                                                    if q["format"] != "true_false_each" or x["no"] == s.get("slot_no")]}}
+                         "derived_from": {"slots": [{"no": x["no"], "official_answer": x["answer"]} for x in used]}}
             statements.append({
                 "id": s["id"],
                 "question_id": q["id"],
                 "label": s["label"],
                 "text": s["text"],
-                "requires_context": q["requires_context"],
+                "requires_context": q["requires_context"] or "sub" in s,
+                **({"sub": s["sub"]} if "sub" in s else {}),
                 "truth_at_exam": truth,
                 "truth_current": {"status": "unreviewed", "value": None, "basis": None, "law_change_refs": [],
                                   "reviewed_by": None, "reviewed_at": None},

@@ -20,8 +20,9 @@ from common import (EXAM_IDS, EXTRACTED, PAGE_NUMBER_RE, PARSED, ROOT, SUBJECT_I
 QUESTION_RE = re.compile(r"^\s*〔第([0-9０-９]+)問〕（配点：([0-9０-９]+)）\s*$")
 BLOCK_RE = re.compile(r"^\s*【([^】]+)】\s*$")
 LABELS_KANA = "アイウエオカキクケコ"
-STATEMENT_RE = re.compile(r"^\s+([アイウエオカキクケコ]|[１-９])．")
-CHOICE_RE = re.compile(r"^[１-９]．")  # 選択肢は行頭（字下げなし）
+STATEMENT_RE = re.compile(r"^\s+([アイウエオカキクケコ]|[１-９])[．.]")  # 半角の「.」の年度もある（H28）
+CHOICE_RE = re.compile(r"^[１-９][．.]")  # 選択肢は行頭（字下げなし）
+SUB_RE = re.compile(r"^\s*([⑴-⑼])(?!及び|又は|から|、|，)\s*(.*)$")  # 小問（⑴⑵…）の見出し（H26 問5）。「⑴及び⑵に答えなさい」は除く
 SLOT_RE = re.compile(r"\[No\.(\d+)\]")  # norm_slots 後の文字列に使う
 RANGE_RE = re.compile(r"([アイウエオカキクケコ])から([アイウエオカキクケコ])の順に\[No\.(\d+)\]から\[No\.(\d+)\]")
 TRAILING_SLOT_RE = re.compile(r"\s*［(?:No\.|№)\s*([0-9０-９]+)］\s*$")
@@ -130,6 +131,7 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
     choice_lines: list[tuple[int, str]] = []
     state = "stem"
     cur_block: dict | None = None
+    subs: list[dict] = []             # 小問（⑴⑵…）
     flags: list[str] = []
 
     for ln, line in body:
@@ -150,14 +152,23 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
                 cur_block = {"kind": kind, "lines": [], "line_range": [ln, ln]}
                 blocks.append(cur_block)
             continue
+        ms = SUB_RE.match(line)
+        if ms and state in ("stem", "statements", "substem"):
+            subs.append({"marker": ms.group(1), "lines": [ms.group(2)], "line_range": [ln, ln]})
+            state = "substem"
+            continue
         if CHOICE_RE.match(line):
             state = "choices"
-        elif state in ("stem", "statements") and STATEMENT_RE.match(line):
+        elif state in ("stem", "statements", "substem") and STATEMENT_RE.match(line):
             state = "statements"
-            statements.append({"label": STATEMENT_RE.match(line).group(1), "lines": [], "line_range": [ln, ln]})
+            statements.append({"label": STATEMENT_RE.match(line).group(1), "lines": [], "line_range": [ln, ln],
+                               "group": len(subs) - 1 if subs else None})
 
         if state == "stem":
             stem_lines.append((ln, line))
+        elif state == "substem":
+            subs[-1]["lines"].append(line)
+            subs[-1]["line_range"][1] = ln
         elif state == "context":
             cur_block["lines"].append(line)
             cur_block["line_range"][1] = ln
@@ -174,6 +185,17 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
     stem_n = norm_slots(stem)
     block_kinds = {b["kind"] for b in blocks}
     fmt, polarity = detect_format(stem_n, bool(choice_lines), block_kinds)
+    sub_questions = []
+    for g, sub in enumerate(subs):
+        sstem = join_lines(sub["lines"])
+        sn = norm_slots(sstem)
+        sfmt, spol = detect_format(sn, False, set())
+        sub_questions.append({"marker": sub["marker"], "stem": sstem, "format": sfmt, "polarity": spol,
+                              "slot_no": [int(n) for n in SLOT_RE.findall(sn)], "line_range": sub["line_range"]})
+    if subs:
+        fmt, polarity = "compound", None
+        if any(sq["format"] != "single_choice" or len(sq["slot_no"]) != 1 for sq in sub_questions):
+            flags.append("小問の形式が単一選択でない、または解答欄が1つでない")
     if fmt == "unknown":
         flags.append("形式を判定できない")
 
@@ -187,6 +209,8 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
             flags.append("解答欄の範囲（肢の数と No の数）が合わない")
         for k in range(n1 - n0 + 1):
             slots.append({"no": n0 + k, "statement_label": LABELS_KANA[a + k] if a + k <= b else None})
+    elif sub_questions:
+        slots = [{"no": n, "sub": g} for g, sq in enumerate(sub_questions) for n in sq["slot_no"]]
     else:
         slots = [{"no": int(n)} for n in SLOT_RE.findall(stem_n)]
     unordered = "順不同" in stem_n
@@ -194,18 +218,22 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
     out_statements = []
     for s in statements:
         text = join_lines(s["lines"])
-        text = re.sub(r"^([アイウエオカキクケコ]|[１-９])．", "", text)
+        text = re.sub(r"^([アイウエオカキクケコ]|[１-９])[．.]", "", text)
         slot_no = None
         mt = TRAILING_SLOT_RE.search(text)
         if mt:
             slot_no = to_int(mt.group(1))
             text = text[:mt.start()]
+        group = s["group"]
+        sid = label_id(s["label"]) if group is None else f"{group + 1}-{label_id(s['label'])}"
         st = {
-            "id": f"{ids['question_id']}-{label_id(s['label'])}",
+            "id": f"{ids['question_id']}-{sid}",
             "label": s["label"],
             "text": text,
             "line_range": s["line_range"],
         }
+        if group is not None:
+            st["sub"] = group
         if slot_no is not None:
             st["slot_no"] = slot_no
         out_statements.append(st)
@@ -228,6 +256,7 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
         "statements": out_statements,
         "choices": choices,
         "answer_slots": slots,
+        "sub_questions": sub_questions,
         "line_range": [body[0][0] - 1, body[-1][0]] if body else None,
         "flags": flags,
     }

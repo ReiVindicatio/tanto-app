@@ -55,18 +55,24 @@ def read_words(pdf) -> list[Word]:
     return words
 
 
+def head_key(text: str) -> str:
+    """見出しの表記ゆれ（Ｎｏ.／No／№）をそろえる。"""
+    t = nfkc(text.replace("№", "No")).replace(" ", "")
+    return t.rstrip(".")
+
+
 def columns_for_page(words: list[Word]) -> tuple[float, list[tuple[str, int, float]]]:
     """見出し行の y と、列の一覧 [(種類, 段の番号, x中央)] を返す。"""
     ans_heads = [w for w in words if w.text == "解答"]
     if not ans_heads:
         raise ValueError("見出し行（解答）がない")
     hy = min(w.cy for w in ans_heads)
-    heads = sorted((w for w in words if abs(w.cy - hy) < 2 and w.text in HEADER_WORDS), key=lambda w: w.x)
+    heads = sorted((w for w in words if abs(w.cy - hy) < 2 and head_key(w.text) in HEADER_WORDS), key=lambda w: w.x)
     cols: list[tuple[str, int, float]] = []
     side = -1
     pending_rem = None
     for w in heads:
-        kind = HEADER_WORDS[w.text]
+        kind = HEADER_WORDS[head_key(w.text)]
         if kind == "q":
             side += 1
         if kind == "rem2":  # 「備」「考」が別の語になっている
@@ -75,7 +81,7 @@ def columns_for_page(words: list[Word]) -> tuple[float, list[tuple[str, int, flo
             cols.append(("rem", side, (pending_rem.cx + w.cx) / 2))
             pending_rem = None
             continue
-        if kind == "rem" and w.text == "備":
+        if kind == "rem" and head_key(w.text) == "備":
             pending_rem = w
             continue
         cols.append((kind, side, w.cx))
@@ -94,6 +100,8 @@ def parse(pdf) -> list[dict]:
         cells: dict[tuple[str, int], list[Word]] = {}
         for w in body:
             kind, side, _ = min(cols, key=lambda c: abs(c[2] - w.cx))
+            if not nfkc(w.text).isdigit():
+                kind = "rem"  # 問・No・解答・配点の欄は数字だけ。備考の文字が左に寄っていても備考に入れる
             cells.setdefault((kind, side), []).append(w)
         for side in sorted({c[1] for c in cols}):
             questions += parse_side(cells, side, page)
@@ -142,11 +150,19 @@ def parse_side(cells, side: int, page: int) -> list[dict]:
 
 
 PARTIAL_RE = re.compile(r"(\d+)問正解で部分点(\d+)点")
+# 順不同の問の「（部分点1点）」：No が2つの問で1つ正解のときの部分点と読む
+UNORDERED_PARTIAL_RE = re.compile(r"^順不同\(部分点(\d+)点\)$")
 
 
 def build_question(number: int, points: int, span: list[dict], remarks: str, page: int) -> dict:
     r = nfkc(remarks)
     m = PARTIAL_RE.search(r)
+    partial = {"correct_needed": int(m.group(1)), "points": int(m.group(2))} if m else None
+    mu = UNORDERED_PARTIAL_RE.match(r)
+    if mu:
+        if len(span) != 2:
+            raise ValueError(f"問{number}：順不同（部分点）の No が2つでない（{len(span)}個）")
+        partial = {"correct_needed": 1, "points": int(mu.group(1)), "inferred_from": "順不同（部分点N点）"}
     slots = []
     for row in span:
         raw = row["answer_raw"]
@@ -157,7 +173,7 @@ def build_question(number: int, points: int, span: list[dict], remarks: str, pag
         "points": points,
         "slots": slots,
         "unordered": "順不同" in r,
-        "partial_credit": {"correct_needed": int(m.group(1)), "points": int(m.group(2))} if m else None,
+        "partial_credit": partial,
         "no_partial_credit": "部分点なし" in r,
         "remarks_raw": remarks,
         "page": page,

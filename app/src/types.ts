@@ -12,7 +12,10 @@ export type Choice = {
   count?: number | null;
 };
 
-export type Slot = { no: number; official_answer: number; statement_label?: string };
+export type Slot = { no: number; official_answer: number; statement_label?: string; sub?: number };
+
+/** 小問（⑴⑵…）。H26 民法 問5 のような形式 */
+export type SubQuestion = { marker: string; stem: string; format: Format; polarity: "correct" | "incorrect" | null };
 
 export type Format =
   | "combination"
@@ -21,6 +24,7 @@ export type Format =
   | "true_false_each"
   | "count"
   | "fill_blank"
+  | "compound"
   | "unknown";
 
 export type Question = {
@@ -35,6 +39,7 @@ export type Question = {
   unordered: boolean;
   stem: string;
   context: { kind: string; text: string }[];
+  sub_questions: SubQuestion[];
   requires_context: boolean;
   choices: Choice[];
   answer_slots: Slot[];
@@ -55,6 +60,7 @@ export type Statement = {
   label: string;
   text: string;
   requires_context: boolean;
+  sub?: number;
   truth_at_exam: { value: boolean; derivation: string; basis: TruthBasis } | null;
 };
 

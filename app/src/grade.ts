@@ -1,8 +1,15 @@
-import type { Question } from "./types";
+import type { Question, Statement } from "./types";
 
-/** 解答欄ごとに選べる番号と、その表示 */
-export function slotOptions(q: Question): { value: number; label: string }[] {
+const numbers = (n: number) => Array.from({ length: n }, (_, i) => ({ value: i + 1, label: String(i + 1) }));
+
+/** 解答欄 k で選べる番号と、その表示。statements は問の肢（順番どおり） */
+export function slotOptions(q: Question, k: number, statements: Statement[]): { value: number; label: string }[] {
   switch (q.format) {
+    case "compound": {
+      // 小問ごとに、その小問の肢の数だけ選べる
+      const sub = q.answer_slots[k].sub;
+      return numbers(statements.filter((s) => s.sub === sub).length);
+    }
     case "true_false_each":
       return [
         { value: 1, label: "1（正しい）" },
@@ -10,7 +17,7 @@ export function slotOptions(q: Question): { value: number; label: string }[] {
       ];
     case "single_choice":
     case "multi_select_unordered":
-      return q.statements.map((_, k) => ({ value: k + 1, label: String(k + 1) }));
+      return numbers(statements.length);
     default:
       return q.choices.map((c) => ({ value: c.number, label: String(c.number) }));
   }
