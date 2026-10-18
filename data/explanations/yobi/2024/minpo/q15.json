@@ -1,0 +1,240 @@
+{
+ "question_id": "yobi-2024-minpo-q15",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-18",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q15-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。遺留分を有しないのは兄弟姉妹（その代襲者を含む）であり、子の代襲相続人は相続人として遺留分を有する。",
+   "body": "「兄弟姉妹以外の相続人は、遺留分として」一定の割合の額を受ける（1042条1項）。被相続人の子が相続開始以前に死亡したときなどは、その者の子が代襲して相続人となる（887条2項）。代襲相続人も相続人である以上、兄弟姉妹の代襲者でない限り、遺留分を有する。代襲相続人は遺留分を有しないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1042",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "兄弟姉妹以外の相続人は、遺留分として、次条第一項に規定する遺留分を算定するための財産の価額に、次の各号に掲げる区分に応じてそれぞれ当該各号に定める割合を乗じた額を受ける。",
+     "text_sha256": "60a0c73a4ab8f4404a81674073589c234b16454869dd86cbaa7b4109f01e7593",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "887",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "被相続人の子が、相続の開始以前に死亡したとき、又は第八百九十一条の規定に該当し、若しくは廃除によって、その相続権を失ったときは、その者の子がこれを代襲して相続人となる。ただし、被相続人の直系卑属でない者は、この限りでない。",
+     "text_sha256": "6eac3c2fc5ddf34f8bb4ef2112c6f22d510ce206b2b194c9870bf454b6e0eb12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公式の○×は慣行（convention）による導出だったが、条文（1042条1項・887条2項）からも×であることを確認した。兄弟姉妹の代襲者が遺留分を有しないことは、1042条の当てはめとしての説明。"
+   ],
+   "id": "exp-yobi-2024-minpo-q15-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q15-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。遺留分を有するのは兄弟姉妹以外の相続人であり、兄弟姉妹は遺留分を有しない。",
+   "body": "遺留分を受けるのは、「兄弟姉妹以外の相続人」である（1042条1項）。兄弟姉妹は相続人となることはあっても、遺留分を有しない。兄弟姉妹は被相続人と生活の基盤を共にしていないことが多く、遺留分によって保護する必要が乏しいと考えられているためである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1042",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "兄弟姉妹以外の相続人は、遺留分として、次条第一項に規定する遺留分を算定するための財産の価額に、次の各号に掲げる区分に応じてそれぞれ当該各号に定める割合を乗じた額を受ける。",
+     "text_sha256": "60a0c73a4ab8f4404a81674073589c234b16454869dd86cbaa7b4109f01e7593",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "理由づけは解説としての説明。"
+   ],
+   "id": "exp-yobi-2024-minpo-q15-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q15-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。Ｂが相続を放棄すると初めから相続人でなかったことになり、Ｃが唯一の相続人となるので、Ｃの遺留分の額は増える。",
+   "body": "相続の放棄をした者は、「その相続に関しては、初めから相続人とならなかったものとみなす」（939条）。相続人が数人ある場合の各自の遺留分は、総体的遺留分に法定相続分を乗じた割合で決まる（1042条2項）。Ｂが放棄すると、Ｃが唯一の相続人となり、Ｃの遺留分は2分の1（総体的遺留分の全部）となる。Ｂが放棄しなければＣの遺留分は4分の1なので、放棄によって変わる。なお、「遺留分の放棄」であれば他の共同相続人の遺留分に影響を及ぼさない（1049条2項）が、本肢は「相続の放棄」である点に注意する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "939",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続の放棄をした者は、その相続に関しては、初めから相続人とならなかったものとみなす。",
+     "text_sha256": "216f51496d3f22d25f4cbdffdc301b3ced35db37b4b4d6476eff92a0eca2e47f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1042",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二　前号に掲げる場合以外の場合　二分の一",
+     "text_sha256": "60a0c73a4ab8f4404a81674073589c234b16454869dd86cbaa7b4109f01e7593",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1042",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "相続人が数人ある場合には、前項各号に定める割合は、これらに第九百条及び第九百一条の規定により算定したその各自の相続分を乗じた割合とする。",
+     "text_sha256": "60a0c73a4ab8f4404a81674073589c234b16454869dd86cbaa7b4109f01e7593",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1049",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "共同相続人の一人のした遺留分の放棄は、他の各共同相続人の遺留分に影響を及ぼさない。",
+     "text_sha256": "5aa9a936cd0b97e77e2baee23954a263359119be6fb082822978ee503c38058b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "子2人の法定相続分を各2分の1とする計算（900条）は引用していない。"
+   ],
+   "id": "exp-yobi-2024-minpo-q15-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q15-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。相続の開始前の遺留分の放棄は、家庭裁判所の許可を受けたときに限り効力を生ずる。",
+   "body": "「相続の開始前における遺留分の放棄は、家庭裁判所の許可を受けたときに限り、その効力を生ずる」（1049条1項）。被相続人などから放棄を強いられることを防ぐため、家庭裁判所の許可を要件としている。これに対し、相続の開始前に相続そのものを放棄することはできない。本肢は条文どおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1049",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続の開始前における遺留分の放棄は、家庭裁判所の許可を受けたときに限り、その効力を生ずる。",
+     "text_sha256": "5aa9a936cd0b97e77e2baee23954a263359119be6fb082822978ee503c38058b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "相続開始前に相続放棄ができないことは、条文を引用していない説明（915条以下の熟慮期間の規定が相続開始後を前提にしていることによる）。"
+   ],
+   "id": "exp-yobi-2024-minpo-q15-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q15-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。遺留分侵害額の請求は、受遺者・受贈者に対する意思表示によって行使でき、訴えによる必要はない。",
+   "body": "遺留分権利者は、受遺者又は受贈者に対し、「遺留分侵害額に相当する金銭の支払を請求することができる」（1046条1項）。条文は、訴えによることを要件としていない。改正前の遺留分減殺請求権について、判例（最判昭和41年7月14日）は、受贈者・受遺者に対する意思表示によって行使すれば足り、裁判上の請求による必要はないとしており、改正後の遺留分侵害額の請求も同様に裁判外の意思表示で行使できると解されている。訴えによらなければならないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1046",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺留分権利者及びその承継人は、受遺者（特定財産承継遺言により財産を承継し又は相続分の指定を受けた相続人を含む。以下この章において同じ。）又は受贈者に対し、遺留分侵害額に相当する金銭の支払を請求することができる。",
+     "text_sha256": "bee2c013e82d287e432164aa7b6d4effbfc5b76b5317ea4e059ab4b01e52359d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "遺留分減殺請求権の行使方法",
+     "court": "最高裁判所",
+     "date": "昭和41年7月14日",
+     "holding": "遺留分減殺請求権は、受贈者又は受遺者に対する意思表示によって行使すれば足り、必ずしも裁判上の請求による必要はない（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/856"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は改正前の遺留分減殺請求権についてのもので、改正後の遺留分侵害額の請求への当てはめは解釈による説明。判例は検索（二次資料）で年月日と判示を確認した。"
+   ],
+   "id": "exp-yobi-2024-minpo-q15-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

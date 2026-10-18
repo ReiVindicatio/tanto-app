@@ -1,0 +1,221 @@
+{
+ "question_id": "yobi-2024-minpo-q12",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-18",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q12-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。無報酬の受寄者が寄託物を受け取るまで解除できるのは、書面によらない寄託の場合に限られる。",
+   "body": "「無報酬の受寄者は、寄託物を受け取るまで、契約の解除をすることができる。ただし、書面による寄託については、この限りでない」（657条の2第2項）。書面によって寄託した場合は、無報酬でも契約の拘束力を認める趣旨である。書面による寄託でも解除できるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "657_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "無報酬の受寄者は、寄託物を受け取るまで、契約の解除をすることができる。ただし、書面による寄託については、この限りでない。",
+     "text_sha256": "3a6f9d3b28c3a32f10037d29d15d824a465aefc7df1365c2521727577a66153f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-minpo-q12-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q12-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。自己の財産に対するのと同一の注意で足りるのは無報酬の受寄者であり、有償の受寄者は善良な管理者の注意義務を負う。",
+   "body": "「無報酬の受寄者は、自己の財産に対するのと同一の注意をもって、寄託物を保管する義務を負う」（659条）。この軽減は無報酬の場合に限られる。報酬を受ける受寄者は、特定物の引渡しの債務者として、「善良な管理者の注意をもって、その物を保存しなければならない」（400条）。報酬の有無にかかわらず自己の財産と同一の注意で足りるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "659",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "無報酬の受寄者は、自己の財産に対するのと同一の注意をもって、寄託物を保管する義務を負う。",
+     "text_sha256": "c88c5e681d4051a4e0e7b1272a5d9be242b1837080630dd131b77cf16af0837d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "400",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権の目的が特定物の引渡しであるときは、債務者は、その引渡しをするまで、契約その他の債権の発生原因及び取引上の社会通念に照らして定まる善良な管理者の注意をもって、その物を保存しなければならない。",
+     "text_sha256": "57736a554949c28906ec88ef56433065fde2d9facddef5a9a3183021b2306c30",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公式の○×は慣行（convention）による導出だったが、条文（659条）からも×であることを確認した。有償の受寄者に400条が適用されることは当てはめとしての説明。"
+   ],
+   "id": "exp-yobi-2024-minpo-q12-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q12-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。寄託物の性質又は瑕疵による受寄者の損害は、寄託者が過失なく知らなかったときや受寄者が知っていたときを除き、寄託者が賠償する。",
+   "body": "「寄託者は、寄託物の性質又は瑕疵によって生じた損害を受寄者に賠償しなければならない。ただし、寄託者が過失なくその性質若しくは瑕疵を知らなかったとき、又は受寄者がこれを知っていたときは、この限りでない」（661条）。本肢は条文どおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "661",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "寄託者は、寄託物の性質又は瑕疵によって生じた損害を受寄者に賠償しなければならない。ただし、寄託者が過失なくその性質若しくは瑕疵を知らなかったとき、又は受寄者がこれを知っていたときは、この限りでない。",
+     "text_sha256": "1c7de8ec136b55fa96587067cdcbf29e06004c7988098a2b519684a65929cdcc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-minpo-q12-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q12-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。受寄者の代弁済請求権は、委任の規定の準用によるもので、報酬の有無を問わず認められる。",
+   "body": "寄託には、委任の規定のうち「第六百五十条第一項及び第二項」が準用される（665条）。650条2項は、受任者が委任事務の処理に必要と認められる債務を負担したときは、委任者に「自己に代わってその弁済をすることを請求することができる」とする。準用の規定は報酬の有無で区別していないので、受寄者は報酬の有無にかかわらず代弁済を請求できる。無報酬のときに限るとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "665",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第六百四十六条から第六百四十八条まで、第六百四十九条並びに第六百五十条第一項及び第二項の規定は、寄託について準用する。",
+     "text_sha256": "1b9b2d591b887064a129c447fcb9f805549aa4d5fbda52b3d66a23398e8713e9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "650",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "受任者は、委任事務を処理するのに必要と認められる債務を負担したときは、委任者に対し、自己に代わってその弁済をすることを請求することができる。",
+     "text_sha256": "c8d7dac2ae2fa48748a033348ac0168d2d83ef658e54c7b3244cb55094342a4a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-minpo-q12-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q12-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。預金契約による金銭の受寄者は、消費貸借の借主と同じく、返還時期の定めの有無にかかわらず、いつでも返還できる。",
+   "body": "消費寄託のうち、「預金又は貯金に係る契約により金銭を寄託した場合」には、591条2項・3項が準用される（666条3項）。591条2項は、「借主は、返還の時期の定めの有無にかかわらず、いつでも返還をすることができる」と定める。したがって、預金契約の受寄者（金融機関）は、いつでも寄託された金銭を返還できる。なお、返還時期を定めていた場合に期限前の返還で寄託者に損害が生じたときは、賠償の問題になる（591条3項の準用）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "666",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第五百九十一条第二項及び第三項の規定は、預金又は貯金に係る契約により金銭を寄託した場合について準用する。",
+     "text_sha256": "526aef2e7426c3ad0411cb1c5b4686be760149e56dad8c5f2face2b08e5110da",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "591",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "借主は、返還の時期の定めの有無にかかわらず、いつでも返還をすることができる。",
+     "text_sha256": "704a67c829396d775585933838613e9ac0431f10273ee7ddcf8472e87919784f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "591",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "当事者が返還の時期を定めた場合において、貸主は、借主がその時期の前に返還をしたことによって損害を受けたときは、借主に対し、その賠償を請求することができる。",
+     "text_sha256": "704a67c829396d775585933838613e9ac0431f10273ee7ddcf8472e87919784f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-minpo-q12-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

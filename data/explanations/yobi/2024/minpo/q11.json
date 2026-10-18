@@ -1,0 +1,199 @@
+{
+ "question_id": "yobi-2024-minpo-q11",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-18",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q11-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。使用貸借の借主は通常の必要費を負担するので、その償還を貸主に請求できない。",
+   "body": "「借主は、借用物の通常の必要費を負担する」（595条1項）。無償で物を使わせてもらう使用貸借では、使用に伴う通常の費用は借主が負担するのが公平だからである。通常の必要費以外の費用（特別の必要費や有益費）については、別の規定（買戻しの費用償還の規定）が準用され、償還を請求できる場合がある（595条2項）。本肢は通常の必要費についてなので、償還を請求できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "595",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "借主は、借用物の通常の必要費を負担する。",
+     "text_sha256": "eaef23fd8eca0c1337f6cae60321dac50b16974c4a531b393289776a657c599d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "595",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第五百八十三条第二項の規定は、前項の通常の必要費以外の費用について準用する。",
+     "text_sha256": "eaef23fd8eca0c1337f6cae60321dac50b16974c4a531b393289776a657c599d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-minpo-q11-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q11-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。附属させた物でも、分離するのに過分の費用を要する物については、借主は収去義務を負わない。",
+   "body": "借主は、借用物を受け取った後に附属させた物がある場合、使用貸借が終了したときは、その物を収去する義務を負う（599条1項本文）。ただし、「借用物から分離することができない物又は分離するのに過分の費用を要する物については、この限りでない」（同項ただし書）。本肢は、分離に過分の費用を要する場合でも収去義務を負うとしている点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "599",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "借主は、借用物を受け取った後にこれに附属させた物がある場合において、使用貸借が終了したときは、その附属させた物を収去する義務を負う。ただし、借用物から分離することができない物又は分離するのに過分の費用を要する物については、この限りでない。",
+     "text_sha256": "371aeccd5848f248844ce4d8ddb8bc24619d0714de364c5ea5fa05b6cdec777a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-minpo-q11-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q11-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。使用貸借が当然に終了するのは借主の死亡の場合であり、貸主の死亡では終了しない。",
+   "body": "「使用貸借は、借主の死亡によって終了する」（597条3項）。使用貸借は、貸主が特定の借主との個人的な関係に基づいて無償で使わせる契約なので、借主が死亡すれば終わるとされている。貸主が死亡しても使用貸借は終了せず、貸主の地位は相続人に承継される。貸主Ａの死亡によって終了するとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "597",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "使用貸借は、借主の死亡によって終了する。",
+     "text_sha256": "eb103fe512c138a917c45917629b2f48bb91c05b701a6a0baf40d915783a4872",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "貸主の地位が相続されることは、597条3項の反対解釈と896条による説明（896条は引用していない）。"
+   ],
+   "id": "exp-yobi-2024-minpo-q11-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q11-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。期間も使用収益の目的も定めなかった使用貸借では、貸主はいつでも解除できる。",
+   "body": "「当事者が使用貸借の期間並びに使用及び収益の目的を定めなかったときは、貸主は、いつでも契約の解除をすることができる」（598条2項）。期間も目的も定めていなければ、いつ終わるべきかを決める基準がないので、貸主にいつでも解除する権利を認めている。本肢は条文どおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "598",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当事者が使用貸借の期間並びに使用及び収益の目的を定めなかったときは、貸主は、いつでも契約の解除をすることができる。",
+     "text_sha256": "fe3338e9051116d3c6c110fbbdba7b70ae936006eea0090206d416a40fd8df0e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-minpo-q11-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q11-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。用法違反による損害賠償請求権は、貸主が返還を受けた時から1年を経過するまで時効が完成しない。",
+   "body": "契約の本旨に反する使用又は収益によって生じた損害の賠償は、貸主が返還を受けた時から1年以内に請求しなければならない（600条1項）。そして、「前項の損害賠償の請求権については、貸主が返還を受けた時から一年を経過するまでの間は、時効は、完成しない」（同条2項）。貸主は使用貸借の期間中、借主の用法違反を知ることが難しいので、返還を受けるまでに時効が完成してしまうことを防ぐ規定である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "600",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "契約の本旨に反する使用又は収益によって生じた損害の賠償及び借主が支出した費用の償還は、貸主が返還を受けた時から一年以内に請求しなければならない。",
+     "text_sha256": "a70ad21e9eae3a0bbd6f609cb7666c3aaf0456e7cf733647f41f7b161595f704",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "600",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の損害賠償の請求権については、貸主が返還を受けた時から一年を経過するまでの間は、時効は、完成しない。",
+     "text_sha256": "a70ad21e9eae3a0bbd6f609cb7666c3aaf0456e7cf733647f41f7b161595f704",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公式の○×は慣行（convention）による導出だったが、条文（600条2項）からも○であることを確認した。規定の趣旨は解説としての説明。"
+   ],
+   "id": "exp-yobi-2024-minpo-q11-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
