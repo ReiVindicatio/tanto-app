@@ -20,6 +20,7 @@ from check_explanations import EXPLANATIONS, check_question
 from common import EXAM_IDS, GROUP_IDS, ROOT, SUBJECT_IDS
 
 QUESTIONS = ROOT / "data" / "questions"
+FLAGS = ROOT / "data" / "review" / "flags.json"
 OUT = ROOT / "app" / "public" / "data"
 
 EXAM_NAMES = {v: k for k, v in EXAM_IDS.items()}
@@ -73,6 +74,9 @@ def main() -> None:
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True)
     sets, skipped = [], []
+    # 人の確認待ちの肢（アプリは肢カードから外す）。truth_at_exam は変えない
+    flags = json.loads(FLAGS.read_text(encoding="utf-8"))["flags"] if FLAGS.exists() else []
+    open_flags = {f["statement_id"]: {"kind": f["kind"], "reason": f["reason"]} for f in flags if f["status"] == "open"}
     for path in sorted(QUESTIONS.glob("*/*/*.json")):
         doc = json.loads(path.read_text(encoding="utf-8"))
         name = f"{doc['exam']['type']}-{doc['exam']['year']}-{doc['subject']}"
@@ -80,6 +84,9 @@ def main() -> None:
             skipped.append(name)
             continue
         doc["explanations"], _ = collect_explanations(doc)
+        for st in doc["statements"]:
+            if st["id"] in open_flags:
+                st["review_flag"] = open_flags[st["id"]]
         (OUT / f"{name}.json").write_text(json.dumps(doc, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         sets.append({
             "id": name,
@@ -89,7 +96,7 @@ def main() -> None:
             "subject": doc["subject"],
             "subject_name": SUBJECT_NAMES[doc["subject"]],
             "questions": len(doc["questions"]),
-            "statement_cards": sum(1 for s in doc["statements"] if s["truth_at_exam"]),
+            "statement_cards": sum(1 for s in doc["statements"] if s["truth_at_exam"] and "review_flag" not in s),
             "explanations": len(doc["explanations"]),
             "attribution": doc["attribution"],
         })

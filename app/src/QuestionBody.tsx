@@ -57,6 +57,9 @@ export default function QuestionBody({
               {showTruth && s.truth_at_exam && (
                 <span className={`truth ${s.truth_at_exam.value ? "ok" : "ng"}`}>{truthMark(s)}</span>
               )}
+              {showTruth && s.review_flag && (
+                <span className="small law-note">要確認：この肢の○×は導出の根拠が弱く、確認中です（肢カードには出していません）</span>
+              )}
               {showTruth && s.id !== highlight && explanations?.has(s.id) && (
                 <details className="small">
                   <summary>解説</summary>

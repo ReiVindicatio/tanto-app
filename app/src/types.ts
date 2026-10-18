@@ -61,6 +61,8 @@ export type Statement = {
   text: string;
   requires_context: boolean;
   sub?: number;
+  /** 人の確認待ち（data/review/flags.json）。肢カードには出さない */
+  review_flag?: { kind: string; reason: string };
   truth_at_exam: { value: boolean; derivation: string; basis: TruthBasis } | null;
 };
 

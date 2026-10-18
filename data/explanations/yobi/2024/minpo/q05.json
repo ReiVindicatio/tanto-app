@@ -1,0 +1,191 @@
+{
+ "question_id": "yobi-2024-minpo-q05",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-18",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q05-a"
+   },
+   "version": 1,
+   "stated_truth": null,
+   "conclusion": "要確認。公式の○（慣行による導出）を支える規定・判例を確認できなかった。",
+   "body": "地役権の内容は、「設定行為で定めた目的に従い、他人の土地を自己の土地の便益に供する」ことである（280条本文）。本肢の「必要であり、かつ、…損害が最も少ない」という書きぶりは、民法では相隣関係の規定（隣地の通行権に関する211条1項など）にみられるが、地役権の節には同様の規定が見当たらない。○とする根拠を確認できないため、結論を出さない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "280",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地役権者は、設定行為で定めた目的に従い、他人の土地を自己の土地の便益に供する権利を有する。",
+     "text_sha256": "c67f7e56d4dd8e753aac0ff0238ef54fdab1ad9979d47b46329c2e091fecffd8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "211",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条の場合には、通行の場所及び方法は、同条の規定による通行権を有する者のために必要であり、かつ、他の土地のために損害が最も少ないものを選ばなければならない。",
+     "text_sha256": "e79f467bd60897a36a526c07bfcc812503eec0af429004c9a207046dea9d169b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "data/review/flags.json に truth_doubtful として記録（肢カードから外す）。公式の○×は慣行による導出で、選択肢の組み方からはアが誤りでも正解（エオ）が成り立つ。人の確認が要る。"
+   ],
+   "id": "exp-yobi-2024-minpo-q05-a",
+   "status": "flagged",
+   "check": {
+    "passed": false,
+    "failures": [
+     "🔴 公式の○×と食い違う（公式 ○／解説 None）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q05-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。地役権は要役地の所有権に従たるものとして、設定行為に別段の定めがない限り、要役地について存する地上権の目的となる。",
+   "body": "地役権は、「要役地…の所有権に従たるものとして、その所有権とともに移転し、又は要役地について存する他の権利の目的となるものとする。ただし、設定行為に別段の定めがあるときは、この限りでない」（281条1項）。要役地に地上権が設定されていれば、地上権者も地役権の便益を受けられることになる。本肢は条文どおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "281",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地役権は、要役地（地役権者の土地であって、他人の土地から便益を受けるものをいう。以下同じ。）の所有権に従たるものとして、その所有権とともに移転し、又は要役地について存する他の権利の目的となるものとする。ただし、設定行為に別段の定めがあるときは、この限りでない。",
+     "text_sha256": "059dd1274a7043b9670f56f239ad797d86e05c52cecb73afe964abf81ab810bc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-minpo-q05-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q05-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。承役地の所有者が設定行為で工作物の設置義務を負担したときは、その特定承継人もその義務を負担する。",
+   "body": "「設定行為又は設定後の契約により、承役地の所有者が自己の費用で地役権の行使のために工作物を設け、又はその修繕をする義務を負担したときは、承役地の所有者の特定承継人も、その義務を負担する」（286条）。本肢は条文どおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "286",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設定行為又は設定後の契約により、承役地の所有者が自己の費用で地役権の行使のために工作物を設け、又はその修繕をする義務を負担したときは、承役地の所有者の特定承継人も、その義務を負担する。",
+     "text_sha256": "07dd6a7d001f6b83888a11c5c26e3fa0ac3bc7b6fba72b9b1edee3d288301e9b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-minpo-q05-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q05-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。要役地が共有の場合、共有者の一人のための時効の更新は、他の共有者のためにも効力を生ずる。全員について更新事由がある必要はない。",
+   "body": "「要役地が数人の共有に属する場合において、その一人のために時効の完成猶予又は更新があるときは、その完成猶予又は更新は、他の共有者のためにも、その効力を生ずる」（292条）。地役権は要役地全体の便益のための権利であり、共有者ごとに消滅させることになじまないからである。共有者全員について更新事由がなければ効力を生じないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "292",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "要役地が数人の共有に属する場合において、その一人のために時効の完成猶予又は更新があるときは、その完成猶予又は更新は、他の共有者のためにも、その効力を生ずる。",
+     "text_sha256": "fddfee8c936799f6d72dc2b171e641102f699998ac849d7f9383cd48b6cc1fb8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "理由づけ（共有者ごとに消滅させることになじまない）は解説としての説明。"
+   ],
+   "id": "exp-yobi-2024-minpo-q05-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q05-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。通行地役権の時効取得で必要とされる通路の開設は、承役地の所有者ではなく、要役地の所有者によってされることを要する。",
+   "body": "地役権は、「継続的に行使され、かつ、外形上認識することができるもの」に限り、時効によって取得できる（283条）。通行地役権の「継続」の要件について、承役地となる他人の土地の上に通路が開設され、その開設は要役地の所有者によってされることを要すると解されている（判例あり（要確認））。承役地の所有者が自ら開設した通路を通行していただけでは、承役地の所有者の好意によるものにすぎないからである。承役地の所有者による開設を要件とする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "283",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地役権は、継続的に行使され、かつ、外形上認識することができるものに限り、時効によって取得することができる。",
+     "text_sha256": "5412d45c40fbc90e3dae1ffa3d8ac837409e1fedb613d66f1b3a968dc7a73c8c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "判例の内容は検索で確認したが、年月日を確認できなかったので cases に入れていない（判例あり（要確認））。理由づけ（好意の通行）は解説としての説明。"
+   ],
+   "id": "exp-yobi-2024-minpo-q05-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

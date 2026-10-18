@@ -57,7 +57,7 @@ export default function App() {
   useEffect(() => {
     if (!sets || screen.kind !== "home") return;
     Promise.all(
-      sets.map(async (s) => [s.id, (await loadSet(s)).statements.filter((x) => x.truth_at_exam).map((x) => ({ id: x.id, question_id: x.question_id }))] as const),
+      sets.map(async (s) => [s.id, (await loadSet(s)).statements.filter((x) => x.truth_at_exam && !x.review_flag).map((x) => ({ id: x.id, question_id: x.question_id }))] as const),
     ).then(
       (pairs) => setIds(new Map(pairs)),
     );
@@ -68,7 +68,7 @@ export default function App() {
 
   async function openStatements(infos: SetInfo[], title: string) {
     const data = merge(await Promise.all(infos.map(loadSet)));
-    let cards = data.statements.filter((s) => s.truth_at_exam);
+    let cards = data.statements.filter((s) => s.truth_at_exam && !s.review_flag);
     cards = applyFilter(cards, filter, history);
     if (infos.length > 1) cards = shuffle(cards);
     setScreen({ kind: "statements", title, data, cards, examName: infos[0].exam_name, subjectName: infos[0].subject_name });
@@ -77,7 +77,7 @@ export default function App() {
   async function openReview(infos: SetInfo[], title: string) {
     const data = merge(await Promise.all(infos.map(loadSet)));
     // 新規カードは新しい年度から順に入れる（pool は新しい年度が先）
-    const pool = data.statements.filter((s) => s.truth_at_exam);
+    const pool = data.statements.filter((s) => s.truth_at_exam && !s.review_flag);
     const { cards } = buildSession(pool);
     setScreen({ kind: "statements", title, data, cards, examName: infos[0].exam_name, subjectName: infos[0].subject_name });
   }
