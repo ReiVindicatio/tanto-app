@@ -1,6 +1,6 @@
 # 設計提案：予備試験・司法試験 短答の一問一答 Web アプリ
 
-> 状態：**提案（実装前）**。作成 2026-10-18。§5・§8 は同日の決定（📖 `decisions/001`）を反映済み。
+> 状態：**最初のスコープ（§7）は完了。R08 刑法・民法で段階0〜3・5〜7とアプリの最小版を実装済み**。作成 2026-10-18。§5・§8 は同日の決定（📖 `decisions/001`）を反映済み。
 > 前提の方針（決定済み）は README の「方針」。この文書は、その方針で作るときの**棚卸し・パイプライン・データモデル・ディレクトリ・見積もり方法・危ない点**をまとめたもの。
 
 ---
@@ -106,6 +106,8 @@ Correction（AI 補正の記録）→ Source のスパン
 
 ### 3.2 Question（問）
 
+> 📖 実装では `context` を配列にし、`exhaustive`・`unordered`・`choices` などを足した（`decisions/003`）。現行の形は `data/questions/yobi/2026/keiho.json`
+
 ```json
 {
   "id": "yobi-2026-keiho-q13",
@@ -131,6 +133,8 @@ Correction（AI 補正の記録）→ Source のスパン
 ```
 
 ### 3.3 `format` と、肢の○×を導出できるか
+
+> 📖 導出の根拠を `truth_at_exam.basis`（direct／selected／exhaustive／uniqueness／convention）で区別する（`decisions/003`）
 
 | format | 例 | 肢の○×の導出 | 復習の単位 |
 |---|---|---|---|
@@ -180,6 +184,8 @@ Correction（AI 補正の記録）→ Source のスパン
 - **没問・全員正解扱い**は Question の `status`（`voided`・`all_correct`・`errata`）に置き、そこに属する肢は出題対象から外すか注記する。**複数正解**は `answer_slots[].official_answer` を配列にできるようにしておく
 
 ### 3.5 Explanation（解説）と版管理
+
+> 📖 実装では問ごとに1ファイル（`data/explanations/<exam>/<year>/<subject>/qNN.json`）にした（`decisions/004`）。指示は `prompts/explain-v1.md`、検査は `pipeline/check_explanations.py`
 
 ```json
 {
@@ -240,8 +246,8 @@ tanto-app/
 │   └── manifest.json        取得元 URL・sha256・取得日（244件）
 ├── data/
 │   ├── raw/                 法務省 PDF（git で管理・編集しない。予備試験/短答/R08-2026/… の構成）
-│   ├── extracted/<exam>/<year>/<group>.txt ＋ .meta.json
-│   ├── parsed/<exam>/<year>/<subject>.json      決定的パースの結果（AI を通す前）
+│   ├── extracted/           data/raw/ と同じ構成で <名前>.txt ＋ .meta.json（品質スコア・科目見出しの行範囲）
+│   ├── parsed/<exam>/<year>/<subject>.json      決定的パースの結果（AI を通す前）。正答は answers-<科目群>.json
 │   ├── corrections/<exam>/<year>/<subject>.jsonl  AI 補正の記録
 │   ├── questions/<exam>/<year>/<subject>.json   🔴 正本（問・肢・公式解答・○×）
 │   ├── explanations/<subject>/<statement_id>.json 解説（版つき）
@@ -272,7 +278,7 @@ tanto-app/
 ### 測り方
 
 1. **実物で数える。**`messages.count_tokens` に、本番で送るプロンプト（指示＋問の本文＋前提文＋条文本文）をそのまま渡す。モデル ID も本番と同じものにする（トークン数はモデルごとに違う）。tiktoken などの他社のトークナイザでは数えない
-2. **形式ごとに1問ずつ試す。**R08 刑法なら、組合せ（問1）・会話（問3）・個数（問12）・穴埋め（問13）の4問。入力は `count_tokens`、出力は実際に生成して `usage.output_tokens` を見る（思考のトークンは出力として課金される）
+2. **形式ごとに1問ずつ試す。**R08 刑法なら、組合せ（問1）・会話の穴埋め（問3）・個数（問12）・各肢○×（問13）の4問。入力は `count_tokens`、出力は実際に生成して `usage.output_tokens` を見る（思考のトークンは出力として課金される）
 3. **掛け算する。**1問あたりの入力×問数、出力×問数。解説は「1問ずつまとめて生成（5肢を1回で）」か「肢ごと」かで入力が5倍変わるので、両方を試して品質と費用を比べる
 
 ### 目安（仮置き。上の測定で置き換える）
@@ -307,11 +313,11 @@ tanto-app/
 
 ## 7. 最初のスコープ（予備・刑法・R08）の完了条件
 
-- [ ] `pipeline/` で、R08 刑法刑訴の PDF から刑法の13問を取り出し、`data/questions/yobi/2026/keiho.json` に書ける
-- [ ] 段階3の検証がすべて ✅（13問・No.1〜19・配点合計30点・No の集合が一致）
-- [ ] 形式ごとの○×導出が §3.3 の表どおり（個数・穴埋めは問題カード）
-- [ ] 解説を1問分だけ生成し、公式の○×との整合チェックが動く
-- [ ] `app/` で、問題カードと肢カードを表示し、○×を答えられる（FSRS はまだ入れない）
+- [x] `pipeline/` で、R08 刑法刑訴の PDF から刑法の13問を取り出し、`data/questions/yobi/2026/keiho.json` に書ける
+- [x] 段階3の検証がすべて ✅（13問・No.1〜19・配点合計30点・No の集合が一致）
+- [x] 形式ごとの○×導出が §3.3 の表どおり（個数・穴埋めは問題カード）
+- [x] 解説を1問分だけ生成し、公式の○×との整合チェックが動く（刑法は未学習のため、民法 R08 問1で行った）
+- [x] `app/` で、問題カードと肢カードを表示し、○×を答えられる（FSRS はまだ入れない）
 
 ## 8. 決まったこと（2026-10-18）
 

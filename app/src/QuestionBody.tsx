@@ -1,0 +1,77 @@
+import type { Explanation, Question, Statement } from "./types";
+import ExplanationView from "./ExplanationView";
+
+export function Context({ q }: { q: Question }) {
+  if (q.context.length === 0) return null;
+  return (
+    <>
+      {q.context.map((c, i) => (
+        <div className="context" key={i}>
+          <div className="context-kind">【{c.kind}】</div>
+          {c.text.split("\n").map((line, j) => (
+            <p key={j}>{line}</p>
+          ))}
+        </div>
+      ))}
+    </>
+  );
+}
+
+export function truthMark(s: Statement): string {
+  if (!s.truth_at_exam) return "";
+  return s.truth_at_exam.value ? "○" : "×";
+}
+
+/** 問の全文（リード文・前提文・肢・選択肢）。showTruth で肢ごとの○×を添える */
+export default function QuestionBody({
+  q,
+  statements,
+  showTruth,
+  highlight,
+  explanations,
+}: {
+  q: Question;
+  statements: Statement[];
+  showTruth: boolean;
+  highlight?: string;
+  explanations?: Map<string, Explanation>;
+}) {
+  return (
+    <div className="question">
+      <div className="muted small">
+        第{q.number}問（配点：{q.points}）
+      </div>
+      <p className="stem">{q.stem}</p>
+      <Context q={q} />
+      {statements.length > 0 && (
+        <ol className="statements">
+          {statements.map((s) => (
+            <li key={s.id} className={s.id === highlight ? "highlight" : ""}>
+              <span className="label">{s.label}．</span>
+              <span>{s.text}</span>
+              {showTruth && s.truth_at_exam && (
+                <span className={`truth ${s.truth_at_exam.value ? "ok" : "ng"}`}>{truthMark(s)}</span>
+              )}
+              {showTruth && s.id !== highlight && explanations?.has(s.id) && (
+                <details className="small">
+                  <summary>解説</summary>
+                  <ExplanationView e={explanations.get(s.id)!} />
+                </details>
+              )}
+            </li>
+          ))}
+        </ol>
+      )}
+      {q.choices.length > 0 && (
+        <ol className="choices">
+          {q.choices.map((c) => (
+            <li key={c.number}>
+              <span className="label">{c.number}．</span>
+              {c.text}
+            </li>
+          ))}
+        </ol>
+      )}
+    </div>
+  );
+}
