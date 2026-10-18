@@ -32,6 +32,7 @@ LAWS = {
     "刑事訴訟法": ("keiso", "昭和二十三年法律第百三十一号"),
     "日本国憲法": ("kenpo", "昭和二十一年憲法"),
     "商法": ("shoho", "明治三十二年法律第四十八号"),
+    "借地借家法": ("shakuchi", "平成三年法律第九十号"),
 }
 
 
@@ -51,13 +52,31 @@ def texts(el: ET.Element | None, tag: str) -> str:
     return "".join(plain(s) for s in el.iter(tag))
 
 
+def sentence_text(el: ET.Element | None) -> str:
+    """号などの本文。列（<Column>：「用語」と「定義」など）に分かれていれば全角空白でつなぐ。"""
+    if el is None:
+        return ""
+    cols = el.findall("Column")
+    if cols:
+        return "　".join(texts(c, "Sentence") for c in cols)
+    return texts(el, "Sentence")
+
+
+def item_lines(el: ET.Element, title_tag: str, sentence_tag: str) -> list[str]:
+    """号（Item）と、その細分（Subitem1〜）を1行ずつにする。"""
+    lines = [f"{el.findtext(title_tag) or ''}　{sentence_text(el.find(sentence_tag))}"]
+    for child in el:
+        if child.tag.startswith("Subitem") and not child.tag.endswith(("Title", "Sentence")):
+            lines += item_lines(child, f"{child.tag}Title", f"{child.tag}Sentence")
+    return lines
+
+
 def parse_article(art: ET.Element) -> dict:
     paragraphs = []
     for p in art.findall("Paragraph"):
         lines = [texts(p.find("ParagraphSentence"), "Sentence")]
         for item in p.findall("Item"):
-            title = item.findtext("ItemTitle") or ""
-            lines.append(f"{title}　{texts(item.find('ItemSentence'), 'Sentence')}")
+            lines += item_lines(item, "ItemTitle", "ItemSentence")
         paragraphs.append({"num": p.get("Num"), "text": "\n".join(lines)})
     body = "\n".join(p["text"] for p in paragraphs)
     return {

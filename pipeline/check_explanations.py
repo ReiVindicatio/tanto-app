@@ -5,7 +5,7 @@
   2. 条文の引用 quote が、data/statutes/ に保存した本文（指定した項）の部分文字列である
   3. 本文・結論の「」内（6文字以上）が、引用した条文・肢・問題文のどれかに実在する
   4. 本文で触れた条番号（「5条」「98条の2」など）が、すべて citations に入っている
-  5. 判例は名前・裁判所・年月日・確認した URL がそろっている
+  5. 判例は名前・裁判所・年月日・判示の要約・確認に使った URL（verified_urls）がそろっている
   6. 正本の肢のうち○×があるものに、すべて解説がある（問単位）
 
 使い方：
@@ -93,7 +93,7 @@ def check_question(exam: str, year: int, subject: str, number: int) -> tuple[dic
                 f.append(f"本文で触れた {m.group(0)} が citations にない")
 
         for case in e.get("cases", []):
-            lack = [k for k in ("name", "court", "date", "url") if not case.get(k)]
+            lack = [k for k in ("name", "court", "date", "holding", "verified_urls") if not case.get(k)]
             if lack:
                 f.append(f"判例 {case.get('name', '?')}：{lack} がない（確認できない判例は載せない）")
 

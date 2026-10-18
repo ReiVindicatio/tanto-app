@@ -76,7 +76,7 @@ export type Explanation = {
   conclusion: string;
   body: string;
   citations: StatuteCitation[];
-  cases: { name: string; court: string; date: string; url: string }[];
+  cases: { name: string; court: string; date: string; holding: string }[];
   prompt_version: string;
   generated_at: string;
   model: string;

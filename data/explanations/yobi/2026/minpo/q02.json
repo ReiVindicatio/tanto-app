@@ -1,0 +1,224 @@
+{
+ "question_id": "yobi-2026-minpo-q02",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-18",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q02-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。善意無過失の第三者がいても、詐欺による意思表示を取り消すこと自体はできる。できないのは、取消しをその第三者に対抗することである。",
+   "body": "詐欺による意思表示は、取り消すことができる（96条1項）。善意無過失の第三者が現れた場合の効果は、「善意でかつ過失がない第三者に対抗することができない」というものにとどまる（96条3項）。つまり、ＡはＢとの間で贈与を取り消すことはでき、ただ取消しの効果をＣに主張できない（Ｃの抵当権は存続する）。取消しそのものができないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐欺又は強迫による意思表示は、取り消すことができる。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前二項の規定による詐欺による意思表示の取消しは、善意でかつ過失がない第三者に対抗することができない。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minpo-q02-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q02-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。表意者に重大な過失があっても取り消せる場合は、相手方の悪意・重過失のときだけでなく、相手方が同一の錯誤に陥っていたとき（共通錯誤）もある。",
+   "body": "錯誤が表意者の重大な過失によるものであった場合、原則として取り消すことができないが、例外が2つある（95条3項）。1つは「相手方が表意者に錯誤があることを知り、又は重大な過失によって知らなかったとき」（同項1号）、もう1つは「相手方が表意者と同一の錯誤に陥っていたとき」（同項2号）である。本肢は1号の場合に「限り」取り消せるとしており、2号の場合を落としている点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "95",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "錯誤が表意者の重大な過失によるものであった場合には、次に掲げる場合を除き、第一項の規定による意思表示の取消しをすることができない。\n一　相手方が表意者に錯誤があることを知り、又は重大な過失によって知らなかったとき。\n二　相手方が表意者と同一の錯誤に陥っていたとき。",
+     "text_sha256": "a574178ace21adfb3a580ccce7d7b1d82a142c6d5dec52af686791911776a4b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公式の○×は慣行（convention）による導出だったが、条文（95条3項2号）からも×であることを確認した。"
+   ],
+   "id": "exp-yobi-2026-minpo-q02-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q02-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。通知を発した後に表意者が意思能力を失っても、到達すれば意思表示は効力を生ずる。",
+   "body": "意思表示は、その通知が相手方に到達した時から効力を生ずる（97条1項）。そして、表意者が通知を発した後に「死亡し、意思能力を喪失し、又は行為能力の制限を受けたときであっても、そのためにその効力を妨げられない」（97条3項）。したがって、Ａが解除の通知を発した後に意思能力を失っても、通知がＢに到達すれば解除の意思表示は効力を生ずる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "97",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "意思表示は、その通知が相手方に到達した時からその効力を生ずる。",
+     "text_sha256": "d29bdd41ac5f5500bebb9725f87e52d68fc301915306af0ea5719792f455ee54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "97",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "意思表示は、表意者が通知を発した後に死亡し、意思能力を喪失し、又は行為能力の制限を受けたときであっても、そのためにその効力を妨げられない。",
+     "text_sha256": "d29bdd41ac5f5500bebb9725f87e52d68fc301915306af0ea5719792f455ee54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minpo-q02-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q02-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。強迫による取消しには、強迫者に、畏怖させる故意と、その畏怖によって意思表示をさせる故意の二段の故意が必要と解されている。",
+   "body": "強迫による意思表示は、取り消すことができる（96条1項）。条文は要件を細かく定めていないが、強迫による取消しには、強迫者に、①強迫行為によって表意者を畏怖させようとする故意と、②その畏怖によって表意者に意思表示をさせようとする故意（二段の故意）が必要と解されている。詐欺について欺罔の故意と意思表示をさせる故意が必要とされるのと同じ構造である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐欺又は強迫による意思表示は、取り消すことができる。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "二段の故意は条文に明記されておらず、解釈による説明。判例の有無は確認していない。"
+   ],
+   "id": "exp-yobi-2026-minpo-q02-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q02-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。仮装譲渡された土地の上の建物を借りた者は、94条2項の「第三者」に当たらないので、Ａは無効をＣに対抗できる。",
+   "body": "虚偽の意思表示は無効であり（94条1項）、その無効は「善意の第三者に対抗することができない」（94条2項）。判例（最判昭和57年6月8日）は、土地の仮装譲受人がその土地上に建てた建物を賃借した者は、94条2項の第三者に当たらないとする。建物の賃借人は、建物について利害関係を持つにすぎず、仮装譲渡された土地について法律上の利害関係を持つ者とはいえないからである。したがって、Ｃが善意でも、Ａは売買の無効をＣに対抗できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "94",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方と通じてした虚偽の意思表示は、無効とする。",
+     "text_sha256": "105c9d4fbb68ec2579ae06b999f43358ff5b9d704b76cbbd85fa434cca25e16d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "94",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定による意思表示の無効は、善意の第三者に対抗することができない。",
+     "text_sha256": "105c9d4fbb68ec2579ae06b999f43358ff5b9d704b76cbbd85fa434cca25e16d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "土地の仮装譲受人が建てた建物の賃借人と94条2項の第三者",
+     "court": "最高裁判所",
+     "date": "昭和57年6月8日",
+     "holding": "土地の仮装譲受人が土地上に建物を建築してこれを他人に賃貸した場合、建物の賃借人は、仮装譲渡された土地について法律上の利害関係を有する者とは認められず、民法94条2項の第三者に当たらない。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/273"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は検索（二次資料）で年月日と判示の内容を確認した。裁判所の判例ページは見つけられていない。"
+   ],
+   "id": "exp-yobi-2026-minpo-q02-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

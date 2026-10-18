@@ -57,7 +57,8 @@ def collect_explanations(doc: dict) -> tuple[list[dict], list[str]]:
                 "conclusion": e["conclusion"],
                 "body": e["body"],
                 "citations": e["citations"],
-                "cases": e.get("cases", []),
+                # 確認に使った URL（二次資料を含む）は画面に出さない
+                "cases": [{k: c[k] for k in ("name", "court", "date", "holding")} for c in e.get("cases", [])],
                 "prompt_version": edoc["prompt_version"],
                 "generated_at": edoc["generated_at"],
                 "model": edoc["generated_by"]["model"],

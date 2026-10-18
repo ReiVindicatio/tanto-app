@@ -1,0 +1,247 @@
+{
+ "question_id": "yobi-2026-minpo-q03",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-18",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q03-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。催告による完成猶予の間にした再度の催告には、完成猶予の効力がない。",
+   "body": "催告があったときは、その時から6か月を経過するまでの間は、時効は完成しない（150条1項）。しかし、「催告によって時効の完成が猶予されている間にされた再度の催告は、前項の規定による時効の完成猶予の効力を有しない」（150条2項）。催告を繰り返して時効の完成を先延ばしにすることはできない。再度の催告の時から6か月猶予されるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "150",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "催告があったときは、その時から六箇月を経過するまでの間は、時効は、完成しない。",
+     "text_sha256": "1753a773f9839d056b35ccf67dd42b66b843d1eaf60bf94365abfe6d879b6f49",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "150",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "催告によって時効の完成が猶予されている間にされた再度の催告は、前項の規定による時効の完成猶予の効力を有しない。",
+     "text_sha256": "1753a773f9839d056b35ccf67dd42b66b843d1eaf60bf94365abfe6d879b6f49",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minpo-q03-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q03-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。支払猶予の申入れは権利の承認に当たり、債権者の代理人に対してしたものでも時効は更新される。",
+   "body": "時効は、権利の承認があったときは、その時から新たにその進行を始める（152条1項）。支払猶予の申入れは、債務があることを前提として支払を待ってほしいと求めるものなので、債務の承認に当たると解されている。また、代理人に対してした意思表示は本人に対して効力を生ずる（99条2項・1項）ので、債権者の代理人に対してした承認も、債権者に対してしたものとして効力を生ずると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "152",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効は、権利の承認があったときは、その時から新たにその進行を始める。",
+     "text_sha256": "73d4963338a58831e6d78d5e89746df7e38d0b86ae408813dba435462e740c5d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "99",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、第三者が代理人に対してした意思表示について準用する。",
+     "text_sha256": "9c8b3f6bd25c35ab69d70aa092a5abae356f98679350a80fbaf6018171d401f3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "99",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理人がその権限内において本人のためにすることを示してした意思表示は、本人に対して直接にその効力を生ずる。",
+     "text_sha256": "9c8b3f6bd25c35ab69d70aa092a5abae356f98679350a80fbaf6018171d401f3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "承認は意思表示ではなく観念の通知とされるため、99条2項は直接ではなく準用・類推の形で説明される。支払猶予の申入れが承認に当たる点・代理人に対する承認の効力は解釈による説明で、判例は確認していない。"
+   ],
+   "id": "exp-yobi-2026-minpo-q03-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q03-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、事前求償権を被保全債権とする仮差押えは、事後求償権についても時効の完成猶予（改正前は中断）の効力を有するとする。",
+   "body": "仮差押えがあると、その事由が終了した時から6か月を経過するまでの間は、時効は完成しない（149条1号）。問題は、保証人が事前求償権を被保全債権として仮差押えをした場合に、別個の権利である事後求償権の時効にも効力が及ぶかである。判例（最判平成27年2月17日）は、事前求償権は事後求償権を確保するために認められた権利であるという関係にあるから、事前求償権を被保全債権とする仮差押えは、事後求償権についても時効の中断の効力を有するとした。改正後の民法では、時効の完成猶予の効力を有することになる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "149",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる事由がある場合には、その事由が終了した時から六箇月を経過するまでの間は、時効は、完成しない。\n一　仮差押え",
+     "text_sha256": "16cb3f447f6ceec331cb906b3d3ecbff07ab421c46f74d0996b99babc42cc87a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "事前求償権を被保全債権とする仮差押えと事後求償権の消滅時効",
+     "court": "最高裁判所",
+     "date": "平成27年2月17日",
+     "holding": "事前求償権を被保全債権とする仮差押えは、事後求償権の消滅時効をも中断する効力を有する（事前求償権は事後求償権を確保するために認められた権利であるという関係にあるため）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/2117",
+      "https://www.law.nihon-u.ac.jp/lawschool/academic_reserch/pdf/14/09homu-kenkyu14.pdf"
+     ]
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出だったが、判例からも○であることを確認した。判例は改正前の「中断」についてのもので、改正後の「完成猶予」への読み替えは解釈による。"
+   ],
+   "id": "exp-yobi-2026-minpo-q03-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q03-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。夫婦間の権利は、婚姻の解消の時から6か月を経過するまで時効が完成しない。",
+   "body": "「夫婦の一方が他の一方に対して有する権利については、婚姻の解消の時から六箇月を経過するまでの間は、時効は、完成しない」（159条）。婚姻中は夫婦間で権利を行使することが事実上難しいことに配慮した規定である。婚姻中に時効期間が満了していても、婚姻の解消の時から6か月は完成しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "159",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "夫婦の一方が他の一方に対して有する権利については、婚姻の解消の時から六箇月を経過するまでの間は、時効は、完成しない。",
+     "text_sha256": "bbf62120acd0b2bd86adeb72b1b9c4bceeb1290ddeb52d41ae13a8b90304ef7c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minpo-q03-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q03-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。担保権の実行の申立てを取り下げたときは、時効は更新されず、取下げの時から6か月の完成猶予が生ずるだけである。",
+   "body": "担保権の実行があると、その事由が終了するまで時効は完成しないが、「申立ての取下げ又は法律の規定に従わないことによる取消しによってその事由が終了した場合にあっては、その終了の時から六箇月を経過する」までとされる（148条1項2号）。事由が終了した時から時効は新たに進行を始めるのが原則だが、「申立ての取下げ又は法律の規定に従わないことによる取消しによってその事由が終了した場合は、この限りでない」（148条2項）。取下げの時から新たに進行を始める（更新される）とする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "148",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる事由がある場合には、その事由が終了する（申立ての取下げ又は法律の規定に従わないことによる取消しによってその事由が終了した場合にあっては、その終了の時から六箇月を経過する）までの間は、時効は、完成しない。",
+     "text_sha256": "a84676e93fee781cc022148186828096413761bff7118b22140bf10a920a1539",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "148",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二　担保権の実行",
+     "text_sha256": "a84676e93fee781cc022148186828096413761bff7118b22140bf10a920a1539",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "148",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の場合には、時効は、同項各号に掲げる事由が終了した時から新たにその進行を始める。ただし、申立ての取下げ又は法律の規定に従わないことによる取消しによってその事由が終了した場合は、この限りでない。",
+     "text_sha256": "a84676e93fee781cc022148186828096413761bff7118b22140bf10a920a1539",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minpo-q03-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

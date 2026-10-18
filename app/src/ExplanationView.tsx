@@ -30,6 +30,21 @@ export default function ExplanationView({ e }: { e: Explanation }) {
           </ul>
         </details>
       )}
+      {e.cases.length > 0 && (
+        <details>
+          <summary>挙げた判例（検索で実在と判示を確認）</summary>
+          <ul className="citations">
+            {e.cases.map((c, i) => (
+              <li key={i}>
+                <div className="small">
+                  {c.court} {c.date}
+                </div>
+                <blockquote>{c.holding}</blockquote>
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
       <div className="muted small">
         {e.model}・{e.prompt_version}・{e.generated_at} 生成。公式の○×との一致と、条文の引用の照合を通ったものだけを表示しています。誤りがありうるので、条文・判例は原典で確かめてください。
       </div>
