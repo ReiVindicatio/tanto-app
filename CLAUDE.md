@@ -36,11 +36,14 @@
 
 ## 条文の確認（e-Gov 法令 API）
 
+主要7法令（民法・刑法・刑事訴訟法・日本国憲法・商法・会社法・民事訴訟法）は、全文を `data/statutes/<法令>.json` に保存済み（取得日時点の現行法）。
+
 ```
-curl -s "https://laws.e-gov.go.jp/api/1/articles;lawNum=明治四十年法律第四十五号;article=43" | sed 's/<[^>]*>/ /g' | tr -s ' \n' ' '
+python3 pipeline/egov.py 民法 5 98_2        # 保存済みの条文を表示（枝番は 98_2）
+python3 pipeline/egov.py --fetch 民法       # 取り直す（本文が変わった条を表示する＝改正の検出）
 ```
 
-刑法＝明治四十年法律第四十五号／民法＝明治二十九年法律第八十九号／会社法＝平成十七年法律第八十六号／民事訴訟法＝平成八年法律第百九号。
+法令を足すときは `pipeline/egov.py` の `LAWS` に法令名と法令番号を書く（取得時に e-Gov の法令名と照合する）。
 法務省サイトは User-Agent なしの curl に 403 を返す（ブラウザの User-Agent を付ければ取得できる）。
 
 ## 進め方

@@ -14,7 +14,7 @@ python3 pipeline/parse_answers.py R08-2026 刑法刑事訴訟法           # 段
 python3 pipeline/parse_questions.py R08-2026 刑法刑事訴訟法 刑法    # 段階2a：問題文
 python3 pipeline/validate.py R08-2026 刑法刑事訴訟法 刑法           # 段階3：検証 → reports/validation/
 python3 pipeline/derive.py R08-2026 刑法刑事訴訟法 刑法             # 段階5：肢の○×を導出 → data/questions/（正本）
-python3 pipeline/egov.py 民法 5 6                                  # 条文を e-Gov から取得 → data/statutes/
+python3 pipeline/egov.py 民法 5 6                                  # 保存済みの条文を表示（data/statutes/。取り直しは --fetch 民法／--fetch-all）
 python3 pipeline/check_explanations.py yobi 2026 minpo 1           # 段階6の検査：解説と公式の○×・条文の照合
 python3 pipeline/export.py                                         # 段階7：検証が ✅ のものだけ app/public/data/ へ
 ```

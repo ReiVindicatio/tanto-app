@@ -17,14 +17,12 @@ import argparse
 import json
 import re
 import sys
-from pathlib import Path
 
 from common import ROOT
+from egov import load_article
 
-STATUTES = ROOT / "data" / "statutes"
 EXPLANATIONS = ROOT / "data" / "explanations"
 QUESTIONS = ROOT / "data" / "questions"
-LAW_IDS = {"民法": "minpo", "刑法": "keiho", "会社法": "kaisha", "民事訴訟法": "minso"}
 
 QUOTE_RE = re.compile(r"「([^「」]+)」")
 ARTICLE_REF_RE = re.compile(r"(\d+)条(?:の(\d+))?")
@@ -32,11 +30,6 @@ ARTICLE_REF_RE = re.compile(r"(\d+)条(?:の(\d+))?")
 
 def ws(s: str) -> str:
     return re.sub(r"\s+", "", s)
-
-
-def load_statute(law: str, article: str) -> dict | None:
-    p = STATUTES / LAW_IDS.get(law, "_") / f"{article}.json"
-    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
 
 
 def check_question(exam: str, year: int, subject: str, number: int) -> tuple[dict, dict[str, list[str]], list[str]]:
@@ -69,9 +62,9 @@ def check_question(exam: str, year: int, subject: str, number: int) -> tuple[dic
             if c.get("type") != "statute":
                 f.append(f"未知の引用の種類：{c.get('type')}")
                 continue
-            st = load_statute(c["law"], c["article"])
+            st = load_article(c["law"], c["article"])
             if st is None:
-                f.append(f"条文が保存されていない：{c['law']} {c['article']}（pipeline/egov.py で取得する）")
+                f.append(f"条文が保存されていない：{c['law']} {c['article']}（pipeline/egov.py --fetch で取得する）")
                 continue
             paras = {p["num"]: p["text"] for p in st["paragraphs"]}
             missing = [n for n in c.get("paragraphs", []) if n not in paras]

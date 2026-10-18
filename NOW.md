@@ -16,7 +16,8 @@
 - パイプライン：`extract → parse_answers → parse_questions → validate → derive → export`（実行方法は README）
   - `derive` は検証が ✅ でなければ書き出さない。`export` も書き出す直前に検証を流し直す
 - 解説：**民法 R08 問1の5肢を生成し、検査を通ってアプリに表示されている**
-  - 指示 `prompts/explain-v1.md`／条文の取得 `pipeline/egov.py`（`data/statutes/` に保存）／検査 `pipeline/check_explanations.py`
+  - 指示 `prompts/explain-v1.md`／条文 `pipeline/egov.py`／検査 `pipeline/check_explanations.py`
+  - **主要7法令の全文を保存済み**（`data/statutes/<法令>.json`、2026-10-18 取得の現行法。民法1173条など）。解説の生成中に e-Gov へ取りに行く必要はない
   - 検査：公式の○×との一致・条文の引用の照合・本文中の「」の実在・本文で触れた条番号が引用元にあるか・判例の確認情報。わざと4か所壊すと4つとも検出した
   - 問1肢オ（convention＝慣行による×）は、条文（20条4項の対象に未成年者が含まれない）からも×と確認できた
   - **検査は「引用が正しいか」「結論が公式と一致するか」までで、解説の理屈が正しいかは保証しない**（人が読む必要がある）
@@ -25,12 +26,12 @@
   - 問で解くは本番の採点に合わせた（順不同は集合で比べる・部分点は正答表の備考どおり）
   - headless Chrome で確認済み：データの○×どおりに答えて 75/75、刑法の問で解くで 誤答0点・順不同の逆順で満点・各肢○×の4問正解で部分点2点
   - 解答の記録は持たない（FSRS はまだ）。アプリ名は仮
-- 未 commit（commit はユーザーの指示待ち）
+- commit 済み（push はまだ）
 
 ## 次の3手
 
 1. **民法 R08 の解説を5問ずつ量産する**（次は問2〜問6。手順は `prompts/explain-v1.md`）
-   - 1問ごとに：`pipeline/egov.py` で条文を取得 → `data/explanations/yobi/2026/minpo/qNN.json` を書く → `pipeline/check_explanations.py yobi 2026 minpo NN` → 通ったら次へ
+   - 1問ごとに：`python3 pipeline/egov.py 民法 <条>` で条文を確認 → `data/explanations/yobi/2026/minpo/qNN.json` を書く → `pipeline/check_explanations.py yobi 2026 minpo NN` → 通ったら次へ
    - 終わったら `python3 pipeline/export.py` でアプリに反映
    - 判例が要る肢が出てくる（問2の意思表示など）。検索で確認できたものだけ載せる
 2. ❓ **ユーザーに問1の解説を読んでもらう**（民法は学習済み）。とくに肢ウ（営業許可の取消しが将来効であること＝条文に明記がなく解釈による説明）。直す点があれば explain-v1 の改善点として v2 に反映する
