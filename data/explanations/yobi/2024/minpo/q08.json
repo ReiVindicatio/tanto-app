@@ -1,0 +1,191 @@
+{
+ "question_id": "yobi-2024-minpo-q08",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-18",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q08-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、外国の通貨で額が指定された金銭債権について、債権者は外国の通貨でも日本の通貨でも請求できるとする。",
+   "body": "403条は、「外国の通貨で債権額を指定したときは、債務者は、履行地における為替相場により、日本の通貨で弁済をすることができる」と定める。これは債務者に日本の通貨で弁済する権利を認めた規定である。判例（最判昭和50年7月15日）は、外国の通貨で債権額が指定された金銭債権について、債権者は、債務者に対し、外国の通貨又は日本の通貨のいずれによっても請求できるとする。債権者は日本の通貨による履行を請求できないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "403",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "外国の通貨で債権額を指定したときは、債務者は、履行地における為替相場により、日本の通貨で弁済をすることができる。",
+     "text_sha256": "cffe17dbb38d2df059aef6b801bc323d7d7881ff58d61b75de8287443a8f4c48",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "外国の通貨で指定された金銭債権と日本の通貨による請求",
+     "court": "最高裁判所",
+     "date": "昭和50年7月15日",
+     "holding": "外国の通貨をもって債権額が指定された金銭債権について、債権者は、債務者に対し、外国の通貨又は日本の通貨のいずれによっても請求することができる（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52107/detail2/index.html",
+      "https://law-lib.jp/subjects/2/precedents/876"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は検索で年月日と判示を確認した（裁判所の判例ページを含む）。"
+   ],
+   "id": "exp-yobi-2024-minpo-q08-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q08-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。給付の一方が選択権者の過失によらずに不能になったときは、選択債権は残りの給付に特定しない。",
+   "body": "「債権の目的である給付の中に不能のものがある場合において、その不能が選択権を有する者の過失によるものであるときは、債権は、その残存するものについて存在する」（410条）。残存する給付に特定するのは、不能が選択権者の過失による場合に限られる。選択権者の過失によらずに不能になったときは特定せず、選択権者は、なお不能となった給付を選択することもできると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "410",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権の目的である給付の中に不能のものがある場合において、その不能が選択権を有する者の過失によるものであるときは、債権は、その残存するものについて存在する。",
+     "text_sha256": "c6ab7cff3abad2a38559d8189220e933888ca57644e7bdd47043e0226d7f3a88",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "不能となった給付を選択できるという帰結は、410条の反対解釈による説明。"
+   ],
+   "id": "exp-yobi-2024-minpo-q08-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q08-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。選択債権の選択権は、別段の意思表示がなければ債務者に属する。",
+   "body": "「債権の目的が数個の給付の中から選択によって定まるときは、その選択権は、債務者に属する」（406条）。本肢は条文どおりである。当事者が別段の定めをすれば、債権者や第三者に選択権を与えることもできる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "406",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権の目的が数個の給付の中から選択によって定まるときは、その選択権は、債務者に属する。",
+     "text_sha256": "3073b8aa6c328b90a1be710caec4c34c9c4233f24bf11f26c3c55a6683be11b3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公式の○×は慣行（convention）による導出だったが、条文（406条）からも○であることを確認した。"
+   ],
+   "id": "exp-yobi-2024-minpo-q08-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q08-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。既に発生した支分権としての利息債権は、元本債権から独立した債権であり、元本債権と切り離して譲渡できる。",
+   "body": "債権は、性質上許されない場合を除き、譲り渡すことができる（466条1項）。利息債権のうち、一定期間の経過によって具体的に発生した利息の支払請求権（支分権としての利息債権）は、元本債権とは独立した債権として扱われ、元本債権と切り離して譲渡することができると解されている。これに対し、将来の利息を生み出す基本権としての利息債権は、元本債権に従たるものとして扱われる。分離して譲渡できないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "466",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権は、譲り渡すことができる。ただし、その性質がこれを許さないときは、この限りでない。",
+     "text_sha256": "53cc6756b6ec229cfaa95a16773ac9bf62af5b5c72736b876442ab620e04c690",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "支分権としての利息債権の独立性は解釈による説明。判例は確認していない。"
+   ],
+   "id": "exp-yobi-2024-minpo-q08-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minpo-q08-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。利息が1年分以上延滞し、催告しても支払われないときは、債権者は延滞利息を元本に組み入れることができる。",
+   "body": "「利息の支払が一年分以上延滞した場合において、債権者が催告をしても、債務者がその利息を支払わないときは、債権者は、これを元本に組み入れることができる」（405条）。いわゆる法定重利の規定である。本肢は条文どおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "405",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "利息の支払が一年分以上延滞した場合において、債権者が催告をしても、債務者がその利息を支払わないときは、債権者は、これを元本に組み入れることができる。",
+     "text_sha256": "b37f9aba5a3ac98f038c4cd0e4423e3620475f2e72214b23996ed691f8708aa2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-minpo-q08-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
