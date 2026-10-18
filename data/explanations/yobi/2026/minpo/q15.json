@@ -1,0 +1,248 @@
+{
+ "question_id": "yobi-2026-minpo-q15",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-18",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q15-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。保証人が全額を弁済すると、保証人は債権者に代位するので、抵当権は消滅せず、保証人がこれを行使できる。",
+   "body": "「債務者のために弁済をした者は、債権者に代位する」（499条）。代位した者は、「債権の効力及び担保としてその債権者が有していた一切の権利を行使することができる」（501条1項）。保証人Ｃは主たる債務者Ａのために弁済したので、Ｂに代位し、Ｂが有していたＡ所有の土地の抵当権を、Ａに対する求償権の範囲内で行使できる（同条2項）。抵当権が消滅するとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "499",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者のために弁済をした者は、債権者に代位する。",
+     "text_sha256": "b54f0f1ff44e5fcf4711dbaa60c422c8fa936c2965fc141aa442411cfe09ea1c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "501",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の規定により債権者に代位した者は、債権の効力及び担保としてその債権者が有していた一切の権利を行使することができる。",
+     "text_sha256": "173268b45b7e8524a5b3b90208061e8868848538142f787f231b67423f03a20d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "501",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定による権利の行使は、債権者に代位した者が自己の権利に基づいて債務者に対して求償をすることができる範囲内（保証人の一人が他の保証人に対して債権者に代位する場合には、自己の権利に基づいて当該他の保証人に対して求償をすることができる範囲内）に限り、することができる。",
+     "text_sha256": "173268b45b7e8524a5b3b90208061e8868848538142f787f231b67423f03a20d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minpo-q15-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q15-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。目的物の引渡債務が履行不能になっても、代金支払債務は当然には消滅しない。買主は代金の支払を拒むことができ、契約を解除することもできる。",
+   "body": "現行民法は、履行不能によって反対給付の債務が当然に消滅するという仕組みを採っていない。当事者双方の責めに帰することができない事由で債務を履行できなくなったときは、「債権者は、反対給付の履行を拒むことができる」（536条1項）にとどまる。また、債務の全部の履行が不能であるときは、債権者は催告なしに直ちに契約を解除できる（542条1項1号）。代金支払債務を消滅させるには、Ｂが解除をする必要がある。当然に消滅するとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "536",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者双方の責めに帰することができない事由によって債務を履行することができなくなったときは、債権者は、反対給付の履行を拒むことができる。",
+     "text_sha256": "07238591347b0008a936f1e6eb7f8c43291d972cb540de8dd607128c70eb8bc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "542",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一　債務の全部の履行が不能であるとき。",
+     "text_sha256": "021dce87813fcae2438db5c4ffc2afe591887076d1cccb4bc6a499a271622b73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "本肢は滅失の帰責事由を示していないが、Ａに帰責事由がある場合も、代金支払債務を消滅させるには解除（542条1項1号）が必要である点は同じ。"
+   ],
+   "id": "exp-yobi-2026-minpo-q15-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q15-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。委任者の死亡で委任が終了しても、急迫の事情があるときは、受任者は相続人が事務を処理できるようになるまで必要な処分をしなければならない。",
+   "body": "委任は、委任者の死亡によって終了する（653条1号）。しかし、「委任が終了した場合において、急迫の事情があるときは、受任者又はその相続人若しくは法定代理人は、委任者又はその相続人若しくは法定代理人が委任事務を処理することができるに至るまで、必要な処分をしなければならない」（654条）。本肢は条文どおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "653",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一　委任者又は受任者の死亡",
+     "text_sha256": "d5fd08a24dfabded2ae84afd489a38d8782a7badf15f0b07ddceac3f3b8a298f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "654",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "委任が終了した場合において、急迫の事情があるときは、受任者又はその相続人若しくは法定代理人は、委任者又はその相続人若しくは法定代理人が委任事務を処理することができるに至るまで、必要な処分をしなければならない。",
+     "text_sha256": "cd34d7df703332d3d62c6acd9a040ae0a93da4eacecad2b09e9a685353b78f1f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minpo-q15-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q15-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。賃借人が賃貸目的の建物を買い受けると、賃借権（債権）と賃貸人の債務が同一人に帰属し、混同により消滅する。",
+   "body": "「債権及び債務が同一人に帰属したときは、その債権は、消滅する。ただし、その債権が第三者の権利の目的であるときは、この限りでない」（520条）。ＢがＡから建物を買い受けると、Ｂは建物の所有者として賃貸人の地位も取得するので、賃借人としての権利と賃貸人としての義務がＢに帰属する。したがって、賃借権は第三者の権利の目的となっている場合を除き、混同により消滅する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "520",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権及び債務が同一人に帰属したときは、その債権は、消滅する。ただし、その債権が第三者の権利の目的であるときは、この限りでない。",
+     "text_sha256": "a2e410b520170a5739ab46af6604b623a55107e4f2dec2ce55ae43e8fefce1c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "建物の譲受人が賃貸人の地位を取得するという点は、当てはめとしての説明。"
+   ],
+   "id": "exp-yobi-2026-minpo-q15-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minpo-q15-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。原賃貸借が終了すると、転借人は賃貸人に転借権を対抗できず、賃貸人が転借人に返還を請求した時には、転貸人の債務が履行不能となって転貸借も終了する。",
+   "body": "賃貸人が合意解除を転借人に対抗できないとする規定（613条3項）はあるが、期間満了による終了についてそのような制限はない（自動車の賃貸借なので借地借家法の適用もない）。したがって、ＡＢ間の契約が期間満了で終了すれば、ＣはＡに転借権を対抗できず、Ａは直接Ｃに自動車の返還を請求できる。判例（最判平成9年2月25日）は、賃貸借が賃借人の債務不履行による解除で終了した場合について、賃貸人の承諾のある転貸借は、原則として、賃貸人が転借人に目的物の返還を請求した時に、転貸人の転借人に対する債務の履行不能により終了するとした。期間満了の場合も、同様に考えられる。賃借物を使用収益させることができなくなれば賃貸借は終了する（616条の2）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "613",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "賃借人が適法に賃借物を転貸した場合には、賃貸人は、賃借人との間の賃貸借を合意により解除したことをもって転借人に対抗することができない。",
+     "text_sha256": "afd590a253a8d79de76fa457c87cd3396ab5d3f00656d10d1a796d9c92d57281",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "616_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賃借物の全部が滅失その他の事由により使用及び収益をすることができなくなった場合には、賃貸借は、これによって終了する。",
+     "text_sha256": "5f5899b79e40c94f83428e5284d54d4a38aa2aba597f4f6207124f7ad120cb73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "原賃貸借の債務不履行解除と転貸借の終了時期",
+     "court": "最高裁判所",
+     "date": "平成9年2月25日",
+     "holding": "賃貸借が賃借人の債務不履行を理由とする解除により終了した場合、賃貸人の承諾のある転貸借は、原則として、賃貸人が転借人に対して目的物の返還を請求した時に、転貸人の転借人に対する債務の履行不能により終了する（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/711"
+     ]
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。判例は債務不履行解除の事案で、期間満了の本肢に同じ考え方を当てはめるのは解釈による説明。判例は検索（二次資料）で年月日と判示の内容を確認した。"
+   ],
+   "id": "exp-yobi-2026-minpo-q15-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
