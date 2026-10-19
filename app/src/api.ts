@@ -4,7 +4,8 @@ import type { Answer } from "./store";
 export type StoredAnswer = Answer & { received_at: string };
 
 export interface ApiClient {
-  push(answers: Answer[]): Promise<{ inserted: number; received_at: string }>;
+  /** keepalive：画面を閉じても送信を続ける（本文64KBまで） */
+  push(answers: Answer[], opts?: { keepalive?: boolean }): Promise<{ inserted: number; received_at: string }>;
   pull(since?: string): Promise<StoredAnswer[]>;
   deleteMe(): Promise<void>;
 }
@@ -12,20 +13,21 @@ export interface ApiClient {
 export class HttpApiClient implements ApiClient {
   constructor(private readonly getToken: () => Promise<string | null>, private readonly base = "") {}
 
-  private async call(method: string, path: string, body?: unknown): Promise<unknown> {
+  private async call(method: string, path: string, body?: unknown, keepalive = false): Promise<unknown> {
     const token = await this.getToken();
     if (!token) throw new Error("ログインしていません");
     const res = await fetch(`${this.base}${path}`, {
       method,
       headers: { authorization: `Bearer ${token}`, ...(body ? { "content-type": "application/json" } : {}) },
       body: body ? JSON.stringify(body) : undefined,
+      keepalive,
     });
     if (!res.ok) throw new Error(`API ${method} ${path}：${res.status}`);
     return res.json();
   }
 
-  async push(answers: Answer[]) {
-    return (await this.call("POST", "/api/answers", { answers })) as { inserted: number; received_at: string };
+  async push(answers: Answer[], opts: { keepalive?: boolean } = {}) {
+    return (await this.call("POST", "/api/answers", { answers }, opts.keepalive ?? false)) as { inserted: number; received_at: string };
   }
 
   async pull(since?: string) {

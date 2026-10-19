@@ -13,6 +13,17 @@ async function openAs(browser: Browser, user: string | null): Promise<Page> {
   return page;
 }
 
+/** 画面を隠す（別のアプリに切り替えた）→ 戻す。隠したときに未送信が送られる（T021） */
+async function hideAndShow(page: Page) {
+  const set = (state: string) =>
+    page.evaluate((v) => {
+      Object.defineProperty(document, "visibilityState", { value: v, configurable: true });
+      document.dispatchEvent(new Event("visibilitychange"));
+    }, state);
+  await set("hidden");
+  await set("visible");
+}
+
 async function answer(page: Page, n: number) {
   await allYears(page).getByRole("button", { name: /肢で解く/ }).click();
   for (let k = 0; k < n; k++) {
@@ -25,11 +36,18 @@ async function answer(page: Page, n: number) {
 test("2つのブラウザで同じ利用者なら、片方で解いた記録がもう片方に出る", async ({ browser }) => {
   const phone = await openAs(browser, "alice");
   await expect(phone.locator(".authbar")).toContainText("テスト利用者 alice");
-  await answer(phone, 3);
+  await expect(phone.locator(".sync-status")).toContainText("同期済み"); // 起動時の同期が終わってから数える
+  const apiCalls: string[] = [];
+  phone.on("request", (r) => { if (new URL(r.url()).pathname.startsWith("/api/")) apiCalls.push(`${r.method()} ${new URL(r.url()).pathname}`); });
+  await answer(phone, 10);
+  await expect(phone.locator(".sync-status")).toContainText("未送信 10 件"); // 回答のたびには送らない
+  expect(apiCalls).toEqual([]);
+  await hideAndShow(phone);
   await expect(phone.locator(".sync-status")).toContainText("同期済み");
+  expect(apiCalls).toEqual(["POST /api/answers"]); // まとめて1回。戻ったときは5分たっていないので受け取らない
 
   const pc = await openAs(browser, "alice");
-  await expect(allYears(pc)).toContainText("回答済み 3枚");
+  await expect(allYears(pc)).toContainText("回答済み 10枚");
 
   // 別の利用者には見えない
   const other = await openAs(browser, "bob");

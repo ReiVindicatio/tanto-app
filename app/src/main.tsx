@@ -18,6 +18,12 @@ initLearning(sync).finally(() => {
       <App auth={auth} sync={sync} />
     </StrictMode>,
   );
-  auth.onChange(() => void sync.sync()); // 起動時・ログイン時
+  auth.onChange(() => void sync.sync()); // 起動時・ログイン時：送って受け取る
   window.addEventListener("online", () => void sync.sync()); // オンラインに戻ったとき
+  // 画面を隠したら未送信を送り、戻ったら（前回から5分以上たっていれば）受け取る（T021）
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") void sync.flushOnHide();
+    else void sync.onVisible();
+  });
+  window.addEventListener("pagehide", () => void sync.flushOnHide());
 });

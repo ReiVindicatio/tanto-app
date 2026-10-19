@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { SyncedStore } from "./sync";
+import { FLUSH_COUNT, FLUSH_DELAY_MS, HIDE_BATCH, PULL_INTERVAL_MS, SyncedStore, type Clock } from "./sync";
 import { LocalStorageStore, type Answer } from "./store";
 import type { ApiClient, StoredAnswer } from "./api";
 import type { AuthClient, User } from "./auth";
@@ -9,6 +9,7 @@ import { MemoryStorage } from "./test/fakes";
 class FakeServer {
   rows = new Map<string, StoredAnswer[]>();
   offline = false;
+  calls: { method: "push" | "pull"; count?: number; keepalive?: boolean }[] = [];
   private t = Date.parse("2026-10-19T00:00:00.000Z");
   client(auth: AuthClient): ApiClient {
     const uid = () => {
@@ -18,7 +19,8 @@ class FakeServer {
       return u.uid;
     };
     return {
-      push: async (answers: Answer[]) => {
+      push: async (answers: Answer[], opts?: { keepalive?: boolean }) => {
+        this.calls.push({ method: "push", count: answers.length, keepalive: opts?.keepalive });
         const id = uid();
         const mine = this.rows.get(id) ?? [];
         const have = new Set(mine.map((a) => a.id));
@@ -28,7 +30,7 @@ class FakeServer {
         this.rows.set(id, mine);
         return { inserted, received_at };
       },
-      pull: async (since?: string) => (this.rows.get(uid()) ?? []).filter((a) => !since || a.received_at > since),
+      pull: async (since?: string) => (this.calls.push({ method: "pull" }), this.rows.get(uid()) ?? []).filter((a) => !since || a.received_at > since),
       deleteMe: async () => { this.rows.delete(uid()); },
     };
   }
@@ -48,13 +50,31 @@ function fakeAuth(initial: User | null): AuthClient & { set(u: User | null): voi
 
 const ans = (id: string, s = "yobi-2026-minpo-q01-a", ok = true): Answer => ({ id, s, ok, at: `2026-10-19T00:00:0${id.length % 10}.000Z` });
 
-function device(server: FakeServer, user: User | null) {
+/** 偽の時計：advance で時間を進め、期限が来たタイマーを実行する */
+class FakeClock implements Clock {
+  t = Date.parse("2026-10-19T09:00:00.000Z");
+  private timers = new Map<number, { at: number; fn: () => void }>();
+  private seq = 0;
+  now() { return this.t; }
+  setTimeout(fn: () => void, ms: number) { const id = ++this.seq; this.timers.set(id, { at: this.t + ms, fn }); return id; }
+  clearTimeout(h: unknown) { this.timers.delete(h as number); }
+  get pendingTimers() { return this.timers.size; }
+  async advance(ms: number) {
+    this.t += ms;
+    for (const [id, x] of [...this.timers]) if (x.at <= this.t) { this.timers.delete(id); x.fn(); }
+    await new Promise((r) => setTimeout(r, 0)); // 送信の完了を待つ
+  }
+}
+
+function device(server: FakeServer, user: User | null, clock: Clock = new FakeClock()) {
   const storage = new MemoryStorage();
   const auth = fakeAuth(user);
   const local = new LocalStorageStore(storage);
-  const store = new SyncedStore(local, server.client(auth), auth, storage, () => {}, () => !server.offline);
+  const store = new SyncedStore(local, server.client(auth), auth, storage, () => {}, () => !server.offline, clock);
   return { storage, auth, local, store };
 }
+
+const settle = () => new Promise((r) => setTimeout(r, 0));
 
 describe("SyncedStore", () => {
   it("ログインしていなければ端末にだけ記録し、送らない", async () => {
@@ -126,5 +146,100 @@ describe("SyncedStore", () => {
     await alice.store.sync();
     await bob.store.sync();
     expect(await bob.local.load()).toEqual([]);
+  });
+});
+
+describe("SyncedStore：送る回数を減らす（T021）", () => {
+  const alice = { uid: "alice", name: "A" };
+
+  it("回答のたびには送らず、最初の未送信から60秒たったらまとめて送る", async () => {
+    const server = new FakeServer();
+    const clock = new FakeClock();
+    const d = device(server, alice, clock);
+    await d.store.sync(); // 起動時
+    server.calls = [];
+    for (let i = 0; i < 5; i++) { await d.store.append(ans(`a${i}`)); await clock.advance(5000); }
+    expect(server.calls).toEqual([]);
+    expect(d.store.getStatus().pending).toBe(5);
+    await clock.advance(FLUSH_DELAY_MS - 25000);
+    expect(server.calls).toEqual([{ method: "push", count: 5, keepalive: undefined }]); // 受け取りはしない
+    expect(d.store.getStatus().pending).toBe(0);
+    expect(clock.pendingTimers).toBe(0);
+  });
+
+  it("未送信が30件たまったら、60秒を待たずに送る", async () => {
+    const server = new FakeServer();
+    const clock = new FakeClock();
+    const d = device(server, alice, clock);
+    await d.store.sync();
+    server.calls = [];
+    for (let i = 0; i < FLUSH_COUNT; i++) await d.store.append(ans(`a${i}`));
+    await settle();
+    expect(server.calls).toEqual([{ method: "push", count: FLUSH_COUNT, keepalive: undefined }]);
+    expect(clock.pendingTimers).toBe(0); // 送ったのでタイマーは止まる
+  });
+
+  it("画面を隠したら、keepalive で送る（件数は上限まで。残りは次の機会）", async () => {
+    const server = new FakeServer();
+    const clock = new FakeClock();
+    const d = device(server, alice, clock);
+    await d.store.sync();
+    server.calls = [];
+    await d.store.append(ans("x"));
+    await d.store.flushOnHide();
+    expect(server.calls).toEqual([{ method: "push", count: 1, keepalive: true }]);
+    expect(clock.pendingTimers).toBe(0);
+
+    // 上限を超える量（ログイン前の記録の引き継ぎなど）
+    d.storage.setItem("tanto.outbox.v1", JSON.stringify(Array.from({ length: HIDE_BATCH + 5 }, (_, i) => ans(`b${i}`))));
+    server.calls = [];
+    await d.store.flushOnHide();
+    expect(server.calls).toEqual([{ method: "push", count: HIDE_BATCH, keepalive: true }]);
+    expect(d.store.getStatus().pending).toBe(5);
+  });
+
+  it("画面に戻ったときは、前回の受け取りから5分以上たっていれば受け取る", async () => {
+    const server = new FakeServer();
+    const clock = new FakeClock();
+    const phone = device(server, alice, clock);
+    const pc = device(server, alice, clock);
+    await phone.store.sync();
+    await pc.store.append(ans("c1"));
+    await pc.store.flushOnHide();
+    server.calls = [];
+    await clock.advance(PULL_INTERVAL_MS - 1000);
+    expect(await phone.store.onVisible()).toBe(0);
+    expect(server.calls).toEqual([]); // 5分たっていないので呼ばない
+    await clock.advance(1000);
+    expect(await phone.store.onVisible()).toBe(1);
+    expect(server.calls.map((c) => c.method)).toEqual(["pull"]);
+    expect((await phone.local.load()).map((a) => a.id)).toEqual(["c1"]);
+  });
+
+  it("送れなかったら箱に残し、次の機会（60秒後）に送り直す", async () => {
+    const server = new FakeServer();
+    const clock = new FakeClock();
+    const d = device(server, alice, clock);
+    await d.store.sync();
+    server.offline = true;
+    await d.store.append(ans("1"));
+    await clock.advance(FLUSH_DELAY_MS);
+    expect(d.store.getStatus()).toMatchObject({ state: "offline", pending: 1 });
+    server.offline = false;
+    await d.store.append(ans("2"));
+    await clock.advance(FLUSH_DELAY_MS);
+    expect(d.store.getStatus()).toMatchObject({ state: "idle", pending: 0 });
+    expect(server.rows.get("alice")!.map((a) => a.id).sort()).toEqual(["1", "2"]);
+  });
+
+  it("30分で300肢解いても、API の呼び出しは約30回（1分に1回）に収まる", async () => {
+    const server = new FakeServer();
+    const clock = new FakeClock();
+    const d = device(server, alice, clock);
+    await d.store.sync();
+    for (let i = 0; i < 300; i++) { await d.store.append(ans(`a${i}`)); await clock.advance(6000); }
+    await d.store.flushOnHide();
+    expect(server.rows.get("alice")).toHaveLength(300);
+    expect(server.calls.length).toBeLessThanOrEqual(33); // 起動時2回＋60秒ごとに1回＋閉じるとき1回（回答ごとなら600回）
   });
 });
