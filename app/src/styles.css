@@ -731,3 +731,124 @@ details > summary {
     color: var(--text-strong);
   }
 }
+
+/* ---- 今日の○問（T022） ---- */
+
+.card.hero {
+  border: 1px solid var(--brand);
+  background: var(--brand-soft);
+  padding: 16px;
+}
+
+.hero-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-strong);
+}
+
+.hero-count {
+  font-size: 2.2rem;
+  color: var(--brand);
+  margin: 0 2px;
+}
+
+.hero-breakdown {
+  margin-bottom: 6px;
+}
+
+.card.hero .segmented button {
+  background: var(--bg);
+}
+
+.card.hero .segmented button.chosen {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+}
+
+button.start {
+  margin: 12px 0 4px;
+  padding: 12px;
+  font-size: 1.1rem;
+}
+
+.hero-note {
+  margin: 4px 0 0;
+}
+
+/* ---- 結果画面（T023） ---- */
+
+.result-summary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 8px 0 12px;
+}
+
+.result-summary p {
+  margin: 0;
+}
+
+.donut {
+  flex: none;
+}
+
+.donut-text {
+  font-size: 22px;
+  font-weight: bold;
+  fill: var(--text-strong);
+}
+
+.breakdown-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 0;
+}
+
+.result-actions {
+  margin: 12px 0;
+}
+
+.wrong-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wrong-item {
+  border: 1px solid var(--border-subtle);
+  border-left: 4px solid var(--ng);
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+
+.wrong-item > summary {
+  list-style: none;
+}
+
+.wrong-item > summary::-webkit-details-marker {
+  display: none;
+}
+
+.wrong-answer {
+  margin-left: 8px;
+  font-weight: bold;
+  color: var(--text-strong);
+}
+
+.wrong-text {
+  display: block;
+  color: var(--text-strong);
+  margin-top: 2px;
+}
+
+.score-row.full span:last-child {
+  color: var(--ok);
+  font-weight: bold;
+}
+
+.score-row.zero span:last-child {
+  color: var(--ng);
+  font-weight: bold;
+}

@@ -28,7 +28,7 @@ test("解いている画面ではタブを隠し、戻ると科目の画面に�
   await page.goForward();
   await page.reload();
   await expect(page).toHaveURL(/\/$/);
-  await expect(page.locator(".review-row").first()).toBeVisible();
+  await expect(page.locator(".card.hero")).toBeVisible();
 });
 
 test("科目の画面の URL を直接開ける。存在しない科目は科目の一覧へ", async ({ page }) => {

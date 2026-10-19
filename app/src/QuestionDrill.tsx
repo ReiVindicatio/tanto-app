@@ -4,38 +4,34 @@ import QuestionBody from "./QuestionBody";
 import { grade, slotOptions, type Grade } from "./grade";
 import LawNote from "./LawNote";
 import { Progress } from "./screens/common";
+import { QuestionResult, type QuestionResultItem } from "./ResultView";
 
 export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; data: DataSet; onExit: () => void }) {
   const [i, setI] = useState(0);
   const [picks, setPicks] = useState<(number | null)[]>(() => emptyPicks(data.questions[0]));
   const [result, setResult] = useState<Grade | null>(null);
-  const [total, setTotal] = useState({ earned: 0, points: 0 });
+  const [scores, setScores] = useState<QuestionResultItem[]>([]);
+  const [startedAt, setStartedAt] = useState(() => Date.now());
+  const [finishedAt, setFinishedAt] = useState<number | null>(null);
   const sById = useMemo(() => new Map(data.statements.map((s) => [s.id, s])), [data]);
   const expById = useMemo(() => new Map(data.explanations.map((e) => [e.statement_id, e])), [data]);
 
   if (i >= data.questions.length) {
     return (
-      <section>
-        <h1>おわり</h1>
-        <p className="big">
-          {total.earned} / {total.points} 点
-        </p>
-        <div className="row">
-          <button
-            onClick={() => {
-              setI(0);
-              setPicks(emptyPicks(data.questions[0]));
-              setResult(null);
-              setTotal({ earned: 0, points: 0 });
-            }}
-          >
-            もう一度
-          </button>
-          <button className="secondary" onClick={onExit}>
-            戻る
-          </button>
-        </div>
-      </section>
+      <QuestionResult
+        items={scores}
+        elapsedMs={(finishedAt ?? Date.now()) - startedAt}
+        onRetry={() => {
+          setI(0);
+          setPicks(emptyPicks(data.questions[0]));
+          setResult(null);
+          setScores([]);
+          setStartedAt(Date.now());
+          setFinishedAt(null);
+          window.scrollTo(0, 0);
+        }}
+        onExit={onExit}
+      />
     );
   }
 
@@ -50,11 +46,12 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
   function submit() {
     const g = grade(q, picks);
     setResult(g);
-    setTotal((t) => ({ earned: t.earned + g.earned, points: t.points + q.points }));
+    setScores((sc) => [...sc, { question: q, earned: g.earned }]);
   }
 
   function next() {
     const n = i + 1;
+    if (n >= data.questions.length) setFinishedAt(Date.now());
     setI(n);
     setResult(null);
     if (n < data.questions.length) setPicks(emptyPicks(data.questions[n]));

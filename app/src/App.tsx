@@ -68,8 +68,7 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
             title={play.title}
             data={play.data}
             cards={play.cards}
-            examName={play.examName}
-            subjectName={play.subjectName}
+            origin={play.origin}
             onExit={() => back()}
           />
         )}

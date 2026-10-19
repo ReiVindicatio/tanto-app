@@ -3,7 +3,7 @@ import { expect, type Page } from "@playwright/test";
 /** ホームを開き、データの読み込みを待つ */
 export async function openHome(page: Page) {
   await page.goto("/");
-  await expect(page.locator(".review-row").first()).toBeVisible();
+  await expect(page.locator(".hero-breakdown")).not.toContainText("読み込み中");
 }
 
 /** 画面下のタブ（T025） */
