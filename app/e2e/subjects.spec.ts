@@ -1,12 +1,11 @@
 import { expect, test } from "@playwright/test";
-import { allYearsSet, openHome, openYear, subject } from "./helpers";
+import { openHome, openYear, subjectCard, tab } from "./helpers";
 
 test("商法・民訴がホームに出る（T007）", async ({ page }) => {
   await openHome(page);
-  await expect(subject(page, "商法")).toBeVisible();
-  await expect(subject(page, "民事訴訟法")).toBeVisible();
-  await expect(allYearsSet(page, "商法")).toContainText("15年度");
-  await expect(allYearsSet(page, "民事訴訟法")).toContainText("15年度");
+  await tab(page, "科目").click();
+  await expect(subjectCard(page, "商法")).toContainText("15年度");
+  await expect(subjectCard(page, "民事訴訟法")).toContainText("15年度");
 });
 
 test("記述を説明した選択肢から選ぶ問（民訴 H23 問38）を採点できる", async ({ page, request }) => {
@@ -33,8 +32,9 @@ test("記述を説明した選択肢から選ぶ問（民訴 H23 問38）を採�
 
 test("刑法・刑訴がホームに出る（T009）", async ({ page }) => {
   await openHome(page);
-  await expect(allYearsSet(page, "刑法")).toContainText("12年度");
-  await expect(allYearsSet(page, "刑事訴訟法")).toContainText("12年度");
+  await tab(page, "科目").click();
+  await expect(subjectCard(page, "刑法")).toContainText("12年度");
+  await expect(subjectCard(page, "刑事訴訟法")).toContainText("12年度");
 });
 
 test("刑訴 R02 を問で解く：肢のない問（人数・発言者の組合せ）も含めて、公式の解答で満点になる", async ({ page, request }) => {

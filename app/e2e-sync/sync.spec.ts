@@ -1,14 +1,15 @@
 import { expect, test, type Browser, type Page } from "@playwright/test";
 
-const allYears = (page: Page) =>
-  page.locator(".subject").filter({ has: page.locator("h2", { hasText: "民法" }) }).locator(".set").filter({ hasText: "全年度から" });
+/** 民法の科目の画面の「全年度から」の欄（T025：科目の画面の URL を直接開く） */
+const allYears = (page: Page) => page.locator(".set").filter({ hasText: "全年度から" });
+const myPage = (page: Page) => page.locator("nav.tabbar").getByRole("button", { name: "マイページ" });
 
 /** テスト用ログインの利用者 ID を入れた状態で開く（本番のビルドには入らない仕組み） */
 async function openAs(browser: Browser, user: string | null): Promise<Page> {
   const ctx = await browser.newContext({ viewport: { width: 420, height: 900 } });
   if (user) await ctx.addInitScript((u) => localStorage.setItem("tanto.testUser", u), user);
   const page = await ctx.newPage();
-  await page.goto("/");
+  await page.goto("/subjects/minpo");
   await expect(allYears(page)).toBeVisible();
   return page;
 }
@@ -35,7 +36,9 @@ async function answer(page: Page, n: number) {
 
 test("2つのブラウザで同じ利用者なら、片方で解いた記録がもう片方に出る", async ({ browser }) => {
   const phone = await openAs(browser, "alice");
+  await myPage(phone).click(); // ログイン中の名前はマイページに出る
   await expect(phone.locator(".authbar")).toContainText("テスト利用者 alice");
+  await phone.goBack();
   await expect(phone.locator(".sync-status")).toContainText("同期済み"); // 起動時の同期が終わってから数える
   const apiCalls: string[] = [];
   phone.on("request", (r) => { if (new URL(r.url()).pathname.startsWith("/api/")) apiCalls.push(`${r.method()} ${new URL(r.url()).pathname}`); });
@@ -59,6 +62,7 @@ test("ログイン前に解いた記録は、ログインするとアカウン�
   const page = await openAs(browser, null);
   await answer(page, 2);
   await expect(allYears(page)).toContainText("回答済み 2枚");
+  await myPage(page).click();
   page.once("dialog", (d) => d.accept("carol")); // テスト用ログインの利用者 ID
   await page.getByRole("button", { name: "Google でログイン" }).click();
   await expect(page.locator(".sync-status")).toContainText("同期済み");
@@ -68,5 +72,6 @@ test("ログイン前に解いた記録は、ログインするとアカウン�
 
   await page.getByRole("button", { name: "ログアウト" }).click();
   await expect(page.getByRole("button", { name: "Google でログイン" })).toBeVisible();
+  await page.goBack();
   await expect(allYears(page)).toContainText("回答済み 0枚");
 });

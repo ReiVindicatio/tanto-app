@@ -10,12 +10,14 @@ export type LearningState = {
   cards: Map<string, Card>;
   /** "<科目>:YYYY-MM-DD"（端末の現地日付）→ その日に初めて答えた肢の数 */
   newCount: Map<string, number>;
+  /** "YYYY-MM-DD"（端末の現地日付）→ その日の回答数・正解数（T025：今日の成績） */
+  daily: Map<string, { answered: number; correct: number }>;
 };
 
 const scheduler = fsrs();
 
 export function emptyState(): LearningState {
-  return { history: new Map(), cards: new Map(), newCount: new Map() };
+  return { history: new Map(), cards: new Map(), newCount: new Map(), daily: new Map() };
 }
 
 /** 肢 ID（yobi-2026-minpo-q01-a）から科目を取り出す */
@@ -37,6 +39,9 @@ export function apply(state: LearningState, a: Answer): void {
     const k = `${subjectOf(a.s)}:${localDate(at)}`;
     state.newCount.set(k, (state.newCount.get(k) ?? 0) + 1);
   }
+  const day = localDate(at);
+  const d = state.daily.get(day) ?? { answered: 0, correct: 0 };
+  state.daily.set(day, { answered: d.answered + 1, correct: d.correct + (a.ok ? 1 : 0) });
   state.history.set(a.s, {
     attempts: (prev?.attempts ?? 0) + 1,
     correct: (prev?.correct ?? 0) + (a.ok ? 1 : 0),

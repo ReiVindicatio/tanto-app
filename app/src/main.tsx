@@ -6,7 +6,12 @@ import { LocalStorageStore } from "./store";
 import { createAuthClient } from "./auth";
 import { HttpApiClient } from "./api";
 import { SyncedStore } from "./sync";
+import { applyTheme, watchSystemTheme } from "./theme";
 import "./styles.css";
+
+// テーマ（ダークモード）は描画の前に当てる（T025）
+applyTheme();
+watchSystemTheme();
 
 // 学習記録（回答ログ）：端末に保存し、ログインしていればサーバー（/api）と同期する（T003）
 const auth = createAuthClient();

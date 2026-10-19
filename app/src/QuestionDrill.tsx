@@ -3,6 +3,7 @@ import type { DataSet, Question, SetInfo } from "./types";
 import QuestionBody from "./QuestionBody";
 import { grade, slotOptions, type Grade } from "./grade";
 import LawNote from "./LawNote";
+import { Progress } from "./screens/common";
 
 export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; data: DataSet; onExit: () => void }) {
   const [i, setI] = useState(0);
@@ -69,6 +70,9 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
           {info.exam_name} {info.exam.era} {info.subject_name}　{i + 1} / {data.questions.length}
         </span>
       </div>
+      <div className="play-progress">
+        <Progress value={(i + (result ? 1 : 0)) / data.questions.length} />
+      </div>
 
       <QuestionBody q={q} statements={statements} showTruth={result !== null} explanations={expById} />
 
@@ -84,11 +88,7 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
             <div className="row">
               {slotOptions(q, k, statements).map((o) => {
                 const chosen = picks[k] === o.value;
-                const cls = [
-                  "opt",
-                  chosen ? "chosen" : "",
-                  result && chosen ? (result.correct[k] ? "ok" : "ng") : "",
-                ].join(" ");
+                const cls = ["opt", chosen ? "chosen" : "", result && chosen ? (result.correct[k] ? "ok" : "ng") : ""].join(" ");
                 return (
                   <button key={o.value} className={cls} onClick={() => pick(k, o.value)}>
                     {o.label}
@@ -106,21 +106,27 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
       </div>
 
       {!result ? (
-        <button disabled={picks.some((p) => p === null)} onClick={submit}>
-          採点する
-        </button>
-      ) : (
-        <div className={`result ${result.full ? "ok" : "ng"}`}>
-          <div className="big">
-            {result.earned} / {q.points} 点
-          </div>
-          {q.scoring.raw_note && <div className="muted small">正答表の備考：{q.scoring.raw_note}</div>}
-          {(q.status?.all_correct || q.status?.voided) && (
-            <div className="small law-note">この問は、法務省の採点上の取扱いにより全員正答として扱われました。</div>
-          )}
-          <LawNote q={q} />
-          <button onClick={next}>次へ</button>
+        <div className="actionbar">
+          <button disabled={picks.some((p) => p === null)} onClick={submit}>
+            採点する
+          </button>
         </div>
+      ) : (
+        <>
+          <div className={`result ${result.full ? "ok" : "ng"}`}>
+            <div className="big">
+              {result.earned} / {q.points} 点
+            </div>
+            {q.scoring.raw_note && <div className="muted small">正答表の備考：{q.scoring.raw_note}</div>}
+            {(q.status?.all_correct || q.status?.voided) && (
+              <div className="small law-note">この問は、法務省の採点上の取扱いにより全員正答として扱われました。</div>
+            )}
+            <LawNote q={q} />
+          </div>
+          <div className="actionbar">
+            <button onClick={next}>次へ</button>
+          </div>
+        </>
       )}
     </section>
   );

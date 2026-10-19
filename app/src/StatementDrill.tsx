@@ -5,6 +5,7 @@ import ExplanationView from "./ExplanationView";
 import LawNote from "./LawNote";
 import { shuffle } from "./shuffle";
 import { recordAnswer } from "./learning";
+import { Progress } from "./screens/common";
 
 const BASIS_NOTE: Record<string, string> = {
   convention: "この肢の○×は、出題形式の慣行（正解の組合せ＝該当する肢の全部）から導いたものです。",
@@ -105,6 +106,9 @@ export default function StatementDrill({
           </button>
         )}
       </div>
+      <div className="play-progress">
+        <Progress value={(i + (answer === null ? 0 : 1)) / order.length} />
+      </div>
 
       <div className="muted small">
         {examName} {q.exam.era}（{q.exam.year}） 第{q.number}問
@@ -119,7 +123,7 @@ export default function StatementDrill({
       <p className="statement">{s.text}</p>
 
       {answer === null ? (
-        <div className="row answer-buttons">
+        <div className="actionbar">
           <button className="mark" onClick={() => choose(true)}>
             ○
           </button>
@@ -128,39 +132,43 @@ export default function StatementDrill({
           </button>
         </div>
       ) : (
-        <div className={`result ${answer === truth ? "ok" : "ng"}`}>
-          <div className="big">{answer === truth ? "正解" : "不正解"}</div>
-          <div>
-            この記述は <strong>{truth ? "○（正しい）" : "×（誤り）"}</strong>
-            <span className="muted small">　出題時点の公式の解答による</span>
+        <>
+          <div className={`result ${answer === truth ? "ok" : "ng"}`}>
+            <div className="big">{answer === truth ? "正解" : "不正解"}</div>
+            <div>
+              この記述は <strong>{truth ? "○（正しい）" : "×（誤り）"}</strong>
+              <span className="muted small">　出題時点の公式の解答による</span>
+            </div>
+            <LawNote q={q} />
+            {BASIS_NOTE[s.truth_at_exam!.basis] && <p className="small muted">{BASIS_NOTE[s.truth_at_exam!.basis]}</p>}
+            {expById.has(s.id) ? (
+              <ExplanationView e={expById.get(s.id)!} />
+            ) : (
+              <p className="muted small">この肢の解説はまだありません。</p>
+            )}
+            <div className="muted small">
+              出典の位置：{examName} {q.exam.era} {subjectName} 第{q.number}問
+              {s.sub !== undefined && ` 小問${q.sub_questions[s.sub].marker}`} 肢{s.label}
+            </div>
+            <div className="row">
+              <button className="secondary small" onClick={() => setShowQuestion(!showQuestion)}>
+                {showQuestion ? "元の問題を閉じる" : "元の問題を見る"}
+              </button>
+            </div>
+            {showQuestion && (
+              <QuestionBody
+                q={q}
+                statements={q.statements.map((id) => sById.get(id)!)}
+                showTruth={true}
+                highlight={s.id}
+                explanations={expById}
+              />
+            )}
           </div>
-          <LawNote q={q} />
-          {BASIS_NOTE[s.truth_at_exam!.basis] && <p className="small muted">{BASIS_NOTE[s.truth_at_exam!.basis]}</p>}
-          {expById.has(s.id) ? (
-            <ExplanationView e={expById.get(s.id)!} />
-          ) : (
-            <p className="muted small">この肢の解説はまだありません。</p>
-          )}
-          <div className="muted small">
-            出典の位置：{examName} {q.exam.era} {subjectName} 第{q.number}問
-            {s.sub !== undefined && ` 小問${q.sub_questions[s.sub].marker}`} 肢{s.label}
-          </div>
-          <div className="row">
+          <div className="actionbar">
             <button onClick={next}>次へ</button>
-            <button className="secondary" onClick={() => setShowQuestion(!showQuestion)}>
-              {showQuestion ? "元の問題を閉じる" : "元の問題を見る"}
-            </button>
           </div>
-          {showQuestion && (
-            <QuestionBody
-              q={q}
-              statements={q.statements.map((id) => sById.get(id)!)}
-              showTruth={true}
-              highlight={s.id}
-              explanations={expById}
-            />
-          )}
-        </div>
+        </>
       )}
     </section>
   );

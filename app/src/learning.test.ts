@@ -38,6 +38,19 @@ describe("replay", () => {
     expect(s.newCount.get(`keiho:${day}`)).toBe(1);
   });
 
+  it("日ごとの回答数・正解数は、同じ肢を何度答えても全部数える（今日の成績）", () => {
+    const t1 = "2026-10-01T03:00:00.000Z";
+    const t2 = "2026-10-02T03:00:00.000Z";
+    const s = replay([
+      ans("yobi-2026-minpo-q01-a", true, t1),
+      ans("yobi-2026-minpo-q01-a", false, t1),
+      ans("yobi-2026-keiho-q01-a", true, t1),
+      ans("yobi-2026-minpo-q01-b", true, t2),
+    ]);
+    expect(s.daily.get(localDate(new Date(t1)))).toEqual({ answered: 3, correct: 2 });
+    expect(s.daily.get(localDate(new Date(t2)))).toEqual({ answered: 1, correct: 1 });
+  });
+
   it("FSRS：不正解の直後は期限が近く、正解すると期限が延びる", () => {
     const t = "2026-10-01T00:00:00.000Z";
     const s = replay([ans("yobi-2026-minpo-q01-a", false, t), ans("yobi-2026-minpo-q01-b", true, t)]);

@@ -1,25 +1,35 @@
 import { expect, type Page } from "@playwright/test";
 
+/** ホームを開き、データの読み込みを待つ */
 export async function openHome(page: Page) {
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "どれを解く？" })).toBeVisible();
-  await expect(page.locator(".set").first()).toBeVisible();
+  await expect(page.locator(".review-row").first()).toBeVisible();
 }
 
-/** 科目の欄 */
-export const subject = (page: Page, name: string) => page.locator(".subject").filter({ has: page.locator("h2", { hasText: name }) });
+/** 画面下のタブ（T025） */
+export const tab = (page: Page, name: "ホーム" | "科目" | "マイページ") => page.locator("nav.tabbar").getByRole("button", { name });
 
-/** 年度ごとの欄を開いて、その年度のボタンを押す */
+/** 科目の一覧のカード */
+export const subjectCard = (page: Page, name: string) =>
+  page.locator(".subject-card").filter({ has: page.locator(".subject-name", { hasText: new RegExp(`^${name}$`) }) });
+
+/** 科目タブから科目の画面を開く */
+export async function gotoSubject(page: Page, name: string) {
+  await tab(page, "科目").click();
+  await subjectCard(page, name).click();
+  await expect(page.locator("h1.subject-title")).toContainText(name);
+}
+
+/** 科目の画面を開いて、年度の「肢で解く」「問で解く」を押す */
 export async function openYear(page: Page, subj: string, era: string, button: "肢で解く" | "問で解く") {
-  const s = subject(page, subj);
-  // 年度が1つだけの科目は最初から開いているので、クリックで切り替えず「開いた状態」にする
-  await s.locator("details").evaluate((d) => ((d as HTMLDetailsElement).open = true));
-  const set = s.locator(".set").filter({ has: page.locator(".set-title", { hasText: era }) });
+  await gotoSubject(page, subj);
+  const set = page.locator(".set.year").filter({ has: page.locator(".set-title", { hasText: era }) });
   await set.getByRole("button", { name: new RegExp(button) }).click();
 }
 
-export const allYearsSet = (page: Page, subj: string) => subject(page, subj).locator(".set").filter({ hasText: "全年度から" });
-export const reviewSet = (page: Page, subj: string) => subject(page, subj).locator(".set.review");
+/** 科目の画面の「全年度から」「今日の復習」の欄 */
+export const allYearsSet = (page: Page) => page.locator(".set").filter({ hasText: "全年度から" });
+export const reviewSet = (page: Page) => page.locator(".set.review");
 
 /** ツールバーの「i / n」の n */
 export async function totalCards(page: Page): Promise<number> {
