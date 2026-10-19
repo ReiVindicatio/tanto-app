@@ -1,0 +1,188 @@
+{
+ "question_id": "yobi-2022-minpo-q04",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q04-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。不法占有による損害賠償請求権は各共有者に持分の割合に応じて帰属するので、Ａが請求できるのは自己の持分（3分の1）に応じた額に限られると解されている。",
+   "body": "不法占有者に対する明渡請求は、共有物の保存行為として各共有者が単独ですることができる（252条5項）。これに対し、不法占有によって生じた損害の賠償請求権は金銭債権であり、各共有者がその持分の割合に応じて取得する。そのため、Ａが単独で請求できるのは自己の持分に応じた額に限られ、Ｂ及びＣの分まで含めた損害の全部を請求することはできないと解されている（判例あり（要確認））。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "252",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "各共有者は、前各項の規定にかかわらず、保存行為をすることができる。",
+     "text_sha256": "285cee92af0371768e6cb514ff2ccfc4349dd839e1062a89c4275ce838a2f2eb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。最判昭和41年3月3日がこの論点の判例とされるが、検索では判示を確認できなかったため cases には入れていない。252条は出題後（2023年4月施行）に改正されたが、保存行為を各共有者がすることができる点は変わらない（data/statutes/changes/minpo-2022-07-01.json）。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q04-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q04-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、共有者の一人が他の共有者の同意なく共有物に変更を加えたときは、他の共有者は、原状回復が不能であるなどの特段の事情がない限り、原状回復を求めることができるとする。",
+   "body": "各共有者は、他の共有者の同意を得なければ、共有物に変更を加えることができない（251条1項）。農地を宅地に造成する工事は共有物の変更に当たる。判例（最判平成10年3月24日）は、共有者の一人が他の共有者の同意を得ずに共有物に変更を加える行為をしている場合には、他の共有者は、各自の共有持分権に基づいて、その行為の全部の禁止を求めることができるだけでなく、共有物を原状に復することが不能であるなどの特段の事情がある場合を除き、原状回復を求めることもできるとする。原状回復ができるのに請求できないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "251",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各共有者は、他の共有者の同意を得なければ、共有物に変更（その形状又は効用の著しい変更を伴わないものを除く。次項において同じ。）を加えることができない。",
+     "text_sha256": "0a3c76c4bb35bd7ee1bd54f661a970328206fff26e01f9887547f548a41869ff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "共有者の無断の変更と原状回復請求",
+     "court": "最高裁判所",
+     "date": "平成10年3月24日",
+     "holding": "共有者の一人が他の共有者の同意を得ずに共有物に変更を加える行為をしている場合、他の共有者は、各自の共有持分権に基づいて、行為の全部の禁止を求めることができるほか、原状回復が不能であるなどの特段の事情がある場合を除き、原状回復を求めることもできる（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/450",
+      "https://www.courts.go.jp/hanrei/62817/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。251条1項は出題後（2023年4月施行）に「形状又は効用の著しい変更を伴わないもの」を除く改正があった（引用は現行の本文）。農地の宅地造成は著しい変更に当たり、結論は変わらない。"
+   ],
+   "id": "exp-yobi-2022-minpo-q04-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q04-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。共有者が1年以内に管理の費用の支払義務を履行しないときは、他の共有者は、相当の償金を支払ってその持分を取得できる（253条2項）。",
+   "body": "各共有者は、その持分に応じ、管理の費用を支払う義務を負う（253条1項）。そして、「共有者が一年以内に前項の義務を履行しないときは、他の共有者は、相当の償金を支払ってその者の持分を取得することができる」（同条2項）。本肢はこの規定のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "253",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各共有者は、その持分に応じ、管理の費用を支払い、その他共有物に関する負担を負う。",
+     "text_sha256": "28a5338914e8c77a1ff8fee133bfa0efacc613037a1df77bc3b0033e27b39d45",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "253",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "共有者が一年以内に前項の義務を履行しないときは、他の共有者は、相当の償金を支払ってその者の持分を取得することができる。",
+     "text_sha256": "28a5338914e8c77a1ff8fee133bfa0efacc613037a1df77bc3b0033e27b39d45",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-minpo-q04-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q04-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。共有物の分割は、共有者が互いに持分を交換・移転し合うものと解されており、分割で取得した部分の単独所有権は原始取得ではなく、他の共有者の持分の承継取得による。",
+   "body": "現物分割により、Ａは自己に割り当てられた部分について、もともと有していた持分に加え、Ｂ及びＣの持分を取得して単独所有者となる。分割は共有者相互の持分の交換又は売買に似た性質をもつと解されており、他の共有者の持分の部分は承継取得であって、原始取得ではない。そのため、分割によって取得した部分に存在した他の共有者の持分上の負担（抵当権など）は消えずに残ると解されている。単独所有権を原始取得するとする点が誤り。",
+   "citations": [],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。分割の法的性質は解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q04-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q04-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。共有者の一人が他の共有者に共有に関する債権を有するときは、分割に際し、債務者に帰属すべき共有物の部分をもって弁済に充てることができる（259条1項）。",
+   "body": "「共有者の一人が他の共有者に対して共有に関する債権を有するときは、分割に際し、債務者に帰属すべき共有物の部分をもって、その弁済に充てることができる」（259条1項）。ＡがＢに対して有する管理費用の支払請求権は共有に関する債権に当たるので、Ｂに帰属すべき部分をもってその弁済に充てることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "259",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共有者の一人が他の共有者に対して共有に関する債権を有するときは、分割に際し、債務者に帰属すべき共有物の部分をもって、その弁済に充てることができる。",
+     "text_sha256": "04b5d38e6ee84a1463bbc0521ed3e9bcc33a997f7af7ed7fc62e8c89b43770d1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-minpo-q04-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

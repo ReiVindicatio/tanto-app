@@ -1,0 +1,191 @@
+{
+ "question_id": "yobi-2020-minpo-q11",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q11-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。不動産の賃貸人たる地位が譲受人に移転したときは、608条の費用の償還に係る債務は譲受人が承継する（605条の2第4項）。",
+   "body": "賃貸人たる地位が譲受人又はその承継人に移転したときは、「第六百八条の規定による費用の償還に係る債務及び第六百二十二条の二第一項の規定による同項に規定する敷金の返還に係る債務は、譲受人又はその承継人が承継する」（605条の2第4項）。賃借人が支出した必要費・有益費の償還債務は、譲受人が承継する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "605_2",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "第一項又は第二項後段の規定により賃貸人たる地位が譲受人又はその承継人に移転したときは、第六百八条の規定による費用の償還に係る債務及び第六百二十二条の二第一項の規定による同項に規定する敷金の返還に係る債務は、譲受人又はその承継人が承継する。",
+     "text_sha256": "be6f1ec3a34a181cc9a39179bfa12a10278e40fe318160b79f65775aa269b1f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "608",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賃借人は、賃借物について賃貸人の負担に属する必要費を支出したときは、賃貸人に対し、直ちにその償還を請求することができる。",
+     "text_sha256": "502cbd380520ffbc26af5e31fbe4d4dcc5889331d0c1714559ee42189e33f5df",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q11-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q11-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。賃貸人の修繕義務は、賃借人の責めに帰すべき事由によって修繕が必要となったときには生じない（606条1項ただし書）。",
+   "body": "「賃貸人は、賃貸物の使用及び収益に必要な修繕をする義務を負う。ただし、賃借人の責めに帰すべき事由によってその修繕が必要となったときは、この限りでない」（606条1項）。2017年改正でこのただし書が設けられた。賃借人の責めに帰すべき事由による場合でも修繕義務を負うとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "606",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賃貸人は、賃貸物の使用及び収益に必要な修繕をする義務を負う。ただし、賃借人の責めに帰すべき事由によってその修繕が必要となったときは、この限りでない。",
+     "text_sha256": "955dc821f205a8186a8357481e6081f848ddc194d59735a4f23f6e5e35e577c5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-minpo-q11-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q11-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。賃借物の一部が賃借人の責めに帰することができない事由で使用収益できなくなったときは、賃料はその部分の割合に応じて当然に減額される（611条1項）。",
+   "body": "「賃借物の一部が滅失その他の事由により使用及び収益をすることができなくなった場合において、それが賃借人の責めに帰することができない事由によるものであるときは、賃料は、その使用及び収益をすることができなくなった部分の割合に応じて、減額される」（611条1項）。2017年改正前は賃借人の請求による減額とされていたが、改正後は当然に減額される。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "611",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賃借物の一部が滅失その他の事由により使用及び収益をすることができなくなった場合において、それが賃借人の責めに帰することができない事由によるものであるときは、賃料は、その使用及び収益をすることができなくなった部分の割合に応じて、減額される。",
+     "text_sha256": "1e447c3a510b7f9e58a402c17410fd91dbd4e4c03df385a9a58b9b1e083337b9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。条文の文言と一致する。改正前の扱いは解釈による補足。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q11-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q11-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。賃貸人は合意解除を転借人に対抗できないのが原則だが、解除の当時、賃借人の債務不履行による解除権を有していたときは対抗できる（613条3項ただし書）。",
+   "body": "「賃借人が適法に賃借物を転貸した場合には、賃貸人は、賃借人との間の賃貸借を合意により解除したことをもって転借人に対抗することができない。ただし、その解除の当時、賃貸人が賃借人の債務不履行による解除権を有していたときは、この限りでない」（613条3項）。債務不履行解除であれば転借人に対抗できたので、合意解除の形をとっても同じに扱われる。解除権を有していたときでも対抗できないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "613",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "賃借人が適法に賃借物を転貸した場合には、賃貸人は、賃借人との間の賃貸借を合意により解除したことをもって転借人に対抗することができない。ただし、その解除の当時、賃貸人が賃借人の債務不履行による解除権を有していたときは、この限りでない。",
+     "text_sha256": "afd590a253a8d79de76fa457c87cd3396ab5d3f00656d10d1a796d9c92d57281",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "理由づけは解釈による補足。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q11-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q11-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。賃借人の原状回復義務の対象となる損傷からは、通常の使用及び収益によって生じた損耗と経年変化が除かれている（621条）。",
+   "body": "621条は、賃借人は、賃借物を受け取った後に生じた損傷がある場合において、賃貸借が終了したときは、その損傷を原状に復する義務を負うとし、その損傷から「通常の使用及び収益によって生じた賃借物の損耗並びに賃借物の経年変化」を除いている。通常損耗については、賃借人は原状回復義務を負わない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "621",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賃借人は、賃借物を受け取った後にこれに生じた損傷（通常の使用及び収益によって生じた賃借物の損耗並びに賃借物の経年変化を除く。以下この条において同じ。）がある場合において、賃貸借が終了したときは、その損傷を原状に復する義務を負う。",
+     "text_sha256": "b6485b0ec29b777f00394786cfed83874f165e126f6fcd231a49d142e902a9fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q11-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

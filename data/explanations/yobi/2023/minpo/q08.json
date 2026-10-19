@@ -1,0 +1,252 @@
+{
+ "question_id": "yobi-2023-minpo-q08",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q08-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。取立債務では債権者の取立行為（協力）がなければ債務者は履行できないので、確定期限が到来しても、債権者が取り立てない限り債務者は遅滞の責任を負わないと解されている。",
+   "body": "「債務の履行について確定期限があるときは、債務者は、その期限の到来した時から遅滞の責任を負う」（412条1項）のが原則である。しかし、債権者が債務者のところへ取りに行く取立債務では、債権者の取立てがなければ債務者は履行を完了できない。債務者は、履行の準備をしたことを通知して受領を催告すれば弁済の提供になり（493条ただし書）、その時から債務の不履行の責任を免れる（492条）。そのため、債権者が取立行為をしない限り、期限が到来しても債務者は遅滞の責任を負わないと解されている。遅滞の責任を負うとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "412",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の履行について確定期限があるときは、債務者は、その期限の到来した時から遅滞の責任を負う。",
+     "text_sha256": "f4fa559cc04ea54ec21234490f08e386ccfdf08e099045e9b123098d7a3c0fc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "493",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁済の準備をしたことを通知してその受領の催告をすれば足りる。",
+     "text_sha256": "7d648685cba1a7afaa23d6f8e5082aefada838a828ceff7d283bf09e13658b68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "492",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、弁済の提供の時から、債務を履行しないことによって生ずべき責任を免れる。",
+     "text_sha256": "2970969bf40f4c31c85509f6921d5d76f57e66b29130e8eb609e9a11a8981b21",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "取立債務と履行遅滞の関係は解釈による説明で、判例は確認していない。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q08-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q08-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。不確定期限のある債務は、期限到来後に履行の請求を受けた時又は期限の到来を知った時のいずれか早い時から遅滞となる（412条2項）。",
+   "body": "「債務の履行について不確定期限があるときは、債務者は、その期限の到来した後に履行の請求を受けた時又はその期限の到来したことを知った時のいずれか早い時から遅滞の責任を負う」（412条2項）。本肢はこの規定のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "412",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債務の履行について不確定期限があるときは、債務者は、その期限の到来した後に履行の請求を受けた時又はその期限の到来したことを知った時のいずれか早い時から遅滞の責任を負う。",
+     "text_sha256": "f4fa559cc04ea54ec21234490f08e386ccfdf08e099045e9b123098d7a3c0fc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。条文の文言と一致する。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q08-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q08-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。返還時期の定めのない消費貸借では、貸主は相当の期間を定めて催告できる（591条1項）。期間を定めずに催告しても、催告後相当の期間を経過した時から借主は遅滞になると解されている。",
+   "body": "期限の定めのない債務は、履行の請求を受けた時から遅滞となるのが原則である（412条3項）。しかし、消費貸借では、借主に返還の準備のための期間を与える必要から、「当事者が返還の時期を定めなかったときは、貸主は、相当の期間を定めて返還の催告をすることができる」（591条1項）とされている。貸主が相当の期間を定めないで催告した場合でも、催告の時から相当の期間を経過すれば、借主は遅滞の責任を負うと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "412",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "債務の履行について期限を定めなかったときは、債務者は、履行の請求を受けた時から遅滞の責任を負う。",
+     "text_sha256": "f4fa559cc04ea54ec21234490f08e386ccfdf08e099045e9b123098d7a3c0fc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "591",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が返還の時期を定めなかったときは、貸主は、相当の期間を定めて返還の催告をすることができる。",
+     "text_sha256": "704a67c829396d775585933838613e9ac0431f10273ee7ddcf8472e87919784f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。期間を定めない催告の効果は解釈による説明（判例あり（要確認））。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q08-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q08-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、詐害行為取消しによる受領金の返還債務は期限の定めのない債務であり、取消判決の確定前でも、履行の請求を受けた時から遅滞に陥るとする。",
+   "body": "債権者は、受益者に対し、金銭の支払を自己に対してすることを求めることができる（424条の9第1項）。判例（最判平成30年12月14日）は、詐害行為取消しの効果は過去にさかのぼって生ずるものと解し、受益者の受領金支払債務は期限の定めのない債務であって、履行の請求を受けた時に遅滞に陥るとし、取消判決の確定前にされた請求でもよいとする（412条3項）。判決の確定時に遅滞に陥るとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "受益者に対してその支払又は引渡しを、転得者に対してその引渡しを、自己に対してすることを求めることができる。",
+     "text_sha256": "de7d81c7097ef1e527e9afa1f6a3155d590bca6424cfbbe960b4eb92d51e9dfa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "412",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "債務の履行について期限を定めなかったときは、債務者は、履行の請求を受けた時から遅滞の責任を負う。",
+     "text_sha256": "f4fa559cc04ea54ec21234490f08e386ccfdf08e099045e9b123098d7a3c0fc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "詐害行為取消しによる受領金支払債務の遅滞の時期",
+     "court": "最高裁判所",
+     "date": "平成30年12月14日",
+     "holding": "詐害行為取消しによる受益者の受領金支払債務は、期限の定めのない債務として、取消判決の確定前であっても履行の請求を受けた時に遅滞に陥る（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/532",
+      "https://www.westlawjapan.com:443/pdf/column_law/20190318.pdf"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は2017年改正前の事案（請求は訴状の送達による）。改正後の424条の9のもとでも同様に解されている。"
+   ],
+   "id": "exp-yobi-2023-minpo-q08-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q08-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、不法行為に基づく損害賠償債務は、催告を要することなく、損害の発生と同時に遅滞に陥るとする。",
+   "body": "不法行為に基づく損害賠償債務も期限の定めのない債務であるが、判例（最判昭和37年9月4日）は、412条3項の原則によらず、催告を要することなく、損害の発生と同時に遅滞に陥るとする。被害者の保護を図る趣旨と解されている。本肢はこの判例のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "412",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "債務の履行について期限を定めなかったときは、債務者は、履行の請求を受けた時から遅滞の責任を負う。",
+     "text_sha256": "f4fa559cc04ea54ec21234490f08e386ccfdf08e099045e9b123098d7a3c0fc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "不法行為による損害賠償債務の遅滞の時期",
+     "court": "最高裁判所",
+     "date": "昭和37年9月4日",
+     "holding": "不法行為に基づく損害賠償債務は、なんらの催告を要することなく、損害の発生と同時に遅滞に陥る（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/530"
+     ]
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "id": "exp-yobi-2023-minpo-q08-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

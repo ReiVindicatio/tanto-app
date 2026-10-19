@@ -1,0 +1,205 @@
+{
+ "question_id": "yobi-2023-minpo-q10",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q10-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。催告に期間の定めがなくても、催告の時から相当の期間を経過すれば、債権者は契約を解除できると解されている。",
+   "body": "541条は、相手方が「相当の期間を定めてその履行の催告をし、その期間内に履行がないとき」に解除を認める。期間を定めない催告や不相当に短い期間を定めた催告でも、催告の時から客観的にみて相当な期間が経過すれば、解除することができると解されている（判例あり（要確認））。催告の趣旨は、債務者に履行の機会を与えることにあり、相当の期間が経過すればその目的は果たされるからである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "541",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の一方がその債務を履行しない場合において、相手方が相当の期間を定めてその履行の催告をし、その期間内に履行がないときは、相手方は、契約の解除をすることができる。",
+     "text_sha256": "a382a1658957144d4c987e49868819b6be4b6636386e22d7b69646163926ab07",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。期間を定めない催告の効果は解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q10-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q10-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。現行法では、解除に債務者の帰責事由は要らない。解除できないのは、不履行が債権者の責めに帰すべき事由による場合である（543条）。",
+   "body": "541条・542条は、債務の不履行があれば解除を認め、債務者の責めに帰すべき事由を要件としていない。解除は、債務を履行しない債務者に対する制裁ではなく、債権者を契約の拘束から解放するための制度と位置づけられているからである。解除が制限されるのは、「債務の不履行が債権者の責めに帰すべき事由によるものであるとき」（543条）である。債務者に帰責事由がなければ解除できないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "541",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の一方がその債務を履行しない場合において、相手方が相当の期間を定めてその履行の催告をし、その期間内に履行がないときは、相手方は、契約の解除をすることができる。",
+     "text_sha256": "a382a1658957144d4c987e49868819b6be4b6636386e22d7b69646163926ab07",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "542",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる場合には、債権者は、前条の催告をすることなく、直ちに契約の解除をすることができる。",
+     "text_sha256": "021dce87813fcae2438db5c4ffc2afe591887076d1cccb4bc6a499a271622b73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "543",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の不履行が債権者の責めに帰すべき事由によるものであるときは、債権者は、前二条の規定による契約の解除をすることができない。",
+     "text_sha256": "cecc8b1ad379fcfd168281936bdaf0082f499828b1a0e40c54ccb58c5e1d28dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "2017年改正（2020年施行）で、解除の要件から債務者の帰責事由が除かれた。出題時点（2023年）も現行法も同じ。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q10-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q10-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。催告をしても契約の目的を達するのに足りる履行がされる見込みがないことが明らかなときは、催告なしに直ちに解除できる（542条1項5号）。",
+   "body": "542条1項5号は、債務者が債務の履行をせず、「債権者が前条の催告をしても契約をした目的を達するのに足りる履行がされる見込みがないことが明らかであるとき」は、催告をすることなく直ちに契約の解除をすることができるとする。本肢はこの規定のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "542",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前各号に掲げる場合のほか、債務者がその債務の履行をせず、債権者が前条の催告をしても契約をした目的を達するのに足りる履行がされる見込みがないことが明らかであるとき。",
+     "text_sha256": "021dce87813fcae2438db5c4ffc2afe591887076d1cccb4bc6a499a271622b73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。条文の文言と一致する。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q10-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q10-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。解除によって消滅する債権そのものを譲り受けた者は、545条1項ただし書の保護される第三者に当たらないと解されており、ＣはＢに甲の履行を請求できない。",
+   "body": "解除をすると各当事者は原状回復義務を負うが、「第三者の権利を害することはできない」（545条1項ただし書）。もっとも、ここでいう第三者は、解除された契約から生じた法律効果を基礎として、新たな権利を取得した者をいうと解されている。契約から生じた債権そのものを譲り受けた者は、その債権が解除によって消滅する立場にあり、保護される第三者には当たらないと解されている（判例あり（要確認））。ＢがＡの債務不履行により契約を解除すれば債権甲は消滅し、ＣはＢに甲の履行を請求できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "545",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の一方がその解除権を行使したときは、各当事者は、その相手方を原状に復させる義務を負う。ただし、第三者の権利を害することはできない。",
+     "text_sha256": "403613b135cfeb822522f37759878cd51de512f787c46c64bc9458e9b822f3b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "545条1項ただし書の第三者の範囲は解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q10-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q10-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。当事者の一方が数人ある場合、解除はその全員に対してしなければならず（544条1項）、賃借権を共同相続した相続人に対しても同じである。",
+   "body": "「当事者の一方が数人ある場合には、契約の解除は、その全員から又はその全員に対してのみ、することができる」（544条1項）。賃借人が死亡して複数の相続人が賃借権を共同相続すると、賃借人の側の当事者が数人になる。したがって、賃貸人が解除するには、相続人全員に対して解除の意思表示をしなければならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "544",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の一方が数人ある場合には、契約の解除は、その全員から又はその全員に対してのみ、することができる。",
+     "text_sha256": "532d36a1f1b94aa6cbee2e4ad4a9b63006f5f093fc5bba364fdf017b8bb35ba2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q10-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

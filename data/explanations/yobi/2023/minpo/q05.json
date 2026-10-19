@@ -1,0 +1,190 @@
+{
+ "question_id": "yobi-2023-minpo-q05",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q05-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。地上権は物権であり、地上権者はこれを自由に譲渡でき、譲渡禁止の合意があっても譲渡の効力は妨げられないと解されている。",
+   "body": "地上権は他人の土地を使用する物権であり、民法には、地上権の譲渡に土地所有者の承諾を要するとする規定はない。永小作権については、譲渡を原則として認めつつ「設定行為で禁じたときは、この限りでない」（272条ただし書）とする規定があるが、地上権にはこれに当たる規定がない。そのため、地上権の譲渡を禁止する合意は当事者間で債権的な効力をもつにとどまり、譲渡そのものの効力は妨げられないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "272",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "永小作人は、その権利を他人に譲り渡し、又はその権利の存続期間内において耕作若しくは牧畜のため土地を賃貸することができる。ただし、設定行為で禁じたときは、この限りでない。",
+     "text_sha256": "9e72348e391e6a412aebaaf5855e2ae65c3b8354a6ba0b94d3af06f5a7e07c4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。譲渡禁止特約の効力は解釈による説明で、判例は確認していない。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q05-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q05-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。法定地上権でも地代は必要であり、当事者の請求により裁判所が定める（388条後段）。",
+   "body": "388条は、抵当権の実行により土地と建物の所有者が異なるに至ったときは建物について地上権が設定されたものとみなしたうえで、「この場合において、地代は、当事者の請求により、裁判所が定める」とする。法定地上権は無償ではなく、地上権者は土地の所有者に地代を支払う必要がある。地代を支払うことを要しないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "388",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この場合において、地代は、当事者の請求により、裁判所が定める。",
+     "text_sha256": "1c78ef41c219bd8b16ae579af125c16f9b1ab7108e30642813515624dbb4a07e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-minpo-q05-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q05-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。永小作権は「小作料を支払って」他人の土地で耕作又は牧畜をする権利であり（270条）、無償の永小作権は設定できないと解されている。",
+   "body": "「永小作人は、小作料を支払って他人の土地において耕作又は牧畜をする権利を有する」（270条）。小作料の支払が永小作権の内容になっているので、無償の永小作権は設定することができないと解されている（地上権では、地代の支払は要素とされていない）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "270",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "永小作人は、小作料を支払って他人の土地において耕作又は牧畜をする権利を有する。",
+     "text_sha256": "f0c266b20b093678a23f80061816f5191cee7d02dd7ecafd9c988a93a7ab7a9d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。小作料が要素であることは条文の文言からの解釈。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q05-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q05-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。地役権には存続期間についての規定がなく、存続期間を定めないで設定することができると解されている。",
+   "body": "永小作権については存続期間を「二十年以上五十年以下とする」（278条1項）といった定めがあるが、地役権については、内容を定める280条をはじめ、存続期間を制限したり、定めることを要求したりする規定がない。そのため、地役権は存続期間を定めないで設定することができ、永久の地役権も設定できると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "278",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "永小作権の存続期間は、二十年以上五十年以下とする。",
+     "text_sha256": "e61248857b68fdcfecef6e9b9a9401c85b5a63c8a96fbe6a9b4d3324362a67e9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "280",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地役権者は、設定行為で定めた目的に従い、他人の土地を自己の土地の便益に供する権利を有する。",
+     "text_sha256": "c67f7e56d4dd8e753aac0ff0238ef54fdab1ad9979d47b46329c2e091fecffd8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q05-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q05-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、入会団体の構成員が有する使用収益権に基づく妨害排除請求は、構成員各自が単独ですることができるとする。",
+   "body": "判例（最判昭和57年7月1日）は、入会部落の構成員が有する使用収益権の確認又はこれに基づく妨害排除の請求については、構成員各自が単独で行うことができるとする。使用収益の権能は、構成員の資格に基づいて各自に認められるものだからである。なお、入会権そのものの確認を求める訴えは、構成員全員でしなければならないとされている。全員でしなければならないとする点が誤り。",
+   "citations": [],
+   "cases": [
+    {
+     "name": "入会権に基づく使用収益権と妨害排除請求",
+     "court": "最高裁判所",
+     "date": "昭和57年7月1日",
+     "holding": "入会部落の構成員が有する使用収益権の確認又はこれに基づく妨害排除の請求については、構成員各自が単独で行うことができる（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/66854/detail2/index.html",
+      "https://law-lib.jp/subjects/2/precedents/466"
+     ]
+    }
+   ],
+   "notes": [
+    "入会権そのものの確認の訴えが構成員全員でなすべきものとされる点（最判昭和41年11月25日とされる）は二次資料による確認のため、判例として cases には入れていない。"
+   ],
+   "id": "exp-yobi-2023-minpo-q05-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

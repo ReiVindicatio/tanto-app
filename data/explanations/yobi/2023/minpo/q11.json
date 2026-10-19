@@ -1,0 +1,213 @@
+{
+ "question_id": "yobi-2023-minpo-q11",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q11-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。売主は、買主に不相当な負担を課するものでないときは、買主が請求した方法と異なる方法で追完できる（562条1項ただし書）。",
+   "body": "引き渡された目的物が品質に関して契約の内容に適合しないときは、買主は「目的物の修補、代替物の引渡し又は不足分の引渡しによる履行の追完を請求することができる」（562条1項本文）。もっとも、「売主は、買主に不相当な負担を課するものでないときは、買主が請求した方法と異なる方法による履行の追完をすることができる」（同項ただし書）。修補を求められたＢが代替物の引渡しで追完することも、この範囲で認められる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "562",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、売主は、買主に不相当な負担を課するものでないときは、買主が請求した方法と異なる方法による履行の追完をすることができる。",
+     "text_sha256": "4596856b9aee4f26d8523bb47e98749638a06b0d016eb4267dd51c9391aaa683",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q11-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q11-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。履行の追完が不能であるときは、買主は催告をすることなく、直ちに代金の減額を請求できる（563条2項1号）。",
+   "body": "代金の減額は、相当の期間を定めて追完の催告をし、その期間内に追完がないときに請求できるのが原則である（563条1項）。しかし、「履行の追完が不能であるとき」は、買主は催告をすることなく、直ちに代金の減額を請求することができる（同条2項1号）。追完不能のために追完請求が認められない場合こそ、代金減額で調整する場面である。減額を請求できないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "563",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条第一項本文に規定する場合において、買主が相当の期間を定めて履行の追完の催告をし、その期間内に履行の追完がないときは、買主は、その不適合の程度に応じて代金の減額を請求することができる。",
+     "text_sha256": "01bf383ee4d16f3d3ec96d349bed160475698675a93a56972d801d79cfb22e7e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "563",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "履行の追完が不能であるとき。",
+     "text_sha256": "01bf383ee4d16f3d3ec96d349bed160475698675a93a56972d801d79cfb22e7e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-minpo-q11-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q11-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。不適合が買主の責めに帰すべき事由によるときは、追完の請求（562条2項）も代金減額の請求（563条3項）もできない。",
+   "body": "「前項の不適合が買主の責めに帰すべき事由によるものであるときは、買主は、同項の規定による履行の追完の請求をすることができない」（562条2項）。代金減額についても、「第一項の不適合が買主の責めに帰すべき事由によるものであるときは、買主は、前二項の規定による代金の減額の請求をすることができない」（563条3項）。本肢はこれらの規定のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "562",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の不適合が買主の責めに帰すべき事由によるものであるときは、買主は、同項の規定による履行の追完の請求をすることができない。",
+     "text_sha256": "4596856b9aee4f26d8523bb47e98749638a06b0d016eb4267dd51c9391aaa683",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "563",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の不適合が買主の責めに帰すべき事由によるものであるときは、買主は、前二項の規定による代金の減額の請求をすることができない。",
+     "text_sha256": "01bf383ee4d16f3d3ec96d349bed160475698675a93a56972d801d79cfb22e7e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。条文の文言と一致する。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q11-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q11-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。代金減額請求が否定されるのは不適合が買主の責めに帰すべき事由による場合だけであり（563条3項）、双方に帰責事由がなくても減額を請求できる。",
+   "body": "代金減額請求権は、対価的な均衡を回復するための制度であり、売主の帰責事由は要件とされていない。563条3項が減額請求を否定するのは、不適合が「買主の責めに帰すべき事由によるものであるとき」に限られる。不適合がＡＢ双方の責めに帰することができない事由によるときは、この制限に当たらないので、Ａは代金の減額を請求することができる。請求できないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "563",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の不適合が買主の責めに帰すべき事由によるものであるときは、買主は、前二項の規定による代金の減額の請求をすることができない。",
+     "text_sha256": "01bf383ee4d16f3d3ec96d349bed160475698675a93a56972d801d79cfb22e7e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-minpo-q11-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q11-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。買主が不適合を知った時から1年以内に通知しないと損害賠償などを請求できなくなり（566条本文）、売主が引渡し時に過失なく知らなかったときは、ただし書の例外にも当たらない。",
+   "body": "566条本文は、品質に関する不適合について、「買主がその不適合を知った時から一年以内にその旨を売主に通知しないときは、買主は、その不適合を理由として、履行の追完の請求、代金の減額の請求、損害賠償の請求及び契約の解除をすることができない」とする。例外は、「売主が引渡しの時にその不適合を知り、又は重大な過失によって知らなかったとき」（同条ただし書）である。Ｂは引渡し時に過失なく知らなかったので例外に当たらず、Ａは損害賠償を請求できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "566",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "買主がその不適合を知った時から一年以内にその旨を売主に通知しないときは、買主は、その不適合を理由として、履行の追完の請求、代金の減額の請求、損害賠償の請求及び契約の解除をすることができない。",
+     "text_sha256": "4ed0acaed9db9f251d115841a128eec8b851d66912c0d612c6eb666584dfa533",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "566",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "売主が引渡しの時にその不適合を知り、又は重大な過失によって知らなかったときは、この限りでない。",
+     "text_sha256": "4ed0acaed9db9f251d115841a128eec8b851d66912c0d612c6eb666584dfa533",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q11-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

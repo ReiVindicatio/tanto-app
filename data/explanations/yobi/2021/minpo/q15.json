@@ -1,0 +1,201 @@
+{
+ "question_id": "yobi-2021-minpo-q15",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q15-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。遺留分は「兄弟姉妹以外の相続人」に認められ（1042条1項）、兄弟姉妹である妹には遺留分がない。",
+   "body": "「兄弟姉妹以外の相続人は、遺留分として、次条第一項に規定する遺留分を算定するための財産の価額に…定める割合を乗じた額を受ける」（1042条1項）。兄弟姉妹は遺留分権利者ではないので、配偶者と妹が相続人である場合でも、妹は遺留分を受けない（遺留分は配偶者だけが2分の1）。妹が8分の1の遺留分を受けるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1042",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "兄弟姉妹以外の相続人は、遺留分として、次条第一項に規定する遺留分を算定するための財産の価額に、次の各号に掲げる区分に応じてそれぞれ当該各号に定める割合を乗じた額を受ける。",
+     "text_sha256": "60a0c73a4ab8f4404a81674073589c234b16454869dd86cbaa7b4109f01e7593",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1042",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前号に掲げる場合以外の場合　二分の一",
+     "text_sha256": "60a0c73a4ab8f4404a81674073589c234b16454869dd86cbaa7b4109f01e7593",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-minpo-q15-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q15-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。遺留分を算定するための財産の価額は、相続開始時の財産の価額に贈与した財産の価額を加え、債務の全額を控除した額である（1043条1項）。",
+   "body": "「遺留分を算定するための財産の価額は、被相続人が相続開始の時において有した財産の価額にその贈与した財産の価額を加えた額から債務の全額を控除した額とする」（1043条1項）。本肢はこの規定のとおりである（加える贈与の範囲は1044条で限定される）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1043",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺留分を算定するための財産の価額は、被相続人が相続開始の時において有した財産の価額にその贈与した財産の価額を加えた額から債務の全額を控除した額とする。",
+     "text_sha256": "7cd60d6ba8039faef8da5d734cbd70b0bfbde71715e5cbc1c71522dd207de140",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1044",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "贈与は、相続開始前の一年間にしたものに限り、前条の規定によりその価額を算入する。",
+     "text_sha256": "06da8b4ed6f4c31d7d6ea988276f5fc5a627d507d3edf56ead5cb712048c9072",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q15-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q15-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。相続開始前の遺留分の放棄は、家庭裁判所の許可を受けたときに限り効力を生ずる（1049条1項）。",
+   "body": "「相続の開始前における遺留分の放棄は、家庭裁判所の許可を受けたときに限り、その効力を生ずる」（1049条1項）。被相続人などの圧力による不当な放棄を防ぐ趣旨である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1049",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続の開始前における遺留分の放棄は、家庭裁判所の許可を受けたときに限り、その効力を生ずる。",
+     "text_sha256": "5aa9a936cd0b97e77e2baee23954a263359119be6fb082822978ee503c38058b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。趣旨は解釈による補足。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q15-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q15-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。共同相続人の一人のした遺留分の放棄は、他の各共同相続人の遺留分に影響を及ぼさない（1049条2項）。",
+   "body": "「共同相続人の一人のした遺留分の放棄は、他の各共同相続人の遺留分に影響を及ぼさない」（1049条2項）。遺留分の放棄は相続の放棄と異なり、放棄した者も相続人のままであり、その分だけ被相続人が自由に処分できる財産が増えるにとどまる。他の共同相続人の遺留分が増加するとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1049",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "共同相続人の一人のした遺留分の放棄は、他の各共同相続人の遺留分に影響を及ぼさない。",
+     "text_sha256": "5aa9a936cd0b97e77e2baee23954a263359119be6fb082822978ee503c38058b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-minpo-q15-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q15-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。遺留分権利者は、受遺者又は受贈者に対し、遺留分侵害額に相当する金銭の支払を請求できる（1046条1項）。",
+   "body": "「遺留分権利者及びその承継人は、受遺者…又は受贈者に対し、遺留分侵害額に相当する金銭の支払を請求することができる」（1046条1項）。2018年の相続法改正（2019年7月施行）で、遺留分減殺請求（物権的効果）から金銭債権としての遺留分侵害額請求に改められた。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1046",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺留分権利者及びその承継人は、受遺者（特定財産承継遺言により財産を承継し又は相続分の指定を受けた相続人を含む。以下この章において同じ。）又は受贈者に対し、遺留分侵害額に相当する金銭の支払を請求することができる。",
+     "text_sha256": "bee2c013e82d287e432164aa7b6d4effbfc5b76b5317ea4e059ab4b01e52359d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。条文の文言と一致する。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q15-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

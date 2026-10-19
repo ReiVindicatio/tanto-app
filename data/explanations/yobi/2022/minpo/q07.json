@@ -1,0 +1,253 @@
+{
+ "question_id": "yobi-2022-minpo-q07",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q07-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。第三債務者Ｃは、質権設定の通知を受けるまでにＢに対して生じた事由（弁済）をもって、質権者Ａに対抗できると解されている。",
+   "body": "債権質の設定は、467条の規定に従い第三債務者に通知し、又はその承諾がなければ、第三債務者その他の第三者に対抗できない（364条）。そして、債権譲渡では「債務者は、対抗要件具備時までに譲渡人に対して生じた事由をもって譲受人に対抗することができる」（468条1項）。債権質でも、第三債務者は、質権設定の通知を受けるまでに質権設定者に対して生じた事由をもって質権者に対抗できると解されている。Ｃが通知前にＢに弁済していたのなら、債権乙は消滅しており、Ｃはこれを質権者Ａに対抗できる。対抗できないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "364",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権を目的とする質権の設定（現に発生していない債権を目的とするものを含む。）は、第四百六十七条の規定に従い、第三債務者にその質権の設定を通知し、又は第三債務者がこれを承諾しなければ、これをもって第三債務者その他の第三者に対抗することができない。",
+     "text_sha256": "f941e2bc3025d8a47c082cc751ead88e7a4654b9f40bac40c7a3dbda58baf7b7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "468",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、対抗要件具備時までに譲渡人に対して生じた事由をもって譲受人に対抗することができる。",
+     "text_sha256": "128edb01a7454acf824569bca8ccd003b404dfddaf155a4d9de0a546621b1043",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "467",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権の譲渡（現に発生していない債権の譲渡を含む。）は、譲渡人が債務者に通知をし、又は債務者が承諾をしなければ、債務者その他の第三者に対抗することができない。",
+     "text_sha256": "3ea3b680843790c06eebdfbd14c6c386b02dd512b401d1869219846beeebd54f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "債権質に468条1項と同じ扱いが及ぶことは解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q07-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q07-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。法人が債権に質権を設定した場合、債権譲渡登記ファイルへの質権設定の登記によって、第三債務者以外の第三者に対する対抗要件を備えることができる（特別法による）。",
+   "body": "債権質の対抗要件は、原則として第三債務者への確定日付のある通知又は承諾である（364条・467条）。もっとも、法人がする債権の譲渡や債権への質権の設定については、特別法（動産及び債権の譲渡の対抗要件に関する民法の特例等に関する法律）により、債権譲渡登記ファイルに登記をすれば、第三債務者以外の第三者に対しては確定日付のある通知があったものとみなされる。本肢の通知は口頭で確定日付がないが、登記がされれば、ＡはＣ以外の第三者に質権の設定を対抗できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "364",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三債務者にその質権の設定を通知し、又は第三債務者がこれを承諾しなければ、これをもって第三債務者その他の第三者に対抗することができない。",
+     "text_sha256": "f941e2bc3025d8a47c082cc751ead88e7a4654b9f40bac40c7a3dbda58baf7b7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "467",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の通知又は承諾は、確定日付のある証書によってしなければ、債務者以外の第三者に対抗することができない。",
+     "text_sha256": "3ea3b680843790c06eebdfbd14c6c386b02dd512b401d1869219846beeebd54f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。特例法の条文は保存していないため、文言は引用していない（同法の登記は法人による設定が前提。問題文はＢが法人かどうかを示していない）。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q07-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q07-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。質権者は質権の目的である債権を直接取り立てることができ、金銭債権なら自己の債権額に対応する部分に限られる（366条1項・2項）。",
+   "body": "「質権者は、質権の目的である債権を直接に取り立てることができる」（366条1項）。「債権の目的物が金銭であるときは、質権者は、自己の債権額に対応する部分に限り、これを取り立てることができる」（同条2項）。債権甲・乙がともに弁済期にあれば、Ａは債権甲の金額の範囲内でＣから債権乙を直接取り立てることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "366",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権者は、質権の目的である債権を直接に取り立てることができる。",
+     "text_sha256": "e42097ca4d399053915f9860ea27ed0404b5006f516b2ab755b2b9f137ce6580",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "366",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権の目的物が金銭であるときは、質権者は、自己の債権額に対応する部分に限り、これを取り立てることができる。",
+     "text_sha256": "e42097ca4d399053915f9860ea27ed0404b5006f516b2ab755b2b9f137ce6580",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。条文の文言と一致する。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q07-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q07-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。質権の目的である債権の弁済期が被担保債権の弁済期より前に来たときは、質権者は第三債務者に弁済額を供託させることができる（366条3項）。",
+   "body": "「前項の債権の弁済期が質権者の債権の弁済期前に到来したときは、質権者は、第三債務者にその弁済をすべき金額を供託させることができる。この場合において、質権は、その供託金について存在する」（366条3項）。本肢はこの規定のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "366",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前項の債権の弁済期が質権者の債権の弁済期前に到来したときは、質権者は、第三債務者にその弁済をすべき金額を供託させることができる。この場合において、質権は、その供託金について存在する。",
+     "text_sha256": "e42097ca4d399053915f9860ea27ed0404b5006f516b2ab755b2b9f137ce6580",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q07-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q07-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。質権者は目的物から生ずる果実を収取して弁済に充当でき（350条による297条の準用）、債権質では、目的である債権の利息にも質権の効力が及ぶと解されている。",
+   "body": "権利質には、動産質・不動産質などの規定が性質に反しない限り準用され（362条2項）、質権には留置権の規定のうち果実の収取に関する297条が準用される（350条）。債権の利息は、その債権から生ずる法定果実に当たるので、債権質の効力は目的である債権乙の利息にも及び、質権者Ａはこれを取り立てて弁済に充てることができると解されている。利息には及ばないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "362",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の質権については、この節に定めるもののほか、その性質に反しない限り、前三節（総則、動産質及び不動産質）の規定を準用する。",
+     "text_sha256": "b2907abfcba7eea0f05cb21c8dd7c32b8d205d65458fcf7f9665b5145d30a755",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "350",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百九十六条から第三百条まで及び第三百四条の規定は、質権について準用する。",
+     "text_sha256": "f1e3b2cebdf54f6474e2883fe0b05ba5e6243ca64ee25faf744b68109735c1d9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "297",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "留置権者は、留置物から生ずる果実を収取し、他の債権者に先立って、これを自己の債権の弁済に充当することができる。",
+     "text_sha256": "1077eb9fea572505a65743a557d68b6e90f6ad1be6704e7fe3604e2e4c1f37f0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "債権質の効力が利息に及ぶことの根拠づけは解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q07-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

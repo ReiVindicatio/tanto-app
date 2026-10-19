@@ -1,0 +1,212 @@
+{
+ "question_id": "yobi-2022-minpo-q08",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q08-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、双務契約の一方当事者は、相手方が履行の提供をしても、その提供が継続されない限り、同時履行の抗弁権を失わないとする。",
+   "body": "双務契約の当事者の一方は、相手方がその債務の履行を提供するまでは、自己の債務の履行を拒むことができる（533条）。判例（最判昭和34年5月14日）は、相手方が一度履行の提供をしても、その提供が継続されない限り、同時履行の抗弁権は失われないとする。したがって、買主が一度受領を拒んだ後でも、売主が代金を請求するときに提供を継続し又は改めて提供しなければ、買主は同時履行の抗弁権を主張して代金の支払を拒むことができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "533",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "双務契約の当事者の一方は、相手方がその債務の履行（債務の履行に代わる損害賠償の債務の履行を含む。）を提供するまでは、自己の債務の履行を拒むことができる。",
+     "text_sha256": "95fda827e77316b7aae0167132d09d24763b8a7bcc53a41b785f0fa63eff6774",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "履行の提供の継続と同時履行の抗弁権",
+     "court": "最高裁判所",
+     "date": "昭和34年5月14日",
+     "holding": "双務契約の当事者の一方は、相手方の履行の提供があっても、その提供が継続されない限り、同時履行の抗弁権を失わない（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/660"
+     ]
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。"
+   ],
+   "id": "exp-yobi-2022-minpo-q08-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q08-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。受領遅滞があると、売主は履行の提供をした時から引渡しまで、自己の財産に対するのと同一の注意をもって保存すれば足りる（413条1項）。善管注意義務ではない。",
+   "body": "特定物の売主は、引渡しまで善良な管理者の注意をもって目的物を保存するのが原則である（400条）。しかし、「債権者が債務の履行を受けることを拒み、又は受けることができない場合において、その債務の目的が特定物の引渡しであるときは、債務者は、履行の提供をした時からその引渡しをするまで、自己の財産に対するのと同一の注意をもって、その物を保存すれば足りる」（413条1項）。善良な管理者の注意をもって保存しなければならないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "413",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が債務の履行を受けることを拒み、又は受けることができない場合において、その債務の目的が特定物の引渡しであるときは、債務者は、履行の提供をした時からその引渡しをするまで、自己の財産に対するのと同一の注意をもって、その物を保存すれば足りる。",
+     "text_sha256": "c4c9c14f593e97e4e47fcbff6aba47587cf0e04c9b2f3dd84ca3824c90f41fb7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "400",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権の目的が特定物の引渡しであるときは、債務者は、その引渡しをするまで、契約その他の債権の発生原因及び取引上の社会通念に照らして定まる善良な管理者の注意をもって、その物を保存しなければならない。",
+     "text_sha256": "57736a554949c28906ec88ef56433065fde2d9facddef5a9a3183021b2306c30",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-minpo-q08-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q08-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。受領遅滞によって履行の費用が増加したときは、その増加額は債権者（買主）の負担となる（413条2項）。",
+   "body": "「債権者が債務の履行を受けることを拒み、又は受けることができないことによって、その履行の費用が増加したときは、その増加額は、債権者の負担とする」（413条2項）。買主が受領できないために売主が保管を続ける費用は、履行の費用の増加分に当たり、買主が負担する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "413",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権者が債務の履行を受けることを拒み、又は受けることができないことによって、その履行の費用が増加したときは、その増加額は、債権者の負担とする。",
+     "text_sha256": "c4c9c14f593e97e4e47fcbff6aba47587cf0e04c9b2f3dd84ca3824c90f41fb7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q08-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q08-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。債務者は、弁済の提供の時から、債務を履行しないことによって生ずべき責任を免れる（492条）。",
+   "body": "「債務者は、弁済の提供の時から、債務を履行しないことによって生ずべき責任を免れる」（492条）。売主が引渡債務について履行の提供をすれば、買主が受領できなくても、売主はその時から履行遅滞の責任を負わない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "492",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、弁済の提供の時から、債務を履行しないことによって生ずべき責任を免れる。",
+     "text_sha256": "2970969bf40f4c31c85509f6921d5d76f57e66b29130e8eb609e9a11a8981b21",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q08-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q08-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。受領遅滞中に双方の責めに帰することができない事由で履行不能になったときは、債権者の責めに帰すべき事由によるものとみなされ（413条の2第2項）、債権者（買主）は解除できない（543条）。",
+   "body": "「債権者が債務の履行を受けることを拒み、又は受けることができない場合において、履行の提供があった時以後に当事者双方の責めに帰することができない事由によってその債務の履行が不能となったときは、その履行の不能は、債権者の責めに帰すべき事由によるものとみなす」（413条の2第2項）。そして、「債務の不履行が債権者の責めに帰すべき事由によるものであるときは、債権者は、前二条の規定による契約の解除をすることができない」（543条）。買主が契約を解除できるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "413_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権者が債務の履行を受けることを拒み、又は受けることができない場合において、履行の提供があった時以後に当事者双方の責めに帰することができない事由によってその債務の履行が不能となったときは、その履行の不能は、債権者の責めに帰すべき事由によるものとみなす。",
+     "text_sha256": "603bcb35c2720d06875a76b154ecb832aeaa377c41e9fc1dd6cddd794e750107",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "543",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の不履行が債権者の責めに帰すべき事由によるものであるときは、債権者は、前二条の規定による契約の解除をすることができない。",
+     "text_sha256": "cecc8b1ad379fcfd168281936bdaf0082f499828b1a0e40c54ccb58c5e1d28dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-minpo-q08-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

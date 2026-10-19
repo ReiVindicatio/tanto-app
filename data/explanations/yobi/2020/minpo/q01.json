@@ -1,0 +1,215 @@
+{
+ "question_id": "yobi-2020-minpo-q01",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q01-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。錯誤の重要性は「法律行為の目的及び取引上の社会通念に照らして」判断され（95条1項）、表意者本人の主観だけを基準とするものではない。",
+   "body": "95条1項は、錯誤が「法律行為の目的及び取引上の社会通念に照らして重要なものであるとき」に取消しを認める。重要性は、その錯誤がなければ表意者は意思表示をしなかったであろうというだけでなく、通常人であっても意思表示をしなかったであろうといえるかという観点から、客観的に判断されると解されている。表意者を基準として判断されるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "95",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "意思表示は、次に掲げる錯誤に基づくものであって、その錯誤が法律行為の目的及び取引上の社会通念に照らして重要なものであるときは、取り消すことができる。",
+     "text_sha256": "a574178ace21adfb3a580ccce7d7b1d82a142c6d5dec52af686791911776a4b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。重要性の判断基準の説明は解釈による。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q01-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q01-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。錯誤による取消しができるのは、瑕疵ある意思表示をした者又はその代理人若しくは承継人に限られ（120条2項）、相手方Ｂは取り消せない。",
+   "body": "「錯誤、詐欺又は強迫によって取り消すことができる行為は、瑕疵ある意思表示をした者又はその代理人若しくは承継人に限り、取り消すことができる」（120条2項）。錯誤取消しは表意者を保護する制度であり、相手方Ｂは取消権者に当たらない。Ｂも取り消すことができるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "120",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "錯誤、詐欺又は強迫によって取り消すことができる行為は、瑕疵ある意思表示をした者又はその代理人若しくは承継人に限り、取り消すことができる。",
+     "text_sha256": "56eb3f1eb7eeec97bc2a6957269e75cf5da9252e385a9cd0ed96a521dfef7a6b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q01-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q01-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。無償行為が取り消された場合、給付を受けた当時に取り消すことができるものであることを知らなかった者は、現に利益を受けている限度で返還すれば足りる（121条の2第2項）。",
+   "body": "無効な行為（取消しにより初めから無効とみなされた行為を含む）に基づく給付を受けた者は原状回復義務を負うのが原則である（121条の2第1項）。しかし、「無効な無償行為に基づく債務の履行として給付を受けた者は、給付を受けた当時…その行為が取り消すことができるものであること…を知らなかったときは、その行為によって現に利益を受けている限度において、返還の義務を負う」（同条2項）。負担のない贈与は無償行為なので、善意の受贈者Ｂは現存利益の限度で返還すれば足りる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "121_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "無効な行為に基づく債務の履行として給付を受けた者は、相手方を原状に復させる義務を負う。",
+     "text_sha256": "0061cabee95b0389fc792cfac896ca2027ec591fadba96b926820f32252309c2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "121_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定にかかわらず、無効な無償行為に基づく債務の履行として給付を受けた者は、給付を受けた当時その行為が無効であること（給付を受けた後に前条の規定により初めから無効であったものとみなされた行為にあっては、給付を受けた当時その行為が取り消すことができるものであること）を知らなかったときは、その行為によって現に利益を受けている限度において、返還の義務を負う。",
+     "text_sha256": "0061cabee95b0389fc792cfac896ca2027ec591fadba96b926820f32252309c2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-minpo-q01-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q01-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。錯誤による意思表示の取消しは、善意でかつ過失がない第三者に対抗することができない（95条4項）。",
+   "body": "「第一項の規定による意思表示の取消しは、善意でかつ過失がない第三者に対抗することができない」（95条4項）。ここでいう第三者は、取消し前に利害関係を有するに至った者をいうと解されている。取消し前に利害関係を有するに至った善意無過失のＣには、Ａは取消しを対抗できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "95",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "第一項の規定による意思表示の取消しは、善意でかつ過失がない第三者に対抗することができない。",
+     "text_sha256": "a574178ace21adfb3a580ccce7d7b1d82a142c6d5dec52af686791911776a4b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "第三者を取消し前の者とする点は解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q01-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q01-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。表意者に重大な過失があっても取り消せる例外は、相手方が錯誤を知り又は重大な過失で知らなかったときのほか、相手方が表意者と同一の錯誤に陥っていたとき（共通錯誤）もある（95条3項）。",
+   "body": "「錯誤が表意者の重大な過失によるものであった場合には、次に掲げる場合を除き、第一項の規定による意思表示の取消しをすることができない」（95条3項）。例外は、「相手方が表意者に錯誤があることを知り、又は重大な過失によって知らなかったとき」（1号）と、「相手方が表意者と同一の錯誤に陥っていたとき」（2号）の2つである。本肢は1号の場合だけを例外としており、共通錯誤の場合にも取り消せないことになる点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "95",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "錯誤が表意者の重大な過失によるものであった場合には、次に掲げる場合を除き、第一項の規定による意思表示の取消しをすることができない。",
+     "text_sha256": "a574178ace21adfb3a580ccce7d7b1d82a142c6d5dec52af686791911776a4b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "95",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "相手方が表意者に錯誤があることを知り、又は重大な過失によって知らなかったとき。",
+     "text_sha256": "a574178ace21adfb3a580ccce7d7b1d82a142c6d5dec52af686791911776a4b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "95",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "相手方が表意者と同一の錯誤に陥っていたとき。",
+     "text_sha256": "a574178ace21adfb3a580ccce7d7b1d82a142c6d5dec52af686791911776a4b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q01-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

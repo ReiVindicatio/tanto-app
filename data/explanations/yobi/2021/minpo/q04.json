@@ -1,0 +1,223 @@
+{
+ "question_id": "yobi-2021-minpo-q04",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q04-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、承役地の譲渡時に通路の継続的な使用が客観的に明らかで、譲受人がそれを認識していたか認識できたときは、地役権の存在を知らなくても、譲受人は登記の欠缺を主張する正当な利益を有する第三者に当たらないとする。",
+   "body": "不動産に関する物権の変動は登記をしなければ第三者に対抗できない（177条）。しかし、判例（最判平成10年2月13日）は、通行地役権の承役地が譲渡された場合において、譲渡の時に、承役地が要役地の所有者によって継続的に通路として使用されていることがその位置、形状、構造等の物理的状況から客観的に明らかであり、かつ、譲受人がそのことを認識していたか又は認識することが可能であったときは、譲受人は、通行地役権が設定されていることを知らなかったとしても、特段の事情がない限り、地役権設定登記の欠缺を主張する正当な利益を有する第三者に当たらないとする。本肢のＣは通路の利用を認識していたので、ＡはＣに通行地役権を対抗できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "177",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産に関する物権の得喪及び変更は、不動産登記法（平成十六年法律第百二十三号）その他の登記に関する法律の定めるところに従いその登記をしなければ、第三者に対抗することができない。",
+     "text_sha256": "a27d1e6af866bda6ac153b9ac221bc2d60c83057856e1124591c9d01c2dea305",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "未登記の通行地役権と承役地の譲受人",
+     "court": "最高裁判所",
+     "date": "平成10年2月13日",
+     "holding": "通行地役権の承役地が譲渡された場合、譲渡時に要役地所有者による継続的な通路としての使用が物理的状況から客観的に明らかであり、譲受人がそれを認識していたか認識可能であったときは、譲受人は地役権の設定を知らなかったとしても、特段の事情がない限り、地役権設定登記の欠缺を主張する正当な利益を有する第三者に当たらない（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/388"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2021-minpo-q04-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q04-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。通路を開設した通行地役権は継続的に行使されるものと解され、消滅時効は、最後に通行した時ではなく、その行使を妨げる事実が生じた時から起算される（291条）。",
+   "body": "291条は、地役権の消滅時効の起算点について、「継続的でなく行使される地役権については最後の行使の時から起算し、継続的に行使される地役権についてはその行使を妨げる事実が生じた時から起算する」とする。通路が開設されている通行地役権は継続的に行使される地役権に当たると解されているので、Ａが通行しなくなっただけでは時効は進行せず、通路がふさがれるなど行使を妨げる事実が生じた時から起算される。最後に通行した時を起算点とする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "291",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百六十六条第二項に規定する消滅時効の期間は、継続的でなく行使される地役権については最後の行使の時から起算し、継続的に行使される地役権についてはその行使を妨げる事実が生じた時から起算する。",
+     "text_sha256": "a9b60ee2d4159d9cc19a4eb40282c20ecb329a976c7f53f6443ce8452f5fc3bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。通路を開設した通行地役権が「継続的に行使される地役権」に当たることは解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q04-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q04-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。通行地役権の時効取得には、継続的に行使され外形上認識できること（283条）が必要で、判例は要役地の所有者が通路を開設したことを求めるが、通行の対価の支払は要件ではない。",
+   "body": "「地役権は、継続的に行使され、かつ、外形上認識することができるものに限り、時効によって取得することができる」（283条）。判例（最判昭和30年12月26日）は、通行地役権の「継続」の要件として、承役地となる土地の上に通路が開設され、その開設が要役地の所有者によってされたことを要するとする。本肢では要役地の所有者Ａ自らが通路を開設しており、時効取得の要件（163条）に対価の支払は含まれていない。対価を支払っていなければ時効取得できないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "283",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地役権は、継続的に行使され、かつ、外形上認識することができるものに限り、時効によって取得することができる。",
+     "text_sha256": "5412d45c40fbc90e3dae1ffa3d8ac837409e1fedb613d66f1b3a968dc7a73c8c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "163",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "所有権以外の財産権を、自己のためにする意思をもって、平穏に、かつ、公然と行使する者は、前条の区別に従い二十年又は十年を経過した後、その権利を取得する。",
+     "text_sha256": "881a1e57d004c74aff7e0c0442133191082826a33b5853f0a3548fe6c7a31f30",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "通行地役権の時効取得と通路の開設",
+     "court": "最高裁判所",
+     "date": "昭和30年12月26日",
+     "holding": "民法283条による通行地役権の時効取得については、いわゆる「継続」の要件として、承役地たるべき他人所有の土地の上に通路の開設を要し、その開設は要役地所有者によってなされることを要する（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/469"
+     ]
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。Ｂの黙認が平穏・公然の要件を妨げないことは解釈による。"
+   ],
+   "id": "exp-yobi-2021-minpo-q04-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q04-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。地役権は要役地から分離して譲り渡すことができない（281条2項）。",
+   "body": "地役権は、要役地の所有権に従たるものとして、その所有権とともに移転する（281条1項）。そして、「地役権は、要役地から分離して譲り渡し、又は他の権利の目的とすることができない」（同条2項）。甲土地の所有権を譲渡せずに通行地役権だけをＣに譲渡することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "281",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地役権は、要役地（地役権者の土地であって、他人の土地から便益を受けるものをいう。以下同じ。）の所有権に従たるものとして、その所有権とともに移転し、又は要役地について存する他の権利の目的となるものとする。",
+     "text_sha256": "059dd1274a7043b9670f56f239ad797d86e05c52cecb73afe964abf81ab810bc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "281",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "地役権は、要役地から分離して譲り渡し、又は他の権利の目的とすることができない。",
+     "text_sha256": "059dd1274a7043b9670f56f239ad797d86e05c52cecb73afe964abf81ab810bc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q04-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q04-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。土地の共有者の一人が時効によって地役権を取得したときは、他の共有者もこれを取得する（284条1項）。",
+   "body": "「土地の共有者の一人が時効によって地役権を取得したときは、他の共有者も、これを取得する」（284条1項）。地役権は要役地全体のために存在するもので、共有者ごとに分けることができない（不可分性）からである。ＡとＣが甲土地を共有している場合に、Ａが通行地役権を時効取得すれば、Ｃもこれを取得する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "284",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "土地の共有者の一人が時効によって地役権を取得したときは、他の共有者も、これを取得する。",
+     "text_sha256": "461f6a4d7b64ffd1158b96f0297d2a9092cbf44626a329151fa42c7dfa9b4fa6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-minpo-q04-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

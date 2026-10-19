@@ -1,0 +1,301 @@
+{
+ "question_id": "yobi-2023-minpo-q01",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q01-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。「自己の行為の責任を弁識する」能力は不法行為の責任能力の言い方で、意思能力は自己の行為の結果を判断できる精神的な能力をいう。",
+   "body": "意思能力については民法に定義の規定がなく、一般に、自己の行為の結果を判断することができる精神的な能力をいうと解されている（3条の2はこれを欠く法律行為を無効とする）。これに対し、「自己の行為の責任を弁識するに足りる知能」は、不法行為の責任能力を定める712条の文言である。本肢は意思能力を責任能力の言い方で定義している点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "3_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律行為の当事者が意思表示をした時に意思能力を有しなかったときは、その法律行為は、無効とする。",
+     "text_sha256": "5e6481a97eb6b27abac1d5301b863bd7a2a6654c54b7a3f723da52acbd0566f5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "712",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己の行為の責任を弁識するに足りる知能を備えていなかったときは、その行為について賠償の責任を負わない。",
+     "text_sha256": "866e723ad2136dcb8a5c5558fdabd305dbbb8cfc6c09ecf845bda67bf696319e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "意思能力の定義は条文になく、一般的な理解による説明。"
+   ],
+   "id": "exp-yobi-2023-minpo-q01-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q01-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。意思能力を欠く法律行為は無効であり（3条の2）、第三者を保護する規定はないので、善意無過失の第三者にも無効を主張できる。",
+   "body": "「法律行為の当事者が意思表示をした時に意思能力を有しなかったときは、その法律行為は、無効とする」（3条の2）。心裡留保（93条2項）や虚偽表示（94条2項）、錯誤・詐欺（95条4項・96条3項）と違い、意思能力を欠く場合については、善意（無過失）の第三者に対抗できないとする規定が置かれていない。したがって、意思無能力による無効は、善意無過失の第三者にも対抗することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "3_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律行為の当事者が意思表示をした時に意思能力を有しなかったときは、その法律行為は、無効とする。",
+     "text_sha256": "5e6481a97eb6b27abac1d5301b863bd7a2a6654c54b7a3f723da52acbd0566f5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "93",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項ただし書の規定による意思表示の無効は、善意の第三者に対抗することができない。",
+     "text_sha256": "b18c60b8301086ec35f286368118229b4264524f293c63c83306083c24be762b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "94",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定による意思表示の無効は、善意の第三者に対抗することができない。",
+     "text_sha256": "105c9d4fbb68ec2579ae06b999f43358ff5b9d704b76cbbd85fa434cca25e16d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "95",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "第一項の規定による意思表示の取消しは、善意でかつ過失がない第三者に対抗することができない。",
+     "text_sha256": "a574178ace21adfb3a580ccce7d7b1d82a142c6d5dec52af686791911776a4b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前二項の規定による詐欺による意思表示の取消しは、善意でかつ過失がない第三者に対抗することができない。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "id": "exp-yobi-2023-minpo-q01-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q01-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。意思能力を欠いていた者の返還義務は、現に利益を受けている限度に縮減される（121条の2第3項）。",
+   "body": "無効な行為に基づいて給付を受けた者は、原則として相手方を原状に復させる義務を負う（121条の2第1項）。もっとも、「行為の時に意思能力を有しなかった者は、その行為によって現に利益を受けている限度において、返還の義務を負う」（同条3項）。本肢はこの規定のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "121_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "無効な行為に基づく債務の履行として給付を受けた者は、相手方を原状に復させる義務を負う。",
+     "text_sha256": "0061cabee95b0389fc792cfac896ca2027ec591fadba96b926820f32252309c2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "121_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "行為の時に意思能力を有しなかった者は、その行為によって現に利益を受けている限度において、返還の義務を負う。",
+     "text_sha256": "0061cabee95b0389fc792cfac896ca2027ec591fadba96b926820f32252309c2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。条文の文言と一致する。"
+   ],
+   "id": "exp-yobi-2023-minpo-q01-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q01-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。申込みの発信後に申込者が意思能力を有しない常況となり、相手方が承諾の通知を発するまでにそれを知ったときは、申込みは効力を有しない（526条）。",
+   "body": "526条は、申込者が申込みの通知を発した後に「意思能力を有しない常況にある者となり」、かつ「その相手方が承諾の通知を発するまでにその事実が生じたことを知ったときは、その申込みは、その効力を有しない」と定める。本肢はこの場合に当たる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "526",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申込者が申込みの通知を発した後に死亡し、意思能力を有しない常況にある者となり、又は行為能力の制限を受けた場合において、申込者がその事実が生じたとすればその申込みは効力を有しない旨の意思を表示していたとき、又はその相手方が承諾の通知を発するまでにその事実が生じたことを知ったときは、その申込みは、その効力を有しない。",
+     "text_sha256": "6ca9b4a484b18ffca1981a1a6ef05776910f39306da420e4f81faf8abf22a237",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "id": "exp-yobi-2023-minpo-q01-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q01-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。意思能力を欠けば婚姻をする意思がないことになり、婚姻の無効（742条）の問題になる。婚姻の取消原因は744条・745条・747条に限られる。",
+   "body": "「婚姻は、次条、第七百四十五条及び第七百四十七条の規定によらなければ、取り消すことができない」（743条）。取消原因は、婚姻適齢・重婚などの不適法な婚姻（744条）と詐欺・強迫（747条）であり、意思能力の欠如は含まれない。意思能力がなければ婚姻をする意思がないと考えられ、「当事者間に婚姻をする意思がないとき」（742条1号）として婚姻の無効の問題になると解されている。取消しの原因とする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "743",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "婚姻は、次条、第七百四十五条及び第七百四十七条の規定によらなければ、取り消すことができない。",
+     "text_sha256": "74dc4df5e11a85047b2ea216fa980f4bdfebc206837f422f36a4ff58e9195906",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "744",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第七百三十一条、第七百三十二条及び第七百三十四条から第七百三十六条までの規定に違反した婚姻は、各当事者、その親族又は検察官から、その取消しを家庭裁判所に請求することができる。",
+     "text_sha256": "cac653b1902e55bfd94bb0bee23f457e7737ce63995acedd539d731f7ca73180",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "745",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第七百三十一条の規定に違反した婚姻は、不適齢者が適齢に達したときは、その取消しを請求することができない。",
+     "text_sha256": "4a641b6ff0a1fef3019b532420e2abf917bc5272ea65739088aaccff3cca6231",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "747",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐欺又は強迫によって婚姻をした者は、その婚姻の取消しを家庭裁判所に請求することができる。",
+     "text_sha256": "41b6d8521db8d980840db5ac3d76359ab7c662acd65b946ffa0d5d9d16f761c4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "742",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人違いその他の事由によって当事者間に婚姻をする意思がないとき。",
+     "text_sha256": "197419afdee9fb1c73fd732c9df9b66ed1921868793dc8a17c150dd60620041c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "744条の本文は現行のもの（2024年4月施行の改正で733条〔再婚禁止期間〕が削除され、744条の引用も変わった：data/statutes/changes/minpo-2023-07-01.json）。本肢の結論には影響しない。意思無能力を婚姻の無効の問題とするのは解釈による説明。"
+   ],
+   "id": "exp-yobi-2023-minpo-q01-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

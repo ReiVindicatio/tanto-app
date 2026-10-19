@@ -2,43 +2,44 @@
 
 > **このファイルは毎回上書きする。**作業のリストは `tickets/README.md`（ボード）、機能の一覧は `docs/features.md`、履歴は git と `docs/decisions/`。
 
-**更新：2026-10-19**
+**更新：2026-10-19（ユーザー不在中に T021・T009・T012 を進めた。未 commit）**
 
 ## 現在地
 
-- **M1（基盤）が完了した（2026-10-19）。**以後は M2（拡充）のチケットを、ボードで選んで進める
-- 公開先：**https://tantan.reivindicatio0321.workers.dev/**（Cloudflare Workers。main に push すると自動で更新。検索エンジンには載せない）
-- データ：予備 民法・商法・民訴（各15年度）・刑法 R08（検証 ✅、正誤訂正の確認済み）
-- 解説：民法 R08（75肢）・R06（75肢）
-- アプリ：肢で解く・問で解く・全年度モード・絞り込み・今日の復習（FSRS）・**Google ログインで端末間同期**
-- 構成：ログイン＝Firebase Authentication、API＝Cloudflare Workers（`app/worker/`）、DB＝Cloudflare D1（`tantan`）。DB は `AnswerRepository` だけ差し替えれば入れ替えられる（決定012）
-- テスト：パイプラインの単体・回帰、アプリの単体 38件、E2E 8件、同期の E2E 2件。GitHub Actions で push ごとに流れる
-- このマシンには `wrangler login` 済み（ユーザーの Cloudflare アカウント。D1 のマイグレーションに使う）
+- M1（基盤）完了。M2（拡充）を進行中
+- 公開先：https://tantan.reivindicatio0321.workers.dev/（main に push すると自動で更新）
+- **作業ツリーに未 commit の変更がある**（T021・T009・T012 の3つ分。実装レビューの OK をもらってからチケットごとに commit・push する）
 
-## M2（拡充）の進め方（提案、2026-10-19）
+## レビュー待ち（ユーザー）
 
-ユーザーの感想（トップが分かりにくい・FSRS が分かりにくい・結果画面が淡白・個人ページがない・解説を増やしたい・残りの法律を早く）を受けて、T021〜T032 を起票した。勧める順番：
+1. **T021 同期の回数を減らす** → 実装レビュー。`tickets/T021-sync-batching.md`
+   - 回答のたびには送らず、60秒・30件・画面を隠したときにまとめて送る。受け取りは起動・ログイン・オンライン復帰・画面に戻ったとき（5分以上たっていれば）
+   - 変更ファイル：`app/src/sync.ts`・`api.ts`・`main.tsx`・`sync.test.ts`・`e2e-sync/sync.spec.ts`
+2. **T009 刑法・刑訴の取り込み** → 実装レビュー＋決めてほしいこと2点。`tickets/T009-yobi-keiho-keiso.md`
+   - 刑法12年度・刑訴12年度を取り込んだ（肢カード 567＋540）。区分を選ぶ形式の9問で6セットが止まっている → **新しい形式 `classify_each` を足すか**（スキーマ変更）
+   - 刑法の改正（拘禁刑・性犯罪規定）の注意書きを具体的にするか
+   - **既存データの修正**：商法・民訴の8セット・10問で、末尾の「（参照条文）」が最後の肢・選択肢にくっついていたのを、前提文に切り出した（○×の変化なし）
+3. **T012 解説：民法 R05〜R02** → 実装レビュー。60問・300肢すべて検査を通過（民法の解説は R08・R06〜R02 の計450肢に）
+   - **R03 問13エは出題後の改正（2024年4月施行の嫡出推定の見直し）で正誤が逆になる**（出題時点×→現行法○）。要確認（law_changed）として肢カードから外した → 扱いの確認をお願いしたい（`tickets/T012-explain-minpo.md` の「決めてほしいこと」）
+   - 改正の確認用に `pipeline/revisions.py` を作った（T004 の決定どおり。e-Gov v2 で出題時点の版と比べる）
 
-1. **T021 同期の回数を減らす**（小さい。Workers の1日10万回の上限に、1回答2回の呼び出しで近づくのを防ぐ）
-2. **T022 クイックスタート＋T023 結果画面**（使い心地の中心。「今日の30問」→ 結果のグラフ・まちがえた肢の復習）
-3. **T009・T008 残りの法律**（刑法全年度・刑訴、憲法・行政法。T007 でパーサの汎用性は確認済み）
-4. **T012 解説**（民法 R05〜。セッションの合間にコツコツ。デプロイは月3,000分まで無料で、1回1〜2分なので気にしなくてよい）
-5. **T030 PWA**（iPhone の7日で消える問題の対策も兼ねる）
-6. T025 画面の行き来・トップの見やすさ、T024 マイページ
+## commit するときの分け方
 
-ほか：T026 ブックマーク・T027 検索・T028 模試・T029 目標と連続日数・T031 わからないボタン・T032 ダークモード（ボード参照）
-
-## 上限のメモ（2026-10-19 確認）
-
-- D1：1回の API 呼び出しで SQL 50回まで（1日ではない）。書き込み1日10万行・読み込み1日500万行（無料）
-- Workers：API の呼び出し1日10万回（無料。静的ファイルの配信は数えない）→ T021 で減らす
-- Workers Builds（デプロイ）：月3,000分・同時1本（無料）
+| チケット | ファイル |
+|---|---|
+| T021 | `app/src/sync.ts`・`app/src/sync.test.ts`・`app/src/api.ts`・`app/src/main.tsx`・`app/e2e-sync/sync.spec.ts`・`tickets/T021-sync-batching.md` |
+| T009 | `pipeline/parse_questions.py`・`pipeline/validate.py`・`pipeline/targets.json`・`pipeline/tests/test_parse_questions.py`・`data/parsed/`・`data/questions/`・`app/public/data/`（解説以外）・`reports/`・`app/e2e/subjects.spec.ts`・`docs/features.md`・`tickets/T009-yobi-keiho-keiso.md` |
+| T012 | `pipeline/revisions.py`・`data/statutes/changes/`・`data/explanations/yobi/2023/`〜`2020/`・`app/public/data/yobi-2023〜2020-minpo.json`（解説の分）・`data/review/flags.json`・`app/src/QuestionBody.tsx`（要確認の文言）・`app/e2e/records.spec.ts`・`tickets/T012-explain-minpo.md` |
+| 共通 | `tickets/README.md`・`NOW.md` |
 
 ## 次の一手（提案）
 
-1. **T021 の設計レビュー**（ユーザー）→ OK なら実装
-2. 続けて **T022＋T023**
+1. 上の3つのレビュー（T021 は小さい。T009 は決めてほしいこと2点）
+2. 民法の解説の続き（R01 以前は債権法改正前 → T013 の方針が先）
+3. その後 **T022＋T023**（クイックスタート・結果画面）
 
-## ❓ ユーザーに確認したいこと
+## 上限のメモ（2026-10-19 確認）
 
-1. T021 の設計 → `tickets/T021-sync-batching.md`
+- D1：1回の API 呼び出しで SQL 50回まで。書き込み1日10万行・読み込み1日500万行（無料）
+- Workers：API の呼び出し1日10万回（無料。静的ファイルの配信は数えない）→ T021 で1人1日約35回に
+- Workers Builds（デプロイ）：月3,000分・同時1本（無料）

@@ -3,7 +3,8 @@ import { allYearsSet, openHome, reviewSet, totalCards } from "./helpers";
 
 test("全年度モード・絞り込み・改正前の切り替え・再読み込み後の履歴", async ({ page }) => {
   await openHome(page);
-  await expect(allYearsSet(page, "民法")).toContainText("6年度・肢カード 450枚・回答済み 0枚");
+  // 2020年以降の6年度。要確認（data/review/flags.json）の肢は肢カードから外れる（R03 問13エ：出題後の改正で正誤が変わる）
+  await expect(allYearsSet(page, "民法")).toContainText("6年度・肢カード 449枚・回答済み 0枚");
   await allYearsSet(page, "民法").getByRole("button", { name: /肢で解く/ }).click();
   for (let k = 0; k < 5; k++) {
     await page.getByRole("button", { name: "○", exact: true }).click();

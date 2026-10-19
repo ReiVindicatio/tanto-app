@@ -1,0 +1,249 @@
+{
+ "question_id": "yobi-2021-minpo-q12",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q12-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。未成年者が責任を負わないのは、自己の行為の責任を弁識するに足りる知能（責任能力）を備えていなかったときに限られる（712条）。責任能力があれば未成年者自身が賠償責任を負う。",
+   "body": "「未成年者は、他人に損害を加えた場合において、自己の行為の責任を弁識するに足りる知能を備えていなかったときは、その行為について賠償の責任を負わない」（712条）。責任能力を備えた未成年者は、自ら不法行為責任を負う。責任能力のない未成年者の場合に、監督義務者（親権者）が責任を負う（714条1項）。未成年者が損害賠償責任を負うことはないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "712",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者は、他人に損害を加えた場合において、自己の行為の責任を弁識するに足りる知能を備えていなかったときは、その行為について賠償の責任を負わない。",
+     "text_sha256": "866e723ad2136dcb8a5c5558fdabd305dbbb8cfc6c09ecf845bda67bf696319e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "714",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の規定により責任無能力者がその責任を負わない場合において、その責任無能力者を監督する法定の義務を負う者は、その責任無能力者が第三者に加えた損害を賠償する責任を負う。",
+     "text_sha256": "2d7b095525434f01e33d409a79751fde1beee927bce73da3d7a1790424644264",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q12-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q12-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。故意又は過失によって一時的に責任弁識能力を欠く状態を招いた者は、その間に加えた損害の賠償責任を負う（713条ただし書）。",
+   "body": "「精神上の障害により自己の行為の責任を弁識する能力を欠く状態にある間に他人に損害を加えた者は、その賠償の責任を負わない。ただし、故意又は過失によって一時的にその状態を招いたときは、この限りでない」（713条）。飲酒などで自ら責任無能力の状態を招いた者は、責任を免れない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "713",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "精神上の障害により自己の行為の責任を弁識する能力を欠く状態にある間に他人に損害を加えた者は、その賠償の責任を負わない。ただし、故意又は過失によって一時的にその状態を招いたときは、この限りでない。",
+     "text_sha256": "374bd8fd9b9e9dcd291def843072a5d6c72bd6899f6086ce8407dabed794670c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-minpo-q12-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q12-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。使用者責任の規定は、使用者から被用者に対する求償権の行使を妨げない（715条3項）。",
+   "body": "使用者は、被用者がその事業の執行について第三者に加えた損害を賠償する責任を負う（715条1項）。そして、「前二項の規定は、使用者又は監督者から被用者に対する求償権の行使を妨げない」（同条3項）。使用者が第三者に賠償したときは、被用者に求償できる（その範囲は信義則上相当な限度に制限されうる）。求償権は生じないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "715",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ある事業のために他人を使用する者は、被用者がその事業の執行について第三者に加えた損害を賠償する責任を負う。",
+     "text_sha256": "ee1bffc67a722815d32711a10969d4bd9e21ccbe43f120f08dd4fdc60932d2f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "715",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前二項の規定は、使用者又は監督者から被用者に対する求償権の行使を妨げない。",
+     "text_sha256": "ee1bffc67a722815d32711a10969d4bd9e21ccbe43f120f08dd4fdc60932d2f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。求償の範囲の制限は判例による（判例あり（要確認））。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q12-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q12-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。注文者は、請負人がその仕事について第三者に加えた損害を賠償する責任を負わず、注文又は指図に過失があったときに限り責任を負う（716条）。",
+   "body": "「注文者は、請負人がその仕事について第三者に加えた損害を賠償する責任を負わない。ただし、注文又は指図についてその注文者に過失があったときは、この限りでない」（716条）。請負人は注文者から独立して仕事をするので、使用者責任（715条）のような責任は原則として負わない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "716",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "注文者は、請負人がその仕事について第三者に加えた損害を賠償する責任を負わない。ただし、注文又は指図についてその注文者に過失があったときは、この限りでない。",
+     "text_sha256": "5bd84170d57030d13cc2149c18117642eac44b2914882821b3deca115404a2b3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "715",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ある事業のために他人を使用する者は、被用者がその事業の執行について第三者に加えた損害を賠償する責任を負う。",
+     "text_sha256": "ee1bffc67a722815d32711a10969d4bd9e21ccbe43f120f08dd4fdc60932d2f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-minpo-q12-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q12-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。人の生命又は身体を害する不法行為による損害賠償請求権も時効によって消滅する。損害及び加害者を知った時から5年、不法行為の時から20年である（724条・724条の2）。",
+   "body": "不法行為による損害賠償の請求権は、被害者又はその法定代理人が損害及び加害者を知った時から3年間行使しないとき、不法行為の時から20年間行使しないときは、時効によって消滅する（724条）。人の生命又は身体を害する不法行為については、3年が「五年間」に延長される（724条の2）が、時効にかからないわけではない。時効によって消滅しないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "724",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法行為による損害賠償の請求権は、次に掲げる場合には、時効によって消滅する。",
+     "text_sha256": "ef09e527bf1538d00a533a74fc91d841d976b2aa3715a76118de19f1cc424dad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "724",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被害者又はその法定代理人が損害及び加害者を知った時から三年間行使しないとき。",
+     "text_sha256": "ef09e527bf1538d00a533a74fc91d841d976b2aa3715a76118de19f1cc424dad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "724",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法行為の時から二十年間行使しないとき。",
+     "text_sha256": "ef09e527bf1538d00a533a74fc91d841d976b2aa3715a76118de19f1cc424dad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "724_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の生命又は身体を害する不法行為による損害賠償請求権の消滅時効についての前条第一号の規定の適用については、同号中「三年間」とあるのは、「五年間」とする。",
+     "text_sha256": "ac22a1a0e2f13ddf0a87c01bb903149b4f014309e68254cb71960f6ff34942ba",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q12-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

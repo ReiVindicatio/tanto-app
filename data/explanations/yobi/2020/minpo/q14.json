@@ -1,0 +1,190 @@
+{
+ "question_id": "yobi-2020-minpo-q14",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q14-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。数人の未成年後見人について、家庭裁判所が職権で単独行使や事務の分掌を定めることができるのは、財産に関する権限についてである（857条の2第3項）。身上の監護に関する権限は共同して行使する。",
+   "body": "「未成年後見人が数人あるときは、共同してその権限を行使する」（857条の2第1項）。そのうえで、家庭裁判所は、職権で、「財産に関する権限について、各未成年後見人が単独で又は数人の未成年後見人が事務を分掌して、その権限を行使すべきことを定めることができる」（同条3項）。身上の監護に関する権限については、このような定めの規定はない。身上監護について単独行使・分掌を定められるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "857_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年後見人が数人あるときは、共同してその権限を行使する。",
+     "text_sha256": "a6784f5d9cad03d248700a392d6e3abbf8a61249d8d09f5787b8d011e36e1661",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "857_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "未成年後見人が数人あるときは、家庭裁判所は、職権で、財産に関する権限について、各未成年後見人が単独で又は数人の未成年後見人が事務を分掌して、その権限を行使すべきことを定めることができる。",
+     "text_sha256": "a6784f5d9cad03d248700a392d6e3abbf8a61249d8d09f5787b8d011e36e1661",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-minpo-q14-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q14-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。成年後見人が成年被後見人に代わって居住用の建物を売却するには、家庭裁判所の許可を得なければならない（859条の3）。",
+   "body": "「成年後見人は、成年被後見人に代わって、その居住の用に供する建物又はその敷地について、売却、賃貸、賃貸借の解除又は抵当権の設定その他これらに準ずる処分をするには、家庭裁判所の許可を得なければならない」（859条の3）。居住環境の変化が成年被後見人の心身に大きな影響を与えるからである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "859_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "成年後見人は、成年被後見人に代わって、その居住の用に供する建物又はその敷地について、売却、賃貸、賃貸借の解除又は抵当権の設定その他これらに準ずる処分をするには、家庭裁判所の許可を得なければならない。",
+     "text_sha256": "e3c1afdc59493835fed6bae11cd3317e35a340d7ef4c27867eba701c0388d2e9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。条文の文言と一致する。趣旨は解釈による補足。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q14-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q14-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。未成年被後見人が成年に達した後、後見の計算の終了前に未成年後見人との間でした契約は、その者が取り消すことができる（872条1項）。",
+   "body": "「未成年被後見人が成年に達した後後見の計算の終了前に、その者と未成年後見人又はその相続人との間でした契約は、その者が取り消すことができる」（872条1項）。後見の計算が終わる前は、元後見人の影響が残り、不利な契約をさせられるおそれがあるからである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "872",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年被後見人が成年に達した後後見の計算の終了前に、その者と未成年後見人又はその相続人との間でした契約は、その者が取り消すことができる。",
+     "text_sha256": "98aa289812a2f012543a8853e74d89396cd66cafd988c1c9fb5ada9d0053a311",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。趣旨は解釈による補足。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q14-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q14-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。後見監督人の同意を要する行為（864条）からは「元本の領収」が除かれており、預金の払戻しを受けることはこれに当たるので、後見監督人の同意は要らない。",
+   "body": "後見人が被後見人に代わって13条1項各号に掲げる行為をするには、後見監督人があるときはその同意を得なければならない（864条本文）。「ただし、同項第一号に掲げる元本の領収については、この限りでない」（同条ただし書）。13条1項1号は「元本を領収し、又は利用すること」であり、預金の払戻しを受けることは元本の領収に当たるので、後見監督人の同意は不要である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "864",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "後見人が、被後見人に代わって営業若しくは第十三条第一項各号に掲げる行為をし、又は未成年被後見人がこれをすることに同意するには、後見監督人があるときは、その同意を得なければならない。ただし、同項第一号に掲げる元本の領収については、この限りでない。",
+     "text_sha256": "c07ff83c07de6a44961be8184b35e8ef65e38ab3831a9824aac337c33c9ce6f9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "元本を領収し、又は利用すること。",
+     "text_sha256": "c8aa95cbe2fe90c33a5a7efa56fd4ff66cd3c8e78478b1efc6963b1ca101c458",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "預金の払戻しが元本の領収に当たることは解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q14-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q14-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。任意後見契約が登記されている場合、家庭裁判所は、本人の利益のため特に必要があると認めるときに限り、後見開始の審判をすることができる（任意後見契約に関する法律）。",
+   "body": "任意後見契約に関する法律は、本人が自ら選んだ任意後見人による保護を優先させるため、任意後見契約が登記されている場合には、家庭裁判所は、本人の利益のため特に必要があると認めるときに限り、後見開始の審判等をすることができると定めている（任意後見優先の原則）。本肢はこの規定のとおりである。",
+   "citations": [],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。任意後見契約に関する法律の条文は保存していないため、文言は引用していない（同法10条1項とされる）。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q14-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,229 @@
+{
+ "question_id": "yobi-2023-minpo-q09",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q09-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。不法行為債権を受働債権とする相殺が禁じられるのは、悪意による不法行為と生命・身体の侵害の場合に限られ（509条）、過失による物の損傷はこれに当たらない。",
+   "body": "509条は、「悪意による不法行為に基づく損害賠償の債務」（1号）と「人の生命又は身体の侵害による損害賠償の債務」（2号）の債務者は、相殺をもって債権者に対抗することができないとする。本肢の乙債権は、Ａが過失によってＢのパソコンを損傷したことによる損害賠償債権であり、どちらにも当たらない。したがって、加害者であるＡは、売買代金債権である甲債権を自働債権として相殺をＢに対抗することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "509",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる債務の債務者は、相殺をもって債権者に対抗することができない。",
+     "text_sha256": "33ae841cfbbd7882090f31eb28d87b669c78e01e112e96279a6a0f3600313680",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "509",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "悪意による不法行為に基づく損害賠償の債務",
+     "text_sha256": "33ae841cfbbd7882090f31eb28d87b669c78e01e112e96279a6a0f3600313680",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "509",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の生命又は身体の侵害による損害賠償の債務",
+     "text_sha256": "33ae841cfbbd7882090f31eb28d87b669c78e01e112e96279a6a0f3600313680",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q09-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q09-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。差押え後に取得した債権でも、差押え前の原因に基づいて生じたものであれば、相殺を差押債権者に対抗できる（511条2項）。差押え前の委託を受けた保証による求償権はこれに当たる。",
+   "body": "差押えを受けた債権の第三債務者は、原則として「差押え後に取得した債権による相殺をもって差押債権者に対抗することはできない」（511条1項）。しかし、「差押え後に取得した債権が差押え前の原因に基づいて生じたものであるときは、その第三債務者は、その債権による相殺をもって差押債権者に対抗することができる」（同条2項）。ＡはＢの委託を受けて差押え前から保証をしており、差押え後の保証債務の履行で取得した求償権（甲債権）は、差押え前の保証委託という原因に基づいて生じたものといえる。したがって、Ａは相殺をＤに対抗できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "511",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "差押えを受けた債権の第三債務者は、差押え後に取得した債権による相殺をもって差押債権者に対抗することはできないが、差押え前に取得した債権による相殺をもって対抗することができる。",
+     "text_sha256": "37e9cbc42de68c7685e906ed556c6f5f05c454efc8a30731664584a274b20b77",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "511",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定にかかわらず、差押え後に取得した債権が差押え前の原因に基づいて生じたものであるときは、その第三債務者は、その債権による相殺をもって差押債権者に対抗することができる。",
+     "text_sha256": "37e9cbc42de68c7685e906ed556c6f5f05c454efc8a30731664584a274b20b77",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。委託を受けた保証の求償権が「差押え前の原因」に当たることは解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q09-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q09-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。相手方に同時履行の抗弁権が付いている債権を自働債権として相殺することはできないと解されており、Ａはパソコンの引渡しの提供をしなければ相殺できない。",
+   "body": "売買代金債権である甲債権には、Ｂの同時履行の抗弁権が付いている。Ｂは、Ａが引渡しを提供するまでは代金の支払を拒むことができる（533条）。このような抗弁権の付いた債権を自働債権として相殺を認めると、Ｂは一方的に抗弁権を失うことになるので、相殺は許されないと解されている（505条1項ただし書の「債務の性質がこれを許さないとき」の一場面と説明される）。引渡しの提供をしていなくても相殺できるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "533",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "双務契約の当事者の一方は、相手方がその債務の履行（債務の履行に代わる損害賠償の債務の履行を含む。）を提供するまでは、自己の債務の履行を拒むことができる。",
+     "text_sha256": "95fda827e77316b7aae0167132d09d24763b8a7bcc53a41b785f0fa63eff6774",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "505",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、債務の性質がこれを許さないときは、この限りでない。",
+     "text_sha256": "2c6fb46bb0752e6158d87dbdbfad4540a36db31dd72f7bc87c02c04ea73b245b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "抗弁権付きの債権を自働債権とする相殺の禁止は解釈による説明（判例あり（要確認））。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q09-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q09-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。時効で消滅した債権でも、消滅前に相殺に適するようになっていれば、その債権者は相殺できる（508条）。",
+   "body": "「時効によって消滅した債権がその消滅以前に相殺に適するようになっていた場合には、その債権者は、相殺をすることができる」（508条）。甲債権と乙債権は甲債権の時効消滅前に相殺適状になっていたので、Ａは、Ｂから乙債権の履行を請求されたときに、甲債権による相殺をもって対抗することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "508",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効によって消滅した債権がその消滅以前に相殺に適するようになっていた場合には、その債権者は、相殺をすることができる。",
+     "text_sha256": "f5288f9c042dcee436857ef7ef96043257f8bfdc9545f4958fd3d2b9a54b8299",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q09-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q09-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。相殺する側の債権（自働債権）は弁済期にあることが必要で、甲債権の弁済期が来ていなければＡは相殺できない。",
+   "body": "相殺は「双方の債務が弁済期にあるとき」にできる（505条1項）。もっとも、受働債権（相殺される側の債権）については、債務者が期限の利益を放棄できるので、弁済期が来ていなくても相殺できると解されている。これに対し、自働債権（相殺する側の債権）の弁済期が来ていないのに相殺を認めると、相手方の期限の利益を奪うことになるので許されない。本肢でＡが相殺に使う甲債権は自働債権であり、その弁済期が来ていない以上、相殺できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "505",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二人が互いに同種の目的を有する債務を負担する場合において、双方の債務が弁済期にあるときは、各債務者は、その対当額について相殺によってその債務を免れることができる。",
+     "text_sha256": "2c6fb46bb0752e6158d87dbdbfad4540a36db31dd72f7bc87c02c04ea73b245b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "受働債権の期限の利益の放棄は解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q09-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

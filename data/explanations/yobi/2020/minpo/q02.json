@@ -1,0 +1,237 @@
+{
+ "question_id": "yobi-2020-minpo-q02",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q02-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。債権は、債権者が権利を行使することができることを知った時から5年間行使しないときは時効によって消滅し（166条1項1号）、債務不履行に基づく損害賠償請求権もこれによる。",
+   "body": "「債権は、次に掲げる場合には、時効によって消滅する」として、「債権者が権利を行使することができることを知った時から五年間行使しないとき」（166条1項1号）と「権利を行使することができる時から十年間行使しないとき」（同項2号）が定められている。債務不履行に基づく損害賠償請求権も債権として、この規定に従う。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "166",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が権利を行使することができることを知った時から五年間行使しないとき。",
+     "text_sha256": "1486101bc71d3c4203815fde63101bc9f784105f2a086ecbe1b4b91126c82bcd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "166",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "権利を行使することができる時から十年間行使しないとき。",
+     "text_sha256": "1486101bc71d3c4203815fde63101bc9f784105f2a086ecbe1b4b91126c82bcd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。生命・身体の侵害による場合は2号の期間が20年になる（167条）。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q02-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q02-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。取消権は「追認をすることができる時から」5年間行使しないときに時効で消滅する（126条）。詐欺なら詐欺に気づいた時などが起算点で、行為の時からは20年である。",
+   "body": "「取消権は、追認をすることができる時から五年間行使しないときは、時効によって消滅する。行為の時から二十年を経過したときも、同様とする」（126条）。詐欺による取消権では、追認をすることができるのは取消しの原因となっていた状況が消滅した時（詐欺に気づいた時など）であり（124条1項）、そこから5年である。行為の時から5年とする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "126",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取消権は、追認をすることができる時から五年間行使しないときは、時効によって消滅する。行為の時から二十年を経過したときも、同様とする。",
+     "text_sha256": "08de5b54256bc4f0b89a0a490a8145e89df5e954fdb6483343fd3e9824268e3e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取り消すことができる行為の追認は、取消しの原因となっていた状況が消滅し、かつ、取消権を有することを知った後にしなければ、その効力を生じない。",
+     "text_sha256": "677818a6b672c91db3f1a099712b8131501fc569736e787b9b0be8a9a8d4c258",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-minpo-q02-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q02-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。不法行為による損害賠償の請求権は、不法行為の時から20年間行使しないときは時効によって消滅する（724条2号）。",
+   "body": "不法行為による損害賠償の請求権は、「不法行為の時から二十年間行使しないとき」は時効によって消滅する（724条2号）。2017年改正（2020年4月施行）で、この20年は除斥期間ではなく消滅時効の期間であることが明確にされた。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "724",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法行為による損害賠償の請求権は、次に掲げる場合には、時効によって消滅する。",
+     "text_sha256": "ef09e527bf1538d00a533a74fc91d841d976b2aa3715a76118de19f1cc424dad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "724",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法行為の時から二十年間行使しないとき。",
+     "text_sha256": "ef09e527bf1538d00a533a74fc91d841d976b2aa3715a76118de19f1cc424dad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。改正前の扱い（除斥期間）は解釈による補足。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q02-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q02-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。確定判決で確定した権利は、10年より短い時効期間の定めがあっても、時効期間は10年となる（169条1項）。",
+   "body": "「確定判決又は確定判決と同一の効力を有するものによって確定した権利については、十年より短い時効期間の定めがあるものであっても、その時効期間は、十年とする」（169条1項）。判決で権利の存在が確定した以上、短い時効期間で消滅させるのは相当でないからである（確定の時に弁済期が来ていない債権は除く。同条2項）。短い時効期間の定めによるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "169",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決又は確定判決と同一の効力を有するものによって確定した権利については、十年より短い時効期間の定めがあるものであっても、その時効期間は、十年とする。",
+     "text_sha256": "0051df65b5084547127a4b849af7dd677d439928713f0fd7ba630f16e586839a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "169",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、確定の時に弁済期の到来していない債権については、適用しない。",
+     "text_sha256": "0051df65b5084547127a4b849af7dd677d439928713f0fd7ba630f16e586839a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-minpo-q02-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q02-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。定期金の債権は、各債権を行使することができることを知った時から10年間行使しないときは時効によって消滅する（168条1項1号）。",
+   "body": "「定期金の債権は、次に掲げる場合には、時効によって消滅する」として、「債権者が定期金の債権から生ずる金銭その他の物の給付を目的とする各債権を行使することができることを知った時から十年間行使しないとき」（168条1項1号）が定められている。本肢はこの規定のとおりである（行使できる時から20年でも消滅する。同項2号）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "168",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が定期金の債権から生ずる金銭その他の物の給付を目的とする各債権を行使することができることを知った時から十年間行使しないとき。",
+     "text_sha256": "c16bd80892c6e4a05e4e6b1c03c94c2a0d4d47764e1add649f380dfaa1205f9a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "168",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前号に規定する各債権を行使することができる時から二十年間行使しないとき。",
+     "text_sha256": "c16bd80892c6e4a05e4e6b1c03c94c2a0d4d47764e1add649f380dfaa1205f9a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q02-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

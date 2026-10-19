@@ -1,0 +1,202 @@
+{
+ "question_id": "yobi-2021-minpo-q01",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q01-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。失踪宣告は「利害関係人の請求」によってされ（30条1項）、不在者の推定相続人は法律上の利害関係を有する者としてこれに当たる。",
+   "body": "「不在者の生死が七年間明らかでないときは、家庭裁判所は、利害関係人の請求により、失踪の宣告をすることができる」（30条1項）。ここでいう利害関係人は、失踪宣告によって法律上の利害を受ける者をいうと解されており、宣告によって相続人となる推定相続人はこれに当たる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "30",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不在者の生死が七年間明らかでないときは、家庭裁判所は、利害関係人の請求により、失踪の宣告をすることができる。",
+     "text_sha256": "dc26b9b58e00c1abececa2874876f8b044cd530969c0b993277a7db0fae33934",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "推定相続人が利害関係人に当たることは解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q01-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q01-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。危難失踪（30条2項）の場合、失踪宣告を受けた者は、その危難が去った時に死亡したものとみなされる（31条）。",
+   "body": "死亡の原因となるべき危難に遭遇した者の生死が、危難が去った後1年間明らかでないときは、失踪の宣告をすることができる（30条2項）。そして、「同条第二項の規定により失踪の宣告を受けた者はその危難が去った時に、死亡したものとみなす」（31条）。1年の期間が満了した時ではなく、危難が去った時である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "30",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "戦地に臨んだ者、沈没した船舶の中に在った者その他死亡の原因となるべき危難に遭遇した者の生死が、それぞれ、戦争が止んだ後、船舶が沈没した後又はその他の危難が去った後一年間明らかでないときも、前項と同様とする。",
+     "text_sha256": "dc26b9b58e00c1abececa2874876f8b044cd530969c0b993277a7db0fae33934",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "31",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条第一項の規定により失踪の宣告を受けた者は同項の期間が満了した時に、同条第二項の規定により失踪の宣告を受けた者はその危難が去った時に、死亡したものとみなす。",
+     "text_sha256": "7d52bf608fd2327cbaee3debd6e84fbe0b729cbfeb1b2ad4c1ec35909834d8bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-minpo-q01-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q01-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、失踪宣告の取消しが影響しない「善意でした行為」（32条1項後段）とは、契約の場合には当事者双方が善意であることを要するとする。Ｂが悪意なら、取消しはＢＣ間の所有権移転に影響する。",
+   "body": "失踪宣告の取消しは、「失踪の宣告後その取消し前に善意でした行為の効力に影響を及ぼさない」（32条1項後段）。判例（大判昭和13年2月7日）は、契約のように当事者が複数ある行為については、行為の当事者全員（双方）が善意であることを要するとする。本肢ではＣが善意でもＢが悪意なので、32条1項後段の保護は及ばず、取消しはＢＣ間の売買による所有権移転に影響を及ぼす。影響しないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "32",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この場合において、その取消しは、失踪の宣告後その取消し前に善意でした行為の効力に影響を及ぼさない。",
+     "text_sha256": "e68d0fce3c9eeaaf9284b5d717be2d1d40de5e3ec0db638301c10bf236a165ef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "失踪宣告の取消しと善意の行為（当事者双方の善意）",
+     "court": "大審院",
+     "date": "昭和13年2月7日",
+     "holding": "民法32条1項後段により失踪宣告の取消し前の行為の効力が維持されるには、契約においては当事者双方が善意であることを要する（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/250"
+     ]
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。"
+   ],
+   "id": "exp-yobi-2021-minpo-q01-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q01-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。失踪宣告によって財産を得た者は、取消しによって権利を失うが、返還義務は現に利益を受けている限度に限られる（32条2項）。",
+   "body": "「失踪の宣告によって財産を得た者は、その取消しによって権利を失う。ただし、現に利益を受けている限度においてのみ、その財産を返還する義務を負う」（32条2項）。この返還義務の制限は、失踪者の生存について善意の者に適用されると解されている。善意でも利益の全額を返還しなければならないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "32",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "失踪の宣告によって財産を得た者は、その取消しによって権利を失う。ただし、現に利益を受けている限度においてのみ、その財産を返還する義務を負う。",
+     "text_sha256": "e68d0fce3c9eeaaf9284b5d717be2d1d40de5e3ec0db638301c10bf236a165ef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。悪意の者には32条2項ただし書が適用されないと解されている（解釈）。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q01-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q01-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。失踪宣告は失踪者の従来の住所を中心とする法律関係について死亡と同じ効果を生じさせるだけで、失踪者の権利能力を奪うものではない。生存していた失踪者が結んだ売買契約は、相手方の善意・悪意に関係なく有効である。",
+   "body": "失踪宣告を受けた者は死亡したものとみなされる（31条）が、これは失踪者の従来の住所を中心とする法律関係を確定させるための制度であり、失踪者が実際に生存している場合に、その者の権利能力を失わせるものではないと解されている。そのため、失踪者Ａが別の場所で生存してＢから甲土地を買い受けた売買契約は、失踪宣告の取消しを待たずに有効であり、Ｂが失踪宣告について善意かどうかは関係がない。Ｂが善意であるときに限るとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "31",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条第一項の規定により失踪の宣告を受けた者は同項の期間が満了した時に、同条第二項の規定により失踪の宣告を受けた者はその危難が去った時に、死亡したものとみなす。",
+     "text_sha256": "7d52bf608fd2327cbaee3debd6e84fbe0b729cbfeb1b2ad4c1ec35909834d8bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。失踪宣告の効果の範囲は解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q01-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

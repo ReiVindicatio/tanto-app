@@ -1,0 +1,236 @@
+{
+ "question_id": "yobi-2022-minpo-q06",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q06-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。占有が不法行為によって始まった場合には留置権は成立せず（295条2項）、権原がないことを知りながら占有を始めた場合もこれと同様に扱われる。",
+   "body": "「前項の規定は、占有が不法行為によって始まった場合には、適用しない」（295条2項）。権原がないことを知りながら他人の物の占有を始めた者は、不法行為によって占有を始めた者と同視され、その後に物に関して生じた債権を取得しても留置権を行使できないと解されている。判例（最判昭和46年7月16日）も、賃貸借の解除後に占有権原がないことを知りながら不法に占有している間に支出した有益費について、295条2項の類推適用により留置権を否定している。留置できるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "295",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、占有が不法行為によって始まった場合には、適用しない。",
+     "text_sha256": "5c120d320238e83f832ef9e2f8c7e848a8fd3c0499a6d5e4aabf099e22e7bdee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "権原のない占有中の費用支出と留置権",
+     "court": "最高裁判所",
+     "date": "昭和46年7月16日",
+     "holding": "建物賃借人が契約解除後、占有権原のないことを知りながら建物を不法に占有する間に有益費を支出しても、民法295条2項の類推適用により、その費用の償還請求権に基づいて建物を留置することはできない（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/474"
+     ]
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。判例は占有開始後に権原を失った事案で、本肢（初めから権原がないと知って占有を始めた場合）はより強く同じ扱いになると解されている。"
+   ],
+   "id": "exp-yobi-2022-minpo-q06-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q06-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、売主は、代金未払のまま目的物を譲り受けた転得者からの引渡請求に対しても、代金債権を被担保債権とする留置権を主張できるとする。",
+   "body": "他人の物の占有者は、その物に関して生じた債権の弁済を受けるまで、その物を留置することができる（295条1項）。売主Ａは、買主Ｂに対する代金債権について、Ａが占有する甲を留置できる。判例（最判昭和47年11月16日）は、留置権は物権であるから、成立後に債務者から目的物を譲り受けた者に対しても主張できるとし、売主は、代金を払わないまま目的物を転売された転得者からの引渡請求に対し、未払代金債権を被担保債権とする留置権を主張できるとする。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "295",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の物の占有者は、その物に関して生じた債権を有するときは、その債権の弁済を受けるまで、その物を留置することができる。",
+     "text_sha256": "5c120d320238e83f832ef9e2f8c7e848a8fd3c0499a6d5e4aabf099e22e7bdee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "売主の留置権と転得者",
+     "court": "最高裁判所",
+     "date": "昭和47年11月16日",
+     "holding": "Ａ所有の物を買い受けたＢが売買代金を支払わないままこれをＣに譲渡した場合には、Ａは、Ｃからの物の引渡請求に対して、未払代金債権を被担保債権とする留置権の抗弁を主張することができる（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/478"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2022-minpo-q06-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q06-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。留置権には物上代位が認められていない。物上代位の規定（304条）は先取特権について定められ、質権・抵当権には準用されるが、留置権には準用されていない。",
+   "body": "304条1項は、「先取特権は、その目的物の売却、賃貸、滅失又は損傷によって債務者が受けるべき金銭その他の物に対しても、行使することができる」として物上代位を認める。この規定は質権・抵当権に準用されているが、留置権には準用されていない。留置権は目的物を留置して弁済を促す権利であり、目的物の価値から優先弁済を受ける権利ではないからである。保険金請求権に留置権を行使できるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "304",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "先取特権は、その目的物の売却、賃貸、滅失又は損傷によって債務者が受けるべき金銭その他の物に対しても、行使することができる。",
+     "text_sha256": "b1d11df2a52bc9d5d50b2080a81c4513959c0d738f906fbf8ec831ddcca44d4d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。304条が質権（350条）・抵当権（372条）に準用されることは条文によるが、本文では準用条文の文言は引用していない。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q06-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q06-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、留置権者が債務者の承諾なく留置物を賃貸したときは、その違反行為が終了したかどうかを問わず、債務者は留置権の消滅を請求できるとする。",
+   "body": "「留置権者は、債務者の承諾を得なければ、留置物を使用し、賃貸し、又は担保に供することができない」（298条2項本文）。そして、「留置権者が前二項の規定に違反したときは、債務者は、留置権の消滅を請求することができる」（同条3項）。判例（最判昭和38年5月31日）は、留置権者がこれに違反したときは、違反行為が終了しているかどうか、損害が生じているかどうかを問わず、債務者は留置権の消滅を請求できるとする。賃貸が終了していれば請求できないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "298",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "留置権者は、債務者の承諾を得なければ、留置物を使用し、賃貸し、又は担保に供することができない。",
+     "text_sha256": "a61b1780dbdd816fb30c10413d5379bf275d6e1120431a4f6081e746a0cb65a7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "298",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "留置権者が前二項の規定に違反したときは、債務者は、留置権の消滅を請求することができる。",
+     "text_sha256": "a61b1780dbdd816fb30c10413d5379bf275d6e1120431a4f6081e746a0cb65a7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "留置物の無断賃貸と留置権の消滅請求",
+     "court": "最高裁判所",
+     "date": "昭和38年5月31日",
+     "holding": "留置権者が民法298条1項・2項に違反したときは、当該違反行為が終了したかどうか、また損害を受けたかどうかを問わず、債務者は留置権の消滅を請求することができる（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/479"
+     ]
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。"
+   ],
+   "id": "exp-yobi-2022-minpo-q06-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q06-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。留置権は占有の喪失で消滅するが（302条）、占有回収の訴えで占有を回復すれば、占有は失われなかったことになり、留置権は消滅しないと解されている。",
+   "body": "「留置権は、留置権者が留置物の占有を失うことによって、消滅する」（302条本文）。もっとも、占有権は占有物の所持を失うことによって消滅するが、「占有者が占有回収の訴えを提起したときは、この限りでない」（203条）。占有回収の訴えによって占有を回復した場合は、占有は継続していたものと扱われるので、留置権は消滅しないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "302",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "留置権は、留置権者が留置物の占有を失うことによって、消滅する。",
+     "text_sha256": "bef404466d6d802fadae642bcffc4975f35d13faa77b25b9956f01a726090c05",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "203",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有権は、占有者が占有の意思を放棄し、又は占有物の所持を失うことによって消滅する。ただし、占有者が占有回収の訴えを提起したときは、この限りでない。",
+     "text_sha256": "a43fde6568eecf2f600f3a34ab406af441595f7eab699541405fe523080edce5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "占有回収の訴えで占有を回復した場合の扱いは解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q06-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

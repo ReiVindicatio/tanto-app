@@ -1,0 +1,236 @@
+{
+ "question_id": "yobi-2023-minpo-q14",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q14-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、裁判所は、当事者の一方が婚姻中に過当に負担した婚姻費用の清算のための給付も含めて、財産分与の額及び方法を定めることができるとする。",
+   "body": "財産分与の額及び方法は、当事者の財産の状況などに加え「その他一切の事情」を考慮して定められる（768条3項）。判例（最判昭和53年11月14日）は、離婚訴訟で裁判所が財産分与を命ずる場合には、当事者の一方が婚姻継続中に過当に負担した婚姻費用の清算のための給付をも含めて、財産分与の額及び方法を定めることができるとする。本肢はこの判例のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "768",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "その他一切の事情を考慮して、分与をさせるべきかどうか並びに分与の額及び方法を定める。",
+     "text_sha256": "f9bbe6469e675d32da1bc6bc1df1dc9dc7208af280a71b99fa84d8aeb1836b9a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "財産分与と過当に負担した婚姻費用の清算",
+     "court": "最高裁判所",
+     "date": "昭和53年11月14日",
+     "holding": "離婚訴訟において裁判所が財産分与を命ずる場合には、当事者の一方が婚姻継続中に過当に負担した婚姻費用の清算のための給付をも含めて財産分与の額及び方法を定めることができる（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/797",
+      "https://www.courts.go.jp/app/files/hanrei_jp/354/056354_hanrei.pdf"
+     ]
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。768条は出題後に改正された（2024年成立・2026年施行。考慮事情の明記、請求期間の2年→5年など：data/statutes/changes/minpo-2023-07-01.json）。引用は現行の本文で、本肢の結論には影響しない。"
+   ],
+   "id": "exp-yobi-2023-minpo-q14-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q14-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、財産分与請求権は協議や審判で具体的内容が形成されるまでは内容・範囲が不明確なので代位行使の被保全債権にならないとしており、形成後は被保全債権となりうる。",
+   "body": "債権者は、自己の債権を保全するため必要があるときは、債務者に属する権利を行使することができる（423条1項）。判例（最判昭和55年7月11日）は、離婚による財産分与請求権は、協議・審判等によって具体的内容が形成されるまでは、その範囲及び内容が不確定・不明確であるから、これを保全するために債権者代位権を行使することはできないとする。裏返せば、協議によって具体的内容が形成された後は、通常の金銭債権などと同じく、被保全債権として代位権を行使できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者は、自己の債権を保全するため必要があるときは、債務者に属する権利（以下「被代位権利」という。）を行使することができる。",
+     "text_sha256": "bd8ef03d0c0f16adfbbafda7db96a6bd402b3335529029bed09a72be6c3b987a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "財産分与請求権を被保全債権とする債権者代位権",
+     "court": "最高裁判所",
+     "date": "昭和55年7月11日",
+     "holding": "離婚によって生ずる財産分与請求権は、協議・審判等によって具体的内容が形成されるまでは、その範囲及び内容が不確定・不明確であるから、これを保全するために債権者代位権を行使することはできない（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/563"
+     ]
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。形成後は代位行使できるとするのは判例の反対解釈による説明。"
+   ],
+   "id": "exp-yobi-2023-minpo-q14-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q14-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、内縁関係が一方の死亡により解消した場合には、財産分与の規定（768条）を類推適用できないとする。",
+   "body": "判例（最決平成12年3月10日）は、民法は法律上の夫婦の婚姻解消時の財産関係の清算について、離婚による解消には財産分与の方法を用意し、死亡による解消には相続により財産を承継させることでこれを処理するものとしていると述べ、内縁の夫婦の一方の死亡により内縁関係が解消した場合に、768条を類推適用することはできないとする。したがって、生存内縁配偶者Ｂは、Ａの相続人に財産分与を請求することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "768",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "協議上の離婚をした者の一方は、相手方に対して財産の分与を請求することができる。",
+     "text_sha256": "f9bbe6469e675d32da1bc6bc1df1dc9dc7208af280a71b99fa84d8aeb1836b9a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "内縁の死亡解消と財産分与の類推適用",
+     "court": "最高裁判所",
+     "date": "平成12年3月10日",
+     "holding": "内縁の夫婦の一方の死亡により内縁関係が解消した場合に、法律上の夫婦の離婚に伴う財産分与に関する民法768条の規定を類推適用することはできない（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/800"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は決定（最高裁判所第一小法廷）。判示の理由の部分は二次資料による要約。"
+   ],
+   "id": "exp-yobi-2023-minpo-q14-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q14-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。財産分与は相手方の有責を要件としておらず、相手方が離婚につき有責でなくても請求できる（768条1項）。",
+   "body": "「協議上の離婚をした者の一方は、相手方に対して財産の分与を請求することができる」（768条1項）。財産分与は、婚姻中に形成した財産の清算や離婚後の扶養を主な内容とし、相手方の有責性を要件としていない。有責な配偶者に対する慰謝料とは別のものである。したがって、相手方が有責でなくても財産分与を請求することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "768",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "協議上の離婚をした者の一方は、相手方に対して財産の分与を請求することができる。",
+     "text_sha256": "f9bbe6469e675d32da1bc6bc1df1dc9dc7208af280a71b99fa84d8aeb1836b9a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。財産分与の内容（清算・扶養）は解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2023-minpo-q14-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q14-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、財産分与が768条3項の趣旨に反して不相当に過大で、財産分与に仮託した財産処分と認められる特段の事情があれば、詐害行為取消しの対象になるとする。",
+   "body": "財産権を目的としない行為は詐害行為取消請求の対象にならない（424条2項）。判例（最判昭和58年12月19日）は、離婚に伴う財産分与は、768条3項の規定の趣旨に反して不相当に過大であり、財産分与に仮託してされた財産処分であると認めるに足りるような特段の事情がない限り、詐害行為として取消しの対象とならないとする。裏返せば、不相当に過大で、そのような特段の事情があれば取り消されうる。不相当に過大であっても取り消されることはないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、財産権を目的としない行為については、適用しない。",
+     "text_sha256": "22d988d8231e843109818b8d2f93e8f2bb2ba972e98650a949757943ef28191d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "768",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "離婚後の当事者間の財産上の衡平を図るため",
+     "text_sha256": "f9bbe6469e675d32da1bc6bc1df1dc9dc7208af280a71b99fa84d8aeb1836b9a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "財産分与と詐害行為取消し",
+     "court": "最高裁判所",
+     "date": "昭和58年12月19日",
+     "holding": "離婚に伴う財産分与は、民法768条3項の規定の趣旨に反して不相当に過大であり、財産分与に仮託してされた財産処分であると認めるに足りるような特段の事情のない限り、詐害行為として債権者による取消しの対象とならない（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/577"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2023-minpo-q14-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,225 @@
+{
+ "question_id": "yobi-2022-minpo-q10",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q10-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。第三者のためにする契約の第三者は、受益の意思を表示した時に権利を取得し、債務者に対して直接に給付を請求できる（537条1項・3項）。",
+   "body": "「契約により当事者の一方が第三者に対してある給付をすることを約したときは、その第三者は、債務者に対して直接にその給付を請求する権利を有する」（537条1項）。そして、「第三者の権利は、その第三者が債務者に対して同項の契約の利益を享受する意思を表示した時に発生する」（同条3項）。Ｃは、Ｂに受益の意思を表示した後は、Ｂに直接50万円の支払を請求できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "537",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "契約により当事者の一方が第三者に対してある給付をすることを約したときは、その第三者は、債務者に対して直接にその給付を請求する権利を有する。",
+     "text_sha256": "10cd4a6dd77645f052d9e71bca44a9551c4ffc405e771ee6d34f07cebe6caae5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "537",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の場合において、第三者の権利は、その第三者が債務者に対して同項の契約の利益を享受する意思を表示した時に発生する。",
+     "text_sha256": "10cd4a6dd77645f052d9e71bca44a9551c4ffc405e771ee6d34f07cebe6caae5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q10-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q10-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。第三者のためにする契約は、成立の時に第三者が現に存しない場合でも効力を妨げられず（537条2項）、第三者が胎児でも無効にならない。",
+   "body": "「前項の契約は、その成立の時に第三者が現に存しない場合又は第三者が特定していない場合であっても、そのためにその効力を妨げられない」（537条2項）。契約締結時にＣが胎児であっても、ＡＢ間の契約は有効である。無効であるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "537",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の契約は、その成立の時に第三者が現に存しない場合又は第三者が特定していない場合であっても、そのためにその効力を妨げられない。",
+     "text_sha256": "10cd4a6dd77645f052d9e71bca44a9551c4ffc405e771ee6d34f07cebe6caae5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-minpo-q10-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q10-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。当事者が第三者の権利を変更・消滅させられなくなるのは、第三者の権利が発生した後（受益の意思表示の後）であり（538条1項）、それまでは合意で代金額を変更できる。",
+   "body": "「前条の規定により第三者の権利が発生した後は、当事者は、これを変更し、又は消滅させることができない」（538条1項）。第三者の権利は受益の意思表示の時に発生するので（537条3項）、ＣがＢに受益の意思を表示するまでは、ＡとＢは合意により代金額を変更することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "538",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条の規定により第三者の権利が発生した後は、当事者は、これを変更し、又は消滅させることができない。",
+     "text_sha256": "e1a4d5fda8b04778a616aefc6b020b4234205396889b362438e7cceb57022f89",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "537",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の場合において、第三者の権利は、その第三者が債務者に対して同項の契約の利益を享受する意思を表示した時に発生する。",
+     "text_sha256": "10cd4a6dd77645f052d9e71bca44a9551c4ffc405e771ee6d34f07cebe6caae5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q10-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q10-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。第三者の権利が発生した後に債務者が履行しない場合、契約の相手方は、第三者の承諾を得なければ契約を解除できない（538条2項）。",
+   "body": "「前条の規定により第三者の権利が発生した後に、債務者がその第三者に対する債務を履行しない場合には、同条第一項の契約の相手方は、その第三者の承諾を得なければ、契約を解除することができない」（538条2項）。Ｃが受益の意思を表示した後にＢが支払わないときでも、ＡはＣの承諾なしにＢとの契約を解除できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "538",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前条の規定により第三者の権利が発生した後に、債務者がその第三者に対する債務を履行しない場合には、同条第一項の契約の相手方は、その第三者の承諾を得なければ、契約を解除することができない。",
+     "text_sha256": "e1a4d5fda8b04778a616aefc6b020b4234205396889b362438e7cceb57022f89",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q10-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q10-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。債務者は、契約に基づく抗弁をもって受益者に対抗できる（539条）。ＢはＡが甲を引き渡すまで、同時履行の抗弁によりＣへの支払を拒める。",
+   "body": "「債務者は、第五百三十七条第一項の契約に基づく抗弁をもって、その契約の利益を受ける第三者に対抗することができる」（539条）。ＡＢ間の売買では、Ｂは、Ａが甲を引き渡すまで代金の支払を拒むことができる（同時履行の抗弁、533条）。この抗弁は受益者Ｃにも対抗できるので、ＢはＣからの50万円の支払請求を拒むことができる。拒むことができないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "539",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、第五百三十七条第一項の契約に基づく抗弁をもって、その契約の利益を受ける第三者に対抗することができる。",
+     "text_sha256": "4179f29b2e4460d915196862b530ad468ca4166bc3dafe6c2ea2ceab061b8f43",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "537",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "契約により当事者の一方が第三者に対してある給付をすることを約したときは、その第三者は、債務者に対して直接にその給付を請求する権利を有する。",
+     "text_sha256": "10cd4a6dd77645f052d9e71bca44a9551c4ffc405e771ee6d34f07cebe6caae5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "533",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "双務契約の当事者の一方は、相手方がその債務の履行（債務の履行に代わる損害賠償の債務の履行を含む。）を提供するまでは、自己の債務の履行を拒むことができる。",
+     "text_sha256": "95fda827e77316b7aae0167132d09d24763b8a7bcc53a41b785f0fa63eff6774",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-minpo-q10-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

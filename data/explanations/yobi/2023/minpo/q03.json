@@ -1,0 +1,199 @@
+{
+ "question_id": "yobi-2023-minpo-q03",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q03-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。時効完成後に目的土地を買って登記をした者との関係は対抗問題であり、時効取得者は登記がなければ対抗できない。",
+   "body": "判例（最判昭和33年8月28日）は、時効により不動産の所有権を取得しても、その登記がなければ、時効完成後に旧所有者から所有権を取得して登記を経た第三者に対し、その善意・悪意を問わず時効取得を対抗できないとする。時効完成後の譲受人との関係は二重譲渡に似た関係として177条で処理されるからである。地上権の時効取得も、不動産に関する物権の得喪として同じく扱われる。本肢の購入者は時効完成後の第三者なので、登記なしに地上権の取得を対抗できるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "177",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産に関する物権の得喪及び変更は、不動産登記法（平成十六年法律第百二十三号）その他の登記に関する法律の定めるところに従いその登記をしなければ、第三者に対抗することができない。",
+     "text_sha256": "a27d1e6af866bda6ac153b9ac221bc2d60c83057856e1124591c9d01c2dea305",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "取得時効と登記（時効完成後の第三者）",
+     "court": "最高裁判所",
+     "date": "昭和33年8月28日",
+     "holding": "時効により不動産の所有権を取得しても、その登記がないときは、時効完成後旧所有者から当該不動産の所有権を取得し登記を経た第三者に対し、その善意であると否とを問わず、時効による所有権の取得を対抗できない（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/358"
+     ]
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。判例は所有権の時効取得の事案。地上権に同じ扱いを及ぼすのは解釈による説明。"
+   ],
+   "id": "exp-yobi-2023-minpo-q03-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q03-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。地役権は要役地の所有権とともに移転するので（281条1項）、要役地の所有権移転登記があれば、地役権の移転も第三者に対抗できる。",
+   "body": "地役権は「要役地…の所有権に従たるものとして、その所有権とともに移転」する（281条1項）。判例（大判大正13年3月17日）は、要役地の移転について登記があれば、地役権移転の登記がなくても、地役権の移転を第三者に対抗することができるとする。本肢では承役地に地役権設定登記もされており、要役地の譲受人は、要役地の所有権移転登記があれば地役権の移転を第三者に対抗できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "281",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地役権は、要役地（地役権者の土地であって、他人の土地から便益を受けるものをいう。以下同じ。）の所有権に従たるものとして、その所有権とともに移転し、又は要役地について存する他の権利の目的となるものとする。",
+     "text_sha256": "059dd1274a7043b9670f56f239ad797d86e05c52cecb73afe964abf81ab810bc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "要役地の移転と地役権の対抗",
+     "court": "大審院",
+     "date": "大正13年3月17日",
+     "holding": "地役権が設定されている要役地を譲り受けた者は、当該要役地の移転について登記があれば、地役権移転の登記がなくても地役権の移転を第三者に対抗することができる（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/468"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2023-minpo-q03-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q03-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。一般の先取特権は、登記がなくても特別担保を有しない債権者には対抗できるが、登記をした第三者（登記した抵当権者）には対抗できない（336条）。",
+   "body": "「一般の先取特権は、不動産について登記をしなくても、特別担保を有しない債権者に対抗することができる。ただし、登記をした第三者に対しては、この限りでない」（336条）。登記がされた抵当権を有する者は、ただし書の「登記をした第三者」に当たる。登記のない一般の先取特権が、登記された抵当権に優先するとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "336",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一般の先取特権は、不動産について登記をしなくても、特別担保を有しない債権者に対抗することができる。ただし、登記をした第三者に対しては、この限りでない。",
+     "text_sha256": "948ace16803ef84d8c49c7c282c4c830df6df2a9576209332fb0cb1c91da6ff0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "id": "exp-yobi-2023-minpo-q03-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q03-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。抵当権者の同意で賃貸借を対抗できるのは、登記をした賃貸借について同意の登記がある場合に限られ（387条1項）、引渡しで対抗要件を備えただけの賃貸借には適用がない。",
+   "body": "「登記をした賃貸借は、その登記前に登記をした抵当権を有するすべての者が同意をし、かつ、その同意の登記があるときは、その同意をした抵当権者に対抗することができる」（387条1項）。この制度は、賃貸借の登記と同意の登記を要件としている。本肢の賃貸借は引渡しによって対抗要件を備えたにすぎず、登記がないので、抵当権者全員が同意しても387条1項の適用はなく、抵当権の実行による買受人に賃借権を対抗することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "387",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "登記をした賃貸借は、その登記前に登記をした抵当権を有するすべての者が同意をし、かつ、その同意の登記があるときは、その同意をした抵当権者に対抗することができる。",
+     "text_sha256": "c4538812c112520b4f1ff021a041e899e31b6d1fb003ee1ff0bd2c581b394ef9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "id": "exp-yobi-2023-minpo-q03-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minpo-q03-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。永小作権を抵当権の目的とした永小作人は、その権利を放棄しても抵当権者に対抗できない（398条）。",
+   "body": "「地上権又は永小作権を抵当権の目的とした地上権者又は永小作人は、その権利を放棄しても、これをもって抵当権者に対抗することができない」（398条）。権利の放棄によって抵当権の目的を消滅させ、抵当権者を害することを防ぐ趣旨である。本肢はこの規定のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地上権又は永小作権を抵当権の目的とした地上権者又は永小作人は、その権利を放棄しても、これをもって抵当権者に対抗することができない。",
+     "text_sha256": "70538932683cec35f3ab586dccbc45bb969deee185b54a28d04b4b9149229074",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-minpo-q03-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

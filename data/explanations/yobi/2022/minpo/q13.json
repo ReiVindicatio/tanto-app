@@ -1,0 +1,225 @@
+{
+ "question_id": "yobi-2022-minpo-q13",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q13-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。事務管理には委任の損害賠償の規定（650条3項）が準用されておらず、管理者は過失なく受けた損害の賠償を本人に請求できないと解されている。",
+   "body": "受任者は、委任事務を処理するため自己に過失なく損害を受けたときは、委任者にその賠償を請求できる（650条3項）。しかし、事務管理について委任の規定を準用する701条は「第六百四十五条から第六百四十七条までの規定」を準用するだけで、650条3項は準用されていない。管理者が請求できるのは有益な費用の償還など（702条）に限られ、自己に過失なく受けた損害の賠償は請求できないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "650",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "受任者は、委任事務を処理するため自己に過失なく損害を受けたときは、委任者に対し、その賠償を請求することができる。",
+     "text_sha256": "c8d7dac2ae2fa48748a033348ac0168d2d83ef658e54c7b3244cb55094342a4a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "701",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第六百四十五条から第六百四十七条までの規定は、事務管理について準用する。",
+     "text_sha256": "dbf9ef286e0710163b9c06f19cc540e90a9d3be04c2f6f94a51c1011262f6c16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "702",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管理者は、本人のために有益な費用を支出したときは、本人に対し、その償還を請求することができる。",
+     "text_sha256": "3a941f810c7c266639da18e42f68a143f6d20b89842d12970bcba33e950c5dec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。準用の範囲からの解釈。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q13-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q13-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。本人の意思に反して事務管理をしたときでも、本人が現に利益を受けている限度で費用の償還を請求できる（702条3項）。",
+   "body": "管理者は、本人のために有益な費用を支出したときは、その償還を請求できる（702条1項）。そして、「管理者が本人の意思に反して事務管理をしたときは、本人が現に利益を受けている限度においてのみ、前二項の規定を適用する」（同条3項）。本人の意思に反することが明らかになった場合でも、償還請求が全くできなくなるのではなく、現に利益を受けている限度で認められる。請求できないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "702",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管理者は、本人のために有益な費用を支出したときは、本人に対し、その償還を請求することができる。",
+     "text_sha256": "3a941f810c7c266639da18e42f68a143f6d20b89842d12970bcba33e950c5dec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "702",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "管理者が本人の意思に反して事務管理をしたときは、本人が現に利益を受けている限度においてのみ、前二項の規定を適用する。",
+     "text_sha256": "3a941f810c7c266639da18e42f68a143f6d20b89842d12970bcba33e950c5dec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "意思に反することが事務管理の開始後に明らかになった場合の扱い（管理の継続の可否）は別の問題。本肢の「既に支出した費用」には702条3項の限度で償還請求が認められると解されている。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q13-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q13-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、事務管理者が本人の名で第三者と法律行為をしても、その効果は当然には本人に及ばず、代理その他別個の法律関係が必要であるとする。",
+   "body": "事務管理は、管理者と本人との間の費用償還などの内部関係を定める制度であり、管理者に代理権を与えるものではない。判例（最判昭和36年11月30日）は、事務管理者が本人の名で第三者との間に法律行為をしても、その行為の効果は当然には本人に及ぶものではなく、そのような効果が発生するためには、代理その他別個の法律関係が伴うことを必要とするとする。本人の名でした行為は無権代理となり、本人の追認などがなければ本人に効果は帰属しない。直接本人に帰属するとする点が誤り。",
+   "citations": [],
+   "cases": [
+    {
+     "name": "事務管理者が本人の名でした法律行為の効果",
+     "court": "最高裁判所",
+     "date": "昭和36年11月30日",
+     "holding": "事務管理者が本人の名で第三者との間に法律行為をしても、その行為の効果は、当然には本人に及ぶものではなく、そのような効果の発生するためには、代理その他別個の法律関係が伴うことを必要とする（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/734"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2022-minpo-q13-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q13-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。事務管理には委任の報告義務の規定（645条）が準用され（701条）、管理者は事務の終了後、遅滞なく経過及び結果を報告しなければならない。",
+   "body": "701条は、受任者の報告義務を定める645条などを事務管理に準用する。645条は、受任者は「委任が終了した後は、遅滞なくその経過及び結果を報告しなければならない」とする。これが準用されるので、管理者は、事務が終了した後、本人に遅滞なくその経過及び結果を報告しなければならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "701",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第六百四十五条から第六百四十七条までの規定は、事務管理について準用する。",
+     "text_sha256": "dbf9ef286e0710163b9c06f19cc540e90a9d3be04c2f6f94a51c1011262f6c16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "645",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "受任者は、委任者の請求があるときは、いつでも委任事務の処理の状況を報告し、委任が終了した後は、遅滞なくその経過及び結果を報告しなければならない。",
+     "text_sha256": "44ca7958505f728d84cca19313dcae168024d040633e9fb34934188042f6951c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。条文から明らか。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q13-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q13-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。本人の財産に対する急迫の危害を免れさせるための事務管理では、悪意又は重大な過失がなければ損害賠償の責任を負わない（698条）。",
+   "body": "「管理者は、本人の身体、名誉又は財産に対する急迫の危害を免れさせるために事務管理をしたときは、悪意又は重大な過失があるのでなければ、これによって生じた損害を賠償する責任を負わない」（698条。緊急事務管理）。本肢はこの規定のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "698",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管理者は、本人の身体、名誉又は財産に対する急迫の危害を免れさせるために事務管理をしたときは、悪意又は重大な過失があるのでなければ、これによって生じた損害を賠償する責任を負わない。",
+     "text_sha256": "6eaf036df296eb97f31d81702817dd8d46ee3e4d078986c200ec584907129f57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q13-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

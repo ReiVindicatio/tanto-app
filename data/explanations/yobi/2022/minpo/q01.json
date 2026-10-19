@@ -1,0 +1,239 @@
+{
+ "question_id": "yobi-2022-minpo-q01",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q01-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。未成年者が認知をするのに法定代理人の同意は要らず（780条）、同意がないことを理由に親権者が取り消すことはできない。",
+   "body": "「認知をするには、父又は母が未成年者又は成年被後見人であるときであっても、その法定代理人の同意を要しない」（780条）。認知のような身分行為は本人の意思を尊重すべきものであり、未成年者の法律行為に法定代理人の同意を求める5条は適用されない。同意を欠くことを理由とする取消し（5条2項）の余地はなく、親権者は認知を取り消すことができない。なお、認知をした父又は母自身も、認知を取り消すことができない（785条）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "780",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "認知をするには、父又は母が未成年者又は成年被後見人であるときであっても、その法定代理人の同意を要しない。",
+     "text_sha256": "f96c7d5cf3e3bef2b4050403465d1ea8285651d649dee1aefe2d9a4153849440",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "5",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定に反する法律行為は、取り消すことができる。",
+     "text_sha256": "41659855924ba702729f1bdac3f46add3ca097fdcda242a6f5e99f0d612d0360",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "785",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "認知をした父又は母は、その認知を取り消すことができない。",
+     "text_sha256": "d4c2f43f2112854fa336f3493a5ca62858faf0947b08a9b416482db99d6b3e33",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "身分行為に5条が適用されないことは解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q01-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q01-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。営業を許された未成年者が成年者と同一の行為能力を有するのは「その営業に関しては」に限られる（6条1項）。営業に関しない行為は取り消すことができる。",
+   "body": "「一種又は数種の営業を許された未成年者は、その営業に関しては、成年者と同一の行為能力を有する」（6条1項）。営業に関しない法律行為については原則どおり法定代理人の同意が必要であり（5条1項）、同意のない行為は取り消すことができる（同条2項）。営業に関しないものでも取り消せないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一種又は数種の営業を許された未成年者は、その営業に関しては、成年者と同一の行為能力を有する。",
+     "text_sha256": "fa77777932ba8a9dc6a0edc963eca634aba0dbbddcfd396dbbc79cb41cd07335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者が法律行為をするには、その法定代理人の同意を得なければならない。",
+     "text_sha256": "41659855924ba702729f1bdac3f46add3ca097fdcda242a6f5e99f0d612d0360",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "5",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定に反する法律行為は、取り消すことができる。",
+     "text_sha256": "41659855924ba702729f1bdac3f46add3ca097fdcda242a6f5e99f0d612d0360",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q01-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q01-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。制限行為能力者は自ら取消権者であり（120条1項）、法定代理人の同意がなくても単独で取り消すことができると解されている。",
+   "body": "行為能力の制限によって取り消すことができる行為は、「制限行為能力者…又はその代理人、承継人若しくは同意をすることができる者に限り、取り消すことができる」（120条1項）。取消しは行為をしなかった状態に戻すだけで、制限行為能力者に不利益を与えるものではないので、未成年者は法定代理人の同意を得ずに単独で取り消すことができ、その取消しをさらに取り消すことはできないと解されている。同意を得なければ取り消せないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "120",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行為能力の制限によって取り消すことができる行為は、制限行為能力者（他の制限行為能力者の法定代理人としてした行為にあっては、当該他の制限行為能力者を含む。）又はその代理人、承継人若しくは同意をすることができる者に限り、取り消すことができる。",
+     "text_sha256": "56eb3f1eb7eeec97bc2a6957269e75cf5da9252e385a9cd0ed96a521dfef7a6b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。単独で取り消せることは解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q01-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q01-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。追認は取消しの原因となっていた状況が消滅した後でなければ効力を生じないので（124条1項）、未成年者は成年に達するまでは、法定代理人の同意を得なければ追認できない（同条2項2号）。",
+   "body": "「取り消すことができる行為の追認は、取消しの原因となっていた状況が消滅し、かつ、取消権を有することを知った後にしなければ、その効力を生じない」（124条1項）。未成年者にとって取消しの原因となっていた状況が消滅するのは成年に達した時である。もっとも、「制限行為能力者（成年被後見人を除く。）が法定代理人、保佐人又は補助人の同意を得て追認をするとき」は、その消滅前でも追認できる（同条2項2号）。したがって、成年に達するまでは、親権者の同意を得なければ自ら追認することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取り消すことができる行為の追認は、取消しの原因となっていた状況が消滅し、かつ、取消権を有することを知った後にしなければ、その効力を生じない。",
+     "text_sha256": "677818a6b672c91db3f1a099712b8131501fc569736e787b9b0be8a9a8d4c258",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "124",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "制限行為能力者（成年被後見人を除く。）が法定代理人、保佐人又は補助人の同意を得て追認をするとき。",
+     "text_sha256": "677818a6b672c91db3f1a099712b8131501fc569736e787b9b0be8a9a8d4c258",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-minpo-q01-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q01-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。制限行為能力者が詐術を用いたときは取り消すことができず（21条）、法定代理人の同意があると誤信させた場合もこれに含まれると解されている。",
+   "body": "「制限行為能力者が行為能力者であることを信じさせるため詐術を用いたときは、その行為を取り消すことができない」（21条）。条文は「行為能力者であることを信じさせるため」とするが、法定代理人の同意を得ていると相手方に信じさせるために詐術を用いた場合も、相手方を保護する必要は同じなので、21条が適用されると解されている。取り消すことができるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "21",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "制限行為能力者が行為能力者であることを信じさせるため詐術を用いたときは、その行為を取り消すことができない。",
+     "text_sha256": "fb8659e334c4bb674c7db0137bc4a6bfa6a021b498927d9789332e7bf51ac85a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。同意があると誤信させた場合に21条が及ぶことは解釈による説明（判例あり（要確認））。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q01-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

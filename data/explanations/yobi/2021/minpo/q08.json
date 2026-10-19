@@ -1,0 +1,241 @@
+{
+ "question_id": "yobi-2021-minpo-q08",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q08-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。連帯保証も保証と同じく債権者と保証人の間の契約で成立し、主たる債務者と保証人の間で連帯の特約をする必要はないと解されている。",
+   "body": "保証契約は債権者と保証人の間で締結され、主たる債務者の関与は要らない。連帯保証は、保証人が「主たる債務者と連帯して債務を負担したとき」（454条）であり、これは保証人と債権者の間の保証契約の内容として定められれば足りると解されている。ＡＣ間で連帯保証契約が締結されれば、ＢＣ間の特約がなくてもＣの債務は連帯保証債務になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "454",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保証人は、主たる債務者と連帯して債務を負担したときは、前二条の権利を有しない。",
+     "text_sha256": "2851503779d5247250f4b5d5dca1abe3a6333d51f6385f928ca2ce32bd287fe6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。連帯保証の成立に主たる債務者との特約が不要であることは解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q08-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q08-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。保証人は主たる債務の消滅時効を援用できるが（145条）、援用の効果は援用した者との関係でだけ生ずると解されており、Ｂが援用しない限りＡはＢに請求できる。",
+   "body": "消滅時効は、当事者（保証人を含む）が援用しなければ裁判の基礎にできない（145条）。時効の援用の効果は相対的で、援用した者との関係でのみ権利が消滅したものと扱われると解されている。Ｃが甲債権の消滅時効を援用すれば、Ｃは保証債務を免れるが、主たる債務者Ｂが援用しない限り、Ｂとの関係では甲債権は消滅しない。ＡはＢに1000万円の支払を請求できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "145",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効は、当事者（消滅時効にあっては、保証人、物上保証人、第三取得者その他権利の消滅について正当な利益を有する者を含む。）が援用しなければ、裁判所がこれによって裁判をすることができない。",
+     "text_sha256": "e5fa226ad26d710e216e9e61b648d93464274a60e523576250a29d3094a91a4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "援用の効果の相対性は解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q08-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q08-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。連帯保証人に生じた事由は、更改・相殺・混同など一部を除き主たる債務者に効力を生じない（458条・441条）。連帯保証人に対する訴えの提起（裁判上の請求）は、主たる債務者との関係で時効の完成を猶予しない。",
+   "body": "458条は、連帯保証人について生じた事由について、438条（更改）、439条1項（相殺）、440条（混同）及び441条を準用する。441条は、これらの場合を除き、「連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない」とする（相対的効力の原則）。履行の請求（裁判上の請求）はこれらに含まれないので、ＡがＣに訴えを提起しても、別段の意思表示がない限り、Ｂとの関係では時効の完成は猶予されない。猶予されるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "458",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四百三十八条、第四百三十九条第一項、第四百四十条及び第四百四十一条の規定は、主たる債務者と連帯して債務を負担する保証人について生じた事由について準用する。",
+     "text_sha256": "fbc8a6d220ee582ace835fb1f1ccdc6643d44d9f5f8f1ba9318134d1a3522908",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四百三十八条、第四百三十九条第一項及び前条に規定する場合を除き、連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない。ただし、債権者及び他の連帯債務者の一人が別段の意思を表示したときは、当該他の連帯債務者に対する効力は、その意思に従う。",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "438",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人と債権者との間に更改があったときは、債権は、全ての連帯債務者の利益のために消滅する。",
+     "text_sha256": "879c74199baf00e9e31206c702f7022c0899c2c79c1954a4f23ded96454818c7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "439",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人が債権者に対して債権を有する場合において、その連帯債務者が相殺を援用したときは、債権は、全ての連帯債務者の利益のために消滅する。",
+     "text_sha256": "9865589dc071ab8a21dc7f95c2b91135853d8a405ec1208d9086444f336456b1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "440",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人と債権者との間に混同があったときは、その連帯債務者は、弁済をしたものとみなす。",
+     "text_sha256": "a5c02ef9bcb72b69e3f86ab73a4d17db3c913ed965caed6ccb184bf5eae8395b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。2017年改正（2020年施行）で、連帯債務者の一人に対する履行の請求の絶対効が廃止された。出題時点（2021年）も現行法も同じ。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q08-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q08-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。ＣがＡを単独相続すると、保証債権の債権者と債務者がともにＣとなり、混同によって保証債務は消滅する（520条）。",
+   "body": "「債権及び債務が同一人に帰属したときは、その債権は、消滅する」（520条本文）。ＣがＡを単独相続すると、Ｃは甲債権とそれに随伴する保証債権を承継する。保証債権の債権者（Ａの地位を承継したＣ）と債務者（保証人Ｃ）が同一人となるので、保証債務は混同により消滅する。甲債権そのもの（Ｂに対する債権）は消滅しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "520",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権及び債務が同一人に帰属したときは、その債権は、消滅する。ただし、その債権が第三者の権利の目的であるときは、この限りでない。",
+     "text_sha256": "a2e410b520170a5739ab46af6604b623a55107e4f2dec2ce55ae43e8fefce1c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "相続による保証債権の承継と混同の当てはめは解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q08-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q08-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。保証人が数人いる場合の分割（分別の利益、456条・427条）は連帯保証人には認められないと解されており、ＣとＤはそれぞれ1000万円全額の連帯保証債務を負う。",
+   "body": "数人の保証人がある場合には、427条が適用され、各保証人は等しい割合で義務を負う（456条。分別の利益）。しかし、連帯保証人は主たる債務者と連帯して債務を負担する者であり、債権者に対して債務の全額を履行する責任を負うので、分別の利益を有しないと解されている。ＣとＤはいずれも1000万円全額について連帯保証債務を負い、各500万円となるわけではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "456",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "数人の保証人がある場合には、それらの保証人が各別の行為により債務を負担したときであっても、第四百二十七条の規定を適用する。",
+     "text_sha256": "611f65a8e14e06cf549a6d2402c6c8b9353f6b0710747696a1ffc3ce6856caeb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "427",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "数人の債権者又は債務者がある場合において、別段の意思表示がないときは、各債権者又は各債務者は、それぞれ等しい割合で権利を有し、又は義務を負う。",
+     "text_sha256": "9f8ca5bc7a3ca0744fa167c80923a9ce74d05d13a22dce16ef149f63563eb758",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。連帯保証人に分別の利益がないことは解釈による説明（判例あり（要確認））。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q08-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

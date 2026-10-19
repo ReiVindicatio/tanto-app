@@ -1,0 +1,236 @@
+{
+ "question_id": "yobi-2021-minpo-q09",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q09-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、相殺の優劣は相殺適状の先後ではなく相殺の意思表示の先後で決まり、先にされた相殺で受働債権が消滅していれば後の相殺は効力を生じないとする。Ｃの相殺で甲債権が消滅した後は、Ｂは相殺できない。",
+   "body": "相殺の意思表示は、双方の債務が互いに相殺に適するようになった時にさかのぼって効力を生ずる（506条2項）。しかし、判例（最判昭和54年7月10日）は、相殺適状が先に生じていても、相手方の先にした相殺の意思表示によって債権が既に消滅していた場合には、後にされた相殺の意思表示は効力を生じないとする。相殺の遡及効は、相殺がされる前に生じた法律関係の変更を覆すものではないからである。ＣがＢに対する丙債権と甲債権を相殺した後は、甲債権は消滅しており、Ｂは乙債権による相殺をＣに対抗できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "506",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の意思表示は、双方の債務が互いに相殺に適するようになった時にさかのぼってその効力を生ずる。",
+     "text_sha256": "062f72fc81d33818472722921e99cdcf21fc04d5302d967ddf05aa708391268e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "相殺の優劣（意思表示の先後）",
+     "court": "最高裁判所",
+     "date": "昭和54年7月10日",
+     "holding": "相殺適状が先に生じていても、相手方の先にした相殺の意思表示によって債権が既に消滅していた場合には、後にされた相殺の意思表示はその効力を生じない。相殺の遡及効は、相殺がされる前に生じた法律関係の変更を覆す効力を有しない（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/649"
+     ]
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。判例は転付命令の事案で、債権譲渡の場面に同じ考え方を及ぼすのは解釈による。"
+   ],
+   "id": "exp-yobi-2021-minpo-q09-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q09-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。差押え前の原因に基づいて生じた債権でも、第三債務者が差押え後に他人から譲り受けたものであれば、相殺を差押債権者に対抗できない（511条2項ただし書）。",
+   "body": "差押え後に取得した債権でも、差押え前の原因に基づいて生じたものであれば、第三債務者はその債権による相殺を差押債権者に対抗できる（511条2項本文）。「ただし、第三債務者が差押え後に他人の債権を取得したときは、この限りでない」（同項ただし書）。Ｂは差押え後に乙債権を他人から譲り受けたので、相殺をＤに対抗できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "511",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定にかかわらず、差押え後に取得した債権が差押え前の原因に基づいて生じたものであるときは、その第三債務者は、その債権による相殺をもって差押債権者に対抗することができる。ただし、第三債務者が差押え後に他人の債権を取得したときは、この限りでない。",
+     "text_sha256": "37e9cbc42de68c7685e906ed556c6f5f05c454efc8a30731664584a274b20b77",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-minpo-q09-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q09-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。悪意の不法行為による損害賠償債務の債務者は相殺できないのが原則だが、債権者がその債権を他人から譲り受けたときは相殺できる（509条ただし書）。",
+   "body": "509条は、悪意による不法行為に基づく損害賠償の債務の債務者は、相殺をもって債権者に対抗することができないとする（1号）。被害者に現実の賠償を受けさせる趣旨である。しかし、「その債権者がその債務に係る債権を他人から譲り受けたときは、この限りでない」（同条ただし書）。甲債権はＡが被害者Ｅから譲り受けたものなので、加害者Ｂは乙債権との相殺をもってＡに対抗できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "509",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる債務の債務者は、相殺をもって債権者に対抗することができない。ただし、その債権者がその債務に係る債権を他人から譲り受けたときは、この限りでない。",
+     "text_sha256": "33ae841cfbbd7882090f31eb28d87b669c78e01e112e96279a6a0f3600313680",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "509",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "悪意による不法行為に基づく損害賠償の債務",
+     "text_sha256": "33ae841cfbbd7882090f31eb28d87b669c78e01e112e96279a6a0f3600313680",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-minpo-q09-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q09-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。第三債務者が差押え前に取得した債権で相殺するには、相殺の時に自働債権（乙債権）の弁済期が到来していることが必要である（505条1項）。弁済期到来前には相殺できない。",
+   "body": "差押え前に取得した債権による相殺は、差押債権者に対抗できる（511条1項）。もっとも、相殺そのものの要件として「双方の債務が弁済期にあるとき」でなければならない（505条1項）。Ｂが相殺に使う乙債権（自働債権）の弁済期が到来していなければ、Ｂは相殺することができず、Ｆに対抗することもできない（乙債権の弁済期が到来した後であれば、差押え後でも相殺をＦに対抗できる）。弁済期到来前でも対抗できるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "511",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "差押えを受けた債権の第三債務者は、差押え後に取得した債権による相殺をもって差押債権者に対抗することはできないが、差押え前に取得した債権による相殺をもって対抗することができる。",
+     "text_sha256": "37e9cbc42de68c7685e906ed556c6f5f05c454efc8a30731664584a274b20b77",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "505",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二人が互いに同種の目的を有する債務を負担する場合において、双方の債務が弁済期にあるときは、各債務者は、その対当額について相殺によってその債務を免れることができる。",
+     "text_sha256": "2c6fb46bb0752e6158d87dbdbfad4540a36db31dd72f7bc87c02c04ea73b245b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q09-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q09-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。債権譲渡の対抗要件具備時より後に取得した債権でも、対抗要件具備時より前の原因に基づいて生じた債権であれば、債務者は相殺を譲受人に対抗できる（469条2項1号）。",
+   "body": "債務者は、対抗要件具備時より前に取得した譲渡人に対する債権による相殺を譲受人に対抗できる（469条1項）。さらに、対抗要件具備時より後に取得した債権でも、「対抗要件具備時より前の原因に基づいて生じた債権」であれば同様である（同条2項1号。他人から取得した場合を除く）。乙債権は対抗要件具備時より前の原因に基づいてＡＢ間で生じた債権なので、Ｂは相殺をＧに対抗できる。対抗できないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "469",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、対抗要件具備時より前に取得した譲渡人に対する債権による相殺をもって譲受人に対抗することができる。",
+     "text_sha256": "2b64582a3e861d4a6965242b9090d4b29a885f56e8d7a90e340328e65e4b3799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "469",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債務者が対抗要件具備時より後に取得した譲渡人に対する債権であっても、その債権が次に掲げるものであるときは、前項と同様とする。ただし、債務者が対抗要件具備時より後に他人の債権を取得したときは、この限りでない。",
+     "text_sha256": "2b64582a3e861d4a6965242b9090d4b29a885f56e8d7a90e340328e65e4b3799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "469",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "対抗要件具備時より前の原因に基づいて生じた債権",
+     "text_sha256": "2b64582a3e861d4a6965242b9090d4b29a885f56e8d7a90e340328e65e4b3799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q09-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

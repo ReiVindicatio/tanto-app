@@ -1,0 +1,285 @@
+{
+ "question_id": "yobi-2021-minpo-q10",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q10-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。契約不適合による解除は541条・542条によるもので（564条）、売主の帰責事由は要件ではない。双方に帰責事由がなくても、買主は解除できる。",
+   "body": "契約不適合の場合の追完請求・代金減額請求の規定は、「第五百四十一条及び第五百四十二条の規定による解除権の行使を妨げない」（564条）。541条・542条は債務者（売主）の帰責事由を解除の要件としておらず、解除が制限されるのは、不履行が債権者（買主）の責めに帰すべき事由による場合（543条）である。数量の不足がＡＢいずれの責めにも帰することができない事由によるときは、Ｂは要件を満たせば契約を解除できる。解除できないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "564",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の規定は、第四百十五条の規定による損害賠償の請求並びに第五百四十一条及び第五百四十二条の規定による解除権の行使を妨げない。",
+     "text_sha256": "9b9246eeb8b690b7b89c4b9a9a5f8b40c4e0f341d15fe1382dccd3a7c464110d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "543",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の不履行が債権者の責めに帰すべき事由によるものであるときは、債権者は、前二条の規定による契約の解除をすることができない。",
+     "text_sha256": "cecc8b1ad379fcfd168281936bdaf0082f499828b1a0e40c54ccb58c5e1d28dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "541",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の一方がその債務を履行しない場合において、相手方が相当の期間を定めてその履行の催告をし、その期間内に履行がないときは、相手方は、契約の解除をすることができる。",
+     "text_sha256": "a382a1658957144d4c987e49868819b6be4b6636386e22d7b69646163926ab07",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "542",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる場合には、債権者は、前条の催告をすることなく、直ちに契約の解除をすることができる。",
+     "text_sha256": "021dce87813fcae2438db5c4ffc2afe591887076d1cccb4bc6a499a271622b73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q10-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q10-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。不履行が債権者（買主）の責めに帰すべき事由によるときは、債権者は契約を解除できない（543条）。",
+   "body": "契約不適合を理由とする解除も541条・542条による（564条）。「債務の不履行が債権者の責めに帰すべき事由によるものであるときは、債権者は、前二条の規定による契約の解除をすることができない」（543条）。数量の不足がＢの責めに帰すべき事由によって生じた場合、Ｂは契約を解除できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "543",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の不履行が債権者の責めに帰すべき事由によるものであるときは、債権者は、前二条の規定による契約の解除をすることができない。",
+     "text_sha256": "cecc8b1ad379fcfd168281936bdaf0082f499828b1a0e40c54ccb58c5e1d28dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "564",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の規定は、第四百十五条の規定による損害賠償の請求並びに第五百四十一条及び第五百四十二条の規定による解除権の行使を妨げない。",
+     "text_sha256": "9b9246eeb8b690b7b89c4b9a9a5f8b40c4e0f341d15fe1382dccd3a7c464110d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "541",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の一方がその債務を履行しない場合において、相手方が相当の期間を定めてその履行の催告をし、その期間内に履行がないときは、相手方は、契約の解除をすることができる。",
+     "text_sha256": "a382a1658957144d4c987e49868819b6be4b6636386e22d7b69646163926ab07",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "542",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる場合には、債権者は、前条の催告をすることなく、直ちに契約の解除をすることができる。",
+     "text_sha256": "021dce87813fcae2438db5c4ffc2afe591887076d1cccb4bc6a499a271622b73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q10-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q10-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。不適合が買主の責めに帰すべき事由によるときは、買主は履行の追完（不足分の引渡し）を請求できない（562条2項）。",
+   "body": "買主は、数量の不足があるときは、不足分の引渡しによる履行の追完を請求できる（562条1項）。しかし、「前項の不適合が買主の責めに帰すべき事由によるものであるときは、買主は、同項の規定による履行の追完の請求をすることができない」（同条2項）。不足分の引渡しが可能であっても同じである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "562",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "引き渡された目的物が種類、品質又は数量に関して契約の内容に適合しないものであるときは、買主は、売主に対し、目的物の修補、代替物の引渡し又は不足分の引渡しによる履行の追完を請求することができる。",
+     "text_sha256": "4596856b9aee4f26d8523bb47e98749638a06b0d016eb4267dd51c9391aaa683",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "562",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の不適合が買主の責めに帰すべき事由によるものであるときは、買主は、同項の規定による履行の追完の請求をすることができない。",
+     "text_sha256": "4596856b9aee4f26d8523bb47e98749638a06b0d016eb4267dd51c9391aaa683",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q10-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q10-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。代金減額は、相当の期間を定めて追完を催告し、その期間内に追完がないときに請求できるのが原則である（563条1項）。売主が追完を申し出ているのに、それを拒んで直ちに減額を請求することはできない。",
+   "body": "「買主が相当の期間を定めて履行の追完の催告をし、その期間内に履行の追完がないときは、買主は、その不適合の程度に応じて代金の減額を請求することができる」（563条1項）。催告なしに直ちに減額できるのは、追完が不能であるとき、売主が追完を拒絶する意思を明確に表示したときなどに限られる（同条2項）。不足分の引渡しが可能で、Ａがその引渡しを申し出ている場合はこれに当たらず、Ｂは申出を拒んで直ちに代金の減額を請求することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "563",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条第一項本文に規定する場合において、買主が相当の期間を定めて履行の追完の催告をし、その期間内に履行の追完がないときは、買主は、その不適合の程度に応じて代金の減額を請求することができる。",
+     "text_sha256": "01bf383ee4d16f3d3ec96d349bed160475698675a93a56972d801d79cfb22e7e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "563",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "履行の追完が不能であるとき。",
+     "text_sha256": "01bf383ee4d16f3d3ec96d349bed160475698675a93a56972d801d79cfb22e7e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "563",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "売主が履行の追完を拒絶する意思を明確に表示したとき。",
+     "text_sha256": "01bf383ee4d16f3d3ec96d349bed160475698675a93a56972d801d79cfb22e7e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q10-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q10-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。不適合を知った時から1年以内の通知を要求する期間制限（566条）は、種類又は品質に関する不適合に限られ、数量の不足には適用されない。",
+   "body": "566条は、「売主が種類又は品質に関して契約の内容に適合しない目的物を買主に引き渡した場合において」、買主が不適合を知った時から1年以内に通知しないときは、損害賠償の請求などができなくなるとする。数量の不足は外形上明らかになりやすいため、この期間制限の対象から外されており、一般の消滅時効の規定によって処理される。数量の不足についても1年以内の通知が必要であるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "566",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "売主が種類又は品質に関して契約の内容に適合しない目的物を買主に引き渡した場合において、買主がその不適合を知った時から一年以内にその旨を売主に通知しないときは、買主は、その不適合を理由として、履行の追完の請求、代金の減額の請求、損害賠償の請求及び契約の解除をすることができない。",
+     "text_sha256": "4ed0acaed9db9f251d115841a128eec8b851d66912c0d612c6eb666584dfa533",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。数量が対象外とされた理由は解釈による補足。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q10-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

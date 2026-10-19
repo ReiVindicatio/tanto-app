@@ -1,0 +1,248 @@
+{
+ "question_id": "yobi-2022-minpo-q03",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q03-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。指図による占有移転は、本人が代理人に命じ、「その第三者」（譲受人Ｃ）が承諾したときに成立する（184条）。Ｂの承諾では足りない。",
+   "body": "「代理人によって占有をする場合において、本人がその代理人に対して以後第三者のためにその物を占有することを命じ、その第三者がこれを承諾したときは、その第三者は、占有権を取得する」（184条）。承諾が必要なのは、占有を取得する第三者（譲受人Ｃ）であり、直接占有者Ｂの承諾ではない。本肢ではＣの承諾がないので、指図による占有移転は成立せず、Ｃは引渡し（178条）を受けたことにならない。第三者に対抗できるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "184",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理人によって占有をする場合において、本人がその代理人に対して以後第三者のためにその物を占有することを命じ、その第三者がこれを承諾したときは、その第三者は、占有権を取得する。",
+     "text_sha256": "9ed076ff2efaeae489a5d2a181ef4539f23d37caf1b8c3567317188f8f98873c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "178",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "動産に関する物権の譲渡は、その動産の引渡しがなければ、第三者に対抗することができない。",
+     "text_sha256": "35e2958ba94fa00d9e8fff70a551fb50c621f3d657b1ae752bc9c041170517ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q03-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q03-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。登録を受けた自動車の所有権の得喪は、登録が対抗要件とされ、引渡しでは対抗できない。登録名義を得たＣにＢは対抗できない。",
+   "body": "動産の譲渡の対抗要件は引渡しが原則である（178条）。しかし、登録を受けた自動車については、特別法（道路運送車両法）により、所有権の得喪は登録を受けなければ第三者に対抗できないとされている。そのため、現実の引渡しを受けたＢも、登録名義を備えていない以上、先に登録名義の移転を受けたＣに所有権の取得を対抗することができない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "178",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "動産に関する物権の譲渡は、その動産の引渡しがなければ、第三者に対抗することができない。",
+     "text_sha256": "35e2958ba94fa00d9e8fff70a551fb50c621f3d657b1ae752bc9c041170517ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。道路運送車両法の条文は保存していないため、文言は引用していない。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q03-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q03-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。占有改定（183条）も178条の引渡しに当たるので、Ｂは先に対抗要件を備えている。売却の事実を知っているＣは即時取得もできず、ＣはＢに対抗できない。",
+   "body": "「代理人が自己の占有物を以後本人のために占有する意思を表示したときは、本人は、これによって占有権を取得する」（183条。占有改定）。占有改定も178条の「引渡し」に当たると解されているので、Ｂは、ＡがＣに売却する前に所有権の取得の対抗要件を備えている。その後にＡから買ったＣは、Ａが無権利となった後の譲受人であり、Ｂへの売却の事実を知っている以上、善意無過失を要件とする即時取得（192条）も成立しない。Ｃが所有権の取得をＢに対抗できるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "183",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理人が自己の占有物を以後本人のために占有する意思を表示したときは、本人は、これによって占有権を取得する。",
+     "text_sha256": "372bf794a5af81739ebe105ea3aecf67656fa8a43c60021357ff4df7809dc762",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "178",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "動産に関する物権の譲渡は、その動産の引渡しがなければ、第三者に対抗することができない。",
+     "text_sha256": "35e2958ba94fa00d9e8fff70a551fb50c621f3d657b1ae752bc9c041170517ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "192",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取引行為によって、平穏に、かつ、公然と動産の占有を始めた者は、善意であり、かつ、過失がないときは、即時にその動産について行使する権利を取得する。",
+     "text_sha256": "8af1415ed2efccdfc0690b29f5e636498b6cf499f8169794c3bdec6e23d8ae4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。占有改定が178条の引渡しに当たることは解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q03-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q03-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、占有改定による占有取得では即時取得は成立しないとする。Ｃは所有権を取得しておらず、Ａに引渡しを請求できない。",
+   "body": "即時取得には、取引行為によって動産の「占有を始めた」ことが必要である（192条）。本肢のＣは、Ｂが以後Ｃのために占有する意思を表示したこと（占有改定、183条）によって占有を取得したにすぎない。判例（最判昭和35年2月11日）は、占有取得の方法が外観上従来の占有状態に変更を来さない占有改定にとどまるときは、192条の適用はないとする。Ｃは善意無過失でも甲の所有権を取得しないので、甲の返還を受けたＡに対し、所有権に基づいて引渡しを請求することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "192",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取引行為によって、平穏に、かつ、公然と動産の占有を始めた者は、善意であり、かつ、過失がないときは、即時にその動産について行使する権利を取得する。",
+     "text_sha256": "8af1415ed2efccdfc0690b29f5e636498b6cf499f8169794c3bdec6e23d8ae4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "183",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理人が自己の占有物を以後本人のために占有する意思を表示したときは、本人は、これによって占有権を取得する。",
+     "text_sha256": "372bf794a5af81739ebe105ea3aecf67656fa8a43c60021357ff4df7809dc762",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "占有改定と即時取得",
+     "court": "最高裁判所",
+     "date": "昭和35年2月11日",
+     "holding": "無権利者から動産を譲り受けた場合、占有取得の方法が外観上従来の占有状態に変更を来さない占有改定にとどまるときは、民法192条の適用はない（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/422"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2022-minpo-q03-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q03-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。譲受人が既に目的物を所持している場合は、当事者の意思表示のみで占有権を譲渡でき（182条2項。簡易の引渡し）、これにより178条の対抗要件を備える。",
+   "body": "「譲受人又はその代理人が現に占有物を所持する場合には、占有権の譲渡は、当事者の意思表示のみによってすることができる」（182条2項。簡易の引渡し）。簡易の引渡しも178条の「引渡し」に当たると解されている。甲を預かって所持していたＢがＡから甲を買い、占有をＢに移転する旨の意思表示がされたときは、Ｂは引渡しを受けたことになり、所有権の取得を第三者に対抗することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "182",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "譲受人又はその代理人が現に占有物を所持する場合には、占有権の譲渡は、当事者の意思表示のみによってすることができる。",
+     "text_sha256": "eab024e883e6a7137faa48bea138e2d9aaadf02ffce971aa0228f8e2149776ba",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "178",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "動産に関する物権の譲渡は、その動産の引渡しがなければ、第三者に対抗することができない。",
+     "text_sha256": "35e2958ba94fa00d9e8fff70a551fb50c621f3d657b1ae752bc9c041170517ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-minpo-q03-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,215 @@
+{
+ "question_id": "yobi-2022-minpo-q15",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q15-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。保佐人の同意を要する行為を定める13条は遺言には適用されず（962条）、被保佐人は保佐人の同意なしに遺言できる。",
+   "body": "「第五条、第九条、第十三条及び第十七条の規定は、遺言については、適用しない」（962条）。遺言は本人の最終意思を尊重すべきものであり、遺言能力（961条）があれば、制限行為能力者も単独で遺言をすることができる。被保佐人は、保佐人の同意を得ずに遺言をすることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "962",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第五条、第九条、第十三条及び第十七条の規定は、遺言については、適用しない。",
+     "text_sha256": "be50e2ac6aa60c140b1e7359a6eda26916ff205a3e634f621d606160618b5a8f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "961",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "十五歳に達した者は、遺言をすることができる。",
+     "text_sha256": "507a20c4a26805ab0960881c8523b1a24d19b15619e12a15de57000652149468",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q15-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q15-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。被相続人は、遺言で、遺産の分割の方法を定めることを第三者に委託できる（908条1項）。",
+   "body": "「被相続人は、遺言で、遺産の分割の方法を定め、若しくはこれを定めることを第三者に委託し、又は相続開始の時から五年を超えない期間を定めて、遺産の分割を禁ずることができる」（908条1項）。本肢はこの規定のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "908",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被相続人は、遺言で、遺産の分割の方法を定め、若しくはこれを定めることを第三者に委託し、又は相続開始の時から五年を超えない期間を定めて、遺産の分割を禁ずることができる。",
+     "text_sha256": "fd7a1236ab17485dddb76cdf8ead6480848e594efff9de809b348d1bf101ab74",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。908条は出題後（2023年4月施行）に2項以下が追加されたが、1項は出題時点と同じ。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q15-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q15-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。被後見人が後見の計算の終了前に後見人の利益となるべき遺言をしたときは無効であり（966条1項）、後見人が法人でも同じである。",
+   "body": "「被後見人が、後見の計算の終了前に、後見人又はその配偶者若しくは直系卑属の利益となるべき遺言をしたときは、その遺言は、無効とする」（966条1項）。後見人の影響力によって不当な遺言がされることを防ぐ趣旨であり、後見人が法人であっても適用される。例外は、直系血族・配偶者・兄弟姉妹が後見人である場合に限られる（同条2項）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "966",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被後見人が、後見の計算の終了前に、後見人又はその配偶者若しくは直系卑属の利益となるべき遺言をしたときは、その遺言は、無効とする。",
+     "text_sha256": "1a2b6ef7d7f97a416b97033703507b2407188d405f9e390bf1a924d86b901f97",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "966",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、直系血族、配偶者又は兄弟姉妹が後見人である場合には、適用しない。",
+     "text_sha256": "1a2b6ef7d7f97a416b97033703507b2407188d405f9e390bf1a924d86b901f97",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。法人後見人にも適用されることは条文の文言からの解釈。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q15-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q15-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。遺言による相続分の指定は、遺留分を侵害する場合でも効力を生じ、遺留分権利者は遺留分侵害額に相当する金銭の支払を請求できるにとどまる（902条1項・1046条1項）。",
+   "body": "「被相続人は、前二条の規定にかかわらず、遺言で、共同相続人の相続分を定め…ることができる」（902条1項）。遺留分を侵害する相続分の指定も無効ではなく、遺留分権利者は、相続分の指定を受けた相続人に対し、「遺留分侵害額に相当する金銭の支払を請求することができる」（1046条1項）。遺留分を侵害しない範囲でのみ効力を生じるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "902",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被相続人は、前二条の規定にかかわらず、遺言で、共同相続人の相続分を定め、又はこれを定めることを第三者に委託することができる。",
+     "text_sha256": "2b05a6951a1d212aa44ae4618633ff82e397ff156ac192b32fd59e097818a72c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1046",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺留分権利者及びその承継人は、受遺者（特定財産承継遺言により財産を承継し又は相続分の指定を受けた相続人を含む。以下この章において同じ。）又は受贈者に対し、遺留分侵害額に相当する金銭の支払を請求することができる。",
+     "text_sha256": "bee2c013e82d287e432164aa7b6d4effbfc5b76b5317ea4e059ab4b01e52359d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "2018年の相続法改正（2019年7月施行）で、902条1項の「遺留分に関する規定に違反することができない」旨のただし書が削られ、遺留分は金銭債権化された。出題時点（2022年）も現行法も同じ。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q15-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q15-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。遺言の撤回は、遺言の方式に従ってしなければならない（1022条）。",
+   "body": "「遺言者は、いつでも、遺言の方式に従って、その遺言の全部又は一部を撤回することができる」（1022条）。撤回はいつでもできるが、方式は遺言の方式に従う必要がある（撤回する遺言と同じ方式である必要はない）と解されている。任意の方式で撤回できるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1022",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺言者は、いつでも、遺言の方式に従って、その遺言の全部又は一部を撤回することができる。",
+     "text_sha256": "264f61d1a42c248d67faa8cb78c681e79ef133f8b68a52b024fde018401a04be",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-minpo-q15-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,225 @@
+{
+ "question_id": "yobi-2020-minpo-q07",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q07-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。受益者に対する詐害行為取消訴訟の被告は受益者Ｂであり（424条の7第1項1号）、債務者Ａには訴訟告知をすれば足りる（同条2項）。",
+   "body": "424条の7第1項は、詐害行為取消請求に係る訴えの被告を、受益者に対する訴えでは「受益者」、転得者に対する訴えでは「その詐害行為取消請求の相手方である転得者」と定める。債務者は被告とならず、「債権者は、詐害行為取消請求に係る訴えを提起したときは、遅滞なく、債務者に対し、訴訟告知をしなければならない」（同条2項）とされている。Ａを被告としなければならないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "受益者に対する詐害行為取消請求に係る訴え　受益者",
+     "text_sha256": "d2c8f7dd0b10714b9615fa2e4c3e90314c9ae3e5e366b765d756474a75d74594",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_7",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権者は、詐害行為取消請求に係る訴えを提起したときは、遅滞なく、債務者に対し、訴訟告知をしなければならない。",
+     "text_sha256": "d2c8f7dd0b10714b9615fa2e4c3e90314c9ae3e5e366b765d756474a75d74594",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q07-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q07-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。転得者に対する詐害行為取消請求で取り消すのは「債務者がした行為」（ＡＢ間の贈与）であり、ＢＤ間の売買の取消しを請求することはできない。",
+   "body": "転得者が転得の当時、債務者がした行為が債権者を害することを知っていたときは、債権者は転得者に対しても詐害行為取消請求をすることができる（424条の5第1号）。その内容は、「債務者がした行為の取消しとともに、転得者が転得した財産の返還を請求すること」である（424条の6第2項）。取消しの対象はあくまで債務者Ａがした贈与であり、受益者Ｂと転得者Ｄの間の売買ではない。ＢＤ間の売買の取消しを請求できるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その転得者が受益者から転得した者である場合　その転得者が、転得の当時、債務者がした行為が債権者を害することを知っていたとき。",
+     "text_sha256": "867f9bcf694896077ed49c5ce4992ac485c8c7a9f9ae05d8b86e14a19496af26",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_6",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権者は、転得者に対する詐害行為取消請求において、債務者がした行為の取消しとともに、転得者が転得した財産の返還を請求することができる。",
+     "text_sha256": "1c10ed6a848af7a1bf9172b6277d41d5757f592dd4b6e8cf4d1b75b12ed53687",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q07-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q07-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。受益者Ｂが目的物を転売していても、債権者Ｃは受益者Ｂに対して、債務者がした行為（ＡＢ間の贈与）の取消しを請求できる（財産の返還が困難なら価額の償還を請求する）。",
+   "body": "債権者は、債務者が債権者を害することを知ってした行為の取消しを請求できる（424条1項）。受益者に対する詐害行為取消請求では、行為の取消しとともに受益者に移転した財産の返還を請求でき、「受益者がその財産の返還をすることが困難であるときは、債権者は、その価額の償還を請求することができる」（424条の6第1項）。Ｂが甲をＤに転売していても、ＣはＢに対してＡＢ間の贈与の取消しを請求し、価額の償還を求めることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者は、債務者が債権者を害することを知ってした行為の取消しを裁判所に請求することができる。",
+     "text_sha256": "22d988d8231e843109818b8d2f93e8f2bb2ba972e98650a949757943ef28191d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者は、受益者に対する詐害行為取消請求において、債務者がした行為の取消しとともに、その行為によって受益者に移転した財産の返還を請求することができる。受益者がその財産の返還をすることが困難であるときは、債権者は、その価額の償還を請求することができる。",
+     "text_sha256": "1c10ed6a848af7a1bf9172b6277d41d5757f592dd4b6e8cf4d1b75b12ed53687",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-minpo-q07-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q07-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。詐害行為取消請求を認容する確定判決は、債務者及びその全ての債権者に対しても効力を有する（425条）。",
+   "body": "「詐害行為取消請求を認容する確定判決は、債務者及びその全ての債権者に対してもその効力を有する」（425条）。詐害行為取消権は総債権者のための責任財産の保全の制度だからである。本肢はこの規定のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "425",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐害行為取消請求を認容する確定判決は、債務者及びその全ての債権者に対してもその効力を有する。",
+     "text_sha256": "16eab9017a23dd7d4678c14fc78774f5cb544396292eb0b3014418ac53d19045",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-minpo-q07-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q07-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。転得者に対する取消判決の効力は債務者と全ての債権者に及ぶが（425条）、受益者Ｂには及ばず、ＢＤ間の売買は取り消されない。転得者Ｄに認められるのは、受益者が債務者に対して有したはずの権利の行使（425条の4）であり、判決を理由にＢに代金の返還を請求することはできないと解されている。",
+   "body": "認容判決の効力が及ぶのは「債務者及びその全ての債権者」であり（425条）、受益者Ｂは含まれない。取り消されるのは債務者Ａがした贈与であって、ＢＤ間の売買は取り消されないので、ＢＤ間では売買は有効なままである。転得者の保護としては、425条の4が、受益者に対する取消しがあったとすれば受益者が債務者に対して有したはずの反対給付の返還請求権などを、転得者が反対給付の価額の限度で行使できるとする（ＡＢ間は贈与なので、Ｂに反対給付はない）。取消判決の確定を理由にＤがＢに代金の返還を請求できるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "425",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐害行為取消請求を認容する確定判決は、債務者及びその全ての債権者に対してもその効力を有する。",
+     "text_sha256": "16eab9017a23dd7d4678c14fc78774f5cb544396292eb0b3014418ac53d19045",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "425_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者がした行為が転得者に対する詐害行為取消請求によって取り消されたときは、その転得者は、次の各号に掲げる区分に応じ、それぞれ当該各号に定める権利を行使することができる。ただし、その転得者がその前者から財産を取得するためにした反対給付又はその前者から財産を取得することによって消滅した債権の価額を限度とする。",
+     "text_sha256": "98a0dc6157f39f6b76e049b47a9b93ab27bfb42310e86546c5a9635ab4215778",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。ＢＤ間の売買が有効なままであることと、ＤのＢに対する他の救済（売買契約上の責任など）の有無は解釈の問題で、本文では判決の効力による代金返還請求ができないことに絞って説明した。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q07-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

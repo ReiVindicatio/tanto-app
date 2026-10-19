@@ -1,0 +1,239 @@
+{
+ "question_id": "yobi-2022-minpo-q02",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q02-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。取消権者は120条に掲げる者に限られ、取り消すことができる債務の保証人はこれに含まれない。",
+   "body": "取消しができるのは、制限行為能力者又はその代理人、承継人若しくは同意をすることができる者（120条1項）や、瑕疵ある意思表示をした者又はその代理人若しくは承継人（同条2項）に「限り」とされている。保証人は主たる債務者の承継人ではなく、これらのどれにも当たらないので、主たる債務の発生原因である法律行為を取り消すことはできないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "120",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行為能力の制限によって取り消すことができる行為は、制限行為能力者（他の制限行為能力者の法定代理人としてした行為にあっては、当該他の制限行為能力者を含む。）又はその代理人、承継人若しくは同意をすることができる者に限り、取り消すことができる。",
+     "text_sha256": "56eb3f1eb7eeec97bc2a6957269e75cf5da9252e385a9cd0ed96a521dfef7a6b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "120",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "錯誤、詐欺又は強迫によって取り消すことができる行為は、瑕疵ある意思表示をした者又はその代理人若しくは承継人に限り、取り消すことができる。",
+     "text_sha256": "56eb3f1eb7eeec97bc2a6957269e75cf5da9252e385a9cd0ed96a521dfef7a6b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "保証人が取消権者でないことは条文からの解釈。保証人が主たる債務者の取消権を理由に履行を拒めるかは別の問題（457条3項）。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q02-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q02-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。取り消すことができる行為は、120条に規定する者（代理人を含む）が追認したときは、以後取り消すことができない（122条）。",
+   "body": "「取り消すことができる行為は、第百二十条に規定する者が追認したときは、以後、取り消すことができない」（122条）。被保佐人の法定代理人は、120条1項の「代理人」に当たり、取消原因の消滅前でも追認できる（124条2項1号）。法定代理人が追認すれば行為は確定的に有効となり、被保佐人Ａも以後取り消すことができない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "122",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取り消すことができる行為は、第百二十条に規定する者が追認したときは、以後、取り消すことができない。",
+     "text_sha256": "205b2426b06c253ca931929147a0dc99e9ca848d71b669c4223996f4c8f501af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "120",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "又はその代理人、承継人若しくは同意をすることができる者に限り、取り消すことができる。",
+     "text_sha256": "56eb3f1eb7eeec97bc2a6957269e75cf5da9252e385a9cd0ed96a521dfef7a6b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "124",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "法定代理人又は制限行為能力者の保佐人若しくは補助人が追認をするとき。",
+     "text_sha256": "677818a6b672c91db3f1a099712b8131501fc569736e787b9b0be8a9a8d4c258",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-minpo-q02-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q02-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。取消しは、取り消すことができる行為の相手方に対する意思表示によってする（123条）。第三者Ｂの詐欺でも、取消しの相手はＣだけである。",
+   "body": "「取り消すことができる行為の相手方が確定している場合には、その取消し又は追認は、相手方に対する意思表示によってする」（123条）。第三者の詐欺による意思表示は、相手方Ｃがその事実を知り、又は知ることができたときに限り取り消すことができ（96条2項）、取消しはその相手方Ｃに対してすればよい。詐欺をしたＢは契約の相手方ではないので、Ｂに対して意思表示をする必要はない。Ｂ及びＣの双方に対してするとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "123",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取り消すことができる行為の相手方が確定している場合には、その取消し又は追認は、相手方に対する意思表示によってする。",
+     "text_sha256": "f0870cab524529116c2b563ab3fe4d28ffa550ed6cdf04dfdc2437263c88a6b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "相手方に対する意思表示について第三者が詐欺を行った場合においては、相手方がその事実を知り、又は知ることができたときに限り、その意思表示を取り消すことができる。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q02-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q02-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。行為の時に制限行為能力者であった者は、現に利益を受けている限度で返還すれば足り（121条の2第3項）、賭博で費消した分は現存利益がないと解されている。",
+   "body": "無効（取消しにより初めから無効とみなされる場合を含む）な行為に基づいて給付を受けた者は原状回復義務を負うが（121条の2第1項）、「行為の時に制限行為能力者であった者についても、同様とする」として、現に利益を受けている限度で返還すれば足りるとされる（同条3項）。借入金を生活費に充てたときは、その分の出費を免れているので利益が現存するとされるが、賭博で浪費したときは利益は現存しないと解されている。全額を返還する義務を負うとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "121_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "無効な行為に基づく債務の履行として給付を受けた者は、相手方を原状に復させる義務を負う。",
+     "text_sha256": "0061cabee95b0389fc792cfac896ca2027ec591fadba96b926820f32252309c2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "121_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "行為の時に意思能力を有しなかった者は、その行為によって現に利益を受けている限度において、返還の義務を負う。行為の時に制限行為能力者であった者についても、同様とする。",
+     "text_sha256": "0061cabee95b0389fc792cfac896ca2027ec591fadba96b926820f32252309c2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。浪費の場合に現存利益がないとするのは解釈による説明（判例あり（要確認））。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q02-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minpo-q02-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。取消権は「追認をすることができる時から」5年間行使しないと時効で消滅し、行為の時からは20年である（126条）。",
+   "body": "「取消権は、追認をすることができる時から五年間行使しないときは、時効によって消滅する。行為の時から二十年を経過したときも、同様とする」（126条）。5年の起算点は、取消しの原因となっていた状況が消滅するなどして追認をすることができるようになった時である。行為をした時から5年とする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "126",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取消権は、追認をすることができる時から五年間行使しないときは、時効によって消滅する。行為の時から二十年を経過したときも、同様とする。",
+     "text_sha256": "08de5b54256bc4f0b89a0a490a8145e89df5e954fdb6483343fd3e9824268e3e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2022-minpo-q02-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,202 @@
+{
+ "question_id": "yobi-2020-minpo-q05",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q05-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。抵当権は、債務者及び抵当権設定者に対しては、その担保する債権と同時でなければ時効によって消滅しない（396条）。",
+   "body": "「抵当権は、債務者及び抵当権設定者に対しては、その担保する債権と同時でなければ、時効によって消滅しない」（396条）。被担保債権が存続しているのに、債務者兼設定者Ａが抵当権だけの時効消滅を主張するのは信義に反するからである。20年の経過で抵当権が時効消滅したと主張できるとする点が誤り（第三取得者などとの関係では、抵当権が独立して20年の時効にかかると解されている）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "396",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権は、債務者及び抵当権設定者に対しては、その担保する債権と同時でなければ、時効によって消滅しない。",
+     "text_sha256": "d330c0dc3719af4aa5dc5ee673ebe89c980e34a878e2e3ba4c33f507e880e2ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。第三取得者との関係の説明は解釈による補足。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q05-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q05-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。所有権と他の物権が同一人に帰属しても、その物が第三者の権利の目的であるときは、他の物権は混同で消滅しない（179条1項ただし書）。",
+   "body": "「同一物について所有権及び他の物権が同一人に帰属したときは、当該他の物権は、消滅する。ただし、その物又は当該他の物権が第三者の権利の目的であるときは、この限りでない」（179条1項）。甲には後順位のＣの抵当権が設定されているので、第一順位の抵当権者Ｂが甲を買い受けても、Ｂの抵当権は消滅しない。消滅すると、後順位のＣが不当に順位上昇の利益を得てしまうからである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同一物について所有権及び他の物権が同一人に帰属したときは、当該他の物権は、消滅する。ただし、その物又は当該他の物権が第三者の権利の目的であるときは、この限りでない。",
+     "text_sha256": "0222497d61a192fd618b225a5ea9c051766d7c0b9da1f448681d24e57d2fc848",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-minpo-q05-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q05-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。強制競売で不動産が売却されると、その不動産上の抵当権は売却により消滅する（民事執行法の消除主義）。",
+   "body": "不動産の強制競売では、売却によって、その不動産の上に存する抵当権などの担保権は消滅するとされている（民事執行法による、いわゆる消除主義）。抵当権者は、売却代金から順位に従って配当を受けることになる。一般債権者の申立てによる強制競売で甲が売却されたときも、Ｂの抵当権は消滅する。",
+   "citations": [],
+   "notes": [
+    "民事執行法の条文は保存していないため、文言は引用していない（同法59条1項とされる）。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q05-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q05-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、譲渡担保権者は、担保権を実行して確定的に所有権を取得しない限り、抵当権消滅請求（旧法の滌除）をすることができる第三取得者に当たらないとする。",
+   "body": "「抵当不動産の第三取得者は、第三百八十三条の定めるところにより、抵当権消滅請求をすることができる」（379条）。判例（最判平成7年11月10日）は、旧法の滌除について、譲渡担保権者は、担保権を実行して確定的に抵当不動産の所有権を取得しない限り、滌除権者である第三取得者に当たらないとした。設定者は清算が終わるまで受け戻すことができ、譲渡担保権者はまだ確定的な所有者ではないからである。この考え方は抵当権消滅請求にも当てはまると解されており、実行前のＤは抵当権消滅請求をすることができない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "379",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当不動産の第三取得者は、第三百八十三条の定めるところにより、抵当権消滅請求をすることができる。",
+     "text_sha256": "797059bccb3e4ef311480cb3af01b57b8faf5cacb525898604a32f570d208842",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "譲渡担保権者と滌除（抵当権消滅請求）",
+     "court": "最高裁判所",
+     "date": "平成7年11月10日",
+     "holding": "譲渡担保権者は、担保権を実行して確定的に抵当不動産の所有権を取得しない限り、民法378条（平成15年改正前）の滌除権者たる第三取得者には該当せず、抵当権を滌除することができない（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/376",
+      "https://www.courts.go.jp/app/files/hanrei_jp/056/057056_hanrei.pdf"
+     ]
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。判例は滌除の事案で、抵当権消滅請求に同じ考え方を及ぼすのは解釈による。"
+   ],
+   "id": "exp-yobi-2020-minpo-q05-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q05-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。抵当権は目的物の滅失によって消滅する。建物が焼失すれば、Ａの故意によるかどうかにかかわらず、建物の抵当権は消滅する。",
+   "body": "物権は目的物が滅失すれば消滅するので、抵当権の目的である建物が焼失すれば、抵当権も消滅する。焼失がＡの故意によるものでも同じである。この場合、抵当権者Ｂは、Ａの受けるべき保険金などがあれば物上代位によって権利を行使できる（372条による304条の準用）ほか、債務者が担保を滅失させたことにより期限の利益を失わせることができ（137条2号）、不法行為に基づく損害賠償を請求することも考えられる。消滅しないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "137",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者が担保を滅失させ、損傷させ、又は減少させたとき。",
+     "text_sha256": "0cceead8ba36e656b6a95b423564e0babc9ad5738b3007fc4da3d90645a82a04",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "372",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百九十六条、第三百四条及び第三百五十一条の規定は、抵当権について準用する。",
+     "text_sha256": "8425da3902ddc690c551ae65b8a6e0edd78d749eea824d1e2c5ab95e4e8b7d7c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "304",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "先取特権は、その目的物の売却、賃貸、滅失又は損傷によって債務者が受けるべき金銭その他の物に対しても、行使することができる。",
+     "text_sha256": "b1d11df2a52bc9d5d50b2080a81c4513959c0d738f906fbf8ec831ddcca44d4d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。目的物の滅失による物権の消滅は解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q05-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

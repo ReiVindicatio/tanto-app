@@ -1,0 +1,209 @@
+{
+ "question_id": "yobi-2020-minpo-q03",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q03-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、他人の土地上の建物を取得し自らの意思で所有権取得の登記をした者は、建物を譲渡しても登記名義を保有する限り、建物収去・土地明渡しの義務を免れないとする。",
+   "body": "土地所有権に基づく建物収去土地明渡請求の相手方は、原則として現実に建物を所有して土地を占拠している者である。しかし、判例（最判平成6年2月8日）は、他人の土地上の建物の所有権を取得した者が自らの意思に基づいて所有権取得の登記を経由した場合には、たとい建物を他に譲渡したとしても、引き続きその登記名義を保有する限り、土地所有者に対し、譲渡による建物所有権の喪失を主張して建物収去・土地明渡しの義務を免れることはできないとする。Ｂは自ら保存登記をし、Ｃへの移転登記がされていないので、ＡはＢに請求できる。",
+   "citations": [],
+   "cases": [
+    {
+     "name": "建物の登記名義人と建物収去土地明渡義務",
+     "court": "最高裁判所",
+     "date": "平成6年2月8日",
+     "holding": "他人の土地上の建物の所有権を取得した者が自らの意思に基づいて所有権取得の登記を経由した場合には、たとい建物を他に譲渡したとしても、引き続き右登記名義を保有する限り、土地所有者に対し、右譲渡による建物所有権の喪失を主張して建物収去・土地明渡しの義務を免れることはできない（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedent_questions/437"
+     ]
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "id": "exp-yobi-2020-minpo-q03-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q03-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、借地上の建物を他人名義（同居の親族名義を含む）で登記しても、借地権の対抗要件である「登記されている建物」に当たらないとする。",
+   "body": "「借地権は、その登記がなくても、土地の上に借地権者が登記されている建物を所有するときは、これをもって第三者に対抗することができる」（借地借家法10条1項）。判例（最大判昭和41年4月27日）は、借地上に建物を所有していても、他人名義で所有権保存登記をした場合は、それが同居する親族の名義であっても、ここでいう登記に当たらず、借地権を第三者に対抗できないとする。Ｂが妻Ｃ名義で登記した本肢では、Ｂは賃借権を土地の譲受人Ｄに対抗できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "借地借家法",
+     "article": "10",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "借地権は、その登記がなくても、土地の上に借地権者が登記されている建物を所有するときは、これをもって第三者に対抗することができる。",
+     "text_sha256": "a4786e8d1cb48c4841b9c170218002aac9b3f3cb3d4f6257dc9e1634d609a285",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B9%9D%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "他人名義の建物登記と借地権の対抗力",
+     "court": "最高裁判所大法廷",
+     "date": "昭和41年4月27日",
+     "holding": "土地賃借人は、借地上に建物を所有していても、他人名義で所有権保存登記をした場合には、たとえそれが同居する親族の名義であっても、借地権を第三者に対抗することができない（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/861"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は旧建物保護法1条の事案。現行の借地借家法10条1項についても同様に解されている。"
+   ],
+   "id": "exp-yobi-2020-minpo-q03-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q03-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。地役権は要役地の所有権とともに移転し（281条1項）、要役地の所有権移転登記があれば、地役権の移転も第三者に対抗できる。",
+   "body": "地役権は「要役地…の所有権に従たるものとして、その所有権とともに移転」する（281条1項）。判例（大判大正13年3月17日）は、要役地の移転について登記があれば、地役権移転の登記がなくても、地役権の移転を第三者に対抗することができるとする。本肢では地役権設定登記もあり、ＡからＣへの所有権移転登記がされているので、Ｃは地役権を承役地の所有者Ｂに対抗できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "281",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地役権は、要役地（地役権者の土地であって、他人の土地から便益を受けるものをいう。以下同じ。）の所有権に従たるものとして、その所有権とともに移転し、又は要役地について存する他の権利の目的となるものとする。",
+     "text_sha256": "059dd1274a7043b9670f56f239ad797d86e05c52cecb73afe964abf81ab810bc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "要役地の移転と地役権の対抗",
+     "court": "大審院",
+     "date": "大正13年3月17日",
+     "holding": "地役権が設定されている要役地を譲り受けた者は、当該要役地の移転について登記があれば、地役権移転の登記がなくても地役権の移転を第三者に対抗することができる（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/468"
+     ]
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "id": "exp-yobi-2020-minpo-q03-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q03-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、不動産の賃借人は、特約がない限り、賃貸人に対して賃貸借の登記を請求する権利を有しないとする。",
+   "body": "「不動産の賃貸借は、これを登記したときは、その不動産について物権を取得した者その他の第三者に対抗することができる」（605条）。しかし、賃借権は債権であり、判例（大判大正10年7月11日）は、不動産の賃借人は、特約のない限り、賃貸人に対して賃貸借の登記を請求する権利を有しないとする。建物の賃借人は、引渡しを受ければ借地借家法により対抗力を得られる（同法31条）が、登記請求権が当然に生ずるわけではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "605",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産の賃貸借は、これを登記したときは、その不動産について物権を取得した者その他の第三者に対抗することができる。",
+     "text_sha256": "3207df7c55bcfef11acab299d03dd958e76f23a440d13531617ebe50e23672df",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "借地借家法",
+     "article": "31",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "建物の賃貸借は、その登記がなくても、建物の引渡しがあったときは、その後その建物について物権を取得した者に対し、その効力を生ずる。",
+     "text_sha256": "71a7ab46fa2f761ed27a658cef916a8d39b6aaaa0cc9878ff8d7f37c470b72fc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B9%9D%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "賃借人の登記請求権",
+     "court": "大審院",
+     "date": "大正10年7月11日",
+     "holding": "不動産の賃借人は、特約のない限り、賃貸人に対して賃貸借の登記を請求する権利を有しない（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/704"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2020-minpo-q03-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minpo-q03-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。被担保債権が消滅した先順位抵当権の登記が残っていれば、後順位抵当権者は自己の抵当権に基づいてその抹消を請求できると解されている。",
+   "body": "抵当権は被担保債権の消滅によって消滅する（付従性）。消滅した第一順位の抵当権の登記が残っていると、第二順位の抵当権者は順位上昇の利益を登記上実現できず、抵当権の行使を妨げられる。そのため、後順位抵当権者は、自己の抵当権に基づく妨害排除請求として、先順位抵当権者に対し、その抵当権設定登記の抹消を請求できると解されている（判例あり（要確認））。",
+   "citations": [],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。解釈による説明。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2020-minpo-q03-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

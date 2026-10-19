@@ -1,0 +1,236 @@
+{
+ "question_id": "yobi-2021-minpo-q07",
+ "prompt_version": "explain-v1",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q07-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。被保全債権が行為の前の原因に基づいて生じたことを要するのは詐害行為取消請求（424条3項）であり、債権者代位権（423条）にはこの要件はない。",
+   "body": "債権者代位権の要件は、自己の債権を保全するため必要があること、被保全債権の期限が到来していること（保存行為を除く）、強制執行により実現できる債権であることなどである（423条1項〜3項）。これに対し、「債権者は、その債権が第一項に規定する行為の前の原因に基づいて生じたものである場合に限り」請求できるという要件は、詐害行為取消請求について定められたものである（424条3項）。債権者代位権の要件とする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者は、自己の債権を保全するため必要があるときは、債務者に属する権利（以下「被代位権利」という。）を行使することができる。",
+     "text_sha256": "bd8ef03d0c0f16adfbbafda7db96a6bd402b3335529029bed09a72be6c3b987a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権者は、その債権の期限が到来しない間は、被代位権利を行使することができない。ただし、保存行為は、この限りでない。",
+     "text_sha256": "bd8ef03d0c0f16adfbbafda7db96a6bd402b3335529029bed09a72be6c3b987a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "債権者は、その債権が強制執行により実現することのできないものであるときは、被代位権利を行使することができない。",
+     "text_sha256": "bd8ef03d0c0f16adfbbafda7db96a6bd402b3335529029bed09a72be6c3b987a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "債権者は、その債権が第一項に規定する行為の前の原因に基づいて生じたものである場合に限り、同項の規定による請求（以下「詐害行為取消請求」という。）をすることができる。",
+     "text_sha256": "22d988d8231e843109818b8d2f93e8f2bb2ba972e98650a949757943ef28191d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-minpo-q07-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q07-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。差押えを禁じられた権利は、債権者代位権の対象にならない（423条1項ただし書）。",
+   "body": "債権者は債務者に属する権利を代位行使できるが、「ただし、債務者の一身に専属する権利及び差押えを禁じられた権利は、この限りでない」（423条1項）。債権者代位権は強制執行の準備としての責任財産の保全の制度なので、差押えが禁じられた権利は対象から外されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、債務者の一身に専属する権利及び差押えを禁じられた権利は、この限りでない。",
+     "text_sha256": "bd8ef03d0c0f16adfbbafda7db96a6bd402b3335529029bed09a72be6c3b987a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q07-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q07-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。債権者は、被代位権利の行使に係る訴えを提起したときは、遅滞なく債務者に訴訟告知をしなければならない（423条の6）。",
+   "body": "「債権者は、被代位権利の行使に係る訴えを提起したときは、遅滞なく、債務者に対し、訴訟告知をしなければならない」（423条の6）。代位訴訟の判決の効力は債務者にも及ぶので、債務者に手続に関与する機会を与える趣旨である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423_6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者は、被代位権利の行使に係る訴えを提起したときは、遅滞なく、債務者に対し、訴訟告知をしなければならない。",
+     "text_sha256": "c38459ebc939c45bcd1dbcf98e2a8d5129e63e5e42e46b6fa84069c72cc3a492",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は一意性（uniqueness）による導出。趣旨の部分は解釈による補足。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q07-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q07-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、金銭債権の債権者は、債務者が無資力のとき、債務者が第三者に対して負う債務の消滅時効を、債務者に代位して援用できるとする。",
+   "body": "時効は当事者が援用しなければ裁判の基礎にできない（145条）。判例（最判昭和43年9月26日）は、金銭債権の債権者は、その債務者が他の債権者に対して負担する債務について消滅時効を援用しうる地位にあるのにこれを援用しない場合、債務者の資力が自己の債権の弁済を受けるについて十分でないときは、自己の債権を保全するに必要な限度で、債務者に代位して他の債権者に対する債務の消滅時効を援用できるとする（423条1項）。代位行使できないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "145",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効は、当事者（消滅時効にあっては、保証人、物上保証人、第三取得者その他権利の消滅について正当な利益を有する者を含む。）が援用しなければ、裁判所がこれによって裁判をすることができない。",
+     "text_sha256": "e5fa226ad26d710e216e9e61b648d93464274a60e523576250a29d3094a91a4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者は、自己の債権を保全するため必要があるときは、債務者に属する権利（以下「被代位権利」という。）を行使することができる。",
+     "text_sha256": "bd8ef03d0c0f16adfbbafda7db96a6bd402b3335529029bed09a72be6c3b987a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "消滅時効の援用権の代位行使",
+     "court": "最高裁判所",
+     "date": "昭和43年9月26日",
+     "holding": "金銭債権の債権者は、債務者が他の債権者に対して負担する債務の消滅時効を援用しうる地位にあるのにこれを援用しない場合、債務者の資力が自己の債権の弁済を受けるについて十分でないときは、自己の債権を保全するに必要な限度で、債務者に代位して消滅時効を援用することができる（要約）。",
+     "verification": "searched",
+     "verified_urls": [
+      "https://law-lib.jp/subjects/2/precedents/313"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2021-minpo-q07-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minpo-q07-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。債権者が被代位権利を行使しても、債務者は自ら取立てその他の処分をすることを妨げられない（423条の5）。",
+   "body": "「債権者が被代位権利を行使した場合であっても、債務者は、被代位権利について、自ら取立てその他の処分をすることを妨げられない」（423条の5前段）。債権者が行使の事実を債務者に通知した場合でも同じである。2017年改正前は、通知後は債務者の処分が制限されると解されていたが、改正でこの扱いが改められた。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423_5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が被代位権利を行使した場合であっても、債務者は、被代位権利について、自ら取立てその他の処分をすることを妨げられない。",
+     "text_sha256": "fbe1117303ceee1bfb2ede34aab3463821ca492bde345a3017910d78b75cf86d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "公式の○×は慣行（convention）による導出。改正前の扱いは解釈による補足。"
+   ],
+   "cases": [],
+   "id": "exp-yobi-2021-minpo-q07-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
