@@ -36,7 +36,22 @@ main {
   flex: 1;
 }
 
+.authbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.authbar button.small {
+  padding: 4px 10px;
+  font-size: 0.85rem;
+}
+
 .appbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
   padding: 12px 0;
   border-bottom: 1px solid var(--line);
   margin-bottom: 16px;

@@ -8,14 +8,20 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "e2e": "playwright test"
+    "e2e": "playwright test",
+    "e2e:sync": "VITE_AUTH_MODE=test vite build && playwright test -c playwright.sync.config.ts",
+    "typecheck:worker": "tsc -p worker/tsconfig.json"
   },
   "dependencies": {
+    "@firebase/app": "^0.16.2",
+    "@firebase/auth": "^1.13.6",
+    "jose": "^6.2.12",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "ts-fsrs": "^5.4.2"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261019.1",
     "@playwright/test": "^1.64.1",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",

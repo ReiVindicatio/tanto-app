@@ -4,6 +4,6 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   test: {
-    include: ["src/**/*.test.ts"], // e2e/ は Playwright で流す
+    include: ["src/**/*.test.ts", "worker/**/*.test.ts"], // e2e/ は Playwright で流す
   },
 });

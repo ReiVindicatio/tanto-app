@@ -25,12 +25,12 @@
 | T006 正誤訂正・採点上の取扱い | 完了（予備16年度、法律科目の該当なし） |
 | T014 要確認の肢のレビュー運用 | 完了（R06 問5アは○として戻した） |
 | T002 公開（デプロイ） | 完了（https://tantan.reivindicatio0321.workers.dev/ ） |
-| T003 ログインと端末間同期 | **実装中**（Firebase Auth＋Workers の API＋D1：決定012。ユーザーが Firebase と D1 を作成中） |
+| T003 ログインと端末間同期 | **実装中**（API・同期・テストはできた。D1 の Database ID 待ち。それまで push しない） |
 
 ## 次の一手（提案）
 
-1. **T003 の実装**：設定値（firebaseConfig・D1 の ID）が届く前に、API・同期・テストを書く
+1. **T003**：D1 の Database ID を受け取り、`app/wrangler.jsonc` の仮の ID を差し替え → 本番の D1 にマイグレーション → push → スマホと PC で同期を確かめる
 
 ## ❓ ユーザーに確認したいこと
 
-1. Firebase の firebaseConfig と D1 の Database ID（手順は T003 のチケット）
+1. D1 の Database ID（Cloudflare → ストレージとデータベース → D1 → 作成、名前 tantan）

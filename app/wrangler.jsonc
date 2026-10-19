@@ -1,10 +1,28 @@
-// Cloudflare Workers（静的なファイルの配信）の設定（T002）。ビルドは npm run build、配信するのは dist/
+// Cloudflare Workers の設定（T002・T003）。
+// /api/* は Worker（worker/index.ts）が処理し、それ以外は dist/ の静的ファイル（アプリ）を返す。
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "tantan",
+  "main": "worker/index.ts",
   "compatibility_date": "2026-10-19",
   "assets": {
     "directory": "./dist",
-    "not_found_handling": "single-page-application"
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "tantan",
+      "database_id": "00000000-0000-0000-0000-000000000000", // TODO(T003)：ユーザーが作った D1 の ID に差し替える
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": {
+    // Firebase の ID トークンの検証に使う（秘密ではない）
+    "FIREBASE_PROJECT_ID": "tantan-adce9",
+    // 本番。テスト用ログイン（AUTH_MODE=test）は手元の開発環境でだけ --var で渡す
+    "ENVIRONMENT": "production"
   }
 }

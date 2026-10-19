@@ -64,10 +64,24 @@ export function replay(log: Answer[]): LearningState {
 
 let store: RecordStore | null = null;
 let state: LearningState = emptyState();
+const listeners = new Set<() => void>();
 
 export async function initLearning(s: RecordStore): Promise<void> {
   store = s;
   state = replay(await s.load());
+}
+
+/** 保存先から読み直して状態を作り直す（同期でサーバーから回答を受け取ったとき・ログアウトのとき。T003） */
+export async function reloadLearning(): Promise<void> {
+  if (!store) return;
+  state = replay(await store.load());
+  listeners.forEach((cb) => cb());
+}
+
+/** 学習の状態が変わったら呼ぶ（画面の再描画用）。登録を解く関数を返す */
+export function onLearningChange(cb: () => void): () => void {
+  listeners.add(cb);
+  return () => listeners.delete(cb);
 }
 
 export function currentState(): LearningState {
@@ -78,5 +92,6 @@ export function currentState(): LearningState {
 export function recordAnswer(statementId: string, isCorrect: boolean, now = new Date()): void {
   const a: Answer = { id: newAnswerId(), s: statementId, ok: isCorrect, at: now.toISOString() };
   apply(state, a);
+  listeners.forEach((cb) => cb());
   store?.append(a).catch((e) => console.error("回答を保存できませんでした", e));
 }

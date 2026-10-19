@@ -7,6 +7,10 @@ import { applyFilter, getHistory, summarize, type Filter } from "./history";
 import { MINPO_REFORM_YEAR } from "./LawNote";
 import { shuffle } from "./shuffle";
 import { buildSession, dueSummary, NEW_PER_DAY } from "./srs";
+import AuthBar from "./AuthBar";
+import type { AuthClient } from "./auth";
+import type { SyncedStore } from "./sync";
+import { onLearningChange } from "./learning";
 
 type Screen =
   | { kind: "home" }
@@ -38,7 +42,10 @@ function merge(sets: DataSet[]): DataSet {
 
 const FILTER_LABELS: Record<Filter, string> = { all: "すべて", unanswered: "未回答だけ", wrong: "前回まちがえたものだけ" };
 
-export default function App() {
+export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedStore }) {
+  // 同期でサーバーから記録を受け取ったら、ホームの集計を描き直す
+  const [, setVersion] = useState(0);
+  useEffect(() => onLearningChange(() => setVersion((v) => v + 1)), []);
   const [sets, setSets] = useState<SetInfo[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [screen, setScreen] = useState<Screen>({ kind: "home" });
@@ -96,6 +103,7 @@ export default function App() {
         <button className="link" onClick={home}>
           短答一問一答<span className="muted">（仮称・非公式）</span>
         </button>
+        {auth && sync && <AuthBar auth={auth} sync={sync} />}
       </header>
       <main>
         {screen.kind === "home" && (

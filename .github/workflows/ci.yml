@@ -30,10 +30,15 @@ jobs:
           cache: npm
           cache-dependency-path: app/package-lock.json
       - run: npm ci
+      - run: npm run typecheck:worker
       - run: npm run build
       - run: npm test
       - run: npx playwright install --with-deps chromium
       - run: npm run e2e
+        env:
+          CI: "true"
+      # 同期の E2E（T003）：テスト用ログインでビルドし、wrangler dev（Worker＋手元の D1）で流す
+      - run: npm run e2e:sync
         env:
           CI: "true"
       - uses: actions/upload-artifact@v4

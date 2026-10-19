@@ -26,6 +26,8 @@ python3 -m unittest discover -s pipeline/tests                    # パイプラ
 python3 pipeline/regen.py && git diff --exit-code --stat data/ app/public/data/ reports/   # パイプラインの回帰（作り直して差分なし）
 cd app && npm test                         # 単体テスト（Vitest）
 cd app && npm run build && npm run e2e     # E2E（Playwright。初回は npx playwright install chromium）
+cd app && npm run e2e:sync                 # 同期の E2E（テスト用ログインでビルドし、wrangler dev＋手元の D1 で流す）
+cd app && npm run typecheck:worker         # API（Worker）の型検査
 ```
 
 GitHub Actions（`.github/workflows/ci.yml`）が push ごとに同じものを流す。取り込みを足したら `pipeline/targets.json` に1行足す。

@@ -56,8 +56,13 @@ export class LocalStorageStore implements RecordStore {
   }
 
   async append(answer: Answer): Promise<void> {
+    await this.appendMany([answer]);
+  }
+
+  /** まとめて追記する（同期でサーバーから受け取った分など） */
+  async appendMany(answers: Answer[]): Promise<void> {
     const log = await this.load();
-    log.push(answer);
+    log.push(...answers);
     try {
       this.storage.setItem(LOG_KEY, JSON.stringify(log));
     } catch (e) {
@@ -65,6 +70,11 @@ export class LocalStorageStore implements RecordStore {
       console.error("回答ログを保存できませんでした", e);
       throw e;
     }
+  }
+
+  /** 端末の回答ログを消す（ログアウトのとき。T003） */
+  async clear(): Promise<void> {
+    this.storage.setItem(LOG_KEY, "[]");
   }
 
   /** 旧形式の記録があれば回答ログに変換し、旧キーは tanto.legacy.* に名前を変えて残す */

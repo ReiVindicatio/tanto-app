@@ -112,6 +112,20 @@ CREATE INDEX answers_user_received ON answers(user_id, received_at);
 2. 初めてログインしたとき、その端末にある記録をアカウントに引き継ぐ、でよいか
 3. Firebase の Web 用の設定値をリポジトリに置く（公開されても問題ない値）、でよいか
 
+## 実装の進み具合（2026-10-19）
+
+- ✅ API（`app/worker/`）：ID トークンの検証（`auth.ts`、jose）・保存処理（`repository.ts` の `AnswerRepository`、D1 版とメモリ版）・3つの API（`api.ts`）・入口（`index.ts`。本番でテスト用ログインが有効なら API を止める）・D1 のマイグレーション（`app/migrations/0001_answers.sql`）
+- ✅ アプリ：ログイン（`auth.ts`。Firebase の部品 `@firebase/app`・`@firebase/auth` だけを使う）・API の呼び出し（`api.ts`）・同期（`sync.ts` の `SyncedStore`）・ヘッダーのログインと同期の状態（`AuthBar.tsx`）・Firebase の設定値（`firebase-config.ts`、プロジェクト `tantan-adce9`）
+- ✅ テスト：単体 37件（API 9件・Worker の入口 3件・同期 6件を追加）、同期の E2E 2件（`npm run e2e:sync`：wrangler dev＋手元の D1）、既存の E2E 8件、パイプラインの回帰・単体。CI にも追加
+- ⏳ D1 の Database ID（ユーザーが作成中）→ `app/wrangler.jsonc` の仮の ID を差し替え、マイグレーションを本番の D1 に当て、push
+- ⏳ 本番で、スマホと PC で同期を確かめる
+
+### 実装中に見つけて直したこと
+
+- `npm audit` で、一式の `firebase` に含まれる Firestore 経由の `@grpc/grpc-js` に脆弱性（高）。ログインに必要な部品（`@firebase/app`・`@firebase/auth`）だけを入れる形にして解消（ユーザーと合意：案A）
+- 同期の競合：終わりかけの同期に新しい呼び出しが相乗りして、ログイン直後の送信が捨てられることがあった（単体テストで発見）。呼び出しのたびに「呼んだ後に始まる同期」を保証する形に直した
+- ログインしていないときも未送信の箱に入れていて、端末に回答を二重に持っていた（E2E で発見）。ログインしていないときは箱に入れないようにした
+
 ## 完了条件
 
 - スマホと PC で同じ Google アカウントにログインし、片方で解いた記録がもう片方の履歴・「今日の復習」に反映される
