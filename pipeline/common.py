@@ -29,6 +29,8 @@ GROUP_IDS = {
     "一般教養科目": "kyoyo",
     # 司法試験（H27 以降）は科目ごとのファイル
     "憲法": "kenpo", "民法": "minpo", "刑法": "keiho",
+    # 司法試験（H23〜H26）は科目系ごとのファイル（科目の見出しがない。pipeline/subject_ranges.json で分ける）
+    "公法系科目": "koho", "民事系科目": "minjikei", "刑事系科目": "keijikei",
 }
 
 

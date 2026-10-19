@@ -1,6 +1,6 @@
 // 今日の○問（T022）。決まった数の肢を、復習 → まちがえた → 新規 → おさらい の順に選ぶ。
 // カードの状態・履歴は回答ログから作った状態（learning.ts）を読むだけ。FSRS という言葉は画面に出さない
-import { currentState, subjectOf } from "./learning";
+import { currentState, localDate, subjectOf } from "./learning";
 import { shuffle } from "./shuffle";
 
 export type DailyKind = "due" | "wrong" | "fresh" | "again";
@@ -34,16 +34,19 @@ export function buildDaily<T extends Item>(
 ): { cards: T[]; counts: Record<DailyKind, number> } {
   const { cards: cardState, history } = currentState();
   const answered = (c: T) => history.has(c.id);
+  // 今日答えた肢は、まちがえた・おさらいの枠でも今日はもう出さない（不正解は翌日の復習で出る。T037）
+  const today = localDate(now);
+  const notToday = (c: T) => localDate(new Date(history.get(c.id)!.at)) !== today;
   const due = pool
     .filter((c) => cardState.has(c.id) && cardState.get(c.id)!.due <= now)
     .sort((a, b) => cardState.get(a.id)!.due.getTime() - cardState.get(b.id)!.due.getTime());
   const dueIds = new Set(due.map((c) => c.id));
   const wrong = pool
-    .filter((c) => answered(c) && !history.get(c.id)!.last && !dueIds.has(c.id))
+    .filter((c) => answered(c) && !history.get(c.id)!.last && !dueIds.has(c.id) && notToday(c))
     .sort((a, b) => history.get(b.id)!.at.localeCompare(history.get(a.id)!.at));
   const fresh = interleaveBySubject(pool.filter((c) => !answered(c)));
   const again = pool
-    .filter((c) => answered(c) && history.get(c.id)!.last && !dueIds.has(c.id))
+    .filter((c) => answered(c) && history.get(c.id)!.last && !dueIds.has(c.id) && notToday(c))
     .sort((a, b) => history.get(a.id)!.at.localeCompare(history.get(b.id)!.at));
 
   const chosen: T[] = [];

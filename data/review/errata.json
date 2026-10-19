@@ -867,6 +867,381 @@
    }
   },
   "shiho": {
+   "2011": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省の結果ページ・短答式試験結果ページと結果PDF・試験の実施ページ・試験問題ページ・司法試験考査委員会議（短答式成績判定会議・最終及落判定会議）の議事要旨・その年の司法試験委員会会議の議事要旨（全回）を確認し、正答PDF 3本・短答式問題PDF 3本を再取得して sources/manifest.json の sha256 と一致することを確かめた。正答PDFの備考欄は部分点・順不同の注記のみで、解答欄の空欄・複数正解の表記がないことも確かめた）",
+    "result": "確認済み・該当なし（問題の誤記・訂正・採点上の取扱いはない。別件で、刑事系科目の試験時間不足による受験者301名への3点加算がある＝問題の扱いではない）",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji08_00030.html",
+      "title": "平成２３年新司法試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji08_00048.html",
+      "title": "平成２３年新司法試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000103956.pdf",
+      "title": "平成２３年短答式試験結果",
+      "what": "短答式試験結果PDF（全文を確認。注記・措置の記載がないか）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000075091.pdf",
+      "title": "平成２３年新司法試験論文式試験刑事系科目第２問について",
+      "what": "結果ページ・実施ページに掲載の告知PDF（本文を確認。論文式試験の問題の不適切な点についてで、短答式ではない）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000074976.pdf",
+      "title": "公法系科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないか、解答欄の空欄・複数正解の表記がないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000074977.pdf",
+      "title": "民事系科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないか、解答欄の空欄・複数正解の表記がないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000074978.pdf",
+      "title": "刑事系科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないか、解答欄の空欄・複数正解の表記がないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji08_00013.html",
+      "title": "平成２３年新司法試験の実施について",
+      "what": "試験の実施ページ（試験問題・告知へのリンクを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji08_00047.html",
+      "title": "平成２３年新司法試験問題",
+      "what": "試験問題のページ（短答式の問題PDFに訂正の告知・正誤表がないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000073969.pdf",
+      "title": "短答式試験 公法系科目（問題）",
+      "what": "問題PDF（再取得して manifest の sha256 と一致。正誤表・訂正の記載がないことを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000073970.pdf",
+      "title": "短答式試験 民事系科目（問題）",
+      "what": "問題PDF（再取得して manifest の sha256 と一致。正誤表・訂正の記載がないことを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000073971.pdf",
+      "title": "短答式試験 刑事系科目（問題）",
+      "what": "問題PDF（再取得して manifest の sha256 と一致。正誤表・訂正の記載がないことを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01800014.html",
+      "title": "平成２３年新司法試験考査委員会議 議事要旨・資料",
+      "what": "司法試験考査委員会議（短答式成績判定会議・最終及落判定会議）の議事要旨の一覧"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000083501.pdf",
+      "title": "平成２３年新司法試験考査委員会議（短答式成績判定会議）（平成２３年６月１日）",
+      "what": "議事要旨（全文を確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000083503.pdf",
+      "title": "平成２３年新司法試験考査委員会議（最終及落判定会議）（平成２３年９月７日）",
+      "what": "議事要旨（全文を確認。短答式の問題の扱いの事後決定がないか）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01700016.html",
+      "title": "司法試験委員会 第７４回会議（平成２３年６月１日）",
+      "what": "司法試験委員会会議のページ（短答式試験の合格に必要な成績の決定）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000095087.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認。あわせてこの年の司法試験委員会会議 第71回（平成23年1月28日）〜第80回（平成23年12月16日） の議事要旨を全回取得し、誤記・訂正・正答の取扱いの記載がないことを確認）"
+     }
+    ],
+    "findings": [],
+    "notes": [
+     {
+      "kind": "score_adjustment_not_question",
+      "subject": "刑事系科目",
+      "content": "4日目3時限目の短答式試験刑事系科目で、東京都試験地サンシャインシティ・コンベンションセンターTOKYOの試験室（受験者301名）において監督員が試験終了時刻の1分前に終了を告げ、適正な試験時間が確保されなかった。平成23年6月1日の新司法試験考査委員会議（短答式成績判定会議）で、同室の受験者全員に刑事系科目の得点として3点を加算することとし、新たに4名が合格に必要な成績に達して計5,654名に（同日の司法試験委員会第74回会議で決定。短答式試験結果PDF 000103956 の「５ 加点措置について」にも記載）。9月7日の最終及落判定会議で、加算により新たに総合点765点に達する者はいないと確認された。問題の誤記・正答の扱いではないため findings には入れない（どの問の正答も変わらない）",
+      "source_url": "https://www.moj.go.jp/content/000103956.pdf"
+     },
+     {
+      "kind": "out_of_scope_ronbun",
+      "subject": "刑事系科目",
+      "content": "平成23年6月6日 司法試験委員会「平成２３年新司法試験論文式試験刑事系科目第２問について」：論文式の問題文に不適切な点（逮捕②の逮捕者に関する情報不足）があり、いずれの読み方でも前提に応じて評価するとした。論文式試験のことで短答式の対象外",
+      "source_url": "https://www.moj.go.jp/content/000075091.pdf"
+     }
+    ]
+   },
+   "2012": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省の結果ページ・短答式試験結果ページと結果PDF・試験の実施ページ・試験問題ページ・司法試験考査委員会議（短答式成績判定会議・最終及落判定会議）の議事要旨・その年の司法試験委員会会議の議事要旨（全回）を確認し、正答PDF 3本・短答式問題PDF 3本を再取得して sources/manifest.json の sha256 と一致することを確かめた。正答PDFの備考欄は部分点・順不同の注記のみで、解答欄の空欄・複数正解の表記がないことも確かめた）",
+    "result": "確認済み・該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji08_00063.html",
+      "title": "平成２４年司法試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji08_00068.html",
+      "title": "平成２４年司法試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000098843.pdf",
+      "title": "平成２４年短答式試験結果",
+      "what": "短答式試験結果PDF（全文を確認。注記・措置の記載がないか）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000098848.pdf",
+      "title": "公法系科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないか、解答欄の空欄・複数正解の表記がないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000098849.pdf",
+      "title": "民事系科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないか、解答欄の空欄・複数正解の表記がないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000098850.pdf",
+      "title": "刑事系科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないか、解答欄の空欄・複数正解の表記がないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji08_00054.html",
+      "title": "平成２４年司法試験の実施について",
+      "what": "試験の実施ページ（試験問題・告知へのリンクを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji08_00067.html",
+      "title": "平成２４年司法試験問題",
+      "what": "試験問題のページ（短答式の問題PDFに訂正の告知・正誤表がないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000098332.pdf",
+      "title": "短答式試験 公法系科目（問題）",
+      "what": "問題PDF（再取得して manifest の sha256 と一致。正誤表・訂正の記載がないことを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000098333.pdf",
+      "title": "短答式試験 民事系科目（問題）",
+      "what": "問題PDF（再取得して manifest の sha256 と一致。正誤表・訂正の記載がないことを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000098334.pdf",
+      "title": "短答式試験 刑事系科目（問題）",
+      "what": "問題PDF（再取得して manifest の sha256 と一致。正誤表・訂正の記載がないことを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01800017.html",
+      "title": "平成２４年司法試験考査委員会議 議事要旨・資料",
+      "what": "司法試験考査委員会議（短答式成績判定会議・最終及落判定会議）の議事要旨の一覧"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000099362.pdf",
+      "title": "平成２４年司法試験考査委員会議（短答式成績判定会議）（平成２４年６月６日）",
+      "what": "議事要旨（全文を確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000103335.pdf",
+      "title": "平成２４年司法試験考査委員会議（最終及落判定会議）（平成２４年９月１０日）",
+      "what": "議事要旨（全文を確認。短答式の問題の扱いの事後決定がないか）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01700026.html",
+      "title": "司法試験委員会 第８３回会議（平成２４年６月６日）",
+      "what": "司法試験委員会会議のページ（短答式試験の合格に必要な成績の決定）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000099735.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認。あわせてこの年の司法試験委員会会議 第81回（平成24年1月18日）〜第89回（平成24年12月25日） の議事要旨を全回取得し、誤記・訂正・正答の取扱いの記載がないことを確認）"
+     }
+    ],
+    "findings": []
+   },
+   "2013": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省の結果ページ・短答式試験結果ページと結果PDF・試験の実施ページ・試験問題ページ・司法試験考査委員会議（短答式成績判定会議・最終及落判定会議）の議事要旨・その年の司法試験委員会会議の議事要旨（全回）を確認し、正答PDF 3本・短答式問題PDF 3本を再取得して sources/manifest.json の sha256 と一致することを確かめた。正答PDFの備考欄は部分点・順不同の注記のみで、解答欄の空欄・複数正解の表記がないことも確かめた）",
+    "result": "確認済み・該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji08_00079.html",
+      "title": "平成２５年司法試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji08_00083.html",
+      "title": "平成２５年司法試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000111530.pdf",
+      "title": "平成２５年短答式試験結果",
+      "what": "短答式試験結果PDF（全文を確認。注記・措置の記載がないか）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000111535.pdf",
+      "title": "公法系科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないか、解答欄の空欄・複数正解の表記がないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000111536.pdf",
+      "title": "民事系科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないか、解答欄の空欄・複数正解の表記がないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000111537.pdf",
+      "title": "刑事系科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないか、解答欄の空欄・複数正解の表記がないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji08_00071.html",
+      "title": "平成２５年司法試験の実施について",
+      "what": "試験の実施ページ（試験問題・告知へのリンクを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji08_00082.html",
+      "title": "平成２５年司法試験問題",
+      "what": "試験問題のページ（短答式の問題PDFに訂正の告知・正誤表がないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000111054.pdf",
+      "title": "短答式試験 公法系科目（問題）",
+      "what": "問題PDF（再取得して manifest の sha256 と一致。正誤表・訂正の記載がないことを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000111055.pdf",
+      "title": "短答式試験 民事系科目（問題）",
+      "what": "問題PDF（再取得して manifest の sha256 と一致。正誤表・訂正の記載がないことを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000111056.pdf",
+      "title": "短答式試験 刑事系科目（問題）",
+      "what": "問題PDF（再取得して manifest の sha256 と一致。正誤表・訂正の記載がないことを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01800018.html",
+      "title": "平成２５年司法試験考査委員会議 議事要旨・資料",
+      "what": "司法試験考査委員会議（短答式成績判定会議・最終及落判定会議）の議事要旨の一覧"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000112280.pdf",
+      "title": "平成２５年司法試験考査委員会議（短答式成績判定会議）（平成２５年６月５日）",
+      "what": "議事要旨（全文を確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000117179.pdf",
+      "title": "平成２５年司法試験考査委員会議（最終及落判定会議）（平成２５年９月９日）",
+      "what": "議事要旨（全文を確認。短答式の問題の扱いの事後決定がないか）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01700038.html",
+      "title": "司法試験委員会 第９２回会議（平成２５年６月５日）",
+      "what": "司法試験委員会会議のページ（短答式試験の合格に必要な成績の決定）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000111765.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認。あわせてこの年の司法試験委員会会議 第90回（平成25年3月19日）〜第98回（平成25年12月11日） の議事要旨を全回取得し、誤記・訂正・正答の取扱いの記載がないことを確認）"
+     }
+    ],
+    "findings": []
+   },
+   "2014": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省の結果ページ・短答式試験結果ページと結果PDF・試験の実施ページ・試験問題ページ・司法試験考査委員会議（短答式成績判定会議・最終及落判定会議）の議事要旨・その年の司法試験委員会会議の議事要旨（全回）を確認し、正答PDF 3本・短答式問題PDF 3本を再取得して sources/manifest.json の sha256 と一致することを確かめた。正答PDFの備考欄は部分点・順不同の注記のみで、解答欄の空欄・複数正解の表記がないことも確かめた）",
+    "result": "確認済み・該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji08_00099.html",
+      "title": "平成２６年司法試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji08_00101.html",
+      "title": "平成２６年司法試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000123385.pdf",
+      "title": "平成２６年短答式試験結果",
+      "what": "短答式試験結果PDF（全文を確認。注記・措置の記載がないか）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000123390.pdf",
+      "title": "公法系科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないか、解答欄の空欄・複数正解の表記がないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000123391.pdf",
+      "title": "民事系科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないか、解答欄の空欄・複数正解の表記がないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000123392.pdf",
+      "title": "刑事系科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないか、解答欄の空欄・複数正解の表記がないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji08_00086.html",
+      "title": "平成２６年司法試験の実施について",
+      "what": "試験の実施ページ（試験問題・告知へのリンクを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji08_00100.html",
+      "title": "平成２６年司法試験問題",
+      "what": "試験問題のページ（短答式の問題PDFに訂正の告知・正誤表がないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000123124.pdf",
+      "title": "短答式試験 公法系科目（問題）",
+      "what": "問題PDF（再取得して manifest の sha256 と一致。正誤表・訂正の記載がないことを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000123125.pdf",
+      "title": "短答式試験 民事系科目（問題）",
+      "what": "問題PDF（再取得して manifest の sha256 と一致。正誤表・訂正の記載がないことを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000123126.pdf",
+      "title": "短答式試験 刑事系科目（問題）",
+      "what": "問題PDF（再取得して manifest の sha256 と一致。正誤表・訂正の記載がないことを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01800019.html",
+      "title": "平成２６年司法試験考査委員会議 議事要旨・資料",
+      "what": "司法試験考査委員会議（短答式成績判定会議・最終及落判定会議）の議事要旨の一覧"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000124870.pdf",
+      "title": "平成２６年司法試験考査委員会議（短答式成績判定会議）（平成２６年６月４日）",
+      "what": "議事要旨（全文を確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001127637.pdf",
+      "title": "平成２６年司法試験考査委員会議（最終及落判定会議）（平成２６年９月８日）",
+      "what": "議事要旨（全文を確認。短答式の問題の扱いの事後決定がないか）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01700051.html",
+      "title": "司法試験委員会 第１０１回会議（平成２６年６月４日）",
+      "what": "司法試験委員会会議のページ（短答式試験の合格に必要な成績の決定）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000124820.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認。あわせてこの年の司法試験委員会会議 第99回（平成26年1月29日）〜第106回（平成26年11月5日） の議事要旨を全回取得し、誤記・訂正・正答の取扱いの記載がないことを確認）"
+     }
+    ],
+    "findings": []
+   },
    "2015": {
     "status": "checked",
     "checked_at": "2026-10-19",

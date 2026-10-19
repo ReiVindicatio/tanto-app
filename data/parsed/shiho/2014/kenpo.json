@@ -1,0 +1,2442 @@
+{
+ "source": {
+  "extracted": "data/extracted/司法試験/短答/H26-2014/公法系科目_問題.txt",
+  "path": "data/raw/司法試験/短答/H26-2014/公法系科目_問題.pdf",
+  "sha256": "2ed13281e29650979cc962376c2c47b058fe2195fb416698ba2dbaa969f39c34",
+  "source_url": "https://www.moj.go.jp/content/000123124.pdf"
+ },
+ "method": "parse_questions.py（決定的。行の連結と空白の圧縮のみ）",
+ "exam": {
+  "type": "shiho",
+  "year": 2014,
+  "era": "H26"
+ },
+ "group": "公法系科目",
+ "subject": "kenpo",
+ "section_line_range": [
+  9,
+  310
+ ],
+ "questions": [
+  {
+   "id": "shiho-2014-kenpo-q01",
+   "number": 1,
+   "points": 3,
+   "format": "true_false_each",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "「法の支配」の原理に関する次のアからウまでの各記述について，それぞれ正しい場合には１を，誤っている場合には２を選びなさい。（解答欄は，アからウの順に[№１］から［№３］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2014-kenpo-q01-a",
+     "label": "ア",
+     "text": "「法の支配」は，「人による支配」を排斥し，権力を「法」で拘束することによって国民の権利・自由を保障することを目的とする原理である。",
+     "line_range": [
+      13,
+      14
+     ],
+     "slot_no": 1
+    },
+    {
+     "id": "shiho-2014-kenpo-q01-b",
+     "label": "イ",
+     "text": "「法の支配」は，「法律による行政」の原理を意味するものであり，その法律自体の内容は問わない原理である。",
+     "line_range": [
+      15,
+      16
+     ],
+     "slot_no": 2
+    },
+    {
+     "id": "shiho-2014-kenpo-q01-c",
+     "label": "ウ",
+     "text": "日本国憲法も，憲法の最高法規性，基本的人権の保障，特別裁判所の設置の禁止，そして裁判所による違憲立法審査権等からして，「法の支配」の原理に立脚しているといえる。",
+     "line_range": [
+      17,
+      18
+     ],
+     "slot_no": 3
+    }
+   ],
+   "choices": [],
+   "answer_slots": [
+    {
+     "no": 1,
+     "statement_label": "ア"
+    },
+    {
+     "no": 2,
+     "statement_label": "イ"
+    },
+    {
+     "no": 3,
+     "statement_label": "ウ"
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    10,
+    20
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2014-kenpo-q02",
+   "number": 2,
+   "points": 2,
+   "format": "mark_combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "人権の享有主体に関する次のアからウまでの各記述について，正しいものには○，誤っているものには×を付した場合の組合せを，後記１から８までの中から選びなさい。（解答欄は，[№４］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2014-kenpo-q02-a",
+     "label": "ア",
+     "text": "外国人の場合には，我が国との関係が日本国民とは異なるので，日本国民に比べて裁判を受ける権利の保障の程度に差を設けることも許される。",
+     "line_range": [
+      24,
+      25
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q02-b",
+     "label": "イ",
+     "text": "法人は，現代社会におけるその役割の重要性からすると，全ての人権について，自然人と同程度の保障を受ける。",
+     "line_range": [
+      26,
+      27
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q02-c",
+     "label": "ウ",
+     "text": "未成年者は，精神的・肉体的に未成熟なことから，成人とは異なった特別の保護を必要とする場合があり，このような趣旨から，憲法は児童の酷使を禁止している。",
+     "line_range": [
+      28,
+      29
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 4,
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 7,
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 8,
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 4
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    21,
+    34
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2014-kenpo-q03",
+   "number": 3,
+   "points": 3,
+   "format": "true_false_each",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "法の下の平等に関する次のアからウまでの各記述について，最高裁判所の判例の趣旨に照らして，それぞれ正しい場合には１を，誤っている場合には２を選びなさい。（解答欄は，アからウの順に[№５］から［№７］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2014-kenpo-q03-a",
+     "label": "ア",
+     "text": "日本国籍は重要な法的地位であり，父母の婚姻による嫡出子たる身分の取得は子が自らの意思や努力によっては変えられない事柄であることから，こうした事柄により国籍取得に関して区別することに合理的な理由があるか否かについては，慎重な検討が必要である。",
+     "line_range": [
+      40,
+      42
+     ],
+     "slot_no": 5
+    },
+    {
+     "id": "shiho-2014-kenpo-q03-b",
+     "label": "イ",
+     "text": "非嫡出子という身分は子が自らの意思や努力によって変えることはできないから，嫡出性の有無による法定相続分の区別の合理性については，立法目的自体の合理性及び当該目的と手段との実質的関連性についてより強い合理性の存否を検討すべきである。",
+     "line_range": [
+      43,
+      45
+     ],
+     "slot_no": 6
+    },
+    {
+     "id": "shiho-2014-kenpo-q03-c",
+     "label": "ウ",
+     "text": "尊属殺という特別の罪を設け，刑罰を加重すること自体は直ちに違憲とはならないが，加重の程度が極端であって，立法目的達成の手段として甚だしく均衡を失し，これを正当化し得べき根拠を見出し得ないときは，その差別は著しく不合理なものとして違憲となる。",
+     "line_range": [
+      46,
+      48
+     ],
+     "slot_no": 7
+    }
+   ],
+   "choices": [],
+   "answer_slots": [
+    {
+     "no": 5,
+     "statement_label": "ア"
+    },
+    {
+     "no": 6,
+     "statement_label": "イ"
+    },
+    {
+     "no": 7,
+     "statement_label": "ウ"
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    35,
+    52
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2014-kenpo-q04",
+   "number": 4,
+   "points": 2,
+   "format": "mark_combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "憲法第１９条の保障する思想・良心の自由に関する次のアからウまでの各記述について，最高裁判所の判例の趣旨に照らして，正しいものには○，誤っているものには×を付した場合の組合せを，後記１から８までの中から選びなさい。（解答欄は，[№８］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2014-kenpo-q04-a",
+     "label": "ア",
+     "text": "企業が従業員に対して特定政党の党員か否かを調査することは，当該調査の必要性があり，不利益な取扱いのおそれがあることを示唆せず，強要にわたらない限り，許容される。",
+     "line_range": [
+      58,
+      59
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q04-b",
+     "label": "イ",
+     "text": "裁判所が謝罪広告を強制しても，単に事態の真相を告白し，陳謝の意を表明するにとどまる場合は，良心の自由を不当に制限することにはならない。",
+     "line_range": [
+      60,
+      61
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q04-c",
+     "label": "ウ",
+     "text": "中学校の内申書にその学校の全共闘を名乗って機関紙を発行したなどと記載した場合，それ自体は客観的な事実であっても，その記載に係る外部的行為から一定の思想信条を了知し得る。",
+     "line_range": [
+      62,
+      63
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 4,
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 7,
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 8,
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 8
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    54,
+    68
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2014-kenpo-q05",
+   "number": 5,
+   "points": 2,
+   "format": "mark_combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "信教の自由に関する次のアからウまでの各記述について，最高裁判所の判例の趣旨に照らして，正しいものには○，誤っているものには×を付した場合の組合せを，後記１から８までの中から選びなさい。（解答欄は，[№９］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2014-kenpo-q05-a",
+     "label": "ア",
+     "text": "生徒が自らの信仰に基づき，その通学する公立校で義務付けられている授業の履修を拒んだため不利益処分を受けることになっても，公教育が特例なしに実施されるべきであることに鑑み，その不利益の内容や程度に関わりなく，これを受忍しなければならない。",
+     "line_range": [
+      73,
+      75
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q05-b",
+     "label": "イ",
+     "text": "僧侶がその業務として遂行した行為の結果，刑法上の犯罪構成要件に該当することになった場合，その行為の目的や内容に宗教上の意義が認められるときは，たとえそれが著しく社会的妥当性を欠くものであっても，正当な業務行為として処罰の対象とはならない。",
+     "line_range": [
+      76,
+      78
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q05-c",
+     "label": "ウ",
+     "text": "宗教法人が法令に違反して著しく反社会的な行為を組織的に行ったため，裁判所から宗教法人法所定の解散命令を受け，法人格を失った宗教団体やその信者が宗教上の行為を継続する上で支障が生じても，その支障は間接的で事実上のものにとどまるので，やむを得ない。",
+     "line_range": [
+      79,
+      81
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 4,
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 7,
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 8,
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 9
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    69,
+    88
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2014-kenpo-q06",
+   "number": 6,
+   "points": 3,
+   "format": "classify_each",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "憲法第２１条第２項前段の「検閲」に関する次のアからウまでの各記述について，ｂの見解がａの見解の批判となっている場合には１を，そうでない場合には２を選びなさい。（解答欄は，アからウの順に[№10］から［№12］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2014-kenpo-q06-a",
+     "label": "ア",
+     "text": "ａ．名誉毀損のおそれのある記事を掲載した書籍の販売等を，裁判所の仮処分により事前差止めするのは，「検閲」に該当しない。ｂ．「検閲」の解釈に当たっては，過去に検閲が行政権により濫用されたという歴史的経緯を踏まえる必要がある。",
+     "line_range": [
+      94,
+      97
+     ],
+     "slot_no": 10
+    },
+    {
+     "id": "shiho-2014-kenpo-q06-b",
+     "label": "イ",
+     "text": "ａ．外国で出版済みの書籍について，輸入禁制品である「公安又は風俗を害すべき書籍」に該当するか否かを税関が検査するのは，「検閲」に該当しない。ｂ．「検閲」は，表現の自由に対する制約という側面と，この自由と一体をなす知る権利に対する制約という側面がある。",
+     "line_range": [
+      98,
+      101
+     ],
+     "slot_no": 11
+    },
+    {
+     "id": "shiho-2014-kenpo-q06-c",
+     "label": "ウ",
+     "text": "ａ．受刑者の逃走防止等を目的として，その発信しようとする信書の内容を刑務所長が事前に検査するのは，「検閲」に該当しない。ｂ．「検閲」の禁止は，国民に対する関係では，絶対的に禁止されるが，特殊の法律関係にある者については，異なる取扱いが認められる。",
+     "line_range": [
+      102,
+      105
+     ],
+     "slot_no": 12
+    }
+   ],
+   "choices": [],
+   "answer_slots": [
+    {
+     "no": 10,
+     "statement_label": "ア"
+    },
+    {
+     "no": 11,
+     "statement_label": "イ"
+    },
+    {
+     "no": 12,
+     "statement_label": "ウ"
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    90,
+    107
+   ],
+   "flags": [],
+   "classes": [
+    {
+     "value": 1,
+     "label": "ｂの見解がａの見解の批判となっている場合"
+    },
+    {
+     "value": 2,
+     "label": "そうでない場合"
+    }
+   ]
+  },
+  {
+   "id": "shiho-2014-kenpo-q07",
+   "number": 7,
+   "points": 2,
+   "format": "mark_combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "知る権利や表現の自由に関する次のアからウまでの各記述について，最高裁判所の判例の趣旨に照らして，正しいものには○，誤っているものには×を付した場合の組合せを，後記１から８までの中から選びなさい。（解答欄は，[№13］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2014-kenpo-q07-a",
+     "label": "ア",
+     "text": "表現の自由は，公立図書館に自己の著作物の収蔵を求めることまで保障するものではないから，公立図書館で閲覧に供された図書を職員が著作者の思想や信条を理由として廃棄することは，その思想，意見等を公衆に伝達する利益を不当に損なうものとはいえない。",
+     "line_range": [
+      112,
+      114
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q07-b",
+     "label": "イ",
+     "text": "放送事業者は，限られた電波の使用の免許を受けた者であって，公的な性格を有するものであり，放送による権利侵害や放送された事項が真実でないことが判明した場合に訂正放送が義務付けられているが，これは視聴者に対し反論権を認めるものではない。",
+     "line_range": [
+      115,
+      117
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q07-c",
+     "label": "ウ",
+     "text": "集団行動を法的に規制する場合，表現の自由の保障に可能な限り配慮する必要があるため，集団行動が行われ得るような場所を包括的に掲げたり，その行われる場所のいかんを問わないものとしたりすることは許されない。",
+     "line_range": [
+      118,
+      120
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 4,
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 7,
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 8,
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 13
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    108,
+    127
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2014-kenpo-q08",
+   "number": 8,
+   "points": 2,
+   "format": "mark_combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "学問の自由や大学の自治に関する次のアからウまでの各記述について，正しいものには○，誤っているものには×を付した場合の組合せを，後記１から８までの中から選びなさい。（解答欄は，[№14］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2014-kenpo-q08-a",
+     "label": "ア",
+     "text": "教授の自由の保障は，その沿革上，高等教育の場である大学に限られ，普通教育の場における教師の教授の自由は，学問の自由やその他の憲法上の自由として保障されているわけではない。",
+     "line_range": [
+      134,
+      136
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q08-b",
+     "label": "イ",
+     "text": "大学は，自治権を有し，その施設及び学生の管理に関して自主的に決定する権利を有することから，警察は，大学の了解なしには大学構内において令状に基づく犯罪捜査を行うことはできない。",
+     "line_range": [
+      137,
+      139
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q08-c",
+     "label": "ウ",
+     "text": "大学教授が授業中に行ったその所属学部の執行部への批判を理由として，当該学部が当該教授の授業開講を認めない措置を採るような場合には，学問の自由と大学の自治とが対立的な関係に立つ。",
+     "line_range": [
+      140,
+      142
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 4,
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 7,
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 8,
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 14
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    129,
+    147
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2014-kenpo-q09",
+   "number": 9,
+   "points": 3,
+   "format": "true_false_each",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "職業の自由に関する次のアからウまでの各記述について，最高裁判所の判例の趣旨に照らして，それぞれ正しい場合には１を，誤っている場合には２を選びなさい。（解答欄は，アからウの順に[№15］から［№17］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2014-kenpo-q09-a",
+     "label": "ア",
+     "text": "酒類販売の免許制に関する立法事実が変化しているので，当該免許制の合憲性は厳格度を高めた基準で審査されるが，酒税法が定める免許基準は依然として合理性を有する。",
+     "line_range": [
+      153,
+      154
+     ],
+     "slot_no": 15
+    },
+    {
+     "id": "shiho-2014-kenpo-q09-b",
+     "label": "イ",
+     "text": "特定産業における経営の安定を目的とする生糸の輸入制限は，零細な他の産業に犠牲を強いることになるので，その合憲性は慎重に審査されるが，著しく不合理とはいえない。",
+     "line_range": [
+      155,
+      156
+     ],
+     "slot_no": 16
+    },
+    {
+     "id": "shiho-2014-kenpo-q09-c",
+     "label": "ウ",
+     "text": "登記制度が国民の権利義務等に重大な影響を及ぼすことなどから，原則として司法書士に登記業務の独占を認める職域規制は，公共の福祉に合致した合理的な規制である。",
+     "line_range": [
+      157,
+      158
+     ],
+     "slot_no": 17
+    }
+   ],
+   "choices": [],
+   "answer_slots": [
+    {
+     "no": 15,
+     "statement_label": "ア"
+    },
+    {
+     "no": 16,
+     "statement_label": "イ"
+    },
+    {
+     "no": 17,
+     "statement_label": "ウ"
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    148,
+    160
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2014-kenpo-q10",
+   "number": 10,
+   "points": 3,
+   "format": "true_false_each",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "社会保障制度の合憲性をめぐる理由に関する次のアからウまでの各記述について，最高裁判所の判例の趣旨に照らして，それぞれ正しい場合には１を，誤っている場合には２を選びなさい。（解答欄は，アからウの順に[№18］から［№20］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2014-kenpo-q10-a",
+     "label": "ア",
+     "text": "限られた財源の下で福祉的給付を行うに当たり，国が自国民を在留外国人より優先的に扱うことは許されるが，特別永住者について障害福祉年金の支給対象から一切除外することは，不合理な差別となる。",
+     "line_range": [
+      165,
+      167
+     ],
+     "slot_no": 18
+    },
+    {
+     "id": "shiho-2014-kenpo-q10-b",
+     "label": "イ",
+     "text": "障害基礎年金の受給に関し，保険料の拠出要件を緩和するか否かは国の財政事情等に密接に関連するから，保険料負担能力のない２０歳以上６０歳未満の者のうち学生とそれ以外の者との間に障害基礎年金の受給に関し差異が生じていたとしても，不合理とはいえない。",
+     "line_range": [
+      168,
+      170
+     ],
+     "slot_no": 19
+    },
+    {
+     "id": "shiho-2014-kenpo-q10-c",
+     "label": "ウ",
+     "text": "生活保護法に基づいて生活保護を受けるのは，単なる国の恩恵ないし社会政策の実施に伴う反射的利益ではなく，法的権利であるから，保護基準の改定（老齢加算の廃止）に基づく保護の不利益変更は，その改定自体に正当な理由がない限り違法となる。",
+     "line_range": [
+      171,
+      173
+     ],
+     "slot_no": 20
+    }
+   ],
+   "choices": [],
+   "answer_slots": [
+    {
+     "no": 18,
+     "statement_label": "ア"
+    },
+    {
+     "no": 19,
+     "statement_label": "イ"
+    },
+    {
+     "no": 20,
+     "statement_label": "ウ"
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    161,
+    177
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2014-kenpo-q11",
+   "number": 11,
+   "points": 2,
+   "format": "mark_combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "裁判員の参加する刑事裁判に関する法律（以下「裁判員法」という。）に基づき裁判官以外の者が構成員となった裁判体によって裁判が行われる制度（以下「裁判員制度」という。）の合憲性について判断した最高裁判所の判決（最高裁判所平成２３年１１月１６日大法廷判決，刑集６５巻８号１２８５頁）に関する次のアからウまでの各記述について，正しいものには○，誤っているものには×を付した場合の組合せを，後記１から８までの中から選びなさい。（解答欄は，[№21］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2014-kenpo-q11-a",
+     "label": "ア",
+     "text": "憲法が採用する統治の基本原理や刑事裁判の諸原則，憲法制定当時の歴史的状況を含めた憲法制定の経緯及び憲法の関連規定の文理を総合的に検討すれば，憲法は一般的に国民の司法参加を許容しているといえる。",
+     "line_range": [
+      185,
+      187
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q11-b",
+     "label": "イ",
+     "text": "裁判員法が規定する評決制度の下で，裁判官が時に自らの意見と異なる結論に従わざるを得ない場合があるとしても，憲法が国民の司法参加を許容し，裁判員法が憲法に適合するようにこれを法制化したものである以上，憲法第７６条第３項には反しない。",
+     "line_range": [
+      188,
+      190
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q11-c",
+     "label": "ウ",
+     "text": "裁判員制度は，参政権と同様の権限を国民に付与するものではないが，辞退制度や旅費・日当の支給等の経済的措置を講じていることを考慮すれば，裁判員の職務は憲法第１８条の「苦役」に当たらない。",
+     "line_range": [
+      191,
+      193
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 4,
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 7,
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 8,
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 21
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    179,
+    198
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2014-kenpo-q12",
+   "number": 12,
+   "points": 3,
+   "format": "true_false_each",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "天皇の国事行為及び内閣の助言と承認に関する次のアからウまでの各記述について，それぞれ正しい場合には１を，誤っている場合には２を選びなさい。（解答欄は，アからウの順に[№22］から［№24］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2014-kenpo-q12-a",
+     "label": "ア",
+     "text": "国事行為のうち，その行為自体が名目的・儀礼的なものであっても，天皇は，自らの判断に基づき，内閣の助言と承認を拒むことは許されない。",
+     "line_range": [
+      203,
+      204
+     ],
+     "slot_no": 22
+    },
+    {
+     "id": "shiho-2014-kenpo-q12-b",
+     "label": "イ",
+     "text": "憲法は，天皇の無答責を明文で規定していないので，内閣の助言と承認のもとで行われた天皇の国事行為であっても，内閣の責任のほかに天皇が責任を負うことがあり得る。",
+     "line_range": [
+      205,
+      206
+     ],
+     "slot_no": 23
+    },
+    {
+     "id": "shiho-2014-kenpo-q12-c",
+     "label": "ウ",
+     "text": "国政に関する権能を天皇に付与しない限り，憲法で定められている国事行為以外の行為について，新たな国事行為として法律で定めることも許される。",
+     "line_range": [
+      207,
+      208
+     ],
+     "slot_no": 24
+    }
+   ],
+   "choices": [],
+   "answer_slots": [
+    {
+     "no": 22,
+     "statement_label": "ア"
+    },
+    {
+     "no": 23,
+     "statement_label": "イ"
+    },
+    {
+     "no": 24,
+     "statement_label": "ウ"
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    199,
+    210
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2014-kenpo-q13",
+   "number": 13,
+   "points": 3,
+   "format": "true_false_each",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "選挙に関する次のアからウまでの各記述について，最高裁判所の判例の趣旨に照らして，それぞれ正しい場合には１を，誤っている場合には２を選びなさい。（解答欄は，アからウの順に[№25］から［№27］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2014-kenpo-q13-a",
+     "label": "ア",
+     "text": "公職選挙法は，投票を得るなどの目的で戸別訪問をすること自体を禁止しているが，選挙運動の重要性に照らすと，その禁止の範囲は憲法に適合するよう限定して解釈しなければならない。",
+     "line_range": [
+      216,
+      218
+     ],
+     "slot_no": 25
+    },
+    {
+     "id": "shiho-2014-kenpo-q13-b",
+     "label": "イ",
+     "text": "いわゆる立候補の自由は，選挙権の自由な行使と表裏の関係にあり，自由かつ公正な選挙を維持する上で極めて重要であるとして，憲法第１５条第１項によって保障されていると解すべきである。",
+     "line_range": [
+      219,
+      221
+     ],
+     "slot_no": 26
+    },
+    {
+     "id": "shiho-2014-kenpo-q13-c",
+     "label": "ウ",
+     "text": "選挙や当選の効力に関する争訟において，誰が誰に対して投票したかを解明し，これを公表することは，選挙投票の全般にわたってその秘密を確保しようとする無記名投票制度の精神に反する。",
+     "line_range": [
+      222,
+      224
+     ],
+     "slot_no": 27
+    }
+   ],
+   "choices": [],
+   "answer_slots": [
+    {
+     "no": 25,
+     "statement_label": "ア"
+    },
+    {
+     "no": 26,
+     "statement_label": "イ"
+    },
+    {
+     "no": 27,
+     "statement_label": "ウ"
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    211,
+    228
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2014-kenpo-q14",
+   "number": 14,
+   "points": 2,
+   "format": "mark_combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "憲法第４３条第１項の「全国民の代表」に関する次のアからウまでの各記述について，正しいものには○，誤っているものには×を付した場合の組合せを，後記１から８までの中から選びなさい。（解答欄は，[№28］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2014-kenpo-q14-a",
+     "label": "ア",
+     "text": "憲法第４３条第１項は，国会が民意を反映すべき機関であると同時に，国民代表機関であることも意味する。",
+     "line_range": [
+      234,
+      235
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q14-b",
+     "label": "イ",
+     "text": "各選挙区において選出された議員は，「全国民の代表」となるので，選挙区民から法的に責任を問われることはない。",
+     "line_range": [
+      236,
+      237
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q14-c",
+     "label": "ウ",
+     "text": "議員が実質的には政党の媒介によってのみ国民代表者となり得るとする見解に立つと，党議拘束の慣行は，議員が「全国民の代表」であることと矛盾抵触する。",
+     "line_range": [
+      238,
+      239
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 4,
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 7,
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 8,
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 28
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    230,
+    244
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2014-kenpo-q15",
+   "number": 15,
+   "points": 2,
+   "format": "mark_combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "独立行政委員会に関する次のアからウまでの各記述について，正しいものには○，誤っているものには×を付した場合の組合せを，後記１から８までの中から選びなさい。（解答欄は，[№29］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2014-kenpo-q15-a",
+     "label": "ア",
+     "text": "独立行政委員会が規則制定という準立法的作用を行うことは，国会を唯一の立法機関と定める憲法第４１条に反するものではない。",
+     "line_range": [
+      248,
+      249
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q15-b",
+     "label": "イ",
+     "text": "行政権は内閣に属すると定める憲法第６５条により，独立行政委員会の職務全般に対しては，内閣の直接的な指揮監督権が及ぶ。",
+     "line_range": [
+      250,
+      251
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q15-c",
+     "label": "ウ",
+     "text": "独立行政委員会が裁決や審決という準司法的作用を行うことは，たとえ前審であっても，全て司法権は裁判所に属する旨を定める憲法第７６条第１項に反し，許されない。",
+     "line_range": [
+      252,
+      253
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 4,
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 7,
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 8,
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 29
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    245,
+    258
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2014-kenpo-q16",
+   "number": 16,
+   "points": 2,
+   "format": "mark_combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "司法権に関する次のアからウまでの各記述について，正しいものには○，誤っているものには×を付した場合の組合せを，後記１から８までの中から選びなさい。（解答欄は，[№30］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2014-kenpo-q16-a",
+     "label": "ア",
+     "text": "下級裁判所は，最高裁判所が制定した裁判所の内部規律及び司法事務処理に関する規則に拘束されるから，最高裁判所が，下級裁判所の裁判官に対して，具体的事件について，どのような判断を行うべきか指示することも許される。",
+     "line_range": [
+      262,
+      264
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q16-b",
+     "label": "イ",
+     "text": "裁判官の職権の独立は，裁判に対して不当な影響を与えるおそれのある一切の外部的行為の排除を要求するが，一般国民やマスメディアによる裁判内容の批判は，表現の自由の行使の一場面であるから許される。",
+     "line_range": [
+      265,
+      267
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q16-c",
+     "label": "ウ",
+     "text": "国政調査権は議院にとって重要な権能であるが，司法権の独立の観点からして，具体的事件について，その判決の事実認定や量刑が適切かどうかを調査することは，国政調査権の範囲を逸脱するものであり，許されない。",
+     "line_range": [
+      268,
+      270
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 4,
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 7,
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 8,
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 30
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    259,
+    277
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2014-kenpo-q17",
+   "number": 17,
+   "points": 2,
+   "format": "combination",
+   "polarity": "correct",
+   "exhaustive": true,
+   "unordered": false,
+   "stem": "裁判所が違憲とした議員定数配分規定に基づいて行われた選挙の効力に関する次のアからウまでの各記述について，正しいもの全てを挙げた組合せを，後記１から７までの中から選びなさい。（解答欄は，[№31］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2014-kenpo-q17-a",
+     "label": "ア",
+     "text": "一般的な法の基本原則に基づくものとして事情判決の法理を適用して，選挙を無効とせず違法の宣言にとどめるのは，当該選挙を無効とすることによって憲法が所期していない結果を生じることを回避するためである。",
+     "line_range": [
+      284,
+      286
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q17-b",
+     "label": "イ",
+     "text": "定数配分規定の違憲判断を選挙の効力と結び付けず，訴訟が提起された選挙区の選挙だけを無効とする手法は，投票価値が不平等であるとされた選挙区からの代表者がいない状態で定数配分規定の是正が行われるという問題がある。",
+     "line_range": [
+      287,
+      289
+     ]
+    },
+    {
+     "id": "shiho-2014-kenpo-q17-c",
+     "label": "ウ",
+     "text": "定数配分規定の違憲判断を選挙の効力と結び付けない判決の将来効の法理は，再選挙を執行することが事実上不可能であることや，事情判決を繰り返すことによって生じる司法審査制自体への弊害という問題にも対処しようとするものである。",
+     "line_range": [
+      290,
+      292
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア",
+     "labels": [
+      "ア"
+     ]
+    },
+    {
+     "number": 2,
+     "text": "イ",
+     "labels": [
+      "イ"
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ウ",
+     "labels": [
+      "ウ"
+     ]
+    },
+    {
+     "number": 4,
+     "text": "アイ",
+     "labels": [
+      "ア",
+      "イ"
+     ]
+    },
+    {
+     "number": 5,
+     "text": "アウ",
+     "labels": [
+      "ア",
+      "ウ"
+     ]
+    },
+    {
+     "number": 6,
+     "text": "イウ",
+     "labels": [
+      "イ",
+      "ウ"
+     ]
+    },
+    {
+     "number": 7,
+     "text": "アイウ",
+     "labels": [
+      "ア",
+      "イ",
+      "ウ"
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 31
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    279,
+    295
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2014-kenpo-q18",
+   "number": 18,
+   "points": 3,
+   "format": "true_false_each",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "憲法の定める租税法律主義に関する次のアからウまでの各記述について，最高裁判所の判例の趣旨に照らして，それぞれ正しい場合には１を，誤っている場合には２を選びなさい。（解答欄は，アからウの順に[№32］から［№34］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2014-kenpo-q18-a",
+     "label": "ア",
+     "text": "租税の賦課は法律又は法律の定める条件によらなければならないが，条例は公選の議員で組織する議会の議決を経て制定される自治立法であるから，一定の範囲内で条例による租税の賦課徴収ができる。",
+     "line_range": [
+      300,
+      302
+     ],
+     "slot_no": 32
+    },
+    {
+     "id": "shiho-2014-kenpo-q18-b",
+     "label": "イ",
+     "text": "課税の根拠法律があるにもかかわらず長年にわたり課税されなかった物については，非課税の慣習法が成立しているとみるべきであるから，新たにその物に課税することは，それがその根拠法律の正しい解釈に基づくものであるとしても，租税法律主義に反する。",
+     "line_range": [
+      303,
+      305
+     ],
+     "slot_no": 33
+    },
+    {
+     "id": "shiho-2014-kenpo-q18-c",
+     "label": "ウ",
+     "text": "租税法律主義は，社会全体に対する財やサービスを提供するための資金を租税として強制的に徴収する場合について規定したものであるから，個人への給付に対する反対給付としての性質を有する保険料等については適用がなく，また，その趣旨も及ばない。",
+     "line_range": [
+      306,
+      308
+     ],
+     "slot_no": 34
+    }
+   ],
+   "choices": [],
+   "answer_slots": [
+    {
+     "no": 32,
+     "statement_label": "ア"
+    },
+    {
+     "no": 33,
+     "statement_label": "イ"
+    },
+    {
+     "no": 34,
+     "statement_label": "ウ"
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    296,
+    310
+   ],
+   "flags": []
+  }
+ ]
+}

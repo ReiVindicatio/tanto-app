@@ -33,13 +33,17 @@ SUBJECT_NAMES = {v: k for k, v in SUBJECT_IDS.items()}
 # 科目 → 科目群（予備は科目群で1ファイル）
 SUBJECT_GROUP = {"kenpo": "憲法行政法", "gyosei": "憲法行政法", "minpo": "民法商法民事訴訟法", "shoho": "民法商法民事訴訟法",
                  "minso": "民法商法民事訴訟法", "keiho": "刑法刑事訴訟法", "keiso": "刑法刑事訴訟法"}
-assert set(SUBJECT_GROUP.values()) <= set(GROUP_IDS)
+SHIHO_EARLY_GROUP = {"kenpo": "公法系科目", "gyosei": "公法系科目", "minpo": "民事系科目", "shoho": "民事系科目",
+                     "minso": "民事系科目", "keiho": "刑事系科目", "keiso": "刑事系科目"}
+assert set(SUBJECT_GROUP.values()) | set(SHIHO_EARLY_GROUP.values()) <= set(GROUP_IDS)
 
 
 def validated(doc: dict) -> bool:
     exam, subj = doc["exam"], doc["subject"]
     year_dir = f"{exam['era']}-{exam['year']}"
-    group = SUBJECT_NAMES[subj] if exam["type"] == "shiho" else SUBJECT_GROUP[subj]  # 司法は科目ごとのファイル
+    group = SUBJECT_GROUP[subj]
+    if exam["type"] == "shiho":  # 司法：H27 以降は科目ごと、H23〜H26 は科目系ごとのファイル
+        group = SUBJECT_NAMES[subj] if exam["year"] >= 2015 else SHIHO_EARLY_GROUP[subj]
     r = subprocess.run([sys.executable, str(ROOT / "pipeline" / "validate.py"), year_dir, group,
                         SUBJECT_NAMES[subj], "--exam", EXAM_NAMES[exam["type"]]], capture_output=True, text=True)
     return r.returncode == 0

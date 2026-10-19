@@ -151,6 +151,15 @@ class ParseQuestionsTest(unittest.TestCase):
         self.assertEqual(q["context"][0]["text"], "⑴ 教育委員会は通達を発した。⑵ 処分が反復される危険がある。")  # 本文は折り返しをつなぐ
         self.assertEqual([s["label"] for s in q["statements"]], ["ア", "イ"])
 
+    def test_all_listed_combination_is_exhaustive(self):
+        # 「正しいもの全てを挙げた組合せ」は「全て選んだ」と同じ（司法 H26 憲法 問17）
+        q = parse("  次のアからウまでの各記述について，正しいもの全てを挙げた組合せを，後記１から３までの中から選びなさい。（解答欄は，[№31］）\n"
+                  "  ア．甲である。\n"
+                  "  イ．乙である。\n"
+                  "１．ア   ２．イ   ３．アイ")
+        self.assertEqual(q["format"], "combination")
+        self.assertTrue(q["exhaustive"])
+
 
 class PageNumberTest(unittest.TestCase):
     def test_doubled_page_number(self):

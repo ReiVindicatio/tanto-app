@@ -62,10 +62,11 @@ def rebuild(q: dict) -> str:
 
 def raw_question_text(lines: list[str], q: dict) -> str:
     a, b = q["line_range"]
-    body = [l.replace("\f", "") for l in lines[a - 1:b]]
+    keep = set(q.get("stem_heading_lines", []))  # リード文の一部として残した【…】だけの行（司法 H25 刑事系 問35）
+    body = [(ln, l.replace("\f", "")) for ln, l in enumerate(lines[a - 1:b], start=a)]
     # 【記述】の見出し行はパース結果に残さないので、照合からも除く（リード文中の「各【記述】」は残す）
     headings = {"【記述】"} | {f"【{k}】" for k in q.get("statement_headings", [])}
-    body = [l for l in body if not PAGE_NUMBER_RE.match(l) and no_ws(l) not in headings]
+    body = [l for ln, l in body if not PAGE_NUMBER_RE.match(l) and (no_ws(l) not in headings or ln in keep)]
     return no_ws("".join(body))
 
 
@@ -235,7 +236,7 @@ def main() -> None:
     r.check("問番号が連番", nums == list(range(nums[0], nums[0] + len(nums))) if nums else False, f"{nums[0]}〜{nums[-1]}（{len(nums)}問）" if nums else "問なし")
     nos = [s["no"] for q in qs for s in q["answer_slots"]]
     r.check("No が連番", bool(nos) and nos == list(range(nos[0], nos[0] + len(nos))), f"No.{nos[0]}〜{nos[-1]}" if nos else "")
-    want = POINTS_PER_SUBJECT.get(exam_id) or POINTS_PER_SUBJECT.get((exam_id, subj_id))
+    want = POINTS_PER_SUBJECT.get(exam_id) or (POINTS_PER_SUBJECT.get((exam_id, subj_id)) if year >= 2015 else None)  # 司法 H23〜H26 は科目系の満点だけ
     q_pts = sum(q["points"] for q in qs)
     a_pts = sum(by_num[n]["points"] for n in nums if n in by_num)
     if want:

@@ -21,7 +21,8 @@ from dataclasses import dataclass
 
 from common import EXAM_IDS, EXTRACTED, GROUP_IDS, PARSED, ROOT, manifest_entry, nfkc, write_json, year_parts
 
-HEADER_WORDS = {"問": "q", "No": "no", "№": "no", "解答": "ans", "配点": "pts", "備": "rem", "考": "rem2", "備考": "rem"}
+HEADER_WORDS = {"問": "q", "No": "no", "№": "no", "解答": "ans", "正解": "ans",  # 「正解」：司法 H23・H24
+                "配点": "pts", "備": "rem", "考": "rem2", "備考": "rem"}
 CENTER_TOL = 3.0  # 結合セルの中央と No 行の範囲の中央の許容差（pt）
 
 
@@ -62,7 +63,7 @@ def head_key(text: str) -> str:
 
 def columns_for_page(words: list[Word]) -> tuple[float, list[tuple[str, int, float]]]:
     """見出し行の y と、列の一覧 [(種類, 段の番号, x中央)] を返す。"""
-    ans_heads = [w for w in words if w.text == "解答"]
+    ans_heads = [w for w in words if w.text in ("解答", "正解")]
     if not ans_heads:
         raise ValueError("見出し行（解答）がない")
     hy = min(w.cy for w in ans_heads)

@@ -110,17 +110,18 @@ test("○×の組合せの問（行政法 H29）：肢カードになり、問�
 test("司法試験：科目の画面で予備・司法を切り替え、同じ肢は1枚のカードにまとめる（T011・決定018）", async ({ page, request }) => {
   const index = await (await request.get("/data/index.json")).json();
   const shihoMinpo = index.sets.filter((s: any) => s.exam.type === "shiho" && s.subject === "minpo");
-  expect(shihoMinpo.length).toBe(12);
+  expect(shihoMinpo.length).toBe(16);
   const aliases: Record<string, string> = index.aliases;
   expect(Object.keys(aliases).filter((k) => k.startsWith("shiho-")).length).toBeGreaterThan(1000);
 
   await openHome(page);
   await tab(page, "科目").click();
-  await expect(subjectCard(page, "民法")).toContainText("予備16年度・司法12年度");
+  await expect(subjectCard(page, "民法")).toContainText("予備16年度・司法16年度");
+  await expect(subjectCard(page, "行政法")).toContainText("予備16年度・司法4年度"); // 司法 H23〜H26 だけ（T036）
   await subjectCard(page, "民法").click();
   await expect(page.locator(".set.year")).toHaveCount(16);
-  await page.getByRole("button", { name: "司法（12年度）" }).click();
-  await expect(page.locator(".set.year")).toHaveCount(12);
+  await page.getByRole("button", { name: "司法（16年度）" }).click();
+  await expect(page.locator(".set.year")).toHaveCount(16);
   await expect(page.locator(".set.year").first()).toContainText("司法 R08（2026）");
 
   // 司法 R08 民法：予備と同じ肢には、同じ肢の出典が出る

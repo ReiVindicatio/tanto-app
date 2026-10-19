@@ -1,0 +1,31 @@
+{
+ "source": {
+  "path": "data/raw/司法試験/短答/H24-2012/公法系科目_正答.pdf",
+  "sha256": "f808187b78e755245322aa01aa839dc5305c6bf4babfa29d8366ec4fa1cc254d",
+  "source_url": "https://www.moj.go.jp/content/000098848.pdf"
+ },
+ "method": "pdftotext",
+ "tool": {
+  "version": "pdftotext version 26.10.0",
+  "args": [
+   "-layout",
+   "-enc",
+   "UTF-8"
+  ]
+ },
+ "status": "ok",
+ "quality": {
+  "normal_char_ratio": 1.0,
+  "nonspace_chars": 636,
+  "threshold": 0.97,
+  "per_page": [
+   1.0
+  ]
+ },
+ "pages": 1,
+ "page_start_lines": [
+  0
+ ],
+ "sections": [],
+ "tsv": "data/extracted/司法試験/短答/H24-2012/公法系科目_正答.tsv"
+}

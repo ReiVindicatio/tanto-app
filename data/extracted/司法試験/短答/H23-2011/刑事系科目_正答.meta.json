@@ -1,0 +1,31 @@
+{
+ "source": {
+  "path": "data/raw/司法試験/短答/H23-2011/刑事系科目_正答.pdf",
+  "sha256": "c067d2f86b33aad457b50d11bd372af334aabe64ba85ee08de6e1d7e70f64101",
+  "source_url": "https://www.moj.go.jp/content/000074978.pdf"
+ },
+ "method": "pdftotext",
+ "tool": {
+  "version": "pdftotext version 26.10.0",
+  "args": [
+   "-layout",
+   "-enc",
+   "UTF-8"
+  ]
+ },
+ "status": "ok",
+ "quality": {
+  "normal_char_ratio": 1.0,
+  "nonspace_chars": 550,
+  "threshold": 0.97,
+  "per_page": [
+   1.0
+  ]
+ },
+ "pages": 1,
+ "page_start_lines": [
+  0
+ ],
+ "sections": [],
+ "tsv": "data/extracted/司法試験/短答/H23-2011/刑事系科目_正答.tsv"
+}

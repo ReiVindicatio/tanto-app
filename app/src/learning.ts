@@ -36,7 +36,9 @@ export type LearningState = {
   daily: Map<string, { answered: number; correct: number }>;
 };
 
-const scheduler = fsrs();
+// 同じ日のうちの短い間隔の復習（正解でも10分後・不正解なら1分後にまた出る）は使わない。
+// ○×は2択で、すぐの再出題は記憶で解けてしまうため（T037・決定020）。正解なら数日後、不正解なら翌日に出る
+const scheduler = fsrs({ enable_short_term: false });
 
 export function emptyState(): LearningState {
   return { history: new CardMap(), cards: new CardMap(), newCount: new Map(), daily: new Map() };

@@ -26,7 +26,7 @@ BLOCK_RE = re.compile(r"^\s*【([^】]+)】\s*$")
 # 問の末尾の「（参照条文）刑事訴訟法」。前提文（kind＝参照条文）として持つ。以前は最後の肢・選択肢にくっついていた
 REFERENCE_RE = re.compile(r"^\s*（参照条文）(.*)$")
 LABELS_KANA = "アイウエオカキクケコ"
-STATEMENT_RE = re.compile(r"^\s+([アイウエオカキクケコ]|[１-９])[．.]")  # 半角の「.」の年度もある（H28）
+STATEMENT_RE = re.compile(r"^\s+([アイウエオカキクケコ]|[１-９])\s?[．.]")  # 半角の「.」の年度もある（H28）。「ウ ．」（司法 H25 公法系 問21）
 CHOICE_RE = re.compile(r"^[１-９][．.]")  # 選択肢は行頭（字下げなし）
 # 穴埋めの選択肢「１．①ア ②エ …」は字下げされている年度がある（H26 刑法 問3）
 # 肢のラベルだけの選択肢「  １．ア        ２．イ」が字下げされている年度がある（H28 行政法 問17）
@@ -132,7 +132,7 @@ def split_inline_statements(body: list[tuple[int, str]]) -> list[tuple[int, str]
 
 def is_next_label(line: str, prev: str) -> bool:
     """字下げに関係なく、行頭が直前の肢の次のラベル（ア→イ、１→２）か"""
-    m = re.match(r"^\s*([アイウエオカキクケコ]|[１-９])[．.]", line)
+    m = re.match(r"^\s*([アイウエオカキクケコ]|[１-９])\s?[．.]", line)
     if not m:
         return False
     for seq in (LABELS_KANA, "１２３４５６７８９"):
@@ -247,6 +247,7 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
     subs: list[dict] = []             # 小問（⑴⑵…）
     flags: list[str] = []
     statement_headings: list[str] = []  # 肢の並びの見出し（【記述】以外。検証で見出し行を照合から除く）
+    stem_heading_lines: list[int] = []  # リード文の一部として残した【…】だけの行
 
     body = split_inline_statements(body)
     for k, (ln, line) in enumerate(body):
@@ -262,6 +263,12 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
         if m and state == "statements" and statements and re.search(r"【\s*】", "".join(l for _, l in stem_lines)):
             # リード文が「【 】内の罪数関係」のように空欄の【 】を使い、肢の中に【観念的競合】と書く形（H24 刑法 問8）。肢の文の一部
             m = None
+        if (m and state == "stem" and stem_lines and "解答欄" not in norm_slots(join_lines([l for _, l in stem_lines]))
+                and any("解答欄" in l for _, l in body[k + 1:k + 4]) and not BLOCK_RE.match(next((l for _, l in body[k + 1:] if l.strip()), ""))):
+            # リード文の途中の「【記述】」が、組版の都合で1行に独立している（司法 H25 刑事系 問35）。リード文の一部
+            # （検証で見出し行として照合から除かないよう、行番号を残す）
+            m = None
+            stem_heading_lines.append(ln)
         if m:
             kind = re.sub(r"\s+", "", m.group(1))
             nxt = next((l for _, l in body[k + 1:] if l.strip()), "")
@@ -414,7 +421,7 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
     out_statements = []
     for s in statements:
         text = join_lines(s["lines"])
-        text = re.sub(r"^([アイウエオカキクケコ]|[１-９])[．.]", "", text)
+        text = re.sub(r"^([アイウエオカキクケコ]|[１-９])\s?[．.]", "", text)
         slot_no = None
         mt = TRAILING_SLOT_RE.search(text)
         if mt:
@@ -470,7 +477,7 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
         "points": points,
         "format": fmt,
         "polarity": polarity,
-        "exhaustive": "全て選んだ" in stem_n,
+        "exhaustive": "全て選んだ" in stem_n or "全てを挙げた" in stem_n,  # 「正しいもの全てを挙げた組合せ」（司法 H26 憲法 問17）
         "unordered": unordered,
         "stem": stem,
         "context": context,
@@ -482,6 +489,7 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
         "line_range": [head_line, body[-1][0] if body else head_line],
         "flags": flags,
         **({"statement_headings": statement_headings} if statement_headings else {}),
+        **({"stem_heading_lines": stem_heading_lines} if stem_heading_lines else {}),
         # 参照条文のある問は、検証で元の順に並べるため選択肢の行を残す（参照条文が選択肢の前後どちらにもありうる）
         **({"choices_line": choice_lines[0][0]} if choice_lines and any(b["kind"] == "参照条文" for b in blocks) else {}),
         **({"classes": classes_of(stem, choices, context)} if fmt == "classify_each" else {}),
@@ -517,6 +525,28 @@ def parse_section(lines: list[str], start: int, end: int, ids_base: str) -> list
     return questions
 
 
+SUBJECT_RANGES = ROOT / "pipeline" / "subject_ranges.json"
+
+
+def sections_from_ranges(year: str, group: str, subject: str, lines: list[str]) -> list[dict]:
+    """科目の見出しがない冊子（司法 H23〜H26）：subject_ranges.json の問番号の範囲から、科目の行範囲を作る（決定019）。
+    範囲の外の問（境目で科目が決まらない問）はどの科目にも入らない"""
+    if not SUBJECT_RANGES.exists():
+        return []
+    entry = json.loads(SUBJECT_RANGES.read_text(encoding="utf-8"))["ranges"].get(f"{year}/{group}")
+    r = next((x for x in (entry or {}).get("ranges", []) if x["subject"] == subject), None)
+    if r is None:
+        return []
+    heads = {}
+    for i, line in enumerate(lines):
+        m = re.search(r"〔第\s*([0-9０-９]+)\s*問\s*〕", line)
+        if m:
+            heads.setdefault(to_int(m.group(1)), i)
+    start = heads[r["from"]]
+    end = heads.get(r["to"] + 1, len(lines))
+    return [{"subject": subject, "start_line": start - 1, "end_line": end}]
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("year", help="例：R08-2026")
@@ -529,11 +559,13 @@ def main() -> None:
     meta = json.loads(base.with_suffix(".meta.json").read_text(encoding="utf-8"))
     if meta["status"] != "ok":
         sys.exit(f"🔴 テキスト化の品質が閾値未満（{meta['status']}）：{base}")
+    lines = base.with_suffix(".txt").read_text(encoding="utf-8").split("\n")
     secs = [s for s in meta["sections"] if s["subject"] == args.subject]
+    if not secs:
+        secs = sections_from_ranges(args.year, args.group, args.subject, lines)
     if len(secs) != 1:
         sys.exit(f"🔴 科目見出し［{args.subject}］が {len(secs)} 個")
     sec = secs[0]
-    lines = base.with_suffix(".txt").read_text(encoding="utf-8").split("\n")
 
     era, year = year_parts(args.year)
     exam_id, subj_id = EXAM_IDS[args.exam], SUBJECT_IDS[args.subject]
