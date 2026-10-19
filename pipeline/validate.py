@@ -135,6 +135,15 @@ def validate_question(r: Report, q: dict, a: dict | None, lines: list[str]) -> N
             r.check(f"{p} 順不同の解答が重複しない", len(set(answers)) == len(answers), str(answers))
         else:
             r.check(f"{p} 単一選択：No が1つ", len(answers) == 1, str(answers))
+    elif fmt == "mark_combination":
+        r.check(f"{p} ○×の組合せ：肢と選択肢がある", bool(st_labels) and bool(q["choices"]))
+        bad = [c["number"] for c in q["choices"]
+               if [m["label"] for m in c["marks"]] != st_labels
+               or re.sub(r"\s", "", c["text"]).replace("〇", "○") != "".join(m["label"] + ("○" if m["value"] else "×") for m in c["marks"])]
+        r.check(f"{p} ○×の組合せ：選択肢の○×が肢のラベルどおり", not bad, f"不正な選択肢 {bad}／肢 {''.join(st_labels)}")
+        combos = [tuple(m["value"] for m in c["marks"]) for c in q["choices"]]
+        r.check(f"{p} ○×の組合せ：選択肢が重複しない", len(set(combos)) == len(combos))
+        r.check(f"{p} ○×の組合せ：解答が選択肢の範囲", len(answers) == 1 and 1 <= answers[0] <= len(q["choices"]), str(answers))
     elif fmt == "meta_choice":
         r.check(f"{p} 記述を説明した選択肢：肢か前提文と、選択肢がある", (bool(st_labels) or bool(q["context"])) and bool(q["choices"]))
         r.check(f"{p} 記述を説明した選択肢：解答が選択肢の範囲", len(answers) == 1 and 1 <= answers[0] <= len(q["choices"]), str(answers))

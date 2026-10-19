@@ -142,6 +142,7 @@ Correction（AI 補正の記録）→ Source のスパン
 | `single_choice` | 誤っているものを1つ選べ | **できる** | 肢 |
 | `multi_select_unordered` | 2つ選べ（順不同の No が2つ） | **できる**（No の集合が polarity 側） | 肢 |
 | `true_false_each` | 各記述が正しければ1、誤りなら2（No ごと） | **できる**（No＝肢） | 肢 |
+| `mark_combination` | 各肢に○×を付した場合の組合せ（「ア○ イ× ウ○」から選ぶ） | **できる**（正解の選択肢の○×＝肢の○×。basis は direct。📖 `decisions/016`） | 肢 |
 | `context_dependent` | 【見解】に立った場合に正しいもの／学生の会話 | **できるが、前提文なしでは意味が変わる** → `requires_context: true` | 肢（前提文つきで出す） |
 | `count` | 正しいものは幾つあるか | **できない**（個数だけでは、どの肢かが決まらない） | 問 |
 | `fill_blank` | 空欄に入る語の組合せ | **肢がない**（空欄ごとの選択） | 問（空欄ごとの小問にはできる） |

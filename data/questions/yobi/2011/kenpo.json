@@ -26,7 +26,7 @@
    "subject": "kenpo",
    "number": 1,
    "points": 2,
-   "format": "meta_choice",
+   "format": "mark_combination",
    "polarity": null,
    "exhaustive": false,
    "unordered": false,
@@ -37,35 +37,147 @@
    "choices": [
     {
      "number": 1,
-     "text": "ア○ イ○ ウ○"
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 2,
-     "text": "ア○ イ○ ウ×"
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 3,
-     "text": "ア○ イ× ウ○"
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 4,
-     "text": "ア○ イ× ウ×"
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 5,
-     "text": "ア× イ○ ウ○"
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 6,
-     "text": "ア× イ○ ウ×"
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 7,
-     "text": "ア× イ× ウ○"
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 8,
-     "text": "ア× イ× ウ×"
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     }
    ],
    "answer_slots": [
@@ -89,7 +201,7 @@
     "yobi-2011-kenpo-q01-b",
     "yobi-2011-kenpo-q01-c"
    ],
-   "statement_truth_derivable": false,
+   "statement_truth_derivable": true,
    "provenance": {
     "question_pdf": "data/raw/予備試験/短答/H23-2011/憲法行政法_問題.pdf",
     "answer_pdf": "data/raw/予備試験/短答/H23-2011/憲法行政法_正答.pdf",
@@ -256,7 +368,7 @@
    "subject": "kenpo",
    "number": 4,
    "points": 2,
-   "format": "meta_choice",
+   "format": "mark_combination",
    "polarity": null,
    "exhaustive": false,
    "unordered": false,
@@ -267,35 +379,147 @@
    "choices": [
     {
      "number": 1,
-     "text": "ア○ イ○ ウ○"
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 2,
-     "text": "ア○ イ○ ウ×"
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 3,
-     "text": "ア○ イ× ウ○"
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 4,
-     "text": "ア○ イ× ウ×"
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 5,
-     "text": "ア× イ○ ウ○"
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 6,
-     "text": "ア× イ○ ウ×"
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 7,
-     "text": "ア× イ× ウ○"
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 8,
-     "text": "ア× イ× ウ×"
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     }
    ],
    "answer_slots": [
@@ -319,7 +543,7 @@
     "yobi-2011-kenpo-q04-b",
     "yobi-2011-kenpo-q04-c"
    ],
-   "statement_truth_derivable": false,
+   "statement_truth_derivable": true,
    "provenance": {
     "question_pdf": "data/raw/予備試験/短答/H23-2011/憲法行政法_問題.pdf",
     "answer_pdf": "data/raw/予備試験/短答/H23-2011/憲法行政法_正答.pdf",
@@ -563,7 +787,7 @@
    "subject": "kenpo",
    "number": 8,
    "points": 2,
-   "format": "meta_choice",
+   "format": "mark_combination",
    "polarity": null,
    "exhaustive": false,
    "unordered": false,
@@ -574,35 +798,147 @@
    "choices": [
     {
      "number": 1,
-     "text": "ア○ イ○ ウ○"
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 2,
-     "text": "ア○ イ○ ウ×"
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 3,
-     "text": "ア○ イ× ウ○"
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 4,
-     "text": "ア○ イ× ウ×"
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 5,
-     "text": "ア× イ○ ウ○"
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 6,
-     "text": "ア× イ○ ウ×"
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 7,
-     "text": "ア× イ× ウ○"
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 8,
-     "text": "ア× イ× ウ×"
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     }
    ],
    "answer_slots": [
@@ -626,7 +962,7 @@
     "yobi-2011-kenpo-q08-b",
     "yobi-2011-kenpo-q08-c"
    ],
-   "statement_truth_derivable": false,
+   "statement_truth_derivable": true,
    "provenance": {
     "question_pdf": "data/raw/予備試験/短答/H23-2011/憲法行政法_問題.pdf",
     "answer_pdf": "data/raw/予備試験/短答/H23-2011/憲法行政法_正答.pdf",
@@ -649,7 +985,7 @@
    "subject": "kenpo",
    "number": 9,
    "points": 2,
-   "format": "meta_choice",
+   "format": "mark_combination",
    "polarity": null,
    "exhaustive": false,
    "unordered": false,
@@ -660,35 +996,147 @@
    "choices": [
     {
      "number": 1,
-     "text": "ア○ イ○ ウ○"
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 2,
-     "text": "ア○ イ○ ウ×"
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 3,
-     "text": "ア○ イ× ウ○"
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 4,
-     "text": "ア○ イ× ウ×"
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 5,
-     "text": "ア× イ○ ウ○"
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 6,
-     "text": "ア× イ○ ウ×"
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 7,
-     "text": "ア× イ× ウ○"
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 8,
-     "text": "ア× イ× ウ×"
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     }
    ],
    "answer_slots": [
@@ -712,7 +1160,7 @@
     "yobi-2011-kenpo-q09-b",
     "yobi-2011-kenpo-q09-c"
    ],
-   "statement_truth_derivable": false,
+   "statement_truth_derivable": true,
    "provenance": {
     "question_pdf": "data/raw/予備試験/短答/H23-2011/憲法行政法_問題.pdf",
     "answer_pdf": "data/raw/予備試験/短答/H23-2011/憲法行政法_正答.pdf",
@@ -735,7 +1183,7 @@
    "subject": "kenpo",
    "number": 10,
    "points": 2,
-   "format": "meta_choice",
+   "format": "mark_combination",
    "polarity": null,
    "exhaustive": false,
    "unordered": false,
@@ -746,35 +1194,147 @@
    "choices": [
     {
      "number": 1,
-     "text": "ア○ イ○ ウ○"
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 2,
-     "text": "ア○ イ○ ウ×"
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 3,
-     "text": "ア○ イ× ウ○"
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 4,
-     "text": "ア○ イ× ウ×"
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 5,
-     "text": "ア× イ○ ウ○"
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 6,
-     "text": "ア× イ○ ウ×"
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 7,
-     "text": "ア× イ× ウ○"
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 8,
-     "text": "ア× イ× ウ×"
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     }
    ],
    "answer_slots": [
@@ -798,7 +1358,7 @@
     "yobi-2011-kenpo-q10-b",
     "yobi-2011-kenpo-q10-c"
    ],
-   "statement_truth_derivable": false,
+   "statement_truth_derivable": true,
    "provenance": {
     "question_pdf": "data/raw/予備試験/短答/H23-2011/憲法行政法_問題.pdf",
     "answer_pdf": "data/raw/予備試験/短答/H23-2011/憲法行政法_正答.pdf",
@@ -898,7 +1458,7 @@
    "subject": "kenpo",
    "number": 12,
    "points": 2,
-   "format": "meta_choice",
+   "format": "mark_combination",
    "polarity": null,
    "exhaustive": false,
    "unordered": false,
@@ -909,35 +1469,147 @@
    "choices": [
     {
      "number": 1,
-     "text": "ア○ イ○ ウ○"
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 2,
-     "text": "ア○ イ○ ウ×"
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 3,
-     "text": "ア○ イ× ウ○"
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 4,
-     "text": "ア○ イ× ウ×"
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 5,
-     "text": "ア× イ○ ウ○"
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 6,
-     "text": "ア× イ○ ウ×"
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 7,
-     "text": "ア× イ× ウ○"
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 8,
-     "text": "ア× イ× ウ×"
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     }
    ],
    "answer_slots": [
@@ -961,7 +1633,7 @@
     "yobi-2011-kenpo-q12-b",
     "yobi-2011-kenpo-q12-c"
    ],
-   "statement_truth_derivable": false,
+   "statement_truth_derivable": true,
    "provenance": {
     "question_pdf": "data/raw/予備試験/短答/H23-2011/憲法行政法_問題.pdf",
     "answer_pdf": "data/raw/予備試験/短答/H23-2011/憲法行政法_正答.pdf",
@@ -982,7 +1654,19 @@
    "label": "ア",
    "text": "「宴のあと」事件判決（東京地判昭和３９年９月２８日）は，いわゆるプライバシー権は私生活をみだりに公開されないという法的保障ないし権利であるとし，公開を欲するか否かについては，本人の感受性を基準にして判断するとした。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 1,
+       "official_answer": 5
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1008,7 +1692,19 @@
    "label": "イ",
    "text": "京都府学連事件判決（最大判昭和４４年１２月２４日）は，個人の私生活上の自由として，何人もその承諾なしにみだりにその容貌・姿態を撮影されない自由を有するとし，警察官が正当な理由もないのに個人の容貌等を撮影することは，憲法第１３条の趣旨に反するとした。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 1,
+       "official_answer": 5
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1034,7 +1730,19 @@
    "label": "ウ",
    "text": "講演会参加者名簿提出事件判決（最二小判平成１５年９月１２日)は，大学が学生から収集した参加申込者の学籍番号，氏名，住所及び電話番号は，プライバシーに係る情報として法的保護の対象となるとし，個人の人格的な権利利益を損なうおそれがあるものであるとした。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 1,
+       "official_answer": 5
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1237,7 +1945,19 @@
    "label": "ア",
    "text": "国民各自は，一個の人間として，また一市民として，成長，発達し，自己の人格を完成，実現するために必要な学習する固有の権利を有し，特に，子どもは，そのための教育を自己に施すことを大人一般に対して要求する権利を有する。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 8,
+       "official_answer": 2
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1263,7 +1983,19 @@
    "label": "イ",
    "text": "個人の基本的自由を認め，その人格の独立を国政上尊重すべきものとしている憲法の下においては，子どもが自由かつ独立の人格として成長することを妨げるような国家的介入は，許されない。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 8,
+       "official_answer": 2
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1289,7 +2021,19 @@
    "label": "ウ",
    "text": "子どもの教育は，専ら子どもの利益のために，教育を与える者の責務として行われるべきものであるから，教育の内容及び方法については，その実施に当たる教師が，教育専門家としての立場から，決定し遂行すべきものである。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 8,
+       "official_answer": 2
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1570,7 +2314,19 @@
    "label": "ア",
    "text": "憲法第９条は，我が国が主権国として持つ固有の自衛権を否定するものではない。憲法前文の趣旨からして，憲法第９条は，国際連合のような国際機関にばかりでなく，他国に安全保障を求めることを禁じるものではない。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 18,
+       "official_answer": 3
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1596,7 +2352,19 @@
    "label": "イ",
    "text": "憲法第９条第２項にいう「戦力」とは，我が国がその主体となって指揮権，管理権を行使し得る戦力をいう。我が国に駐留する外国の軍隊がここにいう戦力に該当するか否かの判断は，裁判所の司法審査権の範囲外である。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 18,
+       "official_answer": 3
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1622,7 +2390,19 @@
    "label": "ウ",
    "text": "憲法第９条は国の基本的な法秩序を示した規定であるから，憲法より下位の法形式による全ての法規の解釈適用に当たって，その指導原理となり得るものであることはいうまでもないが，私法上の行為の効力を直接規律するものではない。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 18,
+       "official_answer": 3
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1648,7 +2428,19 @@
    "label": "ア",
    "text": "大学は，その設置目的を達成するために必要な事項を実施する，自律的，包括的な権能を有していることから，単位の授与や専攻科修了の認定に係る係争は，一般市民法秩序と直接の関係を有すると認められる特段の事情のない限り，司法審査の対象とはならない。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 19,
+       "official_answer": 6
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1674,7 +2466,19 @@
    "label": "イ",
    "text": "政党の処分が党員の一般市民としての権利利益への侵害となり得る場合においても，その処分の当否の司法審査は，政党の自律的に定めた規範が公序良俗に反するなどの特段の事情のない限り，その規範に照らし適正な手続にのっとってされたかどうかの範囲で行われる。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 19,
+       "official_answer": 6
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1700,7 +2504,19 @@
    "label": "ウ",
    "text": "地方議会における自律的な法規範の実現については，内部規律の問題として自治的措置に任せるのが適当であるが，数日間に及ぶ議会への出席停止の懲罰は，議員の重大な権利行使に対する制限であり，単なる内部規律の問題に止まらないから，司法審査の対象となる。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 19,
+       "official_answer": 6
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1726,7 +2542,19 @@
    "label": "ア",
    "text": "憲法第８１条は，当事者間の具体的な権利義務ないし法律関係の存否に関する争訟事件を解決するのに必要な限度で，裁判所に違憲審査権を付与した規定である。したがって，裁判所にはいわゆる客観訴訟において違憲審査を行う権限はない。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 20,
+       "official_answer": 5
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1752,7 +2580,19 @@
    "label": "イ",
    "text": "憲法は国の最高法規であってこれに反する法律命令等はその効力を有さず，裁判官は憲法及び法律に拘束され，憲法を尊重擁護する義務を負う。したがって，最高裁判所に限らず下級裁判所の裁判官も違憲審査の権限を有する。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 20,
+       "official_answer": 5
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1778,7 +2618,19 @@
    "label": "ウ",
    "text": "憲法第８１条が「一切の法律，命令，規則又は処分」という場合の「処分」とは，統治機関の行為の意味である。したがって，これには行政機関の行政処分のみならず，裁判所の判決も含まれる。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 20,
+       "official_answer": 5
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1882,7 +2734,19 @@
    "label": "ア",
    "text": "憲法改正国民投票制は，国民の憲法制定権力の思想を端的に具体化したものであるとの見解によれば，これを廃止することは，改正権の自己否定であり，国民主権の原理を揺るがす意味を持つので，憲法改正によっても国民投票制を廃止することは許されないこととなる。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 24,
+       "official_answer": 1
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1908,7 +2772,19 @@
    "label": "イ",
    "text": "憲法では，憲法改正には国民投票の「過半数の賛成」が必要であると規定されている。過半数の意味については，見解が分かれていたが，平成２２年５月に施行された「日本国憲法の改正手続に関する法律」では，投票総数（賛成票と反対票の合計）の過半数とされている。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 24,
+       "official_answer": 1
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1934,7 +2810,19 @@
    "label": "ウ",
    "text": "憲法では，憲法改正について国民の承認を得たときは，天皇は「国民の名で，この憲法と一体を成すものとして」公布すると規定されている。これは，憲法改正権が国民にあることを明確にし，改正された部分も他の部分と同様の最高法規としての効力を有することを意味する。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 24,
+       "official_answer": 1
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,

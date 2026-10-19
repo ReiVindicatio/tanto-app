@@ -263,7 +263,7 @@
    "subject": "kenpo",
    "number": 4,
    "points": 2,
-   "format": "meta_choice",
+   "format": "mark_combination",
    "polarity": null,
    "exhaustive": false,
    "unordered": false,
@@ -274,35 +274,147 @@
    "choices": [
     {
      "number": 1,
-     "text": "ア○ イ○ ウ○"
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 2,
-     "text": "ア○ イ○ ウ×"
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 3,
-     "text": "ア○ イ× ウ○"
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 4,
-     "text": "ア○ イ× ウ×"
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 5,
-     "text": "ア× イ○ ウ○"
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 6,
-     "text": "ア× イ○ ウ×"
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 7,
-     "text": "ア× イ× ウ○"
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 8,
-     "text": "ア× イ× ウ×"
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     }
    ],
    "answer_slots": [
@@ -326,7 +438,7 @@
     "yobi-2012-kenpo-q04-b",
     "yobi-2012-kenpo-q04-c"
    ],
-   "statement_truth_derivable": false,
+   "statement_truth_derivable": true,
    "provenance": {
     "question_pdf": "data/raw/予備試験/短答/H24-2012/憲法行政法_問題.pdf",
     "answer_pdf": "data/raw/予備試験/短答/H24-2012/憲法行政法_正答.pdf",
@@ -349,7 +461,7 @@
    "subject": "kenpo",
    "number": 5,
    "points": 2,
-   "format": "meta_choice",
+   "format": "mark_combination",
    "polarity": null,
    "exhaustive": false,
    "unordered": false,
@@ -360,35 +472,147 @@
    "choices": [
     {
      "number": 1,
-     "text": "ア○ イ○ ウ○"
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 2,
-     "text": "ア○ イ○ ウ×"
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 3,
-     "text": "ア○ イ× ウ○"
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 4,
-     "text": "ア○ イ× ウ×"
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 5,
-     "text": "ア× イ○ ウ○"
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 6,
-     "text": "ア× イ○ ウ×"
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 7,
-     "text": "ア× イ× ウ○"
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 8,
-     "text": "ア× イ× ウ×"
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     }
    ],
    "answer_slots": [
@@ -412,7 +636,7 @@
     "yobi-2012-kenpo-q05-b",
     "yobi-2012-kenpo-q05-c"
    ],
-   "statement_truth_derivable": false,
+   "statement_truth_derivable": true,
    "provenance": {
     "question_pdf": "data/raw/予備試験/短答/H24-2012/憲法行政法_問題.pdf",
     "answer_pdf": "data/raw/予備試験/短答/H24-2012/憲法行政法_正答.pdf",
@@ -435,7 +659,7 @@
    "subject": "kenpo",
    "number": 6,
    "points": 2,
-   "format": "meta_choice",
+   "format": "mark_combination",
    "polarity": null,
    "exhaustive": false,
    "unordered": false,
@@ -446,35 +670,147 @@
    "choices": [
     {
      "number": 1,
-     "text": "ア○ イ○ ウ○"
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 2,
-     "text": "ア○ イ○ ウ×"
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 3,
-     "text": "ア○ イ× ウ○"
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 4,
-     "text": "ア○ イ× ウ×"
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 5,
-     "text": "ア× イ○ ウ○"
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 6,
-     "text": "ア× イ○ ウ×"
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 7,
-     "text": "ア× イ× ウ○"
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 8,
-     "text": "ア× イ× ウ×"
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     }
    ],
    "answer_slots": [
@@ -498,7 +834,7 @@
     "yobi-2012-kenpo-q06-b",
     "yobi-2012-kenpo-q06-c"
    ],
-   "statement_truth_derivable": false,
+   "statement_truth_derivable": true,
    "provenance": {
     "question_pdf": "data/raw/予備試験/短答/H24-2012/憲法行政法_問題.pdf",
     "answer_pdf": "data/raw/予備試験/短答/H24-2012/憲法行政法_正答.pdf",
@@ -1352,7 +1688,19 @@
    "label": "ア",
    "text": "憲法第２９条は，私有財産制度を保障しているのみでなく，国民の個々の財産権につきこれを基本的人権として保障しているが，それ自体に内在する制約があるほか，社会全体の利益を図るための規制により制約を受ける。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 8,
+       "official_answer": 3
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1378,7 +1726,19 @@
    "label": "イ",
    "text": "財産権規制の目的には，社会政策及び経済政策上の積極的なものから，安全の保障や秩序の維持等の消極的なものまで種々様々なものがあり得るが，森林法の共有林分割請求権を制限する規定は積極目的による規制である。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 8,
+       "official_answer": 3
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1404,7 +1764,19 @@
    "label": "ウ",
    "text": "財産権規制の目的が公共の福祉に合致しないことが明らかであるか，規制手段が規制目的を達成する手段として必要性や合理性に欠けていることが明らかであって，立法府の判断が合理的裁量の範囲を超えるものとなる場合に限り，当該規制立法は違憲となる。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 8,
+       "official_answer": 3
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1430,7 +1802,19 @@
    "label": "ア",
    "text": "憲法第１７条は，公務員の不法行為による国又は公共団体の損害賠償責任を免除又は制限する法律が立法権の裁量を逸脱したものである場合には，これを違憲無効とする効力を持つ規定である。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 9,
+       "official_answer": 4
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1456,7 +1840,19 @@
    "label": "イ",
    "text": "書留郵便物について，郵便業務従事者の故意又は重大な過失によって損害が生じた場合に，国の損害賠償責任を全面的に免除する立法は違憲無効であるが，法律で国が負担すべき賠償額に一定の制限を付することは許される。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 9,
+       "official_answer": 4
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1482,7 +1878,19 @@
    "label": "ウ",
    "text": "特別送達郵便物について，郵便業務従事者の故意又は重大な過失によって損害が生じた場合に，国の損害賠償責任を免除又は制限する立法は違憲無効であるが，軽過失にとどまる場合には，国の損害賠償責任を免除又は制限することも許される。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 9,
+       "official_answer": 4
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1508,7 +1916,19 @@
    "label": "ア",
    "text": "憲法第２６条第２項前段は，国民がその保護する子女に普通教育を受けさせる義務を負うことを定めている。これは，同条第１項が保障する子どもの教育を受ける権利の保障に対応したものであって，子ども自身に教育を受ける義務を負わせるものではない。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 10,
+       "official_answer": 3
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1534,7 +1954,19 @@
    "label": "イ",
    "text": "憲法第２７条第１項は，国民の勤労の義務を定めている。したがって，憲法第１８条で禁止されている「その意に反する苦役」に至らないものであれば，法律の定めにより，刑罰をもって勤労を強制することも許される。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 10,
+       "official_answer": 3
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1560,7 +1992,19 @@
    "label": "ウ",
    "text": "憲法第３０条は，国民の納税義務を定めている。この規定は，国家の存立に不可欠な財政を支えるという国民としての当然の義務を確認するとともに，その義務の具体化には法律の定めが必要であるとしたものである。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 10,
+       "official_answer": 3
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,

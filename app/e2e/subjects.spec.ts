@@ -79,3 +79,29 @@ test("区分を選ぶ形式（刑法 H24 問4）：区分の一覧が出て、�
   await expect(page.locator(".result .big")).toHaveText(`${target.points} / ${target.points} 点`);
   await expect(page.locator(".law-note")).toContainText("拘禁刑の導入");
 });
+
+test("○×の組合せの問（行政法 H29）：肢カードになり、問で解くでも公式の解答で満点になる（T035）", async ({ page, request }) => {
+  const data = await (await request.get("/data/yobi-2017-gyosei.json")).json();
+  const marks = data.questions.filter((q: any) => q.format === "mark_combination");
+  expect(marks.length).toBeGreaterThan(0);
+  // 肢の○×は、正解の選択肢に書かれた○×そのもの
+  for (const q of marks) {
+    const chosen = q.choices[q.answer_slots[0].official_answer - 1].marks;
+    for (const s of data.statements.filter((x: any) => x.question_id === q.id)) {
+      expect(s.truth_at_exam.value).toBe(chosen.find((m: any) => m.label === s.label).value);
+    }
+  }
+  await openHome(page);
+  await openYear(page, "行政法", "H29", "問で解く");
+  const total = data.questions.reduce((n: number, q: any) => n + q.points, 0);
+  for (const q of data.questions) {
+    await expect(page.locator(".question")).toContainText(`第${q.number}問`);
+    for (let k = 0; k < q.answer_slots.length; k++) {
+      await page.locator(".slot").nth(k).locator("button.opt", { hasText: new RegExp(`^${q.answer_slots[k].official_answer}`) }).click();
+    }
+    await page.getByRole("button", { name: "採点する" }).click();
+    await expect(page.locator(".result .big")).toHaveText(`${q.points} / ${q.points} 点`);
+    await page.getByRole("button", { name: "次へ" }).click();
+  }
+  await expect(page.getByText(`${total} / ${total} 点`)).toBeVisible();
+});

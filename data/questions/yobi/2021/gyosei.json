@@ -26,7 +26,7 @@
    "subject": "gyosei",
    "number": 13,
    "points": 2,
-   "format": "meta_choice",
+   "format": "mark_combination",
    "polarity": null,
    "exhaustive": false,
    "unordered": false,
@@ -37,35 +37,147 @@
    "choices": [
     {
      "number": 1,
-     "text": "ア〇 イ〇 ウ○"
+     "text": "ア〇 イ〇 ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 2,
-     "text": "ア〇 イ〇 ウ×"
+     "text": "ア〇 イ〇 ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 3,
-     "text": "ア〇 イ× ウ○"
+     "text": "ア〇 イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 4,
-     "text": "ア〇 イ× ウ×"
+     "text": "ア〇 イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 5,
-     "text": "ア× イ〇 ウ○"
+     "text": "ア× イ〇 ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 6,
-     "text": "ア× イ〇 ウ×"
+     "text": "ア× イ〇 ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 7,
-     "text": "ア× イ× ウ○"
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 8,
-     "text": "ア× イ× ウ×"
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     }
    ],
    "answer_slots": [
@@ -89,7 +201,7 @@
     "yobi-2021-gyosei-q13-b",
     "yobi-2021-gyosei-q13-c"
    ],
-   "statement_truth_derivable": false,
+   "statement_truth_derivable": true,
    "provenance": {
     "question_pdf": "data/raw/予備試験/短答/R03-2021/憲法行政法_問題.pdf",
     "answer_pdf": "data/raw/予備試験/短答/R03-2021/憲法行政法_正答.pdf",
@@ -112,7 +224,7 @@
    "subject": "gyosei",
    "number": 14,
    "points": 2,
-   "format": "meta_choice",
+   "format": "mark_combination",
    "polarity": null,
    "exhaustive": false,
    "unordered": false,
@@ -123,35 +235,147 @@
    "choices": [
     {
      "number": 1,
-     "text": "ア〇 イ〇 ウ○"
+     "text": "ア〇 イ〇 ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 2,
-     "text": "ア〇 イ〇 ウ×"
+     "text": "ア〇 イ〇 ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 3,
-     "text": "ア〇 イ× ウ○"
+     "text": "ア〇 イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 4,
-     "text": "ア〇 イ× ウ×"
+     "text": "ア〇 イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 5,
-     "text": "ア× イ〇 ウ○"
+     "text": "ア× イ〇 ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 6,
-     "text": "ア× イ〇 ウ×"
+     "text": "ア× イ〇 ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 7,
-     "text": "ア× イ× ウ○"
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 8,
-     "text": "ア× イ× ウ×"
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     }
    ],
    "answer_slots": [
@@ -175,7 +399,7 @@
     "yobi-2021-gyosei-q14-b",
     "yobi-2021-gyosei-q14-c"
    ],
-   "statement_truth_derivable": false,
+   "statement_truth_derivable": true,
    "provenance": {
     "question_pdf": "data/raw/予備試験/短答/R03-2021/憲法行政法_問題.pdf",
     "answer_pdf": "data/raw/予備試験/短答/R03-2021/憲法行政法_正答.pdf",
@@ -198,7 +422,7 @@
    "subject": "gyosei",
    "number": 15,
    "points": 2,
-   "format": "meta_choice",
+   "format": "mark_combination",
    "polarity": null,
    "exhaustive": false,
    "unordered": false,
@@ -209,35 +433,147 @@
    "choices": [
     {
      "number": 1,
-     "text": "ア〇 イ〇 ウ○"
+     "text": "ア〇 イ〇 ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 2,
-     "text": "ア〇 イ〇 ウ×"
+     "text": "ア〇 イ〇 ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 3,
-     "text": "ア〇 イ× ウ○"
+     "text": "ア〇 イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 4,
-     "text": "ア〇 イ× ウ×"
+     "text": "ア〇 イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 5,
-     "text": "ア× イ〇 ウ○"
+     "text": "ア× イ〇 ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 6,
-     "text": "ア× イ〇 ウ×"
+     "text": "ア× イ〇 ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 7,
-     "text": "ア× イ× ウ○"
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 8,
-     "text": "ア× イ× ウ×"
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     }
    ],
    "answer_slots": [
@@ -261,7 +597,7 @@
     "yobi-2021-gyosei-q15-b",
     "yobi-2021-gyosei-q15-c"
    ],
-   "statement_truth_derivable": false,
+   "statement_truth_derivable": true,
    "provenance": {
     "question_pdf": "data/raw/予備試験/短答/R03-2021/憲法行政法_問題.pdf",
     "answer_pdf": "data/raw/予備試験/短答/R03-2021/憲法行政法_正答.pdf",
@@ -284,7 +620,7 @@
    "subject": "gyosei",
    "number": 16,
    "points": 2,
-   "format": "meta_choice",
+   "format": "mark_combination",
    "polarity": null,
    "exhaustive": false,
    "unordered": false,
@@ -295,35 +631,147 @@
    "choices": [
     {
      "number": 1,
-     "text": "ア〇 イ〇 ウ○"
+     "text": "ア〇 イ〇 ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 2,
-     "text": "ア〇 イ〇 ウ×"
+     "text": "ア〇 イ〇 ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 3,
-     "text": "ア〇 イ× ウ○"
+     "text": "ア〇 イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 4,
-     "text": "ア〇 イ× ウ×"
+     "text": "ア〇 イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 5,
-     "text": "ア× イ〇 ウ○"
+     "text": "ア× イ〇 ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 6,
-     "text": "ア× イ〇 ウ×"
+     "text": "ア× イ〇 ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 7,
-     "text": "ア× イ× ウ○"
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 8,
-     "text": "ア× イ× ウ×"
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     }
    ],
    "answer_slots": [
@@ -347,7 +795,7 @@
     "yobi-2021-gyosei-q16-b",
     "yobi-2021-gyosei-q16-c"
    ],
-   "statement_truth_derivable": false,
+   "statement_truth_derivable": true,
    "provenance": {
     "question_pdf": "data/raw/予備試験/短答/R03-2021/憲法行政法_問題.pdf",
     "answer_pdf": "data/raw/予備試験/短答/R03-2021/憲法行政法_正答.pdf",
@@ -745,7 +1193,7 @@
    "subject": "gyosei",
    "number": 22,
    "points": 2,
-   "format": "meta_choice",
+   "format": "mark_combination",
    "polarity": null,
    "exhaustive": false,
    "unordered": false,
@@ -756,35 +1204,147 @@
    "choices": [
     {
      "number": 1,
-     "text": "ア〇 イ〇 ウ○"
+     "text": "ア〇 イ〇 ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 2,
-     "text": "ア〇 イ〇 ウ×"
+     "text": "ア〇 イ〇 ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 3,
-     "text": "ア〇 イ× ウ○"
+     "text": "ア〇 イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 4,
-     "text": "ア〇 イ× ウ×"
+     "text": "ア〇 イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 5,
-     "text": "ア× イ〇 ウ○"
+     "text": "ア× イ〇 ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 6,
-     "text": "ア× イ〇 ウ×"
+     "text": "ア× イ〇 ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 7,
-     "text": "ア× イ× ウ○"
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 8,
-     "text": "ア× イ× ウ×"
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     }
    ],
    "answer_slots": [
@@ -808,7 +1368,7 @@
     "yobi-2021-gyosei-q22-b",
     "yobi-2021-gyosei-q22-c"
    ],
-   "statement_truth_derivable": false,
+   "statement_truth_derivable": true,
    "provenance": {
     "question_pdf": "data/raw/予備試験/短答/R03-2021/憲法行政法_問題.pdf",
     "answer_pdf": "data/raw/予備試験/短答/R03-2021/憲法行政法_正答.pdf",
@@ -831,7 +1391,7 @@
    "subject": "gyosei",
    "number": 23,
    "points": 2,
-   "format": "meta_choice",
+   "format": "mark_combination",
    "polarity": null,
    "exhaustive": false,
    "unordered": false,
@@ -842,35 +1402,147 @@
    "choices": [
     {
      "number": 1,
-     "text": "ア〇 イ〇 ウ○"
+     "text": "ア〇 イ〇 ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 2,
-     "text": "ア〇 イ〇 ウ×"
+     "text": "ア〇 イ〇 ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 3,
-     "text": "ア〇 イ× ウ○"
+     "text": "ア〇 イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 4,
-     "text": "ア〇 イ× ウ×"
+     "text": "ア〇 イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 5,
-     "text": "ア× イ〇 ウ○"
+     "text": "ア× イ〇 ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 6,
-     "text": "ア× イ〇 ウ×"
+     "text": "ア× イ〇 ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     },
     {
      "number": 7,
-     "text": "ア× イ× ウ○"
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
     },
     {
      "number": 8,
-     "text": "ア× イ× ウ×"
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
     }
    ],
    "answer_slots": [
@@ -894,7 +1566,7 @@
     "yobi-2021-gyosei-q23-b",
     "yobi-2021-gyosei-q23-c"
    ],
-   "statement_truth_derivable": false,
+   "statement_truth_derivable": true,
    "provenance": {
     "question_pdf": "data/raw/予備試験/短答/R03-2021/憲法行政法_問題.pdf",
     "answer_pdf": "data/raw/予備試験/短答/R03-2021/憲法行政法_正答.pdf",
@@ -988,7 +1660,19 @@
    "label": "ア",
    "text": "各省大臣は，主任の行政事務について，法律又は政令の特別の委任に基づくことなく，法律又は政令を施行するための省令を発することができる。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 25,
+       "official_answer": 4
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1014,7 +1698,19 @@
    "label": "イ",
    "text": "各省大臣の発する告示は，必要な事項を国民に公示するものにすぎず，文部科学大臣の発する告示である学習指導要領は，法規としての性質を有しない。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 25,
+       "official_answer": 4
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1040,7 +1736,19 @@
    "label": "ウ",
    "text": "各省大臣の発する通達は，その機関の所掌事務についての所管の諸機関及び職員に対する拘束力を有する命令又は示達であり，法規としての性質を有する。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 25,
+       "official_answer": 4
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1066,7 +1774,19 @@
    "label": "ア",
    "text": "行政庁が適法に行った行政行為をその後の事情の変化に伴って将来に向かって撤回することは，法令上直接明文の規定がなくとも可能であるが，それによって不利益を被る者に生じる損失を補償しなければ当該撤回の効力は生じない。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 26,
+       "official_answer": 6
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1092,7 +1812,19 @@
    "label": "イ",
    "text": "課税処分の違法性は，滞納処分に承継されないことから，滞納処分の取消訴訟において，課税処分の違法を滞納処分の違法事由として主張することは許されないが，課税処分に重大かつ明白な違法があって無効であるとの主張をすることは許される。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 26,
+       "official_answer": 6
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1118,7 +1850,19 @@
    "label": "ウ",
    "text": "裁決庁が，一定の争訟手続に従って，当事者を手続に関与させて，紛争の終局的解決を図ることを目的とする裁決をした後に当該裁決の誤りに気が付いた場合，特別の規定がなくとも当該裁決を取り消すことは可能であるが，取消しによって生ずる不利益と，取消しをしないことによる不利益とを比較考量し，当該裁決を放置することが公共の福祉の要請に照らし著しく不当と認められることが必要となる。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 26,
+       "official_answer": 6
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1144,7 +1888,19 @@
    "label": "ア",
    "text": "何人も，法令に違反する事実がある場合において，その是正のためにされるべき処分がされていないと思料するときは，当該処分をする権限を有する行政庁に対し，その旨を申し出て，当該処分をすることを求めることができる。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 27,
+       "official_answer": 1
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1170,7 +1926,19 @@
    "label": "イ",
    "text": "聴聞の期日における審理については，聴聞の主宰者は，非公開で行うことができ，行政庁が公開することを相当と認めるときを除き，公開する必要はない。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 27,
+       "official_answer": 1
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1196,7 +1964,19 @@
    "label": "ウ",
    "text": "弁明の機会の付与については，聴聞における代理人に関する規定は準用されているが，参加人に関する規定は準用されていない。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 27,
+       "official_answer": 1
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1222,7 +2002,19 @@
    "label": "ア",
    "text": "行政庁の裁量処分の取消しについて定める行政事件訴訟法第３０条は，行政処分の当不当の問題については裁判所の審理権が及ばないという当然の原則を明示したものであり，取消訴訟以外の抗告訴訟にも同条が準用されるものがある。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 28,
+       "official_answer": 8
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1248,7 +2040,19 @@
    "label": "イ",
    "text": "行政庁が行政手続法第１２条第１項に従い処分基準を定めて公にしたが，後に，特段の事情がないにもかかわらず，当該処分基準の定めと異なる内容の処分をしたときは，当該処分は，同項に違反するものとして取り消されるのであり，裁量権の範囲の逸脱又はその濫用の問題は生じない。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 28,
+       "official_answer": 8
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -1274,7 +2078,19 @@
    "label": "ウ",
    "text": "行政庁の裁量処分の取消しについて，行政事件訴訟法第３０条は，「取り消すことができる」と規定しており，これは，裁量権の範囲の逸脱又はその濫用があったときでも，公の利益に配慮して当該処分を取り消すか否かの裁量を裁判所に認める趣旨を含むものである。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 28,
+       "official_answer": 8
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -2020,7 +2836,19 @@
    "label": "ア",
    "text": "憲法第１７条は，国又は公共団体が公務員のどのような行為によりいかなる要件で損害賠償責任を負うかを立法府の政策判断に委ねたものであるから，公務員の不法行為による国又は公共団体の損害賠償責任を免除し，又は制限する内容の法律の規定が同条に違反するとして，無効とされることはない。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 49,
+       "official_answer": 5
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -2046,7 +2874,19 @@
    "label": "イ",
    "text": "国家賠償法第２条第１項の営造物責任に関し，同法第３条第１項の「費用を負担する者」には，当該営造物の設置費用につき法律上負担義務を負う者だけでなく，この者と同等又はこれに近い設置費用を負担し，実質的にこの者と当該営造物による事業を共同して執行していると認められる者であって，当該営造物の瑕疵による危険を効果的に防止し得る者も含まれる。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 49,
+       "official_answer": 5
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -2072,7 +2912,19 @@
    "label": "ウ",
    "text": "税務署長のする所得税の更正は，所得金額を過大に認定していた場合であっても，当該税務署長において職務上通常尽くすべき注意義務を尽くすことなく漫然と更正をしたと認め得るような事情がない限り，国家賠償法第１条第１項にいう違法があったとの評価を受けない。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 49,
+       "official_answer": 5
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -2098,7 +2950,19 @@
    "label": "ア",
    "text": "憲法第２９条第３項は「正当な補償」と規定しているだけで補償の時期については規定していないから，損失補償が私有財産の供与と交換的に同時履行されなくても，憲法に違反するものではない。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 50,
+       "official_answer": 3
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -2124,7 +2988,19 @@
    "label": "イ",
    "text": "日本国が平和条約により連合国に対する賠償義務を承認し，日本国民の在外資産を賠償に充当することに対して国として異議を唱えず承認した結果，在外資産を喪失することになった国民は，憲法第２９条第３項に基づき国に補償を求めることができる。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": false,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 50,
+       "official_answer": 3
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,
@@ -2150,7 +3026,19 @@
    "label": "ウ",
    "text": "土地収用法における損失の補償は，特定の公益上必要な事業のために土地が収用される場合，その収用によって当該土地の所有者等が被る特別な犠牲の回復を図ることを目的とするものであるから，被収用者は，収用の前後を通じて被収用者の保持する財産価値を等しくさせるような補償を求めることができる。",
    "requires_context": false,
-   "truth_at_exam": null,
+   "truth_at_exam": {
+    "value": true,
+    "derivation": "mark_combination",
+    "basis": "direct",
+    "derived_from": {
+     "slots": [
+      {
+       "no": 50,
+       "official_answer": 3
+      }
+     ]
+    }
+   },
    "truth_current": {
     "status": "unreviewed",
     "value": null,

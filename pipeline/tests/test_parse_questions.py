@@ -109,16 +109,34 @@ class ParseQuestionsTest(unittest.TestCase):
         self.assertEqual(q["context"][0]["kind"], "本文")
         self.assertTrue(q["requires_context"])
 
-    def test_mark_combination_is_not_derived_as_combination(self):
-        # 「〇」（漢数字のゼロ）と「組み合わせ」の表記ゆれも。組合せとして導出すると○×を取り違えるので問題カードにする
+    def test_mark_combination_reads_marks_of_each_choice(self):
+        # 「〇」（漢数字のゼロ）と「組み合わせ」の表記ゆれも。組合せ（combination）として読むと○×を取り違える（決定016）
         q = parse("  次のアからイまでの各記述について，正しいものには〇，誤っているものには×を付した場合の組み合わせを，\n"
                   " 後記１から４までの中から選びなさい。（解答欄は，［№20］）\n"
                   "  ア．甲である。\n"
                   "  イ．乙である。\n"
+                  "１．ア○ イ○ ２．ア〇 イ× ３．ア× イ○ ４．ア× イ×")
+        self.assertEqual(q["format"], "mark_combination")
+        self.assertEqual(len(q["choices"]), 4)
+        self.assertEqual(q["choices"][1]["marks"], [{"label": "ア", "value": True}, {"label": "イ", "value": False}])
+
+    def test_mark_combination_without_statements_is_question_card(self):
+        # 下線部が肢の問（下線の範囲がテキストに残らない）は肢がないので問題カード
+        q = parse("  次の文章のアからイまでの下線部の各記述について，正しいものに○，誤っているものに×を付した場合の組合せを，\n"
+                  " 後記１から４までの中から選びなさい。（解答欄は，［№20］）\n"
+                  " 【文章】\n"
+                  "  甲は乙である。丙は丁である。\n"
                   "１．ア○ イ○ ２．ア○ イ× ３．ア× イ○ ４．ア× イ×")
         self.assertEqual(q["format"], "meta_choice")
-        self.assertEqual(len(q["choices"]), 4)
 
+    def test_embedded_statement_with_halfwidth_parens(self):
+        q = parse("  次の対話中のアからイまでの【 】内の各記述について，正しいものに○，誤っているものに×を付した場合の組合せを，\n"
+                  " 後記１から４までの中から選びなさい。（解答欄は，［№54］）\n"
+                  "  学生：（ア）【甲である。】教員：なるほど。\n"
+                  "  学生：(イ)【乙である。】\n"
+                  "１．ア○ イ○ ２．ア○ イ× ３．ア× イ○ ４．ア× イ×")
+        self.assertEqual([(s["label"], s["text"]) for s in q["statements"]], [("ア", "甲である。"), ("イ", "乙である。")])
+        self.assertEqual(q["format"], "mark_combination")
 
 if __name__ == "__main__":
     unittest.main()

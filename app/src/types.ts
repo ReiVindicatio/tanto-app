@@ -10,6 +10,8 @@ export type Choice = {
   labels?: string[];
   blanks?: { blank: number; word: string }[];
   count?: number | null;
+  /** ○×の組合せ（mark_combination）の各肢の○×（決定016） */
+  marks?: { label: string; value: boolean }[];
 };
 
 export type Slot = { no: number; official_answer: number; statement_label?: string; sub?: number };
@@ -22,6 +24,7 @@ export type Format =
   | "single_choice"
   | "multi_select_unordered"
   | "true_false_each"
+  | "mark_combination"
   | "classify_each"
   | "count"
   | "fill_blank"

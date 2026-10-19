@@ -17,7 +17,7 @@ from common import EXAM_IDS, GROUP_IDS, PARSED, ROOT, SUBJECT_IDS, errata_for_qu
 
 QUESTIONS = ROOT / "data" / "questions"
 SITE_URL = "https://www.moj.go.jp/jinji/shihoushiken/"
-DERIVABLE = {"combination", "single_choice", "multi_select_unordered", "true_false_each", "compound"}
+DERIVABLE = {"combination", "single_choice", "multi_select_unordered", "true_false_each", "compound", "mark_combination"}
 
 
 class DeriveError(Exception):
@@ -60,6 +60,11 @@ def derive_by_label(q: dict, answers: list[int]) -> dict[str, dict] | None:
                 raise DeriveError(f"問{q['number']}：各肢○×の解答が1・2以外（{v}）")
             out[lab] = {"value": v == 1, "basis": "direct"}
         return out
+
+    if fmt == "mark_combination":
+        # 正解の選択肢に各肢の○×がそのまま書いてある（決定016）
+        marks = {m["label"]: m["value"] for m in q["choices"][answers[0] - 1]["marks"]}
+        return {lab: {"value": marks[lab], "basis": "direct"} for lab in labels}
 
     if pol is None:
         return None
@@ -104,6 +109,12 @@ def check_consistency(q: dict, truths: dict[str, dict], answers: list[int]) -> N
                 raise DeriveError(f"問{n} {sq['marker']}：導出した○×で当てはまる肢が {hits}（公式解答 {answers[g]}）")
         return
     label_of = {s["id"]: s["label"] for s in q["statements"]}
+    if fmt == "mark_combination":
+        value = {label_of[sid]: t["value"] for sid, t in truths.items()}
+        matches = [c["number"] for c in q["choices"] if all(value[m["label"]] == m["value"] for m in c["marks"])]
+        if matches != [answers[0]]:
+            raise DeriveError(f"問{n}：導出した○×で当てはまる選択肢が {matches}（公式解答 {answers[0]}）")
+        return
     side = pol == "correct"
     p_side = {label_of[sid] for sid, t in truths.items() if t["value"] == side}
     if fmt == "combination":

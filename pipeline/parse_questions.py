@@ -41,7 +41,7 @@ BARE_RANGE_RE = re.compile(r"解答欄は[,、]\[No\.(\d+)\]から\[No\.(\d+)\]"
 ANY_RANGE_RE = re.compile(r"\[No\.(\d+)\]から\[No\.(\d+)\]")
 # 本文の中に肢が埋め込まれている形：「次のアからエまでの【 】内の各記述について」（行政法に多い。T008）
 EMBED_STEM_RE = re.compile(r"[ア1]から[イウエオカキクケコ2-9]まで(?:の)?【\s*】内の(?:各)?記述")
-EMBED_ITEM_RE = re.compile(r"（([アイウエオカキクケコ])）【([^】]*)】")
+EMBED_ITEM_RE = re.compile(r"[（(]([アイウエオカキクケコ])[）)]【([^】]*)】")  # 「(ウ)【」（半角。H29 行政法 問23）
 # 肢ごとに○×を付けた組合せから選ぶ形：「正しいものに○，誤っているものに×を付した場合の組合せ」（T008）
 MARK_COMBINATION_RE = re.compile(r"[○〇].{0,20}×を付した場合の組み?合わ?せ")  # 「〇」（漢数字のゼロ）で書く年度がある
 # 対話の話者の行（「  甲    「…」「  教員：…」）
@@ -185,8 +185,8 @@ def detect_format(stem_n: str, has_choices: bool, blocks: set[str]) -> tuple[str
         # 各事例について、それぞれ選択肢（執行停止・仮の義務付け…）から1つ選ぶ（H30 行政法 問22）。区分＝選択肢
         return "classify_each", None
     if has_choices and MARK_COMBINATION_RE.search(stem_n):
-        # 肢ごとの○×の組合せから選ぶ形。今は問題カード（決定待ち：肢の○×は公式の解答からそのまま決まるので導出できる）
-        return "meta_choice", None
+        # 肢ごとの○×の組合せから選ぶ形。正解の選択肢の○×がそのまま肢の○×（決定016）
+        return "mark_combination", None
     if not has_choices and "選びなさい" in stem_n and len(re.findall(r"(?:には|に)\d+を", stem_n)) >= 2:
         # 肢ごとに区分（１・２・３…）を選ぶ（T033）。○×に読み替えず、問で解くだけで出す（決定014）
         return "classify_each", None
@@ -227,6 +227,8 @@ def parse_choices(fmt: str, text: str) -> list[dict]:
         elif fmt == "fill_blank":
             c["blanks"] = [{"blank": ord(b) - ord("①") + 1, "word": w}
                            for b, w in re.findall(r"([①-⑳])\s*([" + WORD_LABELS + "])", body)]
+        elif fmt == "mark_combination":
+            c["marks"] = [{"label": lab, "value": m != "×"} for lab, m in re.findall(r"([アイウエオカキクケコ])\s*([○〇×])", body)]
         elif fmt == "count":
             m = re.fullmatch(r"([0-9０-９]+)個", body)
             c["count"] = to_int(m.group(1)) if m else None
@@ -445,6 +447,10 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
     if fmt == "combination" and choices and out_statements and all(not c.get("labels") for c in choices):
         # 組合せだが、選択肢が肢のラベルでなく別の一覧（【乙群】のＡ〜Ｆなど）の組合せ（H23 行政法 問23）。肢の○×は出せない
         fmt, polarity = "meta_choice", None
+        choices = parse_choices(fmt, " ".join(l.strip() for _, l in choice_lines))
+    if fmt == "mark_combination" and not out_statements:
+        # 肢がテキストに残らない（下線部が肢の問：H23 行政法 問13）。肢の○×は出せないので問題カード
+        fmt = "meta_choice"
         choices = parse_choices(fmt, " ".join(l.strip() for _, l in choice_lines))
     if fmt in ("combination", "count") and choices and not out_statements and context:
         # ア〜オの肢がなく、【会話】【発言】の学生と見解の対応・発言者の組合せ・人数などを選ぶ形（R01 刑法 問10・R03 刑訴 問16）。
