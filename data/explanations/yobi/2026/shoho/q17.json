@@ -1,0 +1,292 @@
+{
+ "question_id": "yobi-2026-shoho-q17",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q17-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。株券の発行前にした譲渡は株券発行会社に対し効力を生じず、会社が遅滞なく株券を発行した場合にはこの原則がそのまま当てはまる。",
+   "body": "128条2項は、「株券の発行前にした譲渡は、株券発行会社に対し、その効力を生じない」と定める。判例（旧商法の同趣旨の規定について）は、この規定は会社との関係では何らの効力も生じない趣旨であり、会社の側からも譲渡の効力を認めることはできないとした。他方、会社が株券の発行を不当に遅滞した場合には、会社は株券発行前であることを理由に譲渡の効力を否定できないとする判例あり（要確認）。本肢は、遅滞なく株券が発行された場合（不当な遅滞がない場合）であるから原則どおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "128",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株券の発行前にした譲渡は、株券発行会社に対し、その効力を生じない。",
+     "text_sha256": "9d48b6d8c7cf51bb89265ffdeed505701cb0ffe9fa95c9d9dbd7531198cc72ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "株主総会決議不存在確認",
+     "court": "最高裁判所第二小法廷",
+     "date": "1958-10-24",
+     "holding": "株券発行前にされた記名株式の譲渡は、株券を発行しうる合理的期間の経過後にされ、会社がその譲渡を承認した場合であっても、会社に対して効力を生じない（旧商法204条2項の下での判断。民集12巻14号3194頁）。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52829/detail2/index.html",
+      "https://www.courts.go.jp/assets/hanrei/hanrei-pdf-52829.pdf"
+     ]
+    }
+   ],
+   "notes": [
+    "掲げた判例は旧商法204条2項の下での判断。会社が株券の発行を不当に遅滞した場合の例外を示したとされる最高裁大法廷の判決（昭和47年）は、裁判所のサイトで確認できなかったため cases に入れず「要確認」とした。"
+   ],
+   "id": "exp-yobi-2026-shoho-q17-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q17-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。子会社による親会社株式の取得は原則禁止だが、他の会社の事業の全部を譲り受ける場合にその会社の有する親会社株式を譲り受けることは例外として許される。",
+   "body": "子会社は、親会社株式を「取得してはならない」のが原則である（135条1項）。もっとも、同条2項は例外を列挙し、その1号に「他の会社（外国会社を含む。）の事業の全部を譲り受ける場合において当該他の会社の有する親会社株式を譲り受ける場合」を掲げる。この場合に取得した親会社株式は、相当の時期に処分しなければならない（135条3項）。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "135",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子会社は、その親会社である株式会社の株式（以下この条において「親会社株式」という。）を取得してはならない。",
+     "text_sha256": "57fd9700994e501063b255cd853fafab53fcbae756c0d2baa2e74940648c1170",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "135",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "他の会社（外国会社を含む。）の事業の全部を譲り受ける場合において当該他の会社の有する親会社株式を譲り受ける場合",
+     "text_sha256": "57fd9700994e501063b255cd853fafab53fcbae756c0d2baa2e74940648c1170",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "135",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "子会社は、相当の時期にその有する親会社株式を処分しなければならない。",
+     "text_sha256": "57fd9700994e501063b255cd853fafab53fcbae756c0d2baa2e74940648c1170",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q17-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q17-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。株券発行会社は、自己株式を処分した日以後遅滞なく株券を交付しなければならず、請求があるまで交付しないことができる例外は公開会社でない会社に限られる。",
+   "body": "129条1項は、「株券発行会社は、自己株式を処分した日以後遅滞なく、当該自己株式を取得した者に対し、株券を交付しなければならない」と定める。同条2項は、「公開会社でない株券発行会社」に限り、請求がある時までは株券を交付しないことができるとする。本肢の会社は公開会社である株券発行会社であるから、2項の例外は使えず、1項のとおり遅滞なく株券を交付しなければならない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "129",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株券発行会社は、自己株式を処分した日以後遅滞なく、当該自己株式を取得した者に対し、株券を交付しなければならない。",
+     "text_sha256": "ca1a8d6d3549eea8fc8fa296c8500b16cb995820f5b4e9730036340ae8f9c062",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "129",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定にかかわらず、公開会社でない株券発行会社は、同項の者から請求がある時までは、同項の株券を交付しないことができる。",
+     "text_sha256": "ca1a8d6d3549eea8fc8fa296c8500b16cb995820f5b4e9730036340ae8f9c062",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q17-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q17-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。譲渡制限株式を取得した株式取得者も、会社に対し、取得の承認をするか否かの決定を請求することができる。",
+   "body": "137条1項は、「譲渡制限株式を取得した株式取得者は、株式会社に対し、当該譲渡制限株式を取得したことについて承認をするか否かの決定をすることを請求することができる」と定める。譲渡等承認請求は、譲り渡そうとする株主（136条）だけでなく、取得した側の株式取得者もすることができる。ただし、株式取得者からの請求は、原則として、株主名簿上の株主又はその一般承継人と共同してしなければならない（137条2項）。したがって、株式取得者は譲渡等承認請求をすることができないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "137",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "譲渡制限株式を取得した株式取得者は、株式会社に対し、当該譲渡制限株式を取得したことについて承認をするか否かの決定をすることを請求することができる。",
+     "text_sha256": "f2db2f5fb30db5de977c45b33eddd0aa827ac23c5837390294543c0f83beff79",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "136",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "譲渡制限株式の株主は、その有する譲渡制限株式を他人（当該譲渡制限株式を発行した株式会社を除く。）に譲り渡そうとするときは、当該株式会社に対し、当該他人が当該譲渡制限株式を取得することについて承認をするか否かの決定をすることを請求することができる。",
+     "text_sha256": "e5d33d624779c1d60ebf63742f69e00bbf678118a538b9c81e62c72f800953bd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "137",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定による請求は、利害関係人の利益を害するおそれがないものとして法務省令で定める場合を除き、その取得した株式の株主として株主名簿に記載され、若しくは記録された者又はその相続人その他の一般承継人と共同してしなければならない。",
+     "text_sha256": "f2db2f5fb30db5de977c45b33eddd0aa827ac23c5837390294543c0f83beff79",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q17-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q17-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。会社が対象株式を買い取る旨の決定は、取締役会設置会社であっても株主総会の決議によらなければならない。",
+   "body": "譲渡等承認請求とあわせて、承認しない場合には会社が買い取ることを請求された場合に、会社が承認をしない旨の決定をしたときは、会社は対象株式を買い取らなければならず、「対象株式を買い取る旨」などを定めなければならない（140条1項）。そして、「前項各号に掲げる事項の決定は、株主総会の決議によらなければならない」（140条2項）。この規定には、取締役会設置会社について取締役会の決議によるとする括弧書きはない。承認をするか否かの決定（139条1項）や指定買取人の指定（140条5項）が取締役会設置会社では取締役会の決議によるのと対比して押さえる。したがって、株主総会の決議によることを要しないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "140",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、第百三十八条第一号ハ又は第二号ハの請求を受けた場合において、第百三十六条又は第百三十七条第一項の承認をしない旨の決定をしたときは、当該譲渡等承認請求に係る譲渡制限株式（以下この款において「対象株式」という。）を買い取らなければならない。",
+     "text_sha256": "f3fdbb30bea8f64ff298da119669a3a11e84bd552eca2923d27353af88cf4f95",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "140",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "対象株式を買い取る旨",
+     "text_sha256": "f3fdbb30bea8f64ff298da119669a3a11e84bd552eca2923d27353af88cf4f95",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "140",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項各号に掲げる事項の決定は、株主総会の決議によらなければならない。",
+     "text_sha256": "f3fdbb30bea8f64ff298da119669a3a11e84bd552eca2923d27353af88cf4f95",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "139",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社が第百三十六条又は第百三十七条第一項の承認をするか否かの決定をするには、株主総会（取締役会設置会社にあっては、取締役会）の決議によらなければならない。",
+     "text_sha256": "314c66b36976e69b1d1ef5ce1dcd4da23a0ec9194eeaa6b8ac5293bc05ed7310",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "140",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "前項の規定による指定は、株主総会（取締役会設置会社にあっては、取締役会）の決議によらなければならない。",
+     "text_sha256": "f3fdbb30bea8f64ff298da119669a3a11e84bd552eca2923d27353af88cf4f95",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q17-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

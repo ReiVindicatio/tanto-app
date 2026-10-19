@@ -1,0 +1,245 @@
+{
+ "question_id": "yobi-2026-shoho-q22",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q22-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。会社と取引をする直接取引は、競業取引とは別の類型として、事業の部類に属するかどうかを問わず取締役会の承認が要る。",
+   "body": "356条1項は、承認が必要な取引として、1号の競業取引（「株式会社の事業の部類に属する取引」）と、2号の直接取引（「取締役が自己又は第三者のために株式会社と取引をしようとするとき。」）を別々に掲げている。2号には事業の部類に属するかどうかの限定がないので、会社と取引する以上、事業の部類に属しない取引でも承認の対象になる。取締役会設置会社では、承認機関の「株主総会」が「取締役会」に読み替えられる（365条1項）。したがって、原則として取締役会の承認を受けなければならないとする本肢は正しい。なお、会社に不利益が生じるおそれのない取引（たとえば会社が負担のない贈与を受ける取引）は承認が要らないと解されており、本肢が「原則として」としているのはこの点を含む趣旨と考えられる（解釈による）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "356",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役が自己又は第三者のために株式会社と取引をしようとするとき。",
+     "text_sha256": "1f519283022020dbb09f21e69d5e5dfc33a50acae50d33e817fb256ed4327990",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "356",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社の事業の部類に属する取引",
+     "text_sha256": "1f519283022020dbb09f21e69d5e5dfc33a50acae50d33e817fb256ed4327990",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "365",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役会設置会社における第三百五十六条の規定の適用については、同条第一項中「株主総会」とあるのは、「取締役会」とする。",
+     "text_sha256": "ad5cc5119f91885c9349211b6432e9998690efc4f14f5ceaaa2ff2532cc02b80",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "肢は「判例の趣旨によれば」とするが、判例は検索で確認していないため cases に入れていない。承認不要の例外（会社に不利益のない取引）は解釈による。"
+   ],
+   "id": "exp-yobi-2026-shoho-q22-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q22-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。責任の一部免除の株主総会決議について、株主である当該取締役の議決権を排除する規定はない。",
+   "body": "役員等の任務懈怠責任は、善意でかつ重大な過失がないときは、最低責任限度額を控除した額を限度として「株主総会（…）の決議によって免除することができる」（425条1項）。この株主総会決議について、免除を受ける取締役が株主である場合にその議決権の行使を禁じる規定は置かれていない。株主総会では、特別の利害関係を有する株主も議決権を行使でき、その行使によって「著しく不当な決議がされたとき」に決議取消しの訴えの対象になるにとどまる（831条1項3号）。したがって、当該取締役は議決権を行使することができないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "425",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "の決議によって免除することができる。",
+     "text_sha256": "bdb4cea5592148c45e8b29069888ed8949e0268b0676476daa3246e199053e45",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "831",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会等の決議について特別の利害関係を有する者が議決権を行使したことによって、著しく不当な決議がされたとき。",
+     "text_sha256": "1815496dd41025d1456cafbdd01882a64334f77e056c1a04b566f23536942c16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q22-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q22-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。除名の訴えは、対象社員以外の社員の「過半数の決議」に基づけば提起でき、全員の同意は要らない。",
+   "body": "持分会社の社員に出資義務の不履行などの事由があるときは、持分会社は「対象社員以外の社員の過半数の決議に基づき、訴えをもって対象社員の除名を請求することができる」（859条）。要件は対象社員以外の社員の過半数の決議であり、全員の同意ではない。したがって、当該社員以外の社員の全員の同意に基づかなければならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "859",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "対象社員以外の社員の過半数の決議に基づき、訴えをもって対象社員の除名を請求することができる。",
+     "text_sha256": "13ad6b9ad04a3248277320fa4fa89429801a870bf74c03552a19c48a3dad9313",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q22-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q22-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。特定の株主からの取得を決める株主総会では、その特定の株主は原則として議決権を行使することができない。",
+   "body": "株式会社は、自己株式の取得に関する事項の決定に併せて、株主総会の決議により、特定の株主に対して通知を行う旨（特定の株主からの取得）を定めることができる（160条1項）。この場合、「第一項の特定の株主は、第百五十六条第一項の株主総会において議決権を行使することができない」（160条4項本文）。例外は、特定の株主以外の株主の全部が議決権を行使できない場合に限られる（同項ただし書）。したがって、特定の株主が議決権を行使することができるとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "160",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百五十八条第一項の規定による通知を特定の株主に対して行う旨を定めることができる。",
+     "text_sha256": "51572c45fa34500adb622304d8432bbc29160665c9301c1960f0a9a7b0f92d08",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "160",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "第一項の特定の株主は、第百五十六条第一項の株主総会において議決権を行使することができない。ただし、第一項の特定の株主以外の株主の全部が当該株主総会において議決権を行使することができない場合は、この限りでない。",
+     "text_sha256": "51572c45fa34500adb622304d8432bbc29160665c9301c1960f0a9a7b0f92d08",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q22-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q22-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。会社との取引の承認決議について、当該取締役は特別の利害関係を有する取締役として議決に加わることができない。",
+   "body": "取締役会設置会社では、取締役が会社と取引をしようとするときは取締役会の承認が必要である（356条1項2号、365条1項）。取締役会の決議については、「前項の決議について特別の利害関係を有する取締役は、議決に加わることができない」（369条2項）。会社と取引をしようとする取締役は、その取引の承認決議について特別の利害関係を有する取締役に当たると解されている。したがって、当該取締役は議決に加わることができないとする本肢は正しい。株主総会では特別利害関係人も議決権を行使できる（イ）のと対比して押さえる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "356",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役が自己又は第三者のために株式会社と取引をしようとするとき。",
+     "text_sha256": "1f519283022020dbb09f21e69d5e5dfc33a50acae50d33e817fb256ed4327990",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "365",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同条第一項中「株主総会」とあるのは、「取締役会」とする。",
+     "text_sha256": "ad5cc5119f91885c9349211b6432e9998690efc4f14f5ceaaa2ff2532cc02b80",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "369",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の決議について特別の利害関係を有する取締役は、議決に加わることができない。",
+     "text_sha256": "e29aafab10e5f2705f31bcc129c2308bce2c4b67e4969a51125a14dee79c6d66",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q22-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

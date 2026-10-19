@@ -1,0 +1,243 @@
+{
+ "question_id": "yobi-2026-shoho-q16",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q16-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。発行可能株式総数を定款で定めていなければ、発起人は会社の成立の時までに定款を変更してその定めを設けなければならない。",
+   "body": "37条1項は、発起人は、発行可能株式総数を定款で定めていない場合には、「株式会社の成立の時までに、その全員の同意によって、定款を変更して発行可能株式総数の定めを設けなければならない」とする。つまり、発行可能株式総数は原始定款に書かなくてもよいが、遅くとも会社の成立の時までには定款で定めておく必要がある。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "発起人は、株式会社が発行することができる株式の総数（以下「発行可能株式総数」という。）を定款で定めていない場合には、株式会社の成立の時までに、その全員の同意によって、定款を変更して発行可能株式総数の定めを設けなければならない。",
+     "text_sha256": "6586c14a400407c99a942d4bd0cc03e082ae00c43b44f25627d06073e8ca8e2a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q16-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q16-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。払込みの仮装に関与した発起人（仮装した本人を除く。）は、注意を怠らなかったことを証明すれば支払義務を負わない。",
+   "body": "発起人が出資に係る金銭の払込みを仮装した場合、その発起人は「払込みを仮装した出資に係る金銭の全額の支払」をする義務を負う（52条の2第1項1号）。また、出資の履行の仮装に関与した発起人等も同じ支払義務を負うが、「その者（当該出資の履行を仮装したものを除く。）がその職務を行うについて注意を怠らなかったことを証明した場合は、この限りでない」（52条の2第2項）。仮装した発起人本人は無過失責任であるのに対し、関与した者は過失責任である点がポイントである。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "52_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三十四条第一項の規定による払込みを仮装した場合　払込みを仮装した出資に係る金銭の全額の支払",
+     "text_sha256": "caa4d1e8c5b4b642078040f01d1c91500ef96d01c1c96925022b9e19fe3647f2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "52_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "ただし、その者（当該出資の履行を仮装したものを除く。）がその職務を行うについて注意を怠らなかったことを証明した場合は、この限りでない。",
+     "text_sha256": "caa4d1e8c5b4b642078040f01d1c91500ef96d01c1c96925022b9e19fe3647f2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q16-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q16-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。払込期日又は払込期間を定めるのは募集設立の設立時募集株式についてであり、発起人は引受け後「遅滞なく」払い込めば足りる。",
+   "body": "発起設立では、発起人は「設立時発行株式の引受け後遅滞なく」出資に係る金銭の全額を払い込まなければならないとされており（34条1項）、払込期日や払込期間を定める旨の規定はない。発起人が設立時発行株式について全員の同意で定める事項（32条1項）にも、払込期日等は含まれていない。払込期日又は払込期間を定めるのは、募集設立において設立時募集株式について「設立時募集株式と引換えにする金銭の払込みの期日又はその期間」を定める場合である（58条1項3号）。したがって、発起人の引き受けた設立時発行株式について払込期日等を定めなければならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "34",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "発起人は、設立時発行株式の引受け後遅滞なく、その引き受けた設立時発行株式につき、その出資に係る金銭の全額を払い込み、又はその出資に係る金銭以外の財産の全部を給付しなければならない。",
+     "text_sha256": "d0a32d770d2e47f4524cda9a5d09f6a0bb0caec5f969c4795541fbbb01d03d56",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "32",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "発起人は、株式会社の設立に際して次に掲げる事項（定款に定めがある事項を除く。）を定めようとするときは、その全員の同意を得なければならない。",
+     "text_sha256": "5ef138638c7c1ab027cfa8541401116e4345fe772812884a948b3990554845f6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "58",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設立時募集株式と引換えにする金銭の払込みの期日又はその期間",
+     "text_sha256": "e5ad45e5e72d369b504d46d0aa1d912df3386f5efe3847c2aa35384fb39a0190",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q16-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q16-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。払込金の保管証明の交付を請求できるのは、設立時募集株式の募集をした場合（募集設立）に限られ、発起設立では請求できない。",
+   "body": "64条1項は、「第五十七条第一項の募集をした場合には」、発起人は払込みの取扱いをした銀行等に対し、「払い込まれた金額に相当する金銭の保管に関する証明書の交付を請求することができる」とする。57条1項の募集をする設立は募集設立であるから、保管証明の制度は募集設立に限られる。本問は発起設立についての問であり、発起設立ではこの請求はできない。したがって、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "64",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第五十七条第一項の募集をした場合には、発起人は、第三十四条第一項及び前条第一項の規定による払込みの取扱いをした銀行等に対し、これらの規定により払い込まれた金額に相当する金銭の保管に関する証明書の交付を請求することができる。",
+     "text_sha256": "0ba51578a180cddf36ae8cdcc97ca26c08cd8fb9a3df74b7dd86d5043480b28a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "57",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "発起人は、この款の定めるところにより、設立時発行株式を引き受ける者の募集をする旨を定めることができる。",
+     "text_sha256": "aaae9491e58e7064d1133af75106959cfbd8c1dd73b735e2ebcc25a79fb19da3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q16-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q16-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。設立時取締役は、選任後遅滞なく、出資の履行が完了していることを調査しなければならない。",
+   "body": "46条1項は、設立時取締役は、「その選任後遅滞なく、次に掲げる事項を調査しなければならない」とし、その3号に「出資の履行が完了していること」を掲げる。したがって、本肢は正しい。なお、調査により法令・定款違反や不当な事項があると認めるときは、発起人にその旨を通知しなければならない（46条2項）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "46",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その選任後遅滞なく、次に掲げる事項を調査しなければならない。",
+     "text_sha256": "fb15a9c6d7c8005e8af36f72307d1d0ab2ee8412f5c379a849f34e78c3e23d25",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "46",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "出資の履行が完了していること。",
+     "text_sha256": "fb15a9c6d7c8005e8af36f72307d1d0ab2ee8412f5c379a849f34e78c3e23d25",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "46",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "設立時取締役は、前項の規定による調査により、同項各号に掲げる事項について法令若しくは定款に違反し、又は不当な事項があると認めるときは、発起人にその旨を通知しなければならない。",
+     "text_sha256": "fb15a9c6d7c8005e8af36f72307d1d0ab2ee8412f5c379a849f34e78c3e23d25",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q16-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

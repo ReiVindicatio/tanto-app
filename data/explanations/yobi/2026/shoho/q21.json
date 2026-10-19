@@ -1,0 +1,279 @@
+{
+ "question_id": "yobi-2026-shoho-q21",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q21-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。監査役の任期は選任後4年以内だが、監査等委員である取締役の任期は選任後2年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時までである。",
+   "body": "決め手は、監査等委員である取締役についても「4年」とする部分である。監査役については、336条1項が「選任後四年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時まで」と定めており、本肢のとおりである。これに対し、監査等委員である取締役は取締役であるから、332条1項の「選任後二年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時まで」が適用される。監査等委員会設置会社で任期を1年とする332条3項は「取締役（監査等委員であるものを除く。）」についての定めであり、また同条4項により監査等委員である取締役の任期は短縮できない。したがって、監査等委員である取締役の任期は2年であり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "336",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "監査役の任期は、選任後四年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時までとする。",
+     "text_sha256": "6f6462ed833272f3dab19dcb96d7a627335ad711ac228579791475f2a07d5cdf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "332",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役の任期は、選任後二年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時までとする。",
+     "text_sha256": "5a7c37b070116a70dc4056ad795ebb6f8e8f4c1d9da3833955c08a37d98ed437",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "332",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査等委員会設置会社の取締役（監査等委員であるものを除く。）についての第一項の規定の適用については、同項中「二年」とあるのは、「一年」とする。",
+     "text_sha256": "5a7c37b070116a70dc4056ad795ebb6f8e8f4c1d9da3833955c08a37d98ed437",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "332",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "監査等委員である取締役の任期については、第一項ただし書の規定は、適用しない。",
+     "text_sha256": "5a7c37b070116a70dc4056ad795ebb6f8e8f4c1d9da3833955c08a37d98ed437",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q21-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q21-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。監査役は381条2項により、監査等委員会が選定する監査等委員は399条の3第1項により、いつでも取締役に報告を求めることができる。",
+   "body": "監査役について、381条2項は「監査役は、いつでも、取締役及び会計参与並びに支配人その他の使用人に対して事業の報告を求め」ることができると定める。監査等委員会設置会社については、399条の3第1項が「監査等委員会が選定する監査等委員は、いつでも、取締役」等に対し、「その職務の執行に関する事項の報告を求め」ることができると定める。監査役は各自が単独でこの権限を持つのに対し、監査等委員会設置会社では監査等委員会が選定した監査等委員が行使する点が異なるが、本肢はその違いも正しく書き分けている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "381",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "監査役は、いつでも、取締役及び会計参与並びに支配人その他の使用人に対して事業の報告を求め、又は監査役設置会社の業務及び財産の状況の調査をすることができる。",
+     "text_sha256": "b8a7a9a0258569eb360c4ebee278486de0b5c5f65187a2d15f2bd73f786a7be1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "399_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "監査等委員会が選定する監査等委員は、いつでも、取締役（会計参与設置会社にあっては、取締役及び会計参与）及び支配人その他の使用人に対し、その職務の執行に関する事項の報告を求め",
+     "text_sha256": "35bb421bc54eb859f8a6bb393f71a1079a68f5d754613dce5d79b592ad6647a3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q21-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q21-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。取締役の責任追及の訴えの和解には、監査役設置会社では各監査役の、監査等委員会設置会社では各監査等委員の同意が必要である。",
+   "body": "849条の2は、取締役（監査等委員及び監査委員を除く。）等の責任を追及する訴えに係る訴訟における和解をするには、会社の区分に応じた者の同意を得なければならないと定める。監査役設置会社では「監査役（監査役が二人以上ある場合にあっては、各監査役）」（同条1号）、監査等委員会設置会社では「各監査等委員」（同条2号）である。監査役会設置会社は監査役を置く会社であり、335条3項により「監査役は、三人以上」とされるから、各監査役の同意が必要となる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "849_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一　監査役設置会社　監査役（監査役が二人以上ある場合にあっては、各監査役）\n二　監査等委員会設置会社　各監査等委員",
+     "text_sha256": "02830acfd0a12e8050ed4f0c3932e7ad0a602cc3d35881b3c23db68bd21e915f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "335",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査役会設置会社においては、監査役は、三人以上で、そのうち半数以上は、社外監査役でなければならない。",
+     "text_sha256": "04ace5012fa40f97df28d229c2ac40385a37871c068a7fc98ef1476cc0f35c37",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q21-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q21-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。監査役選任議案の提出には監査役会の同意が、監査等委員である取締役の選任議案の提出には監査等委員会の同意が必要であり、各監査役・各監査等委員の同意ではない。",
+   "body": "決め手は「各監査役の同意」「各監査等委員の同意」という部分である。343条1項は、監査役の選任に関する議案の提出に「監査役（監査役が二人以上ある場合にあっては、その過半数）の同意」を要求し、監査役会設置会社では同条3項によりこれが「監査役会」の同意に読み替えられる。監査等委員会設置会社では、344条の2第1項が、監査等委員である取締役の選任に関する議案の提出に「監査等委員会の同意を得なければならない」と定める。いずれも会議体の同意であって、構成員全員の同意ではない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "343",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役は、監査役がある場合において、監査役の選任に関する議案を株主総会に提出するには、監査役（監査役が二人以上ある場合にあっては、その過半数）の同意を得なければならない。",
+     "text_sha256": "67d2ecceccc5b10d447ae8ecf3bd7999ae7efd054b5a78d7cb818397e21b9d11",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "343",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査役会設置会社における前二項の規定の適用については、第一項中「監査役（監査役が二人以上ある場合にあっては、その過半数）」とあるのは「監査役会」と",
+     "text_sha256": "67d2ecceccc5b10d447ae8ecf3bd7999ae7efd054b5a78d7cb818397e21b9d11",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "344_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役は、監査等委員会がある場合において、監査等委員である取締役の選任に関する議案を株主総会に提出するには、監査等委員会の同意を得なければならない。",
+     "text_sha256": "7a0680d619dc7d3fb6540ecb43d4394563d6104f28ca687a96dec27bf3003513",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q21-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q21-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。会計監査人の報酬等を定めるには、監査役会設置会社では監査役会の、監査等委員会設置会社では監査等委員会の同意が必要である。",
+   "body": "399条1項は、取締役が会計監査人の報酬等を定める場合に「監査役（監査役が二人以上ある場合にあっては、その過半数）の同意」を要求する。監査役会設置会社では同条2項によりこれが「監査役会」と読み替えられ、監査等委員会設置会社では同条3項により「監査等委員会」と読み替えられる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "399",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役は、会計監査人又は一時会計監査人の職務を行うべき者の報酬等を定める場合には、監査役（監査役が二人以上ある場合にあっては、その過半数）の同意を得なければならない。",
+     "text_sha256": "fd98ff1f334eb794e4c4a88e968b48b93b96db56b8ca6a825b81f6673a068b75",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "399",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "監査役会設置会社における前項の規定の適用については、同項中「監査役（監査役が二人以上ある場合にあっては、その過半数）」とあるのは、「監査役会」とする。",
+     "text_sha256": "fd98ff1f334eb794e4c4a88e968b48b93b96db56b8ca6a825b81f6673a068b75",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "399",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査等委員会設置会社における第一項の規定の適用については、同項中「監査役（監査役が二人以上ある場合にあっては、その過半数）」とあるのは、「監査等委員会」とする。",
+     "text_sha256": "fd98ff1f334eb794e4c4a88e968b48b93b96db56b8ca6a825b81f6673a068b75",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q21-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

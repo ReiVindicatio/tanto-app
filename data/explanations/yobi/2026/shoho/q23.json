@@ -1,0 +1,219 @@
+{
+ "question_id": "yobi-2026-shoho-q23",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q23-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。会計参与が取締役と共同して作成するのは計算書類とその附属明細書などであり、事業報告とその附属明細書は含まれない。",
+   "body": "会計参与は、「取締役と共同して、計算書類（…）及びその附属明細書、臨時計算書類（…）並びに連結計算書類（…）を作成する」（374条1項）。共同作成の対象として列挙されているのは計算書類・その附属明細書・臨時計算書類・連結計算書類であり、事業報告とその附属明細書は挙げられていない。会計参与は会計の専門家として計算関係書類の作成に関与する機関であり、事業報告は取締役が作成する。したがって、事業報告及びその附属明細書を会計参与が共同して作成するとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "374",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会計参与は、取締役と共同して、計算書類（第四百三十五条第二項に規定する計算書類をいう。以下この章において同じ。）及びその附属明細書、臨時計算書類（第四百四十一条第一項に規定する臨時計算書類をいう。以下この章において同じ。）並びに連結計算書類（第四百四十四条第一項に規定する連結計算書類をいう。第三百九十六条第一項において同じ。）を作成する。",
+     "text_sha256": "3061e05aed798e67fb27f9d247c42e5013c1549c7d0df98d445fc2e4af70a4ab",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q23-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q23-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。取締役会設置会社では、定時株主総会の招集通知に際して、計算書類及び事業報告を株主に提供しなければならない。",
+   "body": "「取締役会設置会社においては、取締役は、定時株主総会の招集の通知に際して、法務省令で定めるところにより、株主に対し、前条第三項の承認を受けた計算書類及び事業報告（…）を提供しなければならない」（437条）。提供するのは取締役会の承認を受けた計算書類及び事業報告（監査を要する場合は監査報告・会計監査報告を含む）である。本肢は条文の内容どおりであり正しい。なお、附属明細書は提供の対象に含まれていない点に注意する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "437",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役会設置会社においては、取締役は、定時株主総会の招集の通知に際して、法務省令で定めるところにより、株主に対し、前条第三項の承認を受けた計算書類及び事業報告",
+     "text_sha256": "9bc5377fb1e3a8edc55a90b88cde1b8b63a2043609e196698e2ea4ea36b36721",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "437",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "を提供しなければならない。",
+     "text_sha256": "9bc5377fb1e3a8edc55a90b88cde1b8b63a2043609e196698e2ea4ea36b36721",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q23-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q23-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。営業時間内いつでも閲覧を請求できるのは株主及び債権者であり、親会社社員は権利行使に必要があるときに裁判所の許可を得なければならない。",
+   "body": "「株主及び債権者は、株式会社の営業時間内は、いつでも」計算書類等の閲覧等を請求することができる（442条3項）。これに対し、「株式会社の親会社社員は、その権利を行使するため必要があるときは、裁判所の許可を得て」、計算書類等の閲覧等を請求することができる（442条4項）。親会社社員については、権利行使のための必要性と裁判所の許可が要件になっている。したがって、親会社社員が営業時間内であればいつでも閲覧を請求できるとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "442",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "株主及び債権者は、株式会社の営業時間内は、いつでも、次に掲げる請求をすることができる。",
+     "text_sha256": "73da77b9f4eaf4dbc9ee3d45a8954eae1c6c1e4855fc121be546792c3b9c99a6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "442",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "株式会社の親会社社員は、その権利を行使するため必要があるときは、裁判所の許可を得て、当該株式会社の計算書類等について前項各号に掲げる請求をすることができる。",
+     "text_sha256": "73da77b9f4eaf4dbc9ee3d45a8954eae1c6c1e4855fc121be546792c3b9c99a6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q23-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q23-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。取締役会設置会社では、計算書類・事業報告とこれらの附属明細書は取締役会の承認を受けなければならない。",
+   "body": "「取締役会設置会社においては、前条第二項の計算書類及び事業報告並びにこれらの附属明細書（…）は、取締役会の承認を受けなければならない」（436条3項）。監査役等の監査を要する会社では、監査を受けたものが承認の対象になる。本肢は条文の内容どおりであり正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "436",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "取締役会設置会社においては、前条第二項の計算書類及び事業報告並びにこれらの附属明細書",
+     "text_sha256": "4f313fb292bd64c4bfe9bf37c011bacf9d25b67a418eacf699525934751382b9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "436",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "は、取締役会の承認を受けなければならない。",
+     "text_sha256": "4f313fb292bd64c4bfe9bf37c011bacf9d25b67a418eacf699525934751382b9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q23-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q23-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。会計監査人の監査を受けるのは計算書類とその附属明細書だけで、事業報告とその附属明細書は監査役の監査のみを受ける。",
+   "body": "会計監査人設置会社では、監査の対象と監査をする者が書類ごとに分けられている（436条2項）。計算書類及びその附属明細書は、監査役「及び会計監査人」の監査を受ける（同項1号）。これに対し、事業報告及びその附属明細書は、監査役（監査等委員会設置会社・指名委員会等設置会社ではそれぞれの委員会）の監査だけを受け、会計監査人の監査の対象ではない（同項2号）。したがって、事業報告とその附属明細書も会計監査人の監査を受けなければならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "436",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前条第二項の計算書類及びその附属明細書　監査役（監査等委員会設置会社にあっては監査等委員会、指名委員会等設置会社にあっては監査委員会）及び会計監査人",
+     "text_sha256": "4f313fb292bd64c4bfe9bf37c011bacf9d25b67a418eacf699525934751382b9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "436",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前条第二項の事業報告及びその附属明細書　監査役（監査等委員会設置会社にあっては監査等委員会、指名委員会等設置会社にあっては監査委員会）",
+     "text_sha256": "4f313fb292bd64c4bfe9bf37c011bacf9d25b67a418eacf699525934751382b9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q23-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
