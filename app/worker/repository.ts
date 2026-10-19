@@ -15,6 +15,13 @@ export interface AnswerRepository {
   deleteAll(userId: string): Promise<void>;
 }
 
+/** 1つの SQL で保存する回答の数（1,000件でも SQL は5回。D1 の無料プランの上限50回に収まる） */
+export const INSERT_CHUNK = 200;
+const INSERT_SQL =
+  "INSERT OR IGNORE INTO answers (user_id, id, statement_id, ok, answered_at, received_at) " +
+  "SELECT ?1, json_extract(value, '$.id'), json_extract(value, '$.s'), json_extract(value, '$.ok'), json_extract(value, '$.at'), ?2 " +
+  "FROM json_each(?3)";
+
 type Row = { id: string; statement_id: string; ok: number; answered_at: string; received_at: string };
 
 export class D1AnswerRepository implements AnswerRepository {
@@ -32,10 +39,15 @@ export class D1AnswerRepository implements AnswerRepository {
 
   async insert(userId: string, answers: Answer[], receivedAt: string): Promise<number> {
     if (answers.length === 0) return 0;
-    const stmt = this.db.prepare(
-      "INSERT OR IGNORE INTO answers (user_id, id, statement_id, ok, answered_at, received_at) VALUES (?, ?, ?, ?, ?, ?)",
-    );
-    const res = await this.db.batch(answers.map((a) => stmt.bind(userId, a.id, a.s, a.ok ? 1 : 0, a.at, receivedAt)));
+    // D1 の無料プランは「1回の呼び出しで SQL 50回まで」「1つの SQL に渡せる値は100個まで」「SQL 文は100KBまで」。
+    // 回答を1件ずつ INSERT すると50件を超えた時点で失敗するので、回答の一覧を JSON 文字列1つで渡し、
+    // json_each で行に展開して1つの SQL で保存する（渡す値は3つ）。念のため INSERT_CHUNK 件ずつに分ける
+    const stmts = [];
+    for (let i = 0; i < answers.length; i += INSERT_CHUNK) {
+      const chunk = answers.slice(i, i + INSERT_CHUNK).map((a) => ({ id: a.id, s: a.s, ok: a.ok ? 1 : 0, at: a.at }));
+      stmts.push(this.db.prepare(INSERT_SQL).bind(userId, receivedAt, JSON.stringify(chunk)));
+    }
+    const res = await this.db.batch(stmts);
     return res.reduce((n, r) => n + (r.meta?.changes ?? 0), 0);
   }
 
