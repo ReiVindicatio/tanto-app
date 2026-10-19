@@ -2,7 +2,7 @@
 
 予備試験・司法試験の**短答式過去問を一問一答で学ぶ**、無料の学習 Web アプリ。将来はアプリ化（Capacitor）と広告収入を想定。自分の学習用も兼ねる。
 
-> 状態：**予備 R08 の刑法・民法をパイプラインに通し、アプリで解けるようになった段階**（解説は民法 問1のみ）。📖 [docs/design.md](docs/design.md)／PDF の棚卸し [docs/inventory.md](docs/inventory.md)
+> 状態：**基盤（M1）が完了した段階**（📖 [docs/features.md](docs/features.md)・[tickets/README.md](tickets/README.md)）。📖 [docs/design.md](docs/design.md)／PDF の棚卸し [docs/inventory.md](docs/inventory.md)
 
 ## パイプラインの実行
 
@@ -37,6 +37,19 @@ GitHub Actions（`.github/workflows/ci.yml`）が push ごとに同じものを�
 - **https://tantan.reivindicatio0321.workers.dev/**（Cloudflare Workers の静的配信。当面は検索エンジンに載せない）
 - main に push すると、Cloudflare が `app/` で `npm ci && npm run build` を流し、`app/dist/` を配信する（設定は `app/wrangler.jsonc`、Node の版は `app/.node-version`）
 - 公開先に向けて E2E を流す：`cd app && BASE_URL=https://tantan.reivindicatio0321.workers.dev npm run e2e`
+
+## ログインと同期（T003・決定012）
+
+```
+アプリ ─ Google ログイン（Firebase Authentication）→ ID トークン
+  └→ API（Cloudflare Workers：app/worker/）─ ID トークンを検証 → その人の回答ログだけ読み書き
+       └→ DB（Cloudflare D1：tantan）─ 保存処理は app/worker/repository.ts の AnswerRepository だけ
+```
+
+- サーバーに置くのは回答ログだけ（利用者 ID は Firebase の uid。メールアドレスは置かない）。FSRS の状態は端末で作る
+- DB を入れ替えるときは `AnswerRepository` の実装を足して `app/worker/index.ts` で渡す（アプリ側は変わらない）
+- D1 の表を変えるときは `app/migrations/` に SQL を足し、`cd app && npx wrangler d1 migrations apply DB --remote`（要 `npx wrangler login`）
+- 手元の開発・E2E では「テスト用ログイン」を使う（`npm run e2e:sync`）。本番の設定でテスト用ログインが有効なら API は止まる
 
 ## アプリの起動
 

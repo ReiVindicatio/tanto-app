@@ -1,6 +1,6 @@
 # T003 ログインと端末間同期
 
-- 状態：実装中（設計レビュー OK：2026-10-19。決めてほしいこと3点は勧めのとおり）
+- 状態：完了（設計レビュー OK・ユーザーがスマホと PC で同期を確認：2026-10-19）
 - マイルストーン：M1 基盤
 - 優先度：高
 - 依存：T002（完了）・T020（完了）
@@ -117,14 +117,16 @@ CREATE INDEX answers_user_received ON answers(user_id, received_at);
 - ✅ API（`app/worker/`）：ID トークンの検証（`auth.ts`、jose）・保存処理（`repository.ts` の `AnswerRepository`、D1 版とメモリ版）・3つの API（`api.ts`）・入口（`index.ts`。本番でテスト用ログインが有効なら API を止める）・D1 のマイグレーション（`app/migrations/0001_answers.sql`）
 - ✅ アプリ：ログイン（`auth.ts`。Firebase の部品 `@firebase/app`・`@firebase/auth` だけを使う）・API の呼び出し（`api.ts`）・同期（`sync.ts` の `SyncedStore`）・ヘッダーのログインと同期の状態（`AuthBar.tsx`）・Firebase の設定値（`firebase-config.ts`、プロジェクト `tantan-adce9`）
 - ✅ テスト：単体 37件（API 9件・Worker の入口 3件・同期 6件を追加）、同期の E2E 2件（`npm run e2e:sync`：wrangler dev＋手元の D1）、既存の E2E 8件、パイプラインの回帰・単体。CI にも追加
-- ⏳ D1 の Database ID（ユーザーが作成中）→ `app/wrangler.jsonc` の仮の ID を差し替え、マイグレーションを本番の D1 に当て、push
-- ⏳ 本番で、スマホと PC で同期を確かめる
+- ✅ 本番の D1（`tantan`、ID fd7d210a-…）を設定し、マイグレーションを当てた（ユーザーの許可を得て `wrangler login` → `wrangler d1 migrations apply DB --remote`）
+- ✅ 公開先で確認：証明書なし・テスト用トークン・偽の JWT・存在しない API はすべて 401、アプリは 200、既存の E2E 8件が通過
+- ✅ **ユーザーがスマホと PC で、同じ Google アカウントで同期できることを確認**
 
 ### 実装中に見つけて直したこと
 
 - `npm audit` で、一式の `firebase` に含まれる Firestore 経由の `@grpc/grpc-js` に脆弱性（高）。ログインに必要な部品（`@firebase/app`・`@firebase/auth`）だけを入れる形にして解消（ユーザーと合意：案A）
 - 同期の競合：終わりかけの同期に新しい呼び出しが相乗りして、ログイン直後の送信が捨てられることがあった（単体テストで発見）。呼び出しのたびに「呼んだ後に始まる同期」を保証する形に直した
 - ログインしていないときも未送信の箱に入れていて、端末に回答を二重に持っていた（E2E で発見）。ログインしていないときは箱に入れないようにした
+- **D1 の無料プランの上限**（1回の呼び出しで SQL 50回まで・1つの SQL に渡せる値は100個まで・SQL 文は100KBまで。公式ドキュメント）に、回答を1件ずつ INSERT する作りでは、50件を超えると引っかかる（手元のテスト環境では上限がかからず、テストで見つからなかった）。回答の一覧を JSON 1つで渡して `json_each` で展開し、200件ずつ1つの SQL で保存する形に直した。上限をまねる偽の D1 の単体テストを足し、本番の D1 でも確認用の利用者で SQL を試して消した
 
 ## 完了条件
 
