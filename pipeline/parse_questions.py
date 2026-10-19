@@ -22,19 +22,27 @@ QUESTION_RE = re.compile(r"^\s*〔第([0-9０-９]+)問〕\s*[（(]配点[：:]\
 QUESTION_ONLY_RE = re.compile(r"^\s*〔第([0-9０-９]+)問〕\s*$")
 POINTS_LINE_RE = re.compile(r"^\s*[（(]配点[：:]\s*([0-9０-９]+)\s*[）)]\s*$")
 BLOCK_RE = re.compile(r"^\s*【([^】]+)】\s*$")
+# 問の末尾の「（参照条文）刑事訴訟法」。前提文（kind＝参照条文）として持つ。以前は最後の肢・選択肢にくっついていた
+REFERENCE_RE = re.compile(r"^\s*（参照条文）(.*)$")
 LABELS_KANA = "アイウエオカキクケコ"
 STATEMENT_RE = re.compile(r"^\s+([アイウエオカキクケコ]|[１-９])[．.]")  # 半角の「.」の年度もある（H28）
 CHOICE_RE = re.compile(r"^[１-９][．.]")  # 選択肢は行頭（字下げなし）
+# 穴埋めの選択肢「１．①ア ②エ …」は字下げされている年度がある（H26 刑法 問3）
+BLANK_CHOICE_RE = re.compile(r"^\s*[１-９][．.]\s*[①-⑳]\s*[ａ-ｚアイウエオカキクケコサシスセソ](?:\s|$)")
 SUB_RE = re.compile(r"^\s*([⑴-⑼])(?!及び|又は|から|、|，)\s*(.*)$")  # 小問（⑴⑵…）の見出し（H26 問5）。「⑴及び⑵に答えなさい」は除く
 SLOT_RE = re.compile(r"\[[,、]?No\.(\d+)\]")  # norm_slots 後の文字列に使う。「［， №38］」と崩れた年度がある（H23 民訴）
-RANGE_RE = re.compile(r"([アイウエオカキクケコ])から([アイウエオカキクケコ])の順に\[No\.(\d+)\]から\[No\.(\d+)\]")
+RANGE_RE = re.compile(r"([アイウエオカキクケコ])から([アイウエオカキクケコ])(?:まで)?の順に\[No\.(\d+)\]から\[No\.(\d+)\]")
+# 肢ラベルを書かずに「解答欄は，［№25］から［№29］」とだけある年度（R03 刑訴 問19・R06 刑訴 問17）
+BARE_RANGE_RE = re.compile(r"解答欄は[,、]\[No\.(\d+)\]から\[No\.(\d+)\]")
 TRAILING_SLOT_RE = re.compile(r"\s*［(?:No\.|№)\s*([0-9０-９]+)］\s*$")
 
 CONTEXT_KINDS = {"事例", "会話", "語句群", "見解"}
 # 前提文の中で、新しい項目が始まる行
-ITEM_START_RE = re.compile(r"^(学生[Ａ-Ｚ]．|[ａ-ｚ]．|[Ⅰ-Ⅹ]．|[Ａ-Ｚ]説：|[①-⑳])")
+# 話者は「学生Ａ．」のほか「学生Ａ：」「教 授：」の年度がある（R02 刑訴 問23）。【論拠】の「（１）」（R08 刑訴 問25）
+ITEM_START_RE = re.compile(r"^(学生[Ａ-Ｚ]?[．.：]|教\s*授[Ｘ-Ｚ]?[．.：]|[ａ-ｚ]．|[アイウエオカキクケコサシスセソ]．|[Ⅰ-Ⅹ]．|[Ａ-Ｚ]説：|[①-⑳]|（[１-９]）)")
 # 語句群の1行に複数の項目が並んでいるとき（「ｅ．…         ｆ．…」）の区切り
-INLINE_ITEMS_RE = re.compile(r"\s{2,}(?=[ａ-ｚ]．)")
+INLINE_ITEMS_RE = re.compile(r"\s{2,}(?=[ａ-ｚアイウエオカキクケコサシスセソ]．)")
+WORD_LABELS = "ａ-ｚアイウエオカキクケコサシスセソ"  # 穴埋めの語の記号（R02 刑法 問1 はカタカナ）
 
 
 def label_id(label: str) -> str:
@@ -70,7 +78,9 @@ def context_text(kind: str, lines: list[str]) -> str:
             continue
         body = l.strip()
         indent = len(l) - len(l.lstrip())
-        new_para = kind == "事例" and indent > base + 2
+        new_para = ((kind == "事例" and indent > base + 2) or (kind == "参照条文" and re.match(r"^第[０-９]+条", body))
+                    # 【Ｖの証人尋問】などの尋問の記録：話者の行がいちばん浅く、続きの行は深く字下げされている
+                    or ("尋問" in kind and indent <= base))
         if not items or ITEM_START_RE.match(body) or new_para:
             items.append([])
         items[-1].append(body)
@@ -90,23 +100,58 @@ INCORRECT_PAT = r"誤っているもの|誤ったもの|誤りであるもの|�
 
 def first_label(stem_lines: list[tuple[int, str]]) -> str | None:
     """リード文の「アからオまでの各記述」「１から５までの各記述」から、最初の肢ラベルを返す"""
-    m = re.search(r"([ア１])から([イウエオカキクケコ２-９])までの各", "".join(l.strip() for _, l in stem_lines))
+    # 「１から５までの甲の罪責」（H27 刑法 問4）も。「アからキまでの【発言】から」（語の一覧）は除く
+    m = re.search(r"([ア１])から([イウエオカキクケコ２-９])までの(?!【)", "".join(l.strip() for _, l in stem_lines))
     return m.group(1) if m else None
+
+
+def split_inline_statements(body: list[tuple[int, str]]) -> list[tuple[int, str]]:
+    """1行に並んだ肢「ア．Ⅰ（１）   イ．Ⅰ（２）   ウ．…」（R08 刑訴 問25）を、肢ごとの行に分ける（行番号は同じ）"""
+    out = []
+    for ln, line in body:
+        if STATEMENT_RE.match(line) and re.search(r"\S\s{2,}[アイウエオカキクケコ][．.]", line):
+            out += [(ln, part) for part in re.split(r"(?<=\S)\s{2,}(?=[アイウエオカキクケコ][．.])", line)]
+        else:
+            out.append((ln, line))
+    return out
+
+
+def is_next_label(line: str, prev: str) -> bool:
+    """字下げに関係なく、行頭が直前の肢の次のラベル（ア→イ、１→２）か"""
+    m = re.match(r"^\s*([アイウエオカキクケコ]|[１-９])[．.]", line)
+    if not m:
+        return False
+    for seq in (LABELS_KANA, "１２３４５６７８９"):
+        if prev in seq and seq.index(prev) + 1 < len(seq):
+            return m.group(1) == seq[seq.index(prev) + 1]
+    return False
+
+
+def introduces_statements(stem_lines: list[tuple[int, str]], kind: str) -> bool:
+    """リード文が「アからオまでの【kind】」「１から５までの各【kind】」と、見出しの下を肢として予告しているか。
+    「アからキまでの【発言】から適切な語句を」（H23 刑法 問5）は語の一覧なので除く"""
+    stem = re.sub(r"\s+", "", "".join(l for _, l in stem_lines))
+    return bool(re.search(r"[ア１]から[イウエオカキクケコ２-９]まで(?:の各|の)【" + re.escape(kind) + r"】(?!から)", stem))
 
 
 def detect_format(stem_n: str, has_choices: bool, blocks: set[str]) -> tuple[str, str | None]:
     """リード文（正規化済み）から形式と、選ぶ対象の向きを決める。決まらなければ unknown／None。"""
-    if re.search(r"正しい場合には1を.*誤っている場合には2", stem_n):
+    # 「正しいものには１を，誤っているものには２を」（刑訴に多い）・「正しいものに１を」（R03 刑訴 問19）も同じ形式
+    if re.search(r"正しい(?:場合|もの)(?:には|に)1を.*誤っている(?:場合|もの)(?:には|に)2", stem_n):
         return "true_false_each", None
     if re.search(r"幾つあるか|の個数", stem_n):  # 「幾つかの立場がある」（H30 商法 問30）は個数問題ではない
         fmt = "count"
-    elif "語句群" in blocks or re.search(r"[①-⑳]から[①-⑳]までの\(", stem_n):
+    elif "語句群" in blocks or re.search(r"(?:[①-⑳]|\d+)から(?:[①-⑳]|\d+)までの\(\)内", stem_n):
+        # stem_n は NFKC 済みなので ① は 1 になっている
         return "fill_blank", None
-    elif "順不同" in stem_n and re.search(r"\d個選", stem_n):
+    elif "順不同" in stem_n and re.search(r"\d(?:個|つ)選", stem_n):  # 「２つ選びなさい」（H24 刑訴 問26）
         fmt = "multi_select_unordered"
     elif ("組合せ" in stem_n or "組み合わせ" in stem_n) and has_choices:
         fmt = "combination"
     elif "どれか" in stem_n and not has_choices:
+        fmt = "single_choice"
+    elif re.search(r"各【[^】]+】のうち.*を選びなさい", stem_n) and not has_choices:
+        # 「各【発言】のうち、学生Ａの発言であると考えられるものを選びなさい」（R06 刑法 問10）
         fmt = "single_choice"
     else:
         return "unknown", None
@@ -128,7 +173,8 @@ def parse_choices(fmt: str, text: str) -> list[dict]:
         if fmt in ("combination", "single_choice", "multi_select_unordered"):
             c["labels"] = re.findall(r"[アイウエオカキクケコ]", body)
         elif fmt == "fill_blank":
-            c["blanks"] = [{"blank": ord(b) - ord("①") + 1, "word": w} for b, w in re.findall(r"([①-⑳])\s*([ａ-ｚ])", body)]
+            c["blanks"] = [{"blank": ord(b) - ord("①") + 1, "word": w}
+                           for b, w in re.findall(r"([①-⑳])\s*([" + WORD_LABELS + "])", body)]
         elif fmt == "count":
             m = re.fullmatch(r"([0-9０-９]+)個", body)
             c["count"] = to_int(m.group(1)) if m else None
@@ -146,33 +192,51 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
     cur_block: dict | None = None
     subs: list[dict] = []             # 小問（⑴⑵…）
     flags: list[str] = []
+    statement_headings: list[str] = []  # 肢の並びの見出し（【記述】以外。検証で見出し行を照合から除く）
 
-    for ln, line in body:
+    body = split_inline_statements(body)
+    for k, (ln, line) in enumerate(body):
         if not line.strip():
+            continue
+        mr = REFERENCE_RE.match(line)
+        if mr:
+            cur_block = {"kind": "参照条文", "lines": [mr.group(1)], "line_range": [ln, ln]}
+            blocks.append(cur_block)
+            state = "context"
             continue
         m = BLOCK_RE.match(line)
         if m:
             kind = re.sub(r"\s+", "", m.group(1))
-            if kind == "記述":
+            nxt = next((l for _, l in body[k + 1:] if l.strip()), "")
+            if kind == "記述" and not STATEMENT_RE.match(nxt):
+                # 肢の並びではなく、穴埋めの本文としての【記述】（H27 刑法 問8・R02 刑法 問1）。前提文として持つ
+                cur_block = {"kind": kind, "lines": [], "line_range": [ln, ln]}
+                blocks.append(cur_block)
+                state = "context"
+            elif kind == "記述":
                 state, cur_block = "statements", None
-            elif kind in CONTEXT_KINDS:
-                cur_block = {"kind": kind, "lines": [], "line_range": [ln, ln]}
-                blocks.append(cur_block)
-                state = "context"
+            elif kind not in CONTEXT_KINDS and introduces_statements(stem_lines, kind) and STATEMENT_RE.match(nxt):
+                # リード文が「後記アからオまでの【証拠】」のように、この見出しの下を肢として予告している（H28 刑訴 問24）
+                state, cur_block = "statements", None
+                statement_headings.append(kind)
             else:
-                flags.append(f"未知の見出し【{kind}】（{ln}行目）")
-                state = "context"
+                # 【事例】【会話】【語句群】【見解】のほか、【判旨】【罰則】【Ａの証人尋問】なども前提文として持つ（刑法・刑訴）
                 cur_block = {"kind": kind, "lines": [], "line_range": [ln, ln]}
                 blocks.append(cur_block)
+                state = "context"
             continue
         ms = SUB_RE.match(line)
         if ms and state in ("stem", "statements", "substem"):
             subs.append({"marker": ms.group(1), "lines": [ms.group(2)], "line_range": [ln, ln]})
             state = "substem"
             continue
-        if CHOICE_RE.match(line):
+        if state == "statements" and statements and is_next_label(line, statements[-1]["label"]):
+            # ページ替わりで字下げが消えた肢（H27 刑法 問13 のウ〜オ）・字下げのない１〜５の肢（H28 刑法 問10）
+            statements.append({"label": line.strip()[0], "lines": [], "line_range": [ln, ln],
+                               "group": len(subs) - 1 if subs else None})
+        elif CHOICE_RE.match(line) or BLANK_CHOICE_RE.match(line):
             state = "choices"
-        elif (state == "context" and cur_block and cur_block["kind"] in ("事例", "見解") and STATEMENT_RE.match(line)
+        elif (state == "context" and cur_block and cur_block["kind"] != "語句群" and STATEMENT_RE.match(line)
               and STATEMENT_RE.match(line).group(1) == first_label(stem_lines) and not statements):
             # 【記述】の見出しなしで、前提文の直後に肢が続く形（R08 民訴 問31）。
             # リード文が予告する最初の肢ラベル（「１から５までの各記述」なら１）が出たら肢に切り替える
@@ -231,6 +295,14 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
             slots.append({"no": n0 + k, "statement_label": LABELS_KANA[a + k] if a + k <= b else None})
     elif sub_questions:
         slots = [{"no": n, "sub": g} for g, sq in enumerate(sub_questions) for n in sq["slot_no"]]
+    elif BARE_RANGE_RE.search(stem_n) and fmt == "true_false_each":
+        mb = BARE_RANGE_RE.search(stem_n)
+        n0, n1 = int(mb.group(1)), int(mb.group(2))
+        labels = [s["label"] for s in statements]
+        if n1 - n0 + 1 != len(labels):
+            flags.append("解答欄の範囲（肢の数と No の数）が合わない")
+        for k in range(n1 - n0 + 1):
+            slots.append({"no": n0 + k, "statement_label": labels[k] if k < len(labels) else None})
     else:
         slots = [{"no": int(n)} for n in SLOT_RE.findall(stem_n)]
     unordered = "順不同" in stem_n
@@ -261,13 +333,21 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
     context = [{"kind": b["kind"], "text": context_text(b["kind"], b["lines"]), "line_range": b["line_range"]}
                for b in blocks]
     choices = parse_choices(fmt, " ".join(l.strip() for _, l in choice_lines)) if choice_lines else []
-    if fmt == "unknown" and choices and out_statements and "どれか" in stem_n and not re.search(r"組合せ|組み合わせ", stem_n):
+    if (fmt == "unknown" and choices and (out_statements or context) and re.search(r"どれか|選びなさい", stem_n)
+            and not re.search(r"組合せ|組み合わせ", stem_n)):
         # ア・イ（・ウ）は事例や判決で、それを説明した選択肢から1つ選ぶ形（H23 民訴 問38 など）。
+        # 肢がなく、【会話】の中で条件に合う学生の人数を選ぶ形（H26 刑訴 問22）も同じ扱い。
         # 肢ごとの○×は出せないので問題カードにする（derive は導出しない）
         fmt = "meta_choice"
         polarity = "incorrect" if re.search(INCORRECT_PAT, stem_n) else ("correct" if "正しいもの" in stem_n else None)
         choices = parse_choices(fmt, " ".join(l.strip() for _, l in choice_lines))
         flags = [f for f in flags if f != "形式を判定できない"]
+
+    if fmt in ("combination", "count") and choices and not out_statements and context:
+        # ア〜オの肢がなく、【会話】【発言】の学生と見解の対応・発言者の組合せ・人数などを選ぶ形（R01 刑法 問10・R03 刑訴 問16）。
+        # 肢ごとの○×は出せないので問題カードにする
+        fmt = "meta_choice"
+        choices = parse_choices(fmt, " ".join(l.strip() for _, l in choice_lines))
 
     return {
         "id": ids["question_id"],
@@ -279,13 +359,14 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
         "unordered": unordered,
         "stem": stem,
         "context": context,
-        "requires_context": bool(block_kinds & {"事例", "会話", "見解"}),
+        "requires_context": bool(block_kinds - {"語句群"}),
         "statements": out_statements,
         "choices": choices,
         "answer_slots": slots,
         "sub_questions": sub_questions,
         "line_range": [head_line, body[-1][0] if body else head_line],
         "flags": flags,
+        **({"statement_headings": statement_headings} if statement_headings else {}),
     }
 
 

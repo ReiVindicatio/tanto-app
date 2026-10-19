@@ -382,9 +382,14 @@
    "exhaustive": false,
    "unordered": false,
    "stem": "表見代表取締役についての会社法第３５４条に関する次の１から５までの各記述のうち，判例の趣旨に照らし誤っているものはどれか。（解答欄は，［№22］）",
-   "context": [],
+   "context": [
+    {
+     "kind": "参照条文",
+     "text": "会社法\n第３５４条 株式会社は，代表取締役以外の取締役に社長，副社長その他株式会社を代表する権限を有するものと認められる名称を付した場合には，当該取締役がした行為について，善意の第三者に対してその責任を負う。"
+    }
+   ],
    "sub_questions": [],
-   "requires_context": false,
+   "requires_context": true,
    "choices": [],
    "answer_slots": [
     {
@@ -1035,9 +1040,14 @@
    "exhaustive": false,
    "unordered": false,
    "stem": "次のアからオまでの各債権のうち，判例の趣旨によれば商法第５２２条の適用又は準用がないものを組み合わせたものは，後記１から５までのうちどれか。（解答欄は，［№31］）",
-   "context": [],
+   "context": [
+    {
+     "kind": "参照条文",
+     "text": "商法\n第５２２条 商行為によって生じた債権は，この法律に別段の定めがある場合を除き，５年間行使しないときは，時効によって消滅する。ただし，他の法令に５年間より短い時効期間の定めがあるときは，その定めるところによる。"
+    }
+   ],
    "sub_questions": [],
-   "requires_context": false,
+   "requires_context": true,
    "choices": [
     {
      "number": 1,
@@ -1073,7 +1083,7 @@
     },
     {
      "number": 5,
-     "text": "ウ エ （参照条文）商法 第５２２条 商行為によって生じた債権は，この法律に別段の定めがある場合を除き，５年間行使 しないときは，時効によって消滅する。ただし，他の法令に５年間より短い時効期間の定めがあ るときは，その定めるところによる。",
+     "text": "ウ エ",
      "labels": [
       "ウ",
       "エ"
@@ -2062,7 +2072,7 @@
    "question_id": "yobi-2014-shoho-q20",
    "label": "１",
    "text": "取締役の地位を有しない会社の使用人が，代表取締役の承認の下に，会社を代表する権限を有するものと認められる名称を使用して取引をした場合には，会社は，その取引について，善意の第三者に対して責任を負う。",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": {
     "value": true,
     "derivation": "single_choice",
@@ -2100,7 +2110,7 @@
    "question_id": "yobi-2014-shoho-q20",
    "label": "２",
    "text": "代表取締役に通知しないで招集された取締役会において代表取締役に選定された取締役が代表取締役として取引をした場合には，その選定が無効であるときであっても，会社は，その取引について，善意の第三者に対して責任を負う。",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": {
     "value": true,
     "derivation": "single_choice",
@@ -2138,7 +2148,7 @@
    "question_id": "yobi-2014-shoho-q20",
    "label": "３",
    "text": "会社が代表取締役以外の取締役に会社を代表する権限を有するものと認められる名称を付し，その取締役がその名称を使用して取引をした場合であっても，その取締役が会社を代表する権限を有しないことを知らないことにつきその取引の相手方に重大な過失があるときは，会社は，その取引について責任を負わない。",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": {
     "value": true,
     "derivation": "single_choice",
@@ -2176,7 +2186,7 @@
    "question_id": "yobi-2014-shoho-q20",
    "label": "４",
    "text": "会社が代表取締役以外の取締役に会社を代表する権限を有するものと認められる名称を付し，その取締役がその名称を使用して取引をした場合において，善意の第三者として保護される者は，その取引の直接の相手方に限られない。",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": {
     "value": false,
     "derivation": "single_choice",
@@ -2213,8 +2223,8 @@
    "id": "yobi-2014-shoho-q20-5",
    "question_id": "yobi-2014-shoho-q20",
    "label": "５",
-   "text": "会社の代表者としての資格を有しない者につき代表取締役の就任の登記がされた場合において，その者を被告である当該会社の代表者として提起された訴えは，不適法である。（参照条文）会社法第３５４条 株式会社は，代表取締役以外の取締役に社長，副社長その他株式会社を代表する権限を有するものと認められる名称を付した場合には，当該取締役がした行為について，善意の第三者に対してその責任を負う。",
-   "requires_context": false,
+   "text": "会社の代表者としての資格を有しない者につき代表取締役の就任の登記がされた場合において，その者を被告である当該会社の代表者として提起された訴えは，不適法である。",
+   "requires_context": true,
    "truth_at_exam": {
     "value": true,
     "derivation": "single_choice",
@@ -2243,7 +2253,7 @@
    "provenance": {
     "line_range": [
      418,
-     423
+     419
     ]
    }
   },
@@ -3542,7 +3552,7 @@
    "question_id": "yobi-2014-shoho-q28",
    "label": "ア",
    "text": "商行為によって生じた債務の不履行に基づく損害賠償請求権",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": null,
    "truth_current": {
     "status": "unreviewed",
@@ -3568,7 +3578,7 @@
    "question_id": "yobi-2014-shoho-q28",
    "label": "イ",
    "text": "債権者のためには商行為ではなく，債務者のためにのみ商行為である行為によって生じた債権",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": null,
    "truth_current": {
     "status": "unreviewed",
@@ -3594,7 +3604,7 @@
    "question_id": "yobi-2014-shoho-q28",
    "label": "ウ",
    "text": "商行為である金銭消費貸借に関し，利息制限法所定の制限を超えて支払われた利息・損害金についての不当利得返還請求権",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": null,
    "truth_current": {
     "status": "unreviewed",
@@ -3620,7 +3630,7 @@
    "question_id": "yobi-2014-shoho-q28",
    "label": "エ",
    "text": "質屋を営む個人が商人ではない個人の顧客に対して貸付けを行った場合におけるその貸付債権",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": null,
    "truth_current": {
     "status": "unreviewed",
@@ -3646,7 +3656,7 @@
    "question_id": "yobi-2014-shoho-q28",
    "label": "オ",
    "text": "満期を白地として振り出された約束手形の白地補充権",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": null,
    "truth_current": {
     "status": "unreviewed",

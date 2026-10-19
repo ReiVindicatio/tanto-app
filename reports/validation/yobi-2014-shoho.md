@@ -13,7 +13,7 @@
 | 17 | 2 | combination | 正しい | アイウエオ | No.19=4 |  |
 | 18 | 2 | combination | 正しい | アイウエオ | No.20=4 |  |
 | 19 | 2 | combination | 正しい | アイウエオ | No.21=5 |  |
-| 20 | 2 | single_choice | 誤り | １２３４５ | No.22=4 |  |
+| 20 | 2 | single_choice | 誤り | １２３４５ | No.22=4 | 前提文：参照条文 |
 | 21 | 2 | combination | 誤り | アイウエオ | No.23=5 |  |
 | 22 | 2 | combination | 正しい | アイウエオ | No.24=4 |  |
 | 23 | 2 | single_choice | — | １２３４５ | No.25=1 |  |
@@ -21,7 +21,7 @@
 | 25 | 2 | combination | 正しい | アイウエオ | No.27=3 |  |
 | 26 | 2 | combination | 正しい | アイウエオ | No.28=5 |  |
 | 27 | 2 | multi_select_unordered | 正しい | １２３４５ | No.29=2／No.30=5 | 順不同、1問正解で部分点1点 |
-| 28 | 2 | combination | — | アイウエオ | No.31=5 |  |
+| 28 | 2 | combination | — | アイウエオ | No.31=5 | 前提文：参照条文 |
 | 29 | 2 | combination | — | アイウエオ | No.32=2 |  |
 | 30 | 2 | multi_select_unordered | 正しい | １２３４５ | No.33=3／No.34=4 | 順不同、1問正解で部分点1点 |
 

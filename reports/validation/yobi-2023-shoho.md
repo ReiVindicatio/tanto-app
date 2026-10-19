@@ -18,9 +18,9 @@
 | 22 | 2 | combination | 正しい | アイウエオ | No.22=2 |  |
 | 23 | 2 | combination | 正しい | アイウエオ | No.23=1 |  |
 | 24 | 2 | combination | 正しい | アイウエオ | No.24=4 |  |
-| 25 | 2 | single_choice | 正しい | １２３４５ | No.25=5 |  |
+| 25 | 2 | single_choice | 正しい | １２３４５ | No.25=5 | 前提文：参照条文 |
 | 26 | 2 | combination | — | アイウエオ | No.26=3 |  |
-| 27 | 2 | combination | 正しい | アイウエオ | No.27=1 |  |
+| 27 | 2 | combination | 正しい | アイウエオ | No.27=1 | 前提文：参照条文 |
 | 28 | 2 | single_choice | 誤り | １２３４５ | No.28=5 |  |
 | 29 | 2 | combination | 誤り | アイウエオ | No.29=4 |  |
 | 30 | 2 | combination | 正しい | アイウエオ | No.30=4 |  |

@@ -21,7 +21,7 @@
 | 25 | 2 | combination | 正しい | アイウエオ | No.27=4 |  |
 | 26 | 2 | combination | 正しい | アイウエオ | No.28=1 |  |
 | 27 | 2 | combination | 誤り | アイウエオ | No.29=5 |  |
-| 28 | 2 | combination | 正しい | アイウエオ | No.30=1 |  |
+| 28 | 2 | combination | 正しい | アイウエオ | No.30=1 | 前提文：参照条文 |
 | 29 | 2 | combination | — | アイウエオ | No.31=4 |  |
 | 30 | 2 | combination | 誤り | アイウエオ | No.32=3 |  |
 

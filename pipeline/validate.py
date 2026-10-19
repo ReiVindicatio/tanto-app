@@ -34,14 +34,19 @@ class Report:
 
 
 def no_ws(s: str) -> str:
-    return re.sub(r"\s+", "", nfkc(s))
+    # NFKC は № を「No」（ピリオドなし）にするので、先に「No.」にそろえる（解答欄の［№15］と再構成の［No.15］）
+    return re.sub(r"\s+", "", nfkc(s.replace("№", "No.")))
 
 
 def rebuild(q: dict) -> str:
     """パース結果から、問の本文を元の順序で組み立て直す（照合用）。"""
     pieces = [(q["line_range"][0], f"〔第{q['number']}問〕(配点:{q['points']})"), (q["line_range"][0] + 0.5, q["stem"])]
     for c in q["context"]:
-        pieces.append((c["line_range"][0], f"【{c['kind']}】" + c["text"]))
+        if c["kind"] == "参照条文":  # 問の末尾（選択肢の後ろ）にある
+            pieces.append((10 ** 9 + 1, "（参照条文）" + c["text"]))
+            continue
+        # 【記述】の見出し行は照合から除く（raw_question_text と同じ扱い）
+        pieces.append((c["line_range"][0], ("" if c["kind"] == "記述" else f"【{c['kind']}】") + c["text"]))
     for sq in q.get("sub_questions", []):
         pieces.append((sq["line_range"][0], sq["marker"] + sq["stem"]))
     for s in q["statements"]:
@@ -56,7 +61,8 @@ def raw_question_text(lines: list[str], q: dict) -> str:
     a, b = q["line_range"]
     body = [l.replace("\f", "") for l in lines[a - 1:b]]
     # 【記述】の見出し行はパース結果に残さないので、照合からも除く（リード文中の「各【記述】」は残す）
-    body = [l for l in body if not PAGE_NUMBER_RE.match(l) and no_ws(l) != "【記述】"]
+    headings = {"【記述】"} | {f"【{k}】" for k in q.get("statement_headings", [])}
+    body = [l for l in body if not PAGE_NUMBER_RE.match(l) and no_ws(l) not in headings]
     return no_ws("".join(body))
 
 
@@ -120,14 +126,14 @@ def validate_question(r: Report, q: dict, a: dict | None, lines: list[str]) -> N
         r.check(f"{p} 肢があり選択肢の行がない", bool(st_labels) and not q["choices"])
         r.check(f"{p} 解答が肢の範囲", all(1 <= x <= len(st_labels) for x in answers), str(answers))
         if fmt == "multi_select_unordered":
-            m = re.search(r"(\d+)個選", nfkc(q["stem"]))
+            m = re.search(r"(\d+)(?:個|つ)選", nfkc(q["stem"]))
             want = int(m.group(1)) if m else None
             r.check(f"{p} 選ぶ個数と No の数が一致", want == len(answers) and len(answers) >= 2, f"リード文 {want}個／No {len(answers)}個")
             r.check(f"{p} 順不同の解答が重複しない", len(set(answers)) == len(answers), str(answers))
         else:
             r.check(f"{p} 単一選択：No が1つ", len(answers) == 1, str(answers))
     elif fmt == "meta_choice":
-        r.check(f"{p} 記述を説明した選択肢：肢と選択肢がある", bool(st_labels) and bool(q["choices"]))
+        r.check(f"{p} 記述を説明した選択肢：肢か前提文と、選択肢がある", (bool(st_labels) or bool(q["context"])) and bool(q["choices"]))
         r.check(f"{p} 記述を説明した選択肢：解答が選択肢の範囲", len(answers) == 1 and 1 <= answers[0] <= len(q["choices"]), str(answers))
     elif fmt == "count":
         r.check(f"{p} 個数：肢と選択肢がある", bool(st_labels) and bool(q["choices"]))
@@ -135,9 +141,11 @@ def validate_question(r: Report, q: dict, a: dict | None, lines: list[str]) -> N
         r.check(f"{p} 個数：選択肢が個数として読める", all(isinstance(x, int) and 0 <= x <= len(st_labels) for x in counts), str(counts))
         r.check(f"{p} 個数：解答が選択肢の範囲", len(answers) == 1 and 1 <= answers[0] <= len(q["choices"]), str(answers))
     elif fmt == "fill_blank":
+        # 語の記号：語句群・語の一覧（【発言】など）の各行の頭、または本文中の「①（ａ．…・ｂ．…）」（H27 刑法 問8）
         words = {line[0] for c in q["context"] if c["kind"] == "語句群" for line in c["text"].split("\n")}
-        r.check(f"{p} 穴埋め：語句群がある", bool(words))
-        m = re.search(r"①から([①-⑳])までの", q["stem"])
+        words |= {m for c in q["context"] for m in re.findall(r"(?:^|\s|（|・)([ａ-ｚアイウエオカキクケコサシスセソ])．", c["text"])}
+        r.check(f"{p} 穴埋め：選ぶ語がある", bool(words))
+        m = re.search(r"①から([①-⑳])(?:まで)?の", q["stem"])  # 「①から⑦の（ ）内に」（H23 刑法 問3）
         max_blank = ord(m.group(1)) - ord("①") + 1 if m else None
         bad = [c["number"] for c in q["choices"]
                if not c["blanks"] or any(b["word"] not in words or (max_blank and b["blank"] > max_blank) for b in c["blanks"])]

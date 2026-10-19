@@ -854,9 +854,14 @@
    "exhaustive": false,
    "unordered": false,
    "stem": "株式会社についての訴訟に関する次の１から５までの各記述のうち、正しいものはどれか。（解答欄は、［№25］）",
-   "context": [],
+   "context": [
+    {
+     "kind": "参照条文",
+     "text": "会社法（役員等の株式会社に対する損害賠償責任）\n第４２３条 取締役、会計参与、監査役、執行役又は会計監査人（以下この章において「役員等」という。）は、その任務を怠ったときは、株式会社に対し、これによって生じた損害を賠償する責任を負う。２～４ （略）"
+    }
+   ],
    "sub_questions": [],
-   "requires_context": false,
+   "requires_context": true,
    "choices": [],
    "answer_slots": [
     {
@@ -1005,9 +1010,14 @@
    "exhaustive": false,
    "unordered": false,
    "stem": "商業登記に関する次のアからオまでの各記述のうち、判例の趣旨に照らし正しいものを組み合わせたものは、後記１から５までのうちどれか。（解答欄は、［№27］）",
-   "context": [],
+   "context": [
+    {
+     "kind": "参照条文",
+     "text": "会社法（役員等の第三者に対する損害賠償責任）\n第４２９条 役員等がその職務を行うについて悪意又は重大な過失があったときは、当該役員等は、これによって第三者に生じた損害を賠償する責任を負う。２ （略）"
+    }
+   ],
    "sub_questions": [],
-   "requires_context": false,
+   "requires_context": true,
    "choices": [
     {
      "number": 1,
@@ -1043,7 +1053,7 @@
     },
     {
      "number": 5,
-     "text": "エ オ （参照条文）会社法 （役員等の第三者に対する損害賠償責任） 第４２９条 役員等がその職務を行うについて悪意又は重大な過失があったときは、当該役員等 は、これによって第三者に生じた損害を賠償する責任を負う。 ２ （略）",
+     "text": "エ オ",
      "labels": [
       "エ",
       "オ"
@@ -3050,7 +3060,7 @@
    "question_id": "yobi-2023-shoho-q25",
    "label": "１",
    "text": "株主総会決議取消しの訴えは、当該株主総会決議の日から１年以内に提起することができる。",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": {
     "value": false,
     "derivation": "single_choice",
@@ -3088,7 +3098,7 @@
    "question_id": "yobi-2023-shoho-q25",
    "label": "２",
    "text": "株主総会決議不存在確認の訴えは、当該決議の存在を主張している株主を被告として提起することができる。",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": {
     "value": false,
     "derivation": "single_choice",
@@ -3126,7 +3136,7 @@
    "question_id": "yobi-2023-shoho-q25",
    "label": "３",
    "text": "株主総会決議無効確認の訴えは、被告となる株式会社の支店の所在地を管轄する地方裁判所にも提起することができる。",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": {
     "value": false,
     "derivation": "single_choice",
@@ -3164,7 +3174,7 @@
    "question_id": "yobi-2023-shoho-q25",
    "label": "４",
    "text": "株主代表訴訟は、会社法第４２３条第１項に基づく株式会社の役員等に対する損害賠償請求権を訴訟物とするものでなければならない。",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": {
     "value": false,
     "derivation": "single_choice",
@@ -3201,8 +3211,8 @@
    "id": "yobi-2023-shoho-q25-5",
    "question_id": "yobi-2023-shoho-q25",
    "label": "５",
-   "text": "会社法上の公開会社である監査役設置会社が取締役であった者に対して貸金返還請求の訴えを提起する場合には、監査役が当該監査役設置会社を代表する。（参照条文）会社法（役員等の株式会社に対する損害賠償責任）第４２３条 取締役、会計参与、監査役、執行役又は会計監査人（以下この章において「役員等」という。）は、その任務を怠ったときは、株式会社に対し、これによって生じた損害を賠償する責任を負う。２～４ （略）",
-   "requires_context": false,
+   "text": "会社法上の公開会社である監査役設置会社が取締役であった者に対して貸金返還請求の訴えを提起する場合には、監査役が当該監査役設置会社を代表する。",
+   "requires_context": true,
    "truth_at_exam": {
     "value": true,
     "derivation": "single_choice",
@@ -3231,7 +3241,7 @@
    "provenance": {
     "line_range": [
      460,
-     467
+     461
     ]
    }
   },
@@ -3370,7 +3380,7 @@
    "question_id": "yobi-2023-shoho-q27",
    "label": "ア",
    "text": "株式会社の代表取締役は、代表取締役である旨の登記がされているか否かにかかわらず、当該株式会社を代表して取引先である会社に対する売買代金請求の訴えを提起することができる。",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": {
     "value": true,
     "derivation": "combination",
@@ -3408,7 +3418,7 @@
    "question_id": "yobi-2023-shoho-q27",
    "label": "イ",
    "text": "株式会社の取締役として選任されていない者は、自己を取締役として登記することについて承諾し、その旨の登記がされた場合であっても、積極的に取締役として対外的又は内部的な行為をしない限り、会社法第４２９条第１項の役員等としての責任を負わない。",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": {
     "value": false,
     "derivation": "combination",
@@ -3446,7 +3456,7 @@
    "question_id": "yobi-2023-shoho-q27",
    "label": "ウ",
    "text": "会社法の規定により登記すべき事項について、登記の申請がされたものの、登記官の過誤により当該登記がされなかった場合には、当該登記の申請者は、当該事項を善意の第三者に対抗することができない。",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": {
     "value": true,
     "derivation": "combination",
@@ -3484,7 +3494,7 @@
    "question_id": "yobi-2023-shoho-q27",
    "label": "エ",
    "text": "会社法の規定により登記すべき事項が登記された後であっても、過失なく負傷したため登記簿を閲覧することができなかったことにより、その登記があることを知らなかった者に対しては、当該事項を対抗することができない。",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": {
     "value": false,
     "derivation": "combination",
@@ -3522,7 +3532,7 @@
    "question_id": "yobi-2023-shoho-q27",
    "label": "オ",
    "text": "申請された登記事項について登記官の過誤により誤った内容が登記された場合には、当該登記の申請者は、当該事項が不実であることを善意の第三者に対抗することができない。",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": {
     "value": false,
     "derivation": "combination",

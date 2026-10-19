@@ -607,9 +607,14 @@
    "exhaustive": false,
    "unordered": true,
    "stem": "取締役の責任に関する次の１から５までの各記述のうち，正しいものを２個選びなさい。（解答欄は，［№22］，［№23］順不同）",
-   "context": [],
+   "context": [
+    {
+     "kind": "参照条文",
+     "text": "会社法\n第４２９条 役員等がその職務を行うについて悪意又は重大な過失があったときは，当該役員等は，これによって第三者に生じた損害を賠償する責任を負う。２ （略）"
+    }
+   ],
    "sub_questions": [],
-   "requires_context": false,
+   "requires_context": true,
    "choices": [],
    "answer_slots": [
     {
@@ -2447,7 +2452,7 @@
    "question_id": "yobi-2021-shoho-q22",
    "label": "１",
    "text": "株式会社が当該株式会社の計算において株主の権利の行使に関して財産上の利益の供与をしたときは，当該利益の供与をした取締役は，当該株式会社に対し，供与した利益の価額に相当する額を支払う義務を負う。",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": {
     "value": true,
     "derivation": "multi_select_unordered",
@@ -2489,7 +2494,7 @@
    "question_id": "yobi-2021-shoho-q22",
    "label": "２",
    "text": "判例の趣旨によれば，会社法第４２９条第１項の役員等の責任について，取締役が第三者に対して賠償すべき損害の額を定めるに当たっては，当該第三者に過失があったとしても，過失相殺をすることはできない。",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": {
     "value": false,
     "derivation": "multi_select_unordered",
@@ -2531,7 +2536,7 @@
    "question_id": "yobi-2021-shoho-q22",
    "label": "３",
    "text": "剰余金の配当により株主に対して分配可能額を超える金銭が交付された場合において，当該剰余金の配当に関する職務を行った業務執行取締役が当該株式会社に対して配当額に相当する金銭を支払う義務は，その全額を総株主の同意により免除することができる。",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": {
     "value": false,
     "derivation": "multi_select_unordered",
@@ -2573,7 +2578,7 @@
    "question_id": "yobi-2021-shoho-q22",
    "label": "４",
    "text": "判例の趣旨によれば，株式会社の取締役を辞任した者は，その辞任登記が未了である場合において，当該株式会社の代表者に対して辞任登記を申請しないで不実の登記を残存させることにつき明示的に承諾を与えていたときは，辞任登記未了であるためその者が取締役であると信じて当該株式会社と取引をした第三者に対し，会社法第４２９条第１項の役員等として責任を負うことがある。",
-   "requires_context": false,
+   "requires_context": true,
    "truth_at_exam": {
     "value": true,
     "derivation": "multi_select_unordered",
@@ -2614,8 +2619,8 @@
    "id": "yobi-2021-shoho-q22-5",
    "question_id": "yobi-2021-shoho-q22",
    "label": "５",
-   "text": "新株予約権の募集に関する職務を行った業務執行取締役は，新株予約権を行使した新株予約権者が給付した現物出資財産の価額が新株予約権の内容として定められた価額に著しく不足する場合には，検査役の調査を経たときであっても，その株式会社に対し，当該不足額を支払う義務を負う。（参照条文）会社法第４２９条 役員等がその職務を行うについて悪意又は重大な過失があったときは，当該役員等は，これによって第三者に生じた損害を賠償する責任を負う。２ （略）",
-   "requires_context": false,
+   "text": "新株予約権の募集に関する職務を行った業務執行取締役は，新株予約権を行使した新株予約権者が給付した現物出資財産の価額が新株予約権の内容として定められた価額に著しく不足する場合には，検査役の調査を経たときであっても，その株式会社に対し，当該不足額を支払う義務を負う。",
+   "requires_context": true,
    "truth_at_exam": {
     "value": false,
     "derivation": "multi_select_unordered",
@@ -2648,7 +2653,7 @@
    "provenance": {
     "line_range": [
      450,
-     457
+     453
     ]
    }
   },

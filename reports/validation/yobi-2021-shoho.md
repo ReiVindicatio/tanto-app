@@ -15,7 +15,7 @@
 | 19 | 2 | combination | 正しい | アイウエオ | No.19=5 |  |
 | 20 | 2 | combination | 正しい | アイウエオ | No.20=1 |  |
 | 21 | 2 | combination | 誤り | アイウエオ | No.21=3 |  |
-| 22 | 2 | multi_select_unordered | 正しい | １２３４５ | No.22=1／No.23=4 | 順不同、1問正解で部分点1点 |
+| 22 | 2 | multi_select_unordered | 正しい | １２３４５ | No.22=1／No.23=4 | 順不同、前提文：参照条文、1問正解で部分点1点 |
 | 23 | 2 | single_choice | 誤り | １２３４５ | No.24=2 |  |
 | 24 | 2 | combination | 誤り | アイウエオ | No.25=5 |  |
 | 25 | 2 | single_choice | 誤り | １２３４５ | No.26=5 |  |
