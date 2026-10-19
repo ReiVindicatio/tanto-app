@@ -100,7 +100,10 @@ def parse(tsv_path) -> list[dict]:
         for w in body:
             kind, side, _ = min(cols, key=lambda c: abs(c[2] - w.cx))
             if not nfkc(w.text).isdigit():
-                kind = "rem"  # 問・No・解答・配点の欄は数字だけ。備考の文字が左に寄っていても備考に入れる
+                # 問・No・解答・配点の欄は数字だけ。数字でない語は、一番近い段の備考欄に入れる
+                # （「順不同」の「同」が右段の「問」の列に近いことがある：R01）
+                kind = "rem"
+                side = min((c for c in cols if c[0] == "rem"), key=lambda c: abs(c[2] - w.cx))[1]
             cells.setdefault((kind, side), []).append(w)
         for side in sorted({c[1] for c in cols}):
             questions += parse_side(cells, side, page)

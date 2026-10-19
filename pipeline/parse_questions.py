@@ -17,13 +17,16 @@ import sys
 from common import (EXAM_IDS, EXTRACTED, PAGE_NUMBER_RE, PARSED, ROOT, SUBJECT_IDS, nfkc, to_int, write_json,
                     year_parts)
 
-QUESTION_RE = re.compile(r"^\s*〔第([0-9０-９]+)問〕（配点：([0-9０-９]+)）\s*$")
+# 問の見出し。括弧は全角・半角が混ざる年度がある（H24・H28）。配点が次の行に分かれる年度もある（H30 第20問）
+QUESTION_RE = re.compile(r"^\s*〔第([0-9０-９]+)問〕\s*[（(]配点[：:]\s*([0-9０-９]+)\s*[）)]\s*$")
+QUESTION_ONLY_RE = re.compile(r"^\s*〔第([0-9０-９]+)問〕\s*$")
+POINTS_LINE_RE = re.compile(r"^\s*[（(]配点[：:]\s*([0-9０-９]+)\s*[）)]\s*$")
 BLOCK_RE = re.compile(r"^\s*【([^】]+)】\s*$")
 LABELS_KANA = "アイウエオカキクケコ"
 STATEMENT_RE = re.compile(r"^\s+([アイウエオカキクケコ]|[１-９])[．.]")  # 半角の「.」の年度もある（H28）
 CHOICE_RE = re.compile(r"^[１-９][．.]")  # 選択肢は行頭（字下げなし）
 SUB_RE = re.compile(r"^\s*([⑴-⑼])(?!及び|又は|から|、|，)\s*(.*)$")  # 小問（⑴⑵…）の見出し（H26 問5）。「⑴及び⑵に答えなさい」は除く
-SLOT_RE = re.compile(r"\[No\.(\d+)\]")  # norm_slots 後の文字列に使う
+SLOT_RE = re.compile(r"\[[,、]?No\.(\d+)\]")  # norm_slots 後の文字列に使う。「［， №38］」と崩れた年度がある（H23 民訴）
 RANGE_RE = re.compile(r"([アイウエオカキクケコ])から([アイウエオカキクケコ])の順に\[No\.(\d+)\]から\[No\.(\d+)\]")
 TRAILING_SLOT_RE = re.compile(r"\s*［(?:No\.|№)\s*([0-9０-９]+)］\s*$")
 
@@ -81,11 +84,21 @@ def context_text(kind: str, lines: list[str]) -> str:
     return "\n".join(out)
 
 
+# 「誤り」の向きの言い方（H30 商法 問25 は「誤ったもの」）
+INCORRECT_PAT = r"誤っているもの|誤ったもの|誤りであるもの|正しくないもの"
+
+
+def first_label(stem_lines: list[tuple[int, str]]) -> str | None:
+    """リード文の「アからオまでの各記述」「１から５までの各記述」から、最初の肢ラベルを返す"""
+    m = re.search(r"([ア１])から([イウエオカキクケコ２-９])までの各", "".join(l.strip() for _, l in stem_lines))
+    return m.group(1) if m else None
+
+
 def detect_format(stem_n: str, has_choices: bool, blocks: set[str]) -> tuple[str, str | None]:
     """リード文（正規化済み）から形式と、選ぶ対象の向きを決める。決まらなければ unknown／None。"""
     if re.search(r"正しい場合には1を.*誤っている場合には2", stem_n):
         return "true_false_each", None
-    if "幾つ" in stem_n or "個数" in stem_n:
+    if re.search(r"幾つあるか|の個数", stem_n):  # 「幾つかの立場がある」（H30 商法 問30）は個数問題ではない
         fmt = "count"
     elif "語句群" in blocks or re.search(r"[①-⑳]から[①-⑳]までの\(", stem_n):
         return "fill_blank", None
@@ -97,7 +110,7 @@ def detect_format(stem_n: str, has_choices: bool, blocks: set[str]) -> tuple[str
         fmt = "single_choice"
     else:
         return "unknown", None
-    if "誤っているもの" in stem_n:
+    if re.search(INCORRECT_PAT, stem_n):
         pol = "incorrect"
     elif "正しいもの" in stem_n:
         pol = "correct"
@@ -123,8 +136,8 @@ def parse_choices(fmt: str, text: str) -> list[dict]:
     return choices
 
 
-def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: dict) -> dict:
-    """body：問の見出しの次の行から次の問の手前までの (行番号, 行) の並び。"""
+def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: dict, head_line: int) -> dict:
+    """body：問の見出しの次の行から次の問の手前までの (行番号, 行) の並び。head_line：見出しの行番号"""
     stem_lines: list[tuple[int, str]] = []
     blocks: list[dict] = []           # 前提文
     statements: list[dict] = []
@@ -159,6 +172,13 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
             continue
         if CHOICE_RE.match(line):
             state = "choices"
+        elif (state == "context" and cur_block and cur_block["kind"] in ("事例", "見解") and STATEMENT_RE.match(line)
+              and STATEMENT_RE.match(line).group(1) == first_label(stem_lines) and not statements):
+            # 【記述】の見出しなしで、前提文の直後に肢が続く形（R08 民訴 問31）。
+            # リード文が予告する最初の肢ラベル（「１から５までの各記述」なら１）が出たら肢に切り替える
+            state = "statements"
+            statements.append({"label": STATEMENT_RE.match(line).group(1), "lines": [], "line_range": [ln, ln],
+                               "group": None})
         elif state in ("stem", "statements", "substem") and STATEMENT_RE.match(line):
             state = "statements"
             statements.append({"label": STATEMENT_RE.match(line).group(1), "lines": [], "line_range": [ln, ln],
@@ -241,6 +261,13 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
     context = [{"kind": b["kind"], "text": context_text(b["kind"], b["lines"]), "line_range": b["line_range"]}
                for b in blocks]
     choices = parse_choices(fmt, " ".join(l.strip() for _, l in choice_lines)) if choice_lines else []
+    if fmt == "unknown" and choices and out_statements and "どれか" in stem_n and not re.search(r"組合せ|組み合わせ", stem_n):
+        # ア・イ（・ウ）は事例や判決で、それを説明した選択肢から1つ選ぶ形（H23 民訴 問38 など）。
+        # 肢ごとの○×は出せないので問題カードにする（derive は導出しない）
+        fmt = "meta_choice"
+        polarity = "incorrect" if re.search(INCORRECT_PAT, stem_n) else ("correct" if "正しいもの" in stem_n else None)
+        choices = parse_choices(fmt, " ".join(l.strip() for _, l in choice_lines))
+        flags = [f for f in flags if f != "形式を判定できない"]
 
     return {
         "id": ids["question_id"],
@@ -257,7 +284,7 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
         "choices": choices,
         "answer_slots": slots,
         "sub_questions": sub_questions,
-        "line_range": [body[0][0] - 1, body[-1][0]] if body else None,
+        "line_range": [head_line, body[-1][0] if body else head_line],
         "flags": flags,
     }
 
@@ -270,14 +297,24 @@ def parse_section(lines: list[str], start: int, end: int, ids_base: str) -> list
         if PAGE_NUMBER_RE.match(line):
             continue
         numbered.append((i + 1, line))
-    heads = [(k, QUESTION_RE.match(l)) for k, (_, l) in enumerate(numbered)]
-    heads = [(k, m) for k, m in heads if m]
+    # (見出しの位置, 問番号, 配点, 本文の開始位置)
+    heads: list[tuple[int, int, int, int]] = []
+    for k, (_, l) in enumerate(numbered):
+        m = QUESTION_RE.match(l)
+        if m:
+            heads.append((k, to_int(m.group(1)), to_int(m.group(2)), k + 1))
+            continue
+        m = QUESTION_ONLY_RE.match(l)
+        if m:
+            nxt_line = next(((j, x) for j, (_, x) in enumerate(numbered[k + 1:], k + 1) if x.strip()), None)
+            mp = POINTS_LINE_RE.match(nxt_line[1]) if nxt_line else None
+            if mp:
+                heads.append((k, to_int(m.group(1)), to_int(mp.group(1)), nxt_line[0] + 1))
     questions = []
-    for j, (k, m) in enumerate(heads):
+    for j, (k, number, points, body_start) in enumerate(heads):
         nxt = heads[j + 1][0] if j + 1 < len(heads) else len(numbered)
-        number, points = to_int(m.group(1)), to_int(m.group(2))
         qid = f"{ids_base}-q{number:02d}"
-        questions.append(parse_question(number, points, numbered[k + 1:nxt], {"question_id": qid}))
+        questions.append(parse_question(number, points, numbered[body_start:nxt], {"question_id": qid}, numbered[k][0]))
     return questions
 
 

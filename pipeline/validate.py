@@ -126,6 +126,9 @@ def validate_question(r: Report, q: dict, a: dict | None, lines: list[str]) -> N
             r.check(f"{p} 順不同の解答が重複しない", len(set(answers)) == len(answers), str(answers))
         else:
             r.check(f"{p} 単一選択：No が1つ", len(answers) == 1, str(answers))
+    elif fmt == "meta_choice":
+        r.check(f"{p} 記述を説明した選択肢：肢と選択肢がある", bool(st_labels) and bool(q["choices"]))
+        r.check(f"{p} 記述を説明した選択肢：解答が選択肢の範囲", len(answers) == 1 and 1 <= answers[0] <= len(q["choices"]), str(answers))
     elif fmt == "count":
         r.check(f"{p} 個数：肢と選択肢がある", bool(st_labels) and bool(q["choices"]))
         counts = [c.get("count") for c in q["choices"]]

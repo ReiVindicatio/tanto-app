@@ -25,6 +25,7 @@ export type Format =
   | "count"
   | "fill_blank"
   | "compound"
+  | "meta_choice"
   | "unknown";
 
 export type Question = {
