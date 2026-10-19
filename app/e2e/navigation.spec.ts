@@ -34,7 +34,7 @@ test("解いている画面ではタブを隠し、戻ると科目の画面に�
 test("科目の画面の URL を直接開ける。存在しない科目は科目の一覧へ", async ({ page }) => {
   await page.goto("/subjects/keiso");
   await expect(page.locator("h1.subject-title")).toContainText("刑事訴訟法");
-  await expect(page.locator(".set.year")).toHaveCount(15);
+  await expect(page.locator(".set.year")).toHaveCount(16);
   await page.goto("/subjects/nosuch");
   await expect(page).toHaveURL(/\/subjects$/);
 });

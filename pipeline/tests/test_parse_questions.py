@@ -138,5 +138,27 @@ class ParseQuestionsTest(unittest.TestCase):
         self.assertEqual([(s["label"], s["text"]) for s in q["statements"]], [("ア", "甲である。"), ("イ", "乙である。")])
         self.assertEqual(q["format"], "mark_combination")
 
+    def test_numbered_facts_after_full_stem_are_context_not_sub_questions(self):
+        # リード文が解答欄まで言い切った後の⑴⑵は小問でなく事案の箇条（H25 行政法 問20）
+        q = parse("  次の事案に関するアからイまでの各記述について，それぞれ正しい場合には１を，誤っている場合には２を\n"
+                  " 選びなさい。（解答欄は，アからイの順に［№44］から［№45］）\n"
+                  "  ⑴ 教育委員会は通達を発した。\n"
+                  "  ⑵ 処分が反復される危険がある。\n"
+                  "  ア．甲である。［№44］\n"
+                  "  イ．乙である。［№45］")
+        self.assertEqual(q["format"], "true_false_each")
+        self.assertEqual(q["sub_questions"], [])
+        self.assertEqual(q["context"][0]["text"], "⑴ 教育委員会は通達を発した。⑵ 処分が反復される危険がある。")  # 本文は折り返しをつなぐ
+        self.assertEqual([s["label"] for s in q["statements"]], ["ア", "イ"])
+
+
+class PageNumberTest(unittest.TestCase):
+    def test_doubled_page_number(self):
+        from common import PAGE_NUMBER_RE
+        self.assertTrue(PAGE_NUMBER_RE.match("                             -- 12 --"))  # 同じ位置に2つ描かれたページ番号（H25）
+        self.assertTrue(PAGE_NUMBER_RE.match("   - 1 -"))
+        self.assertFalse(PAGE_NUMBER_RE.match("  ア．- 1 - である。"))
+
+
 if __name__ == "__main__":
     unittest.main()

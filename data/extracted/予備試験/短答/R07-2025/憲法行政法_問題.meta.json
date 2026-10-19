@@ -4,54 +4,88 @@
   "sha256": "5579479fa8aebd024fb48b7dec0b18b1fc072095fded395ebbd526e7c9184420",
   "source_url": "https://www.moj.go.jp/content/001443616.pdf"
  },
- "method": "pdftotext",
+ "method": "pdftotext+fontmap",
  "tool": {
   "version": "pdftotext version 26.10.0",
   "args": [
    "-layout",
    "-enc",
    "UTF-8"
-  ]
+  ],
+  "repair": {
+   "script": "pipeline/repair_text.py",
+   "pypdf": "6.21.1",
+   "fonttools": "4.60.2"
+  }
  },
- "status": "needs_ocr",
+ "status": "ok",
+ "repair": {
+  "fontmap": {
+   "fonts": [
+    {
+     "pdf_font": "/OIJGFG+ＭＳ明朝-90ms-RKSJ-H",
+     "local_font": "MS Mincho Version 5.30",
+     "glyphs": 684,
+     "check": "TrueType の輪郭の座標が完全に一致"
+    },
+    {
+     "pdf_font": "/OIJGJG+ＭＳゴシック-90ms-RKSJ-H",
+     "local_font": "MS Gothic Version 5.30",
+     "glyphs": 62,
+     "check": "TrueType の輪郭の座標が完全に一致"
+    }
+   ]
+  }
+ },
  "quality": {
-  "normal_char_ratio": 0.0596,
-  "nonspace_chars": 14587,
+  "normal_char_ratio": 1.0,
+  "nonspace_chars": 13740,
   "threshold": 0.97,
   "per_page": [
-   0.1,
-   0.0606,
-   0.0655,
-   0.0564,
-   0.0671,
-   0.0596,
-   0.0609,
-   0.0682,
-   0.0504,
-   0.0409,
-   0.0589,
-   0.0616,
-   0.0682,
-   0.0539
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
   ]
  },
  "pages": 14,
  "page_start_lines": [
   0,
   7,
-  52,
-  99,
-  141,
-  174,
-  212,
-  259,
-  298,
-  343,
-  373,
-  405,
-  449,
-  487
+  54,
+  102,
+  145,
+  179,
+  218,
+  263,
+  302,
+  347,
+  376,
+  404,
+  447,
+  485
  ],
- "sections": [],
+ "sections": [
+  {
+   "subject": "憲法",
+   "start_line": 7,
+   "end_line": 263
+  },
+  {
+   "subject": "行政法",
+   "start_line": 263,
+   "end_line": 521
+  }
+ ],
  "tsv": null
 }

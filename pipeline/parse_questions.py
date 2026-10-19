@@ -283,6 +283,12 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
                 state = "context"
             continue
         ms = SUB_RE.match(line)
+        if ms and state == "stem" and "解答欄" in norm_slots(join_lines([l for _, l in stem_lines])):
+            # リード文が解答欄まで言い切った後の⑴⑵は小問でなく、事案の説明の箇条（H25 行政法 問20）。前提文にする
+            cur_block = {"kind": "本文", "lines": [line], "line_range": [ln, ln], "no_heading": True}
+            blocks.append(cur_block)
+            state = "context"
+            continue
         if ms and state in ("stem", "statements", "substem"):
             subs.append({"marker": ms.group(1), "lines": [ms.group(2)], "line_range": [ln, ln]})
             state = "substem"

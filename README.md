@@ -7,9 +7,11 @@
 ## パイプラインの実行
 
 Python 3.9 以上（標準ライブラリのみ）と poppler（`brew install poppler`）が要る。
+テキスト層が壊れた PDF の復元（`repair_text.py`）だけは、`python3 -m venv .venv && .venv/bin/pip install -r pipeline/requirements-repair.txt` と、Microsoft Office に同梱の MS 明朝・MS ゴシックが要る（復元した結果を commit するので、段階2以降と CI には要らない）。
 
 ```
 python3 pipeline/extract.py --match R08-2026                      # 段階1：テキスト化（品質スコア・科目見出し・正答表の座標 .tsv）
+.venv/bin/python pipeline/repair_text.py --match R07-2025           # 段階1の補助：テキスト層が壊れた PDF の復元（決定017。pypdf・fontTools と MS 明朝／ゴシックが要る。上記）
 python3 pipeline/parse_answers.py R08-2026 刑法刑事訴訟法           # 段階2b：正答表
 python3 pipeline/parse_questions.py R08-2026 刑法刑事訴訟法 刑法    # 段階2a：問題文
 python3 pipeline/validate.py R08-2026 刑法刑事訴訟法 刑法           # 段階3：検証 → reports/validation/

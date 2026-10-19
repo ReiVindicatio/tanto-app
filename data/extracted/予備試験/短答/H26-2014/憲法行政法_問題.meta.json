@@ -4,56 +4,184 @@
   "sha256": "1842bb7d70d112a76fe05a0495d279b0653def970593f0019453c042b462ca0e",
   "source_url": "https://www.moj.go.jp/content/000123105.pdf"
  },
- "method": "pdftotext",
+ "method": "pdftotext+drop_clipped+fontmap",
  "tool": {
   "version": "pdftotext version 26.10.0",
   "args": [
    "-layout",
    "-enc",
    "UTF-8"
-  ]
+  ],
+  "repair": {
+   "script": "pipeline/repair_text.py",
+   "pypdf": "6.21.1",
+   "fonttools": "4.60.2"
+  }
  },
- "status": "needs_ocr",
+ "status": "ok",
+ "repair": {
+  "drop_clipped": {
+   "dropped_text_ops": 769,
+   "kept_text_ops": 660
+  },
+  "fontmap": {
+   "fonts": [
+    {
+     "pdf_font": "/EYAYNS+MS-Mincho",
+     "local_font": "MS Mincho Version 5.30",
+     "glyphs": 3,
+     "check": "CFF の字形の面積（差3%以内）・重心と広がり（差5/1000以内）が一致"
+    },
+    {
+     "pdf_font": "/EYAYNS+MS-Mincho",
+     "local_font": "MS Mincho Version 5.30",
+     "glyphs": 3,
+     "check": "CFF の字形の面積（差3%以内）・重心と広がり（差5/1000以内）が一致"
+    },
+    {
+     "pdf_font": "/EYAYNS+MS-Mincho",
+     "local_font": "MS Mincho Version 5.30",
+     "glyphs": 3,
+     "check": "CFF の字形の面積（差3%以内）・重心と広がり（差5/1000以内）が一致"
+    },
+    {
+     "pdf_font": "/EYAYNS+MS-Mincho",
+     "local_font": "MS Mincho Version 5.30",
+     "glyphs": 3,
+     "check": "CFF の字形の面積（差3%以内）・重心と広がり（差5/1000以内）が一致"
+    },
+    {
+     "pdf_font": "/EYAYNS+MS-Mincho",
+     "local_font": "MS Mincho Version 5.30",
+     "glyphs": 3,
+     "check": "CFF の字形の面積（差3%以内）・重心と広がり（差5/1000以内）が一致"
+    },
+    {
+     "pdf_font": "/EYAYNS+MS-Mincho",
+     "local_font": "MS Mincho Version 5.30",
+     "glyphs": 3,
+     "check": "CFF の字形の面積（差3%以内）・重心と広がり（差5/1000以内）が一致"
+    },
+    {
+     "pdf_font": "/EYAYNS+MS-Mincho",
+     "local_font": "MS Mincho Version 5.30",
+     "glyphs": 3,
+     "check": "CFF の字形の面積（差3%以内）・重心と広がり（差5/1000以内）が一致"
+    },
+    {
+     "pdf_font": "/EYAYNS+MS-Mincho",
+     "local_font": "MS Mincho Version 5.30",
+     "glyphs": 3,
+     "check": "CFF の字形の面積（差3%以内）・重心と広がり（差5/1000以内）が一致"
+    },
+    {
+     "pdf_font": "/EYAYNS+MS-Mincho",
+     "local_font": "MS Mincho Version 5.30",
+     "glyphs": 3,
+     "check": "CFF の字形の面積（差3%以内）・重心と広がり（差5/1000以内）が一致"
+    },
+    {
+     "pdf_font": "/EYAYNS+MS-Mincho",
+     "local_font": "MS Mincho Version 5.30",
+     "glyphs": 4,
+     "check": "CFF の字形の面積（差3%以内）・重心と広がり（差5/1000以内）が一致"
+    },
+    {
+     "pdf_font": "/EYAYNS+MS-Mincho",
+     "local_font": "MS Mincho Version 5.30",
+     "glyphs": 3,
+     "check": "CFF の字形の面積（差3%以内）・重心と広がり（差5/1000以内）が一致"
+    },
+    {
+     "pdf_font": "/EYAYNS+MS-Mincho",
+     "local_font": "MS Mincho Version 5.30",
+     "glyphs": 4,
+     "check": "CFF の字形の面積（差3%以内）・重心と広がり（差5/1000以内）が一致"
+    },
+    {
+     "pdf_font": "/EYAYNS+MS-Gothic",
+     "local_font": "MS Gothic Version 5.30",
+     "glyphs": 14,
+     "check": "CFF の字形の面積（差3%以内）・重心と広がり（差5/1000以内）が一致"
+    },
+    {
+     "pdf_font": "/EYAYNS+MS-Mincho",
+     "local_font": "MS Mincho Version 5.30",
+     "glyphs": 221,
+     "check": "CFF の字形の面積（差3%以内）・重心と広がり（差5/1000以内）が一致"
+    },
+    {
+     "pdf_font": "/EYAYNS+MS-Mincho",
+     "local_font": "MS Mincho Version 5.30",
+     "glyphs": 4,
+     "check": "CFF の字形の面積（差3%以内）・重心と広がり（差5/1000以内）が一致"
+    },
+    {
+     "pdf_font": "/EYAYNS+MS-Mincho",
+     "local_font": "MS Mincho Version 5.30",
+     "glyphs": 4,
+     "check": "CFF の字形の面積（差3%以内）・重心と広がり（差5/1000以内）が一致"
+    },
+    {
+     "pdf_font": "/EYAYNS+MS-Mincho",
+     "local_font": "MS Mincho Version 5.30",
+     "glyphs": 4,
+     "check": "CFF の字形の面積（差3%以内）・重心と広がり（差5/1000以内）が一致"
+    }
+   ]
+  }
+ },
  "quality": {
-  "normal_char_ratio": 0.4939,
-  "nonspace_chars": 29187,
+  "normal_char_ratio": 1.0,
+  "nonspace_chars": 14798,
   "threshold": 0.97,
   "per_page": [
-   0.3056,
-   0.4586,
-   0.5017,
-   0.5579,
-   0.6019,
-   0.542,
-   0.3804,
-   0.4494,
-   0.4683,
-   0.5097,
-   0.4111,
-   0.7045,
-   0.0588,
-   0.4936,
-   0.611
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
   ]
  },
  "pages": 15,
  "page_start_lines": [
   0,
-  38,
-  114,
-  194,
-  285,
-  366,
-  446,
-  512,
-  600,
-  678,
-  763,
-  835,
-  911,
-  994,
-  1062
+  10,
+  49,
+  91,
+  145,
+  199,
+  240,
+  266,
+  321,
+  364,
+  410,
+  442,
+  489,
+  530,
+  557
  ],
- "sections": [],
+ "sections": [
+  {
+   "subject": "憲法",
+   "start_line": 10,
+   "end_line": 240
+  },
+  {
+   "subject": "行政法",
+   "start_line": 240,
+   "end_line": 602
+  }
+ ],
  "tsv": null
 }

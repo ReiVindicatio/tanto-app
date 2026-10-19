@@ -146,6 +146,11 @@ def main() -> None:
     version = pdftotext_version()
     bad = []
     for e in entries:
+        old = OUT / (ROOT / e["path"]).relative_to(RAW).with_suffix(".meta.json")
+        if old.exists() and "repair" in json.loads(old.read_text(encoding="utf-8")):
+            # repair_text.py で復元済み（T010）。pdftotext だけでは壊れた文字に戻るので上書きしない
+            print(f"⏭  復元済み（repair_text.py）：{e['path'].removeprefix('data/raw/')}")
+            continue
         meta = extract(e, version)
         mark = "✅" if meta["status"] == "ok" else "🔴"
         secs = ",".join(s["subject"] for s in meta["sections"])

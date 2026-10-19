@@ -4,76 +4,115 @@
   "sha256": "ca70b0c2a1b50962a65bf74fe5108483c58b5aaf79d8722f6281c5cd81d8c157",
   "source_url": "https://www.moj.go.jp/content/001443617.pdf"
  },
- "method": "pdftotext",
+ "method": "pdftotext+fontmap",
  "tool": {
   "version": "pdftotext version 26.10.0",
   "args": [
    "-layout",
    "-enc",
    "UTF-8"
-  ]
+  ],
+  "repair": {
+   "script": "pipeline/repair_text.py",
+   "pypdf": "6.21.1",
+   "fonttools": "4.60.2"
+  }
  },
- "status": "needs_ocr",
+ "status": "ok",
+ "repair": {
+  "fontmap": {
+   "fonts": [
+    {
+     "pdf_font": "/OIGCDE+ＭＳ明朝-90ms-RKSJ-H",
+     "local_font": "MS Mincho Version 5.30",
+     "glyphs": 700,
+     "check": "TrueType の輪郭の座標が完全に一致"
+    },
+    {
+     "pdf_font": "/OIGCIE+ＭＳゴシック-90ms-RKSJ-H",
+     "local_font": "MS Gothic Version 5.30",
+     "glyphs": 46,
+     "check": "TrueType の輪郭の座標が完全に一致"
+    }
+   ]
+  }
+ },
  "quality": {
-  "normal_char_ratio": 0.0436,
-  "nonspace_chars": 24125,
+  "normal_char_ratio": 1.0,
+  "nonspace_chars": 22683,
   "threshold": 0.97,
   "per_page": [
-   0.16,
-   0.0345,
-   0.0351,
-   0.0277,
-   0.0459,
-   0.0346,
-   0.0476,
-   0.0533,
-   0.0439,
-   0.0351,
-   0.037,
-   0.0334,
-   0.0398,
-   0.0599,
-   0.0505,
-   0.037,
-   0.0559,
-   0.0558,
-   0.0592,
-   0.053,
-   0.0286,
-   0.0513,
-   0.0382,
-   0.0526,
-   0.0248
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
   ]
  },
  "pages": 25,
  "page_start_lines": [
   0,
   7,
-  48,
-  89,
-  137,
-  175,
-  211,
-  250,
-  297,
-  341,
-  383,
-  423,
-  460,
-  497,
-  535,
-  569,
-  616,
-  657,
-  691,
-  725,
-  766,
-  788,
-  822,
-  858,
-  904
+  50,
+  91,
+  141,
+  180,
+  217,
+  257,
+  293,
+  335,
+  377,
+  415,
+  449,
+  485,
+  522,
+  554,
+  571,
+  614,
+  648,
+  682,
+  723,
+  745,
+  778,
+  814,
+  860
  ],
- "sections": [],
+ "sections": [
+  {
+   "subject": "民法",
+   "start_line": 7,
+   "end_line": 293
+  },
+  {
+   "subject": "商法",
+   "start_line": 293,
+   "end_line": 571
+  },
+  {
+   "subject": "民事訴訟法",
+   "start_line": 571,
+   "end_line": 883
+  }
+ ],
  "tsv": null
 }

@@ -55,7 +55,7 @@
 | # | 段階 | 入力 | 出力 | 方式 | ここで止める条件 |
 |---|---|---|---|---|---|
 | 0 | 取得 | `sources/manifest.json`（URL） | `data/raw/*.pdf`＋sha256（既存244件はコピー済み。抜けと新年度だけ取得） | 決定的 | 取り直した PDF の sha256 が manifest と違う（法務省側の差し替え） |
-| 1 | テキスト化 | PDF | `data/extracted/…/*.txt`＋`.meta.json`（方式・ページ境界・品質スコア） | `pdftotext -layout`。品質スコアが閾値未満なら OCR | 品質スコアが OCR 後も閾値未満 |
+| 1 | テキスト化 | PDF | `data/extracted/…/*.txt`＋`.meta.json`（方式・ページ境界・品質スコア） | `pdftotext -layout`。品質スコアが閾値未満なら、原因が分かるものは `repair_text.py` で決定的に復元（📖 `decisions/017`）。それ以外は OCR | 品質スコアが復元・OCR 後も閾値未満 |
 | 2a | 問題の構造化 | テキスト | `data/parsed/…/<科目>.json`（問・No・配点・リード文・前提文・肢） | **決定的**（正規表現＋形式判定） | 問番号・No が連番でない |
 | 2b | 正答の構造化 | 正答 PDF のテキスト | No→解答・配点・備考（順不同・部分点） | **決定的** | 下の検証に1つでも落ちる |
 | 3 | 検証 | 2a＋2b | `reports/validation/…md` | 決定的 | 1つでも ❌ |

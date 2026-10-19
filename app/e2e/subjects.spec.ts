@@ -4,8 +4,8 @@ import { openHome, openYear, subjectCard, tab } from "./helpers";
 test("商法・民訴がホームに出る（T007）", async ({ page }) => {
   await openHome(page);
   await tab(page, "科目").click();
-  await expect(subjectCard(page, "商法")).toContainText("15年度");
-  await expect(subjectCard(page, "民事訴訟法")).toContainText("15年度");
+  await expect(subjectCard(page, "商法")).toContainText("16年度");
+  await expect(subjectCard(page, "民事訴訟法")).toContainText("16年度");
 });
 
 test("記述を説明した選択肢から選ぶ問（民訴 H23 問38）を採点できる", async ({ page, request }) => {
@@ -30,11 +30,12 @@ test("記述を説明した選択肢から選ぶ問（民訴 H23 問38）を採�
   await expect(page.locator(".result .big")).toHaveText(`${target.points} / ${target.points} 点`);
 });
 
-test("刑法・刑訴が科目に出る（T009・T033：各15年度）", async ({ page }) => {
+test("7科目とも科目に出る（T009・T033・T010：各16年度）", async ({ page }) => {
   await openHome(page);
   await tab(page, "科目").click();
-  await expect(subjectCard(page, "刑法")).toContainText("15年度");
-  await expect(subjectCard(page, "刑事訴訟法")).toContainText("15年度");
+  for (const name of ["民法", "商法", "民事訴訟法", "刑法", "刑事訴訟法", "憲法", "行政法"]) {
+    await expect(subjectCard(page, name)).toContainText("16年度");
+  }
 });
 
 test("刑訴 R02 を問で解く：肢のない問（人数・発言者の組合せ）も含めて、公式の解答で満点になる", async ({ page, request }) => {

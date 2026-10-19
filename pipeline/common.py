@@ -65,7 +65,7 @@ def write_json(path: Path, obj) -> None:
     path.write_text(json.dumps(obj, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
-PAGE_NUMBER_RE = re.compile(r"^\s*-\s*[0-9０-９]+\s*-\s*$")
+PAGE_NUMBER_RE = re.compile(r"^\s*-+\s*[0-9０-９]+\s*-+\s*$")  # 「-- 1 --」：同じ位置に2つ描かれたページ番号（H25 憲法行政法）
 
 
 def errata_record(exam_id: str, year: int) -> dict | None:
