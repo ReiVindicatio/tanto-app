@@ -73,7 +73,7 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
 
       <QuestionBody q={q} statements={statements} showTruth={result !== null} explanations={expById} />
 
-      {q.format === "classify_each" && q.classes && (
+      {q.format === "classify_each" && q.classes && q.choices.length === 0 && (
         <div className="classes">
           <div className="muted small">選ぶ番号</div>
           {q.classes.map((c) => (

@@ -24,8 +24,10 @@ test("結果画面：正答率・科目ごと・まちがえた肢の一覧が�
   // 全部「○」で答える（○×の分布は公式の解答どおりなので、まちがえる数はデータから決まる）
   let wrong = 0;
   const truths = new Map<string, boolean>();
-  for (const f of ["yobi-2026-minpo.json", "yobi-2026-shoho.json", "yobi-2026-minso.json", "yobi-2026-keiho.json", "yobi-2026-keiso.json"]) {
-    const d = await (await request.get(`/data/${f}`)).json();
+  // 新規は各科目の新しい年度（R08）から入るので、R08 の全科目の○×を引けるようにする
+  const index = await (await request.get("/data/index.json")).json();
+  for (const set of index.sets.filter((x: any) => x.exam.year === 2026)) {
+    const d = await (await request.get(`/data/${set.file}`)).json();
     for (const s of d.statements) if (s.truth_at_exam) truths.set(s.text, s.truth_at_exam.value);
   }
   for (let k = 0; k < 10; k++) {

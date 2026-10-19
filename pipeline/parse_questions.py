@@ -18,9 +18,10 @@ from common import (EXAM_IDS, EXTRACTED, PAGE_NUMBER_RE, PARSED, ROOT, SUBJECT_I
                     year_parts)
 
 # 問の見出し。括弧は全角・半角が混ざる年度がある（H24・H28）。配点が次の行に分かれる年度もある（H30 第20問）
-QUESTION_RE = re.compile(r"^\s*〔第([0-9０-９]+)問〕\s*[（(]配点[：:]\s*([0-9０-９]+)\s*[）)]\s*$")
-QUESTION_ONLY_RE = re.compile(r"^\s*〔第([0-9０-９]+)問〕\s*$")
-POINTS_LINE_RE = re.compile(r"^\s*[（(]配点[：:]\s*([0-9０-９]+)\s*[）)]\s*$")
+# 「〔第５問 〕 (配 点 ：２)」と空白が混ざる年度がある（H28 憲法）
+QUESTION_RE = re.compile(r"^\s*〔\s*第\s*([0-9０-９]+)\s*問\s*〕\s*[（(]\s*配\s*点\s*[：:]\s*([0-9０-９]+)\s*[）)]\s*$")
+QUESTION_ONLY_RE = re.compile(r"^\s*〔\s*第\s*([0-9０-９]+)\s*問\s*〕\s*$")
+POINTS_LINE_RE = re.compile(r"^\s*[（(]\s*配\s*点\s*[：:]\s*([0-9０-９]+)\s*[）)]\s*$")
 BLOCK_RE = re.compile(r"^\s*【([^】]+)】\s*$")
 # 問の末尾の「（参照条文）刑事訴訟法」。前提文（kind＝参照条文）として持つ。以前は最後の肢・選択肢にくっついていた
 REFERENCE_RE = re.compile(r"^\s*（参照条文）(.*)$")
@@ -28,6 +29,8 @@ LABELS_KANA = "アイウエオカキクケコ"
 STATEMENT_RE = re.compile(r"^\s+([アイウエオカキクケコ]|[１-９])[．.]")  # 半角の「.」の年度もある（H28）
 CHOICE_RE = re.compile(r"^[１-９][．.]")  # 選択肢は行頭（字下げなし）
 # 穴埋めの選択肢「１．①ア ②エ …」は字下げされている年度がある（H26 刑法 問3）
+# 肢のラベルだけの選択肢「  １．ア        ２．イ」が字下げされている年度がある（H28 行政法 問17）
+LABEL_CHOICE_RE = re.compile(r"^\s*[１-９][．.]\s*[アイウエオカキクケコ](?:\s|$)")
 BLANK_CHOICE_RE = re.compile(r"^\s*[１-９][．.]\s*[①-⑳]\s*[ａ-ｚアイウエオカキクケコサシスセソ](?:\s|$)")
 SUB_RE = re.compile(r"^\s*([⑴-⑼])(?!及び|又は|から|、|，)\s*(.*)$")  # 小問（⑴⑵…）の見出し（H26 問5）。「⑴及び⑵に答えなさい」は除く
 SLOT_RE = re.compile(r"\[[,、]?No\.(\d+)\]")  # norm_slots 後の文字列に使う。「［， №38］」と崩れた年度がある（H23 民訴）
@@ -36,6 +39,13 @@ RANGE_RE = re.compile(r"([アイウエオカキクケコ])から([アイウエ�
 BARE_RANGE_RE = re.compile(r"解答欄は[,、]\[No\.(\d+)\]から\[No\.(\d+)\]")
 # 「①から⑤の順に［№32］から［№36］」（H28 刑訴 問22。NFKC で ① は 1 になる）
 ANY_RANGE_RE = re.compile(r"\[No\.(\d+)\]から\[No\.(\d+)\]")
+# 本文の中に肢が埋め込まれている形：「次のアからエまでの【 】内の各記述について」（行政法に多い。T008）
+EMBED_STEM_RE = re.compile(r"[ア1]から[イウエオカキクケコ2-9]まで(?:の)?【\s*】内の(?:各)?記述")
+EMBED_ITEM_RE = re.compile(r"（([アイウエオカキクケコ])）【([^】]*)】")
+# 肢ごとに○×を付けた組合せから選ぶ形：「正しいものに○，誤っているものに×を付した場合の組合せ」（T008）
+MARK_COMBINATION_RE = re.compile(r"[○〇].{0,20}×を付した場合の組み?合わ?せ")  # 「〇」（漢数字のゼロ）で書く年度がある
+# 対話の話者の行（「  甲    「…」「  教員：…」）
+SPEAKER_RE = re.compile(r"^\s{0,3}[^\s「：:（(]{1,8}(?:\s{2,}「|\s*[：:])")
 # 区分を選ぶ形式（T033・決定014）：「…場合には１を，…場合には２を（，…場合には３を）選びなさい」
 CLASS_MARK_RE = re.compile(r"(?:には|に)([１-９])を")
 TRAILING_SLOT_RE = re.compile(r"\s*[［\[](?:No\.|№)\s*([0-9０-９]+)］\s*$")  # 「[№10］」と半角で始まる年度がある（H29 刑法 問9）
@@ -43,7 +53,7 @@ TRAILING_SLOT_RE = re.compile(r"\s*[［\[](?:No\.|№)\s*([0-9０-９]+)］\s*$"
 CONTEXT_KINDS = {"事例", "会話", "語句群", "見解"}
 # 前提文の中で、新しい項目が始まる行
 # 話者は「学生Ａ．」のほか「学生Ａ：」「教 授：」の年度がある（R02 刑訴 問23）。【論拠】の「（１）」（R08 刑訴 問25）
-ITEM_START_RE = re.compile(r"^(学生[Ａ-Ｚ]?[．.：]|教\s*授[Ｘ-Ｚ]?[．.：]|[ａ-ｚ]．|[アイウエオカキクケコサシスセソ]．|[Ⅰ-Ⅹ]．|[Ａ-Ｚ]説：|[①-⑳]|（[１-９]）)")
+ITEM_START_RE = re.compile(r"^([１-９][．.]|学生[Ａ-Ｚ]?[．.：]|教\s*授[Ｘ-Ｚ]?[．.：]|[ａ-ｚ]．|[アイウエオカキクケコサシスセソ]．|[Ⅰ-Ⅹ]．|[Ａ-Ｚ]説：|[①-⑳]|（[１-９]）)")
 # 語句群の1行に複数の項目が並んでいるとき（「ｅ．…         ｆ．…」）の区切り
 INLINE_ITEMS_RE = re.compile(r"\s{2,}(?=[ａ-ｚアイウエオカキクケコサシスセソ]．)")
 WORD_LABELS = "ａ-ｚアイウエオカキクケコサシスセソ"  # 穴埋めの語の記号（R02 刑法 問1 はカタカナ）
@@ -140,14 +150,26 @@ def introduces_statements(stem_lines: list[tuple[int, str]], kind: str) -> bool:
 
 def parse_classes(stem: str) -> list[dict]:
     """リード文から区分の一覧を取り出す。「Ａの場合には１を，Ｂの場合には２を」→ [{1, "Ａの場合"}, {2, "Ｂの場合"}]。
-    ラベルは、番号の直前の「，」「、」から後ろの文字列そのまま（文字の変更なし）"""
+    ラベルは、番号の直前の「，」「、」「。」から後ろの文字列そのまま（文字の変更なし）"""
     parts = CLASS_MARK_RE.split(stem)
     out = []
     for k in range(1, len(parts), 2):
         before = parts[k - 1]
-        label = re.split(r"[，、]", before)[-1].strip()
+        label = re.split(r"[，、。]", before)[-1].strip()
         out.append({"value": to_int(parts[k]), "label": label})
     return out
+
+
+def classes_of(stem: str, choices: list[dict], context: list[dict]) -> list[dict]:
+    """区分を選ぶ形式の区分：選択肢があればそれ、前提文に「１．…」の一覧（【乙群】など）があればそれ、なければリード文から"""
+    if choices:
+        return [{"value": c["number"], "label": c["text"]} for c in choices]
+    for c in context:
+        lines = c["text"].split("\n")
+        items = [re.match(r"^([１-９])[．.]\s*(.*)$", l) for l in lines]
+        if lines and all(items):
+            return [{"value": to_int(m.group(1)), "label": squeeze(m.group(2))} for m in items]
+    return parse_classes(stem)
 
 
 def detect_format(stem_n: str, has_choices: bool, blocks: set[str]) -> tuple[str, str | None]:
@@ -155,6 +177,16 @@ def detect_format(stem_n: str, has_choices: bool, blocks: set[str]) -> tuple[str
     # 「正しいものには１を，誤っているものには２を」（刑訴に多い）・「正しいものに１を」（R03 刑訴 問19）も同じ形式
     if re.search(r"正しい(?:場合|もの)(?:には|に)1を.*誤っている(?:場合|もの)(?:には|に)2", stem_n):
         return "true_false_each", None
+    if not has_choices and "それぞれ" in stem_n and "いずれに当たるか" in stem_n and re.search(r"の順に\[No\.\d+\]から", stem_n):
+        # 【甲群】の各肢が【乙群】の１〜５のいずれに当たるか（H27 行政法 問21）。区分＝乙群の各項目
+        return "classify_each", None
+    if has_choices and "それぞれ" in stem_n and re.search(r"\d+から\d+までの(?:中|うち)から選びなさい", stem_n) \
+            and re.search(r"の順に\[No\.\d+\]から", stem_n):
+        # 各事例について、それぞれ選択肢（執行停止・仮の義務付け…）から1つ選ぶ（H30 行政法 問22）。区分＝選択肢
+        return "classify_each", None
+    if has_choices and MARK_COMBINATION_RE.search(stem_n):
+        # 肢ごとの○×の組合せから選ぶ形。今は問題カード（決定待ち：肢の○×は公式の解答からそのまま決まるので導出できる）
+        return "meta_choice", None
     if not has_choices and "選びなさい" in stem_n and len(re.findall(r"(?:には|に)\d+を", stem_n)) >= 2:
         # 肢ごとに区分（１・２・３…）を選ぶ（T033）。○×に読み替えず、問で解くだけで出す（決定014）
         return "classify_each", None
@@ -184,7 +216,8 @@ def detect_format(stem_n: str, has_choices: bool, blocks: set[str]) -> tuple[str
 
 
 def parse_choices(fmt: str, text: str) -> list[dict]:
-    parts = re.split(r"([１-９])．", text)
+    # 「１．」のほか「１. 」（半角。H23 行政法 問17）。番号は行頭か空白の直後のものだけを区切りとみなす
+    parts = re.split(r"(?:(?<=^)|(?<=\s))([１-９])[．.]", text)
     choices = []
     for k in range(1, len(parts), 2):
         num, body = to_int(parts[k]), squeeze(parts[k + 1])
@@ -252,11 +285,21 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
             subs.append({"marker": ms.group(1), "lines": [ms.group(2)], "line_range": [ln, ln]})
             state = "substem"
             continue
+        if (state == "context" and cur_block is not None and cur_block["kind"] == "参照条文" and line.strip()
+                and SPEAKER_RE.match(line)):
+            # 参照条文の後ろに続く本文（対話。H23 行政法 問16）。話者の行（「甲    「…」「教員：…」）で参照条文を閉じる
+            cur_block = {"kind": "本文", "lines": [], "line_range": [ln, ln], "no_heading": True}
+            blocks.append(cur_block)
+        if (state == "context" and cur_block is not None and cur_block["kind"] == "参照条文" and statements
+                and is_next_label(line, statements[-1]["label"])):
+            # 肢の間に挟まった参照条文の後ろで、次の肢が始まる（R04 行政法 問16）
+            state = "statements"
         if state == "statements" and statements and is_next_label(line, statements[-1]["label"]):
             # ページ替わりで字下げが消えた肢（H27 刑法 問13 のウ〜オ）・字下げのない１〜５の肢（H28 刑法 問10）
             statements.append({"label": line.strip()[0], "lines": [], "line_range": [ln, ln],
                                "group": len(subs) - 1 if subs else None})
-        elif CHOICE_RE.match(line) or BLANK_CHOICE_RE.match(line):
+        elif (CHOICE_RE.match(line) or BLANK_CHOICE_RE.match(line)
+              or (LABEL_CHOICE_RE.match(line) and statements and statements[-1]["label"] in LABELS_KANA)):
             state = "choices"
         elif (state == "context" and cur_block and cur_block["kind"] != "語句群" and STATEMENT_RE.match(line)
               and STATEMENT_RE.match(line).group(1) == first_label(stem_lines) and not statements):
@@ -287,6 +330,34 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
         elif state == "choices":
             choice_lines.append((ln, line))
 
+    embedded: list[dict] = []
+    lead_n = norm_slots(join_lines([l for _, l in stem_lines]))
+    if not statements and not blocks and "下線部" in lead_n:
+        # 下線部が肢の問（下線の範囲はテキストに残らない）：リード文の後ろの本文を前提文に分けるだけ（肢は取り出さない）
+        split = next((k for k in range(len(stem_lines))
+                      if "解答欄" in norm_slots(join_lines([l for _, l in stem_lines[:k + 1]]))
+                      and stem_lines[k][1].rstrip().endswith("）")), None)
+        if split is not None and split + 1 < len(stem_lines):
+            passage = stem_lines[split + 1:]
+            stem_lines = stem_lines[:split + 1]
+            blocks.insert(0, {"kind": "本文", "lines": [l for _, l in passage], "line_range": [passage[0][0], passage[-1][0]],
+                              "no_heading": True})
+    if not statements and EMBED_STEM_RE.search(lead_n):
+        # リード文の後ろの本文（対話・文章）を前提文に分け、その中の「（ア）【…】」を肢として取り出す。
+        # 肢の文字は本文と重なるので、検証の照合では肢を数えない（embedded）
+        split = next((k for k in range(len(stem_lines))
+                      if "解答欄" in norm_slots(join_lines([l for _, l in stem_lines[:k + 1]]))
+                      and stem_lines[k][1].rstrip().endswith("）")), None)
+        if split is not None and split + 1 < len(stem_lines):
+            passage = stem_lines[split + 1:]
+            stem_lines = stem_lines[:split + 1]
+            blocks.insert(0, {"kind": "本文", "lines": [l for _, l in passage], "line_range": [passage[0][0], passage[-1][0]],
+                              "no_heading": True})
+        source = "".join(l.strip() for b in blocks for l in b["lines"])
+        for m in EMBED_ITEM_RE.finditer(source):
+            embedded.append({"label": m.group(1), "lines": [m.group(2)], "line_range": [blocks[0]["line_range"][0]] * 2,
+                             "group": None, "embedded": True})
+        statements = embedded
     stem = join_lines([l for _, l in stem_lines])
     stem_n = norm_slots(stem)
     block_kinds = {b["kind"] for b in blocks}
@@ -353,9 +424,12 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
             st["sub"] = group
         if slot_no is not None:
             st["slot_no"] = slot_no
+        if s.get("embedded"):
+            st["embedded"] = True
         out_statements.append(st)
 
-    context = [{"kind": b["kind"], "text": context_text(b["kind"], b["lines"]), "line_range": b["line_range"]}
+    context = [{"kind": b["kind"], "text": context_text(b["kind"], b["lines"]), "line_range": b["line_range"],
+                **({"no_heading": True} if b.get("no_heading") else {})}
                for b in blocks]
     choices = parse_choices(fmt, " ".join(l.strip() for _, l in choice_lines)) if choice_lines else []
     if (fmt == "unknown" and choices and (out_statements or context) and re.search(r"どれか|選びなさい", stem_n)
@@ -368,6 +442,10 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
         choices = parse_choices(fmt, " ".join(l.strip() for _, l in choice_lines))
         flags = [f for f in flags if f != "形式を判定できない"]
 
+    if fmt == "combination" and choices and out_statements and all(not c.get("labels") for c in choices):
+        # 組合せだが、選択肢が肢のラベルでなく別の一覧（【乙群】のＡ〜Ｆなど）の組合せ（H23 行政法 問23）。肢の○×は出せない
+        fmt, polarity = "meta_choice", None
+        choices = parse_choices(fmt, " ".join(l.strip() for _, l in choice_lines))
     if fmt in ("combination", "count") and choices and not out_statements and context:
         # ア〜オの肢がなく、【会話】【発言】の学生と見解の対応・発言者の組合せ・人数などを選ぶ形（R01 刑法 問10・R03 刑訴 問16）。
         # 肢ごとの○×は出せないので問題カードにする
@@ -392,7 +470,9 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
         "line_range": [head_line, body[-1][0] if body else head_line],
         "flags": flags,
         **({"statement_headings": statement_headings} if statement_headings else {}),
-        **({"classes": parse_classes(stem)} if fmt == "classify_each" else {}),
+        # 参照条文のある問は、検証で元の順に並べるため選択肢の行を残す（参照条文が選択肢の前後どちらにもありうる）
+        **({"choices_line": choice_lines[0][0]} if choice_lines and any(b["kind"] == "参照条文" for b in blocks) else {}),
+        **({"classes": classes_of(stem, choices, context)} if fmt == "classify_each" else {}),
     }
 
 

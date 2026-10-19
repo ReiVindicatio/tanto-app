@@ -42,18 +42,21 @@ def rebuild(q: dict) -> str:
     """パース結果から、問の本文を元の順序で組み立て直す（照合用）。"""
     pieces = [(q["line_range"][0], f"〔第{q['number']}問〕(配点:{q['points']})"), (q["line_range"][0] + 0.5, q["stem"])]
     for c in q["context"]:
-        if c["kind"] == "参照条文":  # 問の末尾（選択肢の後ろ）にある
-            pieces.append((10 ** 9 + 1, "（参照条文）" + c["text"]))
+        if c["kind"] == "参照条文":  # ふつうは問の末尾（選択肢の後ろ）。選択肢より前にある問は choices_line がある
+            pieces.append((c["line_range"][0] if ("choices_line" in q or not q["choices"]) else 10 ** 9 + 1, "（参照条文）" + c["text"]))
             continue
-        # 【記述】の見出し行は照合から除く（raw_question_text と同じ扱い）
-        pieces.append((c["line_range"][0], ("" if c["kind"] == "記述" else f"【{c['kind']}】") + c["text"]))
+        # 【記述】の見出し行・見出しのない本文は、見出しを照合に入れない
+        heading = "" if c["kind"] == "記述" or c.get("no_heading") else f"【{c['kind']}】"
+        pieces.append((c["line_range"][0], heading + c["text"]))
     for sq in q.get("sub_questions", []):
         pieces.append((sq["line_range"][0], sq["marker"] + sq["stem"]))
     for s in q["statements"]:
+        if s.get("embedded"):
+            continue  # 本文の中から取り出した肢（文字は本文と重なる）
         tail = f"[No.{s['slot_no']}]" if "slot_no" in s else ""
         pieces.append((s["line_range"][0], f"{s['label']}." + s["text"] + tail))
     if q["choices"]:
-        pieces.append((10 ** 9, "".join(f"{c['number']}." + c["text"] for c in q["choices"])))
+        pieces.append((q.get("choices_line", 10 ** 9), "".join(f"{c['number']}." + c["text"] for c in q["choices"])))
     return no_ws("".join(p for _, p in sorted(pieces, key=lambda x: x[0])))
 
 
@@ -167,6 +170,10 @@ def validate_question(r: Report, q: dict, a: dict | None, lines: list[str]) -> N
         r.check(f"{p} 区分：肢末尾の No とリード文の対応が一致", not bad, f"食い違う肢 {bad}")
         r.check(f"{p} 区分：解答が区分の範囲", all(x in values for x in answers), str(answers))
     elif fmt == "true_false_each":
+        if not st_labels and "下線部" in q["stem"]:
+            # 下線部が肢の問（下線の範囲はテキストに残らないので肢を取り出さず、問で解くだけにする：T008）
+            st_labels = [s.get("statement_label") for s in q["answer_slots"]]
+            r.check(f"{p} 各肢○×（下線部）：解答欄に肢のラベルがある", all(st_labels), str(st_labels))
         r.check(f"{p} 各肢○×：No の数と肢の数が一致", len(q_nos) == len(st_labels), f"No {len(q_nos)}／肢 {len(st_labels)}")
         mapping = {s["no"]: s.get("statement_label") for s in q["answer_slots"]}
         bad = [s["label"] for s in q["statements"] if "slot_no" in s and mapping.get(s["slot_no"]) != s["label"]]

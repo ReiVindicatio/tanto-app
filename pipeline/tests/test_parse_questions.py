@@ -96,6 +96,29 @@ class ParseQuestionsTest(unittest.TestCase):
         self.assertEqual(q["statements"][0]["text"], "公務員が収受した。【観念的競合】")
         self.assertEqual(q["context"], [])
 
+    def test_embedded_statements_in_passage(self):
+        q = parse("  行政指導に関する以下の対話中の次のアからイまでの【      】内の各記述について，それぞれ正しい場合には１を，\n"
+                  " 誤っている場合には２を選びなさい。（解答欄は，アからイの順に［№34］から［№35］）\n"
+                  "  教員：メリットは何ですか。\n"
+                  "  学生：（ア）【行政指導は，任務の範囲を超えて行うことができます。】そのため柔軟です。［№34］\n"
+                  "  学生：（イ）【趣旨及び内容を明確に示さなければなりません。】［№35］")
+        self.assertEqual(q["format"], "true_false_each")
+        self.assertEqual([(s["label"], s["text"], s.get("embedded")) for s in q["statements"]],
+                         [("ア", "行政指導は，任務の範囲を超えて行うことができます。", True),
+                          ("イ", "趣旨及び内容を明確に示さなければなりません。", True)])
+        self.assertEqual(q["context"][0]["kind"], "本文")
+        self.assertTrue(q["requires_context"])
+
+    def test_mark_combination_is_not_derived_as_combination(self):
+        # 「〇」（漢数字のゼロ）と「組み合わせ」の表記ゆれも。組合せとして導出すると○×を取り違えるので問題カードにする
+        q = parse("  次のアからイまでの各記述について，正しいものには〇，誤っているものには×を付した場合の組み合わせを，\n"
+                  " 後記１から４までの中から選びなさい。（解答欄は，［№20］）\n"
+                  "  ア．甲である。\n"
+                  "  イ．乙である。\n"
+                  "１．ア○ イ○ ２．ア○ イ× ３．ア× イ○ ４．ア× イ×")
+        self.assertEqual(q["format"], "meta_choice")
+        self.assertEqual(len(q["choices"]), 4)
+
 
 if __name__ == "__main__":
     unittest.main()
