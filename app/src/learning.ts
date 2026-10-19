@@ -10,7 +10,7 @@ export type LearningState = {
   cards: Map<string, Card>;
   /** "<科目>:YYYY-MM-DD"（端末の現地日付）→ その日に初めて答えた肢の数 */
   newCount: Map<string, number>;
-  /** "YYYY-MM-DD"（端末の現地日付）→ その日の回答数・正解数（T025：今日の成績） */
+  /** "YYYY-MM-DD"（端末の現地日付）→ その日の回答数・正解数（T034：マイページの学習の軌跡） */
   daily: Map<string, { answered: number; correct: number }>;
 };
 

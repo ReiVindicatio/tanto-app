@@ -1,7 +1,6 @@
-// ホーム（T025・T022）：今日の○問・今日の成績・科目へのリンク
+// ホーム（T025・T022）：今日の○問・科目へのリンク（今日の成績は T034 でやめた）
 import { useState } from "react";
 import type { CardRef, SubjectGroup } from "../data";
-import { currentState, localDate } from "../learning";
 import { navigate } from "../router";
 import { startDaily } from "../play";
 import { buildDaily, DAILY_SIZES, describeCounts, getDailyPrefs, setDailyPrefs, type DailyPrefs } from "../daily";
@@ -88,26 +87,9 @@ export default function Home({
   cardIds: Map<string, CardRef[]>;
   includePreReform: boolean;
 }) {
-  const today = currentState().daily.get(localDate(new Date()));
   return (
     <section>
       <QuickStart groups={groups} cardIds={cardIds} includePreReform={includePreReform} />
-
-      <div className="card today">
-        <div className="muted small">今日の成績</div>
-        {today ? (
-          <div className="today-stats">
-            <span>
-              <strong className="big">{today.answered}</strong> 肢
-            </span>
-            <span>
-              正答率 <strong className="big">{Math.round((today.correct / today.answered) * 100)}</strong>%
-            </span>
-          </div>
-        ) : (
-          <div>まだ解いていません。</div>
-        )}
-      </div>
 
       <button className="secondary wide" onClick={() => navigate({ name: "subjects" })}>
         科目・年度を選んで解く

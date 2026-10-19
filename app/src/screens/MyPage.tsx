@@ -1,4 +1,4 @@
-// マイページ（T025・T024）：学習の記録・科目ごと・まちがえた肢・アカウント・表示
+// マイページ（T025・T024・T034）：学習の軌跡（ヒートマップ・累計の伸び）・科目ごと・まちがえた肢・アカウント・表示
 import { useState } from "react";
 import type { AuthClient } from "../auth";
 import type { SyncedStore } from "../sync";
@@ -6,7 +6,7 @@ import type { CardRef, SubjectGroup } from "../data";
 import AuthPanel from "../AuthBar";
 import { currentState } from "../learning";
 import { applyFilter, summarize } from "../history";
-import { lastDays, streak, totals } from "../stats";
+import { cumulative, heatLevel, heatmapWeeks, streak, totals, type HeatCell } from "../stats";
 import { startStatements } from "../play";
 import { subjectColor } from "../subjectsMeta";
 import { getThemePref, setThemePref, type ThemePref } from "../theme";
@@ -17,8 +17,6 @@ const THEMES: { value: ThemePref; label: string }[] = [
   { value: "light", label: "ライト" },
   { value: "dark", label: "ダーク" },
 ];
-
-const DAYS = 14;
 
 /** ホーム画面から（アプリとして）開いているか */
 function isStandalone(): boolean {
@@ -33,7 +31,8 @@ function InstallHint() {
       <h2>ホーム画面に追加</h2>
       <div className="card install-hint">
         <p className="small">
-          ホーム画面に追加すると、アプリのように全画面で開けて、通信がなくても解けます。iPhone では、しばらく開かなかったときに端末の記録が消されにくくなります。
+          ホーム画面に追加すると、アプリのように全画面で開けて、通信がなくても解けます。iPhone
+          では、しばらく開かなかったときに端末の記録が消されにくくなります。
         </p>
         <ul className="small">
           <li>iPhone（Safari）：下の共有ボタン → 「ホーム画面に追加」</li>
@@ -44,32 +43,76 @@ function InstallHint() {
   );
 }
 
-/** 直近の日ごとの回答数の棒（正解の分を緑で重ねる） */
-function DailyBars({ days }: { days: { date: string; answered: number; correct: number }[] }) {
-  const max = Math.max(10, ...days.map((d) => d.answered));
-  const w = 100 / days.length;
+const WEEKS = 26;
+const WEEKDAYS = ["日", "月", "火", "水", "木", "金", "土"];
+
+/** GitHub 風のヒートマップ：直近半年、1マス1日。たくさん解いた日ほど濃い（T034） */
+function Heatmap({ weeks }: { weeks: HeatCell[][] }) {
+  const cell = 11;
+  const gap = 2;
+  const left = 14;
+  const top = 12;
+  const w = left + weeks.length * (cell + gap);
+  const h = top + 7 * (cell + gap);
+  // 月の見出し：1日を含む週の上に出す。左端は、すぐ次の月の見出しと重ならないときだけ
+  const hasFirst = (wk: HeatCell[]) => wk.find((c) => c.date.endsWith("-01"));
+  const months: { x: number; label: string }[] = [];
+  weeks.forEach((wk, i) => {
+    const c = hasFirst(wk) ?? (i === 0 && !weeks.slice(1, 3).some(hasFirst) ? wk[0] : undefined);
+    if (c) months.push({ x: left + i * (cell + gap), label: `${Number(c.date.slice(5, 7))}月` });
+  });
   return (
-    <svg
-      className="daily-bars"
-      viewBox="0 0 100 44"
-      preserveAspectRatio="none"
-      role="img"
-      aria-label={`直近${days.length}日の回答数`}
-    >
-      {days.map((d, i) => {
-        const h = (d.answered / max) * 36;
-        const hc = (d.correct / max) * 36;
-        return (
-          <g key={d.date}>
-            <rect x={i * w + w * 0.15} y={38 - h} width={w * 0.7} height={h} fill="var(--border)" rx="0.8">
-              <title>{`${d.date}：${d.answered}肢（正解 ${d.correct}）`}</title>
+    <svg className="heatmap" viewBox={`0 0 ${w} ${h}`} role="img" aria-label={`直近${weeks.length}週の学習の記録`}>
+      {months.map((m) => (
+        <text key={m.x} x={m.x} y={8} className="heat-label">
+          {m.label}
+        </text>
+      ))}
+      {[1, 3, 5].map((d) => (
+        <text key={d} x={0} y={top + d * (cell + gap) + cell - 2} className="heat-label">
+          {WEEKDAYS[d]}
+        </text>
+      ))}
+      {weeks.map((wk, i) =>
+        wk.map((c, d) =>
+          c.future ? null : (
+            <rect
+              key={c.date}
+              x={left + i * (cell + gap)}
+              y={top + d * (cell + gap)}
+              width={cell}
+              height={cell}
+              rx={2}
+              className={`heat-${heatLevel(c.answered)}`}
+            >
+              <title>{`${c.date}：${c.answered}肢`}</title>
             </rect>
-            <rect x={i * w + w * 0.15} y={38 - hc} width={w * 0.7} height={hc} fill="var(--ok)" rx="0.8" />
-          </g>
-        );
-      })}
-      <line x1="0" y1="38.2" x2="100" y2="38.2" stroke="var(--border-subtle)" strokeWidth="0.3" />
+          ),
+        ),
+      )}
     </svg>
+  );
+}
+
+/** 累計の回答数の伸び（climb chart）：最初に解いた日から今日まで（T034） */
+function ClimbChart({ points }: { points: { date: string; total: number }[] }) {
+  if (points.length === 0) return null;
+  const max = Math.max(...points.map((p) => p.total), 1);
+  const n = Math.max(points.length - 1, 1);
+  const xy = points.map((p, i) => [(i / n) * 100, 40 - (p.total / max) * 36] as const);
+  const line = xy.map(([x, y], i) => `${i === 0 ? "M" : "L"}${x.toFixed(2)},${y.toFixed(2)}`).join(" ");
+  return (
+    <>
+      <svg className="climb" viewBox="0 0 100 42" preserveAspectRatio="none" role="img" aria-label={`累計 ${max} 肢`}>
+        <path d={`${line} L100,40 L0,40 Z`} className="climb-area" />
+        <path d={line} className="climb-line" vectorEffect="non-scaling-stroke" />
+      </svg>
+      <div className="daily-axis muted small">
+        <span>{points[0].date.slice(5).replace("-", "/")}</span>
+        <span>累計 {max.toLocaleString()} 肢</span>
+        <span>今日</span>
+      </div>
+    </>
   );
 }
 
@@ -87,7 +130,7 @@ export default function MyPage({
   const [theme, setTheme] = useState<ThemePref>(getThemePref());
   const state = currentState();
   const t = totals(state.daily);
-  const days = lastDays(state.daily, DAYS);
+
   const allSets = groups.flatMap((g) => g.sets);
   const wrongTotal = applyFilter(cardsOf(allSets, cardIds), "wrong").length;
 
@@ -95,28 +138,31 @@ export default function MyPage({
     <section>
       <h1>マイページ</h1>
 
-      <h2>学習の記録</h2>
+      <h2>学習の軌跡</h2>
       <div className="card">
         <div className="today-stats">
           <span>
             連続 <strong className="big">{streak(state.daily)}</strong> 日
           </span>
           <span>
-            <strong className="big">{t.answered.toLocaleString()}</strong> 回答
+            累計 <strong className="big">{t.answered.toLocaleString()}</strong> 肢
           </span>
           <span>
-            正答率 <strong className="big">{t.answered ? Math.round((t.correct / t.answered) * 100) : 0}</strong>%
+            <strong className="big">{t.days}</strong> 日学習
           </span>
         </div>
-        <DailyBars days={days} />
-        <div className="daily-axis muted small">
-          <span>{days[0].date.slice(5).replace("-", "/")}</span>
-          <span>直近{DAYS}日（緑＝正解）</span>
-          <span>今日</span>
+        <Heatmap weeks={heatmapWeeks(state.daily, WEEKS)} />
+        <div className="heat-legend muted small">
+          <span>直近半年</span>
+          <span className="heat-scale">
+            少ない
+            {[0, 1, 2, 3, 4].map((l) => (
+              <span key={l} className={`heat-box heat-${l}`} />
+            ))}
+            多い
+          </span>
         </div>
-        <p className="muted small">
-          学習した日 {t.days}日・答えた肢 {state.history.size.toLocaleString()}枚
-        </p>
+        <ClimbChart points={cumulative(state.daily)} />
       </div>
 
       <h2>科目ごと</h2>
@@ -131,7 +177,7 @@ export default function MyPage({
               <div className="grow">
                 <div className="subject-stat-head">
                   <span className="row-title">{g.name}</span>
-                  <span className="small">正答率 {st.answered ? `${Math.round((st.lastCorrect / st.answered) * 100)}%` : "—"}</span>
+                  <span className="small">{total ? Math.round((st.answered / total) * 100) : 0}%</span>
                 </div>
                 <Progress value={total ? st.answered / total : 0} color={subjectColor(g.subject)} />
                 <div className="muted small">
@@ -142,7 +188,6 @@ export default function MyPage({
           );
         })}
       </div>
-      <p className="muted small">正答率は、答えた肢のうち前回正解した肢の割合です。</p>
 
       <h2>まちがえた肢</h2>
       <div className="card">

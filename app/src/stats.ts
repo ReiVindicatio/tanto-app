@@ -20,15 +20,6 @@ export function streak(daily: Daily, today = new Date()): number {
   return n;
 }
 
-/** 直近 n 日（古い順。今日が最後） */
-export function lastDays(daily: Daily, n: number, today = new Date()): { date: string; answered: number; correct: number }[] {
-  return Array.from({ length: n }, (_, i) => {
-    const date = localDate(addDays(today, i - (n - 1)));
-    const v = daily.get(date) ?? { answered: 0, correct: 0 };
-    return { date, ...v };
-  });
-}
-
 /** 学習した日数と累計 */
 export function totals(daily: Daily): { days: number; answered: number; correct: number } {
   let answered = 0;
@@ -38,4 +29,43 @@ export function totals(daily: Daily): { days: number; answered: number; correct:
     correct += v.correct;
   }
   return { days: daily.size, answered, correct };
+}
+
+export type HeatCell = { date: string; answered: number; future: boolean };
+
+/** ヒートマップ（GitHub 風）：直近 weeks 週を、日曜始まりの週ごとに7日ずつ。今日より後は future（T034） */
+export function heatmapWeeks(daily: Daily, weeks: number, today = new Date()): HeatCell[][] {
+  const end = addDays(today, 6 - today.getDay()); // 今週の土曜
+  const start = addDays(end, -(weeks * 7 - 1)); // weeks 週前の日曜
+  const todayKey = localDate(today);
+  return Array.from({ length: weeks }, (_, w) =>
+    Array.from({ length: 7 }, (_, d) => {
+      const date = localDate(addDays(start, w * 7 + d));
+      return { date, answered: daily.get(date)?.answered ?? 0, future: date > todayKey };
+    }),
+  );
+}
+
+/** 色の濃さ（0〜4）。たくさん解いた日ほど濃い */
+export function heatLevel(answered: number): number {
+  if (answered === 0) return 0;
+  if (answered < 10) return 1;
+  if (answered < 30) return 2;
+  if (answered < 60) return 3;
+  return 4;
+}
+
+/** 累計の回答数の伸び：最初に解いた日から今日まで、日ごとの累計（T034） */
+export function cumulative(daily: Daily, today = new Date()): { date: string; total: number }[] {
+  const dates = [...daily.keys()].sort();
+  if (dates.length === 0) return [];
+  const out: { date: string; total: number }[] = [];
+  let total = 0;
+  const todayKey = localDate(today);
+  for (let d = new Date(dates[0] + "T00:00:00"); localDate(d) <= todayKey; d = addDays(d, 1)) {
+    const key = localDate(d);
+    total += daily.get(key)?.answered ?? 0;
+    out.push({ date: key, total });
+  }
+  return out;
 }

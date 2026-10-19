@@ -50,9 +50,9 @@ test("テーマ：ダークに切り替えると保存され、再読み込み�
   expect(await page.evaluate(() => localStorage.getItem("tanto.theme.v1"))).toBeNull();
 });
 
-test("ホームの今日の成績：答えると今日の肢数と正答率が出る", async ({ page }) => {
+test("解いている間はタブがなく、答えた肢はマイページの累計に入る", async ({ page }) => {
   await openHome(page);
-  await expect(page.locator(".card.today")).toContainText("まだ解いていません");
+  await expect(page.locator(".card.today")).toHaveCount(0); // T034：ホームの今日の成績はやめた
   await gotoSubject(page, "民法");
   await page.locator(".set.year").first().getByRole("button", { name: /肢で解く/ }).click();
   await page.getByRole("button", { name: "○", exact: true }).click();
@@ -60,6 +60,6 @@ test("ホームの今日の成績：答えると今日の肢数と正答率が�
   await page.getByRole("button", { name: "×", exact: true }).click();
   await expect(page.locator("nav.tabbar")).toHaveCount(0); // 解いている間はタブがない
   await page.getByRole("button", { name: "← 戻る" }).click();
-  await tab(page, "ホーム").click();
-  await expect(page.locator(".card.today")).toContainText("2 肢");
+  await tab(page, "マイページ").click();
+  await expect(page.locator(".card").first()).toContainText("累計 2 肢");
 });
