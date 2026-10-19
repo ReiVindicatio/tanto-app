@@ -25,12 +25,12 @@
 | T006 正誤訂正・採点上の取扱い | 完了（予備16年度、法律科目の該当なし） |
 | T014 要確認の肢のレビュー運用 | 完了（R06 問5アは○として戻した） |
 | T002 公開（デプロイ） | 完了（https://tantan.reivindicatio0321.workers.dev/ ） |
-| T003 ログインと端末間同期 | **設計レビュー**（Firebase Auth＋Workers の API＋D1：決定012） |
+| T003 ログインと端末間同期 | **実装中**（Firebase Auth＋Workers の API＋D1：決定012。ユーザーが Firebase と D1 を作成中） |
 
 ## 次の一手（提案）
 
-1. **T003 の設計レビュー**（ユーザー）→ OK なら、ユーザーが Firebase プロジェクトと D1 を作って設定値を渡す → Claude が実装
+1. **T003 の実装**：設定値（firebaseConfig・D1 の ID）が届く前に、API・同期・テストを書く
 
 ## ❓ ユーザーに確認したいこと
 
-1. T003 の設計 → `tickets/T003-login-sync.md`（とくに「設計で決めてほしいこと」3点）
+1. Firebase の firebaseConfig と D1 の Database ID（手順は T003 のチケット）
