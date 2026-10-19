@@ -30,6 +30,12 @@ cd app && npm run build && npm run e2e     # E2E（Playwright。初回は npx pl
 
 GitHub Actions（`.github/workflows/ci.yml`）が push ごとに同じものを流す。取り込みを足したら `pipeline/targets.json` に1行足す。
 
+## 公開先（T002）
+
+- **https://tantan.reivindicatio0321.workers.dev/**（Cloudflare Workers の静的配信。当面は検索エンジンに載せない）
+- main に push すると、Cloudflare が `app/` で `npm ci && npm run build` を流し、`app/dist/` を配信する（設定は `app/wrangler.jsonc`、Node の版は `app/.node-version`）
+- 公開先に向けて E2E を流す：`cd app && BASE_URL=https://tantan.reivindicatio0321.workers.dev npm run e2e`
+
 ## アプリの起動
 
 ```

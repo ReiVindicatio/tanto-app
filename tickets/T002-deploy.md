@@ -1,6 +1,6 @@
 # T002 公開（デプロイ）
 
-- 状態：実装中（設計レビュー OK：2026-10-19。配置先は Pages から Workers に変更）
+- 状態：完了（設計レビュー OK・ユーザーがスマホで動作確認：2026-10-19。配置先は Pages から Workers に変更）
 - マイルストーン：M1 基盤
 - 優先度：高
 - 依存：T001（完了）
@@ -31,6 +31,16 @@
 | Path | `app` |
 | API token / API token name | 既定のまま（Cloudflare が作る） |
 | Variable | `NODE_VERSION` = `22` |
+
+## 結果（2026-10-19）
+
+- **公開先：https://tantan.reivindicatio0321.workers.dev/**（Cloudflare Workers の静的配信。main に push すると自動でビルド・公開）
+- 最初のビルドは「nodejs@2」で失敗した（環境変数 `NODE_VERSION` の値が `2` になっていた）。ユーザーが値を直し、`app/.node-version`（22）も置いて解決
+- 確認：
+  - ユーザーがスマホで動作を確認
+  - E2E 8件を公開先に向けて流した（`BASE_URL=… npm run e2e` で流せるようにした）。1件が時々落ちた → 原因は**テストの競合**（「次へ」の直後に前の問の画面のまま解答欄を数えていた）。問の表示を待つよう直し、公開先で3回・手元で1回すべて通過
+  - robots.txt（全拒否）・noindex・favicon・データ（46束、出典表記つき）が公開先で返ること
+- 設定の場所：Cloudflare ダッシュボード → Workers & Pages → tantan → Settings → Build（ビルド変数は Build Variables and Secrets）
 
 ## 当初の設計（Pages 版。記録として残す）
 

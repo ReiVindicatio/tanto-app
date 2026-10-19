@@ -27,6 +27,7 @@ test("問で解く：誤答・順不同の逆順・部分点の採点（刑法 R
   await openYear(page, "刑法", "R08", "問で解く");
   const scores: string[] = [];
   for (const q of data.questions) {
+    await expect(page.locator(".question")).toContainText(`第${q.number}問`); // 前の問の画面が残っていないことを確かめる
     let picks: number[] = q.answer_slots.map((s: any) => s.official_answer);
     if (q.unordered) picks = [...picks].reverse(); // 順不同：逆順でも満点
     if (q.number === 13 || q.number === 1) picks[0] = picks[0] === 1 ? 2 : 1; // 問13は4問正解→部分点、問1は誤答

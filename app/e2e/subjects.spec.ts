@@ -17,6 +17,8 @@ test("記述を説明した選択肢から選ぶ問（民訴 H23 問38）を採�
   await openYear(page, "民事訴訟法", "H23", "問で解く");
   for (const q of data.questions) {
     if (q.number === 38) break;
+    // 「次へ」の直後は前の問の画面が残っていることがあるので、その問の表示を待ってから操作する
+    await expect(page.locator(".question")).toContainText(`第${q.number}問`);
     const slots = page.locator(".slot");
     for (let k = 0; k < (await slots.count()); k++) await slots.nth(k).locator("button.opt").nth(k).click();
     await page.getByRole("button", { name: "採点する" }).click();
