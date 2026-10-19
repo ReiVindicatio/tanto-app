@@ -262,7 +262,7 @@ tanto-app/
 
 - **静的サイトで足りる。**問・肢・解説は変化の少ない JSON で、全科目・全年度でも数 MB の見込み。復習の記録は端末内（IndexedDB）に置く → サーバーなし・オフライン可・Capacitor にそのまま載る
 - **第一候補は Cloudflare Pages。**Vercel の Hobby（無料）は商用利用を禁じ、広告を載せると商用利用に当たると明記している。GitHub Pages もオンラインビジネス向けの利用を認めていない
-- **Supabase は、端末をまたいだ同期と報告タブを公開するときに足す。**無料プランは1週間アクセスがないと一時停止される
+- ~~Supabase は、端末をまたいだ同期と報告タブを公開するときに足す。~~ → 2026-10-19 変更：ログイン＝Firebase Authentication、API＝Cloudflare Workers、DB＝Cloudflare D1（📖 `decisions/012`）
 - FSRS は既存の実装（TypeScript のライブラリ）を使い、自作しない
 
 ### yobishiken（学習用リポジトリ）との共存
