@@ -62,7 +62,7 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
             setIncludePreReform={setIncludePreReform}
           />
         )}
-        {route.name === "me" && <MyPage auth={auth} sync={sync} />}
+        {route.name === "me" && <MyPage auth={auth} sync={sync} groups={groups} cardIds={cardIds} />}
         {play?.kind === "statements" && (
           <StatementDrill
             title={play.title}
