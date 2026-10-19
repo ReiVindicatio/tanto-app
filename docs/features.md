@@ -63,7 +63,8 @@
 | 苦手な分野だけのモード | ❌ | 分野タグが先 → T016 |
 | 誤り報告 | ❌ | → T015 |
 | 公開（デプロイ） | ✅ | T002。https://tantan.reivindicatio0321.workers.dev/ （Cloudflare Workers・push で自動更新・noindex） |
-| スマホアプリ（Capacitor） | ❌ | → T019 |
+| ホーム画面に追加（PWA）・オフライン | ✅ | T030。一度開けば通信なしで全科目を解ける。問題データの更新は次に開いたときに反映 |
+| スマホアプリ（Capacitor） | ❌ | → T019（PWA で足りるかを見てから） |
 
 ## 開発の土台
 

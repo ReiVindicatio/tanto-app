@@ -20,6 +20,30 @@ const THEMES: { value: ThemePref; label: string }[] = [
 
 const DAYS = 14;
 
+/** ホーム画面から（アプリとして）開いているか */
+function isStandalone(): boolean {
+  return window.matchMedia?.("(display-mode: standalone)").matches || (navigator as { standalone?: boolean }).standalone === true;
+}
+
+/** ホーム画面に追加する手順（T030）。ホーム画面から開いているときは出さない */
+function InstallHint() {
+  if (isStandalone()) return null;
+  return (
+    <>
+      <h2>ホーム画面に追加</h2>
+      <div className="card install-hint">
+        <p className="small">
+          ホーム画面に追加すると、アプリのように全画面で開けて、通信がなくても解けます。iPhone では、しばらく開かなかったときに端末の記録が消されにくくなります。
+        </p>
+        <ul className="small">
+          <li>iPhone（Safari）：下の共有ボタン → 「ホーム画面に追加」</li>
+          <li>Android（Chrome）：右上のメニュー（︙）→ 「ホーム画面に追加」または「アプリをインストール」</li>
+        </ul>
+      </div>
+    </>
+  );
+}
+
 /** 直近の日ごとの回答数の棒（正解の分を緑で重ねる） */
 function DailyBars({ days }: { days: { date: string; answered: number; correct: number }[] }) {
   const max = Math.max(10, ...days.map((d) => d.answered));
@@ -132,6 +156,8 @@ export default function MyPage({
           全科目・全年度から、前回まちがえた肢だけをシャッフルして出します。正解すると一覧から外れます。
         </p>
       </div>
+
+      <InstallHint />
 
       <h2>アカウント</h2>
       <div className="card">

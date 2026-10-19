@@ -32,3 +32,10 @@ initLearning(sync).finally(() => {
   });
   window.addEventListener("pagehide", () => void sync.flushOnHide());
 });
+
+// オフラインで使うための Service Worker（T030）。開発中（npm run dev）は登録しない
+if (import.meta.env.PROD && "serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js").catch((e) => console.error("Service Worker を登録できませんでした", e));
+  });
+}
