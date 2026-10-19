@@ -30,11 +30,11 @@ test("記述を説明した選択肢から選ぶ問（民訴 H23 問38）を採�
   await expect(page.locator(".result .big")).toHaveText(`${target.points} / ${target.points} 点`);
 });
 
-test("刑法・刑訴がホームに出る（T009）", async ({ page }) => {
+test("刑法・刑訴が科目に出る（T009・T033：各15年度）", async ({ page }) => {
   await openHome(page);
   await tab(page, "科目").click();
-  await expect(subjectCard(page, "刑法")).toContainText("12年度");
-  await expect(subjectCard(page, "刑事訴訟法")).toContainText("12年度");
+  await expect(subjectCard(page, "刑法")).toContainText("15年度");
+  await expect(subjectCard(page, "刑事訴訟法")).toContainText("15年度");
 });
 
 test("刑訴 R02 を問で解く：肢のない問（人数・発言者の組合せ）も含めて、公式の解答で満点になる", async ({ page, request }) => {
@@ -53,4 +53,29 @@ test("刑訴 R02 を問で解く：肢のない問（人数・発言者の組合
     await page.getByRole("button", { name: "次へ" }).click();
   }
   await expect(page.getByText("30 / 30 点")).toBeVisible();
+});
+
+test("区分を選ぶ形式（刑法 H24 問4）：区分の一覧が出て、公式の解答で満点になる（T033）", async ({ page, request }) => {
+  const data = await (await request.get("/data/yobi-2012-keiho.json")).json();
+  const target = data.questions.find((q: any) => q.number === 4);
+  expect(target.format).toBe("classify_each");
+  await openHome(page);
+  await openYear(page, "刑法", "H24", "問で解く");
+  for (const q of data.questions) {
+    if (q.number === 4) break;
+    await expect(page.locator(".question")).toContainText(`第${q.number}問`);
+    for (let k = 0; k < q.answer_slots.length; k++) {
+      await page.locator(".slot").nth(k).locator("button.opt", { hasText: new RegExp(`^${q.answer_slots[k].official_answer}`) }).click();
+    }
+    await page.getByRole("button", { name: "採点する" }).click();
+    await page.getByRole("button", { name: "次へ" }).click();
+  }
+  await expect(page.locator(".question")).toContainText("第4問");
+  await expect(page.locator(".classes")).toContainText("3：間接正犯が成立する場合");
+  for (let k = 0; k < target.answer_slots.length; k++) {
+    await page.locator(".slot").nth(k).locator("button.opt", { hasText: String(target.answer_slots[k].official_answer) }).click();
+  }
+  await page.getByRole("button", { name: "採点する" }).click();
+  await expect(page.locator(".result .big")).toHaveText(`${target.points} / ${target.points} 点`);
+  await expect(page.locator(".law-note")).toContainText("拘禁刑の導入");
 });

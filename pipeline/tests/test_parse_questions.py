@@ -72,6 +72,30 @@ class ParseQuestionsTest(unittest.TestCase):
         self.assertEqual(q["format"], "meta_choice")
         self.assertEqual(q["context"][0]["text"], "学生Ａ：甲である。\n学生Ｂ：乙である。\n学生Ｃ：丙である。")
 
+    def test_classify_each_extracts_classes_from_stem(self):
+        q = parse("  次のアからイまでの各記述を検討し，甲に共同正犯が成立する場合には１を，幇助犯が成立する場合には２を，\n"
+                  " 間接正犯が成立する場合には３を選びなさい。（解答欄は，アからイまでの順に［№５］から［№６］）\n"
+                  "  ア．甲は乙に頼んだ。（窃盗罪）\n"
+                  "  イ．甲は丙を使った。（強盗罪）[№６］")
+        self.assertEqual(q["format"], "classify_each")
+        self.assertEqual(q["classes"], [{"value": 1, "label": "甲に共同正犯が成立する場合"},
+                                        {"value": 2, "label": "幇助犯が成立する場合"},
+                                        {"value": 3, "label": "間接正犯が成立する場合"}])
+        self.assertEqual([s["statement_label"] for s in q["answer_slots"]], ["ア", "イ"])
+        self.assertEqual(q["statements"][1]["slot_no"], 6)  # 半角で始まる「[№６］」も解答欄として読む
+        self.assertEqual(q["statements"][1]["text"], "甲は丙を使った。（強盗罪）")
+
+    def test_bracket_heading_inside_statement_when_stem_has_placeholder(self):
+        q = parse("  次のアからイまでの各事例を検討し，【   】内の罪数関係にある場合には１を，【 】内の罪数関係にない場合には２を\n"
+                  " 選びなさい。（解答欄は，アからイまでの順に［№14］から［№15］）\n"
+                  "  ア．公務員が収受した。\n"
+                  "            【観念的競合】\n"
+                  "                  ［№14］\n"
+                  "  イ．自動車を盗み，売却した。【牽連犯】［№15］")
+        self.assertEqual([s["label"] for s in q["statements"]], ["ア", "イ"])
+        self.assertEqual(q["statements"][0]["text"], "公務員が収受した。【観念的競合】")
+        self.assertEqual(q["context"], [])
+
 
 if __name__ == "__main__":
     unittest.main()

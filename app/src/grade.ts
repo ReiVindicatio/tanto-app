@@ -15,6 +15,9 @@ export function slotOptions(q: Question, k: number, statements: Statement[]): { 
         { value: 1, label: "1（正しい）" },
         { value: 2, label: "2（誤り）" },
       ];
+    case "classify_each":
+      // 区分の番号だけをボタンにし、区分の中身は問の上に一覧で出す（長い文をボタンに入れない）
+      return (q.classes ?? []).map((c) => ({ value: c.value, label: String(c.value) }));
     case "single_choice":
     case "multi_select_unordered":
       return numbers(statements.length);

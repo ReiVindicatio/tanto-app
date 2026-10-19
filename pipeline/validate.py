@@ -155,6 +155,17 @@ def validate_question(r: Report, q: dict, a: dict | None, lines: list[str]) -> N
         groups = [[s for s in q["statements"] if s.get("sub") == g] for g in range(len(q["sub_questions"]))]
         r.check(f"{p} 小問：解答欄が小問ごとに1つ", [s.get("sub") for s in q["answer_slots"]] == list(range(len(groups))))
         r.check(f"{p} 小問：解答が小問の肢の範囲", all(1 <= answers[g] <= len(groups[g]) for g in range(len(groups))) if len(answers) == len(groups) else False, str(answers))
+    elif fmt == "classify_each":
+        classes = q.get("classes", [])
+        values = [c["value"] for c in classes]
+        r.check(f"{p} 区分：区分が1からの連番で2つ以上", len(values) >= 2 and values == list(range(1, len(values) + 1)), str(values))
+        r.check(f"{p} 区分：区分のラベルが空でない", all(c["label"] for c in classes), str([c["label"] for c in classes]))
+        targets = st_labels or [s.get("statement_label") for s in q["answer_slots"]]
+        r.check(f"{p} 区分：No の数と肢（空欄）の数が一致", len(q_nos) == len(targets), f"No {len(q_nos)}／肢 {len(targets)}")
+        mapping = {s["no"]: s.get("statement_label") for s in q["answer_slots"]}
+        bad = [s["label"] for s in q["statements"] if "slot_no" in s and mapping.get(s["slot_no"]) != s["label"]]
+        r.check(f"{p} 区分：肢末尾の No とリード文の対応が一致", not bad, f"食い違う肢 {bad}")
+        r.check(f"{p} 区分：解答が区分の範囲", all(x in values for x in answers), str(answers))
     elif fmt == "true_false_each":
         r.check(f"{p} 各肢○×：No の数と肢の数が一致", len(q_nos) == len(st_labels), f"No {len(q_nos)}／肢 {len(st_labels)}")
         mapping = {s["no"]: s.get("statement_label") for s in q["answer_slots"]}

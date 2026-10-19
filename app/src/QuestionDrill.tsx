@@ -73,6 +73,17 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
 
       <QuestionBody q={q} statements={statements} showTruth={result !== null} explanations={expById} />
 
+      {q.format === "classify_each" && q.classes && (
+        <div className="classes">
+          <div className="muted small">選ぶ番号</div>
+          {q.classes.map((c) => (
+            <div key={c.value}>
+              <strong>{c.value}</strong>：{c.label}
+            </div>
+          ))}
+        </div>
+      )}
+
       <div className="slots">
         {q.answer_slots.map((slot, k) => (
           <div className="slot" key={slot.no}>
@@ -137,5 +148,9 @@ function answerText(q: Question, k: number): string {
   if (q.unordered) return q.answer_slots.map((s) => s.official_answer).join("・") + "（順不同）";
   const v = q.answer_slots[k].official_answer;
   if (q.format === "true_false_each") return v === 1 ? "1（正しい）" : "2（誤り）";
+  if (q.format === "classify_each") {
+    const c = q.classes?.find((x) => x.value === v);
+    return c ? `${v}（${c.label}）` : String(v);
+  }
   return String(v);
 }

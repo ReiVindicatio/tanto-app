@@ -664,7 +664,7 @@
    "id": "yobi-2024-keiso-q20",
    "number": 20,
    "points": 3,
-   "format": "unknown",
+   "format": "classify_each",
    "polarity": null,
    "exhaustive": false,
    "unordered": false,
@@ -735,10 +735,24 @@
    "choices": [],
    "answer_slots": [
     {
-     "no": 30
+     "no": 30,
+     "statement_label": "ア"
     },
     {
-     "no": 34
+     "no": 31,
+     "statement_label": "イ"
+    },
+    {
+     "no": 32,
+     "statement_label": "ウ"
+    },
+    {
+     "no": 33,
+     "statement_label": "エ"
+    },
+    {
+     "no": 34,
+     "statement_label": "オ"
     }
    ],
    "sub_questions": [],
@@ -746,11 +760,19 @@
     533,
     563
    ],
-   "flags": [
-    "形式を判定できない"
-   ],
+   "flags": [],
    "statement_headings": [
     "証拠"
+   ],
+   "classes": [
+    {
+     "value": 1,
+     "label": "同条によって許容される証拠に当たるもの"
+    },
+    {
+     "value": 2,
+     "label": "当たらないもの"
+    }
    ]
   },
   {

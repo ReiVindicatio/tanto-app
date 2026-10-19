@@ -34,7 +34,11 @@ SLOT_RE = re.compile(r"\[[,、]?No\.(\d+)\]")  # norm_slots 後の文字列に�
 RANGE_RE = re.compile(r"([アイウエオカキクケコ])から([アイウエオカキクケコ])(?:まで)?の順に\[No\.(\d+)\]から\[No\.(\d+)\]")
 # 肢ラベルを書かずに「解答欄は，［№25］から［№29］」とだけある年度（R03 刑訴 問19・R06 刑訴 問17）
 BARE_RANGE_RE = re.compile(r"解答欄は[,、]\[No\.(\d+)\]から\[No\.(\d+)\]")
-TRAILING_SLOT_RE = re.compile(r"\s*［(?:No\.|№)\s*([0-9０-９]+)］\s*$")
+# 「①から⑤の順に［№32］から［№36］」（H28 刑訴 問22。NFKC で ① は 1 になる）
+ANY_RANGE_RE = re.compile(r"\[No\.(\d+)\]から\[No\.(\d+)\]")
+# 区分を選ぶ形式（T033・決定014）：「…場合には１を，…場合には２を（，…場合には３を）選びなさい」
+CLASS_MARK_RE = re.compile(r"(?:には|に)([１-９])を")
+TRAILING_SLOT_RE = re.compile(r"\s*[［\[](?:No\.|№)\s*([0-9０-９]+)］\s*$")  # 「[№10］」と半角で始まる年度がある（H29 刑法 問9）
 
 CONTEXT_KINDS = {"事例", "会話", "語句群", "見解"}
 # 前提文の中で、新しい項目が始まる行
@@ -134,11 +138,26 @@ def introduces_statements(stem_lines: list[tuple[int, str]], kind: str) -> bool:
     return bool(re.search(r"[ア１]から[イウエオカキクケコ２-９]まで(?:の各|の)【" + re.escape(kind) + r"】(?!から)", stem))
 
 
+def parse_classes(stem: str) -> list[dict]:
+    """リード文から区分の一覧を取り出す。「Ａの場合には１を，Ｂの場合には２を」→ [{1, "Ａの場合"}, {2, "Ｂの場合"}]。
+    ラベルは、番号の直前の「，」「、」から後ろの文字列そのまま（文字の変更なし）"""
+    parts = CLASS_MARK_RE.split(stem)
+    out = []
+    for k in range(1, len(parts), 2):
+        before = parts[k - 1]
+        label = re.split(r"[，、]", before)[-1].strip()
+        out.append({"value": to_int(parts[k]), "label": label})
+    return out
+
+
 def detect_format(stem_n: str, has_choices: bool, blocks: set[str]) -> tuple[str, str | None]:
     """リード文（正規化済み）から形式と、選ぶ対象の向きを決める。決まらなければ unknown／None。"""
     # 「正しいものには１を，誤っているものには２を」（刑訴に多い）・「正しいものに１を」（R03 刑訴 問19）も同じ形式
     if re.search(r"正しい(?:場合|もの)(?:には|に)1を.*誤っている(?:場合|もの)(?:には|に)2", stem_n):
         return "true_false_each", None
+    if not has_choices and "選びなさい" in stem_n and len(re.findall(r"(?:には|に)\d+を", stem_n)) >= 2:
+        # 肢ごとに区分（１・２・３…）を選ぶ（T033）。○×に読み替えず、問で解くだけで出す（決定014）
+        return "classify_each", None
     if re.search(r"幾つあるか|の個数", stem_n):  # 「幾つかの立場がある」（H30 商法 問30）は個数問題ではない
         fmt = "count"
     elif "語句群" in blocks or re.search(r"(?:[①-⑳]|\d+)から(?:[①-⑳]|\d+)までの\(\)内", stem_n):
@@ -205,6 +224,9 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
             state = "context"
             continue
         m = BLOCK_RE.match(line)
+        if m and state == "statements" and statements and re.search(r"【\s*】", "".join(l for _, l in stem_lines)):
+            # リード文が「【 】内の罪数関係」のように空欄の【 】を使い、肢の中に【観念的競合】と書く形（H24 刑法 問8）。肢の文の一部
+            m = None
         if m:
             kind = re.sub(r"\s+", "", m.group(1))
             nxt = next((l for _, l in body[k + 1:] if l.strip()), "")
@@ -295,10 +317,13 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
             slots.append({"no": n0 + k, "statement_label": LABELS_KANA[a + k] if a + k <= b else None})
     elif sub_questions:
         slots = [{"no": n, "sub": g} for g, sq in enumerate(sub_questions) for n in sq["slot_no"]]
-    elif BARE_RANGE_RE.search(stem_n) and fmt == "true_false_each":
-        mb = BARE_RANGE_RE.search(stem_n)
+    elif (BARE_RANGE_RE.search(stem_n) and fmt == "true_false_each") or (fmt == "classify_each" and ANY_RANGE_RE.search(stem_n)):
+        mb = BARE_RANGE_RE.search(stem_n) or ANY_RANGE_RE.search(stem_n)
         n0, n1 = int(mb.group(1)), int(mb.group(2))
         labels = [s["label"] for s in statements]
+        if not labels and fmt == "classify_each":
+            # 肢がなく、本文の①〜⑤の空欄ごとに選ぶ形（H28 刑訴 問22）
+            labels = [chr(ord("①") + k) for k in range(n1 - n0 + 1)]
         if n1 - n0 + 1 != len(labels):
             flags.append("解答欄の範囲（肢の数と No の数）が合わない")
         for k in range(n1 - n0 + 1):
@@ -367,6 +392,7 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
         "line_range": [head_line, body[-1][0] if body else head_line],
         "flags": flags,
         **({"statement_headings": statement_headings} if statement_headings else {}),
+        **({"classes": parse_classes(stem)} if fmt == "classify_each" else {}),
     }
 
 

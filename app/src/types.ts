@@ -22,6 +22,7 @@ export type Format =
   | "single_choice"
   | "multi_select_unordered"
   | "true_false_each"
+  | "classify_each"
   | "count"
   | "fill_blank"
   | "compound"
@@ -51,6 +52,8 @@ export type Question = {
   };
   statements: string[];
   statement_truth_derivable: boolean;
+  /** 区分を選ぶ形式（classify_each）の区分の一覧。ラベルはリード文の文字列そのまま（T033・決定014） */
+  classes?: { value: number; label: string }[];
   /** 法務省の採点上の取扱い（T006）。all_correct：全員正答として扱われた問 */
   status?: { voided: boolean; all_correct: boolean; errata: { content?: string; treatment?: string; source_url?: string }[] };
 };

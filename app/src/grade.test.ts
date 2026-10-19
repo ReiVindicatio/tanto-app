@@ -9,6 +9,19 @@ describe("grade", () => {
     expect(grade(q, [1])).toMatchObject({ full: false, earned: 0 });
   });
 
+  it("区分を選ぶ形式：区分の番号を選び、肢ごとに採点する（T033）", () => {
+    const q = question({
+      format: "classify_each",
+      points: 3,
+      classes: [{ value: 1, label: "共同正犯" }, { value: 2, label: "教唆犯又は幇助犯" }, { value: 3, label: "間接正犯" }],
+      answer_slots: [{ no: 5, official_answer: 3 }, { no: 6, official_answer: 1 }],
+      scoring: { partial_credit: { correct_needed: 1, points: 1 }, no_partial_credit: false, raw_note: "" },
+    });
+    expect(slotOptions(q, 0, []).map((o) => o.label)).toEqual(["1", "2", "3"]);
+    expect(grade(q, [3, 1])).toMatchObject({ full: true, earned: 3 });
+    expect(grade(q, [3, 2])).toMatchObject({ full: false, correctCount: 1, earned: 1 });
+  });
+
   it("順不同：逆順でも満点", () => {
     const q = question({ format: "multi_select_unordered", unordered: true, points: 3,
       answer_slots: [{ no: 2, official_answer: 2 }, { no: 3, official_answer: 5 }] });

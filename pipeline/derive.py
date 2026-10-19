@@ -163,6 +163,7 @@ def build(qdoc: dict, adoc: dict, meta: dict) -> dict:
                                "polarity": sq["polarity"]} for sq in q.get("sub_questions", [])],
             "requires_context": q["requires_context"],
             "choices": q["choices"],
+            **({"classes": q["classes"]} if q.get("classes") else {}),
             "answer_slots": [
                 {"no": s["no"], "official_answer": s["answer"],
                  **({"statement_label": slot_by_no[s["no"]]["statement_label"]}
