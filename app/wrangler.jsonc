@@ -1,0 +1,10 @@
+// Cloudflare Workers（静的なファイルの配信）の設定（T002）。ビルドは npm run build、配信するのは dist/
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "tantan",
+  "compatibility_date": "2026-10-19",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  }
+}

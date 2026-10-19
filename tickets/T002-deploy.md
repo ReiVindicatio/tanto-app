@@ -1,6 +1,6 @@
 # T002 公開（デプロイ）
 
-- 状態：設計レビュー
+- 状態：実装中（設計レビュー OK：2026-10-19。配置先は Pages から Workers に変更）
 - マイルストーン：M1 基盤
 - 優先度：高
 - 依存：T001（完了）
@@ -12,7 +12,27 @@
 - 決定001で Cloudflare Pages を第一候補にした（Vercel の無料プランは商用利用不可、GitHub Pages はオンラインビジネス向けの利用を認めていない）
 - 料金（2026-10-19 確認）：無料プラン。ビルドは月500回まで（公式ドキュメント）、転送量は無制限とされる（二次資料）。push のたびに1回ビルドするので収まる
 
-## 設計
+## 設計の変更（2026-10-19）
+
+- ユーザーが Cloudflare の作成画面を開くと、既定が **Workers（静的なファイルの配信）** の Git 連携になっていた（Cloudflare は Pages の機能を Workers に寄せている）
+- 公式ドキュメントで、**Workers でも静的なファイルへのリクエストは無料・無制限**と確認した（https://developers.cloudflare.com/workers/static-assets/billing-and-limitations ）ので、Workers で配置する
+- プロジェクト名：**`tantan`**（「短答」と「淡々と続ける」）。URL は `https://tantan.<アカウントのサブドメイン>.workers.dev`
+- リポジトリに `app/wrangler.jsonc`（名前 tantan、`dist/` を配信）を置き、`wrangler` を開発用の依存に足した
+
+### Workers の画面での設定
+
+| 項目 | 入れる値 |
+|---|---|
+| Build command | `npm ci && npm run build` |
+| Deploy command | `npx wrangler deploy` |
+| Non-production branch deploy command（preview command） | `npx wrangler versions upload`（既定のまま） |
+| Enable preview builds | Yes（ブランチの確認用 URL ができる） |
+| Protect with Cloudflare Access | **No**（設計どおり鍵はかけない） |
+| Path | `app` |
+| API token / API token name | 既定のまま（Cloudflare が作る） |
+| Variable | `NODE_VERSION` = `22` |
+
+## 当初の設計（Pages 版。記録として残す）
 
 ### 1. 配置のしかた：Cloudflare Pages の Git 連携（勧め）
 
