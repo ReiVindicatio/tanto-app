@@ -3,8 +3,11 @@
 検証（validate.py）が ✅ のものだけを書き出す。✅ でないものは飛ばして一覧に出す。
 解説は、書き出す時点で check_explanations の検査を通った肢のものだけを含める。
 出力：
-  app/public/data/index.json                  … 書き出した束の一覧
-  app/public/data/<exam>-<year>-<subject>.json … 正本と同じ形
+  app/public/data/index.json                  … 書き出した束の一覧と、名寄せの対応表（aliases：出典の肢 ID → カード ID）
+  app/public/data/<exam>-<year>-<subject>.json … 正本と同じ形（名寄せした肢に card・same_as を足す）
+
+名寄せ（決定018）：同じ科目で、本文が同じ（全角半角・空白・句読点をならす）で、出題時点の○×も同じ肢を
+1枚のカードにまとめる。前提文が要る肢は、前提文とリード文も同じときだけ。カード ID は予備（同じ試験なら古い年度）の肢 ID。
 
 使い方：
   python3 pipeline/export.py
@@ -12,9 +15,11 @@
 from __future__ import annotations
 
 import json
+import re
 import shutil
 import subprocess
 import sys
+import unicodedata
 
 from check_explanations import EXPLANATIONS, check_question
 from common import EXAM_IDS, GROUP_IDS, ROOT, SUBJECT_IDS
@@ -34,7 +39,8 @@ assert set(SUBJECT_GROUP.values()) <= set(GROUP_IDS)
 def validated(doc: dict) -> bool:
     exam, subj = doc["exam"], doc["subject"]
     year_dir = f"{exam['era']}-{exam['year']}"
-    r = subprocess.run([sys.executable, str(ROOT / "pipeline" / "validate.py"), year_dir, SUBJECT_GROUP[subj],
+    group = SUBJECT_NAMES[subj] if exam["type"] == "shiho" else SUBJECT_GROUP[subj]  # 司法は科目ごとのファイル
+    r = subprocess.run([sys.executable, str(ROOT / "pipeline" / "validate.py"), year_dir, group,
                         SUBJECT_NAMES[subj], "--exam", EXAM_NAMES[exam["type"]]], capture_output=True, text=True)
     return r.returncode == 0
 
@@ -69,11 +75,66 @@ def collect_explanations(doc: dict) -> tuple[list[dict], list[str]]:
     return out, held
 
 
+EXAM_ORDER = {"yobi": 0, "shiho": 1}
+EXAM_SHORT = {"yobi": "予備", "shiho": "司法"}
+
+
+def dedup_key_text(t: str) -> str:
+    return re.sub(r"[\s、，。．,.]", "", unicodedata.normalize("NFKC", t))
+
+
+def dedup(docs: list[dict]) -> tuple[dict[str, str], list[str]]:
+    """名寄せ：出典の肢 ID → カード ID（カードの代表でない肢だけ）と、○×が食い違ってまとめなかった組の一覧。
+    各肢に card（代表の ID。自分が代表なら付けない）と same_as（まとめた他の出典）を書き込む"""
+    groups: dict[tuple, list[tuple[dict, dict, dict]]] = {}
+    for doc in docs:
+        qs = {q["id"]: q for q in doc["questions"]}
+        for st in doc["statements"]:
+            if not st["truth_at_exam"] or "review_flag" in st:
+                continue
+            q = qs[st["question_id"]]
+            ctx = dedup_key_text(q["stem"] + "".join(c["text"] for c in q["context"])) if st["requires_context"] else ""
+            groups.setdefault((doc["subject"], dedup_key_text(st["text"]), ctx), []).append((doc, q, st))
+    aliases, conflicts = {}, []
+    for members in groups.values():
+        if len(members) < 2:
+            continue
+        if len({m[2]["truth_at_exam"]["value"] for m in members}) > 1:
+            conflicts.append("・".join(m[2]["id"] for m in members))
+            continue
+        members.sort(key=lambda m: (EXAM_ORDER[m[0]["exam"]["type"]], m[0]["exam"]["year"], m[2]["id"]))
+        card = members[0][2]["id"]
+        for doc, q, st in members:
+            if st["id"] != card:
+                st["card"] = card
+                aliases[st["id"]] = card
+            st["same_as"] = [{"id": o["id"], "exam": EXAM_SHORT[d["exam"]["type"]], "era": d["exam"]["era"],
+                              "year": d["exam"]["year"], "number": oq["number"], "label": o["label"]}
+                             for d, oq, o in members if o["id"] != st["id"]]
+    return aliases, conflicts
+
+
+def share_explanations(docs: list[dict]) -> int:
+    """名寄せした肢のどれかに解説があれば、他の出典の肢にも付ける（○×が同じなので結論も同じ）"""
+    by_id = {e["statement_id"]: e for doc in docs for e in doc["explanations"]}
+    added = 0
+    for doc in docs:
+        have = {e["statement_id"] for e in doc["explanations"]}
+        for st in doc["statements"]:
+            if st["id"] in have or not st.get("same_as"):
+                continue
+            src = next((by_id[o["id"]] for o in st["same_as"] if o["id"] in by_id), None)
+            if src:
+                doc["explanations"].append({**src, "id": f"exp-{st['id']}", "statement_id": st["id"], "shared_from": src["statement_id"]})
+                added += 1
+    return added
+
+
 def main() -> None:
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True)
-    sets, skipped = [], []
+    docs, skipped = [], []
     # 人の確認待ちの肢（アプリは肢カードから外す）。truth_at_exam は変えない
     flags = json.loads(FLAGS.read_text(encoding="utf-8"))["flags"] if FLAGS.exists() else []
     open_flags = {f["statement_id"]: {"kind": f["kind"], "reason": f["reason"]} for f in flags if f["status"] == "open"}
@@ -87,6 +148,12 @@ def main() -> None:
         for st in doc["statements"]:
             if st["id"] in open_flags:
                 st["review_flag"] = open_flags[st["id"]]
+        docs.append(doc)
+    aliases, conflicts = dedup(docs)
+    shared = share_explanations(docs)
+    sets = []
+    for doc in docs:
+        name = f"{doc['exam']['type']}-{doc['exam']['year']}-{doc['subject']}"
         (OUT / f"{name}.json").write_text(json.dumps(doc, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         sets.append({
             "id": name,
@@ -100,9 +167,13 @@ def main() -> None:
             "explanations": len(doc["explanations"]),
             "attribution": doc["attribution"],
         })
-    (OUT / "index.json").write_text(json.dumps({"sets": sets}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    index = {"sets": sets, "aliases": dict(sorted(aliases.items()))}
+    (OUT / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     for s in sets:
         print(f"✅ {s['id']}：{s['questions']}問・肢カード {s['statement_cards']}・解説 {s['explanations']}")
+    print(f"名寄せ：{len(aliases)}肢を他の肢と同じカードに（解説の共有 {shared}）")
+    for c in conflicts:
+        print(f"⚠️  本文が同じで○×が食い違うのでまとめない：{c}")
     for name in skipped:
         print(f"⏭️  {name}：検証が ✅ でないので書き出さない")
 

@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { initLearning, recordAnswer, replay, currentState, localDate, subjectOf } from "./learning";
+import { initLearning, recordAnswer, replay, currentState, localDate, subjectOf, setAliases, cardIdOf } from "./learning";
+import { uniqueCards } from "./data";
 import { ans, MemoryStore } from "./test/fakes";
 
 describe("replay", () => {
@@ -85,5 +86,32 @@ describe("recordAnswer", () => {
 describe("subjectOf", () => {
   it("肢 ID から科目を取り出す", () => {
     expect(subjectOf("yobi-2014-minpo-q05-1-2")).toBe("minpo");
+  });
+});
+
+describe("名寄せ（決定018）", () => {
+  it("別の出典の肢の回答が、1枚のカードの履歴・FSRS になる。ログの肢 ID はそのまま", async () => {
+    await setAliases({ "shiho-2024-minpo-q05-a": "yobi-2024-minpo-q03-b" });
+    try {
+      const s = replay([
+        ans("yobi-2024-minpo-q03-b", false, "2026-10-01T00:00:00.000Z"),
+        ans("shiho-2024-minpo-q05-a", true, "2026-10-02T00:00:00.000Z"),
+      ]);
+      expect(s.history.get("yobi-2024-minpo-q03-b")).toEqual({ attempts: 2, correct: 1, last: true, at: "2026-10-02T00:00:00.000Z" });
+      expect(s.history.get("shiho-2024-minpo-q05-a")).toBe(s.history.get("yobi-2024-minpo-q03-b"));
+      expect(s.history.size).toBe(1);
+      expect(s.cards.size).toBe(1);
+      expect(cardIdOf("shiho-2024-minpo-q05-a")).toBe("yobi-2024-minpo-q03-b");
+      expect(uniqueCards([{ id: "yobi-2024-minpo-q03-b" }, { id: "shiho-2024-minpo-q05-a" }, { id: "x" }]).map((c) => c.id)).toEqual([
+        "yobi-2024-minpo-q03-b",
+        "x",
+      ]);
+    } finally {
+      await setAliases({});
+    }
+  });
+
+  it("対応表が空なら今までどおり（出典の肢 ID がカード ID）", () => {
+    expect(cardIdOf("shiho-2024-minpo-q05-a")).toBe("shiho-2024-minpo-q05-a");
   });
 });

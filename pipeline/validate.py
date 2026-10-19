@@ -15,7 +15,7 @@ import sys
 from common import (EXAM_IDS, GROUP_IDS, PAGE_NUMBER_RE, PARSED, REPORTS, ROOT, SUBJECT_IDS, errata_record,
                     manifest_entry, nfkc, sha256, year_parts)
 
-POINTS_PER_SUBJECT = {"yobi": 30}
+POINTS_PER_SUBJECT = {"yobi": 30, ("shiho", "kenpo"): 50, ("shiho", "minpo"): 75, ("shiho", "keiho"): 50}
 KANA = "アイウエオカキクケコ"
 DIGITS = "１２３４５６７８９"
 
@@ -83,7 +83,7 @@ def label_sequence_ok(labels: list[str]) -> bool:
     return labels == list(seq[:len(labels)])
 
 
-def validate_question(r: Report, q: dict, a: dict | None, lines: list[str]) -> None:
+def validate_question(r: Report, q: dict, a: dict | None, lines: list[str], treated: set[int] = frozenset()) -> None:
     n = q["number"]
     p = f"問{n}"
     fmt = q["format"]
@@ -107,6 +107,10 @@ def validate_question(r: Report, q: dict, a: dict | None, lines: list[str]) -> N
     r.check(f"{p} No の集合が一致", q_nos == a_nos, f"問題 {q_nos}／正答 {a_nos}")
     r.check(f"{p} 順不同の指定が一致", q["unordered"] == a["unordered"], f"問題 {q['unordered']}／正答 {a['unordered']}")
     answers = [s["answer"] for s in a["slots"]]
+    if a.get("all_correct_note") and all(x is None for x in answers):
+        # 正答表の解答欄が空欄で、全員正答の注記がある（司法 R05 刑法 問6）。errata.json の記録と合うことを確かめて終える
+        r.check(f"{p} 解答欄が空欄：全員正答の注記が errata.json の記録と一致", q["number"] in treated, a["all_correct_note"])
+        return
     r.check(f"{p} 解答が数値", all(isinstance(x, int) for x in answers), str([s["answer_raw"] for s in a["slots"]]))
     if not all(isinstance(x, int) for x in answers):
         return
@@ -154,13 +158,14 @@ def validate_question(r: Report, q: dict, a: dict | None, lines: list[str]) -> N
         r.check(f"{p} 個数：解答が選択肢の範囲", len(answers) == 1 and 1 <= answers[0] <= len(q["choices"]), str(answers))
     elif fmt == "fill_blank":
         # 語の記号：語句群・語の一覧（【発言】など）の各行の頭、または本文中の「①（ａ．…・ｂ．…）」（H27 刑法 問8）
-        words = {line[0] for c in q["context"] if c["kind"] == "語句群" for line in c["text"].split("\n")}
-        words |= {m for c in q["context"] for m in re.findall(r"(?:^|\s|（|・)([ａ-ｚアイウエオカキクケコサシスセソ])．", c["text"])}
+        # 記号は全角半角をならして比べる（「（i．責任・ｊ．…）」と ｉ だけ半角：司法 R02 刑法 問7）
+        words = {nfkc(line[0]) for c in q["context"] if c["kind"] == "語句群" for line in c["text"].split("\n")}
+        words |= {m for c in q["context"] for m in re.findall(r"(?:^|\s|\(|・)([a-zアイウエオカキクケコサシスセソ])\.", nfkc(c["text"]))}
         r.check(f"{p} 穴埋め：選ぶ語がある", bool(words))
         m = re.search(r"①から([①-⑳])(?:まで)?の", q["stem"])  # 「①から⑦の（ ）内に」（H23 刑法 問3）
         max_blank = ord(m.group(1)) - ord("①") + 1 if m else None
         bad = [c["number"] for c in q["choices"]
-               if not c["blanks"] or any(b["word"] not in words or (max_blank and b["blank"] > max_blank) for b in c["blanks"])]
+               if not c["blanks"] or any(nfkc(b["word"]) not in words or (max_blank and b["blank"] > max_blank) for b in c["blanks"])]
         r.check(f"{p} 穴埋め：選択肢の空欄と語が実在する", not bad and max_blank is not None, f"不正な選択肢 {bad}／空欄 ①〜{max_blank}")
         r.check(f"{p} 穴埋め：解答が選択肢の範囲", len(answers) == 1 and 1 <= answers[0] <= len(q["choices"]), str(answers))
     elif fmt == "compound":
@@ -230,7 +235,7 @@ def main() -> None:
     r.check("問番号が連番", nums == list(range(nums[0], nums[0] + len(nums))) if nums else False, f"{nums[0]}〜{nums[-1]}（{len(nums)}問）" if nums else "問なし")
     nos = [s["no"] for q in qs for s in q["answer_slots"]]
     r.check("No が連番", bool(nos) and nos == list(range(nos[0], nos[0] + len(nos))), f"No.{nos[0]}〜{nos[-1]}" if nos else "")
-    want = POINTS_PER_SUBJECT.get(exam_id)
+    want = POINTS_PER_SUBJECT.get(exam_id) or POINTS_PER_SUBJECT.get((exam_id, subj_id))
     q_pts = sum(q["points"] for q in qs)
     a_pts = sum(by_num[n]["points"] for n in nums if n in by_num)
     if want:
@@ -244,8 +249,10 @@ def main() -> None:
         actual = sha256(ROOT / src["path"])
         ok = actual == src["sha256"] == manifest_entry(src["path"])["sha256"]
         r.check(f"{label} PDF の sha256 が manifest・パース時と同じ", ok, actual[:12] + "…")
+    treated = {f["number"] for f in (rec or {}).get("findings", [])
+               if f.get("subject") == args.subject and f.get("treatment_kind") in ("all_correct", "voided")}
     for q in qs:
-        validate_question(r, q, by_num.get(q["number"]), lines)
+        validate_question(r, q, by_num.get(q["number"]), lines, treated)
 
     out = REPORTS / f"{exam_id}-{year}-{subj_id}.md"
     out.parent.mkdir(parents=True, exist_ok=True)

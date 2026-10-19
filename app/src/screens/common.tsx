@@ -1,5 +1,5 @@
 // 画面で共通に使う小さな部品（T025）
-import type { SubjectGroup, CardRef } from "../data";
+import { uniqueCards, type SubjectGroup, type CardRef } from "../data";
 import type { SetInfo } from "../types";
 import { MINPO_REFORM_YEAR } from "../LawNote";
 import { subjectColor } from "../subjectsMeta";
@@ -25,6 +25,7 @@ export function poolOf(g: SubjectGroup, includePreReform: boolean): SetInfo[] {
   return g.sets.filter((s) => includePreReform || !isMinpo || s.exam.year >= MINPO_REFORM_YEAR);
 }
 
+/** 束の肢カード。複数の束にまたがる同じ肢（名寄せ：決定018）は1枚にする */
 export function cardsOf(sets: SetInfo[], cardIds: Map<string, CardRef[]>): CardRef[] {
-  return sets.flatMap((s) => cardIds.get(s.id) ?? []);
+  return uniqueCards(sets.flatMap((s) => cardIds.get(s.id) ?? []));
 }

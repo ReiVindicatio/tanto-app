@@ -145,6 +145,8 @@ function emptyPicks(q: Question | undefined): (number | null)[] {
 }
 
 function answerText(q: Question, k: number): string {
+  // 全員正答の扱いで、正答表の解答欄が空欄の問（司法 R05 刑法 第6問）
+  if (q.answer_slots.some((s) => s.official_answer === null)) return "—（公式の解答の掲載なし）";
   if (q.unordered) return q.answer_slots.map((s) => s.official_answer).join("・") + "（順不同）";
   const v = q.answer_slots[k].official_answer;
   if (q.format === "true_false_each") return v === 1 ? "1（正しい）" : "2（誤り）";

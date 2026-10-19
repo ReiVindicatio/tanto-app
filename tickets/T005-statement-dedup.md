@@ -1,6 +1,6 @@
 # T005 同一肢の名寄せ（肢 ID の確定）
 
-- 状態：保留（T011 の取り込み時に要否を決め直す）
+- 状態：完了（T011 の中で実装。📖 decisions/018）
 - マイルストーン：M2 拡充
 - 優先度：低
 - 依存（再開の条件）：T011（司法試験の取り込み）
@@ -52,3 +52,8 @@
 - 対応表があれば、異なる出典の肢の回答が1枚のカードの履歴・復習として扱われる（単体テスト）
 - 対応表が空の今は、既存の動きが変わらない（テストがすべて通る）
 - 実際の名寄せ（重複の検出・出典を複数表示）は T011 に引き継ぐ
+
+### 決め直し（2026-10-19、T011）
+
+- 司法 H27〜R08 の肢の37%が予備と同じだったので、案A で入れることにした（ユーザー OK）。📖 `docs/decisions/018-statement-dedup-and-exam-switch.md`
+- 実装：`pipeline/export.py`（名寄せ・`index.json` の `aliases`・肢の `card`／`same_as`・解説の共有）、`app/src/learning.ts`（`CardMap`・`cardIdOf`・`setAliases`）、`data.ts`（`uniqueCards`）、`play.ts`・`screens/common.tsx`（複数の束から出すときに1枚に）

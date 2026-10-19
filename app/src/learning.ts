@@ -5,6 +5,28 @@ import { newAnswerId, type Answer, type RecordStore } from "./store";
 
 export type HistoryRecord = { attempts: number; correct: number; last: boolean; at: string };
 
+// ---- 名寄せ（決定018）：回答ログは出典の肢 ID のまま。集計・FSRS はカード ID で持つ ----
+
+let aliases = new Map<string, string>();
+
+/** 出典の肢 ID → カード ID（名寄せしていない肢はそのまま） */
+export function cardIdOf(statementId: string): string {
+  return aliases.get(statementId) ?? statementId;
+}
+
+/** 出典の肢 ID でもカード ID でも引ける Map（中身はカード ID で持つ） */
+export class CardMap<V> extends Map<string, V> {
+  get(k: string): V | undefined {
+    return super.get(cardIdOf(k));
+  }
+  has(k: string): boolean {
+    return super.has(cardIdOf(k));
+  }
+  set(k: string, v: V): this {
+    return super.set(cardIdOf(k), v);
+  }
+}
+
 export type LearningState = {
   history: Map<string, HistoryRecord>;
   cards: Map<string, Card>;
@@ -17,7 +39,7 @@ export type LearningState = {
 const scheduler = fsrs();
 
 export function emptyState(): LearningState {
-  return { history: new Map(), cards: new Map(), newCount: new Map(), daily: new Map() };
+  return { history: new CardMap(), cards: new CardMap(), newCount: new Map(), daily: new Map() };
 }
 
 /** 肢 ID（yobi-2026-minpo-q01-a）から科目を取り出す */
@@ -81,6 +103,12 @@ export async function reloadLearning(): Promise<void> {
   if (!store) return;
   state = replay(await store.load());
   listeners.forEach((cb) => cb());
+}
+
+/** 名寄せの対応表（index.json の aliases）を入れ、回答ログから状態を作り直す */
+export async function setAliases(map: Record<string, string>): Promise<void> {
+  aliases = new Map(Object.entries(map));
+  await reloadLearning();
 }
 
 /** 学習の状態が変わったら呼ぶ（画面の再描画用）。登録を解く関数を返す */

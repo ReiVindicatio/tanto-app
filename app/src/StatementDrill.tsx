@@ -160,6 +160,12 @@ export default function StatementDrill({
               出典の位置：{o.examName} {q.exam.era} {o.subjectName} 第{q.number}問
               {s.sub !== undefined && ` 小問${q.sub_questions[s.sub].marker}`} 肢{s.label}
             </div>
+            {s.same_as && s.same_as.length > 0 && (
+              <div className="muted small same-as">
+                同じ肢：{s.same_as.map((x) => `${x.exam} ${x.era} 第${x.number}問 肢${x.label}`).join("・")}
+                （1枚のカードとして記録します）
+              </div>
+            )}
             <div className="row">
               <button className="secondary small" onClick={() => setShowQuestion(!showQuestion)}>
                 {showQuestion ? "元の問題を閉じる" : "元の問題を見る"}

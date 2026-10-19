@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import type { DataSet, SetInfo } from "./types";
 import { subjectRank } from "./subjectsMeta";
+import { cardIdOf, setAliases } from "./learning";
 
 const cache = new Map<string, DataSet>();
 
@@ -26,9 +27,13 @@ export function merge(sets: DataSet[]): DataSet {
   };
 }
 
-export type SubjectGroup = { subject: string; name: string; examName: string; sets: SetInfo[] };
+/** 試験の短い名前（予備・司法） */
+export const EXAM_SHORT: Record<string, string> = { yobi: "予備", shiho: "司法" };
+const EXAM_ORDER = ["yobi", "shiho"];
 
-/** 科目ごとにまとめる（科目は決まった順、年度は新しい順） */
+export type SubjectGroup = { subject: string; name: string; exams: string[]; sets: SetInfo[] };
+
+/** 科目ごとにまとめる（科目は決まった順、試験は予備・司法の順、年度は新しい順） */
 export function groupBySubject(sets: SetInfo[]): SubjectGroup[] {
   const m = new Map<string, SetInfo[]>();
   for (const s of sets) m.set(s.subject, [...(m.get(s.subject) ?? []), s]);
@@ -37,9 +42,20 @@ export function groupBySubject(sets: SetInfo[]): SubjectGroup[] {
     .map(([subject, v]) => ({
       subject,
       name: v[0].subject_name,
-      examName: v[0].exam_name,
-      sets: [...v].sort((a, b) => b.exam.year - a.exam.year),
+      exams: EXAM_ORDER.filter((e) => v.some((s) => s.exam.type === e)),
+      sets: [...v].sort((a, b) => EXAM_ORDER.indexOf(a.exam.type) - EXAM_ORDER.indexOf(b.exam.type) || b.exam.year - a.exam.year),
     }));
+}
+
+/** 名寄せ（決定018）：同じカードの肢は最初の1枚だけ残す */
+export function uniqueCards<T extends { id: string }>(items: T[]): T[] {
+  const seen = new Set<string>();
+  return items.filter((x) => {
+    const k = cardIdOf(x.id);
+    if (seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
 }
 
 export type CardRef = { id: string; question_id: string };
@@ -52,7 +68,8 @@ export function useSets(): { sets: SetInfo[] | null; cardIds: Map<string, CardRe
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/index.json`)
       .then((r) => r.json())
-      .then(async (d: { sets: SetInfo[] }) => {
+      .then(async (d: { sets: SetInfo[]; aliases?: Record<string, string> }) => {
+        await setAliases(d.aliases ?? {});
         setSets(d.sets);
         const pairs = await Promise.all(
           d.sets.map(async (s) => {

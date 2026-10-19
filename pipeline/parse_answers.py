@@ -105,12 +105,17 @@ def parse(tsv_path) -> list[dict]:
                 kind = "rem"
                 side = min((c for c in cols if c[0] == "rem"), key=lambda c: abs(c[2] - w.cx))[1]
             cells.setdefault((kind, side), []).append(w)
+        # 表の外の注記（「※第６問の採点に当たっては、受験者全員を正答として取り扱う」：司法 R05 刑法）
+        notes = nfkc("".join(w.text for w in body if not nfkc(w.text).isdigit())).replace(" ", "")
         for side in sorted({c[1] for c in cols}):
-            questions += parse_side(cells, side, page)
+            questions += parse_side(cells, side, page, notes)
     return questions
 
 
-def parse_side(cells, side: int, page: int) -> list[dict]:
+ALL_CORRECT_NOTE_RE = re.compile(r"※?第(\d+)問の採点に当たっては、?受験者全員を正答として取り扱う")
+
+
+def parse_side(cells, side: int, page: int, notes: str = "") -> list[dict]:
     where = f"p{page} 段{side + 1}"
     nos = sorted(cells.get(("no", side), []), key=lambda w: w.cy)
     if not nos:
@@ -119,6 +124,10 @@ def parse_side(cells, side: int, page: int) -> list[dict]:
     rows = []
     for n in nos:
         hit = [a for a in ans if abs(a.cy - n.cy) < 3]
+        if len(hit) == 0 and ALL_CORRECT_NOTE_RE.search(notes):
+            # 解答欄が空欄。全員正答の注記がある問に当たるかは build_question で確かめる
+            rows.append({"no": int(nfkc(n.text)), "y": n.cy, "answer_raw": ""})
+            continue
         if len(hit) != 1:
             raise ValueError(f"{where} No.{n.text}：解答の語が {len(hit)} 個")
         rows.append({"no": int(nfkc(n.text)), "y": n.cy, "answer_raw": hit[0].text})
@@ -142,7 +151,15 @@ def parse_side(cells, side: int, page: int) -> list[dict]:
             raise ValueError(f"{where} 問{lab.text}：配点の語が {len(pts)} 個")
         rem_words = sorted((w for w in cells.get(("rem", side), []) if lo < w.cy < hi), key=lambda w: (round(w.cy), w.x))
         remarks = "".join(w.text for w in rem_words)
-        out.append(build_question(int(nfkc(lab.text)), int(nfkc(pts[0].text)), span, remarks, page))
+        qn = int(nfkc(lab.text))
+        blank = [r["no"] for r in span if r["answer_raw"] == ""]
+        noted = {int(m) for m in ALL_CORRECT_NOTE_RE.findall(notes)}
+        if blank and (qn not in noted or len(blank) != len(span)):
+            raise ValueError(f"{where} 問{qn}：解答欄が空欄の No {blank}（全員正答の注記がない）")
+        q = build_question(qn, int(nfkc(pts[0].text)), span, remarks, page)
+        if blank:
+            q["all_correct_note"] = next(m.group(0) for m in ALL_CORRECT_NOTE_RE.finditer(notes) if int(m.group(1)) == qn)
+        out.append(q)
     if i != len(rows):
         raise ValueError(f"{where}：どの問にも属さない No 行がある（No.{rows[i]['no']}〜）")
     used = sum(1 for w in cells.get(("pts", side), []))

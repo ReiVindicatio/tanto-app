@@ -169,7 +169,7 @@ export default function MyPage({
       <div className="list">
         {groups.map((g) => {
           const ids = cardsOf(g.sets, cardIds).map((c) => c.id);
-          const total = g.sets.reduce((n, s) => n + s.statement_cards, 0);
+          const total = cardIds.size ? ids.length : g.sets.reduce((n, s) => n + s.statement_cards, 0); // 名寄せ後の枚数
           const st = summarize(ids);
           return (
             <div className="list-row subject-stat" key={g.subject}>

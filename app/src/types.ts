@@ -14,7 +14,8 @@ export type Choice = {
   marks?: { label: string; value: boolean }[];
 };
 
-export type Slot = { no: number; official_answer: number; statement_label?: string; sub?: number };
+/** official_answer：全員正答の扱いで正答表の解答欄が空欄の問は null（司法 R05 刑法 第6問） */
+export type Slot = { no: number; official_answer: number | null; statement_label?: string; sub?: number };
 
 /** 小問（⑴⑵…）。H26 民法 問5 のような形式 */
 export type SubQuestion = { marker: string; stem: string; format: Format; polarity: "correct" | "incorrect" | null };
@@ -73,6 +74,9 @@ export type Statement = {
   /** 人の確認待ち（data/review/flags.json）。肢カードには出さない */
   review_flag?: { kind: string; reason: string };
   truth_at_exam: { value: boolean; derivation: string; basis: TruthBasis } | null;
+  /** 名寄せ（決定018）：同じカードの代表の肢 ID（自分が代表なら無い）と、まとめた他の出典 */
+  card?: string;
+  same_as?: { id: string; exam: string; era: string; year: number; number: number; label: string }[];
 };
 
 export type StatuteCitation = {

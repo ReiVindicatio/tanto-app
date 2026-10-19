@@ -1,0 +1,2600 @@
+{
+ "source": {
+  "extracted": "data/extracted/司法試験/短答/R02-2020/憲法_問題.txt",
+  "path": "data/raw/司法試験/短答/R02-2020/憲法_問題.pdf",
+  "sha256": "2943294f9f9b13eae9a053b1ab39e74fb008b51ebcccfea0a2a20b7eaae2ee4b",
+  "source_url": "https://www.moj.go.jp/content/001326053.pdf"
+ },
+ "method": "parse_questions.py（決定的。行の連結と空白の圧縮のみ）",
+ "exam": {
+  "type": "shiho",
+  "year": 2020,
+  "era": "R02"
+ },
+ "group": "憲法",
+ "subject": "kenpo",
+ "section_line_range": [
+  7,
+  407
+ ],
+ "questions": [
+  {
+   "id": "shiho-2020-kenpo-q01",
+   "number": 1,
+   "points": 3,
+   "format": "classify_each",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "外国人の人権に関する次のアからウまでの各記述について，ｂの見解がａの見解の根拠となっている場合には１を，そうでない場合には２を選びなさい。（解答欄は，アからウの順に［No.１］から［No.３］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q01-a",
+     "label": "ア",
+     "text": "ａ．国は，在留期間中の憲法の基本的人権の保障を受ける行為を在留期間の更新の際に消極的な事情としてしんしゃくすることができる。ｂ．外国人に対する憲法の基本的人権の保障は，外国人在留制度の枠内で与えられているにすぎない。",
+     "line_range": [
+      14,
+      17
+     ],
+     "slot_no": 1
+    },
+    {
+     "id": "shiho-2020-kenpo-q01-b",
+     "label": "イ",
+     "text": "ａ．憲法第９３条第２項の「住民」と，憲法第１５条第１項の「国民」とは統一的に理解されるべきであり，憲法第９３条第２項の「住民」は，日本「国民」であることがその前提となっている。ｂ．地方公共団体の政治・行政は，国の政治・行政と互いに関連しており，地方公共団体が国の事務を処理することもある。",
+     "line_range": [
+      18,
+      22
+     ],
+     "slot_no": 2
+    },
+    {
+     "id": "shiho-2020-kenpo-q01-c",
+     "label": "ウ",
+     "text": "ａ．憲法第２２条第２項は，「何人も」との文言を用いているため，国籍離脱の自由は，我が国に在留する外国人にもその保障が及ぶ。ｂ．憲法による基本的人権の保障は，権利の性質上日本国民のみをその対象としていると解されるものを除き，我が国に在留する外国人に対しても等しく及ぶ。",
+     "line_range": [
+      23,
+      26
+     ],
+     "slot_no": 3
+    }
+   ],
+   "choices": [],
+   "answer_slots": [
+    {
+     "no": 1,
+     "statement_label": "ア"
+    },
+    {
+     "no": 2,
+     "statement_label": "イ"
+    },
+    {
+     "no": 3,
+     "statement_label": "ウ"
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    10,
+    28
+   ],
+   "flags": [],
+   "classes": [
+    {
+     "value": 1,
+     "label": "ｂの見解がａの見解の根拠となっている場合"
+    },
+    {
+     "value": 2,
+     "label": "そうでない場合"
+    }
+   ]
+  },
+  {
+   "id": "shiho-2020-kenpo-q02",
+   "number": 2,
+   "points": 2,
+   "format": "mark_combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "インターネット検索事業者に対し，自らの逮捕歴に関し検索結果として表示される情報の削除を求めることの可否について判断した最高裁判所の決定（最高裁判所平成２９年１月３１日第三小法廷決定，民集７１巻１号６３頁）に関する次のアからウまでの各記述について，正しいものには○，誤っているものには×を付した場合の組合せを，後記１から８までの中から選びなさい。（解答欄は，[No.４]）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q02-a",
+     "label": "ア",
+     "text": "この決定は，個人のプライバシーに属する事実をみだりに公表されない利益が法的保護の対象となるとした上，過去に犯した罪の逮捕歴に係る事実は個人のプライバシーに属する事実に当たるものと判断した。",
+     "line_range": [
+      35,
+      37
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q02-b",
+     "label": "イ",
+     "text": "この決定は，検索事業者の行う情報の収集，整理及び提供がプログラムにより自動的に行われることから，検索事業者が検索結果を表示することは，インターネット上の情報を媒介しているにすぎず，検索事業者自身による表現行為とはいえないとした。",
+     "line_range": [
+      38,
+      40
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q02-c",
+     "label": "ウ",
+     "text": "この決定は，プライバシーに属する事実を公表されない法的利益と，ＵＲＬ等の情報を検索結果として提供する理由に関する諸事情を比較衡量し，前者の法的利益が優越することが明らかな場合には，その情報の削除を求めることができるという判断の枠組を示した。",
+     "line_range": [
+      41,
+      43
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 4,
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 7,
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 8,
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 4
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    29,
+    50
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2020-kenpo-q03",
+   "number": 3,
+   "points": 3,
+   "format": "classify_each",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "選挙人の投票価値の平等に関する次のアからウまでの各記述について，ｂの見解がａの見解の根拠となっている場合には１を，そうでない場合には２を選びなさい。（解答欄は，アからウの順に［№５］から［№７］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q03-a",
+     "label": "ア",
+     "text": "ａ．衆議院議員選挙においては，各選挙区間の議員１人当たりの有権者数の比率の較差が１対１を超えることは，憲法上正当化されない。ｂ．投票価値の平等は，国民の意思を公正かつ効果的に代表するために国会が正当に考慮することのできる他の政策的な目的との関連において，調和的に実現されるべきである。",
+     "line_range": [
+      56,
+      60
+     ],
+     "slot_no": 5
+    },
+    {
+     "id": "shiho-2020-kenpo-q03-b",
+     "label": "イ",
+     "text": "ａ．参議院議員選挙においては，二院制の下，地域代表の性質を有するという参議院の特殊性により，投票価値の平等の要請が後退するのもやむを得ない。ｂ．参議院は，国権の最高機関として適切に民意を国政に反映する義務を負っており，衆参両院の選挙制度は同質的とされるべきである。",
+     "line_range": [
+      61,
+      64
+     ],
+     "slot_no": 6
+    },
+    {
+     "id": "shiho-2020-kenpo-q03-c",
+     "label": "ウ",
+     "text": "ａ．地方議会議員選挙においては，当該地方公共団体の住民が，選挙権行使の資格だけでなく，投票価値においても平等に取り扱われるべきである。ｂ．憲法第１４条第１項に定める法の下の平等は，選挙権に関しては，国民は全て政治的価値において平等であるべきとする徹底した平等化を志向するものである。",
+     "line_range": [
+      65,
+      68
+     ],
+     "slot_no": 7
+    }
+   ],
+   "choices": [],
+   "answer_slots": [
+    {
+     "no": 5,
+     "statement_label": "ア"
+    },
+    {
+     "no": 6,
+     "statement_label": "イ"
+    },
+    {
+     "no": 7,
+     "statement_label": "ウ"
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    52,
+    70
+   ],
+   "flags": [],
+   "classes": [
+    {
+     "value": 1,
+     "label": "ｂの見解がａの見解の根拠となっている場合"
+    },
+    {
+     "value": 2,
+     "label": "そうでない場合"
+    }
+   ]
+  },
+  {
+   "id": "shiho-2020-kenpo-q04",
+   "number": 4,
+   "points": 2,
+   "format": "mark_combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "思想・良心の自由に関する次のアからウまでの各記述について，最高裁判所の判例の趣旨に照らして，正しいものには〇，誤っているものには×を付した場合の組合せを，後記１から８までの中から選びなさい。（解答欄は，［No.８］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q04-a",
+     "label": "ア",
+     "text": "企業内においても労働者の思想，信条等の精神的自由は十分尊重されるべきであることに鑑みると，企業がその労働者に対して特定政党への所属の有無を確認するだけでなく，当該政党に所属しない旨の書面を要求する行為は，それが企業秘密の漏えいという企業秩序違反行為に関する調査の一環として行われたとしても，労働者の思想・信条の自由に対する直接的制約であるから，その経緯や調査方法の相当性にかかわらず，違法性が認められる。",
+     "line_range": [
+      75,
+      79
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q04-b",
+     "label": "イ",
+     "text": "公立学校の卒業式等の式典においてその教員に国旗掲揚の下での国歌斉唱の際に起立斉唱を求めることは，慣例上の儀礼的な所作を求めるものではあるが，自らの歴史観ないし世界観との関係で国歌や国旗に対する敬意の表明には応じ難いと考える者がこれらに対する敬意の表明の要素を含む行為を求められることは，その者の歴史観ないし世界観に由来する行動とは異なる外部的行動を求められることになり，その限りにおいて思想及び良心の自由についての間接的な制約となる面がある。",
+     "line_range": [
+      80,
+      85
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q04-c",
+     "label": "ウ",
+     "text": "政治団体への寄付が強制加入団体である税理士会の目的の範囲内かどうかを判断するに当たっては，会員の思想・信条の自由との関係で，その会員には様々の思想・信条及び主義・主張を有する者が存在することが当然に予定されていること，政治団体に寄付するかどうかは選挙における投票の自由と表裏をなすものとして会員各人が個人的な政治的思想，見解，判断等に基づいて自主的に決定すべき事柄であることなどを考慮することが必要である。",
+     "line_range": [
+      86,
+      90
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア〇 イ〇 ウ〇",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア〇 イ〇 ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ア〇 イ× ウ〇",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 4,
+     "text": "ア〇 イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ア× イ〇 ウ〇",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ア× イ〇 ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 7,
+     "text": "ア× イ× ウ〇",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 8,
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 8
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    71,
+    97
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2020-kenpo-q05",
+   "number": 5,
+   "points": 2,
+   "format": "mark_combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "政教分離原則に関する次のアからウまでの各記述について，最高裁判所の判例の趣旨に照らして，正しいものには○，誤っているものには×を付した場合の組合せを，後記１から８までの中から選びなさい。（解答欄は，［No.９］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q05-a",
+     "label": "ア",
+     "text": "政教分離原則に基づく憲法の諸規定は，我が国における宗教事情の下で信教の自由を確実に実現するためには，単に信教の自由を無条件に保障するのみでは足りず，国家といかなる宗教との結び付きをも排除する必要性が大きかったことから設けられたものであり，国家と宗教との完全な分離を理想とし，国家の非宗教性ないし宗教的中立性を確保しようとしたものである。",
+     "line_range": [
+      103,
+      106
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q05-b",
+     "label": "イ",
+     "text": "憲法第２０条第３項の禁止する「宗教的活動」とは，国及びその機関と宗教とのかかわり合いが相当とされる限度を超え，当該行為の目的が宗教的意義を持ち，その効果が宗教に対する援助，助長，促進又は圧迫，干渉等になるような行為をいうのであり，靖国神社の祭礼に際し，知事が玉串料として公金を支出して奉納した行為は，たとえそれが戦没者の慰霊及びその遺族の慰謝を直接の目的としてされたものであったとしても，これに該当する。",
+     "line_range": [
+      107,
+      111
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q05-c",
+     "label": "ウ",
+     "text": "天皇の即位に伴って行われる皇室の儀式である大嘗祭に際し，知事が公費で出張した上，これに参列し拝礼した行為は，地方公共団体の長という公職にある者の社会的儀礼として，日本国及び日本国民統合の象徴である天皇の即位に祝意を表する目的で行われたものにすぎず，宗教とかかわり合いのある行為とはいえないから，憲法第２０条第３項の禁止する「宗教的活動」には該当しない。",
+     "line_range": [
+      112,
+      116
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 4,
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 7,
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 8,
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 9
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    99,
+    121
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2020-kenpo-q06",
+   "number": 6,
+   "points": 3,
+   "format": "classify_each",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "知る権利に関する次のアからウまでの各記述について，ｂの見解がａの見解の根拠となっている場合には１を，そうでない場合には２を選びなさい。（解答欄は，アからウの順に［No.10］から［No.12］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q06-a",
+     "label": "ア",
+     "text": "ａ．マス・メディアの報道に対して反論記事の掲載等を求める権利は，憲法第２１条第１項が保障する表現の自由に含まれる知る権利の一局面であり，同項を直接の根拠として認められる。ｂ．インターネットの普及によって双方向的な情報流通が可能となり，誰もが自ら情報の発信者となることが容易になった。",
+     "line_range": [
+      126,
+      130
+     ],
+     "slot_no": 10
+    },
+    {
+     "id": "shiho-2020-kenpo-q06-b",
+     "label": "イ",
+     "text": "ａ．日本放送協会の放送を受信することのできる受信設備を設置した者に受信契約の締結を強制する放送法の規定は，憲法第２１条第１項の保障する情報摂取の自由を制限するものであり，その合憲性は厳格に審査される必要がある。ｂ．国民の知る権利を実現するためにいかなる放送制度を採用するかは立法裁量の問題である。",
+     "line_range": [
+      131,
+      135
+     ],
+     "slot_no": 11
+    },
+    {
+     "id": "shiho-2020-kenpo-q06-c",
+     "label": "ウ",
+     "text": "ａ．児童買春その他の犯罪から児童を保護すること等の目的のため，電子掲示板の運営者に届出義務を課した上，一定の書き込みに関する削除義務を課すことは，憲法第２１条第１項に違反する。ｂ．インターネット上において表現の場を提供する行為は知る権利に資するものとして，憲法第２１条第１項の保障を受ける。",
+     "line_range": [
+      136,
+      140
+     ],
+     "slot_no": 12
+    }
+   ],
+   "choices": [],
+   "answer_slots": [
+    {
+     "no": 10,
+     "statement_label": "ア"
+    },
+    {
+     "no": 11,
+     "statement_label": "イ"
+    },
+    {
+     "no": 12,
+     "statement_label": "ウ"
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    122,
+    144
+   ],
+   "flags": [],
+   "classes": [
+    {
+     "value": 1,
+     "label": "ｂの見解がａの見解の根拠となっている場合"
+    },
+    {
+     "value": 2,
+     "label": "そうでない場合"
+    }
+   ]
+  },
+  {
+   "id": "shiho-2020-kenpo-q07",
+   "number": 7,
+   "points": 3,
+   "format": "true_false_each",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "憲法第２３条に関する次のアからウまでの各記述について，それぞれ正しい場合には１を，誤っている場合には２を選びなさい。（解答欄は，アからウの順に［No.13］から［No.15］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q07-a",
+     "label": "ア",
+     "text": "憲法第２３条は，学問研究に関する外部からの干渉を許さない趣旨であるから，先端技術分野においても，研究活動の内容や方法等に対する制限は学会の自主規制等に委ねるべきであり，法律によって制約することは許されない。",
+     "line_range": [
+      149,
+      151
+     ],
+     "slot_no": 13
+    },
+    {
+     "id": "shiho-2020-kenpo-q07-b",
+     "label": "イ",
+     "text": "判例によれば，普通教育においては，児童生徒には大学の学生のような批判能力がなく，学校や教師を選択する余地も乏しいことなどから，憲法第２３条によっても，普通教育における教師に完全な教授の自由は認められない。",
+     "line_range": [
+      152,
+      154
+     ],
+     "slot_no": 14
+    },
+    {
+     "id": "shiho-2020-kenpo-q07-c",
+     "label": "ウ",
+     "text": "大学の自治は，大学における研究教育の自由を制度的に保障するために憲法第２３条によって保障されていると解されるから，教授の任免や施設の管理等，研究教育の内容に直接関係しない事項については，大学の自治権は及ばない。",
+     "line_range": [
+      155,
+      157
+     ],
+     "slot_no": 15
+    }
+   ],
+   "choices": [],
+   "answer_slots": [
+    {
+     "no": 13,
+     "statement_label": "ア"
+    },
+    {
+     "no": 14,
+     "statement_label": "イ"
+    },
+    {
+     "no": 15,
+     "statement_label": "ウ"
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    146,
+    159
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2020-kenpo-q08",
+   "number": 8,
+   "points": 2,
+   "format": "mark_combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "財産権に関する次のアからウまでの各記述について，最高裁判所の判例の趣旨に照らして，正しいものには○，誤っているものには×を付した場合の組合せを，後記１から８までの中から選びなさい。（解答欄は，[No.16]）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q08-a",
+     "label": "ア",
+     "text": "憲法第２９条は，私有財産制度を制度として保障するものであり，国民の個々の財産権につき基本的人権として保障するものではない。",
+     "line_range": [
+      164,
+      165
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q08-b",
+     "label": "イ",
+     "text": "法律で一旦定められた財産権の内容を事後の法律で変更しても，それが公共の福祉に適合するようにされたものである限り，違憲とはいえない。",
+     "line_range": [
+      166,
+      167
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q08-c",
+     "label": "ウ",
+     "text": "憲法第２９条第３項の「公共のために用ひる」には，道路，ダム等の公共事業のために財産を収用する場合だけでなく，特定の個人が受益者となる場合も含まれることがある。",
+     "line_range": [
+      168,
+      169
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 4,
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 7,
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 8,
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 16
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    160,
+    176
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2020-kenpo-q09",
+   "number": 9,
+   "points": 2,
+   "format": "mark_combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "生存権とこれを具体化した法制度に関する次のアからウまでの各記述について，最高裁判所の判例の趣旨に照らして，正しいものには○，誤っているものには×を付した場合の組合せを，後記１から８までの中から選びなさい。（解答欄は，［No.17］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q09-a",
+     "label": "ア",
+     "text": "憲法第２５条の規定の趣旨に応えて具体的にどのような立法措置を講ずるかの選択決定は，立法府の広い裁量に委ねられているが，何ら合理的理由のない不当な差別的取扱いや，個人の尊厳を毀損するような内容の定めがあれば，憲法第１４条及び第１３条違反の問題を生じることがある。",
+     "line_range": [
+      182,
+      185
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q09-b",
+     "label": "イ",
+     "text": "「健康で文化的な最低限度の生活」は，抽象的かつ相対的な概念であって，その具体的内容は，その時々における経済的・社会的条件，一般的な国民生活の状況等との相関関係において判断決定されるべきものであるが，老齢加算を廃止する保護基準の改定については，不利益変更であることに鑑み，厚生労働大臣に専門技術的かつ政策的見地からの広範な裁量権は認められない。",
+     "line_range": [
+      186,
+      190
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q09-c",
+     "label": "ウ",
+     "text": "障害基礎年金の受給に関し保険料の拠出に関する要件を緩和するかどうかは国の財政事情等にも密接に関連する事項であるが，保険料負担能力のない２０歳以上６０歳未満の者のうち２０歳以上の学生とそれ以外の者との間に障害基礎年金の受給に関し差異が生じた場合，その合憲性については，憲法第２５条及び第１４条の趣旨に照らし，慎重に検討する必要がある。",
+     "line_range": [
+      191,
+      194
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 4,
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 7,
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 8,
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 17
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    178,
+    199
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2020-kenpo-q10",
+   "number": 10,
+   "points": 3,
+   "format": "true_false_each",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "裁判を受ける権利に関する次のアからウまでの各記述について，最高裁判所の判例の趣旨に照らして，それぞれ正しい場合には１を，誤っている場合には２を選びなさい。（解答欄は，アからウの順に［No.18］から［No.20］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q10-a",
+     "label": "ア",
+     "text": "大日本帝国憲法で「法律ニ定メタル裁判官ノ裁判」を受ける権利が保障されていたのに対し，日本国憲法第３２条が保障するのは「裁判所において裁判を受ける権利」であることを踏まえれば，憲法上国民の司法参加がおよそ禁じられていると解すべき理由はない。",
+     "line_range": [
+      204,
+      206
+     ],
+     "slot_no": 18
+    },
+    {
+     "id": "shiho-2020-kenpo-q10-b",
+     "label": "イ",
+     "text": "性質上純然たる訴訟事件の裁判が，憲法第８２条が定める例外に当たらないにもかかわらず，公開の法廷における対審及び判決によらず非公開でなされた場合には，裁判の公開を定めた憲法第８２条に違反するが，裁判を受ける権利を保障する憲法第３２条に違反することはない。",
+     "line_range": [
+      207,
+      210
+     ],
+     "slot_no": 19
+    },
+    {
+     "id": "shiho-2020-kenpo-q10-c",
+     "label": "ウ",
+     "text": "憲法第３２条は，訴訟の当事者が訴訟の目的である権利関係について裁判所の判断を求める法律上の利益を有することを前提として，そのような訴訟について本案の裁判を受ける権利を保障したものであって，その利益の有無にかかわらず常に本案につき裁判を受ける権利を保障したものではない。",
+     "line_range": [
+      211,
+      214
+     ],
+     "slot_no": 20
+    }
+   ],
+   "choices": [],
+   "answer_slots": [
+    {
+     "no": 18,
+     "statement_label": "ア"
+    },
+    {
+     "no": 19,
+     "statement_label": "イ"
+    },
+    {
+     "no": 20,
+     "statement_label": "ウ"
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    200,
+    218
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2020-kenpo-q11",
+   "number": 11,
+   "points": 2,
+   "format": "combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "主権に関する次のアからエまでの各記述について，国政に関する最高の決定権という意味で主権の概念を用いたものの組合せを，後記１から６までの中から選びなさい。（解答欄は，［No.21］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q11-a",
+     "label": "ア",
+     "text": "「日本国ノ主権ハ本州，北海道，九州及四国並ニ吾等ノ決定スル諸小島ニ局限セラルベシ」（ポツダム宣言第８項）というときの「主権」",
+     "line_range": [
+      223,
+      224
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q11-b",
+     "label": "イ",
+     "text": "「日本国民は，（中略）ここに主権が国民に存することを宣言し，この憲法を確定する。」（憲法前文第１項）というときの「主権」",
+     "line_range": [
+      225,
+      226
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q11-c",
+     "label": "ウ",
+     "text": "「政治道徳の法則は，普遍的なものであり，この法則に従ふことは，自国の主権を維持し，他国と対等関係に立たうとする各国の責務であると信ずる。」（憲法前文第３項）というときの「主権」",
+     "line_range": [
+      227,
+      229
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q11-d",
+     "label": "エ",
+     "text": "「天皇は，日本国の象徴であり日本国民統合の象徴であつて，この地位は，主権の存する日本国民の総意に基く。」（憲法第１条）というときの「主権」",
+     "line_range": [
+      230,
+      231
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "アとイ",
+     "labels": [
+      "ア",
+      "イ"
+     ]
+    },
+    {
+     "number": 2,
+     "text": "アとウ",
+     "labels": [
+      "ア",
+      "ウ"
+     ]
+    },
+    {
+     "number": 3,
+     "text": "アとエ",
+     "labels": [
+      "ア",
+      "エ"
+     ]
+    },
+    {
+     "number": 4,
+     "text": "イとウ",
+     "labels": [
+      "イ",
+      "ウ"
+     ]
+    },
+    {
+     "number": 5,
+     "text": "イとエ",
+     "labels": [
+      "イ",
+      "エ"
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ウとエ",
+     "labels": [
+      "ウ",
+      "エ"
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 21
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    220,
+    234
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2020-kenpo-q12",
+   "number": 12,
+   "points": 3,
+   "format": "classify_each",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "天皇が国会の開会式に出席して述べる「おことば」の憲法上の位置付けに関する次のアからウまでの各記述について，ｂの見解がａの見解の根拠となっている場合には１を，そうでない場合には２を選びなさい。（解答欄は，アからウの順に［No.22］から［No.24］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q12-a",
+     "label": "ア",
+     "text": "ａ．天皇は象徴であり，「おことば」を述べることは象徴としての行為である。ｂ．象徴という言葉は社会心理的な意味を有するものであり，天皇を象徴と定めた憲法の規定から法的効果を導くことはできない。",
+     "line_range": [
+      239,
+      241
+     ],
+     "slot_no": 22
+    },
+    {
+     "id": "shiho-2020-kenpo-q12-b",
+     "label": "イ",
+     "text": "ａ．天皇は公人であり，「おことば」を述べることは公人としての行為である。ｂ．天皇の行為は限定するべきであり，天皇の行為には，憲法が定める国事行為と私的行為の二つしかないと考えるべきである。",
+     "line_range": [
+      242,
+      244
+     ],
+     "slot_no": 23
+    },
+    {
+     "id": "shiho-2020-kenpo-q12-c",
+     "label": "ウ",
+     "text": "ａ．天皇は憲法が列挙する国事行為を行い，「おことば」を述べることは「儀式を行ふこと」（憲法第７条第１０号）に含まれる。ｂ．天皇が自ら儀式を主宰する場合だけでなく，式に参列して儀式的・儀礼的行為を行うことも「儀式を行ふこと」と解釈することができる。",
+     "line_range": [
+      245,
+      248
+     ],
+     "slot_no": 24
+    }
+   ],
+   "choices": [],
+   "answer_slots": [
+    {
+     "no": 22,
+     "statement_label": "ア"
+    },
+    {
+     "no": 23,
+     "statement_label": "イ"
+    },
+    {
+     "no": 24,
+     "statement_label": "ウ"
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    235,
+    252
+   ],
+   "flags": [],
+   "classes": [
+    {
+     "value": 1,
+     "label": "ｂの見解がａの見解の根拠となっている場合"
+    },
+    {
+     "value": 2,
+     "label": "そうでない場合"
+    }
+   ]
+  },
+  {
+   "id": "shiho-2020-kenpo-q13",
+   "number": 13,
+   "points": 2,
+   "format": "mark_combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "選挙権及び選挙制度に関する次のアからウまでの各記述について，正しいものには○，誤っているものには×を付した場合の組合せを，後記１から８までの中から選びなさい。（解答欄は，［No.25］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q13-a",
+     "label": "ア",
+     "text": "選挙権の法的性格について，国政への参加を国民に保障する権利という面のみを有すると考える見解に立っても，かかる権利であると同時に選挙人としての地位に基づいて公務員の選挙に関与する公務という側面も併せ有すると考える見解に立っても，選挙犯罪による被処罰者の選挙権及び被選挙権の停止を定める公職選挙法の規定が，憲法第１４条及び第４４条ただし書に違反する差別的待遇ではないと解することは可能である。",
+     "line_range": [
+      258,
+      262
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q13-b",
+     "label": "イ",
+     "text": "判例は，平成１０年の改正前の公職選挙法が在外日本国民の選挙権を全く認めていなかったことは憲法第１５条第１項，第３項，第４３条第１項等に違反すると解し，さらに，同改正後の公職選挙法附則の規定が，当分の間，在外選挙制度の対象を比例代表選出議員の選挙に限定したことについても，同改正当時，比例代表選出議員の選挙についてだけ在外国民の投票を認めることとしたのには全く理由がなく，上記憲法各条項に違反すると解している。",
+     "line_range": [
+      263,
+      267
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q13-c",
+     "label": "ウ",
+     "text": "判例は，政見放送が民主政治の根幹をなす政治上の表現の自由に基づくものであり，選挙運動の一つの重要な手段である一方，公職選挙法の規定によって禁じられた政見放送としての品位を損なう言動をした場合の責任は，事後的に候補者自身に負わせれば足りることを根拠として，放送事業者が政見放送において用いられた差別的用語を削除した行為を憲法第２１条第１項に違反すると解している。",
+     "line_range": [
+      268,
+      272
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 4,
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 7,
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 8,
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 25
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    254,
+    277
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2020-kenpo-q14",
+   "number": 14,
+   "points": 3,
+   "format": "true_false_each",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "憲法第４１条に関する次のアからウまでの各記述について，それぞれ正しい場合には１を，誤っている場合には２を選びなさい。（解答欄は，アからウの順に[No.26]から[No.28]）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q14-a",
+     "label": "ア",
+     "text": "憲法第４１条の「国権の最高機関」につき，国政全般を統括する機関であるとの見解に立たないとしても，どの国家機関に帰属するのか不明確な権能については国会に属するものと推定することは可能である。[No.26]",
+     "line_range": [
+      281,
+      283
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q14-b",
+     "label": "イ",
+     "text": "憲法第４１条の「立法」につき，実質的意味の立法を意味しているとの見解に立つと，国民の権利を直接に制限し，義務を課す法規範についてのみ法律で定めれば足り，行政各部の組織の根本部分について法律で定めてはならないこととなる。[No.27]",
+     "line_range": [
+      284,
+      286
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q14-c",
+     "label": "ウ",
+     "text": "憲法第４１条の「唯一の立法機関」につき，内閣の法律案提出権を肯定する見解に立つと，法律案の提出は立法に不可欠の要素であるが，立法そのものではなく，その準備行為であって，国会が独占しなければならないものではないと解することとなる。[No.28]",
+     "line_range": [
+      287,
+      289
+     ]
+    }
+   ],
+   "choices": [],
+   "answer_slots": [
+    {
+     "no": 26,
+     "statement_label": "ア"
+    },
+    {
+     "no": 27,
+     "statement_label": "イ"
+    },
+    {
+     "no": 28,
+     "statement_label": "ウ"
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    278,
+    293
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2020-kenpo-q15",
+   "number": 15,
+   "points": 3,
+   "format": "true_false_each",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "内閣総理大臣による国務大臣の任命及び罷免に関する次のアからウまでの各記述について，それぞれ正しい場合には１を，誤っている場合には２を選びなさい。（解答欄は，アからウの順に［No.29］から［No.31］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q15-a",
+     "label": "ア",
+     "text": "内閣総理大臣は国会議員以外の者を国務大臣に任命することができるが，国務大臣の過半数は国会議員の中から選ばなければならない。",
+     "line_range": [
+      299,
+      300
+     ],
+     "slot_no": 29
+    },
+    {
+     "id": "shiho-2020-kenpo-q15-b",
+     "label": "イ",
+     "text": "内閣総理大臣による国務大臣の任命には天皇の認証が必要であるが，内閣はこの認証に対する助言と承認を拒むことができない。",
+     "line_range": [
+      301,
+      302
+     ],
+     "slot_no": 30
+    },
+    {
+     "id": "shiho-2020-kenpo-q15-c",
+     "label": "ウ",
+     "text": "内閣総理大臣は任意に国務大臣を罷免することができるが，その効力発生には天皇の認証が必要である。",
+     "line_range": [
+      303,
+      304
+     ],
+     "slot_no": 31
+    }
+   ],
+   "choices": [],
+   "answer_slots": [
+    {
+     "no": 29,
+     "statement_label": "ア"
+    },
+    {
+     "no": 30,
+     "statement_label": "イ"
+    },
+    {
+     "no": 31,
+     "statement_label": "ウ"
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    295,
+    306
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2020-kenpo-q16",
+   "number": 16,
+   "points": 3,
+   "format": "true_false_each",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "違憲判断の方法に関する次のアからウまでの各記述について，それぞれ正しい場合には１を，誤っている場合には２を選びなさい。（解答欄は，アからウの順に［No.32］から［No.34］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q16-a",
+     "label": "ア",
+     "text": "最高裁判所は，公務員による政党機関誌の配布が国家公務員法違反に問われた堀越事件（最高裁判所平成２４年１２月７日第二小法廷判決，刑集６６巻１２号１３３７頁）において，被告人の配布行為には公務員の職務の遂行の政治的中立性を損なうおそれが実質的に認められず，当該配布行為に罰則規定が適用される限りにおいて憲法第２１条第１項及び第３１条に違反すると判示した。",
+     "line_range": [
+      310,
+      314
+     ],
+     "slot_no": 32
+    },
+    {
+     "id": "shiho-2020-kenpo-q16-b",
+     "label": "イ",
+     "text": "最高裁判所は，市有地を無償で神社施設の敷地利用に供していた行為が政教分離原則に違反するかが問われた空知太神社訴訟（最高裁判所平成２２年１月２０日大法廷判決，民集６４巻１号１頁）において，同じ市による別の神社敷地の譲与行為に対する合憲判断と異なり，当該事案における敷地利用提供行為については憲法第８９条及び第２０条第１項後段に違反すると判示した。",
+     "line_range": [
+      315,
+      319
+     ],
+     "slot_no": 33
+    },
+    {
+     "id": "shiho-2020-kenpo-q16-c",
+     "label": "ウ",
+     "text": "最高裁判所は，郵便法の損害賠償責任免除・制限規定が憲法第１７条に違反するかが問われた訴訟（最高裁判所平成１４年９月１１日大法廷判決，民集５６巻７号１４３９頁）において，当該事案では郵便業務従事者の重過失により損害が生じており，郵便法はそのような場合にまで賠償責任の免除・制限を予定するものではないので，郵便法の上記規定が当該事案に適用される限りにおいて憲法第１７条に違反すると判示した。",
+     "line_range": [
+      320,
+      324
+     ],
+     "slot_no": 34
+    }
+   ],
+   "choices": [],
+   "answer_slots": [
+    {
+     "no": 32,
+     "statement_label": "ア"
+    },
+    {
+     "no": 33,
+     "statement_label": "イ"
+    },
+    {
+     "no": 34,
+     "statement_label": "ウ"
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    307,
+    328
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2020-kenpo-q17",
+   "number": 17,
+   "points": 2,
+   "format": "mark_combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "地方自治に関する次のアからウまでの各記述について，正しいものには○，誤っているものには×を付した場合の組合せを，後記１から８までの中から選びなさい。（解答欄は，［No.35］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q17-a",
+     "label": "ア",
+     "text": "一の地方公共団体のみに適用される特別法の制定に当たっては，国による地方自治権の侵害を防止するとともに，地方公共団体の個性の尊重及び地方行政における民意の尊重のため，憲法第９５条により，当該地方公共団体の住民の投票においてその過半数を得ることが要求されているが，これまでに同条に基づく手続が実際にとられた例はない。",
+     "line_range": [
+      333,
+      336
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q17-b",
+     "label": "イ",
+     "text": "判例によれば，憲法第８４条に規定する租税法律主義の下では，地方公共団体が国とは別途に課税権の主体となることは憲法上予定されておらず，地方公共団体が条例により租税を賦課する場合には，租税の税目，課税客体，課税標準，税率等の事項について，法律で定められた具体的な準則に基づかなければならない。",
+     "line_range": [
+      337,
+      340
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q17-c",
+     "label": "ウ",
+     "text": "判例は，ある事項について国の法令中に明文の規定がない場合でも，当該法令全体からみて，規定の欠如が当該事項についていかなる規制をも施すことなく放置すべきものとする趣旨であると解されるときは，当該事項について条例で規律することが法令違反になり得るとしている。",
+     "line_range": [
+      341,
+      343
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 4,
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 7,
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 8,
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 35
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    330,
+    348
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2020-kenpo-q18",
+   "number": 18,
+   "points": 2,
+   "format": "mark_combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "条約に関する次のアからウまでの各記述について，正しいものには○，誤っているものには×を付した場合の組合せを，後記１から８までの中から選びなさい。（解答欄は，［No.36］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q18-a",
+     "label": "ア",
+     "text": "条約締結の国会承認については，衆議院の優越が認められており，条約承認の議案は，先に衆議院に提出しなければならない。",
+     "line_range": [
+      352,
+      353
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q18-b",
+     "label": "イ",
+     "text": "条約を締結する権限は内閣にあるが，批准を要する条約についての批准書の認証は天皇の国事行為である。",
+     "line_range": [
+      354,
+      355
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q18-c",
+     "label": "ウ",
+     "text": "条約は，国会による承認及び内閣による締結の後，天皇が国事行為としてこれを公布することによって有効に成立する。",
+     "line_range": [
+      356,
+      357
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 4,
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 7,
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 8,
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 36
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    349,
+    364
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2020-kenpo-q19",
+   "number": 19,
+   "points": 3,
+   "format": "true_false_each",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "次の対話は，憲法改正に関する教授と学生の対話である。教授の各質問に対する次のアからウまでの学生の各回答について，それぞれ正しい場合には１を，誤っている場合には２を選びなさい。（解答欄は，アからウの順に［№37］から［№39］）教授．憲法第９６条第１項は，「この憲法の改正は，各議院の総議員の３分の２以上の賛成で，国会が，これを発議し，国民に提案してその承認を経なければならない。」と規定しているが，この「総議員」の意味には争いがあって，①法定議員数と解する説と，②現に各議院に在職する議員数の総数とする説があるね。②説の根拠として考えられるものは何かな。",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q19-a",
+     "label": "ア",
+     "text": "定足数が一定になり「総議員」の数を巡る争いを避けられること，憲法改正の発議要件を厳格にして議決を慎重にさせるのが憲法の趣旨に合致することなどがあります。［№37］教授．それから，改正案を国会に提案する権限を内閣が有するか否かについても，肯定説と否定説とが対立しているね。肯定説に対しては，否定説の立場から，内閣の発案権を認めると国会の自主的審議権が害されるとの批判がされているが，この批判に対する肯定説の立場からの反論として，どのようなものが考えられるだろうか。",
+     "line_range": [
+      374,
+      379
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q19-b",
+     "label": "イ",
+     "text": "内閣に発案権を認めたとしても，各議院は内閣の改正案に対する修正権を持つので，国会の自主的審議権を害するおそれはないとの反論が可能だと思います。［№38］教授．憲法改正は，改正案が国民に提案され，国民投票が行われ，その過半数の賛成で承認されるのでなければ成立しないね。「過半数」の意味については，①有権者総数の過半数か，②無効投票を含めた投票総数の過半数か，③有効投票総数の過半数か，を巡り議論があるところだが，①説に対する批判として考えられるものを挙げてみよう。",
+     "line_range": [
+      380,
+      385
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q19-c",
+     "label": "ウ",
+     "text": "①説に対しては，棄権者が全て改正案に反対の意思と評価されてしまう点で妥当ではないとの批判が考えられます。",
+     "line_range": [
+      386,
+      387
+     ],
+     "slot_no": 39
+    }
+   ],
+   "choices": [],
+   "answer_slots": [
+    {
+     "no": 37,
+     "statement_label": "ア"
+    },
+    {
+     "no": 38,
+     "statement_label": "イ"
+    },
+    {
+     "no": 39,
+     "statement_label": "ウ"
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    366,
+    389
+   ],
+   "flags": []
+  },
+  {
+   "id": "shiho-2020-kenpo-q20",
+   "number": 20,
+   "points": 2,
+   "format": "mark_combination",
+   "polarity": null,
+   "exhaustive": false,
+   "unordered": false,
+   "stem": "憲法の法源に関する次のアからウまでの各記述について，正しいものには○，誤っているものには×を付した場合の組合せを，後記１から８までの中から選びなさい。（解答欄は，［No.40］）",
+   "context": [],
+   "requires_context": false,
+   "statements": [
+    {
+     "id": "shiho-2020-kenpo-q20-a",
+     "label": "ア",
+     "text": "硬性憲法の原則を重視する立場をとっても，憲法の空白を埋める事実が反復・継続された場合に，国家機関を政治的に拘束する憲法慣習の成立を認めることができる。",
+     "line_range": [
+      393,
+      394
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q20-b",
+     "label": "イ",
+     "text": "判例が，後の裁判を法的に拘束するという立場をとるならば，法律の合憲性に関する最高裁判所の判例を変更することは，後の最高裁判所であっても，許されない。",
+     "line_range": [
+      395,
+      396
+     ]
+    },
+    {
+     "id": "shiho-2020-kenpo-q20-c",
+     "label": "ウ",
+     "text": "条約の国内法的効力は憲法に劣るという立場をとるならば，裁判所が，立法事実の存否を判断するための資料として，国際人権条約を参照することは，許されない。",
+     "line_range": [
+      397,
+      398
+     ]
+    }
+   ],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア○ イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア○ イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 3,
+     "text": "ア○ イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 4,
+     "text": "ア○ イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": true
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ア× イ○ ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 6,
+     "text": "ア× イ○ ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": true
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    },
+    {
+     "number": 7,
+     "text": "ア× イ× ウ○",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": true
+      }
+     ]
+    },
+    {
+     "number": 8,
+     "text": "ア× イ× ウ×",
+     "marks": [
+      {
+       "label": "ア",
+       "value": false
+      },
+      {
+       "label": "イ",
+       "value": false
+      },
+      {
+       "label": "ウ",
+       "value": false
+      }
+     ]
+    }
+   ],
+   "answer_slots": [
+    {
+     "no": 40
+    }
+   ],
+   "sub_questions": [],
+   "line_range": [
+    390,
+    407
+   ],
+   "flags": []
+  }
+ ]
+}
