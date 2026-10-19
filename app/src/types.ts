@@ -51,6 +51,8 @@ export type Question = {
   };
   statements: string[];
   statement_truth_derivable: boolean;
+  /** 法務省の採点上の取扱い（T006）。all_correct：全員正答として扱われた問 */
+  status?: { voided: boolean; all_correct: boolean; errata: { content?: string; treatment?: string; source_url?: string }[] };
 };
 
 export type TruthBasis = "direct" | "selected" | "exhaustive" | "uniqueness" | "convention";

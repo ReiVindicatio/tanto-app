@@ -40,6 +40,10 @@ export function grade(q: Question, picks: (number | null)[]): Grade {
   } else {
     correct = picks.map((p, k) => p === official[k]);
   }
+  // 全員正答・没問として扱われた問は、何を選んでも満点（法務省の採点上の取扱い。T006）
+  if (q.status?.all_correct || q.status?.voided) {
+    return { correct: picks.map(() => true), correctCount: picks.length, earned: q.points, full: true };
+  }
   const correctCount = correct.filter(Boolean).length;
   const full = correctCount === official.length;
   let earned = 0;

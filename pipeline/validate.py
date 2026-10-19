@@ -12,8 +12,8 @@ import json
 import re
 import sys
 
-from common import (EXAM_IDS, GROUP_IDS, PAGE_NUMBER_RE, PARSED, REPORTS, ROOT, SUBJECT_IDS, manifest_entry, nfkc,
-                    sha256, year_parts)
+from common import (EXAM_IDS, GROUP_IDS, PAGE_NUMBER_RE, PARSED, REPORTS, ROOT, SUBJECT_IDS, errata_record,
+                    manifest_entry, nfkc, sha256, year_parts)
 
 POINTS_PER_SUBJECT = {"yobi": 30}
 KANA = "アイウエオカキクケコ"
@@ -201,6 +201,9 @@ def main() -> None:
     if want:
         r.check(f"配点の合計が{want}点（問題文）", q_pts == want, str(q_pts))
         r.check(f"配点の合計が{want}点（正答表）", a_pts == want, str(a_pts))
+    rec = errata_record(exam_id, year)
+    r.check("正誤訂正・採点上の取扱いを確認済み（data/review/errata.json）", bool(rec) and rec.get("status") == "checked",
+            (rec or {}).get("checked_at", "記録なし"))
     for label, doc in (("問題", qdoc), ("正答", adoc)):
         src = doc["source"]
         actual = sha256(ROOT / src["path"])

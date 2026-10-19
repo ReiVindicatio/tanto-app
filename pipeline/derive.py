@@ -13,7 +13,7 @@ import json
 import subprocess
 import sys
 
-from common import EXAM_IDS, GROUP_IDS, PARSED, ROOT, SUBJECT_IDS, year_parts
+from common import EXAM_IDS, GROUP_IDS, PARSED, ROOT, SUBJECT_IDS, errata_for_question, year_parts
 
 QUESTIONS = ROOT / "data" / "questions"
 SITE_URL = "https://www.moj.go.jp/jinji/shihoushiken/"
@@ -127,12 +127,19 @@ def page_of(line: int, page_start_lines: list[int]) -> int:
 
 
 def build(qdoc: dict, adoc: dict, meta: dict) -> dict:
+    subject_name = {v: k for k, v in SUBJECT_IDS.items()}[qdoc["subject"]]
     by_num = {a["number"]: a for a in adoc["questions"]}
     questions, statements = [], []
     for q in qdoc["questions"]:
         a = by_num[q["number"]]
         answers = [s["answer"] for s in a["slots"]]
-        truths = derive_truths(q, answers)
+        errata = errata_for_question(qdoc["exam"]["type"], qdoc["exam"]["year"], subject_name, q["number"])
+        all_correct = any(e.get("treatment_kind") == "all_correct" for e in errata)
+        voided = any(e.get("treatment_kind") == "voided" for e in errata)
+        if any(e.get("treatment_kind") == "multiple_answers" for e in errata):
+            raise DeriveError(f"問{q['number']}：複数正解の取扱いは未対応（T006 で対応を決める）")
+        # 全員正答・没問の問は、公式の解答による肢の○×を出さない（法務省の採点上の取扱い。CLAUDE.md 禁止事項2の例外）
+        truths = None if (all_correct or voided) else derive_truths(q, answers)
         if truths is not None:
             if set(truths) != {s["id"] for s in q["statements"]}:
                 raise DeriveError(f"問{q['number']}：○×が決まらない肢がある")
@@ -165,7 +172,8 @@ def build(qdoc: dict, adoc: dict, meta: dict) -> dict:
             ],
             "scoring": {"partial_credit": a["partial_credit"], "no_partial_credit": a["no_partial_credit"],
                         "raw_note": a["remarks_raw"]},
-            "status": {"voided": False, "all_correct": False, "errata": []},
+            "status": {"voided": voided, "all_correct": all_correct,
+                       "errata": [{k: e[k] for k in ("content", "treatment", "source_url") if k in e} for e in errata]},
             "statements": [s["id"] for s in q["statements"]],
             "statement_truth_derivable": truths is not None,
             "provenance": {

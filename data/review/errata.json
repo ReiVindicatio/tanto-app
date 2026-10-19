@@ -1,0 +1,870 @@
+{
+ "note": "法務省（司法試験委員会）が公表した、短答式試験の問題の誤記・正誤訂正・採点上の取扱いの確認記録（T006）。年度ごとに「年度の結果ページ（告知 PDF がリンクされる）」と「短答式試験及落判定会議の議事要旨」の両方を見る（措置なしの誤記は議事要旨に出ないことがある：2020年）。findings の treatment_kind：all_correct（全員正答として扱う）／voided（没問）／multiple_answers（複数正解）／none（措置なし）。取り込み対象の科目に all_correct・voided があれば derive.py が正本の status に反映し、肢の○×を出さない。validate.py は、取り込み済みの年度が status=checked でなければ止める。",
+ "exams": {
+  "yobi": {
+   "2011": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省のページを確認し、主要な告知・正答 PDF を再取得して突き合わせた）",
+    "result": "確認済み・法律科目の該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00032.html",
+      "title": "平成２３年司法試験予備試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00040.html",
+      "title": "平成２３年司法試験予備試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000075826.pdf",
+      "title": "憲法・行政法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000075827.pdf",
+      "title": "民法・商法・民事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000075828.pdf",
+      "title": "刑法・刑事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000075829.pdf",
+      "title": "一般教養科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01700011.html",
+      "title": "平成２３年司法試験予備試験考査委員会議（短答式試験及落判定会議）（平成２３年６月１５日）",
+      "what": "司法試験予備試験考査委員会議（短答式試験及落判定会議）のページ"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000083692.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認）"
+     }
+    ],
+    "findings": []
+   },
+   "2012": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省のページを確認し、主要な告知・正答 PDF を再取得して突き合わせた）",
+    "result": "確認済み・法律科目の該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_000101.html",
+      "title": "平成２４年司法試験予備試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00069.html",
+      "title": "平成２４年司法試験予備試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000098901.pdf",
+      "title": "憲法・行政法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000098902.pdf",
+      "title": "民法・商法・民事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000098903.pdf",
+      "title": "刑法・刑事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000098904.pdf",
+      "title": "一般教養科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01700025.html",
+      "title": "平成２４年司法試験予備試験考査委員会議（短答式試験及落判定会議）（平成２４年６月１３日）",
+      "what": "司法試験予備試験考査委員会議（短答式試験及落判定会議）のページ"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000099734.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認）"
+     }
+    ],
+    "findings": []
+   },
+   "2013": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省のページを確認し、主要な告知・正答 PDF を再取得して突き合わせた）",
+    "result": "確認済み・法律科目の該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00093.html",
+      "title": "平成２５年司法試験予備試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00096.html",
+      "title": "平成２５年司法試験予備試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000124224.pdf",
+      "title": "憲法・行政法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000111742.pdf",
+      "title": "民法・商法・民事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000111743.pdf",
+      "title": "刑法・刑事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000111744.pdf",
+      "title": "一般教養科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01700040.html",
+      "title": "平成２５年司法試験予備試験考査委員会議（短答式試験及落判定会議）（平成２５年６月１２日）",
+      "what": "司法試験予備試験考査委員会議（短答式試験及落判定会議）のページ"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000111965.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認）"
+     }
+    ],
+    "findings": []
+   },
+   "2014": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省のページを確認し、主要な告知・正答 PDF を再取得して突き合わせた）",
+    "result": "確認済み・法律科目の該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00117.html",
+      "title": "平成２６年司法試験予備試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00120.html",
+      "title": "平成２６年司法試験予備試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000124044.pdf",
+      "title": "憲法・行政法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000124045.pdf",
+      "title": "民法・商法・民事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000124046.pdf",
+      "title": "刑法・刑事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000124047.pdf",
+      "title": "一般教養科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01700053.html",
+      "title": "平成２６年司法試験予備試験考査委員会議（短答式試験及落判定会議）（平成２６年６月１１日）",
+      "what": "司法試験予備試験考査委員会議（短答式試験及落判定会議）のページ"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/000125128.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認）"
+     }
+    ],
+    "findings": []
+   },
+   "2015": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省のページを確認し、主要な告知・正答 PDF を再取得して突き合わせた）",
+    "result": "確認済み・法律科目の該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00142.html",
+      "title": "平成２７年司法試験予備試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00148.html",
+      "title": "平成２７年司法試験予備試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001148581.pdf",
+      "title": "憲法・行政法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001148583.pdf",
+      "title": "民法・商法・民事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001148584.pdf",
+      "title": "刑法・刑事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001148585.pdf",
+      "title": "一般教養科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01700067.html",
+      "title": "平成２７年司法試験予備試験考査委員会議（短答式試験及落判定会議）（平成２７年６月１０日）",
+      "what": "司法試験予備試験考査委員会議（短答式試験及落判定会議）のページ"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001154869.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認）"
+     }
+    ],
+    "findings": []
+   },
+   "2016": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省のページを確認し、主要な告知・正答 PDF を再取得して突き合わせた）",
+    "result": "確認済み・法律科目の該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00170.html",
+      "title": "平成２８年司法試験予備試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00174.html",
+      "title": "平成２８年司法試験予備試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001185318.pdf",
+      "title": "憲法・行政法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001185319.pdf",
+      "title": "民法・商法・民事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001185317.pdf",
+      "title": "刑法・刑事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001185316.pdf",
+      "title": "一般教養科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01700079.html",
+      "title": "平成２８年司法試験予備試験考査委員会議（短答式試験及落判定会議）（平成２８年６月８日）",
+      "what": "司法試験予備試験考査委員会議（短答式試験及落判定会議）のページ"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001203735.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001185320.pdf",
+      "title": "平成２８年司法試験予備試験短答式試験一般教養科目における出題の誤りについて",
+      "what": "誤記・取扱いの告知PDF（本文を確認）"
+     }
+    ],
+    "findings": [
+     {
+      "subject": "一般教養科目",
+      "number": 31,
+      "treatment_kind": "all_correct",
+      "content": "問題文の「ジメチルエーテル」は「ジメチルエステル」の誤り。正答となる肢のない不適切な設問となった（平成28年6月9日 司法試験委員会公表。6月8日の考査委員会議で決定。一般教養の正解PDFにも※2で注記）",
+      "treatment": "第31問を選択した者は全て正答として取り扱う",
+      "source_url": "https://www.moj.go.jp/content/001185320.pdf"
+     }
+    ]
+   },
+   "2017": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省のページを確認し、主要な告知・正答 PDF を再取得して突き合わせた）",
+    "result": "確認済み・法律科目の該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00204.html",
+      "title": "平成２９年司法試験予備試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00206.html",
+      "title": "平成２９年司法試験予備試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001227106.pdf",
+      "title": "憲法・行政法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001227109.pdf",
+      "title": "民法・商法・民事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001227110.pdf",
+      "title": "刑法・刑事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001227108.pdf",
+      "title": "一般教養科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01700098.html",
+      "title": "平成２９年司法試験予備試験考査委員会議（短答式試験及落判定会議）（平成２９年６月１４日）",
+      "what": "司法試験予備試験考査委員会議（短答式試験及落判定会議）のページ"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001227509.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認）"
+     }
+    ],
+    "findings": []
+   },
+   "2018": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省のページを確認し、主要な告知・正答 PDF を再取得して突き合わせた）",
+    "result": "確認済み・法律科目の該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00229.html",
+      "title": "平成３０年司法試験予備試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00232.html",
+      "title": "平成３０年司法試験予備試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001261067.pdf",
+      "title": "憲法・行政法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001261068.pdf",
+      "title": "民法・商法・民事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001261069.pdf",
+      "title": "刑法・刑事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001261371.pdf",
+      "title": "一般教養科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01700115.html",
+      "title": "平成３０年司法試験予備試験考査委員会議（短答式試験及落判定会議）（平成３０年６月１３日）",
+      "what": "司法試験予備試験考査委員会議（短答式試験及落判定会議）のページ"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001264165.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01700116.html",
+      "title": "平成３０年司法試験予備試験考査委員会議（短答式試験及落判定会議）（平成３０年６月１８日）",
+      "what": "司法試験予備試験考査委員会議（短答式試験及落判定会議）のページ"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001264166.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001261320.pdf",
+      "title": "平成３０年司法試験予備試験短答式試験一般教養科目における出題の誤りについて（6/15）",
+      "what": "誤記・取扱いの告知PDF（本文を確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001261355.pdf",
+      "title": "同 出題の誤りへの対応について（6/18）",
+      "what": "誤記・取扱いの告知PDF（本文を確認）"
+     }
+    ],
+    "findings": [
+     {
+      "subject": "一般教養科目",
+      "number": 28,
+      "treatment_kind": "all_correct",
+      "content": "問題文「イ」の「17世紀末〜18世紀初頭」は「18世紀末〜19世紀初頭」の誤りで、正答となる肢がなくなった。6月15日に誤りの判明を公表、6月18日の考査委員会議（追加開催）で措置を決定し49人を合格に追加（2,612人→2,661人）。一般教養の正解PDF（001261371）にも※2で注記",
+      "treatment": "第28問を有効に選択した者は全て正答として取り扱う（合格者49人追加）",
+      "source_url": "https://www.moj.go.jp/content/001261355.pdf"
+     }
+    ]
+   },
+   "2019": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省のページを確認し、主要な告知・正答 PDF を再取得して突き合わせた）",
+    "result": "確認済み・法律科目の該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00243.html",
+      "title": "令和元年司法試験予備試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00250.html",
+      "title": "令和元年司法試験予備試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001295331.pdf",
+      "title": "憲法・行政法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001295332.pdf",
+      "title": "民法・商法・民事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001295333.pdf",
+      "title": "刑法・刑事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001295334.pdf",
+      "title": "一般教養の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01700132.html",
+      "title": "令和元年司法試験予備試験考査委員会議（短答式試験及落判定会議）（令和元年６月５日）",
+      "what": "司法試験予備試験考査委員会議（短答式試験及落判定会議）のページ"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001299469.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認）"
+     }
+    ],
+    "findings": []
+   },
+   "2020": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省のページを確認し、主要な告知・正答 PDF を再取得して突き合わせた）",
+    "result": "確認済み・法律科目の該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00004.html",
+      "title": "令和２年司法試験予備試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00017.html",
+      "title": "令和２年司法試験予備試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001327728.pdf",
+      "title": "憲法・行政法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001327729.pdf",
+      "title": "民法・商法・民事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001327730.pdf",
+      "title": "刑法・刑事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001327731.pdf",
+      "title": "一般教養科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01700001_00013.html",
+      "title": "令和２年司法試験予備試験考査委員会議（短答式試験及落判定会議）（令和２年９月７日）",
+      "what": "司法試験予備試験考査委員会議（短答式試験及落判定会議）のページ"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001330938.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001328082.pdf",
+      "title": "令和２年司法試験予備試験短答式試験における試験問題の誤記及びその取扱いについて",
+      "what": "誤記・取扱いの告知PDF（本文を確認）"
+     }
+    ],
+    "findings": [
+     {
+      "subject": "一般教養科目",
+      "number": 11,
+      "treatment_kind": "none",
+      "content": "選択肢2の2行目「解釈しようするあまり」は「解釈しようとするあまり」の誤記（令和2年9月7日 司法試験委員会公表）。なお同日の考査委員会議の議事要旨（001330938.pdf）には誤記の記載はない",
+      "treatment": "措置なし（解答に影響を与えたとは認められない）",
+      "source_url": "https://www.moj.go.jp/content/001328082.pdf"
+     }
+    ]
+   },
+   "2021": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省のページを確認し、主要な告知・正答 PDF を再取得して突き合わせた）",
+    "result": "確認済み・法律科目の該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00065.html",
+      "title": "令和３年司法試験予備試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00070.html",
+      "title": "令和３年司法試験予備試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001349810.pdf",
+      "title": "憲法・行政法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001349811.pdf",
+      "title": "民法・商法・民事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001349812.pdf",
+      "title": "刑法・刑事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001349813.pdf",
+      "title": "一般教養科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01800001_00004.html",
+      "title": "令和３年司法試験予備試験考査委員会議（短答式試験及落判定会議）（令和３年６月２日）",
+      "what": "司法試験予備試験考査委員会議（短答式試験及落判定会議）のページ"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001351956.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認）"
+     }
+    ],
+    "findings": []
+   },
+   "2022": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省のページを確認し、主要な告知・正答 PDF を再取得して突き合わせた）",
+    "result": "確認済み・法律科目の該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00098.html",
+      "title": "令和４年司法試験予備試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00111.html",
+      "title": "令和４年司法試験予備試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001374130.pdf",
+      "title": "憲法・行政法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001374131.pdf",
+      "title": "民法・商法・民事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001374133.pdf",
+      "title": "刑法・刑事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001374134.pdf",
+      "title": "一般教養科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01800001_00007.html",
+      "title": "令和４年司法試験予備試験考査委員会議（短答式試験及落判定会議）（令和４年６月１日）",
+      "what": "司法試験予備試験考査委員会議（短答式試験及落判定会議）のページ"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001376571.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認）"
+     }
+    ],
+    "findings": []
+   },
+   "2023": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省のページを確認し、主要な告知・正答 PDF を再取得して突き合わせた）",
+    "result": "確認済み・法律科目の該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00144.html",
+      "title": "令和５年司法試験予備試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00164.html",
+      "title": "令和５年司法試験予備試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001400882.pdf",
+      "title": "憲法・行政法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001400886.pdf",
+      "title": "民法・商法・民事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001400884.pdf",
+      "title": "刑法・刑事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001400885.pdf",
+      "title": "一般教養科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01800001_00013.html",
+      "title": "令和５年司法試験予備試験考査委員会議（短答式試験及落判定会議）（令和５年８月２日）",
+      "what": "司法試験予備試験考査委員会議（短答式試験及落判定会議）のページ"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001402406.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認）"
+     }
+    ],
+    "findings": []
+   },
+   "2024": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省のページを確認し、主要な告知・正答 PDF を再取得して突き合わせた）",
+    "result": "確認済み・法律科目の該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00213.html",
+      "title": "令和６年司法試験予備試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00258.html",
+      "title": "令和６年司法試験予備試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001422569.pdf",
+      "title": "憲法・行政法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001422570.pdf",
+      "title": "民法・商法・民事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001422571.pdf",
+      "title": "刑法・刑事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001422572.pdf",
+      "title": "一般教養科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01800001_00020.html",
+      "title": "令和６年司法試験予備試験考査委員会議（短答式試験及落判定会議）（令和６年７月３１日）",
+      "what": "司法試験予備試験考査委員会議（短答式試験及落判定会議）のページ"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001425081.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認）"
+     }
+    ],
+    "findings": []
+   },
+   "2025": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省のページを確認し、主要な告知・正答 PDF を再取得して突き合わせた）",
+    "result": "確認済み・法律科目の該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00285.html",
+      "title": "令和７年司法試験予備試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00289.html",
+      "title": "令和７年司法試験予備試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001444173.pdf",
+      "title": "憲法・行政法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001444174.pdf",
+      "title": "民法・商法・民事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001444175.pdf",
+      "title": "刑法・刑事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001444176.pdf",
+      "title": "一般教養科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01800001_00026.html",
+      "title": "令和７年司法試験予備試験考査委員会議（短答式試験及落判定会議）（令和７年８月６日）",
+      "what": "司法試験予備試験考査委員会議（短答式試験及落判定会議）のページ"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001445462.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001444169.pdf",
+      "title": "令和７年司法試験予備試験短答式試験における試験問題の誤記およびその取扱いについて",
+      "what": "誤記・取扱いの告知PDF（本文を確認）"
+     }
+    ],
+    "findings": [
+     {
+      "subject": "一般教養科目",
+      "number": 41,
+      "treatment_kind": "none",
+      "content": "本文23行目の「were」は「wire」の誤記（令和7年8月7日 司法試験委員会公表。8月6日の短答式試験及落判定会議の議題(1)でも決定）",
+      "treatment": "措置なし（当初予定の選択肢を正解とする通常の取扱い）",
+      "source_url": "https://www.moj.go.jp/content/001444169.pdf"
+     },
+     {
+      "subject": "一般教養科目",
+      "number": 42,
+      "treatment_kind": "none",
+      "content": "本文23行目の「were」は「wire」の誤記（令和7年8月7日 司法試験委員会公表。8月6日の短答式試験及落判定会議の議題(1)でも決定）",
+      "treatment": "措置なし（当初予定の選択肢を正解とする通常の取扱い）",
+      "source_url": "https://www.moj.go.jp/content/001444169.pdf"
+     }
+    ]
+   },
+   "2026": {
+    "status": "checked",
+    "checked_at": "2026-10-19",
+    "checked_by": "Claude Code（サブエージェントが法務省のページを確認し、主要な告知・正答 PDF を再取得して突き合わせた）",
+    "result": "確認済み・法律科目の該当なし",
+    "sources": [
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00315.html",
+      "title": "令和８年司法試験予備試験の結果について",
+      "what": "年度の結果ページ（訂正・誤記の告知の掲載場所）"
+     },
+     {
+      "url": "https://www.moj.go.jp/jinji/shihoushiken/jinji07_00319.html",
+      "title": "令和８年司法試験予備試験短答式試験結果",
+      "what": "短答式試験結果のページ（本文の告知も確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001467794.pdf",
+      "title": "憲法・行政法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001467795.pdf",
+      "title": "民法・商法・民事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001467796.pdf",
+      "title": "刑法・刑事訴訟法の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001467797.pdf",
+      "title": "一般教養科目の正解及び配点",
+      "what": "正解PDF（備考欄に特別な取扱いがないかを確認）"
+     },
+     {
+      "url": "https://www.moj.go.jp/shingi1/shingi01800001_00037.html",
+      "title": "令和８年司法試験予備試験考査委員会議（短答式試験及落判定会議）（令和８年８月５日）",
+      "what": "司法試験予備試験考査委員会議（短答式試験及落判定会議）のページ"
+     },
+     {
+      "url": "https://www.moj.go.jp/content/001468890.pdf",
+      "title": "同 議事要旨PDF",
+      "what": "議事要旨（全文を確認）"
+     }
+    ],
+    "findings": []
+   }
+  }
+ }
+}

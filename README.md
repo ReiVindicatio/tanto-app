@@ -22,6 +22,7 @@ python3 pipeline/export.py                                         # 段階7：�
 ## テスト（T001）
 
 ```
+python3 -m unittest discover -s pipeline/tests                    # パイプラインの単体テスト
 python3 pipeline/regen.py && git diff --exit-code --stat data/ app/public/data/ reports/   # パイプラインの回帰（作り直して差分なし）
 cd app && npm test                         # 単体テスト（Vitest）
 cd app && npm run build && npm run e2e     # E2E（Playwright。初回は npx playwright install chromium）

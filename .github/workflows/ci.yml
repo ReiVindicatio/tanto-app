@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.9" # 手元と同じ版（Unicode の正規化の結果をそろえる）
+      - run: python -m unittest discover -s pipeline/tests
       - run: python pipeline/regen.py
       - run: git diff --exit-code --stat data/ app/public/data/ reports/
 

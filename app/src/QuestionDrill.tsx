@@ -115,6 +115,9 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
             {result.earned} / {q.points} 点
           </div>
           {q.scoring.raw_note && <div className="muted small">正答表の備考：{q.scoring.raw_note}</div>}
+          {(q.status?.all_correct || q.status?.voided) && (
+            <div className="small law-note">この問は、法務省の採点上の取扱いにより全員正答として扱われました。</div>
+          )}
           <LawNote q={q} />
           <button onClick={next}>次へ</button>
         </div>

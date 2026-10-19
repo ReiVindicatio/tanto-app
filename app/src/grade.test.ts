@@ -40,3 +40,10 @@ describe("grade", () => {
     expect(grade(q, [2, 3])).toMatchObject({ full: true, earned: 2 });
   });
 });
+
+describe("採点上の取扱い（T006）", () => {
+  it("全員正答として扱われた問は、何を選んでも満点", () => {
+    const q = question({ status: { voided: false, all_correct: true, errata: [] } });
+    expect(grade(q, [1])).toMatchObject({ full: true, earned: 2 });
+  });
+});
