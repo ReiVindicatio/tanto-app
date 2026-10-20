@@ -1,0 +1,211 @@
+{
+ "question_id": "yobi-2026-shoho-q30",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q30-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。文字と数字で金額に差異があるときは、最小の金額ではなく文字で記載した金額が手形金額となる。",
+   "body": "手形法は「為替手形ノ金額ヲ文字及数字ヲ以テ記載シタル場合ニ於テ其ノ金額ニ差異アルトキハ文字ヲ以テ記載シタル金額ヲ手形金額トス」と定め（6条1項）、この規定は「支払金額ニ関スル記載ノ差異（第六条）」として約束手形に準用される（77条2項）。最小金額を手形金額とするのは、文字又は数字で「重複シテ記載シタル場合」の規律である（6条2項）。文字と数字で異なる場合に最小の金額によるとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "為替手形ノ金額ヲ文字及数字ヲ以テ記載シタル場合ニ於テ其ノ金額ニ差異アルトキハ文字ヲ以テ記載シタル金額ヲ手形金額トス",
+     "text_sha256": "f290dc114aba15b3ebce435f5353dd57593eb464bc440d5985b980d900aec391",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "6",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "為替手形ノ金額ヲ文字ヲ以テ又ハ数字ヲ以テ重複シテ記載シタル場合ニ於テ其ノ金額ニ差異アルトキハ最小金額ヲ手形金額トス",
+     "text_sha256": "f290dc114aba15b3ebce435f5353dd57593eb464bc440d5985b980d900aec391",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "支払金額ニ関スル記載ノ差異（第六条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q30-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q30-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。変造前に署名した振出人は、原文言（変造前の手形金額）に従って責任を負う。",
+   "body": "「為替手形ノ文言ノ変造ノ場合ニ於テハ其ノ変造後ノ署名者ハ変造シタル文言ニ従ヒテ責任ヲ負ヒ変造前ノ署名者ハ原文言ニ従ヒテ責任ヲ負フ」（69条）。この規定は「変造（第六十九条）」として約束手形に準用される（77条1項7号）。振出し後に手形金額が変造された場合、振出人は変造前の署名者にあたるから、変造前の手形金額に従って手形上の債務を負う。本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "69",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "為替手形ノ文言ノ変造ノ場合ニ於テハ其ノ変造後ノ署名者ハ変造シタル文言ニ従ヒテ責任ヲ負ヒ変造前ノ署名者ハ原文言ニ従ヒテ責任ヲ負フ",
+     "text_sha256": "7aad3a3f56b5c0af86619967512d3548d41eca5e410b071007d5a7a7461c6520",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "七　変造（第六十九条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q30-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q30-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。小切手は持参人払式で振り出すことができる。",
+   "body": "「小切手ハ左ノ何レカトシテ之ヲ振出スコトヲ得」として、その一つに「持参人払式」が掲げられている（小切手法5条1項3号）。さらに「受取人ノ記載ナキ小切手ハ之ヲ持参人払式小切手ト看做ス」とされている（5条3項）。持参人払式で振り出すことができないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "小切手ハ左ノ何レカトシテ之ヲ振出スコトヲ得",
+     "text_sha256": "684b16d0d68ac6ef1984da3d8e9295ef7923b15674ed39222ab6c824d81d58a0",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "三　持参人払式",
+     "text_sha256": "684b16d0d68ac6ef1984da3d8e9295ef7923b15674ed39222ab6c824d81d58a0",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "5",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "受取人ノ記載ナキ小切手ハ之ヲ持参人払式小切手ト看做ス",
+     "text_sha256": "684b16d0d68ac6ef1984da3d8e9295ef7923b15674ed39222ab6c824d81d58a0",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q30-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q30-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。小切手は銀行に宛てて振り出すべきものとされ、「銀行」には法令により銀行と同視される人又は施設を含む。",
+   "body": "小切手法は、小切手は「振出人ノ処分シ得ル資金アル銀行ニ宛テ」振り出すべきものと定める（3条本文）。そして、同法でいう「銀行」は「法令ニ依リテ銀行ト同視セラルル人又ハ施設ヲ含ム」（59条）。したがって、小切手の支払人は銀行又は銀行と同視される人若しくは施設でなければならず、本肢は正しい。なお、3条ただし書により、この規定に従わない場合でも「証券ノ小切手タル効力ヲ妨ゲズ」とされており、支払人の資格は小切手の有効要件ではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "小切手ハ其ノ呈示ノ時ニ於テ振出人ノ処分シ得ル資金アル銀行ニ宛テ且振出人ヲシテ資金ヲ小切手ニ依リ処分スルコトヲ得シムル明示又ハ黙示ノ契約ニ従ヒ之ヲ振出スベキモノトス但シ此ノ規定ニ従ハザルトキト雖モ証券ノ小切手タル効力ヲ妨ゲズ",
+     "text_sha256": "86f1c23d895f30248f160d10978442fbde5c558e3221fcf6d0518178187ebda7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "59",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "本法ニ於テ「銀行」ナル文字ハ法令ニ依リテ銀行ト同視セラルル人又ハ施設ヲ含ム",
+     "text_sha256": "8623ee9e9a856c645965c8903db370968bb188d82c2474d65f13a979230161c6",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q30-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

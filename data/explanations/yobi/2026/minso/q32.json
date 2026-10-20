@@ -1,0 +1,310 @@
+{
+ "question_id": "yobi-2026-minso-q32",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q32-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。建物共有者に対する建物収去土地明渡請求は通常共同訴訟と解されるので、Ｙ１の死亡による中断はＹ２には及ばない。",
+   "body": "建物の共有者に対する建物収去土地明渡請求は、各共有者が建物全体について収去・明渡しの義務を負い、各別に請求できるから、固有必要的共同訴訟ではなく通常共同訴訟と解されている（判例あり（要確認））。通常共同訴訟では「共同訴訟人の一人について生じた事項は、他の共同訴訟人に影響を及ぼさない」（39条）。したがって、訴訟代理人のないＹ１の死亡により、Ｙ１についての訴訟手続は中断するが（124条1項1号・2項）、Ｙ２についての訴訟手続は中断しない。中断が全員に及ぶのは、合一確定が必要な必要的共同訴訟の場合である（40条3項）。よって「いずれについても中断する」とする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共同訴訟人の一人について生じた事項は、他の共同訴訟人に影響を及ぼさない。",
+     "text_sha256": "ccf55fe5cf58e00bab9c99d303d2932ec7030afe5d3235552e147aee82265722",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の死亡　相続人、相続財産の管理人、相続財産の清算人その他法令により訴訟を続行すべき者",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、訴訟代理人がある間は、適用しない。",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "40",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "共同訴訟人の一人について訴訟手続の中断又は中止の原因があるときは、その中断又は中止は、全員についてその効力を生ずる。",
+     "text_sha256": "e30ac9c758c214d9d263d1c4c536115f7a710d36c1819a14c024a0dfb969c560",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "建物共有者（共同相続人）に対する建物収去土地明渡請求を固有必要的共同訴訟でないとした最高裁判例（昭和43年）があると思われるが、courts.go.jp で判決を確認できなかったため cases に入れていない。"
+   ],
+   "id": "exp-yobi-2026-minso-q32-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q32-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。通常共同訴訟ではＹ１の時効の主張はＹ２のための主張とはならず（主張共通の否定）、Ｙ２の援用がない以上、時効消滅を理由にＹ２への請求を棄却できない。",
+   "body": "主債務者と連帯保証人を共同被告とする訴訟は通常共同訴訟であり、「共同訴訟人の一人の訴訟行為」は他の共同訴訟人に影響を及ぼさない（39条）。判例は、共同訴訟人間に共通の利害関係があっても、補助参加の申出がない限り、一人の主張が当然に他の共同訴訟人のための主張となるものではないとしている（判例あり（要確認））。また、時効は保証人を含む当事者が「援用しなければ、裁判所がこれによって裁判をすることができない」（民法145条）。Ｙ２は何らの防御方法も提出しておらず時効を援用していないから、Ｙ１の主張を根拠にＹ２に対する請求を棄却することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共同訴訟人の一人の訴訟行為、共同訴訟人の一人に対する相手方の訴訟行為及び共同訴訟人の一人について生じた事項は、他の共同訴訟人に影響を及ぼさない。",
+     "text_sha256": "ccf55fe5cf58e00bab9c99d303d2932ec7030afe5d3235552e147aee82265722",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "145",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効は、当事者（消滅時効にあっては、保証人、物上保証人、第三取得者その他権利の消滅について正当な利益を有する者を含む。）が援用しなければ、裁判所がこれによって裁判をすることができない。",
+     "text_sha256": "e5fa226ad26d710e216e9e61b648d93464274a60e523576250a29d3094a91a4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "共同訴訟人間の主張共通を否定した最高裁判例（昭和43年）があると思われるが、courts.go.jp で判決を確認できなかったため cases に入れていない。"
+   ],
+   "id": "exp-yobi-2026-minso-q32-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q32-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。同時審判申出共同訴訟も通常共同訴訟であり、Ｙ１の控訴によってＹ２についての判決の確定は遮断されない。",
+   "body": "工作物の設置の瑕疵による責任は、まず占有者が負い、占有者が必要な注意をしたときは所有者が負う（民法717条1項）ので、Ｙ１（所有者）とＹ２（占有者）に対する各権利は「法律上併存し得ない関係」にあり、同時審判の申出ができる（41条1項）。もっとも、41条が定めるのは「弁論及び裁判は、分離しないでしなければならない」ことだけで、同時審判申出共同訴訟は通常共同訴訟であり、39条の共同訴訟人独立の原則が適用されると解されている。控訴による判決の確定の遮断（116条2項）は控訴をした者についてだけ生じ、Ｙ１の控訴はＹ２に影響を及ぼさない。Ｙ２について控訴期間が経過すればＹ２に対する判決は確定する。各共同被告の控訴事件が同一の控訴裁判所に各別に係属すれば併合されるが（41条3項）、それはＹ２も控訴した場合の話である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "717",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その工作物の占有者は、被害者に対してその損害を賠償する責任を負う。ただし、占有者が損害の発生を防止するのに必要な注意をしたときは、所有者がその損害を賠償しなければならない。",
+     "text_sha256": "c34fa1e3f7a63bf70a313d0db25ca9ee803ea4044076fd358ffe4efd0d753bfe",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "41",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共同被告の一方に対する訴訟の目的である権利と共同被告の他方に対する訴訟の目的である権利とが法律上併存し得ない関係にある場合において、原告の申出があったときは、弁論及び裁判は、分離しないでしなければならない。",
+     "text_sha256": "ff22f23ac6b53066840c29a2924b312d95b122c6aa85acf323652c457ecca86a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "41",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "各共同被告に係る控訴事件が同一の控訴裁判所に各別に係属するときは、弁論及び裁判は、併合してしなければならない。",
+     "text_sha256": "ff22f23ac6b53066840c29a2924b312d95b122c6aa85acf323652c457ecca86a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共同訴訟人の一人の訴訟行為、共同訴訟人の一人に対する相手方の訴訟行為及び共同訴訟人の一人について生じた事項は、他の共同訴訟人に影響を及ぼさない。",
+     "text_sha256": "ccf55fe5cf58e00bab9c99d303d2932ec7030afe5d3235552e147aee82265722",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "116",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "判決の確定は、前項の期間内にした控訴の提起、同項の上告の提起又は同項の申立てにより、遮断される。",
+     "text_sha256": "2f4805e20cbe72aa5a66d2d569fcdf1844516479e5e09798a5c07bf467d93a6c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "同時審判申出共同訴訟を通常共同訴訟とし39条が適用されるとする点は解釈による（41条3項が各別の控訴を前提にしていることも根拠とされる）。"
+   ],
+   "id": "exp-yobi-2026-minso-q32-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q32-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。通常共同訴訟でも証拠共通の原則が働き、Ｙ１の提出した証拠をＹ２に有利な事実の認定に用いるのに、Ｙ２の証拠申出（援用）は要らないとするのが判例である。",
+   "body": "39条は共同訴訟人の訴訟行為の独立を定めるが、裁判所は「口頭弁論の全趣旨及び証拠調べの結果をしん酌して、自由な心証により」事実を認定する（247条）。同一の手続で取り調べた証拠から、共同訴訟人ごとに異なる事実を認定するのは不自然であるため、共同訴訟人の一人が提出した証拠は、他の共同訴訟人が援用しなくても、その者のための事実認定の資料にできると解されている（証拠共通の原則。判例あり（要確認））。したがって、Ｙ１の提出した証拠によりＹ２に有利な事実を認定するのに、Ｙ２からの証拠申出は必要でなく、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共同訴訟人の一人の訴訟行為、共同訴訟人の一人に対する相手方の訴訟行為及び共同訴訟人の一人について生じた事項は、他の共同訴訟人に影響を及ぼさない。",
+     "text_sha256": "ccf55fe5cf58e00bab9c99d303d2932ec7030afe5d3235552e147aee82265722",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "247",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、判決をするに当たり、口頭弁論の全趣旨及び証拠調べの結果をしん酌して、自由な心証により、事実についての主張を真実と認めるべきか否かを判断する。",
+     "text_sha256": "68945b851f13280cf28281954839d6509cbf9b3b52df68a0c6657b2a890ce6c9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "共同訴訟人間の証拠共通を認めた最高裁判例（昭和45年）があると思われるが、courts.go.jp で判決を確認できなかったため cases に入れていない。"
+   ],
+   "id": "exp-yobi-2026-minso-q32-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q32-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。共有者全員による共有権確認の訴えは固有必要的共同訴訟であり、共同原告の一部がした訴えの取下げは、相手方が同意しても効力を生じないとするのが判例である。",
+   "body": "判例は、一個の物を共有する数名の者全員が共同原告となって共有権（数人が共同して有する一個の所有権）の確認を求める訴えは、固有必要的共同訴訟であるとする。固有必要的共同訴訟では「その一人の訴訟行為は、全員の利益においてのみその効力を生ずる」（40条1項）。共同原告の一部の取下げを認めると、残りの者だけでは当事者適格を欠く結果となり、全員の利益にならないから、判例は、訴訟の係属中に共同原告の一人がした訴えの取下げは効力を生じないとしている。相手方の同意（261条2項）があっても結論は変わらない。したがって、Ｘ３が取り下げていない以上、Ｘ１及びＸ２の取下げは効力を生じず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "40",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の目的が共同訴訟人の全員について合一にのみ確定すべき場合には、その一人の訴訟行為は、全員の利益においてのみその効力を生ずる。",
+     "text_sha256": "e30ac9c758c214d9d263d1c4c536115f7a710d36c1819a14c024a0dfb969c560",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "261",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "訴えの取下げは、相手方が本案について準備書面を提出し、弁論準備手続において申述をし、又は口頭弁論をした後にあっては、相手方の同意を得なければ、その効力を生じない。",
+     "text_sha256": "fc4d05f19d3ea83f0aa54ffe746161170d1803be7f427b32c03008b4b9e6f247",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "共有権確認訴訟と固有必要的共同訴訟（土地所有権確認等請求）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1971-10-07",
+     "holding": "一個の物を共有する数名の者全員が共同原告となり共有権の確認を求める訴訟、共有権に基づき所有権移転登記手続を求める訴訟は固有必要的共同訴訟であり、その係属中に共同原告の一人がした訴えの取下げ（相手方が同意したもの）は効力を生じない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51900/detail2/index.html",
+      "https://www.courts.go.jp/assets/hanrei/hanrei-pdf-51900.pdf"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2026-minso-q32-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

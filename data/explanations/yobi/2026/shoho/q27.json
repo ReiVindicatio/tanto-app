@@ -1,0 +1,247 @@
+{
+ "question_id": "yobi-2026-shoho-q27",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-19",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q27-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。店舗で物品を販売することを業とする者は、商行為を業としない者であっても商人とみなされ、農業者も除外されていない。",
+   "body": "「店舗その他これに類似する設備によって物品を販売することを業とする者又は鉱業を営む者は、商行為を行うことを業としない者であっても、これを商人とみなす」（商法4条2項）。自ら生産した農作物の販売は、利益を得て譲渡する意思をもってする有償取得（商法501条1号）に当たらず商行為とはならないと解されているが、店舗で販売することを業としていれば、この規定により商人とみなされる。同項は農業を営む者を除外していない。したがって、商人とはみなされないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "4",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "店舗その他これに類似する設備によって物品を販売することを業とする者又は鉱業を営む者は、商行為を行うことを業としない者であっても、これを商人とみなす。",
+     "text_sha256": "bad7e0bec22470af574ad7401a09758c7f21ee3f5b32b167aa2663893c9b7ab1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "501",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "利益を得て譲渡する意思をもってする動産、不動産若しくは有価証券の有償取得又はその取得したものの譲渡を目的とする行為",
+     "text_sha256": "12ffd546ed879d374c29703280b4cedbe4fcf6981f9dd5445cf07783363d15ff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "自ら生産した物の販売が501条1号の商行為に当たらないとの点は解釈による"
+   ],
+   "id": "exp-yobi-2026-shoho-q27-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q27-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、特定の営業を開始する目的で準備行為をしたときは、商人が営業のためにする行為をしたものと解しており、営業開始前の行為でも附属的商行為となりうる。",
+   "body": "「商人がその営業のためにする行為は、商行為とする」（商法503条1項）。最高裁昭和33年6月19日判決は、営業の準備行為が附属的商行為となるかについて、特定の営業を開始する目的で準備行為をしたときは、商人が営業のためにする行為をしたものと解すべきであるとした。したがって、自然人が業として商行為を行うことを開始する前の行為であっても、開業準備行為として商行為となることがあり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "503",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "商人がその営業のためにする行為は、商行為とする。",
+     "text_sha256": "215f02a7a93cfdc1daa79a29a19057f84046dc4299523f8c63112909858f3e53",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "損害賠償請求事件（営業の準備行為と附属的商行為）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1958-06-19",
+     "holding": "特定の営業を開始する目的で準備行為をしたときは、商人が営業のためにする行為をしたものと解すべきであり、営業の準備行為は附属的商行為となりうる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52877/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "準備行為が相手方その他の者に客観的に開業準備行為と認められうることを要するとした後の判例（最高裁昭和47年2月24日判決とされるもの）は、裁判所ウェブサイトで確認できなかったため載せていない（判例あり（要確認））"
+   ],
+   "id": "exp-yobi-2026-shoho-q27-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q27-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。小商人に当たるかどうかは営業のために使用する財産の価額で決まり、登記は要件ではない。",
+   "body": "商法7条は、一部の規定を「小商人（商人のうち、法務省令で定めるその営業のために使用する財産の価額が法務省令で定める金額を超えないものをいう。）については、適用しない」と定める。小商人に当たるかどうかは、営業のために使用する財産の価額という客観的な基準で定まり、登記をすることは要件とされていない。したがって、商法の規定の一部の適用を免れるために登記が必要であるとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "小商人（商人のうち、法務省令で定めるその営業のために使用する財産の価額が法務省令で定める金額を超えないものをいう。）については、適用しない。",
+     "text_sha256": "6ccc4aaf473ebe394a42c58a0e720fa9f6d98a7e4cf268c8d0e6364ac1aa8d1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "法務省令（商法施行規則）の金額は LAWS にないため引用していない"
+   ],
+   "id": "exp-yobi-2026-shoho-q27-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q27-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。絶対的商行為は、行為者が商人でなくても商行為となるので、商人でない自然人の間の行為が商行為となることはある。",
+   "body": "商法501条は「次に掲げる行為は、商行為とする」と定め、例えば「利益を得て譲渡する意思をもってする動産、不動産若しくは有価証券の有償取得又はその取得したものの譲渡を目的とする行為」（同条1号）や「手形その他の商業証券に関する行為」（同条4号）を掲げる。これらの絶対的商行為は、営業としてするかどうかや行為者が商人かどうかを問わず商行為となると解されている。したがって、いずれも商人でない自然人の間で行われた行為であっても商行為となることがあり、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "501",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる行為は、商行為とする。",
+     "text_sha256": "12ffd546ed879d374c29703280b4cedbe4fcf6981f9dd5445cf07783363d15ff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "501",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "利益を得て譲渡する意思をもってする動産、不動産若しくは有価証券の有償取得又はその取得したものの譲渡を目的とする行為",
+     "text_sha256": "12ffd546ed879d374c29703280b4cedbe4fcf6981f9dd5445cf07783363d15ff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "501",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "手形その他の商業証券に関する行為",
+     "text_sha256": "12ffd546ed879d374c29703280b4cedbe4fcf6981f9dd5445cf07783363d15ff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-shoho-q27-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-shoho-q27-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、会社の行為は商行為と推定され、代表者の情宜に基づく貸付けとみる余地があっても、それだけでは会社の事業と無関係であるとはいえないとする。",
+   "body": "「会社（外国会社を含む。次条第一項、第八条及び第九条において同じ。）がその事業としてする行為及びその事業のためにする行為は、商行為とする」（会社法5条）とされ、「商人の行為は、その営業のためにするものと推定する」（商法503条2項）。最高裁平成20年2月22日判決は、会社の行為は商行為と推定され、これを争う者が当該行為が会社の事業と無関係であることの主張立証責任を負うとし、会社の貸付けが代表者の情宜に基づいてされたものとみる余地があっても、それだけでは事業と無関係であることの立証がされたとはいえないとした。したがって、株式会社が代表取締役の友人に金銭を貸し付ける行為も、会社の事業のためにするものと推定され、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社（外国会社を含む。次条第一項、第八条及び第九条において同じ。）がその事業としてする行為及びその事業のためにする行為は、商行為とする。",
+     "text_sha256": "cbf359b0d57f795b96399d1557ef535f3d8136c3dcb794ed6a2e3ea80b89dee4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "503",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "商人の行為は、その営業のためにするものと推定する。",
+     "text_sha256": "215f02a7a93cfdc1daa79a29a19057f84046dc4299523f8c63112909858f3e53",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "所有権移転登記抹消登記手続等請求本訴，貸金請求反訴，所有権移転登記抹消登記手続請求事件",
+     "court": "最高裁判所第二小法廷",
+     "date": "2008-02-22",
+     "holding": "会社の行為は商行為と推定され、これを争う者が当該行為が会社の事業と無関係であることの主張立証責任を負う。会社の貸付けが代表者の情宜に基づくものとみる余地があっても、それだけでは事業と無関係との立証にはならず、その貸付債権は商行為によって生じた債権に当たる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/35796/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例の事案の貸付けの相手方が代表取締役の友人であったかは確認していない。肢は判例の趣旨を問うものとして説明した"
+   ],
+   "id": "exp-yobi-2026-shoho-q27-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
