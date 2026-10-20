@@ -71,8 +71,20 @@ def update_now() -> str:
             f"手順は `prompts/explain-runbook.md`\n")
     s = NOW.read_text(encoding="utf-8")
     s = re.sub(r"- \*\*解説の生成（T039）：.*\n", line, s)
+    s = re.sub(r"  - 🔴 公式の○×と食い違った解説.*\n", "", s)
+    if mm := mismatches():  # 禁止事項2：食い違いは公開から外し、NOW.md に残す
+        s = s.replace(line, line + f"  - 🔴 公式の○×と食い違った解説（公開から外した。法改正かパースの誤りの信号）：{'、'.join(mm)}\n")
     NOW.write_text(s, encoding="utf-8")
     return line.strip()
+
+
+def mismatches() -> list[str]:
+    out = []
+    for p in sorted((ROOT / "data" / "explanations").rglob("*.json")):
+        for e in json.loads(p.read_text(encoding="utf-8")).get("explanations", []):
+            if any("食い違う" in f for f in e.get("check", {}).get("failures", [])):
+                out.append(e["target"]["id"])
+    return out
 
 
 WINDOW = ROOT / ".claude" / "explain_window.json"  # 利用上限の5時間枠の目安（git には入れない）

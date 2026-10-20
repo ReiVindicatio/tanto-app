@@ -1,0 +1,221 @@
+{
+ "question_id": "yobi-2021-keiho-q01",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiho-q01-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：「急迫」とは法益侵害の危険が間近に押し迫っていることをいい、侵害が現に存在していることまでは要しない。",
+   "body": "決め手は「法益の侵害が現に存在していることを要する」とする部分である。36条1項は「急迫不正の侵害に対して」した防衛行為を罰しないと定める。最高裁昭和24年8月18日判決は、36条にいう「急迫」とは法益の侵害される危険が間近に押し迫ったことをいい、その侵害が現に存在していることまでは要しないとした。したがって、侵害が現に存在している場合だけでなく、侵害が間近に押し迫っている場合にも急迫性は認められるから、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "急迫不正の侵害に対して、自己又は他人の権利を防衛するため、やむを得ずにした行為は、罰しない。",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "傷害被告事件",
+     "court": "最高裁判所第一小法廷",
+     "date": "1949-08-18",
+     "holding": "刑法36条の「急迫」とは、法益の侵害される危険が間近に押し迫ったことをいい、被害が現に存在していることを要しないとした（刑集3巻9号1465頁）。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55481/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2021-keiho-q01-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiho-q01-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：「やむを得ずにした行為」とは、反撃行為が権利を防衛する手段として必要最小限度のもの、すなわち防衛手段として相当性を有するものであることをいうと解されている。",
+   "body": "36条1項は「自己又は他人の権利を防衛するため、やむを得ずにした行為」を罰しないと定める。ここでいう「やむを得ずにした行為」とは、反撃行為が急迫不正の侵害に対する防衛手段として必要最小限度のもの、すなわち防衛手段として相当性を有するものであることをいうと解されており、判例も同旨を述べている（判例あり（要確認））。相当性を欠く反撃行為は正当防衛とならず、同条2項の「防衛の程度を超えた行為」（過剰防衛）として刑の任意的減免の対象となるにとどまる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己又は他人の権利を防衛するため、やむを得ずにした行為",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "防衛の程度を超えた行為は、情状により、その刑を減軽し、又は免除することができる。",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「やむを得ずにした行為」の意義に関する最高裁判決（昭和44年頃とされるもの）は、裁判所の裁判例検索とWeb検索で2回探したが判決ページで確認できなかった（判例あり（要確認））。解釈による。"
+   ],
+   "id": "exp-yobi-2021-keiho-q01-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiho-q01-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：急迫不正の侵害が客観的に存在しない以上、正当防衛は成立しない（誤想防衛として故意の阻却が問題となるにとどまる）。",
+   "body": "決め手は、急迫不正の侵害がないのに誤信した場合でも「正当防衛が成立し得る」とする部分である。36条1項は「急迫不正の侵害に対して」した行為を罰しないとしており、正当防衛の成立には急迫不正の侵害が客観的に存在することが必要と解されている。侵害がないのにあると誤信して反撃した場合は、いわゆる誤想防衛であり、違法性は阻却されず正当防衛は成立しない。もっとも、正当防衛に当たる事実を誤信していた以上、38条1項の「罪を犯す意思がない行為は、罰しない。」との関係で故意が阻却されると解されており、過失犯の成否が問題となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "急迫不正の侵害に対して、自己又は他人の権利を防衛するため、やむを得ずにした行為は、罰しない。",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "38",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "罪を犯す意思がない行為は、罰しない。",
+     "text_sha256": "d5cc162963f0d1038efe34868f6bc7f1ca4f6b5888032218d23d667074c890fa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "誤想防衛で正当防衛が成立せず故意が阻却されるとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2021-keiho-q01-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiho-q01-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例は、国家的・公共的法益のための正当防衛も、極めて緊迫した場合には例外的に許容されるとしている。",
+   "body": "決め手は、36条1項の「権利」が個人的法益に限られ、国家的・社会的法益は「含まれない」とする部分である。最高裁昭和24年8月18日判決は、公共の福祉を重んずる憲法の理念から、国家的・公共的法益についても正当防衛が許される場合があるとした。ただし、それは国家公共の機関の有効な公的活動を期待し得ない極めて緊迫した場合においてのみ例外的に許容されるとしている。したがって、国家的・社会的法益が一切含まれないとする本肢は判例の立場と異なり、誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己又は他人の権利を防衛するため",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "傷害被告事件",
+     "court": "最高裁判所第一小法廷",
+     "date": "1949-08-18",
+     "holding": "国家的・公共的法益についても正当防衛が許される場合があるが、国家公共の機関の有効な公的活動を期待し得ない極めて緊迫した場合においてのみ例外的に許容されるとした（刑集3巻9号1465頁）。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55481/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2021-keiho-q01-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiho-q01-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：36条1項の「不正」とは違法であることをいい、侵害行為が可罰的であることまでは要しないと解されている。",
+   "body": "36条1項は「急迫不正の侵害」に対する防衛行為を罰しないとする。ここでいう「不正」とは、侵害が違法であることをいい、構成要件に該当し有責で可罰的な行為であることまでは要しないと解されている。そのため、例えば責任無能力者による侵害や、刑罰法規に触れない違法な侵害に対しても正当防衛は成立し得る。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "急迫不正の侵害に対して",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「不正」の意義は解釈による。"
+   ],
+   "id": "exp-yobi-2021-keiho-q01-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

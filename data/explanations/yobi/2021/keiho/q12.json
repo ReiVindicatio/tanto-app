@@ -1,0 +1,213 @@
+{
+ "question_id": "yobi-2021-keiho-q12",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiho-q12-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：事前収賄罪は、請託を受けて賄賂の「約束」をすれば足り、公務員となった以上、賄賂を収受しなくても成立する。",
+   "body": "197条2項は「公務員になろうとする者が、その担当すべき職務に関し、請託を受けて、賄賂を収受し、又はその要求若しくは約束をしたときは、公務員となった場合において」処罰すると定める。実行行為は収受・要求・約束のいずれでもよく、賄賂の収受は必要でない。また、「公務員となった場合において」とあるとおり、公務員となったことが処罰の条件とされている。本肢では、請託を受けて賄賂の収受を約束し、その後に公務員となっているから、結局賄賂を収受しなかったとしても事前収賄罪が成立する。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "197",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "公務員になろうとする者が、その担当すべき職務に関し、請託を受けて、賄賂を収受し、又はその要求若しくは約束をしたときは、公務員となった場合において、五年以下の拘禁刑に処する。",
+     "text_sha256": "0fa389616943d73a25e94e1d4b01fc5113d6e537ba9261e7b85c22fac914ec08",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「公務員となった場合において」を処罰条件と解する点は解釈による。"
+   ],
+   "id": "exp-yobi-2021-keiho-q12-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiho-q12-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：第三者供賄罪は、請託を受けて第三者に賄賂を供与させれば成立し、職務上不正な行為をしたことなどは要件ではない。",
+   "body": "決め手は、職務上不正な行為をし、又は相当の行為をしなかったときに「限り」成立するとする部分である。197条の2は「公務員が、その職務に関し、請託を受けて、第三者に賄賂を供与させ、又はその供与の要求若しくは約束をしたときは、五年以下の拘禁刑に処する。」と定めており、不正な行為をしたことを要件としていない。不正な行為をし、又は相当の行為をしなかったことは、197条の3第1項の加重収賄罪（「公務員が前二条の罪を犯し、よって不正な行為をし、又は相当の行為をしなかったときは、一年以上の有期拘禁刑に処する。」）で刑を加重する事情である。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "197_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公務員が、その職務に関し、請託を受けて、第三者に賄賂を供与させ、又はその供与の要求若しくは約束をしたときは、五年以下の拘禁刑に処する。",
+     "text_sha256": "19a79ed6a8f9ce9ba4feacd038dba6e49f8898b81b41b0a1c3a111d366cd9652",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "197_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公務員が前二条の罪を犯し、よって不正な行為をし、又は相当の行為をしなかったときは、一年以上の有期拘禁刑に処する。",
+     "text_sha256": "ba5aa7ce0e2181be2de56378e8f74bb870e0b6f93c31487185f7f9fe0019c44a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題時（2021年）の法定刑は「懲役」であり、現行の「拘禁刑」は刑法改正による。本肢の正誤には影響しない。"
+   ],
+   "id": "exp-yobi-2021-keiho-q12-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiho-q12-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：単純収賄罪は「その職務に関し」賄賂を収受すれば成立し、その職務が正当・適切なものであっても成立する。",
+   "body": "197条1項前段は「公務員が、その職務に関し、賄賂を収受し、又はその要求若しくは約束をしたときは、五年以下の拘禁刑に処する。」と定め、職務が不正なものであることを要件としていない。収賄罪は、職務の公正とそれに対する社会の信頼を保護するものと解されており、適切な職務であっても、その対価として賄賂を収受すれば職務の公正に対する信頼が害される。職務上不正な行為をしたことは、197条の3の加重収賄罪などで刑を重くする事情にとどまる。したがって、職務が適切なものであっても単純収賄罪が成立し、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "197",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公務員が、その職務に関し、賄賂を収受し、又はその要求若しくは約束をしたときは、五年以下の拘禁刑に処する。",
+     "text_sha256": "0fa389616943d73a25e94e1d4b01fc5113d6e537ba9261e7b85c22fac914ec08",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "197_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公務員が前二条の罪を犯し、よって不正な行為をし、又は相当の行為をしなかったときは、一年以上の有期拘禁刑に処する。",
+     "text_sha256": "ba5aa7ce0e2181be2de56378e8f74bb870e0b6f93c31487185f7f9fe0019c44a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "収賄罪の保護法益を職務の公正とこれに対する社会の信頼とみる点は解釈による。"
+   ],
+   "id": "exp-yobi-2021-keiho-q12-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiho-q12-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：在職中に請託を受けて職務上不正な行為をしたことに関し、退職後に賄賂を収受すれば、まさに事後収賄罪（197条の3第3項）が成立する。",
+   "body": "決め手は、事後収賄罪は「成立しない」とする部分である。197条の3第3項は「公務員であった者が、その在職中に請託を受けて職務上不正な行為をしたこと又は相当の行為をしなかったことに関し、賄賂を収受し、又はその要求若しくは約束をしたときは、五年以下の拘禁刑に処する。」と定める。本肢の事実は、公務員であった者が、在職中に請託を受けて職務上不正な行為をしたことに関し、退職後に賄賂を収受したというものであり、同項の要件をすべて満たす。したがって、事後収賄罪が成立し、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "197_3",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "公務員であった者が、その在職中に請託を受けて職務上不正な行為をしたこと又は相当の行為をしなかったことに関し、賄賂を収受し、又はその要求若しくは約束をしたときは、五年以下の拘禁刑に処する。",
+     "text_sha256": "ba5aa7ce0e2181be2de56378e8f74bb870e0b6f93c31487185f7f9fe0019c44a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-keiho-q12-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiho-q12-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：犯人が収受した賄賂は、197条の5により必要的に没収され、任意的没収（19条）の対象ではない。",
+   "body": "決め手は「任意的没収」とする部分である。19条1項は「次に掲げる物は、没収することができる。」として裁判所の裁量による任意的没収を定めているが、賄賂については特則がある。197条の5は「犯人又は情を知った第三者が収受した賄賂は、没収する。その全部又は一部を没収することができないときは、その価額を追徴する。」と定めており、「没収する」との文言から、必ず没収しなければならない必要的没収である。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "197_5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯人又は情を知った第三者が収受した賄賂は、没収する。その全部又は一部を没収することができないときは、その価額を追徴する。",
+     "text_sha256": "dccad099586d6f7758bc2f14eefbb43de1b2ee84e5832ed80be938cf00c427e3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる物は、没収することができる。",
+     "text_sha256": "ab7a883ef1271000df093042cb0dec55ba0fca6bbec0ab7cfc6b36775264a999",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-keiho-q12-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
