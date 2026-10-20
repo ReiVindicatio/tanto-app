@@ -1,0 +1,199 @@
+{
+ "question_id": "yobi-2018-minso-q36",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q36-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。裁判長が尋問の順序を変更するには、当事者の意見を聴く必要がある（民事訴訟法202条2項）。",
+   "body": "ポイントは、証人尋問の順序の変更に当事者の意見聴取が要るかである。民事訴訟法202条1項は「証人の尋問は、その尋問の申出をした当事者、他の当事者、裁判長の順序でする。」と定め、裁判長の尋問は当事者の後とされている。そのうえで同条2項は「裁判長は、適当と認めるときは、当事者の意見を聴いて、前項の順序を変更することができる。」と定める。したがって、裁判長が当事者に先立って尋問しようとするときは、当事者の意見を聴かなければならず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "202",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証人の尋問は、その尋問の申出をした当事者、他の当事者、裁判長の順序でする。",
+     "text_sha256": "1d168e44d37833bd66fc618e6d244333ed6de406853332b25221368616ffa70c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "202",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判長は、適当と認めるときは、当事者の意見を聴いて、前項の順序を変更することができる。",
+     "text_sha256": "1d168e44d37833bd66fc618e6d244333ed6de406853332b25221368616ffa70c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-minso-q36-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q36-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。いわゆる調書判決（民事訴訟法254条1項）をするのに、当事者の意見を聴くことは要件とされていない。",
+   "body": "誤りは、当事者の意見を「聴かなければならない」とする点である。民事訴訟法254条1項は、「被告が口頭弁論において原告の主張した事実を争わず、その他何らの防御の方法をも提出しない場合」などにおいて、原告の請求を認容するときは、判決書に基づかないで言渡しをすることができると定める。同条には、この方式で判決を言い渡すにあたって当事者の意見を聴くべきことは定められていない。言渡し後は、裁判所書記官に当事者、主文、請求及び理由の要旨を調書に記録させることになる（同条2項）。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "254",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告が口頭弁論において原告の主張した事実を争わず、その他何らの防御の方法をも提出しない場合",
+     "text_sha256": "56b19be968617530472ed88349c2008e2d96f7ad4cb88e24f71d9f8780bd2b41",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題時点の民事訴訟法254条1項は「判決書の原本に基づかないで」と定めていたが、令和4年改正により現行法では「電子判決書に基づかないで」とされ、同条2項も「電子調書」への記録となっている。当事者の意見聴取を要しない点に変わりはない。"
+   ],
+   "id": "exp-yobi-2018-minso-q36-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q36-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。事件を弁論準備手続に付するには、当事者の意見を聴く必要がある（民事訴訟法168条）。",
+   "body": "ポイントは、弁論準備手続に付する際の手続である。民事訴訟法168条は「裁判所は、争点及び証拠の整理を行うため必要があると認めるときは、当事者の意見を聴いて、事件を弁論準備手続に付することができる。」と定める。このように、弁論準備手続に付するには当事者の意見を聴くことが求められている（なお、同意までは要しない）。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "168",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、争点及び証拠の整理を行うため必要があると認めるときは、当事者の意見を聴いて、事件を弁論準備手続に付することができる。",
+     "text_sha256": "b88bb2e9d2a9ad269d847331b8607ff21c2eeae8005f477e266d51ac2c88b69e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-minso-q36-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q36-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。争点等の整理の手続に専門委員を関与させる決定には、当事者の意見を聴く必要がある（民事訴訟法92条の2第1項）。",
+   "body": "ポイントは、争点整理の場面で専門委員を関与させる要件である。民事訴訟法92条の2第1項は、裁判所は、争点若しくは証拠の整理等をするに当たり必要があると認めるときは、「当事者の意見を聴いて、決定で、専門的な知見に基づく説明を聴くために専門委員を手続に関与させることができる。」と定める。弁論準備手続は争点及び証拠の整理のための手続であるから、この規定が適用され、当事者の意見を聴かなければならない。なお、和解を試みる期日に関与させる場合は、意見聴取ではなく当事者の同意が必要とされている（同条4項）。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "92_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の意見を聴いて、決定で、専門的な知見に基づく説明を聴くために専門委員を手続に関与させることができる。",
+     "text_sha256": "dc69fa13c99903be37d5e66d2d352611efce0abc33fe9a0f1090f97aec87684c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "92_2",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "当事者の同意を得て、決定で、当事者双方が立ち会うことができる和解を試みる期日において専門的な知見に基づく説明を聴くために専門委員を手続に関与させることができる。",
+     "text_sha256": "dc69fa13c99903be37d5e66d2d352611efce0abc33fe9a0f1090f97aec87684c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "項番号は取得日時点の現行法による。現行法の同条2項は電子的な方法による説明を定める規定であり、令和4年改正で加わったものと考えられるため、出題時点とは項番号が異なる可能性がある（要確認）。"
+   ],
+   "id": "exp-yobi-2018-minso-q36-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q36-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。口頭弁論の分離は裁判所の裁量で命じることができ、当事者の意見を聴くことは要件とされていない（民事訴訟法152条1項）。",
+   "body": "誤りは、当事者の意見を「聴かなければならない」とする点である。民事訴訟法152条1項は「裁判所は、口頭弁論の制限、分離若しくは併合を命じ、又はその命令を取り消すことができる。」と定めるだけで、当事者の意見を聴くことを求めていない。口頭弁論の分離・併合は、訴訟指揮として裁判所の裁量に委ねられていると解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "152",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、口頭弁論の制限、分離若しくは併合を命じ、又はその命令を取り消すことができる。",
+     "text_sha256": "74834647179093104683e38a31ecd5ab334facb65e937f26a01190810707b950",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-minso-q36-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,314 @@
+{
+ "question_id": "yobi-2018-minso-q34",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q34-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。通常共同訴訟の要件は職権調査事項ではなく、要件を欠くときも訴えを却下せず、弁論を分離して審理すれば足りると解されている。",
+   "body": "誤りは、裁判所が「職権で」要件を調査し、要件を欠けば「その訴えを却下しなければならない」とする点である。民事訴訟法38条は「訴訟の目的である権利又は義務が数人について共通であるとき、又は同一の事実上及び法律上の原因に基づくときは、その数人は、共同訴訟人として訴え、又は訴えられることができる。」と定める。この要件は、主に被告が複数の訴訟に一緒に巻き込まれる不利益から守るためのものであり、職権調査事項ではなく、被告の異議があって初めて問題となると解されている。また、要件を欠く場合でも各請求は別々の訴えとしては適法であるから、裁判所は同法152条1項により「口頭弁論の制限、分離若しくは併合を命じ」ることができ、弁論を分離して審理すれば足り、訴えを却下するのではないと解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "38",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の目的である権利又は義務が数人について共通であるとき、又は同一の事実上及び法律上の原因に基づくときは、その数人は、共同訴訟人として訴え、又は訴えられることができる。",
+     "text_sha256": "449a4259eeb0c10d37273603ae340e07c14600e7b01b07db3f0ad401200ec08a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "152",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "口頭弁論の制限、分離若しくは併合を命じ",
+     "text_sha256": "74834647179093104683e38a31ecd5ab334facb65e937f26a01190810707b950",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "通常共同訴訟の要件が職権調査事項でないこと、要件を欠くときの扱い（分離）は解釈による。"
+   ],
+   "id": "exp-yobi-2018-minso-q34-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q34-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。参加承継でも引受承継でも、被承継人が訴訟から脱退するには相手方の承諾が必要である（民事訴訟法48条、50条3項）。",
+   "body": "誤りは、引受承継では「相手方の承諾がなくとも」脱退できるとする点である。民事訴訟法48条は、参加があった場合について、参加前の原告又は被告は「相手方の承諾を得て訴訟から脱退することができる。」と定め、参加承継は同法47条1項による参加の形でされる（同法49条1項、51条）から、この規定によることになる。引受承継についても、同法50条3項が「第四十一条第一項及び第三項並びに前二条の規定は、第一項の規定により訴訟を引き受けさせる決定があった場合について準用する。」と定め、48条を準用している。したがって、いずれの場合も相手方の承諾が必要であり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "48",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方の承諾を得て訴訟から脱退することができる。",
+     "text_sha256": "2a3bb6d4f6856de973f313f0750481284e523cb7ac14edb269e74a1c55a6f570",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "47",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者としてその訴訟に参加することができる。",
+     "text_sha256": "eabfcfd2afc146ac9b32a0de3c3390a3c5eb44d5e313f0c34165494a7daadc48",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "49",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の係属中その訴訟の目的である権利の全部又は一部を譲り受けたことを主張する者が第四十七条第一項の規定により訴訟参加をしたときは",
+     "text_sha256": "49102ea9f5a061c7442cd888327a9131284276d9f8ab647b6beacbac3389a96a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "50",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第四十一条第一項及び第三項並びに前二条の規定は、第一項の規定により訴訟を引き受けさせる決定があった場合について準用する。",
+     "text_sha256": "6113e69e1ac80eedccc27eb70841d8793de4fc2b28ed93008f52a20f695fa3a5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "51",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四十七条から第四十九条までの規定は訴訟の係属中その訴訟の目的である義務の全部又は一部を承継したことを主張する第三者の訴訟参加について",
+     "text_sha256": "1cd604a40e42d668d243ed421f66e9f03f8dba6b5678a30c03578e4eb5fc2345",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-minso-q34-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q34-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。参加承継は権利承継・義務承継のいずれでも民事訴訟法47条1項の当事者参加の形でされるから、承継人は当事者の双方又は一方を相手方とする請求を定立しなければならないと解されている。",
+   "body": "ポイントは、義務承継人が被告側に参加承継する場合にも請求の定立が必要かである。民事訴訟法49条1項は権利の譲受人が「第四十七条第一項の規定により訴訟参加をしたとき」について定め、同法51条は「第四十七条から第四十九条までの規定は訴訟の係属中その訴訟の目的である義務の全部又は一部を承継したことを主張する第三者の訴訟参加について」準用するとしている。そして同法47条1項は、第三者が「その訴訟の当事者の双方又は一方を相手方として、当事者としてその訴訟に参加することができる。」と定める。当事者として参加する以上、参加人は自ら当事者の双方又は一方を相手方とする請求を定立する必要があると解されており、これは権利承継人でも義務承継人でも変わらない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "47",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その訴訟の当事者の双方又は一方を相手方として、当事者としてその訴訟に参加することができる。",
+     "text_sha256": "eabfcfd2afc146ac9b32a0de3c3390a3c5eb44d5e313f0c34165494a7daadc48",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "49",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四十七条第一項の規定により訴訟参加をしたとき",
+     "text_sha256": "49102ea9f5a061c7442cd888327a9131284276d9f8ab647b6beacbac3389a96a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "51",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四十七条から第四十九条までの規定は訴訟の係属中その訴訟の目的である義務の全部又は一部を承継したことを主張する第三者の訴訟参加について",
+     "text_sha256": "1cd604a40e42d668d243ed421f66e9f03f8dba6b5678a30c03578e4eb5fc2345",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "参加承継において請求の定立が必要とされる点は解釈による。"
+   ],
+   "id": "exp-yobi-2018-minso-q34-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q34-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。当事者及び第三者を審尋した上で決定で許否を判断するのは引受承継（民事訴訟法50条）であり、参加承継の申出にはこのような手続の定めはない。",
+   "body": "誤りは、参加承継の申出について、審尋の上「決定で，その許否について判断を示さなければならない」とする点である。審尋と決定の手続は、引受承継について民事訴訟法50条1項が「裁判所は、当事者の申立てにより、決定で、その第三者に訴訟を引き受けさせることができる。」とし、同条2項が「裁判所は、前項の決定をする場合には、当事者及び第三者を審尋しなければならない。」と定めるものである。これに対し参加承継は、同法49条1項・51条により同法47条1項の参加の形でされ、同条2項のとおり「前項の規定による参加の申出は、書面でしなければならない。」とされるにとどまり、許否を決定で判断する規定はない。参加の要件を欠くときは、参加人の請求についての判決の中で判断されると解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "50",
+     "paragraphs": [
+      "1",
+      "2"
+     ],
+     "quote": "裁判所は、前項の決定をする場合には、当事者及び第三者を審尋しなければならない。",
+     "text_sha256": "6113e69e1ac80eedccc27eb70841d8793de4fc2b28ed93008f52a20f695fa3a5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "47",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定による参加の申出は、書面でしなければならない。",
+     "text_sha256": "eabfcfd2afc146ac9b32a0de3c3390a3c5eb44d5e313f0c34165494a7daadc48",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "49",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四十七条第一項の規定により訴訟参加をしたとき",
+     "text_sha256": "49102ea9f5a061c7442cd888327a9131284276d9f8ab647b6beacbac3389a96a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "51",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四十七条から第四十九条までの規定は訴訟の係属中その訴訟の目的である義務の全部又は一部を承継したことを主張する第三者の訴訟参加について",
+     "text_sha256": "1cd604a40e42d668d243ed421f66e9f03f8dba6b5678a30c03578e4eb5fc2345",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "参加の要件を欠く場合の扱いは解釈による。"
+   ],
+   "id": "exp-yobi-2018-minso-q34-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q34-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。訴訟告知は当事者がする行為であって裁判所の裁判ではないから、被告知者がこれに対して即時抗告をすることはできないと解されている。",
+   "body": "誤りは、被告知者が「即時抗告をすることができる」とする点である。民事訴訟法53条1項は「当事者は、訴訟の係属中、参加することができる第三者にその訴訟の告知をすることができる。」と定め、同条3項は訴訟告知を「その理由及び訴訟の程度を記載した書面を裁判所に提出してしなければならない。」としている。訴訟告知は当事者の行為であり、裁判所が許否を裁判する仕組みはないから、不服申立ての対象となる裁判がなく、即時抗告はできないと解されている。被告知者が参加することができる第三者に当たるかどうかは、後の訴訟で同条4項・46条による効力が問題となったときに争うことができると解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "53",
+     "paragraphs": [
+      "1",
+      "3",
+      "4"
+     ],
+     "quote": "当事者は、訴訟の係属中、参加することができる第三者にその訴訟の告知をすることができる。",
+     "text_sha256": "c36da1a36e676c9c84d97037396d61f56087a56764be903c6905d30ffdb13a3a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "46",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "補助参加に係る訴訟の裁判は、次に掲げる場合を除き、補助参加人に対してもその効力を有する。",
+     "text_sha256": "53a9d3ca24071b3c8f4512f0cd7c3ef6b5594387f7fb0f810f29a8d1f95546ff",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "即時抗告ができないこと、及び被告知者が後訴で争える点は解釈による。"
+   ],
+   "id": "exp-yobi-2018-minso-q34-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

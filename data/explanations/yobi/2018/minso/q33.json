@@ -1,0 +1,251 @@
+{
+ "question_id": "yobi-2018-minso-q33",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q33-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。共有者以外の者の不実の登記の抹消を求めることは、各共有者が単独でできると解されており、固有必要的共同訴訟ではない。",
+   "body": "ポイントは、第三者名義の不実の登記の抹消を、共有者が単独で求められるかである。民法252条5項は「各共有者は、前各項の規定にかかわらず、保存行為をすることができる。」と定める。判例は、共有者の一人が持分権に基づいて不実の登記名義人に抹消登記手続を求めることは、共有物に対する妨害の排除であり、各共有者が単独ですることができるとしている（判例あり（要確認））。したがって、共有者全員が原告となる必要はなく、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "252",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "各共有者は、前各項の規定にかかわらず、保存行為をすることができる。",
+     "text_sha256": "285cee92af0371768e6cb514ff2ccfc4349dd839e1062a89c4275ce838a2f2eb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題当時は、保存行為の規定は民法252条ただし書にあった。令和3年の民法改正で252条が改められ、現行法では同条5項に置かれている。",
+    "単独で抹消を求められる根拠を保存行為とみるか、持分権に基づく妨害排除請求とみるかは解釈による。"
+   ],
+   "id": "exp-yobi-2018-minso-q33-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q33-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。被相続人の登記義務を承継した共同相続人の義務は不可分債務と解され、共同相続人の一人を被告とする訴えも許される。",
+   "body": "ポイントは、被相続人から贈与を受けた者が、共同相続人全員を被告にしなければならないかである。民法896条は「相続人は、相続開始の時から、被相続人の財産に属した一切の権利義務を承継する。」と定め、贈与契約に基づく登記義務も共同相続人に承継される。この登記義務は性質上不可分な債務と解されており、民法430条により連帯債務の規定が準用されるから、同法436条のとおり債権者は「その連帯債務者の一人に対し、又は同時に若しくは順次に全ての連帯債務者に対し、全部又は一部の履行を請求することができる。」。判例も、被相続人との契約に基づく所有権移転登記手続を求める訴えは、相続人が数人いても必要的共同訴訟ではないとしている（判例あり（要確認））。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "896",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続人は、相続開始の時から、被相続人の財産に属した一切の権利義務を承継する。",
+     "text_sha256": "26569775cea382b249232c76910772008f279f0ab8c399f2d8a8d991820a167f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "430",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の目的がその性質上不可分である場合において、数人の債務者があるときについて準用する。",
+     "text_sha256": "041b0e770feb6536afda474782664a6fec8178590427c83b441a169d1d90b7ce",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "436",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その連帯債務者の一人に対し、又は同時に若しくは順次に全ての連帯債務者に対し、全部又は一部の履行を請求することができる。",
+     "text_sha256": "ec6cbe7596a1f7fe197f0fbf8f3d1d3416aa042d6dc7f60a15fcaaeb409f0b38",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "登記義務を不可分債務とみる点は解釈による。"
+   ],
+   "id": "exp-yobi-2018-minso-q33-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q33-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。共有物分割の訴えは、共有者全員が当事者とならなければならない固有必要的共同訴訟と解されており、他の共有者の一人だけを被告とすることはできない。",
+   "body": "誤りは、他の共有者の「うちの一人を被告として」共有物分割を求められるとする点である。民法258条1項は「共有物の分割について共有者間に協議が調わないとき、又は協議をすることができないときは、その分割を裁判所に請求することができる。」と定める。裁判による分割は、共有者全員の間の権利関係を一挙に形成し直すものであるから、分割を求める共有者以外の共有者全員を被告としなければならない固有必要的共同訴訟と解されている（判例あり（要確認））。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "258",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共有物の分割について共有者間に協議が調わないとき、又は協議をすることができないときは、その分割を裁判所に請求することができる。",
+     "text_sha256": "67f36f41d78eb0518ef92b2e551a741f180c52c6c471fab9b55a04292459a068",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-minso-q33-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q33-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、地上建物の共同相続人を相手方とする建物収去土地明渡請求訴訟は固有必要的共同訴訟ではないとしている。",
+   "body": "ポイントは、建物の共有者全員を被告としなければならないかである。最高裁昭和43年5月28日判決は、土地所有者が所有権に基づき地上建物の共同相続人を相手方として建物収去土地明渡しを求める訴訟は、固有必要的共同訴訟ではないとした。建物の各共有者は建物全体について収去義務を負う不可分債務の関係にあると解されており、民法430条により準用される同法436条のとおり、債権者は「その連帯債務者の一人に対し、又は同時に若しくは順次に全ての連帯債務者に対し、全部又は一部の履行を請求することができる。」。したがって、共有者の一人を被告とする訴えも許され、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "430",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の目的がその性質上不可分である場合において、数人の債務者があるときについて準用する。",
+     "text_sha256": "041b0e770feb6536afda474782664a6fec8178590427c83b441a169d1d90b7ce",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "436",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その連帯債務者の一人に対し、又は同時に若しくは順次に全ての連帯債務者に対し、全部又は一部の履行を請求することができる。",
+     "text_sha256": "ec6cbe7596a1f7fe197f0fbf8f3d1d3416aa042d6dc7f60a15fcaaeb409f0b38",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "建物収去土地明渡請求事件",
+     "court": "最高裁判所第三小法廷",
+     "date": "1968-05-28",
+     "holding": "土地所有者が所有権に基づき地上建物の共同相続人を相手方として建物収去土地明渡しを請求する訴訟は、固有必要的共同訴訟ではない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/70153/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "確認した判決は建物の共同相続人が被告の事案である。収去義務を不可分債務とみる点は解釈による。"
+   ],
+   "id": "exp-yobi-2018-minso-q33-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q33-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。共同賃借人の目的物返還義務は不可分債務と解され、共同賃借人の一人を被告として明渡しを求めることができる。",
+   "body": "ポイントは、共同賃借人全員を被告としなければならないかである。民法601条により、賃借人は「引渡しを受けた物を契約が終了したときに返還すること」を約しており、共同賃借人の返還義務は性質上不可分な債務と解されている。民法430条により準用される同法436条のとおり、債権者は「その連帯債務者の一人に対し、又は同時に若しくは順次に全ての連帯債務者に対し、全部又は一部の履行を請求することができる。」。判例も、共同賃借人に対する明渡請求は固有必要的共同訴訟ではないとしている（判例あり（要確認））。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "601",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "引渡しを受けた物を契約が終了したときに返還すること",
+     "text_sha256": "74e184d7b22f8a354be3696b22e142b307107a756c6bed036bee073043e9337b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "430",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の目的がその性質上不可分である場合において、数人の債務者があるときについて準用する。",
+     "text_sha256": "041b0e770feb6536afda474782664a6fec8178590427c83b441a169d1d90b7ce",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "436",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その連帯債務者の一人に対し、又は同時に若しくは順次に全ての連帯債務者に対し、全部又は一部の履行を請求することができる。",
+     "text_sha256": "ec6cbe7596a1f7fe197f0fbf8f3d1d3416aa042d6dc7f60a15fcaaeb409f0b38",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "返還義務を不可分債務とみる点は解釈による。",
+    "民法601条の「返還することを約する」との文言は平成29年の民法改正で加えられた。"
+   ],
+   "id": "exp-yobi-2018-minso-q33-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

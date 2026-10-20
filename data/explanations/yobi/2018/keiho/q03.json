@@ -1,0 +1,223 @@
+{
+ "question_id": "yobi-2018-keiho-q03",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiho-q03-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。「流布」は不特定又は多数の人が認識可能な状態に置くことをいい、少数の者を通じて順次伝播させる場合も含まれる。",
+   "body": "ポイントは、刑法233条の「虚偽の風説を流布し」の「流布」の意味である。「流布」とは、虚偽の風説を不特定又は多数の人が認識しうる状態に置くことをいい、行為者が直接に不特定又は多数の人に告知する場合に限られず、特定かつ少数の者に告げ、その者らを通じて順次不特定又は多数の人に伝播させる場合も含まれると解されている。古い判例も、直接告げた相手が少数であっても、多数の者に伝わることを認識していれば流布にあたるとしている（判例あり（要確認））。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "233",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "虚偽の風説を流布し",
+     "text_sha256": "487ee3bcb48096dbc58f9ce1c67bb633458a0d13cc9c414f9ae1fe0d9e6d4690",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「流布」に順次伝播を含むとした大審院の判例は、courts.go.jp の判決ページで確認できなかったため、要確認とした。"
+   ],
+   "id": "exp-yobi-2018-keiho-q03-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiho-q03-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。電子計算機損壊等業務妨害罪の加害行為には、損壊と虚偽の情報・不正な指令の付与のほか「その他の方法」も含まれる。",
+   "body": "誤りは、加害行為が損壊と虚偽の情報・不正な指令の付与に「限られる」とする点である。刑法234条の2第1項は、「人の業務に使用する電子計算機若しくはその用に供する電磁的記録を損壊し、若しくは人の業務に使用する電子計算機に虚偽の情報若しくは不正な指令を与え、又はその他の方法により、電子計算機に使用目的に沿うべき動作をさせず、又は使用目的に反する動作をさせて、人の業務を妨害した者」を処罰している。このように、条文は損壊等に加えて「その他の方法」を明示しており、電源の切断や通信回線の切断など、電子計算機の動作に直接影響を及ぼす他の加害行為も含まれると解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "234_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の業務に使用する電子計算機若しくはその用に供する電磁的記録を損壊し、若しくは人の業務に使用する電子計算機に虚偽の情報若しくは不正な指令を与え、又はその他の方法により、電子計算機に使用目的に沿うべき動作をさせず、又は使用目的に反する動作をさせて、人の業務を妨害した者",
+     "text_sha256": "c79e0a779c66d88d013c3f62d2a8c80bbd9fc3bc927f03616dd0798809f16747",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-keiho-q03-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiho-q03-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。「威力」は業務に従事している人に対して直接行使されることを要しない。",
+   "body": "誤りは、威力が業務に従事している人に対して「直接行使されることを要する」とする点である。刑法234条は「威力を用いて人の業務を妨害した者も、前条の例による。」と定めるのみで、威力を向ける相手を限定していない。「威力」とは人の意思を制圧するに足りる勢力を用いることをいい、業務に従事している者に直接向けられる必要はなく、物に向けられた行為や、被害者の行為を利用して畏怖させる行為でもよいと解されている。判例も、被害者が日常使用する机の引き出しに動物の死がいを入れておき、被害者にこれを発見させて畏怖させ業務を妨害した行為について威力業務妨害罪の成立を認めている（判例あり（要確認））。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "234",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "威力を用いて人の業務を妨害した者も、前条の例による。",
+     "text_sha256": "893f23bcfbd8247a9329a939e83e6d196de6cefd6e0383608b942003430541cf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "机の引き出しに動物の死がいを入れた事案の最高裁の判例は、courts.go.jp の判決ページで確認できなかったため、要確認とした。"
+   ],
+   "id": "exp-yobi-2018-keiho-q03-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiho-q03-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。信用毀損罪は親告罪ではなく、告訴がなくても公訴を提起することができる。",
+   "body": "誤りは、信用毀損罪を親告罪とする点である。刑法232条1項は「この章の罪は、告訴がなければ公訴を提起することができない。」と定めているが、ここでいう「この章の罪」は、同条と同じ章（名誉に対する罪）に置かれた名誉毀損罪（230条）と侮辱罪（231条）を指す。信用毀損罪を定める刑法233条は、信用及び業務に対する罪として別の章に置かれており、同条にも告訴を要する旨の定めはない。したがって、信用毀損罪は親告罪ではなく、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "232",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この章の罪は、告訴がなければ公訴を提起することができない。",
+     "text_sha256": "fd239975ad9fad36cc41650c18c9f04e1c85dc34d77b45f6343b399fe0f8a39b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "230",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公然と事実を摘示し、人の名誉を毀損した者は",
+     "text_sha256": "74ca0ba9d058c4b887588639fb8e13e63e477fea73f66809208c00be01151d2d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "231",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "事実を摘示しなくても、公然と人を侮辱した者は",
+     "text_sha256": "80a2c8332a688c9c9a823f35995da911102ed42d26258ded6e7fcc53d445e5c1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "233",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "虚偽の風説を流布し、又は偽計を用いて、人の信用を毀損し、又はその業務を妨害した者は",
+     "text_sha256": "487ee3bcb48096dbc58f9ce1c67bb633458a0d13cc9c414f9ae1fe0d9e6d4690",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-keiho-q03-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiho-q03-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。公務執行妨害罪の「職務」には、強制力を行使しない公務を含め、公務員が取り扱う事務のすべてが含まれる。",
+   "body": "誤りは、強制力を行使しない公務が公務執行妨害罪の「職務」に「該当しない」とする点である。刑法95条1項は「公務員が職務を執行するに当たり、これに対して暴行又は脅迫を加えた者」を処罰しているところ、最高裁は、同項にいう職務には、ひろく公務員が取り扱う各種各様の事務のすべてが含まれるとしている（最高裁判所第一小法廷昭和53年6月29日判決）。したがって、強制力を行使しない公務も「職務」に該当する。なお、強制力を行使しない公務が業務妨害罪の「業務」にあたるとする前半は、判例の立場に沿うと解されている（判例あり（要確認））。よって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "95",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公務員が職務を執行するに当たり、これに対して暴行又は脅迫を加えた者は",
+     "text_sha256": "f2dcdeeeb33050ac0f85e9e0f0d1b54bbbe404a5a366a9d6b4775616d51f073b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "公務執行妨害被告事件（昭和51(あ)310）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1978-06-29",
+     "holding": "刑法95条1項にいう職務には、ひろく公務員が取り扱う各種各様の事務のすべてが含まれる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50199/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "強制力を行使しない公務が業務妨害罪の「業務」にあたるとした判例は、今回は確認していないため要確認とした。"
+   ],
+   "id": "exp-yobi-2018-keiho-q03-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

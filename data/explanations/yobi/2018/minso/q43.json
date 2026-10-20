@@ -1,0 +1,233 @@
+{
+ "question_id": "yobi-2018-minso-q43",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q43-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。訴状却下命令には即時抗告ができ、簡易裁判所の命令に対する抗告は地方裁判所が裁判する。",
+   "body": "137条2項は、原告が訴状の不備を補正しないときは「裁判長は、命令で、訴状を却下しなければならない。」とし、同条3項は「前項の命令に対しては、即時抗告をすることができる。」と定める。そして、裁判所法24条は地方裁判所の裁判権として「簡易裁判所の決定及び命令に対する抗告」を掲げている（同条4号）。したがって、簡易裁判所の裁判官がした訴状却下命令に対しては、地方裁判所に即時抗告をすることができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "137",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判長は、命令で、訴状を却下しなければならない。",
+     "text_sha256": "786703e334c5cc64bb08495e12206129d733ff46d00cf6bc908b04c63f3cf84d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "137",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前項の命令に対しては、即時抗告をすることができる。",
+     "text_sha256": "786703e334c5cc64bb08495e12206129d733ff46d00cf6bc908b04c63f3cf84d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "裁判所法",
+     "article": "24",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "簡易裁判所の決定及び命令に対する抗告",
+     "text_sha256": "a50ed98d87532e8436ff9b3a9d36c531615f48c60ff1cd46ee238e073c4131ed",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-minso-q43-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q43-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。証拠調べの必要性がないことを理由とする文書提出命令の申立ての却下決定に対し、必要性があることを理由として即時抗告をすることはできないとするのが判例である。",
+   "body": "223条7項は「文書提出命令の申立てについての決定に対しては、即時抗告をすることができる。」と定めており、文言上は却下決定も対象に含まれるように見える。しかし、証拠調べの必要性の判断は、証拠の採否を決める受訴裁判所の裁量にゆだねられる事項であり、その判断に対して独立に不服を申し立てることは認められないとする最高裁の判例がある（判例あり（要確認））。したがって、必要性があることを理由とする即時抗告ができるとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "223",
+     "paragraphs": [
+      "7"
+     ],
+     "quote": "文書提出命令の申立てについての決定に対しては、即時抗告をすることができる。",
+     "text_sha256": "3fd2c6de135ec047268133f432da636f337a8a57b7da0aee43257d18374fb59d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "最高裁の決定を courts.go.jp で2回探したが、判決のページを確認できなかったため cases に入れていない。理由づけ（必要性の判断は受訴裁判所の裁量にゆだねられる）は解釈による。"
+   ],
+   "id": "exp-yobi-2018-minso-q43-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q43-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。高等裁判所の決定には、憲法違反を理由とする特別抗告ができ、再抗告についての決定もこれに含まれる。",
+   "body": "336条1項は「高等裁判所の決定及び命令に対しては、その裁判に憲法の解釈の誤りがあることその他憲法の違反があることを理由とするときに、最高裁判所に特に抗告をすることができる。」と定め（引用は同項の一部）、高等裁判所の決定について種類を限定していない。高等裁判所が再抗告（330条）についてした決定も高等裁判所の決定であるから、憲法違反を理由として特別抗告をすることができる。なお、337条1項は許可抗告の対象から「第三百三十条の抗告」についての決定を除いているが、これは特別抗告を妨げるものではない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "336",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "高等裁判所の決定及び命令に対しては、その裁判に憲法の解釈の誤りがあることその他憲法の違反があることを理由とするときに、最高裁判所に特に抗告をすることができる。",
+     "text_sha256": "6d6e96bdb1d31d32b98e16f79856025a07b9022173796839582b4a260c59a33f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "330",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抗告裁判所の決定に対しては",
+     "text_sha256": "b7207b3898707137e38e621832e2bf558444208479d88c836fdac6f45b889bee",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "337",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三百三十条の抗告及び次項の申立てについての決定及び命令を除く。",
+     "text_sha256": "45aa4d32988a29e062ed9432510bde8645203d6317e3c95057ecefa0a9da9b3e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-minso-q43-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q43-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。許可抗告は高等裁判所が許可したときに限り認められ、最高裁判所が抗告を受理する制度はない。",
+   "body": "誤りのポイントは、高等裁判所が許可しなかった場合でも最高裁判所が「抗告を受理することができる」としている点である。337条1項は、高等裁判所の決定及び命令に対しては「その高等裁判所が次項の規定により許可したときに限り、最高裁判所に特に抗告をすることができる。」と定めている。法令の解釈に関する重要な事項を含むかどうかは、同条2項により原裁判をした高等裁判所が判断して許可するものとされており、上告受理のように最高裁判所が受理する仕組みは設けられていない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "337",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その高等裁判所が次項の規定により許可したときに限り、最高裁判所に特に抗告をすることができる。",
+     "text_sha256": "45aa4d32988a29e062ed9432510bde8645203d6317e3c95057ecefa0a9da9b3e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "337",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "法令の解釈に関する重要な事項を含むと認められる場合には、申立てにより、決定で、抗告を許可しなければならない。",
+     "text_sha256": "45aa4d32988a29e062ed9432510bde8645203d6317e3c95057ecefa0a9da9b3e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-minso-q43-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q43-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。即時抗告で不服を申し立てることができる決定・命令で確定したものに対しては、再審の申立てができる。",
+   "body": "誤りのポイントは、決定に対する再審を一切認めないとしている点である。349条1項は「即時抗告をもって不服を申し立てることができる決定又は命令で確定したものに対しては、再審の申立てをすることができる。」と定め、同条2項で判決に対する再審の規定を準用している。したがって、決定に対しても再審の申立てをすることができる場合があり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "349",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "即時抗告をもって不服を申し立てることができる決定又は命令で確定したものに対しては、再審の申立てをすることができる。",
+     "text_sha256": "685b06f51af27962e4a291091ca05d972454e950bf78c57477a11120e8426dc7",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-minso-q43-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
