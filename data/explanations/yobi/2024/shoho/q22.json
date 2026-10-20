@@ -1,0 +1,257 @@
+{
+ "question_id": "yobi-2024-shoho-q22",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q22-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。監査役の兼任禁止は、その株式会社自身とその子会社の取締役等に向けたものであり、親会社の取締役が子会社の監査役を兼ねることは禁止されていない。",
+   "body": "誤りのポイントは、親会社の取締役は監査役を兼ねることができないとしている部分である。会社法335条2項は、「監査役は、株式会社若しくはその子会社の取締役若しくは支配人その他の使用人又は当該子会社の会計参与（会計参与が法人であるときは、その職務を行うべき社員）若しくは執行役を兼ねることができない」と定めている。兼任が禁じられるのは、監査役がその株式会社又はその子会社の取締役等を兼ねる場合であり、親会社の取締役は対象に含まれていない。したがって、株式会社の親会社の取締役がその株式会社の監査役を兼ねることは、この規定によっては禁止されない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "335",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "監査役は、株式会社若しくはその子会社の取締役若しくは支配人その他の使用人又は当該子会社の会計参与（会計参与が法人であるときは、その職務を行うべき社員）若しくは執行役を兼ねることができない。",
+     "text_sha256": "04ace5012fa40f97df28d229c2ac40385a37871c068a7fc98ef1476cc0f35c37",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-shoho-q22-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q22-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。競業取引について取締役会の承認を要するのは取締役であり、監査役にはこの規制がない。",
+   "body": "誤りのポイントは、監査役に競業取引の規制がかかるとしている部分である。会社法356条1項は、「取締役は、次に掲げる場合には、株主総会において、当該取引につき重要な事実を開示し、その承認を受けなければならない」とし、1号で「取締役が自己又は第三者のために株式会社の事業の部類に属する取引をしようとするとき」を挙げている。取締役会設置会社では承認機関が取締役会となる（365条1項）。この規制の対象は取締役であり、会社法には監査役にこれを準用する規定はない。監査役は業務執行を行わないことから、競業取引の規制は及ばないと解されている。したがって、監査役が会社の事業の部類に属する取引をする場合に取締役会の承認は不要である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "356",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役は、次に掲げる場合には、株主総会において、当該取引につき重要な事実を開示し、その承認を受けなければならない。",
+     "text_sha256": "1f519283022020dbb09f21e69d5e5dfc33a50acae50d33e817fb256ed4327990",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "356",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役が自己又は第三者のために株式会社の事業の部類に属する取引をしようとするとき",
+     "text_sha256": "1f519283022020dbb09f21e69d5e5dfc33a50acae50d33e817fb256ed4327990",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "365",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役会設置会社における第三百五十六条の規定の適用については、同条第一項中「株主総会」とあるのは、「取締役会」とする。",
+     "text_sha256": "ad5cc5119f91885c9349211b6432e9998690efc4f14f5ceaaa2ff2532cc02b80",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "監査役に競業規制が及ばない理由づけは解釈による"
+   ],
+   "id": "exp-yobi-2024-shoho-q22-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q22-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。成年被後見人は監査役の欠格事由ではなく、成年後見人が本人に代わって就任を承諾すれば監査役となることができる。",
+   "body": "誤りのポイントは、成年被後見人は監査役となることができないとしている部分である。監査役の資格については、会社法335条1項が「第三百三十一条第一項及び第二項並びに第三百三十一条の二の規定は、監査役について準用する」と定めている。331条1項の欠格事由に成年被後見人は挙げられておらず（2号は「削除」）、331条の2第1項は、「成年被後見人が取締役に就任するには、その成年後見人が、成年被後見人の同意（後見監督人がある場合にあっては、成年被後見人及び後見監督人の同意）を得た上で、成年被後見人に代わって就任の承諾をしなければならない」と定めている。これが監査役に準用されるから、成年被後見人も所定の手続を経て監査役となることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "335",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三百三十一条第一項及び第二項並びに第三百三十一条の二の規定は、監査役について準用する。",
+     "text_sha256": "04ace5012fa40f97df28d229c2ac40385a37871c068a7fc98ef1476cc0f35c37",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "331",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "削除",
+     "text_sha256": "efd945351abf4f2bc71a6d6346b8558854d58983c43540d7c48f20b7f8bdc7ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "331_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "成年被後見人が取締役に就任するには、その成年後見人が、成年被後見人の同意（後見監督人がある場合にあっては、成年被後見人及び後見監督人の同意）を得た上で、成年被後見人に代わって就任の承諾をしなければならない。",
+     "text_sha256": "7145fdc696fa3757dbe53ec52c5f029146e86681a453efc78eb74cb4568e7f79",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-shoho-q22-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q22-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。監査役は、会計監査人が職務上の義務に違反し又は職務を怠ったときは、監査役が二人以上なら全員の同意によって会計監査人を解任できる。",
+   "body": "ポイントは、株主総会の決議によらずに監査役が会計監査人を解任できる場合とその要件である。会社法340条1項は、「監査役は、会計監査人が次のいずれかに該当するときは、その会計監査人を解任することができる」とし、1号で「職務上の義務に違反し、又は職務を怠ったとき」を挙げている。同条2項は、この解任は「監査役が二人以上ある場合には、監査役の全員の同意によって行わなければならない」と定めている。監査役会設置会社でない株式会社では、この規定がそのまま適用されるから、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "340",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "監査役は、会計監査人が次のいずれかに該当するときは、その会計監査人を解任することができる。",
+     "text_sha256": "43a1a10e3bf7b45abedfce7f639bff65fc6ad93979132eabf700a5046e397aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "340",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "職務上の義務に違反し、又は職務を怠ったとき。",
+     "text_sha256": "43a1a10e3bf7b45abedfce7f639bff65fc6ad93979132eabf700a5046e397aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "340",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定による解任は、監査役が二人以上ある場合には、監査役の全員の同意によって行わなければならない。",
+     "text_sha256": "43a1a10e3bf7b45abedfce7f639bff65fc6ad93979132eabf700a5046e397aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-shoho-q22-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q22-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。公開会社でない株式会社は、定款で監査役の任期を選任後10年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時まで伸長できる。",
+   "body": "ポイントは、監査役の任期を定款で伸長できるのが公開会社でない株式会社に限られる点である。会社法336条1項は、監査役の任期を「選任後四年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時までとする」と定めている。同条2項は、前項の規定は「公開会社でない株式会社において、定款によって、同項の任期を選任後十年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時まで伸長することを妨げない」と定めている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "336",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "選任後四年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時までとする",
+     "text_sha256": "6f6462ed833272f3dab19dcb96d7a627335ad711ac228579791475f2a07d5cdf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "336",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "公開会社でない株式会社において、定款によって、同項の任期を選任後十年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時まで伸長することを妨げない",
+     "text_sha256": "6f6462ed833272f3dab19dcb96d7a627335ad711ac228579791475f2a07d5cdf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-shoho-q22-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,255 @@
+{
+ "question_id": "yobi-2024-shoho-q30",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q30-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。自己を表示する名称として他人の氏名を用いて振り出した者は、振出人として手形金の支払義務を負うとするのが判例である。",
+   "body": "ポイントは、手形上の署名に用いる名称は本名に限られず、行為者が自己を表示するものとして用いた名称であれば、その者の署名と扱われる点である。約束手形には「手形ヲ振出ス者（振出人）ノ署名」を記載しなければならない（手形法75条7号）が、どの名称で署名するかについて条文上の限定はない。判例は、自己を表示する名称として他人の氏名を使用して約束手形を振り出した者は、振出人として手形上の責任を負うとしていると解されている（判例あり（要確認））。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "75",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "手形ヲ振出ス者（振出人）ノ署名",
+     "text_sha256": "efb7e65358b3e7892f2e6af4e776b3fe10f53557d3694d6a5b88c5a731af2849",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "判例（他人名義を自己の名称として用いた振出人の責任）は courts.go.jp で確認できなかったため、要確認とした。",
+    "解釈による"
+   ],
+   "id": "exp-yobi-2024-shoho-q30-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q30-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。法人の手形行為には代表者の署名（記名捺印を含む）が必要とされ、会社名と社印だけで代表者の自署又は記名捺印がない裏書は無効とされる。",
+   "body": "誤りのポイントは、代表者の自署又は記名捺印がなくても裏書は無効とならないとしている部分である。裏書は「裏書人署名スルコトヲ要ス」（手形法13条1項。約束手形には同法77条1項1号で準用）。法人は自ら署名することができないため、法人の手形行為は、代表者が法人のためにすることを示して自ら署名（記名捺印を含む）する方法によらなければならないと解されており、判例も、会社の名称の記載と社印の押捺があるだけで代表者の署名がない手形行為を無効としていると解されている（判例あり（要確認））。したがって、本肢の裏書は無効である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裏書ハ為替手形又ハ之ト結合シタル紙片（補箋）ニ之ヲ記載シ裏書人署名スルコトヲ要ス",
+     "text_sha256": "a5fe4b2f3d25b0f1c99a24c7e05af24d823f6e5b8af69a1fbf400a114843c41f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裏書（第十一条乃至第二十条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "判例（法人の手形行為には代表者の署名を要するとするもの）は courts.go.jp で確認できなかったため、要確認とした。",
+    "解釈による"
+   ],
+   "id": "exp-yobi-2024-shoho-q30-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q30-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。一部の裏書は無効と定められている。",
+   "body": "ポイントは、裏書の効力について条文に明文がある点である。手形法12条2項は「一部ノ裏書ハ之ヲ無効トス」と定め、この規定は同法77条1項1号により約束手形に準用される。手形金の一部のみを譲渡する裏書は一部の裏書に当たるから、無効である。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "12",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "一部ノ裏書ハ之ヲ無効トス",
+     "text_sha256": "46ec7fd128278e92c1220a3a94c38f9c22da54af7e756144608c914b33340dd3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裏書（第十一条乃至第二十条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-shoho-q30-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q30-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。手形要件を補充しないでした呈示は支払呈示としての効力を有せず、後日補充しても遡って有効にはならないとするのが判例である。",
+   "body": "誤りのポイントは、後日の補充によって未補充のままでした呈示が遡って有効になるとしている部分である。手形法76条1項は、同法75条の事項の「何レカヲ欠ク証券ハ約束手形タル効力ヲ有セズ」と定めており、手形要件が補充されていない白地手形は、補充されるまでは完成した約束手形としての効力を有しない。支払のための呈示は「支払ヲ為スベキ日又ハ之ニ次グ二取引日内ニ」しなければならない（手形法38条1項。同法77条1項3号で準用）。判例は、白地を補充しないでした呈示は支払呈示としての効力を有せず、その後に補充しても呈示の時に遡って効力を生じるものではないとしていると解されている（判例あり（要確認））。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "76",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条ニ掲グル事項ノ何レカヲ欠ク証券ハ約束手形タル効力ヲ有セズ",
+     "text_sha256": "f71647e4042448065f9f3d8b815ed61337c324a82f83d7211bdd91618f6df0e3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "75",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "約束手形ニハ左ノ事項ヲ記載スベシ",
+     "text_sha256": "efb7e65358b3e7892f2e6af4e776b3fe10f53557d3694d6a5b88c5a731af2849",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "38",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支払ヲ為スベキ日又ハ之ニ次グ二取引日内ニ",
+     "text_sha256": "757590c0a8fd359b90db81e0e97bff0a593cb10ee71cd1da8ba83154ebd860b7",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支払（第三十八条乃至第四十二条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "判例（白地未補充のままの呈示の効力）は courts.go.jp で確認できなかったため、要確認とした。",
+    "解釈による"
+   ],
+   "id": "exp-yobi-2024-shoho-q30-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q30-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。白地手形の不当補充は、善意でかつ重大な過失のない所持人には対抗できない。",
+   "body": "誤りのポイントは、善意でかつ重大な過失がない所持人にも補充の合意違反を対抗できるとしている部分である。手形法10条は「予メ為シタル合意ト異ル補充ヲ為シタル場合ニ於テハ其ノ違反ハ之ヲ以テ所持人ニ対抗スルコトヲ得ズ但シ所持人ガ悪意又ハ重大ナル過失ニ因リ為替手形ヲ取得シタルトキハ此ノ限ニ在ラズ」と定め、この規定は同法77条2項により約束手形に準用される。本肢は、白地のまま手形を取得した所持人が自ら合意と異なる補充をした場合であるが、判例はこの場合にも同条の趣旨が及び、善意でかつ重大な過失のない所持人には合意違反を対抗できないとしていると解されている（判例あり（要確認））。したがって、振出人は合意違反を当該所持人に対抗することができない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "10",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "予メ為シタル合意ト異ル補充ヲ為シタル場合ニ於テハ其ノ違反ハ之ヲ以テ所持人ニ対抗スルコトヲ得ズ但シ所持人ガ悪意又ハ重大ナル過失ニ因リ為替手形ヲ取得シタルトキハ此ノ限ニ在ラズ",
+     "text_sha256": "a734adf9cada4dcac2a15bd253eea9abdb6e00c7c9e57ee61288f56fb5c4f174",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "白地為替手形（第十条）ニ関スル規定モ亦之ヲ約束手形ニ準用ス",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "判例（白地手形の取得者自身が不当補充をした場合への手形法10条の適用）は courts.go.jp で確認できなかったため、要確認とした。",
+    "解釈による"
+   ],
+   "id": "exp-yobi-2024-shoho-q30-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

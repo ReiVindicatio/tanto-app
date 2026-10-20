@@ -1,0 +1,345 @@
+{
+ "question_id": "yobi-2024-shoho-q23",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q23-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。検査役の選任の申立てが問題になるのは、事業譲渡の対価として株式を発行する（現物出資となる）場合であり、吸収分割の場合には検査役の調査は要しない。",
+   "body": "誤りのポイントは、「いずれの方法による場合であっても」検査役の選任の申立てが必要としている部分である。事業譲渡の方法で乙社が承継の対価として乙社の株式を交付するときは、甲社が事業を出資して乙社の募集株式を引き受ける形になり、募集事項として「金銭以外の財産を出資の目的とするときは、その旨並びに当該財産の内容及び価額」（会社法199条1項3号）を定めることになる。この場合、会社法207条1項により、株式会社は「裁判所に対し、検査役の選任の申立てをしなければならない」（ただし同条9項各号の場合を除く）。これに対し、吸収分割では、承継会社は吸収分割契約の定めに従い分割会社の権利義務を承継し（759条1項）、対価となる株式の数等も吸収分割契約で定める（758条4号イ）ものであり、会社法の吸収分割の規定には、承継する財産について検査役の調査を求める規定は置かれていない。したがって、吸収分割の場合にも検査役の選任の申立てが必要とする点が誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "金銭以外の財産を出資の目的とするときは、その旨並びに当該財産の内容及び価額",
+     "text_sha256": "742daaa99f9cbe88601264bf2da62173c9cd6545fb1e9014ffc0988829c6ef7c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "207",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所に対し、検査役の選任の申立てをしなければならない",
+     "text_sha256": "f28eb820e8ede9fbfdf30b0b85ba0da64c91d230103d87f7a43159fbe1089781",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "207",
+     "paragraphs": [
+      "9"
+     ],
+     "quote": "前各項の規定は、次の各号に掲げる場合には、当該各号に定める事項については、適用しない。",
+     "text_sha256": "f28eb820e8ede9fbfdf30b0b85ba0da64c91d230103d87f7a43159fbe1089781",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "759",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収分割承継株式会社は、効力発生日に、吸収分割契約の定めに従い、吸収分割会社の権利義務を承継する。",
+     "text_sha256": "c0745a335b3c55b2f2a6c06fa4047faf0c42c8a305fdc2d7e8bc63aa692fe378",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "758",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該金銭等が吸収分割承継株式会社の株式であるときは、当該株式の数（種類株式発行会社にあっては、株式の種類及び種類ごとの数）又はその数の算定方法並びに当該吸収分割承継株式会社の資本金及び準備金の額に関する事項",
+     "text_sha256": "959425caba4ab577a1593782335b4a5cb7bc7419549884020f85eb552ed5339d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-shoho-q23-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q23-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。承継会社である乙社の反対株主の株式買取請求権は、吸収分割の場合にも会社法797条に規定がある。",
+   "body": "誤りのポイントは、乙社の反対株主の株式買取請求権の規定があるのは「事業譲渡の方法による場合のみ」としている部分である。会社法797条1項は、「吸収合併等をする場合には、反対株主は、存続株式会社等に対し、自己の有する株式を公正な価格で買い取ることを請求することができる」と定めている。ここでいう「吸収合併等」には吸収分割が含まれ（782条1項）、「存続株式会社等」には「吸収分割承継株式会社」が含まれる（794条1項）。したがって、吸収分割の方法による場合にも、承継会社である乙社の反対株主には株式買取請求権が認められる。なお、事業の譲受けの側で事業譲渡等として株主総会の承認と株式買取請求の対象となるのは「他の会社（外国会社その他の法人を含む。次条において同じ。）の事業の全部の譲受け」（467条1項3号、469条1項）であり、本問のように事業の一部を譲り受ける場合は、これに当たらない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "797",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収合併等をする場合には、反対株主は、存続株式会社等に対し、自己の有する株式を公正な価格で買い取ることを請求することができる。",
+     "text_sha256": "08d072351c9b3bb3845312dbe18050441fc501d9364049d421cdf727a7524db3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "782",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収合併、吸収分割又は株式交換（以下この節において「吸収合併等」という。）",
+     "text_sha256": "afa17efbf624ba2fe60bf7336670959d5bd23486578102fbdfc9856654767248",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "794",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収合併存続株式会社、吸収分割承継株式会社又は株式交換完全親株式会社（以下この目において「存続株式会社等」という。）",
+     "text_sha256": "4e4535789f1cdc6a5aa75afeec14fb0dd5b653012cb68336cb021e74a84f688f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "467",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の会社（外国会社その他の法人を含む。次条において同じ。）の事業の全部の譲受け",
+     "text_sha256": "90383ded1f4a3dce20bdd1672c6aaf03fda339f256628f51e35f32de4bb0a699",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "469",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "反対株主は、事業譲渡等をする株式会社に対し、自己の有する株式を公正な価格で買い取ることを請求することができる。",
+     "text_sha256": "8301c31c694a290614dda3f2b0e1540ec61f62531462c694fa3be0b3b31ddcaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "797条の「存続株式会社等」は794条1項で「この目において」定義されている。797条が同じ目に属することを前提にしている"
+   ],
+   "id": "exp-yobi-2024-shoho-q23-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q23-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。分割会社の新株予約権者に、それに代わる承継会社の新株予約権を交付する仕組みは、吸収分割について会社法758条5号に規定があり、事業譲渡にはない。",
+   "body": "ポイントは、新株予約権の承継（代わりの新株予約権の交付）が会社法上の組織再編の効果として定められているかどうかである。会社法758条は、吸収分割契約で定める事項として、5号で「吸収分割承継株式会社が吸収分割に際して吸収分割株式会社の新株予約権の新株予約権者に対して当該新株予約権に代わる当該吸収分割承継株式会社の新株予約権を交付するときは、当該新株予約権についての次に掲げる事項」を挙げている。この定めがあるときは、効力発生日に、吸収分割契約新株予約権は消滅し、その新株予約権者は承継会社の新株予約権の新株予約権者となる（759条9項）。事業譲渡は個々の財産を移転する取引法上の契約であり、このような新株予約権の交付の仕組みは会社法に定められていない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "758",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収分割承継株式会社が吸収分割に際して吸収分割株式会社の新株予約権の新株予約権者に対して当該新株予約権に代わる当該吸収分割承継株式会社の新株予約権を交付するときは、当該新株予約権についての次に掲げる事項",
+     "text_sha256": "959425caba4ab577a1593782335b4a5cb7bc7419549884020f85eb552ed5339d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "759",
+     "paragraphs": [
+      "9"
+     ],
+     "quote": "吸収分割契約新株予約権は、消滅し、当該吸収分割契約新株予約権の新株予約権者は、同条第六号に掲げる事項についての定めに従い、同条第五号ロの吸収分割承継株式会社の新株予約権の新株予約権者となる。",
+     "text_sha256": "c0745a335b3c55b2f2a6c06fa4047faf0c42c8a305fdc2d7e8bc63aa692fe378",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "事業譲渡が個々の財産を移転する契約であるという性質づけは解釈による"
+   ],
+   "id": "exp-yobi-2024-shoho-q23-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q23-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。債権者の個別の同意が必要なのは事業譲渡の場合であり、吸収分割では吸収分割契約の定めに従って債務が承継され、債権者は異議手続で保護される。",
+   "body": "誤りのポイントは、個別の同意が必要なのは「吸収分割の方法による場合のみ」としている部分であり、実際は逆である。事業譲渡で債務を免責的に移すには、民法の免責的債務引受によることになり、「債権者と引受人となる者との契約」（民法472条2項）又は債務者と引受人となる者の契約に対する「債権者が引受人となる者に対して承諾をすること」（同条3項）が必要である。これに対し、吸収分割では、「吸収分割承継株式会社は、効力発生日に、吸収分割契約の定めに従い、吸収分割会社の権利義務を承継する」（会社法759条1項）とされ、債権者の個別の同意は要しない。その代わりに、吸収分割後に分割会社に対して債務の履行を請求できなくなる債権者は、異議を述べることができる（789条1項2号）。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権者と引受人となる者との契約",
+     "text_sha256": "43b16c10ebd6f4e46a8e8af0e9feb8dcf627456777f33a5b2d70bef51fa55eff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "債権者が引受人となる者に対して承諾をすること",
+     "text_sha256": "43b16c10ebd6f4e46a8e8af0e9feb8dcf627456777f33a5b2d70bef51fa55eff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "759",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収分割承継株式会社は、効力発生日に、吸収分割契約の定めに従い、吸収分割会社の権利義務を承継する。",
+     "text_sha256": "c0745a335b3c55b2f2a6c06fa4047faf0c42c8a305fdc2d7e8bc63aa692fe378",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "789",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収分割後吸収分割株式会社に対して債務の履行（当該債務の保証人として吸収分割承継会社と連帯して負担する保証債務の履行を含む。）を請求することができない吸収分割株式会社の債権者",
+     "text_sha256": "ce1e755541d2c2507d2f9e000bcee08adee7edc5f9cc6ed442c128bf32cecd8b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "民法472条は平成29年改正（令和2年4月1日施行）で新設された規定で、出題時点（2024年）には施行済み"
+   ],
+   "id": "exp-yobi-2024-shoho-q23-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q23-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。効力発生日後遅滞なく共同して書面等を作成する義務は、吸収分割について会社法791条1項1号に定められており、事業譲渡にはない。",
+   "body": "ポイントは、事後開示のための書面等の作成義務が吸収分割にだけ定められている点である。会社法791条1項は、「吸収分割株式会社又は株式交換完全子会社は、効力発生日後遅滞なく、吸収分割承継会社又は株式交換完全親会社と共同して」、同項各号に定めるものを作成しなければならないとし、1号で吸収分割株式会社について「吸収分割により吸収分割承継会社が承継した吸収分割株式会社の権利義務その他の吸収分割に関する事項として法務省令で定める事項を記載し、又は記録した書面又は電磁的記録」を挙げている。承継会社もこの書面等を本店に備え置く（801条3項2号）。事業譲渡については、このような共同での書面等の作成義務を定めた規定はない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "791",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収分割株式会社又は株式交換完全子会社は、効力発生日後遅滞なく、吸収分割承継会社又は株式交換完全親会社と共同して",
+     "text_sha256": "b77ab98931589956385e1ad451b6af8fac1816dbbe5761943b881e6837ecfd1f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "791",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収分割により吸収分割承継会社が承継した吸収分割株式会社の権利義務その他の吸収分割に関する事項として法務省令で定める事項を記載し、又は記録した書面又は電磁的記録",
+     "text_sha256": "b77ab98931589956385e1ad451b6af8fac1816dbbe5761943b881e6837ecfd1f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "801",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "吸収分割承継株式会社　前項又は第七百九十一条第一項第一号の書面又は電磁的記録",
+     "text_sha256": "9769fd88db799c60e006a2aebe553458dcd2abc4e5254937683431dfaa96ce34",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-shoho-q23-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

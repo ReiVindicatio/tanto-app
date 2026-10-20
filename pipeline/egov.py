@@ -149,11 +149,20 @@ def fetch_law(law: str) -> dict:
         raise ValueError(f"法令番号 {law_num} の法令名が「{title}」で、「{law}」と一致しない")
     main = root.find(".//LawBody/MainProvision")
     articles = {}
-    for art in main.iter("Article"):  # 附則（SupplProvision）は含めない
+    for art in main.iter("Article"):
         num = art.get("Num")
         if num in articles:
             raise ValueError(f"条番号が重複：{num}")
         articles[num] = parse_article(art)
+    # 附則：改正法の附則（AmendLawNum のあるもの）は含めない。制定時の附則のうち、本則と条番号が重ならない条だけ含める
+    # （手形法の附則 82条「署名には記名捺印を含む」のように、本則に続く番号で中身の規定を置く法令がある。T039）
+    for sp in root.findall(".//LawBody/SupplProvision"):
+        if sp.get("AmendLawNum"):
+            continue
+        for art in sp.iter("Article"):
+            num = art.get("Num")
+            if num and num not in articles:
+                articles[num] = parse_article(art)
 
     old = json.loads(law_path(law).read_text(encoding="utf-8")) if law_path(law).exists() else None
     rec = {
