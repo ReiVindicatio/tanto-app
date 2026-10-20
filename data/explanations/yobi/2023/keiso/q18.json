@@ -1,0 +1,270 @@
+{
+ "question_id": "yobi-2023-keiso-q18",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q18-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。女子の身体検査に医師又は成年の女子を立ち会わせることは131条2項が裁判所の検査について定め、222条1項がこれを捜査機関の検証に準用しているから、どちらの場合も必要である。",
+   "body": "ポイントは、立会いの規定がもともと裁判所の身体検査についての規定であることである。刑事訴訟法131条2項は「女子の身体を検査する場合には、医師又は成年の女子をこれに立ち会わせなければならない。」と定めており、これは裁判所がする身体の検査についての規定である。そして222条1項は、131条の規定を、捜査機関が218条又は220条の規定によってする検証について準用している。したがって、裁判所が女子の身体を検査する場合も、捜査機関が身体検査令状により女子の身体を検査する場合も、医師又は成年の女子を立ち会わせる必要があり、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "131",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "女子の身体を検査する場合には、医師又は成年の女子をこれに立ち会わせなければならない。",
+     "text_sha256": "087d5543f31ba75f63b58f3c6a06808512d731aa18f80a955b6abeb8135d4368",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百十条、第百十一条の二前段、第百十二条、第百十四条、第百十八条、第百二十九条、第百三十一条及び第百三十七条から第百四十条までの規定は、検察官、検察事務官又は司法警察職員が第二百十八条又は第二百二十条の規定によつてする検証について、それぞれ準用する。",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この場合において、身体の検査は、身体検査令状によらなければならない。",
+     "text_sha256": "954073f263edaa60047b785f6d0ee41b4ebde20c340041083ed979aa3578ed9f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "220",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "左の処分をすることができる。",
+     "text_sha256": "164eaabe0976395eb9b592cca0149e4a9c11ae7f398b275869b2423590a3fe2b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-keiso-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q18-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。身体の拘束を受けている被疑者の写真撮影は、被疑者を裸にしない限り、身体検査令状によることを要しない。",
+   "body": "誤りは「必ず身体検査令状によらなければならない」という部分である。刑事訴訟法218条は、身体の検査は身体検査令状によらなければならないとしつつ、「身体の拘束を受けている被疑者の指紋若しくは足型を採取し、身長若しくは体重を測定し、又は写真を撮影するには、被疑者を裸にしない限り、第一項の令状によることを要しない。」と定めている。したがって、身体拘束中の被疑者の写真撮影は、裸にする場合を除いて令状なしにすることができ、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "218",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "身体の拘束を受けている被疑者の指紋若しくは足型を採取し、身長若しくは体重を測定し、又は写真を撮影するには、被疑者を裸にしない限り、第一項の令状によることを要しない。",
+     "text_sha256": "954073f263edaa60047b785f6d0ee41b4ebde20c340041083ed979aa3578ed9f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "取得日時点の現行法ではこの規定は218条4項。電磁的記録提供命令の新設に伴う改正で項がずれたとみられ、出題時点（2023年）では218条3項だった可能性がある（要確認）。結論には影響しない。"
+   ],
+   "id": "exp-yobi-2023-keiso-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q18-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。着用しているズボンのポケットの中を捜索するのは身体（着衣）の捜索であり、身体そのものを検査する身体検査とは異なるから、捜索差押許可状だけで足りる。",
+   "body": "誤りは「身体検査令状の発付を受ける必要がある」という部分である。刑事訴訟法102条1項は「被告人の身体、物又は住居その他の場所に就き、捜索をすることができる」と定めて身体も捜索の対象としており、222条1項はこれを捜査機関の捜索に準用している。また219条1項も、令状に「捜索すべき場所、身体若しくは物」を記載するとしている。218条1項が身体検査令状を要求する「身体の検査」は、身体そのものの形状・状態を調べる検証としての処分を指し、着衣のポケットの中を探して物を見つけることは身体の捜索にとどまると解されている。したがって、捜索差押許可状のほかに身体検査令状を得る必要はなく、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "102",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、必要があるときは、被告人の身体、物又は住居その他の場所に就き、捜索をすることができる。",
+     "text_sha256": "13a2f2de996053a92d7f84466c53b649692a87d95bb573f52c8c2347dc1d218d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第九十九条第一項、第百条、第百二条、第百三条から第百五条まで",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "219",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "捜索すべき場所、身体若しくは物",
+     "text_sha256": "41cfe36906d2e078b14f2aaf27ac51afabee0593215b1f82ba130125ea8fd68a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この場合において、身体の検査は、身体検査令状によらなければならない。",
+     "text_sha256": "954073f263edaa60047b785f6d0ee41b4ebde20c340041083ed979aa3578ed9f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "身体の捜索と身体検査の区別は解釈による。"
+   ],
+   "id": "exp-yobi-2023-keiso-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q18-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。鑑定人の身体検査に準用される規定に直接強制を定めた139条は含まれておらず、鑑定受託者は鑑定処分許可状に基づいて直接強制として身体検査を行うことはできないと解されている。",
+   "body": "誤りは「直接強制として身体検査を行うことができる」という部分である。鑑定の嘱託を受けた者は、刑事訴訟法225条1項により、裁判官の許可を受けて「第百六十八条第一項に規定する処分をすることができる」とされ、身体の検査もその処分に含まれる。しかし、鑑定人の身体検査について準用される規定は、168条6項のとおり「第百三十一条、第百三十七条、第百三十八条及び第百四十条の規定」であり、身体の検査を拒む者に対して「そのまま、身体の検査を行うことができる」とする139条は含まれていない。そのため、鑑定処分許可状だけでは、検査を拒む者に対して直接強制により身体検査をすることはできないと解されている。したがって、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "225",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百二十三条第一項の規定による鑑定の嘱託を受けた者は、裁判官の許可を受けて、第百六十八条第一項に規定する処分をすることができる。",
+     "text_sha256": "3e475a76c4f7ceab639093189a4f3d84dfa97472e72115e62842dd91bc8bef8a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "168",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "第百三十一条、第百三十七条、第百三十八条及び第百四十条の規定は、鑑定人の第一項の規定によつてする身体の検査についてこれを準用する。",
+     "text_sha256": "8a15f71519c828cbaf2c187d69bc509a25240d37e3af85d9df2867d0174a4be2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "139",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、身体の検査を拒む者を過料に処し、又はこれに刑を科しても、その効果がないと認めるときは、そのまま、身体の検査を行うことができる。",
+     "text_sha256": "102c4ea714c3334f6fa1659b31126b9f0bffd812c1008a27a6e3f16e7b0fb7c5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "鑑定受託者が直接強制できないとする点は、準用規定の構造からの解釈による。"
+   ],
+   "id": "exp-yobi-2023-keiso-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q18-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。強制採尿は捜索差押令状によるべきであり、その令状には医師をして医学的に相当と認められる方法で行わせなければならない旨の条件の記載が不可欠であるとするのが判例である。",
+   "body": "ポイントは、強制採尿に必要な令状の種類と、その令状に付すべき条件である。最高裁昭和55年10月23日決定は、捜査機関が強制採尿をするには捜索差押令状によるべきであり、その令状には医師をして医学的に相当と認められる方法で行わせなければならない旨の条件の記載が不可欠であるとした。強制採尿は、被疑者の身体の安全や人格の保護に関わる処分であることから、身体検査の場合と同様に、令状に条件を付することが求められたものと解されている。肢はこの判示に沿っており、正しい。",
+   "citations": [],
+   "cases": [
+    {
+     "name": "覚せい剤取締法違反被告事件（強制採尿の令状）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1980-10-23",
+     "holding": "捜査機関が強制採尿をするには捜索差押令状によるべきであり、その令状には、医師をして医学的に相当と認められる方法で行わせなければならない旨の条件の記載が不可欠である。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50210/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2023-keiso-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,225 @@
+{
+ "question_id": "yobi-2023-keiso-q26",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q26-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。確定判決の一事不再理の効力は、その判決を受けた被告人Ａにのみ及び、共犯者とされる別人Ｂには及ばないので、Ｂを起訴することができる。",
+   "body": "刑事訴訟法249条は「公訴は、検察官の指定した被告人以外の者にその効力を及ぼさない。」と定めており、公訴の提起とその結果としての判決の効力は、起訴された被告人について生じる。確定判決を経たことによる一事不再理の効力（同法337条1号による免訴）も、判決を受けた被告人について働くものと解されている。したがって、Ａに対する有罪判決が確定していても、その効力は別人であるＢには及ばず、検察官はＢをＡとの共謀による殺害の事実で起訴することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "249",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公訴は、検察官の指定した被告人以外の者にその効力を及ぼさない。",
+     "text_sha256": "d7f7fb1b6bacba964216dc8c4959e9cac2c904df6e5a28952014006136d10f94",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "337",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "左の場合には、判決で免訴の言渡をしなければならない。",
+     "text_sha256": "aec5a273733db10761a19aa2575c86def6ef507741674e17a4b100ea22e2522c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "一事不再理の効力が他の被告人に及ばないことは解釈による。"
+   ],
+   "id": "exp-yobi-2023-keiso-q26-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q26-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。再審開始の決定が確定しても、その後に改めて審判が行われ、再審の判決が確定するまでは、元の確定判決は効力を失わないと解されている。",
+   "body": "刑事訴訟法451条1項は、「裁判所は、再審開始の決定が確定した事件については、第四百四十九条の場合を除いては、その審級に従い、更に審判をしなければならない。」と定めており、再審開始の決定は、元の判決を取り消すものではなく、改めて審判をする手続を開くものである。また、同法448条2項は「再審開始の決定をしたときは、決定で刑の執行を停止することができる。」と定めており、刑の執行停止を別に定めていることは、再審開始の決定があっても元の確定判決がなお効力を有することを前提としている。元の確定判決が効力を失うのは、再審の判決が確定したときであると解されているので、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "451",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、再審開始の決定が確定した事件については、第四百四十九条の場合を除いては、その審級に従い、更に審判をしなければならない。",
+     "text_sha256": "9b776d980e6e44522d0bc48d5fc81e3f3222b91ebb16deb0f21dc43b339fc7c4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "448",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "再審開始の決定をしたときは、決定で刑の執行を停止することができる。",
+     "text_sha256": "48f93582fb6829fd3647822f074927fd65f6067fc199d81daa2171af485d8ad5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "元の確定判決が再審の判決の確定によって効力を失うことは条文に明記されておらず、解釈による。"
+   ],
+   "id": "exp-yobi-2023-keiso-q26-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q26-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。無罪の裁判の告知があったときは、確定を待たずに、勾留状はその効力を失う。",
+   "body": "刑事訴訟法345条は「無罪、免訴、刑の免除、刑の全部の執行猶予、公訴棄却（第三百三十八条第四号による場合を除く。）、罰金又は科料の裁判の告知があつたときは、勾留状は、その効力を失う。」と定める。基準は裁判の「告知」であって確定ではないから、無罪判決が宣告された時点で勾留状は効力を失う。殺人被告事件であっても例外はないので、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "345",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "無罪、免訴、刑の免除、刑の全部の執行猶予、公訴棄却（第三百三十八条第四号による場合を除く。）、罰金又は科料の裁判の告知があつたときは、勾留状は、その効力を失う。",
+     "text_sha256": "4e9783e8307aa4b3ad635623ef36e175d32cdc8f5a7de60537919167686515f4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-keiso-q26-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q26-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。無罪判決が確定した事件を同一事実で再び起訴した場合、確定判決を経たときに当たり免訴の判決をしなければならず、有罪の判決をすることはできない。",
+   "body": "誤りは「改めて審理し、有罪の判決をすることができる」という部分である。日本国憲法39条は「何人も、実行の時に適法であつた行為又は既に無罪とされた行為については、刑事上の責任を問はれない。」と定め、一事不再理を保障している。これを受けて、刑事訴訟法337条は「左の場合には、判決で免訴の言渡をしなければならない。」とし、その1号に「確定判決を経たとき。」を挙げる。新たな証拠が発見されたとしても、無罪判決が確定した同一事実での再起訴に対しては免訴の判決をしなければならず、被告人に不利益な再審も認められていないので、有罪とすることはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "何人も、実行の時に適法であつた行為又は既に無罪とされた行為については、刑事上の責任を問はれない。",
+     "text_sha256": "4bf593bf01acfd679c8cf5b695485ce8a4e818418d0940442e6495c8eb8e352b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "337",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "左の場合には、判決で免訴の言渡をしなければならない。",
+     "text_sha256": "aec5a273733db10761a19aa2575c86def6ef507741674e17a4b100ea22e2522c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-keiso-q26-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q26-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。告訴がないことを理由とする公訴棄却の判決は形式裁判であり一事不再理の効力を生じないので、その後に告訴を得れば、同一事実で再び起訴することができる。",
+   "body": "誤りは「再度、同事件の被告人を同一事実で起訴することはできない」という部分である。親告罪である器物損壊について告訴がないまま起訴された場合は、刑事訴訟法338条4号の「公訴提起の手続がその規定に違反したため無効であるとき。」に当たり、公訴棄却の判決がされる。公訴棄却の判決は手続上の欠陥を理由とする形式裁判であり、事件の実体について判断していないから、一事不再理の効力は生じないと解されている。また、同法340条の再起訴の制限は公訴の取消しによる公訴棄却の場合のものであり、本問には当たらない。したがって、告訴という欠けていた訴訟条件が備われば、検察官は同一事実で再び起訴することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "338",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "左の場合には、判決で公訴を棄却しなければならない。",
+     "text_sha256": "c3cd1e9d9294210fd7c01a3c9ad3ab57f0d9977073d4ce1848307067fccb692c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "340",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公訴の取消による公訴棄却の決定が確定したときは、公訴の取消後犯罪事実につきあらたに重要な証拠を発見した場合に限り、同一事件について更に公訴を提起することができる。",
+     "text_sha256": "a567810ae9145007ebd26ca23939e12b2ec84616659e2ab10899869f48301f38",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公訴棄却の判決に一事不再理の効力がないことは解釈による。"
+   ],
+   "id": "exp-yobi-2023-keiso-q26-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

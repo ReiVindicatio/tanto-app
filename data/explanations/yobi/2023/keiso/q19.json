@@ -1,0 +1,219 @@
+{
+ "question_id": "yobi-2023-keiso-q19",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q19-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。検察官がした39条3項の接見指定の処分に不服がある者は、裁判所にその処分の取消し又は変更を請求できる（430条1項、いわゆる準抗告）。",
+   "body": "刑事訴訟法39条3項は、検察官等は捜査のため必要があるときは公訴の提起前に限り、接見又は授受に関し「その日時、場所及び時間を指定することができる」と定める。そして430条1項は「検察官又は検察事務官のした第三十九条第三項の処分」に不服がある者は「その検察官又は検察事務官が所属する検察庁の対応する裁判所にその処分の取消し又は変更を請求することができる」と定めている。接見指定を受けた弁護人はこの不服がある者に当たるので、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "39",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "その日時、場所及び時間を指定することができる",
+     "text_sha256": "75b89a51ec4fe9018db639cf30e3c9a58ed8ee9aaf563c722c1141fb5cde965a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "430",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その検察官又は検察事務官が所属する検察庁の対応する裁判所にその処分の取消し又は変更を請求することができる",
+     "text_sha256": "bfe2b7e6b8fbe06792d989f545cf65522ba24d324483116a4ca80402314465e1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-keiso-q19-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q19-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。弁護人の差押状・捜索状の執行への立会権を定める113条は、捜査機関の捜索には準用されていないので、弁護人に立会権はない。",
+   "body": "誤りは「立ち会う権利がある」という部分である。113条1項は「検察官、被告人又は弁護人は、差押状又は捜索状の執行に立ち会うことができる。」と定めるが、これは裁判所が行う押収・捜索（公訴提起後）についての規定である。捜査機関が令状によってする押収・捜索に準用される規定を列挙した222条1項は「第百十二条、第百十四条、第百十五条、第百十八条」などを掲げるものの、113条を掲げていない。捜査段階では、222条6項が「被疑者をこれに立ち会わせることができる」と定めるにとどまり、これも捜査機関の判断によるものである。したがって、司法警察職員による捜索差押許可状の執行に弁護人が立ち会う権利はない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官、被告人又は弁護人は、差押状又は捜索状の執行に立ち会うことができる。",
+     "text_sha256": "aa9f1d209c913cea646f5ed7621e51e00dd5216c3391563a8e931de2f38663c0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百十二条、第百十四条、第百十五条、第百十八条",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "被疑者をこれに立ち会わせることができる",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-keiso-q19-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q19-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。証拠保全の請求は、被告人・被疑者又は弁護人が第1回公判期日前に限りすることができ、起訴前でも証人の尋問を請求できる（179条1項）。",
+   "body": "179条1項は「被告人、被疑者又は弁護人は、あらかじめ証拠を保全しておかなければその証拠を使用することが困難な事情があるときは、第一回の公判期日前に限り」、裁判官に証人の尋問等の処分を請求することができると定めている。請求権者に被疑者が含まれていることから分かるとおり、この請求は起訴前の段階でもすることができる。したがって、弁護人が起訴前に裁判官に証人の尋問を請求できるとする肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告人、被疑者又は弁護人は、あらかじめ証拠を保全しておかなければその証拠を使用することが困難な事情があるときは、第一回の公判期日前に限り",
+     "text_sha256": "2818ea57ac8ba177d13c02804e1af754ad7610dbb1484398466a90cfcf05b6a8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-keiso-q19-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q19-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。被疑者の勾留には保釈の制度がないので、勾留されている被疑者の弁護人は保釈を請求できない（207条1項ただし書）。",
+   "body": "誤りは、被疑者段階で保釈の請求ができるとしている点である。207条1項は、勾留の請求を受けた裁判官は「その処分に関し裁判所又は裁判長と同一の権限を有する」としつつ、「但し、保釈については、この限りでない。」と定めている。このため、保釈は公訴提起後の被告人の勾留についてだけ認められ、被疑者の勾留については認められない。したがって、勾留されている被疑者の弁護人が裁判官に保釈を請求できるとする肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "207",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "但し、保釈については、この限りでない。",
+     "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-keiso-q19-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q19-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。国選弁護人は辞任を申し出ても、裁判所がこれを解任しない限りその地位を失わないとするのが判例である。",
+   "body": "誤りは「辞任を申し出ることにより、自らその地位を離れることができる」という部分である。国選弁護人の地位は裁判所等の選任によって生じ、その終了についても38条の3第1項が「裁判所若しくは裁判長又は裁判官が付した弁護人を解任することができる」として、裁判所による解任の制度を定めている。最高裁昭和54年7月24日判決は、国選弁護人は辞任の申出をした場合であっても、裁判所が辞任の申出について正当な理由があると認めて解任しない限り、その地位を失うものではないとした。したがって、辞任の申出だけで自ら地位を離れることはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "38_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所若しくは裁判長又は裁判官が付した弁護人を解任することができる",
+     "text_sha256": "cdecc85b2679587c96b067bd0dfdd051568f91cf9874768595112813b6bf1bfc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "兇器準備集合、威力業務妨害、公務執行妨害被告事件",
+     "court": "最高裁判所第三小法廷",
+     "date": "1979-07-24",
+     "holding": "国選弁護人は、辞任の申出をした場合であっても、裁判所が正当な理由があると認めて解任しない限り、その地位を失うものではない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51830/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "38条の3（国選弁護人の解任事由）は判決後（平成16年改正）に設けられた規定である。判例の結論はこの規定の下でも変わらないと解されている。"
+   ],
+   "id": "exp-yobi-2023-keiso-q19-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
