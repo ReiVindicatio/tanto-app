@@ -1,0 +1,279 @@
+{
+ "question_id": "yobi-2021-shoho-q25",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q25-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。株主総会で議決権を行使できる株主が買取請求権を行使するには、総会に先立つ反対の通知と、総会での反対の両方が必要である。",
+   "body": "会社法785条1項は、吸収合併等をする場合には「反対株主は、消滅株式会社等に対し、自己の有する株式を公正な価格で買い取ることを請求することができる。」と定める。そして同条2項1号イは、株主総会の決議を要する場合の反対株主を「当該株主総会に先立って当該吸収合併等に反対する旨を当該消滅株式会社等に対し通知し、かつ、当該株主総会において当該吸収合併等に反対した株主（当該株主総会において議決権を行使することができるものに限る。）」としている。したがって、議決権を行使できる株主は、事前の反対通知と総会での反対の両方をしなければ反対株主に当たらず、株式買取請求権を行使できないから、本肢は正しい。なお、議決権を行使できない株主は、同号ロにより、これらの手続なしに反対株主となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "785",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "反対株主は、消滅株式会社等に対し、自己の有する株式を公正な価格で買い取ることを請求することができる。",
+     "text_sha256": "97607594fbf2696764a8ecdd120094d239bf8bcf2e5a2eb7613ab5259427149d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "785",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該株主総会に先立って当該吸収合併等に反対する旨を当該消滅株式会社等に対し通知し、かつ、当該株主総会において当該吸収合併等に反対した株主（当該株主総会において議決権を行使することができるものに限る。）",
+     "text_sha256": "97607594fbf2696764a8ecdd120094d239bf8bcf2e5a2eb7613ab5259427149d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "785",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該株主総会において議決権を行使することができない株主",
+     "text_sha256": "97607594fbf2696764a8ecdd120094d239bf8bcf2e5a2eb7613ab5259427149d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q25-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q25-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。公開会社でない存続会社が譲渡制限株式を対価として交付する場合には、簡易合併の要件を満たしても株主総会の承認を省略できない。",
+   "body": "全部の株式に譲渡制限の定款の定めを設けた株式会社は、会社法2条5号の公開会社（「その発行する全部又は一部の株式の内容として譲渡による当該株式の取得について株式会社の承認を要する旨の定款の定めを設けていない株式会社をいう。」）に当たらず、その株式は譲渡制限株式である。存続会社は原則として同法795条1項により「株主総会の決議によって、吸収合併契約等の承認を受けなければならない。」。同法796条2項本文は、交付する株式の数に一株当たり純資産額を乗じて得た額などの割合が五分の一を超えない場合（簡易合併）にはこれを適用しないとするが、同項ただし書は「前項ただし書に規定する場合は、この限りでない。」とする。そして同条1項ただし書は、交付する金銭等の全部又は一部が「存続株式会社等の譲渡制限株式である場合であって、存続株式会社等が公開会社でないときは、この限りでない。」と定める。本肢の存続会社はこれに当たるから、五分の一を超えないときでも株主総会の承認が必要であり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その発行する全部又は一部の株式の内容として譲渡による当該株式の取得について株式会社の承認を要する旨の定款の定めを設けていない株式会社をいう。",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "795",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の決議によって、吸収合併契約等の承認を受けなければならない。",
+     "text_sha256": "9ccda8decdd59452044128675f745384e48fa4d4ee01387207d1948086b5eb79",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "796",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項ただし書に規定する場合は、この限りでない。",
+     "text_sha256": "d9fb4c545bb29a1bff3d3f67c10e70381fc11964deb004aaab73437dfa495839",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "796",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "存続株式会社等の譲渡制限株式である場合であって、存続株式会社等が公開会社でないときは、この限りでない。",
+     "text_sha256": "d9fb4c545bb29a1bff3d3f67c10e70381fc11964deb004aaab73437dfa495839",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q25-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q25-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。吸収合併が法令又は定款に違反し、消滅会社の株主が不利益を受けるおそれがあるときは、その株主は差止めを請求できる。",
+   "body": "会社法784条の2柱書本文は「次に掲げる場合において、消滅株式会社等の株主が不利益を受けるおそれがあるときは、消滅株式会社等の株主は、消滅株式会社等に対し、吸収合併等をやめることを請求することができる。」と定め、同条1号に「当該吸収合併等が法令又は定款に違反する場合」を掲げる。本肢はこの規定の内容どおりである。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "784_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる場合において、消滅株式会社等の株主が不利益を受けるおそれがあるときは、消滅株式会社等の株主は、消滅株式会社等に対し、吸収合併等をやめることを請求することができる。",
+     "text_sha256": "e67e43e0f4f37b71cfccff14618a2f9b24ea9f287287c19a94fc352f44251751",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "784_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該吸収合併等が法令又は定款に違反する場合",
+     "text_sha256": "e67e43e0f4f37b71cfccff14618a2f9b24ea9f287287c19a94fc352f44251751",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q25-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q25-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。吸収合併の無効は、効力が生じた日から6か月以内に、訴えをもってのみ主張できる。",
+   "body": "会社法828条1項柱書は「次の各号に掲げる行為の無効は、当該各号に定める期間に、訴えをもってのみ主張することができる。」と定め、7号で「会社の吸収合併　吸収合併の効力が生じた日から六箇月以内」と定める。したがって、吸収合併無効の訴えの提訴期間は効力発生日から6か月以内であり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "828",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次の各号に掲げる行為の無効は、当該各号に定める期間に、訴えをもってのみ主張することができる。",
+     "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "828",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社の吸収合併　吸収合併の効力が生じた日から六箇月以内",
+     "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q25-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q25-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。存続会社は、吸収合併契約の内容を記載した書面等を、効力発生日後6か月を経過する日まで本店に備え置かなければならない。",
+   "body": "誤りは、吸収合併の効力発生後は備え置く必要が「ない」とする部分である。会社法794条1項は、存続株式会社等は「吸収合併契約等備置開始日から効力発生日後六箇月を経過する日までの間、吸収合併契約等の内容その他法務省令で定める事項を記載し、又は記録した書面又は電磁的記録をその本店に備え置かなければならない。」と定める。このように、事前の備置きの期間は効力発生日で終わらず、その後6か月を経過する日まで続く。また、備置きの始期も契約締結日ではなく、同条2項の定める吸収合併契約等備置開始日（株主総会の日の二週間前の日などのいずれか早い日）である。加えて、同法801条3項は、効力発生日後に作成する承継した権利義務等に関する書面等について、存続会社に「効力発生日から六箇月間」の備置きを求めている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "794",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収合併契約等備置開始日から効力発生日後六箇月を経過する日までの間、吸収合併契約等の内容その他法務省令で定める事項を記載し、又は記録した書面又は電磁的記録をその本店に備え置かなければならない。",
+     "text_sha256": "4e4535789f1cdc6a5aa75afeec14fb0dd5b653012cb68336cb021e74a84f688f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "794",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該株主総会の日の二週間前の日",
+     "text_sha256": "4e4535789f1cdc6a5aa75afeec14fb0dd5b653012cb68336cb021e74a84f688f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "801",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "効力発生日から六箇月間",
+     "text_sha256": "9769fd88db799c60e006a2aebe553458dcd2abc4e5254937683431dfaa96ce34",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q25-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

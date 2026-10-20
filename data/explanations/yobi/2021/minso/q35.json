@@ -1,0 +1,175 @@
+{
+ "question_id": "yobi-2021-minso-q35",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minso-q35-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。債務者Ａは訴訟の当事者ではなく、115条1項各号のいずれにも当たらないから、判決の効力はＡに及ばない。",
+   "body": "誤りは、判決の効力が「Ａに対して及ぶ」とする部分である。確定判決の効力が及ぶ者は115条1項が定めており、その中心は「当事者」（1号）である。本肢の訴訟はＸとＹの間で債権の帰属を争うもので、債務者Ａは当事者ではない。Ａは当事者が他人のために原告又は被告となった場合のその他人（2号）でも、口頭弁論終結後の承継人（3号）や請求の目的物の所持者（4号）でもない。したがって、債権がＸに帰属するとの判決が確定しても、その効力はＡに及ばない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決は、次に掲げる者に対してその効力を有する。",
+     "text_sha256": "4cd8790c0a15a6de1c5356b0aa7a8ee3d090bc4348db553dd1f1a921da012ee1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-minso-q35-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minso-q35-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。訴えられていない連帯債務者Ｚは当事者ではなく、相殺を理由とする一部棄却判決であっても、その効力はＺに及ばない。",
+   "body": "誤りは、判決の効力が「Ｚに及ぶ」とする部分である。確定判決の効力が及ぶ者は115条1項に限られ、ＸがＹだけを訴えた本肢では、Ｚは「当事者」（1号）ではなく、2号から4号のいずれにも当たらない。実体法上、連帯債務者の一人がした相殺が他の連帯債務者のためにも効力を持つ場合があるとしても、それは実体法上の効果の問題であって、判決の効力が第三者に及ぶことを意味しない。判決の効力を当事者以外の第三者に事実上及ぼす「反射効」は、判例上認められていないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決は、次に掲げる者に対してその効力を有する。",
+     "text_sha256": "4cd8790c0a15a6de1c5356b0aa7a8ee3d090bc4348db553dd1f1a921da012ee1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "反射効を否定する判例の確認はしていない（解釈による）。"
+   ],
+   "id": "exp-yobi-2021-minso-q35-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minso-q35-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。口頭弁論終結前からの転借人Ｚは、「口頭弁論終結後の承継人」に当たらないから、判決の効力は及ばない。",
+   "body": "115条1項3号は、当事者等の「口頭弁論終結後の承継人」に判決の効力を及ぼしている。本肢のＺは口頭弁論終結の前から土地を転借しているので、口頭弁論終結後の承継人には当たらない。また、転借人は自己の転借権に基づいて自分のために土地を占有しているから、当事者のために請求の目的物を所持する者（4号）にも当たらないと解されている。したがって、Ｘ勝訴の判決の効力はＺには及ばず、ＸがＺに対して明渡しを求めるにはＺを被告とする必要がある。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決は、次に掲げる者に対してその効力を有する。",
+     "text_sha256": "4cd8790c0a15a6de1c5356b0aa7a8ee3d090bc4348db553dd1f1a921da012ee1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-minso-q35-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minso-q35-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。Ｙの委託により無償で動産を保管するＺは、Ｙのために請求の目的物を所持する者（115条1項4号）に当たり、判決の効力が及ぶ。",
+   "body": "115条1項4号は、当事者等の「ために請求の目的物を所持する者」にも判決の効力を及ぼしている。これは、もっぱら当事者のために目的物を所持していて、所持について自己固有の利益を持たない者をいうと解されており、受寄者や管理人がその典型とされる。本肢のＺはＹの委託に基づき無償で動産を保管しているだけで、自己固有の利益に基づいて所持しているわけではないから、4号の所持者に当たる。4号は3号と異なり口頭弁論終結の前後を問わないので、Ｚが口頭弁論終結の前から保管していても、判決の効力はＺに及ぶ。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決は、次に掲げる者に対してその効力を有する。",
+     "text_sha256": "4cd8790c0a15a6de1c5356b0aa7a8ee3d090bc4348db553dd1f1a921da012ee1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-minso-q35-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minso-q35-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。法人を被告として代表役員の地位の確認を求める訴えの認容判決は、対世的効力を有するとするのが判例である。",
+   "body": "誤りは、判決が「対世的効力を有しない」とする部分である。宗教法人の代表役員の地位の確認を求める訴えは、法人を被告とすべきものとされ、法人を被告とする確認判決が確定すれば、その者が法人の代表役員の地位にあることが法人との間で確定する。事柄の性質上、何人もその地位を認めるべきものであるから、この判決は対世的効力を有すると解されている。判例あり（要確認）。民事訴訟法115条1項は判決の効力が及ぶ者を当事者などに限っているが、本肢の判決はその例外として扱われることになる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決は、次に掲げる者に対してその効力を有する。",
+     "text_sha256": "4cd8790c0a15a6de1c5356b0aa7a8ee3d090bc4348db553dd1f1a921da012ee1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "宗教法人の代表役員の地位確認判決が対世的効力を有するとする最高裁判決を courts.go.jp で2回探したが、判決ページ・判決文で確認できなかった（要確認）。"
+   ],
+   "id": "exp-yobi-2021-minso-q35-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

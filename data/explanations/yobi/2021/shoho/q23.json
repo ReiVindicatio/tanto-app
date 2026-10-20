@@ -1,0 +1,247 @@
+{
+ "question_id": "yobi-2021-shoho-q23",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q23-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。資本金の額を減少する場合、会社の債権者は資本金の額の減少について異議を述べることができる。",
+   "body": "会社法449条1項本文は「株式会社が資本金又は準備金（以下この条において「資本金等」という。）の額を減少する場合（減少する準備金の額の全部を資本金とする場合を除く。）には、当該株式会社の債権者は、当該株式会社に対し、資本金等の額の減少について異議を述べることができる。」と定める。同項ただし書の例外は「準備金の額のみを減少する場合」に限られており、資本金の額の減少には及ばない。資本金は債権者のために会社に留保すべき財産の基準となる額であり、その減少は債権者の利害に直結するため、債権者保護手続が設けられていると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "449",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社が資本金又は準備金（以下この条において「資本金等」という。）の額を減少する場合（減少する準備金の額の全部を資本金とする場合を除く。）には、当該株式会社の債権者は、当該株式会社に対し、資本金等の額の減少について異議を述べることができる。",
+     "text_sha256": "39d0705e0a858e8d4b9767115e67b26e2a13a2ee82c6c94d630a64e3251d0d91",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "449",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "準備金の額のみを減少する場合",
+     "text_sha256": "39d0705e0a858e8d4b9767115e67b26e2a13a2ee82c6c94d630a64e3251d0d91",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "債権者保護手続の趣旨の説明は解釈による"
+   ],
+   "id": "exp-yobi-2021-shoho-q23-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q23-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。剰余金の額を減少して準備金の額を増加するには、株主総会の決議が必要である。",
+   "body": "誤りは、株主総会の決議に「よることなく」できるとする部分である。会社法451条1項は「株式会社は、剰余金の額を減少して、準備金の額を増加することができる。」とし、その場合には減少する剰余金の額などを定めなければならないとする。そして同条2項は「前項各号に掲げる事項の決定は、株主総会の決議によらなければならない。」と定めている。したがって、剰余金の額を減少してその分を準備金とするには株主総会の決議を要し、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "451",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、剰余金の額を減少して、準備金の額を増加することができる。",
+     "text_sha256": "86771377ad78c3e24b9acba5c467cbfe54bd8eace9b2df8d018140225c7fbdda",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "451",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項各号に掲げる事項の決定は、株主総会の決議によらなければならない。",
+     "text_sha256": "86771377ad78c3e24b9acba5c467cbfe54bd8eace9b2df8d018140225c7fbdda",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q23-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q23-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。払込み又は給付の額のうち資本金として計上しないこととした額は、資本準備金として計上しなければならない。",
+   "body": "会社法445条1項は、資本金の額は、原則として「設立又は株式の発行に際して株主となる者が当該株式会社に対して払込み又は給付をした財産の額とする。」と定める。同条2項は「前項の払込み又は給付に係る額の二分の一を超えない額は、資本金として計上しないことができる。」とし、同条3項は「前項の規定により資本金として計上しないこととした額は、資本準備金として計上しなければならない。」と定める。したがって、設立に際して資本金として計上しないこととされた額は資本準備金として計上されなければならず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "445",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設立又は株式の発行に際して株主となる者が当該株式会社に対して払込み又は給付をした財産の額とする。",
+     "text_sha256": "96e4c4e13ca75e4f06a3e6da8166bbace9af8037f7f88af2534e23b63a7268c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "445",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の払込み又は給付に係る額の二分の一を超えない額は、資本金として計上しないことができる。",
+     "text_sha256": "96e4c4e13ca75e4f06a3e6da8166bbace9af8037f7f88af2534e23b63a7268c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "445",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前項の規定により資本金として計上しないこととした額は、資本準備金として計上しなければならない。",
+     "text_sha256": "96e4c4e13ca75e4f06a3e6da8166bbace9af8037f7f88af2534e23b63a7268c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q23-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q23-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。会社の組織に関する行為の無効の訴えの対象に準備金の額の減少は含まれていないから、その無効は訴えによらずに主張できる。",
+   "body": "会社法828条1項柱書は「次の各号に掲げる行為の無効は、当該各号に定める期間に、訴えをもってのみ主張することができる。」と定め、計算に関するものとしては5号で「株式会社における資本金の額の減少」を掲げている。しかし、同項各号には準備金の額の減少は掲げられていない。そのため、準備金の額の減少に無効原因がある場合には、訴えによる必要はなく、一般原則に従っていつでも誰でもその無効を主張できると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "828",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次の各号に掲げる行為の無効は、当該各号に定める期間に、訴えをもってのみ主張することができる。",
+     "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "828",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社における資本金の額の減少",
+     "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "準備金の額の減少の無効を一般原則によって主張できるとする点は解釈による"
+   ],
+   "id": "exp-yobi-2021-shoho-q23-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q23-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。資本金の額は登記事項であるから、資本金の額を減少したときは変更の登記をしなければならない。",
+   "body": "会社法911条3項は、株式会社の設立の登記において登記しなければならない事項として、5号に「資本金の額」を掲げている。そして同法915条1項は「会社において第九百十一条第三項各号又は前三条各号に掲げる事項に変更が生じたときは、二週間以内に、その本店の所在地において、変更の登記をしなければならない。」と定める。資本金の額を減少すれば登記事項である資本金の額に変更が生じるから、変更の登記をしなければならない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "911",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "資本金の額",
+     "text_sha256": "56343fd3641b8d54245c3b12bab878cbdf7e9de83d41e9e0d92349ec4858cda2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "915",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社において第九百十一条第三項各号又は前三条各号に掲げる事項に変更が生じたときは、二週間以内に、その本店の所在地において、変更の登記をしなければならない。",
+     "text_sha256": "9ebbe51e21c5432f6047b17389ce62b18f65d50e9a26f60ebd18a4a7713b68f9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q23-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

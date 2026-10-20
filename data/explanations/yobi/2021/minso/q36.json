@@ -1,0 +1,199 @@
+{
+ "question_id": "yobi-2021-minso-q36",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minso-q36-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。反訴の提起は、訴訟代理人が特別の委任を受けなければならない事項である（55条2項1号）。",
+   "body": "誤りは「特別の委任を受けることなく」反訴を提起できるとする部分である。55条2項は、訴訟代理人は次に掲げる事項については「特別の委任を受けなければならない」と定め、その1号に「反訴の提起」を掲げている。55条1項は、訴訟代理人が反訴に関する訴訟行為をすることができると定めているが、これは相手方が提起した反訴に応訴するなどの行為を指すと解されており、自ら反訴を提起するには特別の委任が必要である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "55",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟代理人は、委任を受けた事件について、反訴、参加、強制執行、仮差押え及び仮処分に関する訴訟行為をし、かつ、弁済を受領することができる。",
+     "text_sha256": "6f80d47d20cba16e005741afaa35da61b9bbcda46df910e182c8ee4b11050b90",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "55",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "訴訟代理人は、次に掲げる事項については、特別の委任を受けなければならない。",
+     "text_sha256": "6f80d47d20cba16e005741afaa35da61b9bbcda46df910e182c8ee4b11050b90",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-minso-q36-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minso-q36-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。補助参加人は他人の訴訟を補助する者にすぎず、被参加人のために新たな請求を立てる反訴を提起することはできないと解されている。",
+   "body": "45条1項本文は、補助参加人は「攻撃又は防御の方法の提出、異議の申立て、上訴の提起、再審の訴えの提起その他一切の訴訟行為をすることができる」と定めている。しかし、補助参加人は当事者ではなく、既に係属している被参加人の訴訟を補助する立場にとどまる。反訴の提起は、被参加人を当事者とする新たな訴訟上の請求を定立するもので、訴訟物を設定・変更する行為であるから、補助参加人の権限を超え、することができないと解されている（訴えの変更や請求の放棄・認諾なども同様とされる）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "補助参加人は、訴訟について、攻撃又は防御の方法の提出、異議の申立て、上訴の提起、再審の訴えの提起その他一切の訴訟行為をすることができる。",
+     "text_sha256": "6e9243978c9072a053a3bb780291c7ecc9f06197fd47249d24bf84f74f10d5c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による。"
+   ],
+   "id": "exp-yobi-2021-minso-q36-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minso-q36-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。反訴には訴えに関する規定が適用されるから（146条4項）、反訴状も裁判所が反訴被告に送達しなければならない（138条1項）。",
+   "body": "誤りは、反訴状は直接送付で足り「裁判所が送達することを要しない」とする部分である。146条4項は「反訴については、訴えに関する規定による。」と定めている。そして訴えに関する規定である138条1項は「訴状は、被告に送達しなければならない。」と定めている。したがって、反訴状も、本訴の訴状と同じく、裁判所が反訴被告（本訴原告）に送達しなければならない。当事者間の直送で足りるのは準備書面などであり、訴えを提起する書面には当たらない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "146",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "反訴については、訴えに関する規定による。",
+     "text_sha256": "c23f7c4ce465c3da64ad908f5e7b215e2ddf1de42a3d9fbb46390662ff1a1ddc",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "138",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴状は、被告に送達しなければならない。",
+     "text_sha256": "8ca1ca93f653346ac62e2e4f81d69c6d5d97389ecb5f3e22b34532a597d234e3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-minso-q36-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minso-q36-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。本訴の取下げがあった場合における反訴の取下げには、相手方の同意を要しない（261条2項ただし書）。",
+   "body": "261条2項本文は、相手方が本案について準備書面を提出するなどした後の訴えの取下げには、相手方の同意を得なければ効力を生じないとしている。しかし、同項ただし書は「本訴の取下げがあった場合における反訴の取下げについては、この限りでない。」と定めている。反訴被告（本訴原告）は自ら本訴を取り下げて反訴の前提を失わせた以上、反訴原告による反訴の取下げに異議を述べる利益を保護する必要はないからである。したがって、本訴取下げ後の反訴の取下げには反訴被告の同意を要しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "261",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "ただし、本訴の取下げがあった場合における反訴の取下げについては、この限りでない。",
+     "text_sha256": "fc4d05f19d3ea83f0aa54ffe746161170d1803be7f427b32c03008b4b9e6f247",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-minso-q36-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-minso-q36-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。相手方の同意があれば反訴を提起できるのは控訴審であり（300条1項）、上告審では相手方の同意があっても反訴を提起できないと解されている。",
+   "body": "誤りは、上告審でも「相手方の同意がある場合に限り」反訴を提起できるとする部分である。300条1項は「控訴審においては、反訴の提起は、相手方の同意がある場合に限り、することができる。」と定めており、これは事実審である控訴審についての規定である。上告審は法律審であり、新たな請求について事実を認定して審理することは予定されていないから、相手方の同意があっても反訴を提起することはできないと解されている。判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "300",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "控訴審においては、反訴の提起は、相手方の同意がある場合に限り、することができる。",
+     "text_sha256": "81607eea8be75a5acaaf581adaf28c0d715167c453f6629427aacbcc1279c843",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "上告審で反訴を提起できないとする判例は検索していない（要確認）。解釈による。"
+   ],
+   "id": "exp-yobi-2021-minso-q36-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

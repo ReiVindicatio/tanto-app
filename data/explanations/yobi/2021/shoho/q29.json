@@ -1,0 +1,238 @@
+{
+ "question_id": "yobi-2021-shoho-q29",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q29-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。約束手形の効力は手形法75条の記載事項がそろっているかで決まり、統一手形用紙を使ったかどうかは効力に関係しない。",
+   "body": "手形法75条は「約束手形ニハ左ノ事項ヲ記載スベシ」として約束手形文句・金額・満期・支払地・受取人・振出日及び振出地・振出人の署名を掲げ、同法76条1項は「前条ニ掲グル事項ノ何レカヲ欠ク証券ハ約束手形タル効力ヲ有セズ」と定める。手形の効力を左右するのはこれらの記載事項であり、手形法には用紙の規格・様式を定めた規定はない。全国銀行協会が定めた統一手形用紙は、銀行が支払を取り扱う際の取引上の取決め（当座勘定取引）で使われるものであり、その用紙によらないことは手形の効力に影響しないと解されている。したがって、統一手形用紙によらないで振り出された約束手形も、必要的記載事項を備えていれば有効であり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "75",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "約束手形ニハ左ノ事項ヲ記載スベシ",
+     "text_sha256": "efb7e65358b3e7892f2e6af4e776b3fe10f53557d3694d6a5b88c5a731af2849",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "76",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条ニ掲グル事項ノ何レカヲ欠ク証券ハ約束手形タル効力ヲ有セズ",
+     "text_sha256": "f71647e4042448065f9f3d8b815ed61337c324a82f83d7211bdd91618f6df0e3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "統一手形用紙が銀行取引上の取決めにすぎず手形の効力に影響しないとする点は解釈による"
+   ],
+   "id": "exp-yobi-2021-shoho-q29-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q29-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。第三者の住所で支払う旨の記載（第三者方払文句）は、手形法77条2項が準用する4条により許されている。",
+   "body": "手形法4条は「為替手形ハ支払人ノ住所地ニ在ルト又ハ其ノ他ノ地ニ在ルトヲ問ハズ第三者ノ住所ニ於テ支払フベキモノト為スコトヲ得」と定める。同法77条2項は「第三者方ニテ又ハ支払人ノ住所地ニ非ザル地ニ於テ支払ヲ為スベキ為替手形（第四条及第二十七条）」に関する規定を約束手形に準用している。したがって、約束手形にも第三者の住所で支払うべき旨を記載することができ、その記載があっても手形は有効である（実務上、銀行を支払場所とする記載がこれに当たると解されている）。本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "為替手形ハ支払人ノ住所地ニ在ルト又ハ其ノ他ノ地ニ在ルトヲ問ハズ第三者ノ住所ニ於テ支払フベキモノト為スコトヲ得",
+     "text_sha256": "78e926b12d115a23fd6c71a0be1074df430c6aa934d8916576f268a8b71f53de",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第三者方ニテ又ハ支払人ノ住所地ニ非ザル地ニ於テ支払ヲ為スベキ為替手形（第四条及第二十七条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "銀行の支払場所の記載が第三者方払文句に当たるとする点は解釈による"
+   ],
+   "id": "exp-yobi-2021-shoho-q29-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q29-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。数字で重複して記載した金額に差異があっても手形は無効にならず、最小金額が手形金額となる。",
+   "body": "誤りは、当該約束手形は「無効である」とする部分である。手形法6条2項は「為替手形ノ金額ヲ文字ヲ以テ又ハ数字ヲ以テ重複シテ記載シタル場合ニ於テ其ノ金額ニ差異アルトキハ最小金額ヲ手形金額トス」と定め、同法77条2項は「支払金額ニ関スル記載ノ差異（第六条）」に関する規定を約束手形に準用している。つまり、金額の記載に差異があるときは、法律が手形金額を定める基準を置いており、手形を無効とはしていない。したがって、数字で記載された二つの金額に差異がある約束手形は有効で、小さいほうの金額が手形金額となるから、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "6",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "為替手形ノ金額ヲ文字ヲ以テ又ハ数字ヲ以テ重複シテ記載シタル場合ニ於テ其ノ金額ニ差異アルトキハ最小金額ヲ手形金額トス",
+     "text_sha256": "f290dc114aba15b3ebce435f5353dd57593eb464bc440d5985b980d900aec391",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "支払金額ニ関スル記載ノ差異（第六条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q29-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q29-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、満期の日として振出日より前の日が記載された確定日払の約束手形は無効であるとしている。",
+   "body": "手形法75条は約束手形の記載事項として「満期ノ表示」と「手形ヲ振出ス日及地ノ表示」を掲げる。最高裁判所第一小法廷平成9年2月27日判決は、満期の日として振出日より前の日が記載されている確定日払の約束手形は無効であるとした。満期が振出日より前という記載は手形の記載自体から矛盾しており、そのような手形は満期の記載として認められないと解されている。したがって、本肢は判例の趣旨に合致し、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "75",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "満期ノ表示",
+     "text_sha256": "efb7e65358b3e7892f2e6af4e776b3fe10f53557d3694d6a5b88c5a731af2849",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "75",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "手形ヲ振出ス日及地ノ表示",
+     "text_sha256": "efb7e65358b3e7892f2e6af4e776b3fe10f53557d3694d6a5b88c5a731af2849",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "満期の日として振出日より前の日が記載されている確定日払の約束手形の効力（平成6年(オ)第363号）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1997-02-27",
+     "holding": "満期の日として振出日より前の日が記載されている確定日払の約束手形は無効である。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52543/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "記載の矛盾を理由とする説明は解釈による"
+   ],
+   "id": "exp-yobi-2021-shoho-q29-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q29-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。平年の2月29日という満期の記載は2月末日を記載したものと解され、手形は無効にならないと解されている。",
+   "body": "誤りは、当該約束手形は「無効である」とする部分である。手形法75条は「満期ノ表示」を記載事項とするが、暦に存在しない日が記載されたときに直ちに手形を無効とする規定はない。平年における2月29日という記載は、手形の記載から合理的に解釈して2月末日を満期として記載したものと読むことができ、そのような約束手形は2月末日を満期とする有効な手形と解されている。この点については判例あり（要確認）。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "75",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "満期ノ表示",
+     "text_sha256": "efb7e65358b3e7892f2e6af4e776b3fe10f53557d3694d6a5b88c5a731af2849",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "平年の2月29日を満期とする手形の効力に関する最高裁判例は courts.go.jp で2回探したが確認できなかったため、判例あり（要確認）とした",
+    "2月末日と解して有効とする点は解釈による"
+   ],
+   "id": "exp-yobi-2021-shoho-q29-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

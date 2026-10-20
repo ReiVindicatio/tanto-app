@@ -1,0 +1,236 @@
+{
+ "question_id": "yobi-2021-shoho-q27",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q27-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。登記すべき事項は登記前は善意の第三者に対抗できず、登記後も正当な事由で知らなかった第三者には対抗できない。",
+   "body": "商法9条1項は「この編の規定により登記すべき事項は、登記の後でなければ、これをもって善意の第三者に対抗することができない。登記の後であっても、第三者が正当な事由によってその登記があることを知らなかったときは、同様とする。」と定める。前段が登記前の効力（善意の第三者に対抗できない）、後段が登記後の例外（正当な事由によって登記を知らなかった第三者には対抗できない）を定めており、本肢はこの内容どおりである。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この編の規定により登記すべき事項は、登記の後でなければ、これをもって善意の第三者に対抗することができない。登記の後であっても、第三者が正当な事由によってその登記があることを知らなかったときは、同様とする。",
+     "text_sha256": "b98c2d7e47a8efbd6d2ed904e4cb346275b0eba8f02625a9964efacee0a3338b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q27-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q27-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。不実の登記をした会社がその不実を対抗できないのは善意の第三者であり、悪意の第三者には対抗できる。",
+   "body": "誤りは、不実であることを「悪意の第三者」に対抗することができないとする部分である。株式会社の登記の効力については会社法908条が定めており、同条2項は「故意又は過失によって不実の事項を登記した者は、その事項が不実であることをもって善意の第三者に対抗することができない。」と定める。保護されるのは登記を信頼した善意の第三者であり、登記が不実であることを知っている悪意の第三者は保護されない。したがって、会社は悪意の第三者に対しては不実であることを対抗でき、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "908",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "故意又は過失によって不実の事項を登記した者は、その事項が不実であることをもって善意の第三者に対抗することができない。",
+     "text_sha256": "c26e29d1192818808da0455643c62a2dc5d7a98be44a6ceb96e6923c612775f6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q27-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q27-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。商業登記に、登記事項が真実であると推定する法律上の推定力を認めた規定はない。",
+   "body": "誤りは、商業登記に「法律上の推定力」があるとする部分である。商法9条1項や会社法908条1項が定めるのは、登記すべき事項を「善意の第三者に対抗することができない」かどうかという対抗力の問題であり、登記された事項を真実と推定する旨の規定は置かれていない。そのため、商業登記には法律上の推定力はなく、登記された事項は真実であろうと事実上推認されるにとどまる（事実上の推定力）と解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "善意の第三者に対抗することができない",
+     "text_sha256": "b98c2d7e47a8efbd6d2ed904e4cb346275b0eba8f02625a9964efacee0a3338b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "908",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "善意の第三者に対抗することができない",
+     "text_sha256": "c26e29d1192818808da0455643c62a2dc5d7a98be44a6ceb96e6923c612775f6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "事実上の推定力にとどまるとする点は解釈による"
+   ],
+   "id": "exp-yobi-2021-shoho-q27-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q27-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。商号の登記は任意だが、登記した事項に変更が生じたときは遅滞なく変更の登記をしなければならない。",
+   "body": "商法11条2項は「商人は、その商号の登記をすることができる。」と定め、個人商人の商号の登記は任意である（小商人には同法7条により同項は適用されない）。しかし、いったん登記した以上、同法10条により「この編の規定により登記した事項に変更が生じ、又はその事項が消滅したときは、当事者は、遅滞なく、変更の登記又は消滅の登記をしなければならない。」。したがって、商号を登記した個人商人がその商号を変更したときは変更の登記をしなければならず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "11",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "商人は、その商号の登記をすることができる。",
+     "text_sha256": "b6d9ea1fcb08be2ef1554ab1d192ab611b46bd7686016647efcdcceb56fd8314",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第十一条第二項",
+     "text_sha256": "6ccc4aaf473ebe394a42c58a0e720fa9f6d98a7e4cf268c8d0e6364ac1aa8d1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "10",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この編の規定により登記した事項に変更が生じ、又はその事項が消滅したときは、当事者は、遅滞なく、変更の登記又は消滅の登記をしなければならない。",
+     "text_sha256": "94a4493930e44e5abcd8dc81d1a0c035e621cc7876c79969847a49eb39d1fcb3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q27-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q27-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、代表取締役の退任が登記された後の取引には登記の効力の規定のみが適用され、代理権消滅後の表見代理の規定は適用も類推適用もされないとしている。",
+   "body": "誤りは、民法の代理権消滅後の表見代理に関する規定が「適用又は類推適用される」とする部分である。会社法908条1項は、登記すべき事項は「登記の後でなければ、これをもって善意の第三者に対抗することができない。」とし、登記後は、第三者が「正当な事由によってその登記があることを知らなかったとき」に限って対抗できないものとしている。判例は、代表取締役の退任及び代表権喪失が登記されたときは、この登記の効力の規定（当時の商法の規定）のみが適用され、民法112条を適用又は類推適用する余地はないとしたとされる（判例あり（要確認））。民法112条1項は代理権の消滅を知らなかった第三者を無過失を要件に保護するが、これを適用すると登記によって善意の第三者にも対抗できるとした登記制度の趣旨が失われるためと解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "908",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "登記の後でなければ、これをもって善意の第三者に対抗することができない。",
+     "text_sha256": "c26e29d1192818808da0455643c62a2dc5d7a98be44a6ceb96e6923c612775f6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "908",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正当な事由によってその登記があることを知らなかったとき",
+     "text_sha256": "c26e29d1192818808da0455643c62a2dc5d7a98be44a6ceb96e6923c612775f6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "112",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人に代理権を与えた者は、代理権の消滅後にその代理権の範囲内においてその他人が第三者との間でした行為について、代理権の消滅の事実を知らなかった第三者に対してその責任を負う。",
+     "text_sha256": "a3ca56ff6d94d8b688574bc27c44fea4d80ba56b417bed57a037da2f1eeef889",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "判例（代表取締役の退任登記後の取引と民法112条）は courts.go.jp で判決を確認できなかったため要確認",
+    "民法112条を適用しない理由づけは解釈による"
+   ],
+   "id": "exp-yobi-2021-shoho-q27-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

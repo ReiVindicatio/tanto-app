@@ -1,0 +1,260 @@
+{
+ "question_id": "yobi-2021-shoho-q17",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q17-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株式取得者が承認請求と併せて買取りを請求するかは任意であり、「請求しなければならない」わけではない。",
+   "body": "誤りは、承認請求と併せて買取りも「請求しなければならない」とする部分である。会社法137条1項は、譲渡制限株式を取得した株式取得者は、株式会社に対し、承認をするか否かの決定をすることを「請求することができる。」と定める。その請求の方法について、同法138条2号ハは、株式会社が承認をしない旨の決定をする場合において、当該株式会社又は指定買取人が譲渡制限株式を「買い取ることを請求するときは、その旨」を明らかにすべきものとしている。つまり、買取りの請求は、株式取得者が望むときに承認請求と併せてすることができるものにとどまり、必ずしなければならないものではない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "137",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "譲渡制限株式を取得した株式取得者は、株式会社に対し、当該譲渡制限株式を取得したことについて承認をするか否かの決定をすることを請求することができる。",
+     "text_sha256": "f2db2f5fb30db5de977c45b33eddd0aa827ac23c5837390294543c0f83beff79",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "138",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社が前条第一項の承認をしない旨の決定をする場合において、当該株式会社又は第百四十条第四項に規定する指定買取人がイの譲渡制限株式を買い取ることを請求するときは、その旨",
+     "text_sha256": "e858ea5a740a81e08ebda83939a741c95ee0e85791874d20ed266248909280c4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q17-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q17-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。株式会社の承認を得ない譲渡制限株式の譲渡は、会社に対する関係では効力を生じないが、譲渡の当事者間では有効と解されている。",
+   "body": "会社法136条・137条1項は、譲渡制限株式の譲渡について、株式会社に承認をするか否かの決定を請求する手続を定めている。また、株券発行会社の株式の譲渡は、同法128条1項により「当該株式に係る株券を交付しなければ、その効力を生じない。」とされ、本肢では株券の交付がされている。承認の制度は、会社にとって好ましくない者が株主となることを防ぎ、会社の利益を守るためのものであるから、承認を得ない譲渡も会社に対する関係で効力を生じないにとどまり、譲渡の当事者間では有効と解されている。この点については判例あり（要確認）。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "136",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "譲渡制限株式の株主は、その有する譲渡制限株式を他人（当該譲渡制限株式を発行した株式会社を除く。）に譲り渡そうとするときは、当該株式会社に対し、当該他人が当該譲渡制限株式を取得することについて承認をするか否かの決定をすることを請求することができる。",
+     "text_sha256": "e5d33d624779c1d60ebf63742f69e00bbf678118a538b9c81e62c72f800953bd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "137",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "譲渡制限株式を取得した株式取得者は、株式会社に対し、当該譲渡制限株式を取得したことについて承認をするか否かの決定をすることを請求することができる。",
+     "text_sha256": "f2db2f5fb30db5de977c45b33eddd0aa827ac23c5837390294543c0f83beff79",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "128",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該株式に係る株券を交付しなければ、その効力を生じない。",
+     "text_sha256": "9d48b6d8c7cf51bb89265ffdeed505701cb0ffe9fa95c9d9dbd7531198cc72ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "承認のない譲渡が当事者間では有効とする最高裁判例（旧商法下）は、courts.go.jp で判決を確認できなかったため要確認とした",
+    "承認制度の趣旨の説明は解釈による"
+   ],
+   "id": "exp-yobi-2021-shoho-q17-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q17-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。相続などの一般承継で譲渡制限株式を取得した者に対し、会社に売り渡すよう請求できる旨を定款で定めることができる。",
+   "body": "会社法174条は「株式会社は、相続その他の一般承継により当該株式会社の株式（譲渡制限株式に限る。）を取得した者に対し、当該株式を当該株式会社に売り渡すことを請求することができる旨を定款で定めることができる。」と定める。相続による取得は「譲渡」による取得ではないため承認の対象とならないが、この定款の定めにより、会社は好ましくない者が株主として残ることを防ぐことができる。本肢は同条の内容そのものであるから、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "174",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、相続その他の一般承継により当該株式会社の株式（譲渡制限株式に限る。）を取得した者に対し、当該株式を当該株式会社に売り渡すことを請求することができる旨を定款で定めることができる。",
+     "text_sha256": "d9b84e7b1da67edb6461ab9f3a53f1ce6272a6ffc97b64bbaf2b38e2638e056f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "相続による取得が承認の対象とならないとする点は解釈による"
+   ],
+   "id": "exp-yobi-2021-shoho-q17-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q17-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。期間内に決定の内容を通知しなかったときは、承認しない旨ではなく、承認をする旨の決定をしたものとみなされる。",
+   "body": "誤りは、「譲渡を承認しない旨の決定をしたものとみなされる」とする部分である。会社法145条柱書本文は、同条各号の場合には「株式会社は、第百三十六条又は第百三十七条第一項の承認をする旨の決定をしたものとみなす。」と定める。そして同条1号は、請求の日から「二週間（これを下回る期間を定款で定めた場合にあっては、その期間）以内に第百三十九条第二項の規定による通知をしなかった場合」を掲げる。同条ただし書は、株式会社と譲渡等承認請求者との合意により別段の定めをしたときを除外している。したがって、期間内に通知がないときは承認したものとみなされるのであり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "145",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、第百三十六条又は第百三十七条第一項の承認をする旨の決定をしたものとみなす。",
+     "text_sha256": "594f10447938f8de3988b2d530bab9f944b5cd6c65e429cfbd2e50cdbf638206",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "145",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二週間（これを下回る期間を定款で定めた場合にあっては、その期間）以内に第百三十九条第二項の規定による通知をしなかった場合",
+     "text_sha256": "594f10447938f8de3988b2d530bab9f944b5cd6c65e429cfbd2e50cdbf638206",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q17-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q17-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。ある種類の株式に譲渡制限の定めを設ける定款変更では、当該種類の株式を目的とする新株予約権の新株予約権者に買取請求権が認められる。",
+   "body": "会社法118条1項は、同項各号の定款の変更をする場合には、各号に定める新株予約権の新株予約権者は「自己の有する新株予約権を公正な価格で買い取ることを請求することができる。」と定める。同項2号は「ある種類の株式の内容として第百八条第一項第四号又は第七号に掲げる事項についての定款の定めを設ける定款の変更」について「当該種類の株式を目的とする新株予約権」を掲げる。そして同法108条1項4号の事項は「譲渡による当該種類の株式の取得について当該株式会社の承認を要すること。」である。したがって、本肢の定款変更の場合、当該種類の株式を目的とする新株予約権の新株予約権者は新株予約権買取請求ができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "118",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己の有する新株予約権を公正な価格で買い取ることを請求することができる。",
+     "text_sha256": "45fba70709f4dfb5784c29cf5846fe8bfcc3fcb8756f2d0e187a7646ce226ffb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "118",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ある種類の株式の内容として第百八条第一項第四号又は第七号に掲げる事項についての定款の定めを設ける定款の変更",
+     "text_sha256": "45fba70709f4dfb5784c29cf5846fe8bfcc3fcb8756f2d0e187a7646ce226ffb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "118",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該種類の株式を目的とする新株予約権",
+     "text_sha256": "45fba70709f4dfb5784c29cf5846fe8bfcc3fcb8756f2d0e187a7646ce226ffb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "譲渡による当該種類の株式の取得について当該株式会社の承認を要すること。",
+     "text_sha256": "fef60bc5773a64fa72cfd2243503cdd5ceb008bcfa5426760c207b4f19df6a0e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q17-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,207 @@
+{
+ "question_id": "yobi-2021-shoho-q18",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q18-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。払込期日までに全額を払い込まない募集新株予約権は行使できなくなり、行使できなくなった新株予約権は消滅する。",
+   "body": "会社法246条3項は、募集新株予約権と引換えに金銭の払込みを要する場合には、新株予約権者は、払込期日までに払込金額の全額の払込みをしないときは「当該募集新株予約権を行使することができない。」と定める。そして同法287条は「新株予約権者がその有する新株予約権を行使することができなくなったときは、当該新株予約権は、消滅する。」と定める。したがって、払込期日までに全額の払込みをしない募集新株予約権は行使できなくなり、その結果消滅するから、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "246",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "当該募集新株予約権を行使することができない。",
+     "text_sha256": "a5113437860d330a3b9496caf93609772572653b8c9ca31b5a5e26f42bf43f32",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "287",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "新株予約権者がその有する新株予約権を行使することができなくなったときは、当該新株予約権は、消滅する。",
+     "text_sha256": "4da9777a08b6904797fabc5e1cf8379b7c08f7c7320b99aa02a814ee47d24fc6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q18-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。募集新株予約権の払込みに代えて金銭以外の財産を給付する場合も、会社に対する債権で相殺する場合も、会社の承諾が必要である。",
+   "body": "会社法246条2項は「新株予約権者は、株式会社の承諾を得て、同項の規定による払込みに代えて、払込金額に相当する金銭以外の財産を給付し、又は当該株式会社に対する債権をもって相殺することができる。」と定める。「株式会社の承諾を得て」という要件は、金銭以外の財産の給付と債権による相殺の両方にかかっている。したがって、相殺をする場合にも会社の承諾を得なければならず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "246",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "新株予約権者は、株式会社の承諾を得て、同項の規定による払込みに代えて、払込金額に相当する金銭以外の財産を給付し、又は当該株式会社に対する債権をもって相殺することができる。",
+     "text_sha256": "a5113437860d330a3b9496caf93609772572653b8c9ca31b5a5e26f42bf43f32",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q18-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。現物出資財産の価額の著しい不足について善意・無重過失の新株予約権者は、新株予約権の行使に係る意思表示を取り消すことができる。",
+   "body": "誤りは、善意・無重過失であっても意思表示を取り消して支払義務を免れることは「できない」とする部分である。会社法285条1項3号は、新株予約権を行使した新株予約権者が給付した現物出資財産の価額が定められた価額に著しく不足する場合に、その「不足額」を支払う義務を負うと定める。もっとも、同条2項は、その場合において、新株予約権者が著しく不足することにつき「善意でかつ重大な過失がないときは、新株予約権の行使に係る意思表示を取り消すことができる。」と定めている。したがって、善意・無重過失の新株予約権者は行使の意思表示を取り消して不足額の支払義務を免れることができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "285",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該不足額",
+     "text_sha256": "79017c463f766436991585d41e12501cbb4c6514230edcc0c9318c4a053699a8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "285",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "善意でかつ重大な過失がないときは、新株予約権の行使に係る意思表示を取り消すことができる。",
+     "text_sha256": "79017c463f766436991585d41e12501cbb4c6514230edcc0c9318c4a053699a8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q18-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。公開会社でない取締役会設置会社も、株主割当ての募集事項等を取締役会の決議で定めることができる旨の定款の定めを設けることができる。",
+   "body": "誤りは、取締役会の決議によって募集事項等を定める旨の定款の定めを「設けることはできない」とする部分である。会社法241条3項は、株主に新株予約権の割当てを受ける権利を与える場合の募集事項等の決定方法を定め、同項2号は「当該募集事項及び第一項各号に掲げる事項を取締役会の決議によって定めることができる旨の定款の定めがある場合（次号に掲げる場合を除く。）　取締役会の決議」とする。除かれている3号は「株式会社が公開会社である場合」であり、2号は公開会社でない取締役会設置会社にも当てはまる。したがって、公開会社でない取締役会設置会社もこの定款の定めを設けることができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "241",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "当該募集事項及び第一項各号に掲げる事項を取締役会の決議によって定めることができる旨の定款の定めがある場合（次号に掲げる場合を除く。）　取締役会の決議",
+     "text_sha256": "a2f2c06592658d014b33902ac0246328b5efc294b3b8bba1fe549ea153ce4fd4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "241",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "株式会社が公開会社である場合",
+     "text_sha256": "a2f2c06592658d014b33902ac0246328b5efc294b3b8bba1fe549ea153ce4fd4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q18-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。株式交換契約に定めれば、株式交換完全子会社の新株予約権に代えて株式交換完全親株式会社の新株予約権を交付することができる。",
+   "body": "会社法768条1項は、株式交換契約において定めなければならない事項を掲げ、その4号で「株式交換完全親株式会社が株式交換に際して株式交換完全子会社の新株予約権の新株予約権者に対して当該新株予約権に代わる当該株式交換完全親株式会社の新株予約権を交付するときは、当該新株予約権についての次に掲げる事項」を挙げている。これは、株式交換契約に定めることにより、完全子会社の新株予約権に代わる完全親株式会社の新株予約権を交付できることを前提とする規定である。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "768",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式交換完全親株式会社が株式交換に際して株式交換完全子会社の新株予約権の新株予約権者に対して当該新株予約権に代わる当該株式交換完全親株式会社の新株予約権を交付するときは、当該新株予約権についての次に掲げる事項",
+     "text_sha256": "00cf5b6015b49a524e428d8a7c1477d44d18d190d03bfc6f2fd8db990d03c4e5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
