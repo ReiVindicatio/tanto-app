@@ -1,0 +1,223 @@
+{
+ "question_id": "yobi-2014-shoho-q18",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q18-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：募集新株予約権の払込期日は「定めるときは」定める任意的な募集事項であり（会社法238条1項5号）、必ず定めなければならないものではない。",
+   "body": "誤りの決め手は、払込みの期日を「定めなければならない」とする部分である。会社法238条1項は、募集新株予約権について募集事項を「定めなければならない」とするが、払込みの期日については5号で「募集新株予約権と引換えにする金銭の払込みの期日を定めるときは、その期日」と定めるにとどまる。期日を定めない場合について、同法246条1項は、新株予約権者は「第二百三十六条第一項第四号の期間の初日の前日（第二百三十八条第一項第五号に規定する場合にあっては、同号の期日。第三項において「払込期日」という。）までに」払込金額の全額を払い込まなければならないとしている。つまり期日を定めなければ、行使期間の初日の前日が払込みの期限となる。したがって、払込期日は必ず定めなければならない事項ではなく、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "238",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "募集新株予約権と引換えにする金銭の払込みの期日を定めるときは、その期日",
+     "text_sha256": "8db5e6971b3c1ef434d21994d5558547b2267db71fa7feef9ea9b132047b2968",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "246",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百三十六条第一項第四号の期間の初日の前日（第二百三十八条第一項第五号に規定する場合にあっては、同号の期日。第三項において「払込期日」という。）までに",
+     "text_sha256": "a5113437860d330a3b9496caf93609772572653b8c9ca31b5a5e26f42bf43f32",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "236",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該新株予約権を行使することができる期間",
+     "text_sha256": "b7c8c3fb47aa3fba75670eedd07fa85056a91930d2cf4e34e5f350b206e27926",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q18-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：新株予約権は、株式会社の貸借対照表の純資産の部に計上される項目である（会社計算規則76条1項1号ニ）。負債の部ではない。",
+   "body": "誤りの決め手は、新株予約権を「負債の部」に計上するとする部分である。会社計算規則76条1項は「純資産の部は、次の各号に掲げる貸借対照表等の区分に応じ、当該各号に定める項目に区分しなければならない。」と定め、1号の株式会社の貸借対照表について、株主資本・評価・換算差額等・株式引受権と並べて、ニで「新株予約権」を純資産の部の項目として掲げている。同条8項も「新株予約権に係る項目は、自己新株予約権に係る項目を控除項目として区分することができる。」と、純資産の部の中での区分を定めている。したがって新株予約権は純資産の部に計上され、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "76",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "純資産の部は、次の各号に掲げる貸借対照表等の区分に応じ、当該各号に定める項目に区分しなければならない。",
+     "text_sha256": "8c31f37467fee3ae9284e763a18d6dd202d340d0a7ab19b1ee67e1e6750e1d10",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "76",
+     "paragraphs": [
+      "8"
+     ],
+     "quote": "新株予約権に係る項目は、自己新株予約権に係る項目を控除項目として区分することができる。",
+     "text_sha256": "8c31f37467fee3ae9284e763a18d6dd202d340d0a7ab19b1ee67e1e6750e1d10",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "引用は取得日時点の現行の会社計算規則。76条1項1号ハの「株式引受権」は出題後の改正で加わった項目とみられるが、新株予約権が純資産の部の項目であることは本肢の結論に影響しない（改正の時期は確認していない）。"
+   ],
+   "id": "exp-yobi-2014-shoho-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q18-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：新株予約権の内容として、金銭以外の財産を行使に際してする出資の目的とする旨を定めることができる（会社法236条1項3号）。",
+   "body": "本肢は正しい。会社法236条1項は新株予約権の内容とすべき事項を定め、その3号で「金銭以外の財産を当該新株予約権の行使に際してする出資の目的とするときは、その旨並びに当該財産の内容及び価額」を掲げている。この規定は、新株予約権の行使に際して金銭以外の財産を出資すること（現物出資）ができることを前提としている。したがって、新株予約権の内容としてその旨等を定めれば、金銭以外の財産を出資の目的とすることができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "236",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "金銭以外の財産を当該新株予約権の行使に際してする出資の目的とするときは、その旨並びに当該財産の内容及び価額",
+     "text_sha256": "b7c8c3fb47aa3fba75670eedd07fa85056a91930d2cf4e34e5f350b206e27926",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q18-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：会社法280条6項は「株式会社は、自己新株予約権を行使することができない。」と定めている。",
+   "body": "本肢は正しい。会社法280条6項は「株式会社は、自己新株予約権を行使することができない。」と明文で定めている。会社が自己新株予約権を行使すると、会社が自らに出資して自己株式を取得する結果となるため、これを認めない趣旨と解されている。会社は自己新株予約権を保有すること自体はできるが、行使はできない。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "280",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "株式会社は、自己新株予約権を行使することができない。",
+     "text_sha256": "049d6c93ae66e4149d75040baae01f9535abb856fceea51634d17a85b06340c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "規定の趣旨は解釈による。"
+   ],
+   "id": "exp-yobi-2014-shoho-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q18-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：募集新株予約権の発行の差止めを請求できるのは、不利益を受けるおそれがある「株主」であり（会社法247条）、既存の新株予約権者には差止請求権は認められていない。",
+   "body": "誤りの決め手は、差止めを請求する主体を「新株予約権者」とする部分である。会社法247条は「次に掲げる場合において、株主が不利益を受けるおそれがあるときは、株主は、株式会社に対し、第二百三十八条第一項の募集に係る新株予約権の発行をやめることを請求することができる。」と定め、その1号に「当該新株予約権の発行が法令又は定款に違反する場合」を掲げる。差止請求の主体は株主に限られており、既存の新株予約権者が不利益を受けるおそれがあっても、同条による差止めを請求することはできない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "247",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる場合において、株主が不利益を受けるおそれがあるときは、株主は、株式会社に対し、第二百三十八条第一項の募集に係る新株予約権の発行をやめることを請求することができる。",
+     "text_sha256": "9ed6fc733dcdca38cdac2c687e04c0ca3ea9a3897be4f88688fbf3b74d3d3e53",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "247",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該新株予約権の発行が法令又は定款に違反する場合",
+     "text_sha256": "9ed6fc733dcdca38cdac2c687e04c0ca3ea9a3897be4f88688fbf3b74d3d3e53",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

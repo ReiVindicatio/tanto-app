@@ -1,0 +1,267 @@
+{
+ "question_id": "yobi-2014-shoho-q22",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q22-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：会計監査人の報酬等は取締役が定め、監査役会設置会社では監査役会の同意を得れば足り、株主総会の決議は要しない（会社法399条1項・2項）。",
+   "body": "誤りの決め手は、会計監査人の報酬を「株主総会の決議によって定めなければならない」とする部分である。会社法399条1項は「取締役は、会計監査人又は一時会計監査人の職務を行うべき者の報酬等を定める場合には、監査役（監査役が二人以上ある場合にあっては、その過半数）の同意を得なければならない。」と定め、報酬等を定めるのは取締役であることを前提としている。そして同条2項により、監査役会設置会社では、同意をする者は「「監査役会」とする。」とされる。会計監査人の報酬等について、定款の定めや株主総会の決議を要求する規定はない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "399",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役は、会計監査人又は一時会計監査人の職務を行うべき者の報酬等を定める場合には、監査役（監査役が二人以上ある場合にあっては、その過半数）の同意を得なければならない。",
+     "text_sha256": "fd98ff1f334eb794e4c4a88e968b48b93b96db56b8ca6a825b81f6673a068b75",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "399",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "「監査役会」とする。",
+     "text_sha256": "fd98ff1f334eb794e4c4a88e968b48b93b96db56b8ca6a825b81f6673a068b75",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q22-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q22-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：会計監査人は、任期満了時の定時株主総会で別段の決議がされなかったときは、その定時株主総会で再任されたものとみなされる（会社法338条2項）。",
+   "body": "本肢は会社法338条1項・2項のとおりである。同条1項は「会計監査人の任期は、選任後一年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時までとする。」と定める。そして同条2項は「会計監査人は、前項の定時株主総会において別段の決議がされなかったときは、当該定時株主総会において再任されたものとみなす。」と定めている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "338",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会計監査人の任期は、選任後一年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時までとする。",
+     "text_sha256": "edd7c1dc8074e596b2754b194421624d99202b8470478ad9cbe708f9d9d603ec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "338",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "会計監査人は、前項の定時株主総会において別段の決議がされなかったときは、当該定時株主総会において再任されたものとみなす。",
+     "text_sha256": "edd7c1dc8074e596b2754b194421624d99202b8470478ad9cbe708f9d9d603ec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q22-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q22-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：会計監査人が欠けて遅滞なく選任されないときに一時会計監査人の職務を行うべき者を選任するのは、裁判所ではなく監査役会である（会社法346条4項・6項）。",
+   "body": "誤りの決め手は、裁判所が利害関係人の申立てにより一時会計監査人の職務を行うべき者を選任するとする部分である。会社法346条4項は、会計監査人が欠けた場合などにおいて「遅滞なく会計監査人が選任されないときは、監査役は、一時会計監査人の職務を行うべき者を選任しなければならない。」と定め、同条6項により、監査役会設置会社では「監査役」は「監査役会」と読み替えられる。裁判所が利害関係人の申立てにより選任する同条2項は「一時役員の職務を行うべき者」についての規定であり、会社法329条1項は役員を「取締役、会計参与及び監査役をいう。」と定義しているから、会計監査人には及ばない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "346",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "遅滞なく会計監査人が選任されないときは、監査役は、一時会計監査人の職務を行うべき者を選任しなければならない。",
+     "text_sha256": "127f4960eb512a0d4a84464d6d06db72ebb552b0e07efececcc2f12e0202bfd0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "346",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "監査役会設置会社における第四項の規定の適用については、同項中「監査役」とあるのは、「監査役会」とする。",
+     "text_sha256": "127f4960eb512a0d4a84464d6d06db72ebb552b0e07efececcc2f12e0202bfd0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "346",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "一時役員の職務を行うべき者",
+     "text_sha256": "127f4960eb512a0d4a84464d6d06db72ebb552b0e07efececcc2f12e0202bfd0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "329",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役、会計参与及び監査役をいう。",
+     "text_sha256": "a0d883fcf1ad34a22099bde03794b3adca09ffcd2205fd111dcc1599f5351230",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q22-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q22-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：会計監査人が取締役の不正の行為等を発見したときの報告先は、取締役会ではなく監査役会である（会社法397条1項・3項）。",
+   "body": "誤りの決め手は、報告先を「取締役会」とする部分である。会社法397条1項は「会計監査人は、その職務を行うに際して取締役の職務の執行に関し不正の行為又は法令若しくは定款に違反する重大な事実があることを発見したときは、遅滞なく、これを監査役に報告しなければならない。」と定め、同条3項により、監査役会設置会社では「監査役」は「監査役会」と読み替えられる。本肢の文言は、監査役についての会社法382条（「取締役会」への報告義務）に近いが、会計監査人の報告義務はこれとは異なる。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "397",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会計監査人は、その職務を行うに際して取締役の職務の執行に関し不正の行為又は法令若しくは定款に違反する重大な事実があることを発見したときは、遅滞なく、これを監査役に報告しなければならない。",
+     "text_sha256": "44f5d801c50e1cf2418ee43c680e563c700496c1157397f2564e8456b68c758b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "397",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査役会設置会社における第一項の規定の適用については、同項中「監査役」とあるのは、「監査役会」とする。",
+     "text_sha256": "44f5d801c50e1cf2418ee43c680e563c700496c1157397f2564e8456b68c758b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "382",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役会",
+     "text_sha256": "3c7faaa42ba8c3135ce3b1f8d54f343567ed726dd32319b170378669ee920f1b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q22-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q22-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：会計監査人は「役員等」に含まれ、職務を行うについて悪意又は重大な過失があったときは第三者に生じた損害を賠償する責任を負う（会社法429条1項・423条1項）。",
+   "body": "本肢は会社法429条1項のとおりである。同項は「役員等がその職務を行うについて悪意又は重大な過失があったときは、当該役員等は、これによって第三者に生じた損害を賠償する責任を負う。」と定める。そして同法423条1項は、「取締役、会計参与、監査役、執行役又は会計監査人（以下この章において「役員等」という。）」と定めており、会計監査人も「役員等」に含まれる。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "429",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "役員等がその職務を行うについて悪意又は重大な過失があったときは、当該役員等は、これによって第三者に生じた損害を賠償する責任を負う。",
+     "text_sha256": "4d41a9058a99b7439b59e3aec834678f217dd92c928361ecd026fe532e7d3b37",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役、会計参与、監査役、執行役又は会計監査人（以下この章において「役員等」という。）",
+     "text_sha256": "0a7329bc93caa7819913258f61953dfd11dd902a080800aa28a5decfb9c6d85a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q22-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

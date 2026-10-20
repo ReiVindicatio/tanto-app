@@ -1,0 +1,221 @@
+{
+ "question_id": "yobi-2014-shoho-q27",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q27-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。商人は氏・氏名だけでなく「その他の名称」も商号にでき、氏又は名を含める必要はない。",
+   "body": "誤りのポイントは「氏又は名を含まなければならない」の部分である。商法11条1項は「商人（会社及び外国会社を除く。以下この編において同じ。）は、その氏、氏名その他の名称をもってその商号とすることができる。」と定めている。氏・氏名に限らず「その他の名称」も商号として選べるから（商号選定自由の原則）、商号に商人の氏又は名を含めることは要求されていない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "商人（会社及び外国会社を除く。以下この編において同じ。）は、その氏、氏名その他の名称をもってその商号とすることができる。",
+     "text_sha256": "b6d9ea1fcb08be2ef1554ab1d192ab611b46bd7686016647efcdcceb56fd8314",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q27-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q27-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。個人商人は、数種の独立した営業を行うときは、営業ごとに異なる商号を使用できる。",
+   "body": "商法には個人商人の商号の数を1個に限る規定はなく、1個の営業については1個の商号しか使えないが、独立した数種の営業を行うときは営業ごとに別の商号を使用できると解されている。法令もこれを前提としており、商業登記法43条1項3号は、支配人の登記事項として「商人が数個の商号を使用して数種の営業をするときは、支配人が代理すべき営業及びその使用すべき商号」を挙げている。また、商号の登記事項には「営業の種類」が含まれ（商業登記法28条2項2号）、商号と営業とが結びつけられている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商業登記法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "商人が数個の商号を使用して数種の営業をするときは、支配人が代理すべき営業及びその使用すべき商号",
+     "text_sha256": "6b63801f99cad68178cf5d07d6b2b5b566c13ebe1171e4132b982ba3bcfe6336",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%BA%8C%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商業登記法",
+     "article": "28",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "営業の種類",
+     "text_sha256": "6d559c7a5dfa5d268b7cf7444182fe1095d58a040647944ae4e5e235bbeb143e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%BA%8C%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "1個の営業につき1個の商号（商号単一の原則）とする点、数種の営業では別の商号を使えるとする点は解釈による"
+   ],
+   "id": "exp-yobi-2014-shoho-q27-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q27-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。商法12条2項の侵害停止請求は、商号の登記をしていなくても行使できる。",
+   "body": "誤りのポイントは「商号の登記をしていない限り」の部分である。商法12条1項は「何人も、不正の目的をもって、他の商人であると誤認されるおそれのある名称又は商号を使用してはならない。」と定め、同条2項は、これに違反する使用によって「営業上の利益を侵害され、又は侵害されるおそれがある商人は、その営業上の利益を侵害する者又は侵害するおそれがある者に対し、その侵害の停止又は予防を請求することができる。」と定める。この請求権の要件に商号の登記は含まれていない。商号の登記は、商法11条2項が「商人は、その商号の登記をすることができる。」と定めるとおり任意である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "12",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "何人も、不正の目的をもって、他の商人であると誤認されるおそれのある名称又は商号を使用してはならない。",
+     "text_sha256": "049bbaa558c3f2ba8a883bc20d491cb69ea2f5ccf52162aca9a40ec64084e9b1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "12",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "営業上の利益を侵害され、又は侵害されるおそれがある商人は、その営業上の利益を侵害する者又は侵害するおそれがある者に対し、その侵害の停止又は予防を請求することができる。",
+     "text_sha256": "049bbaa558c3f2ba8a883bc20d491cb69ea2f5ccf52162aca9a40ec64084e9b1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "11",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "商人は、その商号の登記をすることができる。",
+     "text_sha256": "b6d9ea1fcb08be2ef1554ab1d192ab611b46bd7686016647efcdcceb56fd8314",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q27-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q27-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。名板貸人の責任は、名板借人の財産で完済できない場合に限られない（補充的な責任ではない）。",
+   "body": "誤りのポイントは「当該他人の財産をもって完済することができない場合に限り」の部分である。商法14条は、自己の商号の使用を他人に許諾した商人は、誤認して取引をした者に対し「当該他人と連帯して、当該取引によって生じた債務を弁済する責任を負う。」と定めるだけで、名板借人の財産で完済できないことを要件としていない。したがって、取引の相手方は、名板借人の資力にかかわらず、名板貸人に弁済を請求できる。本肢は、条文にない補充性の要件を付け加えている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "14",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該他人と連帯して、当該取引によって生じた債務を弁済する責任を負う。",
+     "text_sha256": "5c0711ddda0357cbf26e60db1df5eb6d644ad28ec4f27a036f66a6ff15a8b779",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q27-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q27-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。商号は、営業とともにする場合のほか、営業を廃止する場合にも譲渡できる（商法15条1項）。",
+   "body": "商法15条1項は「商人の商号は、営業とともにする場合又は営業を廃止する場合に限り、譲渡することができる。」と定めている。営業を廃止するときは、営業とともにしなくても商号を譲渡できるから、本肢は正しい。なお、商号の譲渡は「登記をしなければ、第三者に対抗することができない。」（同条2項）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "15",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "商人の商号は、営業とともにする場合又は営業を廃止する場合に限り、譲渡することができる。",
+     "text_sha256": "cd3f8ed5c47d875307e1542b66b5a9e3533330c25445e67d672bce06f49141bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "15",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "登記をしなければ、第三者に対抗することができない。",
+     "text_sha256": "cd3f8ed5c47d875307e1542b66b5a9e3533330c25445e67d672bce06f49141bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q27-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

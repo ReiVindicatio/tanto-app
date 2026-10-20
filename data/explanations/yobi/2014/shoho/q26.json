@@ -1,0 +1,225 @@
+{
+ "question_id": "yobi-2014-shoho-q26",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q26-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株主総会決議の取消しは「訴えをもって」請求しなければならず、訴え以外の方法では取り消せない。",
+   "body": "誤りのポイントは「訴え以外の方法によって決議を取り消すことができる」の部分である。会社法831条1項は、取消事由がある場合に株主等は「株主総会等の決議の日から三箇月以内に、訴えをもって当該決議の取消しを請求することができる。」と定めている。決議の取消しは訴え（形成の訴え）によってのみ主張できると解されており、訴訟外での意思表示や、他の訴訟の中での抗弁によって決議を取り消すことはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "831",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会等の決議の日から三箇月以内に、訴えをもって当該決議の取消しを請求することができる。",
+     "text_sha256": "1815496dd41025d1456cafbdd01882a64334f77e056c1a04b566f23536942c16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "取消しを訴えによってのみ主張できるとする点（形成の訴え）は解釈による"
+   ],
+   "id": "exp-yobi-2014-shoho-q26-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q26-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株主総会決議の取消しの訴えの被告は「当該株式会社」だけであり、取締役を被告とする必要はない。",
+   "body": "誤りのポイントは「会社及び取締役を被告としなければならない」の部分である。会社法834条17号は「株主総会等の決議の取消しの訴え　当該株式会社」と定め、被告を会社に限っている。取締役選任決議の取消しの訴えであっても、選任された取締役は被告とならない。これに対し、被告が会社以外の者を含む例としては、新設分割の無効の訴え（同条10号）などがある。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "834",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "十七　株主総会等の決議の取消しの訴え　当該株式会社",
+     "text_sha256": "b9ec18c29c714b3875ebe6b6556166976d4123088dd30445292e2e17ad8b773c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "834",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "十　会社の新設分割の無効の訴え　新設分割をする会社及び新設分割により設立する会社",
+     "text_sha256": "b9ec18c29c714b3875ebe6b6556166976d4123088dd30445292e2e17ad8b773c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "取締役選任決議の取消しの訴えの被告適格に関する判例は探していない"
+   ],
+   "id": "exp-yobi-2014-shoho-q26-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q26-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。必要的併合は「同一の請求を目的とする」訴えに限られ、別の決議の取消しを求める訴えは併合しなくてよい。",
+   "body": "会社法837条は「同一の請求を目的とする会社の組織に関する訴えに係る訴訟が数個同時に係属するときは、その弁論及び裁判は、併合してしなければならない。」と定める。取締役選任決議の取消しの訴えと計算書類承認決議の取消しの訴えは、同じ株主総会でされた決議であっても、取消しの対象となる決議が異なるから、同一の請求を目的とするものではないと解される。したがって、837条による必要的併合の対象とはならず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "837",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同一の請求を目的とする会社の組織に関する訴えに係る訴訟が数個同時に係属するときは、その弁論及び裁判は、併合してしなければならない。",
+     "text_sha256": "387c2b3b9521d9f634450b68ea8da914efd54dff8e1bb6a6c2b095f363f47a1d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "決議ごとに請求が別であるとする点は解釈による"
+   ],
+   "id": "exp-yobi-2014-shoho-q26-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q26-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。第三者にも効力が及ぶ（対世効）のは請求を「認容する確定判決」だけであり、棄却判決には及ばない。",
+   "body": "会社法838条は「会社の組織に関する訴えに係る請求を認容する確定判決は、第三者に対してもその効力を有する。」と定め、株主総会決議の取消しの訴えも会社の組織に関する訴えに含まれる（834条17号）。対世効が認められているのは認容判決に限られ、請求を棄却する確定判決には838条の適用はない。棄却判決の効力は、民事訴訟法115条1項の一般原則どおり当事者などに及ぶにとどまるから、他の株主など第三者は、なお別に取消しの訴えを提起しうる（提訴期間の制限はある）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "838",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社の組織に関する訴えに係る請求を認容する確定判決は、第三者に対してもその効力を有する。",
+     "text_sha256": "2ca182ab02992cc264da547cb36f529cf696f8be4eb6bccc3dd42c7a17e0593d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "834",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "十七　株主総会等の決議の取消しの訴え　当該株式会社",
+     "text_sha256": "b9ec18c29c714b3875ebe6b6556166976d4123088dd30445292e2e17ad8b773c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決は、次に掲げる者に対してその効力を有する。",
+     "text_sha256": "4cd8790c0a15a6de1c5356b0aa7a8ee3d090bc4348db553dd1f1a921da012ee1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q26-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q26-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。裁量棄却ができるのは招集の手続又は決議の方法の法令・定款違反の場合に限られ、決議の内容の定款違反には認められない。",
+   "body": "誤りのポイントは「決議の内容が定款に違反することを理由とする」訴えに裁量棄却を認めている点である。会社法831条2項は、裁量棄却の要件を「株主総会等の招集の手続又は決議の方法が法令又は定款に違反するときであっても、裁判所は、その違反する事実が重大でなく、かつ、決議に影響を及ぼさないものであると認めるときは、同項の規定による請求を棄却することができる。」と定めている。決議の内容が定款に違反すること（同条1項2号「株主総会等の決議の内容が定款に違反するとき。」）は、この裁量棄却の対象に含まれていない。したがって、内容の定款違反を理由とする取消しの訴えでは、裁判所は裁量棄却をすることができない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "831",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株主総会等の招集の手続又は決議の方法が法令又は定款に違反するときであっても、裁判所は、その違反する事実が重大でなく、かつ、決議に影響を及ぼさないものであると認めるときは、同項の規定による請求を棄却することができる。",
+     "text_sha256": "1815496dd41025d1456cafbdd01882a64334f77e056c1a04b566f23536942c16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "831",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会等の決議の内容が定款に違反するとき。",
+     "text_sha256": "1815496dd41025d1456cafbdd01882a64334f77e056c1a04b566f23536942c16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q26-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

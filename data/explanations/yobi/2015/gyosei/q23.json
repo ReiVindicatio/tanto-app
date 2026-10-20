@@ -1,0 +1,251 @@
+{
+ "question_id": "yobi-2015-gyosei-q23",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-gyosei-q23-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：審査請求前置の定めがあっても、8条2項各号に当たれば裁決を経ずに取消訴訟を提起でき、それに併せた執行停止の申立ても適法となりうるから、「余地はない」が誤り。",
+   "body": "決め手は「適法とされる余地はない」という部分である。行政事件訴訟法8条1項ただし書は、裁決を経た後でなければ取消しの訴えを提起できない旨の定め（審査請求前置）がある場合を原則の例外としているが、同条2項は「前項ただし書の場合においても、次の各号の一に該当するときは、裁決を経ないで、処分の取消しの訴えを提起することができる。」とし、2号で「処分、処分の執行又は手続の続行により生ずる著しい損害を避けるため緊急の必要があるとき。」を挙げている。執行停止は、25条2項のとおり「処分の取消しの訴えの提起があつた場合において」申立てによりできるものであるから、8条2項により適法に取消訴訟が提起されていれば、裁決前の段階でも執行停止の申立ては適法となりうる。したがって、裁決を経ない段階の申立てが適法とされる余地がないとはいえない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "8",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、法律に当該処分についての審査請求に対する裁決を経た後でなければ処分の取消しの訴えを提起することができない旨の定めがあるときは、この限りでない。",
+     "text_sha256": "ef2ff5ce86c5e1f1f93b9a5179f3b74921e7b2b468594bb50f289ac4287ad08d",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "8",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項ただし書の場合においても、次の各号の一に該当するときは、裁決を経ないで、処分の取消しの訴えを提起することができる。",
+     "text_sha256": "ef2ff5ce86c5e1f1f93b9a5179f3b74921e7b2b468594bb50f289ac4287ad08d",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "25",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "処分の取消しの訴えの提起があつた場合において",
+     "text_sha256": "e34c7fb3e9a688c620b8989d059d09fcde52fab53ff01172d2952a9a092b6870",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-gyosei-q23-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-gyosei-q23-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：無効確認の訴えにも執行停止の規定が準用され、出訴期間の経過という事情だけで「緊急の必要」が否定されるわけではないから、決定を得られないと断じる点が誤り。",
+   "body": "決め手は「緊急の必要を欠くため，執行停止の決定を得ることはできない」と一律に言い切る部分である。行政事件訴訟法38条3項は「第二十三条の二、第二十五条から第二十九条まで及び第三十二条第二項の規定は、無効等確認の訴えについて準用する。」と定めるから、無効確認の訴えを提起した上での執行停止の申立ては予定されている。執行停止の要件は、25条2項の「重大な損害を避けるため緊急の必要があるとき」などであり、これは損害の性質・程度など個別の事情によって判断される（同条3項）。取消訴訟の出訴期間が経過していることは、緊急の必要の有無とは別の事情であり、それだけで緊急の必要が欠けることにはならない。したがって、決定を得ることができないとはいえない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "38",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第二十三条の二、第二十五条から第二十九条まで及び第三十二条第二項の規定は、無効等確認の訴えについて準用する。",
+     "text_sha256": "e858628c3107ea7aebd299b3f3b3a2affe9e00e80029b3a5cce60db27a47a1b7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "25",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "重大な損害を避けるため緊急の必要があるときは、裁判所は、申立てにより、決定をもつて、処分の効力、処分の執行又は手続の続行の全部又は一部の停止（以下「執行停止」という。）をすることができる。",
+     "text_sha256": "e34c7fb3e9a688c620b8989d059d09fcde52fab53ff01172d2952a9a092b6870",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "25",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "損害の回復の困難の程度を考慮するものとし、損害の性質及び程度並びに処分の内容及び性質をも勘案するものとする。",
+     "text_sha256": "e34c7fb3e9a688c620b8989d059d09fcde52fab53ff01172d2952a9a092b6870",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出訴期間の経過が緊急の必要の判断を左右しないという点は、条文の構造からの解釈による。"
+   ],
+   "id": "exp-yobi-2015-gyosei-q23-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-gyosei-q23-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：公法上の法律関係に関する確認の訴えは当事者訴訟であり、当事者訴訟に準用される規定（41条）に執行停止の25条は含まれないから、執行停止の申立ては不適法である。",
+   "body": "行政事件訴訟法4条は、当事者訴訟に「公法上の法律関係に関する確認の訴えその他の公法上の法律関係に関する訴訟」を含めている。当事者訴訟について準用される規定は41条1項に「第二十三条、第二十四条、第三十三条第一項及び第三十五条の規定は当事者訴訟について」と列挙されており、執行停止を定める25条は含まれていない。執行停止は、取消訴訟（25条2項）と、準用のある無効等確認の訴え（38条3項）について認められる制度であり、当事者訴訟と併せて執行停止を申し立てることはできないから、その申立ては不適法である。なお、公権力の行使に関わらない法律関係であれば、44条の仮処分の排除は及ばず、民事保全法上の仮処分による仮の救済が考えられると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公法上の法律関係に関する確認の訴えその他の公法上の法律関係に関する訴訟",
+     "text_sha256": "72e5b52ea9492592d34d5ffcf8be07e131597e831963de1acb87ab3d7f621c92",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "41",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二十三条、第二十四条、第三十三条第一項及び第三十五条の規定は当事者訴訟について",
+     "text_sha256": "5d81a2cfa16227e4b4b3e0d320b26878efdb0e4bf3bba0278bbca7a13fe838b0",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "25",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "処分の取消しの訴えの提起があつた場合において",
+     "text_sha256": "e34c7fb3e9a688c620b8989d059d09fcde52fab53ff01172d2952a9a092b6870",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "38",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第二十三条の二、第二十五条から第二十九条まで及び第三十二条第二項の規定は、無効等確認の訴えについて準用する。",
+     "text_sha256": "e858628c3107ea7aebd299b3f3b3a2affe9e00e80029b3a5cce60db27a47a1b7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "44",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行政庁の処分その他公権力の行使に当たる行為については、民事保全法（平成元年法律第九十一号）に規定する仮処分をすることができない。",
+     "text_sha256": "0badf1e710b16d00c42016a14e9aa71a035eec5d4f26e88ea152d897b02fcaff",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "民事保全法上の仮処分の利用可能性は解釈による（民事保全法の条文は引用していない）。"
+   ],
+   "id": "exp-yobi-2015-gyosei-q23-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-gyosei-q23-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：仮の義務付けは「義務付けの訴えの提起があつた場合」に限られるから、不作為の違法確認の訴えだけでは足りず、義務付けの訴えを提起する必要がある。",
+   "body": "行政事件訴訟法37条の5第1項は、仮の義務付けについて「義務付けの訴えの提起があつた場合において」と定め、本案である義務付けの訴えの提起を要件としている。申請に対して処分がされない場合（申請型の不作為）について義務付けの訴えを提起するときは、37条の3第3項により不作為の違法確認の訴えを併合して提起しなければならないが、これは義務付けの訴えに併せて提起するものであって、不作為の違法確認の訴えだけでは仮の義務付けの前提となる本案訴訟にはならない。したがって、仮の義務付けを申し立てるには、不作為の違法確認の訴えに加えて義務付けの訴えを提起する必要がある。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "義務付けの訴えの提起があつた場合において",
+     "text_sha256": "419ede27f65a00aa522626130262a1736045f39017782072f6792c80c3e7475a",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_3",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の義務付けの訴えを提起するときは、次の各号に掲げる区分に応じてそれぞれ当該各号に定める訴えをその義務付けの訴えに併合して提起しなければならない。",
+     "text_sha256": "6e1fb542f818d963350a9d088580a09d2dd33958bb8ba0469df736291942048a",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-gyosei-q23-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

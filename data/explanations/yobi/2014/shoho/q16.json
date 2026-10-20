@@ -1,0 +1,270 @@
+{
+ "question_id": "yobi-2014-shoho-q16",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q16-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：発行可能株式総数は、株式会社の設立の登記で登記しなければならない事項（911条3項6号）であるから、「登記すべき事項ではない」が誤り。",
+   "body": "決め手は「登記すべき事項ではない」という部分である。会社法911条3項は「第一項の登記においては、次に掲げる事項を登記しなければならない。」とし、その6号に「発行可能株式総数」を挙げている。なお、発行可能株式総数は27条の列挙には含まれないが、37条1項により、定款で定めていない場合には「株式会社の成立の時までに、その全員の同意によって、定款を変更して発行可能株式総数の定めを設けなければならない」とされ、成立までに定款で必ず定める事項である。したがって、発行可能株式総数は登記すべき事項に当たる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "911",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の登記においては、次に掲げる事項を登記しなければならない。",
+     "text_sha256": "56343fd3641b8d54245c3b12bab878cbdf7e9de83d41e9e0d92349ec4858cda2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社の成立の時までに、その全員の同意によって、定款を変更して発行可能株式総数の定めを設けなければならない",
+     "text_sha256": "6586c14a400407c99a942d4bd0cc03e082ae00c43b44f25627d06073e8ca8e2a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "27",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社の定款には、次に掲げる事項を記載し、又は記録しなければならない。",
+     "text_sha256": "fee6c1238222418748df988833566755b0b19b5b0467c81df5eb5b3fb30c958a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q16-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q16-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：定款に必ず記載すべき事項（27条）は「本店の所在地」であり、支店の所在地は含まれないから誤り。",
+   "body": "決め手は「支店の所在地」という部分である。会社法27条は「株式会社の定款には、次に掲げる事項を記載し、又は記録しなければならない。」として、目的、商号、「本店の所在地」、「設立に際して出資される財産の価額又はその最低額」、「発起人の氏名又は名称及び住所」を挙げており、支店の所在地は挙げていない。支店の所在場所は、911条3項3号の「本店及び支店の所在場所」として登記事項にはなるが、定款の絶対的記載事項ではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "27",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社の定款には、次に掲げる事項を記載し、又は記録しなければならない。",
+     "text_sha256": "fee6c1238222418748df988833566755b0b19b5b0467c81df5eb5b3fb30c958a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "911",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の登記においては、次に掲げる事項を登記しなければならない。",
+     "text_sha256": "56343fd3641b8d54245c3b12bab878cbdf7e9de83d41e9e0d92349ec4858cda2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q16-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q16-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判例は、定款に記載のない財産引受けは、会社成立後に株主総会の特別決議で承認しても有効にならないとしている。",
+   "body": "会社法28条は、同条2号の「株式会社の成立後に譲り受けることを約した財産及びその価額並びにその譲渡人の氏名又は名称」（財産引受け）について、定款に「記載し、又は記録しなければ、その効力を生じない。」と定めている。最高裁昭和28年12月3日第一小法廷判決は、旧商法の下で、定款に記載のない財産引受けは、たとえ会社成立後に株主総会が特別決議をもってこれを承認しても有効にはならないと判示した。同判決は、会社成立後に改めて特別決議の手続を踏んで新たに財産取得の契約を結ぶことは可能であるとしつつ、無効な財産引受契約を承認する決議によって瑕疵が治癒されるものではないとしている。したがって、本肢は判例のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社を設立する場合には、次に掲げる事項は、第二十六条第一項の定款に記載し、又は記録しなければ、その効力を生じない。",
+     "text_sha256": "c17153849721f5c211cd336ec0e945cfc4169b6398ad8e16ed029e96e762e1dc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "土地建物返還並不動産所有権移転登記請求事件",
+     "court": "最高裁判所第一小法廷",
+     "date": "1953-12-03",
+     "holding": "定款に記載のない財産引受けは、会社成立後に株主総会が特別決議で承認しても有効にならない。財産引受けの無効は譲渡人も主張できる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56064/detail2/index.html",
+      "https://www.courts.go.jp/assets/hanrei/hanrei-pdf-56064.pdf"
+     ]
+    }
+   ],
+   "notes": [
+    "判決は旧商法168条1項6号・246条の下のもの。現行の会社法28条2号に引き直して説明している。"
+   ],
+   "id": "exp-yobi-2014-shoho-q16-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q16-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：定款の認証の手数料は、定款に記載しなければ効力を生じない設立費用（28条4号）から除外されているから、定款に定めがなくても成立後の会社が負担する。",
+   "body": "会社法28条4号は、定款に記載しなければ効力を生じない事項として「株式会社の負担する設立に関する費用（定款の認証の手数料その他株式会社に損害を与えるおそれがないものとして法務省令で定めるものを除く。）」を挙げている。定款の認証の手数料は、この括弧書きで明文で除外されているから、定款に記載がなくても、成立後の会社が負担することができる。会社法施行規則5条も、同号の法務省令で定めるものとして定款に係る印紙税や設立の登記の登録免許税などを挙げており、これらは額が定型的で会社に損害を与えるおそれがないため除外されていると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社の負担する設立に関する費用（定款の認証の手数料その他株式会社に損害を与えるおそれがないものとして法務省令で定めるものを除く。）",
+     "text_sha256": "c17153849721f5c211cd336ec0e945cfc4169b6398ad8e16ed029e96e762e1dc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法施行規則",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法第二十八条第四号に規定する法務省令で定めるものは、次に掲げるものとする。",
+     "text_sha256": "8567906415f7688cd18bf2abff17f19ff194152d5c38b0c0b48fe74f766069ff",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q16-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q16-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：公証人の認証が効力要件とされるのは設立時に作成する定款（26条1項の定款）であり、会社成立後の定款変更は株主総会の決議によって行い、改めて認証を受ける必要はない。",
+   "body": "会社法30条1項は「第二十六条第一項の定款は、公証人の認証を受けなければ、その効力を生じない。」と定め、認証を要するのは設立の際に発起人が作成する定款である。同条2項も、認証を受けた定款の変更を制限しているのは「株式会社の成立前」に限られる。会社成立後については、466条が「株式会社は、その成立後、株主総会の決議によって、定款を変更することができる。」と定めるだけで、変更後の定款に公証人の認証を要求する規定はない。したがって、成立後の定款変更には改めて公証人の認証を受ける必要はないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "30",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二十六条第一項の定款は、公証人の認証を受けなければ、その効力を生じない。",
+     "text_sha256": "3e56ac8562a83bafe23903b2c7793ccc4b25e262eb9ebb158bc60719cdad12bd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "30",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株式会社の成立前",
+     "text_sha256": "3e56ac8562a83bafe23903b2c7793ccc4b25e262eb9ebb158bc60719cdad12bd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "466",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、その成立後、株主総会の決議によって、定款を変更することができる。",
+     "text_sha256": "9de2157a451631e3430eb3e06bc54991bcf788236f1e77c88059db41f8c79826",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "26",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社を設立するには、発起人が定款を作成し、その全員がこれに署名し、又は記名押印しなければならない。",
+     "text_sha256": "1f96fd19c5a0b97eab08a3213640a8de386ce235cd9e4c9365f2f4219725d56e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "成立後の定款変更に認証が不要である点は、認証を求める規定がないことからの解釈による。"
+   ],
+   "id": "exp-yobi-2014-shoho-q16-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

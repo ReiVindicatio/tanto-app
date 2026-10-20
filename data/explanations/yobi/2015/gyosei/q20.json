@@ -1,0 +1,185 @@
+{
+ "question_id": "yobi-2015-gyosei-q20",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-gyosei-q20-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。重大な損害を生ずるおそれは非申請型義務付け訴訟だけの要件であり、申請型義務付け訴訟には要求されていない。",
+   "body": "ポイントは、「重大な損害」の要件が両方の訴訟に共通するかどうかである。非申請型について、行政事件訴訟法37条の2第1項は「義務付けの訴えは、一定の処分がされないことにより重大な損害を生ずるおそれがあり、かつ、その損害を避けるため他に適当な方法がないときに限り、提起することができる。」と定めている。これに対し、申請型について定める行政事件訴訟法37条の3第1項は、「当該法令に基づく申請又は審査請求に対し相当の期間内に何らの処分又は裁決がされないこと。」（1号）か、申請等を却下・棄却する処分等がされた場合に「当該処分又は裁決が取り消されるべきものであり、又は無効若しくは不存在であること。」（2号）のいずれかを要件としており、重大な損害の要件はない。申請型では、申請権をもつ者が申請を退けられた・放置されたことを争うので、損害の重大性を要求する必要がないと説明されている。したがって、いずれの訴訟にも重大な損害のおそれが必要とする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "義務付けの訴えは、一定の処分がされないことにより重大な損害を生ずるおそれがあり、かつ、その損害を避けるため他に適当な方法がないときに限り、提起することができる。",
+     "text_sha256": "d75001fd49fa2bd01d9acf289486bfb2675cec1a96cced8501df1a714b127ed3",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該法令に基づく申請又は審査請求に対し相当の期間内に何らの処分又は裁決がされないこと。",
+     "text_sha256": "6e1fb542f818d963350a9d088580a09d2dd33958bb8ba0469df736291942048a",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該処分又は裁決が取り消されるべきものであり、又は無効若しくは不存在であること。",
+     "text_sha256": "6e1fb542f818d963350a9d088580a09d2dd33958bb8ba0469df736291942048a",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "申請型で重大な損害を要件としない理由の説明は解釈による。判例は探していない。"
+   ],
+   "id": "exp-yobi-2015-gyosei-q20-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-gyosei-q20-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。非申請型義務付け訴訟は、処分をすべき旨を命ずることを求めるにつき法律上の利益を有する者に限り提起できる（行政事件訴訟法37条の2第3項）。",
+   "body": "ポイントは、非申請型義務付け訴訟の原告適格の要件である。行政事件訴訟法37条の2第3項は「第一項の義務付けの訴えは、行政庁が一定の処分をすべき旨を命ずることを求めるにつき法律上の利益を有する者に限り、提起することができる。」と定めている。ここでいう第1項の義務付けの訴えは、行政事件訴訟法3条6項1号の場合、すなわち非申請型の義務付けの訴えである。また、法律上の利益の有無の判断には、同条4項が「前項に規定する法律上の利益の有無の判断については、第九条第二項の規定を準用する。」と定め、取消訴訟の原告適格と同じ考慮事項によることとされている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の義務付けの訴えは、行政庁が一定の処分をすべき旨を命ずることを求めるにつき法律上の利益を有する者に限り、提起することができる。",
+     "text_sha256": "d75001fd49fa2bd01d9acf289486bfb2675cec1a96cced8501df1a714b127ed3",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_2",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "前項に規定する法律上の利益の有無の判断については、第九条第二項の規定を準用する。",
+     "text_sha256": "d75001fd49fa2bd01d9acf289486bfb2675cec1a96cced8501df1a714b127ed3",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "3",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "行政庁が一定の処分をすべきであるにかかわらずこれがされないとき（次号に掲げる場合を除く。）。",
+     "text_sha256": "7ec49933ee781e46409fe039f91affe6395a3678e704ae2f2209a6f6d83e269f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "判例は探していない。"
+   ],
+   "id": "exp-yobi-2015-gyosei-q20-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-gyosei-q20-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。申請型義務付け訴訟は、法令に基づく申請又は審査請求をした者に限り提起できる（行政事件訴訟法37条の3第2項）。",
+   "body": "ポイントは、申請型義務付け訴訟の原告適格の要件である。行政事件訴訟法37条の3第2項は「前項の義務付けの訴えは、同項各号に規定する法令に基づく申請又は審査請求をした者に限り、提起することができる。」と定めている。ここでいう前項の義務付けの訴えは、行政事件訴訟法3条6項2号の場合、すなわち申請型の義務付けの訴えである。肢の「不服申立て」は、条文の「審査請求」に当たる（行政事件訴訟法3条3項は審査請求その他の不服申立てを「審査請求」とまとめて呼んでいる）。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_3",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の義務付けの訴えは、同項各号に規定する法令に基づく申請又は審査請求をした者に限り、提起することができる。",
+     "text_sha256": "6e1fb542f818d963350a9d088580a09d2dd33958bb8ba0469df736291942048a",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "3",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "行政庁に対し一定の処分又は裁決を求める旨の法令に基づく申請又は審査請求がされた場合において、当該行政庁がその処分又は裁決をすべきであるにかかわらずこれがされないとき。",
+     "text_sha256": "7ec49933ee781e46409fe039f91affe6395a3678e704ae2f2209a6f6d83e269f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "3",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "審査請求その他の不服申立て",
+     "text_sha256": "7ec49933ee781e46409fe039f91affe6395a3678e704ae2f2209a6f6d83e269f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "判例は探していない。"
+   ],
+   "id": "exp-yobi-2015-gyosei-q20-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
