@@ -1,0 +1,206 @@
+{
+ "question_id": "yobi-2017-minso-q40",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q40-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判決が言渡しで効力を生じる点は正しいが、控訴期間は判決の言渡しの日からではなく、判決書等の送達を受けた日から2週間である。",
+   "body": "誤りは、上訴期間の起算点を「判決の言渡しの日の翌日」とする点である。前半は民事訴訟法250条が「判決は、言渡しによってその効力を生ずる。」と定めるとおりである。しかし控訴期間について、同法285条は、控訴は電子判決書等の「送達を受けた日から二週間の不変期間内に提起しなければならない」と定めており、起算点は言渡しの日ではなく送達を受けた日である。上告にも控訴の規定が準用される（同法313条）。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "250",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "判決は、言渡しによってその効力を生ずる。",
+     "text_sha256": "4b4ae91d3d45529e15b52b2c44049c178bf8ef1667c3eb6d9993ef0f604dd50d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "285",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "送達を受けた日から二週間の不変期間内に提起しなければならない",
+     "text_sha256": "f2c685031feb77848894d695feb6d0ccf4d4896807193dd32c936b131196468c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "313",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前章の規定は、特別の定めがある場合を除き、上告及び上告審の訴訟手続について準用する。",
+     "text_sha256": "dfe8005aed5d72003e0af7810dc83aedeb9bb9d1177422db5d968a8a01ff494f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題時（2017年）の民事訴訟法285条は「判決書」等の送達を受けた日から2週間としていたが、その後の改正（民事訴訟手続のIT化）で「電子判決書」等に改められた。送達を受けた日から起算するという結論は変わらない。"
+   ],
+   "id": "exp-yobi-2017-minso-q40-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q40-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判決の言渡しは作成された判決書（現行法では電子判決書）に基づいてするから、言渡し後に作成することはできない。",
+   "body": "誤りは、判決書の原本を判決の言渡し「後に作成することもできる」とする点である。現行の民事訴訟法253条1項は「判決の言渡しは、前条第一項の規定により作成された電子判決書に基づいてする。」と定めており、言渡しの時点で判決書が作成されていることが前提となっている。言渡しを判決書に基づかないですることができるのは、同法254条1項の定める場合（いわゆる調書判決）に限られ、その場合も「電子判決書の作成に代えて」判決の言渡しをした期日の調書に記録させることになる（同条2項）。したがって、判決書を言渡し後に作成するという本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "253",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "判決の言渡しは、前条第一項の規定により作成された電子判決書に基づいてする。",
+     "text_sha256": "cb4e78339dcf4c89946177f17b2d2b6f66af512d6eabe7f5ff586d8e0648c95b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "254",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "電子判決書の作成に代えて",
+     "text_sha256": "56b19be968617530472ed88349c2008e2d96f7ad4cb88e24f71d9f8780bd2b41",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題時（2017年）の民事訴訟法252条は、判決の言渡しは判決書の原本に基づいてすると定めていた。その後の改正（民事訴訟手続のIT化）で判決書は電子判決書となり、言渡しの方式は現行253条に移った。判決書に基づいて言渡しをするという結論は変わらない。"
+   ],
+   "id": "exp-yobi-2017-minso-q40-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q40-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判決の言渡しは、当事者が在廷しない場合においてもすることができる。",
+   "body": "本肢は民事訴訟法251条2項のとおりである。同項は「判決の言渡しは、当事者が在廷しない場合においても、することができる。」と定めており、当事者双方が欠席した場合も含まれる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "251",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "判決の言渡しは、当事者が在廷しない場合においても、することができる。",
+     "text_sha256": "7167c7bccee608a539efc6460082c5f71c53756a21bca7201e25c2807e22399b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-minso-q40-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q40-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判決書（現行法では電子判決書）や調書判決の調書は、当事者の申請がなくても当事者に送達しなければならない。",
+   "body": "誤りは、当事者の申請がなければ送達する「必要はない」とする点である。民事訴訟法255条1項は、電子判決書又は同法254条2項の規定により理由の要旨等が記録された電子調書について「当事者に送達しなければならない」と定め、当事者の申請を要件としていない。この送達は、同法255条2項各号の方法（記録事項を記載した書面で裁判所書記官が同一であることを証明したものの送達など）によってする。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "255",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者に送達しなければならない",
+     "text_sha256": "4a55e0937e1e863f4539421ac3ffb5f5d71dc93993a0a293ac557f275f4173fc",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "255",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項に規定する送達は、次に掲げる方法のいずれかによってする。",
+     "text_sha256": "4a55e0937e1e863f4539421ac3ffb5f5d71dc93993a0a293ac557f275f4173fc",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "254",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当事者及び法定代理人、主文、請求並びに理由の要旨を、判決の言渡しをした口頭弁論期日の電子調書に記録させなければならない。",
+     "text_sha256": "56b19be968617530472ed88349c2008e2d96f7ad4cb88e24f71d9f8780bd2b41",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題時（2017年）の民事訴訟法255条は、判決書又は調書判決の調書を当事者に送達しなければならず、その送達は判決書の正本又は調書の謄本によってすると定めていた。その後の改正（民事訴訟手続のIT化）で電子判決書・電子調書に改められたが、職権で送達しなければならないという結論は変わらない。",
+    "肢4（判決の言渡しの方式）は民事訴訟規則で答えが決まるため、本ファイルでは書いていない。"
+   ],
+   "id": "exp-yobi-2017-minso-q40-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

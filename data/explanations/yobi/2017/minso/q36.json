@@ -1,0 +1,248 @@
+{
+ "question_id": "yobi-2017-minso-q36",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q36-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。口頭弁論終結後でも当事者が死亡すれば訴訟手続は中断する。中断中でも判決の言渡しはできるというにとどまる。",
+   "body": "誤りは「訴訟手続は中断しない」とする点である。民事訴訟法124条1項は、中断事由として「当事者の死亡」を掲げ、口頭弁論終結の前後で区別していない。本肢では訴訟代理人が選任されていないから、同条2項の「訴訟代理人がある間は、適用しない」にもあたらない。口頭弁論終結後の死亡について特別なのは、同法132条1項が「判決の言渡しは、訴訟手続の中断中であっても、することができる。」と定め、中断中でも判決の言渡しが許される点だけであり、手続が中断すること自体は変わらない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の死亡",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "訴訟代理人がある間は、適用しない",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "132",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "判決の言渡しは、訴訟手続の中断中であっても、することができる。",
+     "text_sha256": "843e5a8f914b8fe4b072519ae105a7dbc18d833063d2f15de8efafeb0255a183",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-minso-q36-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q36-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。訴訟物が一身専属権であれば訴訟を受け継ぐ者がいないから、当事者の死亡により訴訟は中断せずに終了すると解されている。",
+   "body": "ポイントは、受け継ぐ者のいない訴訟で当事者が死亡した場合の扱いである。民事訴訟法124条1項1号は、当事者の死亡による中断の際に訴訟手続を受け継ぐ者を「相続人、相続財産の管理人、相続財産の清算人その他法令により訴訟を続行すべき者」としている。しかし、訴訟物が一身専属権であれば、その権利は相続の対象とならず、受け継ぐべき者が存在しない。そのため、訴訟手続は中断するのではなく、当事者の死亡によって訴訟は当然に終了すると解されている。生活保護を受ける権利の一身専属性を理由に原告の死亡により訴訟が終了したとした最高裁の判例がある（判例あり（要確認））。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続人、相続財産の管理人、相続財産の清算人その他法令により訴訟を続行すべき者",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "一身専属権を訴訟物とする訴訟が当事者の死亡で終了するとの点は、条文に明記がなく解釈による。",
+    "生活保護の受給権に関する最高裁大法廷判決（いわゆる朝日訴訟）があると思われるが、courts.go.jp で判決ページを確認できなかったため要確認とした。"
+   ],
+   "id": "exp-yobi-2017-minso-q36-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q36-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。独立当事者参加をした第三者は当事者となるから、その死亡は当事者の死亡として中断事由になる。",
+   "body": "ポイントは、独立当事者参加人が「当事者」かどうかである。民事訴訟法47条1項は、第三者が「当事者としてその訴訟に参加することができる」と定めており、参加人は補助参加人と異なり訴訟の当事者となる。そうすると、参加人の死亡は同法124条1項の「当事者の死亡」にあたり、訴訟代理人が選任されていない本肢では、訴訟手続は中断する。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "47",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者としてその訴訟に参加することができる",
+     "text_sha256": "eabfcfd2afc146ac9b32a0de3c3390a3c5eb44d5e313f0c34165494a7daadc48",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の死亡",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-minso-q36-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q36-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。債権者代位訴訟の当事者は債権者であり、債務者は当事者ではないから、債務者が死亡しても訴訟手続は中断しない。",
+   "body": "ポイントは、債権者代位訴訟で死亡した債務者が「当事者」かどうかである。民法423条1項は、債権者が自己の債権を保全するため「債務者に属する権利」を行使することができると定め、代位訴訟では債権者が自己の名で原告となる。債務者は訴訟の当事者ではないから、その死亡は民事訴訟法124条1項の「当事者の死亡」にあたらず、訴訟手続は中断しない。なお、同法124条1項5号の「一定の資格を有する者で自己の名で他人のために訴訟の当事者となるもの」の資格喪失の場面でもない（死亡したのは当事者である債権者ではない）。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者に属する権利",
+     "text_sha256": "bd8ef03d0c0f16adfbbafda7db96a6bd402b3335529029bed09a72be6c3b987a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の死亡",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一定の資格を有する者で自己の名で他人のために訴訟の当事者となるもの",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題後の民法改正（2017年改正、2020年施行）で、代位訴訟を提起した債権者に債務者への訴訟告知が義務付けられた（現行民法423条の6）。債務者が当事者とならない点は変わらず、本肢の結論に影響しない。"
+   ],
+   "id": "exp-yobi-2017-minso-q36-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q36-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。訴訟代理人の死亡は中断事由に含まれていないから、訴訟手続は中断しない。",
+   "body": "誤りは、訴訟代理人の死亡で訴訟手続が「中断する」とする点である。民事訴訟法124条1項が掲げる中断事由は、「当事者の死亡」や「法定代理人の死亡若しくは代理権の消滅」などであり、訴訟代理人の死亡は含まれていない。訴訟代理人が死亡しても当事者本人は訴訟行為をすることができるから、手続を止める必要がないためである。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の死亡",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法定代理人の死亡若しくは代理権の消滅",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-minso-q36-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

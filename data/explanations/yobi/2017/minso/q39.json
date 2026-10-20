@@ -1,0 +1,257 @@
+{
+ "question_id": "yobi-2017-minso-q39",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q39-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。証拠調べは当事者が期日に出頭しない場合でもすることができるから、当事者の一方が欠席しても証人尋問はできる。",
+   "body": "誤りは、当事者の一方が欠席すると証人尋問を「することができない」とする点である。民事訴訟法183条は「証拠調べは、当事者が期日に出頭しない場合においても、することができる。」と定める。証人尋問も証拠調べの一つであるから、当事者の一方（さらには双方）が期日に出頭しなくても、裁判所は証人尋問をすることができる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "183",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証拠調べは、当事者が期日に出頭しない場合においても、することができる。",
+     "text_sha256": "ed848488e5e0d706fb96a0797f523d57892e8e8d2d0116e09201e46e4199e369",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-minso-q39-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q39-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。一定の場合に相当と認めるときは、映像と音声の送受信による通話の方法で証人尋問をすることができる。",
+   "body": "誤りは、映像と音声の送受信による方法で証人尋問を「することはできない」とする点である。民事訴訟法204条は、同条各号に掲げる場合であって相当と認めるときは、「映像と音声の送受信により相手の状態を相互に認識しながら通話をすることができる方法によって、証人の尋問をすることができる」と定める。同条1号は、証人の住所、年齢又は心身の状態その他の事情により「証人が受訴裁判所に出頭することが困難であると認める場合」を挙げている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "204",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "映像と音声の送受信により相手の状態を相互に認識しながら通話をすることができる方法によって、証人の尋問をすることができる",
+     "text_sha256": "cf68aeedd03daa4a8fbd440a60971e96a4ce35e1df5802603ef461448e6b4175",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "204",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証人が受訴裁判所に出頭することが困難であると認める場合",
+     "text_sha256": "cf68aeedd03daa4a8fbd440a60971e96a4ce35e1df5802603ef461448e6b4175",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題時（2017年）の民事訴訟法204条は、遠隔の地に居住する証人の尋問などの場合に映像等の送受信による尋問を認めていたが、その後の改正で要件が改められた（現行204条各号）。この方法による証人尋問が認められているという結論は変わらない。"
+   ],
+   "id": "exp-yobi-2017-minso-q39-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q39-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。16歳未満の者を証人として尋問する場合には、宣誓をさせることができない。",
+   "body": "本肢は民事訴訟法201条2項のとおりである。証人には原則として宣誓をさせなければならない（同条1項）が、同条2項は「十六歳未満の者又は宣誓の趣旨を理解することができない者を証人として尋問する場合には、宣誓をさせることができない。」と定める。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "201",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証人には、特別の定めがある場合を除き、宣誓をさせなければならない。",
+     "text_sha256": "977b08ec9504469aa19cfa63d70f586f1020853d7bd2065123b581bbd11b8a5b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "201",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "十六歳未満の者又は宣誓の趣旨を理解することができない者を証人として尋問する場合には、宣誓をさせることができない。",
+     "text_sha256": "977b08ec9504469aa19cfa63d70f586f1020853d7bd2065123b581bbd11b8a5b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-minso-q39-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q39-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。鑑定人には証人の宣誓の規定が準用され、宣誓をさせなければならない。",
+   "body": "誤りは、鑑定人は「宣誓をする義務を負わない」とする点である。鑑定人は受訴裁判所等が指定し（民事訴訟法213条）、「鑑定に必要な学識経験を有する者は、鑑定をする義務を負う」（同法212条1項）。そして同法216条は「第二百一条第一項の規定は鑑定人に宣誓をさせる場合について」準用すると定めており、証人と同様に、鑑定人にも宣誓をさせなければならない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "213",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "鑑定人は、受訴裁判所、受命裁判官又は受託裁判官が指定する。",
+     "text_sha256": "40fd3756d79071e6a793bcf5d1f64239992d400961a22f05b90cdf994e246329",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "212",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "鑑定に必要な学識経験を有する者は、鑑定をする義務を負う。",
+     "text_sha256": "09577dd7e8bb61b646b61af6302d41d62408b0c8685805663bfa93252ea4d3e3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "216",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百一条第一項の規定は鑑定人に宣誓をさせる場合について",
+     "text_sha256": "6348792d0343fd11d92277cbad760828a1b403ad4d8a8b99c62a51b783ecd820",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "201",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証人には、特別の定めがある場合を除き、宣誓をさせなければならない。",
+     "text_sha256": "977b08ec9504469aa19cfa63d70f586f1020853d7bd2065123b581bbd11b8a5b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-minso-q39-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q39-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。鑑定人質問は、原則として裁判長、鑑定の申出をした当事者、他の当事者の順序でする。",
+   "body": "本肢は民事訴訟法215条の2のとおりである。同条1項は、鑑定人に口頭で意見を述べさせる場合には「鑑定人が意見の陳述をした後に、鑑定人に対し質問をすることができる。」と定め、同条2項は「前項の質問は、裁判長、その鑑定の申出をした当事者、他の当事者の順序でする。」と定める。この順序は、裁判長が当事者の意見を聴いて変更することができる（同条3項）ので、「原則である」とする本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "215_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "鑑定人が意見の陳述をした後に、鑑定人に対し質問をすることができる。",
+     "text_sha256": "327b4d29a3cbb2c1e3eef659c6be6475cc0a65174a40890358f8753a23f8ef8e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "215_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の質問は、裁判長、その鑑定の申出をした当事者、他の当事者の順序でする。",
+     "text_sha256": "327b4d29a3cbb2c1e3eef659c6be6475cc0a65174a40890358f8753a23f8ef8e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "215_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "裁判長は、適当と認めるときは、当事者の意見を聴いて、前項の順序を変更することができる。",
+     "text_sha256": "327b4d29a3cbb2c1e3eef659c6be6475cc0a65174a40890358f8753a23f8ef8e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-minso-q39-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

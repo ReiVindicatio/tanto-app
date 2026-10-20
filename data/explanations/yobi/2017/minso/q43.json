@@ -1,0 +1,284 @@
+{
+ "question_id": "yobi-2017-minso-q43",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q43-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。第一審の終局判決が控訴審で取り消されて差し戻された後、改めて終局判決がされる前の取下げには、再訴禁止の効果は生じない（判例）。",
+   "body": "ポイントは、取下げの時点で「本案について終局判決があった後」といえるかである。民事訴訟法262条2項は「本案について終局判決があった後に訴えを取り下げた者は、同一の訴えを提起することができない。」と定める。差戻し前の第一審の終局判決は控訴審で取り消されて効力を失っているから、差戻し後の第一審で改めて終局判決がされるまでは、本案の終局判決が存在しない状態にある。判例も、差戻し後の第一審において改めて本案の終局判決がされるまでに訴えの取下げがされた場合には、再訴禁止の効果を生じないとしている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "262",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "本案について終局判決があった後に訴えを取り下げた者は、同一の訴えを提起することができない。",
+     "text_sha256": "429195b0aa441894146abc52ca14d1b077c655c412b1126b9ad263fe5fa5a083",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "建物収去土地明渡請求事件",
+     "court": "最高裁判所第三小法廷",
+     "date": "1963-10-01",
+     "holding": "差戻し後の第一審で改めて本案の終局判決がされるまでに訴えが取り下げられた場合には、再訴禁止の効果は生じない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53089/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判決当時の条文は旧民事訴訟法237条2項であり、現行の262条2項に相当する。"
+   ],
+   "id": "exp-yobi-2017-minso-q43-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q43-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。和解条項案の書面による受諾で和解が調ったものとみなされるのは、一方が書面で受諾し、他方が期日に出頭して受諾した場合などに限られ、双方が書面を出して期日に出頭しないだけでは足りない。",
+   "body": "誤りは、当事者双方が書面を出して期日に出頭しなければ和解が調ったものとみなせるとする点である。民事訴訟法264条1項は、「当事者の一方が出頭することが困難であると認められる場合」に、その当事者が和解条項案を受諾する旨の書面を提出し、「他の当事者が口頭弁論等の期日に出頭してその和解条項案を受諾したとき」に和解が調ったものとみなす。現行の同条2項は当事者双方が書面で受諾する場合を定めるが、これも「当事者双方が出頭することが困難であると認められる場合」に、「和解が成立すべき日時を定めて提示された和解条項案」を受諾する書面を提出し、「その日時が経過したとき」に限られる。本肢はこれらの要件を欠き、同法265条の裁判所等が定める和解条項も「当事者の共同の申立て」を前提とする別の制度である。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "264",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の一方が出頭することが困難であると認められる場合",
+     "text_sha256": "1fcb4342b672ce7d5ab1a67ed5ffd88602f3f2ce82d2863018892c664cdb2b14",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "264",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の当事者が口頭弁論等の期日に出頭してその和解条項案を受諾したとき",
+     "text_sha256": "1fcb4342b672ce7d5ab1a67ed5ffd88602f3f2ce82d2863018892c664cdb2b14",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "264",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当事者双方が出頭することが困難であると認められる場合",
+     "text_sha256": "1fcb4342b672ce7d5ab1a67ed5ffd88602f3f2ce82d2863018892c664cdb2b14",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "264",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "和解が成立すべき日時を定めて提示された和解条項案",
+     "text_sha256": "1fcb4342b672ce7d5ab1a67ed5ffd88602f3f2ce82d2863018892c664cdb2b14",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "264",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その日時が経過したとき",
+     "text_sha256": "1fcb4342b672ce7d5ab1a67ed5ffd88602f3f2ce82d2863018892c664cdb2b14",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "265",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の共同の申立て",
+     "text_sha256": "0bf3f58d974c3a382fa4534b6c7e99e63ede1f8e4a002007ecad210ab4369f68",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の264条2項（当事者双方の書面による受諾）は出題後の法改正で設けられたものと考えられる（改正の時期は要確認）。出題時（2017年）は、一方の当事者が期日に出頭して受諾することが必要であった。現行法でも、出頭困難の要件と、成立すべき日時を定めた提示・その日時の経過が必要であり、本肢が誤りである結論は変わらない。"
+   ],
+   "id": "exp-yobi-2017-minso-q43-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q43-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。訴訟上の和解の無効を主張する当事者は、期日指定の申立てによるほか、和解無効確認の訴えを提起することもできると解されている。",
+   "body": "誤りは、和解無効確認の訴えを「提起することができない」とする点である。民事訴訟法267条1項により、和解を記録した調書は「確定判決と同一の効力を有する」が、和解に無効原因があるときは、その効力を争う方法が問題となる。判例は、旧訴訟の続行を求める期日指定の申立てによる方法と、別訴として和解無効確認の訴えを提起する方法のいずれも許されるとする立場をとっていると解されている（判例あり（要確認））。したがって、期日指定の申立てに限られるとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "267",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決と同一の効力を有する",
+     "text_sha256": "5bff013f863e84860a0a1588b4dcfbb058f5ca29e223b5ab659be98aefffb0ee",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "和解の無効を争う方法についての判例は、courts.go.jp で判決を確認できなかったため要確認とした。",
+    "現行の267条1項は電子調書についての文言に改められているが、和解調書が確定判決と同一の効力を有するという点は出題時と同じである。"
+   ],
+   "id": "exp-yobi-2017-minso-q43-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q43-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。請求の放棄又は認諾をする旨の書面を提出した当事者が期日に出頭しないときは、裁判所はその旨の陳述をしたものとみなすことができる。",
+   "body": "本肢は民事訴訟法266条2項のとおりである。同条1項は「請求の放棄又は認諾は、口頭弁論等の期日においてする。」と定めるが、同条2項は「請求の放棄又は認諾をする旨の書面を提出した当事者が口頭弁論等の期日に出頭しないときは、裁判所又は受命裁判官若しくは受託裁判官は、その旨の陳述をしたものとみなすことができる。」と定める。したがって、相手方のみが出頭した期日において、裁判所は不出頭の当事者が請求の放棄又は認諾の陳述をしたものとみなすことができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "266",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "請求の放棄又は認諾は、口頭弁論等の期日においてする。",
+     "text_sha256": "16d4d91b64fd2724381fa4eecd4c74836759aeeef4b4f4e0217f6d3a3ffa115d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "266",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "請求の放棄又は認諾をする旨の書面を提出した当事者が口頭弁論等の期日に出頭しないときは、裁判所又は受命裁判官若しくは受託裁判官は、その旨の陳述をしたものとみなすことができる。",
+     "text_sha256": "16d4d91b64fd2724381fa4eecd4c74836759aeeef4b4f4e0217f6d3a3ffa115d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-minso-q43-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q43-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。離婚の訴えでは、附帯処分や親権者の指定の裁判を要しない場合に限り、被告は請求の認諾をすることができる。",
+   "body": "誤りは、離婚請求訴訟で被告が「請求の認諾をすることができない」とする点である。人事訴訟法19条2項は、人事訴訟の訴訟の目的について請求の放棄・認諾や和解に関する民事訴訟法の規定を適用しないとするが、人事訴訟法37条1項は、離婚の訴えに係る訴訟における和解並びに請求の放棄及び認諾については「第十九条第二項の規定にかかわらず」民事訴訟法の請求の放棄・認諾等の規定を適用すると定める。ただし、請求の認諾は「第三十二条第一項の附帯処分についての裁判又は同条第三項の親権者の指定についての裁判をすることを要しない場合に限る」。したがって、離婚請求訴訟でも被告は一定の場合に請求の認諾をすることができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "19",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "人事訴訟における訴訟の目的については、民事訴訟法第二百六十六条から第二百六十七条の二までの規定は、適用しない。",
+     "text_sha256": "e98bace53f6736946533aec8c5f42a3070d1eb79ce2c0a850f459a29e4cf5d07",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第十九条第二項の規定にかかわらず",
+     "text_sha256": "1600f57d65d6f5b40f078c9475eddcdece78afd7a2052faabf2f612f8c4e1acf",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三十二条第一項の附帯処分についての裁判又は同条第三項の親権者の指定についての裁判をすることを要しない場合に限る",
+     "text_sha256": "1600f57d65d6f5b40f078c9475eddcdece78afd7a2052faabf2f612f8c4e1acf",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-minso-q43-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
