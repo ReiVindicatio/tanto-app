@@ -1,0 +1,157 @@
+{
+ "question_id": "yobi-2020-kenpo-q11",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-kenpo-q11-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：条約承認で準用されるのは60条2項（議決の優越）だけで、60条1項の衆議院の先議は準用されないから、先に衆議院に提出する必要はない。",
+   "body": "ポイントは「先に衆議院に提出しなければならない」とする部分である。憲法61条は「条約の締結に必要な国会の承認については、前条第二項の規定を準用する。」と定めており、準用されるのは、両院協議会でも意見が一致しないときなどに衆議院の議決を国会の議決とする60条2項に限られる。予算の衆議院先議を定める60条1項の「予算は、さきに衆議院に提出しなければならない。」は準用されていない。したがって、条約承認について衆議院の優越は認められるが、承認の議案を先に衆議院に提出する必要はなく、参議院に先に提出することもできる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "61",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "条約の締結に必要な国会の承認については、前条第二項の規定を準用する。",
+     "text_sha256": "8b76031e9fdf040e88ad9f2f7f7f388be9b65d94da3b563e7bec91675eb470db",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "60",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "予算は、さきに衆議院に提出しなければならない。",
+     "text_sha256": "2bbcfb8c7be3e78b32e4008214a92813257007b143e507bda64f1c2d9fd65429",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "60",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "衆議院の議決を国会の議決とする。",
+     "text_sha256": "2bbcfb8c7be3e78b32e4008214a92813257007b143e507bda64f1c2d9fd65429",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-kenpo-q11-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-kenpo-q11-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：条約の締結は内閣の事務（73条3号）であり、批准書の認証は天皇の国事行為（7条8号）である。",
+   "body": "ポイントは、締結の権限と批准書の認証の主体を正しく分けている点である。憲法73条は内閣の事務として「条約を締結すること。」を挙げ、条約を締結する権限は内閣にある。他方、憲法7条は、天皇が内閣の助言と承認により行う国事行為として「批准書及び法律の定めるその他の外交文書を認証すること。」を定めている。したがって、批准を要する条約について、その批准書の認証は天皇の国事行為であり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "73",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "条約を締結すること。",
+     "text_sha256": "edd0bc44219efd4b718ab6544896bf6639962cb675ee319ccae43a433f235998",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "批准書及び法律の定めるその他の外交文書を認証すること。",
+     "text_sha256": "df858c6a7771435bb3ab9c22bc886d27ab18169b45fe1d8d5d73cfab10b42dee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-kenpo-q11-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-kenpo-q11-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：天皇による条約の公布は、成立した条約を国内に知らせる行為であり、公布によって条約が有効に成立するわけではない。",
+   "body": "ポイントは「公布することによって有効に成立する」とする部分である。憲法7条は天皇の国事行為として「憲法改正、法律、政令及び条約を公布すること。」を定めるが、条約は、内閣による締結（73条3号）によって国家間の合意として成立するものであり、公布はすでに成立した条約を国民に知らせる国内的な手続にとどまると解されている。また、73条3号は国会の承認について「事前に、時宜によつては事後に、国会の承認を経ることを必要とする。」と定めており、承認が締結の後になる場合もある。したがって、公布によって条約が有効に成立するとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "憲法改正、法律、政令及び条約を公布すること。",
+     "text_sha256": "df858c6a7771435bb3ab9c22bc886d27ab18169b45fe1d8d5d73cfab10b42dee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "73",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "事前に、時宜によつては事後に、国会の承認を経ることを必要とする。",
+     "text_sha256": "edd0bc44219efd4b718ab6544896bf6639962cb675ee319ccae43a433f235998",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "条約の成立と公布の関係（公布は成立要件でないこと）は、条文ではなく解釈による。"
+   ],
+   "id": "exp-yobi-2020-kenpo-q11-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

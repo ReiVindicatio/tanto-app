@@ -1,0 +1,219 @@
+{
+ "question_id": "yobi-2020-keiso-q17",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-keiso-q17-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：203条1項のとおり、司法警察員は逮捕された被疑者を受け取ったときは告知・弁解の機会の付与をし、留置の必要がないと思料するときは直ちに釈放しなければならない。",
+   "body": "司法巡査が逮捕状により被疑者を逮捕したときは、202条により「司法巡査はこれを司法警察員に引致しなければならない」。引致を受けた司法警察員について、203条1項は「逮捕状により逮捕された被疑者を受け取つたときは、直ちに犯罪事実の要旨及び弁護人を選任することができる旨を告げた上、弁解の機会を与え、留置の必要がないと思料するときは直ちにこれを釈放し」と定める。本肢はこの規定の内容のとおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "202",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "司法巡査はこれを司法警察員に引致しなければならない",
+     "text_sha256": "3b120242ec575c877708668c866796656b10192ec902bda1df2d4b37518b89d2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "203",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "逮捕状により逮捕された被疑者を受け取つたときは、直ちに犯罪事実の要旨及び弁護人を選任することができる旨を告げた上、弁解の機会を与え、留置の必要がないと思料するときは直ちにこれを釈放し",
+     "text_sha256": "af632c87454e65020fa5668fdabda782e75580c7d48705b9653d130b29ca1984",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-keiso-q17-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-keiso-q17-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：203条1項の送致の時間制限の起算点は「被疑者が身体を拘束された時」であり、「被疑者を受け取った時」ではない。",
+   "body": "決め手は「被疑者を受け取った時から４８時間以内」の部分である。203条1項は、留置の必要があると思料するときは「被疑者が身体を拘束された時から四十八時間以内に書類及び証拠物とともにこれを検察官に送致する手続をしなければならない」と定める。司法巡査が逮捕した被疑者を司法警察員が受け取った場合でも、起算点は逮捕により身体を拘束された時であり、引致を受けた時ではない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "203",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被疑者が身体を拘束された時から四十八時間以内に書類及び証拠物とともにこれを検察官に送致する手続をしなければならない",
+     "text_sha256": "af632c87454e65020fa5668fdabda782e75580c7d48705b9653d130b29ca1984",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-keiso-q17-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-keiso-q17-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：送致された被疑者を受け取った検察官の勾留請求の時間制限は、受け取った時から「二十四時間以内」（205条1項）であり、48時間ではない。",
+   "body": "決め手は「４８時間以内」の部分である。205条1項は、検察官が司法警察員から送致された被疑者を受け取ったときは、留置の必要があると思料するときは「被疑者を受け取つた時から二十四時間以内に裁判官に被疑者の勾留を請求しなければならない」と定める。さらに同条2項は「前項の時間の制限は、被疑者が身体を拘束された時から七十二時間を超えることができない。」と定めている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "205",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被疑者を受け取つた時から二十四時間以内に裁判官に被疑者の勾留を請求しなければならない",
+     "text_sha256": "d27c2d1b2f006955775756376eb8ddd3f8fdae1848951d1fefe93d3c7d854837",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "205",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の時間の制限は、被疑者が身体を拘束された時から七十二時間を超えることができない。",
+     "text_sha256": "d27c2d1b2f006955775756376eb8ddd3f8fdae1848951d1fefe93d3c7d854837",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-keiso-q17-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-keiso-q17-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：検察官が自ら逮捕状により逮捕した場合の勾留請求の時間制限は、身体を拘束された時から「四十八時間以内」（204条1項）であり、24時間ではない。",
+   "body": "決め手は「２４時間以内」の部分である。204条1項は、検察官が逮捕状により被疑者を逮捕したときは、告知と弁解の機会の付与をした上、留置の必要があると思料するときは「被疑者が身体を拘束された時から四十八時間以内に裁判官に被疑者の勾留を請求しなければならない」と定める。24時間の制限は、司法警察員から送致された被疑者を検察官が受け取った場合の定め（205条1項）である。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "204",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被疑者が身体を拘束された時から四十八時間以内に裁判官に被疑者の勾留を請求しなければならない",
+     "text_sha256": "d481bd68528fc7d44906fbcdd1954a4044bba9c9f10e4b437f639c15738adb0a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "205",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被疑者を受け取つた時から二十四時間以内に裁判官に被疑者の勾留を請求しなければならない",
+     "text_sha256": "d27c2d1b2f006955775756376eb8ddd3f8fdae1848951d1fefe93d3c7d854837",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-keiso-q17-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-keiso-q17-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：勾留期間の起算点は「勾留の請求をした日」（208条1項）であり、身体を拘束された日ではない。",
+   "body": "決め手は「被疑者が身体を拘束された日から１０日以内」の部分である。208条1項は「第二百七条の規定により被疑者を勾留した事件につき、勾留の請求をした日から十日以内に公訴を提起しないときは、検察官は、直ちに被疑者を釈放しなければならない。」と定める。10日の期間は勾留の請求をした日から数えるのであり、逮捕により身体を拘束された日から数えるのではない。なお、同条2項により、やむを得ない事由があるときは通じて10日を超えない範囲で延長できる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "208",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百七条の規定により被疑者を勾留した事件につき、勾留の請求をした日から十日以内に公訴を提起しないときは、検察官は、直ちに被疑者を釈放しなければならない。",
+     "text_sha256": "025e1115fa564e91ca1651cb0202a325c51c7173ec9356942e130704a0b8a017",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "208",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "この期間の延長は、通じて十日を超えることができない。",
+     "text_sha256": "025e1115fa564e91ca1651cb0202a325c51c7173ec9356942e130704a0b8a017",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-keiso-q17-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

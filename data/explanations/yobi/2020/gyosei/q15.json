@@ -1,0 +1,143 @@
+{
+ "question_id": "yobi-2020-gyosei-q15",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-gyosei-q15-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：権限を行使し得る旨を示すときは、根拠条項・要件に加えて「当該権限の行使が前号の要件に適合する理由」も示さなければならない（行政手続法35条2項3号）。",
+   "body": "誤りのポイントは「要件に適合する理由を示す必要はない」とする部分である。行政手続法35条2項は、行政指導に携わる者が許認可等の権限を行使し得る旨を示すときは、相手方に対して「当該権限を行使し得る根拠となる法令の条項」（1号）、「前号の条項に規定する要件」（2号）に加えて、「当該権限の行使が前号の要件に適合する理由」（3号）を示さなければならないと定める。したがって、適合する理由も示す必要があり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "35",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "行政指導に携わる者は、当該行政指導をする際に、行政機関が許認可等をする権限又は許認可等に基づく処分をする権限を行使し得る旨を示すときは、その相手方に対して、次に掲げる事項を示さなければならない。",
+     "text_sha256": "9e6aa4c846fd0aac3cfb1884d81e5751f398578717c8dd256cb511f835481d0d",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "35",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該権限の行使が前号の要件に適合する理由",
+     "text_sha256": "9e6aa4c846fd0aac3cfb1884d81e5751f398578717c8dd256cb511f835481d0d",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-gyosei-q15-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-gyosei-q15-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：中止等の求めがあっても行政指導を一時中止する義務はなく、行政機関は必要な調査を行い、要件に適合しないと認めるときに中止等の措置をとる（行政手続法36条の2第3項）。",
+   "body": "誤りのポイントは「適合することを確認するまでの間，当該行政指導を一時中止しなければならない」とする部分である。行政手続法36条の2第1項は、法令違反の是正を求める行政指導の相手方が、要件に適合しないと思料するときに「当該行政指導の中止その他必要な措置をとることを求めることができる」と定める。これを受けた行政機関の義務について、同条3項は「必要な調査を行い、当該行政指導が当該法律に規定する要件に適合しないと認めるときは、当該行政指導の中止その他必要な措置をとらなければならない」と定めるにとどまる。申出があった段階で調査期間中の一時中止を義務付ける規定はなく、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "36_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該行政指導の中止その他必要な措置をとることを求めることができる",
+     "text_sha256": "df9f078fba171238d0c40757ef6da8a086355671bf3e818f705c52d1c9faba68",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "36_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "必要な調査を行い、当該行政指導が当該法律に規定する要件に適合しないと認めるときは、当該行政指導の中止その他必要な措置をとらなければならない",
+     "text_sha256": "df9f078fba171238d0c40757ef6da8a086355671bf3e818f705c52d1c9faba68",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-gyosei-q15-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-gyosei-q15-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：権限を行使する意思がない場合の行政指導で、権限を行使し得る旨を殊更に示して従うことを余儀なくさせることは禁止されている（行政手続法34条）。",
+   "body": "行政手続法34条は、許認可等の権限を有する行政機関が「当該権限を行使することができない場合又は行使する意思がない場合においてする行政指導にあっては、行政指導に携わる者は、当該権限を行使し得る旨を殊更に示すことにより相手方に当該行政指導に従うことを余儀なくさせるようなことをしてはならない」と定める。本肢は、このうち権限を行使する意思がない場合について同条の内容をそのまま述べている。行政指導の内容が「あくまでも相手方の任意の協力によってのみ実現されるものであること」は同法32条1項が定める一般原則であり、34条はその具体化と解されている。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "34",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該権限を行使することができない場合又は行使する意思がない場合においてする行政指導にあっては、行政指導に携わる者は、当該権限を行使し得る旨を殊更に示すことにより相手方に当該行政指導に従うことを余儀なくさせるようなことをしてはならない",
+     "text_sha256": "e6abb06315a9a1590ce69bfe3825cee235b21d7f33411f5a60775b84fc7e885f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "32",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行政指導の内容があくまでも相手方の任意の協力によってのみ実現されるものであることに留意しなければならない",
+     "text_sha256": "3ee6025e2a9cfe147a7957ea9e2da3df4b9f4586d8c766d0547d407544ef9618",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-gyosei-q15-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
