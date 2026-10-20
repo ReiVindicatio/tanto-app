@@ -10,6 +10,7 @@
 使い方：
   python3 pipeline/explain_queue.py            # 残りの数と、次の20問
   python3 pipeline/explain_queue.py --next 9   # 次の9問を「exam year subject number」の形で
+  python3 pipeline/explain_queue.py --show yobi 2026 shoho 16   # 解説を書くための1問の中身（書く肢・書かない肢の区別つき）
 """
 from __future__ import annotations
 
@@ -59,10 +60,46 @@ def queue() -> list[tuple[str, int, str, int, int]]:
     return out
 
 
+def show(exam: str, year: int, subject: str, number: int) -> None:
+    aliases = json.loads(INDEX.read_text(encoding="utf-8")).get("aliases", {}) if INDEX.exists() else {}
+    doc = json.loads((QUESTIONS / exam / str(year) / f"{subject}.json").read_text(encoding="utf-8"))
+    q = next(x for x in doc["questions"] if x["number"] == number)
+    done = explained_ids()
+    print(f"# {q['id']}（{q['format']}・配点 {q['points']}）")
+    print(f"【リード文】{q['stem']}")
+    for c in q["context"]:
+        print(f"【前提文：{c['kind']}】\n{c['text']}")
+    for k, sq in enumerate(q.get("sub_questions", [])):
+        print(f"【小問{sq['marker']}】{sq['stem']}")
+    if q["choices"]:
+        print("【選択肢】" + " ／ ".join(f"{c['number']}．{c['text']}" for c in q["choices"]))
+    print("【肢】")
+    for st in doc["statements"]:
+        if st["question_id"] != q["id"]:
+            continue
+        t = st["truth_at_exam"]
+        if t is None:
+            mark = "書かない（○×なし）"
+        elif st["id"] in aliases:
+            mark = f"書かない（名寄せ：{aliases[st['id']]} と同じ肢）"
+        elif st["id"] in done:
+            mark = "書かない（解説あり）"
+        else:
+            mark = "書く"
+        truth = "—" if t is None else ("○" if t["value"] else "×")
+        sub = f"小問{q['sub_questions'][st['sub']]['marker']} " if "sub" in st else ""
+        print(f"- {st['id']}｜{sub}{st['label']}｜公式 {truth}｜{mark}\n  {st['text']}")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--next", type=int, default=None)
+    ap.add_argument("--show", nargs=4, metavar=("EXAM", "YEAR", "SUBJECT", "NUMBER"))
     args = ap.parse_args()
+    if args.show:
+        e, y, sj, n = args.show
+        show(e, int(y), sj, int(n))
+        return
     q = queue()
     if args.next is not None:
         for exam, year, subj, num, _ in q[:args.next]:
