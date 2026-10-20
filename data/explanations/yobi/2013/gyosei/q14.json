@@ -1,0 +1,135 @@
+{
+ "question_id": "yobi-2013-gyosei-q14",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-gyosei-q14-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：行政手続法29条1項のとおり、弁明は書面（弁明書）の提出によるのが原則で、行政庁が口頭ですることを認めたときは口頭でできる。",
+   "body": "行政手続法29条1項は「弁明は、行政庁が口頭ですることを認めたときを除き、弁明を記載した書面（以下「弁明書」という。）を提出してするものとする。」と定める。したがって、弁明は弁明書の提出によるのが原則であり、行政庁が認めた場合には口頭で行うことができる。本肢はこの規定のとおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "29",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁明は、行政庁が口頭ですることを認めたときを除き、弁明を記載した書面（以下「弁明書」という。）を提出してするものとする。",
+     "text_sha256": "7c10492a2c72d2c1ae62bfa2682527fb11ce42c9ddf6f95810552b58cf6c9b30",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-gyosei-q14-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-gyosei-q14-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：免許停止は本来弁明の機会の付与で足りる処分であり、それより手厚い聴聞を経ている以上、改めて弁明手続を執らずに免許停止処分をすることができると解されている。",
+   "body": "誤りのポイントは「改めて弁明手続を執ることが必要となる」とする点である。行政手続法13条1項は、許認可等の取消しなど1号イからニに当たるときは聴聞を、それ以外のときは「前号イからニまでのいずれにも該当しないとき　弁明の機会の付与」を執るものとしており、免許停止は通常、弁明の機会の付与の対象となる処分である。もっとも、同項1号ニは「イからハまでに掲げる場合以外の場合であって行政庁が相当と認めるとき。」にも聴聞を執ることを認めており、弁明の対象となる処分について、より手厚い聴聞を執ることも法は予定している。そのため、取消しのための聴聞手続の中で名あて人に意見陳述の機会が与えられていれば、その結果、より軽い免許停止処分をすることが妥当と判断した場合にも、改めて弁明手続を執る必要はないと解されている。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前号イからニまでのいずれにも該当しないとき　弁明の機会の付与",
+     "text_sha256": "0a84c16ce73ff75962ffcf1293922be17793a192aec5fb0fb07d26b871c97a0e",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "イからハまでに掲げる場合以外の場合であって行政庁が相当と認めるとき。",
+     "text_sha256": "0a84c16ce73ff75962ffcf1293922be17793a192aec5fb0fb07d26b871c97a0e",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "聴聞を経た後に、より軽い弁明対象の処分をすることができるという結論は解釈による。判例は探していない。"
+   ],
+   "id": "exp-yobi-2013-gyosei-q14-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-gyosei-q14-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：免許取消しは行政手続法13条1項1号イにより聴聞を要する処分であり、弁明手続しか執っていない以上、改めて聴聞手続を執らなければ免許取消処分はできない。",
+   "body": "行政手続法13条1項は、不利益処分をしようとする場合には「当該各号に定める意見陳述のための手続を執らなければならない」とし、1号イで「許認可等を取り消す不利益処分をしようとするとき。」は聴聞を執るべきものとしている。免許の取消しはこれに当たるため、聴聞が必要である。弁明の機会の付与は聴聞よりも簡略な手続であるから、免許停止のための弁明手続を執っていても、聴聞を執ったことにはならない。したがって、弁明手続の進行中に免許取消処分が妥当と判断しても、改めて聴聞手続を執る必要があり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該各号に定める意見陳述のための手続を執らなければならない",
+     "text_sha256": "0a84c16ce73ff75962ffcf1293922be17793a192aec5fb0fb07d26b871c97a0e",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "許認可等を取り消す不利益処分をしようとするとき。",
+     "text_sha256": "0a84c16ce73ff75962ffcf1293922be17793a192aec5fb0fb07d26b871c97a0e",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "弁明手続が聴聞の代わりにならないことは解釈による（13条2項の適用除外に当たる事情は問題文にない）。"
+   ],
+   "id": "exp-yobi-2013-gyosei-q14-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

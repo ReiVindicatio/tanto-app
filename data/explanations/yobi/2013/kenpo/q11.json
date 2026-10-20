@@ -1,0 +1,135 @@
+{
+ "question_id": "yobi-2013-kenpo-q11",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-kenpo-q11-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：国会の減額修正には制限がないと解されており、予算の款や項を削除することも許される。",
+   "body": "誤りのポイントは「予算の款や項目を削除することは許されない」とする点である。憲法83条は「国の財政を処理する権限は、国会の議決に基いて、これを行使しなければならない。」と定め、憲法86条は「内閣は、毎会計年度の予算を作成し、国会に提出して、その審議を受け議決を経なければならない。」と定める。予算の作成・提出権は内閣にあるものの、財政民主主義の下で、国会が予算を減額する修正には制限がなく、款や項を削除することもできると解されている（制限が問題とされるのは、主として増額修正である）。したがって、減額修正として款項を削除することが許されないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "83",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国の財政を処理する権限は、国会の議決に基いて、これを行使しなければならない。",
+     "text_sha256": "342ec120d0fa87f974457889d3b9a1f58b0c8d9adaff1278abf82d1ae4ef7ebc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "86",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣は、毎会計年度の予算を作成し、国会に提出して、その審議を受け議決を経なければならない。",
+     "text_sha256": "ba724860017e31898ad0cb44f876168966f8f9fad077426130593ced5f98c085",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "減額修正に制限がなく款項の削除もできるとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2013-kenpo-q11-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-kenpo-q11-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：暫定予算も内閣が作成して国会に提出するものであり、国会の議決を経なければ執行できない。",
+   "body": "誤りのポイントは「国会の議決を経ることなく執行することができる」とする点である。財政法30条1項は「内閣は、必要に応じて、一会計年度のうちの一定期間に係る暫定予算を作成し、これを国会に提出することができる。」と定める。暫定予算も予算である以上、憲法86条の「国会に提出して、その審議を受け議決を経なければならない。」が及び、国会の議決が必要である。したがって、暫定予算を国会の議決なしに執行できるとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "財政法",
+     "article": "30",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣は、必要に応じて、一会計年度のうちの一定期間に係る暫定予算を作成し、これを国会に提出することができる。",
+     "text_sha256": "73cc64760d3eeef70f24470b8a06d9673db7df03cec89bfffb49bcb08cf4be0d",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%89%E5%8D%81%E5%9B%9B%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "86",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国会に提出して、その審議を受け議決を経なければならない。",
+     "text_sha256": "ba724860017e31898ad0cb44f876168966f8f9fad077426130593ced5f98c085",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-kenpo-q11-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-kenpo-q11-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：決算は、すでに行われた予算執行の結果を確認し内閣の責任を明らかにするためのものであり、予算と異なり法規範性を持たないと解されている。",
+   "body": "憲法90条1項は「国の収入支出の決算は、すべて毎年会計検査院がこれを検査し、内閣は、次の年度に、その検査報告とともに、これを国会に提出しなければならない。」と定める。決算は、予算執行の実績を示す計算書であり、これを国会に提出させるのは、予算執行者である内閣の責任を明らかにし、将来の財政計画や予算の編成に役立てるためと解されている。予算が国の財政行為を拘束する法規範性を持つと解されているのに対し、決算は事後の報告であって、国会がこれを承認しなくても既に行われた支出の効力に影響はなく、法規範性を有しないと解されている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "90",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国の収入支出の決算は、すべて毎年会計検査院がこれを検査し、内閣は、次の年度に、その検査報告とともに、これを国会に提出しなければならない。",
+     "text_sha256": "80164f896e5b293da585590b80c05ddfbfe6c46aaa7bdc2187dd2a98ae78d942",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "決算の目的・法規範性を有しないとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2013-kenpo-q11-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

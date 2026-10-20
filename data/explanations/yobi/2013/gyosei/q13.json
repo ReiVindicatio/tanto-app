@@ -1,0 +1,256 @@
+{
+ "question_id": "yobi-2013-gyosei-q13",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-gyosei-q13-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：建築確認は、計画が建築基準関係規定に適合するかを確認する行為であり、法律の根拠なく近隣住民との協議を停止条件とする附款を付けることはできないと解されている。",
+   "body": "誤りのポイントは、近隣住民との協議を「停止条件として建築確認を行うことができる」とする点である。建築基準法6条1項は、建築主が「その計画が建築基準関係規定」に適合するものであることについて確認を受けるものとし、同条4項は、審査の結果「建築基準関係規定に適合することを確認したときは、当該申請者に確認済証を交付しなければならない。」と定めている。このように建築確認は、計画が建築基準関係規定に適合するかどうかを判断し、適合すれば確認済証を交付しなければならない行為（いわゆる覊束行為）と解されており、法律の根拠なく、建築基準関係規定と関係のない近隣住民との協議を条件として付けることはできないと解されている。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "建築基準法",
+     "article": "6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その計画が建築基準関係規定",
+     "text_sha256": "84a15a12c0198db1c0dd67abaf947fd61e5b7cb131588bcf1dbc0384858c0ed8",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "建築基準法",
+     "article": "6",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "建築基準関係規定に適合することを確認したときは、当該申請者に確認済証を交付しなければならない。",
+     "text_sha256": "84a15a12c0198db1c0dd67abaf947fd61e5b7cb131588bcf1dbc0384858c0ed8",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "建築確認の覊束行為性と附款の可否は解釈による。判例は探していない。",
+    "現行の建築基準法6条は「建築主事又は建築副主事（以下「建築主事等」という。）」と定め、確認済証交付前の工事禁止は8項にある（問題文の参照条文では「建築主事」「１４」項）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2013-gyosei-q13-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-gyosei-q13-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：違反是正命令の要件は建築物が建築基準法令の規定に違反していることであり、建築確認を受けていても、その取消しや無効を前提とせずに命令をすることができる。",
+   "body": "建築基準法9条1項は、特定行政庁は「建築基準法令の規定又はこの法律の規定に基づく許可に付した条件に違反した建築物又は建築物の敷地については」、建築主等に対し違反を是正するために必要な措置を命ずることができると定めている。命令の要件は、現に建築物が建築基準法令の規定に違反していることであり、建築確認の有無や効力は要件とされていない。建築確認は、同法6条1項のとおり工事に着手する前に「その計画が建築基準関係規定」に適合することを確認するものにすぎず、確認を受けた建築物であっても、実際の建築物が法令に違反していれば、建築確認が取り消され又は無効でなくても是正命令をすることができると解されている（この点に触れた判例あり（要確認））。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "建築基準法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "建築基準法令の規定又はこの法律の規定に基づく許可に付した条件に違反した建築物又は建築物の敷地については",
+     "text_sha256": "0312599c97ea72db08c65cf5dccb656ef672041b2e8516132bde7a1d25d0eb87",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "建築基準法",
+     "article": "6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その計画が建築基準関係規定",
+     "text_sha256": "84a15a12c0198db1c0dd67abaf947fd61e5b7cb131588bcf1dbc0384858c0ed8",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "建築確認の取消訴訟の訴えの利益に関する最高裁判決（工事完了後の訴えの利益）が、建築確認の存在は違反是正命令の法的障害とならない旨に触れているとされるが、courts.go.jp で判決を2回探して確認できなかったため、cases には入れていない。結論は条文と解釈による。"
+   ],
+   "id": "exp-yobi-2013-gyosei-q13-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-gyosei-q13-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：近隣住民が求める違反是正命令の義務付け訴訟は、申請を前提としない非申請型義務付け訴訟であり、取消訴訟・無効確認訴訟の併合提起は要件とされていない。",
+   "body": "併合提起が必要なのは申請型の義務付け訴訟であり、行政事件訴訟法37条の3第3項は「第一項の義務付けの訴えを提起するときは」不作為の違法確認の訴えや「取消訴訟又は無効等確認の訴え」を併合して提起しなければならないと定める。これに対し、近隣住民は建築基準法9条1項の是正命令を求める法令上の申請権をもたないため、その義務付け訴訟は行政事件訴訟法3条6項1号の「行政庁が一定の処分をすべきであるにかかわらずこれがされないとき」に当たる非申請型の義務付け訴訟となる。非申請型の要件を定める同法37条の2は、「一定の処分がされないことにより重大な損害を生ずるおそれがあり、かつ、その損害を避けるため他に適当な方法がないとき」（1項）と、「法律上の利益を有する者」であること（3項）を求めるが、建築確認の取消訴訟などの併合提起は求めていない。したがって、これらの要件を満たせば、建築確認の取消訴訟等を併合しなくても適法に提起でき、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_3",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の義務付けの訴えを提起するときは",
+     "text_sha256": "6e1fb542f818d963350a9d088580a09d2dd33958bb8ba0469df736291942048a",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "3",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "行政庁が一定の処分をすべきであるにかかわらずこれがされないとき",
+     "text_sha256": "7ec49933ee781e46409fe039f91affe6395a3678e704ae2f2209a6f6d83e269f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一定の処分がされないことにより重大な損害を生ずるおそれがあり、かつ、その損害を避けるため他に適当な方法がないとき",
+     "text_sha256": "d75001fd49fa2bd01d9acf289486bfb2675cec1a96cced8501df1a714b127ed3",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "法律上の利益を有する者",
+     "text_sha256": "d75001fd49fa2bd01d9acf289486bfb2675cec1a96cced8501df1a714b127ed3",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "建築基準法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "特定行政庁は、建築基準法令の規定又はこの法律の規定に基づく許可に付した条件に違反した建築物又は建築物の敷地については",
+     "text_sha256": "0312599c97ea72db08c65cf5dccb656ef672041b2e8516132bde7a1d25d0eb87",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "近隣住民に是正命令の申請権がないこと（非申請型に当たること）は解釈による。判例は探していない。"
+   ],
+   "id": "exp-yobi-2013-gyosei-q13-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-gyosei-q13-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：建築基準法99条1項1号は6条1項の規定に違反した者を罰するもので、確認を受けずに建築すれば、建築物が建築基準関係規定に適合していても処罰の対象となる。",
+   "body": "誤りのポイントは、建築物が基準に適合していれば「刑罰を科されない」とする点である。建築基準法6条1項は、建築主は工事に着手する前に「確認の申請書を提出して建築主事又は建築副主事（以下「建築主事等」という。）の確認」を受け、「確認済証の交付を受けなければならない」と定め、手続として確認を受ける義務を課している。同法99条1項は「次の各号のいずれかに該当する者は、一年以下の拘禁刑又は百万円以下の罰金に処する。」とし、1号で6条1項の「規定に違反した者」を掲げる。処罰されるのは確認を受けずに建築したという手続違反であり、建築物やその敷地が実体的に建築基準関係規定に適合しているかどうかは問われないと解されている。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "建築基準法",
+     "article": "6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確認の申請書を提出して建築主事又は建築副主事（以下「建築主事等」という。）の確認",
+     "text_sha256": "84a15a12c0198db1c0dd67abaf947fd61e5b7cb131588bcf1dbc0384858c0ed8",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "建築基準法",
+     "article": "6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確認済証の交付を受けなければならない",
+     "text_sha256": "84a15a12c0198db1c0dd67abaf947fd61e5b7cb131588bcf1dbc0384858c0ed8",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "建築基準法",
+     "article": "99",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次の各号のいずれかに該当する者は、一年以下の拘禁刑又は百万円以下の罰金に処する。",
+     "text_sha256": "d3ad063e959ff8e8b3726ce64501cf4135205ae99d9a86c6ffc8b30e2b73299b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "建築基準法",
+     "article": "99",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "規定に違反した者",
+     "text_sha256": "d3ad063e959ff8e8b3726ce64501cf4135205ae99d9a86c6ffc8b30e2b73299b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の99条1項は「拘禁刑」と定める（問題文の参照条文では「懲役」）。6条1項も現行は「建築主事等」の確認と定める。改正前の内容は条文の本文で確認していない。いずれも本肢の結論には影響しない。"
+   ],
+   "id": "exp-yobi-2013-gyosei-q13-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
