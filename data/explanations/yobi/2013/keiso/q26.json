@@ -1,0 +1,193 @@
+{
+ "question_id": "yobi-2013-keiso-q26",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-keiso-q26-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：刑事訴訟法393条2項は、控訴裁判所が職権で第一審判決後の刑の量定に影響を及ぼすべき情状を取り調べることができると定めている。",
+   "body": "誤りのポイントは「取り調べることはできない」とする点である。控訴審は原判決の当否を審査する事後審とされるが、刑事訴訟法393条2項は「控訴裁判所は、必要があると認めるときは、職権で、第一審判決後の刑の量定に影響を及ぼすべき情状につき取調をすることができる。」と明文で定めている。したがって、事後審であることを理由に原判決後の情状を取り調べることができないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "393",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "控訴裁判所は、必要があると認めるときは、職権で、第一審判決後の刑の量定に影響を及ぼすべき情状につき取調をすることができる。",
+     "text_sha256": "a743e6f7ed58d5edeb67336109c7e4463cf67e3f5c16d5ceccb14b8852d269b8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "控訴審が事後審であるという性格づけは解釈による。判例は探していない。"
+   ],
+   "id": "exp-yobi-2013-keiso-q26-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-keiso-q26-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：裁判所法16条1号により、簡易裁判所の刑事に関する判決に対する控訴は高等裁判所が裁判権を有する。",
+   "body": "裁判所法16条は、高等裁判所が裁判権を有する事項として、1号で「地方裁判所の第一審判決、家庭裁判所の判決及び簡易裁判所の刑事に関する判決に対する控訴」を掲げている。したがって、簡易裁判所がした刑事第一審判決に対する控訴は、地方裁判所ではなく高等裁判所が審理する。民事事件では簡易裁判所の判決に対する控訴は地方裁判所に係属するのと異なる点に注意を要する。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "裁判所法",
+     "article": "16",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地方裁判所の第一審判決、家庭裁判所の判決及び簡易裁判所の刑事に関する判決に対する控訴",
+     "text_sha256": "61f3bf412bdd72524971c8877ba6decab8db5ba17e2b8df1bc0199b102c2ff00",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "民事事件の控訴の管轄（地方裁判所）については条文を引用していない。判例は探していない。"
+   ],
+   "id": "exp-yobi-2013-keiso-q26-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-keiso-q26-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：刑事訴訟法402条が禁じるのは原判決の刑より重い刑を言い渡すことであり、刑を重くしない限り、被告人に不利益な事実を認定することは許されると解されている。",
+   "body": "被告人のみが控訴した事件について、刑事訴訟法402条は「原判決の刑より重い刑を言い渡すことはできない。」と定める（不利益変更の禁止）。この規定が禁じているのは重い刑の言渡しであって、事実認定そのものではないと解されている。そのため、控訴裁判所は、原判決に事実誤認があると認めるときは、言い渡す刑が原判決の刑より重くならない限り、原判決より被告人に不利益な事実を認定することができる場合があると解されている。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "402",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "原判決の刑より重い刑を言い渡すことはできない。",
+     "text_sha256": "66fece6efaebb10a3f096326a2afe8f7e5c6a686a75335675f695a484af6b18a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "不利益変更禁止が刑の言渡しに限られ、不利益な事実認定を妨げないことは解釈による。この点に関する判例は探していない。"
+   ],
+   "id": "exp-yobi-2013-keiso-q26-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-keiso-q26-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：刑事訴訟法388条により、控訴審で被告人のためにする弁論は弁護人でなければすることができず、被告人自ら弁論することはできない。",
+   "body": "誤りのポイントは「被告人は、…自ら弁論をすることができる」とする点である。確かに刑事訴訟法404条は、第二編中公判に関する規定を控訴の審判に準用するが、それは「この法律に特別の定のある場合を除いては」とされている。その特別の定めとして、同法388条は「控訴審では、被告人のためにする弁論は、弁護人でなければ、これをすることができない。」と定めている。したがって、被告人が控訴趣意書に基づき自ら弁論をすることができるとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "404",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この法律に特別の定のある場合を除いては",
+     "text_sha256": "879ebf8e73f900fd397745a5e728ea273541c6c06815bdcea42cf521b0f5c090",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "388",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "控訴審では、被告人のためにする弁論は、弁護人でなければ、これをすることができない。",
+     "text_sha256": "d0c8970c2c4e0608ea2f828525550e2f3e235e5be4e70507c79374ec0a98c25d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "判例は探していない。"
+   ],
+   "id": "exp-yobi-2013-keiso-q26-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-keiso-q26-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：刑事訴訟法355条により、原審における弁護人は、被告人のため上訴をすることができ、改めて選任される必要はない。",
+   "body": "誤りのポイントは、第一審の弁護人は「被告人のため控訴をすることができず」、「改めて弁護人として選任される必要がある」とする点である。刑事訴訟法355条は「原審における代理人又は弁護人は、被告人のため上訴をすることができる。」と定めている。したがって、第一審の弁護人は、判決の宣告後であっても、この規定により被告人のため控訴をすることができる。よって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "355",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "原審における代理人又は弁護人は、被告人のため上訴をすることができる。",
+     "text_sha256": "be936ece010ae4e6a55114667a99cd1aa36e0d01aff826fd00c97f1afc23b6df",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "弁護人選任の効力が審級ごとに生じることを定める条文は引用していない。判例は探していない。"
+   ],
+   "id": "exp-yobi-2013-keiso-q26-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

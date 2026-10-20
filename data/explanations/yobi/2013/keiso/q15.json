@@ -1,0 +1,287 @@
+{
+ "question_id": "yobi-2013-keiso-q15",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-keiso-q15-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：現行犯人を逮捕する場合には、逮捕の現場で令状なしに差押えができる（刑事訴訟法220条1項2号・3項）。差押許可状の発付は必要ない。",
+   "body": "本問の事例では、司法巡査Yは乙を覚せい剤所持の事実により現行犯逮捕しており、覚せい剤はその逮捕の現場にある。刑事訴訟法220条1項は、司法警察職員は「現行犯人を逮捕する場合において必要があるときは」処分をすることができるとし、その処分として同項2号は「逮捕の現場で差押、捜索又は検証をすること。」を挙げ、同条3項は「第一項の処分をするには、令状は、これを必要としない。」と定めている。また、事例では乙が任意にアタッシュケースを開披して白色粉末入りのビニール袋をYに渡しているから、任意に提出された物として領置する（同法221条「所持者若しくは保管者が任意に提出した物は、これを領置することができる。」）こともできる。したがって、押収に差押許可状の発付が必要であるとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "220",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現行犯人を逮捕する場合において必要があるときは",
+     "text_sha256": "164eaabe0976395eb9b592cca0149e4a9c11ae7f398b275869b2423590a3fe2b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "220",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "逮捕の現場で差押、捜索又は検証をすること。",
+     "text_sha256": "164eaabe0976395eb9b592cca0149e4a9c11ae7f398b275869b2423590a3fe2b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "220",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の処分をするには、令状は、これを必要としない。",
+     "text_sha256": "164eaabe0976395eb9b592cca0149e4a9c11ae7f398b275869b2423590a3fe2b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "221",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "所持者若しくは保管者が任意に提出した物は、これを領置することができる。",
+     "text_sha256": "c03272bfcea55029c1842d4612483a364f1296cbac9e48524bfc4698d76d03d9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "e-Gov の本文では220条1項各号は1項の本文に続けて表示されているため、2号の文言も1項として引用した。"
+   ],
+   "id": "exp-yobi-2013-keiso-q15-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-keiso-q15-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：通常逮捕の規定は緊急逮捕にも現行犯逮捕にも準用される（刑事訴訟法211条・216条）から、司法警察員は甲にも乙にも弁解の機会を与えなければならない（同法203条1項）。",
+   "body": "刑事訴訟法203条1項は、司法警察員は逮捕状により逮捕された被疑者を受け取ったときは、「直ちに犯罪事実の要旨及び弁護人を選任することができる旨を告げた上、弁解の機会を与え」なければならないと定めている。この規定は、緊急逮捕については同法211条（「第百九十九条の規定により被疑者が逮捕された場合に関する規定を準用する。」）により、現行犯逮捕については同法216条（「現行犯人が逮捕された場合には、第百九十九条の規定により被疑者が逮捕された場合に関する規定を準用する。」）により、それぞれ準用される。したがって、現行犯逮捕された乙にも弁解の機会を与える必要があり、乙については必要がないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "203",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "直ちに犯罪事実の要旨及び弁護人を選任することができる旨を告げた上、弁解の機会を与え",
+     "text_sha256": "af632c87454e65020fa5668fdabda782e75580c7d48705b9653d130b29ca1984",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "211",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百九十九条の規定により被疑者が逮捕された場合に関する規定を準用する。",
+     "text_sha256": "c4c4425346cb3297df3f29307bc590eda229a7cae96a3d6f7881b24211640720",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "216",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現行犯人が逮捕された場合には、第百九十九条の規定により被疑者が逮捕された場合に関する規定を準用する。",
+     "text_sha256": "09caf5fc7cceddf2e2b81bac32b457ea58b4fc316474072b893783005f42b111",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-keiso-q15-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-keiso-q15-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：緊急逮捕をした場合は「直ちに裁判官の逮捕状を求める手続をしなければならない」（刑事訴訟法210条1項）。この手続の主体は「司法警察職員」とされ、司法巡査Xも行うことができる。",
+   "body": "司法巡査Xは、甲を覚せい剤譲渡の事実により緊急逮捕している。事例の参照条文によれば覚せい剤の譲渡は「１０年以下の懲役」に当たる罪であり、緊急逮捕の対象となる罪にあたる。刑事訴訟法210条1項は「検察官、検察事務官又は司法警察職員は、死刑又は無期若しくは長期三年以上の拘禁刑に当たる罪を犯したことを疑うに足りる十分な理由がある場合で」と定め、そのうえで「この場合には、直ちに裁判官の逮捕状を求める手続をしなければならない。」としている。司法警察職員には司法巡査も含まれる（同法39条3項「司法警察職員（司法警察員及び司法巡査をいう。以下同じ。）」）。通常逮捕の逮捕状の請求は検察官又は司法警察員に限られているが（同法199条2項）、緊急逮捕後の逮捕状を求める手続は、逮捕した司法巡査もすることができると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "210",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官、検察事務官又は司法警察職員は、死刑又は無期若しくは長期三年以上の拘禁刑に当たる罪を犯したことを疑うに足りる十分な理由がある場合で",
+     "text_sha256": "a16b14ff8b4bc7cccbc8fe9f8d83d7024c9488b266bc7fa97583c253f80d917a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "210",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この場合には、直ちに裁判官の逮捕状を求める手続をしなければならない。",
+     "text_sha256": "a16b14ff8b4bc7cccbc8fe9f8d83d7024c9488b266bc7fa97583c253f80d917a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "39",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "司法警察職員（司法警察員及び司法巡査をいう。以下同じ。）",
+     "text_sha256": "75b89a51ec4fe9018db639cf30e3c9a58ed8ee9aaf563c722c1141fb5cde965a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "199",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "検察官又は司法警察員",
+     "text_sha256": "cd5909a122ba9914e9296d9a1df3c86f2382ea6f58616fdbc3d44bf442649c5b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の刑事訴訟法210条1項は「拘禁刑」と定めており、出題後に刑の名称に関する改正があったとみられる。改正前の内容は条文の本文で確認していない（長期3年以上の罪である点は結論に影響しない）。",
+    "緊急逮捕後の逮捕状の請求を司法巡査がすることができる点は、刑事訴訟法210条1項の主体の文言による。刑事訴訟規則の定めは e-Gov になく確認していない。",
+    "覚せい剤譲渡の法定刑は、問題文の参照条文（覚せい剤取締法41条の2第1項）による。"
+   ],
+   "id": "exp-yobi-2013-keiso-q15-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-keiso-q15-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：逮捕の効力は逮捕の理由とされた被疑事実についてだけ及ぶ（事件単位の原則）と解されているから、覚せい剤譲渡の事実で逮捕中の甲を、別の窃盗の事実で逮捕することもできる。",
+   "body": "逮捕は、被疑者が「罪を犯したことを疑うに足りる相当な理由があるとき」（刑事訴訟法199条1項）に、その罪（被疑事実）を単位として行われるものであり、逮捕の効力は逮捕状などに記載された被疑事実についてだけ及ぶと解されている（事件単位の原則）。本問の窃盗の事実（平成24年2月27日の宝石の窃取）は、甲が逮捕された覚せい剤譲渡の事実とは別の事実である。そのため、覚せい剤譲渡の事実による身体拘束は窃盗の事実には及ばず、窃盗の事実について身体拘束をするには、その事実について別に逮捕の要件を満たして逮捕する必要があり、またそうすることができると解されている。したがって、覚せい剤譲渡の事実により逮捕されている間でも窃盗の事実により逮捕することができるとする本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "罪を犯したことを疑うに足りる相当な理由があるとき",
+     "text_sha256": "cd5909a122ba9914e9296d9a1df3c86f2382ea6f58616fdbc3d44bf442649c5b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "事件単位の原則と、逮捕中の別事実による逮捕の可否は解釈による。判例は探していない。"
+   ],
+   "id": "exp-yobi-2013-keiso-q15-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-keiso-q15-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：検察官への送致の手続の期限は「被疑者が身体を拘束された時から四十八時間以内」（刑事訴訟法203条1項）であり、起算点は引致の時（午後10時）ではなく現行犯逮捕の時（午後9時20分）である。",
+   "body": "刑事訴訟法203条1項は、留置の必要があると思料するときは「被疑者が身体を拘束された時から四十八時間以内に書類及び証拠物とともにこれを検察官に送致する手続をしなければならない。」と定めており、この規定は現行犯逮捕にも準用される（同法216条）。乙が身体を拘束されたのは、司法巡査Yが現行犯逮捕した平成24年3月1日午後9時20分である。したがって、送致の手続はそこから48時間以内、すなわち同月3日午後9時20分までにしなければならない。本肢は、司法警察員に引致された同月1日午後10時を起算点として同月3日午後10時までとしている点で誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "203",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被疑者が身体を拘束された時から四十八時間以内に書類及び証拠物とともにこれを検察官に送致する手続をしなければならない。",
+     "text_sha256": "af632c87454e65020fa5668fdabda782e75580c7d48705b9653d130b29ca1984",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "216",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現行犯人が逮捕された場合には、第百九十九条の規定により被疑者が逮捕された場合に関する規定を準用する。",
+     "text_sha256": "09caf5fc7cceddf2e2b81bac32b457ea58b4fc316474072b893783005f42b111",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-keiso-q15-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
