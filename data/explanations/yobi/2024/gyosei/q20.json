@@ -1,0 +1,177 @@
+{
+ "question_id": "yobi-2024-gyosei-q20",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-gyosei-q20-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。処分の取消訴訟と棄却裁決の取消訴訟のどちらも提起できる場合、裁決の取消訴訟では処分の違法を主張できない（原処分主義）。",
+   "body": "10条2項は、処分の取消しの訴えとその処分についての審査請求を棄却した裁決の取消しの訴えとを提起することができる場合には、「裁決の取消しの訴えにおいては、処分の違法を理由として取消しを求めることができない」とする。処分の違法は処分の取消訴訟で争い、裁決の取消訴訟では裁決固有の瑕疵だけを主張できるという原処分主義の定めである。したがって、裁決の取消訴訟で処分の違法を主張できるとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "10",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "処分の取消しの訴えとその処分についての審査請求を棄却した裁決の取消しの訴えとを提起することができる場合には、裁決の取消しの訴えにおいては、処分の違法を理由として取消しを求めることができない。",
+     "text_sha256": "1d1fe25fde819c0e058abe9d1130a0c643f7e3b21aca3aeaa6abd4115e107218",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-gyosei-q20-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-gyosei-q20-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。処分の取消訴訟は裁決の取消訴訟の関連請求であり、口頭弁論の終結までその訴訟に併合して提起できる。",
+   "body": "19条1項は、「原告は、取消訴訟の口頭弁論の終結に至るまで、関連請求に係る訴えをこれに併合して提起することができる」とする。裁決の取消訴訟からみて、「当該裁決に係る処分の取消しの請求」は関連請求に当たる（13条4号）。さらに20条は、処分の取消しの訴えを棄却裁決の取消しの訴えに併合して提起する場合には、被告の同意を要せず、出訴期間の遵守については「裁決の取消しの訴えを提起した時に提起されたものとみなす」とする。したがって、裁決の取消訴訟の提起後に出訴期間が過ぎていても、処分の取消訴訟を併合して適法に提起できる。本肢の「法令に特別の定めがある場合を除き」は、裁決についてのみ取消訴訟を提起できる旨の定め（いわゆる裁決主義）がある場合を除く趣旨と読める。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "原告は、取消訴訟の口頭弁論の終結に至るまで、関連請求に係る訴えをこれに併合して提起することができる。",
+     "text_sha256": "846834c9a9a478144efb08f04c263ef59f5906a7d933ea20e34fdf0ceeb15abc",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該裁決に係る処分の取消しの請求",
+     "text_sha256": "33235bdf214c77f4a1ce6044516c0c79326f75b1e8dabbb04740473291e7edc7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "処分の取消しの訴えの被告の同意を得ることを要せず、また、その提起があつたときは、出訴期間の遵守については、処分の取消しの訴えは、裁決の取消しの訴えを提起した時に提起されたものとみなす。",
+     "text_sha256": "87b1b1dab304d39124fdc26cec398aa72b7b0aa50131a2277134e7911c09d763",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-gyosei-q20-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-gyosei-q20-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。行政事件訴訟法が定めるのは職権証拠調べだけであり、当事者が主張していない事実を職権で認定すること（職権探知）は認められていない。",
+   "body": "24条は、「裁判所は、必要があると認めるときは、職権で、証拠調べをすることができる」とするにとどまり、事実の主張について職権で探知できる旨の規定はない。この法律に定めがない事項は「民事訴訟の例による」（7条）ため、取消訴訟でも弁論主義が妥当し、当事者が主張していない事実を判決の基礎とすることはできないと解されている。職権証拠調べは、当事者が主張した事実について証拠を職権で調べることを認めるものにすぎない。したがって、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "24",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、必要があると認めるときは、職権で、証拠調べをすることができる。",
+     "text_sha256": "86ce4f9ca70d93fc43f8cb220ea654febb36428ae936f867e7c619819629b77c",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行政事件訴訟に関し、この法律に定めがない事項については、民事訴訟の例による。",
+     "text_sha256": "40aeca15ac845f6224e5403a24664fd996d8432a6c9f66ca06808e7d41124251",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "弁論主義が妥当し職権探知は認められないという点は解釈による。"
+   ],
+   "id": "exp-yobi-2024-gyosei-q20-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-gyosei-q20-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。裁判所は必要があれば職権で証拠調べができ、その結果について当事者の意見をきかなければならない。",
+   "body": "24条は、「裁判所は、必要があると認めるときは、職権で、証拠調べをすることができる」とし、ただし書で「その証拠調べの結果について、当事者の意見をきかなければならない」とする。本肢はこの条文のとおりである。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "24",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、必要があると認めるときは、職権で、証拠調べをすることができる。ただし、その証拠調べの結果について、当事者の意見をきかなければならない。",
+     "text_sha256": "86ce4f9ca70d93fc43f8cb220ea654febb36428ae936f867e7c619819629b77c",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-gyosei-q20-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

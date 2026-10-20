@@ -1,0 +1,227 @@
+{
+ "question_id": "yobi-2023-shoho-q16",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q16-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。会社法は発起人の人数に下限を設けておらず、発起人が1人でも株式会社を設立できる。",
+   "body": "誤りは「発起人が２人以上いなければ」設立できないとする部分である。会社法26条1項は「株式会社を設立するには、発起人が定款を作成し、その全員がこれに署名し、又は記名押印しなければならない。」と定めるが、発起人の人数を2人以上とする定めはない。また、同法25条2項は「各発起人は、株式会社の設立に際し、設立時発行株式を一株以上引き受けなければならない。」と定めるのみである。そのため、発起人は1人でもよいと解されており、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "26",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社を設立するには、発起人が定款を作成し、その全員がこれに署名し、又は記名押印しなければならない。",
+     "text_sha256": "1f96fd19c5a0b97eab08a3213640a8de386ce235cd9e4c9365f2f4219725d56e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "25",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "各発起人は、株式会社の設立に際し、設立時発行株式を一株以上引き受けなければならない。",
+     "text_sha256": "d5de9c41589564c62d5ba7d5835d786ed382c3b0fd5e0cc8a50c5713c45d1238",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "発起人が1人でもよいことは、人数の下限を定める規定がないことからの解釈による"
+   ],
+   "id": "exp-yobi-2023-shoho-q16-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q16-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。資本金及び資本準備金の額は定款の必要的記載事項ではなく、定款に定めがなければ発起人全員の同意で定めれば足りる。",
+   "body": "誤りは、資本金及び資本準備金の額を定款に「記載又は記録しなければならない」とする部分である。会社法27条が定款に必ず記載・記録すべき事項として挙げるのは、「目的」「商号」「本店の所在地」「設立に際して出資される財産の価額又はその最低額」「発起人の氏名又は名称及び住所」であり、資本金及び資本準備金の額は含まれていない。むしろ同法32条1項は、発起人が「成立後の株式会社の資本金及び資本準備金の額に関する事項」を、定款に定めがある事項を除き、「その全員の同意を得なければならない」として定めることを予定している。したがって、これらを定款に定める義務はなく、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "27",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社の定款には、次に掲げる事項を記載し、又は記録しなければならない。",
+     "text_sha256": "fee6c1238222418748df988833566755b0b19b5b0467c81df5eb5b3fb30c958a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "32",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "発起人は、株式会社の設立に際して次に掲げる事項（定款に定めがある事項を除く。）を定めようとするときは、その全員の同意を得なければならない。",
+     "text_sha256": "5ef138638c7c1ab027cfa8541401116e4345fe772812884a948b3990554845f6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q16-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q16-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。発起人の資格に制限はなく、法人である株式会社も発起人となることができる。",
+   "body": "会社法には発起人の資格を自然人に限る規定はない。同法27条は、定款の必要的記載事項として「発起人の氏名又は名称及び住所」を挙げており、「名称」という文言は法人が発起人となる場合を予定したものと解されている。同様に、同法28条1号も「金銭以外の財産を出資する者の氏名又は名称」と定めている。したがって、Ｂ株式会社はＡ株式会社の発起人となることができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "27",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "発起人の氏名又は名称及び住所",
+     "text_sha256": "fee6c1238222418748df988833566755b0b19b5b0467c81df5eb5b3fb30c958a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "金銭以外の財産を出資する者の氏名又は名称",
+     "text_sha256": "c17153849721f5c211cd336ec0e945cfc4169b6398ad8e16ed029e96e762e1dc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "法人が発起人となれることは、「名称」の文言と資格制限規定がないことからの解釈による"
+   ],
+   "id": "exp-yobi-2023-shoho-q16-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q16-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。権利株の譲渡は成立後の会社に「対抗することができない」だけであり、会社の側から譲受人を株主として扱うことは禁じられていない。",
+   "body": "誤りは、成立後の株式会社が譲受人を株主として「取り扱うことはできない」とする部分である。会社法35条は、出資の履行をすることにより「設立時発行株式の株主となる権利の譲渡は、成立後の株式会社に対抗することができない。」と定める。この規定は、設立手続の円滑な進行のために、譲受人が会社に対して譲渡の効力を主張できないとしたものにすぎない。そのため、会社の側から譲渡の効力を認めて譲受人を株主として取り扱うことは妨げられないと解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "35",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設立時発行株式の株主となる権利の譲渡は、成立後の株式会社に対抗することができない。",
+     "text_sha256": "967840b9a04a7060b5cd19aebce6f451b983721330eeb8bf54dfe244e420d108",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「対抗することができない」の意味（会社側からの承認は可能）は解釈による"
+   ],
+   "id": "exp-yobi-2023-shoho-q16-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q16-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。暗号資産は金銭以外の財産であり、その出資は現物出資として、出資者の氏名・財産とその価額・割り当てる株式数を定款に記載・記録しなければ効力を生じない。",
+   "body": "会社法28条は、株式会社を設立する場合に、同条各号の事項は「第二十六条第一項の定款に記載し、又は記録しなければ、その効力を生じない。」と定め、1号で「金銭以外の財産を出資する者の氏名又は名称、当該財産及びその価額並びにその者に対して割り当てる設立時発行株式の数」を挙げている。暗号資産は法定通貨（金銭）ではないから、これを出資することは金銭以外の財産の出資（現物出資）にあたると解される。したがって、Ｃの氏名、当該暗号資産及びその価額並びにＣに対して割り当てる設立時発行株式の数を定款に記載又は記録する必要があり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二十六条第一項の定款に記載し、又は記録しなければ、その効力を生じない。",
+     "text_sha256": "c17153849721f5c211cd336ec0e945cfc4169b6398ad8e16ed029e96e762e1dc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "金銭以外の財産を出資する者の氏名又は名称、当該財産及びその価額並びにその者に対して割り当てる設立時発行株式の数",
+     "text_sha256": "c17153849721f5c211cd336ec0e945cfc4169b6398ad8e16ed029e96e762e1dc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "暗号資産が「金銭以外の財産」にあたることは解釈による"
+   ],
+   "id": "exp-yobi-2023-shoho-q16-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,168 @@
+{
+ "question_id": "yobi-2024-gyosei-q24",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-gyosei-q24-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。内閣法10条は権限の委任ではなく（法定の）代理を定めた規定と解されており、指定された国務大臣の処分は、本来の主任の国務大臣の処分として効力を生じる。",
+   "body": "誤りは「権限の代理に関する規定ではなく、権限の委任に関する規定である」とする部分である。内閣法10条は、主任の国務大臣に事故があるとき又は欠けたときに、内閣総理大臣又はその指定する国務大臣が「臨時に、その主任の国務大臣の職務を行う。」と定める。同条は、権限を他の機関に移す委任ではなく、本来の権限者の地位はそのままに他の者がその職務を代わって行う代理（法律の定める事由で当然に生じる法定代理）を定めたものと解されている。代理の場合、代理機関がした行為は被代理機関（主任の国務大臣）の行為として効力を生じると解されているから、「当該国務大臣の処分として法的効力を生じる」とする点も誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "内閣法",
+     "article": "10",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "臨時に、その主任の国務大臣の職務を行う。",
+     "text_sha256": "7fc86822b96a94157658c630ce011c1a432d874b01e58251085c34ae940bb0c3",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "権限の代理と委任の区別、代理行為の効果の帰属は解釈による"
+   ],
+   "id": "exp-yobi-2024-gyosei-q24-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-gyosei-q24-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。内閣府は内閣の事務を助けることを任務とし、その長である内閣総理大臣は、内閣府に係る事項について主任の大臣として事務を分担管理する。",
+   "body": "内閣府設置法2条は「内閣に、内閣府を置く。」と定め、同法3条1項は「内閣府は、内閣の重要政策に関する内閣の事務を助けることを任務とする。」と定める。そのうえで、同法6条は「内閣府の長は、内閣総理大臣とする。」（1項）とし、「内閣総理大臣は、内閣府に係る事項についての内閣法にいう主任の大臣とし、第四条第三項に規定する事務を分担管理する。」（2項）と定める。また、同法5条2項は、内閣府が「内閣の統轄の下に」行政機能を発揮すべきことを定めている。各省大臣も、国家行政組織法5条1項により「内閣法（昭和二十二年法律第五号）にいう主任の大臣として、それぞれ行政事務を分担管理する。」とされており、内閣総理大臣は内閣府の長として各省大臣と同様に行政事務を分担管理する立場にある。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "内閣府設置法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣に、内閣府を置く。",
+     "text_sha256": "9172352f8435b86b8d4620c58e87b126067e9b3334f77ee0c3585040fb922fe0",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%80%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "内閣府設置法",
+     "article": "3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣府は、内閣の重要政策に関する内閣の事務を助けることを任務とする。",
+     "text_sha256": "5eef037dd31109aa0df065ab7b8612504b121c33cbddcb8cd664c386c4653039",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%80%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "内閣府設置法",
+     "article": "5",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "内閣の統轄の下に",
+     "text_sha256": "c7f0d10f6de46553023b358bdc6b9a3f09602559cbb1fc2095d8f53f553ece8c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%80%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "内閣府設置法",
+     "article": "6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣府の長は、内閣総理大臣とする。",
+     "text_sha256": "565d666ca8d3fac39179a30bc92f07b8d59db22543e6095a82e773e7a68ed4ec",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%80%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "内閣府設置法",
+     "article": "6",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "内閣総理大臣は、内閣府に係る事項についての内閣法にいう主任の大臣とし、第四条第三項に規定する事務を分担管理する。",
+     "text_sha256": "565d666ca8d3fac39179a30bc92f07b8d59db22543e6095a82e773e7a68ed4ec",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%80%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "国家行政組織法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣法（昭和二十二年法律第五号）にいう主任の大臣として、それぞれ行政事務を分担管理する。",
+     "text_sha256": "c619ead6d5ed30df2bda67ab8da03b3b35891565c851310439d8d93ea4174e08",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-gyosei-q24-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-gyosei-q24-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。旭川学テ事件判決は、教育に関する地方自治の原則から国の行政機関の介入・監督の権限に「一定の制約」が存するとしたにとどまり、介入が一切できないとはしていない。",
+   "body": "誤りは「介入することができない」と国の関与を全面的に否定する部分である。旭川学テ事件で最高裁大法廷は、学校等の設置管理や公立学校における教育に関する権限が地方公共団体・教育委員会に属するとされるなど、現行法制上、教育に関する地方自治の原則が採用されており、それは各地方の実情に適応した教育を行わせるのが教育の目的及び本質に適合するとの観念に基づく重要な基本原理であるとした。そのうえで、この原則からすれば、教育委員会の有する教育に関する固有の権限に対する国の行政機関である文部大臣の介入、監督の権限に「一定の制約」が存するとしたにとどまる。したがって、国の行政機関が教育委員会の固有の権限に一切介入できないとする本肢は、判例に照らして誤りである。",
+   "citations": [],
+   "cases": [
+    {
+     "name": "旭川学力テスト事件",
+     "court": "最高裁判所大法廷",
+     "date": "1976-05-21",
+     "holding": "教育に関する地方自治の原則は現行教育法制における重要な基本原理の一つであり、この原則からすれば、教育委員会の有する教育に関する固有の権限に対する国の行政機関である文部大臣の介入、監督の権限に一定の制約が存する（全面的に排除されるとはしていない）。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57016/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判決全文（裁判所ウェブサイト掲載のPDF、24〜26頁）の「本件学力調査と教育の地方自治」の項で確認した"
+   ],
+   "id": "exp-yobi-2024-gyosei-q24-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

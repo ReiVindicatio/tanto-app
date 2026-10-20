@@ -1,0 +1,209 @@
+{
+ "question_id": "yobi-2023-shoho-q17",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q17-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。株主が株式を取得した日は、株主名簿記載事項として記載・記録しなければならない。",
+   "body": "121条は、株式会社は株主名簿を作成し、所定の事項を「記載し、又は記録しなければならない」とし、その3号に「第一号の株主が株式を取得した日」を掲げる。株式の取得日は株主名簿記載事項であり、記載・記録を省略することはできない。したがって、取得日の記載・記録を要しないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "121",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、株主名簿を作成し、これに次に掲げる事項（以下「株主名簿記載事項」という。）を記載し、又は記録しなければならない。",
+     "text_sha256": "9fc54ca29a1de9006b3ba94623815718dc7dd852ffc88dc0e733a651c2d9fa98",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "121",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第一号の株主が株式を取得した日",
+     "text_sha256": "9fc54ca29a1de9006b3ba94623815718dc7dd852ffc88dc0e733a651c2d9fa98",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q17-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q17-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。株式会社は、定款で定めて株主名簿管理人を置き、株主名簿に関する事務を委託することができる。",
+   "body": "123条は、株式会社は、株主名簿管理人（「株式会社に代わって株主名簿の作成及び備置きその他の株主名簿に関する事務を行う者」）を「置く旨を定款で定め、当該事務を行うことを委託することができる」とする。本肢はこの規定のとおりである。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "123",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、株主名簿管理人（株式会社に代わって株主名簿の作成及び備置きその他の株主名簿に関する事務を行う者をいう。以下同じ。）を置く旨を定款で定め、当該事務を行うことを委託することができる。",
+     "text_sha256": "2cbf8cb872eff50bc93a3ee87425a20ee3ca4f6baff3b99cf2665d8943d93e39",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q17-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q17-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。請求者が会社と実質的に競争関係にある事業を営む者であることは、株主名簿の閲覧請求の拒絶事由に含まれていない。",
+   "body": "125条3項は、株主名簿の閲覧等の請求があったときは、同項各号のいずれかに該当する場合を除き「これを拒むことができない」とする。各号に掲げられているのは、権利の確保又は行使に関する調査以外の目的での請求（1号）、業務の遂行を妨げ又は株主の共同の利益を害する目的での請求（2号）、知り得た事実を利益を得て第三者に通報するための請求（3号）、過去二年以内にそのような通報をしたことがある者（4号）であり、請求者が競争関係にある事業を営み又はこれに従事する者であることは掲げられていない。したがって、競業関係を理由に請求を拒むことができるとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "125",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "株式会社は、前項の請求があったときは、次のいずれかに該当する場合を除き、これを拒むことができない。",
+     "text_sha256": "d66708139515d73eb8666e3884e68e6ee75b9741855caed810b53c0cb98070f6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "競業関係を拒絶事由とする定めは令和元年の会社法改正で株主名簿の閲覧等の拒絶事由から削られたと解されている（出題時点の2023年は改正後）。"
+   ],
+   "id": "exp-yobi-2023-shoho-q17-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q17-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。株主が別に通知先を通知していなければ、会社の通知は株主名簿上の住所にあてて発すれば足りる。",
+   "body": "126条1項は、株式会社が株主に対してする通知又は催告は、「株主名簿に記載し、又は記録した当該株主の住所（当該株主が別に通知又は催告を受ける場所又は連絡先を当該株式会社に通知した場合にあっては、その場所又は連絡先）にあてて発すれば足りる」とする。株主が別の通知先を通知していない本肢の場合は、株主名簿上の住所にあてて発すれば足りる。したがって、本肢は正しい。なお、その通知は通常到達すべきであった時に到達したものとみなされる（126条2項）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "126",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主名簿に記載し、又は記録した当該株主の住所（当該株主が別に通知又は催告を受ける場所又は連絡先を当該株式会社に通知した場合にあっては、その場所又は連絡先）にあてて発すれば足りる。",
+     "text_sha256": "db324fad0463c04566f68872e9329bccbb242c4eb86b0427935663511bccff73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "126",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の通知又は催告は、その通知又は催告が通常到達すべきであった時に、到達したものとみなす。",
+     "text_sha256": "db324fad0463c04566f68872e9329bccbb242c4eb86b0427935663511bccff73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q17-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q17-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。株式会社は、基準日を定めて、基準日の株主名簿上の株主を権利行使者と定めることができる。",
+   "body": "124条1項は、株式会社は「一定の日（以下この章において「基準日」という。）を定めて、基準日において株主名簿に記載され、又は記録されている株主（以下この条において「基準日株主」という。）をその権利を行使することができる者と定めることができる」とする。本肢はこの基準日の制度を述べたものである。したがって、本肢は正しい。なお、基準日株主が行使できる権利は基準日から三箇月以内に行使するものに限られ、その内容を定めなければならない（124条2項）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、一定の日（以下この章において「基準日」という。）を定めて、基準日において株主名簿に記載され、又は記録されている株主（以下この条において「基準日株主」という。）をその権利を行使することができる者と定めることができる。",
+     "text_sha256": "0d58fea5ecb6e2410f4eff6400d3e14757a501324735fa9bde5ac977eae6d73d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "124",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "基準日を定める場合には、株式会社は、基準日株主が行使することができる権利（基準日から三箇月以内に行使するものに限る。）の内容を定めなければならない。",
+     "text_sha256": "0d58fea5ecb6e2410f4eff6400d3e14757a501324735fa9bde5ac977eae6d73d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q17-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,235 @@
+{
+ "question_id": "yobi-2023-shoho-q18",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q18-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。会社法には自己株式を相当の時期に処分しなければならないとする規定はなく、会社は自己株式を期間の制限なく保有できる。",
+   "body": "会社法は、株式会社が自己株式を取得できる場合を155条で列挙しているが、取得した自己株式を一定の時期までに処分しなければならないとする規定は置いていない。自己株式は、そのまま保有し続けることも、消却すること（178条1項は「株式会社は、自己株式を消却することができる」とする）も、処分することもでき、いずれを選ぶかは会社に委ねられていると解されている。したがって、相当の時期に処分しなければならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "155",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、次に掲げる場合に限り、当該株式会社の株式を取得することができる。",
+     "text_sha256": "65fd0d366e6fd34fa6026050ca116da5d96e3bc7919f3252de91d3f43488b0c1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "178",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、自己株式を消却することができる。",
+     "text_sha256": "98d5f471056d09ed46576f0472822ceb6392b4f03b673be8c6303cdf13604dd6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "自己株式の保有期間に制限がないことは、処分義務の規定がないことからの解釈による。"
+   ],
+   "id": "exp-yobi-2023-shoho-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q18-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。自己株式には議決権がなく、剰余金の配当も募集株式の割当てを受ける権利も会社自身は対象から除かれている。",
+   "body": "308条2項は「株式会社は、自己株式については、議決権を有しない」とする。剰余金の配当については、453条が「その株主（当該株式会社を除く。）に対し」配当をすることができるとして、会社自身を除いている。株主に株式の割当てを受ける権利を与える場合も、202条2項は「同項第一号の株主（当該株式会社を除く。）は」割当てを受ける権利を有するとして、会社自身を除いている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "308",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定にかかわらず、株式会社は、自己株式については、議決権を有しない。",
+     "text_sha256": "3e2fc194c21546ffd77ff7290810c5fc5efb93d1ad84f46a253e7000e26eb21a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "453",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、その株主（当該株式会社を除く。）に対し、剰余金の配当をすることができる。",
+     "text_sha256": "5afa0f83a634bb85026931f5d2371354356a8224c016c9d29a8837cd625a7f6f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "202",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の場合には、同項第一号の株主（当該株式会社を除く。）は、その有する株式の数に応じて募集株式の割当てを受ける権利を有する。",
+     "text_sha256": "ae09ede01521d42345ec1b7346f85f1610297d81422b8cc8e461414b72f8c68f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q18-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。事業譲渡等に反対する株主の株式買取請求に応じた買取りは、分配可能額による財源規制（461条1項）の対象に含まれていない。",
+   "body": "461条1項は、同項各号に掲げる行為により株主に交付する金銭等の帳簿価額の総額は「当該行為がその効力を生ずる日における分配可能額を超えてはならない」とする。しかし、同項各号に掲げられているのは、譲渡制限株式の買取り（1号）、株主との合意による取得（2号・3号）、剰余金の配当（8号）などであり、事業譲渡等に反対する株主の株式買取請求（469条1項）に応じた買取りは含まれていない。反対株主の買取請求は株主の保護のための制度であり、財源規制がかからないと解されている。したがって、分配可能額を超えてはならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "461",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる行為により株主に対して交付する金銭等（当該株式会社の株式を除く。以下この節において同じ。）の帳簿価額の総額は、当該行為がその効力を生ずる日における分配可能額を超えてはならない。",
+     "text_sha256": "9a871c2bae44735ab65cd230da8a8a5aadcba06ad85af9a461fa636ed3e2c6e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "469",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "事業譲渡等をする場合（次に掲げる場合を除く。）には、反対株主は、事業譲渡等をする株式会社に対し、自己の有する株式を公正な価格で買い取ることを請求することができる。",
+     "text_sha256": "8301c31c694a290614dda3f2b0e1540ec61f62531462c694fa3be0b3b31ddcaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q18-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。株券発行会社の株式の譲渡には株券の交付が必要だが、自己株式の処分による譲渡は例外とされている。",
+   "body": "128条1項本文は「株券発行会社の株式の譲渡は、当該株式に係る株券を交付しなければ、その効力を生じない」とするが、同項ただし書は「ただし、自己株式の処分による株式の譲渡については、この限りでない」とする。したがって、自己株式の処分による譲渡は株券を交付しなくても効力を生じ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "128",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株券発行会社の株式の譲渡は、当該株式に係る株券を交付しなければ、その効力を生じない。ただし、自己株式の処分による株式の譲渡については、この限りでない。",
+     "text_sha256": "9d48b6d8c7cf51bb89265ffdeed505701cb0ffe9fa95c9d9dbd7531198cc72ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q18-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。自己株式を消却しても発行済株式の総数が減るだけで、定款で定めた発行可能株式総数は当然には減少しない。",
+   "body": "178条1項は「株式会社は、自己株式を消却することができる」とし、消却する自己株式の数を定めるよう求めるにとどまり、発行可能株式総数に関する定めは置いていない。発行可能株式総数は定款の記載事項であり、これを減少するには定款の変更が必要である（113条2項は「定款を変更して発行可能株式総数を減少するときは」とする）。そのため、自己株式の消却によって減少するのは発行済株式の総数であり、発行可能株式総数は定款を変更しない限りそのままであると解されている。したがって、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "178",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、自己株式を消却することができる。この場合においては、消却する自己株式の数（種類株式発行会社にあっては、自己株式の種類及び種類ごとの数）を定めなければならない。",
+     "text_sha256": "98d5f471056d09ed46576f0472822ceb6392b4f03b673be8c6303cdf13604dd6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "113",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "定款を変更して発行可能株式総数を減少するときは、変更後の発行可能株式総数は、当該定款の変更が効力を生じた時における発行済株式の総数を下ることができない。",
+     "text_sha256": "2d3462ae15ac5b9bee9b8bffb3bc77d514f8f36a678c3296cc63d96a6849d218",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "消却により発行可能株式総数が当然には減少しないことは、解釈による。"
+   ],
+   "id": "exp-yobi-2023-shoho-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
