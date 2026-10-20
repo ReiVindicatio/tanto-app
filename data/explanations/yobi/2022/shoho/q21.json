@@ -1,0 +1,319 @@
+{
+ "question_id": "yobi-2022-shoho-q21",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q21-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。監査等委員である取締役の任期は2年で、定款・株主総会決議による短縮を認める332条1項ただし書が適用されない（332条4項）。",
+   "body": "ポイントは、監査等委員である取締役について任期の短縮ができるかどうかである。取締役の任期は「選任後二年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時までとする」のが原則で、同項ただし書は「定款又は株主総会の決議によって、その任期を短縮することを妨げない」とする（332条1項）。しかし、332条4項は「監査等委員である取締役の任期については、第一項ただし書の規定は、適用しない」と定める。また、任期を1年とする332条3項は「監査等委員であるものを除く」取締役についての規定である。したがって、監査等委員である取締役の任期は2年で、短縮できないとする本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "332",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役の任期は、選任後二年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時までとする。ただし、定款又は株主総会の決議によって、その任期を短縮することを妨げない。",
+     "text_sha256": "5a7c37b070116a70dc4056ad795ebb6f8e8f4c1d9da3833955c08a37d98ed437",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "332",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査等委員会設置会社の取締役（監査等委員であるものを除く。）についての第一項の規定の適用については、同項中「二年」とあるのは、「一年」とする。",
+     "text_sha256": "5a7c37b070116a70dc4056ad795ebb6f8e8f4c1d9da3833955c08a37d98ed437",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "332",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "監査等委員である取締役の任期については、第一項ただし書の規定は、適用しない。",
+     "text_sha256": "5a7c37b070116a70dc4056ad795ebb6f8e8f4c1d9da3833955c08a37d98ed437",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q21-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q21-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。監査役会設置会社でも、公開会社かつ大会社で有価証券報告書の提出義務があるものは社外取締役を置かなければならない（327条の2）。",
+   "body": "誤りは「監査役会設置会社においては、……社外取締役の選任が義務付けられることはない」の部分である。327条の2は「監査役会設置会社（公開会社であり、かつ、大会社であるものに限る。）であって金融商品取引法第二十四条第一項の規定によりその発行する株式について有価証券報告書を内閣総理大臣に提出しなければならないものは、社外取締役を置かなければならない」と定める。前半について、監査等委員会設置会社では監査等委員である取締役の「過半数は、社外取締役でなければならない」（331条6項）、指名委員会等設置会社では各委員会の「委員の過半数は、社外取締役でなければならない」（400条3項）ので、社外取締役の選任が必要となる。また、監査役会設置会社では「そのうち半数以上は、社外監査役でなければならない」（335条3項）。しかし、監査役会設置会社に社外取締役の選任が義務付けられる場合がある以上、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "327_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "監査役会設置会社（公開会社であり、かつ、大会社であるものに限る。）であって金融商品取引法第二十四条第一項の規定によりその発行する株式について有価証券報告書を内閣総理大臣に提出しなければならないものは、社外取締役を置かなければならない。",
+     "text_sha256": "1a1528ce371137c72c2c1afc3cbd73885afca10595f5e5bfdbdd6364250ec927",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "331",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "監査等委員会設置会社においては、監査等委員である取締役は、三人以上で、その過半数は、社外取締役でなければならない。",
+     "text_sha256": "efd945351abf4f2bc71a6d6346b8558854d58983c43540d7c48f20b7f8bdc7ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "400",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "各委員会の委員の過半数は、社外取締役でなければならない。",
+     "text_sha256": "34d1eec793bbf34ecfffca603b65ec7a8dcfff26c44c86b48966338ce4098475",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "335",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査役会設置会社においては、監査役は、三人以上で、そのうち半数以上は、社外監査役でなければならない。",
+     "text_sha256": "04ace5012fa40f97df28d229c2ac40385a37871c068a7fc98ef1476cc0f35c37",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "327条の2は令和元年改正（令和3年3月1日施行）で設けられた規定で、出題時点（2022年）には施行済み。"
+   ],
+   "id": "exp-yobi-2022-shoho-q21-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q21-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。招集権者の定めがあっても、監査等委員会が選定する監査等委員（399条の14）・監査委員会がその委員の中から選定する者（417条1項）は取締役会を招集できる。",
+   "body": "ポイントは、招集権者の定め（366条1項ただし書）がある場合に、監査等委員・監査委員が自ら取締役会を招集できるかどうかである。399条の14は「監査等委員会設置会社においては、招集権者の定めがある場合であっても、監査等委員会が選定する監査等委員は、取締役会を招集することができる」と定める。417条1項は「指名委員会等設置会社においては、招集権者の定めがある場合であっても、指名委員会等がその委員の中から選定する者は、取締役会を招集することができる」と定めており、監査委員会が選定する監査委員もこれに当たる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "399_14",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "監査等委員会設置会社においては、招集権者の定めがある場合であっても、監査等委員会が選定する監査等委員は、取締役会を招集することができる。",
+     "text_sha256": "b373f873218250499a381e8546c6a5a2b899de8d08d25b16dca78f264049a9d7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "417",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "指名委員会等設置会社においては、招集権者の定めがある場合であっても、指名委員会等がその委員の中から選定する者は、取締役会を招集することができる。",
+     "text_sha256": "43f196c566c1398a66f967a8a037642562c06a902b40001aefa6a42020432304",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "366",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、取締役会を招集する取締役を定款又は取締役会で定めたときは、その取締役が招集する。",
+     "text_sha256": "5e49288e327183976e4de9b091c3654f3a886e157cb51792553fbcd2c13e8e68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q21-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q21-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。監査役は取締役会に出席し、必要があると認めるときは意見を述べなければならない（383条1項）。",
+   "body": "誤りは「監査役は、取締役ではないから、監査役会設置会社の取締役会において意見を述べることができない」の部分である。383条1項本文は「監査役は、取締役会に出席し、必要があると認めるときは、意見を述べなければならない」と定めており、監査役は取締役でなくても取締役会で意見を述べることができ、必要があると認めるときは意見を述べる義務を負う。前半について、監査等委員・監査委員はいずれも取締役であり、取締役会の構成員として取締役会で意見を述べることができる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "383",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "監査役は、取締役会に出席し、必要があると認めるときは、意見を述べなければならない。",
+     "text_sha256": "28b06a5f81d3c8e3d94f28d9147bf28bbec57c757b8ed57ec141cc12d4f534da",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "362",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役会は、すべての取締役で組織する。",
+     "text_sha256": "0c2c40d6cd0d3a3ae0a6e3f00a33298453cecc241308ad598ed1bbbbaf153799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q21-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q21-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。指名委員会等設置会社の取締役会も、内部統制システムの整備（416条1項1号ホ）を自ら決定しなければならず（416条2項）、執行役に委任できない。",
+   "body": "誤りは「指名委員会等設置会社の取締役会は、当該決定を執行役に委任することができる」の部分である。416条2項は「指名委員会等設置会社の取締役会は、前項第一号イからホまでに掲げる事項を決定しなければならない」と定め、同条1項1号ホには業務の適正を確保するための体制の整備が掲げられている。同条4項は業務執行の決定を執行役に委任できるとするが、同条2項により取締役会が決定しなければならないとされた事項は、執行役に委任できないと解されている。前半については、監査役会設置会社（大会社）では362条4項6号の事項の決定を取締役に委任できず（同条4項）、「大会社である取締役会設置会社においては、取締役会は、前項第六号に掲げる事項を決定しなければならない」（同条5項）。監査等委員会設置会社でも「監査等委員会設置会社の取締役会は、前項第一号イからハまでに掲げる事項を決定しなければならない」（399条の13第2項）とされており、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "416",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "指名委員会等設置会社の取締役会は、前項第一号イからホまでに掲げる事項を決定しなければならない。",
+     "text_sha256": "bf5a36ceafbacef120a250d476286f26398b926be80addefcad468bcd7a40d1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "416",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "指名委員会等設置会社の取締役会は、その決議によって、指名委員会等設置会社の業務執行の決定を執行役に委任することができる。",
+     "text_sha256": "bf5a36ceafbacef120a250d476286f26398b926be80addefcad468bcd7a40d1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "362",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "取締役会は、次に掲げる事項その他の重要な業務執行の決定を取締役に委任することができない。",
+     "text_sha256": "0c2c40d6cd0d3a3ae0a6e3f00a33298453cecc241308ad598ed1bbbbaf153799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "362",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "大会社である取締役会設置会社においては、取締役会は、前項第六号に掲げる事項を決定しなければならない。",
+     "text_sha256": "0c2c40d6cd0d3a3ae0a6e3f00a33298453cecc241308ad598ed1bbbbaf153799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "399_13",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "監査等委員会設置会社の取締役会は、前項第一号イからハまでに掲げる事項を決定しなければならない。",
+     "text_sha256": "aa8667a259169b1009078f2762e98d90db0d39837b931913533bcfdc6db5981b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "指名委員会等設置会社で416条2項の事項を執行役に委任できないことは、同条4項ただし書の列挙には含まれておらず、同条2項の解釈による。"
+   ],
+   "id": "exp-yobi-2022-shoho-q21-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

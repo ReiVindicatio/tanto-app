@@ -1,0 +1,259 @@
+{
+ "question_id": "yobi-2022-shoho-q20",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q20-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、取締役会設置会社である非公開会社において、取締役会の決議によるほか株主総会の決議によっても代表取締役を定めることができる旨の定款の定めを有効としている。",
+   "body": "取締役会設置会社では、会社法362条2項が取締役会の職務として「代表取締役の選定及び解職」を挙げ、同条3項は「取締役会は、取締役の中から代表取締役を選定しなければならない。」と定めている。他方、同法295条2項は「取締役会設置会社においては、株主総会は、この法律に規定する事項及び定款で定めた事項に限り、決議をすることができる。」と定め、定款で株主総会の決議事項を加えることを認めている。最高裁平成29年2月21日決定は、取締役会設置会社である非公開会社における、取締役会の決議によるほか株主総会の決議によっても代表取締役を定めることができる旨の定款の定めは有効であるとした。この定めは取締役会から代表取締役の選定権限を奪うものではないと解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "362",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "代表取締役の選定及び解職",
+     "text_sha256": "0c2c40d6cd0d3a3ae0a6e3f00a33298453cecc241308ad598ed1bbbbaf153799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "362",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "取締役会は、取締役の中から代表取締役を選定しなければならない。",
+     "text_sha256": "0c2c40d6cd0d3a3ae0a6e3f00a33298453cecc241308ad598ed1bbbbaf153799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "295",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "取締役会設置会社においては、株主総会は、この法律に規定する事項及び定款で定めた事項に限り、決議をすることができる。",
+     "text_sha256": "3ea5faf49a0539f3ecc4ddcfb6a6d91e85739f52d2ded2b961895cb9a6758ece",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "職務執行停止，代行者選任仮処分命令申立て却下決定に対する抗告棄却決定に対する許可抗告事件",
+     "court": "最高裁判所第三小法廷",
+     "date": "2017-02-21",
+     "holding": "取締役会設置会社である非公開会社において、取締役会の決議によるほか株主総会の決議によっても代表取締役を定めることができる旨の定款の定めは有効である。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/86527/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "取締役会の選定権限を奪わないという理由づけは、裁判要旨ではなく一般的な理解による（解釈による）"
+   ],
+   "id": "exp-yobi-2022-shoho-q20-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q20-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。代表取締役は3か月に1回以上、取締役会に職務執行の状況を報告しなければならず、この報告は取締役全員への通知で省略することができない。",
+   "body": "誤りは、報告の頻度を「６か月に１回」とし、取締役全員への通知で報告を省略できるとする部分である。会社法363条2項は、代表取締役などは「三箇月に一回以上、自己の職務の執行の状況を取締役会に報告しなければならない。」と定める。同法372条1項は、取締役等が取締役の全員に対して報告すべき事項を通知したときは「当該事項を取締役会へ報告することを要しない。」とするが、同条2項は「前項の規定は、第三百六十三条第二項の規定による報告については、適用しない。」と定めている。この扱いを定款で変えることを認める規定もない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "363",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "三箇月に一回以上、自己の職務の執行の状況を取締役会に報告しなければならない。",
+     "text_sha256": "259e32fb5225fed2aacfd403501a3ddabc13ead01c7ff7f4062c0f7fca9baa1d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "372",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該事項を取締役会へ報告することを要しない。",
+     "text_sha256": "7dff68ef5f030a5c361831bb78fc8511d0002b62264b9b266365cd5480dc8a9c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "372",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、第三百六十三条第二項の規定による報告については、適用しない。",
+     "text_sha256": "7dff68ef5f030a5c361831bb78fc8511d0002b62264b9b266365cd5480dc8a9c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q20-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q20-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、取締役は取締役会に上程された事柄に限らず、代表取締役の業務執行一般を監視する職務を有するとしている。",
+   "body": "会社法362条2項は、取締役会の職務として「取締役の職務の執行の監督」を挙げている。最高裁昭和48年5月22日判決は、取締役会は会社の業務執行につき監査する地位にあるから、取締役会を構成する取締役は、取締役会に上程された事柄についてだけ監視するにとどまらず、代表取締役の業務執行一般につき、これを監視し、必要があれば取締役会を自ら招集し、あるいは招集することを求め、取締役会を通じて業務執行が適正に行われるようにする職務を有するとした。本肢はこの判示と一致する。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "362",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "取締役の職務の執行の監督",
+     "text_sha256": "0c2c40d6cd0d3a3ae0a6e3f00a33298453cecc241308ad598ed1bbbbaf153799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "損害賠償請求事件",
+     "court": "最高裁判所第三小法廷",
+     "date": "1973-05-22",
+     "holding": "取締役会を構成する取締役は、取締役会に上程された事柄についてだけ監視するにとどまらず、代表取締役の業務執行一般を監視し、必要があれば取締役会を招集し又は招集を求め、取締役会を通じて業務執行が適正に行われるようにする職務を有する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52058/detail2/index.html",
+      "https://www.courts.go.jp/assets/hanrei/hanrei-pdf-52058.pdf"
+     ]
+    }
+   ],
+   "notes": [
+    "判決は旧商法下のもの"
+   ],
+   "id": "exp-yobi-2022-shoho-q20-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q20-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、具体的に定められた報酬額は会社と取締役の契約内容となり、後の株主総会で無報酬とする決議をしても、取締役が同意しない限り報酬請求権を失わないとしている。",
+   "body": "会社法361条1項は、取締役の報酬等について、定款に定めていないときは「株主総会の決議によって定める。」としている。最高裁平成4年12月18日判決は、定款又は株主総会の決議によって取締役の報酬額が具体的に定められた場合には、その報酬額は会社と取締役間の契約内容となり、双方を拘束するから、その後株主総会が当該取締役の報酬を無報酬とする旨の決議をしても、当該取締役は、これに同意しない限り報酬請求権を失わないとした。同判決は、取締役の職務内容に著しい変更があり、それを前提に決議がされた場合でも異ならないとしている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "361",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の決議によって定める。",
+     "text_sha256": "0dc5f0cfa1ef159dfa73d9c052da62f184e954d55cfe089ec6c6ca147748ec57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "取締役報酬事件",
+     "court": "最高裁判所第二小法廷",
+     "date": "1992-12-18",
+     "holding": "定款又は株主総会の決議によって取締役の報酬額が具体的に定められた場合、その報酬額は会社と取締役間の契約内容となって双方を拘束し、その後株主総会が無報酬とする決議をしても、当該取締役は同意しない限り報酬請求権を失わない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53502/detail2/index.html",
+      "https://www.courts.go.jp/assets/hanrei/hanrei-pdf-53502.pdf"
+     ]
+    }
+   ],
+   "notes": [
+    "判決は旧商法下のもの"
+   ],
+   "id": "exp-yobi-2022-shoho-q20-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q20-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。議事録に異議をとどめない取締役は決議に賛成したものと「推定」されるのであって、「みなされる」のではない。",
+   "body": "誤りは「賛成したものとみなされる」とする部分である。会社法369条5項は「取締役会の決議に参加した取締役であって第三項の議事録に異議をとどめないものは、その決議に賛成したものと推定する。」と定めている。推定であるから、実際には決議に反対したことを立証すれば、賛成したとの扱いを覆すことができる。これに対し、みなす（擬制）であれば反対の立証によっても覆らない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "369",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "取締役会の決議に参加した取締役であって第三項の議事録に異議をとどめないものは、その決議に賛成したものと推定する。",
+     "text_sha256": "e29aafab10e5f2705f31bcc129c2308bce2c4b67e4969a51125a14dee79c6d66",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "推定とみなすの違い（反証による覆しの可否）は一般的な理解による"
+   ],
+   "id": "exp-yobi-2022-shoho-q20-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

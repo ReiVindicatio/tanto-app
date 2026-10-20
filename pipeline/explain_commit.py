@@ -77,7 +77,7 @@ def update_now() -> str:
 
 WINDOW = ROOT / ".claude" / "explain_window.json"  # 利用上限の5時間枠の目安（git には入れない）
 WINDOW_HOURS = 5
-CAP_PER_WINDOW = 20  # 1バッチ（6本・18問）で約4%（2026-10-20 に測定）。90% の手前で止める
+CAP_PER_WINDOW = 12  # 1バッチ（6本・18問）で約4%と測ったが（2026-10-20）、12バッチ目で上限に届いたとみられ止まった。余裕を見て12
 
 
 def count_window(start_end: str | None, start_used: int | None) -> None:

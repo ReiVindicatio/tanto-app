@@ -1,0 +1,255 @@
+{
+ "question_id": "yobi-2022-shoho-q18",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q18-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、所定の形式を具備した文書を株主に交付したときにはじめて、その文書が株券となるとしている。",
+   "body": "ポイントは、株券の効力が生じる時期を文書の「作成」時とみるか「交付」時とみるかである。最高裁昭和40年11月16日判決は、旧商法の規定にいう株券の発行とは、会社が所定の形式を具備した文書を株主に交付することをいい、株主に交付したときにはじめてその文書が株券となると判示した。この判決は旧商法についてのものであるが、株券発行会社が株券を発行しなければならないとする現行の会社法215条1項（「株券発行会社は、株式を発行した日以後遅滞なく、当該株式に係る株券を発行しなければならない。」）の下でも、同様に解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "215",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株券発行会社は、株式を発行した日以後遅滞なく、当該株式に係る株券を発行しなければならない。",
+     "text_sha256": "9e4dee3b609f60455c3d1efea68d421439fce8b5d3d8a1d0eb3a1b8316dde24e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "株主権存在確認請求事件",
+     "court": "最高裁判所第三小法廷",
+     "date": "1965-11-16",
+     "holding": "旧商法にいう株券の発行とは、会社が所定の形式を具備した文書を株主に交付することをいい、株主に交付したときはじめて当該文書が株券となる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53904/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は旧商法下のもの。現行の会社法の下でも同様に解されているとの部分は解釈による"
+   ],
+   "id": "exp-yobi-2022-shoho-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q18-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。一部の種類の株式にだけ譲渡制限がある会社は公開会社であり、株主の請求があるまで株券を発行しないことが許されるのは公開会社でない株券発行会社に限られる。",
+   "body": "誤りは、一部の種類の株式についてのみ譲渡制限がある株式会社も株券の発行を留保できるとする部分である。会社法215条4項は「公開会社でない株券発行会社は、株主から請求がある時までは、これらの規定の株券を発行しないことができる。」と定め、発行の留保を公開会社でない会社に限っている。そして、同法2条5号は、公開会社を「その発行する全部又は一部の株式の内容として譲渡による当該株式の取得について株式会社の承認を要する旨の定款の定めを設けていない株式会社をいう。」と定義している。一部の種類の株式に譲渡制限がなければ、その会社は公開会社にあたる。したがって、一部の種類の株式についてのみ譲渡制限がある会社は、同法215条4項によって株券の発行を留保することはできず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "215",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "公開会社でない株券発行会社は、株主から請求がある時までは、これらの規定の株券を発行しないことができる。",
+     "text_sha256": "9e4dee3b609f60455c3d1efea68d421439fce8b5d3d8a1d0eb3a1b8316dde24e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その発行する全部又は一部の株式の内容として譲渡による当該株式の取得について株式会社の承認を要する旨の定款の定めを設けていない株式会社をいう。",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q18-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。提出された株券が無効となるのは、提出した時ではなく、会社が株券を発行しない旨を株主名簿に記載・記録した時である。",
+   "body": "株券不所持の申出ができるとする前半は正しい（会社法217条1項「株券発行会社の株主は、当該株券発行会社に対し、当該株主の有する株式に係る株券の所持を希望しない旨を申し出ることができる。」）。誤りは、株券が無効となる時期を「提出した時」とする部分である。同条3項は、申出を受けた会社が「遅滞なく、前項前段の株式に係る株券を発行しない旨を株主名簿に記載し、又は記録しなければならない。」と定め、同条5項は「第二項後段の規定により提出された株券は、第三項の規定による記載又は記録をした時において、無効となる。」と定めている。したがって、株券は提出時ではなく株主名簿への記載又は記録の時に無効となり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "217",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株券発行会社の株主は、当該株券発行会社に対し、当該株主の有する株式に係る株券の所持を希望しない旨を申し出ることができる。",
+     "text_sha256": "199bcec465f099507bc0a4fb142ae188ae0538b2b374d59d1189ccec08717de3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "217",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "遅滞なく、前項前段の株式に係る株券を発行しない旨を株主名簿に記載し、又は記録しなければならない。",
+     "text_sha256": "199bcec465f099507bc0a4fb142ae188ae0538b2b374d59d1189ccec08717de3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "217",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "第二項後段の規定により提出された株券は、第三項の規定による記載又は記録をした時において、無効となる。",
+     "text_sha256": "199bcec465f099507bc0a4fb142ae188ae0538b2b374d59d1189ccec08717de3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q18-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。株券喪失登録（抹消されたものを除く。）がされた株券は、株券喪失登録日の翌日から起算して1年を経過した日に無効となる。",
+   "body": "会社法228条1項は「株券喪失登録（抹消されたものを除く。）がされた株券は、株券喪失登録日の翌日から起算して一年を経過した日に無効となる。」と定めている。登録が抹消された場合が除かれることは、この括弧書きのとおりである。また、株券を発行する旨の定款の定めを廃止して会社が株券発行会社でなくなる場合には、同法218条2項により「株券発行会社の株式に係る株券は、前項第二号の日に無効となる。」とされ、株券はその日にすでに無効となっている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "228",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株券喪失登録（抹消されたものを除く。）がされた株券は、株券喪失登録日の翌日から起算して一年を経過した日に無効となる。",
+     "text_sha256": "05631644cd1bb690950059bb870c4d072410c4578b41b0c716652d9b71333114",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "218",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株券発行会社の株式に係る株券は、前項第二号の日に無効となる。",
+     "text_sha256": "98358d75bb037bb5147eacd71497a5f80b5e85bdf2e5ce340880cef48044a5ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q18-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。株券を発行する旨の定款の定めを廃止した場合、株券は株主の提出を要せず、定款変更の効力が生ずる日に無効となる。",
+   "body": "会社法218条1項は、株券発行会社が株券を発行する旨の定款の定めを廃止する定款の変更をしようとするときは、「定款の変更がその効力を生ずる日」などを公告し、株主等に通知しなければならないと定め、その事項の一つとして「前号の日において当該株式会社の株券は無効となる旨」を挙げている。そして、同条2項は「株券発行会社の株式に係る株券は、前項第二号の日に無効となる。」と定める。株主による株券の提出は無効となるための要件とされていない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "定款の変更がその効力を生ずる日",
+     "text_sha256": "98358d75bb037bb5147eacd71497a5f80b5e85bdf2e5ce340880cef48044a5ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前号の日において当該株式会社の株券は無効となる旨",
+     "text_sha256": "98358d75bb037bb5147eacd71497a5f80b5e85bdf2e5ce340880cef48044a5ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "218",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株券発行会社の株式に係る株券は、前項第二号の日に無効となる。",
+     "text_sha256": "98358d75bb037bb5147eacd71497a5f80b5e85bdf2e5ce340880cef48044a5ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

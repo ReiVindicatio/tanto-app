@@ -1,0 +1,379 @@
+{
+ "question_id": "yobi-2022-shoho-q17",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q17-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株式の併合・全部取得条項付種類株式の取得には株主総会の特別決議が必要だが、特別支配株主の株式等売渡請求には対象会社の承認があれば足り、株主総会決議は不要である。",
+   "body": "誤りは、株式等売渡請求の手法でも株主総会の特別決議が必要とする部分である。株式の併合は「株主総会の決議によって」併合の割合等を定めるとされ（会社法180条2項）、この決議は特別決議とされている（309条2項4号「第百八十条第二項の株主総会」）。全部取得条項付種類株式の取得も株主総会の決議により（171条1項）、特別決議を要する（309条2項3号）。これに対し、特別支配株主は、株式等売渡請求をしようとするときは「対象会社に対し、その旨及び前条第一項各号に掲げる事項を通知し、その承認を受けなければならない。」（179条の3第1項）とされ、取締役会設置会社では「取締役会の決議によらなければならない。」（同条3項）とされるにとどまり、株主総会の決議は要求されていない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "180",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株主総会の決議によって",
+     "text_sha256": "c746a1a010e653ebcf92eef7a45833b2cad066b3e8f3426a4c2c08b17efe8aac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "309",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第百八十条第二項の株主総会",
+     "text_sha256": "56ffbd6451793882d47ba533193af3dd09d3d0c791034f12f0f7f32cf6456aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "171",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の決議によって、全部取得条項付種類株式の全部を取得することができる。",
+     "text_sha256": "7e1fbf356dac6bcc95b36cbed527646385682626e5f738ea69151e844c384a6e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "309",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第百七十一条第一項及び第百七十五条第一項の株主総会",
+     "text_sha256": "56ffbd6451793882d47ba533193af3dd09d3d0c791034f12f0f7f32cf6456aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "179_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "対象会社に対し、その旨及び前条第一項各号に掲げる事項を通知し、その承認を受けなければならない。",
+     "text_sha256": "39c0200bcdb893f5a972d03a9471ad3ee824a0db84312818d66ba8bc8942a180",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "179_3",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "取締役会の決議によらなければならない。",
+     "text_sha256": "39c0200bcdb893f5a972d03a9471ad3ee824a0db84312818d66ba8bc8942a180",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q17-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q17-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。端数相当の株式を裁判所の許可を得て競売以外の方法で売却する場合、その許可の申立ては、取締役が2人以上あるときは全員の同意によらなければならない。",
+   "body": "株式の併合により生じた端数は、その合計数に相当する株式を競売し、代金を株主に交付するのが原則であり（会社法235条1項）、全部取得条項付種類株式の取得により交付する株式に端数が生じた場合も同様である（234条1項2号）。この競売に代えて、234条2項は、市場価格のない株式については「裁判所の許可を得て競売以外の方法により、これを売却することができる。」と定め、続けて「当該許可の申立ては、取締役が二人以上あるときは、その全員の同意によってしなければならない。」とする。株式の併合の場合も、235条2項が「前条第二項から第五項までの規定は、前項の場合について準用する。」としている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "235",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社が株式の分割又は株式の併合をすることにより株式の数に一株に満たない端数が生ずるときは",
+     "text_sha256": "ed08682506fac3a5bf4a317f737bfdbb5be5b75cb964b769c80c140b220a801e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "234",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百七十三条第一項の規定による株式の取得　当該株式会社の株主",
+     "text_sha256": "1b8a06b0cbbcc8573846382490d00023abe6fa87e4c7c552544f13d59e1767e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "234",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判所の許可を得て競売以外の方法により、これを売却することができる。",
+     "text_sha256": "1b8a06b0cbbcc8573846382490d00023abe6fa87e4c7c552544f13d59e1767e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "234",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該許可の申立ては、取締役が二人以上あるときは、その全員の同意によってしなければならない。",
+     "text_sha256": "1b8a06b0cbbcc8573846382490d00023abe6fa87e4c7c552544f13d59e1767e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "235",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前条第二項から第五項までの規定は、前項の場合について準用する。",
+     "text_sha256": "ed08682506fac3a5bf4a317f737bfdbb5be5b75cb964b769c80c140b220a801e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "本肢はＡ社の株式が市場価格のない株式であり、取締役が2人以上いることを前提にしていると読んだ"
+   ],
+   "id": "exp-yobi-2022-shoho-q17-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q17-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。株式等売渡請求では株式売渡請求に併せて新株予約権売渡請求ができるが、株式の併合や全部取得条項付種類株式の取得は株式についての制度であり、新株予約権は取得条項がなければ当然には取得できない。",
+   "body": "会社法179条2項は、特別支配株主は株式売渡請求をするときは「併せて、その株式売渡請求に係る株式を発行している株式会社（以下「対象会社」という。）の新株予約権の新株予約権者（対象会社及び当該特別支配株主を除く。）の全員に対し、その有する対象会社の新株予約権の全部を当該特別支配株主に売り渡すことを請求することができる。」と定める。これに対し、株式の併合（180条）や全部取得条項付種類株式の取得（171条）は株式を対象とする制度であり、新株予約権には及ばない。会社が新株予約権を一方的に取得するには、新株予約権の内容として「当該株式会社が一定の事由が生じたことを条件としてこれを取得することができることとするときは」その事項を定めておく必要があり（236条1項7号）、その定め（取得条項）がない限り、新株予約権を当然に取得することはできないと解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "179",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "併せて、その株式売渡請求に係る株式を発行している株式会社（以下「対象会社」という。）の新株予約権の新株予約権者（対象会社及び当該特別支配株主を除く。）の全員に対し、その有する対象会社の新株予約権の全部を当該特別支配株主に売り渡すことを請求することができる。",
+     "text_sha256": "875461d57826e8fb0cb7f167664f07f403c2481629c89bfd7f7fd1b388264c0b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "180",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、株式の併合をすることができる。",
+     "text_sha256": "c746a1a010e653ebcf92eef7a45833b2cad066b3e8f3426a4c2c08b17efe8aac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "171",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の決議によって、全部取得条項付種類株式の全部を取得することができる。",
+     "text_sha256": "7e1fbf356dac6bcc95b36cbed527646385682626e5f738ea69151e844c384a6e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "236",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該株式会社が一定の事由が生じたことを条件としてこれを取得することができることとするときは",
+     "text_sha256": "b7c8c3fb47aa3fba75670eedd07fa85056a91930d2cf4e34e5f350b206e27926",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "株式の併合・全部取得条項付種類株式の取得が新株予約権に及ばない点は解釈による"
+   ],
+   "id": "exp-yobi-2022-shoho-q17-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q17-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。議決権を合算できるのは発行済株式の全部を有する株式会社等（特別支配株主完全子法人）だけであり、議決権の3分の2しか有しないＤ社の分は合算できず、Ｂ社は10分の9の要件を満たさない。",
+   "body": "誤りは、Ｄ社の有する議決権を合算してＢ社が特別支配株主に当たるとする部分である。会社法179条1項は、特別支配株主を、総株主の議決権の10分の9以上を「当該株式会社以外の者及び当該者が発行済株式の全部を有する株式会社その他これに準ずるものとして法務省令で定める法人（以下この条及び次条第一項において「特別支配株主完全子法人」という。）が有している場合における当該者」と定める。法務省令（会社法施行規則33条の4第1項）が定める法人も、持分の全部を有する法人などに限られる。Ｂ社はＤ社の総株主の議決権の3分の2を有するにすぎないから、Ｄ社は特別支配株主完全子法人に当たらず、Ｂ社の議決権は10分の7にとどまる。したがって、Ｂ社は株式等売渡請求をすることができず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該株式会社以外の者及び当該者が発行済株式の全部を有する株式会社その他これに準ずるものとして法務省令で定める法人（以下この条及び次条第一項において「特別支配株主完全子法人」という。）が有している場合における当該者",
+     "text_sha256": "875461d57826e8fb0cb7f167664f07f403c2481629c89bfd7f7fd1b388264c0b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法施行規則",
+     "article": "33_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法第百七十九条第一項に規定する者がその持分の全部を有する法人（株式会社を除く。）",
+     "text_sha256": "fcdf59767c686d2e1080fe2102f7d3c4105f5c291028204e688bce833e8fc77f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q17-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q17-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。株式交換では、Ａ社の株主総会の承認を経れば、Ｃらの個別の承諾なしに、対価として金銭又はＢ社株式を交付してＡ社の発行済株式の全部を取得できる。",
+   "body": "会社法767条は「株式会社は、株式交換をすることができる。」とし、当該株式会社の発行済株式の全部を取得する会社との間で株式交換契約を締結しなければならないと定める。株式交換契約では、完全親会社が完全子会社の株主に「その株式に代わる金銭等を交付するとき」の内容を定めることができ（768条1項2号）、対価は完全親会社の株式でも、それ以外の財産である金銭でもよい（同号イ・ホ）。そして「株式交換完全親株式会社は、効力発生日に、株式交換完全子会社の発行済株式（株式交換完全親株式会社の有する株式交換完全子会社の株式を除く。）の全部を取得する。」（769条1項）。Ａ社では株主総会の決議による承認が必要であるが（783条1項）、対価が持分等である場合などを除き、総株主の同意は要しない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "767",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、株式交換をすることができる。",
+     "text_sha256": "ebc7c769f4af5745677bf5da3eaa927ac972621e03669458ff86bfc9ff700bc9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "768",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その株式に代わる金銭等を交付するとき",
+     "text_sha256": "00cf5b6015b49a524e428d8a7c1477d44d18d190d03bfc6f2fd8db990d03c4e5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "769",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式交換完全親株式会社は、効力発生日に、株式交換完全子会社の発行済株式（株式交換完全親株式会社の有する株式交換完全子会社の株式を除く。）の全部を取得する。",
+     "text_sha256": "ceda0c07a78fbb28624163749f59d47ca64a18eb9746dd86972046290a43922d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "783",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "消滅株式会社等は、効力発生日の前日までに、株主総会の決議によって、吸収合併契約等の承認を受けなければならない。",
+     "text_sha256": "b1b24b9cb0fabd3f6137dd2837152050ea21919af582ba309ffb93281f567925",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "783",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "吸収合併契約又は株式交換契約について吸収合併消滅株式会社又は株式交換完全子会社の総株主の同意を得なければならない。",
+     "text_sha256": "b1b24b9cb0fabd3f6137dd2837152050ea21919af582ba309ffb93281f567925",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q17-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
