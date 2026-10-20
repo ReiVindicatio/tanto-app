@@ -1,0 +1,168 @@
+{
+ "question_id": "yobi-2026-gyosei-q17",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-gyosei-q17-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。法律が行政上の強制徴収の手段を定めている債権については、その手続によるべきであり、民事上の強制執行は許されないと解されている。",
+   "body": "決め手は「であっても、民事上の強制執行を行うことができる」という部分である。法律は、一定の公法上の金銭債権について、裁判所を通さずに行政主体自ら滞納処分の例により徴収する手段を与えている。例えば地方自治法231条の3第3項は、分担金等について督促を受けた者が指定期限までに納付しないときは、普通地方公共団体の長は「地方税の滞納処分の例により処分することができる」と定める。このような簡易・迅速な特別の徴収手段が法律で用意されている以上、それによるべきであって、重ねて民事上の強制執行の手段をとることは許されないと解されている。最高裁大法廷にも、農業共済組合の共済掛金等について法律所定の徴収手続によるべきで民事訴訟法上の強制執行は許されないとしたものがある（判例あり（要確認））。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "231_3",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "地方税の滞納処分の例により処分することができる",
+     "text_sha256": "68aa72e4e83af31be11d978303c63f5c621fd441a3969e8471ec165548423b61",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "強制徴収手段がある債権について民事執行を否定する点は解釈による。",
+    "農業共済掛金に関する最高裁大法廷判決（昭和41年とされるもの）は、courts.go.jp で2回探したが判決ページを確認できなかったため、cases に入れていない。"
+   ],
+   "id": "exp-yobi-2026-gyosei-q17-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-gyosei-q17-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。条例違反に対する過料は、地方公共団体の長が行政上の処分として科するものであり、裁判所の手続は要しない。",
+   "body": "決め手は、条例に基づく過料を科す権限が長にあることである。地方自治法14条3項は、条例中に「条例に違反した者に対し」「五万円以下の過料を科する旨の規定を設けることができる」と定める。そして同法149条は、長の担任する事務として「地方税を賦課徴収し、分担金、使用料、加入金又は手数料を徴収し、及び過料を科すること。」を挙げている。長が過料の処分をするときは、同法255条の3により、あらかじめ告知し弁明の機会を与えなければならないが、裁判所の関与は予定されていない。さらに、納付しない場合は同法231条の3第3項により滞納処分の例による強制徴収もできる。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "14",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "五万円以下の過料を科する旨の規定を設けることができる",
+     "text_sha256": "93483fb29ff14b1566cf416d506a3a169a98bcd03c233ce8efe1905100a767f7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "149",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地方税を賦課徴収し、分担金、使用料、加入金又は手数料を徴収し、及び過料を科すること。",
+     "text_sha256": "f9cfcfdd2a6e6b1527ce47d281b43dae08afead6ccd12aad206c19924213c694",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "255_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "普通地方公共団体の長が過料の処分をしようとする場合においては、過料の処分を受ける者に対し、あらかじめその旨を告知するとともに、弁明の機会を与えなければならない。",
+     "text_sha256": "34394ee3822d88f7af49c9d9d033067bd20c36f65c9ebb00b56c7437af6c7dc6",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "231_3",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "地方税の滞納処分の例により処分することができる",
+     "text_sha256": "68aa72e4e83af31be11d978303c63f5c621fd441a3969e8471ec165548423b61",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-gyosei-q17-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-gyosei-q17-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、加算税（その前身の追徴税を含む）と刑罰の併科は憲法39条に違反しないとしており、併科は可能である。",
+   "body": "決め手は「併科することはできない」という部分である。憲法39条は「同一の犯罪について、重ねて刑事上の責任を問はれない。」と定めるが、加算税は申告納税制度の実効性を確保するための行政上の措置であり、刑罰とは趣旨・性質を異にすると解されている。最高裁昭和33年4月30日大法廷判決は、旧法人税法の追徴税と罰金を併科することは憲法39条に違反しないとした。また、最高裁昭和45年3月13日判決は、重加算税と刑罰の併科について、上記大法廷判決の趣旨に従い憲法39条に違反しないとした。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同一の犯罪について、重ねて刑事上の責任を問はれない。",
+     "text_sha256": "4bf593bf01acfd679c8cf5b695485ce8a4e818418d0940442e6495c8eb8e352b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [
+    {
+     "name": "法人税額更正決定取消等請求事件",
+     "court": "最高裁判所大法廷",
+     "date": "1958-04-30",
+     "holding": "旧法人税法43条の追徴税と罰金とを併科することは、憲法39条に違反しないとした。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54806/detail2/index.html"
+     ]
+    },
+    {
+     "name": "法人税法違反被告事件",
+     "court": "最高裁判所第二小法廷",
+     "date": "1970-03-13",
+     "holding": "重加算税と刑罰とを併科することは、従来の大法廷判決の趣旨に照らし、憲法39条に違反しないとした。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/59275/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "加算税の根拠法（国税通則法）は保存済みの法令にないため、条文は引用していない。",
+    "加算税を行政上の措置とする性質論は解釈による。"
+   ],
+   "id": "exp-yobi-2026-gyosei-q17-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
