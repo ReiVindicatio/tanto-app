@@ -1,0 +1,283 @@
+{
+ "question_id": "yobi-2020-shoho-q18",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q18-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。会社法には、自己株式の取得（155条）のように自己の新株予約権の取得を限定する規定はなく、取得条項に基づく場合に限られない。",
+   "body": "誤りは、取得条項付新株予約権を取得条項に基づき取得する場合を除き取得「できない」とする部分である。株式については、会社法155条柱書が「株式会社は、次に掲げる場合に限り、当該株式会社の株式を取得することができる。」と取得の場面を限定しているが、新株予約権についてはこれに相当する規定がない。むしろ、同法255条1項ただし書は「自己新株予約権（株式会社が有する自己の新株予約権をいう。以下この章において同じ。）」を定義し、同法276条1項は「株式会社は、自己新株予約権を消却することができる。」と定めるなど、会社が自己の新株予約権を有することを前提としている。そのため、株式会社は、取得条項に基づく場合に限らず、新株予約権者との合意による取得などによって自己の新株予約権を取得できると解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "155",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、次に掲げる場合に限り、当該株式会社の株式を取得することができる。",
+     "text_sha256": "65fd0d366e6fd34fa6026050ca116da5d96e3bc7919f3252de91d3f43488b0c1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "255",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己新株予約権（株式会社が有する自己の新株予約権をいう。以下この章において同じ。）",
+     "text_sha256": "784d8b5c90147be8c61f12027b7a861d31beb0a913c2dc1663f46c889974a2b8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "276",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、自己新株予約権を消却することができる。",
+     "text_sha256": "6137a67b1202471b00147b2a14b85e4f0603b36b56beccc125f1dc2b4162ffb6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "合意による取得などが制限されないとする点は、取得を限定する規定がないことからの解釈による"
+   ],
+   "id": "exp-yobi-2020-shoho-q18-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q18-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。募集新株予約権の割当てを受けた申込者は、払込期日ではなく割当日に新株予約権者となる。",
+   "body": "誤りは、払込期日に「払込みをした」募集新株予約権の新株予約権者となるとする部分である。会社法238条1項は、募集事項として「募集新株予約権を割り当てる日（以下この節において「割当日」という。）」と、払込みの期日を定めるときは「その期日」を別々に掲げている。そして、同法245条1項は「次の各号に掲げる者は、割当日に、当該各号に定める募集新株予約権の新株予約権者となる。」とし、1号で「申込者　株式会社の割り当てた募集新株予約権」を掲げる。このように、払込金額や払込期日を定めた場合でも、申込者は払込みの前に割当日に新株予約権者となり、払込期日までに払込みをしないときは「当該募集新株予約権を行使することができない」（同法246条3項）とされるにとどまる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "238",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "募集新株予約権を割り当てる日（以下この節において「割当日」という。）",
+     "text_sha256": "8db5e6971b3c1ef434d21994d5558547b2267db71fa7feef9ea9b132047b2968",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "245",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次の各号に掲げる者は、割当日に、当該各号に定める募集新株予約権の新株予約権者となる。",
+     "text_sha256": "f1ebb57ec8a2e64d0f28bc9e190dbc551d1b4938b9bb9bf0b9188f6cbea0f595",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "245",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申込者　株式会社の割り当てた募集新株予約権",
+     "text_sha256": "f1ebb57ec8a2e64d0f28bc9e190dbc551d1b4938b9bb9bf0b9188f6cbea0f595",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "246",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "当該募集新株予約権を行使することができない",
+     "text_sha256": "a5113437860d330a3b9496caf93609772572653b8c9ca31b5a5e26f42bf43f32",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q18-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q18-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。会社法280条6項は、株式会社は自己新株予約権を行使することができないと定める。",
+   "body": "会社法255条1項ただし書は、「自己新株予約権（株式会社が有する自己の新株予約権をいう。以下この章において同じ。）」と定義している。そのうえで、同法280条6項は「株式会社は、自己新株予約権を行使することができない。」と明文で定めている。会社が自己新株予約権を行使すると、会社が自ら出資して自己の株式を取得するのと同じことになるためと解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "255",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己新株予約権（株式会社が有する自己の新株予約権をいう。以下この章において同じ。）",
+     "text_sha256": "784d8b5c90147be8c61f12027b7a861d31beb0a913c2dc1663f46c889974a2b8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "280",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "株式会社は、自己新株予約権を行使することができない。",
+     "text_sha256": "049d6c93ae66e4149d75040baae01f9535abb856fceea51634d17a85b06340c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "規定の趣旨の説明は解釈による"
+   ],
+   "id": "exp-yobi-2020-shoho-q18-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q18-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。会社法282条1項のとおり、新株予約権者は新株予約権を行使した日に株主となる。",
+   "body": "会社法282条1項は「新株予約権を行使した新株予約権者は、当該新株予約権を行使した日に、当該新株予約権の目的である株式の株主となる。」と定めており、本肢はこの文言どおりである。なお、行使は「新株予約権を行使する日」などを明らかにしてしなければならない（同法280条1項2号）。払込み等が仮装された場合には株主の権利の行使が制限されることがある（同法282条2項）が、株主となる時期は行使の日である。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "282",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "新株予約権を行使した新株予約権者は、当該新株予約権を行使した日に、当該新株予約権の目的である株式の株主となる。",
+     "text_sha256": "b0ea2cd0458a1138883c348ecb81d96dafc10b01458de6af2d1df50c000b4a8d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "280",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "新株予約権を行使する日",
+     "text_sha256": "049d6c93ae66e4149d75040baae01f9535abb856fceea51634d17a85b06340c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "282",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株主の権利を行使することができない",
+     "text_sha256": "b0ea2cd0458a1138883c348ecb81d96dafc10b01458de6af2d1df50c000b4a8d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q18-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q18-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。新株予約権の発行の無効の訴えは、株主等のほか新株予約権者も提起することができる。",
+   "body": "誤りは、新株予約権者は提起することが「できない」とする部分である。会社法828条1項4号は、新株予約権の発行の無効を訴えをもってのみ主張できる行為として掲げている。そして、同条2項4号は、その提訴権者を「当該株式会社の株主等又は新株予約権者」と定めている。したがって、新株予約権者も新株予約権の発行の無効の訴えを提起することができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "828",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "新株予約権の発行の効力が生じた日から六箇月以内",
+     "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "828",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該株式会社の株主等又は新株予約権者",
+     "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q18-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

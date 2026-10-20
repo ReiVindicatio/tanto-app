@@ -1,0 +1,283 @@
+{
+ "question_id": "yobi-2021-keiso-q19",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiso-q19-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：246条は「特別の定のある場合を除いては」とし、ただし書で「検察官が指定した事件」を除いているから、「例外なく」送致しなければならないわけではない。",
+   "body": "決め手は「例外なく」の部分である。246条は「司法警察員は、犯罪の捜査をしたときは、この法律に特別の定のある場合を除いては、速やかに書類及び証拠物とともに事件を検察官に送致しなければならない。但し、検察官が指定した事件については、この限りでない。」と定める。このように、同条自身が法律に特別の定めのある場合と、検察官が指定した事件（いわゆる微罪処分の対象となる事件）を送致義務の例外としている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "246",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "司法警察員は、犯罪の捜査をしたときは、この法律に特別の定のある場合を除いては、速やかに書類及び証拠物とともに事件を検察官に送致しなければならない。但し、検察官が指定した事件については、この限りでない。",
+     "text_sha256": "c7a24839d776815b1b4d98381deac254dfcbdb1cd2feddc3d670caa2cf8196c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "検察官が指定した事件を「微罪処分」と呼ぶのは一般的な呼び方による。"
+   ],
+   "id": "exp-yobi-2021-keiso-q19-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiso-q19-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：247条により公訴は検察官が行い、その例外である付審判の決定や検察審査会の起訴議決も、検察官の公訴を提起しない処分を経たうえで行われる。",
+   "body": "247条は「公訴は、検察官がこれを行う。」と定める（起訴独占主義）。その例外として、262条1項の付審判請求により裁判所が事件を審判に付する決定をしたときは、267条により「その事件について公訴の提起があつたものとみなす。」とされるが、付審判請求は「検察官の公訴を提起しない処分に不服があるとき」にできるものである。また、検察審査会の起訴議決を受けて指定弁護士が公訴を提起する制度（検察審査会法41条の10第1項）も、検察官の公訴を提起しない処分の当否の審査（同法2条1項1号）を出発点とし、起訴を相当とする議決の後に検察官が改めて処分をすること（同法41条1項）を経ている。このように、例外の場合も検察官の起訴・不起訴の判断を経ているから、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "247",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公訴は、検察官がこれを行う。",
+     "text_sha256": "d33451e84206f9ace3f8abb6db498611f4f5a96ef3c573e302c22982b1414aac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "262",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官の公訴を提起しない処分に不服があるとき",
+     "text_sha256": "bedb34044156f3d484a683147fcce75accaf03342de265a5a3729a5a56c22319",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "267",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その事件について公訴の提起があつたものとみなす。",
+     "text_sha256": "935b054998292152fe6f2bbc111752e0b77a0d085edbe53cfad82f4cb60ecb99",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "検察審査会法",
+     "article": "41_10",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "指定弁護士は、速やかに、起訴議決に係る事件について公訴を提起しなければならない。",
+     "text_sha256": "1c80aae0c9f0f770d48479b46871ea892605e2502394711b861978c6f6f34df2",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E5%9B%9B%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "検察審査会法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官の公訴を提起しない処分の当否の審査に関する事項",
+     "text_sha256": "7e905304ef85f08a19ad149106104a7cc5e9cf5bf0370fdb20cfb65e37216f1d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E5%9B%9B%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "検察審査会法",
+     "article": "41",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官は、速やかに、当該議決を参考にして、公訴を提起すべきか否かを検討した上、当該議決に係る事件について公訴を提起し、又はこれを提起しない処分をしなければならない。",
+     "text_sha256": "4accdb65b37c2c2145685170ec91d2053f2946a042d9b1c6c2152bebccc63ffa",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E5%9B%9B%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-keiso-q19-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiso-q19-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：刑事訴訟法には、不起訴処分について検事正に見直しを請求する制度はなく、同法上の不服申立てである付審判請求も刑法177条の罪は対象外である。",
+   "body": "決め手は「刑事訴訟法に基づき」検事正に見直しを請求できるとする部分である。刑事訴訟法が告訴人・告発人に認める不起訴処分への不服申立ては、262条1項の付審判請求であり、その対象は「刑法第百九十三条から第百九十六条まで又は破壊活動防止法（昭和二十七年法律第二百四十号）第四十五条若しくは無差別大量殺人行為を行った団体の規制に関する法律（平成十一年法律第百四十七号）第四十二条若しくは第四十三条の罪」に限られ、本肢の強制性交等の罪及びその未遂罪は含まれない。また、同項の請求先は地方裁判所であり、検事正ではない。不起訴処分への不服は、検察審査会法30条により検察審査会に審査を申し立てることで争うことができる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "262",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "刑法第百九十三条から第百九十六条まで又は破壊活動防止法（昭和二十七年法律第二百四十号）第四十五条若しくは無差別大量殺人行為を行った団体の規制に関する法律（平成十一年法律第百四十七号）第四十二条若しくは第四十三条の罪",
+     "text_sha256": "bedb34044156f3d484a683147fcce75accaf03342de265a5a3729a5a56c22319",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "検察審査会法",
+     "article": "30",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二条第二項に掲げる者は、検察官の公訴を提起しない処分に不服があるときは、その検察官の属する検察庁の所在地を管轄する検察審査会にその処分の当否の審査の申立てをすることができる。",
+     "text_sha256": "fefea7ca701a9d4f7095a3263a79dd96f5526b23e0f7cf3e74b4443a4791814f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E5%9B%9B%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "本肢の罪は出題後の刑法改正（令和5年）で罪名が「不同意性交等」に変わっているが、付審判請求の対象外である点は変わらない。"
+   ],
+   "id": "exp-yobi-2021-keiso-q19-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiso-q19-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：起訴を相当とする議決があっても、検察官は議決を参考にして起訴するか否かを検討すればよく、議決に従って公訴を提起する義務はない（検察審査会法41条1項）。",
+   "body": "決め手は「当該議決に従って公訴を提起しなければならない」の部分である。検察審査会法41条1項は、起訴を相当とする議決（同法39条の5第1項1号）があった場合、「検察官は、速やかに、当該議決を参考にして、公訴を提起すべきか否かを検討した上、当該議決に係る事件について公訴を提起し、又はこれを提起しない処分をしなければならない。」と定めるにとどまる。検察官が再び公訴を提起しない処分をしたときは、検察審査会が改めて審査を行い（同法41条の2第1項）、起訴議決（同法41条の6第1項）がされれば、指定弁護士が公訴を提起する仕組みである。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "検察審査会法",
+     "article": "41",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官は、速やかに、当該議決を参考にして、公訴を提起すべきか否かを検討した上、当該議決に係る事件について公訴を提起し、又はこれを提起しない処分をしなければならない。",
+     "text_sha256": "4accdb65b37c2c2145685170ec91d2053f2946a042d9b1c6c2152bebccc63ffa",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E5%9B%9B%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "検察審査会法",
+     "article": "39_5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "起訴を相当と認めるとき　起訴を相当とする議決",
+     "text_sha256": "3b0b545efaca8961b27df9fda95d021689e618a95dd107a41c0fc09150a11971",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E5%9B%9B%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "検察審査会法",
+     "article": "41_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三十九条の五第一項第一号の議決をした検察審査会は、検察官から前条第三項の規定による公訴を提起しない処分をした旨の通知を受けたときは、当該処分の当否の審査を行わなければならない。",
+     "text_sha256": "1c4ab3eb1b2d2ee95a414761f54d47a2bfc2c5506fd35d823a9c2a194c186b02",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E5%9B%9B%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "検察審査会法",
+     "article": "41_6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "起訴をすべき旨の議決（以下「起訴議決」という。）をするものとする。",
+     "text_sha256": "88e0f94a80cae461e55a8d2d247567c74b644d5f02594e7049b2b9a95b806747",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E5%9B%9B%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-keiso-q19-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiso-q19-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：付審判請求の対象事件は、262条1項に列挙された公務員職権濫用等の罪に限定されている。",
+   "body": "決め手は「その対象事件には限定がない」の部分である。262条1項は、付審判請求ができる者を「刑法第百九十三条から第百九十六条まで又は破壊活動防止法（昭和二十七年法律第二百四十号）第四十五条若しくは無差別大量殺人行為を行った団体の規制に関する法律（平成十一年法律第百四十七号）第四十二条若しくは第四十三条の罪について告訴又は告発をした者」に限っている。列挙されているのは公務員職権濫用等の罪などであり、対象事件は列挙された罪に限定されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "262",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "刑法第百九十三条から第百九十六条まで又は破壊活動防止法（昭和二十七年法律第二百四十号）第四十五条若しくは無差別大量殺人行為を行った団体の規制に関する法律（平成十一年法律第百四十七号）第四十二条若しくは第四十三条の罪について告訴又は告発をした者",
+     "text_sha256": "bedb34044156f3d484a683147fcce75accaf03342de265a5a3729a5a56c22319",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-keiso-q19-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

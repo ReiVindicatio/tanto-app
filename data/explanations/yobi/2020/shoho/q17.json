@@ -1,0 +1,233 @@
+{
+ "question_id": "yobi-2020-shoho-q17",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q17-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：剰余金配当請求権と残余財産分配請求権の全部を与えない旨の定款の定めは効力を有しない（会社法105条2項）。",
+   "body": "会社法105条1項は、株主の権利として1号に「剰余金の配当を受ける権利」、2号に「残余財産の分配を受ける権利」を掲げる。そして同条2項は、「株主に前項第一号及び第二号に掲げる権利の全部を与えない旨の定款の定めは、その効力を有しない。」と定める。どちらか一方を与えないことは可能であるが、両方の全部を与えないことはできない。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "105",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株主に前項第一号及び第二号に掲げる権利の全部を与えない旨の定款の定めは、その効力を有しない。",
+     "text_sha256": "feaa8bbe789898253bebb3bb2bf72ac8a4b04ab592181a41504e0cc84471f259",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q17-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q17-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：種類株式発行会社では単元株式数を株式の種類ごとに定め（188条3項）、本肢の数は法務省令の上限（1000及び発行済株式総数の200分の1）の範囲内である。",
+   "body": "会社法188条3項は、「種類株式発行会社においては、単元株式数は、株式の種類ごとに定めなければならない。」と定めるので、A種とB種で異なる単元株式数を定めることができる。単元株式数は「法務省令で定める数を超えることはできない」（188条2項）とされ、会社法施行規則34条はその数を「千及び発行済株式の総数の二百分の一に当たる数」とする。本肢の発行済株式の総数は20万株で、その200分の1は1000株であるから、A種100株・B種1000株はいずれもこの上限を超えない。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "188",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "種類株式発行会社においては、単元株式数は、株式の種類ごとに定めなければならない。",
+     "text_sha256": "e6b79556e0fccda0b595732863626fcd562d3628de08d461f5d75a8efd2ba7fc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "188",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "法務省令で定める数を超えることはできない。",
+     "text_sha256": "e6b79556e0fccda0b595732863626fcd562d3628de08d461f5d75a8efd2ba7fc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法施行規則",
+     "article": "34",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "千及び発行済株式の総数の二百分の一に当たる数",
+     "text_sha256": "0e0c647a414df10b18610154af65008475cc822b7dc31a3cff23e0dfa725c856",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「発行済株式の総数の二百分の一」は、種類ごとではなく会社全体の発行済株式の総数を基準とする読み方による。"
+   ],
+   "id": "exp-yobi-2020-shoho-q17-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q17-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：共有者から受領者の通知がない場合、会社の通知・催告は共有者のうち1人に対してすれば足りる（126条4項）。",
+   "body": "誤りは、共有者の全員に対してしなければならないとしている部分である。会社法126条3項は、株式の共有者は通知・催告を受領する者1人を定めて会社に通知しなければならないとする。そして同条4項は、「前項の規定による共有者の通知がない場合には、株式会社が株式の共有者に対してする通知又は催告は、そのうちの一人に対してすれば足りる。」と定める。したがって、全員に対してする必要はない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "126",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "株式が二以上の者の共有に属するときは、共有者は、株式会社が株主に対してする通知又は催告を受領する者一人を定め、当該株式会社に対し、その者の氏名又は名称を通知しなければならない。",
+     "text_sha256": "db324fad0463c04566f68872e9329bccbb242c4eb86b0427935663511bccff73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "126",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "前項の規定による共有者の通知がない場合には、株式会社が株式の共有者に対してする通知又は催告は、そのうちの一人に対してすれば足りる。",
+     "text_sha256": "db324fad0463c04566f68872e9329bccbb242c4eb86b0427935663511bccff73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q17-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q17-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：単元未満株式の買取請求権は、定款で行使を制限できる権利から除かれている（189条2項4号）。",
+   "body": "会社法192条1項は、単元未満株主は株式会社に対し、自己の有する単元未満株式を買い取ることを請求できると定める。189条2項は、単元未満株主が「次に掲げる権利以外の権利の全部又は一部を行使することができない旨を定款で定めることができる」とし、定款で制限できない権利として4号に「第百九十二条第一項の規定により単元未満株式を買い取ることを請求する権利」を掲げている。したがって、買取請求をすることができない旨を定款で定めることはできず、本肢は正しい。単元未満株主に投下資本回収の途を保障する趣旨と解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "192",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "単元未満株主は、株式会社に対し、自己の有する単元未満株式を買い取ることを請求することができる。",
+     "text_sha256": "465056aec7ba4a695cc0c6ae2a52541e154e8abfe93c243f4e16a596457b015f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "189",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第百九十二条第一項の規定により単元未満株式を買い取ることを請求する権利",
+     "text_sha256": "a5dfddaeb59c88830f4d314c0f79d89be46e0bef9894c29843be3683b800db6c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q17-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q17-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：通知・催告が5年以上継続して到達しない株主に対する会社の義務の履行場所は、会社の住所地となる（196条2項）。",
+   "body": "会社法196条1項は、株主に対する通知・催告が「五年以上継続して到達しない場合には、株式会社は、当該株主に対する通知又は催告をすることを要しない。」と定める。そして同条2項は、「前項の場合には、同項の株主に対する株式会社の義務の履行を行う場所は、株式会社の住所地とする。」と定める。よって本肢は条文どおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "196",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "五年以上継続して到達しない場合には、株式会社は、当該株主に対する通知又は催告をすることを要しない。",
+     "text_sha256": "f106e336a9021cabb9aebee75dbecc20fef2f06357b6186eabb4ba3691818e64",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "196",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の場合には、同項の株主に対する株式会社の義務の履行を行う場所は、株式会社の住所地とする。",
+     "text_sha256": "f106e336a9021cabb9aebee75dbecc20fef2f06357b6186eabb4ba3691818e64",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q17-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
