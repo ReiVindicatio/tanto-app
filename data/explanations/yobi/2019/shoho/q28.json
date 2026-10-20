@@ -1,0 +1,243 @@
+{
+ "question_id": "yobi-2019-shoho-q28",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q28-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判例は、会社の行為は商行為と推定され、これを争う者が当該行為が事業のためにするものでないことの主張立証責任を負うとしている。",
+   "body": "会社法5条は、会社が「その事業としてする行為及びその事業のためにする行為は、商行為とする。」と定める。最高裁平成20年2月22日判決は、会社の行為は商行為と推定され、これを争う者において当該行為が当該会社の事業のためにするものでないことの主張立証責任を負うとした。同判決は、会社の貸付けが代表者の情宜に基づいてされたものとみる余地があっても、それだけでは会社の事業と無関係であることの立証がされたとはいえないとしている。本肢はこの判例の内容と一致する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その事業としてする行為及びその事業のためにする行為は、商行為とする。",
+     "text_sha256": "cbf359b0d57f795b96399d1557ef535f3d8136c3dcb794ed6a2e3ea80b89dee4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "会社の行為が商行為に該当することの主張立証責任",
+     "court": "最高裁判所第二小法廷",
+     "date": "2008-02-22",
+     "holding": "会社の行為は商行為と推定され、これを争う者が当該行為が会社の事業のためにするものでないことの主張立証責任を負う。代表者の情宜に基づく貸付けとみる余地があるだけでは、事業と無関係であることの立証にならない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/35796/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q28-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q28-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：商人である隔地者間で承諾期間の定めのない申込みを受けた者が相当期間内に承諾の通知を発しないときは、申込みは効力を失う（商法508条1項）。",
+   "body": "商法508条1項は「商人である隔地者の間において承諾の期間を定めないで契約の申込みを受けた者が相当の期間内に承諾の通知を発しなかったときは、その申込みは、その効力を失う。」と定める。本肢はこの規定の内容と一致する。民法の一般原則では承諾期間の定めのない申込みは当然には効力を失わないのに対し、商取引の迅速性から、相当期間の経過により申込みが失効するとした特則と解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "508",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "商人である隔地者の間において承諾の期間を定めないで契約の申込みを受けた者が相当の期間内に承諾の通知を発しなかったときは、その申込みは、その効力を失う。",
+     "text_sha256": "f86a3520fcf1f807be783642983daec54fe2cba0c88c22e63086005a68782c7d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q28-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q28-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：商人間の売買で買主が受領を拒んだときは、売主は相当の期間を定めて催告をした後に競売に付することができ、裁判所の許可は要らない（商法524条1項）。",
+   "body": "誤りは「裁判所の許可を得なければならない」とする点である。商法524条1項は、商人間の売買において買主が目的物の受領を拒み、又は受領できないときは、売主は「その物を供託し、又は相当の期間を定めて催告をした後に競売に付することができる。」と定め、裁判所の許可を要件としていない。さらに同条2項は、価格の低落のおそれがある物は「前項の催告をしないで競売に付することができる。」とする。売主の自助売却権を簡易にした商事売買の特則と解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "524",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その物を供託し、又は相当の期間を定めて催告をした後に競売に付することができる。",
+     "text_sha256": "022ba2421e5b41b7690bfbc684652f555ba664f02190d18b2f7d3c49b09a2e8c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "524",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の催告をしないで競売に付することができる。",
+     "text_sha256": "022ba2421e5b41b7690bfbc684652f555ba664f02190d18b2f7d3c49b09a2e8c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q28-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q28-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例は、不特定物の売買にも商法526条の適用があるとしている。",
+   "body": "誤りは、検査・通知義務の規定が不特定物の売買には「適用されない」とする点である。商法526条1項は、商人間の売買において買主は目的物を受領したときは「遅滞なく、その物を検査しなければならない。」と定め、同条2項は不適合を発見したときは直ちに売主に通知を発しなければ、その不適合を理由とする権利行使ができないとする。最高裁昭和35年12月2日判決は、不特定物の売買にも同条の適用があるとした。条文も目的物を特定物に限っておらず、商取引の迅速な処理という趣旨は不特定物の売買にも妥当すると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "526",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遅滞なく、その物を検査しなければならない。",
+     "text_sha256": "325d8c7dddd20e9e783ec56ebf625415e60a4582c6fc9dcb85b3567731b978ab",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "526",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "直ちに売主に対してその旨の通知を発しなければ、その不適合を理由とする履行の追完の請求、代金の減額の請求、損害賠償の請求及び契約の解除をすることができない。",
+     "text_sha256": "325d8c7dddd20e9e783ec56ebf625415e60a4582c6fc9dcb85b3567731b978ab",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "不特定物の売買と商法526条の適用",
+     "court": "最高裁判所第二小法廷",
+     "date": "1960-12-02",
+     "holding": "不特定物の売買にも商法526条の適用がある。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54885/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "出題時（2019年）の商法526条は「瑕疵又は数量の不足」の文言であり、平成29年の民法改正に伴う商法改正（2020年4月施行）で「種類、品質又は数量に関して契約の内容に適合しない」に改められた。引用した本文は現行法。"
+   ],
+   "id": "exp-yobi-2019-shoho-q28-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q28-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：営業所が異なる市町村にある場合、解除した買主は売主の費用で目的物を保管又は供託しなければならないのであって、直ちに送り返す義務を負うのではない（商法527条1項・4項）。",
+   "body": "誤りは「直ちにその目的物を売主に送り返さなければならない」とする点である。商法527条1項は、526条1項に規定する場合において「買主は、契約の解除をしたときであっても、売主の費用をもって売買の目的物を保管し、又は供託しなければならない。」と定める。同条4項は、この規定は売主及び買主の営業所が「同一の市町村の区域内にある場合には、適用しない。」とするから、営業所が異なる市町村内にある本肢の場合には、まさに保管・供託義務が課される。遠隔地の売主が転売などの処置をとる機会を確保するための規定と解されており、買主に返送を義務づけるものではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "527",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "買主は、契約の解除をしたときであっても、売主の費用をもって売買の目的物を保管し、又は供託しなければならない。",
+     "text_sha256": "6e7bc9afd1835286825d662aba005462186c32180dfddfbc4050244de7156a21",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "527",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "同一の市町村の区域内にある場合には、適用しない。",
+     "text_sha256": "6e7bc9afd1835286825d662aba005462186c32180dfddfbc4050244de7156a21",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "526",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "商人間の売買において、買主は、その売買の目的物を受領したときは、遅滞なく、その物を検査しなければならない。",
+     "text_sha256": "325d8c7dddd20e9e783ec56ebf625415e60a4582c6fc9dcb85b3567731b978ab",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "肢の「瑕疵がある目的物」は出題時の文言。現行の商法527条1項は「前条第一項に規定する場合」と定め、526条は契約不適合の文言に改められている（2020年4月施行）。保管・供託義務の内容に変わりはない。"
+   ],
+   "id": "exp-yobi-2019-shoho-q28-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

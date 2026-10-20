@@ -1,0 +1,221 @@
+{
+ "question_id": "yobi-2019-minso-q35",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q35-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：係属中の訴訟の被告を選定当事者とする追加的選定があった場合、原告は口頭弁論の終結に至るまで選定者に係る請求を追加できる（144条2項）。",
+   "body": "30条3項は、係属中の訴訟の「原告又は被告と共同の利益を有する者で当事者でないもの」が、その原告又は被告を自己のためにも原告又は被告となるべき者として選定することができると定める。これを受けて144条2項は「第三十条第三項の規定による被告となるべき者の選定があった場合には、原告は、口頭弁論の終結に至るまで、その選定者に係る請求の追加をすることができる」と定める。肢はこの規定のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "30",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "係属中の訴訟の原告又は被告と共同の利益を有する者で当事者でないものは、その原告又は被告を自己のためにも原告又は被告となるべき者として選定することができる。",
+     "text_sha256": "715a57951b954bb406d4ce3d58e4344a3309ffa1169b4b8f8a0c69fa55a5041d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "144",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第三十条第三項の規定による被告となるべき者の選定があった場合には、原告は、口頭弁論の終結に至るまで、その選定者に係る請求の追加をすることができる。",
+     "text_sha256": "7cc7466afb60dbb8f0fda8d417a1bc1376cb6af5f14fb22f08104aee8076785e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q35-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q35-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：請求の変更の書面は相手方に「送達」しなければならず、原告が直接送付する方式ではない（143条3項）。",
+   "body": "誤りは「直接相手方に送付しなければならない」の部分である。143条2項は「請求の変更は、書面でしなければならない」とし、同条3項は「前項の書面は、相手方に送達しなければならない」と定める。送達は裁判所が職権で行う手続であり、当事者が相手方に直接送付することとは異なる。したがって、原告が書面を直接相手方に送付しなければならないとする肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "143",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "請求の変更は、書面でしなければならない。",
+     "text_sha256": "4b3f7e547c8f78862ace0b5267aaadda80c64a0de1e48ed67f2a629eb1a417ad",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "143",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前項の書面は、相手方に送達しなければならない。",
+     "text_sha256": "4b3f7e547c8f78862ace0b5267aaadda80c64a0de1e48ed67f2a629eb1a417ad",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "送達を裁判所が職権で行うという点は送達の一般的な理解による。本肢の結論は143条3項の文言で決まる。"
+   ],
+   "id": "exp-yobi-2019-minso-q35-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q35-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：143条4項のとおりである。",
+   "body": "143条4項は「裁判所は、請求又は請求の原因の変更を不当であると認めるときは、申立てにより又は職権で、その変更を許さない旨の決定をしなければならない」と定める。肢はこの規定をそのまま述べたものである。請求の基礎に変更がある場合や、著しく訴訟手続を遅滞させる場合（同条1項）などが「不当」の例にあたる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "143",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "裁判所は、請求又は請求の原因の変更を不当であると認めるときは、申立てにより又は職権で、その変更を許さない旨の決定をしなければならない。",
+     "text_sha256": "4b3f7e547c8f78862ace0b5267aaadda80c64a0de1e48ed67f2a629eb1a417ad",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "143",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "原告は、請求の基礎に変更がない限り、口頭弁論の終結に至るまで、請求又は請求の原因を変更することができる。ただし、これにより著しく訴訟手続を遅滞させることとなるときは、この限りでない。",
+     "text_sha256": "4b3f7e547c8f78862ace0b5267aaadda80c64a0de1e48ed67f2a629eb1a417ad",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q35-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q35-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：被告は、本訴の目的である請求又は防御の方法と関連する請求を目的として、口頭弁論の終結に至るまで反訴を提起できる（146条1項）。",
+   "body": "146条1項本文は「被告は、本訴の目的である請求又は防御の方法と関連する請求を目的とする場合に限り、口頭弁論の終結に至るまで、本訴の係属する裁判所に反訴を提起することができる」と定める。肢は、反訴の対象となる請求の関連性と提起できる時期について、この規定のとおり述べている。なお、同項ただし書は、専属管轄の場合と、著しく訴訟手続を遅滞させる場合を除外している。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "146",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告は、本訴の目的である請求又は防御の方法と関連する請求を目的とする場合に限り、口頭弁論の終結に至るまで、本訴の係属する裁判所に反訴を提起することができる。",
+     "text_sha256": "c23f7c4ce465c3da64ad908f5e7b215e2ddf1de42a3d9fbb46390662ff1a1ddc",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q35-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q35-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：反訴は本訴の係属する裁判所に提起するが、反訴の目的である請求が他の裁判所の専属管轄に属するときは提起できない（146条1項1号）。",
+   "body": "146条1項本文は、反訴を「本訴の係属する裁判所に」提起することができると定め、同項ただし書1号は「反訴の目的である請求が他の裁判所の専属管轄（当事者が第十一条の規定により合意で定めたものを除く。）に属するとき」を除外している。肢はこの原則と例外を述べたものである。なお、合意による専属管轄は除かれ、また同条2項の場合には1号は適用されない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "146",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "反訴の目的である請求が他の裁判所の専属管轄（当事者が第十一条の規定により合意で定めたものを除く。）に属するとき。",
+     "text_sha256": "c23f7c4ce465c3da64ad908f5e7b215e2ddf1de42a3d9fbb46390662ff1a1ddc",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "146",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項第一号の規定は、適用しない。",
+     "text_sha256": "c23f7c4ce465c3da64ad908f5e7b215e2ddf1de42a3d9fbb46390662ff1a1ddc",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q35-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,224 @@
+{
+ "question_id": "yobi-2019-minso-q41",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q41-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。「証拠の申出は、期日前においてもすることができる。」（180条2項）。",
+   "body": "ポイントは、証拠の申出を期日外（期日前）にできるかどうかである。180条2項は「証拠の申出は、期日前においてもすることができる。」と明文で定めている。なお、証拠の申出は「証明すべき事実を特定してしなければならない」（同条1項）。本肢は180条2項のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "180",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "証拠の申出は、期日前においてもすることができる。",
+     "text_sha256": "fe67351368eb41231e9522600884a29758df01eca01342603f75a9726dd4603f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "180",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証拠の申出は、証明すべき事実を特定してしなければならない。",
+     "text_sha256": "fe67351368eb41231e9522600884a29758df01eca01342603f75a9726dd4603f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q41-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q41-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。調査嘱託の結果は、裁判所が当事者に提示して意見を述べる機会を与えれば証拠資料とすることができ、回答書を書証として取り調べる必要はないと解されている（186条2項参照）。",
+   "body": "誤りは、回答書を「文書として取り調べなければならない」とする点である。186条1項は裁判所が官庁や団体等に「必要な調査」を嘱託できるとし、同条2項は「裁判所は、当事者に対し、前項の嘱託に係る調査の結果の提示をしなければならない。」と定める。調査嘱託は書証とは別の独立した証拠調べの方法であり、その結果は、裁判所が口頭弁論で提示して当事者に意見を述べる機会を与えれば証拠資料とすることができ、当事者の援用や書証としての取調べは要しないと解されている。判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "186",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、必要な調査を官庁若しくは公署、外国の官庁若しくは公署又は学校、商工会議所、取引所その他の団体に嘱託することができる。",
+     "text_sha256": "dca84fe202703fc75d557e7f40db9338e504daf654e5c57c9d82fcccfddc7173",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "186",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判所は、当事者に対し、前項の嘱託に係る調査の結果の提示をしなければならない。",
+     "text_sha256": "dca84fe202703fc75d557e7f40db9338e504daf654e5c57c9d82fcccfddc7173",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "調査嘱託の結果を証拠とするには口頭弁論での提示と意見陳述の機会で足り、援用を要しないとする最高裁判決がある。courts.go.jp の判決ページを2回の検索で特定できなかったため、cases には入れず「判例あり（要確認）」とした。"
+   ],
+   "id": "exp-yobi-2019-minso-q41-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q41-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。証拠調べが終わった後は、裁判所の心証形成に影響が生じているので、証人尋問の申出を撤回することはできないと解されている（判例あり・要確認）。",
+   "body": "ポイントは、証拠の申出をいつまで撤回できるかである。民事訴訟法には証拠の申出の撤回の時期を定めた規定はなく、解釈による。証拠の申出は、証拠調べが始まる前であれば自由に撤回できるが、証拠調べが終了した後は、その結果がすでに裁判官の心証形成に影響を与えており、また証拠共通の原則により相手方に有利な資料ともなりうるから、撤回は許されないと解されている。したがって、証人の尋問の終了後は、その尋問の申出を撤回することができない。判例あり（要確認）。",
+   "citations": [],
+   "cases": [],
+   "notes": [
+    "解釈による。証人尋問の終了後は申出を撤回できないとする最高裁判決があるが、courts.go.jp の判決ページを2回の検索で特定できなかったため、cases には入れず「判例あり（要確認）」とした。"
+   ],
+   "id": "exp-yobi-2019-minso-q41-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q41-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。朗読や要旨の告知による取調べは刑事訴訟の証拠書類の取調べ方法（刑訴法305条）であり、民事訴訟の書証は裁判官が文書を閲読する方法で取り調べると解されている。",
+   "body": "誤りは、文書の証拠調べを申出をした者の朗読や要旨の告知で行うとする点である。民事訴訟法は、書証の申出について「文書を提出し、又は文書の所持者にその提出を命ずることを申し立ててしなければならない。」（219条）と定めるが、提出された文書を朗読させる規定は置いていない。民事訴訟の書証の取調べは、裁判官が提出された文書を閲読してその記載内容を把握する方法で行われると解されている。朗読は刑事訴訟の方法であり、刑事訴訟法305条1項は、証拠書類の取調べについて裁判長が「その取調べを請求した者にこれを朗読させなければならない。」と定めている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "219",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "文書を提出し、又は文書の所持者にその提出を命ずることを申し立ててしなければならない。",
+     "text_sha256": "2baec8f69c16b02b1a45a9c7c2268b72f1a23b176e21f5fa91f6eea847f04696",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "305",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その取調べを請求した者にこれを朗読させなければならない。",
+     "text_sha256": "7519d76799394336181ab2e97f4b9c418ea0a40b4ab9b09eaa6a6896388bdee3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（民事訴訟における書証の取調べ方法は閲読と解されている）。"
+   ],
+   "id": "exp-yobi-2019-minso-q41-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q41-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。訴えの提起後も証拠保全の申立てはでき、その申立先が定められている（235条1項・3項）。",
+   "body": "誤りは、訴え提起後は証拠保全の申立てができないとする点である。234条は、あらかじめ証拠調べをしておかなければ証拠の使用が困難となる事情があるときに、申立てにより証拠調べができると定め、時期を訴え提起前に限っていない。そして235条1項は「訴えの提起後における証拠保全の申立ては、その証拠を使用すべき審級の裁判所にしなければならない。」と定め、訴え提起後の申立てを前提にその申立先を定めている。さらに同条3項は「急迫の事情がある場合には、訴えの提起後であっても、前項の地方裁判所又は簡易裁判所に証拠保全の申立てをすることができる。」と定める。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "234",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、あらかじめ証拠調べをしておかなければその証拠を使用することが困難となる事情があると認めるときは、申立てにより、この章の規定に従い、証拠調べをすることができる。",
+     "text_sha256": "12ddb707e44533be7722aacccb5b345fb68a95cbdc830e79ff40e1ec36afa727",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "235",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴えの提起後における証拠保全の申立ては、その証拠を使用すべき審級の裁判所にしなければならない。",
+     "text_sha256": "aa444dcae8205c787bd85f6985c48c4d8f61e1f9a8739577353f19c897b12acd",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "235",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "急迫の事情がある場合には、訴えの提起後であっても、前項の地方裁判所又は簡易裁判所に証拠保全の申立てをすることができる。",
+     "text_sha256": "aa444dcae8205c787bd85f6985c48c4d8f61e1f9a8739577353f19c897b12acd",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q41-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

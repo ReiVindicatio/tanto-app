@@ -1,0 +1,295 @@
+{
+ "question_id": "yobi-2019-minso-q44",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q44-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：当事者の一方が欠席したときは、出頭した当事者に双方に係る第一審口頭弁論の結果を陳述させることができるとするのが判例である。",
+   "body": "ポイントは、第一審の口頭弁論の結果の陳述（296条2項）を、出頭した当事者が欠席した相手方の分まですることができるかである。296条2項は「当事者は、第一審における口頭弁論の結果を陳述しなければならない。」と定めるだけで、一方が欠席した場合の扱いを定めていない。判例は、控訴審において当事者の一方が口頭弁論期日に欠席したときは、出頭した当事者に、双方に係る第一審口頭弁論の結果を陳述させることができるとしている（最高裁昭和33年7月22日第三小法廷判決）。第一審の口頭弁論の結果は記録上明らかであり、その陳述は控訴審に第一審の資料を引き継ぐための手続にすぎないからであると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "296",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当事者は、第一審における口頭弁論の結果を陳述しなければならない。",
+     "text_sha256": "a9e51ca0d115c0cbca14ac7e776c64f0be4e37e85f4bb0546792c132b4ab37ec",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "建物所有権移転登記請求事件",
+     "court": "最高裁判所第三小法廷",
+     "date": "1958-07-22",
+     "holding": "控訴審で第一審の口頭弁論の結果を陳述すべき場合に当事者の一方が期日に欠席したときは、出頭した当事者に双方に係る第一審口頭弁論の結果を陳述させることができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52880/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判決は旧民事訴訟法の規定（現行296条2項に当たる規定）についてのもの。陳述を引き継ぎの手続と位置づける理由づけは解釈による"
+   ],
+   "id": "exp-yobi-2019-minso-q44-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q44-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：第一審の擬制自白は控訴審を拘束しないので、被告は控訴審で争う旨を明らかにすれば足り、請求原因事実が真実でないことを立証する必要はない。",
+   "body": "誤りは、被告が請求原因事実が真実でないことを立証しなければならないとしている点である。159条1項は、相手方の主張した事実を争うことを明らかにしない場合には「その事実を自白したものとみなす。」と定め、同条3項はこれを当事者が口頭弁論の期日に出頭しない場合に準用する。もっとも、擬制自白は当事者の意思に基づく訴訟行為ではないので、298条1項の「第一審においてした訴訟行為は、控訴審においてもその効力を有する。」には当たらず、控訴審は第一審の資料に新たな資料を加えて口頭弁論の終結時を基準に判断する（続審）ことから、控訴審で争えば擬制自白は成立しないと解されている。裁判上の自白の撤回のような要件も課されないので、被告は争う旨を明らかにすれば足り、請求原因事実の立証責任は依然として原告が負う。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "159",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その事実を自白したものとみなす。",
+     "text_sha256": "5d9eba398e856ed9f8e336d711a5ad7aad2937c6ddc3568dd476ee166260a561",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "159",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の規定は、当事者が口頭弁論の期日に出頭しない場合について準用する。",
+     "text_sha256": "5d9eba398e856ed9f8e336d711a5ad7aad2937c6ddc3568dd476ee166260a561",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "298",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第一審においてした訴訟行為は、控訴審においてもその効力を有する。",
+     "text_sha256": "6d102f928b71684081cdb8b5647b1757df3cb1c15e5ea32add1989221ec5afcb",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "擬制自白が控訴審を拘束せず、控訴審で争えば足りるとする点は解釈による"
+   ],
+   "id": "exp-yobi-2019-minso-q44-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q44-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：弁論準備手続の規定は控訴審に準用されるので（297条・168条）、第一審で弁論準備手続を終結していても、控訴裁判所は事件を弁論準備手続に付することができる。",
+   "body": "誤りは「事件を弁論準備手続に付することはできない」という部分である。297条は「前編第一章から第七章までの規定は、特別の定めがある場合を除き、控訴審の訴訟手続について準用する。」と定め、第一審の弁論準備手続の規定もこれに含まれる。準用される168条は「裁判所は、争点及び証拠の整理を行うため必要があると認めるときは、当事者の意見を聴いて、事件を弁論準備手続に付することができる。」と定め、第一審で弁論準備手続を終結したことや、新たな攻撃防御方法が提出されないことを妨げとはしていない。298条2項は、第一審で弁論準備手続を終結した事件で控訴審で攻撃防御方法を提出した当事者について167条（説明義務）を準用するにとどまり、控訴審での弁論準備手続を禁じるものではない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "297",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前編第一章から第七章までの規定は、特別の定めがある場合を除き、控訴審の訴訟手続について準用する。",
+     "text_sha256": "557fbe81d3e44ebe70a4c51283a36f5dbc859e4189fcf81f09d413560cb124b9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "168",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、争点及び証拠の整理を行うため必要があると認めるときは、当事者の意見を聴いて、事件を弁論準備手続に付することができる。",
+     "text_sha256": "b88bb2e9d2a9ad269d847331b8607ff21c2eeae8005f477e266d51ac2c88b69e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "298",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第百六十七条の規定は、第一審において準備的口頭弁論を終了し、又は弁論準備手続を終結した事件につき控訴審で攻撃又は防御の方法を提出した当事者について",
+     "text_sha256": "6d102f928b71684081cdb8b5647b1757df3cb1c15e5ea32add1989221ec5afcb",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "167",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "準備的口頭弁論の終了前にこれを提出することができなかった理由を説明しなければならない。",
+     "text_sha256": "22bc8aeeddd0eb4e79668dc36e646f15ad783a33fce68beef4c884016c772840",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q44-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q44-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：合意で定めた専属管轄は299条1項ただし書の例外から除かれているので、控訴審で第一審裁判所の管轄違いを主張することはできない。",
+   "body": "誤りは、専属的な管轄の合意を理由に控訴審で管轄違いを主張できるとしている点である。299条1項本文は「控訴審においては、当事者は、第一審裁判所が管轄権を有しないことを主張することができない。」と定める。同項ただし書は専属管轄について例外を認めるが、括弧書で「当事者が第十一条の規定により合意で定めたものを除く。」としている。11条1項は「当事者は、第一審に限り、合意により管轄裁判所を定めることができる。」と定めており、専属管轄を定める合意もこれによるものである。そのため、第一審の判断に誤りがあっても、合意による専属管轄の違反は控訴審で主張できない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "299",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "控訴審においては、当事者は、第一審裁判所が管轄権を有しないことを主張することができない。",
+     "text_sha256": "418a37cb11a400a1ac3aab6eeedd88692f98d1fa2b84c75b85e360d9cd9c50c5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "299",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が第十一条の規定により合意で定めたものを除く。",
+     "text_sha256": "418a37cb11a400a1ac3aab6eeedd88692f98d1fa2b84c75b85e360d9cd9c50c5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者は、第一審に限り、合意により管轄裁判所を定めることができる。",
+     "text_sha256": "d112c06a4b13099945004a4b9349feac28ae0af80e4468dd139a1ae27c1b1910",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q44-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q44-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：控訴審で新たに提出された攻撃防御方法が時機に後れたかどうかは、第一審以来の審理の経過全体を考慮して判断すると解されている。",
+   "body": "ポイントは、時機に後れたかどうかを控訴審の審理経過だけで判断するのか、第一審からの経過も含めて判断するのかである。157条1項は「当事者が故意又は重大な過失により時機に後れて提出した攻撃又は防御の方法については、これにより訴訟の完結を遅延させることとなると認めたときは、裁判所は、申立てにより又は職権で、却下の決定をすることができる。」と定め、同条は297条により控訴審にも準用される。控訴審は第一審の審理を引き継いで続行する続審であり、298条1項も「第一審においてした訴訟行為は、控訴審においてもその効力を有する。」と定めるので、時機に後れたかどうかは第一審以来の訴訟手続の経過を通じて判断すると解されている（判例あり（要確認））。そのため、第一審で提出できたのに控訴審で初めて提出した攻撃防御方法は、控訴審の早い段階での提出でも時機に後れたものとされうる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "157",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が故意又は重大な過失により時機に後れて提出した攻撃又は防御の方法については、これにより訴訟の完結を遅延させることとなると認めたときは、裁判所は、申立てにより又は職権で、却下の決定をすることができる。",
+     "text_sha256": "86734f9acb55f35bb28d1d94f7e0c95b01f49fb26483dfe95e818b2e0afaab28",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "297",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前編第一章から第七章までの規定は、特別の定めがある場合を除き、控訴審の訴訟手続について準用する。",
+     "text_sha256": "557fbe81d3e44ebe70a4c51283a36f5dbc859e4189fcf81f09d413560cb124b9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "298",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第一審においてした訴訟行為は、控訴審においてもその効力を有する。",
+     "text_sha256": "6d102f928b71684081cdb8b5647b1757df3cb1c15e5ea32add1989221ec5afcb",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "判例あり（要確認）：控訴審で初めて提出された攻撃防御方法が時機に後れたかどうかは第一審以来の訴訟手続の経過を通じて判断するとする最高裁判決。WebSearch で courts.go.jp の判決のページを確認できなかったため、cases には入れていない"
+   ],
+   "id": "exp-yobi-2019-minso-q44-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

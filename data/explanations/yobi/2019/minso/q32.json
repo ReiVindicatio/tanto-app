@@ -1,0 +1,235 @@
+{
+ "question_id": "yobi-2019-minso-q32",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q32-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：権利が同一の事実上及び法律上の原因に基づき、主要な攻撃防御方法が共通である者は「共同の利益を有する多数の者」に当たると解されている（30条1項）。",
+   "body": "ポイントは、30条1項の「共同の利益を有する多数の者」の意味である。同項は「共同の利益を有する多数の者で前条の規定に該当しないものは、その中から、全員のために原告又は被告となるべき一人又は数人を選定することができる。」と定める。この「共同の利益」は、多数の者が相互に共同訴訟人となりうる関係（38条）にあり、かつ主要な攻撃防御方法を共通にする場合に認められると解されている。38条前段は、訴訟の目的である権利又は義務が「同一の事実上及び法律上の原因に基づくとき」に共同訴訟を認めており、本肢の者はこれに当たるうえ、主要な攻撃防御方法も共通である。この点については判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "30",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共同の利益を有する多数の者で前条の規定に該当しないものは、その中から、全員のために原告又は被告となるべき一人又は数人を選定することができる。",
+     "text_sha256": "715a57951b954bb406d4ce3d58e4344a3309ffa1169b4b8f8a0c69fa55a5041d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "38",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同一の事実上及び法律上の原因に基づくとき",
+     "text_sha256": "449a4259eeb0c10d37273603ae340e07c14600e7b01b07db3f0ad401200ec08a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「共同の利益」の意味についての判例を2回探したが、裁判所のページで確認できなかったため要確認とした。解釈による。"
+   ],
+   "id": "exp-yobi-2019-minso-q32-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q32-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：選定当事者の一部が死亡しても、他の選定当事者は資格を失わず、全員のために訴訟行為をすることができる（30条5項）。",
+   "body": "誤りは「他の選定当事者は，その資格を失う」という部分である。30条5項は「選定当事者のうち死亡その他の事由によりその資格を喪失した者があるときは、他の選定当事者において全員のために訴訟行為をすることができる。」と定める。したがって、一部の選定当事者が訴訟係属中に死亡しても、残る選定当事者がそのまま全員のために訴訟を追行する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "30",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "選定当事者のうち死亡その他の事由によりその資格を喪失した者があるときは、他の選定当事者において全員のために訴訟行為をすることができる。",
+     "text_sha256": "715a57951b954bb406d4ce3d58e4344a3309ffa1169b4b8f8a0c69fa55a5041d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q32-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q32-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：選定当事者は代理人ではなく当事者そのものであり、訴えの取下げ・和解・請求の放棄・認諾をするのに選定者の特別の授権は要らないと解されている。",
+   "body": "誤りは、選定当事者に「選定者の特別の授権」が必要だとしている点である。特別の授権・委任を要求する規定は、法定代理人等についての32条2項や、訴訟代理人についての55条2項であり、55条2項2号は「訴えの取下げ、和解、請求の放棄若しくは認諾」を特別の委任を要する事項に挙げる。これに対し、選定当事者は30条1項により「全員のために原告又は被告となるべき」者として選定された当事者本人であり、代理人ではない。そのため、選定当事者はこれらの行為を含む一切の訴訟行為を特別の授権なしにすることができると解されている。この点については判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "55",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "訴えの取下げ、和解、請求の放棄若しくは認諾",
+     "text_sha256": "6f80d47d20cba16e005741afaa35da61b9bbcda46df910e182c8ee4b11050b90",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "32",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "特別の授権がなければならない。",
+     "text_sha256": "6743afa73d4411fc2359c96c1dca3290c1442d229d6986f00480332d3d5643d5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "30",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "全員のために原告又は被告となるべき",
+     "text_sha256": "715a57951b954bb406d4ce3d58e4344a3309ffa1169b4b8f8a0c69fa55a5041d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "選定当事者の和解権限についての判例を探したが、裁判所のページで確認できなかったため要確認とした。解釈による。"
+   ],
+   "id": "exp-yobi-2019-minso-q32-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q32-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：訴訟係属後に選定当事者を選定したときは、他の当事者は当然に訴訟から脱退する（30条2項）。",
+   "body": "30条2項は「訴訟の係属の後、前項の規定により原告又は被告となるべき者を選定したときは、他の当事者は、当然に訴訟から脱退する。」と定める。「当然に」とあるとおり、選定者は脱退のための行為をしなくても訴訟から脱退する。本肢はこの規定のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "30",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "訴訟の係属の後、前項の規定により原告又は被告となるべき者を選定したときは、他の当事者は、当然に訴訟から脱退する。",
+     "text_sha256": "715a57951b954bb406d4ce3d58e4344a3309ffa1169b4b8f8a0c69fa55a5041d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q32-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q32-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：選定の取消しの効力要件は、裁判所への書面による証明ではなく、相手方への通知である（36条2項・1項）。",
+   "body": "誤りは、選定の取消しの効力が「裁判所に対しその事実を書面で証明しなければ」生じないとしている点である。選定者は選定を取り消すことができ（30条4項）、36条2項は同条1項の規定を「選定当事者の選定の取消し及び変更について準用する。」と定める。36条1項は「法定代理権の消滅は、本人又は代理人から相手方に通知しなければ、その効力を生じない。」と定めているから、選定の取消しは相手方に通知することによって効力を生ずる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "30",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "その選定を取り消し、又は選定された当事者（以下「選定当事者」という。）を変更することができる。",
+     "text_sha256": "715a57951b954bb406d4ce3d58e4344a3309ffa1169b4b8f8a0c69fa55a5041d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "36",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "選定当事者の選定の取消し及び変更について準用する。",
+     "text_sha256": "4eb9aa8c47fad71e2230f50670d990981d8555c53e49222702758bd726679bb5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法定代理権の消滅は、本人又は代理人から相手方に通知しなければ、その効力を生じない。",
+     "text_sha256": "4eb9aa8c47fad71e2230f50670d990981d8555c53e49222702758bd726679bb5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q32-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

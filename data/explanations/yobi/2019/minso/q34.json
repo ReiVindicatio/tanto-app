@@ -1,0 +1,204 @@
+{
+ "question_id": "yobi-2019-minso-q34",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q34-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：裁判所は訴訟がいかなる程度にあるかを問わず和解を試みることができ、口頭弁論終結後でも再開を命じる必要はない。",
+   "body": "誤りは「口頭弁論の再開を命じなければならない」の部分である。89条1項は、裁判所は「訴訟がいかなる程度にあるかを問わず、和解を試み」ることができると定めており、口頭弁論の終結後であっても和解を試みることは妨げられない。口頭弁論の再開は153条が「裁判所は、終結した口頭弁論の再開を命ずることができる」と定める裁量的な措置であり、和解を試みるための要件とはされていない。したがって、和解を試みるために再開を命じなければならないわけではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "89",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、訴訟がいかなる程度にあるかを問わず、和解を試み、又は受命裁判官若しくは受託裁判官に和解を試みさせることができる。",
+     "text_sha256": "465507132ed7956bbf28f27a230e170ab462de0f73a02b9eb2e5c05cd43928b5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "153",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、終結した口頭弁論の再開を命ずることができる。",
+     "text_sha256": "ec831eab9f0c7b30eb47631d5d51576f6e5045d8bbdce809512b7f98e5dbfc1e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q34-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q34-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：訴訟上の和解は、紛争を解決するために、訴訟物以外の権利関係を含めて合意することができると解されている。",
+   "body": "訴訟上の和解は、当事者が期日において互いに譲歩して争いをやめる合意であり、実体法上は民法695条の和解（「当事者が互いに譲歩をしてその間に存する争いをやめることを約する」もの）の性質をもつと解されている。和解の内容は当事者の合意で定まるので、訴訟物である権利に限らず、関連する他の権利関係を取り込んで紛争を一括して解決することも許されると解されている。したがって、訴訟物以外の権利を和解の対象に含めることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "695",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が互いに譲歩をしてその間に存する争いをやめることを約する",
+     "text_sha256": "4b162f10548a6db0c67da3a1179ee4f58e5dd5bdb1ff9e638c3cf2779e48ec3a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による。"
+   ],
+   "id": "exp-yobi-2019-minso-q34-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q34-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：第三者も利害関係人として訴訟上の和解に加わることができ、その者が当事者として表示された和解調書は、その者に対しても債務名義として執行力をもつ。",
+   "body": "訴訟上の和解には、当事者以外の第三者も利害関係人として参加し、和解の当事者となることができると解されている。和解を記載した調書（現行法では電子調書の記録）は267条1項により「確定判決と同一の効力を有する」とされ、民事執行法22条7号の「確定判決と同一の効力を有するもの」として債務名義となる。そして、執行証書以外の債務名義による強制執行は「債務名義に表示された当事者」に対し、又はその者のためにすることができる（民事執行法23条1項1号）。和解に加わった第三者は和解調書に当事者として表示されるので、執行力はその第三者にも及ぶ。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "267",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決と同一の効力を有する",
+     "text_sha256": "5bff013f863e84860a0a1588b4dcfbb058f5ca29e223b5ab659be98aefffb0ee",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "22",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決と同一の効力を有するもの（第三号に掲げる裁判を除く。）",
+     "text_sha256": "78560399823846a95856af8a85956831e7ef15d17d0310cb1861058df5f1c85e",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "23",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務名義に表示された当事者",
+     "text_sha256": "2bd216ae09a77fed6772c19d918e2f6d2fe91f35f6b3e9086748c27647baea31",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "第三者が和解に参加できる点は解釈による。",
+    "267条は令和4年改正で「和解調書」から「電子調書」の記録の効力に改められている（出題時は改正前）。結論に影響はない。"
+   ],
+   "id": "exp-yobi-2019-minso-q34-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q34-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：被告が請求原因を全て認めていても、原告が明渡期限を猶予すること自体が譲歩にあたるので、和解をすることができる。",
+   "body": "和解は「当事者が互いに譲歩をしてその間に存する争いをやめることを約する」ものである（民法695条）。被告が請求原因事実を全て認めて抗弁を出さない場合でも、原告が直ちに明け渡すことを求めずに明渡期限を猶予することは原告の譲歩にあたり、被告が明渡しを約することと合わせて互譲があるといえる。互譲の程度や内容は問われないと解されており、請求を認める形の結論に期限の猶予を付ける和解も許される。したがって、このような和解をすることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "695",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "和解は、当事者が互いに譲歩をしてその間に存する争いをやめることを約することによって、その効力を生ずる。",
+     "text_sha256": "4b162f10548a6db0c67da3a1179ee4f58e5dd5bdb1ff9e638c3cf2779e48ec3a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "互譲の程度を問わないという点は解釈による。"
+   ],
+   "id": "exp-yobi-2019-minso-q34-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q34-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：訴訟上の和解の効力を争う方法は和解無効確認の訴えに限られず、期日指定の申立てにより元の訴訟の続行を求める方法なども認められると解されている。",
+   "body": "誤りは「和解無効確認の訴えによらなければならない」の部分である。訴訟上の和解に錯誤などの瑕疵があるとしてその効力を争う方法としては、別に和解無効確認の訴えを提起する方法のほか、元の訴訟について期日指定の申立てをして訴訟の続行を求め、その中で和解の効力を審理させる方法、和解調書の執行力を争う請求異議の訴えによる方法も認められると解されている（判例あり（要確認））。したがって、和解無効確認の訴えによらなければならないわけではない。",
+   "citations": [],
+   "cases": [],
+   "notes": [
+    "期日指定の申立ての方法を認める判例は courts.go.jp で確認できなかったため要確認。",
+    "出題時の「要素の錯誤」（無効）は、平成29年民法改正（2020年施行）後は民法95条の錯誤による取消しとなっている。肢の結論（争う方法が無効確認の訴えに限られないこと）には影響しない。"
+   ],
+   "id": "exp-yobi-2019-minso-q34-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

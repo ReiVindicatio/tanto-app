@@ -1,0 +1,291 @@
+{
+ "question_id": "yobi-2019-shoho-q18",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q18-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判例は、株式取得者の名義書換請求に会社が不当に応じなかったときは、会社は名義書換がないことを理由に譲渡を否認できないとしている。",
+   "body": "130条1項は、株式の譲渡は取得者の氏名等を株主名簿に記載し、又は記録しなければ「株式会社その他の第三者に対抗することができない。」と定め、133条1項は株式取得者が会社に名義書換を「請求することができる。」と定める。もっとも、最高裁昭和41年7月28日判決は、株式譲受人が名義書換を請求したのに会社の過失により書換が行われなかったときは、会社は名義書換のないことを理由として株式の譲渡を否認することができないとした。会社が自ら書換を怠りながら対抗要件の欠缺を主張することは許されないという趣旨であり、その結果、会社は譲受人を株主として取り扱わなければならないと解されている。本肢はこの判例の趣旨に合致する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "130",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社その他の第三者に対抗することができない。",
+     "text_sha256": "9b2fef8d8252ba62288962ad278dbfe5828245e72ce74c9592d9cc5fd870788a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "133",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該株式に係る株主名簿記載事項を株主名簿に記載し、又は記録することを請求することができる。",
+     "text_sha256": "fca96ae6c57d8839075ae18fc07cf7e3be826e7757ba85569707412832a7ccb6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "名義書換の不当拒絶と株式譲渡の否認",
+     "court": "最高裁判所第一小法廷",
+     "date": "1966-07-28",
+     "holding": "株式譲受人が名義書換を請求したのに会社の過失により書換が行われなかったときは、会社は名義書換のないことを理由として株式の譲渡を否認することができない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53918/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例の事案は会社の過失により書換がされなかった場合であり、本肢の「正当な事由なく」応じなかった場合も同じ趣旨が及ぶと解されている（解釈による）。"
+   ],
+   "id": "exp-yobi-2019-shoho-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q18-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：名義書換未了の間に株主名簿上の株主（譲渡人）が受領した配当金は、当事者間では不当利得として譲受人に返還すべきものとされ、「不当利得返還義務を負わない」とする点が誤り。",
+   "body": "誤りは「譲渡人は，譲受人に対し，受領した配当金相当額の金員について不当利得返還義務を負わない」とする部分である。130条1項・2項により、株券発行会社では名義書換がなければ株式の譲渡を「株式会社」に対抗できないため、会社が株主名簿上の株主である譲渡人に配当金を支払うことは適法である。しかし、これは会社との関係の問題にとどまり、譲渡の当事者間では株主権は譲受人に移転している。最高裁昭和37年4月20日判決は、少なくとも当事者間で株主権が移転した後、名義書換がされるまでの間に株主名簿上の株主として交付を受けた利益配当金は、不当利得として返還すべき義務があるとした。この判例の趣旨によれば、譲渡人は譲受人に対し配当金相当額の不当利得返還義務を負うと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "130",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式の譲渡は、その株式を取得した者の氏名又は名称及び住所を株主名簿に記載し、又は記録しなければ、株式会社その他の第三者に対抗することができない。",
+     "text_sha256": "9b2fef8d8252ba62288962ad278dbfe5828245e72ce74c9592d9cc5fd870788a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "130",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株券発行会社における前項の規定の適用については、同項中「株式会社その他の第三者」とあるのは、「株式会社」とする。",
+     "text_sha256": "9b2fef8d8252ba62288962ad278dbfe5828245e72ce74c9592d9cc5fd870788a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "株券没収後名義書換前に受領した利益配当金の不当利得",
+     "court": "最高裁判所第二小法廷",
+     "date": "1962-04-20",
+     "holding": "株券没収の判決確定により少なくとも当事者間では株主権が移転するから、名義書換までの間に株主名簿上の株主として交付を受けた利益配当金及び無償交付新株は、不当利得として返還すべき義務がある。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57687/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "確認した判決は株券没収の事案であり、株券の交付による譲渡の場合にも同じ理屈（当事者間では株主権が移転しているから名簿上の株主が受けた配当金は不当利得となる）が及ぶというのは解釈による。"
+   ],
+   "id": "exp-yobi-2019-shoho-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q18-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：相続その他の一般承継により譲渡制限株式を取得した者は、会社の承認を受けていなくても名義書換を請求できる（134条4号）。",
+   "body": "誤りは、相続による取得者も会社の承認を受けていなければならないとする点である。134条は、株式取得者が取得した株式が譲渡制限株式である場合には名義書換請求に関する133条の規定を適用しないとしつつ、ただし書で例外を列挙し、その4号に「当該株式取得者が相続その他の一般承継により譲渡制限株式を取得した者であること。」を掲げる。したがって、相続により譲渡制限株式を取得した者は、会社の承認を受けることなく、133条1項に基づき名義書換を請求できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "134",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該株式取得者が相続その他の一般承継により譲渡制限株式を取得した者であること。",
+     "text_sha256": "0589e57c0568e40fc2fda2b5f83e12c0a77835ac1ae1aa19107cc891d1dac695",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "133",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該株式に係る株主名簿記載事項を株主名簿に記載し、又は記録することを請求することができる。",
+     "text_sha256": "fca96ae6c57d8839075ae18fc07cf7e3be826e7757ba85569707412832a7ccb6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q18-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：振替株式の譲渡は、譲受人の口座の保有欄に増加の記載・記録を受けなければ効力を生じず（振替法140条）、意思表示のみでは効力を生じない。",
+   "body": "誤りは「意思表示のみによって，その効力を生ずる」とする点である。振替株式は、振替法128条1項により株券を発行する旨の定款の定めがない会社の株式で振替機関が取り扱うものであり、その権利の帰属は「振替口座簿の記載又は記録により定まるものとする。」とされる。そして同法140条は、振替株式の譲渡は、振替の申請により、譲受人がその口座における保有欄に当該譲渡に係る数の増加の記載又は記録を「受けなければ、その効力を生じない。」と定める。したがって、当事者間においても、振替口座簿への記載・記録が譲渡の効力要件である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "社債、株式等の振替に関する法律",
+     "article": "128",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "振替口座簿の記載又は記録により定まるものとする。",
+     "text_sha256": "4440aceb94ff1c454e8fe5ccfbe9fa19d520b32a1aff4dacc295f53c58e9fbad",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "社債、株式等の振替に関する法律",
+     "article": "140",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "受けなければ、その効力を生じない。",
+     "text_sha256": "f323ca9e07067f55dd55fa75d24bddb539bb5ebfc5d8a2f29f7d24b30425d796",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q18-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：振替株式の株主名簿の名義書換は、振替機関からの総株主通知を受けて発行者が株主名簿に記載・記録することにより行われる（振替法151条1項・152条1項）。",
+   "body": "振替法151条1項は、基準日を定めたときなど同項各号の場合に、振替機関は発行者に対し株主の氏名又は名称及び住所等を「速やかに通知しなければならない。」と定める（総株主通知）。同法152条1項は、発行者はこの通知を受けた場合には株主名簿に通知事項等を記載し、又は記録しなければならないとし、その場合には「同条第一項各号に定める日に会社法第百三十条第一項の規定による記載又は記録がされたものとみなす。」とする。なお、同法161条1項により、振替株式には株式取得者の請求による名義書換を定める会社法133条は適用されない。したがって、振替株式の名義書換は総株主通知に基づいて行われる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "社債、株式等の振替に関する法律",
+     "article": "151",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "速やかに通知しなければならない。",
+     "text_sha256": "3f5c63e4361c0e792aac26cdd9fa8ac283f88f5b701a17dfb26b1edf25d1aa6d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "社債、株式等の振替に関する法律",
+     "article": "152",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同条第一項各号に定める日に会社法第百三十条第一項の規定による記載又は記録がされたものとみなす。",
+     "text_sha256": "9d392d993a569248d54a01c82902d83a8237e9fcecca6edc6768b7a4d6bef108",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "社債、株式等の振替に関する法律",
+     "article": "161",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "振替株式については、会社法第百二十二条第一項から第三項まで、第百三十二条第一項第二号及び第三号、第二項並びに第三項、第百三十三条、",
+     "text_sha256": "87a09aede4815270421824c8d3730f230c2942d518eb06c31b3d4937b9f7e038",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "130",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社その他の第三者に対抗することができない。",
+     "text_sha256": "9b2fef8d8252ba62288962ad278dbfe5828245e72ce74c9592d9cc5fd870788a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "133",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該株式に係る株主名簿記載事項を株主名簿に記載し、又は記録することを請求することができる。",
+     "text_sha256": "fca96ae6c57d8839075ae18fc07cf7e3be826e7757ba85569707412832a7ccb6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

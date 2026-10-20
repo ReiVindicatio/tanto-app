@@ -1,0 +1,215 @@
+{
+ "question_id": "yobi-2019-minso-q43",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q43-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判決確定後に建物を借り受けて土地を占有するＺは、口頭弁論終結後の承継人（115条1項3号）に当たると解され、判決の効力が及ぶ。",
+   "body": "ポイントは、ＺがＹから建物を借り受けたのが判決確定後、つまり口頭弁論終結後である点である。115条1項は、確定判決が効力を有する者として「前二号に掲げる者の口頭弁論終結後の承継人」（3号）を挙げている。Ｚは建物の所有権を譲り受けたわけではないが、Ｙから建物を借り受けることで、明渡しの対象である土地の占有をＹから承継したとみることができる。判例も、建物収去土地明渡しの義務を負う者から建物を借り受けて敷地を占有する者は承継人に当たると解している（判例あり（要確認））。したがって、判決の効力はＺにも及び、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二号に掲げる者の口頭弁論終結後の承継人",
+     "text_sha256": "4cd8790c0a15a6de1c5356b0aa7a8ee3d090bc4348db553dd1f1a921da012ee1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "判例あり（要確認）：建物収去土地明渡義務を負う者から建物を借り受けて敷地を占有する者を承継人とする最高裁判決。WebSearch と courts.go.jp の判決のページで確認できなかったため、cases には入れていない"
+   ],
+   "id": "exp-yobi-2019-minso-q43-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q43-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：法人格の濫用として法人格が否認される場合でも、Ｙ法人に対する判決の既判力・執行力をＺ法人に拡張することはできないとするのが判例である。",
+   "body": "誤りは、法人格否認によって判決の効力がＺ法人にも及ぶとしている点である。115条1項は確定判決の効力が及ぶ者を当事者・口頭弁論終結後の承継人などに限っており、別法人として設立されたＺ法人はこれに当たらない。判例は、旧会社の債務を免れる目的で新会社が設立され、法人格の濫用と認められる場合でも、手続の明確・安定を重んじる訴訟手続や強制執行手続においては、旧会社に対する判決の既判力・執行力の範囲を新会社にまで拡張することは許されないとしていると解されている（判例あり（要確認））。法人格否認の法理によって実体法上Ｚ法人に責任を追及することは別途考えられるが、その場合はＺ法人を相手に改めて訴えを提起する必要がある。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決は、次に掲げる者に対してその効力を有する。",
+     "text_sha256": "4cd8790c0a15a6de1c5356b0aa7a8ee3d090bc4348db553dd1f1a921da012ee1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "判例あり（要確認）：法人格の濫用が認められる場合でも、旧会社に対する判決の既判力・執行力を新会社に拡張できないとする最高裁判決。WebSearch で courts.go.jp の判決のページを確認できなかったため、cases には入れていない"
+   ],
+   "id": "exp-yobi-2019-minso-q43-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q43-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：離婚の訴えは人事訴訟であり、その確定判決は請求棄却判決も含めて第三者に対しても効力を有する（人事訴訟法24条1項）。",
+   "body": "ポイントは、人事訴訟の判決の対世効が請求棄却判決にも及ぶかである。人事訴訟法2条は、人事訴訟の対象として「離婚の訴え」（1号）を挙げている。そして同法24条1項は「人事訴訟の確定判決は、民事訴訟法第百十五条第一項の規定にかかわらず、第三者に対してもその効力を有する。」と定め、請求認容判決と請求棄却判決とを区別していない。例外は、同条2項が定める、重婚を理由とする婚姻取消しの請求を棄却した判決の前婚の配偶者に対する効力だけであり、離婚の訴えの請求棄却判決には当たらない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "離婚の訴え",
+     "text_sha256": "46b7eed1594490f7decba334e4d1801896fc1193ff300d199b3e299528795dac",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "24",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人事訴訟の確定判決は、民事訴訟法第百十五条第一項の規定にかかわらず、第三者に対してもその効力を有する。",
+     "text_sha256": "92948f373a5df4473480b4cd692e186aa8ee341388d9a4f5813677080a418898",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "24",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "民法第七百三十二条の規定に違反したことを理由として婚姻の取消しの請求がされた場合におけるその請求を棄却した確定判決は、前婚の配偶者に対しては、前項の規定にかかわらず、その前婚の配偶者がその請求に係る訴訟に参加したときに限り、その効力を有する。",
+     "text_sha256": "92948f373a5df4473480b4cd692e186aa8ee341388d9a4f5813677080a418898",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q43-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q43-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：Ｚが動産を賃借したのは口頭弁論終結前であり、口頭弁論終結後の承継人（115条1項3号）に当たらないので、判決の効力は及ばない。",
+   "body": "誤りは、口頭弁論終結前にＹから動産を賃借したＺにも判決の効力が及ぶとしている点である。115条1項3号が判決の効力を及ぼすのは「前二号に掲げる者の口頭弁論終結後の承継人」であり、口頭弁論終結前に権利や占有を承継した者は含まれない。口頭弁論終結前の承継人については、訴訟承継（参加承継・引受承継）の手続によって訴訟に引き込まなければ、判決の効力を及ぼすことはできないと解されている。また、Ｚは自分の賃借権に基づいて自己のために動産を占有しているので、同項4号の「請求の目的物を所持する者」にも当たらないと解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二号に掲げる者の口頭弁論終結後の承継人",
+     "text_sha256": "4cd8790c0a15a6de1c5356b0aa7a8ee3d090bc4348db553dd1f1a921da012ee1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前三号に掲げる者のために請求の目的物を所持する者",
+     "text_sha256": "4cd8790c0a15a6de1c5356b0aa7a8ee3d090bc4348db553dd1f1a921da012ee1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "賃借人が4号の所持者に当たらないとする点、口頭弁論終結前の承継人には訴訟承継が必要とする点は解釈による"
+   ],
+   "id": "exp-yobi-2019-minso-q43-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q43-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判決確定後にＹから所有権移転登記を受けたＺは、口頭弁論終結後の承継人（115条1項3号）に当たり、判決の効力が及ぶ。",
+   "body": "ポイントは、ＺがＹから登記を受けたのが判決確定後、つまり口頭弁論終結後である点である。115条1項は、確定判決が効力を有する者として「前二号に掲げる者の口頭弁論終結後の承継人」（3号）を挙げている。Ｙは所有権移転登記の抹消登記手続をすべき立場にあり、ＺはそのＹから当該不動産について所有権移転登記を受けて、登記名義人としての地位を承継したといえる。そのため、Ｚは口頭弁論終結後の承継人に当たり、Ｘの請求を認容した判決の効力はＺにも及ぶと解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二号に掲げる者の口頭弁論終結後の承継人",
+     "text_sha256": "4cd8790c0a15a6de1c5356b0aa7a8ee3d090bc4348db553dd1f1a921da012ee1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "承継人が自分に固有の攻撃防御方法（例えば第三者保護規定）を持つ場合の扱いには議論があるが、本肢にはそのような事情は示されていない（解釈による）"
+   ],
+   "id": "exp-yobi-2019-minso-q43-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

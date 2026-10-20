@@ -1,0 +1,183 @@
+{
+ "question_id": "yobi-2019-minso-q31",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q31-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：管轄の標準時は口頭弁論の終結の時ではなく、訴えの提起の時である（15条）。",
+   "body": "誤りは「口頭弁論の終結の時を基準に」という部分である。15条は「裁判所の管轄は、訴えの提起の時を標準として定める。」と定める。訴え提起の時に管轄があれば、その後に被告の住所が変わるなど管轄を基礎づける事情が変動しても、管轄は失われない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "15",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所の管轄は、訴えの提起の時を標準として定める。",
+     "text_sha256": "fd84bf3091d7baaae09de3ad5bf6a798346311597544236ba0a62f0d67062192",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q31-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q31-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：応訴管轄の規定が排除されるのは「法令に」専属管轄の定めがある場合だけで、合意による専属管轄はこれに当たらないから、被告が応訴すれば応訴管轄が生ずる（12条・13条1項）。",
+   "body": "ポイントは、合意による専属管轄が13条1項の「法令に専属管轄の定めがある場合」に当たるかである。12条は、被告が「管轄違いの抗弁を提出しないで本案について弁論をし、又は弁論準備手続において申述をしたときは、その裁判所は、管轄権を有する。」と定める。13条1項が12条などの適用を排除するのは「訴えについて法令に専属管轄の定めがある場合」に限られ、当事者の合意で専属的な管轄裁判所を定めた場合はこれに含まれない。したがって、専属的合意管轄に反する訴えであっても、被告が応訴すれば応訴管轄が生ずる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "12",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管轄違いの抗弁を提出しないで本案について弁論をし、又は弁論準備手続において申述をしたときは、その裁判所は、管轄権を有する。",
+     "text_sha256": "75f8d56ee368505dfe1ac9e02e64ab5a15598b33402eade659dde68f7fa27884",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴えについて法令に専属管轄の定めがある場合",
+     "text_sha256": "f487855bdd589e15c9c55bb1da32056adca67319c60d217a65d384ba8651f36e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q31-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q31-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：管轄の合意ができるのは第一審に限られ、控訴審の管轄裁判所を合意で定めることはできない（11条1項）。",
+   "body": "誤りは、控訴審の管轄裁判所を合意で定められるとしている点である。11条1項は「当事者は、第一審に限り、合意により管轄裁判所を定めることができる。」と定める。控訴審などの上級審の管轄は審級の制度に関わるため、当事者の合意で動かすことはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者は、第一審に限り、合意により管轄裁判所を定めることができる。",
+     "text_sha256": "d112c06a4b13099945004a4b9349feac28ae0af80e4468dd139a1ae27c1b1910",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q31-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q31-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：14条は、管轄に関する事項について裁判所が職権で証拠調べをすることができると定める。",
+   "body": "14条は「裁判所は、管轄に関する事項について、職権で証拠調べをすることができる。」と定めており、本肢はこの規定のとおりである。管轄は訴訟要件として裁判所が職権で調査すべき事項であることから、その判断の資料についても当事者の申出を待たずに証拠調べができるとされている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "14",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、管轄に関する事項について、職権で証拠調べをすることができる。",
+     "text_sha256": "a195dc340e1084059df00732771c53c2509582b5f21a53db278c58d4a5af95d8",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q31-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q31-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：応訴管轄は被告が「管轄違いの抗弁を提出しないで」本案について弁論をしたときに生ずるから、抗弁を提出した後に本案の弁論をしても生じない（12条）。",
+   "body": "12条は、被告が第一審裁判所において「管轄違いの抗弁を提出しないで本案について弁論をし、又は弁論準備手続において申述をしたときは、その裁判所は、管轄権を有する。」と定める。応訴管轄の要件は、管轄違いの抗弁を提出しないで本案について弁論をすることである。被告がまず管轄違いの抗弁を提出していれば、その後に本案について弁論をしても、この要件を満たさず応訴管轄は生じない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "12",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管轄違いの抗弁を提出しないで本案について弁論をし、又は弁論準備手続において申述をしたときは、その裁判所は、管轄権を有する。",
+     "text_sha256": "75f8d56ee368505dfe1ac9e02e64ab5a15598b33402eade659dde68f7fa27884",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q31-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
