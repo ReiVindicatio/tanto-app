@@ -1,0 +1,248 @@
+{
+ "question_id": "yobi-2022-keiso-q20",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiso-q20-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：住居侵入と傷害は手段・結果の関係にある牽連犯であり、公訴時効は両罪を一体として最終の行為（令和3年1月6日未明の傷害）が終わった時から進行すると解されるから、1月5日から進行するのではない。",
+   "body": "決め手は、住居侵入罪の公訴時効が侵入した「令和３年１月５日」から進行するとする部分である。253条1項は「時効は、犯罪行為が終つた時から進行する。」と定め、共犯については同条2項が「最終の行為が終つた時から、すべての共犯に対して時効の期間を起算する。」と定める。本事例の住居侵入と傷害は、侵入を手段として暴行・傷害に及んだもので牽連犯（科刑上一罪）に当たり、牽連犯の公訴時効は各罪を個別に起算せず、一体として最終の結果行為が終わった時から起算すると解されている（判例あり（要確認））。また、住居侵入罪は住居にとどまる間継続する継続犯と解されており、甲及び乙は同月6日未明までＶ方にとどまっていた。いずれにしても、住居侵入罪の公訴時効が1月5日から進行することはなく、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "253",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効は、犯罪行為が終つた時から進行する。",
+     "text_sha256": "a3b3947719f19253a3f8787e1e365d426ff9da663a6719f09ceefd5683893d0c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "253",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "最終の行為が終つた時から、すべての共犯に対して時効の期間を起算する。",
+     "text_sha256": "a3b3947719f19253a3f8787e1e365d426ff9da663a6719f09ceefd5683893d0c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "牽連犯の公訴時効を一体として最終行為から起算する最高裁判例は、裁判所の裁判例検索で2回探したが確認できなかった（判例あり（要確認））。解釈による。",
+    "住居侵入罪を継続犯とみる点は解釈による。"
+   ],
+   "id": "exp-yobi-2022-keiso-q20-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiso-q20-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：住居侵入と傷害は牽連犯（科刑上一罪）として一個の事件であり、その一部である傷害の事実による公訴提起の時効停止の効力は住居侵入罪にも及ぶと解される。",
+   "body": "決め手は、傷害の事実で起訴した場合に住居侵入罪の公訴時効は「停止しない」とする部分である。254条1項は「時効は、当該事件についてした公訴の提起によつてその進行を停止し」と定める。ここでいう「当該事件」は、起訴状に記載された訴因と公訴事実の同一性が認められる範囲の事件を指すと解されている。本事例の住居侵入と傷害は牽連犯として科刑上一罪の関係にあり、訴訟法上は一個の事件として扱われるから、傷害の事実のみで起訴した場合でも、時効停止の効力は住居侵入罪にも及ぶ。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "254",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効は、当該事件についてした公訴の提起によつてその進行を停止し",
+     "text_sha256": "0f9024dfcdc174ea7ab3b23a5c3a955db7ddc1c1a488f29d6a87538eb345ad54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「当該事件」を公訴事実の同一性の範囲と解し、科刑上一罪の一部起訴の効力が全体に及ぶとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2022-keiso-q20-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiso-q20-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：共犯の一人に対する公訴の提起による時効の停止は、他の共犯に対しても効力を有する（254条2項）。",
+   "body": "254条2項前段は「共犯の一人に対してした公訴の提起による時効の停止は、他の共犯に対してその効力を有する。」と定める。本事例の甲及び乙は、住居侵入及び傷害について共謀を遂げて実行した共犯者である。したがって、検察官が乙との共謀による住居侵入、傷害の事実により甲を起訴した場合、その公訴提起による時効停止の効力は、起訴されていない乙にも及ぶ。なお、停止した時効は、同項後段により「当該事件についてした裁判が確定した時からその進行を始める。」。本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "254",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "共犯の一人に対してした公訴の提起による時効の停止は、他の共犯に対してその効力を有する。",
+     "text_sha256": "0f9024dfcdc174ea7ab3b23a5c3a955db7ddc1c1a488f29d6a87538eb345ad54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "254",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該事件についてした裁判が確定した時からその進行を始める。",
+     "text_sha256": "0f9024dfcdc174ea7ab3b23a5c3a955db7ddc1c1a488f29d6a87538eb345ad54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-keiso-q20-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiso-q20-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：起訴状謄本の不送達により公訴棄却となった場合でも、公訴提起による時効停止の効力は失われず、時効は公訴棄却の裁判が確定した時から再び進行すると解される。",
+   "body": "決め手は、公訴提起の効力が遡って失われるから「公訴時効は停止しなかったことになる」とする部分である。271条2項は、2か月以内に起訴状の謄本が送達されないときは「公訴の提起は、さかのぼつてその効力を失う。」と定め、この場合は339条1項1号により決定で公訴を棄却する。他方、254条1項は「管轄違又は公訴棄却の裁判が確定した時からその進行を始める。」と定め、公訴棄却に終わった公訴提起にも時効停止の効力があることを前提としている。そのため、起訴状謄本の不送達で公訴棄却となった場合も、公訴提起から公訴棄却の決定の確定までの間は時効が停止していたと解されている（判例あり（要確認））。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "271",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "公訴の提起は、さかのぼつてその効力を失う。",
+     "text_sha256": "b3b3fb4231a6c7d4eafafa6cb3e46ce3aaf89d47092e72a47764a162a6c2bfea",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "339",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百七十一条第二項の規定により公訴の提起がその効力を失つたとき。",
+     "text_sha256": "abee306725bc9c2ff40392b7192a1aa7c6939c7d753f40780be3548dd66e5305",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "254",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管轄違又は公訴棄却の裁判が確定した時からその進行を始める。",
+     "text_sha256": "0f9024dfcdc174ea7ab3b23a5c3a955db7ddc1c1a488f29d6a87538eb345ad54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "起訴状謄本の不送達により公訴棄却となった場合にも時効停止の効力を認めた最高裁判例は、裁判所の裁判例検索で2回探したが確認できなかった（判例あり（要確認））。解釈による。"
+   ],
+   "id": "exp-yobi-2022-keiso-q20-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiso-q20-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：犯人が国外にいる間は、一時的な海外渡航による場合であっても、公訴時効はその進行を停止する（255条1項、最決平成21年10月20日）。",
+   "body": "255条1項は「犯人が国外にいる場合」には「時効は、その国外にいる期間又は逃げ隠れている期間その進行を停止する。」と定める。条文は国外にいる理由や期間の長短で区別していない。最高裁平成21年10月20日決定も、犯人が国外にいる間は、それが一時的な海外渡航による場合であっても公訴時効はその進行を停止すると判示した。したがって、甲及び乙が犯行後に海外に渡航していた間は、一時的な渡航であっても公訴時効は停止し、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "255",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯人が国外にいる場合",
+     "text_sha256": "bfac54b3c84727e059d20463134d421879652880bf5377c069cad2d62823ab4d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "255",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効は、その国外にいる期間又は逃げ隠れている期間その進行を停止する。",
+     "text_sha256": "bfac54b3c84727e059d20463134d421879652880bf5377c069cad2d62823ab4d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "詐欺被告事件",
+     "court": "最高裁判所第一小法廷",
+     "date": "2009-10-20",
+     "holding": "犯人が国外にいる間は、それが一時的な海外渡航による場合であっても、公訴時効はその進行を停止するとした（刑集63巻8号1052頁）。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/38091/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2022-keiso-q20-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

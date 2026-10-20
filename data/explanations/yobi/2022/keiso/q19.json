@@ -1,0 +1,191 @@
+{
+ "question_id": "yobi-2022-keiso-q19",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiso-q19-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：接見禁止の対象は弁護人等（39条1項に規定する者）以外の者との接見であり、接見禁止決定がされていても弁護人は被疑者と接見できる（81条）。",
+   "body": "決め手は、接見禁止決定がされている場合は「被疑者と接見できない」とする部分である。前半は39条1項のとおりで、身体の拘束を受けている被疑者は弁護人と「立会人なくして接見し、又は書類若しくは物の授受をすることができる」。接見禁止を定める81条は、「第三十九条第一項に規定する者以外の者との接見を禁じ」ることができるとしており、弁護人との接見は接見禁止の対象から除かれている。被疑者の勾留については、207条1項により勾留の請求を受けた裁判官が「その処分に関し裁判所又は裁判長と同一の権限を有する」ため、81条が被疑者にも及ぶと解されているが、その場合も弁護人との接見を禁止することはできない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "立会人なくして接見し、又は書類若しくは物の授受をすることができる",
+     "text_sha256": "75b89a51ec4fe9018db639cf30e3c9a58ed8ee9aaf563c722c1141fb5cde965a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "81",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三十九条第一項に規定する者以外の者との接見を禁じ",
+     "text_sha256": "4bbd1858fef1a7e6a6d39c6f86f0cecf481253ea5489d79fc54b053692b9a7b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "207",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その処分に関し裁判所又は裁判長と同一の権限を有する",
+     "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "81条が207条1項を通じて被疑者の勾留にも適用される点は解釈による。"
+   ],
+   "id": "exp-yobi-2022-keiso-q19-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiso-q19-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：検察官は、検察官請求証拠の開示をした後、被告人又は弁護人から請求があったときは、検察官が保管する証拠の一覧表を交付しなければならない（316条の14第2項）。",
+   "body": "316条の14第2項は、「検察官は、前項の規定による証拠の開示をした後、被告人又は弁護人から請求があつたときは、速やかに、被告人又は弁護人に対し、検察官が保管する証拠の一覧表の交付をしなければならない。」と定める。同条1項の「前項の規定による証拠の開示」は、検察官が取調べを請求した証拠（検察官請求証拠）の開示である。したがって、公判前整理手続に付された事件で、弁護人は、検察官請求証拠の開示を受けた後、検察官に対し証拠の一覧表の交付を請求することができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_14",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "検察官は、前項の規定による証拠の開示をした後、被告人又は弁護人から請求があつたときは、速やかに、被告人又は弁護人に対し、検察官が保管する証拠の一覧表の交付をしなければならない。",
+     "text_sha256": "983515be02fd34b90976a0f5edbf9270075f479e2c9e14688c80527f88df412c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_14",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条第二項の規定により取調べを請求した証拠（以下「検察官請求証拠」という。）",
+     "text_sha256": "983515be02fd34b90976a0f5edbf9270075f479e2c9e14688c80527f88df412c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-keiso-q19-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiso-q19-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：326条1項は、証拠とすることへの同意の主体を「検察官及び被告人」と定めており、同意は弁護人のみが有する権利ではない。",
+   "body": "決め手は、同意が「弁護人のみが有する権利」であるとする部分である。326条1項は「検察官及び被告人が証拠とすることに同意した書面又は供述」は、相当と認めるときに限り証拠とすることができると定めており、検察官が請求した証拠について同意をする主体として条文に挙げられているのは被告人である。弁護人は、被告人の意思に反しない限り、被告人を代理して同意をすることができると解されているが、これは被告人の権利を代わって行使するものである。したがって、同意を弁護人のみの権利とする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "326",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官及び被告人が証拠とすることに同意した書面又は供述",
+     "text_sha256": "cbf06211cb6af8ed9b91f3b600116fa787ba90c9a431f062083c38993d4840e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "弁護人が被告人を代理して同意できるとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2022-keiso-q19-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiso-q19-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：原審における弁護人は、改めて選任されなくても、被告人のため上訴（控訴）をすることができる（355条）。",
+   "body": "決め手は、「改めて弁護人に選任されなければ控訴をすることができない」とする部分である。32条2項は「公訴の提起後における弁護人の選任は、審級ごとにこれをしなければならない。」と定めるが、上訴の申立てについては355条が「原審における代理人又は弁護人は、被告人のため上訴をすることができる。」と定めている。したがって、第一審の弁護人は、控訴審について改めて選任を受けなくても、被告人のために控訴をすることができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "355",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "原審における代理人又は弁護人は、被告人のため上訴をすることができる。",
+     "text_sha256": "be936ece010ae4e6a55114667a99cd1aa36e0d01aff826fd00c97f1afc23b6df",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "32",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "公訴の提起後における弁護人の選任は、審級ごとにこれをしなければならない。",
+     "text_sha256": "0db646edb192fbc8e6192957887caa0816cc951a962e9292e21919dc59d660b3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-keiso-q19-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,253 @@
+{
+ "question_id": "yobi-2022-keiso-q15",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiso-q15-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。被疑者の勾留にも、207条1項を通じて61条の手続（被疑事件を告げ陳述を聴く、いわゆる勾留質問）が必要であり、逃亡した場合を除き省略できない。",
+   "body": "61条は「被告人の勾留は、被告人に対し被告事件を告げこれに関する陳述を聴いた後でなければ、これをすることができない。」とし、ただし書で「被告人が逃亡した場合は、この限りでない。」と定める。207条1項は、勾留の請求を受けた裁判官は「その処分に関し裁判所又は裁判長と同一の権限を有する」と定めており、被告人の勾留に関する規定が被疑者の勾留に準用され、61条の手続も被疑者について必要になると解されている。同条2項が「勾留を請求された被疑者に被疑事件を告げる際に」と定めているのも、この手続を前提としたものである。したがって、裁判官は、被疑者が逃亡した場合を除き、被疑事件を告げ陳述を聴かなければならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "61",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告人の勾留は、被告人に対し被告事件を告げこれに関する陳述を聴いた後でなければ、これをすることができない。但し、被告人が逃亡した場合は、この限りでない。",
+     "text_sha256": "89d2e9453d4295addb71bed45fc21168b42eb5e0d77826c6d8de1dd666605845",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "207",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前三条の規定による勾留の請求を受けた裁判官は、その処分に関し裁判所又は裁判長と同一の権限を有する。",
+     "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "207",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "勾留を請求された被疑者に被疑事件を告げる際に",
+     "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "207条1項による61条の準用は解釈による。"
+   ],
+   "id": "exp-yobi-2022-keiso-q15-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiso-q15-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。勾留期間の延長の裁判に当たって、被疑事件を告げ陳述を聴く手続を行うことは要求されていない。",
+   "body": "61条が陳述を聴く手続を求めているのは「被告人の勾留」すなわち勾留そのものをする場合である。勾留期間の延長について、208条2項は「裁判官は、やむを得ない事由があると認めるときは、検察官の請求により、前項の期間を延長することができる。」と定めるだけで、被疑者に被疑事件を告げ陳述を聴く手続を求める規定はない。延長は新たな勾留ではなく既にされた勾留の期間を延ばすものにすぎないから、61条の手続は要しないと解されている。したがって、この手続を行わなければならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "208",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判官は、やむを得ない事由があると認めるときは、検察官の請求により、前項の期間を延長することができる。",
+     "text_sha256": "025e1115fa564e91ca1651cb0202a325c51c7173ec9356942e130704a0b8a017",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "61",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告人の勾留は、被告人に対し被告事件を告げこれに関する陳述を聴いた後でなければ、これをすることができない。",
+     "text_sha256": "89d2e9453d4295addb71bed45fc21168b42eb5e0d77826c6d8de1dd666605845",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "延長に61条の手続が不要であることは解釈による。"
+   ],
+   "id": "exp-yobi-2022-keiso-q15-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiso-q15-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。勾留中の被疑者が同一の事実で起訴されると、被疑者勾留はそのまま被告人勾留として続くから、改めて被告事件を告げ陳述を聴く手続は要しない。",
+   "body": "勾留されている被疑者が、勾留の基礎となった被疑事実と同一の事実で公訴を提起された場合には、特段の裁判を経ることなく、その勾留が起訴後の被告人の勾留として継続すると解されている。60条2項が「勾留の期間は、公訴の提起があつた日から二箇月とする。」と定め、208条1項が勾留請求の日から10日以内に「公訴を提起しないとき」に釈放を義務付けているのも、起訴されれば勾留が継続することを前提としている。新たな勾留の裁判がされるわけではないから、61条の手続を改めて行う必要はない。したがって、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "60",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "勾留の期間は、公訴の提起があつた日から二箇月とする。",
+     "text_sha256": "fc2a80617b4371059a22447a68c6aeab2d2cfc71a0a3b5dca33372f62e77a95c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "208",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百七条の規定により被疑者を勾留した事件につき、勾留の請求をした日から十日以内に公訴を提起しないときは、検察官は、直ちに被疑者を釈放しなければならない。",
+     "text_sha256": "025e1115fa564e91ca1651cb0202a325c51c7173ec9356942e130704a0b8a017",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "61",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告人の勾留は、被告人に対し被告事件を告げこれに関する陳述を聴いた後でなければ、これをすることができない。",
+     "text_sha256": "89d2e9453d4295addb71bed45fc21168b42eb5e0d77826c6d8de1dd666605845",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "起訴により被疑者勾留が被告人勾留に当然に切り替わることは解釈による。"
+   ],
+   "id": "exp-yobi-2022-keiso-q15-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiso-q15-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。既に公判廷での審理の際に被告人から被告事件に関する陳述を聴いていれば、勾留に当たって改めて61条の手続を行う必要はない。",
+   "body": "61条は「被告人の勾留は、被告人に対し被告事件を告げこれに関する陳述を聴いた後でなければ、これをすることができない。」と定める。この手続の趣旨は、勾留の前に被告人に被告事件についての弁解の機会を与えることにあると解されている。そのため、勾留されていない被告人について、既に被告事件の審理の際に被告事件に関する陳述を聴いている場合には、61条の要求は満たされており、勾留に当たって改めて同じ手続を行う必要はないと解されている。この点については判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "61",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告人の勾留は、被告人に対し被告事件を告げこれに関する陳述を聴いた後でなければ、これをすることができない。",
+     "text_sha256": "89d2e9453d4295addb71bed45fc21168b42eb5e0d77826c6d8de1dd666605845",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "根拠となる判例を courts.go.jp で2回探したが確認できなかったため「判例あり（要確認）」とした。結論は解釈による。"
+   ],
+   "id": "exp-yobi-2022-keiso-q15-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiso-q15-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。勾留期間の更新の裁判に当たって、被告事件を告げ陳述を聴く手続を行うことは要求されていない。",
+   "body": "勾留期間の更新について、60条2項は「特に継続の必要がある場合においては、具体的にその理由を附した決定で、一箇月ごとにこれを更新することができる。」と定めるだけで、被告人に被告事件を告げ陳述を聴く手続を求めていない。61条が求めるのは「被告人の勾留」をする場合の手続であり、更新は既にされた勾留を継続させるものにすぎないから、61条の手続は要しないと解されている。したがって、この手続を行わなければならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "60",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "特に継続の必要がある場合においては、具体的にその理由を附した決定で、一箇月ごとにこれを更新することができる。",
+     "text_sha256": "fc2a80617b4371059a22447a68c6aeab2d2cfc71a0a3b5dca33372f62e77a95c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "61",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告人の勾留は、被告人に対し被告事件を告げこれに関する陳述を聴いた後でなければ、これをすることができない。",
+     "text_sha256": "89d2e9453d4295addb71bed45fc21168b42eb5e0d77826c6d8de1dd666605845",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "更新に61条の手続が不要であることは解釈による。"
+   ],
+   "id": "exp-yobi-2022-keiso-q15-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,197 @@
+{
+ "question_id": "yobi-2022-keiho-q12",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiho-q12-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：本問の見解は217条の「遺棄」を移置に限るから、保護責任を有しない者の置き去り行為は217条では処罰できない。",
+   "body": "決め手は、本問の見解が217条の「遺棄」の範囲をどう解しているかである。217条は「扶助を必要とする者を遺棄した者」を処罰するところ、本問の見解は、同条の「遺棄」は「要扶助者を移動させる行為（移置）のみに限られる」とし、置き去りを含むのは218条の「遺棄」だけであるとする。保護責任を有しない者には218条は適用されないから、その者が置き去り行為をしても、移置に当たらない以上217条の「遺棄」にも当たらない。したがって、この見解によれば217条で処罰することはできず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "217",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "扶助を必要とする者を遺棄した者",
+     "text_sha256": "8058adce2e3b84b29c734b22d8bb462920c9c1ff08853f63035e5f03e7cd21af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保護する責任のある者がこれらの者を遺棄し",
+     "text_sha256": "04d2218ab4e91ce428ae1425772ad9015af34a58dd2db82dd894097d39b6b042",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-keiho-q12-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiho-q12-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：本問の見解は「保護する責任」と不真正不作為犯の作為義務を一致させるから、両者の機能の違いを理由とする批判が当てはまる。",
+   "body": "本問の見解は、218条の「保護する責任」と「不真正不作為犯における作為義務は一致する」とする。しかし、不真正不作為犯の作為義務は、不作為を作為と同価値のものとして構成要件に当てはめるための要件であるのに対し、218条の保護責任は「保護する責任のある者」という身分により遺棄罪より重く処罰するための要件であると解されている。役割の異なる二つの要件を同一視すると、作為との同価値性を基礎付けるにすぎない作為義務があるだけで加重処罰が認められることになる、という批判が成り立つ。したがって、本肢の批判は本問の見解に対して可能であり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保護する責任のある者",
+     "text_sha256": "04d2218ab4e91ce428ae1425772ad9015af34a58dd2db82dd894097d39b6b042",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "作為義務と保護責任の機能の違いは解釈による。"
+   ],
+   "id": "exp-yobi-2022-keiho-q12-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiho-q12-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：本問の見解は218条の「遺棄」に置き去りを含めるから、保護責任者が要扶助者から離れて保護のない状況に置けば218条で処罰できる。",
+   "body": "218条は、保護する責任のある者が要扶助者を「遺棄し、又はその生存に必要な保護をしなかったとき」を処罰する。本問の見解は、同条の「遺棄」は移置のほか、置き去りのように「行為者自身が移動することで要扶助者との場所的離隔を生じさせる行為を含む」とする。保護責任を有する者が要扶助者から離れて保護のない状況に置く行為は、まさに行為者自身の移動によって場所的離隔を生じさせる置き去りに当たるから、218条の「遺棄」として処罰できる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺棄し、又はその生存に必要な保護をしなかったとき",
+     "text_sha256": "04d2218ab4e91ce428ae1425772ad9015af34a58dd2db82dd894097d39b6b042",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-keiho-q12-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiho-q12-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：本問の見解は、隣り合う217条と218条の同じ「遺棄」という文言を、移置に限るか置き去りを含むかで異なって解釈しているから、この批判が当てはまる。",
+   "body": "217条は「扶助を必要とする者を遺棄した者」を、218条は保護責任者が「これらの者を遺棄し」た場合を処罰しており、隣り合った条文で同じ「遺棄」という文言が使われている。本問の見解は、217条の「遺棄」は「要扶助者を移動させる行為（移置）のみに限られる」とする一方、218条の「遺棄」は置き去りを含むとしており、同一の文言に異なる意味を与えている。そのため、同じ文言は同じ意味に解すべきであるという立場から、妥当でないとの批判が可能である。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "217",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "扶助を必要とする者を遺棄した者",
+     "text_sha256": "8058adce2e3b84b29c734b22d8bb462920c9c1ff08853f63035e5f03e7cd21af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "これらの者を遺棄し",
+     "text_sha256": "04d2218ab4e91ce428ae1425772ad9015af34a58dd2db82dd894097d39b6b042",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-keiho-q12-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiho-q12-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：本問の見解は、場所的離隔により要扶助者を保護のない状態に置くことを「遺棄」とするだけで、生命に対する危険が具体化したことを処罰の要件としていない。",
+   "body": "決め手は「生命に対する危険が具体化した場合に限り」とする部分である。本問の見解は、遺棄を「場所的離隔を生じさせることにより、要扶助者を保護のない状態に置くこと」と定義し、不保護を要扶助者の生存に必要な保護を行わないことと定義しており、いずれについても生命に対する危険が具体化したことを要件としていない。218条の文言も、保護責任者が「遺棄し、又はその生存に必要な保護をしなかったとき」と定めるにとどまり、具体的な危険の発生を求めていない。したがって、この見解から本肢のような限定は導かれず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺棄し、又はその生存に必要な保護をしなかったとき",
+     "text_sha256": "04d2218ab4e91ce428ae1425772ad9015af34a58dd2db82dd894097d39b6b042",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-keiho-q12-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
