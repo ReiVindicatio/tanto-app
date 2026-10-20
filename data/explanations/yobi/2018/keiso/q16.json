@@ -1,0 +1,271 @@
+{
+ "question_id": "yobi-2018-keiso-q16",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiso-q16-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。勾留理由開示は、被疑者・弁護人のほか、法定代理人・配偶者・直系の親族・兄弟姉妹その他利害関係人も請求できる。",
+   "body": "誤りは、請求権者を被疑者及びその弁護人に「限り」とする点である。刑事訴訟法82条1項は勾留されている被告人の請求権を定め、同条2項は「勾留されている被告人の弁護人、法定代理人、保佐人、配偶者、直系の親族、兄弟姉妹その他利害関係人も、前項の請求をすることができる。」と定める。被疑者の勾留については、刑事訴訟法207条1項が「前三条の規定による勾留の請求を受けた裁判官は、その処分に関し裁判所又は裁判長と同一の権限を有する。」と定めており、これにより82条以下の勾留理由開示の規定も被疑者の勾留に準用されると解されている。したがって、被疑者の勾留理由開示も、弁護人以外の法定代理人・配偶者・兄弟姉妹などが請求でき、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "82",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "勾留されている被告人の弁護人、法定代理人、保佐人、配偶者、直系の親族、兄弟姉妹その他利害関係人も、前項の請求をすることができる。",
+     "text_sha256": "5264abeb763cbcfc0ff1dd57a0b5d79f77d18c52dc3dfd8b9b77ac38f6ce638e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "207",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前三条の規定による勾留の請求を受けた裁判官は、その処分に関し裁判所又は裁判長と同一の権限を有する。",
+     "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（刑事訴訟法207条1項により被告人の勾留に関する規定が被疑者の勾留に準用されること）。"
+   ],
+   "id": "exp-yobi-2018-keiso-q16-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiso-q16-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。刑事訴訟法83条1項により、勾留の理由の開示は公開の法廷でしなければならない。",
+   "body": "ポイントは、勾留理由開示の手続が公開の法廷で行われることである。刑事訴訟法83条1項は「勾留の理由の開示は、公開の法廷でこれをしなければならない。」と定めている。この規定は、刑事訴訟法207条1項により被疑者の勾留にも準用されると解されている。したがって、被疑者の勾留理由開示も公開の法廷で行わなければならず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "83",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "勾留の理由の開示は、公開の法廷でこれをしなければならない。",
+     "text_sha256": "9a9cd12db505d53d30b0cdb3c82a04d23b0be8d97c22dc5a1602a6c6d87014ab",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "207",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前三条の規定による勾留の請求を受けた裁判官は、その処分に関し裁判所又は裁判長と同一の権限を有する。",
+     "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-keiso-q16-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiso-q16-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。開廷に出頭が必要とされているのは被疑者及び弁護人であり、検察官の出頭は開廷の要件ではない。",
+   "body": "誤りは、検察官が出頭しないと勾留理由開示の法廷を「開くことはできない」とする点である。刑事訴訟法83条2項は「法廷は、裁判官及び裁判所書記が列席してこれを開く。」と定め、同条3項は「被告人及びその弁護人が出頭しないときは、開廷することはできない。」と定めており、開廷の要件として出頭を求めているのは被告人（被疑者）及び弁護人であって、検察官は挙げられていない。また、84条2項は「検察官又は被告人及び弁護人並びにこれらの者以外の請求者は、意見を述べることができる。」として、検察官を意見を述べることができる者の一人として定めるにとどまる。これらの規定は刑事訴訟法207条1項により被疑者の勾留にも準用されると解されているから、検察官が出頭しなくても開廷でき、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "83",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "法廷は、裁判官及び裁判所書記が列席してこれを開く。",
+     "text_sha256": "9a9cd12db505d53d30b0cdb3c82a04d23b0be8d97c22dc5a1602a6c6d87014ab",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "83",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "被告人及びその弁護人が出頭しないときは、開廷することはできない。",
+     "text_sha256": "9a9cd12db505d53d30b0cdb3c82a04d23b0be8d97c22dc5a1602a6c6d87014ab",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "84",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "検察官又は被告人及び弁護人並びにこれらの者以外の請求者は、意見を述べることができる。",
+     "text_sha256": "1d1264888f0557acbb7a560c3ba9a5f0a36bfcda9b5f7df185f78ae1e97cd46f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "207",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前三条の規定による勾留の請求を受けた裁判官は、その処分に関し裁判所又は裁判長と同一の権限を有する。",
+     "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-keiso-q16-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiso-q16-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。開示すべき勾留の理由には、罪を犯したことを疑うに足りる相当な理由のほか、住居不定・罪証隠滅のおそれ・逃亡のおそれといった刑事訴訟法60条1項各号の事由も含まれる。",
+   "body": "誤りは、犯罪事実と罪を犯したことを疑うに足りる相当な理由を告げれば「足りる」とする点である。刑事訴訟法84条1項は「法廷においては、裁判長は、勾留の理由を告げなければならない。」と定めるところ、勾留は、60条1項のとおり「被告人が罪を犯したことを疑うに足りる相当な理由がある場合で、左の各号の一にあたるとき」に認められる。そのため、開示すべき勾留の理由には、罪を犯したことを疑うに足りる相当な理由に加えて、同項各号の事由（住居不定、罪証隠滅のおそれ、逃亡のおそれ）のいずれにあたるかも含まれると解されている。被疑者の勾留についても、これらの規定は刑事訴訟法207条1項により準用されると解されている。したがって、各号の事由を告げないで足りるとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "84",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法廷においては、裁判長は、勾留の理由を告げなければならない。",
+     "text_sha256": "1d1264888f0557acbb7a560c3ba9a5f0a36bfcda9b5f7df185f78ae1e97cd46f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "60",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告人が罪を犯したことを疑うに足りる相当な理由がある場合で、左の各号の一にあたるとき",
+     "text_sha256": "fc2a80617b4371059a22447a68c6aeab2d2cfc71a0a3b5dca33372f62e77a95c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "207",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前三条の規定による勾留の請求を受けた裁判官は、その処分に関し裁判所又は裁判長と同一の権限を有する。",
+     "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（開示すべき勾留の理由に60条1項各号の事由が含まれること）。"
+   ],
+   "id": "exp-yobi-2018-keiso-q16-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiso-q16-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。刑事訴訟法84条2項により、勾留理由開示の法廷で被疑者及び弁護人は意見を述べることができる。",
+   "body": "ポイントは、勾留理由開示の法廷で誰が意見を述べられるかである。刑事訴訟法84条2項は「検察官又は被告人及び弁護人並びにこれらの者以外の請求者は、意見を述べることができる。」と定めている。この規定は、刑事訴訟法207条1項により被疑者の勾留にも準用されると解されている。したがって、出頭した被疑者及び弁護人は意見を述べることができ、本肢は正しい。なお、同項ただし書により、裁判長は相当と認めるときは、意見の陳述に代えて意見を記載した書面を差し出すよう命ずることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "84",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "検察官又は被告人及び弁護人並びにこれらの者以外の請求者は、意見を述べることができる。",
+     "text_sha256": "1d1264888f0557acbb7a560c3ba9a5f0a36bfcda9b5f7df185f78ae1e97cd46f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "207",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前三条の規定による勾留の請求を受けた裁判官は、その処分に関し裁判所又は裁判長と同一の権限を有する。",
+     "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-keiso-q16-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

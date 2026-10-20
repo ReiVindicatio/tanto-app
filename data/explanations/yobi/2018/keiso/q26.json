@@ -1,0 +1,189 @@
+{
+ "question_id": "yobi-2018-keiso-q26",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiso-q26-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：控訴の提起期間は14日であり、10日ではない。",
+   "body": "誤りの決め手は「１０日」という期間である。373条は「控訴の提起期間は、十四日とする。」と定めている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "373",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "控訴の提起期間は、十四日とする。",
+     "text_sha256": "ec8324aeece198df7d30d37ba498a81c7f767e8b83a73e933ea9608170ddffa7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-keiso-q26-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiso-q26-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判決の理由のくいちがいは378条4号の控訴理由であり、判決に影響を及ぼすことが明らかであることは要件とされていない。",
+   "body": "誤りの決め手は「判決に影響を及ぼすことが明らかであるときに限り」という限定である。378条は、控訴理由の一つとして「判決に理由を附せず、又は理由にくいちがいがあること」を掲げ、判決への影響を要件としていない。これに対し、訴訟手続の法令違反を理由とする379条は「前二条の場合を除いて」、違反が「判決に影響を及ぼすことが明らかであること」を要件としており、両者は区別されている。判決の主文と理由の食い違いは理由のくいちがいに当たると解されるから、判決への影響が明らかでなくても控訴を申し立てることができ、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "378",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "判決に理由を附せず、又は理由にくいちがいがあること",
+     "text_sha256": "bf6a103178d316d4f01301c8063bc65a5e631d9e88abcc2489a241e2f5a523dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "379",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の場合を除いて、訴訟手続に法令の違反があつてその違反が判決に影響を及ぼすことが明らかであること",
+     "text_sha256": "09260631c135243e1a1a647d81fffda2222624dc032b02f1cc9110c93d04c5a0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "主文と理由の食い違いが「理由にくいちがいがあること」に当たる点は解釈による。"
+   ],
+   "id": "exp-yobi-2018-keiso-q26-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiso-q26-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：控訴審では、被告人は公判期日に出頭することを要しないのが原則であり、被告人が出頭しなくても開廷できる。",
+   "body": "誤りの決め手は「被告人が出頭しなければ開廷することができない」という部分である。390条は「控訴審においては、被告人は、公判期日に出頭することを要しない。」と定める。同条ただし書により、一定の事件で被告人の出頭がその権利の保護のため重要であると認めるときは裁判所が出頭を命ずることができるにとどまり、出頭が開廷の要件とされているわけではない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "390",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "控訴審においては、被告人は、公判期日に出頭することを要しない。",
+     "text_sha256": "b27f58c3c704e4efb9f99b6ee748fe1c287a9a22a2be277f0b1082f5a0d15fc3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-keiso-q26-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiso-q26-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：控訴裁判所は、必要があると認めるときは、職権で第一審判決後の刑の量定に影響を及ぼすべき情状を取り調べることができる（393条2項）。",
+   "body": "393条2項は「控訴裁判所は、必要があると認めるときは、職権で、第一審判決後の刑の量定に影響を及ぼすべき情状につき取調をすることができる。」と定めている。控訴審は原判決の当否を事後的に審査するのが基本であるが、原判決後に生じた示談の成立などの情状についても、この規定により取り調べることができる。本肢はこの規定と一致する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "393",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "控訴裁判所は、必要があると認めるときは、職権で、第一審判決後の刑の量定に影響を及ぼすべき情状につき取調をすることができる。",
+     "text_sha256": "a743e6f7ed58d5edeb67336109c7e4463cf67e3f5c16d5ceccb14b8852d269b8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "控訴審が事後審であるとの説明は解釈による。"
+   ],
+   "id": "exp-yobi-2018-keiso-q26-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiso-q26-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：被告人のみが控訴した事件では、原判決の刑より重い刑を言い渡すことはできない（不利益変更の禁止、402条）。",
+   "body": "402条は「被告人が控訴をし、又は被告人のため控訴をした事件については、原判決の刑より重い刑を言い渡すことはできない。」と定めている。被告人が控訴をためらうことのないようにする趣旨の規定と解されている。被告人のみが控訴をした事件はこれに当たるから、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "402",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告人が控訴をし、又は被告人のため控訴をした事件については、原判決の刑より重い刑を言い渡すことはできない。",
+     "text_sha256": "66fece6efaebb10a3f096326a2afe8f7e5c6a686a75335675f695a484af6b18a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "規定の趣旨は解釈による。"
+   ],
+   "id": "exp-yobi-2018-keiso-q26-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

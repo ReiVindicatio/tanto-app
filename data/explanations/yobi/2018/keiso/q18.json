@@ -1,0 +1,221 @@
+{
+ "question_id": "yobi-2018-keiso-q18",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiso-q18-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。被疑者の勾留については保釈の規定が及ばず、被疑者は保釈を請求できない（刑事訴訟法207条1項ただし書）。",
+   "body": "刑事訴訟法207条1項本文は、勾留の請求を受けた裁判官は「その処分に関し裁判所又は裁判長と同一の権限を有する。」と定め、被告人の勾留に関する規定を被疑者の勾留に及ぼしている。しかし同項ただし書は「但し、保釈については、この限りでない。」と定め、保釈を除外している。そのため、保釈は起訴された被告人についての制度であり、被疑者は保釈の請求をすることができないと解されている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "207",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前三条の規定による勾留の請求を受けた裁判官は、その処分に関し裁判所又は裁判長と同一の権限を有する。但し、保釈については、この限りでない。",
+     "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-keiso-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiso-q18-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。裁判所の行う差押え・捜索には、弁護人も立ち会うことができる（刑事訴訟法113条1項）。",
+   "body": "刑事訴訟法113条1項本文は「検察官、被告人又は弁護人は、差押状又は捜索状の執行に立ち会うことができる。」と定める。この規定は、起訴後に裁判所が行う差押え・捜索についての定めであり、弁護人は当事者の一方として立会権を有する。同条2項は、執行する者が立ち会うことができる者に「あらかじめ、執行の日時及び場所を」通知しなければならないとして、立会いの機会を保障している。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官、被告人又は弁護人は、差押状又は捜索状の執行に立ち会うことができる。",
+     "text_sha256": "aa9f1d209c913cea646f5ed7621e51e00dd5216c3391563a8e931de2f38663c0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "113",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "あらかじめ、執行の日時及び場所を",
+     "text_sha256": "aa9f1d209c913cea646f5ed7621e51e00dd5216c3391563a8e931de2f38663c0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-keiso-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiso-q18-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。弁護人は、法律上自ら証拠調べを請求することができ、被告人の明示の同意は要件とされていない。",
+   "body": "決め手は「被告人の明示の同意がなければ」という部分である。刑事訴訟法298条1項は「検察官、被告人又は弁護人は、証拠調を請求することができる。」と定め、弁護人を被告人とは別に証拠調べ請求の主体として挙げている。同法41条は「弁護人は、この法律に特別の定のある場合に限り、独立して訴訟行為をすることができる。」と定めており、298条1項はこの特別の定めに当たると解されている。条文上、被告人の明示の同意を要件とする定めはないから、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "298",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官、被告人又は弁護人は、証拠調を請求することができる。",
+     "text_sha256": "ca144c4182c9486bc46315ee5209f4891c711cc922dfca3585b8f85e8481f5d9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "41",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁護人は、この法律に特別の定のある場合に限り、独立して訴訟行為をすることができる。",
+     "text_sha256": "2599f32412e9d3a8f44a4e125dec09407841965fbcfeca0c136294b6d37ed96c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "298条1項が41条の「特別の定」に当たるとする点は解釈による"
+   ],
+   "id": "exp-yobi-2018-keiso-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiso-q18-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。弁護人は、第1回公判期日前に限り、証拠保全として裁判官に証人の尋問を請求できる（刑事訴訟法179条1項）。",
+   "body": "刑事訴訟法179条1項は、「被告人、被疑者又は弁護人は、あらかじめ証拠を保全しておかなければその証拠を使用することが困難な事情があるときは、第一回の公判期日前に限り」、裁判官に押収・捜索・検証・「証人の尋問又は鑑定の処分を請求することができる。」と定める。本肢は、請求の主体（弁護人）、要件（証拠保全の必要）、時期（第1回公判期日前に限る）、請求先（裁判官）のいずれも同項の内容と一致する。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告人、被疑者又は弁護人は、あらかじめ証拠を保全しておかなければその証拠を使用することが困難な事情があるときは、第一回の公判期日前に限り",
+     "text_sha256": "2818ea57ac8ba177d13c02804e1af754ad7610dbb1484398466a90cfcf05b6a8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証人の尋問又は鑑定の処分を請求することができる。",
+     "text_sha256": "2818ea57ac8ba177d13c02804e1af754ad7610dbb1484398466a90cfcf05b6a8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-keiso-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiso-q18-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。原審の弁護人は、改めて選任されなくても被告人のため上訴（控訴）をすることができる（刑事訴訟法355条）。",
+   "body": "決め手は「改めて弁護人に選任されなければ」という部分である。刑事訴訟法355条は「原審における代理人又は弁護人は、被告人のため上訴をすることができる。」と定めている。したがって、第一審の弁護人は、控訴審のために改めて選任を受けなくても、被告人のために控訴をすることができる。ただし、同法356条により、この上訴は「被告人の明示した意思に反してこれをすることができない。」。改めての選任を要するとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "355",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "原審における代理人又は弁護人は、被告人のため上訴をすることができる。",
+     "text_sha256": "be936ece010ae4e6a55114667a99cd1aa36e0d01aff826fd00c97f1afc23b6df",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "356",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告人の明示した意思に反してこれをすることができない。",
+     "text_sha256": "79e299c05f5f660f4adebbd7bd5e99469bbfbc18d4b3629466a460dc807f1427",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-keiso-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

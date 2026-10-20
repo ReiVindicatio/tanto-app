@@ -1,0 +1,221 @@
+{
+ "question_id": "yobi-2018-keiho-q11",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiho-q11-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、裁判所が特定の精神鑑定の意見の一部を採用しても、その他の部分に拘束されずに責任能力を判断できるとしている。",
+   "body": "誤りは、精神鑑定の意見の一部だけを採用することは「許されない」とする点である。責任能力の有無・程度（刑法39条）は法律判断であり、最終的には裁判所が判断すべきものと解されている。判例は、裁判所は特定の精神鑑定の意見の一部を採用した場合でも、責任能力の有無・程度について、その意見の他の部分に事実上拘束されることなく、被告人の犯行当時の病状、犯行前の生活状態、犯行の動機・態様等を総合して判定することができるとし、鑑定のうち心神喪失とする部分を採らずに心神耗弱を認定した原判決の判断手法に誤りはないとしている（最高裁判所第一小法廷平成21年12月8日決定）。したがって、鑑定の一部のみを採用することも許され、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "心神喪失者の行為は、罰しない。",
+     "text_sha256": "4236e15d1f95ac4b17dcb57ed3f40e51cdea371d6f25530312c8881f35fac335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "39",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "心神耗弱者の行為は、その刑を減軽する。",
+     "text_sha256": "4236e15d1f95ac4b17dcb57ed3f40e51cdea371d6f25530312c8881f35fac335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "殺人、殺人未遂、銃砲刀剣類所持等取締法違反被告事件（平成20(あ)1718）",
+     "court": "最高裁判所第一小法廷",
+     "date": "2009-12-08",
+     "holding": "裁判所は、特定の精神鑑定の意見の一部を採用した場合でも、その他の部分に拘束されず、犯行当時の病状、犯行前の生活状態、犯行の動機・態様等を総合して責任能力の有無・程度を判定できる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/38254/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2018-keiho-q11-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiho-q11-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。心神耗弱者の行為は必ず刑が減軽される（必要的減軽）から、減軽しないことはできない。",
+   "body": "誤りは、心神耗弱の場合に刑を「減軽しないことができる」とする点である。刑法39条2項は「心神耗弱者の行為は、その刑を減軽する。」と定めており、「減軽することができる」とする任意的減軽（例えば刑法43条本文の「その刑を減軽することができる。」）とは異なり、必ず減軽しなければならない必要的減軽である。したがって、犯行時に心神耗弱状態にあったと認められる以上、裁判所は刑を減軽しなければならず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "39",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "心神耗弱者の行為は、その刑を減軽する。",
+     "text_sha256": "4236e15d1f95ac4b17dcb57ed3f40e51cdea371d6f25530312c8881f35fac335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その刑を減軽することができる。",
+     "text_sha256": "4a18dd050345c1424dde393ee15554e66bd90bcf59f4f9c932d0ebd372647655",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-keiho-q11-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiho-q11-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。弁識能力と制御能力のいずれか一方でも著しく減退していれば心神耗弱となるから、制御能力が保たれていても完全責任能力は認められない。",
+   "body": "誤りは、弁識能力が著しく減退していても制御能力が保たれていれば「完全責任能力が認められることがある」とする点である。刑法39条は「心神喪失者」「心神耗弱者」の意味を定めていないが、判例は、心神喪失とは精神の障害により事物の是非善悪を弁識する能力又はその弁識に従って行動する能力のない状態をいい、心神耗弱とはこれらの能力が著しく減退した状態をいうとしている（判例あり（要確認））。この定義では、弁識能力と制御能力は「又は」で結ばれており、いずれか一方が著しく減退していれば心神耗弱にあたると解されている。したがって、弁識能力が著しく減退している以上、制御能力が十分に保たれていても少なくとも心神耗弱となり、刑法39条2項の「心神耗弱者の行為は、その刑を減軽する。」が適用されるから、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "39",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "心神耗弱者の行為は、その刑を減軽する。",
+     "text_sha256": "4236e15d1f95ac4b17dcb57ed3f40e51cdea371d6f25530312c8881f35fac335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "心神喪失・心神耗弱の意義を示した大審院の判例（昭和6年の判決とされる）は、courts.go.jp の判決ページで確認していないため、要確認とした。"
+   ],
+   "id": "exp-yobi-2018-keiho-q11-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiho-q11-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例の定義では、心神喪失・心神耗弱はいずれも「精神の障害」による能力の欠如・著しい減退をいうから、精神の障害がなければこれらにあたる余地はない。",
+   "body": "ポイントは、責任能力の判断で精神の障害（生物学的要素）が前提となるかである。刑法39条は「心神喪失者の行為は、罰しない。」「心神耗弱者の行為は、その刑を減軽する。」と定めるのみであるが、判例は、心神喪失・心神耗弱を、精神の障害により事物の是非善悪を弁識する能力又はその弁識に従って行動する能力が欠如し、又は著しく減退した状態と定義している（判例あり（要確認））。このように、精神の障害という生物学的要素と、弁識能力・制御能力という心理学的要素を併せて判断する方法（混合的方法）がとられていると解されており、精神の障害がなければ、たとえ激情などで能力が低下していても心神喪失・心神耗弱とは認められない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "心神喪失者の行為は、罰しない。",
+     "text_sha256": "4236e15d1f95ac4b17dcb57ed3f40e51cdea371d6f25530312c8881f35fac335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "39",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "心神耗弱者の行為は、その刑を減軽する。",
+     "text_sha256": "4236e15d1f95ac4b17dcb57ed3f40e51cdea371d6f25530312c8881f35fac335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "心神喪失・心神耗弱の意義を示した大審院の判例（昭和6年の判決とされる）は、courts.go.jp の判決ページで確認していないため、要確認とした。"
+   ],
+   "id": "exp-yobi-2018-keiho-q11-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-keiho-q11-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。刑法41条が罰しないとするのは14歳に満たない者であり、14歳の者は刑事未成年にあたらない。",
+   "body": "誤りは、１４歳の者が「処罰されない」とする点である。刑法41条は「十四歳に満たない者の行為は、罰しない。」と定めており、処罰されないのは14歳未満の者に限られる。１４歳の者はこれにあたらないから、刑法41条によって一律に処罰されないことにはならない。本肢のように事物の是非善悪を弁識し、それに従って行動する能力が十分に認められる場合には、心神喪失・心神耗弱にもあたらず、責任能力が認められる。したがって、本肢は誤りである（なお、少年の手続上の扱いは別の問題である）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "41",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "十四歳に満たない者の行為は、罰しない。",
+     "text_sha256": "6596f758086ea14251ded9cb64ecdb663d19193f8673c5a9635b2c20d9c2b604",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-keiho-q11-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
