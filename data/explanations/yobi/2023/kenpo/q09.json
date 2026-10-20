@@ -1,0 +1,123 @@
+{
+ "question_id": "yobi-2023-kenpo-q09",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-kenpo-q09-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：憲法69条は衆議院の内閣不信任決議についてのみ総辞職か解散かを迫る効果を定めており、参議院の問責決議には憲法上の法的効力はない。",
+   "body": "憲法69条は「内閣は、衆議院で不信任の決議案を可決し、又は信任の決議案を否決したときは、十日以内に衆議院が解散されない限り、総辞職をしなければならない。」と定める。この効果が認められているのは衆議院の決議だけであり、参議院について同様の定めは憲法にない。そのため、参議院が内閣や国務大臣に対して問責決議をしても、政治的な意味はともかく、内閣に総辞職を義務付ける法的効力はないと解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "69",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣は、衆議院で不信任の決議案を可決し、又は信任の決議案を否決したときは、十日以内に衆議院が解散されない限り、総辞職をしなければならない。",
+     "text_sha256": "d92c34a9e480ab6cf17defd14264f712c4beab82873110b542c1aa7613326751",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "参議院の問責決議に法的効力がないことは解釈による。"
+   ],
+   "id": "exp-yobi-2023-kenpo-q09-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-kenpo-q09-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：国会議員であることは内閣総理大臣の在職要件と解されており、当選無効により国会議員の地位を失えば憲法70条の「内閣総理大臣が欠けたとき」に当たり、内閣は総辞職しなければならない。",
+   "body": "憲法67条1項は「内閣総理大臣は、国会議員の中から国会の議決で、これを指名する。」と定める。国会議員であることは指名の要件であるだけでなく、在職を続けるための要件でもあると解されており、当選訴訟の結果当選が無効となって国会議員の地位を失えば、内閣総理大臣の地位も失うことになる。そして、憲法70条は「内閣総理大臣が欠けたとき」には内閣は総辞職をしなければならないと定めるところ、この「欠けたとき」には、死亡のほか、このように資格を失った場合も含まれると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "67",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣総理大臣は、国会議員の中から国会の議決で、これを指名する。",
+     "text_sha256": "f25ffcbc7f075a4c2f8d1c567e53b025773e6458db65cdec8c03b1bccdab9215",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "70",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣総理大臣が欠けたとき",
+     "text_sha256": "e1dffb676d29ec59706012c9a9fb3c3cc6f5ae8bcbb9ffed720e96a747b7a9aa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "国会議員であることが在職要件であること、資格喪失が「欠けたとき」に当たることは解釈による。"
+   ],
+   "id": "exp-yobi-2023-kenpo-q09-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-kenpo-q09-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：憲法70条が総辞職を義務付けるのは「衆議院議員総選挙の後に初めて国会の召集があつたとき」であり、参議院議員通常選挙の後の国会召集は含まれない。",
+   "body": "誤りは「又は参議院議員通常選挙」を含めている部分である。憲法70条は「内閣総理大臣が欠けたとき、又は衆議院議員総選挙の後に初めて国会の召集があつたときは、内閣は、総辞職をしなければならない。」と定める。総辞職が義務付けられるのは衆議院議員総選挙の後に限られ、参議院議員通常選挙の後に国会が召集されても、憲法上、内閣が総辞職する必要はない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "70",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣総理大臣が欠けたとき、又は衆議院議員総選挙の後に初めて国会の召集があつたときは、内閣は、総辞職をしなければならない。",
+     "text_sha256": "e1dffb676d29ec59706012c9a9fb3c3cc6f5ae8bcbb9ffed720e96a747b7a9aa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-kenpo-q09-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

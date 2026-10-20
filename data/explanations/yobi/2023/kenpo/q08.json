@@ -1,0 +1,171 @@
+{
+ "question_id": "yobi-2023-kenpo-q08",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-kenpo-q08-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：国会中心立法の原則の説明として正しく、憲法58条2項の議院規則と77条1項の最高裁判所規則は、憲法自身が定める例外である。",
+   "body": "憲法41条は、国会を「国の唯一の立法機関である」と定める。ここから、国の立法は憲法に特別の定めがある場合を除いて国会が行わなければならないという国会中心立法の原則が導かれると解されている。憲法自身が定める例外として、58条2項は両議院が「各々その会議その他の手続及び内部の規律に関する規則を定め」ることができるとし、77条1項は「最高裁判所は、訴訟に関する手続、弁護士、裁判所の内部規律及び司法事務処理に関する事項について、規則を定める権限を有する。」と定める。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "41",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国の唯一の立法機関である",
+     "text_sha256": "b8c2e1f9baa5535294f23480652d47ffd2a9d1102cd735906f71b8a0a77703fa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "58",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "各々その会議その他の手続及び内部の規律に関する規則を定め",
+     "text_sha256": "05d333cd7f56080e71054daf4a71167ae4e12dcf263d994de7b00f8b5e5a77ba",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "最高裁判所は、訴訟に関する手続、弁護士、裁判所の内部規律及び司法事務処理に関する事項について、規則を定める権限を有する。",
+     "text_sha256": "9a14d1828e3060c98eb8c49989e5ed09a93204acc713e5aebb77b4837e96046d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "国会中心立法の原則の内容は解釈による。"
+   ],
+   "id": "exp-yobi-2023-kenpo-q08-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-kenpo-q08-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：憲法95条は、一の地方公共団体のみに適用される特別法について住民投票での過半数の同意を要するとしており、国会の議決だけでは成立しない例外が憲法上定められている。",
+   "body": "誤りは「憲法上この点の例外は定められていない」とする部分である。憲法59条1項は「法律案は、この憲法に特別の定のある場合を除いては、両議院で可決したとき法律となる。」と定め、憲法に特別の定めがある場合を留保している。その例外の一つが95条であり、「一の地方公共団体のみに適用される特別法は、法律の定めるところにより、その地方公共団体の住民の投票においてその過半数の同意を得なければ、国会は、これを制定することができない。」と定める。このように、国会の議決のみで法律が成立するという原則（国会単独立法の原則）には、憲法上の例外がある。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "59",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律案は、この憲法に特別の定のある場合を除いては、両議院で可決したとき法律となる。",
+     "text_sha256": "8dcf03f803838b68ab002f4bc372e804e28662ab6a23d0c6774ba26475d1c354",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "95",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一の地方公共団体のみに適用される特別法は、法律の定めるところにより、その地方公共団体の住民の投票においてその過半数の同意を得なければ、国会は、これを制定することができない。",
+     "text_sha256": "213371b2e5fb9719faae13db3cbf9c8f5cc35cf93c96ee04e09235d4d8b2f6ef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-kenpo-q08-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-kenpo-q08-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：憲法73条6号ただし書が委任立法の存在を前提としている点は正しいが、法律による一般的・包括的な委任（白紙委任）は国会を唯一の立法機関とする憲法41条に反し、許されないと解されている。",
+   "body": "誤りは「法律の一般的委任という形をとれば、内閣は政令で新たに国民の権利義務に関する定めをすることができる」とする部分である。憲法73条6号は、内閣の事務として「この憲法及び法律の規定を実施するために、政令を制定すること。」を挙げ、そのただし書で「政令には、特にその法律の委任がある場合を除いては、罰則を設けることができない。」と定めるから、法律の委任に基づく政令（委任命令）の存在を前提としていると解されている。しかし、憲法41条が国会を「国の唯一の立法機関である」と定める以上、委任は個別的・具体的なものでなければならず、一般的・包括的な委任は国会の立法権を実質的に放棄するものとして許されないと解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "73",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この憲法及び法律の規定を実施するために、政令を制定すること。",
+     "text_sha256": "edd0bc44219efd4b718ab6544896bf6639962cb675ee319ccae43a433f235998",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "73",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "政令には、特にその法律の委任がある場合を除いては、罰則を設けることができない。",
+     "text_sha256": "edd0bc44219efd4b718ab6544896bf6639962cb675ee319ccae43a433f235998",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "41",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国の唯一の立法機関である",
+     "text_sha256": "b8c2e1f9baa5535294f23480652d47ffd2a9d1102cd735906f71b8a0a77703fa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "一般的・包括的委任が許されないことは解釈による。"
+   ],
+   "id": "exp-yobi-2023-kenpo-q08-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
