@@ -1,0 +1,279 @@
+{
+ "question_id": "yobi-2015-shoho-q30",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q30-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：所持人は満期前には支払を受けることを要しないので、満期前の支払を拒むことができる（手形法40条1項・77条1項3号）。",
+   "body": "本肢は手形法40条1項に沿う。同項は「為替手形ノ所持人ハ満期前ニハ其ノ支払ヲ受クルコトヲ要セズ」と定め、支払に関する規定は77条1項3号により約束手形に準用される。手形の所持人は満期までの間に手形を裏書譲渡・割引して利用する利益をもつため、振出人が期限の利益を放棄しても、所持人は満期前の支払を受け入れる義務を負わないと解されている。また同条2項は「満期前ニ支払ヲ為ス支払人ハ自己ノ危険ニ於テ之ヲ為スモノトス」とする。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "40",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "為替手形ノ所持人ハ満期前ニハ其ノ支払ヲ受クルコトヲ要セズ",
+     "text_sha256": "195f6771fbad760a1c72f8153321b921ad78cee404f9ca5d0b9f31777ee94ad1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "40",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "満期前ニ支払ヲ為ス支払人ハ自己ノ危険ニ於テ之ヲ為スモノトス",
+     "text_sha256": "195f6771fbad760a1c72f8153321b921ad78cee404f9ca5d0b9f31777ee94ad1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "左ノ事項ニ関スル為替手形ニ付テノ規定ハ約束手形ノ性質ニ反セザル限リ之ヲ約束手形ニ準用ス",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "満期前の支払を拒める理由（所持人の利益）は解釈による"
+   ],
+   "id": "exp-yobi-2015-shoho-q30-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q30-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：所持人は一部支払を拒むことができない（手形法39条2項・77条1項3号）。",
+   "body": "誤りの決め手は、一部支払を所持人が「拒むことができる」とする部分である。手形法39条2項は「所持人ハ一部支払ヲ拒ムコトヲ得ズ」と定め、77条1項3号により約束手形に準用される。民法の一般原則と異なり、一部でも支払われれば遡求義務者の負担が軽くなるため、手形では一部支払の受領が強制されていると解されている。一部支払の場合には、同条3項により支払人は「其ノ支払アリタル旨ノ手形上ノ記載及受取証書ノ交付ヲ請求スルコトヲ得」。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "39",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "所持人ハ一部支払ヲ拒ムコトヲ得ズ",
+     "text_sha256": "cdd49a717412995150bdb41a4e1416cfcf2719efc468d081ae96bd60f270ba8f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "39",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "其ノ支払アリタル旨ノ手形上ノ記載及受取証書ノ交付ヲ請求スルコトヲ得",
+     "text_sha256": "cdd49a717412995150bdb41a4e1416cfcf2719efc468d081ae96bd60f270ba8f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "左ノ事項ニ関スル為替手形ニ付テノ規定ハ約束手形ノ性質ニ反セザル限リ之ヲ約束手形ニ準用ス",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "一部支払の受領が強制される理由（遡求義務者の負担軽減）は解釈による"
+   ],
+   "id": "exp-yobi-2015-shoho-q30-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q30-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：満期に支払をする者は、裏書の連続の整否を調査する義務を負うが、裏書人の署名を調査する義務は負わない（手形法40条3項・77条1項3号）。",
+   "body": "本肢は手形法40条3項の文言どおりである。同項は「満期ニ於テ支払ヲ為ス者ハ悪意又ハ重大ナル過失ナキ限リ其ノ責ヲ免ル此ノ者ハ裏書ノ連続ノ整否ヲ調査スル義務アルモ裏書人ノ署名ヲ調査スル義務ナシ」と定め、77条1項3号により約束手形の振出人による支払にも準用される。形式的な裏書の連続は手形面上から確認できるが、各裏書人の署名の真否まで調べさせると支払が滞るため、調査義務は形式面に限られている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "40",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "満期ニ於テ支払ヲ為ス者ハ悪意又ハ重大ナル過失ナキ限リ其ノ責ヲ免ル此ノ者ハ裏書ノ連続ノ整否ヲ調査スル義務アルモ裏書人ノ署名ヲ調査スル義務ナシ",
+     "text_sha256": "195f6771fbad760a1c72f8153321b921ad78cee404f9ca5d0b9f31777ee94ad1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "左ノ事項ニ関スル為替手形ニ付テノ規定ハ約束手形ノ性質ニ反セザル限リ之ヲ約束手形ニ準用ス",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "調査義務が形式面に限られる理由は解釈による"
+   ],
+   "id": "exp-yobi-2015-shoho-q30-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q30-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：呈示期間内に支払呈示をしないと遡求権は失われるが、主たる債務者である振出人の義務は消滅しない（手形法53条1項ただし書・78条1項）。",
+   "body": "ポイントは、呈示期間の徒過で失われるのは遡求権であって、約束手形の振出人に対する権利ではないことである。手形法38条1項は所持人が「支払ヲ為スベキ日又ハ之ニ次グ二取引日内ニ支払ノ為手形ヲ呈示スルコトヲ要ス」と定め、53条1項は期間経過により所持人が「裏書人、振出人其ノ他ノ債務者ニ対シ其ノ権利ヲ失フ但シ引受人ニ対シテハ此ノ限ニ在ラズ」とする（いずれも77条1項で約束手形に準用）。そして78条1項は「約束手形ノ振出人ハ為替手形ノ引受人ト同一ノ義務ヲ負フ」と定めるから、約束手形の振出人は引受人と同じく主たる債務者であり、呈示がなくても支払義務を免れない（消滅時効の完成までは義務を負う）。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "38",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支払ヲ為スベキ日又ハ之ニ次グ二取引日内ニ支払ノ為手形ヲ呈示スルコトヲ要ス",
+     "text_sha256": "757590c0a8fd359b90db81e0e97bff0a593cb10ee71cd1da8ba83154ebd860b7",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "53",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裏書人、振出人其ノ他ノ債務者ニ対シ其ノ権利ヲ失フ但シ引受人ニ対シテハ此ノ限ニ在ラズ",
+     "text_sha256": "a58f67bbe8e59ed14a5ac084b88875849b3adafd4542567548173d6810f24077",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "78",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "約束手形ノ振出人ハ為替手形ノ引受人ト同一ノ義務ヲ負フ",
+     "text_sha256": "2823ef6188b39d7588a7715dbefb70e65caf6adac7e230b63825ba41a966ccba",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "左ノ事項ニ関スル為替手形ニ付テノ規定ハ約束手形ノ性質ニ反セザル限リ之ヲ約束手形ニ準用ス",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "53条1項の「振出人」は為替手形の振出人（遡求義務者）を指し、約束手形の振出人は78条1項により引受人と同様に扱われるとの読み方は解釈による"
+   ],
+   "id": "exp-yobi-2015-shoho-q30-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q30-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：手形債務者は、期限の定めがあっても、所持人が証券を呈示して請求した時から遅滞の責任を負うので、呈示がなければ支払日以後の遅延利息を負わない（民法520条の9）。",
+   "body": "誤りの決め手は、呈示がなくても支払をすべき日以後の利息を支払わなければならないとする部分である。手形は所持人が転々とし、債務者は誰が権利者かを知り得ないため、手形債務は呈示を受けて支払う取立債務とされる。現行法では民法520条の9が「指図証券の債務者は、その債務の履行について期限の定めがあるときであっても、その期限が到来した後に所持人がその証券を提示してその履行の請求をした時から遅滞の責任を負う。」と定め、確定日払の手形であっても、呈示がなければ振出人は遅滞に陥らないと解されている。したがって、呈示がないのに支払をすべき日以後の利息の支払義務を負うとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "520_9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "指図証券の債務者は、その債務の履行について期限の定めがあるときであっても、その期限が到来した後に所持人がその証券を提示してその履行の請求をした時から遅滞の責任を負う。",
+     "text_sha256": "999a1b97785fafcff095da91ff690fd3ff4759ad6ed36384f58fc76972f2d758",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "法改正：出題時点（2015年）は、証券の呈示による履行遅滞の規定は旧商法517条に置かれていたが、2017年の民法改正（2020年4月1日施行）で削除され、現在は民法520条の9が定める。旧条文の本文は保存していないため引用していない。結論は変わらない",
+    "手形への民法520条の9の適用、取立債務である理由、手形法48条1項2号（満期以後の利息）との関係は解釈による",
+    "判例は探していない"
+   ],
+   "id": "exp-yobi-2015-shoho-q30-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,215 @@
+{
+ "question_id": "yobi-2015-minso-q39",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-minso-q39-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：金銭の受領を認めただけでは、消費貸借のもう一つの要素である返還の約束を認めたことにならず、契約締結の事実の自白は成立しない。",
+   "body": "消費貸借は、当事者の一方が「返還をすることを約して相手方から金銭その他の物を受け取ることによって、その効力を生ずる」（民法587条）。つまり、金銭消費貸借契約の締結の事実は、返還の約束と金銭の交付の両方からなる。被告が認めたのは原告の主張する額の金銭を受け取った事実だけであり、返還の約束まで認めたわけではない（贈与などとして受け取ったと争う余地が残る）。したがって、自白が成立するのは金銭の受領の事実についてであり、金銭消費貸借契約締結の事実について裁判上の自白（民訴法179条）が成立するわけではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "587",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "返還をすることを約して相手方から金銭その他の物を受け取ることによって、その効力を生ずる",
+     "text_sha256": "0e46b5913fa56743adb085f9db6583607289a72004ae00853df8d13d17abc5fd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所において当事者が自白した事実及び顕著な事実は、証明することを要しない。",
+     "text_sha256": "e4130832ddcc944ae8217b0dfe25450d37e4b37e266687c920672f76e51a6a54",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-minso-q39-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-minso-q39-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：当事者本人尋問での供述は証拠資料であって弁論としての陳述ではないから、相手方の主張事実を認める供述をしても裁判上の自白は成立しない。",
+   "body": "179条は「裁判所において当事者が自白した事実」は証明を要しないとするが、ここでいう裁判上の自白は、口頭弁論または弁論準備手続における弁論としての陳述であると解されている。当事者本人尋問は証拠調べであり、そこでの供述は裁判所の事実認定の資料（証拠資料）となるにとどまる。したがって、原告が本人尋問で被告の主張する弁済の事実を認める供述をしても、弁済の事実について裁判上の自白は成立せず、裁判所はその供述を他の証拠とあわせて自由に評価することになる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所において当事者が自白した事実",
+     "text_sha256": "e4130832ddcc944ae8217b0dfe25450d37e4b37e266687c920672f76e51a6a54",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（本人尋問における供述は自白にならない）",
+    "判例は探していない"
+   ],
+   "id": "exp-yobi-2015-minso-q39-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-minso-q39-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：親子関係不存在確認の訴えは人事訴訟であり、人事訴訟では民訴法179条のうち自白に関する部分が適用されないので、裁判上の自白は成立しない。",
+   "body": "人事訴訟法2条は、人事訴訟として「実親子関係の存否の確認の訴え」を挙げており（同条2号）、親子関係不存在確認の訴えはこれにあたる。そして、人事訴訟の訴訟手続においては、民事訴訟法「第百七十九条の規定中裁判所において当事者が自白した事実に関する部分は、適用しない」（人事訴訟法19条1項）。身分関係は当事者が自由に処分できるものではなく、真実に合致した判断が求められるからである。したがって、被告が両親の別居の事実を認める陳述をしても、裁判上の自白は成立しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "実親子関係の存否の確認の訴え",
+     "text_sha256": "46b7eed1594490f7decba334e4d1801896fc1193ff300d199b3e299528795dac",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百七十九条の規定中裁判所において当事者が自白した事実に関する部分は、適用しない",
+     "text_sha256": "e98bace53f6736946533aec8c5f42a3070d1eb79ce2c0a850f459a29e4cf5d07",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所において当事者が自白した事実及び顕著な事実は、証明することを要しない。",
+     "text_sha256": "e4130832ddcc944ae8217b0dfe25450d37e4b37e266687c920672f76e51a6a54",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-minso-q39-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-minso-q39-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：賃貸借契約の締結は被告が証明責任を負う抗弁事実であり、原告がこれを認める陳述をすれば、相手方の主張する自己に不利益な事実を認めたものとして裁判上の自白が成立する。",
+   "body": "裁判上の自白は、口頭弁論等において、相手方の主張する自己に不利益な事実を認める陳述をいうと解されている（179条）。所有権に基づく建物明渡請求に対し、被告が主張する賃貸借契約の締結は、被告の占有権原を基礎付ける抗弁事実であり、被告が証明責任を負う。原告がこれを認める陳述をすれば、相手方の主張する原告に不利益な事実を認めたことになる。したがって、賃貸借契約締結の事実について裁判上の自白が成立し、その事実は「証明することを要しない」（179条）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証明することを要しない",
+     "text_sha256": "e4130832ddcc944ae8217b0dfe25450d37e4b37e266687c920672f76e51a6a54",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（自白の意義・不利益性の基準）"
+   ],
+   "id": "exp-yobi-2015-minso-q39-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-minso-q39-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：当事者が自ら進んで自己に不利益な事実を陳述した場合（先行自白）、相手方がこれを援用すれば裁判上の自白が成立する。",
+   "body": "裁判上の自白は、相手方の主張を認める形でなされるのが通常であるが、当事者が相手方の主張に先立って自ら自己に不利益な事実を陳述し、相手方がこれを援用した場合にも自白が成立すると解されている（いわゆる先行自白）。所有権に基づく建物明渡請求において、原告と被告との間の賃貸借契約の締結は被告の占有権原を基礎付ける事実であり、原告に不利益な事実である。原告が自ら進んでこれを陳述し、被告が援用すれば、賃貸借契約締結の事実について裁判上の自白が成立し、「証明することを要しない」（179条）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証明することを要しない",
+     "text_sha256": "e4130832ddcc944ae8217b0dfe25450d37e4b37e266687c920672f76e51a6a54",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（先行自白）",
+    "判例は探していない"
+   ],
+   "id": "exp-yobi-2015-minso-q39-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,201 @@
+{
+ "question_id": "yobi-2015-minso-q40",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-minso-q40-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：結果の陳述が必要なのは弁論準備手続であり、準備的口頭弁論はそれ自体が口頭弁論なので、結果を陳述する必要はない。",
+   "body": "準備的口頭弁論は、争点及び証拠の整理を行うために行われる口頭弁論である（164条）。それ自体が口頭弁論であるから、そこでの弁論はそのまま判決の基礎となり、改めて結果を陳述する必要はない。これに対し、口頭弁論ではない弁論準備手続については、「当事者は、口頭弁論において、弁論準備手続の結果を陳述しなければならない」（173条）と定められている。本肢は、弁論準備手続についての規律を準備的口頭弁論にあてはめている点で誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "164",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、争点及び証拠の整理を行うため必要があると認めるときは、この款に定めるところにより、準備的口頭弁論を行うことができる。",
+     "text_sha256": "88ddf7ba6a5bfe7998372cf83e246fdb276affaa9a698cfec67c89963ec3b011",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "173",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者は、口頭弁論において、弁論準備手続の結果を陳述しなければならない。",
+     "text_sha256": "3910b35eb023241071c20cc3ae92c71326db598589584773cdce65b5a847db76",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-minso-q40-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-minso-q40-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：書面による準備手続に付するには、当事者の意見を聴かなければならない。",
+   "body": "175条は、裁判所は、相当と認めるときは「当事者の意見を聴いて、事件を書面による準備手続」に付することができると定める。したがって、事件を書面による準備手続に付するに当たっては、当事者の意見を聴くことが必要である。なお、弁論準備手続に付する場合も「当事者の意見を聴いて、事件を弁論準備手続に付することができる」（168条）とされており、いずれの手続であっても意見の聴取が必要である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "175",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の意見を聴いて、事件を書面による準備手続",
+     "text_sha256": "b275076b934c4df275578590ffbbb82a41f440dd7538b1535a85cf4000c731bc",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "168",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の意見を聴いて、事件を弁論準備手続に付することができる",
+     "text_sha256": "b88bb2e9d2a9ad269d847331b8607ff21c2eeae8005f477e266d51ac2c88b69e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "肢の文言は「書面による弁論準備手続」となっているが、法律上の名称は「書面による準備手続」（175条）。原文PDFの表記かパースによるものかは確認していない。168条・175条のいずれでも当事者の意見聴取が必要なため結論は変わらない",
+    "e-Gov の本文は取得日時点の現行法。出題時点（2015年）からの改正の有無は確認していない"
+   ],
+   "id": "exp-yobi-2015-minso-q40-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-minso-q40-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：弁論準備手続期日では証人の採否の決定（証拠の申出に関する裁判）はできるが、証人尋問はできない。",
+   "body": "170条2項は、弁論準備手続の期日においてできることとして、「証拠の申出に関する裁判その他の口頭弁論の期日外においてすることができる裁判」と、文書等の証拠調べなどを挙げている。証人の採否の決定は証拠の申出に関する裁判であるから、弁論準備手続期日においてすることができる。しかし、同項は証拠調べとしては文書（準文書を含む）や電磁的記録に係るものを挙げるにとどまり、証人尋問は含まれていない。したがって、弁論準備手続期日において証人尋問をすることはできず、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "170",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "証拠の申出に関する裁判その他の口頭弁論の期日外においてすることができる裁判",
+     "text_sha256": "c9a45670618c088c4ff91c2cb86f6abfde279e17ff6e33e14b8761e890cf82e2",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-minso-q40-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-minso-q40-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：弁論準備手続は公開を要しない手続であり、裁判所は相当と認める者の傍聴を許すことができるにとどまる。",
+   "body": "弁論準備手続は「当事者双方が立ち会うことができる期日において行う」（169条1項）とされ、公開の法廷で行うことは求められていない。傍聴については、「裁判所は、相当と認める者の傍聴を許すことができる」（169条2項本文）とされ、当事者が申し出た者についても、支障を生ずるおそれがある場合を除いて傍聴を許すという限度で定められている（同項ただし書）。このように弁論準備手続は一般公開を前提としないから、期日を公開しなければならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "169",
+     "paragraphs": [
+      "1",
+      "2"
+     ],
+     "quote": "裁判所は、相当と認める者の傍聴を許すことができる。",
+     "text_sha256": "2d83033d831e44a3ee44bbf283165fce454d26d0b5f609533b5ddf24244b6aec",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-minso-q40-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-minso-q40-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：書面による準備手続でも、裁判所は必要があると認めるときは、電話会議システム（音声の送受信による通話）を利用して当事者双方と協議することができる。",
+   "body": "176条2項は、裁判所は、書面による準備手続を行う場合において、必要があると認めるときは、「裁判所及び当事者双方が音声の送受信により同時に通話をすることができる方法によって」、争点及び証拠の整理に関する事項などについて当事者双方と協議をすることができると定める。この方法がいわゆる電話会議システムにあたる。したがって、書面による準備手続において電話会議システムを利用することができないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "176",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判所及び当事者双方が音声の送受信により同時に通話をすることができる方法によって",
+     "text_sha256": "107bfd372a8afa666fa428a00d5c5131f124e3f2c53a13e59553bc1e53fd54e1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "e-Gov の本文は取得日時点の現行法。出題時点（2015年）の条文では項の番号が異なっていた可能性がある（未確認）。電話会議による協議ができるという結論は現行法でも変わらない"
+   ],
+   "id": "exp-yobi-2015-minso-q40-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
