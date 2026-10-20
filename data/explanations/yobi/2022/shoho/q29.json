@@ -1,0 +1,353 @@
+{
+ "question_id": "yobi-2022-shoho-q29",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q29-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。約束手形の振出人は為替手形の引受人と同一の義務（支払義務）を負うが、小切手の支払人は引受けができず、支払保証をしない限り小切手法上の支払義務を負わない。",
+   "body": "手形法78条1項は「約束手形ノ振出人ハ為替手形ノ引受人ト同一ノ義務ヲ負フ」と定め、為替手形の引受人は「引受ニ因リ満期ニ於テ為替手形ノ支払ヲ為ス義務ヲ負フ」（手形法28条1項）から、約束手形の振出人は所持人に対して手形金の支払義務を負う。これに対し、小切手法4条は「小切手ハ引受ヲ為スコトヲ得ズ」と定めており、支払人が引受けによって支払義務を負うことはない。支払人が小切手法上の義務を負うのは、「支払人ハ小切手ニ支払保証ヲ為スコトヲ得」（小切手法53条1項）とされる支払保証をした場合であり、その場合も「呈示期間ノ経過前ニ小切手ノ呈示アリタル場合ニ於テノミ其ノ支払ヲ為ス義務ヲ負フ」（小切手法55条1項）。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "78",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "約束手形ノ振出人ハ為替手形ノ引受人ト同一ノ義務ヲ負フ",
+     "text_sha256": "2823ef6188b39d7588a7715dbefb70e65caf6adac7e230b63825ba41a966ccba",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "引受ニ因リ満期ニ於テ為替手形ノ支払ヲ為ス義務ヲ負フ",
+     "text_sha256": "c6986b9d7b0783314856f134c2e1f24d828f6a8c9ecafcc049421e3d8e5e4272",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "小切手ハ引受ヲ為スコトヲ得ズ",
+     "text_sha256": "0e9e73523cc8f454d70d77b6ee0a0a48d363515d37733e497da691312f287be1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "53",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支払人ハ小切手ニ支払保証ヲ為スコトヲ得",
+     "text_sha256": "8b45a60fcdffc2c43ecb0f310348f031752b17e1f4a06536bc06fd6746f5d6aa",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "55",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "呈示期間ノ経過前ニ小切手ノ呈示アリタル場合ニ於テノミ其ノ支払ヲ為ス義務ヲ負フ",
+     "text_sha256": "80fa5de39e3b8d34b1b811291420ff41cfd77113f66bf6d3fe45f53991da5e0a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q29-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q29-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。小切手法にも未完成で振り出した小切手の補充についての規定があり、白地小切手も認められる。",
+   "body": "誤りは、小切手が要件の一部を欠く場合に白地小切手として有効になることは「ない」とする部分である。約束手形については、為替手形の白地手形の規定（手形法10条）が「白地為替手形（第十条）ニ関スル規定モ亦之ヲ約束手形ニ準用ス」（手形法77条2項）として準用される。小切手についても、小切手法13条が「未完成ニテ振出シタル小切手ニ予メ為シタル合意ト異ル補充ヲ為シタル場合ニ於テハ其ノ違反ハ之ヲ以テ所持人ニ対抗スルコトヲ得ズ」と定めており、後に補充することを予定して要件の一部を空けたまま振り出す白地小切手の存在を前提にしている。したがって、小切手でも白地小切手として有効になりうるから、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "10",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未完成ニテ振出シタル為替手形ニ予メ為シタル合意ト異ル補充ヲ為シタル場合ニ於テハ其ノ違反ハ之ヲ以テ所持人ニ対抗スルコトヲ得ズ",
+     "text_sha256": "a734adf9cada4dcac2a15bd253eea9abdb6e00c7c9e57ee61288f56fb5c4f174",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "白地為替手形（第十条）ニ関スル規定モ亦之ヲ約束手形ニ準用ス",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未完成ニテ振出シタル小切手ニ予メ為シタル合意ト異ル補充ヲ為シタル場合ニ於テハ其ノ違反ハ之ヲ以テ所持人ニ対抗スルコトヲ得ズ",
+     "text_sha256": "6930b8a55a6279c78cb106680a134bb8bc8c3257a9d65257fc8e9dfaff029a01",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q29-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q29-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。約束手形は一覧後定期払・日附後定期払を選べるが、小切手は一覧払に限られる。",
+   "body": "誤りは、小切手についても一覧後定期払・日附後定期払を選べるとする部分である。約束手形については、満期に関する為替手形の規定が準用され（手形法77条1項2号「満期（第三十三条乃至第三十七条）」）、手形法33条1項は満期として「一覧払」「一覧後定期払」「日附後定期払」「確定日払」を掲げるから、一覧後定期払・日附後定期払を選ぶことができる。これに対し、小切手法28条1項は「小切手ハ一覧払ノモノトス之ニ反スル一切ノ記載ハ之ヲ為サザルモノト看做ス」と定めており、小切手に一覧後定期払や日附後定期払の記載をしても、その記載はないものとみなされる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "満期（第三十三条乃至第三十七条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "33",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一覧払",
+     "text_sha256": "c39847188434ab26df5af262e1695207c7c7654751fff547111480f48566835d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "33",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一覧後定期払",
+     "text_sha256": "c39847188434ab26df5af262e1695207c7c7654751fff547111480f48566835d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "33",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "日附後定期払",
+     "text_sha256": "c39847188434ab26df5af262e1695207c7c7654751fff547111480f48566835d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "33",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定日払",
+     "text_sha256": "c39847188434ab26df5af262e1695207c7c7654751fff547111480f48566835d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "小切手ハ一覧払ノモノトス之ニ反スル一切ノ記載ハ之ヲ為サザルモノト看做ス",
+     "text_sha256": "64411e87596f39d44d342cbc98d649278e69c34c228d07d5a3e43b6a3a9d8970",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q29-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q29-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。小切手の支払委託も「単純ナル委託」でなければならず、条件を付すことはできない。",
+   "body": "誤りは、小切手は支払委託に条件を付すことが「できる」とする部分である。小切手法1条2号は、小切手の記載事項として「一定ノ金額ヲ支払フベキ旨ノ単純ナル委託」を掲げる。約束手形についても、手形法75条2号が「一定ノ金額ヲ支払フベキ旨ノ単純ナル約束」を記載事項としている。どちらも「単純ナル」ことが要求されているから、小切手の支払委託にも約束手形の支払約束にも条件を付すことはできず、条件を付すと記載事項を欠き無効になると解されている。したがって、約束手形についての後半は正しいが、小切手についての前半が誤りであり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "1",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一定ノ金額ヲ支払フベキ旨ノ単純ナル委託",
+     "text_sha256": "3220baa466f56029d756bf39a5aaa04a325a12db8f4dc3bdbbd43f9151bd4b54",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "75",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一定ノ金額ヲ支払フベキ旨ノ単純ナル約束",
+     "text_sha256": "efb7e65358b3e7892f2e6af4e776b3fe10f53557d3694d6a5b88c5a731af2849",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "条件を付した場合に無効となる点は解釈による"
+   ],
+   "id": "exp-yobi-2022-shoho-q29-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q29-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。小切手は持参人払式でも振り出すことができ、受取人の記載のない小切手も持参人払式とみなされる。",
+   "body": "小切手法5条1項は「小切手ハ左ノ何レカトシテ之ヲ振出スコトヲ得」とし、記名式又は指図式（1号）、指図禁止の記名式（2号）と並んで、3号で「持参人払式」を掲げる。さらに同条3項は「受取人ノ記載ナキ小切手ハ之ヲ持参人払式小切手ト看做ス」と定める。したがって、小切手は記名式でない方法（持参人払式）により振り出すことができる。これに対し、約束手形では「支払ヲ受ケ又ハ之ヲ受クル者ヲ指図スル者ノ名称」（手形法75条5号）が記載事項とされ、受取人の記載が必要である点で異なる。以上から、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "小切手ハ左ノ何レカトシテ之ヲ振出スコトヲ得",
+     "text_sha256": "684b16d0d68ac6ef1984da3d8e9295ef7923b15674ed39222ab6c824d81d58a0",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "持参人払式",
+     "text_sha256": "684b16d0d68ac6ef1984da3d8e9295ef7923b15674ed39222ab6c824d81d58a0",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "5",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "受取人ノ記載ナキ小切手ハ之ヲ持参人払式小切手ト看做ス",
+     "text_sha256": "684b16d0d68ac6ef1984da3d8e9295ef7923b15674ed39222ab6c824d81d58a0",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "75",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支払ヲ受ケ又ハ之ヲ受クル者ヲ指図スル者ノ名称",
+     "text_sha256": "efb7e65358b3e7892f2e6af4e776b3fe10f53557d3694d6a5b88c5a731af2849",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q29-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

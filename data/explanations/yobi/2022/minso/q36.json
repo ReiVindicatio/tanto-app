@@ -1,0 +1,231 @@
+{
+ "question_id": "yobi-2022-minso-q36",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minso-q36-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。重複する訴えの提起の禁止は公益性の強い訴訟要件であり、その存否の審理では職権証拠調べができると解されている。",
+   "body": "142条は「裁判所に係属する事件については、当事者は、更に訴えを提起することができない」と定める。この禁止は、被告の応訴の負担や審理の重複、判決の矛盾を避けるという公益的な要請に基づく訴訟要件であり、裁判所が職権で調査すべき事項と解されている。そして、その判断の資料も当事者の提出に委ねず、裁判所が職権で収集できる（職権探知）と解されている。したがって、重複する訴えに当たるか否かの審理において職権証拠調べをすることができる。なお、管轄については14条が職権証拠調べを明文で定めているが、重複する訴えについては明文がなく、解釈による。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "142",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所に係属する事件については、当事者は、更に訴えを提起することができない",
+     "text_sha256": "67a341acb96e0f7168c7bcaa3a240dc6c3fa4388515f98400fc74c9a9da00c7f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "14",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、管轄に関する事項について、職権で証拠調べをすることができる",
+     "text_sha256": "a195dc340e1084059df00732771c53c2509582b5f21a53db278c58d4a5af95d8",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（重複する訴えの禁止を職権探知事項とする一般的な理解）"
+   ],
+   "id": "exp-yobi-2022-minso-q36-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minso-q36-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。明示的一部請求の残部を自働債権として別訴で相殺の抗弁を主張することは、特段の事情がない限り許されるとするのが判例である。",
+   "body": "本肢は判例（最判平成10年6月30日）の判示どおりである。同判決は、一個の債権の一部についてのみ判決を求める旨を明示して訴えを提起している場合、その訴訟物は明示された一部に限られることなどから、残部を自働債権として他の訴訟で相殺の抗弁を主張することは、142条の趣旨に反するとはいえないとした。ただし、債権の分割行使が訴訟上の権利の濫用に当たるなどの特段の事情があれば許されない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "142",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所に係属する事件については、当事者は、更に訴えを提起することができない",
+     "text_sha256": "67a341acb96e0f7168c7bcaa3a240dc6c3fa4388515f98400fc74c9a9da00c7f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "不当利得請求事件（一部請求の残部による相殺の抗弁）",
+     "court": "最高裁判所第三小法廷",
+     "date": "1998-06-30",
+     "holding": "一個の債権の一部についてのみ判決を求める旨を明示して訴えを提起している場合に、その残部を自働債権として他の訴訟で相殺の抗弁を主張することは、債権の分割行使が訴訟上の権利の濫用に当たるなど特段の事情がない限り許される。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52548/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2022-minso-q36-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minso-q36-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。所有権に基づく移転登記手続請求と所有権確認請求は訴訟物が異なり、「係属する事件」と同一の事件ではないから、後の訴えは許される。",
+   "body": "142条が禁止するのは「裁判所に係属する事件」について更に訴えを提起することであり、事件の同一性は当事者の同一性と審判対象（訴訟物）の同一性で判断すると解されている。本肢では当事者は同じだが、先の訴えの訴訟物は所有権に基づく所有権移転登記手続請求権であり、後の訴えの訴訟物は被告自身の土地所有権の確認であって、両者は訴訟物が異なる。土地の所有権の帰属が共通の争点になるとしても、それだけで事件が同一になるわけではないから、後の訴えは重複する訴えに当たらず、許される。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "142",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所に係属する事件については、当事者は、更に訴えを提起することができない",
+     "text_sha256": "67a341acb96e0f7168c7bcaa3a240dc6c3fa4388515f98400fc74c9a9da00c7f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（事件の同一性を訴訟物の同一性で判断する一般的な理解）"
+   ],
+   "id": "exp-yobi-2022-minso-q36-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minso-q36-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。本訴・反訴の係属中に反訴請求債権を自働債権として相殺の抗弁を主張することは、反訴を予備的反訴に変更するものとして許されるとするのが判例である。",
+   "body": "誤りは「許されない」という部分である。判例（最判平成18年4月14日）は、本訴及び反訴が係属中に、反訴原告が反訴請求債権を自働債権とし、本訴請求債権を受働債権として相殺の抗弁を主張することは、異なる意思表示をしない限り、反訴を、相殺の自働債権として既判力ある判断が示された部分については反訴請求としない趣旨の予備的反訴に変更するものとして、許されるとした。こう解すれば、114条2項により相殺の判断に生じる既判力と反訴の判決との抵触が生じず、142条の趣旨に反しないからである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "142",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所に係属する事件については、当事者は、更に訴えを提起することができない",
+     "text_sha256": "67a341acb96e0f7168c7bcaa3a240dc6c3fa4388515f98400fc74c9a9da00c7f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "114",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "相殺のために主張した請求の成立又は不成立の判断は、相殺をもって対抗した額について既判力を有する",
+     "text_sha256": "c610c3ea296754d118ee0a863f99ac7ec29d49374742fb66d08e479e8b66173b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "損害賠償等請求本訴、請負代金等請求反訴事件",
+     "court": "最高裁判所第二小法廷",
+     "date": "2006-04-14",
+     "holding": "本訴及び反訴の係属中に、反訴原告が反訴請求債権を自働債権、本訴請求債権を受働債権として相殺の抗弁を主張することは、異なる意思表示をしない限り、反訴を予備的反訴に変更するものとして許される。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/32887/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2022-minso-q36-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minso-q36-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。重複する訴えの提起の禁止に反したことは、338条1項の再審事由に掲げられておらず、それを理由に再審の訴えを提起することはできない。",
+   "body": "誤りは「再審の訴えを提起することができる」という部分である。再審の訴えは、338条1項が掲げる事由がある場合に限り、確定した終局判決に対して提起できるものであり、同項の各号に重複する訴えの提起の禁止に反したことは含まれていない。したがって、重複する訴えであることが看過されて後行訴訟の判決が確定しても、そのことを理由に再審の訴えを提起することはできない。なお、後行訴訟の判決が「前に確定した判決と抵触すること」（同項10号）に当たる場合は、それを理由とする再審の余地がある。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "338",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不服の申立てに係る判決が前に確定した判決と抵触すること",
+     "text_sha256": "edc12902b60510666e70496838c51b340a52879e532b7ee6f9e3c312e6e9543d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "142",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所に係属する事件については、当事者は、更に訴えを提起することができない",
+     "text_sha256": "67a341acb96e0f7168c7bcaa3a240dc6c3fa4388515f98400fc74c9a9da00c7f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-minso-q36-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

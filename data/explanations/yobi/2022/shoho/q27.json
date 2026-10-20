@@ -1,0 +1,330 @@
+{
+ "question_id": "yobi-2022-shoho-q27",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q27-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。営業（事業）の譲渡は、合併のような包括承継ではなく、資産や債権債務を移すには個別の移転手続が必要である。",
+   "body": "誤りは、特段の手続を要することなく資産・債権債務が「当然に移転する」とする部分である。合併では、会社法750条1項が「吸収合併存続株式会社は、効力発生日に、吸収合併消滅会社の権利義務を承継する。」と定め、権利義務が包括的に承継される。これに対し、営業（事業）の譲渡は譲渡人と譲受人との間の契約であり、個々の財産ごとに移転の手続（債権譲渡の対抗要件の具備、債務の移転についての債権者の関与など）を要すると解されている（特定承継）。商法17条1項・会社法22条1項が、譲受人が譲渡人の商号を引き続き使用する場合に限って譲受人も「譲渡人の営業によって生じた債務を弁済する責任を負う」としているのも、譲渡人の債務が当然には譲受人に移らないことを前提にしている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "750",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収合併存続株式会社は、効力発生日に、吸収合併消滅会社の権利義務を承継する。",
+     "text_sha256": "a6adbb9e1d6eca7c8bd4cf4318a57675d65f07fd9c76b787405635973ff6ef0d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "17",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "譲渡人の営業によって生じた債務を弁済する責任を負う",
+     "text_sha256": "3f42432fec820bddf164a256f3a242a6392ffb5469b7e04666c476299a43303f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "22",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "譲渡会社の事業によって生じた債務を弁済する責任を負う",
+     "text_sha256": "61d91c615245d0c1e96de68aee4cb7653e12397cb4cce446db28730a1bbc7041",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "営業（事業）譲渡が特定承継であり個別の移転手続を要する点は解釈による"
+   ],
+   "id": "exp-yobi-2022-shoho-q27-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q27-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、事業の譲渡を、組織化され有機的一体として機能する財産を譲渡し営業的活動を承継させるものと解しており、単なる事業用財産の譲渡はこれに当たらない。",
+   "body": "会社法467条1項1号・2号は、「事業の全部の譲渡」や事業の重要な一部の譲渡に株主総会の承認を要求している。最高裁大法廷昭和40年9月22日判決は、株主総会の特別決議を要する営業譲渡（当時の商法の規定。現在の会社法467条1項に相当）について、一定の営業目的のため組織化され有機的一体として機能する財産の全部又は重要な一部を譲渡し、譲渡会社がその財産によって営んでいた営業的活動の全部又は重要な一部を譲受人に受け継がせ、譲渡会社が法律上当然に競業避止義務を負う結果を伴うものをいうとした。この理解によれば、有機的一体性や営業活動の承継を欠く単なる事業用財産の譲渡は、それが譲渡会社に重大な影響を及ぼすものであっても事業の譲渡には当たらないと解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "467",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "事業の全部の譲渡",
+     "text_sha256": "90383ded1f4a3dce20bdd1672c6aaf03fda339f256628f51e35f32de4bb0a699",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "建物並びに土地明渡所有権確認等請求事件",
+     "court": "最高裁判所大法廷",
+     "date": "1965-09-22",
+     "holding": "商法245条1項1号の営業譲渡とは、一定の営業目的のため組織化され有機的一体として機能する財産の全部又は重要な一部を譲渡し、譲渡会社の営業的活動を譲受人に受け継がせ、譲渡会社が法律上当然に競業避止義務を負う結果を伴うものをいう。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53752/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判決当時の商法245条1項1号は、現在の会社法467条1項1号・2号に相当する",
+    "単なる事業用財産の譲渡が該当しないという帰結は、判示の定義からの解釈による"
+   ],
+   "id": "exp-yobi-2022-shoho-q27-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q27-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。譲渡人の競業避止義務は「当事者の別段の意思表示がない限り」生じる任意規定によるもので、合意で免除できる。",
+   "body": "誤りは、合意によっても競業避止義務を免除できないとする部分である。商法16条1項は、譲渡人は「当事者の別段の意思表示がない限り」、同一・隣接の市町村の区域内で譲渡の日から20年間は同一の営業を行ってはならないと定め、会社法21条1項も事業を譲渡した会社について同じく「当事者の別段の意思表示がない限り」と定める。したがって、当事者の合意で競業避止義務を免除したり軽減したりすることができる。なお、合意によって義務を加重する特約も可能であり、その効力は譲渡の日から30年の期間内に限られる（商法16条2項、会社法21条2項）。また、免除の合意があっても「不正の競争の目的をもって同一の営業を行ってはならない」（商法16条3項）。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "16",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の別段の意思表示がない限り",
+     "text_sha256": "f844cee4cf3bd44cdd5074ead26d743c8f363c32336a40e6ed9f77695164588e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "21",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の別段の意思表示がない限り",
+     "text_sha256": "692ba45bd186d55570fe67f5db4ba2f81a4465536814d23a3e455c77a692e727",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "16",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その特約は、その営業を譲渡した日から三十年の期間内に限り、その効力を有する。",
+     "text_sha256": "f844cee4cf3bd44cdd5074ead26d743c8f363c32336a40e6ed9f77695164588e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "21",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その特約は、その事業を譲渡した日から三十年の期間内に限り、その効力を有する。",
+     "text_sha256": "692ba45bd186d55570fe67f5db4ba2f81a4465536814d23a3e455c77a692e727",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "16",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "不正の競争の目的をもって同一の営業を行ってはならない",
+     "text_sha256": "f844cee4cf3bd44cdd5074ead26d743c8f363c32336a40e6ed9f77695164588e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q27-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q27-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。詐害的な営業（事業）譲渡では、商号の続用の有無にかかわらず、残存債権者は悪意の譲受人に承継財産の価額を限度として履行を請求できる。",
+   "body": "商法18条の2第1項は「譲渡人が譲受人に承継されない債務の債権者（以下この条において「残存債権者」という。）を害することを知って営業を譲渡した場合には、残存債権者は、その譲受人に対して、承継した財産の価額を限度として、当該債務の履行を請求することができる。」と定め、ただし書で、譲受人が「営業の譲渡の効力が生じた時において残存債権者を害することを知らなかったとき」を除いている。会社法23条の2第1項も事業譲渡について同じ内容を定める。この請求は、商号の続用を要件とする商法17条1項・会社法22条1項の責任とは別の制度であり、商号の続用は要件とされていない。本肢の譲受人は効力発生時までに債権者を害することを知っていたのであるから、債権者は承継した財産の価額を限度として履行を請求できる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "18_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "譲渡人が譲受人に承継されない債務の債権者（以下この条において「残存債権者」という。）を害することを知って営業を譲渡した場合には、残存債権者は、その譲受人に対して、承継した財産の価額を限度として、当該債務の履行を請求することができる。",
+     "text_sha256": "1c9b035af25b40146435f3311c410369d548729f6dc6e6b605d7aa30b0429376",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "18_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "営業の譲渡の効力が生じた時において残存債権者を害することを知らなかったとき",
+     "text_sha256": "1c9b035af25b40146435f3311c410369d548729f6dc6e6b605d7aa30b0429376",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "23_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "残存債権者は、その譲受会社に対して、承継した財産の価額を限度として、当該債務の履行を請求することができる。",
+     "text_sha256": "b3350cbc66de4337f7fd365b8fd087f68a330ddf64961aed6cdd0a558b2797e7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "17",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "譲渡人の商号を引き続き使用する場合には",
+     "text_sha256": "3f42432fec820bddf164a256f3a242a6392ffb5469b7e04666c476299a43303f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "22",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "譲渡会社の商号を引き続き使用する場合には",
+     "text_sha256": "61d91c615245d0c1e96de68aee4cb7653e12397cb4cce446db28730a1bbc7041",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q27-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q27-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、営業主体を表示するゴルフクラブの名称を譲受人が続用する場合、商号続用の規定の類推適用により、特段の事情がない限り譲受人も預託金返還義務を負うとした。",
+   "body": "誤りは、商号を続用していない限り預託金返還義務を負わないとする部分である。商法17条1項・会社法22条1項は、譲受人が譲渡人の「商号を引き続き使用する場合」に、譲受人も譲渡人の営業（事業）によって生じた債務を弁済する責任を負うと定める。最高裁平成16年2月20日判決は、預託金会員制のゴルフクラブの名称がゴルフ場の営業主体を表示するものとして用いられている場合に、ゴルフ場の営業の譲受人がその名称を継続して使用しているときは、譲受後遅滞なく会員による優先的利用を拒否したなどの特段の事情がない限り、商号続用者の責任を定める当時の商法の規定（現在の商法17条1項・会社法22条1項に相当）の類推適用により、会員が譲渡人に交付した預託金の返還義務を負うとした。したがって、商号の続用がなくても譲受人が預託金返還義務を負いうるから、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "17",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "営業を譲り受けた商人（以下この章において「譲受人」という。）が譲渡人の商号を引き続き使用する場合には、その譲受人も、譲渡人の営業によって生じた債務を弁済する責任を負う。",
+     "text_sha256": "3f42432fec820bddf164a256f3a242a6392ffb5469b7e04666c476299a43303f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "22",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "事業を譲り受けた会社（以下この章において「譲受会社」という。）が譲渡会社の商号を引き続き使用する場合には、その譲受会社も、譲渡会社の事業によって生じた債務を弁済する責任を負う。",
+     "text_sha256": "61d91c615245d0c1e96de68aee4cb7653e12397cb4cce446db28730a1bbc7041",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "預託金返還請求事件",
+     "court": "最高裁判所第二小法廷",
+     "date": "2004-02-20",
+     "holding": "預託金会員制ゴルフクラブの名称がゴルフ場の営業主体を表示するものとして用いられている場合、その名称を継続使用するゴルフ場の営業の譲受人は、譲受後遅滞なく会員の優先的利用を拒否したなどの特段の事情がない限り、商法26条1項の類推適用により預託金の返還義務を負う。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57044/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判決当時の商法26条1項は、現在の商法17条1項・会社法22条1項に相当する"
+   ],
+   "id": "exp-yobi-2022-shoho-q27-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

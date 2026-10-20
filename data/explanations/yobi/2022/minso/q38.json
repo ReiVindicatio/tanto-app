@@ -1,0 +1,217 @@
+{
+ "question_id": "yobi-2022-minso-q38",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minso-q38-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。訴状等の陳述の擬制（158条）は「出頭した相手方に弁論をさせる」ための制度であり、当事者双方が欠席した場合には用いることができない。",
+   "body": "誤りは「当事者双方が最初にすべき口頭弁論の期日に欠席した場合であっても」陳述を擬制できるという部分である。158条は、原告又は被告が最初にすべき口頭弁論の期日に出頭しないときは、その者が提出した書面に記載した事項を陳述したものとみなし「出頭した相手方に弁論をさせることができる」と定めており、当事者の一方が出頭していることを前提としている。当事者双方が欠席した場合は弁論を行うことができず、263条の訴えの取下げの擬制の問題となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "158",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "原告又は被告が最初にすべき口頭弁論の期日に出頭せず、又は出頭したが本案の弁論をしないときは、裁判所は、その者が提出した訴状又は答弁書その他の準備書面に記載した事項を陳述したものとみなし、出頭した相手方に弁論をさせることができる",
+     "text_sha256": "4e64e7a8e7346d213381c6f1c1628ad39ce021ee16eca90dc536051bad2ddb29",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "263",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者双方が、口頭弁論若しくは弁論準備手続の期日に出頭せず",
+     "text_sha256": "f3d27bff25a9ba567f4fa1f3e67cdff0a15d4e805676b036882a950ee7b8d44b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-minso-q38-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minso-q38-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。適式な呼出しを受けて欠席した当事者に対しても、法廷でされた判決言渡期日の指定の告知は効力を生じ、呼出状の送達を要しないとするのが判例である。",
+   "body": "94条1項は、期日の呼出しの方法として電子呼出状の送達のほか「当該事件について出頭した者に対して期日の告知をする方法」などを定める。判例（最判昭和38年4月16日）は、当事者の一方が適式な呼出しを受けながら口頭弁論期日に出頭しなかった場合に、裁判所が口頭弁論を終結し判決言渡期日を指定して告知したときは、その告知は在廷しない当事者に対しても効力を有するとした。したがって、欠席した当事者に判決言渡期日の呼出状を改めて送達する必要はない。なお、251条2項により「判決の言渡しは、当事者が在廷しない場合においても、することができる」。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "94",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該事件について出頭した者に対して期日の告知をする方法",
+     "text_sha256": "f3f5a327c689a29353cb3b007936bc937474f43ac1a607dd0caee190ee4b7600",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "251",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "判決の言渡しは、当事者が在廷しない場合においても、することができる",
+     "text_sha256": "7167c7bccee608a539efc6460082c5f71c53756a21bca7201e25c2807e22399b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "最判昭和38年4月16日（当事者一方の欠席と判決言渡期日の告知の効力）",
+     "court": "最高裁判所第三小法廷",
+     "date": "1963-04-16",
+     "holding": "適式な呼出しを受けた当事者の一方が口頭弁論期日に出頭しなかった場合に、裁判所が口頭弁論を終結し判決言渡期日を指定・告知したときは、その告知は在廷しない当事者に対しても効力を有する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/66116/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2022-minso-q38-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minso-q38-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。欠席による自白の擬制は、公示送達による呼出しを受けた当事者には適用されない（159条3項ただし書）。",
+   "body": "159条3項本文は、自白の擬制を定める同条1項の規定を「当事者が口頭弁論の期日に出頭しない場合について準用する」とする。しかし、同項ただし書は「ただし、その当事者が公示送達による呼出しを受けたものであるときは、この限りでない」と定める。公示送達では当事者が期日を現実に知ることが期待できないからである。したがって、公示送達による呼出しを受けた被告が欠席しても、原告の主張する事実を自白したものとみなすことはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "159",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の規定は、当事者が口頭弁論の期日に出頭しない場合について準用する。ただし、その当事者が公示送達による呼出しを受けたものであるときは、この限りでない",
+     "text_sha256": "5d9eba398e856ed9f8e336d711a5ad7aad2937c6ddc3568dd476ee166260a561",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-minso-q38-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minso-q38-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。証拠調べは、当事者が期日に出頭しない場合においてもすることができる（183条）。",
+   "body": "183条は「証拠調べは、当事者が期日に出頭しない場合においても、することができる」と定める。同条は出頭しない当事者が証拠の申出をした者であるか否かを区別していない。したがって、従前の期日に申出が採用された証人尋問について、申出をした当事者が尋問すべき期日に欠席しても、裁判所はその期日に尋問を実施することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "183",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証拠調べは、当事者が期日に出頭しない場合においても、することができる",
+     "text_sha256": "ed848488e5e0d706fb96a0797f523d57892e8e8d2d0116e09201e46e4199e369",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-minso-q38-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minso-q38-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。控訴審で当事者双方が欠席し1か月以内に期日指定の申立てをしないときにみなされるのは、訴えの取下げではなく控訴の取下げである。",
+   "body": "誤りは「訴えの取下げがあったものとみなされる」という部分である。292条2項は、263条などの規定を「控訴の取下げについて準用する」と定める。そのため、控訴審の口頭弁論の期日に当事者双方が欠席し、一月以内に期日指定の申立てをしないときは、控訴の取下げがあったものとみなされる。控訴の取下げとみなされると控訴審の手続が終了し、請求を棄却した第一審判決が確定することになる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "292",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第二百六十一条第三項及び第四項、第二百六十二条第一項並びに第二百六十三条の規定は、控訴の取下げについて準用する",
+     "text_sha256": "2bde534c5680b32f81c691a17bed467047a42cd92bc9364f1270d52c5c002168",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "263",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一月以内に期日指定の申立てをしないときは、訴えの取下げがあったものとみなす",
+     "text_sha256": "f3d27bff25a9ba567f4fa1f3e67cdff0a15d4e805676b036882a950ee7b8d44b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-minso-q38-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

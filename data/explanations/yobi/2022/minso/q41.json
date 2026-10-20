@@ -1,0 +1,197 @@
+{
+ "question_id": "yobi-2022-minso-q41",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minso-q41-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、当事者の一方が欠席したときは、出頭した当事者に双方に係る従前の口頭弁論の結果を陳述させることができるとする。",
+   "body": "誤りは「出頭した他方当事者だけではこの陳述をすることができない」とする点である。249条2項は「裁判官が代わった場合には、当事者は、従前の口頭弁論の結果を陳述しなければならない。」と定める（弁論の更新）。最高裁昭和31年4月13日判決は、この手続を履践すべき場合に当事者の一方が口頭弁論期日に欠席したときは、裁判長は出頭した当事者に双方に係る従前の口頭弁論の結果を陳述させることができると判示した。したがって、出頭した当事者だけで弁論の更新をすることができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "249",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判官が代わった場合には、当事者は、従前の口頭弁論の結果を陳述しなければならない。",
+     "text_sha256": "59769d41f260959f459613aa0e173d15626ff5f0adbd6e4c146620a51510e932",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "建物売渡代金残額請求事件",
+     "court": "最高裁判所第二小法廷",
+     "date": "1956-04-13",
+     "holding": "裁判官が代わり従前の口頭弁論の結果を陳述すべき場合に、当事者の一方が欠席したときは、裁判長は出頭した当事者に双方に係る従前の口頭弁論の結果を陳述させることができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57487/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判決当時の条文は旧民訴法187条2項（現行249条2項に相当）。"
+   ],
+   "id": "exp-yobi-2022-minso-q41-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minso-q41-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。控訴審では、当事者は第一審における口頭弁論の結果を陳述しなければならない（296条2項）。",
+   "body": "本肢は296条2項の内容そのものである。同項は「当事者は、第一審における口頭弁論の結果を陳述しなければならない。」と定める。控訴審は第一審の審理を引き継いで続行する（続審）ため、控訴審の裁判官が第一審の資料を判断の基礎とするには、直接主義の要請から当事者がその結果を陳述する必要がある、と説明されている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "296",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当事者は、第一審における口頭弁論の結果を陳述しなければならない。",
+     "text_sha256": "a9e51ca0d115c0cbca14ac7e776c64f0be4e37e85f4bb0546792c132b4ab37ec",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-minso-q41-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minso-q41-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。大規模訴訟では、当事者に異議がないときは受命裁判官に裁判所内で証人尋問をさせることができる（268条）。",
+   "body": "本肢は268条の内容に沿っている。同条は「裁判所は、大規模訴訟（当事者が著しく多数で、かつ、尋問すべき証人又は当事者本人が著しく多数である訴訟をいう。）に係る事件について、当事者に異議がないときは、受命裁判官に裁判所内で証人又は当事者本人の尋問をさせることができる。」と定める。受命裁判官は合議体の構成員であるから、本肢の「合議体である受訴裁判所」という前提とも整合する。通常は裁判所内での証人尋問を受命裁判官に行わせることは直接主義の例外として限定されているが、大規模訴訟では審理の迅速のためにこれが認められている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "268",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者に異議がないときは、受命裁判官に裁判所内で証人又は当事者本人の尋問をさせることができる。",
+     "text_sha256": "edf9052b5763d09cbd153a6d76239151c6eee7154e3d83de52a4365cee2085de",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-minso-q41-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minso-q41-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。相当と認めるときは、地方裁判所又は簡易裁判所に嘱託して裁判所外で証拠調べ（検証）をさせることができる（185条1項）。",
+   "body": "本肢は185条1項の内容に沿っている。同項は「裁判所は、相当と認めるときは、裁判所外において証拠調べをすることができる。」としたうえで、「この場合においては、合議体の構成員に命じ、又は地方裁判所若しくは簡易裁判所に嘱託して証拠調べをさせることができる。」と定める。検証も証拠調べの一つであるから、嘱託を受けた裁判所の受託裁判官に裁判所外で検証を実施させることができる。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "185",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この場合においては、合議体の構成員に命じ、又は地方裁判所若しくは簡易裁判所に嘱託して証拠調べをさせることができる。",
+     "text_sha256": "92f262b155591de1f84d245f99bd2d18320698d34a0e3f265160bc97823d4930",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-minso-q41-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-minso-q41-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。単独体から合議体に移行した場合も裁判官が代わった場合に当たり、従前の口頭弁論の結果の陳述（弁論の更新）が必要と解されている。",
+   "body": "誤りは「従前の口頭弁論の結果を陳述する必要がない」とする点である。249条1項は「判決は、その基本となる口頭弁論に関与した裁判官がする。」と定め、同条2項は「裁判官が代わった場合には、当事者は、従前の口頭弁論の結果を陳述しなければならない。」と定める。単独の裁判官から、その裁判官を含む合議体に審理が移行すると、新たに加わった裁判官は従前の口頭弁論に関与していないから、合議体として判決をするには同項の陳述が必要であると解されている。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "249",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "判決は、その基本となる口頭弁論に関与した裁判官がする。",
+     "text_sha256": "59769d41f260959f459613aa0e173d15626ff5f0adbd6e4c146620a51510e932",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "249",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判官が代わった場合には、当事者は、従前の口頭弁論の結果を陳述しなければならない。",
+     "text_sha256": "59769d41f260959f459613aa0e173d15626ff5f0adbd6e4c146620a51510e932",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "単独体から合議体への移行が「裁判官が代わった場合」に当たるとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2022-minso-q41-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

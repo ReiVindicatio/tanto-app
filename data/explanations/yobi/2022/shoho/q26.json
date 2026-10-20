@@ -1,0 +1,243 @@
+{
+ "question_id": "yobi-2022-shoho-q26",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q26-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。定款で定める者や株主総会で選任された者がいなければ、取締役が清算人となる（478条1項1号）。裁判所が選任するのは清算人となる者がいないときに限られる（同条2項）。",
+   "body": "誤りは「当該会社に取締役がいるときであっても」裁判所が選任するとしている部分である。478条1項は「次に掲げる者は、清算株式会社の清算人となる」として、1号に「取締役（次号又は第三号に掲げる者がある場合を除く。）」、2号に「定款で定める者」、3号に「株主総会の決議によって選任された者」を掲げる。したがって、定款で定める者も株主総会で選任された者もいないときは、取締役が当然に清算人となる。裁判所が利害関係人の申立てにより清算人を選任するのは、478条2項のとおり「前項の規定により清算人となる者がないとき」である。したがって、取締役がいるのに裁判所が選任するとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "478",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる者は、清算株式会社の清算人となる。",
+     "text_sha256": "aca4834f826fdeaed1b8c6dc3179389a98006f46940131ab2f613560dac108d7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "478",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定により清算人となる者がないときは、裁判所は、利害関係人の申立てにより、清算人を選任する。",
+     "text_sha256": "aca4834f826fdeaed1b8c6dc3179389a98006f46940131ab2f613560dac108d7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q26-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q26-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。清算株式会社の財産が債務を完済するのに足りないことが明らかになったときは、清算人は直ちに破産手続開始の申立てをしなければならない（484条1項）。",
+   "body": "ポイントは、債務超過が明らかになった場合に清算人が破産手続開始の申立ての義務を負うかである。484条1項は「清算株式会社の財産がその債務を完済するのに足りないことが明らかになったときは、清算人は、直ちに破産手続開始の申立てをしなければならない」と定める。本肢はこの規定のとおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "484",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "清算株式会社の財産がその債務を完済するのに足りないことが明らかになったときは、清算人は、直ちに破産手続開始の申立てをしなければならない。",
+     "text_sha256": "f991303c646c75440ddc71e058621bcb00a85e0ae846d9b69d3032159379fd56",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q26-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q26-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。清算人会の承認を受けた決算報告について株主総会の承認があったときは、不正の行為があった場合を除き、清算人の任務懈怠責任は免除されたものとみなされる（507条2項〜4項）。",
+   "body": "ポイントは、決算報告の株主総会承認によって清算人の責任が免除されたものとみなされるかと、その例外である。清算人会設置会社では、決算報告は清算人会の承認を受けなければならず（507条2項）、清算人はその決算報告を株主総会に提出し、又は提供して、その承認を受けなければならない（同条3項）。そして同条4項は「前項の承認があったときは、任務を怠ったことによる清算人の損害賠償の責任は、免除されたものとみなす」と定め、ただし書で「清算人の職務の執行に関し不正の行為があったときは、この限りでない」とする。本肢はこれらの規定のとおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "507",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "清算人会設置会社においては、決算報告は、清算人会の承認を受けなければならない。",
+     "text_sha256": "a6ad167f19de630a2097e8ead0522c50cc1799a1509ee9bb1f79b891cdeb3a2e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "507",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "清算人は、決算報告（前項の規定の適用がある場合にあっては、同項の承認を受けたもの）を株主総会に提出し、又は提供し、その承認を受けなければならない。",
+     "text_sha256": "a6ad167f19de630a2097e8ead0522c50cc1799a1509ee9bb1f79b891cdeb3a2e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "507",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "前項の承認があったときは、任務を怠ったことによる清算人の損害賠償の責任は、免除されたものとみなす。ただし、清算人の職務の執行に関し不正の行為があったときは、この限りでない。",
+     "text_sha256": "a6ad167f19de630a2097e8ead0522c50cc1799a1509ee9bb1f79b891cdeb3a2e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q26-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q26-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。清算人会設置会社では、代表清算人を含む業務執行清算人が、清算結了の登記の時から10年間、帳簿資料を保存しなければならない（508条1項、489条7項1号）。",
+   "body": "ポイントは、帳簿の保存義務者と保存期間の起算点・期間である。508条1項は、「清算人（清算人会設置会社にあっては、第四百八十九条第七項各号に掲げる清算人）は、清算株式会社の本店の所在地における清算結了の登記の時から十年間、清算株式会社の帳簿並びにその事業及び清算に関する重要な資料（以下この条において「帳簿資料」という。）を保存しなければならない」と定める。489条7項は、清算人会設置会社の業務を執行する清算人として、1号に「代表清算人」を掲げている。代表清算人がいるのは清算人会設置会社であるから、代表清算人は、清算結了の登記の時から10年間、帳簿を保存する義務を負う。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "508",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "清算人（清算人会設置会社にあっては、第四百八十九条第七項各号に掲げる清算人）は、清算株式会社の本店の所在地における清算結了の登記の時から十年間、清算株式会社の帳簿並びにその事業及び清算に関する重要な資料（以下この条において「帳簿資料」という。）を保存しなければならない。",
+     "text_sha256": "5f54bf82942ef8b1bbbdc330bd1c3527a42bc2c3d164f9a5951c240bdb7b0359",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "489",
+     "paragraphs": [
+      "7"
+     ],
+     "quote": "次に掲げる清算人は、清算人会設置会社の業務を執行する。",
+     "text_sha256": "54f759d02d7fd5253f032b88207af0da729a9a572963b2a4d25df4fce1dbbf3e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q26-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-shoho-q26-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株主総会の決議による解散は解散事由である（471条3号）が、解散した会社は清算をしなければならず（475条1号）、清算が結了するまでは清算の目的の範囲内で存続するものとみなされる（476条）。",
+   "body": "誤りは、解散した時に「消滅する」としている部分である。株主総会の決議は解散事由の一つであり（471条3号）、株式会社はこれによって解散する。しかし、475条は「株式会社は、次に掲げる場合には、この章の定めるところにより、清算をしなければならない」とし、1号に「解散した場合」を掲げる（合併による解散などは除かれている）。そして476条は、清算株式会社は「清算の目的の範囲内において、清算が結了するまではなお存続するものとみなす」と定める。したがって、株主総会の決議によって解散しても、会社は直ちには消滅せず、清算の結了によって消滅するから、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "471",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、次に掲げる事由によって解散する。",
+     "text_sha256": "1cc51ec8073d5799d2dc3a99306a875a0c6a31d99e39a31261db167ae36e8138",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "475",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、次に掲げる場合には、この章の定めるところにより、清算をしなければならない。",
+     "text_sha256": "7bd12352563a923d130300bc36b08a71ce25ef3317ab150fa718d2555f3e45ce",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "476",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "清算の目的の範囲内において、清算が結了するまではなお存続するものとみなす。",
+     "text_sha256": "c98368b45e4058cb9af5c24bf5157fb53c804494b4b79559dfdc28527aa57511",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-shoho-q26-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
