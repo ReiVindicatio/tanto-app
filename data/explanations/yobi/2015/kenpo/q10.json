@@ -1,0 +1,147 @@
+{
+ "question_id": "yobi-2015-kenpo-q10",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-kenpo-q10-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：82条1項の「公開」は、訴訟関係人の立会いではなく、一般の国民に裁判の傍聴を許すことを意味すると解されている。",
+   "body": "誤りのポイントは、「公開」を「訴訟関係人に審理に立ち会う権利と機会を与えること」とする部分である。憲法82条1項は「裁判の対審及び判決は、公開法廷でこれを行ふ。」と定める。ここでいう「公開」は、裁判を一般公衆の目にさらし、国民一般に傍聴を許すこと（一般公開）を意味すると解されている。訴訟関係人に審理への立会いの機会を与えること（いわゆる当事者公開）は、82条1項の「公開」とは区別されると解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "82",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判の対審及び判決は、公開法廷でこれを行ふ。",
+     "text_sha256": "08ce0823bca3147d0817c3a42dd0dd3c284f4df203de24d7bf22871bdba8729c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（「公開」の意味）。判例は探していない"
+   ],
+   "id": "exp-yobi-2015-kenpo-q10-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-kenpo-q10-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：「対審」は、訴訟当事者が裁判官の面前で口頭で主張を闘わせることを意味すると解されている。",
+   "body": "憲法82条1項は「裁判の対審及び判決は、公開法廷でこれを行ふ。」と定め、公開を要する対象として「対審」と「判決」を挙げる。「対審」とは、裁判官の面前で、当事者が口頭でそれぞれの主張を述べ合うことをいい、民事訴訟の口頭弁論や刑事訴訟の公判手続がこれに当たると解されている。対審は裁判手続の核心的部分であり、2項も「対審は、公開しないでこれを行ふことができる」場合を限定して定めている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "82",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判の対審及び判決は、公開法廷でこれを行ふ。",
+     "text_sha256": "08ce0823bca3147d0817c3a42dd0dd3c284f4df203de24d7bf22871bdba8729c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "82",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "対審は、公開しないでこれを行ふことができる",
+     "text_sha256": "08ce0823bca3147d0817c3a42dd0dd3c284f4df203de24d7bf22871bdba8729c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（「対審」の意味）。判例は探していない"
+   ],
+   "id": "exp-yobi-2015-kenpo-q10-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-kenpo-q10-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例（法廷メモ採取事件）は、82条1項は傍聴人がメモを取ることを権利として保障するものではないとしており、公開原則を権利としての保障と位置付けるようになったとはいえない。",
+   "body": "誤りのポイントは、「判例もそれを権利としての保障と位置付けるようになった」という部分である。最高裁大法廷平成元年3月8日判決（メモ採取不許可国家賠償請求事件）は、82条1項は、法廷で傍聴人がメモを取ることを権利として保障しているものではないとした。同判決は、82条1項の趣旨を、裁判の公開を制度として保障することにあるとしたものと一般に理解されている。メモを取ることは、憲法21条1項の精神に照らして尊重されるべきであるとされたが、これは82条1項の権利としてではない。したがって、判例が公開原則を権利としての保障と位置付けるようになったとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "82",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判の対審及び判決は、公開法廷でこれを行ふ。",
+     "text_sha256": "08ce0823bca3147d0817c3a42dd0dd3c284f4df203de24d7bf22871bdba8729c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "21",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "集会、結社及び言論、出版その他一切の表現の自由は、これを保障する。",
+     "text_sha256": "12a49fd326772d46073222eb7a0657a3d6ebc1496f16041ad4efeb176ebac00b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [
+    {
+     "name": "メモ採取不許可国家賠償請求事件（法廷メモ採取事件）",
+     "court": "最高裁判所大法廷",
+     "date": "1989-03-08",
+     "holding": "憲法82条1項は、法廷で傍聴人がメモを取ることを権利として保障しているものではない。メモを取ることは、裁判を認識記憶するためになされる限り、憲法21条1項の精神に照らして尊重に値し、故なく妨げられてはならない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52213/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判決の裁判要旨は courts.go.jp の詳細ページで確認した。「制度として保障」の部分は判決全文（PDF）を開けなかったため、「一般に理解されている」と書いた"
+   ],
+   "id": "exp-yobi-2015-kenpo-q10-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

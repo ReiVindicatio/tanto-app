@@ -32,7 +32,7 @@
 - 使ってよい道具は次だけ（人が見ていない間に動くので、許可の要る操作をすると止まってしまう）：
   ファイルの読み書きは Read・Write・Edit の道具／Bash は「python3 pipeline/explain_queue.py --show …」「python3 pipeline/egov.py …」「python3 pipeline/check_explanations.py …」だけ／判例の確認は WebSearch と、www.courts.go.jp の WebFetch だけ
   curl・その場で書く python・cat や grep などのコマンドは使わない（JSON は Read の道具で読む）
-- 判例は WebSearch で「<事件名や判示の語句> 最高裁 courts.go.jp」と探し、判決の番号（hanrei/<id>）が分かれば判決のページ https://www.courts.go.jp/hanrei/<id>/detail2/index.html を WebFetch で開いて確かめる（旧形式の URL は 404）。裁判所の検索ページ search1 は JavaScript で描くので WebFetch では結果が出ない（2026-10-20 確認）。1つの判例を探すのは2回まで、見つからなければ「判例あり（要確認）」。探さなかった判例は notes に「探していない」と書く（「確認できなかった」と書かない。2026-10-20、探していないのに「確認できなかった」と書いた例があった）。判決の日付などを記憶で書かない。予備校・解説サイトの内容は使わない
+- 判例は WebSearch で「<事件名や判示の語句> 最高裁 courts.go.jp」と探し、判決の番号（hanrei/<id>）が分かれば判決のページ https://www.courts.go.jp/hanrei/<id>/detail2/index.html を WebFetch で開いて確かめる（旧形式の URL は 404）。裁判所の検索ページ search1 は JavaScript で描くので WebFetch では結果が出ない（2026-10-20 確認）。判決全文は https://www.courts.go.jp/assets/hanrei/hanrei-pdf-<id>.pdf にある（WebFetch では本文が読めないので、WebFetch が保存した PDF を Read で開く。古い app/files/hanrei_jp/… は 404）。1つの判例を探すのは2回まで、見つからなければ「判例あり（要確認）」。探さなかった判例は notes に「探していない」と書く（「確認できなかった」と書かない。2026-10-20、探していないのに「確認できなかった」と書いた例があった）。判決の日付などを記憶で書かない。予備校・解説サイトの内容は使わない
 - 借地借家法・会社法施行規則・手形法（附則82条まで）・小切手法・行政法の各法・労働組合法なども保存済み。刑事訴訟規則・民事訴訟規則は e-Gov になく使えない
 - 法令が保存済みかは、思い込まずに python3 pipeline/egov.py <正式な法令名> <条> を実行して確かめる（ないときだけエラーになる。2026-10-20、保存済みの道路交通法を「ない」として引用しなかった例が続いた）
 最後に、問ごとに1行で報告する：「<question_id>：検査 ✅ N肢／❌ M肢（理由の要約）／法令がない：<法令名>（あれば）」

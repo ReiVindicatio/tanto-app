@@ -1,0 +1,171 @@
+{
+ "question_id": "yobi-2015-kenpo-q06",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-kenpo-q06-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。憲法17条の「公務員の不法行為」は文言上権力作用に限られておらず、非権力作用による不法行為も含むと解されている。",
+   "body": "ポイントは、憲法17条が権力作用に限っているかどうかである。憲法17条は「何人も、公務員の不法行為により、損害を受けたときは、法律の定めるところにより、国又は公共団体に、その賠償を求めることができる。」と定め、不法行為の種類を限定していない。そのため、同条の「公務員の不法行為」には、権力作用によるものだけでなく非権力作用によるものも含まれると解されている。これを受けた法律として、国家賠償法1条1項は「公権力の行使に当る公務員」の不法行為について国又は公共団体の責任を定め、それ以外の場面は国家賠償法4条が「民法の規定による」としている。つまり、非権力作用による損害も、民法の規定（使用者責任など）を通じて国又は公共団体に賠償を求めることができ、憲法17条の保障の範囲に入る。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "17",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "何人も、公務員の不法行為により、損害を受けたときは、法律の定めるところにより、国又は公共団体に、その賠償を求めることができる。",
+     "text_sha256": "25c1fd05dbb0d1de30471ae2f7bb233abb2dbe429700922db75801cc2fb17fc0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "国家賠償法",
+     "article": "1",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公権力の行使に当る公務員",
+     "text_sha256": "a05dbc48df7f04346b42aef12cdca4a641f40d702fc521d5514a29fdd33739a3",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%BA%8C%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "国家賠償法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "民法の規定による",
+     "text_sha256": "d8cbf9bb595f6ece081fa7002141825533cc60dfa49983a49f3899a5be585408",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%BA%8C%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（憲法17条の「公務員の不法行為」の範囲）。判例は探していない"
+   ],
+   "id": "exp-yobi-2015-kenpo-q06-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-kenpo-q06-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。国や公共団体の純粋な私経済作用は国家賠償法1条の「公権力の行使」に当たらず、民法等の私法によって賠償責任が判断される。",
+   "body": "ポイントは、純粋な私経済作用が国家賠償法1条の対象に入るかどうかである。国家賠償法1条1項は「国又は公共団体の公権力の行使に当る公務員」の不法行為を対象としており、国や公共団体が私人と同じ立場で行う純粋な私的経済取引（物品の購入など）はこれに当たらないと解されている。そうした場面では、国家賠償法4条が「国又は公共団体の損害賠償の責任については、前三条の規定によるの外、民法の規定による。」と定めるとおり、民法等の私法の規律によることになる。たとえば職員の行為による損害であれば、民法715条1項の使用者責任（「ある事業のために他人を使用する者は、被用者がその事業の執行について第三者に加えた損害を賠償する責任を負う。」）などで判断される。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "国家賠償法",
+     "article": "1",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国又は公共団体の公権力の行使に当る公務員",
+     "text_sha256": "a05dbc48df7f04346b42aef12cdca4a641f40d702fc521d5514a29fdd33739a3",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%BA%8C%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "国家賠償法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国又は公共団体の損害賠償の責任については、前三条の規定によるの外、民法の規定による。",
+     "text_sha256": "d8cbf9bb595f6ece081fa7002141825533cc60dfa49983a49f3899a5be585408",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%BA%8C%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "715",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ある事業のために他人を使用する者は、被用者がその事業の執行について第三者に加えた損害を賠償する責任を負う。",
+     "text_sha256": "ee1bffc67a722815d32711a10969d4bd9e21ccbe43f120f08dd4fdc60932d2f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（「公権力の行使」の範囲から純粋な私経済作用を除く理解）。判例は探していない"
+   ],
+   "id": "exp-yobi-2015-kenpo-q06-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-kenpo-q06-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。損失補償が適法な（正当な）公権力の行使について行われる点は正しいが、身体への被害にも憲法29条3項の損失補償が及ぶという立場を最高裁判所はとっていない。",
+   "body": "誤りは「身体に対してもなされるというのが最高裁判所の立場である」の部分である。憲法29条3項は「私有財産は、正当な補償の下に、これを公共のために用ひることができる。」と定めており、損失補償は適法な公権力の行使によって財産権に生じた特別の犠牲を補うものと解されている。予防接種による後遺障害のような身体への被害について、下級審や学説には同項を類推して補償を認めるものがあるが、最高裁判所は、痘そうの予防接種による重篤な後遺障害の事案で、禁忌者に該当していたことを推定する枠組みを示し、損害賠償（過失責任）の側で救済を図っている（最判平成3年4月19日）。最高裁判所が身体への被害に憲法29条3項の損失補償を及ぼす立場を示したものではないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "29",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "私有財産は、正当な補償の下に、これを公共のために用ひることができる。",
+     "text_sha256": "ab17600bf9dc05c32c76481239e9c7ac554e08313e2a699d0a12570187c51dde",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [
+    {
+     "name": "痘そう予防接種後遺障害損害賠償事件",
+     "court": "最高裁判所第二小法廷",
+     "date": "1991-04-19",
+     "holding": "痘そうの予防接種で重篤な後遺障害が生じた場合、予診を尽くしても禁忌事由が見つからず、被接種者が後遺障害を起こしやすい個人的素因を持っていたなどの特段の事情がない限り、被接種者は禁忌者に該当していたと推定すべきであるとした（損害賠償の事案）",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52724/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "「最高裁が身体への損失補償を認めていない」との評価は解釈による（判決の要旨は損害賠償の枠組みであることのみ確認）。下級審の判決は探していない"
+   ],
+   "id": "exp-yobi-2015-kenpo-q06-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

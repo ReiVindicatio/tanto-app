@@ -1,0 +1,159 @@
+{
+ "question_id": "yobi-2015-kenpo-q09",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-kenpo-q09-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：行政権を立法・司法以外の残りの作用とみる考え方（控除説）をとっても、内閣がその全てを自ら行うことが必要となるわけではない。",
+   "body": "誤りのポイントは、「内閣が自ら行うことが必要となる」という結論の部分である。憲法65条は「行政権は、内閣に属する。」と定めるが、控除説は行政権の範囲（何が行政か）を画する考え方であり、その作用を誰が現実に担うかとは別の問題であると解されている。行政作用の多くは内閣の下にある行政各部が担い、内閣はそれを統轄する立場にあると解されている。また、内閣から独立して職権を行使する行政委員会も、65条に反しないと一般に解されている。したがって、控除説から直ちに内閣が全ての行政作用を自ら行う必要があるとはいえない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "65",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行政権は、内閣に属する。",
+     "text_sha256": "62a20cbe8e1c1faf7639667b363388e89cb9bec67c61300853785a267060ff0d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（控除説の意味・行政委員会の合憲性）。判例は探していない"
+   ],
+   "id": "exp-yobi-2015-kenpo-q09-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-kenpo-q09-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：内閣の連帯責任（66条3項）は国務大臣の個別責任を否定せず、個別の大臣への問責決議もできるが、法的効力はない。",
+   "body": "憲法66条3項は「内閣は、行政権の行使について、国会に対し連帯して責任を負ふ。」と定める。この連帯責任は、個々の国務大臣がその所管事項について単独で責任を負うことまで否定するものではないと解されている。そのため、衆議院・参議院が個別の国務大臣に対して問責決議をすることも認められると解されている。もっとも、憲法が法的効果を結び付けているのは、69条の「衆議院で不信任の決議案を可決し、又は信任の決議案を否決したとき」の内閣の総辞職等であり、個別の大臣に対する問責決議には法的効力はないと解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "66",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "内閣は、行政権の行使について、国会に対し連帯して責任を負ふ。",
+     "text_sha256": "d85cadf632b959526c603fb4d9d162be04533a5126acd874d196f12811c25170",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "69",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "衆議院で不信任の決議案を可決し、又は信任の決議案を否決したとき",
+     "text_sha256": "d92c34a9e480ab6cf17defd14264f712c4beab82873110b542c1aa7613326751",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（個別責任・問責決議の効力）。判例は探していない"
+   ],
+   "id": "exp-yobi-2015-kenpo-q09-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-kenpo-q09-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：憲法66条2項は内閣総理大臣だけでなく「その他の国務大臣」も文民でなければならないと定めている。",
+   "body": "誤りのポイントは、「その他の国務大臣が文民である必要はない」とする部分である。前半について、内閣総理大臣は内閣の「首長」であり（66条1項）、「国務大臣を任命する」（68条1項）とともに「任意に国務大臣を罷免することができる」（68条2項）から、任免権を専権として有するという点は条文に沿う。しかし、66条2項は「内閣総理大臣その他の国務大臣は、文民でなければならない。」と明文で定めており、文民であることは国務大臣全員に求められる。内閣総理大臣の任免権から、他の国務大臣の文民要件が不要になるという推論は成り立たない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "66",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "首長",
+     "text_sha256": "d85cadf632b959526c603fb4d9d162be04533a5126acd874d196f12811c25170",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "66",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "内閣総理大臣その他の国務大臣は、文民でなければならない。",
+     "text_sha256": "d85cadf632b959526c603fb4d9d162be04533a5126acd874d196f12811c25170",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "68",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国務大臣を任命する",
+     "text_sha256": "05f36f177db8243d23e91567dcdf69b92d5edc3abc8b2a85966f5a545c5f39f5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "68",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "任意に国務大臣を罷免することができる",
+     "text_sha256": "05f36f177db8243d23e91567dcdf69b92d5edc3abc8b2a85966f5a545c5f39f5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-kenpo-q09-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
