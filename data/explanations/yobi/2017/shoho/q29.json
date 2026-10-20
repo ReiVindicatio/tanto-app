@@ -1,0 +1,329 @@
+{
+ "question_id": "yobi-2017-shoho-q29",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q29-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。一部の裏書は無効であり（手形法12条2項・77条1項1号）、手形金額の一部のみを裏書で譲渡することはできない。",
+   "body": "誤りは「手形金額の一部のみであっても裏書により譲渡することができる」の部分である。手形法12条2項は「一部ノ裏書ハ之ヲ無効トス」と定め、同法77条1項1号により、この規定は約束手形の裏書にも準用される。手形は1通の証券に権利が結合しているため、金額の一部だけを裏書で移転することは認められない。したがって、Ｂは手形金額の一部のみを裏書により譲渡することはできず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "12",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "一部ノ裏書ハ之ヲ無効トス",
+     "text_sha256": "46ec7fd128278e92c1220a3a94c38f9c22da54af7e756144608c914b33340dd3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裏書（第十一条乃至第二十条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q29-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q29-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。裏書人Ｂは支払を担保するので、支払呈示期間内に呈示して支払を拒まれたＣは、Ｂに遡求できる（拒絶証書の作成は免除されている）。",
+   "body": "手形法15条1項は「裏書人ハ反対ノ文言ナキ限リ引受及支払ヲ担保ス」と定め、同法43条は「満期ニ於テ支払ナキトキハ所持人ハ裏書人、振出人其ノ他ノ債務者ニ対シ其ノ遡求権ヲ行フコトヲ得」と定める（いずれも77条1項により約束手形に準用）。遡求には支払拒絶証書による証明が原則として必要であるが、本問では支払拒絶証書の作成が免除されている（46条1項参照）。ただし、免除があっても法定期間内の呈示の義務は免除されない（46条2項）。本肢のＣは支払呈示期間内に呈示し、支払を受けられなかったのであるから、裏書人Ｂに対して手形金を請求できる。本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "15",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裏書人ハ反対ノ文言ナキ限リ引受及支払ヲ担保ス",
+     "text_sha256": "4eef68bd6502e8d5a2484169d6653c934365f909e9d483401c4e4e6df99d3ff5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "満期ニ於テ支払ナキトキハ所持人ハ裏書人、振出人其ノ他ノ債務者ニ対シ其ノ遡求権ヲ行フコトヲ得",
+     "text_sha256": "d562752b626bd3b1ddaad89e67957a247ecc0c16432ddc9a3461de3e51588532",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "46",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "所持人ニ対シ其ノ遡求権ヲ行フ為ノ引受拒絶証書又ハ支払拒絶証書ノ作成ヲ免除スルコトヲ得",
+     "text_sha256": "d2b3495c05aa6ea1e889463ec913bc2d0e7ebb367e3e2767d667054c9c946bef",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "46",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項ノ文言ハ所持人ニ対シ法定期間内ニ於ケル為替手形ノ呈示及通知ノ義務ヲ免除スルコトナシ",
+     "text_sha256": "d2b3495c05aa6ea1e889463ec913bc2d0e7ebb367e3e2767d667054c9c946bef",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支払拒絶ニ因ル遡求（第四十三条乃至第五十条、第五十二条乃至第五十四条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q29-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q29-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。公然の取立委任裏書は権利を移転せず被裏書人に代理権を与えるだけなので、手形の返還を受けたＣは、取立委任裏書を抹消しなくても裏書の連続を欠かないと解されている。",
+   "body": "本肢のポイントは、「取立てのため」との文言を付した裏書（公然の取立委任裏書）が、裏書の連続の判断にどう影響するかである。手形法18条1項は、裏書に「取立ノ為」などの「単ナル委任ヲ示ス文言アルトキハ所持人ハ為替手形ヨリ生ズル一切ノ権利ヲ行使スルコトヲ得」と定めるが、この裏書は手形上の権利を移転するものではなく、被裏書人に取立ての代理権を与えるにとどまると解されている。そのため、ＡからＢ、ＢからＣへの譲渡裏書は連続しており、Ｃが手形の返還を受ければ、Ｄへの取立委任裏書を抹消しなくても、Ｃは裏書の連続によって権利を証明できる（16条1項）と解されている。抹消をしなければ連続を欠くとされる隠れた取立委任裏書とは区別される。判例あり（要確認）。本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "18",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "単ナル委任ヲ示ス文言アルトキハ所持人ハ為替手形ヨリ生ズル一切ノ権利ヲ行使スルコトヲ得",
+     "text_sha256": "e90b3c2167fbef4535d13216167b6b5d0cdfdc374326468b51ad91ab47e52118",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "16",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "為替手形ノ占有者ガ裏書ノ連続ニ依リ其ノ権利ヲ証明スルトキハ之ヲ適法ノ所持人ト看做ス",
+     "text_sha256": "59a3210e92d16480e70161c0e6931c254b54c90d274659c590b01308760831a7",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公然の取立委任裏書が権利を移転しないこと、抹消なしでも連続を欠かないことは、解釈による。関連する最高裁判決を courts.go.jp で探したが、判示を確認できなかった（要確認）。"
+   ],
+   "id": "exp-yobi-2017-shoho-q29-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q29-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。支払呈示期間経過後の呈示では裏書人への遡求権を失い、振出人に対しても満期日からではなく呈示（請求）の時から遅滞となると解されているので、「満期日からの遅延損害金」が誤り。",
+   "body": "誤りは「満期日からの遅延損害金を請求することができる」の部分である。支払呈示期間は、支払をなすべき日又はこれに次ぐ2取引日内である（手形法38条1項。約束手形に準用）。拒絶証書の作成が免除されていても、法定期間内の呈示の義務は免除されないから（46条2項）、期間経過後の呈示では、所持人は裏書人Ｂに対する遡求権を失う（53条1項）。他方、振出人Ａは為替手形の引受人と同一の義務を負い（78条1項）、期間内に呈示しなくても振出人に対する手形金請求権は失われない（下記の判例）。もっとも、満期以後の利息（48条1項2号）を請求できるのは期間内に呈示して支払を拒まれた場合であり、期間経過後に呈示したときは、振出人は満期日からではなく呈示を受けた時から遅滞の責任を負うと解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "38",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支払ヲ為スベキ日又ハ之ニ次グ二取引日内ニ支払ノ為手形ヲ呈示スルコトヲ要ス",
+     "text_sha256": "757590c0a8fd359b90db81e0e97bff0a593cb10ee71cd1da8ba83154ebd860b7",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "46",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項ノ文言ハ所持人ニ対シ法定期間内ニ於ケル為替手形ノ呈示及通知ノ義務ヲ免除スルコトナシ",
+     "text_sha256": "d2b3495c05aa6ea1e889463ec913bc2d0e7ebb367e3e2767d667054c9c946bef",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "53",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "左ノ期間ガ経過シタルトキハ所持人ハ裏書人、振出人其ノ他ノ債務者ニ対シ其ノ権利ヲ失フ但シ引受人ニ対シテハ此ノ限ニ在ラズ",
+     "text_sha256": "a58f67bbe8e59ed14a5ac084b88875849b3adafd4542567548173d6810f24077",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "78",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "約束手形ノ振出人ハ為替手形ノ引受人ト同一ノ義務ヲ負フ",
+     "text_sha256": "2823ef6188b39d7588a7715dbefb70e65caf6adac7e230b63825ba41a966ccba",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "48",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "満期以後ノ利息",
+     "text_sha256": "3ba75dc3aacc3d0d0a8f930d41589f8129da6d3204e32473d3748546269561bb",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "約束手形金請求事件（支払呈示期間内の呈示と振出人に対する請求権）",
+     "court": "最高裁判所第三小法廷",
+     "date": "1965-01-19",
+     "holding": "約束手形の善意取得者は、支払呈示期間内に呈示しなかったからといって、振出人に対する手形金請求権を失うものではない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/77701/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "期間経過後の呈示の場合に振出人が満期日からではなく呈示の時から遅滞となる点は、解釈による。この点を直接判示した判例は確認できなかった（要確認）。事件の呼び名は確認したページに記載がなく、内容から付けた。"
+   ],
+   "id": "exp-yobi-2017-shoho-q29-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q29-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。白地式裏書を受けたＣが裏書をせずに単なる交付で譲渡した場合、Ｃは手形に署名していないので担保責任を負わない。",
+   "body": "手形法14条2項は、裏書が白地式であるとき、所持人は「白地ヲ補充セズ且裏書ヲ為サズシテ手形ヲ第三者ニ譲渡スコトヲ得」と定める（77条1項1号により約束手形に準用）。担保責任は「裏書人ハ反対ノ文言ナキ限リ引受及支払ヲ担保ス」（15条1項）とあるように、裏書をした者が負う責任である。Ｃは白地を補充せず、裏書もしないで単なる交付によりＤに譲渡したのであるから、手形に署名しておらず裏書人とはならない。したがって、Ｃは手形所持人に対して担保責任を負わず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "14",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "白地ヲ補充セズ且裏書ヲ為サズシテ手形ヲ第三者ニ譲渡スコトヲ得",
+     "text_sha256": "f744035b13ed91ccd7ff43e9bf795b2c12e58c096fccd2f3c26fb4357c4a2060",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "15",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裏書人ハ反対ノ文言ナキ限リ引受及支払ヲ担保ス",
+     "text_sha256": "4eef68bd6502e8d5a2484169d6653c934365f909e9d483401c4e4e6df99d3ff5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裏書（第十一条乃至第二十条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q29-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,283 @@
+{
+ "question_id": "yobi-2017-shoho-q18",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q18-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。株式の併合には株主の差止請求権の規定（会社法182条の3）があるが、株式の分割にはこれに当たる規定がない。",
+   "body": "会社法182条の3は、「株式の併合が法令又は定款に違反する場合において、株主が不利益を受けるおそれがあるときは、株主は、株式会社に対し、当該株式の併合をやめることを請求することができる。」と定める。これに対し、株式の分割について定める同法183条・184条には、株主が分割をやめることを請求できる旨の規定はない。株式の分割は株主の持株数が比例的に増えるだけで、株主の権利の割合に変化を生じないため、併合のような差止めの手当てが置かれていないと解されている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "182_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式の併合が法令又は定款に違反する場合において、株主が不利益を受けるおそれがあるときは、株主は、株式会社に対し、当該株式の併合をやめることを請求することができる。",
+     "text_sha256": "29b6d9935fcd7982bd05d953cd41cb33f77502bf5c4b72866ee4831298d3e6ff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "183",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、株式の分割をすることができる。",
+     "text_sha256": "1e1061bc236fab0431f785666eb7b51bab83620349caea6dc9a1c5e3db4ef136",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "184",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株主総会の決議によらないで",
+     "text_sha256": "37fd3abd18281b592cc8f23a7d0ea28109865ee28cd3e93d3a4740cc6ba8d717",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "株式の分割に差止めの規定がない理由の説明は解釈による"
+   ],
+   "id": "exp-yobi-2017-shoho-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q18-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。反対株主の株式買取請求権は株式の併合について規定されている（会社法182条の4）が、株式の分割については規定されていない。",
+   "body": "本肢の誤りは、株式の分割についても反対株主の株式買取請求権が規定されているとする点にある。会社法182条の4第1項は、「株式会社が株式の併合をすることにより株式の数に一株に満たない端数が生ずる場合には、反対株主は、当該株式会社に対し、自己の有する株式のうち一株に満たない端数となるものの全部を公正な価格で買い取ることを請求することができる。」と定める。これに対し、株式の分割について定める同法183条・184条には、反対株主の株式買取請求権の規定はない。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "182_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社が株式の併合をすることにより株式の数に一株に満たない端数が生ずる場合には、反対株主は、当該株式会社に対し、自己の有する株式のうち一株に満たない端数となるものの全部を公正な価格で買い取ることを請求することができる。",
+     "text_sha256": "176bc121dbbc697ccf987d5307a066f95d7dd0d9ff9bf3ed34665288a118800b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "183",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、株式の分割をすることができる。",
+     "text_sha256": "1e1061bc236fab0431f785666eb7b51bab83620349caea6dc9a1c5e3db4ef136",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "184",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株主総会の決議によらないで",
+     "text_sha256": "37fd3abd18281b592cc8f23a7d0ea28109865ee28cd3e93d3a4740cc6ba8d717",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q18-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株式の併合は株主総会の特別決議で定めなければならず、取締役会の決議で併合できる旨の定款の定めは効力を有しない。",
+   "body": "本肢の誤りは、取締役会の決議で株式の併合ができる旨を定款で定めることができるとする点にある。会社法180条2項は、株式の併合をしようとするときは「その都度、株主総会の決議によって、次に掲げる事項を定めなければならない。」と定め、この株主総会の決議は特別決議とされている（同法309条2項4号「第百八十条第二項の株主総会」）。そして同法295条3項は、「この法律の規定により株主総会の決議を必要とする事項について、取締役、執行役、取締役会その他の株主総会以外の機関が決定することができることを内容とする定款の定めは、その効力を有しない。」と定める。株式の分割が取締役会設置会社では取締役会の決議で定められる（同法183条2項）のと異なる。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "180",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その都度、株主総会の決議によって、次に掲げる事項を定めなければならない。",
+     "text_sha256": "c746a1a010e653ebcf92eef7a45833b2cad066b3e8f3426a4c2c08b17efe8aac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "309",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第百八十条第二項の株主総会",
+     "text_sha256": "56ffbd6451793882d47ba533193af3dd09d3d0c791034f12f0f7f32cf6456aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "295",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "この法律の規定により株主総会の決議を必要とする事項について、取締役、執行役、取締役会その他の株主総会以外の機関が決定することができることを内容とする定款の定めは、その効力を有しない。",
+     "text_sha256": "3ea5faf49a0539f3ecc4ddcfb6a6d91e85739f52d2ded2b961895cb9a6758ece",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "183",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株主総会（取締役会設置会社にあっては、取締役会）の決議によって",
+     "text_sha256": "1e1061bc236fab0431f785666eb7b51bab83620349caea6dc9a1c5e3db4ef136",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q18-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。株式の分割をする会社は、分割の割合に応じた範囲内で、株主総会の決議によらずに発行可能株式総数を増加する定款変更ができ（会社法184条2項）、1000株から4000株への増加はその範囲内である。",
+   "body": "会社法184条2項は、現に二以上の種類の株式を発行している会社を除き、会社は「第四百六十六条の規定にかかわらず、株主総会の決議によらないで、前条第二項第二号の日における発行可能株式総数をその日の前日の発行可能株式総数に同項第一号の割合を乗じて得た数の範囲内で増加する定款の変更をすることができる。」と定める。同法183条2項1号の割合は「株式の分割により増加する株式の総数の株式の分割前の発行済株式」の総数に対する割合であり、1株を5株とする分割では4となるから、発行可能株式総数1000株に4を乗じた4000株の範囲内で増加させることができると解される。本肢は1000株を4000株に増加する（3000株の増加）もので、この範囲内にある。本問の会社は種類株式発行会社でないから、同項の除外にも当たらない。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "184",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第四百六十六条の規定にかかわらず、株主総会の決議によらないで、前条第二項第二号の日における発行可能株式総数をその日の前日の発行可能株式総数に同項第一号の割合を乗じて得た数の範囲内で増加する定款の変更をすることができる。",
+     "text_sha256": "37fd3abd18281b592cc8f23a7d0ea28109865ee28cd3e93d3a4740cc6ba8d717",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "183",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株式の分割により増加する株式の総数の株式の分割前の発行済株式",
+     "text_sha256": "1e1061bc236fab0431f785666eb7b51bab83620349caea6dc9a1c5e3db4ef136",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "増加できる上限の計算（増加の幅か増加後の数か）は解釈による。いずれの読み方でも4000株は範囲内"
+   ],
+   "id": "exp-yobi-2017-shoho-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q18-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。公開会社では、株式の併合の効力発生日における発行可能株式総数は発行済株式の総数の4倍を超えることができない（会社法180条3項）。",
+   "body": "本肢の誤りは、公開会社でも4倍を超えることが認められるとする点にある。会社法180条2項4号は、株式の併合の際に株主総会で「効力発生日における発行可能株式総数」を定めるものとし、同条3項は「前項第四号の発行可能株式総数は、効力発生日における発行済株式の総数の四倍を超えることができない。ただし、株式会社が公開会社でない場合は、この限りでない。」と定める。4倍を超えることが許されるのは公開会社でない場合に限られる。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "180",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "効力発生日における発行可能株式総数",
+     "text_sha256": "c746a1a010e653ebcf92eef7a45833b2cad066b3e8f3426a4c2c08b17efe8aac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "180",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前項第四号の発行可能株式総数は、効力発生日における発行済株式の総数の四倍を超えることができない。ただし、株式会社が公開会社でない場合は、この限りでない。",
+     "text_sha256": "c746a1a010e653ebcf92eef7a45833b2cad066b3e8f3426a4c2c08b17efe8aac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

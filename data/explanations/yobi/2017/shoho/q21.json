@@ -1,0 +1,247 @@
+{
+ "question_id": "yobi-2017-shoho-q21",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q21-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：会社と役員の関係は委任に関する規定に従うから（330条）、選任の効力は株主総会の選任決議に加えて被選任者の就任承諾があって生ずると解されている。",
+   "body": "ポイントは、選任決議だけで役員の地位が生ずるかである。329条1項は役員は「株主総会の決議によって選任する」と定め、330条は「株式会社と役員及び会計監査人との関係は、委任に関する規定に従う。」と定める。会社と役員の関係は委任であるから、選任決議は会社側の意思決定にとどまり、被選任者が就任を承諾して任用契約が成立することで選任の効力が生ずると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "329",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の決議によって選任する",
+     "text_sha256": "a0d883fcf1ad34a22099bde03794b3adca09ffcd2205fd111dcc1599f5351230",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "330",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社と役員及び会計監査人との関係は、委任に関する規定に従う。",
+     "text_sha256": "52683ffccfac2e33071d5075b3d5266f5888fd1582d21800280073639b5e95a3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "就任承諾を要する点は条文に明記がなく、解釈による"
+   ],
+   "id": "exp-yobi-2017-shoho-q21-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q21-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：定款で定めた員数の上限を超える選任は、決議の内容が定款に違反する場合にあたり、決議取消事由（831条1項2号）であって無効事由ではない。",
+   "body": "誤りは「当該決議の無効事由となる」という部分である。会社法は、決議の内容が法令に違反する場合を無効確認の訴えの対象とし（830条2項は「決議の内容が法令に違反することを理由として」と定める）、決議の内容が定款に違反する場合を取消しの訴えの対象としている（831条1項2号は「株主総会等の決議の内容が定款に違反するとき。」と定める）。定款所定の員数の上限を超えて役員を選任する決議は、決議の内容が定款に違反するものであるから、取消事由にとどまる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "830",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "決議の内容が法令に違反することを理由として",
+     "text_sha256": "4ee5ae6a703b6ae0017b5442b89d4130e14427a116551c1153b682c8a8035019",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "831",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会等の決議の内容が定款に違反するとき。",
+     "text_sha256": "1815496dd41025d1456cafbdd01882a64334f77e056c1a04b566f23536942c16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q21-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q21-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：補欠の役員は、定款の定めがなくても、法務省令で定めるところにより選任することができる（329条3項）。",
+   "body": "誤りは、定款の定めがなければ補欠の役員を選任できないとする点である。329条3項は、役員の選任決議をする場合には、「法務省令で定めるところにより」、役員が欠けた場合又は「この法律若しくは定款で定めた役員の員数を欠くこととなるときに備えて補欠の役員を選任することができる」と定めている。この規定は定款の定めを要件としていない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "329",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "法務省令で定めるところにより",
+     "text_sha256": "a0d883fcf1ad34a22099bde03794b3adca09ffcd2205fd111dcc1599f5351230",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "329",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "この法律若しくは定款で定めた役員の員数を欠くこととなるときに備えて補欠の役員を選任することができる",
+     "text_sha256": "a0d883fcf1ad34a22099bde03794b3adca09ffcd2205fd111dcc1599f5351230",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q21-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q21-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：341条は監査役を含む役員の選任決議について、決議要件を定款で加重できるとしており、監査役の選任決議の要件も加重できる。",
+   "body": "誤りは「監査役を選任する株主総会の決議要件は定款の定めによっても加重することができない」という部分である。329条1項は「役員（取締役、会計参与及び監査役をいう。」と定義している。341条は「役員を選任し、又は解任する株主総会の決議は」、出席した株主の議決権の過半数「（これを上回る割合を定款で定めた場合にあっては、その割合以上）」をもって行うと定めている。監査役も役員に含まれるから、監査役の選任決議の要件も、取締役の場合と同様に定款で加重することができる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "329",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "役員（取締役、会計参与及び監査役をいう。",
+     "text_sha256": "a0d883fcf1ad34a22099bde03794b3adca09ffcd2205fd111dcc1599f5351230",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "341",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "役員を選任し、又は解任する株主総会の決議は",
+     "text_sha256": "a12de2b6c313547a02234a7521c55e568bced7ddf376475ffcae99069fda193f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "341",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "（これを上回る割合を定款で定めた場合にあっては、その割合以上）",
+     "text_sha256": "a12de2b6c313547a02234a7521c55e568bced7ddf376475ffcae99069fda193f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q21-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q21-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：監査役は、株主総会において監査役の選任について意見を述べることができ（345条4項・1項）、自己が再任されないことについての意見もこれに含まれると解されている。",
+   "body": "ポイントは、監査役の意見陳述権の範囲である。345条1項は、会計参与は「株主総会において、会計参与の選任若しくは解任又は辞任について意見を述べることができる」と定め、同条4項は「第一項の規定は監査役について」準用し、会計参与の部分を監査役と読み替えている。監査役の独立性を確保するための規定であり、自己が再任されないことについての意見も、監査役の選任についての意見として述べることができると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "345",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会において、会計参与の選任若しくは解任又は辞任について意見を述べることができる",
+     "text_sha256": "79ee17b57f95712b3589add1ea259f0e03336f7380f556293c96557de6c8a7ec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "345",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "第一項の規定は監査役について",
+     "text_sha256": "79ee17b57f95712b3589add1ea259f0e03336f7380f556293c96557de6c8a7ec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "不再任が「選任」についての意見に含まれる点は解釈による（会計監査人については345条5項の読替えで不再任が明記されている）"
+   ],
+   "id": "exp-yobi-2017-shoho-q21-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

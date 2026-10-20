@@ -1,0 +1,257 @@
+{
+ "question_id": "yobi-2017-shoho-q23",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q23-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：剰余金の配当に伴う準備金の計上は「資本準備金又は利益準備金」として行い（445条4項）、配当の原資に応じて資本準備金に計上される部分もある（会社計算規則22条）。",
+   "body": "誤りは、利益準備金として計上しなければならず資本準備金として計上できないとする点である。445条4項は、剰余金の配当をする場合には、法務省令で定めるところにより、減少する剰余金の額に十分の一を乗じて得た額を「資本準備金又は利益準備金（以下「準備金」と総称する。）として計上しなければならない」と定める。これを受けた会社計算規則22条は、配当後の資本準備金の額を、配当直前の資本準備金の額に「資本剰余金配当割合」を乗じて得た額などを加えた額とし（同条1項）、利益準備金については「利益剰余金配当割合」を用いる（同条2項）。つまり、その他資本剰余金を原資とする部分は資本準備金に、その他利益剰余金を原資とする部分は利益準備金に計上される。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "445",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "資本準備金又は利益準備金（以下「準備金」と総称する。）として計上しなければならない",
+     "text_sha256": "96e4c4e13ca75e4f06a3e6da8166bbace9af8037f7f88af2534e23b63a7268c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "22",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "資本剰余金配当割合",
+     "text_sha256": "133bd7896495218054cb5484aedd268b7bbf2fcc8c457715895c1605b08c6de6",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "22",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "利益剰余金配当割合",
+     "text_sha256": "133bd7896495218054cb5484aedd268b7bbf2fcc8c457715895c1605b08c6de6",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q23-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q23-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：株式の発行と同時に資本金の額を減少し、効力発生日後の資本金の額が効力発生日前の額を下回らないときは、取締役会設置会社では取締役会の決議で足りる（447条3項）。",
+   "body": "ポイントは、資本金の額の減少の決定機関の例外である。資本金の額の減少は、原則として株主総会の決議によって所定の事項を定めなければならない（447条1項）。もっとも、同条3項は、株式会社が「株式の発行と同時に資本金の額を減少する場合において、当該資本金の額の減少の効力が生ずる日後の資本金の額が当該日前の資本金の額を下回らないとき」は、株主総会の決議を「取締役の決定（取締役会設置会社にあっては、取締役会の決議）」と読み替えている。したがって、取締役会設置会社では取締役会の決議により資本金の額を減少することができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "447",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の決議によって、次に掲げる事項を定めなければならない",
+     "text_sha256": "1f9119bc0b062175b70a3c1d195b7427c21a0a2479816ec33ef4aa46c3ab3ed5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "447",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "株式の発行と同時に資本金の額を減少する場合において、当該資本金の額の減少の効力が生ずる日後の資本金の額が当該日前の資本金の額を下回らないとき",
+     "text_sha256": "1f9119bc0b062175b70a3c1d195b7427c21a0a2479816ec33ef4aa46c3ab3ed5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "447",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "取締役の決定（取締役会設置会社にあっては、取締役会の決議）",
+     "text_sha256": "1f9119bc0b062175b70a3c1d195b7427c21a0a2479816ec33ef4aa46c3ab3ed5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q23-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q23-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：訴えをもってのみ無効を主張できるのは資本金の額の減少だけであり（828条1項5号）、準備金の額の減少は無効の訴えの対象とされていない。",
+   "body": "誤りは、資本金と並べて「準備金の額の減少」も訴えをもってのみ無効を主張できるとする点である。828条1項は、各号に掲げる行為の無効は「訴えをもってのみ主張することができる」と定め、その対象として5号に「株式会社における資本金の額の減少」を掲げているが、準備金の額の減少は掲げていない。したがって、準備金の額の減少の手続に違法がある場合には、会社の組織に関する行為の無効の訴えによる制約は及ばず、一般原則に従って無効を主張することになると解されている。本肢は、資本金について述べる部分は正しいが、準備金を含める点で誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "828",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴えをもってのみ主張することができる",
+     "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "828",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社における資本金の額の減少",
+     "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "準備金の額の減少の無効を一般原則により主張できる点は解釈による"
+   ],
+   "id": "exp-yobi-2017-shoho-q23-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q23-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：剰余金の額を減少して準備金の額を増加する場合も、株主総会の決議によらなければならない（451条2項）。",
+   "body": "誤りは、剰余金の額を減少して準備金の額を増加することは「取締役会の決議によりすることができる」とする点である。剰余金の額を減少して資本金の額を増加する場合について、450条2項は所定の事項の決定は「株主総会の決議によらなければならない。」と定める。剰余金の額を減少して準備金の額を増加する場合についても、451条2項が同じく「株主総会の決議によらなければならない。」と定めており、取締役会設置会社であっても取締役会の決議ですることはできない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "450",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株主総会の決議によらなければならない。",
+     "text_sha256": "99c667fc7fffe9a3f160d44c6acc4390714d4de49a322fa43827325b0b6b7e47",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "451",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株主総会の決議によらなければならない。",
+     "text_sha256": "86771377ad78c3e24b9acba5c467cbfe54bd8eace9b2df8d018140225c7fbdda",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q23-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q23-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：定時株主総会で欠損の額の範囲内で減少する場合に債権者異議手続が不要となるのは「準備金の額のみを減少する場合」に限られ（449条1項ただし書）、資本金の額の減少には及ばない。",
+   "body": "誤りは、資本金の額の減少について債権者が「異議を述べることができない」とする点である。449条1項本文は、株式会社が資本金又は準備金の額を減少する場合には、債権者は「資本金等の額の減少について異議を述べることができる」と定める。同項ただし書は、「準備金の額のみを減少する場合であって、次のいずれにも該当するときは、この限りでない。」として、定時株主総会で定め、かつ減少額が欠損の額を超えない場合を例外としているが、これは準備金の額のみを減少する場合に限られる。資本金の額を減少する本肢の場合には、減少額が欠損の額を超えないときでも債権者は異議を述べることができる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "449",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "資本金等の額の減少について異議を述べることができる",
+     "text_sha256": "39d0705e0a858e8d4b9767115e67b26e2a13a2ee82c6c94d630a64e3251d0d91",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "449",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "準備金の額のみを減少する場合であって、次のいずれにも該当するときは、この限りでない。",
+     "text_sha256": "39d0705e0a858e8d4b9767115e67b26e2a13a2ee82c6c94d630a64e3251d0d91",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q23-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

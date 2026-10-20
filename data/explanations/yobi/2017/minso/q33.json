@@ -1,0 +1,227 @@
+{
+ "question_id": "yobi-2017-minso-q33",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q33-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。訴訟告知書に記載が求められるのは「理由及び訴訟の程度」であり、攻撃防御方法の要旨の記載は求められていない。",
+   "body": "誤りは、訴訟告知書に「攻撃防御方法の要旨」を記載しなければならないとする点である。民事訴訟法53条3項は「訴訟告知は、その理由及び訴訟の程度を記載した書面を裁判所に提出してしなければならない。」と定めており、記載事項は告知の理由と訴訟の程度（訴訟がどの段階まで進んでいるか）である。それまでに提出された攻撃防御方法の要旨の記載は要求されていない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "53",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "訴訟告知は、その理由及び訴訟の程度を記載した書面を裁判所に提出してしなければならない。",
+     "text_sha256": "c36da1a36e676c9c84d97037396d61f56087a56764be903c6905d30ffdb13a3a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "民事訴訟規則は e-Gov 法令 API で取得できないため、規則の定めは照合していない。"
+   ],
+   "id": "exp-yobi-2017-minso-q33-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q33-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。自ら訴訟告知をして参加を促した告知者は、被告知者の補助参加に異議を述べることはできないと解されている。",
+   "body": "民事訴訟法44条1項は「当事者が補助参加について異議を述べたときは、裁判所は、補助参加の許否について、決定で、裁判をする。」と定め、当事者に補助参加についての異議権を認めている。もっとも、告知者は、同法53条1項により「参加することができる第三者」に訴訟告知をして、自ら参加を促した者である。そのため、被告知者が告知者を補助するために参加したときは、告知者はその参加について異議を述べることはできないと解されている（相手方が異議を述べることは妨げられない）。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "44",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が補助参加について異議を述べたときは、裁判所は、補助参加の許否について、決定で、裁判をする。",
+     "text_sha256": "e7f80622d0ea628b00229af0c614e72e865f2f7b175eeb3927309af4fe6c4c65",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "53",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "参加することができる第三者",
+     "text_sha256": "c36da1a36e676c9c84d97037396d61f56087a56764be903c6905d30ffdb13a3a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "告知者が異議を述べられないとする点は、条文に明記がなく解釈による。"
+   ],
+   "id": "exp-yobi-2017-minso-q33-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q33-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。訴訟告知を受けた者は、補助参加をしなくても、更に訴訟告知をすることができる。",
+   "body": "誤りは、補助参加の申出をしなければ更に訴訟告知をすることが「できない」とする点である。民事訴訟法53条2項は「訴訟告知を受けた者は、更に訴訟告知をすることができる。」と定め、被告知者が参加していることを要件としていない。したがって、被告知者は、補助参加の申出をしていなくても、参加することができる第三者に更に訴訟告知をすることができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "53",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "訴訟告知を受けた者は、更に訴訟告知をすることができる。",
+     "text_sha256": "c36da1a36e676c9c84d97037396d61f56087a56764be903c6905d30ffdb13a3a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-minso-q33-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q33-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。参加しなかった被告知者に裁判の効力が及ぶのは、被告知者が補助参加の利益（法律上の利害関係）を有する場合に限られると解されている。",
+   "body": "民事訴訟法53条4項は「訴訟告知を受けた者が参加しなかった場合においても、第四十六条の規定の適用については、参加することができた時に参加したものとみなす。」と定め、同法46条は補助参加に係る訴訟の裁判が「補助参加人に対してもその効力を有する」とする。補助参加ができるのは同法42条の「訴訟の結果について利害関係を有する第三者」であるから、参加しなかった被告知者に裁判の効力が及ぶのは、被告知者がこの利害関係を有する場合、すなわちその訴訟の判決が被告知者の私法上又は公法上の法的地位又は法的利益に影響を及ぼすおそれがある場合に限られると解されている（判例あり（要確認））。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "53",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "訴訟告知を受けた者が参加しなかった場合においても、第四十六条の規定の適用については、参加することができた時に参加したものとみなす。",
+     "text_sha256": "c36da1a36e676c9c84d97037396d61f56087a56764be903c6905d30ffdb13a3a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "46",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "補助参加人に対してもその効力を有する",
+     "text_sha256": "53a9d3ca24071b3c8f4512f0cd7c3ef6b5594387f7fb0f810f29a8d1f95546ff",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "42",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の結果について利害関係を有する第三者",
+     "text_sha256": "15e0c523f4343afc9df6004cd6ec4fb70ea67c03e59792fe923231dc3bba4945",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "本肢の判示に対応する最高裁判決があるとされるが、courts.go.jp で判決を確認できなかったため要確認とした。"
+   ],
+   "id": "exp-yobi-2017-minso-q33-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q33-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。訴訟告知の相手方である「参加することができる第三者」には、独立当事者参加をすることができる第三者も含まれると解されている。",
+   "body": "民事訴訟法53条1項は「当事者は、訴訟の係属中、参加することができる第三者にその訴訟の告知をすることができる。」と定め、参加の種類を補助参加に限っていない。そのため、ここにいう「参加」には、補助参加のほか、同法47条1項の独立当事者参加（「当事者としてその訴訟に参加することができる」）なども含まれると解されている。したがって、独立当事者参加をすることができる第三者に対しても訴訟告知をすることができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "53",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者は、訴訟の係属中、参加することができる第三者にその訴訟の告知をすることができる。",
+     "text_sha256": "c36da1a36e676c9c84d97037396d61f56087a56764be903c6905d30ffdb13a3a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "47",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者としてその訴訟に参加することができる",
+     "text_sha256": "eabfcfd2afc146ac9b32a0de3c3390a3c5eb44d5e313f0c34165494a7daadc48",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「参加」に独立当事者参加が含まれるとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2017-minso-q33-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

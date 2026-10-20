@@ -1,0 +1,285 @@
+{
+ "question_id": "yobi-2017-minso-q31",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q31-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。再移送を禁じる規定はあるが、先の移送の理由と別個の事由に基づいて更に移送することは妨げられないと解されている。",
+   "body": "ポイントは、移送を受けた裁判所が「更に」移送できるかである。民事訴訟法22条2項は「移送を受けた裁判所は、更に事件を他の裁判所に移送することができない。」と定めるが、この拘束力は、先の移送の裁判で判断された移送の理由についてのものであり、それと別個の事由に基づく再移送までは禁じていないと解されている。本肢では、大阪簡易裁判所は同法18条により「相当と認めるとき」に地方裁判所へ移送しており、大阪地方裁判所は、これとは別の事由である同法17条の「当事者間の衡平を図るため必要があると認めるとき」にあたるとして他の管轄裁判所へ移送するものである。したがって、更に移送することができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "22",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "移送を受けた裁判所は、更に事件を他の裁判所に移送することができない。",
+     "text_sha256": "c99d4635d28bc930d610431ca3bc07d5532621e03537b0b59ba14176377c4449",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "18",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相当と認めるとき",
+     "text_sha256": "ba475f29d9faac8990db2290eb4999ae98814000424634f4ee67a90f7b423d4c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "17",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者間の衡平を図るため必要があると認めるとき",
+     "text_sha256": "0b2ccc0c4e558217f4b9052221a14aeb1238e99fce9bb06c999f86d96e3708d2",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "移送の裁判の拘束力が別個の事由による再移送に及ばないとする点は、条文に明記がなく解釈による。"
+   ],
+   "id": "exp-yobi-2017-minso-q31-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q31-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。訴額を合算すると140万円を超え、訴え提起の時に地方裁判所の事物管轄に属するから、管轄違いを理由に簡易裁判所へ移送することはできない。",
+   "body": "本肢の共同訴訟は、各被告との同種の取引に基づく請求であり、民事訴訟法38条後段の共同訴訟にあたる。同法7条ただし書は、数人に対する訴えでは併合請求の裁判籍を「第三十八条前段に定める場合に限る」としているが、本肢では各被告の住所がいずれも東京地方裁判所の管轄区域内にあるから、土地管轄は各被告について認められる。事物管轄については、同法9条1項本文が「その価額を合算したものを訴訟の目的の価額とする」と定め、7条ただし書はこの合算を排除しないと解されているから、訴額は140万円を超え、裁判所法33条1項1号の「訴訟の目的の価額が百四十万円を超えない請求」にあたらず、地方裁判所の事物管轄に属する。そして管轄は民事訴訟法15条により「訴えの提起の時を標準として定める」から、後に弁論を分離しても管轄違い（同法16条1項）にはならず、簡易裁判所に移送することはできないと解されている（判例あり（要確認））。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "38",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の目的である権利又は義務が同種であって事実上及び法律上同種の原因に基づくときも、同様とする。",
+     "text_sha256": "449a4259eeb0c10d37273603ae340e07c14600e7b01b07db3f0ad401200ec08a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三十八条前段に定める場合に限る",
+     "text_sha256": "305e4ed993d5b79a54194f60d199d85ae518af58fd7810c9de148554ef82933e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その価額を合算したものを訴訟の目的の価額とする",
+     "text_sha256": "0510ebae665e0f9c9a51294e23e23a5dbd62aa8545811a7e2c244b0f6c462b46",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "裁判所法",
+     "article": "33",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の目的の価額が百四十万円を超えない請求",
+     "text_sha256": "59b209226c1ec4be24efdc8806eba95615b2b7cd2fd9acc69c4f03ab612e50ef",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "15",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴えの提起の時を標準として定める",
+     "text_sha256": "fd84bf3091d7baaae09de3ad5bf6a798346311597544236ba0a62f0d67062192",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "16",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、訴訟の全部又は一部がその管轄に属しないと認めるときは、申立てにより又は職権で、これを管轄裁判所に移送する。",
+     "text_sha256": "677f8d00ee757427df499604947d2433f64a63799f1a44473f3431b5fce746e2",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "民事訴訟法7条ただし書が9条の訴額合算を排除しないとする最高裁の判例があると思われるが、courts.go.jp で判決を確認できなかったため要確認とした。"
+   ],
+   "id": "exp-yobi-2017-minso-q31-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q31-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。移送の裁判が確定すると、訴訟は初めから移送を受けた裁判所に係属していたものとみなされるから、訴え提起時に生じた時効の効力は影響を受けない。",
+   "body": "ポイントは、移送によって訴え提起の効果が失われるかである。民事訴訟法22条3項は「移送の裁判が確定したときは、訴訟は、初めから移送を受けた裁判所に係属していたものとみなす。」と定める。そして同法147条は、訴えが提起されたときは「その時に時効の完成猶予又は法律上の期間の遵守のために必要な裁判上の請求があったものとする」と定める。したがって、消滅時効の期間満了前に訴えを提起していれば、その後に期間が経過してから移送の裁判が確定しても、訴え提起時に生じた時効の効力は維持され、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "22",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "移送の裁判が確定したときは、訴訟は、初めから移送を受けた裁判所に係属していたものとみなす。",
+     "text_sha256": "c99d4635d28bc930d610431ca3bc07d5532621e03537b0b59ba14176377c4449",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "147",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その時に時効の完成猶予又は法律上の期間の遵守のために必要な裁判上の請求があったものとする",
+     "text_sha256": "7607e36505c991aa31f802bface0de15c9878f51f408ae9e1739fcce70e87613",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題時（2017年）の民法は裁判上の請求を「時効の中断」事由としていたが、その後の民法改正で「時効の完成猶予」及び「更新」に改められた（現行民法147条）。移送によって訴え提起時の効力が失われないという結論は変わらない。"
+   ],
+   "id": "exp-yobi-2017-minso-q31-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q31-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。簡易裁判所の管轄に属する不動産に関する訴訟は、被告の申立てがあれば、本案の弁論前である限り地方裁判所へ移送しなければならない。",
+   "body": "本肢は民事訴訟法19条2項のとおりである。同項は「簡易裁判所は、その管轄に属する不動産に関する訴訟につき被告の申立てがあるときは、訴訟の全部又は一部をその所在地を管轄する地方裁判所に移送しなければならない。」と定め、ただし書で「その申立ての前に被告が本案について弁論をした場合は、この限りでない」とする。同条1項と異なり相手方（原告）の同意は要件とされていない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "19",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "簡易裁判所は、その管轄に属する不動産に関する訴訟につき被告の申立てがあるときは、訴訟の全部又は一部をその所在地を管轄する地方裁判所に移送しなければならない。",
+     "text_sha256": "90b71f9564db3de15413dc11a7dfee1979f8b4fd8820466505f42cfdea6382c1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "19",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その申立ての前に被告が本案について弁論をした場合は、この限りでない",
+     "text_sha256": "90b71f9564db3de15413dc11a7dfee1979f8b4fd8820466505f42cfdea6382c1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-minso-q31-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minso-q31-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。移送の申立てを却下した決定に対しても即時抗告をすることができる。",
+   "body": "誤りは、移送の申立てを却下した決定に対して「即時抗告をすることができない」とする点である。民事訴訟法21条は「移送の決定及び移送の申立てを却下した決定に対しては、即時抗告をすることができる。」と定め、移送の決定だけでなく、移送の申立てを却下した決定も即時抗告の対象としている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "21",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "移送の決定及び移送の申立てを却下した決定に対しては、即時抗告をすることができる。",
+     "text_sha256": "58a7a3b1f629a5f92b02d14969589f6520ae92f7110ca9c4bff593d9551cfe0f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-minso-q31-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

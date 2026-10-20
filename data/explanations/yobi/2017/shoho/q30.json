@@ -1,0 +1,271 @@
+{
+ "question_id": "yobi-2017-shoho-q30",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q30-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。ＢＣ間の裏書の原因関係が消滅し、Ｃが手形をＢに返還すべき立場にあるときは、Ｃの手形金請求は権利の濫用として拒めるとするのが判例の趣旨であるから、「拒むことはできない」が誤り。",
+   "body": "誤りは「Ａは，Ｃからの手形金請求を拒むことはできない」の部分である。手形法17条（77条1項1号により約束手形に準用）によれば、ＡはＢＣ間の人的関係に基づく抗弁を、本来はＣに対抗する立場にない。しかし、ＢＣ間の裏書の原因関係が消滅すれば、Ｃは手形をＢに返還すべきであり、手形金の支払を求める実質的な理由を失っている。判例は、このような所持人が振出人に手形金を請求することは権利の濫用にあたり、振出人は支払を拒むことができるとしている（いわゆる後者の抗弁。判例あり（要確認））。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "17",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "為替手形ニ依リ請求ヲ受ケタル者ハ振出人其ノ他所持人ノ前者ニ対スル人的関係ニ基ク抗弁ヲ以テ所持人ニ対抗スルコトヲ得ズ",
+     "text_sha256": "7c2f51658a2e0f05325be197d2e987ec390655ae1ba6ef302f725f123367275d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裏書（第十一条乃至第二十条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "後者の抗弁に関する最高裁判決を courts.go.jp で2回探したが、判決のページを確認できなかった（要確認）。"
+   ],
+   "id": "exp-yobi-2017-shoho-q30-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q30-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。振出しと裏書の原因関係が共に消滅したときは、Ｃの悪意を問わず、ＡはＡＢ間の原因関係消滅の抗弁をＣに対抗できるとするのが判例であるから、「害することを知って手形を取得した場合でなければ」が誤り。",
+   "body": "誤りは「Ｃが債務者を害することを知って手形を取得した場合でなければ」という限定の部分である。手形法17条は、人的抗弁の対抗を、所持人が「債務者ヲ害スルコトヲ知リテ手形ヲ取得シタルトキ」に限っている。しかし判例は、受取人から所持人への裏書の原因関係も消滅し、所持人が手形の支払を求める経済的利益を何ら有しないときは、振出人は受取人との間の振出の原因関係消滅の抗弁を所持人に対抗できるとした（いわゆる二重無権の抗弁）。17条の抗弁の制限は手形取得者の利益を保護するためのものであり、支払を求める経済的利益のない所持人はその保護を受ける立場にないからである。したがって、Ｃの悪意を要件とする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "17",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "但シ所持人ガ其ノ債務者ヲ害スルコトヲ知リテ手形ヲ取得シタルトキハ此ノ限ニ在ラズ",
+     "text_sha256": "7c2f51658a2e0f05325be197d2e987ec390655ae1ba6ef302f725f123367275d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "振出および裏書の原因関係がともに消滅した場合における人的抗弁の対抗（昭和45(オ)16）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1970-07-16",
+     "holding": "受取人から所持人への裏書の原因関係が消滅し、所持人が手形の支払を求める経済的利益を有しないときは、振出人は受取人との間の振出の原因関係消滅の抗弁を所持人に対抗できる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54174/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q30-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q30-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。人的抗弁の対抗を受けていたＢが、善意のＣを経て手形を再取得しても、ＡはＢに対し原因関係消滅の抗弁を対抗できるとするのが判例の趣旨である。",
+   "body": "本肢のポイントは、善意者Ｃを経由して手形が元の当事者Ｂに戻った場合に、人的抗弁が復活するかである。手形法17条は、所持人の前者に対する人的抗弁を所持人に対抗できないとするが、これは手形を取得した者を保護するための規定である。善意のＣが取得したことで抗弁は切断されるが、Ｂはもともと振出人Ａから抗弁を対抗される立場にあった者であり、Ｃからの裏書で手形を再取得しても、Ｃの地位を承継して保護されるわけではないと解されている。判例も、このような場合に振出人は受取人に対して原因関係消滅の抗弁を対抗できるとしている（判例あり（要確認））。本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "17",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "為替手形ニ依リ請求ヲ受ケタル者ハ振出人其ノ他所持人ノ前者ニ対スル人的関係ニ基ク抗弁ヲ以テ所持人ニ対抗スルコトヲ得ズ",
+     "text_sha256": "7c2f51658a2e0f05325be197d2e987ec390655ae1ba6ef302f725f123367275d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "戻裏書と人的抗弁に関する最高裁判決を courts.go.jp で2回探したが、判決のページを確認できなかった（要確認）。"
+   ],
+   "id": "exp-yobi-2017-shoho-q30-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q30-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。満期日の翌日は支払拒絶証書作成期間内であり、満期日の翌日の裏書は期限後裏書ではなく通常の裏書の効力を有するので、善意のＣには人的抗弁を対抗できない。",
+   "body": "本肢のポイントは、満期日の翌日にされた裏書が期限後裏書にあたるかである。手形法20条1項は「満期後ノ裏書ハ満期前ノ裏書ト同一ノ効力ヲ有ス」とし、債権譲渡の効力のみを有するのは「支払拒絶証書作成後ノ裏書又ハ支払拒絶証書作成期間経過後ノ裏書」に限っている。支払拒絶証書は「支払ヲ為スベキ日又ハ之ニ次グ二取引日内ニ之ヲ作ラシムルコトヲ要ス」（44条3項）とされるから、満期日の翌日はまだ作成期間内であり、支払のための呈示がされていなくても、Ｂの裏書は通常の裏書の効力を有する（いずれも77条1項により約束手形に準用）。そうすると、17条により、ＡはＢに対する人的抗弁を、債務者を害することを知らずに取得したＣに対抗できない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "満期後ノ裏書ハ満期前ノ裏書ト同一ノ効力ヲ有ス",
+     "text_sha256": "bf32722ddab7a18e1e9c74551ced0cbf03a2c7eb6ac3211eb22757bee6bdec4c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支払拒絶証書作成後ノ裏書又ハ支払拒絶証書作成期間経過後ノ裏書",
+     "text_sha256": "bf32722ddab7a18e1e9c74551ced0cbf03a2c7eb6ac3211eb22757bee6bdec4c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "44",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "支払ヲ為スベキ日又ハ之ニ次グ二取引日内ニ之ヲ作ラシムルコトヲ要ス",
+     "text_sha256": "adc47d07c3a78fbdd101fac3d0714106e650b70a724a2e145cfed18538094d32",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "17",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "為替手形ニ依リ請求ヲ受ケタル者ハ振出人其ノ他所持人ノ前者ニ対スル人的関係ニ基ク抗弁ヲ以テ所持人ニ対抗スルコトヲ得ズ",
+     "text_sha256": "7c2f51658a2e0f05325be197d2e987ec390655ae1ba6ef302f725f123367275d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支払拒絶ニ因ル遡求（第四十三条乃至第五十条、第五十二条乃至第五十四条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "満期日の翌日が取引日であることを前提とする（問題文に休日の事情はない）。"
+   ],
+   "id": "exp-yobi-2017-shoho-q30-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q30-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。公然の取立委任裏書の被裏書人には、裏書人に対抗できた抗弁をそのまま対抗できる（手形法18条2項）ので、Ｃの悪意は不要であり、「害することを知って手形を取得した場合でなければ」が誤り。",
+   "body": "誤りは、Ｃの悪意を抗弁対抗の要件としている部分である。手形法18条2項は、「取立ノ為」などの文言のある裏書の場合には「債務者ガ所持人ニ対抗スルコトヲ得ル抗弁ハ裏書人ニ対抗スルコトヲ得ベカリシモノニ限ル」と定める（77条1項1号により約束手形に準用）。取立委任裏書の被裏書人Ｃは裏書人Ｂの代理人として権利を行使するにすぎないから、債務者Ａは、Ｂに対抗できた抗弁（ＡＢ間の原因関係の消滅）を、Ｃの善意・悪意を問わずＣに対抗できる。悪意を要件とする17条ただし書は、この場合には問題とならない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "18",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債務者ガ所持人ニ対抗スルコトヲ得ル抗弁ハ裏書人ニ対抗スルコトヲ得ベカリシモノニ限ル",
+     "text_sha256": "e90b3c2167fbef4535d13216167b6b5d0cdfdc374326468b51ad91ab47e52118",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "17",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "但シ所持人ガ其ノ債務者ヲ害スルコトヲ知リテ手形ヲ取得シタルトキハ此ノ限ニ在ラズ",
+     "text_sha256": "7c2f51658a2e0f05325be197d2e987ec390655ae1ba6ef302f725f123367275d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裏書（第十一条乃至第二十条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q30-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

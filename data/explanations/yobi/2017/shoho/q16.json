@@ -1,0 +1,271 @@
+{
+ "question_id": "yobi-2017-shoho-q16",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q16-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。募集設立では、設立時取締役の選任は創立総会の決議によって行わなければならず、発起人が選任するのではない。",
+   "body": "本肢の誤りは、募集設立における設立時取締役の選任主体を「発起人」とする点である。会社法88条1項は、設立時募集株式を引き受ける者の募集をする場合（募集設立）には、設立時取締役等の選任は「創立総会の決議によって行わなければならない」と定めている。募集設立では発起人以外の設立時募集株式の引受人も出資者となるため、その者も参加する創立総会で役員を選ぶこととされている。発起人が設立時取締役を選任するのは発起設立の場合である。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "88",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "創立総会の決議によって行わなければならない",
+     "text_sha256": "a3e7078f21a2452819fd9f45c35e1906e6ac78ea92be24f1293a7a6fe85321f8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q16-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q16-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。設立時募集株式の引受人は払込金額の全額を金銭で払い込まなければならず、定款で定めても現物出資をすることはできない（現物出資は発起人に限られると解されている）。",
+   "body": "本肢の誤りは、設立時募集株式の引受人も定款で定めれば現物出資ができるとする点である。会社法58条1項2号は、設立時募集株式の払込金額を「設立時募集株式一株と引換えに払い込む金銭の額」と定め、63条1項は、引受人は「払込金額の全額の払込みを行わなければならない」としている。これに対し、発起人については、34条1項が「その出資に係る金銭以外の財産の全部を給付しなければならない」と、金銭以外の財産による出資を予定している。このような規定の違いから、設立段階で現物出資をすることができるのは発起人に限られ、設立時募集株式の引受人は金銭でしか出資できないと解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "58",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設立時募集株式一株と引換えに払い込む金銭の額",
+     "text_sha256": "e5ad45e5e72d369b504d46d0aa1d912df3386f5efe3847c2aa35384fb39a0190",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "63",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "払込金額の全額の払込みを行わなければならない",
+     "text_sha256": "55ef0e68db24501bca1c5b1a7e8f0a1fca62ca2f56016b6e8fd65983a61fd2d6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "34",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その出資に係る金銭以外の財産の全部を給付しなければならない",
+     "text_sha256": "d0a32d770d2e47f4524cda9a5d09f6a0bb0caec5f969c4795541fbbb01d03d56",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現物出資が発起人に限られるとの結論は、条文の書き分けからの解釈による"
+   ],
+   "id": "exp-yobi-2017-shoho-q16-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q16-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。払込みを仮装した設立時募集株式の引受人は、仮装した払込金額の全額の支払等がされた後でなければ、その株式について設立時株主及び株主の権利を行使できない。",
+   "body": "本肢の誤りは、仮装払込みをした引受人が、支払前であっても権利を行使できるとする点である。会社法102条3項は、引受人が払込みを仮装した場合には、102条の2第1項または103条2項の規定による「支払がされた後でなければ、払込みを仮装した設立時発行株式について、設立時株主及び株主の権利を行使することができない」と定めている。102条の2第1項は、その引受人が株式会社に対し「払込みを仮装した払込金額の全額の支払をする義務を負う」としている。仮装払込みによって出資が実質的にされていないのに権利行使を認めると、他の株主との公平を害するためである。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "102",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "支払がされた後でなければ、払込みを仮装した設立時発行株式について、設立時株主及び株主の権利を行使することができない",
+     "text_sha256": "840c465811eb55bef2735a0eaa51549bbd7cc7089567d53b215fbc7d5fd066dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "102_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "払込みを仮装した払込金額の全額の支払をする義務を負う",
+     "text_sha256": "66d746ab2d00cff7ca9e7e3b6fe50e8abc4002e60965eb7f8afa499db60269fe",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "103",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "払込みを仮装することに関与した発起人又は設立時取締役として法務省令で定める者は、株式会社に対し、前条第一項の引受人と連帯して、同項に規定する支払をする義務を負う",
+     "text_sha256": "ca19b81efcd8923196289359cd650ca0273f8db30c570669ce7cf327936a7bc4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "102条3項・102条の2は平成26年改正で新設された規定。出題時点（2017年）にはすでに施行されている"
+   ],
+   "id": "exp-yobi-2017-shoho-q16-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q16-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。募集の広告等に設立を賛助する旨の記載を承諾した者（擬似発起人）は発起人とみなされ、募集設立では検査役の調査を経た場合を除き、現物出資財産等の価額の著しい不足額を支払う義務を負う。",
+   "body": "本肢は、いわゆる擬似発起人の財産価額てん補責任を問うものである。会社法103条4項は、募集設立において、募集の広告等に「自己の氏名又は名称及び株式会社の設立を賛助する旨を記載し、又は記録することを承諾した者（発起人を除く。）は、発起人とみなして」、52条を含む前節等の規定を適用するとしている。52条1項は、成立時の現物出資財産等の価額が定款に記載された価額に著しく不足するときは、発起人等が「当該不足額を支払う義務を負う」と定める。そして、103条1項により、募集設立の場合には52条2項の免責事由は1号（検査役の調査を経た場合）に限られ、注意を怠らなかったことの証明による免責（2号）は認められない。したがって、擬似発起人は、検査役の調査を経た場合を除き不足額の支払義務を負い、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "103",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "自己の氏名又は名称及び株式会社の設立を賛助する旨を記載し、又は記録することを承諾した者（発起人を除く。）は、発起人とみなして",
+     "text_sha256": "ca19b81efcd8923196289359cd650ca0273f8db30c570669ce7cf327936a7bc4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第五十七条第一項の募集をした場合における第五十二条第二項の規定の適用については、同項中「次に」とあるのは、「第一号に」とする。",
+     "text_sha256": "ca19b81efcd8923196289359cd650ca0273f8db30c570669ce7cf327936a7bc4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "52",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該不足額を支払う義務を負う",
+     "text_sha256": "9c6f00a9dde2090559dd4c3fdf73b3b0a8cc26192a6674b682e3d6aa94e9abf0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "52",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第二十八条第一号又は第二号に掲げる事項について第三十三条第二項の検査役の調査を経た場合",
+     "text_sha256": "9c6f00a9dde2090559dd4c3fdf73b3b0a8cc26192a6674b682e3d6aa94e9abf0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q16-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q16-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。設立時募集株式の総数の引受けを行う契約（総数引受契約）を締結する場合には、発起人の通知義務を定めた59条は適用されない。",
+   "body": "本肢の誤りは、総数引受契約の場合にも発起人が設立時募集株式に関する事項等を通知しなければならないとする点である。会社法59条1項は、発起人は募集に応じて引受けの申込みをしようとする者に対し、定款の認証の年月日や設立時募集株式に関する事項等を「通知しなければならない」と定める。しかし、61条は「前二条の規定は、設立時募集株式を引き受けようとする者がその総数の引受けを行う契約を締結する場合には、適用しない」としている。総数引受契約では、引受人は契約の締結にあたって必要な情報を得られるため、申込み・割当ての手続を省略できるとしたものと解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "59",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "通知しなければならない",
+     "text_sha256": "7ef1c4657405505af09980c42b3b90a3e77e38ce98011590142c4a2ffb6e5235",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "61",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の規定は、設立時募集株式を引き受けようとする者がその総数の引受けを行う契約を締結する場合には、適用しない",
+     "text_sha256": "3f3d9c686a5e0a8fbbf76857eefcff7bf33c9aa337eb07372b5cdbbf0ef3e922",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q16-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

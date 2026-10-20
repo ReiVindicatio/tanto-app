@@ -1,0 +1,260 @@
+{
+ "question_id": "yobi-2017-shoho-q20",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q20-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。全部の株式の譲渡制限を廃止すると公開会社となり、取締役会の設置が義務付けられ、公開会社である取締役会設置会社は監査役を置かなければならない。",
+   "body": "会社法2条5号は、公開会社を「その発行する全部又は一部の株式の内容として譲渡による当該株式の取得について株式会社の承認を要する旨の定款の定めを設けていない株式会社」と定義する。全部の株式についての譲渡制限の定めを廃止すれば、会社は公開会社となる。同法327条1項は、「次に掲げる株式会社は、取締役会を置かなければならない。」とし、その1号に「公開会社」を掲げる。そして同条2項は、「取締役会設置会社（監査等委員会設置会社及び指名委員会等設置会社を除く。）は、監査役を置かなければならない。ただし、公開会社でない会計参与設置会社については、この限りでない。」と定めており、公開会社となった以上ただし書の例外も適用されない。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その発行する全部又は一部の株式の内容として譲渡による当該株式の取得について株式会社の承認を要する旨の定款の定めを設けていない株式会社",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "327",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる株式会社は、取締役会を置かなければならない。",
+     "text_sha256": "5a773ce772b81078bdf955298b8ce400edd7c0d886c414d3e6afc8c64f2bdd73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "327",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "取締役会設置会社（監査等委員会設置会社及び指名委員会等設置会社を除く。）は、監査役を置かなければならない。ただし、公開会社でない会計参与設置会社については、この限りでない。",
+     "text_sha256": "5a773ce772b81078bdf955298b8ce400edd7c0d886c414d3e6afc8c64f2bdd73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q20-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q20-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。大会社かどうかは「最終事業年度に係る貸借対照表」に計上した資本金の額で判断されるから、株式の発行で資本金が5億円以上になっても、その効力発生日までに会計監査人を置く必要はない。",
+   "body": "本肢の誤りは、株式の発行の効力が生ずる日までに会計監査人を置かなければならないとする点にある。会社法2条6号イは、大会社の要件の一つを「最終事業年度に係る貸借対照表」に「資本金として計上した額が五億円以上であること。」としている。株式の発行により資本金の額が10億円となっても、それが最終事業年度に係る貸借対照表に計上されるまでは大会社に当たらない。大会社に当たらない以上、会計監査人の設置義務（同法328条）もその時点では生じない。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "最終事業年度に係る貸借対照表",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "資本金として計上した額が五億円以上であること。",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "328",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "大会社（公開会社でないもの、監査等委員会設置会社及び指名委員会等設置会社を除く。）は、監査役会及び会計監査人を置かなければならない。",
+     "text_sha256": "6700330b0104ee1fe3f26daa4c781f7044f77d2378d7a1b43c9e842f4d5e30c2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q20-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q20-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "現行法では×。保存した現行の会社法327条の2は、公開会社かつ大会社である監査役会設置会社で有価証券報告書の提出義務がある会社に、社外取締役の設置を義務付けている（公式の正解は○で、出題後の法改正によると考えられる）。",
+   "body": "本肢は、社外取締役を置くことが義務付けられていないとする点が結論を分ける。保存した現行の会社法327条の2は、「監査役会設置会社（公開会社であり、かつ、大会社であるものに限る。）であって金融商品取引法第二十四条第一項の規定によりその発行する株式について有価証券報告書を内閣総理大臣に提出しなければならないものは、社外取締役を置かなければならない。」と定めている。本肢の会社はまさにこれに当たるから、現行法のもとでは社外取締役を置くことが義務付けられており、本肢は誤りとなる。公式の正解（○）は、出題当時の会社法では社外取締役の設置が義務とされていなかったことを前提とするものと考えられるが、出題当時の条文は保存していないため、ここでは確認できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "327_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "監査役会設置会社（公開会社であり、かつ、大会社であるものに限る。）であって金融商品取引法第二十四条第一項の規定によりその発行する株式について有価証券報告書を内閣総理大臣に提出しなければならないものは、社外取締役を置かなければならない。",
+     "text_sha256": "1a1528ce371137c72c2c1afc3cbd73885afca10595f5e5bfdbdd6364250ec927",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "法改正の信号：公式の○×は○だが、保存した現行の会社法327条の2（2026-10-18 取得）は本肢の会社に社外取締役の設置を義務付けており、現行の条文では公式の○を説明できない。規則5により stated_truth を現行法での結論（×）とした",
+    "出題（2017年）後の会社法改正で社外取締役の設置が義務化されたと考えられる（改正前の327条の2は、社外取締役を置いていない場合に置くことが相当でない理由を説明させる規定だったと理解しているが、旧条文は保存しておらず要確認）"
+   ],
+   "id": "exp-yobi-2017-shoho-q20-c",
+   "status": "flagged",
+   "check": {
+    "passed": false,
+    "failures": [
+     "🔴 公式の○×と食い違う（公式 ○／解説 False）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q20-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。公開会社である大会社は監査役会を置かなければならず、監査役会設置会社では監査役の半数以上が社外監査役でなければならない。",
+   "body": "本肢の誤りは、半数以上が社外監査役であることを要しないとする点にある。会社法328条1項は、「大会社（公開会社でないもの、監査等委員会設置会社及び指名委員会等設置会社を除く。）は、監査役会及び会計監査人を置かなければならない。」と定めるから、監査役を置く公開会社である大会社は監査役会設置会社となる。そして同法335条3項は、「監査役会設置会社においては、監査役は、三人以上で、そのうち半数以上は、社外監査役でなければならない。」と定める。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "328",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "大会社（公開会社でないもの、監査等委員会設置会社及び指名委員会等設置会社を除く。）は、監査役会及び会計監査人を置かなければならない。",
+     "text_sha256": "6700330b0104ee1fe3f26daa4c781f7044f77d2378d7a1b43c9e842f4d5e30c2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "335",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査役会設置会社においては、監査役は、三人以上で、そのうち半数以上は、社外監査役でなければならない。",
+     "text_sha256": "04ace5012fa40f97df28d229c2ac40385a37871c068a7fc98ef1476cc0f35c37",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q20-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-shoho-q20-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株式会社は定款の定めによって会計参与を置くことができ、監査等委員会設置会社もこれを禁じられていない。",
+   "body": "本肢の誤りは、監査等委員会設置会社は会計参与を置くことができないとする点にある。会社法326条2項は、「株式会社は、定款の定めによって、取締役会、会計参与、監査役、監査役会、会計監査人、監査等委員会又は指名委員会等を置くことができる。」と定める。監査等委員会設置会社については、同法327条4項が「監査等委員会設置会社及び指名委員会等設置会社は、監査役を置いてはならない。」とし、同条5項が会計監査人を置かなければならないとしているが、会計参与の設置を禁じる規定はない。したがって、監査等委員会設置会社も会計監査人に加えて会計参与を置くことができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "326",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株式会社は、定款の定めによって、取締役会、会計参与、監査役、監査役会、会計監査人、監査等委員会又は指名委員会等を置くことができる。",
+     "text_sha256": "13b0e792ecc9bb8a45384d2b6d92b4c2768d26b124e1f36769f7c7086a94d82d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "327",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "監査等委員会設置会社及び指名委員会等設置会社は、監査役を置いてはならない。",
+     "text_sha256": "5a773ce772b81078bdf955298b8ce400edd7c0d886c414d3e6afc8c64f2bdd73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "327",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "監査等委員会設置会社及び指名委員会等設置会社は、会計監査人を置かなければならない。",
+     "text_sha256": "5a773ce772b81078bdf955298b8ce400edd7c0d886c414d3e6afc8c64f2bdd73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-shoho-q20-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
