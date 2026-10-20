@@ -1,0 +1,211 @@
+{
+ "question_id": "yobi-2020-minso-q33",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minso-q33-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：訴訟引受けの決定があった場合に準用されるのは同時審判申出共同訴訟の規定（41条1項・3項）であり、必要的共同訴訟の40条ではないので、Ｚの訴訟行為がＹの利益においてのみ効力を生ずるという規律はない。",
+   "body": "誤りは、Ｚの訴訟行為が「Ｙの利益においてのみその効力を生ずる」とする部分である。50条3項は、訴訟を引き受けさせる決定があった場合について「第四十一条第一項及び第三項並びに前二条の規定は、第一項の規定により訴訟を引き受けさせる決定があった場合について準用する。」と定める。準用されるのは同時審判申出共同訴訟の規定であって、「その一人の訴訟行為は、全員の利益においてのみその効力を生ずる。」とする40条1項は準用されていない。そのため、引受けがあっても通常共同訴訟と同様に扱われ、Ｚの訴訟行為の効力がＹの利益になる場合に限られるという制約はないと解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "50",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第四十一条第一項及び第三項並びに前二条の規定は、第一項の規定により訴訟を引き受けさせる決定があった場合について準用する。",
+     "text_sha256": "6113e69e1ac80eedccc27eb70841d8793de4fc2b28ed93008f52a20f695fa3a5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "40",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その一人の訴訟行為は、全員の利益においてのみその効力を生ずる。",
+     "text_sha256": "e30ac9c758c214d9d263d1c4c536115f7a710d36c1819a14c024a0dfb969c560",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-minso-q33-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minso-q33-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：権利承継人についても50条が準用されるので、相手方Ｙは、権利の譲受人Ｚに訴訟を引き受けさせるよう申し立てることができる。",
+   "body": "ポイントは、訴訟引受けが義務承継人だけでなく権利承継人についても認められるかである。50条1項は、第三者が訴訟の目的である義務を承継したときに「裁判所は、当事者の申立てにより、決定で、その第三者に訴訟を引き受けさせることができる。」と定める。そして51条は、「前条の規定は訴訟の係属中第三者がその訴訟の目的である権利の全部又は一部を譲り受けた場合について準用する。」と定めている。したがって、Ｘから権利の全部を譲り受けたＺについても、当事者であるＹの申立てにより、裁判所はＺに訴訟を引き受けさせることができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "50",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、当事者の申立てにより、決定で、その第三者に訴訟を引き受けさせることができる。",
+     "text_sha256": "6113e69e1ac80eedccc27eb70841d8793de4fc2b28ed93008f52a20f695fa3a5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "51",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条の規定は訴訟の係属中第三者がその訴訟の目的である権利の全部又は一部を譲り受けた場合について準用する。",
+     "text_sha256": "1cd604a40e42d668d243ed421f66e9f03f8dba6b5678a30c03578e4eb5fc2345",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-minso-q33-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minso-q33-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：上告審は法律審であり、承継の事実などを審理できないので、上告裁判所に対して訴訟引受けの申立てをすることはできないと解されている。",
+   "body": "ポイントは、上告審で訴訟引受けの申立てができるかである。50条1項は「訴訟の係属中」の承継について引受けを認めるが、引受けの決定をするには承継の有無という事実を審理する必要がある。上告審は原判決の法令違反を審査する法律審であり、新たな事実の審理を予定していないため、上告審では訴訟引受けの申立てはできないと解されている。判例あり（要確認）。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "50",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の係属中第三者がその訴訟の目的である義務の全部又は一部を承継したときは、裁判所は、当事者の申立てにより、決定で、その第三者に訴訟を引き受けさせることができる。",
+     "text_sha256": "6113e69e1ac80eedccc27eb70841d8793de4fc2b28ed93008f52a20f695fa3a5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "上告審での訴訟引受けを否定した判例を courts.go.jp で2回探したが確認できなかった"
+   ],
+   "id": "exp-yobi-2020-minso-q33-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minso-q33-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：ＸのＺに対する請求が所有権に基づくもので訴訟物が異なっても、Ｚの占有がＹの建物所有に由来し紛争の主要な争点が共通であれば、Ｚは「義務の承継」人として訴訟を引き受けさせることができると解されている。",
+   "body": "ポイントは、旧訴訟と訴訟物が異なる請求を立てる場合でも、50条1項の「訴訟の目的である義務の全部又は一部を承継した」に当たるかである。本肢では、Ｘの請求はＹに対しては賃貸借終了に基づく建物収去土地明渡し、Ｚに対しては所有権に基づく建物退去土地明渡しであり、訴訟物は同一ではない。しかし、Ｚの土地の占有はＹの建物の所有を前提とするものであり、ＸＹ間の紛争とＸＺ間の紛争は土地の占有の適否という主要な争点を共通にしているため、Ｚは土地の占有という点でＹから義務を承継したものとして引受けが認められると解されている。判例あり（要確認）。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "50",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の係属中第三者がその訴訟の目的である義務の全部又は一部を承継したときは、裁判所は、当事者の申立てにより、決定で、その第三者に訴訟を引き受けさせることができる。",
+     "text_sha256": "6113e69e1ac80eedccc27eb70841d8793de4fc2b28ed93008f52a20f695fa3a5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "建物賃借人への訴訟引受けを認めた判例を courts.go.jp で2回探したが確認できなかった"
+   ],
+   "id": "exp-yobi-2020-minso-q33-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minso-q33-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：引受け後にＹが脱退した場合には48条が準用され、判決は脱退したＹに対しても効力を有する。",
+   "body": "誤りは、確定判決の効力が「Ｙに対しては及ばない」とする部分である。50条3項は、引受けの決定があった場合について「第四十一条第一項及び第三項並びに前二条の規定は、第一項の規定により訴訟を引き受けさせる決定があった場合について準用する。」と定め、「前二条」には48条が含まれる。48条は、相手方の承諾を得て訴訟から脱退できるとしたうえで、「判決は、脱退した当事者に対してもその効力を有する。」と定める。したがって、Ｘの承諾を得て脱退したＹにも確定判決の効力が及び、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "50",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第四十一条第一項及び第三項並びに前二条の規定は、第一項の規定により訴訟を引き受けさせる決定があった場合について準用する。",
+     "text_sha256": "6113e69e1ac80eedccc27eb70841d8793de4fc2b28ed93008f52a20f695fa3a5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "48",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "判決は、脱退した当事者に対してもその効力を有する。",
+     "text_sha256": "2a3bb6d4f6856de973f313f0750481284e523cb7ac14edb269e74a1c55a6f570",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-minso-q33-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

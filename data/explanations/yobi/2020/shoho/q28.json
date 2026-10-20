@@ -1,0 +1,281 @@
+{
+ "question_id": "yobi-2020-shoho-q28",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q28-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。商法576条の賠償額の定型化は滅失・損傷の場合に限られ、延着の場合の賠償額は民法の債務不履行の規定によって定まる。",
+   "body": "ポイントは、商法576条が延着を対象にしていない点である。運送人は、575条により「運送品が延着したときは、これによって生じた損害を賠償する責任を負う」。しかし、賠償額を定める576条1項は「運送品の滅失又は損傷の場合における損害賠償の額」についての規定であり、延着には触れていない。そのため、延着による損害賠償の額は、民法416条の「通常生ずべき損害」と予見すべきであった特別の事情による損害という一般原則によって定まると解されている。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "575",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "運送品が延着したときは、これによって生じた損害を賠償する責任を負う",
+     "text_sha256": "59c4e9903be05f95341b8583e5ff69d8fe74a4250545fb8564526d55dd1615df",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "576",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "運送品の滅失又は損傷の場合における損害賠償の額",
+     "text_sha256": "b20b21c0e759110bfbb8adae70754aa43cf53713f8fa3aac729fed29da9189ef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "416",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "通常生ずべき損害",
+     "text_sha256": "c48b07768964b9bf42d29356554cf5b9baf8cb6ff8f05dd91850680ee4d06352",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "延着に民法の一般原則が適用されるという点は、576条の文言（滅失又は損傷に限る）からの解釈による。"
+   ],
+   "id": "exp-yobi-2020-shoho-q28-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q28-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。滅失・損傷の場合の賠償額は、引渡しがされるべき地及び時における市場価格によって定まり、送り状に記載された価額を限度とする規定はない。",
+   "body": "誤りは「送り状に当該運送品の価額が記載されていたときは……その価額を限度とする」という部分である。商法576条1項は、滅失又は損傷の場合の賠償額を「その引渡しがされるべき地及び時における運送品の市場価格（取引所の相場がある物品については、その相場）によって定める」としている。送り状の記載価額を賠償の上限とする旨の規定は商法にない。なお、故意・重過失の場合に定型化が外れる点（576条3項）は本肢も述べているが、基準となる額が違う。よって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "576",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その引渡しがされるべき地及び時における運送品の市場価格（取引所の相場がある物品については、その相場）によって定める",
+     "text_sha256": "b20b21c0e759110bfbb8adae70754aa43cf53713f8fa3aac729fed29da9189ef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "576",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前二項の規定は、運送人の故意又は重大な過失によって運送品の滅失又は損傷が生じたときは、適用しない。",
+     "text_sha256": "b20b21c0e759110bfbb8adae70754aa43cf53713f8fa3aac729fed29da9189ef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q28-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q28-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。高価品の明告がないときは運送人は免責されるが、運送人が高価品であることを知っていたときや故意・重過失によるときは免責されない（商法577条）。",
+   "body": "本肢は商法577条の内容どおりである。同条1項は、高価品について「荷送人が運送を委託するに当たりその種類及び価額を通知した場合を除き、運送人は、その滅失、損傷又は延着について損害賠償の責任を負わない」とする。そして2項は、1項の規定を適用しない場合として、「物品運送契約の締結の当時、運送品が高価品であることを運送人が知っていたとき」と「運送人の故意又は重大な過失によって高価品の滅失、損傷又は延着が生じたとき」を挙げる。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "577",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "荷送人が運送を委託するに当たりその種類及び価額を通知した場合を除き、運送人は、その滅失、損傷又は延着について損害賠償の責任を負わない",
+     "text_sha256": "7a2db611318841a1cae0959a634f2a76bf9ff84bcc36f3d2c7b00bc8a6009015",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "577",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "物品運送契約の締結の当時、運送品が高価品であることを運送人が知っていたとき",
+     "text_sha256": "7a2db611318841a1cae0959a634f2a76bf9ff84bcc36f3d2c7b00bc8a6009015",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "577",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "運送人の故意又は重大な過失によって高価品の滅失、損傷又は延着が生じたとき",
+     "text_sha256": "7a2db611318841a1cae0959a634f2a76bf9ff84bcc36f3d2c7b00bc8a6009015",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q28-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q28-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。運送品の全部が滅失したときは、荷受人は荷送人と同一の権利を取得するから、運送人は荷受人に対しても損害賠償責任を負う（商法581条1項）。",
+   "body": "ポイントは、全部滅失の場合に荷受人が契約上の権利を取得するかである。商法581条1項は「荷受人は、運送品が到達地に到着し、又は運送品の全部が滅失したときは、物品運送契約によって生じた荷送人の権利と同一の権利を取得する」と定める。したがって、運送人の過失により運送品の全部が滅失したときは、荷受人も575条に基づく損害賠償請求権を行使できる。なお、荷受人が損害賠償の請求をしたときは、荷送人はその権利を行使できなくなる（581条2項）。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "581",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "荷受人は、運送品が到達地に到着し、又は運送品の全部が滅失したときは、物品運送契約によって生じた荷送人の権利と同一の権利を取得する。",
+     "text_sha256": "613697cce39f449a6e168e3e2686aa02f449bfdb1c368f469ea22eb4aabcbcaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "581",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の場合において、荷受人が運送品の引渡し又はその損害賠償の請求をしたときは、荷送人は、その権利を行使することができない。",
+     "text_sha256": "613697cce39f449a6e168e3e2686aa02f449bfdb1c368f469ea22eb4aabcbcaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "575",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "これによって生じた損害を賠償する責任を負う",
+     "text_sha256": "59c4e9903be05f95341b8583e5ff69d8fe74a4250545fb8564526d55dd1615df",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q28-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q28-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。荷受人が異議をとどめないで運送品を受け取ると、損傷・一部滅失についての運送人の責任は消滅するが、運送人が引渡しの当時それを知っていたときは消滅しない（商法584条）。",
+   "body": "本肢は商法584条の内容どおりである。同条1項本文は「運送品の損傷又は一部滅失についての運送人の責任は、荷受人が異議をとどめないで運送品を受け取ったときは、消滅する」とする。同項ただし書の救済（2週間以内の通知）は「直ちに発見することができない損傷又は一部滅失」の場合に限られ、本肢のような直ちに発見できる損傷等には及ばない。そして2項は、1項の規定は「運送品の引渡しの当時、運送人がその運送品に損傷又は一部滅失があることを知っていたときは、適用しない」とする。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "584",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "運送品の損傷又は一部滅失についての運送人の責任は、荷受人が異議をとどめないで運送品を受け取ったときは、消滅する",
+     "text_sha256": "843f155f09f63469fbc6338e95bab8d3c457e3e62655462c81b3baa1672e0221",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "584",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "直ちに発見することができない損傷又は一部滅失",
+     "text_sha256": "843f155f09f63469fbc6338e95bab8d3c457e3e62655462c81b3baa1672e0221",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "584",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "運送品の引渡しの当時、運送人がその運送品に損傷又は一部滅失があることを知っていたときは、適用しない",
+     "text_sha256": "843f155f09f63469fbc6338e95bab8d3c457e3e62655462c81b3baa1672e0221",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q28-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

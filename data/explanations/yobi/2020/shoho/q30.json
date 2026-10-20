@@ -1,0 +1,281 @@
+{
+ "question_id": "yobi-2020-shoho-q30",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q30-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。為替手形の主たる債務者は引受をした支払人であり、小切手には引受がないから、いずれの振出人も支払を担保する遡求義務者にとどまる。",
+   "body": "ポイントは、誰が第一次的な支払義務を負うかである。為替手形では、支払人が「引受ニ因リ満期ニ於テ為替手形ノ支払ヲ為ス義務ヲ負フ」（手形法28条1項）とされ、振出人は「引受及支払ヲ担保ス」（9条1項）るにとどまる。小切手では「小切手ハ引受ヲ為スコトヲ得ズ」（小切手法4条）とされ、振出人は「支払ヲ担保ス」（12条）る者である。いずれの振出人も、支払がされないときに責任を負う遡求義務者であると解されている。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "引受ニ因リ満期ニ於テ為替手形ノ支払ヲ為ス義務ヲ負フ",
+     "text_sha256": "c6986b9d7b0783314856f134c2e1f24d828f6a8c9ecafcc049421e3d8e5e4272",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "引受及支払ヲ担保ス",
+     "text_sha256": "9b24b11a4cad3c398fdbb83310abaff5a2ba9caaa0f0e35517463d590ec0c4d5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "小切手ハ引受ヲ為スコトヲ得ズ",
+     "text_sha256": "0e9e73523cc8f454d70d77b6ee0a0a48d363515d37733e497da691312f287be1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "12",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支払ヲ担保ス",
+     "text_sha256": "1515d6d7ce78dabfc6c45ef3a45493d91079b930a371584726de9d9ad735622e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q30-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q30-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。支払人が銀行等に限られるのは小切手だけであり、為替手形の支払人には制限がない。",
+   "body": "誤りは、為替手形の支払人も銀行等に限られるとする点である。小切手法3条は「小切手ハ其ノ呈示ノ時ニ於テ振出人ノ処分シ得ル資金アル銀行ニ宛テ」振り出すべきものとし、59条により「銀行」には「法令ニ依リテ銀行ト同視セラルル人又ハ施設」も含まれる。これに対し、為替手形については、手形法1条3号が「支払ヲ為スベキ者（支払人）ノ名称」の記載を求めるだけで、支払人の資格を制限する規定はない。よって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "小切手ハ其ノ呈示ノ時ニ於テ振出人ノ処分シ得ル資金アル銀行ニ宛テ",
+     "text_sha256": "86f1c23d895f30248f160d10978442fbde5c558e3221fcf6d0518178187ebda7",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "59",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法令ニ依リテ銀行ト同視セラルル人又ハ施設",
+     "text_sha256": "8623ee9e9a856c645965c8903db370968bb188d82c2474d65f13a979230161c6",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "1",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支払ヲ為スベキ者（支払人）ノ名称",
+     "text_sha256": "f14429d6941bf3ddf08bbdd0fe1a000bf735e1ad0b050c3e3fa1036d0e6c1858",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "小切手法3条ただし書により、銀行以外に宛てて振り出しても小切手の効力は妨げられない。"
+   ],
+   "id": "exp-yobi-2020-shoho-q30-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q30-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。為替手形は受取人の名称が必要的記載事項なので持参人払式にできないが、小切手は持参人払式で振り出せる。",
+   "body": "手形法1条6号は、為替手形の記載事項として「支払ヲ受ケ又ハ之ヲ受クル者ヲ指図スル者ノ名称」（受取人）を掲げており、受取人を記載しない持参人払式の為替手形は認められない。これに対し、小切手法5条1項は小切手の振出しの方式として「持参人払式」を認め、同条3項は「受取人ノ記載ナキ小切手ハ之ヲ持参人払式小切手ト看做ス」とする。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "1",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支払ヲ受ケ又ハ之ヲ受クル者ヲ指図スル者ノ名称",
+     "text_sha256": "f14429d6941bf3ddf08bbdd0fe1a000bf735e1ad0b050c3e3fa1036d0e6c1858",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "持参人払式",
+     "text_sha256": "684b16d0d68ac6ef1984da3d8e9295ef7923b15674ed39222ab6c824d81d58a0",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "5",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "受取人ノ記載ナキ小切手ハ之ヲ持参人払式小切手ト看做ス",
+     "text_sha256": "684b16d0d68ac6ef1984da3d8e9295ef7923b15674ed39222ab6c824d81d58a0",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q30-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q30-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。小切手に記載した利息の約定は記載しなかったものとみなされ、為替手形でも利息文句を記載できるのは一覧払・一覧後定期払のものに限られる。",
+   "body": "誤りは、小切手にも利息を付すことができるとする点である。小切手法7条は「小切手ニ記載シタル利息ノ約定ハ之ヲ為サザルモノト看做ス」と定める。為替手形についても、手形法5条1項は「一覧払又ハ一覧後定期払ノ為替手形ニ於テハ振出人ハ手形金額ニ付利息ヲ生ズベキ旨ノ約定ヲ記載スルコトヲ得」とし、その他の為替手形では記載しなかったものとみなすから、いつでも利息を付せるわけではない。よって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "小切手ニ記載シタル利息ノ約定ハ之ヲ為サザルモノト看做ス",
+     "text_sha256": "dd9204d4399d1e167072dd9bf3f644957bd65c7baf57ccc954e05fef9920dbb9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一覧払又ハ一覧後定期払ノ為替手形ニ於テハ振出人ハ手形金額ニ付利息ヲ生ズベキ旨ノ約定ヲ記載スルコトヲ得",
+     "text_sha256": "78903da6fdcf82624b6b86282722b1fca26adc1544d07745b6062b207dfc7392",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q30-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q30-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。為替手形の支払人は裏書をすることができるが、小切手の支払人の裏書は無効とされる。",
+   "body": "手形法11条3項は、裏書は「引受ヲ為シタル又ハ為サザル支払人、振出人其ノ他ノ債務者ニ対シテモ之ヲ為スコトヲ得此等ノ者ハ更ニ手形ヲ裏書スルコトヲ得」と定めており、為替手形の支払人も裏書をすることができる。これに対し、小切手法15条3項は「支払人ノ裏書モ亦之ヲ無効トス」と定める。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "11",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "引受ヲ為シタル又ハ為サザル支払人、振出人其ノ他ノ債務者ニ対シテモ之ヲ為スコトヲ得此等ノ者ハ更ニ手形ヲ裏書スルコトヲ得",
+     "text_sha256": "1081bd501672b88d257b846823fa718bf31dadcdd3062046d7b70092a1207629",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "15",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "支払人ノ裏書モ亦之ヲ無効トス",
+     "text_sha256": "0f168335022a96c5c8120414a205576b4a6c912eebc8d759d76caa02c74f089e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q30-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

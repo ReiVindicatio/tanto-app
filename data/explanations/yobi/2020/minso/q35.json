@@ -1,0 +1,211 @@
+{
+ "question_id": "yobi-2020-minso-q35",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minso-q35-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。何人も請求できるのは閲覧であり、謄写を請求できるのは当事者及び利害関係を疎明した第三者に限られる（91条1項・3項）。",
+   "body": "誤りは「何人も」「謄写を請求することができる」の組合せです。民事訴訟法91条1項は「何人も、裁判所書記官に対し」訴訟記録の「閲覧を請求することができる」と定めており、何人も請求できるのは閲覧です。これに対し、同条3項は「当事者及び利害関係を疎明した第三者は、裁判所書記官に対し、非電磁的訴訟記録の謄写又はその正本、謄本若しくは抄本の交付を請求することができる」と定め、謄写の請求権者を限定しています。したがって、本肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "91",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "何人も、裁判所書記官に対し",
+     "text_sha256": "c82557beada680586a52fb5916ff4d76f030997433edf646570b515841caeefd",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "91",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "当事者及び利害関係を疎明した第三者は、裁判所書記官に対し、非電磁的訴訟記録の謄写又はその正本、謄本若しくは抄本の交付を請求することができる",
+     "text_sha256": "c82557beada680586a52fb5916ff4d76f030997433edf646570b515841caeefd",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "取得日時点の現行法（令和4年改正後）では、91条は「非電磁的訴訟記録」の閲覧等の規定になっている。出題時点の91条は「訴訟記録」について同旨を定めており、結論に影響しない。"
+   ],
+   "id": "exp-yobi-2020-minso-q35-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minso-q35-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。訴訟記録の謄写の請求は、裁判所の執務に支障があるときはすることができない（91条5項）。",
+   "body": "ポイントは、閲覧・謄写の請求に対する制限事由です。民事訴訟法91条5項は、訴訟記録の「閲覧、謄写及び複製の請求は、非電磁的訴訟記録の保存又は裁判所の執務に支障があるときは、することができない」と定めています。したがって、裁判所の執務に支障があるときは謄写の請求をすることができず、本肢は正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "91",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "閲覧、謄写及び複製の請求は、非電磁的訴訟記録の保存又は裁判所の執務に支障があるときは、することができない",
+     "text_sha256": "c82557beada680586a52fb5916ff4d76f030997433edf646570b515841caeefd",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "取得日時点の現行法（令和4年改正後）では、91条は「非電磁的訴訟記録」の閲覧等の規定になっている。出題時点の91条5項は「訴訟記録」について同旨を定めており、結論に影響しない。"
+   ],
+   "id": "exp-yobi-2020-minso-q35-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minso-q35-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。私生活についての重大な秘密が記載された部分については、裁判所は閲覧等の請求をすることができる者を当事者に限ることができる（92条1項1号）。",
+   "body": "誤りは「当事者に限ることができない」の部分です。民事訴訟法92条1項は、同項各号の事由につき疎明があった場合には、裁判所は、当該当事者の申立てにより、決定で、秘密記載部分の閲覧等の「請求をすることができる者を当事者に限ることができる」と定めています。その事由として同項1号は「訴訟記録中に当事者の私生活についての重大な秘密が記載され、又は記録されており」、第三者の閲覧等により「その当事者が社会生活を営むのに著しい支障を生ずるおそれがあること」を挙げています。したがって、本肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "92",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "請求をすることができる者を当事者に限ることができる",
+     "text_sha256": "f24ed778d2e143b14b7950909b7253ccaae39666e87fb8e179127cea833dc061",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "92",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟記録中に当事者の私生活についての重大な秘密が記載され、又は記録されており",
+     "text_sha256": "f24ed778d2e143b14b7950909b7253ccaae39666e87fb8e179127cea833dc061",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-minso-q35-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minso-q35-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。92条1項の制限は、閲覧等の請求をすることができる者を「当事者に限る」ものであり、相手方当事者の謄写の請求を制限することはできない。",
+   "body": "誤りは「相手方当事者の謄写の請求を制限することができる」の部分です。民事訴訟法92条1項による制限の内容は、秘密記載部分の閲覧等の「請求をすることができる者を当事者に限ることができる」というものです。同項1号も「第三者が秘密記載部分の閲覧等を行うことにより」支障を生ずるおそれを要件としており、制限の対象は第三者です。当事者は制限後も閲覧等の請求をすることができるので、相手方当事者の謄写の請求を制限することはできず、本肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "92",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "請求をすることができる者を当事者に限ることができる",
+     "text_sha256": "f24ed778d2e143b14b7950909b7253ccaae39666e87fb8e179127cea833dc061",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "92",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三者が秘密記載部分の閲覧等を行うことにより",
+     "text_sha256": "f24ed778d2e143b14b7950909b7253ccaae39666e87fb8e179127cea833dc061",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-minso-q35-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-minso-q35-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。第三者は、92条1項の要件を欠くに至ったことを理由として、閲覧等の制限の決定の取消しを申し立てることができる（92条3項）。",
+   "body": "ポイントは、制限決定の後に事情が変わった場合の救済です。民事訴訟法92条3項は「秘密記載部分の閲覧等の請求をしようとする第三者は、訴訟記録の存する裁判所に対し、第一項に規定する要件を欠くこと又はこれを欠くに至ったことを理由として、同項の決定の取消しの申立てをすることができる」と定めています。決定後に当該部分が秘密でなくなった場合は、要件を「欠くに至った」場合に当たります。したがって、第三者は決定の取消しの申立てをすることができ、本肢は正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "92",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "秘密記載部分の閲覧等の請求をしようとする第三者は、訴訟記録の存する裁判所に対し、第一項に規定する要件を欠くこと又はこれを欠くに至ったことを理由として、同項の決定の取消しの申立てをすることができる",
+     "text_sha256": "f24ed778d2e143b14b7950909b7253ccaae39666e87fb8e179127cea833dc061",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-minso-q35-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

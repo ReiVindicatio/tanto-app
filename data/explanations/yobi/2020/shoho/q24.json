@@ -1,0 +1,221 @@
+{
+ "question_id": "yobi-2020-shoho-q24",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q24-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：設立登記までに出資の全部を履行しなければならないのは合同会社の社員になろうとする者であり（会社法578条）、合名会社には同様の規定がない。",
+   "body": "本肢は、合同会社についての規律を合名会社に当てはめている点で誤りである。578条は「設立しようとする持分会社が合同会社である場合には、当該合同会社の社員になろうとする者は、定款の作成後、合同会社の設立の登記をする時までに、その出資に係る金銭の全額を払い込み、又はその出資に係る金銭以外の財産の全部を給付しなければならない。」と定め、対象を合同会社に限っている。合名会社の社員は会社債権者に対して無限責任を負うため、設立時に出資の全部の履行を求める規定は置かれておらず、設立登記の時までに出資を履行する必要はないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "578",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設立しようとする持分会社が合同会社である場合には、当該合同会社の社員になろうとする者は、定款の作成後、合同会社の設立の登記をする時までに、その出資に係る金銭の全額を払い込み、又はその出資に係る金銭以外の財産の全部を給付しなければならない。",
+     "text_sha256": "2239489549e1499e25708061783a41192d028c59ce90b3ca078309f6687bfaf2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "合名会社について設立時の出資の履行を要しないとする点は、578条が合同会社に限っていることからの解釈による。"
+   ],
+   "id": "exp-yobi-2020-shoho-q24-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q24-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：有限責任社員が無限責任社員となった場合、その前に生じた会社の債務についても無限責任社員として弁済する責任を負う（会社法583条1項）。",
+   "body": "誤りは、無限責任社員となる前に生じた債務について責任を負わないとしている部分である。583条1項は、「有限責任社員が無限責任社員となった場合には、当該無限責任社員となった者は、その者が無限責任社員となる前に生じた持分会社の債務についても、無限責任社員としてこれを弁済する責任を負う。」と定める。したがって、従前の債務についても無限責任を負う。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "583",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "有限責任社員が無限責任社員となった場合には、当該無限責任社員となった者は、その者が無限責任社員となる前に生じた持分会社の債務についても、無限責任社員としてこれを弁済する責任を負う。",
+     "text_sha256": "79f6f44caf34dc22d6fdcbc9a33261d892aeb782960e7f3b51de9fdbe5e8c272",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q24-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q24-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：社員の持分の差押えは、持分の払戻しを請求する権利に対しても効力を有する（会社法611条7項）。",
+   "body": "611条7項は、「社員の持分の差押えは、持分の払戻しを請求する権利に対しても、その効力を有する。」と定める。この規定は持分会社の社員一般に適用され、合資会社の社員も含まれる。よって本肢は条文どおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "611",
+     "paragraphs": [
+      "7"
+     ],
+     "quote": "社員の持分の差押えは、持分の払戻しを請求する権利に対しても、その効力を有する。",
+     "text_sha256": "e1d64f6bd124e81702c8d8d4cb781d949071bf6b55f2c13cde0f1465d0a6396c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q24-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q24-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：持分会社は会計帳簿と各事業年度の計算書類を作成し、それぞれ10年間保存しなければならない（会社法615条・617条）。",
+   "body": "615条1項は「持分会社は、法務省令で定めるところにより、適時に、正確な会計帳簿を作成しなければならない。」とし、同条2項は会計帳簿の閉鎖の時から十年間の保存を求める。617条2項は、持分会社が「各事業年度に係る計算書類」を作成しなければならないとし、同条4項は「持分会社は、計算書類を作成した時から十年間、これを保存しなければならない。」と定める。これらは合名会社を含む持分会社一般の規律であるから、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "615",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "持分会社は、法務省令で定めるところにより、適時に、正確な会計帳簿を作成しなければならない。",
+     "text_sha256": "bed84b317c21840f08aa985d661e2b5243400dea21c8b45d125e11202b14aee4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "615",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "持分会社は、会計帳簿の閉鎖の時から十年間、その会計帳簿及びその事業に関する重要な資料を保存しなければならない。",
+     "text_sha256": "bed84b317c21840f08aa985d661e2b5243400dea21c8b45d125e11202b14aee4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "617",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "各事業年度に係る計算書類",
+     "text_sha256": "711ddeba8486f56ab84f82fb76a49b6d11a658dad26540c0d05bc390796863a7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "617",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "持分会社は、計算書類を作成した時から十年間、これを保存しなければならない。",
+     "text_sha256": "711ddeba8486f56ab84f82fb76a49b6d11a658dad26540c0d05bc390796863a7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q24-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q24-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：合同会社は、社員の全部を無限責任社員とする定款の変更により合名会社となる（会社法638条3項1号）。",
+   "body": "638条3項は、「合同会社は、次の各号に掲げる定款の変更をすることにより、当該各号に定める種類の持分会社となる。」と定め、その1号で「その社員の全部を無限責任社員とする定款の変更」をしたときは合名会社となるとする。よって本肢は条文どおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "638",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "合同会社は、次の各号に掲げる定款の変更をすることにより、当該各号に定める種類の持分会社となる。",
+     "text_sha256": "9a88e7a51f1e4842434d032030b5d9bfad9bac1d15ccb675eb52897d0a0f9ae7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "638",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "その社員の全部を無限責任社員とする定款の変更",
+     "text_sha256": "9a88e7a51f1e4842434d032030b5d9bfad9bac1d15ccb675eb52897d0a0f9ae7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q24-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

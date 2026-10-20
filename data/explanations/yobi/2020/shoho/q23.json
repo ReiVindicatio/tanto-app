@@ -1,0 +1,291 @@
+{
+ "question_id": "yobi-2020-shoho-q23",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q23-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：自己株式の消却により発行済株式の総数は減少するが、減少するのはその他資本剰余金であり、資本金の額は減少しない（会社計算規則24条3項）。",
+   "body": "178条1項は、「株式会社は、自己株式を消却することができる。」と定める。消却により株式そのものが消滅するから、発行済株式の総数は減少する。他方、会社計算規則24条3項は、「株式会社が自己株式の消却をする場合には、自己株式の消却後のその他資本剰余金の額は、当該自己株式の消却の直前の当該額から当該消却する自己株式の帳簿価額を減じて得た額とする。」と定めており、消却によって減るのはその他資本剰余金である。資本金の額を減少するには、447条の資本金の額の減少の手続が別に必要である。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "178",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、自己株式を消却することができる。",
+     "text_sha256": "98d5f471056d09ed46576f0472822ceb6392b4f03b673be8c6303cdf13604dd6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "24",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "株式会社が自己株式の消却をする場合には、自己株式の消却後のその他資本剰余金の額は、当該自己株式の消却の直前の当該額から当該消却する自己株式の帳簿価額を減じて得た額とする。",
+     "text_sha256": "a43f42b08c7162c8fb867b050fc9ac6ad2c595ec68b945bb71d1881ba1067e0e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "447",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、資本金の額を減少することができる。",
+     "text_sha256": "1f9119bc0b062175b70a3c1d195b7427c21a0a2479816ec33ef4aa46c3ab3ed5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q23-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q23-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：株式の併合は複数の株式を合わせてより少ない数の株式とするものであり、発行済株式の総数は減少するが、資本金の額は変わらない。",
+   "body": "180条1項は、「株式会社は、株式の併合をすることができる。」と定め、同条2項1号は株主総会で「併合の割合」を定めるとする。併合により株式の数がその割合で減るから、発行済株式の総数は減少する。しかし、併合は会社に財産の出入りを生じさせるものではなく、資本金の額を減少させる旨の規定もない。資本金の額を減少するには、447条1項の「株主総会の決議によって」減少する資本金の額等を定める手続を別に経る必要がある。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "180",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、株式の併合をすることができる。",
+     "text_sha256": "c746a1a010e653ebcf92eef7a45833b2cad066b3e8f3426a4c2c08b17efe8aac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "180",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "併合の割合",
+     "text_sha256": "c746a1a010e653ebcf92eef7a45833b2cad066b3e8f3426a4c2c08b17efe8aac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "447",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の決議によって",
+     "text_sha256": "1f9119bc0b062175b70a3c1d195b7427c21a0a2479816ec33ef4aa46c3ab3ed5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q23-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q23-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：自己株式の処分だけでは、株式発行割合が零となり資本金等増加限度額も零となるから、資本金の額は増加しない（会社計算規則14条1項）。",
+   "body": "誤りは、自己株式の処分により資本金の額が増加するとする部分である。自己株式の処分は既に発行されている株式を交付するものであるから、発行済株式の総数が増加しない点は正しい。資本金の額について、445条1項は、資本金の額を「設立又は株式の発行に際して株主となる者が当該株式会社に対して払込み又は給付をした財産の額」としており、自己株式の処分はこれに当たらない。会社計算規則14条1項は、募集株式の募集の場合の資本金等増加限度額を、払込額等に「株式発行割合（当該募集に際して発行する株式の数を当該募集に際して発行する株式の数及び処分する自己株式の数の合計数で除して得た割合をいう。以下この条において同じ。）」を乗じて算定するとしている。自己株式の処分のみであれば発行する株式の数が零であるから株式発行割合は零となり、資本金の額は増加しない（払込額は、同条2項によりその他資本剰余金の額の計算に反映される）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "445",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設立又は株式の発行に際して株主となる者が当該株式会社に対して払込み又は給付をした財産の額",
+     "text_sha256": "96e4c4e13ca75e4f06a3e6da8166bbace9af8037f7f88af2534e23b63a7268c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "14",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式発行割合（当該募集に際して発行する株式の数を当該募集に際して発行する株式の数及び処分する自己株式の数の合計数で除して得た割合をいう。以下この条において同じ。）",
+     "text_sha256": "3acb11e205553506989018a9ffd2fc1ddef9e63c05431daba1876dacde02c554",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "14",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その他資本剰余金の額",
+     "text_sha256": "3acb11e205553506989018a9ffd2fc1ddef9e63c05431daba1876dacde02c554",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q23-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q23-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：資本金の額は業績に連動して増減するものではなく、株式の発行等の際の払込み等（445条1項）や、資本金の額の減少（447条）・増加（450条）の手続によってのみ変動する。",
+   "body": "誤りは、資本金の額が業績と連動して増減するとする部分である。445条1項は、資本金の額を、法律に別段の定めがある場合を除き「設立又は株式の発行に際して株主となる者が当該株式会社に対して払込み又は給付をした財産の額」とする。資本金の額を減少するには447条1項により「株主総会の決議によって」減少する資本金の額等を定める必要があり、剰余金を資本金に組み入れるにも450条1項・2項の手続を要する。業績による利益や損失は剰余金の額に反映されるにとどまり、資本金の額は自動的には変動しない。資本金は会社財産を確保するための基準となる一定の計数であると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "445",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設立又は株式の発行に際して株主となる者が当該株式会社に対して払込み又は給付をした財産の額",
+     "text_sha256": "96e4c4e13ca75e4f06a3e6da8166bbace9af8037f7f88af2534e23b63a7268c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "447",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の決議によって",
+     "text_sha256": "1f9119bc0b062175b70a3c1d195b7427c21a0a2479816ec33ef4aa46c3ab3ed5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "450",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、剰余金の額を減少して、資本金の額を増加することができる。",
+     "text_sha256": "99c667fc7fffe9a3f160d44c6acc4390714d4de49a322fa43827325b0b6b7e47",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "450",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項各号に掲げる事項の決定は、株主総会の決議によらなければならない。",
+     "text_sha256": "99c667fc7fffe9a3f160d44c6acc4390714d4de49a322fa43827325b0b6b7e47",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q23-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q23-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：発行済株式の総数は登記事項であり（911条3項9号）、変更が生じたときは変更の登記をしなければならない（915条1項）。",
+   "body": "911条3項は株式会社の登記事項として、9号に「発行済株式の総数並びにその種類及び種類ごとの数」を挙げている。そして915条1項は、「会社において第九百十一条第三項各号又は前三条各号に掲げる事項に変更が生じたときは、二週間以内に、その本店の所在地において、変更の登記をしなければならない。」と定める。したがって、発行済株式の総数が増加し又は減少したときは、変更の登記をしなければならず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "911",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "発行済株式の総数並びにその種類及び種類ごとの数",
+     "text_sha256": "56343fd3641b8d54245c3b12bab878cbdf7e9de83d41e9e0d92349ec4858cda2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "915",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社において第九百十一条第三項各号又は前三条各号に掲げる事項に変更が生じたときは、二週間以内に、その本店の所在地において、変更の登記をしなければならない。",
+     "text_sha256": "9ebbe51e21c5432f6047b17389ce62b18f65d50e9a26f60ebd18a4a7713b68f9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q23-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

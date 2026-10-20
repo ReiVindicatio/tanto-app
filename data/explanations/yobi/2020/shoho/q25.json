@@ -1,0 +1,255 @@
+{
+ "question_id": "yobi-2020-shoho-q25",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q25-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：解散した株式会社は、自らが存続する合併をすることができない（会社法474条1号）。",
+   "body": "474条は、「株式会社が解散した場合には、当該株式会社は、次に掲げる行為をすることができない。」とし、その1号で「合併（合併により当該株式会社が存続する場合に限る。）」を挙げる。したがって、清算をする株式会社は、自らを存続会社とする吸収合併をすることができない。なお、清算株式会社が消滅会社となる合併は、この制限の対象とされていない。本肢は条文どおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "474",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社が解散した場合には、当該株式会社は、次に掲げる行為をすることができない。",
+     "text_sha256": "5b0962df75c15f96b239c9dceb9a751307945d77cc78dc9dd18ac475a3d2a59a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "474",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "合併（合併により当該株式会社が存続する場合に限る。）",
+     "text_sha256": "5b0962df75c15f96b239c9dceb9a751307945d77cc78dc9dd18ac475a3d2a59a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q25-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q25-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：略式組織再編の例外（784条1項ただし書）は吸収合併・株式交換に限られ、吸収分割では、承継会社が特別支配会社であれば吸収分割会社の株主総会決議は要しない。",
+   "body": "784条1項本文は、株主総会決議による承認を定める783条1項の規定は、「吸収合併存続会社、吸収分割承継会社又は株式交換完全親会社（以下この目において「存続会社等」という。）が消滅株式会社等の特別支配会社である場合には、適用しない」とする。同項ただし書は、「吸収合併又は株式交換における合併対価等の全部又は一部が譲渡制限株式等である場合であって、消滅株式会社等が公開会社であり、かつ、種類株式発行会社でないときは、この限りでない。」と定めるが、その対象は吸収合併と株式交換であり、吸収分割は含まれていない。したがって、吸収分割承継会社が吸収分割会社の特別支配会社であれば、譲渡制限株式を交付する場合でも、吸収分割会社は株主総会の決議による承認を受ける必要はない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "784",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収合併存続会社、吸収分割承継会社又は株式交換完全親会社（以下この目において「存続会社等」という。）が消滅株式会社等の特別支配会社である場合には、適用しない",
+     "text_sha256": "0fd2760dec8a5c1c23dcbbd693db3aa09f68af93eebd7c40d757f071f3f7bce3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "784",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収合併又は株式交換における合併対価等の全部又は一部が譲渡制限株式等である場合であって、消滅株式会社等が公開会社であり、かつ、種類株式発行会社でないときは、この限りでない。",
+     "text_sha256": "0fd2760dec8a5c1c23dcbbd693db3aa09f68af93eebd7c40d757f071f3f7bce3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "783",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "消滅株式会社等は、効力発生日の前日までに、株主総会の決議によって、吸収合併契約等の承認を受けなければならない。",
+     "text_sha256": "b1b24b9cb0fabd3f6137dd2837152050ea21919af582ba309ffb93281f567925",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q25-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q25-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例は、吸収合併等（株式交換を含む）の反対株主の株式買取請求に係る「公正な価格」を、株式買取請求がされた日を基準として定めるとしている。",
+   "body": "誤りは、基準日を株式交換の効力発生日としている部分である。782条1項は、「吸収合併、吸収分割又は株式交換（以下この節において「吸収合併等」という。）」と定義しており、株式交換は「吸収合併等」に含まれる。最高裁平成23年4月26日決定は、782条1項所定の吸収合併等によりシナジーその他の企業価値の増加が生じない場合の反対株主の株式買取請求に係る「公正な価格」は、原則として、株式買取請求がされた日における、吸収合併契約等を承認する株主総会の決議がされることがなければその株式が有したであろう価格をいうとした。したがって、判例の趣旨によれば、基準日は株式買取請求がされた日であり、効力発生日ではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "782",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収合併、吸収分割又は株式交換（以下この節において「吸収合併等」という。）",
+     "text_sha256": "afa17efbf624ba2fe60bf7336670959d5bd23486578102fbdfc9856654767248",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "785",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "反対株主は、消滅株式会社等に対し、自己の有する株式を公正な価格で買い取ることを請求することができる。",
+     "text_sha256": "97607594fbf2696764a8ecdd120094d239bf8bcf2e5a2eb7613ab5259427149d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "株式買取価格決定に対する抗告審の変更決定に対する許可抗告事件（平成22(許)47）",
+     "court": "最高裁判所第三小法廷",
+     "date": "2011-04-26",
+     "holding": "782条1項所定の吸収合併等によりシナジーその他の企業価値の増加が生じない場合、反対株主の株式買取請求に係る「公正な価格」は、原則として、株式買取請求がされた日における、吸収合併契約等を承認する株主総会決議がされなければその株式が有したであろう価格をいうとした（決定）。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/81307/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "確認した裁判例検索のページの裁判要旨は「吸収合併等」と表記しており、当該事案が株式交換であったことはページ上では確認していない。株式交換が「吸収合併等」に含まれることは782条1項の定義による。"
+   ],
+   "id": "exp-yobi-2020-shoho-q25-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q25-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：新設合併には略式手続の規定がなく、消滅会社は特別支配関係があっても株主総会の決議による承認を要する（会社法804条1項）。",
+   "body": "本肢は、吸収型再編の略式手続（784条1項）を新設合併に当てはめている点で誤りである。784条1項は、「吸収合併存続会社、吸収分割承継会社又は株式交換完全親会社」が特別支配会社である場合の規定であり、新設合併には及ばない。新設合併については804条1項が「消滅株式会社等は、株主総会の決議によって、新設合併契約等の承認を受けなければならない。」と定め、特別支配会社がある場合の例外は置かれていない。したがって、甲社が乙社の特別支配会社であっても、乙社は株主総会の決議による承認を受けなければならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "804",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "消滅株式会社等は、株主総会の決議によって、新設合併契約等の承認を受けなければならない。",
+     "text_sha256": "c46f3ac2e6be452fd6e5ccd10ec1e7342dd3be7ad5941cbbe83cdc397722c06f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "784",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収合併存続会社、吸収分割承継会社又は株式交換完全親会社",
+     "text_sha256": "0fd2760dec8a5c1c23dcbbd693db3aa09f68af93eebd7c40d757f071f3f7bce3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q25-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-shoho-q25-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：株主総会において議決権を行使することができない株主も「反対株主」に当たり、株式買取請求ができる（会社法806条2項2号）。",
+   "body": "誤りは、議決権を行使できない株主は買取請求ができないとしている部分である。806条1項は、新設合併等をする場合には「反対株主は、消滅株式会社等に対し、自己の有する株式を公正な価格で買い取ることを請求することができる。」と定める。そして同条2項は「反対株主」として、株主総会に先立って反対の通知をし、かつ総会で反対した株主（議決権を行使できるものに限る）のほか、2号で「当該株主総会において議決権を行使することができない株主」を挙げている。したがって、議決権を行使できない株主も、新設分割会社に対して株式買取請求をすることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "806",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "反対株主は、消滅株式会社等に対し、自己の有する株式を公正な価格で買い取ることを請求することができる。",
+     "text_sha256": "f095091d20e7cbfa8d6c62bb686a598164917522d066651206ca27c6bd13b35f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "806",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該株主総会において議決権を行使することができない株主",
+     "text_sha256": "f095091d20e7cbfa8d6c62bb686a598164917522d066651206ca27c6bd13b35f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-shoho-q25-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
