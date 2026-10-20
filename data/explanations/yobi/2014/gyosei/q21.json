@@ -1,0 +1,227 @@
+{
+ "question_id": "yobi-2014-gyosei-q21",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-gyosei-q21-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：審査請求ができる場合でも、審査請求前置の定めがない限り、直ちに取消訴訟を提起できる（自由選択主義、行政事件訴訟法8条1項）。",
+   "body": "行政事件訴訟法8条1項本文は「処分の取消しの訴えは、当該処分につき法令の規定により審査請求をすることができる場合においても、直ちに提起することを妨げない。」と定め、審査請求と取消訴訟のどちらを選ぶかを当事者に委ねている（自由選択主義）。例外は、同項ただし書の「法律に当該処分についての審査請求に対する裁決を経た後でなければ処分の取消しの訴えを提起することができない旨の定めがあるとき」（審査請求前置）に限られる。本肢の「法律に特段の定めのない限り」はこの例外を指しており、本肢は条文どおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "8",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "処分の取消しの訴えは、当該処分につき法令の規定により審査請求をすることができる場合においても、直ちに提起することを妨げない。",
+     "text_sha256": "ef2ff5ce86c5e1f1f93b9a5179f3b74921e7b2b468594bb50f289ac4287ad08d",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "8",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律に当該処分についての審査請求に対する裁決を経た後でなければ処分の取消しの訴えを提起することができない旨の定めがあるとき",
+     "text_sha256": "ef2ff5ce86c5e1f1f93b9a5179f3b74921e7b2b468594bb50f289ac4287ad08d",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-gyosei-q21-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-gyosei-q21-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：処分の取消しの訴えと裁決の取消しの訴えは関連請求として併合「することができる」にとどまり、併合して提起しなければならないわけではない。",
+   "body": "決め手は「併合して提起しなければならない」という部分である。行政事件訴訟法13条は、関連請求として「当該処分に係る裁決の取消しの請求」（3号）や「当該裁決に係る処分の取消しの請求」（4号）を挙げ、16条1項は「取消訴訟には、関連請求に係る訴えを併合することができる。」と定める。このように、処分の取消しの訴えと裁決の取消しの訴えの併合は任意であり、それぞれ別に提起することもできる。なお、両方の訴えを提起できる場合には、10条2項により裁決の取消しの訴えでは処分の違法を主張できない（原処分主義）が、これは主張の制限であって、併合を義務づけるものではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該処分に係る裁決の取消しの請求",
+     "text_sha256": "33235bdf214c77f4a1ce6044516c0c79326f75b1e8dabbb04740473291e7edc7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該裁決に係る処分の取消しの請求",
+     "text_sha256": "33235bdf214c77f4a1ce6044516c0c79326f75b1e8dabbb04740473291e7edc7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "16",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取消訴訟には、関連請求に係る訴えを併合することができる。",
+     "text_sha256": "0c541132edfb6a9d6a0076ef2a91ca8e4b336c2d205bcc6d4999a35315249eda",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "10",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "処分の取消しの訴えとその処分についての審査請求を棄却した裁決の取消しの訴えとを提起することができる場合には、裁決の取消しの訴えにおいては、処分の違法を理由として取消しを求めることができない。",
+     "text_sha256": "1d1fe25fde819c0e058abe9d1130a0c643f7e3b21aca3aeaa6abd4115e107218",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-gyosei-q21-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-gyosei-q21-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：裁決主義の下では原処分の取消しの訴えが提起できないため、10条2項の原処分主義は働かず、裁決の取消しの訴えの中で原処分の違法も主張できると解されている。",
+   "body": "行政事件訴訟法10条2項は「処分の取消しの訴えとその処分についての審査請求を棄却した裁決の取消しの訴えとを提起することができる場合には、裁決の取消しの訴えにおいては、処分の違法を理由として取消しを求めることができない。」と定める（原処分主義）。この制限は、処分の取消しの訴えと裁決の取消しの訴えの両方を提起できることを前提としている。これに対し、個別の法律が、原処分についての取消訴訟を認めず裁決に対してのみ取消訴訟を提起できるとする場合（裁決主義）には、10条2項の前提を欠く。そのため、裁決の取消しの訴えにおいて原処分の違法を主張することができると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "10",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "処分の取消しの訴えとその処分についての審査請求を棄却した裁決の取消しの訴えとを提起することができる場合には、裁決の取消しの訴えにおいては、処分の違法を理由として取消しを求めることができない。",
+     "text_sha256": "1d1fe25fde819c0e058abe9d1130a0c643f7e3b21aca3aeaa6abd4115e107218",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "裁決主義の下で原処分の違法を主張できるという点は、10条2項の文言（「提起することができる場合には」）からの解釈による。裁決主義を定める個別法の条文は引用していない。"
+   ],
+   "id": "exp-yobi-2014-gyosei-q21-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-gyosei-q21-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：指定確認検査機関は国又は公共団体に所属しない行政庁であるから、その建築確認の取消訴訟は、当該機関自身を被告とする（11条2項）。指定した国・地方公共団体を被告とするのは誤り。",
+   "body": "決め手は「指定した国土交通大臣又は都道府県知事の所属する国又は地方公共団体が被告となる」という部分である。行政事件訴訟法11条1項は、処分をした行政庁が「国又は公共団体に所属する場合」に、その行政庁の所属する国又は公共団体を被告とすると定めるが、同条2項は「処分又は裁決をした行政庁が国又は公共団体に所属しない場合には、取消訴訟は、当該行政庁を被告として提起しなければならない。」と定める。建築基準法6条の2第1項は、国土交通大臣又は都道府県知事が「指定した者の確認」を受けて確認済証の交付を受けたときは「当該確認は前条第一項の規定による確認と、当該確認済証は同項の確認済証とみなす」としており、指定確認検査機関は自ら確認という処分をする者である。指定確認検査機関は国や地方公共団体に所属しない民間の機関であるから、その確認の取消訴訟は、11条2項により当該機関を被告として提起することになる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国又は公共団体に所属する場合",
+     "text_sha256": "b1e45a27d1196e5dd4f255c197e79072067c94c288ce0dc61fe0b3e7ad44b7a9",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "11",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "処分又は裁決をした行政庁が国又は公共団体に所属しない場合には、取消訴訟は、当該行政庁を被告として提起しなければならない。",
+     "text_sha256": "b1e45a27d1196e5dd4f255c197e79072067c94c288ce0dc61fe0b3e7ad44b7a9",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "建築基準法",
+     "article": "6_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "指定した者の確認",
+     "text_sha256": "525d07e831e3e791b68ca3bb30a6a3b6020fcdcb91a70d2da40937eb37479f38",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "建築基準法",
+     "article": "6_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該確認は前条第一項の規定による確認と、当該確認済証は同項の確認済証とみなす",
+     "text_sha256": "525d07e831e3e791b68ca3bb30a6a3b6020fcdcb91a70d2da40937eb37479f38",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "指定確認検査機関が国又は公共団体に所属しない行政庁に当たるという点は解釈による。指定確認検査機関の確認に関する判例は探していない。"
+   ],
+   "id": "exp-yobi-2014-gyosei-q21-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

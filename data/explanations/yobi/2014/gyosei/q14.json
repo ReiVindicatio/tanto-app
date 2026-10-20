@@ -1,0 +1,196 @@
+{
+ "question_id": "yobi-2014-gyosei-q14",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-gyosei-q14-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。基準(a)は登録を受ける義務がある者の範囲を示すもので、申請された登録をするかどうかを判断する基準（審査基準）ではない。",
+   "body": "ポイントは、基準(a)が何を判断するための基準かである。行政手続法2条8号ロは、審査基準を「申請により求められた許認可等をするかどうかをその法令の定めに従って判断するために必要とされる基準」と定義している。基準(a)は、登録を義務付ける規定にいう「採石業を行おうとする者」の意味、つまり誰が登録を受けなければならないかを示すものであり、登録の申請があったときに登録をするか拒否するかを判断する基準ではない。前提文の参照条文によれば、都道府県知事は、登録の申請があったときは登録拒否の規定により拒否する場合を除いて登録しなければならないとされており、基準(a)はこの登録・拒否の判断に使う基準ではないから、審査基準に当たらない。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申請により求められた許認可等をするかどうかをその法令の定めに従って判断するために必要とされる基準",
+     "text_sha256": "0f14b2fd80120df5b7a9ddeb3a5e2eeaa057c2cc84185aad9ddc891d76983c14",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "採石法は保存済みの法令（LAWS）にないため、採石法の条文は問題文の前提文（参照条文）だけを根拠にした。",
+    "基準(a)が審査基準に当たらないという整理は、審査基準の定義に照らした解釈による。"
+   ],
+   "id": "exp-yobi-2014-gyosei-q14-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-gyosei-q14-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。行政手続法5条1項は審査基準を「定めるものとする」としているが、法令の定めが十分具体的で判断基準が要らない場合には、定めなくてもよいと解されている。",
+   "body": "ポイントは、審査基準の設定義務に例外があるかどうかである。行政手続法5条1項は「行政庁は、審査基準を定めるものとする。」と定め、審査基準を定めることを原則として義務付けている。もっとも、審査基準は法令の定めに従って判断するために「必要とされる基準」（2条8号ロ）であるから、法令の定めが十分に具体的で、それ以上判断基準を設ける必要がない場合には、審査基準を定めないことも許されると解されている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行政庁は、審査基準を定めるものとする。",
+     "text_sha256": "6944fca98388317c931aec6c68029946e765f2c773441ee3275c03e562489625",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "審査基準（申請により求められた許認可等をするかどうかをその法令の定めに従って判断するために必要とされる基準をいう。以下同じ。）",
+     "text_sha256": "0f14b2fd80120df5b7a9ddeb3a5e2eeaa057c2cc84185aad9ddc891d76983c14",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "法令の定めが十分具体的な場合に審査基準を定めなくてよいという点は、条文に明記されておらず、解釈による。"
+   ],
+   "id": "exp-yobi-2014-gyosei-q14-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-gyosei-q14-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。法律に基づいて定められた経済産業省令は「法律に基づく命令」であり、審査基準ではない。",
+   "body": "ポイントは、省令が「法律に基づく命令」と「審査基準」のどちらに当たるかである。行政手続法2条8号は「命令等」として、イで「法律に基づく命令（処分の要件を定める告示を含む。次条第二項において単に「命令」という。）又は規則」を、ロで審査基準を、それぞれ別のものとして挙げている。本肢の経済産業省令（登録の申請書に添付する書類を定めるもの）は、法律の委任を受けて定められた法律に基づく命令であり、2条1号の「法令」に当たる。審査基準は、その法令の定めに従って許認可等をするかどうかを行政庁が判断するための基準であるから、法令そのものである省令は審査基準には当たらない。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律に基づく命令（処分の要件を定める告示を含む。次条第二項において単に「命令」という。）又は規則",
+     "text_sha256": "0f14b2fd80120df5b7a9ddeb3a5e2eeaa057c2cc84185aad9ddc891d76983c14",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法令　法律、法律に基づく命令（告示を含む。）、条例及び地方公共団体の執行機関の規則（規程を含む。以下「規則」という。）をいう。",
+     "text_sha256": "0f14b2fd80120df5b7a9ddeb3a5e2eeaa057c2cc84185aad9ddc891d76983c14",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "採石法は保存済みの法令（LAWS）にないため、省令の根拠規定の内容は問題文の前提文（参照条文）だけを根拠にした。"
+   ],
+   "id": "exp-yobi-2014-gyosei-q14-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-gyosei-q14-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。不利益処分の処分基準を定めることは、行政手続法12条1項で努力義務にとどまり、必ず定めなければならないものではない。",
+   "body": "ポイントは「必ず基準を定めなければならない」という部分である。本肢の不利益処分（前提文の参照条文にある登録の取消しや事業停止命令）は、特定の者の権利を制限し又は義務を課す処分であり、行政手続法の不利益処分に当たる。不利益処分をするかどうか又はどのような不利益処分とするかを判断する基準は処分基準であるが（2条8号ハ）、行政手続法12条1項は「行政庁は、処分基準を定め、かつ、これを公にしておくよう努めなければならない。」と定めるにとどまる。審査基準について5条1項が「定めるものとする」としているのと異なり、処分基準の設定は努力義務である。したがって、必ず基準を定めなければならないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "12",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行政庁は、処分基準を定め、かつ、これを公にしておくよう努めなければならない。",
+     "text_sha256": "6a4b0b3d4e7f2b644b737e7535a090da81871234a2372efbaf1ddba65a525584",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "処分基準（不利益処分をするかどうか又はどのような不利益処分とするかについてその法令の定めに従って判断するために必要とされる基準をいう。以下同じ。）",
+     "text_sha256": "0f14b2fd80120df5b7a9ddeb3a5e2eeaa057c2cc84185aad9ddc891d76983c14",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行政庁は、審査基準を定めるものとする。",
+     "text_sha256": "6944fca98388317c931aec6c68029946e765f2c773441ee3275c03e562489625",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "採石法は保存済みの法令（LAWS）にないため、登録の取消し等の規定の内容は問題文の前提文（参照条文）だけを根拠にした。"
+   ],
+   "id": "exp-yobi-2014-gyosei-q14-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
