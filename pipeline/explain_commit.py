@@ -51,7 +51,7 @@ def add_skips(pairs: list[list[str]]) -> None:
 
 
 def changed_questions() -> list[str]:
-    out = run("git", "status", "--porcelain", "--", "data/explanations")
+    out = run("git", "status", "--porcelain", "-uall", "--", "data/explanations")  # 新しいフォルダの中のファイルも1つずつ
     qs = []
     for line in out.splitlines():
         m = re.search(r"data/explanations/(\w+)/(\d+)/(\w+)/q(\d+)\.json", line)
