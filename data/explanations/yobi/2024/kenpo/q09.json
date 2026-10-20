@@ -1,0 +1,157 @@
+{
+ "question_id": "yobi-2024-kenpo-q09",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-kenpo-q09-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。衆議院が解散されると参議院は同時に閉会となり、審議中の議案は継続審査によって次の国会に持ち越されることはなく廃案となると解されている。",
+   "body": "誤りは「継続審査に付されることにより廃案とならず」とする部分である。憲法54条2項は「衆議院が解散されたときは、参議院は、同時に閉会となる。」と定める。国会法68条は「会期中に議決に至らなかつた案件は、後会に継続しない。」として会期不継続を原則とし、例外として同法47条2項による閉会中審査をした議案を挙げている。しかし、衆議院が解散されると、衆議院議員の地位が失われ、衆議院の議決もその効力を失うため、参議院で継続審査中であっても議案は廃案となると解されている。したがって、次の会期に参議院が可決しても、その議案が成立することはない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "54",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "衆議院が解散されたときは、参議院は、同時に閉会となる。",
+     "text_sha256": "8adc87b45a03a30a66ec95ef9156a969bc8cb221c7b06fd01474c100d520b8bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "68",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会期中に議決に至らなかつた案件は、後会に継続しない。",
+     "text_sha256": "9b9068a8aa631c9afd5e6a73f3e98810865ae239c2423dc6c4bb9173aa9c95cf",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "47",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "常任委員会及び特別委員会は、各議院の議決で特に付託された案件（懲罰事犯の件を含む。）については、閉会中もなお、これを審査することができる。",
+     "text_sha256": "de5b9b269398a56b9a102e554ace307fee65553efb2caff9562d607a516b1f58",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解散により衆議院の議決が効力を失い議案が廃案となる点は、条文に直接の定めがなく運用・解釈による"
+   ],
+   "id": "exp-yobi-2024-kenpo-q09-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-kenpo-q09-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。秘密会の記録も、特に秘密を要すると認められるもの以外は公表しなければならないので、「会議の記録も公表されることはない」が誤り。",
+   "body": "前半は正しい。憲法57条1項は「両議院の会議は、公開とする。但し、出席議員の三分の二以上の多数で議決したときは、秘密会を開くことができる。」と定めている。しかし、同条2項は「秘密会の記録の中で特に秘密を要すると認められるもの以外は、これを公表し、且つ一般に頒布しなければならない。」と定める。つまり、秘密会の記録であっても、特に秘密を要すると認められるもの以外は公表される。したがって、秘密会の記録は一切公表されないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "57",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "両議院の会議は、公開とする。但し、出席議員の三分の二以上の多数で議決したときは、秘密会を開くことができる。",
+     "text_sha256": "5ea7dc63f302d1b08c45008edc7eaed21c52681211be8e651ddbd938b74db3d5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "57",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "秘密会の記録の中で特に秘密を要すると認められるもの以外は、これを公表し、且つ一般に頒布しなければならない。",
+     "text_sha256": "5ea7dc63f302d1b08c45008edc7eaed21c52681211be8e651ddbd938b74db3d5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-kenpo-q09-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-kenpo-q09-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。53条のとおり、内閣は臨時会の召集を決定でき、いずれかの議院の総議員の4分の1以上の要求があれば召集を決定しなければならない。",
+   "body": "憲法53条前段は「内閣は、国会の臨時会の召集を決定することができる。」と定めており、国会閉会後に緊急の必要が生じた場合に内閣が臨時会を召集できることは、この規定による。同条後段は「いづれかの議院の総議員の四分の一以上の要求があれば、内閣は、その召集を決定しなければならない。」と定める。本肢の記述はいずれもこの条文の内容と一致しており、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "53",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣は、国会の臨時会の召集を決定することができる。",
+     "text_sha256": "e9c305c6b86a2a6ee3937f469385278c859806f907b0d73f83d7fdd238701ba0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "53",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "いづれかの議院の総議員の四分の一以上の要求があれば、内閣は、その召集を決定しなければならない。",
+     "text_sha256": "e9c305c6b86a2a6ee3937f469385278c859806f907b0d73f83d7fdd238701ba0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-kenpo-q09-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

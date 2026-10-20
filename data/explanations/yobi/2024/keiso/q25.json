@@ -1,0 +1,220 @@
+{
+ "question_id": "yobi-2024-keiso-q25",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-keiso-q25-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：起訴状一本主義に違反した公訴提起は無効であり、刑事訴訟法338条4号により判決で公訴を棄却する。",
+   "body": "刑事訴訟法256条6項は「起訴状には、裁判官に事件につき予断を生ぜしめる虞のある書類その他の物を添附し、又はその内容を引用してはならない。」と定める（起訴状一本主義）。判例は、予断を生じさせるおそれのある事項を起訴状に記載することは許されず、その違法は後から治癒することができないとしている（最高裁大法廷昭和27年3月5日判決）。そのため、起訴状一本主義に違反した公訴提起の手続は無効と解され、同法338条は「左の場合には、判決で公訴を棄却しなければならない。」とし、4号で「公訴提起の手続がその規定に違反したため無効であるとき。」を挙げている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "256",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "起訴状には、裁判官に事件につき予断を生ぜしめる虞のある書類その他の物を添附し、又はその内容を引用してはならない。",
+     "text_sha256": "fc5be8653b9dab80cae6f4e69f2764078f5656a91012259654f23d915922d93f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "338",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "左の場合には、判決で公訴を棄却しなければならない。",
+     "text_sha256": "c3cd1e9d9294210fd7c01a3c9ad3ab57f0d9977073d4ce1848307067fccb692c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "338",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公訴提起の手続がその規定に違反したため無効であるとき。",
+     "text_sha256": "c3cd1e9d9294210fd7c01a3c9ad3ab57f0d9977073d4ce1848307067fccb692c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "詐欺被告事件（昭和25(あ)1089）",
+     "court": "最高裁判所大法廷",
+     "date": "1952-03-05",
+     "holding": "公訴犯罪事実について裁判官に予断を生じさせるおそれのある事項を起訴状に記載することは許されず、その違法は性質上後から治癒できない。詐欺の公訴事実の冒頭に詐欺の前科を記載したことはこれに当たる。他方、前科が構成要件や犯行の手段方法など公訴事実の内容となる場合は、記載は適法である。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55519/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2024-keiso-q25-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-keiso-q25-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：前科が恐喝の手段・方法として公訴事実の内容をなす場合には、起訴状に記載しても刑事訴訟法256条6項に反しない。",
+   "body": "刑事訴訟法256条3項は、公訴事実は訴因を明示して記載し、訴因を明示するには「できる限り日時、場所及び方法を以て罪となるべき事実を特定してこれをしなければならない。」と定める。前科の事実を手段・方法として恐喝した場合、その前科は犯行の方法そのものであり、罪となるべき事実を特定するために必要な事項である。判例も、起訴状に前科を記載することは原則として予断を生じさせるおそれがあり許されないとしつつ、前科が犯行の手段方法など公訴事実の内容となっている場合には記載は適法としている（最高裁大法廷昭和27年3月5日判決）。また、恐喝の公訴事実中に被告人の性格・経歴・素行を記載した事案でも、それが恐喝の手段の内容をなすとして同条6項に違反しないとされている（最高裁第二小法廷昭和27年7月18日）。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "256",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "できる限り日時、場所及び方法を以て罪となるべき事実を特定してこれをしなければならない。",
+     "text_sha256": "fc5be8653b9dab80cae6f4e69f2764078f5656a91012259654f23d915922d93f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "256",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "起訴状には、裁判官に事件につき予断を生ぜしめる虞のある書類その他の物を添附し、又はその内容を引用してはならない。",
+     "text_sha256": "fc5be8653b9dab80cae6f4e69f2764078f5656a91012259654f23d915922d93f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "詐欺被告事件（昭和25(あ)1089）",
+     "court": "最高裁判所大法廷",
+     "date": "1952-03-05",
+     "holding": "起訴状に前科を記載することは原則として予断を生じさせるおそれがあり許されないが、前科が構成要件や犯行の手段方法など公訴事実の内容となる場合は、記載は適法である。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55519/detail2/index.html"
+     ]
+    },
+    {
+     "name": "恐喝被告事件（昭和25(あ)262）",
+     "court": "最高裁判所第二小法廷",
+     "date": "1952-07-18",
+     "holding": "恐喝の公訴事実中に被告人の性格・経歴・素行を記載しても、それが恐喝の手段の内容をなし、犯罪事実と直接関係のない事項ではない場合には、刑事訴訟法256条6項に違反しない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54407/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2024-keiso-q25-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-keiso-q25-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：裁判所は、証拠開示に関する裁定のため必要があれば、第1回公判期日前でも証拠の提示を命ずることができる。",
+   "body": "誤りは、第1回公判期日前には証拠の提示を求めることができないとした部分である。刑事訴訟法316条の27第1項は、「裁判所は、第三百十六条の二十五第一項又は前条第一項の請求について決定をするに当たり、必要があると認めるときは、検察官、被告人又は弁護人に対し、当該請求に係る証拠の提示を命ずることができる。」と定める。316条の25第1項（開示の時期・方法の指定等）と316条の26第1項（開示命令）の請求は、公判前整理手続における証拠開示に関する裁定の請求であり、公判前整理手続は、316条の2第1項のとおり裁判所が「第一回公判期日前に」事件を付して行う公判準備である。同項後段は、この場合「裁判所は、何人にも、当該証拠の閲覧又は謄写をさせることができない。」として、提示された証拠が他に広がらないよう配慮している。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_27",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、第三百十六条の二十五第一項又は前条第一項の請求について決定をするに当たり、必要があると認めるときは、検察官、被告人又は弁護人に対し、当該請求に係る証拠の提示を命ずることができる。",
+     "text_sha256": "a7f21840503e2e8d475331c43ba9888b5cb764e98dd33ee88b2a3a0f25c09dd0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_27",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、何人にも、当該証拠の閲覧又は謄写をさせることができない。",
+     "text_sha256": "a7f21840503e2e8d475331c43ba9888b5cb764e98dd33ee88b2a3a0f25c09dd0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_25",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "決定で、当該証拠の開示の時期若しくは方法を指定し、又は条件を付することができる。",
+     "text_sha256": "dbe281f012b6369086f52906bfd3cd0acd75799ee24fa7fe154943122e936f2f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_26",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方の請求により、決定で、当該証拠の開示を命じなければならない。",
+     "text_sha256": "fbe18e80677890ef03f8253917c4775b4077c4b36c120eb14fd2accbe4e7eb51",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第一回公判期日前に、決定で、事件の争点及び証拠を整理するための公判準備として、事件を公判前整理手続に付することができる。",
+     "text_sha256": "d51f63ae3bca4cb58d0f3939aaea342191b1e39f7638b828279255790b032134",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-keiso-q25-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

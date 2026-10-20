@@ -1,0 +1,142 @@
+{
+ "question_id": "yobi-2024-kenpo-q08",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-kenpo-q08-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。9条1項を自衛戦争は放棄していないと読む立場でも、2項後段は「国の交戦権は、これを認めない。」と明記しており、交戦権の否認と解することは十分にできる。",
+   "body": "誤りは「交戦権は否認されていると解することはできない」とする部分である。9条1項は「国際紛争を解決する手段としては、永久にこれを放棄する。」と定めており、この文言から、放棄されたのは侵略戦争であり自衛戦争は放棄されていないと読む考え方（限定放棄説）がある。しかし、同条2項後段は1項の解釈とは別に「国の交戦権は、これを認めない。」と定めている。そのため、1項について限定放棄説に立っても、2項によって戦力の不保持と交戦権の否認が定められている結果、自衛戦争を含めて事実上すべての戦争が行えなくなると解する考え方が有力とされている。したがって、1項の読み方から直ちに交戦権の否認を否定することはできず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国際紛争を解決する手段としては、永久にこれを放棄する。",
+     "text_sha256": "bbf47f26538fbb02c39b905ec1ea1577f4ca7f4b0c8e43b8657ba5fd7b2020be",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "9",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "国の交戦権は、これを認めない。",
+     "text_sha256": "bbf47f26538fbb02c39b905ec1ea1577f4ca7f4b0c8e43b8657ba5fd7b2020be",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "限定放棄説・2項による全面放棄の理解は解釈による"
+   ],
+   "id": "exp-yobi-2024-kenpo-q08-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-kenpo-q08-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。百里基地訴訟判決は、国の私法上の行為でも、実質的にみて公権力の発動たる行為と変わりがないといえる特段の事情があれば9条の直接適用を受けうるという留保を付けている。",
+   "body": "誤りは「特段の事情があったとしても、同条が直接適用されることはない」とする部分である。百里基地訴訟で最高裁は、9条は私法上の行為の効力を直接規律することを目的とした規定ではなく、私法上の行為には直接適用されないとした。そのうえで、国が私人と対等の立場で締結する私法上の契約は、その成立の経緯及び内容において実質的にみて公権力の発動たる行為となんら変わりがないといえるような特段の事情のない限り、9条の直接適用を受けないと判示した。つまり、特段の事情がある場合には直接適用の余地を残しており、本件の土地売買契約についてはそのような特段の事情は認められないとして直接適用を否定したものである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "9",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "陸海空軍その他の戦力は、これを保持しない。",
+     "text_sha256": "bbf47f26538fbb02c39b905ec1ea1577f4ca7f4b0c8e43b8657ba5fd7b2020be",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [
+    {
+     "name": "百里基地訴訟",
+     "court": "最高裁判所第三小法廷",
+     "date": "1989-06-20",
+     "holding": "9条は私法上の行為に直接適用されないが、国が私人と対等の立場で締結する私法上の契約は、実質的にみて公権力の発動たる行為と変わりがないといえる特段の事情のない限り、9条の直接適用を受けない。本件売買契約にはその特段の事情はない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52161/detail2/index.html",
+      "https://www.courts.go.jp/assets/hanrei/hanrei-pdf-52161.pdf"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2024-kenpo-q08-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-kenpo-q08-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。砂川事件判決は、わが国が主体となって指揮権・管理権を行使し得ない外国軍隊は、駐留していても9条2項の「戦力」に当たらないとした。",
+   "body": "9条2項前段は「陸海空軍その他の戦力は、これを保持しない。」と定める。砂川事件で最高裁大法廷は、同項が戦力の不保持を定めたのは、わが国が戦力を保持し、自らその主体となってこれに指揮権・管理権を行使することにより、1項で放棄した侵略戦争を引き起こすことのないようにするためであるとした。そのうえで、わが国が主体となって指揮権、管理権を行使し得ない外国軍隊は、たとえわが国に駐留するとしても「戦力」には該当しないと判示した。本肢の示す考え方はこの判示と一致しており、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "9",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "陸海空軍その他の戦力は、これを保持しない。",
+     "text_sha256": "bbf47f26538fbb02c39b905ec1ea1577f4ca7f4b0c8e43b8657ba5fd7b2020be",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [
+    {
+     "name": "砂川事件",
+     "court": "最高裁判所大法廷",
+     "date": "1959-12-16",
+     "holding": "9条2項の「戦力」は、わが国が主体となって指揮権・管理権を行使し得る戦力をいい、そうでない外国軍隊は、わが国に駐留するとしても「戦力」に該当しない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55816/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2024-kenpo-q08-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

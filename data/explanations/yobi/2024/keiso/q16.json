@@ -1,0 +1,205 @@
+{
+ "question_id": "yobi-2024-keiso-q16",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-keiso-q16-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。証拠とすることへの同意は被告人の権利であり、弁護人は被告人を代理して同意できるにとどまるから、被告人の明示した意思に反して同意することはできないと解されている。",
+   "body": "誤りは「被告人の明示した意思に反して、それを証拠とすることに同意することができる」という部分である。刑事訴訟法326条1項は「検察官及び被告人が証拠とすることに同意した書面又は供述」と定め、同意の主体を被告人としている。弁護人が独立して訴訟行為をすることができるのは、41条のとおり「この法律に特別の定のある場合に限り」であり、326条の同意について弁護人の独立の同意権を定めた規定はない。そのため、弁護人は被告人の包括的な代理権に基づいて同意をすることができるが、被告人の明示した意思に反して同意することはできないと解されている。判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "326",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官及び被告人が証拠とすることに同意した書面又は供述",
+     "text_sha256": "cbf06211cb6af8ed9b91f3b600116fa787ba90c9a431f062083c38993d4840e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "41",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁護人は、この法律に特別の定のある場合に限り、独立して訴訟行為をすることができる。",
+     "text_sha256": "2599f32412e9d3a8f44a4e125dec09407841965fbcfeca0c136294b6d37ed96c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "弁護人の同意が被告人の意思に反する場合の扱いは解釈による。関係する判例は裁判所の裁判例検索で2回探したが確認できなかった。"
+   ],
+   "id": "exp-yobi-2024-keiso-q16-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-keiso-q16-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。弁護人などによる証拠保全の請求は「第一回の公判期日前に限り」できるのであり、公訴の提起前に限られない。",
+   "body": "誤りは「公訴の提起前に限り」という部分である。刑事訴訟法179条1項は、被告人、被疑者又は弁護人は、あらかじめ証拠を保全しておかなければその証拠を使用することが困難な事情があるときは「第一回の公判期日前に限り」、裁判官に押収、捜索、検証、証人の尋問又は鑑定の処分を請求することができると定めている。したがって、公訴提起後であっても第一回の公判期日前であれば請求でき、肢は時期の限定を誤っている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第一回の公判期日前に限り",
+     "text_sha256": "2818ea57ac8ba177d13c02804e1af754ad7610dbb1484398466a90cfcf05b6a8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の179条1項には電磁的記録提供命令に関する文言が加わっているが、時期の限定（第一回の公判期日前に限り）は肢の正誤に関係する範囲で変わっていない。"
+   ],
+   "id": "exp-yobi-2024-keiso-q16-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-keiso-q16-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。原審における弁護人は被告人のため上訴できるが、その上訴は被告人の明示した意思に反してすることができない。",
+   "body": "刑事訴訟法355条は「原審における代理人又は弁護人は、被告人のため上訴をすることができる。」と定める。そのうえで356条は「前三条の上訴は、被告人の明示した意思に反してこれをすることができない。」と定めており、355条による弁護人の上訴もこれに含まれる。したがって、原審における弁護人は、被告人の明示した意思に反して上訴をすることができず、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "355",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "原審における代理人又は弁護人は、被告人のため上訴をすることができる。",
+     "text_sha256": "be936ece010ae4e6a55114667a99cd1aa36e0d01aff826fd00c97f1afc23b6df",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "356",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前三条の上訴は、被告人の明示した意思に反してこれをすることができない。",
+     "text_sha256": "79e299c05f5f660f4adebbd7bd5e99469bbfbc18d4b3629466a460dc807f1427",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-keiso-q16-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-keiso-q16-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。弁護人の立会権を定める113条は裁判所の行う差押え・捜索の規定であり、捜査機関の捜索差押えには準用されていないから、弁護人に立会権はない。",
+   "body": "誤りは「立ち会う権利を有する」という部分である。刑事訴訟法113条1項は「検察官、被告人又は弁護人は、差押状又は捜索状の執行に立ち会うことができる。」と定めるが、これは裁判所が行う差押え・捜索についての規定である。捜査機関が218条などによって行う押収・捜索に準用される規定を列挙した222条1項は、「第百十二条、第百十四条、第百十五条」と113条を飛ばしており、113条を準用していない。捜査機関の捜索差押えについては、222条6項が、捜査機関は必要があるときは「被疑者をこれに立ち会わせることができる」と定めるにとどまる。したがって、弁護人には捜査機関の捜索差押えに立ち会う権利はない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官、被告人又は弁護人は、差押状又は捜索状の執行に立ち会うことができる。",
+     "text_sha256": "aa9f1d209c913cea646f5ed7621e51e00dd5216c3391563a8e931de2f38663c0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百十二条、第百十四条、第百十五条",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "被疑者をこれに立ち会わせることができる。",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官、検察事務官又は司法警察職員は、犯罪の捜査をするについて必要があるときは、裁判官の発する令状により、差押え、捜索、電磁的記録提供命令又は検証をすることができる。",
+     "text_sha256": "954073f263edaa60047b785f6d0ee41b4ebde20c340041083ed979aa3578ed9f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "113条・222条は出題後に電磁的記録提供命令の導入に伴う改正を受けているが、222条1項が113条を準用しない点は肢の正誤に関係する範囲で変わっていないと考えられる。"
+   ],
+   "id": "exp-yobi-2024-keiso-q16-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
