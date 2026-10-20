@@ -1,0 +1,179 @@
+{
+ "question_id": "yobi-2019-gyosei-q16",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-gyosei-q16-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：地方公共団体の機関がする行政指導には、行政手続法の行政指導に関する規定は適用されない（行政手続法3条3項）。",
+   "body": "行政手続法2条5号ロは「地方公共団体の機関（議会を除く。）」も行政機関に含めているが、同法3条3項は「地方公共団体の機関がする処分（その根拠となる規定が条例又は規則に置かれているものに限る。）及び行政指導」について「次章から第六章までの規定は、適用しない。」と定めている。行政指導に関する規定（第四章）はこの範囲に含まれる。処分と異なり、行政指導については根拠規定が条例・規則に置かれているかを問わず、地方公共団体の機関がするものはすべて適用除外となる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地方公共団体の機関（議会を除く。）",
+     "text_sha256": "0f14b2fd80120df5b7a9ddeb3a5e2eeaa057c2cc84185aad9ddc891d76983c14",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "3",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "地方公共団体の機関がする処分（その根拠となる規定が条例又は規則に置かれているものに限る。）及び行政指導",
+     "text_sha256": "81bd470ed1ace6e1c7898b8f84c4704fd60b98737e03726d44e1bab8e4dd24fe",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "3",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "次章から第六章までの規定は、適用しない。",
+     "text_sha256": "81bd470ed1ace6e1c7898b8f84c4704fd60b98737e03726d44e1bab8e4dd24fe",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-gyosei-q16-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-gyosei-q16-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：行政指導は相手方の任意の協力によって実現されるものであり、任務・所掌事務の範囲内であれば個別の法律の根拠がなくてもできると解されている。",
+   "body": "行政手続法2条6号は、行政指導を「行政機関がその任務又は所掌事務の範囲内において一定の行政目的を実現するため特定の者に一定の作為又は不作為を求める指導、勧告、助言その他の行為であって処分に該当しないもの」と定義しており、個別の法律の根拠があることを要件としていない。また、同法32条1項は、行政指導の内容が「あくまでも相手方の任意の協力によってのみ実現されるものであること」に留意すべきとしている。このように行政指導は相手方に義務を課すものではないため、行政機関の任務・所掌事務の範囲内であれば、行政指導をすることができる旨の明文の規定（作用法上の根拠）がなくてもすることができると解されている。本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行政機関がその任務又は所掌事務の範囲内において一定の行政目的を実現するため特定の者に一定の作為又は不作為を求める指導、勧告、助言その他の行為であって処分に該当しないもの",
+     "text_sha256": "0f14b2fd80120df5b7a9ddeb3a5e2eeaa057c2cc84185aad9ddc891d76983c14",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "32",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "あくまでも相手方の任意の協力によってのみ実現されるものであること",
+     "text_sha256": "3ee6025e2a9cfe147a7957ea9e2da3df4b9f4586d8c766d0547d407544ef9618",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "法律の根拠が要らない点は解釈による（行政手続法に明文はない）。"
+   ],
+   "id": "exp-yobi-2019-gyosei-q16-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-gyosei-q16-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：行政指導に携わる者は、行政指導の趣旨及び内容並びに責任者を相手方に明確に示さなければならない（行政手続法35条1項）。",
+   "body": "誤りは「必ずしも…明確に示すことは要しない」という部分である。行政手続法35条1項は、「行政指導に携わる者は、その相手方に対して、当該行政指導の趣旨及び内容並びに責任者を明確に示さなければならない。」と定めている。行政指導が処分に該当しない行為であることは、この明示義務を免れる理由にならない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "35",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行政指導に携わる者は、その相手方に対して、当該行政指導の趣旨及び内容並びに責任者を明確に示さなければならない。",
+     "text_sha256": "9e6aa4c846fd0aac3cfb1884d81e5751f398578717c8dd256cb511f835481d0d",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-gyosei-q16-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-gyosei-q16-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：勧告に従わなかった旨の公表は、法令上の規定に基づくものであれば許されると解されている。",
+   "body": "行政手続法32条2項は、「行政指導に携わる者は、その相手方が行政指導に従わなかったことを理由として、不利益な取扱いをしてはならない。」と定めている。もっとも、個別の法令が、勧告に従わなかった場合にその旨を公表できると定めている例があり、このような法令の規定に基づく公表は、同項によって禁じられるものではないと解されている。本肢は、法令上の規定がある場合でも許されないとする点で誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "32",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "行政指導に携わる者は、その相手方が行政指導に従わなかったことを理由として、不利益な取扱いをしてはならない。",
+     "text_sha256": "3ee6025e2a9cfe147a7957ea9e2da3df4b9f4586d8c766d0547d407544ef9618",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "法令の規定に基づく公表が32条2項に反しない点は解釈による。"
+   ],
+   "id": "exp-yobi-2019-gyosei-q16-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

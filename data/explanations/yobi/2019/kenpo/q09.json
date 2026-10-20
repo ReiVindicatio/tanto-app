@@ -1,0 +1,233 @@
+{
+ "question_id": "yobi-2019-kenpo-q09",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-kenpo-q09-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：内閣総理大臣の任命も天皇の国事行為であり、3条により内閣の助言と承認が必要である。",
+   "body": "誤りは「内閣の助言と承認は不要である」とした点である。6条1項は「天皇は、国会の指名に基いて、内閣総理大臣を任命する。」と定め、内閣総理大臣の任命は、4条1項にいう「この憲法の定める国事に関する行為」の一つである。そして3条は「天皇の国事に関するすべての行為には、内閣の助言と承認を必要とし、内閣が、その責任を負ふ。」と定め、例外を設けていない。国会の指名があることは任命の内容を決めるものにすぎず、天皇が任命という国事行為を行う以上、内閣の助言と承認は必要であると解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "天皇は、国会の指名に基いて、内閣総理大臣を任命する。",
+     "text_sha256": "ea3c8ff86aec1a6e42c4cfbbe75cc8a52eb48d5f5794a19212a69dc4a5dc4c9c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この憲法の定める国事に関する行為",
+     "text_sha256": "40722c578615ba4541d6897cd25b560dc8aa7b42f40ae4ff398f8504857f5e36",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "天皇の国事に関するすべての行為には、内閣の助言と承認を必要とし、内閣が、その責任を負ふ。",
+     "text_sha256": "9324adf72c4635cda1e4ce7b47f8e3629aab50628ebc8262b35cfe204d89859a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "国会の指名に基づく任命にも内閣の助言と承認が必要とする点は、3条の「すべての行為」の文言と解釈による"
+   ],
+   "id": "exp-yobi-2019-kenpo-q09-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-kenpo-q09-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：国事行為の委任（4条2項）は、法律の定めるところにより天皇が内閣の助言と承認に基づいて行うもので、皇室典範の定める事由により当然に置かれる摂政（5条）とは異なる。",
+   "body": "ポイントは、国事行為の委任と摂政の違いである。4条2項は「天皇は、法律の定めるところにより、その国事に関する行為を委任することができる。」と定め、この「法律」として国事行為の臨時代行に関する法律が制定されている。委任は天皇自身の意思表示による行為であり、国事に関する行為として3条の「内閣の助言と承認」を要すると解されている。これに対し、5条は「皇室典範の定めるところにより摂政を置くとき」と定め、皇室典範16条2項は、天皇が「国事に関する行為をみずからすることができないとき」は「皇室会議の議により、摂政を置く」としており、摂政は天皇の委任によらずに置かれる法定代理の機関と解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "4",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "天皇は、法律の定めるところにより、その国事に関する行為を委任することができる。",
+     "text_sha256": "40722c578615ba4541d6897cd25b560dc8aa7b42f40ae4ff398f8504857f5e36",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣の助言と承認",
+     "text_sha256": "9324adf72c4635cda1e4ce7b47f8e3629aab50628ebc8262b35cfe204d89859a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "皇室典範の定めるところにより摂政を置くとき",
+     "text_sha256": "531560c6887a05ba5f29b2afb4d39df063abb4c1216cfe4b95fc57f8fa6a231c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "皇室典範",
+     "article": "16",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "国事に関する行為をみずからすることができないとき",
+     "text_sha256": "69ceeb5f4fdea63edffccde1e00d7f863395c8f4bea5654d19b97b340e438b58",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%89%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "皇室典範",
+     "article": "16",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "皇室会議の議により、摂政を置く",
+     "text_sha256": "69ceeb5f4fdea63edffccde1e00d7f863395c8f4bea5654d19b97b340e438b58",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%89%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "国事行為の臨時代行に関する法律は data/statutes/ に保存されていないため、同法の条文（委任の事由など）は引用していない。本肢の結論は憲法4条2項・5条と皇室典範16条で説明できる",
+    "委任自体に内閣の助言と承認が要るとする点、摂政を法定代理の機関とする点は解釈による"
+   ],
+   "id": "exp-yobi-2019-kenpo-q09-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-kenpo-q09-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：大嘗祭は宗教的性格を持つ皇室の伝統儀式であり、政教分離（20条3項）との関係から、7条10号の「儀式」として国事行為で行うことはできないと解されている。",
+   "body": "誤りは、大嘗祭が即位の礼と同様に7条10号の「儀式」にあたり、国事行為として行えるとした点である。7条は天皇が「内閣の助言と承認により」行う国事行為として「儀式を行ふこと」（10号）を挙げるが、国事行為は国家の行為であるから、20条3項の「国及びその機関は、宗教教育その他いかなる宗教的活動もしてはならない。」に服し、ここにいう「儀式」は宗教的性格のないものに限られると解されている。皇室典範24条は「皇位の継承があつたときは、即位の礼を行う。」と定めるが、大嘗祭は神道の儀式としての性格を持つ皇室の伝統的な儀式であり、即位の礼と同じ扱いはできないとされている。判例も、県議会議長の大嘗祭への参列が問題となった事案で、大嘗祭を即位の礼に際して行われる皇室の伝統儀式と位置付け、皇室典範24条の即位の礼の一部を構成する即位礼正殿の儀とは区別している。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣の助言と承認により",
+     "text_sha256": "df858c6a7771435bb3ab9c22bc886d27ab18169b45fe1d8d5d73cfab10b42dee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "儀式を行ふこと。",
+     "text_sha256": "df858c6a7771435bb3ab9c22bc886d27ab18169b45fe1d8d5d73cfab10b42dee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "20",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "国及びその機関は、宗教教育その他いかなる宗教的活動もしてはならない。",
+     "text_sha256": "571a3a669dfee9275d24dcc53edd9e9482308d1d88d507f7f70fb7fe8228a06e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "皇室典範",
+     "article": "24",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "皇位の継承があつたときは、即位の礼を行う。",
+     "text_sha256": "dfb02a147b7f946028c9369853b08b5be743bd05d87e15422d23909382707fee",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%89%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "即位儀式への公務参加手当返還，損害賠償等代位請求事件",
+     "court": "最高裁判所第二小法廷",
+     "date": "2004-06-28",
+     "holding": "即位礼正殿の儀は皇室典範24条の即位の礼の一部を構成する伝統的な皇位継承儀式であり、大嘗祭は即位の礼に際しての皇室の伝統儀式であるとしたうえで、県知事・県議会議長の参列は社会的儀礼として行われたものであり、憲法20条3項に違反しないとした。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/62544/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "7条10号の「儀式」を宗教的性格のないものに限る点、大嘗祭を国事行為として行えないとする点は解釈による",
+    "引用した判例は大嘗祭が国事行為にあたるかを直接判断したものではなく、大嘗祭を即位の礼とは区別して皇室の伝統儀式と位置付けた点で参照している"
+   ],
+   "id": "exp-yobi-2019-kenpo-q09-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

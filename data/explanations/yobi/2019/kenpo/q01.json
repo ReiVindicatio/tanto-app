@@ -1,0 +1,144 @@
+{
+ "question_id": "yobi-2019-kenpo-q01",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-kenpo-q01-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：直接適用説でも、私的自治を理由に私人間では人権の効力が相対化されることを認めるなら、その限度で人権規定の効力を私的自治と調整して弱めることになり、間接適用説に近づく。",
+   "body": "本肢は学説の位置付けを問うもので、条文から直接答えが出るものではない。直接適用説は人権規定が私人間にもそのまま効力を持つとする立場であるが、私人間では私的自治の原則とも調整しなければならないという批判があると解されている。そこで、人権の効力は私人相互間では本質的な核心が侵されない限度で相対化されると認める見解があり、これは私的自治との利益衡量によって人権規定の効力を限定する点で、私法の一般条項を通じて人権の価値を調整的に及ぼす間接適用説と実際上の違いが小さくなると説明されている。したがって本肢は正しい。",
+   "citations": [],
+   "cases": [],
+   "notes": [
+    "解釈による（私人間効力に関する学説の整理）。"
+   ],
+   "id": "exp-yobi-2019-kenpo-q01-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-kenpo-q01-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：人権規定は私人相互の関係を直接規律しないとする説（間接適用説・判例の立場）を前提にしても、侵害の態様・程度が社会的に許容し得る限界を超える場合に私法規定の解釈を通じて調整を図るという見解は十分に採り得る。",
+   "body": "誤りの決め手は「見解は採り得ない」という部分である。肢が引く説は、人権規定は私人相互の関係を直接規律することを予定しないとするもので、最高裁の三菱樹脂事件判決はこの立場から、憲法14条・19条は直接私人相互間の関係に適用されるものではないとした。もっともこの立場は私人間の人権侵害を放置する趣旨ではなく、侵害の態様・程度が社会的に許容し得る限度を超えるときは、民法の一般条項など私法規定の適切な運用（解釈）によって調整を図るという考え方（間接適用説）と結び付くと解されており、同判決も理由中でそうした調整の可能性を示したとされる（判決理由の該当部分は要確認）。したがって、この見解は前提と矛盾せず、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "14",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "すべて国民は、法の下に平等であつて、人種、信条、性別、社会的身分又は門地により、政治的、経済的又は社会的関係において、差別されない。",
+     "text_sha256": "5a3ca47aaefdabad6cbfacc1dba63dd3c9937d55178831ecf8c7b0d2f30b2eb4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "思想及び良心の自由は、これを侵してはならない。",
+     "text_sha256": "73d3117ee441f3d45175ede3e05a3bc8c586cc681cf8d5ecd21b4669d6dabe5a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [
+    {
+     "name": "三菱樹脂事件",
+     "court": "最高裁判所大法廷",
+     "date": "1973-12-12",
+     "holding": "憲法14条や19条の規定は、直接私人相互間の関係に適用されるものではない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51931/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "courts.go.jp で確認できたのは裁判要旨（14条・19条は私人間に直接適用されない）まで。私法規定の運用による調整を述べた判決理由の部分は全文 PDF の本文を読み取れず未確認。"
+   ],
+   "id": "exp-yobi-2019-kenpo-q01-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-kenpo-q01-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：社会的力関係の優越がある場合に人権規定を直接適用すべきとする説に対し、判例（三菱樹脂事件）は、支配関係の態様・程度・規模は様々で、どのような場合に国又は公共団体の支配と同視すべきかの判定が困難であるとしてこれを退けた。",
+   "body": "本肢は判例の理由付けを問う。最高裁の三菱樹脂事件判決は、憲法14条・19条の規定は直接私人相互間の関係に適用されるものではないとした。その理由中で、私人間でも一方が他方に優越し事実上服従せざるを得ない場合には人権規定を直接適用ないし類推適用すべきとする見解について、こうした支配関係はその支配力の態様・程度・規模等において様々であり、どのような場合にこれを国又は公共団体の支配と同視すべきかの判定が困難であるとして、採用しなかったとされる（判決理由の該当部分は要確認）。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "14",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "すべて国民は、法の下に平等であつて、人種、信条、性別、社会的身分又は門地により、政治的、経済的又は社会的関係において、差別されない。",
+     "text_sha256": "5a3ca47aaefdabad6cbfacc1dba63dd3c9937d55178831ecf8c7b0d2f30b2eb4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "思想及び良心の自由は、これを侵してはならない。",
+     "text_sha256": "73d3117ee441f3d45175ede3e05a3bc8c586cc681cf8d5ecd21b4669d6dabe5a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [
+    {
+     "name": "三菱樹脂事件",
+     "court": "最高裁判所大法廷",
+     "date": "1973-12-12",
+     "holding": "憲法14条や19条の規定は、直接私人相互間の関係に適用されるものではない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51931/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "courts.go.jp で確認できたのは裁判要旨まで。「判定が困難」とした判決理由の部分は全文 PDF の本文を読み取れず未確認。"
+   ],
+   "id": "exp-yobi-2019-kenpo-q01-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
