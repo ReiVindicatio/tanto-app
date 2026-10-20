@@ -1,0 +1,251 @@
+{
+ "question_id": "yobi-2019-shoho-q17",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q17-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：持株数にかかわらず同額の配当をする定め（いわゆる属人的定め）は、109条2項により公開会社でない株式会社にだけ認められ、公開会社はそのような種類の株式を発行できない。",
+   "body": "ポイントは、持株数に関係なく株主ごとに同額を配当する定めが、株式の内容（種類株式）として認められるかである。109条1項は「株式会社は、株主を、その有する株式の内容及び数に応じて、平等に取り扱わなければならない。」と定め、株式の数に応じた取扱いを原則とする。その例外として、同条2項は「公開会社でない株式会社は、第百五条第一項各号に掲げる権利に関する事項について、株主ごとに異なる取扱いを行う旨を定款で定めることができる。」とし、105条1項1号は剰余金の配当を受ける権利である。108条1項1号の剰余金の配当についての種類株式は、株式1株ごとの内容を定めるものであり、持株数にかかわらず同額とする定めはこれに当たらないと解されている。したがって、公開会社は本肢のような種類の株式を発行することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "109",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、株主を、その有する株式の内容及び数に応じて、平等に取り扱わなければならない。",
+     "text_sha256": "01584d8a74afb0118cf60d1dce59177fd84d838af46e6e4d453120726983fbf1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "109",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "公開会社でない株式会社は、第百五条第一項各号に掲げる権利に関する事項について、株主ごとに異なる取扱いを行う旨を定款で定めることができる。",
+     "text_sha256": "01584d8a74afb0118cf60d1dce59177fd84d838af46e6e4d453120726983fbf1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "105",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "剰余金の配当を受ける権利",
+     "text_sha256": "feaa8bbe789898253bebb3bb2bf72ac8a4b04ab592181a41504e0cc84471f259",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "剰余金の配当",
+     "text_sha256": "fef60bc5773a64fa72cfd2243503cdd5ceb008bcfa5426760c207b4f19df6a0e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "108条1項1号の種類株式に持株数と無関係な同額配当が含まれないという点は解釈による。"
+   ],
+   "id": "exp-yobi-2019-shoho-q17-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q17-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：株主は1株につき1個の議決権を有し（308条1項）、108条1項は1株に複数個の議決権を与える種類株式を認めていないため、公開会社はこのような株式を発行できない。",
+   "body": "誤りは「１株につき複数個の議決権を有することを内容とする種類の株式を発行することができる」という部分である。308条1項は、株主は株主総会において「その有する株式一株につき一個の議決権を有する。」と定める（単元株式数を定めた場合は1単元につき1個）。議決権に関する種類株式として108条1項3号が認めるのは「株主総会において議決権を行使することができる事項」についての異なる定め、すなわち議決権を行使できる事項の制限であり、1株あたりの議決権の数を増やすことは含まれない。したがって、公開会社に限らず、1株に複数個の議決権を与える種類株式は発行できないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "308",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その有する株式一株につき一個の議決権を有する。",
+     "text_sha256": "3e2fc194c21546ffd77ff7290810c5fc5efb93d1ad84f46a253e7000e26eb21a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会において議決権を行使することができる事項",
+     "text_sha256": "fef60bc5773a64fa72cfd2243503cdd5ceb008bcfa5426760c207b4f19df6a0e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公開会社でない株式会社が109条2項の属人的定めにより議決権について株主ごとに異なる取扱いをすることは別の問題であり、本肢は公開会社についての記述である。"
+   ],
+   "id": "exp-yobi-2019-shoho-q17-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q17-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：108条1項ただし書により、指名委員会等設置会社は種類株主総会で取締役を選任する種類株式（同項9号）を発行できない。",
+   "body": "108条1項9号は「当該種類の株式の種類株主を構成員とする種類株主総会において取締役（監査等委員会設置会社にあっては、監査等委員である取締役又はそれ以外の取締役。次項第九号及び第百十二条第一項において同じ。）又は監査役を選任すること。」を種類株式の内容として挙げる。しかし、同項ただし書は「指名委員会等設置会社及び公開会社は、第九号に掲げる事項についての定めがある種類の株式を発行することができない。」と定める。したがって、指名委員会等設置会社は本肢の種類株式を発行することができず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "指名委員会等設置会社及び公開会社は、第九号に掲げる事項についての定めがある種類の株式を発行することができない。",
+     "text_sha256": "fef60bc5773a64fa72cfd2243503cdd5ceb008bcfa5426760c207b4f19df6a0e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q17-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q17-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：議決権制限株式の制限は「株主総会において」議決権を行使できる事項についてのものであり、種類株主総会では308条1項が準用され（325条）、議決権を有する。",
+   "body": "108条1項3号の議決権制限株式は「株主総会において議決権を行使することができる事項」について異なる定めをしたものであり、制限の対象は株主総会での議決権である。種類株主総会については、325条が株主総会に関する規定を準用しており、308条1項の「その有する株式一株につき一個の議決権を有する。」との規定も種類株主総会に準用される。したがって、株主総会で決議できる事項の全部について議決権のない株式の株主であっても、その種類の株主で構成される種類株主総会では議決権を有すると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会において議決権を行使することができる事項",
+     "text_sha256": "fef60bc5773a64fa72cfd2243503cdd5ceb008bcfa5426760c207b4f19df6a0e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "325",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "の規定は、種類株主総会について準用する。",
+     "text_sha256": "a495dc64c04068da57420ee394d9fb18b41b6ff0905860528389b3db58068c2d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "308",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その有する株式一株につき一個の議決権を有する。",
+     "text_sha256": "3e2fc194c21546ffd77ff7290810c5fc5efb93d1ad84f46a253e7000e26eb21a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（議決権制限の定めが種類株主総会の議決権に及ばないこと）。"
+   ],
+   "id": "exp-yobi-2019-shoho-q17-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q17-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：会社法には各種類の発行可能種類株式総数の合計を発行可能株式総数と一致させることを求める規定はなく、一致している必要はないと解されている。",
+   "body": "誤りは「一致していなければならない」という部分である。108条2項は、内容の異なる二以上の種類の株式を発行する場合には、各号に定める事項「及び発行可能種類株式総数を定款で定めなければならない。」と定めるが、その合計数と発行可能株式総数との関係については何も定めていない。そのため、各種類の発行可能種類株式総数の合計が発行可能株式総数と一致する必要はなく、合計が発行可能株式総数を上回ることも許されると解されている（実際に発行できる株式の総数は発行可能株式総数による制約を受ける）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "108",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "及び発行可能種類株式総数を定款で定めなければならない。",
+     "text_sha256": "fef60bc5773a64fa72cfd2243503cdd5ceb008bcfa5426760c207b4f19df6a0e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "合計数が一致しなくてよいという点は、明文の定めがないことからの解釈による。"
+   ],
+   "id": "exp-yobi-2019-shoho-q17-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

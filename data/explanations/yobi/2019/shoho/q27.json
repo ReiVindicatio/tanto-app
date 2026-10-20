@@ -1,0 +1,273 @@
+{
+ "question_id": "yobi-2019-shoho-q27",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q27-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：支配人の選任は登記前でも効力を生じており、登記の欠缺を主張できないのは商人の側であって、第三者は選任の事実を主張して取引の効果の帰属を主張できる。",
+   "body": "商法20条は「商人は、支配人を選任し、その営業所において、その営業を行わせることができる」と定め、選任された支配人は、同21条1項により「商人に代わってその営業に関する一切の裁判上又は裁判外の行為をする権限を有する」ことになります。支配人の選任は同22条により登記すべき事項ですが、登記は代理権発生の要件ではありません。同9条1項は、登記すべき事項は「登記の後でなければ、これをもって善意の第三者に対抗することができない」と定めており、これは登記義務者である商人の側から登記前の事項を第三者に主張することを制限するものです。そのため、第三者の側から登記前の事実（支配人の選任）を主張することは妨げられないと解されており、第三者は取引の効果が個人商人に帰属することを主張できます。判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "商人は、支配人を選任し、その営業所において、その営業を行わせることができる。",
+     "text_sha256": "a29a7aa6ae9780c127cd3e16aed031b0ad5e53d0e6d5899d15663b1b8a862e37",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "21",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "商人に代わってその営業に関する一切の裁判上又は裁判外の行為をする権限を有する。",
+     "text_sha256": "c54827d28e3aee156008a43bcc87e27059a7c9f0be35b156cea742b07752cc80",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "22",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "商人が支配人を選任したときは、その登記をしなければならない。",
+     "text_sha256": "dd8a7c75a5f39aa5a23a03d260e1ce428ed6f1914617e79d958e3e6223d99609",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "登記の後でなければ、これをもって善意の第三者に対抗することができない。",
+     "text_sha256": "b98c2d7e47a8efbd6d2ed904e4cb346275b0eba8f02625a9964efacee0a3338b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "第三者の側から登記前の事実を主張できるとする点は解釈による。肢は「判例の趣旨によれば」とするが、該当の判例は courts.go.jp で確認できなかった（要確認）。"
+   ],
+   "id": "exp-yobi-2019-shoho-q27-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q27-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：監査役会設置会社は取締役会設置会社であり、支配人その他の重要な使用人の選任は取締役会が決定しなければならないので、支配人が取締役会の決定なしに重要な使用人を選任することはできない。",
+   "body": "会社法11条2項は「支配人は、他の使用人を選任し、又は解任することができる」と定めていますが、重要な使用人については別の規律があります。監査役会設置会社は、同327条1項2号により取締役会を置かなければなりません。そして同362条4項3号は、取締役会は「支配人その他の重要な使用人の選任及び解任」の決定を取締役に委任することができないと定めています。取締役にすら委任できない事項を、その下にある支配人が取締役会の決定なしに行うことはできないと解されています。したがって、本店の支配人であっても、取締役会の決定なしに重要な使用人を選任することはできません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "11",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "支配人は、他の使用人を選任し、又は解任することができる。",
+     "text_sha256": "47780b61d3a757a99530ef995559fee6e20573e7a45a7168c4eb24c30ca8457a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "327",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "監査役会設置会社",
+     "text_sha256": "5a773ce772b81078bdf955298b8ce400edd7c0d886c414d3e6afc8c64f2bdd73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "362",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "支配人その他の重要な使用人の選任及び解任",
+     "text_sha256": "0c2c40d6cd0d3a3ae0a6e3f00a33298453cecc241308ad598ed1bbbbaf153799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "11条2項の選任権限が重要な使用人に及ばない点は解釈による。"
+   ],
+   "id": "exp-yobi-2019-shoho-q27-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q27-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：支配人の代理権の消滅は登記事項であり、登記の後でも、第三者が正当な事由により登記を知らなかったときは、その第三者に対抗できない。",
+   "body": "商法22条は、支配人の選任について登記を要求したうえで「支配人の代理権の消滅についても、同様とする」と定めています。そして同9条1項後段は、「登記の後であっても、第三者が正当な事由によってその登記があることを知らなかったときは、同様とする」と定め、登記後であっても正当な事由のある第三者には対抗できないとしています。したがって、本肢は条文どおりで正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "22",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支配人の代理権の消滅についても、同様とする。",
+     "text_sha256": "dd8a7c75a5f39aa5a23a03d260e1ce428ed6f1914617e79d958e3e6223d99609",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "登記の後であっても、第三者が正当な事由によってその登記があることを知らなかったときは、同様とする。",
+     "text_sha256": "b98c2d7e47a8efbd6d2ed904e4cb346275b0eba8f02625a9964efacee0a3338b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q27-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q27-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：表見支配人の規定にいう本店又は支店は、営業所としての実質を備えたものに限られるとするのが判例である。",
+   "body": "会社法13条は「会社の本店又は支店の事業の主任者であることを示す名称を付した使用人は、当該本店又は支店の事業に関し、一切の裁判外の行為をする権限を有するものとみなす」と定めています。最高裁昭和37年5月1日判決（改正前の商法の表見支配人の規定に関するもの）は、保険会社の支社が新規契約の募集と第一回保険料の取次ぎだけを業務とし、独立して契約の締結等をする権限や組織を持たない場合には、その支社長は表見支配人の規定にいう「支店」の営業の主任者に当たらないと判断しました。このように、判例は、名称上支店とされていても営業所としての実質を備えていなければ表見支配人の規定は適用されないとしています。したがって、本肢は判例の趣旨に合致します。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社の本店又は支店の事業の主任者であることを示す名称を付した使用人は、当該本店又は支店の事業に関し、一切の裁判外の行為をする権限を有するものとみなす。",
+     "text_sha256": "53dea81e4f800e04a1a428692e82516eba9b364291d717635fd4bf4e7878d89b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "約束手形金請求事件",
+     "court": "最高裁判所第三小法廷",
+     "date": "1962-05-01",
+     "holding": "新規契約の募集と第一回保険料の取次ぎのみを業務とし、独立して営業を行う権限・組織を持たない保険会社の支社の支社長は、表見支配人の規定にいう「支店」の営業の主任者に当たらない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57729/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は改正前の商法（会社法制定前）の表見支配人の規定に関するもので、現在の会社法13条に相当する。"
+   ],
+   "id": "exp-yobi-2019-shoho-q27-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q27-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：表見支配人の規定は、その営業所の主任者であることを示す名称を付した使用人について、当該営業所の営業に関して適用されるものであり、A営業所の支配人がB営業所の営業について行った行為には適用されない。",
+   "body": "商法24条は「商人の営業所の営業の主任者であることを示す名称を付した使用人は、当該営業所の営業に関し、一切の裁判外の行為をする権限を有するものとみなす」と定めています。権限があるとみなされるのは、主任者であることを示す名称が付された「当該営業所の営業に関し」てだけです。A営業所のみの支配人として選任された者は、B営業所の主任者であることを示す名称を付されていないので、B営業所の営業に関する行為について同条は適用されないと解されています。また、支配人は同20条により特定の「営業所において」営業を行わせるために選任されるもので、A営業所の支配人の代理権はA営業所の営業に限られます。したがって、B営業所の支配人と同一の権限を有するものとみなされるとする本肢は誤りです。判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "24",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "商人の営業所の営業の主任者であることを示す名称を付した使用人は、当該営業所の営業に関し、一切の裁判外の行為をする権限を有するものとみなす。",
+     "text_sha256": "424c1a52b9c34a3cf37ec03c40769694562c25e709a0ce46aa45e8015b901dad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "商人は、支配人を選任し、その営業所において、その営業を行わせることができる。",
+     "text_sha256": "a29a7aa6ae9780c127cd3e16aed031b0ad5e53d0e6d5899d15663b1b8a862e37",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "24条が他の営業所の営業には適用されない点は解釈による。肢は「判例の趣旨によれば」とするが、該当の判例は courts.go.jp で確認できなかった（要確認）。"
+   ],
+   "id": "exp-yobi-2019-shoho-q27-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

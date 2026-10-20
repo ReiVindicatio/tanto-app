@@ -1,0 +1,345 @@
+{
+ "question_id": "yobi-2019-shoho-q19",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q19-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。自己をも加えるよう請求した株主は特定の株主として議案に加わるため、会社法160条4項により、原則としてその株主総会で議決権を行使できない。",
+   "body": "会社法160条3項は、株主が「第一項の特定の株主に自己をも加えたものを同項の株主総会の議案とすることを、法務省令で定める時までに、請求することができる。」と定めている。この請求をした株主は、議案において特定の株主に加えられることになると解されている。そして同条4項は「第一項の特定の株主は、第百五十六条第一項の株主総会において議決権を行使することができない。ただし、第一項の特定の株主以外の株主の全部が当該株主総会において議決権を行使することができない場合は、この限りでない。」と定める。したがって、請求をした株主は、ただし書の場合を除き議決権を行使できず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "160",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の特定の株主に自己をも加えたものを同項の株主総会の議案とすることを、法務省令で定める時までに、請求することができる。",
+     "text_sha256": "51572c45fa34500adb622304d8432bbc29160665c9301c1960f0a9a7b0f92d08",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "160",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "第一項の特定の株主は、第百五十六条第一項の株主総会において議決権を行使することができない。ただし、第一項の特定の株主以外の株主の全部が当該株主総会において議決権を行使することができない場合は、この限りでない。",
+     "text_sha256": "51572c45fa34500adb622304d8432bbc29160665c9301c1960f0a9a7b0f92d08",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "請求をした株主が議案上の特定の株主に加わるとする点は解釈による"
+   ],
+   "id": "exp-yobi-2019-shoho-q19-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q19-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。取締役会設置会社でない会社では、相続人である株主も招集の通知の相手方から外れないと解されており、通知を要しないとする点が誤り。",
+   "body": "誤りは、相続人である株主に「招集の通知を発することを要しない」とする部分である。会社法175条2項は、売渡しの請求の対象となる株式を有する者は「同項の株主総会において議決権を行使することができない。」と定める。しかし、招集の通知について、同法298条2項は通知の相手方となる株主から「株主総会において決議をすることができる事項の全部につき議決権を行使することができない株主を除く。」としつつ、同条3項はこれを取締役会設置会社に限って「前項第二号に掲げる事項」（会議の目的である事項）に読み替えている。取締役会設置会社でない会社では、株主総会は同法295条1項のとおり「一切の事項について決議をすることができる」ため、売渡請求の議案について議決権を行使できない相続人も、決議できる事項の全部につき議決権を行使できない株主にはあたらないと解されている。したがって、同法299条1項の「株主に対してその通知を発しなければならない」が相続人にも及び、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "175",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "同項の株主総会において議決権を行使することができない。",
+     "text_sha256": "e7cc48651155ee4835ff8ca9a9b2b4a7a6531402e697e3775e5ed216aeb4d44d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "298",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株主総会において決議をすることができる事項の全部につき議決権を行使することができない株主を除く。",
+     "text_sha256": "6cf29e7480618de198fa9d58594d5a4ce9fc66387a9a752e3953d185c6c837c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "298",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前項第二号に掲げる事項",
+     "text_sha256": "6cf29e7480618de198fa9d58594d5a4ce9fc66387a9a752e3953d185c6c837c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "295",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一切の事項について決議をすることができる",
+     "text_sha256": "3ea5faf49a0539f3ecc4ddcfb6a6d91e85739f52d2ded2b961895cb9a6758ece",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "299",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主に対してその通知を発しなければならない",
+     "text_sha256": "c9e7ce2cbe4c1c2200881a5eaf371c45904cec4f97fae631cbfbb187decc0631",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "取締役会設置会社でない会社では相続人も招集通知の相手方になるとする点は、298条2項・3項の読み方による解釈"
+   ],
+   "id": "exp-yobi-2019-shoho-q19-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q19-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。会社法206条の2第4項・5項により、特定引受人への割当ての承認は、定足数に特則のある普通決議で足り、特別決議ではない。",
+   "body": "誤りは「株主総会の特別決議によって」とする部分である。会社法206条の2第4項は、総株主の議決権の10分の1以上の議決権を有する株主が反対の通知をしたときは「株主総会の決議によって、当該特定引受人に対する募集株式の割当て又は当該特定引受人との間の第二百五条第一項の契約の承認を受けなければならない。」と定める。その決議の要件について、同条5項は「議決権を行使することができる株主の議決権の過半数（三分の一以上の割合を定款で定めた場合にあっては、その割合以上）を有する株主が出席し、出席した当該株主の議決権の過半数（これを上回る割合を定款で定めた場合にあっては、その割合以上）をもって行わなければならない。」と定めている。これは定足数の引下げに限界を設けた普通決議であり、同法309条2項の特別決議（出席株主の議決権の3分の2以上）ではない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "206_2",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "株主総会の決議によって、当該特定引受人に対する募集株式の割当て又は当該特定引受人との間の第二百五条第一項の契約の承認を受けなければならない。",
+     "text_sha256": "a9f4056f8d1c88041a7b50cf25b32f71dc7247db83ff5246a51576bfef5d74d4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "206_2",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "議決権を行使することができる株主の議決権の過半数（三分の一以上の割合を定款で定めた場合にあっては、その割合以上）を有する株主が出席し、出席した当該株主の議決権の過半数（これを上回る割合を定款で定めた場合にあっては、その割合以上）をもって行わなければならない。",
+     "text_sha256": "a9f4056f8d1c88041a7b50cf25b32f71dc7247db83ff5246a51576bfef5d74d4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "309",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "出席した当該株主の議決権の三分の二（これを上回る割合を定款で定めた場合にあっては、その割合）以上に当たる多数をもって行わなければならない。",
+     "text_sha256": "56ffbd6451793882d47ba533193af3dd09d3d0c791034f12f0f7f32cf6456aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q19-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q19-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。会社法298条2項により、議決権を行使できる株主が1000人以上の会社は、電磁的方法による行使を定めても、書面による行使を定めなければならない。",
+   "body": "誤りは、電磁的方法による議決権の行使を定めれば書面による行使を「定めることを要しない」とする部分である。会社法298条1項は、書面による行使（3号）と電磁的方法による行使（4号）とを別の事項として掲げている。そのうえで同条2項本文は、株主の「数が千人以上である場合には、前項第三号に掲げる事項を定めなければならない。」と定め、書面による行使（3号）を義務づけている。電磁的方法による行使（4号）を定めたことは、この義務を免れる理由として規定されていない。なお、同項ただし書は、上場会社で法務省令で定めるものについて例外を置くが、本肢はその場合を前提としていない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "298",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会に出席しない株主が書面によって議決権を行使することができることとするときは、その旨",
+     "text_sha256": "6cf29e7480618de198fa9d58594d5a4ce9fc66387a9a752e3953d185c6c837c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "298",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会に出席しない株主が電磁的方法によって議決権を行使することができることとするときは、その旨",
+     "text_sha256": "6cf29e7480618de198fa9d58594d5a4ce9fc66387a9a752e3953d185c6c837c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "298",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "数が千人以上である場合には、前項第三号に掲げる事項を定めなければならない。",
+     "text_sha256": "6cf29e7480618de198fa9d58594d5a4ce9fc66387a9a752e3953d185c6c837c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q19-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q19-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。書面・電磁的方法で事前に反対の議決権を行使した株主は、反対の通知と総会での反対の双方をしたものと解され、反対株主として株式買取請求ができる。",
+   "body": "会社法785条2項1号イは、反対株主を「当該株主総会に先立って当該吸収合併等に反対する旨を当該消滅株式会社等に対し通知し、かつ、当該株主総会において当該吸収合併等に反対した株主」と定める。書面による議決権の行使は、同法311条1項により「法務省令で定める時までに」議決権行使書面を提出して行い、同条2項により「出席した株主の議決権の数に算入する。」とされる（電磁的方法につき同法312条1項・3項も同旨）。そのため、株主総会の日の前日までに書面又は電磁的方法で反対の議決権を行使した株主は、総会に先立って反対の旨を会社に通知し、かつ総会において反対したものと扱われると解されている。したがって、その株主は反対株主として同法785条1項の株式買取請求をすることができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "785",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該株主総会に先立って当該吸収合併等に反対する旨を当該消滅株式会社等に対し通知し、かつ、当該株主総会において当該吸収合併等に反対した株主",
+     "text_sha256": "97607594fbf2696764a8ecdd120094d239bf8bcf2e5a2eb7613ab5259427149d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "785",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "反対株主は、消滅株式会社等に対し、自己の有する株式を公正な価格で買い取ることを請求することができる。",
+     "text_sha256": "97607594fbf2696764a8ecdd120094d239bf8bcf2e5a2eb7613ab5259427149d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "311",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法務省令で定める時までに",
+     "text_sha256": "8cc0cc9107e0087f79f737fe602f0b08cba751d73242ef0ef679048b24737db7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "311",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "出席した株主の議決権の数に算入する。",
+     "text_sha256": "8cc0cc9107e0087f79f737fe602f0b08cba751d73242ef0ef679048b24737db7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "312",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "電磁的方法による議決権の行使は、政令で定めるところにより、株式会社の承諾を得て、法務省令で定める時までに議決権行使書面に記載すべき事項を、電磁的方法により当該株式会社に提供して行う。",
+     "text_sha256": "8cc423047c8377bffd0f209e58c86600566e95991ac1e91f0096f17f8b6dbd3d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "312",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の規定により電磁的方法によって行使した議決権の数は、出席した株主の議決権の数に算入する。",
+     "text_sha256": "8cc423047c8377bffd0f209e58c86600566e95991ac1e91f0096f17f8b6dbd3d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "書面・電磁的方法による反対の議決権行使が事前の反対通知と総会での反対の双方にあたるとする点は解釈による"
+   ],
+   "id": "exp-yobi-2019-shoho-q19-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

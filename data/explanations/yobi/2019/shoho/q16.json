@@ -1,0 +1,255 @@
+{
+ "question_id": "yobi-2019-shoho-q16",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q16-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：定款で定められ選任されたものとみなされた設立時取締役も、発起人は解任でき（42条）、その決定は発起人の議決権の過半数で足りる（43条1項）。",
+   "body": "誤りは「発起人の全員の同意によっても解任することができない」という部分である。38条4項により、定款で設立時取締役として定められた者は、出資の履行が完了した時に設立時取締役に選任されたものとみなされる。42条は、発起人は株式会社の成立の時までの間、その選任した設立時役員等を解任でき、これには「第三十八条第四項の規定により設立時役員等に選任されたものとみなされたものを含む。」と定める。解任の方法について、43条1項は「発起人の議決権の過半数」で決定するとしており、全員の同意があれば当然に解任できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "38",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "出資の履行が完了した時に、それぞれ設立時取締役、設立時会計参与、設立時監査役又は設立時会計監査人に選任されたものとみなす。",
+     "text_sha256": "977f81e0835482e64f1312133814186fde220e548b1c26fb1e52cff6d3b3e751",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "42",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "発起人は、株式会社の成立の時までの間、その選任した設立時役員等（第三十八条第四項の規定により設立時役員等に選任されたものとみなされたものを含む。）を解任することができる。",
+     "text_sha256": "2aa14de1f2c8b55b2ef641f0e5e8d3e5e5810d347512b4c18ea65c4cb415c7df",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設立時役員等の解任は、発起人の議決権の過半数",
+     "text_sha256": "8b2fa8bfa7a5b3a75f7f5efeb833b463bcf8630216cd011a2e97585c42ef928e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q16-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q16-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：設立時取締役は選任後遅滞なく設立手続の法令・定款違反の有無を調査し（46条1項4号）、違反があれば発起人に通知しなければならない（同条2項）。",
+   "body": "46条1項は、設立時取締役は「その選任後遅滞なく、次に掲げる事項を調査しなければならない。」とし、同項4号で「株式会社の設立の手続が法令又は定款に違反していないこと。」を挙げる。同条2項は、調査により法令若しくは定款に違反し、又は不当な事項があると認めるときは「発起人にその旨を通知しなければならない。」と定める。本肢はこれらの規定の内容と一致する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "46",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その選任後遅滞なく、次に掲げる事項を調査しなければならない。",
+     "text_sha256": "fb15a9c6d7c8005e8af36f72307d1d0ab2ee8412f5c379a849f34e78c3e23d25",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "46",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "発起人にその旨を通知しなければならない。",
+     "text_sha256": "fb15a9c6d7c8005e8af36f72307d1d0ab2ee8412f5c379a849f34e78c3e23d25",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q16-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q16-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：現物出資に関する事項について検査役の調査を経た場合、設立時取締役は不足額の支払義務を負わない（52条2項1号）。",
+   "body": "52条1項は、成立時の現物出資財産等の価額が定款に記載された価額に著しく不足するときは、発起人及び設立時取締役が連帯して不足額を支払う義務を負うと定める。もっとも、同条2項は、一定の場合には「発起人（第二十八条第一号の財産を給付した者又は同条第二号の財産の譲渡人を除く。第二号において同じ。）及び設立時取締役は、現物出資財産等について同項の義務を負わない。」とし、その1号で「第二十八条第一号又は第二号に掲げる事項について第三十三条第二項の検査役の調査を経た場合」を挙げる。28条1号は現物出資に関する事項であり、裁判所が選任した検査役の調査を経た本肢の場合、設立時取締役は不足額支払義務を負わない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "52",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "発起人及び設立時取締役は、当該株式会社に対し、連帯して、当該不足額を支払う義務を負う。",
+     "text_sha256": "9c6f00a9dde2090559dd4c3fdf73b3b0a8cc26192a6674b682e3d6aa94e9abf0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "52",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "発起人（第二十八条第一号の財産を給付した者又は同条第二号の財産の譲渡人を除く。第二号において同じ。）及び設立時取締役は、現物出資財産等について同項の義務を負わない。",
+     "text_sha256": "9c6f00a9dde2090559dd4c3fdf73b3b0a8cc26192a6674b682e3d6aa94e9abf0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "金銭以外の財産を出資する者の氏名又は名称、当該財産及びその価額",
+     "text_sha256": "c17153849721f5c211cd336ec0e945cfc4169b6398ad8e16ed029e96e762e1dc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "33",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の申立てがあった場合には、裁判所は、これを不適法として却下する場合を除き、検査役を選任しなければならない。",
+     "text_sha256": "442073353d4415a66b8e5dbe5e0b4405fd751c82fcbb28e5c01f11f92375efec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q16-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q16-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：株式会社不成立の場合に連帯して責任を負い費用を負担するのは「発起人」であり、設立時取締役ではない（56条）。",
+   "body": "誤りは責任を負う主体を「設立時取締役」としている点である。56条は「株式会社が成立しなかったときは、発起人は、連帯して、株式会社の設立に関してした行為についてその責任を負い、株式会社の設立に関して支出した費用を負担する。」と定め、責任の主体を発起人に限っている。設立時取締役が発起人を兼ねていればその立場で責任を負うが、設立時取締役であることを理由にこの責任を負うわけではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "56",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社が成立しなかったときは、発起人は、連帯して、株式会社の設立に関してした行為についてその責任を負い、株式会社の設立に関して支出した費用を負担する。",
+     "text_sha256": "5bc83e915c3f2bb5ef60efe5ddd0145081e403caa3a1170ae872d668a01cc661",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q16-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q16-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：847条1項は責任追及等の訴えの対象となる「発起人等」に設立時取締役を含めており、株主代表訴訟の対象となる。",
+   "body": "847条1項は、株主は株式会社に対し「発起人、設立時取締役、設立時監査役、役員等（第四百二十三条第一項に規定する役員等をいう。）若しくは清算人（以下この節において「発起人等」という。）の責任を追及する訴え」の提起を請求することができると定める。そして同条3項により、会社が請求の日から60日以内に訴えを提起しないときは、請求をした株主が会社のために訴えを提起できる。したがって、設立時取締役の株式会社に対する責任も株主代表訴訟の対象となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "847",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "発起人、設立時取締役、設立時監査役、役員等（第四百二十三条第一項に規定する役員等をいう。）若しくは清算人（以下この節において「発起人等」という。）の責任を追及する訴え",
+     "text_sha256": "7ef6991ab0a888053685d713579be6d967f82c4594f0fc3d8778bb01c1460b55",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "847",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "当該請求をした株主は、株式会社のために、責任追及等の訴えを提起することができる。",
+     "text_sha256": "7ef6991ab0a888053685d713579be6d967f82c4594f0fc3d8778bb01c1460b55",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q16-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

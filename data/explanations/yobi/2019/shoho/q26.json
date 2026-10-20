@@ -1,0 +1,219 @@
+{
+ "question_id": "yobi-2019-shoho-q26",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q26-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：提訴請求から60日以内に訴えを提起しない会社は、請求をした株主から請求を受けたときは、遅滞なく不提訴理由を通知しなければならない。",
+   "body": "847条4項は、株式会社が提訴請求の日から六十日以内に責任追及等の訴えを提起しない場合において、当該請求をした株主等から請求を受けたときは、「遅滞なく、責任追及等の訴えを提起しない理由を書面その他の法務省令で定める方法により通知しなければならない」と定めています。この法務省令で定める方法について、会社法施行規則218条は「書面の提出又は当該事項の電磁的方法による提供とする」と定めています。したがって、書面又は電磁的方法で通知しなければならないとする本肢は正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "847",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "遅滞なく、責任追及等の訴えを提起しない理由を書面その他の法務省令で定める方法により通知しなければならない。",
+     "text_sha256": "7ef6991ab0a888053685d713579be6d967f82c4594f0fc3d8778bb01c1460b55",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法施行規則",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "書面の提出又は当該事項の電磁的方法による提供とする。",
+     "text_sha256": "ed0b75b52d7ffc078868584eddaca6e13d3be86e395ad837a366cebf3b139531",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q26-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q26-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：特定責任追及の訴えの持株要件「百分の一」は、定款で下げることはできるが、50分の1に引き上げることはできない。",
+   "body": "847条の3第1項は、特定責任追及の訴えの提起を請求できる株主を、最終完全親会社等の総株主の議決権又は発行済株式の「百分の一（これを下回る割合を定款で定めた場合にあっては、その割合）以上」を有する株主と定めています。定款で変更できるのは、これを「下回る割合」に限られます。50分の1は100分の1より高い割合なので、定款でそのように定めることはできません。公開会社でない最終完全親会社等についての特則（同条6項）も、6か月の保有期間の要件を外すものにすぎず、持株割合を引き上げることを認めるものではありません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "847_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "百分の一（これを下回る割合を定款で定めた場合にあっては、その割合）以上",
+     "text_sha256": "92297ed17f8e5451018df73c3366cc09cb2fe5f5ff407bac1b9e478e60a01dbf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "847_3",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "公開会社でない最終完全親会社等における第一項の規定の適用については、同項中「六箇月（これを下回る期間を定款で定めた場合にあっては、その期間）前から引き続き株式会社」とあるのは、「株式会社」とする。",
+     "text_sha256": "92297ed17f8e5451018df73c3366cc09cb2fe5f5ff407bac1b9e478e60a01dbf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q26-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q26-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：責任追及等の訴えは株式会社等の本店所在地の地方裁判所の専属管轄であり、最終完全親会社等の本店所在地の地方裁判所には提起できない。",
+   "body": "848条は、責任追及等の訴えは「株式会社又は株式交換等完全子会社（以下この節において「株式会社等」という。）の本店の所在地を管轄する地方裁判所の管轄に専属する」と定めています。特定責任追及の訴えも責任追及等の訴えの一種であり、管轄は責任を追及される役員等の属する子会社（株式会社）の本店所在地の地方裁判所に専属します。最終完全親会社等の本店所在地を管轄する地方裁判所にも提起できるとする規定はないので、本肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "848",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社又は株式交換等完全子会社（以下この節において「株式会社等」という。）の本店の所在地を管轄する地方裁判所の管轄に専属する。",
+     "text_sha256": "6741d349f3b2815ecf9507966b469f4118cd3e9eb79d5458cd6d6a6d5e26bab6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q26-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q26-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：会社が参加していなくても、裁判所が和解の内容を通知して異議催告をし、会社が2週間以内に書面で異議を述べなければ承認が擬制されるので、会社の参加は要件ではない。",
+   "body": "誤りは「当該訴訟に当該株式会社が参加した場合に限り」という部分です。850条2項は、株式会社等が和解の当事者でない場合、裁判所は株式会社等に対し「和解の内容を通知し、かつ、当該和解に異議があるときは二週間以内に異議を述べるべき旨を催告しなければならない」と定めています。そして同条3項は、株式会社等がその期間内に書面により異議を述べなかったときは「同項の規定による通知の内容で株主等が和解をすることを承認したものとみなす」と定めています。また同条1項ただし書により、株式会社等の承認があれば和解の効力が会社にも及びます。このように、会社が訴訟に参加しなくても、承認又は承認の擬制により和解を成立させることができます。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "850",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "和解の内容を通知し、かつ、当該和解に異議があるときは二週間以内に異議を述べるべき旨を催告しなければならない。",
+     "text_sha256": "98f42dbb6d66b67f1f849566439885e7c91a8fbd932cd4ba20eb2fc9556c219b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "850",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "同項の規定による通知の内容で株主等が和解をすることを承認したものとみなす。",
+     "text_sha256": "98f42dbb6d66b67f1f849566439885e7c91a8fbd932cd4ba20eb2fc9556c219b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "850",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、当該株式会社等の承認がある場合は、この限りでない。",
+     "text_sha256": "98f42dbb6d66b67f1f849566439885e7c91a8fbd932cd4ba20eb2fc9556c219b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q26-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q26-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：株式交換により訴訟追行が認められるのは完全親会社の「株式」を取得したときであり、社債を取得しても訴訟を追行できない。",
+   "body": "誤りは「完全親会社の社債を取得したとき」という部分です。851条1項1号は、責任追及等の訴えを提起した株主が訴訟の係属中に株主でなくなった場合でも、「その者が当該株式会社の株式交換又は株式移転により当該株式会社の完全親会社の株式を取得したとき」は訴訟を追行できると定めています。訴訟追行が認められるのは、株式交換等により完全親会社の株主として間接的に会社の利害に関わり続ける場合に限られると解されています。完全親会社の社債を取得したにすぎない者は株主ではないので、同号に当たらず、訴訟を追行することはできません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "851",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その者が当該株式会社の株式交換又は株式移転により当該株式会社の完全親会社の株式を取得したとき。",
+     "text_sha256": "39b92c2da785275852b672692a4d160f2438cd3ad8a640003b710ba1ee186fe6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q26-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

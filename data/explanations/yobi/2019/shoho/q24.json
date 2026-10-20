@@ -1,0 +1,245 @@
+{
+ "question_id": "yobi-2019-shoho-q24",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q24-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：合同会社の登記事項は「業務を執行する社員」の氏名又は名称であり（914条6号）、社員全員の氏名又は名称ではない。",
+   "body": "誤りは、社員の全員の氏名又は名称を登記しなければならないとしている点である。914条は合同会社の設立の登記事項を列挙しており、社員に関するものは6号の「合同会社の業務を執行する社員の氏名又は名称」と、7号の「合同会社を代表する社員の氏名又は名称及び住所」などである。社員全員の氏名又は名称は登記事項とされていない。したがって、業務を執行する社員を定款で定めた場合には、その業務執行社員の氏名又は名称を登記すれば足りる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "914",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "合同会社の業務を執行する社員の氏名又は名称",
+     "text_sha256": "8dee73599925eaad388622c52811b8c5d753cf5ff9396512cc3dba103b32dc33",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "914",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "合同会社を代表する社員の氏名又は名称及び住所",
+     "text_sha256": "8dee73599925eaad388622c52811b8c5d753cf5ff9396512cc3dba103b32dc33",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q24-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q24-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：貸借対照表の公告義務（440条）は株式会社についての規定であり、合同会社には貸借対照表を公告する義務はない。",
+   "body": "440条1項は、「株式会社は、法務省令で定めるところにより、定時株主総会の終結後遅滞なく、貸借対照表（大会社にあっては、貸借対照表及び損益計算書）を公告しなければならない。」と定め、公告義務を株式会社に課している。合同会社を含む持分会社の計算については617条以下に定めがあり、617条2項は各事業年度に係る計算書類を「作成しなければならない」と定めるが、その公告を義務づける規定は置かれていない。したがって、公告方法が官報であっても、合同会社は貸借対照表又はその要旨を公告する義務を負わず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "440",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、法務省令で定めるところにより、定時株主総会の終結後遅滞なく、貸借対照表（大会社にあっては、貸借対照表及び損益計算書）を公告しなければならない。",
+     "text_sha256": "53ce34cbf07021367c65fea2e3b2b5c805619da31b08ae23476ea63c79bdaf87",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "617",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "作成しなければならない",
+     "text_sha256": "711ddeba8486f56ab84f82fb76a49b6d11a658dad26540c0d05bc390796863a7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "持分会社に計算書類の公告義務がないことは、公告を定める規定が持分会社の計算の章に置かれていないことからの解釈による。"
+   ],
+   "id": "exp-yobi-2019-shoho-q24-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q24-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：損害額の推定（594条2項）は、他の社員全員の承認を受けずに（同条1項に違反して）競業取引をしたときに限られる。",
+   "body": "594条1項は、業務を執行する社員は「当該社員以外の社員の全員の承認を受けなければ」、自己又は第三者のために持分会社の事業の部類に属する取引をしてはならないと定める。そして同条2項は、「業務を執行する社員が前項の規定に違反して同項第一号に掲げる行為をしたときは」、当該社員又は第三者が得た利益の額を持分会社に生じた損害の額と推定すると定める。本肢は他の社員全員の承認を受けて取引をした場合であるから、1項に違反しておらず、2項の推定は働かない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "594",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該社員以外の社員の全員の承認を受けなければ",
+     "text_sha256": "59467bb9320c0934a5c23fafc27530e9844f456a32e4e56ca1fc855f5e422f8b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "594",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "業務を執行する社員が前項の規定に違反して同項第一号に掲げる行為をしたときは",
+     "text_sha256": "59467bb9320c0934a5c23fafc27530e9844f456a32e4e56ca1fc855f5e422f8b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q24-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q24-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：やむを得ない事由があるときは、存続期間の定款の定めの有無にかかわらず、各社員はいつでも退社できる（606条3項）。",
+   "body": "606条1項は、存続期間を定款で定めなかった場合などに、事業年度の終了の時における任意退社（6か月前の予告が必要）を認める規定である。これに対し、同条3項は、「前二項の規定にかかわらず、各社員は、やむを得ない事由があるときは、いつでも退社することができる。」と定めている。この規定は存続期間を定款で定めた場合を除外していない。したがって、合同会社の存続期間を定款で定めた場合であっても、社員はやむを得ない事由があればいつでも退社することができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "606",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "持分会社の存続期間を定款で定めなかった場合又はある社員の終身の間持分会社が存続することを定款で定めた場合には、各社員は、事業年度の終了の時において退社をすることができる。",
+     "text_sha256": "8941532aa9725e93b1508a3d4504131422b3069a9e8d82d116b7ffa39a80d673",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "606",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前二項の規定にかかわらず、各社員は、やむを得ない事由があるときは、いつでも退社することができる。",
+     "text_sha256": "8941532aa9725e93b1508a3d4504131422b3069a9e8d82d116b7ffa39a80d673",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q24-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q24-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：社債は「会社」が発行するものとされ（2条23号・676条）、「会社」には合同会社が含まれる（2条1号）。",
+   "body": "2条1号は、「会社」を「株式会社、合名会社、合資会社又は合同会社をいう。」と定義する。そして2条23号は、社債を「この法律の規定により会社が行う割当てにより発生する当該会社を債務者とする金銭債権」などと定義し、676条も「会社は、その発行する社債を引き受ける者の募集をしようとするときは」と定めている。このように社債の発行主体は株式会社に限られず「会社」とされているから、合同会社も社債を発行することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社、合名会社、合資会社又は合同会社をいう。",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この法律の規定により会社が行う割当てにより発生する当該会社を債務者とする金銭債権",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "676",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社は、その発行する社債を引き受ける者の募集をしようとするときは",
+     "text_sha256": "bb7f2b3d6a5371f98b77057b082fda745cf01ff72749f2215d3e99da12776c48",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q24-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

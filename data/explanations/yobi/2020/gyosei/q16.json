@@ -1,0 +1,160 @@
+{
+ "question_id": "yobi-2020-gyosei-q16",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-gyosei-q16-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：検査拒否に罰則を科すことで、間接的心理的に立入検査の受忍を強制する仕組みである。",
+   "body": "ポイントは、罰則による強制が「間接的心理的」な強制と評価できるかである。医師法7条の3第1項は、厚生労働大臣が当該職員をして病院等に「立ち入り、診療録その他の物件を検査させることができる。」と定め、罰則規定（現行法では同法33条の3第3号）は「検査を拒み、妨げ、若しくは忌避した者」を罰金に処するとしている。川崎民商事件判決（最高裁大法廷昭和47年11月22日）は、旧所得税法の検査について、検査を正当な理由なく拒む者に刑罰を加えることによって、間接的心理的に検査の受忍を強制しようとするものであると判示した。医師法の立入検査も同じ構造であり、学生の発言は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "医師法",
+     "article": "7_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "立ち入り、診療録その他の物件を検査させることができる。",
+     "text_sha256": "d23044bc643f1b4b6d520c91759cff0a789592ce1f35281d65813497da6ae02c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "医師法",
+     "article": "33_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検査を拒み、妨げ、若しくは忌避した者",
+     "text_sha256": "7011e0341684647494a701bbe50b1be062519cdb12fc6ebde51bfa04fbc7ed91",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "川崎民商事件",
+     "court": "最高裁判所大法廷",
+     "date": "1972-11-22",
+     "holding": "旧所得税法の検査拒否に対する罰則は、刑罰を加えることによって間接的心理的に検査の受忍を強制しようとするものであり、直接的物理的な強制と同視すべき程度には達していない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50962/detail2/index.html",
+      "https://www.courts.go.jp/assets/hanrei/hanrei-pdf-50962.pdf"
+     ]
+    }
+   ],
+   "notes": [
+    "問題文の参照条文では立入検査拒否の罰則は医師法33条の2第3号だが、現行法（e-Gov 取得時点）では同じ内容が33条の3第3号にある（条番号の移動）。解説では現行の条番号で引用した。"
+   ],
+   "id": "exp-yobi-2020-gyosei-q16-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-gyosei-q16-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：医師法は罰則による間接強制を定めるにとどまり、拒否する医師を実力で排除して立入検査をすることは認められない。",
+   "body": "ポイントは、明文の根拠なく「必要最小限の実力を行使」できるとしている点である。医師法7条の3第1項は、当該職員をして病院等に「立ち入り、診療録その他の物件を検査させることができる。」と定めるだけで、相手方の抵抗を実力で排除することを認める規定はない（教員の発言のとおり、立入検査に関する規定は同条以外にない）。検査を拒んだ者に対しては、罰則（現行法では同法33条の3第3号）による制裁が予定されているにとどまる。このような罰則付きの立入検査は、罰則によって間接的心理的に受忍を強制する仕組みであり、相手方が拒否した場合に実力を行使して検査を強行することはできないと解されている。したがって、学生の発言は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "医師法",
+     "article": "7_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "立ち入り、診療録その他の物件を検査させることができる。",
+     "text_sha256": "d23044bc643f1b4b6d520c91759cff0a789592ce1f35281d65813497da6ae02c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "医師法",
+     "article": "33_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検査を拒み、妨げ、若しくは忌避した者",
+     "text_sha256": "7011e0341684647494a701bbe50b1be062519cdb12fc6ebde51bfa04fbc7ed91",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "川崎民商事件",
+     "court": "最高裁判所大法廷",
+     "date": "1972-11-22",
+     "holding": "旧所得税法の検査は、拒む者に刑罰を加えることによって間接的心理的に受忍を強制するものであり、その強制の度合いは直接的物理的な強制と同視すべき程度には達していない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50962/detail2/index.html",
+      "https://www.courts.go.jp/assets/hanrei/hanrei-pdf-50962.pdf"
+     ]
+    }
+   ],
+   "notes": [
+    "実力行使ができないとする点は解釈による（明文の根拠がないこと、罰則による間接強制が予定されていることから）。",
+    "問題文の参照条文の罰則は医師法33条の2第3号だが、現行法では33条の3第3号（条番号の移動）。"
+   ],
+   "id": "exp-yobi-2020-gyosei-q16-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-gyosei-q16-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：立入検査の権限を犯罪捜査のための手段として行使すれば、犯罪捜査のために認められたものと解してはならないとする7条の3第3項に違反する。",
+   "body": "ポイントは、7条の3第3項がどのような場合に破られるかである。医師法7条の3第3項は「第一項の規定による立入検査の権限は、犯罪捜査のために認められたものと解してはならない。」と定めている。同じ趣旨の規定を置く税法の質問検査権について、最高裁判所は、取得収集される証拠資料が後に犯則事件の証拠として利用されることが想定できたというだけでは直ちに違反とはならないが、権限を犯則事件の調査・捜査のための手段として行使することは許されない旨を判示したとされている（判例あり（要確認））。この理解によれば、立入検査の権限を犯罪捜査のための手段として行使した場合には同項に違反することになり、学生の発言は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "医師法",
+     "article": "7_3",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の規定による立入検査の権限は、犯罪捜査のために認められたものと解してはならない。",
+     "text_sha256": "d23044bc643f1b4b6d520c91759cff0a789592ce1f35281d65813497da6ae02c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "税務調査に関する最高裁判例（法人税法の質問検査権と犯則調査の関係）は、courts.go.jp で判決を確認できなかったため「要確認」とした。"
+   ],
+   "id": "exp-yobi-2020-gyosei-q16-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

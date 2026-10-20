@@ -1,0 +1,305 @@
+{
+ "question_id": "yobi-2019-shoho-q25",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q25-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：略式吸収分割では、分割会社の株主が反対を通知しても株主総会の承認は要らない（反対通知で総会が必要になる仕組みは承継会社側の簡易手続の規定）。",
+   "body": "誤りは、株主の反対通知があれば分割会社が株主総会の決議による承認を受けなければならないとしている部分です。784条1項本文は、吸収分割承継会社が吸収分割株式会社の特別支配会社である場合には、前条第一項（783条1項の株主総会の承認）の規定は「適用しない」と定めています。同項ただし書は合併対価等が譲渡制限株式等である吸収合併又は株式交換についての例外で、吸収分割には及びません。一定数の株式を有する株主の反対通知によって株主総会の承認が必要になるのは、796条3項の定める存続株式会社等（承継会社側）の簡易手続の場面であり、分割会社側の略式手続にはそのような規定はありません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "784",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条第一項の規定は、吸収合併存続会社、吸収分割承継会社又は株式交換完全親会社（以下この目において「存続会社等」という。）が消滅株式会社等の特別支配会社である場合には、適用しない。",
+     "text_sha256": "0fd2760dec8a5c1c23dcbbd693db3aa09f68af93eebd7c40d757f071f3f7bce3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "783",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "消滅株式会社等は、効力発生日の前日までに、株主総会の決議によって、吸収合併契約等の承認を受けなければならない。",
+     "text_sha256": "b1b24b9cb0fabd3f6137dd2837152050ea21919af582ba309ffb93281f567925",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "796",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "吸収合併等に反対する旨を存続株式会社等に対し通知したときは、当該存続株式会社等は、効力発生日の前日までに、株主総会の決議によって、吸収合併契約等の承認を受けなければならない。",
+     "text_sha256": "d9fb4c545bb29a1bff3d3f67c10e70381fc11964deb004aaab73437dfa495839",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q25-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q25-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：分割会社側の簡易吸収分割では、株主の反対通知があっても株主総会の承認は要らない。",
+   "body": "誤りは、反対通知があれば株主総会の承認が必要になるとしている部分です。784条2項は、承継させる資産の帳簿価額の合計額が吸収分割株式会社の総資産額の「五分の一（これを下回る割合を吸収分割株式会社の定款で定めた場合にあっては、その割合）を超えない場合には、適用しない」と定め、783条の株主総会の承認を不要としています。784条2項には、一定数の株式を有する株主の反対通知によって総会の承認が必要になるという定めはありません。そのような定めは、796条3項の存続株式会社等（承継会社側）の簡易手続についてのものです。分割会社側の簡易分割は、分割会社の株主にとって影響が小さいため、こうした例外を置いていないと解されています。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "784",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "五分の一（これを下回る割合を吸収分割株式会社の定款で定めた場合にあっては、その割合）を超えない場合には、適用しない。",
+     "text_sha256": "0fd2760dec8a5c1c23dcbbd693db3aa09f68af93eebd7c40d757f071f3f7bce3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "783",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "消滅株式会社等は、効力発生日の前日までに、株主総会の決議によって、吸収合併契約等の承認を受けなければならない。",
+     "text_sha256": "b1b24b9cb0fabd3f6137dd2837152050ea21919af582ba309ffb93281f567925",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "796",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "吸収合併等に反対する旨を存続株式会社等に対し通知したときは、当該存続株式会社等は、効力発生日の前日までに、株主総会の決議によって、吸収合併契約等の承認を受けなければならない。",
+     "text_sha256": "d9fb4c545bb29a1bff3d3f67c10e70381fc11964deb004aaab73437dfa495839",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "分割会社側の簡易分割に反対通知の例外がない理由は解釈による。"
+   ],
+   "id": "exp-yobi-2019-shoho-q25-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q25-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：略式吸収分割でも、法令・定款違反で株主が不利益を受けるおそれがあれば、分割会社の株主は差止めを請求できる。",
+   "body": "784条の2は、「当該吸収合併等が法令又は定款に違反する場合」において、消滅株式会社等の株主が不利益を受けるおそれがあるときは、株主は「吸収合併等をやめることを請求することができる」と定めています。同条ただし書が差止めを否定するのは「前条第二項に規定する場合」、すなわち784条2項の簡易吸収分割の場合だけです。承継会社が分割会社の特別支配会社である784条1項の略式の場合は除かれていないので、法令・定款違反を理由とする差止請求は可能です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "784_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "消滅株式会社等の株主は、消滅株式会社等に対し、吸収合併等をやめることを請求することができる。ただし、前条第二項に規定する場合は、この限りでない。",
+     "text_sha256": "e67e43e0f4f37b71cfccff14618a2f9b24ea9f287287c19a94fc352f44251751",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "784_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該吸収合併等が法令又は定款に違反する場合",
+     "text_sha256": "e67e43e0f4f37b71cfccff14618a2f9b24ea9f287287c19a94fc352f44251751",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "784",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条第一項の規定は、吸収合併存続会社、吸収分割承継会社又は株式交換完全親会社（以下この目において「存続会社等」という。）が消滅株式会社等の特別支配会社である場合には、適用しない。",
+     "text_sha256": "0fd2760dec8a5c1c23dcbbd693db3aa09f68af93eebd7c40d757f071f3f7bce3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "784",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前条の規定は、吸収分割により吸収分割承継会社に承継させる資産の帳簿価額の合計額が吸収分割株式会社の総資産額として法務省令で定める方法により算定される額の五分の一",
+     "text_sha256": "0fd2760dec8a5c1c23dcbbd693db3aa09f68af93eebd7c40d757f071f3f7bce3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q25-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q25-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：分割会社側の簡易吸収分割（784条2項の場合）では、反対株主の株式買取請求権は認められない。",
+   "body": "785条1項は、吸収合併等をする場合に反対株主の株式買取請求を認めつつ、その例外として「第七百八十四条第二項に規定する場合」を挙げています。784条2項は、承継させる資産の帳簿価額の合計額が吸収分割株式会社の総資産額の5分の1を超えない簡易吸収分割の場合です。したがって、本肢の場合、分割会社の反対株主は株式買取請求をすることができません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "785",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収合併等をする場合（次に掲げる場合を除く。）には、反対株主は、消滅株式会社等に対し、自己の有する株式を公正な価格で買い取ることを請求することができる。",
+     "text_sha256": "97607594fbf2696764a8ecdd120094d239bf8bcf2e5a2eb7613ab5259427149d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "785",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第七百八十四条第二項に規定する場合",
+     "text_sha256": "97607594fbf2696764a8ecdd120094d239bf8bcf2e5a2eb7613ab5259427149d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "784",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "五分の一（これを下回る割合を吸収分割株式会社の定款で定めた場合にあっては、その割合）を超えない場合には、適用しない。",
+     "text_sha256": "0fd2760dec8a5c1c23dcbbd693db3aa09f68af93eebd7c40d757f071f3f7bce3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q25-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q25-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：債権者異議手続には簡易分割の例外がなく、分割後に分割会社へ履行を請求できない債権者は異議を述べることができる。",
+   "body": "789条1項2号は、吸収分割をする場合に「吸収分割後吸収分割株式会社に対して債務の履行（当該債務の保証人として吸収分割承継会社と連帯して負担する保証債務の履行を含む。）を請求することができない吸収分割株式会社の債権者」が異議を述べることができると定めています。この規定には、承継させる資産の額が総資産額の5分の1を超えない場合を除く定めはありません。784条2項の簡易手続で不要となるのは783条の株主総会の承認であって、債権者保護手続ではありません。したがって、本肢の債権者は異議を述べることができます。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "789",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収分割後吸収分割株式会社に対して債務の履行（当該債務の保証人として吸収分割承継会社と連帯して負担する保証債務の履行を含む。）を請求することができない吸収分割株式会社の債権者",
+     "text_sha256": "ce1e755541d2c2507d2f9e000bcee08adee7edc5f9cc6ed442c128bf32cecd8b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "784",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前条の規定は、吸収分割により吸収分割承継会社に承継させる資産の帳簿価額の合計額が吸収分割株式会社の総資産額として法務省令で定める方法により算定される額の五分の一",
+     "text_sha256": "0fd2760dec8a5c1c23dcbbd693db3aa09f68af93eebd7c40d757f071f3f7bce3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "783",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "消滅株式会社等は、効力発生日の前日までに、株主総会の決議によって、吸収合併契約等の承認を受けなければならない。",
+     "text_sha256": "b1b24b9cb0fabd3f6137dd2837152050ea21919af582ba309ffb93281f567925",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q25-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

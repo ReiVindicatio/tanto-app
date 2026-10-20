@@ -1,0 +1,155 @@
+{
+ "question_id": "yobi-2020-gyosei-q21",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-gyosei-q21-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：執行停止は「重大な損害」、仮の差止めは「償うことのできない損害」を避けるための緊急の必要が要件である。",
+   "body": "ポイントは、損害の程度の要件が両者で異なることである。行政事件訴訟法25条2項は、執行停止の要件として「処分、処分の執行又は手続の続行により生ずる重大な損害を避けるため緊急の必要があるとき」と定めている。これに対し、同法37条の5第2項は、仮の差止めの要件として、処分又は裁決が「されることにより生ずる償うことのできない損害を避けるため緊急の必要があり」と定めている。したがって、本肢は条文どおりであり正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "25",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "処分、処分の執行又は手続の続行により生ずる重大な損害を避けるため緊急の必要があるとき",
+     "text_sha256": "e34c7fb3e9a688c620b8989d059d09fcde52fab53ff01172d2952a9a092b6870",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_5",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "されることにより生ずる償うことのできない損害を避けるため緊急の必要があり",
+     "text_sha256": "419ede27f65a00aa522626130262a1736045f39017782072f6792c80c3e7475a",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-gyosei-q21-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-gyosei-q21-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：仮の差止めは「本案について理由があるとみえるとき」が積極要件だが、執行停止は「本案について理由がないとみえるとき」にできないという消極要件にとどまる。",
+   "body": "ポイントは、執行停止についても本案の理由が積極要件になっているとしている点である。行政事件訴訟法37条の5第2項は、仮の差止めについて「本案について理由があるとみえるとき」を要件としており、申立人の側で本案に理由があるとみえることが必要である。これに対し、同法25条4項は「執行停止は、公共の福祉に重大な影響を及ぼすおそれがあるとき、又は本案について理由がないとみえるときは、することができない。」と定めるだけであり、本案について理由がないとみえることが執行停止をしない事由とされているにすぎない。したがって、執行停止についても本案について理由があるとみえるときでなければ決定できないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_5",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "本案について理由があるとみえるとき",
+     "text_sha256": "419ede27f65a00aa522626130262a1736045f39017782072f6792c80c3e7475a",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "25",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "執行停止は、公共の福祉に重大な影響を及ぼすおそれがあるとき、又は本案について理由がないとみえるときは、することができない。",
+     "text_sha256": "e34c7fb3e9a688c620b8989d059d09fcde52fab53ff01172d2952a9a092b6870",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-gyosei-q21-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-gyosei-q21-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：仮の差止めにも25条6項が準用されるので、あらかじめ当事者の意見をきかなければならない。",
+   "body": "ポイントは、仮の差止めでは当事者の意見聴取が不要としている点である。行政事件訴訟法25条6項は、執行停止の決定について「口頭弁論を経ないですることができる。ただし、あらかじめ、当事者の意見をきかなければならない。」と定めている。そして同法37条の5第4項は「第二十五条第五項から第八項まで」の規定を「仮の義務付け又は仮の差止めに関する事項について準用する。」と定めており、25条6項も仮の差止めに準用される。したがって、仮の差止めの決定をするにも、あらかじめ当事者の意見をきかなければならず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "25",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "口頭弁論を経ないですることができる。ただし、あらかじめ、当事者の意見をきかなければならない。",
+     "text_sha256": "e34c7fb3e9a688c620b8989d059d09fcde52fab53ff01172d2952a9a092b6870",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_5",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "第二十五条第五項から第八項まで",
+     "text_sha256": "419ede27f65a00aa522626130262a1736045f39017782072f6792c80c3e7475a",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_5",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "仮の義務付け又は仮の差止めに関する事項について準用する。",
+     "text_sha256": "419ede27f65a00aa522626130262a1736045f39017782072f6792c80c3e7475a",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2020-gyosei-q21-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

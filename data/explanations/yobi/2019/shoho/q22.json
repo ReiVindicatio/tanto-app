@@ -1,0 +1,231 @@
+{
+ "question_id": "yobi-2019-shoho-q22",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q22-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：監査等委員である取締役が3人以上必要で（331条6項）、代表取締役は監査等委員以外の取締役から選定しなければならないので（399条の13第3項）、取締役は最低4人となる。",
+   "body": "331条6項は、「監査等委員会設置会社においては、監査等委員である取締役は、三人以上で、その過半数は、社外取締役でなければならない。」と定める。さらに399条の13第3項は、「監査等委員会設置会社の取締役会は、取締役（監査等委員である取締役を除く。）の中から代表取締役を選定しなければならない。」と定める。そのため、監査等委員である取締役3人のほかに、代表取締役となる監査等委員以外の取締役が少なくとも1人必要となる。したがって、監査等委員会設置会社の取締役は最低4人であり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "331",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "監査等委員会設置会社においては、監査等委員である取締役は、三人以上で、その過半数は、社外取締役でなければならない。",
+     "text_sha256": "efd945351abf4f2bc71a6d6346b8558854d58983c43540d7c48f20b7f8bdc7ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "399_13",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査等委員会設置会社の取締役会は、取締役（監査等委員である取締役を除く。）の中から代表取締役を選定しなければならない。",
+     "text_sha256": "aa8667a259169b1009078f2762e98d90db0d39837b931913533bcfdc6db5981b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q22-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q22-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：監査等委員会設置会社は、大会社であるか否かにかかわらず、会計監査人を置かなければならない（327条5項）。",
+   "body": "誤りは、大会社でなければ会計監査人を置くことを要しないとしている点である。327条5項は、「監査等委員会設置会社及び指名委員会等設置会社は、会計監査人を置かなければならない。」と定めており、大会社かどうかで区別していない。したがって、大会社でない監査等委員会設置会社も会計監査人を置かなければならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "327",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "監査等委員会設置会社及び指名委員会等設置会社は、会計監査人を置かなければならない。",
+     "text_sha256": "5a773ce772b81078bdf955298b8ce400edd7c0d886c414d3e6afc8c64f2bdd73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q22-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q22-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：公開会社でない会社の取締役の任期を10年まで伸長できる規定（332条2項）は、監査等委員会設置会社には適用されない。",
+   "body": "誤りは、公開会社でない監査等委員会設置会社であれば監査等委員である取締役の任期を10年まで伸長できるとしている点である。332条2項は、任期の伸長を認める対象を「公開会社でない株式会社（監査等委員会設置会社及び指名委員会等設置会社を除く。）」としており、監査等委員会設置会社を除外している。したがって、監査等委員である取締役の任期は、332条1項の「選任後二年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時まで」となる。なお、同条4項により、監査等委員である取締役については「第一項ただし書の規定は、適用しない」とされ、任期の短縮もできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "332",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "選任後二年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時まで",
+     "text_sha256": "5a7c37b070116a70dc4056ad795ebb6f8e8f4c1d9da3833955c08a37d98ed437",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "332",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "公開会社でない株式会社（監査等委員会設置会社及び指名委員会等設置会社を除く。）",
+     "text_sha256": "5a7c37b070116a70dc4056ad795ebb6f8e8f4c1d9da3833955c08a37d98ed437",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "332",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "監査等委員である取締役の任期については、第一項ただし書の規定は、適用しない。",
+     "text_sha256": "5a7c37b070116a70dc4056ad795ebb6f8e8f4c1d9da3833955c08a37d98ed437",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q22-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q22-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：取締役の過半数が社外取締役であっても、株主総会の日時・場所など298条1項各号の事項の決定は取締役に委任できない（399条の13第5項ただし書4号）。",
+   "body": "399条の13第5項本文は、監査等委員会設置会社の取締役の過半数が社外取締役である場合には、取締役会は「その決議によって、重要な業務執行の決定を取締役に委任することができる」と定める。しかし同項ただし書は委任できない事項を列挙しており、その4号に「第二百九十八条第一項各号に掲げる事項の決定」が挙げられている。298条1項1号は「株主総会の日時及び場所」である。したがって、株主総会の日時及び場所の決定は、取締役の過半数が社外取締役であっても取締役に委任することはできず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "399_13",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "その決議によって、重要な業務執行の決定を取締役に委任することができる",
+     "text_sha256": "aa8667a259169b1009078f2762e98d90db0d39837b931913533bcfdc6db5981b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "399_13",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "第二百九十八条第一項各号に掲げる事項の決定",
+     "text_sha256": "aa8667a259169b1009078f2762e98d90db0d39837b931913533bcfdc6db5981b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "298",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の日時及び場所",
+     "text_sha256": "6cf29e7480618de198fa9d58594d5a4ce9fc66387a9a752e3953d185c6c837c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q22-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q22-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：監査等委員は、法令・定款違反行為のおそれがあり会社に著しい損害が生ずるおそれがあるとき、取締役に対し差止めを請求できる（399条の6第1項）。",
+   "body": "399条の6第1項は、監査等委員は、取締役が「法令若しくは定款に違反する行為をし、又はこれらの行為をするおそれがある場合において、当該行為によって当該監査等委員会設置会社に著しい損害が生ずるおそれがあるときは、当該取締役に対し、当該行為をやめることを請求することができる。」と定める。本肢はこの規定のとおりであり、正しい。差止請求権は監査等委員会ではなく個々の監査等委員に認められている点に注意する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "399_6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法令若しくは定款に違反する行為をし、又はこれらの行為をするおそれがある場合において、当該行為によって当該監査等委員会設置会社に著しい損害が生ずるおそれがあるときは、当該取締役に対し、当該行為をやめることを請求することができる。",
+     "text_sha256": "6c6a3efe71c174cb315c8819fb5488ec57a653a03f9d41090ee7f67016e85970",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q22-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

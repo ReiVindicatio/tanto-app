@@ -1,0 +1,293 @@
+{
+ "question_id": "yobi-2019-shoho-q23",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q23-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：取得条項付新株予約権の取得と引換えに株式を発行する場合も、法務省令の定める資本金等増加限度額に基づいて資本金の額が増加しうる（会社計算規則13条2項7号・18条1項）。",
+   "body": "誤りは、資本金の額を増加することができないとしている点である。会社計算規則13条2項は、資本金等増加限度額の定めが及ぶ「成立後に行う株式の交付」の一つとして、7号で「取得条項付新株予約権（法第二百三十六条第一項第七号ニに掲げる事項についての定めがあるものに限る。以下この章において同じ。）の取得をする場合」を挙げている。そして同規則18条1項は、「取得条項付新株予約権の取得をする場合には、資本金等増加限度額は」取得時の新株予約権の価額等から算定した額とすると定める。同規則13条1項によれば、資本金等増加限度額は会社法445条1項に規定する「株主となる者が当該株式会社に対して払込み又は給付をした財産の額」をいい、同項により資本金の額となる（同条2項・3項により、その2分の1を超えない額は資本準備金とすることができる）。したがって、取得条項付新株予約権の取得と引換えに新たに株式を発行するときも、資本金の額を増加することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主となる者が当該株式会社に対して払込み又は給付をした財産の額",
+     "text_sha256": "e8a9dbb43cea48a990d8ba0a8c46c85283dd814dcdbdab6f6d19a781ef6609f7",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "13",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "取得条項付新株予約権（法第二百三十六条第一項第七号ニに掲げる事項についての定めがあるものに限る。以下この章において同じ。）の取得をする場合",
+     "text_sha256": "e8a9dbb43cea48a990d8ba0a8c46c85283dd814dcdbdab6f6d19a781ef6609f7",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "18",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取得条項付新株予約権の取得をする場合には、資本金等増加限度額は",
+     "text_sha256": "88126d350ed12b4877967569d58110ceb48beaa5d84213bb8d3f5adec59eb5fa",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "445",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社の資本金の額は、この法律に別段の定めがある場合を除き、設立又は株式の発行に際して株主となる者が当該株式会社に対して払込み又は給付をした財産の額とする。",
+     "text_sha256": "96e4c4e13ca75e4f06a3e6da8166bbace9af8037f7f88af2534e23b63a7268c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "445",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の払込み又は給付に係る額の二分の一を超えない額は、資本金として計上しないことができる。",
+     "text_sha256": "96e4c4e13ca75e4f06a3e6da8166bbace9af8037f7f88af2534e23b63a7268c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "資本金等増加限度額が会社法445条1項から3項までに従って資本金・資本準備金に計上されるという点は、会社計算規則13条1項の定義を通じた解釈による。算定の結果が零となる場合もあるが、一律に増加できないわけではない。"
+   ],
+   "id": "exp-yobi-2019-shoho-q23-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q23-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：株式の発行と同時にする資本金の額の減少で減少後の額が減少前を下回らない場合に変わるのは決定機関だけで（447条3項）、債権者異議手続（449条1項）は省略できない。",
+   "body": "447条3項は、株式会社が株式の発行と同時に資本金の額を減少する場合において、効力発生日後の資本金の額が当該日前の資本金の額を下回らないときは、同条1項の「株主総会の決議」を「取締役の決定（取締役会設置会社にあっては、取締役会の決議）」と読み替えると定めるにとどまる。他方、449条1項本文は、資本金又は準備金の額を減少する場合（減少する準備金の額の全部を資本金とする場合を除く。）には、債権者は「資本金等の額の減少について異議を述べることができる」と定め、同項ただし書の例外も「準備金の額のみを減少する場合」に限られている。したがって、本肢の場合にも債権者は異議を述べることができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "447",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "取締役の決定（取締役会設置会社にあっては、取締役会の決議）",
+     "text_sha256": "1f9119bc0b062175b70a3c1d195b7427c21a0a2479816ec33ef4aa46c3ab3ed5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "449",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "資本金等の額の減少について異議を述べることができる",
+     "text_sha256": "39d0705e0a858e8d4b9767115e67b26e2a13a2ee82c6c94d630a64e3251d0d91",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "449",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "準備金の額のみを減少する場合",
+     "text_sha256": "39d0705e0a858e8d4b9767115e67b26e2a13a2ee82c6c94d630a64e3251d0d91",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q23-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q23-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：減少する準備金の額の全部を資本金とする場合は、債権者異議手続の対象から除かれている（449条1項本文括弧書）。",
+   "body": "449条1項本文は、「株式会社が資本金又は準備金（以下この条において「資本金等」という。）の額を減少する場合（減少する準備金の額の全部を資本金とする場合を除く。）には、当該株式会社の債権者は、当該株式会社に対し、資本金等の額の減少について異議を述べることができる。」と定める。減少する準備金の全部を資本金とする場合は、会社財産の拘束がかえって強まり債権者を害しないため、異議手続の対象から除かれていると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "449",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社が資本金又は準備金（以下この条において「資本金等」という。）の額を減少する場合（減少する準備金の額の全部を資本金とする場合を除く。）には、当該株式会社の債権者は、当該株式会社に対し、資本金等の額の減少について異議を述べることができる。",
+     "text_sha256": "39d0705e0a858e8d4b9767115e67b26e2a13a2ee82c6c94d630a64e3251d0d91",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q23-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q23-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：剰余金の額を減少して資本金の額を増加するには、株主総会の普通決議で足りる（450条2項・309条1項）。",
+   "body": "誤りは、特別決議によらなければならないとしている点である。450条2項は、剰余金の額を減少して資本金の額を増加する場合の事項の決定は「株主総会の決議によらなければならない」と定める。特別決議を要する事項を列挙した309条2項には450条の株主総会は掲げられていない（資本金の額の減少である447条1項の株主総会は同項9号に掲げられている）。したがって、この決議は309条1項の普通決議で足り、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "450",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項各号に掲げる事項の決定は、株主総会の決議によらなければならない。",
+     "text_sha256": "99c667fc7fffe9a3f160d44c6acc4390714d4de49a322fa43827325b0b6b7e47",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "309",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の決議は、定款に別段の定めがある場合を除き、議決権を行使することができる株主の議決権の過半数を有する株主が出席し、出席した当該株主の議決権の過半数をもって行う。",
+     "text_sha256": "56ffbd6451793882d47ba533193af3dd09d3d0c791034f12f0f7f32cf6456aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "309",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第四百四十七条第一項の株主総会",
+     "text_sha256": "56ffbd6451793882d47ba533193af3dd09d3d0c791034f12f0f7f32cf6456aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "447",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、資本金の額を減少することができる。",
+     "text_sha256": "1f9119bc0b062175b70a3c1d195b7427c21a0a2479816ec33ef4aa46c3ab3ed5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q23-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q23-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：資本金の額の減少の無効の訴えを提起できる債権者は「承認をしなかった債権者」に限られ（828条2項5号）、承認したものとみなされた債権者（449条4項）は提起できない。",
+   "body": "828条2項5号は、資本金の額の減少の無効の訴えを提起できる者を「当該株式会社の株主等、破産管財人又は資本金の額の減少について承認をしなかった債権者」に限っている。そして449条4項は、「債権者が第二項第三号の期間内に異議を述べなかったときは、当該債権者は、当該資本金等の額の減少について承認をしたものとみなす。」と定める。したがって、承認をしたものとみなされた債権者は提訴権者に当たらず、無効の訴えを提起することができない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "828",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該株式会社の株主等、破産管財人又は資本金の額の減少について承認をしなかった債権者",
+     "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "449",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "債権者が第二項第三号の期間内に異議を述べなかったときは、当該債権者は、当該資本金等の額の減少について承認をしたものとみなす。",
+     "text_sha256": "39d0705e0a858e8d4b9767115e67b26e2a13a2ee82c6c94d630a64e3251d0d91",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q23-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,269 @@
+{
+ "question_id": "yobi-2019-shoho-q20",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q20-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。会社法331条1項の取締役の欠格事由に破産者は掲げられておらず、復権していない破産者も取締役に選任できる。",
+   "body": "会社法331条1項は「次に掲げる者は、取締役となることができない。」として、1号の「法人」のほか、同法などの罪を犯して刑に処せられた者（3号）、それ以外の法令に違反して拘禁刑以上の刑に処せられた者（4号）を掲げている。破産手続開始の決定を受けて復権していない者は、この欠格事由に含まれていない。したがって、株式会社はそのような自然人を取締役に選任することができ、本肢は正しい。なお、取締役が在任中に破産手続開始の決定を受けた場合には、会社との委任関係が終了しうる（民法653条2号）が、それと選任できるかどうかとは別の問題と解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "331",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる者は、取締役となることができない。",
+     "text_sha256": "efd945351abf4f2bc71a6d6346b8558854d58983c43540d7c48f20b7f8bdc7ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "331",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法人",
+     "text_sha256": "efd945351abf4f2bc71a6d6346b8558854d58983c43540d7c48f20b7f8bdc7ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "653",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "委任者又は受任者が破産手続開始の決定を受けたこと。",
+     "text_sha256": "d5fd08a24dfabded2ae84afd489a38d8782a7badf15f0b07ddceac3f3b8a298f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "在任中の破産と選任の可否を区別する点は解釈による"
+   ],
+   "id": "exp-yobi-2019-shoho-q20-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q20-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。会社法365条2項の報告義務は、競業取引をした取締役に、承認の有無を問わず課される。",
+   "body": "会社法356条1項1号は、取締役が「自己又は第三者のために株式会社の事業の部類に属する取引をしようとするとき。」を承認を要する場合として掲げる（取締役会設置会社では同法365条1項により承認機関は取締役会となる）。そのうえで同法365条2項は「取締役会設置会社においては、第三百五十六条第一項各号の取引をした取締役は、当該取引後、遅滞なく、当該取引についての重要な事実を取締役会に報告しなければならない。」と定めている。この規定は、承認を受けたかどうかで報告義務を区別していない。したがって、承認を受けずに競業取引をした取締役も事後の報告をしなければならず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "356",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己又は第三者のために株式会社の事業の部類に属する取引をしようとするとき。",
+     "text_sha256": "1f519283022020dbb09f21e69d5e5dfc33a50acae50d33e817fb256ed4327990",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "365",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役会設置会社における第三百五十六条の規定の適用については、同条第一項中「株主総会」とあるのは、「取締役会」とする。",
+     "text_sha256": "ad5cc5119f91885c9349211b6432e9998690efc4f14f5ceaaa2ff2532cc02b80",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "365",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "取締役会設置会社においては、第三百五十六条第一項各号の取引をした取締役は、当該取引後、遅滞なく、当該取引についての重要な事実を取締役会に報告しなければならない。",
+     "text_sha256": "ad5cc5119f91885c9349211b6432e9998690efc4f14f5ceaaa2ff2532cc02b80",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q20-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q20-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。会社法386条1項1号により、監査役設置会社が元取締役に訴えを提起する場合は、代表取締役ではなく監査役が会社を代表する。",
+   "body": "誤りは「代表取締役が当該監査役設置会社を代表する」とする部分である。会社法386条1項は、代表取締役の代表権に関する規定などにかかわらず「当該各号の訴えについては、監査役が監査役設置会社を代表する。」と定める。その1号は「監査役設置会社が取締役（取締役であった者を含む。以下この条において同じ。）に対し、又は取締役が監査役設置会社に対して訴えを提起する場合」を掲げており、取締役であった者も含まれる。したがって、元取締役の責任を追及する訴えでは監査役が会社を代表し、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "386",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該各号の訴えについては、監査役が監査役設置会社を代表する。",
+     "text_sha256": "6acc2c0ed7e96a3c30f7159de3f187b579e8d64b721d584e58ad8751b5866144",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "386",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "監査役設置会社が取締役（取締役であった者を含む。以下この条において同じ。）に対し、又は取締役が監査役設置会社に対して訴えを提起する場合",
+     "text_sha256": "6acc2c0ed7e96a3c30f7159de3f187b579e8d64b721d584e58ad8751b5866144",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q20-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q20-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。自己のための直接取引による責任も、会社法424条により総株主の同意があれば免除できる（428条2項が排除するのは一部免除等の規定のみ）。",
+   "body": "誤りは「総株主の同意によっても，免除することができない」とする部分である。会社法424条は「前条第一項の責任は、総株主の同意がなければ、免除することができない。」と定め、総株主の同意があれば任務懈怠責任の全部を免除できる。自己のために会社と取引をした取締役については、同法428条1項が帰責事由がないことをもって責任を「免れることができない」とし、同条2項が「前三条の規定は、前項の責任については、適用しない。」と定める。ここで適用が除かれる「前三条」は、責任の一部免除や責任限定契約に関する規定であり、総株主の同意による免除を定める424条は含まれない。したがって、総株主の同意による免除は可能であり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "424",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条第一項の責任は、総株主の同意がなければ、免除することができない。",
+     "text_sha256": "6b179a154fc5dbdb010de72c0b5b3b40a7abc3c1c7c42d0533e029d4a8c02746",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "428",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "免れることができない",
+     "text_sha256": "2565a23898e94211c4eb9c0376c5c78f8b51246608be05910f2304ec506e6cf7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "428",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前三条の規定は、前項の責任については、適用しない。",
+     "text_sha256": "2565a23898e94211c4eb9c0376c5c78f8b51246608be05910f2304ec506e6cf7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q20-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-shoho-q20-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。会社法911条3項22号ロにより、監査等委員会設置会社は、社外取締役である取締役について社外取締役である旨を登記しなければならない。",
+   "body": "会社法911条3項は株式会社の登記事項を掲げ、その22号は「監査等委員会設置会社であるときは、その旨及び次に掲げる事項」とする。そして同号ロとして「取締役のうち社外取締役であるものについて、社外取締役である旨」が掲げられている。したがって、監査等委員会設置会社では、社外取締役である旨を登記しなければならず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "911",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査等委員会設置会社であるときは、その旨及び次に掲げる事項",
+     "text_sha256": "56343fd3641b8d54245c3b12bab878cbdf7e9de83d41e9e0d92349ec4858cda2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "911",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "取締役のうち社外取締役であるものについて、社外取締役である旨",
+     "text_sha256": "56343fd3641b8d54245c3b12bab878cbdf7e9de83d41e9e0d92349ec4858cda2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-shoho-q20-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
