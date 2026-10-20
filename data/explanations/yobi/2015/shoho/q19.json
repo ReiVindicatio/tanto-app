@@ -1,0 +1,293 @@
+{
+ "question_id": "yobi-2015-shoho-q19",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q19-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。取締役会設置会社でなく書面・電磁的方法による議決権行使も定めない会社では、招集通知は書面による必要がなく、目的事項の記載・記録の義務もない。",
+   "body": "本肢のポイントは、招集通知に目的事項の記載を要求する規定がどの通知に適用されるかである。会社法299条2項は、書面による通知を要する場合として「前条第一項第三号又は第四号に掲げる事項を定めた場合」と「株式会社が取締役会設置会社である場合」を挙げ、同条3項は書面に代わる電磁的方法による通知を定める。そして同条4項は「前二項の通知には、前条第一項各号に掲げる事項を記載し、又は記録しなければならない。」とし、記載・記録の義務を2項・3項の通知に限っている。本肢の会社はいずれにも当たらず、招集通知を書面ですることを要しないから、298条1項2号の「株主総会の目的である事項があるときは、当該事項」を定めた場合でも、これを招集通知に記載することを要しない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "299",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前条第一項第三号又は第四号に掲げる事項を定めた場合",
+     "text_sha256": "c9e7ce2cbe4c1c2200881a5eaf371c45904cec4f97fae631cbfbb187decc0631",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "299",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株式会社が取締役会設置会社である場合",
+     "text_sha256": "c9e7ce2cbe4c1c2200881a5eaf371c45904cec4f97fae631cbfbb187decc0631",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "299",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "前二項の通知には、前条第一項各号に掲げる事項を記載し、又は記録しなければならない。",
+     "text_sha256": "c9e7ce2cbe4c1c2200881a5eaf371c45904cec4f97fae631cbfbb187decc0631",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "298",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の目的である事項があるときは、当該事項",
+     "text_sha256": "6cf29e7480618de198fa9d58594d5a4ce9fc66387a9a752e3953d185c6c837c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-shoho-q19-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q19-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。公開会社でない取締役会設置会社では、書面・電磁的方法による議決権行使を定めない限り、招集通知は株主総会の日の1週間前までに発すれば足りる。",
+   "body": "誤りは、公開会社であるか否かにかかわらず2週間前までとする部分である。会社法299条1項は、招集通知を株主総会の日の二週間前までに発しなければならないとしつつ、括弧書きで「前条第一項第三号又は第四号に掲げる事項を定めたときを除き、公開会社でない株式会社にあっては、一週間」と定める。この1週間の期間は取締役会設置会社であっても適用される（定款で1週間を下回る期間を定められるのは「取締役会設置会社以外の株式会社である場合」に限られる）。したがって、公開会社でない取締役会設置会社では原則として1週間前までに発すれば足り、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "299",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条第一項第三号又は第四号に掲げる事項を定めたときを除き、公開会社でない株式会社にあっては、一週間",
+     "text_sha256": "c9e7ce2cbe4c1c2200881a5eaf371c45904cec4f97fae631cbfbb187decc0631",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "299",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役会設置会社以外の株式会社である場合",
+     "text_sha256": "c9e7ce2cbe4c1c2200881a5eaf371c45904cec4f97fae631cbfbb187decc0631",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-shoho-q19-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q19-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。公開会社は必ず取締役会設置会社であり、取締役会設置会社の招集通知は書面（または株主の承諾を得た電磁的方法）でしなければならないから、口頭ではできない。",
+   "body": "本肢のポイントは、公開会社の招集通知の方式である。会社法327条1項は「次に掲げる株式会社は、取締役会を置かなければならない。」とし、1号で「公開会社」を挙げるから、公開会社は取締役会設置会社である。そして299条2項は、「株式会社が取締役会設置会社である場合」には招集通知を「書面でしなければならない」と定め、同条3項により株主の承諾を得て電磁的方法で通知することもできるにとどまる。したがって、公開会社では招集通知を口頭ですることはできず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "327",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる株式会社は、取締役会を置かなければならない。",
+     "text_sha256": "5a773ce772b81078bdf955298b8ce400edd7c0d886c414d3e6afc8c64f2bdd73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "327",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公開会社",
+     "text_sha256": "5a773ce772b81078bdf955298b8ce400edd7c0d886c414d3e6afc8c64f2bdd73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "299",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株式会社が取締役会設置会社である場合",
+     "text_sha256": "c9e7ce2cbe4c1c2200881a5eaf371c45904cec4f97fae631cbfbb187decc0631",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "299",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "書面でしなければならない",
+     "text_sha256": "c9e7ce2cbe4c1c2200881a5eaf371c45904cec4f97fae631cbfbb187decc0631",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "299",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "取締役は、前項の書面による通知の発出に代えて、政令で定めるところにより、株主の承諾を得て、電磁的方法により通知を発することができる。",
+     "text_sha256": "c9e7ce2cbe4c1c2200881a5eaf371c45904cec4f97fae631cbfbb187decc0631",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-shoho-q19-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q19-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。書面投票の定めが義務付けられるのは議決権を行使できる株主の数が1000人以上の場合であり、大会社であることは基準ではない。",
+   "body": "誤りは、大会社であれば書面投票を定めなければならないとする部分である。会社法298条2項本文は、取締役は「株主（株主総会において決議をすることができる事項の全部につき議決権を行使することができない株主を除く。次条から第三百二条までにおいて同じ。）の数が千人以上である場合には、前項第三号に掲げる事項を定めなければならない。」と定める。このように書面投票の義務付けは株主の数を基準としており、資本金や負債の額で決まる大会社（2条6号）であるかどうかとは関係がない。したがって、大会社であっても株主の数が1000人未満であれば書面投票を定める必要はなく、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "298",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株主（株主総会において決議をすることができる事項の全部につき議決権を行使することができない株主を除く。次条から第三百二条までにおいて同じ。）の数が千人以上である場合には、前項第三号に掲げる事項を定めなければならない。",
+     "text_sha256": "6cf29e7480618de198fa9d58594d5a4ce9fc66387a9a752e3953d185c6c837c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "大会社　次に掲げる要件のいずれかに該当する株式会社をいう。",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-shoho-q19-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q19-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。定時株主総会の招集通知に際して提供が義務付けられるのは連結計算書類であり、それに係る会計監査報告の提供は、会社がそう定めた場合に限られる。",
+   "body": "誤りは、連結計算書類に係る会計監査報告の提供を義務とする部分である。会社法444条6項は、会計監査人設置会社が取締役会設置会社である場合には、取締役は、定時株主総会の招集の通知に際して「株主に対し、前項の承認を受けた連結計算書類を提供しなければならない。」と定め、提供の対象は連結計算書類である。その提供の方法を定める会社計算規則134条2項は、「前項の連結計算書類に係る会計監査報告又は監査報告がある場合において、当該会計監査報告又は監査報告の内容をも株主に対して提供することを定めたとき」に、提供すべきものを会計監査報告を含む連結計算書類に読み替えるとしている。つまり会計監査報告の提供は会社が定めたときに限られ、義務ではないから、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "444",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "株主に対し、前項の承認を受けた連結計算書類を提供しなければならない。",
+     "text_sha256": "30c7730cf30e7f59108888c1f1ea492cae36262ac5aefe00f2949527179a161b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "134",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の連結計算書類に係る会計監査報告又は監査報告がある場合において、当該会計監査報告又は監査報告の内容をも株主に対して提供することを定めたとき",
+     "text_sha256": "2c64b7f970889efd282cb09e50ae70d94e0ccf19353467cee202ff3b30e2bb9c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "連結計算書類の作成義務は会社法444条3項（大会社で有価証券報告書の提出義務がある会社）による。本肢の会社は取締役会設置会社であることを前提に説明した"
+   ],
+   "id": "exp-yobi-2015-shoho-q19-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

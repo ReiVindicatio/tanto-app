@@ -1,0 +1,235 @@
+{
+ "question_id": "yobi-2015-shoho-q22",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q22-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。監査役会は常勤の監査役を選定しなければならないが、その人数に上限はなく、2人以上を選定することもできる。",
+   "body": "390条3項は「監査役会は、監査役の中から常勤の監査役を選定しなければならない。」と定め、同条2項2号は監査役会の職務として「常勤の監査役の選定及び解職」を掲げている。法律が求めるのは常勤の監査役を少なくとも1人選定することであり、選定する人数の上限は定められていない。したがって、監査役会が2人以上の常勤監査役を選定することもでき、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "390",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査役会は、監査役の中から常勤の監査役を選定しなければならない。",
+     "text_sha256": "5081c3a6dcdd0b5308b2e8cff225d053c1460b9075c8be0bf9d539d33a4323f0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "390",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "常勤の監査役の選定及び解職",
+     "text_sha256": "5081c3a6dcdd0b5308b2e8cff225d053c1460b9075c8be0bf9d539d33a4323f0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-shoho-q22-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q22-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。監査役会設置会社では監査役の半数以上が社外監査役でなければならず、4人なら2人以上が社外監査役であることを要する。",
+   "body": "335条3項は「監査役会設置会社においては、監査役は、三人以上で、そのうち半数以上は、社外監査役でなければならない。」と定めている。監査役が4人であれば、その半数は2人であるから、少なくとも2人は社外監査役でなければならない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "335",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査役会設置会社においては、監査役は、三人以上で、そのうち半数以上は、社外監査役でなければならない。",
+     "text_sha256": "04ace5012fa40f97df28d229c2ac40385a37871c068a7fc98ef1476cc0f35c37",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-shoho-q22-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q22-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。監査役会の決議は出席者ではなく監査役全員の過半数で行うため、4人の監査役がいるときは3人の賛成が必要である。",
+   "body": "誤りは「そのうち２人の賛成により監査役会の決議が成立する」の部分である。393条1項は「監査役会の決議は、監査役の過半数をもって行う。」と定めており、ここでいう過半数は出席した監査役ではなく監査役全員を基準とするものと解されている。これは、取締役会の決議について369条1項が「議決に加わることができる取締役の過半数（これを上回る割合を定款で定めた場合にあっては、その割合以上）が出席し、その過半数」と、出席者の過半数で足りるとしているのと異なる。監査役が4人いるときはその過半数である3人の賛成が必要であり、出席した3人のうち2人の賛成では決議は成立しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "393",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "監査役会の決議は、監査役の過半数をもって行う。",
+     "text_sha256": "2cda5733114b857738167337d3da21ce775cf7bfdd62b4cdb038476b12a46705",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "369",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "議決に加わることができる取締役の過半数（これを上回る割合を定款で定めた場合にあっては、その割合以上）が出席し、その過半数",
+     "text_sha256": "e29aafab10e5f2705f31bcc129c2308bce2c4b67e4969a51125a14dee79c6d66",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "393条1項の「監査役の過半数」を監査役全員の過半数と読む点は解釈による"
+   ],
+   "id": "exp-yobi-2015-shoho-q22-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q22-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。監査役会については、取締役会の決議の省略（370条）に当たる規定がなく、決議の省略を定款で定めることはできない。",
+   "body": "本肢は、取締役会について370条が「当該提案を可決する旨の取締役会の決議があったものとみなす旨を定款で定めることができる。」としている決議の省略を、監査役会に当てはめたものである。しかし、監査役会について会社法が認める省略は、395条の「当該事項を監査役会へ報告することを要しない。」という報告の省略だけであり、決議の省略を認める規定はない。監査役会は監査役が実際に集まって協議することに意味があるため、決議の省略は認められないと解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "370",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該提案を可決する旨の取締役会の決議があったものとみなす旨を定款で定めることができる。",
+     "text_sha256": "fd3cacbec8b6fa1a06499d134a36a3c3e4142ccc3eb8e4b225a21588a59c6358",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "395",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該事項を監査役会へ報告することを要しない。",
+     "text_sha256": "efd4d9068645d9ec789568c0bd013e65c8cc8a19cc9b13df9bf92e1abe24af73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "決議の省略が認められない理由（協議の必要）は解釈による"
+   ],
+   "id": "exp-yobi-2015-shoho-q22-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q22-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。監査役を解任する株主総会の決議は特別決議であり、出席した株主の議決権の3分の2以上の賛成が必要である。",
+   "body": "誤りは「出席した当該株主の議決権の過半数をもって行う」の部分である。役員の選任・解任の決議は、341条により原則として出席した株主の議決権の過半数で行うが、309条2項7号は、特別決議によるべきものとして「監査等委員である取締役若しくは監査役を解任する場合」の株主総会を掲げている。309条2項によれば、その決議は議決権の過半数を有する株主が出席し、「出席した当該株主の議決権の三分の二（これを上回る割合を定款で定めた場合にあっては、その割合）以上に当たる多数をもって行わなければならない。」。したがって、監査役の解任を出席株主の議決権の過半数で行うとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "309",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "監査等委員である取締役若しくは監査役を解任する場合",
+     "text_sha256": "56ffbd6451793882d47ba533193af3dd09d3d0c791034f12f0f7f32cf6456aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "309",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "出席した当該株主の議決権の三分の二（これを上回る割合を定款で定めた場合にあっては、その割合）以上に当たる多数をもって行わなければならない。",
+     "text_sha256": "56ffbd6451793882d47ba533193af3dd09d3d0c791034f12f0f7f32cf6456aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "341",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "役員を選任し、又は解任する株主総会の決議は、議決権を行使することができる株主の議決権の過半数（三分の一以上の割合を定款で定めた場合にあっては、その割合以上）を有する株主が出席し、出席した当該株主の議決権の過半数（これを上回る割合を定款で定めた場合にあっては、その割合以上）をもって行わなければならない。",
+     "text_sha256": "a12de2b6c313547a02234a7521c55e568bced7ddf376475ffcae99069fda193f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-shoho-q22-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

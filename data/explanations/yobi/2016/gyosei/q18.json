@@ -1,0 +1,157 @@
+{
+ "question_id": "yobi-2016-gyosei-q18",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-gyosei-q18-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。文書の不存在（不保有）を理由とする不開示決定の取消訴訟では、不開示決定時に行政機関がその文書を保有していたことの主張立証責任は、取消しを求める者が負うとされている。",
+   "body": "ポイントは、文書の保有という事実の主張立証責任を誰が負うかである。行政文書の保有は開示請求の対象となるための前提であり、不保有を理由とする不開示決定の取消しを求める者が、決定時に行政機関がその文書を保有していたことを主張立証すべきものと解されている。最高裁もこの立場をとった判例あり（要確認）。なお、過去のある時点で文書を作成・取得したことが立証された場合に、決定時の保有まで推認できるかは、文書の内容・性質や作成・取得の経緯、決定時までの期間、保管の体制などに照らして個別に判断されると解されている。",
+   "citations": [],
+   "cases": [],
+   "notes": [
+    "沖縄返還の密約文書の開示請求に関する最高裁判決を2回探したが、courts.go.jp の最高裁判決のページを確認できなかったため、cases には入れていない（確認できたのは原審の東京高裁平成24年3月15日判決 https://www.courts.go.jp/hanrei/82580/detail2/index.html で、その要旨には主張立証責任の所在の記載はなかった）。",
+    "主張立証責任の所在は解釈による。"
+   ],
+   "id": "exp-yobi-2016-gyosei-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-gyosei-q18-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。情報公開法は開示決定等の期限（原則30日）を定めるが、期限内に決定がないときに不開示決定があったものとみなす規定は置いていない。",
+   "body": "ポイントは「開示をしない旨の決定があったものとみなされる」という部分である。情報公開法10条1項は、開示決定等は「開示請求があった日から三十日以内にしなければならない」と定め、同条2項は「事務処理上の困難その他正当な理由があるときは、同項に規定する期間を三十日以内に限り延長することができる」とし、さらに11条は著しく大量の文書について期限の特例を設けている。しかし、期限内に決定がされないときに不開示決定があったものとみなす旨の規定は置かれていない。期限内に決定がされないときは、決定がされていない状態（不作為）として争うことになり、19条1項も「開示請求に係る不作為について審査請求があったとき」を定めている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政機関の保有する情報の公開に関する法律",
+     "article": "10",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "開示請求があった日から三十日以内にしなければならない",
+     "text_sha256": "7ba0231db6343caab9b049e2e7479d000b699d79c7a81beb38d1ce52e9523553",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%80%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%8C%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政機関の保有する情報の公開に関する法律",
+     "article": "10",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "事務処理上の困難その他正当な理由があるときは、同項に規定する期間を三十日以内に限り延長することができる",
+     "text_sha256": "7ba0231db6343caab9b049e2e7479d000b699d79c7a81beb38d1ce52e9523553",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%80%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%8C%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政機関の保有する情報の公開に関する法律",
+     "article": "11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "開示請求に係る行政文書が著しく大量であるため",
+     "text_sha256": "7e2628533e1ee656622cd6a63cfb62bd91764b74680e380cbf4bbc669ac90c2a",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%80%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%8C%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政機関の保有する情報の公開に関する法律",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "開示決定等又は開示請求に係る不作為について審査請求があったときは",
+     "text_sha256": "78486fba1bf367e86b04ba34af746ab3c0a9fa715c93e4c689e241086f89786e",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%80%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%8C%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-gyosei-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-gyosei-q18-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。審査会への諮問には例外があり（審査請求が不適法で却下する場合など）、「必ず」諮問しなければならないわけではない（情報公開法19条1項）。",
+   "body": "ポイントは「必ず」という部分である。情報公開法19条1項は、開示決定等について審査請求があったときは、裁決をすべき行政機関の長は「次の各号のいずれかに該当する場合を除き、情報公開・個人情報保護審査会」に諮問しなければならないと定める。除かれる場合として、同項1号は「審査請求が不適法であり、却下する場合」を、2号は「裁決で、審査請求の全部を認容し、当該審査請求に係る行政文書の全部を開示することとする場合（当該行政文書の開示について反対意見書が提出されている場合を除く。）」を挙げている。したがって、常に諮問を要するとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政機関の保有する情報の公開に関する法律",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次の各号のいずれかに該当する場合を除き、情報公開・個人情報保護審査会",
+     "text_sha256": "78486fba1bf367e86b04ba34af746ab3c0a9fa715c93e4c689e241086f89786e",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%80%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%8C%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政機関の保有する情報の公開に関する法律",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "審査請求が不適法であり、却下する場合",
+     "text_sha256": "78486fba1bf367e86b04ba34af746ab3c0a9fa715c93e4c689e241086f89786e",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%80%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%8C%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政機関の保有する情報の公開に関する法律",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁決で、審査請求の全部を認容し、当該審査請求に係る行政文書の全部を開示することとする場合（当該行政文書の開示について反対意見書が提出されている場合を除く。）",
+     "text_sha256": "78486fba1bf367e86b04ba34af746ab3c0a9fa715c93e4c689e241086f89786e",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%80%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%8C%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-gyosei-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

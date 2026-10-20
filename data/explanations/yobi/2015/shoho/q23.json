@@ -1,0 +1,319 @@
+{
+ "question_id": "yobi-2015-shoho-q23",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q23-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。資本金の額は法定の手続によってのみ増減する計算上の数額であり、会社の財産の増減に連動して変動するものではない。",
+   "body": "誤りは「会社の財産の増減と連動して増減する」の部分である。445条1項は、資本金の額を原則として「設立又は株式の発行に際して株主となる者が当該株式会社に対して払込み又は給付をした財産の額とする。」と定めており、資本金の額は出資の時点で定まる計算上の数額である。その後に資本金の額を変えるには、減少であれば447条1項により株主総会の決議で「減少する資本金の額」などを定める必要があり、剰余金を資本金に組み入れる増加であれば450条2項により「株主総会の決議によらなければならない。」。このように、資本金の額は会社が利益を上げたり損失を出したりして財産が増減しても、それだけでは変動しないと解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "445",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設立又は株式の発行に際して株主となる者が当該株式会社に対して払込み又は給付をした財産の額とする。",
+     "text_sha256": "96e4c4e13ca75e4f06a3e6da8166bbace9af8037f7f88af2534e23b63a7268c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "447",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "減少する資本金の額",
+     "text_sha256": "1f9119bc0b062175b70a3c1d195b7427c21a0a2479816ec33ef4aa46c3ab3ed5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "450",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株主総会の決議によらなければならない。",
+     "text_sha256": "99c667fc7fffe9a3f160d44c6acc4390714d4de49a322fa43827325b0b6b7e47",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "資本金の額が財産の増減に連動しない計算上の数額であるとする点は解釈による"
+   ],
+   "id": "exp-yobi-2015-shoho-q23-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q23-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。資本金は貸借対照表の資産の部ではなく、純資産の部の株主資本に計上される。",
+   "body": "誤りは「資産の部に計上される」の部分である。会社計算規則73条1項は、貸借対照表等を「資産」「負債」「純資産」の部に区分して表示しなければならないとする。そのうえで、同規則76条1項1号は株式会社の貸借対照表の純資産の部の項目として「株主資本」を掲げ、同条2項は株主資本に係る項目の1号に「資本金」を掲げている。したがって、資本金は純資産の部に計上されるものであり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "73",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "貸借対照表等は、次に掲げる部に区分して表示しなければならない。",
+     "text_sha256": "82d381f1822da48e4f400874603fd1f6f4dfafcd8a881ed99eb7564ef9b177b1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "73",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "資産",
+     "text_sha256": "82d381f1822da48e4f400874603fd1f6f4dfafcd8a881ed99eb7564ef9b177b1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "73",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "負債",
+     "text_sha256": "82d381f1822da48e4f400874603fd1f6f4dfafcd8a881ed99eb7564ef9b177b1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "73",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "純資産",
+     "text_sha256": "82d381f1822da48e4f400874603fd1f6f4dfafcd8a881ed99eb7564ef9b177b1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "76",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主資本",
+     "text_sha256": "8c31f37467fee3ae9284e763a18d6dd202d340d0a7ab19b1ee67e1e6750e1d10",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "76",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "資本金",
+     "text_sha256": "8c31f37467fee3ae9284e763a18d6dd202d340d0a7ab19b1ee67e1e6750e1d10",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-shoho-q23-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q23-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。資本金として計上しない額は、利益準備金ではなく資本準備金として計上しなければならない。",
+   "body": "誤りは「利益準備金として計上しなければならない」の部分である。445条2項は、払込み又は給付に係る額の「二分の一を超えない額は、資本金として計上しないことができる。」と定め、同条3項は「前項の規定により資本金として計上しないこととした額は、資本準備金として計上しなければならない。」と定めている。株主からの出資は資本取引によるものであるから、利益準備金ではなく資本準備金に計上されることになる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "445",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "二分の一を超えない額は、資本金として計上しないことができる。",
+     "text_sha256": "96e4c4e13ca75e4f06a3e6da8166bbace9af8037f7f88af2534e23b63a7268c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "445",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前項の規定により資本金として計上しないこととした額は、資本準備金として計上しなければならない。",
+     "text_sha256": "96e4c4e13ca75e4f06a3e6da8166bbace9af8037f7f88af2534e23b63a7268c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-shoho-q23-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q23-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。資本金が増加するのは株式の発行に際してであり、自己株式の処分では資本金等増加限度額は零となるため、資本金は増加しない。",
+   "body": "445条1項は、資本金の額を「設立又は株式の発行に際して株主となる者が当該株式会社に対して払込み又は給付をした財産の額とする。」と定めており、新たに株式を発行しない自己株式の処分はこれに当たらない。会社計算規則14条1項は、募集株式の募集を行う場合の資本金等増加限度額を、払込額等に「株式発行割合（当該募集に際して発行する株式の数を当該募集に際して発行する株式の数及び処分する自己株式の数の合計数で除して得た割合をいう。以下この条において同じ。）」を乗じた額を基に算定すると定めている。自己株式の処分だけを行う場合は発行する株式の数が零であるから、株式発行割合も零となり、資本金等増加限度額は零となる。払込みを受けた額は、同条2項1号により自己株式処分割合に応じて「その他資本剰余金の額」に反映される。したがって、自己株式の処分によって資本金の額は増加せず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "445",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設立又は株式の発行に際して株主となる者が当該株式会社に対して払込み又は給付をした財産の額とする。",
+     "text_sha256": "96e4c4e13ca75e4f06a3e6da8166bbace9af8037f7f88af2534e23b63a7268c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "14",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式発行割合（当該募集に際して発行する株式の数を当該募集に際して発行する株式の数及び処分する自己株式の数の合計数で除して得た割合をいう。以下この条において同じ。）",
+     "text_sha256": "3acb11e205553506989018a9ffd2fc1ddef9e63c05431daba1876dacde02c554",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "14",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その他資本剰余金の額",
+     "text_sha256": "3acb11e205553506989018a9ffd2fc1ddef9e63c05431daba1876dacde02c554",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "会社計算規則は取得日（2026-10-20）時点の現行規定。出題時（2015年）の規定との異同は確認していない"
+   ],
+   "id": "exp-yobi-2015-shoho-q23-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-shoho-q23-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。資本金の額の減少は、債権者異議手続が終了していなければ、定めた効力発生日が来ても効力を生じない。",
+   "body": "資本金の額を減少する場合、449条1項により債権者は「資本金等の額の減少について異議を述べることができる。」とされ、同条2項以下で公告・催告や異議を述べた債権者への弁済等の手続が定められている。そして同条6項は、資本金の額の減少は447条1項3号の日に効力を生ずるとしつつ、「ただし、第二項から前項までの規定による手続が終了していないときは、この限りでない。」と定めている。したがって、債権者異議手続が終了していないときは資本金の額の減少は効力を生じず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "449",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "資本金等の額の減少について異議を述べることができる。",
+     "text_sha256": "39d0705e0a858e8d4b9767115e67b26e2a13a2ee82c6c94d630a64e3251d0d91",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "449",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "ただし、第二項から前項までの規定による手続が終了していないときは、この限りでない。",
+     "text_sha256": "39d0705e0a858e8d4b9767115e67b26e2a13a2ee82c6c94d630a64e3251d0d91",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "447",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "資本金の額の減少がその効力を生ずる日",
+     "text_sha256": "1f9119bc0b062175b70a3c1d195b7427c21a0a2479816ec33ef4aa46c3ab3ed5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-shoho-q23-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
