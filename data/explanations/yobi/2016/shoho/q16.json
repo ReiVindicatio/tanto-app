@@ -1,0 +1,247 @@
+{
+ "question_id": "yobi-2016-shoho-q16",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q16-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。法人は設立時取締役にはなれないが、発起人にはなることができる。",
+   "body": "誤りは、法人が発起人にも「なることができない」とする部分である。会社法27条5号は定款の記載事項として「発起人の氏名又は名称及び住所」を挙げ、発起人の「名称」を予定しているから、法人も発起人になることができると解されている。他方、会社法39条4項は、331条1項の規定により取締役となることができない者は設立時取締役となることができないとし、331条1項1号は取締役になれない者として「法人」を挙げる。したがって、法人は設立時取締役にはなれないが発起人にはなれるので、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "27",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "発起人の氏名又は名称及び住所",
+     "text_sha256": "fee6c1238222418748df988833566755b0b19b5b0467c81df5eb5b3fb30c958a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "39",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "第三百三十一条第一項（第三百三十五条第一項において準用する場合を含む。）、第三百三十三条第一項若しくは第三項又は第三百三十七条第一項若しくは第三項の規定により成立後の株式会社の取締役",
+     "text_sha256": "dde5f6dbea4442c3a94f17b1d6c67cea78a17d296bd34565ef92101cfe646ed6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "331",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる者は、取締役となることができない。",
+     "text_sha256": "efd945351abf4f2bc71a6d6346b8558854d58983c43540d7c48f20b7f8bdc7ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q16-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q16-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。発行可能株式総数は成立時までに定款で定める必要があるが、公開会社でない場合は設立時発行株式の総数の4倍を超えてもよい。",
+   "body": "本肢のポイントは、いわゆる4倍規制が公開会社でない株式会社に及ぶかどうかである。会社法37条1項は、発行可能株式総数を定款で定めていない場合には、株式会社の成立の時までに定款を変更してその定めを設けなければならないとする（募集設立では98条により創立総会の決議による）。そして37条3項は「設立時発行株式の総数は、発行可能株式総数の四分の一を下ることができない。」としつつ、ただし書で「設立しようとする株式会社が公開会社でない場合は、この限りでない。」と定める。したがって、公開会社でない株式会社では発行可能株式総数が設立時発行株式の総数の4倍を超えてもよく、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社の成立の時までに、その全員の同意によって、定款を変更して発行可能株式総数の定めを設けなければならない。",
+     "text_sha256": "6586c14a400407c99a942d4bd0cc03e082ae00c43b44f25627d06073e8ca8e2a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "37",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "設立時発行株式の総数は、発行可能株式総数の四分の一を下ることができない。",
+     "text_sha256": "6586c14a400407c99a942d4bd0cc03e082ae00c43b44f25627d06073e8ca8e2a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "37",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "設立しようとする株式会社が公開会社でない場合は、この限りでない。",
+     "text_sha256": "6586c14a400407c99a942d4bd0cc03e082ae00c43b44f25627d06073e8ca8e2a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "98",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社の成立の時までに、創立総会の決議によって、定款を変更して発行可能株式総数の定めを設けなければならない。",
+     "text_sha256": "d8ac5404d80cd7eccfc4caf97f92466b7e053e81184f53091c5c59ac8945c1f2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q16-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q16-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。各発起人は設立時発行株式を1株以上引き受けなければならず、ある発起人が株主となる権利を全て失えばこの要件を欠き、設立の無効事由となる。",
+   "body": "誤りは、出資された財産の価額が定款所定の額を満たしていれば「設立の無効事由とはならない」とする部分である。会社法25条2項は「各発起人は、株式会社の設立に際し、設立時発行株式を一株以上引き受けなければならない。」と定める。発起人が出資の履行をしないときは、36条3項により「当該出資の履行をすることにより設立時発行株式の株主となる権利を失う」ため、ある発起人がその権利を全て失うと、その発起人は1株も引き受けていない状態となる。この要件の欠缺は、他の発起人の出資で定款記載の出資額を満たしていても補われず、設立の無効事由になると解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "25",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "各発起人は、株式会社の設立に際し、設立時発行株式を一株以上引き受けなければならない。",
+     "text_sha256": "d5de9c41589564c62d5ba7d5835d786ed382c3b0fd5e0cc8a50c5713c45d1238",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "36",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "当該出資の履行をすることにより設立時発行株式の株主となる権利を失う",
+     "text_sha256": "d23848a6f445a483e579118317fdaf0cfee1e5bd4c98a5b7b84a5d3c49b865d0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "25条2項違反が設立無効事由となる点は、解釈による"
+   ],
+   "id": "exp-yobi-2016-shoho-q16-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q16-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。払込みをした後の権利株の譲渡も、成立後の株式会社に対抗することができない。",
+   "body": "誤りは、払込みをした後に株主となる権利を譲渡した場合には成立後の株式会社に「対抗することができる」とする部分である。会社法63条2項は「前項の規定による払込みをすることにより設立時発行株式の株主となる権利の譲渡は、成立後の株式会社に対抗することができない。」と定める。この規定は、払込みをした後の段階の権利（いわゆる権利株）の譲渡を対象としており、払込み後であっても譲渡を成立後の会社に対抗できない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "63",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定による払込みをすることにより設立時発行株式の株主となる権利の譲渡は、成立後の株式会社に対抗することができない。",
+     "text_sha256": "55ef0e68db24501bca1c5b1a7e8f0a1fca62ca2f56016b6e8fd65983a61fd2d6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q16-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q16-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。保管証明書を交付した銀行等は、払い込まれた金銭の返還に関する制限があることをもって成立後の株式会社に対抗できず、発起人への返還を理由に責任を免れない。",
+   "body": "本肢のポイントは、保管証明書を交付した払込取扱銀行が、成立前に発起人へ払込金を返還したことを成立後の会社に主張できるかである。会社法64条2項は、保管証明書を交付した銀行等は「当該証明書の記載が事実と異なること又は第三十四条第一項若しくは前条第一項の規定により払い込まれた金銭の返還に関する制限があることをもって成立後の株式会社に対抗することができない。」と定める。この規定の趣旨から、保管証明書の交付後に払込金を成立前の発起人に返還したとしても、銀行はその返還をもって成立後の株式会社に対抗できず、会社に対して払込金相当額の返還義務を負うと解されている（判例あり（要確認））。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "64",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該証明書の記載が事実と異なること又は第三十四条第一項若しくは前条第一項の規定により払い込まれた金銭の返還に関する制限があることをもって成立後の株式会社に対抗することができない。",
+     "text_sha256": "0ba51578a180cddf36ae8cdcc97ca26c08cd8fb9a3df74b7dd86d5043480b28a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "本肢の「判例の趣旨」にあたる判決は courts.go.jp で確認できなかったため「判例あり（要確認）」とした。結論は会社法64条2項の文言で説明できる"
+   ],
+   "id": "exp-yobi-2016-shoho-q16-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

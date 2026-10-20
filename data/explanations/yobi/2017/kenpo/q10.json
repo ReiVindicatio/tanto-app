@@ -1,0 +1,161 @@
+{
+ "question_id": "yobi-2017-kenpo-q10",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-kenpo-q10-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：閣議の方式は憲法・内閣法に定めがなく慣行に委ねられており、文書を各大臣に回して署名を得る持ち回り閣議も許されると解されているから、持ち回り閣議は許されないとする点が誤り。",
+   "body": "誤りの決め手は、持ち回り閣議は「許されない」とする部分である。憲法66条3項は「内閣は、行政権の行使について、国会に対し連帯して責任を負ふ。」と定め、内閣法4条1項は「内閣がその職権を行うのは、閣議によるものとする。」と定めて、内閣の意思決定が閣議によることを明らかにしている。しかし、閣議の具体的な運営方法については憲法にも内閣法にも定めがなく、慣行に委ねられていると解されている。実際にも、案件によっては、閣僚が会合せず閣議書を各大臣に持ち回って署名を得る持ち回り閣議が行われており、内閣の一体性・連帯責任の趣旨に反するものではなく許されると解されている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "66",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "内閣は、行政権の行使について、国会に対し連帯して責任を負ふ。",
+     "text_sha256": "d85cadf632b959526c603fb4d9d162be04533a5126acd874d196f12811c25170",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "内閣法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣がその職権を行うのは、閣議によるものとする。",
+     "text_sha256": "8b5e78a49396ffa01ea94e7fbba7f771f7ee5f921a0e3cab17716c13fa7fff7c",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "閣議の運営は慣行によるとの理解による（解釈による）。"
+   ],
+   "id": "exp-yobi-2017-kenpo-q10-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-kenpo-q10-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：「内閣総理大臣が欠けたとき」には、死亡や除名による議員資格の喪失に限らず、辞職や、除名以外の事由で国会議員の地位を失った場合なども含まれると解されているから、「限られる」とする点が誤り。",
+   "body": "誤りの決め手は、死亡と除名の場合に「限られる」とする部分である。憲法70条は「内閣総理大臣が欠けたとき、又は衆議院議員総選挙の後に初めて国会の召集があつたときは、内閣は、総辞職をしなければならない。」と定める。内閣総理大臣は、67条1項により「国会議員の中から国会の議決で、これを指名する。」とされ、国会議員であることが在職の要件であると解されている。そのため、「欠けたとき」には、死亡のほか、58条2項による除名に限らず、資格争訟の裁判や選挙無効・当選無効などによって国会議員の地位を失った場合も含まれると解されている。また、内閣総理大臣が自ら辞職した場合も「欠けたとき」に当たると解されている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "70",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣総理大臣が欠けたとき、又は衆議院議員総選挙の後に初めて国会の召集があつたときは、内閣は、総辞職をしなければならない。",
+     "text_sha256": "e1dffb676d29ec59706012c9a9fb3c3cc6f5ae8bcbb9ffed720e96a747b7a9aa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "67",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国会議員の中から国会の議決で、これを指名する。",
+     "text_sha256": "f25ffcbc7f075a4c2f8d1c567e53b025773e6458db65cdec8c03b1bccdab9215",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "58",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "但し、議員を除名するには、出席議員の三分の二以上の多数による議決を必要とする。",
+     "text_sha256": "05d333cd7f56080e71054daf4a71167ae4e12dcf263d994de7b00f8b5e5a77ba",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「欠けたとき」の範囲は解釈による。"
+   ],
+   "id": "exp-yobi-2017-kenpo-q10-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-kenpo-q10-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：73条6号の政令は「この憲法及び法律の規定を実施するため」のものであり、執行命令と委任命令は許されるが、法律に代わる内容を定める代行命令（や法律から独立した独立命令）は許されないと解されている。",
+   "body": "本肢は、73条6号の政令制定権の範囲についての一般的な理解のとおりである。73条6号は、内閣の事務として「この憲法及び法律の規定を実施するために、政令を制定すること。」と定める。この文言から、法律を執行するための細則を定める執行命令と、法律の委任に基づいて委任された事項を定める委任命令は許されると解されている。他方、41条が「国会は、国権の最高機関であつて、国の唯一の立法機関である。」と定めていることから、法律に代わって法律と同じ内容を定める代行命令や、法律から独立して定める独立命令は、国会中心立法の原則に反し許されないと解されている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "73",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この憲法及び法律の規定を実施するために、政令を制定すること。",
+     "text_sha256": "edd0bc44219efd4b718ab6544896bf6639962cb675ee319ccae43a433f235998",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "41",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国会は、国権の最高機関であつて、国の唯一の立法機関である。",
+     "text_sha256": "b8c2e1f9baa5535294f23480652d47ffd2a9d1102cd735906f71b8a0a77703fa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "政令の種類と許容範囲は解釈による。"
+   ],
+   "id": "exp-yobi-2017-kenpo-q10-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

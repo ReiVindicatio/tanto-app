@@ -1,0 +1,113 @@
+{
+ "question_id": "yobi-2017-gyosei-q24",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-gyosei-q24-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。権限の委任は法律の定めた権限の所在を変えるので法律の根拠が要るが、専決は内部的な事務処理の方式なので法律の根拠は要らないと解されている。",
+   "body": "本肢のポイントは、委任と専決とで法律の根拠の要否が異なるかである。権限の委任は、法律が行政庁に与えた権限を他の行政機関に移し、受任者がその権限を自己の名で行使するものであるから、法律が定めた権限の配分を変更することになり、法律の根拠が必要と解されている。例えば地方自治法153条1項は「普通地方公共団体の長は、その権限に属する事務の一部をその補助機関である職員に委任し、又はこれに臨時に代理させることができる。」と、委任の根拠を法律で定めている。これに対し、専決は、権限は行政庁に残したまま、補助機関が行政庁の名で事実上決裁するという内部的な事務処理の方式であり、対外的な権限の所在は変わらないため、法律の根拠は不要と解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "153",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "普通地方公共団体の長は、その権限に属する事務の一部をその補助機関である職員に委任し、又はこれに臨時に代理させることができる。",
+     "text_sha256": "eed3cfc68626fd6485a699d19c23c91c8d0bc93281e654390eb7c96f4354d845",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "委任に法律の根拠が要り専決には要らないという点は、条文に一般的な定めがなく、解釈による"
+   ],
+   "id": "exp-yobi-2017-gyosei-q24-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-gyosei-q24-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。権限の委任があると、受任者Ｂが自己の名で処分を行い、Ｂが処分をした行政庁となる。",
+   "body": "本肢のポイントは、委任された処分が誰の名で行われ、誰が処分庁となるかである。権限の委任では、委任の範囲で委任者Ａはその権限を失い、受任者Ｂが自己の権限として自己の名で処分を行うと解されている。そのため、当該処分をした行政庁はＢであり、取消訴訟でも、行政事件訴訟法11条1項にいう「処分又は裁決をした行政庁」はＢとして扱われる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "処分又は裁決をした行政庁",
+     "text_sha256": "b1e45a27d1196e5dd4f255c197e79072067c94c288ce0dc61fe0b3e7ad44b7a9",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "委任による権限の移転と受任者の名での処分という点は、解釈による"
+   ],
+   "id": "exp-yobi-2017-gyosei-q24-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-gyosei-q24-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。専決では権限はＡに残ったままなので、処分はＡの名で行われ、Ａが処分をした行政庁となる。",
+   "body": "本肢のポイントは、専決による処分が誰の名で行われ、誰が処分庁となるかである。専決は、行政庁Ａの権限を移すものではなく、補助機関である行政機関Ｂが内部的にＡに代わって決裁するにとどまる事務処理の方式と解されている。そのため、対外的には処分はＡの名で行われ、行政事件訴訟法11条1項にいう「処分又は裁決をした行政庁」はＡである。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "処分又は裁決をした行政庁",
+     "text_sha256": "b1e45a27d1196e5dd4f255c197e79072067c94c288ce0dc61fe0b3e7ad44b7a9",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "専決の性質（内部的な事務処理の方式）は、解釈による"
+   ],
+   "id": "exp-yobi-2017-gyosei-q24-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
