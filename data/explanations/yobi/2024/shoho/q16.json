@@ -1,0 +1,219 @@
+{
+ "question_id": "yobi-2024-shoho-q16",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q16-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。各発起人は、設立時取締役になるかどうかにかかわらず、設立時発行株式を1株以上引き受けなければならない。",
+   "body": "ポイントは、株式の引受けが発起人という地位そのものに結びついた義務である点である。会社法25条2項は「各発起人は、株式会社の設立に際し、設立時発行株式を一株以上引き受けなければならない」と定めている。この規定は、発起人が設立時取締役に就くかどうかで区別していない。したがって、設立時取締役にならない発起人も1株以上の引受けが必要であり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "25",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "各発起人は、株式会社の設立に際し、設立時発行株式を一株以上引き受けなければならない。",
+     "text_sha256": "d5de9c41589564c62d5ba7d5835d786ed382c3b0fd5e0cc8a50c5713c45d1238",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-shoho-q16-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q16-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。設立時代表取締役を選定するのは発起人ではなく設立時取締役である。",
+   "body": "誤りのポイントは、選定する主体を「発起人」としている部分である。会社法47条1項は、設立しようとする株式会社が取締役会設置会社（指名委員会等設置会社を除く。）である場合には、「設立時取締役」が設立時取締役の中から設立時代表取締役を「選定しなければならない」と定めている。選定は「設立時取締役の過半数をもって決定する」（同条3項）。したがって、設立時代表取締役を選定する義務を負うのは設立時取締役であり、発起人ではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "47",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設立時取締役は、設立しようとする株式会社が取締役会設置会社（指名委員会等設置会社を除く。）である場合には",
+     "text_sha256": "6e9aa1778dc43b1a55cabf8cc6395e18c51083d113a170a6cbd2e7212d01d4b1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "47",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "設立時取締役の過半数をもって決定する",
+     "text_sha256": "6e9aa1778dc43b1a55cabf8cc6395e18c51083d113a170a6cbd2e7212d01d4b1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-shoho-q16-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q16-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。発起人の報酬は変態設立事項であり、定款に記載し又は記録しなければ効力を生じない。",
+   "body": "ポイントは、発起人の報酬が会社法28条の定款の相対的記載事項（いわゆる変態設立事項）に当たる点である。同条は、株式会社を設立する場合には、同条各号の事項は「第二十六条第一項の定款に記載し、又は記録しなければ、その効力を生じない」と定め、3号で「株式会社の成立により発起人が受ける報酬その他の特別の利益及びその発起人の氏名又は名称」を挙げている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社の成立により発起人が受ける報酬その他の特別の利益及びその発起人の氏名又は名称",
+     "text_sha256": "c17153849721f5c211cd336ec0e945cfc4169b6398ad8e16ed029e96e762e1dc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-shoho-q16-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q16-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。仮装払込みに係る設立時発行株式の譲受人は、悪意又は重大な過失がなければ、株主の権利を行使することができる。",
+   "body": "誤りのポイントは、善意でかつ重大な過失がない譲受人も権利を行使できないとしている部分である。会社法52条の2第4項は、払込みを仮装した発起人自身は、仮装した出資に係る支払等がされた後でなければ、その設立時発行株式について設立時株主及び株主の権利を行使することができないとする。しかし同条5項は、「前項の設立時発行株式又はその株主となる権利を譲り受けた者は、当該設立時発行株式についての設立時株主及び株主の権利を行使することができる。ただし、その者に悪意又は重大な過失があるときは、この限りでない」と定める。したがって、善意でかつ重大な過失がない譲受人は株主の権利を行使できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "52_2",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "出資の履行を仮装した設立時発行株式について、設立時株主（第六十五条第一項に規定する設立時株主をいう。次項において同じ。）及び株主の権利を行使することができない。",
+     "text_sha256": "caa4d1e8c5b4b642078040f01d1c91500ef96d01c1c96925022b9e19fe3647f2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "52_2",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "前項の設立時発行株式又はその株主となる権利を譲り受けた者は、当該設立時発行株式についての設立時株主及び株主の権利を行使することができる。ただし、その者に悪意又は重大な過失があるときは、この限りでない。",
+     "text_sha256": "caa4d1e8c5b4b642078040f01d1c91500ef96d01c1c96925022b9e19fe3647f2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-shoho-q16-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q16-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。創立総会の招集が義務付けられるのは募集設立の場合であり、発起設立では創立総会は招集されない。",
+   "body": "誤りのポイントは、発起設立でも創立総会を招集しなければならないとしている部分である。会社法65条1項は、「第五十七条第一項の募集をする場合には」、発起人は遅滞なく創立総会を招集しなければならないと定めている。57条1項の募集とは設立時発行株式を引き受ける者の募集であり、これを行うのは募集設立（25条1項2号）である。本問は発起設立（発起人が設立時発行株式の全部を引き受ける方法）を前提としているから、創立総会を招集する義務はない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "65",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第五十七条第一項の募集をする場合には、発起人は",
+     "text_sha256": "e3406aa398123916db02ad75df4ddb334ca069ef0d2c5661dfe2e23299e59b7a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "57",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "発起人は、この款の定めるところにより、設立時発行株式を引き受ける者の募集をする旨を定めることができる。",
+     "text_sha256": "aaae9491e58e7064d1133af75106959cfbd8c1dd73b735e2ebcc25a79fb19da3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "25",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "発起人が設立時発行株式を引き受けるほか、設立時発行株式を引き受ける者の募集をする方法",
+     "text_sha256": "d5de9c41589564c62d5ba7d5835d786ed382c3b0fd5e0cc8a50c5713c45d1238",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-shoho-q16-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

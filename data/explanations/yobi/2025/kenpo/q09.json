@@ -1,0 +1,137 @@
+{
+ "question_id": "yobi-2025-kenpo-q09",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-kenpo-q09-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。憲法8条の趣旨は皇室への財産の集中や特定の者との結び付きを防ぐことにあり、儀礼上の贈答のような授受まで一つ一つ国会の議決を要するとは解されていない。",
+   "body": "決め手は、外国交際のための儀礼上の贈答についても、授受の度ごとに国会の議決が要るかである。憲法8条は「皇室に財産を譲り渡し、又は皇室が、財産を譲り受け、若しくは賜与することは、国会の議決に基かなければならない。」と定める。この規定の趣旨は、皇室に再び巨大な財産が集中することや、財産の授受を通じて皇室が特定の個人・団体と不当に結び付くことを防ぎ、皇室の財産授受を国会のコントロールの下に置くことにあると解されている。この趣旨からすれば、外国交際のための儀礼上の贈答のように、財産の集中や不当な結び付きのおそれがない通常の授受まで、その度ごとに国会の議決を経る必要はないと解されており、実際にも法律で一定の授受は個別の議決を要しないものとされている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "8",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "皇室に財産を譲り渡し、又は皇室が、財産を譲り受け、若しくは賜与することは、国会の議決に基かなければならない。",
+     "text_sha256": "29e89711fc5193bf35562236ff82f8a2c9e0dcc52eaf8166fc01c2fbda1ebe7a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "8条の趣旨と、儀礼上の贈答に個別の議決を要しないとする点は解釈による。",
+    "個別の議決を要しない授受を定める皇室経済法は pipeline/egov.py の LAWS にないため、同法の条文には触れていない。"
+   ],
+   "id": "exp-yobi-2025-kenpo-q09-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-kenpo-q09-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。88条前段の「皇室財産」は公的性格の財産を指すと解されており、天皇・皇族が私有財産を持つことまで否定されてはいない。",
+   "body": "決め手は、「天皇及び皇族が私有財産を保有することは認められない」とする末尾である。憲法88条は「すべて皇室財産は、国に属する。」と定めるが、ここでいう皇室財産は、皇居などの公的性格を持つ財産を国有とする趣旨であり、天皇・皇族の純然たる私有財産（日常の身の回りの品や、皇室の費用から支出され私的に保有されるものなど）まで国に帰属させる趣旨ではないと解されている。88条後段も「すべて皇室の費用は、予算に計上して国会の議決を経なければならない。」として、皇室の費用を国の予算から支出する仕組みを定めており、私的な財産の保有を全面的に否定するものではない。したがって、私有財産の保有を一切認めないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "88",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "すべて皇室財産は、国に属する。",
+     "text_sha256": "71c5d0ce6e4e423fde06f1bb1ccd9928592a368ef73c80178cb6fdd481d0eb15",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "88",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "すべて皇室の費用は、予算に計上して国会の議決を経なければならない。",
+     "text_sha256": "71c5d0ce6e4e423fde06f1bb1ccd9928592a368ef73c80178cb6fdd481d0eb15",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「皇室財産」を公的性格の財産に限り、私有財産の保有を認めるとする点は解釈による。",
+    "皇室の費用の区分や私的財産の扱いを定める皇室経済法は pipeline/egov.py の LAWS にないため、同法の条文には触れていない。"
+   ],
+   "id": "exp-yobi-2025-kenpo-q09-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-kenpo-q09-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。皇室の費用は「予算に計上して」議決を経るものであり、予算は先に衆議院に提出しなければならないから、参議院が先に審議することは許されない。",
+   "body": "決め手は、議決の方法について規定がないとする部分である。憲法88条後段は「すべて皇室の費用は、予算に計上して国会の議決を経なければならない。」と定め、皇室の費用の議決を予算の議決の方法によらせている。そして憲法60条1項は「予算は、さきに衆議院に提出しなければならない。」と定めて衆議院の予算先議を求めている。したがって、皇室の費用について議決の方法が規定されていないとはいえず、参議院が衆議院より先に審議することは許されないから、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "88",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "すべて皇室の費用は、予算に計上して国会の議決を経なければならない。",
+     "text_sha256": "71c5d0ce6e4e423fde06f1bb1ccd9928592a368ef73c80178cb6fdd481d0eb15",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "60",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "予算は、さきに衆議院に提出しなければならない。",
+     "text_sha256": "2bbcfb8c7be3e78b32e4008214a92813257007b143e507bda64f1c2d9fd65429",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-kenpo-q09-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,185 @@
+{
+ "question_id": "yobi-2024-shoho-q17",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q17-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株式1株につき1個の議決権が原則であり、1株につき複数個の議決権を持つ種類株式（複数議決権株式）を発行することはできない。",
+   "body": "誤りのポイントは、1株につき複数個の議決権を有する種類株式を発行できるとしている部分である。会社法308条1項は、株主は「その有する株式一株につき一個の議決権を有する」と定めている（単元株式数を定款で定めた場合は「一単元の株式につき一個の議決権を有する」）。種類株式について定める108条1項が議決権に関して認めているのは、3号の「株主総会において議決権を行使することができる事項」について異なる定めをすること、つまり議決権を制限する方向の定めである。したがって、1株に複数個の議決権を与える種類株式は会社法上認められていないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "308",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その有する株式一株につき一個の議決権を有する",
+     "text_sha256": "3e2fc194c21546ffd77ff7290810c5fc5efb93d1ad84f46a253e7000e26eb21a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会において議決権を行使することができる事項",
+     "text_sha256": "fef60bc5773a64fa72cfd2243503cdd5ceb008bcfa5426760c207b4f19df6a0e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "複数議決権株式が認められないとする点は、308条1項・108条1項の規定からの解釈による。"
+   ],
+   "id": "exp-yobi-2024-shoho-q17-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q17-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。会社法113条1項により、定款を変更して発行可能株式総数の定めを廃止することはできない。",
+   "body": "ポイントは、発行可能株式総数の定めが一度置かれた後は、なくすことができない点である。会社法113条1項は「株式会社は、定款を変更して発行可能株式総数についての定めを廃止することができない。」と定めている。発行可能株式総数は、取締役会等が株主総会の決議なしに株式を発行できる上限を画するものであり、その定めを廃止できないとされている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、定款を変更して発行可能株式総数についての定めを廃止することができない。",
+     "text_sha256": "2d3462ae15ac5b9bee9b8bffb3bc77d514f8f36a678c3296cc63d96a6849d218",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-shoho-q17-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q17-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。発行可能株式総数を減少する場合でも、変更後の総数を発行済株式の総数未満にすることはできない。",
+   "body": "誤りのポイントは「発行済株式の総数未満とすることができる」という部分である。会社法113条2項は、「定款を変更して発行可能株式総数を減少するときは、変更後の発行可能株式総数は、当該定款の変更が効力を生じた時における発行済株式の総数を下ることができない」と定めている。発行可能株式総数は発行できる株式の上限であるから、すでに発行されている株式の総数を下回ることは許されない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "113",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "定款を変更して発行可能株式総数を減少するときは、変更後の発行可能株式総数は、当該定款の変更が効力を生じた時における発行済株式の総数を下ることができない。",
+     "text_sha256": "2d3462ae15ac5b9bee9b8bffb3bc77d514f8f36a678c3296cc63d96a6849d218",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-shoho-q17-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q17-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。公開会社が発行可能株式総数を増加するときは、変更後の総数は発行済株式の総数の4倍を超えることができない。",
+   "body": "ポイントは、公開会社についての「4倍規制」である。会社法113条3項は、「公開会社が定款を変更して発行可能株式総数を増加する場合」（1号）には、「当該定款の変更後の発行可能株式総数は、当該定款の変更が効力を生じた時における発行済株式の総数の四倍を超えることができない」と定めている。本問は公開会社を前提としているから、変更後の発行可能株式総数を発行済株式の総数の4倍以下としなければならず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "113",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "当該定款の変更後の発行可能株式総数は、当該定款の変更が効力を生じた時における発行済株式の総数の四倍を超えることができない",
+     "text_sha256": "2d3462ae15ac5b9bee9b8bffb3bc77d514f8f36a678c3296cc63d96a6849d218",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-shoho-q17-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-shoho-q17-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株券発行会社は、単元未満株式に係る株券を発行しないことができる旨を定款で定めることができる。",
+   "body": "誤りのポイントは「定款で定めることができない」という部分である。会社法189条3項は、「株券発行会社は、単元未満株式に係る株券を発行しないことができる旨を定款で定めることができる。」と明文で定めている。したがって、本肢は条文と正反対のことを述べており、誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "189",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "株券発行会社は、単元未満株式に係る株券を発行しないことができる旨を定款で定めることができる。",
+     "text_sha256": "a5dfddaeb59c88830f4d314c0f79d89be46e0bef9894c29843be3683b800db6c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-shoho-q17-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,182 @@
+{
+ "question_id": "yobi-2025-kenpo-q12",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-kenpo-q12-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。首長も議員も住民が直接選挙し（二元代表制）、長と議員の兼職は法律で禁止され、議会は国会のような「最高機関」とはされていない。",
+   "body": "決め手は、首長の直接公選・兼職禁止・議会の地位の3点がいずれも条文に沿っているかである。憲法93条2項は「地方公共団体の長、その議会の議員及び法律の定めるその他の吏員は、その地方公共団体の住民が、直接これを選挙する。」と定め、議員だけでなく首長も住民の直接選挙で選ばれる。地方自治法141条2項は「普通地方公共団体の長は、地方公共団体の議会の議員並びに常勤の職員及び短時間勤務職員と兼ねることができない。」と定め、長と議員の兼職を法律上禁止している。また、憲法41条は国会を「国権の最高機関」とするが、地方の議会については、憲法93条1項が「その議事機関として議会を設置する。」と定めるにとどまり、議会と首長がそれぞれ住民から直接選ばれる二元代表制のもとで、議会が自治権の最高機関たる地位にあるとはされていないと解されている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "93",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "地方公共団体の長、その議会の議員及び法律の定めるその他の吏員は、その地方公共団体の住民が、直接これを選挙する。",
+     "text_sha256": "e7d4c19fce6f958e6a5abd029cd86c3030433073ea91a1bd58accf125a21d9d2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "141",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "普通地方公共団体の長は、地方公共団体の議会の議員並びに常勤の職員及び短時間勤務職員と兼ねることができない。",
+     "text_sha256": "be990c7bad1cf78bed0294321bd561858c368ce37a8050f161a6b54eaf9d0504",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "41",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国権の最高機関",
+     "text_sha256": "b8c2e1f9baa5535294f23480652d47ffd2a9d1102cd735906f71b8a0a77703fa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "93",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その議事機関として議会を設置する。",
+     "text_sha256": "e7d4c19fce6f958e6a5abd029cd86c3030433073ea91a1bd58accf125a21d9d2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "議会が自治権の最高機関たる地位にないとする点は、二元代表制の理解に基づく解釈による。"
+   ],
+   "id": "exp-yobi-2025-kenpo-q12-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-kenpo-q12-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。地方自治法178条1項により、議会が長の不信任の議決をしたときは、長は議会を解散することができる。",
+   "body": "決め手は、末尾の「首長に議会の解散権は認められていません」という部分である。首長も住民の直接選挙で選ばれ、議会と首長が独立対等の関係に立つとされる点は前半のとおりである。しかし地方自治法178条1項は、議会が長の不信任の議決をしたときは議長がその旨を長に通知しなければならないとしたうえで、「この場合においては、普通地方公共団体の長は、その通知を受けた日から十日以内に議会を解散することができる。」と定めている。このように、法律上、不信任議決に対抗する手段として首長に議会の解散権が認められているから、解散権を全面的に否定する本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "178",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この場合においては、普通地方公共団体の長は、その通知を受けた日から十日以内に議会を解散することができる。",
+     "text_sha256": "768a24c81b88daaf2593db0b310acb9e9ea258af5e1c9c08cbe26549ae7149e8",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-kenpo-q12-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-kenpo-q12-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。憲法50条・51条は「両議院の議員」についての規定で、地方議会議員には及ばず（最高裁も免責特権の憲法上の保障を否定）、法律上、住民による議員の解職請求が認められている。",
+   "body": "決め手は、地方議会議員に憲法上の免責特権・不逮捕特権がないこと、及び議員の解職請求制度があることである。憲法51条は「両議院の議員は、議院で行つた演説、討論又は表決について、院外で責任を問はれない。」と、50条は「両議院の議員は、法律の定める場合を除いては、国会の会期中逮捕されず」と定め、いずれも国会議員についての規定であって、地方議会議員について同様の規定はない。最高裁昭和42年5月24日大法廷判決も、憲法51条が国会議員に免責特権を与えているからといって、その理をそのまま地方議会にあてはめ、地方議会議員の発言についても免責特権を憲法上保障していると解すべき根拠はないとした。他方、地方自治法80条1項は、選挙権を有する者が一定数以上の連署をもって、選挙管理委員会に対し「議会の議員の解職の請求をすることができる。」と定めている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "51",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "両議院の議員は、議院で行つた演説、討論又は表決について、院外で責任を問はれない。",
+     "text_sha256": "ba2239dbdb2fe06df21c80539096b49932951436e6a98980b59727b6e31f847b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "50",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "両議院の議員は、法律の定める場合を除いては、国会の会期中逮捕されず",
+     "text_sha256": "45a2cc9bf58b596217817158d82619835c7d2d673b970f1957505c0ca4527f1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "80",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "議会の議員の解職の請求をすることができる。",
+     "text_sha256": "59c8fe5d7614aeaa580d490ad2673e8320517c4d0af1b9ec7bffc2e1be53ef47",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "地方議会議員の公務執行妨害等事件",
+     "court": "最高裁判所大法廷",
+     "date": "1967-05-24",
+     "holding": "憲法51条が国会議員に免責特権を与えているからといって、その理をそのまま地方議会にあてはめ、地方議会議員の発言についても免責特権を憲法上保障していると解すべき根拠はない。地方議会の議事進行に関連する議員の刑事犯罪について、議会又は議長の告訴告発を訴訟条件と解すべきではない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50706/detail2/index.html",
+      "https://www.courts.go.jp/assets/hanrei/hanrei-pdf-50706.pdf"
+     ]
+    }
+   ],
+   "notes": [
+    "地方議会議員に不逮捕特権がない点は、憲法50条が両議院の議員についての規定であることによる（同旨の最高裁判例は確認していない）。"
+   ],
+   "id": "exp-yobi-2025-kenpo-q12-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
