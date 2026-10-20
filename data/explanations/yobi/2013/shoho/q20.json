@@ -1,0 +1,221 @@
+{
+ "question_id": "yobi-2013-shoho-q20",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q20-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。役員選任決議の定足数は、定款で3分の1まで引き下げることができる。",
+   "body": "ポイントは、役員の選任決議の定足数をどこまで下げられるかである。会社法341条は、役員を選任する株主総会の決議の定足数を「議決権を行使することができる株主の議決権の過半数（三分の一以上の割合を定款で定めた場合にあっては、その割合以上）を有する株主が出席し」と定めている。取締役は役員に含まれる（329条1項）。したがって、定款で定足数を議決権の3分の1とすることはでき、本肢は正しい。なお、3分の1未満に下げることはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "341",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "議決権を行使することができる株主の議決権の過半数（三分の一以上の割合を定款で定めた場合にあっては、その割合以上）を有する株主が出席し",
+     "text_sha256": "a12de2b6c313547a02234a7521c55e568bced7ddf376475ffcae99069fda193f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "329",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "役員（取締役、会計参与及び監査役をいう。",
+     "text_sha256": "a0d883fcf1ad34a22099bde03794b3adca09ffcd2205fd111dcc1599f5351230",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q20-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q20-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。監査役が2人以上いるときの会計監査人の解任には、監査役の全員の同意が要る。",
+   "body": "誤りは「そのうちの２人の同意により」の部分である。会社法340条1項は、会計監査人が「職務上の義務に違反し、又は職務を怠ったとき」に監査役が解任できるとするが、同条2項は「前項の規定による解任は、監査役が二人以上ある場合には、監査役の全員の同意によって行わなければならない」と定める。監査役が3人いれば3人全員の同意が必要で、2人の同意では足りない。監査役会設置会社でも、同条4項の読替えにより監査役会が解任し、その解任には「監査役」の全員の同意が要るから、結論は変わらない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "340",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "職務上の義務に違反し、又は職務を怠ったとき。",
+     "text_sha256": "43a1a10e3bf7b45abedfce7f639bff65fc6ad93979132eabf700a5046e397aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "340",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定による解任は、監査役が二人以上ある場合には、監査役の全員の同意によって行わなければならない。",
+     "text_sha256": "43a1a10e3bf7b45abedfce7f639bff65fc6ad93979132eabf700a5046e397aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "340",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "第二項中「監査役が二人以上ある場合には、監査役」とあるのは「監査役」と",
+     "text_sha256": "43a1a10e3bf7b45abedfce7f639bff65fc6ad93979132eabf700a5046e397aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q20-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q20-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。解職の対象となる代表取締役は、その決議について特別の利害関係を有する取締役として議決に加われないとされている。",
+   "body": "ポイントは、解職される代表取締役が「特別の利害関係を有する取締役」にあたるかである。会社法369条2項は「前項の決議について特別の利害関係を有する取締役は、議決に加わることができない」と定める。判例は、代表取締役の解職の決議について、その代表取締役は特別の利害関係を有する者にあたるとしていると解されている（判例あり（要確認））。代表取締役は、自分を解職するかどうかについて、会社に対する忠実義務に従い公正に議決権を行使することが必ずしも期待できないからだと説明されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "369",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の決議について特別の利害関係を有する取締役は、議決に加わることができない。",
+     "text_sha256": "e29aafab10e5f2705f31bcc129c2308bce2c4b67e4969a51125a14dee79c6d66",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "代表取締役の解職決議と特別利害関係に関する最高裁判例を courts.go.jp で2回探したが、判決のページを確認できなかったため「判例あり（要確認）」とした。判決の年月日は記載していない。"
+   ],
+   "id": "exp-yobi-2013-shoho-q20-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q20-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。取締役会の決議要件は、定款で定足数・議決要件とも引き上げることができる。",
+   "body": "ポイントは、取締役会の決議要件を定款で加重できるかである。会社法369条1項は、取締役会の決議は「議決に加わることができる取締役の過半数（これを上回る割合を定款で定めた場合にあっては、その割合以上）が出席し、その過半数（これを上回る割合を定款で定めた場合にあっては、その割合以上）をもって行う」と定める。本肢は、定足数を過半数のままとし、議決要件を出席取締役の3分の2以上に引き上げるもので、過半数を上回る割合を定款で定めたものにあたる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "369",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "議決に加わることができる取締役の過半数（これを上回る割合を定款で定めた場合にあっては、その割合以上）が出席し、その過半数（これを上回る割合を定款で定めた場合にあっては、その割合以上）をもって行う",
+     "text_sha256": "e29aafab10e5f2705f31bcc129c2308bce2c4b67e4969a51125a14dee79c6d66",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q20-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q20-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。会計参与は株主総会の決議で選任しなければならず、取締役会に選任させる定款の定めは無効である。",
+   "body": "誤りは、会計参与を取締役会の決議で選任できるとする点である。会社法329条1項は、役員（取締役、会計参与及び監査役）及び会計監査人は「株主総会の決議によって選任する」と定める。そして同法295条3項は「この法律の規定により株主総会の決議を必要とする事項について、取締役、執行役、取締役会その他の株主総会以外の機関が決定することができることを内容とする定款の定めは、その効力を有しない」とする。したがって、会計参与の選任を取締役会の決議によるとする定款の定めは効力を有せず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "329",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の決議によって選任する",
+     "text_sha256": "a0d883fcf1ad34a22099bde03794b3adca09ffcd2205fd111dcc1599f5351230",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "295",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "この法律の規定により株主総会の決議を必要とする事項について、取締役、執行役、取締役会その他の株主総会以外の機関が決定することができることを内容とする定款の定めは、その効力を有しない",
+     "text_sha256": "3ea5faf49a0539f3ecc4ddcfb6a6d91e85739f52d2ded2b961895cb9a6758ece",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q20-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

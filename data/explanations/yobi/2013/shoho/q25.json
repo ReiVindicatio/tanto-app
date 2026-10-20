@@ -1,0 +1,245 @@
+{
+ "question_id": "yobi-2013-shoho-q25",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q25-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：合併対価は「金銭等」であり存続会社の株式等以外の財産も交付でき（749条1項2号ホ）、会社法は親会社株式を合併対価とする場合の特則（800条）まで置いているから、親会社株式も交付できる。",
+   "body": "決め手は「親会社の株式を…合併対価として交付することはできない」という部分である。会社法749条1項2号は、存続会社が消滅会社の株主に「その株式又は持分に代わる金銭等を交付するとき」の定めを求め、そのホで「当該金銭等が吸収合併存続株式会社の株式等以外の財産であるときは、当該財産の内容及び数若しくは額又はこれらの算定方法」と定めており、合併対価は存続会社の株式等に限られない。さらに800条1項は、消滅会社等の株主等に「交付する金銭等の全部又は一部が存続株式会社等の親会社株式」である場合に、存続株式会社等が交付する親会社株式の総数を超えない範囲で親会社株式を取得できるとしている。したがって、存続会社は親会社株式を合併対価として交付することができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "749",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該金銭等が吸収合併存続株式会社の株式等以外の財産であるときは、当該財産の内容及び数若しくは額又はこれらの算定方法",
+     "text_sha256": "ea372e51e2d4bef15f0c6cdb53ddc14bd00ff87d798fe83af5637c3a6ff8d20b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "800",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "交付する金銭等の全部又は一部が存続株式会社等の親会社株式",
+     "text_sha256": "b91082417de42541218aae1ba0a5f84fadc2a58f92c7a2ce3939820ec49050b8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q25-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q25-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：合併対価の割当ての対象となる株主からは消滅会社自身が除かれている（749条1項3号・3項）から、消滅会社の自己株式には、対価の種類を問わず合併対価を割り当てられない。",
+   "body": "会社法749条1項3号は、合併対価の割当てに関する事項を「吸収合併消滅株式会社の株主（吸収合併消滅株式会社及び吸収合併存続株式会社を除く。）」に対するものとして定めることとしており、消滅会社が有する自己株式は割当ての対象から除かれている。同条3項も、割当ての定めは「吸収合併消滅株式会社及び吸収合併存続株式会社並びに前項第一号の種類の株式の株主を除く。」株主の有する株式の数に応じて金銭等を交付する内容でなければならないとする。これらの規定は合併対価の種類で区別していないから、合併対価が金銭であっても同じである。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "749",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収合併消滅株式会社の株主（吸収合併消滅株式会社及び吸収合併存続株式会社を除く。）",
+     "text_sha256": "ea372e51e2d4bef15f0c6cdb53ddc14bd00ff87d798fe83af5637c3a6ff8d20b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "749",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "吸収合併消滅株式会社及び吸収合併存続株式会社並びに前項第一号の種類の株式の株主を除く。",
+     "text_sha256": "ea372e51e2d4bef15f0c6cdb53ddc14bd00ff87d798fe83af5637c3a6ff8d20b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q25-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q25-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：消滅会社が公開会社で合併対価が譲渡制限株式等である場合も合併はでき、消滅会社の株主総会の決議要件が加重される（309条3項2号）にとどまる。",
+   "body": "決め手は「譲渡制限株式を交付することはできない」という部分である。消滅会社は、株主総会の決議によって吸収合併契約の承認を受けなければならない（783条1項）。そして309条3項2号は、特殊決議を要する場合として「第七百八十三条第一項の株主総会（合併により消滅する株式会社又は株式交換をする株式会社が公開会社であり、かつ、当該株式会社の株主に対して交付する金銭等の全部又は一部が譲渡制限株式等（同条第三項に規定する譲渡制限株式等をいう。次号において同じ。）である場合における当該株主総会に限る。）」を挙げている。このように、会社法は公開会社である消滅会社の株主に譲渡制限株式等を交付する場合を予定し、決議要件を重くして対処しているから、交付すること自体は禁止されていない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "783",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "消滅株式会社等は、効力発生日の前日までに、株主総会の決議によって、吸収合併契約等の承認を受けなければならない。",
+     "text_sha256": "b1b24b9cb0fabd3f6137dd2837152050ea21919af582ba309ffb93281f567925",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "309",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第七百八十三条第一項の株主総会（合併により消滅する株式会社又は株式交換をする株式会社が公開会社であり、かつ、当該株式会社の株主に対して交付する金銭等の全部又は一部が譲渡制限株式等（同条第三項に規定する譲渡制限株式等をいう。次号において同じ。）である場合における当該株主総会に限る。）",
+     "text_sha256": "56ffbd6451793882d47ba533193af3dd09d3d0c791034f12f0f7f32cf6456aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q25-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q25-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：消滅会社の新株予約権者に新株予約権に代えて交付できるのは、存続会社の新株予約権又は金銭に限られ（749条1項4号）、存続会社の株式は交付できない。",
+   "body": "決め手は、新株予約権に代えて「存続会社の株式を交付することができる」とする部分である。会社法749条1項4号は、消滅会社が新株予約権を発行しているときに定める事項を「吸収合併存続株式会社が吸収合併に際して当該新株予約権の新株予約権者に対して交付する当該新株予約権に代わる当該吸収合併存続株式会社の新株予約権又は金銭についての次に掲げる事項」としている。株主に対する合併対価（同項2号の「金銭等」）と異なり、新株予約権者に交付できるものは存続会社の新株予約権又は金銭に限定されており、存続会社の株式は含まれていない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "749",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収合併存続株式会社が吸収合併に際して当該新株予約権の新株予約権者に対して交付する当該新株予約権に代わる当該吸収合併存続株式会社の新株予約権又は金銭についての次に掲げる事項",
+     "text_sha256": "ea372e51e2d4bef15f0c6cdb53ddc14bd00ff87d798fe83af5637c3a6ff8d20b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q25-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q25-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：反対株主の株式買取請求権（785条1項）は、合併対価が相当であるかどうかを要件としていないから、対価が相当な場合でも行使できる。",
+   "body": "会社法785条1項は「吸収合併等をする場合（次に掲げる場合を除く。）には、反対株主は、消滅株式会社等に対し、自己の有する株式を公正な価格で買い取ることを請求することができる。」と定める。除外される場合は、同項1号の「第七百八十三条第二項に規定する場合」（合併対価等が持分等で総株主の同意を要する場合）と2号の「第七百八十四条第二項に規定する場合」に限られ、合併対価の価額が相当であることは除外事由とされていない。したがって、合併対価として交付を受ける株式の価額が相当であっても、反対株主は株式買取請求権を行使することができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "785",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収合併等をする場合（次に掲げる場合を除く。）には、反対株主は、消滅株式会社等に対し、自己の有する株式を公正な価格で買い取ることを請求することができる。",
+     "text_sha256": "97607594fbf2696764a8ecdd120094d239bf8bcf2e5a2eb7613ab5259427149d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "785",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第七百八十三条第二項に規定する場合",
+     "text_sha256": "97607594fbf2696764a8ecdd120094d239bf8bcf2e5a2eb7613ab5259427149d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "785",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第七百八十四条第二項に規定する場合",
+     "text_sha256": "97607594fbf2696764a8ecdd120094d239bf8bcf2e5a2eb7613ab5259427149d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "783",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "総株主の同意を得なければならない",
+     "text_sha256": "b1b24b9cb0fabd3f6137dd2837152050ea21919af582ba309ffb93281f567925",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "785条1項の除外事由は出題後の改正（平成26年改正）で変わった可能性がある（要確認）。いずれにしても、合併対価が相当であることは除外事由とされていない。"
+   ],
+   "id": "exp-yobi-2013-shoho-q25-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,300 @@
+{
+ "question_id": "yobi-2013-shoho-q30",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q30-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：手形保証は、担保した債務が方式の瑕疵以外の事由で無効でも有効とされる（手形法32条2項）ので、振出しの取消しがあっても手形保証債務は無効とならない。",
+   "body": "手形法32条2項は「保証ハ其ノ担保シタル債務ガ方式ノ瑕疵ヲ除キ他ノ如何ナル事由ニ因リテ無効ナルトキト雖モ之ヲ有効トス」と定め、77条3項により約束手形にも準用される（「保証ニ関スル規定（第三十条乃至第三十二条）モ亦之ヲ約束手形ニ準用ス」）。未成年者であることを理由とする取消しは、手形の方式（記載事項）の瑕疵ではなく、振出人の行為能力という実質的な事由である。したがって、Ａの振出しが取り消されてＡの手形債務が無効となっても、Ｃの手形保証債務は有効なまま残る（手形保証の独立性）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "32",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "保証ハ其ノ担保シタル債務ガ方式ノ瑕疵ヲ除キ他ノ如何ナル事由ニ因リテ無効ナルトキト雖モ之ヲ有効トス",
+     "text_sha256": "e729c18a37de6c43bef9acade61d45c5196a68e45f896b867c72d821016ba80d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "保証ニ関スル規定（第三十条乃至第三十二条）モ亦之ヲ約束手形ニ準用ス",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q30-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q30-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例は、主たる債務者（振出人）の手形債務が時効で消滅したときは、手形保証債務も消滅するとしているので、「消滅しない」とする点が誤り。",
+   "body": "手形法32条1項は「保証人ハ保証セラレタル者ト同一ノ責任ヲ負フ」と定め、77条3項により約束手形に準用される。また32条3項により、支払をした保証人は保証された者に対して手形上の権利を取得する（求償の前提）。判例は、主たる債務である振出人の手形債務が時効により消滅したときは、手形保証債務も消滅すると解しているとされる（判例あり（要確認））。32条2項の独立性は、担保した債務が初めから「無効ナルトキ」の規定であり、いったん有効に成立した主たる債務が後に時効で消滅した場合には、保証の付従性から保証債務も消滅すると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "32",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保証人ハ保証セラレタル者ト同一ノ責任ヲ負フ",
+     "text_sha256": "e729c18a37de6c43bef9acade61d45c5196a68e45f896b867c72d821016ba80d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "32",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "無効ナルトキ",
+     "text_sha256": "e729c18a37de6c43bef9acade61d45c5196a68e45f896b867c72d821016ba80d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "32",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "保証人ガ為替手形ノ支払ヲ為シタルトキハ保証セラレタル者及其ノ者ノ為替手形上ノ債務者ニ対シ為替手形ヨリ生ズル権利ヲ取得ス",
+     "text_sha256": "e729c18a37de6c43bef9acade61d45c5196a68e45f896b867c72d821016ba80d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "保証ニ関スル規定（第三十条乃至第三十二条）モ亦之ヲ約束手形ニ準用ス",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "判例（主たる手形債務の時効消滅により手形保証債務も消滅するとするもの）を2回検索したが、courts.go.jp の判決ページで確認できなかった。本文は「判例あり（要確認）」とした。",
+    "時効消滅の場面で付従性が働くとする理由づけは解釈による。"
+   ],
+   "id": "exp-yobi-2013-shoho-q30-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q30-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：振出人のための手形保証人は振出人と同一の責任（主たる義務）を負うので、受取人Ｂが請求するのに遡求権保全手続は要らない。",
+   "body": "手形法32条1項は「保証人ハ保証セラレタル者ト同一ノ責任ヲ負フ」と定め（77条3項で約束手形に準用）、78条1項は「約束手形ノ振出人ハ為替手形ノ引受人ト同一ノ義務ヲ負フ」と定める。振出人は約束手形の主たる債務者であり、その義務は支払呈示や拒絶証書の作成といった遡求権保全の手続がなくても消滅しない。振出人Ａのために手形保証をしたＣは、Ａと同一の責任を負うから、ＢはＣに対しても遡求権保全の手続を採らずに手形保証債務の履行を請求できる。遡求権保全手続が要るのは、裏書人やそのための保証人に対して遡求する場合である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "32",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保証人ハ保証セラレタル者ト同一ノ責任ヲ負フ",
+     "text_sha256": "e729c18a37de6c43bef9acade61d45c5196a68e45f896b867c72d821016ba80d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "78",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "約束手形ノ振出人ハ為替手形ノ引受人ト同一ノ義務ヲ負フ",
+     "text_sha256": "2823ef6188b39d7588a7715dbefb70e65caf6adac7e230b63825ba41a966ccba",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "保証ニ関スル規定（第三十条乃至第三十二条）モ亦之ヲ約束手形ニ準用ス",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "主たる債務者のための保証人に遡求権保全手続が不要であることは、32条1項・78条1項からの解釈による。判例は探していない。"
+   ],
+   "id": "exp-yobi-2013-shoho-q30-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q30-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例は、原因関係上の債務の不発生が確定した場合、受取人が手形保証人に手形金を請求するのは権利の濫用にあたり、保証人は支払を拒めるとしているので、「拒むことはできない」とする点が誤り。",
+   "body": "手形保証は、担保した債務が方式の瑕疵以外の事由で無効でも有効とされ（手形法32条2項、77条3項で約束手形に準用）、保証人は保証された者の人的抗弁を当然には援用できないのが原則である。しかし判例は、振出しの原因関係においてＡの債務が発生しないことが確定した場合には、受取人Ｂは振出人Ａに対してだけでなく手形保証人Ｃに対しても手形上の権利を行使する実質的な理由を失い、手形を返還せずにＣに手形金を請求することは権利の濫用にあたるから、Ｃは支払を拒むことができるとしているとされる（判例あり（要確認））。したがって、Ｃが履行を拒むことはできないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "32",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "保証ハ其ノ担保シタル債務ガ方式ノ瑕疵ヲ除キ他ノ如何ナル事由ニ因リテ無効ナルトキト雖モ之ヲ有効トス",
+     "text_sha256": "e729c18a37de6c43bef9acade61d45c5196a68e45f896b867c72d821016ba80d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "保証ニ関スル規定（第三十条乃至第三十二条）モ亦之ヲ約束手形ニ準用ス",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "判例（手形保証人による権利濫用の抗弁を認めたもの）を2回検索したが、courts.go.jp の判決ページで確認できなかった。本文は「判例あり（要確認）」とした。"
+   ],
+   "id": "exp-yobi-2013-shoho-q30-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q30-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：手形保証人は振出人と合同して責任を負い、所持人はどの債務者にも各別に請求できる（手形法47条）ので、民法の検索の抗弁（民法453条）は手形保証人にはなく、Ｂは直ちにＣの財産に執行できる。",
+   "body": "民法453条は、保証人が「主たる債務者に弁済をする資力があり、かつ、執行が容易であることを証明したときは、債権者は、まず主たる債務者の財産について執行をしなければならない」と定める（検索の抗弁）。しかし手形保証については、手形法47条1項が「為替手形ノ振出、引受、裏書又ハ保証ヲ為シタル者ハ所持人ニ対シ合同シテ其ノ責ニ任ズ」とし、同条2項が「所持人ハ前項ノ債務者ニ対シ其ノ債務ヲ負ヒタル順序ニ拘ラズ各別又ハ共同ニ請求ヲ為スコトヲ得」と定める（77条1項4号で約束手形に準用）。このため、手形保証人には民法の催告・検索の抗弁はないと解されており、ＣがＡの資力と執行の容易さを証明しても、ＢはＣの財産について執行することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "453",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主たる債務者に弁済をする資力があり、かつ、執行が容易であることを証明したときは、債権者は、まず主たる債務者の財産について執行をしなければならない",
+     "text_sha256": "5a254cda0cc46e06aed818b477f5cc132c6efafb0e2e354ac98ec8f6eb4e90bf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "47",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "為替手形ノ振出、引受、裏書又ハ保証ヲ為シタル者ハ所持人ニ対シ合同シテ其ノ責ニ任ズ",
+     "text_sha256": "857f7763ca08bad4a2ff9655781c3472ac590387bfa432d61a6d2ac70346e9c4",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "47",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "所持人ハ前項ノ債務者ニ対シ其ノ債務ヲ負ヒタル順序ニ拘ラズ各別又ハ共同ニ請求ヲ為スコトヲ得",
+     "text_sha256": "857f7763ca08bad4a2ff9655781c3472ac590387bfa432d61a6d2ac70346e9c4",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "四　支払拒絶ニ因ル遡求（第四十三条乃至第五十条、第五十二条乃至第五十四条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "手形保証人に検索の抗弁がないことは、47条の合同責任からの解釈による。判例は探していない。"
+   ],
+   "id": "exp-yobi-2013-shoho-q30-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

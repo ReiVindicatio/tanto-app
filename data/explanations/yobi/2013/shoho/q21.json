@@ -1,0 +1,270 @@
+{
+ "question_id": "yobi-2013-shoho-q21",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q21-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。利益相反取引の当事者である取締役Ｂは、取締役会の決議に加わったかどうかにかかわらず、任務懈怠が推定される。",
+   "body": "ポイントは、任務懈怠の推定を受ける取締役の範囲である。会社法423条3項は、356条1項2号又は3号の取引によって株式会社に損害が生じたときは、「次に掲げる取締役又は執行役は、その任務を怠ったものと推定する」とし、その1号に「第三百五十六条第一項（第四百十九条第二項において準用する場合を含む。）の取締役又は執行役」を挙げる。Ｂは甲社と取引をした取締役（356条1項2号、365条1項）であり、この1号にあたる。取締役会の承認決議に賛成したことを要件とするのは3号の取締役についてであって、Ｂが決議に加わっていなくても1号による推定は及ぶ。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "423",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "次に掲げる取締役又は執行役は、その任務を怠ったものと推定する",
+     "text_sha256": "0a7329bc93caa7819913258f61953dfd11dd902a080800aa28a5decfb9c6d85a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "356",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役が自己又は第三者のために株式会社と取引をしようとするとき。",
+     "text_sha256": "1f519283022020dbb09f21e69d5e5dfc33a50acae50d33e817fb256ed4327990",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "365",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役会設置会社における第三百五十六条の規定の適用については、同条第一項中「株主総会」とあるのは、「取締役会」とする。",
+     "text_sha256": "ad5cc5119f91885c9349211b6432e9998690efc4f14f5ceaaa2ff2532cc02b80",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q21-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q21-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。取締役が得た利益の額を損害の額と推定する規定は、競業取引についてのものであり、利益相反取引には適用されない。",
+   "body": "誤りは、利益相反取引について損害額の推定が働くとする点である。会社法423条2項は、取締役が356条1項の規定に違反して「第三百五十六条第一項第一号の取引をしたときは、当該取引によって取締役、執行役又は第三者が得た利益の額は、前項の損害の額と推定する」と定める。356条1項1号は競業取引（会社の事業の部類に属する取引）であり、本件取引のような利益相反取引（同項2号・3号）は含まれない。利益相反取引については、損害額の推定ではなく、423条3項による任務懈怠の推定が定められている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "423",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第三百五十六条第一項第一号の取引をしたときは、当該取引によって取締役、執行役又は第三者が得た利益の額は、前項の損害の額と推定する",
+     "text_sha256": "0a7329bc93caa7819913258f61953dfd11dd902a080800aa28a5decfb9c6d85a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "423",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "次に掲げる取締役又は執行役は、その任務を怠ったものと推定する",
+     "text_sha256": "0a7329bc93caa7819913258f61953dfd11dd902a080800aa28a5decfb9c6d85a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "356",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役が自己又は第三者のために株式会社の事業の部類に属する取引をしようとするとき。",
+     "text_sha256": "1f519283022020dbb09f21e69d5e5dfc33a50acae50d33e817fb256ed4327990",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q21-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q21-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。取締役会の承認を欠く直接取引について、会社は相手方である取締役Ｂに対しては無効を主張できる。",
+   "body": "誤りは、Ｂが承認があったと信じていれば甲社は無効を主張できないとする点である。判例（最大判昭和43年12月25日）は、取締役会の承認を受けない利益相反取引は本来無効であるとしたうえで、取締役と会社との間に直接成立する取引については、会社は当該取締役に対して承認を受けなかったことを理由に無効を主張し得ることは当然であるとした。善意の者を保護するために会社に相手方の悪意の主張立証を求めたのは、会社以外の第三者との取引についてである。本件取引は甲社と取締役Ｂとの直接取引であり、相手方はＢ自身であるから、Ｂの信頼によって無効の主張が妨げられることはない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "356",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役が自己又は第三者のために株式会社と取引をしようとするとき。",
+     "text_sha256": "1f519283022020dbb09f21e69d5e5dfc33a50acae50d33e817fb256ed4327990",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "売掛代金請求事件",
+     "court": "最高裁判所大法廷",
+     "date": "1968-12-25",
+     "holding": "取締役会の承認を受けない利益相反取引は本来無効であり、取締役と会社との直接取引については、会社は当該取締役に対して無効を主張できる。会社以外の第三者との取引については、会社は第三者の悪意を主張立証して初めて無効を主張できる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55067/detail2/index.html",
+      "https://www.courts.go.jp/assets/hanrei/hanrei-pdf-55067.pdf"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は旧商法265条についてのもの。現行の会社法356条1項2号・365条1項に対応すると解されている。"
+   ],
+   "id": "exp-yobi-2013-shoho-q21-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q21-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。取締役が会社に無利息・無担保で金銭を貸し付ける行為は、承認を要する利益相反取引にあたらないとされている。",
+   "body": "ポイントは、形式的には取締役と会社との取引でも、会社に不利益を与えるおそれがない取引が規制の対象になるかである。会社法356条1項2号は「取締役が自己又は第三者のために株式会社と取引をしようとするとき」に承認を要するとし、取締役会設置会社では取締役会の承認となる（365条1項）。判例（最判昭和38年12月6日）は、株式会社に対しその取締役が無利息、無担保で金銭を貸し付ける行為は、当時の商法の利益相反取引の規制にいう取引にあたらないとした。この取引は会社に利益こそあれ不利益を与えるものではなく、規制の趣旨が及ばないからだと解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "356",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役が自己又は第三者のために株式会社と取引をしようとするとき。",
+     "text_sha256": "1f519283022020dbb09f21e69d5e5dfc33a50acae50d33e817fb256ed4327990",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "365",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役会設置会社における第三百五十六条の規定の適用については、同条第一項中「株主総会」とあるのは、「取締役会」とする。",
+     "text_sha256": "ad5cc5119f91885c9349211b6432e9998690efc4f14f5ceaaa2ff2532cc02b80",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "貸金返還請求事件",
+     "court": "最高裁判所第二小法廷",
+     "date": "1963-12-06",
+     "holding": "株式会社に対しその取締役が無利息・無担保で金銭を貸し付ける行為は、旧商法265条にいう取引にあたらない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53806/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は旧商法265条についてのもの。現行の会社法356条1項2号・365条1項に対応すると解されている。"
+   ],
+   "id": "exp-yobi-2013-shoho-q21-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q21-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。代金額が鑑定評価額であっても、甲社がＢから不動産を買い受ける取引は利益相反取引であり、取締役会の承認が要る。",
+   "body": "誤りは、鑑定評価額を代金とすれば承認が不要になるとする点である。会社法356条1項2号は「取締役が自己又は第三者のために株式会社と取引をしようとするとき」に承認を要するとし、取締役会設置会社では取締役会の承認となる（365条1項）。甲社がＢから不動産を買い受ける売買は、この直接取引にあたる。承認を要しないとされるのは、無利息・無担保の貸付けのように、取引の性質上、会社に不利益を与えるおそれがない取引に限られると解されている。不動産の売買は、鑑定評価額を代金としても、評価の当否や取引の必要性を含めて会社と取締役の利害が対立しうる取引であるから、取締役会の承認を要すると解される。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "356",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役が自己又は第三者のために株式会社と取引をしようとするとき。",
+     "text_sha256": "1f519283022020dbb09f21e69d5e5dfc33a50acae50d33e817fb256ed4327990",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "365",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役会設置会社における第三百五十六条の規定の適用については、同条第一項中「株主総会」とあるのは、「取締役会」とする。",
+     "text_sha256": "ad5cc5119f91885c9349211b6432e9998690efc4f14f5ceaaa2ff2532cc02b80",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による。鑑定評価額を代金とする売買についての判例は探していない。"
+   ],
+   "id": "exp-yobi-2013-shoho-q21-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

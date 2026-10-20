@@ -1,0 +1,258 @@
+{
+ "question_id": "yobi-2013-shoho-q17",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q17-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。全部の株式に譲渡制限を設ける定款変更は、総株主の同意ではなく、309条3項の特殊決議で行う。",
+   "body": "誤りは「総株主の同意を得なければならない」という部分である。309条3項は、「その発行する全部の株式の内容として譲渡による当該株式の取得について当該株式会社の承認を要する旨の定款の定めを設ける定款の変更を行う株主総会」（同項1号）の決議について、「当該株主総会において議決権を行使することができる株主の半数以上」であって「当該株主の議決権の三分の二」以上に当たる多数をもって行うと定める。したがって、総株主の同意までは要しない。なお、309条3項は種類株式発行会社の株主総会を除いており、種類株式発行会社では別の規律による。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "309",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "その発行する全部の株式の内容として譲渡による当該株式の取得について当該株式会社の承認を要する旨の定款の定めを設ける定款の変更を行う株主総会",
+     "text_sha256": "56ffbd6451793882d47ba533193af3dd09d3d0c791034f12f0f7f32cf6456aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "309",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "当該株主総会において議決権を行使することができる株主の半数以上",
+     "text_sha256": "56ffbd6451793882d47ba533193af3dd09d3d0c791034f12f0f7f32cf6456aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "107",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "譲渡による当該株式の取得について当該株式会社の承認を要すること。",
+     "text_sha256": "d2bbda06e3b6f78bf51f3353769489156cd72ee364aed099593243e65d8f92a2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q17-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q17-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。108条1項4号により、一部の種類の株式についてだけ譲渡制限を設けることができる。",
+   "body": "誤りは「設けることはできない」という部分である。108条1項は、株式会社が内容の異なる二以上の種類の株式を発行することができる事項として、4号で「譲渡による当該種類の株式の取得について当該株式会社の承認を要すること。」を挙げている。また、2条17号は、譲渡制限株式を「株式会社がその発行する全部又は一部の株式の内容として譲渡による当該株式の取得について当該株式会社の承認を要する旨の定めを設けている場合における当該株式」と定義しており、一部の株式についての譲渡制限を前提としている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "譲渡による当該種類の株式の取得について当該株式会社の承認を要すること。",
+     "text_sha256": "fef60bc5773a64fa72cfd2243503cdd5ceb008bcfa5426760c207b4f19df6a0e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社がその発行する全部又は一部の株式の内容として譲渡による当該株式の取得について当該株式会社の承認を要する旨の定めを設けている場合における当該株式",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q17-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q17-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。相続は「譲渡」ではなく、相続人は会社の承認なしに名義書換を請求できる（134条4号）。",
+   "body": "誤りは、相続人も会社の承認を得なければ株主の地位を主張できないとする部分である。譲渡制限は「譲渡による」取得について会社の承認を要するとするもので（107条1項1号、108条1項4号）、相続による取得はこれに当たらない。134条は、譲渡制限株式の取得者による名義書換請求を原則として認めないが、ただし書で「当該株式取得者が相続その他の一般承継により譲渡制限株式を取得した者であること。」（4号）を除外している。したがって、相続人は承認なしに名義書換を請求して会社に株主の地位を主張できる。会社が相続人を排除したいときは、174条により「相続その他の一般承継により当該株式会社の株式（譲渡制限株式に限る。）を取得した者」に対する売渡請求の定款の定めを置くことになる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "134",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該株式取得者が相続その他の一般承継により譲渡制限株式を取得した者であること。",
+     "text_sha256": "0589e57c0568e40fc2fda2b5f83e12c0a77835ac1ae1aa19107cc891d1dac695",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "107",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "譲渡による当該株式の取得について当該株式会社の承認を要すること。",
+     "text_sha256": "d2bbda06e3b6f78bf51f3353769489156cd72ee364aed099593243e65d8f92a2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "譲渡による当該種類の株式の取得について当該株式会社の承認を要すること。",
+     "text_sha256": "fef60bc5773a64fa72cfd2243503cdd5ceb008bcfa5426760c207b4f19df6a0e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "174",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続その他の一般承継により当該株式会社の株式（譲渡制限株式に限る。）を取得した者",
+     "text_sha256": "d9b84e7b1da67edb6461ab9f3a53f1ce6272a6ffc97b64bbaf2b38e2638e056f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q17-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q17-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。唯一の株主（一人会社の株主）による譲渡は、取締役会の承認がなくても会社に対する関係で有効とする判例がある。",
+   "body": "取締役会設置会社では、譲渡の承認の決定は原則として取締役会の決議による（139条1項）。もっとも、譲渡制限の趣旨は会社にとって好ましくない者が株主となることを防ぎ、株主の利益を保護することにあると解されており、株主が一人しかいない会社では、その唯一の株主自身が譲渡を望んでいる以上、承認を要求して保護すべき他の株主がいない。判例は、いわゆる一人会社の株主がその保有する株式を他に譲渡した場合には、定款所定の取締役会の承認がなくても、その譲渡は会社に対する関係でも有効であるとしている（判例あり（要確認））。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "139",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会（取締役会設置会社にあっては、取締役会）の決議によらなければならない。",
+     "text_sha256": "314c66b36976e69b1d1ef5ce1dcd4da23a0ec9194eeaa6b8ac5293bc05ed7310",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "判例（一人会社の株主による譲渡制限株式の譲渡）は courts.go.jp で2回探したが、判決のページを確認できなかった。日付・裁判所は書いていない",
+    "譲渡制限の趣旨の説明は解釈による"
+   ],
+   "id": "exp-yobi-2013-shoho-q17-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q17-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。139条1項ただし書により、定款で承認機関を株主総会とすることができる。",
+   "body": "139条1項本文は、譲渡等の承認をするか否かの決定は「株主総会（取締役会設置会社にあっては、取締役会）の決議によらなければならない。」と定める。しかし、同項ただし書は「定款に別段の定めがある場合は、この限りでない。」としている。したがって、取締役会設置会社であっても、定款で承認の決定を株主総会の決議によるものとすることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "139",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会（取締役会設置会社にあっては、取締役会）の決議によらなければならない。",
+     "text_sha256": "314c66b36976e69b1d1ef5ce1dcd4da23a0ec9194eeaa6b8ac5293bc05ed7310",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "139",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "定款に別段の定めがある場合は、この限りでない。",
+     "text_sha256": "314c66b36976e69b1d1ef5ce1dcd4da23a0ec9194eeaa6b8ac5293bc05ed7310",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q17-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

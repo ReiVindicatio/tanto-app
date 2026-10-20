@@ -1,0 +1,249 @@
+{
+ "question_id": "yobi-2013-shoho-q27",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q27-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。登記前に対抗できないのは「善意の第三者」に対してだけであり、悪意の第三者には登記前でも対抗できる。",
+   "body": "代表取締役の氏名及び住所は株式会社の登記事項である（会社法911条3項「十四　代表取締役の氏名及び住所（第二十三号に規定する場合を除く。）」）。会社法908条1項前段は「この法律の規定により登記すべき事項は、登記の後でなければ、これをもって善意の第三者に対抗することができない。」と定める。登記前に対抗できない相手は善意の第三者に限られるから、代表取締役の就任を知っている悪意の第三者には、登記の前でも就任を対抗することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "908",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この法律の規定により登記すべき事項は、登記の後でなければ、これをもって善意の第三者に対抗することができない。",
+     "text_sha256": "c26e29d1192818808da0455643c62a2dc5d7a98be44a6ceb96e6923c612775f6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "911",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "十四　代表取締役の氏名及び住所（第二十三号に規定する場合を除く。）",
+     "text_sha256": "56343fd3641b8d54245c3b12bab878cbdf7e9de83d41e9e0d92349ec4858cda2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q27-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q27-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。登記の後でも、第三者が正当な事由によって登記を知らなかったときは対抗できない（会社法908条1項後段）。",
+   "body": "会社の支配人の代理権の消滅は登記事項である（会社法918条「会社が支配人を選任し、又はその代理権が消滅したときは、その本店の所在地において、その登記をしなければならない。」）。会社法908条1項後段は「登記の後であっても、第三者が正当な事由によってその登記があることを知らなかったときは、同様とする。」と定め、登記後でも正当な事由により登記を知らなかった第三者には対抗できないとしている。したがって、支配人の退任による代理権の消滅も、その場合には第三者に対抗することができず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "908",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "登記の後であっても、第三者が正当な事由によってその登記があることを知らなかったときは、同様とする。",
+     "text_sha256": "c26e29d1192818808da0455643c62a2dc5d7a98be44a6ceb96e6923c612775f6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "918",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社が支配人を選任し、又はその代理権が消滅したときは、その本店の所在地において、その登記をしなければならない。",
+     "text_sha256": "e985991d28ff7cf03baf4c1c0daf28ec3df1d004def60b2f901a1e3d596edf1b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q27-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q27-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。代表取締役は選定によって代表権を取得し、登記は対抗要件にすぎないから、登記の前でも訴訟上会社を代表する者となる。",
+   "body": "誤りのポイントは「その登記の後でなければ，民事訴訟における当事者である株式会社を代表する権限を有する者とはならない」の部分である。取締役会設置会社では、取締役会が代表取締役を選定する（会社法362条3項「取締役会は、取締役の中から代表取締役を選定しなければならない。」）。会社法908条1項は、登記すべき事項を登記の後でなければ「善意の第三者に対抗することができない。」とするにとどまり、登記を代表権取得の効力要件とはしていない。したがって、選定された代表取締役は、登記の前であっても会社を代表する権限を有し、民事訴訟においても会社を代表する者となると解される。民事訴訟における会社の代表者と登記の関係については判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "362",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "取締役会は、取締役の中から代表取締役を選定しなければならない。",
+     "text_sha256": "0c2c40d6cd0d3a3ae0a6e3f00a33298453cecc241308ad598ed1bbbbaf153799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "908",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "善意の第三者に対抗することができない。",
+     "text_sha256": "c26e29d1192818808da0455643c62a2dc5d7a98be44a6ceb96e6923c612775f6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "民事訴訟で会社を代表する者の決定と登記の効力の関係についての判例は、2回検索したが courts.go.jp で確認できなかった",
+    "登記が効力要件でなく対抗要件であるとする点は解釈による"
+   ],
+   "id": "exp-yobi-2013-shoho-q27-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q27-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。商法9条1項は登記当事者（商人）が第三者に対抗することを制限する規定であり、第三者の側から未登記の事実を主張することは妨げられない。",
+   "body": "個人商人が支配人を選任したときは、その登記をしなければならない（商法22条「商人が支配人を選任したときは、その登記をしなければならない。」）。商法9条1項前段は「この編の規定により登記すべき事項は、登記の後でなければ、これをもって善意の第三者に対抗することができない。」と定める。この規定は、登記すべき事項を登記しなかった商人の側が善意の第三者に対抗できないとするものであり、第三者の側から商人に対して未登記の事実を主張することまでは妨げないと解されている。したがって、支配人と取引をした第三者は、登記の前でも、支配人の選任を個人商人に対して主張することができる。判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "22",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "商人が支配人を選任したときは、その登記をしなければならない。",
+     "text_sha256": "dd8a7c75a5f39aa5a23a03d260e1ce428ed6f1914617e79d958e3e6223d99609",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この編の規定により登記すべき事項は、登記の後でなければ、これをもって善意の第三者に対抗することができない。",
+     "text_sha256": "b98c2d7e47a8efbd6d2ed904e4cb346275b0eba8f02625a9964efacee0a3338b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "第三者の側から未登記事実を主張できるとする判例は、1回検索したが courts.go.jp で確認できなかった",
+    "第三者から未登記事実を主張できるとする点は解釈による"
+   ],
+   "id": "exp-yobi-2013-shoho-q27-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q27-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。個人商人の商号の登記は任意であり、商法11条2項は「登記をすることができる」と定めるにとどまる。",
+   "body": "誤りのポイントは「登記をしなければならない」の部分である。商法11条2項は「商人は、その商号の登記をすることができる。」と定め、ここでいう商人は同条1項で「会社及び外国会社を除く。」とされている。したがって、個人商人が商号を定めても、その登記をするかどうかは任意であり、登記の義務はない。これに対し、会社の商号は設立の登記の登記事項とされている（株式会社につき会社法911条3項「二　商号」）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "11",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "商人は、その商号の登記をすることができる。",
+     "text_sha256": "b6d9ea1fcb08be2ef1554ab1d192ab611b46bd7686016647efcdcceb56fd8314",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社及び外国会社を除く。",
+     "text_sha256": "b6d9ea1fcb08be2ef1554ab1d192ab611b46bd7686016647efcdcceb56fd8314",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "911",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "二　商号",
+     "text_sha256": "56343fd3641b8d54245c3b12bab878cbdf7e9de83d41e9e0d92349ec4858cda2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q27-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

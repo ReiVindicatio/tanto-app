@@ -1,0 +1,247 @@
+{
+ "question_id": "yobi-2013-shoho-q16",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q16-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。設立時募集株式の割当ては発起人が自由に定めることができ、申込みの株式数の割合に応じて割り当てる義務はない。",
+   "body": "ポイントは「申込みに係る株式の数の割合に応じて」割り当てなければならないとする部分である。会社法60条1項は、「発起人は、申込者の中から設立時募集株式の割当てを受ける者を定め、かつ、その者に割り当てる設立時募集株式の数を定めなければならない」とし、さらに「当該申込者に割り当てる設立時募集株式の数を、前条第三項第二号の数よりも減少することができる」と定めている。つまり、誰に何株を割り当てるかは発起人が定めるものであり、申込みが募集株式の数を超えた場合でも、申込数に比例して割り当てる義務はない（割当自由の原則と呼ばれる）。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "60",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "発起人は、申込者の中から設立時募集株式の割当てを受ける者を定め、かつ、その者に割り当てる設立時募集株式の数を定めなければならない",
+     "text_sha256": "3d1286cc6b2ec8edd8535bb3cf391680afdf8d9b6efa4576da2e82b07b1fe379",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "60",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該申込者に割り当てる設立時募集株式の数を、前条第三項第二号の数よりも減少することができる",
+     "text_sha256": "3d1286cc6b2ec8edd8535bb3cf391680afdf8d9b6efa4576da2e82b07b1fe379",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「割当自由の原則」という呼び名は条文上の用語ではなく、一般的な説明である（解釈による）。"
+   ],
+   "id": "exp-yobi-2013-shoho-q16-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q16-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。募集設立では、発起人の引受けに係る払込み（34条1項）と設立時募集株式の払込み（63条1項）の双方について、払込金保管証明書の交付を請求できる。",
+   "body": "ポイントは、保管証明の対象に発起人が引き受けた設立時発行株式の払込みも含まれるかである。会社法64条1項は、「第五十七条第一項の募集をした場合には、発起人は、第三十四条第一項及び前条第一項の規定による払込みの取扱いをした銀行等に対し、これらの規定により払い込まれた金額に相当する金銭の保管に関する証明書の交付を請求することができる」と定める。34条1項は発起人が引き受けた設立時発行株式についての払込み、63条1項は設立時募集株式の引受人による払込みを定める規定であり、その双方が保管証明の対象となる。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "64",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第五十七条第一項の募集をした場合には、発起人は、第三十四条第一項及び前条第一項の規定による払込みの取扱いをした銀行等に対し、これらの規定により払い込まれた金額に相当する金銭の保管に関する証明書の交付を請求することができる。",
+     "text_sha256": "0ba51578a180cddf36ae8cdcc97ca26c08cd8fb9a3df74b7dd86d5043480b28a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "34",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "発起人は、設立時発行株式の引受け後遅滞なく、その引き受けた設立時発行株式につき、その出資に係る金銭の全額を払い込み",
+     "text_sha256": "d0a32d770d2e47f4524cda9a5d09f6a0bb0caec5f969c4795541fbbb01d03d56",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "63",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設立時募集株式の引受人は、第五十八条第一項第三号の期日又は同号の期間内に、発起人が定めた銀行等の払込みの取扱いの場所において、それぞれの設立時募集株式の払込金額の全額の払込みを行わなければならない。",
+     "text_sha256": "55ef0e68db24501bca1c5b1a7e8f0a1fca62ca2f56016b6e8fd65983a61fd2d6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q16-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q16-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。創立総会は招集の際に定めた目的事項以外は決議できないが、定款の変更と設立の廃止はその例外とされている。",
+   "body": "ポイントは、設立の廃止が、招集時に定めた目的事項の制限の例外に当たるかである。会社法73条4項は、「創立総会は、第六十七条第一項第二号に掲げる事項以外の事項については、決議をすることができない」と定めたうえで、ただし書で「定款の変更又は株式会社の設立の廃止については、この限りでない」としている。67条1項2号は創立総会の目的である事項であるから、設立の廃止は、目的事項として定められていなくても創立総会で決議することができる。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "73",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "創立総会は、第六十七条第一項第二号に掲げる事項以外の事項については、決議をすることができない。",
+     "text_sha256": "14f5213d18ac5c8431e1f5b96264088c89fb31ee6e6c99a5a679909d1411d209",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "73",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "定款の変更又は株式会社の設立の廃止については、この限りでない。",
+     "text_sha256": "14f5213d18ac5c8431e1f5b96264088c89fb31ee6e6c99a5a679909d1411d209",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "67",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "創立総会の目的である事項",
+     "text_sha256": "afa35687a222c2339385c829d8c52b297adf2869026a2322492227215ad33f3f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q16-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q16-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。創立総会の決議による定款変更は会社法96条で認められており、改めて公証人の認証を受ける必要はないと解されている。",
+   "body": "ポイントは、創立総会で変更した定款について公証人の認証をやり直す必要があるかである。会社法30条2項は、認証を受けた定款は株式会社の成立前は原則として「これを変更することができない」と定めるが、96条は「第三十条第二項の規定にかかわらず、創立総会においては、その決議によって、定款の変更をすることができる」とする。創立総会は設立時株主によって構成される機関であり、その決議によって変更された定款については、改めて公証人の認証を受ける必要はないと解されている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "30",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "これを変更することができない",
+     "text_sha256": "3e56ac8562a83bafe23903b2c7793ccc4b25e262eb9ebb158bc60719cdad12bd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "96",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三十条第二項の規定にかかわらず、創立総会においては、その決議によって、定款の変更をすることができる。",
+     "text_sha256": "0fa9200e17c2bd827ee34e7ef9afba37ce81914564e362cf039052014bf62306",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "再認証が不要であることは条文に明記されておらず、解釈による。この点の判例は探していない。"
+   ],
+   "id": "exp-yobi-2013-shoho-q16-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q16-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株式会社は、本店の所在地において設立の登記をすることによって成立する。",
+   "body": "ポイントは、会社の成立時期を「定款又は創立総会の決議により定められた設立の効力発生日」とする部分である。会社法49条は、「株式会社は、その本店の所在地において設立の登記をすることによって成立する」と定めている。成立の時期は設立の登記の時であり、定款や創立総会の決議で効力発生日を定めて成立させる仕組みはない。この点は発起設立でも募集設立でも同じである。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "49",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、その本店の所在地において設立の登記をすることによって成立する。",
+     "text_sha256": "0dfb913725fccd73080d98d66c7255c2ae05484041d2db5fa5ddfb44881c6006",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q16-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,233 @@
+{
+ "question_id": "yobi-2013-shoho-q18",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q18-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。総株主通知を受けると株主名簿に記録され名義書換があったとみなされる（152条1項）が、個別株主通知は少数株主権等の行使のためのもので名義書換は行われない（154条）。",
+   "body": "152条1項は、発行者が総株主通知（151条1項）を受けた場合には株主名簿に通知事項を記録しなければならないとし、「同条第一項各号に定める日に会社法第百三十条第一項の規定による記載又は記録がされたものとみなす。」と定める。これに対し、個別株主通知（154条3項）は少数株主権等の行使のための制度であり、154条1項は「振替株式についての少数株主権等の行使については、会社法第百三十条第一項の規定は、適用しない。」とし、同条2項は少数株主権等を個別株主通知の後一定期間内に行使すべきものとしている。個別株主通知によって株主名簿が書き換えられるとする規定はない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "社債、株式等の振替に関する法律",
+     "article": "152",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同条第一項各号に定める日に会社法第百三十条第一項の規定による記載又は記録がされたものとみなす。",
+     "text_sha256": "9d392d993a569248d54a01c82902d83a8237e9fcecca6edc6768b7a4d6bef108",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "社債、株式等の振替に関する法律",
+     "article": "154",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "振替株式についての少数株主権等の行使については、会社法第百三十条第一項の規定は、適用しない。",
+     "text_sha256": "53e91a52820e4f55fc55632e8f5cc92da22f668ecdd5b53a7197baf0a28ba0d8",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "社債、株式等の振替に関する法律",
+     "article": "154",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "次項の通知がされた後政令で定める期間が経過する日までの間でなければ、行使することができない。",
+     "text_sha256": "53e91a52820e4f55fc55632e8f5cc92da22f668ecdd5b53a7197baf0a28ba0d8",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "社債、株式等の振替に関する法律",
+     "article": "151",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "振替機関は、次の各号に掲げる場合のいずれかに該当するときは、発行者に対し",
+     "text_sha256": "3f5c63e4361c0e792aac26cdd9fa8ac283f88f5b701a17dfb26b1edf25d1aa6d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q18-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。振替株式の譲渡は、譲受人の口座の保有欄に増加の記録を受けなければ「その効力を生じない」（140条）。記録は対抗要件ではなく効力要件である。",
+   "body": "誤りは「当事者の意思表示のみによってその効力を生ずる」とし、増加の記録を会社への対抗要件と位置づける部分である。140条は、振替株式の譲渡は、振替の申請により、譲受人がその口座における保有欄に当該譲渡に係る数の増加の記載又は記録を受けなければ、「その効力を生じない。」と定める。したがって、増加の記録は譲渡の効力発生要件であり、意思表示だけで譲渡の効力が生じるわけではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "社債、株式等の振替に関する法律",
+     "article": "140",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その効力を生じない。",
+     "text_sha256": "f323ca9e07067f55dd55fa75d24bddb539bb5ebfc5d8a2f29f7d24b30425d796",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q18-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。振替の申請により口座に増加の記録を受けた加入者は、悪意又は重大な過失がない限り、その記録に係る権利を取得する（144条・善意取得）。",
+   "body": "144条は、振替の申請によりその口座において特定の銘柄の振替株式についての増加の記載又は記録を受けた加入者は、「当該銘柄の振替株式についての当該増加の記載又は記録に係る権利を取得する。」とし、ただし書で「当該加入者に悪意又は重大な過失があるときは、この限りでない。」と定める。本肢では、譲渡人の口座に実際の保有数を超える数が誤って記録されていたが、譲受人は振替の申請により自己の口座に増加の記録を受けている。したがって、譲受人は悪意又は重大な過失がない限り、増加の記録に係る権利を取得する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "社債、株式等の振替に関する法律",
+     "article": "144",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該銘柄の振替株式についての当該増加の記載又は記録に係る権利を取得する。",
+     "text_sha256": "6c52a196a7219fd0a9a6f8bafbe05e5883b4fc9018adc7ad6df3717cd8f39521",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "社債、株式等の振替に関する法律",
+     "article": "144",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該加入者に悪意又は重大な過失があるときは、この限りでない。",
+     "text_sha256": "6c52a196a7219fd0a9a6f8bafbe05e5883b4fc9018adc7ad6df3717cd8f39521",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q18-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。質権欄に記録された振替株式は、総株主通知では質権設定者が株主として通知され、質権者は加入者の申出があったときに限り示される（151条2項2号・3項）。",
+   "body": "誤りは「質入れの事実を会社に知らせないようにすることはできない」という部分である。151条2項2号は、質権欄に振替株式の記録がされている場合、総株主通知で株主として通知されるのは「当該質権欄に株主としてその氏名又は名称の記載又は記録がされている者」であるとする。そして、同条3項は、質権欄に記録されている口座の加入者からの申出があったときに、通知において質権者の氏名又は名称等を示さなければならないとしている。したがって、この申出をしなければ、総株主通知では質権者が示されず、質入れの事実を会社に知らせないようにすることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "社債、株式等の振替に関する法律",
+     "article": "151",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該質権欄に株主としてその氏名又は名称の記載又は記録がされている者",
+     "text_sha256": "3f5c63e4361c0e792aac26cdd9fa8ac283f88f5b701a17dfb26b1edf25d1aa6d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "社債、株式等の振替に関する法律",
+     "article": "151",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "振替株式が質権欄に記載され、又は記録されている口座の加入者からの申出があったときは",
+     "text_sha256": "3f5c63e4361c0e792aac26cdd9fa8ac283f88f5b701a17dfb26b1edf25d1aa6d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q18-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。277条後段により、口座について利害関係を有する者として政令で定める者は、正当な理由があるときは、費用を支払って口座の記録事項を証明した書面の交付を請求できる。",
+   "body": "277条前段は、加入者が直近上位機関に対し、費用を支払って自己の口座に記録されている事項を証明した書面の交付等を請求できるとし、後段は「当該口座につき利害関係を有する者として政令で定めるものについても、正当な理由があるときは、同様とする。」と定める。公式の○によれば、振替株式の発行会社はこの政令で定める利害関係者に当たることになり、正当な理由があるときは、所定の費用を支払って口座の記録事項を証明した書面の交付を請求できる。ただし、発行者が政令で定める者に含まれることは、政令の本文を保存していないため、条文では確認していない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "社債、株式等の振替に関する法律",
+     "article": "277",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該口座につき利害関係を有する者として政令で定めるものについても、正当な理由があるときは、同様とする。",
+     "text_sha256": "d39d8552024bcf75c421dfa1f1441308a48112249ecdb6aa50f56f21edcce01f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "発行者が277条後段の「政令で定めるもの」に含まれることは、社債、株式等の振替に関する法律施行令が data/statutes/ に保存されていないため確認していない（要確認）"
+   ],
+   "id": "exp-yobi-2013-shoho-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

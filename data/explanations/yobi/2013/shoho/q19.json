@@ -1,0 +1,235 @@
+{
+ "question_id": "yobi-2013-shoho-q19",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q19-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。招集通知の相手方となる「株主」からは、決議事項の全部につき議決権を行使できない株主が除かれている（298条2項括弧書・299条1項）。",
+   "body": "299条1項は、取締役は株主総会の日の一定期間前までに「株主に対してその通知を発しなければならない。」と定める。そして、298条2項は「株主（株主総会において決議をすることができる事項の全部につき議決権を行使することができない株主を除く。次条から第三百二条までにおいて同じ。）」と定めており、299条の「株主」からもこのような株主が除かれる。したがって、決議事項の全部につき議決権を行使できない株主に対しては、招集通知を要しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "298",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株主（株主総会において決議をすることができる事項の全部につき議決権を行使することができない株主を除く。次条から第三百二条までにおいて同じ。）",
+     "text_sha256": "6cf29e7480618de198fa9d58594d5a4ce9fc66387a9a752e3953d185c6c837c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "299",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主に対してその通知を発しなければならない。",
+     "text_sha256": "c9e7ce2cbe4c1c2200881a5eaf371c45904cec4f97fae631cbfbb187decc0631",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q19-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q19-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。書面で議決権を行使した株主が株主総会に出席することを禁じる規定はない。",
+   "body": "誤りは「出席することができない」という部分である。311条は、書面による議決権の行使の方法（同条1項）と、書面によって行使した議決権の数を「出席した株主の議決権の数に算入する。」こと（同条2項）を定めるが、書面で議決権を行使した株主の株主総会への出席を禁じてはいない。書面で議決権を行使した株主が株主総会に出席して議決権を行使したときは、先にした書面による議決権の行使は効力を失うと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "311",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "出席した株主の議決権の数に算入する。",
+     "text_sha256": "8cc0cc9107e0087f79f737fe602f0b08cba751d73242ef0ef679048b24737db7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "311",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "書面による議決権の行使は、議決権行使書面に必要な事項を記載し、法務省令で定める時までに当該記載をした議決権行使書面を株式会社に提出して行う。",
+     "text_sha256": "8cc0cc9107e0087f79f737fe602f0b08cba751d73242ef0ef679048b24737db7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出席した場合に書面による行使が効力を失うとの点は解釈による"
+   ],
+   "id": "exp-yobi-2013-shoho-q19-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q19-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。313条1項により、株主は議決権を統一しないで行使することができる。",
+   "body": "誤りは「統一しないで行使することはできない」という部分である。313条1項は「株主は、その有する議決権を統一しないで行使することができる。」と定める。もっとも、取締役会設置会社では株主総会の日の三日前までに不統一行使の旨と理由を通知しなければならず（同条2項）、会社は、株主が他人のために株式を有する者でないときは不統一行使を拒むことができる（同条3項）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "313",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主は、その有する議決権を統一しないで行使することができる。",
+     "text_sha256": "1e76f6e2658dc45d6956b36dcb63e0fc3e68655944326af533c9c02502efa99d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "313",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株主総会の日の三日前までに",
+     "text_sha256": "1e76f6e2658dc45d6956b36dcb63e0fc3e68655944326af533c9c02502efa99d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "313",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の株主が他人のために株式を有する者でないときは",
+     "text_sha256": "1e76f6e2658dc45d6956b36dcb63e0fc3e68655944326af533c9c02502efa99d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q19-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q19-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株主総会の決議に特別の利害関係を有する株主も原則として議決権を行使でき、著しく不当な決議がされたときに決議取消事由となるにとどまる（831条1項3号）。",
+   "body": "誤りは、特別の利害関係を有する株主は一般に議決権を行使できないとする部分である。831条1項3号は、「株主総会等の決議について特別の利害関係を有する者が議決権を行使したことによって、著しく不当な決議がされたとき。」を決議取消事由としており、特別利害関係人が議決権を行使できることを前提としている。特別利害関係を有する株主の議決権が排除されるのは、個別に定めがある場合に限られる。例えば140条3項は、譲渡制限株式の買取りを決める株主総会で「譲渡等承認請求者は、前項の株主総会において議決権を行使することができない。」と定める。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "831",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会等の決議について特別の利害関係を有する者が議決権を行使したことによって、著しく不当な決議がされたとき。",
+     "text_sha256": "1815496dd41025d1456cafbdd01882a64334f77e056c1a04b566f23536942c16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "140",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "譲渡等承認請求者は、前項の株主総会において議決権を行使することができない。",
+     "text_sha256": "f3fdbb30bea8f64ff298da119669a3a11e84bd552eca2923d27353af88cf4f95",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-shoho-q19-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-shoho-q19-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。831条1項は提訴権者を「株主等」とし、議案に賛成した株主を除いていない。",
+   "body": "831条1項は、各号の場合には「株主等」が、株主総会等の決議の日から三箇月以内に、訴えをもって当該決議の取消しを請求することができると定める。この規定は、議案に賛成の議決権を行使した株主を提訴権者から除いていない。決議取消しの訴えは、決議の瑕疵を是正して会社運営の適法性を確保するための制度と解されており、自ら賛成した株主も取消しの訴えを提起することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "831",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会等の決議の日から三箇月以内に、訴えをもって当該決議の取消しを請求することができる。",
+     "text_sha256": "1815496dd41025d1456cafbdd01882a64334f77e056c1a04b566f23536942c16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "決議取消しの訴えの趣旨と、賛成株主も提訴できるとの点は解釈による"
+   ],
+   "id": "exp-yobi-2013-shoho-q19-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
