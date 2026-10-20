@@ -1,0 +1,233 @@
+{
+ "question_id": "yobi-2016-keiso-q26",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-keiso-q26-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。有罪の言渡しを受けた者が死亡した場合には、その直系の親族である子も再審の請求をすることができる。",
+   "body": "誤りは「その者の子であっても再審の請求をすることができない」とする点である。刑事訴訟法439条1項4号は、再審の請求ができる者として「有罪の言渡を受けた者が死亡し、又は心神喪失の状態に在る場合には、その配偶者、直系の親族及び兄弟姉妹」を挙げている。子は直系の親族に当たるから、有罪の言渡しを受けた者の死亡後であっても再審の請求をすることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "439",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "有罪の言渡を受けた者が死亡し、又は心神喪失の状態に在る場合には、その配偶者、直系の親族及び兄弟姉妹",
+     "text_sha256": "b17cb66c7f4d4ec08b83096dc0f12faaa2746e040e7aaf9f4f0527a856fff7c5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-keiso-q26-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-keiso-q26-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。刑事訴訟法439条1項1号は、再審の請求ができる者として検察官を挙げている。",
+   "body": "刑事訴訟法439条1項は「再審の請求は、左の者がこれをすることができる。」と定め、その1号に「検察官」を挙げている。したがって、検察官は再審の請求をすることができる。なお、同条2項は、一定の事由による再審の請求について、有罪の言渡しを受けた者がその罪を犯させた場合には「検察官でなければこれをすることができない。」としている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "439",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "再審の請求は、左の者がこれをすることができる。",
+     "text_sha256": "b17cb66c7f4d4ec08b83096dc0f12faaa2746e040e7aaf9f4f0527a856fff7c5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "439",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "検察官でなければこれをすることができない。",
+     "text_sha256": "b17cb66c7f4d4ec08b83096dc0f12faaa2746e040e7aaf9f4f0527a856fff7c5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-keiso-q26-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-keiso-q26-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。刑事訴訟法440条1項により、検察官以外の者は再審の請求をする場合に弁護人を選任することができる。",
+   "body": "刑事訴訟法440条1項は「検察官以外の者は、再審の請求をする場合には、弁護人を選任することができる。」と定めている。有罪の言渡しを受けた者は検察官以外の者であり、439条1項2号により再審の請求ができる者でもあるから、再審の請求をする場合に弁護人を選任することができる。この選任は「再審の判決があるまでその効力を有する」（同条2項）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "440",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官以外の者は、再審の請求をする場合には、弁護人を選任することができる。",
+     "text_sha256": "c966c82d589d85968c69276c13dda9a75bd9334168b5a5397c4efd41f5b73a0b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "440",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "再審の判決があるまでその効力を有する",
+     "text_sha256": "c966c82d589d85968c69276c13dda9a75bd9334168b5a5397c4efd41f5b73a0b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "439",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "有罪の言渡を受けた者",
+     "text_sha256": "b17cb66c7f4d4ec08b83096dc0f12faaa2746e040e7aaf9f4f0527a856fff7c5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-keiso-q26-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-keiso-q26-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。刑事訴訟法448条1項は、再審の請求が理由のあるときは再審開始の決定をしなければならないと定める。",
+   "body": "刑事訴訟法448条1項は「再審の請求が理由のあるときは、再審開始の決定をしなければならない。」と定めている。記述はこの規定のとおりであり、請求に理由があれば裁判所は再審開始の決定をする義務を負う。なお、再審開始の決定をしたときは、決定で刑の執行を停止することができる（同条2項）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "448",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "再審の請求が理由のあるときは、再審開始の決定をしなければならない。",
+     "text_sha256": "48f93582fb6829fd3647822f074927fd65f6067fc199d81daa2171af485d8ad5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "448",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "再審開始の決定をしたときは、決定で刑の執行を停止することができる。",
+     "text_sha256": "48f93582fb6829fd3647822f074927fd65f6067fc199d81daa2171af485d8ad5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-keiso-q26-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-keiso-q26-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。再審開始の決定が確定しても、それだけで原確定判決が効力を失うわけではなく、裁判所は更に審判をしなければならない。",
+   "body": "誤りは、再審開始の決定の確定によって確定判決が「その効力を失う」とする点である。刑事訴訟法451条1項は「裁判所は、再審開始の決定が確定した事件については、第四百四十九条の場合を除いては、その審級に従い、更に審判をしなければならない。」と定めるにとどまり、再審開始の決定の確定によって原確定判決が失効する旨の規定はない。原確定判決は、再審の審判で新たな判決がされ、それが確定したときに効力を失うと解されている。また、再審開始の決定をしても刑の執行は当然には停止せず、決定で停止することができるにとどまる（448条2項）ことも、原確定判決が開始決定の段階ではなお効力を有することを前提としている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "451",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、再審開始の決定が確定した事件については、第四百四十九条の場合を除いては、その審級に従い、更に審判をしなければならない。",
+     "text_sha256": "9b776d980e6e44522d0bc48d5fc81e3f3222b91ebb16deb0f21dc43b339fc7c4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "448",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "再審開始の決定をしたときは、決定で刑の執行を停止することができる。",
+     "text_sha256": "48f93582fb6829fd3647822f074927fd65f6067fc199d81daa2171af485d8ad5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "原確定判決が再審の判決の確定によって効力を失うという点は、条文に明記がなく解釈による。"
+   ],
+   "id": "exp-yobi-2016-keiso-q26-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
