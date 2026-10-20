@@ -1,0 +1,221 @@
+{
+ "question_id": "yobi-2025-minpo-q06",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q06-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：借地上の建物に設定された抵当権の効力は、原則として敷地の賃借権に及ぶとするのが判例である。",
+   "body": "ポイントは、建物の抵当権の効力が建物そのものだけでなく、その敷地の賃借権にまで及ぶかどうかである。判例（最判昭和40年5月4日）は、土地賃借人が土地上に所有する建物に抵当権を設定した場合には、原則として抵当権の効力は土地の賃借権に及び、建物の競落人は建物の所有権とともに賃借権も取得するとした。敷地の賃借権は建物の存立に不可欠な従たる権利であり、87条2項の「従物は、主物の処分に従う。」の趣旨が及ぶと解されている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "87",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "従物は、主物の処分に従う。",
+     "text_sha256": "28daf18cc57d735b071d99c10349ca64b3f45613eb4ba27750c56baaef902963",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "建物抵当権の効力と敷地賃借権",
+     "court": "最高裁判所第三小法廷",
+     "date": "1965-05-04",
+     "holding": "土地賃借人が土地上の自己所有建物に抵当権を設定した場合、原則としてその効力は土地の賃借権に及び、建物の競落人は建物所有権とともに賃借権も取得する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56284/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "敷地賃借権を従たる権利とみて87条2項の趣旨を及ぼす説明は解釈による"
+   ],
+   "id": "exp-yobi-2025-minpo-q06-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q06-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：389条1項ただし書のとおり、一括競売をしても優先権は土地の代価についてのみ行使できる。",
+   "body": "ポイントは、一括競売をした場合に建物の代価からも優先弁済を受けられるかである。389条1項本文は「抵当権の設定後に抵当地に建物が築造されたときは、抵当権者は、土地とともにその建物を競売することができる。」と定めるが、ただし書で「その優先権は、土地の代価についてのみ行使することができる。」としている。建物には抵当権の効力が及ばないため（370条参照）、建物の代価から優先弁済を受けることはできない。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "389",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権の設定後に抵当地に建物が築造されたときは、抵当権者は、土地とともにその建物を競売することができる。",
+     "text_sha256": "1fe66f167c9281bcd20b936374cf3c4c6159d3ad4e0dfdd5900adb8c4ec85d01",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "389",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その優先権は、土地の代価についてのみ行使することができる。",
+     "text_sha256": "1fe66f167c9281bcd20b936374cf3c4c6159d3ad4e0dfdd5900adb8c4ec85d01",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "370",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権は、抵当地の上に存する建物を除き",
+     "text_sha256": "854276796c8c6353138b8e691ef004f5dc446b6dadda1af47cd01b822dbaddac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minpo-q06-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q06-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：391条により、第三取得者が支出した必要費は抵当不動産の代価から優先して償還を受けられる。",
+   "body": "ポイントは、第三取得者の費用償還請求に優先権が認められるかである。391条は「抵当不動産の第三取得者は、抵当不動産について必要費又は有益費を支出したときは、第百九十六条の区別に従い、抵当不動産の代価から、他の債権者より先にその償還を受けることができる。」と定めている。必要費はこの規定の対象であるから、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "391",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当不動産の第三取得者は、抵当不動産について必要費又は有益費を支出したときは、第百九十六条の区別に従い、抵当不動産の代価から、他の債権者より先にその償還を受けることができる。",
+     "text_sha256": "d8410f3331c1542089fbb20932028c28fcf838e4e0f63fa35e7ab6ab65442b98",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minpo-q06-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q06-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：380条により、保証人は第三取得者であっても抵当権消滅請求をすることができない。",
+   "body": "ポイントは、被担保債権の連帯保証人である第三取得者が抵当権消滅請求をできるかである。379条は「抵当不動産の第三取得者は、第三百八十三条の定めるところにより、抵当権消滅請求をすることができる。」とするが、380条は「主たる債務者、保証人及びこれらの者の承継人は、抵当権消滅請求をすることができない。」と定める。保証人は本来債務全額を弁済すべき立場にあるから、連帯保証人である第三取得者は抵当権消滅請求をすることができない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "379",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当不動産の第三取得者は、第三百八十三条の定めるところにより、抵当権消滅請求をすることができる。",
+     "text_sha256": "797059bccb3e4ef311480cb3af01b57b8faf5cacb525898604a32f570d208842",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "380",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主たる債務者、保証人及びこれらの者の承継人は、抵当権消滅請求をすることができない。",
+     "text_sha256": "4806ba36d71ac3ebea891fa469185ae0042c82b1b4cd778b74cc03bc01f12c16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "連帯保証人が380条の「保証人」に含まれることは文言からの当然の理解による"
+   ],
+   "id": "exp-yobi-2025-minpo-q06-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q06-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：390条により、第三取得者は競売において買受人となることができる。",
+   "body": "ポイントは「買受人となることができない」とする点である。390条は「抵当不動産の第三取得者は、その競売において買受人となることができる。」と定めており、本肢はこれと正反対である。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "390",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当不動産の第三取得者は、その競売において買受人となることができる。",
+     "text_sha256": "733ab1ca34f7c60286fc93fd8a5c60f3925017ed13bd99dc560b5cdf4c4dd39a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minpo-q06-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

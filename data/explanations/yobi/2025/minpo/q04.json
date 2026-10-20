@@ -1,0 +1,285 @@
+{
+ "question_id": "yobi-2025-minpo-q04",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q04-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。二重譲渡で第一の買主Ｂが登記を備えた第二の買主Ｃに劣後する場合、Ｂの取得時効の起算点はＢが占有を取得した時（引渡しの時）と解されている。",
+   "body": "取得時効は「所有の意思をもって、平穏に、かつ、公然と他人の物を占有した者」について、占有の継続によって完成する（162条1項・2項）。判例は、所有権に基づいて不動産を占有する者にも162条の適用があるとしており（最判昭和42年7月21日）、Ｂが買主として甲土地を占有していた期間も時効期間に算入される。そして、二重譲渡で第二の買主Ｃが登記を備えたためＢがＣに所有権を対抗できなくなった場合でも、Ｂの取得時効の起算点はＢが占有を取得した時であり、Ｃの登記の時ではないと解されている（判例あり（要確認））。Ｃが登記を備えた時から起算するとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "162",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二十年間、所有の意思をもって、平穏に、かつ、公然と他人の物を占有した者は、その所有権を取得する。",
+     "text_sha256": "618d8cf22c39590babda70a937dd65e59603a4199d23a371a1b6a8d81ea1aabf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "162",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "十年間、所有の意思をもって、平穏に、かつ、公然と他人の物を占有した者は、その占有の開始の時に、善意であり、かつ、過失がなかったときは、その所有権を取得する。",
+     "text_sha256": "618d8cf22c39590babda70a937dd65e59603a4199d23a371a1b6a8d81ea1aabf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "所有権に基づいて不動産を占有する者と民法第一六二条の適用の有無",
+     "court": "最高裁判所第二小法廷",
+     "date": "1967-07-21",
+     "holding": "所有権に基づいて不動産を占有する者についても、民法162条の適用がある。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54985/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "二重譲渡の第一の買主の取得時効の起算点を占有取得時とする判例（最判昭和46年11月5日とされるもの）は、裁判所の裁判例検索で確認できなかったため、cases に入れず「要確認」とした。"
+   ],
+   "id": "exp-yobi-2025-minpo-q04-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q04-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。入会権は登記することができる権利ではなく、共有の性質の有無にかかわらず、登記なしに第三者に対抗できると解されている。",
+   "body": "民法は、共有の性質を有する入会権については「各地方の慣習に従うほか、この節の規定を適用する」（263条）、共有の性質を有しない入会権については「各地方の慣習に従うほか、この章の規定を準用する」（294条）と定める。不動産に関する物権の得喪及び変更は、登記をしなければ第三者に対抗できないのが原則である（177条）。しかし、不動産登記法3条が登記できる権利として掲げるのは所有権・地上権・永小作権・地役権・先取特権・質権・抵当権・賃借権・配偶者居住権・採石権であり、入会権は含まれていない。そのため、入会権は登記をしないで第三者に対抗できると解されている（判例あり（要確認））。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "263",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共有の性質を有する入会権については、各地方の慣習に従うほか、この節の規定を適用する。",
+     "text_sha256": "b71358936fa733806f72cc13f3cc808173d6f99c111d061ccbbacdf51145902a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "294",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共有の性質を有しない入会権については、各地方の慣習に従うほか、この章の規定を準用する。",
+     "text_sha256": "a910069f8619436d49c26c8d21b3b704f3178edf785ae60d8389a8177444b1ef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "177",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産に関する物権の得喪及び変更は、不動産登記法（平成十六年法律第百二十三号）その他の登記に関する法律の定めるところに従いその登記をしなければ、第三者に対抗することができない。",
+     "text_sha256": "a27d1e6af866bda6ac153b9ac221bc2d60c83057856e1124591c9d01c2dea305",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "不動産登記法",
+     "article": "3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "登記は、不動産の表示又は不動産についての次に掲げる権利の保存等（保存、設定、移転、変更、処分の制限又は消滅をいう。次条第二項及び第百五条第一号において同じ。）についてする。",
+     "text_sha256": "6840577e03339ebff18064b1b00f496c02c36244addcbe4e67fa606e96564efe",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AD%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%BA%8C%E5%8D%81%E4%B8%89%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "入会権は登記なくして第三者に対抗できるとする大審院の判例（明治36年6月19日・大正10年11月28日とされるもの）は、裁判所の裁判例検索で確認できなかったため、cases に入れず「要確認」とした。"
+   ],
+   "id": "exp-yobi-2025-minpo-q04-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q04-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。不動産質権の設定は引渡しによって効力を生ずるが、第三者への対抗には登記（177条）が必要である。",
+   "body": "「質権の設定は、債権者にその目的物を引き渡すことによって、その効力を生ずる」（344条）。これは質権設定の効力発生要件であり、不動産質権も不動産に関する物権であるから、その設定を第三者に対抗するには、177条により「その登記をしなければ、第三者に対抗することができない」。不動産登記法3条も登記できる権利として質権を掲げている。したがって、現実の引渡しがあっても、登記がなければ第三者に対抗できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "344",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権の設定は、債権者にその目的物を引き渡すことによって、その効力を生ずる。",
+     "text_sha256": "71db390c579a0d2e610455af139d2954da111a09b5994656c51b580ac651533a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "177",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産に関する物権の得喪及び変更は、不動産登記法（平成十六年法律第百二十三号）その他の登記に関する法律の定めるところに従いその登記をしなければ、第三者に対抗することができない。",
+     "text_sha256": "a27d1e6af866bda6ac153b9ac221bc2d60c83057856e1124591c9d01c2dea305",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "不動産登記法",
+     "article": "3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "六　質権",
+     "text_sha256": "6840577e03339ebff18064b1b00f496c02c36244addcbe4e67fa606e96564efe",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AD%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%BA%8C%E5%8D%81%E4%B8%89%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minpo-q04-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q04-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。転抵当の対抗要件は主たる債務者Ｂへの通知又はその承諾で足り、Ｂに通知した以上、抵当権設定者Ｃがした弁済もＤに対抗できない。",
+   "body": "転抵当などの抵当権の処分は、「主たる債務者に抵当権の処分を通知し、又は主たる債務者がこれを承諾しなければ、これをもって主たる債務者、保証人、抵当権設定者及びこれらの者の承継人に対抗することができない」（377条1項）。通知・承諾の相手は主たる債務者であり、本肢ではα債権の債務者Ｂに通知しているから、抵当権設定者（物上保証人）Ｃにも転抵当を対抗できる。そして、「主たる債務者が前項の規定により通知を受け、又は承諾をしたときは、抵当権の処分の利益を受ける者の承諾を得ないでした弁済は、その受益者に対抗することができない」（377条2項）。Ｃへの通知やＣの承諾がなくても、ＣはＤの同意を得ないでしたα債権の弁済をＤに対抗できないから、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "377",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条の場合には、第四百六十七条の規定に従い、主たる債務者に抵当権の処分を通知し、又は主たる債務者がこれを承諾しなければ、これをもって主たる債務者、保証人、抵当権設定者及びこれらの者の承継人に対抗することができない。",
+     "text_sha256": "27a77931e73d4ac02b51db50a2ea5d728444122c38d46352884d310e03456a57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "377",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "主たる債務者が前項の規定により通知を受け、又は承諾をしたときは、抵当権の処分の利益を受ける者の承諾を得ないでした弁済は、その受益者に対抗することができない。",
+     "text_sha256": "27a77931e73d4ac02b51db50a2ea5d728444122c38d46352884d310e03456a57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "377条2項の「弁済」に抵当権設定者（物上保証人）による弁済が含まれるとする点は、条文の文言からの解釈による。"
+   ],
+   "id": "exp-yobi-2025-minpo-q04-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q04-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。相続人Ｃは売主Ａの地位を承継するから、ＢとＤは二重譲渡の関係に立ち、Ｂは登記なしにＤに対抗できない。",
+   "body": "「相続人は、相続開始の時から、被相続人の財産に属した一切の権利義務を承継する」（896条）。Ａの唯一の相続人Ｃは、Ａの売主としての地位を承継するから、Ｃが甲土地をＤに売却したことは、ＡがＢとＤに二重に売却したのと同じ関係になると解されている。そうすると、ＢとＤは甲土地の所有権を争う対抗関係に立ち、「不動産に関する物権の得喪及び変更は、…その登記をしなければ、第三者に対抗することができない」（177条）。Ｂは登記を備えなければＤに所有権の取得を対抗できないから、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "896",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続人は、相続開始の時から、被相続人の財産に属した一切の権利義務を承継する。",
+     "text_sha256": "26569775cea382b249232c76910772008f279f0ab8c399f2d8a8d991820a167f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "177",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産に関する物権の得喪及び変更は、不動産登記法（平成十六年法律第百二十三号）その他の登記に関する法律の定めるところに従いその登記をしなければ、第三者に対抗することができない。",
+     "text_sha256": "a27d1e6af866bda6ac153b9ac221bc2d60c83057856e1124591c9d01c2dea305",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "相続人からの譲受人と被相続人からの譲受人を対抗関係とする判例があるとされるが、確認していない（解釈による説明として書いた）。"
+   ],
+   "id": "exp-yobi-2025-minpo-q04-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

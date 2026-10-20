@@ -11,13 +11,11 @@
    - **起動から20分を超えて戻らない1本は `TaskStop` で打ち切る**（許可待ちで止まっている可能性がある。2026-10-20、1本が許可待ちのまま約11時間止まり、全体が止まった）。打ち切った問は解説ファイルが不完全でも検査で落ちる肢は公開されず、ファイルのない問はキューに残るので次のバッチで作り直される
    **メインのセッションも、許可していない操作をしない**：ヒアドキュメント・`&&` でつないだ複合コマンド・その場で書く python は、許可の設定に当たらず承認待ちで止まる（2026-10-20、これで何度も止まった）。バッチの後始末は 4〜7 をまとめた `python3 pipeline/explain_commit.py [--skip <question_id> "<理由>"]…` の1コマンドだけで行う。法令を足すときは `pipeline/egov.py` を Edit の道具で直し、`python3 pipeline/egov.py --fetch <法令>` を単独で実行する
 4. 全部が戻ったか打ち切ったら：
-   - 「法令がない」と報告された法令は、`pipeline/egov.py` の `LAWS` に足して `--fetch` する（法令番号は e-Gov の法令名の照合で確かめる。取れなければ足さない）。その問はキューに残るので、次のバッチで作られる
-   - 2回直しても検査に通らない問・食い違い（🔴）が出た問は、`data/review/explain_skips.json` に `{question_id, reason, at}` で足す（キューから外れる）
-5. `python3 pipeline/regen.py` を通す（解説の検査の書き戻し・書き出し。失敗したら原因を直す。直せなければ、その問の解説ファイルを消して skips に足す）
-6. commit・push する（ユーザーの許可：2026-10-19。このループに限る）
-   - `git add data/explanations data/review data/statutes pipeline/egov.py app/public/data NOW.md`
-   - メッセージ：`解説：<最初の問>〜<最後の問>（N問・肢M、検査を通った肢 K）` ＋ Co-Authored-By の行
-7. 5バッチごとに NOW.md の「解説の生成」の行（残りの問数・肢数、skips の数）を上書きする
+   - 「法令がない」と報告された法令は、`pipeline/egov.py` の `LAWS` に Edit の道具で足し、`python3 pipeline/egov.py --fetch <法令>` を単独で実行する（法令番号は e-Gov の法令名の照合で確かめる。取れなければ足さない）。その問はキューに残るので、次のバッチで作られる
+   - 2回直しても検査に通らない問・食い違い（🔴）が出た問・e-Gov にない規則（刑事訴訟規則など）で決まる問は、5 の `--skip` で skips に足す（キューから外れる）
+5. **`python3 pipeline/explain_commit.py [--skip <question_id> "<理由>"]…` を実行する。後始末はこの1コマンドだけ**（skips への追加・作り直し・NOW.md の更新・commit・push・次の9問の表示）。失敗したら原因を直す。直せなければ、その問の解説ファイルを消して `--skip` を付けて流し直す
+   - **単独の `git add`・`git commit`・`git push` は実行しない**（2026-10-20：許可の一覧に入れても単独の `git push` は承認待ちになった。`explain_commit.py` の中の push は承認なしで通ることを確認済み）
+   - commit・push はユーザーの許可（2026-10-19。このループに限る）
 
 ## サブエージェントへの指示（そのまま渡す）
 

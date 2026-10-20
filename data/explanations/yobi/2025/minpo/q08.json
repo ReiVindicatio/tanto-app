@@ -1,0 +1,235 @@
+{
+ "question_id": "yobi-2025-minpo-q08",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q08-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：連帯保証は保証契約の当事者である債権者Ｂと保証人Ｃの間で連帯の特約をすれば成立し、主たる債務者ＡとＣの間の特約は要らないと解されている。",
+   "body": "ポイントは「ＡＣ間においても連帯の特約がされなければ」とする点である。保証契約は債権者と保証人の間で結ばれる契約であり、主たる債務者の委託がなくても成立する（458条の2が「保証人が主たる債務者の委託を受けて保証をした場合」とわざわざ区別しているのはその表れである）。454条の「保証人は、主たる債務者と連帯して債務を負担したときは」という連帯保証も、保証契約の内容として債権者と保証人の間で連帯の特約をすれば足りると解されている。したがって、ＢＣ間で連帯の特約があればＣは連帯保証債務を負い、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "454",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保証人は、主たる債務者と連帯して債務を負担したときは",
+     "text_sha256": "2851503779d5247250f4b5d5dca1abe3a6333d51f6385f928ca2ce32bd287fe6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "458_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保証人が主たる債務者の委託を受けて保証をした場合",
+     "text_sha256": "ff5906f20c8c2d4d509b2de38b896578517d8acfde98a0ab87246b0720595dfd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "連帯の特約が債権者・保証人間で足りることは解釈による"
+   ],
+   "id": "exp-yobi-2025-minpo-q08-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q08-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：連帯保証人には分別の利益がないと解されており、Ｃは貸金債務甲の全額について連帯保証債務を負う。",
+   "body": "ポイントは、連帯保証人が複数いる場合に保証債務が頭割りになるか（分別の利益）である。456条は「数人の保証人がある場合には、それらの保証人が各別の行為により債務を負担したときであっても、第四百二十七条の規定を適用する。」と定め、427条は「それぞれ等しい割合で権利を有し、又は義務を負う。」としているので、普通の保証人が複数いれば保証債務は分割される。しかし、連帯保証人は主たる債務者と連帯して債務を負担する者であるから、分別の利益を有せず、各自が全額について保証債務を負うと解されている。したがって、ＣのＢに対する連帯保証債務の額が２分の１となるとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "456",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "数人の保証人がある場合には、それらの保証人が各別の行為により債務を負担したときであっても、第四百二十七条の規定を適用する。",
+     "text_sha256": "611f65a8e14e06cf549a6d2402c6c8b9353f6b0710747696a1ffc3ce6856caeb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "427",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "それぞれ等しい割合で権利を有し、又は義務を負う。",
+     "text_sha256": "9f8ca5bc7a3ca0744fa167c80923a9ce74d05d13a22dce16ef149f63563eb758",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "連帯保証人に分別の利益がないことは解釈による（条文に明文はない）"
+   ],
+   "id": "exp-yobi-2025-minpo-q08-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q08-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：保証人Ｃは法人でないから、458条の3第1項により、Ｂは期限の利益の喪失を知った時から２か月以内にＣへ通知しなければならない。",
+   "body": "ポイントは、主たる債務者が期限の利益を喪失した場合の債権者の通知義務である。458条の3第1項は「主たる債務者が期限の利益を有する場合において、その利益を喪失したときは、債権者は、保証人に対し、その利益の喪失を知った時から二箇月以内に、その旨を通知しなければならない。」と定めている。同条3項は「前二項の規定は、保証人が法人である場合には、適用しない。」とするが、本問のＣは法人でないから、同条1項が適用される。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "458_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主たる債務者が期限の利益を有する場合において、その利益を喪失したときは、債権者は、保証人に対し、その利益の喪失を知った時から二箇月以内に、その旨を通知しなければならない。",
+     "text_sha256": "60324311947f9fd4a6df49da0e92531942dde02fe157097d7c15521d3bb61bbd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "458_3",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前二項の規定は、保証人が法人である場合には、適用しない。",
+     "text_sha256": "60324311947f9fd4a6df49da0e92531942dde02fe157097d7c15521d3bb61bbd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minpo-q08-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q08-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：458条の2の情報提供義務は、主たる債務者の委託を受けた保証人に限って認められる。",
+   "body": "ポイントは、委託を受けない保証人にも主たる債務の履行状況に関する情報提供義務が及ぶかである。458条の2は「保証人が主たる債務者の委託を受けて保証をした場合において、保証人の請求があったときは、債権者は、保証人に対し、遅滞なく」不履行の有無、残額及び弁済期が到来しているものの額に関する情報を提供しなければならないと定めている。この義務は委託を受けた保証人の場合に限られるから、Ａの委託を受けずに保証したＣの請求があっても、Ｂは同条による情報提供義務を負わない。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "458_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保証人が主たる債務者の委託を受けて保証をした場合において、保証人の請求があったときは、債権者は、保証人に対し、遅滞なく",
+     "text_sha256": "ff5906f20c8c2d4d509b2de38b896578517d8acfde98a0ab87246b0720595dfd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minpo-q08-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q08-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：事業のために負担する債務の保証を個人に委託するときは、465条の10第1項により、主たる債務者は財産及び収支の状況について情報を提供しなければならない。",
+   "body": "ポイントは、事業のための債務の保証を委託する際の主たる債務者の情報提供義務である。465条の10第1項は「主たる債務者は、事業のために負担する債務を主たる債務とする保証又は主たる債務の範囲に事業のために負担する債務が含まれる根保証の委託をするときは、委託を受ける者に対し、次に掲げる事項に関する情報を提供しなければならない。」と定め、その1号に「財産及び収支の状況」を掲げている。同条3項は「前二項の規定は、保証をする者が法人である場合には、適用しない。」とするが、Ｃは法人でないから適用がある。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "465_10",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主たる債務者は、事業のために負担する債務を主たる債務とする保証又は主たる債務の範囲に事業のために負担する債務が含まれる根保証の委託をするときは、委託を受ける者に対し、次に掲げる事項に関する情報を提供しなければならない。",
+     "text_sha256": "a73b066f39d8d55c9ae1c51db51fc5b1088f10db061a4f02d49705b6fe49a108",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "465_10",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "財産及び収支の状況",
+     "text_sha256": "a73b066f39d8d55c9ae1c51db51fc5b1088f10db061a4f02d49705b6fe49a108",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "465_10",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前二項の規定は、保証をする者が法人である場合には、適用しない。",
+     "text_sha256": "a73b066f39d8d55c9ae1c51db51fc5b1088f10db061a4f02d49705b6fe49a108",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minpo-q08-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

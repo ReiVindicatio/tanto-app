@@ -1,0 +1,228 @@
+{
+ "question_id": "yobi-2025-minpo-q10",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q10-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。解除による原状回復請求権は解除によって初めて発生するから、その消滅時効は解除の時から進行すると解されており、「解除権の発生を知った時」から進行するのではない。",
+   "body": "決め手は、時効の起算点を「解除権の発生を知った時」としている部分である。166条1項は、債権が時効によって消滅する場合として、「債権者が権利を行使することができることを知った時から五年間行使しないとき」（1号）と「権利を行使することができる時から十年間行使しないとき」（2号）を定める。545条1項本文の原状回復義務は「当事者の一方がその解除権を行使したとき」に生じるものであり、解除権が発生しただけでは原状回復請求権はまだ存在せず、行使することもできない。そのため、原状回復請求権の消滅時効は、解除権の発生時ではなく解除の時から進行すると解されている（判例あり（要確認））。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "166",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が権利を行使することができることを知った時から五年間行使しないとき",
+     "text_sha256": "1486101bc71d3c4203815fde63101bc9f784105f2a086ecbe1b4b91126c82bcd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "166",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "権利を行使することができる時から十年間行使しないとき",
+     "text_sha256": "1486101bc71d3c4203815fde63101bc9f784105f2a086ecbe1b4b91126c82bcd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "545",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の一方がその解除権を行使したときは、各当事者は、その相手方を原状に復させる義務を負う。",
+     "text_sha256": "403613b135cfeb822522f37759878cd51de512f787c46c64bc9458e9b822f3b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "原状回復請求権の消滅時効が解除時から進行するとする大審院判例があると思われるが、courts.go.jp で確認できなかったため cases に入れていない。",
+    "起算点についての説明は解釈による。"
+   ],
+   "id": "exp-yobi-2025-minpo-q10-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q10-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。545条2項は、解除による原状回復として金銭を返還するときは「その受領の時から利息を付さなければならない」と定めている。",
+   "body": "本肢は545条2項をそのまま述べたものである。解除がされると、各当事者は545条1項本文により相手方を原状に復させる義務を負い、同条2項は、その場合に「金銭を返還するときは、その受領の時から利息を付さなければならない」と定める。この規定は、解除をした側・された側を区別していない。したがって、Ｂが解除し、Ａが受け取っていた代金を返還する場合も、Ａは代金の受領の時からの利息を付さなければならず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "545",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "金銭を返還するときは、その受領の時から利息を付さなければならない",
+     "text_sha256": "403613b135cfeb822522f37759878cd51de512f787c46c64bc9458e9b822f3b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minpo-q10-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q10-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、契約が解除されると契約は遡及的に消滅し、売買によって買主に移転した所有権は当然に売主に復帰すると解している（直接効果説）。",
+   "body": "ポイントは、解除の効果をどう理解するかである。545条1項は、解除権を行使したときは「各当事者は、その相手方を原状に復させる義務を負う。ただし、第三者の権利を害することはできない」と定める。判例は、解除によって契約は初めからなかったことになり、契約に基づいて生じた物権変動も遡及的に消滅すると解しており（直接効果説）、同項ただし書は、この遡及効によって第三者が害されるのを防ぐための規定であると解されている（判例あり（要確認））。したがって、Ａが本件契約を解除すれば、甲建物の所有権は遡及的にＡに復帰し、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "545",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各当事者は、その相手方を原状に復させる義務を負う。ただし、第三者の権利を害することはできない",
+     "text_sha256": "403613b135cfeb822522f37759878cd51de512f787c46c64bc9458e9b822f3b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解除の効果を直接効果説で理解する判例があると思われるが、courts.go.jp で確認できなかったため cases に入れていない。",
+    "直接効果説の説明は解釈による。"
+   ],
+   "id": "exp-yobi-2025-minpo-q10-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q10-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。解除権の行使は損害賠償の請求を妨げず（545条4項）、契約が解除されたときは債務の履行に代わる損害賠償を請求することができる（415条2項3号）。",
+   "body": "決め手は、545条4項と415条2項3号である。545条4項は、「解除権の行使は、損害賠償の請求を妨げない」と定める。そして415条2項は、同条1項により損害賠償を請求できる場合において、「債務が契約によって生じたものである場合において、その契約が解除され、又は債務の不履行による契約の解除権が発生したとき」（3号）は、債権者は「債務の履行に代わる損害賠償の請求をすることができる」と定める。したがって、Ｂの代金債務の不履行を理由に本件契約を解除したＡは、Ｂに対し、代金債務の履行に代わる損害賠償を請求することができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "545",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "解除権の行使は、損害賠償の請求を妨げない。",
+     "text_sha256": "403613b135cfeb822522f37759878cd51de512f787c46c64bc9458e9b822f3b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "415",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債務の履行に代わる損害賠償の請求をすることができる",
+     "text_sha256": "17591c49fffea4a95a4b10a3ff4b37bcd321771faa36b15176b72ce9b46cf6c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "415",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債務が契約によって生じたものである場合において、その契約が解除され、又は債務の不履行による契約の解除権が発生したとき",
+     "text_sha256": "17591c49fffea4a95a4b10a3ff4b37bcd321771faa36b15176b72ce9b46cf6c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minpo-q10-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q10-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。解除された契約から生じた債権そのものの譲受人は、545条1項ただし書の「第三者」に当たらないと解されており、Ｃは解除によって代金債権を失う。",
+   "body": "決め手は、545条1項ただし書の「第三者の権利を害することはできない」にいう第三者に、代金債権の譲受人が含まれるかである。同項ただし書で保護される第三者とは、解除された契約から生じた法律効果を基礎として、解除前に新たな権利を取得した者をいい、契約から生じた債権そのものを譲り受けた者はこれに当たらないと解されている（判例あり（要確認））。代金債権は本件契約そのものから生じた債権であり、契約が解除されれば債権自体が消滅するから、その譲受人Ｃは、第三者対抗要件を備えていても保護されない。したがって、Ｃは代金債権を失い、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "545",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、第三者の権利を害することはできない。",
+     "text_sha256": "403613b135cfeb822522f37759878cd51de512f787c46c64bc9458e9b822f3b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解除された契約から生じた債権の譲受人は545条1項ただし書の第三者に当たらないとする大審院判例があると思われるが、courts.go.jp で確認できなかったため cases に入れていない。",
+    "第三者の範囲についての説明は解釈による。"
+   ],
+   "id": "exp-yobi-2025-minpo-q10-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

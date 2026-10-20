@@ -27,7 +27,8 @@ from explain_queue import queue
 SKIPS = ROOT / "data" / "review" / "explain_skips.json"
 NOW = ROOT / "NOW.md"
 INDEX = ROOT / "app" / "public" / "data" / "index.json"
-PATHS = ["data/explanations", "data/review", "data/statutes", "pipeline/egov.py", "app/public/data", "NOW.md"]
+PATHS = ["data/explanations", "data/review", "data/statutes", "pipeline/egov.py", "app/public/data", "NOW.md",
+         "prompts/explain-runbook.md", "pipeline/explain_commit.py"]
 CO_AUTHOR = "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 
 

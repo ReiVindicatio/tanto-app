@@ -1,0 +1,145 @@
+{
+ "question_id": "yobi-2026-gyosei-q21",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-gyosei-q21-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。行政事件訴訟法37条は原告適格を「申請をした者」に限っているだけで、申請が「適法な」ものであることまでは求めていない。",
+   "body": "決め手は「適法な」という限定である。37条は「不作為の違法確認の訴えは、処分又は裁決についての申請をした者に限り、提起することができる。」と定めており、文言上、申請が適法であることは要件とされていない。申請が不適法であっても、行政庁はこれに応答して却下などの処分をすべきであり、応答しないまま相当の期間が過ぎれば不作為は違法となりうるから、法令に基づく申請をした者であれば、その申請の適否を問わず原告適格が認められると解されている。したがって、「適法な申請をした者に限り」とする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不作為の違法確認の訴えは、処分又は裁決についての申請をした者に限り、提起することができる。",
+     "text_sha256": "82e070e84e4a5454bc4a34049f97d3868f4cf724d330e6e2a6a6da0ab7e54907",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "申請の適否を問わないとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2026-gyosei-q21-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-gyosei-q21-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。審査請求前置を定める8条は、38条で無効等確認の訴えに準用されていないから、無効等確認の訴えは裁決を経ずに提起できる。",
+   "body": "決め手は、8条が無効等確認の訴えに準用されていない点である。8条1項ただし書は、法律に「当該処分についての審査請求に対する裁決を経た後でなければ処分の取消しの訴えを提起することができない旨の定め」がある場合に審査請求前置を求めるが、これは処分の取消しの訴えについての規定である。38条は取消訴訟の規定を他の抗告訴訟に準用しているが、8条を準用しているのは4項の「第八条及び第十条第二項の規定は、不作為の違法確認の訴えに準用する。」だけであり、無効等確認の訴えについて準用を定める3項に8条は含まれていない。したがって、個別法で審査請求前置が定められている処分であっても、無効等確認の訴えは裁決を経ないで提起することができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "8",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該処分についての審査請求に対する裁決を経た後でなければ処分の取消しの訴えを提起することができない旨の定め",
+     "text_sha256": "ef2ff5ce86c5e1f1f93b9a5179f3b74921e7b2b468594bb50f289ac4287ad08d",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "38",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "第八条及び第十条第二項の規定は、不作為の違法確認の訴えに準用する。",
+     "text_sha256": "e858628c3107ea7aebd299b3f3b3a2affe9e00e80029b3a5cce60db27a47a1b7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "38",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第二十三条の二、第二十五条から第二十九条まで及び第三十二条第二項の規定は、無効等確認の訴えについて準用する。",
+     "text_sha256": "e858628c3107ea7aebd299b3f3b3a2affe9e00e80029b3a5cce60db27a47a1b7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-gyosei-q21-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-gyosei-q21-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。38条3項は、執行停止を定める25条を含む「第二十五条から第二十九条まで」を無効等確認の訴えに準用している。",
+   "body": "決め手は、38条3項が執行停止の規定を準用している点である。同項は「第二十三条の二、第二十五条から第二十九条まで及び第三十二条第二項の規定は、無効等確認の訴えについて準用する。」と定めており、25条（執行停止）は準用されている。無効の処分であっても、外見上は有効な処分として存在し、行政庁によって執行されるおそれがあるから、それを止める手段が必要となる。したがって、執行停止の規定が準用されていないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "38",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第二十三条の二、第二十五条から第二十九条まで及び第三十二条第二項の規定は、無効等確認の訴えについて準用する。",
+     "text_sha256": "e858628c3107ea7aebd299b3f3b3a2affe9e00e80029b3a5cce60db27a47a1b7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "25",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "処分の効力、処分の執行又は手続の続行の全部又は一部の停止（以下「執行停止」という。）をすることができる",
+     "text_sha256": "e34c7fb3e9a688c620b8989d059d09fcde52fab53ff01172d2952a9a092b6870",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-gyosei-q21-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,210 @@
+{
+ "question_id": "yobi-2025-minpo-q09",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q09-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。供託物の取戻しができなくなるのは、供託によって「質権又は抵当権が消滅した場合」に限られ、保証債務が消滅した場合は含まれない。",
+   "body": "決め手は、496条2項が取戻しを否定する場面を「質権又は抵当権が消滅した場合」に限っている点である。同条1項は、「債権者が供託を受諾せず、又は供託を有効と宣告した判決が確定しない間は、弁済者は、供託物を取り戻すことができる」と定め、取り戻したときは「供託をしなかったものとみなす」としている。同条2項は、「前項の規定は、供託によって質権又は抵当権が消滅した場合には、適用しない」と定めるが、保証債務の消滅はこれに挙げられていない。したがって、主たる債務の供託によって保証債務が消滅した場合でも、債権者の受諾や供託を有効とする判決の確定がない間は、供託者は供託物を取り戻すことができ、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "496",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が供託を受諾せず、又は供託を有効と宣告した判決が確定しない間は、弁済者は、供託物を取り戻すことができる",
+     "text_sha256": "b34d0e152b3b88b6e461f3587692e009fb60755e86562ab568f59ac919f3598b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "496",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、供託によって質権又は抵当権が消滅した場合には、適用しない",
+     "text_sha256": "b34d0e152b3b88b6e461f3587692e009fb60755e86562ab568f59ac919f3598b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minpo-q09-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q09-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。請負人の報酬債権と注文者の修補に代わる損害賠償債権とは同時履行の関係に立つが、判例は、両者を対当額で相殺することができるとしている。",
+   "body": "ポイントは、同時履行の抗弁権が付着した債権を自働債権とする相殺ができるかである。533条は、相手方が「債務の履行（債務の履行に代わる損害賠償の債務の履行を含む。）」を提供するまでは自己の債務の履行を拒むことができると定めており、請負人の報酬債権と注文者の修補に代わる損害賠償債権とは同時履行の関係に立つ。通常、相手方の抗弁権が付着した債権を自働債権として相殺することは、相手方の抗弁権を一方的に奪うことになるため許されないと解されている。しかし、この場面では、両債権は実質的に請負代金を減額し当事者間の対価関係を調整する関係にあり、相殺を認めても注文者の利益を害しないことから、判例は、請負人が報酬債権を自働債権として相殺することを認めていると解されている（判例あり（要確認））。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "533",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "双務契約の当事者の一方は、相手方がその債務の履行（債務の履行に代わる損害賠償の債務の履行を含む。）を提供するまでは、自己の債務の履行を拒むことができる。",
+     "text_sha256": "95fda827e77316b7aae0167132d09d24763b8a7bcc53a41b785f0fa63eff6774",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "最高裁昭和53年9月21日判決（請負報酬債権と瑕疵修補に代わる損害賠償債権の相殺）が該当すると思われるが、courts.go.jp で判決を確認できなかったため cases に入れていない。",
+    "相殺を認める理由づけは解釈による。"
+   ],
+   "id": "exp-yobi-2025-minpo-q09-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q09-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。身体の侵害による損害賠償債権であっても、その債権者が債権を他人から譲り受けたときは、509条ただし書により相殺の禁止は及ばない。",
+   "body": "決め手は、509条ただし書の「その債権者がその債務に係る債権を他人から譲り受けたときは、この限りでない」という部分である。同条本文は、「人の生命又は身体の侵害による損害賠償の債務」（2号）の債務者は「相殺をもって債権者に対抗することができない」とする。これは被害者に現実の給付を得させる趣旨であるが、本肢では、損害賠償債権の現在の債権者Ｃは被害者Ａから債権を譲り受けた者であり、ただし書に当たる。したがって、Ｂは、Ｃに対する貸金債権を自働債権とし、Ｃが譲り受けた損害賠償債権を受働債権として相殺することができ、相殺できないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "509",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、その債権者がその債務に係る債権を他人から譲り受けたときは、この限りでない。",
+     "text_sha256": "33ae841cfbbd7882090f31eb28d87b669c78e01e112e96279a6a0f3600313680",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "509",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の生命又は身体の侵害による損害賠償の債務",
+     "text_sha256": "33ae841cfbbd7882090f31eb28d87b669c78e01e112e96279a6a0f3600313680",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minpo-q09-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q09-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。513条は、従前の債務に代えて「従前の給付の内容について重要な変更をするもの」を発生させる契約をしたときは、従前の債務は更改によって消滅すると定めている。",
+   "body": "本肢は513条1号の更改をそのまま述べたものである。同条は、「当事者が従前の債務に代えて、新たな債務であって次に掲げるものを発生させる契約をしたときは、従前の債務は、更改によって消滅する」と定め、その1号に「従前の給付の内容について重要な変更をするもの」を挙げる。したがって、給付の内容について重要な変更をする新たな債務を発生させる契約により従前の債務は消滅し、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "513",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が従前の債務に代えて、新たな債務であって次に掲げるものを発生させる契約をしたときは、従前の債務は、更改によって消滅する",
+     "text_sha256": "75b267811ffb4dd13c04891df2eee629151da75178778fa040604c1388c5271c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "513",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "従前の給付の内容について重要な変更をするもの",
+     "text_sha256": "75b267811ffb4dd13c04891df2eee629151da75178778fa040604c1388c5271c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minpo-q09-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q09-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。債権と債務が同一人に帰属しても、その債権が第三者の権利の目的であるときは、520条ただし書により混同による消滅は生じない。",
+   "body": "決め手は、520条ただし書の「その債権が第三者の権利の目的であるときは、この限りでない」という部分である。同条本文は、「債権及び債務が同一人に帰属したときは、その債権は、消滅する」と定める。本肢では、ＢがＡを相続したことにより、ＡのＢに対する売買代金債権とその債務がＢに帰属するが、その債権は相続前にＣによって差し押さえられており、第三者Ｃの権利の目的となっている。このような場合に債権を消滅させると差押債権者Ｃの利益を害するため、債権は消滅しない。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "520",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権及び債務が同一人に帰属したときは、その債権は、消滅する。ただし、その債権が第三者の権利の目的であるときは、この限りでない。",
+     "text_sha256": "a2e410b520170a5739ab46af6604b623a55107e4f2dec2ce55ae43e8fefce1c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minpo-q09-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
