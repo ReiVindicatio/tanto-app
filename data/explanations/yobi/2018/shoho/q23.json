@@ -1,0 +1,255 @@
+{
+ "question_id": "yobi-2018-shoho-q23",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-shoho-q23-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：公証人の認証を要するのは株式会社の定款（30条1項）であり、持分会社の定款（575条）には認証を要する旨の規定がない。",
+   "body": "575条1項は、持分会社を設立するには「その社員になろうとする者が定款を作成し、その全員がこれに署名し、又は記名押印しなければならない。」と定めるだけで、公証人の認証を求めていない。これに対し、30条1項は「第二十六条第一項の定款は、公証人の認証を受けなければ、その効力を生じない。」と定めており、認証が必要なのは26条1項の定款、すなわち株式会社の定款に限られる。したがって、合名会社の定款は公証人の認証を受けることを要しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "575",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その社員になろうとする者が定款を作成し、その全員がこれに署名し、又は記名押印しなければならない。",
+     "text_sha256": "546779aa3ace691bac968df0bf6ae5a022cda3b49edb8ed269d0c79a0ab92b3f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "30",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二十六条第一項の定款は、公証人の認証を受けなければ、その効力を生じない。",
+     "text_sha256": "3e56ac8562a83bafe23903b2c7793ccc4b25e262eb9ebb158bc60719cdad12bd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "26",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社を設立するには、発起人が定款を作成し、その全員がこれに署名し、又は記名押印しなければならない。",
+     "text_sha256": "1f96fd19c5a0b97eab08a3213640a8de386ce235cd9e4c9365f2f4219725d56e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-shoho-q23-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-shoho-q23-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：持分会社の債権者に計算書類の閲覧請求権を認めているのは合同会社についてだけであり（625条）、合名会社の債権者にはこの権利がない。",
+   "body": "誤りは、合名会社の債権者に計算書類の閲覧請求権があるとしている点である。618条1項は、計算書類の閲覧等を請求できる者を「持分会社の社員」としている。債権者については、625条が「合同会社の債権者は、当該合同会社の営業時間内は、いつでも、その計算書類（作成した日から五年以内のものに限る。）について第六百十八条第一項各号に掲げる請求をすることができる。」と定めるが、対象は合同会社の債権者に限られる。合名会社の債権者に計算書類の閲覧請求を認める規定はない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "618",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "持分会社の社員は、当該持分会社の営業時間内は、いつでも、次に掲げる請求をすることができる。",
+     "text_sha256": "ff25105f57e8bfea2ff8360ee15cf8f393b5a93bd5b0269f9383c6b94ac56734",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "625",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "合同会社の債権者は、当該合同会社の営業時間内は、いつでも、その計算書類（作成した日から五年以内のものに限る。）について第六百十八条第一項各号に掲げる請求をすることができる。",
+     "text_sha256": "6dcef3a74671741129a10724c45dc9b5cbf2a2467f83fbce33e2ebe3f965e736",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-shoho-q23-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-shoho-q23-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：社員が会社債務を弁済する責任を負うのは、会社財産で債務を完済できない場合などに限られ（580条1項各号）、会社の財産状況にかかわらず負うわけではない。",
+   "body": "誤りは「当該合資会社の財産の状況にかかわらず」という部分である。580条1項は、社員は「次に掲げる場合には、連帯して、持分会社の債務を弁済する責任を負う。」とし、1号で「当該持分会社の財産をもってその債務を完済することができない場合」、2号で会社財産に対する強制執行が効を奏しなかった場合を挙げる。このように、無限責任社員の責任も会社財産による弁済が尽きない場合に限って生ずるものであり、会社の財産状況と無関係に負うものではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "580",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "社員は、次に掲げる場合には、連帯して、持分会社の債務を弁済する責任を負う。",
+     "text_sha256": "31d4daae30d0560d6f3c834ef56cb708e8007e3351177066d28a9898ecf03852",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "580",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該持分会社の財産をもってその債務を完済することができない場合",
+     "text_sha256": "31d4daae30d0560d6f3c834ef56cb708e8007e3351177066d28a9898ecf03852",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-shoho-q23-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-shoho-q23-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：出資の履行が完了した時に社員となる特則（604条3項）は合同会社に限られ、合資会社の社員の加入は定款変更の時に効力を生ずる（同条2項）。",
+   "body": "誤りは、合同会社についての特則を合資会社に当てはめている点である。604条2項は「持分会社の社員の加入は、当該社員に係る定款の変更をした時に、その効力を生ずる。」と定める。同条3項は、定款変更の時に出資の全部又は一部を履行していないときは払込み又は給付を完了した時に社員となると定めるが、その対象は「合同会社が新たに社員を加入させる場合」に限られる。したがって、合資会社の有限責任社員は、出資が未履行であっても定款の変更をした時に社員となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "604",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "持分会社の社員の加入は、当該社員に係る定款の変更をした時に、その効力を生ずる。",
+     "text_sha256": "a075236ee2613381ea6fda971c71bf26f9f7f82d2618cd05f4c4c21b45679284",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "604",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "合同会社が新たに社員を加入させる場合",
+     "text_sha256": "a075236ee2613381ea6fda971c71bf26f9f7f82d2618cd05f4c4c21b45679284",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-shoho-q23-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-shoho-q23-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：合同会社が資本金の額を減少する場合、債権者は異議を述べることができ、会社は公告・催告などの債権者異議手続をとらなければならない（627条）。",
+   "body": "627条1項は「合同会社が資本金の額を減少する場合には、当該合同会社の債権者は、当該合同会社に対し、資本金の額の減少について異議を述べることができる。」と定める。同条2項は、この場合、合同会社は減少の内容などを官報に公告し、かつ、知れている債権者には「各別にこれを催告しなければならない。」とする。さらに同条6項は、資本金の額の減少は「前各項の手続が終了した日に、その効力を生ずる。」と定めており、債権者異議手続は必須である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "627",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "合同会社が資本金の額を減少する場合には、当該合同会社の債権者は、当該合同会社に対し、資本金の額の減少について異議を述べることができる。",
+     "text_sha256": "36390286af0ee0d1affd12dda611a0eb077fa51aadef900eadb150b142c968d1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "627",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "各別にこれを催告しなければならない。",
+     "text_sha256": "36390286af0ee0d1affd12dda611a0eb077fa51aadef900eadb150b142c968d1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "627",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "前各項の手続が終了した日に、その効力を生ずる。",
+     "text_sha256": "36390286af0ee0d1affd12dda611a0eb077fa51aadef900eadb150b142c968d1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-shoho-q23-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

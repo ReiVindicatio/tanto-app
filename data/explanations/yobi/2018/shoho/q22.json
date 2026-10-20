@@ -1,0 +1,293 @@
+{
+ "question_id": "yobi-2018-shoho-q22",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-shoho-q22-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：取締役が得た利益の額を損害の額と推定するのは承認のない競業取引（356条1項1号）の場合であり、自己のための直接取引（同項2号）には適用されない（423条2項）。",
+   "body": "誤りは、承認のない利益相反取引（直接取引）について利益額を損害額と推定するとしている点である。取締役会設置会社では、365条1項により356条1項の「株主総会」が「取締役会」と読み替えられる。423条2項は、356条1項に違反して「第三百五十六条第一項第一号の取引をしたときは、当該取引によって取締役、執行役又は第三者が得た利益の額は、前項の損害の額と推定する。」と定めており、対象は1号の競業取引に限られる。自己のために会社と取引をする場合は356条1項2号の取引であり、これについては423条3項が、取引によって会社に損害が生じたときに取締役が「その任務を怠ったものと推定する。」と定めるにとどまる（損害額の推定ではない）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "365",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役会設置会社における第三百五十六条の規定の適用については、同条第一項中「株主総会」とあるのは、「取締役会」とする。",
+     "text_sha256": "ad5cc5119f91885c9349211b6432e9998690efc4f14f5ceaaa2ff2532cc02b80",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "356",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役が自己又は第三者のために株式会社と取引をしようとするとき。",
+     "text_sha256": "1f519283022020dbb09f21e69d5e5dfc33a50acae50d33e817fb256ed4327990",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "423",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第三百五十六条第一項第一号の取引をしたときは、当該取引によって取締役、執行役又は第三者が得た利益の額は、前項の損害の額と推定する。",
+     "text_sha256": "0a7329bc93caa7819913258f61953dfd11dd902a080800aa28a5decfb9c6d85a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "423",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "その任務を怠ったものと推定する。",
+     "text_sha256": "0a7329bc93caa7819913258f61953dfd11dd902a080800aa28a5decfb9c6d85a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-shoho-q22-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-shoho-q22-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：非業務執行取締役等との責任限定契約を可能とする定款の定めを設ける議案の提出には、425条3項が準用され、監査役設置会社では各監査役の同意が必要である（427条3項）。",
+   "body": "427条1項は、株式会社が取締役（業務執行取締役等であるものを除く。）などの「非業務執行取締役等」と責任限定契約を締結できる旨を定款で定めることができるとしており、社外取締役はこれに含まれる。427条3項は、「第四百二十五条第三項の規定は、定款を変更して第一項の規定による定款の定め（同項に規定する取締役（監査等委員又は監査委員であるものを除く。）と契約を締結することができる旨の定めに限る。）を設ける議案を株主総会に提出する場合について準用する。」と定める。準用される425条3項は、監査役設置会社では議案の提出に「監査役（監査役が二人以上ある場合にあっては、各監査役）」の同意を得なければならないとする。監査役会設置会社は監査役を置く会社であるから、各監査役の同意が必要であり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "427",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "非業務執行取締役等",
+     "text_sha256": "aabad8bb25902f16cd2d4a14d7a05f874d176f472329e275058c3e84b5fb8477",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "427",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第四百二十五条第三項の規定は、定款を変更して第一項の規定による定款の定め（同項に規定する取締役（監査等委員又は監査委員であるものを除く。）と契約を締結することができる旨の定めに限る。）を設ける議案を株主総会に提出する場合について準用する。",
+     "text_sha256": "aabad8bb25902f16cd2d4a14d7a05f874d176f472329e275058c3e84b5fb8477",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "425",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査役（監査役が二人以上ある場合にあっては、各監査役）",
+     "text_sha256": "bdb4cea5592148c45e8b29069888ed8949e0268b0676476daa3246e199053e45",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-shoho-q22-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-shoho-q22-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：帰責事由がないことをもって免責されないとする特則（428条1項）は「自己のためにした取引」に限られ、第三者のためにした取引には適用されない。",
+   "body": "誤りは、第三者のために会社と取引をした取締役についても、帰責事由のないことによる免責を否定している点である。428条1項は、取締役と会社との直接取引のうち「（自己のためにした取引に限る。）」をした取締役又は執行役の423条1項の責任は、「任務を怠ったことが当該取締役又は執行役の責めに帰することができない事由によるものであることをもって免れることができない。」と定める。第三者のためにした直接取引はこの特則の対象外であり、423条1項の一般原則に従う。したがって、任務懈怠が責めに帰することができない事由によるものであれば責任を免れうると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "428",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "（自己のためにした取引に限る。）",
+     "text_sha256": "2565a23898e94211c4eb9c0376c5c78f8b51246608be05910f2304ec506e6cf7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "428",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "任務を怠ったことが当該取締役又は執行役の責めに帰することができない事由によるものであることをもって免れることができない。",
+     "text_sha256": "2565a23898e94211c4eb9c0376c5c78f8b51246608be05910f2304ec506e6cf7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その任務を怠ったときは、株式会社に対し、これによって生じた損害を賠償する責任を負う。",
+     "text_sha256": "0a7329bc93caa7819913258f61953dfd11dd902a080800aa28a5decfb9c6d85a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "第三者のためにした取引で帰責事由がないときに免責されうる点は、428条1項の反対解釈による"
+   ],
+   "id": "exp-yobi-2018-shoho-q22-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-shoho-q22-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：監査役が監査報告の重要な事項について虚偽記載をしたときは、注意を怠らなかったことを証明しない限り、第三者に対して責任を負う（429条2項3号）。",
+   "body": "429条2項は、同項各号に掲げる者が各号に定める行為をしたときも1項と同様に第三者に生じた損害を賠償する責任を負うとし、ただし書で「その者が当該行為をすることについて注意を怠らなかったことを証明したときは、この限りでない。」と定める。同項3号は、「監査役、監査等委員及び監査委員」について「監査報告に記載し、又は記録すべき重要な事項についての虚偽の記載又は記録」を挙げる。したがって、本肢は同条の内容と一致する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "429",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その者が当該行為をすることについて注意を怠らなかったことを証明したときは、この限りでない。",
+     "text_sha256": "4d41a9058a99b7439b59e3aec834678f217dd92c928361ecd026fe532e7d3b37",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "429",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "監査報告に記載し、又は記録すべき重要な事項についての虚偽の記載又は記録",
+     "text_sha256": "4d41a9058a99b7439b59e3aec834678f217dd92c928361ecd026fe532e7d3b37",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-shoho-q22-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-shoho-q22-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：役員等が第三者に対する責任を負う場合に、他の役員等も同じ損害について責任を負うときは、連帯債務者となる（430条）。",
+   "body": "執行役も監査委員である取締役も、423条1項にいう「役員等」に当たる。429条1項により、役員等がその職務を行うについて悪意又は重大な過失があったときは、第三者に生じた損害を賠償する責任を負う。そして430条は、「役員等が株式会社又は第三者に生じた損害を賠償する責任を負う場合において、他の役員等も当該損害を賠償する責任を負うときは、これらの者は、連帯債務者とする。」と定める。したがって、執行役と監査委員である取締役は連帯債務者となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役、会計参与、監査役、執行役又は会計監査人（以下この章において「役員等」という。）",
+     "text_sha256": "0a7329bc93caa7819913258f61953dfd11dd902a080800aa28a5decfb9c6d85a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "429",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "役員等がその職務を行うについて悪意又は重大な過失があったときは、当該役員等は、これによって第三者に生じた損害を賠償する責任を負う。",
+     "text_sha256": "4d41a9058a99b7439b59e3aec834678f217dd92c928361ecd026fe532e7d3b37",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "430",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "役員等が株式会社又は第三者に生じた損害を賠償する責任を負う場合において、他の役員等も当該損害を賠償する責任を負うときは、これらの者は、連帯債務者とする。",
+     "text_sha256": "0f1264de8390e280f0f830bb2bbea84ca0e36e2f26bbc3040a1186cf4ea7321d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-shoho-q22-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

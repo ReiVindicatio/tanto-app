@@ -1,0 +1,244 @@
+{
+ "question_id": "yobi-2018-minso-q32",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q32-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。民事訴訟法34条2項により、訴訟能力を欠く者がした訴訟行為は、これを有するに至った当事者の追認により行為の時にさかのぼって効力を生ずる。",
+   "body": "ポイントは、訴訟能力を欠いてした訴訟行為を、後に能力を得た本人が追認できるかである。民事訴訟法34条2項は「訴訟能力、法定代理権又は訴訟行為をするのに必要な授権を欠く者がした訴訟行為は、これらを有するに至った当事者又は法定代理人の追認により、行為の時にさかのぼってその効力を生ずる。」と定める。訴訟能力を欠く当事者が後に訴訟能力を有するに至れば、その当事者自身が追認でき、追認には遡及効がある。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "34",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "訴訟能力、法定代理権又は訴訟行為をするのに必要な授権を欠く者がした訴訟行為は、これらを有するに至った当事者又は法定代理人の追認により、行為の時にさかのぼってその効力を生ずる。",
+     "text_sha256": "3950ecb318d61de762fda21f3d029e78df5211ab489fb35aa9802a956b462a0b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-minso-q32-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q32-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、遺贈による登記の抹消登記手続を求める訴えは、遺言執行者がある場合でも受遺者を被告とすべきとしている。",
+   "body": "誤りは「受遺者ではなく，遺言執行者を被告としなければならない」とする点である。最高裁昭和51年7月19日判決は、相続人が遺言の執行としてされた遺贈による所有権移転登記の抹消登記手続を求める訴えについては、遺言執行者がある場合でも、受遺者を被告とすべきであるとした。民法1012条1項は遺言執行者に「遺言の執行に必要な一切の行為をする権利義務」を与えているが、遺贈による登記が既に完了していれば遺言の執行は終わっており、その登記の名義人である受遺者を相手とすべきだと解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1012",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺言の執行に必要な一切の行為をする権利義務",
+     "text_sha256": "185d3e7cd4565a0a9cb410e62403492dd01d33c4152b1d79f466cdedb803a78e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "所有権移転仮登記抹消登記手続本訴等請求事件",
+     "court": "最高裁判所第二小法廷",
+     "date": "1976-07-19",
+     "holding": "相続人が遺言の執行としてされた遺贈による所有権移転登記の抹消登記手続を求める訴えは、遺言執行者がある場合でも、受遺者を被告とすべきである。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54226/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "本判決は平成30年の相続法改正（民法1012条2項の新設など）より前の事案である。"
+   ],
+   "id": "exp-yobi-2018-minso-q32-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q32-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。民事訴訟法30条3項により、係属中の訴訟の当事者でない者は、自ら訴えを提起しなくても、その原告を自己のためにも原告となるべき者として選定できる。",
+   "body": "誤りは、選定のために「自ら訴えを提起して係属中の訴訟との併合を求め，共同訴訟関係を成立させなければならない」とする点である。民事訴訟法30条3項は「係属中の訴訟の原告又は被告と共同の利益を有する者で当事者でないものは、その原告又は被告を自己のためにも原告又は被告となるべき者として選定することができる。」と定める。この追加的選定は、選定者が自ら訴えを提起して共同訴訟関係を作ることを要件としていない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "30",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "係属中の訴訟の原告又は被告と共同の利益を有する者で当事者でないものは、その原告又は被告を自己のためにも原告又は被告となるべき者として選定することができる。",
+     "text_sha256": "715a57951b954bb406d4ce3d58e4344a3309ffa1169b4b8f8a0c69fa55a5041d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-minso-q32-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q32-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、権利能力のない社団が、代表者の個人名義への所有権移転登記手続を求める訴訟の原告適格を有するとしている。",
+   "body": "ポイントは、登記名義は代表者個人とするほかない不動産について、社団自身が原告となれるかである。民事訴訟法29条は「法人でない社団又は財団で代表者又は管理人の定めがあるものは、その名において訴え、又は訴えられることができる。」と定め、権利能力のない社団に当事者能力を認めている。そして最高裁平成26年2月27日判決は、権利能力のない社団は、構成員全員に総有的に帰属する不動産について、その所有権の登記名義人に対し、当該社団の代表者の個人名義に所有権移転登記手続をすることを求める訴訟の原告適格を有するとした。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "29",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法人でない社団又は財団で代表者又は管理人の定めがあるものは、その名において訴え、又は訴えられることができる。",
+     "text_sha256": "ffa04388ade38103f2d6100c68788c0d8ab582f0b8e8d04366c8f42afbfed2ab",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "所有権移転登記手続等請求事件",
+     "court": "最高裁判所第一小法廷",
+     "date": "2014-02-27",
+     "holding": "権利能力のない社団は、構成員全員に総有的に帰属する不動産について、登記名義人に対し、社団の代表者の個人名義への所有権移転登記手続を求める訴訟の原告適格を有する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/83983/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2018-minso-q32-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minso-q32-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×（出題当時の法による）。婚姻による成年擬制により未成年者は訴訟能力を取得し、両親の法定代理権は消滅するから、両親が法定代理人として訴訟行為をしなければならないわけではない。",
+   "body": "誤りは、婚姻後も両親が「法定代理人として訴訟行為をしなければならない」とする点である。出題当時の民法には、未成年者が婚姻をしたときは成年に達したものとみなす規定（婚姻による成年擬制）があった。民事訴訟法28条により訴訟能力は民法に従い、同法31条は未成年者は「法定代理人によらなければ、訴訟行為をすることができない」とするが、成年擬制によって未成年者は訴訟能力を取得し、両親の法定代理権は消滅する。なお、法定代理権の消滅は、同法36条1項により「本人又は代理人から相手方に通知しなければ、その効力を生じない」。現行の民法では、4条が「年齢十八歳をもって、成年とする。」とし、731条が「婚姻は、十八歳にならなければ、することができない。」とするため、未成年者が婚姻するという本肢の場面自体が生じない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者能力、訴訟能力及び訴訟無能力者の法定代理は、この法律に特別の定めがある場合を除き、民法（明治二十九年法律第八十九号）その他の法令に従う。",
+     "text_sha256": "650e6268ae5c94fb1ee35de02a0152ee8cd4fc99250d2515de3b36976c553d1b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "31",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法定代理人によらなければ、訴訟行為をすることができない",
+     "text_sha256": "45303900f9b4b3da717d2449d3e32fdd68be62595e33c78eef57b146fb985ff3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "本人又は代理人から相手方に通知しなければ、その効力を生じない",
+     "text_sha256": "4eb9aa8c47fad71e2230f50670d990981d8555c53e49222702758bd726679bb5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "年齢十八歳をもって、成年とする。",
+     "text_sha256": "1971671d4fa76e8fa449652a4020d78a9e1b3cb2d87b63dabb7c98e81429695b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "731",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "婚姻は、十八歳にならなければ、することができない。",
+     "text_sha256": "b3d0de9ccf5cf560a6894bf2c51b032e283542cfcf2575d23f487827015a4bfa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "法改正：婚姻による成年擬制の規定は、成年年齢を18歳に引き下げた民法改正（2022年4月1日施行）で削除され、婚姻適齢も男女とも18歳とされた。現行法では未成年者が婚姻することはできず、本肢の前提が成り立たない。解説は出題当時の法に基づく。",
+    "旧規定（成年擬制）の本文は data/statutes にない（現行法で削除済み）ため、条文の引用はしていない。人の確認を推奨。"
+   ],
+   "id": "exp-yobi-2018-minso-q32-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

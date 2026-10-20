@@ -1,0 +1,243 @@
+{
+ "question_id": "yobi-2018-shoho-q24",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-shoho-q24-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：配当財産の割当ては株主の有する株式の数に応じたものでなければならず（454条3項）、保有株式数によって1株当たりの額を変えることはできない。",
+   "body": "誤りは、1000株を超える部分について1株当たりの配当額を減らす定めを許している点である。454条3項は、株主に対する配当財産の割当てに関する事項についての定めは、株主の「有する株式の数（前項第二号に掲げる事項についての定めがある場合にあっては、各種類の株式の数）に応じて配当財産を割り当てることを内容とするものでなければならない。」と定める。本肢の定めは、1000株までと1000株超とで1株当たりの額が異なり、株式数に比例した割当てにならない。本問の会社は種類株式発行会社でないから、種類ごとの異なる取扱い（同条2項）の余地もなく、株主総会の決議によってもこのような定めはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "454",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "有する株式の数（前項第二号に掲げる事項についての定めがある場合にあっては、各種類の株式の数）に応じて配当財産を割り当てることを内容とするものでなければならない。",
+     "text_sha256": "7f52ec1b8fb427be8e51829e0769c99584a2508e3d8669f3719b80dfb0fafc0e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "454",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "剰余金の配当について内容の異なる二以上の種類の株式を発行しているときは",
+     "text_sha256": "7f52ec1b8fb427be8e51829e0769c99584a2508e3d8669f3719b80dfb0fafc0e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-shoho-q24-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-shoho-q24-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：現物配当の場合、株主総会の決議によって、一定の数未満の株式を有する株主に配当財産を割り当てないことを定めることができる（454条4項2号）。",
+   "body": "454条4項は、配当財産が金銭以外の財産であるときは、株式会社は株主総会の決議によって同項各号の事項を定めることができるとし、2号で「一定の数未満の数の株式を有する株主に対して配当財産の割当てをしないこととするときは、その旨及びその数」を挙げる。この場合、456条により、会社は基準未満株式を有する株主に対し、所定の方法で算定した額に相当する金銭を支払わなければならない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "454",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "配当財産が金銭以外の財産であるときは、株式会社は、株主総会の決議によって、次に掲げる事項を定めることができる。",
+     "text_sha256": "7f52ec1b8fb427be8e51829e0769c99584a2508e3d8669f3719b80dfb0fafc0e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "454",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "一定の数未満の数の株式を有する株主に対して配当財産の割当てをしないこととするときは、その旨及びその数",
+     "text_sha256": "7f52ec1b8fb427be8e51829e0769c99584a2508e3d8669f3719b80dfb0fafc0e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "456",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "基準株式数に満たない数の株式（以下この条において「基準未満株式」という。）を有する株主に対し",
+     "text_sha256": "0ab702f5478620b9ea30d6b58ca1a5e21b92cb9d2d3b6573383daa000f1ed68b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-shoho-q24-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-shoho-q24-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：配当財産の種類からは「当該株式会社の株式等」が除かれており（454条1項1号）、自社の株式を配当財産とすることはできない。",
+   "body": "誤りは、自社の株式を配当財産とすることができるとしている点である。454条1項は、剰余金の配当をするときに株主総会の決議で定める事項として、1号で「配当財産の種類（当該株式会社の株式等を除く。）及び帳簿価額の総額」を挙げる。括弧書により、当該株式会社の株式等は配当財産の種類から除外されている。したがって、公開会社は自社の株式を配当財産として剰余金の配当をすることはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "454",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "配当財産の種類（当該株式会社の株式等を除く。）及び帳簿価額の総額",
+     "text_sha256": "7f52ec1b8fb427be8e51829e0769c99584a2508e3d8669f3719b80dfb0fafc0e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-shoho-q24-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-shoho-q24-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：取締役会の決議による中間配当は、その旨を定款で定めた場合に限ってすることができる（454条5項）。",
+   "body": "誤りは「定款の定めがない場合であっても」という部分である。公開会社は取締役会を置かなければならない（327条1項1号）。454条5項は、取締役会設置会社は「一事業年度の途中において一回に限り取締役会の決議によって剰余金の配当（配当財産が金銭であるものに限る。以下この項において「中間配当」という。）をすることができる旨を定款で定めることができる。」と定める。中間配当は定款の定めを前提とするものであり、定款の定めがなければ取締役会の決議で中間配当をすることはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "327",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる株式会社は、取締役会を置かなければならない。",
+     "text_sha256": "5a773ce772b81078bdf955298b8ce400edd7c0d886c414d3e6afc8c64f2bdd73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "454",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "一事業年度の途中において一回に限り取締役会の決議によって剰余金の配当（配当財産が金銭であるものに限る。以下この項において「中間配当」という。）をすることができる旨を定款で定めることができる。",
+     "text_sha256": "7f52ec1b8fb427be8e51829e0769c99584a2508e3d8669f3719b80dfb0fafc0e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-shoho-q24-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-shoho-q24-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：欠損てん補責任の対象となる剰余金の配当からは、定時株主総会の決議に基づく配当が除かれている（465条1項10号イ）。",
+   "body": "誤りは、定時株主総会の決議に基づく剰余金の配当についても業務執行者が欠損てん補責任を負うとしている点である。465条1項は、同項各号の行為をした事業年度に係る計算書類の承認時に欠損が生じたときは、「当該各号に掲げる行為に関する職務を行った業務執行者は、当該株式会社に対し、連帯して、その超過額」を支払う義務を負うと定める。しかし、同項10号は対象を「剰余金の配当（次のイからハまでに掲げるものを除く。）」としており、そのイで、定時株主総会において剰余金の配当に関する事項を定める場合の剰余金の配当を除外している。したがって、本肢の場合、業務執行者は同条の義務を負わない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "465",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該各号に掲げる行為に関する職務を行った業務執行者は、当該株式会社に対し、連帯して、その超過額",
+     "text_sha256": "391a4751ac3bfe7dfe5faabee6e9515b47830f2ccf713c030a80172c7c2fbd52",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "465",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "剰余金の配当（次のイからハまでに掲げるものを除く。）",
+     "text_sha256": "391a4751ac3bfe7dfe5faabee6e9515b47830f2ccf713c030a80172c7c2fbd52",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "465",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "において第四百五十四条第一項各号に掲げる事項を定める場合における剰余金の配当",
+     "text_sha256": "391a4751ac3bfe7dfe5faabee6e9515b47830f2ccf713c030a80172c7c2fbd52",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-shoho-q24-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
