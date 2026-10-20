@@ -1,0 +1,203 @@
+{
+ "question_id": "yobi-2025-minso-q38",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q38-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。149条2項のとおり、陪席裁判官は裁判長に告げれば釈明の処置をすることができ、裁判長の許可は要らない。",
+   "body": "149条1項は釈明権の主体を裁判長とし、同条2項は「陪席裁判官は、裁判長に告げて、前項に規定する処置をすることができる。」と定める。条文が求めているのは裁判長に「告げて」することだけであり、裁判長の許可を得ることは求められていない。したがって、裁判長の許可がなくても、裁判長に告げれば釈明権を行使できるとする本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "149",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "陪席裁判官は、裁判長に告げて、前項に規定する処置をすることができる。",
+     "text_sha256": "e15693ee49ea9404c25af95ba3f88e17a29e386ff76d6bcf799471eba6793cf1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minso-q38-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q38-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、当事者双方が主張せず予測も困難な信義則違反の法律構成で判断するには、主張するか否かを明らかにするよう促す釈明をすべきであり、これを怠ったことは違法であるとした。",
+   "body": "149条1項は、裁判長が「訴訟関係を明瞭にするため、事実上及び法律上の事項に関し、当事者に対して問いを発し、又は立証を促すことができる。」と定める。判例は、当事者双方が主張しておらず、それまでの訴訟の経過からは予測が困難な信義則違反という法律構成で判断をするのであれば、適切に釈明権を行使して、原告に信義則違反の点について主張するか否かを明らかにするよう促し、相手方に十分な反論・反証の機会を与えた上で判断すべきであり、これをしなかった原審には釈明権の行使を怠った違法があるとした。本肢は、そのような措置がとられていなくても違法があるとはいえないとする点で誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "149",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟関係を明瞭にするため、事実上及び法律上の事項に関し、当事者に対して問いを発し、又は立証を促すことができる。",
+     "text_sha256": "e15693ee49ea9404c25af95ba3f88e17a29e386ff76d6bcf799471eba6793cf1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "雇用関係存在確認等請求事件",
+     "court": "最高裁判所第一小法廷",
+     "date": "2010-10-14",
+     "holding": "当事者双方が主張せず、訴訟の経過から予測困難な信義則違反の法律構成で判断した原審について、原告にその点を主張するか否かを明らかにするよう促す釈明をせず、相手方に反論・反証の機会も与えなかったことは、釈明権の行使を怠った違法があるとした。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/80759/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2025-minso-q38-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q38-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、原告が誤解又は不注意により別個の法律構成を主張していない場合には、裁判所が発問の形で別個の法律構成を示唆することも許されるとした。",
+   "body": "149条1項は、釈明の対象を「事実上及び法律上の事項」としている。判例は、主張された請求原因では請求を認容できないが、別個の法律構成に基づく事実を主張すれば請求が認められ紛争の根本的な解決が期待できるのに、原告が明らかに誤解又は不注意によりその主張をしていない場合には、事実審裁判所は、釈明の内容が別個の請求原因にわたる結果となるときでも、発問の形で具体的な法律構成を示唆して真意を確かめることができるとした。したがって、本肢のような示唆は釈明権行使の範囲を逸脱した違法なものではなく、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "149",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "事実上及び法律上の事項に関し、当事者に対して問いを発し、又は立証を促すことができる。",
+     "text_sha256": "e15693ee49ea9404c25af95ba3f88e17a29e386ff76d6bcf799471eba6793cf1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "売掛代金請求事件",
+     "court": "最高裁判所第一小法廷",
+     "date": "1970-06-11",
+     "holding": "別個の法律構成による事実を主張すれば請求が認められるのに、原告が誤解又は不注意によりこれを主張しないときは、事実審裁判所は、釈明の内容が別個の請求原因にわたる結果となっても、発問の形で具体的な法律構成を示唆して真意を確かめることができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55134/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2025-minso-q38-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q38-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。当事者ができるのは裁判長に対して発問を求めること（149条3項）であり、相手方に対して直接釈明権を行使することはできない。",
+   "body": "149条1項は釈明権の主体を裁判長とし、同条2項は陪席裁判官にも裁判長に告げて同じ処置をすることを認めている。当事者については、同条3項が「当事者は、口頭弁論の期日又は期日外において、裁判長に対して必要な発問を求めることができる。」と定めるにとどまる。当事者は、相手方に問いを発したいときは裁判長に発問を求めるのであって、相手方に直接釈明権を行使することはできない。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "149",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "当事者は、口頭弁論の期日又は期日外において、裁判長に対して必要な発問を求めることができる。",
+     "text_sha256": "e15693ee49ea9404c25af95ba3f88e17a29e386ff76d6bcf799471eba6793cf1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minso-q38-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q38-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。149条1項は、裁判長が「口頭弁論の期日又は期日外において」釈明の処置をすることができると定めている。",
+   "body": "149条1項は「裁判長は、口頭弁論の期日又は期日外において、訴訟関係を明瞭にするため、事実上及び法律上の事項に関し、当事者に対して問いを発し、又は立証を促すことができる。」と定める。このように釈明権は期日外でも行使できる。期日外に攻撃又は防御の方法に重要な変更を生じ得る事項について釈明をしたときは、同条4項によりその内容を相手方に通知しなければならない。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "149",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判長は、口頭弁論の期日又は期日外において、訴訟関係を明瞭にするため、事実上及び法律上の事項に関し、当事者に対して問いを発し、又は立証を促すことができる。",
+     "text_sha256": "e15693ee49ea9404c25af95ba3f88e17a29e386ff76d6bcf799471eba6793cf1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "149",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "その内容を相手方に通知しなければならない。",
+     "text_sha256": "e15693ee49ea9404c25af95ba3f88e17a29e386ff76d6bcf799471eba6793cf1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minso-q38-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

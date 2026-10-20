@@ -1,0 +1,233 @@
+{
+ "question_id": "yobi-2025-minso-q31",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q31-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。22条2項の再移送の禁止は、移送の理由となった事由と同じ事由による再移送を禁じるものと解されており、別の事由による再移送まで禁じるものではないとされている。",
+   "body": "決め手は「別の事由によっても」という部分である。22条1項は「確定した移送の裁判は、移送を受けた裁判所を拘束する。」と定め、同条2項は「移送を受けた裁判所は、更に事件を他の裁判所に移送することができない。」と定める。これらは、移送の裁判をめぐって裁判所間で事件がたらい回しにされることを防ぐための規定である。そのため、拘束力が及ぶのは移送の裁判で判断された事由についてであり、移送後に生じた事情など、移送の理由となった事由とは別の事由に基づいて更に移送すること（例えば、管轄違いによる移送を受けた裁判所が、17条に基づいて遅滞を避けるため等の理由で移送すること）は妨げられないと解されている。したがって、別の事由によっても再移送できないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "22",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定した移送の裁判は、移送を受けた裁判所を拘束する。",
+     "text_sha256": "c99d4635d28bc930d610431ca3bc07d5532621e03537b0b59ba14176377c4449",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "22",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "移送を受けた裁判所は、更に事件を他の裁判所に移送することができない。",
+     "text_sha256": "c99d4635d28bc930d610431ca3bc07d5532621e03537b0b59ba14176377c4449",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "17",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の著しい遅滞を避け、又は当事者間の衡平を図るため必要があると認めるときは、申立てにより又は職権で、訴訟の全部又は一部を他の管轄裁判所に移送することができる。",
+     "text_sha256": "0b2ccc0c4e558217f4b9052221a14aeb1238e99fce9bb06c999f86d96e3708d2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "再移送の禁止が同一事由に限られるとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2025-minso-q31-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q31-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。合意による専属管轄は法定の専属管轄と異なり、被告が管轄違いの抗弁を提出せずに本案について弁論をすれば12条により応訴管轄が生じるから、移送しなければならないわけではない。",
+   "body": "決め手は、合意による専属管轄が法定の専属管轄とは扱いが異なる点である。12条は「被告が第一審裁判所において管轄違いの抗弁を提出しないで本案について弁論をし、又は弁論準備手続において申述をしたときは、その裁判所は、管轄権を有する。」と定める。11条1項の合意で特定の裁判所を専属的な管轄裁判所と定めても、それは当事者の合意によるものであるから、被告が抗弁を出さずに本案について弁論すれば、訴えが提起された裁判所に応訴管轄が生じる。民事訴訟法も、20条1項で専属管轄から「当事者が第十一条の規定により合意で定めたもの」を除いており、合意による専属管轄を法定の専属管轄と同視していない。したがって、応訴管轄が生じた裁判所は管轄権を有し、合意した裁判所に移送しなければならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "12",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告が第一審裁判所において管轄違いの抗弁を提出しないで本案について弁論をし、又は弁論準備手続において申述をしたときは、その裁判所は、管轄権を有する。",
+     "text_sha256": "75f8d56ee368505dfe1ac9e02e64ab5a15598b33402eade659dde68f7fa27884",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者は、第一審に限り、合意により管轄裁判所を定めることができる。",
+     "text_sha256": "d112c06a4b13099945004a4b9349feac28ae0af80e4468dd139a1ae27c1b1910",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が第十一条の規定により合意で定めたもの",
+     "text_sha256": "1638587bee443b97e7ab63722ed8624e2f8b7eb4d033f07b0567695eed7531ff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minso-q31-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q31-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。18条により、簡易裁判所は、訴訟がその管轄に属する場合においても、相当と認めるときはその所在地を管轄する地方裁判所に移送することができる。",
+   "body": "決め手は「移送することはできない」という部分である。18条は、「簡易裁判所は、訴訟がその管轄に属する場合においても、相当と認めるときは、申立てにより又は職権で、訴訟の全部又は一部をその所在地を管轄する地方裁判所に移送することができる。」と定める（簡易裁判所の裁量移送）。複雑な事件などを地方裁判所で審理させるための規定である。したがって、訴訟が簡易裁判所の管轄に属する場合には地方裁判所に移送できないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "18",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "簡易裁判所は、訴訟がその管轄に属する場合においても、相当と認めるときは、申立てにより又は職権で、訴訟の全部又は一部をその所在地を管轄する地方裁判所に移送することができる。",
+     "text_sha256": "ba475f29d9faac8990db2290eb4999ae98814000424634f4ee67a90f7b423d4c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minso-q31-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q31-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。請求を200万円に拡張すると、訴訟の目的の価額が140万円を超え簡易裁判所の事物管轄に属しなくなるから、16条1項により管轄裁判所である地方裁判所に移送しなければならない。",
+   "body": "決め手は、拡張後の訴額が簡易裁判所の事物管轄を超える点である。裁判所法33条1項1号により、簡易裁判所が第一審の裁判権を有するのは「訴訟の目的の価額が百四十万円を超えない請求（行政事件訴訟に係る請求を除く。）」である。100万円の請求は簡易裁判所の管轄に属するが、200万円に拡張すると簡易裁判所の管轄に属しなくなる。そして16条1項は「裁判所は、訴訟の全部又は一部がその管轄に属しないと認めるときは、申立てにより又は職権で、これを管轄裁判所に移送する。」と定めるから、簡易裁判所は訴訟を管轄裁判所である地方裁判所に移送しなければならない。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "裁判所法",
+     "article": "33",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の目的の価額が百四十万円を超えない請求（行政事件訴訟に係る請求を除く。）",
+     "text_sha256": "59b209226c1ec4be24efdc8806eba95615b2b7cd2fd9acc69c4f03ab612e50ef",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "16",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、訴訟の全部又は一部がその管轄に属しないと認めるときは、申立てにより又は職権で、これを管轄裁判所に移送する。",
+     "text_sha256": "677f8d00ee757427df499604947d2433f64a63799f1a44473f3431b5fce746e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minso-q31-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q31-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。309条は、控訴裁判所が管轄違いを理由として第一審判決を取り消すときは、判決で事件を管轄裁判所に移送しなければならないと定めている。",
+   "body": "本肢は309条の文言どおりである。309条は「控訴裁判所は、事件が管轄違いであることを理由として第一審判決を取り消すときは、判決で、事件を管轄裁判所に移送しなければならない。」と定める。第一審判決を取り消した場合には、原則として事件を第一審裁判所に差し戻すことになるが、管轄違いを理由とする取消しの場合には、管轄のない原審に差し戻しても意味がないため、管轄裁判所に移送することとされている。移送の形式が決定ではなく「判決」である点にも注意する。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "309",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "控訴裁判所は、事件が管轄違いであることを理由として第一審判決を取り消すときは、判決で、事件を管轄裁判所に移送しなければならない。",
+     "text_sha256": "bce7b828be459288ba10625ebd979873faffeabbb0ee7096b4baad4f3b3c57cc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minso-q31-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,221 @@
+{
+ "question_id": "yobi-2025-minso-q43",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q43-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。民事訴訟法256条2項は、変更の判決は口頭弁論を経ないですると定めており、口頭弁論を経なければならないわけではない。",
+   "body": "決め手は、口頭弁論を経なければならないとする部分である。256条1項は、裁判所は判決に法令の違反があることを発見したときは、言渡し後一週間以内に限り変更の判決をすることができると定める。そのうえで同条2項は「変更の判決は、口頭弁論を経ないでする。」と定めている。また、同条1項ただし書は「判決を変更するため事件につき更に弁論をする必要があるとき」には変更の判決をすることができないとしており、変更の判決は記録上明らかな法令違反を簡易に是正するための制度である。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "256",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "変更の判決は、口頭弁論を経ないでする。",
+     "text_sha256": "895d6165c61ed764ade93bb997839fe468ae5ea7084731e235bc7d69ee3f3b10",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "256",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "判決を変更するため事件につき更に弁論をする必要があるとき",
+     "text_sha256": "895d6165c61ed764ade93bb997839fe468ae5ea7084731e235bc7d69ee3f3b10",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minso-q43-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q43-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。民事訴訟法257条1項は、判決の更正決定を「いつでも」することができると定めており、判決の確定後でもすることができる。",
+   "body": "決め手は、257条1項の「いつでも」という文言である。同項は「判決に計算違い、誤記その他これらに類する明白な誤りがあるときは、裁判所は、申立てにより又は職権で、いつでも更正決定をすることができる。」と定める。更正決定は判決の内容を実質的に変えるものではなく、表現上の明白な誤りを正すものにすぎないから、時期の制限は設けられていない。変更の判決が判決の確定によってできなくなる（256条1項ただし書）のと対比して押さえるとよい。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "257",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "判決に計算違い、誤記その他これらに類する明白な誤りがあるときは、裁判所は、申立てにより又は職権で、いつでも更正決定をすることができる。",
+     "text_sha256": "c1bc99a1c9e55180ced0eaf62990f531e2b9b042cc0f23ac5b7a99ddf1e6e042",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "256",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、判決が確定したとき",
+     "text_sha256": "895d6165c61ed764ade93bb997839fe468ae5ea7084731e235bc7d69ee3f3b10",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minso-q43-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q43-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。民事訴訟法259条1項は、財産権上の請求に関する判決について、仮執行の宣言を「申立てにより又は職権で」することができると定めており、申立てがなくても宣言できる。",
+   "body": "決め手は、申立てがなければ宣言できないとする部分である。259条1項は「財産権上の請求に関する判決については、裁判所は、必要があると認めるときは、申立てにより又は職権で、担保を立てて、又は立てないで仮執行をすることができることを宣言することができる。」と定める。このように、仮執行の宣言は当事者の申立てがなくても職権ですることができる。さらに、手形又は小切手による金銭の支払の請求等に関する判決については、同条2項により、裁判所は職権で担保を立てないで仮執行の宣言をしなければならないとされている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "259",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "財産権上の請求に関する判決については、裁判所は、必要があると認めるときは、申立てにより又は職権で、担保を立てて、又は立てないで仮執行をすることができることを宣言することができる。",
+     "text_sha256": "52f519f88179dbf07ea3321ff03ffd63e5ecf265d3703c880297499af35ae020",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "259",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判所は、職権で、担保を立てないで仮執行をすることができることを宣言しなければならない",
+     "text_sha256": "52f519f88179dbf07ea3321ff03ffd63e5ecf265d3703c880297499af35ae020",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minso-q43-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q43-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。民事訴訟法254条1項1号は、被告が原告の主張した事実を争わず何らの防御の方法も提出しない場合に請求を認容するときは、判決書に基づかないで判決を言い渡すことができると定めている（いわゆる調書判決）。",
+   "body": "決め手は、254条1項1号の場面に当たることである。同項は、同項各号の場合において原告の請求を認容するときは、判決の言渡しは前条の規定にかかわらず判決書に基づかないですることができるとし、1号に「被告が口頭弁論において原告の主張した事実を争わず、その他何らの防御の方法をも提出しない場合」を掲げる。本肢はこの場合に原告の請求を認容する判決の言渡しであるから、判決書の原本に基づかないですることができる。この場合、判決書の作成に代えて、裁判所書記官が主文、請求並びに理由の要旨などを口頭弁論期日の調書に記録する（同条2項）。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "254",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告が口頭弁論において原告の主張した事実を争わず、その他何らの防御の方法をも提出しない場合",
+     "text_sha256": "56b19be968617530472ed88349c2008e2d96f7ad4cb88e24f71d9f8780bd2b41",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "254",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当事者及び法定代理人、主文、請求並びに理由の要旨を、判決の言渡しをした口頭弁論期日の電子調書に記録させなければならない",
+     "text_sha256": "56b19be968617530472ed88349c2008e2d96f7ad4cb88e24f71d9f8780bd2b41",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "保存した現行の254条は、民事訴訟のIT化に関する改正後の文言で「電子判決書に基づかないですることができる」「電子調書に記録させなければならない」となっている。出題時点（2025年）の条文は「判決書の原本」「調書」の文言であったと考えられるが、調書判決を認める実質は変わらず、公式の○（正しい）と整合する。"
+   ],
+   "id": "exp-yobi-2025-minso-q43-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q43-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。民事訴訟法251条2項は、判決の言渡しは当事者が在廷しない場合においてもすることができると定めている。",
+   "body": "決め手は、251条2項である。同項は「判決の言渡しは、当事者が在廷しない場合においても、することができる。」と定める。判決の言渡しは当事者の訴訟行為を要しない裁判所の行為であるから、当事者全員が言渡期日に欠席していても言渡しをすることができる。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "251",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "判決の言渡しは、当事者が在廷しない場合においても、することができる。",
+     "text_sha256": "7167c7bccee608a539efc6460082c5f71c53756a21bca7201e25c2807e22399b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minso-q43-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,291 @@
+{
+ "question_id": "yobi-2025-shoho-q30",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q30-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。支払人の名称は為替手形の必要的記載事項である。",
+   "body": "手形法1条は、為替手形に記載すべき事項として、3号に「支払ヲ為スベキ者（支払人）ノ名称」を掲げる。そして、同条に掲げる事項のいずれかを欠く証券は、同条2項以下の救済規定に当たる場合を除き「為替手形タル効力ヲ有セズ」とされる（手形法2条1項）。支払人の名称の欠缺を補う救済規定はないから、支払人の名称は必ず記載しなければならない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "1",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支払ヲ為スベキ者（支払人）ノ名称",
+     "text_sha256": "f14429d6941bf3ddf08bbdd0fe1a000bf735e1ad0b050c3e3fa1036d0e6c1858",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条ニ掲グル事項ノ何レカヲ欠ク証券ハ為替手形タル効力ヲ有セズ",
+     "text_sha256": "ebbc672bd948b5487c0a3de7386574798393e7f27449bd8d2d4c86aa734c5cc7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q30-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q30-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。為替手形の支払人を銀行に限る規定はない。支払人が銀行であることを予定しているのは小切手である。",
+   "body": "手形法1条3号は、為替手形の記載事項として「支払ヲ為スベキ者（支払人）ノ名称」を求めるだけで、支払人の資格を限定していない。これに対し、小切手については、小切手法3条が「振出人ノ処分シ得ル資金アル銀行ニ宛テ」振り出すべきものとしている（ただし、これに従わなくても小切手としての効力は妨げられない）。為替手形の支払人は銀行に限られないから、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "1",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支払ヲ為スベキ者（支払人）ノ名称",
+     "text_sha256": "f14429d6941bf3ddf08bbdd0fe1a000bf735e1ad0b050c3e3fa1036d0e6c1858",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "振出人ノ処分シ得ル資金アル銀行ニ宛テ",
+     "text_sha256": "86f1c23d895f30248f160d10978442fbde5c558e3221fcf6d0518178187ebda7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "小切手法",
+     "article": "3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "但シ此ノ規定ニ従ハザルトキト雖モ証券ノ小切手タル効力ヲ妨ゲズ",
+     "text_sha256": "86f1c23d895f30248f160d10978442fbde5c558e3221fcf6d0518178187ebda7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q30-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q30-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。為替手形は、振出人自身を支払人とする自己宛てで振り出すことができる。",
+   "body": "手形法3条2項は、「為替手形ハ振出人ノ自己宛ニテ之ヲ振出スコトヲ得」と定める。振出人と支払人が同一人である自己宛為替手形も有効であり、本肢はこの規定どおりである。なお、振出人が自分を受取人とする自己指図為替手形も認められている（同条1項）。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "3",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "為替手形ハ振出人ノ自己宛ニテ之ヲ振出スコトヲ得",
+     "text_sha256": "c968213a34bb681000083cbf68b3aa31f443f0cda33f19e499b92626ac2e2bbf",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "為替手形ハ振出人ノ自己指図ニテ之ヲ振出スコトヲ得",
+     "text_sha256": "c968213a34bb681000083cbf68b3aa31f443f0cda33f19e499b92626ac2e2bbf",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q30-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q30-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。手形保証は手形又は補箋にしなければならず、保証人の署名が必要である。",
+   "body": "約束手形には為替手形の保証に関する規定が準用される（手形法77条3項）。手形法31条1項は「保証ハ為替手形又ハ補箋ニ之ヲ為スベシ」とし、同条2項は保証を「保証」その他同一の意義を有する文字で表示して「保証人署名スベシ」とする。表面の単なる署名も保証とみなされる（同条3項）が、いずれにしても手形又は補箋への保証人の署名が必要である。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "保証ニ関スル規定（第三十条乃至第三十二条）モ亦之ヲ約束手形ニ準用ス",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "31",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保証ハ為替手形又ハ補箋ニ之ヲ為スベシ",
+     "text_sha256": "fe7deeaf95c3fa2cf80fd8d9ee429d6322097d82d3c35e467e1e86b1136cfb28",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "31",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "保証人署名スベシ",
+     "text_sha256": "fe7deeaf95c3fa2cf80fd8d9ee429d6322097d82d3c35e467e1e86b1136cfb28",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "31",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "為替手形ノ表面ニ為シタル単ナル署名ハ之ヲ保証ト看做ス",
+     "text_sha256": "fe7deeaf95c3fa2cf80fd8d9ee429d6322097d82d3c35e467e1e86b1136cfb28",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q30-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q30-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。手形保証は、被保証債務が方式の瑕疵以外の事由で無効となっても有効であり（手形保証の独立性）、保証人は手形金の支払義務を負う。",
+   "body": "手形法32条2項は、「保証ハ其ノ担保シタル債務ガ方式ノ瑕疵ヲ除キ他ノ如何ナル事由ニ因リテ無効ナルトキト雖モ之ヲ有効トス」と定め、この規定は約束手形にも準用される（手形法77条3項）。振出人が未成年者であることを理由とする取消しは、手形の方式の瑕疵ではなく実質的な事由であるから、振出人の債務が失われても手形保証は有効なままである。手形法7条も、行為能力のない者の署名があっても「他ノ署名者ノ債務ハ之ガ為其ノ効力ヲ妨ゲラルルコトナシ」としている（手形法77条2項で準用）。したがって、保証人は手形金を支払う義務を負い、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "32",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "保証ハ其ノ担保シタル債務ガ方式ノ瑕疵ヲ除キ他ノ如何ナル事由ニ因リテ無効ナルトキト雖モ之ヲ有効トス",
+     "text_sha256": "e729c18a37de6c43bef9acade61d45c5196a68e45f896b867c72d821016ba80d",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "保証ニ関スル規定（第三十条乃至第三十二条）モ亦之ヲ約束手形ニ準用ス",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他ノ署名者ノ債務ハ之ガ為其ノ効力ヲ妨ゲラルルコトナシ",
+     "text_sha256": "2327d558154e2981465df56864220abd382ddd392e754718618aeb44f4581b11",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第七条ニ規定スル条件ノ下ニ為サレタル署名ノ効果",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q30-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

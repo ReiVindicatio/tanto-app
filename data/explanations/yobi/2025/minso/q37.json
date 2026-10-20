@@ -1,0 +1,210 @@
+{
+ "question_id": "yobi-2025-minso-q37",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q37-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。関連性の要件は原告の利益を守るための要件と解されており、原告が異議を述べずに応訴すれば反訴は適法となるから、「適法とならない」とする点が誤り。",
+   "body": "146条1項本文は、反訴を「本訴の目的である請求又は防御の方法と関連する請求を目的とする場合に限り」提起できるとする。この関連性の要件は、関連のない請求の審理に巻き込まれないという原告の利益を保護するためのものと解されている。そのため、関連性を欠く反訴であっても、原告が異議を述べずに応訴したときは、反訴は適法になると解されている（判例あり（要確認））。本肢は、応訴しても反訴は適法とならないとする点で誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "146",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "本訴の目的である請求又は防御の方法と関連する請求を目的とする場合に限り",
+     "text_sha256": "c23f7c4ce465c3da64ad908f5e7b215e2ddf1de42a3d9fbb46390662ff1a1ddc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（関連性の要件を原告の利益保護のための要件とし、応訴によって適法になるとする理解）",
+    "応訴によって適法になるとした判例は courts.go.jp で確認できなかったため、要確認とした"
+   ],
+   "id": "exp-yobi-2025-minso-q37-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q37-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。本訴が取り下げられても反訴は当然には消滅せず、取り下げたものとみなす規定はない。法は反訴の取下げに原告の同意を要しないとするだけである。",
+   "body": "反訴は、いったん提起されれば独立の訴えであり（146条4項は「反訴については、訴えに関する規定による。」とする）、本訴が取り下げられても反訴の係属は当然には失われない。本訴の取下げがあった場合について法が定めるのは、261条2項ただし書の「ただし、本訴の取下げがあった場合における反訴の取下げについては、この限りでない。」、つまり被告が反訴を取り下げるのに原告の同意を要しないということだけである。反訴の取下げがあったものとみなす規定はないから、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "146",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "反訴については、訴えに関する規定による。",
+     "text_sha256": "c23f7c4ce465c3da64ad908f5e7b215e2ddf1de42a3d9fbb46390662ff1a1ddc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "261",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "ただし、本訴の取下げがあった場合における反訴の取下げについては、この限りでない。",
+     "text_sha256": "fc4d05f19d3ea83f0aa54ffe746161170d1803be7f427b32c03008b4b9e6f247",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minso-q37-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q37-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。第一審で賃借権の存否が審理・判断されていた本肢の場合には、控訴審で賃借権存在確認の反訴を提起するのに相手方の同意を要しないとするのが判例である。",
+   "body": "300条1項は「控訴審においては、反訴の提起は、相手方の同意がある場合に限り、することができる。」と定める。この同意の要件は、反訴について第一審の審理を受ける相手方の利益（審級の利益）を守るためのものと解されている。判例は、原告の土地明渡請求に対し被告が第一審で賃借権を主張し、第一審がその賃借権の存在を認めた場合に、控訴審で被告が反訴として賃借権存在確認の訴えを提起するには、相手方の同意を要しないとした。賃借権の存否は第一審ですでに審理・判断されており、原告の審級の利益を害さないからである。本肢はこの判例の事案そのものであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "300",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "控訴審においては、反訴の提起は、相手方の同意がある場合に限り、することができる。",
+     "text_sha256": "81607eea8be75a5acaaf581adaf28c0d715167c453f6629427aacbcc1279c843",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "建物収去、土地明渡並びに反訴請求事件",
+     "court": "最高裁判所第一小法廷",
+     "date": "1963-02-21",
+     "holding": "土地明渡請求に対し被告が第一審で賃借権を主張し、第一審がその存在を認めた場合、控訴審で被告が反訴として賃借権存在確認の訴えを提起するには相手方の同意を要しない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53693/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "同意の要件の趣旨を審級の利益の保護とする点は解釈による"
+   ],
+   "id": "exp-yobi-2025-minso-q37-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q37-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。274条1項のとおり、簡易裁判所は、相手方（原告）の申立てがあれば、本訴及び反訴を地方裁判所に移送しなければならない。",
+   "body": "274条1項は「被告が反訴で地方裁判所の管轄に属する請求をした場合において、相手方の申立てがあるときは、簡易裁判所は、決定で、本訴及び反訴を地方裁判所に移送しなければならない。」と定める。本肢の「原告の申立て」は、反訴を提起した被告の相手方である原告の申立てであり、この条文の場面に当たる。移送は義務的であり、移送の対象は反訴だけでなく本訴及び反訴の両方である。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "274",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告が反訴で地方裁判所の管轄に属する請求をした場合において、相手方の申立てがあるときは、簡易裁判所は、決定で、本訴及び反訴を地方裁判所に移送しなければならない。",
+     "text_sha256": "815448db5f9c6792640a4725bf0bed4830d524056e0330028d722f0a051d4cc5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minso-q37-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minso-q37-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、併合要件を欠く反訴は終局判決で却下すべきであるとしており、弁論を分離して独立の訴えとして審理しなければならないとはしていない。",
+   "body": "146条1項は、関連性などの要件を満たす「場合に限り」反訴を提起できるとしており、これらは本訴への併合の要件である。判例は、反訴が併合要件を欠く場合には、終局判決をもってこれを却下すべきであるとした。反訴は係属中の訴訟に併合して審理を求める訴えであり、併合要件は反訴の訴訟要件でもあると解されているからである。したがって、反訴が独立の訴えとしての要件を備えていても、弁論を分離して審理しなければならないわけではなく、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "146",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "本訴の目的である請求又は防御の方法と関連する請求を目的とする場合に限り",
+     "text_sha256": "c23f7c4ce465c3da64ad908f5e7b215e2ddf1de42a3d9fbb46390662ff1a1ddc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "国家賠償請求事件",
+     "court": "最高裁判所第一小法廷",
+     "date": "1966-11-10",
+     "holding": "反訴が併合要件を欠く場合には、終局判決をもってこれを却下すべきである。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53892/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "併合要件を反訴の訴訟要件とする位置づけは解釈による"
+   ],
+   "id": "exp-yobi-2025-minso-q37-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
