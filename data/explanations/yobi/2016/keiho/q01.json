@@ -1,0 +1,201 @@
+{
+ "question_id": "yobi-2016-keiho-q01",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-keiho-q01-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、国家的・公共的法益についても、公的機関の有効な活動を期待し得ない極めて緊迫した場合には例外的に正当防衛が許されるとしている。",
+   "body": "誤りは、国家的法益を防衛するための正当防衛が成立する「余地はない」とする部分である。刑法36条1項は「急迫不正の侵害に対して、自己又は他人の権利を防衛するため、やむを得ずにした行為は、罰しない。」と定めており、防衛の対象を個人的法益に限る文言はない。最高裁昭和24年8月18日判決は、国家的、国民的、公共的法益についても正当防衛が許される場合があることを認めたうえで、その防衛は本来国家・公共機関の任務であるから、公的機関の有効な活動を期待し得ない極めて緊迫した場合に限り例外的に許容されるとした。このように、成立範囲は狭いものの、成立の余地自体は否定されていない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "急迫不正の侵害に対して、自己又は他人の権利を防衛するため、やむを得ずにした行為は、罰しない。",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "公益のための正当防衛の限界に関する判決（傷害被告事件）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1949-08-18",
+     "holding": "国家的・国民的・公共的法益についても正当防衛が許される場合があるが、それは国家公共の機関の有効な公的活動を期待し得ない極めて緊迫した場合に限り例外的に許容される。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55481/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2016-keiho-q01-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-keiho-q01-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。第三者の所有物を損壊する点は、侵害者以外の者の法益を害するもので、正当防衛ではなく緊急避難の問題として扱う余地があると解されている。",
+   "body": "誤りは、第三者の所有物を損壊した行為について緊急避難が成立する「余地はない」とする部分である。正当防衛（刑法36条1項）は「急迫不正の侵害に対して」その侵害者に向けた反撃を正当化するものであるから、侵害と無関係な第三者の所有物を損壊した部分は、正当防衛の枠では説明しにくい。他方、37条1項は「自己又は他人の生命、身体、自由又は財産に対する現在の危難を避けるため、やむを得ずにした行為は、これによって生じた害が避けようとした害の程度を超えなかった場合に限り、罰しない。」と定め、危難と無関係な第三者の法益を害する行為を対象とする。そのため、第三者の物の損壊については、補充性や害の均衡の要件を満たせば緊急避難が成立しうると解されている。したがって、緊急避難の成立の余地がないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "急迫不正の侵害に対して",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己又は他人の生命、身体、自由又は財産に対する現在の危難を避けるため、やむを得ずにした行為は、これによって生じた害が避けようとした害の程度を超えなかった場合に限り、罰しない。",
+     "text_sha256": "ce24f32acb83ba3817ba41ffeb256a9de0ddcfeef3658de5cd72e5d581fd8049",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "第三者の物を用いた反撃による損壊を緊急避難の問題とする点は、解釈による"
+   ],
+   "id": "exp-yobi-2016-keiho-q01-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-keiho-q01-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、相手の加害行為に憤激・逆上して反撃を加えたからといって、直ちに防衛の意思を欠くものではないとしている。",
+   "body": "誤りは、逆上して反撃した場合には正当防衛が成立する「余地はない」とする部分である。刑法36条1項は「自己又は他人の権利を防衛するため」の行為であることを求めており、判例は正当防衛の成立に防衛の意思を必要としている。しかし判例は、防衛の意思を、攻撃に対する憤激や逆上と併存しうるものと理解しており、逆上して反撃したことだけで直ちに防衛の意思が否定されるわけではないとしている（判例あり（要確認））。防衛に名を借りて積極的に加害する意思で行為したような場合でなければ、防衛の意思は認められうる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己又は他人の権利を防衛するため",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "憤激・逆上と防衛の意思に関する最高裁判決は、courts.go.jp の判決ページで確認できなかったため、cases に入れず「判例あり（要確認）」とした"
+   ],
+   "id": "exp-yobi-2016-keiho-q01-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-keiho-q01-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。「不正」の侵害とは違法な侵害をいい、侵害者に故意があることは必要ないから、過失に基づく侵害に対しても正当防衛は成立しうる。",
+   "body": "誤りは、侵害が相手方の過失に基づくものであれば正当防衛が成立する「余地はない」とする部分である。刑法36条1項は「急迫不正の侵害に対して」と定めるだけで、侵害が故意によるものであることを要求していない。ここでいう「不正」とは違法であることを意味し、侵害者の故意・過失の別は問わないと解されている。過失による行為であっても他人の法益を違法に侵害するものであれば「不正の侵害」に当たるから、これに対する反撃に正当防衛が成立する余地はある。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "急迫不正の侵害に対して",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「不正」を違法と解し、過失による侵害も含むとする点は、解釈による"
+   ],
+   "id": "exp-yobi-2016-keiho-q01-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-keiho-q01-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。正当防衛が成立する行為は違法ではなく「不正の侵害」に当たらないから、これに対して正当防衛は成立しない。",
+   "body": "本肢のポイントは、正当防衛行為が「不正」の侵害に当たるかである。刑法36条1項は、正当防衛の要件として「急迫不正の侵害」に対する行為であることを求めている。正当防衛が成立する行為は同項により「罰しない」とされる適法な行為であり、違法な侵害、すなわち「不正」の侵害には当たらないと解されている。そのため、正当防衛行為に対する反撃について正当防衛が成立する余地はない（緊急避難の成否は別に問題となりうる）。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "急迫不正の侵害に対して、自己又は他人の権利を防衛するため、やむを得ずにした行為は、罰しない。",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "正当防衛行為が「不正」に当たらないとする点は、解釈による"
+   ],
+   "id": "exp-yobi-2016-keiho-q01-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,206 @@
+{
+ "question_id": "yobi-2016-keiho-q08",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-keiho-q08-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。「公然」は不特定又は多数の人が認識できる状態をいい、実際に誰かが気付いたことは要しないので、公然わいせつ罪は成立する。",
+   "body": "決め手は「実際には，それに気付いた人はいなかった」ことが公然性を否定するかどうかである。刑法174条は「公然とわいせつな行為をした者」を処罰する。判例は、「公然」とは不特定又は多数の人が認識することのできる状態をいうと解しており、現実に認識されたことまでは必要としないと解されている（判例あり（要確認））。人通りの多い駅構内で性器を露出すれば、不特定又は多数の人が認識できる状態にあるから、気付いた人がいなくても公然わいせつ罪が成立する。したがって、成立しないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "174",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公然とわいせつな行為をした者は、六月以下の拘禁刑若しくは三十万円以下の罰金又は拘留若しくは科料に処する。",
+     "text_sha256": "59b93cdb1934f2cfe239c65d0aa2aaea4c41784e253ac72e647a4ff00429414c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「公然」の意義と現実の認識が不要である点は判例・解釈による。判例は検索で courts.go.jp の判決ページを確認できなかったため要確認とした"
+   ],
+   "id": "exp-yobi-2016-keiho-q08-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-keiho-q08-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。有償頒布目的所持罪の「目的」は日本国内で頒布する目的をいうと解されており、国外で販売する目的での所持には同罪は成立しない。",
+   "body": "決め手は「日本国外で販売する目的」が刑法175条2項の目的に当たるかどうかである。同項は「有償で頒布する目的で、前項の物を所持し、又は同項の電磁的記録を保管した者」を処罰する。判例は、本条が日本国内における健全な性風俗を保護するものであることから、この目的は日本国内で有償頒布する目的をいい、国外で販売する目的にとどまる場合は同罪は成立しないと解している（判例あり（要確認））。よって、国内で所持していても甲に同罪は成立せず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "175",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "有償で頒布する目的で、前項の物を所持し、又は同項の電磁的記録を保管した者も、同項と同様とする。",
+     "text_sha256": "74bb23b73dc4539cdf976577486256de7cd3fa74eb7ef2f2f58c2627cbb9892f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "目的を国内頒布目的に限る点は判例による。courts.go.jp の判決ページを2回の検索で確認できなかったため要確認とした"
+   ],
+   "id": "exp-yobi-2016-keiho-q08-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-keiho-q08-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。「頒布」は不特定又は多数の者に交付することをいうと解されており、特定の友人1人にお礼として1枚贈っただけでは頒布に当たらない。",
+   "body": "決め手は、特定の1人への1回限りの贈与が「頒布」に当たるかどうかである。刑法175条1項は、わいせつな物を「頒布し、又は公然と陳列した者」を処罰する。「頒布」とは、有償・無償を問わず不特定又は多数の者に交付することをいうと解されており、特定少数の者に対する交付であっても反復の意思があれば頒布に当たりうるとされる。本肢の甲は、土産のお礼として友人乙1人にDVD1枚を贈っただけで、不特定又は多数の者への交付やその反復の意思をうかがわせる事情はないから、わいせつ物頒布罪は成立しない。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "175",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "わいせつな文書、図画、電磁的記録に係る記録媒体その他の物を頒布し、又は公然と陳列した者は",
+     "text_sha256": "74bb23b73dc4539cdf976577486256de7cd3fa74eb7ef2f2f58c2627cbb9892f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「頒布」の意義は解釈による"
+   ],
+   "id": "exp-yobi-2016-keiho-q08-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-keiho-q08-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。不特定多数の通行人を勧誘して集めた客に見せた以上、室内で外部との出入りを遮断し、観客が5名であっても「公然と陳列」に当たる。",
+   "body": "決め手は、密閉した室内で少人数に見せたことが公然性を否定するかどうかである。刑法175条1項はわいせつな物を「公然と陳列した者」を処罰し、「公然」とは不特定又は多数の人が認識できる状態をいうと解されている。判例は、不特定多数の者を勧誘して集めた客にわいせつな映画等を見せた場合には、外部との交通を遮断した室内で観客が少人数であっても公然性が認められるとしている（判例あり（要確認））。甲は不特定多数の通行人を勧誘して客を集め、有料で見せているから、5名の客が特定されていても不特定の者が観覧できる状態に置いたといえ、わいせつ物公然陳列罪が成立する。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "175",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "わいせつな文書、図画、電磁的記録に係る記録媒体その他の物を頒布し、又は公然と陳列した者は",
+     "text_sha256": "74bb23b73dc4539cdf976577486256de7cd3fa74eb7ef2f2f58c2627cbb9892f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公然性の判断は判例・解釈による。courts.go.jp の判決ページを確認できなかったため要確認とした"
+   ],
+   "id": "exp-yobi-2016-keiho-q08-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-keiho-q08-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。不特定多数の者の面前で強いてわいせつな行為をすれば、強制わいせつ罪とともに公然わいせつ罪も成立し、両罪は観念的競合となる。",
+   "body": "決め手は、強制わいせつ罪が成立する場合に公然わいせつ罪が別に成立するかどうかである。強制わいせつ罪（出題当時の刑法176条。現行法では不同意わいせつ罪）は個人の性的自由を、公然わいせつ罪（174条）は社会の性風俗をそれぞれ保護するものと解されており、保護法益が異なるから、一方が他方に吸収されることはない。海水浴場で不特定多数の者の面前で乙女の衣服をはぎ取るなどしてわいせつな行為をすれば、174条の「公然とわいせつな行為をした者」にも当たり、両罪が成立する。両罪は1個の行為によるから、54条1項の「一個の行為が二個以上の罪名に触れ」る場合として観念的競合になると解されている（判例あり（要確認））。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "174",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公然とわいせつな行為をした者",
+     "text_sha256": "59b93cdb1934f2cfe239c65d0aa2aaea4c41784e253ac72e647a4ff00429414c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "176",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "暴行若しくは脅迫を用いること又はそれらを受けたこと。",
+     "text_sha256": "2a2ce884fc0987ceeef683c06ac8e423d71456fcadb9c194192eea19cdc1cd7c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "法改正：出題時（2016年）の刑法176条は強制わいせつ罪であったが、2023年の改正で不同意わいせつ罪に改められた。保存した本文は現行法のため、176条は現行の1項1号の文言を引いた。両罪が成立し観念的競合となる結論は改正後も変わらないと解される",
+    "両罪の成立と観念的競合は判例・解釈による。判例は courts.go.jp で確認していないため要確認とした"
+   ],
+   "id": "exp-yobi-2016-keiho-q08-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

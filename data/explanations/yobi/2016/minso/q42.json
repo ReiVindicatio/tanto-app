@@ -1,0 +1,190 @@
+{
+ "question_id": "yobi-2016-minso-q42",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minso-q42-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。請求の認諾は口頭弁論等の期日においてすればよく、相手方（原告）が出頭していることは要件とされていない。",
+   "body": "本肢のポイントは、相手方が欠席した期日でも認諾ができるかである。民事訴訟法266条1項は「請求の放棄又は認諾は、口頭弁論等の期日においてする。」と定めるだけで、相手方の出頭を要件としていない。請求の認諾は被告が原告の請求に理由があることを認める一方的な陳述であり、相手方の同意も要しないから、相手方が出頭していない期日においてもすることができると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "266",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "請求の放棄又は認諾は、口頭弁論等の期日においてする。",
+     "text_sha256": "16d4d91b64fd2724381fa4eecd4c74836759aeeef4b4f4e0217f6d3a3ffa115d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "相手方の出頭が不要である点は、解釈による"
+   ],
+   "id": "exp-yobi-2016-minso-q42-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minso-q42-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。法定代理人が請求の放棄をするには、民事訴訟法32条2項1号により特別の授権が必要である。",
+   "body": "本肢は条文どおりである。民事訴訟法32条2項は「被保佐人、被補助人又は後見人その他の法定代理人が次に掲げる訴訟行為をするには、特別の授権がなければならない。」と定め、同項1号は「訴えの取下げ、和解、請求の放棄若しくは認諾」を掲げる。請求の放棄は訴訟を終了させ、確定判決と同一の効力を生じさせる重大な行為であるため、特別の授権が求められている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "32",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "被保佐人、被補助人又は後見人その他の法定代理人が次に掲げる訴訟行為をするには、特別の授権がなければならない。",
+     "text_sha256": "6743afa73d4411fc2359c96c1dca3290c1442d229d6986f00480332d3d5643d5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "32",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "訴えの取下げ、和解、請求の放棄若しくは認諾",
+     "text_sha256": "6743afa73d4411fc2359c96c1dca3290c1442d229d6986f00480332d3d5643d5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-minso-q42-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minso-q42-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。請求の認諾は無条件でしなければならず、反対給付の履行を条件とする認諾はできないと解されている。",
+   "body": "誤りは、相手方の反対給付の履行を「条件にして」認諾できるとする部分である。請求の認諾は、電子調書に記録されると民事訴訟法267条1項により「確定判決と同一の効力を有する」ことになり、訴訟を終了させる訴訟行為である。訴訟行為に条件を付けると手続が不安定になるため、認諾は請求をそのまま無条件に認めるものでなければならないと解されている。被告が反対給付との引換えを主張したいのであれば、認諾ではなく、抗弁として主張して引換給付判決を求めるか、和解によることになる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "267",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所書記官が、和解又は請求の放棄若しくは認諾について電子調書を作成し、これをファイルに記録したときは、その記録は、確定判決と同一の効力を有する。",
+     "text_sha256": "5bff013f863e84860a0a1588b4dcfbb058f5ca29e223b5ab659be98aefffb0ee",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "条件付きの認諾ができない点は、解釈による",
+    "267条1項は出題後の改正で「調書に記載」から「電子調書を作成し、これをファイルに記録」に変わっているが、確定判決と同一の効力を有する点は変わらず、本肢の結論に影響しない"
+   ],
+   "id": "exp-yobi-2016-minso-q42-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minso-q42-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。放棄の書面を提出した当事者が期日に出頭しないときは、裁判所はその旨の陳述をしたものとみなすことができる（民事訴訟法266条2項）。",
+   "body": "誤りは、期日に出席して陳述しなければ放棄の効力が「生じない」とする部分である。民事訴訟法266条2項は「請求の放棄又は認諾をする旨の書面を提出した当事者が口頭弁論等の期日に出頭しないときは、裁判所又は受命裁判官若しくは受託裁判官は、その旨の陳述をしたものとみなすことができる。」と定める。したがって、放棄の書面を提出した当事者が期日に出席して陳述しなくても、陳述擬制によって請求の放棄の効力を生じさせることができる。よって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "266",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "請求の放棄又は認諾をする旨の書面を提出した当事者が口頭弁論等の期日に出頭しないときは、裁判所又は受命裁判官若しくは受託裁判官は、その旨の陳述をしたものとみなすことができる。",
+     "text_sha256": "16d4d91b64fd2724381fa4eecd4c74836759aeeef4b4f4e0217f6d3a3ffa115d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-minso-q42-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minso-q42-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。請求の認諾は本案判決に代わるものであるから、訴訟要件を欠く訴えにおいては認諾をすることができず、訴えは却下されると解されている。",
+   "body": "誤りは、訴訟要件を欠く訴えでも認諾が「できる」とする部分である。請求の認諾は、電子調書に記録されると民事訴訟法267条1項により「確定判決と同一の効力を有する」ものとなり、請求認容の本案判決と同様の効果を持つ。本案判決は訴訟要件が備わっていなければすることができないから、それに代わる認諾も、訴訟要件を欠く訴えにおいてはすることができず、裁判所は訴えを却下すべきであると解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "267",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所書記官が、和解又は請求の放棄若しくは認諾について電子調書を作成し、これをファイルに記録したときは、その記録は、確定判決と同一の効力を有する。",
+     "text_sha256": "5bff013f863e84860a0a1588b4dcfbb058f5ca29e223b5ab659be98aefffb0ee",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "訴訟要件を欠く訴えで認諾ができない点は、解釈による（リード文は「判例の趣旨に照らし」とするが、該当する判例は確認していない）"
+   ],
+   "id": "exp-yobi-2016-minso-q42-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
