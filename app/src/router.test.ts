@@ -3,7 +3,7 @@ import { parse, tabOf, toPath } from "./router";
 
 describe("router（T025）", () => {
   it("URL と画面の対応（行きと帰りが一致する）", () => {
-    const routes = [{ name: "home" }, { name: "subjects" }, { name: "subject", subject: "minpo" }, { name: "me" }, { name: "play" }] as const;
+    const routes = [{ name: "home" }, { name: "subjects" }, { name: "subject", subject: "minpo" }, { name: "me" }, { name: "play" }, { name: "privacy" }, { name: "terms" }] as const;
     for (const r of routes) expect(parse(toPath(r))).toEqual(r);
   });
 
@@ -17,5 +17,7 @@ describe("router（T025）", () => {
     expect(tabOf({ name: "subject", subject: "keiho" })).toBe("subjects");
     expect(tabOf({ name: "play" })).toBeNull();
     expect(tabOf({ name: "me" })).toBe("me");
+    expect(tabOf({ name: "privacy" })).toBe("me"); // プライバシーポリシー・利用規約はマイページの続き（T040）
+    expect(tabOf({ name: "terms" })).toBe("me");
   });
 });

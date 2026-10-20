@@ -1,7 +1,8 @@
 import { useMemo, useState } from "react";
-import type { DataSet, Statement } from "./types";
+import type { DataSet, Explanation, Statement } from "./types";
 import QuestionBody, { Context } from "./QuestionBody";
 import ExplanationView from "./ExplanationView";
+import ReportLink from "./ReportLink";
 import LawNote from "./LawNote";
 import { shuffle } from "./shuffle";
 import { recordAnswer } from "./learning";
@@ -160,6 +161,7 @@ export default function StatementDrill({
               出典の位置：{o.examName} {q.exam.era} {o.subjectName} 第{q.number}問
               {s.sub !== undefined && ` 小問${q.sub_questions[s.sub].marker}`} 肢{s.label}
             </div>
+            <ReportLink target={s.id} context={reportContext(expById.get(s.id))} />
             {s.same_as && s.same_as.length > 0 && (
               <div className="muted small same-as">
                 同じ肢：{s.same_as.map((x) => `${x.exam} ${x.era} 第${x.number}問 肢${x.label}`).join("・")}
@@ -188,4 +190,9 @@ export default function StatementDrill({
       )}
     </section>
   );
+}
+
+/** 誤り報告に自動で付ける情報（T040）：どの版の解説を見て報告したか */
+function reportContext(e: Explanation | undefined): Record<string, unknown> {
+  return { screen: "statement", explanation: e ? { model: e.model, prompt_version: e.prompt_version, generated_at: e.generated_at } : null };
 }

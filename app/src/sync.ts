@@ -5,13 +5,14 @@
 // - 送る（flush）：回答のたびではなく、ためて送る。未送信が FLUSH_COUNT 件たまったとき、最初の未送信から FLUSH_DELAY_MS たったとき、
 //   画面を隠したとき（flushOnHide）
 // - 受け取る（pull）：起動時・ログイン時・オンライン復帰時（sync）と、画面に戻ったとき（前回から PULL_INTERVAL_MS 以上たっていれば）だけ
-import type { ApiClient } from "./api";
+import { RateLimitedError, type ApiClient, type Report } from "./api";
 import type { AuthClient, User } from "./auth";
 import type { Answer, LocalStorageStore, RecordStore } from "./store";
 
 const OUTBOX = "tanto.outbox.v1"; // 未送信の回答
 const CURSOR = "tanto.sync.cursor.v1"; // サーバーから受け取った最後の received_at
 const LINKED = "tanto.sync.user.v1"; // この端末の記録を引き継いだアカウント
+const REPORTS = "tanto.reports.outbox.v1"; // 未送信の誤り報告（T040）
 const BATCH = 1000;
 const OVERLAP_MS = 5 * 60 * 1000; // 受け取りの取りこぼしを防ぐため、前回の続きより少し前から取り直す（重複は除く）
 
@@ -20,6 +21,9 @@ export const FLUSH_DELAY_MS = 60 * 1000;
 export const PULL_INTERVAL_MS = 5 * 60 * 1000;
 /** 画面を閉じるときの送信（keepalive）は本文64KBまでなので、件数を絞る（残りは次の機会に送る） */
 export const HIDE_BATCH = 300;
+
+/** 退会の結果（T040） */
+export type DeleteResult = "done" | "server-failed" | "account-failed";
 
 export type SyncStatus = {
   user: User | null;
@@ -76,12 +80,18 @@ export class SyncedStore implements RecordStore {
     this.setOutbox(box);
     if (box.length >= FLUSH_COUNT) {
       void this.flush();
-    } else if (this.flushTimer === null) {
-      this.flushTimer = this.clock.setTimeout(() => {
-        this.flushTimer = null;
-        void this.flush();
-      }, FLUSH_DELAY_MS);
+    } else {
+      this.scheduleFlush();
     }
+  }
+
+  /** FLUSH_DELAY_MS 後に送る（すでに予約があれば何もしない） */
+  private scheduleFlush(): void {
+    if (this.flushTimer !== null) return;
+    this.flushTimer = this.clock.setTimeout(() => {
+      this.flushTimer = null;
+      void this.flush();
+    }, FLUSH_DELAY_MS);
   }
 
   getStatus(): SyncStatus {
@@ -135,11 +145,79 @@ export class SyncedStore implements RecordStore {
     this.cancelTimer();
     await this.auth.signOut();
     await this.local.clear();
-    for (const k of [OUTBOX, CURSOR, LINKED]) this.storage.removeItem(k);
-    this.lastPullAt = 0;
-    this.update({ user: null, pending: 0, state: "idle", lastSyncedAt: null, message: undefined });
+    this.clearDevice();
     await this.onPulled(0);
     return true;
+  }
+
+  /**
+   * 記録を全部消す（退会：T040）。ログイン中は、サーバーの記録 → アカウント → 端末の記録の順に消す。
+   * サーバーの記録を消せなければ何も消さずに止める。アカウントを消せなければ、記録は消してログアウトする
+   */
+  deleteAll(): Promise<DeleteResult> {
+    return this.enqueue(async () => {
+      this.cancelTimer();
+      if (this.auth.current()) {
+        try {
+          await this.api.deleteMe();
+        } catch {
+          return "server-failed" as const;
+        }
+        let result: DeleteResult = "done";
+        try {
+          await this.auth.deleteAccount();
+        } catch {
+          result = "account-failed";
+          await this.auth.signOut().catch(() => undefined);
+        }
+        await this.local.clear();
+        this.clearDevice();
+        await this.onPulled(0);
+        return result;
+      }
+      await this.local.clear();
+      this.clearDevice();
+      await this.onPulled(0);
+      return "done" as const;
+    });
+  }
+
+  /** 誤り報告を送る（T040）。送れなかったら端末に取っておき、次の同期のときに送り直す（画面にはエラーを出さない） */
+  report(r: Report): Promise<void> {
+    this.storage.setItem(REPORTS, JSON.stringify([...this.reportBox().filter((x) => x.id !== r.id), r]));
+    return this.enqueue(() => this.sendReportsOnce());
+  }
+
+  /** 未送信の報告の数（テスト用） */
+  pendingReports(): number {
+    return this.reportBox().length;
+  }
+
+  private async sendReportsOnce(): Promise<void> {
+    if (!this.auth.current()) return;
+    for (const r of this.reportBox()) {
+      try {
+        await this.api.report(r);
+      } catch {
+        return; // 通信できない・上限：残して次の機会に
+      }
+      this.storage.setItem(REPORTS, JSON.stringify(this.reportBox().filter((x) => x.id !== r.id)));
+    }
+  }
+
+  private reportBox(): Report[] {
+    try {
+      return JSON.parse(this.storage.getItem(REPORTS) ?? "[]") as Report[];
+    } catch {
+      return [];
+    }
+  }
+
+  /** 端末の同期の印を消し、ログアウトの状態にする（記録そのものは呼ぶ側で消す） */
+  private clearDevice(): void {
+    for (const k of [OUTBOX, CURSOR, LINKED, REPORTS]) this.storage.removeItem(k);
+    this.lastPullAt = 0;
+    this.update({ user: this.auth.current(), pending: 0, state: "idle", lastSyncedAt: null, message: undefined });
   }
 
   /** 操作を列に並べる。呼んだ時点より後に始まる処理を必ず1回行う（終わりかけの処理に相乗りしない） */
@@ -175,8 +253,15 @@ export class SyncedStore implements RecordStore {
         sentTotal += batch.length;
       }
       this.update({ state: "idle", lastSyncedAt: new Date(this.clock.now()).toISOString() });
+      if (!opts.keepalive) await this.sendReportsOnce();
       return this.outbox().length === 0;
     } catch (e) {
+      if (e instanceof RateLimitedError) {
+        // サーバーの使いすぎの制限（T040）：エラーとして見せず、少し待って送り直す（記録は未送信の箱に残っている）
+        this.update({ state: "idle", message: undefined });
+        this.scheduleFlush();
+        return false;
+      }
       this.update({ state: this.isOnline() ? "error" : "offline", message: e instanceof Error ? e.message : String(e) });
       return false;
     } finally {
@@ -202,6 +287,10 @@ export class SyncedStore implements RecordStore {
       if (news.length > 0) await this.onPulled(news.length);
       return news.length;
     } catch (e) {
+      if (e instanceof RateLimitedError) {
+        this.update({ state: "idle", message: undefined }); // 次に画面に戻ったときに受け取り直す
+        return 0;
+      }
       this.update({ state: this.isOnline() ? "error" : "offline", message: e instanceof Error ? e.message : String(e) });
       return 0;
     }

@@ -15,6 +15,8 @@ import Home from "./screens/Home";
 import SubjectList from "./screens/SubjectList";
 import SubjectPage from "./screens/SubjectPage";
 import MyPage from "./screens/MyPage";
+import { Privacy, Terms } from "./screens/Legal";
+import { SyncContext } from "./ReportLink";
 
 // 画面の切り替え（T025）。画面ごとに URL を持ち、下のタブ（ホーム・科目・マイページ）で行き来する
 export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedStore }) {
@@ -40,42 +42,46 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
   const attribution = play ? play.data.attribution : sets?.[0]?.attribution;
 
   return (
-    <div className={`page ${tab ? "with-tabs" : "playing"}`}>
-      <header className="appbar">
-        <button className="link brand" onClick={() => navigate({ name: "home" })}>
-          短答一問一答<span className="muted">（仮称・非公式）</span>
-        </button>
-        {sync && <SyncBadge sync={sync} />}
-      </header>
-      <main>
-        {error && <p className="error">データを読めませんでした：{error}</p>}
-        {!sets && !error && route.name !== "me" && <p className="muted">読み込み中…</p>}
-        {sets && route.name === "home" && <Home groups={groups} cardIds={cardIds} includePreReform={includePreReform} />}
-        {sets && route.name === "subjects" && <SubjectList groups={groups} cardIds={cardIds} />}
-        {group && (
-          <SubjectPage
-            group={group}
-            cardIds={cardIds}
-            filter={filter}
-            setFilter={setFilter}
-            includePreReform={includePreReform}
-            setIncludePreReform={setIncludePreReform}
-          />
-        )}
-        {route.name === "me" && <MyPage auth={auth} sync={sync} groups={groups} cardIds={cardIds} />}
-        {play?.kind === "statements" && (
-          <StatementDrill
-            title={play.title}
-            data={play.data}
-            cards={play.cards}
-            origin={play.origin}
-            onExit={() => back()}
-          />
-        )}
-        {play?.kind === "questions" && <QuestionDrill info={play.info} data={play.data} onExit={() => back()} />}
-      </main>
-      <Footer attribution={attribution} />
-      {tab && <TabBar active={tab} />}
-    </div>
+    <SyncContext.Provider value={sync}>
+      <div className={`page ${tab ? "with-tabs" : "playing"}`}>
+        <header className="appbar">
+          <button className="link brand" onClick={() => navigate({ name: "home" })}>
+            短答一問一答<span className="muted">（仮称・非公式）</span>
+          </button>
+          {sync && <SyncBadge sync={sync} />}
+        </header>
+        <main>
+          {error && <p className="error">データを読めませんでした：{error}</p>}
+          {!sets && !error && !["me", "privacy", "terms"].includes(route.name) && <p className="muted">読み込み中…</p>}
+          {sets && route.name === "home" && <Home groups={groups} cardIds={cardIds} includePreReform={includePreReform} />}
+          {sets && route.name === "subjects" && <SubjectList groups={groups} cardIds={cardIds} />}
+          {group && (
+            <SubjectPage
+              group={group}
+              cardIds={cardIds}
+              filter={filter}
+              setFilter={setFilter}
+              includePreReform={includePreReform}
+              setIncludePreReform={setIncludePreReform}
+            />
+          )}
+          {route.name === "me" && <MyPage auth={auth} sync={sync} groups={groups} cardIds={cardIds} />}
+          {route.name === "privacy" && <Privacy />}
+          {route.name === "terms" && <Terms />}
+          {play?.kind === "statements" && (
+            <StatementDrill
+              title={play.title}
+              data={play.data}
+              cards={play.cards}
+              origin={play.origin}
+              onExit={() => back()}
+            />
+          )}
+          {play?.kind === "questions" && <QuestionDrill info={play.info} data={play.data} onExit={() => back()} />}
+        </main>
+        <Footer attribution={attribution} />
+        {tab && <TabBar active={tab} />}
+      </div>
+    </SyncContext.Provider>
   );
 }

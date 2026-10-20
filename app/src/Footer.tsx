@@ -1,4 +1,5 @@
 import type { Attribution } from "./types";
+import { navigate } from "./router";
 
 // 出典の表記（公共データ利用規約 第1.0版の条件）。法務省が作成したかのような見せ方をしない
 export default function Footer({ attribution }: { attribution?: Attribution }) {
@@ -9,6 +10,14 @@ export default function Footer({ attribution }: { attribution?: Attribution }) {
         問題文・正解は法務省が公開する PDF から、このアプリが抽出・編集・加工したものです。肢ごとの○×は公式の解答から導いたものです。
       </p>
       <p>このアプリは法務省とは関係のない個人が作成した非公式のものです。</p>
+      <p className="footer-links">
+        <button className="link small" onClick={() => navigate({ name: "terms" })}>
+          利用規約
+        </button>
+        <button className="link small" onClick={() => navigate({ name: "privacy" })}>
+          プライバシーポリシー
+        </button>
+      </p>
       {attribution && attribution.source_pdfs.length > 0 && (
         <details>
           <summary>元の PDF</summary>

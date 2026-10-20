@@ -5,14 +5,22 @@
 export type Answer = { id: string; s: string; ok: boolean; at: string };
 /** サーバーに保存された回答（受け取った日時つき） */
 export type StoredAnswer = Answer & { received_at: string };
+/** 誤り報告（T040） */
+export type Report = { id: string; target: string; kind: string; body: string; context: string };
 
 export interface AnswerRepository {
   /** その利用者の回答ログ。since を渡すと、それより後に受け取った分だけ */
   list(userId: string, since?: string): Promise<StoredAnswer[]>;
   /** 回答を保存する。同じ回答 ID はすでにあれば無視する。保存した件数を返す */
   insert(userId: string, answers: Answer[], receivedAt: string): Promise<number>;
-  /** その利用者の記録を全部消す */
+  /** その利用者の記録を全部消す。誤り報告は消さず、送った人だけ消す（T040） */
   deleteAll(userId: string): Promise<void>;
+  /** since 以降に受け取った、その利用者の回答の数（1日の上限：T040） */
+  countAnswersSince(userId: string, since: string): Promise<number>;
+  /** 誤り報告を保存する。同じ報告 ID はすでにあれば無視する（T040） */
+  insertReport(userId: string, report: Report, createdAt: string): Promise<void>;
+  /** since 以降に受け取った、その利用者の報告の数（T040） */
+  countReportsSince(userId: string, since: string): Promise<number>;
 }
 
 /** 1つの SQL で保存する回答の数（1,000件でも SQL は5回。D1 の無料プランの上限50回に収まる） */
@@ -52,13 +60,34 @@ export class D1AnswerRepository implements AnswerRepository {
   }
 
   async deleteAll(userId: string): Promise<void> {
-    await this.db.prepare("DELETE FROM answers WHERE user_id = ?").bind(userId).run();
+    await this.db.batch([
+      this.db.prepare("DELETE FROM answers WHERE user_id = ?").bind(userId),
+      this.db.prepare("UPDATE reports SET user_id = NULL WHERE user_id = ?").bind(userId),
+    ]);
+  }
+
+  async countAnswersSince(userId: string, since: string): Promise<number> {
+    const r = await this.db.prepare("SELECT COUNT(*) AS n FROM answers WHERE user_id = ? AND received_at >= ?").bind(userId, since).first<{ n: number }>();
+    return r?.n ?? 0;
+  }
+
+  async insertReport(userId: string, r: Report, createdAt: string): Promise<void> {
+    await this.db
+      .prepare("INSERT OR IGNORE INTO reports (id, user_id, target, kind, body, context, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)")
+      .bind(r.id, userId, r.target, r.kind, r.body, r.context, createdAt)
+      .run();
+  }
+
+  async countReportsSince(userId: string, since: string): Promise<number> {
+    const r = await this.db.prepare("SELECT COUNT(*) AS n FROM reports WHERE user_id = ? AND created_at >= ?").bind(userId, since).first<{ n: number }>();
+    return r?.n ?? 0;
   }
 }
 
 /** テスト用：メモリ上の実装 */
 export class MemoryAnswerRepository implements AnswerRepository {
   rows = new Map<string, StoredAnswer[]>();
+  reports: (Report & { user_id: string | null; created_at: string })[] = [];
 
   async list(userId: string, since?: string): Promise<StoredAnswer[]> {
     return (this.rows.get(userId) ?? []).filter((r) => !since || r.received_at > since);
@@ -80,5 +109,19 @@ export class MemoryAnswerRepository implements AnswerRepository {
 
   async deleteAll(userId: string): Promise<void> {
     this.rows.delete(userId);
+    for (const r of this.reports) if (r.user_id === userId) r.user_id = null;
+  }
+
+  async countAnswersSince(userId: string, since: string): Promise<number> {
+    return (this.rows.get(userId) ?? []).filter((r) => r.received_at >= since).length;
+  }
+
+  async insertReport(userId: string, r: Report, createdAt: string): Promise<void> {
+    if (this.reports.some((x) => x.id === r.id)) return;
+    this.reports.push({ ...r, user_id: userId, created_at: createdAt });
+  }
+
+  async countReportsSince(userId: string, since: string): Promise<number> {
+    return this.reports.filter((r) => r.user_id === userId && r.created_at >= since).length;
   }
 }

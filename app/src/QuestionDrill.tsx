@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import ReportLink from "./ReportLink";
 import type { DataSet, Question, SetInfo } from "./types";
 import QuestionBody from "./QuestionBody";
 import { grade, slotOptions, type Grade } from "./grade";
@@ -130,6 +131,7 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
               <div className="small law-note">この問は、法務省の採点上の取扱いにより全員正答として扱われました。</div>
             )}
             <LawNote q={q} />
+            <ReportLink target={q.id} context={{ screen: "question" }} />
           </div>
           <div className="actionbar">
             <button onClick={next}>次へ</button>

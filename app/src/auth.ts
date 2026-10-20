@@ -1,7 +1,7 @@
 // ログイン（T003）。Google ログインは Firebase Authentication に任せる（決定012）。
 // 手元の E2E では「テスト用ログイン」に差し替える（VITE_AUTH_MODE=test でビルドしたときだけ。本番のビルドには入らない）。
 import { initializeApp } from "@firebase/app";
-import { getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut } from "@firebase/auth";
+import { deleteUser, getAuth, GoogleAuthProvider, onAuthStateChanged, reauthenticateWithPopup, signInWithPopup, signOut } from "@firebase/auth";
 import { firebaseConfig } from "./firebase-config";
 
 export type User = { uid: string; name: string };
@@ -14,6 +14,8 @@ export interface AuthClient {
   signOut(): Promise<void>;
   /** API に添える ID トークン。ログインしていなければ null */
   getToken(): Promise<string | null>;
+  /** アカウント（Google との紐づけ）を消す（退会：T040） */
+  deleteAccount(): Promise<void>;
 }
 
 export function firebaseAuthClient(): AuthClient {
@@ -28,6 +30,18 @@ export function firebaseAuthClient(): AuthClient {
     },
     signOut: () => signOut(auth),
     getToken: async () => (auth.currentUser ? auth.currentUser.getIdToken() : null),
+    deleteAccount: async () => {
+      const u = auth.currentUser;
+      if (!u) return;
+      try {
+        await deleteUser(u);
+      } catch (e) {
+        // 最近ログインしていないと断られる。もう一度 Google のログインを出して、やり直す
+        if ((e as { code?: string }).code !== "auth/requires-recent-login") throw e;
+        await reauthenticateWithPopup(u, new GoogleAuthProvider());
+        await deleteUser(u);
+      }
+    },
   };
 }
 
@@ -59,6 +73,10 @@ export function testAuthClient(): AuthClient {
     getToken: async () => {
       const id = localStorage.getItem(KEY);
       return id ? `test:${id}` : null;
+    },
+    deleteAccount: async () => {
+      localStorage.removeItem(KEY);
+      emit();
     },
   };
 }

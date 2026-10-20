@@ -3,7 +3,8 @@ import { useState } from "react";
 import type { AuthClient } from "../auth";
 import type { SyncedStore } from "../sync";
 import type { CardRef, SubjectGroup } from "../data";
-import AuthPanel from "../AuthBar";
+import AuthPanel, { DeleteData } from "../AuthBar";
+import { navigate } from "../router";
 import { currentState } from "../learning";
 import { applyFilter, summarize } from "../history";
 import { cumulative, heatLevel, heatmapWeeks, streak, totals, type HeatCell } from "../stats";
@@ -207,6 +208,7 @@ export default function MyPage({
       <h2>アカウント</h2>
       <div className="card">
         {auth && sync ? <AuthPanel auth={auth} sync={sync} /> : <p className="muted small">ログインは使えません</p>}
+        {sync && <DeleteData sync={sync} />}
       </div>
 
       <h2>表示</h2>
@@ -228,6 +230,15 @@ export default function MyPage({
           ))}
         </div>
       </div>
+
+      <p className="legal-links small">
+        <button className="link small" onClick={() => navigate({ name: "terms" })}>
+          利用規約
+        </button>
+        <button className="link small" onClick={() => navigate({ name: "privacy" })}>
+          プライバシーポリシー
+        </button>
+      </p>
     </section>
   );
 }

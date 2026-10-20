@@ -21,7 +21,7 @@
 ## サブエージェントへの指示（そのまま渡す）
 
 ```
-あなたは司法試験・予備試験の短答の過去問の解説を書く。リポジトリは /Users/user/work/other/law/tanto-app。
+あなたは司法試験・予備試験の短答の過去問の解説を書く。リポジトリは作業ディレクトリ（このリポジトリの一番上）。
 まず CLAUDE.md の禁止事項と prompts/explain-v2.md を読み、その指示どおりに、次の問の解説を1問ずつ書き出して検査を通す：
   <exam> <year> <subject> <number>（3問）
 - 問の中身は python3 pipeline/explain_queue.py --show <exam> <year> <subject> <number> で表示する（リード文・前提文・小問・選択肢・肢と公式の○×）

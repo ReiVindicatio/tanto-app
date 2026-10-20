@@ -75,3 +75,37 @@ test("ログイン前に解いた記録は、ログインするとアカウン�
   await page.goBack();
   await expect(allYears(page)).toContainText("回答済み 0枚");
 });
+
+test("誤り報告を送れる（T040）", async ({ browser }) => {
+  const page = await openAs(browser, "dave");
+  await expect(page.locator(".sync-status")).toContainText("同期済み");
+  await allYears(page).getByRole("button", { name: /肢で解く/ }).click();
+  await page.getByRole("button", { name: "○", exact: true }).click();
+  await page.getByRole("button", { name: "誤りを報告" }).click();
+  await page.locator(".report-form").getByRole("button", { name: "解説" }).click();
+  await page.getByLabel("報告の内容").fill("条文の番号が違うようです");
+  const sent = page.waitForResponse((r) => new URL(r.url()).pathname === "/api/reports" && r.request().method() === "POST");
+  await page.locator(".report-form").getByRole("button", { name: "送る" }).click();
+  expect((await sent).status()).toBe(200);
+  await expect(page.locator(".report-done")).toContainText("報告を受け付けました");
+});
+
+test("退会：サーバーの記録とアカウントを消し、別の端末でも記録が消えている（T040）", async ({ browser }) => {
+  const phone = await openAs(browser, "erin");
+  await expect(phone.locator(".sync-status")).toContainText("同期済み");
+  await answer(phone, 3);
+  await myPage(phone).click();
+  await hideAndShow(phone); // 未送信を送る
+  await expect(phone.locator(".sync-status")).toContainText("同期済み");
+
+  await phone.getByRole("button", { name: "記録を全部消す（退会）" }).click();
+  await expect(phone.locator(".delete-confirm")).toContainText("回答 3 件");
+  phone.once("dialog", (d) => d.accept());
+  await phone.locator(".delete-confirm").getByRole("button", { name: "消す" }).click();
+  await expect(phone.locator(".delete-data")).toContainText("記録を全部消しました");
+  await expect(phone.getByRole("button", { name: "Google でログイン" })).toBeVisible(); // ログアウトの状態
+
+  const pc = await openAs(browser, "erin");
+  await expect(pc.locator(".sync-status")).toContainText("同期済み");
+  await expect(allYears(pc)).toContainText("回答済み 0枚");
+});

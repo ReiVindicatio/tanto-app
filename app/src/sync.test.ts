@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { FLUSH_COUNT, FLUSH_DELAY_MS, HIDE_BATCH, PULL_INTERVAL_MS, SyncedStore, type Clock } from "./sync";
 import { LocalStorageStore, type Answer } from "./store";
-import type { ApiClient, StoredAnswer } from "./api";
+import { RateLimitedError, type ApiClient, type Report, type StoredAnswer } from "./api";
 import type { AuthClient, User } from "./auth";
 import { MemoryStorage } from "./test/fakes";
 
@@ -9,11 +9,15 @@ import { MemoryStorage } from "./test/fakes";
 class FakeServer {
   rows = new Map<string, StoredAnswer[]>();
   offline = false;
+  limited = false; // 使いすぎの制限に当たっている（429）
+  deleteFails = false;
+  reports: Report[] = [];
   calls: { method: "push" | "pull"; count?: number; keepalive?: boolean }[] = [];
   private t = Date.parse("2026-10-19T00:00:00.000Z");
   client(auth: AuthClient): ApiClient {
     const uid = () => {
       if (this.offline) throw new Error("offline");
+      if (this.limited) throw new RateLimitedError();
       const u = auth.current();
       if (!u) throw new Error("unauthorized");
       return u.uid;
@@ -31,14 +35,25 @@ class FakeServer {
         return { inserted, received_at };
       },
       pull: async (since?: string) => (this.calls.push({ method: "pull" }), this.rows.get(uid()) ?? []).filter((a) => !since || a.received_at > since),
-      deleteMe: async () => { this.rows.delete(uid()); },
+      deleteMe: async () => {
+        if (this.deleteFails) throw new Error("API DELETE /api/me：500");
+        this.rows.delete(uid());
+      },
+      report: async (r: Report) => { uid(); this.reports.push(r); },
     };
   }
 }
 
-function fakeAuth(initial: User | null): AuthClient & { set(u: User | null): void } {
+function fakeAuth(initial: User | null): AuthClient & { set(u: User | null): void; deleted: boolean; deleteFails: boolean } {
   let u = initial;
   return {
+    deleted: false,
+    deleteFails: false,
+    async deleteAccount() {
+      if (this.deleteFails) throw new Error("auth/requires-recent-login");
+      this.deleted = true;
+      u = null;
+    },
     current: () => u,
     onChange: (cb) => { cb(u); return () => {}; },
     signIn: async () => {},
@@ -241,5 +256,102 @@ describe("SyncedStore：送る回数を減らす（T021）", () => {
     await d.store.flushOnHide();
     expect(server.rows.get("alice")).toHaveLength(300);
     expect(server.calls.length).toBeLessThanOrEqual(33); // 起動時2回＋60秒ごとに1回＋閉じるとき1回（回答ごとなら600回）
+  });
+});
+
+describe("SyncedStore：退会・誤り報告・使いすぎの制限（T040）", () => {
+  const user = { uid: "u1", name: "テスト" };
+  const report = (id: string): Report => ({ id, target: "yobi-2026-minpo-q01-a", kind: "explanation", body: "誤り", context: "{}" });
+
+  it("退会：サーバーの記録・アカウント・端末の記録を全部消す", async () => {
+    const server = new FakeServer();
+    const d = device(server, user);
+    await d.store.append(ans("1"));
+    await d.store.sync();
+    expect(server.rows.get("u1")).toHaveLength(1);
+    expect(await d.store.deleteAll()).toBe("done");
+    expect(server.rows.get("u1")).toBeUndefined();
+    expect(d.auth.deleted).toBe(true);
+    expect(await d.local.load()).toEqual([]);
+    expect(d.store.getStatus()).toMatchObject({ user: null, pending: 0 });
+  });
+
+  it("退会：サーバーの記録を消せなければ、何も消さない", async () => {
+    const server = new FakeServer();
+    const d = device(server, user);
+    await d.store.append(ans("1"));
+    server.deleteFails = true;
+    expect(await d.store.deleteAll()).toBe("server-failed");
+    expect(d.auth.deleted).toBe(false);
+    expect(await d.local.load()).toHaveLength(1);
+    expect(d.store.getStatus().user).toEqual(user);
+  });
+
+  it("退会：アカウントを消せなくても、記録は消してログアウトする", async () => {
+    const server = new FakeServer();
+    const d = device(server, user);
+    await d.store.append(ans("1"));
+    await d.store.sync();
+    d.auth.deleteFails = true;
+    expect(await d.store.deleteAll()).toBe("account-failed");
+    expect(server.rows.get("u1")).toBeUndefined();
+    expect(await d.local.load()).toEqual([]);
+    expect(d.store.getStatus().user).toBeNull();
+  });
+
+  it("ログインしていなければ、この端末の記録だけ消す", async () => {
+    const server = new FakeServer();
+    const d = device(server, null);
+    await d.store.append(ans("1"));
+    expect(await d.store.deleteAll()).toBe("done");
+    expect(await d.local.load()).toEqual([]);
+    expect(server.calls).toEqual([]);
+  });
+
+  it("使いすぎの制限（429）に当たっても、エラーにせず箱に残して、60秒後に送り直す", async () => {
+    const server = new FakeServer();
+    const clock = new FakeClock();
+    const d = device(server, user, clock);
+    await d.store.sync();
+    server.limited = true;
+    for (let i = 0; i < FLUSH_COUNT; i++) await d.store.append(ans(`a${i}`));
+    await settle();
+    expect(d.store.getStatus()).toMatchObject({ state: "idle", pending: FLUSH_COUNT });
+    expect(d.store.getStatus().message).toBeUndefined();
+    server.limited = false;
+    await clock.advance(FLUSH_DELAY_MS);
+    await settle();
+    expect(d.store.getStatus()).toMatchObject({ state: "idle", pending: 0 });
+    expect(server.rows.get("u1")).toHaveLength(FLUSH_COUNT);
+  });
+
+  it("受け取りで制限に当たっても、エラーにしない", async () => {
+    const server = new FakeServer();
+    const d = device(server, user);
+    server.limited = true;
+    await d.store.sync();
+    expect(d.store.getStatus().state).toBe("idle");
+  });
+
+  it("誤り報告：送れなければ端末に取っておき、次の同期のときに送る", async () => {
+    const server = new FakeServer();
+    const d = device(server, user);
+    server.offline = true;
+    await d.store.report(report("r1"));
+    expect(d.store.pendingReports()).toBe(1);
+    expect(d.store.getStatus().state).not.toBe("error"); // 報告の失敗は同期の表示に出さない
+    server.offline = false;
+    await d.store.sync();
+    expect(server.reports.map((r) => r.id)).toEqual(["r1"]);
+    expect(d.store.pendingReports()).toBe(0);
+  });
+
+  it("誤り報告：同じ報告を2回送っても1件", async () => {
+    const server = new FakeServer();
+    const d = device(server, user);
+    server.offline = true;
+    await d.store.report(report("r1"));
+    await d.store.report(report("r1"));
+    expect(d.store.pendingReports()).toBe(1);
   });
 });

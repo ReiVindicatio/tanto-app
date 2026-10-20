@@ -7,7 +7,9 @@ export type Route =
   | { name: "subjects" }
   | { name: "subject"; subject: string }
   | { name: "me" }
-  | { name: "play" };
+  | { name: "play" }
+  | { name: "privacy" }
+  | { name: "terms" };
 
 export type Tab = "home" | "subjects" | "me";
 
@@ -21,11 +23,13 @@ export function parse(pathname: string): Route {
   if (m) return { name: "subject", subject: m[1] };
   if (p === "/me") return { name: "me" };
   if (p === "/play") return { name: "play" };
+  if (p === "/privacy") return { name: "privacy" };
+  if (p === "/terms") return { name: "terms" };
   return { name: "home" };
 }
 
 export function toPath(r: Route): string {
-  const p = { home: "/", subjects: "/subjects", me: "/me", play: "/play" } as const;
+  const p = { home: "/", subjects: "/subjects", me: "/me", play: "/play", privacy: "/privacy", terms: "/terms" } as const;
   return BASE + (r.name === "subject" ? `/subjects/${r.subject}` : p[r.name]);
 }
 
@@ -33,6 +37,7 @@ export function toPath(r: Route): string {
 export function tabOf(r: Route): Tab | null {
   if (r.name === "subject") return "subjects";
   if (r.name === "play") return null;
+  if (r.name === "privacy" || r.name === "terms") return "me"; // マイページ・フッターから開く
   return r.name;
 }
 

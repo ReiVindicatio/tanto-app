@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import type { AuthClient } from "./auth";
-import type { SyncedStore, SyncStatus } from "./sync";
+import type { DeleteResult, SyncedStore, SyncStatus } from "./sync";
 
 function useSyncStatus(sync: SyncedStore): SyncStatus {
   const [status, setStatus] = useState<SyncStatus>(sync.getStatus());
@@ -79,6 +79,68 @@ export default function AuthPanel({ auth, sync }: { auth: AuthClient; sync: Sync
       <button className="secondary" disabled={busy} onClick={signOut}>
         ログアウト
       </button>
+    </div>
+  );
+}
+
+const DELETE_MESSAGE: Record<DeleteResult, string> = {
+  done: "記録を全部消しました。",
+  "server-failed": "通信できませんでした。何も消していません。しばらくしてからもう一度お試しください。",
+  "account-failed": "記録は消しました。アカウントの削除はできませんでした。もう一度ログインして、お試しください。",
+};
+
+/** 記録を全部消す（退会：T040）。件数を見せてから、2回確かめて消す */
+export function DeleteData({ sync, confirm = (m) => window.confirm(m) }: { sync: SyncedStore; confirm?: (message: string) => boolean }) {
+  const status = useSyncStatus(sync);
+  const [open, setOpen] = useState(false);
+  const [count, setCount] = useState<number | null>(null);
+  const [busy, setBusy] = useState(false);
+  const [result, setResult] = useState<DeleteResult | null>(null);
+  const loggedIn = !!status.user;
+
+  async function openPanel() {
+    setResult(null);
+    setCount((await sync.load()).length);
+    setOpen(true);
+  }
+
+  async function run() {
+    if (!confirm(loggedIn ? "本当にアカウントと記録を全部消しますか？元に戻せません。" : "本当にこの端末の記録を消しますか？元に戻せません。")) return;
+    setBusy(true);
+    try {
+      const r = await sync.deleteAll();
+      setResult(r);
+      if (r !== "server-failed") setOpen(false);
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  return (
+    <div className="delete-data">
+      {result && <p className={`small ${result === "done" ? "muted" : "error"}`}>{DELETE_MESSAGE[result]}</p>}
+      {!open ? (
+        <button className="link small danger" onClick={() => void openPanel()}>
+          {loggedIn ? "記録を全部消す（退会）" : "この端末の記録を消す"}
+        </button>
+      ) : (
+        <div className="card delete-confirm">
+          <p className="small">
+            {loggedIn
+              ? `回答 ${count?.toLocaleString() ?? "…"} 件の記録を、サーバーとこの端末から消し、ログインのアカウントも消します。元に戻せません。`
+              : `この端末の回答 ${count?.toLocaleString() ?? "…"} 件の記録を消します。元に戻せません。`}
+          </p>
+          {loggedIn && <p className="muted small">送っていただいた誤り報告は、送った人が分からない形で残ります。</p>}
+          <div className="row">
+            <button className="secondary" disabled={busy} onClick={() => setOpen(false)}>
+              やめる
+            </button>
+            <button className="danger" disabled={busy} onClick={() => void run()}>
+              消す
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

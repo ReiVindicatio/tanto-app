@@ -19,6 +19,12 @@
       "migrations_dir": "migrations"
     }
   ],
+  // 使いすぎの制限（T040：見えない安全網）。数は Cloudflare の拠点ごとの概算。
+  // 今の正常な使い方は1分に1〜3回（T021）なので、人の手ではまず届かない。超えても画面には出さず、端末からあとで送り直す
+  "ratelimits": [
+    { "name": "RL_IP", "namespace_id": "4001", "simple": { "limit": 120, "period": 60 } },
+    { "name": "RL_USER", "namespace_id": "4002", "simple": { "limit": 60, "period": 60 } }
+  ],
   "vars": {
     // Firebase の ID トークンの検証に使う（秘密ではない）
     "FIREBASE_PROJECT_ID": "tantan-adce9",

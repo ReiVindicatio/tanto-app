@@ -681,6 +681,91 @@ details > summary {
   word-break: break-all;
 }
 
+.footer-links,
+.legal-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px !important;
+}
+
+.footer-links .link,
+.legal-links .link {
+  color: var(--text-secondary);
+}
+
+/* ---- 誤り報告・退会・規約（T040） ---- */
+
+.report-link {
+  margin-top: 8px;
+}
+
+.report-link .link,
+.report-done {
+  color: var(--text-secondary);
+}
+
+.report-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+  text-align: left;
+}
+
+.report-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 8px;
+  color: var(--text-primary);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.report-actions {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.report-actions .muted {
+  flex: 1;
+}
+
+.delete-data {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.link.danger {
+  color: var(--ng);
+}
+
+button.danger {
+  background: var(--ng);
+  border-color: var(--ng);
+  color: #fff;
+}
+
+.delete-confirm p {
+  margin: 0 0 8px;
+}
+
+.legal h2 {
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.legal ul {
+  padding-left: 1.2em;
+}
+
+.legal li {
+  margin: 4px 0;
+}
+
 .page.playing .footer {
   margin-top: 16px;
 }
