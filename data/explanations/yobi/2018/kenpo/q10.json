@@ -1,0 +1,193 @@
+{
+ "question_id": "yobi-2018-kenpo-q10",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-kenpo-q10-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：条約の承認には予算の議決に関する60条2項が準用されるので、議決の効力の面では予算と同じ程度の優越があり、出席議員の3分の2以上での再可決を要する法律案より優越の程度は大きい。",
+   "body": "誤りの決め手は、条約の承認の優越が「法律案の議決，予算の議決のいずれの場合と比べても小さい」とする部分である。憲法61条は「条約の締結に必要な国会の承認については、前条第二項の規定を準用する。」と定め、60条2項は、両院協議会を開いても意見が一致しないとき、又は参議院が衆議院の可決したものを受け取った後30日以内に議決しないときは「衆議院の議決を国会の議決とする。」と定める。これに対し法律案は、59条2項により「衆議院で出席議員の三分の二以上の多数で再び可決したときは、法律となる。」とされ、衆議院の再可決という加重された要件が必要である。したがって、条約の承認は、衆議院の議決がそのまま国会の議決となる点で予算と同じであり、法律案よりも優越の程度が大きい。なお、予算の衆議院先議（60条1項）は61条で準用されていない点で予算と異なるが、それをもって法律案より優越が小さいとはいえない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "61",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "条約の締結に必要な国会の承認については、前条第二項の規定を準用する。",
+     "text_sha256": "8b76031e9fdf040e88ad9f2f7f7f388be9b65d94da3b563e7bec91675eb470db",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "60",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "衆議院の議決を国会の議決とする。",
+     "text_sha256": "2bbcfb8c7be3e78b32e4008214a92813257007b143e507bda64f1c2d9fd65429",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "59",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "衆議院で出席議員の三分の二以上の多数で再び可決したときは、法律となる。",
+     "text_sha256": "8dcf03f803838b68ab002f4bc372e804e28662ab6a23d0c6774ba26475d1c354",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "60",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "予算は、さきに衆議院に提出しなければならない。",
+     "text_sha256": "2bbcfb8c7be3e78b32e4008214a92813257007b143e507bda64f1c2d9fd65429",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-kenpo-q10-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-kenpo-q10-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：衆議院は任期が短く解散もあるため、そのときどきの国民の意思をより反映しやすいことが、衆議院の優越の根拠であると一般に解されている。",
+   "body": "誤りの決め手は、任期の短さと解散制度が衆議院の優越の根拠と「ならない」とする部分である。憲法45条は「衆議院議員の任期は、四年とする。但し、衆議院解散の場合には、その期間満了前に終了する。」と定め、46条は「参議院議員の任期は、六年とし、三年ごとに議員の半数を改選する。」と定める。衆議院は参議院より任期が短く、解散によって任期途中でも総選挙が行われるため、直近の国民の意思をより反映しやすい。このことが、法律案・予算・条約の承認・内閣総理大臣の指名などで衆議院に優越が認められる根拠であると解されている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "衆議院議員の任期は、四年とする。但し、衆議院解散の場合には、その期間満了前に終了する。",
+     "text_sha256": "218a58f92cafc39bb63cf901aee901d8659022100696ad96048a165a2ccd2a18",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "46",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "参議院議員の任期は、六年とし、三年ごとに議員の半数を改選する。",
+     "text_sha256": "bcc2ac45ffa675a744e839c3b08c8b112a2939ad9f865bbfb853bcf16cc1609f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "優越の根拠についての一般的な理解による（解釈による）。"
+   ],
+   "id": "exp-yobi-2018-kenpo-q10-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-kenpo-q10-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：憲法改正の発議は96条1項で各議院の総議員の3分の2以上の賛成を要し、予備費支出の承諾も87条2項に衆議院の優越の定めがないので、いずれも両議院の議決は対等である。",
+   "body": "本肢は、衆議院の優越が定められていない事項を問う。憲法96条1項は「この憲法の改正は、各議院の総議員の三分の二以上の賛成で、国会が、これを発議し」と定め、両議院それぞれに同じ要件を課しており、衆議院の議決を優先させる規定はない。また87条2項は「すべて予備費の支出については、内閣は、事後に国会の承諾を得なければならない。」と定めるが、予算（60条2項）や条約（61条）のような衆議院の議決を国会の議決とする規定は置かれていない。憲法上衆議院の優越が定められているのは法律案・予算・条約の承認・内閣総理大臣の指名などに限られるから、これらの事項では両議院の議決は対等であると解されている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "96",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この憲法の改正は、各議院の総議員の三分の二以上の賛成で、国会が、これを発議し",
+     "text_sha256": "cbbcb2f4a5b1c0f9b73077f6defc12d9104b0bb554ff2283bf6bc9978270f404",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "87",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "すべて予備費の支出については、内閣は、事後に国会の承諾を得なければならない。",
+     "text_sha256": "f922f678317eed373646460eac7ee3df24f6333917e0bb573d0d18fa50d4cff8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "60",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "衆議院の議決を国会の議決とする。",
+     "text_sha256": "2bbcfb8c7be3e78b32e4008214a92813257007b143e507bda64f1c2d9fd65429",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "61",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "条約の締結に必要な国会の承認については、前条第二項の規定を準用する。",
+     "text_sha256": "8b76031e9fdf040e88ad9f2f7f7f388be9b65d94da3b563e7bec91675eb470db",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2018-kenpo-q10-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
