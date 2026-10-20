@@ -1,0 +1,281 @@
+{
+ "question_id": "yobi-2025-shoho-q25",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q25-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。事業譲渡等の契約の相手方が譲渡会社の特別支配会社である場合には、株主総会の決議による承認を定めた467条が適用されない（略式事業譲渡）。",
+   "body": "事業の全部の譲渡をする株式会社は、原則として、効力発生日の前日までに「株主総会の決議によって、当該行為に係る契約の承認を受けなければならない」（467条1項1号）。この決議は特別決議である（309条2項11号）。しかし468条1項は、事業譲渡等に係る契約の相手方が「当該事業譲渡等をする株式会社の特別支配会社」である場合には、前条の規定は「適用しない」と定める。特別支配会社が総株主の議決権の10分の9以上を有していれば、総会を開いても可決が確実だからである。したがって、譲受会社が譲渡会社の特別支配会社であるときは、譲渡会社の株主総会の特別決議による承認を要せず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "467",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の決議によって、当該行為に係る契約の承認を受けなければならない。",
+     "text_sha256": "90383ded1f4a3dce20bdd1672c6aaf03fda339f256628f51e35f32de4bb0a699",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "309",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "十一　第六章から第八章までの規定により株主総会の決議を要する場合における当該株主総会",
+     "text_sha256": "56ffbd6451793882d47ba533193af3dd09d3d0c791034f12f0f7f32cf6456aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "468",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条の規定は、同条第一項第一号から第四号までに掲げる行為（以下この章において「事業譲渡等」という。）に係る契約の相手方が当該事業譲渡等をする株式会社の特別支配会社",
+     "text_sha256": "8d5d49a2de65d1cf4c5b7797f390f785fc5de8732388c5b3127a3ce597eb9189",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q25-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q25-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。会社は組織変更をすることができ、株式会社は合名会社・合資会社・合同会社のいずれにも組織変更できる。",
+   "body": "決め手は「組織変更することができない」という部分である。743条は「会社は、組織変更をすることができる。」と定める。そして744条1項1号は、株式会社が組織変更をする場合の組織変更計画の記載事項として「組織変更後の持分会社（以下この編において「組織変更後持分会社」という。）が合名会社、合資会社又は合同会社のいずれであるかの別」を掲げている。したがって、株式会社は合名会社、合資会社又は合同会社に組織変更することができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "743",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社は、組織変更をすることができる。",
+     "text_sha256": "720bfce6a170cf718fe8ea278c817f22721081f9bc6dcc26e75bc79feb269f9f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "744",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一　組織変更後の持分会社（以下この編において「組織変更後持分会社」という。）が合名会社、合資会社又は合同会社のいずれであるかの別",
+     "text_sha256": "de159a587407779b83b3d72a0342670fd12aed2424c0955dc8113e2232e92b54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q25-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q25-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。新設分割による債務の承継は新設分割計画の定めに従って当然に生じ、個々の債権者の承諾は要しない。債権者の保護は債権者異議手続による。",
+   "body": "決め手は「債権者の承諾を要する」という部分である。764条1項は「新設分割設立株式会社は、その成立の日に、新設分割計画の定めに従い、新設分割会社の権利義務を承継する。」と定め、承継に債権者の承諾を求めていない。民法上の免責的債務引受では債権者の関与が必要とされる（民法472条2項・3項）のと異なり、会社分割では、新設分割後に新設分割株式会社に対して債務の履行を請求できなくなる債権者に異議を述べる機会を与えることで保護を図っている（810条1項2号）。したがって、免責的な承継に債権者の承諾は要せず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "764",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "新設分割設立株式会社は、その成立の日に、新設分割計画の定めに従い、新設分割会社の権利義務を承継する。",
+     "text_sha256": "e6f6f05eda82c1825dda31901075c7a8f5442712f4603be16d800cb3e28268c1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "810",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二　新設分割をする場合　新設分割後新設分割株式会社に対して債務の履行（当該債務の保証人として新設分割設立会社と連帯して負担する保証債務の履行を含む。）を請求することができない新設分割株式会社の債権者",
+     "text_sha256": "816b75efa8af48cd646a86087bb23a81e0c29d5478c1dce62322f8bb9e6f6845",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "免責的債務引受は、債権者と引受人となる者との契約によってすることができる。",
+     "text_sha256": "43b16c10ebd6f4e46a8e8af0e9feb8dcf627456777f33a5b2d70bef51fa55eff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "免責的債務引受は、債務者と引受人となる者が契約をし、債権者が引受人となる者に対して承諾をすることによってもすることができる。",
+     "text_sha256": "43b16c10ebd6f4e46a8e8af0e9feb8dcf627456777f33a5b2d70bef51fa55eff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "新設分割設立会社が持分会社の場合は766条が同様に定める。"
+   ],
+   "id": "exp-yobi-2025-shoho-q25-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q25-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。株主総会の決議を要する吸収分割では、「当該株主総会において議決権を行使することができない株主」も反対株主として株式買取請求ができる。",
+   "body": "785条1項は、吸収合併等（吸収分割を含む）をする場合には、「反対株主は、消滅株式会社等に対し、自己の有する株式を公正な価格で買い取ることを請求することができる」と定める。そして同条2項1号は、株主総会の決議を要する場合の反対株主として、事前に反対を通知し総会でも反対した株主（イ）と並べて、「ロ　当該株主総会において議決権を行使することができない株主」を掲げている。議決権を行使できない株主は反対の意思を総会で示しようがないため、反対の通知・反対の議決権行使なしに買取請求が認められる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "785",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "反対株主は、消滅株式会社等に対し、自己の有する株式を公正な価格で買い取ることを請求することができる。",
+     "text_sha256": "97607594fbf2696764a8ecdd120094d239bf8bcf2e5a2eb7613ab5259427149d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "785",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "ロ　当該株主総会において議決権を行使することができない株主",
+     "text_sha256": "97607594fbf2696764a8ecdd120094d239bf8bcf2e5a2eb7613ab5259427149d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "782",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二　吸収分割株式会社　吸収分割契約",
+     "text_sha256": "afa17efbf624ba2fe60bf7336670959d5bd23486578102fbdfc9856654767248",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q25-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q25-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。株式移転は、株式移転計画で定めた効力発生日ではなく、株式移転設立完全親会社の成立の日（設立の登記の日）に効力を生ずる。",
+   "body": "決め手は「株式移転計画において定められた効力発生日に」という部分である。774条1項は「株式移転設立完全親会社は、その成立の日に、株式移転完全子会社の発行済株式の全部を取得する。」と定める。そして株式会社は「その本店の所在地において設立の登記をすることによって成立する」（49条）。株式移転は新たに会社を設立する行為であるため、吸収型の組織再編（吸収合併・吸収分割・株式交換）のように契約で効力発生日を定めるのではなく、設立の登記によって効力を生ずる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "774",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式移転設立完全親会社は、その成立の日に、株式移転完全子会社の発行済株式の全部を取得する。",
+     "text_sha256": "330b995459df2ae425b849359d286484bcd6562c0e1b4f407b7780cabfbcb709",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "49",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、その本店の所在地において設立の登記をすることによって成立する。",
+     "text_sha256": "0dfb913725fccd73080d98d66c7255c2ae05484041d2db5fa5ddfb44881c6006",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q25-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

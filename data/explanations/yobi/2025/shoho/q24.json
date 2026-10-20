@@ -1,0 +1,243 @@
+{
+ "question_id": "yobi-2025-shoho-q24",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q24-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。有限責任社員の責任は出資の価額から既に履行した出資の価額を除いた額が限度であり、出資を履行済みの有限責任社員は持分会社の債務を弁済する責任を負わない。",
+   "body": "決め手は「既に…出資の履行をした有限責任社員」が責任を負うとしている部分である。580条1項2号は、持分会社の財産に対する強制執行がその効を奏しなかった場合に、社員が「連帯して、持分会社の債務を弁済する責任を負う」と定める。しかし同条2項は「有限責任社員は、その出資の価額（既に持分会社に対し履行した出資の価額を除く。）を限度として、持分会社の債務を弁済する責任を負う。」と定める。そのため、出資の全部を履行した有限責任社員の責任の限度額はゼロとなり、強制執行が効を奏しなかった場合でも弁済の責任を負わない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "580",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "社員は、次に掲げる場合には、連帯して、持分会社の債務を弁済する責任を負う。",
+     "text_sha256": "31d4daae30d0560d6f3c834ef56cb708e8007e3351177066d28a9898ecf03852",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "580",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "有限責任社員は、その出資の価額（既に持分会社に対し履行した出資の価額を除く。）を限度として、持分会社の債務を弁済する責任を負う。",
+     "text_sha256": "31d4daae30d0560d6f3c834ef56cb708e8007e3351177066d28a9898ecf03852",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q24-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q24-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。無限責任社員が有限責任社員となっても、その旨の登記をする前に生じた債務については、無限責任社員として弁済する責任を負う。",
+   "body": "決め手は「無限責任社員として当該債務を弁済する責任を負わない」という部分である。583条3項は「無限責任社員が有限責任社員となった場合であっても、当該有限責任社員となった者は、その旨の登記をする前に生じた持分会社の債務については、無限責任社員として当該債務を弁済する責任を負う。」と定める。本肢はこの規定と正反対の内容である。なお、この責任は、登記後2年以内に請求又は請求の予告をしない債権者に対しては、登記後2年を経過した時に消滅する（同条4項）。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "583",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "無限責任社員が有限責任社員となった場合であっても、当該有限責任社員となった者は、その旨の登記をする前に生じた持分会社の債務については、無限責任社員として当該債務を弁済する責任を負う。",
+     "text_sha256": "79f6f44caf34dc22d6fdcbc9a33261d892aeb782960e7f3b51de9fdbe5e8c272",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "583",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "前二項の責任は、前二項の登記後二年以内に請求又は請求の予告をしない持分会社の債権者に対しては、当該登記後二年を経過した時に消滅する。",
+     "text_sha256": "79f6f44caf34dc22d6fdcbc9a33261d892aeb782960e7f3b51de9fdbe5e8c272",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q24-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q24-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。持分会社は自己の持分の全部又は一部を譲り受けることができないから、他の社員全員の承諾があっても持分を当該持分会社に譲渡することはできない。",
+   "body": "決め手は「当該持分会社に譲渡することができる」という部分である。585条1項は、社員は「他の社員の全員の承諾がなければ、その持分の全部又は一部を他人に譲渡することができない」と定めるが、これは持分会社以外の者への譲渡についての規定である。持分会社自身への譲渡については、587条1項が「持分会社は、その持分の全部又は一部を譲り受けることができない。」と定めており、他の社員全員の承諾があっても例外は設けられていない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "585",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "社員は、他の社員の全員の承諾がなければ、その持分の全部又は一部を他人に譲渡することができない。",
+     "text_sha256": "8ef4be8c1c01dc91a8a6945e3ff22749abb806ea800bbb2ce17ae8381c56b824",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "587",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "持分会社は、その持分の全部又は一部を譲り受けることができない。",
+     "text_sha256": "a7d4d101070950dcc59d80e88be5a063dccf0e8ed5dc12c712024f76c8230cb0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q24-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q24-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。業務を執行しない有限責任社員は、業務を執行する社員の全員の承諾があれば持分を他人に譲渡でき、定款で別段の定めをすることもできる。",
+   "body": "社員の持分の譲渡には原則として他の社員の全員の承諾が必要である（585条1項）。もっとも、同条2項は「前項の規定にかかわらず、業務を執行しない有限責任社員は、業務を執行する社員の全員の承諾があるときは、その持分の全部又は一部を他人に譲渡することができる。」と定める。そして同条4項は「前三項の規定は、定款で別段の定めをすることを妨げない。」としている。本肢は、定款に別段の定めがある場合を除くとしたうえで、同条2項の内容をそのまま述べている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "585",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "社員は、他の社員の全員の承諾がなければ、その持分の全部又は一部を他人に譲渡することができない。",
+     "text_sha256": "8ef4be8c1c01dc91a8a6945e3ff22749abb806ea800bbb2ce17ae8381c56b824",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "585",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定にかかわらず、業務を執行しない有限責任社員は、業務を執行する社員の全員の承諾があるときは、その持分の全部又は一部を他人に譲渡することができる。",
+     "text_sha256": "8ef4be8c1c01dc91a8a6945e3ff22749abb806ea800bbb2ce17ae8381c56b824",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "585",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "前三項の規定は、定款で別段の定めをすることを妨げない。",
+     "text_sha256": "8ef4be8c1c01dc91a8a6945e3ff22749abb806ea800bbb2ce17ae8381c56b824",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q24-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q24-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。合同会社の社員は全員が有限責任社員であり、有限責任社員の出資の目的は金銭等に限られるから、信用を出資の目的とすることはできない。",
+   "body": "576条1項6号は、定款の記載事項として「社員の出資の目的（有限責任社員にあっては、金銭等に限る。）及びその価額又は評価の標準」を掲げ、有限責任社員の出資の目的を金銭等に限っている。そして同条4項により、合同会社の定款には「その社員の全部を有限責任社員とする旨」を記載しなければならない。したがって、合同会社の社員はすべて有限責任社員であり、金銭等ではない信用を出資の目的とすることはできない。本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "576",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "六　社員の出資の目的（有限責任社員にあっては、金銭等に限る。）及びその価額又は評価の標準",
+     "text_sha256": "ff6d8df6757eee1a46d8e7f5da2f200e8145c188321040bbfb5f4dda3de7a7a0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "576",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "設立しようとする持分会社が合同会社である場合には、第一項第五号に掲げる事項として、その社員の全部を有限責任社員とする旨を記載し、又は記録しなければならない。",
+     "text_sha256": "ff6d8df6757eee1a46d8e7f5da2f200e8145c188321040bbfb5f4dda3de7a7a0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q24-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

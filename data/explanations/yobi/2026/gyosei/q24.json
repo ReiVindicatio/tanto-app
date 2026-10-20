@@ -1,0 +1,190 @@
+{
+ "question_id": "yobi-2026-gyosei-q24",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-gyosei-q24-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。上級行政庁が下級行政庁に代わってその権限を行使すること（代執行）は、法律が定めた行政庁の権限の所在を変えるものであるから、法律の根拠が必要と解されている。",
+   "body": "決め手は、「法律の根拠がなくても、一般的な指揮監督権に基づくものとして許される」とする部分である。行政庁の権限は法律によってその行政庁に配分されているから、上級行政庁が下級行政庁の権限を自ら行使することは、法律が定めた権限の配分を変えることになる。そのため、上級行政庁の一般的な指揮監督権には、下級行政庁に命令・指示をする権限は含まれても、下級行政庁に代わってその権限を行使する権限（代執行権）は含まれず、代執行には個別の法律の根拠が必要と解されている。したがって本肢は誤り。",
+   "citations": [],
+   "cases": [],
+   "notes": [
+    "指揮監督権に代執行権が含まれないとする点は解釈による（条文の直接の根拠はない）。"
+   ],
+   "id": "exp-yobi-2026-gyosei-q24-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-gyosei-q24-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。デジタル庁設置法2条は「内閣に、デジタル庁を置く」と定めており、デジタル庁は内閣府の外局ではなく、内閣に置かれる機関である。",
+   "body": "決め手は、「内閣府の外局として」とする部分である。デジタル庁設置法2条は、「内閣に、デジタル庁を置く」と定める。デジタル庁の任務は、同法3条が定めるとおり、デジタル社会の形成に関する内閣の事務を「内閣官房と共に助けること」（1号）と、「デジタル社会の形成に関する行政事務の迅速かつ重点的な遂行を図ること」（2号）であり、本肢の任務の記述はおおむねこれに沿う。しかし、設置の場所は内閣であって、内閣府の外局として置かれているのではない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "デジタル庁設置法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣に、デジタル庁を置く。",
+     "text_sha256": "5f65986166b339d49a25a605eb32b04c41714635ad8e6e306c3e8bb2829b9210",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E4%BB%A4%E5%92%8C%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%89%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "デジタル庁設置法",
+     "article": "3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "デジタル社会の形成に関する内閣の事務を内閣官房と共に助けること。",
+     "text_sha256": "279f3ef9107f65910421219372c157a74d53a9813e65936b1426801facdbec26",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E4%BB%A4%E5%92%8C%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%89%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "デジタル庁設置法",
+     "article": "3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "デジタル社会の形成に関する行政事務の迅速かつ重点的な遂行を図ること。",
+     "text_sha256": "279f3ef9107f65910421219372c157a74d53a9813e65936b1426801facdbec26",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E4%BB%A4%E5%92%8C%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%89%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-gyosei-q24-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-gyosei-q24-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。委員会は内閣府・省の外局として置かれる合議制の機関であり、主任の大臣の「所轄」の下に置かれて、職権行使の独立性が保障されていると解されている。",
+   "body": "決め手は、外局として置かれる委員会の位置付けである。国家行政組織法3条3項は、「委員会及び庁は、省に、その外局として置かれるものとする」と定め、内閣府設置法49条1項も、「内閣府には、その外局として、委員会及び庁を置くことができる」と定める。こうした委員会（いわゆる行政委員会）は、政治的中立性や専門性が求められる事務を扱うために置かれる合議制の機関であり、大臣の指揮監督を受ける「統轄」や「管理」ではなく、より緩やかな関係である「所轄」の下に置かれ、職権を独立して行使することが保障されていると解されている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "国家行政組織法",
+     "article": "3",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "委員会及び庁は、省に、その外局として置かれるものとする。",
+     "text_sha256": "151c3b3df9aa37b8c01b173ebfe81f1aa330886987f8751c6dfaa8fad009c937",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "内閣府設置法",
+     "article": "49",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣府には、その外局として、委員会及び庁を置くことができる。",
+     "text_sha256": "e2ea007bc6b79cfdef28408d3996d57635c79a84f3f9bac4998912f5812e161d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%80%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "委員会が大臣の「所轄」の下に置かれ職権行使の独立性が保障されるとする点は、個別の設置法（例：公正取引委員会）の定めと一般的な理解による。個別の設置法は data/statutes/ に保存されていないため引用していない。"
+   ],
+   "id": "exp-yobi-2026-gyosei-q24-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-gyosei-q24-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。独立行政法人のうち役員・職員が国家公務員とされるのは行政執行法人に限られ、国立大学法人の役員・職員は罰則の適用について公務員とみなされるにとどまる。",
+   "body": "決め手は、「いずれも国家公務員とされている」とする部分である。独立行政法人通則法2条1項は、独立行政法人を中期目標管理法人・国立研究開発法人・行政執行法人に分けており、同法51条は「行政執行法人の役員及び職員は、国家公務員とする」と定める。国家公務員とされるのは行政執行法人の役員・職員だけであり、中期目標管理法人・国立研究開発法人の役員・職員は国家公務員ではない。また、国立大学法人法19条は、国立大学法人の役員及び職員を「刑法（明治四十年法律第四十五号）その他の罰則の適用については、法令により公務に従事する職員とみなす」と定めるにとどまり、国家公務員とはしていない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "独立行政法人通則法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "中期目標管理法人、国立研究開発法人又は行政執行法人として、この法律及び個別法の定めるところにより設立される法人をいう。",
+     "text_sha256": "24f9fa753a67bbe7d208a37399c78725ea335f400c3639232fd77fd376dd26bc",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%80%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "独立行政法人通則法",
+     "article": "51",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行政執行法人の役員及び職員は、国家公務員とする。",
+     "text_sha256": "3f2e86196d929942041a8fe3369416920e5fc0133d9605465d3e8bee3901c8c1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%80%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "国立大学法人法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国立大学法人の役員及び職員は、刑法（明治四十年法律第四十五号）その他の罰則の適用については、法令により公務に従事する職員とみなす。",
+     "text_sha256": "b46392daf2ffcbce0d18c7fc991cb8630659f9b96783ae77a08aea82481e6743",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E5%8D%81%E4%BA%8C%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-gyosei-q24-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -5,8 +5,9 @@
 ## 1回分（バッチ）
 
 1. `git status --short` で、前のバッチの書きかけが残っていないか見る。残っていれば、その問の `check_explanations.py` を通し直してから 4 へ
-2. `python3 pipeline/explain_queue.py --next 9` で次の9問を取る。0問なら終わり（NOW.md に「解説の生成キューが空」と書いて commit・push し、`/loop` を止める）
-3. **サブエージェントを3本、同じメッセージで並行して起動する**（`run_in_background: true`）。1本に3問ずつ渡す。渡す内容は「サブエージェントへの指示」（下）
+2. `python3 pipeline/explain_queue.py --next 18` で次の18問を取る（前のバッチの `explain_commit.py` の表示にも出ている）。0問なら終わり（NOW.md に「解説の生成キューが空」と書いて `explain_commit.py` で commit・push し、`/loop` を止める）
+   - **前のバッチの `explain_commit.py` が「⏸ 上限の目安に達した：HH:MM まで待って」と表示したら、その時刻まで `ScheduleWakeup`（最大3600秒をくり返す）で待ってから 2 に進む**（2026-10-20 ユーザー指示：利用上限の10%は残す。1バッチで約4%。枠の数え方は `.claude/explain_window.json`）
+3. **サブエージェントを6本、同じメッセージで並行して起動する**（`run_in_background: true`）。1本に3問ずつ渡す。渡す内容は「サブエージェントへの指示」（下）
    - 起動したら `ScheduleWakeup`（600秒）で待つ。戻った知らせ（task-notification）で起こされる
    - **起動から20分を超えて戻らない1本は `TaskStop` で打ち切る**（許可待ちで止まっている可能性がある。2026-10-20、1本が許可待ちのまま約11時間止まり、全体が止まった）。打ち切った問は解説ファイルが不完全でも検査で落ちる肢は公開されず、ファイルのない問はキューに残るので次のバッチで作り直される
    **メインのセッションも、許可していない操作をしない**：ヒアドキュメント・`&&` でつないだ複合コマンド・その場で書く python は、許可の設定に当たらず承認待ちで止まる（2026-10-20、これで何度も止まった）。バッチの後始末は 4〜7 をまとめた `python3 pipeline/explain_commit.py [--skip <question_id> "<理由>"]…` の1コマンドだけで行う。法令を足すときは `pipeline/egov.py` を Edit の道具で直し、`python3 pipeline/egov.py --fetch <法令>` を単独で実行する

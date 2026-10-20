@@ -1,0 +1,301 @@
+{
+ "question_id": "yobi-2025-shoho-q18",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q18-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、新株発行を条件として、その発行後の発行済株式総数の4倍まで発行可能株式総数（授権株式数）を増加する定款変更決議を違法でないとしている。",
+   "body": "公開会社が定款を変更して発行可能株式総数を増加する場合には、変更後の発行可能株式総数は「当該定款の変更が効力を生じた時における発行済株式の総数の四倍を超えることができない」（113条3項1号）。ポイントは、基準となるのが定款変更の「効力を生じた時」の発行済株式総数である点である。最高裁昭和37年3月8日判決は、旧商法下で、未発行部分がある場合でも授権株式数を増加する定款変更ができるとしたうえで、新株発行を条件として、発行済株式総数と新株発行数の合計の4倍を超えない範囲で授権株式数を増加する定款変更決議も違法とはいえないとした。新株発行を条件とすれば、定款変更の効力が生じるのは新株発行後であるから、発行後の発行済株式総数の4倍までの増加は上記の制限に反しないと解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "113",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "次に掲げる場合には、当該定款の変更後の発行可能株式総数は、当該定款の変更が効力を生じた時における発行済株式の総数の四倍を超えることができない。",
+     "text_sha256": "2d3462ae15ac5b9bee9b8bffb3bc77d514f8f36a678c3296cc63d96a6849d218",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "113",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "公開会社が定款を変更して発行可能株式総数を増加する場合",
+     "text_sha256": "2d3462ae15ac5b9bee9b8bffb3bc77d514f8f36a678c3296cc63d96a6849d218",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "株主総会決議無効確認請求事件",
+     "court": "最高裁判所第一小法廷",
+     "date": "1962-03-08",
+     "holding": "授権株式数に未発行部分があっても、発行済株式総数の4倍を超えない範囲で授権株式数を増加する定款変更ができ、新株発行を条件として、発行済株式総数と新株発行数の合計の4倍を超えない範囲で授権株式数を増加する定款変更決議も違法とはいえない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56207/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は旧商法（授権株式数）下のもの。会社法113条3項の下でも同じ趣旨が妥当すると解されている（解釈による）。"
+   ],
+   "id": "exp-yobi-2025-shoho-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q18-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。株主に株式の割当てを受ける権利を与える場合には有利発行の規律（199条2項・3項）は適用されず、公開会社では取締役会の決議で募集事項等を定める。",
+   "body": "誤りは「株主に当該募集株式の割当てを受ける権利を与えるときであっても、株主総会の決議によって募集事項を定めなければならない」とする部分である。202条5項は、「第百九十九条第二項から第四項まで及び前二条の規定は、第一項から第三項までの規定により株主に株式の割当てを受ける権利を与える場合には、適用しない」とする。株主割当てでは株主が持株数に応じて割当てを受ける権利を有する（202条2項）ため、払込金額が有利であっても既存株主の利益は害されないからである。そして、株主割当ての場合の募集事項等は、公開会社では「取締役会の決議」によって定める（202条3項3号）。したがって、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "202",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "第百九十九条第二項から第四項まで及び前二条の規定は、第一項から第三項までの規定により株主に株式の割当てを受ける権利を与える場合には、適用しない。",
+     "text_sha256": "ae09ede01521d42345ec1b7346f85f1610297d81422b8cc8e461414b72f8c68f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "202",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の場合には、同項第一号の株主（当該株式会社を除く。）は、その有する株式の数に応じて募集株式の割当てを受ける権利を有する。",
+     "text_sha256": "ae09ede01521d42345ec1b7346f85f1610297d81422b8cc8e461414b72f8c68f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "202",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "株式会社が公開会社である場合　取締役会の決議",
+     "text_sha256": "ae09ede01521d42345ec1b7346f85f1610297d81422b8cc8e461414b72f8c68f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q18-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、公開会社でない株式会社で株主総会の特別決議を経ずに株主割当て以外の方法で募集株式を発行した場合、その瑕疵は無効原因になるとする。",
+   "body": "公開会社でない株式会社では、株主割当て以外の募集株式の発行について、募集事項の決定は「株主総会の決議によらなければならない」（199条2項）とされ、その決議は特別決議である（309条2項5号）。最高裁平成24年4月24日判決は、公開会社でない株式会社において、株主総会の特別決議を経ないまま株主割当て以外の方法による募集株式の発行がされた場合、その瑕疵は株式発行の無効原因になるとした。同判決は、公開会社でない株式会社では既存株主の持株比率の維持が重視されており、株式発行無効の訴えの提訴期間も1年とされていること（828条1項2号）などをその理由としている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "199",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項各号に掲げる事項（以下この節において「募集事項」という。）の決定は、株主総会の決議によらなければならない。",
+     "text_sha256": "742daaa99f9cbe88601264bf2da62173c9cd6545fb1e9014ffc0988829c6ef7c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "309",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第百九十九条第二項、第二百条第一項、第二百二条第三項第四号、第二百四条第二項及び第二百五条第二項の株主総会",
+     "text_sha256": "56ffbd6451793882d47ba533193af3dd09d3d0c791034f12f0f7f32cf6456aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "828",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社の成立後における株式の発行　株式の発行の効力が生じた日から六箇月以内（公開会社でない株式会社にあっては、株式の発行の効力が生じた日から一年以内）",
+     "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "新株発行無効請求事件",
+     "court": "最高裁判所第三小法廷",
+     "date": "2012-04-24",
+     "holding": "公開会社でない株式会社において、株主総会の特別決議を経ないまま株主割当て以外の方法による募集株式の発行がされた場合、その瑕疵は当該株式発行の無効原因となる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/82215/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q18-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。払込金額の下限が特に有利な金額であっても、取締役が理由を説明すれば、株主総会の特別決議で募集事項の決定を取締役会に委任できる。",
+   "body": "誤りは「委任することはできない」とする部分である。200条1項は、株主総会においては、その決議によって、「募集事項の決定を取締役（取締役会設置会社にあっては、取締役会）に委任することができる」とし、この場合には募集株式の数の上限及び払込金額の下限を定めるとする。そのうえで同条2項は、「前項の払込金額の下限が募集株式を引き受ける者に特に有利な金額である場合には、取締役は、同項の株主総会において、当該払込金額でその者の募集をすることを必要とする理由を説明しなければならない」とする。つまり、払込金額の下限が特に有利な金額であっても委任は禁止されず、理由の説明が求められるにとどまる。したがって、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "200",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条第二項及び第四項の規定にかかわらず、株主総会においては、その決議によって、募集事項の決定を取締役（取締役会設置会社にあっては、取締役会）に委任することができる。",
+     "text_sha256": "d5650e5d1f47b49df2c6c50bfbd052c4b411d6ed5175e50d78c9bf71abeb72d3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "200",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の払込金額の下限が募集株式を引き受ける者に特に有利な金額である場合には、取締役は、同項の株主総会において、当該払込金額でその者の募集をすることを必要とする理由を説明しなければならない。",
+     "text_sha256": "d5650e5d1f47b49df2c6c50bfbd052c4b411d6ed5175e50d78c9bf71abeb72d3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q18-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。「事業の継続のため緊急の必要があるとき」の例外は株主総会の承認決議についてのものであり、特定引受人に関する株主への通知は省略できない。",
+   "body": "公開会社は、募集株式の引受人が総株主の議決権の2分の1を超える議決権を有することとなる場合には、払込期日等の2週間前までに、株主に対し、当該引受人（特定引受人）の「氏名又は名称及び住所」等を通知しなければならない（206条の2第1項）。この通知が不要となるのは、特定引受人が親会社等である場合や株主割当ての場合（同項ただし書）、公告で代える場合（同条2項）、金融商品取引法の届出をしている場合等（同条3項）である。「当該公開会社の財産の状況が著しく悪化している場合において、当該公開会社の事業の継続のため緊急の必要があるとき」の例外は、10分の1以上の議決権を有する株主の反対があったときに必要となる株主総会の承認決議（同条4項）について定められたものであり、通知の義務を免除するものではない。したがって、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "206_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、当該特定引受人が当該公開会社の親会社等である場合又は第二百二条の規定により株主に株式の割当てを受ける権利を与えた場合は、この限りでない。",
+     "text_sha256": "a9f4056f8d1c88041a7b50cf25b32f71dc7247db83ff5246a51576bfef5d74d4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "206_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定による通知は、公告をもってこれに代えることができる。",
+     "text_sha256": "a9f4056f8d1c88041a7b50cf25b32f71dc7247db83ff5246a51576bfef5d74d4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "206_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の規定による通知は、することを要しない。",
+     "text_sha256": "a9f4056f8d1c88041a7b50cf25b32f71dc7247db83ff5246a51576bfef5d74d4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "206_2",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "ただし、当該公開会社の財産の状況が著しく悪化している場合において、当該公開会社の事業の継続のため緊急の必要があるときは、この限りでない。",
+     "text_sha256": "a9f4056f8d1c88041a7b50cf25b32f71dc7247db83ff5246a51576bfef5d74d4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

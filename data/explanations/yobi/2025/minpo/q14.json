@@ -1,0 +1,231 @@
+{
+ "question_id": "yobi-2025-minpo-q14",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q14-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。相続の放棄は代襲原因に当たらず、放棄をした者は初めから相続人とならなかったものとみなされるから、Ｂの子ＣはＢを代襲しない。",
+   "body": "決め手は、相続の放棄が代襲原因に含まれていない点である。887条2項は、代襲原因を、被相続人の子が「相続の開始以前に死亡したとき、又は第八百九十一条の規定に該当し、若しくは廃除によって、その相続権を失ったとき」に限っており、相続の放棄は挙げられていない。また、939条は「相続の放棄をした者は、その相続に関しては、初めから相続人とならなかったものとみなす」と定める。したがって、Ｂが相続の放棄をしても、Ｂの子ＣはＢを代襲して相続人となることはなく、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "887",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "被相続人の子が、相続の開始以前に死亡したとき、又は第八百九十一条の規定に該当し、若しくは廃除によって、その相続権を失ったときは、その者の子がこれを代襲して相続人となる。",
+     "text_sha256": "6eac3c2fc5ddf34f8bb4ef2112c6f22d510ce206b2b194c9870bf454b6e0eb12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "939",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続の放棄をした者は、その相続に関しては、初めから相続人とならなかったものとみなす。",
+     "text_sha256": "216f51496d3f22d25f4cbdffdc301b3ced35db37b4b4d6476eff92a0eca2e47f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minpo-q14-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q14-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。15歳に達していても未成年者であることに変わりはなく、法定代理人の同意を得ないでした相続の放棄は、民法5条2項・919条2項により取り消すことができる。",
+   "body": "決め手は、15歳という年齢が相続の放棄の能力とは関係しない点である。5条1項は「未成年者が法律行為をするには、その法定代理人の同意を得なければならない」とし、同条2項は「前項の規定に反する法律行為は、取り消すことができる」とする。そして919条2項は、同条1項の撤回禁止の規定は「第一編（総則）及び前編（親族）の規定により相続の承認又は放棄の取消しをすることを妨げない」と定めるから、未成年者が同意なくした相続の放棄は総則の規定により取り消すことができる。15歳は961条の遺言能力の年齢であって、相続の放棄について行為能力を認める規定はない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者が法律行為をするには、その法定代理人の同意を得なければならない。",
+     "text_sha256": "41659855924ba702729f1bdac3f46add3ca097fdcda242a6f5e99f0d612d0360",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "5",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定に反する法律行為は、取り消すことができる。",
+     "text_sha256": "41659855924ba702729f1bdac3f46add3ca097fdcda242a6f5e99f0d612d0360",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "919",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、第一編（総則）及び前編（親族）の規定により相続の承認又は放棄の取消しをすることを妨げない。",
+     "text_sha256": "94fbffe859de10cc910bb345f57775db4ee343c227bf671c771557eae11d1e6c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "961",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "十五歳に達した者は、遺言をすることができる。",
+     "text_sha256": "507a20c4a26805ab0960881c8523b1a24d19b15619e12a15de57000652149468",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minpo-q14-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q14-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。民法919条1項により、相続の承認及び放棄は熟慮期間内であっても撤回することができない。",
+   "body": "決め手は、919条1項の撤回禁止である。相続の放棄は、938条により「その旨を家庭裁判所に申述しなければならない」とされ、申述が受理されることで効力を生ずる。そして919条1項は「相続の承認及び放棄は、第九百十五条第一項の期間内でも、撤回することができない」と定める。したがって、家庭裁判所に申述が受理された相続の放棄は撤回することができず、本肢は正しい（なお、同条2項による取消しは別論である）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "919",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続の承認及び放棄は、第九百十五条第一項の期間内でも、撤回することができない。",
+     "text_sha256": "94fbffe859de10cc910bb345f57775db4ee343c227bf671c771557eae11d1e6c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "938",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続の放棄をしようとする者は、その旨を家庭裁判所に申述しなければならない。",
+     "text_sha256": "9e89f1f7baeca1b4f8dfba5e81219c50acbfec3d585bb2294a84c83fb6c36a0a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minpo-q14-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q14-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。民法920条の文言どおりである。",
+   "body": "決め手は、920条の規定そのものである。同条は「相続人は、単純承認をしたときは、無限に被相続人の権利義務を承継する」と定める。単純承認をした相続人は、限定承認のように相続によって得た財産の限度で責任を負うのではなく、被相続人の債務も含めて無限に承継する。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "920",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続人は、単純承認をしたときは、無限に被相続人の権利義務を承継する。",
+     "text_sha256": "4833faf610676396de9084fb722152f3d63f8e6628a4effd4d3884db55d868b6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minpo-q14-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-minpo-q14-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。放棄によって相続人となった次順位者Ｂが相続の承認をした後は、民法921条3号ただし書により、Ａが相続財産を私に消費しても単純承認とはみなされない。",
+   "body": "決め手は、921条3号ただし書である。同号本文は、相続人が相続の放棄をした後であっても、相続財産の全部又は一部を「私にこれを消費し」たときは単純承認をしたものとみなすとする。しかし、同号ただし書は「その相続人が相続の放棄をしたことによって相続人となった者が相続の承認をした後は、この限りでない」と定める。本肢では、Ａの放棄により相続人となった次順位のＢが相続の承認をした後にＡが消費しているから、ただし書が適用され、Ａは単純承認をしたものとはみなされない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "921",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続人が、限定承認又は相続の放棄をした後であっても、相続財産の全部若しくは一部を隠匿し、私にこれを消費し、又は悪意でこれを相続財産の目録中に記載しなかったとき。ただし、その相続人が相続の放棄をしたことによって相続人となった者が相続の承認をした後は、この限りでない。",
+     "text_sha256": "174c9ad95a4b079d0a6c936cfefb7058c72e6958096fd3b6b2b08aa734ccf1f4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-minpo-q14-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

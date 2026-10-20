@@ -28,7 +28,7 @@ SKIPS = ROOT / "data" / "review" / "explain_skips.json"
 NOW = ROOT / "NOW.md"
 INDEX = ROOT / "app" / "public" / "data" / "index.json"
 PATHS = ["data/explanations", "data/review", "data/statutes", "pipeline/egov.py", "app/public/data", "NOW.md",
-         "prompts/explain-runbook.md", "pipeline/explain_commit.py"]
+         "prompts/explain-runbook.md", "pipeline/explain_commit.py", ".gitignore"]
 CO_AUTHOR = "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 
 
@@ -75,12 +75,39 @@ def update_now() -> str:
     return line.strip()
 
 
+WINDOW = ROOT / ".claude" / "explain_window.json"  # 利用上限の5時間枠の目安（git には入れない）
+WINDOW_HOURS = 5
+CAP_PER_WINDOW = 20  # 1バッチ（6本・18問）で約4%（2026-10-20 に測定）。90% の手前で止める
+
+
+def count_window(start_end: str | None, start_used: int | None) -> None:
+    """この5時間枠で何バッチ目かを数え、上限の目安に達したら、いつまで待つかを表示する"""
+    now = datetime.datetime.now()
+    st = json.loads(WINDOW.read_text(encoding="utf-8")) if WINDOW.exists() else None
+    if start_end:  # 枠を手で合わせる（/usage の「○時間○分後にリセット」と使用率から）
+        st = {"end": start_end, "batches": 0, "cap": max(0, (90 - (start_used or 0)) // 4 - 2)}
+    if st is None or now >= datetime.datetime.fromisoformat(st["end"]):
+        st = {"end": (now + datetime.timedelta(hours=WINDOW_HOURS)).isoformat(timespec="minutes"), "batches": 0, "cap": CAP_PER_WINDOW}
+    if not start_end:
+        st["batches"] += 1
+    WINDOW.write_text(json.dumps(st, ensure_ascii=False) + "\n", encoding="utf-8")
+    end = datetime.datetime.fromisoformat(st["end"])
+    print(f"利用上限の目安：この枠 {st['batches']}/{st['cap']} バッチ（枠のリセット {end:%H:%M}）")
+    if st["batches"] >= st["cap"]:
+        print(f"⏸ 上限の目安に達した：{end + datetime.timedelta(minutes=5):%H:%M} まで待ってから次のバッチへ")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--skip", nargs=2, action="append", default=[], metavar=("QUESTION_ID", "REASON"))
     ap.add_argument("--no-push", action="store_true")
+    ap.add_argument("--window", nargs=2, metavar=("RESET_AT", "USED_PERCENT"),
+                    help="5時間枠を合わせるだけ（例 2026-10-20T14:41 18）。commit はしない")
     args = ap.parse_args()
 
+    if args.window:
+        count_window(args.window[0], int(args.window[1]))
+        return
     add_skips(args.skip)
     print(run(sys.executable, str(ROOT / "pipeline" / "regen.py")).strip().splitlines()[-1])
     qs = changed_questions()
@@ -95,8 +122,9 @@ def main() -> None:
             print("✅ push した")
     else:
         print("（commit するものなし）")
-    print("次の9問：")
-    for exam, year, subj, num, _ in queue()[:9]:
+    count_window(None, None)
+    print("次の18問：")
+    for exam, year, subj, num, _ in queue()[:18]:
         print(f"  {exam} {year} {subj} {num}")
 
 

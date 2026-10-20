@@ -1,0 +1,267 @@
+{
+ "question_id": "yobi-2025-shoho-q23",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q23-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。払込額の2分の1を超えない額は資本金に計上しないことができ（資本準備金に計上する）、「全部を資本金として計上しなければならない」わけではない。",
+   "body": "決め手は「全部を資本金として計上しなければならない」という部分である。445条1項は、資本金の額を原則として「株式の発行に際して株主となる者が当該株式会社に対して払込み又は給付をした財産の額」とする。しかし同条2項は「前項の払込み又は給付に係る額の二分の一を超えない額は、資本金として計上しないことができる。」と定め、同条3項により、その額は「資本準備金として計上しなければならない」とされる。したがって、払い込まれた金額の全部を資本金とする必要はなく、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "445",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式の発行に際して株主となる者が当該株式会社に対して払込み又は給付をした財産の額",
+     "text_sha256": "96e4c4e13ca75e4f06a3e6da8166bbace9af8037f7f88af2534e23b63a7268c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "445",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の払込み又は給付に係る額の二分の一を超えない額は、資本金として計上しないことができる。",
+     "text_sha256": "96e4c4e13ca75e4f06a3e6da8166bbace9af8037f7f88af2534e23b63a7268c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "445",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前項の規定により資本金として計上しないこととした額は、資本準備金として計上しなければならない。",
+     "text_sha256": "96e4c4e13ca75e4f06a3e6da8166bbace9af8037f7f88af2534e23b63a7268c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q23-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q23-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。資本金の額の減少の無効の訴えは、「資本金の額の減少について承認をしなかった債権者」も提起できる。",
+   "body": "828条1項5号は、株式会社における資本金の額の減少の無効を、その効力が生じた日から6か月以内に訴えをもってのみ主張できるとする。その提訴権者について、同条2項5号は「前項第五号に掲げる行為　当該株式会社の株主等、破産管財人又は資本金の額の減少について承認をしなかった債権者」と定める。したがって、資本金の額の減少について承認をしなかった債権者は、資本金の額の減少の無効の訴えを提起することができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "828",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "五　株式会社における資本金の額の減少　資本金の額の減少の効力が生じた日から六箇月以内",
+     "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "828",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "五　前項第五号に掲げる行為　当該株式会社の株主等、破産管財人又は資本金の額の減少について承認をしなかった債権者",
+     "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q23-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q23-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。純資産額が300万円を下回る場合には、剰余金の配当を認める453条などの規定が適用されないから、剰余金の配当はできない。",
+   "body": "453条は「株式会社は、その株主（当該株式会社を除く。）に対し、剰余金の配当をすることができる。」と定め、これが剰余金の配当の根拠となっている。ところが458条は「第四百五十三条から前条までの規定は、株式会社の純資産額が三百万円を下回る場合には、適用しない。」と定める。そのため、純資産額が300万円を下回る株式会社は、剰余金の配当をすることができない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "453",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、その株主（当該株式会社を除く。）に対し、剰余金の配当をすることができる。",
+     "text_sha256": "5afa0f83a634bb85026931f5d2371354356a8224c016c9d29a8837cd625a7f6f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "458",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四百五十三条から前条までの規定は、株式会社の純資産額が三百万円を下回る場合には、適用しない。",
+     "text_sha256": "b75362fa2e0b8108c955623bc1aeb06642191e545a898e009ea8cfd4c1673684",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q23-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q23-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。配当を受けた株主は、善意かどうかにかかわらず株式会社に対して帳簿価額相当額の支払義務を負う。善意の株主が免れるのは、支払をした業務執行者等からの求償だけである。",
+   "body": "決め手は「当該株式会社に対し、…支払う義務を負わない」という部分である。分配可能額を超える剰余金の配当（461条1項8号）がされた場合、462条1項は「当該行為により金銭等の交付を受けた者」が、業務執行者等とともに「当該株式会社に対し、連帯して、当該金銭等の交付を受けた者が交付を受けた金銭等の帳簿価額に相当する金銭を支払う義務を負う」と定め、株主の善意・悪意を問わない。株主の善意が意味を持つのは463条1項で、分配可能額を超えることにつき善意の株主は、「前条第一項の金銭を支払った業務執行者及び同項各号に定める者からの求償の請求に応ずる義務を負わない」とされるにとどまる。したがって、善意無重過失の株主でも株式会社に対する支払義務は負い、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "461",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "八　剰余金の配当",
+     "text_sha256": "9a871c2bae44735ab65cd230da8a8a5aadcba06ad85af9a461fa636ed3e2c6e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "462",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該株式会社に対し、連帯して、当該金銭等の交付を受けた者が交付を受けた金銭等の帳簿価額に相当する金銭を支払う義務を負う。",
+     "text_sha256": "18a9476713cb2e54798e27ed3943e5d87428581c1a33cd344db7b1529f4bb009",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "463",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条第一項の金銭を支払った業務執行者及び同項各号に定める者からの求償の請求に応ずる義務を負わない。",
+     "text_sha256": "25bcb22ecae8cad7be9463e56c97adaa6e803c2cd1ba7e849814794563f70a78",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q23-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-shoho-q23-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。剰余金の配当の対象から除かれるのは「当該株式会社」（自己株式）だけであり、親会社株式を有する子会社も株主として配当を受けられる。",
+   "body": "決め手は「剰余金の配当を受けることができない」という部分である。453条は「株式会社は、その株主（当該株式会社を除く。）に対し、剰余金の配当をすることができる。」と定め、配当の対象から除かれるのは株式会社自身（自己株式）に限られる。子会社は親会社株式の取得を原則として禁じられ（135条1項）、例外的に取得した場合も「相当の時期にその有する親会社株式を処分しなければならない」（同条3項）が、保有している間の剰余金の配当を受ける権利を否定する規定はない。したがって、子会社は、その有する親会社株式について剰余金の配当を受けることができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "453",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、その株主（当該株式会社を除く。）に対し、剰余金の配当をすることができる。",
+     "text_sha256": "5afa0f83a634bb85026931f5d2371354356a8224c016c9d29a8837cd625a7f6f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "135",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子会社は、その親会社である株式会社の株式（以下この条において「親会社株式」という。）を取得してはならない。",
+     "text_sha256": "57fd9700994e501063b255cd853fafab53fcbae756c0d2baa2e74940648c1170",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "135",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "子会社は、相当の時期にその有する親会社株式を処分しなければならない。",
+     "text_sha256": "57fd9700994e501063b255cd853fafab53fcbae756c0d2baa2e74940648c1170",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-shoho-q23-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
