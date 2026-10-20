@@ -1,0 +1,213 @@
+{
+ "question_id": "yobi-2026-minso-q38",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q38-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。事件を書面による準備手続に付するには「当事者の意見を聴いて」することが条文上求められている。",
+   "body": "175条は「裁判所は、相当と認めるときは、当事者の意見を聴いて、事件を書面による準備手続（当事者の出頭なしに準備書面の提出等により争点及び証拠の整理をする手続をいう。以下同じ。）に付することができる」と定める。書面による準備手続は当事者の出頭なしに争点及び証拠の整理を進める手続であるため、付する前に当事者の意見を聴くことが要件とされている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "175",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、相当と認めるときは、当事者の意見を聴いて、事件を書面による準備手続（当事者の出頭なしに準備書面の提出等により争点及び証拠の整理をする手続をいう。以下同じ。）に付することができる。",
+     "text_sha256": "b275076b934c4df275578590ffbbb82a41f440dd7538b1535a85cf4000c731bc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minso-q38-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q38-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。準備的口頭弁論は口頭弁論そのものであるから、その結果は当然に訴訟資料となり、その後の口頭弁論で陳述する必要はない。",
+   "body": "準備的口頭弁論は、争点及び証拠の整理を目的として行われる口頭弁論である（164条「準備的口頭弁論を行うことができる」）。口頭弁論で行われた弁論や証拠調べはそれ自体が訴訟資料・証拠資料となるから、準備的口頭弁論の結果を改めて陳述する必要はないと解されている。これに対し、口頭弁論ではない弁論準備手続については、「当事者は、口頭弁論において、弁論準備手続の結果を陳述しなければならない」（173条）と定められている。本肢は、弁論準備手続についての規律を準備的口頭弁論に当てはめた点で誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "164",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、争点及び証拠の整理を行うため必要があると認めるときは、この款に定めるところにより、準備的口頭弁論を行うことができる。",
+     "text_sha256": "88ddf7ba6a5bfe7998372cf83e246fdb276affaa9a698cfec67c89963ec3b011",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "173",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者は、口頭弁論において、弁論準備手続の結果を陳述しなければならない。",
+     "text_sha256": "3910b35eb023241071c20cc3ae92c71326db598589584773cdce65b5a847db76",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "準備的口頭弁論の結果について陳述が不要であることは、それが口頭弁論であることからの解釈による（明文の規定はない）。"
+   ],
+   "id": "exp-yobi-2026-minso-q38-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q38-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。現行の170条3項は、当事者双方が出頭しない場合でも、相当と認めるときは電話会議の方法で弁論準備手続の期日における手続を行うことを認めている。",
+   "body": "170条3項は「裁判所は、相当と認めるときは、当事者の意見を聴いて、最高裁判所規則で定めるところにより、裁判所及び当事者双方が音声の送受信により同時に通話をすることができる方法によって、弁論準備手続の期日における手続を行うことができる」と定め、当事者の一方が期日に出頭していることを要件としていない。そして、「前項の期日に出頭しないで同項の手続に関与した当事者は、その期日に出頭したものとみなす」（170条4項）。したがって、当事者双方が出頭しない場合であっても、音声の送受信による方法で期日の手続を行うことができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "170",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "裁判所は、相当と認めるときは、当事者の意見を聴いて、最高裁判所規則で定めるところにより、裁判所及び当事者双方が音声の送受信により同時に通話をすることができる方法によって、弁論準備手続の期日における手続を行うことができる。",
+     "text_sha256": "c9a45670618c088c4ff91c2cb86f6abfde279e17ff6e33e14b8761e890cf82e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "170",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "前項の期日に出頭しないで同項の手続に関与した当事者は、その期日に出頭したものとみなす。",
+     "text_sha256": "c9a45670618c088c4ff91c2cb86f6abfde279e17ff6e33e14b8761e890cf82e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "170条3項は令和4年の民事訴訟法改正で、当事者の一方が期日に出頭していることを要しない形に改められたと理解している（改正前の文言は保存した本文では確認していない）。本問は令和8年の出題で、現行法に基づく。"
+   ],
+   "id": "exp-yobi-2026-minso-q38-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q38-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。準備的口頭弁論は口頭弁論であるから、その期日において証人尋問を含む証拠調べを行うことができる。",
+   "body": "準備的口頭弁論は、争点及び証拠の整理を行うために行われる口頭弁論である（164条）。口頭弁論である以上、証拠調べの種類に制限はなく、証人尋問を行うこともできると解されている。これに対し、弁論準備手続の期日にできる証拠調べは、170条2項により「文書（第二百三十一条に規定する物件を含む。）の証拠調べ」などに限られており、証人尋問はできない。したがって、準備的口頭弁論の期日において証人尋問を行うことができるとする本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "164",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、争点及び証拠の整理を行うため必要があると認めるときは、この款に定めるところにより、準備的口頭弁論を行うことができる。",
+     "text_sha256": "88ddf7ba6a5bfe7998372cf83e246fdb276affaa9a698cfec67c89963ec3b011",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "170",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "文書（第二百三十一条に規定する物件を含む。）の証拠調べ",
+     "text_sha256": "c9a45670618c088c4ff91c2cb86f6abfde279e17ff6e33e14b8761e890cf82e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "準備的口頭弁論で証人尋問ができる点は、それが口頭弁論であることからの解釈による。"
+   ],
+   "id": "exp-yobi-2026-minso-q38-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q38-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。当事者が申し出た者の傍聴は、手続を行うのに支障を生ずるおそれがあると認める場合を除き許さなければならず、相手方の異議だけで不許可となるわけではない。",
+   "body": "169条2項は「裁判所は、相当と認める者の傍聴を許すことができる。ただし、当事者が申し出た者については、手続を行うのに支障を生ずるおそれがあると認める場合を除き、その傍聴を許さなければならない」と定める。傍聴を拒む基準は「手続を行うのに支障を生ずるおそれ」の有無であり、相手方当事者の異議の有無は要件とされていない。したがって、相手方が異議を述べた場合には傍聴を許すことができないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "169",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判所は、相当と認める者の傍聴を許すことができる。ただし、当事者が申し出た者については、手続を行うのに支障を生ずるおそれがあると認める場合を除き、その傍聴を許さなければならない。",
+     "text_sha256": "2d83033d831e44a3ee44bbf283165fce454d26d0b5f609533b5ddf24244b6aec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minso-q38-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

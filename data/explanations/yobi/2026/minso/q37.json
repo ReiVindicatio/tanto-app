@@ -1,0 +1,270 @@
+{
+ "question_id": "yobi-2026-minso-q37",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q37-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。弁論の再開は裁判所の裁量であり、当事者の再開申請は職権発動を促すものにすぎないから、裁判所はその申請について裁判をする必要はない。",
+   "body": "153条は「裁判所は、終結した口頭弁論の再開を命ずることができる」と定めるだけで、当事者に再開の申立権を与えていない。判例も、一旦終結した弁論を再開するかどうかは裁判所の裁量に委ねられた事項であり、当事者は権利として弁論の再開を請求できず、弁論再開の申請は裁判所の職権発動を促すものにすぎないとして、再開申請に応ずることなく判決を言い渡しても、そのことだけで判決に瑕疵があるとはいえないとしている（最判昭和36年9月5日）。したがって、申請について裁判をしなければならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "153",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、終結した口頭弁論の再開を命ずることができる。",
+     "text_sha256": "ec831eab9f0c7b30eb47631d5d51576f6e5045d8bbdce809512b7f98e5dbfc1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "貸金請求事件",
+     "court": "最高裁判所第三小法廷",
+     "date": "1961-09-05",
+     "holding": "終結した弁論を再開するかどうかは裁判所の裁量に委ねられており、当事者は権利として弁論の再開を請求できず、弁論再開の申請は裁判所の職権発動を促すものにすぎないから、原審が再開申請に応ずることなく判決を言い渡しても、その一事で原判決に瑕疵があるとはいえない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/63550/detail2/index.html",
+      "https://www.courts.go.jp/assets/hanrei/hanrei-pdf-63550.pdf"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2026-minso-q37-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q37-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。裁判所は「口頭弁論の制限」を命ずることができ、訴訟要件の争点に審理を集中させるために弁論を制限することもできる。",
+   "body": "152条1項は「裁判所は、口頭弁論の制限、分離若しくは併合を命じ、又はその命令を取り消すことができる」と定める。口頭弁論の制限とは、複数の争点がある場合に、審理の対象を一部の争点に限定して弁論させることをいう。訴訟要件の存否は本案判決の前提となるから、まず訴訟要件についての争点に審理を集中し、その結果によっては訴えを却下するという進め方は、弁論の制限の典型的な使い方と解されている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "152",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、口頭弁論の制限、分離若しくは併合を命じ、又はその命令を取り消すことができる。",
+     "text_sha256": "74834647179093104683e38a31ecd5ab334facb65e937f26a01190810707b950",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "訴訟要件の争点への制限が許される点は、152条1項の文言と一般的な理解による（解釈による）。"
+   ],
+   "id": "exp-yobi-2026-minso-q37-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q37-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。口頭弁論の併合は裁判所が裁量で命ずることができ、当事者の意見を聴くことは要件とされていない。",
+   "body": "152条1項は「裁判所は、口頭弁論の制限、分離若しくは併合を命じ、又はその命令を取り消すことができる」と定めるだけで、当事者の意見を聴くことを求めていない。これに対し、弁論準備手続に付する場合（168条）や書面による準備手続に付する場合（175条）には、条文上「当事者の意見を聴いて」とされており、併合についてはこのような定めがない。併合に関して当事者の手続保障に配慮した規定は、当事者を異にする事件を併合した場合の証人の再尋問（152条2項）にとどまる。したがって、併合の際に当事者の意見を聴かなければならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "152",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、口頭弁論の制限、分離若しくは併合を命じ、又はその命令を取り消すことができる。",
+     "text_sha256": "74834647179093104683e38a31ecd5ab334facb65e937f26a01190810707b950",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "152",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判所は、当事者を異にする事件について口頭弁論の併合を命じた場合において、その前に尋問をした証人について、尋問の機会がなかった当事者が尋問の申出をしたときは、その尋問をしなければならない。",
+     "text_sha256": "74834647179093104683e38a31ecd5ab334facb65e937f26a01190810707b950",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "168",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、争点及び証拠の整理を行うため必要があると認めるときは、当事者の意見を聴いて、事件を弁論準備手続に付することができる。",
+     "text_sha256": "b88bb2e9d2a9ad269d847331b8607ff21c2eeae8005f477e266d51ac2c88b69e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "175",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、相当と認めるときは、当事者の意見を聴いて",
+     "text_sha256": "b275076b934c4df275578590ffbbb82a41f440dd7538b1535a85cf4000c731bc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minso-q37-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q37-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。主債務者と連帯保証人を共同被告とする訴訟は通常共同訴訟であり、裁判所は口頭弁論を分離して判決することができる。",
+   "body": "主債務者に対する請求と連帯保証人に対する請求は、合一に確定する必要がないから、通常共同訴訟（38条）と解されている。通常共同訴訟では「共同訴訟人の一人の訴訟行為、共同訴訟人の一人に対する相手方の訴訟行為及び共同訴訟人の一人について生じた事項は、他の共同訴訟人に影響を及ぼさない」（39条）とされ、各請求は独立して審判できる。そのため裁判所は、152条1項により「口頭弁論の制限、分離若しくは併合を命じ」ることができ、連帯保証人に対する訴えについて弁論を分離して判決することもできる。主債務と保証債務は法律上併存し得ない関係にはないから、弁論及び裁判の分離が禁止される同時審判申出共同訴訟（41条1項）にも当たらない。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "38",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の目的である権利又は義務が数人について共通であるとき、又は同一の事実上及び法律上の原因に基づくときは、その数人は、共同訴訟人として訴え、又は訴えられることができる。",
+     "text_sha256": "449a4259eeb0c10d37273603ae340e07c14600e7b01b07db3f0ad401200ec08a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共同訴訟人の一人の訴訟行為、共同訴訟人の一人に対する相手方の訴訟行為及び共同訴訟人の一人について生じた事項は、他の共同訴訟人に影響を及ぼさない。",
+     "text_sha256": "ccf55fe5cf58e00bab9c99d303d2932ec7030afe5d3235552e147aee82265722",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "152",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、口頭弁論の制限、分離若しくは併合を命じ、又はその命令を取り消すことができる。",
+     "text_sha256": "74834647179093104683e38a31ecd5ab334facb65e937f26a01190810707b950",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "41",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共同被告の一方に対する訴訟の目的である権利と共同被告の他方に対する訴訟の目的である権利とが法律上併存し得ない関係にある場合において、原告の申出があったときは、弁論及び裁判は、分離しないでしなければならない。",
+     "text_sha256": "ff22f23ac6b53066840c29a2924b312d95b122c6aa85acf323652c457ecca86a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "主債務者と連帯保証人の共同訴訟が通常共同訴訟であるとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2026-minso-q37-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q37-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。148条1項が「口頭弁論は、裁判長が指揮する」と定めている。",
+   "body": "148条1項は「口頭弁論は、裁判長が指揮する」と定め、口頭弁論の訴訟指揮権を裁判長に与えている。同条2項により、裁判長は、発言を許し、又はその命令に従わない者の発言を禁ずることができる。本肢は148条1項の文言そのままであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "148",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "口頭弁論は、裁判長が指揮する。",
+     "text_sha256": "41a226bed349ca75a126fc6d6cd7c47ae2e1b25e53a684d04d5ddce94ca27a2d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "148",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判長は、発言を許し、又はその命令に従わない者の発言を禁ずることができる。",
+     "text_sha256": "41a226bed349ca75a126fc6d6cd7c47ae2e1b25e53a684d04d5ddce94ca27a2d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minso-q37-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
