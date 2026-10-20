@@ -1,0 +1,309 @@
+{
+ "question_id": "yobi-2022-keiho-q08",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiho-q08-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：財物の詐取と、その返還を免れるための殺害（二項強盗による強盗殺人）は、同一の財物をめぐる一連の行為であり、判例は詐欺罪と強盗殺人罪の包括一罪としている。",
+   "body": "甲は財物を詐取した時点で詐欺罪（刑法246条1項「人を欺いて財物を交付させた者」）が成立する。その後、財物の返還を免れるためにＡを殺害した行為は、暴行により「財産上不法の利益を得」たものとして二項強盗（刑法236条2項）に当たり、殺害したことから強盗殺人罪（刑法240条「死亡させたときは死刑又は無期拘禁刑に処する」）が成立する。両罪は同一の財物に向けられ、当初の計画に基づく一連の行為であるから、別々に処罰するのではなく包括一罪として重い強盗殺人罪の刑で処断すると解されている。判例も、財物を窃取又は詐取した後、その返還等を免れるために被害者を殺害しようとした事案で、窃盗罪又は詐欺罪と二項強盗による強盗殺人未遂罪との包括一罪になるとしている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "246",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を欺いて財物を交付させた者は、十年以下の拘禁刑に処する。",
+     "text_sha256": "c515031b5f484a4ebf537cf5f2eb826a008d119836fd4627833e9cdb1f4a5053",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "236",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の方法により、財産上不法の利益を得、又は他人にこれを得させた者も、同項と同様とする。",
+     "text_sha256": "94933b7944ee4b77bfc917a6272144192701687cd4b3a9d5e44f871febc2aa44",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "240",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "死亡させたときは死刑又は無期拘禁刑に処する。",
+     "text_sha256": "606eeb6a25b0c01dd2a8d06824cea550181f8c9024cb24edda30017c5d886eb7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "窃盗罪又は詐欺罪と二項強盗による強盗殺人未遂罪との包括一罪",
+     "court": "最高裁判所第一小法廷",
+     "date": "1986-11-18",
+     "holding": "覚せい剤を取引名目で受け取って持ち逃げした後、その返還等を免れるために被害者を殺害しようとした事案で、一項強盗による強盗殺人未遂罪ではなく、窃盗罪又は詐欺罪と二項強盗による強盗殺人未遂罪との包括一罪になるとした（決定）。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51866/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2022-keiho-q08-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiho-q08-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：凶器準備集合罪は集合した時点で成立し、その後の暴行とは別個の行為であるから、両罪は併合罪となる。",
+   "body": "刑法208条の2第1項は「二人以上の者が他人の生命、身体又は財産に対し共同して害を加える目的で集合した場合において、凶器を準備して又はその準備があることを知って集合した者」を処罰する。甲は、Ａの身体に共同して危害を加える目的で日本刀を準備して集合した時点で凶器準備集合罪が成立する。その後の殴打は、集合とは別の行為として暴行罪を構成する。凶器準備集合罪は個人の生命・身体等のほか公共の平穏も保護するものと解されており、集合行為と暴行は「一個の行為」（刑法54条1項）ではなく、また通常の手段・結果の関係にもないから、両罪は併合罪（刑法45条）になると解されている。判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "208_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二人以上の者が他人の生命、身体又は財産に対し共同して害を加える目的で集合した場合において、凶器を準備して又はその準備があることを知って集合した者",
+     "text_sha256": "409d52424951d399e13966a89bec5db86042435cc6a3743988b1bd42f60ca9c1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ、又は犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "凶器準備集合罪と暴行・傷害罪等を併合罪とする最高裁の判例があるとされるが、裁判所の裁判例検索で確認できなかった（要確認）。"
+   ],
+   "id": "exp-yobi-2022-keiho-q08-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiho-q08-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：過失による誤射と、その後に殺意を抱いて改めて発砲した行為は別個の行為であり、業務上過失傷害罪と殺人罪は包括一罪ではなく併合罪となる。",
+   "body": "誤りは「包括一罪となる」とする部分である。最初の発砲は、業務として狩猟に従事中にＡを熊と誤認したもので、業務上過失傷害罪（刑法211条「業務上必要な注意を怠り、よって人を死傷させた者」）が成立する。その後、誤射に気付いたうえで殺意をもって改めて発砲した行為は、新たな意思決定に基づく別個の行為であり、殺人罪（刑法199条）が成立する。過失犯と故意犯とで罪質が異なり、行為も別であるから、両罪は包括一罪ではなく併合罪（刑法45条）になると解されている。判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "211",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "業務上必要な注意を怠り、よって人を死傷させた者は、五年以下の拘禁刑又は百万円以下の罰金に処する。",
+     "text_sha256": "2eac2464c840ad0caed297f7baccc92321beb960df7d6e1b87958811f8d8155a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者は、死刑又は無期若しくは五年以上の拘禁刑に処する。",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "熊と誤認して誤射した後に殺意をもって発砲した事案で業務上過失傷害罪と殺人罪を併合罪とした最高裁の決定があるとされるが、裁判所の裁判例検索で確認できなかった（要確認）。"
+   ],
+   "id": "exp-yobi-2022-keiho-q08-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiho-q08-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：キャッシュカードの窃取（Ｂに対する窃盗）と、現金自動預払機からの不正な払戻し（Ａ銀行に対する窃盗）は、被害者も客体も行為も異なり、2個の窃盗罪の併合罪となる。",
+   "body": "刑法235条は「他人の財物を窃取した者」を窃盗の罪とする。まず、Ｂからキャッシュカードを盗んだ行為は、Ｂの占有するカードを窃取したものとして窃盗罪が成立する。次に、そのカードを使って現金自動預払機から預金を払い戻した行為は、正当な払戻権限がないのに、機械を管理する銀行の意思に反してその占有する現金を自己の占有に移すものであり、Ａ銀行に対する別の窃盗罪が成立すると解されている。両者は別個の行為であり、カードの窃取は払戻しの手段となりうるとしても、通常の手段・結果の関係（刑法54条1項後段の牽連犯）にあるとまではいえないと解されているから、2個の窃盗罪は併合罪（刑法45条）となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "235",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の財物を窃取した者は、窃盗の罪とし、十年以下の拘禁刑又は五十万円以下の罰金に処する。",
+     "text_sha256": "44f910b87f784daf350f25c4067c5a24e6e862555ec52f35ceea3c0cd53efc1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "払戻しが銀行に対する窃盗に当たる点、牽連犯に当たらない点は解釈による。"
+   ],
+   "id": "exp-yobi-2022-keiho-q08-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiho-q08-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：別々の被害者Ａ・Ｂに対し、それぞれ別個の殴打行為で傷害を負わせているから、2個の傷害罪は包括一罪ではなく併合罪となる。",
+   "body": "誤りは「包括一罪となる」とする部分である。傷害罪（刑法204条「人の身体を傷害した者」）の保護法益である身体は、被害者ごとに別個の法益であり、被害者の数に応じて罪が成立すると解されている。甲は、Ａを1回殴打した後、改めてＢを1回殴打しており、時間的に接着していても1個の行為ではないから、観念的競合（刑法54条1項前段）にもならない。また、被害者が異なる以上、同一法益に対する侵害として包括して評価することもできないと解されている。したがって、2個の傷害罪は併合罪（刑法45条）となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "204",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の身体を傷害した者は、十五年以下の拘禁刑又は五十万円以下の罰金に処する。",
+     "text_sha256": "6ede21287a797c6f241c77f9e36de03258b58392279dd9ec60ceafb09f7b2af4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "一身専属的法益の侵害は被害者ごとに罪が成立するという点は解釈による。"
+   ],
+   "id": "exp-yobi-2022-keiho-q08-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

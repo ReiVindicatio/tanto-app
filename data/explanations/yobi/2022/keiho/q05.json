@@ -1,0 +1,180 @@
+{
+ "question_id": "yobi-2022-keiho-q05",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiho-q05-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：心神喪失・心神耗弱の前提となる「精神の障害」は継続的な精神病に限られず、飲酒による酩酊など一時的な精神状態の異常も含むと解されている。",
+   "body": "ポイントは、「精神の障害」に一時的な精神状態の異常が含まれるかである。刑法39条1項は「心神喪失者の行為は、罰しない。」と定めるだけで、心神喪失の中身は解釈に委ねられている。心神喪失は、精神の障害により事物の理非善悪を弁識する能力又はこの弁識に従って行動する能力のない状態と解されており、その原因となる精神の障害は、継続的な精神病に限らず、飲酒による酩酊のような一時的な異常も含むと解されている。実際にも、飲酒による酩酊の結果、心神耗弱や心神喪失とされることがある。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "心神喪失者の行為は、罰しない。",
+     "text_sha256": "4236e15d1f95ac4b17dcb57ed3f40e51cdea371d6f25530312c8881f35fac335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "心神喪失の定義は大審院の判例によるとされるが、判決は確認していない。一時的な異常を含む点は解釈による。"
+   ],
+   "id": "exp-yobi-2022-keiho-q05-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiho-q05-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：刑法41条は14歳に満たない者の行為を一律に罰しないとしており、事案が重大でも13歳の少年に刑罰を科すことはできない。",
+   "body": "誤りは「相当と認めるときは刑罰を科すことができる」とする部分である。刑法41条は「十四歳に満たない者の行為は、罰しない。」と定め、例外を設けていない。14歳未満の者は、個々の事案の重大性や本人の成熟度にかかわらず、一律に刑事責任能力がないものとして扱われる。故意の犯罪行為で被害者を死亡させた場合に刑事処分を相当として検察官に送致する仕組みは、14歳以上の少年についての少年法上の制度であり、13歳の少年には及ばないと解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "41",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "十四歳に満たない者の行為は、罰しない。",
+     "text_sha256": "6596f758086ea14251ded9cb64ecdb663d19193f8673c5a9635b2c20d9c2b604",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "少年法は data/statutes/ に保存されていないため、条文は引用していない。"
+   ],
+   "id": "exp-yobi-2022-keiho-q05-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiho-q05-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：自ら覚醒剤を使用した結果の精神障害であっても、それだけで刑法39条2項の適用が排除されるわけではない。",
+   "body": "誤りは「自己の先行行為によって心神耗弱状態を招いたものであるから、刑法第３９条第２項を適用する余地はない」とする部分である。刑法39条2項は「心神耗弱者の行為は、その刑を減軽する。」と定め、心神耗弱の原因が自招のものかどうかで区別していない。自ら招いた責任能力の低下について完全な責任を問うには、いわゆる原因において自由な行為の考え方により、責任能力のある時点の原因行為と結果との結び付き（故意・過失を含む）を検討する必要があると解されている。日常的・継続的に覚醒剤を使用して継続的な精神障害が生じたというだけでは、その時点で傷害の犯行についての故意等があったとはいえず、犯行時に心神耗弱であれば同項の適用の余地がある。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "39",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "心神耗弱者の行為は、その刑を減軽する。",
+     "text_sha256": "4236e15d1f95ac4b17dcb57ed3f40e51cdea371d6f25530312c8881f35fac335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "原因において自由な行為の考え方は解釈による。本肢に対応する判例は確認していない。"
+   ],
+   "id": "exp-yobi-2022-keiho-q05-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiho-q05-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：刑法39条2項は「その刑を減軽する」と定める必要的減軽であり、心神耗弱が認められれば必ず刑を減軽しなければならない。",
+   "body": "誤りは「刑の任意的減軽を定めている」「その刑を減軽しないことができる」とする部分である。刑法39条2項は「心神耗弱者の行為は、その刑を減軽する。」と定めており、減軽するかどうかを裁判所の裁量に委ねる文言にはなっていない。したがって、犯行時に心神耗弱の状態にあったと認められる以上、裁判所は必ず刑を減軽しなければならない（必要的減軽）。本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "39",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "心神耗弱者の行為は、その刑を減軽する。",
+     "text_sha256": "4236e15d1f95ac4b17dcb57ed3f40e51cdea371d6f25530312c8881f35fac335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2022-keiho-q05-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2022-keiho-q05-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：責任能力は行為ごとに判断されるため、同一人について罪によって責任能力の有無が分かれる事態（部分的責任能力）は観念し得る。",
+   "body": "ポイントは、責任能力が人単位ではなく行為単位で判断されるかである。刑法39条は「心神喪失者の行為」「心神耗弱者の行為」と、行為を単位に定めている。責任能力は、当該行為の時点で、その行為の違法性を弁識し、それに従って行動を制御する能力があったかで判断されると解されている。そうすると、精神障害の内容によっては、ある種類の行為については弁識・制御の能力が保たれているが、別の行為についてはそれが失われているということもありうる。したがって、Ａ罪の行為には責任能力があり、Ｂ罪の別の行為には責任能力がないという事態は観念し得るので、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "39",
+     "paragraphs": [
+      "1",
+      "2"
+     ],
+     "quote": "心神喪失者の行為は、罰しない。",
+     "text_sha256": "4236e15d1f95ac4b17dcb57ed3f40e51cdea371d6f25530312c8881f35fac335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "部分的責任能力の考え方は解釈による。"
+   ],
+   "id": "exp-yobi-2022-keiho-q05-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
