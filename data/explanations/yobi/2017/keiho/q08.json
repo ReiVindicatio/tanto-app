@@ -1,0 +1,255 @@
+{
+ "question_id": "yobi-2017-keiho-q08",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiho-q08-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。放火の予備罪（刑法113条）は108条と109条1項の罪に限られ、建造物等以外放火罪の予備は処罰されない。",
+   "body": "誤りは、「建造物等以外放火罪の予備罪が成立する」とする点である。刑法113条は「第百八条又は第百九条第一項の罪を犯す目的で、その予備をした者」を処罰するにとどまり、110条の建造物等以外放火罪を犯す目的の予備は対象としていない。本問の甲は、駐車中の乙所有の自動車（建造物等以外の物）を燃やす目的で灯油とライターを準備して向かったにすぎず、放火の実行にも至っていない。したがって、甲に建造物等以外放火罪の予備罪は成立せず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百八条又は第百九条第一項の罪を犯す目的で、その予備をした者は、二年以下の拘禁刑に処する。",
+     "text_sha256": "2bb7f03364843a7047590272d13c4766299c273cf99321db5c9339ad7ffe6a65",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "110",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "放火して、前二条に規定する物以外の物を焼損し、よって公共の危険を生じさせた者は、一年以上十年以下の拘禁刑に処する。",
+     "text_sha256": "e57ef09fc88cc82d4cf26b2048ff8150accb7212af342ee6d7680ec59a521152",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "刑法113条・110条の法定刑は、出題時点では「懲役」であったが、現行法では「拘禁刑」となっている。結論には影響しない。"
+   ],
+   "id": "exp-yobi-2017-keiho-q08-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiho-q08-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。殺意をもって現住建造物に放火し居住者を焼死させた場合、判例の立場では現住建造物等放火罪のほかに殺人罪が成立し、両罪は観念的競合となる。",
+   "body": "誤りは、「現住建造物等放火罪のみが成立する」とする点である。現住建造物等放火罪（刑法108条）は公共の危険を内容とする罪であり、建造物内の人の生命を害することまで評価し尽くすものではないと解されている。そのため、甲が乙を殺そうと考えて乙の住む家屋に放火し、乙を焼死させた場合には、108条の罪に加えて、199条の「人を殺した」として殺人罪も成立すると解される。判例も、殺意をもって放火して人を焼死させた場合に、放火罪と殺人罪の観念的競合を認めているとされる（判例あり（要確認））。両罪は1個の放火行為によるものであるから、54条1項の「一個の行為が二個以上の罪名に触れ」る場合にあたり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "放火して、現に人が住居に使用し又は現に人がいる建造物、汽車、電車、艦船又は鉱坑を焼損した者は、死刑又は無期若しくは五年以上の拘禁刑に処する。",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者は、死刑又は無期若しくは五年以上の拘禁刑に処する。",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "殺意をもった放火による焼死について放火罪と殺人罪の観念的競合を認めた判例（大審院の判例とされる）は、courts.go.jp の判決ページで確認できなかったため、要確認とした。",
+    "解釈による（放火罪と殺人罪の罪数関係）。"
+   ],
+   "id": "exp-yobi-2017-keiho-q08-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiho-q08-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。唯一の居住者である乙を殺害した後の家屋は「現に人が住居に使用」するものではなく、人もいなければ、非現住建造物等放火罪にとどまる。",
+   "body": "誤りは、「現住建造物等放火罪が成立する」とする点である。刑法108条の客体は「現に人が住居に使用し又は現に人がいる建造物」であり、ここでいう「人」は犯人以外の者をいうと解されている。本問の家屋は乙が一人で居住していたものであり、甲が乙を殺害した後は、もはや犯人以外の者が住居に使用しているとはいえず、放火の時点で家屋に人もいなかった。判例も、居住者全員を殺害した後に放火した事案で、その建造物は非現住建造物にあたるとしているとされる（判例あり（要確認））。したがって、丙所有の家屋は109条1項の「現に人が住居に使用せず、かつ、現に人がいない建造物」にあたり、甲には非現住建造物等放火罪が成立するにとどまるから、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現に人が住居に使用し又は現に人がいる建造物",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "109",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "放火して、現に人が住居に使用せず、かつ、現に人がいない建造物、艦船又は鉱坑を焼損した者は、二年以上の有期拘禁刑に処する。",
+     "text_sha256": "326d774ec2f98dbdafb0b8f657f6202a0b84b7f679959effbd50cd3ad527d210",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "居住者全員を殺害した後の放火について非現住建造物等放火罪にとどまるとした判例（大審院の判例とされる）は、courts.go.jp の判決ページで確認できなかったため、要確認とした。",
+    "解釈による（108条の「人」は犯人以外の者をいうとの理解）。"
+   ],
+   "id": "exp-yobi-2017-keiho-q08-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiho-q08-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例の立場では、建造物等以外放火罪の成立には公共の危険の発生についての認識は不要である。",
+   "body": "ポイントは、刑法110条の「よって公共の危険を生じさせた」について、行為者の認識が必要かである。110条1項は「放火して、前二条に規定する物以外の物を焼損し、よって公共の危険を生じさせた者」を処罰し、同条2項は、その物が「自己の所有に係るとき」の刑を定めている。判例は、110条1項の罪は、火を放って同条所定の物を焼損する認識があれば足り、公共の危険の発生まで認識する必要はないとしているとされる（判例あり（要確認））。本問の甲は、自己所有の自動車を燃やす認識で放火して全焼させ、公共の危険を生じさせているから、公共の危険の発生についての認識がなくても、110条2項の建造物等以外放火罪が成立する。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "110",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "放火して、前二条に規定する物以外の物を焼損し、よって公共の危険を生じさせた者",
+     "text_sha256": "e57ef09fc88cc82d4cf26b2048ff8150accb7212af342ee6d7680ec59a521152",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "110",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の物が自己の所有に係るときは、一年以下の拘禁刑又は十万円以下の罰金に処する。",
+     "text_sha256": "e57ef09fc88cc82d4cf26b2048ff8150accb7212af342ee6d7680ec59a521152",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "建造物等以外放火罪について公共の危険の発生の認識を不要とした最高裁の判例（昭和60年の判決とされる）は、courts.go.jp の判決ページで確認できなかったため、要確認とした。"
+   ],
+   "id": "exp-yobi-2017-keiho-q08-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiho-q08-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。現住建造物を燃やす目的で、その壁際の自動車に放火して延焼の危険を生じさせた以上、現住建造物等放火罪の実行の着手があり、同罪の未遂罪が成立すると解される。",
+   "body": "誤りは、「建造物等以外放火罪のみが成立する」とする点である。本問の甲は、乙が居住する家屋（刑法108条の客体）を燃やす目的で、その壁際に駐車された自動車に放火して焼損し、家屋への延焼の危険を生じさせている。このように、目的物を焼損させるための媒介物に火を放ち、目的物に燃え移る危険を生じさせた時点で、現住建造物等放火罪の実行の着手があると解されている。家屋は通行人の消火により燃え移らなかったから焼損に至っておらず、112条の「第百八条及び第百九条第一項の罪の未遂は、罰する。」により現住建造物等放火未遂罪が成立する。自動車の焼損は、この未遂罪の過程で生じたものとして同罪に吸収されると解されており、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現に人が住居に使用し又は現に人がいる建造物",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "112",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百八条及び第百九条第一項の罪の未遂は、罰する。",
+     "text_sha256": "1076d517e8e1b9801473d29d8524ca430e39e70e749b594cc69bda2557c46139",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（媒介物への放火による実行の着手、建造物等以外放火罪の吸収）。"
+   ],
+   "id": "exp-yobi-2017-keiho-q08-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

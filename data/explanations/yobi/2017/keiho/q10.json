@@ -1,0 +1,195 @@
+{
+ "question_id": "yobi-2017-keiho-q10",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiho-q10-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。名誉毀損罪の「事実」は非公知のものに限られず、公知の事実を摘示しても同罪は成立しうる。",
+   "body": "誤りは、摘示される「事実」は「非公知のものでなければならない」とする点である。刑法230条1項は「公然と事実を摘示し、人の名誉を毀損した者は、その事実の有無にかかわらず」処罰するとしており、事実が公知かどうかで限定していない。すでに知られている事実であっても、改めて公然と摘示すれば、人の社会的評価をさらに低下させる危険があると解されている。判例も、公知の事実の摘示について名誉毀損罪の成立を認めているとされる（判例あり（要確認））。したがって、公知の事実を摘示した場合には名誉毀損罪は成立しないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "230",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公然と事実を摘示し、人の名誉を毀損した者は、その事実の有無にかかわらず",
+     "text_sha256": "74ca0ba9d058c4b887588639fb8e13e63e477fea73f66809208c00be01151d2d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公知の事実の摘示について名誉毀損罪の成立を認めた判例（大審院の判例とされる）は、courts.go.jp の判決ページで確認できなかったため、要確認とした。",
+    "解釈による。"
+   ],
+   "id": "exp-yobi-2017-keiho-q10-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiho-q10-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例の立場では「公然」とは不特定「又は」多数人が認識し得る状態をいい、不特定であれば少数人でも公然性は認められる。",
+   "body": "誤りは、「不特定かつ多数人」が認識し得る状態が必要とする点である。刑法230条1項の「公然と」の意味について、判例は、摘示された事実を不特定又は多数の人が認識し得る状態をいうとしていると解されている（判例あり（要確認））。この理解では、不特定と多数のいずれかを満たせば足りるから、相手方が少数であっても不特定であれば公然性が認められる。さらに判例は、直接の相手方が特定かつ少数であっても、そこから不特定又は多数人に伝播する可能性があれば公然性を認めるとされる（判例あり（要確認））。したがって、不特定ではあるが少数人しか認識し得ない状態にとどまる場合に名誉毀損罪が成立しないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "230",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公然と事実を摘示し、人の名誉を毀損した者",
+     "text_sha256": "74ca0ba9d058c4b887588639fb8e13e63e477fea73f66809208c00be01151d2d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「公然」を不特定又は多数人が認識し得る状態とした判例、及び伝播の可能性による公然性を認めた最高裁の判例（昭和34年の判決とされる）は、courts.go.jp の判決ページで確認できなかったため、要確認とした。",
+    "解釈による。"
+   ],
+   "id": "exp-yobi-2017-keiho-q10-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiho-q10-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。名誉毀損罪の「人」は自然人に限られず、法人その他の団体も含まれる。",
+   "body": "誤りは、名誉の主体である「人」は「自然人に限られる」とする点である。刑法230条1項は「人の名誉を毀損した者」を処罰するが、ここでいう名誉は人に対する社会的評価であり、法人その他の団体も社会的評価の主体となりうると解されている。判例も、法人などの団体に対する名誉毀損罪の成立を認めているとされる（判例あり（要確認））。したがって、法人の名誉を毀損した場合にも名誉毀損罪は成立しうるから、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "230",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の名誉を毀損した者",
+     "text_sha256": "74ca0ba9d058c4b887588639fb8e13e63e477fea73f66809208c00be01151d2d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "法人等の団体に対する名誉毀損罪の成立を認めた判例（大審院の判例とされる）は、courts.go.jp の判決ページで確認できなかったため、要確認とした。",
+    "解釈による。"
+   ],
+   "id": "exp-yobi-2017-keiho-q10-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiho-q10-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。死者の名誉毀損は、虚偽の事実を摘示した場合でなければ罰しないと刑法230条2項が定めている。",
+   "body": "ポイントは、死者の名誉毀損の処罰範囲である。刑法230条2項は「死者の名誉を毀損した者は、虚偽の事実を摘示することによってした場合でなければ、罰しない。」と定めている。生存者の名誉毀損が「その事実の有無にかかわらず」処罰される（同条1項）のと異なり、死者の場合は摘示した事実が虚偽であるときに限って処罰される。したがって、摘示した事実が真実であれば、死者の名誉を毀損しても名誉毀損罪として処罰されず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "230",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "死者の名誉を毀損した者は、虚偽の事実を摘示することによってした場合でなければ、罰しない。",
+     "text_sha256": "74ca0ba9d058c4b887588639fb8e13e63e477fea73f66809208c00be01151d2d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "230",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その事実の有無にかかわらず",
+     "text_sha256": "74ca0ba9d058c4b887588639fb8e13e63e477fea73f66809208c00be01151d2d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-keiho-q10-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiho-q10-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。名誉毀損罪は抽象的危険犯と解されており、社会的評価を害するに足りる事実を公然と摘示すれば、現実に名誉が侵害されなくても成立する。",
+   "body": "誤りは、「現実に人の名誉が侵害されていない場合には，名誉毀損罪は成立しない」とする点である。刑法230条1項は「人の名誉を毀損した者」と規定するが、人の社会的評価が現実に低下したかどうかを立証することは困難であり、同罪は、社会的評価を低下させる危険を生じさせれば足りる抽象的危険犯であると解されている。判例も、名誉を毀損するに足りる事実を公然と摘示すれば、現実に名誉が害されたかどうかを問わず名誉毀損罪が成立するとしているとされる（判例あり（要確認））。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "230",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公然と事実を摘示し、人の名誉を毀損した者",
+     "text_sha256": "74ca0ba9d058c4b887588639fb8e13e63e477fea73f66809208c00be01151d2d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現実の名誉侵害を要しないとした判例（大審院の判例とされる）は、courts.go.jp の判決ページで確認できなかったため、要確認とした。",
+    "解釈による（抽象的危険犯との理解）。"
+   ],
+   "id": "exp-yobi-2017-keiho-q10-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

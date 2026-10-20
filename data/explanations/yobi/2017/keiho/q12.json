@@ -1,0 +1,212 @@
+{
+ "question_id": "yobi-2017-keiho-q12",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiho-q12-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。親族による犯人蔵匿は、刑を「免除することができる」とされているだけであり、必要的減軽ではない。",
+   "body": "誤りは、「刑は減軽しなければならない」とする点である。刑法105条は「前二条の罪については、犯人又は逃走した者の親族がこれらの者の利益のために犯したときは、その刑を免除することができる。」と定めている。つまり、親族が犯人の利益のために犯人蔵匿罪（103条）を犯した場合の効果は、刑の任意的な免除であって、刑の必要的な減軽ではない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "105",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の罪については、犯人又は逃走した者の親族がこれらの者の利益のために犯したときは、その刑を免除することができる。",
+     "text_sha256": "b71e46236ce204a2aacb0ec1ebe84530961568a486f61f70e8d5c058b588b3c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "罰金以上の刑に当たる罪を犯した者又は拘禁中に逃走した者を蔵匿し、又は隠避させた者",
+     "text_sha256": "1938ba90f88f3522593e9ee59d1fa277b9bafd74be2e107ad239c85dacd4d52b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-keiho-q12-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiho-q12-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例の立場では、「罰金以上の刑に当たる罪を犯した者」には、犯人として既に逮捕・勾留されている者も含まれる。",
+   "body": "誤りは、既に逮捕・勾留されている者は「含まれない」とする点である。刑法103条は「罰金以上の刑に当たる罪を犯した者」を「隠避させた者」を処罰するが、犯人隠避罪は、捜査・審判・刑の執行などの刑事司法作用を妨げる行為を処罰するものと解されている。判例は、同条の罪を犯した者には犯人として逮捕・勾留されている者も含まれ、その者に現になされている身柄の拘束を免れさせるような性質の行為（身代わり犯人を出頭させる行為など）も「隠避」にあたるとしているとされる（判例あり（要確認））。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "罰金以上の刑に当たる罪を犯した者又は拘禁中に逃走した者を蔵匿し、又は隠避させた者",
+     "text_sha256": "1938ba90f88f3522593e9ee59d1fa277b9bafd74be2e107ad239c85dacd4d52b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "逮捕・勾留されている犯人の身代わりを出頭させた事案で犯人隠避教唆罪を認めた最高裁の判例（平成元年の決定とされる）は、courts.go.jp の判決ページで確認できなかったため、要確認とした。"
+   ],
+   "id": "exp-yobi-2017-keiho-q12-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiho-q12-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。刑法104条は「他人の刑事事件」とだけ定め、103条のような「罰金以上の刑に当たる罪」という限定を置いていない。",
+   "body": "ポイントは、103条と104条の客体の書き方の違いである。犯人蔵匿罪の刑法103条は、対象を「罰金以上の刑に当たる罪を犯した者又は拘禁中に逃走した者」に限っている。これに対し、証拠隠滅罪の104条は「他人の刑事事件に関する証拠を隠滅し、偽造し、若しくは変造し、又は偽造若しくは変造の証拠を使用した者」と定め、刑事事件の罪の重さによる限定を置いていない。したがって、拘留・科料にしか当たらない罪の事件であっても「他人の刑事事件」にあたり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "104",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の刑事事件に関する証拠を隠滅し、偽造し、若しくは変造し、又は偽造若しくは変造の証拠を使用した者",
+     "text_sha256": "7ade8fa11cb6380ecf4277628b8c2004019d13e1fa54b0ea42cb3b03240b56c4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "罰金以上の刑に当たる罪を犯した者又は拘禁中に逃走した者",
+     "text_sha256": "1938ba90f88f3522593e9ee59d1fa277b9bafd74be2e107ad239c85dacd4d52b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-keiho-q12-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiho-q12-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例の立場では、証人等威迫罪の「威迫」には、不安・困惑の念を生じさせる文書を送付して相手にその内容を了知させる方法も含まれる。",
+   "body": "誤りは、「威迫」は相手と面会して直接なされる場合に限られるとする点である。刑法105条の2は、刑事事件の捜査・審判に必要な知識を有すると認められる者などに対し「強談威迫の行為をした者」を処罰するが、その方法を対面の場合に限る文言は置いていない。判例は、同条の「威迫」には、不安、困惑の念を生じさせる文言を記載した文書を送付して相手にその内容を了知させる方法による場合が含まれ、直接相手と相対する場合に限られないとしているとされる（判例あり（要確認））。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "105_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正当な理由がないのに面会を強請し、又は強談威迫の行為をした者は、二年以下の拘禁刑又は三十万円以下の罰金に処する。",
+     "text_sha256": "ac0673a2ec9c793154d8f470ba70f705d4ecba3b10e3cb48250d91f13edbffbc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "文書の送付による威迫を認めた最高裁の判例（平成19年の決定とされる）は、courts.go.jp の判決ページで確認できなかったため、要確認とした。",
+    "刑法105条の2の法定刑は、出題時点では「懲役」であったが、現行法では「拘禁刑」となっている。結論には影響しない。"
+   ],
+   "id": "exp-yobi-2017-keiho-q12-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiho-q12-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。刑法105条の2は「自己若しくは他人の刑事事件」と定めており、犯人が自己の刑事事件の証人を威迫した場合にも成立する。",
+   "body": "ポイントは、証拠隠滅罪（104条）が「他人の刑事事件」に限るのに対し、証人等威迫罪がどう定めているかである。刑法105条の2は「自己若しくは他人の刑事事件の捜査若しくは審判に必要な知識を有すると認められる者又はその親族に対し、当該事件に関して」強談威迫の行為をした者を処罰すると定めている。したがって、犯人が自己の刑事事件の裁判に必要な知識を有する証人を威迫した場合にも証人等威迫罪が成立し、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "105_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己若しくは他人の刑事事件の捜査若しくは審判に必要な知識を有すると認められる者又はその親族に対し、当該事件に関して",
+     "text_sha256": "ac0673a2ec9c793154d8f470ba70f705d4ecba3b10e3cb48250d91f13edbffbc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "104",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の刑事事件に関する証拠",
+     "text_sha256": "7ade8fa11cb6380ecf4277628b8c2004019d13e1fa54b0ea42cb3b03240b56c4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-keiho-q12-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

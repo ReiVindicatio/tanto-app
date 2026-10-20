@@ -1,0 +1,222 @@
+{
+ "question_id": "yobi-2017-keiso-q15",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiso-q15-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。軽微な罪の現行犯逮捕は、犯人の住居・氏名が明らかでない場合に加え、犯人が逃亡するおそれがある場合にもすることができる。",
+   "body": "誤りは、「犯人の住居又は氏名が明らかでない場合に限り」とする点である。刑事訴訟法217条は、「三十万円（刑法、暴力行為等処罰に関する法律及び経済関係罰則の整備に関する法律の罪以外の罪については、当分の間、二万円）以下の罰金、拘留又は科料に当たる罪の現行犯については、犯人の住居若しくは氏名が明らかでない場合又は犯人が逃亡するおそれがある場合に限り、第二百十三条から前条までの規定を適用する。」と定めている。したがって、軽微な罪であっても、犯人が逃亡するおそれがある場合には、住居・氏名が明らかであっても現行犯逮捕することができる。逃亡のおそれの場合を落としている本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "217",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯人の住居若しくは氏名が明らかでない場合又は犯人が逃亡するおそれがある場合に限り、第二百十三条から前条までの規定を適用する。",
+     "text_sha256": "12aef5bc87ed75c361fc73208a4bc1e2d7f2d3204e8a2f0fec76c270590a27c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-keiso-q15-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiso-q15-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。罪を行い終わってから間がないと明らかに認められないときは現行犯人（準現行犯人）に当たらず、本肢の要件は緊急逮捕のものである。",
+   "body": "誤りは、罪を行い終わってから間がないと認められないときでも現行犯逮捕できるとする点である。刑事訴訟法212条1項は「現に罪を行い、又は現に罪を行い終つた者を現行犯人とする。」とし、同条2項は、同項各号の一に当たる者が「罪を行い終つてから間がないと明らかに認められるとき」に限り現行犯人とみなしている。したがって、間がないと認められないときは、現行犯人にも準現行犯人にも当たらず、現行犯逮捕はできない。本肢が挙げる、罪を犯したことを疑うに足りる充分な理由があり急速を要する場合という要件は、刑事訴訟法210条1項の緊急逮捕の要件（「罪を犯したことを疑うに足りる十分な理由がある場合で、急速を要し」）に類するものであり、緊急逮捕は一定の重い罪に限られ、事後に逮捕状を求める手続を要する別の制度である。よって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "212",
+     "paragraphs": [
+      "1",
+      "2"
+     ],
+     "quote": "罪を行い終つてから間がないと明らかに認められるとき",
+     "text_sha256": "a028b575b22ce7c0c8f0adf3590174d759bdd3ef61bf07d75dcb672735a14a20",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "210",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "罪を犯したことを疑うに足りる十分な理由がある場合で、急速を要し",
+     "text_sha256": "a16b14ff8b4bc7cccbc8fe9f8d83d7024c9488b266bc7fa97583c253f80d917a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-keiso-q15-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiso-q15-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。未遂犯の処罰規定のある犯罪の実行に着手した者は、既遂に達していなくても「現に罪を行い」中の者として現行犯人に当たる。",
+   "body": "ポイントは、既遂に達していない段階でも「現に罪を行い」に当たるかである。刑事訴訟法212条1項は「現に罪を行い、又は現に罪を行い終つた者を現行犯人とする。」と定める。未遂犯の処罰規定のある犯罪では、実行に着手した時点で既に処罰の対象となる罪（未遂罪）が行われているから、その者は「現に罪を行い」中の者に当たると解されている。したがって、既遂に達していなくとも、刑事訴訟法213条により「何人でも、逮捕状なくしてこれを逮捕することができる。」。よって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "212",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現に罪を行い、又は現に罪を行い終つた者を現行犯人とする。",
+     "text_sha256": "a028b575b22ce7c0c8f0adf3590174d759bdd3ef61bf07d75dcb672735a14a20",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "213",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "何人でも、逮捕状なくしてこれを逮捕することができる。",
+     "text_sha256": "9ba5e0ad33a98aa4378e52806d654e46f609dc5390a7d2deebd4008c8c1a63c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（「現に罪を行い」の意義）。"
+   ],
+   "id": "exp-yobi-2017-keiso-q15-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiso-q15-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。現行犯人は「何人でも」逮捕状なくして逮捕できるから、私人も現行犯逮捕できる。",
+   "body": "ポイントは、現行犯逮捕の主体が捜査機関に限られるかである。刑事訴訟法213条は「現行犯人は、何人でも、逮捕状なくしてこれを逮捕することができる。」と定めている。「何人でも」とされているから、検察官・司法警察職員に限らず、私人も現行犯逮捕をすることができる。なお、私人が現行犯人を逮捕したときは、刑事訴訟法214条により「直ちにこれを地方検察庁若しくは区検察庁の検察官又は司法警察職員に引き渡さなければならない。」。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "213",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現行犯人は、何人でも、逮捕状なくしてこれを逮捕することができる。",
+     "text_sha256": "9ba5e0ad33a98aa4378e52806d654e46f609dc5390a7d2deebd4008c8c1a63c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "214",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "直ちにこれを地方検察庁若しくは区検察庁の検察官又は司法警察職員に引き渡さなければならない。",
+     "text_sha256": "2d73c42c717d4dad94fb0c41e6bd686b1399374cbdd0bc689b07b8ea4937af50",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-keiso-q15-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiso-q15-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。現行犯逮捕の場合にも通常逮捕に関する規定が準用され、司法警察員は直ちに犯罪事実の要旨及び弁護人を選任できる旨を告げなければならない。",
+   "body": "ポイントは、通常逮捕後の手続（刑事訴訟法203条）が現行犯逮捕の場合にも適用されるかである。刑事訴訟法216条は「現行犯人が逮捕された場合には、第百九十九条の規定により被疑者が逮捕された場合に関する規定を準用する。」と定める。そして同法203条1項は、司法警察員は、逮捕状により逮捕された被疑者を受け取ったときなどは、「直ちに犯罪事実の要旨及び弁護人を選任することができる旨を告げた上、弁解の機会を与え」なければならないとしている。したがって、現行犯人の引致を受けた司法警察員も、直ちに犯罪事実の要旨及び弁護人を選任できる旨を告げなければならず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "216",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現行犯人が逮捕された場合には、第百九十九条の規定により被疑者が逮捕された場合に関する規定を準用する。",
+     "text_sha256": "09caf5fc7cceddf2e2b81bac32b457ea58b4fc316474072b893783005f42b111",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "203",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "直ちに犯罪事実の要旨及び弁護人を選任することができる旨を告げた上、弁解の機会を与え",
+     "text_sha256": "af632c87454e65020fa5668fdabda782e75580c7d48705b9653d130b29ca1984",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-keiso-q15-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

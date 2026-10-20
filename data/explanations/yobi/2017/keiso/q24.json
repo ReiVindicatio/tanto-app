@@ -1,0 +1,228 @@
+{
+ "question_id": "yobi-2017-keiso-q24",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiso-q24-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。同意があっても、裁判所は相当性と取調べの必要性を判断して証拠の採否を決めるから、立証趣旨が同一で内容が重複する供述調書の一方を却下することができる。",
+   "body": "誤りは、同意がある以上「いずれの供述調書も証拠として採用する決定をしなければならない」とする点である。刑事訴訟法326条1項は、同意した書面について「相当と認めるときに限り」証拠とすることができると定めており、同意があれば当然に採用が義務づけられるわけではない。また、同法297条1項は、裁判所が「証拠調の範囲、順序及び方法を定めることができる」とし、証拠調べの範囲を裁判所が定めることを予定している。証拠調べ請求があっても、取調べの必要性がない証拠は裁判所が却下できると解されており、立証趣旨が同一で内容が重複する供述調書は、そのうち一方を取り調べれば足りるとして、他方を必要性なしとして却下することができる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "326",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相当と認めるときに限り",
+     "text_sha256": "cbf06211cb6af8ed9b91f3b600116fa787ba90c9a431f062083c38993d4840e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "297",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証拠調の範囲、順序及び方法を定めることができる",
+     "text_sha256": "6d48e2338a3ce9e9c0cd14b0a4d3a9308c5740c66a6652028bfefbf3cc6b6e75",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "証拠の採否を取調べの必要性から判断できる点は解釈による。刑事訴訟規則の関係規定は保存されていないため引用していない。"
+   ],
+   "id": "exp-yobi-2017-keiso-q24-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiso-q24-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。証拠書類の取調べは朗読が原則だが、法律自体が朗読に代えて記録媒体を再生する場合などを定めており、「必ず朗読」ではない。",
+   "body": "誤りは、「必ず朗読の方法で行わなければならない」とする点である。刑事訴訟法305条1項は、請求による証拠書類の取調べについて、裁判長は請求した者に「これを朗読させなければならない」とし、朗読を原則としている。しかし、同条5項は、ビデオリンク方式の尋問の記録媒体がその一部とされた調書の取調べについては「朗読に代えて、当該記録媒体を再生するものとする」と定め、朗読以外の方法を予定している。また、同法307条の3は、簡易公判手続の決定があった事件について、証拠調べは「適当と認める方法でこれを行うことができる」としている。このように、証拠書類の取調べが常に朗読によらなければならないわけではない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "305",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "これを朗読させなければならない",
+     "text_sha256": "7519d76799394336181ab2e97f4b9c418ea0a40b4ab9b09eaa6a6896388bdee3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "305",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "朗読に代えて、当該記録媒体を再生するものとする",
+     "text_sha256": "7519d76799394336181ab2e97f4b9c418ea0a40b4ab9b09eaa6a6896388bdee3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "307_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "適当と認める方法でこれを行うことができる",
+     "text_sha256": "d13e3442022c28d830a09642f0d552f4263578061a3c0ec12acd24db46686319",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "実務上は、刑事訴訟規則に定められた要旨の告知による取調べも用いられると解されているが、刑事訴訟規則は保存されていないため、本文では引用していない。",
+    "条番号は取得日時点の現行法による。出題後の改正で、簡易公判手続の証拠調べの規定や305条5項が引く条の番号が変わっている可能性がある。"
+   ],
+   "id": "exp-yobi-2017-keiso-q24-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiso-q24-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。証拠物の取調べは展示（示すこと）によるもので、展示の際に事件との関連性を被告人に質問することは法律上求められていない。",
+   "body": "誤りは、展示の際に「事件との関連性を被告人に質問しなければならない」とする点である。刑事訴訟法306条1項は、請求による証拠物の取調べについて、裁判長は「請求をした者をしてこれを示させなければならない」と定めるにとどまり、証拠物の取調べの方法は展示である。展示の際に被告人へ質問することを義務づける規定はない。被告人に供述を求めるかどうかは別の問題であり、被告人には黙秘する権利もあるから、展示の手続として質問が必須とされることはないと解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "306",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "請求をした者をしてこれを示させなければならない",
+     "text_sha256": "aadf71734b8866d54b5088f6746952b1e7d898dbf26846f8186372f390edc1ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2017-keiso-q24-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiso-q24-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。取調べを終えた証拠書類は裁判所に提出するのが原則だが、裁判所の許可を得れば原本に代えて謄本（写し）を提出できる。",
+   "body": "ポイントは、刑事訴訟法310条のただし書である。同条は、「証拠調を終つた証拠書類又は証拠物は、遅滞なくこれを裁判所に提出しなければならない」としたうえで、「但し、裁判所の許可を得たときは、原本に代え、その謄本を提出することができる」と定めている。示談書は被告人側にとって原本を手元に残したい書類であり、原本を取り調べた後、裁判所の許可を得て、その写しを提出することができる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "310",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証拠調を終つた証拠書類又は証拠物は、遅滞なくこれを裁判所に提出しなければならない",
+     "text_sha256": "9d5009a89472245a47db75d431c01864f6a557b6d30c9cd184929a34a92c6904",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "310",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "但し、裁判所の許可を得たときは、原本に代え、その謄本を提出することができる",
+     "text_sha256": "9d5009a89472245a47db75d431c01864f6a557b6d30c9cd184929a34a92c6904",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "条文の「謄本」に本肢の「写し」が当たるとする理解は解釈による。"
+   ],
+   "id": "exp-yobi-2017-keiso-q24-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-keiso-q24-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。原本を取り調べられないときでも、写しを証拠とすることは否定されず、本件では検察官が同意しているから、写しを証拠として採用する決定をすることができる。",
+   "body": "誤りは、原本を取り調べられない以上、写しを採用できないとする点である。写しであっても、原本が存在し（又は存在したこと）、写しが原本を正確に写したものであり、原本の提出が困難であるなどの事情があれば、証拠とすることができると解されている。さらに本件では、検察官は反省文の写しを含む弁護人請求証拠の全てについて「証拠とすることに同意した」のであり、刑事訴訟法326条1項は、同意した書面を「相当と認めるときに限り」証拠とすることができると定めている。したがって、反省文の原本を取り調べることができなくても、裁判所は写しを証拠として採用する決定をすることができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "326",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相当と認めるときに限り",
+     "text_sha256": "cbf06211cb6af8ed9b91f3b600116fa787ba90c9a431f062083c38993d4840e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "写しの証拠能力の要件は解釈による。"
+   ],
+   "id": "exp-yobi-2017-keiso-q24-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
