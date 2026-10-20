@@ -1,0 +1,251 @@
+{
+ "question_id": "yobi-2024-minso-q44",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minso-q44-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、明示的一部請求で相殺の抗弁に理由がある場合に債権総額から自働債権額を控除した残存額を算定する方法をとり、その結果として控訴を棄却しても不利益変更禁止の原則に反しないとしている。",
+   "body": "決め手は「不利益変更禁止の原則に反して許されない」という部分である。304条は「第一審判決の取消し及び変更は、不服申立ての限度においてのみ、これをすることができる。」と定める。判例（最高裁平成6年11月22日判決とされるもの）は、明示的一部請求の訴訟で相殺の抗弁に理由がある場合には、債権の総額を確定し、その額から自働債権の額を控除した残存額を算定したうえ、一部請求の額が残存額の範囲内であれば請求の全額を認容すべきであるとし（判例あり（要確認））、控訴審がこの方法により被告のみの控訴を棄却しても、不利益変更禁止の原則に反しないとしていると解されている。114条2項は「相殺のために主張した請求の成立又は不成立の判断は、相殺をもって対抗した額について既判力を有する。」と定めるところ、この場合に自働債権のうち一部請求の額を超える部分（請求されていない残部）と相殺された部分の存否には既判力が生じないと解されるから、控訴を棄却して第一審判決を維持しても、被告は第一審判決より不利益な地位に置かれないためである。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "304",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第一審判決の取消し及び変更は、不服申立ての限度においてのみ、これをすることができる。",
+     "text_sha256": "29b4b8a3090373b8bd149310c4aa086e35c576ef29d96469fec5ec1714521f07",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "114",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "相殺のために主張した請求の成立又は不成立の判断は、相殺をもって対抗した額について既判力を有する。",
+     "text_sha256": "c610c3ea296754d118ee0a863f99ac7ec29d49374742fb66d08e479e8b66173b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "判例（最高裁平成6年11月22日判決とされるもの）について、courts.go.jp で判決本文を2回探したが確認できなかったため、cases には入れず要確認とした。既判力の範囲に関する説明は解釈による。"
+   ],
+   "id": "exp-yobi-2024-minso-q44-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minso-q44-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。293条3項ただし書により、附帯控訴の提起は、附帯控訴状を控訴裁判所に提出してすることもできる。",
+   "body": "決め手は「第一審裁判所に提出してしなければならない」という部分である。控訴の提起については、286条1項が「控訴の提起は、控訴状を第一審裁判所に提出してしなければならない。」と定める。附帯控訴について、293条3項は「附帯控訴については、控訴に関する規定による。」としつつ、ただし書で「附帯控訴の提起は、附帯控訴状を控訴裁判所に提出してすることができる。」と定めている。附帯控訴はすでに控訴審が係属している段階でされるものであるから、控訴裁判所への提出も認められている。したがって、第一審裁判所に提出しなければならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "286",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "控訴の提起は、控訴状を第一審裁判所に提出してしなければならない。",
+     "text_sha256": "acc32c8aa9e06f60f1b2e366851b73f96a943af892962328f2bf87b94bba01a8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "293",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "附帯控訴については、控訴に関する規定による。",
+     "text_sha256": "d25ec1bae5b0d874dba05ee9c9dfe73ece27f84491c7852470fe419bc2cbbb38",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "293",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "附帯控訴の提起は、附帯控訴状を控訴裁判所に提出してすることができる。",
+     "text_sha256": "d25ec1bae5b0d874dba05ee9c9dfe73ece27f84491c7852470fe419bc2cbbb38",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-minso-q44-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minso-q44-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。控訴の取下げには、訴えの取下げのような相手方の同意を要する旨の規定（261条2項）が準用されておらず、被控訴人が附帯控訴をしていても同意は不要である。",
+   "body": "決め手は、控訴の取下げに被控訴人の同意が要らないことである。292条1項は「控訴は、控訴審の終局判決があるまで、取り下げることができる。」と定め、同条2項は「第二百六十一条第三項及び第四項、第二百六十二条第一項並びに第二百六十三条の規定は、控訴の取下げについて準用する。」と定めるにとどまり、相手方の同意を要件とする261条2項を準用していない。控訴を取り下げても第一審判決が確定するだけで、被控訴人に不利益はないからである。附帯控訴がされている場合も同様であり、293条2項本文は「附帯控訴は、控訴の取下げがあったとき、又は不適法として控訴の却下があったときは、その効力を失う。」と定め、控訴の取下げによって附帯控訴が効力を失うことを前提としている（同項ただし書により、控訴の要件を備える附帯控訴は独立した控訴とみなされる）。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "292",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "控訴は、控訴審の終局判決があるまで、取り下げることができる。",
+     "text_sha256": "2bde534c5680b32f81c691a17bed467047a42cd92bc9364f1270d52c5c002168",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "292",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第二百六十一条第三項及び第四項、第二百六十二条第一項並びに第二百六十三条の規定は、控訴の取下げについて準用する。",
+     "text_sha256": "2bde534c5680b32f81c691a17bed467047a42cd92bc9364f1270d52c5c002168",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "261",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "相手方の同意を得なければ、その効力を生じない。",
+     "text_sha256": "fc4d05f19d3ea83f0aa54ffe746161170d1803be7f427b32c03008b4b9e6f247",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "293",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "附帯控訴は、控訴の取下げがあったとき、又は不適法として控訴の却下があったときは、その効力を失う。",
+     "text_sha256": "d25ec1bae5b0d874dba05ee9c9dfe73ece27f84491c7852470fe419bc2cbbb38",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "293",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "ただし、控訴の要件を備えるものは、独立した控訴とみなす。",
+     "text_sha256": "d25ec1bae5b0d874dba05ee9c9dfe73ece27f84491c7852470fe419bc2cbbb38",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2024-minso-q44-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minso-q44-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。控訴審の期日に当事者の一方が欠席したときは、出頭した当事者に、当事者双方に係る第一審の口頭弁論の結果を陳述させることができると解されている。",
+   "body": "決め手は「陳述させることはできない」という部分である。296条2項は「当事者は、第一審における口頭弁論の結果を陳述しなければならない。」と定めるが、控訴審は第一審の続審であり、この結果陳述は第一審の訴訟資料を控訴審に引き継ぐための手続である。そのため、当事者の一方が控訴審の口頭弁論期日に欠席した場合には、出頭した当事者に、欠席した当事者に係る部分も含めて当事者双方の第一審における口頭弁論の結果を陳述させることができると解されており、同旨の判例あり（要確認）。また、297条により第一審の訴訟手続の規定が控訴審に準用されるから、最初の期日に欠席した当事者が提出した控訴状等の記載事項については、158条の陳述の擬制も働く。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "296",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当事者は、第一審における口頭弁論の結果を陳述しなければならない。",
+     "text_sha256": "a9e51ca0d115c0cbca14ac7e776c64f0be4e37e85f4bb0546792c132b4ab37ec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "297",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前編第一章から第七章までの規定は、特別の定めがある場合を除き、控訴審の訴訟手続について準用する。",
+     "text_sha256": "557fbe81d3e44ebe70a4c51283a36f5dbc859e4189fcf81f09d413560cb124b9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "158",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "原告又は被告が最初にすべき口頭弁論の期日に出頭せず、又は出頭したが本案の弁論をしないときは、裁判所は、その者が提出した訴状又は答弁書その他の準備書面に記載した事項を陳述したものとみなし、出頭した相手方に弁論をさせることができる。",
+     "text_sha256": "4e64e7a8e7346d213381c6f1c1628ad39ce021ee16eca90dc536051bad2ddb29",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出頭した当事者に双方の第一審口頭弁論の結果を陳述させることができる点は判例（最高裁昭和33年7月22日判決とされるもの）・解釈による。courts.go.jp で判決本文を確認できなかったため要確認とした。"
+   ],
+   "id": "exp-yobi-2024-minso-q44-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

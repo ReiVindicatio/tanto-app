@@ -32,6 +32,8 @@
 - 使ってよい道具は次だけ（人が見ていない間に動くので、許可の要る操作をすると止まってしまう）：
   ファイルの読み書きは Read・Write・Edit の道具／Bash は「python3 pipeline/explain_queue.py --show …」「python3 pipeline/egov.py …」「python3 pipeline/check_explanations.py …」だけ／判例の確認は WebSearch と、www.courts.go.jp の WebFetch だけ
   curl・その場で書く python・cat や grep などのコマンドは使わない（JSON は Read の道具で読む）
+- 判例を探すときは、裁判所の判例検索 https://www.courts.go.jp/hanrei/search1/index.html?query1=<語句> を WebFetch で開くと結果の一覧が取れる。判決のページは https://www.courts.go.jp/hanrei/<id>/detail2/index.html（旧形式の URL は 404）
+- 借地借家法・会社法施行規則・手形法（附則82条まで）・小切手法・行政法の各法・労働組合法なども保存済み。刑事訴訟規則・民事訴訟規則は e-Gov になく使えない
 最後に、問ごとに1行で報告する：「<question_id>：検査 ✅ N肢／❌ M肢（理由の要約）／法令がない：<法令名>（あれば）」
 ```
 

@@ -1,0 +1,293 @@
+{
+ "question_id": "yobi-2024-minso-q37",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minso-q37-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。送達の瑕疵は当事者の利益保護のためのもので放棄できる性質のものと解されており、被告の訴訟代理人が異議なく弁論をすれば異議権の喪失（90条）により治癒される。",
+   "body": "決め手は、送達の瑕疵が「放棄することができないもの」（90条ただし書）に当たるかどうかである。90条本文は「当事者が訴訟手続に関する規定の違反を知り、又は知ることができた場合において、遅滞なく異議を述べないときは、これを述べる権利を失う。」と定める。受送達権限を欠く者への交付は送達の方式に関する規定の違反であるが、送達の規定は主として名宛人の手続保障のためのものであり、その名宛人自身（本肢では被告が委任した訴訟代理人）が訴状の内容を了知して異議なく弁論をした以上、瑕疵は異議権の喪失によって治癒されると解されている。判例あり（要確認）。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "90",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が訴訟手続に関する規定の違反を知り、又は知ることができた場合において、遅滞なく異議を述べないときは、これを述べる権利を失う。",
+     "text_sha256": "5143770bfafffddcee63efd229f01d7a215d6a9727a2da326602d3df47ad30af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "90",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "放棄することができないもの",
+     "text_sha256": "5143770bfafffddcee63efd229f01d7a215d6a9727a2da326602d3df47ad30af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "送達の瑕疵が異議権の喪失により治癒されるとする点は解釈による。直接の判例は courts.go.jp で確認できなかった（要確認）。"
+   ],
+   "id": "exp-yobi-2024-minso-q37-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minso-q37-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、宣誓させるべき証人を宣誓させずに尋問した場合でも、当事者が遅滞なく異議を述べないときは責問権（異議権）を失うとしている（最判昭和29年2月11日）。",
+   "body": "決め手は「異議権の喪失によっては治癒されない」という部分である。201条1項は「証人には、特別の定めがある場合を除き、宣誓をさせなければならない。」と定めるが、この規定の違反は90条ただし書の「放棄することができないもの」には当たらないと解されている。最判昭和29年2月11日も、宣誓させるべき証人を宣誓させずに尋問した場合であっても、当事者が遅滞なく異議を述べないときは責問権を失うとした。したがって、当事者が知りながら遅滞なく異議を述べなければ瑕疵は治癒されるから、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "201",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証人には、特別の定めがある場合を除き、宣誓をさせなければならない。",
+     "text_sha256": "977b08ec9504469aa19cfa63d70f586f1020853d7bd2065123b581bbd11b8a5b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "90",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "放棄することができないもの",
+     "text_sha256": "5143770bfafffddcee63efd229f01d7a215d6a9727a2da326602d3df47ad30af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "所有権確認並びに所有権移転登記手続請求事件",
+     "court": "最高裁判所第一小法廷",
+     "date": "1954-02-11",
+     "holding": "宣誓させるべき証人を宣誓させずに尋問した場合でも、当事者が遅滞なく異議を述べないときは、責問権を失う。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57273/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2024-minso-q37-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minso-q37-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、訴えの変更についての書面の提出又は送達の欠缺は責問権（異議権）の喪失によって治癒されるとしている（最判昭和31年6月19日）。",
+   "body": "決め手は「異議権の喪失によっては治癒されない」という部分である。143条2項は「請求の変更は、書面でしなければならない。」と、同条3項は「前項の書面は、相手方に送達しなければならない。」と定める。これらは被告の防御の機会を保障するための規定であり、被告自身が放棄できる性質のものと解されている。最判昭和31年6月19日も、訴えの変更についての書面の提出又は送達の欠缺は責問権の喪失によって治癒されるとした。したがって、被告が知りながら遅滞なく異議を述べなければ90条により瑕疵は治癒されるから、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "143",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "請求の変更は、書面でしなければならない。",
+     "text_sha256": "4b3f7e547c8f78862ace0b5267aaadda80c64a0de1e48ed67f2a629eb1a417ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "143",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前項の書面は、相手方に送達しなければならない。",
+     "text_sha256": "4b3f7e547c8f78862ace0b5267aaadda80c64a0de1e48ed67f2a629eb1a417ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "90",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遅滞なく異議を述べないときは、これを述べる権利を失う。",
+     "text_sha256": "5143770bfafffddcee63efd229f01d7a215d6a9727a2da326602d3df47ad30af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "建物所有権移転登記手続請求事件",
+     "court": "最高裁判所第三小法廷",
+     "date": "1956-06-19",
+     "holding": "訴えの変更についての書面の提出又は送達の欠缺は、責問権の喪失によって治癒される。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57310/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2024-minso-q37-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minso-q37-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判決言渡期日を口頭弁論終結の日から2か月以内とする251条1項は訓示規定と解されており、その違反は当事者の訴訟手続上の権利を害するものではないから、異議権の対象とならない。",
+   "body": "決め手は、251条1項が訓示規定であって、異議権の対象となる「訴訟手続に関する規定の違反」に当たらないと解されている点である。251条1項は「判決の言渡しは、口頭弁論の終結の日から二月以内にしなければならない。」と定めるが、同項ただし書は「事件が複雑であるときその他特別の事情があるときは、この限りでない。」としている。この規定は裁判所に迅速な判決を促すためのものにすぎず、2か月を超えた日を言渡期日に指定しても違法とはならず、当事者の手続上の利益を害しないから、当事者がこれに異議を述べる権利はないと解されている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "251",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "判決の言渡しは、口頭弁論の終結の日から二月以内にしなければならない。",
+     "text_sha256": "7167c7bccee608a539efc6460082c5f71c53756a21bca7201e25c2807e22399b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "251",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "事件が複雑であるときその他特別の事情があるときは、この限りでない。",
+     "text_sha256": "7167c7bccee608a539efc6460082c5f71c53756a21bca7201e25c2807e22399b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "90",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟手続に関する規定の違反",
+     "text_sha256": "5143770bfafffddcee63efd229f01d7a215d6a9727a2da326602d3df47ad30af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "251条1項を訓示規定とし、異議権の対象とならないとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2024-minso-q37-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2024-minso-q37-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。直接主義を定める249条1項は裁判の適正を確保するための強行規定であり、その違反は90条ただし書の「放棄することができないもの」に当たるから、異議権の喪失によっては治癒されない。",
+   "body": "決め手は、249条1項の違反が「放棄することができないもの」（90条ただし書）に当たる点である。249条1項は「判決は、その基本となる口頭弁論に関与した裁判官がする。」と定める。これは当事者の利益だけでなく、裁判の適正という公益に関わる規定であり、その違反は312条2項1号の「法律に従って判決裁判所を構成しなかったこと」として絶対的上告理由になると解されている。このような強行規定の違反は当事者の意思で放棄できないから、当事者が知りながら遅滞なく異議を述べなくても瑕疵は治癒されない。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "249",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "判決は、その基本となる口頭弁論に関与した裁判官がする。",
+     "text_sha256": "59769d41f260959f459613aa0e173d15626ff5f0adbd6e4c146620a51510e932",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "90",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "放棄することができないもの",
+     "text_sha256": "5143770bfafffddcee63efd229f01d7a215d6a9727a2da326602d3df47ad30af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "312",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "法律に従って判決裁判所を構成しなかったこと",
+     "text_sha256": "87f4c8dd65cdaa9ac3e0755c71864f03093fe3ddc2e6b2c9810f861ecf22a5f6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "249条1項違反が312条2項1号に当たり、放棄できないとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2024-minso-q37-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
