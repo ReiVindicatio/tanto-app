@@ -1,0 +1,185 @@
+{
+ "question_id": "yobi-2025-keiso-q18",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-keiso-q18-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。刑事訴訟法316条の2第1項は「検察官、被告人若しくは弁護人の請求により」事件を公判前整理手続に付することができると定めており、裁判員裁判の対象事件に限らず被告人も請求できる。",
+   "body": "決め手は、316条の2第1項が請求権者に被告人を含めている点である。同項は、裁判所は必要があると認めるときは「検察官、被告人若しくは弁護人の請求により又は職権で」、事件を公判前整理手続に付することができると定めており、対象を裁判員裁判の対象事件に限っていない。したがって、被告人は、裁判員裁判の対象事件でない事件についても、公判前整理手続に付することを求めることができ、本肢は正しい。なお、当事者の請求権は平成28年の法改正で加えられたものである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官、被告人若しくは弁護人の請求により又は職権で",
+     "text_sha256": "d51f63ae3bca4cb58d0f3939aaea342191b1e39f7638b828279255790b032134",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-keiso-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-keiso-q18-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。刑事訴訟法316条の2第1項は、裁判所が「必要があると認めるとき」に公判前整理手続に付することが「できる」と定めるだけで、当事者双方が請求しても付さなければならないわけではない。",
+   "body": "決め手は「付さなければならない」という部分である。316条の2第1項は、裁判所は「充実した公判の審理を継続的、計画的かつ迅速に行うため必要があると認めるとき」に、請求により又は職権で「事件を公判前整理手続に付することができる」と定めており、付するかどうかは裁判所の判断に委ねられている。同条2項も、「同項の請求を却下する決定」を予定しているから、請求があっても却下することができる。したがって、検察官と弁護人の双方が求めていても付さなければならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "充実した公判の審理を継続的、計画的かつ迅速に行うため必要があると認めるとき",
+     "text_sha256": "d51f63ae3bca4cb58d0f3939aaea342191b1e39f7638b828279255790b032134",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "同項の請求を却下する決定",
+     "text_sha256": "d51f63ae3bca4cb58d0f3939aaea342191b1e39f7638b828279255790b032134",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-keiso-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-keiso-q18-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。刑事訴訟法316条の14第2項は、検察官請求証拠の開示をした後、被告人又は弁護人から請求があったときは、検察官は速やかに証拠の一覧表を交付しなければならないと定めている。",
+   "body": "決め手は、316条の14第2項の文言そのものである。同項は、「検察官は、前項の規定による証拠の開示をした後、被告人又は弁護人から請求があつたときは、速やかに、被告人又は弁護人に対し、検察官が保管する証拠の一覧表の交付をしなければならない」と定める。前項の開示とは、検察官請求証拠の開示である（同条1項）。本肢はこの規定と一致しており、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_14",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "検察官は、前項の規定による証拠の開示をした後、被告人又は弁護人から請求があつたときは、速やかに、被告人又は弁護人に対し、検察官が保管する証拠の一覧表の交付をしなければならない。",
+     "text_sha256": "983515be02fd34b90976a0f5edbf9270075f479e2c9e14688c80527f88df412c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-keiso-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-keiso-q18-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。刑事訴訟法316条の14第1項2号は、検察官が取調べを請求した証人について、その者が公判期日において供述すると思料する内容が明らかになる供述録取書等を閲覧する機会を与えなければならないと定めている。",
+   "body": "決め手は、316条の14第1項2号の開示方法である。同号は、証人について、その氏名及び住居を知る機会を与え、かつ、その者の供述録取書等のうち「その者が公判期日において供述すると思料する内容が明らかになるもの」を閲覧する機会を与えることを定める。供述録取書等が存在しないときなどは、供述すると思料する内容の要旨を記載した書面を閲覧させることになる。本肢はこの規定に沿うものであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_14",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その者が公判期日において供述すると思料する内容が明らかになるもの",
+     "text_sha256": "983515be02fd34b90976a0f5edbf9270075f479e2c9e14688c80527f88df412c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-keiso-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-keiso-q18-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。刑事訴訟法316条の5は、証拠調べをする決定又は請求を却下する決定を公判前整理手続で「行うことができる」事項として定めるにとどまり、手続終結までに全ての請求について決定しなければならないとはしていない。",
+   "body": "決め手は「全てについて、同手続終結までに」決定を「しなければならない」という部分である。316条の5は、「公判前整理手続においては、次に掲げる事項を行うことができる」とし、その8号に「証拠調べをする決定又は証拠調べの請求を却下する決定をすること」を掲げている。これは公判前整理手続でできることを列挙したもので、終結までに全ての証拠調べ請求について決定することを義務付けるものではない。実際にも、証拠の採否の判断を公判での審理の状況を見るまで留保することがありうると解されている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公判前整理手続においては、次に掲げる事項を行うことができる。",
+     "text_sha256": "e1b386b451c5824e498a1a3107a79e11d2f80871b25afc2d5d9ecef472ceb119",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "採否の留保がありうる点は運用・解釈による。"
+   ],
+   "id": "exp-yobi-2025-keiso-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

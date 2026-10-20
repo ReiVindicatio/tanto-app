@@ -1,0 +1,198 @@
+{
+ "question_id": "yobi-2025-keiso-q21",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-keiso-q21-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。刑事訴訟法35条は、裁判所が被告人の弁護人の数を制限することを、特別の事情のあるときに限って認めている。",
+   "body": "決め手は「制限することはできない」という部分である。35条は「裁判所は、裁判所の規則の定めるところにより、被告人又は被疑者の弁護人の数を制限することができる」と定め、ただし書で「被告人の弁護人については、特別の事情のあるときに限る」としている。つまり、被告人の弁護人の数の制限は要件が厳しく絞られているものの、特別の事情があれば制限できる。したがって、被告人の私選弁護人の数を制限することは一切できないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "35",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、裁判所の規則の定めるところにより、被告人又は被疑者の弁護人の数を制限することができる。但し、被告人の弁護人については、特別の事情のあるときに限る。",
+     "text_sha256": "b498aa50621b437ac74ff940f2ae6f4c37a0ee350e1745bf7eecb846c912b5ec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-keiso-q21-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-keiso-q21-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。弁護士会への私選弁護人の選任の申出が事前に必要なのは、資力が基準額以上である被疑者に限られ、「資力のいかんを問わず」必要なわけではない。",
+   "body": "決め手は「その資力のいかんを問わず」という部分である。勾留を請求された被疑者も37条の2第1項の国選弁護人の選任を請求できる（同条2項）。この請求について、37条の3第1項は資力申告書の提出を求め、同条2項は「その資力が基準額以上である被疑者が前条第一項の請求をするには、あらかじめ、その勾留の請求を受けた裁判官の所属する裁判所の所在地を管轄する地方裁判所の管轄区域内に在る弁護士会に第三十一条の二第一項の申出をしていなければならない」と定める。資力が基準額に満たない被疑者には、この事前の申出は求められていない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "37_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の請求は、勾留を請求された被疑者も、これをすることができる。",
+     "text_sha256": "c059e5abe12b03687b91f542f448865b4a9ce290f15ce216663ea88ebe245526",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "37_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条第一項の請求をするには、資力申告書を提出しなければならない。",
+     "text_sha256": "a2b0c50dcefae0957a413e46d698a26a95744d67387adec8a29c668c03c26caa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "37_3",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その資力が基準額以上である被疑者が前条第一項の請求をするには、あらかじめ、その勾留の請求を受けた裁判官の所属する裁判所の所在地を管轄する地方裁判所の管轄区域内に在る弁護士会に第三十一条の二第一項の申出をしていなければならない。",
+     "text_sha256": "a2b0c50dcefae0957a413e46d698a26a95744d67387adec8a29c668c03c26caa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-keiso-q21-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-keiso-q21-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。刑事訴訟法38条の2により、裁判官による弁護人の選任は、被疑者がその事件について釈放されたときに効力を失う（勾留の執行停止による釈放を除く）。",
+   "body": "決め手は「終局処分がされるまでは…地位を失うことはない」という部分である。38条の2は「裁判官による弁護人の選任は、被疑者がその選任に係る事件について釈放されたときは、その効力を失う」と定め、ただし書で「その釈放が勾留の執行停止によるときは、この限りでない」とする。本肢は勾留が取り消されて釈放された場合であり、勾留の執行停止による釈放ではないから、国選弁護人の選任は釈放の時点で効力を失う。検察官の終局処分を待つわけではないので、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "38_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判官による弁護人の選任は、被疑者がその選任に係る事件について釈放されたときは、その効力を失う。ただし、その釈放が勾留の執行停止によるときは、この限りでない。",
+     "text_sha256": "9790325df64e62052a61e6d0d9aa08e45252350f0fa5a6ceef43ea4933a9fc67",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-keiso-q21-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-keiso-q21-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。公訴提起後の私選弁護人の選任は被告人と弁護人が連署した書面によるべきものとされ、氏名を記載できない合理的な理由がないのに被告人の署名を欠く選任届による選任は無効と解されている。",
+   "body": "決め手は、公訴提起後の弁護人の選任が書面による要式行為とされている点である。刑事訴訟法30条1項は被告人が「何時でも弁護人を選任することができる」と定めるが、その方式は刑事訴訟規則に委ねられており、公訴の提起後の弁護人の選任は弁護人と連署した書面を差し出してしなければならないとされている。最高裁判所の決定は、被告人に氏名を記載することができない合理的な理由がないのに、被告人の署名のない弁護人選任届によってした弁護人の選任は無効であるとしたとされる（判例あり（要確認））。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "30",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告人又は被疑者は、何時でも弁護人を選任することができる。",
+     "text_sha256": "ad8a7a45c4e020e4b54528016c9131ed47f207dc7924d8a0bac83bb96a700db6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "刑事訴訟規則は e-Gov 法令 API になく、本文を引用していない（連署書面の方式は規則の定め）。",
+    "署名のない弁護人選任届を無効とした最高裁決定は、courts.go.jp で判決そのものを2回探したが確認できなかったため、cases に入れず「判例あり（要確認）」とした。"
+   ],
+   "id": "exp-yobi-2025-keiso-q21-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-keiso-q21-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。刑事訴訟法30条2項は、被告人又は被疑者の法定代理人、保佐人、配偶者、直系の親族及び兄弟姉妹が独立して弁護人を選任できると定めている。",
+   "body": "決め手は、30条2項の文言そのものである。同条1項は被告人又は被疑者本人の弁護人選任権を定め、2項は「被告人又は被疑者の法定代理人、保佐人、配偶者、直系の親族及び兄弟姉妹は、独立して弁護人を選任することができる」と定める。「独立して」とは、本人の意思に従属せずに選任できることをいうと解されている。本肢は同項の内容をそのまま述べたものであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "30",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "被告人又は被疑者の法定代理人、保佐人、配偶者、直系の親族及び兄弟姉妹は、独立して弁護人を選任することができる。",
+     "text_sha256": "ad8a7a45c4e020e4b54528016c9131ed47f207dc7924d8a0bac83bb96a700db6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2025-keiso-q21-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

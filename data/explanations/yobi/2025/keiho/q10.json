@@ -1,0 +1,335 @@
+{
+ "question_id": "yobi-2025-keiho-q10",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-keiho-q10-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。幇助罪の個数は正犯の罪の個数に従い（2個の傷害罪の幇助犯）、それらが一個の行為かどうかは幇助行為自体でみるから、木刀を1回手渡した甲の2罪は観念的競合となる。",
+   "body": "ポイントは、幇助犯の罪数の数え方と、観念的競合の「一個の行為」の判断基準です。判例は、幇助罪の個数は正犯の罪の個数に従って決まり、幇助罪が数個成立する場合にそれらが54条1項にいう一個の行為によるかどうかは、幇助行為それ自体についてみるべきであるとしています。本肢では、正犯乙がＡとＢを順次殴打して2個の傷害罪（204条）を犯していますので、甲には62条1項により2個の傷害罪の幇助犯が成立します。他方、甲の幇助行為は木刀を1回手渡したという一個の行為ですから、54条1項の「一個の行為が二個以上の罪名に触れ」る場合として観念的競合になります。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "62",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正犯を幇助した者は、従犯とする。",
+     "text_sha256": "64542fa2877f533ec2c244692d3bfc7ec33145f64b8ee8b1bca58a4cc77c6bf4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ、又は犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "204",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の身体を傷害した者は、十五年以下の拘禁刑又は五十万円以下の罰金に処する。",
+     "text_sha256": "6ede21287a797c6f241c77f9e36de03258b58392279dd9ec60ceafb09f7b2af4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "覚せい剤取締法違反、関税法違反被告事件（幇助罪の個数）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1982-02-17",
+     "holding": "幇助罪の個数は正犯の罪の個数に従って決まり、幇助罪が数個成立する場合にそれらが54条1項の一個の行為によるかどうかは、幇助行為それ自体についてみるべきである。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57031/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2025-keiho-q10-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-keiho-q10-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。人を逮捕し引き続き監禁した場合は、逮捕罪と監禁罪の牽連犯ではなく、220条の一罪（包括一罪）が成立する。",
+   "body": "誤りは、逮捕罪と監禁罪が別々に成立して「牽連犯となる」としている点です。220条は「不法に人を逮捕し、又は監禁した者」を同じ条文・同じ法定刑で処罰しており、逮捕と監禁は同一の法益（身体活動の自由）を侵害する継続した行為です。判例は、人を不法に逮捕し、引き続き監禁した場合には220条1項の一罪が成立するとしています。したがって、甲には逮捕監禁罪の一罪が成立し、牽連犯にはなりません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "220",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法に人を逮捕し、又は監禁した者は、三月以上七年以下の拘禁刑に処する。",
+     "text_sha256": "d8ef399d30f380f6cab88d03eb7df7918dcbb43ebd2d82339b4ecf5563b90cd1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "監禁被告事件（逮捕に引き続く監禁の罪数）",
+     "court": "最高裁判所大法廷",
+     "date": "1953-06-17",
+     "holding": "人を不法に逮捕し、引き続き監禁した場合には、刑法220条1項の一罪が成立する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54302/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "保護法益を身体活動の自由とする点は解釈による"
+   ],
+   "id": "exp-yobi-2025-keiho-q10-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-keiho-q10-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。殺人後の死体遺棄は殺人の通常の手段・結果の関係にないから、殺人罪と死体遺棄罪は牽連犯ではなく併合罪となる。",
+   "body": "誤りは、殺人罪と死体遺棄罪を「牽連犯となる」としている点です。牽連犯は、54条1項後段の「犯罪の手段若しくは結果である行為が他の罪名に触れるとき」に当たる場合で、罪質上、通常一方が他方の手段又は結果となる関係にあることが必要と解されています。人を殺した後に死体を遺棄することは、殺人に通常伴う結果とはいえないため、殺人罪（199条）と死体遺棄罪（190条）は別個に成立し、45条の併合罪になると解されています（判例あり（要確認））。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるとき",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者は、死刑又は無期若しくは五年以上の拘禁刑に処する。",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "190",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "死体、遺骨、遺髪又は棺に納めてある物を損壊し、遺棄し、又は領得した者は、三年以下の拘禁刑に処する。",
+     "text_sha256": "6bcf6d6dc4b85c6e8e9cfb1b3faf6e5544b2bab119dd3d0f84779d1f8dc924ff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "殺人罪と死体遺棄罪を併合罪とする大審院判例（明治44年とされる）は、courts.go.jp で確認できなかったため「判例あり（要確認）」とした",
+    "牽連犯の判断基準（罪質上通常の手段・結果の関係）は解釈による"
+   ],
+   "id": "exp-yobi-2025-keiho-q10-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-keiho-q10-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。保険金詐取目的の放火と、その後の保険金の詐取は、罪質上通常の手段・結果の関係にないから、現住建造物等放火罪と詐欺罪は牽連犯ではなく併合罪となる。",
+   "body": "誤りは、現住建造物等放火罪と詐欺罪を「牽連犯となる」としている点です。妻と同居する自宅は108条の「現に人が住居に使用し」ている建造物ですから、これを全焼させた甲には現住建造物等放火罪が成立し、火災原因を偽って保険金の支払を受けた行為には詐欺罪（246条1項）が成立します。もっとも、放火は保険金詐取の通常の手段とはいえず、甲が主観的に保険金詐取の手段として放火したにすぎないため、54条1項後段の「犯罪の手段若しくは結果である行為」には当たらないと解されています。そのため、両罪は45条の併合罪になると解されています（判例あり（要確認））。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "放火して、現に人が住居に使用し又は現に人がいる建造物、汽車、電車、艦船又は鉱坑を焼損した者は、死刑又は無期若しくは五年以上の拘禁刑に処する。",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "246",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を欺いて財物を交付させた者は、十年以下の拘禁刑に処する。",
+     "text_sha256": "c515031b5f484a4ebf537cf5f2eb826a008d119836fd4627833e9cdb1f4a5053",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるとき",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "放火罪と保険金詐欺の詐欺罪を併合罪とする大審院判例（昭和5年とされる）は、courts.go.jp で確認できなかったため「判例あり（要確認）」とした",
+    "牽連犯の判断基準（罪質上通常の手段・結果の関係）は解釈による"
+   ],
+   "id": "exp-yobi-2025-keiho-q10-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2025-keiho-q10-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。私文書の偽造→行使→詐欺は、罪質上通常、手段・結果の関係にあるから、有印私文書偽造罪・同行使罪・詐欺罪は牽連犯となる。",
+   "body": "ポイントは、文書偽造・行使と詐欺が54条1項後段の「犯罪の手段若しくは結果である行為が他の罪名に触れるとき」に当たるかです。甲はＡに成り済ましてＡ名義の口座開設申込書を作成しており、159条1項の「他人の印章等を使用して権利、義務若しくは事実証明に関する文書等を偽造」する行為として有印私文書偽造罪が、これを係員に提出した行為に161条1項の偽造私文書行使罪が成立します。さらに、係員を欺いて預金通帳の交付を受けた行為には詐欺罪（246条1項）が成立します。偽造は行使の、行使は詐欺の通常の手段であると解されており、3罪は牽連犯として最も重い刑により処断されます（判例あり（要確認））。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ、又は犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "159",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の印章等を使用して権利、義務若しくは事実証明に関する文書等を偽造し",
+     "text_sha256": "4692c5d57b76d54088002bc3ffe8f3c006b0d157c4ba2c817e4b82da7a134a14",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "161",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の文書等又は電磁的記録文書等を行使した者は、その文書等若しくは電磁的記録文書等を偽造し、若しくは変造し、又は虚偽の記載若しくは記録をした者と同一の刑に処する。",
+     "text_sha256": "678e86310d0342525c44a65ceeecee4ecb08155f34e55c7a5653d68908ced709",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "246",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を欺いて財物を交付させた者は、十年以下の拘禁刑に処する。",
+     "text_sha256": "c515031b5f484a4ebf537cf5f2eb826a008d119836fd4627833e9cdb1f4a5053",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "私文書偽造・同行使・詐欺を牽連犯とする判例は courts.go.jp で確認できなかったため「判例あり（要確認）」とした",
+    "159条・161条は取得日時点の現行法で「印章等」「文書等」「電磁的記録文書等」の文言に改正されている（出題時点の条文とは文言が異なる）。有印私文書偽造・同行使が成立するという結論には影響しない",
+    "預金通帳が詐欺罪の「財物」に当たることは解釈による"
+   ],
+   "id": "exp-yobi-2025-keiho-q10-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
