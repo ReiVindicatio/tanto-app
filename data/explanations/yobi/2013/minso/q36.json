@@ -1,0 +1,297 @@
+{
+ "question_id": "yobi-2013-minso-q36",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minso-q36-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：破産管財人は自己の名で他人のために当事者となる資格者であり、その解任は資格の喪失として訴訟手続を中断させる（民事訴訟法124条1項5号）ので、「中断しない場合」には当たらない。",
+   "body": "破産法80条は「破産財団に関する訴えについては、破産管財人を原告又は被告とする」と定め、破産管財人は自己の名で破産財団のために当事者となる。裁判所は重要な事由があるときは「破産管財人を解任することができる」（破産法75条2項）。民事訴訟法124条1項5号は「一定の資格を有する者で自己の名で他人のために訴訟の当事者となるものの死亡その他の事由による資格の喪失」を中断事由とし、受継すべき者を「同一の資格を有する者」と定めており、破産管財人はこの資格者に当たると解されている。本問では訴訟代理人がないから同条2項の例外も働かず、破産管財人の解任により訴訟手続は中断し、後任の破産管財人が受け継ぐ。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "破産法",
+     "article": "80",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "破産財団に関する訴えについては、破産管財人を原告又は被告とする",
+     "text_sha256": "39e23077526a324cf3bd342a8d05c88a95a956c8c5dd7e79af2f1788de7cab30",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AD%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "破産法",
+     "article": "75",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "破産管財人を解任することができる",
+     "text_sha256": "6cf041b71496a48d0caceeb943f89f8919df604b4f3ce87cfc2f6eba66c435ca",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AD%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "五　一定の資格を有する者で自己の名で他人のために訴訟の当事者となるものの死亡その他の事由による資格の喪失　同一の資格を有する者",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、訴訟代理人がある間は、適用しない。",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "破産管財人が民事訴訟法124条1項5号の資格者に当たるという点は解釈による。"
+   ],
+   "id": "exp-yobi-2013-minso-q36-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minso-q36-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：支配人は法令上の訴訟代理人であって法定代理人ではなく、訴訟代理人の代理権の消滅は民事訴訟法124条1項の中断事由に含まれないので、支配人が辞任しても訴訟手続は中断しない。",
+   "body": "支配人は「商人に代わってその営業に関する一切の裁判上又は裁判外の行為をする権限を有する」（商法21条1項。会社の支配人につき会社法11条1項も同旨）から、民事訴訟法54条1項の「法令により裁判上の行為をすることができる代理人」、すなわち法令上の訴訟代理人に当たる。民事訴訟法124条1項が中断事由として挙げるのは、当事者の死亡、訴訟能力の喪失、「法定代理人の死亡若しくは代理権の消滅」などであり、訴訟代理人の代理権の消滅は挙げられていない。訴訟代理人の代理権が消滅しても、本人である当事者は自ら訴訟を追行できるからである。したがって、支配人が辞任しても訴訟手続は中断しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "21",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "商人に代わってその営業に関する一切の裁判上又は裁判外の行為をする権限を有する",
+     "text_sha256": "c54827d28e3aee156008a43bcc87e27059a7c9f0be35b156cea742b07752cc80",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支配人は、会社に代わってその事業に関する一切の裁判上又は裁判外の行為をする権限を有する。",
+     "text_sha256": "47780b61d3a757a99530ef995559fee6e20573e7a45a7168c4eb24c30ca8457a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法令により裁判上の行為をすることができる代理人",
+     "text_sha256": "149b10b28d1c135ac0dc0d8e74c538eca7f5f43ac0ca2b8156083cae01800a68",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法定代理人の死亡若しくは代理権の消滅",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "支配人を法令上の訴訟代理人と位置づけ、その代理権の消滅が中断事由に当たらないとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2013-minso-q36-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minso-q36-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：法人でない社団の代表者には法定代理人に関する規定が準用され（民事訴訟法37条）、代表者の辞任は法定代理人の代理権の消滅として訴訟手続を中断させる（同法124条1項3号）。",
+   "body": "「法人でない社団又は財団で代表者又は管理人の定めがあるものは、その名において訴え、又は訴えられることができる」（民事訴訟法29条）。そして同法37条は「この法律中法定代理及び法定代理人に関する規定は、法人の代表者及び法人でない社団又は財団でその名において訴え、又は訴えられることができるものの代表者又は管理人について準用する」と定める。同法124条1項3号は「法定代理人の死亡若しくは代理権の消滅」を中断事由とするから、これが準用され、代表者の辞任によって代表権が消滅すると訴訟手続は中断する。本問では訴訟代理人がないので、同条2項による例外もない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "29",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法人でない社団又は財団で代表者又は管理人の定めがあるものは、その名において訴え、又は訴えられることができる",
+     "text_sha256": "ffa04388ade38103f2d6100c68788c0d8ab582f0b8e8d04366c8f42afbfed2ab",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この法律中法定代理及び法定代理人に関する規定は、法人の代表者及び法人でない社団又は財団でその名において訴え、又は訴えられることができるものの代表者又は管理人について準用する",
+     "text_sha256": "e6d8d2ca416fb7b1ba4c7f0fc2a371d1aa7519a48c8c824289bf8e64948ffb13",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法定代理人の死亡若しくは代理権の消滅",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-minso-q36-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minso-q36-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：訴訟上の特別代理人は法定代理人と解されており、その改任による代理権の消滅は民事訴訟法124条1項3号の中断事由に当たるので、訴訟手続は中断する。",
+   "body": "民事訴訟法35条1項は、法定代理人がない場合などに、未成年者又は成年被後見人に対し訴訟行為をしようとする者が特別代理人の選任を申し立てることができると定め、同条2項は「裁判所は、いつでも特別代理人を改任することができる」とする。特別代理人は、その訴訟に限って選任される法定代理人であると解されている。そうすると、改任により従前の特別代理人の代理権が消滅することは、同法124条1項3号の「法定代理人の死亡若しくは代理権の消滅」に当たり、訴訟代理人のない本問では訴訟手続は中断する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "35",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判所は、いつでも特別代理人を改任することができる",
+     "text_sha256": "b30e70cb2e82939fe316fedab99f940ebaafa14a5daa5a540883cb2ac3b3cfc5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法定代理人の死亡若しくは代理権の消滅",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "特別代理人を法定代理人と位置づけ、改任を代理権の消滅として中断事由とする点は解釈による。"
+   ],
+   "id": "exp-yobi-2013-minso-q36-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minso-q36-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：選定当事者による中断は「全員の」資格喪失の場合に限られ（民事訴訟法124条1項6号）、一部の者が死亡しても他の選定当事者が全員のために訴訟行為をすることができる（同法30条5項）ので、訴訟手続は中断しない。",
+   "body": "民事訴訟法124条1項6号は、中断事由を「選定当事者の全員の死亡その他の事由による資格の喪失」と定めている。また同法30条5項は「選定当事者のうち死亡その他の事由によりその資格を喪失した者があるときは、他の選定当事者において全員のために訴訟行為をすることができる」とする。したがって、複数の選定当事者のうちの一人が死亡しても、残りの選定当事者が訴訟を追行でき、訴訟手続は中断しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "選定当事者の全員の死亡その他の事由による資格の喪失",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "30",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "選定当事者のうち死亡その他の事由によりその資格を喪失した者があるときは、他の選定当事者において全員のために訴訟行為をすることができる",
+     "text_sha256": "715a57951b954bb406d4ce3d58e4344a3309ffa1169b4b8f8a0c69fa55a5041d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-minso-q36-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,310 @@
+{
+ "question_id": "yobi-2013-minso-q33",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minso-q33-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：当事者の死亡により訴訟手続は中断し、相続人が訴訟手続を受け継ぐ（民事訴訟法124条1項1号）。相続の放棄をした者は初めから相続人とならなかったものとみなされる（民法939条）から、放棄しない限り相続人が当事者となる。",
+   "body": "民事訴訟法124条1項は、「当事者の死亡」があるときは訴訟手続が中断し、「相続人、相続財産の管理人、相続財産の清算人その他法令により訴訟を続行すべき者」が「訴訟手続を受け継がなければならない」と定める（同項1号）。当事者の死亡により、訴訟上の地位は相続人に当然に承継される（当然承継）と解されている。他方、同条3項は「相続人は、相続の放棄をすることができる間は、訴訟手続を受け継ぐことができない」とし、民法939条は「相続の放棄をした者は、その相続に関しては、初めから相続人とならなかったものとみなす」と定める。したがって、相続人は、相続の放棄をしない限り、死亡した者に代わって当事者となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一　当事者の死亡　相続人、相続財産の管理人、相続財産の清算人その他法令により訴訟を続行すべき者",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟手続を受け継がなければならない",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "相続人は、相続の放棄をすることができる間は、訴訟手続を受け継ぐことができない",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "939",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続の放棄をした者は、その相続に関しては、初めから相続人とならなかったものとみなす",
+     "text_sha256": "216f51496d3f22d25f4cbdffdc301b3ced35db37b4b4d6476eff92a0eca2e47f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "当事者の死亡による訴訟上の地位の当然承継は解釈による。民事訴訟法124条1項1号の「相続財産の清算人」の文言は出題後の改正によるものと考えられるが、改正前の内容は条文の本文で確認していない（本肢の結論には影響しない）。"
+   ],
+   "id": "exp-yobi-2013-minso-q33-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minso-q33-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：権利の譲受人は、参加承継（民事訴訟法49条・47条1項）を「することができる」にとどまり、参加する義務は負わない。譲受人を訴訟に引き込むには、当事者が訴訟引受けの申立てをする（同法51条・50条1項）。",
+   "body": "訴訟の目的である権利を譲り受けたことを主張する者は、民事訴訟法47条1項の規定により訴訟参加をすることができ（同法49条1項参照）、47条1項は第三者が「当事者としてその訴訟に参加することができる」と定めるにとどまる。参加は譲受人の権利であって、参加承継の申立てをする義務を負わせる規定はない。他方、譲受人が自ら参加しない場合に備えて、民事訴訟法51条は、50条の規定を「訴訟の係属中第三者がその訴訟の目的である権利の全部又は一部を譲り受けた場合について準用する」としている。つまり、当事者の申立てにより、裁判所が決定で譲受人に訴訟を引き受けさせる（訴訟引受け）という形で承継が図られる。したがって、譲受人が参加承継の申立てをして訴訟を承継する「義務を負う」とする点が誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "47",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者としてその訴訟に参加することができる",
+     "text_sha256": "eabfcfd2afc146ac9b32a0de3c3390a3c5eb44d5e313f0c34165494a7daadc48",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "49",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の係属中その訴訟の目的である権利の全部又は一部を譲り受けたことを主張する者が第四十七条第一項の規定により訴訟参加をしたときは",
+     "text_sha256": "49102ea9f5a061c7442cd888327a9131284276d9f8ab647b6beacbac3389a96a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "51",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条の規定は訴訟の係属中第三者がその訴訟の目的である権利の全部又は一部を譲り受けた場合について準用する",
+     "text_sha256": "1cd604a40e42d668d243ed421f66e9f03f8dba6b5678a30c03578e4eb5fc2345",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "50",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、当事者の申立てにより、決定で、その第三者に訴訟を引き受けさせることができる",
+     "text_sha256": "6113e69e1ac80eedccc27eb70841d8793de4fc2b28ed93008f52a20f695fa3a5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-minso-q33-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minso-q33-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：権利の譲受人が参加承継をしたときは、時効に関しては訴訟の係属の初めに裁判上の請求があったものとみなされる（民事訴訟法49条1項）。",
+   "body": "民事訴訟法49条1項は、「訴訟の係属中その訴訟の目的である権利の全部又は一部を譲り受けたことを主張する者が第四十七条第一項の規定により訴訟参加をしたときは、時効の完成猶予に関しては、当該訴訟の係属の初めに、裁判上の請求があったものとみなす」と定める。また同条2項は、その参加は「訴訟の係属の初めに遡って法律上の期間の遵守の効力を生ずる」とする。参加承継をした譲受人は前主の訴訟状態をそのまま引き継ぐから、時効についても、参加の時ではなく、もとの訴訟の係属の初めにさかのぼって効力が生じる。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "49",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の係属中その訴訟の目的である権利の全部又は一部を譲り受けたことを主張する者が第四十七条第一項の規定により訴訟参加をしたときは、時効の完成猶予に関しては、当該訴訟の係属の初めに、裁判上の請求があったものとみなす",
+     "text_sha256": "49102ea9f5a061c7442cd888327a9131284276d9f8ab647b6beacbac3389a96a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "49",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "訴訟の係属の初めに遡って法律上の期間の遵守の効力を生ずる",
+     "text_sha256": "49102ea9f5a061c7442cd888327a9131284276d9f8ab647b6beacbac3389a96a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "本肢は出題当時の「時効の中断」の語で書かれている。現行の民事訴訟法49条1項は「時効の完成猶予」の語を用いており、民法（債権関係）の改正に伴う変更と考えられるが、改正前の内容は条文の本文で確認していない。訴訟の係属の初めにさかのぼって効力を生ずるという点は現行法でも同じであり、結論（○）は変わらない。",
+    "参加承継人が前主の訴訟状態を引き継ぐという説明は解釈による。"
+   ],
+   "id": "exp-yobi-2013-minso-q33-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minso-q33-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：参加承継があった場合に参加前の原告が訴訟から脱退するには「相手方の承諾」が必要である（民事訴訟法48条）。承諾なしに当然に脱退するわけではない。",
+   "body": "権利の譲受人による参加承継は「第四十七条第一項の規定により訴訟参加をした」ものとして扱われる（民事訴訟法49条1項）。そして民事訴訟法48条は、47条1項の規定により訴訟に参加した者がある場合には、「参加前の原告又は被告は、相手方の承諾を得て訴訟から脱退することができる」と定める。脱退した場合も「判決は、脱退した当事者に対してもその効力を有する」（同条後段）。したがって、参加前の原告は、相手方の承諾を得てはじめて脱退することができ、相手方の承諾を得ることなく訴訟から脱退するとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "49",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四十七条第一項の規定により訴訟参加をしたときは",
+     "text_sha256": "49102ea9f5a061c7442cd888327a9131284276d9f8ab647b6beacbac3389a96a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "48",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "参加前の原告又は被告は、相手方の承諾を得て訴訟から脱退することができる",
+     "text_sha256": "2a3bb6d4f6856de973f313f0750481284e523cb7ac14edb269e74a1c55a6f570",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "48",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "判決は、脱退した当事者に対してもその効力を有する",
+     "text_sha256": "2a3bb6d4f6856de973f313f0750481284e523cb7ac14edb269e74a1c55a6f570",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "47",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者としてその訴訟に参加することができる",
+     "text_sha256": "eabfcfd2afc146ac9b32a0de3c3390a3c5eb44d5e313f0c34165494a7daadc48",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-minso-q33-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minso-q33-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：訴訟の係属中に第三者が訴訟の目的である義務を承継したときは、裁判所は当事者の申立てにより決定でその第三者に訴訟を引き受けさせることができる（民事訴訟法50条1項）。",
+   "body": "民事訴訟法50条1項は、「訴訟の係属中第三者がその訴訟の目的である義務の全部又は一部を承継したときは、裁判所は、当事者の申立てにより、決定で、その第三者に訴訟を引き受けさせることができる」と定める。訴訟物とされている貸金債権に係る債務を第三者が引き受けた場合は、この義務の承継に当たると解されている。したがって、原告は、当該第三者に対して訴訟引受けの申立てをすることができる。なお、引受けの決定をする場合には、裁判所は「当事者及び第三者を審尋しなければならない」（同条2項）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "50",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の係属中第三者がその訴訟の目的である義務の全部又は一部を承継したときは、裁判所は、当事者の申立てにより、決定で、その第三者に訴訟を引き受けさせることができる",
+     "text_sha256": "6113e69e1ac80eedccc27eb70841d8793de4fc2b28ed93008f52a20f695fa3a5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "50",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当事者及び第三者を審尋しなければならない",
+     "text_sha256": "6113e69e1ac80eedccc27eb70841d8793de4fc2b28ed93008f52a20f695fa3a5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "債務引受けが「義務の承継」に当たるかは解釈による（免責的・併存的の区別には立ち入っていない）。"
+   ],
+   "id": "exp-yobi-2013-minso-q33-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

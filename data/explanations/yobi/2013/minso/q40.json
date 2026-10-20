@@ -1,0 +1,246 @@
+{
+ "question_id": "yobi-2013-minso-q40",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minso-q40-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：「裁判所は、管轄に関する事項について、職権で証拠調べをすることができる」（民事訴訟法14条）。",
+   "body": "弁論主義の下では、証拠調べは原則として当事者の申出によるが、民事訴訟法14条は「裁判所は、管轄に関する事項について、職権で証拠調べをすることができる」と定める。管轄は訴訟要件であり、その存否は当事者の申出の有無にかかわらず裁判所が判断すべき事項だからである。管轄の原因事実は「管轄に関する事項」にあたるから、裁判所は職権で証拠調べをすることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "14",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、管轄に関する事項について、職権で証拠調べをすることができる",
+     "text_sha256": "a195dc340e1084059df00732771c53c2509582b5f21a53db278c58d4a5af95d8",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-minso-q40-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minso-q40-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：引用文書は提出義務のある文書（民事訴訟法220条1号）だが、書証としての提出命令は当事者の「文書提出命令の申立て」があって初めて発せられ（219条・221条・223条1項）、職権ではできない。",
+   "body": "民事訴訟法220条1号は「当事者が訴訟において引用した文書を自ら所持するとき」は文書の所持者はその提出を拒むことができないとし、引用文書について提出義務を定める。しかし書証の申出は「文書を提出し、又は文書の所持者にその提出を命ずることを申し立ててしなければならない」（219条）とされ、文書提出命令は「文書提出命令の申立てを理由があると認めるときは」発するもの（223条1項）であって、221条が申立ての方式を定めている。職権で文書の提出を命じて証拠調べをすることを認める規定はない。なお、151条1項3号は釈明処分として「訴訟において引用した文書」で当事者の所持するものを「提出させること」を認めるが、これは「訴訟関係を明瞭にするため」の処分であり、証拠調べのための提出命令ではないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "220",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が訴訟において引用した文書を自ら所持するとき",
+     "text_sha256": "510034e7cae447b08db14844df5874f95c779b3225ee8412523668a31534cc07",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "219",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "文書を提出し、又は文書の所持者にその提出を命ずることを申し立ててしなければならない",
+     "text_sha256": "2baec8f69c16b02b1a45a9c7c2268b72f1a23b176e21f5fa91f6eea847f04696",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "221",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "文書提出命令の申立て",
+     "text_sha256": "c05ba96fda3394ea23fd528d3f98382a8d4027ad8b6e4f9c7656807d3a33cc58",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "223",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "文書提出命令の申立てを理由があると認めるときは",
+     "text_sha256": "3fd2c6de135ec047268133f432da636f337a8a57b7da0aee43257d18374fb59d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "151",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟関係を明瞭にするため",
+     "text_sha256": "ed54ac1f49137466579b2a1947aaa2483caa38c6552a1a1f9b6d8e4dac2bac11",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "151",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟において引用した文書",
+     "text_sha256": "ed54ac1f49137466579b2a1947aaa2483caa38c6552a1a1f9b6d8e4dac2bac11",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "釈明処分による提出が証拠調べではないという点は解釈による。",
+    "151条1項3号・220条などは出題後の改正（電磁的記録に関する部分など）で文言が変わっている可能性がある。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2013-minso-q40-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minso-q40-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：「裁判所は、必要があると認めるときは、訴訟の係属中、職権で、証拠保全の決定をすることができる」（民事訴訟法237条）。",
+   "body": "証拠保全は通常は申立てによって行われるが、民事訴訟法237条は「裁判所は、必要があると認めるときは、訴訟の係属中、職権で、証拠保全の決定をすることができる」と定める。したがって、訴訟の係属中であれば、裁判所は必要があると認めるときに職権で証拠保全をすることができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "237",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、必要があると認めるときは、訴訟の係属中、職権で、証拠保全の決定をすることができる",
+     "text_sha256": "5c0d5261ee851ee45473e5f011c320e7988ef34999509524a80b85f8dd60c5a1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-minso-q40-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minso-q40-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：裁判所は「検証をするに当たり、必要があると認めるときは、鑑定を命ずることができる」（民事訴訟法233条）。",
+   "body": "民事訴訟法233条は「裁判所又は受命裁判官若しくは受託裁判官は、検証をするに当たり、必要があると認めるときは、鑑定を命ずることができる」と定める。この鑑定は当事者の申出を要件としておらず、検証の際に裁判所の判断で命じることができるものである。したがって、裁判所は検証に当たり職権で鑑定を命ずることができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "233",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所又は受命裁判官若しくは受託裁判官は、検証をするに当たり、必要があると認めるときは、鑑定を命ずることができる",
+     "text_sha256": "cbe1cbe6c9367732b4e29a356ae7a65caead7917e8111d16988f273f72d37755",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-minso-q40-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minso-q40-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：人事訴訟では、裁判所は当事者が主張しない事実をしん酌し、かつ「職権で証拠調べをすることができる」（人事訴訟法20条）。",
+   "body": "人事訴訟法20条前段は「人事訴訟においては、裁判所は、当事者が主張しない事実をしん酌し、かつ、職権で証拠調べをすることができる」と定め、職権探知主義を採っている。身分関係の判断は当事者以外にも影響が及ぶため、当事者の主張・立証に委ねきらないこととされている。ただし同条後段により、裁判所は「その事実及び証拠調べの結果について当事者の意見を聴かなければならない」。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人事訴訟においては、裁判所は、当事者が主張しない事実をしん酌し、かつ、職権で証拠調べをすることができる",
+     "text_sha256": "7adbfa83e0cae91fd4bb0543a19fee1240ed02e66dac416f43736e7f167a753d",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その事実及び証拠調べの結果について当事者の意見を聴かなければならない",
+     "text_sha256": "7adbfa83e0cae91fd4bb0543a19fee1240ed02e66dac416f43736e7f167a753d",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2013-minso-q40-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
