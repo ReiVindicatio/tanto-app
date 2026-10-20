@@ -1,0 +1,219 @@
+{
+ "question_id": "yobi-2021-keiso-q26",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiso-q26-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。憲法違反・憲法解釈の誤りは405条1号が定める上告理由である。",
+   "body": "刑事訴訟法405条は、高等裁判所がした判決に対し、所定の事由があることを理由として上告の申立てができるとし、その1号に「憲法の違反があること又は憲法の解釈に誤があること。」を掲げている。したがって、憲法の違反があること又は憲法の解釈に誤りがあることは適法な上告理由となり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "405",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "憲法の違反があること又は憲法の解釈に誤があること。",
+     "text_sha256": "d6a91b9c9a21991a01bf69c47ccc5f95877319a36185c886cd41f607e57fef86",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-keiso-q26-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiso-q26-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。重大な事実誤認は411条の職権破棄事由であって、適法な上告理由（405条）ではない。",
+   "body": "適法な上告理由は405条各号の事由（憲法違反・判例違反）に限られる。「判決に影響を及ぼすべき重大な事実の誤認があること」は411条3号に掲げられているが、411条は、上告裁判所が「第四百五条各号に規定する事由がない場合であつても」、その事由があって原判決を破棄しなければ著しく正義に反すると認めるときに、判決で原判決を破棄「することができる」とする規定であり、職権による破棄の事由を定めたものと解されている。したがって、重大な事実誤認は上告理由となるとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "405",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "左の事由があることを理由として上告の申立をすることができる。",
+     "text_sha256": "d6a91b9c9a21991a01bf69c47ccc5f95877319a36185c886cd41f607e57fef86",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "411",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "判決に影響を及ぼすべき重大な事実の誤認があること",
+     "text_sha256": "0fdcde215b4c26a6de476d74a714e4efd3405d9d4a5169ed78752d07c13d0f40",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-keiso-q26-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiso-q26-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。甚だしい量刑不当は411条の職権破棄事由であって、適法な上告理由（405条）ではない。",
+   "body": "適法な上告理由は405条各号の事由に限られ、量刑不当はこれに含まれない。「刑の量定が甚しく不当であること」は411条2号に掲げられているが、411条は、上告裁判所が「第四百五条各号に規定する事由がない場合であつても」、その事由があって原判決を破棄しなければ著しく正義に反すると認めるときに原判決を破棄「することができる」とする職権破棄の規定と解されている。したがって、刑の量定が甚しく不当で破棄しなければ著しく正義に反することが上告理由となるとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "405",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "左の事由があることを理由として上告の申立をすることができる。",
+     "text_sha256": "d6a91b9c9a21991a01bf69c47ccc5f95877319a36185c886cd41f607e57fef86",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "411",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "刑の量定が甚しく不当であること",
+     "text_sha256": "0fdcde215b4c26a6de476d74a714e4efd3405d9d4a5169ed78752d07c13d0f40",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-keiso-q26-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiso-q26-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。最高裁判所の判例がない場合には、大審院の判例と相反する判断も405条3号の上告理由となる。",
+   "body": "405条3号は、「最高裁判所の判例がない場合に、大審院若しくは上告裁判所たる高等裁判所の判例又はこの法律施行後の控訴裁判所たる高等裁判所の判例と相反する判断をしたこと。」を上告理由として掲げている。したがって、最高裁判所の判例がない場合には、大審院の判例と相反する判断をしたことが適法な上告理由となりうるのであり、「なることはない」とする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "405",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "最高裁判所の判例がない場合に、大審院若しくは上告裁判所たる高等裁判所の判例又はこの法律施行後の控訴裁判所たる高等裁判所の判例と相反する判断をしたこと。",
+     "text_sha256": "d6a91b9c9a21991a01bf69c47ccc5f95877319a36185c886cd41f607e57fef86",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-keiso-q26-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-keiso-q26-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。414条により控訴審の393条1項が準用され、上告裁判所も請求又は職権で事実の取調べができる。",
+   "body": "414条は「前章の規定は、この法律に特別の定のある場合を除いては、上告の審判についてこれを準用する。」と定め、控訴の章の規定を上告審に準用している。控訴審について393条1項本文は、控訴裁判所は前条（392条）の調査をするについて必要があるときは「検察官、被告人若しくは弁護人の請求により又は職権で事実の取調をすることができる。」と定め、392条1項は控訴趣意書に包含された事項の調査を定めている。これらが準用される結果、上告裁判所である最高裁判所も、上告趣意書に包含された事項を調査するについて必要があるときは、請求により又は職権で事実の取調べをすることができる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "414",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前章の規定は、この法律に特別の定のある場合を除いては、上告の審判についてこれを準用する。",
+     "text_sha256": "9b181e2bbe0aec6fc7852f54d0a8b00289c2adcbb3d76f971a8a4d1d618a6db6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "393",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官、被告人若しくは弁護人の請求により又は職権で事実の取調をすることができる。",
+     "text_sha256": "a743e6f7ed58d5edeb67336109c7e4463cf67e3f5c16d5ceccb14b8852d269b8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "392",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "控訴裁判所は、控訴趣意書に包含された事項は、これを調査しなければならない。",
+     "text_sha256": "3b685e9aa95412f77ee373b6bb2b92dcc62cd9db38eba7cd6601a47e1f09ad1c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-keiso-q26-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
