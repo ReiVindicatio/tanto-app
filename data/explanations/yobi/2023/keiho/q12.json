@@ -1,0 +1,273 @@
+{
+ "question_id": "yobi-2023-keiho-q12",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q12-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。被告人が自己の刑事事件について他人に偽証を教唆したときは、偽証教唆罪が成立するとするのが判例である。",
+   "body": "誤りは「偽証罪の教唆犯は成立しない」とする結論である。刑法169条の主体は「法律により宣誓した証人」であり、被告人自身が自己の事件で虚偽を述べても偽証罪にはならないが、他人である証人を教唆して偽証させれば、証人には偽証罪が成立し、教唆者には刑法61条により教唆犯が成立する。判例も、被告人自体に黙秘権があるからといって、他人に虚偽の陳述をするように教唆したときは偽証教唆罪が成立するとしている。他人の行為を利用して自ら虚偽を述べたに等しいという理由で教唆犯の成立を否定する立場は、判例の採るところではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "169",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律により宣誓した証人が虚偽の陳述をしたときは",
+     "text_sha256": "77df5c0d02a69a7af00981e5c00a7a117640f9405966264c48bb70b7ce7941e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "61",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を教唆して犯罪を実行させた者には、正犯の刑を科する。",
+     "text_sha256": "37308298414a09689bc15fefb10ea96a8d744d7274d85d4e79c7d1a167e0bfbf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "偽証教唆被告事件",
+     "court": "最高裁判所第二小法廷",
+     "date": "1953-10-19",
+     "holding": "被告人に黙秘権があっても、他人に虚偽の陳述をするよう教唆したときは偽証教唆罪が成立する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55673/detail2/index.html"
+     ]
+    },
+    {
+     "name": "自転車競技法違反、偽証、同教唆被告事件",
+     "court": "最高裁判所第三小法廷",
+     "date": "1957-04-30",
+     "holding": "被告人に黙秘権があるからといって、他人に虚偽の証言をするよう教唆したときは偽証教唆罪が成立する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50429/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2023-keiho-q12-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q12-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は「虚偽の陳述」を証人の記憶に反する陳述と解するので（主観説）、内容がたまたま真実と合致していても偽証罪は成立する。",
+   "body": "誤りは、陳述内容が真実と認められれば偽証罪が成立しないとする点である。刑法169条の「虚偽の陳述」について、判例は、証人が自己の記憶に反することを陳述することをいうと解しており（主観説）、陳述内容が客観的真実に合致するかどうかは問わないと解されている。記憶に反する陳述は、それ自体が審判を誤らせる危険を持つからである。したがって、殊更記憶に反する陳述をした以上、他の証拠からその内容が真実と認められても偽証罪は成立する。判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "169",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律により宣誓した証人が虚偽の陳述をしたときは",
+     "text_sha256": "77df5c0d02a69a7af00981e5c00a7a117640f9405966264c48bb70b7ce7941e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "主観説を採る判例（大審院）は courts.go.jp の検索で確認できなかったため、要確認とした。"
+   ],
+   "id": "exp-yobi-2023-keiho-q12-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q12-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。証言拒絶権を有する証人でも、これを行使せずに宣誓の上虚偽の陳述をしたときは偽証罪が成立するとするのが判例である。",
+   "body": "誤りは、自己負罪拒否特権があることを理由に偽証罪の成立を否定する点である。刑事訴訟法146条は「何人も、自己が刑事訴追を受け、又は有罪判決を受ける虞のある証言を拒むことができる。」と定め、証人には証言を拒む権利が保障されている。しかし、これは証言を拒むことを許すものであって、虚偽の陳述をすることまで許すものではない。判例も、証人が刑事訴訟法146条の証言拒絶権を有したとしても、宣誓の上虚偽の陳述をしたときは偽証罪が成立するとしている。本肢の証人は証言拒絶権を行使せずに宣誓して虚偽の陳述をしているから、刑法169条の偽証罪が成立する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "146",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "何人も、自己が刑事訴追を受け、又は有罪判決を受ける虞のある証言を拒むことができる。",
+     "text_sha256": "0754d1f1df53376df66ff0c08bd216b67e929c9625d4089b8c7ac25af6bda6b4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "169",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律により宣誓した証人が虚偽の陳述をしたときは",
+     "text_sha256": "77df5c0d02a69a7af00981e5c00a7a117640f9405966264c48bb70b7ce7941e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "偽証教唆被告事件",
+     "court": "最高裁判所第二小法廷",
+     "date": "1953-10-19",
+     "holding": "証人が刑訴法146条の証言拒絶権を有していても、宣誓の上虚偽の陳述をしたときは偽証罪が成立する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55673/detail2/index.html"
+     ]
+    },
+    {
+     "name": "自転車競技法違反、偽証、同教唆被告事件",
+     "court": "最高裁判所第三小法廷",
+     "date": "1957-04-30",
+     "holding": "証言拒絶権を有する事項であっても、宣誓の上虚偽の供述をすれば偽証罪が成立する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50429/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2023-keiho-q12-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q12-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。偽証罪は抽象的危険犯と解されており、虚偽の陳述が裁判の結果に影響しなかったとしても成立する。",
+   "body": "誤りは、裁判の結果に影響しなかったことを理由に偽証罪の成立を否定する点である。刑法169条は「法律により宣誓した証人が虚偽の陳述をしたときは」処罰すると定めるのみで、裁判の結果への影響や審判作用に対する具体的な危険の発生を要件としていない。偽証罪は国の審判作用の適正を保護する抽象的危険犯であり、宣誓した証人が虚偽の陳述をした時点で既遂となり、その陳述が裁判の結果に影響したかどうかは犯罪の成否に関係しないと解されている。判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "169",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律により宣誓した証人が虚偽の陳述をしたときは",
+     "text_sha256": "77df5c0d02a69a7af00981e5c00a7a117640f9405966264c48bb70b7ce7941e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "抽象的危険犯とする判例（大審院）は courts.go.jp の検索で確認できなかったため、要確認とした。"
+   ],
+   "id": "exp-yobi-2023-keiho-q12-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q12-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。宣誓させないで尋問すべき者に誤って宣誓させた場合、その者は「法律により宣誓した証人」に当たらず、偽証罪は成立しないとするのが判例の立場である。",
+   "body": "ポイントは、刑法169条の「法律により宣誓した証人」が、法律上適法に宣誓させることができる証人に限られるかどうかである。刑事訴訟法155条1項は「宣誓の趣旨を理解することができない者は、宣誓をさせないで、これを尋問しなければならない。」と定めており、このような者に対する宣誓は法律に基づくものとはいえない。同条2項は、そのような者が宣誓をしたときでも「その供述は、証言としての効力を妨げられない。」と定めるが、これは証拠としての効力を認めるにとどまり、偽証罪の前提となる宣誓を有効にする趣旨ではないと解されている。判例（大法廷）も、旧刑事訴訟法の下で、宣誓させないで尋問すべき証人に宣誓させた場合には、その証人が宣誓の上虚偽の陳述をしても偽証罪は成立しないとしている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "155",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "宣誓の趣旨を理解することができない者は、宣誓をさせないで、これを尋問しなければならない。",
+     "text_sha256": "6b4df1ad223ada6e07dfcd804189e2f63c7d2609c4de9c1123c9bc10393e1e2c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "155",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その供述は、証言としての効力を妨げられない。",
+     "text_sha256": "6b4df1ad223ada6e07dfcd804189e2f63c7d2609c4de9c1123c9bc10393e1e2c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "169",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律により宣誓した証人が虚偽の陳述をしたときは",
+     "text_sha256": "77df5c0d02a69a7af00981e5c00a7a117640f9405966264c48bb70b7ce7941e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "偽証、飲食営業緊急措置令違反被告事件",
+     "court": "最高裁判所大法廷",
+     "date": "1952-11-05",
+     "holding": "宣誓させないで尋問すべき証人（旧刑訴法上、証言拒絶権があるのにこれを行使しなかった者）に宣誓させた場合、その証人が宣誓の上虚偽の陳述をしても偽証罪は成立しない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55300/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "引用した大法廷判決は旧刑事訴訟法下の事案で、宣誓させるべきでない証人の類型（証言拒絶権を行使しなかった者）は本肢の宣誓無能力者とは異なる。宣誓させるべきでない者に宣誓させた場合一般に偽証罪を否定する趣旨と解されている（解釈による）。"
+   ],
+   "id": "exp-yobi-2023-keiho-q12-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

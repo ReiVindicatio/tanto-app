@@ -1,0 +1,215 @@
+{
+ "question_id": "yobi-2023-minso-q42",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q42-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。気象台は官庁にあたり、186条1項により気象情報について調査の嘱託をすることができる。",
+   "body": "決め手は「調査の嘱託によることはできない」という部分である。186条1項は「裁判所は、必要な調査を官庁若しくは公署、外国の官庁若しくは公署又は学校、商工会議所、取引所その他の団体に嘱託することができる。」と定める。気象台は国の行政機関であり、嘱託先である官庁にあたる。特定の日・地域の気象情報のように、嘱託先が手元の資料から容易に明らかにできる客観的な事項は、調査の嘱託に適した典型的な事項と解されている。したがって、調査の嘱託によることができ、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "186",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、必要な調査を官庁若しくは公署、外国の官庁若しくは公署又は学校、商工会議所、取引所その他の団体に嘱託することができる。",
+     "text_sha256": "dca84fe202703fc75d557e7f40db9338e504daf654e5c57c9d82fcccfddc7173",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "気象情報が調査の嘱託に適した事項である点は解釈による。"
+   ],
+   "id": "exp-yobi-2023-minso-q42-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q42-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。書証の取調べも証拠調べであり、92条の2第3項により、証拠調べの結果の趣旨を明瞭にするため専門委員の説明を聴くことができる。",
+   "body": "決め手は「専門委員から専門的な知見に基づく説明を受けることはできない」という部分である。92条の2第3項は、裁判所は「証拠調べをするに当たり、訴訟関係又は証拠調べの結果の趣旨を明瞭にするため必要があると認めるときは、」当事者の意見を聴いて、決定で、「専門的な知見に基づく説明を聴くために専門委員を手続に関与させることができる。」と定める。書証として提出された設計図面の取調べも証拠調べであるから、その意味内容について専門委員の説明を聴くことができる。また、同条1項により、争点や証拠の整理の段階でも専門委員の説明を聴くことができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "92_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "証拠調べをするに当たり、訴訟関係又は証拠調べの結果の趣旨を明瞭にするため必要があると認めるときは、",
+     "text_sha256": "dc69fa13c99903be37d5e66d2d352611efce0abc33fe9a0f1090f97aec87684c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "92_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "専門的な知見に基づく説明を聴くために専門委員を手続に関与させることができる。",
+     "text_sha256": "dc69fa13c99903be37d5e66d2d352611efce0abc33fe9a0f1090f97aec87684c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "92_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "争点若しくは証拠の整理又は訴訟手続の進行に関し必要な事項の協議をするに当たり",
+     "text_sha256": "dc69fa13c99903be37d5e66d2d352611efce0abc33fe9a0f1090f97aec87684c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の92条の2は電磁的記録による説明の項（2項）が加わったため、証拠調べの際の関与の規定は3項にある。出題時点では項の番号が異なっていた可能性がある。"
+   ],
+   "id": "exp-yobi-2023-minso-q42-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q42-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。当事者が自ら専門家に依頼して作成させた報告書（いわゆる私鑑定）は、文書として書証の申出により提出することができると解されている。",
+   "body": "決め手は、当事者が任意に選んだ専門家の報告書を証拠として出せるかどうかである。裁判所が鑑定人を指定して行う鑑定とは別に、当事者が学識経験ある第三者に依頼して作成させた報告書は、一つの文書として扱われる。219条は「書証の申出は、文書を提出し、又は文書の所持者にその提出を命ずることを申し立ててしなければならない。」と定めており、当事者はその報告書を提出して書証の申出をすることができると解されている。その証拠としての価値は、裁判所が自由な心証により判断する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "219",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "書証の申出は、文書を提出し、又は文書の所持者にその提出を命ずることを申し立ててしなければならない。",
+     "text_sha256": "2baec8f69c16b02b1a45a9c7c2268b72f1a23b176e21f5fa91f6eea847f04696",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "私鑑定の報告書を書証として提出できる点は解釈による。"
+   ],
+   "id": "exp-yobi-2023-minso-q42-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q42-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。218条1項により、裁判所は必要があると認めるときは、相当の設備を有する法人に鑑定を嘱託することができる。",
+   "body": "決め手は、鑑定の嘱託の相手方に法人が含まれるかどうかである。218条1項は「裁判所は、必要があると認めるときは、官庁若しくは公署、外国の官庁若しくは公署又は相当の設備を有する法人に鑑定を嘱託することができる。」と定める。工業製品の化学的性質を明らかにする必要がある場合に、相当の設備を有する法人に鑑定を嘱託することは、この規定によってすることができる。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、必要があると認めるときは、官庁若しくは公署、外国の官庁若しくは公署又は相当の設備を有する法人に鑑定を嘱託することができる。",
+     "text_sha256": "384ec732986d0a549d2aaa6d9a213bbc374780a7e18a16d74f79a0ee8902b68d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-minso-q42-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q42-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。相当賃料額の算定は専門的な学識経験に基づく判断を要する事項であり、当事者はこれを鑑定事項として鑑定の申出をすることができると解されている。",
+   "body": "決め手は、相当賃料額の算定を鑑定の対象にできるかどうかである。鑑定は、専門的な学識経験を有する者に、その知識や、それを具体的な事実に当てはめて得た判断を報告させる証拠調べであり、212条1項は「鑑定に必要な学識経験を有する者は、鑑定をする義務を負う。」と定める。賃料増額請求により増額された賃料額の確認を求める訴訟では、土地の相当賃料額がいくらかが争点となり、その算定には不動産評価の専門的な知識が必要となるから、これを鑑定事項とすることができると解されている。当事者は、180条1項のとおり「証拠の申出は、証明すべき事実を特定してしなければならない。」ことに従い、鑑定の申出をすることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "212",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "鑑定に必要な学識経験を有する者は、鑑定をする義務を負う。",
+     "text_sha256": "09577dd7e8bb61b646b61af6302d41d62408b0c8685805663bfa93252ea4d3e3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "180",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証拠の申出は、証明すべき事実を特定してしなければならない。",
+     "text_sha256": "fe67351368eb41231e9522600884a29758df01eca01342603f75a9726dd4603f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "相当賃料額の算定を鑑定事項とすることができる点は解釈による。鑑定の申出の方式（鑑定を求める事項を記載した書面の提出等）は民事訴訟規則に定めがあるが、e-Gov に保存がないため引用していない。"
+   ],
+   "id": "exp-yobi-2023-minso-q42-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

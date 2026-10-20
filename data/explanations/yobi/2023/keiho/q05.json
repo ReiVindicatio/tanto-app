@@ -1,0 +1,226 @@
+{
+ "question_id": "yobi-2023-keiho-q05",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q05-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例は、国家的・公共的法益を守るための行為についても、極めて緊迫した場合には例外的に正当防衛・緊急避難の成立の余地を認めており、「成立することはない」とはいえない。",
+   "body": "誤りは「国家的法益に対する危難を避けるためにした行為に緊急避難が成立することはない」とする部分である。刑法37条1項は「自己又は他人の生命、身体、自由又は財産に対する現在の危難を避けるため」と定めるが、ここに挙げられた法益は例示であり、名誉などほかの法益も含まれると解されている。判例は、国家的・国民的・公共的法益についても正当防衛が許される場合があるとしつつ、その保全は本来国家・公共団体の公的機関の任務であるから、公的機関の有効な活動を期待し得ない極めて緊迫した場合にだけ例外的に許されるとしており、同じ判決で緊急避難の成否も同じ枠組みで判断している。したがって、国家的法益に対する危難を避ける行為に緊急避難が成立する余地はあり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己又は他人の生命、身体、自由又は財産に対する現在の危難を避けるため",
+     "text_sha256": "ce24f32acb83ba3817ba41ffeb256a9de0ddcfeef3658de5cd72e5d581fd8049",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "公益のための正当防衛の限界",
+     "court": "最高裁判所第一小法廷",
+     "date": "1949-08-18",
+     "holding": "国家的・国民的・公共的法益についても正当防衛が許される場合があるが、その保全は本来公的機関の任務であるから、公的機関の有効な公的活動を期待し得ない極めて緊迫した場合においてのみ例外的に許容される（本件では正当防衛・緊急避難のいずれも否定）。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55481/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "37条1項の法益の列挙を例示とみる点、および判決の枠組みを緊急避難にも及ぼす点は解釈による。"
+   ],
+   "id": "exp-yobi-2023-keiho-q05-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q05-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：刑法37条1項は、生じた害が避けようとした害の程度を「超えなかった場合」に緊急避難を認めるから、両者が同程度の場合にも成立し得る。",
+   "body": "ポイントは害の均衡（法益の権衡）の基準である。刑法37条1項本文は、やむを得ずにした行為は「これによって生じた害が避けようとした害の程度を超えなかった場合に限り、罰しない。」と定める。この文言からすると、避けようとした害が生じた害を上回る場合だけでなく、生じた害が避けようとした害と同程度で、それを超えていない場合にも、緊急避難が成立し得る。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "これによって生じた害が避けようとした害の程度を超えなかった場合に限り、罰しない。",
+     "text_sha256": "ce24f32acb83ba3817ba41ffeb256a9de0ddcfeef3658de5cd72e5d581fd8049",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-keiho-q05-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q05-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判例は、「現在の危難」とは現に危難が切迫していることをいい、被害がすでに現実化していることまでは要しないとしており、間近に押し迫っている場合も含む。",
+   "body": "刑法37条1項は「現在の危難を避けるため」の行為について緊急避難を認める。判例は、刑法36条の「急迫」は法益侵害の危険が緊迫したことを意味し、被害の現在性を意味するものではないとし、37条の「現在の危難」もほぼ同様に解すべきであるとしている。また、大法廷判決も、「現在の危難」とは現に危難が切迫していることを意味するとしている。したがって、危難が現に存在している場合だけでなく、間近に押し迫っている場合も現在の危難にあたり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現在の危難を避けるため",
+     "text_sha256": "ce24f32acb83ba3817ba41ffeb256a9de0ddcfeef3658de5cd72e5d581fd8049",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "急迫不正の侵害に対して",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "「急迫」「現在の危難」の意義",
+     "court": "最高裁判所第一小法廷",
+     "date": "1949-08-18",
+     "holding": "刑法36条の「急迫」とは法益侵害の危険が緊迫したことを意味し、被害の現在性を意味するものではなく、37条の「現在の危難」もほぼ同様に解される。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55481/detail2/index.html"
+     ]
+    },
+    {
+     "name": "緊急避難の意義（脅迫被告事件）",
+     "court": "最高裁判所大法廷",
+     "date": "1949-05-18",
+     "holding": "「現在の危難」とは現に危難の切迫していることを意味し、やむを得ずにした行為とは当該避難行為をする以外には他に方法がなく、かかる行動に出たことが条理上肯定し得る場合を意味する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55221/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2023-keiho-q05-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q05-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：刑法37条1項ただし書は、過剰避難について「その刑を減軽し、又は免除することができる」と定めており、免除もできる。",
+   "body": "誤りは「免除することはできない」とする部分である。刑法37条1項ただし書は「ただし、その程度を超えた行為は、情状により、その刑を減軽し、又は免除することができる。」と定める。このように、過剰避難の場合には、情状により刑の減軽だけでなく免除もすることができる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、その程度を超えた行為は、情状により、その刑を減軽し、又は免除することができる。",
+     "text_sha256": "ce24f32acb83ba3817ba41ffeb256a9de0ddcfeef3658de5cd72e5d581fd8049",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-keiho-q05-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q05-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：緊急避難の「やむを得ずにした行為」は、その避難行為以外に他に方法がないこと（補充性）を要し、正当防衛と同様の相当性があれば足りるわけではない。",
+   "body": "誤りは「正当防衛におけるのと同様に」「相当性を有するものであれば足りる」とする部分である。刑法37条1項は「現在の危難を避けるため、やむを得ずにした行為」と定める。判例は、緊急避難におけるやむを得ずにした行為とは、当該避難行為をする以外には他に方法がなく、かかる行動に出たことが条理上肯定し得る場合を意味するとしている。緊急避難は危難と無関係な第三者の法益を害することがありうるため、正当防衛よりも厳格に、他に取るべき方法がないこと（補充性）が求められると解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現在の危難を避けるため、やむを得ずにした行為は",
+     "text_sha256": "ce24f32acb83ba3817ba41ffeb256a9de0ddcfeef3658de5cd72e5d581fd8049",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "緊急避難の意義（脅迫被告事件）",
+     "court": "最高裁判所大法廷",
+     "date": "1949-05-18",
+     "holding": "緊急避難におけるやむを得ずにした行為とは、当該避難行為をする以外には他に方法がなく、かかる行動に出たことが条理上肯定し得る場合を意味する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55221/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "正当防衛との違い（補充性が求められる理由）の説明は解釈による。"
+   ],
+   "id": "exp-yobi-2023-keiho-q05-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

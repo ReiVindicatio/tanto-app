@@ -1,0 +1,298 @@
+{
+ "question_id": "yobi-2023-minso-q37",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q37-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。被告欠席による擬制自白は原告が主張した事実についてしか生じないから、請求を理由付ける事実の主張がない以上、直ちに請求を認容することはできない。",
+   "body": "決め手は「請求を理由付ける事実の記載を欠く」のに「直ちに原告の請求を認容する判決をすることができる」としている点である。159条1項は、当事者が「相手方の主張した事実を争うことを明らかにしない場合には、その事実を自白したものとみなす」と定め、同条3項は「第一項の規定は、当事者が口頭弁論の期日に出頭しない場合について準用する」としている。しかし、自白が擬制されるのはあくまで相手方（原告）が主張した事実である。請求を理由付ける事実が主張されていなければ、擬制自白が成立しても請求を基礎付ける事実は認定できず、弁論主義のもとでは原告の請求を認容する判決はできないと解されている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "159",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方の主張した事実を争うことを明らかにしない場合には、その事実を自白したものとみなす",
+     "text_sha256": "5d9eba398e856ed9f8e336d711a5ad7aad2937c6ddc3568dd476ee166260a561",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "159",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の規定は、当事者が口頭弁論の期日に出頭しない場合について準用する",
+     "text_sha256": "5d9eba398e856ed9f8e336d711a5ad7aad2937c6ddc3568dd476ee166260a561",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "主張のない事実を擬制自白で補えず、請求を認容できないとする点は解釈（弁論主義）による。訴状に請求を理由付ける事実を記載すべきことは民事訴訟規則が定めているが、民事訴訟規則は保存済みの法令にないため引用していない。"
+   ],
+   "id": "exp-yobi-2023-minso-q37-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q37-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。訴状を送達できない場合には137条が準用されるから（138条2項）、裁判長は補正を命ずることができる。",
+   "body": "決め手は「裁判長は、補正を命ずることはできない」という部分である。確かに、被告の住所は134条2項が訴状の必要的記載事項として挙げる「当事者及び法定代理人」「請求の趣旨及び原因」そのものではなく、旧住所によって被告が特定できていれば同項違反とはいえない。しかし、138条2項は「第百三十七条の規定は、訴状の送達をすることができない場合（訴状の送達に必要な費用を予納しない場合を含む。）について準用する。」と定めている。そのため、現住所が分からず訴状を送達できないときは、137条1項に準じて、裁判長は相当の期間を定めて補正を命じることができ、補正されなければ訴状を却下することになる。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "134",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当事者及び法定代理人",
+     "text_sha256": "87595153acb3f5b3ca43ff3992f59badd340aa1c8706ae87c49fd25a97d08dc5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "134",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "請求の趣旨及び原因",
+     "text_sha256": "87595153acb3f5b3ca43ff3992f59badd340aa1c8706ae87c49fd25a97d08dc5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "138",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第百三十七条の規定は、訴状の送達をすることができない場合（訴状の送達に必要な費用を予納しない場合を含む。）について準用する。",
+     "text_sha256": "8ca1ca93f653346ac62e2e4f81d69c6d5d97389ecb5f3e22b34532a597d234e3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "137",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判長は、相当の期間を定め、その期間内に不備を補正すべきことを命じなければならない",
+     "text_sha256": "786703e334c5cc64bb08495e12206129d733ff46d00cf6bc908b04c63f3cf84d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "条番号は e-Gov の現行法による（訴状の記載事項は現行法では134条2項）。"
+   ],
+   "id": "exp-yobi-2023-minso-q37-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q37-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。請求の特定には、訴訟物である貸金返還請求権を他と区別できる事実を記載すれば足り、70万円の弁済の事実の記載は必要ない。",
+   "body": "決め手は、弁済を受けた事実を「請求を特定するために」記載「しなければならない」としている点である。134条2項は、訴状に「請求の趣旨及び原因」を記載しなければならないと定めるが、ここでいう請求の原因は、請求（訴訟物）を他の権利と区別して特定するのに必要な事実をいうと解されている。貸金返還請求権は、貸付けの当事者・日時・金額などによって特定でき、そのうち30万円の支払を求める旨は請求の趣旨で示される。70万円の弁済は請求権の一部消滅を基礎付ける事実（本来は被告が主張する抗弁事実）であり、請求を特定するために必要な事実ではないと解されている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "134",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "請求の趣旨及び原因",
+     "text_sha256": "87595153acb3f5b3ca43ff3992f59badd340aa1c8706ae87c49fd25a97d08dc5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "請求の原因を訴訟物の特定に必要な事実と解する点、弁済の事実の記載が特定に不要とする点は解釈による。"
+   ],
+   "id": "exp-yobi-2023-minso-q37-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q37-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。法は訴状却下命令に対してだけ即時抗告を認めており、補正命令そのものに対する独立の不服申立てはできないと解されている。",
+   "body": "決め手は、補正命令について不服申立ての規定がないという点である。137条1項は、訴状が134条2項に違反する場合に、裁判長が「相当の期間を定め、その期間内に不備を補正すべきことを命じなければならない」と定め、同条3項は、補正しないときに出される訴状却下命令について「前項の命令に対しては、即時抗告をすることができる。」と定めている。補正命令は申立てを却下する裁判ではないから、328条1項の「口頭弁論を経ないで訴訟手続に関する申立てを却下した決定又は命令」にも当たらない。補正命令の当否は、補正せずに訴状が却下されたときに、却下命令に対する即時抗告の中で争えば足りると解されている。裁判例にも、訴状の補正命令に対して即時抗告をすることは許されないとしたものがある。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "137",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相当の期間を定め、その期間内に不備を補正すべきことを命じなければならない",
+     "text_sha256": "786703e334c5cc64bb08495e12206129d733ff46d00cf6bc908b04c63f3cf84d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "137",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前項の命令に対しては、即時抗告をすることができる。",
+     "text_sha256": "786703e334c5cc64bb08495e12206129d733ff46d00cf6bc908b04c63f3cf84d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "328",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "口頭弁論を経ないで訴訟手続に関する申立てを却下した決定又は命令",
+     "text_sha256": "d7f4fffcdceb32c5ddf00d35879c7ce4edff04a578be632017cbdf13c917a03c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "134",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "請求の趣旨及び原因",
+     "text_sha256": "87595153acb3f5b3ca43ff3992f59badd340aa1c8706ae87c49fd25a97d08dc5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "補正命令に対する即時抗告事件",
+     "court": "東京高等裁判所",
+     "date": "1955-09-20",
+     "holding": "訴状の補正命令に対して即時抗告をすることは許されない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/21634/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "補正命令に独立の不服申立てができないとする点は解釈による。確認できた裁判例は旧民事訴訟法下の高等裁判所の決定で、最高裁判例は確認できなかった。"
+   ],
+   "id": "exp-yobi-2023-minso-q37-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q37-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、補正命令の期間内に手数料を納付しなくても、却下命令が確定する前に納付すれば不備は補正されるとしており、却下命令前に納付されたなら訴状を却下することはできない。",
+   "body": "決め手は、期間経過後でも「訴状却下命令が発せられる前にこれを納付した」という点である。最高裁平成27年12月17日決定は、抗告提起の手数料の納付を命ずる裁判長の補正命令で定められた期間内に納付しなかった場合でも、不納付を理由とする抗告状却下命令が確定する前に納付すれば、その瑕疵は補正され、抗告状は当初に遡って有効になると判示した。補正命令の期間は、それを過ぎれば補正ができなくなる期間ではないから、却下命令が出される前に納付された本肢の場面では、もはや「原告が納付を命じられた手数料を納付しない」（137条の2第6項）とはいえず、裁判長は訴状を却下できない。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "137_2",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "原告が納付を命じられた手数料を納付しない",
+     "text_sha256": "9809a5f3f6b78da192318344d716b0ad66946190097d43c6c4fd34bf77a142ac",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "137_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "民事訴訟費用等に関する法律（昭和四十六年法律第四十号）の規定に従い訴えの提起の手数料を納付しない場合には、裁判所書記官は、相当の期間を定め、その期間内に当該手数料を納付すべきことを命ずる処分をしなければならない。",
+     "text_sha256": "9809a5f3f6b78da192318344d716b0ad66946190097d43c6c4fd34bf77a142ac",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "訴訟救助申立て却下決定に対する抗告状却下命令に対する許可抗告事件",
+     "court": "最高裁判所第一小法廷",
+     "date": "2015-12-17",
+     "holding": "手数料の納付を命ずる裁判長の補正命令で定められた期間内に納付しなかった場合でも、不納付を理由とする抗告状却下命令が確定する前に納付すれば、その瑕疵は補正され、抗告状は当初に遡って有効となる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/85663/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "法改正の信号：本肢は手数料の納付を（裁判長の）補正命令で命ずる制度を前提としているが、e-Gov の現行法では137条の2により、裁判所書記官の納付命令（処分）を経て裁判長が訴状を却下する仕組みになっている。却下前に納付すれば却下できないという結論は現行法でも変わらないと考えられる。",
+    "確認できた判例は抗告状の事案（民事訴訟法137条を準用）であり、訴状についても同じ趣旨が当てはまるとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2023-minso-q37-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

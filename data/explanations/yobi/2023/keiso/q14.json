@@ -1,0 +1,223 @@
+{
+ "question_id": "yobi-2023-keiso-q14",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q14-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。被害者の法定代理人は「独立して」告訴をすることができ、その告訴権は固有権とされるから、被害者の意思に反しても告訴できる。",
+   "body": "誤りは、法定代理人は被害者の意思に反して告訴できないとする点である。刑事訴訟法231条1項は「被害者の法定代理人は、独立して告訴をすることができる。」と定めており、被害者の意思による制限を設けていない。これに対し、同条2項は、被害者が死亡した場合の配偶者等の告訴について「但し、被害者の明示した意思に反することはできない。」と定めており、このような制限は1項の法定代理人には置かれていない。判例も、被害者の法定代理人の告訴権は固有権であるとしている。したがって、法定代理人は被害者の意思に反しても告訴をすることができると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "231",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被害者の法定代理人は、独立して告訴をすることができる。",
+     "text_sha256": "58fdd2cc7a9100caed6b3bf6bbbbe35bd19fda0e1c1fcd0427a4d63c40db1493",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "231",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "但し、被害者の明示した意思に反することはできない。",
+     "text_sha256": "58fdd2cc7a9100caed6b3bf6bbbbe35bd19fda0e1c1fcd0427a4d63c40db1493",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "強姦被告事件（法定代理人の告訴権）",
+     "court": "最高裁判所第二小法廷",
+     "date": "1953-05-29",
+     "holding": "被害者の法定代理人の告訴権は固有権であり、被害者が犯人を知ってから6か月を経過していても、法定代理人が犯人を知ってから6か月以内にした告訴は有効である。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54726/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2023-keiso-q14-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q14-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。検視は令状なしで行う死体の外表の検査にとどまり、腹部の切開などの解剖は、鑑定処分許可状を得て鑑定受託者が行う必要がある。",
+   "body": "誤りは、検視において死体の腹部を切開できるとする点である。刑事訴訟法229条1項は、変死者又は変死の疑いのある死体があるときに検察官が「検視をしなければならない」と定めるが、検視は犯罪の嫌疑の有無を判断するための捜査前の処分であり、令状なしに死体の状況を外部から見分するものにとどまると解されている。死体を切開して死因を調べることは死体の解剖に当たり、捜査機関から鑑定の嘱託を受けた者が、刑事訴訟法225条1項により「裁判官の許可を受けて、第百六十八条第一項に規定する処分をすることができる」とされている（刑事訴訟法168条1項は「死体を解剖し」と定める）。したがって、検視の段階で、令状なしに死体の腹部を切開することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "229",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "変死者又は変死の疑のある死体があるときは、その所在地を管轄する地方検察庁又は区検察庁の検察官は、検視をしなければならない。",
+     "text_sha256": "9bff1f80ec36903236d511b3e123b498a2d8d2aee3e3c44f0097f0be6255a5d6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "225",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百二十三条第一項の規定による鑑定の嘱託を受けた者は、裁判官の許可を受けて、第百六十八条第一項に規定する処分をすることができる。",
+     "text_sha256": "3e475a76c4f7ceab639093189a4f3d84dfa97472e72115e62842dd91bc8bef8a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "168",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "死体を解剖し",
+     "text_sha256": "8a15f71519c828cbaf2c187d69bc509a25240d37e3af85d9df2867d0174a4be2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "223",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "これに鑑定、通訳若しくは翻訳を嘱託することができる",
+     "text_sha256": "ce3d70d0ee66cd7cb39dca6c62dc1b27a8d3b0b4bc1745ac9e4a2ebcc36fe786",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "検視が外表の見分にとどまり解剖を含まない点は、解釈による。"
+   ],
+   "id": "exp-yobi-2023-keiso-q14-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q14-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、告訴期間の起算点の「犯人を知つた」とは犯人が誰であるかを知ることをいい、犯人の住所氏名などの詳細まで知る必要はないとしている。",
+   "body": "ポイントは、刑事訴訟法235条の「犯人を知つた日」の意味である。同条は「親告罪の告訴は、犯人を知つた日から六箇月を経過したときは、これをすることができない。」と定める。判例は、ここにいう「犯人を知つた」とは、犯人が誰であるかを知ることをいい、告訴権者が犯人の住所氏名などの詳細を知る必要はないが、少なくとも犯人が誰であるかを特定しうる程度に認識することを要するとしている。本肢はこの判例の内容のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "235",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "親告罪の告訴は、犯人を知つた日から六箇月を経過したときは、これをすることができない。",
+     "text_sha256": "4ba08001b4dc107d94572abacbcfb0a84c7e1297ef861af44e1a34344c6fab00",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "強制猥褻等被告事件（「犯人を知つた」の意義）",
+     "court": "最高裁判所第三小法廷",
+     "date": "1964-11-10",
+     "holding": "刑訴法235条1項の「犯人を知つた」とは、犯人が誰であるかを知ることをいい、犯人の住所氏名などの詳細を知る必要はないが、少なくとも犯人が誰であるかを特定しうる程度に認識することを要する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50693/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は当時の「刑訴法235条1項」に関するもの。現行の235条は項に分かれていない。"
+   ],
+   "id": "exp-yobi-2023-keiso-q14-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiso-q14-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。刑事訴訟法241条2項により、司法警察員は口頭による告発を受けたときは調書を作らなければならない。",
+   "body": "ポイントは、口頭による告訴・告発を受けた捜査機関の調書作成義務である。刑事訴訟法241条1項は「告訴又は告発は、書面又は口頭で検察官又は司法警察員にこれをしなければならない。」と定め、同条2項は「検察官又は司法警察員は、口頭による告訴又は告発を受けたときは調書を作らなければならない。」と定める。したがって、司法警察員が口頭による告発を受けたときは調書を作らなければならず、本肢は条文のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "241",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "告訴又は告発は、書面又は口頭で検察官又は司法警察員にこれをしなければならない。",
+     "text_sha256": "16a893204783f9458d8450425ba3177620c92d7d3ef9c4a50be36a37b4d14cd0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "241",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "検察官又は司法警察員は、口頭による告訴又は告発を受けたときは調書を作らなければならない。",
+     "text_sha256": "16a893204783f9458d8450425ba3177620c92d7d3ef9c4a50be36a37b4d14cd0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-keiso-q14-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,225 @@
+{
+ "question_id": "yobi-2023-minso-q40",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q40-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。186条1項は当事者の申立てを要件としておらず、裁判所は職権で調査の嘱託をすることができると解されている。",
+   "body": "決め手は「職権で」できるかどうかである。186条1項は「裁判所は、必要な調査を官庁若しくは公署、外国の官庁若しくは公署又は学校、商工会議所、取引所その他の団体に嘱託することができる。」と定め、当事者の申立てを要件としていない。そのため、調査の嘱託は当事者の申立てによるほか、裁判所の職権によってもすることができると解されている。また、151条1項は、裁判所が訴訟関係を明瞭にするための釈明処分として「調査を嘱託すること。」を挙げており、ここでも当事者の申立ては要件とされていない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "186",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、必要な調査を官庁若しくは公署、外国の官庁若しくは公署又は学校、商工会議所、取引所その他の団体に嘱託することができる。",
+     "text_sha256": "dca84fe202703fc75d557e7f40db9338e504daf654e5c57c9d82fcccfddc7173",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "151",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "調査を嘱託すること。",
+     "text_sha256": "ed54ac1f49137466579b2a1947aaa2483caa38c6552a1a1f9b6d8e4dac2bac11",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "186条の調査の嘱託を職権でもすることができる点は解釈による。"
+   ],
+   "id": "exp-yobi-2023-minso-q40-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q40-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。186条1項の嘱託先には「その他の団体」が含まれ、会社等の営利を目的とする私的団体も嘱託先になりうると解されている。",
+   "body": "決め手は「営利を目的とする私的団体に対してはすることができない」という部分である。186条1項は、嘱託先として官庁・公署のほか「学校、商工会議所、取引所その他の団体」を挙げている。ここでいう「その他の団体」は公的な団体に限られず、会社等の営利を目的とする私的団体も含むと解されている。したがって、会社等に対しても調査の嘱託をすることができ、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "186",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "学校、商工会議所、取引所その他の団体",
+     "text_sha256": "dca84fe202703fc75d557e7f40db9338e504daf654e5c57c9d82fcccfddc7173",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「その他の団体」に会社等の私的団体が含まれる点は解釈による。"
+   ],
+   "id": "exp-yobi-2023-minso-q40-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q40-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、調査嘱託の結果を証拠とするには口頭弁論で提示して当事者に意見陳述の機会を与えれば足り、当事者の援用を要しないとする。",
+   "body": "決め手は「当事者の援用がなくても」証拠資料にできるかどうかである。最高裁昭和45年3月26日判決は、調査の嘱託によって得られた回答書等の調査の結果を証拠とするには、裁判所がこれを口頭弁論において提示して当事者に意見陳述の機会を与えれば足り、当事者の援用を要しないとした。本肢は、回答を口頭弁論に提示して当事者に意見陳述の機会を与え、弁論に顕出されたという場面であるから、援用がなくても証拠資料にすることができる。なお、現行の186条2項は「裁判所は、当事者に対し、前項の嘱託に係る調査の結果の提示をしなければならない。」と定めている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "186",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判所は、当事者に対し、前項の嘱託に係る調査の結果の提示をしなければならない。",
+     "text_sha256": "dca84fe202703fc75d557e7f40db9338e504daf654e5c57c9d82fcccfddc7173",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "証拠金等返還請求事件",
+     "court": "最高裁判所第一小法廷",
+     "date": "1970-03-26",
+     "holding": "調査の嘱託によって得られた回答書等の調査の結果を証拠とするには、裁判所がこれを口頭弁論において提示して当事者に意見陳述の機会を与えれば足り、当事者の援用を要しない（民集24巻3号165頁）。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54153/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判決は旧民事訴訟法262条についてのもの。現行186条2項（調査の結果の提示）は判決後の改正で置かれた規定で、出題時点（2023年）の条文にあったかは未確認。結論は変わらない。"
+   ],
+   "id": "exp-yobi-2023-minso-q40-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q40-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。171条3項により、弁論準備手続を行う受命裁判官は調査の嘱託についての裁判をすることができる。",
+   "body": "決め手は「することができない」という部分である。171条3項は「弁論準備手続を行う受命裁判官は、第百八十六条第一項の規定による調査の嘱託、鑑定の嘱託、」書証の申出等「についての裁判をすることができる。」と定めている。したがって、受命裁判官も調査の嘱託についての裁判をすることができ、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "171",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "弁論準備手続を行う受命裁判官は、第百八十六条第一項の規定による調査の嘱託、鑑定の嘱託、",
+     "text_sha256": "0ac12ae4f6e0316434e626d33f4fae1a208d32622d81a54fe0bdd1dc8c379648",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "171",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "についての裁判をすることができる。",
+     "text_sha256": "0ac12ae4f6e0316434e626d33f4fae1a208d32622d81a54fe0bdd1dc8c379648",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "171条3項は電磁的記録に関する文言が加わる改正を受けているが、調査の嘱託についての裁判を受命裁判官がすることができる点は出題時点でも同じと考えられる。"
+   ],
+   "id": "exp-yobi-2023-minso-q40-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q40-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。提訴前の証拠収集処分として調査の嘱託がされ、調査結果の報告がされたときは、132条の6第4項により裁判所は申立人及び相手方にその旨を通知しなければならない。",
+   "body": "決め手は、提訴前の証拠収集処分における通知義務である。132条の4第1項2号は、予告通知者等の申立てにより、訴えの提起前に「必要な調査を官庁若しくは公署、外国の官庁若しくは公署又は学校、商工会議所、取引所その他の団体」に嘱託する処分をすることができると定める。そして132条の6第4項は「裁判所は、第百三十二条の四第一項の処分に基づいて文書若しくは電磁的記録の送付、調査結果の報告又は意見の陳述がされたときは、申立人及び相手方にその旨を通知しなければならない。」と定める。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "132_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "必要な調査を官庁若しくは公署、外国の官庁若しくは公署又は学校、商工会議所、取引所その他の団体",
+     "text_sha256": "e8750ea95af247686fd678318409a4788d3a5b035099b8ca43b534c27e8a6630",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "132_6",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "裁判所は、第百三十二条の四第一項の処分に基づいて文書若しくは電磁的記録の送付、調査結果の報告又は意見の陳述がされたときは、申立人及び相手方にその旨を通知しなければならない。",
+     "text_sha256": "020a34cf483d72360e13ca945f94d46e9ec359e7abe3083a8ba4217ac77cc6a7",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-minso-q40-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

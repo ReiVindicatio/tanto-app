@@ -1,0 +1,381 @@
+{
+ "question_id": "yobi-2023-keiho-q11",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q11-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。放火罪は公共の安全を保護する公共危険犯であり、1個の放火行為で複数の現住建造物を焼損しても1個の現住建造物等放火罪が成立するにとどまるから、「２個の現住建造物等放火罪が成立し、これらは観念的競合となる」とする点が誤り。",
+   "body": "誤りは、焼損した建造物の数に応じて2個の現住建造物等放火罪が成立し観念的競合になるとする点です。108条は「現に人が住居に使用し又は現に人がいる建造物」を「焼損した者」を処罰しますが、放火罪は不特定又は多数の人の生命・身体・財産に対する公共の危険を処罰する公共危険犯であり、罪数は焼損した建造物の個数ではなく、生じた公共の危険の個数によって判断されると解されています。本肢では、甲の1個の放火行為によってＡ方とその隣のＢ方が焼損し、一つの公共の危険が生じたにすぎないので、1個の現住建造物等放火罪が成立するにとどまると解されています（判例あり（要確認））。したがって、54条1項前段の観念的競合とはなりません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "放火して、現に人が住居に使用し又は現に人がいる建造物、汽車、電車、艦船又は鉱坑を焼損した者は、死刑又は無期若しくは五年以上の拘禁刑に処する。",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ、又は犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "1個の放火行為で複数の建造物を焼損した場合に1個の放火罪とする判例（大審院とされる）は、courts.go.jp で2回探して判決の掲載ページを確認できなかったため「判例あり（要確認）」とした",
+    "放火罪の罪数を公共の危険の個数で判断する点は解釈による"
+   ],
+   "id": "exp-yobi-2023-keiho-q11-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q11-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。通貨偽造罪と偽造通貨行使罪は牽連犯となるが、偽造通貨を行使して財物を詐取した場合の詐欺罪は偽造通貨行使罪に吸収されて別に成立しないから、詐欺罪も成立し三罪が牽連犯となるとする点が誤り。",
+   "body": "誤りは、詐欺罪も別に成立し、三罪が牽連犯になるとする点です。148条1項は「行使の目的で、通用する貨幣、紙幣又は銀行券を偽造し」た者を、同条2項は偽造の銀行券等を「行使し」た者を処罰しており、行使の目的で偽造し、それを行使した場合、通貨偽造罪と偽造通貨行使罪は手段と結果の関係にあるとして、54条1項後段の牽連犯となると解されています。他方、偽造通貨を真正な通貨として使用して商品をだまし取る行為は、偽造通貨行使罪の構成要件が当然に予定しているものであり、詐欺罪は偽造通貨行使罪に吸収されて別に成立しないと解されています（判例あり（要確認））。したがって、甲には通貨偽造罪と偽造通貨行使罪が成立して牽連犯となり、詐欺罪は成立しません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "148",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行使の目的で、通用する貨幣、紙幣又は銀行券を偽造し、又は変造した者は、無期又は三年以上の拘禁刑に処する。",
+     "text_sha256": "88241d14731923ddeb86f4bd141e4bc686fe773b7fb72a7a57192127e4921e17",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "148",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "偽造又は変造の貨幣、紙幣又は銀行券を行使し、又は行使の目的で人に交付し、若しくは輸入した者も、前項と同様とする。",
+     "text_sha256": "88241d14731923ddeb86f4bd141e4bc686fe773b7fb72a7a57192127e4921e17",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ、又は犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "246",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を欺いて財物を交付させた者は、十年以下の拘禁刑に処する。",
+     "text_sha256": "c515031b5f484a4ebf537cf5f2eb826a008d119836fd4627833e9cdb1f4a5053",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "偽造通貨行使罪と詐欺罪の関係（詐欺罪は行使罪に吸収される）、通貨偽造罪と行使罪を牽連犯とする判例（いずれも大審院とされる）は、courts.go.jp で2回探して判決の掲載ページを確認できなかったため「判例あり（要確認）」とした",
+    "罪数の評価は解釈による"
+   ],
+   "id": "exp-yobi-2023-keiho-q11-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q11-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。甲がＡを、乙がＢをそれぞれ殺害した行為は、被害者ごとに別個の行為であるから、甲・乙を共同正犯とする2個の殺人罪が成立し、これらは併合罪となる。",
+   "body": "ポイントは、共謀に基づき甲・乙が別々の被害者を殺害した場合の罪数です。60条は「二人以上共同して犯罪を実行した者は、すべて正犯とする。」と定めているので、甲と乙は共謀に基づくＡ殺害・Ｂ殺害の双方について199条の殺人罪の共同正犯となります。殺人罪は生命という一身専属的な法益を侵害する罪なので、被害者ごとに1個の罪が成立すると解されています。そして、甲によるＡの殺害と乙によるＢの殺害は、自然的に観察して別個の行為であり、1個の行為が2個の罪名に触れる観念的競合（54条1項前段）には当たりません。したがって、2個の殺人罪は45条の「確定裁判を経ていない二個以上の罪」として併合罪となります。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "60",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二人以上共同して犯罪を実行した者は、すべて正犯とする。",
+     "text_sha256": "ba4f29e57aaf29e061a81978acd6bd65630c069f52570a77b08704b872f0233e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者は、死刑又は無期若しくは五年以上の拘禁刑に処する。",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ、又は犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "被害者ごとに殺人罪が成立し、別個の実行行為による場合は併合罪となる点は解釈による。本肢の事案に即した判例は courts.go.jp で2回探して確認できなかったため、判例は掲げていない"
+   ],
+   "id": "exp-yobi-2023-keiho-q11-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q11-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、同一の日時場所において無免許で、かつ、酒に酔った状態で自動車を運転する行為は1個の行為であり、無免許運転の罪と酒酔い運転の罪は観念的競合の関係にあるとしている。",
+   "body": "ポイントは、酒に酔った状態での無免許運転が「一個の行為」（54条1項前段）に当たるかです。道路交通法64条1項は「何人も、第八十四条第一項の規定による公安委員会の運転免許を受けないで」自動車等を運転することを、65条1項は「何人も、酒気を帯びて車両等を運転してはならない。」として酒気帯び運転を禁じ、酒に酔った状態での運転は117条の2で、無免許運転は117条の2の2でそれぞれ処罰されます。判例は、54条1項前段の一個の行為とは、法的評価を離れ構成要件的観点を捨象した自然的観察のもとで、行為者の動態が社会的見解上一個のものと評価される場合をいうとしたうえで、同一の日時場所において無免許で、かつ、酒に酔った状態で自動車を運転する行為は、無免許運転の罪と酒酔い運転の罪との観念的競合の関係にあるとしました。本肢の甲の運転も一個の運転行為ですから、両罪は観念的競合となります。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ、又は犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "道路交通法",
+     "article": "64",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "何人も、第八十四条第一項の規定による公安委員会の運転免許を受けないで",
+     "text_sha256": "a32d0c5bb3a9c4dc9e0ec5857ad8e76edcc235f7d4e39359433e5b91bd70911a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "道路交通法",
+     "article": "65",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "何人も、酒気を帯びて車両等を運転してはならない。",
+     "text_sha256": "ea9679ad8c1d10d87d78d4a9dfb812eda55f724e439f159bb2e96df5d2ce01d5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "道路交通法",
+     "article": "117_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次の各号のいずれかに該当する者は、五年以下の拘禁刑又は百万円以下の罰金に処する。",
+     "text_sha256": "2fe9027732550ae55eca403a24d82fd3270d3ef5a97de14f595cb505d60f4f1d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "道路交通法",
+     "article": "117_2_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次の各号のいずれかに該当する者は、三年以下の拘禁刑又は五十万円以下の罰金に処する。",
+     "text_sha256": "66404f79e0be85cd85e1ea339aa861e5bbb241c4b246db855a17c1a3adc185da",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "業務上過失傷害、道路交通法違反被告事件（無免許運転と酒酔い運転の罪数）",
+     "court": "最高裁判所大法廷",
+     "date": "1974-05-29",
+     "holding": "同一の日時場所において、無免許で、かつ、酒に酔った状態で自動車を運転する行為は、無免許運転の罪と酒酔い運転の罪との観念的競合の関係にある。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51016/detail2/index.html"
+     ]
+    },
+    {
+     "name": "道路交通法違反、業務上過失致死被告事件（刑法54条1項前段の「一個の行為」の意義）",
+     "court": "最高裁判所大法廷",
+     "date": "1974-05-29",
+     "holding": "刑法54条1項前段にいう一個の行為とは、法的評価を離れ構成要件的観点を捨象した自然的観察のもとで、行為者の動態が社会的見解上一個のものとの評価を受ける場合をいう。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51047/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例当時の罰条は、無免許運転が道路交通法118条1項1号、酒酔い運転が117条の2第1号。現行法（e-Gov 取得時点）では、酒酔い運転は117条の2第1項第1号、無免許運転は117条の2の2第1項第1号に置かれている。罰条の移動は本肢の結論に影響しない"
+   ],
+   "id": "exp-yobi-2023-keiho-q11-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q11-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、恐喝の手段として監禁が行われた場合であっても、監禁罪と恐喝罪は牽連犯の関係にはないとしている（併合罪となる）から、牽連犯とする点が誤り。",
+   "body": "誤りは、監禁罪と恐喝罪を牽連犯とする点です。54条1項後段は「犯罪の手段若しくは結果である行為が他の罪名に触れるとき」を牽連犯として科刑上一罪としていますが、牽連犯となるには、罪質上、一方が他方の手段又は結果として通常用いられる関係にあることが必要と解されています。判例は、恐喝の手段として監禁が行われた場合であっても、両罪は牽連犯の関係にはないとしました。したがって、本肢で甲に成立する監禁罪（220条）と恐喝罪（249条1項）は、45条により併合罪となります。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ、又は犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "220",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法に人を逮捕し、又は監禁した者は、三月以上七年以下の拘禁刑に処する。",
+     "text_sha256": "d8ef399d30f380f6cab88d03eb7df7918dcbb43ebd2d82339b4ecf5563b90cd1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "249",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を恐喝して財物を交付させた者は、十年以下の拘禁刑に処する。",
+     "text_sha256": "f84054d582866a7a23723a5ea55c12662213907cea3051a5145dc29f346ed71b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "監禁致傷、恐喝被告事件（恐喝の手段として監禁が行われた場合の罪数）",
+     "court": "最高裁判所第一小法廷",
+     "date": "2005-04-14",
+     "holding": "恐喝の手段として監禁が行われた場合であっても、監禁罪と恐喝罪は牽連犯の関係にはない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50078/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "牽連犯の成立に罪質上の通例の手段・結果の関係を要するとの理解は解釈による",
+    "判例の事案は監禁致傷罪と恐喝罪の関係"
+   ],
+   "id": "exp-yobi-2023-keiho-q11-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

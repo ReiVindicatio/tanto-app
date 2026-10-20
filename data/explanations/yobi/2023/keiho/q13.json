@@ -1,0 +1,303 @@
+{
+ "question_id": "yobi-2023-keiho-q13",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q13-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。乙は財物を得る前に、カードを手に入れる手段として暴行を加え、抵抗できないＡからカードを奪っているから、事後強盗罪ではなく強盗罪（刑法236条1項）が成立する。",
+   "body": "誤りは「事後強盗既遂罪が成立する」とする点である。事後強盗罪（刑法238条）は「窃盗が、財物を得てこれを取り返されることを防ぎ、逮捕を免れ、又は罪跡を隠滅するために、暴行又は脅迫をしたとき」に成立するもので、窃盗の機会の後に行われる暴行・脅迫を対象とする。本問の乙は、窃盗に着手した後、まだカードを得ていない段階で、逮捕を免れるとともに「本件計画どおりにカードを手に入れるため」Ａを多数回殴り、恐怖で抵抗できないＡからカードを奪っている。これは暴行を財物奪取の手段として用いたものであり、刑法236条1項の「暴行又は脅迫を用いて他人の財物を強取した者」に当たるから、強盗罪（既遂）が成立すると解されている（いわゆる居直り強盗）。なお、本問のようなキャッシュカードすり替え型の窃盗について、判例は、うそが述べられ犯人が被害者宅付近まで赴いた時点で窃盗罪の実行の着手を認めている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "238",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "窃盗が、財物を得てこれを取り返されることを防ぎ、逮捕を免れ、又は罪跡を隠滅するために、暴行又は脅迫をしたときは、強盗として論ずる。",
+     "text_sha256": "32673008aad466f64c68967856be9fb6032e771cf5215eed8414bfab75c3b845",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "236",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "暴行又は脅迫を用いて他人の財物を強取した者は、強盗の罪とし",
+     "text_sha256": "94933b7944ee4b77bfc917a6272144192701687cd4b3a9d5e44f871febc2aa44",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "窃盗、窃盗未遂被告事件（キャッシュカードすり替え型窃盗の実行の着手）",
+     "court": "最高裁判所第三小法廷",
+     "date": "2022-02-14",
+     "holding": "キャッシュカードすり替え型の窃盗につき、すり替えの隙を生じさせる状況を作り出すうそが述べられ、犯人が被害者宅付近路上まで赴いた時点で窃盗罪の実行の着手が認められる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/90925/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "窃盗の着手後・財物取得前に暴行を加えて財物を奪った場合を強盗罪とする点は、解釈による。"
+   ],
+   "id": "exp-yobi-2023-keiho-q13-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q13-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。甲には、窃盗と強盗の構成要件が重なり合う限度で窃盗罪の共同正犯が成立し、カードは奪取されているから、窃盗未遂ではなく窃盗既遂罪の共同正犯となる。",
+   "body": "誤りは「窃盗未遂罪の共同正犯が成立するにとどまる」とする点である。甲は窃盗（すり替え）を共謀したにすぎず、乙のＡに対する暴行・脅迫を認識も予見もしていなかったのであれば、刑法38条2項により「その重い罪によって処断することはできない」から、甲に強盗罪の共同正犯は成立しない。もっとも、判例は、暴行・傷害を共謀した共犯者の一人が殺人罪を犯した場合、殺意のなかった他の共犯者には傷害致死罪の共同正犯が成立するとしており、共犯者間で構成要件が重なり合う限度で軽い罪の共同正犯が成立すると解されている。強盗罪と窃盗罪は財物の奪取という点で窃盗罪の限度で重なり合い、本問では乙がＡからカードを奪っていて財物の占有移転が完了しているから、甲には窃盗既遂罪の共同正犯（刑法60条、235条）が成立する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "38",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その重い罪によって処断することはできない",
+     "text_sha256": "d5cc162963f0d1038efe34868f6bc7f1ca4f6b5888032218d23d667074c890fa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "60",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二人以上共同して犯罪を実行した者は、すべて正犯とする。",
+     "text_sha256": "ba4f29e57aaf29e061a81978acd6bd65630c069f52570a77b08704b872f0233e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "235",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の財物を窃取した者は、窃盗の罪とし",
+     "text_sha256": "44f910b87f784daf350f25c4067c5a24e6e862555ec52f35ceea3c0cd53efc1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "傷害致死、公務執行妨害等被告事件",
+     "court": "最高裁判所第一小法廷",
+     "date": "1979-04-13",
+     "holding": "暴行・傷害を共謀した共犯者の一人が殺人罪を犯した場合、殺意のなかった他の共犯者には傷害致死罪の共同正犯が成立する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50203/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2023-keiho-q13-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q13-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。丙は、乙がカードを奪い終えた後に初めて計画を知って運搬を引き受けたにすぎないから、窃盗罪の共同正犯ではなく、盗品等運搬罪が成立する。",
+   "body": "誤りは、甲の当初の計画や運搬の役割の重要性を理由に、丙に窃盗罪の共同正犯を認める点である。共同正犯（刑法60条）が成立するには、丙自身が犯罪の実行の前ないし途中に共謀に加わる必要があるが、丙が本件計画の内容を初めて説明されて承諾したのは午前９時３０分頃であり、乙がＡからカードを奪って財物の取得が完了し、乙がそれを甲に伝えた午前９時２０分頃よりも後である。甲が当初から丙に運搬させるつもりであったとしても、それは甲の内心の計画にすぎず、丙との間に奪取前の意思連絡はない。財物の取得が完了した後に関与した者は、その奪取について共同正犯の責任を負わないと解されている。丙は、本件計画の説明を受けてカードが乙の奪取したものであることを知りながら、これを甲方まで運んでいるから、刑法256条2項の「前項に規定する物を運搬し」た者として盗品等運搬罪が成立する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "60",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二人以上共同して犯罪を実行した者は、すべて正犯とする。",
+     "text_sha256": "ba4f29e57aaf29e061a81978acd6bd65630c069f52570a77b08704b872f0233e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "256",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "盗品その他財産に対する罪に当たる行為によって領得された物",
+     "text_sha256": "87be25bab6223e26e4d70509f6679361b8f313dd726a160b7b9d3c698c1fc875",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "256",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項に規定する物を運搬し",
+     "text_sha256": "87be25bab6223e26e4d70509f6679361b8f313dd726a160b7b9d3c698c1fc875",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "財物取得の完了後に関与した者に奪取罪の共同正犯を認めない点は、解釈による。"
+   ],
+   "id": "exp-yobi-2023-keiho-q13-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q13-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。職務質問中の警察官Ｂを殴って負傷させた行為は、公務執行妨害罪と傷害罪に当たり、一個の行為による観念的競合となる。",
+   "body": "ポイントは、Ｂの職務質問が適法な職務の執行といえるか、そして二罪の関係である。制服警察官が警察官職務執行法2条1項に基づいて「停止させて質問する」ことは警察官の職務であり、Ａ方での事件と関係なく行われたものであっても、職務の執行に当たる。丙はその職務質問の際にＢを殴っているから、刑法95条1項の「公務員が職務を執行するに当たり、これに対して暴行又は脅迫を加えた者」として公務執行妨害罪が成立し、その暴行によってＢに全治２週間の打撲傷を負わせているから、刑法204条の傷害罪も成立する。両罪は「殴る」という一個の行為によるものであるから、刑法54条1項前段の「一個の行為が二個以上の罪名に触れ」る場合として観念的競合になると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "警察官職務執行法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "停止させて質問することができる",
+     "text_sha256": "5bd8bfd421ff5c7a6f2ee3952d5f006a7b62e59da5ea7c4e14d961009b55aacc",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "95",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公務員が職務を執行するに当たり、これに対して暴行又は脅迫を加えた者",
+     "text_sha256": "f2dcdeeeb33050ac0f85e9e0f0d1b54bbbe404a5a366a9d6b4775616d51f073b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "204",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の身体を傷害した者は",
+     "text_sha256": "6ede21287a797c6f241c77f9e36de03258b58392279dd9ec60ceafb09f7b2af4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-keiho-q13-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-keiho-q13-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。犯人蔵匿罪の「罪を犯した者」には犯罪の嫌疑によって捜査中の者も含まれるから、後に丙が嫌疑不十分で不起訴となっても、丁がかくまった行為に同罪が成立する。",
+   "body": "誤りは、後に丙が不起訴となったことを理由に犯人蔵匿罪の成立を否定する点である。刑法103条は「罰金以上の刑に当たる罪を犯した者」を「蔵匿し」た者を処罰するが、同条は捜査・審判などの刑事司法作用を保護するものであるから、判例は、「罪を犯した者」には犯罪の嫌疑によって捜査中の者も含まれるとしている。丁は、丙が一連の犯行を行い、警察から捜査されていることを認識しつつ丙を自宅にかくまっているから、蔵匿の時点で犯人蔵匿罪が成立する。その後に丙が証拠上嫌疑不十分として不起訴になったとしても、蔵匿行為の時点で捜査作用を妨げた以上、成立した犯人蔵匿罪は否定されないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "罰金以上の刑に当たる罪を犯した者又は拘禁中に逃走した者を蔵匿し、又は隠避させた者は",
+     "text_sha256": "1938ba90f88f3522593e9ee59d1fa277b9bafd74be2e107ad239c85dacd4d52b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "犯人蔵匿被告事件",
+     "court": "最高裁判所第三小法廷",
+     "date": "1949-08-09",
+     "holding": "刑法103条は司法に関する国権の作用を妨害する者を処罰する趣旨であり、「罪を犯した者」には犯罪の嫌疑によって捜査中の者も含まれる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55447/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "蔵匿後の不起訴が犯罪の成否に影響しない点は、解釈による。"
+   ],
+   "id": "exp-yobi-2023-keiho-q13-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
