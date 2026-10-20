@@ -1,0 +1,209 @@
+{
+ "question_id": "yobi-2026-keiso-q19",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-keiso-q19-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。刑事訴訟法90条の職権保釈（裁量保釈）は、保釈の請求がなくても、89条各号の事由があっても、適当と認めるときに許すことができる。",
+   "body": "刑事訴訟法89条は、保釈の請求があったときに、同条各号の場合を除いて「これを許さなければならない」と定める（権利保釈）。これに対し、90条は、逃亡・罪証隠滅のおそれの程度や身体拘束の継続による不利益の程度などを考慮し、「適当と認めるときは、職権で保釈を許すことができる」と定めている。90条は保釈の請求を要件としておらず、また89条各号の除外事由がある場合でも裁判所の裁量で保釈を許すことができる規定と解されている。したがって、請求がない場合でも、89条各号の事由がある場合でも、職権で保釈を許すことができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "90",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "適当と認めるときは、職権で保釈を許すことができる。",
+     "text_sha256": "2890e7cca0fa08c897464174e3a98fc43ecd8005eb02a9623390e2630052daa9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "89",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保釈の請求があつたときは、次の場合を除いては、これを許さなければならない。",
+     "text_sha256": "7f9f5edf74ddcd4119e9d4734656d33cb5f93efec346f60161b0b15a812e667b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "89条各号の事由がある場合にも90条で保釈できるとする点は解釈による"
+   ],
+   "id": "exp-yobi-2026-keiso-q19-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-keiso-q19-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。被疑者の勾留には保釈の制度がなく、刑事訴訟法207条1項ただし書は保釈を準用の対象から除いている。",
+   "body": "保釈を請求できるのは、刑事訴訟法88条1項のとおり「勾留されている被告人」又はその弁護人等であり、保釈は公訴提起後の被告人について認められる制度である。被疑者の勾留については、207条1項本文が勾留の請求を受けた裁判官に裁判所又は裁判長と同一の権限を与えつつ、同項ただし書で「保釈については、この限りでない。」と定めている。したがって、犯罪の性質や情状がどうであれ、勾留中の被疑者を保釈することはできず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "207",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保釈については、この限りでない。",
+     "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "88",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "勾留されている被告人又はその弁護人、法定代理人、保佐人、配偶者、直系の親族若しくは兄弟姉妹は、保釈の請求をすることができる。",
+     "text_sha256": "feac6c75e414ddc41ac0cfda562fe14c735087922c6137fa7b2ee19ad0d7a1d9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-keiso-q19-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-keiso-q19-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。刑事訴訟法93条3項は、保釈を許す場合に住居の制限その他適当と認める条件を付することができると定める。",
+   "body": "刑事訴訟法93条3項は、「保釈を許す場合には、被告人の住居を制限し、その他適当と認める条件を付することができる。」と定めている。本肢はこの規定の内容と一致する。したがって、裁判所は、住居の制限その他の条件を付して保釈を許すことができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "93",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "保釈を許す場合には、被告人の住居を制限し、その他適当と認める条件を付することができる。",
+     "text_sha256": "bb4ebaf09885ea6a6c2172779002d372f2993354c7cb6dbabcd07e5e3df18eea",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-keiso-q19-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-keiso-q19-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。刑事訴訟法92条1項により、保釈を許す決定をするには検察官の意見を聴かなければならない。",
+   "body": "刑事訴訟法92条1項は、「裁判所は、保釈を許す決定又は保釈の請求を却下する決定をするには、検察官の意見を聴かなければならない。」と定めている。保釈を許す決定は、権利保釈・職権保釈のいずれであっても、検察官の意見を聴いたうえでしなければならない。したがって、検察官に意見を述べる機会を与えずに保釈を許すことはできず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "92",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、保釈を許す決定又は保釈の請求を却下する決定をするには、検察官の意見を聴かなければならない。",
+     "text_sha256": "049d9567526e961f9625b691b44b88410f1eafd59706d58b305701b07fa0bef8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-keiso-q19-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-keiso-q19-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。刑事訴訟法93条1項により、保釈を許す場合には保証金額を定めなければならない。",
+   "body": "刑事訴訟法93条1項は、「保釈を許す場合には、保証金額を定めなければならない。」と定めている。犯罪の性質や被告人の資産は、同条2項で保証金額を定める際の考慮要素とされているにすぎず（「犯罪の性質及び情状、証拠の証明力並びに被告人の性格及び資産を考慮して」）、保証金額を定めないことを許す根拠にはならない。したがって、保証金額を定めずに保釈を許すことはできず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "93",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保釈を許す場合には、保証金額を定めなければならない。",
+     "text_sha256": "bb4ebaf09885ea6a6c2172779002d372f2993354c7cb6dbabcd07e5e3df18eea",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "93",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "犯罪の性質及び情状、証拠の証明力並びに被告人の性格及び資産を考慮して",
+     "text_sha256": "bb4ebaf09885ea6a6c2172779002d372f2993354c7cb6dbabcd07e5e3df18eea",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-keiso-q19-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
