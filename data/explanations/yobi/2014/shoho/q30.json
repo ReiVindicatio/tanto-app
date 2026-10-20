@@ -1,0 +1,343 @@
+{
+ "question_id": "yobi-2014-shoho-q30",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q30-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：裏書人も新たな裏書を禁止できる（手形法15条2項）ので、「裏書人は，新たな裏書を禁止することはできない」とする後半が誤り。",
+   "body": "前半は正しい。手形法11条2項は、振出人が指図禁止の文字などを記載したときは、その証券は債権の譲渡に関する方式に従い、その効力をもってのみ譲渡できると定め、77条1項1号により約束手形にも準用される。誤りは後半で、15条2項は「裏書人ハ新ナル裏書ヲ禁ズルコトヲ得」と定めている（77条1項1号で約束手形に準用）。裏書禁止裏書をした裏書人は、「其ノ裏書人ハ手形ノ爾後ノ被裏書人ニ対シ担保ノ責ヲ負フコトナシ」とされるだけで、手形の譲渡そのものが禁止されるわけではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "11",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "其ノ証券ハ民法（明治二十九年法律第八十九号）第三編第一章第四節ノ規定ニ依ル債権ノ譲渡ニ関スル方式ニ従ヒ且其ノ効力ヲ以テノミ之ヲ譲渡スコトヲ得",
+     "text_sha256": "1081bd501672b88d257b846823fa718bf31dadcdd3062046d7b70092a1207629",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "15",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裏書人ハ新ナル裏書ヲ禁ズルコトヲ得此ノ場合ニ於テハ其ノ裏書人ハ手形ノ爾後ノ被裏書人ニ対シ担保ノ責ヲ負フコトナシ",
+     "text_sha256": "4eef68bd6502e8d5a2484169d6653c934365f909e9d483401c4e4e6df99d3ff5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一　裏書（第十一条乃至第二十条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q30-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q30-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：変造後に署名した裏書人は変造後の文言（200万円）に従って責任を負う（手形法69条）ので、裏書人も100万円の限度とする点が誤り。",
+   "body": "手形法69条は「変造後ノ署名者ハ変造シタル文言ニ従ヒテ責任ヲ負ヒ変造前ノ署名者ハ原文言ニ従ヒテ責任ヲ負フ」と定め、77条1項7号により約束手形に準用される。本肢では、振出人は変造前に署名しているから、原文言である100万円の限度で責任を負う。これに対し、裏書は変造の後にされているから、裏書人は変造後の文言である200万円について責任を負う。振出人と裏書人をともに100万円の限度とする点が誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "69",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "変造後ノ署名者ハ変造シタル文言ニ従ヒテ責任ヲ負ヒ変造前ノ署名者ハ原文言ニ従ヒテ責任ヲ負フ",
+     "text_sha256": "7aad3a3f56b5c0af86619967512d3548d41eca5e410b071007d5a7a7461c6520",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "七　変造（第六十九条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q30-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q30-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：受取人は約束手形の必要的記載事項なので補充が要るが、白地式裏書は有効で、所持人は補充しなくても権利を行使できる。",
+   "body": "手形法75条5号は「支払ヲ受ケ又ハ之ヲ受クル者ヲ指図スル者ノ名称」（受取人）を約束手形の記載事項とし、76条1項は記載事項を欠く証券は「約束手形タル効力ヲ有セズ」とする。そのため、受取人を白地とした白地手形（77条2項で10条を準用）は、白地を補充しなければ完成した手形とならず、振出人に手形上の権利を行使するには補充が必要と解されている。他方、被裏書人の記載のない裏書は白地式裏書として有効であり（13条2項）、所持人は「白地ヲ補充セズ且裏書ヲ為サズシテ手形ヲ第三者ニ譲渡スコトヲ得」（14条2項3号）。さらに16条1項は「最後ノ裏書ガ白地式ナル場合ト雖モ亦同ジ」として、白地式裏書の所持人も適法な所持人とみなすから、被裏書人欄を補充しなくても裏書人に権利を行使できる（いずれも77条1項1号で約束手形に準用）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "75",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "五　支払ヲ受ケ又ハ之ヲ受クル者ヲ指図スル者ノ名称",
+     "text_sha256": "efb7e65358b3e7892f2e6af4e776b3fe10f53557d3694d6a5b88c5a731af2849",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "76",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条ニ掲グル事項ノ何レカヲ欠ク証券ハ約束手形タル効力ヲ有セズ",
+     "text_sha256": "f71647e4042448065f9f3d8b815ed61337c324a82f83d7211bdd91618f6df0e3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "白地為替手形（第十条）ニ関スル規定モ亦之ヲ約束手形ニ準用ス",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "10",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未完成ニテ振出シタル為替手形",
+     "text_sha256": "a734adf9cada4dcac2a15bd253eea9abdb6e00c7c9e57ee61288f56fb5c4f174",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "13",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裏書ハ被裏書人ヲ指定セズシテ之ヲ為シ又ハ単ニ裏書人ノ署名ノミヲ以テ之ヲ為スコトヲ得（白地式裏書）",
+     "text_sha256": "a5fe4b2f3d25b0f1c99a24c7e05af24d823f6e5b8af69a1fbf400a114843c41f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "14",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "白地ヲ補充セズ且裏書ヲ為サズシテ手形ヲ第三者ニ譲渡スコトヲ得",
+     "text_sha256": "f744035b13ed91ccd7ff43e9bf795b2c12e58c096fccd2f3c26fb4357c4a2060",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "16",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "最後ノ裏書ガ白地式ナル場合ト雖モ亦同ジ",
+     "text_sha256": "59a3210e92d16480e70161c0e6931c254b54c90d274659c590b01308760831a7",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一　裏書（第十一条乃至第二十条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "受取人白地のままでは権利を行使できないとする点は、75条・76条からの解釈による。判例があるかは探していない。"
+   ],
+   "id": "exp-yobi-2014-shoho-q30-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q30-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：時効の効力は、その事由が生じた者に対してだけ生じる（手形法71条）ので、振出人への請求は裏書人に対しては効力を生じない。",
+   "body": "手形法71条は「時効ノ完成猶予又ハ更新ハ其ノ事由ガ生ジタル者ニ対シテノミ其ノ効力ヲ生ズ」と定め、77条1項8号により約束手形に準用される。振出人と裏書人が所持人に対して合同して責任を負う場合（合同責任）でも、所持人が振出人に請求したことによる時効の効力は振出人に対してだけ生じ、裏書人に対しては生じない。したがって、裏書人に対しては時効は中断しない（現行法の用語では、完成猶予・更新の効力を生じない）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "71",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効ノ完成猶予又ハ更新ハ其ノ事由ガ生ジタル者ニ対シテノミ其ノ効力ヲ生ズ",
+     "text_sha256": "deb56ac994dfaf41a21f90b5f77b3b34c40ba6ec11d41862173ecd6f3e740852",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "八　時効（第七十条及第七十一条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題時（2014年）の手形法71条は「時効の中断」の語を用いていた。現行の71条は民法改正（2017年）に伴う整備で「時効ノ完成猶予又ハ更新」に改められている。事由が生じた者に対してのみ効力を生じるという結論は変わらない。"
+   ],
+   "id": "exp-yobi-2014-shoho-q30-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-shoho-q30-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：約束手形の振出人に対する請求権の時効は満期の日から3年であり（手形法78条1項・70条1項）、1年ではない。",
+   "body": "手形法78条1項は「約束手形ノ振出人ハ為替手形ノ引受人ト同一ノ義務ヲ負フ」とし、70条1項は「引受人ニ対スル為替手形上ノ請求権ハ満期ノ日ヨリ三年ヲ以テ時効ニ罹ル」と定める（77条1項8号で約束手形に準用）。したがって、振出人に対する手形上の権利の時効は満期の日から3年である。所持人の裏書人に対する請求権は、70条2項により「適法ノ時期ニ作ラシメタル拒絶証書ノ日附ヨリ、無費用償還文句アル場合ニ於テハ満期ノ日ヨリ一年ヲ以テ時効ニ罹ル」。振出人に対するものも裏書人に対するものも一律に満期の日から1年とする点が誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "78",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "約束手形ノ振出人ハ為替手形ノ引受人ト同一ノ義務ヲ負フ",
+     "text_sha256": "2823ef6188b39d7588a7715dbefb70e65caf6adac7e230b63825ba41a966ccba",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "70",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "引受人ニ対スル為替手形上ノ請求権ハ満期ノ日ヨリ三年ヲ以テ時効ニ罹ル",
+     "text_sha256": "cd104139acd79617fc6cdcca1b6bc4ca895d31522ac42960831a2559581209c2",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "70",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "適法ノ時期ニ作ラシメタル拒絶証書ノ日附ヨリ、無費用償還文句アル場合ニ於テハ満期ノ日ヨリ一年ヲ以テ時効ニ罹ル",
+     "text_sha256": "cd104139acd79617fc6cdcca1b6bc4ca895d31522ac42960831a2559581209c2",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "八　時効（第七十条及第七十一条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-shoho-q30-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,235 @@
+{
+ "question_id": "yobi-2014-minso-q32",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-minso-q32-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：訴訟能力を欠くのに本案判決（請求棄却）がされたときは、その誤りを争うための本人の控訴は適法と解されているので、「不適法である」とする点が誤り。",
+   "body": "未成年者は、民事訴訟法31条本文により「法定代理人によらなければ、訴訟行為をすることができない。」から、法定代理人によらずに提起された訴えは、補正（34条1項）がされない限り不適法として却下されるべきである。本肢では、裁判所がこれを看過して請求棄却の本案判決をしている。このような判決に対し、訴訟能力の欠缺を理由としてその判決の取消しを求める上訴については、本人も有効に提起できると解されている。これを不適法とすると、訴訟能力がないことを看過した判決を本人が争う手段がなくなるからである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "31",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者及び成年被後見人は、法定代理人によらなければ、訴訟行為をすることができない。",
+     "text_sha256": "45303900f9b4b3da717d2449d3e32fdd68be62595e33c78eef57b146fb985ff3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "34",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟能力、法定代理権又は訴訟行為をするのに必要な授権を欠くときは、裁判所は、期間を定めて、その補正を命じなければならない。",
+     "text_sha256": "3950ecb318d61de762fda21f3d029e78df5211ab489fb35aa9802a956b462a0b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "訴訟能力の欠缺を争う上訴を本人がすることができるとする点は解釈による。判例は探していない。"
+   ],
+   "id": "exp-yobi-2014-minso-q32-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-minso-q32-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：被保佐人は訴訟能力を失うわけではない（保佐人の同意が要るにとどまる）ので、「訴訟能力の喪失」による中断（民事訴訟法124条1項3号）は生じない。",
+   "body": "民事訴訟法124条1項3号は、中断事由として「当事者の訴訟能力の喪失又は法定代理人の死亡若しくは代理権の消滅」を挙げる。被保佐人は、民法13条1項4号により「訴訟行為をすること。」について保佐人の同意を要するが、法定代理人によらなければ訴訟行為ができない者（民事訴訟法31条の未成年者・成年被後見人）とは異なり、訴訟能力そのものを失うわけではないと解されている。したがって、訴訟の係属中に当事者について保佐開始の審判がされても、訴訟能力の喪失には当たらず、訴訟手続は中断しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "三　当事者の訴訟能力の喪失又は法定代理人の死亡若しくは代理権の消滅",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "四　訴訟行為をすること。",
+     "text_sha256": "c8aa95cbe2fe90c33a5a7efa56fd4ff66cd3c8e78478b1efc6963b1ca101c458",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "31",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者及び成年被後見人は、法定代理人によらなければ、訴訟行為をすることができない。",
+     "text_sha256": "45303900f9b4b3da717d2449d3e32fdd68be62595e33c78eef57b146fb985ff3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "保佐開始が「訴訟能力の喪失」に当たらないとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2014-minso-q32-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-minso-q32-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：営業を許された未成年者は、その営業に関しては独立して法律行為ができるので、民事訴訟法31条ただし書により自ら訴訟行為をすることができる。",
+   "body": "民法6条1項は「一種又は数種の営業を許された未成年者は、その営業に関しては、成年者と同一の行為能力を有する。」と定める。民事訴訟法31条は、未成年者は法定代理人によらなければ訴訟行為をすることができないとしつつ、ただし書で「未成年者が独立して法律行為をすることができる場合は、この限りでない。」とする。したがって、営業を許された未成年者は、その営業に関する訴訟行為を自らすることができ、法定代理人によらなければならないとする肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一種又は数種の営業を許された未成年者は、その営業に関しては、成年者と同一の行為能力を有する。",
+     "text_sha256": "fa77777932ba8a9dc6a0edc963eca634aba0dbbddcfd396dbbc79cb41cd07335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "31",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、未成年者が独立して法律行為をすることができる場合は、この限りでない。",
+     "text_sha256": "45303900f9b4b3da717d2449d3e32fdd68be62595e33c78eef57b146fb985ff3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-minso-q32-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-minso-q32-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：訴訟能力を欠く者の訴訟行為は、追認があって初めて行為の時にさかのぼって有効となる（民事訴訟法34条2項）ので、成年に達しただけで「当然に」有効となるわけではない。",
+   "body": "民事訴訟法34条2項は「訴訟能力、法定代理権又は訴訟行為をするのに必要な授権を欠く者がした訴訟行為は、これらを有するに至った当事者又は法定代理人の追認により、行為の時にさかのぼってその効力を生ずる。」と定める。訴訟係属中に成年に達した者は、訴訟能力を有するに至った当事者として、過去の訴訟行為を追認することができる。しかし、さかのぼって有効となるのは追認があったときであり、成年に達したことによって当然に有効となるわけではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "34",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "訴訟能力、法定代理権又は訴訟行為をするのに必要な授権を欠く者がした訴訟行為は、これらを有するに至った当事者又は法定代理人の追認により、行為の時にさかのぼってその効力を生ずる。",
+     "text_sha256": "3950ecb318d61de762fda21f3d029e78df5211ab489fb35aa9802a956b462a0b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-minso-q32-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-minso-q32-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：成年被後見人は、法定代理人によらなければ訴訟行為をすることができず（民事訴訟法31条）、日用品の購入に関する訴えでも例外はない。",
+   "body": "民法9条は成年被後見人の法律行為を取り消すことができるとしつつ、ただし書で「日用品の購入その他日常生活に関する行為については、この限りでない。」とする。しかし、民事訴訟法31条は「未成年者及び成年被後見人は、法定代理人によらなければ、訴訟行為をすることができない。」と定め、ただし書の例外は「未成年者が独立して法律行為をすることができる場合」に限っている。したがって、成年被後見人には、日用品の購入に関する訴えであっても、法定代理人によらずに訴えを提起する例外は認められていない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、日用品の購入その他日常生活に関する行為については、この限りでない。",
+     "text_sha256": "67a383e068a02c1e4aadf954b4d75d4e2514d25083fac514027e71a066d7e892",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "31",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者及び成年被後見人は、法定代理人によらなければ、訴訟行為をすることができない。",
+     "text_sha256": "45303900f9b4b3da717d2449d3e32fdd68be62595e33c78eef57b146fb985ff3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-minso-q32-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,237 @@
+{
+ "question_id": "yobi-2014-minso-q44",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-minso-q44-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。民事訴訟法261条1項は、訴えの「全部又は一部」を取り下げることができると定めている。",
+   "body": "ポイントは、訴えの取下げが訴え全体に限られるか、一部でもよいかである。民事訴訟法261条1項は「訴えは、判決が確定するまで、その全部又は一部を取り下げることができる。」と定めており、一部の取下げも明文で認められている。一部の取下げがあった場合、民事訴訟法262条1項により、取り下げた部分については「初めから係属していなかったものとみなす」ことになる。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "261",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴えは、判決が確定するまで、その全部又は一部を取り下げることができる。",
+     "text_sha256": "fc4d05f19d3ea83f0aa54ffe746161170d1803be7f427b32c03008b4b9e6f247",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "262",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "初めから係属していなかったものとみなす",
+     "text_sha256": "429195b0aa441894146abc52ca14d1b077c655c412b1126b9ad263fe5fa5a083",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-minso-q44-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-minso-q44-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。訴えは「判決が確定するまで」取り下げることができるので、第一審判決後の控訴審でも取り下げることができる。",
+   "body": "ポイントは、訴えを取り下げることができる時期の終わりがいつかである。民事訴訟法261条1項は「訴えは、判決が確定するまで、その全部又は一部を取り下げることができる。」と定めており、終期は判決の確定であって、第一審の終局判決ではない。控訴審の係属中は第一審判決が確定していないから、控訴審でも訴えを取り下げることができる。ただし、民事訴訟法262条2項により「本案について終局判決があった後に訴えを取り下げた者は、同一の訴えを提起することができない」という制約がかかる。したがって控訴審では取り下げることができないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "261",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴えは、判決が確定するまで、その全部又は一部を取り下げることができる。",
+     "text_sha256": "fc4d05f19d3ea83f0aa54ffe746161170d1803be7f427b32c03008b4b9e6f247",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "262",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "本案について終局判決があった後に訴えを取り下げた者は、同一の訴えを提起することができない",
+     "text_sha256": "429195b0aa441894146abc52ca14d1b077c655c412b1126b9ad263fe5fa5a083",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-minso-q44-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-minso-q44-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。相手方が本案について口頭弁論をした後の訴えの取下げは、相手方の同意を得なければ効力を生じない（民事訴訟法261条2項）。",
+   "body": "ポイントは、取下げに相手方の同意が要るのはいつからかである。民事訴訟法261条2項本文は、訴えの取下げは「相手方が本案について準備書面を提出し、弁論準備手続において申述をし、又は口頭弁論をした後にあっては、相手方の同意を得なければ、その効力を生じない」と定めている。相手方が本案について口頭弁論をした後は、相手方にも請求棄却判決を得る利益が生じているので、同意が必要とされると解されている。本肢は、本案について口頭弁論をした後は同意なしに取り下げられないとしており、同項本文のとおりである。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "261",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "相手方が本案について準備書面を提出し、弁論準備手続において申述をし、又は口頭弁論をした後にあっては、相手方の同意を得なければ、その効力を生じない",
+     "text_sha256": "fc4d05f19d3ea83f0aa54ffe746161170d1803be7f427b32c03008b4b9e6f247",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "同意が必要とされる理由（被告の請求棄却判決を得る利益）は解釈による。"
+   ],
+   "id": "exp-yobi-2014-minso-q44-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-minso-q44-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。訴えの取下げは原則として書面でするが、和解の期日を含む「口頭弁論等の期日」では口頭ですることができる。",
+   "body": "ポイントは、取下げを口頭でできる期日に和解の期日が含まれるかである。民事訴訟法261条3項は「訴えの取下げは、書面でしなければならない。」と原則を定める。そのうえで同条4項は「口頭弁論、弁論準備手続又は和解の期日（以下この章において「口頭弁論等の期日」という。）において訴えの取下げをするときは、口頭ですることを妨げない。」と定めており、和解の期日も明示されている。したがって和解の期日において口頭で取り下げることができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "261",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "訴えの取下げは、書面でしなければならない。",
+     "text_sha256": "fc4d05f19d3ea83f0aa54ffe746161170d1803be7f427b32c03008b4b9e6f247",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "261",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "口頭弁論、弁論準備手続又は和解の期日（以下この章において「口頭弁論等の期日」という。）において訴えの取下げをするときは、口頭ですることを妨げない。",
+     "text_sha256": "fc4d05f19d3ea83f0aa54ffe746161170d1803be7f427b32c03008b4b9e6f247",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題時点（2014年）の民事訴訟法261条3項は、書面の原則とただし書（口頭弁論等の期日における口頭の取下げ）を1つの項に定めていたとみられる。その後のIT化の改正で項が分かれ電子調書の記録が加わった現行の本文を引用したが、和解の期日に口頭でできるという結論は変わらない。"
+   ],
+   "id": "exp-yobi-2014-minso-q44-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-minso-q44-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。請求の放棄は調書への記載により確定判決と同一の効力を有するが、訴えの取下げは訴訟係属を遡って消滅させるだけで、確定判決と同一の効力は生じない。",
+   "body": "ポイントは、請求の放棄と訴えの取下げの効果の違いである。民事訴訟法267条1項は、裁判所書記官が「和解又は請求の放棄若しくは認諾」について電子調書を作成しファイルに記録したときは、その記録は「確定判決と同一の効力を有する」と定める。これに対し訴えの取下げについては、民事訴訟法262条1項が「訴訟は、訴えの取下げがあった部分については、初めから係属していなかったものとみなす。」と定めるだけで、確定判決と同一の効力を与える規定はない。そのため、取下げ後に同じ請求について再び訴えを提起することも、同条2項の場合を除き妨げられないと解されている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "267",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "和解又は請求の放棄若しくは認諾",
+     "text_sha256": "5bff013f863e84860a0a1588b4dcfbb058f5ca29e223b5ab659be98aefffb0ee",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "267",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決と同一の効力を有する",
+     "text_sha256": "5bff013f863e84860a0a1588b4dcfbb058f5ca29e223b5ab659be98aefffb0ee",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "262",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟は、訴えの取下げがあった部分については、初めから係属していなかったものとみなす。",
+     "text_sha256": "429195b0aa441894146abc52ca14d1b077c655c412b1126b9ad263fe5fa5a083",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題時点（2014年）の民事訴訟法267条は「調書に記載したとき」と定めていたとみられ、現行の本文は電子調書の記録に改められているが、本肢の結論には影響しない。"
+   ],
+   "id": "exp-yobi-2014-minso-q44-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
