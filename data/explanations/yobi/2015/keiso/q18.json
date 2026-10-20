@@ -1,0 +1,247 @@
+{
+ "question_id": "yobi-2015-keiso-q18",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiso-q18-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。公訴の提起があった事件について更に同一裁判所に公訴が提起されたときは、判決で公訴を棄却しなければならない。",
+   "body": "本肢は、二重起訴の場合の公訴棄却を定めた規定そのものである。刑事訴訟法338条は「左の場合には、判決で公訴を棄却しなければならない。」とし、その3号に「公訴の提起があつた事件について、更に同一裁判所に公訴が提起されたとき。」を掲げている。したがって、裁判所は後の公訴を棄却しなければならず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "338",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "左の場合には、判決で公訴を棄却しなければならない。",
+     "text_sha256": "c3cd1e9d9294210fd7c01a3c9ad3ab57f0d9977073d4ce1848307067fccb692c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "338",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公訴の提起があつた事件について、更に同一裁判所に公訴が提起されたとき。",
+     "text_sha256": "c3cd1e9d9294210fd7c01a3c9ad3ab57f0d9977073d4ce1848307067fccb692c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-keiso-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiso-q18-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。起訴状の謄本を被告人に送達するのは裁判所であり、検察官ではない。",
+   "body": "誤りは、起訴状の謄本の送達を「検察官が」行うとする部分である。刑事訴訟法271条1項は「裁判所は、公訴の提起があつたときは、遅滞なく起訴状の謄本を被告人に送達しなければならない。」と定めており、送達の主体は裁判所である。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "271",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、公訴の提起があつたときは、遅滞なく起訴状の謄本を被告人に送達しなければならない。",
+     "text_sha256": "b3b3fb4231a6c7d4eafafa6cb3e46ce3aaf89d47092e72a47764a162a6c2bfea",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-keiso-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiso-q18-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。公訴の提起により停止した時効は、公訴棄却の裁判が確定した時から再び進行を始める。",
+   "body": "本肢のポイントは、起訴状謄本の不送達により公訴提起が効力を失った場合でも、公訴提起による時効停止の効力が認められ、公訴棄却の裁判確定時から時効が再び進行するかである。起訴状の謄本が2か月以内に送達されないときは「公訴の提起は、さかのぼつてその効力を失う」（刑事訴訟法271条2項）が、この場合は決定で公訴を棄却しなければならない（同法339条1項1号）。そして同法254条1項は、時効は公訴の提起によってその進行を停止し「管轄違又は公訴棄却の裁判が確定した時からその進行を始める。」と定めており、公訴棄却の理由による区別をしていない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "271",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "公訴の提起は、さかのぼつてその効力を失う",
+     "text_sha256": "b3b3fb4231a6c7d4eafafa6cb3e46ce3aaf89d47092e72a47764a162a6c2bfea",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "339",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百七十一条第二項の規定により公訴の提起がその効力を失つたとき。",
+     "text_sha256": "abee306725bc9c2ff40392b7192a1aa7c6939c7d753f40780be3548dd66e5305",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "254",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管轄違又は公訴棄却の裁判が確定した時からその進行を始める。",
+     "text_sha256": "0f9024dfcdc174ea7ab3b23a5c3a955db7ddc1c1a488f29d6a87538eb345ad54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "271条2項により公訴提起が遡って効力を失う場合にも254条1項の時効停止の効力が認められるとする点については、判例あり（要確認）。判例は探していない"
+   ],
+   "id": "exp-yobi-2015-keiso-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiso-q18-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。起訴状謄本の不送達による公訴棄却の決定が確定しても、再起訴を制限する規定はなく、検察官は同一事件について更に公訴を提起できる。",
+   "body": "本肢のポイントは、起訴状謄本の不送達を理由とする公訴棄却の後に、同一事件で再び公訴を提起できるかである。2か月以内に起訴状の謄本が送達されないときは公訴の提起が遡って効力を失い、決定で公訴が棄却される（刑事訴訟法271条2項、339条1項1号）。再起訴を制限する規定としては、同法340条が「公訴の取消による公訴棄却の決定が確定したときは」新たに重要な証拠を発見した場合に限り再起訴できると定めているが、これは公訴の取消しによる公訴棄却の場合に限られる。公訴棄却は形式裁判であって実体について判断していないから、起訴状謄本の不送達による公訴棄却の後は、公訴時効が完成していない限り再起訴できると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "271",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "公訴の提起があつた日から二箇月以内に起訴状の謄本が送達されないときは、公訴の提起は、さかのぼつてその効力を失う。",
+     "text_sha256": "b3b3fb4231a6c7d4eafafa6cb3e46ce3aaf89d47092e72a47764a162a6c2bfea",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "339",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百七十一条第二項の規定により公訴の提起がその効力を失つたとき。",
+     "text_sha256": "abee306725bc9c2ff40392b7192a1aa7c6939c7d753f40780be3548dd66e5305",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "340",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公訴の取消による公訴棄却の決定が確定したときは",
+     "text_sha256": "a567810ae9145007ebd26ca23939e12b2ec84616659e2ab10899869f48301f38",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公訴棄却が形式裁判で再起訴を妨げないとする点は、解釈による"
+   ],
+   "id": "exp-yobi-2015-keiso-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiso-q18-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。共犯の一人に対してした公訴の提起による時効の停止は、他の共犯に対してもその効力を有する。",
+   "body": "誤りは、共犯の一人に対する公訴提起による時効の停止が他の共犯に及ばないとする部分である。確かに刑事訴訟法249条は「公訴は、検察官の指定した被告人以外の者にその効力を及ぼさない。」と定めている。しかし、時効の停止については同法254条2項が特則を置き、「共犯の一人に対してした公訴の提起による時効の停止は、他の共犯に対してその効力を有する。」と定めている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "249",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公訴は、検察官の指定した被告人以外の者にその効力を及ぼさない。",
+     "text_sha256": "d7f7fb1b6bacba964216dc8c4959e9cac2c904df6e5a28952014006136d10f94",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "254",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "共犯の一人に対してした公訴の提起による時効の停止は、他の共犯に対してその効力を有する。",
+     "text_sha256": "0f9024dfcdc174ea7ab3b23a5c3a955db7ddc1c1a488f29d6a87538eb345ad54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-keiso-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

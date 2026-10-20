@@ -1,0 +1,291 @@
+{
+ "question_id": "yobi-2015-keiso-q17",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiso-q17-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。逮捕する場合に逮捕の現場でする捜索差押えは令状を必要としないから、「必ず」捜索差押許可状が要るとする点が誤り。",
+   "body": "誤りは、捜索差押えには「必ず」捜索差押許可状が要るとする部分である。原則として、捜査機関の捜索差押えは刑事訴訟法218条1項のとおり「裁判官の発する令状により」行う。しかし、同法220条1項は、被疑者を逮捕する場合又は現行犯人を逮捕する場合において必要があるときは「逮捕の現場で差押、捜索又は検証をすること。」ができると定め、同条3項は「第一項の処分をするには、令状は、これを必要としない。」としている。したがって、令状によらない捜索差押えも認められており、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判官の発する令状により",
+     "text_sha256": "954073f263edaa60047b785f6d0ee41b4ebde20c340041083ed979aa3578ed9f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "220",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "逮捕の現場で差押、捜索又は検証をすること。",
+     "text_sha256": "164eaabe0976395eb9b592cca0149e4a9c11ae7f398b275869b2423590a3fe2b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "220",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の処分をするには、令状は、これを必要としない。",
+     "text_sha256": "164eaabe0976395eb9b592cca0149e4a9c11ae7f398b275869b2423590a3fe2b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "保存した現行の218条1項には「電磁的記録提供命令」の文言が加わっている（出題後の改正）が、令状主義の原則と本肢の結論には影響しない"
+   ],
+   "id": "exp-yobi-2015-keiso-q17-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiso-q17-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、情報が記録されている蓋然性があり、現場で確認すると情報を損壊される危険がある場合には、内容を確認せずにパソコン等を差し押さえることを認めているから、「必ず」確認が要るとする点が誤り。",
+   "body": "誤りは、パソコンを差し押さえる際に記録内容を「必ず」確認しなければならないとする部分である。差押えは令状に記載された「差し押さえるべき物」（刑事訴訟法219条1項）に当たる物について行うから、記録媒体の内容が被疑事実と関連するかは問題となる。しかし判例は、令状により差し押さえようとするパソコン、フロッピーディスク等の中に被疑事実に関する情報が記録されている蓋然性が認められる場合に、その場で記録の有無を確認していたのでは記録された情報を損壊される危険があるときは、内容を確認することなく差し押さえることが許されるとした。したがって、内容の確認は常に必要とされるわけではなく、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "219",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "差し押さえるべき物",
+     "text_sha256": "41cfe36906d2e078b14f2aaf27ac51afabee0593215b1f82ba130125ea8fd68a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "フロッピーディスク等につき内容を確認せずに差し押さえることが許されるとされた事例（平成10(し)45）",
+     "court": "最高裁判所第二小法廷",
+     "date": "1998-05-01",
+     "holding": "パソコン、フロッピーディスク等に被疑事実に関する情報が記録されている蓋然性が認められ、現場で記録の有無を確認すると情報を損壊される危険があるなどの事情があるときは、内容を確認せずに差し押さえることが許される。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50009/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2015-keiso-q17-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiso-q17-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、強制採尿令状（捜索差押許可状）の効力として採尿に適する最寄りの場所まで被疑者を連行できるとしているから、勾引状が別に要るとする点が誤り。",
+   "body": "誤りは、採尿場所への連行のために捜索差押許可状に「加え勾引状」が必要であるとする部分である。判例は、被疑者の体内から強制的に尿を採取するには捜索差押令状を必要とし、その令状には医師をして医学的に相当と認められる方法により行わせなければならない旨の条件の記載が不可欠であるとした（刑事訴訟法218条1項の「裁判官の発する令状」による処分）。そのうえで別の判例は、身柄を拘束されていない被疑者を採尿場所へ任意に同行することが事実上不可能であると認められる場合には、強制採尿令状の効力として、採尿に適する最寄りの場所まで被疑者を連行することができるとした。したがって、連行のために勾引状を別に得る必要はなく、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判官の発する令状により",
+     "text_sha256": "954073f263edaa60047b785f6d0ee41b4ebde20c340041083ed979aa3578ed9f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "強制採尿に必要な令状の種類とその形式（昭和54(あ)429）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1980-10-23",
+     "holding": "被疑者の体内からの強制採尿は、真にやむを得ない場合に最終的手段として許されうるが、捜索差押令状を必要とし、医師をして医学的に相当と認められる方法により行わせなければならない旨の条件の記載が不可欠である。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50210/detail2/index.html"
+     ]
+    },
+    {
+     "name": "強制採尿令状により採尿場所まで連行することの適否（平成6(あ)187）",
+     "court": "最高裁判所第三小法廷",
+     "date": "1994-09-16",
+     "holding": "身柄を拘束されていない被疑者を採尿場所へ任意に同行することが事実上不可能であると認められる場合には、強制採尿令状の効力として、採尿に適する最寄りの場所まで被疑者を連行することができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50156/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2015-keiso-q17-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiso-q17-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。捜査機関の捜索差押えには当事者の立会いを定めた刑事訴訟法113条が準用されていないから、公訴提起後であっても弁護人を「必ず」立ち会わせる必要はない。",
+   "body": "誤りは、捜査機関が公訴提起後に捜索差押えを行う場合に弁護人を「必ず」立ち会わせなければならないとする部分である。裁判所が行う差押状・捜索状の執行については、刑事訴訟法113条1項が「検察官、被告人又は弁護人は、差押状又は捜索状の執行に立ち会うことができる。」と定めている。しかし、捜査機関がする押収・捜索に準用される規定を列挙した同法222条1項には113条が含まれておらず、同条6項も「被疑者をこれに立ち会わせることができる。」と定めるにとどまる。したがって、捜査機関の捜索差押えについて弁護人の立会いは義務付けられておらず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官、被告人又は弁護人は、差押状又は捜索状の執行に立ち会うことができる。",
+     "text_sha256": "aa9f1d209c913cea646f5ed7621e51e00dd5216c3391563a8e931de2f38663c0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百十条、第百十条の二前段、第百十一条第一項前段及び第二項、第百十一条の二前段、第百十二条、第百十四条、第百十五条",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "被疑者をこれに立ち会わせることができる。",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "113条を準用しない点から弁護人に立会権がないとする理解は、解釈による",
+    "保存した現行の222条1項は出題後の改正で準用条文が増えているが、113条が準用されていない点は本肢の結論に影響しない"
+   ],
+   "id": "exp-yobi-2015-keiso-q17-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiso-q17-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。令状を所持しない場合の緊急執行（刑事訴訟法73条3項）は勾引状・勾留状・逮捕状について認められたもので、捜索差押許可状には準用されていないから、本肢は誤り。",
+   "body": "誤りは、捜索差押許可状を所持していない場合に、被疑事実の要旨と令状が発付されている旨を告げて捜索差押えを行うことができるとする部分である。刑事訴訟法73条3項は「勾引状又は勾留状を所持しないためこれを示すことができない場合において、急速を要するときは」公訴事実の要旨及び令状が発せられている旨を告げて執行できると定め、同法201条2項がこれを逮捕状による逮捕に準用している。これに対し、捜索差押えについては、同法222条1項が準用する110条により「差押状又は捜索状は、処分を受ける者にこれを示さなければならない。」とされ、73条3項に当たる緊急執行の規定は準用されていない。したがって、令状を示さずに捜索差押えを行うことはできず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "73",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "勾引状又は勾留状を所持しないためこれを示すことができない場合において、急速を要するときは",
+     "text_sha256": "afddd65e0f57210bc39a7308a9aaccc4bc2b077e271ab7ab8660e90b1a1e620f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "201",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第七十三条第三項の規定は、逮捕状により被疑者を逮捕する場合にこれを準用する。",
+     "text_sha256": "748e71847d9aee1d4b4aed10c933c21b6443dfd94806dc5c4700c35874f4e990",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "110",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "差押状又は捜索状は、処分を受ける者にこれを示さなければならない。",
+     "text_sha256": "593bc08649226ba64090cba7ca4dbad50331cf782a35612001325681fda56e36",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百十条",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "令状の呈示に関する判例は探していない"
+   ],
+   "id": "exp-yobi-2015-keiso-q17-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

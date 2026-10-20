@@ -1,0 +1,203 @@
+{
+ "question_id": "yobi-2015-keiho-q09",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiho-q09-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：Ａ説からは、甲には殺人罪、乙には傷害致死罪の共同正犯がそれぞれ成立し、両者に殺人罪の共同正犯が成立するわけではない。",
+   "body": "誤りは、Ａ説から甲と乙の両者に殺人罪の共同正犯が成立するとする点。Ａ説（行為共同説）は、「単なる行為を共同して各自の意図する犯罪を実現する場合も，それぞれの行為について共同正犯の成立を認める」立場であるから、共同正犯の罪名は各自の故意に応じて決まる。本問では、殺意を抱いた甲には殺人罪（刑法199条）の共同正犯が、傷害の故意しかない乙には傷害致死罪（刑法205条）の共同正犯が成立することになる。乙には殺人の故意がない以上、乙に殺人罪の共同正犯は成立しないから、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者は",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "205",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "身体を傷害し、よって人を死亡させた者は",
+     "text_sha256": "960a4d341d2e03804b55d34a45e7198077c0616adbacf517c88e73a9ab8a2d81",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "見解の当てはめは解釈による"
+   ],
+   "id": "exp-yobi-2015-keiho-q09-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiho-q09-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：Ｂ説は重なり合う構成要件のうち重い犯罪の共同正犯を認めるので、甲と乙に殺人罪の共同正犯が成立する。",
+   "body": "ポイントは、Ｂ説が「より重い犯罪について共同正犯の成立を認め」る点。殺人罪（刑法199条）と傷害致死罪（刑法205条）は、人の身体に暴行を加えて死亡させるという限度で構成要件が重なり合うから、Ｂ説によれば、重い殺人罪について甲と乙の共同正犯が成立する。そのうえで、殺意のない乙には、Ｂ説のいう「軽い犯罪の故意しかない者には，軽い犯罪の刑を科す」として傷害致死罪の刑が科される（刑法38条2項が、重い罪に当たる事実を知らなかった者を「その重い罪によって処断することはできない」とすることとも整合させる考え方である）。したがって、Ｂ説からは甲と乙に殺人罪の共同正犯が成立するとの結論が導かれ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者は",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "205",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "身体を傷害し、よって人を死亡させた者は",
+     "text_sha256": "960a4d341d2e03804b55d34a45e7198077c0616adbacf517c88e73a9ab8a2d81",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "38",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "重い罪に当たるべき行為をしたのに、行為の時にその重い罪に当たることとなる事実を知らなかった者は、その重い罪によって処断することはできない。",
+     "text_sha256": "d5cc162963f0d1038efe34868f6bc7f1ca4f6b5888032218d23d667074c890fa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "見解の当てはめは解釈による"
+   ],
+   "id": "exp-yobi-2015-keiho-q09-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiho-q09-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：Ｂ説は乙に殺人罪の共同正犯を成立させつつ傷害致死罪の刑を科すので、罪の成立と科刑が分離するとの批判が当てはまる。",
+   "body": "ポイントは、Ｂ説が罪の成立と科刑を別々に扱う点。Ｂ説によれば、殺意のない乙にも殺人罪の共同正犯が成立する一方で、乙には「軽い犯罪の刑を科す」ことになる。これは、成立する犯罪（殺人罪）と科される刑（傷害致死罪の刑）が一致しないことを意味し、犯罪が成立すればその犯罪の法定刑で処断するのが原則であることに反するとして、「犯罪の成立と科刑が分離するのは妥当でない」との批判が向けられると解されている。また、故意のない乙に殺人罪の成立を認める点も責任主義との関係で問題とされる。本肢は正しい。",
+   "citations": [],
+   "cases": [],
+   "notes": [
+    "学説の批判は解釈による"
+   ],
+   "id": "exp-yobi-2015-keiho-q09-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiho-q09-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：Ｃ説からは、重なり合う傷害致死罪の限度で甲と乙の共同正犯が成立し、甲には別に殺人罪の単独犯が成立する。",
+   "body": "ポイントは、Ｃ説が「構成要件の重なり合う限度で軽い犯罪の共同正犯の成立を認める」点。殺人罪（刑法199条）と傷害致死罪（刑法205条）は傷害致死罪の限度で重なり合うから、Ｃ説によれば、甲と乙には軽い傷害致死罪の共同正犯が成立する。共同正犯として処理されない甲の殺人の部分については、甲が自ら殺意をもって丙の頭部を殴打し死亡させているから、甲に殺人罪の単独犯が成立することになる。本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者は",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "205",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "身体を傷害し、よって人を死亡させた者は",
+     "text_sha256": "960a4d341d2e03804b55d34a45e7198077c0616adbacf517c88e73a9ab8a2d81",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "見解の当てはめは解釈による"
+   ],
+   "id": "exp-yobi-2015-keiho-q09-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiho-q09-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：Ｃ説は重なり合う軽い犯罪の限度でしか共同正犯を認めないので、Ａ説やＢ説から「成立範囲が広すぎる」と批判することはできない。",
+   "body": "誤りは、Ａ説やＢ説からＣ説に対して「共同正犯の成立範囲が広すぎる」と批判できるとする点。Ｃ説は、構成要件の重なり合う限度で軽い犯罪についてだけ共同正犯を認める立場であり、本問でも甲と乙の共同正犯は傷害致死罪にとどまる。これに対し、Ａ説は各自の意図する犯罪について広く共同正犯を認め、Ｂ説は重い殺人罪について共同正犯を認めるから、いずれもＣ説より共同正犯の成立範囲が広い。そのため、Ａ説やＢ説の立場からＣ説に向けられうるのは、むしろ成立範囲が狭すぎるという批判であり、本肢は誤り。",
+   "citations": [],
+   "cases": [],
+   "notes": [
+    "学説の批判は解釈による"
+   ],
+   "id": "exp-yobi-2015-keiho-q09-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

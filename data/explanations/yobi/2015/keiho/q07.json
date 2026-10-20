@@ -1,0 +1,238 @@
+{
+ "question_id": "yobi-2015-keiho-q07",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiho-q07-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：中止未遂は、他人の助力を得て結果発生を防止した場合でも成立しうるので、自己の行為のみで防止する必要はない。",
+   "body": "誤りは「自己の行為のみで結果発生を防止する必要がある」とする点。刑法43条ただし書は「自己の意思により犯罪を中止したとき」と定めるだけで、結果の防止を行為者一人の力で行うことまでは求めていない。結果発生の防止に他人（医師など）の助力を得た場合でも、行為者自身が防止に当たったと同視できる程度の真摯な努力をしていれば、中止未遂が成立すると解されている。本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、自己の意思により犯罪を中止したときは、その刑を減軽し、又は免除する。",
+     "text_sha256": "4a18dd050345c1424dde393ee15554e66bd90bcf59f4f9c932d0ebd372647655",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による。判例は探していない"
+   ],
+   "id": "exp-yobi-2015-keiho-q07-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiho-q07-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：中止未遂は未遂犯の一種であり、既遂に達した場合には、真摯な努力をしていても成立しない。",
+   "body": "誤りは、既遂犯が成立する場合にも中止未遂が成立するとする点。刑法43条は「犯罪の実行に着手してこれを遂げなかった者」を対象とし、ただし書の中止未遂もこの未遂を前提とする。結果発生防止のための真摯な努力をしても、結果が発生して既遂に達した以上、犯罪を遂げなかったとはいえず、中止未遂は成立しない（努力は量刑の事情として考慮されるにとどまる）。本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の実行に着手してこれを遂げなかった者は、その刑を減軽することができる。",
+     "text_sha256": "4a18dd050345c1424dde393ee15554e66bd90bcf59f4f9c932d0ebd372647655",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-keiho-q07-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiho-q07-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：住居侵入罪は侵入した時点で既遂に達しているので、窃取を中止しても住居侵入罪に中止未遂は成立しない。",
+   "body": "誤りは「いずれの犯罪にも中止未遂が成立する」とする点。住居侵入罪（刑法130条）は「人の住居」に「侵入」した時点で既遂に達しており、その後に窃取を中止しても、すでに遂げた住居侵入罪について中止未遂が成立する余地はない。財物の窃取を自己の意思により中止したときに中止未遂となるのは、物色行為によって実行に着手した窃盗の未遂罪（刑法235条・243条）だけである。住居侵入罪と窃盗未遂罪は手段と結果の関係にあり、刑法54条1項の「犯罪の手段若しくは結果である行為が他の罪名に触れるとき」として科刑上一罪（牽連犯）となるが、科刑上一罪であっても各罪の成否は別々に判断される。本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "130",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正当な理由がないのに、人の住居若しくは人の看守する邸宅、建造物若しくは艦船に侵入し",
+     "text_sha256": "032fa6eaacc129ae4daf39c3f2400afa6523671819f49171677c976b8fe3e355",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "235",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の財物を窃取した者は、窃盗の罪とし",
+     "text_sha256": "44f910b87f784daf350f25c4067c5a24e6e862555ec52f35ceea3c0cd53efc1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "243",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百三十五条から第二百三十六条まで",
+     "text_sha256": "bb37bccf7c5ac6610a6a71b357963698f384bc57cb344d9383496e7d35f27d3e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、自己の意思により犯罪を中止したときは、その刑を減軽し、又は免除する。",
+     "text_sha256": "4a18dd050345c1424dde393ee15554e66bd90bcf59f4f9c932d0ebd372647655",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "住居侵入罪と窃盗罪を牽連犯とするのは判例・通説の理解による。判例は探していない"
+   ],
+   "id": "exp-yobi-2015-keiho-q07-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiho-q07-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判例は、予備罪には中止未遂の観念を容れる余地がないとして、予備罪の中止未遂を否定している。",
+   "body": "ポイントは、刑法43条ただし書を予備罪に準用できるかどうか。同条は「犯罪の実行に着手してこれを遂げなかった者」を前提とする規定であり、実行の着手前の段階を処罰する予備罪はこれに当たらない。判例は、強盗予備の事案で、予備罪には中止未遂の観念を容れる余地がないとして、中止未遂の成立（ただし書の準用）を否定したとされる（判例あり（要確認））。学説には、殺人予備罪（刑法201条）のように刑の免除の規定がない予備罪との均衡から準用を認める見解もあるが、判例の立場によれば本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の実行に着手してこれを遂げなかった者は、その刑を減軽することができる。",
+     "text_sha256": "4a18dd050345c1424dde393ee15554e66bd90bcf59f4f9c932d0ebd372647655",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "201",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、情状により、その刑を免除することができる。",
+     "text_sha256": "fca04f94e3b6ffd7451b30e4de98d6362b8ff120b419fda00a6b7bb7c8a26292",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "予備罪の中止未遂を否定した判例（強盗予備の事案の大法廷判決）は2回検索したが、courts.go.jp の判決ページを確認できなかったため「判例あり（要確認）」とした",
+    "学説の部分は解釈による"
+   ],
+   "id": "exp-yobi-2015-keiho-q07-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-keiho-q07-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：中止未遂の刑は、任意的ではなく必要的に減軽又は免除される。",
+   "body": "誤りは「任意的に減軽又は免除される」とする点。刑法43条本文の障害未遂は「その刑を減軽することができる」として任意的減軽にとどまるが、ただし書の中止未遂は「その刑を減軽し、又は免除する」と定めており、必ず減軽または免除される（必要的減免）。本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の実行に着手してこれを遂げなかった者は、その刑を減軽することができる。ただし、自己の意思により犯罪を中止したときは、その刑を減軽し、又は免除する。",
+     "text_sha256": "4a18dd050345c1424dde393ee15554e66bd90bcf59f4f9c932d0ebd372647655",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2015-keiho-q07-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
