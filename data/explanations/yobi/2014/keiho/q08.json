@@ -1,0 +1,283 @@
+{
+ "question_id": "yobi-2014-keiho-q08",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-keiho-q08-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。延焼罪（111条1項）の基本犯は自己所有物に対する109条2項・110条2項の罪に限られ、Ｂ所有の倉庫に放火した本肢には当たらない。",
+   "body": "ポイントは、放火した倉庫が「他人所有」であることである。111条1項は「第百九条第二項又は前条第二項の罪を犯し、よって第百八条又は第百九条第一項に規定する物に延焼させたとき」と定め、基本犯を自己所有の非現住建造物等（109条2項）や自己所有の建造物等以外の物（110条2項）への放火に限っている。本肢の倉庫はＢ所有で無人であるから、Ａの行為は他人所有の非現住建造物への放火（109条1項）に当たり、111条1項の基本犯には当たらない。Ｂ居住の家屋への延焼については、Ａに現住建造物放火（108条）の故意がない以上同条の罪は成立せず、延焼の点は109条1項の罪の中で評価されると解される。したがって延焼罪が成立するとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "111",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百九条第二項又は前条第二項の罪を犯し、よって第百八条又は第百九条第一項に規定する物に延焼させたとき",
+     "text_sha256": "1e2aa657cbca5269c1d6b407c48d316a45f78f61e720dbc59390ffd2e68cbba6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "109",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "放火して、現に人が住居に使用せず、かつ、現に人がいない建造物、艦船又は鉱坑を焼損した者は、二年以上の有期拘禁刑に処する。",
+     "text_sha256": "326d774ec2f98dbdafb0b8f657f6202a0b84b7f679959effbd50cd3ad527d210",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "放火して、現に人が住居に使用し又は現に人がいる建造物、汽車、電車、艦船又は鉱坑を焼損した者",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "110",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の物が自己の所有に係るときは、一年以下の拘禁刑又は十万円以下の罰金に処する。",
+     "text_sha256": "e57ef09fc88cc82d4cf26b2048ff8150accb7212af342ee6d7680ec59a521152",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "延焼の結果を109条1項の罪の中で評価する点は解釈による。"
+   ],
+   "id": "exp-yobi-2014-keiho-q08-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-keiho-q08-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。未遂罪を罰するのは108条と109条1項の罪だけであり、自己所有の非現住建造物への放火（109条2項）の未遂は罰せられない。",
+   "body": "ポイントは、109条2項の罪に未遂処罰規定があるかである。112条は「第百八条及び第百九条第一項の罪の未遂は、罰する。」と定めており、109条2項の罪は挙げられていない。本肢の倉庫はＡ所有の無人の倉庫であるから、放火して焼損すれば109条2項の罪の問題となるが、その未遂を罰する規定はない。加えて109条2項は「公共の危険を生じなかったときは、罰しない。」としている。したがって109条2項の未遂罪が成立するとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "112",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百八条及び第百九条第一項の罪の未遂は、罰する。",
+     "text_sha256": "1076d517e8e1b9801473d29d8524ca430e39e70e749b594cc69bda2557c46139",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "109",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の物が自己の所有に係るときは、六月以上七年以下の拘禁刑に処する。ただし、公共の危険を生じなかったときは、罰しない。",
+     "text_sha256": "326d774ec2f98dbdafb0b8f657f6202a0b84b7f679959effbd50cd3ad527d210",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-keiho-q08-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-keiho-q08-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。放火予備罪（113条）は108条又は109条1項の罪を犯す目的を要し、自己所有の非現住建造物への放火（109条2項）の目的では成立しない。",
+   "body": "ポイントは、予備罪の目的とされる罪の範囲である。113条は「第百八条又は第百九条第一項の罪を犯す目的で、その予備をした者」を処罰すると定めており、109条2項の罪を犯す目的は含まれていない。本肢でＡが放火しようとしたのはＡ所有の無人の倉庫であり、問題文には差押えや保険など115条に当たる事情も示されていないから、その目的は109条2項の罪を犯す目的にとどまる。したがってＡに放火予備罪は成立せず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百八条又は第百九条第一項の罪を犯す目的で、その予備をした者は、二年以下の拘禁刑に処する。",
+     "text_sha256": "2bb7f03364843a7047590272d13c4766299c273cf99321db5c9339ad7ffe6a65",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "109",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の物が自己の所有に係るときは、六月以上七年以下の拘禁刑に処する。",
+     "text_sha256": "326d774ec2f98dbdafb0b8f657f6202a0b84b7f679959effbd50cd3ad527d210",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "差押えを受け、物権を負担し、賃貸し、配偶者居住権が設定され、又は保険に付したものである場合",
+     "text_sha256": "331d95531d3dca6d49bf5fc39c1071e054334b0a9cd4fad4e7259d652dba8d5b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-keiho-q08-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-keiho-q08-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。消火妨害罪（114条）は「火災の際に」消火を妨害する行為を処罰するものであり、火災が発生していない段階での消火栓への工作には成立しない。",
+   "body": "ポイントは、114条の「火災の際に」という状況の要件である。114条は「火災の際に、消火用の物を隠匿し、若しくは損壊し、又はその他の方法により、消火を妨害した者」を処罰すると定めている。本肢では、Ａは放火するに至っておらず、火災は発生していないから、消火栓に工作した行為は「火災の際に」行われたものではない。また、Ａが放火しようとしたのはＡ所有の倉庫であり、109条2項の罪の目的にとどまるから、放火予備罪（113条）も成立しない。したがって消火妨害罪が成立するとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "114",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "火災の際に、消火用の物を隠匿し、若しくは損壊し、又はその他の方法により、消火を妨害した者は、一年以上十年以下の拘禁刑に処する。",
+     "text_sha256": "f7232b598cf31705dbfdef96f6c3f463ac9492f02790b508de93ec8f7ac96e4a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百八条又は第百九条第一項の罪を犯す目的で、その予備をした者",
+     "text_sha256": "2bb7f03364843a7047590272d13c4766299c273cf99321db5c9339ad7ffe6a65",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "109",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の物が自己の所有に係るときは",
+     "text_sha256": "326d774ec2f98dbdafb0b8f657f6202a0b84b7f679959effbd50cd3ad527d210",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-keiho-q08-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-keiho-q08-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。保険に付した自己所有の建造物は115条により他人の物の例によるので、109条1項の罪が成立し、同項は公共の危険の発生を要件としない。",
+   "body": "ポイントは、火災保険が付されていることの意味である。115条は、109条1項に規定する物が自己の所有に係るものであっても「保険に付したものである場合において、これを焼損したときは、他人の物を焼損した者の例による。」と定めている。したがって、火災保険の付されたＡ所有の無人の倉庫を焼損したＡは、他人所有の非現住建造物を焼損した者として109条1項で処断される。109条1項には、同条2項ただし書のような「公共の危険を生じなかったときは、罰しない。」という定めはなく、公共の危険が生じなかったことは犯罪の成否に影響しないと解されている。したがって109条1項の罪は成立しないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保険に付したものである場合において、これを焼損したときは、他人の物を焼損した者の例による。",
+     "text_sha256": "331d95531d3dca6d49bf5fc39c1071e054334b0a9cd4fad4e7259d652dba8d5b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "109",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "公共の危険を生じなかったときは、罰しない。",
+     "text_sha256": "326d774ec2f98dbdafb0b8f657f6202a0b84b7f679959effbd50cd3ad527d210",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "109条1項を公共の危険の発生を要しない罪（抽象的危険犯）とする点は解釈による。"
+   ],
+   "id": "exp-yobi-2014-keiho-q08-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

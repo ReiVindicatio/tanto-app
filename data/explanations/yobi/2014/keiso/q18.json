@@ -1,0 +1,195 @@
+{
+ "question_id": "yobi-2014-keiso-q18",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-keiso-q18-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：刑事訴訟法は起訴便宜主義をとり（248条）、嫌疑が十分でも訴追を必要としないときは公訴を提起しないことができるので、「必ず公訴を提起しなければならない」は誤り。",
+   "body": "決め手は、248条の起訴便宜主義である。同条は「犯人の性格、年齢及び境遇、犯罪の軽重及び情状並びに犯罪後の情況により訴追を必要としないときは、公訴を提起しないことができる」と定める。したがって、検察官は、犯罪の嫌疑が十分にある場合でも、これらの事情を考慮して公訴を提起しない処分（起訴猶予）をすることができる。嫌疑が十分であれば「必ず公訴を提起しなければならない」とする本肢は、起訴法定主義の考え方であり、現行法とは異なる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "248",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯人の性格、年齢及び境遇、犯罪の軽重及び情状並びに犯罪後の情況により訴追を必要としないときは、公訴を提起しないことができる。",
+     "text_sha256": "00dcf3e127bce5737ff84cf5edd644d283051a5f947a0d1ae09e02f1a4e2cd30",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-keiso-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-keiso-q18-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：257条は「公訴は、第一審の判決があるまでこれを取り消すことができる」と定める。",
+   "body": "決め手は、257条の文言である。同条は「公訴は、第一審の判決があるまでこれを取り消すことができる」と定めている。公訴を行うのは検察官であるから（247条「公訴は、検察官がこれを行う。」）、公訴の取消しも検察官が行う。よって、検察官は第一審の判決があるまで公訴を取り消すことができるとする本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "257",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公訴は、第一審の判決があるまでこれを取り消すことができる。",
+     "text_sha256": "9676f316a0e7cfba6522bd772be33e00faf49cabdafa8cee08d9bb599d1a2c30",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "247",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公訴は、検察官がこれを行う。",
+     "text_sha256": "d33451e84206f9ace3f8abb6db498611f4f5a96ef3c573e302c22982b1414aac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-keiso-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-keiso-q18-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：260条により、告訴のあった事件について公訴を提起したときは、速やかにその旨を告訴人に通知しなければならない。",
+   "body": "決め手は、260条の通知義務である。同条は「検察官は、告訴、告発又は請求のあつた事件について、公訴を提起し、又はこれを提起しない処分をしたときは、速やかにその旨を告訴人、告発人又は請求人に通知しなければならない」と定める。通知の対象は不起訴処分に限られず、公訴を提起した場合も含まれる。よって、公訴を提起したときは告訴人に通知する必要はないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "260",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官は、告訴、告発又は請求のあつた事件について、公訴を提起し、又はこれを提起しない処分をしたときは、速やかにその旨を告訴人、告発人又は請求人に通知しなければならない",
+     "text_sha256": "7959029e2c5518f066e4bcaeba43dc0169bb08ec135d61210f96fc50eabce47b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-keiso-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-keiso-q18-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：254条2項前段がそのまま定めている。",
+   "body": "決め手は、254条2項前段の文言である。同項は「共犯の一人に対してした公訴の提起による時効の停止は、他の共犯に対してその効力を有する」と定める。本肢はこの規定と同じ内容である。なお、同項後段は、この場合に停止した時効は「当該事件についてした裁判が確定した時からその進行を始める」としている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "254",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "共犯の一人に対してした公訴の提起による時効の停止は、他の共犯に対してその効力を有する",
+     "text_sha256": "0f9024dfcdc174ea7ab3b23a5c3a955db7ddc1c1a488f29d6a87538eb345ad54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "254",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該事件についてした裁判が確定した時からその進行を始める",
+     "text_sha256": "0f9024dfcdc174ea7ab3b23a5c3a955db7ddc1c1a488f29d6a87538eb345ad54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-keiso-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-keiso-q18-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：256条5項は「数個の訴因及び罰条は、予備的に又は択一的にこれを記載することができる」と定めるので、択一的記載は許される。",
+   "body": "決め手は、256条5項の文言である。同項は「数個の訴因及び罰条は、予備的に又は択一的にこれを記載することができる」と定めている。したがって、起訴状の公訴事実に数個の訴因を択一的に記載することは、法律上明文で認められている。よって、択一的に記載することは許されないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "256",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "数個の訴因及び罰条は、予備的に又は択一的にこれを記載することができる。",
+     "text_sha256": "fc5be8653b9dab80cae6f4e69f2764078f5656a91012259654f23d915922d93f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2014-keiso-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
