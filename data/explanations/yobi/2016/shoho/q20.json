@@ -1,0 +1,235 @@
+{
+ "question_id": "yobi-2016-shoho-q20",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q20-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。310条1項は株主の代理人による議決権行使を認めており、これを定款で全面的に排除することはできないと解されている。",
+   "body": "ポイントは、代理人による議決権行使を定款で一律に禁止できるかである。310条1項は「株主は、代理人によってその議決権を行使することができる。」と定め、会社が制限できるものとしては同条5項が「株主総会に出席することができる代理人の数を制限することができる。」と定めるにとどまる。そのため、代理行使そのものを否定する定款の定めは同条1項に反し許されないと解されている（代理人の資格を株主に限る定款の定めの有効性は別の論点である）。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "310",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主は、代理人によってその議決権を行使することができる。",
+     "text_sha256": "64327e230494840d726a1b50fa140ae40e5bfdaec3abc5ded6248b377136e0e6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "310",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "株主総会に出席することができる代理人の数を制限することができる。",
+     "text_sha256": "64327e230494840d726a1b50fa140ae40e5bfdaec3abc5ded6248b377136e0e6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "代理行使を定款で排除できないとする点は解釈による"
+   ],
+   "id": "exp-yobi-2016-shoho-q20-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q20-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。書面投票を認めても株主総会そのものは開催しなければならず、開催を要しないのは319条の決議の省略の場合である。",
+   "body": "誤りは「株主総会を開催することを要しない」の部分である。298条1項3号は、取締役が株主総会を招集する場合に定める事項として「株主総会に出席しない株主が書面によって議決権を行使することができることとするときは、その旨」を掲げており、書面投票は株主総会の開催を前提に、出席しない株主の議決権行使の方法を定めるものである。株主総会を開催せずに決議があったものとみなされるのは、319条1項により、議決権を行使できる株主の「全員が書面又は電磁的記録により同意の意思表示をしたとき」である。したがって、書面投票を定めただけで株主総会の開催が不要になるわけではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "298",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会に出席しない株主が書面によって議決権を行使することができることとするときは、その旨",
+     "text_sha256": "6cf29e7480618de198fa9d58594d5a4ce9fc66387a9a752e3953d185c6c837c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "319",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "全員が書面又は電磁的記録により同意の意思表示をしたとき",
+     "text_sha256": "1a383e1b098024dddced3981f3c111ea2ae1bebfd87b42e602eb9338097a404c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q20-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q20-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。議決権行使書面を提出した後でも、代理人によって議決権を行使することは禁じられていない。",
+   "body": "誤りは「代理人によってその議決権を行使することができない」の部分である。310条1項は「株主は、代理人によってその議決権を行使することができる。」と定めるだけで、書面投票をした株主の代理行使を禁じる規定はない。書面投票は株主総会に出席しない株主のための方法であり（298条1項3号）、書面投票をした株主が後に本人又は代理人として株主総会に出席して議決権を行使したときは、出席による行使が優先し、先の書面による行使は効力を失うと解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "310",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主は、代理人によってその議決権を行使することができる。",
+     "text_sha256": "64327e230494840d726a1b50fa140ae40e5bfdaec3abc5ded6248b377136e0e6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "298",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会に出席しない株主が書面によって議決権を行使することができることとするときは、その旨",
+     "text_sha256": "6cf29e7480618de198fa9d58594d5a4ce9fc66387a9a752e3953d185c6c837c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出席による行使が書面による行使に優先するとする点は解釈による"
+   ],
+   "id": "exp-yobi-2016-shoho-q20-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q20-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。実質的に同一の事項について繰り返して説明を求める場合は、法務省令が定める説明を拒める場合に当たる。",
+   "body": "314条は取締役等の説明義務を定めたうえで、ただし書で「正当な理由がある場合として法務省令で定める場合は、この限りでない。」とする。これを受けた会社法施行規則71条は、その場合の一つとして3号で「株主が当該株主総会において実質的に同一の事項について繰り返して説明を求める場合」を掲げている。したがって、この場合、取締役は当該事項について説明をすることを要せず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "314",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正当な理由がある場合として法務省令で定める場合は、この限りでない。",
+     "text_sha256": "f1d8e48ec1a7f1c1d417ab265ad927de97e50cc45ab0998d2ef637e0668b735c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法施行規則",
+     "article": "71",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主が当該株主総会において実質的に同一の事項について繰り返して説明を求める場合",
+     "text_sha256": "e6227a62f252f3e8f9b5c9183ee1997251597e59c7059bd99fa8d35ce7c6f1e6",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q20-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q20-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。招集手続の省略に必要な株主全員の同意について、書面又は電磁的記録によるべきとする定めはない。",
+   "body": "誤りは「書面又は電磁的記録によりしなければならない」の部分である。300条本文は「株主総会は、株主の全員の同意があるときは、招集の手続を経ることなく開催することができる。」と定めるだけで、同意の方式を定めていない。書面又は電磁的記録による同意が求められるのは、株主総会の開催自体を省略する319条1項の決議の省略の場合である。なお、300条ただし書により、書面投票又は電子投票を定めた場合には招集手続を省略できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "300",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会は、株主の全員の同意があるときは、招集の手続を経ることなく開催することができる。",
+     "text_sha256": "a6e2adbf475a8769823b0c90b9021a667b56c586ebd51d850711b667cd3ce892",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "319",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "全員が書面又は電磁的記録により同意の意思表示をしたとき",
+     "text_sha256": "1a383e1b098024dddced3981f3c111ea2ae1bebfd87b42e602eb9338097a404c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q20-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

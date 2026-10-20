@@ -1,0 +1,212 @@
+{
+ "question_id": "yobi-2016-shoho-q28",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q28-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "現行法では×：商人間の対話者間の申込みの規定（商法507条）は削除されており、民法525条3項により、対話が継続している間に承諾の通知を受けなければ効力を失うにとどまる（「直ちに」承諾しなければ失効するのではない）。",
+   "body": "決め手は、対話者間の申込みが失効する時期である。出題時点（2016年）には商法507条が商人である対話者間の申込みについて定めていたが、保存した現行の商法507条は「削除」となっている。現行法では、民法525条3項本文が「対話者に対してした第一項の申込みに対して対話が継続している間に申込者が承諾の通知を受けなかったときは、その申込みは、その効力を失う」と定め、対話が継続している間であれば承諾できる。したがって、現行法の下では、直ちに承諾をしなかったときに申込みが効力を失うとする本肢は正確でない。公式の○は出題時点の商法507条による正解と考えられ、現行の条文では説明できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "507",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "削除",
+     "text_sha256": "e9653dc3edcbc072d033d200b3aa56539fde84e9b7cc80287fedc9f91cbe03ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "525",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "対話者に対してした第一項の申込みに対して対話が継続している間に申込者が承諾の通知を受けなかったときは、その申込みは、その効力を失う。",
+     "text_sha256": "8b490a4bd34fc35b31f233129bde1d53e02fcd46965e19f3140524a0bf1238cc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "法改正：出題時点の商法507条（商人である対話者間の申込みの失効）は、平成29年の民法（債権関係）改正に伴い削除された（保存した現行の商法507条は「削除」）。現行法では民法525条3項により、対話継続中に承諾の通知を受けなかったときに失効する。公式の○（出題時点の正解）は現行の条文では説明できないため、stated_truth を現行法による結論（×）にして止める。",
+    "出題時点の商法507条の文言は保存した本文にないため引用していない。"
+   ],
+   "id": "exp-yobi-2016-shoho-q28-a",
+   "status": "flagged",
+   "check": {
+    "passed": false,
+    "failures": [
+     "🔴 公式の○×と食い違う（公式 ○／解説 False）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q28-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：相手方が代理人が本人のためにすることを知らなかったときは、代理人に対して履行の請求をすることを妨げない。",
+   "body": "商法504条本文は、商行為の代理人が本人のためにすることを示さないでした行為も「本人に対してその効力を生ずる」とする。そのうえで、同条ただし書は「相手方が、代理人が本人のためにすることを知らなかったときは、代理人に対して履行の請求をすることを妨げない」と定める。本肢は、相手方が知らなかったときであっても代理人に履行の請求をすることはできないとしており、ただし書に反する。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "504",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方が、代理人が本人のためにすることを知らなかったときは、代理人に対して履行の請求をすることを妨げない",
+     "text_sha256": "c6fefd5aeb98a30e45df5d56ec1b6be20a55d20bf24daaf9b00193a6f9cb58f7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q28-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q28-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：匿名組合員は営業者を代表することができず、氏名の使用を許諾した場合に生じるのは連帯弁済責任である。",
+   "body": "商法536条3項は「匿名組合員は、営業者の業務を執行し、又は営業者を代表することができない」と定める。匿名組合員が自己の氏名を営業者の商号中に用いることを許諾した場合について、商法537条は、その使用以後に生じた債務について「営業者と連帯してこれを弁済する責任を負う」と定めるにとどまり、代表権を与えるものではない。したがって、氏名の使用を許諾すれば営業者を代表することができるとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "536",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "匿名組合員は、営業者の業務を執行し、又は営業者を代表することができない。",
+     "text_sha256": "3438fc217fd493d065ca6ff6215ccc11d50a87407ba17e3cefd6abd2ae5b791b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "537",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "営業者と連帯してこれを弁済する責任を負う",
+     "text_sha256": "848a82a5bcda6ec264a2ab21330af1c112662dd8a6ca9d9e6ca4d4219fd0e0a3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q28-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q28-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：申込みを拒絶したときであっても、申込みとともに受け取った物品は申込者の費用をもって保管しなければならない。",
+   "body": "商法510条本文は、商人がその営業の部類に属する契約の申込みを受けた場合に、申込みとともに受け取った物品があるときは「その申込みを拒絶したときであっても、申込者の費用をもってその物品を保管しなければならない」と定める。例外は、同条ただし書の、物品の価額が費用を償うのに足りないときや保管によって損害を受けるときに限られる。本肢は、拒絶したときは保管する必要がないとしており、条文に反する。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "510",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その申込みを拒絶したときであっても、申込者の費用をもってその物品を保管しなければならない",
+     "text_sha256": "4eb7edcbc6873c3868df19499515cf3135e96bee0e62b0da9409ef91be1183db",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q28-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q28-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：商行為によって生じた債権を担保する質権には、流質契約を禁じる民法349条が適用されない。",
+   "body": "民法349条は、質権設定者は「設定行為又は債務の弁済期前の契約において、質権者に弁済として質物の所有権を取得させ」ることを約することができないとして、流質契約を禁じている。しかし、商法515条は「民法第三百四十九条の規定は、商行為によって生じた債権を担保するために設定した質権については、適用しない」と定める。したがって、商行為によって生じた債権を担保する質権では、弁済期前の契約で質物の所有権を取得させる旨を約することができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "349",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設定行為又は債務の弁済期前の契約において、質権者に弁済として質物の所有権を取得させ",
+     "text_sha256": "36d62bd6dd61bf1b04cc6cca39e96aaf7361de67b16729b35866de37fa76b34d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "515",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "民法第三百四十九条の規定は、商行為によって生じた債権を担保するために設定した質権については、適用しない。",
+     "text_sha256": "ab53068865fd88698a0c72bc29f252bcfbc9a825e9f346171024a1959cfd8e50",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q28-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

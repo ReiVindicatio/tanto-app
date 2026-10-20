@@ -1,0 +1,238 @@
+{
+ "question_id": "yobi-2016-shoho-q26",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q26-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。新株発行の無効の訴えの原告適格は「当該株式会社の株主等」であり、発行の効力発生後に株式を取得した株主も含まれる。",
+   "body": "誤りは、株式の発行の効力が生じた後に株式を取得した株主は訴えを「提起することができない」とする部分である。会社法828条2項は、新株発行の無効の訴え（同条1項2号）を提起できる者を「当該株式会社の株主等」と定めている。この文言は、株式の発行の効力が生じた時点で株主であったことを求めておらず、提訴の時点で株主等であればよいと解されている。これに対し、組織再編の無効の訴えなどでは「当該行為の効力が生じた日において」株主等であった者と特に定めており（828条2項7号など）、新株発行の場合にはこのような限定がない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "828",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項第二号に掲げる行為　当該株式会社の株主等",
+     "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "828",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該行為の効力が生じた日において",
+     "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "828",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社の成立後における株式の発行　株式の発行の効力が生じた日から六箇月以内",
+     "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "提訴時に株主等であれば足りるとする点は、解釈による"
+   ],
+   "id": "exp-yobi-2016-shoho-q26-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q26-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。責任追及等の訴えは、株式会社の本店の所在地を管轄する地方裁判所の専属管轄である（会社法848条）。",
+   "body": "誤りは、取締役の普通裁判籍の所在地を管轄する地方裁判所に提起することを要するとする部分である。会社法848条は「責任追及等の訴えは、株式会社又は株式交換等完全子会社（以下この節において「株式会社等」という。）の本店の所在地を管轄する地方裁判所の管轄に専属する。」と定める。会社が取締役の責任を追及する訴えもこの責任追及等の訴えにあたるから、管轄の基準は被告である取締役の普通裁判籍ではなく、会社の本店の所在地である。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "848",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "責任追及等の訴えは、株式会社又は株式交換等完全子会社（以下この節において「株式会社等」という。）の本店の所在地を管轄する地方裁判所の管轄に専属する。",
+     "text_sha256": "6741d349f3b2815ecf9507966b469f4118cd3e9eb79d5458cd6d6a6d5e26bab6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q26-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q26-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、任期満了等で退任した後もなお取締役としての権利義務を有する者（権利義務取締役）について、解任の訴えによる解任請求はできないとしている。",
+   "body": "本肢のポイントは、会社法346条1項による権利義務取締役が、854条の解任の訴えの対象となる「役員」に含まれるかどうかである。346条1項は、役員の員数が欠けた場合には「任期の満了又は辞任により退任した役員は、新たに選任された役員（次項の一時役員の職務を行うべき者を含む。）が就任するまで、なお役員としての権利義務を有する。」と定める。854条1項は解任の訴えの対象を「役員（第三百二十九条第一項に規定する役員をいう。以下この節において同じ。）」としており、判例は、権利義務取締役について854条による解任の訴えを提起することはできないとしている（判例あり（要確認））。権利義務取締役に不正行為等があるときは、346条2項により「利害関係人の申立てにより、一時役員の職務を行うべき者を選任することができる」ので、これによって権利義務取締役の地位を失わせることができると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "346",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "任期の満了又は辞任により退任した役員は、新たに選任された役員（次項の一時役員の職務を行うべき者を含む。）が就任するまで、なお役員としての権利義務を有する。",
+     "text_sha256": "127f4960eb512a0d4a84464d6d06db72ebb552b0e07efececcc2f12e0202bfd0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "346",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "利害関係人の申立てにより、一時役員の職務を行うべき者を選任することができる",
+     "text_sha256": "127f4960eb512a0d4a84464d6d06db72ebb552b0e07efececcc2f12e0202bfd0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "854",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "役員（第三百二十九条第一項に規定する役員をいう。以下この節において同じ。）",
+     "text_sha256": "5322d30d1d6e632d1cb9866bde147c4f1c82553e6da33bf10a9d278fe3202736",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "本肢の判例（権利義務取締役に対する解任の訴えを否定した最高裁判決）は、courts.go.jp の判決ページで確認できなかったため「判例あり（要確認）」とした",
+    "一時役員の選任申立てによって権利義務取締役の地位を失わせることができる点は、解釈による"
+   ],
+   "id": "exp-yobi-2016-shoho-q26-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q26-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。特定責任追及の訴えの提起の請求は、最終完全親会社等ではなく、責任を負う役員等のいる株式会社（子会社）に対して、書面その他の法務省令で定める方法によりする。",
+   "body": "誤りは、請求の相手方を「当該最終完全親会社等」とし、かつ「書面で」請求しなければならないとする部分である。会社法847条の3第1項は、最終完全親会社等の株主は「当該株式会社に対し、書面その他の法務省令で定める方法により、特定責任に係る責任追及等の訴え（以下この節において「特定責任追及の訴え」という。）の提起を請求することができる。」と定める。ここでいう「当該株式会社」は、特定責任を負う発起人等が属する子会社であり、最終完全親会社等ではない。また、請求の方法は書面に限られず、法務省令で定める方法によることもできる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "847_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該株式会社に対し、書面その他の法務省令で定める方法により、特定責任に係る責任追及等の訴え（以下この節において「特定責任追及の訴え」という。）の提起を請求することができる。",
+     "text_sha256": "92297ed17f8e5451018df73c3366cc09cb2fe5f5ff407bac1b9e478e60a01dbf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q26-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q26-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。設立無効の訴えの認容判決には対世効があるため、被告会社は請求を認諾することができないと解されている。",
+   "body": "本肢のポイントは、認容判決に対世効がある訴えで、被告が請求の認諾をすることができるかどうかである。会社法834条1号は、会社の設立の無効の訴えの被告を「設立する会社」とし、838条は「会社の組織に関する訴えに係る請求を認容する確定判決は、第三者に対してもその効力を有する。」と定める。認諾は請求を認容する確定判決と同じ効力を生じるため、これを認めると、当事者の処分によって第三者にまで効力が及ぶ結果を生じてしまう。そのため、対世効のある会社の組織に関する訴えでは、被告会社は請求を認諾することができないと解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "834",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社の設立の無効の訴え　設立する会社",
+     "text_sha256": "b9ec18c29c714b3875ebe6b6556166976d4123088dd30445292e2e17ad8b773c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "838",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社の組織に関する訴えに係る請求を認容する確定判決は、第三者に対してもその効力を有する。",
+     "text_sha256": "2ca182ab02992cc264da547cb36f529cf696f8be4eb6bccc3dd42c7a17e0593d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "対世効のある訴えで認諾ができない点は、解釈による"
+   ],
+   "id": "exp-yobi-2016-shoho-q26-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

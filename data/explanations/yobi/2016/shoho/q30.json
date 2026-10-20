@@ -1,0 +1,332 @@
+{
+ "question_id": "yobi-2016-shoho-q30",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q30-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。裏書人の担保責任は「反対ノ文言ナキ限リ」のものであり、無担保裏書などでは遡求義務を負わない。",
+   "body": "本肢のポイントは、裏書人が常に遡求義務を負うかどうかである。手形法15条1項は「裏書人ハ反対ノ文言ナキ限リ引受及支払ヲ担保ス」と定め（77条1項1号により約束手形に準用）、担保しない旨の文言を記載した裏書（無担保裏書）の裏書人は支払を担保しない。また、15条2項は、新たな裏書を禁じた裏書人は「手形ノ爾後ノ被裏書人ニ対シ担保ノ責ヲ負フコトナシ」とする。さらに、取立委任裏書（18条）の裏書人は、権利を移転しないので遡求義務を負わないと解されている。したがって、裏書人が遡求義務者にならない場合があり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "15",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裏書人ハ反対ノ文言ナキ限リ引受及支払ヲ担保ス",
+     "text_sha256": "4eef68bd6502e8d5a2484169d6653c934365f909e9d483401c4e4e6df99d3ff5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "15",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "手形ノ爾後ノ被裏書人ニ対シ担保ノ責ヲ負フコトナシ",
+     "text_sha256": "4eef68bd6502e8d5a2484169d6653c934365f909e9d483401c4e4e6df99d3ff5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "18",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裏書ニ「回収ノ為」、「取立ノ為」、「代理ノ為」其ノ他単ナル委任ヲ示ス文言アルトキハ所持人ハ為替手形ヨリ生ズル一切ノ権利ヲ行使スルコトヲ得",
+     "text_sha256": "e90b3c2167fbef4535d13216167b6b5d0cdfdc374326468b51ad91ab47e52118",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "左ノ事項ニ関スル為替手形ニ付テノ規定ハ約束手形ノ性質ニ反セザル限リ之ヲ約束手形ニ準用ス",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "取立委任裏書の裏書人が遡求義務を負わない点は、解釈による"
+   ],
+   "id": "exp-yobi-2016-shoho-q30-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q30-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。主たる債務者である振出人の手形債務が時効消滅すると、遡求義務も消滅し、受け戻した者も前者に再遡求できないと解されている。",
+   "body": "誤りは、振出人の義務について消滅時効が完成した後であっても前者に遡求を「することができる」とする部分である。約束手形の振出人は「為替手形ノ引受人ト同一ノ義務ヲ負フ」（手形法78条1項）主たる債務者であり、その請求権は70条1項により「満期ノ日ヨリ三年ヲ以テ時効ニ罹ル」（77条1項8号で準用）。受け戻した者の前者に対する請求権は、70条3項により受戻しの日などから6か月で時効にかかる別個の権利である。しかし、主たる債務者の手形債務が時効で消滅したときは、遡求義務者の義務もこれに伴って消滅し、受け戻した者も前者に遡求できないと解されている（判例あり（要確認））。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "78",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "約束手形ノ振出人ハ為替手形ノ引受人ト同一ノ義務ヲ負フ",
+     "text_sha256": "2823ef6188b39d7588a7715dbefb70e65caf6adac7e230b63825ba41a966ccba",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "70",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "引受人ニ対スル為替手形上ノ請求権ハ満期ノ日ヨリ三年ヲ以テ時効ニ罹ル",
+     "text_sha256": "cd104139acd79617fc6cdcca1b6bc4ca895d31522ac42960831a2559581209c2",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "70",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "裏書人ノ他ノ裏書人及振出人ニ対スル請求権ハ其ノ裏書人ガ手形ノ受戻ヲ為シタル日又ハ其ノ者ガ訴ヲ受ケタル日ヨリ六月ヲ以テ時効ニ罹ル",
+     "text_sha256": "cd104139acd79617fc6cdcca1b6bc4ca895d31522ac42960831a2559581209c2",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "左ノ事項ニ関スル為替手形ニ付テノ規定ハ約束手形ノ性質ニ反セザル限リ之ヲ約束手形ニ準用ス",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "本肢の「判例の趣旨」にあたる判決は courts.go.jp で2回探したが確認できなかったため「判例あり（要確認）」とした。主たる債務の時効消滅に伴い遡求義務も消滅する点は、解釈による",
+    "検索で見つかった最判昭和57年7月15日（昭和53(オ)728、courts.go.jp/hanrei/55158）は、裏書人が振出人の時効消滅に伴う償還義務の消滅を主張することが信義則に反するとされた事例で、本肢の判例そのものではないため cases に入れていない"
+   ],
+   "id": "exp-yobi-2016-shoho-q30-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q30-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。複数の遡求義務者から同時に支払の申出を受けたときは、所持人は最も多くの債務者の義務を免れさせる者（最も前者のＢ）から支払を受けるべきであり、任意に選ぶことはできないと解されている。",
+   "body": "誤りは、Ｅが「任意に選んだ者から支払を受けることができる」とする部分である。所持人は、手形法47条2項により「其ノ債務ヲ負ヒタル順序ニ拘ラズ各別又ハ共同ニ請求ヲ為スコトヲ得」（77条1項4号で準用）とされ、自ら請求する相手は自由に選べる。しかし本肢は、Ｅがまだ請求していない段階で、Ｂ・Ｃ・Ｄから同時に支払の申出を受けた場面である。この場合は、参加支払の競合について63条3項が「最モ多数ノ義務ヲ免レシムルモノ優先ス」とする趣旨に照らし、最も多くの債務者を免責させる最も前者のＢの支払を受けるべきだと解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "47",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "所持人ハ前項ノ債務者ニ対シ其ノ債務ヲ負ヒタル順序ニ拘ラズ各別又ハ共同ニ請求ヲ為スコトヲ得",
+     "text_sha256": "857f7763ca08bad4a2ff9655781c3472ac590387bfa432d61a6d2ac70346e9c4",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "63",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "参加支払ノ競合ノ場合ニ於テハ最モ多数ノ義務ヲ免レシムルモノ優先ス",
+     "text_sha256": "18bcea6d2368c345532fe4a8b534c034a75949857b85ad92e606b755eec84dda",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "左ノ事項ニ関スル為替手形ニ付テノ規定ハ約束手形ノ性質ニ反セザル限リ之ヲ約束手形ニ準用ス",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "遡求義務者の支払の申出が競合した場合に最も前者の支払を受けるべきとする点は、解釈による（63条3項の趣旨の類推）"
+   ],
+   "id": "exp-yobi-2016-shoho-q30-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q30-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、振出日白地のまま確定日払手形を満期に呈示しても裏書人に対する権利を行使できないとしており、呈示期間経過後に補充しても遡求できない。",
+   "body": "本肢のポイントは、確定日払の手形で振出日が白地のままされた呈示が、遡求権保全のための適法な呈示になるかである。手形法75条6号は約束手形の記載事項として「手形ヲ振出ス日及地ノ表示」を挙げ、76条1項はこれを欠く証券は「約束手形タル効力ヲ有セズ」とする。判例は、確定日払の手形の所持人が振出日白地のまま満期に支払のため呈示しても、裏書人に対する手形上の権利を行使することができないとした。そして、後日白地を補充しても、その呈示が遡って有効になるものではないと解されているから、支払呈示期間（38条1項）経過後に補充しても遡求はできない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "75",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "手形ヲ振出ス日及地ノ表示",
+     "text_sha256": "efb7e65358b3e7892f2e6af4e776b3fe10f53557d3694d6a5b88c5a731af2849",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "76",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条ニ掲グル事項ノ何レカヲ欠ク証券ハ約束手形タル効力ヲ有セズ",
+     "text_sha256": "f71647e4042448065f9f3d8b815ed61337c324a82f83d7211bdd91618f6df0e3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "38",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定日払、日附後定期払又ハ一覧後定期払ノ為替手形ノ所持人ハ支払ヲ為スベキ日又ハ之ニ次グ二取引日内ニ支払ノ為手形ヲ呈示スルコトヲ要ス",
+     "text_sha256": "757590c0a8fd359b90db81e0e97bff0a593cb10ee71cd1da8ba83154ebd860b7",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "約束手形金請求事件（振出日白地の確定日払手形による呈示の効力）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1966-10-13",
+     "holding": "確定日払の手形の所持人が振出日白地のまま満期に支払のため呈示しても、裏書人に対する手形上の権利を行使することはできない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53935/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "後日の補充により呈示が遡って有効にならない点は、確認した判決の裁判要旨には明示されていないため「解されている」と書いた"
+   ],
+   "id": "exp-yobi-2016-shoho-q30-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q30-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、振出人に対する満期前の手形金請求訴訟の提起・訴状の送達は、遡求権行使の要件である支払呈示の効力を有しないとする。",
+   "body": "本肢のポイントは、振出人に対する満期前の訴え提起や訴状送達を、遡求の要件である支払呈示とみることができるかである。手形法43条は「満期ニ於テ支払ナキトキハ所持人ハ裏書人、振出人其ノ他ノ債務者ニ対シ其ノ遡求権ヲ行フコトヲ得」と定め（77条1項4号で準用）、遡求には満期後の適法な支払呈示と支払拒絶が前提となる。判例は、約束手形の振出人に対する満期前の手形金請求訴訟の提起ないし訴状の送達は、裏書人に対する満期後の遡求権行使の要件である支払のための呈示としての効力を有しないとした。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "満期ニ於テ支払ナキトキハ所持人ハ裏書人、振出人其ノ他ノ債務者ニ対シ其ノ遡求権ヲ行フコトヲ得",
+     "text_sha256": "d562752b626bd3b1ddaad89e67957a247ecc0c16432ddc9a3461de3e51588532",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "左ノ事項ニ関スル為替手形ニ付テノ規定ハ約束手形ノ性質ニ反セザル限リ之ヲ約束手形ニ準用ス",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "約束手形金請求事件（満期前の手形金請求訴訟と支払呈示の効力）",
+     "court": "最高裁判所第二小法廷",
+     "date": "1993-10-22",
+     "holding": "約束手形の振出人に対する満期前の手形金請求訴訟の提起ないし訴状の送達は、裏書人に対する満期後の遡求権行使の要件である支払のための呈示としての効力を有しない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55855/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q30-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

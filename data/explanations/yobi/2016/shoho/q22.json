@@ -1,0 +1,281 @@
+{
+ "question_id": "yobi-2016-shoho-q22",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q22-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。各監査役は単独で業務財産調査ができるが、監査等委員の調査権は監査等委員会が選定する監査等委員にしか認められていない。",
+   "body": "誤りは「各監査等委員」も自ら調査できるとする部分である。監査役については、381条2項が「監査役は、いつでも、取締役及び会計参与並びに支配人その他の使用人に対して事業の報告を求め、又は監査役設置会社の業務及び財産の状況の調査をすることができる。」と定め、各監査役が単独でこの権限を持つ。これに対し、399条の3第1項は調査の主体を「監査等委員会が選定する監査等委員は」と定めており、選定されていない監査等委員はこの権限を持たない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "381",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "監査役は、いつでも、取締役及び会計参与並びに支配人その他の使用人に対して事業の報告を求め、又は監査役設置会社の業務及び財産の状況の調査をすることができる。",
+     "text_sha256": "b8a7a9a0258569eb360c4ebee278486de0b5c5f65187a2d15f2bd73f786a7be1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "399_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "監査等委員会が選定する監査等委員は",
+     "text_sha256": "35bb421bc54eb859f8a6bb393f71a1079a68f5d754613dce5d79b592ad6647a3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q22-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q22-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。監査役会には常勤監査役の選定義務があるが、監査等委員会には常勤の監査等委員を選定すべきとする規定がない。",
+   "body": "390条3項は「監査役会は、監査役の中から常勤の監査役を選定しなければならない。」と定めている。これに対し、監査等委員会の職務を定める399条の2第3項は、常勤の監査等委員の選定を掲げておらず、ほかにこれを義務づける規定もない。監査等委員会は、内部統制システムを利用して組織的に監査を行うことが想定されているため、常勤者を必須としていないと解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "390",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査役会は、監査役の中から常勤の監査役を選定しなければならない。",
+     "text_sha256": "5081c3a6dcdd0b5308b2e8cff225d053c1460b9075c8be0bf9d539d33a4323f0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "399_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査等委員会は、次に掲げる職務を行う。",
+     "text_sha256": "403065f6724f12334c0d0b8fb37d6ed5d633a5591d855208cdfca06ee90ed9e4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "常勤者を必須としない理由の説明は解釈による"
+   ],
+   "id": "exp-yobi-2016-shoho-q22-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q22-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。監査役の任期は選任後4年、監査等委員である取締役の任期は選任後2年で、後者は短縮もできない。",
+   "body": "336条1項は「監査役の任期は、選任後四年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時までとする。」と定める。取締役の任期は332条1項本文により「選任後二年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時まで」であり、監査等委員会設置会社の取締役のうち任期を1年とする同条3項は「監査等委員であるものを除く。」としている。さらに同条4項は「監査等委員である取締役の任期については、第一項ただし書の規定は、適用しない。」と定め、定款等による短縮もできない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "336",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "監査役の任期は、選任後四年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時までとする。",
+     "text_sha256": "6f6462ed833272f3dab19dcb96d7a627335ad711ac228579791475f2a07d5cdf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "332",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "選任後二年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時まで",
+     "text_sha256": "5a7c37b070116a70dc4056ad795ebb6f8e8f4c1d9da3833955c08a37d98ed437",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "332",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査等委員であるものを除く。",
+     "text_sha256": "5a7c37b070116a70dc4056ad795ebb6f8e8f4c1d9da3833955c08a37d98ed437",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "332",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "監査等委員である取締役の任期については、第一項ただし書の規定は、適用しない。",
+     "text_sha256": "5a7c37b070116a70dc4056ad795ebb6f8e8f4c1d9da3833955c08a37d98ed437",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q22-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q22-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。監査等委員でない取締役が利益相反取引について監査等委員会の承認を受けたときは、423条3項の任務懈怠の推定は適用されない。",
+   "body": "423条3項は、356条1項2号又は3号の取引（利益相反取引）によって会社に損害が生じたときは、同項各号の取締役等は「その任務を怠ったものと推定する。」と定める。これに対し同条4項は「前項の規定は、第三百五十六条第一項第二号又は第三号に掲げる場合において、同項の取締役（監査等委員であるものを除く。）が当該取引につき監査等委員会の承認を受けたときは、適用しない。」と定めている。したがって、事前に監査等委員会の承認を受けた当該取締役については任務懈怠が推定されず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "423",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "その任務を怠ったものと推定する。",
+     "text_sha256": "0a7329bc93caa7819913258f61953dfd11dd902a080800aa28a5decfb9c6d85a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "356",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役が自己又は第三者のために株式会社と取引をしようとするとき。",
+     "text_sha256": "1f519283022020dbb09f21e69d5e5dfc33a50acae50d33e817fb256ed4327990",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "423",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "前項の規定は、第三百五十六条第一項第二号又は第三号に掲げる場合において、同項の取締役（監査等委員であるものを除く。）が当該取引につき監査等委員会の承認を受けたときは、適用しない。",
+     "text_sha256": "0a7329bc93caa7819913258f61953dfd11dd902a080800aa28a5decfb9c6d85a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q22-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q22-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。会計監査人の選任・解任・不再任の議案の内容は、監査役会設置会社では監査役会が、監査等委員会設置会社では監査等委員会が決定する。",
+   "body": "344条1項は「株主総会に提出する会計監査人の選任及び解任並びに会計監査人を再任しないことに関する議案の内容は、監査役が決定する。」と定め、同条3項は監査役会設置会社では「監査役」とあるのを「監査役会」と読み替えている。また、399条の2第3項2号は、監査等委員会の職務として「株主総会に提出する会計監査人の選任及び解任並びに会計監査人を再任しないことに関する議案の内容の決定」を掲げている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "344",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会に提出する会計監査人の選任及び解任並びに会計監査人を再任しないことに関する議案の内容は、監査役が決定する。",
+     "text_sha256": "edbe749995ad731031bc7006b2287900c66ede921311328150ec8bd64c7ebefb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "344",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査役会設置会社における第一項の規定の適用については、同項中「監査役」とあるのは、「監査役会」とする。",
+     "text_sha256": "edbe749995ad731031bc7006b2287900c66ede921311328150ec8bd64c7ebefb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "399_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "株主総会に提出する会計監査人の選任及び解任並びに会計監査人を再任しないことに関する議案の内容の決定",
+     "text_sha256": "403065f6724f12334c0d0b8fb37d6ed5d633a5591d855208cdfca06ee90ed9e4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q22-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

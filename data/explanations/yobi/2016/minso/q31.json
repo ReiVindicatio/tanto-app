@@ -1,0 +1,225 @@
+{
+ "question_id": "yobi-2016-minso-q31",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minso-q31-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。民事訴訟法は補助参加の申出を書面でしなければならないとはしておらず、書面を要求する独立当事者参加の申出とは異なる。",
+   "body": "誤りは、補助参加の申出を「書面でしなければならない」とする部分である。民事訴訟法43条1項は「補助参加の申出は、参加の趣旨及び理由を明らかにして、補助参加により訴訟行為をすべき裁判所にしなければならない。」と定めるだけで、方式として書面を要求していない。これに対し、独立当事者参加については47条2項が「前項の規定による参加の申出は、書面でしなければならない。」と明文で書面を要求している。このように、補助参加の申出は書面に限られず、口頭でもすることができると解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "補助参加の申出は、参加の趣旨及び理由を明らかにして、補助参加により訴訟行為をすべき裁判所にしなければならない。",
+     "text_sha256": "68b3a655c5b4338224b80accb8ae8481da0b870de005a8f96ff757eb50b8441e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "47",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定による参加の申出は、書面でしなければならない。",
+     "text_sha256": "eabfcfd2afc146ac9b32a0de3c3390a3c5eb44d5e313f0c34165494a7daadc48",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "口頭での申出ができることの直接の根拠は民事訴訟規則（申立て等の方式の一般規定）にあるが、民事訴訟規則は e-Gov の保存本文になく引用していない。本肢の×は、民事訴訟法に書面を要求する規定がないこと（47条2項との対比）で説明した"
+   ],
+   "id": "exp-yobi-2016-minso-q31-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minso-q31-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。補助参加の申出は補助参加人としてできる訴訟行為とともにすることができ、補助参加人は上訴の提起もできるから、上告期間内に申出と同時に上告を提起できる。",
+   "body": "本肢のポイントは、補助参加の申出と上告の提起を同時にできるかである。民事訴訟法43条2項は「補助参加の申出は、補助参加人としてすることができる訴訟行為とともにすることができる。」と定める。そして45条1項は、補助参加人は「攻撃又は防御の方法の提出、異議の申立て、上訴の提起、再審の訴えの提起その他一切の訴訟行為をすることができる」とする。控訴審の終局判決後でも上告期間の経過前であれば判決は確定しておらず訴訟は係属しているから、第三者は補助参加の申出とともに上告を提起することができる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "43",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "補助参加の申出は、補助参加人としてすることができる訴訟行為とともにすることができる。",
+     "text_sha256": "68b3a655c5b4338224b80accb8ae8481da0b870de005a8f96ff757eb50b8441e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "攻撃又は防御の方法の提出、異議の申立て、上訴の提起、再審の訴えの提起その他一切の訴訟行為をすることができる",
+     "text_sha256": "6e9243978c9072a053a3bb780291c7ecc9f06197fd47249d24bf84f74f10d5c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-minso-q31-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minso-q31-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。第一審でした補助参加の効力は上訴審にも及び、控訴審で改めて補助参加の申出をする必要はないと解されている。",
+   "body": "誤りは、控訴審で訴訟行為をするために「控訴審における補助参加の申出をしなければならない」とする部分である。補助参加人は、民事訴訟法45条1項により「上訴の提起」を含む「一切の訴訟行為をすることができる」とされ、補助参加は審級ごとに限られたものとはされていない。そのため、いったん適法にされた補助参加は、その訴訟が係属する限り上訴審にも効力が及び、参加人は控訴審でも改めて申出をせずに訴訟行為をすることができると解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "攻撃又は防御の方法の提出、異議の申立て、上訴の提起、再審の訴えの提起その他一切の訴訟行為をすることができる",
+     "text_sha256": "6e9243978c9072a053a3bb780291c7ecc9f06197fd47249d24bf84f74f10d5c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "補助参加の効力が上訴審に及ぶ点は、解釈による"
+   ],
+   "id": "exp-yobi-2016-minso-q31-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minso-q31-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。補助参加について異議を述べることができるのは「当事者」であり、被参加人に限らず相手方も異議を述べることができる。",
+   "body": "誤りは、異議を述べることができるのは「被参加人だけ」で相手方は述べられないとする部分である。民事訴訟法44条1項は「当事者が補助参加について異議を述べたときは、裁判所は、補助参加の許否について、決定で、裁判をする。」と定め、異議を述べる主体を被参加人に限定していない。補助参加により不利益を受けるのは主として相手方であるから、相手方も当事者として異議を述べることができる。なお、44条2項により、当事者が異議を述べないで弁論をするなどした後は、異議を述べることができなくなる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "44",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が補助参加について異議を述べたときは、裁判所は、補助参加の許否について、決定で、裁判をする。",
+     "text_sha256": "e7f80622d0ea628b00229af0c614e72e865f2f7b175eeb3927309af4fe6c4c65",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "44",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の異議は、当事者がこれを述べないで弁論をし、又は弁論準備手続において申述をした後は、述べることができない。",
+     "text_sha256": "e7f80622d0ea628b00229af0c614e72e865f2f7b175eeb3927309af4fe6c4c65",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-minso-q31-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minso-q31-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。独立当事者参加ができる第三者であっても、補助参加の要件を満たす限り、当事者の一方に補助参加することは妨げられない。",
+   "body": "誤りは、独立当事者参加ができる場合には補助参加を「することはできない」とする部分である。民事訴訟法42条は「訴訟の結果について利害関係を有する第三者は、当事者の一方を補助するため、その訴訟に参加することができる。」と定め、独立当事者参加（47条1項）ができる者を補助参加から除く規定はない。独立当事者参加と補助参加は要件も効果も異なる別個の制度であり、第三者はどちらの方法で訴訟に関与するかを選ぶことができると解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "42",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の結果について利害関係を有する第三者は、当事者の一方を補助するため、その訴訟に参加することができる。",
+     "text_sha256": "15e0c523f4343afc9df6004cd6ec4fb70ea67c03e59792fe923231dc3bba4945",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "47",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者としてその訴訟に参加することができる。",
+     "text_sha256": "eabfcfd2afc146ac9b32a0de3c3390a3c5eb44d5e313f0c34165494a7daadc48",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "独立当事者参加が可能でも補助参加を選べる点は、解釈による"
+   ],
+   "id": "exp-yobi-2016-minso-q31-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

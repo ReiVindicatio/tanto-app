@@ -1,0 +1,221 @@
+{
+ "question_id": "yobi-2016-minso-q34",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minso-q34-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：決定も裁判所による裁判であり、裁判長（裁判官）による裁判は命令である。",
+   "body": "誤りは「決定は裁判長による裁判である」とする点である。判決と決定はいずれも裁判所がする裁判であり、裁判長や受命裁判官などの裁判官がする裁判は命令と呼ばれると解されている。条文上も、87条1項ただし書は「決定で完結すべき事件については、裁判所が、口頭弁論をすべきか否かを定める」と決定を裁判所の裁判として扱い、137条2項は「裁判長は、命令で、訴状を却下しなければならない」と裁判長の裁判を命令としている。したがって、本肢は決定と命令を取り違えており誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "87",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "決定で完結すべき事件については、裁判所が、口頭弁論をすべきか否かを定める",
+     "text_sha256": "ed803429adf2163859809f8335e7d5522f14041ee719c211661a330a4097d922",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "137",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判長は、命令で、訴状を却下しなければならない",
+     "text_sha256": "786703e334c5cc64bb08495e12206129d733ff46d00cf6bc908b04c63f3cf84d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "判決・決定・命令の主体による区別は講学上の整理（解釈による）"
+   ],
+   "id": "exp-yobi-2016-minso-q34-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minso-q34-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判決は言渡しにより、決定は相当と認める方法による告知により効力を生ずる。",
+   "body": "250条は「判決は、言渡しによってその効力を生ずる。」と定め、その言渡しは、憲法82条1項が「裁判の対審及び判決は、公開法廷でこれを行ふ。」と定めるとおり公開の法廷で行われる。これに対し、119条は「決定及び命令は、相当と認める方法で告知することによって、その効力を生ずる。」と定める。したがって、判決と決定の効力発生の違いを正しく述べた本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "250",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "判決は、言渡しによってその効力を生ずる。",
+     "text_sha256": "4b4ae91d3d45529e15b52b2c44049c178bf8ef1667c3eb6d9993ef0f604dd50d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "82",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判の対審及び判決は、公開法廷でこれを行ふ。",
+     "text_sha256": "08ce0823bca3147d0817c3a42dd0dd3c284f4df203de24d7bf22871bdba8729c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "119",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "決定及び命令は、相当と認める方法で告知することによって、その効力を生ずる。",
+     "text_sha256": "fd8a3d98ad5e40f8b31c0d0dc5c6910955716456d94af60ee279d3de8052795f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-minso-q34-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minso-q34-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：決定は口頭弁論を経ないでしなければならないわけではなく、口頭弁論をするか否かは裁判所が定める（任意的口頭弁論）。",
+   "body": "誤りは「決定は口頭弁論を経ないでしなければならない」とする点である。87条1項本文は「当事者は、訴訟について、裁判所において口頭弁論をしなければならない。」として判決には必要的口頭弁論を求める。他方、同項ただし書は「決定で完結すべき事件については、裁判所が、口頭弁論をすべきか否かを定める」としており、決定をするについて口頭弁論を開くことも許される。したがって、決定は口頭弁論を経ないでしなければならないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "87",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者は、訴訟について、裁判所において口頭弁論をしなければならない。ただし、決定で完結すべき事件については、裁判所が、口頭弁論をすべきか否かを定める。",
+     "text_sha256": "ed803429adf2163859809f8335e7d5522f14041ee719c211661a330a4097d922",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-minso-q34-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minso-q34-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：明白な誤りの更正決定のほか、法令違反を理由とする変更の判決の制度もある。",
+   "body": "誤りは、明白な誤りがあるとき「以外は，言渡し後にそれを変更することができない」とする点である。257条1項は「判決に計算違い、誤記その他これらに類する明白な誤りがあるときは、裁判所は、申立てにより又は職権で、いつでも更正決定をすることができる。」と定める。これに加えて、256条1項は「裁判所は、判決に法令の違反があることを発見したときは、その言渡し後一週間以内に限り、変更の判決をすることができる。」と定めている。したがって、明白な誤り以外にも言渡し後に判決を変更できる場合があり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "257",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "判決に計算違い、誤記その他これらに類する明白な誤りがあるときは、裁判所は、申立てにより又は職権で、いつでも更正決定をすることができる。",
+     "text_sha256": "c1bc99a1c9e55180ced0eaf62990f531e2b9b042cc0f23ac5b7a99ddf1e6e042",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "256",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、判決に法令の違反があることを発見したときは、その言渡し後一週間以内に限り、変更の判決をすることができる。",
+     "text_sha256": "895d6165c61ed764ade93bb997839fe468ae5ea7084731e235bc7d69ee3f3b10",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-minso-q34-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minso-q34-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：抗告に理由があると認めるとき、原裁判所又は裁判長は裁判を更正しなければならない（再度の考案）。",
+   "body": "333条は「原裁判をした裁判所又は裁判長は、抗告を理由があると認めるときは、その裁判を更正しなければならない。」と定める。これは再度の考案と呼ばれ、抗告裁判所に事件を送る前に、原裁判所等が自ら裁判を改めることを義務づけるものである。即時抗告も抗告の一種であるから、適法に即時抗告がされた場合にもこの規定が適用される。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "333",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "原裁判をした裁判所又は裁判長は、抗告を理由があると認めるときは、その裁判を更正しなければならない。",
+     "text_sha256": "ad31e673ca03fe72e7974e4751cf998cda10ba4430f5269fbf33b4e0c55b2ec8",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-minso-q34-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,245 @@
+{
+ "question_id": "yobi-2016-shoho-q21",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q21-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。取締役会は会議体として決議するのが原則だが、取締役会設置会社でない会社では取締役の過半数で業務を決定すればよく、会議の開催は求められていない。",
+   "body": "取締役会設置会社では、業務執行の決定は取締役会の職務であり（362条2項1号）、取締役会の決議は369条1項により取締役が「出席し」て行う会議体の決議である。会議を開かずに済ませられるのは、370条により「当該提案を可決する旨の取締役会の決議があったものとみなす旨を定款で定めることができる」場合であり、これが本肢の「定款に別段の定めがある場合」に当たる。これに対し、取締役会設置会社でない会社では、348条2項が「取締役が二人以上ある場合には、株式会社の業務は、定款に別段の定めがある場合を除き、取締役の過半数をもって決定する。」と定めるだけで、会議の開催を求めていない。したがって、取締役が3人いても会議を開く必要はなく、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "362",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "取締役会設置会社の業務執行の決定",
+     "text_sha256": "0c2c40d6cd0d3a3ae0a6e3f00a33298453cecc241308ad598ed1bbbbaf153799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "369",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役会の決議は、議決に加わることができる取締役の過半数（これを上回る割合を定款で定めた場合にあっては、その割合以上）が出席し",
+     "text_sha256": "e29aafab10e5f2705f31bcc129c2308bce2c4b67e4969a51125a14dee79c6d66",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "370",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該提案を可決する旨の取締役会の決議があったものとみなす旨を定款で定めることができる",
+     "text_sha256": "fd3cacbec8b6fa1a06499d134a36a3c3e4142ccc3eb8e4b225a21588a59c6358",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "348",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "取締役が二人以上ある場合には、株式会社の業務は、定款に別段の定めがある場合を除き、取締役の過半数をもって決定する。",
+     "text_sha256": "3b3c26bace88164cce359bb7d71cb6a1f22dc5da39e99ef7432db7b25508c75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "取締役会設置会社でない会社で会議の開催が不要である点は、348条2項が方式を定めていないことからの解釈による"
+   ],
+   "id": "exp-yobi-2016-shoho-q21-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q21-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。取締役会設置会社でない会社も、定款の定めによって監査役を置くことができる。",
+   "body": "誤りは「取締役会設置会社でない会社においては，監査役を置くことができない」の部分である。326条2項は「株式会社は、定款の定めによって、取締役会、会計参与、監査役、監査役会、会計監査人、監査等委員会又は指名委員会等を置くことができる。」と定め、監査役の設置を取締役会設置会社に限っていない。したがって、取締役会設置会社でない会社も定款で監査役を置くことができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "326",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株式会社は、定款の定めによって、取締役会、会計参与、監査役、監査役会、会計監査人、監査等委員会又は指名委員会等を置くことができる。",
+     "text_sha256": "13b0e792ecc9bb8a45384d2b6d92b4c2768d26b124e1f36769f7c7086a94d82d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q21-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q21-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。取締役会設置会社でない会社も、定款・取締役の互選・株主総会の決議によって代表取締役を定めることができる。",
+   "body": "前半は正しく、362条3項は「取締役会は、取締役の中から代表取締役を選定しなければならない。」と定める。誤りは後半の「代表取締役を定めることができない」の部分である。349条3項は「株式会社（取締役会設置会社を除く。）は、定款、定款の定めに基づく取締役の互選又は株主総会の決議によって、取締役の中から代表取締役を定めることができる。」と定めている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "362",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "取締役会は、取締役の中から代表取締役を選定しなければならない。",
+     "text_sha256": "0c2c40d6cd0d3a3ae0a6e3f00a33298453cecc241308ad598ed1bbbbaf153799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "349",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "株式会社（取締役会設置会社を除く。）は、定款、定款の定めに基づく取締役の互選又は株主総会の決議によって、取締役の中から代表取締役を定めることができる。",
+     "text_sha256": "2605a68d9e1410b45862dc660dce5371ff855940f39317abf1b163d007f5445c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q21-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q21-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。取締役会設置会社の株主総会は法定事項と定款所定事項に限り決議でき、そうでない会社の株主総会は会社に関する一切の事項を決議できる。",
+   "body": "295条1項は「株主総会は、この法律に規定する事項及び株式会社の組織、運営、管理その他株式会社に関する一切の事項について決議をすることができる。」と定める。これに対し同条2項は「取締役会設置会社においては、株主総会は、この法律に規定する事項及び定款で定めた事項に限り、決議をすることができる。」と定めている。本肢はこの区別のとおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "295",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会は、この法律に規定する事項及び株式会社の組織、運営、管理その他株式会社に関する一切の事項について決議をすることができる。",
+     "text_sha256": "3ea5faf49a0539f3ecc4ddcfb6a6d91e85739f52d2ded2b961895cb9a6758ece",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "295",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "取締役会設置会社においては、株主総会は、この法律に規定する事項及び定款で定めた事項に限り、決議をすることができる。",
+     "text_sha256": "3ea5faf49a0539f3ecc4ddcfb6a6d91e85739f52d2ded2b961895cb9a6758ece",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q21-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q21-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。目的事項以外の決議を禁じる309条5項は取締役会設置会社にだけ適用される。",
+   "body": "309条5項は「取締役会設置会社においては、株主総会は、第二百九十八条第一項第二号に掲げる事項以外の事項については、決議をすることができない。」と定め、ただし書で例外を置いている。298条1項2号の事項とは「株主総会の目的である事項があるときは、当該事項」であり、これが本肢の「当該株主総会の目的とされた事項」に当たる。この制限は取締役会設置会社に限られているから、取締役会設置会社でない会社の株主総会は、目的とされた事項以外の事項についても決議をすることができる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "309",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "取締役会設置会社においては、株主総会は、第二百九十八条第一項第二号に掲げる事項以外の事項については、決議をすることができない。",
+     "text_sha256": "56ffbd6451793882d47ba533193af3dd09d3d0c791034f12f0f7f32cf6456aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "298",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の目的である事項があるときは、当該事項",
+     "text_sha256": "6cf29e7480618de198fa9d58594d5a4ce9fc66387a9a752e3953d185c6c837c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q21-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

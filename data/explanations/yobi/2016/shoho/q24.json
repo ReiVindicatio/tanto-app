@@ -1,0 +1,255 @@
+{
+ "question_id": "yobi-2016-shoho-q24",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q24-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。業務執行社員全員の承諾で持分を譲渡できる特則は「業務を執行しない有限責任社員」に限られ、無限責任社員には及ばない。",
+   "body": "誤りは、業務を執行しない「無限責任社員」が業務執行社員全員の承諾で持分を譲渡できるとする部分である。会社法585条1項は「社員は、他の社員の全員の承諾がなければ、その持分の全部又は一部を他人に譲渡することができない。」と定めるのが原則である。その例外として585条2項は「業務を執行しない有限責任社員は、業務を執行する社員の全員の承諾があるときは、その持分の全部又は一部を他人に譲渡することができる。」と定めるが、対象は有限責任社員に限られる。したがって、業務を執行しない無限責任社員は、定款に別段の定め（585条4項）がない限り他の社員全員の承諾を要し、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "585",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "社員は、他の社員の全員の承諾がなければ、その持分の全部又は一部を他人に譲渡することができない。",
+     "text_sha256": "8ef4be8c1c01dc91a8a6945e3ff22749abb806ea800bbb2ce17ae8381c56b824",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "585",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "業務を執行しない有限責任社員は、業務を執行する社員の全員の承諾があるときは、その持分の全部又は一部を他人に譲渡することができる。",
+     "text_sha256": "8ef4be8c1c01dc91a8a6945e3ff22749abb806ea800bbb2ce17ae8381c56b824",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "585",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "前三項の規定は、定款で別段の定めをすることを妨げない。",
+     "text_sha256": "8ef4be8c1c01dc91a8a6945e3ff22749abb806ea800bbb2ce17ae8381c56b824",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q24-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q24-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。相続人が持分を承継する旨の定款の定めがあるときは、持分を承継した時に定款の変更をしたものとみなされる（会社法608条3項）。",
+   "body": "本肢のポイントは、相続による持分承継の定款の定めがある場合に、別途定款変更の手続を要するかどうかである。会社法608条1項は、社員が死亡した場合に相続人その他の一般承継人が持分を承継する旨を定款で定めることができるとし、同条2項はその一般承継人が「同項の持分を承継した時に、当該持分を有する社員となる。」と定める。そして608条3項は「第一項の定款の定めがある場合には、持分会社は、同項の一般承継人が持分を承継した時に、当該一般承継人に係る定款の変更をしたものとみなす。」と定める。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "608",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "持分会社は、その社員が死亡した場合又は合併により消滅した場合における当該社員の相続人その他の一般承継人が当該社員の持分を承継する旨を定款で定めることができる。",
+     "text_sha256": "2784913765df92857ef1a948491c21d2550e6dce1435d9e348490f652ebfccc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "608",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "同項の持分を承継した時に、当該持分を有する社員となる。",
+     "text_sha256": "2784913765df92857ef1a948491c21d2550e6dce1435d9e348490f652ebfccc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "608",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の定款の定めがある場合には、持分会社は、同項の一般承継人が持分を承継した時に、当該一般承継人に係る定款の変更をしたものとみなす。",
+     "text_sha256": "2784913765df92857ef1a948491c21d2550e6dce1435d9e348490f652ebfccc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q24-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q24-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。持分会社の成立後に加入した社員も、加入前に生じた持分会社の債務について弁済する責任を負う（会社法605条）。",
+   "body": "誤りは、加入前に生じた債務について「弁済する責任を負わない」とする部分である。会社法605条は「持分会社の成立後に加入した社員は、その加入前に生じた持分会社の債務についても、これを弁済する責任を負う。」と定める。条文は「についても」としており、加入後に生じた債務だけでなく加入前の債務も責任の対象になる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "605",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "持分会社の成立後に加入した社員は、その加入前に生じた持分会社の債務についても、これを弁済する責任を負う。",
+     "text_sha256": "51d92a1d2f7d3b0d75b52d3bad4e1aa97a8e86a68eabfa27f4d59159881295db",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q24-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q24-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。退社した社員は、退社の登記をする前に生じた債務について従前の責任の範囲内で弁済責任を負う（会社法612条1項）。",
+   "body": "本肢のポイントは、退社した社員が責任を負う債務の範囲と責任の程度である。会社法612条1項は「退社した社員は、その登記をする前に生じた持分会社の債務について、従前の責任の範囲内でこれを弁済する責任を負う。」と定めており、合資会社の社員にもそのまま適用される。基準は退社の時ではなく退社の登記の時であり、責任の程度は退社前の責任（無限責任社員か有限責任社員か）による。なお、612条2項により、この責任は登記後2年以内に請求又は請求の予告をしない債権者に対しては、登記後2年を経過した時に消滅する。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "612",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "退社した社員は、その登記をする前に生じた持分会社の債務について、従前の責任の範囲内でこれを弁済する責任を負う。",
+     "text_sha256": "9c63f43686718765b598cbcf26232bd3c95004ed313df0fef5c2e0ed91d42805",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "612",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の責任は、同項の登記後二年以内に請求又は請求の予告をしない持分会社の債権者に対しては、当該登記後二年を経過した時に消滅する。",
+     "text_sha256": "9c63f43686718765b598cbcf26232bd3c95004ed313df0fef5c2e0ed91d42805",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q24-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-shoho-q24-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。責任の限度を誤認させる行為をした有限責任社員は、誤認に基づいて取引をした者に対し、誤認させた責任の範囲内で弁済責任を負う（会社法588条2項）。",
+   "body": "誤りは、責任の限度を誤認させる行為をしても出資の範囲を超えて「弁済する責任を負わない」とする部分である。会社法588条2項は、合資会社の有限責任社員が「その責任の限度を誤認させる行為（前項の行為を除く。）をしたとき」は、「その誤認に基づいて合資会社又は合同会社と取引をした者に対し、その誤認させた責任の範囲内で当該合資会社又は合同会社の債務を弁済する責任を負う。」と定める。また、588条1項は、自己を無限責任社員であると誤認させる行為をしたときは「無限責任社員と同一の責任を負う。」とする。したがって、誤認させた範囲で出資の範囲を超える責任を負いうるので、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "588",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その責任の限度を誤認させる行為（前項の行為を除く。）をしたとき",
+     "text_sha256": "6eb2d776b1b18aaa24777789067031afe4058da83847334bfd40c20f3cbe632c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "588",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その誤認に基づいて合資会社又は合同会社と取引をした者に対し、その誤認させた責任の範囲内で当該合資会社又は合同会社の債務を弁済する責任を負う。",
+     "text_sha256": "6eb2d776b1b18aaa24777789067031afe4058da83847334bfd40c20f3cbe632c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "588",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "無限責任社員と同一の責任を負う。",
+     "text_sha256": "6eb2d776b1b18aaa24777789067031afe4058da83847334bfd40c20f3cbe632c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2016-shoho-q24-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
