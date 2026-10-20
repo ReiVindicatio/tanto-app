@@ -1,0 +1,289 @@
+{
+ "question_id": "yobi-2023-minso-q31",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q31-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。合意による専属管轄は16条2項ただし書の除外から外されているから、大阪地方裁判所は移送せずに自ら審理及び裁判をすることができる。",
+   "body": "決め手は「移送しなければならない」という部分である。16条2項本文は、地方裁判所は、訴訟がその管轄区域内の簡易裁判所の管轄に属する場合においても、相当と認めるときは「訴訟の全部又は一部について自ら審理及び裁判をすることができる。」と定める。同項ただし書は簡易裁判所の専属管轄に属する場合を除外しているが、その括弧書きで「当事者が第十一条の規定により合意で定めたものを除く。」としている。したがって、大阪簡易裁判所を専属管轄とする合意があっても、大阪地方裁判所は相当と認めれば自ら審理及び裁判をすることができ、必ず移送しなければならないわけではない。なお、13条1項がいう「法令に専属管轄の定めがある場合」にも、当事者の合意による専属管轄は含まれないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "16",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "訴訟の全部又は一部について自ら審理及び裁判をすることができる。",
+     "text_sha256": "677f8d00ee757427df499604947d2433f64a63799f1a44473f3431b5fce746e2",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "16",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当事者が第十一条の規定により合意で定めたものを除く。",
+     "text_sha256": "677f8d00ee757427df499604947d2433f64a63799f1a44473f3431b5fce746e2",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法令に専属管轄の定めがある場合",
+     "text_sha256": "f487855bdd589e15c9c55bb1da32056adca67319c60d217a65d384ba8651f36e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者は、第一審に限り、合意により管轄裁判所を定めることができる。",
+     "text_sha256": "d112c06a4b13099945004a4b9349feac28ae0af80e4468dd139a1ae27c1b1910",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "13条1項の「法令に専属管轄の定めがある場合」に合意による専属管轄が含まれない点は解釈による。"
+   ],
+   "id": "exp-yobi-2023-minso-q31-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q31-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。11条3項により、電磁的記録によってされた管轄の合意は書面によってされたものとみなされるから、その合意に基づき東京簡易裁判所に訴えを提起できる。",
+   "body": "決め手は「訴えを提起することはできない」という部分である。11条2項は、管轄の合意は「書面でしなければ、その効力を生じない。」と定めるが、同条3項は「第一項の合意がその内容を記録した電磁的記録によってされたときは、その合意は、書面によってされたものとみなして、前項の規定を適用する。」と定める。ウェブ上の申込みフォームによる合意は、その内容が電磁的記録に記録されてされた合意にあたると解されるから、書面による合意として効力を生じる。したがって、売買契約という一定の法律関係に基づく訴えについての合意として有効であり、当該合意を理由に東京簡易裁判所に訴えを提起することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "11",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "書面でしなければ、その効力を生じない。",
+     "text_sha256": "d112c06a4b13099945004a4b9349feac28ae0af80e4468dd139a1ae27c1b1910",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "11",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の合意がその内容を記録した電磁的記録によってされたときは、その合意は、書面によってされたものとみなして、前項の規定を適用する。",
+     "text_sha256": "d112c06a4b13099945004a4b9349feac28ae0af80e4468dd139a1ae27c1b1910",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "ウェブ上の申込みフォームによる合意が電磁的記録による合意にあたる点は解釈による。"
+   ],
+   "id": "exp-yobi-2023-minso-q31-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q31-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。損害賠償債務は債権者の住所で弁済すべき持参債務であり、義務履行地として原告（債権者）の住所地の裁判所に訴えを提起できる。",
+   "body": "決め手は、義務履行地の裁判籍である。5条1項は「次の各号に掲げる訴えは、それぞれ当該各号に定める地を管轄する裁判所に提起することができる。」と定め、財産権上の訴えについては義務履行地がその一つとされている。そして民法484条1項は、弁済をすべき場所について別段の意思表示がないときは、特定物の引渡し以外の弁済は「債権者の現在の住所において」しなければならないと定める。不法行為に基づく損害賠償債務は金銭債務であるから、その義務履行地は債権者である原告の住所地となり、原告の住所地を管轄する裁判所に訴えを提起することができる。なお、不法行為に関する訴えについては不法行為地の裁判籍も認められている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次の各号に掲げる訴えは、それぞれ当該各号に定める地を管轄する裁判所に提起することができる。",
+     "text_sha256": "c2240bb7ccbf715c63865e9c238385a966c81eb2eb605541720903d24b1a1807",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "484",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者の現在の住所において",
+     "text_sha256": "f5349d95a4743c7bd0cd6b3bf1eb4e70f8c43b7209930f3d3ced5ab11e6eb2bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "保存した民事訴訟法5条の本文には各号（義務履行地・不法行為地など）の文言が含まれていないため、号の文言は引用せず内容を地の文で述べた。"
+   ],
+   "id": "exp-yobi-2023-minso-q31-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q31-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。離婚の訴えは家庭裁判所の専属管轄に属するから、地方裁判所に提起された場合は管轄違いとして16条1項により家庭裁判所に移送すべきであり、却下しなければならないわけではない。",
+   "body": "決め手は「移送することはできず、当該訴えを却下しなければならない」という部分である。離婚の訴えは人事訴訟法2条1号の人事に関する訴えであり、同法4条1項により「家庭裁判所の管轄に専属する。」。したがって名古屋地方裁判所には管轄がない。民事訴訟法16条1項は「裁判所は、訴訟の全部又は一部がその管轄に属しないと認めるときは、申立てにより又は職権で、これを管轄裁判所に移送する。」と定めており、人事訴訟法29条1項はこの規定の適用を除外していない。そのため、地方裁判所に提起された離婚の訴えは、16条1項により管轄権のある家庭裁判所に移送すべきものと解されている。よって、却下しなければならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "離婚の訴え",
+     "text_sha256": "46b7eed1594490f7decba334e4d1801896fc1193ff300d199b3e299528795dac",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "家庭裁判所の管轄に専属する。",
+     "text_sha256": "9f3e1effff60b5119e164c6b071102247b36fc22c93bdd5c2ad60fd9ba984fba",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "29",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人事に関する訴えについては、民事訴訟法第三条の二から第三条の十まで、第百四十五条第三項及び第百四十六条第三項の規定は、適用しない。",
+     "text_sha256": "bf60030f4e9d2f1d95aaa4db48bee8fab80d9a007f4cb04955dc52cf15e433fd",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "16",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、訴訟の全部又は一部がその管轄に属しないと認めるときは、申立てにより又は職権で、これを管轄裁判所に移送する。",
+     "text_sha256": "677f8d00ee757427df499604947d2433f64a63799f1a44473f3431b5fce746e2",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "地方裁判所から家庭裁判所への移送に民事訴訟法16条1項が適用される点は解釈による。"
+   ],
+   "id": "exp-yobi-2023-minso-q31-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q31-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。応訴管轄は被告が口頭弁論で本案について弁論をしたときに生じるから、答弁書を提出しただけでは応訴管轄は生じない。",
+   "body": "決め手は「その時点で、応訴管轄が生じ」という部分である。12条は「被告が第一審裁判所において管轄違いの抗弁を提出しないで本案について弁論をし、又は弁論準備手続において申述をしたときは、その裁判所は、管轄権を有する。」と定める。応訴管轄が生じるのは、被告が口頭弁論において本案について弁論をし、又は弁論準備手続において申述をした時であり、答弁書を裁判所に提出しただけでは「本案について弁論」をしたことにはならないと解されている。したがって、答弁書の提出時点で応訴管轄が生じるとはいえず、被告はなお管轄違いを理由とする移送の申立てをすることができる。なお、被告が最初の口頭弁論期日に欠席し、158条により答弁書の記載事項を陳述したものとみなされた場合にも、応訴管轄は生じないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "12",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告が第一審裁判所において管轄違いの抗弁を提出しないで本案について弁論をし、又は弁論準備手続において申述をしたときは、その裁判所は、管轄権を有する。",
+     "text_sha256": "75f8d56ee368505dfe1ac9e02e64ab5a15598b33402eade659dde68f7fa27884",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "158",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その者が提出した訴状又は答弁書その他の準備書面に記載した事項を陳述したものとみなし",
+     "text_sha256": "4e64e7a8e7346d213381c6f1c1628ad39ce021ee16eca90dc536051bad2ddb29",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "答弁書の提出や158条の陳述擬制では応訴管轄が生じない点は解釈による。"
+   ],
+   "id": "exp-yobi-2023-minso-q31-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

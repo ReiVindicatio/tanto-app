@@ -1,0 +1,257 @@
+{
+ "question_id": "yobi-2023-shoho-q23",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q23-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。社債の規定は「会社」を主体としており、会社には持分会社（合名会社・合資会社・合同会社）も含まれるから、持分会社も社債を発行できる。",
+   "body": "会社法2条23号は、社債を「この法律の規定により会社が行う割当てにより発生する当該会社を債務者とする金銭債権」と定義し、同法676条も「会社は、その発行する社債を引き受ける者の募集をしようとするときは」と定めて、社債の発行主体を「会社」としている。そして同法2条1号は、会社を「株式会社、合名会社、合資会社又は合同会社をいう。」と定義している。したがって、株式会社に限らず、持分会社である合名会社・合資会社・合同会社も社債を発行することができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この法律の規定により会社が行う割当てにより発生する当該会社を債務者とする金銭債権",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社、合名会社、合資会社又は合同会社をいう。",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "676",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社は、その発行する社債を引き受ける者の募集をしようとするときは",
+     "text_sha256": "bb7f2b3d6a5371f98b77057b082fda745cf01ff72749f2215d3e99da12776c48",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q23-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q23-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。無記名社債とは「無記名式の社債券が発行されている社債」と定義されており、社債券の発行が前提となっている。",
+   "body": "会社法では、社債券を発行するかどうかは募集事項として定めるものとされ、同法676条6号は「社債券を発行するときは、その旨」を挙げている。そのうえで、同法681条4号は、無記名社債を「無記名式の社債券が発行されている社債」と定義している。つまり、無記名社債は無記名式の社債券によって表章される社債であり、社債券を発行しない無記名社債というものは存在しない。したがって、無記名社債については社債券を発行しなければならず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "676",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "社債券を発行するときは、その旨",
+     "text_sha256": "bb7f2b3d6a5371f98b77057b082fda745cf01ff72749f2215d3e99da12776c48",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "681",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "無記名式の社債券が発行されている社債",
+     "text_sha256": "b74008d660a2fb08b401f0a820ef1e2e7f86e01b2be371e66fef81d7c75c64a8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q23-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q23-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。新株予約権付社債は、一方が消滅した場合を除き、新株予約権のみ又は社債のみを分離して譲渡することはできない。",
+   "body": "誤りは、新株予約権又は社債の一方を他方から分離して譲渡「することができる」とする部分である。会社法254条2項は「新株予約権付社債に付された新株予約権のみを譲渡することはできない。」と定め、同条3項は「新株予約権付社債についての社債のみを譲渡することはできない。」と定めている。例外は、社債が消滅した場合や新株予約権が消滅した場合に限られる（同条2項・3項ただし書）。したがって、新株予約権付社債の新株予約権と社債は原則として分離して譲渡できず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "254",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "新株予約権付社債に付された新株予約権のみを譲渡することはできない。",
+     "text_sha256": "f2b8c6bafa3a8de82b6633290c2751310e07a98012b3e24066b46edf29835223",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "254",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "新株予約権付社債についての社債のみを譲渡することはできない。",
+     "text_sha256": "f2b8c6bafa3a8de82b6633290c2751310e07a98012b3e24066b46edf29835223",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q23-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q23-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。取締役の過半数が社外取締役である監査等委員会設置会社では、取締役会は重要な業務執行の決定を取締役に委任でき、募集社債の募集事項の決定は委任できない事項に含まれていない。",
+   "body": "誤りは、募集社債の募集事項の決定を取締役に委任「することができない」とする部分である。監査等委員会設置会社の取締役会は、原則として、会社法399条の13第4項により「第六百七十六条第一号に掲げる事項その他の社債を引き受ける者の募集に関する重要な事項として法務省令で定める事項」を含む重要な業務執行の決定を取締役に委任することができない。しかし同条5項は、「監査等委員会設置会社の取締役の過半数が社外取締役である場合には、当該監査等委員会設置会社の取締役会は、その決議によって、重要な業務執行の決定を取締役に委任することができる。」と定めている。同項ただし書で委任できない事項として列挙されているものに、募集社債の募集事項の決定は含まれていない。したがって、本肢の場合、取締役会はその決議によって募集社債の募集事項の決定を取締役に委任することができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "399_13",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "第六百七十六条第一号に掲げる事項その他の社債を引き受ける者の募集に関する重要な事項として法務省令で定める事項",
+     "text_sha256": "aa8667a259169b1009078f2762e98d90db0d39837b931913533bcfdc6db5981b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "399_13",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "監査等委員会設置会社の取締役の過半数が社外取締役である場合には、当該監査等委員会設置会社の取締役会は、その決議によって、重要な業務執行の決定を取締役に委任することができる。",
+     "text_sha256": "aa8667a259169b1009078f2762e98d90db0d39837b931913533bcfdc6db5981b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q23-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q23-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。募集社債の申込者は、会社から割当てを受けた時点でその募集社債の社債権者となり、払込みは社債権者となる要件ではない。",
+   "body": "誤りは、払込金額を払い込むことにより「払込みをした募集社債の社債権者となる」とする部分である。会社法680条は「次の各号に掲げる者は、当該各号に定める募集社債の社債権者となる。」とし、1号で申込者について「会社の割り当てた募集社債」と定めており、払込みを要件としていない。そのため、申込者は割当てによって社債権者となり、払込みの期日に払込みをすることは社債権者としての債務の履行にすぎないと解されている。これは、募集株式の引受人が出資の履行をして初めて株主となるとする同法209条1項の「出資の履行をした募集株式の株主となる」という規律と異なる点である。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "680",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次の各号に掲げる者は、当該各号に定める募集社債の社債権者となる。",
+     "text_sha256": "e9679cd2ba29800f26fff1d0e05ec4343f3366109b761c3bcc569be4c76de226",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "680",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社の割り当てた募集社債",
+     "text_sha256": "e9679cd2ba29800f26fff1d0e05ec4343f3366109b761c3bcc569be4c76de226",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "209",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "出資の履行をした募集株式の株主となる",
+     "text_sha256": "f651bd7a257888e21407c23d2ef17f8695263ccd127d872598523ecadd40d24c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "社債権者となる時期が割当て時であることは、680条の文言からの解釈による"
+   ],
+   "id": "exp-yobi-2023-shoho-q23-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

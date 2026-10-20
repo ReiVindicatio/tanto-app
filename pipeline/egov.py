@@ -83,6 +83,7 @@ LAWS = {
     "会計法": ("kaikei", "昭和二十二年法律第三十五号"),
     "公営住宅法": ("koeijutaku", "昭和二十六年法律第百九十三号"),
     "水道法": ("suido", "昭和三十二年法律第百七十七号"),
+    "破産法": ("hasan", "平成十六年法律第七十五号"),
     "住民基本台帳法": ("juki", "昭和四十二年法律第八十一号"),
     "出入国管理及び難民認定法": ("nyukan", "昭和二十六年政令第三百十九号"),
     "医療法": ("iryo", "昭和二十三年法律第二百五号"),
@@ -131,6 +132,12 @@ def parse_article(art: ET.Element) -> dict:
         lines = [texts(p.find("ParagraphSentence"), "Sentence")]
         for item in p.findall("Item"):
             lines += item_lines(item, "ItemTitle", "ItemSentence")
+        # 号が表（TableStruct）で書かれている条（民事訴訟法5条など）。1行ずつ、空でない列を全角空白でつなぐ（T039）
+        for ts in p.findall("TableStruct"):
+            for row in ts.iter("TableRow"):
+                cols = [texts(c, "Sentence").strip("　 ") for c in row.findall("TableColumn")]
+                if any(cols):
+                    lines.append("　".join(c for c in cols if c))
         paragraphs.append({"num": p.get("Num"), "text": "\n".join(lines)})
     body = "\n".join(p["text"] for p in paragraphs)
     return {

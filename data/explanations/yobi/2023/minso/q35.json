@@ -1,0 +1,281 @@
+{
+ "question_id": "yobi-2023-minso-q35",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q35-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、同居者と受送達者との間に事実上の利害関係の対立があるにすぎない場合でも、同居者への交付により補充送達の効力が生ずるとする。",
+   "body": "決め手は「事実上の利害関係の対立があるときであっても…送達の効力が生ずる」という部分である。106条1項は、送達をすべき場所で受送達者に出会わないときは「使用人その他の従業者又は同居者であって、書類の受領について相当のわきまえのあるものに書類を交付することができる。」と定め、補充送達を認めている。最高裁平成19年3月20日決定は、同居者等と受送達者との間にその訴訟に関して事実上の利害関係の対立があるにすぎない場合には、同居者等に書類が交付されれば受送達者に対する補充送達の効力が生ずると判示した。なお、同決定は、利害関係の対立のため書類が受送達者に交付されず、受送達者が訴訟の提起を知らないまま判決がされたときは、338条1項3号の再審事由（「法定代理権、訴訟代理権又は代理人が訴訟行為をするのに必要な授権を欠いたこと。」）があるとしており、送達の効力とは別の場面で救済を図っている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "106",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "使用人その他の従業者又は同居者であって、書類の受領について相当のわきまえのあるものに書類を交付することができる。",
+     "text_sha256": "33cf6a2dfbc8e9ab6130caf6cd68f3c7941e6dad6c4db50c70a527b5ba764b29",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "338",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法定代理権、訴訟代理権又は代理人が訴訟行為をするのに必要な授権を欠いたこと。",
+     "text_sha256": "edc12902b60510666e70496838c51b340a52879e532b7ee6f9e3c312e6e9543d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "再審請求棄却決定に対する抗告棄却決定に対する許可抗告事件",
+     "court": "最高裁判所第三小法廷",
+     "date": "2007-03-20",
+     "holding": "受送達者あての訴訟関係書類の交付を受けた同居者等と受送達者との間に、その訴訟に関して事実上の利害関係の対立があるにすぎない場合には、同居者等への交付により受送達者に対する補充送達の効力が生ずる。ただし、書類が受送達者に交付されず、受送達者が訴訟の提起を知らないまま判決がされたときは、民訴法338条1項3号の再審事由がある。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/34388/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2023-minso-q35-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q35-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。書留郵便等に付する送達は受送達者の住所等に宛ててすべきものであり、発送時に既に転居していた住民票上の住所に宛てて発送しても、送達の効力は生じないと解されている。",
+   "body": "決め手は「実際には発送時に既に受送達者が当該住所から転居していたときであっても…効力が生ずる」という部分である。107条1項1号は、103条の規定による送達をすべき場合には「同条第一項に定める場所」に宛てて書留郵便等に付して発送することができると定め、103条1項は送達場所を「送達を受けるべき者の住所、居所、営業所又は事務所」としている。107条3項は「その発送の時に、送達があったものとみなす。」と定めるが、この効果は、宛先が受送達者の住所等であることを前提とするものと解されている。住民票上の住所であっても、発送時に受送達者がそこから転居していれば、もはやその者の住所等ではないから、そこに宛てた書留郵便等に付する送達は適法な送達とならず、効力を生じないと解されている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "107",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百三条の規定による送達をすべき場合　同条第一項に定める場所",
+     "text_sha256": "e1c175e3e938c22a735b2d448d5417cbec905b281a4a4ab8bbfd02419412ac10",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "書類の送達は、送達を受けるべき者の住所、居所、営業所又は事務所（以下この款において「住所等」という。）においてする。",
+     "text_sha256": "e0f443c06835847497f405faee297a20549c87ce58fb52dc699b40c8f03ca784",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "107",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前二項の規定により書類を書留郵便等に付して発送した場合には、その発送の時に、送達があったものとみなす。",
+     "text_sha256": "e1c175e3e938c22a735b2d448d5417cbec905b281a4a4ab8bbfd02419412ac10",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "転居済みの住所に宛てた書留郵便等に付する送達が無効となる点は解釈による。これを直接判示した判例は確認していない。"
+   ],
+   "id": "exp-yobi-2023-minso-q35-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q35-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。訴訟代理人が数人あるときは各自が当事者を代理する（56条1項）から、送達はそのうちの一人にすれば足りると解されている。",
+   "body": "決め手は「その全員にしなければならない」という部分である。56条1項は「訴訟代理人が数人あるときは、各自当事者を代理する。」と定め、56条2項は「当事者が前項の規定と異なる定めをしても、その効力を生じない。」と定める。このように委任による訴訟代理人は個別代理が原則とされ、各代理人がそれぞれ単独で当事者を代理して送達を受領する権限を持つから、送達は数人の訴訟代理人のうちの一人にすれば足りると解されている。なお、法定代理人について数人が共同して代理権を行うべき場合にも、99条2項が「送達は、その一人にすれば足りる。」と定めている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "56",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟代理人が数人あるときは、各自当事者を代理する。",
+     "text_sha256": "6555d2f868e1f0d155d66d2c091b004fcb1227f8974c77fc22a584961a7c935b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "56",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当事者が前項の規定と異なる定めをしても、その効力を生じない。",
+     "text_sha256": "6555d2f868e1f0d155d66d2c091b004fcb1227f8974c77fc22a584961a7c935b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "99",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "送達は、その一人にすれば足りる。",
+     "text_sha256": "89e696d29e353ecde006fabd53c9f17ea59a39264b13b28a5cffe1db89d32898",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "数人の訴訟代理人のうち一人への送達で足りる点は、56条1項の個別代理からの解釈による。"
+   ],
+   "id": "exp-yobi-2023-minso-q35-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q35-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。110条1項により、公示送達は裁判所書記官が申立てによりすることができ、裁判長の許可は要件とされていない。",
+   "body": "決め手は「裁判長の許可の裁判を得て」という部分である。110条1項は、送達をすべき場所が知れない場合など同項各号に掲げる場合には「裁判所書記官は、申立てにより、公示送達をすることができる。」と定めており、裁判長の許可を要件としていない。公示送達は、裁判所書記官が自らの判断でする処分である。なお、110条2項は、訴訟の遅滞を避けるため必要があるときは、申立てがなくても裁判所が裁判所書記官に公示送達をすべきことを命ずることができると定めている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "110",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所書記官は、申立てにより、公示送達をすることができる。",
+     "text_sha256": "d449b6cb5f6572eed76e6f0bb842012d41c9d4d2f1f7b310eb45b9e9726c31b2",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "110",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の場合において、裁判所は、訴訟の遅滞を避けるため必要があると認めるときは、申立てがないときであっても、裁判所書記官に公示送達をすべきことを命ずることができる。",
+     "text_sha256": "d449b6cb5f6572eed76e6f0bb842012d41c9d4d2f1f7b310eb45b9e9726c31b2",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-minso-q35-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q35-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。373条3項3号により、公示送達によらなければ被告に対する最初の口頭弁論期日の呼出しができないときは、裁判所は通常の手続に移行させる決定をしなければならない。",
+   "body": "本肢は373条3項3号の内容どおりである。373条3項は、同項各号に掲げる場合には「裁判所は、訴訟を通常の手続により審理及び裁判をする旨の決定をしなければならない。」と定め、その3号に「公示送達によらなければ被告に対する最初にすべき口頭弁論の期日の呼出しをすることができないとき。」を挙げている。少額訴訟は一期日審理を原則とする簡易な手続であり、被告が期日を現実に知る見込みのない公示送達による呼出しとはなじまないため、必要的に通常の手続へ移行させる仕組みになっている。なお、この決定に対しては不服を申し立てることができない（373条4項）。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "373",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "裁判所は、訴訟を通常の手続により審理及び裁判をする旨の決定をしなければならない。",
+     "text_sha256": "763df9ed5c73c40962928b0b3f96973cf5a57d1236f57c7fbb487450c98cf7b5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "373",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "公示送達によらなければ被告に対する最初にすべき口頭弁論の期日の呼出しをすることができないとき。",
+     "text_sha256": "763df9ed5c73c40962928b0b3f96973cf5a57d1236f57c7fbb487450c98cf7b5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "373",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "前項の決定に対しては、不服を申し立てることができない。",
+     "text_sha256": "763df9ed5c73c40962928b0b3f96973cf5a57d1236f57c7fbb487450c98cf7b5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-minso-q35-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

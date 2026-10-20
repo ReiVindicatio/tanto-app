@@ -1,0 +1,257 @@
+{
+ "question_id": "yobi-2023-shoho-q24",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q24-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。契約の締結が要るのは株式交換だけであり、株式移転では株式移転計画を作成する。",
+   "body": "誤りは、株式移転についても「契約を締結しなければ」できないとする部分である。株式交換については、会社法767条が株式交換完全親会社「との間で、株式交換契約を締結しなければならない。」と定めている。これに対し、株式移転について同法772条1項は「株式移転計画を作成しなければならない。」と定めている。株式移転は、同法2条32号のとおり発行済株式の全部を「新たに設立する株式会社」に取得させるものであり、契約の相手方となる会社はまだ存在しないため、計画の作成によるとされている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "767",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "との間で、株式交換契約を締結しなければならない。",
+     "text_sha256": "ebc7c769f4af5745677bf5da3eaa927ac972621e03669458ff86bfc9ff700bc9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "772",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式移転計画を作成しなければならない。",
+     "text_sha256": "274e6761cdc0d1eb90222e37d49e124af8834ff98d95059a6a16c3d5f736cfc1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式移転　一又は二以上の株式会社がその発行済株式の全部を新たに設立する株式会社に取得させることをいう。",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q24-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q24-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株式移転設立完全親会社は株式会社に限られるが、株式交換完全親会社は合同会社でもよい。",
+   "body": "誤りは、株式交換完全親会社も「株式会社であることを要する」とする部分である。会社法2条31号は、株式交換を、株式会社がその発行済株式の全部を「他の株式会社又は合同会社に取得させることをいう。」と定義し、同法767条も株式交換完全親会社を「株式会社又は合同会社に限る。」としている。これに対し、同法2条32号は、株式移転を発行済株式の全部を「新たに設立する株式会社に取得させることをいう。」と定義しているから、株式移転設立完全親会社は株式会社でなければならない。したがって、株式交換完全親会社については合同会社も認められ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の株式会社又は合同会社に取得させることをいう。",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "767",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社又は合同会社に限る。",
+     "text_sha256": "ebc7c769f4af5745677bf5da3eaa927ac972621e03669458ff86bfc9ff700bc9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "新たに設立する株式会社に取得させることをいう。",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q24-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q24-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。株式移転は発行済株式の「全部」を新設会社に取得させるものであり、一部だけを取得させる株式移転はできない。",
+   "body": "会社法2条32号は、株式移転を「一又は二以上の株式会社がその発行済株式の全部を新たに設立する株式会社に取得させることをいう。」と定義している。株式移転は完全親子会社関係をつくる制度であり、株式移転設立完全親会社は株式移転完全子会社の発行済株式の全部を取得することになる。発行済株式の一部のみを取得させるものは、この定義にあたらない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一又は二以上の株式会社がその発行済株式の全部を新たに設立する株式会社に取得させることをいう。",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q24-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q24-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。株式交換では対価の交付自体が任意的な定めとされているのに対し、株式移転では設立完全親会社の株式の交付が必要的な定めとされている。",
+   "body": "株式交換について、会社法768条1項2号は、株式交換完全親株式会社が株式交換完全子会社の株主に対して「その株式に代わる金銭等を交付するときは」その内容を定めるとしており、対価を交付するかどうか、交付するとして何を交付するかは任意とされている。そのため、株式交換完全親会社の株式を交付しないこと（金銭等のみを交付すること、又は対価を交付しないこと）もできると解されている。これに対し、株式移転について同法773条1項5号は、株式移転計画で必ず定める事項として、株式移転完全子会社の株主に対して「交付するその株式に代わる当該株式移転設立完全親会社の株式の数」を挙げている。社債等の交付は同項7号で「交付するときは」とされ任意であるが、株式の交付は省くことができない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "768",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式交換完全親株式会社が株式交換に際して株式交換完全子会社の株主に対してその株式に代わる金銭等を交付するときは、当該金銭等についての次に掲げる事項",
+     "text_sha256": "00cf5b6015b49a524e428d8a7c1477d44d18d190d03bfc6f2fd8db990d03c4e5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "773",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式移転設立完全親会社が株式移転に際して株式移転をする株式会社（以下この編において「株式移転完全子会社」という。）の株主に対して交付するその株式に代わる当該株式移転設立完全親会社の株式の数",
+     "text_sha256": "f6617fd16ad08e9ced22af9b25cdddc003fc9ccd1182e3842f58d83911ee99a3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "773",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式移転設立完全親会社が株式移転に際して株式移転完全子会社の株主に対してその株式に代わる当該株式移転設立完全親会社の社債等を交付するときは",
+     "text_sha256": "f6617fd16ad08e9ced22af9b25cdddc003fc9ccd1182e3842f58d83911ee99a3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "株式交換で完全親会社の株式を交付しないことができる点は、768条1項2号の「交付するときは」の文言からの解釈による"
+   ],
+   "id": "exp-yobi-2023-shoho-q24-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q24-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株式交換契約新株予約権が新株予約権付社債に付されたものである場合、その社債権者は株式交換完全子会社に対して異議を述べることができる。",
+   "body": "誤りは「異議を述べることはできない」とする部分である。会社法789条1項3号は、「株式交換契約新株予約権が新株予約権付社債に付された新株予約権である場合」には、「当該新株予約権付社債についての社債権者」が異議を述べることができると定めている。この場合、同法768条1項4号ハのとおり、株式交換完全親株式会社が「当該新株予約権付社債についての社債に係る債務を承継する」ことになり、社債の債務者が交替するため、社債権者に異議の機会が与えられている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "789",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式交換契約新株予約権が新株予約権付社債に付された新株予約権である場合　当該新株予約権付社債についての社債権者",
+     "text_sha256": "ce1e755541d2c2507d2f9e000bcee08adee7edc5f9cc6ed442c128bf32cecd8b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "768",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式交換完全親株式会社が当該新株予約権付社債についての社債に係る債務を承継する旨",
+     "text_sha256": "00cf5b6015b49a524e428d8a7c1477d44d18d190d03bfc6f2fd8db990d03c4e5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q24-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

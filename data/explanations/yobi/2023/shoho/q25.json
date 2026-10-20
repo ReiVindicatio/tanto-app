@@ -1,0 +1,245 @@
+{
+ "question_id": "yobi-2023-shoho-q25",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q25-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株主総会決議取消しの訴えの提訴期間は、決議の日から1年ではなく3か月以内である。",
+   "body": "誤りは「１年以内」とする部分である。会社法831条1項は、株主等は「株主総会等の決議の日から三箇月以内に、訴えをもって当該決議の取消しを請求することができる。」と定めている。したがって、決議の日から3か月を過ぎると決議取消しの訴えは提起できず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "831",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会等の決議の日から三箇月以内に、訴えをもって当該決議の取消しを請求することができる。",
+     "text_sha256": "1815496dd41025d1456cafbdd01882a64334f77e056c1a04b566f23536942c16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q25-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q25-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株主総会決議不存在確認の訴えの被告は当該株式会社であり、決議の存在を主張する株主を被告とすることはできない。",
+   "body": "誤りは、決議の存在を主張している「株主を被告として」提起できるとする部分である。会社法834条は、会社の組織に関する訴えについて「当該各号に定める者を被告とする。」と定め、同条16号は、株主総会等の決議が存在しないことの確認の訴えについて、被告を「当該株式会社」としている。したがって、被告となるのは株式会社であり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "834",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該各号に定める者を被告とする。",
+     "text_sha256": "b9ec18c29c714b3875ebe6b6556166976d4123088dd30445292e2e17ad8b773c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "834",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会等の決議が存在しないこと又は株主総会等の決議の内容が法令に違反することを理由として当該決議が無効であることの確認の訴え　当該株式会社",
+     "text_sha256": "b9ec18c29c714b3875ebe6b6556166976d4123088dd30445292e2e17ad8b773c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q25-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q25-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株主総会決議無効確認の訴えは、被告会社の本店所在地を管轄する地方裁判所の専属管轄であり、支店所在地の地方裁判所には提起できない。",
+   "body": "誤りは「支店の所在地を管轄する地方裁判所にも」提起できるとする部分である。株主総会決議無効確認の訴えは、会社法834条16号に掲げられた会社の組織に関する訴えである。同法835条1項は、「会社の組織に関する訴えは、被告となる会社の本店の所在地を管轄する地方裁判所の管轄に専属する。」と定めている。専属管轄であるから、支店の所在地を管轄する地方裁判所に提起することはできず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "835",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社の組織に関する訴えは、被告となる会社の本店の所在地を管轄する地方裁判所の管轄に専属する。",
+     "text_sha256": "6b81f357b4853375f01f70ca8630c0f7b78bfe830115e6d737cabb41fbb0c919",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "834",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会等の決議が存在しないこと又は株主総会等の決議の内容が法令に違反することを理由として当該決議が無効であることの確認の訴え　当該株式会社",
+     "text_sha256": "b9ec18c29c714b3875ebe6b6556166976d4123088dd30445292e2e17ad8b773c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q25-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q25-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株主代表訴訟で追及できる役員等の責任は423条1項の任務懈怠責任に限られず、判例上、取締役が会社との取引によって負担した債務についての責任も含まれる。",
+   "body": "誤りは、423条1項に基づく損害賠償請求権を訴訟物とするもの「でなければならない」とする部分である。会社法847条1項は、株主が提起を請求できる訴えとして役員等の「責任を追及する訴え」を挙げており、その責任を423条1項の「その任務を怠ったときは、株式会社に対し、これによって生じた損害を賠償する責任」に限定する文言はない。また、同項は、役員等の責任を追及する訴えのほか、一定の支払や利益の返還を求める訴えも「責任追及等の訴え」に含めている。判例は、平成17年改正前の商法の株主代表訴訟の対象となる取締役の責任には、取締役が会社との取引によって負担することになった債務についての責任も含まれるとしており、現行の会社法847条1項についても同様に解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "847",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "責任を追及する訴え",
+     "text_sha256": "7ef6991ab0a888053685d713579be6d967f82c4594f0fc3d8778bb01c1460b55",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "847",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "責任追及等の訴え",
+     "text_sha256": "7ef6991ab0a888053685d713579be6d967f82c4594f0fc3d8778bb01c1460b55",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その任務を怠ったときは、株式会社に対し、これによって生じた損害を賠償する責任を負う。",
+     "text_sha256": "0a7329bc93caa7819913258f61953dfd11dd902a080800aa28a5decfb9c6d85a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "所有権移転登記手続請求事件（平成19年(受)第799号）",
+     "court": "最高裁判所第三小法廷",
+     "date": "2009-03-10",
+     "holding": "平成17年改正前商法267条1項の株主代表訴訟の対象となる「取締役ノ責任」には、取締役の地位に基づく責任のほか、取締役が会社との取引によって負担することになった債務についての責任も含まれる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/37404/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は平成17年改正前商法267条1項についてのもの。現行の会社法847条1項にも同様に及ぶことは解釈による"
+   ],
+   "id": "exp-yobi-2023-shoho-q25-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q25-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。監査役設置会社が取締役であった者に対して訴えを提起する場合は、訴えの種類を問わず監査役が会社を代表する。",
+   "body": "会社法386条1項1号は、「監査役設置会社が取締役（取締役であった者を含む。以下この条において同じ。）に対し、又は取締役が監査役設置会社に対して訴えを提起する場合」には、その訴えについて「監査役が監査役設置会社を代表する。」と定めている。この規定は、訴えの種類を役員等の責任追及に限っていないから、貸金返還請求の訴えにも適用される。また、取締役であった者も含まれる。公開会社である監査役設置会社では監査役の監査の範囲を会計に関するものに限定できないため、本肢の会社では同条がそのまま適用されると解される。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "386",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "監査役設置会社が取締役（取締役であった者を含む。以下この条において同じ。）に対し、又は取締役が監査役設置会社に対して訴えを提起する場合",
+     "text_sha256": "6acc2c0ed7e96a3c30f7159de3f187b579e8d64b721d584e58ad8751b5866144",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "386",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "監査役が監査役設置会社を代表する。",
+     "text_sha256": "6acc2c0ed7e96a3c30f7159de3f187b579e8d64b721d584e58ad8751b5866144",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "公開会社で監査範囲の限定ができない点（389条1項）は条文を引用していない。肢の「公開会社」の意味づけは解釈による"
+   ],
+   "id": "exp-yobi-2023-shoho-q25-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

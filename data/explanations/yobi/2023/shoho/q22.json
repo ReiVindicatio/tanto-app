@@ -1,0 +1,255 @@
+{
+ "question_id": "yobi-2023-shoho-q22",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q22-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。指名委員会等設置会社の取締役会は、法定の除外事項を除き業務執行の決定を執行役に委任でき、募集株式の発行・多額の借財・重要な使用人の選任及び解任は除外事項に含まれていない。",
+   "body": "会社法416条1項は、指名委員会等設置会社の取締役会の職務について「第三百六十二条の規定にかかわらず」と定めており、重要な業務執行の決定の委任を禁じる362条4項の規律はそのまま適用されない。そのうえで同法416条4項は、「指名委員会等設置会社の取締役会は、その決議によって、指名委員会等設置会社の業務執行の決定を執行役に委任することができる。」と定め、ただし書で委任できない事項を各号に列挙している。この列挙には、株主総会に提出する議案の内容の決定、執行役の選任・解任、合併契約の内容の決定などが挙げられているが、募集株式の発行、多額の借財、支配人その他の重要な使用人の選任及び解任は含まれていない。したがって、これらの決定は取締役会の決議によって執行役に委任することができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "416",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三百六十二条の規定にかかわらず",
+     "text_sha256": "bf5a36ceafbacef120a250d476286f26398b926be80addefcad468bcd7a40d1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "416",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "指名委員会等設置会社の取締役会は、その決議によって、指名委員会等設置会社の業務執行の決定を執行役に委任することができる。",
+     "text_sha256": "bf5a36ceafbacef120a250d476286f26398b926be80addefcad468bcd7a40d1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "362",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "取締役会は、次に掲げる事項その他の重要な業務執行の決定を取締役に委任することができない。",
+     "text_sha256": "0c2c40d6cd0d3a3ae0a6e3f00a33298453cecc241308ad598ed1bbbbaf153799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q22-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q22-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。指名委員会等設置会社の取締役が兼ねられないのは支配人その他の使用人であり、執行役は兼ねることができる。",
+   "body": "誤りは、取締役が「執行役」を兼ねることができないとする部分である。会社法331条4項は「指名委員会等設置会社の取締役は、当該指名委員会等設置会社の支配人その他の使用人を兼ねることができない。」と定めており、使用人との兼任は禁じられている。これに対し、同法402条6項は「執行役は、取締役を兼ねることができる。」と定めている。したがって、取締役が執行役を兼ねることは認められており、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "331",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "指名委員会等設置会社の取締役は、当該指名委員会等設置会社の支配人その他の使用人を兼ねることができない。",
+     "text_sha256": "efd945351abf4f2bc71a6d6346b8558854d58983c43540d7c48f20b7f8bdc7ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "402",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "執行役は、取締役を兼ねることができる。",
+     "text_sha256": "2b193266ef6661a33312d21bccc90f3ad53d1070f19779e3bd80e58c699cd271",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q22-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q22-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。執行役の選任・解任は取締役会の決議によるのであり、指名委員会の権限は株主総会に提出する取締役の選任・解任議案の内容の決定である。",
+   "body": "誤りは、指名委員会が執行役の選任及び解任を決定する権限を有するとする部分である。会社法404条1項は、指名委員会の権限を「株主総会に提出する取締役（会計参与設置会社にあっては、取締役及び会計参与）の選任及び解任に関する議案の内容を決定する。」と定めるにとどまる。執行役については、同法402条2項が「執行役は、取締役会の決議によって選任する。」とし、同法403条1項が「執行役は、いつでも、取締役会の決議によって解任することができる。」としている。したがって、執行役の選任・解任は取締役会の権限であり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "404",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会に提出する取締役（会計参与設置会社にあっては、取締役及び会計参与）の選任及び解任に関する議案の内容を決定する。",
+     "text_sha256": "138d2352d06b181e2ed8ddd2cf7a5b54947bb05e93f29184d3decc31ab07f3e9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "402",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "執行役は、取締役会の決議によって選任する。",
+     "text_sha256": "2b193266ef6661a33312d21bccc90f3ad53d1070f19779e3bd80e58c699cd271",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "403",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "執行役は、いつでも、取締役会の決議によって解任することができる。",
+     "text_sha256": "e7722c945e638aaa97234d723a3a780940e7203e46bd8aa08ea253c1f2cf203a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q22-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q22-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。指名委員会等設置会社では、報酬委員会が361条1項にかかわらず取締役を含む執行役等の個人別の報酬等の内容を決定するため、株主総会の決議は要しない。",
+   "body": "会社法404条3項は、「報酬委員会は、第三百六十一条第一項並びに第三百七十九条第一項及び第二項の規定にかかわらず、執行役等の個人別の報酬等の内容を決定する。」と定める。ここでいう執行役等には取締役が含まれる（同条2項1号で「執行役及び取締役をいい」と定義されている）。そして、取締役の報酬等を定款又は株主総会の決議で定めるとする361条1項は、指名委員会等設置会社ではこの規定によって排除される。したがって、取締役の個人別の報酬の内容は報酬委員会が決定し、株主総会の決議によって定めることを要しないから、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "404",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "報酬委員会は、第三百六十一条第一項並びに第三百七十九条第一項及び第二項の規定にかかわらず、執行役等の個人別の報酬等の内容を決定する。",
+     "text_sha256": "138d2352d06b181e2ed8ddd2cf7a5b54947bb05e93f29184d3decc31ab07f3e9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "404",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "執行役及び取締役をいい",
+     "text_sha256": "138d2352d06b181e2ed8ddd2cf7a5b54947bb05e93f29184d3decc31ab07f3e9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "361",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "定款に当該事項を定めていないときは、株主総会の決議によって定める。",
+     "text_sha256": "0dc5f0cfa1ef159dfa73d9c052da62f184e954d55cfe089ec6c6ca147748ec57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q22-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-shoho-q22-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。指名委員会等設置会社は、公開会社か否か、大会社か否かにかかわらず、会計監査人を置かなければならない。",
+   "body": "誤りは、公開会社でも大会社でもない指名委員会等設置会社は会計監査人を置くことを「要しない」とする部分である。会社法327条5項は「監査等委員会設置会社及び指名委員会等設置会社は、会計監査人を置かなければならない。」と定めており、公開会社であるか、大会社であるかによる区別を設けていない。したがって、指名委員会等設置会社であれば常に会計監査人の設置が必要であり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "327",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "監査等委員会設置会社及び指名委員会等設置会社は、会計監査人を置かなければならない。",
+     "text_sha256": "5a773ce772b81078bdf955298b8ce400edd7c0d886c414d3e6afc8c64f2bdd73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-shoho-q22-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,237 @@
+{
+ "question_id": "yobi-2023-minso-q36",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q36-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、通謀虚偽表示を理由とする登記請求の認容判決は、口頭弁論終結後に被告から善意で目的物を譲り受けた第三者には及ばないとする。",
+   "body": "決め手は「この判決の効力は、Ｚにも及び、Ｚは…善意無過失の第三者であることを主張することはできない」という部分である。115条1項3号は、確定判決の効力が及ぶ者として「前二号に掲げる者の口頭弁論終結後の承継人」を挙げる。しかし、民法94条2項は「前項の規定による意思表示の無効は、善意の第三者に対抗することができない。」と定めており、善意の第三者Ｚは、前訴の当事者Ｙの地位とは別に、自己固有の法的地位に基づいて所有権を取得する。最高裁昭和48年6月21日判決は、通謀虚偽表示による登記名義を回復するための登記手続請求訴訟で被告に対する請求を認容した確定判決の効力は、口頭弁論終結後に被告から善意で目的物を譲り受けた第三者には及ばないと判示した。したがって、Ｚは判決の効力を受けず、Ｘに対し善意の第三者であることを主張できるから、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二号に掲げる者の口頭弁論終結後の承継人",
+     "text_sha256": "4cd8790c0a15a6de1c5356b0aa7a8ee3d090bc4348db553dd1f1a921da012ee1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "94",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定による意思表示の無効は、善意の第三者に対抗することができない。",
+     "text_sha256": "105c9d4fbb68ec2579ae06b999f43358ff5b9d704b76cbbd85fa434cca25e16d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "所有権確認等請求事件",
+     "court": "最高裁判所第一小法廷",
+     "date": "1973-06-21",
+     "holding": "通謀虚偽表示による登記名義を真正なものに回復するための登記手続請求訴訟において、被告に対する請求を認容した確定判決の効力は、口頭弁論終結後に被告から善意で目的物を譲り受けた第三者には及ばない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52079/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例の事案は真正な登記名義の回復を原因とする所有権移転登記手続請求で、本肢の抹消登記手続請求とは請求の形が異なるが、善意の第三者に判決効が及ばないという判断の趣旨は同じと考えられる。"
+   ],
+   "id": "exp-yobi-2023-minso-q36-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q36-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。口頭弁論終結前に通謀虚偽表示で登記名義を得たにすぎないＺは、当事者Ｙのために目的物を所持する者（115条1項4号）に準じて、判決の効力が及ぶと解されている。",
+   "body": "決め手は、Ｚが口頭弁論終結「前」に登記名義を得ているが、その原因が通謀虚偽表示であるという点である。Ｚは口頭弁論終結前に登記を得ているから、115条1項3号の「前二号に掲げる者の口頭弁論終結後の承継人」には当たらない。もっとも、115条1項4号は「前三号に掲げる者のために請求の目的物を所持する者」にも確定判決の効力が及ぶと定めている。Ｙとの通謀虚偽表示によって登記名義を得たにすぎないＺは、実質的な権利を持たず、Ｙのために名義を保有しているにすぎないから、目的物の所持者に準ずるものとして、4号の類推により判決の効力が及ぶと解されている（判例あり（要確認））。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二号に掲げる者の口頭弁論終結後の承継人",
+     "text_sha256": "4cd8790c0a15a6de1c5356b0aa7a8ee3d090bc4348db553dd1f1a921da012ee1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前三号に掲げる者のために請求の目的物を所持する者",
+     "text_sha256": "4cd8790c0a15a6de1c5356b0aa7a8ee3d090bc4348db553dd1f1a921da012ee1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "115条1項4号の類推で判決効が及ぶとする点は解釈による。これに沿う裁判例（下級審）があるとされるが、裁判所の裁判例検索で判決そのものを確認できなかったため、判例あり（要確認）とした。"
+   ],
+   "id": "exp-yobi-2023-minso-q36-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q36-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。破産管財人は破産者のために原告となった者に当たるから、115条1項2号により、判決の効力は破産者Ｚにも及ぶ。",
+   "body": "決め手は、破産管財人が破産財団に属する破産者の権利について訴訟を追行している点である。115条1項2号は、確定判決の効力が及ぶ者として「当事者が他人のために原告又は被告となった場合のその他人」を挙げる。破産財団に関する訴訟では破産管財人が当事者となり、破産者に帰属する権利について訴訟を追行するから、破産管財人は法律の規定により他人（破産者）のために当事者となる者（法定訴訟担当）に当たると解されている。したがって、破産管財人Ｘの請求を棄却する確定判決の効力は、権利の帰属主体である破産者Ｚにも及ぶから、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が他人のために原告又は被告となった場合のその他人",
+     "text_sha256": "4cd8790c0a15a6de1c5356b0aa7a8ee3d090bc4348db553dd1f1a921da012ee1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "破産管財人を法定訴訟担当と位置づける点は解釈による。破産法は保存済みの法令にないため、破産法の条文は引用していない。"
+   ],
+   "id": "exp-yobi-2023-minso-q36-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q36-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。受寄者Ｚは当事者Ｙのために請求の目的物を所持する者（115条1項4号）に当たり、所持の開始が口頭弁論終結前であっても判決の効力が及ぶ。",
+   "body": "決め手は「Ｚには及ばない」という部分である。115条1項4号は、確定判決の効力が及ぶ者として「前三号に掲げる者のために請求の目的物を所持する者」を挙げる。寄託契約に基づいて動産を預かっている受寄者Ｚは、自己の利益のためではなく寄託者Ｙのために目的物を所持している者であり、4号の所持者に当たる。4号は3号と異なり「口頭弁論終結後」という限定を置いていないから、所持の開始が口頭弁論終結前であっても判決の効力が及ぶと解されている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前三号に掲げる者のために請求の目的物を所持する者",
+     "text_sha256": "4cd8790c0a15a6de1c5356b0aa7a8ee3d090bc4348db553dd1f1a921da012ee1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二号に掲げる者の口頭弁論終結後の承継人",
+     "text_sha256": "4cd8790c0a15a6de1c5356b0aa7a8ee3d090bc4348db553dd1f1a921da012ee1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "受寄者が4号の所持者に当たり、所持の開始時期を問わないとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2023-minso-q36-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2023-minso-q36-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。認知無効の訴えは人事訴訟であり、人事訴訟法24条1項により、その確定判決は第三者であるＺにも効力を有する。",
+   "body": "決め手は、本件訴えが人事訴訟であり、確定判決に対世効があるという点である。人事訴訟法2条は、人事訴訟の対象として「嫡出否認の訴え、認知の訴え、認知の無効及び取消しの訴え」などを挙げており、認知無効の訴えは人事訴訟に当たる。そして人事訴訟法24条1項は「人事訴訟の確定判決は、民事訴訟法第百十五条第一項の規定にかかわらず、第三者に対してもその効力を有する。」と定めている。この効力は請求を棄却する判決にも及ぶから、Ｘの請求を棄却した確定判決の効力は、Ｘの推定相続人であるＺにも及ぶ。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "嫡出否認の訴え、認知の訴え、認知の無効及び取消しの訴え",
+     "text_sha256": "46b7eed1594490f7decba334e4d1801896fc1193ff300d199b3e299528795dac",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "24",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人事訴訟の確定判決は、民事訴訟法第百十五条第一項の規定にかかわらず、第三者に対してもその効力を有する。",
+     "text_sha256": "92948f373a5df4473480b4cd692e186aa8ee341388d9a4f5813677080a418898",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2023-minso-q36-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
