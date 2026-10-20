@@ -1,0 +1,257 @@
+{
+ "question_id": "yobi-2021-shoho-q16",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q16-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。定款の認証の手数料は、定款に記載・記録しなくても効力を生じる設立費用から除かれており、成立後の株式会社が負担する。",
+   "body": "会社法28条柱書は、同条各号の事項は定款に「記載し、又は記録しなければ、その効力を生じない」と定め、4号で「株式会社の負担する設立に関する費用（定款の認証の手数料その他株式会社に損害を与えるおそれがないものとして法務省令で定めるものを除く。）」を掲げる。このように、定款の認証の手数料は、定款への記載・記録がなければ会社の負担とならない設立費用から明文で除かれている。これは、金額が客観的に定まり、会社に損害を与えるおそれがないためと解されている。したがって、定款の認証の手数料は、定款に記載又は記録がなくても成立後の株式会社が負担するから、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "記載し、又は記録しなければ、その効力を生じない",
+     "text_sha256": "c17153849721f5c211cd336ec0e945cfc4169b6398ad8e16ed029e96e762e1dc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社の負担する設立に関する費用（定款の認証の手数料その他株式会社に損害を与えるおそれがないものとして法務省令で定めるものを除く。）",
+     "text_sha256": "c17153849721f5c211cd336ec0e945cfc4169b6398ad8e16ed029e96e762e1dc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "除外の理由（会社に損害を与えるおそれがないこと）の説明は解釈による"
+   ],
+   "id": "exp-yobi-2021-shoho-q16-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q16-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、定款に記載のない財産引受けは、会社成立後に株主総会の特別決議で承認しても有効にならないとしている。",
+   "body": "誤りは、成立後の株式会社が追認すれば遡って有効に「なる」とする部分である。会社法28条は、2号の「株式会社の成立後に譲り受けることを約した財産及びその価額並びにその譲渡人の氏名又は名称」（財産引受け）について、定款に「記載し、又は記録しなければ、その効力を生じない」と定める。最高裁判所第一小法廷昭和28年12月3日判決は、定款に記載のない財産引受けは、たとえ会社成立後に株主総会が特別決議をもってこれを承認しても有効にはならないとし、その無効は会社側だけでなく譲渡人も主張できるとした。この判例は旧商法下のものであるが、定款に記載・記録しなければ効力を生じないとする構造は現行の会社法でも同じであり、本肢はその趣旨に反する。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社の成立後に譲り受けることを約した財産及びその価額並びにその譲渡人の氏名又は名称",
+     "text_sha256": "c17153849721f5c211cd336ec0e945cfc4169b6398ad8e16ed029e96e762e1dc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "記載し、又は記録しなければ、その効力を生じない",
+     "text_sha256": "c17153849721f5c211cd336ec0e945cfc4169b6398ad8e16ed029e96e762e1dc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "定款に記載のない財産引受けの効力（昭和26年(オ)第510号）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1953-12-03",
+     "holding": "定款に記載のない財産引受けは、会社成立後に株主総会が特別決議をもって承認しても有効とならない。財産引受けが無効である場合、譲渡人もその無効を主張できる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56064/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は旧商法下の事案。現行の会社法28条2号でも同じ趣旨が及ぶとする点は解釈による"
+   ],
+   "id": "exp-yobi-2021-shoho-q16-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q16-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。発起人が割当てを受ける設立時発行株式の数を定款外で定めるには、発起人の過半数ではなく全員の同意が必要である。",
+   "body": "誤りは、発起人の「過半数の同意を得れば足りる」とする部分である。会社法32条1項は「発起人は、株式会社の設立に際して次に掲げる事項（定款に定めがある事項を除く。）を定めようとするときは、その全員の同意を得なければならない。」と定め、1号に「発起人が割当てを受ける設立時発行株式の数」を掲げる。したがって、定款に定めがないまま各発起人が割当てを受ける設立時発行株式の数を定めるには、発起人全員の同意が必要であり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "32",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "発起人は、株式会社の設立に際して次に掲げる事項（定款に定めがある事項を除く。）を定めようとするときは、その全員の同意を得なければならない。",
+     "text_sha256": "5ef138638c7c1ab027cfa8541401116e4345fe772812884a948b3990554845f6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "32",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "発起人が割当てを受ける設立時発行株式の数",
+     "text_sha256": "5ef138638c7c1ab027cfa8541401116e4345fe772812884a948b3990554845f6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q16-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q16-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。発起人が設立時発行株式の株主となるのは、払込みの時ではなく株式会社の成立の時である。",
+   "body": "誤りは、出資に係る金銭の全額を「払い込んだ時に」株主となるとする部分である。会社法34条1項は、発起人は引き受けた設立時発行株式につき「その出資に係る金銭の全額を払い込み」、又は金銭以外の財産の全部を給付しなければならないと定めるが、これは出資の履行の義務を定めたものである。株主となる時期については、同法50条1項が「発起人は、株式会社の成立の時に、出資の履行をした設立時発行株式の株主となる。」と定めている。株式会社は設立の登記によって成立するまでは存在しないから、払込みをしただけでは株主にならない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "34",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その出資に係る金銭の全額を払い込み",
+     "text_sha256": "d0a32d770d2e47f4524cda9a5d09f6a0bb0caec5f969c4795541fbbb01d03d56",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "50",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "発起人は、株式会社の成立の時に、出資の履行をした設立時発行株式の株主となる。",
+     "text_sha256": "a1a6f745881d5bcb9012726dad4227c6f58c2819453197ccc936c58cb55b71bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q16-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2021-shoho-q16-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。設立時取締役を発起人に限る規定はなく、発起人でない者も設立時取締役に選任されうる。",
+   "body": "会社法38条1項は「発起人は、出資の履行が完了した後、遅滞なく、設立時取締役（株式会社の設立に際して取締役となる者をいう。以下同じ。）を選任しなければならない。」と定め、選任の主体を発起人としているが、選任される者を発起人に限定していない。設立時取締役になれない者は、同法39条4項により、同法331条1項などの規定により成立後の株式会社の取締役となることができない者とされているにとどまり、発起人でないことはその事由に含まれていない。さらに、同法331条2項本文は「株式会社は、取締役が株主でなければならない旨を定款で定めることができない。」としており、取締役は株主（発起人は成立時に株主となる者）であることを要しないのが原則である。したがって、発起人でない者も設立時取締役になることができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "38",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "発起人は、出資の履行が完了した後、遅滞なく、設立時取締役（株式会社の設立に際して取締役となる者をいう。以下同じ。）を選任しなければならない。",
+     "text_sha256": "977f81e0835482e64f1312133814186fde220e548b1c26fb1e52cff6d3b3e751",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "39",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "第三百三十一条第一項（第三百三十五条第一項において準用する場合を含む。）、第三百三十三条第一項若しくは第三項又は第三百三十七条第一項若しくは第三項の規定により成立後の株式会社の取締役",
+     "text_sha256": "dde5f6dbea4442c3a94f17b1d6c67cea78a17d296bd34565ef92101cfe646ed6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "331",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株式会社は、取締役が株主でなければならない旨を定款で定めることができない。",
+     "text_sha256": "efd945351abf4f2bc71a6d6346b8558854d58983c43540d7c48f20b7f8bdc7ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2021-shoho-q16-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
