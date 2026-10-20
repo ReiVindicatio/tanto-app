@@ -1,0 +1,216 @@
+{
+ "question_id": "yobi-2026-keiho-q10",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-keiho-q10-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。幇助犯は正犯に従属して成立するから、幇助行為を終えただけでは足りず、正犯者が実行に着手したことが必要である。",
+   "body": "誤りは「正犯者が実行に着手したことまでは必要ない」とする点である。刑法62条1項は「正犯を幇助した者は、従犯とする。」と定め、63条は「従犯の刑は、正犯の刑を減軽する。」として、従犯（幇助犯）の処罰を正犯の存在に結び付けている。このため、幇助犯が成立するには、幇助行為に加えて、正犯者が少なくとも実行に着手したことが必要であると解されている（共犯の従属性）。窃盗罪の幇助犯についても、正犯者が窃盗の実行に着手しなければ幇助犯は成立しないから、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "62",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正犯を幇助した者は、従犯とする。",
+     "text_sha256": "64542fa2877f533ec2c244692d3bfc7ec33145f64b8ee8b1bca58a4cc77c6bf4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "63",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "従犯の刑は、正犯の刑を減軽する。",
+     "text_sha256": "5f7ba614d446e91aa5dd1dddf98f5cd2e1968e4607a8390b0bad42d71ba597b7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "正犯の実行の着手を要する点は、共犯の従属性に関する一般的な理解による（解釈による）。"
+   ],
+   "id": "exp-yobi-2026-keiho-q10-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-keiho-q10-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。助言により犯行の決意を生じさせれば教唆犯、既に犯行を決意している者の決意を強固にして犯行を容易にすれば幇助犯（精神的幇助）となる。",
+   "body": "決め手は、教唆と幇助を、正犯者の犯行の決意を新たに生じさせたか、既にある決意を強めたかで区別する点である。刑法61条1項は「人を教唆して犯罪を実行させた者には、正犯の刑を科する。」と定め、教唆とは、犯罪を決意していない者にその決意を生じさせることであると解されている。他方、62条1項は「正犯を幇助した者は、従犯とする。」と定めるところ、幇助には物理的な援助だけでなく、助言などにより既に犯行を決意している者の決意を強固にする精神的な援助も含まれると解されている。判例も、助言によって正犯の犯行を容易にした場合に幇助を認めている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "61",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を教唆して犯罪を実行させた者には、正犯の刑を科する。",
+     "text_sha256": "37308298414a09689bc15fefb10ea96a8d744d7274d85d4e79c7d1a167e0bfbf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "62",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正犯を幇助した者は、従犯とする。",
+     "text_sha256": "64542fa2877f533ec2c244692d3bfc7ec33145f64b8ee8b1bca58a4cc77c6bf4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "殺人、私文書偽造、偽造私文書行使、公正証書原本不実記載、同行使、殺人幇助被告事件",
+     "court": "最高裁判所大法廷",
+     "date": "1950-07-19",
+     "holding": "正犯者らが殺害の報酬額を協議している場で、被告人が傍らから助言し、その結果殺害の謀議が成立して実行された事案で、特段の事情がない限り、その助言は正犯の犯行を容易にしたものと推認でき、幇助に当たるとした。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54344/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "教唆と精神的幇助の区別（決意を生じさせたか、強固にしたか）は一般的な理解による（解釈による）。"
+   ],
+   "id": "exp-yobi-2026-keiho-q10-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-keiho-q10-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。正犯者の犯行を防止すべき作為義務のある者が、これを怠って犯行を容易にした場合には、不作為による幇助犯が成立し得る。",
+   "body": "誤りは、不作為による場合には幇助犯が成立し得ないとする点である。刑法62条1項は「正犯を幇助した者は、従犯とする。」と定めるのみで、幇助の方法を作為に限っていない。そのため、正犯者の犯罪を阻止すべき法的な作為義務を負う者が、阻止が可能であるのにこれをせず、正犯者の犯行を容易にした場合には、不作為による幇助犯が成立し得ると解されている。裁判例にも、親権者が同居者による子への暴行を阻止しなかった事案で不作為による幇助を認めたものがある（判例あり（要確認））。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "62",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正犯を幇助した者は、従犯とする。",
+     "text_sha256": "64542fa2877f533ec2c244692d3bfc7ec33145f64b8ee8b1bca58a4cc77c6bf4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "不作為による幇助を認めた裁判例（札幌高裁平成12年ころ）があるとされるが、courts.go.jp で判決を確認できなかったため要確認とした。",
+    "作為義務の要件等は解釈による。"
+   ],
+   "id": "exp-yobi-2026-keiho-q10-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-keiho-q10-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は片面的幇助を認めており、幇助者に正犯者の行為を認識して幇助する意思があれば足り、正犯者が幇助を認識している必要はない。",
+   "body": "決め手は、幇助犯には共同正犯のような意思の連絡（相互の認識）が要らない点である。刑法62条1項は「正犯を幇助した者は、従犯とする。」と定めるだけで、正犯者と幇助者の間の意思の疎通を要件としていない。幇助は正犯者の犯行を容易にすれば足りるから、幇助者が正犯者の行為を認識してこれを幇助する意思で援助すれば、正犯者がその援助を知らなくても幇助犯が成立し得ると解されている（片面的幇助）。判例もこの立場をとるとされる（判例あり（要確認））。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "62",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正犯を幇助した者は、従犯とする。",
+     "text_sha256": "64542fa2877f533ec2c244692d3bfc7ec33145f64b8ee8b1bca58a4cc77c6bf4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "片面的幇助を認めた大審院判決があるとされるが、courts.go.jp で判決を確認できなかったため要確認とした。"
+   ],
+   "id": "exp-yobi-2026-keiho-q10-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-keiho-q10-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、他人を介して正犯者の犯行を間接に容易にした場合にも幇助犯（間接幇助）の成立を認めている。",
+   "body": "決め手は、幇助行為が正犯者に直接向けられている必要はなく、他人を介して正犯者の犯行を容易にした場合も「正犯を幇助した」といえる点である。刑法62条1項は「正犯を幇助した者は、従犯とする。」と定めるところ、凶器を他人に提供し、その他人を通じて凶器が正犯者に渡り、正犯者がそれを用いて犯行に及んだ場合、最初の提供者も正犯者の犯行を物理的に容易にしている。判例は、物を他人に貸与し、それが転貸されて正犯者の犯行に用いられた事案で、正犯者の犯行を間接に幇助したものとして幇助犯の成立を認めたとされる（判例あり（要確認））。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "62",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正犯を幇助した者は、従犯とする。",
+     "text_sha256": "64542fa2877f533ec2c244692d3bfc7ec33145f64b8ee8b1bca58a4cc77c6bf4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "間接幇助を認めた最高裁の決定（昭和44年ころ）があるとされるが、courts.go.jp で判決本文を確認できなかったため要確認とした。"
+   ],
+   "id": "exp-yobi-2026-keiho-q10-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,211 @@
+{
+ "question_id": "yobi-2026-minso-q44",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q44-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。訴訟代理人が和解をするには特別の委任を受けなければならない（55条2項2号）。",
+   "body": "55条2項は、「訴訟代理人は、次に掲げる事項については、特別の委任を受けなければならない。」とし、その2号に「訴えの取下げ、和解、請求の放棄若しくは認諾」などを挙げている。訴訟上の和解は訴訟を終了させ、本人の権利関係を処分する重大な行為であるため、通常の訴訟委任の範囲（同条1項）には含まれない。したがって、特別の委任を受けていない訴訟代理人は訴訟上の和解をすることができず、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "55",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "訴訟代理人は、次に掲げる事項については、特別の委任を受けなければならない。",
+     "text_sha256": "6f80d47d20cba16e005741afaa35da61b9bbcda46df910e182c8ee4b11050b90",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "55",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "訴えの取下げ、和解、請求の放棄若しくは認諾",
+     "text_sha256": "6f80d47d20cba16e005741afaa35da61b9bbcda46df910e182c8ee4b11050b90",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minso-q44-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q44-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。裁判所は「訴訟がいかなる程度にあるかを問わず」和解を試みることができ、口頭弁論の終結後でもよい（89条1項）。",
+   "body": "89条1項は、「裁判所は、訴訟がいかなる程度にあるかを問わず、和解を試み、又は受命裁判官若しくは受託裁判官に和解を試みさせることができる。」と定める。訴訟の係属中であれば時期の制限はないから、口頭弁論の終結後、判決言渡しまでの間に和解を試みることもできる。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "89",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、訴訟がいかなる程度にあるかを問わず、和解を試み、又は受命裁判官若しくは受託裁判官に和解を試みさせることができる。",
+     "text_sha256": "465507132ed7956bbf28f27a230e170ab462de0f73a02b9eb2e5c05cd43928b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minso-q44-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q44-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。訴訟終了宣言判決は、訴訟が和解により終了したことを宣言する訴訟判決であり、和解が有効であること（和解の内容である私法上の権利関係）について既判力を生じるものではないと解されている。",
+   "body": "訴訟上の和解の無効を主張して期日指定の申立てがされた場合に、裁判所が審理の結果和解は有効であると判断したときは、訴訟が和解によって終了した旨を宣言する判決（訴訟終了宣言判決）をするのが実務である。この判決は本案について判断するものではなく、訴訟が既に終了していることを確認する訴訟判決であると解されている。既判力は判決主文に包含するものに限り生じる（114条1項）から、和解の有効性は判決理由中の判断にとどまり、これについて既判力は生じないと解されている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "114",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決は、主文に包含するものに限り、既判力を有する。",
+     "text_sha256": "c610c3ea296754d118ee0a863f99ac7ec29d49374742fb66d08e479e8b66173b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "訴訟終了宣言判決の性質と既判力の範囲は、条文に明記がなく解釈による。"
+   ],
+   "id": "exp-yobi-2026-minso-q44-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q44-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。当事者双方の書面による共同の申立てに基づき裁判所が和解条項を定め、その告知が当事者双方にされたときは、和解が調ったものとみなされる（265条）。",
+   "body": "265条1項は、裁判所は「当事者の共同の申立てがあるときは、事件の解決のために適当な和解条項を定めることができる。」とし、同条2項は、その申立ては書面でし、「その書面に同項の和解条項に服する旨を記載しなければならない。」と定める。そして同条5項は、「第三項の告知が当事者双方にされたときは、当事者間に和解が調ったものとみなす。」と定める。本肢はこれらの規定のとおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "265",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の共同の申立てがあるときは、事件の解決のために適当な和解条項を定めることができる。",
+     "text_sha256": "0bf3f58d974c3a382fa4534b6c7e99e63ede1f8e4a002007ecad210ab4369f68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "265",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その書面に同項の和解条項に服する旨を記載しなければならない。",
+     "text_sha256": "0bf3f58d974c3a382fa4534b6c7e99e63ede1f8e4a002007ecad210ab4369f68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "265",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "第三項の告知が当事者双方にされたときは、当事者間に和解が調ったものとみなす。",
+     "text_sha256": "0bf3f58d974c3a382fa4534b6c7e99e63ede1f8e4a002007ecad210ab4369f68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minso-q44-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q44-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。和解の内容である私法上の契約が債務不履行により解除されても、その契約に基づく権利関係が消滅するだけで、和解により終了した訴訟は復活しないと解されている。",
+   "body": "訴訟上の和解が成立すると、その記録は「確定判決と同一の効力を有する」（267条1項）ものとなり、訴訟は終了する。その後、和解の内容である私法上の契約が債務不履行を理由に解除されても、それによって消滅するのはその契約に基づく私法上の権利関係にとどまり、一旦終了した訴訟が復活するものではないと解されている（判例あり（要確認））。この場合、当事者は旧訴の期日指定を求めるのではなく、新たに訴えを提起することになると解されている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "267",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決と同一の効力を有する",
+     "text_sha256": "5bff013f863e84860a0a1588b4dcfbb058f5ca29e223b5ab659be98aefffb0ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "和解契約の解除によって訴訟が復活しないとする点は解釈（判例）による。判例は courts.go.jp で確認できなかった。"
+   ],
+   "id": "exp-yobi-2026-minso-q44-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,252 @@
+{
+ "question_id": "yobi-2026-keiho-q08",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-keiho-q08-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。日本国民以外の者が日本国外で日本国民を殺害した場合には、国民以外の者の国外犯を定める刑法3条の2により、同法199条が適用される。",
+   "body": "誤りは、甲に刑法199条が適用されることはないとする点である。刑法3条の2は、「この法律は、日本国外において日本国民に対して次に掲げる罪を犯した日本国民以外の者に適用する。」と定め、その2号に殺人の罪（199条）及びその未遂罪を掲げている。本肢の甲は日本国民ではなく、日本国外で日本国民であるＡを殺害しているから、まさにこの場合に当たり、甲には199条が適用される。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "3_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この法律は、日本国外において日本国民に対して次に掲げる罪を犯した日本国民以外の者に適用する。",
+     "text_sha256": "06bc4b6d3e519328b408fc985ad78ce06f96a768c20e86b6361593c762ab022d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者は、死刑又は無期若しくは五年以上の拘禁刑に処する。",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-keiho-q08-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-keiho-q08-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、日本国外で幇助行為をした者でも、正犯が日本国内で実行行為をした場合には刑法1条1項の「日本国内において罪を犯した」者に当たるとしており、甲に刑法が適用される。",
+   "body": "決め手は、幇助犯の犯罪地を正犯の実行行為地も含めて捉える点である。刑法1条1項は「この法律は、日本国内において罪を犯したすべての者に適用する。」と定める。判例は、日本国外で幇助行為をした者であっても、正犯が日本国内で実行行為をした場合には、同項の「日本国内において罪を犯した」者に当たるとしている（判例あり（要確認））。本肢では、甲は国外のホテル内で乙にナイフを貸与した（62条1項の「正犯を幇助した」行為）にとどまるが、正犯である乙は日本国内でＡを殺害しているから、甲は国内犯として扱われ、日本国民でなくとも刑法が適用される。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "1",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この法律は、日本国内において罪を犯したすべての者に適用する。",
+     "text_sha256": "557c8e2af10fc15a2ce1ae96ebbfdde6398987a305cb46fe80bcb21263b3859e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "62",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正犯を幇助した者は、従犯とする。",
+     "text_sha256": "64542fa2877f533ec2c244692d3bfc7ec33145f64b8ee8b1bca58a4cc77c6bf4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "国外の幇助行為について刑法1条1項の適用を認めた最高裁の決定（平成6年ころ）があるとされるが、courts.go.jp で判決を確認できなかったため要確認とした。"
+   ],
+   "id": "exp-yobi-2026-keiho-q08-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-keiho-q08-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。罪刑法定主義の下で禁止されるのは類推解釈であり、文言上可能な範囲での拡張解釈は許されると解されている。判例も、過失往来危険罪の「汽車」にガソリンカーが含まれるとした。",
+   "body": "誤りは、文言上可能な範囲で法規の趣旨を考慮して拡張して解釈することは許されないとする点である。罪刑法定主義から禁止されるのは、法文の文言の範囲を超えて類似の事実に適用する類推解釈であって、文言上可能な範囲で趣旨に照らし日常的意味より広く解する拡張解釈は許されると解されている。刑法129条1項は「過失により、汽車、電車若しくは艦船の往来の危険を生じさせ」た者を処罰しており、判例は、同条の趣旨を考慮して、ガソリンカーもここにいう「汽車」に含まれると解している（判例あり（要確認））。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "129",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "過失により、汽車、電車若しくは艦船の往来の危険を生じさせ",
+     "text_sha256": "c5513fad426e120be96fbc1d7bfc5488ff144d752977da16225b54d179d776de",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "ガソリンカーを「汽車」に含めた大審院判決（昭和15年ころ）があるとされるが、courts.go.jp で判決を確認できなかったため要確認とした。",
+    "類推解釈の禁止と拡張解釈の許容の区別は解釈による。"
+   ],
+   "id": "exp-yobi-2026-keiho-q08-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-keiho-q08-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。罪刑法定主義にいう「法律」には、法律の委任を受けた政令や条例は含まれ得るが、慣習法は含まれない（慣習刑法の排除）。",
+   "body": "誤りは、「法律」に慣習法が含まれるとする点である。憲法31条は「何人も、法律の定める手続によらなければ、その生命若しくは自由を奪はれ、又はその他の刑罰を科せられない。」と定め、犯罪と刑罰は国会の制定する法律で定めるべきものとされる（罪刑法定主義）。もっとも、政令については、憲法73条6号が「政令には、特にその法律の委任がある場合を除いては、罰則を設けることができない。」として、法律の委任があれば罰則を設けることを認めている。条例についても、憲法94条が「法律の範囲内で条例を制定することができる。」とし、地方自治法14条3項が条例中に刑罰を科する旨の規定を設けることを認めている。これに対し、成文でない慣習法によって犯罪と刑罰を定めることは罪刑法定主義に反し許されないと解されているから、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "31",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "何人も、法律の定める手続によらなければ、その生命若しくは自由を奪はれ、又はその他の刑罰を科せられない。",
+     "text_sha256": "fa09716f55f5abba59506089f9884d1566950024910c14848712f1cb9b11aa17",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "73",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "政令には、特にその法律の委任がある場合を除いては、罰則を設けることができない。",
+     "text_sha256": "edd0bc44219efd4b718ab6544896bf6639962cb675ee319ccae43a433f235998",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "94",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律の範囲内で条例を制定することができる。",
+     "text_sha256": "78a2734bca3b7e38f56380a751530cfb075441726ea26e37aeb5f7a92a77eef9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "14",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "その条例中に、条例に違反した者に対し、二年以下の拘禁刑、百万円以下の罰金、拘留、科料若しくは没収の刑又は五万円以下の過料を科する旨の規定を設けることができる。",
+     "text_sha256": "93483fb29ff14b1566cf416d506a3a169a98bcd03c233ce8efe1905100a767f7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "慣習刑法の排除は罪刑法定主義の一般的な理解による（解釈による）。"
+   ],
+   "id": "exp-yobi-2026-keiho-q08-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-keiho-q08-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。事後法による遡及処罰と重く変更された刑の遡及適用は許されないが、刑法6条により犯罪後に刑が軽く変更されたときは軽い刑による。",
+   "body": "決め手は、遡及処罰の禁止が行為者に不利益な遡及に限られる点である。憲法39条は「何人も、実行の時に適法であつた行為又は既に無罪とされた行為については、刑事上の責任を問はれない。」と定め、行為時に適法であった行為を事後の法律で処罰することを禁じている。行為時より重く変更された法定刑を遡って適用することも、同じく事後法による不利益な処罰として許されないと解されている。他方、刑法6条は「犯罪後の法律によって刑の変更があったときは、その軽いものによる。」と定めるから、犯罪後に法定刑が軽く変更された場合には変更後の軽い法定刑で処罰することができる。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "何人も、実行の時に適法であつた行為又は既に無罪とされた行為については、刑事上の責任を問はれない。",
+     "text_sha256": "4bf593bf01acfd679c8cf5b695485ce8a4e818418d0940442e6495c8eb8e352b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪後の法律によって刑の変更があったときは、その軽いものによる。",
+     "text_sha256": "3fd048e22f9be63cba69b3f0bd65c30a6d3a79b3ff5711c726203eaf6dd4bab4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "重く変更された法定刑の遡及適用の禁止は、憲法39条・罪刑法定主義の一般的な理解による（解釈による）。"
+   ],
+   "id": "exp-yobi-2026-keiho-q08-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

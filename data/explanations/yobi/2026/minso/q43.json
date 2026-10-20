@@ -1,0 +1,201 @@
+{
+ "question_id": "yobi-2026-minso-q43",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q43-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。請求の放棄は「口頭弁論等の期日」にすることができ、これには和解の期日も含まれる。",
+   "body": "266条1項は、「請求の放棄又は認諾は、口頭弁論等の期日においてする。」と定める。そして「口頭弁論等の期日」とは、261条で「口頭弁論、弁論準備手続又は和解の期日（以下この章において「口頭弁論等の期日」という。）」と定義されており、和解の期日も含まれる。したがって、請求の放棄は和解の期日においてもすることができ、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "266",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "請求の放棄又は認諾は、口頭弁論等の期日においてする。",
+     "text_sha256": "16d4d91b64fd2724381fa4eecd4c74836759aeeef4b4f4e0217f6d3a3ffa115d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "261",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "口頭弁論、弁論準備手続又は和解の期日（以下この章において「口頭弁論等の期日」という。）",
+     "text_sha256": "fc4d05f19d3ea83f0aa54ffe746161170d1803be7f427b32c03008b4b9e6f247",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minso-q43-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q43-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。請求の目的が可分であれば、請求の一部について放棄をすることができると解されている。",
+   "body": "請求の放棄は、原告が自らの請求に理由がないことを認める訴訟上の陳述であり、処分権主義に基づき、訴訟物について原告が自由に処分できることの表れである。訴えの取下げについて261条1項が「その全部又は一部を取り下げることができる」と定めるのと同様に、請求の目的が可分である場合（例えば金銭請求の一部）には、その一部についてのみ放棄をすることもできると解されている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "261",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その全部又は一部を取り下げることができる",
+     "text_sha256": "fc4d05f19d3ea83f0aa54ffe746161170d1803be7f427b32c03008b4b9e6f247",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "請求の一部放棄ができるとする点は、条文に明記がなく解釈による。"
+   ],
+   "id": "exp-yobi-2026-minso-q43-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q43-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。認諾をする旨の書面を提出した当事者が期日に出頭しないときは、裁判所はその旨の陳述をしたものとみなすことができる（266条2項）。",
+   "body": "266条2項は、「請求の放棄又は認諾をする旨の書面を提出した当事者が口頭弁論等の期日に出頭しないときは、裁判所又は受命裁判官若しくは受託裁判官は、その旨の陳述をしたものとみなすことができる。」と定める。請求の放棄だけでなく請求の認諾についても、書面の提出による擬制陳述が認められている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "266",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "請求の放棄又は認諾をする旨の書面を提出した当事者が口頭弁論等の期日に出頭しないときは、裁判所又は受命裁判官若しくは受託裁判官は、その旨の陳述をしたものとみなすことができる。",
+     "text_sha256": "16d4d91b64fd2724381fa4eecd4c74836759aeeef4b4f4e0217f6d3a3ffa115d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2026-minso-q43-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q43-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。請求の認諾は本案についての訴訟終了行為であり、訴えが不適法（訴訟要件を欠く）である場合にはすることができないと解されている。",
+   "body": "請求の認諾が調書（電子調書）に記録されると、その記録は「確定判決と同一の効力を有する」（267条1項）。このように認諾は請求認容の本案判決に代わる効力を持つから、本案判決をするための前提である訴訟要件が備わっていることが必要であり、訴えが不適法である場合には認諾をすることはできないと解されている。訴えが不適法であれば、裁判所は訴えを却下すべきことになる（140条参照）。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "267",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決と同一の効力を有する",
+     "text_sha256": "5bff013f863e84860a0a1588b4dcfbb058f5ca29e223b5ab659be98aefffb0ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "140",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴えが不適法でその不備を補正することができないときは、裁判所は、口頭弁論を経ないで、判決で、訴えを却下することができる。",
+     "text_sha256": "537fdea8a1ce2774370c01c05702c4146ce1bb3e206dca3bca7f2a32f0057d88",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "訴訟要件を欠く場合に認諾ができないとする点は、条文に明記がなく解釈による。"
+   ],
+   "id": "exp-yobi-2026-minso-q43-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2026-minso-q43-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。請求の認諾が調書に記載（現行法では電子調書に記録）されたときは、その記載（記録）は確定判決と同一の効力を有する（267条1項）。",
+   "body": "267条1項は、「裁判所書記官が、和解又は請求の放棄若しくは認諾について電子調書を作成し、これをファイルに記録したときは、その記録は、確定判決と同一の効力を有する。」と定める。したがって、請求の認諾が調書に記載（記録）されると、確定判決と同一の効力が生じ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "267",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所書記官が、和解又は請求の放棄若しくは認諾について電子調書を作成し、これをファイルに記録したときは、その記録は、確定判決と同一の効力を有する。",
+     "text_sha256": "5bff013f863e84860a0a1588b4dcfbb058f5ca29e223b5ab659be98aefffb0ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "保存した現行の267条1項は、令和4年改正（民事訴訟手続のIT化）後の「電子調書を作成し、これをファイルに記録したとき」という文言である。本肢の「調書に記載したとき」は改正前の文言に沿う表現だが、確定判決と同一の効力を有するという結論は変わらない。"
+   ],
+   "id": "exp-yobi-2026-minso-q43-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

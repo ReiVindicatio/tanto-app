@@ -88,7 +88,8 @@ def check_question(exam: str, year: int, subject: str, number: int) -> tuple[dic
                         f.append(f"{field} の「{part[:20]}」が条文・肢・問題文にない")
 
         for m in ARTICLE_REF_RE.finditer(e.get("body", "")):
-            art = m.group(1) + (f"_{m.group(2)}" if m.group(2) else "")
+            # 全角数字の条番号（「３９条」。問題文の文言をそのまま引くと出る）も半角にそろえて照合する
+            art = str(int(m.group(1))) + (f"_{int(m.group(2))}" if m.group(2) else "")
             if art not in cited_articles:
                 f.append(f"本文で触れた {m.group(0)} が citations にない")
 
