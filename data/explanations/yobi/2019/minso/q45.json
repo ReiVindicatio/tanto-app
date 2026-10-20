@@ -1,0 +1,223 @@
+{
+ "question_id": "yobi-2019-minso-q45",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q45-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：閲覧等の制限の申立てがあれば、その裁判が確定するまで第三者は秘密記載部分の閲覧等を請求できない（92条2項）。",
+   "body": "ポイントは、閲覧等の制限の申立てをしただけで、裁判の確定前から第三者の閲覧等が止まるかである。92条1項は、秘密について疎明があった場合に、裁判所が当事者の申立てにより決定で秘密記載部分の閲覧等の請求をすることができる者を当事者に限ることができると定める。そのうえで同条2項は「前項の申立てがあったときは、その申立てについての裁判が確定するまで、第三者は、秘密記載部分の閲覧等の請求をすることができない。」と定めている。申立ての審理中に閲覧されてしまえば秘密を守れないため、申立てそのものに閲覧等を止める効果を持たせたものである。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "92",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の申立てがあったときは、その申立てについての裁判が確定するまで、第三者は、秘密記載部分の閲覧等の請求をすることができない。",
+     "text_sha256": "f24ed778d2e143b14b7950909b7253ccaae39666e87fb8e179127cea833dc061",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q45-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q45-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：遅滞を避けるための移送（17条）の申立てがあっても、訴訟手続を停止しなければならないとする規定はない。",
+   "body": "誤りは「訴訟手続を停止しなければならない」という部分である。17条は、訴訟の著しい遅滞を避け、又は当事者間の衡平を図るため必要があると認めるときは、裁判所が「申立てにより又は職権で、訴訟の全部又は一部を他の管轄裁判所に移送することができる。」と定めるが、申立てによって訴訟手続が停止するとは定めていない。申立てによる停止を定めているのは、26条の「除斥又は忌避の申立てがあったときは、その申立てについての決定が確定するまで訴訟手続を停止しなければならない。」のような場合である。第1回口頭弁論期日の前であっても、移送の申立てに停止の効果はない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "17",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申立てにより又は職権で、訴訟の全部又は一部を他の管轄裁判所に移送することができる。",
+     "text_sha256": "0b2ccc0c4e558217f4b9052221a14aeb1238e99fce9bb06c999f86d96e3708d2",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "26",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "除斥又は忌避の申立てがあったときは、その申立てについての決定が確定するまで訴訟手続を停止しなければならない。",
+     "text_sha256": "127c73d6563691880c7a21f1653c38f93acc01b8768fbe4accb9e02d4e136895",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q45-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q45-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：文書提出命令の申立てについての決定に対する即時抗告は、その決定の執行を停止させるにとどまり、訴訟手続を停止させるものではない。",
+   "body": "誤りは「訴訟手続を停止しなければならない」という部分である。223条7項は「文書提出命令の申立てについての決定に対しては、即時抗告をすることができる。」と定め、334条1項は「抗告は、即時抗告に限り、執行停止の効力を有する。」と定める。もっとも、ここで停止するのは抗告の対象となった原裁判（文書提出命令など）の執行であり、本案の訴訟手続全体ではないと解されている。即時抗告によって訴訟手続を停止しなければならないとする規定はなく、裁判所は他の証拠調べなどを進めることができる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "223",
+     "paragraphs": [
+      "7"
+     ],
+     "quote": "文書提出命令の申立てについての決定に対しては、即時抗告をすることができる。",
+     "text_sha256": "3fd2c6de135ec047268133f432da636f337a8a57b7da0aee43257d18374fb59d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "334",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抗告は、即時抗告に限り、執行停止の効力を有する。",
+     "text_sha256": "647d56e8e79cba435d17bc7181d65b8e41430836c982bd5835c66bec5e244301",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "334条1項の執行停止の効力が原裁判の執行に限られ、訴訟手続の停止を生じないとする点は解釈による"
+   ],
+   "id": "exp-yobi-2019-minso-q45-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q45-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：補助参加に異議があっても、補助参加を許さない裁判が確定するまでは、補助参加人は訴訟行為をすることができる（45条3項）。",
+   "body": "ポイントは、補助参加に異議が出たときに、補助参加人の訴訟行為が直ちに止まるかである。45条3項は「補助参加人は、補助参加について異議があった場合においても、補助参加を許さない裁判が確定するまでの間は、訴訟行為をすることができる。」と定め、本肢はこの文言どおりである。さらに同条4項は、補助参加を許さない裁判が確定した場合でも、補助参加人の訴訟行為は「当事者が援用したときは、その効力を有する。」と定めている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "45",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "補助参加人は、補助参加について異議があった場合においても、補助参加を許さない裁判が確定するまでの間は、訴訟行為をすることができる。",
+     "text_sha256": "6e9243978c9072a053a3bb780291c7ecc9f06197fd47249d24bf84f74f10d5c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "45",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "当事者が援用したときは、その効力を有する。",
+     "text_sha256": "6e9243978c9072a053a3bb780291c7ecc9f06197fd47249d24bf84f74f10d5c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-minso-q45-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minso-q45-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：口頭弁論の併合は裁判所の裁量で命じるもので（152条1項）、併合を求められても訴訟手続を停止する義務はない。",
+   "body": "誤りは「訴訟手続を停止しなければならない」という部分である。152条1項は「裁判所は、口頭弁論の制限、分離若しくは併合を命じ、又はその命令を取り消すことができる。」と定め、口頭弁論の併合を裁判所の裁量に委ねている。当事者が併合を求めても、それは裁判所の職権の発動を促すものにとどまると解されており、併合を求められたことで訴訟手続を停止しなければならないとする規定はない。申立てによる停止を定める26条（除斥又は忌避の申立て）のような規定とは異なる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "152",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、口頭弁論の制限、分離若しくは併合を命じ、又はその命令を取り消すことができる。",
+     "text_sha256": "74834647179093104683e38a31ecd5ab334facb65e937f26a01190810707b950",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "26",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "除斥又は忌避の申立てがあったときは、その申立てについての決定が確定するまで訴訟手続を停止しなければならない。",
+     "text_sha256": "127c73d6563691880c7a21f1653c38f93acc01b8768fbe4accb9e02d4e136895",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "併合を求めることが職権の発動を促すものにとどまるとする点は解釈による"
+   ],
+   "id": "exp-yobi-2019-minso-q45-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

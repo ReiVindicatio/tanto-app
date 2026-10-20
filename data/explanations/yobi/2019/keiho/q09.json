@@ -1,0 +1,306 @@
+{
+ "question_id": "yobi-2019-keiho-q09",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiho-q09-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は65条の身分を継続的な属性に限らず、目的犯の目的（営利の目的など）も身分に当たり得るとしているので、「同条の適用の余地はない」とはいえない。",
+   "body": "誤りは「一時的な心理状態は含まれない」「同条の適用の余地はない」という部分である。65条1項は「犯人の身分によって構成すべき犯罪行為に加功したときは、身分のない者であっても、共犯とする。」と、2項は「身分によって特に刑の軽重があるときは、身分のない者には通常の刑を科する。」と定めるが、条文は身分の中身を限定していない。判例は、65条の身分を性別・国籍・公務員の資格などに限らず、一定の犯罪行為に関する犯人の人的関係である特殊の地位又は状態を広く指すものと解しており、犯人の一身的・継続的な属性に限られないとされている（判例あり（要確認））。そのうえで、麻薬に関する罪の営利の目的を65条2項の身分に当たるとした判例がある（判例あり（要確認））。したがって、目的を有する者と有しない者が共同して目的犯を行った場合にも、65条の適用があり得る。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "65",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯人の身分によって構成すべき犯罪行為に加功したときは、身分のない者であっても、共犯とする。",
+     "text_sha256": "fc92c1e44537681821cda70659540443dceb779b6206504011b28c19589913b4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "65",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "身分によって特に刑の軽重があるときは、身分のない者には通常の刑を科する。",
+     "text_sha256": "fc92c1e44537681821cda70659540443dceb779b6206504011b28c19589913b4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "身分の意義（最判昭和27年9月19日とされるもの）・営利の目的を65条2項の身分とした判例は、courts.go.jp で判決ページを確認できなかったため cases に入れていない。",
+    "解釈による"
+   ],
+   "id": "exp-yobi-2019-keiho-q09-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiho-q09-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。65条2項は身分の有無に応じて刑を個別に扱う規定と解されており、常習者が非常習者に賭博を教唆した場合にも同項が適用され、教唆者には常習賭博罪の教唆が成立する。",
+   "body": "誤りは「身分のない者が当該身分のある者に加功した場合について規定するもの」と限定し、「同項の適用の余地はない」とした部分である。65条2項は「身分によって特に刑の軽重があるときは、身分のない者には通常の刑を科する。」と定めており、加減的身分については身分の有無で刑を個別に扱う趣旨と解されている。そうすると、身分のある者が身分のない者に加功した場合にも、身分のある者には身分に応じた罪の刑が科されることになる。常習性は186条1項（「常習として賭博をした者は、三年以下の拘禁刑に処する。」）の加減的身分であり、常習者が非常習者に賭博を教唆したときは、正犯には185条の単純賭博罪が成立する一方、教唆者には65条2項により常習賭博罪の教唆犯が成立するとした判例がある（判例あり（要確認））。教唆犯には61条1項により「正犯の刑を科する」。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "65",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "身分によって特に刑の軽重があるときは、身分のない者には通常の刑を科する。",
+     "text_sha256": "fc92c1e44537681821cda70659540443dceb779b6206504011b28c19589913b4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "186",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "常習として賭博をした者は、三年以下の拘禁刑に処する。",
+     "text_sha256": "388fd8df194b9f5059f5123e4b948ee5e729a2528efec9cef9cdb10e36530dcc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "185",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賭博をした者は、五十万円以下の罰金又は科料に処する。",
+     "text_sha256": "f09a03847564dbd560d796bf6dd8c38c9ab15eb1395f2bd95a88079cd1f18aed",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "61",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正犯の刑を科する",
+     "text_sha256": "37308298414a09689bc15fefb10ea96a8d744d7274d85d4e79c7d1a167e0bfbf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "常習者が非常習者を教唆した事案の判例（大審院とされる）は courts.go.jp で確認していないため cases に入れていない。",
+    "解釈による",
+    "186条・185条の法定刑は取得日時点の現行法（拘禁刑）。出題時点とは刑名が異なるが、肢の結論には影響しない。"
+   ],
+   "id": "exp-yobi-2019-keiho-q09-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiho-q09-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、非占有者が業務上占有者の横領に加功した場合、65条1項により業務上横領罪の共犯とし、65条2項により単純横領罪の刑を科すとしている。",
+   "body": "業務上横領罪（253条「業務上自己の占有する他人の物を横領した者は、十年以下の拘禁刑に処する。」）は、他人の物の占有者という構成的身分と、業務者という加減的身分とを併せ持つ者の犯罪と解されている。判例は、占有者でも業務者でもない者がこれに加功した場合、65条1項により業務上横領罪の共犯が成立し、業務上の占有者の身分がないことから65条2項により単純横領罪（252条1項「自己の占有する他人の物を横領した者は、五年以下の拘禁刑に処する。」）の刑を科すとしている（判例あり（要確認））。罪名と科刑を分けるこの処理には学説上の批判もあるが、肢は判例の立場をそのまま述べており正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "253",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "業務上自己の占有する他人の物を横領した者は、十年以下の拘禁刑に処する。",
+     "text_sha256": "b190ff9e3ee2758ec21e34dd1fa95720bad8c113eae7c58b76389373f41d7c02",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "252",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己の占有する他人の物を横領した者は、五年以下の拘禁刑に処する。",
+     "text_sha256": "7a83a717a5852bf580d5f795dccc545173151db0ffcd2317b034606297df192f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "65",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯人の身分によって構成すべき犯罪行為に加功したときは、身分のない者であっても、共犯とする。",
+     "text_sha256": "fc92c1e44537681821cda70659540443dceb779b6206504011b28c19589913b4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "65",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "身分によって特に刑の軽重があるときは、身分のない者には通常の刑を科する。",
+     "text_sha256": "fc92c1e44537681821cda70659540443dceb779b6206504011b28c19589913b4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "最判昭和32年11月19日とされる判例は courts.go.jp で判決ページを確認できなかったため cases に入れていない。",
+    "解釈による"
+   ],
+   "id": "exp-yobi-2019-keiho-q09-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiho-q09-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。刑事未成年は責任能力（41条）の問題であって65条の身分の問題ではなく、刑事未成年者を教唆して犯罪を行わせた場合に65条が適用されるわけではない。",
+   "body": "前半の身分の定義は判例の示すところと同じだが、誤りは後半の「同条が適用される」という部分である。41条は「十四歳に満たない者の行為は、罰しない。」と定めるが、これは行為者の責任を阻却するものであり、犯罪の成立や刑の軽重を基礎付ける身分とは性質が異なると解されている。65条1項は「犯人の身分によって構成すべき犯罪行為に加功したとき」、2項は「身分によって特に刑の軽重があるとき」を対象としており、責任能力のある者が刑事未成年者を利用した場合は、利用者の間接正犯や教唆犯の成否として論じられ、65条を適用する場面ではない（解釈による）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "41",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "十四歳に満たない者の行為は、罰しない。",
+     "text_sha256": "6596f758086ea14251ded9cb64ecdb663d19193f8673c5a9635b2c20d9c2b604",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "65",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯人の身分によって構成すべき犯罪行為に加功したとき",
+     "text_sha256": "fc92c1e44537681821cda70659540443dceb779b6206504011b28c19589913b4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "65",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "身分によって特に刑の軽重があるとき",
+     "text_sha256": "fc92c1e44537681821cda70659540443dceb779b6206504011b28c19589913b4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による"
+   ],
+   "id": "exp-yobi-2019-keiho-q09-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiho-q09-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。自首による刑の減軽は自首した者についての一身的な事由であり、65条1項の問題ではなく、その効果は他の共犯者には及ばない。",
+   "body": "42条1項は「罪を犯した者が捜査機関に発覚する前に自首したときは、その刑を減軽することができる。」と定めており、刑の減軽は自首した本人の犯罪後の行為に着目したものである。これは犯罪の成立や刑の軽重を基礎付ける身分ではないから、65条1項（「犯人の身分によって構成すべき犯罪行為に加功したとき」）の適用の問題は生じない。したがって、共犯者の一人に自首が成立しても、減軽の効果は自首した者にだけ及び、他の共犯者には及ばないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "42",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "罪を犯した者が捜査機関に発覚する前に自首したときは、その刑を減軽することができる。",
+     "text_sha256": "bdf53adaf7996c624ac3080cccfa8f8f6ebea16070421960e1c124a7f33cbb5c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "65",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯人の身分によって構成すべき犯罪行為に加功したとき",
+     "text_sha256": "fc92c1e44537681821cda70659540443dceb779b6206504011b28c19589913b4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による",
+    "42条1項は「減軽することができる」で、免除の定めはない（肢の「減免」は肢の表現のまま扱った）。"
+   ],
+   "id": "exp-yobi-2019-keiho-q09-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

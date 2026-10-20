@@ -1,0 +1,215 @@
+{
+ "question_id": "yobi-2019-keiho-q04",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiho-q04-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。建造物の定義も、毀損しなければ取り外せない雨戸を建造物の一部とする点も、判例の立場に沿う。",
+   "body": "ポイントは「建造物」の意義と、建具が建造物の一部に当たる基準である。刑法108条は「現に人が住居に使用し又は現に人がいる建造物」を客体とするが、「建造物」の定義は置いていない。判例は、建造物を家屋その他これに類する工作物で、土地に定着し、人の起居出入りに適する構造を有するものと解している（判例あり（要確認））。また、家屋の建具などが建造物の一部といえるには、単に建て付けられているだけでは足りず、毀損しなければ取り外すことができない状態にあることを要すると解されている（判例あり（要確認））。毀損しなければ取り外せない雨戸はこの基準を満たすから、建造物の一部に当たり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現に人が住居に使用し又は現に人がいる建造物",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "建造物の定義・建造物の一部の基準を示す判例は courts.go.jp で確認できなかった（要確認）。"
+   ],
+   "id": "exp-yobi-2019-keiho-q04-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiho-q04-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。「放火」は目的物への直接の点火に限られず、目的物に延焼しうる媒介物への点火も含む。",
+   "body": "ポイントは、媒介物への点火が「放火」に当たるかである。刑法108条は「放火して」と定めるだけで、放火の方法を限定していない。「放火」とは目的物の焼損を惹起させる行為をいい、目的物に直接点火する場合だけでなく、媒介物に点火し、その燃焼作用が継続して目的物に燃え移りうる場合も含むと解されている。媒介物への点火の時点で、目的物の焼損に至る現実的な危険が生じているからである。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "放火して",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「放火」の意義は解釈による。"
+   ],
+   "id": "exp-yobi-2019-keiho-q04-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiho-q04-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は「焼損」を、火が媒介物を離れて目的物が独立して燃焼を継続しうる状態に達したことと解しており（独立燃焼説）、重要部分の焼失・効用喪失を基準とはしていない。",
+   "body": "ポイントは「焼損」の定義を「重要部分が焼失し，その本来の効用が失われた状態」としている点である。刑法108条は「焼損した者は」と定め、焼損の時点で既遂となる。判例は、押入れの壁紙に放火して天井板を焼いた事案で、火が媒介物を離れて家屋が独立して燃焼する程度に達したとして放火既遂罪を認めており、効用喪失までは要求していない。本肢の定義はいわゆる効用喪失説によるもので判例の立場と異なる。また、不燃性建造物のコンクリート壁が媒介物の火力で崩落しただけでは、目的物自体が独立して燃焼したとはいえず、焼損には当たらないと解されている（判例あり（要確認））。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "焼損した者は",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "放火罪の既遂時期に関する判決",
+     "court": "最高裁判所第三小法廷",
+     "date": "1948-11-02",
+     "holding": "押入れの壁紙にマッチで放火し、天井板を焼いた事実は、火が媒介物を離れて家屋が独立して燃焼する程度に達したものであり、放火既遂罪が成立するとした。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56590/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判決当時の条文の文言は「焼燬」。不燃性建造物のコンクリート壁の崩落を焼損に当たらないとする裁判例は確認できなかった（要確認）。"
+   ],
+   "id": "exp-yobi-2019-keiho-q04-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiho-q04-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。建造物等以外放火罪の「公共の危険」は、建造物等への延焼の危険に限られず、不特定又は多数の人の生命・身体・財産に対する危険も含む。",
+   "body": "ポイントは「公共の危険」の範囲を建造物等への延焼の危険に限るかである。刑法110条1項は「前二条に規定する物以外の物を焼損し、よって公共の危険を生じさせた者は」と定め、公共の危険の内容を限定していない。判例は、110条1項の「公共の危険」は、108条及び109条1項の建造物等に対する延焼の危険に限られず、不特定又は多数の人の生命、身体又はそれ以外の財産に対する危険も含まれると解している（判例あり（要確認））。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "110",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条に規定する物以外の物を焼損し、よって公共の危険を生じさせた者は",
+     "text_sha256": "e57ef09fc88cc82d4cf26b2048ff8150accb7212af342ee6d7680ec59a521152",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現に人が住居に使用し又は現に人がいる建造物",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "109",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現に人が住居に使用せず、かつ、現に人がいない建造物、艦船又は鉱坑を焼損した者は",
+     "text_sha256": "326d774ec2f98dbdafb0b8f657f6202a0b84b7f679959effbd50cd3ad527d210",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「公共の危険」の意義を示す最高裁決定は courts.go.jp で確認できなかった（要確認）。"
+   ],
+   "id": "exp-yobi-2019-keiho-q04-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiho-q04-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。「現に人が住居に使用し」の「人」も「現に人がいる」の「人」も、いずれも犯人以外の者をいう。",
+   "body": "ポイントは、「現に人が住居に使用し」の「人」に犯人が含まれるとしている点である。刑法108条は「現に人が住居に使用し又は現に人がいる建造物」を客体とし、これを焼損する行為を重く処罰する。この「人」は、いずれも犯人以外の者を意味すると解されている（判例あり（要確認））。そのため、犯人が一人で住んでいる家屋は、他に人がいなければ「現に人が住居に使用し」ている建造物には当たらない。前半で犯人が含まれるとする点が誤りであり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現に人が住居に使用し又は現に人がいる建造物",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「人」を犯人以外の者とする判例は courts.go.jp で確認できなかった（要確認）。"
+   ],
+   "id": "exp-yobi-2019-keiho-q04-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

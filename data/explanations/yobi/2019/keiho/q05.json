@@ -1,0 +1,211 @@
+{
+ "question_id": "yobi-2019-keiho-q05",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiho-q05-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。予期された侵害の機会を利用し積極的に加害行為をする意思で侵害に臨んだときは、侵害の急迫性が否定され、正当防衛は成立しない。",
+   "body": "ポイントは、侵害の予期に加えて積極的な加害意思がある場合の扱いである。刑法36条1項は「急迫不正の侵害に対して」した行為であることを正当防衛の要件とする。判例は、侵害を予期していたというだけでは急迫性は失われないが、単に予期された侵害を避けなかったにとどまらず、その機会を利用し積極的に相手方に対して加害行為をする意思で侵害に臨んだときは、侵害の急迫性の要件を充たさないと解している（判例あり（要確認））。急迫性が欠ければ正当防衛は成立する余地がなく、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "急迫不正の侵害に対して",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "積極的加害意思により急迫性を否定する最高裁決定は courts.go.jp で確認できなかった（要確認）。"
+   ],
+   "id": "exp-yobi-2019-keiho-q05-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiho-q05-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。けんか闘争でも、闘争の全般からみて正当防衛が成立しない場合があるにとどまり、正当防衛が成立する余地が一律に否定されるわけではない。",
+   "body": "ポイントは、けんか闘争であれば正当防衛が成立する「余地はない」と言い切っている点である。刑法36条1項は「急迫不正の侵害に対して、自己又は他人の権利を防衛するため、やむを得ずにした行為は、罰しない。」と定め、けんかの場合を除外していない。判例（大法廷）は、互いに暴行し合うけんかは、闘争者双方が攻撃と防御を繰り返す一連の闘争行為であるから、闘争の全般からみて正当防衛を認める余地がない場合があるとしたものであり、けんかであれば常に正当防衛が否定されるとしたわけではない。けんか闘争の中でも、具体的な状況によっては正当防衛が成立しうると解されている。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "急迫不正の侵害に対して、自己又は他人の権利を防衛するため、やむを得ずにした行為は、罰しない。",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "喧嘩と正当防衛に関する大法廷判決",
+     "court": "最高裁判所大法廷",
+     "date": "1948-07-07",
+     "holding": "互いに暴行し合うけんかは、双方が攻撃と防御を繰り返す一連の闘争行為であり、一方が防御に回る場面があっても、闘争の全般からみて正当防衛が成立しない場合があるとした。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56594/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2019-keiho-q05-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiho-q05-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、殴る素振りをして迫ってきた相手方に対し刃物を構えて脅迫した行為について、防衛手段としての相当性を超えないとして正当防衛の成立を認めている。",
+   "body": "ポイントは、素手の相手に刃物を構えて脅した場合に、およそ正当防衛の余地がないといえるかである。刑法36条1項は「やむを得ずにした行為」であることを要件とするが、これは防衛手段として相当性を有することをいうと解されている。判例は、年齢も若く体力にも優れた相手方が、殴られたいのかと言って手拳を突き出し、足を蹴り上げる動作をしながら迫ってきた状況の下で、危害を免れるために包丁を構えて脅迫した行為は、防衛手段として相当性の範囲を超えたものとはいえないとした。武器の有無だけで形式的に判断するのではなく、具体的な状況から相当性を判断するので、刃物で脅したことから直ちに正当防衛の余地がないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "やむを得ずにした行為",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "菜切包丁脅迫事件",
+     "court": "最高裁判所第二小法廷",
+     "date": "1989-11-13",
+     "holding": "体力に優れた相手方が殴る・蹴る動作をしながら目前に迫ってきた状況の下で、危害を免れるため包丁を構えて脅迫した行為は、防衛手段として相当性の範囲を超えたものとはいえず、刑法36条1項の「やむを得ずにした行為」に当たるとした。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50346/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判決当時の条文の文言は「巳ムコトヲ得サルニ出テタル行為」（現行の「やむを得ずにした行為」に相当）。"
+   ],
+   "id": "exp-yobi-2019-keiho-q05-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiho-q05-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。専ら攻撃の意思で暴行に及んだ場合は防衛の意思を欠き、正当防衛は成立しない。",
+   "body": "ポイントは、ナイフで脅されている状況（急迫不正の侵害）があっても、専ら攻撃の意思で行った反撃が正当防衛となるかである。刑法36条1項は「自己又は他人の権利を防衛するため」の行為であることを要件とし、判例はここから防衛の意思を要求していると解されている。防衛の意思と攻撃の意思が併存していても防衛の意思は否定されないが、防衛に名を借りて積極的に攻撃を加える行為のように、専ら攻撃の意思でした行為は防衛の意思を欠き、正当防衛とはならないと解されている（判例あり（要確認））。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己又は他人の権利を防衛するため",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "防衛の意思に関する最高裁判決は courts.go.jp で確認できなかった（要確認）。"
+   ],
+   "id": "exp-yobi-2019-keiho-q05-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiho-q05-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。財産的権利も「権利」として防衛の対象となり、財産を守るために相手方に傷害を負わせた場合でも、相当性の範囲内であれば正当防衛が成立しうる。",
+   "body": "ポイントは、財産的権利の防衛のために身体を侵害した場合に、およそ正当防衛の余地がないといえるかである。刑法36条1項は「自己又は他人の権利を防衛するため」と定め、防衛の対象となる権利を生命・身体に限定していない。そのため財産的権利もこれに含まれ、財産を守るためにした暴行が結果として相手方を負傷させた場合でも、防衛手段として相当性の範囲を超えなければ「やむを得ずにした行為」に当たりうると解されている（判例あり（要確認））。保全しようとした法益と侵害した法益との均衡は相当性判断の一事情となるにとどまり、直ちに正当防衛を否定するものではないから、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己又は他人の権利を防衛するため",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "やむを得ずにした行為",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "財産的権利を防衛するための暴行に正当防衛を認めた最高裁判決は courts.go.jp で確認できなかった（要確認）。"
+   ],
+   "id": "exp-yobi-2019-keiho-q05-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

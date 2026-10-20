@@ -1,0 +1,237 @@
+{
+ "question_id": "yobi-2019-keiso-q18",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiso-q18-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。弁護人の立会権を定める113条は、捜査機関の捜索には準用されていない（222条1項）。",
+   "body": "決め手は、113条が捜査段階の捜索に準用されるかどうかである。113条1項は「検察官、被告人又は弁護人は、差押状又は捜索状の執行に立ち会うことができる。」と定めるが、これは裁判所が行う差押え・捜索についての規定である。捜査機関が218条の令状によってする捜索に準用される規定を列挙した222条1項には、113条が含まれていない。捜査段階では、222条6項が「被疑者をこれに立ち会わせることができる」と定めるにとどまり、立ち会わせるかどうかは捜査機関の判断による。したがって、弁護人に捜索許可状の執行に立ち会う権利はなく、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官、被告人又は弁護人は、差押状又は捜索状の執行に立ち会うことができる。",
+     "text_sha256": "aa9f1d209c913cea646f5ed7621e51e00dd5216c3391563a8e931de2f38663c0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第九十九条第一項、第百条、第百二条、第百三条から第百五条まで、第百十条、第百十条の二前段、第百十一条第一項前段及び第二項、第百十一条の二前段、第百十二条、第百十四条、第百十五条、第百十八条",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "被疑者をこれに立ち会わせることができる。",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判官の発する令状により、差押え、捜索、電磁的記録提供命令又は検証をすることができる。",
+     "text_sha256": "954073f263edaa60047b785f6d0ee41b4ebde20c340041083ed979aa3578ed9f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-keiso-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiso-q18-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。接見禁止の対象は弁護人等（39条1項に規定する者）以外の者との接見であり、弁護人との接見は禁止できない（81条）。",
+   "body": "決め手は、接見禁止の対象から弁護人が除かれていることである。81条は、逃亡し又は罪証を隠滅すると疑うに足りる相当な理由があるときは、「勾留されている被告人と第三十九条第一項に規定する者以外の者との接見を禁じ」ることができると定める。39条1項に規定する者とは弁護人又は弁護人となろうとする者であり、81条は207条1項により勾留されている被疑者にも準用される。したがって、裁判官は被疑者と弁護人との接見を禁じることはできず、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "81",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "勾留されている被告人と第三十九条第一項に規定する者以外の者との接見を禁じ",
+     "text_sha256": "4bbd1858fef1a7e6a6d39c6f86f0cecf481253ea5489d79fc54b053692b9a7b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "身体の拘束を受けている被告人又は被疑者は、弁護人又は弁護人を選任することができる者の依頼により弁護人となろうとする者",
+     "text_sha256": "75b89a51ec4fe9018db639cf30e3c9a58ed8ee9aaf563c722c1141fb5cde965a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "207",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前三条の規定による勾留の請求を受けた裁判官は、その処分に関し裁判所又は裁判長と同一の権限を有する。",
+     "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-keiso-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiso-q18-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。勾留期間の延長の裁判は「勾留…に関する裁判」として準抗告の対象となる（429条1項2号）。",
+   "body": "決め手は、勾留期間延長の裁判が準抗告の対象になるかどうかである。勾留期間の延長は、208条2項により裁判官が「やむを得ない事由があると認めるときは、検察官の請求により、前項の期間を延長することができる」とされる裁判官の裁判である。429条1項は、裁判官が同項2号の「勾留」に関する裁判をした場合に「不服がある者は」その取消し又は変更を請求することができると定めており、勾留期間延長の裁判もこれに当たると解されている。弁護人も被疑者のためにこの請求（準抗告）をすることができると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "208",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判官は、やむを得ない事由があると認めるときは、検察官の請求により、前項の期間を延長することができる。",
+     "text_sha256": "025e1115fa564e91ca1651cb0202a325c51c7173ec9356942e130704a0b8a017",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "429",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判官が次に掲げる裁判をした場合において、不服がある者は",
+     "text_sha256": "98948b1d06b40156779741ba01d9ed8c080af2662a658b23dd04801aab8c7d78",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "勾留期間延長の裁判を429条1項2号の対象とする点、弁護人が申し立てられる点は解釈による。"
+   ],
+   "id": "exp-yobi-2019-keiso-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-keiso-q18-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。勾留されている者の弁護人は勾留理由の開示を請求でき（82条2項）、被疑者の勾留にも準用される（207条1項）。",
+   "body": "決め手は、勾留理由開示の請求権者に弁護人が含まれていることである。82条2項は「勾留されている被告人の弁護人、法定代理人、保佐人、配偶者、直系の親族、兄弟姉妹その他利害関係人も、前項の請求をすることができる。」と定め、前項の請求とは裁判所への勾留の理由の開示の請求である。207条1項により、被疑者の勾留を請求された裁判官はその処分に関し裁判所と同一の権限を有するから、被疑者の勾留についても82条が準用されると解されている。したがって、勾留されている被疑者の弁護人は裁判官に勾留の理由の開示を請求でき、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "82",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "勾留されている被告人は、裁判所に勾留の理由の開示を請求することができる。",
+     "text_sha256": "5264abeb763cbcfc0ff1dd57a0b5d79f77d18c52dc3dfd8b9b77ac38f6ce638e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "82",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "勾留されている被告人の弁護人、法定代理人、保佐人、配偶者、直系の親族、兄弟姉妹その他利害関係人も、前項の請求をすることができる。",
+     "text_sha256": "5264abeb763cbcfc0ff1dd57a0b5d79f77d18c52dc3dfd8b9b77ac38f6ce638e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "207",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前三条の規定による勾留の請求を受けた裁判官は、その処分に関し裁判所又は裁判長と同一の権限を有する。",
+     "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2019-keiso-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
