@@ -1,0 +1,363 @@
+{
+ "question_id": "yobi-2020-keiho-q07",
+ "prompt_version": "explain-v2",
+ "generated_at": "2026-10-20",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-keiho-q07-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：家族と同居する自宅は現住建造物であり、放火と保険金の詐取は別個の行為で手段・結果の関係にもないと解されているため、現住建造物等放火罪と詐欺罪の併合罪となる。",
+   "body": "108条は「放火して、現に人が住居に使用し又は現に人がいる建造物、汽車、電車、艦船又は鉱坑を焼損した者」を処罰する。同居する家族が不在でも、自宅は家族が日常生活に使用している以上「現に人が住居に使用し」ている建造物に当たり、甲には現住建造物等放火罪が成立する。その後、火災原因を偽って保険金の支払を受けた行為は、246条1項の「人を欺いて財物を交付させた」に当たり詐欺罪が成立する。放火は保険金詐欺の手段として通常用いられる関係にあるとはいえないため、54条1項後段の牽連犯にはならず、判例は両罪を45条の併合罪としていると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "放火して、現に人が住居に使用し又は現に人がいる建造物、汽車、電車、艦船又は鉱坑を焼損した者は、死刑又は無期若しくは五年以上の拘禁刑に処する。",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "246",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を欺いて財物を交付させた者は、十年以下の拘禁刑に処する。",
+     "text_sha256": "c515031b5f484a4ebf537cf5f2eb826a008d119836fd4627833e9cdb1f4a5053",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ、又は犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "放火と保険金詐欺を併合罪とする点は解釈による（判例の所在は確認していない）。"
+   ],
+   "id": "exp-yobi-2020-keiho-q07-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-keiho-q07-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：強盗の機会に乙と丙の2名を負傷させた場合、強盗致傷罪は負傷者ごとに成立し、「１個の強盗致傷罪」ではない。",
+   "body": "決め手は、乙と丙の両名に怪我を負わせたのに「１個の強盗致傷罪」が成立するとする部分である。240条は「強盗が、人を負傷させたときは無期又は六年以上の拘禁刑に処」すると定める。強盗致傷罪は財産のほか人の身体も保護するものであるから、強盗の手段として複数の者に暴行を加えて負傷させた場合には、強取した財物の管理者が1人であっても、負傷者の数に応じて強盗致傷罪が成立すると解されている。本問では、甲には乙に対する強盗致傷罪と丙に対する強盗致傷罪の2個が成立し、これらがそれぞれ住居侵入罪と54条1項後段の牽連犯の関係に立つことになる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "240",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "強盗が、人を負傷させたときは無期又は六年以上の拘禁刑に処し",
+     "text_sha256": "606eeb6a25b0c01dd2a8d06824cea550181f8c9024cb24edda30017c5d886eb7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "130",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正当な理由がないのに、人の住居若しくは人の看守する邸宅、建造物若しくは艦船に侵入し",
+     "text_sha256": "032fa6eaacc129ae4daf39c3f2400afa6523671819f49171677c976b8fe3e355",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "強盗致傷罪が負傷者ごとに成立し、住居侵入罪を介して全体が科刑上一罪となるとする点は解釈による（判例の所在は確認していない）。"
+   ],
+   "id": "exp-yobi-2020-keiho-q07-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-keiho-q07-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：窃盗教唆罪と盗品等保管罪は手段・結果の関係にないため牽連犯ではなく、併合罪となる。",
+   "body": "決め手は、窃盗教唆罪と盗品等保管罪が「牽連犯となる」とする部分である。甲は乙を教唆して窃盗を実行させているから、61条1項（「人を教唆して犯罪を実行させた者には、正犯の刑を科する。」）により窃盗教唆罪が成立する。窃盗の正犯自身は盗品等に関する罪に問われないが、教唆犯は正犯ではないから、その後に盗品を預かり保管した行為には256条2項の盗品等保管罪が成立すると解されている。教唆と保管とは、通常、一方が他方の手段又は結果となる関係にあるとはいえないため、54条1項後段の牽連犯にはならず、判例は両罪を併合罪としていると解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "61",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を教唆して犯罪を実行させた者には、正犯の刑を科する。",
+     "text_sha256": "37308298414a09689bc15fefb10ea96a8d744d7274d85d4e79c7d1a167e0bfbf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "235",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の財物を窃取した者は、窃盗の罪とし、十年以下の拘禁刑又は五十万円以下の罰金に処する。",
+     "text_sha256": "44f910b87f784daf350f25c4067c5a24e6e862555ec52f35ceea3c0cd53efc1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "256",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項に規定する物を運搬し、保管し、若しくは有償で譲り受け、又はその有償の処分のあっせんをした者は、十年以下の拘禁刑及び五十万円以下の罰金に処する。",
+     "text_sha256": "87be25bab6223e26e4d70509f6679361b8f313dd726a160b7b9d3c698c1fc875",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "本犯の教唆者に盗品等に関する罪が成立し、両罪が併合罪となるとする点は解釈による（判例の所在は確認していない）。"
+   ],
+   "id": "exp-yobi-2020-keiho-q07-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-keiho-q07-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：強盗殺人の後に改めて死体を遺棄する行為は別個の行為であり、強盗殺人罪と死体遺棄罪は併合罪となる。",
+   "body": "甲は乙を殺害して現金を強取しているから、240条の「死亡させたとき」に当たり強盗殺人罪が成立する。その後、引き続き死体を自宅の床下に埋めた行為は、190条の「死体」を「遺棄し」た行為に当たり、死体遺棄罪が成立する。死体遺棄は強盗殺人とは別個の行為であり、殺人の結果として通常伴う関係にあるとはいえないため、54条1項後段の牽連犯にはならず、両罪は45条の併合罪になると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "240",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "死亡させたときは死刑又は無期拘禁刑に処する。",
+     "text_sha256": "606eeb6a25b0c01dd2a8d06824cea550181f8c9024cb24edda30017c5d886eb7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "190",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "死体、遺骨、遺髪又は棺に納めてある物を損壊し、遺棄し、又は領得した者は、三年以下の拘禁刑に処する。",
+     "text_sha256": "6bcf6d6dc4b85c6e8e9cfb1b3faf6e5544b2bab119dd3d0f84779d1f8dc924ff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "強盗殺人罪と死体遺棄罪を併合罪とする点は解釈による（判例の所在は確認していない）。"
+   ],
+   "id": "exp-yobi-2020-keiho-q07-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2020-keiho-q07-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：他人名義の申込書の偽造・行使は通帳詐取の手段として通常用いられるものであり、有印私文書偽造罪、同行使罪及び詐欺罪は順次手段・結果の関係にある牽連犯となる。",
+   "body": "甲は、行使の目的で乙名義の口座開設申込書を作成しているから有印私文書偽造罪（159条1項）が、これを銀行の係員に提出しているから偽造私文書行使罪（161条1項）が成立する。他人名義で口座を開設し、預金通帳の交付を受けた行為には、246条1項の「人を欺いて財物を交付させた」として詐欺罪が成立し、預金通帳も財物に当たると解されている（判例あり（要確認））。文書の偽造と行使、行使と詐欺は、それぞれ一方が他方の手段となる関係にあるから、54条1項の「犯罪の手段若しくは結果である行為が他の罪名に触れるとき」に当たり、三罪は牽連犯となる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "159",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行使の目的で、次の各号に掲げるいずれかの行為をした者は、三月以上五年以下の拘禁刑に処する。",
+     "text_sha256": "4692c5d57b76d54088002bc3ffe8f3c006b0d157c4ba2c817e4b82da7a134a14",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "161",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の文書等又は電磁的記録文書等を行使した者は、その文書等若しくは電磁的記録文書等を偽造し、若しくは変造し、又は虚偽の記載若しくは記録をした者と同一の刑に処する。",
+     "text_sha256": "678e86310d0342525c44a65ceeecee4ecb08155f34e55c7a5653d68908ced709",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "246",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を欺いて財物を交付させた者は、十年以下の拘禁刑に処する。",
+     "text_sha256": "c515031b5f484a4ebf537cf5f2eb826a008d119836fd4627833e9cdb1f4a5053",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "他人名義の口座開設で交付を受けた預金通帳が詐欺罪の「財物」に当たるとする判例（最高裁平成14年の決定とされるもの）は、裁判所の裁判例検索で2回探したが確認できなかったため、「判例あり（要確認）」とした。",
+    "現行の159条・161条は、出題時（2020年）の後の改正で「文書等」「電磁的記録文書等」などの文言に改められている（出題時は「文書若しくは図画」等の文言だったと思われるが、保存した本文では確認できない）。偽造・行使・詐欺が牽連犯となる関係は変わらず、本肢の正誤には影響しないと考えられる。",
+    "三罪が牽連犯となる点は解釈による。"
+   ],
+   "id": "exp-yobi-2020-keiho-q07-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
