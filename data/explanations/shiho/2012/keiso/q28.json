@@ -1,0 +1,223 @@
+{
+ "question_id": "shiho-2012-keiso-q28",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiso-q28-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。裁判員裁判では被告人側の冒頭陳述は、検察官の立証が終わった後ではなく、検察官の冒頭陳述（296条の手続）に引き続いて行う。",
+   "body": "裁判員の参加する刑事裁判に関する法律49条は「裁判所は、対象事件については、第一回の公判期日前に、これを公判前整理手続に付さなければならない。」と定めるので、裁判員裁判は必ず公判前整理手続に付された事件となる。刑事訴訟法316条の30は「公判前整理手続に付された事件については、被告人又は弁護人は、証拠により証明すべき事実その他の事実上及び法律上の主張があるときは、第二百九十六条の手続に引き続き、これを明らかにしなければならない。」と定める。296条の手続とは、「証拠調のはじめに、検察官は、証拠により証明すべき事実を明らかにしなければならない」という検察官の冒頭陳述である。したがって、主張を明らかにしなければならない点は正しいが、その時期を「検察官の立証が終了した後被告人側の立証を始めるに当たり」とする点が誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "裁判員の参加する刑事裁判に関する法律",
+     "article": "49",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、対象事件については、第一回の公判期日前に、これを公判前整理手続に付さなければならない。",
+     "text_sha256": "348b4328dc51f4e891483b16b8a953e67314c43fb624accdbc3635bf5a6f5497",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AD%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%89%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_30",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公判前整理手続に付された事件については、被告人又は弁護人は、証拠により証明すべき事実その他の事実上及び法律上の主張があるときは、第二百九十六条の手続に引き続き、これを明らかにしなければならない。",
+     "text_sha256": "d4ca402482af24c808950bc917c32cd732ce94e401b2eca5c870c446f0b54abf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "296",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証拠調のはじめに、検察官は、証拠により証明すべき事実を明らかにしなければならない",
+     "text_sha256": "165ce773d05f983c3b5b17de7decfe0c44a9d0d2f1c6577fa4c01bf25e9327b8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "「冒頭陳述」という呼び方は条文の文言ではなく、一般的な呼び方による"
+   ],
+   "id": "exp-shiho-2012-keiso-q28-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiso-q28-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。証拠書類・証拠物の取調べを請求するときは、検察官・被告人側のどちらが請求する場合も、あらかじめ相手方に閲覧の機会を与えなければならない。",
+   "body": "刑事訴訟法299条1項は、検察官、被告人又は弁護人が「証拠書類又は証拠物の取調を請求するについては、あらかじめ、相手方にこれを閲覧する機会を与えなければならない。」と定める。この義務は請求する側が検察官か被告人側かを問わない。したがって、検察官が請求する場合は被告人又は弁護人に、弁護人が請求する場合は検察官に、あらかじめ閲覧の機会を与えなければならず、肢は正しい。なお、同項ただし書により「相手方に異議のないときは、この限りでない」。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "299",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証拠書類又は証拠物の取調を請求するについては、あらかじめ、相手方にこれを閲覧する機会を与えなければならない。",
+     "text_sha256": "50053c56d92e57af3eb4020dbdad586f1e618f071065958a27971e9fafaeff15",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "299",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方に異議のないときは、この限りでない",
+     "text_sha256": "50053c56d92e57af3eb4020dbdad586f1e618f071065958a27971e9fafaeff15",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2012-keiso-q28-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiso-q28-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。326条の同意は、すでにある書面又は供述を証拠とすることについての同意であり、鑑定の請求について326条の同意をするかどうかを聴く場面はない。",
+   "body": "刑事訴訟法326条1項は「検察官及び被告人が証拠とすることに同意した書面又は供述は」、相当と認めるときに限り、伝聞証拠についての制限にかかわらず証拠とすることができると定める。つまり、同意の対象は証拠とされる書面又は供述である。これに対し、鑑定の請求は、裁判所が「学識経験のある者に鑑定を命ずる」（165条）ことを求めるもので、これから鑑定を行わせる請求である。そのため、鑑定の請求の採否に当たって326条の同意をするかどうかを聴く必要はなく、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "326",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官及び被告人が証拠とすることに同意した書面又は供述は",
+     "text_sha256": "cbf06211cb6af8ed9b91f3b600116fa787ba90c9a431f062083c38993d4840e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "165",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "学識経験のある者に鑑定を命ずる",
+     "text_sha256": "cd5ec4cc535869bd0c2ddbb12d36c49d4a56ddef657adc8d60a83fa9e3e0d8fa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "鑑定の請求には326条の同意の問題が生じないという説明は解釈による",
+    "証拠決定の際に相手方の意見を聴く手続は刑事訴訟規則に定めがあると考えられるが、刑事訴訟規則は e-Gov になく確認していないため、本文では触れていない"
+   ],
+   "id": "exp-shiho-2012-keiso-q28-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiso-q28-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。証拠決定は判決前の訴訟手続に関する決定であり、抗告はできない。不服は同じ裁判所への異議の申立てによる。",
+   "body": "刑事訴訟法420条1項は「裁判所の管轄又は訴訟手続に関し判決前にした決定に対しては、この法律に特に即時抗告をすることができる旨の規定がある場合を除いては、抗告をすることはできない。」と定める。証拠調べの請求を採用・却下する証拠決定は、判決前にした訴訟手続に関する決定に当たり、即時抗告を認める特別の規定もないので、審理の終結を待たずに上級の裁判所へ抗告することはできない。証拠決定に不服がある当事者は、309条1項により「証拠調に関し異議を申し立てることができる」にとどまり、その申立てについては、同条3項により「裁判所は、前二項の申立について決定をしなければならない」。したがって、高等裁判所に対して不服申立てができるとする肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "420",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所の管轄又は訴訟手続に関し判決前にした決定に対しては、この法律に特に即時抗告をすることができる旨の規定がある場合を除いては、抗告をすることはできない。",
+     "text_sha256": "9687168843be73f6dc0dfd45a59005b165424f4e982444ee1cb778e2a784276f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "309",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証拠調に関し異議を申し立てることができる",
+     "text_sha256": "7c27d713b1c64f34226fbaa04a18f621bc14fd076394be879dc953fbfdd3ab1c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "309",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "裁判所は、前二項の申立について決定をしなければならない",
+     "text_sha256": "7c27d713b1c64f34226fbaa04a18f621bc14fd076394be879dc953fbfdd3ab1c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "証拠決定が420条1項の「訴訟手続に関し判決前にした決定」に当たるという説明は解釈による",
+    "判決後に判決に対する上訴で訴訟手続の法令違反を争う余地については、条文の本文を確認していないため触れていない"
+   ],
+   "id": "exp-shiho-2012-keiso-q28-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,218 @@
+{
+ "question_id": "shiho-2012-keiso-q26",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiso-q26-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。起訴便宜主義を定めた248条の文言どおりである。",
+   "body": "刑事訴訟法248条は「犯人の性格、年齢及び境遇、犯罪の軽重及び情状並びに犯罪後の情況により訴追を必要としないときは、公訴を提起しないことができる。」と定める。肢は、この条文をそのまま述べたものである。犯罪の嫌疑があり訴訟条件が備わっていても、検察官は訴追の必要がないと判断すれば起訴しないこと（起訴猶予）ができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "248",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯人の性格、年齢及び境遇、犯罪の軽重及び情状並びに犯罪後の情況により訴追を必要としないときは、公訴を提起しないことができる。",
+     "text_sha256": "00dcf3e127bce5737ff84cf5edd644d283051a5f947a0d1ae09e02f1a4e2cd30",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "「起訴猶予」という呼び方は条文の文言ではなく、一般的な呼び方による"
+   ],
+   "id": "exp-shiho-2012-keiso-q26-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiso-q26-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。検察官は、立証の難易等諸般の事情を考慮して、犯罪事実の一部だけをとらえて起訴することができると解されている。",
+   "body": "刑事訴訟法248条は、訴追の必要性の判断を検察官に委ね、「公訴を提起しないことができる」と定めている。この訴追裁量から、一罪の一部だけを起訴すること（一部起訴）も許されると解されている。判例（最大判平成15年4月23日）は、他人の不動産に抵当権を設定した後に売却した事案で、両者の罪数評価のいかんにかかわらず、検察官は事案の軽重や立証の難易等諸般の事情を考慮して、後行の所有権移転行為をとらえて公訴を提起できるとし、裁判所は訴因外の事情に立ち入って審理判断すべきでないとした。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "248",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公訴を提起しないことができる。",
+     "text_sha256": "00dcf3e127bce5737ff84cf5edd644d283051a5f947a0d1ae09e02f1a4e2cd30",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "横領後の横領と後行行為のみの起訴",
+     "court": "最高裁判所大法廷",
+     "date": "2003-04-23",
+     "case_number": "平成13(あ)746",
+     "holding": "先行の抵当権設定行為と後行の所有権移転行為の罪数評価のいかんにかかわらず、検察官は、事案の軽重、立証の難易等諸般の事情を考慮し、後行の所有権移転行為をとらえて公訴を提起することができ、裁判所は所有権移転の点だけを審判の対象とすべきで、訴因外の事情に立ち入って審理判断すべきではない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50036/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "一部起訴が248条の訴追裁量から許されるという説明は解釈による",
+    "一罪の一部起訴を直接扱った他の判例は確かめていない"
+   ],
+   "id": "exp-shiho-2012-keiso-q26-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiso-q26-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。公訴の取消しは第一審の判決があるまでできるとされているだけで、被告人の同意は要件になっていない。",
+   "body": "刑事訴訟法257条は「公訴は、第一審の判決があるまでこれを取り消すことができる。」と定める。取消しの時期の限界は「第一審の判決があるまで」であり、冒頭手続の終了で区切られてはいない。また、同条は被告人の同意を取消しの効力の要件としていない。したがって、冒頭手続終了後は被告人の同意がなければ効力を生じないとする肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "257",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公訴は、第一審の判決があるまでこれを取り消すことができる。",
+     "text_sha256": "9676f316a0e7cfba6522bd772be33e00faf49cabdafa8cee08d9bb599d1a2c30",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2012-keiso-q26-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiso-q26-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。公訴取消し後に新たに重要な証拠を発見した場合に限り、同一事件について再び起訴できる。",
+   "body": "刑事訴訟法340条は「公訴の取消による公訴棄却の決定が確定したときは、公訴の取消後犯罪事実につきあらたに重要な証拠を発見した場合に限り、同一事件について更に公訴を提起することができる。」と定める。つまり、再起訴は制限されるものの、新たに重要な証拠を発見した場合には許される。新たに重要な証拠を発見した場合であっても再起訴できないとする肢は、この条文に反し誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "340",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公訴の取消による公訴棄却の決定が確定したときは、公訴の取消後犯罪事実につきあらたに重要な証拠を発見した場合に限り、同一事件について更に公訴を提起することができる。",
+     "text_sha256": "a567810ae9145007ebd26ca23939e12b2ec84616659e2ab10899869f48301f38",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2012-keiso-q26-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiso-q26-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。即決裁判手続の申立ては、被疑者の同意がなければすることができない。",
+   "body": "刑事訴訟法350条の16第1項は、検察官が「公訴の提起と同時に、書面により即決裁判手続の申立てをすることができる」と定め、同条2項は「前項の申立ては、即決裁判手続によることについての被疑者の同意がなければ、これをすることができない。」と定める。肢はこの2項の内容どおりである。なお、被疑者に弁護人がある場合には、弁護人が同意をし又は意見を留保していることも必要とされる（同条4項）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "350_16",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公訴の提起と同時に、書面により即決裁判手続の申立てをすることができる",
+     "text_sha256": "458977e902f0307e54066af48f8ccb1171a7714951f57d141613701e2a7bbf8b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "350_16",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の申立ては、即決裁判手続によることについての被疑者の同意がなければ、これをすることができない。",
+     "text_sha256": "458977e902f0307e54066af48f8ccb1171a7714951f57d141613701e2a7bbf8b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "350_16",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "弁護人が即決裁判手続によることについて同意をし又はその意見を留保しているときに限り、これをすることができる。",
+     "text_sha256": "458977e902f0307e54066af48f8ccb1171a7714951f57d141613701e2a7bbf8b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "出題当時（2012年）は即決裁判手続の申立ての規定は別の条番号（350条の2）に置かれていたと考えられるが、改正前の内容は条文の本文で確認していない。現行の350条の16で説明した"
+   ],
+   "id": "exp-shiho-2012-keiso-q26-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

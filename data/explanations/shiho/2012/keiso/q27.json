@@ -1,0 +1,253 @@
+{
+ "question_id": "shiho-2012-keiso-q27",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiso-q27-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。保釈を許す決定だけでなく、保釈の請求を却下する決定をするときも、検察官の意見を聴かなければならない。",
+   "body": "刑事訴訟法92条1項は「裁判所は、保釈を許す決定又は保釈の請求を却下する決定をするには、検察官の意見を聴かなければならない。」と定める。許可と却下のどちらの決定でも検察官の意見聴取が必要であり、肢はこの条文どおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "92",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、保釈を許す決定又は保釈の請求を却下する決定をするには、検察官の意見を聴かなければならない。",
+     "text_sha256": "049d9567526e961f9625b691b44b88410f1eafd59706d58b305701b07fa0bef8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2012-keiso-q27-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiso-q27-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。権利保釈の除外事由（89条各号）は勾留の理由とは別に定められており、逃亡のおそれだけで勾留されている場合でも、89条各号に当たれば保釈を許さなければならないわけではない。",
+   "body": "刑事訴訟法89条は「保釈の請求があつたときは、次の場合を除いては、これを許さなければならない。」と定め、除外事由として、被告人が「死刑又は無期若しくは短期一年以上の拘禁刑に当たる罪を犯したものであるとき」（1号）、常習として一定の罪を犯したとき（3号）などを挙げている。これらの除外事由は、勾留の理由（60条1項各号）とは別に判断される。肢の被告人は、60条1項3号の「被告人が逃亡し又は逃亡すると疑うに足りる相当な理由があるとき」だけを理由に勾留されているが、それでも89条1号などの除外事由に当たることはありうる。したがって、常に保釈を許さなければならないとする肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "89",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保釈の請求があつたときは、次の場合を除いては、これを許さなければならない。",
+     "text_sha256": "7f9f5edf74ddcd4119e9d4734656d33cb5f93efec346f60161b0b15a812e667b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "89",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "死刑又は無期若しくは短期一年以上の拘禁刑に当たる罪を犯したものであるとき",
+     "text_sha256": "7f9f5edf74ddcd4119e9d4734656d33cb5f93efec346f60161b0b15a812e667b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "60",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告人が逃亡し又は逃亡すると疑うに足りる相当な理由があるとき",
+     "text_sha256": "fc2a80617b4371059a22447a68c6aeab2d2cfc71a0a3b5dca33372f62e77a95c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "89条の除外事由が勾留の理由とは別に判断されるという説明は、条文の構造からの解釈による",
+    "89条1号等の「拘禁刑」は改正後の文言で、出題当時は別の刑名であったと考えられるが、改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-keiso-q27-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiso-q27-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。保釈を許す場合には、保証金額を必ず定めなければならない。",
+   "body": "刑事訴訟法93条1項は「保釈を許す場合には、保証金額を定めなければならない。」と定める。保証金額を定めないで保釈を許すことは認められていない。保証金の没取以外の手段で出頭を確保できると考える場合でも同じであり、肢は誤りである。なお、住居の制限その他の条件は、保証金額とは別に付けることができる（同条3項）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "93",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保釈を許す場合には、保証金額を定めなければならない。",
+     "text_sha256": "bb4ebaf09885ea6a6c2172779002d372f2993354c7cb6dbabcd07e5e3df18eea",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "93",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "保釈を許す場合には、被告人の住居を制限し、その他適当と認める条件を付することができる。",
+     "text_sha256": "bb4ebaf09885ea6a6c2172779002d372f2993354c7cb6dbabcd07e5e3df18eea",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2012-keiso-q27-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiso-q27-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。被疑者の勾留には保釈の制度がない。",
+   "body": "刑事訴訟法207条1項は、勾留の請求を受けた裁判官は「その処分に関し裁判所又は裁判長と同一の権限を有する」としつつ、「但し、保釈については、この限りでない。」と定める。つまり、被告人の勾留についての保釈の規定は、起訴前の被疑者の勾留には適用されない。したがって、勾留されている被疑者の請求により条件を付けて保釈を許すことはできず、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "207",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その処分に関し裁判所又は裁判長と同一の権限を有する",
+     "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "207",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "但し、保釈については、この限りでない。",
+     "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2012-keiso-q27-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiso-q27-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。保釈中の被告人に一定以上の刑の判決が宣告されると、判決の確定を待たずに保釈は効力を失い、被告人は刑事施設に収容される。",
+   "body": "刑事訴訟法343条1項は「拘禁刑以上の刑に処する判決の宣告があつたときは、保釈又は勾留の執行停止は、その効力を失う。」と定める。そして同条2項は、新たに保釈等の決定がないときに限り、98条の規定を準用するとしている。98条1項は、保釈を取り消す決定があったときに被告人を「刑事施設に収容しなければならない」と定めており、これが判決宣告の場合に準用される。したがって、判決の宣告の時点で保釈は失効し収容されるので、判決が確定しなければ収容できないとする肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "343",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "拘禁刑以上の刑に処する判決の宣告があつたときは、保釈又は勾留の執行停止は、その効力を失う。",
+     "text_sha256": "882fa39c34ef3f9872645d61c96dee7d0a627e2af06bfd4dbd9b4f0e8ef9b542",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "343",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の場合には、新たに保釈又は勾留の執行停止の決定がないときに限り、第九十八条",
+     "text_sha256": "882fa39c34ef3f9872645d61c96dee7d0a627e2af06bfd4dbd9b4f0e8ef9b542",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "98",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "刑事施設に収容しなければならない",
+     "text_sha256": "f5d08e5998fcc53001a84a966850f489c957c44d9c7a8b757bf8f4cae887336f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "343条1項の「拘禁刑以上」は改正後の文言で、出題当時は懲役等を含む別の文言（刑名）であったと考えられるが、改正前の内容は条文の本文で確認していない。肢の「懲役４年」は現行法では拘禁刑に当たるものとして説明した"
+   ],
+   "id": "exp-shiho-2012-keiso-q27-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

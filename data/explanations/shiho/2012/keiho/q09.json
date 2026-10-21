@@ -1,0 +1,223 @@
+{
+ "question_id": "shiho-2012-keiho-q09",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiho-q09-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。37条は危難の原因を限定しておらず、「現在の危難」は人の行為によるものに限られず、自然災害などによるものも含むと解されている。",
+   "body": "ポイントは、「現在の危難」の原因に限定があるかどうかである。37条1項は「自己又は他人の生命、身体、自由又は財産に対する現在の危難を避けるため」と定めるだけで、危難が誰の行為から生じたかを要件としていない。この点で、「急迫不正の侵害」という人の不正な行為を前提とする正当防衛（36条）とは異なる。そのため、緊急避難の「現在の危難」は、人の行為によるものに限らず、自然災害や動物の行動などによるものも含むと解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己又は他人の生命、身体、自由又は財産に対する現在の危難を避けるため",
+     "text_sha256": "ce24f32acb83ba3817ba41ffeb256a9de0ddcfeef3658de5cd72e5d581fd8049",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "急迫不正の侵害",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（危難の原因を問わないという理解）"
+   ],
+   "id": "exp-shiho-2012-keiho-q09-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiho-q09-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。37条1項は「避けようとした害の程度を超えなかった場合に限り」罰しないとしており、生じた害と避けようとした害が同等の場合にも緊急避難は成立する。",
+   "body": "誤りは、避けようとした害が生じた害を「超える場合に限られ」、同等の場合には成立しないとする点である。37条1項は、避難行為について「これによって生じた害が避けようとした害の程度を超えなかった場合に限り、罰しない」と定めている。「超えなかった」場合には、生じた害が避けようとした害より小さい場合だけでなく、両者が同等の場合も含まれる。したがって、両者が同等の場合にも緊急避難は成立し、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "これによって生じた害が避けようとした害の程度を超えなかった場合に限り、罰しない",
+     "text_sha256": "ce24f32acb83ba3817ba41ffeb256a9de0ddcfeef3658de5cd72e5d581fd8049",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2012-keiho-q09-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiho-q09-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。緊急避難は、現在の危難を避けるために危難と無関係な第三者の正当な法益を侵害する場合を予定した制度であり、第三者の法益を侵害したことを理由に成立が否定されるわけではない。",
+   "body": "誤りは、第三者の正当な利益を侵害したときは緊急避難が成立しないとする点である。37条1項は「現在の危難を避けるため、やむを得ずにした行為」を、生じた害が避けようとした害の程度を超えなかった場合に限り罰しないとしており、侵害される法益が誰のものかを限定していない。緊急避難は、不正な侵害者に反撃する正当防衛と異なり、危難と無関係な第三者の正当な法益を犠牲にして危難を避ける場合を典型とする制度であると解されている。そのため、その法益侵害が「やむを得ずにした」ものといえ、害の均衡の要件を満たせば、第三者の法益を侵害しても緊急避難は成立する。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現在の危難を避けるため、やむを得ずにした行為は、これによって生じた害が避けようとした害の程度を超えなかった場合に限り、罰しない",
+     "text_sha256": "ce24f32acb83ba3817ba41ffeb256a9de0ddcfeef3658de5cd72e5d581fd8049",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（緊急避難が第三者の正当な法益の侵害を典型とするという理解）"
+   ],
+   "id": "exp-shiho-2012-keiho-q09-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiho-q09-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、「急迫」とは法益侵害の危険が緊迫したことを意味し被害の現在性を意味しないとし、「現在の危難」についてもほぼ同様であるとしているから、危難が差し迫っていれば足りる。",
+   "body": "誤りは、「現在の危難」は侵害が現実に存在することを意味し、差し迫っているだけでは足りないとする点である。判例（最高裁昭和24年8月18日判決）は、36条の「急迫」とは、法益の侵害が間近に押し迫ったこと、すなわち法益侵害の危険が緊迫したことを意味するのであって、被害の現在性を意味するものではないとし、37条の「現在の危難」についてもほぼこれと同様のことがいえるとしている。つまり、「現在の危難」は「急迫不正の侵害」の「急迫」とほぼ同じ意味であり、法益侵害の危険が差し迫っていれば認められる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現在の危難",
+     "text_sha256": "ce24f32acb83ba3817ba41ffeb256a9de0ddcfeef3658de5cd72e5d581fd8049",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "急迫不正の侵害",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "「急迫」と「現在の危難」の意義",
+     "court": "最高裁判所第一小法廷",
+     "date": "1949-08-18",
+     "case_number": "昭和24(れ)295",
+     "holding": "刑法36条の「急迫」とは、法益の侵害が間近に押し迫ったこと、すなわち法益侵害の危険が緊迫したことを意味し、被害の現在性を意味するものではない。37条の「現在の危難」についてもほぼ同様のことがいえる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55481/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2012-keiho-q09-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-keiho-q09-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。危難を避ける方法がその行為以外になく「やむを得ずにした」といえるが、生じた害が避けようとした害の程度を超えた場合は、37条1項ただし書の過剰避難が成立し得る。",
+   "body": "ポイントは、補充性（他に方法がないこと）を満たし、害の均衡だけを欠く場合の扱いである。37条1項本文は「やむを得ずにした行為」について、生じた害が避けようとした害の程度を超えなかった場合に限り罰しないとし、同項ただし書は「その程度を超えた行為は、情状により、その刑を減軽し、又は免除することができる」と定めている。判例（最高裁昭和35年2月4日判決）は、吊橋の危険を防止するには通行制限の強化その他の手段を講ずる余地があり、ダイナマイトで爆破しなければ危険を防止できなかったとは認められないとして、緊急避難を認める余地はなく、したがって過剰避難も成立しないとした。このように、他に方法がなかったこと（やむを得ずにしたこと）は過剰避難の前提となると解されており、本肢のように危難を回避する方法がその避難行為以外になく、害の程度だけを超えた場合には、過剰避難が成立し得る。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、その程度を超えた行為は、情状により、その刑を減軽し、又は免除することができる。",
+     "text_sha256": "ce24f32acb83ba3817ba41ffeb256a9de0ddcfeef3658de5cd72e5d581fd8049",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "吊橋爆破事件（過剰避難が認められない事例）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1960-02-04",
+     "case_number": "昭和34(あ)949",
+     "holding": "吊橋が危険な状態にあったとしても、通行制限の強化その他適当な手段を講ずる余地があり、ダイナマイトで爆破しなければ危険を防止しえなかったとは認められないから、緊急避難を認める余地はなく、従ってまた過剰避難も成立しえない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51684/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（補充性が過剰避難の前提となるという理解）"
+   ],
+   "id": "exp-shiho-2012-keiho-q09-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
