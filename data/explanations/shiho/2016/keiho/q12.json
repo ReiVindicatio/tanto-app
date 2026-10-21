@@ -1,0 +1,245 @@
+{
+ "question_id": "shiho-2016-keiho-q12",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-keiho-q12-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。Ｂのパソコンは趣味の料理のレシピを保存していたにすぎず「人の業務に使用する電子計算機」に当たらないので、電子計算機損壊等業務妨害罪は成立せず、器物損壊罪が成立する。",
+   "body": "決め手は、Ｂのパソコンが「業務」に使用されていたかどうかである。刑法234条の2第1項は「人の業務に使用する電子計算機若しくはその用に供する電磁的記録を損壊し」て「人の業務を妨害した」ことを要件とする。業務妨害罪の「業務」は、職業その他社会生活上の地位に基づき継続して行う事務または事業をいうと解されており、個人が趣味で料理のレシピを保存しておくことはこれに当たらない。したがって、パソコンを壊しても同罪は成立しない。他方、Ａは他人であるＢのパソコンをたたき壊しているので、刑法261条の「他人の物を損壊し」に当たり、器物損壊罪が成立する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "234_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の業務に使用する電子計算機若しくはその用に供する電磁的記録を損壊し",
+     "text_sha256": "c79e0a779c66d88d013c3f62d2a8c80bbd9fc3bc927f03616dd0798809f16747",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "234_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の業務を妨害した",
+     "text_sha256": "c79e0a779c66d88d013c3f62d2a8c80bbd9fc3bc927f03616dd0798809f16747",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "261",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の物を損壊し",
+     "text_sha256": "4b05878c69d702517a3d9714df8b4517916f6e9799015b3d78d8df4d9b8aa8c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "業務妨害罪の「業務」の意義は解釈による"
+   ],
+   "id": "exp-shiho-2016-keiho-q12-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-keiho-q12-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。Ａは窓口行員Ｃという人を欺いて処理をさせているので詐欺罪の問題となり、電子計算機使用詐欺罪は成立しない。",
+   "body": "誤りは、人を欺いた場合に電子計算機使用詐欺罪が成立するとしている点である。刑法246条の2は「前条に規定するもののほか」と定めており、詐欺罪（刑法246条）が成立しない場合、すなわち人を欺く行為が介在しない場合を補うための規定と解されている。この記述では、ＡはＢに成り済まして窓口行員Ｃに振込入金を依頼し、ＣがＡをＢと思い込んで端末を操作しているので、Ａは「人を欺いて」処理をさせたことになる。Ｃが電子計算機を操作したのは欺かれた人の処分行為としてであり、Ａ自身が電子計算機に虚偽の情報を与えたのではない。したがって、詐欺罪の成否が問題となり、電子計算機使用詐欺罪は成立しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "246_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条に規定するもののほか",
+     "text_sha256": "31604e6a4af49fe39a9f5fbe207f6967f3e6a345b999bf30c1a7b308feb0d353",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "246",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を欺いて",
+     "text_sha256": "c515031b5f484a4ebf537cf5f2eb826a008d119836fd4627833e9cdb1f4a5053",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "電子計算機使用詐欺罪が詐欺罪を補う規定であることの理解は解釈による"
+   ],
+   "id": "exp-shiho-2016-keiho-q12-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-keiho-q12-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。不正電磁的記録カード所持罪は「人の財産上の事務処理を誤らせる目的」での所持を要件とするので、使うつもりがなく友人に見せるためだけに持っていたＡには成立しない。",
+   "body": "決め手は、所持の目的である。刑法163条の3は「前条第一項の目的で、同条第三項のカードを所持した者」を処罰しており、刑法163条の2第1項の目的は「人の財産上の事務処理を誤らせる目的」である。Ａが持っていたのは「不正に作られた第一項の電磁的記録をその構成部分とするカード」に当たるが、Ａは同カードを使用するつもりはなく、機会があれば友人に見せようと考えていたにすぎない。したがって、人の財産上の事務処理を誤らせる目的がなく、不正電磁的記録カード所持罪は成立しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "163_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条第一項の目的で、同条第三項のカードを所持した者",
+     "text_sha256": "18b00495c19d2223ca1d93fbd2dd0adb5690c2a3ee253a07986308b0f1bdb7d4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "163_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の財産上の事務処理を誤らせる目的",
+     "text_sha256": "efb8650612b740f5253a4c9fc2ff5cabe2dc139314d3071218349b5842e2eef2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "163_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "不正に作られた第一項の電磁的記録をその構成部分とするカード",
+     "text_sha256": "efb8650612b740f5253a4c9fc2ff5cabe2dc139314d3071218349b5842e2eef2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2016-keiho-q12-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-keiho-q12-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。Ａはウイルスを作成して自宅のパソコンで試しただけで、Ｂのパソコンへの攻撃に着手していないので、電子計算機損壊等業務妨害罪の未遂罪は成立しない。",
+   "body": "誤りは、ウイルスを作成して自分のパソコンで試しただけで未遂罪が成立するとしている点である。刑法234条の2第2項は「前項の罪の未遂は、罰する。」とするが、未遂罪の成立には刑法43条の「犯罪の実行に着手」したことが必要である。同条1項の罪の実行行為は、人の業務に使用する電子計算機に「虚偽の情報若しくは不正な指令を与え」るなどの行為であり、Ａは同僚Ｂのパソコンにウイルスを感染させる行為に出ないまま使用を断念している。したがって、実行の着手がなく、同罪の未遂罪は成立しない。なお、ウイルスを作成した行為については、別に刑法168条の2第1項の「人の電子計算機における実行の用に供する目的で」不正な指令を与える電磁的記録を「作成し」た罪（不正指令電磁的記録作成罪）が問題となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "234_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の罪の未遂は、罰する。",
+     "text_sha256": "c79e0a779c66d88d013c3f62d2a8c80bbd9fc3bc927f03616dd0798809f16747",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "234_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "虚偽の情報若しくは不正な指令を与え",
+     "text_sha256": "c79e0a779c66d88d013c3f62d2a8c80bbd9fc3bc927f03616dd0798809f16747",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の実行に着手",
+     "text_sha256": "4a18dd050345c1424dde393ee15554e66bd90bcf59f4f9c932d0ebd372647655",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "168_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の電子計算機における実行の用に供する目的で",
+     "text_sha256": "a5e41731c99be73d1d8489b2acecd4d3e3b62522d6dcc039f96faf98ace12d0b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "実行の着手がないとの当てはめは解釈による"
+   ],
+   "id": "exp-shiho-2016-keiho-q12-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

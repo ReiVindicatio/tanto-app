@@ -1,0 +1,339 @@
+{
+ "question_id": "shiho-2016-keiho-q07",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-keiho-q07-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。偽造通貨を行使して商品をだまし取った場合、詐欺罪は偽造通貨行使罪に吸収されて別に成立しないと解されており、両罪の観念的競合とはならない。",
+   "body": "誤りは、詐欺罪と偽造通貨行使罪が成立し「観念的競合となる」とする点である。刑法148条2項は「偽造又は変造の貨幣、紙幣又は銀行券を行使し」た者を処罰する。偽造通貨の行使は、通常、真正な通貨と偽って相手方に渡し、財物の交付を受けることを伴うから、それによる財産上の被害は偽造通貨行使罪の評価に含まれ、詐欺罪は別に成立しないと解されている（判例あり（要確認））。したがって、甲には偽造通貨行使罪のみが成立し、詐欺罪との観念的競合（刑法54条1項前段）とする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "148",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "偽造又は変造の貨幣、紙幣又は銀行券を行使し",
+     "text_sha256": "88241d14731923ddeb86f4bd141e4bc686fe773b7fb72a7a57192127e4921e17",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "偽造通貨を行使して財物を詐取した場合、詐欺罪は偽造通貨行使罪に吸収され別に成立しないとする判例",
+     "searched": [
+      "courts.py search 偽造通貨行使 詐欺（0件）",
+      "大審院（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（詐欺罪が偽造通貨行使罪に吸収されるという整理）。判例は確かめられていない。"
+   ],
+   "id": "exp-shiho-2016-keiho-q07-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-keiho-q07-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。人を逮捕し引き続き監禁した場合は、刑法220条の一罪が成立するのであり、逮捕罪と監禁罪の牽連犯とはならない。",
+   "body": "誤りは、逮捕罪と監禁罪が成立し「牽連犯となる」とする点である。刑法220条は「不法に人を逮捕し、又は監禁した者」を同一の法定刑で処罰しており、逮捕と監禁は同じ条に定められた一つの罪の態様である。最高裁昭和28年6月17日大法廷判決は、人を不法に逮捕し引き続き監禁した場合には、刑法220条1項の一罪が成立するとした。したがって、甲には逮捕監禁罪の一罪が成立するにとどまり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "220",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法に人を逮捕し、又は監禁した者",
+     "text_sha256": "d8ef399d30f380f6cab88d03eb7df7918dcbb43ebd2d82339b4ecf5563b90cd1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "逮捕に引き続く監禁の罪数",
+     "court": "最高裁判所大法廷",
+     "date": "1953-06-17",
+     "case_number": "昭和24(れ)1622",
+     "holding": "人を不法に逮捕し引き続き監禁した場合には、刑法220条1項の一罪が成立する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54302/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判決当時の刑法220条は1項・2項に分かれていた（裁判要旨の「第二二〇条第一項」）。現行法は項に分かれておらず、改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2016-keiho-q07-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-keiho-q07-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。凶器準備集合罪と、その後に集合の目的を遂げて犯した傷害罪とは、牽連犯ではなく併合罪になると解されている。",
+   "body": "誤りは、凶器準備集合罪と傷害罪が「牽連犯となる」とする点である。刑法54条1項後段の牽連犯は「犯罪の手段若しくは結果である行為が他の罪名に触れるとき」をいうが、ある罪が他の罪の手段となったというだけでは足りず、罪質上、通常一方が他方の手段又は結果となる関係にあることが必要と解されている。刑法208条の2第1項の凶器準備集合罪は、「他人の生命、身体又は財産に対し共同して害を加える目的で集合した場合」に凶器を準備して集合することを処罰するもので、その後に実際に加害行為に及ぶかどうかとは別に成立し、傷害罪とは別個の法益侵害を内容とする。そのため、凶器準備集合罪とその目的を遂げた傷害罪とは牽連犯の関係にはなく、併合罪（刑法45条）になると解されている（判例あり（要確認））。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるとき",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "208_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の生命、身体又は財産に対し共同して害を加える目的で集合した場合",
+     "text_sha256": "409d52424951d399e13966a89bec5db86042435cc6a3743988b1bd42f60ca9c1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "凶器準備集合罪とその後の傷害罪等の加害行為の罪とは牽連犯ではなく併合罪とする判例",
+     "searched": [
+      "courts.py search 凶器準備集合 傷害 併合罪（1件・無関係の再審事件）",
+      "courts.py search 凶器準備集合 牽連犯（0件）",
+      "courts.py search 凶器準備集合罪 併合罪（0件）"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（牽連犯の要件の理解、凶器準備集合罪と傷害罪の罪数）。判例は確かめられていない。"
+   ],
+   "id": "exp-shiho-2016-keiho-q07-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-keiho-q07-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、恐喝の手段として監禁が行われた場合でも、監禁罪と恐喝罪は牽連犯の関係にはないとしている（併合罪）。",
+   "body": "誤りは、監禁罪と恐喝罪が「牽連犯となる」とする点である。刑法54条1項後段は「犯罪の手段若しくは結果である行為が他の罪名に触れるとき」を牽連犯として最も重い刑で処断するが、最高裁平成17年4月14日判決は、恐喝の手段として監禁が行われた場合であっても、両罪は牽連犯の関係にはないとした。本肢の甲は、金品を喝取する目的でＡを監禁し、監禁により畏怖していたＡを脅迫して金品を脅し取っているが、この判例によれば、刑法220条の監禁罪と刑法249条1項の恐喝罪は牽連犯ではなく、併合罪（刑法45条）となる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるとき",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "220",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法に人を逮捕し、又は監禁した者",
+     "text_sha256": "d8ef399d30f380f6cab88d03eb7df7918dcbb43ebd2d82339b4ecf5563b90cd1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "249",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を恐喝して財物を交付させた者",
+     "text_sha256": "f84054d582866a7a23723a5ea55c12662213907cea3051a5145dc29f346ed71b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "恐喝の手段として監禁が行われた場合の罪数関係",
+     "court": "最高裁判所第一小法廷",
+     "date": "2005-04-14",
+     "case_number": "平成16(あ)2077",
+     "holding": "恐喝の手段として監禁が行われた場合であっても、両罪は牽連犯の関係にはない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50078/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "併合罪となる点は、判例の参照法条に刑法45条が挙げられていることと、牽連犯でない以上そうなるという理解による（解釈による）。"
+   ],
+   "id": "exp-shiho-2016-keiho-q07-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-keiho-q07-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。預金通帳の窃取（窃盗罪）と、それを使って行員を欺き払戻しを受ける行為（詐欺罪）は別個の行為であり、牽連犯の関係にもないから、併合罪となる。",
+   "body": "ポイントは、通帳の窃取と払戻しの詐取が、観念的競合や牽連犯ではなく併合罪となる点である。Ａ名義の預金通帳を盗む行為は「他人の財物を窃取した」ものとして刑法235条の窃盗罪にあたり、Ｂ銀行の窓口でＡに成り済まして行員を欺き払戻しを受けて金銭を得る行為は「人を欺いて財物を交付させた」ものとして刑法246条1項の詐欺罪にあたる。両者は時と場所を異にする別個の行為であるから「一個の行為」（刑法54条1項前段）ではない。また、窃盗は罪質上通常詐欺の手段となるものではないから、本肢のように目的・手段の関係があっても牽連犯にはあたらないと解されている（判例あり（要確認））。したがって、両罪は併合罪（刑法45条）となり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "235",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の財物を窃取した",
+     "text_sha256": "44f910b87f784daf350f25c4067c5a24e6e862555ec52f35ceea3c0cd53efc1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "246",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を欺いて財物を交付させた",
+     "text_sha256": "c515031b5f484a4ebf537cf5f2eb826a008d119836fd4627833e9cdb1f4a5053",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "預金通帳を窃取し、それを使って窓口で預金の払戻しを詐取した場合、窃盗罪と詐欺罪が併合罪となるとする判例",
+     "searched": [
+      "courts.py search 預金通帳 窃取 払戻 詐欺（27件・該当するものを見つけられず）",
+      "courts.py search 牽連犯 窃盗 詐欺 通帳（20件・該当するものを見つけられず）"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（窃盗と詐欺が牽連犯にあたらないという整理）。判例は確かめられていない。"
+   ],
+   "id": "exp-shiho-2016-keiho-q07-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
