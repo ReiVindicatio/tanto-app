@@ -1,0 +1,324 @@
+{
+ "question_id": "shiho-2015-keiho-q02",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-keiho-q02-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。業務妨害罪の「業務」は職業その他社会生活上の地位に基づき継続して行う事務・事業をいい、営利を目的とするかは問われないと解されている。",
+   "body": "ポイントは、233条・234条の「業務」に営利目的が必要かどうかである。業務妨害罪の「業務」とは、職業その他社会生活上の地位に基づいて継続して行う事務又は事業をいうと解されており、この定義を示した判例あり（要確認）。この定義は営利性を要件としておらず、経済的な取引活動に限らず、社会生活上の地位に基づいて継続して行う事務であれば「業務」にあたると解されている。判例も、営利を目的としない公職選挙法上の選挙長の立候補届出受理事務を業務妨害罪にいう「業務」にあたるとしている（最高裁平成12年2月17日決定）。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "233",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "偽計を用いて、人の信用を毀損し、又はその業務を妨害した者",
+     "text_sha256": "487ee3bcb48096dbc58f9ce1c67bb633458a0d13cc9c414f9ae1fe0d9e6d4690",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "234",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "威力を用いて人の業務を妨害した者も、前条の例による。",
+     "text_sha256": "893f23bcfbd8247a9329a939e83e6d196de6cefd6e0383608b942003430541cf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "選挙長の立候補届出受理事務と業務妨害罪にいう「業務」",
+     "court": "最高裁判所第二小法廷",
+     "date": "2000-02-17",
+     "case_number": "平成9(あ)324",
+     "holding": "公職選挙法上の選挙長の立候補届出受理事務は、強制力を行使する権力的公務ではないから、業務妨害罪にいう「業務」にあたる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51230/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [
+    {
+     "about": "業務妨害罪の「業務」を職業その他社会生活上の地位に基づき継続して行う事務又は事業と定義した判例",
+     "searched": [
+      "大審院（データベースにない）",
+      "courts.py search 業務 社会生活上の地位 業務妨害 --all（全文一致が多く特定できず）"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（「業務」の定義と営利性不要の理解）。"
+   ],
+   "id": "exp-shiho-2015-keiho-q02-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-keiho-q02-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。行政上の許可を得ていない営業でも、事実上平穏に継続されていれば業務妨害罪の「業務」にあたるとした裁判例があり、業務自体の適法性は厳格には要求されていない。",
+   "body": "誤りは、行政取締法規に違反した営業行為は「業務」にあたらないとする点である。東京高裁昭和27年7月3日判決は、浴場を所有者の承諾なく転借した者が、事実上平穏かつ公然に浴場を占拠して湯屋営業を継続している場合には、その者が湯屋営業について当時行政上の許可を持っていなくても、その営業は233条・234条にいう業務にあたるとした。業務妨害罪は、事実上平穏に行われている社会生活上の活動を保護するものであり、行政取締法規に違反するというだけで保護の対象から外れるものではないと解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "233",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その業務を妨害した者",
+     "text_sha256": "487ee3bcb48096dbc58f9ce1c67bb633458a0d13cc9c414f9ae1fe0d9e6d4690",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "234",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "威力を用いて人の業務を妨害した者も、前条の例による。",
+     "text_sha256": "893f23bcfbd8247a9329a939e83e6d196de6cefd6e0383608b942003430541cf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "行政上の許可のない湯屋営業と業務妨害罪の「業務」",
+     "court": "東京高等裁判所",
+     "date": "1952-07-03",
+     "case_number": "昭和27(う)306",
+     "holding": "浴場を所有者の承諾を得ないで転借した者が、事実上平穏かつ公然に浴場を占拠して湯屋営業を継続している場合には、湯屋営業について当時行政上の許可を持っていなくても、その営業は刑法233条・234条にいう業務にあたる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/21947/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "根拠は高等裁判所の裁判例である。",
+    "解釈による（業務の要保護性について、事実上平穏に行われていれば足りるとする理解）。"
+   ],
+   "id": "exp-shiho-2015-keiho-q02-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-keiho-q02-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。強制力を行使しない非権力的公務は、公務執行妨害罪の「職務」に含まれるとともに、判例上、業務妨害罪の「業務」にもあたるとされている。",
+   "body": "ポイントは、非権力的公務が公務執行妨害罪と業務妨害罪の両方で保護されるかである。95条1項の「職務を執行するに当たり」の職務について、最高裁昭和53年6月29日判決は、ひろく公務員が取り扱う各種各様の事務のすべてが含まれるとしており、非権力的公務も公務執行妨害罪の対象となる。他方、最高裁平成12年2月17日決定は、選挙長の立候補届出受理事務は強制力を行使する権力的公務ではないから業務妨害罪にいう「業務」にあたるとし、最高裁昭和62年3月12日決定も、県議会委員会の条例案採決等の事務を威力業務妨害罪にいう「業務」にあたるとした。したがって、非権力的公務は両罪の客体となりうるのであり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "95",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公務員が職務を執行するに当たり、これに対して暴行又は脅迫を加えた者",
+     "text_sha256": "f2dcdeeeb33050ac0f85e9e0f0d1b54bbbe404a5a366a9d6b4775616d51f073b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "234",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "威力を用いて人の業務を妨害した者も、前条の例による。",
+     "text_sha256": "893f23bcfbd8247a9329a939e83e6d196de6cefd6e0383608b942003430541cf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "刑法95条1項にいう職務の範囲（電報局長・次長の職務）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1978-06-29",
+     "case_number": "昭和51(あ)310",
+     "holding": "刑法95条1項にいう職務には、ひろく公務員が取り扱う各種各様の事務のすべてが含まれる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50199/detail2/index.html"
+     ]
+    },
+    {
+     "name": "選挙長の立候補届出受理事務と業務妨害罪にいう「業務」",
+     "court": "最高裁判所第二小法廷",
+     "date": "2000-02-17",
+     "case_number": "平成9(あ)324",
+     "holding": "公職選挙法上の選挙長の立候補届出受理事務は、強制力を行使する権力的公務ではないから、業務妨害罪にいう「業務」にあたる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51230/detail2/index.html"
+     ]
+    },
+    {
+     "name": "県議会委員会の条例案採決等の事務と威力業務妨害罪の「業務」",
+     "court": "最高裁判所第一小法廷",
+     "date": "1987-03-12",
+     "case_number": "昭和59(あ)627",
+     "holding": "県議会委員会の条例案採決等の事務は、威力業務妨害罪にいう「業務」にあたる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50322/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（両罪の重なりの整理）。"
+   ],
+   "id": "exp-shiho-2015-keiho-q02-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-keiho-q02-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、威力を「用いて」といえるためには、人の意思を制圧するような勢力を用いれば足り、直接現に業務に従事している他人に対してなされることを要しないとしている。",
+   "body": "誤りは、威力が「直接現に業務に従事している他人に対してなされることを要する」とする点である。最高裁昭和32年2月21日判決は、234条にいう威力を用いるとは、一定の行為の必然的結果として、人の意思を制圧するような勢力を用いれば足り、必ずしもそれが直接現に業務に従事している他人に対してなされることを要しないとした。また最高裁平成4年11月27日決定は、被害者の事務机の引き出し内に赤く染めた猫の死がいを入れておくなどして、被害者に発見させ畏怖させるに足りる状態においた行為を、威力を用いた場合にあたるとしている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "234",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "威力を用いて人の業務を妨害した者も、前条の例による。",
+     "text_sha256": "893f23bcfbd8247a9329a939e83e6d196de6cefd6e0383608b942003430541cf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "刑法234条にいう「威力を用い」の意義",
+     "court": "最高裁判所第一小法廷",
+     "date": "1957-02-21",
+     "case_number": "昭和31(あ)1864",
+     "holding": "刑法234条にいう「威力ヲ用ヒ」とは、一定の行為の必然的結果として人の意思を制圧するような勢力を用いれば足り、必ずしもそれが直接現に業務に従事している他人に対してなされることを要しない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51484/detail2/index.html"
+     ]
+    },
+    {
+     "name": "猫の死がい事件（事務机の引き出しに猫の死がいを入れた行為と「威力」）",
+     "court": "最高裁判所第二小法廷",
+     "date": "1992-11-27",
+     "case_number": "平成4(あ)267",
+     "holding": "被害者の事務机引き出し内に赤く染めた猫の死がいを入れておくなどして、被害者にこれを発見させ、畏怖させるに足りる状態においた一連の行為は、刑法234条にいう「威力ヲ用ヒ」た場合にあたる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50129/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判決当時の234条は「威力ヲ用ヒ」の文言であったが、現行の本文は「威力を用いて」。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2015-keiho-q02-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-keiho-q02-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、業務妨害罪の「妨害」とは現に業務妨害の結果が発生したことを必要とせず、業務を妨害するに足りる行為があれば足りるとしている。",
+   "body": "ポイントは、233条・234条の「業務を妨害した」に現実の妨害結果が必要かどうかである。最高裁昭和28年1月30日判決は、刑法234条の業務妨害罪にいう業務の妨害とは、現に業務妨害の結果の発生を必要とせず、業務を妨害するに足りる行為があることをもって足りるとした。同判決は、業務とは現実に執行している個々の業務に限らず、被害者の地位にかんがみその任として遂行すべき業務をも含むとも述べている。このように業務妨害罪は、妨害の結果の発生を要しない危険犯と解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "233",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その業務を妨害した者",
+     "text_sha256": "487ee3bcb48096dbc58f9ce1c67bb633458a0d13cc9c414f9ae1fe0d9e6d4690",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "234",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "威力を用いて人の業務を妨害した者も、前条の例による。",
+     "text_sha256": "893f23bcfbd8247a9329a939e83e6d196de6cefd6e0383608b942003430541cf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "業務妨害罪の「妨害」と「威力」の意義",
+     "court": "最高裁判所第二小法廷",
+     "date": "1953-01-30",
+     "case_number": "昭和25(れ)1864",
+     "holding": "刑法234条の業務妨害罪にいう業務の「妨害」とは、現に業務妨害の結果の発生を必要とせず、業務を妨害するに足りる行為があることをもって足り、「業務」とは現実に執行している個々の業務に限らず、被害者の当該業務における地位にかんがみその任として遂行すべき業務をも含む。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53401/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（業務妨害罪を危険犯とする整理）。"
+   ],
+   "id": "exp-shiho-2015-keiho-q02-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
