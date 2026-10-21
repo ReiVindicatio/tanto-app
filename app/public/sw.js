@@ -3,7 +3,7 @@
 // - /assets/*（ビルドごとに名前が変わる）：保存したものを優先
 // - /data/*.json：保存したものをすぐ返し、裏で取り直す（次の起動で新しいデータが反映される）
 // - /api/*：保存しない（未送信の回答はアプリの仕組みでオンラインに戻ったら送る）
-const VERSION = "v1";
+const VERSION = "v2";
 // 照合では Vary ヘッダーを無視する（モジュールの JS は Origin 付きで読まれ、保存時のリクエストと食い違うため）
 const SHELL = `shell-${VERSION}`;
 const DATA = `data-${VERSION}`;
@@ -54,6 +54,8 @@ self.addEventListener("fetch", (event) => {
   if (req.method !== "GET") return;
   const url = new URL(req.url);
   if (url.origin !== location.origin || url.pathname.startsWith("/api/")) return;
+  // 問ごとの静的ページ（T045）・サイトマップはアプリの画面ではないので、保存も差し替えもしない
+  if (url.pathname.startsWith("/q/") || url.pathname === "/sitemap.xml" || url.pathname === "/robots.txt") return;
 
   if (req.mode === "navigate") {
     event.respondWith(

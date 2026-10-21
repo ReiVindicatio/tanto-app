@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && node scripts/pages.mjs",
     "preview": "vite preview",
     "test": "vitest run",
     "e2e": "playwright test",
-    "e2e:sync": "VITE_AUTH_MODE=test vite build && playwright test -c playwright.sync.config.ts",
+    "e2e:sync": "VITE_AUTH_MODE=test vite build && node scripts/pages.mjs && playwright test -c playwright.sync.config.ts",
     "typecheck:worker": "tsc -p worker/tsconfig.json"
   },
   "dependencies": {

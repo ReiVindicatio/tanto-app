@@ -71,7 +71,8 @@
 | 退会（記録を全部消す） | ✅ | T040。マイページのアカウント欄。サーバーの記録 → Firebase のアカウント → 端末の記録の順に消す（2回確認）。ログインしていなければ端末の記録だけ。誤り報告は送った人を消して残す |
 | 使いすぎの制限（見えない安全網） | ✅ | T040。Cloudflare の Rate Limiting（IP ごと1分120回・利用者ごと1分60回）と、1日の上限（回答2万件・報告50件）。超えても画面には出さず、端末からあとで送り直す |
 | 利用規約・プライバシーポリシー | ✅ | T040。`/terms`・`/privacy`。フッターとマイページから。運営者は ReiVindicatio、問い合わせ先は GitHub の Issues |
-| 公開（デプロイ） | ✅ | T002。https://tantan.reivindicatio0321.workers.dev/ （Cloudflare Workers・push で自動更新・noindex） |
+| 公開（デプロイ） | ✅ | T002・T043。https://tantan.reivindicatio0321.workers.dev/ （Cloudflare Workers・push で自動更新）。アプリ名「たんたん」。リポジトリは public |
+| 検索エンジン・問ごとのページ | ✅ | T044・T045。robots.txt（/api/ だけ不可）・説明と OGP・サイトマップ。問ごとの静的ページ `/q/<問の ID>/`（問題文・前提・肢。正解と解説は折りたたみ。出典・非公式・AI 生成の表示つき）と年度・科目ごとの一覧。ビルドの最後に `scripts/pages.mjs` で作る |
 | ホーム画面に追加（PWA）・オフライン | ✅ | T030。一度開けば通信なしで全科目を解ける。問題データの更新は次に開いたときに反映 |
 | スマホアプリ（Capacitor） | ❌ | → T019（PWA で足りるかを見てから） |
 

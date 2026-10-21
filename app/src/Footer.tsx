@@ -11,6 +11,9 @@ export default function Footer({ attribution }: { attribution?: Attribution }) {
       </p>
       <p>このアプリは法務省とは関係のない個人が作成した非公式のものです。</p>
       <p className="footer-links">
+        <a className="small" href="/q/">
+          過去問の一覧（問題文と解説）
+        </a>
         <button className="link small" onClick={() => navigate({ name: "terms" })}>
           利用規約
         </button>
