@@ -90,6 +90,14 @@ def dedup_key_text(t: str) -> str:
 ANSWER_SLOTS = re.compile(r"[（(]解答欄は[^）)]*[）)]")  # 「（解答欄は、アからオの順に［No.32］から［No.36］）」。試験ごとに番号が違う（T042）
 
 
+SLOT_MARK = re.compile(r"[［\[]\s*(?:№|No\.?|Ｎｏ．?)\s*[0-9０-９]+\s*[］\]]")  # 肢の本文の末尾の「[№11]」。試験ごとに番号が違う（T042）
+
+
+def dedup_statement(text: str) -> str:
+    """肢の本文（解答欄の番号は除く）"""
+    return dedup_key_text(SLOT_MARK.sub("", text))
+
+
 def dedup_context(q: dict) -> str:
     """前提文が要る肢を比べるときのリード文＋前提文（解答欄の番号は除く）"""
     return dedup_key_text(ANSWER_SLOTS.sub("", q["stem"]) + "".join(c["text"] for c in q["context"]))
@@ -106,7 +114,7 @@ def dedup(docs: list[dict]) -> tuple[dict[str, str], list[str]]:
                 continue
             q = qs[st["question_id"]]
             ctx = dedup_context(q) if st["requires_context"] else ""
-            groups.setdefault((doc["subject"], dedup_key_text(st["text"]), ctx), []).append((doc, q, st))
+            groups.setdefault((doc["subject"], dedup_statement(st["text"]), ctx), []).append((doc, q, st))
     aliases, conflicts = {}, []
     for members in groups.values():
         if len(members) < 2:

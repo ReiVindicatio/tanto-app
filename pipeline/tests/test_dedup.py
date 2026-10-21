@@ -31,6 +31,14 @@ class DedupTest(unittest.TestCase):
         self.assertEqual(aliases, {"shiho-2023-keiho-q01-a": "yobi-2023-keiho-q01-a"})
         self.assertEqual(conflicts, [])
 
+    def test_slot_mark_in_statement_text_is_ignored(self):
+        y = doc("yobi", 2016, "（解答欄は、［№５］）")
+        s = doc("shiho", 2016, "（解答欄は、［№11］）")
+        y["statements"][0]["text"] += "[№５]"
+        s["statements"][0]["text"] += "[№11]"
+        aliases, _ = dedup([y, s])
+        self.assertEqual(aliases, {"shiho-2016-keiho-q01-a": "yobi-2016-keiho-q01-a"})
+
     def test_different_lead_text_is_not_merged(self):
         y = doc("yobi", 2023, "（解答欄は、［№15］）")
         s = doc("shiho", 2023, "（解答欄は、［No.32］）", stem_extra="ただし、見解Ｂに立つものとする。")
