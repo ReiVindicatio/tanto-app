@@ -1,0 +1,103 @@
+{
+ "question_id": "shiho-2013-keiso-q30",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiso-q30-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。証拠調べに関する異議の申立てについて決定をするのは「裁判所」であり、合議体で審理する事件では裁判長が単独で判断することはできない。",
+   "body": "誤りは「裁判長は…他の裁判官との合議を経る必要がない」という点である。検察官の尋問に対する異議は、刑事訴訟法309条1項の「証拠調に関し異議を申し立てることができる」場合に当たる。同条3項は「裁判所は、前二項の申立について決定をしなければならない」と定めており、異議の申立てについて判断する主体は裁判長ではなく裁判所である。【事例】では合議体で審理及び裁判をする旨の決定がされているから、異議に対する決定は合議体として、すなわち他の裁判官との合議を経てしなければならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "309",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証拠調に関し異議を申し立てることができる",
+     "text_sha256": "7c27d713b1c64f34226fbaa04a18f621bc14fd076394be879dc953fbfdd3ab1c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "309",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "裁判所は、前二項の申立について決定をしなければならない",
+     "text_sha256": "7c27d713b1c64f34226fbaa04a18f621bc14fd076394be879dc953fbfdd3ab1c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "合議体の裁判所が決定をするには合議を経るという点は、309条3項の「裁判所」の文言からの理解による（解釈による）。"
+   ],
+   "id": "exp-shiho-2013-keiso-q30-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiso-q30-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。証拠調べをする決定は訴訟手続に関し判決前にした決定であり、抗告をすることはできない（不服は異議の申立てによる）。",
+   "body": "誤りは「直ちに抗告する必要がある」という点である。刑事訴訟法420条1項は「裁判所の管轄又は訴訟手続に関し判決前にした決定に対しては、この法律に特に即時抗告をすることができる旨の規定がある場合を除いては、抗告をすることはできない」と定めている。検察官調書を取り調べる旨の決定は、公判の訴訟手続に関し判決前にした決定であり、即時抗告を認める特別の規定もないから、抗告をすることはできない。この決定に不服がある弁護人は、同法309条1項により「証拠調に関し異議を申し立てる」ことで争うことになる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "420",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所の管轄又は訴訟手続に関し判決前にした決定に対しては、この法律に特に即時抗告をすることができる旨の規定がある場合を除いては、抗告をすることはできない",
+     "text_sha256": "9687168843be73f6dc0dfd45a59005b165424f4e982444ee1cb778e2a784276f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "309",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証拠調に関し異議を申し立てる",
+     "text_sha256": "7c27d713b1c64f34226fbaa04a18f621bc14fd076394be879dc953fbfdd3ab1c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2013-keiso-q30-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

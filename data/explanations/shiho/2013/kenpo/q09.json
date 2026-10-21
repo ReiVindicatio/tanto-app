@@ -1,0 +1,175 @@
+{
+ "question_id": "shiho-2013-kenpo-q09",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-kenpo-q09-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。憲法29条は私有財産制度と国民の個々の財産権の両方を保障しており（森林法共有林事件）、その財産権には物権に限らず債権や知的財産権なども含まれると解されている。",
+   "body": "憲法29条1項は「財産権は、これを侵してはならない。」と定める。最高裁（森林法共有林事件）は、同条が私有財産制度を保障しているだけでなく、国民の個々の財産権を基本的人権として保障していると述べており、制度と具体的な権利の両方を保障するという肢の前半はこれに沿う。保障される財産権の範囲は条文に列挙されていないが、所有権などの物権に限らず、債権・知的財産権など財産的価値を有する権利一般を含むと解されている。したがって肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "29",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "財産権は、これを侵してはならない。",
+     "text_sha256": "ab17600bf9dc05c32c76481239e9c7ac554e08313e2a699d0a12570187c51dde",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [
+    {
+     "name": "森林法共有林事件",
+     "court": "最高裁判所大法廷",
+     "date": "1987-04-22",
+     "case_number": "昭和59(オ)805",
+     "holding": "憲法29条は、私有財産制度を保障しているのみでなく、社会的経済的活動の基礎をなす国民の個々の財産権につきこれを基本的人権として保障するとともに、立法府は公共の福祉に適合する限り財産権に規制を加えることができるとしている（全文）。森林法186条本文は憲法29条2項に違反する（裁判要旨）。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55203/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "財産権に債権・知的財産権などが含まれるという点は解釈による（条文に列挙はない）"
+   ],
+   "id": "exp-shiho-2013-kenpo-q09-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-kenpo-q09-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。財産権の制約を法律の根拠なしに政令だけで定めることは許されない（政令で権利を制限するには法律の委任が要る）。",
+   "body": "憲法29条2項は「財産権の内容は、公共の福祉に適合するやうに、法律でこれを定める。」と定める。政令について、憲法73条6号は内閣が「この憲法及び法律の規定を実施するために、政令を制定すること」と定め、内閣法11条は「政令には、法律の委任がなければ、義務を課し、又は権利を制限する規定を設けることができない。」と定める。したがって、財産権の制約を法律によらずに政令だけで定めることは許されず、肢の後半が誤り。なお、肢の前半（内容は必ず法律で定める）については、地方公共団体の条例による財産権の制限がどこまで許されるかという別の論点がある。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "29",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "財産権の内容は、公共の福祉に適合するやうに、法律でこれを定める。",
+     "text_sha256": "ab17600bf9dc05c32c76481239e9c7ac554e08313e2a699d0a12570187c51dde",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "73",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この憲法及び法律の規定を実施するために、政令を制定すること",
+     "text_sha256": "edd0bc44219efd4b718ab6544896bf6639962cb675ee319ccae43a433f235998",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "内閣法",
+     "article": "11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "政令には、法律の委任がなければ、義務を課し、又は権利を制限する規定を設けることができない。",
+     "text_sha256": "046ef3f8050470d8b17b413be485c5b13e35d2a766de42a4a9bc3ec1b9865bce",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "条例による財産権の制限の論点は触れるにとどめ、判例は載せていない"
+   ],
+   "id": "exp-shiho-2013-kenpo-q09-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-kenpo-q09-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。公務員の故意・過失による違法な行為で損害を受けたときに求めるのは損失補償ではなく損害賠償（国家賠償）である。",
+   "body": "憲法17条は、公務員の不法行為により損害を受けたときは「国又は公共団体に、その賠償を求めることができる」と定め、これを受けて国家賠償法1条1項は、公務員が「故意又は過失によつて違法に他人に損害を加えたときは、国又は公共団体が、これを賠償する責に任ずる。」と定める。これに対し、損失補償は、憲法29条3項の「私有財産は、正当な補償の下に、これを公共のために用ひることができる。」に基づくもので、適法な公権力の行使によって生じた特別の犠牲を填補するものと解されている。肢は違法な行為による侵害について「損失補償」としている点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "17",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "何人も、公務員の不法行為により、損害を受けたときは、法律の定めるところにより、国又は公共団体に、その賠償を求めることができる。",
+     "text_sha256": "25c1fd05dbb0d1de30471ae2f7bb233abb2dbe429700922db75801cc2fb17fc0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "国家賠償法",
+     "article": "1",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "故意又は過失によつて違法に他人に損害を加えたときは、国又は公共団体が、これを賠償する責に任ずる。",
+     "text_sha256": "a05dbc48df7f04346b42aef12cdca4a641f40d702fc521d5514a29fdd33739a3",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%BA%8C%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "29",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "私有財産は、正当な補償の下に、これを公共のために用ひることができる。",
+     "text_sha256": "ab17600bf9dc05c32c76481239e9c7ac554e08313e2a699d0a12570187c51dde",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "損失補償が適法な行為による特別の犠牲を填補するものという点は解釈による"
+   ],
+   "id": "exp-shiho-2013-kenpo-q09-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,160 @@
+{
+ "question_id": "shiho-2013-kenpo-q17",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-kenpo-q17-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。国会による首相の指名（67条）、内閣の連帯責任（66条3項）、不信任決議と解散（69条）などの規定から、日本国憲法は議院内閣制を採用していると解されている。",
+   "body": "肢が挙げる仕組みは、いずれも憲法に定めがあります。67条1項は「内閣総理大臣は、国会議員の中から国会の議決で、これを指名する。」と定め、66条3項は「内閣は、行政権の行使について、国会に対し連帯して責任を負ふ。」と定めます。また69条は、衆議院が「不信任の決議案を可決し、又は信任の決議案を否決したときは、十日以内に衆議院が解散されない限り、総辞職をしなければならない。」と定めています。内閣の成立と存続が国会（特に衆議院）の信任に依存するこれらの仕組みから、日本国憲法は議院内閣制を採用していると一般に解されており、肢の記述は正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "67",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣総理大臣は、国会議員の中から国会の議決で、これを指名する。",
+     "text_sha256": "f25ffcbc7f075a4c2f8d1c567e53b025773e6458db65cdec8c03b1bccdab9215",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "66",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "内閣は、行政権の行使について、国会に対し連帯して責任を負ふ。",
+     "text_sha256": "d85cadf632b959526c603fb4d9d162be04533a5126acd874d196f12811c25170",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "69",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不信任の決議案を可決し、又は信任の決議案を否決したときは、十日以内に衆議院が解散されない限り、総辞職をしなければならない。",
+     "text_sha256": "d92c34a9e480ab6cf17defd14264f712c4beab82873110b542c1aa7613326751",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "解釈による（議院内閣制を採用しているとの一般的な理解）"
+   ],
+   "id": "exp-shiho-2013-kenpo-q17-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-kenpo-q17-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。国務大臣の過半数は「国会議員の中から」選べば足り（68条1項）、衆議院議員に限られないので、「衆議院議員の中から」とする部分が誤り。",
+   "body": "誤りは「その過半数は衆議院議員の中から選ばなければならない」という部分です。68条1項は「内閣総理大臣は、国務大臣を任命する。但し、その過半数は、国会議員の中から選ばれなければならない。」と定めており、過半数の要件は国会議員であれば足り、参議院議員でもかまいません。なお、内閣総理大臣が国会議員の中から指名されること（67条1項「内閣総理大臣は、国会議員の中から国会の議決で、これを指名する。」）や、国務大臣に国会議員以外の者を任命できることは、肢のとおりです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "68",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣総理大臣は、国務大臣を任命する。但し、その過半数は、国会議員の中から選ばれなければならない。",
+     "text_sha256": "05f36f177db8243d23e91567dcdf69b92d5edc3abc8b2a85966f5a545c5f39f5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "67",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣総理大臣は、国会議員の中から国会の議決で、これを指名する。",
+     "text_sha256": "f25ffcbc7f075a4c2f8d1c567e53b025773e6458db65cdec8c03b1bccdab9215",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2013-kenpo-q17-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-kenpo-q17-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。総選挙の後に初めて国会の召集があったときは、内閣は必ず総辞職しなければならず（70条）、与党が過半数を得ても総辞職するか否かを自ら決めることはできない。",
+   "body": "誤りは「内閣は総辞職するか否か自ら決することができる」という部分です。69条により不信任決議に対して内閣が衆議院を解散した場合、その後に総選挙が行われます。70条は「衆議院議員総選挙の後に初めて国会の召集があつたときは、内閣は、総辞職をしなければならない。」と定めており、総選挙の結果、与党が過半数の議席を得たかどうかは問いません。したがって、内閣はいったん総辞職しなければならず、肢の記述は誤りです（同じ人物が改めて内閣総理大臣に指名されることはあり得ます）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "70",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "衆議院議員総選挙の後に初めて国会の召集があつたときは、内閣は、総辞職をしなければならない。",
+     "text_sha256": "e1dffb676d29ec59706012c9a9fb3c3cc6f5ae8bcbb9ffed720e96a747b7a9aa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "69",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "十日以内に衆議院が解散されない限り、総辞職をしなければならない。",
+     "text_sha256": "d92c34a9e480ab6cf17defd14264f712c4beab82873110b542c1aa7613326751",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2013-kenpo-q17-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
