@@ -1,0 +1,206 @@
+{
+ "question_id": "shiho-2020-minpo-q06",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q06-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。地上権も土地を使用する物権なので、地上権に基づく妨害排除請求として自動車の撤去を求めることができると解されている。",
+   "body": "民法265条は「地上権者は、他人の土地において工作物又は竹木を所有するため、その土地を使用する権利を有する。」と定めています。物権的請求権は民法に明文の規定はありませんが、物権の内容の実現が妨げられているときに、その妨害の排除を求めることができる権利として、所有権に限らず地上権のような用益物権にも認められると解されています。Ｂが甲土地に自動車を無断で放置することは、Ａの地上権に基づく土地の使用を妨げるものです。したがって、Ａは地上権に基づく妨害排除請求権の行使として自動車の撤去を求めることができ、できないとする本肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "265",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地上権者は、他人の土地において工作物又は竹木を所有するため、その土地を使用する権利を有する。",
+     "text_sha256": "2094168b43153d58b26898c30eba33b4d7575c57aa36a95109a8493efcdab658",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "物権的請求権に明文の規定はなく、用益物権に基づく妨害排除請求が認められる点は解釈による。"
+   ],
+   "id": "exp-shiho-2020-minpo-q06-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q06-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。妨害予防請求権は所有権が侵害されるおそれがあれば認められ、過去に実際に損傷させたことは要件ではないと解されている。",
+   "body": "所有権に基づく妨害予防請求権は、所有権が将来侵害されるおそれがあるときに、その予防を求める権利と解されています。民法に明文の規定はありませんが、占有の訴えについて民法199条が「占有者がその占有を妨害されるおそれがあるときは、占有保全の訴えにより、その妨害の予防又は損害賠償の担保を請求することができる。」と定めているのと同じく、侵害のおそれがあれば足ります。本肢では、Ａの鉄塔が傾いてＢの甲建物を損傷させるおそれが生じています。過去に一度も損傷させたことがないことは、請求を拒む理由になりません。したがって、本肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有者がその占有を妨害されるおそれがあるときは、占有保全の訴えにより、その妨害の予防又は損害賠償の担保を請求することができる。",
+     "text_sha256": "9db855ea6df2a3c26bf6ba88f08743336331664b7213942346f661b70fd2b843",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "物権的請求権に明文の規定はなく、妨害予防請求権の要件は解釈による。199条は占有の訴えの規定で、対比として挙げた。"
+   ],
+   "id": "exp-shiho-2020-minpo-q06-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q06-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。所有権は消滅時効にかからず（166条2項は「所有権以外の財産権」に限る）、所有権に基づく妨害排除請求権も消滅時効にかからないと解されている。",
+   "body": "民法166条2項は「債権又は所有権以外の財産権は、権利を行使することができる時から二十年間行使しないときは、時効によって消滅する。」と定め、所有権を消滅時効の対象から外しています。所有権に基づく物権的請求権は所有権から生じる権利であり、所有権が存続する限り、それとは別に消滅時効にかかることはないと解されています（判例あり（要確認））。したがって、自動車の放置から20年が経過していても、Ａは妨害排除請求権の消滅時効を援用してＢの請求を拒むことはできず、本肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "166",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権又は所有権以外の財産権は、権利を行使することができる時から二十年間行使しないときは、時効によって消滅する。",
+     "text_sha256": "1486101bc71d3c4203815fde63101bc9f784105f2a086ecbe1b4b91126c82bcd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "所有権に基づく物権的請求権（妨害排除請求権）は消滅時効にかからないとする判例",
+     "searched": [
+      "courts.py search 消滅時効 所有権に基づく 妨害排除",
+      "大審院（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "物権的請求権が独立に消滅時効にかからない点は解釈による。"
+   ],
+   "id": "exp-shiho-2020-minpo-q06-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q06-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。物権的請求権は相手方の故意過失を要件としないので、Ｂは故意過失がないことを主張立証しても請求を拒めないと解されている。",
+   "body": "物権的請求権は、物権の内容が妨げられている客観的な状態を除くための権利であり、相手方の故意過失は要件ではないと解されています。これに対し、不法行為による損害賠償について民法709条は「故意又は過失によって他人の権利又は法律上保護される利益を侵害した者」に責任を負わせ、故意過失を要件としています。本肢では、Ｂの自動車が洪水で甲土地に流されてきており、Ｂに故意過失がなくても、自動車が甲土地にあることでＡの所有権が妨げられている状態に変わりはありません。したがって、Ｂは故意過失がないことを主張立証してもＡの撤去請求を拒むことはできず、本肢は正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "709",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "故意又は過失によって他人の権利又は法律上保護される利益を侵害した者",
+     "text_sha256": "8029deadb1259b68934cd034bed9cbaf1c223bbb9c091dfd88dcfb8c638e49ef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "物権的請求権が故意過失を要件としない点は解釈による。"
+   ],
+   "id": "exp-shiho-2020-minpo-q06-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q06-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。物権的請求権は妨害している物の所有者という客観的な地位に基づいて向けられるので、相手方が未成年者であることは請求を拒む理由にならないと解されている。",
+   "body": "物権的請求権は、物権の内容が妨げられている客観的な状態を除くための権利であり、相手方の故意過失や責任能力は要件ではないと解されています。未成年者についての民法5条は、未成年者が「法律行為をするには、その法定代理人の同意を得なければならない。」とする規定であり、自転車を放置して他人の土地の所有権を妨げている状態についての責任を免れさせるものではありません。また、民法712条の責任能力の規定は「賠償の責任を負わない」とする損害賠償についての規定です。したがって、Ｂは未成年者であることを理由にＡの撤去請求を拒むことはできず、本肢は正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律行為をするには、その法定代理人の同意を得なければならない。",
+     "text_sha256": "41659855924ba702729f1bdac3f46add3ca097fdcda242a6f5e99f0d612d0360",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "712",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賠償の責任を負わない",
+     "text_sha256": "866e723ad2136dcb8a5c5558fdabd305dbbb8cfc6c09ecf845bda67bf696319e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "物権的請求権が相手方の行為能力・責任能力を問わない点は解釈による。"
+   ],
+   "id": "exp-shiho-2020-minpo-q06-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

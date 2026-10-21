@@ -1,0 +1,247 @@
+{
+ "question_id": "shiho-2020-minpo-q02",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q02-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。定款の目的自体に含まれない行為でも、目的遂行に必要な行為は「目的の範囲内」に属する（判例）。",
+   "body": "民法34条は、法人は「定款その他の基本約款で定められた目的の範囲内において、権利を有し、義務を負う。」と定めています。最高裁昭和27年2月15日判決は、会社の目的自体に包含されない行為であっても、目的遂行に必要な行為は目的の範囲内に属するとし、目的遂行に必要かどうかは、定款記載の目的自体から観察して、客観的に抽象的に必要であり得るかどうかの基準で決すべきであるとしました。したがって、目的に含まれない行為でも目的遂行に必要な行為については権利能力を有するとする本肢は正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "34",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "定款その他の基本約款で定められた目的の範囲内において、権利を有し、義務を負う。",
+     "text_sha256": "b98dee926d3f81b365fe0904908a998d23726f967c2bdfed32a0b387dd3f3a8f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "会社の目的の範囲と目的遂行に必要な行為",
+     "court": "最高裁判所第二小法廷",
+     "date": "1952-02-15",
+     "case_number": "昭和24(オ)64",
+     "holding": "会社の目的自体に包含されない行為であっても、目的遂行に必要な行為は目的の範囲内に属する。目的遂行に必要かどうかは、定款記載の目的自体から観察して、客観的に抽象的に必要であり得るかどうかの基準に従って決すべきである。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57147/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "判例は会社（当時の民法43条）についてのもの。現行の民法34条の下でも同じ理解とされている（解釈による）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2020-minpo-q02-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q02-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。法人が代表者の行為について責任を負う場合でも、不法行為をした理事個人も709条の責任を負うと解されている。",
+   "body": "一般社団法人及び一般財団法人に関する法律78条は「一般社団法人は、代表理事その他の代表者がその職務を行うについて第三者に加えた損害を賠償する責任を負う。」と定めますが、理事個人の責任を免除する規定ではありません。理事自身の行為が民法709条の「故意又は過失によって他人の権利又は法律上保護される利益を侵害した者」に当たる以上、理事は個人としても不法行為責任を負い、法人の責任と併存すると解されています（判例あり（要確認））。したがって、理事は個人として責任を負うことはないとする本肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "78",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一般社団法人は、代表理事その他の代表者がその職務を行うについて第三者に加えた損害を賠償する責任を負う。",
+     "text_sha256": "6d0edce66c758476cca39b5e20c261d5711d3ce9a80bedc596d11a59ac2a4815",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "709",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "故意又は過失によって他人の権利又は法律上保護される利益を侵害した者",
+     "text_sha256": "8029deadb1259b68934cd034bed9cbaf1c223bbb9c091dfd88dcfb8c638e49ef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "法人の機関として不法行為をした理事が個人としても不法行為責任を負うとする判例",
+     "searched": [
+      "courts.py search 四四条 理事 個人 不法行為"
+     ]
+    }
+   ],
+   "notes": [
+    "理事個人の責任が法人の責任と併存するという点は解釈による。"
+   ],
+   "id": "exp-shiho-2020-minpo-q02-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q02-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。職務権限外の行為が外形上職務行為に属すると認められても、相手方が職務行為に属さないことを知っていたときは、法人は賠償責任を負わない（判例）。",
+   "body": "一般社団法人及び一般財団法人に関する法律78条は、法人は代表者が「その職務を行うについて第三者に加えた損害を賠償する責任を負う。」と定めています。最高裁昭和50年7月14日判決は、地方公共団体の長のした職務権限外の行為が外形からみてその職務行為に属するものと認められる場合であっても、相手方がその職務行為に属さないことを知り、又はこれを知らないことに重大な過失のあるときは、地方公共団体は当時の民法の規定による損害賠償責任を負わないとしました。相手方が知っていた場合には外形を信頼したとはいえないからです。したがって、本肢は正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "78",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その職務を行うについて第三者に加えた損害を賠償する責任を負う。",
+     "text_sha256": "6d0edce66c758476cca39b5e20c261d5711d3ce9a80bedc596d11a59ac2a4815",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "法人の代表者の職務権限外の行為と相手方の悪意・重過失",
+     "court": "最高裁判所第二小法廷",
+     "date": "1975-07-14",
+     "case_number": "昭和49(オ)797",
+     "holding": "地方公共団体の長のした職務権限外の行為が外形からみてその職務行為に属するものと認められる場合であっても、相手方がその職務行為に属さないことを知り、又はこれを知らないことに重大な過失のあるときは、当該地方公共団体は相手方に対し民法44条1項による損害賠償責任を負わない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52131/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "判例は改正前の民法44条1項についてのもの。改正前の内容は条文の本文で確認していない。現行法で一般社団法人について同じ役割を果たすのが一般法人法78条であるという整理は解釈による。"
+   ],
+   "id": "exp-shiho-2020-minpo-q02-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q02-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。認許された外国法人も「外国人が享有することのできない権利」は取得できない（35条2項ただし書）。",
+   "body": "民法35条2項本文は、認許された外国法人は「日本において成立する同種の法人と同一の私権を有する。」と定めています。しかし、同項ただし書は「外国人が享有することのできない権利及び法律又は条約中に特別の規定がある権利については、この限りでない。」としています。したがって、外国人が享有することのできない権利であっても同種の内国法人と同様に取得できるとする本肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "35",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "日本において成立する同種の法人と同一の私権を有する。",
+     "text_sha256": "dd619663f455338d7e9947550817cb983e8f843d69ee3d181255283249e0d57c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "35",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "外国人が享有することのできない権利及び法律又は条約中に特別の規定がある権利については、この限りでない。",
+     "text_sha256": "dd619663f455338d7e9947550817cb983e8f843d69ee3d181255283249e0d57c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q02-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q02-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。設立登記が成立要件の法人は、登記をしなければ成立せず、活動の実態があっても法人としての権利能力は認められない。",
+   "body": "民法33条1項は「法人は、この法律その他の法律の規定によらなければ、成立しない。」と定めています。例えば一般社団法人について、一般社団法人及び一般財団法人に関する法律22条は「一般社団法人は、その主たる事務所の所在地において設立の登記をすることによって成立する。」としています。このように設立登記が成立要件とされている法人は、登記がされるまでは法人として成立しておらず、活動の実態があるからといって法人としての権利能力（定款の目的の範囲内のものを含む）が認められるわけではありません。したがって、本肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "33",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法人は、この法律その他の法律の規定によらなければ、成立しない。",
+     "text_sha256": "be79ad8914f4011464b7a0ba95b7f17fd2dc3331b5f9088841f9289e65de20f5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "22",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一般社団法人は、その主たる事務所の所在地において設立の登記をすることによって成立する。",
+     "text_sha256": "d15ba9ba616dab339838c8fcedc032563bc35b8d82c2ccc035104492faf1a46c",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q02-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,224 @@
+{
+ "question_id": "shiho-2020-minpo-q04",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q04-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。履行か損害賠償かは「相手方の選択に従い」決まるので、無権代理人Ａが自ら選ぶことはできない（117条1項）。",
+   "body": "民法117条1項は、他人の代理人として契約をした者は、自己の代理権を証明したとき、又は本人の追認を得たときを除き、「相手方の選択に従い、相手方に対して履行又は損害賠償の責任を負う。」と定めています。選択権を持つのは相手方Ｃであり、無権代理人Ａではありません。したがって、Ａが履行か損害賠償かを自ら選択できるとする本肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "117",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方の選択に従い、相手方に対して履行又は損害賠償の責任を負う。",
+     "text_sha256": "9470800840b6b66f80d3d4c5a8ff53a5a8a4fbf45036dc9b79d484b788815ec4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q04-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q04-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。本人の追認を得たときは無権代理人の責任を負わない（117条1項）。",
+   "body": "民法117条1項は、無権代理人の責任について「自己の代理権を証明したとき、又は本人の追認を得たときを除き」としています。また、民法116条により、追認は「別段の意思表示がないときは、契約の時にさかのぼってその効力を生ずる。」ので、Ｂが追認すれば売買契約はＢ・Ｃ間で有効となり、Ｃは本人Ｂに履行を求めることができます。したがって、Ｂが追認した場合にＡが無権代理人の責任を負わないとする本肢は正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "117",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己の代理権を証明したとき、又は本人の追認を得たときを除き",
+     "text_sha256": "9470800840b6b66f80d3d4c5a8ff53a5a8a4fbf45036dc9b79d484b788815ec4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "116",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "別段の意思表示がないときは、契約の時にさかのぼってその効力を生ずる。",
+     "text_sha256": "028228a6c54bc4e9850be2d19415a19ad7cf602eb92af80109592575e136ca53",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q04-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q04-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。相手方に過失があっても、無権代理人が自己に代理権がないことを知っていたときは責任を免れない（117条2項2号ただし書）。",
+   "body": "民法117条2項2号本文は、代理権を有しないことを「相手方が過失によって知らなかったとき」には同条1項の責任の規定を適用しないとしています。しかし、同号ただし書は「他人の代理人として契約をした者が自己に代理権がないことを知っていたときは、この限りでない。」と定めています。したがって、Ｃに過失があっても、Ａが自己に代理権がないことを知っていたときは、Ａは無権代理人の責任を負うので、責任を負わないとする本肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "117",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "相手方が過失によって知らなかったとき",
+     "text_sha256": "9470800840b6b66f80d3d4c5a8ff53a5a8a4fbf45036dc9b79d484b788815ec4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "117",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "他人の代理人として契約をした者が自己に代理権がないことを知っていたときは、この限りでない。",
+     "text_sha256": "9470800840b6b66f80d3d4c5a8ff53a5a8a4fbf45036dc9b79d484b788815ec4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q04-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q04-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。無権代理人が本人を共同相続した場合、共同相続人全員が共同して追認しない限り、無権代理人の相続分に相当する部分でも当然に有効とはならない（判例）。",
+   "body": "民法113条1項は、無権代理による契約は「本人がその追認をしなければ、本人に対してその効力を生じない。」と定めています。最高裁平成5年1月21日判決は、無権代理人が本人を共同相続した場合には、共同相続人全員が共同して無権代理行為を追認しない限り、無権代理人の相続分に相当する部分においても、無権代理行為が当然に有効となるものではないとしました。本肢では、ＡとＤがＢを共同相続しているので、Ｄの追認がない限り、Ａの相続分に相当する部分でも売買契約は当然には有効とならず、本肢は正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "本人がその追認をしなければ、本人に対してその効力を生じない。",
+     "text_sha256": "94916a1f09225da541bb996a4a974034241260a7a0c7699fb637b91a90934aa5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "無権代理人が本人を共同相続した場合の無権代理行為の効力",
+     "court": "最高裁判所第一小法廷",
+     "date": "1993-01-21",
+     "case_number": "昭和63(オ)1733",
+     "holding": "無権代理人が本人を共同相続した場合には、共同相続人全員が共同して無権代理行為を追認しない限り、無権代理人の相続分に相当する部分においても、無権代理行為が当然に有効となるものではない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56365/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q04-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q04-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。本人が無権代理人を相続しても、無権代理行為は当然には有効とならない（判例）。",
+   "body": "民法113条1項は、無権代理による契約は「本人がその追認をしなければ、本人に対してその効力を生じない。」と定めています。最高裁昭和37年4月20日判決は、本人が無権代理人の家督を相続した場合、被相続人の無権代理行為は、その相続により当然には有効となるものではないとしました。本人Ｂは相続後も本人の立場で追認を拒絶することができると解されています。したがって、ＢがＡを単独で相続しても売買契約は当然には有効とならないとする本肢は正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "本人がその追認をしなければ、本人に対してその効力を生じない。",
+     "text_sha256": "94916a1f09225da541bb996a4a974034241260a7a0c7699fb637b91a90934aa5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "本人が無権代理人を相続した場合の無権代理行為の効力",
+     "court": "最高裁判所第二小法廷",
+     "date": "1962-04-20",
+     "case_number": "昭和35(オ)3",
+     "holding": "本人が無権代理人の家督を相続した場合、被相続人の無権代理行為は、右相続により当然には有効となるものではない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57723/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "相続後も本人が追認を拒絶できるという点は解釈による。判例の事案は家督相続。"
+   ],
+   "id": "exp-shiho-2020-minpo-q04-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
