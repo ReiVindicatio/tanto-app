@@ -1,0 +1,238 @@
+{
+ "question_id": "shiho-2013-keiho-q09",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q09-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。労役場留置は刑ではなく、罰金・科料を完納できない場合に行われる換刑処分であるから、自由刑に含まれない。",
+   "body": "誤りは「労役場留置」を自由刑に含めている点である。9条は刑の種類を「死刑、拘禁刑、罰金、拘留及び科料を主刑とし、没収を付加刑とする。」と定めており、労役場留置は刑として挙げられていない。労役場留置は、18条1項が「罰金を完納することができない者は、一日以上二年以下の期間、労役場に留置する。」と定めるように、罰金・科料を納められない場合にその執行に代えて行う処分（換刑処分）と解されている。身体の自由を奪う刑（自由刑）は、9条の主刑のうち身柄を拘束する刑を指すと解されており、労役場留置はこれに含まれない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "死刑、拘禁刑、罰金、拘留及び科料を主刑とし、没収を付加刑とする。",
+     "text_sha256": "aa2d764e6702b4951a739fa2af6042d0b98888c949cc1dcd996e6fffbeef0848",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "18",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "罰金を完納することができない者は、一日以上二年以下の期間、労役場に留置する。",
+     "text_sha256": "ee674098892ec818867f72dc447b56b7ef57daa55b5f5065e4a8715d3d0b7889",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "「自由刑」「換刑処分」の分類は解釈による",
+    "現行の9条は「拘禁刑」を定めており、肢の「懲役」「禁錮」の語はない。出題当時の9条の文言など、改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-keiho-q09-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q09-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。追徴は9条に刑として挙げられておらず、没収できない場合にその価額を納めさせる処分であるから、財産刑に含まれない。",
+   "body": "誤りは「追徴」を財産刑に含めている点である。9条は「死刑、拘禁刑、罰金、拘留及び科料を主刑とし、没収を付加刑とする。」と定めており、財産を奪う刑としては罰金・科料（主刑）と没収（付加刑）が挙げられているが、追徴は挙げられていない。追徴は、19条の2が「前条第一項第三号又は第四号に掲げる物の全部又は一部を没収することができないときは、その価額を追徴することができる。」と定めるように、没収に代わる処分である。したがって、財産刑に含まれるのは罰金・科料・没収であり、追徴を含める本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "死刑、拘禁刑、罰金、拘留及び科料を主刑とし、没収を付加刑とする。",
+     "text_sha256": "aa2d764e6702b4951a739fa2af6042d0b98888c949cc1dcd996e6fffbeef0848",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "19_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条第一項第三号又は第四号に掲げる物の全部又は一部を没収することができないときは、その価額を追徴することができる。",
+     "text_sha256": "1fbebb80fd494476d4f03f84bb41dc9e3e3828db063df1b72fea442846f87d7c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "「財産刑」の分類、追徴が刑ではなく没収に代わる処分であるとする点は解釈による"
+   ],
+   "id": "exp-shiho-2013-keiho-q09-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q09-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。有期の自由刑の上限は15年ではなく20年である（加重の上限30年の部分は正しい）。",
+   "body": "誤りは上限を「１５年以下」としている点である。現行の12条1項は「拘禁刑は、無期及び有期とし、有期拘禁刑は、一月以上二十年以下とする。」と定めており、有期の上限は20年である。加重については、14条2項が「有期拘禁刑を加重する場合においては三十年にまで上げることができ」と定めており、この部分は肢のとおりである。したがって、下限1月・加重の上限30年は正しいが、上限を15年とする点で本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "12",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "拘禁刑は、無期及び有期とし、有期拘禁刑は、一月以上二十年以下とする。",
+     "text_sha256": "353e9be5368f4d0fe8a1ac33c657142a5099fb984fafe571b6b57e54bf346147",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "14",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "有期拘禁刑を加重する場合においては三十年にまで上げることができ",
+     "text_sha256": "cd903d9273b575ce96450ec63f6b5dbb2812e5d545b54ff0d00dec745eeb9eef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行法は懲役・禁錮に代えて拘禁刑を定めており、現行の本文で説明した。出題当時の懲役・禁錮についての12条・13条・14条の文言（期間の数字を含む）は、改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-keiho-q09-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q09-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。14条2項により、有期の自由刑を減軽する場合には1月未満に下げることができる。",
+   "body": "決め手は、14条2項の後半の定めである。同項は「有期拘禁刑を加重する場合においては三十年にまで上げることができ、これを減軽する場合においては一月未満に下げることができる。」と定めている。したがって、有期の刑の下限は通常1月であるが、減軽する場合にはそれより下げることができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "14",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "有期拘禁刑を加重する場合においては三十年にまで上げることができ、これを減軽する場合においては一月未満に下げることができる。",
+     "text_sha256": "cd903d9273b575ce96450ec63f6b5dbb2812e5d545b54ff0d00dec745eeb9eef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の14条2項は「有期拘禁刑」について定めている。出題当時の懲役・禁錮についての文言は、改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-keiho-q09-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q09-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "現行の条文では懲役・禁錮の区別がなく、この肢を○と説明できないため、公式の○に合わせずに止める（法改正の信号）。",
+   "body": "この肢は、懲役は所定の作業を行わせる刑、禁錮は作業を行わせない刑という区別を問うものである。しかし、保存した現行の刑法には懲役・禁錮の条文がなく、12条2項は「拘禁刑は、刑事施設に拘置する。」、同条3項は「拘禁刑に処せられた者には、改善更生を図るため、必要な作業を行わせ、又は必要な指導を行うことができる。」と定めるだけである。出題当時の懲役・禁錮の定めは条文の本文で確認できないので、記憶で○と書かず、現行法の本文に照らした結論（この記述は現行法には当てはまらない）を示して止める。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "12",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "拘禁刑は、刑事施設に拘置する。",
+     "text_sha256": "353e9be5368f4d0fe8a1ac33c657142a5099fb984fafe571b6b57e54bf346147",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "12",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "拘禁刑に処せられた者には、改善更生を図るため、必要な作業を行わせ、又は必要な指導を行うことができる。",
+     "text_sha256": "353e9be5368f4d0fe8a1ac33c657142a5099fb984fafe571b6b57e54bf346147",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "explain-v3 規則5により、現行の条文で公式の○を説明できないため stated_truth を現行法に照らした結論（false）にして止めた。公式の○が誤りだと考えているのではない（出題当時の懲役・禁錮の条文を本文で確認できないため）",
+    "改正前の内容（懲役・禁錮の定め）は条文の本文で確認していない。改正前の刑法の本文を取得できれば、○として書き直せる見込み"
+   ],
+   "id": "exp-shiho-2013-keiho-q09-e",
+   "status": "flagged",
+   "check": {
+    "passed": false,
+    "failures": [
+     "🔴 公式の○×と食い違う（公式 ○／解説 False）"
+    ]
+   }
+  }
+ ]
+}

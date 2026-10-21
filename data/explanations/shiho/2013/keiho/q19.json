@@ -1,0 +1,236 @@
+{
+ "question_id": "shiho-2013-keiho-q19",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q19-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。【見解】では、狙った乙に対しても殺人未遂罪が成立し、丙に対する殺人既遂罪と観念的競合になる。",
+   "body": "誤りは、「乙に対する犯罪は成立しない」とする点である。【見解】は、認識した事実と発生した事実が「両者が法定の範囲内において一致することをもって足りる」とし、狙った者に対する所為と予期しなかった者に対する所為の両方に殺人の故意犯が成立し、「両罪は観念的競合となる」とする（被害者の数だけ故意犯を認める考え方）。これによれば、甲が殺意をもって狙った乙には弾丸が命中したが死亡していないので、乙に対しては殺人未遂罪（199条・203条）が成立し、予期しなかった丙が死亡した点では丙に対する殺人既遂罪（199条）が成立する。両罪は1個の行為によるものとして観念的競合（54条1項）となる。最高裁昭和53年7月28日判決も、狙った者と予期しなかった者の双方に銃創を負わせた事案で、予期しなかった者に対する関係でも強盗殺人未遂罪の成立を認めている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "203",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百九十九条及び前条の罪の未遂は、罰する。",
+     "text_sha256": "444d9feb63784f62840667912c541157535a64269a2039d9bfd40b010b0d8e86",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "打撃の錯誤と故意（びょう打銃事件）",
+     "court": "最高裁判所第三小法廷",
+     "date": "1978-07-28",
+     "case_number": "昭和52(あ)623",
+     "holding": "強盗の手段として人を殺害する意思で銃弾を発射し、意図した者に右側胸部貫通銃創を負わせたほか、予期しなかった者にも腹部貫通銃創を負わせたときは、後者に対する関係でも強盗殺人未遂罪が成立する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57029/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2013-keiho-q19-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q19-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。【見解】では、予期しなかった丙に対しても殺人の故意が認められるので、丙に対しては過失致死罪ではなく殺人既遂罪が成立する。",
+   "body": "誤りは、丙に対して「過失致死罪」が成立するとする点である。【見解】は、人を殺す意思で殺害行為に出た以上、犯人の認識しなかった人に結果が発生した場合にもその結果について殺人の故意があるとする。したがって、乙が死亡した点で乙に対する殺人既遂罪（199条）が成立するだけでなく、予期しなかった丙が死亡した点でも丙に対する殺人既遂罪が成立し、両罪は観念的競合（54条1項）となる。丙について故意を否定して過失致死罪（210条）とするのは、狙った客体以外には故意を認めない別の考え方（具体的に一致することを要求する考え方）による結論であり、【見解】の結論ではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "210",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "過失により人を死亡させた者",
+     "text_sha256": "03eeff0d056b2fef625f5e47257982bb9728831d2f8fdd1cb98fd3e6a09ebabf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "打撃の錯誤と故意（びょう打銃事件）",
+     "court": "最高裁判所第三小法廷",
+     "date": "1978-07-28",
+     "case_number": "昭和52(あ)623",
+     "holding": "強盗の手段として人を殺害する意思で銃弾を発射し、意図した者に右側胸部貫通銃創を負わせたほか、予期しなかった者にも腹部貫通銃創を負わせたときは、後者に対する関係でも強盗殺人未遂罪が成立する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57029/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（具体的符合説の結論の説明）。"
+   ],
+   "id": "exp-shiho-2013-keiho-q19-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q19-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。【見解】は被害者が誰かの違いを故意の判断で問題にしないので、被害者の個別性を重視する立場から本肢の批判が向けられる。",
+   "body": "【見解】は、認識した事実と発生した事実が「必ずしも具体的に一致することを要するものではなく」、法定の範囲内で一致すれば足りるとし、狙っていなかったＣに対しても殺人の故意を認める。これに対しては、殺人罪の保護法益である生命は被害者ごとに別個のものであり、殺人罪は被害者ごとに成立するのだから、誰を殺すかという被害者の個別性は構成要件上重要な事実であって、認識していない人について故意を認めるべきではない、という批判がある（認識と発生事実の具体的な一致を求める立場からの批判と解されている）。本肢はこの批判を述べたものであり、【見解】に向けられた批判として正しい。",
+   "citations": [],
+   "cases": [],
+   "notes": [
+    "解釈による（学説上の批判の整理）。"
+   ],
+   "id": "exp-shiho-2013-keiho-q19-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q19-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。【見解】は客体の錯誤でも方法の錯誤でも法定の範囲内の一致で故意を認め、結論が異ならないので、本肢の批判は【見解】に向けられるものではない。",
+   "body": "誤りは、本肢の批判を【見解】に向けられたものとする点である。【見解】は「両者が法定の範囲内において一致することをもって足りる」とするので、人違いをした客体の錯誤の場合も、狙いが外れて別人に当たった方法の錯誤の場合も、ともに殺人の故意が認められ、結論は同じになる。客体の錯誤では故意を認め、方法の錯誤では故意を否定して結論が分かれるのは、認識と発生事実の具体的な一致を求める考え方の側であり、本肢の批判はその考え方に対して向けられるものと解されている。したがって本肢は誤りである。",
+   "citations": [],
+   "cases": [],
+   "notes": [
+    "解釈による（学説上の批判の整理）。"
+   ],
+   "id": "exp-shiho-2013-keiho-q19-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q19-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。【見解】では複数の故意犯は観念的競合として最も重い刑で処断されるので、1人を殺した場合より処断刑が重くなることはなく、本肢の批判はあたらない。",
+   "body": "誤りは、【見解】によると処断刑が重くなるとする点である。【見解】は複数の殺人（未遂）罪の成立を認めるが、「両罪は観念的競合となる」としている。観念的競合について54条1項は「一個の行為が二個以上の罪名に触れ、又は犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。」と定めているから、処断刑は殺人罪（199条）の刑の範囲にとどまり、1人を殺した場合より重くなることはない。【見解】に対しては、1人を殺す故意しかないのに複数の故意犯を認めるのは責任主義に反するといった批判がされることはあるが（解釈による）、処断刑が重くなるという批判は【見解】の結論にあたらない。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ、又は犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者は、死刑又は無期若しくは五年以上の拘禁刑に処する。",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（学説上の批判の整理）。",
+    "199条の刑は現行の本文（拘禁刑）で示した。出題当時の刑名は、改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2013-keiho-q19-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

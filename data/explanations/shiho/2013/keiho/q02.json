@@ -1,0 +1,320 @@
+{
+ "question_id": "shiho-2013-keiho-q02",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q02-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：監禁は暴行・脅迫によるものに限られず、偽計によって被害者の錯誤を利用する場合も含むので、甲には監禁罪が成立する。",
+   "body": "誤りは「監禁罪は成立しない」とした点である。220条は「不法に人を逮捕し、又は監禁した者は、三月以上七年以下の拘禁刑に処する。」と定める。判例（最決昭和33年3月19日）は、監禁とは人を一定の区域場所から脱出できないようにしてその自由を拘束することをいい、その方法は暴行又は脅迫による場合に限らず、偽計によって被害者の錯誤を利用する場合をも含むとした。甲は嘘を言ってＡ女を信じさせ、自己の運転する自動車に乗車させて約１２キロメートル走行しており、Ａ女の錯誤を利用して車内から脱出できないようにしたものであるから、甲には監禁罪が成立する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "220",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法に人を逮捕し、又は監禁した者は、三月以上七年以下の拘禁刑に処する。",
+     "text_sha256": "d8ef399d30f380f6cab88d03eb7df7918dcbb43ebd2d82339b4ecf5563b90cd1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "偽計による監禁罪の成立",
+     "court": "最高裁判所第二小法廷",
+     "date": "1958-03-19",
+     "case_number": "昭和32(あ)2587",
+     "holding": "刑法220条1項の「監禁」とは、人を一定の区域場所から脱出できないようにしてその自由を拘束することをいい、その方法は暴行又は脅迫による場合に限らず、偽計によって被害者の錯誤を利用する場合をも含む。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50561/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例の事案の具体的な事実（車での連行か等）は判決全文に記載がなく確かめていない。判示の一般論を肢の事実に当てはめた。",
+    "改正前の内容は条文の本文で確認していない（出題当時の220条の法定刑の文言は現行と異なる可能性がある。結論には影響しない）。"
+   ],
+   "id": "exp-shiho-2013-keiho-q02-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q02-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：身の代金目的で拐取した者がさらに被拐取者を監禁すれば、身の代金目的拐取罪等とは別に監禁罪が成立し、両者は併合罪となる。",
+   "body": "誤りは「監禁罪は成立しない」とした点である。225条の2第1項は「近親者その他略取され又は誘拐された者の安否を憂慮する者の憂慮に乗じてその財物を交付させる目的で、人を略取し、又は誘拐した者」を罰し、同条2項は拐取した者が「その財物を交付させ、又はこれを要求する行為をしたとき」も同様とする。判例（最決昭和58年9月27日）は、身の代金取得の目的で人を拐取した者が、更に被拐取者を監禁し、その間に身の代金を要求した場合には、身の代金目的拐取罪と身の代金要求罪とは牽連犯、これらの罪と監禁罪とは併合罪の関係にあるとした。甲はＡを拐取したうえで手足を縛って自室に閉じ込めているから、拐取罪に吸収されることなく監禁罪（220条）が成立する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "225_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "近親者その他略取され又は誘拐された者の安否を憂慮する者の憂慮に乗じてその財物を交付させる目的で、人を略取し、又は誘拐した者",
+     "text_sha256": "92b70f96723b7650124fae0b18a50db9c8c5dbfc6a746686cdd346ce1d8a0579",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "225_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その財物を交付させ、又はこれを要求する行為をしたとき",
+     "text_sha256": "92b70f96723b7650124fae0b18a50db9c8c5dbfc6a746686cdd346ce1d8a0579",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "220",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法に人を逮捕し、又は監禁した者",
+     "text_sha256": "d8ef399d30f380f6cab88d03eb7df7918dcbb43ebd2d82339b4ecf5563b90cd1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "身の代金目的拐取罪・身の代金要求罪・監禁罪の罪数",
+     "court": "最高裁判所第三小法廷",
+     "date": "1983-09-27",
+     "case_number": "昭和57(あ)1012",
+     "holding": "みのしろ金取得の目的で人を拐取した者が、更に被拐取者を監禁し、その間にみのしろ金を要求した場合には、みのしろ金目的拐取罪とみのしろ金要求罪とは牽連犯の関係に、以上の各罪と監禁罪とは併合罪の関係にある。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50246/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2013-keiho-q02-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q02-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：強姦の意図で、降ろしてと求める被害者を原動機付自転車の荷台に乗せたまま約１キロメートル疾走させれば、監禁罪が成立する。",
+   "body": "決め手は、走行中の原動機付自転車の荷台も、被害者が脱出できない状態に置かれた場所になる点である。220条は「不法に人を逮捕し、又は監禁した者」を罰する。判例（最決昭和38年4月18日）は、婦女を強いて姦淫しようと企て、自己の運転する第二種原動機付自転車の荷台に乗車させ、1000メートル余り疾走した場合は、不法監禁罪が成立するとした。甲は途中で強姦の意図を持ち、Ａ女が「降ろして。」と叫んだのを無視して約１キロメートル疾走させており、Ａ女は疾走する車両から降りることができない状態に置かれたから、甲には監禁罪が成立する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "220",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法に人を逮捕し、又は監禁した者",
+     "text_sha256": "d8ef399d30f380f6cab88d03eb7df7918dcbb43ebd2d82339b4ecf5563b90cd1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "原動機付自転車の荷台に乗せて疾走した不法監禁",
+     "court": "最高裁判所第一小法廷",
+     "date": "1963-04-18",
+     "case_number": "昭和37(あ)1778",
+     "holding": "婦女を強いて姦淫しようと企て、自己の運転する第二種原動機付自転車荷台に乗車させ、1000メートル余り疾走した場合は、不法監禁罪が成立する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51745/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による：疾走中の車両から降りられない状態が「監禁」に当たるという当てはめは、判例の裁判要旨の事例判断による。"
+   ],
+   "id": "exp-shiho-2013-keiho-q02-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q02-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：監禁中の傷害でも、監禁の手段としての暴行によるものでなく別個の動機・原因による場合は、監禁致傷罪ではなく監禁罪と傷害罪が成立する。",
+   "body": "誤りは「監禁致傷罪が成立する」とした点である。221条は「前条の罪を犯し、よって人を死傷させた者は、傷害の罪と比較して、重い刑により処断する。」と定めており、死傷の結果が監禁によって生じたことが必要と解されている。判例（最決昭和42年12月21日）は、暴行が不法監禁中になされたものであっても、その手段としてなされたものでなく、別個の動機、原因からなされた場合において、その暴行の結果被害者に傷害を負わせたときは、監禁致傷罪ではなく、監禁と傷害の二罪が成立し、両者は併合罪となるとした。また判例（最決昭和43年9月17日）は、傷害の手段として監禁がなされた場合でも、監禁と傷害は牽連犯に当たらないとした。甲がＡの小指を切断したのは指を詰めさせる目的によるもので、監禁の手段としての暴行によるものではないから、甲には監禁罪（220条）と傷害罪（204条）が成立し、監禁致傷罪は成立しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "221",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条の罪を犯し、よって人を死傷させた者は、傷害の罪と比較して、重い刑により処断する。",
+     "text_sha256": "9df14299019fd4b2f3dce71a9415c04a64129b09f85634b0178e9f489593e988",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "220",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法に人を逮捕し、又は監禁した者",
+     "text_sha256": "d8ef399d30f380f6cab88d03eb7df7918dcbb43ebd2d82339b4ecf5563b90cd1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "204",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の身体を傷害した者",
+     "text_sha256": "6ede21287a797c6f241c77f9e36de03258b58392279dd9ec60ceafb09f7b2af4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "監禁中の別個の動機による暴行での傷害と監禁致傷罪の成否",
+     "court": "最高裁判所第一小法廷",
+     "date": "1967-12-21",
+     "case_number": "昭和42(あ)1482",
+     "holding": "暴行が不法監禁中になされたものであっても、その手段としてなされたものでなく、別個の動機、原因からなされた場合において、その暴行の結果被害者に傷害を負わせたときは、監禁致傷罪ではなく、監禁と傷害の二罪が成立し、両者は併合罪の関係となる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/59092/detail2/index.html"
+     ]
+    },
+    {
+     "name": "傷害の手段としての監禁と牽連犯の成否",
+     "court": "最高裁判所第三小法廷",
+     "date": "1968-09-17",
+     "case_number": "昭和42(あ)2551",
+     "holding": "傷害の手段として監禁がなされたものであっても、その行為の性質からみて両者が通常手段結果の関係にあるとは認められないから、刑法54条1項の牽連犯に当たらない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50851/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による：221条の「よって」に、死傷が監禁行為（その手段としての暴行を含む）から生じたことが必要という理解は条文に明記されていない。",
+    "両判例の事案の具体的な事実（指詰めの事案か等）は、判決全文・裁判要旨からは確かめていない。判示を肢の事実に当てはめた。"
+   ],
+   "id": "exp-shiho-2013-keiho-q02-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q02-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：監禁に至る前に傷害を負わせただけで監禁は遂げておらず、監禁致傷罪の前提となる「前条の罪」（監禁罪）が成立しないので、監禁致傷罪は成立しない。",
+   "body": "決め手は、監禁致傷罪が監禁罪の成立を前提とし、監禁罪には未遂を罰する規定がない点である。221条は「前条の罪を犯し、よって人を死傷させた者」を処罰するものであり、220条の逮捕・監禁の罪を犯したことが前提となる。44条は「未遂を罰する場合は、各本条で定める。」と定めるところ、監禁罪について未遂を罰する規定は置かれていない。甲はＡ女を車に乗せることができず、Ａ女は逃げているから監禁は遂げられておらず、監禁致傷罪は成立しない。顔面挫傷はＡ女の顔面を殴打したことによるものであるから、甲には傷害罪（204条）が成立すると解される。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "221",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条の罪を犯し、よって人を死傷させた者",
+     "text_sha256": "9df14299019fd4b2f3dce71a9415c04a64129b09f85634b0178e9f489593e988",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "220",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法に人を逮捕し、又は監禁した者",
+     "text_sha256": "d8ef399d30f380f6cab88d03eb7df7918dcbb43ebd2d82339b4ecf5563b90cd1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "44",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未遂を罰する場合は、各本条で定める。",
+     "text_sha256": "75fd5522445f76f9ddeb037802403fa0180a77fb72f6afc384e8ec84b7e27025",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "204",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の身体を傷害した者",
+     "text_sha256": "6ede21287a797c6f241c77f9e36de03258b58392279dd9ec60ceafb09f7b2af4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による：監禁の実行の着手前後を問わず、監禁が遂げられていない段階で生じた傷害について監禁致傷罪が成立しないという理解は条文の構造からの一般的な理解による。判例は確かめていない。",
+    "監禁罪の未遂を罰する規定がないことは、刑法第2編第31章の各条を条文の本文で一つずつ確かめたものではない（220条・221条の本文には未遂の定めがない）。"
+   ],
+   "id": "exp-shiho-2013-keiho-q02-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

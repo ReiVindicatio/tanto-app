@@ -1,0 +1,257 @@
+{
+ "question_id": "shiho-2013-keiho-q14",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q14-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。放火とは目的物の焼損を引き起こす行為をいい、目的物に直接点火する場合だけでなく、媒介物に点火して目的物に燃え移らせる場合も含まれる。",
+   "body": "108条は「放火して」目的物を「焼損した者」を処罰しており、放火は焼損の結果を引き起こす行為を指すと解されている。そのため、目的物そのものに直接火をつける場合に限らず、燃えやすい物などの媒介物に点火し、その火を目的物に燃え移らせる場合も放火にあたると解されている。最高裁昭和23年11月2日判決は、家屋の押入内の壁紙にマッチで放火し、火が天井に燃え移って天井板を焼いた事案で、火勢が放火の媒介物を離れて家屋が独立して燃焼する程度に達したとして放火既遂罪を認めており、媒介物への点火が放火行為にあたることを前提にしている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "放火して、現に人が住居に使用し又は現に人がいる建造物、汽車、電車、艦船又は鉱坑を焼損した者",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "放火罪の既遂時期（独立燃焼）",
+     "court": "最高裁判所第三小法廷",
+     "date": "1948-11-02",
+     "case_number": "昭和23(れ)707",
+     "holding": "家屋の押入内壁紙にマッチで放火し、火が天井に燃え移り天井板約一尺四方を焼いた事実から、火勢が放火の媒介物を離れて家屋が独立燃焼する程度に達したと認められ、放火既遂罪を構成する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56590/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（放火を「焼損を惹起させる行為」とし媒介物への点火を含むとする定義は一般的な理解。昭和23年判決はその定義自体を述べたものではなく、媒介物への点火で既遂を認めた事例として挙げた）。"
+   ],
+   "id": "exp-shiho-2013-keiho-q14-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q14-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、火が媒介物を離れて目的物が独立して燃焼を続ける状態に達すれば「焼損」にあたるとしており（独立燃焼説）、重要部分の焼失や効用の喪失までは要しない。",
+   "body": "誤りは、「焼損」を「重要部分が焼失し，その本来の効用が失われた状態」とする点である。本肢の定義は効用喪失説と呼ばれる考え方であり、判例の立場ではない。最高裁昭和23年11月2日判決は、押入内の壁紙に放火して天井板約一尺四方を焼いた事案で、火勢が放火の媒介物を離れて家屋が独立燃焼する程度に達したとして、108条の放火既遂罪を認めた。このように判例は、目的物が独立して燃焼する状態に達すれば「焼損」にあたるとしており（独立燃焼説と呼ばれる）、建物の効用が失われることまでは求めていない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "焼損した者",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "放火罪の既遂時期（独立燃焼）",
+     "court": "最高裁判所第三小法廷",
+     "date": "1948-11-02",
+     "case_number": "昭和23(れ)707",
+     "holding": "家屋の押入内壁紙にマッチで放火し、火が天井に燃え移り天井板約一尺四方を焼いた事実から、火勢が放火の媒介物を離れて家屋が独立燃焼する程度に達したと認められ、放火既遂罪を構成する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56590/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "昭和23年判決の裁判要旨は「燒毀」の語を用いており、現行の本文は「焼損」である。現行の本文で説明した（改正前の内容は条文の本文で確認していない）。",
+    "解釈による（「独立燃焼説」「効用喪失説」という呼び名は一般的な理解）。"
+   ],
+   "id": "exp-shiho-2013-keiho-q14-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q14-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。放火罪の「建造物」は、家屋その他これに類する工作物で、土地に定着し、人の起居出入に適する構造を有するものをいうとされている。",
+   "body": "108条・109条は客体として「建造物」を挙げているが、その意義は条文に書かれていない。判例は、「建造物」とは家屋その他これに類する工作物であって、土地に定着し、人の起居出入に適する構造を有するものをいうとしているとされており（判例あり（要確認））、本肢はその定義どおりである。この定義からすると、土地に定着していない物や、人が出入りできる構造のない物は「建造物」にあたらない。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "建造物",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "109",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "建造物、艦船又は鉱坑",
+     "text_sha256": "326d774ec2f98dbdafb0b8f657f6202a0b84b7f679959effbd50cd3ad527d210",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "放火罪・建造物損壊罪等の「建造物」の定義（家屋類似の工作物で、土地に定着し、人の起居出入に適する構造を有するもの）を示した判例",
+     "searched": [
+      "courts.py search 建造物 起居出入",
+      "大審院（データベースにない）の可能性があるため、それ以上は探していない"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（「建造物」の定義は判例の立場とされる一般的な理解。裁判所のページでは確かめていない）。"
+   ],
+   "id": "exp-shiho-2013-keiho-q14-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q14-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、畳・建具などの従物は、毀損しなければ取り外せない状態にない限り建造物の一部ではないとし、畳は建造物の一部とはいえないとした。",
+   "body": "誤りは、家屋の和室に敷かれた畳が「建造物」に含まれるとする点である。最高裁昭和25年12月14日判決は、畳・建具その他家屋の従物が建造物である家屋の一部を構成するといえるには、家屋の一部に建付けられているだけでは足りず、さらに毀損しなければ取り外すことができない状態にあることが必要であるとした。そのうえで、布団はもちろん畳も家屋と一体となって建造物の一部を構成するものとはいえないとし、畳を焼いただけの事実は108条の放火既遂ではなく放火未遂にとどまるとした。したがって、敷かれている畳は「建造物」に含まれず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "建造物",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "畳・建具と放火罪の「建造物」の一部",
+     "court": "最高裁判所第一小法廷",
+     "date": "1950-12-14",
+     "case_number": "昭和25(れ)1403",
+     "holding": "畳・建具その他家屋の従物が建造物たる家屋の一部を構成するには、家屋の一部に建付けられているだけでは足りず、毀損しなければ取り外すことができない状態にあることを要する。布団はもちろん畳も建造物の一部とはいえず、その焼損は建造物放火の未遂にとどまる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54498/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2013-keiho-q14-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-keiho-q14-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、108条の「人」とは犯人以外の者を指すとしており、犯人は含まれない。",
+   "body": "誤りは、「人」に犯人が含まれるとする点である。最高裁昭和32年6月21日判決は、刑法108条にいう「人」とは犯人以外の者を指すとした。したがって、犯人だけが住居に使用し、ほかに現に人がいない建物は、108条の「現に人が住居に使用し」ている建造物にはあたらず、109条の「現に人が住居に使用せず、かつ、現に人がいない建造物」として扱われることになる。よって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現に人が住居に使用し",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "109",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現に人が住居に使用せず、かつ、現に人がいない建造物",
+     "text_sha256": "326d774ec2f98dbdafb0b8f657f6202a0b84b7f679959effbd50cd3ad527d210",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "刑法108条の「人」の意義",
+     "court": "最高裁判所第二小法廷",
+     "date": "1957-06-21",
+     "case_number": "昭和29(あ)805",
+     "holding": "刑法108条にいう「人」とは、犯人以外の者を指称する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51386/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "犯人のみが住む建物が109条で扱われるという帰結は、判例の「人」の意義から導いた説明である（解釈による）。"
+   ],
+   "id": "exp-shiho-2013-keiho-q14-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
