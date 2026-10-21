@@ -1,0 +1,311 @@
+{
+ "question_id": "yobi-2011-shoho-q20",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q20-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、株主総会の特別決議を経ない有利発行であっても、その瑕疵は新株発行の無効原因とならないとする。",
+   "body": "ポイントは、有利発行に必要な株主総会の特別決議を欠いたことが無効原因になるかである。公開会社では募集事項の決定は原則として取締役会で行うが、201条1項は「第百九十九条第三項に規定する場合を除き」としており、払込金額が「募集株式を引き受ける者に特に有利な金額である場合」（199条3項）には株主総会の決議が要り、その決議は特別決議である（309条2項5号）。もっとも、最高裁昭和46年7月16日判決は、新株が株主総会の特別決議を経ることなく株主以外の者に対して特に有利な発行価額で発行されたものであっても、その瑕疵は新株発行無効の原因とはならないとした。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "201",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百九十九条第三項に規定する場合を除き",
+     "text_sha256": "35cf13fba5ce9c220dfed1584c0b7b2ddb9221249819c22a55d7eaf8ac952769",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "199",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項第二号の払込金額が募集株式を引き受ける者に特に有利な金額である場合には",
+     "text_sha256": "742daaa99f9cbe88601264bf2da62173c9cd6545fb1e9014ffc0988829c6ef7c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "309",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第百九十九条第二項、第二百条第一項、第二百二条第三項第四号、第二百四条第二項及び第二百五条第二項の株主総会",
+     "text_sha256": "56ffbd6451793882d47ba533193af3dd09d3d0c791034f12f0f7f32cf6456aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "株主総会の特別決議を経ない有利発行と新株発行の無効原因",
+     "court": "最高裁判所第二小法廷",
+     "date": "1971-07-16",
+     "case_number": "昭和46(オ)396",
+     "holding": "代表取締役が新株を発行した場合には、株主総会の特別決議を経ることなく株主以外の者に対して特に有利な発行価額で発行されたものであっても、その瑕疵は新株発行無効の原因とはならない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/62044/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判決は会社法施行前の商法の規定についてのもの。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-shoho-q20-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q20-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、募集事項の通知・公告を欠くことは、差止めの事由がないため差止請求が許容されない場合でない限り、無効原因となるとする。",
+   "body": "公開会社が取締役会の決議で募集事項を定めたときは、払込みの期日（又は期間の初日）の2週間前までに、株主に対し募集事項を「通知しなければならない」（201条3項）。この通知は「公告をもってこれに代えることができる」（同条4項）。最高裁平成9年1月28日判決は、新株発行に関する事項についての公告又は通知を欠くことは、新株発行差止請求をしたとしても差止めの事由がないためにこれが許容されないと認められる場合でない限り、新株発行の無効原因となるとした。通知・公告は、株主に差止請求（210条）の機会を与えるためのものと解されている。したがって、通知・公告のいずれも欠いても無効原因とならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "201",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "同条第一項第四号の期日（同号の期間を定めた場合にあっては、その期間の初日）の二週間前までに",
+     "text_sha256": "35cf13fba5ce9c220dfed1584c0b7b2ddb9221249819c22a55d7eaf8ac952769",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "201",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "通知しなければならない",
+     "text_sha256": "35cf13fba5ce9c220dfed1584c0b7b2ddb9221249819c22a55d7eaf8ac952769",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "201",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "公告をもってこれに代えることができる",
+     "text_sha256": "35cf13fba5ce9c220dfed1584c0b7b2ddb9221249819c22a55d7eaf8ac952769",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "210",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主は、株式会社に対し、第百九十九条第一項の募集に係る株式の発行又は自己株式の処分をやめることを請求することができる。",
+     "text_sha256": "08f5d5762ba05c79991271b3d26e84a060806d41bfc7a915535032969b80f68d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "新株発行の公告・通知の欠缺と無効原因",
+     "court": "最高裁判所第三小法廷",
+     "date": "1997-01-28",
+     "case_number": "平成5(オ)317",
+     "holding": "新株発行に関する事項について公告又は通知を欠くことは、新株発行差止請求をしたとしても差止めの事由がないためにこれが許容されないと認められる場合でない限り、新株発行の無効原因となる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52512/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "通知・公告の趣旨を差止めの機会の確保とする説明は解釈による（裁判要旨には書かれていない）",
+    "判決は会社法施行前の商法の規定についてのもの。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-shoho-q20-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q20-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、著しく不公正な方法による新株発行も、代表権のある取締役によってされた以上有効であり、無効原因とならないとする。",
+   "body": "著しく不公正な方法による発行は、会社法上は差止めの事由とされている（210条2号「著しく不公正な方法により行われる場合」）。発行後の無効原因になるかについて、最高裁平成6年7月14日判決は、会社を代表する権限のある取締役によって行われた新株の発行は、それが著しく不公正な方法によってされたものであり、かつ、取締役がその新株を引き受けて現に保有し、会社が小規模で閉鎖的な会社であるなどの事情がある場合でも、有効であるとした。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "210",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "著しく不公正な方法により行われる場合",
+     "text_sha256": "08f5d5762ba05c79991271b3d26e84a060806d41bfc7a915535032969b80f68d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "著しく不公正な方法による新株発行の効力",
+     "court": "最高裁判所第一小法廷",
+     "date": "1994-07-14",
+     "case_number": "平成2(オ)391",
+     "holding": "会社を代表する権限のある取締役によって行われた新株の発行は、著しく不公正な方法によってされたものであり、かつ、取締役がその新株を引き受けて現に保有し、会社が小規模で閉鎖的な会社であるなどの事情がある場合でも、有効である。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/62665/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判決は会社法施行前の商法の規定についてのもの。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-shoho-q20-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q20-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、代表権のある取締役が新株を発行した以上、有効な取締役会の決議がなくても新株の発行は有効とする。",
+   "body": "公開会社では、有利発行の場合を除き、199条2項の募集事項の決定は株主総会ではなく取締役会の決議によって行う（201条1項）。この取締役会の決議を欠いた場合について、最高裁昭和36年3月31日判決は、株式会社を代表する権限のある取締役が新株を発行した以上、これにつき有効な取締役会の決議がなくても、新株の発行は有効であるとした。公開会社における募集株式の発行は業務執行に準じるものとして扱われ、取引の安全が重視されると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "199",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項各号に掲げる事項（以下この節において「募集事項」という。）の決定は、株主総会の決議によらなければならない。",
+     "text_sha256": "742daaa99f9cbe88601264bf2da62173c9cd6545fb1e9014ffc0988829c6ef7c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "201",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公開会社における同条第二項の規定の適用については、同項中「株主総会」とあるのは、「取締役会」とする。",
+     "text_sha256": "35cf13fba5ce9c220dfed1584c0b7b2ddb9221249819c22a55d7eaf8ac952769",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "取締役会の決議を経ない新株発行の効力",
+     "court": "最高裁判所第二小法廷",
+     "date": "1961-03-31",
+     "case_number": "昭和32(オ)79",
+     "holding": "株式会社を代表する権限のある取締役が新株を発行した以上、これにつき有効な取締役会の決議がなくても、その新株の発行は有効である。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54869/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "業務執行に準じる・取引の安全を重視するという説明は解釈による（裁判要旨には書かれていない）",
+    "判決は会社法施行前の商法の規定についてのもの。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-shoho-q20-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q20-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、新株発行差止めの仮処分命令に違反して新株発行がされたことは、新株発行無効の訴えの無効原因となるとする。",
+   "body": "株主は、法令・定款違反や著しく不公正な方法による発行で不利益を受けるおそれがあるとき、会社に発行を「やめることを請求することができる」（210条）。最高裁平成5年12月16日判決は、新株発行差止めの仮処分命令に違反して新株発行がされたことは、新株発行無効の訴えの無効原因となるとした。仮処分命令を無視した発行を有効とすれば、差止請求権を株主の権利として認め、仮処分命令を得る機会を与えた趣旨が失われるためと解されている。したがって、無効原因とならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "210",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "やめることを請求することができる",
+     "text_sha256": "08f5d5762ba05c79991271b3d26e84a060806d41bfc7a915535032969b80f68d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "新株発行差止めの仮処分命令違反と無効原因",
+     "court": "最高裁判所第一小法廷",
+     "date": "1993-12-16",
+     "case_number": "平成1(オ)666",
+     "holding": "新株発行差止めの仮処分命令に違反して新株発行がされたことは、新株発行無効の訴えの無効原因となる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55847/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "仮処分命令違反を無効原因とする理由づけは解釈による（裁判要旨には書かれていない）",
+    "判決は会社法施行前の商法の規定についてのもの。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-shoho-q20-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

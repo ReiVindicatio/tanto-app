@@ -1,0 +1,283 @@
+{
+ "question_id": "yobi-2011-shoho-q19",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q19-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。株式の分割では会社の有する自己株式も分割されて増えるが、株式無償割当ては会社自身には割り当てられないので自己株式は増えない（186条2項）。",
+   "body": "ポイントは、会社自身が持つ自己株式に分割・割当ての効果が及ぶかどうかである。株式の分割では、184条1項により、基準日の株主が「基準日に有する株式（種類株式発行会社にあっては、同項第三号の種類の株式。以下この項において同じ。）の数に同条第二項第一号の割合を乗じて得た数の株式を取得する」。会社が有する自己株式もこれにより分割され、数が増えると解されている。これに対し、株式無償割当てについて186条2項は、割り当てる株式の数の定めは「当該株式会社以外の株主」の有する株式の数に応じて割り当てる内容でなければならないとしており、会社自身には割り当てられない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "184",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "基準日に有する株式（種類株式発行会社にあっては、同項第三号の種類の株式。以下この項において同じ。）の数に同条第二項第一号の割合を乗じて得た数の株式を取得する",
+     "text_sha256": "37fd3abd18281b592cc8f23a7d0ea28109865ee28cd3e93d3a4740cc6ba8d717",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "186",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該株式会社以外の株主",
+     "text_sha256": "c709a48ac2baa217b634775fdc7f6f830effdedc065cfda7c4935a537eee9b4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "株式の分割により会社の有する自己株式も増えるという点は解釈による（184条1項の「株主」に会社自身が含まれるという理解）"
+   ],
+   "id": "exp-yobi-2011-shoho-q19-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q19-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株式無償割当てでも1株に満たない端数が生じ得るため、234条1項3号に端数処理の定めがある。",
+   "body": "誤りは「株式無償割当てにより１株に満たない端数が生ずることはない」とする点である。234条1項は、同項各号の行為に際して株式を交付する場合に「交付しなければならない当該株式会社の株式の数に一株に満たない端数があるとき」の処理を定め、その3号に「第百八十五条に規定する株式無償割当て　当該株式会社の株主」を掲げる。株式無償割当てでも、割り当てる数の定め方によって端数が生じ得ることを前提に、端数処理の規定が置かれている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "234",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "交付しなければならない当該株式会社の株式の数に一株に満たない端数があるとき",
+     "text_sha256": "1b8a06b0cbbcc8573846382490d00023abe6fa87e4c7c552544f13d59e1767e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "234",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百八十五条に規定する株式無償割当て　当該株式会社の株主",
+     "text_sha256": "1b8a06b0cbbcc8573846382490d00023abe6fa87e4c7c552544f13d59e1767e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "185",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、株主（種類株式発行会社にあっては、ある種類の種類株主）に対して新たに払込みをさせないで当該株式会社の株式の割当て（以下この款において「株式無償割当て」という。）をすることができる。",
+     "text_sha256": "a839be04eb1a8f726b05a0b12d177c5e04b2d316cc6f2229919d3547e689f53b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q19-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q19-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。株式の分割は同じ種類の株式を増やすものだが、株式無償割当てでは割り当てる株式の種類を、割当てを受ける株主の株式の種類と別に定められる（186条1項1号・3号）。",
+   "body": "ポイントは、分割と無償割当てで、株主が取得する株式の種類を変えられるかどうかである。株式の分割では、184条1項により、種類株主は「基準日に有する株式（種類株式発行会社にあっては、同項第三号の種類の株式。以下この項において同じ。）の数に同条第二項第一号の割合を乗じて得た数の株式を取得する」のであり、分割する種類と同じ種類の株式が増えるだけである。これに対し、株式無償割当てでは、186条1項1号で「株主に割り当てる株式の数（種類株式発行会社にあっては、株式の種類及び種類ごとの数）」を、3号で「当該株式無償割当てを受ける株主の有する株式の種類」を、それぞれ別に定める。このため、株主の有する株式と異なる種類の株式を割り当てることができる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "184",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "基準日に有する株式（種類株式発行会社にあっては、同項第三号の種類の株式。以下この項において同じ。）の数に同条第二項第一号の割合を乗じて得た数の株式を取得する",
+     "text_sha256": "37fd3abd18281b592cc8f23a7d0ea28109865ee28cd3e93d3a4740cc6ba8d717",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "186",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主に割り当てる株式の数（種類株式発行会社にあっては、株式の種類及び種類ごとの数）",
+     "text_sha256": "c709a48ac2baa217b634775fdc7f6f830effdedc065cfda7c4935a537eee9b4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "186",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該株式無償割当てを受ける株主の有する株式の種類",
+     "text_sha256": "c709a48ac2baa217b634775fdc7f6f830effdedc065cfda7c4935a537eee9b4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q19-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q19-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。株主総会の決議によらない発行可能株式総数の増加は株式の分割にだけ認められ（184条2項）、株式無償割当てには同様の規定がないので466条の株主総会決議が必要となる。",
+   "body": "ポイントは、株主総会の決議を経ずに発行可能株式総数を増やす定款変更の特例が、どちらに認められているかである。184条2項は「株式会社（現に二以上の種類の株式を発行しているものを除く。）は、第四百六十六条の規定にかかわらず、株主総会の決議によらないで」、分割の割合の範囲内で発行可能株式総数を増加する定款の変更ができると定める。株式無償割当てについては、185条・186条にこのような特例はない。そのため、原則どおり466条の「株式会社は、その成立後、株主総会の決議によって、定款を変更することができる。」によることになる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "184",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株式会社（現に二以上の種類の株式を発行しているものを除く。）は、第四百六十六条の規定にかかわらず、株主総会の決議によらないで",
+     "text_sha256": "37fd3abd18281b592cc8f23a7d0ea28109865ee28cd3e93d3a4740cc6ba8d717",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "466",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、その成立後、株主総会の決議によって、定款を変更することができる。",
+     "text_sha256": "9de2157a451631e3430eb3e06bc54991bcf788236f1e77c88059db41f8c79826",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "185",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該株式会社の株式の割当て",
+     "text_sha256": "a839be04eb1a8f726b05a0b12d177c5e04b2d316cc6f2229919d3547e689f53b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "186",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、株式無償割当てをしようとするときは、その都度、次に掲げる事項を定めなければならない。",
+     "text_sha256": "c709a48ac2baa217b634775fdc7f6f830effdedc065cfda7c4935a537eee9b4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q19-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q19-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。株式の分割は株式の数を増やすだけで自己株式を交付するものではないが、株式無償割当ては「当該株式会社の株式の割当て」であり、自己株式を割り当てることもできると解されている。",
+   "body": "ポイントは、会社がすでに持つ自己株式を株主に渡す手段になるかどうかである。株式の分割は、184条1項のとおり、株主が基準日に有する株式の数に割合を乗じた数の株式を取得するもので、既存の株式を細分化して数を増やすにとどまり、会社の自己株式を株主に移すものではないと解されている。これに対し、185条は株式無償割当てを「新たに払込みをさせないで当該株式会社の株式の割当て」をすることと定めており、新たに株式を発行する場合だけでなく、自己株式を割り当てることも含むと解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "184",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "基準日に有する株式（種類株式発行会社にあっては、同項第三号の種類の株式。以下この項において同じ。）の数に同条第二項第一号の割合を乗じて得た数の株式を取得する",
+     "text_sha256": "37fd3abd18281b592cc8f23a7d0ea28109865ee28cd3e93d3a4740cc6ba8d717",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "185",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "新たに払込みをさせないで当該株式会社の株式の割当て",
+     "text_sha256": "a839be04eb1a8f726b05a0b12d177c5e04b2d316cc6f2229919d3547e689f53b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "株式の分割では自己株式を交付できず、株式無償割当てでは自己株式を割り当てられるという点は解釈による"
+   ],
+   "id": "exp-yobi-2011-shoho-q19-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,245 @@
+{
+ "question_id": "yobi-2011-shoho-q22",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q22-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。任務懈怠による責任の全部の免除には総株主の同意が必要である。",
+   "body": "424条は、423条1項の責任（役員等の任務懈怠による会社に対する損害賠償責任）は「総株主の同意がなければ、免除することができない」とする。問題文のとおり訴訟上の和解の場合は考慮しないので、責任の全部の免除には総株主の同意が必要である。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "424",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条第一項の責任は、総株主の同意がなければ、免除することができない。",
+     "text_sha256": "6b179a154fc5dbdb010de72c0b5b3b40a7abc3c1c7c42d0533e029d4a8c02746",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その任務を怠ったときは、株式会社に対し、これによって生じた損害を賠償する責任を負う。",
+     "text_sha256": "0a7329bc93caa7819913258f61953dfd11dd902a080800aa28a5decfb9c6d85a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q22-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q22-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。一部免除の要件は「善意でかつ重大な過失がない」ことであり、過失がないことまでは要しない。",
+   "body": "425条1項は、役員等の責任の一部免除について、当該役員等が「職務を行うにつき善意でかつ重大な過失がないとき」に、最低責任限度額を控除した額を限度として株主総会の決議で免除できるとする。426条1項の定款の定めに基づく免除も、同じく「善意でかつ重大な過失がない場合」が要件である。軽過失があっても一部免除は可能であり、無過失であることを要するとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "425",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "職務を行うにつき善意でかつ重大な過失がないとき",
+     "text_sha256": "bdb4cea5592148c45e8b29069888ed8949e0268b0676476daa3246e199053e45",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "426",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "善意でかつ重大な過失がない場合",
+     "text_sha256": "38cb4b50359ed8c74043dc94296a77d5421f91bcc871451538fee363ac1070ec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q22-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q22-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。一部免除の議案の提出には、監査役会の多数決ではなく、各監査役（監査役全員）の同意が必要である。",
+   "body": "425条3項は、監査役設置会社において取締役の責任の免除に関する議案を株主総会に提出するには、同項1号により「監査役（監査役が二人以上ある場合にあっては、各監査役）」の同意を得なければならないとする。監査役会設置会社でも監査役は複数いるので、監査役一人一人の同意が必要であり、監査役会の過半数による決議の同意では足りない。したがって、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "425",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査役（監査役が二人以上ある場合にあっては、各監査役）",
+     "text_sha256": "bdb4cea5592148c45e8b29069888ed8949e0268b0676476daa3246e199053e45",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "425条3項は出題後に改正されている（監査等委員会設置会社の追加など）。改正前の内容は条文の本文で確認していない（現行の425条3項1号で説明した）"
+   ],
+   "id": "exp-yobi-2011-shoho-q22-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q22-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。取締役会の決議による一部免除は、そうできる旨を定款で定めた場合に限られる。",
+   "body": "426条1項は、監査役設置会社（取締役が二人以上ある場合に限る。）などは、役員等が善意でかつ重大な過失がない場合に、一定の額を限度として「取締役（当該責任を負う取締役を除く。）の過半数の同意（取締役会設置会社にあっては、取締役会の決議）によって免除することができる旨を定款で定めることができる」とする。取締役会の決議による一部免除は、この定款の定めがあって初めて認められる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "426",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役（当該責任を負う取締役を除く。）の過半数の同意（取締役会設置会社にあっては、取締役会の決議）によって免除することができる旨を定款で定めることができる",
+     "text_sha256": "38cb4b50359ed8c74043dc94296a77d5421f91bcc871451538fee363ac1070ec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q22-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q22-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。自己のためにした会社との取引についての取締役の責任には、一部免除の規定が適用されない。",
+   "body": "428条1項は、356条1項2号の取引のうち「自己のためにした取引に限る」として、自己のために会社と取引をした取締役の責任について定める。そして428条2項は「前三条の規定は、前項の責任については、適用しない」とするので、株主総会の決議による一部免除（425条）も、定款に基づく取締役会の決議による一部免除（426条）も、この責任には使えない。したがって、会社と取引をした取締役の責任を一部免除するには、その取引が自己のためにしたものでないことが必要であり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "428",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己のためにした取引に限る",
+     "text_sha256": "2565a23898e94211c4eb9c0376c5c78f8b51246608be05910f2304ec506e6cf7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "428",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前三条の規定は、前項の責任については、適用しない",
+     "text_sha256": "2565a23898e94211c4eb9c0376c5c78f8b51246608be05910f2304ec506e6cf7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "356",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役が自己又は第三者のために株式会社と取引をしようとするとき。",
+     "text_sha256": "1f519283022020dbb09f21e69d5e5dfc33a50acae50d33e817fb256ed4327990",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "425",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会",
+     "text_sha256": "bdb4cea5592148c45e8b29069888ed8949e0268b0676476daa3246e199053e45",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "426",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役会の決議",
+     "text_sha256": "38cb4b50359ed8c74043dc94296a77d5421f91bcc871451538fee363ac1070ec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q22-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

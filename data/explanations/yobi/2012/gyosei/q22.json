@@ -1,0 +1,153 @@
+{
+ "question_id": "yobi-2012-gyosei-q22",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-gyosei-q22-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。執行停止には本案の取消しの訴えの提起が必要であり、その訴えは適法なものでなければならないと解されているので、適法性が「問題とならない」とする点が誤り。",
+   "body": "誤りは、本案の訴えが適法であるか否かは「問題とならない」とする部分である。行政事件訴訟法25条2項は、執行停止を「処分の取消しの訴えの提起があつた場合において」することができると定めており、本案の訴えの提起が要件である。そして、執行停止は本案の訴訟に付随する仮の救済であるから、本案の訴えが不適法で却下を免れないときは、執行停止をすることはできないと解されている。したがって、本案の訴えが適法であるかどうかも問題となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "25",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "処分の取消しの訴えの提起があつた場合において",
+     "text_sha256": "e34c7fb3e9a688c620b8989d059d09fcde52fab53ff01172d2952a9a092b6870",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "本案の訴えが適法であることを要するという点は解釈による"
+   ],
+   "id": "exp-yobi-2012-gyosei-q22-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-gyosei-q22-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。執行停止の要件は「重大な損害を避けるため緊急の必要があるとき」（行政事件訴訟法25条2項）であり、「他に適当な方法がないとき」は要件とされていない。",
+   "body": "誤りは「他に適当な方法がないときに限り」とする部分である。行政事件訴訟法25条2項は、執行停止の要件を「処分、処分の執行又は手続の続行により生ずる重大な損害を避けるため緊急の必要があるとき」と定めており、他に適当な方法がないことを求めていない。「その損害を避けるため他に適当な方法がないときに限り」という要件は、申請を前提としない義務付けの訴えについて37条の2第1項が定めるものであり、執行停止の要件ではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "25",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "処分、処分の執行又は手続の続行により生ずる重大な損害を避けるため緊急の必要があるとき",
+     "text_sha256": "e34c7fb3e9a688c620b8989d059d09fcde52fab53ff01172d2952a9a092b6870",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その損害を避けるため他に適当な方法がないときに限り",
+     "text_sha256": "d75001fd49fa2bd01d9acf289486bfb2675cec1a96cced8501df1a714b127ed3",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-gyosei-q22-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-gyosei-q22-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。行政事件訴訟法25条2項ただし書のとおり、処分の効力の停止は、処分の執行又は手続の続行の停止によって目的を達することができる場合にはすることができない。",
+   "body": "肢は、行政事件訴訟法25条2項ただし書の内容どおりである。同項ただし書は「処分の効力の停止は、処分の執行又は手続の続行の停止によつて目的を達することができる場合には、することができない。」と定める。処分の効力そのものを停止するのは、執行や手続の続行の停止では足りない場合に限られるという趣旨である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "25",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "処分の効力の停止は、処分の執行又は手続の続行の停止によつて目的を達することができる場合には、することができない。",
+     "text_sha256": "e34c7fb3e9a688c620b8989d059d09fcde52fab53ff01172d2952a9a092b6870",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-gyosei-q22-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-gyosei-q22-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。行政事件訴訟法44条により、行政庁の処分その他公権力の行使に当たる行為については民事保全法上の仮処分をすることができない。",
+   "body": "肢は、行政事件訴訟法44条（仮処分の排除）の内容どおりである。同条は「行政庁の処分その他公権力の行使に当たる行為については、民事保全法（平成元年法律第九十一号）に規定する仮処分をすることができない。」と定める。したがって、処分の執行を止めたいときは、民事保全法の仮処分ではなく、行政事件訴訟法の執行停止によることになる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "44",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行政庁の処分その他公権力の行使に当たる行為については、民事保全法（平成元年法律第九十一号）に規定する仮処分をすることができない。",
+     "text_sha256": "0badf1e710b16d00c42016a14e9aa71a035eec5d4f26e88ea152d897b02fcaff",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-gyosei-q22-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

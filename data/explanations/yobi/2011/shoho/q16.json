@@ -1,0 +1,258 @@
+{
+ "question_id": "yobi-2011-shoho-q16",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q16-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：取締役会設置会社では、支配人の選任は取締役会が決定し、取締役に委任することができない。",
+   "body": "決め手は、支配人の選任が取締役会の専決事項とされている点である。会社法362条4項は、取締役会は「次に掲げる事項その他の重要な業務執行の決定を取締役に委任することができない。」とし、その3号に「支配人その他の重要な使用人の選任及び解任」を掲げる。したがって、取締役会設置会社では、支配人は取締役会の決定によって選任することになり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "362",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "次に掲げる事項その他の重要な業務執行の決定を取締役に委任することができない。",
+     "text_sha256": "0c2c40d6cd0d3a3ae0a6e3f00a33298453cecc241308ad598ed1bbbbaf153799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "362",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "支配人その他の重要な使用人の選任及び解任",
+     "text_sha256": "0c2c40d6cd0d3a3ae0a6e3f00a33298453cecc241308ad598ed1bbbbaf153799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q16-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q16-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：本肢の任期は取締役の任期の定めであり、使用人である支配人について会社法は任期を定めていない。",
+   "body": "誤りは、取締役の任期の定めを支配人にあてはめた部分である。「選任後二年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時までとする。」という定めは、会社法332条1項の取締役の任期の規定である。支配人は、会社法10条により会社が選任し、本店又は支店で事業を行わせる使用人であって、支配人について定める会社法10条から13条までの規定には任期の定めはない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "332",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "選任後二年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時までとする。",
+     "text_sha256": "5a7c37b070116a70dc4056ad795ebb6f8e8f4c1d9da3833955c08a37d98ed437",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "10",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支配人を選任し、その本店又は支店において、その事業を行わせることができる。",
+     "text_sha256": "f4b4f341578a607f8a8400a78e6330b075358acb9e21528c36e07471c7367414",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社の本店又は支店の事業の主任者であることを示す名称を付した使用人は",
+     "text_sha256": "53dea81e4f800e04a1a428692e82516eba9b364291d717635fd4bf4e7878d89b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "会社法10条から13条までに任期の定めがないことは、各条の本文で確かめた（11条・12条も表示して確認）。"
+   ],
+   "id": "exp-yobi-2011-shoho-q16-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q16-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：支配人は、会社の許可を受けなければ、他の会社の取締役となることができない。",
+   "body": "誤りは、会社の許可を受けなくても他の会社の取締役になれるとした部分である。会社法12条1項は「支配人は、会社の許可を受けなければ、次に掲げる行為をしてはならない。」とし、その4号に「他の会社の取締役、執行役又は業務を執行する社員となること。」を掲げる。したがって、支配人が他の会社の取締役となるには会社の許可が必要であり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "12",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支配人は、会社の許可を受けなければ、次に掲げる行為をしてはならない。",
+     "text_sha256": "5ad813aedb4193c1257625f486817e722fd297aacd0a2b4c3a49533215b9000d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "12",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の会社の取締役、執行役又は業務を執行する社員となること。",
+     "text_sha256": "5ad813aedb4193c1257625f486817e722fd297aacd0a2b4c3a49533215b9000d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q16-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q16-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：支配人が自己の利益を図る目的で権限内の行為をした場合、相手方がその目的を知っていたときは、会社はその行為について責任を負わない（代理権の濫用）。",
+   "body": "決め手は、代理権の濫用の場合の扱いである。支配人は、会社法11条1項により「会社に代わってその事業に関する一切の裁判上又は裁判外の行為をする権限を有する。」から、自己の利益を図る意図でした行為も、会社の事業に関する行為である限り代理権の範囲内の行為である。現行の民法107条は、代理人が「自己又は第三者の利益を図る目的で代理権の範囲内の行為をした場合において、相手方がその目的を知り、又は知ることができたときは、その行為は、代理権を有しない者がした行為とみなす。」と定める。出題当時も、最判昭和42年4月20日が、代理人が自己または第三者の利益をはかるため権限内の行為をしたときは、相手方が代理人の意図を知りまたは知りうべきであった場合に限り、民法93条ただし書を類推適用して本人はその行為についての責任を負わないとしていた。本肢では相手方がその意図を知っているから、会社はその行為について責任を負わず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "支配人は、会社に代わってその事業に関する一切の裁判上又は裁判外の行為をする権限を有する。",
+     "text_sha256": "47780b61d3a757a99530ef995559fee6e20573e7a45a7168c4eb24c30ca8457a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "107",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己又は第三者の利益を図る目的で代理権の範囲内の行為をした場合において、相手方がその目的を知り、又は知ることができたときは、その行為は、代理権を有しない者がした行為とみなす。",
+     "text_sha256": "a49472cb31ed6b251a4bd0dbdbccaa8f1a310d37c4b04b3622b4f60cdecb7cef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "93",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "意思表示は、表意者がその真意ではないことを知ってしたときであっても、そのためにその効力を妨げられない。",
+     "text_sha256": "b18c60b8301086ec35f286368118229b4264524f293c63c83306083c24be762b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "代理権の濫用と民法93条ただし書の類推適用",
+     "court": "最高裁判所第一小法廷",
+     "date": "1967-04-20",
+     "case_number": "昭和39(オ)1025",
+     "holding": "代理人が自己または第三者の利益をはかるため権限内の行為をしたときは、相手方が代理人の意図を知りまたは知りうべきであった場合に限り、民法93条但書の規定を類推適用して、本人はその行為についての責に任じない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54955/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "民法107条（代理権の濫用）と出題当時の民法の扱いについて、改正前の内容は条文の本文で確認していない。出題当時の扱いは最判昭和42年4月20日の裁判要旨で説明した。"
+   ],
+   "id": "exp-yobi-2011-shoho-q16-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q16-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：支配人は、他の使用人を選任し、又は解任することができる。",
+   "body": "誤りは、支配人が他の使用人を選任することができないとした部分である。会社法11条2項は「支配人は、他の使用人を選任し、又は解任することができる。」と定める。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "11",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "支配人は、他の使用人を選任し、又は解任することができる。",
+     "text_sha256": "47780b61d3a757a99530ef995559fee6e20573e7a45a7168c4eb24c30ca8457a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q16-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

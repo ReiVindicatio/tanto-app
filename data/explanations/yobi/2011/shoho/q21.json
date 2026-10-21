@@ -1,0 +1,259 @@
+{
+ "question_id": "yobi-2011-shoho-q21",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q21-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。判例は、代理人資格を株主に限る定款があっても、法人株主が代表者の指揮下にある職員に代理行使させることは定款に反しないとする。",
+   "body": "株主は「代理人によってその議決権を行使することができる」（310条1項）。最高裁昭和51年12月24日判決は、定款で議決権行使の代理人の資格を株主に限定している場合においても、株主である地方公共団体・株式会社が、職制上上司の命令に服する義務を負い、議決権の代理行使にあたって法人の代表者の意図に反することができないようになっている職員又は従業員に議決権を代理行使させることは、定款の規定に反しないとした。こうした職員による代理行使であれば、株主総会がかく乱され会社の利益が害されるおそれはないと考えられているためである。したがって、定款に反し許されないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "310",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主は、代理人によってその議決権を行使することができる。",
+     "text_sha256": "64327e230494840d726a1b50fa140ae40e5bfdaec3abc5ded6248b377136e0e6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "代理人資格を株主に限る定款と法人株主の職員による代理行使",
+     "court": "最高裁判所第二小法廷",
+     "date": "1976-12-24",
+     "case_number": "昭和48(オ)794",
+     "holding": "定款で議決権行使の代理人の資格を株主に限定している場合でも、株主である地方公共団体・株式会社が、職制上上司の命令に服する義務を負い、代理行使にあたって法人の代表者の意図に反することができないようになっている職員又は従業員に議決権を代理行使させることは、定款の規定に反しない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53217/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "総会のかく乱のおそれがないという理由づけは解釈による（裁判要旨には書かれていない）",
+    "判決は会社法施行前の商法の規定についてのもの。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-shoho-q21-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q21-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。書面投票を定めることが義務になるのは株主の数が1000人以上の場合で、大会社であることは基準ではない。",
+   "body": "取締役は、株主総会を招集するとき、書面によって議決権を行使することができることとするときはその旨を定める（298条1項3号）。これを定めなければならないのは、298条2項によれば、株主の「数が千人以上である場合」である。会社の規模（大会社かどうか）は要件になっていない。したがって、株主の数が1000人未満の大会社でも書面投票を定めることは義務ではなく、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "298",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会に出席しない株主が書面によって議決権を行使することができることとするときは、その旨",
+     "text_sha256": "6cf29e7480618de198fa9d58594d5a4ce9fc66387a9a752e3953d185c6c837c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "298",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "の数が千人以上である場合には、前項第三号に掲げる事項を定めなければならない。",
+     "text_sha256": "6cf29e7480618de198fa9d58594d5a4ce9fc66387a9a752e3953d185c6c837c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の298条2項で説明した（ただし書の上場会社の例外を含め、改正前の内容は条文の本文で確認していない）"
+   ],
+   "id": "exp-yobi-2011-shoho-q21-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q21-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。公開会社の招集通知は株主総会の日の2週間前までに発しなければならず、定款で短縮できるのは公開会社でない会社だけである。",
+   "body": "299条1項は、株主総会を招集するには「株主総会の日の二週間」前までに株主に通知を発しなければならないとする。期間を短くできるのは「公開会社でない株式会社にあっては、一週間」の場合（さらに取締役会設置会社以外の会社では定款で下回る期間を定められる場合）に限られる。公開会社にはこのような短縮の定めがないので、定款で2週間より短い期間を定めることはできない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "299",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の日の二週間",
+     "text_sha256": "c9e7ce2cbe4c1c2200881a5eaf371c45904cec4f97fae631cbfbb187decc0631",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "299",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公開会社でない株式会社にあっては、一週間",
+     "text_sha256": "c9e7ce2cbe4c1c2200881a5eaf371c45904cec4f97fae631cbfbb187decc0631",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q21-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q21-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。取締役会設置会社の株主総会は、招集の際に定めた目的事項以外は決議できず、議案の提出も目的事項に限られる。",
+   "body": "取締役会設置会社では、株主総会は、298条1項2号の「株主総会の目的である事項」以外の事項については「決議をすることができない」（309条5項）。株主が総会の場で議案を提出できるのも「株主総会の目的である事項」についてに限られる（304条）。取締役の解任を議題にしたい株主は、事前に一定の事項を株主総会の目的とすることを請求する必要があり、その請求は「株主総会の日の八週間」前までにしなければならない（303条2項）。したがって、解任が目的事項になっていない総会でその場で解任議案を提出できるとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "298",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の目的である事項",
+     "text_sha256": "6cf29e7480618de198fa9d58594d5a4ce9fc66387a9a752e3953d185c6c837c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "309",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "決議をすることができない",
+     "text_sha256": "56ffbd6451793882d47ba533193af3dd09d3d0c791034f12f0f7f32cf6456aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "304",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の目的である事項",
+     "text_sha256": "766dc9e839c989221e3f9a1e60e7791d69920379fcc763fb65d794b6a50f920e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "303",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株主総会の日の八週間",
+     "text_sha256": "d4609cdc5104ed1ac600861c6b3c00d5ac458b19d215c728bb0c865dd452c4da",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q21-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q21-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。説明を求められた事項が株主総会の目的である事項に関しないものであるときは、説明を要しない。",
+   "body": "取締役等は、株主から特定の事項について説明を求められたときは「必要な説明をしなければならない」（314条本文）。もっとも、同条ただし書は「当該事項が株主総会の目的である事項に関しないものである場合」を、説明を拒める場合として挙げている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "314",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "必要な説明をしなければならない",
+     "text_sha256": "f1d8e48ec1a7f1c1d417ab265ad927de97e50cc45ab0998d2ef637e0668b735c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "314",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該事項が株主総会の目的である事項に関しないものである場合",
+     "text_sha256": "f1d8e48ec1a7f1c1d417ab265ad927de97e50cc45ab0998d2ef637e0668b735c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q21-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
