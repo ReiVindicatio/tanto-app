@@ -1,0 +1,246 @@
+{
+ "question_id": "shiho-2014-keiso-q36",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q36-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：執行猶予付きの有罪判決の告知があれば勾留状は効力を失うので、確定まで勾留が続くことはない。",
+   "body": "誤りは「その判決が確定するまでは，被告人は引き続き勾留される」という部分である。刑事訴訟法345条は「無罪、免訴、刑の免除、刑の全部の執行猶予、公訴棄却（第三百三十八条第四号による場合を除く。）、罰金又は科料の裁判の告知があつたときは、勾留状は、その効力を失う。」と定める。懲役3年・執行猶予5年の判決は刑の全部の執行を猶予する裁判であるから、その告知により勾留状は直ちに効力を失い、被告人は釈放される。判決の確定を待つものではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "345",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "無罪、免訴、刑の免除、刑の全部の執行猶予、公訴棄却（第三百三十八条第四号による場合を除く。）、罰金又は科料の裁判の告知があつたときは、勾留状は、その効力を失う。",
+     "text_sha256": "4e9783e8307aa4b3ad635623ef36e175d32cdc8f5a7de60537919167686515f4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の345条は「刑の全部の執行猶予」と定める（刑の一部の執行猶予の導入に伴う改正後の文言）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-keiso-q36-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q36-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：実刑の懲役判決（拘禁刑以上の刑に処する判決）の宣告があったときは、保釈はその時点で効力を失う。",
+   "body": "誤りは「その判決が確定するまでは，被告人の保釈は効力を失わない」という部分である。刑事訴訟法343条1項は「拘禁刑以上の刑に処する判決の宣告があつたときは、保釈又は勾留の執行停止は、その効力を失う。」と定める。懲役4年の実刑判決はこれに当たるので、宣告と同時に保釈は効力を失い、同条2項は、この場合に「新たに保釈又は勾留の執行停止の決定がないときに限り」収容の手続に関する規定を準用すると定めている。確定を待つものではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "343",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "拘禁刑以上の刑に処する判決の宣告があつたときは、保釈又は勾留の執行停止は、その効力を失う。",
+     "text_sha256": "882fa39c34ef3f9872645d61c96dee7d0a627e2af06bfd4dbd9b4f0e8ef9b542",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "343",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "新たに保釈又は勾留の執行停止の決定がないときに限り",
+     "text_sha256": "882fa39c34ef3f9872645d61c96dee7d0a627e2af06bfd4dbd9b4f0e8ef9b542",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行法は「拘禁刑以上の刑」と定める。出題当時は懲役・禁錮の区別があり、条文の文言も異なっていたが、改正前の内容は条文の本文で確認していない（懲役4年の実刑判決で保釈が失効する結論は変わらない）。"
+   ],
+   "id": "exp-shiho-2014-keiso-q36-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q36-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：無罪判決の告知があれば勾留状は効力を失うので、確定まで勾留が続くことはない。",
+   "body": "誤りは「その判決が確定するまでは，被告人は引き続き勾留される」という部分である。刑事訴訟法345条は、「無罪」の裁判の告知があったときは「勾留状は、その効力を失う。」と定める。したがって、強盗被告事件で勾留中の被告人に無罪判決が宣告されれば、その時点で勾留状は効力を失い、被告人は釈放される。検察官が控訴できるとしても、確定まで勾留が続くわけではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "345",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "無罪、免訴、刑の免除",
+     "text_sha256": "4e9783e8307aa4b3ad635623ef36e175d32cdc8f5a7de60537919167686515f4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "345",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "勾留状は、その効力を失う。",
+     "text_sha256": "4e9783e8307aa4b3ad635623ef36e175d32cdc8f5a7de60537919167686515f4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "無罪判決後に控訴審で改めて勾留することの可否は本肢の論点ではないので扱わない。"
+   ],
+   "id": "exp-shiho-2014-keiso-q36-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q36-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：拘禁刑以上の刑に処する判決の宣告後は、権利保釈を定める89条は適用されない。",
+   "body": "記述は条文のとおりである。刑事訴訟法89条は、保釈の請求があったときは、同条各号の場合を除き「これを許さなければならない。」と定める（権利保釈）。しかし344条1項は「拘禁刑以上の刑に処する判決の宣告があつた後は、第六十条第二項ただし書及び第八十九条の規定は、これを適用しない。」と定める。懲役6月の実刑判決もこれに当たるから、罪名や刑期の長短にかかわらず、宣告後は権利保釈の規定の適用はない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "89",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保釈の請求があつたときは、次の場合を除いては、これを許さなければならない。",
+     "text_sha256": "7f9f5edf74ddcd4119e9d4734656d33cb5f93efec346f60161b0b15a812e667b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "344",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "拘禁刑以上の刑に処する判決の宣告があつた後は、第六十条第二項ただし書及び第八十九条の規定は、これを適用しない。",
+     "text_sha256": "755ff6ca3e993ad6631eb7b6d220c846a6d53d3059b7e41c78483df29520c774",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行法は「拘禁刑以上の刑」と定め、344条2項（宣告後の職権保釈の要件）も置かれている。出題当時の文言は異なっていたが、改正前の内容は条文の本文で確認していない（懲役の実刑判決後に89条が適用されない結論は変わらない）。"
+   ],
+   "id": "exp-shiho-2014-keiso-q36-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q36-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：地方裁判所がした保釈請求却下決定は裁判所の決定であり、抗告ができ、その抗告は高等裁判所が扱う。",
+   "body": "記述は正しい。刑事訴訟法419条は、抗告は「裁判所のした決定に対してこれをすることができる。」と定める。判決前にした訴訟手続に関する決定には抗告できないとする420条1項についても、同条2項が「勾留、保釈」に関する決定には適用しないとしているので、保釈請求を却下する決定には抗告できる。そして、裁判所法16条は高等裁判所が「地方裁判所及び家庭裁判所の決定及び命令」に対する抗告について裁判権を有すると定めている（2号）。したがって、地方裁判所の保釈請求却下決定に対し、被告人は高等裁判所に抗告をすることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "419",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所のした決定に対してこれをすることができる。",
+     "text_sha256": "36de5659367f9af2aa381ab61f399f18943b40bc4d2098fa8d440cbeecbb8428",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "420",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "勾留、保釈",
+     "text_sha256": "9687168843be73f6dc0dfd45a59005b165424f4e982444ee1cb778e2a784276f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "裁判所法",
+     "article": "16",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地方裁判所及び家庭裁判所の決定及び命令",
+     "text_sha256": "61f3bf412bdd72524971c8877ba6decab8db5ba17e2b8df1bc0199b102c2ff00",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "420条2項は現行法で押収・電磁的記録提供命令等の文言が加わっている。改正前の内容は条文の本文で確認していない（保釈に関する決定に420条1項が適用されない点は変わらない）。"
+   ],
+   "id": "exp-shiho-2014-keiso-q36-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,326 @@
+{
+ "question_id": "shiho-2014-keiho-q14",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiho-q14-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：金品を手にする前（窃盗未遂）の犯人が逮捕を免れるために反抗を抑圧する暴行をしたので、事後強盗の未遂となる。",
+   "body": "決め手は、事後強盗の既遂・未遂が窃盗の既遂・未遂で決まる点である。238条は「窃盗が、財物を得てこれを取り返されることを防ぎ、逮捕を免れ、又は罪跡を隠滅するために、暴行又は脅迫をしたときは、強盗として論ずる。」と定め、243条は「第二百三十八条から第二百四十条まで」の罪の未遂を罰する。判例（最判昭和24年7月9日）は、窃盗未遂犯人による準強盗（事後強盗）は、財物を得なかった点で強盗の未遂と同じ態様であるから、準強盗の未遂として処断すべきであるとした。甲は金品を手にする前に見付かっており窃盗は未遂であるから、逮捕を免れるために反抗を抑圧する暴行を加えた甲には事後強盗未遂罪が成立する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "238",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "窃盗が、財物を得てこれを取り返されることを防ぎ、逮捕を免れ、又は罪跡を隠滅するために、暴行又は脅迫をしたときは、強盗として論ずる。",
+     "text_sha256": "32673008aad466f64c68967856be9fb6032e771cf5215eed8414bfab75c3b845",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "243",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百三十八条から第二百四十条まで",
+     "text_sha256": "bb37bccf7c5ac6610a6a71b357963698f384bc57cb344d9383496e7d35f27d3e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "窃盗未遂犯人による事後強盗は事後強盗の未遂",
+     "court": "最高裁判所第二小法廷",
+     "date": "1949-07-09",
+     "case_number": "昭和24(れ)121",
+     "holding": "窃盗未遂犯人による準強盗は、財物を得なかった点で強盗の未遂と同一の態様であり、準強盗の未遂をもって問擬すべきで、準強盗の既遂として処断したのは違法である。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56624/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2014-keiho-q14-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiho-q14-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：事後強盗の犯人が人を死亡させた以上、財物を得ていなくても強盗殺人罪は既遂であり、未遂ではない。",
+   "body": "誤りは「強盗殺人未遂罪」とした点である。金庫を開けていた甲は窃盗の実行に着手した「窃盗」であり、犯人であることを警察に告げられるのを防ぐための殺害は238条の「逮捕を免れ、又は罪跡を隠滅するために、暴行又は脅迫をしたとき」に当たり、甲は「強盗として論ずる」者となる。240条は「強盗が、人を負傷させたときは無期又は六年以上の拘禁刑に処し、死亡させたときは死刑又は無期拘禁刑に処する。」と定めており、同条の罪の既遂・未遂は、財物を得たかどうかではなく、死傷の結果が生じたかどうかで決まると解されている（判例あり（要確認））。甲は乙を殺害しているから、甲には強盗殺人既遂罪が成立する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "238",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "逮捕を免れ、又は罪跡を隠滅するために、暴行又は脅迫をしたとき",
+     "text_sha256": "32673008aad466f64c68967856be9fb6032e771cf5215eed8414bfab75c3b845",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "240",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "強盗が、人を負傷させたときは無期又は六年以上の拘禁刑に処し、死亡させたときは死刑又は無期拘禁刑に処する。",
+     "text_sha256": "606eeb6a25b0c01dd2a8d06824cea550181f8c9024cb24edda30017c5d886eb7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "強盗致死傷罪（強盗殺人罪）の既遂・未遂は財物奪取の有無ではなく死傷の結果の有無で決まるとした判例",
+     "searched": [
+      "courts.py search 強盗殺人 未遂 財物 --from 昭和22 --to 昭和30",
+      "courts.py search 強盗殺人 既遂 財物 奪取 --from 昭和22 --to 昭和40"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による：240条の既遂・未遂の基準（死傷の結果で決まる）は条文に明記されていない。",
+    "犯人であることを告げられるのを防ぐ目的が「逮捕を免れ」「罪跡を隠滅する」のどちらに当たるかは問題文から一義に決まらないが、いずれにしても238条に当たる。"
+   ],
+   "id": "exp-shiho-2014-keiho-q14-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiho-q14-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：殺害後に初めて財物を領得する意思を生じて持ち去った場合は、殺人罪と窃盗罪であり、強盗殺人罪は成立しない。",
+   "body": "誤りは「強盗殺人既遂罪」とした点である。240条の「強盗が」人を死亡させたときに当たるには、財物奪取に向けた暴行・脅迫（236条の「暴行又は脅迫を用いて他人の財物を強取した」）が必要であるが、甲の殺害はけんかによるもので、その時点で財物を奪う意思はなかった。判例（最判昭和41年4月8日）は、野外で人を殺害した後に領得の意思を生じ、犯行直後にその現場で被害者が身に付けていた腕時計を奪取する行為は窃盗罪を構成するとした。したがって甲には殺人罪（199条）と窃盗罪（235条）が成立し、強盗殺人罪は成立しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "240",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "強盗が",
+     "text_sha256": "606eeb6a25b0c01dd2a8d06824cea550181f8c9024cb24edda30017c5d886eb7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "236",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "暴行又は脅迫を用いて他人の財物を強取した",
+     "text_sha256": "94933b7944ee4b77bfc917a6272144192701687cd4b3a9d5e44f871febc2aa44",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者は",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "235",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の財物を窃取した者は、窃盗の罪とし",
+     "text_sha256": "44f910b87f784daf350f25c4067c5a24e6e862555ec52f35ceea3c0cd53efc1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "殺害後に生じた領得意思による財物奪取と窃盗罪",
+     "court": "最高裁判所第二小法廷",
+     "date": "1966-04-08",
+     "case_number": "昭和40(あ)1573",
+     "holding": "野外において人を殺害した後、領得の意思を生じ、犯行直後その現場で被害者が身につけていた腕時計を奪取する行為は、窃盗罪を構成する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50757/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による：強盗殺人罪の成立に殺害時点での財物奪取の意思が必要である点は、条文の構造からの一般的な理解による。"
+   ],
+   "id": "exp-shiho-2014-keiho-q14-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiho-q14-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：財物奪取目的の暴行で反抗を抑圧し、その結果被害者が放置したバッグを持ち去った以上、強盗既遂罪が成立する。",
+   "body": "誤りは「強盗既遂罪は成立しない」とした点である。236条1項は「暴行又は脅迫を用いて他人の財物を強取した者は、強盗の罪」とする。甲は金品を奪う目的で反抗を抑圧する暴行を加えており、乙がバッグを放置して逃走したのはその暴行によって反抗を抑圧された結果であるから、甲がそのバッグを持ち去ることは、暴行を手段として乙の意思に反して財物の占有を取得したものとして強取に当たると解されている。被害者が自ら手放した形になっても、暴行と財物の取得との間の因果関係は失われないから、甲には強盗既遂罪が成立する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "236",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "暴行又は脅迫を用いて他人の財物を強取した者は、強盗の罪",
+     "text_sha256": "94933b7944ee4b77bfc917a6272144192701687cd4b3a9d5e44f871febc2aa44",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による：反抗抑圧の結果被害者が放置した財物の取得を強取とする理解は条文に明記されていない。判例は確かめていない。"
+   ],
+   "id": "exp-shiho-2014-keiho-q14-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiho-q14-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：事後強盗目的の予備も強盗予備罪に当たり、予備罪には中止犯（43条ただし書）の観念を容れる余地がないので、中止犯は成立しない。",
+   "body": "決め手は2つの判例である。まず、237条は「強盗の罪を犯す目的で、その予備をした者」を罰するところ、判例（最決昭和54年11月19日）は、この強盗の目的には238条の準強盗（事後強盗）を目的とする場合を含むとした。発見されたら包丁で脅して逃げるつもりで包丁を携帯し、盗みに入る事務所を探してはいかいした甲には、強盗予備罪が成立する。次に、43条ただし書は「自己の意思により犯罪を中止したときは、その刑を減軽し、又は免除する。」と定めるが、同条は「犯罪の実行に着手してこれを遂げなかった者」についての規定であり、判例（最大判昭和29年1月20日）は、予備罪には中止未遂の観念を容れる余地がないとした。したがって、悔悟の念から断念しても甲に強盗予備罪の中止犯は成立しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "237",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "強盗の罪を犯す目的で、その予備をした者",
+     "text_sha256": "a63d91b4571cb5198b559a16e5aa931e625710b9ed70496137864763419564dc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己の意思により犯罪を中止したときは、その刑を減軽し、又は免除する。",
+     "text_sha256": "4a18dd050345c1424dde393ee15554e66bd90bcf59f4f9c932d0ebd372647655",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の実行に着手してこれを遂げなかった者",
+     "text_sha256": "4a18dd050345c1424dde393ee15554e66bd90bcf59f4f9c932d0ebd372647655",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "238",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "逮捕を免れ、又は罪跡を隠滅するために、暴行又は脅迫をしたときは、強盗として論ずる。",
+     "text_sha256": "32673008aad466f64c68967856be9fb6032e771cf5215eed8414bfab75c3b845",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "事後強盗（準強盗）の目的と強盗予備罪",
+     "court": "最高裁判所第二小法廷",
+     "date": "1979-11-19",
+     "case_number": "昭和53(あ)643",
+     "holding": "刑法237条にいう「強盗ノ目的」には同法238条の準強盗を目的とする場合を含む。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51159/detail2/index.html"
+     ]
+    },
+    {
+     "name": "予備罪と中止未遂",
+     "court": "最高裁判所大法廷",
+     "date": "1954-01-20",
+     "case_number": "昭和24(れ)1881",
+     "holding": "予備罪には中止未遂の観念を容れる余地がない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55458/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2014-keiho-q14-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,234 @@
+{
+ "question_id": "shiho-2014-keiso-q27",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q27-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。226条の証人尋問の請求は「第一回の公判期日前に限り」することができる。",
+   "body": "ポイントは、226条の請求ができる時期である。226条は、犯罪の捜査に欠くことのできない知識を有すると明らかに認められる者が取調べに対して出頭又は供述を拒んだ場合に、「第一回の公判期日前に限り、検察官は、裁判官にその者の証人尋問を請求することができる。」と定めている。したがって、第1回公判期日後は、226条に基づく証人尋問の請求はできない。本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "226",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第一回の公判期日前に限り、検察官は、裁判官にその者の証人尋問を請求することができる。",
+     "text_sha256": "387f4b8e69ad658befb998994932a4405ef05286704bc76c5e05e9291ee2445f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-keiso-q27-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q27-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。226条は請求先を「裁判官」としており、起訴後（第1回公判期日前）に請求する場合も同じである。",
+   "body": "ポイントは、226条の請求先である。226条は「検察官は、裁判官にその者の証人尋問を請求することができる。」と定め、請求先を裁判所ではなく裁判官としている。同条は第1回公判期日前であれば起訴の前後を区別していないから、起訴後に請求する場合でも、請求先は裁判官である。また228条1項は「前二条の請求を受けた裁判官は、証人の尋問に関し、裁判所又は裁判長と同一の権限を有する。」と定めており、尋問を行うのも請求を受けた裁判官である。本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "226",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官は、裁判官にその者の証人尋問を請求することができる。",
+     "text_sha256": "387f4b8e69ad658befb998994932a4405ef05286704bc76c5e05e9291ee2445f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "228",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の請求を受けた裁判官は、証人の尋問に関し、裁判所又は裁判長と同一の権限を有する。",
+     "text_sha256": "a0a4e39cd97312c0b89c6890ca2a4322ba31939e823879b814dce571ba13fc5c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-keiso-q27-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q27-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。被告人・被疑者・弁護人の立会いは、捜査に支障を生ずるおそれがないと認めるときに裁判官が「立ち会わせることができる」とされているだけで、必ず立ち会う権利があるわけではない。",
+   "body": "誤りは、被告人・被疑者・弁護人が「必ず」立ち会う権利を有するとする点である。228条2項は「裁判官は、捜査に支障を生ずる虞がないと認めるときは、被告人、被疑者又は弁護人を前項の尋問に立ち会わせることができる。」と定めている。立会いをさせるかどうかは、捜査に支障を生ずるおそれの有無を考慮した裁判官の裁量に委ねられており、被告人・被疑者・弁護人に立会いの権利が保障されているわけではない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "228",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判官は、捜査に支障を生ずる虞がないと認めるときは、被告人、被疑者又は弁護人を前項の尋問に立ち会わせることができる。",
+     "text_sha256": "a0a4e39cd97312c0b89c6890ca2a4322ba31939e823879b814dce571ba13fc5c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-keiso-q27-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q27-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。226条の証人尋問の結果を記載した書面を、裁判所が公判期日で必ず取り調べなければならないとする規定はない。証拠とできるのは321条1項1号の要件を満たす場合である。",
+   "body": "誤りは、尋問の結果を記載した書面を裁判所が「取り調べなければならない」とする点である。226条・228条には、尋問の結果を記載した書面を公判期日で取り調べることを裁判所に義務付ける定めはない。この書面は裁判官の面前における供述を録取した書面に当たり、321条1項1号により、供述者が「公判準備若しくは公判期日において供述することができないとき、又は供述者が公判準備若しくは公判期日において前の供述と異なつた供述をしたとき」に証拠とすることができるにとどまる。取り調べるかどうかは、当事者の請求と証拠能力の要件によって決まるのであり、尋問が行われたことから当然に取調べが義務付けられるわけではない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "321",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公判準備若しくは公判期日において供述することができないとき、又は供述者が公判準備若しくは公判期日において前の供述と異なつた供述をしたとき",
+     "text_sha256": "089e7b092c38ecb71ee686b5ab871df4fb7d53a6e72988a4bc31a0842d83ccc8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "226",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官は、裁判官にその者の証人尋問を請求することができる。",
+     "text_sha256": "387f4b8e69ad658befb998994932a4405ef05286704bc76c5e05e9291ee2445f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "228",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の請求を受けた裁判官は、証人の尋問に関し、裁判所又は裁判長と同一の権限を有する。",
+     "text_sha256": "a0a4e39cd97312c0b89c6890ca2a4322ba31939e823879b814dce571ba13fc5c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "321条1項1号は、出題後に「映像と音声の送受信により相手の状態を相互に認識しながら通話をすることができる方法による場合を含む」旨の括弧書きが加わった現行の本文で説明している（改正前の内容は条文の本文で確認していない）。",
+    "尋問調書の取扱いを定める刑事訴訟規則は e-Gov になく、本解説では扱っていない。"
+   ],
+   "id": "exp-shiho-2014-keiso-q27-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q27-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。226条の請求を受けた裁判官は証人尋問に関し裁判所と同一の権限を有するので、召喚に応じない証人を勾引することができる。",
+   "body": "誤りは、証人が勾引されることがないとする点である。228条1項は「前二条の請求を受けた裁判官は、証人の尋問に関し、裁判所又は裁判長と同一の権限を有する。」と定めている。そして152条は「裁判所は、証人が、正当な理由がなく、召喚に応じないとき、又は応じないおそれがあるときは、その証人を勾引することができる。」と定めている。したがって、226条の請求を受けた裁判官も、正当な理由なく召喚に応じない証人を勾引することができる。本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "228",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の請求を受けた裁判官は、証人の尋問に関し、裁判所又は裁判長と同一の権限を有する。",
+     "text_sha256": "a0a4e39cd97312c0b89c6890ca2a4322ba31939e823879b814dce571ba13fc5c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "152",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、証人が、正当な理由がなく、召喚に応じないとき、又は応じないおそれがあるときは、その証人を勾引することができる。",
+     "text_sha256": "fc592dc138b8098862d9401edcb59c0cb9423fa2930e2cdb4d8f40c95326c799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "226",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官は、裁判官にその者の証人尋問を請求することができる。",
+     "text_sha256": "387f4b8e69ad658befb998994932a4405ef05286704bc76c5e05e9291ee2445f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-keiso-q27-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

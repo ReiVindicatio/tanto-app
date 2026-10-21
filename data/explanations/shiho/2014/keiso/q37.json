@@ -1,0 +1,242 @@
+{
+ "question_id": "shiho-2014-keiso-q37",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q37-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：供述録取書とみれば、内容は参考人自身の体験供述なのでⅠでも要件を満たすが、供述者である参考人の署名・押印がなければ供述録取書等に当たらない。",
+   "body": "決め手は、供述録取書として扱う場合に署名・押印が要るのは「供述者」である参考人だという点である。本件捜査報告書を参考人の供述の録取書とみると、内容となる供述は参考人の供述であり、問題文はそれが検察官が直接証明しようとする事実の有無に関する内容だとしているので、Ⅰの「供述者が直接体験した事実に関する供述に限る」という見解でも内容の要件は満たす。しかし、供述録取書等は「供述書，供述を録取した書面で供述者の署名若しくは押印のあるもの」であり（問題文。現行法では刑事訴訟法290条の3第1項が「供述書、供述を録取した書面で供述者の署名若しくは押印のあるもの」と定める）、参考人の署名・押印がなければこれに当たらない。316条の15第1項6号は「被告人以外の者の供述録取書等であつて」と定めるので、6号の証拠の類型に該当しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "290_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "供述書、供述を録取した書面で供述者の署名若しくは押印のあるもの",
+     "text_sha256": "ea36111a439849533212b6bb01e71a7fd5d7f8c2d1978530e7b5341c236cdff1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_15",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告人以外の者の供述録取書等であつて、検察官が特定の検察官請求証拠により直接証明しようとする事実の有無に関する供述を内容とするもの",
+     "text_sha256": "57b0e6f6fcf358c7e345c83259adaab27deec03f0679c8849e7641f10c1d7fc7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "出題当時、供述録取書等の定義は316条の14第2号に置かれていた（問題文による）。現行法では290条の3第1項に定義があり、映像・音声の記録媒体も含む。改正前の内容は条文の本文で確認していない（問題文の定義を根拠にした）。"
+   ],
+   "id": "exp-shiho-2014-keiso-q37-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q37-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：供述録取書として供述録取書等に当たるには供述者である参考人の署名・押印が必要で、録取した捜査官の署名・押印では足りない。",
+   "body": "誤りは「捜査官の署名若しくは押印がある場合には」供述録取書等に当たるとする部分である。供述録取書等の定義は「供述書，供述を録取した書面で供述者の署名若しくは押印のあるもの」であり（問題文。現行法の刑事訴訟法290条の3第1項も同じ文言）、供述を録取した書面について求められるのは「供述者」の署名・押印である。本件捜査報告書を参考人の供述の録取書とみる以上、供述者は参考人であり、録取者である捜査官の署名・押印があっても供述録取書等には当たらない。したがって、Ⅰの見解で内容の要件を満たすとしても、6号の証拠の類型には該当しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "290_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "供述書、供述を録取した書面で供述者の署名若しくは押印のあるもの",
+     "text_sha256": "ea36111a439849533212b6bb01e71a7fd5d7f8c2d1978530e7b5341c236cdff1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_15",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告人以外の者の供述録取書等であつて",
+     "text_sha256": "57b0e6f6fcf358c7e345c83259adaab27deec03f0679c8849e7641f10c1d7fc7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "出題当時の定義規定（316条の14第2号）は問題文に引かれた文言を根拠にした。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-keiso-q37-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q37-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：捜査官の供述書とみると、その内容は参考人から聞いた伝聞であり、直接体験した事実に限るⅠの見解では内容の要件を満たさない。",
+   "body": "誤りは、Ⅰの見解を採りながら内容の要件を満たす（「といえ」）とする部分である。本件捜査報告書を捜査官の供述書とみると、供述者は捜査官であり、その供述の内容は「参考人から『・・・』旨聴き取った」という、捜査官が参考人から伝え聞いた事柄である。Ⅰの見解は、6号の「直接証明しようとする事実の有無に関する供述」を「供述者が直接体験した事実に関する供述に限る」とするから、捜査官が伝え聞いた参考人の供述はこれに当たらない。供述書であるから供述録取書等には当たるとしても、内容の要件を欠き、6号の証拠の類型に該当しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_15",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官が特定の検察官請求証拠により直接証明しようとする事実の有無に関する供述を内容とするもの",
+     "text_sha256": "57b0e6f6fcf358c7e345c83259adaab27deec03f0679c8849e7641f10c1d7fc7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "290_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "供述書、供述を録取した書面で供述者の署名若しくは押印のあるもの",
+     "text_sha256": "ea36111a439849533212b6bb01e71a7fd5d7f8c2d1978530e7b5341c236cdff1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-keiso-q37-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q37-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：供述録取書とみれば内容は参考人自身の供述であり、Ⅱの見解なら当然に内容の要件を満たすので、「といえず」は誤り。",
+   "body": "誤りは、Ⅱの見解を採ると内容の要件を満たさない（「といえず」）とする部分である。本件捜査報告書を参考人の供述の録取書とみると、内容となる供述は参考人の供述であり、問題文はそれが検察官が直接証明しようとする事実の有無に関する内容だとしている。Ⅱの見解は、直接体験した事実に関する供述の「ほか，供述者が他者から伝聞した供述も含む」とするもので、Ⅰより広いから、内容の要件は当然に満たす。参考人の署名・押印がなければ供述録取書等に当たらず6号の証拠の類型に該当しないという結論部分は正しいが、理由の前半が誤っている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_15",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官が特定の検察官請求証拠により直接証明しようとする事実の有無に関する供述を内容とするもの",
+     "text_sha256": "57b0e6f6fcf358c7e345c83259adaab27deec03f0679c8849e7641f10c1d7fc7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "290_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "供述を録取した書面で供述者の署名若しくは押印のあるもの",
+     "text_sha256": "ea36111a439849533212b6bb01e71a7fd5d7f8c2d1978530e7b5341c236cdff1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-keiso-q37-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q37-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：捜査官の供述書とみれば供述録取書等に当たり、伝聞した供述も含むⅡの見解なら内容の要件も満たすので、6号の証拠の類型に該当する。",
+   "body": "記述は正しい。本件捜査報告書を捜査官の供述書とみると、その内容は捜査官が参考人から伝え聞いた参考人の供述であるが、Ⅱの見解は「供述者が他者から伝聞した供述も含む」とするので、6号の「直接証明しようとする事実の有無に関する供述を内容とするもの」に当たる。また、供述録取書等の定義は「供述書，供述を録取した書面で供述者の署名若しくは押印のあるもの」であり（問題文。現行法では刑事訴訟法290条の3第1項）、署名・押印の要件は供述を録取した書面について付されているから、供述書はそれ自体で供述録取書等に当たる。捜査官は「被告人以外の者」であるから、6号の証拠の類型に該当する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "316_15",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告人以外の者の供述録取書等であつて、検察官が特定の検察官請求証拠により直接証明しようとする事実の有無に関する供述を内容とするもの",
+     "text_sha256": "57b0e6f6fcf358c7e345c83259adaab27deec03f0679c8849e7641f10c1d7fc7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "290_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "供述書、供述を録取した書面で供述者の署名若しくは押印のあるもの",
+     "text_sha256": "ea36111a439849533212b6bb01e71a7fd5d7f8c2d1978530e7b5341c236cdff1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "署名・押印の要件が供述を録取した書面にだけ係るという読み方は、定義の文言の構造からの解釈による。"
+   ],
+   "id": "exp-shiho-2014-keiso-q37-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

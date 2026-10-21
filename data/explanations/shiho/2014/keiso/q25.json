@@ -1,0 +1,295 @@
+{
+ "question_id": "shiho-2014-keiso-q25",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q25-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：電磁的記録を記録媒体に記録させて取得する処分の令状には、対象の電磁的記録とそれを記録させる者を記載しなければならない。",
+   "body": "肢が述べるのは、出題当時の記録命令付差押え（電磁的記録の保管者・利用権限者に命じて記録媒体に記録・印刷させ、その記録媒体を差し押さえる処分）の令状の記載事項である。現行法の218条1項には記録命令付差押えの語はなく、「裁判官の発する令状により、差押え、捜索、電磁的記録提供命令又は検証をすることができる。」と定められ、電磁的記録提供命令は「電磁的記録を記録媒体に記録させ又は移転させて当該記録媒体を提出させる方法」などで電磁的記録を提供させる命令とされている（102条の2第1項）。そのうえで219条1項は、令状に「提供させるべき電磁的記録、提供させるべき者及び提供の方法」を記載しなければならないとしている。このように、保管者等に記録させて取得する処分の令状には、対象となる電磁的記録と、それを記録させる者の記載が必要であるという点で、肢の内容は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判官の発する令状により、差押え、捜索、電磁的記録提供命令又は検証をすることができる。",
+     "text_sha256": "954073f263edaa60047b785f6d0ee41b4ebde20c340041083ed979aa3578ed9f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "102_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "電磁的記録を記録媒体に記録させ又は移転させて当該記録媒体を提出させる方法",
+     "text_sha256": "565f3806650d5f08e9bfc40f228109e71a0083982248810ffbcc6b63dae9d5e8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "219",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "提供させるべき電磁的記録、提供させるべき者及び提供の方法",
+     "text_sha256": "41cfe36906d2e078b14f2aaf27ac51afabee0593215b1f82ba130125ea8fd68a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題当時の記録命令付差押え（旧99条の2・旧218条1項・旧219条1項）は、現行法では電磁的記録提供命令に置き換えられているとみられる。改正前の内容は条文の本文で確認していない。現行法の電磁的記録提供命令には「印刷させ」る方法はなく、記録媒体を「差し押さえる」形でもないため、肢の文言そのものは現行法の制度とは一致しない。"
+   ],
+   "id": "exp-shiho-2014-keiso-q25-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q25-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：電子計算機の差押えに際して接続先の記録媒体から複写する場合には、令状に複写すべきものの範囲を記載しなければならない。",
+   "body": "誤りは「複写すべきものの範囲の記載がなされる必要はない」とした点である。肢の処分は218条2項の、差し押さえるべき物が電子計算機であるときに、電気通信回線で接続している記録媒体から電磁的記録を「当該電子計算機又は他の記録媒体に複写した上、当該電子計算機又は当該他の記録媒体を差し押さえることができる。」というものである。219条2項は「前条第二項の場合には、同条の令状に、前項に規定する事項のほか、差し押さえるべき電子計算機に電気通信回線で接続している記録媒体であつて、その電磁的記録を複写すべきものの範囲を記載しなければならない。」と定めている。したがって、差し押さえるべき物の記載とは別に、複写すべきものの範囲の記載が必要である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "218",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該電子計算機又は他の記録媒体に複写した上、当該電子計算機又は当該他の記録媒体を差し押さえることができる。",
+     "text_sha256": "954073f263edaa60047b785f6d0ee41b4ebde20c340041083ed979aa3578ed9f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "219",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前条第二項の場合には、同条の令状に、前項に規定する事項のほか、差し押さえるべき電子計算機に電気通信回線で接続している記録媒体であつて、その電磁的記録を複写すべきものの範囲を記載しなければならない。",
+     "text_sha256": "41cfe36906d2e078b14f2aaf27ac51afabee0593215b1f82ba130125ea8fd68a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-keiso-q25-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q25-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：差し押さえるべき物が電磁的記録に係る記録媒体であるときは、差押えに代えて、差押えを受ける者に複写・印刷・移転させた他の記録媒体を差し押さえることができる。",
+   "body": "110条の2は「差し押さえるべき物が電磁的記録に係る記録媒体であるときは、差押状の執行をする者は、その差押えに代えて次に掲げる処分をすることができる。」とし、2号で「差押えを受ける者に差し押さえるべき記録媒体に記録された電磁的記録を他の記録媒体に複写させ、印刷させ、又は移転させた上、当該他の記録媒体を差し押さえること。」を掲げる。222条1項は「第百十条の二前段」を、捜査機関が218条の規定によってする押収について準用している。したがって、裁判官の発する令状により差押えを実施する捜査機関も、肢のとおりの権限を有する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "110_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "差し押さえるべき物が電磁的記録に係る記録媒体であるときは、差押状の執行をする者は、その差押えに代えて次に掲げる処分をすることができる。",
+     "text_sha256": "123acb0aa8f9671527b2af32e0d345e5d6c841709c13dbd72ba9f863eb511c3b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "110_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "差押えを受ける者に差し押さえるべき記録媒体に記録された電磁的記録を他の記録媒体に複写させ、印刷させ、又は移転させた上、当該他の記録媒体を差し押さえること。",
+     "text_sha256": "123acb0aa8f9671527b2af32e0d345e5d6c841709c13dbd72ba9f863eb511c3b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百十条の二前段",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判官の発する令状により、差押え、捜索、電磁的記録提供命令又は検証をすることができる。",
+     "text_sha256": "954073f263edaa60047b785f6d0ee41b4ebde20c340041083ed979aa3578ed9f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-keiso-q25-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q25-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：差し押さえるべき物が電磁的記録に係る記録媒体であるときは、捜索・差押えを実施する者は、処分を受ける者に電子計算機の操作その他の必要な協力を求めることができる。",
+   "body": "111条の2は「差し押さえるべき物が電磁的記録に係る記録媒体であるときは、差押状又は捜索状の執行をする者は、処分を受ける者に対し、電子計算機の操作その他の必要な協力を求めることができる。」と定める。222条1項は「第百十一条の二前段」を、捜査機関が218条の規定によってする押収又は捜索について準用している。したがって、裁判官の発する令状により捜索又は差押えを実施する捜査機関も、処分を受ける者に必要な協力を求めることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "111_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "差し押さえるべき物が電磁的記録に係る記録媒体であるときは、差押状又は捜索状の執行をする者は、処分を受ける者に対し、電子計算機の操作その他の必要な協力を求めることができる。",
+     "text_sha256": "6580c793fd0566b548b5c4aba0393aa6a4f13fa7a1322c4a43928b1b5a0985bf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百十一条の二前段",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判官の発する令状により、差押え、捜索、電磁的記録提供命令又は検証をすることができる。",
+     "text_sha256": "954073f263edaa60047b785f6d0ee41b4ebde20c340041083ed979aa3578ed9f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-keiso-q25-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiso-q25-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：当事者の立会権を定める113条は捜査機関の押収・捜索に準用されておらず、被疑者・弁護人に立会権はない。",
+   "body": "誤りは、被疑者又は弁護人が「立ち会う権利を有する」とした点である。113条1項は「検察官、被告人又は弁護人は、差押状又は捜索状の執行に立ち会うことができる。」と定めるが、これは裁判所が行う押収・捜索についての規定である。捜査機関の押収・捜索に準用される規定を列挙した222条1項は「第百十二条、第百十四条」と113条を飛ばしており、113条は準用されていない。捜査機関は、222条6項により「必要があるときは、被疑者をこれに立ち会わせることができる。」にとどまり、被疑者や弁護人に立会いの権利が認められているわけではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官、被告人又は弁護人は、差押状又は捜索状の執行に立ち会うことができる。",
+     "text_sha256": "aa9f1d209c913cea646f5ed7621e51e00dd5216c3391563a8e931de2f38663c0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百十二条、第百十四条",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "必要があるときは、被疑者をこれに立ち会わせることができる。",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "肢の処分（記録命令付差押え）は、現行法では電磁的記録提供命令に置き換えられているとみられる。改正前の内容は条文の本文で確認していない。現行の222条1項が電磁的記録提供命令について準用する規定（第百五条の二、第百十条、第百十一条第三項など）にも113条は含まれていない。"
+   ],
+   "id": "exp-shiho-2014-keiso-q25-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

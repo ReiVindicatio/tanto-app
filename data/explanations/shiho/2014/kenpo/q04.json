@@ -1,0 +1,144 @@
+{
+ "question_id": "shiho-2014-kenpo-q04",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-kenpo-q04-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。企業が従業員に特定政党の党員かどうかを調査することも、必要性があり、方法が相当（不利益取扱いを示唆せず、強要にわたらない）であれば許容されるとするのが判例の趣旨である。",
+   "body": "肢は、企業による従業員の所属政党の調査が許される条件として、調査の必要性があること、不利益な取扱いのおそれを示唆しないこと、強要にわたらないことを挙げている。この点については、企業が従業員に共産党員か否かを尋ねた調査の適法性が争われた判例あり（要確認）。公式の正解は○であり、判例の趣旨は、思想・信条に関わる調査であっても、その必要性・合理性があり、調査の方法が社会的に許容される限度にとどまる限り、直ちに違法とはならないというものと解される。なお、憲法19条（「思想及び良心の自由は、これを侵してはならない。」）は直接には国家に向けられた規定であり、私企業と従業員の間では、その趣旨が私法上の違法性の判断の中で考慮されると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "思想及び良心の自由は、これを侵してはならない。",
+     "text_sha256": "73d3117ee441f3d45175ede3e05a3bc8c586cc681cf8d5ecd21b4669d6dabe5a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "企業が従業員に共産党員か否かを調査したことの適法性（思想・信条の自由との関係）",
+     "searched": [
+      "courts.py search 党員 調査 --from 昭和63 --to 昭和63",
+      "courts.py search 共産党員 調査 思想",
+      "courts.py search 調査 --date 1988-02-05（2000件超でサイトのエラー）"
+     ]
+    }
+   ],
+   "notes": [
+    "判例を courts.py で確かめられなかったため、判例の趣旨は肢の文言と公式の正解（○）から述べている。",
+    "憲法19条が私人間では私法上の判断の中で考慮されるとする点は解釈による。"
+   ],
+   "id": "exp-shiho-2014-kenpo-q04-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-kenpo-q04-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。謝罪広告事件の判例は、単に事態の真相を告白し陳謝の意を表明する程度の謝罪広告を命ずる判決は、憲法19条に反しないとした。",
+   "body": "謝罪広告事件（最大判昭和31年7月4日）は、新聞紙に謝罪広告を掲載することを命ずる判決について、その広告の内容が単に事態の真相を告白し陳謝の意を表明する程度のものにあっては、代替執行をすることができるとし、そのような判決は憲法19条（「思想及び良心の自由は、これを侵してはならない。」）に反しないとした。肢の「単に事態の真相を告白し，陳謝の意を表明するにとどまる場合は，良心の自由を不当に制限することにはならない」は、この判示に沿っている。したがって、肢の記述は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "思想及び良心の自由は、これを侵してはならない。",
+     "text_sha256": "73d3117ee441f3d45175ede3e05a3bc8c586cc681cf8d5ecd21b4669d6dabe5a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [
+    {
+     "name": "謝罪広告事件（謝罪広告を命ずる判決と良心の自由）",
+     "court": "最高裁判所大法廷",
+     "date": "1956-07-04",
+     "case_number": "昭和28(オ)1241",
+     "holding": "新聞紙に謝罪広告を掲載することを命ずる判決は、その広告の内容が単に事態の真相を告白し陳謝の意を表明する程度のものにあっては、代替執行をすることができ、そのような判決は憲法19条に反しない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57386/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-kenpo-q04-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-kenpo-q04-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。内申書の記載については、判例の趣旨によれば、記載された外部的行為からは思想信条そのものを了知し得るものではないとされ、「一定の思想信条を了知し得る」とする点が誤り。",
+   "body": "決め手は「その記載に係る外部的行為から一定の思想信条を了知し得る」という部分である。中学校の内申書（調査書）に、生徒が全共闘を名乗って機関紙を発行したことなどの外部的行為を記載したことが憲法19条（「思想及び良心の自由は、これを侵してはならない。」）に反するかが争われた判例あり（要確認）。公式の正解は×であり、判例の趣旨は、そのような記載は生徒の思想信条そのものを記載したものではなく、記載された外部的行為によっては生徒の思想信条を了知し得るものではないというものと解される。したがって、外部的行為から一定の思想信条を了知し得るとする肢は、判例の趣旨に反する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "思想及び良心の自由は、これを侵してはならない。",
+     "text_sha256": "73d3117ee441f3d45175ede3e05a3bc8c586cc681cf8d5ecd21b4669d6dabe5a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "中学校の内申書（調査書）への外部的行為の記載と思想・信条の自由（憲法19条）",
+     "searched": [
+      "courts.py search 内申書 思想 --from 昭和63 --to 昭和63",
+      "courts.py search 調査書 思想 信条",
+      "courts.py search 内申書 --date 1988-07-15"
+     ]
+    }
+   ],
+   "notes": [
+    "判例を courts.py で確かめられなかったため、判例の趣旨は肢の文言と公式の正解（×）から述べている。"
+   ],
+   "id": "exp-shiho-2014-kenpo-q04-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
