@@ -171,3 +171,12 @@ class PageNumberTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class FullWidthChoiceNumbersTest(unittest.TestCase):
+    """H26 司法 刑事系 問39：選択肢の行の先頭の番号だけが半角（「1．ア」）でも選択肢として読む"""
+
+    def test_half_width_number_before_label_becomes_full_width(self):
+        from parse_questions import full_width_choice_numbers
+        body = [(1, "1．ア"), (2, "ウ"), (3, "２．ア"), (4, "1．この記述は本文")]
+        self.assertEqual(full_width_choice_numbers(body), [(1, "１．ア"), (2, "ウ"), (3, "２．ア"), (4, "1．この記述は本文")])

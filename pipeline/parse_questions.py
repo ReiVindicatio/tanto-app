@@ -119,6 +119,16 @@ def first_label(stem_lines: list[tuple[int, str]]) -> str | None:
     return m.group(1) if m else None
 
 
+HALF_LABEL_CHOICE_RE = re.compile(r"^(\s*)([1-9])([．.]\s*[アイウエオカキクケコ](?:\s|$))")
+
+
+def full_width_choice_numbers(body: list[tuple[int, str]]) -> list[tuple[int, str]]:
+    """選択肢の行頭の番号だけが半角の行「1．ア　ウ」（H26 司法 刑事系 問39。続く２〜５は全角）を全角にそろえる。
+    番号＋肢ラベルの形の行だけで、ほかの行は変えない"""
+    return [(ln, HALF_LABEL_CHOICE_RE.sub(lambda m: m.group(1) + chr(ord(m.group(2)) + 0xFEE0) + m.group(3), line))
+            for ln, line in body]
+
+
 def split_inline_statements(body: list[tuple[int, str]]) -> list[tuple[int, str]]:
     """1行に並んだ肢「ア．Ⅰ（１）   イ．Ⅰ（２）   ウ．…」（R08 刑訴 問25）を、肢ごとの行に分ける（行番号は同じ）"""
     out = []
@@ -249,7 +259,7 @@ def parse_question(number: int, points: int, body: list[tuple[int, str]], ids: d
     statement_headings: list[str] = []  # 肢の並びの見出し（【記述】以外。検証で見出し行を照合から除く）
     stem_heading_lines: list[int] = []  # リード文の一部として残した【…】だけの行
 
-    body = split_inline_statements(body)
+    body = split_inline_statements(full_width_choice_numbers(body))
     for k, (ln, line) in enumerate(body):
         if not line.strip():
             continue

@@ -105,4 +105,5 @@
 | [T044](T044-seo-basics.md) | 検索エンジンに載せる（robots・説明・OGP・サイトマップ） | 完了 | M3 | **高** | T043 |
 | [T045](T045-static-question-pages.md) | 問ごとの静的ページ（検索で見つかるように） | 完了 | M3 | **高** | T044 |
 | [T046](T046-web-analytics.md) | 閲覧状況の計測（Cloudflare Web Analytics） | 完了 | M3 | 中 | T045 |
+| [T047](T047-parse-half-width-choice.md) | パースの誤り：選択肢の先頭の番号だけが半角（H26 司法 刑事系 問39） | 完了 | M2 | **高** | |
 

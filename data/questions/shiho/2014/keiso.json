@@ -1732,7 +1732,7 @@
    "subject": "keiso",
    "number": 39,
    "points": 2,
-   "format": "single_choice",
+   "format": "combination",
    "polarity": "correct",
    "exhaustive": false,
    "unordered": false,
@@ -1740,7 +1740,48 @@
    "context": [],
    "sub_questions": [],
    "requires_context": false,
-   "choices": [],
+   "choices": [
+    {
+     "number": 1,
+     "text": "ア ウ",
+     "labels": [
+      "ア",
+      "ウ"
+     ]
+    },
+    {
+     "number": 2,
+     "text": "ア エ",
+     "labels": [
+      "ア",
+      "エ"
+     ]
+    },
+    {
+     "number": 3,
+     "text": "イ エ",
+     "labels": [
+      "イ",
+      "エ"
+     ]
+    },
+    {
+     "number": 4,
+     "text": "イ オ",
+     "labels": [
+      "イ",
+      "オ"
+     ]
+    },
+    {
+     "number": 5,
+     "text": "ウ オ",
+     "labels": [
+      "ウ",
+      "オ"
+     ]
+    }
+   ],
    "answer_slots": [
     {
      "no": 70,
@@ -4587,7 +4628,7 @@
    "requires_context": false,
    "truth_at_exam": {
     "value": false,
-    "derivation": "single_choice",
+    "derivation": "combination",
     "basis": "uniqueness",
     "derived_from": {
      "slots": [
@@ -4624,9 +4665,9 @@
    "text": "外国人である被疑者を通訳を介して取り調べる場合，その供述録取書を日本語で作成しても違法ではない。",
    "requires_context": false,
    "truth_at_exam": {
-    "value": false,
-    "derivation": "single_choice",
-    "basis": "uniqueness",
+    "value": true,
+    "derivation": "combination",
+    "basis": "selected",
     "derived_from": {
      "slots": [
       {
@@ -4662,9 +4703,9 @@
    "text": "外国人である被告人の公判において，検察官及び弁護人に異議がなく，裁判所が許可すれば，同被告人の理解する外国語で公判手続を進めても違法ではない。",
    "requires_context": false,
    "truth_at_exam": {
-    "value": true,
-    "derivation": "single_choice",
-    "basis": "selected",
+    "value": false,
+    "derivation": "combination",
+    "basis": "convention",
     "derived_from": {
      "slots": [
       {
@@ -4700,9 +4741,9 @@
    "text": "外国人である被告人が日本に適法に在留する資格を有しない場合でも，同被告人の保釈を許すことは違法ではない。",
    "requires_context": false,
    "truth_at_exam": {
-    "value": false,
-    "derivation": "single_choice",
-    "basis": "uniqueness",
+    "value": true,
+    "derivation": "combination",
+    "basis": "selected",
     "derived_from": {
      "slots": [
       {
@@ -4735,11 +4776,11 @@
    "id": "shiho-2014-keiso-q39-e",
    "question_id": "shiho-2014-keiso-q39",
    "label": "オ",
-   "text": "外国人である被告人の公判において，判決の言渡しに限っては，通訳を付さずにしても違法ではない。1．ア ウ ２．ア エ ３．イ エ ４．イ オ ５．ウ オ",
+   "text": "外国人である被告人の公判において，判決の言渡しに限っては，通訳を付さずにしても違法ではない。",
    "requires_context": false,
    "truth_at_exam": {
     "value": false,
-    "derivation": "single_choice",
+    "derivation": "combination",
     "basis": "uniqueness",
     "derived_from": {
      "slots": [
@@ -4765,7 +4806,7 @@
    "provenance": {
     "line_range": [
      1026,
-     1028
+     1027
     ]
    }
   },
