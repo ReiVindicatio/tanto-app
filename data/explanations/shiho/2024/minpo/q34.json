@@ -1,0 +1,281 @@
+{
+ "question_id": "shiho-2024-minpo-q34",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q34-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。890条で常に相続人となる「配偶者」は法律上の配偶者であり、内縁の配偶者は相続人とならない。",
+   "body": "決め手は「内縁の配偶者は、相続人となる」という部分である。890条は「被相続人の配偶者は、常に相続人となる」と定めるが、ここにいう配偶者は婚姻の届出をした法律上の配偶者を指し、内縁の配偶者は含まれないと解されている。判例も、内縁の夫婦の一方の死亡により内縁関係が解消した場合に離婚に伴う財産分与の規定を類推適用することはできないとし、その理由として、民法は法律上の夫婦の一方の死亡による婚姻解消の場合には相続により財産を承継させることで処理するものとしており、死亡による内縁解消のときに財産分与の法理による遺産清算の道を開くことは相続による財産承継の構造の中に異質の契機を持ち込むもので法の予定しないところであると述べている。内縁の配偶者は相続人とならないので、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "890",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被相続人の配偶者は、常に相続人となる",
+     "text_sha256": "e44c3edd99a7d6f09b47bc1af793e51b803e20eef9aca678c797058a23a6e388",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "内縁の死亡解消と財産分与の類推適用",
+     "court": "最高裁判所第一小法廷",
+     "date": "2000-03-10",
+     "case_number": "平成11(許)18",
+     "holding": "内縁の夫婦の一方の死亡により内縁関係が解消した場合に、民法768条の規定を類推適用することはできない。民法は、法律上の夫婦の死亡による婚姻解消の場合には相続により財産を承継させることで処理するものとしており、死亡による内縁解消のときに財産分与の法理による遺産清算の道を開くことは、相続による財産承継の構造の中に異質の契機を持ち込むもので、法の予定しないところである。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52278/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "890条の「配偶者」が法律上の配偶者に限られるという点は解釈による。"
+   ],
+   "id": "exp-shiho-2024-minpo-q34-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q34-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。886条1項により、胎児は相続については既に生まれたものとみなされるので、被相続人の死亡後に出生した子も相続人となる。",
+   "body": "3条1項は「私権の享有は、出生に始まる」と定めるが、相続については886条1項が「胎児は、相続については、既に生まれたものとみなす」と特則を置いている。したがって、被相続人が妻の懐胎中に死亡した場合でも、その後に出生した子は、相続開始の時に既に生まれていたものとみなされ、887条1項により「被相続人の子は、相続人となる」。なお、886条2項により、胎児が死体で生まれたときはこの扱いはされないが、本肢は子が出生した場合であるから相続人となり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "私権の享有は、出生に始まる",
+     "text_sha256": "fcbfe72de5bdf0d82c18f0bce518b65ebb0583453792eb9bb34b4764d4589992",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "886",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "胎児は、相続については、既に生まれたものとみなす",
+     "text_sha256": "352b45cb024974dcb1a56b431e32e53155bcc2be2b632e043f2b26e9085b5119",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "886",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、胎児が死体で生まれたときは、適用しない",
+     "text_sha256": "352b45cb024974dcb1a56b431e32e53155bcc2be2b632e043f2b26e9085b5119",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "887",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被相続人の子は、相続人となる",
+     "text_sha256": "6eac3c2fc5ddf34f8bb4ef2112c6f22d510ce206b2b194c9870bf454b6e0eb12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2024-minpo-q34-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q34-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。死亡の先後が不明なＡとＢは同時に死亡したものと推定され（32条の2）、887条2項の「相続の開始以前に死亡したとき」に当たるので、ＣはＢを代襲する。",
+   "body": "32条の2は、数人の者が死亡した場合において、そのうちの一人が他の者の死亡後になお生存していたことが明らかでないときは「これらの者は、同時に死亡したものと推定する」と定める。同時に死亡した者の間では互いに相続は生じないので、ＢはＡの相続人とならない。他方、887条2項は「被相続人の子が、相続の開始以前に死亡したとき」はその者の子が代襲して相続人となると定めており、「以前」には同時に死亡した場合も含まれる。したがって、Ｂの子Ｃ（Ａの直系卑属）はＢを代襲してＡの相続人となり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "32_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "これらの者は、同時に死亡したものと推定する",
+     "text_sha256": "ab64dbde2662569a60526964210382e16b2144169d2257f70d31ce93a6bc8e5a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "887",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "被相続人の子が、相続の開始以前に死亡したとき",
+     "text_sha256": "6eac3c2fc5ddf34f8bb4ef2112c6f22d510ce206b2b194c9870bf454b6e0eb12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "同時に死亡した者の間で相続が生じないこと、「以前」に同時死亡を含むことは解釈による。"
+   ],
+   "id": "exp-shiho-2024-minpo-q34-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q34-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。代襲原因は死亡・欠格・廃除に限られ（887条2項）、相続の放棄は代襲原因ではないので、Ｃは代襲相続しない。",
+   "body": "決め手は、相続の放棄を代襲原因としている点である。887条2項は、被相続人の子が「相続の開始以前に死亡したとき、又は第八百九十一条の規定に該当し、若しくは廃除によって、その相続権を失ったとき」に、その者の子が代襲して相続人となると定めており、相続の放棄は挙げられていない。また939条は「相続の放棄をした者は、その相続に関しては、初めから相続人とならなかったものとみなす」と定める。したがって、Ｂが相続を放棄しても、Ｂの子ＣがＢを代襲して相続人となることはなく、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "887",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "相続の開始以前に死亡したとき、又は第八百九十一条の規定に該当し、若しくは廃除によって、その相続権を失ったとき",
+     "text_sha256": "6eac3c2fc5ddf34f8bb4ef2112c6f22d510ce206b2b194c9870bf454b6e0eb12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "939",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続の放棄をした者は、その相続に関しては、初めから相続人とならなかったものとみなす",
+     "text_sha256": "216f51496d3f22d25f4cbdffdc301b3ced35db37b4b4d6476eff92a0eca2e47f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "891",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる者は、相続人となることができない",
+     "text_sha256": "e068e33e6343fc5b87f5eaf858616516a9c64d213f728c225e6ccca29315f1f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2024-minpo-q34-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q34-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、遺言書の破棄・隠匿が相続に関して不当な利益を目的とするものでなかったときは、891条5号の相続欠格者に当たらないとする。",
+   "body": "891条は「次に掲げる者は、相続人となることができない」とし、その5号で「相続に関する被相続人の遺言書を偽造し、変造し、破棄し、又は隠匿した者」を挙げる。条文上は破棄の目的を問うていないが、判例は、相続人が相続に関する被相続人の遺言書を破棄又は隠匿した場合において、その行為が相続に関して不当な利益を目的とするものでなかったときは、その相続人は891条5号所定の相続欠格者に当たらないとした。本肢はこの判例のとおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "891",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる者は、相続人となることができない",
+     "text_sha256": "e068e33e6343fc5b87f5eaf858616516a9c64d213f728c225e6ccca29315f1f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "891",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続に関する被相続人の遺言書を偽造し、変造し、破棄し、又は隠匿した者",
+     "text_sha256": "e068e33e6343fc5b87f5eaf858616516a9c64d213f728c225e6ccca29315f1f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "不当な利益を目的としない遺言書の破棄隠匿と相続欠格",
+     "court": "最高裁判所第三小法廷",
+     "date": "1997-01-28",
+     "case_number": "平成6(オ)804",
+     "holding": "相続人が相続に関する被相続人の遺言書を破棄又は隠匿した場合において、その行為が相続に関して不当な利益を目的とするものでなかったときは、その相続人は民法891条5号所定の相続欠格者に当たらない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52549/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2024-minpo-q34-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
