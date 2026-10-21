@@ -1,0 +1,257 @@
+{
+ "question_id": "shiho-2020-minpo-q21",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q21-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。404条1項により、別段の意思表示がないときの利率は、その利息が生じた最初の時点における法定利率による。",
+   "body": "ポイントは、約定利率の定めがない利息付債権にどの時点の法定利率が適用されるかである。404条1項は「利息を生ずべき債権について別段の意思表示がないときは、その利率は、その利息が生じた最初の時点における法定利率による。」と定める。法定利率は同条3項により変動しうるが、ある債権に適用される利率は、最初に利息が生じた時点の法定利率で固定される。本肢はこの規定の内容と一致し、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "404",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "利息を生ずべき債権について別段の意思表示がないときは、その利率は、その利息が生じた最初の時点における法定利率による。",
+     "text_sha256": "a965ab244f1899590e357ae4b69ae913cb61204d19b4a05890de73a42965addc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "404",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "法定利率は、法務省令で定めるところにより、三年を一期とし、一期ごとに、次項の規定により変動するものとする。",
+     "text_sha256": "a965ab244f1899590e357ae4b69ae913cb61204d19b4a05890de73a42965addc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q21-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q21-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。法定利率は3年を一期として見直されるが、404条4項により基準割合の差の1パーセント未満の端数は切り捨てられるため、「必ず変更される」わけではない。",
+   "body": "ポイントは「必ず変更される」の部分である。404条3項は、法定利率は「三年を一期とし、一期ごとに、次項の規定により変動するものとする。」と定める。そして同条4項は、各期の法定利率を、直近変動期の基準割合と当期の基準割合との差に相当する割合を直近変動期の法定利率に加算・減算した割合とし、その差の割合について「その割合に一パーセント未満の端数があるときは、これを切り捨てる。」と定める。したがって、基準割合の差が1パーセント未満であれば法定利率は変わらない（同項も「法定利率に変動があった期」という言い方で、変動のない期があることを前提にしている）。よって、見直しのたびに必ず変更されるとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "404",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "三年を一期とし、一期ごとに、次項の規定により変動するものとする。",
+     "text_sha256": "a965ab244f1899590e357ae4b69ae913cb61204d19b4a05890de73a42965addc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "404",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "その割合に一パーセント未満の端数があるときは、これを切り捨てる。",
+     "text_sha256": "a965ab244f1899590e357ae4b69ae913cb61204d19b4a05890de73a42965addc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "404",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "法定利率に変動があった期",
+     "text_sha256": "a965ab244f1899590e357ae4b69ae913cb61204d19b4a05890de73a42965addc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q21-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q21-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。417条の2第2項により、将来負担すべき費用についての損害賠償でも、利息相当額（中間利息）を法定利率により控除することができる。",
+   "body": "ポイントは、将来の「費用」についても中間利息の控除が認められるかである。417条の2第1項は、将来取得すべき利益についての損害賠償の額を定める場合に、利息相当額を控除するときは「その損害賠償の請求権が生じた時点における法定利率により、これをする。」と定める。そして同条2項は「将来において負担すべき費用についての損害賠償の額を定める場合において、その費用を負担すべき時までの利息相当額を控除するときも、前項と同様とする。」と定める。したがって、将来負担すべき費用についても法定利率による利息相当額の控除は予定されており、控除できないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "417_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その損害賠償の請求権が生じた時点における法定利率により、これをする。",
+     "text_sha256": "ef133e8e3d820350e3a8aa6a2b7228299162d034079ddac29c87a4780bf93ed6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "417_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "将来において負担すべき費用についての損害賠償の額を定める場合において、その費用を負担すべき時までの利息相当額を控除するときも、前項と同様とする。",
+     "text_sha256": "ef133e8e3d820350e3a8aa6a2b7228299162d034079ddac29c87a4780bf93ed6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q21-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q21-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。金銭債務の不履行による損害賠償の額は419条1項により法定利率（約定利率が上回るときは約定利率）で定まり、それを超える損害は証明しても請求できないと解されている。",
+   "body": "ポイントは、金銭債務の不履行で、利率による額を超える損害の賠償を請求できるかである。419条1項は、金銭債務の不履行の損害賠償の額は「債務者が遅滞の責任を負った最初の時点における法定利率によって定める。ただし、約定利率が法定利率を超えるときは、約定利率による。」と定め、同条2項は「債権者は、損害の証明をすることを要しない。」と定める。このように損害賠償の額が利率によって定型的に定められることから、債権者はそれを超える損害が生じたことを証明しても、その賠償は請求できないと解されている。判例も、金銭債務の不履行による損害賠償として、弁護士費用その他の取立費用を請求できないとしている（最判昭和48年10月11日）。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "419",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者が遅滞の責任を負った最初の時点における法定利率によって定める。ただし、約定利率が法定利率を超えるときは、約定利率による。",
+     "text_sha256": "b8a6ee23c8b5f8ed367b5143bb8842be7cca284b2c411007cc534b647fe70269",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "419",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権者は、損害の証明をすることを要しない。",
+     "text_sha256": "b8a6ee23c8b5f8ed367b5143bb8842be7cca284b2c411007cc534b647fe70269",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "金銭債務の不履行による損害賠償と弁護士費用",
+     "court": "最高裁判所第一小法廷",
+     "date": "1973-10-11",
+     "case_number": "昭和45(オ)851",
+     "holding": "債権者は、金銭を目的とする債務の不履行による損害賠償として、債務者に対し弁護士費用その他の取立費用を請求できない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/62004/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（利率による額を超える損害の賠償を請求できないことは419条に明文がなく、同条の趣旨と判例による）。",
+    "判例は平成29年改正前の419条の下のもの。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2020-minpo-q21-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q21-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。419条1項ただし書により、約定利率が法定利率を超えるときは遅延損害金も約定利率によるうえ、法定利率によるとしても基準は契約締結時ではなく遅滞の責任を負った最初の時点である。",
+   "body": "ポイントは、遅延損害金の利率と、その基準時である。419条1項本文は、金銭債務の不履行の損害賠償の額を「債務者が遅滞の責任を負った最初の時点における法定利率によって定める。」とし、ただし書で「ただし、約定利率が法定利率を超えるときは、約定利率による。」と定める。本肢では法定利率を超える約定利率の定めがあるから、返済期日の翌日以降の遅延損害金は約定利率の割合によって算定される。また、法定利率による場合でも、基準となるのは遅滞の責任を負った最初の時点の法定利率であって、契約締結時の法定利率ではない。したがって、契約締結時の法定利率による遅延損害金を支払うとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "419",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者が遅滞の責任を負った最初の時点における法定利率によって定める。",
+     "text_sha256": "b8a6ee23c8b5f8ed367b5143bb8842be7cca284b2c411007cc534b647fe70269",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "419",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、約定利率が法定利率を超えるときは、約定利率による。",
+     "text_sha256": "b8a6ee23c8b5f8ed367b5143bb8842be7cca284b2c411007cc534b647fe70269",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q21-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

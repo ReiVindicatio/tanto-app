@@ -1,0 +1,231 @@
+{
+ "question_id": "shiho-2020-minpo-q22",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q22-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×（契約は成立している）。承諾の期間を定めた申込みは523条1項により撤回できないから、2日後の撤回は効力がなく、期間内のBの承諾により契約が成立する。",
+   "body": "ポイントは、承諾期間の定めのある申込みを期間中に撤回できるかである。523条1項は「承諾の期間を定めてした申込みは、撤回することができない。ただし、申込者が撤回をする権利を留保したときは、この限りでない。」と定める。本肢のAは撤回の権利を留保していないから、申込みから2日後の撤回は効力を生じず、申込みは1週間の承諾期間中なお効力を持つ。Bは申込みから5日後、つまり承諾期間内に承諾しているから、522条1項のとおり、申込みに対して相手方が承諾をしたことで契約が成立する。したがって、本肢は「契約が成立していないもの」に当たらない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "523",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "承諾の期間を定めてした申込みは、撤回することができない。ただし、申込者が撤回をする権利を留保したときは、この限りでない。",
+     "text_sha256": "f6bbe3d48447f4772d5177bc76dde9733088da42ca8765b8b155ae0248681fa8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "522",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "契約は、契約の内容を示してその締結を申し入れる意思表示（以下「申込み」という。）に対して相手方が承諾をしたときに成立する。",
+     "text_sha256": "f08d4f757a2a303c3c31ab8ac1445e51ad8cf0d6f905dd191caeab433df30932",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q22-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q22-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○（契約は成立していない）。525条3項により、対話者に対する承諾期間の定めのない申込みは、対話の継続中に承諾がなければ効力を失う。",
+   "body": "ポイントは、対話者間の申込みが対話の終了後も効力を持つかである。525条3項は「対話者に対してした第一項の申込みに対して対話が継続している間に申込者が承諾の通知を受けなかったときは、その申込みは、その効力を失う。ただし、申込者が対話の終了後もその申込みが効力を失わない旨を表示したときは、この限りでない。」と定める。本肢のAは、対話の終了後も申込みが効力を失わない旨を表示しておらず、Bは対話中に承諾していないから、対話の終了により申込みは効力を失う。その後の翌日のBの承諾は、効力のある申込みに対するものではないから、契約は成立しない。したがって、本肢は「契約が成立していないもの」に当たる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "525",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "対話者に対してした第一項の申込みに対して対話が継続している間に申込者が承諾の通知を受けなかったときは、その申込みは、その効力を失う。ただし、申込者が対話の終了後もその申込みが効力を失わない旨を表示したときは、この限りでない。",
+     "text_sha256": "8b490a4bd34fc35b31f233129bde1d53e02fcd46965e19f3140524a0bf1238cc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q22-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q22-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×（契約は成立している）。97条3項により、承諾の通知を発した後に承諾者が死亡しても承諾の効力は妨げられず、申込者がその死亡を知っていたかどうかは関係しない。",
+   "body": "ポイントは、承諾の通知を発した後の承諾者の死亡が承諾の効力に影響するかである。意思表示は97条1項により「その通知が相手方に到達した時からその効力を生ずる。」が、同条3項は「意思表示は、表意者が通知を発した後に死亡し、意思能力を喪失し、又は行為能力の制限を受けたときであっても、そのためにその効力を妨げられない。」と定める。この規定には、相手方が死亡の事実を知っていた場合の例外は置かれていない（相手方の知不知を問題にする526条は申込者が死亡した場合の規定である）。したがって、Bの承諾の通知がAに到達すれば承諾は効力を生じ、契約は成立するから、本肢は「契約が成立していないもの」に当たらない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "97",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その通知が相手方に到達した時からその効力を生ずる。",
+     "text_sha256": "d29bdd41ac5f5500bebb9725f87e52d68fc301915306af0ea5719792f455ee54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "97",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "意思表示は、表意者が通知を発した後に死亡し、意思能力を喪失し、又は行為能力の制限を受けたときであっても、そのためにその効力を妨げられない。",
+     "text_sha256": "d29bdd41ac5f5500bebb9725f87e52d68fc301915306af0ea5719792f455ee54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "526",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申込者が申込みの通知を発した後に死亡し",
+     "text_sha256": "6ca9b4a484b18ffca1981a1a6ef05776910f39306da420e4f81faf8abf22a237",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q22-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q22-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×（契約は成立している）。申込者が死亡しても、526条の定める2つの場合（効力を有しない旨の意思表示・相手方の悪意）のいずれにも当たらないから、申込みは効力を失わず、Bの承諾で契約が成立する。",
+   "body": "ポイントは、申込者が申込みの通知を発した後に死亡した場合に申込みが効力を失うのはどのようなときかである。526条は、申込者が申込みの通知を発した後に死亡した場合において「申込者がその事実が生じたとすればその申込みは効力を有しない旨の意思を表示していたとき、又はその相手方が承諾の通知を発するまでにその事実が生じたことを知ったときは、その申込みは、その効力を有しない。」と定める。本肢のAはそのような意思を表示しておらず、BもAの死亡を知らずに承諾しているから、いずれの場合にも当たらない。そうすると、97条3項の原則どおり、Aの死亡によって申込みの効力は妨げられず、Bの承諾により契約は成立する。したがって、本肢は「契約が成立していないもの」に当たらない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "526",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申込者がその事実が生じたとすればその申込みは効力を有しない旨の意思を表示していたとき、又はその相手方が承諾の通知を発するまでにその事実が生じたことを知ったときは、その申込みは、その効力を有しない。",
+     "text_sha256": "6ca9b4a484b18ffca1981a1a6ef05776910f39306da420e4f81faf8abf22a237",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "97",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "意思表示は、表意者が通知を発した後に死亡し、意思能力を喪失し、又は行為能力の制限を受けたときであっても、そのためにその効力を妨げられない。",
+     "text_sha256": "d29bdd41ac5f5500bebb9725f87e52d68fc301915306af0ea5719792f455ee54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q22-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q22-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○（契約は成立していない）。523条2項により、承諾期間内に承諾の通知を受けなかった申込みは効力を失うから、10日後の承諾では契約は成立しない。",
+   "body": "ポイントは、承諾期間を過ぎてされた承諾の効力である。523条2項は「申込者が前項の申込みに対して同項の期間内に承諾の通知を受けなかったときは、その申込みは、その効力を失う。」と定める。本肢では承諾期間が申込みから1週間であり、Bは申込みから10日後に承諾しているから、Aは期間内に承諾の通知を受けておらず、申込みは効力を失っている。なお、524条は「申込者は、遅延した承諾を新たな申込みとみなすことができる。」と定めるが、これはAがさらに承諾すれば契約が成立しうるというにとどまり、Bの承諾だけで契約が成立するわけではない。したがって、本肢は「契約が成立していないもの」に当たる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "523",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "申込者が前項の申込みに対して同項の期間内に承諾の通知を受けなかったときは、その申込みは、その効力を失う。",
+     "text_sha256": "f6bbe3d48447f4772d5177bc76dde9733088da42ca8765b8b155ae0248681fa8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "524",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申込者は、遅延した承諾を新たな申込みとみなすことができる。",
+     "text_sha256": "fef9eda25d7b778c8968cc9a3eb823b9115b35f5851da86f6e8e84b026f60c46",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q22-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

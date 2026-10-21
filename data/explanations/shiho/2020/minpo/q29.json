@@ -1,0 +1,282 @@
+{
+ "question_id": "shiho-2020-minpo-q29",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q29-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。債務者を負傷させたことによる損害賠償債務は「人の生命又は身体の侵害による損害賠償の債務」に当たり、509条によりその債務者（加害者）は相殺をもって対抗できない。",
+   "body": "ポイントは、加害者が自分の金銭債権を自働債権として、身体侵害による損害賠償債務と相殺できるかである。509条は「次に掲げる債務の債務者は、相殺をもって債権者に対抗することができない。」と定め、同条2号に「人の生命又は身体の侵害による損害賠償の債務（前号に掲げるものを除く。）」を掲げる。本肢では、金銭債権を有する者が債務者を負傷させて不法行為に基づく損害賠償債務を負っており、この債務は身体の侵害による損害賠償の債務である。したがって、加害者は、この損害賠償債権を受働債権とする相殺をもって被害者（自己の債務者）に対抗することはできず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "509",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる債務の債務者は、相殺をもって債権者に対抗することができない。",
+     "text_sha256": "33ae841cfbbd7882090f31eb28d87b669c78e01e112e96279a6a0f3600313680",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "509",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の生命又は身体の侵害による損害賠償の債務（前号に掲げるものを除く。）",
+     "text_sha256": "33ae841cfbbd7882090f31eb28d87b669c78e01e112e96279a6a0f3600313680",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "509条は平成29年の債権法改正（2020年4月1日施行）で改められている。改正前の内容は条文の本文で確認していない。現行の条文で本肢の○は説明できる。"
+   ],
+   "id": "exp-shiho-2020-minpo-q29-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q29-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、摘示した事実が真実であると証明されなくても、真実と信ずるについて相当の理由があるときは故意・過失がなく不法行為は成立しないとする。",
+   "body": "ポイントは、真実性の証明がないときでも、真実と信ずるについて相当の理由があれば不法行為責任を免れるかである。最高裁昭和41年6月23日判決は、名誉毀損について、行為が公共の利害に関する事実に係りもっぱら公益を図る目的に出た場合に、摘示された事実が真実であることが証明されたときは違法性がなく不法行為は成立しないとし、さらに、真実であることが証明されなくても、行為者においてその事実を真実と信ずるについて相当の理由があるときは、故意もしくは過失がなく、不法行為は成立しないとした。本肢は、相当な理由があっても真実と証明できなければ不法行為責任を負うとしており、この判例に反する。したがって、本肢は誤りである。",
+   "citations": [],
+   "cases": [
+    {
+     "name": "名誉毀損の免責（真実性・真実相当性）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1966-06-23",
+     "case_number": "昭和37(オ)815",
+     "holding": "公共の利害に関する事実に係りもっぱら公益を図る目的に出た場合、摘示事実が真実と証明されたときは違法性がなく不法行為は成立しない。真実と証明されなくても、行為者が真実と信ずるについて相当の理由があるときは、故意もしくは過失がなく不法行為は成立しない（全文）。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57744/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "真実相当性の部分は裁判要旨ではなく判決全文（理由）にある。"
+   ],
+   "id": "exp-shiho-2020-minpo-q29-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q29-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。711条は生命侵害の場合の規定だが、判例は、子が重傷を負い、両親が生命を害されたときにも比肩すべき精神上の苦痛を受けた場合には、両親が709条・710条に基づき自己の権利として慰謝料を請求できるとする。",
+   "body": "ポイントは、被害者が死亡していない場合にも近親者が自己固有の慰謝料を請求できるかである。711条は「他人の生命を侵害した者は、被害者の父母、配偶者及び子に対しては、その財産権が侵害されなかった場合においても、損害の賠償をしなければならない。」と定め、文言上は生命侵害の場合に限られている。しかし、子が重傷を負い、両親が子の死亡にも比肩すべき精神上の苦痛を受けたときは、両親は709条・710条に基づいて自己の権利として慰謝料を請求できるとする判例あり（要確認）。710条は「財産以外の損害に対しても、その賠償をしなければならない。」と定めており、近親者自身の精神的損害もこれにより賠償の対象となると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "711",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の生命を侵害した者は、被害者の父母、配偶者及び子に対しては、その財産権が侵害されなかった場合においても、損害の賠償をしなければならない。",
+     "text_sha256": "fc48d541cbd1c5feafddd0024a9cfa141f71b2242ee38863c1fb91e6fc9c1ae9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "710",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "財産以外の損害に対しても、その賠償をしなければならない。",
+     "text_sha256": "9662ebd96b81f32dbe79b54238219dd84122d81903b15877a9f3526602ace95d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "709",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "故意又は過失によって他人の権利又は法律上保護される利益を侵害した者は、これによって生じた損害を賠償する責任を負う。",
+     "text_sha256": "8029deadb1259b68934cd034bed9cbaf1c223bbb9c091dfd88dcfb8c638e49ef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "子の重傷と、死亡にも比肩すべき精神上の苦痛を受けた両親の自己固有の慰謝料請求（709条・710条）",
+     "searched": [
+      "courts.py search 慰藉料 母 --from 昭和33 --to 昭和33",
+      "courts.py search 慰藉料 生命を害された --from 昭和30 --to 昭和40",
+      "courts.py search 慰藉料 七〇九条 --date 1958-08-05"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（711条の文言は生命侵害に限られ、重傷の場合の近親者の慰謝料は判例による）。"
+   ],
+   "id": "exp-shiho-2020-minpo-q29-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q29-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、未成年者が責任能力を有する場合でも、監督義務者の義務違反と結果との間に相当因果関係を認めうるときは、監督義務者に709条の不法行為が成立するとする。",
+   "body": "ポイントは、714条が適用されない場合（未成年者に責任能力がある場合）に、監督義務者が709条で責任を負うかである。714条1項は「前二条の規定により責任無能力者がその責任を負わない場合において」監督義務者が責任を負うと定めており、712条により責任を負わない未成年者が前提である。もっとも、最高裁昭和49年3月22日判決は、未成年者が責任能力を有する場合であっても、監督義務者の義務違反と当該未成年者の不法行為によって生じた結果との間に相当因果関係を認めうるときは、監督義務者につき709条に基づく不法行為が成立するとした。本肢はこの判例と一致する。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "714",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の規定により責任無能力者がその責任を負わない場合において",
+     "text_sha256": "2d7b095525434f01e33d409a79751fde1beee927bce73da3d7a1790424644264",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "712",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者は、他人に損害を加えた場合において、自己の行為の責任を弁識するに足りる知能を備えていなかったときは、その行為について賠償の責任を負わない。",
+     "text_sha256": "866e723ad2136dcb8a5c5558fdabd305dbbb8cfc6c09ecf845bda67bf696319e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "709",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "故意又は過失によって他人の権利又は法律上保護される利益を侵害した者は、これによって生じた損害を賠償する責任を負う。",
+     "text_sha256": "8029deadb1259b68934cd034bed9cbaf1c223bbb9c091dfd88dcfb8c638e49ef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "責任能力のある未成年者の不法行為と監督義務者の709条責任",
+     "court": "最高裁判所第二小法廷",
+     "date": "1974-03-22",
+     "case_number": "昭和47(オ)1067",
+     "holding": "未成年者が責任能力を有する場合でも、監督義務者の義務違反と当該未成年者の不法行為によって生じた結果との間に相当因果関係を認めうるときは、監督義務者につき民法709条に基づく不法行為が成立する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52072/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q29-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q29-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。使用者責任が成立しても被用者自身の709条の責任は消えず、民法上、被用者の責任を故意又は重過失がある場合に限る規定はない。",
+   "body": "ポイントは、使用者責任が成立する場合に、被用者が被害者に対して自ら責任を負う要件が「故意又は重過失」に絞られるかである。被用者自身の責任は709条によるもので、その要件は「故意又は過失によって他人の権利又は法律上保護される利益を侵害した」ことであり、軽過失でも責任を負う。715条1項は使用者が「被用者がその事業の執行について第三者に加えた損害を賠償する責任を負う」と定めるだけで、被用者の責任を免除・軽減する規定ではなく、同条3項も「使用者又は監督者から被用者に対する求償権の行使を妨げない」として被用者の責任を前提としている。使用者責任は被用者の不法行為責任と併存するものと解されている。したがって、故意又は重過失がない限り被用者は責任を負わないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "709",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "故意又は過失によって他人の権利又は法律上保護される利益を侵害した",
+     "text_sha256": "8029deadb1259b68934cd034bed9cbaf1c223bbb9c091dfd88dcfb8c638e49ef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "715",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被用者がその事業の執行について第三者に加えた損害を賠償する責任を負う",
+     "text_sha256": "ee1bffc67a722815d32711a10969d4bd9e21ccbe43f120f08dd4fdc60932d2f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "715",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "使用者又は監督者から被用者に対する求償権の行使を妨げない",
+     "text_sha256": "ee1bffc67a722815d32711a10969d4bd9e21ccbe43f120f08dd4fdc60932d2f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（使用者責任と被用者自身の責任が併存するとの理解）。"
+   ],
+   "id": "exp-shiho-2020-minpo-q29-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

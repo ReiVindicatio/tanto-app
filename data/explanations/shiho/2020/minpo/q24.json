@@ -1,0 +1,255 @@
+{
+ "question_id": "shiho-2020-minpo-q24",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q24-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。現行法では、他人の権利を移転できないことは売主の債務不履行であり、買主が悪意でも415条の損害賠償請求は妨げられない。",
+   "body": "決め手は、買主の悪意が損害賠償請求を妨げる規定が現行法にないことである。561条は、他人の権利を売買の目的としたときは「売主は、その権利を取得して買主に移転する義務を負う。」と定める。この義務を果たせなければ債務不履行となり、415条1項本文により、債権者である買主は「これによって生じた損害の賠償を請求することができる。」。415条は債権者の善意・悪意を要件としていないので、契約時に権利が売主に属しないことを知っていた買主も、損害賠償を請求できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "561",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の権利（権利の一部が他人に属する場合におけるその権利の一部を含む。）を売買の目的としたときは、売主は、その権利を取得して買主に移転する義務を負う。",
+     "text_sha256": "f7d19b6defb3d8a288047cb80c492f7bbbf26ee6c5eb6989829288f89b140c57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "415",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者がその債務の本旨に従った履行をしないとき又は債務の履行が不能であるときは、債権者は、これによって生じた損害の賠償を請求することができる。",
+     "text_sha256": "17591c49fffea4a95a4b10a3ff4b37bcd321771faa36b15176b72ce9b46cf6c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行法（平成29年改正後）の本文で説明した。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2020-minpo-q24-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q24-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。売主の責めに帰することができない事由によるときは、415条1項ただし書により損害賠償請求はできない。",
+   "body": "誤りは「責めに帰すべき事由が存在しないときであっても」損害賠償請求ができるとする点である。他人の権利を移転できないことは561条の義務の不履行であり、損害賠償は415条1項による。同項ただし書は、債務の不履行が「債務者の責めに帰することができない事由によるものであるときは、この限りでない。」と定める。したがって、売主に帰責事由がなければ、買主は損害賠償を請求できない（解除や代金減額は帰責事由を要件としない点と区別する）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "561",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "売主は、その権利を取得して買主に移転する義務を負う。",
+     "text_sha256": "f7d19b6defb3d8a288047cb80c492f7bbbf26ee6c5eb6989829288f89b140c57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "415",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、その債務の不履行が契約その他の債務の発生原因及び取引上の社会通念に照らして債務者の責めに帰することができない事由によるものであるときは、この限りでない。",
+     "text_sha256": "17591c49fffea4a95a4b10a3ff4b37bcd321771faa36b15176b72ce9b46cf6c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q24-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q24-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。権利の一部が他人に属し移転されない場合には565条により563条が準用され、追完が不能なら催告なしに直ちに代金減額を請求できる。",
+   "body": "565条は、「前三条の規定」を、売主が移転した権利が契約の内容に適合しない場合（「権利の一部が他人に属する場合においてその権利の一部を移転しないときを含む。」）に準用する。準用される563条2項は、「次に掲げる場合には、買主は、同項の催告をすることなく、直ちに代金の減額を請求することができる。」とし、その1号に「履行の追完が不能であるとき。」を挙げる。563条3項は、不適合が買主の責めに帰すべき事由によるときに減額請求を否定するが、本肢は買主に帰責事由がない場合なので、この制限もかからない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "565",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前三条の規定は、売主が買主に移転した権利が契約の内容に適合しないものである場合（権利の一部が他人に属する場合においてその権利の一部を移転しないときを含む。）について準用する。",
+     "text_sha256": "f8ecc094b407869ddfae10801aec0ec6ab3f196564759fd35a9e6ee2af2aeaa5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "563",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定にかかわらず、次に掲げる場合には、買主は、同項の催告をすることなく、直ちに代金の減額を請求することができる。",
+     "text_sha256": "01bf383ee4d16f3d3ec96d349bed160475698675a93a56972d801d79cfb22e7e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "563",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の不適合が買主の責めに帰すべき事由によるものであるときは、買主は、前二項の規定による代金の減額の請求をすることができない。",
+     "text_sha256": "01bf383ee4d16f3d3ec96d349bed160475698675a93a56972d801d79cfb22e7e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q24-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q24-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。他人の権利を移転できないときは債務の全部の履行が不能であり、買主は悪意でも542条1項1号により解除できる。",
+   "body": "誤りは、買主が悪意なら解除できないとする点である。売主が561条の義務を果たして権利を移転することができない場合は、債務の履行が不能な場合にあたる。542条1項は、「債務の全部の履行が不能であるとき。」には、債権者は「前条の催告をすることなく、直ちに契約の解除をすることができる。」と定める。解除の規定は債権者の善意・悪意を要件としていないので、契約時に権利が売主に属しないことを知っていた買主も解除できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "561",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "売主は、その権利を取得して買主に移転する義務を負う。",
+     "text_sha256": "f7d19b6defb3d8a288047cb80c492f7bbbf26ee6c5eb6989829288f89b140c57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "542",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる場合には、債権者は、前条の催告をすることなく、直ちに契約の解除をすることができる。",
+     "text_sha256": "021dce87813fcae2438db5c4ffc2afe591887076d1cccb4bc6a499a271622b73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2020-minpo-q24-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-minpo-q24-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。1年以内の通知を求める566条は目的物の種類又は品質の不適合についての規定で、他人の権利を移転できない場合には適用されない。",
+   "body": "誤りは、1年以内に通知しなければ損害賠償を請求できないとする点である。566条が通知を求めるのは、「売主が種類又は品質に関して契約の内容に適合しない目的物を買主に引き渡した場合」である。権利の不適合について準用を定める565条も、準用するのは「前三条の規定」（565条より前の3つの条）であり、566条は含まれない。他人の権利を移転できない場合の損害賠償は415条によるので、このような通知の期間制限はない（権利の行使期間は消滅時効の一般の規律によると解されている）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "566",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "売主が種類又は品質に関して契約の内容に適合しない目的物を買主に引き渡した場合において、買主がその不適合を知った時から一年以内にその旨を売主に通知しないときは、買主は、その不適合を理由として、履行の追完の請求、代金の減額の請求、損害賠償の請求及び契約の解除をすることができない。",
+     "text_sha256": "4ed0acaed9db9f251d115841a128eec8b851d66912c0d612c6eb666584dfa533",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "565",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前三条の規定は、売主が買主に移転した権利が契約の内容に適合しないものである場合",
+     "text_sha256": "f8ecc094b407869ddfae10801aec0ec6ab3f196564759fd35a9e6ee2af2aeaa5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "415",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者は、これによって生じた損害の賠償を請求することができる。",
+     "text_sha256": "17591c49fffea4a95a4b10a3ff4b37bcd321771faa36b15176b72ce9b46cf6c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "消滅時効の一般の規律によるとの点は解釈による",
+    "現行法（平成29年改正後）の本文で説明した。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2020-minpo-q24-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
