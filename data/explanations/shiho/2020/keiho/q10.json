@@ -1,0 +1,278 @@
+{
+ "question_id": "shiho-2020-keiho-q10",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-keiho-q10-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。刑法244条1項の適用には、犯人と占有者だけでなく所有者との間にも親族関係が必要であり、所有者丙が親族でない以上、刑は免除されない。",
+   "body": "刑法244条1項は「配偶者、直系血族又は同居の親族との間で第二百三十五条の罪、第二百三十五条の二の罪又はこれらの罪の未遂罪を犯した者は、その刑を免除する。」と定める。判例は、窃盗犯人が所有者以外の者の占有する財物を窃取した場合に同項が適用されるためには、同項所定の親族関係が、犯人と占有者との間のみならず、所有者との間にも存することを要するとした（最高裁平成6年7月19日決定）。本肢では、占有者は実母乙（直系血族）であるが、宝石の所有者は乙の友人丙であり、甲と丙との間に親族関係はない。したがって、甲の窃取行為について刑は免除されないとする本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "244",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "配偶者、直系血族又は同居の親族との間で第二百三十五条の罪、第二百三十五条の二の罪又はこれらの罪の未遂罪を犯した者は、その刑を免除する。",
+     "text_sha256": "2e0513a48b70e2abe649390f963c808db857b625481c17de1df58c2d096220bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "親族相盗例の親族関係は占有者と所有者の双方との間に必要",
+     "court": "最高裁判所第二小法廷",
+     "date": "1994-07-19",
+     "case_number": "平成6(あ)234",
+     "holding": "窃盗犯人が所有者以外の者の占有する財物を窃取した場合に刑法244条1項が適用されるためには、同項所定の親族関係が、窃盗犯人と財物の占有者との間のみならず、所有者との間にも存することを要する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50157/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2020-keiho-q10-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-keiho-q10-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。所有者は実父乙（直系血族）でも、占有者である丙（乙の内縁の妻）と甲との間には親族関係がないため、刑は免除されない。",
+   "body": "刑法244条1項は「配偶者、直系血族又は同居の親族との間で」窃盗罪等を犯した者の刑を免除する。判例は、所有者以外の者が占有する財物を窃取した場合には、犯人と占有者・所有者の双方との間に同項所定の親族関係が必要であるとした（最高裁平成6年7月19日決定）。本肢では、時計の所有者は甲の実父乙で直系血族に当たるが、占有者丙は乙の内縁の妻にすぎない。民法725条は「次に掲げる者は、親族とする。」として六親等内の血族・配偶者・三親等内の姻族を挙げるが、婚姻によらない内縁関係からは姻族関係は生じないと解されており、丙は甲の親族に当たらない。したがって、甲の窃取行為について刑は免除されないとする本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "244",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "配偶者、直系血族又は同居の親族との間で",
+     "text_sha256": "2e0513a48b70e2abe649390f963c808db857b625481c17de1df58c2d096220bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "725",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる者は、親族とする。",
+     "text_sha256": "b31a628cfa086b6edbdf8def49c2d8a588c9fa8cf13eb4a7e08b365aa06fe33e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "親族相盗例の親族関係は占有者と所有者の双方との間に必要",
+     "court": "最高裁判所第二小法廷",
+     "date": "1994-07-19",
+     "case_number": "平成6(あ)234",
+     "holding": "窃盗犯人が所有者以外の者の占有する財物を窃取した場合に刑法244条1項が適用されるためには、同項所定の親族関係が、窃盗犯人と財物の占有者との間のみならず、所有者との間にも存することを要する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50157/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による：内縁関係から姻族関係が生じないという理解は一般的な理解として書いている"
+   ],
+   "id": "exp-shiho-2020-keiho-q10-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-keiho-q10-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。家庭裁判所から選任された成年後見人が成年被後見人の財物を業務上横領した場合、親族関係があっても刑法244条1項は準用されないとするのが判例である。",
+   "body": "刑法255条は「第二百四十四条の規定は、この章の罪について準用する。」と定め、横領の罪にも親族間の特例が準用されるのが原則である。しかし判例は、家庭裁判所から選任された成年後見人が業務上占有する成年被後見人所有の財物を横領した場合、両者の間に刑法244条1項所定の親族関係があっても、同項は準用されないとした（最高裁平成24年10月9日決定）。本肢の甲は家庭裁判所から実父乙の成年後見人に選任され、後見の事務として業務上預かり保管中の乙の預金を引き出して自己の借金の返済に充てており、刑法253条の「業務上自己の占有する他人の物を横領した者」に当たる。したがって、甲と乙が直系血族であっても、甲の横領行為について刑は免除されないとする本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "255",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百四十四条の規定は、この章の罪について準用する。",
+     "text_sha256": "5e8d5ea68a151de9b69c3c5536a2d34e602053e9290d1b87ba4eced167f34a50",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "244",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "配偶者、直系血族又は同居の親族との間で",
+     "text_sha256": "2e0513a48b70e2abe649390f963c808db857b625481c17de1df58c2d096220bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "253",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "業務上自己の占有する他人の物を横領した者",
+     "text_sha256": "b190ff9e3ee2758ec21e34dd1fa95720bad8c113eae7c58b76389373f41d7c02",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "成年後見人による業務上横領と刑法244条1項の準用",
+     "court": "最高裁判所第二小法廷",
+     "date": "2012-10-09",
+     "case_number": "平成24(あ)878",
+     "holding": "家庭裁判所から選任された成年後見人が業務上占有する成年被後見人所有の財物を横領した場合、両者の間に刑法244条1項所定の親族関係があっても同条項は準用されず、その親族関係を量刑上酌むべき事情として考慮するのも相当でない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/82627/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2020-keiho-q10-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-keiho-q10-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。刑法244条3項により、同条1項の刑の免除は親族でない共犯には適用されないため、丙の親族でない甲の窃盗教唆について刑は免除されない。",
+   "body": "刑法244条3項は「前二項の規定は、親族でない共犯については、適用しない。」と定める。本肢では、正犯乙は実父丙が所有し管理する自動車を窃取しており、丙は乙の直系血族であるから、乙については同条1項により刑が免除される。しかし、教唆者甲は乙の友人で、被害者丙との間に親族関係がなく、刑法61条1項により「正犯の刑を科する」とされる教唆犯であっても、刑の免除は及ばない。したがって、甲の窃盗教唆行為について刑は免除されないとする本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "244",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前二項の規定は、親族でない共犯については、適用しない。",
+     "text_sha256": "2e0513a48b70e2abe649390f963c808db857b625481c17de1df58c2d096220bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "61",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正犯の刑を科する",
+     "text_sha256": "37308298414a09689bc15fefb10ea96a8d744d7274d85d4e79c7d1a167e0bfbf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2020-keiho-q10-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-keiho-q10-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。恐喝罪にも刑法244条が準用され、祖父は直系血族であるから同居していなくても刑は免除される。",
+   "body": "刑法251条は「第二百四十二条、第二百四十四条及び第二百四十五条の規定は、この章の罪について準用する。」と定め、恐喝罪（刑法249条）にも親族間の特例が準用される。刑法244条1項は「配偶者、直系血族又は同居の親族との間で」犯した者の刑を免除するとし、同居が要件とされるのは「同居の親族」の場合だけである。祖父乙は甲の直系血族であるから、同居していなくても同項の対象となり、甲が乙を恐喝して現金の交付を受けた行為について刑は免除される。したがって、刑は免除されないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "251",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百四十二条、第二百四十四条及び第二百四十五条の規定は、この章の罪について準用する。",
+     "text_sha256": "31d6c185db36126f154b432f3343ab05a5e5e5676e9ec6c8df92a23cc043e2c7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "244",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "配偶者、直系血族又は同居の親族との間で",
+     "text_sha256": "2e0513a48b70e2abe649390f963c808db857b625481c17de1df58c2d096220bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "249",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を恐喝して財物を交付させた者",
+     "text_sha256": "f84054d582866a7a23723a5ea55c12662213907cea3051a5145dc29f346ed71b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2020-keiho-q10-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

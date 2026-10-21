@@ -1,0 +1,93 @@
+{
+ "question_id": "shiho-2020-kenpo-q19",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-kenpo-q19-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。学生が挙げた根拠（数が一定で争いを避けられる、発議要件を厳格にする）は、①法定議員数説の根拠であって、②現在議員数説の根拠ではない。",
+   "body": "問われているのは②説（現に各議院に在職する議員数の総数とする説）の根拠であるが、学生の回答はいずれも①説（法定議員数説）を支える理由である。法定議員数を基準にすれば、欠員の有無にかかわらず基準となる数が一定になり、「総議員」の数を巡る争いを避けられると解されている。また、法定議員数を基準にすると欠員の分だけ賛成票が実質的に多く必要になるので、「憲法改正の発議要件を厳格にして議決を慎重にさせるのが憲法の趣旨に合致すること」も、①説の根拠として挙げられるものと解されている。これに対し②説は、欠員の議員を反対したのと同じに扱うのは不合理であることなどを根拠とすると解されている。憲法96条1項は「この憲法の改正は、各議院の総議員の三分の二以上の賛成で、国会が、これを発議し、国民に提案してその承認を経なければならない。」と定める。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "96",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この憲法の改正は、各議院の総議員の三分の二以上の賛成で、国会が、これを発議し、国民に提案してその承認を経なければならない。",
+     "text_sha256": "cbbcb2f4a5b1c0f9b73077f6defc12d9104b0bb554ff2283bf6bc9978270f404",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "①説・②説の根拠の説明は学説の一般的な理解によるもので、解釈による。"
+   ],
+   "id": "exp-shiho-2020-kenpo-q19-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2020-kenpo-q19-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。内閣に改正案の発案権を認めても、各議院が修正権を持ち、発議するかどうかは国会が決めるので自主的審議権は害されない、というのは肯定説からの反論として成り立つ。",
+   "body": "否定説の批判は、内閣の発案権を認めると国会の自主的審議権が害されるというものである。これに対し、内閣が改正案を提出しても、各議院はその案を修正することができ、最終的に発議するかどうかを決めるのは国会であるから、国会の自主的審議権を害するおそれはない、という反論は、肯定説の立場から考えられるものと解されている。憲法96条1項は、改正は各議院の総議員の三分の二以上の賛成で「国会が、これを発議し」と定めており、発議の主体は国会である。なお、肯定説は、72条が内閣総理大臣は「内閣を代表して議案を国会に提出し」と定めていることも根拠に挙げると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "96",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国会が、これを発議し",
+     "text_sha256": "cbbcb2f4a5b1c0f9b73077f6defc12d9104b0bb554ff2283bf6bc9978270f404",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "72",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣を代表して議案を国会に提出し",
+     "text_sha256": "21c3bac0a7a0f5be992f1668ebe7b6cad9d673a536aa33f4b91ff40acb59d7a3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "肯定説・否定説の根拠と反論の説明は学説の一般的な理解によるもので、解釈による。"
+   ],
+   "id": "exp-shiho-2020-kenpo-q19-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
