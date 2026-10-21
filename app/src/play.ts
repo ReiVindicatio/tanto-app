@@ -1,7 +1,7 @@
 // 解いている画面（/play）に渡す中身（T025）。URL には載せず、メモリに持つ。
 // 再読み込みで消えたら、画面側でホームに戻す
 import type { DataSet, Question, SetInfo, Statement } from "./types";
-import { EXAM_SHORT, loadSet, merge, uniqueCards } from "./data";
+import { EXAM_SHORT, cardRefsOf, loadSet, merge, uniqueCards, type CardRef } from "./data";
 import { applyFilter, getHistory, type Filter } from "./history";
 import { shuffle } from "./shuffle";
 import { buildSession } from "./srs";
@@ -36,6 +36,26 @@ function poolOf(data: DataSet, infos: SetInfo[]): Statement[] {
   return infos.length > 1 ? uniqueCards(pool) : pool;
 }
 
+/** 範囲の肢カード（index.json の一覧から。T038）。複数の束から出すときは、同じ肢（名寄せ）を1枚にする */
+function refPool(infos: SetInfo[]): CardRef[] {
+  const refs = infos.flatMap(cardRefsOf);
+  return infos.length > 1 ? uniqueCards(refs) : refs;
+}
+
+/** 選んだ肢を含む束だけ読み、選んだ順の肢にする（T038：範囲の全部の束は読まない） */
+async function loadChosen(infos: SetInfo[], chosen: CardRef[]): Promise<{ data: DataSet; cards: Statement[] }> {
+  const need = new Set(chosen.map((c) => c.question_id.replace(/-q\d+$/, "")));
+  const sets = infos.filter((i) => need.has(i.id));
+  const data = merge(await Promise.all((sets.length ? sets : infos.slice(0, 1)).map(loadSet)));
+  const byId = new Map(data.statements.map((s) => [s.id, s]));
+  return { data, cards: chosen.map((c) => byId.get(c.id)).filter((s): s is Statement => s !== undefined) };
+}
+
+/** 端末に古い index.json が残っていて、肢カードの一覧がないとき */
+function hasCardLists(infos: SetInfo[]): boolean {
+  return infos.every((i) => i.cards !== undefined);
+}
+
 function start(s: PlaySession): void {
   current = s;
   navigate({ name: "play" });
@@ -51,6 +71,11 @@ export async function startStatements(infos: SetInfo[], title: string, filter: F
 
 /** 今日の○問（T022）：決まった数を、復習 → まちがえた → 新規 → おさらい の順に選んでシャッフルする */
 export async function startDaily(infos: SetInfo[], size: number, title: string): Promise<void> {
+  if (hasCardLists(infos)) {
+    const { data, cards } = await loadChosen(infos, buildDaily(refPool(infos), size).cards);
+    start({ kind: "statements", title, data, cards, origin: originOf(infos) });
+    return;
+  }
   const data = merge(await Promise.all(infos.map(loadSet)));
   const { cards } = buildDaily(poolOf(data, infos), size);
   start({ kind: "statements", title, data, cards, origin: originOf(infos) });
@@ -58,6 +83,11 @@ export async function startDaily(infos: SetInfo[], size: number, title: string):
 
 /** 今日の復習（FSRS）。新規カードは新しい年度から順に入れる */
 export async function startReview(infos: SetInfo[], title: string): Promise<void> {
+  if (hasCardLists(infos)) {
+    const { data, cards } = await loadChosen(infos, buildSession(refPool(infos)).cards);
+    start({ kind: "statements", title, data, cards, origin: originOf(infos) });
+    return;
+  }
   const data = merge(await Promise.all(infos.map(loadSet)));
   const { cards } = buildSession(poolOf(data, infos));
   start({ kind: "statements", title, data, cards, origin: originOf(infos) });

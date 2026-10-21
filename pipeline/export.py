@@ -126,6 +126,21 @@ def dedup(docs: list[dict]) -> tuple[dict[str, str], list[str]]:
     return aliases, conflicts
 
 
+def card_list(doc: dict, name: str) -> str:
+    """出題できる肢カードの ID（束の ID を除いた「q11-e」の形）を空白でつないだもの（T038）。
+    アプリは起動時に index.json だけ読み、枚数・回答済みの数・今日の○問の選び出しに使う。問の ID は「束の ID-q11」"""
+    out = []
+    for s in doc["statements"]:
+        if not s["truth_at_exam"] or "review_flag" in s:
+            continue
+        suffix = s["id"].removeprefix(name + "-")
+        m = re.match(r"q\d+", suffix)
+        if suffix == s["id"] or not m or s["question_id"] != f"{name}-{m.group(0)}" or " " in suffix:
+            raise SystemExit(f"肢カードの ID から問の ID を作れない：{s['id']}（{s['question_id']}）")
+        out.append(suffix)
+    return " ".join(out)
+
+
 def share_explanations(docs: list[dict]) -> int:
     """名寄せした肢のどれかに解説があれば、他の出典の肢にも付ける（○×が同じなので結論も同じ）"""
     by_id = {e["statement_id"]: e for doc in docs for e in doc["explanations"]}
@@ -176,6 +191,7 @@ def main() -> None:
             "subject_name": SUBJECT_NAMES[doc["subject"]],
             "questions": len(doc["questions"]),
             "statement_cards": sum(1 for s in doc["statements"] if s["truth_at_exam"] and "review_flag" not in s),
+            "cards": card_list(doc, name),
             "explanations": len(doc["explanations"]),
             "attribution": doc["attribution"],
         })

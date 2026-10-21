@@ -33,6 +33,8 @@ export const reviewSet = (page: Page) => page.locator(".set.review");
 
 /** ツールバーの「i / n」の n */
 export async function totalCards(page: Page): Promise<number> {
+  // 年度の束は解くときに読むので（T038）、解く画面に切り替わって「1 / N」が出るのを待つ
+  await expect(page.locator(".toolbar")).toContainText(/\/ \d+/);
   const t = await page.locator(".toolbar").innerText();
   return Number(t.match(/\/ (\d+)/)![1]);
 }

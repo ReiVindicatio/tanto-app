@@ -1,14 +1,15 @@
 // オフラインで使うための Service Worker（T030）。
 // - 画面：ネットワーク優先、つながらなければ保存した index.html
 // - /assets/*（ビルドごとに名前が変わる）：保存したものを優先
-// - /data/*.json：保存したものをすぐ返し、裏で取り直す（次の起動で新しいデータが反映される）
+// - /data/*.json：保存したものをすぐ返し、裏で取り直す（次の起動で新しいデータが反映される）。
+//   先に保存するのは一覧（index.json）だけ。年度の束は開いたときに保存する（T038：初めて来た人に全データ約5MBを取らせない）
 // - /api/*：保存しない（未送信の回答はアプリの仕組みでオンラインに戻ったら送る）
-const VERSION = "v2";
+const VERSION = "v3";
 // 照合では Vary ヘッダーを無視する（モジュールの JS は Origin 付きで読まれ、保存時のリクエストと食い違うため）
 const SHELL = `shell-${VERSION}`;
 const DATA = `data-${VERSION}`;
 
-// インストール時に、画面・JS／CSS・全データを先に保存する（初めて開いた直後から機内モードで解けるように）
+// インストール時に、画面・JS／CSS・一覧（index.json）を先に保存する。年度の束は開いたときに保存する（T038）
 self.addEventListener("install", (event) => {
   event.waitUntil(
     (async () => {
@@ -19,10 +20,7 @@ self.addEventListener("install", (event) => {
       const assets = [...text.matchAll(/(?:src|href)="(\/assets\/[^"]+)"/g)].map((m) => m[1]);
       await shell.addAll([...new Set(assets), "/favicon.svg", "/manifest.webmanifest"]);
       const data = await caches.open(DATA);
-      const indexRes = await fetch("/data/index.json", { cache: "no-cache" });
-      const index = await indexRes.clone().json();
-      await data.put("/data/index.json", indexRes);
-      await data.addAll(index.sets.map((s) => `/data/${s.file}`));
+      await data.put("/data/index.json", await fetch("/data/index.json", { cache: "no-cache" }));
     })(),
   );
   self.skipWaiting();

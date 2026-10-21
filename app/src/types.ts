@@ -121,6 +121,8 @@ export type SetInfo = {
   subject_name: string;
   questions: number;
   statement_cards: number;
+  /** 出題できる肢カードの ID（束の ID を除いた「q11-e」の形）を空白でつないだもの（T038）。古い index.json にはない */
+  cards?: string;
   explanations: number;
   attribution: Attribution;
 };
