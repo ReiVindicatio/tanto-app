@@ -27,5 +27,7 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- 閲覧状況の集計（Cloudflare Web Analytics。Cookie を使わない。T046）。手元の開発・E2E では送らない -->
+    <script>if(location.hostname==="tantan.reivindicatio0321.workers.dev"){var s=document.createElement("script");s.type="module";s.src="https://static.cloudflareinsights.com/beacon.min.js";s.setAttribute("data-cf-beacon",'{"token": "614c933eedb240309d4d28f5d262cd94"}');document.head.appendChild(s);}</script>
   </body>
 </html>

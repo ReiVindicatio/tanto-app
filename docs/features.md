@@ -73,6 +73,7 @@
 | 利用規約・プライバシーポリシー | ✅ | T040。`/terms`・`/privacy`。フッターとマイページから。運営者は ReiVindicatio、問い合わせ先は GitHub の Issues |
 | 公開（デプロイ） | ✅ | T002・T043。https://tantan.reivindicatio0321.workers.dev/ （Cloudflare Workers・push で自動更新）。アプリ名「たんたん」。リポジトリは public |
 | 検索エンジン・問ごとのページ | ✅ | T044・T045。robots.txt（/api/ だけ不可）・説明と OGP・サイトマップ。問ごとの静的ページ `/q/<問の ID>/`（問題文・前提・肢。正解と解説は折りたたみ。出典・非公式・AI 生成の表示つき）と年度・科目ごとの一覧。ビルドの最後に `scripts/pages.mjs` で作る |
+| 閲覧状況の計測 | ✅ | T046。Cloudflare Web Analytics（Cookie なし・個人を追わない）。公開先のホスト名のときだけ。プライバシーポリシーに記載 |
 | ホーム画面に追加（PWA）・オフライン | ✅ | T030。一度開けば通信なしで全科目を解ける。問題データの更新は次に開いたときに反映 |
 | スマホアプリ（Capacitor） | ❌ | → T019（PWA で足りるかを見てから） |
 

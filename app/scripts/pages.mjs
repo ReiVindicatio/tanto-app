@@ -9,6 +9,8 @@ import { fileURLToPath } from "node:url";
 
 export const SITE = (process.env.SITE_URL ?? "https://tantan.reivindicatio0321.workers.dev").replace(/\/$/, "");
 const APP = "たんたん";
+// 閲覧状況の集計（Cloudflare Web Analytics。Cookie を使わない。T046）。公開先のホスト名のときだけ送る（手元・E2E では送らない）
+const BEACON = `<script>if(location.hostname==="tantan.reivindicatio0321.workers.dev"){var s=document.createElement("script");s.type="module";s.src="https://static.cloudflareinsights.com/beacon.min.js";s.setAttribute("data-cf-beacon",'{"token": "614c933eedb240309d4d28f5d262cd94"}');document.head.appendChild(s);}</script>`;
 const SUBTITLE = "予備・司法 短答の一問一答（非公式）";
 
 // アプリの LawNote.tsx と同じ区切り（古い年度の肢は出題時点の正解で、その後の法改正を反映していない）
@@ -93,6 +95,7 @@ ${body}
 ${noteLinks}
 <p><a href="/q/">過去問の一覧</a> ・ <a href="/">アプリで解く</a> ・ <a href="/terms">利用規約</a> ・ <a href="/privacy">プライバシーポリシー</a></p>
 </footer>
+${BEACON}
 </body>
 </html>
 `;

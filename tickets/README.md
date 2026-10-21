@@ -104,4 +104,5 @@
 | [T043](T043-go-public.md) | リポジトリの公開（アプリ名「たんたん」・個人情報の除去・履歴の書き換え） | 完了 | M3 | **高** | T040 |
 | [T044](T044-seo-basics.md) | 検索エンジンに載せる（robots・説明・OGP・サイトマップ） | 完了 | M3 | **高** | T043 |
 | [T045](T045-static-question-pages.md) | 問ごとの静的ページ（検索で見つかるように） | 完了 | M3 | **高** | T044 |
+| [T046](T046-web-analytics.md) | 閲覧状況の計測（Cloudflare Web Analytics） | 完了 | M3 | 中 | T045 |
 

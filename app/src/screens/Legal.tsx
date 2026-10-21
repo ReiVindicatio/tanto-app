@@ -26,7 +26,10 @@ export function Privacy() {
       <h2>1. 集める情報</h2>
       <ul>
         <li>
-          <strong>ログインしない場合</strong>：運営者のサーバーには何も送りません。学習の記録は利用者の端末（ブラウザ）の中だけに保存されます。
+          <strong>ログインしない場合</strong>：学習の記録は運営者のサーバーに送らず、利用者の端末（ブラウザ）の中だけに保存されます。
+        </li>
+        <li>
+          <strong>閲覧状況</strong>：どのページが見られたか・どこから来たか・端末や国の種類などを、Cloudflare Web Analytics で集計します。Cookie を使わず、個人を特定・追跡しません。学習の記録は含みません。
         </li>
         <li>
           <strong>ログインした場合</strong>：
@@ -47,13 +50,14 @@ export function Privacy() {
         <li>学習の記録を、利用者の複数の端末（スマホと PC など）で共有するため</li>
         <li>問題・解説の誤りを直すため（誤り報告）</li>
         <li>不正な利用・使いすぎからサービスを守るため</li>
+        <li>どれだけ使われているかを知り、改善するため（閲覧状況）</li>
       </ul>
       <p>広告への利用、第三者への販売・提供はしません（法令にもとづく場合を除きます）。</p>
 
       <h2>3. 預け先（外部のサービス）</h2>
       <ul>
         <li>Google LLC（Firebase Authentication）：ログイン</li>
-        <li>Cloudflare, Inc.（Workers・D1）：本アプリの配信と、学習の記録・誤り報告の保存</li>
+        <li>Cloudflare, Inc.（Workers・D1・Web Analytics）：本アプリの配信、学習の記録・誤り報告の保存、閲覧状況の集計</li>
       </ul>
       <p>これらの事業者のサーバーは日本の外にあることがあります。</p>
 
@@ -74,7 +78,7 @@ export function Privacy() {
         ）で受け付けます。Issues は誰でも読めるので、個人情報に関わることは書かないでください。学習の記録とアカウントは、マイページの「記録を全部消す（退会）」でご自身で消せます。問題・解説の誤りは、アプリの「誤りを報告」からも送れます。
       </p>
 
-      <p className="muted small">{ENACTED} 制定</p>
+      <p className="muted small">{ENACTED} 制定・2026年10月21日 改定（閲覧状況の集計を追加）</p>
     </section>
   );
 }

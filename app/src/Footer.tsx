@@ -10,6 +10,16 @@ export default function Footer({ attribution }: { attribution?: Attribution }) {
         問題文・正解は法務省が公開する PDF から、このアプリが抽出・編集・加工したものです。肢ごとの○×は公式の解答から導いたものです。
       </p>
       <p>このアプリは法務省とは関係のない個人が作成した非公式のものです。</p>
+      {/* ポリシーの改定のお知らせ（ポリシーの5.「本アプリの中でお知らせします」。T046）。1か月出す */}
+      {Date.now() < Date.parse("2026-11-21T00:00:00+09:00") && (
+        <p className="small">
+          お知らせ：2026年10月21日に
+          <button className="link small" onClick={() => navigate({ name: "privacy" })}>
+            プライバシーポリシー
+          </button>
+          を改定しました（閲覧状況の集計を追加）。
+        </p>
+      )}
       <p className="footer-links">
         <a className="small" href="/q/">
           過去問の一覧（問題文と解説）

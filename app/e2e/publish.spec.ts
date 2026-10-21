@@ -15,7 +15,8 @@ test("フッターとマイページから、利用規約とプライバシー�
   await page.locator(".legal-links").getByRole("button", { name: "プライバシーポリシー" }).click();
   await expect(page).toHaveURL(/\/privacy$/);
   await expect(page.locator("h1")).toHaveText("プライバシーポリシー");
-  await expect(page.locator(".legal")).toContainText("運営者のサーバーには何も送りません");
+  await expect(page.locator(".legal")).toContainText("学習の記録は運営者のサーバーに送らず");
+  await expect(page.locator(".legal")).toContainText("Cloudflare Web Analytics で集計します。Cookie を使わず"); // T046
   await expect(tab(page, "マイページ")).toHaveClass(/active/); // マイページの続きとして開く
 });
 
