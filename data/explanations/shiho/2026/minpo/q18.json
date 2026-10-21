@@ -1,0 +1,197 @@
+{
+ "question_id": "shiho-2026-minpo-q18",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q18-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。外国の通貨で債権額が指定された金銭債権について、債権者は外国の通貨・日本の通貨のいずれによっても請求できるとするのが判例である。",
+   "body": "ポイントは、民法403条が定める日本の通貨での弁済が債務者の側の権利として書かれている点と、債権者の側からも日本の通貨で請求できるかである。民法403条は「外国の通貨で債権額を指定したときは、債務者は、履行地における為替相場により、日本の通貨で弁済をすることができる。」と定めており、文言上は債務者が日本の通貨で弁済できることを規定している。判例は、外国の通貨をもって債権額が指定された金銭債権については、債権者は債務者に対して外国の通貨又は日本の通貨のいずれによってもこれを請求することができるとしている（最判昭和50年7月15日）。したがって、債権者は日本の通貨で債務の履行をするよう請求することができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "403",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "外国の通貨で債権額を指定したときは、債務者は、履行地における為替相場により、日本の通貨で弁済をすることができる。",
+     "text_sha256": "cffe17dbb38d2df059aef6b801bc323d7d7881ff58d61b75de8287443a8f4c48",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "外国通貨建て金銭債権の日本円による請求",
+     "court": "最高裁判所第三小法廷",
+     "date": "1975-07-15",
+     "case_number": "昭和48(オ)305",
+     "holding": "外国の通貨をもって債権額が指定された金銭債権については、債権者は債務者に対して外国の通貨又は日本の通貨のいずれによっても請求することができる。日本の通貨により裁判上の請求がされた場合の債権額は、事実審の最終口頭弁論期日の外国為替相場によって換算した額である。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52107/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q18-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。民法404条1項の文言どおりである。",
+   "body": "決め手は民法404条1項の文言である。同項は「利息を生ずべき債権について別段の意思表示がないときは、その利率は、その利息が生じた最初の時点における法定利率による。」と規定している。法定利率は同条3項により3年を一期として変動するため、どの時点の法定利率を適用するかを定める必要があり、同項は利息が生じた最初の時点の法定利率によると定めている。本肢は同項と同じ内容であり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "404",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "利息を生ずべき債権について別段の意思表示がないときは、その利率は、その利息が生じた最初の時点における法定利率による。",
+     "text_sha256": "a965ab244f1899590e357ae4b69ae913cb61204d19b4a05890de73a42965addc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "404",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "法定利率は、法務省令で定めるところにより、三年を一期とし、一期ごとに、次項の規定により変動するものとする。",
+     "text_sha256": "a965ab244f1899590e357ae4b69ae913cb61204d19b4a05890de73a42965addc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題年（2026年）時点の現行の民法404条の本文で説明した。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2026-minpo-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q18-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。既に弁済期が到来した利息債権（支分権たる利息債権）は、元本債権から独立した債権となり、元本債権が消滅しても当然には消滅しないと解されている。",
+   "body": "ポイントは、利息債権のうち既に弁済期が到来したものが元本債権とどのような関係にあるかである。利息債権は、元本債権から利息を生ずる基本的な権利と、そこから一定期間ごとに具体的に発生する支分権としての利息債権とに分けて理解されている。このうち既に弁済期が到来した支分権としての利息債権は、元本債権とは別個独立の債権として扱われ、元本債権が弁済等で消滅しても当然には消滅しないと解されている。したがって、本肢は正しい。",
+   "citations": [],
+   "cases": [],
+   "notes": [
+    "解釈による（支分権たる利息債権の独立性は条文に直接の規定がない）。判例は確かめていない。"
+   ],
+   "id": "exp-shiho-2026-minpo-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q18-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。第三者が選択をすべき場合の選択の意思表示は、債権者又は債務者に対してすればよく、債務者に対してしなければならないわけではない。",
+   "body": "誤りの箇所は「債務者に対してしなければならない」の部分である。民法409条1項は「第三者が選択をすべき場合には、その選択は、債権者又は債務者に対する意思表示によってする。」と規定している。したがって、第三者は債権者・債務者のどちらに対して選択の意思表示をしてもよく、相手方を債務者に限る本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "409",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三者が選択をすべき場合には、その選択は、債権者又は債務者に対する意思表示によってする。",
+     "text_sha256": "4228bdccb0310fec36096e77be208bd430a504c865eb64ae35e2fd337480c8e3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q18-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。選択は債権の発生の時にさかのぼって効力を生ずるのであり、将来に向かって効力を生ずるのではない。",
+   "body": "誤りの箇所は「将来に向かってその効力を生ずる」の部分である。民法411条本文は「選択は、債権の発生の時にさかのぼってその効力を生ずる。」と規定しており、選択の効力は遡及する。ただし、同条ただし書により「第三者の権利を害することはできない。」とされている。したがって、選択が将来に向かって効力を生ずるとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "411",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "選択は、債権の発生の時にさかのぼってその効力を生ずる。",
+     "text_sha256": "38d80b27e4b82579b3b9c4ab892306065cf2a1efa746a1c9f47e84a88a5f0043",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "411",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三者の権利を害することはできない。",
+     "text_sha256": "38d80b27e4b82579b3b9c4ab892306065cf2a1efa746a1c9f47e84a88a5f0043",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,252 @@
+{
+ "question_id": "shiho-2026-minpo-q08",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q08-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。道路運送車両法による登録を受けている自動車には192条（即時取得）の適用がないとするのが判例である。",
+   "body": "ポイントは、動産甲が登録を受けた自動車である点である。192条は「取引行為によって、平穏に、かつ、公然と動産の占有を始めた者は、善意であり、かつ、過失がないときは、即時にその動産について行使する権利を取得する。」と定めるが、判例は、道路運送車両法による登録を受けている自動車については民法192条の適用はないとしている。したがって、ＣがＢを所有者と過失なく信じて買い受け、現実の引渡しを受けても、即時取得によって所有権を取得することはできない。登録自動車の権利関係は登録によって公示されるため、占有を信頼した者を保護する即時取得の対象とならないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "192",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取引行為によって、平穏に、かつ、公然と動産の占有を始めた者は、善意であり、かつ、過失がないときは、即時にその動産について行使する権利を取得する。",
+     "text_sha256": "8af1415ed2efccdfc0690b29f5e636498b6cf499f8169794c3bdec6e23d8ae4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "登録自動車と即時取得",
+     "court": "最高裁判所第二小法廷",
+     "date": "1987-04-24",
+     "case_number": "昭和61(オ)1499",
+     "holding": "道路運送車両法による登録を受けている自動車については、民法192条の適用はない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/70495/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "登録による公示を理由とする説明は解釈による"
+   ],
+   "id": "exp-shiho-2026-minpo-q08-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q08-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。動産甲は盗品なので、Ｅに即時取得の要件があっても、被害者Ａは盗難の時から２年間はＥに回復を請求できる。",
+   "body": "ポイントは、盗品について即時取得の特則がある点である。Ｅは、Ｄを所有者と過失なく信じて現実の引渡しを受けているので、192条の要件は満たし得る。しかし193条は「前条の場合において、占有物が盗品又は遺失物であるときは、被害者又は遺失者は、盗難又は遺失の時から二年間、占有者に対してその物の回復を請求することができる。」と定める。動産甲はＢの保管中にＤが盗んだ盗品であり、所有者Ａは盗難の被害者に当たると解されるから、盗難から２年間が経過していなければ、ＡはＥに対して動産甲の回復を請求することができる。よって「回復を請求することができない」とする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "192",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取引行為によって、平穏に、かつ、公然と動産の占有を始めた者は、善意であり、かつ、過失がないときは、即時にその動産について行使する権利を取得する。",
+     "text_sha256": "8af1415ed2efccdfc0690b29f5e636498b6cf499f8169794c3bdec6e23d8ae4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "193",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条の場合において、占有物が盗品又は遺失物であるときは、被害者又は遺失者は、盗難又は遺失の時から二年間、占有者に対してその物の回復を請求することができる。",
+     "text_sha256": "5094c5a4afc5d9e175dd0083e26fb0c6ad19d39431083f290768c55f4491e1cc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "受寄者の保管中に盗まれた場合に所有者が「被害者」に当たるとする点は解釈による"
+   ],
+   "id": "exp-shiho-2026-minpo-q08-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q08-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。即時取得は法律の定めによる権利取得なので、Ｆの取得には法律上の原因があり、ＡはＦに不当利得の返還を請求できない。",
+   "body": "ポイントは、即時取得が不当利得の「法律上の原因」となるかである。Ｆに即時取得が成立すれば、192条により「即時にその動産について行使する権利を取得する」。不当利得について703条は「法律上の原因なく他人の財産又は労務によって利益を受け、そのために他人に損失を及ぼした者」に返還義務を課すが、Ｆの所有権取得は192条という法律の規定に基づくものであり、法律上の原因を欠くとはいえないと解されている。したがって、ＡはＦに対して不当利得を理由に動産甲の返還を請求することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "192",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "即時にその動産について行使する権利を取得する",
+     "text_sha256": "8af1415ed2efccdfc0690b29f5e636498b6cf499f8169794c3bdec6e23d8ae4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "703",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律上の原因なく他人の財産又は労務によって利益を受け、そのために他人に損失を及ぼした者",
+     "text_sha256": "fb017a70ba1c1abc0152ea2e23f7b910c14c5ab9350071a2788e05db6aa812de",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "即時取得が不当利得の法律上の原因となるとする点は解釈による"
+   ],
+   "id": "exp-shiho-2026-minpo-q08-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q08-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。192条は所有権に限らず「動産について行使する権利」の取得を認めるので、善意無過失で現実の引渡しを受けたＧは質権を即時取得する。",
+   "body": "ポイントは、即時取得の対象となる権利が所有権に限られない点である。192条は、取引行為によって平穏・公然に動産の占有を始めた善意無過失の者は「即時にその動産について行使する権利を取得する」と定めており、質権設定契約による質権の取得もこれに含まれると解されている。質権の設定は、344条により「債権者にその目的物を引き渡すことによって、その効力を生ずる」ところ、Ｇは動産甲の現実の引渡しを受けている。したがって、ＧがＢを所有者と過失なく信じていた以上、Ｇは動産甲について質権を取得する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "192",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "即時にその動産について行使する権利を取得する",
+     "text_sha256": "8af1415ed2efccdfc0690b29f5e636498b6cf499f8169794c3bdec6e23d8ae4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "344",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者にその目的物を引き渡すことによって、その効力を生ずる",
+     "text_sha256": "71db390c579a0d2e610455af139d2954da111a09b5994656c51b580ac651533a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "質権が192条の即時取得の対象となるとする点は解釈による"
+   ],
+   "id": "exp-shiho-2026-minpo-q08-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q08-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。相続・遺産分割による占有の取得は192条の「取引行為」に当たらないので、Ｈは即時取得によって所有権を取得しない。",
+   "body": "ポイントは、即時取得が「取引行為によって」占有を始めた者に限られる点である。192条は「取引行為によって、平穏に、かつ、公然と動産の占有を始めた者は、善意であり、かつ、過失がないときは、即時にその動産について行使する権利を取得する。」と定めるが、相続やそれに続く遺産分割による承継は取引行為に当たらないと解されている。また、896条により相続人が承継するのは「被相続人の財産に属した一切の権利義務」であり、Ｂは動産甲の所有権を有していなかったから、相続によってＨが所有権を取得することもない。占有を始めた時点で直ちに所有権を取得することはなく、162条2項の取得時効も「十年間」の占有を要する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "192",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取引行為によって、平穏に、かつ、公然と動産の占有を始めた者は、善意であり、かつ、過失がないときは、即時にその動産について行使する権利を取得する。",
+     "text_sha256": "8af1415ed2efccdfc0690b29f5e636498b6cf499f8169794c3bdec6e23d8ae4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "896",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被相続人の財産に属した一切の権利義務",
+     "text_sha256": "26569775cea382b249232c76910772008f279f0ab8c399f2d8a8d991820a167f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "162",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "十年間、所有の意思をもって、平穏に、かつ、公然と他人の物を占有した者は、その占有の開始の時に、善意であり、かつ、過失がなかったときは、その所有権を取得する。",
+     "text_sha256": "618d8cf22c39590babda70a937dd65e59603a4199d23a371a1b6a8d81ea1aabf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "相続・遺産分割が「取引行為」に当たらないとする点は解釈による"
+   ],
+   "id": "exp-shiho-2026-minpo-q08-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,207 @@
+{
+ "question_id": "shiho-2026-minpo-q01",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q01-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。理事が二人以上ある場合も「全ての理事が共同して」権限を行使するのではなく、業務の決定は理事の過半数で行い、代表は各理事が各自で行う。",
+   "body": "誤りのポイントは「全ての理事が共同してその権限を行使しなければならない」という部分である。一般社団法人及び一般財団法人に関する法律76条2項は「理事が二人以上ある場合には、一般社団法人の業務は、定款に別段の定めがある場合を除き、理事の過半数をもって決定する。」と定めており、業務の決定は全員一致ではなく過半数による。また、対外的な代表についても、77条2項は「前項本文の理事が二人以上ある場合には、理事は、各自、一般社団法人を代表する。」と定めており、共同して代表する必要はない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "76",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "理事が二人以上ある場合には、一般社団法人の業務は、定款に別段の定めがある場合を除き、理事の過半数をもって決定する。",
+     "text_sha256": "f88af9ef32e469533b3a9c21bad62dd4d959948c63538c774b0a71c686dac07d",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "77",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項本文の理事が二人以上ある場合には、理事は、各自、一般社団法人を代表する。",
+     "text_sha256": "7f10c6052f39ac97aa3de03b52457d3c513098278d0cbd92a672c95f9a4d09ef",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q01-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q01-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。代表理事の権限に加えた制限は、善意の第三者に対抗することができない。",
+   "body": "誤りのポイントは「善意の第三者に対しても、対抗することができる」という部分である。一般社団法人及び一般財団法人に関する法律77条4項は、代表理事が「一般社団法人の業務に関する一切の裁判上又は裁判外の行為をする権限を有する」と定め、同条5項は「前項の権限に加えた制限は、善意の第三者に対抗することができない。」と定めている。定款による制限もこの「権限に加えた制限」に当たるから、善意の第三者には対抗できない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "77",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "一般社団法人の業務に関する一切の裁判上又は裁判外の行為をする権限を有する",
+     "text_sha256": "7f10c6052f39ac97aa3de03b52457d3c513098278d0cbd92a672c95f9a4d09ef",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "77",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "前項の権限に加えた制限は、善意の第三者に対抗することができない。",
+     "text_sha256": "7f10c6052f39ac97aa3de03b52457d3c513098278d0cbd92a672c95f9a4d09ef",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q01-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q01-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。一般社団法人は、代表理事がその職務を行うについて第三者に加えた損害を賠償する責任を負う（78条）。",
+   "body": "一般社団法人及び一般財団法人に関する法律78条は「一般社団法人は、代表理事その他の代表者がその職務を行うについて第三者に加えた損害を賠償する責任を負う。」と定めている。本肢はこの条文の内容そのものである。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "78",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一般社団法人は、代表理事その他の代表者がその職務を行うについて第三者に加えた損害を賠償する責任を負う。",
+     "text_sha256": "6d0edce66c758476cca39b5e20c261d5711d3ce9a80bedc596d11a59ac2a4815",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q01-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q01-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。理事会設置一般社団法人は、監事を置かなければならない（61条）。",
+   "body": "一般社団法人及び一般財団法人に関する法律60条2項は、一般社団法人は「定款の定めによって、理事会、監事又は会計監査人を置くことができる。」と定め、監事の設置は原則として任意である。もっとも、61条は「理事会設置一般社団法人及び会計監査人設置一般社団法人は、監事を置かなければならない。」と定めており、理事会を置いた場合には監事の設置が義務となる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "60",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "定款の定めによって、理事会、監事又は会計監査人を置くことができる。",
+     "text_sha256": "0870cd5ab5731d1f8db967b4c63c7700831cd9c34ee3995353b099cedb5324f5",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "61",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "理事会設置一般社団法人及び会計監査人設置一般社団法人は、監事を置かなければならない。",
+     "text_sha256": "c9765d1289c7ef275f385bd781c6849571ed4a8fdc449b3d259a4b752f5a7ebc",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q01-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q01-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。理事が目的の範囲外の行為をするおそれがあり、それにより著しい損害が生ずるおそれがあるときは、監事は差止めを請求できる（103条1項）。",
+   "body": "一般社団法人及び一般財団法人に関する法律103条1項は、「監事は、理事が監事設置一般社団法人の目的の範囲外の行為その他法令若しくは定款に違反する行為をし、又はこれらの行為をするおそれがある場合において、当該行為によって当該監事設置一般社団法人に著しい損害が生ずるおそれがあるときは、当該理事に対し、当該行為をやめることを請求することができる。」と定めている。本肢は、目的の範囲外の行為をする「おそれ」があり「著しい損害」が生ずるおそれがある場合について監事の差止請求を認めるもので、この条文の要件と一致する。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "監事は、理事が監事設置一般社団法人の目的の範囲外の行為その他法令若しくは定款に違反する行為をし、又はこれらの行為をするおそれがある場合において、当該行為によって当該監事設置一般社団法人に著しい損害が生ずるおそれがあるときは、当該理事に対し、当該行為をやめることを請求することができる。",
+     "text_sha256": "617f6ea3f3769701120705acc68f1581f7d855c2e05e31e1bf27afb477055e79",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q01-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

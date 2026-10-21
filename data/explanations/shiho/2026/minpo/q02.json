@@ -1,0 +1,208 @@
+{
+ "question_id": "shiho-2026-minpo-q02",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q02-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。従物となるのは「自己の所有に属する」他の物を附属させた場合であり、他人の所有に属する物は従物とならない。",
+   "body": "誤りのポイントは「他人の所有に属する他の物」という部分である。民法87条1項は「物の所有者が、その物の常用に供するため、自己の所有に属する他の物をこれに附属させたときは、その附属させた物を従物とする。」と定めており、従物となるのは主物の所有者が自己の所有に属する物を附属させた場合に限られる。他人の所有に属する物を附属させても、条文上は従物とならない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "87",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "物の所有者が、その物の常用に供するため、自己の所有に属する他の物をこれに附属させたときは、その附属させた物を従物とする。",
+     "text_sha256": "28daf18cc57d735b071d99c10349ca64b3f45613eb4ba27750c56baaef902963",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q02-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q02-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。主物の抵当権の効力は原則として従物に及ぶが、当事者が従物に及ぼさない旨を合意すれば（設定行為の別段の定め）、従物には及ばない。",
+   "body": "民法87条2項は「従物は、主物の処分に従う。」と定め、判例は、宅地に対する抵当権の効力は、特段の事情のない限り、抵当権設定当時の従物にも及ぶとしている（最判昭和44年3月28日）。もっとも、87条2項は当事者の意思で排除できる規定と解されており、当事者が従物に抵当権の効力を及ぼさない旨を合意すれば、従物は主物の処分に従わない。また、民法370条も抵当権の効力が付加一体物に及ぶとしたうえで、ただし書で「設定行為に別段の定めがある場合」を除いている。したがって、従物に抵当権の効力を及ぼさない旨の合意があれば抵当権はその従物に及ばず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "87",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "従物は、主物の処分に従う。",
+     "text_sha256": "28daf18cc57d735b071d99c10349ca64b3f45613eb4ba27750c56baaef902963",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "370",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設定行為に別段の定めがある場合",
+     "text_sha256": "854276796c8c6353138b8e691ef004f5dc446b6dadda1af47cd01b822dbaddac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "宅地の抵当権の効力と従物（石燈籠・庭石）",
+     "court": "最高裁判所第二小法廷",
+     "date": "1969-03-28",
+     "case_number": "昭和43(オ)1250",
+     "holding": "宅地に対する抵当権の効力は、特段の事情のないかぎり、抵当権設定当時その宅地の従物であった石燈籠および庭石にも及び、抵当権の設定登記による対抗力は、その従物についても生ずる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55098/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "87条2項が当事者の合意で排除できること、および従物について370条ただし書の別段の定めが働くことは解釈による。"
+   ],
+   "id": "exp-shiho-2026-minpo-q02-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q02-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。天然果実は、元物から分離する時に、これを収取する権利を有する者に帰属する（89条1項）。",
+   "body": "民法89条1項は「天然果実は、その元物から分離する時に、これを収取する権利を有する者に帰属する。」と定めている。本肢はこの条文の内容そのものである。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "89",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "天然果実は、その元物から分離する時に、これを収取する権利を有する者に帰属する。",
+     "text_sha256": "6a1fd4dc8d380a0ff323a88b9284db90540f1404f9cd66ed9d8649882af5ab41",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q02-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q02-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。未分離の天然果実も、明認方法を施せば独立の物として取引の対象とすることができると解されている。",
+   "body": "誤りのポイントは「明認方法を施しても、独立の物として取引の対象とすることができない」という部分である。未分離の天然果実は元物の一部であるが、明認方法を施せば、元物とは別の独立の物として取引の対象とすることができ、その取得を第三者に対抗できると解されている。この点については判例あり（要確認）。民法89条1項が天然果実の帰属を「元物から分離する時」で定めていることとは別に、分離前の果実そのものを取引する場面の問題である。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "89",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "天然果実は、その元物から分離する時に、これを収取する権利を有する者に帰属する。",
+     "text_sha256": "6a1fd4dc8d380a0ff323a88b9284db90540f1404f9cd66ed9d8649882af5ab41",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "未分離の天然果実に明認方法を施した場合に独立の物として取引の対象となるか",
+     "searched": [
+      "courts.py search 明認方法 果実",
+      "courts.py search 明認方法 未分離",
+      "courts.py search 未分離 果実 --all"
+     ]
+    }
+   ],
+   "notes": [
+    "未分離の果実が明認方法により独立の取引対象となることは解釈による。根拠の判例は裁判所のデータベースで見つからなかった（大審院の判決である可能性がある）。"
+   ],
+   "id": "exp-shiho-2026-minpo-q02-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q02-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。法定果実は、収取する権利の存続期間に応じて、日割計算により取得する（89条2項）。",
+   "body": "民法89条2項は「法定果実は、これを収取する権利の存続期間に応じて、日割計算によりこれを取得する。」と定めている。本肢はこの条文の内容と一致する。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "89",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "法定果実は、これを収取する権利の存続期間に応じて、日割計算によりこれを取得する。",
+     "text_sha256": "6a1fd4dc8d380a0ff323a88b9284db90540f1404f9cd66ed9d8649882af5ab41",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q02-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

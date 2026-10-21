@@ -1,0 +1,176 @@
+{
+ "question_id": "shiho-2026-minpo-q04",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q04-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。代理権授与の表示による表見代理は、相手方が悪意又は有過失のときは成立しない（109条1項ただし書）。",
+   "body": "決め手は、Cが「代理権がないと知り、又は過失により知らなかった」場合に表見代理が成立するかである。109条1項本文は「第三者に対して他人に代理権を与えた旨を表示した者は、その代理権の範囲内においてその他人が第三者との間でした行為について、その責任を負う」と定めるが、同項ただし書は「第三者が、その他人が代理権を与えられていないことを知り、又は過失によって知らなかったときは、この限りでない」とする。本問のCは悪意又は有過失であるから、Aは表示による責任を負わない。Bの行為は代理権のない者の行為であり、113条1項により「本人がその追認をしなければ、本人に対してその効力を生じない」。したがって売買契約の効力はAに帰属せず、記述は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "109",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三者が、その他人が代理権を与えられていないことを知り、又は過失によって知らなかったときは、この限りでない",
+     "text_sha256": "64ad3e6649576e54b123477fa39e73a5b61ec75858485e3bfaff019b9df5bebd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "本人がその追認をしなければ、本人に対してその効力を生じない",
+     "text_sha256": "94916a1f09225da541bb996a4a974034241260a7a0c7699fb637b91a90934aa5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q04-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q04-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。相手方に過失があれば、権限外の行為の表見代理（110条）の「正当な理由」は認められない。",
+   "body": "決め手は、Cが権限外であることを知らなかったものの、知らなかったことに過失がある点である。110条は、代理人が「その権限外の行為をした場合において、第三者が代理人の権限があると信ずべき正当な理由があるとき」に表見代理を認める。抵当権設定の代理権を持つBが売買契約を締結したのは権限外の行為に当たるが、この「正当な理由」は、相手方が代理権があると信じ、かつそう信じたことに過失がないことをいうと解されている。Cには過失があるから正当な理由はなく、表見代理は成立しない。追認もないので、113条1項により売買契約の効力はAに帰属せず、記述は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "110",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理人がその権限外の行為をした場合において、第三者が代理人の権限があると信ずべき正当な理由があるとき",
+     "text_sha256": "63ff876fb6e58f26dc2c691f8ec2dcf175940fff0b8595dab8e258c48a04ffd7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "本人がその追認をしなければ、本人に対してその効力を生じない",
+     "text_sha256": "94916a1f09225da541bb996a4a974034241260a7a0c7699fb637b91a90934aa5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「正当な理由」を善意無過失と理解する点は解釈による"
+   ],
+   "id": "exp-shiho-2026-minpo-q04-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q04-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。私法上の契約（贈与）による義務の履行のための登記申請の権限は、110条の基本代理権となり得るから、表見代理が成立する余地がある。",
+   "body": "誤りは「権限外の行為の表見代理の規定により、Ａにその連帯保証契約の効力が帰属することはない」と言い切っている点である。110条は、代理人が「その権限外の行為をした場合において、第三者が代理人の権限があると信ずべき正当な理由があるとき」に表見代理を認める。判例（最判昭和46年6月3日）は、本人から登記申請を委任されて必要な権限を与えられた者がその権限を越えて第三者と取引をした場合に、その登記申請が本人の私法上の契約による義務の履行のためになされるものであるときは、その権限を基本代理権として110条を適用し、表見代理の成立を認めることができるとした。本問の登記手続の委託は、贈与契約に基づく義務の履行のためのものであるから基本代理権となり、Cに正当な理由があればAに連帯保証契約の効力が帰属し得る。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "110",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理人がその権限外の行為をした場合において、第三者が代理人の権限があると信ずべき正当な理由があるとき",
+     "text_sha256": "63ff876fb6e58f26dc2c691f8ec2dcf175940fff0b8595dab8e258c48a04ffd7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "登記申請の権限と110条の基本代理権",
+     "court": "最高裁判所第一小法廷",
+     "date": "1971-06-03",
+     "case_number": "昭和45(オ)305",
+     "holding": "本人から登記申請を委任されて必要な権限を与えられた者がその権限を越えて第三者と取引行為をした場合、その登記申請が本人の私法上の契約による義務の履行のためになされるものであるときは、その権限を基本代理権として民法110条を適用し、表見代理の成立を認めることができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52002/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q04-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q04-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。代理権の濫用は、相手方がその目的を知り、又は知ることができたときに限り無権代理とみなされる（107条）。",
+   "body": "決め手は、Cが自己の利益を図る目的を知らず、知らないことに過失もない点である。107条は「代理人が自己又は第三者の利益を図る目的で代理権の範囲内の行為をした場合において、相手方がその目的を知り、又は知ることができたときは、その行為は、代理権を有しない者がした行為とみなす」と定める。Bの乙の買受けは仕入れの代理権の範囲内の行為であり、着服目的は代理権の濫用に当たるが、Cは善意かつ無過失であるから、同条により無権代理とみなされることはない。したがって、通常の代理行為として売買契約の効力はAに帰属し、記述は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "107",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理人が自己又は第三者の利益を図る目的で代理権の範囲内の行為をした場合において、相手方がその目的を知り、又は知ることができたときは、その行為は、代理権を有しない者がした行為とみなす。",
+     "text_sha256": "a49472cb31ed6b251a4bd0dbdbccaa8f1a310d37c4b04b3622b4f60cdecb7cef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q04-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
