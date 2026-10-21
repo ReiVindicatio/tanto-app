@@ -1,0 +1,187 @@
+{
+ "question_id": "shiho-2014-gyosei-q34",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-gyosei-q34-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。住民監査請求では、違法だけでなく不当な財務会計上の行為も対象になる。",
+   "body": "決め手は「違法なものであることのみ」という限定である。地方自治法242条1項は、住民監査請求の対象を「違法若しくは不当な公金の支出」などとしている。したがって、住民監査請求では、財務会計上の行為が不当であることも主張できる。これに対し、住民訴訟は違法な行為に限られており（242条の2第1項）、この違いが本問の対比のポイントである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "242",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "違法若しくは不当な公金の支出",
+     "text_sha256": "968438e9d7917b64f5121fb4e38c7290004f5e5f749d1993ed32cb7c2674df38",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "242_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同条第一項の請求に係る違法な行為又は怠る事実につき、訴えをもつて次に掲げる請求をすることができる。",
+     "text_sha256": "fe0aae65b82be4d57a8b1d6156f608d270158f19e0cba11f147e6d8547706b4f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-gyosei-q34-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-gyosei-q34-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。住民訴訟は住民監査請求をした住民だけが提起でき、事案の重要性などによる例外は定められていない。",
+   "body": "決め手は「住民監査請求をすることなく」という部分である。地方自治法242条の2第1項は、住民訴訟を提起できる場合を「前条第一項の規定による請求をした場合において」と定め、住民監査請求をしたことを前提にしている（監査請求前置）。同項には、事案の重要性その他の事情によって監査請求を経ずに出訴できるとする例外は書かれていない。したがって、Ｘが住民監査請求をせずに住民訴訟を提起しても、適法な訴えにはならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "242_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "普通地方公共団体の住民は、前条第一項の規定による請求をした場合において",
+     "text_sha256": "fe0aae65b82be4d57a8b1d6156f608d270158f19e0cba11f147e6d8547706b4f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-gyosei-q34-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-gyosei-q34-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。監査の結果に不服がある場合の住民訴訟は、通知があった日から30日以内に提起しなければならない。",
+   "body": "地方自治法242条の2第2項は、住民訴訟は「当該各号に定める期間内に提起しなければならない」とし、1号で、監査委員の監査の結果又は勧告に不服がある場合は「当該監査の結果又は当該勧告の内容の通知があつた日から三十日以内」と定めている。この期間は「不変期間とする」とされている（同条3項）。したがって、監査の結果の通知を受けたＸは、一定の期間内でなければ適法に住民訴訟を提起できず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "242_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定による訴訟は、次の各号に掲げる場合の区分に応じ、当該各号に定める期間内に提起しなければならない。",
+     "text_sha256": "fe0aae65b82be4d57a8b1d6156f608d270158f19e0cba11f147e6d8547706b4f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "242_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該監査の結果又は当該勧告の内容の通知があつた日から三十日以内",
+     "text_sha256": "fe0aae65b82be4d57a8b1d6156f608d270158f19e0cba11f147e6d8547706b4f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "242_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前項の期間は、不変期間とする。",
+     "text_sha256": "fe0aae65b82be4d57a8b1d6156f608d270158f19e0cba11f147e6d8547706b4f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-gyosei-q34-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-gyosei-q34-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。住民訴訟の対象は違法な行為又は怠る事実に限られ、不当であることは主張できない。",
+   "body": "地方自治法242条の2第1項は、住民訴訟で請求できるのを「同条第一項の請求に係る違法な行為又は怠る事実につき」としており、対象を違法なものに限っている。住民監査請求が「違法若しくは不当な公金の支出」などを対象とする（242条1項）のと異なり、住民訴訟では「不当」は対象に含まれていない。したがって、住民訴訟においてＸは違法であることのみを主張でき、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "242_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同条第一項の請求に係る違法な行為又は怠る事実につき",
+     "text_sha256": "fe0aae65b82be4d57a8b1d6156f608d270158f19e0cba11f147e6d8547706b4f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "242",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "違法若しくは不当な公金の支出",
+     "text_sha256": "968438e9d7917b64f5121fb4e38c7290004f5e5f749d1993ed32cb7c2674df38",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-gyosei-q34-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

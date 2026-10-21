@@ -1,0 +1,159 @@
+{
+ "question_id": "shiho-2014-gyosei-q23",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-gyosei-q23-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。標準処理期間は、申請が事務所に到達してから処分をするまでに「通常要すべき標準的な期間」であり、形式上の要件に適合しない申請の補正に要する期間は含まれないと解されている。",
+   "body": "ポイントは、標準処理期間が何を基準とした期間かである。行政手続法6条は、行政庁が「申請がその事務所に到達してから当該申請に対する処分をするまでに通常要すべき標準的な期間」を定めるよう努めると規定する。ここでいう「通常要すべき」期間は、適法な申請が通常の手順で処理される場合を想定したものであり、形式上の要件に適合しない申請について補正を求め（同法7条）、申請者が補正するまでに要する期間は含まれないと解されている。補正の期間は申請者側の事情に左右され、行政庁が標準的な期間として見込むことができないためである。肢はこの理解に沿っており、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申請がその事務所に到達してから当該申請に対する処分をするまでに通常要すべき標準的な期間",
+     "text_sha256": "6b4cc0c8d922c9a7ffec07b3b50acc12da0339b8112eae0fa4bdc0dfeac11bde",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "速やかに、申請をした者（以下「申請者」という。）に対し相当の期間を定めて当該申請の補正を求め",
+     "text_sha256": "c72942cb86e7f175be06554b84175f569aa90662c758c2d0afe8b2efed0b0154",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（標準処理期間に補正期間が含まれないこと）"
+   ],
+   "id": "exp-shiho-2014-gyosei-q23-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-gyosei-q23-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。「申請がその事務所に到達したとき」とは、申請が事務所に物理的に到達した時点をいい、職員が受付印を押すなど受領の意思を表示することは要しないと解されている。",
+   "body": "誤りは、到達の時点を「受付印を押印する等，申請を受領した旨の意思が表示された時点」としている部分である。行政手続法7条は、行政庁は「申請がその事務所に到達したときは遅滞なく当該申請の審査を開始しなければならず」と定め、審査開始の義務を申請の到達に結び付けている。この規定は、行政庁が申請を「受理」しないことで審査を拒むという運用を排除する趣旨のものと解されており、到達とは申請書が事務所に届いた時点をいい、職員による受領の意思表示を要しないと解されている。したがって、受領の意思表示の時点を到達とする肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申請がその事務所に到達したときは遅滞なく当該申請の審査を開始しなければならず",
+     "text_sha256": "c72942cb86e7f175be06554b84175f569aa90662c758c2d0afe8b2efed0b0154",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（「到達」の意味と、受理の観念を排除する7条の趣旨）"
+   ],
+   "id": "exp-shiho-2014-gyosei-q23-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-gyosei-q23-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。申請期間の徒過を理由に申請を拒否する場合も、申請により求められた許認可等を拒否する処分であるから、行政手続法8条により理由を示さなければならない。",
+   "body": "誤りは「理由を示す必要はない」の部分である。行政手続法7条は「申請をすることができる期間内にされたものであること」を申請の形式上の要件の一つに挙げ、これに適合しない申請については補正を求めるか「当該申請により求められた許認可等を拒否しなければならない」と定める。そして同法8条1項は、「申請により求められた許認可等を拒否する処分をする場合は、申請者に対し、同時に、当該処分の理由を示さなければならない」と定めており、形式上の要件を欠くことを理由とする拒否処分もこれに当たる。同項ただし書の場合であっても、「申請者の求めがあったときにこれを示せば足りる」とされるにとどまり、理由の提示が不要になるわけではない。したがって、申請期間の徒過を理由とする拒否処分について理由の提示が不要とする肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申請をすることができる期間内にされたものであること",
+     "text_sha256": "c72942cb86e7f175be06554b84175f569aa90662c758c2d0afe8b2efed0b0154",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該申請により求められた許認可等を拒否しなければならない",
+     "text_sha256": "c72942cb86e7f175be06554b84175f569aa90662c758c2d0afe8b2efed0b0154",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "8",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申請により求められた許認可等を拒否する処分をする場合は、申請者に対し、同時に、当該処分の理由を示さなければならない",
+     "text_sha256": "d62025aa869050d1bc3076cb8302bb5fda981bfc71d3d8709a5cc38abe3e8f9e",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "8",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申請者の求めがあったときにこれを示せば足りる",
+     "text_sha256": "d62025aa869050d1bc3076cb8302bb5fda981bfc71d3d8709a5cc38abe3e8f9e",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-gyosei-q23-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,266 @@
+{
+ "question_id": "shiho-2013-shoho-q50",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-shoho-q50-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。監査役設置会社が取締役の責任を追及する訴えの提起の請求を受けるときは、監査役が会社を代表する（386条2項1号）。甲社は公開会社でなくても監査役会設置会社なので、代表取締役ではない。",
+   "body": "誤りのポイントは、請求を受ける際に甲社を代表する者を「代表取締役」とした点である。386条2項は「監査役が監査役設置会社を代表する」場合として、1号で「監査役設置会社が第八百四十七条第一項…の規定による請求（取締役の責任を追及する訴えの提起の請求に限る。）を受ける場合」を挙げる。監査役設置会社の定義（2条9号）は監査の範囲を会計に限定する定款の定めがある会社を除くが、389条1項はその定めができる会社から「監査役会設置会社及び会計監査人設置会社を除く」としているので、監査役会設置会社である甲社は、公開会社でなくても監査役設置会社に当たる。したがって、Ｂの請求を受ける際に甲社を代表するのは監査役である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "386",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "監査役が監査役設置会社を代表する。",
+     "text_sha256": "6acc2c0ed7e96a3c30f7159de3f187b579e8d64b721d584e58ad8751b5866144",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "386",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "の規定による請求（取締役の責任を追及する訴えの提起の請求に限る。）を受ける場合",
+     "text_sha256": "6acc2c0ed7e96a3c30f7159de3f187b579e8d64b721d584e58ad8751b5866144",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "監査役設置会社　監査役を置く株式会社（その監査役の監査の範囲を会計に関するものに限定する旨の定款の定めがあるものを除く。）",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "389",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公開会社でない株式会社（監査役会設置会社及び会計監査人設置会社を除く。）は、第三百八十一条第一項の規定にかかわらず、その監査役の監査の範囲を会計に関するものに限定する旨を定款で定めることができる。",
+     "text_sha256": "4c94dc1b6611b51f32f0e7f8e6dfeb2e821e223b81de4080478b2daed3e0cbad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "386条2項1号は出題後の改正（多重代表訴訟の導入等）で文言が変わっている。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2013-shoho-q50-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-shoho-q50-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。責任追及等の訴えは、株式会社の本店の所在地を管轄する地方裁判所の管轄に専属する（848条）。会社自身が提起する訴えも含まれる。",
+   "body": "848条は「責任追及等の訴えは、株式会社又は株式交換等完全子会社（以下この節において「株式会社等」という。）の本店の所在地を管轄する地方裁判所の管轄に専属する。」と定める。「責任追及等の訴え」は、847条1項で株主が株式会社に対して提起を請求する「役員等…の責任を追及する訴え」などを指し、株主の請求を受けて会社自身が取締役Ａに対して提起する訴えもこれに当たる。したがって、甲社が提起するＡの責任を追及する訴えは、甲社の本店の所在地を管轄する地方裁判所の専属管轄となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "848",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "責任追及等の訴えは、株式会社又は株式交換等完全子会社（以下この節において「株式会社等」という。）の本店の所在地を管轄する地方裁判所の管轄に専属する。",
+     "text_sha256": "6741d349f3b2815ecf9507966b469f4118cd3e9eb79d5458cd6d6a6d5e26bab6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "847",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "（以下この節において「責任追及等の訴え」という。）の提起を請求することができる。",
+     "text_sha256": "7ef6991ab0a888053685d713579be6d967f82c4594f0fc3d8778bb01c1460b55",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2013-shoho-q50-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-shoho-q50-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。会社が責任追及等の訴えを提起したときは、遅滞なく「公告し、又は株主に通知し」なければならず、公告と通知の両方は要しない（849条5項）。",
+   "body": "誤りのポイントは「公告し，かつ，株主に通知しなければならない」と両方を求めた点である。849条5項は「株式会社等は、責任追及等の訴えを提起したとき、又は前項の訴訟告知を受けたときは、遅滞なく、その旨を公告し、又は株主に通知しなければならない。」と定め、公告か通知のどちらかでよい。公開会社でない会社では、849条9項により「「公告し、又は株主に通知し」とあるのは「株主に通知し」」と読み替えられるが、甲社は公開会社なので選択のままである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "849",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "株式会社等は、責任追及等の訴えを提起したとき、又は前項の訴訟告知を受けたときは、遅滞なく、その旨を公告し、又は株主に通知しなければならない。",
+     "text_sha256": "b992714384fb798e64f0fafc51114bbb17cc11f80c914e18bec0f99447bb192b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "849",
+     "paragraphs": [
+      "9"
+     ],
+     "quote": "「公告し、又は株主に通知し」とあるのは「株主に通知し」",
+     "text_sha256": "b992714384fb798e64f0fafc51114bbb17cc11f80c914e18bec0f99447bb192b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "849条は出題後の改正で項の番号が変わっている（出題当時の項番号は確認していない）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2013-shoho-q50-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-shoho-q50-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。訴訟の係属中に株式移転で株主でなくなっても、その株式移転で完全親会社の株式を取得したときは、訴訟を追行できる（851条1項1号）。",
+   "body": "851条1項は、責任追及等の訴えを提起した株主が「当該訴訟の係属中に株主でなくなった場合であっても、次に掲げるときは、その者が、訴訟を追行することができる。」と定め、1号で「その者が当該株式会社の株式交換又は株式移転により当該株式会社の完全親会社の株式を取得したとき。」を挙げる。Ｂは甲社の株式移転により甲社の株主でなくなったが、その株式移転で甲社の完全親会社の株主となっているので、訴訟を追行することができ、原告適格を失わない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "851",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該訴訟の係属中に株主でなくなった場合であっても、次に掲げるときは、その者が、訴訟を追行することができる。",
+     "text_sha256": "39b92c2da785275852b672692a4d160f2438cd3ad8a640003b710ba1ee186fe6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "851",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その者が当該株式会社の株式交換又は株式移転により当該株式会社の完全親会社の株式を取得したとき。",
+     "text_sha256": "39b92c2da785275852b672692a4d160f2438cd3ad8a640003b710ba1ee186fe6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2013-shoho-q50-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-shoho-q50-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。株主が会社のために提起した責任追及等の訴えの確定判決の効力は、請求認容・棄却のどちらであっても会社に及ぶ（民事訴訟法115条1項2号）。",
+   "body": "誤りのポイントは、請求を棄却する確定判決の効力は甲社に及ばないとした点である。会社法847条3項により、株主は「株式会社のために、責任追及等の訴えを提起することができる」。民事訴訟法115条1項は、確定判決は「当事者が他人のために原告又は被告となった場合のその他人」に対してその効力を有すると定めており、株主代表訴訟の原告株主はこれに当たり、判決の効力は会社に及ぶと解されている。この規定は判決の内容で区別していないので、請求認容の判決に限らず、請求棄却の判決の効力も甲社に及ぶ。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "847",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "株式会社のために、責任追及等の訴えを提起することができる",
+     "text_sha256": "7ef6991ab0a888053685d713579be6d967f82c4594f0fc3d8778bb01c1460b55",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が他人のために原告又は被告となった場合のその他人",
+     "text_sha256": "4cd8790c0a15a6de1c5356b0aa7a8ee3d090bc4348db553dd1f1a921da012ee1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "株主代表訴訟の原告株主が民事訴訟法115条1項2号の「他人のために原告」となった者に当たるとする点は解釈による。"
+   ],
+   "id": "exp-shiho-2013-shoho-q50-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

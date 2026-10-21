@@ -1,0 +1,225 @@
+{
+ "question_id": "shiho-2014-gyosei-q32",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-gyosei-q32-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。取消訴訟の共同訴訟は、数人の請求が処分の取消しの請求と関連請求とである場合に認められ（行政事件訴訟法17条1項）、合一確定が必要な場合に限られない。",
+   "body": "誤りは、共同訴訟ができる場合を「合一にのみ確定すべき場合に限られる」としている点である。行政事件訴訟法17条1項は「数人は、その数人の請求又はその数人に対する請求が処分又は裁決の取消しの請求と関連請求とである場合に限り、共同訴訟人として訴え、又は訴えられることができる。」と定める。関連請求とは13条各号に掲げる請求で、たとえば「当該処分又は裁決の取消しを求める他の請求」（13条5号）も含まれる。このように、取消訴訟の共同訴訟の要件は関連請求の関係にあることであり、訴訟の目的が合一にのみ確定すべき場合（いわゆる必要的共同訴訟の場合）に限るものではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "17",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "数人は、その数人の請求又はその数人に対する請求が処分又は裁決の取消しの請求と関連請求とである場合に限り、共同訴訟人として訴え、又は訴えられることができる。",
+     "text_sha256": "7b64c60a29beaeb37102fae41dc98acfa801e8592fafc3e0af997d277c3b7732",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該処分又は裁決の取消しを求める他の請求",
+     "text_sha256": "33235bdf214c77f4a1ce6044516c0c79326f75b1e8dabbb04740473291e7edc7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-gyosei-q32-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-gyosei-q32-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。取消訴訟に併合できるのは関連請求に係る訴えに限られ（行政事件訴訟法16条1項）、同一の被告に対する民事訴訟であれば何でも併合できるわけではない。",
+   "body": "誤りは、同一の被告に対する民事訴訟でありさえすれば併合できるとしている点である。行政事件訴訟法16条1項は「取消訴訟には、関連請求に係る訴えを併合することができる。」と定める。関連請求は13条各号に限定されており、民事上の請求であれば「当該処分又は裁決に関連する原状回復又は損害賠償の請求」（13条1号）などがこれに当たる。被告が同一であっても、処分と関連しない民事上の請求は関連請求に当たらず、取消訴訟に併合して提起することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "16",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取消訴訟には、関連請求に係る訴えを併合することができる。",
+     "text_sha256": "0c541132edfb6a9d6a0076ef2a91ca8e4b336c2d205bcc6d4999a35315249eda",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該処分又は裁決に関連する原状回復又は損害賠償の請求",
+     "text_sha256": "33235bdf214c77f4a1ce6044516c0c79326f75b1e8dabbb04740473291e7edc7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-gyosei-q32-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-gyosei-q32-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。原処分の取消請求は棄却裁決の取消訴訟の関連請求（行政事件訴訟法13条4号）であり、原告は口頭弁論の終結に至るまで追加的に併合して提起できる（19条1項）。",
+   "body": "行政事件訴訟法19条1項は「原告は、取消訴訟の口頭弁論の終結に至るまで、関連請求に係る訴えをこれに併合して提起することができる。」と定める。裁決の取消訴訟にとって、その裁決に係る処分の取消しの請求は「当該裁決に係る処分の取消しの請求」（13条4号）として関連請求に当たる。そのため、審査請求を棄却した裁決の取消訴訟を提起した後でも、原告は口頭弁論の終結に至るまで、原処分の取消しの訴えを追加的に併合して提起できる。20条は、この場合に「処分の取消しの訴えは、裁決の取消しの訴えを提起した時に提起されたものとみなす」として出訴期間の遵守についても手当てしている。なお、10条2項により、裁決の取消しの訴えでは「処分の違法を理由として取消しを求めることができない」ので、原処分の違法を争うには処分の取消しの訴えを併合する意味がある。肢の「法令に特別の定めがある場合を除き」は、法律で裁決の取消しの訴えしか提起できないとされている場合などを除く趣旨と解される。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "原告は、取消訴訟の口頭弁論の終結に至るまで、関連請求に係る訴えをこれに併合して提起することができる。",
+     "text_sha256": "846834c9a9a478144efb08f04c263ef59f5906a7d933ea20e34fdf0ceeb15abc",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該裁決に係る処分の取消しの請求",
+     "text_sha256": "33235bdf214c77f4a1ce6044516c0c79326f75b1e8dabbb04740473291e7edc7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "処分の取消しの訴えは、裁決の取消しの訴えを提起した時に提起されたものとみなす",
+     "text_sha256": "87b1b1dab304d39124fdc26cec398aa72b7b0aa50131a2277134e7911c09d763",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "10",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "処分の違法を理由として取消しを求めることができない",
+     "text_sha256": "1d1fe25fde819c0e058abe9d1130a0c643f7e3b21aca3aeaa6abd4115e107218",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「法令に特別の定めがある場合を除き」の趣旨の部分は解釈による。"
+   ],
+   "id": "exp-shiho-2014-gyosei-q32-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-gyosei-q32-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。不作為型の申請型義務付けの訴えには、その処分に係る不作為の違法確認の訴えを併合して提起しなければならない（行政事件訴訟法37条の3第3項1号）。",
+   "body": "行政事件訴訟法37条の3第1項1号は、申請型の義務付けの訴えを提起できる場合の一つとして「当該法令に基づく申請又は審査請求に対し相当の期間内に何らの処分又は裁決がされないこと。」を掲げる。同条3項は、この義務付けの訴えを提起するときは「次の各号に掲げる区分に応じてそれぞれ当該各号に定める訴えをその義務付けの訴えに併合して提起しなければならない」とし、1号の場合に併合すべき訴えを「同号に規定する処分又は裁決に係る不作為の違法確認の訴え」と定める。したがって、相当の期間内に処分がされないとして義務付けの訴えを提起する場合には、不作為の違法確認の訴えの併合が必須であり、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該法令に基づく申請又は審査請求に対し相当の期間内に何らの処分又は裁決がされないこと。",
+     "text_sha256": "6e1fb542f818d963350a9d088580a09d2dd33958bb8ba0469df736291942048a",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_3",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "次の各号に掲げる区分に応じてそれぞれ当該各号に定める訴えをその義務付けの訴えに併合して提起しなければならない",
+     "text_sha256": "6e1fb542f818d963350a9d088580a09d2dd33958bb8ba0469df736291942048a",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "37_3",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "同号に規定する処分又は裁決に係る不作為の違法確認の訴え",
+     "text_sha256": "6e1fb542f818d963350a9d088580a09d2dd33958bb8ba0469df736291942048a",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-gyosei-q32-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

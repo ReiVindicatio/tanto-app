@@ -1,0 +1,264 @@
+{
+ "question_id": "shiho-2013-shoho-q39",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-shoho-q39-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。好ましくない株主の議決権行使を回避する目的で、その株主から株式を譲り受ける対価を何人かに供与する行為は、株主の権利の行使に関する利益供与に当たるとした判例がある。",
+   "body": "会社法120条1項は「株式会社は、何人に対しても、株主の権利…の行使に関し、財産上の利益の供与（当該株式会社又はその子会社の計算においてするものに限る。…）をしてはならない。」と定める（「…」は中略）。最高裁平成18年4月10日判決は、会社法の制定前の商法の利益供与の禁止の規定について、会社から見て好ましくないと判断される株主が議決権等の株主の権利を行使することを回避する目的で、当該株主から株式を譲り受けるための対価を何人かに供与する行為は、株主の権利の行使に関し利益を供与する行為に当たると判示した。供与の相手方が株主本人ではなく第三者であっても、会社の計算で、株主の権利行使を回避する目的でされるものであれば該当するということであり、肢の記述はこの判例に合っている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "120",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、何人に対しても、株主の権利",
+     "text_sha256": "fd010d2398df09829af599fd85a904ff6f5fdc73a72148b3a67f6576937476bd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "120",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "の行使に関し、財産上の利益の供与（当該株式会社又はその子会社の計算においてするものに限る。",
+     "text_sha256": "fd010d2398df09829af599fd85a904ff6f5fdc73a72148b3a67f6576937476bd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "120",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "をしてはならない。",
+     "text_sha256": "fd010d2398df09829af599fd85a904ff6f5fdc73a72148b3a67f6576937476bd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "好ましくない株主からの株式譲受けの対価の供与と利益供与（蛇の目ミシン事件）",
+     "court": "最高裁判所第二小法廷",
+     "date": "2006-04-10",
+     "case_number": "平成15(受)1154",
+     "holding": "会社から見て好ましくないと判断される株主が議決権等の株主の権利を行使することを回避する目的で、当該株主から株式を譲り受けるための対価を何人かに供与する行為は、改正前商法294条ノ2第1項にいう「株主ノ権利ノ行使ニ関シ」利益を供与する行為に当たる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/32871/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は改正前の商法294条ノ2第1項についてのもの。現行の会社法120条1項に同じ理解が及ぶとするのは解釈による。"
+   ],
+   "id": "exp-shiho-2013-shoho-q39-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-shoho-q39-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。特定の株主に対する無償の財産上の利益の供与は、株主の権利の行使に関する利益供与と推定される（会社法120条2項前段）。",
+   "body": "会社法120条2項前段は「株式会社が特定の株主に対して無償で財産上の利益の供与をしたときは、当該株式会社は、株主の権利の行使に関し、財産上の利益の供与をしたものと推定する。」と定める。肢の記述はこの条文どおりである。なお、同項後段により、有償であっても会社等の受けた利益が著しく少ないときも同様に推定される。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "120",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "株式会社が特定の株主に対して無償で財産上の利益の供与をしたときは、当該株式会社は、株主の権利の行使に関し、財産上の利益の供与をしたものと推定する。",
+     "text_sha256": "fd010d2398df09829af599fd85a904ff6f5fdc73a72148b3a67f6576937476bd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2013-shoho-q39-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-shoho-q39-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。会社法120条1項が禁止する利益供与は、会社又はその子会社の計算でするものに限られ、株主が自己の計算でする供与は当たらない。",
+   "body": "誤りのポイントは「株主が，自己の計算において」の部分である。会社法120条1項は、禁止の主体を「株式会社」とし、禁止される財産上の利益の供与を「当該株式会社又はその子会社の計算においてするものに限る」と定めている。株主が自己の計算で他の株主に利益を供与しても、会社又はその子会社の計算によるものではないから、同項の利益供与には当たらない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "120",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該株式会社又はその子会社の計算においてするものに限る",
+     "text_sha256": "fd010d2398df09829af599fd85a904ff6f5fdc73a72148b3a67f6576937476bd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2013-shoho-q39-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-shoho-q39-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。利益供与に関与した取締役（供与をした取締役を除く）は、職務を行うについて注意を怠らなかったことを証明すれば責任を免れる（会社法120条4項ただし書）。",
+   "body": "誤りのポイントは「注意を怠ったかどうかにかかわらず」の部分である。会社法120条4項本文は、利益供与がされたときは「当該利益の供与をすることに関与した取締役…として法務省令で定める者は、当該株式会社に対して、連帯して、供与した利益の価額に相当する額を支払う義務を負う」と定める（「…」は中略）。しかし同項ただし書は「その者（当該利益の供与をした取締役を除く。）がその職務を行うについて注意を怠らなかったことを証明した場合は、この限りでない。」と定める。無過失でも責任を負うのは利益の供与をした取締役自身に限られ、関与した他の取締役は無過失を証明すれば義務を負わないから、肢の記述は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "120",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "当該利益の供与をすることに関与した取締役",
+     "text_sha256": "fd010d2398df09829af599fd85a904ff6f5fdc73a72148b3a67f6576937476bd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "120",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "として法務省令で定める者は、当該株式会社に対して、連帯して、供与した利益の価額に相当する額を支払う義務を負う",
+     "text_sha256": "fd010d2398df09829af599fd85a904ff6f5fdc73a72148b3a67f6576937476bd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "120",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "その者（当該利益の供与をした取締役を除く。）がその職務を行うについて注意を怠らなかったことを証明した場合は、この限りでない。",
+     "text_sha256": "fd010d2398df09829af599fd85a904ff6f5fdc73a72148b3a67f6576937476bd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2013-shoho-q39-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-shoho-q39-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。利益の供与を受けた者に対する利益の返還を求める訴えは、受けた者が役員等でなくても、株主による責任追及等の訴えの対象となる（会社法847条1項）。",
+   "body": "誤りのポイントは「提起することができない」の部分である。会社法120条3項前段は、違法な利益供与がされたときは「当該利益の供与を受けた者は、これを当該株式会社又はその子会社に返還しなければならない。」と定め、返還義務を負う者を役員等に限っていない。そして847条1項は、株主が提起を請求できる「責任追及等の訴え」に「第百二十条第三項の利益の返還を求める訴え」を含めており、同条3項により、会社が60日以内に訴えを提起しないときは、請求をした株主が会社のために訴えを提起することができる。したがって、利益の供与を受けた者が取締役等でなくても、株主代表訴訟により返還を求めることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "120",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "当該利益の供与を受けた者は、これを当該株式会社又はその子会社に返還しなければならない。",
+     "text_sha256": "fd010d2398df09829af599fd85a904ff6f5fdc73a72148b3a67f6576937476bd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "847",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百二十条第三項の利益の返還を求める訴え",
+     "text_sha256": "7ef6991ab0a888053685d713579be6d967f82c4594f0fc3d8778bb01c1460b55",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "847",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "責任追及等の訴え",
+     "text_sha256": "7ef6991ab0a888053685d713579be6d967f82c4594f0fc3d8778bb01c1460b55",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "847",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "株式会社が第一項の規定による請求の日から六十日以内に責任追及等の訴えを提起しないときは、当該請求をした株主は、株式会社のために、責任追及等の訴えを提起することができる。",
+     "text_sha256": "7ef6991ab0a888053685d713579be6d967f82c4594f0fc3d8778bb01c1460b55",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2013-shoho-q39-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
