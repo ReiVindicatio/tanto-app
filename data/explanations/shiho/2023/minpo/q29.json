@@ -1,0 +1,248 @@
+{
+ "question_id": "shiho-2023-minpo-q29",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q29-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例は、抵当権者は配当異議の申出をしなかった場合でも、債権又は優先権を有しないのに配当を受けた債権者に対し、不当利得の返還を請求できるとする。",
+   "body": "不当利得は「法律上の原因なく他人の財産又は労務によって利益を受け、そのために他人に損失を及ぼした」場合に成立する（703条）。判例（最判平成3年3月22日）は、抵当権者は配当期日において配当異議の申出をしなかった場合であっても、債権又は優先権を有しないにもかかわらず配当を受けた債権者に対して、その者が配当を受けたことによって自己が配当を受けることができなかった金銭相当額の返還を請求できるとした。その理由として、抵当権者は抵当不動産の代金から優先弁済を受ける権利を有し、配当表に従った配当の実施は係争配当金の帰属を確定するものではないから、その利得に法律上の原因があるとはいえないことを挙げている。したがって、返還請求をすることができないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "703",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律上の原因なく他人の財産又は労務によって利益を受け、そのために他人に損失を及ぼした",
+     "text_sha256": "fb017a70ba1c1abc0152ea2e23f7b910c14c5ab9350071a2788e05db6aa812de",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "配当異議の申出をしなかった抵当権者の不当利得返還請求",
+     "court": "最高裁判所第二小法廷",
+     "date": "1991-03-22",
+     "case_number": "平成2(オ)1820",
+     "holding": "抵当権者は、配当期日において配当異議の申出をしなかった場合であっても、債権又は優先権を有しないのに配当を受けた債権者に対して、その者が配当を受けたことによって自己が配当を受けることができなかった金銭相当額の返還を請求することができる。配当の実施は係争配当金の帰属を確定するものではないから、その利得に法律上の原因があるとはいえない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52462/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q29-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q29-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判例は、不当利得をした者が利得に法律上の原因がないことを認識した後の利益の消滅は、返還義務の範囲を減少させないとする。",
+   "body": "703条は、受益者は「その利益の存する限度において、これを返還する義務を負う。」と定め、善意の受益者の返還義務を現存利益に限っている。これに対し、704条は「悪意の受益者は、その受けた利益に利息を付して返還しなければならない。」と定める。判例（最判平成3年11月19日）は、不当利得をした者が利得に法律上の原因がないことを認識した後の利益の消滅は、返還義務の範囲を減少させないとした。したがって、善意の受益者も、法律上の原因がないことを認識した後に利益が消滅したときは、現存利益がないことを理由に返還を拒むことができず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "703",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その利益の存する限度において、これを返還する義務を負う。",
+     "text_sha256": "fb017a70ba1c1abc0152ea2e23f7b910c14c5ab9350071a2788e05db6aa812de",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "704",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "悪意の受益者は、その受けた利益に利息を付して返還しなければならない。",
+     "text_sha256": "db0fad3e35fb463713be3d864871de05de727a015fdbe3eedc960aaeef97ec7f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "法律上の原因がないことを認識した後の利益の消滅と返還義務の範囲",
+     "court": "最高裁判所第三小法廷",
+     "date": "1991-11-19",
+     "case_number": "昭和62(オ)888",
+     "holding": "金銭の交付によって生じた不当利得の利益が存しないことは、不当利得返還請求権の消滅を主張する者が主張・立証すべきである。不当利得をした者が利得に法律上の原因がないことを認識した後の利益の消滅は、返還義務の範囲を減少させない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52744/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q29-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q29-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判例は、不法の原因により未登記建物を贈与した場合、その引渡しは708条の「給付」に当たるとするから、贈与者は返還を請求できない。",
+   "body": "708条本文は「不法な原因のために給付をした者は、その給付したものの返還を請求することができない。」と定める。判例（最大判昭和45年10月21日）は、不法の原因により未登記建物を贈与した場合、その引渡しは708条にいう給付に当たるとした。不倫関係の維持を目的とする贈与は不法な原因によるものと解されているから、未登記建物の引渡しがされた本肢では給付が完了しており、贈与者は不当利得に基づいて建物の返還を請求することができない。なお、既登記建物の場合に引渡しだけで給付といえるかは別の問題であり、本肢は未登記建物についてのものである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "708",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法な原因のために給付をした者は、その給付したものの返還を請求することができない。",
+     "text_sha256": "a35bbcbbae55af85a9332567d8b0b166d5b8efffcb5a14a2a9cb4320e3160ba1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "不法原因による未登記建物の贈与と708条（最高裁大法廷）",
+     "court": "最高裁判所大法廷",
+     "date": "1970-10-21",
+     "case_number": "昭和41(オ)436",
+     "holding": "不法の原因により未登記建物を贈与した場合、その引渡しは708条にいう給付に当たる。建物の贈与に基づく引渡しが不法原因給付に当たる場合、贈与者は所有権が自己にあることを理由として建物の返還を請求することはできず、その反射的効果として建物の所有権は受贈者に帰属する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53161/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "解釈による：不倫関係の維持を目的とする贈与が不法な原因に当たることは、判例の判示事項・裁判要旨には書かれておらず、一般的な理解による。"
+   ],
+   "id": "exp-shiho-2023-minpo-q29-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q29-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：不法な原因が受益者についてのみ存したときは、給付者は返還を請求できる（708条ただし書）。",
+   "body": "708条は、本文で「不法な原因のために給付をした者は、その給付したものの返還を請求することができない。」と定めたうえで、ただし書で「不法な原因が受益者についてのみ存したときは、この限りでない。」と定める。したがって、不法な原因が受益者の側にだけあった場合には、給付者は給付したものの返還を請求することができ、返還を請求できないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "708",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法な原因のために給付をした者は、その給付したものの返還を請求することができない。",
+     "text_sha256": "a35bbcbbae55af85a9332567d8b0b166d5b8efffcb5a14a2a9cb4320e3160ba1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "708",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法な原因が受益者についてのみ存したときは、この限りでない。",
+     "text_sha256": "a35bbcbbae55af85a9332567d8b0b166d5b8efffcb5a14a2a9cb4320e3160ba1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q29-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q29-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判例は、贈与に基づく引渡しが不法原因給付に当たる場合、贈与者は所有権に基づいても返還を請求できないとする。",
+   "body": "708条本文は「不法な原因のために給付をした者は、その給付したものの返還を請求することができない。」と定める。判例（最大判昭和45年10月21日）は、建物の贈与に基づく引渡しが不法原因給付に当たる場合に、贈与者は目的物の所有権が自己にあることを理由として返還を請求することはできないとし、その反射的効果として所有権は受贈者に帰属するとした。所有権に基づく返還請求を認めると708条の趣旨が失われるためと解されている。この判例は建物についてのものであるが、本肢の動産の贈与・引渡しについても同じ考え方により、Ａは所有権に基づく返還請求もできないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "708",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法な原因のために給付をした者は、その給付したものの返還を請求することができない。",
+     "text_sha256": "a35bbcbbae55af85a9332567d8b0b166d5b8efffcb5a14a2a9cb4320e3160ba1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "不法原因給付と所有権に基づく返還請求（最高裁大法廷）",
+     "court": "最高裁判所大法廷",
+     "date": "1970-10-21",
+     "case_number": "昭和41(オ)436",
+     "holding": "建物の贈与に基づく引渡しが不法原因給付に当たる場合に、贈与者は目的物の所有権が自己にあることを理由として建物の返還を請求することはできない。贈与者が返還を請求できないことの反射的効果として、建物の所有権は受贈者に帰属する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53161/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "解釈による：判例は建物についてのものであり、動産にも同じく及ぶことは一般的な理解による。所有権に基づく返還請求を認めると708条の趣旨が失われるという理由づけも、裁判要旨には書かれていない一般的な理解による。"
+   ],
+   "id": "exp-shiho-2023-minpo-q29-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

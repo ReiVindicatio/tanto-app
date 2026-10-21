@@ -1,0 +1,232 @@
+{
+ "question_id": "shiho-2023-minpo-q22",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q22-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。債務者の交替による更改は、債権者と更改後に債務者となる者との契約によってすることができ、更改前の債務者の意思は要件とされていない（514条1項）。",
+   "body": "514条1項前段は「債務者の交替による更改は、債権者と更改後に債務者となる者との契約によってすることができる。」と定める。同項後段は、更改は「債権者が更改前の債務者に対してその契約をした旨を通知した時に、その効力を生ずる。」とするだけで、更改前の債務者の同意や、その意思に反しないことを要件としていない。したがって、更改前の債務者の意思に反しても、債権者と更改後に債務者となる者との契約によって債務者の交替による更改をすることができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "514",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者の交替による更改は、債権者と更改後に債務者となる者との契約によってすることができる。",
+     "text_sha256": "8f66cefb58c0625d8942d0a4546797107dfe4814dbf132723679467674b34f3d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "514",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が更改前の債務者に対してその契約をした旨を通知した時に、その効力を生ずる。",
+     "text_sha256": "8f66cefb58c0625d8942d0a4546797107dfe4814dbf132723679467674b34f3d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "514条は平成29年改正で改められている。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2023-minpo-q22-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q22-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。債務者の交替による更改後の債務者は、更改前の債務者に対して求償権を取得しない（514条2項）。",
+   "body": "514条2項は「債務者の交替による更改後の債務者は、更改前の債務者に対して求償権を取得しない。」と定める。本肢はこの条文のとおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "514",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債務者の交替による更改後の債務者は、更改前の債務者に対して求償権を取得しない。",
+     "text_sha256": "8f66cefb58c0625d8942d0a4546797107dfe4814dbf132723679467674b34f3d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q22-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q22-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。承諾が必要なのは第三者が担保を設定した場合であり、債務者自身が設定した質権は、債務者に対する意思表示によって更改後の債務に移すことができる（518条）。",
+   "body": "518条1項は、債権者の交替による更改では更改前の債権者が「更改前の債務の目的の限度において、その債務の担保として設定された質権又は抵当権を更改後の債務に移すことができる。」とし、ただし書で「第三者がこれを設定した場合には、その承諾を得なければならない。」と定める。同条2項は、この移転は「あらかじめ又は同時に更改の相手方（債権者の交替による更改にあっては、債務者）に対してする意思表示によってしなければならない。」とする。本肢の質権は債務者自身が設定したものであり、第三者が設定した場合に当たらないから、債務者の承諾は要件ではなく、債務者に対する意思表示で足りる。したがって、債務者の承諾を得なければ移すことができないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "518",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "更改前の債務の目的の限度において、その債務の担保として設定された質権又は抵当権を更改後の債務に移すことができる。",
+     "text_sha256": "0ce94c039fff92d0fccdcc9ef715c2f60fbdcc06d51f82a543713a624843b09f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "518",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三者がこれを設定した場合には、その承諾を得なければならない。",
+     "text_sha256": "0ce94c039fff92d0fccdcc9ef715c2f60fbdcc06d51f82a543713a624843b09f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "518",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "あらかじめ又は同時に更改の相手方（債権者の交替による更改にあっては、債務者）に対してする意思表示によってしなければならない。",
+     "text_sha256": "0ce94c039fff92d0fccdcc9ef715c2f60fbdcc06d51f82a543713a624843b09f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q22-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q22-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。相続人が限定承認をしたときは、被相続人に対して有した権利義務は消滅しなかったものとみなされるから、ＡのＢに対する債権は混同により消滅しない（925条）。",
+   "body": "520条本文は「債権及び債務が同一人に帰属したときは、その債権は、消滅する。」と定める。しかし、925条は「相続人が限定承認をしたときは、その被相続人に対して有した権利義務は、消滅しなかったものとみなす。」と定める。本肢では、唯一の相続人Ｂが限定承認をしているから、ＡのＢに対する債権（ＢがＡに対して負っていた債務）は消滅しなかったものとみなされる。したがって、混同により消滅するとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "520",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権及び債務が同一人に帰属したときは、その債権は、消滅する。",
+     "text_sha256": "a2e410b520170a5739ab46af6604b623a55107e4f2dec2ce55ae43e8fefce1c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "925",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続人が限定承認をしたときは、その被相続人に対して有した権利義務は、消滅しなかったものとみなす。",
+     "text_sha256": "e218be4674f922750295097942b856230280042ed51f1b31f34ff409fc0a9393",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q22-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q22-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。賃貸人の地位と転借人の地位とが同一人に帰しても、転貸借は、当事者間にこれを消滅させる合意がない限り消滅しない（判例）。",
+   "body": "520条本文は「債権及び債務が同一人に帰属したときは、その債権は、消滅する。」と定めるが、本肢で同一人Ｃに帰したのは、ＡＢ間の賃貸借の賃貸人の地位と、ＢＣ間の転貸借の転借人の地位であり、転貸借上の債権と債務が同一人に帰属したわけではない。判例（最高裁昭和35年6月23日判決）は、賃貸人の地位と転借人の地位とが同一人に帰した場合であっても、転貸借は、当事者間にこれを消滅させる合意の成立しない限り、消滅しないとした。したがって、転貸借関係が混同により消滅するとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "520",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権及び債務が同一人に帰属したときは、その債権は、消滅する。",
+     "text_sha256": "a2e410b520170a5739ab46af6604b623a55107e4f2dec2ce55ae43e8fefce1c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "賃貸人の地位と転借人の地位の混同と転貸借",
+     "court": "最高裁判所第一小法廷",
+     "date": "1960-06-23",
+     "case_number": "昭和33(オ)890",
+     "holding": "賃貸人の地位と転借人の地位とが同一人に帰した場合であっても、転貸借は、当事者間にこれを消滅させる合意の成立しない限り、消滅しない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53664/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q22-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,250 @@
+{
+ "question_id": "shiho-2023-minpo-q20",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q20-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。別段の意思表示がないとき、特定物の引渡しは債権発生の時にその物が存在した場所でしなければならず、債権者の現在の住所でするのは特定物の引渡し以外の弁済である（484条1項）。",
+   "body": "484条1項は「弁済をすべき場所について別段の意思表示がないときは、特定物の引渡しは債権発生の時にその物が存在した場所において、その他の弁済は債権者の現在の住所において、それぞれしなければならない。」と定める。債権者の現在の住所が弁済の場所になるのは「その他の弁済」であり、特定物の引渡しについては債権発生の時にその物が存在した場所が弁済の場所になる。したがって、特定物の引渡しを債権者の現在の住所でしなければならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "484",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁済をすべき場所について別段の意思表示がないときは、特定物の引渡しは債権発生の時にその物が存在した場所において、その他の弁済は債権者の現在の住所において、それぞれしなければならない。",
+     "text_sha256": "f5349d95a4743c7bd0cd6b3bf1eb4e70f8c43b7209930f3d3ced5ab11e6eb2bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q20-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q20-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。借地上の建物の賃借人は地代の弁済について法律上の利害関係を有し（判例）、弁済をするについて正当な利益を有する第三者として、債務者である土地の賃借人の意思に反しても弁済できる（474条2項）。",
+   "body": "474条1項は「債務の弁済は、第三者もすることができる。」とし、同条2項は「弁済をするについて正当な利益を有する者でない第三者は、債務者の意思に反して弁済をすることができない。」と定める。判例（最高裁昭和63年7月1日判決）は、借地上の建物の賃借人は、地代の弁済について法律上の利害関係を有するとした。借地上の建物の賃借人は、地代の不払で借地契約が解除されると建物から退去を求められうる立場にあるからである。したがって、建物の賃借人は弁済をするについて正当な利益を有する第三者に当たり、土地の賃借人の意思に反しても地代を弁済することができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "474",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の弁済は、第三者もすることができる。",
+     "text_sha256": "e74267d8643752e11c0a9a08befe902b689810b558efc7a252153c10a2cbb852",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "474",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "弁済をするについて正当な利益を有する者でない第三者は、債務者の意思に反して弁済をすることができない。",
+     "text_sha256": "e74267d8643752e11c0a9a08befe902b689810b558efc7a252153c10a2cbb852",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "借地上の建物の賃借人と地代の弁済についての利害関係",
+     "court": "最高裁判所第二小法廷",
+     "date": "1988-07-01",
+     "case_number": "昭和62(オ)1577",
+     "holding": "借地上の建物の賃借人は、地代の弁済について法律上の利害関係を有する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/62367/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は平成29年改正前の474条2項（「利害関係」の文言）のもとでのもの。改正前の内容は条文の本文で確認していない。",
+    "法律上の利害関係を有する者が現行法の「正当な利益を有する者」に当たるという点、建物の賃借人が退去を求められうる立場にあるという理由づけは解釈による。"
+   ],
+   "id": "exp-shiho-2023-minpo-q20-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q20-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。弁済をする者は、弁済と引換えに受取証書の交付を請求でき（486条1項）、一部弁済の場合もその弁済の限度で請求できると解されている。",
+   "body": "486条1項は「弁済をする者は、弁済と引換えに、弁済を受領する者に対して受取証書の交付を請求することができる。」と定める。同項は弁済の全部か一部かを区別していないから、一部弁済をする債務者も、その弁済の限度で受取証書の交付を、弁済と引換えに請求することができると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "486",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁済をする者は、弁済と引換えに、弁済を受領する者に対して受取証書の交付を請求することができる。",
+     "text_sha256": "27ab9c594146aac3ddf4aaab07dd7825c158d08384bc32c7fdc9b83de30c0466",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "一部弁済の場合にもその限度で受取証書の交付を請求できるという点は解釈による。"
+   ],
+   "id": "exp-shiho-2023-minpo-q20-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q20-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。代物弁済の目的物の所有権は、代物弁済契約の意思表示によって移転する（判例）。",
+   "body": "482条は、弁済者が債権者との間で「債務者の負担した給付に代えて他の給付をすることにより債務を消滅させる旨の契約をした場合」に、他の給付をしたときは「その給付は、弁済と同一の効力を有する。」と定める。債務が消滅するのは他の給付をした時であるが、目的物の所有権の移転時期はこれとは別の問題である。判例（最高裁昭和57年6月4日判決）は、不動産を目的とする代物弁済契約の意思表示がされたときは、これにより当該不動産の所有権移転の効果が生ずるとした。したがって、別段の意思表示がない限り、目的物の所有権は代物弁済契約がされた時点で債権者に移転し、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "482",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者の負担した給付に代えて他の給付をすることにより債務を消滅させる旨の契約をした場合",
+     "text_sha256": "87f60911ac0b43d2deb8f6a68d2345b014a8d5fe89acdf6c46fe2cc6e2d7ebb3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "482",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その給付は、弁済と同一の効力を有する。",
+     "text_sha256": "87f60911ac0b43d2deb8f6a68d2345b014a8d5fe89acdf6c46fe2cc6e2d7ebb3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "代物弁済による不動産所有権の移転時期",
+     "court": "最高裁判所第二小法廷",
+     "date": "1982-06-04",
+     "case_number": "昭和57(オ)111",
+     "holding": "不動産を目的とする代物弁済契約の意思表示がされたときは、これにより当該不動産の所有権移転の効果が生ずる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/70442/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は平成29年改正前の482条のもとでのもの。改正前の内容は条文の本文で確認していない。",
+    "判例は不動産についてのものであり、特定物一般に同じく解されるという点は解釈による。"
+   ],
+   "id": "exp-shiho-2023-minpo-q20-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q20-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。債権者の代理人と称して債権を行使する者も受領権者としての外観を有する者に当たりうるから、弁済者Ｃが善意無過失であれば弁済は効力を有する（478条、判例）。",
+   "body": "478条は、受領権者以外の者であって「取引上の社会通念に照らして受領権者としての外観を有するもの」に対してした弁済は、「その弁済をした者が善意であり、かつ、過失がなかったときに限り、その効力を有する。」と定める。判例（最高裁昭和37年8月21日判決）は、債権者の代理人と称して債権を行使する者についても478条が適用されるとした。本肢のＢは、受領権限がないのにＡの代理人と称して債権を行使しており、Ｃが善意無過失であれば、Ｃの弁済は効力を有する。したがって、Ｃが善意無過失であっても弁済は効力を有しないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "478",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取引上の社会通念に照らして受領権者としての外観を有するもの",
+     "text_sha256": "5cba43c2041487d21b38b723706c297da47249d63f72c47cbf5d8420943e616c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "478",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その弁済をした者が善意であり、かつ、過失がなかったときに限り、その効力を有する。",
+     "text_sha256": "5cba43c2041487d21b38b723706c297da47249d63f72c47cbf5d8420943e616c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "債権者の代理人と称する者への弁済と478条",
+     "court": "最高裁判所第三小法廷",
+     "date": "1962-08-21",
+     "case_number": "昭和33(オ)388",
+     "holding": "債権者の代理人と称して債権を行使する者についても民法478条が適用され、債権の準占有者に対する弁済が有効とされるには弁済者の善意無過失を要する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52923/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は平成29年改正前の478条（債権の準占有者に対する弁済）のもとでのもの。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2023-minpo-q20-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

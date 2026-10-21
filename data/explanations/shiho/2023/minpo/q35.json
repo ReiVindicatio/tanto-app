@@ -1,0 +1,286 @@
+{
+ "question_id": "shiho-2023-minpo-q35",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q35-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：相続財産全部の包括受遺者がいるときは「相続人のあることが明らかでないとき」に当たらず、相続財産法人は成立しないとするのが判例である。",
+   "body": "951条は「相続人のあることが明らかでないときは、相続財産は、法人とする。」と定める。990条は「包括受遺者は、相続人と同一の権利義務を有する。」とする。判例は、遺言者に相続人は存在しないが相続財産全部の包括受遺者が存在する場合は、951条にいう相続人のあることが明らかでないときに当たらないとした。したがって、この場合には相続財産法人は成立しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "951",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続人のあることが明らかでないときは、相続財産は、法人とする。",
+     "text_sha256": "b425c1489dab527359077e8f9f2529dd33680cd23b6b1d2f7058d12a929748d3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "990",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "包括受遺者は、相続人と同一の権利義務を有する。",
+     "text_sha256": "e91e5237f4ec6d278a03cf8a200c291f40d37520f1b176414d23e7ce58119640",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "相続財産全部の包括受遺者がいる場合と相続財産法人の成否",
+     "court": "最高裁判所第二小法廷",
+     "date": "1997-09-12",
+     "case_number": "平成6(オ)2052",
+     "holding": "遺言者に相続人は存在しないが相続財産全部の包括受遺者が存在する場合は、民法951条にいう「相続人のあることが明かでないとき」に当たらない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52539/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q35-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q35-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：相続財産の清算人の代理権が消滅するのは、相続人が明らかになった時ではなく「相続人が相続の承認をした時」である。",
+   "body": "誤りは「相続人のあることが明らかになった場合には、…直ちに消滅する」の部分である。956条1項は「相続財産の清算人の代理権は、相続人が相続の承認をした時に消滅する。」と定める。したがって、相続人のあることが明らかになっただけでは清算人の代理権は消滅せず、その相続人が相続の承認をした時に消滅する。同条2項により、その場合には清算人は遅滞なく相続人に対して清算に係る計算をしなければならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "956",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続財産の清算人の代理権は、相続人が相続の承認をした時に消滅する。",
+     "text_sha256": "3b1be2531bbad81f12493faf2d8aff293dd7a2f1776e219471b0e0d7f713b497",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "956",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "相続財産の清算人は、遅滞なく相続人に対して清算に係る計算をしなければならない。",
+     "text_sha256": "3b1be2531bbad81f12493faf2d8aff293dd7a2f1776e219471b0e0d7f713b497",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q35-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q35-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：特別縁故者への相続財産の分与は、特別縁故者の「請求によって」するもので、家庭裁判所が職権ですることはできない。",
+   "body": "誤りは「職権で」の部分である。958条の2第1項は、相当と認めるときは、家庭裁判所は、被相続人と特別の縁故があった者「の請求によって、これらの者に、清算後残存すべき相続財産の全部又は一部を与えることができる。」と定める。分与は特別縁故者の請求を前提とし、同条2項は「前項の請求は、第九百五十二条第二項の期間の満了後三箇月以内にしなければならない。」と請求の期間も定めている。したがって、家庭裁判所が職権で分与することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "958_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "の請求によって、これらの者に、清算後残存すべき相続財産の全部又は一部を与えることができる。",
+     "text_sha256": "1ba7d1c21e323ff13f25a43e055a481d705fd95ab7c6427b2d31e95d6ef2bb93",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "958_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の請求は、第九百五十二条第二項の期間の満了後三箇月以内にしなければならない。",
+     "text_sha256": "1ba7d1c21e323ff13f25a43e055a481d705fd95ab7c6427b2d31e95d6ef2bb93",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q35-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q35-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判例は、被相続人の死亡前に仮登記がされていた場合を除き、相続債権者は相続財産法人に対して抵当権設定登記手続を請求できないとする。",
+   "body": "951条により、相続人のあることが明らかでないときは相続財産は法人となる。判例は、相続債権者は、被相続人から抵当権の設定を受けていても、被相続人の死亡前に仮登記がされていた場合を除き、相続財産法人に対して抵当権設定登記手続を請求することができないとした。肢では、Ａの死亡前に登記（仮登記を含む）がされていないから、Ｂは相続財産法人に対して抵当権設定登記手続を請求することができない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "951",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続人のあることが明らかでないときは、相続財産は、法人とする。",
+     "text_sha256": "b425c1489dab527359077e8f9f2529dd33680cd23b6b1d2f7058d12a929748d3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "相続財産法人に対する抵当権設定登記手続請求の可否",
+     "court": "最高裁判所第一小法廷",
+     "date": "1999-01-21",
+     "case_number": "平成10(受)5",
+     "holding": "相続債権者は、被相続人から抵当権の設定を受けていても、被相続人の死亡前に仮登記がされていた場合を除き、相続財産法人に対して抵当権設定登記手続を請求することができない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52240/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "肢の「その登記がされないうちに」を、仮登記もされていない趣旨と読んでいる"
+   ],
+   "id": "exp-shiho-2023-minpo-q35-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q35-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：相続財産の清算人には不在者の財産管理人の規定（28条）が準用され、103条の権限を超える売却には家庭裁判所の許可が要る。",
+   "body": "953条は「第二十七条から第二十九条までの規定は、前条第一項の相続財産の清算人…について準用する。」とする。準用される28条は「管理人は、第百三条に規定する権限を超える行為を必要とするときは、家庭裁判所の許可を得て、その行為をすることができる。」と定める。103条が定める権限は「保存行為」と、目的物の「性質を変えない範囲内において、その利用又は改良を目的とする行為」だけである。相続財産に属する財産の売却はこれを超える処分行為と解されているので、家庭裁判所の許可を得なければならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "953",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二十七条から第二十九条までの規定は、前条第一項の相続財産の清算人",
+     "text_sha256": "857dcec3b98615272f7a7b58658bc3c194ec2cc9c2333998b54bc70882a81939",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "953",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "について準用する。",
+     "text_sha256": "857dcec3b98615272f7a7b58658bc3c194ec2cc9c2333998b54bc70882a81939",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管理人は、第百三条に規定する権限を超える行為を必要とするときは、家庭裁判所の許可を得て、その行為をすることができる。",
+     "text_sha256": "336f497192b37d8d0477c1f0dc9f1f3cfa8413408466ee0c51e5de02c37e0a02",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保存行為",
+     "text_sha256": "bb1d43f0bd61997f7529311c9a50c263f3839eaddc372fff4dcdfb435faf7465",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "性質を変えない範囲内において、その利用又は改良を目的とする行為",
+     "text_sha256": "bb1d43f0bd61997f7529311c9a50c263f3839eaddc372fff4dcdfb435faf7465",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "売却が103条の権限を超える行為に当たるという点は解釈による"
+   ],
+   "id": "exp-shiho-2023-minpo-q35-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

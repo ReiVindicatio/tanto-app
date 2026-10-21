@@ -1,0 +1,270 @@
+{
+ "question_id": "shiho-2023-minpo-q19",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q19-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。個人根保証契約は極度額を定めなければ効力を生じず、極度額の定めには書面（電磁的記録を含む）の要件が準用される（465条の2第2項・第3項、446条2項・3項）。",
+   "body": "465条の2第2項は「個人根保証契約は、前項に規定する極度額を定めなければ、その効力を生じない。」と定める。同条3項は「第四百四十六条第二項及び第三項の規定は、個人根保証契約における第一項に規定する極度額の定めについて準用する。」とする。446条2項は「保証契約は、書面でしなければ、その効力を生じない。」とし、同条3項は電磁的記録によってされたときは書面によってされたものとみなす。したがって、極度額の定めは書面又は電磁的記録によってしなければ効力を生じず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "465_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "個人根保証契約は、前項に規定する極度額を定めなければ、その効力を生じない。",
+     "text_sha256": "80eae53990d8abc33fb0b249c9ed7e81046fec3869703d0304bf63e7c45907ce",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "465_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第四百四十六条第二項及び第三項の規定は、個人根保証契約における第一項に規定する極度額の定めについて準用する。",
+     "text_sha256": "80eae53990d8abc33fb0b249c9ed7e81046fec3869703d0304bf63e7c45907ce",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "446",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "保証契約は、書面でしなければ、その効力を生じない。",
+     "text_sha256": "e6424d2253d050b253f231250108620ef1fd1a4b00c809e69d5ad83b52a83e72",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "446",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "保証契約がその内容を記録した電磁的記録によってされたときは、その保証契約は、書面によってされたものとみなして、前項の規定を適用する。",
+     "text_sha256": "e6424d2253d050b253f231250108620ef1fd1a4b00c809e69d5ad83b52a83e72",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q19-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q19-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。元本確定期日の定めがない場合に締結の日から3年で元本確定期日となる規定（465条の3第2項）は個人貸金等根保証契約に限られ、賃料債務を主たる債務とする個人根保証契約には適用されない。",
+   "body": "465条の3第1項は、主たる債務の範囲に「金銭の貸渡し又は手形の割引を受けることによって負担する債務」（貸金等債務）が含まれる個人根保証契約を「個人貸金等根保証契約」と定義する。同条2項は「個人貸金等根保証契約において元本確定期日の定めがない場合」に、元本確定期日を「その個人貸金等根保証契約の締結の日から三年を経過する日とする」と定める。賃貸借契約に基づく賃料債務は貸金等債務に当たらないから、これだけを主たる債務とする個人根保証契約には同条2項の適用がない。したがって、元本確定期日の定めがないときに法定の期間の経過で元本が確定するとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "465_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "金銭の貸渡し又は手形の割引を受けることによって負担する債務",
+     "text_sha256": "8b2451315310858f3585e7d13a1fab4b92ace7374763c1dcb90c21a3b6f5b21a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "465_3",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "個人貸金等根保証契約において元本確定期日の定めがない場合",
+     "text_sha256": "8b2451315310858f3585e7d13a1fab4b92ace7374763c1dcb90c21a3b6f5b21a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "465_3",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その個人貸金等根保証契約の締結の日から三年を経過する日とする",
+     "text_sha256": "8b2451315310858f3585e7d13a1fab4b92ace7374763c1dcb90c21a3b6f5b21a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q19-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q19-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。保証人が死亡したときは、個人根保証契約における主たる債務の元本は確定する（465条の4第1項3号）。",
+   "body": "465条の4第1項は「次に掲げる場合には、個人根保証契約における主たる債務の元本は、確定する。」とし、3号で「主たる債務者又は保証人が死亡したとき。」を挙げる。この確定事由は個人貸金等根保証契約に限らず、個人根保証契約一般に適用される。したがって、個人根保証契約の保証人が死亡したときは主たる債務の元本が確定し、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "465_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる場合には、個人根保証契約における主たる債務の元本は、確定する。",
+     "text_sha256": "0835f04fcebdc37334b615b35fd5a510b072db9b9ac5be1521c4a3bf2cac53b7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "465_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主たる債務者又は保証人が死亡したとき。",
+     "text_sha256": "0835f04fcebdc37334b615b35fd5a510b072db9b9ac5be1521c4a3bf2cac53b7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q19-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q19-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。根保証契約の当事者は、通常、個別の債務の弁済期が到来すれば元本確定期日前でも保証債務の履行を求めることができるものとして契約していると解されている（判例）。",
+   "body": "446条1項は「保証人は、主たる債務者がその債務を履行しないときに、その履行をする責任を負う。」と定める。判例（最高裁平成24年12月14日判決）は、根保証契約を締結した当事者は、通常、主たる債務の範囲に含まれる個別の債務が発生すれば保証人がこれをその都度保証し、当該債務の弁済期が到来すれば、元本確定期日前であっても、保証人に対してその保証債務の履行を求めることができるものとして契約を締結していると解するのが合理的であるとした。したがって、元本が確定していなければ債権者は保証人に履行を求めることができないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "446",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保証人は、主たる債務者がその債務を履行しないときに、その履行をする責任を負う。",
+     "text_sha256": "e6424d2253d050b253f231250108620ef1fd1a4b00c809e69d5ad83b52a83e72",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "根保証の元本確定期日前の被保証債権の譲渡と保証債務の履行請求",
+     "court": "最高裁判所第二小法廷",
+     "date": "2012-12-14",
+     "case_number": "平成23(受)1833",
+     "holding": "根保証契約の当事者は、通常、個別の債務の弁済期が到来すれば元本確定期日前でも保証人に保証債務の履行を求めることができるものとして契約していると解するのが合理的であり、被保証債権を元本確定期日前に譲り受けた者も、別段の合意がない限り、保証人に対し保証債務の履行を求めることができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/82820/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は平成29年改正前の民法のもとでのもの。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2023-minpo-q19-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q19-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。個人根保証契約の保証人は、元本のほか主たる債務に関する利息についても極度額を限度として責任を負うから、確定した元本に確定後に発生した利息についても責任を負う（465条の2第1項）。",
+   "body": "465条の2第1項は、個人根保証契約の保証人は「主たる債務の元本、主たる債務に関する利息、違約金、損害賠償その他その債務に従たる全てのもの」等について「その全部に係る極度額を限度として、その履行をする責任を負う。」と定める。元本の確定によって保証の対象となる元本は固定されるが、その元本から生じる利息は元本確定後も発生し、これも主たる債務に関する利息として極度額の範囲で保証の対象になると解されている。したがって、確定後に発生した利息について保証人が責任を負わないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "465_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主たる債務の元本、主たる債務に関する利息、違約金、損害賠償その他その債務に従たる全てのもの",
+     "text_sha256": "80eae53990d8abc33fb0b249c9ed7e81046fec3869703d0304bf63e7c45907ce",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "465_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その全部に係る極度額を限度として、その履行をする責任を負う。",
+     "text_sha256": "80eae53990d8abc33fb0b249c9ed7e81046fec3869703d0304bf63e7c45907ce",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "元本確定後に発生した利息も極度額の範囲で保証の対象になるという点は解釈による。"
+   ],
+   "id": "exp-shiho-2023-minpo-q19-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
