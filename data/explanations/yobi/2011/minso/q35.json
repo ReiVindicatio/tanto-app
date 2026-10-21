@@ -1,0 +1,279 @@
+{
+ "question_id": "yobi-2011-minso-q35",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q35-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。訴状の不備の補正を命じるのは裁判所書記官ではなく裁判長である。",
+   "body": "誤りは「裁判所書記官がする」の部分である。137条1項は、訴状が134条2項の規定に違反する場合には「裁判長は、相当の期間を定め、その期間内に不備を補正すべきことを命じなければならない」と定めている。補正命令の主体は裁判長であり、裁判所書記官ではない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "137",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判長は、相当の期間を定め、その期間内に不備を補正すべきことを命じなければならない",
+     "text_sha256": "786703e334c5cc64bb08495e12206129d733ff46d00cf6bc908b04c63f3cf84d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "134",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "訴状には、次に掲げる事項を記載しなければならない。",
+     "text_sha256": "87595153acb3f5b3ca43ff3992f59badd340aa1c8706ae87c49fd25a97d08dc5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "裁判所書記官による補正の促し等を定める民事訴訟規則は e-Gov になく参照していない。本肢の結論は137条1項で決まる。"
+   ],
+   "id": "exp-yobi-2011-minso-q35-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q35-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。補正できない不適法な訴えを却下するのは裁判長の命令ではなく、裁判所の判決である。",
+   "body": "誤りは「裁判長は，直ちに訴えを却下することができる」の部分である。140条は、訴えが不適法でその不備を補正することができないときは「裁判所は、口頭弁論を経ないで、判決で、訴えを却下することができる」と定める。裁判長が命令でできるのは、137条2項のとおり、134条2項の不備を原告が補正しないときに「訴状を却下」することであり、訴えそのものの却下ではない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "140",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴えが不適法でその不備を補正することができないときは、裁判所は、口頭弁論を経ないで、判決で、訴えを却下することができる。",
+     "text_sha256": "537fdea8a1ce2774370c01c05702c4146ce1bb3e206dca3bca7f2a32f0057d88",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "137",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の場合において、原告が不備を補正しないときは、裁判長は、命令で、訴状を却下しなければならない。",
+     "text_sha256": "786703e334c5cc64bb08495e12206129d733ff46d00cf6bc908b04c63f3cf84d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "134",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "訴状には、次に掲げる事項を記載しなければならない。",
+     "text_sha256": "87595153acb3f5b3ca43ff3992f59badd340aa1c8706ae87c49fd25a97d08dc5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-minso-q35-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q35-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。訴状が却下されて権利が確定しないまま終わった場合には、時効の中断（現行法の「更新」）の効力は生じない。",
+   "body": "誤りは「時効中断の効力が生ずる」の部分である。現行の民法147条2項は、時効が新たにその進行を始める（更新）のは「確定判決又は確定判決と同一の効力を有するものによって権利が確定したとき」に限っている。訴状が137条2項により却下された場合は、権利が確定することなく手続が終わるので、この効力は生じない。民法147条1項によれば、この場合も「その終了の時から六箇月を経過する」までの間は時効が完成しないにとどまると解されている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "147",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "確定判決又は確定判決と同一の効力を有するものによって権利が確定したとき",
+     "text_sha256": "3137736c35f135564d0162881d4fffef7103e15e30ac5aaa61cc08bfef94449c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "147",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その終了の時から六箇月を経過する",
+     "text_sha256": "3137736c35f135564d0162881d4fffef7103e15e30ac5aaa61cc08bfef94449c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "137",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判長は、命令で、訴状を却下しなければならない。",
+     "text_sha256": "786703e334c5cc64bb08495e12206129d733ff46d00cf6bc908b04c63f3cf84d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "出題当時（平成23年）は時効の「中断」の制度で、その後の民法改正で「完成猶予」「更新」に改められた。改正前の内容は条文の本文で確認していない。",
+    "訴状却下の場合に民法147条1項の完成猶予が及ぶかは解釈による。"
+   ],
+   "id": "exp-yobi-2011-minso-q35-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q35-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。訴状審査の対象は134条2項の記載事項であり、立証方法の記載はこれに含まれない。",
+   "body": "誤りは「立証方法に関する記載も，訴状審査の対象となる」の部分である。137条1項の訴状審査は、訴状が「第百三十四条第二項の規定に違反する場合」に補正を命じるものである。134条2項が訴状の必要的記載事項として掲げるのは「当事者及び法定代理人」と「請求の趣旨及び原因」であり、立証方法は含まれていない。したがって立証方法の記載は訴状審査の対象とならず、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "137",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴状が第百三十四条第二項の規定に違反する場合には",
+     "text_sha256": "786703e334c5cc64bb08495e12206129d733ff46d00cf6bc908b04c63f3cf84d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "134",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "訴状には、次に掲げる事項を記載しなければならない。",
+     "text_sha256": "87595153acb3f5b3ca43ff3992f59badd340aa1c8706ae87c49fd25a97d08dc5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "立証方法の記載について定める民事訴訟規則は e-Gov になく参照していない。本肢の結論は137条1項・134条2項で決まる。"
+   ],
+   "id": "exp-yobi-2011-minso-q35-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q35-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。法人の代表者は法定代理人に準じて扱われ、その記載は134条2項の記載事項として訴状審査の対象となる。",
+   "body": "134条2項は訴状に「当事者及び法定代理人」を記載しなければならないと定める。37条は、法定代理及び法定代理人に関する規定を「法人の代表者」について準用するので、当事者が法人のときは代表者の記載が必要となる。137条1項の訴状審査は「第百三十四条第二項の規定に違反する場合」を対象とするから、代表者の記載があるかどうかも審査の対象となる。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "134",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "訴状には、次に掲げる事項を記載しなければならない。",
+     "text_sha256": "87595153acb3f5b3ca43ff3992f59badd340aa1c8706ae87c49fd25a97d08dc5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この法律中法定代理及び法定代理人に関する規定は、法人の代表者",
+     "text_sha256": "e6d8d2ca416fb7b1ba4c7f0fc2a371d1aa7519a48c8c824289bf8e64948ffb13",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "137",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴状が第百三十四条第二項の規定に違反する場合には",
+     "text_sha256": "786703e334c5cc64bb08495e12206129d733ff46d00cf6bc908b04c63f3cf84d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-minso-q35-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

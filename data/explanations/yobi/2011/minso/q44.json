@@ -1,0 +1,200 @@
+{
+ "question_id": "yobi-2011-minso-q44",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q44-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。請求全部棄却の判決を得たＹは全部勝訴しており、判決理由（貸付けの事実の認定）に不服があるだけでは控訴の利益はない。",
+   "body": "控訴の利益の有無は、原審における当事者の申立てと判決主文とを比べて、判決が申立てより不利かどうかで判断すると解されている（形式的不服説）。Ｙは請求棄却の判決を求め、第一審は請求を全部棄却したので、主文の上ではＹは全部勝訴している。民事訴訟法114条1項は「確定判決は、主文に包含するものに限り、既判力を有する。」と定めており、理由中で貸付けの事実が認定されても、その判断に既判力は生じない。したがって、貸付けの事実を認めたことを不服とするだけでは控訴の利益はなく（判例あり（要確認））、控訴できるとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "114",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決は、主文に包含するものに限り、既判力を有する。",
+     "text_sha256": "c610c3ea296754d118ee0a863f99ac7ec29d49374742fb66d08e479e8b66173b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "全部勝訴した当事者が判決理由に不服があることを理由に控訴する利益の有無",
+     "searched": [
+      "courts.py search 控訴の利益 判決理由",
+      "courts.py search 控訴 不服 判決理由 --from 昭和25 --to 昭和35（2000件超で検索できず）",
+      "courts.py search 全部勝訴 控訴 --from 昭和25 --to 昭和40"
+     ]
+    }
+   ],
+   "notes": [
+    "形式的不服説による説明は解釈による"
+   ],
+   "id": "exp-yobi-2011-minso-q44-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q44-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。全部認容判決を得たＸには控訴の利益がなく、請求の拡張だけを目的として控訴することはできない。",
+   "body": "控訴の利益は、原審での申立てと判決主文を比べて判決が申立てより不利な場合に認められると解されている。Ｘは400万円の支払を求めて全部認容の判決を得ているので、主文の上で不利な点はなく、控訴の利益はない。また、Ｘは1000万円の貸金債権のうち400万円であることを明示して訴求しているから、民事訴訟法114条1項が「確定判決は、主文に包含するものに限り、既判力を有する。」と定めるとおり、既判力は訴求した400万円の部分に限られると解され、残部は別訴で請求する余地がある。したがって、請求を拡張するために控訴することができるとする本肢は誤り（控訴審で相手方が控訴したときに附帯控訴の方式で拡張することは別論である。肢4参照）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "114",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決は、主文に包含するものに限り、既判力を有する。",
+     "text_sha256": "c610c3ea296754d118ee0a863f99ac7ec29d49374742fb66d08e479e8b66173b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "控訴の利益の判断基準・明示的一部請求の既判力の範囲は解釈による（判例は courts.py で確かめていない）"
+   ],
+   "id": "exp-yobi-2011-minso-q44-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q44-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。相殺の抗弁を認めた請求棄却判決は、自働債権の不存在について既判力を生じるので、Ｙには控訴の利益がある。",
+   "body": "民事訴訟法114条2項は「相殺のために主張した請求の成立又は不成立の判断は、相殺をもって対抗した額について既判力を有する。」と定める。第一審が相殺を理由に請求を棄却すると、Ｙの自働債権は相殺に供した額について消滅したことが既判力をもって確定し、Ｙは自働債権を失う不利益を受ける。そのため、主文は請求棄却であっても、Ｙは、貸付けの事実の否認や消滅時効といった他の理由による請求棄却を求めて控訴する利益があると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "114",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "相殺のために主張した請求の成立又は不成立の判断は、相殺をもって対抗した額について既判力を有する。",
+     "text_sha256": "c610c3ea296754d118ee0a863f99ac7ec29d49374742fb66d08e479e8b66173b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "相殺を理由とする請求棄却判決に対する被告の控訴の利益は解釈による（判例は courts.py で確かめていない）"
+   ],
+   "id": "exp-yobi-2011-minso-q44-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q44-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。第一審で全部勝訴した原告も、控訴審において附帯控訴の方式により請求を拡張することができるとするのが判例である。",
+   "body": "民事訴訟法293条1項は「被控訴人は、控訴権が消滅した後であっても、口頭弁論の終結に至るまで、附帯控訴をすることができる。」と定める。判例（最高裁昭和32年12月13日判決）は、第一審において全部勝訴の判決を得た原告も、控訴審において、附帯控訴の方式により請求の拡張をなし得るとした。附帯控訴は相手方の控訴によって開始された控訴審の審判の範囲を被控訴人に有利に拡げる申立てであり、独立の控訴の利益は要しないと解されている。したがって、Ｙの控訴に対し、Ｘが附帯控訴の方式で請求を1000万円に拡張することができるとする本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "293",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被控訴人は、控訴権が消滅した後であっても、口頭弁論の終結に至るまで、附帯控訴をすることができる。",
+     "text_sha256": "d25ec1bae5b0d874dba05ee9c9dfe73ece27f84491c7852470fe419bc2cbbb38",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "全部勝訴の原告による附帯控訴の方式での請求の拡張",
+     "court": "最高裁判所第一小法廷",
+     "date": "1957-12-13",
+     "case_number": "昭和31(オ)910",
+     "holding": "第一審において全部勝訴の判決を得た原告も、控訴審において、附帯控訴の方式により請求の拡張をなし得る。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57671/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "附帯控訴に控訴の利益を要しないとの説明は解釈による"
+   ],
+   "id": "exp-yobi-2011-minso-q44-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q44-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。訴訟費用の負担の裁判に対しては、独立して控訴をすることができない。",
+   "body": "民事訴訟法282条は「訴訟費用の負担の裁判に対しては、独立して控訴をすることができない。」と定める。本肢では、Ｘの請求は全部認容されており、Ｘが不服とするのは訴訟費用の一部をＸの負担とした部分だけである。本案について不服がないのに訴訟費用の負担の裁判だけを不服として控訴することは、まさに独立して控訴することにあたる。したがって、控訴することができるとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "282",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟費用の負担の裁判に対しては、独立して控訴をすることができない。",
+     "text_sha256": "8312bdd7f54089fedc4eb400056a61f56bc88166658459e159524a44d27c5e76",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-minso-q44-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,337 @@
+{
+ "question_id": "yobi-2011-minso-q32",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q32-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。Z1とZ2は通常共同訴訟の関係にあり、Z1の死亡による中断はZ2との関係には及ばない。",
+   "body": "ポイントは、Z1・Z2の共同訴訟が通常共同訴訟か必要的共同訴訟かである。貸金債務の共同相続人を相手とする訴訟は、各相続人に対する請求を合一に確定する必要がなく、通常共同訴訟と解されている。民事訴訟法124条1項は「当事者の死亡」を中断事由とするので（同項1号）、訴訟代理人のいないZ1の死亡により、Z1との関係の訴訟手続は中断する。しかし通常共同訴訟では、民事訴訟法39条により「共同訴訟人の一人について生じた事項は、他の共同訴訟人に影響を及ぼさない」。全員について中断の効力を生じさせる民事訴訟法40条3項は、合一確定が必要な場合の規定であり、ここでは使われない。したがってZ2との関係では訴訟手続は中断せず、記述は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の死亡",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共同訴訟人の一人について生じた事項は、他の共同訴訟人に影響を及ぼさない",
+     "text_sha256": "ccf55fe5cf58e00bab9c99d303d2932ec7030afe5d3235552e147aee82265722",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "40",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "共同訴訟人の一人について訴訟手続の中断又は中止の原因があるときは、その中断又は中止は、全員についてその効力を生ずる",
+     "text_sha256": "e30ac9c758c214d9d263d1c4c536115f7a710d36c1819a14c024a0dfb969c560",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "貸金債務の共同相続人に対する訴訟を通常共同訴訟とする点は解釈による"
+   ],
+   "id": "exp-yobi-2011-minso-q32-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q32-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。第三者が提起する婚姻取消しの訴えは夫婦双方を被告とする固有必要的共同訴訟であり、弁論を分離できない。",
+   "body": "ポイントは、この訴訟が合一確定を要する必要的共同訴訟かどうかである。人事訴訟法12条2項は、身分関係の当事者以外の者が提起する人事に関する訴えについて「当該身分関係の当事者の双方を被告とし」と定めるので、XはYとZの双方を被告としなければならない。婚姻が取り消されるかどうかはYとZについて区々に決めることができないから、この訴訟は民事訴訟法40条1項の「訴訟の目的が共同訴訟人の全員について合一にのみ確定すべき場合」に当たる固有必要的共同訴訟と解されている。裁判所は民事訴訟法152条1項により口頭弁論の分離を命じることができるのが原則だが、合一確定が必要な訴訟で弁論を分離すると判決が別々になり合一確定ができなくなるため、分離はできないと解されている。したがって記述は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "12",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該身分関係の当事者の双方を被告とし",
+     "text_sha256": "6c20a0cd84a210ba2ed2e9f546f68a56f6a0c3906164d75ef63531f7d56ea18f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "40",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の目的が共同訴訟人の全員について合一にのみ確定すべき場合",
+     "text_sha256": "e30ac9c758c214d9d263d1c4c536115f7a710d36c1819a14c024a0dfb969c560",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "152",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、口頭弁論の制限、分離若しくは併合を命じ、又はその命令を取り消すことができる。",
+     "text_sha256": "74834647179093104683e38a31ecd5ab334facb65e937f26a01190810707b950",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "固有必要的共同訴訟であること、その場合に弁論を分離できないことは解釈による"
+   ],
+   "id": "exp-yobi-2011-minso-q32-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q32-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。同時審判の申出がある共同訴訟も通常共同訴訟であり、Zだけがした請求の認諾も効力を生じる。",
+   "body": "ポイントは、同時審判の申出（民事訴訟法41条）が共同訴訟人の訴訟行為の効力にまで影響するかである。民事訴訟法41条1項は、共同被告に対する権利が「法律上併存し得ない関係にある場合」に原告の申出があれば「弁論及び裁判は、分離しないでしなければならない」と定めるだけで、民事訴訟法40条を準用していない。そのため、この共同訴訟も通常共同訴訟であり、民事訴訟法39条により「共同訴訟人の一人の訴訟行為」は「他の共同訴訟人に影響を及ぼさない」と解されている。Zは自分に対する損害賠償請求について単独で処分でき、Zだけが請求を認諾すれば、Zに対する請求について認諾の効力が生じる。したがって「その効力を生じない」とする記述は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "41",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律上併存し得ない関係にある場合",
+     "text_sha256": "ff22f23ac6b53066840c29a2924b312d95b122c6aa85acf323652c457ecca86a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "41",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁論及び裁判は、分離しないでしなければならない",
+     "text_sha256": "ff22f23ac6b53066840c29a2924b312d95b122c6aa85acf323652c457ecca86a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共同訴訟人の一人の訴訟行為",
+     "text_sha256": "ccf55fe5cf58e00bab9c99d303d2932ec7030afe5d3235552e147aee82265722",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の共同訴訟人に影響を及ぼさない",
+     "text_sha256": "ccf55fe5cf58e00bab9c99d303d2932ec7030afe5d3235552e147aee82265722",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "40",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の目的が共同訴訟人の全員について合一にのみ確定すべき場合には、その一人の訴訟行為は、全員の利益においてのみその効力を生ずる。",
+     "text_sha256": "e30ac9c758c214d9d263d1c4c536115f7a710d36c1819a14c024a0dfb969c560",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "同時審判申出共同訴訟に共同訴訟人独立の原則が及ぶ点は解釈による"
+   ],
+   "id": "exp-yobi-2011-minso-q32-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q32-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。独立当事者参加には民事訴訟法40条1項から3項までが準用され、Yの自白は他の当事者に不利益でない限り全員との関係で効力を生じる。",
+   "body": "ポイントは、Zの参加が独立当事者参加であり、民事訴訟法40条の規律が及ぶことである。訴訟の係属中に訴訟の目的である権利を譲り受けたと主張する者は、民事訴訟法47条1項の規定により参加することができ（民事訴訟法49条1項参照）、民事訴訟法47条4項は「第四十条第一項から第三項までの規定」を参加後の訴訟の当事者と参加人に準用する。そのため、ある当事者の訴訟行為は、他の当事者の不利益にならない限りで、三者間で合一に効力を生じると解されている。Yが甲土地を占有している事実は、Yに明渡しを求めるXとZのいずれにとっても有利な事実であり、Yの自白はXの不利益にならない。したがって、YがZとの関係で占有を認めれば、Xとの関係でも同じ事実を認めたものとして扱われ、記述は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "47",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の目的の全部若しくは一部が自己の権利であることを主張する第三者は、その訴訟の当事者の双方又は一方を相手方として、当事者としてその訴訟に参加することができる。",
+     "text_sha256": "eabfcfd2afc146ac9b32a0de3c3390a3c5eb44d5e313f0c34165494a7daadc48",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "47",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "第四十条第一項から第三項までの規定",
+     "text_sha256": "eabfcfd2afc146ac9b32a0de3c3390a3c5eb44d5e313f0c34165494a7daadc48",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "49",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の係属中その訴訟の目的である権利の全部又は一部を譲り受けたことを主張する者が第四十七条第一項の規定により訴訟参加をしたときは",
+     "text_sha256": "49102ea9f5a061c7442cd888327a9131284276d9f8ab647b6beacbac3389a96a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "40",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その一人の訴訟行為は、全員の利益においてのみその効力を生ずる",
+     "text_sha256": "e30ac9c758c214d9d263d1c4c536115f7a710d36c1819a14c024a0dfb969c560",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "独立当事者参加で、他の当事者の不利益にならない訴訟行為が三者間で効力を生じるとする点は解釈による"
+   ],
+   "id": "exp-yobi-2011-minso-q32-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q32-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。共同不法行為者を共同被告とする訴訟は通常共同訴訟であり、Y1の控訴はY2に対する部分の確定を遮断しない。",
+   "body": "ポイントは、Y1とY2の共同訴訟が通常共同訴訟であることである。共同不法行為に基づく損害賠償請求は、各被告ごとに勝敗が分かれても差し支えなく、Y1・Y2を共同被告とする訴訟は通常共同訴訟と解されている。通常共同訴訟では、民事訴訟法39条により「共同訴訟人の一人の訴訟行為」は「他の共同訴訟人に影響を及ぼさない」ので、Y1の控訴の効果はY2に対する請求の部分には及ばない。民事訴訟法116条2項は、判決の確定は期間内にした「控訴の提起」により遮断されると定めるが、Y2に対する部分については誰も控訴していないから、控訴期間の満了により確定する。したがって、全体が移審し、Y2に対する部分も確定が遮断されるとする記述は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共同訴訟人の一人の訴訟行為",
+     "text_sha256": "ccf55fe5cf58e00bab9c99d303d2932ec7030afe5d3235552e147aee82265722",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の共同訴訟人に影響を及ぼさない",
+     "text_sha256": "ccf55fe5cf58e00bab9c99d303d2932ec7030afe5d3235552e147aee82265722",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "116",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "控訴の提起",
+     "text_sha256": "2f4805e20cbe72aa5a66d2d569fcdf1844516479e5e09798a5c07bf467d93a6c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "共同不法行為者を共同被告とする訴訟を通常共同訴訟とする点は解釈による"
+   ],
+   "id": "exp-yobi-2011-minso-q32-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

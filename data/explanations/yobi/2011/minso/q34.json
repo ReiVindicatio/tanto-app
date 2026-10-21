@@ -1,0 +1,228 @@
+{
+ "question_id": "yobi-2011-minso-q34",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q34-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判決書の必要的記載事項は「当事者及び法定代理人」であり、訴訟代理人は含まれない。",
+   "body": "ポイントは、判決書に必ず記載すべき事項に訴訟代理人が入っているかである。現行の民事訴訟法252条1項は、判決の言渡しをするときに作成する電子判決書に記録すべき事項として、主文・事実・理由・口頭弁論の終結の日のほか「当事者及び法定代理人」と「裁判所」を挙げている（同項5号・6号）。訴訟代理人はここに挙げられていない。したがって、法定代理人は必要的記載事項であるが訴訟代理人はそうではないとする記述は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "252",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者及び法定代理人",
+     "text_sha256": "c59c922b5f4db6cb2aafee0f311576768e4cf1ca9ec07cd494faeb73a66320c3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "252",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所",
+     "text_sha256": "c59c922b5f4db6cb2aafee0f311576768e4cf1ca9ec07cd494faeb73a66320c3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行法では判決書が電子判決書（252条）に改められている。出題当時の判決書の規定（条番号・文言）は条文の本文で確認していない（改正前の内容は条文の本文で確認していない）"
+   ],
+   "id": "exp-yobi-2011-minso-q34-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q34-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。当事者による取消し・更正の規定は訴訟代理人の事実に関する陳述についてのものであり、法定代理人には当てはまらない。",
+   "body": "ポイントは、当事者による更正の規定（民事訴訟法57条）が法定代理人にも及ぶかである。民事訴訟法57条は「訴訟代理人の事実に関する陳述は、当事者が直ちに取り消し、又は更正したときは、その効力を生じない。」と定め、対象を訴訟代理人に限っている。法定代理人は、訴訟能力を欠く本人に代わって訴訟を追行する者であり、本人が法定代理人の陳述を取り消して効力を失わせることはできないと解されている。したがって、法定代理人の陳述についても当事者が直ちに取り消せば効力を生じないとする部分が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "57",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟代理人の事実に関する陳述は、当事者が直ちに取り消し、又は更正したときは、その効力を生じない。",
+     "text_sha256": "60dd2e1624bb0b2476424d6276c635884b11b4318d52b100c9dd5c1d2b5c5e80",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "法定代理人の陳述に57条が及ばない理由づけは解釈による"
+   ],
+   "id": "exp-yobi-2011-minso-q34-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q34-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。共同して代理権を行う法定代理人が数人ある場合も、訴訟代理人が数人ある場合も、送達はその一人にすれば足りる。",
+   "body": "ポイントは、代理人が複数いるときの送達の名宛人である。法定代理人については、民事訴訟法99条2項が「数人が共同して代理権を行うべき場合には、送達は、その一人にすれば足りる。」と定めている。訴訟代理人については、民事訴訟法56条1項が「訴訟代理人が数人あるときは、各自当事者を代理する。」と定めるので、そのうちの一人に送達すれば当事者に対する送達として足りると解されている。したがって記述は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "99",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "数人が共同して代理権を行うべき場合には、送達は、その一人にすれば足りる。",
+     "text_sha256": "89e696d29e353ecde006fabd53c9f17ea59a39264b13b28a5cffe1db89d32898",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "56",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟代理人が数人あるときは、各自当事者を代理する。",
+     "text_sha256": "6555d2f868e1f0d155d66d2c091b004fcb1227f8974c77fc22a584961a7c935b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行法の99条2項で説明した。出題当時の送達の規定（条番号・文言）は条文の本文で確認していない（改正前の内容は条文の本文で確認していない）",
+    "訴訟代理人が数人ある場合に一人への送達で足りる点は解釈による"
+   ],
+   "id": "exp-yobi-2011-minso-q34-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q34-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。法定代理人の死亡は中断事由だが、訴訟代理人の死亡は中断事由ではない。",
+   "body": "ポイントは、訴訟代理人の死亡が中断事由に挙げられているかである。民事訴訟法124条1項3号は「法定代理人の死亡若しくは代理権の消滅」を中断事由として挙げている（なお、同条2項により、訴訟代理人がある間は中断しない）。これに対し、訴訟代理人の死亡は同条1項のどの号にも挙げられておらず、当事者本人が訴訟を追行できるので、訴訟手続は中断しない。したがって、訴訟代理人が死亡した場合も中断するとする部分が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法定代理人の死亡若しくは代理権の消滅",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "124",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、訴訟代理人がある間は、適用しない。",
+     "text_sha256": "18e0eed2e86785505fcb978d3ea1680e546d107dc7b1e5f80db162b58f20f4c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-minso-q34-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q34-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。当事者を代表する法定代理人は当事者本人の尋問の規定により尋問されるので証人にはなれないが、訴訟代理人は第三者として証人になれる。",
+   "body": "ポイントは、法定代理人と訴訟代理人が証人として扱われるかどうかである。民事訴訟法211条は「この法律中当事者本人の尋問に関する規定は、訴訟において当事者を代表する法定代理人について準用する。」と定めており、法定代理人は当事者に準じて当事者尋問の方法で尋問されるため、証人にはなれないと解されている。他方、民事訴訟法190条は「何人でも証人として尋問することができる」と定め、訴訟代理人は当事者本人ではないから、この原則どおり証人となることができると解されている。したがって記述は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "211",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この法律中当事者本人の尋問に関する規定は、訴訟において当事者を代表する法定代理人について準用する。",
+     "text_sha256": "c76fff68e36244e71b1f935fb17ee3d1483ad135a92da4d229ce305c67ae5dbe",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "190",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "何人でも証人として尋問することができる",
+     "text_sha256": "81b6a86523cc708d4e11ffca0c1b5e26fa468b0663976e93e2498836de57893a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "法定代理人が証人になれず訴訟代理人が証人になれるとする点は解釈による"
+   ],
+   "id": "exp-yobi-2011-minso-q34-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,254 @@
+{
+ "question_id": "yobi-2011-shoho-q29",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q29-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：金額の記載に差異があっても手形は無効とならず、手形法6条の基準で手形金額が決まる。",
+   "body": "誤りは、二つの異なる金額を記載した手形を無効とした部分である。手形法6条1項は「為替手形ノ金額ヲ文字及数字ヲ以テ記載シタル場合ニ於テ其ノ金額ニ差異アルトキハ文字ヲ以テ記載シタル金額ヲ手形金額トス」とし、同条2項は文字又は数字で重複して記載した場合に差異があるときは「最小金額ヲ手形金額トス」と定める。この規定は、手形法77条2項により「支払金額ニ関スル記載ノ差異（第六条）」として約束手形に準用される。したがって、金額の記載に差異があっても手形は無効とはならず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "為替手形ノ金額ヲ文字及数字ヲ以テ記載シタル場合ニ於テ其ノ金額ニ差異アルトキハ文字ヲ以テ記載シタル金額ヲ手形金額トス",
+     "text_sha256": "f290dc114aba15b3ebce435f5353dd57593eb464bc440d5985b980d900aec391",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "6",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "最小金額ヲ手形金額トス",
+     "text_sha256": "f290dc114aba15b3ebce435f5353dd57593eb464bc440d5985b980d900aec391",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "支払金額ニ関スル記載ノ差異（第六条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q29-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q29-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：確定日払の手形に利息の約定を記載しても、その記載がないものとみなされるだけで、手形は無効とならない。",
+   "body": "誤りは、利息の約定の記載によって手形が無効になるとした部分である。手形法5条1項は、一覧払又は一覧後定期払の手形では利息の約定を記載できるとしたうえで、「其ノ他ノ為替手形ニ於テハ此ノ約定ノ記載ハ之ヲ為サザルモノト看做ス」と定める。この規定は、手形法77条2項により「利息ノ約定（第五条）」として約束手形に準用される。確定日払の手形は一覧払にも一覧後定期払にも当たらないから、利息の約定の記載がないものとみなされるにとどまり、手形自体は無効とならない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "其ノ他ノ為替手形ニ於テハ此ノ約定ノ記載ハ之ヲ為サザルモノト看做ス",
+     "text_sha256": "78903da6fdcf82624b6b86282722b1fca26adc1544d07745b6062b207dfc7392",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "利息ノ約定（第五条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q29-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q29-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例は、平年の2月29日を満期とする記載を2月末日を満期とする趣旨と解しており、手形は無効とならない。",
+   "body": "誤りは、平年の2月29日を満期とした手形を無効とした部分である。約束手形には手形法75条3号の「満期ノ表示」が必要であるが、最判昭和44年3月4日は、平年における2月29日を満期とする手形の記載は、2月末日を満期として記載した趣旨と解するのが相当であるとした。したがって、満期の記載は有効なものと扱われ、手形は無効とならないから、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "75",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "満期ノ表示",
+     "text_sha256": "efb7e65358b3e7892f2e6af4e776b3fe10f53557d3694d6a5b88c5a731af2849",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "平年の2月29日を満期とする手形の記載",
+     "court": "最高裁判所第三小法廷",
+     "date": "1969-03-04",
+     "case_number": "昭和43(オ)1079",
+     "holding": "平年における二月二九日を満期とする手形の記載は、二月末日を満期として記載した趣旨と解するのが相当である。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55095/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q29-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q29-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：分割払の手形は、総額が確定していても無効である。",
+   "body": "誤りは、総額が確定していれば分割払の手形も無効とならないとした部分である。手形法33条2項は「前項ト異ル満期又ハ分割払ノ為替手形ハ之ヲ無効トス」と定め、この規定は手形法77条1項2号により「満期（第三十三条乃至第三十七条）」として約束手形に準用される。毎月末に一定金額ずつ支払う旨の記載は分割払の記載であり、総額が確定しているかどうかにかかわらず、その手形は無効となる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "33",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項ト異ル満期又ハ分割払ノ為替手形ハ之ヲ無効トス",
+     "text_sha256": "c39847188434ab26df5af262e1695207c7c7654751fff547111480f48566835d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "満期（第三十三条乃至第三十七条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q29-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q29-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：満期の記載のない約束手形は一覧払のものとみなされ、無効とはならない。",
+   "body": "決め手は、満期の記載を欠く場合の救済規定である。手形法76条1項は、75条に掲げる事項のいずれかを欠く証券は約束手形としての効力を有しないとしつつ、「但シ次ノ数項ニ規定スル場合ハ此ノ限ニ在ラズ」とする。そして同条2項は「満期ノ記載ナキ約束手形ハ之ヲ一覧払ノモノト看做ス」と定める。したがって、満期の記載がなくても手形は無効とはならず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "76",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "但シ次ノ数項ニ規定スル場合ハ此ノ限ニ在ラズ",
+     "text_sha256": "f71647e4042448065f9f3d8b815ed61337c324a82f83d7211bdd91618f6df0e3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "76",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "満期ノ記載ナキ約束手形ハ之ヲ一覧払ノモノト看做ス",
+     "text_sha256": "f71647e4042448065f9f3d8b815ed61337c324a82f83d7211bdd91618f6df0e3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "75",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "約束手形ニハ左ノ事項ヲ記載スベシ",
+     "text_sha256": "efb7e65358b3e7892f2e6af4e776b3fe10f53557d3694d6a5b88c5a731af2849",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q29-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

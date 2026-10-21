@@ -1,0 +1,298 @@
+{
+ "question_id": "yobi-2011-shoho-q30",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q30-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：権限のない丙による受取人の記載の抹消は手形の変造であり、手形が白地手形になるわけではない。",
+   "body": "誤りは、権限のない者による抹消で手形が白地手形になるとした部分である。白地手形は、手形法10条が「未完成ニテ振出シタル為替手形」と表現するように、振出人が後に補充させる意思で要件を欠いたまま振り出した手形をいうと解されており、同条は手形法77条2項の「白地為替手形（第十条）」として約束手形に準用される。本問の甲は受取人乙を記載した完成した手形を振り出しており、丙が甲及び乙の同意なく受取人の記載を抹消したことは、権限なく手形の文言を変更する変造に当たると解されている。変造の効果は、手形法77条1項7号により準用される69条が「変造前ノ署名者ハ原文言ニ従ヒテ責任ヲ負フ」と定めるとおりであり、手形が白地手形に変わるのではない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "10",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未完成ニテ振出シタル為替手形",
+     "text_sha256": "a734adf9cada4dcac2a15bd253eea9abdb6e00c7c9e57ee61288f56fb5c4f174",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "白地為替手形（第十条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "変造（第六十九条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "69",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "変造前ノ署名者ハ原文言ニ従ヒテ責任ヲ負フ",
+     "text_sha256": "7aad3a3f56b5c0af86619967512d3548d41eca5e410b071007d5a7a7461c6520",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "白地手形の意義と、権限のない抹消が変造に当たることは解釈による。"
+   ],
+   "id": "exp-yobi-2011-shoho-q30-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q30-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：変造前の署名者である甲は原文言に従って責任を負うから、甲の手形金支払義務は消滅しない。",
+   "body": "決め手は、変造前の署名者の責任を定める手形法69条である。丙による受取人の記載の抹消は変造に当たると解されており、手形法77条1項7号により約束手形に準用される69条は「変造前ノ署名者ハ原文言ニ従ヒテ責任ヲ負フ」と定める。甲は変造前に振出人として署名した者であるから、受取人を乙とする原文言に従って手形金を支払う義務を負い続ける。したがって、甲の義務は丙の抹消によって消滅せず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "69",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "変造前ノ署名者ハ原文言ニ従ヒテ責任ヲ負フ",
+     "text_sha256": "7aad3a3f56b5c0af86619967512d3548d41eca5e410b071007d5a7a7461c6520",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "変造（第六十九条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "権限のない抹消が変造に当たることは解釈による。"
+   ],
+   "id": "exp-yobi-2011-shoho-q30-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q30-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：甲は受取人を乙とする原文言に従って責任を負うにとどまり、手形を預かっただけで自ら受取人欄を書き換えた丙に対しては手形金支払義務を負わない。",
+   "body": "決め手は、変造前の署名者である甲は原文言に従ってのみ責任を負うことである。手形法77条1項7号により準用される69条は「変造前ノ署名者ハ原文言ニ従ヒテ責任ヲ負フ」と定めるから、甲が負うのは受取人を乙とする手形の振出人としての責任である。丙は乙から手形を預かったにすぎず、乙から裏書を受けたわけでもないから、原文言のもとでは手形上の権利者ではない。最判昭和49年12月24日は、受取人欄が変造された場合でも、変造後の受取人から所持人へ順次連続した裏書の記載があれば、所持人は振出人に対する関係でも適法な所持人と推定されるとしたが、これは推定であって、丙が自ら受取人欄を書き換えた無権利者である本問では、甲は丙への支払を拒むことができると解される。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "69",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "変造前ノ署名者ハ原文言ニ従ヒテ責任ヲ負フ",
+     "text_sha256": "7aad3a3f56b5c0af86619967512d3548d41eca5e410b071007d5a7a7461c6520",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "変造（第六十九条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "16",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "為替手形ノ占有者ガ裏書ノ連続ニ依リ其ノ権利ヲ証明スルトキハ之ヲ適法ノ所持人ト看做ス",
+     "text_sha256": "59a3210e92d16480e70161c0e6931c254b54c90d274659c590b01308760831a7",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "受取人欄の変造と裏書の連続による資格授与",
+     "court": "最高裁判所第三小法廷",
+     "date": "1974-12-24",
+     "case_number": "昭和48(オ)931",
+     "holding": "約束手形の受取人欄が変造された場合であっても、手形面上変造後の受取人から現在の所持人へ順次連続した裏書の記載があるときは、所持人は、振出人に対する関係においても手形法77条1項1号、16条1項により適法な所持人と推定される。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55146/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "推定が覆り、甲が無権利者の丙への支払を拒めるとする点は解釈による（判例の裁判要旨は推定の点のみ）。"
+   ],
+   "id": "exp-yobi-2011-shoho-q30-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q30-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：変造後に裏書した丙は変造後の文言に従って責任を負い、無担保裏書でなければ裏書人として担保責任を負うから、丙に対する遡求権が発生する。",
+   "body": "決め手は、変造後の署名者の責任と裏書人の担保責任である。手形法77条1項7号により準用される69条は「其ノ変造後ノ署名者ハ変造シタル文言ニ従ヒテ責任ヲ負ヒ」と定めるから、受取人欄に自己の名前を記載した後に裏書をした丙は、変造後の文言に従って責任を負う。そして、手形法77条1項1号により準用される15条1項は「裏書人ハ反対ノ文言ナキ限リ引受及支払ヲ担保ス」と定める。無担保裏書でない以上、丙は裏書人として支払を担保する責任を負うから、丁は丙に対して遡求することができる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "69",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "其ノ変造後ノ署名者ハ変造シタル文言ニ従ヒテ責任ヲ負ヒ",
+     "text_sha256": "7aad3a3f56b5c0af86619967512d3548d41eca5e410b071007d5a7a7461c6520",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "15",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裏書人ハ反対ノ文言ナキ限リ引受及支払ヲ担保ス",
+     "text_sha256": "4eef68bd6502e8d5a2484169d6653c934365f909e9d483401c4e4e6df99d3ff5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裏書（第十一条乃至第二十条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "変造（第六十九条）",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q30-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q30-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：利得償還請求権は手形上の権利を有していた所持人に認められるものであり、手形を預かっただけの無権利者である丙は取得しない。",
+   "body": "誤りは、丙が利得償還請求権を取得するとした部分である。手形法85条は「為替手形又ハ約束手形ヨリ生ジタル権利ガ手続ノ欠缺又ハ時効ニ因リテ消滅シタルトキト雖モ所持人ハ振出人、引受人又ハ裏書人ニ対シ其ノ受ケタル利益ノ限度ニ於テ償還ノ請求ヲ為スコトヲ得」と定める。この請求権は、手形上の権利を有していた者がその権利を時効等で失った場合に認められるものと解されている。丙は乙から手形を預かったにすぎず、受取人を乙とする原文言のもとでは手形上の権利を有していなかったから、時効によって失う手形上の権利もなく、利得償還請求権を取得しない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "85",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "為替手形又ハ約束手形ヨリ生ジタル権利ガ手続ノ欠缺又ハ時効ニ因リテ消滅シタルトキト雖モ所持人ハ振出人、引受人又ハ裏書人ニ対シ其ノ受ケタル利益ノ限度ニ於テ償還ノ請求ヲ為スコトヲ得",
+     "text_sha256": "5bf3606325bd11c599a433e9c4b1189a46471cc76dc69fa26f7316545bc03c40",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "利得償還請求権が手形上の権利を有していた者に認められることは解釈による。"
+   ],
+   "id": "exp-yobi-2011-shoho-q30-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

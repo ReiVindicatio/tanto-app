@@ -1,0 +1,223 @@
+{
+ "question_id": "yobi-2011-shoho-q25",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q25-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：会社法は、承継する債務の額が承継する資産の額を超える吸収合併について、取締役に株主総会での説明を求めており、合併差損が生ずる合併もすることができる。",
+   "body": "誤りは、合併差損が生ずる吸収合併はできないとした部分である。会社法795条2項は、同項各号に掲げる場合には「取締役は、前項の株主総会において、その旨を説明しなければならない。」とし、その1号に、存続会社が承継する消滅会社の債務の額（承継債務額）が「承継する吸収合併消滅会社又は吸収分割会社の資産の額として法務省令で定める額（同号において「承継資産額」という。）を超える場合」を掲げている。このように、会社法は差損が生ずる場合を禁止せず、株主総会での説明を求めたうえで合併の承認を受けることを予定している。したがって、合併差損が生ずる吸収合併もすることができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "795",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "取締役は、前項の株主総会において、その旨を説明しなければならない。",
+     "text_sha256": "9ccda8decdd59452044128675f745384e48fa4d4ee01387207d1948086b5eb79",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "795",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "承継する吸収合併消滅会社又は吸収分割会社の資産の額として法務省令で定める額（同号において「承継資産額」という。）を超える場合",
+     "text_sha256": "9ccda8decdd59452044128675f745384e48fa4d4ee01387207d1948086b5eb79",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q25-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q25-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：吸収合併契約で合併対価について定めるのは金銭等を交付するときであり、合併対価を交付しない吸収合併（無対価合併）もすることができる。",
+   "body": "決め手は、合併対価の定めが「交付するときは」という形で規定されている点である。会社法749条1項2号は、吸収合併契約で定める事項として、存続株式会社が消滅会社の株主等に対して「その株式又は持分に代わる金銭等を交付するときは、当該金銭等についての次に掲げる事項」を掲げている。合併対価を交付することは吸収合併契約の必要的な内容とされておらず、存続会社が消滅会社の株主に何も交付しないこととすることもできると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "749",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その株式又は持分に代わる金銭等を交付するときは、当該金銭等についての次に掲げる事項",
+     "text_sha256": "ea372e51e2d4bef15f0c6cdb53ddc14bd00ff87d798fe83af5637c3a6ff8d20b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "無対価の吸収合併ができるという点は、749条1項2号の文言からの解釈による。"
+   ],
+   "id": "exp-yobi-2011-shoho-q25-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q25-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：消滅会社の解散は、吸収合併の登記の後でなければ第三者に対抗することができず、第三者の善意・悪意で区別されていない。",
+   "body": "誤りは、登記の前でも悪意の第三者には解散を対抗できるとした部分である。会社法750条2項は「吸収合併消滅会社の吸収合併による解散は、吸収合併の登記の後でなければ、これをもって第三者に対抗することができない。」と定める。この規定は、対抗できない相手を善意の第三者に限っておらず、登記の前は第三者が悪意であっても解散を対抗することができない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "750",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "吸収合併消滅会社の吸収合併による解散は、吸収合併の登記の後でなければ、これをもって第三者に対抗することができない。",
+     "text_sha256": "a6adbb9e1d6eca7c8bd4cf4318a57675d65f07fd9c76b787405635973ff6ef0d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q25-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q25-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：新設合併の無効の訴えの被告は、新設合併により設立する会社である。",
+   "body": "決め手は、新設合併の無効の訴えの被告を定める規定である。会社法828条1項は、同項各号の行為の無効は「訴えをもってのみ主張することができる。」とし、その8号に会社の新設合併を掲げる。合併契約を承認した株主総会の決議に瑕疵があるときは、合併の効力が生じた後は、その瑕疵を新設合併の無効の訴えで主張することになると解されている。そして、会社法834条8号は、被告を「会社の新設合併の無効の訴え　新設合併により設立する会社」と定めている。したがって、決議の瑕疵を理由とする場合でも、新設合併の無効の訴えは設立会社を被告としなければならず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "828",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴えをもってのみ主張することができる。",
+     "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "834",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社の新設合併の無効の訴え　新設合併により設立する会社",
+     "text_sha256": "b9ec18c29c714b3875ebe6b6556166976d4123088dd30445292e2e17ad8b773c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "合併承認決議の瑕疵が新設合併の無効の訴えの原因となるという点は解釈による。"
+   ],
+   "id": "exp-yobi-2011-shoho-q25-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q25-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：株式会社どうしの新設合併でも、設立会社を持分会社とすることができる。",
+   "body": "誤りは、設立会社を株式会社に限るとした部分である。会社法2条28号は、新設合併を「二以上の会社がする合併であって、合併により消滅する会社の権利義務の全部を合併により設立する会社に承継させるものをいう。」と定め、同条1号は会社を「株式会社、合名会社、合資会社又は合同会社をいう。」と定める。そして、会社法755条1項は「新設合併設立会社が持分会社であるときは、新設合併契約において、次に掲げる事項を定めなければならない。」とし、持分会社を設立する新設合併を認めている。したがって、株式会社を当事会社とする新設合併でも設立会社を持分会社とすることができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二以上の会社がする合併であって、合併により消滅する会社の権利義務の全部を合併により設立する会社に承継させるものをいう。",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社、合名会社、合資会社又は合同会社をいう。",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "755",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "新設合併設立会社が持分会社であるときは、新設合併契約において、次に掲げる事項を定めなければならない。",
+     "text_sha256": "8ef91661eeb50f0716870d39ff222074f1c392cf219623187964f07ddce20b01",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q25-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

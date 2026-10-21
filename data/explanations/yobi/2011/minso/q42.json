@@ -1,0 +1,298 @@
+{
+ "question_id": "yobi-2011-minso-q42",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q42-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。前訴の口頭弁論終結後に行使した建物買取請求権の効果は、請求異議の事由として主張できるとするのが判例である。",
+   "body": "民事執行法35条2項は「確定判決についての異議の事由は、口頭弁論の終結後に生じたものに限る。」と定め、基準時前に生じた事由は既判力により遮断される。もっとも判例（最高裁平成7年12月15日判決）は、土地の賃借人が建物収去土地明渡請求訴訟の事実審口頭弁論終結後に建物買取請求権を行使した場合、その行使の効果は、請求を認容した確定判決に対する請求異議の訴えにおける異議の事由となるとした。建物買取請求権は、借地借家法13条1項のとおり借地権者が「建物その他借地権者が権原により土地に附属させた物を時価で買い取るべきことを請求することができる」権利であり、明渡請求権の発生原因に付着した瑕疵を主張するものではないため、遮断されないと解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "35",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "確定判決についての異議の事由は、口頭弁論の終結後に生じたものに限る。",
+     "text_sha256": "5aca3edcc2f7f6d87f9db1a086063a8ecf4c3abc44017bd5a38579806463ed95",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "借地借家法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "建物その他借地権者が権原により土地に附属させた物を時価で買い取るべきことを請求することができる",
+     "text_sha256": "7cf8403124a43ae12093279735d54475a6a8c47f46aed84de992cb51688d1a9d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B9%9D%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "口頭弁論終結後の建物買取請求権の行使と請求異議",
+     "court": "最高裁判所第二小法廷",
+     "date": "1995-12-15",
+     "case_number": "平成4(オ)991",
+     "holding": "土地賃借人が建物収去土地明渡請求訴訟の事実審口頭弁論終結後に建物買取請求権を行使した場合、その効果は、同請求を認容する確定判決に対する請求異議の訴えにおける異議の事由となる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57060/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例の参照法条は借地法4条2項。借地借家法13条は現行法の対応規定として引いた（借地法の本文は確認していない）",
+    "遮断されない理由づけは解釈による"
+   ],
+   "id": "exp-yobi-2011-minso-q42-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q42-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。基準時前に相殺適状にあっても、基準時後にした相殺の意思表示による債務の消滅は請求異議の事由となる（「主張することができない」が誤り）。",
+   "body": "民事執行法35条2項は「確定判決についての異議の事由は、口頭弁論の終結後に生じたものに限る。」と定める。判例（最高裁昭和40年4月2日判決）は、債務名義たる判決の基礎となる口頭弁論の終結前に相殺適状にあったとしても、弁論終結後になされた相殺の意思表示により債務が消滅した場合には、その債務の消滅は請求異議の原因となりうるとした。相殺は民法506条1項のとおり「当事者の一方から相手方に対する意思表示によってする」ものであり、自働債権は訴求債権とは別個の債権であって、相殺するかどうかは債務者の自由に委ねられていることが理由とされている。したがって、本肢は「主張することができない」としている点で誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "35",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "確定判決についての異議の事由は、口頭弁論の終結後に生じたものに限る。",
+     "text_sha256": "5aca3edcc2f7f6d87f9db1a086063a8ecf4c3abc44017bd5a38579806463ed95",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "506",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の一方から相手方に対する意思表示によってする",
+     "text_sha256": "062f72fc81d33818472722921e99cdcf21fc04d5302d967ddf05aa708391268e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "口頭弁論終結後の相殺と請求異議",
+     "court": "最高裁判所第二小法廷",
+     "date": "1965-04-02",
+     "case_number": "昭和38(オ)1066",
+     "holding": "債務名義たる判決の基礎となる口頭弁論の終結前に相殺適状にあったとしても、弁論終結後になされた相殺の意思表示により債務が消滅した場合には、その債務の消滅は請求異議の原因となりうる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53113/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "相殺が遮断されない理由づけは解釈による"
+   ],
+   "id": "exp-yobi-2011-minso-q42-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q42-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。前訴の提起前に完成していた消滅時効は、前訴で援用できた基準時前の事由であり、既判力により遮断されると解されている。",
+   "body": "民事執行法35条2項は「確定判決についての異議の事由は、口頭弁論の終結後に生じたものに限る。」と定める。民法145条のとおり、時効は当事者が「援用しなければ、裁判所がこれによって裁判をすることができない」が、本肢の消滅時効は前訴の提起前に完成しており、借主は前訴の事実審口頭弁論終結までにこれを援用して貸金債権の消滅を主張することができた。そのため、基準時における貸金債権の存在を確定した判決の既判力により、後訴で時効の援用による消滅を主張することは遮断されると解されている。相殺（肢2）や建物買取請求権（肢1）のように訴求債権とは別個の権利の行使とは異なり、時効の援用は訴求債権そのものの消滅を争うものだからである。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "35",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "確定判決についての異議の事由は、口頭弁論の終結後に生じたものに限る。",
+     "text_sha256": "5aca3edcc2f7f6d87f9db1a086063a8ecf4c3abc44017bd5a38579806463ed95",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "145",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "援用しなければ、裁判所がこれによって裁判をすることができない",
+     "text_sha256": "e5fa226ad26d710e216e9e61b648d93464274a60e523576250a29d3094a91a4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "時効の援用が遮断されるとの説明は解釈による（直接の判例は courts.py で確かめていない）"
+   ],
+   "id": "exp-yobi-2011-minso-q42-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q42-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。基準時前に行使できた詐欺取消権を確定後に行使して争うことは、既判力により許されないとするのが判例である。",
+   "body": "民事執行法35条2項は「確定判決についての異議の事由は、口頭弁論の終結後に生じたものに限る。」と定める。判例（最高裁昭和55年10月23日判決）は、売買を請求原因とする所有権確認の判決が確定したのちは、後訴において詐欺を理由に売買を取り消して所有権の存否を争うことは許されないとした。民法96条1項は「詐欺又は強迫による意思表示は、取り消すことができる。」と定めるが、取消権は売買契約そのものに付着した瑕疵に基づく権利であり、前訴で行使できたものとして遮断されると解されている。したがって、売主が請求異議の訴えで詐欺取消しの効果を主張できるとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "35",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "確定判決についての異議の事由は、口頭弁論の終結後に生じたものに限る。",
+     "text_sha256": "5aca3edcc2f7f6d87f9db1a086063a8ecf4c3abc44017bd5a38579806463ed95",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐欺又は強迫による意思表示は、取り消すことができる。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "確定判決後の詐欺取消しの主張（既判力による遮断）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1980-10-23",
+     "case_number": "昭和55(オ)589",
+     "holding": "売買を請求原因とする所有権確認の判決が確定したのちは、後訴において詐欺を理由に右売買を取り消して所有権の存否を争うことは許されない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53369/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は所有権確認訴訟の事案であり、本肢の請求異議の訴えに同じ趣旨が及ぶとの説明は解釈による"
+   ],
+   "id": "exp-yobi-2011-minso-q42-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q42-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。前訴で白地補充権を行使できたのに行使せず請求棄却が確定したときは、特段の事情のない限り、後に補充しても手形上の権利を主張できないとするのが判例である。",
+   "body": "白地手形については、手形法10条（同法77条2項で約束手形に準用）が「未完成ニテ振出シタル為替手形」の補充について定めている。判例（最高裁昭和57年3月30日判決）は、白地手形の所持人が、手形金請求の前訴において事実審口頭弁論終結前に白地補充権を行使しえたのにこれを行使しないため手形要件を欠くとして請求棄却の判決を受け、これが確定したときは、特段の事情のない限り、その後に白地部分を補充しても、後訴において手形上の権利の存在を主張することは許されないとした。民事執行法35条2項が「確定判決についての異議の事由は、口頭弁論の終結後に生じたものに限る。」とするのと同じく、基準時前に行使できた補充権の行使は既判力により遮断されるという考え方である。したがって、後訴で補充して手形上の権利を主張できるとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "10",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未完成ニテ振出シタル為替手形",
+     "text_sha256": "a734adf9cada4dcac2a15bd253eea9abdb6e00c7c9e57ee61288f56fb5c4f174",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "手形法",
+     "article": "77",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "白地為替手形（第十条）ニ関スル規定モ亦之ヲ約束手形ニ準用ス",
+     "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "35",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "確定判決についての異議の事由は、口頭弁論の終結後に生じたものに限る。",
+     "text_sha256": "5aca3edcc2f7f6d87f9db1a086063a8ecf4c3abc44017bd5a38579806463ed95",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "白地手形の補充権不行使と既判力",
+     "court": "最高裁判所第三小法廷",
+     "date": "1982-03-30",
+     "case_number": "昭和54(オ)110",
+     "holding": "白地手形の所持人が、前訴で事実審口頭弁論終結前に白地補充権を行使しえたのに行使せず、手形要件を欠くとして請求棄却判決を受けこれが確定したときは、特段の事情のない限り、その後に白地部分を補充しても、後訴で手形上の権利の存在を主張することは許されない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54241/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "本肢の手形が約束手形であることは問題文に明示されていない（「振出人」とあることから約束手形を想定して同法77条2項を引いた）"
+   ],
+   "id": "exp-yobi-2011-minso-q42-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

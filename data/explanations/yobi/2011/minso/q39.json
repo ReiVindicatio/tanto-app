@@ -1,0 +1,212 @@
+{
+ "question_id": "yobi-2011-minso-q39",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q39-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：陳述の擬制は原告・被告のどちらが欠席した場合にも認められ、原告欠席のときに訴状の陳述を擬制できないとする点が誤り。",
+   "body": "158条は「原告又は被告が最初にすべき口頭弁論の期日に出頭せず、又は出頭したが本案の弁論をしないときは」と定め、原告と被告を区別していない。そのうえで、裁判所は「その者が提出した訴状又は答弁書その他の準備書面に記載した事項を陳述したものとみなし、出頭した相手方に弁論をさせることができる」とされている。したがって、原告が最初の期日に欠席し被告が出頭した場合にも、訴状の陳述を擬制することができる。原告欠席の場合には擬制できないとする後半が誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "158",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "原告又は被告が最初にすべき口頭弁論の期日に出頭せず、又は出頭したが本案の弁論をしないときは",
+     "text_sha256": "4e64e7a8e7346d213381c6f1c1628ad39ce021ee16eca90dc536051bad2ddb29",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "158",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その者が提出した訴状又は答弁書その他の準備書面に記載した事項を陳述したものとみなし、出頭した相手方に弁論をさせることができる",
+     "text_sha256": "4e64e7a8e7346d213381c6f1c1628ad39ce021ee16eca90dc536051bad2ddb29",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-minso-q39-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q39-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：時機に後れた攻撃防御方法の却下は「申立てにより又は職権で」できるので、相手方の申立てがなくても却下できる。",
+   "body": "157条1項は、当事者が故意又は重大な過失により時機に後れて提出した攻撃又は防御の方法について、「これにより訴訟の完結を遅延させることとなると認めたときは、裁判所は、申立てにより又は職権で、却下の決定をすることができる」と定める。却下は職権でもできるから、相手方の申立ては要件ではない。肢は条文どおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "157",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "これにより訴訟の完結を遅延させることとなると認めたときは、裁判所は、申立てにより又は職権で、却下の決定をすることができる",
+     "text_sha256": "86734f9acb55f35bb28d1d94f7e0c95b01f49fb26483dfe95e818b2e0afaab28",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-minso-q39-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q39-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：文書提出命令に従わないことで過料に処されるのは第三者であり、当事者が従わないときの効果は相手方の主張の真実擬制である。",
+   "body": "当事者が文書提出命令に従わない場合について、224条1項は「当事者が文書提出命令に従わないときは、裁判所は、当該文書の記載に関する相手方の主張を真実と認めることができる」と定める。これに対し、過料の制裁を定める225条1項は「第三者が文書提出命令に従わないときは、裁判所は、決定で、二十万円以下の過料に処する」としており、対象は第三者に限られる。したがって、当事者が過料に処されることがあるとする肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "224",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が文書提出命令に従わないときは、裁判所は、当該文書の記載に関する相手方の主張を真実と認めることができる",
+     "text_sha256": "1dead7a628cc44faf2f9b7e5e68376c0644f0dcff4ad7936a893aeb79dd0c01c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "225",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三者が文書提出命令に従わないときは、裁判所は、決定で、二十万円以下の過料に処する",
+     "text_sha256": "375d78c322c0cf221afa86087263772cf73a9feaead3b6cb89a13361da6acabc",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "過料の金額は取得日時点の現行法の本文による。出題当時の金額は条文の本文で確認していない（肢の正誤は金額に関係しない）。"
+   ],
+   "id": "exp-yobi-2011-minso-q39-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q39-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：当事者照会への回答拒絶について、照会事項に関する主張を真実と認めることができるとする規定はない。",
+   "body": "163条1項は、当事者が訴訟の係属中、相手方に対し「主張又は立証を準備するために必要な事項について」書面により照会をすることができると定めるが、相手方が回答を拒んだ場合の効果は定めていない。主張を真実と認めることができるとする効果は、224条1項が文書提出命令に当事者が従わない場合について「当該文書の記載に関する相手方の主張を真実と認めることができる」と定めるようなものであり、当事者照会にはこれに当たる規定が置かれていない。そのため、回答拒絶に対して真実擬制のような制裁はないと解されている。したがって、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "163",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主張又は立証を準備するために必要な事項について",
+     "text_sha256": "a07672f65c4cb0dca04821bd3a74661c39ee99f12d854dc05c046918a30f0eb0",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "224",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該文書の記載に関する相手方の主張を真実と認めることができる",
+     "text_sha256": "1dead7a628cc44faf2f9b7e5e68376c0644f0dcff4ad7936a893aeb79dd0c01c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（当事者照会への回答拒絶に直接の制裁がないとする点は、163条に効果の規定がないことからの一般的な理解）。",
+    "163条は電磁的方法による照会・回答を加える改正を受けている。改正前の内容は条文の本文で確認していない（肢の正誤には関係しない）。"
+   ],
+   "id": "exp-yobi-2011-minso-q39-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minso-q39-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：攻撃防御方法の提出が適時でなく訴訟を遅滞させた当事者には、勝訴しても遅滞による訴訟費用を負担させることができる（63条）。",
+   "body": "63条は「当事者が適切な時期に攻撃若しくは防御の方法を提出しないことにより、又は期日若しくは期間の不遵守その他当事者の責めに帰すべき事由により訴訟を遅滞させたときは、裁判所は、その当事者に、その勝訴の場合においても、遅滞によって生じた訴訟費用の全部又は一部を負担させることができる」と定める。肢はこの条文のとおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "63",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が適切な時期に攻撃若しくは防御の方法を提出しないことにより、又は期日若しくは期間の不遵守その他当事者の責めに帰すべき事由により訴訟を遅滞させたときは、裁判所は、その当事者に、その勝訴の場合においても、遅滞によって生じた訴訟費用の全部又は一部を負担させることができる",
+     "text_sha256": "65164e5bc6a2cf033779ea92cf8053e8a75f149a860af6e3b3fc1b3c0fdbaa6c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-minso-q39-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,267 @@
+{
+ "question_id": "yobi-2011-shoho-q24",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q24-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：合同会社の社員は全員が有限責任社員であり、有限責任社員の出資の目的は金銭等に限られるから、労務や信用を出資の目的とすることはできない。",
+   "body": "誤りは、合同会社の社員が労務や信用を出資できるとした部分である。会社法576条4項は、合同会社では「その社員の全部を有限責任社員とする旨を記載し、又は記録しなければならない。」とする。そして、同条1項6号は定款の記載事項として「社員の出資の目的（有限責任社員にあっては、金銭等に限る。）及びその価額又は評価の標準」を掲げ、有限責任社員の出資の目的を金銭等に限っている。金銭等とは、会社法151条1項にいう「金銭その他の財産をいう。」から、財産でない労務や信用はこれに当たらない。したがって、合同会社の社員になろうとする者は労務や信用を出資の目的とすることができず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "576",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "その社員の全部を有限責任社員とする旨を記載し、又は記録しなければならない。",
+     "text_sha256": "ff6d8df6757eee1a46d8e7f5da2f200e8145c188321040bbfb5f4dda3de7a7a0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "576",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "社員の出資の目的（有限責任社員にあっては、金銭等に限る。）及びその価額又は評価の標準",
+     "text_sha256": "ff6d8df6757eee1a46d8e7f5da2f200e8145c188321040bbfb5f4dda3de7a7a0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "151",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "金銭その他の財産をいう。",
+     "text_sha256": "0cff880b4b3f2d08b426a35ebd602565d30e9e59a098df25d5e4841674a421ed",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q24-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q24-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：社員の氏名等は定款の記載事項であり、社員の加入は当該社員に係る定款の変更をした時に効力を生ずるから、新たに社員を加入させるには定款の変更が必要である。",
+   "body": "決め手は、社員が定款の記載事項であり、加入の効力が定款の変更と結び付けられている点である。会社法576条1項は、持分会社の定款に記載すべき事項として「社員の氏名又は名称及び住所」を掲げる。そして、会社法604条2項は「持分会社の社員の加入は、当該社員に係る定款の変更をした時に、その効力を生ずる。」と定める。したがって、合同会社が新たに社員を加入させる場合には定款の変更をしなければならず、本肢は正しい。なお、定款の変更は、会社法637条により「定款に別段の定めがある場合を除き、総社員の同意によって」行う。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "576",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "社員の氏名又は名称及び住所",
+     "text_sha256": "ff6d8df6757eee1a46d8e7f5da2f200e8145c188321040bbfb5f4dda3de7a7a0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "604",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "持分会社の社員の加入は、当該社員に係る定款の変更をした時に、その効力を生ずる。",
+     "text_sha256": "a075236ee2613381ea6fda971c71bf26f9f7f82d2618cd05f4c4c21b45679284",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "637",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "定款に別段の定めがある場合を除き、総社員の同意によって",
+     "text_sha256": "363231db80660e715a898791af88c9a0959ea6a3e240dffa13738cc8ebf28ead",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q24-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q24-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：合同会社が合名会社となるのは組織変更ではなく、定款の変更による持分会社の種類の変更であるから、組織変更計画の作成は要らない。",
+   "body": "誤りは、合同会社から合名会社への変更を組織変更として扱った部分である。会社法2条26号は、組織変更を株式会社が合名会社、合資会社又は合同会社となること、又は合名会社、合資会社又は合同会社が株式会社となることと定義しており、持分会社の間の変更はこれに含まれない。持分会社の間の変更について、会社法638条3項は「合同会社は、次の各号に掲げる定款の変更をすることにより、当該各号に定める種類の持分会社となる。」とし、その1号に「その社員の全部を無限責任社員とする定款の変更　合名会社」を掲げる。組織変更計画の作成を求める会社法743条は組織変更についての規定であるから、合同会社が合名会社となる場合には組織変更計画を作成する必要はなく、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "組織変更　次のイ又はロに掲げる会社がその組織を変更することにより当該イ又はロに定める会社となることをいう。",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "638",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "合同会社は、次の各号に掲げる定款の変更をすることにより、当該各号に定める種類の持分会社となる。",
+     "text_sha256": "9a88e7a51f1e4842434d032030b5d9bfad9bac1d15ccb675eb52897d0a0f9ae7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "638",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "その社員の全部を無限責任社員とする定款の変更　合名会社",
+     "text_sha256": "9a88e7a51f1e4842434d032030b5d9bfad9bac1d15ccb675eb52897d0a0f9ae7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "743",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社は、組織変更をすることができる。この場合においては、組織変更計画を作成しなければならない。",
+     "text_sha256": "720bfce6a170cf718fe8ea278c817f22721081f9bc6dcc26e75bc79feb269f9f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q24-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q24-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：会社法は法人が持分会社の業務を執行する社員となることを前提に特則を置いており、法人も業務を執行する社員となることができる。",
+   "body": "誤りは、法人は業務を執行する社員となれないとした部分である。会社法598条1項は「法人が業務を執行する社員である場合には、当該法人は、当該業務を執行する社員の職務を行うべき者を選任し、その者の氏名及び住所を他の社員に通知しなければならない。」と定めている。この規定は、法人が持分会社の業務を執行する社員となることを前提として、その職務を行うべき者の選任を求めるものである。したがって、合同会社でも法人は業務を執行する社員となることができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "598",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法人が業務を執行する社員である場合には、当該法人は、当該業務を執行する社員の職務を行うべき者を選任し、その者の氏名及び住所を他の社員に通知しなければならない。",
+     "text_sha256": "e5446a505e6a27ae25169648d80344ebc9364cf651666fe7c56fb880d0a62fad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q24-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-shoho-q24-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：合同会社の社員は、定款を変更してその出資の価額を減少する場合を除き、出資の払戻しを請求することができない。",
+   "body": "決め手は、合同会社について出資の払戻しを制限する特則である。持分会社一般については、会社法624条1項が社員は「既に出資として払込み又は給付をした金銭等の払戻し」を請求することができるとしている。しかし、会社法632条1項は「第六百二十四条第一項の規定にかかわらず、合同会社の社員は、定款を変更してその出資の価額を減少する場合を除き、同項前段の規定による請求をすることができない。」と定める。本肢はこの規定と同じ内容であり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "624",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "既に出資として払込み又は給付をした金銭等の払戻し",
+     "text_sha256": "1e5a89fae186d9366826f6be1cf04448878f8af1784e5daa1c89c100d648c3b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "632",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第六百二十四条第一項の規定にかかわらず、合同会社の社員は、定款を変更してその出資の価額を減少する場合を除き、同項前段の規定による請求をすることができない。",
+     "text_sha256": "5fa63cb7e397d8e2991ea2fe47e5da9a498e0dbb85f28124e54bd83403da93ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-shoho-q24-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
