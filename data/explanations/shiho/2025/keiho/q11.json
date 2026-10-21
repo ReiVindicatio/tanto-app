@@ -1,0 +1,256 @@
+{
+ "question_id": "shiho-2025-keiho-q11",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-keiho-q11-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。犯人が一人で住む家屋は非現住建造物に当たり、保険に付した自己所有の物は刑法115条により他人の物として扱われるから、他人所有非現住建造物等放火罪（109条1項）が成立する。",
+   "body": "刑法108条は「現に人が住居に使用し又は現に人がいる建造物」を客体とするが、判例は同条にいう「人」とは犯人以外の者を指すとしている。甲が一人で居住する家屋は、甲以外の者が住居に使用しておらず現にいるわけでもないから、109条の「現に人が住居に使用せず、かつ、現に人がいない建造物」に当たる。この家屋は甲の所有であるが、火災保険を掛けており、115条は「第百九条第一項及び第百十条第一項に規定する物が自己の所有に係るものであっても、差押えを受け、物権を負担し、賃貸し、配偶者居住権が設定され、又は保険に付したものである場合において、これを焼損したときは、他人の物を焼損した者の例による。」と定める。したがって、甲には109条1項の他人所有非現住建造物等放火罪が成立する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現に人が住居に使用し又は現に人がいる建造物",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "109",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現に人が住居に使用せず、かつ、現に人がいない建造物",
+     "text_sha256": "326d774ec2f98dbdafb0b8f657f6202a0b84b7f679959effbd50cd3ad527d210",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百九条第一項及び第百十条第一項に規定する物が自己の所有に係るものであっても、差押えを受け、物権を負担し、賃貸し、配偶者居住権が設定され、又は保険に付したものである場合において、これを焼損したときは、他人の物を焼損した者の例による。",
+     "text_sha256": "331d95531d3dca6d49bf5fc39c1071e054334b0a9cd4fad4e7259d652dba8d5b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "刑法108条の「人」の意義（犯人以外の者）",
+     "court": "最高裁判所第二小法廷",
+     "date": "1957-06-21",
+     "case_number": "昭和29(あ)805",
+     "holding": "刑法108条にいう「人」とは、犯人以外の者を指す。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51386/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2025-keiho-q11-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-keiho-q11-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。自己所有非現住建造物等放火罪（109条2項）の未遂を罰する規定はない（112条は108条と109条1項の未遂だけを罰する）。",
+   "body": "誤りは「甲に自己所有非現住建造物等放火罪の未遂罪が成立する」の部分である。自己所有の無人倉庫への放火は、109条2項の「前項の物が自己の所有に係るとき」に当たる。しかし、112条は「第百八条及び第百九条第一項の罪の未遂は、罰する。」と定め、109条2項の罪の未遂を処罰の対象に含めていない。新聞紙が燃えたにとどまり倉庫が焼損しなかった本問では、109条2項の罪は既遂に達しておらず、その未遂罪も成立しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "109",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の物が自己の所有に係るとき",
+     "text_sha256": "326d774ec2f98dbdafb0b8f657f6202a0b84b7f679959effbd50cd3ad527d210",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "112",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百八条及び第百九条第一項の罪の未遂は、罰する。",
+     "text_sha256": "1076d517e8e1b9801473d29d8524ca430e39e70e749b594cc69bda2557c46139",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-keiho-q11-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-keiho-q11-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。自動車は建造物等以外の物（110条）であり、放火予備罪（113条）は108条又は109条1項の罪を犯す目的の場合に限られる。",
+   "body": "誤りは「甲に放火予備罪が成立する」の部分である。Ａ所有の自動車は、建造物・艦船・鉱坑などに当たらず、110条1項の「前二条に規定する物以外の物」に当たる。113条は「第百八条又は第百九条第一項の罪を犯す目的で、その予備をした者」を処罰すると定め、110条の罪を犯す目的の予備は対象に含まれていない。したがって、自動車に放火する目的でガソリンとライターを持って近づいた甲に、放火予備罪は成立しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "110",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条に規定する物以外の物",
+     "text_sha256": "e57ef09fc88cc82d4cf26b2048ff8150accb7212af342ee6d7680ec59a521152",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百八条又は第百九条第一項の罪を犯す目的で、その予備をした者",
+     "text_sha256": "2bb7f03364843a7047590272d13c4766299c273cf99321db5c9339ad7ffe6a65",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-keiho-q11-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-keiho-q11-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。自己所有の非現住建造物を失火により焼損し公共の危険を生じさせた場合は、116条2項の失火罪が成立する。",
+   "body": "116条2項は「失火により、第百九条に規定する物であって自己の所有に係るもの又は第百十条に規定する物を焼損し、よって公共の危険を生じさせた者も、前項と同様とする。」と定める。自己所有の無人倉庫は、109条に規定する物（現に人が住居に使用せず、かつ、現に人がいない建造物）であって自己の所有に係るものに当たる。甲はこれを失火により焼損し、それによって公共の危険を生じさせているから、116条2項の失火罪が成立する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "116",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "失火により、第百九条に規定する物であって自己の所有に係るもの又は第百十条に規定する物を焼損し、よって公共の危険を生じさせた者も、前項と同様とする。",
+     "text_sha256": "bac1d0cef8cbd4c5e32f94eb2c5d564ccde655746bb4f7dcc6e136e8cf8855e3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "109",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現に人が住居に使用せず、かつ、現に人がいない建造物",
+     "text_sha256": "326d774ec2f98dbdafb0b8f657f6202a0b84b7f679959effbd50cd3ad527d210",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-keiho-q11-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-keiho-q11-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。消火妨害罪（114条）は「火災の際に」消火を妨害することが要件であり、火災が発生していない段階で消火栓を損壊しても成立しない。",
+   "body": "誤りは「甲に消火妨害罪が成立する」の部分である。114条は「火災の際に、消火用の物を隠匿し、若しくは損壊し、又はその他の方法により、消火を妨害した者」を処罰すると定め、火災の際であることを要件としている。甲は放火するに至っておらず、火災は発生していないから、消火栓を損壊しても「火災の際に」消火を妨害したことにはならない。したがって、消火妨害罪は成立しない（Ａが居住する家屋への放火の目的で準備をした点について、113条の放火予備罪が問題となり得ることは別である）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "114",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "火災の際に、消火用の物を隠匿し、若しくは損壊し、又はその他の方法により、消火を妨害した者",
+     "text_sha256": "f7232b598cf31705dbfdef96f6c3f463ac9492f02790b508de93ec8f7ac96e4a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百八条又は第百九条第一項の罪を犯す目的で、その予備をした者",
+     "text_sha256": "2bb7f03364843a7047590272d13c4766299c273cf99321db5c9339ad7ffe6a65",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "消火栓の損壊が放火予備罪に当たり得るかは、肢の正誤に関係しない補足として書いた（解釈による）"
+   ],
+   "id": "exp-shiho-2025-keiho-q11-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
