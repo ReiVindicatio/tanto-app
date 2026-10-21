@@ -46,7 +46,7 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
       <div className={`page ${tab ? "with-tabs" : "playing"}`}>
         <header className="appbar">
           <button className="link brand" onClick={() => navigate({ name: "home" })}>
-            短答一問一答<span className="muted">（仮称・非公式）</span>
+            たんたん<span className="muted">（短答の一問一答・非公式）</span>
           </button>
           {sync && <SyncBadge sync={sync} />}
         </header>
