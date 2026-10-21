@@ -1,0 +1,381 @@
+{
+ "question_id": "shiho-2021-keiho-q07",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-keiho-q07-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：電磁的公正証書原本不実記録罪とその供用罪は、不実の記録をさせることが供用の手段となる関係にあるから、牽連犯になると解されている。",
+   "body": "決め手は、不実の記録をさせる罪と、その記録を公正証書の原本としての用に供する罪が、手段と結果の関係に立つ点である。157条1項は「権利若しくは義務に関する公正証書の原本として用いられる電磁的記録に不実の記録をさせた者」を処罰し、158条1項は「同条第一項の電磁的記録を公正証書の原本としての用に供し」た者を処罰する。本肢の甲は、情を知らない登記官に虚偽の申立てをして登記簿の磁気ディスクに不実の記録をさせ（電磁的公正証書原本不実記録罪）、その記録を閲覧可能な状態に置いて公正証書の原本としての用に供した（同供用罪）。54条1項後段は「犯罪の手段若しくは結果である行為が他の罪名に触れるとき」は「その最も重い刑により処断する」と定めており、公正証書原本不実記載罪と同行使罪のように、不実の記録をさせる罪とその供用罪は類型的に手段と結果の関係にあるとして牽連犯になると解されている（判例あり（要確認））。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "157",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "権利若しくは義務に関する公正証書の原本として用いられる電磁的記録に不実の記録をさせた者",
+     "text_sha256": "c3ec38ed6b826fa1c8c568890bf11177bfdc9823940e8a894915e9823fade442",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "158",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同条第一項の電磁的記録を公正証書の原本としての用に供し",
+     "text_sha256": "2860e2b4ae7a83b93a06117e390d95e93be58bec20c36159649d3572699c06d9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるとき",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その最も重い刑により処断する",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "公正証書原本不実記載罪（不実記録罪）と同行使罪（供用罪）が牽連犯になるとした判例",
+     "searched": [
+      "courts.py search 公正証書原本不実記載 行使 牽連犯",
+      "courts.py search 牽連犯 公正証書原本 行使",
+      "大審院の判例であればデータベースにない"
+     ]
+    }
+   ],
+   "notes": [
+    "不実記録罪と供用罪が牽連犯になることは、判例・学説の一般的な理解による（解釈による）。判例は courts.py で確かめられなかった。",
+    "保存した刑法157条・158条の本文は、拘禁刑への改正や「電磁的記録文書等」を加える改正の後のもの。出題当時の文言とは異なるが、本肢の結論には影響しない。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2021-keiho-q07-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-keiho-q07-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判例は、幇助罪の個数は正犯の罪の個数に従って決まり、数個の幇助罪が一個の行為によるかは幇助行為それ自体について見るべきとしているから、バットを1回手渡した甲には2個の傷害幇助罪が成立し、観念的競合となる。",
+   "body": "決め手は、幇助罪の個数と、その数個の幇助罪の罪数関係を分けて考える点である。62条1項は「正犯を幇助した者は、従犯とする。」と定める。最高裁は、幇助罪の個数は正犯の罪のそれに従って決定され、幇助罪が数個成立する場合にそれらが54条1項にいう一個の行為によるものであるか否かは、幇助行為それ自体についてみるべきであるとした（最決昭和57年2月17日）。本肢では、正犯乙がＡとＢに対する2個の傷害罪を犯しているから、甲には2個の傷害罪の幇助犯が成立する。そして、甲の幇助行為はバットを1回手渡したという一個の行為であるから、54条1項前段の「一個の行為が二個以上の罪名に触れ」る場合として観念的競合となる。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "62",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正犯を幇助した者は、従犯とする。",
+     "text_sha256": "64542fa2877f533ec2c244692d3bfc7ec33145f64b8ee8b1bca58a4cc77c6bf4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "幇助罪の個数と一個の行為の判断基準",
+     "court": "最高裁判所第一小法廷",
+     "date": "1982-02-17",
+     "case_number": "昭和55(あ)515",
+     "holding": "幇助罪の個数は、正犯の罪のそれに従って決定される。幇助罪が数個成立する場合において、それらが刑法54条1項にいう一個の行為によるものであるか否かは、幇助行為それ自体についてみるべきである。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57031/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例の事案は覚せい剤取締法違反などの幇助であり、傷害罪の幇助ではない。本肢への当てはめは判例の示した基準による。"
+   ],
+   "id": "exp-shiho-2021-keiho-q07-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-keiho-q07-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：キャッシュカードをだまし取る詐欺罪と、そのカードで現金自動預払機から現金を引き出す窃盗罪は、類型的に手段と結果の関係にあるとはいえず、牽連犯ではなく併合罪になると解されている。",
+   "body": "決め手は、牽連犯は犯罪の性質上通常手段と結果の関係にある場合に限られると解されている点である。キャッシュカードをだまし取る行為は「人を欺いて財物を交付させた」（246条1項）として詐欺罪となり、そのカードを使って現金自動預払機から現金を引き出す行為は、機械を管理する銀行の意思に反して現金の占有を移すものとして「他人の財物を窃取した」（235条）に当たり窃盗罪となると解されている。54条1項後段の「犯罪の手段若しくは結果である行為が他の罪名に触れるとき」に当たるには、行為者が手段として用いたというだけでなく、犯罪の性質上通常一方が他方の手段となる関係にあることが必要と解されている。カードの詐取と現金の引出しはそのような類型的な関係にはないから、両罪は牽連犯ではなく、45条の併合罪になると解されている。したがって、牽連犯とする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "246",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を欺いて財物を交付させた",
+     "text_sha256": "c515031b5f484a4ebf537cf5f2eb826a008d119836fd4627833e9cdb1f4a5053",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "235",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の財物を窃取した",
+     "text_sha256": "44f910b87f784daf350f25c4067c5a24e6e862555ec52f35ceea3c0cd53efc1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるとき",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "牽連犯の判断基準（類型的に手段・結果の関係にあること）と、カードの詐取とその後の引出しが併合罪となることは、判例・学説の一般的な理解による（解釈による）。判例は探して確かめていない。",
+    "保存した刑法の本文は「拘禁刑」に改められた後のもの。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2021-keiho-q07-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-keiho-q07-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：住居侵入罪と、侵入した住居内での窃盗罪は、類型的に手段と結果の関係にあるとして牽連犯になると解されており、侵入時の目的が別の犯罪であっても併合罪にはならない。",
+   "body": "決め手は、住居侵入罪とその後の住居内での犯罪とが、犯罪の性質上通常手段と結果の関係にあると解されている点である。130条は「正当な理由がないのに、人の住居」に「侵入」した者を処罰し、235条は「他人の財物を窃取した者」を処罰する。54条1項後段は「犯罪の手段若しくは結果である行為が他の罪名に触れるとき」を牽連犯とし、判例は、住居侵入罪と、侵入した住居内で行った窃盗罪とを牽連犯としていると解されている（判例あり（要確認））。牽連犯に当たるかは、犯罪の類型として手段と結果の関係にあるかで判断されるから、本肢のように強制性交の目的で侵入し、侵入後に窃盗の意思を生じた場合でも、住居侵入罪と窃盗罪は牽連犯になると解されている。したがって、併合罪とする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "130",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正当な理由がないのに、人の住居",
+     "text_sha256": "032fa6eaacc129ae4daf39c3f2400afa6523671819f49171677c976b8fe3e355",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "130",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "侵入",
+     "text_sha256": "032fa6eaacc129ae4daf39c3f2400afa6523671819f49171677c976b8fe3e355",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "235",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の財物を窃取した者",
+     "text_sha256": "44f910b87f784daf350f25c4067c5a24e6e862555ec52f35ceea3c0cd53efc1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるとき",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "住居侵入罪と住居内での窃盗罪を牽連犯とした判例（侵入時の目的と異なる犯罪を住居内で行った場合を含む）",
+     "searched": [
+      "courts.py search 住居侵入 窃盗 牽連犯",
+      "大審院の判例であればデータベースにない"
+     ]
+    }
+   ],
+   "notes": [
+    "侵入時の目的と異なる犯罪を住居内で行った場合にも牽連犯となるとの点は、判例・学説の一般的な理解による（解釈による）。判例は courts.py で確かめられなかった。",
+    "本肢の「強制性交」は出題当時の罪名。保存した刑法177条の本文は不同意性交等罪に改められた後のもので、本肢の結論には影響しない。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2021-keiho-q07-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-keiho-q07-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判例は、身の代金目的で拐取した者が被拐取者を監禁し、その間に身の代金を要求した場合、身の代金目的拐取罪と身の代金要求罪は牽連犯、これらの各罪と監禁罪は併合罪になるとしている。",
+   "body": "決め手は、最高裁が本肢と同じ形の事案で罪数関係を示している点である。225条の2第1項は「安否を憂慮する者の憂慮に乗じてその財物を交付させる目的で、人を略取し、又は誘拐した者」を処罰し、同条2項は「人を略取し又は誘拐した者」がその憂慮に乗じて財物を「要求する行為をしたとき」も同様とする。また、220条は「不法に人を逮捕し、又は監禁した者」を処罰する。最高裁は、みのしろ金取得の目的で人を拐取した者が、更に被拐取者を監禁し、その間にみのしろ金を要求した場合には、みのしろ金目的拐取罪とみのしろ金要求罪とは牽連犯の関係に、以上の各罪と監禁罪とは併合罪の関係にあるとした（最決昭和58年9月27日）。本肢はこの判例のとおりであるから正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "225_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "安否を憂慮する者の憂慮に乗じてその財物を交付させる目的で、人を略取し、又は誘拐した者",
+     "text_sha256": "92b70f96723b7650124fae0b18a50db9c8c5dbfc6a746686cdd346ce1d8a0579",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "225_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "人を略取し又は誘拐した者",
+     "text_sha256": "92b70f96723b7650124fae0b18a50db9c8c5dbfc6a746686cdd346ce1d8a0579",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "225_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "要求する行為をしたとき",
+     "text_sha256": "92b70f96723b7650124fae0b18a50db9c8c5dbfc6a746686cdd346ce1d8a0579",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "220",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法に人を逮捕し、又は監禁した者",
+     "text_sha256": "d8ef399d30f380f6cab88d03eb7df7918dcbb43ebd2d82339b4ecf5563b90cd1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "身の代金目的拐取罪・身の代金要求罪・監禁罪の罪数",
+     "court": "最高裁判所第三小法廷",
+     "date": "1983-09-27",
+     "case_number": "昭和57(あ)1012",
+     "holding": "みのしろ金取得の目的で人を拐取した者が、更に被拐取者を監禁し、その間にみのしろ金を要求した場合には、みのしろ金目的拐取罪とみのしろ金要求罪とは牽連犯の関係に、以上の各罪と監禁罪とは併合罪の関係にある。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50246/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "保存した刑法の本文は「拘禁刑」に改められた後のもの。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2021-keiho-q07-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

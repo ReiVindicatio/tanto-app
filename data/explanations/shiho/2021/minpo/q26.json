@@ -1,0 +1,207 @@
+{
+ "question_id": "shiho-2021-minpo-q26",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q26-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。処分の権限を有しない者がする賃貸借は、602条各号の期間（短期賃貸借の期間）を超えることができない。",
+   "body": "602条は「処分の権限を有しない者が賃貸借をする場合には、次の各号に掲げる賃貸借は、それぞれ当該各号に定める期間を超えることができない。」と定め、各号で土地・建物・動産などの別に期間を定めている（例えば建物の賃貸借は三年）。さらに同条は「契約でこれより長い期間を定めたときであっても、その期間は、当該各号に定める期間とする。」とする。したがって、処分の権限を有しない者は、短期賃貸借の存続期間を超える賃貸借をすることはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "602",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "処分の権限を有しない者が賃貸借をする場合には、次の各号に掲げる賃貸借は、それぞれ当該各号に定める期間を超えることができない。",
+     "text_sha256": "bfd1a5bf488f32e1b4c507d60fd63b171fb0fd2df866b48719b7b06116a1c31c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "602",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "契約でこれより長い期間を定めたときであっても、その期間は、当該各号に定める期間とする。",
+     "text_sha256": "bfd1a5bf488f32e1b4c507d60fd63b171fb0fd2df866b48719b7b06116a1c31c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q26-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q26-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。不動産の賃貸人たる地位は、賃借人の承諾を要しないで、譲渡人と譲受人との合意により譲受人に移転させることができる（605条の3）。",
+   "body": "ポイントは「賃借人の承諾がなければ」の部分である。605条の3は「不動産の譲渡人が賃貸人であるときは、その賃貸人たる地位は、賃借人の承諾を要しないで、譲渡人と譲受人との合意により、譲受人に移転させることができる。」と定める。したがって、譲渡人と譲受人との合意があれば、賃借人の承諾がなくても賃貸人たる地位は譲受人に移転する。なお、同条後段により605条の2第3項が準用され、この移転を賃借人に対抗するには、所有権の移転の登記が必要である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "605_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産の譲渡人が賃貸人であるときは、その賃貸人たる地位は、賃借人の承諾を要しないで、譲渡人と譲受人との合意により、譲受人に移転させることができる。",
+     "text_sha256": "f00293eb292ed42dfadf939d55d49308f496321719375fe3a7d1d19f49ca5ffe",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "605_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "賃貸物である不動産について所有権の移転の登記をしなければ、賃借人に対抗することができない。",
+     "text_sha256": "be6f1ec3a34a181cc9a39179bfa12a10278e40fe318160b79f65775aa269b1f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q26-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q26-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。対抗要件を備えた不動産の賃借人は、その不動産を占有する第三者に返還を請求できる（605条の4第2号）。",
+   "body": "605条の4は「不動産の賃借人は、第六百五条の二第一項に規定する対抗要件を備えた場合において、次の各号に掲げるときは、それぞれ当該各号に定める請求をすることができる。」と定め、第2号で「その不動産を第三者が占有しているとき　その第三者に対する返還の請求」を掲げる。したがって、対抗要件を備えた賃借人は、正当な権原なく不動産を占有する第三者に対し、返還を請求することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "605_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産の賃借人は、第六百五条の二第一項に規定する対抗要件を備えた場合において、次の各号に掲げるときは、それぞれ当該各号に定める請求をすることができる。",
+     "text_sha256": "c0a5c13a1772835507a3da43fc04fcd0e8143a41d4dfcfd9170e39995603e663",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "605_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その不動産を第三者が占有しているとき　その第三者に対する返還の請求",
+     "text_sha256": "c0a5c13a1772835507a3da43fc04fcd0e8143a41d4dfcfd9170e39995603e663",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q26-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q26-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。耕作目的の土地の賃借人は、不可抗力で賃料より少ない収益しか得られなかったときは、その収益の額まで賃料の減額を請求できる（609条）。",
+   "body": "ポイントは「賃料の減額を請求することはできない」の部分である。609条は「耕作又は牧畜を目的とする土地の賃借人は、不可抗力によって賃料より少ない収益を得たときは、その収益の額に至るまで、賃料の減額を請求することができる。」と定める。したがって、耕作を目的とする土地の賃借人は、この場合に賃料の減額を請求することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "609",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "耕作又は牧畜を目的とする土地の賃借人は、不可抗力によって賃料より少ない収益を得たときは、その収益の額に至るまで、賃料の減額を請求することができる。",
+     "text_sha256": "d5e796b130dc9d260293163427044b78beafb6ef436df4152def4d59a015e913",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q26-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q26-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。賃借物の全部が滅失等により使用収益できなくなったときは、賃貸借は終了する（616条の2）。",
+   "body": "616条の2は「賃借物の全部が滅失その他の事由により使用及び収益をすることができなくなった場合には、賃貸借は、これによって終了する。」と定める。本肢はこの条文の内容そのままである。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "616_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賃借物の全部が滅失その他の事由により使用及び収益をすることができなくなった場合には、賃貸借は、これによって終了する。",
+     "text_sha256": "5f5899b79e40c94f83428e5284d54d4a38aa2aba597f4f6207124f7ad120cb73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q26-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

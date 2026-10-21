@@ -1,0 +1,265 @@
+{
+ "question_id": "shiho-2021-keiho-q05",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-keiho-q05-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。Ａ説は重なり合う構成要件のうち重い犯罪について共同正犯の成立を認めるから、甲と乙には殺人罪の共同正犯が成立する（甲には軽い傷害致死罪の刑を科す）。",
+   "body": "ポイントは、Ａ説が「より重い犯罪について共同正犯の成立を認め」る見解である点である。【事例】では、乙は未必的な殺意で、甲は傷害の故意で石を投げ、甲の石でＶが死亡しているから、問題となるのは殺人罪（刑法199条「人を殺した者は」）と傷害致死罪（刑法205条「身体を傷害し、よって人を死亡させた者は」）であり、両者は傷害致死の限度で構成要件が重なり合う。Ａ説によれば、重い犯罪である殺人罪について甲乙両名に共同正犯が成立し、殺意のない甲には、刑法38条2項の趣旨に従い軽い傷害致死罪の刑が科されるにとどまる。したがって、甲と乙に殺人罪の共同正犯が成立するとの結論が導かれ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "60",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二人以上共同して犯罪を実行した者は、すべて正犯とする。",
+     "text_sha256": "ba4f29e57aaf29e061a81978acd6bd65630c069f52570a77b08704b872f0233e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者は",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "205",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "身体を傷害し、よって人を死亡させた者は",
+     "text_sha256": "960a4d341d2e03804b55d34a45e7198077c0616adbacf517c88e73a9ab8a2d81",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "38",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その重い罪によって処断することはできない",
+     "text_sha256": "d5cc162963f0d1038efe34868f6bc7f1ca4f6b5888032218d23d667074c890fa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（Ａ説の当てはめ）。"
+   ],
+   "id": "exp-shiho-2021-keiho-q05-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-keiho-q05-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。Ａ説は、軽い犯罪の故意しかない者にも重い犯罪の共同正犯を成立させつつ軽い犯罪の刑を科すから、罪名と科刑が分離するとの批判がある。",
+   "body": "ポイントは、Ａ説が成立する罪と科す刑を別々に決める点である。Ａ説は、重い犯罪について共同正犯の成立を認めたうえで、「軽い犯罪の故意しか有しない者には，軽い犯罪の刑を科す」とする。【事例】に当てはめると、傷害の故意しかない甲について、殺人罪の共同正犯が成立するとしながら、刑は傷害致死罪のものによることになる。刑法38条2項は、重い罪にあたる事実を知らなかった者を「その重い罪によって処断することはできない」とするが、Ａ説では成立する罪名（殺人罪）と科される刑（傷害致死罪）が一致しない。そのため、罪名と科刑が分離し妥当でないとの批判が向けられていると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "38",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その重い罪によって処断することはできない",
+     "text_sha256": "d5cc162963f0d1038efe34868f6bc7f1ca4f6b5888032218d23d667074c890fa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（Ａ説に対する批判）。"
+   ],
+   "id": "exp-shiho-2021-keiho-q05-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-keiho-q05-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。Ｖの死亡は甲の投げた石によるから、乙の殺人を単独犯として構成すると、乙自身の行為と死亡結果との因果関係が欠け、殺人既遂罪を認めにくくなるとの指摘がある。",
+   "body": "ポイントは、Ｂ説では重い犯罪の故意を有する者の重い罪が共同正犯ではなく「単独犯」として構成される点である。Ｂ説によれば、甲乙両名には重なり合う限度で軽い傷害致死罪の共同正犯が成立し、殺意のある乙には、別に殺人罪の単独犯が成立することになる。しかし【事例】では、Ｖの頭部に当たってＶを死亡させたのは甲の投げた石であり、乙の投げた石ではない。単独犯であれば、刑法60条により他人の行為の結果を自分のものとして帰属させることはできないから、乙自身の行為とＶの死亡との因果関係が認められず、乙に殺人既遂罪を認めることが困難となる（殺人未遂罪にとどまりうる）。このような指摘がＢ説に向けられているから、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "60",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二人以上共同して犯罪を実行した者は、すべて正犯とする。",
+     "text_sha256": "ba4f29e57aaf29e061a81978acd6bd65630c069f52570a77b08704b872f0233e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者は",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（Ｂ説に対する指摘）。"
+   ],
+   "id": "exp-shiho-2021-keiho-q05-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-keiho-q05-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。Ｂ説でもＣ説でも、甲には傷害致死罪の共同正犯が成立するから、甲に成立する罪名は異ならない。",
+   "body": "ポイントは、傷害の故意しかない甲について、それぞれの説で何罪が成立するかである。Ｂ説は、構成要件の重なり合う限度で軽い犯罪の共同正犯の成立を認めるから、甲には傷害致死罪（刑法205条）の共同正犯が成立する。Ｃ説は、行為を共同して各自の意図する犯罪を実現する場合も「それぞれの行為について共同正犯の成立を認める」から、傷害の故意で石を投げた甲には、自らの意図に応じた傷害致死罪の共同正犯が成立する。両説で異なるのは乙の扱い（Ｂ説では殺人罪の単独犯、Ｃ説では殺人罪の共同正犯）であり、甲の罪名はいずれも傷害致死罪の共同正犯となる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "205",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "身体を傷害し、よって人を死亡させた者は",
+     "text_sha256": "960a4d341d2e03804b55d34a45e7198077c0616adbacf517c88e73a9ab8a2d81",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "60",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二人以上共同して犯罪を実行した者は、すべて正犯とする。",
+     "text_sha256": "ba4f29e57aaf29e061a81978acd6bd65630c069f52570a77b08704b872f0233e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（Ｂ説・Ｃ説の当てはめ）。"
+   ],
+   "id": "exp-shiho-2021-keiho-q05-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-keiho-q05-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。Ｃ説では各自の意図する犯罪について共同正犯が成立するから、甲には傷害致死罪の共同正犯、殺意のある乙には殺人罪の共同正犯が成立し、両名が傷害致死罪の共同正犯にとどまるのではない。",
+   "body": "誤りは、Ｃ説から甲と乙の両名に「傷害致死罪の共同正犯が成立するにとどまる」とする点である。Ｃ説は、単なる行為を共同して各自の意図する犯罪を実現する場合も、「それぞれの行為について共同正犯の成立を認める」見解である。【事例】では、甲乙両名は石を投げる行為を共同しており、甲は傷害の故意、乙は未必的な殺意を有していたから、甲には傷害致死罪（刑法205条）の共同正犯が、乙には殺人罪（刑法199条）の共同正犯が成立する。乙については、共同正犯として甲の石による死亡結果も帰属されるから、殺人既遂罪の共同正犯となる。したがって、乙についても傷害致死罪の共同正犯にとどまるとする本肢は誤りであり、本問の正解となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "60",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二人以上共同して犯罪を実行した者は、すべて正犯とする。",
+     "text_sha256": "ba4f29e57aaf29e061a81978acd6bd65630c069f52570a77b08704b872f0233e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者は",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "205",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "身体を傷害し、よって人を死亡させた者は",
+     "text_sha256": "960a4d341d2e03804b55d34a45e7198077c0616adbacf517c88e73a9ab8a2d81",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（Ｃ説の当てはめ）。"
+   ],
+   "id": "exp-shiho-2021-keiho-q05-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

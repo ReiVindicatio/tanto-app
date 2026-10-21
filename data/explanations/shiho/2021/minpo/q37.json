@@ -1,0 +1,239 @@
+{
+ "question_id": "shiho-2021-minpo-q37",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q37-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。住宅所有目的の一般の定期借地権の特約は「公正証書による等書面」ですればよく、公正証書に限られない（借地借家法22条）。",
+   "body": "誤りは「公正証書によらなければ」とする点。住宅の所有を目的とする定期借地権は借地借家法22条によるもので、同条1項後段は「この場合においては、その特約は、公正証書による等書面によってしなければならない」と定める。公正証書は書面の例示であり、公正証書以外の書面でも足りる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "借地借家法",
+     "article": "22",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この場合においては、その特約は、公正証書による等書面によってしなければならない。",
+     "text_sha256": "146a2ceccc2b741d42d45404b565a1b15a326762bacfb30606ca37a6f50c1638",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B9%9D%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の22条2項（電磁的記録による特約を書面とみなす規定）は出題後の改正で加わったものと考えられるが、改正前の内容は条文の本文で確認していない。本肢の結論（公正証書に限られない）は1項後段で決まる"
+   ],
+   "id": "exp-shiho-2021-minpo-q37-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q37-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。保証契約は書面でしなければ効力を生じないが、内容を記録した電磁的記録によってされたときは書面によってされたものとみなされる（446条3項）。",
+   "body": "446条2項は「保証契約は、書面でしなければ、その効力を生じない」と定めるが、同条3項は「保証契約がその内容を記録した電磁的記録によってされたときは、その保証契約は、書面によってされたものとみなして、前項の規定を適用する」と定める。電子メールを相互に送受信する方法による合意は、保証契約の内容を記録した電磁的記録によってされたものに当たると解されるので、紙の書面が作成されていなくても保証契約は効力を生じる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "446",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "保証契約は、書面でしなければ、その効力を生じない。",
+     "text_sha256": "e6424d2253d050b253f231250108620ef1fd1a4b00c809e69d5ad83b52a83e72",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "446",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "保証契約がその内容を記録した電磁的記録によってされたときは、その保証契約は、書面によってされたものとみなして、前項の規定を適用する。",
+     "text_sha256": "e6424d2253d050b253f231250108620ef1fd1a4b00c809e69d5ad83b52a83e72",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "電子メールの送受信による合意が「電磁的記録によってされた」に当たるとする点は解釈による"
+   ],
+   "id": "exp-shiho-2021-minpo-q37-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q37-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。贈与者の意思表示が書面でされていれば「書面によらない贈与」には当たらず、贈与者は550条による解除ができないと解されている。",
+   "body": "550条本文は「書面によらない贈与は、各当事者が解除をすることができる」と定める。この「書面」は、贈与者の贈与の意思が書面に表れていれば足り、受贈者の承諾の意思表示まで書面でされていることは要しないと解されている（判例あり（要確認））。したがって、贈与者の意思表示が書面によってされている本肢の贈与は書面による贈与であり、贈与者は550条による解除をすることができない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "550",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "書面によらない贈与は、各当事者が解除をすることができる。",
+     "text_sha256": "7cb02bb2f66b160f472eaf07830a7bbc15363edd63e754fa1c56545ab2675e85",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "贈与者の意思表示が書面でされていれば、受贈者の意思表示が書面でなくても書面による贈与に当たるとした判例",
+     "searched": [
+      "courts.py known 贈与（該当なし）",
+      "courts.py search 書面 贈与 五五〇条（最高裁判例53件。該当を確認できず）",
+      "大審院（データベースにない）の判例である可能性がある"
+     ]
+    }
+   ],
+   "notes": [
+    "受贈者の意思表示が書面であることを要しないとする点は解釈による"
+   ],
+   "id": "exp-shiho-2021-minpo-q37-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q37-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。書面でする消費貸借は、金銭の受取りがなくても、合意によって効力を生ずる（587条の2第1項）。",
+   "body": "誤りは「借主が貸主から合意した金銭を受け取るまでは，その効力を生じない」とする点。587条の2第1項は「前条の規定にかかわらず、書面でする消費貸借は、当事者の一方が金銭その他の物を引き渡すことを約し、相手方がその受け取った物と種類、品質及び数量の同じ物をもって返還をすることを約することによって、その効力を生ずる」と定める。物の受取りによって効力を生ずるのは587条の書面によらない消費貸借であり、書面でする場合は諾成契約となる。なお、受取り前の借主には解除権がある（587条の2第2項）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "587_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条の規定にかかわらず、書面でする消費貸借は、当事者の一方が金銭その他の物を引き渡すことを約し、相手方がその受け取った物と種類、品質及び数量の同じ物をもって返還をすることを約することによって、その効力を生ずる",
+     "text_sha256": "5a0ea6ae149d823c70a121ec5d42cdd6f84a4111fefa76b5fe21084696a45fa1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "587",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方から金銭その他の物を受け取ることによって、その効力を生ずる",
+     "text_sha256": "0e46b5913fa56743adb085f9db6583607289a72004ae00853df8d13d17abc5fd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "587_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "書面でする消費貸借の借主は、貸主から金銭その他の物を受け取るまで、契約の解除をすることができる。",
+     "text_sha256": "5a0ea6ae149d823c70a121ec5d42cdd6f84a4111fefa76b5fe21084696a45fa1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q37-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q37-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。寄託物の受取り前に解除できる受寄者は無報酬の受寄者であり、有償寄託の受寄者は書面の有無にかかわらずこの解除権を持たない（657条の2第2項）。",
+   "body": "誤りは「有償寄託契約の受寄者は，寄託物を受け取るまでは契約の解除をすることができる」とする点。657条の2第2項は「無報酬の受寄者は、寄託物を受け取るまで、契約の解除をすることができる。ただし、書面による寄託については、この限りでない」と定め、受取り前の解除権を無報酬の受寄者に限っている。有償の受寄者が解除できるのは、同条3項により、寄託物を受け取るべき時期を経過しても寄託者が引き渡さず、「相当の期間を定めてその引渡しの催告をし、その期間内に引渡しがないとき」である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "657_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "無報酬の受寄者は、寄託物を受け取るまで、契約の解除をすることができる。ただし、書面による寄託については、この限りでない。",
+     "text_sha256": "3a6f9d3b28c3a32f10037d29d15d824a465aefc7df1365c2521727577a66153f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "657_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "相当の期間を定めてその引渡しの催告をし、その期間内に引渡しがないとき",
+     "text_sha256": "3a6f9d3b28c3a32f10037d29d15d824a465aefc7df1365c2521727577a66153f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q37-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

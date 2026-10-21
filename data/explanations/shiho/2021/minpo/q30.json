@@ -1,0 +1,223 @@
+{
+ "question_id": "shiho-2021-minpo-q30",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q30-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。居住用建物の賃借人が相続人なしに死亡したときは、事実上夫婦と同様の関係にあった同居者が賃借人の権利義務を承継する（借地借家法36条1項）。",
+   "body": "決め手は、賃借人Ｂに相続人がいないことと、Ａが事実上の夫婦として同居していたことです。借地借家法36条1項本文は、「居住の用に供する建物の賃借人が相続人なしに死亡した場合において、その当時婚姻又は縁組の届出をしていないが、建物の賃借人と事実上夫婦又は養親子と同様の関係にあった同居者があるときは、その同居者は、建物の賃借人の権利義務を承継する。」と定めています。ＡＢが同居していたＢの賃借アパートは居住用の建物であり、内縁の夫Ａは同条の同居者にあたるので、Ａは賃借人の権利義務を承継します。なお、同項ただし書により、Ａが相続人なしに死亡したことを知った後一月以内に賃貸人に反対の意思を表示すれば、承継しません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "借地借家法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "居住の用に供する建物の賃借人が相続人なしに死亡した場合において、その当時婚姻又は縁組の届出をしていないが、建物の賃借人と事実上夫婦又は養親子と同様の関係にあった同居者があるときは、その同居者は、建物の賃借人の権利義務を承継する。",
+     "text_sha256": "e578c43aa59a8e726ec0ff89946095f0158eb41cda7160f1693afcad4693b253",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B9%9D%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q30-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q30-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。父が認知した子に対する親権は母が行うのが原則であり、ＡＢが当然に共同して行うのではない（民法819条4項）。",
+   "body": "誤りは「ＡＢが共同して行う」とする点です。父母の双方が親権者となるのは「父母の婚姻中」であり（818条2項）、内縁のＡＢは婚姻していません。父が認知した子については、819条4項が「父が認知した子に対する親権は、母が行う。」と定めているので、Ｃに対する親権は原則として母Ｂが行います。現行法では同項ただし書により「父母の協議で、父母の双方又は父を親権者と定めることができる」ものの、認知によって当然に共同親権となるわけではありません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "818",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "父母の婚姻中はその双方を親権者とする。",
+     "text_sha256": "4da65c3dc327782a0b1bfcf7e68ba4f9db8bec67337e94fc6bea7fd6c12e41dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "819",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "父が認知した子に対する親権は、母が行う。ただし、父母の協議で、父母の双方又は父を親権者と定めることができる。",
+     "text_sha256": "c64e308686bb7b205715f4ba1f7b5628cd9b5c6379cdcdb7b43b58ad73ab22b2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "819条4項ただし書の「父母の双方」を親権者と定める部分は出題後の改正（共同親権の導入）によるものと考えられる。改正前の内容は条文の本文で確認していない。いずれにしても認知だけで当然に共同親権となるわけではないので、×の結論は変わらない。"
+   ],
+   "id": "exp-shiho-2021-minpo-q30-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q30-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。内縁の夫婦の一方の死亡により内縁関係が解消した場合に、財産分与の規定（民法768条）を類推適用することはできない（最決平成12年3月10日）。",
+   "body": "誤りは、死亡による内縁の解消でも財産分与を請求できるとする点です。768条1項は「協議上の離婚をした者の一方は、相手方に対して財産の分与を請求することができる。」と定めており、離婚の場面の規定です。最高裁は、内縁の夫婦の一方の死亡により内縁関係が解消した場合に、民法768条の規定を類推適用することはできないとしました。したがって、ＡはＢの相続人に対して建物の所有権について財産分与を請求することはできません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "768",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "協議上の離婚をした者の一方は、相手方に対して財産の分与を請求することができる。",
+     "text_sha256": "f9bbe6469e675d32da1bc6bc1df1dc9dc7208af280a71b99fa84d8aeb1836b9a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "内縁の死亡解消と財産分与の類推適用",
+     "court": "最高裁判所第一小法廷",
+     "date": "2000-03-10",
+     "case_number": "平成11(許)18",
+     "holding": "内縁の夫婦の一方の死亡により内縁関係が解消した場合に、民法768条の規定を類推適用することはできない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52278/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q30-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q30-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。事実上の夫婦の一方が無断で婚姻届を出した場合でも、他方が後に追認すれば、婚姻は届出の当初に遡って有効となる（最判昭和47年7月25日）。",
+   "body": "決め手は、ＡＢがすでに内縁関係（夫婦としての実質的生活関係）にあったことです。婚姻は「当事者間に婚姻をする意思がないとき」は無効とされ（742条1号）、Ｂに無断でされた届出は、そのままではＢの婚姻意思を欠きます。しかし最高裁は、事実上の夫婦の一方が他方の意思に基づかないで婚姻届を作成提出した場合において、当時夫婦としての実質的生活関係が存在しており、のちに他方が届出の事実を知って追認したときは、婚姻は追認により届出の当初に遡って有効となるとしました。本肢はこの場面にあたるので、正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "742",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人違いその他の事由によって当事者間に婚姻をする意思がないとき。",
+     "text_sha256": "197419afdee9fb1c73fd732c9df9b66ed1921868793dc8a17c150dd60620041c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "無断の婚姻届の追認の効力",
+     "court": "最高裁判所第三小法廷",
+     "date": "1972-07-25",
+     "case_number": "昭和45(オ)238",
+     "holding": "事実上の夫婦の一方が他方の意思に基づかないで婚姻届を作成提出した場合において、当時夫婦としての実質的生活関係が存在しており、のちに他方の配偶者が届出の事実を知って追認したときは、婚姻は追認によりその届出の当初に遡って有効となる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51998/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q30-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q30-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。日常家事債務の連帯責任（民法761条）は内縁の夫婦にも類推適用されると解されているので、Ｂも責任を負う。",
+   "body": "誤りは、Ｂが責任を負わないとする点です。761条本文は「夫婦の一方が日常の家事に関して第三者と法律行為をしたときは、他の一方は、これによって生じた債務について、連帯してその責任を負う。」と定めています。内縁は婚姻に準ずる関係として扱われ、共同生活の実質に基づくこの規定は内縁の夫婦にも類推適用されると解されています（判例あり（要確認））。したがって、Ａが日常の家事に関して第三者と取引をしたときは、Ｂも連帯して責任を負います（同条ただし書の予告をした場合を除く）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "761",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "夫婦の一方が日常の家事に関して第三者と法律行為をしたときは、他の一方は、これによって生じた債務について、連帯してその責任を負う。",
+     "text_sha256": "252588f1fce4b671f9ca20e50363c3f33332ad86a37606ac26305ffda3ea588a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "日常家事債務の連帯責任（民法761条）の内縁の夫婦への類推適用",
+     "searched": [
+      "courts.py search 日常の家事 内縁",
+      "courts.py search 内縁 七六一条 --all",
+      "courts.py search 内縁 日常の家事 --all"
+     ]
+    }
+   ],
+   "notes": [
+    "761条を内縁に類推適用する点は解釈による。"
+   ],
+   "id": "exp-shiho-2021-minpo-q30-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

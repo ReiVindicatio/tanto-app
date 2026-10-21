@@ -1,0 +1,275 @@
+{
+ "question_id": "shiho-2021-keiho-q11",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-keiho-q11-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：刑法上の没収は付加刑であり、主刑を言い渡す場合にそれに付加してだけ科すことができるから、責任無能力を理由に無罪を言い渡すときには没収を科すことはできない。",
+   "body": "決め手は、刑法上の没収が付加刑とされている点である。9条は「死刑、拘禁刑、罰金、拘留及び科料を主刑とし、没収を付加刑とする。」と定めており、付加刑である没収は、主刑を言い渡す場合にこれに付加して科すものであって、単独で科すことはできないと解されている。39条1項は「心神喪失者の行為は、罰しない。」と定めるから、行為者が責任無能力を理由に無罪とされたときは主刑が言い渡されず、これに付加する没収も科すことができない。19条1項2号の物について物の危険性に着目した保安処分的な性格があるとしても、刑法上の没収が刑罰である以上この結論は変わらないと解されている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "死刑、拘禁刑、罰金、拘留及び科料を主刑とし、没収を付加刑とする。",
+     "text_sha256": "aa2d764e6702b4951a739fa2af6042d0b98888c949cc1dcd996e6fffbeef0848",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "心神喪失者の行為は、罰しない。",
+     "text_sha256": "4236e15d1f95ac4b17dcb57ed3f40e51cdea371d6f25530312c8881f35fac335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪行為の用に供し、又は供しようとした物",
+     "text_sha256": "ab7a883ef1271000df093042cb0dec55ba0fca6bbec0ab7cfc6b36775264a999",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "付加刑である没収を主刑なしに単独で科すことができないこと、無罪の場合に没収できないことは、判例・学説の一般的な理解による（解釈による）。判例は探して確かめていない。",
+    "保存した刑法9条の本文は「拘禁刑」に改められた後のもの（出題当時は懲役・禁錮）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2021-keiho-q11-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-keiho-q11-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：犯罪行為の報酬として得た物の対価として得た物は19条1項4号により没収の対象となるから、報酬として得た貴金属を売却して得た現金は、追徴ではなく没収の対象となる。",
+   "body": "決め手は、19条1項4号が「前号に掲げる物の対価として得た物」を没収の対象としている点である。19条1項3号は「犯罪行為の報酬として得た物」を掲げ、4号はその対価として得た物を掲げているから、報酬として得た貴金属（3号）を売却して得た現金は、4号の物として没収することができる。追徴は、19条の2が「前条第一項第三号又は第四号に掲げる物の全部又は一部を没収することができないときは、その価額を追徴することができる。」と定めるとおり、没収することができないときに価額を取り立てる補充的な処分である。本肢の現金は没収できる物そのものであるから、追徴ではなく没収の対象となる。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前号に掲げる物の対価として得た物",
+     "text_sha256": "ab7a883ef1271000df093042cb0dec55ba0fca6bbec0ab7cfc6b36775264a999",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪行為の報酬として得た物",
+     "text_sha256": "ab7a883ef1271000df093042cb0dec55ba0fca6bbec0ab7cfc6b36775264a999",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "19_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条第一項第三号又は第四号に掲げる物の全部又は一部を没収することができないときは、その価額を追徴することができる。",
+     "text_sha256": "1fbebb80fd494476d4f03f84bb41dc9e3e3828db063df1b72fea442846f87d7c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現金が没収時に特定できる状態で残っていることを前提とする。特定できなくなった場合には追徴による（解釈による）。"
+   ],
+   "id": "exp-shiho-2021-keiho-q11-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-keiho-q11-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例は、被害者に撮影録画を知らせて捜査機関への処罰の求めを断念させる目的でひそかに犯行の様子を録画したデジタルビデオカセットは、19条1項2号の「犯罪行為の用に供した物」に当たるとしている。",
+   "body": "決め手は、最高裁が本肢と同じ事案で「犯罪行為の用に供した物」に当たるとした点である。19条1項2号は「犯罪行為の用に供し、又は供しようとした物」を没収の対象としている。最高裁は、被告人が強姦及び強制わいせつの犯行の様子を被害者に気付かれないように撮影しデジタルビデオカセットに録画したのは、被害者にその犯行の様子を撮影録画したことを知らせて、捜査機関に被告人の処罰を求めることを断念させ、刑事責任の追及を免れようとしたためであるという事実関係の下では、当該デジタルビデオカセットは同号にいう「犯罪行為の用に供した物」に当たるとした（最決平成30年6月26日）。したがって、没収の対象とならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪行為の用に供し、又は供しようとした物",
+     "text_sha256": "ab7a883ef1271000df093042cb0dec55ba0fca6bbec0ab7cfc6b36775264a999",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "犯行の様子を隠し撮りしたデジタルビデオカセットと「犯罪行為の用に供した物」",
+     "court": "最高裁判所第一小法廷",
+     "date": "2018-06-26",
+     "case_number": "平成29(あ)530",
+     "holding": "被告人が強姦及び強制わいせつの犯行の様子を被害者に気付かれないように撮影しデジタルビデオカセットに録画したのは、被害者にその犯行の様子を撮影録画したことを知らせて、捜査機関に被告人の処罰を求めることを断念させ、刑事責任の追及を免れようとしたためであるという事実関係の下では、当該各デジタルビデオカセットは刑法19条1項2号にいう「犯罪行為の用に供した物」に当たる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/87850/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例の事案は平成29年改正前の強姦罪・強制わいせつ罪、本肢の「強制性交」は出題当時の罪名。現行法では不同意性交等罪に改められているが、本肢の結論には影響しない。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2021-keiho-q11-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-keiho-q11-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：19条1項は「没収することができる」と定めており、3号の犯罪行為によって得た物も含めて、刑法総則の没収は任意的没収である。",
+   "body": "決め手は、19条1項の柱書きの文言である。19条1項は「次に掲げる物は、没収することができる。」と定め、3号で「犯罪行為によって生じ、若しくはこれによって得た物」を掲げているから、犯罪行為によって得た物の没収は、裁判所の裁量による任意的没収である。これに対し、必要的没収は、例えば197条の5が「犯人又は情を知った第三者が収受した賄賂は、没収する。」と定めるように、個別の規定で「没収する」と定めている場合に限られる。したがって、刑法19条1項3号の物が必要的没収の対象になるとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる物は、没収することができる。",
+     "text_sha256": "ab7a883ef1271000df093042cb0dec55ba0fca6bbec0ab7cfc6b36775264a999",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪行為によって生じ、若しくはこれによって得た物",
+     "text_sha256": "ab7a883ef1271000df093042cb0dec55ba0fca6bbec0ab7cfc6b36775264a999",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "197_5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯人又は情を知った第三者が収受した賄賂は、没収する。",
+     "text_sha256": "dccad099586d6f7758bc2f14eefbb43de1b2ee84e5832ed80be938cf00c427e3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-keiho-q11-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-keiho-q11-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：19条2項は没収の対象を「犯人以外の者に属しない物」としており、犯人の所有物に限られず、無主物なども含まれるうえ、犯罪の後に情を知って取得した第三者の物も没収できる。",
+   "body": "決め手は、19条2項の文言と、そのただし書である。19条2項本文は「没収は、犯人以外の者に属しない物に限り、これをすることができる。」と定めており、犯人の所有物に限るとはしていない。そのため、犯人の所有物のほか、誰の所有にも属しない物（無主物）なども没収の対象となり得ると解されている。さらに同項ただし書は「犯人以外の者に属する物であっても、犯罪の後にその者が情を知って取得したものであるときは、これを没収することができる。」と定めており、一定の場合には第三者の所有物も没収することができる。したがって、没収の対象は犯人の所有物に限られるとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "19",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "没収は、犯人以外の者に属しない物に限り、これをすることができる。",
+     "text_sha256": "ab7a883ef1271000df093042cb0dec55ba0fca6bbec0ab7cfc6b36775264a999",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "19",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "犯人以外の者に属する物であっても、犯罪の後にその者が情を知って取得したものであるときは、これを没収することができる。",
+     "text_sha256": "ab7a883ef1271000df093042cb0dec55ba0fca6bbec0ab7cfc6b36775264a999",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「犯人以外の者に属しない物」に無主物が含まれることは、判例・学説の一般的な理解による（解釈による）。判例は探して確かめていない。"
+   ],
+   "id": "exp-shiho-2021-keiho-q11-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

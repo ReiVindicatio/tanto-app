@@ -1,0 +1,219 @@
+{
+ "question_id": "shiho-2021-minpo-q25",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q25-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。使用貸借の借主は、貸主の承諾を得なければ第三者に借用物を使用させることができない（594条2項）。",
+   "body": "ポイントは「Ａの承諾がなくても」の部分である。594条2項は「借主は、貸主の承諾を得なければ、第三者に借用物の使用又は収益をさせることができない。」と定める。したがって、Ｂは、Ａの承諾がなければ甲建物を第三者に使用させることができない。なお、これに違反して第三者に使用させたときは、594条3項により「貸主は、契約の解除をすることができる。」。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "594",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "借主は、貸主の承諾を得なければ、第三者に借用物の使用又は収益をさせることができない。",
+     "text_sha256": "a6ec91f3157026d57929e0efc87fa64b492ef685f47f3655319424456a22f038",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "594",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "貸主は、契約の解除をすることができる。",
+     "text_sha256": "a6ec91f3157026d57929e0efc87fa64b492ef685f47f3655319424456a22f038",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q25-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q25-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。書面によらない使用貸借の貸主は、借主が借用物を受け取るまで契約を解除できる（593条の2）。",
+   "body": "593条の2は「貸主は、借主が借用物を受け取るまで、契約の解除をすることができる。ただし、書面による使用貸借については、この限りでない。」と定める。本肢の使用貸借は書面によるものではないから、ただし書は働かない。したがって、Ａは、甲建物をＢに引き渡すまでは、いつでも契約を解除することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "593_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "貸主は、借主が借用物を受け取るまで、契約の解除をすることができる。ただし、書面による使用貸借については、この限りでない。",
+     "text_sha256": "b1f51d6755c34b2564d5fb5afa5dc6a2eb91af7b92107969b22e0e9324d6f96e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q25-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q25-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。使用貸借では、借用物の通常の必要費は借主が負担する（595条1項）ので、貸主に請求できない。",
+   "body": "595条1項は「借主は、借用物の通常の必要費を負担する。」と定める。したがって、Ｂが甲建物について通常の必要費を支出しても、その費用をＡに請求することはできない。通常の必要費以外の費用（特別の必要費や有益費）については、595条2項が「第五百八十三条第二項の規定は、前項の通常の必要費以外の費用について準用する。」として、別の扱いをしている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "595",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "借主は、借用物の通常の必要費を負担する。",
+     "text_sha256": "eaef23fd8eca0c1337f6cae60321dac50b16974c4a531b393289776a657c599d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "595",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第五百八十三条第二項の規定は、前項の通常の必要費以外の費用について準用する。",
+     "text_sha256": "eaef23fd8eca0c1337f6cae60321dac50b16974c4a531b393289776a657c599d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "583",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "買主又は転得者が不動産について費用を支出したときは、売主は、第百九十六条の規定に従い、その償還をしなければならない。",
+     "text_sha256": "2a5f725cb5fb8a667784b317514d2519ec573d0f7dc31f50ecf61532151c80de",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q25-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q25-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。期間を定めず使用収益の目的を定めた使用貸借は、借主がその目的に従い使用収益を終えることで終了する（597条2項）。",
+   "body": "597条2項は「当事者が使用貸借の期間を定めなかった場合において、使用及び収益の目的を定めたときは、使用貸借は、借主がその目的に従い使用及び収益を終えることによって終了する。」と定める。本肢では、貸借期間の合意はないが、展示会乙の開催という使用の目的が定められている。したがって、Ｂが展示会乙の会場としての使用を終えることによって、使用貸借は終了する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "597",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当事者が使用貸借の期間を定めなかった場合において、使用及び収益の目的を定めたときは、使用貸借は、借主がその目的に従い使用及び収益を終えることによって終了する。",
+     "text_sha256": "eb103fe512c138a917c45917629b2f48bb91c05b701a6a0baf40d915783a4872",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q25-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q25-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。借主は、受取り後に附属させた物を、使用貸借の終了時に収去する義務を負う。分離に過分の費用を要する物は除かれる（599条1項）。",
+   "body": "599条1項は「借主は、借用物を受け取った後にこれに附属させた物がある場合において、使用貸借が終了したときは、その附属させた物を収去する義務を負う。」と定め、ただし書で「借用物から分離することができない物又は分離するのに過分の費用を要する物については、この限りでない。」とする。本肢の棚は、Ｂが甲建物の使用中に壁面に造り付けた取り外しのできる物である。したがって、取り外しに過分の費用を要するのでない限り、Ｂは、使用貸借の終了時にその棚を収去しなければならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "599",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "借主は、借用物を受け取った後にこれに附属させた物がある場合において、使用貸借が終了したときは、その附属させた物を収去する義務を負う。",
+     "text_sha256": "371aeccd5848f248844ce4d8ddb8bc24619d0714de364c5ea5fa05b6cdec777a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "599",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "借用物から分離することができない物又は分離するのに過分の費用を要する物については、この限りでない。",
+     "text_sha256": "371aeccd5848f248844ce4d8ddb8bc24619d0714de364c5ea5fa05b6cdec777a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q25-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
