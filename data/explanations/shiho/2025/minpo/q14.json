@@ -1,0 +1,211 @@
+{
+ "question_id": "shiho-2025-minpo-q14",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q14-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：取得時効による抵当権の消滅（397条）は「債務者又は抵当権設定者でない者」が占有した場合に限られ、被担保債権の債務者Ｃには当てはまらない。",
+   "body": "結論を分けるのは、時効取得したのが被担保債権の「債務者」である点である。397条は「債務者又は抵当権設定者でない者が抵当不動産について取得時効に必要な要件を具備する占有をしたときは、抵当権は、これによって消滅する。」と定め、債務者を除いている。また396条は「抵当権は、債務者及び抵当権設定者に対しては、その担保する債権と同時でなければ、時効によって消滅しない。」と定める。したがって、債務者Ｃが甲土地を時効取得しても、397条によってＢの抵当権が消滅することはない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "397",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者又は抵当権設定者でない者が抵当不動産について取得時効に必要な要件を具備する占有をしたときは、抵当権は、これによって消滅する。",
+     "text_sha256": "273fdce8a7cd9a2ac5ab26df2c59b7b059906329f02e7faeb5e90bdc53cb9794",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "396",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権は、債務者及び抵当権設定者に対しては、その担保する債権と同時でなければ、時効によって消滅しない。",
+     "text_sha256": "d330c0dc3719af4aa5dc5ee673ebe89c980e34a878e2e3ba4c33f507e880e2ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q14-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q14-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：抵当不動産の所有権を買い受けた第三者が抵当権者の請求に応じて代価を弁済したときは、抵当権はその第三者のために消滅する（378条・代価弁済）。",
+   "body": "378条は「抵当不動産について所有権又は地上権を買い受けた第三者が、抵当権者の請求に応じてその抵当権者にその代価を弁済したときは、抵当権は、その第三者のために消滅する。」と定める。Ｄは抵当権の設定された甲土地の所有権をＡから買い受けた第三者であり、抵当権者Ｂの請求に応じて代価を弁済している。したがって、Ｂの抵当権はＤのために消滅し、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "378",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当不動産について所有権又は地上権を買い受けた第三者が、抵当権者の請求に応じてその抵当権者にその代価を弁済したときは、抵当権は、その第三者のために消滅する。",
+     "text_sha256": "455ddf22d7f68e8db774acfa048b502be191327b9c0f68a8d9ee6d29b28b0c76",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q14-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q14-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：抵当権消滅請求は、競売による差押えの効力が発生する前にしなければならない（382条）。",
+   "body": "誤りは「差押えの効力が生じた後であっても」という点である。379条により、抵当不動産の第三取得者であるＥは抵当権消滅請求をすることができる。しかし382条は「抵当不動産の第三取得者は、抵当権の実行としての競売による差押えの効力が発生する前に、抵当権消滅請求をしなければならない。」と定める。したがって、差押えの効力が生じた後は、Ｅは抵当権消滅請求をすることができない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "379",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当不動産の第三取得者は、第三百八十三条の定めるところにより、抵当権消滅請求をすることができる。",
+     "text_sha256": "797059bccb3e4ef311480cb3af01b57b8faf5cacb525898604a32f570d208842",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "382",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当不動産の第三取得者は、抵当権の実行としての競売による差押えの効力が発生する前に、抵当権消滅請求をしなければならない。",
+     "text_sha256": "556e0fb9ca5cc84bf5c13c50d7c0ecf4c84e0684baec4223778f189e85df18b1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q14-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q14-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：相当の担保を供して消滅を請求できるのは留置権についての定め（301条）であり、抵当権設定者Ａが担保を供して抵当権の消滅を請求できる規定はない。",
+   "body": "301条は「債務者は、相当の担保を供して、留置権の消滅を請求することができる。」と定めるが、これは留置権についての規定であり、抵当権には同様の規定がない。抵当権について消滅を請求する制度としては抵当権消滅請求があるが、379条はこれをすることができる者を「抵当不動産の第三取得者」としている。Ａは甲土地の所有者で抵当権を設定した者であり、第三取得者ではない。したがって、ＡはＢに対し、相当の担保を供して抵当権の消滅を請求することはできず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "301",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、相当の担保を供して、留置権の消滅を請求することができる。",
+     "text_sha256": "0e37a2364d5926cc9d92fc4957706795cd77f2a06b7dd7598348e2abe68e00c4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "379",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当不動産の第三取得者は、第三百八十三条の定めるところにより、抵当権消滅請求をすることができる。",
+     "text_sha256": "797059bccb3e4ef311480cb3af01b57b8faf5cacb525898604a32f570d208842",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「抵当権には担保の供与による消滅請求の規定がない」という点は、民法の規定の構造から説明したもの（解釈による）"
+   ],
+   "id": "exp-shiho-2025-minpo-q14-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q14-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：甲土地が第二順位のＦの抵当権の目的となっているので、179条1項ただし書により、混同によってもＢの抵当権は消滅しない。",
+   "body": "誤りは「Ｂの抵当権は、消滅する」という点である。179条1項本文は、同一物について所有権と他の物権が同一人に帰属したときは他の物権は消滅すると定めるが、同項ただし書は「その物又は当該他の物権が第三者の権利の目的であるときは、この限りでない。」と定める。本肢では、甲土地はＢの抵当権のほかに第三者Ｆの第二順位の抵当権の目的となっている。したがって、Ｂが甲土地の所有権を取得しても、Ｂの第一順位の抵当権は混同によって消滅しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同一物について所有権及び他の物権が同一人に帰属したときは、当該他の物権は、消滅する。ただし、その物又は当該他の物権が第三者の権利の目的であるときは、この限りでない。",
+     "text_sha256": "0222497d61a192fd618b225a5ea9c051766d7c0b9da1f448681d24e57d2fc848",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "ただし書の趣旨（Ｂの抵当権を消滅させると後順位のＦが繰り上がってＢが不利益を受けること）は本文では述べていない"
+   ],
+   "id": "exp-shiho-2025-minpo-q14-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

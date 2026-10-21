@@ -1,0 +1,199 @@
+{
+ "question_id": "shiho-2025-minpo-q15",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q15-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：不特定の債権（特定の継続的取引契約から生ずる債権）に加えて、設定時に現に発生している特定の債権を担保すべき債権に含めることもできると解されている。",
+   "body": "398条の2第2項は、根抵当権の担保すべき「不特定の債権の範囲」を「債務者との特定の継続的取引契約によって生ずるものその他債務者との一定の種類の取引によって生ずるものに限定して、定めなければならない」とする。この規定は不特定の債権の範囲の定め方を制限するものであり、それに加えて特定の債権を担保すべき債権に含めることまでは禁じていない。そのため、当事者の合意により、特定の継続的取引契約から生ずる債権とともに、設定時に現に発生している特定の債権を担保すべき債権に含めることもできると解されている。本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債務者との特定の継続的取引契約によって生ずるものその他債務者との一定の種類の取引によって生ずるものに限定して、定めなければならない",
+     "text_sha256": "deb454f15655bac75478a46ffa49de91e247c051f7e52930ecf453acd07dbbaf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "特定の債権を不特定の債権とあわせて担保すべき債権とすることができるという点は、条文に明文がなく解釈による"
+   ],
+   "id": "exp-shiho-2025-minpo-q15-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q15-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：元本の確定前に債務者のために弁済をした者は、その債権について根抵当権を行使することができない（398条の7第1項後段）。",
+   "body": "誤りは「弁済による代位によって、その根抵当権を行使することができる」という点である。398条の7第1項は「元本の確定前に根抵当権者から債権を取得した者は、その債権について根抵当権を行使することができない。元本の確定前に債務者のために又は債務者に代わって弁済をした者も、同様とする。」と定める。本肢の第三者は、元本の確定前に、担保すべき債権の範囲に含まれる債権を全て弁済して求償権を取得した者であり、同項後段に当たる。したがって、弁済による代位によってその根抵当権を行使することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "元本の確定前に根抵当権者から債権を取得した者は、その債権について根抵当権を行使することができない。元本の確定前に債務者のために又は債務者に代わって弁済をした者も、同様とする。",
+     "text_sha256": "25d5fc9d936f7cc18839c375791728a2b4cd9222fbba5d19d45ec2924ecc9f2d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q15-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q15-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：根抵当権には「最後の２年分」の制限はなく、利息・遅延損害金の全部について極度額を限度として行使できる（398条の3第1項）。",
+   "body": "誤りは「最後の２年分についてのみ」という点である。398条の3第1項は「根抵当権者は、確定した元本並びに利息その他の定期金及び債務の不履行によって生じた損害の賠償の全部について、極度額を限度として、その根抵当権を行使することができる。」と定める。根抵当権では、利息や遅延損害金は期間で区切られず、その「全部」について極度額の範囲で優先弁済を受けられる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "根抵当権者は、確定した元本並びに利息その他の定期金及び債務の不履行によって生じた損害の賠償の全部について、極度額を限度として、その根抵当権を行使することができる。",
+     "text_sha256": "3d1c3209b892156ccec456c9603730174d5f4e8529efe3a5b51c3ade4bbb2871",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q15-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q15-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：元本確定後に債務額が極度額を超えるとき、物上保証人は極度額に相当する金額を払い渡して根抵当権の消滅請求ができる（398条の22第1項）。",
+   "body": "398条の22第1項は「元本の確定後において現に存する債務の額が根抵当権の極度額を超えるときは、他人の債務を担保するためその根抵当権を設定した者」などは「その極度額に相当する金額を払い渡し又は供託して、その根抵当権の消滅請求をすることができる」と定める。物上保証人は「他人の債務を担保するためその根抵当権を設定した者」に当たる。したがって、物上保証人は極度額に相当する額を根抵当権者に払い渡して消滅請求をすることができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_22",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "元本の確定後において現に存する債務の額が根抵当権の極度額を超えるときは、他人の債務を担保するためその根抵当権を設定した者",
+     "text_sha256": "872691a003b95dee5ce002d15be8570b06819efa8644417fbcf4d48433176b64",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_22",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その極度額に相当する金額を払い渡し又は供託して、その根抵当権の消滅請求をすることができる",
+     "text_sha256": "872691a003b95dee5ce002d15be8570b06819efa8644417fbcf4d48433176b64",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q15-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q15-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：元本確定前に禁じられるのは根抵当権者が376条1項の処分を「する」ことであり、先順位の抵当権者から順位の放棄を「受ける」ことは妨げられないと解されている。",
+   "body": "398条の11第1項は「元本の確定前においては、根抵当権者は、第三百七十六条第一項の規定による根抵当権の処分をすることができない。」と定める。376条1項は、抵当権者が「同一の債務者に対する他の債権者の利益のためにその抵当権若しくはその順位を譲渡し、若しくは放棄することができる」と定めている。398条の11第1項が禁じるのは、根抵当権者が自らの根抵当権について順位の放棄などの処分をすることであり、根抵当権者が先順位の抵当権者から順位の放棄を受ける立場に立つことは禁じられていないと解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "元本の確定前においては、根抵当権者は、第三百七十六条第一項の規定による根抵当権の処分をすることができない。",
+     "text_sha256": "feea7ba7c5159e9e4262b357eac2b89c8bccc6e19ed60bc9c48473f3b74180f4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "376",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同一の債務者に対する他の債権者の利益のためにその抵当権若しくはその順位を譲渡し、若しくは放棄することができる",
+     "text_sha256": "025e8e2e0ea73ea255b7e7c9262a42404b859a356b506b37b058597851372cca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "根抵当権者が元本確定前に順位の放棄を受けることができるという点は、条文に明文がなく解釈による"
+   ],
+   "id": "exp-shiho-2025-minpo-q15-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
