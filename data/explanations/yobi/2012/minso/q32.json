@@ -1,0 +1,221 @@
+{
+ "question_id": "yobi-2012-minso-q32",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q32-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：応訴管轄は管轄違いの抗弁を提出しないで本案について弁論をした場合に生ずるので、抗弁を提出していれば生じない。",
+   "body": "ポイントは、応訴管轄の要件に「管轄違いの抗弁を提出しないで」が含まれること。民事訴訟法12条は、被告が第一審裁判所において「管轄違いの抗弁を提出しないで本案について弁論をし、又は弁論準備手続において申述をしたときは、その裁判所は、管轄権を有する」と定める。被告が管轄違いの抗弁を提出したうえで本案について弁論をした場合は、この要件を満たさないから、応訴管轄は生じない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "12",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管轄違いの抗弁を提出しないで本案について弁論をし、又は弁論準備手続において申述をしたときは、その裁判所は、管轄権を有する",
+     "text_sha256": "75f8d56ee368505dfe1ac9e02e64ab5a15598b33402eade659dde68f7fa27884",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-minso-q32-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q32-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：合意管轄は第一審の管轄に限られ、職分管轄は合意で変えることができない。",
+   "body": "ポイントは、合意で定められる管轄の範囲。民事訴訟法11条1項は「当事者は、第一審に限り、合意により管轄裁判所を定めることができる」と定める。合意で定められるのは第一審の土地管轄・事物管轄であり、裁判権の作用の分担に関する職分管轄（審級管轄など）は専属管轄であって、当事者の合意で異なる裁判所を定める余地はないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者は、第一審に限り、合意により管轄裁判所を定めることができる",
+     "text_sha256": "d112c06a4b13099945004a4b9349feac28ae0af80e4468dd139a1ae27c1b1910",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "職分管轄が専属管轄であり合意で変えられないという点は、解釈による。"
+   ],
+   "id": "exp-yobi-2012-minso-q32-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q32-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：合意で定めた専属管轄は移送制限の対象から除かれており、訴訟の著しい遅滞を避けるための移送をすることができる。",
+   "body": "誤りは「移送することはできない」の部分。民事訴訟法17条は、第一審裁判所は、訴訟がその管轄に属する場合でも「訴訟の著しい遅滞を避け、又は当事者間の衡平を図るため必要があると認めるときは」他の管轄裁判所に移送できると定める。20条1項はこの移送などを専属管轄の場合に制限するが、括弧書きで「当事者が第十一条の規定により合意で定めたものを除く。」としている。したがって、専属的な管轄の合意がある場合でも、17条による移送は妨げられない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "17",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の著しい遅滞を避け、又は当事者間の衡平を図るため必要があると認めるときは",
+     "text_sha256": "0b2ccc0c4e558217f4b9052221a14aeb1238e99fce9bb06c999f86d96e3708d2",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が第十一条の規定により合意で定めたものを除く。",
+     "text_sha256": "1638587bee443b97e7ab63722ed8624e2f8b7eb4d033f07b0567695eed7531ff",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-minso-q32-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q32-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：管轄は訴え提起の時を標準とするので、請求の減縮で訴額が140万円以下になっても地方裁判所の管轄は失われず、被告の申立てだけで移送が義務づけられることはない。",
+   "body": "誤りは「移送しなければならない」の部分。民事訴訟法15条は「裁判所の管轄は、訴えの提起の時を標準として定める」としており、訴え提起後に請求を減縮して訴額が裁判所法33条1項1号の「訴訟の目的の価額が百四十万円を超えない請求」に当たることになっても、地方裁判所の管轄は失われない。また、必要的移送を定める民事訴訟法19条1項は「当事者の申立て及び相手方の同意があるとき」に限っており、被告の申立てだけでは足りない。地方裁判所が簡易裁判所の管轄に属する訴訟を自ら審理できることは16条2項からもうかがえる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "15",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所の管轄は、訴えの提起の時を標準として定める",
+     "text_sha256": "fd84bf3091d7baaae09de3ad5bf6a798346311597544236ba0a62f0d67062192",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "裁判所法",
+     "article": "33",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の目的の価額が百四十万円を超えない請求",
+     "text_sha256": "59b209226c1ec4be24efdc8806eba95615b2b7cd2fd9acc69c4f03ab612e50ef",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の申立て及び相手方の同意があるとき",
+     "text_sha256": "90b71f9564db3de15413dc11a7dfee1979f8b4fd8820466505f42cfdea6382c1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "16",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "自ら審理及び裁判をすることができる",
+     "text_sha256": "677f8d00ee757427df499604947d2433f64a63799f1a44473f3431b5fce746e2",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-minso-q32-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q32-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：簡易裁判所で被告が地方裁判所の管轄に属する反訴を提起し、相手方の申立てがあれば、本訴と反訴を地方裁判所に移送しなければならない。",
+   "body": "ポイントは、反訴の提起に基づく移送が必要的であること。民事訴訟法274条1項は「被告が反訴で地方裁判所の管轄に属する請求をした場合において、相手方の申立てがあるときは、簡易裁判所は、決定で、本訴及び反訴を地方裁判所に移送しなければならない」と定める。肢はこの条文のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "274",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告が反訴で地方裁判所の管轄に属する請求をした場合において、相手方の申立てがあるときは、簡易裁判所は、決定で、本訴及び反訴を地方裁判所に移送しなければならない",
+     "text_sha256": "815448db5f9c6792640a4725bf0bed4830d524056e0330028d722f0a051d4cc5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-minso-q32-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,265 @@
+{
+ "question_id": "yobi-2012-minso-q31",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q31-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：訴状の送達ができない場合には裁判長の補正命令・訴状却下の規定が準用され、補正されなければ訴状は命令で却下される。",
+   "body": "ポイントは、送達不能の場合に裁判長の訴状審査権の規定が準用されること。民事訴訟法138条2項は、137条の規定を「訴状の送達をすることができない場合（訴状の送達に必要な費用を予納しない場合を含む。）について準用する」と定める。137条2項は、原告が不備を補正しないときは「裁判長は、命令で、訴状を却下しなければならない」とする。したがって、補正を命じても送達できない場合には、訴状は命令で却下される。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "138",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "訴状の送達をすることができない場合（訴状の送達に必要な費用を予納しない場合を含む。）について準用する",
+     "text_sha256": "8ca1ca93f653346ac62e2e4f81d69c6d5d97389ecb5f3e22b34532a597d234e3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "137",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判長は、命令で、訴状を却下しなければならない",
+     "text_sha256": "786703e334c5cc64bb08495e12206129d733ff46d00cf6bc908b04c63f3cf84d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-minso-q31-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q31-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：訴えの提起による時効の効力は、訴状が被告に送達された時ではなく、訴えが提起された時に生ずる。",
+   "body": "誤りは「訴状が被告に送達された時に生ずる」の部分。民事訴訟法147条は、「訴えが提起されたとき」は「その時に時効の完成猶予又は法律上の期間の遵守のために必要な裁判上の請求があったものとする」と定める。訴えの提起は訴状を裁判所に提出してするから、基準となるのは訴状の提出の時であり、被告への送達の時ではない。現行法では効果は「時効の完成猶予」と呼ばれるが、基準時が訴え提起の時である点は肢の誤りを判断するうえで変わらない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "147",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その時に時効の完成猶予又は法律上の期間の遵守のために必要な裁判上の請求があったものとする",
+     "text_sha256": "7607e36505c991aa31f802bface0de15c9878f51f408ae9e1739fcce70e87613",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題当時は「時効中断」の用語が使われていた。平成29年の民法改正に伴い民事訴訟法147条も改正された。改正前の内容は条文の本文で確認していない。",
+    "「訴えの提起は訴状を裁判所に提出してする」は民事訴訟法134条によるが、本問では本文を引用していない。"
+   ],
+   "id": "exp-yobi-2012-minso-q31-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q31-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：本人に直接交付できない場合でも、補充送達・差置送達・書留郵便等に付する送達などの方法があり、直ちに公示送達によるわけではない。",
+   "body": "誤りは「それができない場合には，公示送達の方法によらなければならない」の部分。民事訴訟法102条の2は「書類の送達は、特別の定めがある場合を除き、送達を受けるべき者に送達すべき書類を交付してする」と交付送達を原則とするが、106条は送達を受けるべき者に出会わないときに同居者などへ交付する補充送達や差置送達を認め、107条はこれらによって送達できない場合の書留郵便等に付する送達を定める。公示送達は、110条1項のとおり送達をすべき場所が知れない場合や「第百七条第一項の規定により送達をすることができない場合」などに限って用いられる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "102_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "書類の送達は、特別の定めがある場合を除き、送達を受けるべき者に送達すべき書類を交付してする",
+     "text_sha256": "2948584ba4fe3766d1a195affe70c19fb2d58200a4e195d7cbdee5ca700be524",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "106",
+     "paragraphs": [
+      "1",
+      "3"
+     ],
+     "quote": "使用人その他の従業者又は同居者であって、書類の受領について相当のわきまえのあるものに書類を交付することができる",
+     "text_sha256": "33cf6a2dfbc8e9ab6130caf6cd68f3c7941e6dad6c4db50c70a527b5ba764b29",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "107",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条の規定により送達をすることができない場合",
+     "text_sha256": "e1c175e3e938c22a735b2d448d5417cbec905b281a4a4ab8bbfd02419412ac10",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "110",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百七条第一項の規定により送達をすることができない場合",
+     "text_sha256": "d449b6cb5f6572eed76e6f0bb842012d41c9d4d2f1f7b310eb45b9e9726c31b2",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "交付送達の原則の規定は、出題当時と現行法とで条番号が異なる可能性がある（現行は102条の2）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2012-minso-q31-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q31-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：裁判長の訴状却下命令は訴状の送達前の段階の措置であり、送達後に不備が判明したときは命令ではなく判決で訴えを却下することになると解されている。",
+   "body": "ポイントは、訴状却下命令ができる時期。民事訴訟法137条2項の「裁判長は、命令で、訴状を却下しなければならない」とする訴状審査は、138条1項の「訴状は、被告に送達しなければならない」より前の段階の手続である。訴状が被告に送達されて訴訟係属が生じた後は、裁判長が命令で訴状を却下することはできず、不備が補正できないときは、裁判所が140条により「判決で、訴えを却下する」ことになると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "137",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判長は、命令で、訴状を却下しなければならない",
+     "text_sha256": "786703e334c5cc64bb08495e12206129d733ff46d00cf6bc908b04c63f3cf84d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "138",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴状は、被告に送達しなければならない",
+     "text_sha256": "8ca1ca93f653346ac62e2e4f81d69c6d5d97389ecb5f3e22b34532a597d234e3",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "140",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "判決で、訴えを却下する",
+     "text_sha256": "537fdea8a1ce2774370c01c05702c4146ce1bb3e206dca3bca7f2a32f0057d88",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "送達後は訴状却下命令ができないという点は条文に直接の文言がなく、解釈による。"
+   ],
+   "id": "exp-yobi-2012-minso-q31-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q31-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：公示送達された訴状に記載された意思表示は、一定期間の経過により相手方に到達したものとみなされる。",
+   "body": "誤りは「到達したことにはならない」の部分。民事訴訟法113条は、当事者が相手方の所在を知ることができない場合において、公示送達がされた書類に「その相手方に対しその訴訟の目的である請求又は防御の方法に関する意思表示をする旨の記載」があるときは、その意思表示は「第百十一条の規定による措置を開始した日から二週間を経過した時に、相手方に到達したものとみなす」と定める。したがって、訴状に記載した契約解除の意思表示も、公示送達によって被告に到達したものとみなされる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その相手方に対しその訴訟の目的である請求又は防御の方法に関する意思表示をする旨の記載",
+     "text_sha256": "f0667fb66c908106a2a2d91dee4e54d5ff47b152d4f0fdcc829912cb70b2028e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百十一条の規定による措置を開始した日から二週間を経過した時に、相手方に到達したものとみなす",
+     "text_sha256": "f0667fb66c908106a2a2d91dee4e54d5ff47b152d4f0fdcc829912cb70b2028e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "民事訴訟法111条・113条は近年の改正（電磁的記録・掲示方法）で文言が変わっている。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2012-minso-q31-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

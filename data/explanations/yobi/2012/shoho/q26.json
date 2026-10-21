@@ -1,0 +1,263 @@
+{
+ "question_id": "yobi-2012-shoho-q26",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q26-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。株主代表訴訟は単独株主権であり、公開会社でも保有期間（6か月）の要件があるだけで、議決権や株式数の100分の3以上という要件はない。",
+   "body": "847条1項は、「六箇月（これを下回る期間を定款で定めた場合にあっては、その期間）前から引き続き株式を有する株主」が、株式会社に対し責任追及等の訴えの提起を請求できるとし、会社が請求の日から60日以内に訴えを提起しないときは、その株主が会社のために訴えを提起できる（同条3項）。ここでは保有期間が要件とされているだけで、保有する議決権や株式の割合は要件とされていない。したがって、総株主の議決権又は発行済株式総数の100分の3以上を要するとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "847",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "六箇月（これを下回る期間を定款で定めた場合にあっては、その期間）前から引き続き株式を有する株主",
+     "text_sha256": "7ef6991ab0a888053685d713579be6d967f82c4594f0fc3d8778bb01c1460b55",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "847",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "株式会社が第一項の規定による請求の日から六十日以内に責任追及等の訴えを提起しないときは、当該請求をした株主は、株式会社のために、責任追及等の訴えを提起することができる。",
+     "text_sha256": "7ef6991ab0a888053685d713579be6d967f82c4594f0fc3d8778bb01c1460b55",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-shoho-q26-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q26-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。株主代表訴訟は役員等の「責任」を追及する訴えであり、在任中の任務懈怠による責任は退任後も消えないから、退任した取締役も被告となる。",
+   "body": "847条1項は、株主が提起を請求できる訴えとして「役員等（第四百二十三条第一項に規定する役員等をいう。）」の「責任を追及する訴え」を掲げている。423条1項は、取締役などの役員等が「その任務を怠ったときは、株式会社に対し、これによって生じた損害を賠償する責任を負う」と定めており、この責任は在任中の任務懈怠によって生じたものであれば、退任によって消滅するわけではない。そのため、退任した取締役についても、在任中の行為に基づく責任を株主代表訴訟で追及できると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "847",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "役員等（第四百二十三条第一項に規定する役員等をいう。）",
+     "text_sha256": "7ef6991ab0a888053685d713579be6d967f82c4594f0fc3d8778bb01c1460b55",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その任務を怠ったときは、株式会社に対し、これによって生じた損害を賠償する責任を負う。",
+     "text_sha256": "0a7329bc93caa7819913258f61953dfd11dd902a080800aa28a5decfb9c6d85a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "退任した取締役を被告にできる点は解釈による。"
+   ],
+   "id": "exp-yobi-2012-shoho-q26-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q26-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。担保提供は「被告の申立てにより」命じられるもので、裁判所が職権で命ずることはできない。",
+   "body": "847条の4第2項は、株主等が責任追及等の訴えを提起したときは、「裁判所は、被告の申立てにより、当該株主等に対し、相当の担保を立てるべきことを命ずることができる」と定める。そして、被告がこの申立てをするには「責任追及等の訴えの提起が悪意によるものであることを疎明しなければならない」（同条3項）。担保提供命令は被告の申立てがあって初めて出されるものであり、職権による担保提供命令の定めはない。「又は職権で」とする点が誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "847_4",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判所は、被告の申立てにより、当該株主等に対し、相当の担保を立てるべきことを命ずることができる。",
+     "text_sha256": "d66622c81ce8e06b1822db6e4034c6f2f38da0f95d481157e8ffad39aab64b16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "847_4",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "被告が前項の申立てをするには、責任追及等の訴えの提起が悪意によるものであることを疎明しなければならない。",
+     "text_sha256": "d66622c81ce8e06b1822db6e4034c6f2f38da0f95d481157e8ffad39aab64b16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行法の847条の4で説明した。出題当時はこの規定が別の条に置かれていたと考えられるが、改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2012-shoho-q26-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q26-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。責任追及等の訴えに係る訴訟上の和解には、総株主の同意を要求する424条は適用されない。",
+   "body": "取締役等の任務懈怠責任は、424条により「総株主の同意がなければ、免除することができない」のが原則である。しかし、850条4項は、424条などの規定は「責任追及等の訴えに係る訴訟における和解をする場合には、適用しない」と定める。株主代表訴訟での和解は、会社が和解の当事者でない場合には、裁判所が会社に和解の内容を通知して異議を催告するなどの手続（850条2項・3項）によって行われ、総株主の同意は要らない。したがって、総株主の同意を得た場合に限るとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "424",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "総株主の同意がなければ、免除することができない。",
+     "text_sha256": "6b179a154fc5dbdb010de72c0b5b3b40a7abc3c1c7c42d0533e029d4a8c02746",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "850",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "責任追及等の訴えに係る訴訟における和解をする場合には、適用しない。",
+     "text_sha256": "98f42dbb6d66b67f1f849566439885e7c91a8fbd932cd4ba20eb2fc9556c219b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "850",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項に規定する場合において、裁判所は、株式会社等に対し、和解の内容を通知し、かつ、当該和解に異議があるときは二週間以内に異議を述べるべき旨を催告しなければならない。",
+     "text_sha256": "98f42dbb6d66b67f1f849566439885e7c91a8fbd932cd4ba20eb2fc9556c219b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "850",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "株式会社等が前項の期間内に書面により異議を述べなかったときは、同項の規定による通知の内容で株主等が和解をすることを承認したものとみなす。",
+     "text_sha256": "98f42dbb6d66b67f1f849566439885e7c91a8fbd932cd4ba20eb2fc9556c219b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行法の本文で説明した。出題後の改正で文言が変わっている可能性があるが、改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2012-shoho-q26-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q26-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。株主でなくなっても訴訟を追行できるのは株式交換・株式移転・合併の場合に限られ、株式を売却した場合は含まれない。",
+   "body": "851条1項は、責任追及等の訴えを提起した株主が訴訟の係属中に株主でなくなった場合であっても、「次に掲げるときは、その者が、訴訟を追行することができる」とし、株式交換又は株式移転により完全親会社の株式を取得したとき（1号）と、合併により存続会社等の株式を取得したとき（2号）を掲げる。株式を売却して株主でなくなった場合はこれらに当たらないから、原則どおり、その者は原告としての適格を失い、訴訟を追行することができないと解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "851",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げるときは、その者が、訴訟を追行することができる。",
+     "text_sha256": "39b92c2da785275852b672692a4d160f2438cd3ad8a640003b710ba1ee186fe6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "851",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その者が当該株式会社の株式交換又は株式移転により当該株式会社の完全親会社の株式を取得したとき。",
+     "text_sha256": "39b92c2da785275852b672692a4d160f2438cd3ad8a640003b710ba1ee186fe6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "株式の売却で株主でなくなった者が原告適格を失う点は、851条の例外に当たらないことからの解釈による。"
+   ],
+   "id": "exp-yobi-2012-shoho-q26-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

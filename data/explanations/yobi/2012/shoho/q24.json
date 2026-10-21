@@ -1,0 +1,286 @@
+{
+ "question_id": "yobi-2012-shoho-q24",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q24-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：社債の発行は「会社」に認められており、会社には合名会社・合同会社も含まれる。",
+   "body": "ポイントは、社債を発行できる主体が株式会社に限られているかである。2条1号は「会社」を「株式会社、合名会社、合資会社又は合同会社をいう。」と定義する。2条23号は社債を「この法律の規定により会社が行う割当てにより発生する当該会社を債務者とする金銭債権」と定め、676条も「会社は、その発行する社債を引き受ける者の募集をしようとするときは」と規定して、主体を株式会社に限っていない。したがって、合名会社も合同会社も社債を発行することができ、記述は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一　会社　株式会社、合名会社、合資会社又は合同会社をいう。",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この法律の規定により会社が行う割当てにより発生する当該会社を債務者とする金銭債権",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "676",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社は、その発行する社債を引き受ける者の募集をしようとするときは",
+     "text_sha256": "bb7f2b3d6a5371f98b77057b082fda745cf01ff72749f2215d3e99da12776c48",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-shoho-q24-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q24-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：持分会社（合名会社・合資会社・合同会社）の社員は、定款に別段の定めがある場合を除き、業務を執行する。",
+   "body": "ポイントは、業務執行に関する590条1項が合名会社と合同会社の双方に適用されるかである。575条1項は「合名会社、合資会社又は合同会社（以下「持分会社」と総称する。）」と定める。590条1項は「社員は、定款に別段の定めがある場合を除き、持分会社の業務を執行する。」と定めており、無限責任社員か有限責任社員かで区別していない。したがって、合名会社でも合同会社でも、社員は定款に別段の定めがない限り業務を執行し、記述は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "575",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "合名会社、合資会社又は合同会社（以下「持分会社」と総称する。）",
+     "text_sha256": "546779aa3ace691bac968df0bf6ae5a022cda3b49edb8ed269d0c79a0ab92b3f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "590",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "社員は、定款に別段の定めがある場合を除き、持分会社の業務を執行する。",
+     "text_sha256": "f421a450da42159f3e773a45cfe47ead7cfc7957fc03c818c7ae4c097f828894",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-shoho-q24-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q24-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：株式交換完全親会社となれるのは株式会社又は合同会社に限られ、合名会社はなれない。",
+   "body": "ポイントは、株式交換完全親会社となることができる会社の範囲である。767条は、株式会社が株式交換をする場合の相手方を「当該株式会社の発行済株式の全部を取得する会社（株式会社又は合同会社に限る。以下この編において「株式交換完全親会社」という。）」と定める。2条31号も株式交換を「株式会社がその発行済株式（株式会社が発行している株式をいう。以下同じ。）の全部を他の株式会社又は合同会社に取得させることをいう。」と定義している。したがって、合名会社は株式交換完全親会社となることができず、合同会社はなることができるから、記述は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "767",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該株式会社の発行済株式の全部を取得する会社（株式会社又は合同会社に限る。以下この編において「株式交換完全親会社」という。）",
+     "text_sha256": "ebc7c769f4af5745677bf5da3eaa927ac972621e03669458ff86bfc9ff700bc9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社がその発行済株式（株式会社が発行している株式をいう。以下同じ。）の全部を他の株式会社又は合同会社に取得させることをいう。",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-shoho-q24-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q24-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：合同会社の社員は有限責任であるが、合名会社の社員は全員が無限責任社員であり、間接有限責任ではない。",
+   "body": "決め手は、合名会社の社員の責任まで「間接有限責任である」としている部分である。576条2項は、合名会社の定款には「その社員の全部を無限責任社員とする旨を記載し、又は記録しなければならない。」と定め、580条1項は、会社財産で債務を完済できない場合などに社員が「連帯して、持分会社の債務を弁済する責任を負う。」と定める。これに対し合同会社は、576条4項により社員の全部が有限責任社員であり、578条により設立の登記の時までに出資の全額を払い込むなどしなければならない。このため、合同会社の社員は会社債権者に対して直接の弁済責任を実際上負わない間接有限責任であると解されている。したがって、合名会社についても間接有限責任とする記述は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "576",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その社員の全部を無限責任社員とする旨を記載し、又は記録しなければならない。",
+     "text_sha256": "ff6d8df6757eee1a46d8e7f5da2f200e8145c188321040bbfb5f4dda3de7a7a0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "576",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "その社員の全部を有限責任社員とする旨を記載し、又は記録しなければならない。",
+     "text_sha256": "ff6d8df6757eee1a46d8e7f5da2f200e8145c188321040bbfb5f4dda3de7a7a0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "580",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯して、持分会社の債務を弁済する責任を負う。",
+     "text_sha256": "31d4daae30d0560d6f3c834ef56cb708e8007e3351177066d28a9898ecf03852",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "580",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "有限責任社員は、その出資の価額（既に持分会社に対し履行した出資の価額を除く。）を限度として、持分会社の債務を弁済する責任を負う。",
+     "text_sha256": "31d4daae30d0560d6f3c834ef56cb708e8007e3351177066d28a9898ecf03852",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "578",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "合同会社の設立の登記をする時までに、その出資に係る金銭の全額を払い込み、又はその出資に係る金銭以外の財産の全部を給付しなければならない。",
+     "text_sha256": "2239489549e1499e25708061783a41192d028c59ce90b3ca078309f6687bfaf2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "合同会社の社員の責任を「間接有限責任」と性格づけるのは解釈による"
+   ],
+   "id": "exp-yobi-2012-shoho-q24-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q24-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：合名会社が合同会社となるのは定款の変更による持分会社の種類の変更であり、組織変更（株式会社と持分会社の間の変更）ではない。",
+   "body": "決め手は「組織変更計画を作成しなければならない」という部分である。2条26号は、組織変更を株式会社が合名会社・合資会社・合同会社となること、又はその逆に持分会社が株式会社となることと定義しており、持分会社の間での変更は含まない。合名会社が合同会社となることは、638条1項3号の「その社員の全部を有限責任社員とする定款の変更　合同会社」によって行われる。したがって、合名会社が合同会社となるのに組織変更計画の作成は必要なく、記述は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二十六　組織変更　次のイ又はロに掲げる会社がその組織を変更することにより当該イ又はロに定める会社となることをいう。",
+     "text_sha256": "1b09cac4a56c1e54a92d36bf5485808cadd98dbc97950c68c8d4e811ef1d61af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "638",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "三　その社員の全部を有限責任社員とする定款の変更　合同会社",
+     "text_sha256": "9a88e7a51f1e4842434d032030b5d9bfad9bac1d15ccb675eb52897d0a0f9ae7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-shoho-q24-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

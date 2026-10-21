@@ -1,0 +1,264 @@
+{
+ "question_id": "yobi-2012-shoho-q25",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q25-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。吸収合併の相手方は会社でなければならないが、事業譲渡の相手方（譲受人）は会社に限られない。",
+   "body": "合併については、748条が「会社は、他の会社と合併をすることができる」と定めており、合併の相手方は会社に限られる。これに対し、事業譲渡について定める467条1項は、株式会社が「事業の全部の譲渡」等をする場合に株主総会の承認を要求するだけで、譲受人を会社に限る定めを置いていない。そのため、事業譲渡の譲受人は会社以外の者（個人など）でもよいと解されている。「いずれにおいても」相手方が会社でなければならないとする点が誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "748",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社は、他の会社と合併をすることができる。",
+     "text_sha256": "1b2a38691feb4687d854ff7ec00ff405e2fdbfb5e8b812d62019dbe1a2c9915a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "467",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "事業の全部の譲渡",
+     "text_sha256": "90383ded1f4a3dce20bdd1672c6aaf03fda339f256628f51e35f32de4bb0a699",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "事業譲渡の譲受人が会社に限られない点は、467条に限定がないことからの解釈による。"
+   ],
+   "id": "exp-yobi-2012-shoho-q25-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q25-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。合併による消滅は解散事由とされているが、事業の全部の譲渡は解散事由とされていない。",
+   "body": "471条は株式会社の解散の事由を列挙しており、その4号に「合併（合併により当該株式会社が消滅する場合に限る。）」を掲げている。したがって、吸収合併の消滅会社は合併によって当然に解散する。他方、471条の各号には事業譲渡は掲げられておらず、譲渡会社は事業の全部を譲渡しても、それだけでは解散しない（解散するには株主総会の決議（同条3号）など別の解散事由が必要である）。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "471",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "合併（合併により当該株式会社が消滅する場合に限る。）",
+     "text_sha256": "1cc51ec8073d5799d2dc3a99306a875a0c6a31d99e39a31261db167ae36e8138",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "471",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の決議",
+     "text_sha256": "1cc51ec8073d5799d2dc3a99306a875a0c6a31d99e39a31261db167ae36e8138",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-shoho-q25-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q25-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。合併対価の種類が限定されない点は正しいが、事業譲渡の対価を金銭に限る定めはない。",
+   "body": "吸収合併では、存続会社が消滅会社の株主に対して「その株式又は持分に代わる金銭等」を交付するとされ（749条1項2号）、存続会社の株式・社債・新株予約権のほか「吸収合併存続株式会社の株式等以外の財産」も対価にできる（同号ホ）。このように合併対価の種類は限定されていない。他方、事業譲渡は譲渡会社と譲受人との間の契約であり、467条1項は株主総会の承認を要求するにとどまり、対価の種類を金銭に限る定めはない。したがって、事業譲渡の対価が金銭に限られるとする点が誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "749",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その株式又は持分に代わる金銭等",
+     "text_sha256": "ea372e51e2d4bef15f0c6cdb53ddc14bd00ff87d798fe83af5637c3a6ff8d20b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "749",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該金銭等が吸収合併存続株式会社の株式等以外の財産であるときは、当該財産の内容及び数若しくは額又はこれらの算定方法",
+     "text_sha256": "ea372e51e2d4bef15f0c6cdb53ddc14bd00ff87d798fe83af5637c3a6ff8d20b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "467",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、次に掲げる行為をする場合には、当該行為がその効力を生ずる日（以下この章において「効力発生日」という。）の前日までに、株主総会の決議によって、当該行為に係る契約の承認を受けなければならない。",
+     "text_sha256": "90383ded1f4a3dce20bdd1672c6aaf03fda339f256628f51e35f32de4bb0a699",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "事業譲渡の対価に制限がない点は、会社法に限定する規定がないことからの解釈による。"
+   ],
+   "id": "exp-yobi-2012-shoho-q25-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q25-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。合併では消滅会社の権利義務が包括的に承継されるが、事業譲渡で債務を免責的に引き受けるには債権者の関与（同意）が必要である。",
+   "body": "750条1項は「吸収合併存続株式会社は、効力発生日に、吸収合併消滅会社の権利義務を承継する」と定めており、合併は包括承継であるから、消滅会社の債務は個々の債権者の同意なしに存続会社に承継される（債権者の保護は債権者異議手続による）。これに対し、事業譲渡は個々の権利義務を移転する取引行為であり、債務を移すには民法の債務引受の規律に従う。免責的債務引受は「債権者と引受人となる者との契約によってすることができる」か、「債務者と引受人となる者が契約をし、債権者が引受人となる者に対して承諾をすることによってもすることができる」とされ（民法472条2項・3項）、いずれにしても債権者の同意が必要である。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "750",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "吸収合併存続株式会社は、効力発生日に、吸収合併消滅会社の権利義務を承継する。",
+     "text_sha256": "a6adbb9e1d6eca7c8bd4cf4318a57675d65f07fd9c76b787405635973ff6ef0d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "免責的債務引受は、債権者と引受人となる者との契約によってすることができる。",
+     "text_sha256": "43b16c10ebd6f4e46a8e8af0e9feb8dcf627456777f33a5b2d70bef51fa55eff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "免責的債務引受は、債務者と引受人となる者が契約をし、債権者が引受人となる者に対して承諾をすることによってもすることができる。",
+     "text_sha256": "43b16c10ebd6f4e46a8e8af0e9feb8dcf627456777f33a5b2d70bef51fa55eff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "民法472条（免責的債務引受）は平成29年の民法改正で新設された規定であり、出題当時は明文がなかった。改正前の内容は条文の本文で確認していない。",
+    "合併が包括承継であること・事業譲渡が個別の移転であることの説明は解釈による。"
+   ],
+   "id": "exp-yobi-2012-shoho-q25-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q25-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。吸収合併の無効は訴えによらなければ主張できないが、事業譲渡にはそのような制限がない。",
+   "body": "828条1項は、同項各号に掲げる行為の無効は「訴えをもってのみ主張することができる」とし、その7号に「会社の吸収合併」を掲げる。したがって、吸収合併の無効は吸収合併無効の訴えによらなければ主張できない。これに対し、828条1項の各号に事業譲渡は掲げられておらず、事業譲渡の無効は、一般原則に従い、訴えによらずに主張できると解されている。「いずれも」訴えによらなければならないとする点が誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "828",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次の各号に掲げる行為の無効は、当該各号に定める期間に、訴えをもってのみ主張することができる。",
+     "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "828",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社の吸収合併　吸収合併の効力が生じた日から六箇月以内",
+     "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "事業譲渡の無効を訴えによらずに主張できる点は解釈による。"
+   ],
+   "id": "exp-yobi-2012-shoho-q25-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

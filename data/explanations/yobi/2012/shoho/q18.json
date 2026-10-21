@@ -1,0 +1,225 @@
+{
+ "question_id": "yobi-2012-shoho-q18",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q18-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。株式会社は、自己株式については議決権を有しない（308条2項）。",
+   "body": "308条2項は「前項の規定にかかわらず、株式会社は、自己株式については、議決権を有しない。」と定める。したがって、株式会社は自己株式について株主総会における議決権を有しないので、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "308",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定にかかわらず、株式会社は、自己株式については、議決権を有しない。",
+     "text_sha256": "3e2fc194c21546ffd77ff7290810c5fc5efb93d1ad84f46a253e7000e26eb21a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-shoho-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q18-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。剰余金の配当の相手方となる株主から、当該株式会社自身は除かれている（453条）。",
+   "body": "453条は「株式会社は、その株主（当該株式会社を除く。）に対し、剰余金の配当をすることができる。」と定める。配当の相手方から当該株式会社自身が除かれているので、株式会社は自己株式について剰余金の配当をすることができず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "453",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、その株主（当該株式会社を除く。）に対し、剰余金の配当をすることができる。",
+     "text_sha256": "5afa0f83a634bb85026931f5d2371354356a8224c016c9d29a8837cd625a7f6f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-shoho-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q18-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。自己株式は資産の部ではなく、純資産の部の株主資本の控除項目として計上する（会社計算規則76条2項）。",
+   "body": "誤りは「資産の部に計上しなければならない」の部分である。会社計算規則24条1項は、株式会社が自己の株式を取得する場合には「その取得価額を、増加すべき自己株式の額とする」と定める。そして同規則76条2項は、株主資本に係る項目を資本金・資本剰余金・利益剰余金・自己株式などに区分し、「第五号に掲げる項目は、控除項目とする」と定め、その5号が自己株式である。したがって、自己株式の取得価額は純資産の部の株主資本から控除する形で示され、資産の部には計上しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "24",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社が当該株式会社の株式を取得する場合には、その取得価額を、増加すべき自己株式の額とする。",
+     "text_sha256": "a43f42b08c7162c8fb867b050fc9ac6ad2c595ec68b945bb71d1881ba1067e0e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "76",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "この場合において、第五号に掲げる項目は、控除項目とする。",
+     "text_sha256": "8c31f37467fee3ae9284e763a18d6dd202d340d0a7ab19b1ee67e1e6750e1d10",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "会社計算規則は取得日時点の現行の本文で説明した。出題当時（2012年）の同規則の条番号・文言は確認していない（改正前の内容は条文の本文で確認していない）"
+   ],
+   "id": "exp-yobi-2012-shoho-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q18-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。自己株式を消却しても資本金の額は減少せず、減少するのはその他資本剰余金である（会社計算規則24条3項）。",
+   "body": "誤りは「資本金の額は，減少する」の部分である。会社法178条1項は「株式会社は、自己株式を消却することができる。」と定めるが、資本金の額を減少するには、447条1項により「株主総会の決議によって」減少する資本金の額などを定める手続が別に必要である。会社計算規則24条3項は、自己株式の消却をする場合には、消却後の「その他資本剰余金の額」を消却の直前の額から消却する自己株式の帳簿価額を減じて得た額とすると定めている。したがって、自己株式の消却によって資本金の額は減少しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "178",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、自己株式を消却することができる。",
+     "text_sha256": "98d5f471056d09ed46576f0472822ceb6392b4f03b673be8c6303cdf13604dd6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "447",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この場合においては、株主総会の決議によって、次に掲げる事項を定めなければならない。",
+     "text_sha256": "1f9119bc0b062175b70a3c1d195b7427c21a0a2479816ec33ef4aa46c3ab3ed5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社計算規則",
+     "article": "24",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "株式会社が自己株式の消却をする場合には、自己株式の消却後のその他資本剰余金の額は、当該自己株式の消却の直前の当該額から当該消却する自己株式の帳簿価額を減じて得た額とする。",
+     "text_sha256": "a43f42b08c7162c8fb867b050fc9ac6ad2c595ec68b945bb71d1881ba1067e0e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "会社計算規則は取得日時点の現行の本文で説明した。出題当時（2012年）の同規則の条番号・文言は確認していない（改正前の内容は条文の本文で確認していない）"
+   ],
+   "id": "exp-yobi-2012-shoho-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q18-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。発行可能株式総数を減少するには定款の変更が必要であり、自己株式の消却によって当然に減少するものではない（113条2項）。",
+   "body": "誤りは「発行可能株式総数は，減少する」の部分である。113条2項は「定款を変更して発行可能株式総数を減少するときは」と定めており、発行可能株式総数を減少させるのは定款の変更による。自己株式の消却（178条1項）は発行済株式の総数を減らすが、定款で定めた発行可能株式総数を変える手続ではないので、消却によって発行可能株式総数は当然には減少しないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "113",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "定款を変更して発行可能株式総数を減少するときは",
+     "text_sha256": "2d3462ae15ac5b9bee9b8bffb3bc77d514f8f36a678c3296cc63d96a6849d218",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "178",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、自己株式を消却することができる。",
+     "text_sha256": "98d5f471056d09ed46576f0472822ceb6392b4f03b673be8c6303cdf13604dd6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（消却によって発行可能株式総数が当然には減少しない点）"
+   ],
+   "id": "exp-yobi-2012-shoho-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

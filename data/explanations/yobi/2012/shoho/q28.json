@@ -1,0 +1,224 @@
+{
+ "question_id": "yobi-2012-shoho-q28",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q28-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：商人間の定期売買では、相手方が直ちに履行の請求をしない限り、解除の意思表示がなくても契約の解除をしたものとみなされる。",
+   "body": "誤りは「解除の意思表示をしなければならない」の部分。商法525条は、商人間の売買で、売買の性質などにより特定の日時に履行しなければ契約の目的を達することができない場合に、当事者の一方が履行をしないでその時期を経過したときは、相手方は「直ちにその履行の請求をした場合を除き、契約の解除をしたものとみなす」と定める。したがって、契約の効力を失わせるために解除の意思表示をする必要はない。逆に、契約を維持したい相手方は、直ちに履行の請求をしなければならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "525",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "直ちにその履行の請求をした場合を除き、契約の解除をしたものとみなす",
+     "text_sha256": "611587b9553b3a296cf92e5483cccf7baeaa1302cabdbeffa487fc992e2f977a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-shoho-q28-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q28-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判例は、不特定物の売買にも商法526条の適用があるとしている。",
+   "body": "ポイントは、検査・通知の義務を定めた商法526条が不特定物の売買にも及ぶかどうか。最高裁昭和35年12月2日判決は、裁判要旨で、不特定物の売買にも商法526条の適用があるとしている。したがって肢は正しい。なお、現行の同条2項は、買主が検査により目的物が「種類、品質又は数量に関して契約の内容に適合しないことを発見したときは、直ちに売主に対してその旨の通知を発しなければ」追完の請求などができないと定めており、肢の「瑕疵」は出題当時の用語である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "526",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "種類、品質又は数量に関して契約の内容に適合しないことを発見したときは、直ちに売主に対してその旨の通知を発しなければ",
+     "text_sha256": "325d8c7dddd20e9e783ec56ebf625415e60a4582c6fc9dcb85b3567731b978ab",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "不特定物売買と商法526条の適用",
+     "court": "最高裁判所第二小法廷",
+     "date": "1960-12-02",
+     "case_number": "昭和33(オ)409",
+     "holding": "不特定物の売買にも商法526条の適用がある。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54885/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "商法526条は平成29年の民法改正に伴う改正で「瑕疵」から「契約の内容に適合しない」へ文言が変わった。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2012-shoho-q28-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q28-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例は、商法526条の要件を満たしても、損害賠償請求権は民法の除斥期間（瑕疵を発見した時から1年）により消滅するとしている。",
+   "body": "誤りは「除斥期間の規定は，適用されなくなる」の部分。最高裁平成4年10月20日判決は、商法526条は買主が損害賠償請求権などを行使するための前提要件を定めたにとどまり、権利の内容と消長は民法の一般原則によるとした。そのうえで、損害賠償請求権は当時の民法の瑕疵担保責任の規定により瑕疵を発見した時から1年の経過で消滅し、このことは商法526条の要件が充足されたこととは関わりがないと判示し、この1年は除斥期間であるとした。したがって、6か月以内に発見して直ちに通知しても、民法の除斥期間の適用は排除されない。現行の商法526条2項も、発見後「直ちに売主に対してその旨の通知を発しなければ」権利を行使できないとする前提要件の規定である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "526",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "直ちに売主に対してその旨の通知を発しなければ",
+     "text_sha256": "325d8c7dddd20e9e783ec56ebf625415e60a4582c6fc9dcb85b3567731b978ab",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "商人間売買の瑕疵担保と民法の除斥期間",
+     "court": "最高裁判所第三小法廷",
+     "date": "1992-10-20",
+     "case_number": "昭和63(オ)1543",
+     "holding": "商法526条は買主が権利を行使するための前提要件を定めたにとどまり、瑕疵担保による損害賠償請求権は民法の規定（判決は民法570条・566条3項を挙げる）により瑕疵の発見から1年で消滅する（同条の要件の充足とは関わりがない）。この1年は除斥期間であり、権利の保存には裁判外で担保責任を問う意思を明確に告げれば足りる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54279/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例が適用した民法570条・566条3項（瑕疵担保責任）は平成29年の民法改正で契約不適合責任の規定に改められた。改正前の内容は条文の本文で確認していない。本文の民法の条文の中身は判決全文の記載によった。"
+   ],
+   "id": "exp-yobi-2012-shoho-q28-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q28-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：買主が受領を拒んでも契約が解除されたものとはみなされず、売主に供託・競売の権利が認められるだけである。",
+   "body": "誤りは「直ちに解除されたものとみなされる」の部分。商法524条1項は、商人間の売買で買主が目的物の受領を拒み、又は受領できないときは、「売主は、その物を供託し、又は相当の期間を定めて催告をした後に競売に付することができる」と定める。受領拒絶によって契約が当然に解除されたものとみなす規定はない（解除を擬制するのは定期売買についての同法525条である）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "524",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "売主は、その物を供託し、又は相当の期間を定めて催告をした後に競売に付することができる",
+     "text_sha256": "022ba2421e5b41b7690bfbc684652f555ba664f02190d18b2f7d3c49b09a2e8c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "525",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "契約の解除をしたものとみなす",
+     "text_sha256": "611587b9553b3a296cf92e5483cccf7baeaa1302cabdbeffa487fc992e2f977a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-shoho-q28-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q28-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：営業所が異なる市町村にあるときは、買主は解除後も売主の費用で目的物を保管・供託しなければならず、送り返す必要はない。",
+   "body": "ポイントは、商法527条の保管・供託義務がどの場合に及ぶか。同条1項は、買主は「契約の解除をしたときであっても、売主の費用をもって売買の目的物を保管し、又は供託しなければならない」と定め、同条4項は、売主及び買主の営業所が「同一の市町村の区域内にある場合には、適用しない」とする。したがって、営業所が異なる市町村にある本肢の場合には同条1項が適用され、買主は目的物を保管又は供託すれば足り、売主に送り返すことは要しないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "527",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "契約の解除をしたときであっても、売主の費用をもって売買の目的物を保管し、又は供託しなければならない",
+     "text_sha256": "6e7bc9afd1835286825d662aba005462186c32180dfddfbc4050244de7156a21",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "527",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "同一の市町村の区域内にある場合には、適用しない",
+     "text_sha256": "6e7bc9afd1835286825d662aba005462186c32180dfddfbc4050244de7156a21",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「送り返すことを要しない」は条文に直接の文言がなく、保管・供託義務の趣旨からの解釈による。",
+    "出題当時の商法527条は同条1項の「前条第一項に規定する場合」の範囲など、改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2012-shoho-q28-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

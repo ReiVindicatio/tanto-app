@@ -1,0 +1,325 @@
+{
+ "question_id": "yobi-2012-shoho-q21",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q21-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。代表取締役は取締役の中から選定するが、代表執行役は執行役の中から選定するのであり、取締役の中から選定する必要はない。",
+   "body": "監査役会設置会社は取締役会を置かなければならず（327条1項2号）、取締役会は「取締役の中から代表取締役を選定しなければならない」（362条3項）。これに対し、代表執行役については、「取締役会は、執行役の中から代表執行役を選定しなければならない」（420条1項）とされている。執行役は取締役を兼ねることができる（402条6項）が、兼ねることが求められているわけではないから、代表執行役が取締役である必要はない。したがって、いずれも取締役の中から選定されなければならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "327",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "監査役会設置会社",
+     "text_sha256": "5a773ce772b81078bdf955298b8ce400edd7c0d886c414d3e6afc8c64f2bdd73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "362",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "取締役会は、取締役の中から代表取締役を選定しなければならない。",
+     "text_sha256": "0c2c40d6cd0d3a3ae0a6e3f00a33298453cecc241308ad598ed1bbbbaf153799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "420",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役会は、執行役の中から代表執行役を選定しなければならない。",
+     "text_sha256": "2161f20b148d10cd2f928e6c68a6ad47c46cd889eeab80b0a6f71c8aa2e7c8e0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "402",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "執行役は、取締役を兼ねることができる。",
+     "text_sha256": "2b193266ef6661a33312d21bccc90f3ad53d1070f19779e3bd80e58c699cd271",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題当時の「委員会設置会社」は、現行法では「指名委員会等設置会社」。改正前の内容は条文の本文で確認していない（現行の条文で説明した）"
+   ],
+   "id": "exp-yobi-2012-shoho-q21-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q21-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。代表取締役は会社の業務に関する一切の裁判上又は裁判外の行為をする権限を有し、この規定は代表執行役に準用される。",
+   "body": "349条4項は、「代表取締役は、株式会社の業務に関する一切の裁判上又は裁判外の行為をする権限を有する」と定め、同条5項は「前項の権限に加えた制限は、善意の第三者に対抗することができない」とする。そして、420条3項は「第三百四十九条第四項及び第五項の規定は代表執行役について」準用している。したがって、代表取締役も代表執行役も、権限に制限が加えられていない限り、会社の業務に関する一切の裁判上及び裁判外の行為をする権限を有し、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "349",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "代表取締役は、株式会社の業務に関する一切の裁判上又は裁判外の行為をする権限を有する。",
+     "text_sha256": "2605a68d9e1410b45862dc660dce5371ff855940f39317abf1b163d007f5445c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "349",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "前項の権限に加えた制限は、善意の第三者に対抗することができない。",
+     "text_sha256": "2605a68d9e1410b45862dc660dce5371ff855940f39317abf1b163d007f5445c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "420",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第三百四十九条第四項及び第五項の規定は代表執行役について",
+     "text_sha256": "2161f20b148d10cd2f928e6c68a6ad47c46cd889eeab80b0a6f71c8aa2e7c8e0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題当時の「委員会設置会社」は、現行法では「指名委員会等設置会社」。改正前の内容は条文の本文で確認していない（現行の条文で説明した）"
+   ],
+   "id": "exp-yobi-2012-shoho-q21-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q21-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。取締役は多額の借財の決定の委任を受けられないが、執行役は取締役会から委任を受けることができる。",
+   "body": "監査役会設置会社の取締役会については、362条4項が「次に掲げる事項その他の重要な業務執行の決定を取締役に委任することができない」とし、2号に「多額の借財」を掲げる。これに対し、指名委員会等設置会社の取締役会は、「その決議によって、指名委員会等設置会社の業務執行の決定を執行役に委任することができる」（416条4項本文）とされ、同項ただし書で委任できない事項が列挙されているが、多額の借財の決定はそこに含まれていない。委任を受けた執行役は、その業務の執行の決定を行う（418条1号）。したがって、いずれも委任を受けることができないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "362",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "取締役会は、次に掲げる事項その他の重要な業務執行の決定を取締役に委任することができない。",
+     "text_sha256": "0c2c40d6cd0d3a3ae0a6e3f00a33298453cecc241308ad598ed1bbbbaf153799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "362",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "多額の借財",
+     "text_sha256": "0c2c40d6cd0d3a3ae0a6e3f00a33298453cecc241308ad598ed1bbbbaf153799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "416",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "指名委員会等設置会社の取締役会は、その決議によって、指名委員会等設置会社の業務執行の決定を執行役に委任することができる。ただし、次に掲げる事項については、この限りでない。",
+     "text_sha256": "bf5a36ceafbacef120a250d476286f26398b926be80addefcad468bcd7a40d1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "418",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四百十六条第四項の規定による取締役会の決議によって委任を受けた指名委員会等設置会社の業務の執行の決定",
+     "text_sha256": "9bc27fbd3f7f662292cb8c869723bf48fa68855471c563eb7259a417996e0c1c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題当時の「委員会設置会社」は、現行法では「指名委員会等設置会社」。416条4項ただし書の列挙事項は出題後に追加されたものがある。改正前の内容は条文の本文で確認していない（現行の条文で説明した）"
+   ],
+   "id": "exp-yobi-2012-shoho-q21-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q21-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。使用人の兼務を禁じられるのは指名委員会等設置会社の取締役であり、監査役会設置会社の取締役も執行役も使用人を兼ねることができる。",
+   "body": "331条4項は、「指名委員会等設置会社の取締役は、当該指名委員会等設置会社の支配人その他の使用人を兼ねることができない」と定めるが、これは指名委員会等設置会社の取締役についての規定であり、監査役会設置会社の取締役には同様の禁止規定はない。最高裁昭和60年3月26日判決も、代表取締役以外の通常の取締役が会社の使用人を兼ねることが会社の機関の本質に反し許されないとはいえないとした原審の判断を是認している。また、執行役については、402条4項が準用するのは331条1項（欠格事由）等であって331条4項は準用されておらず、執行役が使用人を兼ねることを禁止する規定はない。したがって、いずれも使用人を兼ねることができないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "331",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "指名委員会等設置会社の取締役は、当該指名委員会等設置会社の支配人その他の使用人を兼ねることができない。",
+     "text_sha256": "efd945351abf4f2bc71a6d6346b8558854d58983c43540d7c48f20b7f8bdc7ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "331",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる者は、取締役となることができない。",
+     "text_sha256": "efd945351abf4f2bc71a6d6346b8558854d58983c43540d7c48f20b7f8bdc7ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "402",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "第三百三十一条第一項及び第三百三十一条の二の規定は、執行役について準用する。",
+     "text_sha256": "2b193266ef6661a33312d21bccc90f3ad53d1070f19779e3bd80e58c699cd271",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "使用人兼務取締役の報酬決議",
+     "court": "最高裁判所第三小法廷",
+     "date": "1985-03-26",
+     "case_number": "昭和59(オ)1100",
+     "holding": "代表取締役以外の通常の取締役が当該会社の使用人を兼ねることが会社の機関の本質に反し許されないということもできないとした原審の判断を正当として是認した。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/62923/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "出題当時の「委員会設置会社」は、現行法では「指名委員会等設置会社」。改正前の内容は条文の本文で確認していない（現行の条文で説明した）",
+    "執行役が使用人を兼ねられるとする点は、禁止規定がないことからの解釈による"
+   ],
+   "id": "exp-yobi-2012-shoho-q21-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-shoho-q21-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。取締役の忠実義務の規定は、執行役にも準用される。",
+   "body": "355条は、「取締役は、法令及び定款並びに株主総会の決議を遵守し、株式会社のため忠実にその職務を行わなければならない」と定める。そして、419条2項は「第三百五十五条、第三百五十六条及び第三百六十五条第二項の規定は、執行役について準用する」としている。したがって、取締役も執行役も、法令・定款・株主総会の決議を遵守し、会社のため忠実に職務を行う義務を負い、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "355",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役は、法令及び定款並びに株主総会の決議を遵守し、株式会社のため忠実にその職務を行わなければならない。",
+     "text_sha256": "23a0d5f9a44334ab19adb6a3d54c0b6e4efc56e437cd8e33ac1b7781e2eb3a41",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "419",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第三百五十五条、第三百五十六条及び第三百六十五条第二項の規定は、執行役について準用する。",
+     "text_sha256": "2e32e6e56c38cc259913f6a6d09fa59a1fdc1f4e36c0d6556ad2ba4394692205",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題当時の「委員会設置会社」は、現行法では「指名委員会等設置会社」。改正前の内容は条文の本文で確認していない（現行の条文で説明した）"
+   ],
+   "id": "exp-yobi-2012-shoho-q21-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
