@@ -10,7 +10,12 @@
 使い方：
   python3 pipeline/explain_commit.py
   python3 pipeline/explain_commit.py --skip yobi-2026-keiso-q14 "刑事訴訟規則で決まる（e-Gov にない）"
+  python3 pipeline/explain_commit.py --skip-recheck yobi-2026-minpo-q02 "判決と公式の○×が合わない（肢e）"
   python3 pipeline/explain_commit.py --no-push      # commit まで（確認用）
+  python3 pipeline/explain_commit.py --recheck      # 今のバッチを判例の確かめ直し（T041）として扱う（ふつうは .claude/current_batch.json の記録に従う）
+
+次のバッチは、判例の確かめ直しの ①（第三者サイトの判例）が残っている間は確かめ直し、それ以後は解説の生成と確かめ直しを
+交互に出し、.claude/current_batch.json に書く（pipeline/batch_status.py が進み具合を見る）。
 """
 from __future__ import annotations
 
@@ -23,12 +28,17 @@ import sys
 
 from common import ROOT
 from explain_queue import queue
+import case_queue
 
 SKIPS = ROOT / "data" / "review" / "explain_skips.json"
+RECHECK_SKIPS = ROOT / "data" / "review" / "recheck_skips.json"
 NOW = ROOT / "NOW.md"
 INDEX = ROOT / "app" / "public" / "data" / "index.json"
 PATHS = ["data/explanations", "data/review", "data/statutes", "pipeline/egov.py", "app/public/data", "NOW.md",
          "prompts/explain-runbook.md", "pipeline/explain_commit.py", ".gitignore"]
+RECHECK_LINE = "- **判例の確かめ直し（T041）"
+BATCH = ROOT / ".claude" / "current_batch.json"  # 次のバッチ（git には入れない）
+BATCH_SIZE = 18
 CO_AUTHOR = "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 
 
@@ -39,16 +49,16 @@ def run(*args: str, check: bool = True) -> str:
     return r.stdout
 
 
-def add_skips(pairs: list[list[str]]) -> None:
+def add_skips(pairs: list[list[str]], path=SKIPS) -> None:
     if not pairs:
         return
-    doc = json.loads(SKIPS.read_text(encoding="utf-8"))
+    doc = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"skips": []}
     have = {s["question_id"] for s in doc["skips"]}
     today = datetime.date.today().isoformat()
     for qid, reason in pairs:
         if qid not in have:
             doc["skips"].append({"question_id": qid, "reason": reason, "at": today})
-    SKIPS.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
 def changed_questions() -> list[str]:
@@ -74,6 +84,14 @@ def update_now() -> str:
     s = re.sub(r"  - 🔴 公式の○×と食い違った解説.*\n", "", s)
     if mm := mismatches():  # 禁止事項2：食い違いは公開から外し、NOW.md に残す
         s = s.replace(line, line + f"  - 🔴 公式の○×と食い違った解説（公開から外した。法改正かパースの誤りの信号）：{'、'.join(mm)}\n")
+    if (cq := case_queue.queue()) or RECHECK_LINE in s:
+        first = sum(1 for x in cq if x[0] == 1)
+        rline = (f"{RECHECK_LINE}**（{stamp} 時点：残り {len(cq)}問（① 第三者サイトの判例 {first}問・② 要確認 {len(cq) - first}問）。"
+                 f"手順は `prompts/explain-runbook.md` の「判例の確かめ直し」）\n")
+        if RECHECK_LINE in s:
+            s = re.sub(re.escape(RECHECK_LINE) + r".*\n", lambda _: rline, s)
+        else:
+            s = s.replace(line, line + rline)
     NOW.write_text(s, encoding="utf-8")
     return line.strip()
 
@@ -112,7 +130,10 @@ def count_window(start_end: str | None, start_used: int | None) -> None:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--skip", nargs=2, action="append", default=[], metavar=("QUESTION_ID", "REASON"))
+    ap.add_argument("--skip-recheck", nargs=2, action="append", default=[], metavar=("QUESTION_ID", "REASON"),
+                    help="判例の確かめ直しのキューから外す（判決と公式の○×が合わない、など）")
     ap.add_argument("--no-push", action="store_true")
+    ap.add_argument("--recheck", action="store_true", help="判例の確かめ直し（T041）のバッチ")
     ap.add_argument("--window", nargs=2, metavar=("RESET_AT", "USED_PERCENT"),
                     help="5時間枠を合わせるだけ（例 2026-10-20T14:41 18）。commit はしない")
     args = ap.parse_args()
@@ -120,14 +141,18 @@ def main() -> None:
     if args.window:
         count_window(args.window[0], int(args.window[1]))
         return
+    cur = json.loads(BATCH.read_text(encoding="utf-8")) if BATCH.exists() else {}
+    mode = "recheck" if args.recheck else cur.get("mode", "explain")
     add_skips(args.skip)
+    add_skips(args.skip_recheck, RECHECK_SKIPS)
     print(run(sys.executable, str(ROOT / "pipeline" / "regen.py")).strip().splitlines()[-1])
     qs = changed_questions()
     print(update_now())
     run("git", "add", *PATHS)
     if run("git", "diff", "--cached", "--name-only").strip():
         what = f"{qs[0]}〜{qs[-1]}（{len(qs)}問）" if qs else "記録の更新"
-        run("git", "commit", "-q", "-m", f"解説：{what}\n\n{CO_AUTHOR}")
+        title = "判例の確かめ直し" if mode == "recheck" else "解説"
+        run("git", "commit", "-q", "-m", f"{title}：{what}\n\n{CO_AUTHOR}")
         print(run("git", "log", "--oneline", "-1").strip())
         if not args.no_push:
             run("git", "push", "-q", "origin", "main")
@@ -135,8 +160,28 @@ def main() -> None:
     else:
         print("（commit するものなし）")
     count_window(None, None)
-    print("次の18問：")
-    for exam, year, subj, num, _ in queue()[:18]:
+    next_batch(mode)
+
+
+def next_batch(prev: str) -> None:
+    cq = case_queue.queue()
+    eq = queue()
+    if any(x[0] == 1 for x in cq):
+        mode = "recheck"
+    elif cq and eq:
+        mode = "recheck" if prev == "explain" else "explain"
+    else:
+        mode = "recheck" if cq else "explain"
+    qs = [list(x[1:5]) for x in cq] if mode == "recheck" else [list(x[:4]) for x in eq]
+    qs = qs[:BATCH_SIZE]
+    BATCH.write_text(json.dumps({"mode": mode, "questions": qs, "written_at": datetime.datetime.now().isoformat(timespec="seconds")},
+                                ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    if not qs:
+        print("🏁 解説の生成・判例の確かめ直しのキューがどちらも空")
+        return
+    agent = "case-rechecker" if mode == "recheck" else "explain-writer"
+    print(f"次のバッチ：{'判例の確かめ直し' if mode == 'recheck' else '解説の生成'}（サブエージェント {agent}）{len(qs)}問：")
+    for exam, year, subj, num in qs:
         print(f"  {exam} {year} {subj} {num}")
 
 

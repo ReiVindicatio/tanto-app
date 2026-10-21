@@ -23,6 +23,7 @@
 - **1問ずつ（その問の肢をまとめて）**生成し、1問ごとにファイルへ書き出して `pipeline/check_explanations.py` を通してから次へ進む。次に作る問は `pipeline/explain_queue.py` が出す。`/loop` で続けて回すときは `prompts/explain-runbook.md` に従い、サブエージェントで並行して書く（📖 `docs/decisions/021`）。止まっても、キューの続きから再開できる
 - 生成の指示は `prompts/explain-vN.md` に置き、解説ファイルに `prompt_version` と生成日を記録する。**指示を変えたら版を上げる**
 - 入力は「肢・前提文・公式の○×（固定）・e-Gov から取った条文本文」。公式の○×はモデルに判定させない
+- 判例は `pipeline/courts.py` で裁判所の判決のページを確かめたものだけ載せ、確かめられないものは `pending_cases` に残す（WebSearch は判例の確かめに使わない。📖 `docs/decisions/022`）
 - 生成後に**公式の○×との整合チェック**を必ず通す。食い違ったものは公開対象から外し、`NOW.md` に残す
 - 生成は**全科目が対象**（「学習を終えた科目から」の制限は 2026-10-19 にやめた。📖 `docs/decisions/021`）。AI が生成した解説である表示は必ず付ける
 
