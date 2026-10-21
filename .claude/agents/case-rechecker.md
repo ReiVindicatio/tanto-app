@@ -18,6 +18,7 @@ tools: Read, Write, Edit, Bash
 - 判例は `python3 pipeline/courts.py search／show／pdf` だけで確かめる。まず `python3 pipeline/courts.py known <語>` で、ほかの解説で確かめ済みの判例がないか引く（あれば `show` で中身を確かめて使う）。なければ `search` で探す。WebSearch・解説サイト・予備校・検索結果の要約は使わない
 - 公式の○×（`stated_truth`・正本）には触れない。確かめた判決が肢の結論と合わないときは、直さずに「🔴 判決と公式の○×が合わない：<肢ID>（理由）」と報告して、その問は止める
 - 判決に書いていないことを判例の判示として書かない。日付・事件番号を記憶で書かない
+- `citations` には `type`・`law`・`article`・`paragraphs`・`quote` だけ書けばよい（`text_sha256`・`fetched_at`・`source_url` は `check_explanations.py` が自動で書き足す。表示されないからといって引用を外さない）
 - 本文で条番号に触れたら、その条を `python3 pipeline/egov.py <正式な法令名> <条>` で表示して `citations` に入れる（引用は表示した本文と一致させる）。**法令が保存されていないと思い込まない**：建築基準法・道路交通法・行政法の各法など、保存済みの法令は多い。実行してエラーになったときだけ、本文から条番号を外す
 
 ## 使ってよい道具（これ以外は使わない）

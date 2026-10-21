@@ -23,6 +23,7 @@ tools: Read, Write, Edit, Bash
 - WebSearch・解説サイト・予備校・検索結果の要約は使わない（素材にしない）
 - 刑事訴訟規則・民事訴訟規則・大日本帝国憲法は e-Gov になく使えない。日本国憲法の前文は egov.py で取り出せない。それで答えが決まる肢は書かずに報告する。必要な法令が保存されていなければ、その問は書き出さずに「法令がない：<法令名>」と報告する
 - 問題文に参照条文として載っている法令の中身は、その問題文を根拠にしてよい
+- `citations` には `type`・`law`・`article`・`paragraphs`・`quote` だけ書けばよい（`text_sha256`・`fetched_at`・`source_url` は `check_explanations.py` が自動で書き足す。表示されないからといって引用を外さない）
 - generated_by.model は実行しているモデルの ID、generated_at は今日の日付
 
 ## 使ってよい道具（これ以外は使わない）
