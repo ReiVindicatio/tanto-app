@@ -1,7 +1,7 @@
 """判例の確かめ直しのキュー：確かめ直しが要る解説の問を、決まった順に出す（T041・決定022）。
 
 対象（順に）：
-  ① 判例の verified_urls に courts.go.jp 以外の URL がある問（第三者サイトで確かめたもの）
+  ① 判例の verified_urls に courts.go.jp 以外の URL・今は開けない旧形式の URL がある問
   ② 本文に「判例あり（要確認）」があり、pending_cases がまだない問
 data/review/recheck_skips.json に載せた問（判決と公式の○×が合わない、など）は出さない。
 順は、①→② のそれぞれで、予備 → 司法、新しい年度から、科目は決まった順、問番号の順。
@@ -16,7 +16,7 @@ import argparse
 import json
 import re
 
-from check_explanations import CASE_URL_PREFIX, EXPLANATIONS, PENDING_MARK
+from check_explanations import EXPLANATIONS, PENDING_MARK, bad_case_url
 from common import ROOT
 from explain_queue import EXAM_ORDER, SUBJECT_ORDER
 
@@ -27,7 +27,7 @@ def needs(doc: dict) -> tuple[int, int]:
     """(①の肢の数, ②の肢の数)"""
     bad_url = pending = 0
     for e in doc["explanations"]:
-        if any(not u.startswith(CASE_URL_PREFIX) for c in e.get("cases", []) for u in c.get("verified_urls", [])):
+        if any(bad_case_url(u) for c in e.get("cases", []) for u in c.get("verified_urls", [])):
             bad_url += 1
         elif PENDING_MARK in e.get("conclusion", "") + e.get("body", "") and "pending_cases" not in e:
             pending += 1

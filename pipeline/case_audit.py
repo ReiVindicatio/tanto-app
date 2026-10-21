@@ -39,10 +39,14 @@ def main() -> None:
         for e in doc["explanations"]:
             for c in e.get("cases", []):
                 for u in c.get("verified_urls", []):
-                    m = re.search(r"courts\.go\.jp/hanrei/(\d+)/detail\d", u)
+                    m = re.search(r"courts\.go\.jp/hanrei/(\d+)/detail\d", u) or re.search(r"hanrei-pdf-(\d+)\.pdf", u)
+                    if "courts.go.jp/app/files/" in u:
+                        rows.append({"statement": e["target"]["id"], "url": u, "problem": "旧形式の URL（今は開けない。判決のページの URL に替える）"})
+                        continue
                     if not m:
                         continue
                     checked += 1
+                    u = courts.detail_url(m.group(1))  # 全文 PDF の URL は、同じ番号の判決のページで突き合わせる
                     want = iso(c.get("date", ""))
                     try:
                         fields = courts.parse_detail(courts.fetch(u).decode("utf-8", "replace"))

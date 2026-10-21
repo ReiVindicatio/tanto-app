@@ -39,6 +39,11 @@ def ws(s: str) -> str:
     return re.sub(r"\s+", "", s)
 
 
+def bad_case_url(u: str) -> bool:
+    """確かめに使えない URL：courts.go.jp 以外、または今は開けない旧形式（/app/files/）"""
+    return not u.startswith(CASE_URL_PREFIX) or "/app/files/" in u
+
+
 def prompt_major(doc: dict) -> int:
     m = re.search(r"explain-v(\d+)", doc.get("prompt_version", ""))
     return int(m.group(1)) if m else 0
@@ -61,10 +66,10 @@ def case_checks(e: dict, strict_pending: bool) -> tuple[list[str], list[str]]:
     elif PENDING_MARK in text:
         (fails if strict_pending else warns).append("本文に「判例あり（要確認）」があるのに pending_cases がない（T041 で確かめ直す）")
     for case in e.get("cases", []):
-        bad = [u for u in case.get("verified_urls", []) if not u.startswith(CASE_URL_PREFIX)]
+        bad = [u for u in case.get("verified_urls", []) if bad_case_url(u)]
         if bad:
             (fails if STRICT_CASE_URLS else warns).append(
-                f"判例 {case.get('name', '?')}：courts.go.jp 以外の URL で確かめている {bad[:2]}（T041 で確かめ直す）")
+                f"判例 {case.get('name', '?')}：courts.go.jp 以外か旧形式の URL で確かめている {bad[:2]}（T041 で確かめ直す）")
     return fails, warns
 
 

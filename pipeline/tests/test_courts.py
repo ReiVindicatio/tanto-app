@@ -41,7 +41,8 @@ class CourtsParseTest(unittest.TestCase):
     def test_search_url_with_date(self):
         url = courts.search_url(["留置権"], date="1972-11-16")
         q = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(url).query))
-        self.assertEqual(q["filter[division][]"], "1")
+        divisions = [v for k, v in urllib.parse.parse_qsl(urllib.parse.urlsplit(url).query) if k == "filter[division][]"]
+        self.assertEqual(divisions, ["1", "2"])  # 民事と刑事の両方（1 だけだと刑事の判例が出ない）
         self.assertEqual((q["filter[judgeGengoFrom]"], q["filter[judgeYearFrom]"]), ("昭和", "47"))
         self.assertEqual((q["filter[judgeMonthTo]"], q["filter[judgeDayTo]"]), ("11", "16"))
         self.assertEqual(courts.parse_date("昭和47-11-16"), ("昭和", 47, 11, 16))

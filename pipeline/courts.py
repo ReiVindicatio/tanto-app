@@ -103,7 +103,7 @@ def search_url(words: list[str], date: str | None = None, start: str | None = No
     if len(words) > 1:
         params.append(("query2", " ".join(words[1:])))
     if not all_courts:
-        params.append(("filter[division][]", "1"))  # 最高裁判例
+        params += [("filter[division][]", "1"), ("filter[division][]", "2")]  # 最高裁判例の民事（1）と刑事（2）
     lo = hi = None
     if date:
         lo = hi = parse_date(date)
