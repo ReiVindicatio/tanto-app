@@ -1,0 +1,240 @@
+{
+ "question_id": "shiho-2022-minpo-q29",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q29-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例は、不法行為に基づく損害賠償債務は催告を要することなく損害の発生と同時に遅滞に陥るとしているから、請求を受けた時から遅滞に陥るとする点が誤り。",
+   "body": "誤りの決め手は、遅滞に陥る時期を「被害者から請求を受けた時」とする部分である。期限の定めのない債務について、民法412条3項は「債務の履行について期限を定めなかったときは、債務者は、履行の請求を受けた時から遅滞の責任を負う。」と定めており、本肢はこれを不法行為に当てはめたものである。しかし、最高裁昭和37年9月4日判決は、不法行為に基づく損害賠償債務は、なんらの催告を要することなく、損害の発生と同時に遅滞に陥るとした。したがって、加害者は請求を受ける前から遅滞の責任を負い、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "412",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "債務の履行について期限を定めなかったときは、債務者は、履行の請求を受けた時から遅滞の責任を負う。",
+     "text_sha256": "f4fa559cc04ea54ec21234490f08e386ccfdf08e099045e9b123098d7a3c0fc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "不法行為に基づく損害賠償債務の遅滞の時期",
+     "court": "最高裁判所第三小法廷",
+     "date": "1962-09-04",
+     "case_number": "昭和34(オ)117",
+     "holding": "不法行為に基づく損害賠償債務は、なんらの催告を要することなく、損害の発生と同時に遅滞に陥る。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52954/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q29-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q29-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：不法行為による損害賠償請求権は、不法行為の時から20年間行使しないときは時効によって消滅する（724条2号）。",
+   "body": "本肢は民法724条2号のとおりである。同条は「不法行為による損害賠償の請求権は、次に掲げる場合には、時効によって消滅する。」と定め、1号で「被害者又はその法定代理人が損害及び加害者を知った時から三年間行使しないとき。」、2号で「不法行為の時から二十年間行使しないとき。」を掲げる。2号の20年の期間も、条文上「時効によって消滅する」場合として定められている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "724",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法行為による損害賠償の請求権は、次に掲げる場合には、時効によって消滅する。",
+     "text_sha256": "ef09e527bf1538d00a533a74fc91d841d976b2aa3715a76118de19f1cc424dad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "724",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被害者又はその法定代理人が損害及び加害者を知った時から三年間行使しないとき。",
+     "text_sha256": "ef09e527bf1538d00a533a74fc91d841d976b2aa3715a76118de19f1cc424dad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "724",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法行為の時から二十年間行使しないとき。",
+     "text_sha256": "ef09e527bf1538d00a533a74fc91d841d976b2aa3715a76118de19f1cc424dad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q29-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q29-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判例は、723条の名誉は社会的名誉を指し名誉感情を含まないとしているから、名誉感情の侵害を理由に名誉回復処分を請求することはできない。",
+   "body": "本肢は判例のとおりである。民法723条は「他人の名誉を毀損した者に対しては、裁判所は、被害者の請求により、損害賠償に代えて、又は損害賠償とともに、名誉を回復するのに適当な処分を命ずることができる。」と定める。最高裁昭和45年12月18日判決は、同条にいう名誉とは、人がその品性、徳行、名声、信用等の人格的価値について社会から受ける客観的な評価、すなわち社会的名誉を指し、人が自己自身の人格的価値について有する主観的な評価、すなわち名誉感情は含まないとした。したがって、名誉感情を侵害されたことを理由として723条の処分を請求することはできず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "723",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の名誉を毀損した者に対しては、裁判所は、被害者の請求により、損害賠償に代えて、又は損害賠償とともに、名誉を回復するのに適当な処分を命ずることができる。",
+     "text_sha256": "5961f231f014bfd23af35926371a57866c2ee69497804d1b929d9c5abb6541ef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "民法723条にいう名誉の意義",
+     "court": "最高裁判所第二小法廷",
+     "date": "1970-12-18",
+     "case_number": "昭和43(オ)1357",
+     "holding": "民法723条にいう名誉とは、人がその品性、徳行、名声、信用等の人格的価値について社会から受ける客観的な評価（社会的名誉）を指し、人が自己自身の人格的価値について有する主観的な評価（名誉感情）は含まない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53174/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q29-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q29-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：721条の「既に生まれたものとみなす」は、胎児が生きて生まれたときに遡って権利能力を認める趣旨と解されており、生まれる前に母が胎児の代理人として請求することはできないとされているから、本肢は誤り。",
+   "body": "誤りの決め手は、胎児が「生まれる前であっても」母が代理人として請求できるとする部分である。民法721条は「胎児は、損害賠償の請求権については、既に生まれたものとみなす。」と定める。この規定は、胎児が生きて生まれたときに、不法行為の時に遡って権利能力があったものとみなす趣旨と解されており、胎児でいる間は権利能力がなく、法定代理人もいないから、母が胎児の代理人として請求することはできないとされている（判例あり（要確認））。相続について886条2項が「前項の規定は、胎児が死体で生まれたときは、適用しない。」としているのも、生きて生まれることが前提であることを示している。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "721",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "胎児は、損害賠償の請求権については、既に生まれたものとみなす。",
+     "text_sha256": "ea288fa5e16ef8fa7eac597bbf5cccf63d88989429cc74e181fb66060139aab2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "886",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、胎児が死体で生まれたときは、適用しない。",
+     "text_sha256": "352b45cb024974dcb1a56b431e32e53155bcc2be2b632e043f2b26e9085b5119",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "胎児の間は母が胎児の代理人として損害賠償を請求（和解）することはできないとした判例（停止条件的な理解）",
+     "searched": [
+      "大審院（データベースにない）",
+      "courts.py search 胎児 損害賠償"
+     ]
+    }
+   ],
+   "notes": [
+    "721条の「既に生まれたものとみなす」を生きて生まれたときに遡って権利能力を認める趣旨とする理解は、条文に書かれておらず、解釈による。"
+   ],
+   "id": "exp-shiho-2022-minpo-q29-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q29-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：他人の不法行為に対し第三者の権利を防衛するためやむを得ず加害行為をした者は、損害賠償の責任を負わない（720条1項本文）から、責任を負うとする点が誤り。",
+   "body": "誤りの決め手は、第三者の権利を防衛するための加害行為で「損害賠償責任を負う」とする部分である。民法720条1項は「他人の不法行為に対し、自己又は第三者の権利又は法律上保護される利益を防衛するため、やむを得ず加害行為をした者は、損害賠償の責任を負わない。」と定める。防衛の対象には自己の権利だけでなく「第三者の権利」も含まれているから、BがCの権利を防衛するためやむを得ずAに加害行為をしたときは、BはAに対して損害賠償責任を負わない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "720",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の不法行為に対し、自己又は第三者の権利又は法律上保護される利益を防衛するため、やむを得ず加害行為をした者は、損害賠償の責任を負わない。",
+     "text_sha256": "5b7540eb4ecbea0dd0cf77f6de24d24aebef7ada93163031ecb72b2821a4bd9a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q29-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

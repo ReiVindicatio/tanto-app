@@ -1,0 +1,220 @@
+{
+ "question_id": "shiho-2022-minpo-q24",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q24-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、売買の手付は反対の証拠がない限り解約手付と認めるべきであるとしている。",
+   "body": "ポイントは、手付の性質についての判例の立場である。民法557条1項は「買主が売主に手付を交付したときは、買主はその手付を放棄し、売主はその倍額を現実に提供して、契約の解除をすることができる。」と定め、手付の交付に解除権の留保の効果を結びつけている。判例は、売買の手付は、反対の証拠がない限り、同条所定のいわゆる解約手付と認めるべきであるとしている。したがって、売買契約で交付された手付は解約手付と推定されるとする本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "557",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "買主が売主に手付を交付したときは、買主はその手付を放棄し、売主はその倍額を現実に提供して、契約の解除をすることができる。",
+     "text_sha256": "d8ab6a1ed923e644103bd509b8c6185252839d4e9cc8ae1508b4b7bd95bd41c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "手付の性質（解約手付の推定）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1954-01-21",
+     "case_number": "昭和25(オ)275",
+     "holding": "売買の手附は、反対の証拠がない限り、民法557条所定のいわゆる解約手附と認むべきである。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57184/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は平成29年改正前の民法557条についてのもの。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2022-minpo-q24-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q24-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。解約手付による解除ができなくなるのは「相手方」が履行に着手した後であり、売主が履行に着手していれば、買主は解除できない。",
+   "body": "ポイントは、解除を妨げるのが誰の履行の着手か、である。民法557条1項ただし書は「ただし、その相手方が契約の履行に着手した後は、この限りでない。」と定める。買主から解除する場合の相手方は売主であるから、売主が契約の履行に着手した後は、買主が自ら履行に着手していなくても、解約手付による解除をすることができない。したがって、売主が履行に着手していても買主は自ら着手するまで解除できるとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "557",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、その相手方が契約の履行に着手した後は、この限りでない。",
+     "text_sha256": "d8ab6a1ed923e644103bd509b8c6185252839d4e9cc8ae1508b4b7bd95bd41c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q24-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q24-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。解除を妨げるのは相手方（売主）の履行の着手であり、買主が自ら履行に着手していても、売主が着手するまでは解除できる（判例）。",
+   "body": "ポイントは、自分の側の履行の着手は解除の妨げにならないという点である。民法557条1項ただし書は「ただし、その相手方が契約の履行に着手した後は、この限りでない。」とし、解除を制限する事情として相手方の履行の着手だけを挙げている。判例も、解約手付の授受された売買契約において、当事者の一方は、自ら履行に着手した場合でも、相手方が履行に着手するまでは、同項の解除権を行使することができるとしている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "557",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、その相手方が契約の履行に着手した後は、この限りでない。",
+     "text_sha256": "d8ab6a1ed923e644103bd509b8c6185252839d4e9cc8ae1508b4b7bd95bd41c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "自ら履行に着手した当事者からの手付解除",
+     "court": "最高裁判所大法廷",
+     "date": "1965-11-24",
+     "case_number": "昭和37(オ)760",
+     "holding": "解約手附の授受された売買契約において、当事者の一方は、自ら履行に着手した場合でも、相手方が履行に着手するまでは、民法557条1項に定める解除権を行使することができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53822/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は平成29年改正前の民法557条についてのもの。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2022-minpo-q24-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q24-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。売主が解約手付により解除するには、手付の倍額を「現実に提供」する必要があり、口頭で告げるだけでは足りない。",
+   "body": "ポイントは、売主側の解除に必要な行為が「現実に提供」である点である。民法557条1項は「売主はその倍額を現実に提供して、契約の解除をすることができる。」と定める。判例も、売主が手付の倍額を償還して売買契約を解除するためには、買主に対してその額の現実の提供をすることを要するとしている。したがって、倍額を償還する旨を口頭で告げるだけで解除できるとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "557",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "売主はその倍額を現実に提供して、契約の解除をすることができる。",
+     "text_sha256": "d8ab6a1ed923e644103bd509b8c6185252839d4e9cc8ae1508b4b7bd95bd41c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "手付の倍額償還による解除と現実の提供",
+     "court": "最高裁判所第三小法廷",
+     "date": "1994-03-22",
+     "case_number": "平成4(オ)1929",
+     "holding": "売主が手付けの倍額を償還して売買契約を解除するためには、買主に対して右額の現実の提供をすることを要する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52501/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は平成29年改正前の民法557条についてのもの。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2022-minpo-q24-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q24-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。民法557条2項により、手付による解除には解除と損害賠償を定める545条4項が適用されないので、買主は損害賠償義務を負わない。",
+   "body": "ポイントは、手付解除では損害賠償の規定が排除されている点である。民法557条2項は「第五百四十五条第四項の規定は、前項の場合には、適用しない。」と定める。民法545条4項は「解除権の行使は、損害賠償の請求を妨げない。」とする規定であり、これが手付解除には適用されないから、手付による解除をした買主は、手付の放棄のほかに損害賠償義務を負わない。したがって、売主に手付金の額を超える損害が生じても買主が損害賠償義務を負わないとする本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "557",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第五百四十五条第四項の規定は、前項の場合には、適用しない。",
+     "text_sha256": "d8ab6a1ed923e644103bd509b8c6185252839d4e9cc8ae1508b4b7bd95bd41c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "545",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "解除権の行使は、損害賠償の請求を妨げない。",
+     "text_sha256": "403613b135cfeb822522f37759878cd51de512f787c46c64bc9458e9b822f3b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q24-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

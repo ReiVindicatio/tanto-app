@@ -1,0 +1,234 @@
+{
+ "question_id": "shiho-2022-minpo-q34",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q34-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例は、相続人なく死亡した共有者の持分は、清算手続の終了後、まず特別縁故者への財産分与の対象となり、分与がされないときに他の共有者に帰属するとしているから、分与の対象とならないとする点が誤り。",
+   "body": "誤りの決め手は、持分が他の共有者に帰属し、特別縁故者への分与の「対象とならない」とする部分である。民法255条は「共有者の一人が、その持分を放棄したとき、又は死亡して相続人がないときは、その持分は、他の共有者に帰属する。」と定める。他方、958条の2第1項は「被相続人と生計を同じくしていた者、被相続人の療養看護に努めた者その他被相続人と特別の縁故があった者の請求によって、これらの者に、清算後残存すべき相続財産の全部又は一部を与えることができる。」と定める。最高裁平成元年11月24日判決は、共有者の一人が死亡し、相続人の不存在が確定し、相続債権者や受遺者に対する清算手続が終了したときは、その持分は特別縁故者に対する財産分与の対象となり、財産分与がされないときに、255条により他の共有者に帰属するとした。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "255",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共有者の一人が、その持分を放棄したとき、又は死亡して相続人がないときは、その持分は、他の共有者に帰属する。",
+     "text_sha256": "31b6c379bb91b4e0913aaac5be0ad7c97e024b7bcd9265d630d4ccc919ecb2a6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "958_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被相続人と生計を同じくしていた者、被相続人の療養看護に努めた者その他被相続人と特別の縁故があった者の請求によって、これらの者に、清算後残存すべき相続財産の全部又は一部を与えることができる。",
+     "text_sha256": "1ba7d1c21e323ff13f25a43e055a481d705fd95ab7c6427b2d31e95d6ef2bb93",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "相続人なく死亡した共有者の持分と特別縁故者への財産分与",
+     "court": "最高裁判所第二小法廷",
+     "date": "1989-11-24",
+     "case_number": "昭和63(行ツ)40",
+     "holding": "共有者の一人が死亡し、相続人の不存在が確定し、相続債権者や受遺者に対する清算手続が終了したときは、その持分は、特別縁故者に対する財産分与の対象となり、財産分与がされないときに、255条により他の共有者に帰属する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52769/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判決の裁判要旨は特別縁故者への分与の規定を「九五八条の三」として引いているが、現行法では958条の2が特別縁故者に対する相続財産の分与を定めている。現行法の本文で説明した。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2022-minpo-q34-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q34-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：相続開始後に認知された者が遺産分割を請求する場合に、他の共同相続人が既に分割をしていたときは、価額のみによる支払の請求権を有する（910条）にとどまり、既にされた遺産分割は効力を失わない。",
+   "body": "誤りの決め手は、既にされた遺産分割が「効力を失う」とする部分である。民法910条は「相続の開始後認知によって相続人となった者が遺産の分割を請求しようとする場合において、他の共同相続人が既にその分割その他の処分をしたときは、価額のみによる支払の請求権を有する。」と定める。認知は784条により「出生の時にさかのぼってその効力を生ずる。」が、同条ただし書は「第三者が既に取得した権利を害することはできない。」としている。910条はこれを受けて、既にされた遺産分割の効力を維持したまま、被認知者に価額による支払を請求させるものと解されている。したがって、Ｂは価額の支払を請求できるにとどまり、既にされた遺産分割は効力を失わないから、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "910",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続の開始後認知によって相続人となった者が遺産の分割を請求しようとする場合において、他の共同相続人が既にその分割その他の処分をしたときは、価額のみによる支払の請求権を有する。",
+     "text_sha256": "c363192dd565d926eba1c62d9d541271b9b71264b2fb2e9f8e2aa30bca4131ba",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "784",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "出生の時にさかのぼってその効力を生ずる。",
+     "text_sha256": "70f9059c4fefb95f9e29830e596074839d9d886fc78b232f31f25e1927ae616b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "784",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三者が既に取得した権利を害することはできない。",
+     "text_sha256": "70f9059c4fefb95f9e29830e596074839d9d886fc78b232f31f25e1927ae616b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "910条と784条ただし書の関係は条文に書かれておらず、解釈による。"
+   ],
+   "id": "exp-shiho-2022-minpo-q34-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q34-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：受遺者は、遺言者の死亡後、いつでも遺贈の放棄をすることができる（986条1項）。",
+   "body": "本肢は民法986条1項のとおりである。同項は「受遺者は、遺言者の死亡後、いつでも、遺贈の放棄をすることができる。」と定める。乙土地という特定の財産の遺贈を受けたＣは受遺者であるから、Ａが死亡した後いつでも遺贈を放棄することができる。なお、同条2項は「遺贈の放棄は、遺言者の死亡の時にさかのぼってその効力を生ずる。」と定める。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "986",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "受遺者は、遺言者の死亡後、いつでも、遺贈の放棄をすることができる。",
+     "text_sha256": "d2b3662a51c7d5dba0e2028573030f37caa6b10491f6880674bada5808966bfa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "986",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "遺贈の放棄は、遺言者の死亡の時にさかのぼってその効力を生ずる。",
+     "text_sha256": "d2b3662a51c7d5dba0e2028573030f37caa6b10491f6880674bada5808966bfa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q34-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q34-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：特別寄与者が請求できるのは、寄与に応じた額の金銭（特別寄与料）の支払であり（1050条1項）、相続財産である土地の持分を取得するのではない。",
+   "body": "誤りの決め手は、特別寄与者Ｄが「丙土地の持分を取得することができる」とする部分である。民法1050条1項は、特別寄与者は「相続の開始後、相続人に対し、特別寄与者の寄与に応じた額の金銭（以下この条において「特別寄与料」という。）の支払を請求することができる。」と定める。特別寄与者の権利は、相続人に対する金銭の支払請求権であり、相続財産そのものや、その持分を取得するものではない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1050",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続の開始後、相続人に対し、特別寄与者の寄与に応じた額の金銭（以下この条において「特別寄与料」という。）の支払を請求することができる。",
+     "text_sha256": "e18e5f582feb9da490e547a316d25548e4e31f6cf416052a7ff05d606c56d9ab",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q34-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q34-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：特別寄与者は特別の寄与をした「被相続人の親族」に限られる（1050条1項）から、Ａの親族でないＥは特別寄与者に当たらない。",
+   "body": "本肢は民法1050条1項のとおりである。同項は、特別寄与者を「被相続人に対して無償で療養看護その他の労務の提供をしたことにより被相続人の財産の維持又は増加について特別の寄与をした被相続人の親族」と定めている（相続人等は除かれる）。特別寄与者は被相続人の親族に限られるから、Ａの親族でないＥは、無償でＡの療養看護をしてＡの財産の維持に特別の寄与をしても、特別寄与者には当たらない。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1050",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被相続人に対して無償で療養看護その他の労務の提供をしたことにより被相続人の財産の維持又は増加について特別の寄与をした被相続人の親族",
+     "text_sha256": "e18e5f582feb9da490e547a316d25548e4e31f6cf416052a7ff05d606c56d9ab",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q34-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,235 @@
+{
+ "question_id": "shiho-2022-minpo-q30",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q30-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：婚氏続称の届出は、離婚の日から3箇月以内にすればよい（767条2項）から、離婚の届出と同時にする必要があるとする点が誤り。",
+   "body": "誤りの決め手は、届出を「離婚の届出と同時にする必要がある」とする部分である。民法767条1項は「婚姻によって氏を改めた夫又は妻は、協議上の離婚によって婚姻前の氏に復する。」と定め、2項は「前項の規定により婚姻前の氏に復した夫又は妻は、離婚の日から三箇月以内に戸籍法の定めるところにより届け出ることによって、離婚の際に称していた氏を称することができる。」と定める。婚姻中の氏を称するための届出は、離婚の日から3箇月以内であればよく、離婚の届出と同時である必要はない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "767",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "婚姻によって氏を改めた夫又は妻は、協議上の離婚によって婚姻前の氏に復する。",
+     "text_sha256": "9549588511272bd1d24970a113d194c116c67c8af970a6c0399ad6e128d27f21",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "767",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定により婚姻前の氏に復した夫又は妻は、離婚の日から三箇月以内に戸籍法の定めるところにより届け出ることによって、離婚の際に称していた氏を称することができる。",
+     "text_sha256": "9549588511272bd1d24970a113d194c116c67c8af970a6c0399ad6e128d27f21",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q30-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q30-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：夫婦の一方が死亡したときは、生存配偶者は婚姻前の氏に復することができ（751条1項）、姻族関係の終了（728条2項）はその要件とされていない。",
+   "body": "本肢は民法751条1項のとおりである。同項は「夫婦の一方が死亡したときは、生存配偶者は、婚姻前の氏に復することができる。」と定め、姻族関係を終了させることを条件としていない。姻族関係の終了は、728条2項が「夫婦の一方が死亡した場合において、生存配偶者が姻族関係を終了させる意思を表示したときも、前項と同様とする。」と別に定めており、復氏とは別の手続である。したがって、姻族関係を終了させなくても婚姻前の氏に復することができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "751",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "夫婦の一方が死亡したときは、生存配偶者は、婚姻前の氏に復することができる。",
+     "text_sha256": "a9b86340a7572b8b89b6891b50a2dd1b67ec77b2f7b70b3404e5815fd558d330",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "728",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "夫婦の一方が死亡した場合において、生存配偶者が姻族関係を終了させる意思を表示したときも、前項と同様とする。",
+     "text_sha256": "ea9cb50eede3c6b3e4aa35c3078c004ed6daf868adbcc93bec1aed443e3bdb4b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q30-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q30-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：子の利益のため必要があるときは、家庭裁判所は子又はその親族の請求によって親権者を変更できる（819条6項）から、子の親族である母は変更を請求でき、本肢は誤り。",
+   "body": "誤りの決め手は、母は親権者の変更を「請求することができない」とする部分である。民法819条6項は「子の利益のため必要があると認めるときは、家庭裁判所は、子又はその親族の請求によって、親権者を変更することができる。」と定める。母は子の親族に当たるから、協議で親権者を父と定めた後であっても、家庭裁判所に親権者の変更を請求することができる。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "819",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "子の利益のため必要があると認めるときは、家庭裁判所は、子又はその親族の請求によって、親権者を変更することができる。",
+     "text_sha256": "c64e308686bb7b205715f4ba1f7b5628cd9b5c6379cdcdb7b43b58ad73ab22b2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "819条は出題後に改正されている（現行法は父母の双方を親権者と定めることを認める）。本解説は現行の6項で説明しており、改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2022-minpo-q30-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q30-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：子の監護に要する費用の分担は協議で定めるものとされるが、協議が調わないときは家庭裁判所が定める（766条1項・2項）ものとされ、その協議の成立は離婚の届出の受理の要件とされていない（765条1項）。",
+   "body": "本肢のポイントは、監護費用の分担の協議が調わないことが協議上の離婚の妨げになるかである。民法766条1項は「父母が協議上の離婚をするときは、子の監護をすべき者又は子の監護の分掌、父又は母と子との交流、子の監護に要する費用の分担その他の子の監護について必要な事項は、その協議で定める。」とし、2項は「前項の協議が調わないとき、又は協議をすることができないときは、家庭裁判所が、同項の事項を定める。」と定める。協議が調わない場合の手当てが置かれており、離婚の届出の受理について定める765条1項も、監護費用の分担の定めを受理の要件として掲げていない。したがって、監護費用の分担の協議が調わなくても協議上の離婚をすることができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "766",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "父母が協議上の離婚をするときは、子の監護をすべき者又は子の監護の分掌、父又は母と子との交流、子の監護に要する費用の分担その他の子の監護について必要な事項は、その協議で定める。",
+     "text_sha256": "37bd138969ab751026ca5ad59d17aa1fb14c337507bcc747555897f5cc731fb9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "766",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の協議が調わないとき、又は協議をすることができないときは、家庭裁判所が、同項の事項を定める。",
+     "text_sha256": "37bd138969ab751026ca5ad59d17aa1fb14c337507bcc747555897f5cc731fb9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "765",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "離婚の届出は、その離婚が前条において準用する第七百三十九条第二項の規定その他の法令の規定に違反しないこと及び夫婦間に成年に達しない子がある場合には次の各号のいずれかに該当することを認めた後でなければ、受理することができない。",
+     "text_sha256": "6829c0c00844b78a84269f16c0c91f2998d1d174e09d34cbd8f7590e8b6e9454",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "766条・765条は出題後に改正されている（現行の765条1項は親権者の定め又はその指定を求める申立てを受理の要件とする）。本解説は現行の本文で説明しており、改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2022-minpo-q30-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q30-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：婚姻の取消しは、将来に向かってのみその効力を生ずる（748条1項）から、婚姻時に遡るとする点が誤り。",
+   "body": "誤りの決め手は、取消しの効力が「婚姻時に遡って」生ずるとする部分である。民法748条1項は「婚姻の取消しは、将来に向かってのみその効力を生ずる。」と定める。取消しの一般原則である121条が「取り消された行為は、初めから無効であったものとみなす。」とするのとは異なり、婚姻の取消しには遡及効がない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "748",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "婚姻の取消しは、将来に向かってのみその効力を生ずる。",
+     "text_sha256": "277ee731d4fa9a46d7061bd3d7972db65bb26c5f56eda508a3597d0c1df9e47d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "121",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取り消された行為は、初めから無効であったものとみなす。",
+     "text_sha256": "e818d517a33aa79042b48d476962e388d6714c91741aecfe62af52cbca6e1c51",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q30-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

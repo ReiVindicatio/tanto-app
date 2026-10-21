@@ -1,0 +1,205 @@
+{
+ "question_id": "shiho-2022-minpo-q19",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q19-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。449条のとおりである。",
+   "body": "449条は「行為能力の制限によって取り消すことができる債務を保証した者は、保証契約の時においてその取消しの原因を知っていたときは、主たる債務の不履行の場合又はその債務の取消しの場合においてこれと同一の目的を有する独立の債務を負担したものと推定する。」と定める。肢はこの条文の内容をそのまま述べており、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "449",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行為能力の制限によって取り消すことができる債務を保証した者は、保証契約の時においてその取消しの原因を知っていたときは、主たる債務の不履行の場合又はその債務の取消しの場合においてこれと同一の目的を有する独立の債務を負担したものと推定する。",
+     "text_sha256": "b686b30a3cd10ff5cf7ed25f22891863cc1ded2b919a1e81542d4fb3faa284c1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q19-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q19-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。主たる債務者の意思に反する保証人の求償権は、「弁済の当時」ではなく、主たる債務者が「現に」利益を受けている限度に限られる（462条2項）。",
+   "body": "誤りは「その弁済の当時に主たる債務者が利益を受けた限度」の部分である。462条2項は「主たる債務者の意思に反して保証をした者は、主たる債務者が現に利益を受けている限度においてのみ求償権を有する。」と定める。「当時利益を受けた限度」で求償できるのは、委託を受けないで（意思に反せずに）保証をした者であり、462条1項が459条の2第1項を準用する場合である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "462",
+     "paragraphs": [
+      "1",
+      "2"
+     ],
+     "quote": "主たる債務者の意思に反して保証をした者は、主たる債務者が現に利益を受けている限度においてのみ求償権を有する。",
+     "text_sha256": "192d5e061f81ce258ba215679ee5dc72198edf01c3333eee0c7628ad196c63b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "459_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主たる債務者がその当時利益を受けた限度において求償権を有する。",
+     "text_sha256": "8ae862a6756a9bd513e3086b4655988ce8f90950f666ed1969e39ba15e06776e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q19-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q19-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。自己の弁済を有効とみなすことができるのは、委託を受けた保証人に限られる（463条2項）。",
+   "body": "誤りは「委託を受けないで保証がされた場合」の部分である。463条2項は「保証人が主たる債務者の委託を受けて保証をした場合において、主たる債務者が債務の消滅行為をしたことを保証人に通知することを怠ったため、その保証人が善意で債務の消滅行為をしたときは、その保証人は、その債務の消滅行為を有効であったものとみなすことができる。」と定める。委託を受けない保証人には、この規定は適用されない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "463",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "保証人が主たる債務者の委託を受けて保証をした場合において、主たる債務者が債務の消滅行為をしたことを保証人に通知することを怠ったため、その保証人が善意で債務の消滅行為をしたときは、その保証人は、その債務の消滅行為を有効であったものとみなすことができる。",
+     "text_sha256": "21c33f2dd5de3ce03ed6f98943b20df2c0804acf5d195fe66584460bd40e4048",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q19-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q19-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。保証人が自己の債権で相殺すれば保証債務が消滅し、債権者が満足を得るので、主たる債務も対当額で消滅する。",
+   "body": "505条1項は、互いに同種の目的を有する債務を負担する場合に「各債務者は、その対当額について相殺によってその債務を免れることができる。」と定める。保証人が債権者に対する自己の債権で保証債務と相殺すると、保証債務は対当額で消滅し、債権者は弁済を受けたのと同じ満足を得る。そのため、主たる債務も対当額において消滅すると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "505",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各債務者は、その対当額について相殺によってその債務を免れることができる。",
+     "text_sha256": "2c6fb46bb0752e6158d87dbdbfad4540a36db31dd72f7bc87c02c04ea73b245b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "保証人の相殺によって主たる債務も消滅する点は解釈による"
+   ],
+   "id": "exp-shiho-2022-minpo-q19-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q19-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。共同保証人間の求償は、全額又は自己の負担部分を超える額を弁済したときに限られる（465条1項）。",
+   "body": "誤りは「その額が自己の負担部分を超えるかどうかにかかわらず」の部分である。465条1項は、連帯債務者間の求償の規定（442条など）を、各保証人が全額を弁済すべき旨の特約がある場合などに、一人の保証人が「その全額又は自己の負担部分を超える額を弁済したとき」について準用すると定める。連帯保証人はこの場合にあたると解されているが、求償できるのは自己の負担部分を超えて弁済したときに限られる。負担部分を超えるかどうかを問わないのは連帯債務者間の求償（442条1項）であり、共同保証人間ではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "465",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その全額又は自己の負担部分を超える額を弁済したとき",
+     "text_sha256": "70d620f2e7be2805362bad8b422188926a957a3d93e6d13b0ffa4f3ca4ef1e44",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "442",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その免責を得た額が自己の負担部分を超えるかどうかにかかわらず",
+     "text_sha256": "b1d9a68defbdbd1f6b3baf69ed12f0a99dbe5c736e4062c94c47db90f1729a0f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "連帯保証人が465条1項の「各保証人が全額を弁済すべき旨の特約がある」場合にあたる点は解釈による"
+   ],
+   "id": "exp-shiho-2022-minpo-q19-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

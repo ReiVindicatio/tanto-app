@@ -1,0 +1,239 @@
+{
+ "question_id": "shiho-2022-minpo-q07",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q07-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：甲土地はCの第二順位の抵当権の目的となっているから、179条1項ただし書によりBの抵当権は混同によって消滅しない。",
+   "body": "誤りの決め手は、Bの抵当権が「消滅する」とする部分である。民法179条1項は「同一物について所有権及び他の物権が同一人に帰属したときは、当該他の物権は、消滅する。」と定めるが、ただし書で「その物又は当該他の物権が第三者の権利の目的であるときは、この限りでない。」としている。本肢では、Bが甲土地の所有権を取得し、所有権とBの抵当権がBに帰属したが、甲土地にはCの第二順位の抵当権が設定されており、「その物」が第三者の権利の目的となっている。仮にBの第一順位の抵当権が消滅すると、Cの抵当権が第一順位となり、Bは甲土地の価値をCに先立って把握できなくなるから、ただし書はこのような場合に混同による消滅を否定する趣旨と解されている。したがって、Bの抵当権は消滅せず、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同一物について所有権及び他の物権が同一人に帰属したときは、当該他の物権は、消滅する。",
+     "text_sha256": "0222497d61a192fd618b225a5ea9c051766d7c0b9da1f448681d24e57d2fc848",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その物又は当該他の物権が第三者の権利の目的であるときは、この限りでない。",
+     "text_sha256": "0222497d61a192fd618b225a5ea9c051766d7c0b9da1f448681d24e57d2fc848",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "ただし書の趣旨（混同で消滅させるとBが害される）は条文に書かれておらず、解釈による。"
+   ],
+   "id": "exp-shiho-2022-minpo-q07-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q07-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：Bの地上権はCの抵当権の目的となっているから、179条1項ただし書によりBの地上権は混同によって消滅しない。",
+   "body": "誤りの決め手は、Bの地上権が「消滅する」とする部分である。BがAを単独相続して甲土地の所有権を取得すると、同一物について所有権と地上権がBに帰属するから、民法179条1項本文によれば地上権は消滅するのが原則である。しかし、同項ただし書は「その物又は当該他の物権が第三者の権利の目的であるときは、この限りでない。」と定める。本肢では、Bの地上権（「当該他の物権」）にCのために抵当権が設定されており、地上権が第三者の権利の目的となっている。地上権が消滅すればCの抵当権も目的を失うから、ただし書により地上権は消滅しない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同一物について所有権及び他の物権が同一人に帰属したときは、当該他の物権は、消滅する。",
+     "text_sha256": "0222497d61a192fd618b225a5ea9c051766d7c0b9da1f448681d24e57d2fc848",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その物又は当該他の物権が第三者の権利の目的であるときは、この限りでない。",
+     "text_sha256": "0222497d61a192fd618b225a5ea9c051766d7c0b9da1f448681d24e57d2fc848",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q07-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q07-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：B社とC社の合併により、所有権以外の物権である地上権と、これを目的とするC社の抵当権が同一人に帰属するから、179条2項により抵当権は消滅する。",
+   "body": "本肢は民法179条2項の場面である。同項は「所有権以外の物権及びこれを目的とする他の権利が同一人に帰属したときは、当該他の権利は、消滅する。」と定める。B社とC社が合併すると、B社の地上権（所有権以外の物権）と、その地上権を目的とするC社の抵当権（他の権利）が、合併後の同一の会社に帰属する。同項後段は「この場合においては、前項ただし書の規定を準用する。」とするが、本肢では地上権や抵当権が第三者の権利の目的となっている事情はない。したがって、C社の抵当権は混同により消滅し、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "179",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "所有権以外の物権及びこれを目的とする他の権利が同一人に帰属したときは、当該他の権利は、消滅する。",
+     "text_sha256": "0222497d61a192fd618b225a5ea9c051766d7c0b9da1f448681d24e57d2fc848",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "179",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "この場合においては、前項ただし書の規定を準用する。",
+     "text_sha256": "0222497d61a192fd618b225a5ea9c051766d7c0b9da1f448681d24e57d2fc848",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "合併によって消滅会社の権利が存続会社・新設会社に帰属する点は、民法の条文ではなく会社法の定めによるが、本解説では会社法の条文を引いていない。"
+   ],
+   "id": "exp-shiho-2022-minpo-q07-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q07-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：Cの地上権はBの抵当権に後れるもので、存続させてもCに利益がないから、179条1項ただし書は適用されず、本文により地上権は消滅すると解されている。",
+   "body": "本肢のポイントは、甲土地がBの抵当権の目的となっていても、179条1項ただし書が適用されない点にある。民法179条1項は「同一物について所有権及び他の物権が同一人に帰属したときは、当該他の物権は、消滅する。」と定め、ただし書で「その物又は当該他の物権が第三者の権利の目的であるときは、この限りでない。」とする。文言上は甲土地がBの抵当権の目的であるが、ただし書は、混同により他の物権を消滅させると所有者や第三者の利益が害される場合に、その物権を存続させる趣旨と解されている。本肢では、Cの地上権はBの抵当権の設定後に設定されたもので、Bの抵当権に後れるから、地上権を存続させてもBの抵当権が実行されればCはBに対抗できず、Cに地上権を残す利益はない。そのため、ただし書は適用されず、Cの地上権は混同により消滅すると解されている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同一物について所有権及び他の物権が同一人に帰属したときは、当該他の物権は、消滅する。",
+     "text_sha256": "0222497d61a192fd618b225a5ea9c051766d7c0b9da1f448681d24e57d2fc848",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その物又は当該他の物権が第三者の権利の目的であるときは、この限りでない。",
+     "text_sha256": "0222497d61a192fd618b225a5ea9c051766d7c0b9da1f448681d24e57d2fc848",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "ただし書を、存続させる利益がある場合に限って適用する読み方は条文の文言そのものではなく、解釈による。"
+   ],
+   "id": "exp-shiho-2022-minpo-q07-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q07-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：Cの賃借権は乙建物を目的とするもので、甲土地やBの地上権を目的とする権利ではないから、179条1項ただし書に当たらず、Bの地上権は混同により消滅する。",
+   "body": "本肢のポイントは、Cの権利が何を目的とするかである。BがAを単独相続して甲土地の所有権を取得すると、同一物について所有権と地上権がBに帰属するから、民法179条1項本文により「当該他の物権は、消滅する。」。同項ただし書は「その物又は当該他の物権が第三者の権利の目的であるときは、この限りでない。」と定めるが、Cが有するのは乙建物の賃借権であり、甲土地（その物）やBの地上権（当該他の物権）を目的とする権利ではない。したがってただし書には当たらず、Bの地上権は消滅する。なお、Bは甲土地の所有者として乙建物の敷地を利用できるから、地上権が消滅しても乙建物の存立の基礎は失われないと解される。本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該他の物権は、消滅する。",
+     "text_sha256": "0222497d61a192fd618b225a5ea9c051766d7c0b9da1f448681d24e57d2fc848",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その物又は当該他の物権が第三者の権利の目的であるときは、この限りでない。",
+     "text_sha256": "0222497d61a192fd618b225a5ea9c051766d7c0b9da1f448681d24e57d2fc848",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "地上権が消滅しても建物の存立の基礎が失われないとする点は、解釈による。"
+   ],
+   "id": "exp-shiho-2022-minpo-q07-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

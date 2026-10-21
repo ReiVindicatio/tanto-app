@@ -1,0 +1,200 @@
+{
+ "question_id": "shiho-2022-minpo-q21",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q21-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。口頭の提供をしても債権者が受領しないことが明確な場合には、提供をしないで直ちに供託できると解されている。",
+   "body": "494条1項1号は、供託できる場合として「弁済の提供をした場合において、債権者がその受領を拒んだとき。」を挙げており、文言上は弁済の提供が前提となる。もっとも、債権者があらかじめ受領を拒んでいるときは口頭の提供で足り（493条ただし書）、さらに口頭の提供をしても債権者が受領を拒むことが明確な場合には、提供をしても無意味であるから、提供をせずに直ちに供託できると解されている。判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "494",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁済の提供をした場合において、債権者がその受領を拒んだとき。",
+     "text_sha256": "da95989997d46bfa07b58fbed6485436c28ce925aaf34447f9db46244397f35a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "493",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者があらかじめその受領を拒み、又は債務の履行について債権者の行為を要するときは、弁済の準備をしたことを通知してその受領の催告をすれば足りる。",
+     "text_sha256": "7d648685cba1a7afaa23d6f8e5082aefada838a828ceff7d283bf09e13658b68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "口頭の提供をしても債権者が受領しないことが明確な場合に、提供なしで供託できるとする判例",
+     "searched": [
+      "courts.py search 口頭の提供 供託 受領 --from 昭和22 --to 昭和60",
+      "courts.py search 受領 拒絶 供託 明確 --from 昭和22 --to 平成10（2000件超でエラー）",
+      "courts.py search 口頭の提供 供託 受領しない --from 昭和22 --to 平成30"
+     ]
+    }
+   ],
+   "notes": [
+    "提供なしで直ちに供託できる点は解釈による"
+   ],
+   "id": "exp-shiho-2022-minpo-q21-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q21-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。債権者を確知できないことについて弁済者に過失がなければ供託できる（494条2項）。",
+   "body": "494条2項は「弁済者が債権者を確知することができないときも、前項と同様とする。ただし、弁済者に過失があるときは、この限りでない。」と定める。したがって、債権者を確知できず、それについて過失がない弁済者は、弁済の目的物を供託することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "494",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "弁済者が債権者を確知することができないときも、前項と同様とする。ただし、弁済者に過失があるときは、この限りでない。",
+     "text_sha256": "da95989997d46bfa07b58fbed6485436c28ce925aaf34447f9db46244397f35a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q21-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q21-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。債権者が供託を受諾せず、供託を有効と宣告した判決も確定しない間は、弁済者は供託物を取り戻すことができる（496条1項）。",
+   "body": "誤りは「取り戻すことができない」の部分である。496条1項は「債権者が供託を受諾せず、又は供託を有効と宣告した判決が確定しない間は、弁済者は、供託物を取り戻すことができる。」と定め、取り戻したときは「供託をしなかったものとみなす。」とする。適法な供託であっても、一定の間は取戻しができる（ただし、供託によって質権又は抵当権が消滅した場合は除かれる。496条2項）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "496",
+     "paragraphs": [
+      "1",
+      "2"
+     ],
+     "quote": "債権者が供託を受諾せず、又は供託を有効と宣告した判決が確定しない間は、弁済者は、供託物を取り戻すことができる。",
+     "text_sha256": "b34d0e152b3b88b6e461f3587692e009fb60755e86562ab568f59ac919f3598b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q21-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q21-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。供託をした者は、遅滞なく債権者に供託の通知をしなければならない（495条3項）。",
+   "body": "495条3項は「前条の規定により供託をした者は、遅滞なく、債権者に供託の通知をしなければならない。」と定める。肢はこの内容のとおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "495",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前条の規定により供託をした者は、遅滞なく、債権者に供託の通知をしなければならない。",
+     "text_sha256": "1f52312db32d0c547efd8ccf1839fc647b24a450020b0020bf00eab4236f815a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q21-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q21-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。債権は、還付を受けた時ではなく、弁済者が供託をした時に消滅する（494条1項）。",
+   "body": "誤りは「債権者が供託物の還付を受けた時に消滅する」の部分である。494条1項後段は「この場合においては、弁済者が供託をした時に、その債権は、消滅する。」と定める。したがって、債権は供託の時点で消滅する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "494",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この場合においては、弁済者が供託をした時に、その債権は、消滅する。",
+     "text_sha256": "da95989997d46bfa07b58fbed6485436c28ce925aaf34447f9db46244397f35a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q21-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

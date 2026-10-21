@@ -1,0 +1,244 @@
+{
+ "question_id": "shiho-2022-minpo-q31",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q31-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例は、母と嫡出でない子との親子関係は、原則として母の認知をまたず分娩の事実により当然発生するとしているから、「認知によって生ずる」とする点が誤り。",
+   "body": "誤りの決め手は、母子関係が「認知によって生ずる」とする部分である。民法779条は「嫡出でない子は、その父又は母がこれを認知することができる。」と定め、文言上は母による認知も予定している。しかし、最高裁昭和37年4月27日判決は、母と非嫡出子間の親子関係は、原則として、母の認知をまたず、分娩の事実により当然発生するとした。したがって、ＡとＣとの法律上の母子関係は、Ａの認知によってではなく、ＡがＣを分娩した事実によって生ずるから、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "779",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "嫡出でない子は、その父又は母がこれを認知することができる。",
+     "text_sha256": "9cade6c9bd53f52284bea8c656af49c72f5fc89abf4248b64531c8ebb0b4e396",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "母と非嫡出子の親子関係は分娩の事実により当然発生する",
+     "court": "最高裁判所第二小法廷",
+     "date": "1962-04-27",
+     "case_number": "昭和35(オ)1189",
+     "holding": "母と非嫡出子間の親子関係は、原則として、母の認知をまたず、分娩の事実により当然発生する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57715/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q31-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q31-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：認知は遺言によってもすることができる（781条2項）から、ＢはＣを遺言で認知できる。",
+   "body": "本肢は民法781条のとおりである。同条1項は「認知は、戸籍法の定めるところにより届け出ることによってする。」と定め、2項は「認知は、遺言によっても、することができる。」と定める。婚姻していないＡとＢとの間に生まれたＣは嫡出でない子であり、父Ｂは779条によりＣを認知することができるから、その認知を遺言によってすることもできる。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "781",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "認知は、戸籍法の定めるところにより届け出ることによってする。",
+     "text_sha256": "145e98c2b9afc73b2fac1982a2b1a43f6bb0995984a48983ad36890b81c4f55d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "781",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "認知は、遺言によっても、することができる。",
+     "text_sha256": "145e98c2b9afc73b2fac1982a2b1a43f6bb0995984a48983ad36890b81c4f55d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "779",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "嫡出でない子は、その父又は母がこれを認知することができる。",
+     "text_sha256": "9cade6c9bd53f52284bea8c656af49c72f5fc89abf4248b64531c8ebb0b4e396",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q31-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q31-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：認知の訴えは、父の死亡の日から3年を経過するまでは提起できる（787条ただし書）から、父Ｂの死亡後は提起できないとする点が誤り。",
+   "body": "誤りの決め手は、Ｂの死亡後は「以後」認知の訴えを提起することができないとする部分である。民法787条は「子、その直系卑属又はこれらの者の法定代理人は、認知の訴えを提起することができる。」と定め、ただし書で「父又は母の死亡の日から三年を経過したときは、この限りでない。」としている。つまり、父の死亡によって直ちに認知の訴えができなくなるのではなく、死亡の日から3年を経過するまでは、子Ｃは認知の訴えを提起することができる。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "787",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子、その直系卑属又はこれらの者の法定代理人は、認知の訴えを提起することができる。ただし、父又は母の死亡の日から三年を経過したときは、この限りでない。",
+     "text_sha256": "88ec7c2497f45693b8be10f61194b0e12d210870b2432b59b8201b527c862e8b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q31-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q31-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：嫡出でない子は母の氏を称する（790条2項）から、ＡＢが婚姻していない以上、Ｃが父Ｂの氏を称するとする点が誤り。",
+   "body": "誤りの決め手は、Ｃが「Ｂの氏を称する」とする部分である。民法790条2項は「嫡出でない子は、母の氏を称する。」と定める。ＡとＢは婚姻していないから、ＡＣ間とＢＣ間の親子関係が共に生じても（父Ｂの認知があっても）、Ｃは嫡出でない子のままであり、母Ａの氏を称する。父の氏を称するには、791条1項の「子が父又は母と氏を異にする場合には、子は、家庭裁判所の許可を得て、戸籍法の定めるところにより届け出ることによって、その父又は母の氏を称することができる。」による手続が必要である。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "790",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "嫡出でない子は、母の氏を称する。",
+     "text_sha256": "4ac814639863c83fea4975b477d912200e606fb405a88aa4e1ed150deb0c15db",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "791",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子が父又は母と氏を異にする場合には、子は、家庭裁判所の許可を得て、戸籍法の定めるところにより届け出ることによって、その父又は母の氏を称することができる。",
+     "text_sha256": "9888e184f43943163ed9be164a3c4e0bef39a8ca2212c1d081bb35a0b71cb795",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q31-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q31-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：父が認知した子は父母の婚姻によって嫡出子の身分を取得し（789条1項）、父母の婚姻中は父母が共同して親権を行うから、正しい。",
+   "body": "本肢では、母子関係（分娩）と父子関係（認知）が共に生じたうえで、ＡとＢが婚姻している。民法789条1項は「父が認知した子は、その父母の婚姻によって嫡出子の身分を取得する。」と定めるから、Ｃは父母の婚姻によって嫡出子となる（準正）。そして、現行の818条2項は「父母の婚姻中はその双方を親権者とする。」と定め、824条の2第1項は「親権は、父母が共同して行う。」と定める。したがって、Ｃに対する親権はＡとＢが共同して行うことになり、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "789",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "父が認知した子は、その父母の婚姻によって嫡出子の身分を取得する。",
+     "text_sha256": "6f241206994d9b5e8101c713b0d1def7d6997bfe7151b46e9c8aa8826c3031e3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "818",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "父母の婚姻中はその双方を親権者とする。",
+     "text_sha256": "4da65c3dc327782a0b1bfcf7e68ba4f9db8bec67337e94fc6bea7fd6c12e41dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "824_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "親権は、父母が共同して行う。",
+     "text_sha256": "593d967d97dbb8e26cf9c8db131e64d014b72e65154eb1994234835e50476bd8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "親権の規定（818条・824条の2）は出題後の改正で文言・条番号が変わっている。現行法の本文で説明した。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2022-minpo-q31-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

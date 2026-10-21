@@ -1,0 +1,242 @@
+{
+ "question_id": "shiho-2022-minpo-q18",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q18-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。代位行使の前にされた弁済で被代位権利は消滅しており、相手方Ｃはその消滅をＡに対抗できる。",
+   "body": "誤りは「対抗することができない」の部分である。期限は債務者の利益のために定めたものと推定され（136条1項）、「期限の利益は、放棄することができる。」（136条2項）ので、ＣがＢに弁済期前に弁済したことも有効な弁済となり、ＢのＣに対する債権はＡの代位行使より前に消滅していると解されている。そして423条の4は「債権者が被代位権利を行使したときは、相手方は、債務者に対して主張することができる抗弁をもって、債権者に対抗することができる。」と定める。ＣはＢに対して弁済による消滅を主張できるから、Ａに対してもこれを対抗することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "136",
+     "paragraphs": [
+      "1",
+      "2"
+     ],
+     "quote": "期限の利益は、放棄することができる。",
+     "text_sha256": "8e75e5c20b924b1fc439a03dac90190ede356185cb89902df10fd14d20f17cfd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が被代位権利を行使したときは、相手方は、債務者に対して主張することができる抗弁をもって、債権者に対抗することができる。",
+     "text_sha256": "ba97a8915a59b8ad173d3ca6b340ac2489b1ce4f8d9ff776a65a142d71a7bc0a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "弁済期前の弁済が有効な弁済となる点は解釈による"
+   ],
+   "id": "exp-shiho-2022-minpo-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q18-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。債務者が既に自ら権利を行使している場合には、債権者は代位行使できないとするのが判例である。",
+   "body": "債権者代位権は、債権者が「自己の債権を保全するため必要があるとき」に債務者に属する権利を行使するものである（423条1項）。判例は、債務者がすでに自ら権利を行使している場合には、その行使の方法や結果の良否にかかわらず、債権者は債権者代位権を行使できないとする。ＢがＣに対して支払を求める訴えを提起しているのは、Ｂが自ら権利を行使している場合にあたるから、Ａは代位行使できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己の債権を保全するため必要があるとき",
+     "text_sha256": "bd8ef03d0c0f16adfbbafda7db96a6bd402b3335529029bed09a72be6c3b987a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "債務者が自ら権利を行使している場合の債権者代位権行使の否定",
+     "court": "最高裁判所第一小法廷",
+     "date": "1953-12-14",
+     "case_number": "昭和24(オ)58",
+     "holding": "債務者がすでに自ら権利を行使している場合には、その行使の方法または結果の良いと否とにかかわらず、債権者は債権者代位権を行使することはできない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55986/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "判例は改正前の民法423条についてのもの。現行法の下でも同じく解されているという点は解釈による"
+   ],
+   "id": "exp-shiho-2022-minpo-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q18-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。被代位権利の目的が可分（金銭債権）であるときは、自己の債権の額の限度でしか代位行使できない（423条の2）。",
+   "body": "423条の2は「債権者は、被代位権利を行使する場合において、被代位権利の目的が可分であるときは、自己の債権の額の限度においてのみ、被代位権利を行使することができる。」と定める。ＢのＣに対する金銭債権は目的が可分であるから、Ａは自己のＢに対する債権の額を超えて代位行使することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者は、被代位権利を行使する場合において、被代位権利の目的が可分であるときは、自己の債権の額の限度においてのみ、被代位権利を行使することができる。",
+     "text_sha256": "b0ec09cab37ca8f759681d0bebd38c71d662d609d1789a8caa0f5de529cb7fa8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q18-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。建物賃借人は、建物賃貸人（借地権者）の建物買取請求権を代位行使できないとするのが判例である。",
+   "body": "誤りは「代位行使することができる」の部分である。債権者代位権は「自己の債権を保全するため必要があるとき」に認められる（423条1項）。判例は、建物賃借人は、その賃借権を保全するために、建物賃貸人に代位して、（旧）借地法の規定による建物買取請求権を行使することはできないとする。したがって、建物の賃借人Ａは、Ｂの建物買取請求権を代位行使することができない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己の債権を保全するため必要があるとき",
+     "text_sha256": "bd8ef03d0c0f16adfbbafda7db96a6bd402b3335529029bed09a72be6c3b987a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "建物賃借人による建物買取請求権の代位行使の否定",
+     "court": "最高裁判所第三小法廷",
+     "date": "1963-04-23",
+     "case_number": "昭和35(オ)955",
+     "holding": "建物賃借人は、その賃借権を保全するために、建物賃貸人に代位して、借地法第一〇条の規定による建物買収請求権を行使することはできない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57730/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "判例は旧借地法10条についてのもの。現行の借地借家法の対応する条文の本文は確認していない（改正前の内容は条文の本文で確認していない）"
+   ],
+   "id": "exp-shiho-2022-minpo-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q18-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。Ａが代位行使できるのはＢのＣに対する登記請求権（Ｃ→Ｂの移転登記）であり、登記を直接Ａに移転するよう請求することはできない。",
+   "body": "誤りは「登記を直接Ａに移転すべき旨をＣに請求することができる」の部分である。423条の7は、登記をしなければ対抗できない財産の譲受人は「その譲渡人が第三者に対して有する登記手続又は登録手続をすべきことを請求する権利を行使しないときは、その権利を行使することができる。」と定めるが、行使できるのはＢの権利、すなわちＣからＢへの移転登記を求める権利である。債権者が自己への引渡しを求められるのは「金銭の支払又は動産の引渡しを目的とするもの」に限られ（423条の3）、登記請求権はこれにあたらない。また判例は、所有権が甲乙丙と順次移転したのに登記名義が甲にある場合、丙が甲に対し直接自己に移転登記を請求することは、甲および乙の同意がないかぎり許されないとする。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423_7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その譲渡人が第三者に対して有する登記手続又は登録手続をすべきことを請求する権利を行使しないときは、その権利を行使することができる。",
+     "text_sha256": "3a317b94452ecb97eb0d0805fe7f5cfb65a8336ebd06a1ebf81e902bb2b0367a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "金銭の支払又は動産の引渡しを目的とするもの",
+     "text_sha256": "3242a2c55b8931f518a3b0df09b0506136982b1e91c25f1da20580741bc633df",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "中間省略登記請求の否定",
+     "court": "最高裁判所第三小法廷",
+     "date": "1965-09-21",
+     "case_number": "昭和39(オ)985",
+     "holding": "不動産の所有権が甲乙丙と順次移転したのに、登記名義は依然として甲にある場合には、丙が甲に対し直接自己に移転登記を請求することは、甲および乙の同意がないかぎり、許されない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53937/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "上の判例は債権者代位権の行使の事案ではなく、中間省略登記を直接求める請求についてのもの。代位行使の場合に直接Ａへの移転登記を求められない点は解釈による"
+   ],
+   "id": "exp-shiho-2022-minpo-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

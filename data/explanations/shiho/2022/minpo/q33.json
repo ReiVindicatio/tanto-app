@@ -1,0 +1,218 @@
+{
+ "question_id": "shiho-2022-minpo-q33",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q33-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：保証人の死亡により個人根保証契約の主たる債務の元本は確定する（465条の4第1項3号）から、相続人は相続開始後に生じた主債務については責任を負わない。",
+   "body": "本肢は民法465条の4第1項のとおりである。同項は「次に掲げる場合には、個人根保証契約における主たる債務の元本は、確定する。」と定め、3号に「主たる債務者又は保証人が死亡したとき。」を掲げる。保証人が死亡すると、その時点で保証の対象となる主たる債務の元本が確定するから、その後に主債務者と債権者が締結した契約に基づく債務は、根保証の対象に入らない。保証人の相続人は、確定した元本とそれに従たるものについての保証債務を相続するにとどまり、相続開始後の契約に基づく主債務について履行する責任は負わない。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "465_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる場合には、個人根保証契約における主たる債務の元本は、確定する。",
+     "text_sha256": "0835f04fcebdc37334b615b35fd5a510b072db9b9ac5be1521c4a3bf2cac53b7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "465_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主たる債務者又は保証人が死亡したとき。",
+     "text_sha256": "0835f04fcebdc37334b615b35fd5a510b072db9b9ac5be1521c4a3bf2cac53b7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q33-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q33-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：使用貸借は借主の死亡によって終了する（597条3項）から、借主の相続人は使用借権を相続しない。",
+   "body": "本肢は民法597条3項のとおりである。同項は「使用貸借は、借主の死亡によって終了する。」と定める。土地の使用貸借の借主が死亡すると、その時点で使用貸借が終了するから、使用借権は相続の対象とならず、借主の相続人は使用借権に基づいてその土地を使用し続けることはできない。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "597",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "使用貸借は、借主の死亡によって終了する。",
+     "text_sha256": "eb103fe512c138a917c45917629b2f48bb91c05b701a6a0baf40d915783a4872",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q33-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q33-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例は、土地を占有していた被相続人が死亡した場合、特別の事情のない限り、その占有は相続人によって相続されるとしているから、承継されないとする点が誤り。",
+   "body": "誤りの決め手は、被相続人の占有が相続人に「承継されない」とする部分である。民法896条本文は「相続人は、相続開始の時から、被相続人の財産に属した一切の権利義務を承継する。」と定める。最高裁昭和44年10月30日判決は、土地を占有していた被相続人が死亡し相続が開始した場合には、特別の事情のないかぎり、被相続人の右土地に対する占有は相続人によって相続されるとした。占有に権原があるかどうかは、占有が相続されることを妨げないと解されている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "896",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続人は、相続開始の時から、被相続人の財産に属した一切の権利義務を承継する。",
+     "text_sha256": "26569775cea382b249232c76910772008f279f0ab8c399f2d8a8d991820a167f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "被相続人の土地の占有は相続人に相続される",
+     "court": "最高裁判所第一小法廷",
+     "date": "1969-10-30",
+     "case_number": "昭和44(オ)265",
+     "holding": "土地を占有していた被相続人が死亡し相続が開始した場合には、特別の事情のないかぎり、被相続人の右土地に対する占有は相続人によって相続される。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51958/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "権原のない占有も相続されるという点は、裁判要旨に権原の有無が書かれていないため、解釈による。"
+   ],
+   "id": "exp-shiho-2022-minpo-q33-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q33-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判例は、無権代理人が本人を他の相続人と共に共同相続した場合、無権代理行為を追認する権利はその性質上相続人全員に不可分的に帰属するとしている。",
+   "body": "本肢は最高裁平成5年1月21日判決のとおりである。同判決は、無権代理人が本人を他の相続人と共に共同相続した場合において、無権代理行為を追認する権利は、その性質上相続人全員に不可分的に帰属するとし、共同相続人全員が共同してこれを行使しない限り、無権代理行為が有効となるものではないとした。そのため、無権代理人の相続分に相当する部分においても、無権代理行為は当然には有効とならない。民法113条1項は「代理権を有しない者が他人の代理人としてした契約は、本人がその追認をしなければ、本人に対してその効力を生じない。」と定めており、この追認の権利が共同相続人に不可分的に帰属することになる。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理権を有しない者が他人の代理人としてした契約は、本人がその追認をしなければ、本人に対してその効力を生じない。",
+     "text_sha256": "94916a1f09225da541bb996a4a974034241260a7a0c7699fb637b91a90934aa5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "無権代理人が本人を共同相続した場合の追認権の不可分的帰属",
+     "court": "最高裁判所第一小法廷",
+     "date": "1993-01-21",
+     "case_number": "昭和63(オ)1733",
+     "holding": "無権代理人が本人を他の相続人と共に共同相続した場合、無権代理行為を追認する権利はその性質上相続人全員に不可分的に帰属し、共同相続人全員が共同して追認しない限り、無権代理人の相続分に相当する部分においても無権代理行為は当然に有効とはならない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56365/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q33-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q33-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例は、相続開始から遺産分割までに相続不動産から生ずる賃料債権は各共同相続人が相続分に応じて確定的に取得し、後の遺産分割の影響を受けないとしているから、不動産を取得した者が遡って取得するとする点が誤り。",
+   "body": "誤りの決め手は、賃料債権を不動産の取得者が「相続開始時に遡って取得する」とする部分である。民法909条本文は「遺産の分割は、相続開始の時にさかのぼってその効力を生ずる。」と定める。しかし、最高裁平成17年9月8日判決は、相続開始から遺産分割までの間に共同相続に係る不動産から生ずる金銭債権たる賃料債権は、各共同相続人がその相続分に応じて分割単独債権として確定的に取得し、その帰属は、後にされた遺産分割の影響を受けないとした。賃料債権は遺産そのものではなく、遺産分割の遡及効は及ばないことになる。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "909",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺産の分割は、相続開始の時にさかのぼってその効力を生ずる。",
+     "text_sha256": "8e02825933947a4640cbea6bbeff96fee4a65dd2550f044e6392408d13b09ba9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "遺産分割前に相続不動産から生じた賃料債権の帰属",
+     "court": "最高裁判所第一小法廷",
+     "date": "2005-09-08",
+     "case_number": "平成16(受)1222",
+     "holding": "相続開始から遺産分割までの間に共同相続に係る不動産から生ずる金銭債権たる賃料債権は、各共同相続人がその相続分に応じて分割単独債権として確定的に取得し、その帰属は、後にされた遺産分割の影響を受けない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52401/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q33-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
