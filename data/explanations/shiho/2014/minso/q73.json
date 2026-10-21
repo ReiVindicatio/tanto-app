@@ -1,0 +1,240 @@
+{
+ "question_id": "shiho-2014-minso-q73",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minso-q73-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：管轄の合意が電磁的記録によってされたときは書面によってされたものとみなされるので、効力を生じないとする点が誤り。",
+   "body": "誤りは「その合意は，効力を生じない」という部分です。民事訴訟法11条2項は管轄の合意は「書面でしなければ、その効力を生じない」と定めているが、同条3項は「第一項の合意がその内容を記録した電磁的記録によってされたときは、その合意は、書面によってされたものとみなして、前項の規定を適用する」と定めている。したがって、電磁的記録による管轄の合意も書面による合意として扱われ、一定の法律関係に基づく訴えに関するものであれば効力を生じる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "11",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "書面でしなければ、その効力を生じない",
+     "text_sha256": "d112c06a4b13099945004a4b9349feac28ae0af80e4468dd139a1ae27c1b1910",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "11",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の合意がその内容を記録した電磁的記録によってされたときは、その合意は、書面によってされたものとみなして、前項の規定を適用する",
+     "text_sha256": "d112c06a4b13099945004a4b9349feac28ae0af80e4468dd139a1ae27c1b1910",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行法の11条3項の本文で説明した。出題当時の同項の文言は条文の本文で確認していない（改正前の内容は条文の本文で確認していない）。"
+   ],
+   "id": "exp-shiho-2014-minso-q73-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minso-q73-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例によれば、訴訟外で訴え取下げの合意が成立しても訴訟は直ちには終了せず、権利保護の利益を喪失したものとして訴えが却下される。",
+   "body": "誤りは「訴訟は，直ちに終了する」という部分です。判例（最判昭和44年10月17日）は、裁判外で訴取下の合意が成立した場合には、権利保護の利益を喪失したものとして、訴を却下すべきであるとしている。つまり、合意が成立しただけでは訴訟は終了せず、その合意が訴訟で主張・立証されたうえで、裁判所が訴え却下の判決をすることで訴訟が終わる。",
+   "citations": [],
+   "cases": [
+    {
+     "name": "裁判外の訴え取下げの合意の効力",
+     "court": "最高裁判所第二小法廷",
+     "date": "1969-10-17",
+     "case_number": "昭和44(オ)770",
+     "holding": "裁判外で訴取下の合意が成立した場合には、権利保護の利益を喪失したものとして、訴を却下すべきである。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51983/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "合意が訴訟で主張・立証される必要があるという点は解釈による。"
+   ],
+   "id": "exp-shiho-2014-minso-q73-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minso-q73-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：合意による専属管轄は「法令に専属管轄の定めがある場合」に当たらないので、応訴管轄の規定が適用され、その地方裁判所は管轄権を有する。",
+   "body": "決め手は、応訴管轄を排除するのは法令による専属管轄だけだという点です。民事訴訟法12条は「被告が第一審裁判所において管轄違いの抗弁を提出しないで本案について弁論をし、又は弁論準備手続において申述をしたときは、その裁判所は、管轄権を有する」と定める。13条1項は12条などの規定を「訴えについて法令に専属管轄の定めがある場合には、適用しない」としているが、当事者の合意で定めた専属管轄は法令による専属管轄ではない。したがって、合意に反して他の地方裁判所に訴えが提起されても、被告が管轄違いの抗弁を出さずに本案について弁論をすれば、その裁判所に管轄が生じる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "12",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告が第一審裁判所において管轄違いの抗弁を提出しないで本案について弁論をし、又は弁論準備手続において申述をしたときは、その裁判所は、管轄権を有する。",
+     "text_sha256": "75f8d56ee368505dfe1ac9e02e64ab5a15598b33402eade659dde68f7fa27884",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴えについて法令に専属管轄の定めがある場合には、適用しない",
+     "text_sha256": "f487855bdd589e15c9c55bb1da32056adca67319c60d217a65d384ba8651f36e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-minso-q73-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minso-q73-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：紛争を特定しない包括的な不起訴の合意は、裁判を受ける権利を一般的に放棄させるもので無効と解されているので、有効とする点が誤り。",
+   "body": "誤りは「有効である」という部分です。訴えを提起しない旨の合意（不起訴の合意）は、特定の権利関係・紛争について、当事者がその結果を予測できる範囲でされたものであれば有効と解されている。しかし、紛争を特定しないで一切起訴しないとする合意は、どのような紛争について裁判を受ける機会を失うのかを予測できず、裁判を受ける権利を包括的に放棄させるものであるから、無効と解されている。この点は、管轄の合意について民事訴訟法11条2項が「一定の法律関係に基づく訴えに関し」てされることを求めているのと同じ考え方による。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "11",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "一定の法律関係に基づく訴えに関し",
+     "text_sha256": "d112c06a4b13099945004a4b9349feac28ae0af80e4468dd139a1ae27c1b1910",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "不起訴の合意の有効要件（紛争の特定）は解釈による。11条2項との対比も説明のための類比であり、同項が不起訴の合意に直接適用されるわけではない。"
+   ],
+   "id": "exp-shiho-2014-minso-q73-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minso-q73-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：終局判決後に当事者双方が共に上告をする権利を留保して控訴をしない旨の合意（飛越上告の合意）は、条文で認められている。",
+   "body": "決め手は、民事訴訟法281条1項ただし書が飛越上告の合意を定めている点です。同項は「控訴は、地方裁判所が第一審としてした終局判決又は簡易裁判所の終局判決に対してすることができる」としたうえで、ただし書で「終局判決後、当事者双方が共に上告をする権利を留保して控訴をしない旨の合意をしたときは、この限りでない」と定めている。したがって、この合意は有効であり、当事者は控訴をせずに直接上告をすることになる。なお、同条2項により、この合意にも管轄の合意の書面性の規定（11条2項・3項）が準用される。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "281",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "控訴は、地方裁判所が第一審としてした終局判決又は簡易裁判所の終局判決に対してすることができる",
+     "text_sha256": "b071edcdb74565f6e07851faf8c7848dcc892fc4b7c866c22679198bc7cf0f1d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "281",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "終局判決後、当事者双方が共に上告をする権利を留保して控訴をしない旨の合意をしたときは、この限りでない",
+     "text_sha256": "b071edcdb74565f6e07851faf8c7848dcc892fc4b7c866c22679198bc7cf0f1d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "281",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第十一条第二項及び第三項の規定は、前項の合意について準用する。",
+     "text_sha256": "b071edcdb74565f6e07851faf8c7848dcc892fc4b7c866c22679198bc7cf0f1d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "11",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "書面でしなければ、その効力を生じない",
+     "text_sha256": "d112c06a4b13099945004a4b9349feac28ae0af80e4468dd139a1ae27c1b1910",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-minso-q73-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

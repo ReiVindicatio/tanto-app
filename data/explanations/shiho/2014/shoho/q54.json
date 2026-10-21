@@ -1,0 +1,259 @@
+{
+ "question_id": "shiho-2014-shoho-q54",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q54-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、相手方が代理人が本人のためにすることを知らなかったときは、相手方が選択に従い本人との法律関係か代理人との法律関係かを主張できるとしており、本人に履行請求できないとはしていない。",
+   "body": "誤りは「代理人は自己のためにその行為をしたものとみなされ，相手方は，本人に対して履行の請求をすることができない」という点である。商法504条は、非顕名でも「その行為は、本人に対してその効力を生ずる」とし、ただし書で、相手方が知らなかったときは「代理人に対して履行の請求をすることを妨げない」と定める。判例（最大判昭和43年4月24日）は、この場合、相手方と代理人との間にも本人相手方間と同一の法律関係が生じ、相手方がその選択に従い本人との法律関係を否定し代理人との法律関係を主張したときは、本人はもはや相手方に対し本人相手方間の法律関係を主張できないとした。つまり相手方は本人と代理人のいずれかを選んで主張できるのであり、民法100条本文のように「自己のためにしたものとみなす」扱いになって本人に請求できなくなるわけではない。したがって記述は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "504",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その行為は、本人に対してその効力を生ずる",
+     "text_sha256": "c6fefd5aeb98a30e45df5d56ec1b6be20a55d20bf24daaf9b00193a6f9cb58f7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "504",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理人に対して履行の請求をすることを妨げない",
+     "text_sha256": "c6fefd5aeb98a30e45df5d56ec1b6be20a55d20bf24daaf9b00193a6f9cb58f7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "100",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己のためにしたものとみなす",
+     "text_sha256": "89d9b395986f387baf5e4837926fd51a9c1c388b6d5eb9c08a2efa8a3ec93a31",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "商法504条ただし書と相手方の選択",
+     "court": "最高裁判所大法廷",
+     "date": "1968-04-24",
+     "case_number": "昭和41(オ)10",
+     "holding": "商法504条本文は顕名主義の例外を認めたもの。相手方が代理人が本人のためにすることを知らなかったときは、相手方と代理人との間にも本人相手方間と同一の法律関係が生じ、相手方がその選択に従い本人との法律関係を否定し代理人との法律関係を主張したときは、本人はもはや相手方に対し本人相手方間の法律関係を主張できない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54012/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2014-shoho-q54-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q54-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "現行法では×（立替えの日以後の「法定利息」を請求でき、法定利率は年3パーセントを基準に変動する）。公式の○は、出題当時の商事法定利率（年6分）によるものとみられるが、条文の本文で確認していない。",
+   "body": "商法513条2項は「商人がその営業の範囲内において他人のために金銭の立替えをしたときは、その立替えの日以後の法定利息を請求することができる」と定める。現行法では、その利率は民法404条により「法定利率は、年三パーセントとする」とされ、3年ごとに変動する仕組みになっている。そのため、現行の条文によれば「年６分の利率により算定した利息」とする記述は正しいとはいえない。立替えの日以後の利息を請求できるという点は条文どおりであり、公式の○は、出題当時に商行為による債務に年6分の利率を定めていた規定によるものとみられるが、その規定の本文は保存した条文で確認できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "513",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "商人がその営業の範囲内において他人のために金銭の立替えをしたときは、その立替えの日以後の法定利息を請求することができる",
+     "text_sha256": "d35857a7c77e3543a1c2077ef05e994bda7e1b6c4e30b0be4ca5716c6583a7b3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "404",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "法定利率は、年三パーセントとする",
+     "text_sha256": "a965ab244f1899590e357ae4b69ae913cb61204d19b4a05890de73a42965addc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "法改正の信号：公式は○。現行の商法513条2項・民法404条では「年６分」を説明できないため、規則に従い stated_truth を現行法による結論（×）にした。",
+    "出題当時は商事法定利率（年6分）の規定があり、その後の改正で削除され民法の法定利率に一本化されたと解されているが、改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-shoho-q54-b",
+   "status": "flagged",
+   "check": {
+    "passed": false,
+    "failures": [
+     "🔴 公式の○×と食い違う（公式 ○／解説 False）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q54-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。物品保管義務（商法510条）には「平常取引をする者から」の申込みという要件はない。その要件があるのは諾否通知義務（509条）である。",
+   "body": "誤りは「平常取引をする者から申込みを受けたときでなければ」保管義務を負わないとする点である。商法510条は「商人がその営業の部類に属する契約の申込みを受けた場合において、その申込みとともに受け取った物品があるときは、その申込みを拒絶したときであっても、申込者の費用をもってその物品を保管しなければならない」と定め、申込者が平常取引をする者であることを要件としていない。「平常取引をする者から」という要件は、509条1項の諾否通知義務（「商人が平常取引をする者からその営業の部類に属する契約の申込みを受けたときは」）のものである。したがって記述は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "510",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "商人がその営業の部類に属する契約の申込みを受けた場合において、その申込みとともに受け取った物品があるときは、その申込みを拒絶したときであっても、申込者の費用をもってその物品を保管しなければならない",
+     "text_sha256": "4eb7edcbc6873c3868df19499515cf3135e96bee0e62b0da9409ef91be1183db",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "509",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "商人が平常取引をする者からその営業の部類に属する契約の申込みを受けたときは",
+     "text_sha256": "19bffbaf8624b0ecd897f43ad8ab8b3c784325bd1208761a13c0891f0414307b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-shoho-q54-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q54-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。商法511条2項の「保証が商行為であるとき」には、保証が債権者にとって商行為である場合も含まれると解されており（判例あり（要確認））、主たる債務者と保証人は連帯して債務を負担する。",
+   "body": "商法511条2項は「保証人がある場合において、債務が主たる債務者の商行為によって生じたものであるとき、又は保証が商行為であるときは、主たる債務者及び保証人が各別の行為によって債務を負担したときであっても、その債務は、各自が連帯して負担する」と定める。ここでいう「保証が商行為であるとき」には、保証人にとって商行為である場合だけでなく、保証が債権者にとって商行為である場合も含まれると解されている。この点については判例あり（要確認）。記述はこの理解に沿うもので、公式の正答は○である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "511",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "保証人がある場合において、債務が主たる債務者の商行為によって生じたものであるとき、又は保証が商行為であるときは、主たる債務者及び保証人が各別の行為によって債務を負担したときであっても、その債務は、各自が連帯して負担する",
+     "text_sha256": "4c1927fb7063f759c5de0710fa4915f20f64a55b10fa263500781f3c456702b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "商法511条2項の「保証が商行為であるとき」に、保証が債権者にとって商行為である場合も含まれるとした判例",
+     "searched": [
+      "courts.py known 五一一条",
+      "courts.py search 五一一条 保証（該当なし）",
+      "大審院（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（「保証が商行為であるとき」に債権者にとって商行為である場合を含むという点は条文の文言だけからは決まらない）。"
+   ],
+   "id": "exp-shiho-2014-shoho-q54-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q54-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。顧客は商人でないので商人間の留置権（商法521条）は成立せず、民法の留置権は債権がその物に関して生じたことを要するから、牽連性のない債権では留置できない。",
+   "body": "誤りは、顧客が商人でないのに、債権と物との関連を問わずに留置できるとする点である。商法521条の留置権は「商人間においてその双方のために商行為となる行為によって生じた債権」について認められるもので、債務者も商人であることが必要である。記述の顧客は商人でないから、この留置権は成立しない。また民法295条1項の留置権は「その物に関して生じた債権を有するとき」に限られる。記述では債権がその物に関して生じたものではないので、民法の留置権も成立せず、記述は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "521",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "商人間においてその双方のために商行為となる行為によって生じた債権",
+     "text_sha256": "ced939d28b3931920c99e8bfd36b3c9de5867a063360c4807357d9b2d751bd0c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "295",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その物に関して生じた債権を有するとき",
+     "text_sha256": "5c120d320238e83f832ef9e2f8c7e848a8fd3c0499a6d5e4aabf099e22e7bdee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-shoho-q54-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

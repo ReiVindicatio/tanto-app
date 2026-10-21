@@ -1,0 +1,223 @@
+{
+ "question_id": "shiho-2014-minso-q68",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minso-q68-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：尋問の順序は申出をした当事者・他の当事者・裁判長が原則だが、裁判長は当事者の意見を聴いて順序を変更できるので、裁判長が先に尋問することもできる（202条2項）。",
+   "body": "誤りのポイントは「先に裁判長がすることはできない」と言い切っている部分である。202条1項は「証人の尋問は、その尋問の申出をした当事者、他の当事者、裁判長の順序でする。」と原則を定める。しかし同条2項は「裁判長は、適当と認めるときは、当事者の意見を聴いて、前項の順序を変更することができる。」としている。したがって、順序を変更して裁判長が当事者より先に尋問することもでき、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "202",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証人の尋問は、その尋問の申出をした当事者、他の当事者、裁判長の順序でする。",
+     "text_sha256": "1d168e44d37833bd66fc618e6d244333ed6de406853332b25221368616ffa70c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "202",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判長は、適当と認めるときは、当事者の意見を聴いて、前項の順序を変更することができる。",
+     "text_sha256": "1d168e44d37833bd66fc618e6d244333ed6de406853332b25221368616ffa70c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-minso-q68-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minso-q68-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：当事者本人を尋問する場合、その当事者に宣誓を「させることができる」とされ、宣誓させるかは裁判所の裁量である（207条1項）。",
+   "body": "207条1項は「裁判所は、申立てにより又は職権で、当事者本人を尋問することができる。この場合においては、その当事者に宣誓をさせることができる。」と定める。「させることができる」との文言から、当事者本人に宣誓をさせるかどうかは裁判所の裁量に委ねられている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "207",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、申立てにより又は職権で、当事者本人を尋問することができる。この場合においては、その当事者に宣誓をさせることができる。",
+     "text_sha256": "b3f82aa4129925a6e3489e6e8fdc71d034b9a454cbd19e7ac2a8166ddfdbe4cb",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-minso-q68-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minso-q68-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：証人の勾引を定める194条は当事者尋問に準用されておらず（210条）、当事者の不出頭には相手方の主張を真実と認めることができるという効果が用意されている（208条）。",
+   "body": "194条1項は「裁判所は、正当な理由なく出頭しない証人の勾引を命ずることができる。」と定めるが、これは証人についての規定である。当事者本人の尋問に準用される証人尋問の規定は、210条により「第百九十五条、第二百一条第二項、第二百二条から第二百四条まで及び第二百六条の規定」に限られ、194条は含まれていない。当事者本人が正当な理由なく出頭しないときは、208条により「裁判所は、尋問事項に関する相手方の主張を真実と認めることができる」とされている。したがって、当事者本人の勾引を命ずることはできず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "194",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、正当な理由なく出頭しない証人の勾引を命ずることができる。",
+     "text_sha256": "51c1e804c8a65161366ceec188f6aebf7e40304009f7aecd1741758c3b385fa0",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "210",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百九十五条、第二百一条第二項、第二百二条から第二百四条まで及び第二百六条の規定",
+     "text_sha256": "51644803b2e1bef244a7f5c3d858ffa03f3c39fb7fd83fb17df928c5adc41371",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "208",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、尋問事項に関する相手方の主張を真実と認めることができる",
+     "text_sha256": "077f4f3e2a58e00f40b1f5fe1fd19fdd53dec009fba42e8513859697d1cf4875",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-minso-q68-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minso-q68-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：裁判所は、当事者に異議がなく相当と認めるときは、証人の尋問に代え、書面の提出をさせることができる（205条1項）。",
+   "body": "205条1項は「裁判所は、当事者に異議がない場合であって、相当と認めるときは、証人の尋問に代え、書面の提出をさせることができる。」と定める。本肢は、相当と認めること・当事者に異議がないことという2つの要件を挙げており、条文と一致する。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "205",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、当事者に異議がない場合であって、相当と認めるときは、証人の尋問に代え、書面の提出をさせることができる。",
+     "text_sha256": "4bc4d29ba14f79cc8952a1ff8e5fbb6426bae85da39f1f56623183a59dc6748f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "205条は電磁的記録による提出（2項）・提示（3項）が加わる改正を受けている。改正前の内容は条文の本文で確認していない（1項の要件で本肢は説明できる）"
+   ],
+   "id": "exp-shiho-2014-minso-q68-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minso-q68-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：当事者尋問の規定が準用されるのは「当事者を代表する法定代理人」であり（211条）、訴訟代理人は証人として尋問されると解されている。",
+   "body": "誤りのポイントは「訴訟代理人」を当事者尋問の規定によるとしている部分である。211条は「この法律中当事者本人の尋問に関する規定は、訴訟において当事者を代表する法定代理人について準用する。」と定めており、対象は法定代理人に限られる。訴訟代理人についてはこのような規定がなく、190条が「裁判所は、特別の定めがある場合を除き、何人でも証人として尋問することができる。」と定めていることから、訴訟代理人は証人として尋問されると解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "211",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この法律中当事者本人の尋問に関する規定は、訴訟において当事者を代表する法定代理人について準用する。",
+     "text_sha256": "c76fff68e36244e71b1f935fb17ee3d1483ad135a92da4d229ce305c67ae5dbe",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "190",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、特別の定めがある場合を除き、何人でも証人として尋問することができる。",
+     "text_sha256": "81b6a86523cc708d4e11ffca0c1b5e26fa468b0663976e93e2498836de57893a",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による：訴訟代理人を証人として尋問するという理解は、211条が法定代理人に限っていることと190条からの理解"
+   ],
+   "id": "exp-shiho-2014-minso-q68-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

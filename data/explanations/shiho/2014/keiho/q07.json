@@ -1,0 +1,238 @@
+{
+ "question_id": "shiho-2014-keiho-q07",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiho-q07-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。Aの待機はBに知られておらず、Vの死亡はBの弾丸だけによるから、Aの行為はBの実行を物理的にも心理的にも促進しておらず、幇助犯は成立しない。",
+   "body": "ポイントは、Aの行為が正犯Bの犯行を促進したといえるか（幇助の因果性）である。62条1項は「正犯を幇助した者は、従犯とする。」と定めるが、幇助犯が成立するには、幇助行為が正犯の実行を物理的又は心理的に容易にしたことが必要であると解されている。本肢では、AはBの知らない間に付近で待機していたにすぎず、Bは自ら発射した弾丸でVを死亡させており、Aの待機はBの実行に何の影響も与えていない。Bが知らない以上心理的な促進もなく、Aが実際に手を出していない以上物理的な促進もない。したがって、Aに殺人既遂罪の幇助犯は成立せず、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "62",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正犯を幇助した者は、従犯とする。",
+     "text_sha256": "64542fa2877f533ec2c244692d3bfc7ec33145f64b8ee8b1bca58a4cc77c6bf4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（幇助の因果性として正犯の実行を物理的・心理的に促進したことを要するという一般的な理解）。"
+   ],
+   "id": "exp-shiho-2014-keiho-q07-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiho-q07-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。正犯に知られずに正犯の犯行を容易にした場合にも幇助犯（片面的幇助）が成立するとされ、客を誘って賭博場に案内したAには賭博場開張図利罪の幇助犯が成立する。",
+   "body": "ポイントは、正犯Bとの間に意思の連絡がない片面的幇助でも幇助犯が成立するかである。186条2項は「賭博場を開張し、又は博徒を結合して利益を図った者」を処罰し、62条1項は「正犯を幇助した者は、従犯とする。」と定めている。幇助は正犯の実行を容易にすれば足り、共同正犯のように相互の意思の連絡までは必要でないと解されており、Bに告げずに客を誘って賭博場に案内したAの行為は、Bの賭博場開張図利の犯行を現実に容易にしている。片面的幇助を肯定した判例あり（要確認）。したがって、Aには賭博場開張図利罪の幇助犯が成立し、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "186",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "賭博場を開張し、又は博徒を結合して利益を図った者",
+     "text_sha256": "388fd8df194b9f5059f5123e4b948ee5e729a2528efec9cef9cdb10e36530dcc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "62",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正犯を幇助した者は、従犯とする。",
+     "text_sha256": "64542fa2877f533ec2c244692d3bfc7ec33145f64b8ee8b1bca58a4cc77c6bf4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "正犯に知られずに賭博場開張図利を手伝った者に片面的幇助犯を認めた判例",
+     "searched": [
+      "courts.py known 片面",
+      "courts.py known 賭博場",
+      "courts.py search 片面的 幇助",
+      "大審院（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（片面的幇助を肯定する理解）。"
+   ],
+   "id": "exp-shiho-2014-keiho-q07-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiho-q07-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。共同正犯には共同実行の意思（意思の連絡）が必要であり、Bに気付かれずに加功したAに傷害罪の共同正犯は成立しない（片面的共同正犯の否定）。",
+   "body": "誤りは、Aに傷害罪の「共同正犯」が成立するとする点である。60条は「二人以上共同して犯罪を実行した者は、すべて正犯とする。」と定めており、「共同して」実行したといえるには、行為者の間に共同実行の意思、すなわち相互の意思の連絡が必要であると解されている。本肢では、BはAの関与に気付いておらず、AとBの間に意思の連絡がないから、Aに傷害罪の共同正犯は成立しない。片面的共同正犯を否定した判例あり（要確認）。もっとも、AはVの足を押さえ付けてBの殴打を物理的に容易にしているから、Aには62条1項の「正犯を幇助した者」として傷害罪の幇助犯（片面的幇助）が成立しうると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "60",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二人以上共同して犯罪を実行した者は、すべて正犯とする。",
+     "text_sha256": "ba4f29e57aaf29e061a81978acd6bd65630c069f52570a77b08704b872f0233e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "62",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正犯を幇助した者",
+     "text_sha256": "64542fa2877f533ec2c244692d3bfc7ec33145f64b8ee8b1bca58a4cc77c6bf4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "意思の連絡のない片面的共同正犯を否定した判例",
+     "searched": [
+      "courts.py known 片面",
+      "courts.py search 片面的 共同正犯",
+      "大審院（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（共同正犯に意思の連絡を要し、片面的共同正犯を否定する理解。Aに片面的幇助が成立しうるとする点も解釈による）。"
+   ],
+   "id": "exp-shiho-2014-keiho-q07-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiho-q07-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。Bは自らの自由な意思で殺意を抱いてVを殺害しており、Bを道具として利用したとはいえないから、Aは殺人罪の単独正犯（間接正犯）にはならない。",
+   "body": "誤りは、Aに殺人既遂罪の「単独正犯」が成立するとする点である。Vを殺害したのは、写真を見て自ら殺意を抱き、自分の判断で拳銃を発砲したBであり、Bは199条の「人を殺した者」として殺人罪の正犯となる。他人の行為を利用した者が単独正犯（間接正犯）とされるのは、利用される者が是非弁別能力を欠く場合や、故意がない場合など、利用される者を道具のように支配しているといえる場合であると解されている。本肢のBは完全な責任能力と故意をもって自由な意思で犯行に及んでいるから、AがBを道具として支配したとはいえず、Aは殺人罪の単独正犯にはならない。Aについては、せいぜい狭義の共犯（教唆犯）の成否が問題となるにとどまると解されており、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（間接正犯の成立範囲、及び意思の連絡のない場合の教唆の成否についての一般的な理解。Aに教唆犯が成立するかどうかまでは本肢の結論に必要でないため断定していない）。"
+   ],
+   "id": "exp-shiho-2014-keiho-q07-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiho-q07-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。AとBに意思の連絡はなく共同正犯にはならないが、Aは殺意をもって毒を加え、Bの毒と併せて致死量としてVを死亡させているから、Aには殺人既遂罪の単独正犯が成立する。",
+   "body": "ポイントは、意思の連絡のない二人の行為が競合して結果が生じた場合（同時犯）に、Aがどのような罪責を負うかである。BはAの行為を知らないから、AとBの間に60条の「共同して犯罪を実行した」といえる意思の連絡はなく、共同正犯は成立しない。しかし、Aは自ら殺意をもってコーヒーに毒を入れ、その毒がBの入れた毒と併せて致死量となり、Vはそのコーヒーを飲んで死亡しているから、Aの行為とVの死亡との間には因果関係が認められる。Bの行為が介在していても、A自身の行為が199条の「人を殺した」に当たると解されるので、Aには殺人既遂罪の単独正犯（同時犯）が成立し、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "60",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二人以上共同して犯罪を実行した者は、すべて正犯とする。",
+     "text_sha256": "ba4f29e57aaf29e061a81978acd6bd65630c069f52570a77b08704b872f0233e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（同時犯として各自の行為と結果との因果関係により単独正犯の罪責を負うとする一般的な理解）。"
+   ],
+   "id": "exp-shiho-2014-keiho-q07-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

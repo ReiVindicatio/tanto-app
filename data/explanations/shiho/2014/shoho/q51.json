@@ -1,0 +1,221 @@
+{
+ "question_id": "shiho-2014-shoho-q51",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q51-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。設立無効の認容判決の確定は清算の開始原因であり、清算株式会社は清算の目的の範囲内で清算結了まで存続するものとみなされる。",
+   "body": "会社法475条は、株式会社が清算をしなければならない場合として「設立の無効の訴えに係る請求を認容する判決が確定した場合」を掲げている（2号）。そして476条は、前条の規定により清算をする株式会社は「清算の目的の範囲内において、清算が結了するまではなお存続するものとみなす」と定める。したがって、設立無効の判決が確定しても会社がただちに消滅するのではなく、清算の目的の範囲内で清算結了まで存続するものとみなされる。記述は条文どおりであり正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "475",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設立の無効の訴えに係る請求を認容する判決が確定した場合",
+     "text_sha256": "7bd12352563a923d130300bc36b08a71ce25ef3317ab150fa718d2555f3e45ce",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "476",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "清算の目的の範囲内において、清算が結了するまではなお存続するものとみなす",
+     "text_sha256": "c98368b45e4058cb9af5c24bf5157fb53c804494b4b79559dfdc28527aa57511",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-shoho-q51-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q51-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。決議無効確認の訴えには提訴期間の定めがない。「決議の日から３か月以内」は決議取消しの訴えの提訴期間である。",
+   "body": "誤りは「その決議の日から３か月以内に提起しなければならない」という点である。会社法830条2項は、決議の内容が法令に違反することを理由として「決議が無効であることの確認を、訴えをもって請求することができる」と定めるだけで、提訴期間を定めていない。これに対し、831条1項は決議の取消しの訴えについて「株主総会等の決議の日から三箇月以内に、訴えをもって当該決議の取消しを請求することができる」と定めている。記述は取消しの訴えの提訴期間を無効確認の訴えに当てはめたもので、誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "830",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "決議が無効であることの確認を、訴えをもって請求することができる",
+     "text_sha256": "4ee5ae6a703b6ae0017b5442b89d4130e14427a116551c1153b682c8a8035019",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "831",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会等の決議の日から三箇月以内に、訴えをもって当該決議の取消しを請求することができる",
+     "text_sha256": "1815496dd41025d1456cafbdd01882a64334f77e056c1a04b566f23536942c16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-shoho-q51-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q51-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。自己株式の処分の無効の訴えの被告は、自己株式の処分をした株式会社だけであり、株式を現在有する株主は被告とならない。",
+   "body": "誤りは「その処分された株式を現在有する株主」も被告とする点である。会社法834条は会社の組織に関する訴えの被告を定めており、3号は「自己株式の処分の無効の訴え」の被告を「自己株式の処分をした株式会社」としている。株主を被告に加える定めはない。したがって記述は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "834",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己株式の処分の無効の訴え　自己株式の処分をした株式会社",
+     "text_sha256": "b9ec18c29c714b3875ebe6b6556166976d4123088dd30445292e2e17ad8b773c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-shoho-q51-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q51-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。第三者に対しても効力を有する（対世効）のは請求を認容する確定判決だけであり、棄却判決には対世効がない。",
+   "body": "誤りは「請求を棄却する確定判決」に第三者に対する効力を認めている点である。会社法838条は「会社の組織に関する訴えに係る請求を認容する確定判決は、第三者に対してもその効力を有する」と定め、対世効を認容判決に限っている。株式交換の無効の訴えは会社の組織に関する訴えに含まれる（834条11号）が、その請求を棄却する判決には838条の対世効は及ばない。したがって記述は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "838",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社の組織に関する訴えに係る請求を認容する確定判決は、第三者に対してもその効力を有する",
+     "text_sha256": "2ca182ab02992cc264da547cb36f529cf696f8be4eb6bccc3dd42c7a17e0593d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "834",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社の株式交換の無効の訴え　株式交換契約をした会社",
+     "text_sha256": "b9ec18c29c714b3875ebe6b6556166976d4123088dd30445292e2e17ad8b773c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-shoho-q51-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q51-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。新株予約権の発行の無効の訴えの認容判決が確定すると、その新株予約権は将来に向かって効力を失う（遡及しない）。",
+   "body": "会社法839条は、834条1号から12号の2まで等に掲げる訴えに係る請求を認容する判決が確定したときは、無効とされた行為（当該行為に際して新株予約権が交付された場合はその新株予約権を含む。）は「将来に向かってその効力を失う」と定める。新株予約権の発行の無効の訴えは834条4号に掲げられており、839条の対象に含まれる。したがって、認容判決が確定したときは、その新株予約権は将来に向かって効力を失い、記述は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "839",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "将来に向かってその効力を失う",
+     "text_sha256": "deba41841b9f81a269df6cf371c0c952cddec128af8d6bfa8ffe935a0741a6dc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "834",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "新株予約権の発行の無効の訴え　新株予約権の発行をした株式会社",
+     "text_sha256": "b9ec18c29c714b3875ebe6b6556166976d4123088dd30445292e2e17ad8b773c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "839条の対象の範囲（第十二号の二）は株式交付の制度の新設に伴うもの。改正前の内容は条文の本文で確認していないが、新株予約権の発行の無効の訴え（4号）が対象である点は肢の結論に影響しない。"
+   ],
+   "id": "exp-shiho-2014-shoho-q51-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

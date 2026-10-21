@@ -1,0 +1,256 @@
+{
+ "question_id": "shiho-2014-keiho-q03",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiho-q03-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。法律の不知について38条3項ただし書が認めるのは刑の任意的な減軽だけであり、免除はできない。",
+   "body": "誤りは、「又は免除することができる」とする点である。38条3項は「法律を知らなかったとしても、そのことによって、罪を犯す意思がなかったとすることはできない。」と定め、ただし書で「情状により、その刑を減軽することができる。」としている。本肢の前半は条文どおりであるが、ただし書が認めているのは刑の減軽だけであり、刑の免除は定められていない。減軽に加えて免除まで定めている規定としては、たとえば43条ただし書（中止犯）の「その刑を減軽し、又は免除する。」があるが、38条3項はそうなっていない。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "38",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "法律を知らなかったとしても、そのことによって、罪を犯す意思がなかったとすることはできない。ただし、情状により、その刑を減軽することができる。",
+     "text_sha256": "d5cc162963f0d1038efe34868f6bc7f1ca4f6b5888032218d23d667074c890fa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その刑を減軽し、又は免除する。",
+     "text_sha256": "4a18dd050345c1424dde393ee15554e66bd90bcf59f4f9c932d0ebd372647655",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-keiho-q03-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiho-q03-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、心神喪失・心神耗弱の該当性は法律判断として専ら裁判所に委ねられ、責任能力は犯行当時の病状、犯行前の生活状態、犯行の動機・態様等を総合して判定すべきものとしている。",
+   "body": "ポイントは、39条の「心神喪失者」「心神耗弱者」に当たるかどうかを誰がどのように判断するかである。最高裁昭和58年9月13日決定は、39条にいう心神喪失又は心神耗弱に該当するかどうかは法律判断であって、専ら裁判所に委ねられるべき問題であり、その前提となる生物学的・心理学的要素の評価も究極的には裁判所に委ねられるとした。また最高裁昭和59年7月3日決定は、犯行当時精神分裂病に罹患していたからといって直ちに心神喪失とされるものではなく、責任能力の有無・程度は、犯行当時の病状、犯行前の生活状態、犯行の動機・態様等を総合して判定すべきであるとした。本肢はこの二つの判例の内容に沿っており、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "心神喪失者の行為は、罰しない。",
+     "text_sha256": "4236e15d1f95ac4b17dcb57ed3f40e51cdea371d6f25530312c8881f35fac335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "39",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "心神耗弱者の行為は、その刑を減軽する。",
+     "text_sha256": "4236e15d1f95ac4b17dcb57ed3f40e51cdea371d6f25530312c8881f35fac335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "責任能力の判断と生物学的・心理学的要素の評価の判断権",
+     "court": "最高裁判所第三小法廷",
+     "date": "1983-09-13",
+     "case_number": "昭和58(あ)753",
+     "holding": "刑法39条にいう心神喪失又は心神耗弱に該当するかどうかは法律判断であって専ら裁判所に委ねられるべき問題であり、その前提となる生物学的、心理学的要素についての評価も、究極的には裁判所に委ねられるべき問題である。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/58328/detail2/index.html"
+     ]
+    },
+    {
+     "name": "精神分裂病者と責任能力（総合判定）",
+     "court": "最高裁判所第三小法廷",
+     "date": "1984-07-03",
+     "case_number": "昭和58(あ)1761",
+     "holding": "犯行当時精神分裂病に罹患していたからといって、そのことだけで直ちに心神喪失の状態にあったとされるものではなく、責任能力の有無・程度は、犯行当時の病状、犯行前の生活状態、犯行の動機・態様等を総合して判定すべきである。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50288/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2014-keiho-q03-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiho-q03-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。現行の刑法には、耳が聞こえないことを理由に刑を減軽・免除する規定はない（40条は「削除」）。",
+   "body": "誤りは、先天的に耳が聞こえない者の行為について刑を必要的に減軽・免除するとする点である。現行の刑法の40条は「削除」となっており、聴覚に障害があることを理由として刑を減軽し、又は免除する規定は置かれていない。したがって、先天的に耳が聞こえない者であっても、そのことだけで刑が減軽・免除されることはなく、責任能力に問題があるかどうかは、他の者と同様に39条の「心神喪失者」「心神耗弱者」に当たるかどうかで判断されることになる。よって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "40",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "削除",
+     "text_sha256": "e9653dc3edcbc072d033d200b3aa56539fde84e9b7cc80287fedc9f91cbe03ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "心神喪失者",
+     "text_sha256": "4236e15d1f95ac4b17dcb57ed3f40e51cdea371d6f25530312c8881f35fac335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "39",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "心神耗弱者",
+     "text_sha256": "4236e15d1f95ac4b17dcb57ed3f40e51cdea371d6f25530312c8881f35fac335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "40条は削除されているが、削除される前の40条の内容は条文の本文で確認していない（改正前の内容は条文の本文で確認していない）。"
+   ],
+   "id": "exp-shiho-2014-keiho-q03-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiho-q03-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。41条は14歳に満たない者の行為を一律に罰しないとしており、個別の弁識・制御能力の有無は問わない。",
+   "body": "誤りは、14歳未満の者でも能力が十分に認められれば処罰されることがあるとする点である。41条は「十四歳に満たない者の行為は、罰しない。」と定めており、14歳未満であれば、行為の是非善悪を弁識し、それに従って行動する能力が実際に備わっているかどうかにかかわらず、一律に刑事責任を問わないこととしている。心神喪失・心神耗弱のように個別の能力を判断するのではなく、年齢で画一的に責任能力を否定する仕組みであると解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "41",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "十四歳に満たない者の行為は、罰しない。",
+     "text_sha256": "6596f758086ea14251ded9cb64ecdb663d19193f8673c5a9635b2c20d9c2b604",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（41条を年齢による画一的な責任無能力の規定とする理解）。"
+   ],
+   "id": "exp-shiho-2014-keiho-q03-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-keiho-q03-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。42条2項は、親告罪について告訴権者に自己の犯罪事実を告げてその措置にゆだねたときも、自首と同様に刑を減軽することができるとしている。",
+   "body": "ポイントは、親告罪の告訴権者に対する首服（42条2項）の効果である。42条1項は「罪を犯した者が捜査機関に発覚する前に自首したときは、その刑を減軽することができる。」と定め、2項は「告訴がなければ公訴を提起することができない罪について、告訴をすることができる者に対して自己の犯罪事実を告げ、その措置にゆだねたときも、前項と同様とする。」と定めている。したがって、親告罪について告訴権者に自己の犯罪事実を告げ、その措置に委ねたときは、1項と同じく刑を減軽することができる。本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "42",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "罪を犯した者が捜査機関に発覚する前に自首したときは、その刑を減軽することができる。",
+     "text_sha256": "bdf53adaf7996c624ac3080cccfa8f8f6ebea16070421960e1c124a7f33cbb5c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "42",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "告訴がなければ公訴を提起することができない罪について、告訴をすることができる者に対して自己の犯罪事実を告げ、その措置にゆだねたときも、前項と同様とする。",
+     "text_sha256": "bdf53adaf7996c624ac3080cccfa8f8f6ebea16070421960e1c124a7f33cbb5c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-keiho-q03-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

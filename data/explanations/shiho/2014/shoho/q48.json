@@ -1,0 +1,277 @@
+{
+ "question_id": "shiho-2014-shoho-q48",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q48-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。会社法には社債の総額を純資産額などで制限する規定がなく、純資産額を超える社債も発行できる。",
+   "body": "676条は、募集社債について会社が定めるべき事項として「募集社債の総額」などを挙げるが、その総額の上限を定めていない。会社法の社債の規定の中にも、社債の総額を最終事業年度の末日の純資産額などで制限する規定は置かれていない。そのため、社債の総額が純資産額を超えても発行できると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "676",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "募集社債の総額",
+     "text_sha256": "bb7f2b3d6a5371f98b77057b082fda745cf01ff72749f2215d3e99da12776c48",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（上限を定める規定がないことからの帰結）。"
+   ],
+   "id": "exp-shiho-2014-shoho-q48-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q48-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。自己の株式の有償取得（156条1項）と異なり、自己の社債の取得に株主総会の決議を要求する規定はない。",
+   "body": "株式については、156条1項が「株式会社が株主との合意により当該株式会社の株式を有償で取得するには、あらかじめ、株主総会の決議によって」取得する株式の数などを定めなければならないとしている。これに対し、会社法には、会社が自己の発行した社債を取得するのに株主総会の決議を求める規定はなく、会社は自己の社債を取得できると解されている。723条2項が「社債発行会社は、その有する自己の社債については、議決権を有しない」と定めているのも、会社が自己の社債を保有することがある前提に立つものである。したがって、株主総会の決議を要するとする肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "156",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社が株主との合意により当該株式会社の株式を有償で取得するには、あらかじめ、株主総会の決議によって",
+     "text_sha256": "7c5954202e628df6cbb160b017070875f2bfeb31fa18d1189bb424c3dab40996",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "723",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "社債発行会社は、その有する自己の社債については、議決権を有しない",
+     "text_sha256": "2e4d22571abb76c64c2019696057eb52b4690cb3f0cd511489189aa11ce8e4bc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（自己の社債の取得を制限する規定がないことからの帰結）。"
+   ],
+   "id": "exp-shiho-2014-shoho-q48-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q48-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。社債の償還請求権も通常の金銭債権であり、会社は社債権者に対する弁済期の到来した金銭債権を自働債権として相殺できる（民法505条1項）。",
+   "body": "民法505条1項は、「二人が互いに同種の目的を有する債務を負担する場合において、双方の債務が弁済期にあるときは、各債務者は、その対当額について相殺によってその債務を免れることができる」と定める。会社が社債権者に対して有する金銭債権と、社債権者が会社に対して有する社債の償還請求権は、いずれも金銭債権で同種の目的を有するので、会社は前者を自働債権、後者を受働債権として対当額で相殺できる。社債の償還請求権を受働債権とする相殺を認めた判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "505",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二人が互いに同種の目的を有する債務を負担する場合において、双方の債務が弁済期にあるときは、各債務者は、その対当額について相殺によってその債務を免れることができる",
+     "text_sha256": "2c6fb46bb0752e6158d87dbdbfad4540a36db31dd72f7bc87c02c04ea73b245b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "会社が社債権者に対する金銭債権を自働債権、社債の償還請求権を受働債権として相殺できるとした判例",
+     "searched": [
+      "courts.py search 社債 相殺 --from 平成14 --to 平成16",
+      "courts.py search 社債 相殺 償還",
+      "courts.py search 社債 受働債権"
+     ]
+    }
+   ],
+   "notes": [
+    "判例の内容（日付・事件番号）は確認できていない。肢の「判例の趣旨によれば」の部分は要確認。",
+    "社債の償還請求権が通常の金銭債権として相殺の受働債権になるとする部分は解釈による。"
+   ],
+   "id": "exp-shiho-2014-shoho-q48-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q48-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。社債の全部についての支払の猶予の決議は、「議決権者の議決権の総額の五分の一以上」かつ出席議決権者の議決権の総額の三分の二以上の同意で足り、社債権者の過半数が出席するという要件はない（724条2項1号・706条1項1号）。",
+   "body": "706条1項1号は「当該社債の全部についてするその支払の猶予」を社債権者集会の決議を要する行為として挙げ、724条2項1号は「第七百六条第一項各号に掲げる行為に関する事項」を特別の決議事項とする。その可決には「議決権者の議決権の総額の五分の一以上で、かつ、出席した議決権者の議決権の総額の三分の二以上の議決権を有する者の同意」が必要である（724条2項柱書）。要件は議決権の額による同意の割合で定められており、肢のような「議決権を有する社債権者の過半数が出席」するという要件はないので、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "706",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該社債の全部についてするその支払の猶予",
+     "text_sha256": "58edd3e1f7633bd264b12ccd33bfa4769d213162ab7a19beb167839a6d01c481",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "724",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第七百六条第一項各号に掲げる行為に関する事項",
+     "text_sha256": "d544ba7f8a35fbd68b6f72ebeaf89fd8f0a175f542ba5613fcaf4cff0cf64810",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "724",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "議決権者の議決権の総額の五分の一以上で、かつ、出席した議決権者の議決権の総額の三分の二以上の議決権を有する者の同意",
+     "text_sha256": "d544ba7f8a35fbd68b6f72ebeaf89fd8f0a175f542ba5613fcaf4cff0cf64810",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行法の本文で説明している。出題当時の724条の文言は確認していない（改正前の内容は条文の本文で確認していない）。"
+   ],
+   "id": "exp-shiho-2014-shoho-q48-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q48-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。社債権者集会の決議には取消しの訴えの制度はなく、決議の方法の法令違反や著しい不公正は、裁判所が決議を認可しない事由として扱われる（732条〜734条）。",
+   "body": "社債権者集会の決議があったときは、招集者は「当該決議があった日から一週間以内に、裁判所に対し、当該決議の認可の申立てをしなければならない」（732条）。裁判所は、「社債権者集会の招集の手続又はその決議の方法が法令」等に違反するときや「決議が著しく不公正であるとき」などには「社債権者集会の決議の認可をすることができない」（733条1号・3号）。そして「社債権者集会の決議は、裁判所の認可を受けなければ、その効力を生じない」（734条1項）。このように決議の瑕疵は裁判所の認可の手続の中で審査される仕組みであり、株主総会の決議のような取消しの訴えは定められていないので、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "732",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該決議があった日から一週間以内に、裁判所に対し、当該決議の認可の申立てをしなければならない",
+     "text_sha256": "c5a3c05cdbefc63acb17591fcac3faf62e939d6982b0ac33e1de10debc6f355d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "733",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "社債権者集会の招集の手続又はその決議の方法が法令",
+     "text_sha256": "4ac60791ee939c4760e862b24ddc37972f9479ab8fb26282e8a3fb0f38869438",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "733",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "決議が著しく不公正であるとき",
+     "text_sha256": "4ac60791ee939c4760e862b24ddc37972f9479ab8fb26282e8a3fb0f38869438",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "733",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "社債権者集会の決議の認可をすることができない",
+     "text_sha256": "4ac60791ee939c4760e862b24ddc37972f9479ab8fb26282e8a3fb0f38869438",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "734",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "社債権者集会の決議は、裁判所の認可を受けなければ、その効力を生じない",
+     "text_sha256": "fb22e81cef6a58b7505c2505fb6e407bd27647a831b905fca0bd116d44593287",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行法の本文で説明している。出題当時の733条の文言は確認していない（改正前の内容は条文の本文で確認していない）。",
+    "取消しの訴えがないことは、規定がないことからの帰結（解釈による）。"
+   ],
+   "id": "exp-shiho-2014-shoho-q48-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

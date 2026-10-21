@@ -1,0 +1,239 @@
+{
+ "question_id": "shiho-2014-minso-q75",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minso-q75-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：当事者が上告によりその事由を主張したときは、再審の訴えを提起することができない（再審の補充性）。",
+   "body": "誤りは「上告によりその事由を主張したときであっても，再審の訴えを提起することができる」という部分です。法律により判決に関与することができない裁判官が判決に関与したことは、民事訴訟法338条1項2号の再審事由に当たる。しかし、同項ただし書は「当事者が控訴若しくは上告によりその事由を主張したとき、又はこれを知りながら主張しなかったときは、この限りでない」と定めている。したがって、上告でその事由を主張した場合には、再審の訴えによって重ねて争うことはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "338",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律により判決に関与することができない裁判官が判決に関与したこと。",
+     "text_sha256": "edc12902b60510666e70496838c51b340a52879e532b7ee6f9e3c312e6e9543d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "338",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が控訴若しくは上告によりその事由を主張したとき、又はこれを知りながら主張しなかったときは、この限りでない",
+     "text_sha256": "edc12902b60510666e70496838c51b340a52879e532b7ee6f9e3c312e6e9543d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-minso-q75-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minso-q75-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：前に確定した判決との抵触（338条1項10号）を理由とする再審の訴えには、再審期間の規定が適用されない。",
+   "body": "決め手は、民事訴訟法342条3項の適用除外です。同条1項は再審の訴えを、再審の事由を知った日から「三十日の不変期間内に提起しなければならない」とし、2項は判決が確定した日などから「五年を経過したときは、再審の訴えを提起することができない」と定める。しかし、3項は「前二項の規定は、第三百三十八条第一項第三号に掲げる事由のうち代理権を欠いたこと及び同項第十号に掲げる事由を理由とする再審の訴えには、適用しない」と定めている。338条1項10号は「不服の申立てに係る判決が前に確定した判決と抵触すること」であるから、これを再審事由とする場合には再審期間の制限はない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "342",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "三十日の不変期間内に提起しなければならない",
+     "text_sha256": "4c4675e00bb9c2e0b7c80cf65f155d1971324e690af5aeb80925e0e6fcdafc19",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "342",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "五年を経過したときは、再審の訴えを提起することができない",
+     "text_sha256": "4c4675e00bb9c2e0b7c80cf65f155d1971324e690af5aeb80925e0e6fcdafc19",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "342",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前二項の規定は、第三百三十八条第一項第三号に掲げる事由のうち代理権を欠いたこと及び同項第十号に掲げる事由を理由とする再審の訴えには、適用しない",
+     "text_sha256": "4c4675e00bb9c2e0b7c80cf65f155d1971324e690af5aeb80925e0e6fcdafc19",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "338",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不服の申立てに係る判決が前に確定した判決と抵触すること",
+     "text_sha256": "edc12902b60510666e70496838c51b340a52879e532b7ee6f9e3c312e6e9543d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-minso-q75-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minso-q75-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：不適法な再審の訴えの却下も、再審の事由がない場合の再審の請求の棄却も、「判決」ではなく「決定」でする。",
+   "body": "誤りは、却下・棄却をいずれも「判決で」するとしている部分です。民事訴訟法345条1項は「裁判所は、再審の訴えが不適法である場合には、決定で、これを却下しなければならない」と定め、同条2項は「裁判所は、再審の事由がない場合には、決定で、再審の請求を棄却しなければならない」と定めている。再審の訴えは、まず再審事由の有無を決定手続で審理し、再審事由があれば再審開始の決定（346条1項）をしたうえで本案の審理に入る仕組みになっている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "345",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、再審の訴えが不適法である場合には、決定で、これを却下しなければならない。",
+     "text_sha256": "10a894f6ce2387f70ef1dc86db513d107f9fcc4a6581cc837d86840885d76833",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "345",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判所は、再審の事由がない場合には、決定で、再審の請求を棄却しなければならない。",
+     "text_sha256": "10a894f6ce2387f70ef1dc86db513d107f9fcc4a6581cc837d86840885d76833",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "346",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、再審の事由がある場合には、再審開始の決定をしなければならない。",
+     "text_sha256": "563a5b6bd2eb925592657e16fb8cbf89f5fc1a668ff74542ab7fcd96b3699756",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-minso-q75-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minso-q75-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：再審の本案の審理の結果、原判決を正当とするときは、再審の請求を棄却しなければならない（348条2項）。",
+   "body": "決め手は、民事訴訟法348条2項の文言です。同条1項は「裁判所は、再審開始の決定が確定した場合には、不服申立ての限度で、本案の審理及び裁判をする」と定め、2項は「裁判所は、前項の場合において、判決を正当とするときは、再審の請求を棄却しなければならない」と定めている。肢はこの2項の内容どおりである。なお、判決を正当としないときは、同条3項により「判決を取り消した上、更に裁判をしなければならない」。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "348",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、再審開始の決定が確定した場合には、不服申立ての限度で、本案の審理及び裁判をする。",
+     "text_sha256": "1627afd8a249fe814da790883ff3b2f585ffb400d9881ba77a67e12d0f027e8b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "348",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判所は、前項の場合において、判決を正当とするときは、再審の請求を棄却しなければならない。",
+     "text_sha256": "1627afd8a249fe814da790883ff3b2f585ffb400d9881ba77a67e12d0f027e8b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "348",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "判決を取り消した上、更に裁判をしなければならない",
+     "text_sha256": "1627afd8a249fe814da790883ff3b2f585ffb400d9881ba77a67e12d0f027e8b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-minso-q75-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
