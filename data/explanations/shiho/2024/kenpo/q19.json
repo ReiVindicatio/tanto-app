@@ -1,0 +1,186 @@
+{
+ "question_id": "shiho-2024-kenpo-q19",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-kenpo-q19-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：条約の承認は60条2項の準用で「三十日以内」に議決しなければ衆議院の議決が国会の議決となるのであり、法律案の「六十日」・「否決したものとみなす」仕組みではない。",
+   "body": "誤りは「法律案の場合と同様に」「６０日以内」「否決したものとみなすことができる」の部分である。61条は「条約の締結に必要な国会の承認については、前条第二項の規定を準用する。」と定め、60条2項は「参議院が、衆議院の可決した予算を受け取つた後、国会休会中の期間を除いて三十日以内に、議決しないときは、衆議院の議決を国会の議決とする。」と定める。これに対し、「六十日以内」に議決しないとき「参議院がその法律案を否決したものとみなすことができる」とするのは法律案についての59条4項である。条約の承認では、期間は30日で、衆議院の議決がそのまま国会の議決となり、否決とみなして再可決する手続はない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "61",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "条約の締結に必要な国会の承認については、前条第二項の規定を準用する。",
+     "text_sha256": "8b76031e9fdf040e88ad9f2f7f7f388be9b65d94da3b563e7bec91675eb470db",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "60",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "参議院が、衆議院の可決した予算を受け取つた後、国会休会中の期間を除いて三十日以内に、議決しないときは、衆議院の議決を国会の議決とする。",
+     "text_sha256": "2bbcfb8c7be3e78b32e4008214a92813257007b143e507bda64f1c2d9fd65429",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "59",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "六十日以内",
+     "text_sha256": "8dcf03f803838b68ab002f4bc372e804e28662ab6a23d0c6774ba26475d1c354",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "59",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "参議院がその法律案を否決したものとみなすことができる",
+     "text_sha256": "8dcf03f803838b68ab002f4bc372e804e28662ab6a23d0c6774ba26475d1c354",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2024-kenpo-q19-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-kenpo-q19-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：衆議院先議の条約を参議院が否決したときは、両院協議会を求めなければならないのは衆議院であり、また求められた議院は原則として拒むことができない。",
+   "body": "誤りは「参議院は、衆議院に両院協議会を求めなければならない」「衆議院はその請求を拒むことができる」の部分である。国会法85条1項は「衆議院先議の条約について、…参議院において衆議院の送付案を否決したときは、衆議院は、両院協議会を求めなければならない。」と定めており、両院協議会を求める義務を負うのは衆議院である。さらに国会法88条は「一の議院から両院協議会を求められたときは、他の議院は、これを拒むことができない。」と定め、例外は法律案についての84条2項但書（「衆議院は、この両院協議会の請求を拒むことができる。」）だけである。条約について、衆議院が両院協議会の請求を拒めるとする規定はない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "85",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "参議院において衆議院の送付案を否決したときは、衆議院は、両院協議会を求めなければならない。",
+     "text_sha256": "4a12e98504bb0aefeb0ad87be3d8963292f5bd450d056e15c82aa0aa3be6f3b7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "85",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "衆議院先議の条約について、",
+     "text_sha256": "4a12e98504bb0aefeb0ad87be3d8963292f5bd450d056e15c82aa0aa3be6f3b7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "88",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一の議院から両院協議会を求められたときは、他の議院は、これを拒むことができない。",
+     "text_sha256": "3a305ca11b3b69292ba799dd962a6a51a7e6081c8f012ee1b6d918549bb8c8ab",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "84",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "衆議院は、この両院協議会の請求を拒むことができる。",
+     "text_sha256": "70c1d848a3a24dc3fbbb019834834be9e532b15e182c7f4560e79e4f2ea29b79",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "肢の「衆議院に両院協議会を求めなければならない」は、参議院先議の条約について参議院の義務を定めた国会法85条2項とも場面が異なる（本肢は衆議院が承認の議決をした条約を参議院が否決した場面）。"
+   ],
+   "id": "exp-shiho-2024-kenpo-q19-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-kenpo-q19-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：条約の締結には国会の承認が必要であり、事前の承認が得られなければ締結できず、事後に承認が得られなかった条約は国内法的には効力を有しないと解されている。",
+   "body": "73条は内閣の事務として「条約を締結すること。但し、事前に、時宜によつては事後に、国会の承認を経ることを必要とする。」と定めており、条約の締結は内閣の権限であるが、国会の承認が要件とされている。そのため、事前に承認を求めて得られなかった条約を内閣が締結することはできない。事後に承認が得られなかった場合の条約の効力については、国際法上の効力については議論があるものの、少なくとも国内法的には効力を有しないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "73",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "条約を締結すること。但し、事前に、時宜によつては事後に、国会の承認を経ることを必要とする。",
+     "text_sha256": "edd0bc44219efd4b718ab6544896bf6639962cb675ee319ccae43a433f235998",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "解釈による：事後に承認が得られなかった条約の効力（国内法的に無効、国際法上の効力は争いあり）は条文に書かれておらず、学説の一般的な理解による。"
+   ],
+   "id": "exp-shiho-2024-kenpo-q19-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

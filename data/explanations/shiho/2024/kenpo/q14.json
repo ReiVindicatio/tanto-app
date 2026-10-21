@@ -1,0 +1,197 @@
+{
+ "question_id": "shiho-2024-kenpo-q14",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-kenpo-q14-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。係属中の事件の訴訟指揮・裁判手続を対象とする調査は許されないが、裁判と異なる目的（行政監督など）で同一事実を並行して調査することは許されると解されている。",
+   "body": "誤りは末尾の「裁判と並行して行う調査も許されない」の部分である。憲法62条は「両議院は、各々国政に関する調査を行ひ、これに関して、証人の出頭及び証言並びに記録の提出を要求することができる。」と定める。国政調査権には司法権の独立からの制約があり、現に係属中の事件について裁判官の訴訟指揮や裁判手続そのものを対象とする調査など、裁判官の裁判活動に事実上重大な影響を及ぼす調査は許されないと解されている。しかし、議院が裁判とは異なる目的、たとえば行政監督の目的で、裁判所で審理中の事件と同一の事実を調査すること（並行調査）は、それ自体としては許されると解されている。このことを認めた下級審の裁判例がある（判例あり（要確認））。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "62",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "両議院は、各々国政に関する調査を行ひ、これに関して、証人の出頭及び証言並びに記録の提出を要求することができる。",
+     "text_sha256": "d8f589c3ad5ffcb731b745191e52d071d3b3b2978ab872f47c27cb30f5ca6a4b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "裁判所で審理中の事件と同一の事実について議院が行政監督等の目的で並行して調査することを許されるとした下級審の裁判例",
+     "searched": [
+      "courts.py search 国政調査 --all --date 1956-07-23",
+      "courts.py search 国政調査 司法権 --all --from 昭和25 --to 昭和40",
+      "courts.py search 国政調査 --all --from 昭和30 --to 昭和33"
+     ]
+    }
+   ],
+   "notes": [
+    "国政調査権の限界・並行調査の可否は解釈による"
+   ],
+   "id": "exp-shiho-2024-kenpo-q14-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-kenpo-q14-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。国会法124条は、正当な理由なく召集に応じない議員を懲罰委員会に付すると定めており、召集に応じないことも懲罰の対象となる。",
+   "body": "誤りは末尾の「議員が正当な理由なく召集に応じない場合であっても懲罰の対象とはならない」の部分である。憲法58条2項は、両議院が「院内の秩序をみだした議員を懲罰することができる。」と定め、懲罰の種類について国会法122条は「公開議場における戒告」「公開議場における陳謝」「一定期間の登院停止」「除名」の4種を定めており、この部分は正しい。しかし国会法124条は「議員が正当な理由がなくて召集日から七日以内に召集に応じないため」、議長が招状を発してもなお故なく出席しない者は「議長が、これを懲罰委員会に付する。」と定めている。したがって、正当な理由なく召集に応じない場合も懲罰の対象となる。なお、院外の行動であっても、議院の秩序を乱すような議員の行為であれば懲罰の対象となりうると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "58",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "院内の秩序をみだした議員を懲罰することができる。",
+     "text_sha256": "05d333cd7f56080e71054daf4a71167ae4e12dcf263d994de7b00f8b5e5a77ba",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "122",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公開議場における戒告",
+     "text_sha256": "7350fe51f7756f414ff07ed0840585a51f0139103024511ad73efb3d77a357ec",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "122",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公開議場における陳謝",
+     "text_sha256": "7350fe51f7756f414ff07ed0840585a51f0139103024511ad73efb3d77a357ec",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "122",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一定期間の登院停止",
+     "text_sha256": "7350fe51f7756f414ff07ed0840585a51f0139103024511ad73efb3d77a357ec",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "122",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "除名",
+     "text_sha256": "7350fe51f7756f414ff07ed0840585a51f0139103024511ad73efb3d77a357ec",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "議員が正当な理由がなくて召集日から七日以内に召集に応じないため",
+     "text_sha256": "212ac12986e4c995dc196602414207dc62c548eaf5f33f2f3975755b724ee553",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "議長が、これを懲罰委員会に付する。",
+     "text_sha256": "212ac12986e4c995dc196602414207dc62c548eaf5f33f2f3975755b724ee553",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "院外の行動が懲罰の対象となりうる点は解釈による"
+   ],
+   "id": "exp-shiho-2024-kenpo-q14-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-kenpo-q14-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。院内手続準則を議院規則の排他的所管と解する立場でも、国会法の院内手続部分は直ちに違憲無効とされるのではなく、両議院の申合せ（紳士協定）的なものとして効力を認める理解が示されている。",
+   "body": "誤りは末尾の「違憲無効と解するほかない」の部分である。憲法58条2項は、両議院が「各々その会議その他の手続及び内部の規律に関する規則を定め」ると定め、議院の自律権として議院規則の制定権を認めている。院内手続準則をこの議院規則の排他的所管と解する立場からは、国会法の院内手続に関する部分は法律として議院を拘束する効力を持たないことになる。もっとも、この立場からも、国会法の当該部分は両議院の議決を経て成立したものであることから、両議院の申合せ（紳士協定）としての意味を持つと理解するなど、違憲無効と解する以外の理解が示されていると解されている。したがって、「違憲無効と解するほかない」と断定する本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "58",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "各々その会議その他の手続及び内部の規律に関する規則を定め",
+     "text_sha256": "05d333cd7f56080e71054daf4a71167ae4e12dcf263d994de7b00f8b5e5a77ba",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "議院規則と国会法の関係（排他的所管説の帰結）は解釈による"
+   ],
+   "id": "exp-shiho-2024-kenpo-q14-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,221 @@
+{
+ "question_id": "shiho-2023-minpo-q04",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q04-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。101条3項は「本人の指図に従って」行為をしたことを要件としておらず、「限られる」とする点が誤り。",
+   "body": "決め手は「代理人が本人の指図に従ってその行為をしたときに限られる」という限定の部分である。民法101条3項は「特定の法律行為をすることを委託された代理人がその行為をしたときは、本人は、自ら知っていた事情について代理人が知らなかったことを主張することができない。」と定めている。現行の条文では、特定の法律行為の委託を受けた代理人がその行為をしたことだけが要件で、本人の指図の有無は問われていない。したがって、指図に従った場合に限るとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "101",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "特定の法律行為をすることを委託された代理人がその行為をしたときは、本人は、自ら知っていた事情について代理人が知らなかったことを主張することができない。",
+     "text_sha256": "1ff6344ed83a1695addad9369ee1c345ee56d6f377464e7b1c102787bcffec99",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "平成29年の民法改正で101条の文言が改められた。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2023-minpo-q04-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q04-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。105条後段のとおり、やむを得ない事由があるときは、法定代理人は選任及び監督についての責任のみを負う。",
+   "body": "民法105条は、前段で「法定代理人は、自己の責任で復代理人を選任することができる。」と定め、後段で「やむを得ない事由があるときは、本人に対してその選任及び監督についての責任のみを負う。」と定めている。本肢はこの後段の内容と一致する。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "105",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法定代理人は、自己の責任で復代理人を選任することができる。",
+     "text_sha256": "bffa30fd835cc2b6671b4584fdf18cd081138acd9543a3e989795b670d824fad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "105",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "やむを得ない事由があるときは、本人に対してその選任及び監督についての責任のみを負う。",
+     "text_sha256": "bffa30fd835cc2b6671b4584fdf18cd081138acd9543a3e989795b670d824fad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q04-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q04-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。102条ただし書により、制限行為能力者が他の制限行為能力者の法定代理人としてした行為は、行為能力の制限を理由に取り消すことができる。",
+   "body": "民法102条本文は「制限行為能力者が代理人としてした行為は、行為能力の制限によっては取り消すことができない。」と定めるが、ただし書で「制限行為能力者が他の制限行為能力者の法定代理人としてした行為については、この限りでない。」としている。本肢はこのただし書の場面であり、本文の取消し制限が及ばないため、取り消すことができる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "102",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "制限行為能力者が代理人としてした行為は、行為能力の制限によっては取り消すことができない。",
+     "text_sha256": "f045e74643cdc96082b9bfbfa8d834ad92c938765dcd95fa3da078cf7032c58a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "102",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "制限行為能力者が他の制限行為能力者の法定代理人としてした行為については、この限りでない。",
+     "text_sha256": "f045e74643cdc96082b9bfbfa8d834ad92c938765dcd95fa3da078cf7032c58a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q04-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q04-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。自己契約でも「債務の履行」は108条1項ただし書により無権代理とみなされない。",
+   "body": "本肢は、Ａが相手方Ｂの代理人として自己（Ａ）に対する債務を履行する場面で、自己契約にあたる。民法108条1項本文は「相手方の代理人として、又は当事者双方の代理人としてした行為は、代理権を有しない者がした行為とみなす。」と定めるが、ただし書で「債務の履行及び本人があらかじめ許諾した行為については、この限りでない。」としている。したがって、債務の履行は無権代理とみなされず、「代理権を有しない者がした行為とみなされる」とする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方の代理人として、又は当事者双方の代理人としてした行為は、代理権を有しない者がした行為とみなす。",
+     "text_sha256": "d2f4177a2f9cbab3ec14b6fd059fc14d4d95f23e0a47e6cdf8a60303166bc20f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の履行及び本人があらかじめ許諾した行為については、この限りでない。",
+     "text_sha256": "d2f4177a2f9cbab3ec14b6fd059fc14d4d95f23e0a47e6cdf8a60303166bc20f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q04-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q04-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。103条2号のとおり、権限の定めのない代理人は性質を変えない範囲で利用・改良行為をする権限を有する。",
+   "body": "民法103条は「権限の定めのない代理人は、次に掲げる行為のみをする権限を有する。」とし、1号で保存行為、2号で「代理の目的である物又は権利の性質を変えない範囲内において、その利用又は改良を目的とする行為」を挙げている。本肢はこの2号の内容と一致する。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "権限の定めのない代理人は、次に掲げる行為のみをする権限を有する。",
+     "text_sha256": "bb1d43f0bd61997f7529311c9a50c263f3839eaddc372fff4dcdfb435faf7465",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理の目的である物又は権利の性質を変えない範囲内において、その利用又は改良を目的とする行為",
+     "text_sha256": "bb1d43f0bd61997f7529311c9a50c263f3839eaddc372fff4dcdfb435faf7465",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q04-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

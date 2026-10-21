@@ -1,0 +1,288 @@
+{
+ "question_id": "shiho-2023-minpo-q11",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q11-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。未だ独立の建物に至らない建前は土地に付合せず動産として扱われるから、自ら材料を調達して工事をした請負人Bに帰属し、注文者Aには帰属しないと解されている。",
+   "body": "誤りは、建前の所有権が土地所有者である注文者Aに帰属するとする点である。86条1項は「土地及びその定着物は、不動産とする。」と定めるが、建物は土地とは別個の不動産とされ、建物となるべき建前も土地に付合しないと解されている。そのため、242条本文の「不動産の所有者は、その不動産に従として付合した物の所有権を取得する」により、甲土地の所有者Aが建前の所有権を取得することにはならない。判例（最判昭和54年1月25日）も、未だ独立の不動産に至らない建前に第三者が材料を供して工事を施し建物に仕上げた場合の所有権の帰属を、動産の加工に関する246条2項に基づいて決めるとしており、建前を土地に付合した物としては扱っていない。そして、請負人が自ら材料を調達して工事をしたときは、材料の所有者である請負人Bに建前の所有権が帰属すると解されている。この点について判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "86",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "土地及びその定着物は、不動産とする。",
+     "text_sha256": "2d089d5a5ebb96a49e7c20a031e4848afbdfbdf4ddd3b461637812f2677e3f64",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "242",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産の所有者は、その不動産に従として付合した物の所有権を取得する",
+     "text_sha256": "df5476e9543ebad077b3ef37bd27add64614e6ab384d3d5e207a853501dd8238",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "246",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項に規定する場合において、加工者が材料の一部を供したときは、その価格に工作によって生じた価格を加えたものが他人の材料の価格を超えるときに限り、加工者がその加工物の所有権を取得する。",
+     "text_sha256": "9dfa27ba02d9df18d7031aa6ecff1b0dc39d12c2a51325b5be3203e593aa5077",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "建前に第三者が工事を施して建物に仕上げた場合の所有権の帰属",
+     "court": "最高裁判所第一小法廷",
+     "date": "1979-01-25",
+     "case_number": "昭和53(オ)872",
+     "holding": "建築途中の未だ独立の不動産に至らない建前に第三者が材料を供して工事を施し独立の不動産である建物に仕上げた場合における建物所有権の帰属は、民法243条ではなく246条2項の規定に基づいて決定すべきである。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53336/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [
+    {
+     "about": "請負人が材料を供して建築した建物（建前）の所有権が請負人に帰属するか",
+     "searched": [
+      "courts.py search 建前 加工 --from 昭和53 --to 昭和55",
+      "courts.py known 建前",
+      "大審院の判例である可能性あり（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "建物・建前が土地に付合しない点、及び材料を供した請負人に建前の所有権が帰属する点は解釈による（最判昭和54年1月25日は建前を動産として加工の規定を適用したもので、請負人への帰属そのものを判示したものではない）"
+   ],
+   "id": "exp-shiho-2023-minpo-q11-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q11-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。取引上の独立性のない増築部分は建物に付合し、賃貸人の承諾を得た増築でも242条ただし書は適用されないから、その所有権は建物所有者Aに帰属する（最判昭和44年7月25日）。",
+   "body": "誤りは、取引上の独立性がなくても増築部分の所有権がBに帰属するとする点である。242条は、本文で「不動産の所有者は、その不動産に従として付合した物の所有権を取得する」と定め、ただし書で「権原によってその物を附属させた他人の権利を妨げない」と定める。判例（最判昭和44年7月25日）は、賃借人が賃貸人兼所有者の承諾を得て建物の上に増築した二階部分について、既存建物の構造の一部を成し、それ自体では取引上の独立性を有しないときは、242条ただし書の適用はなく、その所有権は構築当初から既存建物の所有者に属するとした。したがって、BがAの承諾を得て増築した場合でも、増築部分に取引上の独立性がなければ、その所有権は甲建物の所有者Aに帰属する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "242",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産の所有者は、その不動産に従として付合した物の所有権を取得する",
+     "text_sha256": "df5476e9543ebad077b3ef37bd27add64614e6ab384d3d5e207a853501dd8238",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "242",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "権原によってその物を附属させた他人の権利を妨げない",
+     "text_sha256": "df5476e9543ebad077b3ef37bd27add64614e6ab384d3d5e207a853501dd8238",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "賃借人が承諾を得て増築した独立性のない二階部分の所有権",
+     "court": "最高裁判所第三小法廷",
+     "date": "1969-07-25",
+     "case_number": "昭和44(オ)120",
+     "holding": "建物の賃借人が賃貸人兼所有者の承諾を得て平家の上に増築した二階部分は、外部への出入りが賃借建物内の梯子段によるほかないときは、取引上の独立性を有せず区分所有権の対象たる部分に当たらない。この場合、賃貸人の承諾を受けていても民法242条但書の適用はなく、その所有権は構築当初から既存建物の所有者に属する（全文）。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54154/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q11-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q11-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。土地使用の権原のない者がまいた種から生育した苗の所有権は、土地所有者Bに属する（242条本文、最判昭和31年6月19日）。",
+   "body": "決め手は、無権原でまかれた種子が土地に付合するかである。242条は、本文で「不動産の所有者は、その不動産に従として付合した物の所有権を取得する」と定め、ただし書で「権原によってその物を附属させた他人の権利を妨げない」と定める。判例（最判昭和31年6月19日）は、まかれた種から生育した苗の所有権は、播種が土地使用の権原のない者によってされた場合は、土地所有者に属するとした。Aは無権原でBの土地に種子をまいたから、ただし書の「権原によって」附属させた場合に当たらず、苗の所有権は土地所有者Bに帰属する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "242",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産の所有者は、その不動産に従として付合した物の所有権を取得する",
+     "text_sha256": "df5476e9543ebad077b3ef37bd27add64614e6ab384d3d5e207a853501dd8238",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "242",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "権原によってその物を附属させた他人の権利を妨げない",
+     "text_sha256": "df5476e9543ebad077b3ef37bd27add64614e6ab384d3d5e207a853501dd8238",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "無権原者がまいた種から生育した苗の所有権",
+     "court": "最高裁判所第三小法廷",
+     "date": "1956-06-19",
+     "case_number": "昭和28(オ)1435",
+     "holding": "播かれた種から生育した苗の所有権は、播種が土地使用の権原のない者によってなされた場合は、土地所有者に属する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57403/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q11-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q11-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。混和には動産の付合の規定が準用され（245条）、主従の区別ができないときは、各所有者が混和の時の価格の割合に応じて混和物を共有する（244条）。",
+   "body": "決め手は、245条による244条の準用である。245条は、「前二条の規定は、所有者を異にする物が混和して識別することができなくなった場合について準用する。」と定める。準用される244条は、「付合した動産について主従の区別をすることができないときは、各動産の所有者は、その付合の時における価格の割合に応じてその合成物を共有する。」と定める。ワイン甲と乙が混和して識別できなくなり、主従の区別ができないのであるから、その混和物は、混和の時における価格の割合に応じてAとBとが共有する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "245",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の規定は、所有者を異にする物が混和して識別することができなくなった場合について準用する。",
+     "text_sha256": "59c94a938be012898a1c341e64d7dcf4be088ad263caa59601127d29edd22f28",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "244",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "付合した動産について主従の区別をすることができないときは、各動産の所有者は、その付合の時における価格の割合に応じてその合成物を共有する。",
+     "text_sha256": "d81befa722380836ad84d6f345e801f359ff07539154a0a056eb5e7650864e72",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q11-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q11-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。他人の動産に工作を加えた場合、工作によって生じた価格が材料の価格を著しく超えるときは、加工者が加工物の所有権を取得する（246条1項ただし書）。",
+   "body": "決め手は、246条1項ただし書である。同項本文は、他人の動産に工作を加えた者があるときは「その加工物の所有権は、材料の所有者に帰属する。」と定め、ただし書は「工作によって生じた価格が材料の価格を著しく超えるときは、加工者がその加工物の所有権を取得する。」と定める。AはBの所有する鋼板甲に工作を加えて作品乙を製作した加工者であり、工作によって生じた価格が甲の価格を著しく超えるのであるから、ただし書が適用される。したがって、乙の所有権は、加工者Aに帰属する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "246",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その加工物の所有権は、材料の所有者に帰属する。",
+     "text_sha256": "9dfa27ba02d9df18d7031aa6ecff1b0dc39d12c2a51325b5be3203e593aa5077",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "246",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "工作によって生じた価格が材料の価格を著しく超えるときは、加工者がその加工物の所有権を取得する。",
+     "text_sha256": "9dfa27ba02d9df18d7031aa6ecff1b0dc39d12c2a51325b5be3203e593aa5077",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q11-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

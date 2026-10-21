@@ -1,0 +1,275 @@
+{
+ "question_id": "shiho-2023-minpo-q10",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q10-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。占有の訴えと本権の訴えは互いに妨げないから（202条1項）、Aは、所有権に基づく返還請求と占有回収の訴えによる返還請求とを同時にすることができる。",
+   "body": "決め手は、占有の訴えと本権の訴えの関係である。202条1項は、「占有の訴えは本権の訴えを妨げず、また、本権の訴えは占有の訴えを妨げない。」と定める。Aは甲の所有者であり占有者でもあるから、Bに窃取されたことにより、所有権に基づく返還請求権と、200条1項の「占有者がその占有を奪われたときは、占有回収の訴えにより、その物の返還及び損害の賠償を請求することができる」による返還請求権の両方を持つ。両者は互いに妨げないから、Aは、両方の請求を同時にすることができると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "202",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有の訴えは本権の訴えを妨げず、また、本権の訴えは占有の訴えを妨げない。",
+     "text_sha256": "e5335b0ba1cf3007dea873a86b5920f110f1f7aa74d7982973b739666cc94e42",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "200",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有者がその占有を奪われたときは、占有回収の訴えにより、その物の返還及び損害の賠償を請求することができる",
+     "text_sha256": "37ff60d798383f8e7dcda5ccbd63cc920f93a30bbd1be15f64324882699130d1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "両請求を同時にできる（一つの訴えで併せて請求できる）点は202条1項の解釈による"
+   ],
+   "id": "exp-shiho-2023-minpo-q10-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q10-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。甲を詐取したBも甲の占有者であるから、Cに甲を窃取されたBは、Cに対して占有回収の訴えにより甲の返還を求めることができる。",
+   "body": "誤りは、詐取者Bは占有回収の訴えを提起できないとする点である。180条は、「占有権は、自己のためにする意思をもって物を所持することによって取得する。」と定めており、占有権の取得に所持の原因が正当であることは求められていない。Bは、甲を詐取して自己のために所持しているから、甲の占有者である。200条1項は「占有者がその占有を奪われたとき」に占有回収の訴えを認め、202条2項は「占有の訴えについては、本権に関する理由に基づいて裁判をすることができない。」と定めるから、Bが本権を持たないことは、Cに対する占有回収の訴えを妨げない。したがって、Bは、Cに対して、占有回収の訴えによって甲の返還を求めることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "180",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有権は、自己のためにする意思をもって物を所持することによって取得する。",
+     "text_sha256": "36ba3b957032ffcbefaf5197c62b740f6b7132102fee0d7d0a035be580527b02",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "200",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有者がその占有を奪われたとき",
+     "text_sha256": "37ff60d798383f8e7dcda5ccbd63cc920f93a30bbd1be15f64324882699130d1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "202",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "占有の訴えについては、本権に関する理由に基づいて裁判をすることができない。",
+     "text_sha256": "e5335b0ba1cf3007dea873a86b5920f110f1f7aa74d7982973b739666cc94e42",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "占有の取得原因が不正でも占有者として占有の訴えを提起できる点は解釈による"
+   ],
+   "id": "exp-shiho-2023-minpo-q10-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q10-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。留置権者Bは甲の占有者であるから、Cに甲を窃取されたBは、Cに対して占有回収の訴えにより甲の返還を求めることができる。",
+   "body": "誤りは、留置権者Bは占有回収の訴えを提起できないとする点である。295条1項は、留置権を「他人の物の占有者」の権利として定めており、留置権を行使しているBは甲の占有者である。200条1項は「占有者がその占有を奪われたとき」に占有回収の訴えを認めているから、Cに甲を窃取されたBは、Cに対し占有回収の訴えによって甲の返還を求めることができる。なお、302条本文は「留置権は、留置権者が留置物の占有を失うことによって、消滅する。」と定めるが、203条ただし書は、占有者が「占有回収の訴えを提起したときは、この限りでない」としており、Bが占有回収の訴えで占有を回復すれば占有は失われなかったものとされると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "295",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の物の占有者",
+     "text_sha256": "5c120d320238e83f832ef9e2f8c7e848a8fd3c0499a6d5e4aabf099e22e7bdee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "200",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有者がその占有を奪われたとき",
+     "text_sha256": "37ff60d798383f8e7dcda5ccbd63cc920f93a30bbd1be15f64324882699130d1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "302",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "留置権は、留置権者が留置物の占有を失うことによって、消滅する。",
+     "text_sha256": "bef404466d6d802fadae642bcffc4975f35d13faa77b25b9956f01a726090c05",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "203",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有回収の訴えを提起したときは、この限りでない",
+     "text_sha256": "a43fde6568eecf2f600f3a34ab406af441595f7eab699541405fe523080edce5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "占有回収の訴えにより占有を回復すれば占有が失われなかったものとされ、留置権も消滅しないとする点は解釈による"
+   ],
+   "id": "exp-shiho-2023-minpo-q10-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q10-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。占有回収の訴えは、侵奪者の特定承継人に対しては、その承継人が侵奪の事実を知っていたときでなければ提起できないから（200条2項）、善意のCに対しては提起できない。",
+   "body": "決め手は、200条2項である。同項は、「占有回収の訴えは、占有を侵奪した者の特定承継人に対して提起することができない。ただし、その承継人が侵奪の事実を知っていたときは、この限りでない。」と定める。Cは、甲を窃取したBから売買により甲を譲り受け引渡しを受けた者であるから、侵奪者Bの特定承継人に当たる。そしてCは窃取の事実につき善意であるから、ただし書には当たらない。したがって、Aは、Cに対して、占有回収の訴えによって甲の返還を求めることはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "200",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "占有回収の訴えは、占有を侵奪した者の特定承継人に対して提起することができない。ただし、その承継人が侵奪の事実を知っていたときは、この限りでない。",
+     "text_sha256": "37ff60d798383f8e7dcda5ccbd63cc920f93a30bbd1be15f64324882699130d1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q10-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q10-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。賃貸人Aは、賃借人Bを通じて甲を代理占有しているから（181条）、Bの所持がCに奪われたときは、Aも占有者として、Cに対し占有回収の訴えにより甲の返還を求めることができると解されている。",
+   "body": "決め手は、賃貸人Aが占有者として占有の訴えを提起できるかである。181条は、「占有権は、代理人によって取得することができる。」と定めており、Aは、甲を賃貸して引き渡した後も、賃借人Bの所持を通じて甲を占有している（代理占有）と解されている。197条は、「占有者は、次条から第二百二条までの規定に従い、占有の訴えを提起することができる。」と定めるから、Aも占有の訴えを提起できる。CがBのもとから甲を窃取したことで、Bの所持を通じたAの占有も奪われたことになるから、Aは、200条1項により、Cに対して、占有回収の訴えによって甲の返還を求めることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "181",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有権は、代理人によって取得することができる。",
+     "text_sha256": "528b373898bd84ca88ca3b1d12e5e9618922d99089e98318e73457ce9169b1fe",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "197",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有者は、次条から第二百二条までの規定に従い、占有の訴えを提起することができる。",
+     "text_sha256": "31673a83a6c88d9e69274549a1aa85f6899ba001f52ed5e20dce9651d960bf25",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "200",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有者がその占有を奪われたときは、占有回収の訴えにより、その物の返還及び損害の賠償を請求することができる",
+     "text_sha256": "37ff60d798383f8e7dcda5ccbd63cc920f93a30bbd1be15f64324882699130d1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "賃貸人が賃借人を通じて代理占有し、直接占有者の所持が奪われたときに間接占有者も占有回収の訴えを提起できる点は解釈による"
+   ],
+   "id": "exp-shiho-2023-minpo-q10-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

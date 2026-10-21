@@ -1,0 +1,273 @@
+{
+ "question_id": "shiho-2023-minpo-q01",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q01-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：第三者のためにする契約は、成立の時に第三者が現に存しない場合でも効力を妨げられない（537条2項）ので、受益者が胎児であってもよい。",
+   "body": "537条2項は、第三者のためにする契約は「その成立の時に第三者が現に存しない場合又は第三者が特定していない場合であっても、そのためにその効力を妨げられない。」と定める。契約の当事者はＡとＣであり、胎児Ｂは受益者（第三者）にすぎないから、契約成立時にＢが胎児であっても契約の効力は妨げられない。なお、第三者の権利は「その第三者が債務者に対して同項の契約の利益を享受する意思を表示した時に発生する」（537条3項）ので、Ｂが権利を取得するのは出生後に受益の意思表示をした時である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "537",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その成立の時に第三者が現に存しない場合又は第三者が特定していない場合であっても、そのためにその効力を妨げられない。",
+     "text_sha256": "10cd4a6dd77645f052d9e71bca44a9551c4ffc405e771ee6d34f07cebe6caae5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "537",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "その第三者が債務者に対して同項の契約の利益を享受する意思を表示した時に発生する",
+     "text_sha256": "10cd4a6dd77645f052d9e71bca44a9551c4ffc405e771ee6d34f07cebe6caae5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q01-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q01-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：父は胎児を認知できるが、その場合は母の承諾を得なければならない（783条1項）。",
+   "body": "783条1項は「父は、胎内に在る子でも、認知することができる。この場合においては、母の承諾を得なければならない。」と定める。したがって、胎児認知には母の承諾が必要であり、本肢は条文どおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "783",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "父は、胎内に在る子でも、認知することができる。この場合においては、母の承諾を得なければならない。",
+     "text_sha256": "58480cd8fdc9daa6682f39b365ae116a49807a119529bdd6bd91a23bacea730b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2023-minpo-q01-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q01-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：死因贈与は契約であり、権利能力のない胎児はその当事者（受贈者）となることができないと解されている。",
+   "body": "「私権の享有は、出生に始まる。」（3条1項）ので、胎児は原則として権利能力を有しない。遺贈については、965条が「第八百八十六条及び第八百九十一条の規定は、受遺者について準用する。」と定め、886条1項の「胎児は、相続については、既に生まれたものとみなす。」が受遺者に準用されるため、胎児も受遺者となることができる。しかし、死因贈与は贈与者と受贈者の合意による契約であり、554条は「その性質に反しない限り、遺贈に関する規定を準用する。」とするにとどまる。単独行為である遺贈と異なり、契約の当事者となること自体に権利能力が必要であるから、胎児を受贈者とする死因贈与はできないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "私権の享有は、出生に始まる。",
+     "text_sha256": "fcbfe72de5bdf0d82c18f0bce518b65ebb0583453792eb9bb34b4764d4589992",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "965",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第八百八十六条及び第八百九十一条の規定は、受遺者について準用する。",
+     "text_sha256": "ddf36731f8226f9f14f8728c9ade878ba0b32dd997368cda2b083ec6dce5a1bc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "886",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "胎児は、相続については、既に生まれたものとみなす。",
+     "text_sha256": "352b45cb024974dcb1a56b431e32e53155bcc2be2b632e043f2b26e9085b5119",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "554",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その性質に反しない限り、遺贈に関する規定を準用する。",
+     "text_sha256": "79b73a16e22f1cb1cc9a573d09a1016fd03639b152e7d246d4fd84f0cc775872",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "解釈による：死因贈与に965条（886条）の準用がなく胎児が受贈者となれないことは条文に明記されておらず、一般的な理解による。"
+   ],
+   "id": "exp-shiho-2023-minpo-q01-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q01-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：胎児は損害賠償請求権について既に生まれたものとみなされるが、判例は胎児が生きて生まれたときに遡って権利能力を取得するとする立場をとり、出生前に両親が胎児を代理して請求することはできないとされている。",
+   "body": "721条は「胎児は、損害賠償の請求権については、既に生まれたものとみなす。」と定める。この「既に生まれたものとみなす」の意味について、判例は、胎児の間は権利能力がなく、生きて生まれたときに不法行為の時に遡って権利能力を取得するという立場（いわゆる停止条件説）をとっていると解されている（判例あり（要確認））。この立場では、出生前の胎児には権利能力も法定代理人もないから、両親が出生前に胎児を代理して加害者に損害賠償を請求することはできない。親権者が子を代表する824条も、出生後の「子の財産」についての規定である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "721",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "胎児は、損害賠償の請求権については、既に生まれたものとみなす。",
+     "text_sha256": "ea288fa5e16ef8fa7eac597bbf5cccf63d88989429cc74e181fb66060139aab2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "824",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子の財産",
+     "text_sha256": "b3e4d6dab9bcc850b1d9cbb8a89fbe8b7fd3d91be42308097716a720be76295d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "胎児の間は権利能力がなく、出生前に親が胎児を代理して損害賠償について和解等をすることはできないとした判例（いわゆる阪神電鉄事件）",
+     "searched": [
+      "大審院（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による：721条の「既に生まれたものとみなす」の意味（停止条件説）は条文に書かれておらず、判例の一般的な理解による。判例の中身は courts.py で確かめていない。"
+   ],
+   "id": "exp-shiho-2023-minpo-q01-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2023-minpo-q01-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：認知の訴えを提起できるのは「子、その直系卑属又はこれらの者の法定代理人」であり、胎児には権利能力も法定代理人もないから、胎児の母が胎児のために認知の訴えを提起することはできないと解されている。",
+   "body": "787条本文は「子、その直系卑属又はこれらの者の法定代理人は、認知の訴えを提起することができる。」と定める。胎児については、任意認知を認める783条1項（「父は、胎内に在る子でも、認知することができる。」）のような規定が認知の訴えにはない。また「私権の享有は、出生に始まる。」（3条1項）から、胎児は「子」として訴えの当事者になれず、母も胎児の法定代理人として訴えを提起することはできないと解されている。母が認知の訴えを提起できるのは、子の出生後に子の法定代理人としてである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "787",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子、その直系卑属又はこれらの者の法定代理人は、認知の訴えを提起することができる。",
+     "text_sha256": "88ec7c2497f45693b8be10f61194b0e12d210870b2432b59b8201b527c862e8b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "783",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "父は、胎内に在る子でも、認知することができる。",
+     "text_sha256": "58480cd8fdc9daa6682f39b365ae116a49807a119529bdd6bd91a23bacea730b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "私権の享有は、出生に始まる。",
+     "text_sha256": "fcbfe72de5bdf0d82c18f0bce518b65ebb0583453792eb9bb34b4764d4589992",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "解釈による：胎児について認知の訴えを提起できないことは条文に明記されておらず、一般的な理解による。"
+   ],
+   "id": "exp-shiho-2023-minpo-q01-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
