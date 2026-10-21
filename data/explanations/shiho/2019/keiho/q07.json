@@ -1,0 +1,339 @@
+{
+ "question_id": "shiho-2019-keiho-q07",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-keiho-q07-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。同一の被害者に対する1個の恐喝行為で財物（249条1項）と財産上の利益（同条2項）を得た場合は、包括して1個の恐喝罪が成立する。",
+   "body": "刑法249条1項は「人を恐喝して財物を交付させた者」を、2項は「前項の方法により、財産上不法の利益を得、又は他人にこれを得させた者」を、同じ法定刑で処罰する。1項と2項は同じ恐喝罪の客体を財物と利益に分けて規定したものであり、同じ被害者に対する1個の恐喝行為によって両方を得た場合は、侵害された法益は一つとみて、包括して1個の恐喝罪が成立すると解されている。判例も同様の立場をとるとされている（判例あり（要確認））。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "249",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を恐喝して財物を交付させた者",
+     "text_sha256": "f84054d582866a7a23723a5ea55c12662213907cea3051a5145dc29f346ed71b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "249",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の方法により、財産上不法の利益を得、又は他人にこれを得させた者",
+     "text_sha256": "f84054d582866a7a23723a5ea55c12662213907cea3051a5145dc29f346ed71b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "1個の恐喝行為で財物と財産上の利益を得た場合に包括して1個の恐喝罪とする判例",
+     "searched": [
+      "courts.py search 恐喝 財産上の利益 包括"
+     ]
+    }
+   ],
+   "notes": [
+    "包括一罪とする理由の説明は一般的な理解によるもので、解釈による。"
+   ],
+   "id": "exp-shiho-2019-keiho-q07-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-keiho-q07-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。3名を面前で同時に1個の行為で恐喝した場合、3個の恐喝罪は「一個の行為が二個以上の罪名に触れ」る観念的競合（54条1項前段）となり、併合罪ではない。",
+   "body": "誤りは「併合罪となる」とする点である。恐喝罪は被害者ごとに財産を侵害するので、乙ら3名からそれぞれ財物を出させた以上、恐喝罪は3個成立する。しかし、甲は3名をその面前で同時に恐喝しており、恐喝行為は1個とみられる。刑法54条1項は「一個の行為が二個以上の罪名に触れ」るときは「その最も重い刑により処断する」と定めており（観念的競合）、本肢の3個の恐喝罪はこれに当たると解されている（判例あり（要確認））。刑法45条の併合罪は、行為が別々の場合の扱いである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その最も重い刑により処断する",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "数人を同時に恐喝して財物を一括して交付させた場合に、被害者の数の恐喝罪が観念的競合となるとする判例",
+     "searched": [
+      "courts.py search 恐喝 数人"
+     ]
+    }
+   ],
+   "notes": [
+    "恐喝罪の個数と観念的競合の判断は一般的な理解によるもので、解釈による。"
+   ],
+   "id": "exp-shiho-2019-keiho-q07-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-keiho-q07-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。恐喝の手段として用いた暴行で傷害を負わせた場合、恐喝罪と傷害罪は1個の行為によるものとして観念的競合（54条1項前段）となり、併合罪ではない。",
+   "body": "誤りは「併合罪となる」とする点である。本肢では、恐喝の手段である暴行そのものによって乙が傷害を負っており、恐喝罪（刑法249条1項）の手段となった行為と、傷害罪（同204条「人の身体を傷害した者」）の行為とが重なっている。このように同じ暴行が両罪に当たる場合は、刑法54条1項の「一個の行為が二個以上の罪名に触れ」るときに当たり、観念的競合になると解されている（判例あり（要確認））。行為が別々であることを前提とする刑法45条の併合罪にはならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "249",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を恐喝して財物を交付させた者",
+     "text_sha256": "f84054d582866a7a23723a5ea55c12662213907cea3051a5145dc29f346ed71b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "204",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の身体を傷害した者",
+     "text_sha256": "6ede21287a797c6f241c77f9e36de03258b58392279dd9ec60ceafb09f7b2af4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "恐喝の手段として用いた暴行により傷害を負わせた場合に恐喝罪と傷害罪を観念的競合とする判例",
+     "searched": [
+      "courts.py search 恐喝 傷害",
+      "courts.py search 恐喝 傷害 一個の行為",
+      "courts.py search 恐喝 傷害 五四条"
+     ]
+    }
+   ],
+   "notes": [
+    "恐喝罪と傷害罪の罪数の説明は一般的な理解によるもので、解釈による。"
+   ],
+   "id": "exp-shiho-2019-keiho-q07-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-keiho-q07-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、恐喝の手段として監禁が行われた場合でも監禁罪と恐喝罪は牽連犯の関係にないとしており、両罪は併合罪となる。",
+   "body": "問題は、監禁が恐喝の手段であることから、刑法54条1項後段の「犯罪の手段若しくは結果である行為が他の罪名に触れるとき」（牽連犯）に当たるかである。最高裁判所は、恐喝の手段として監禁が行われた場合であっても、両罪は牽連犯の関係にはないと判断した。監禁（刑法220条「不法に人を逮捕し、又は監禁した者」）と恐喝は通常は手段と目的の関係にあるとはいえないためと解されている。また、本肢では監禁の間に別に脅迫をして財物を交付させており、1個の行為ともいえない。したがって、両罪は刑法45条の併合罪となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるとき",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "220",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法に人を逮捕し、又は監禁した者",
+     "text_sha256": "d8ef399d30f380f6cab88d03eb7df7918dcbb43ebd2d82339b4ecf5563b90cd1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "恐喝の手段として監禁が行われた場合の罪数関係",
+     "court": "最高裁判所第一小法廷",
+     "date": "2005-04-14",
+     "case_number": "平成16(あ)2077",
+     "holding": "恐喝の手段として監禁が行われた場合であっても、両罪は、牽連犯の関係にはない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50078/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "牽連犯に当たらない理由（通常は手段と目的の関係にない）の説明は一般的な理解によるもので、解釈による。"
+   ],
+   "id": "exp-shiho-2019-keiho-q07-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-keiho-q07-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。盗品を所持する者を恐喝してその盗品を交付させた場合は恐喝罪が成立するだけであり、盗品等無償譲受け罪は別に成立しない。",
+   "body": "誤りは、盗品等無償譲受け罪も成立し併合罪となるとする点である。判例は、盗品を所持する者に対し恐喝の手段を用いてその盗品を交付させた場合には、正当な権利を有しない者の所持も法律上保護されるとして、恐喝罪が成立するとしている。刑法256条1項は盗品等を「無償で譲り受けた者」を処罰するが、これは本犯者との合意に基づいて盗品を取得する場合を予定しており、恐喝によって被害者の意思を抑えて盗品を奪う場合には当たらないと解されている。したがって、甲には恐喝罪（刑法249条1項）のみが成立する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "256",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "無償で譲り受けた者",
+     "text_sha256": "87be25bab6223e26e4d70509f6679361b8f313dd726a160b7b9d3c698c1fc875",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "249",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を恐喝して財物を交付させた者",
+     "text_sha256": "f84054d582866a7a23723a5ea55c12662213907cea3051a5145dc29f346ed71b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "他人の所持する盗品に対する恐喝罪の成立",
+     "court": "最高裁判所第二小法廷",
+     "date": "1949-02-08",
+     "case_number": "昭和23(れ)1241",
+     "holding": "正当な権利を有しない者の所持であっても所持として法律上の保護を受けるのであり、贓物を所持する者に対し恐喝の手段を用いてその贓物を交付させた場合には恐喝罪となる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55270/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "盗品等無償譲受け罪が別に成立しない理由の説明は一般的な理解によるもので、解釈による。確かめた判例は恐喝罪の成立を判示したもので、盗品等罪の不成立を直接判示したものではない。"
+   ],
+   "id": "exp-shiho-2019-keiho-q07-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
