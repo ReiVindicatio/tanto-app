@@ -1,0 +1,239 @@
+{
+ "question_id": "shiho-2021-minpo-q16",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q16-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。故意による債務不履行についてまで責任を免除する条項は、その限りで効力が認められないと解されている。",
+   "body": "決め手は、債務者が故意に履行しなかった場合にも免責条項で責任を免れられるかである。民法には債務不履行責任の免責条項の効力を一般的に定めた規定はないが、故意による不履行まで免責する合意は、信義則や公序良俗に照らし、その限りで効力を認められないと解されている。同じ考え方は売買の担保責任についての572条にも表れており、売主は担保の責任を負わない旨の特約をしたときであっても、「知りながら告げなかった事実及び自ら第三者のために設定し又は第三者に譲り渡した権利については、その責任を免れることができない」とされている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "572",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "知りながら告げなかった事実及び自ら第三者のために設定し又は第三者に譲り渡した権利については、その責任を免れることができない",
+     "text_sha256": "3635ede81c700bbf8dd66b1368bb601ea81135c8d654d5141c5a260ca038434e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "解釈による（故意の不履行についての免責条項の効力は条文に一般規定がなく、解釈による）"
+   ],
+   "id": "exp-shiho-2021-minpo-q16-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q16-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。賠償額の予定がある場合でも、債権者に過失があれば過失相殺による減額はされ得ると解されている。",
+   "body": "誤りは「過失相殺による減額がされることはない」とする点である。420条1項は「当事者は、債務の不履行について損害賠償の額を予定することができる」と定めるが、418条は「債務の不履行又はこれによる損害の発生若しくは拡大に関して債権者に過失があったときは、裁判所は、これを考慮して、損害賠償の責任及びその額を定める」としている。賠償額の予定は損害額の証明の手間を省くためのものであり、債権者の過失まで考慮しない趣旨ではないから、予定があっても過失相殺による減額はできると解されている。この点については判例あり（要確認）。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "420",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者は、債務の不履行について損害賠償の額を予定することができる",
+     "text_sha256": "8257bc006ddc631ace3579d4b6fd947d1a7f82ba6849d104ff651d287411b8d3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "418",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の不履行又はこれによる損害の発生若しくは拡大に関して債権者に過失があったときは、裁判所は、これを考慮して、損害賠償の責任及びその額を定める",
+     "text_sha256": "d4b70f1ac4260cbcf171a3e732aaa5a2df063faebba10e7b8aeec1f8cfe92565",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "損害賠償の額の予定がある場合にも過失相殺ができるとした判例",
+     "searched": [
+      "courts.py search 過失相殺 損害賠償の額の予定",
+      "courts.py search 過失相殺 予定 --from 平成5 --to 平成7",
+      "courts.py search 過失相殺 賠償額 --from 平成6 --to 平成6"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（賠償額の予定と過失相殺の関係）"
+   ],
+   "id": "exp-shiho-2021-minpo-q16-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q16-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。定型取引合意の前に内容の表示の請求を正当な事由なく拒んだときは、548条の2は適用されず、条項は合意したものとはみなされない。",
+   "body": "決め手は、548条の3第2項である。定型約款準備者は、相手方から請求があった場合には、遅滞なく、相当な方法でその定型約款の内容を示さなければならない（548条の3第1項）。そして同条2項は「定型約款準備者が定型取引合意の前において前項の請求を拒んだときは、前条の規定は、適用しない」とし、ただし書で「一時的な通信障害が発生した場合その他正当な事由がある場合は、この限りでない」とする。548条の2第1項は定型約款の「個別の条項についても合意をしたものとみなす」規定であるから、その適用がなければ、損害賠償の額を予定する条項も合意されたものとはみなされない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "548_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遅滞なく、相当な方法でその定型約款の内容を示さなければならない",
+     "text_sha256": "0c2f82da626695951a07519205153d53ac18d2ffe1cacfe301588725f0c01903",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "548_3",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "定型約款準備者が定型取引合意の前において前項の請求を拒んだときは、前条の規定は、適用しない",
+     "text_sha256": "0c2f82da626695951a07519205153d53ac18d2ffe1cacfe301588725f0c01903",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "548_3",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "一時的な通信障害が発生した場合その他正当な事由がある場合は、この限りでない",
+     "text_sha256": "0c2f82da626695951a07519205153d53ac18d2ffe1cacfe301588725f0c01903",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "548_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "個別の条項についても合意をしたものとみなす",
+     "text_sha256": "0f2d08658bcafa72f4fc362e98b06bd193b1de7170dfdce1e648405e2b841468",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "定型約款の規定は平成29年改正（令和2年4月1日施行）で新設されたもの。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2021-minpo-q16-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q16-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。賠償額の予定は解除権の行使を妨げない（420条2項）。",
+   "body": "決め手は、420条2項である。同項は「賠償額の予定は、履行の請求又は解除権の行使を妨げない」と定める。したがって、履行に代わる損害賠償の額を予定した場合において、債務者から予定額の支払の申出があったとしても、債権者は債務不履行を理由とする解除権を行使することができる。よって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "420",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "賠償額の予定は、履行の請求又は解除権の行使を妨げない",
+     "text_sha256": "8257bc006ddc631ace3579d4b6fd947d1a7f82ba6849d104ff651d287411b8d3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q16-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q16-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。違約金は「賠償額の予定と推定する」のであって、違約罰と推定されるのではない（420条3項）。",
+   "body": "誤りは、違約金を定める条項が違約罰を定める条項であると推定されるとする点である。420条3項は「違約金は、賠償額の予定と推定する」と定める。したがって、違約金の条項は、実損害の賠償とは別に支払う違約罰ではなく、損害賠償の額の予定であると推定される。違約罰であることを主張する者は、その推定を覆す必要がある。よって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "420",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "違約金は、賠償額の予定と推定する",
+     "text_sha256": "8257bc006ddc631ace3579d4b6fd947d1a7f82ba6849d104ff651d287411b8d3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q16-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

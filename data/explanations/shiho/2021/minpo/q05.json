@@ -1,0 +1,198 @@
+{
+ "question_id": "shiho-2021-minpo-q05",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q05-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。時効の利益の放棄は債務者の一方的な意思表示（単独行為）で効力を生じ、債権者の同意は要らないと解されている。",
+   "body": "決め手は、時効の利益の放棄が契約ではなく単独行為と解されている点。民法は146条で「時効の利益は、あらかじめ放棄することができない。」と事前の放棄を禁じるだけで、時効完成後の放棄の方式は定めていない。時効の利益を受けるかどうかは援用権者の意思に委ねられており（145条）、完成後の放棄は債務者の意思表示のみで効力を生じ、債権者の同意を要しないと解されている。これについては判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "146",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効の利益は、あらかじめ放棄することができない。",
+     "text_sha256": "6bf1579680a36688b36e4d8056733991ac324c368b4d79fd14243203007a5291",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "145",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効は、当事者（消滅時効にあっては、保証人、物上保証人、第三取得者その他権利の消滅について正当な利益を有する者を含む。）が援用しなければ、裁判所がこれによって裁判をすることができない。",
+     "text_sha256": "e5fa226ad26d710e216e9e61b648d93464274a60e523576250a29d3094a91a4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "時効の利益の放棄は債務者の単独行為であり、債権者の同意を要しないとする判例",
+     "searched": [
+      "courts.py search 時効の利益 放棄 同意（該当する判例は見当たらず）",
+      "大審院（データベースにない）の可能性"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（放棄が単独行為であること・債権者の同意が不要であることは条文に書かれていない）"
+   ],
+   "id": "exp-shiho-2021-minpo-q05-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q05-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。訴えの取下げは権利が確定することなく裁判上の請求が終了した場合に当たり、終了の時から６か月を経過するまで時効は完成しない。",
+   "body": "決め手は147条1項の括弧書き。同項は、裁判上の請求（1号）があるときは、その事由が終了するまで時効は完成しないとし、括弧書きで「確定判決又は確定判決と同一の効力を有するものによって権利が確定することなくその事由が終了した場合にあっては、その終了の時から六箇月を経過する」までの間は完成しないと定める。訴えの取下げによる訴訟の終了は、権利が確定することなく裁判上の請求が終了した場合に当たるから、終了の時から６か月を経過するまでの間は時効は完成しない。なお、この場合は権利が確定していないので、147条2項の更新（新たな進行）は生じない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "147",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決又は確定判決と同一の効力を有するものによって権利が確定することなくその事由が終了した場合にあっては、その終了の時から六箇月を経過する",
+     "text_sha256": "3137736c35f135564d0162881d4fffef7103e15e30ac5aaa61cc08bfef94449c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "147",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の場合において、確定判決又は確定判決と同一の効力を有するものによって権利が確定したときは、時効は、同項各号に掲げる事由が終了した時から新たにその進行を始める。",
+     "text_sha256": "3137736c35f135564d0162881d4fffef7103e15e30ac5aaa61cc08bfef94449c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q05-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q05-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、時効完成後に債務を承認した債務者は、時効完成の事実を知らなかったときでも、その後に時効を援用することは許されないとする。",
+   "body": "誤りは、時効完成を知らずに承認した場合なら承認を撤回して時効を援用できるとする点。最高裁大法廷昭和41年4月20日判決は、債務者が消滅時効完成後に債権者に対し当該債務の承認をした場合には、時効完成の事実を知らなかったときでも、その後その時効の援用をすることは許されないとした。同判決は、承認したことだけから時効完成を知って承認したと推定することは許されないとしており、時効の利益の放棄とはみない一方で、援用を許さないとしたものである。したがって、時効完成を知らなかったことを理由に承認を撤回して援用することはできない。",
+   "citations": [],
+   "cases": [
+    {
+     "name": "消滅時効完成後の債務の承認と時効の援用",
+     "court": "最高裁判所大法廷",
+     "date": "1966-04-20",
+     "case_number": "昭和37(オ)1316",
+     "holding": "消滅時効完成後に債務の承認をしたことだけから、時効の完成を知って承認したと推定することは許されない。債務者が時効完成後に債権者に対し債務の承認をした場合には、時効完成の事実を知らなかったときでも、その後その時効の援用をすることは許されない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57740/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "同判決が援用を許さない理由（信義則など）は判示事項・裁判要旨に書かれていないため、本文では触れていない"
+   ],
+   "id": "exp-shiho-2021-minpo-q05-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q05-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。仮差押えは時効の完成猶予事由にとどまり、時効が新たに進行を始める（更新）効力はない。",
+   "body": "誤りは「新たにその進行を始める」とする点。149条は「次に掲げる事由がある場合には、その事由が終了した時から六箇月を経過するまでの間は、時効は、完成しない。」とし、1号に「仮差押え」を掲げる。同条は時効の完成猶予を定めるだけで、147条2項や152条1項のように「新たにその進行を始める」とは定めていない。したがって、仮差押えの登記がされても、被保全債権の消滅時効が新たに進行を始めることはない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "149",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる事由がある場合には、その事由が終了した時から六箇月を経過するまでの間は、時効は、完成しない。",
+     "text_sha256": "16cb3f447f6ceec331cb906b3d3ecbff07ab421c46f74d0996b99babc42cc87a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "147",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "時効は、同項各号に掲げる事由が終了した時から新たにその進行を始める。",
+     "text_sha256": "3137736c35f135564d0162881d4fffef7103e15e30ac5aaa61cc08bfef94449c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "152",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効は、権利の承認があったときは、その時から新たにその進行を始める。",
+     "text_sha256": "73d4963338a58831e6d78d5e89746df7e38d0b86ae408813dba435462e740c5d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q05-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

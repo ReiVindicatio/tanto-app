@@ -1,0 +1,242 @@
+{
+ "question_id": "shiho-2021-minpo-q07",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q07-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。第二順位の抵当権者Ｃが所有権を取得した場合、Ｃの抵当権より後順位の権利はなく、Ｃの抵当権を存続させる必要がないので、混同により消滅すると解されている。",
+   "body": "誤りは「混同により消滅しない」とする点。179条1項本文は「同一物について所有権及び他の物権が同一人に帰属したときは、当該他の物権は、消滅する。」と定め、ただし書で「その物又は当該他の物権が第三者の権利の目的であるとき」を例外とする。このただし書は、混同で消滅させると所有者となった者の利益が害される場合（例えば、第一順位の抵当権者が所有権を取得したが、後順位の抵当権者がいる場合）のための例外と解されている。本肢では、所有権を取得したのは第二順位の抵当権者Ｃであり、Ｃの抵当権を存続させてもＣが先順位のＢに優先することはなく、存続させる利益がないから、原則どおり第二順位の抵当権は混同により消滅すると解されている。これについては判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同一物について所有権及び他の物権が同一人に帰属したときは、当該他の物権は、消滅する。ただし、その物又は当該他の物権が第三者の権利の目的であるときは、この限りでない。",
+     "text_sha256": "0222497d61a192fd618b225a5ea9c051766d7c0b9da1f448681d24e57d2fc848",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "後順位抵当権者が抵当不動産の所有権を取得した場合に、その抵当権が混同により消滅するかについての判例",
+     "searched": [
+      "大審院（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（179条1項ただし書の適用範囲を、所有者となった者に物権を存続させる利益がある場合に限る理解は条文に書かれていない）"
+   ],
+   "id": "exp-shiho-2021-minpo-q07-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q07-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。詐欺による取消しは善意でかつ過失がない第三者に対抗できないので、取消し前に転得した善意無過失のＣは所有権の取得を妨げられない。",
+   "body": "決め手は96条3項。同項は「前二項の規定による詐欺による意思表示の取消しは、善意でかつ過失がない第三者に対抗することができない。」と定める。Ｃは、ＡＢ間の売買が取り消される前にＢから甲土地を買い受けた者であり、Ａの意思表示が詐欺によることを過失なく知らなかったのであるから、同項の「善意でかつ過失がない第三者」に当たる。したがって、Ａは取消しをＣに対抗できず、Ｃは甲土地の所有権の取得を妨げられない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前二項の規定による詐欺による意思表示の取消しは、善意でかつ過失がない第三者に対抗することができない。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q07-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q07-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、土地共有者の一人だけについて388条本文の事由が生じても、共有土地について地上権は発生しないとする。",
+   "body": "誤りは「地上権が成立する」とする点。388条は「土地及びその上に存する建物が同一の所有者に属する場合」に抵当権が実行されたときに地上権が設定されたものとみなす。最高裁昭和29年12月23日判決は、土地共有者の一人だけについて民法388条本文の事由が生じたとしても、他の共有者の意思いかんにかかわらずその持分までが無視されるいわれはなく、当該共有土地については地上権は発生しないとした。本肢では乙土地のＡの共有持分にだけ抵当権が設定され実行されたのであり、他の共有者Ｂの持分を含む乙土地に地上権を負担させることはできないから、甲建物のための地上権は成立しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "388",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "土地及びその上に存する建物が同一の所有者に属する場合において、その土地又は建物につき抵当権が設定され、その実行により所有者を異にするに至ったときは、その建物について、地上権が設定されたものとみなす。",
+     "text_sha256": "1c78ef41c219bd8b16ae579af125c16f9b1ab7108e30642813515624dbb4a07e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "土地共有者の一人についての法定地上権の成否",
+     "court": "最高裁判所第一小法廷",
+     "date": "1954-12-23",
+     "case_number": "昭和26(オ)285",
+     "holding": "土地共有者の一人だけについて民法388条本文の事由が生じたとしても、他の共有者の意思いかんにかかわらずその持分までが無視されるべきいわれはなく、当該共有土地については地上権は発生しない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56056/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "同判決の事案で建物が共有であったかは判示事項・裁判要旨からは確認していない。本肢（土地・建物ともにＡＢ共有）への当てはめは裁判要旨の一般的な判示による"
+   ],
+   "id": "exp-shiho-2021-minpo-q07-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q07-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。行為能力の制限による取消しには第三者を保護する規定がなく、取消しにより初めから無効となるので、ＡはＣに所有権を主張できる。",
+   "body": "誤りは「主張することができない」とする点。成年被後見人の法律行為は取り消すことができ（9条）、「取り消された行為は、初めから無効であったものとみなす。」（121条）。詐欺の取消しには96条3項のように善意でかつ過失がない第三者を保護する規定があるが、行為能力の制限による取消しにはそのような規定がない。そのため、ＡＢ間の売買が取り消されると、Ｂは初めから無権利者であったことになり、Ｂから買い受けたＣは、Ａが成年被後見人であったことを過失なく知らなかったとしても、所有権を取得できない。したがって、Ａは、Ｃに対し、甲土地の所有権が自己にあることを主張することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "成年被後見人の法律行為は、取り消すことができる。",
+     "text_sha256": "67a383e068a02c1e4aadf954b4d75d4e2514d25083fac514027e71a066d7e892",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "121",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取り消された行為は、初めから無効であったものとみなす。",
+     "text_sha256": "e818d517a33aa79042b48d476962e388d6714c91741aecfe62af52cbca6e1c51",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前二項の規定による詐欺による意思表示の取消しは、善意でかつ過失がない第三者に対抗することができない。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q07-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q07-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。地役権は要役地の所有権に従たるものとしてその所有権とともに移転するので、要役地の所有権を相続した者は地役権も承継する。",
+   "body": "決め手は地役権の付従性（281条1項）。同項は、地役権は「要役地（地役権者の土地であって、他人の土地から便益を受けるものをいう。以下同じ。）の所有権に従たるものとして、その所有権とともに移転し」と定め、ただし書で「設定行為に別段の定めがあるときは、この限りでない。」とする。また、相続人は「相続開始の時から、被相続人の財産に属した一切の権利義務を承継する。」（896条本文）。したがって、設定行為に別段の定めがない限り、要役地の所有権を単独で相続した者は、その土地の地役権も相続する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "281",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "要役地（地役権者の土地であって、他人の土地から便益を受けるものをいう。以下同じ。）の所有権に従たるものとして、その所有権とともに移転し",
+     "text_sha256": "059dd1274a7043b9670f56f239ad797d86e05c52cecb73afe964abf81ab810bc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "281",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設定行為に別段の定めがあるときは、この限りでない。",
+     "text_sha256": "059dd1274a7043b9670f56f239ad797d86e05c52cecb73afe964abf81ab810bc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "896",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続開始の時から、被相続人の財産に属した一切の権利義務を承継する。",
+     "text_sha256": "26569775cea382b249232c76910772008f279f0ab8c399f2d8a8d991820a167f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q07-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,243 @@
+{
+ "question_id": "shiho-2021-minpo-q04",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q04-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。週によって期間を定めた場合は初日を算入しないので、「同日午前零時から起算する」が誤り。",
+   "body": "誤りは「同日午前零時から起算する」の部分。「１週間以内」は週によって期間を定めたものであり、140条は「日、週、月又は年によって期間を定めたときは、期間の初日は、算入しない。」と定める。同条ただし書の「その期間が午前零時から始まるとき」に当たるのは期間が午前零時から始まる場合であり、本肢の合意は５月１６日午後３時にされているから、初日（５月１６日）は算入されず、翌日の５月１７日から起算する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "140",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "日、週、月又は年によって期間を定めたときは、期間の初日は、算入しない。ただし、その期間が午前零時から始まるときは、この限りでない。",
+     "text_sha256": "0cea72dae616b5df1ed3f0f418dfe12cbb71ec842b4ed5e2d8c2082cae7d0e02",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q04-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q04-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。時間によって期間を定めたときは即時から起算するので、合意をした午前１０時から起算する。",
+   "body": "「５時間以内」は時間によって期間を定めたものである。139条は「時間によって期間を定めたときは、その期間は、即時から起算する。」と定めており、初日不算入（140条）は日・週・月・年による期間についての規定である。したがって、期間は合意をした６月３日午前１０時から起算する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "139",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時間によって期間を定めたときは、その期間は、即時から起算する。",
+     "text_sha256": "943970638cc407a7299f88d3a242e548f8315603aaad1304a6a0c21e43285a77",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "140",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "日、週、月又は年によって期間を定めたときは、期間の初日は、算入しない。",
+     "text_sha256": "0cea72dae616b5df1ed3f0f418dfe12cbb71ec842b4ed5e2d8c2082cae7d0e02",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q04-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q04-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。末日が休日でも翌日に延びるのは「その日に取引をしない慣習がある場合」に限られるので、取引をする慣習があればその日に満了する。",
+   "body": "決め手は、末日が休日に当たる場合に期間が延びる要件。142条は、期間の末日が日曜日等の休日に当たるときは、「その日に取引をしない慣習がある場合に限り、期間は、その翌日に満了する。」と定める。本肢は日曜日に取引をする慣習がある場合であるから、同条により翌日に延びることはなく、原則どおり末日（その日曜日）の終了をもって満了する（141条）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "142",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その日に取引をしない慣習がある場合に限り、期間は、その翌日に満了する。",
+     "text_sha256": "0015bde99805f4eacc3c2f4c4665b05b99f137194d8487437dc7d5997cbe77a5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "141",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条の場合には、期間は、その末日の終了をもって満了する。",
+     "text_sha256": "7bf87cf3216d08987802076dbf3a961d1108fb8b47d767c526e8089aa6678fc0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q04-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q04-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。初日不算入で７月１３日から起算し、応当日（８月１３日）の前日である８月１２日に満了するので、「８月１３日」が誤り。",
+   "body": "誤りは満了日を「８月１３日」としている点。月によって期間を定めた場合、初日は算入しない（140条）から、７月１２日午前１１時の合意では７月１３日から起算する。143条1項により期間は「暦に従って計算」し、同条2項は、月の初めから起算しないときは「最後の週、月又は年においてその起算日に応当する日の前日に満了する」と定める。起算日７月１３日に応当する日は８月１３日であるから、その前日の８月１２日の終了（午後１２時）に満了する（141条）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "140",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "日、週、月又は年によって期間を定めたときは、期間の初日は、算入しない。",
+     "text_sha256": "0cea72dae616b5df1ed3f0f418dfe12cbb71ec842b4ed5e2d8c2082cae7d0e02",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "143",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "週、月又は年によって期間を定めたときは、その期間は、暦に従って計算する。",
+     "text_sha256": "b787ce8f86a3464e716f3c6d6eeb7a64400428030443289f60f0f6c2fb2fef70",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "143",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "最後の週、月又は年においてその起算日に応当する日の前日に満了する",
+     "text_sha256": "b787ce8f86a3464e716f3c6d6eeb7a64400428030443289f60f0f6c2fb2fef70",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "141",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条の場合には、期間は、その末日の終了をもって満了する。",
+     "text_sha256": "7bf87cf3216d08987802076dbf3a961d1108fb8b47d767c526e8089aa6678fc0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q04-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q04-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。１月３１日から起算し、応当日（２月３１日）がないので、その月の末日である２月２８日に満了する。",
+   "body": "決め手は、最後の月に応当する日がない場合の扱い。初日不算入（140条）により、１月３０日午後５時の合意では１月３１日から起算する。143条2項本文によれば応当日の前日に満了するが、同項ただし書は「最後の月に応当する日がないときは、その月の末日に満了する。」と定める。うるう年でない年の２月には起算日１月３１日に応当する２月３１日がないから、２月の末日である２月２８日の終了（午後１２時）に満了する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "140",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "日、週、月又は年によって期間を定めたときは、期間の初日は、算入しない。",
+     "text_sha256": "0cea72dae616b5df1ed3f0f418dfe12cbb71ec842b4ed5e2d8c2082cae7d0e02",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "143",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "最後の月に応当する日がないときは、その月の末日に満了する。",
+     "text_sha256": "b787ce8f86a3464e716f3c6d6eeb7a64400428030443289f60f0f6c2fb2fef70",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q04-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

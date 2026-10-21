@@ -1,0 +1,226 @@
+{
+ "question_id": "shiho-2021-minpo-q09",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q09-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：各共有者は、不分割の契約がなければ、いつでも共有物の分割を請求することができる。",
+   "body": "256条1項は、「各共有者は、いつでも共有物の分割を請求することができる」と定め、例外として「五年を超えない期間内は分割をしない旨の契約をすることを妨げない」とする。この規定は不動産に限らず動産である金塊の共有にも当てはまる。分割をしない旨の契約をしていないのであれば、金塊の共有者はいつでもその分割を請求することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "256",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各共有者は、いつでも共有物の分割を請求することができる。",
+     "text_sha256": "849cde22628fe739a502d436e1cb9e26c4b8edb039d490ab2c3133ca2b4e6bd7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "256",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "五年を超えない期間内は分割をしない旨の契約をすることを妨げない",
+     "text_sha256": "849cde22628fe739a502d436e1cb9e26c4b8edb039d490ab2c3133ca2b4e6bd7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q09-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q09-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：共有物分割の訴えは、共有者全員が当事者とならなければならない固有必要的共同訴訟であると解されている。",
+   "body": "258条1項は、「共有物の分割について共有者間に協議が調わないとき、又は協議をすることができないときは、その分割を裁判所に請求することができる」と定める。共有物の分割は共有者全員の間で共有関係を解消するものであり、分割の結果を全員に一律に及ぼす必要があるため、共有物分割の訴えは、共有者の全員が原告または被告として当事者とならなければならない固有必要的共同訴訟であると解されている。この点について判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "258",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共有物の分割について共有者間に協議が調わないとき、又は協議をすることができないときは、その分割を裁判所に請求することができる。",
+     "text_sha256": "67f36f41d78eb0518ef92b2e551a741f180c52c6c471fab9b55a04292459a068",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "共有物分割の訴えは共有者全員が当事者となるべき固有必要的共同訴訟であるとした判例",
+     "searched": [
+      "courts.py search 共有物分割 必要的共同訴訟",
+      "courts.py search 共有物分割 当事者 共有者全員",
+      "courts.py search 共有物分割 固有必要的"
+     ]
+    }
+   ],
+   "notes": [
+    "固有必要的共同訴訟であるとする点は解釈による。"
+   ],
+   "id": "exp-shiho-2021-minpo-q09-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q09-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：裁判所は競売を「命ずることができる」のであって、命じなければならないわけではなく、判例は全面的価格賠償の方法による分割も許している。",
+   "body": "誤りは「競売を命じなければならない」とする点である。現行の258条3項は、「前項に規定する方法により共有物を分割することができないとき、又は分割によってその価格を著しく減少させるおそれがあるときは、裁判所は、その競売を命ずることができる」と定めており、競売を義務付けてはいない。また、判例（最判平成8年10月31日）は、共有物を特定の者に取得させるのが相当で、価格が適正に評価され、取得する者に支払能力があって共有者間の実質的公平を害しないと認められる特段の事情があるときは、いわゆる全面的価格賠償の方法による分割も許されるとした。現行の258条2項も、分割の方法として「共有者に債務を負担させて、他の共有者の持分の全部又は一部を取得させる方法」を掲げている。したがって、現物分割ができない場合に裁判所が常に競売を命じなければならないわけではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "258",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前項に規定する方法により共有物を分割することができないとき、又は分割によってその価格を著しく減少させるおそれがあるときは、裁判所は、その競売を命ずることができる。",
+     "text_sha256": "67f36f41d78eb0518ef92b2e551a741f180c52c6c471fab9b55a04292459a068",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "258",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "共有者に債務を負担させて、他の共有者の持分の全部又は一部を取得させる方法",
+     "text_sha256": "67f36f41d78eb0518ef92b2e551a741f180c52c6c471fab9b55a04292459a068",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "全面的価格賠償の方法による共有物分割の許否",
+     "court": "最高裁判所第一小法廷",
+     "date": "1996-10-31",
+     "case_number": "平成3(オ)1380",
+     "holding": "民法258条により共有物を分割する場合、共有物を特定の者に取得させるのが相当で、価格が適正に評価され、取得する者に支払能力があって、他の共有者に持分の価格を取得させても共有者間の実質的公平を害しないと認められる特段の事情があるときは、全面的価格賠償の方法によることも許される。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52485/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "258条は出題後に改正されている（現行の2項各号・3項は現行法の本文による）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2021-minpo-q09-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q09-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：各共有者は、他の共有者が分割によって取得した物について、その持分に応じて担保の責任を負う（261条）。",
+   "body": "261条は、「各共有者は、他の共有者が分割によって取得した物について、売主と同じく、その持分に応じて担保の責任を負う」と定める。肢はこの条文の内容そのとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "261",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各共有者は、他の共有者が分割によって取得した物について、売主と同じく、その持分に応じて担保の責任を負う。",
+     "text_sha256": "49a1788a8b3c33b7ba5ae1759ef3328a4bf25c4e430e7e620093d3f5ddfeefa6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q09-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q09-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：共有者は、他の共有者の同意を得ることなく、自己の持分を自由に譲渡することができると解されている。",
+   "body": "誤りは、持分の譲渡に「他の共有者の同意を得なければならない」とする点である。民法は、共有物そのものに変更を加えることについては、251条1項で「各共有者は、他の共有者の同意を得なければ、共有物に変更（その形状又は効用の著しい変更を伴わないものを除く。次項において同じ。）を加えることができない」と定めている。しかし、各共有者の持分の処分について他の共有者の同意を要するとする規定はなく、持分は各共有者が単独で自由に譲渡することができると解されている。したがって、持分の譲渡に他の共有者の同意は要らない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "251",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各共有者は、他の共有者の同意を得なければ、共有物に変更（その形状又は効用の著しい変更を伴わないものを除く。次項において同じ。）を加えることができない。",
+     "text_sha256": "0a3c76c4bb35bd7ee1bd54f661a970328206fff26e01f9887547f548a41869ff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "持分の譲渡が自由であるとする点は解釈による。"
+   ],
+   "id": "exp-shiho-2021-minpo-q09-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

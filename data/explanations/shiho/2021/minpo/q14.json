@@ -1,0 +1,254 @@
+{
+ "question_id": "shiho-2021-minpo-q14",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q14-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。転抵当は376条1項の抵当権の処分であり、377条1項により主たる債務者Ａへの通知又はＡの承諾がなければＡに対抗できない。",
+   "body": "376条1項は「抵当権者は、その抵当権を他の債権の担保とし」と定め、ＢがＣに対する債務の担保として抵当権に転抵当権を設定することはこの処分に当たる。377条1項は、前条の場合には「主たる債務者に抵当権の処分を通知し、又は主たる債務者がこれを承諾しなければ、これをもって主たる債務者、保証人、抵当権設定者及びこれらの者の承継人に対抗することができない。」と定めている。本肢の主たる債務者は抵当権設定者でもあるＡであるから、Ａへの通知又はＡの承諾がなければ、Ｃは転抵当権の設定をＡに対抗できない。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "376",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権者は、その抵当権を他の債権の担保とし",
+     "text_sha256": "025e8e2e0ea73ea255b7e7c9262a42404b859a356b506b37b058597851372cca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "377",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主たる債務者に抵当権の処分を通知し、又は主たる債務者がこれを承諾しなければ、これをもって主たる債務者、保証人、抵当権設定者及びこれらの者の承継人に対抗することができない。",
+     "text_sha256": "27a77931e73d4ac02b51db50a2ea5d728444122c38d46352884d310e03456a57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q14-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q14-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。376条1項は、同一の債務者に対する他の債権者のために抵当権を譲渡できると定めるだけで、債務者Ａの承諾を要件としていない。",
+   "body": "376条1項は、抵当権者は「同一の債務者に対する他の債権者の利益のためにその抵当権若しくはその順位を譲渡し、若しくは放棄することができる。」と定めている。ＤはＡの一般債権者であり「同一の債務者に対する他の債権者」に当たるから、ＢはＤのために抵当権を譲渡することができ、その要件としてＡの承諾は求められていない。Ａへの通知又はＡの承諾は、377条1項により、処分をＡ等に対抗するための要件である。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "376",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同一の債務者に対する他の債権者の利益のためにその抵当権若しくはその順位を譲渡し、若しくは放棄することができる。",
+     "text_sha256": "025e8e2e0ea73ea255b7e7c9262a42404b859a356b506b37b058597851372cca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "377",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主たる債務者に抵当権の処分を通知し、又は主たる債務者がこれを承諾しなければ、これをもって主たる債務者、保証人、抵当権設定者及びこれらの者の承継人に対抗することができない。",
+     "text_sha256": "27a77931e73d4ac02b51db50a2ea5d728444122c38d46352884d310e03456a57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q14-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q14-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。抵当権の順位の変更は、374条2項により登記をしなければ効力を生じない。",
+   "body": "374条1項は「抵当権の順位は、各抵当権者の合意によって変更することができる。」と定め、同条2項は「前項の規定による順位の変更は、その登記をしなければ、その効力を生じない。」と定めている。順位の変更では、登記は第三者への対抗要件ではなく効力が生ずるための要件とされている。本肢は、合意があっても登記をしなければ変更の効力が生じないとするもので、同条2項のとおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "374",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権の順位は、各抵当権者の合意によって変更することができる。",
+     "text_sha256": "1a0f76f973659c2b40fb84f73954f076d29c0a1decabfa5f6ac38ecfac51d6d7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "374",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定による順位の変更は、その登記をしなければ、その効力を生じない。",
+     "text_sha256": "1a0f76f973659c2b40fb84f73954f076d29c0a1decabfa5f6ac38ecfac51d6d7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "第一順位Ｂと第三順位Ｆの順位を入れ替える場合、間にある第二順位Ｅの抵当権も影響を受けるため、Ｅの合意も要ると解されている（解釈による）。本肢は登記が効力要件であるかを問うものとして読んだ。"
+   ],
+   "id": "exp-shiho-2021-minpo-q14-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q14-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。登記を効力発生の要件とするのは順位の変更（374条2項）であり、376条1項の順位の譲渡はＢＨ間の合意で効力を生じ、登記は対抗要件にとどまる。",
+   "body": "決め手は「その登記をしなければ譲渡の効力は生じない」という部分である。順位の譲渡は、376条1項の「その順位を譲渡し」に当たる抵当権の処分であり、374条2項のように登記を効力の要件とする規定はない。順位の譲渡は当事者（ＢとＨ）の間の合意で効力を生じ、登記は第三者に対抗するための要件（177条）であると解されている。また、主たる債務者等への対抗には377条1項の通知又は承諾が要る。よって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "376",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同一の債務者に対する他の債権者の利益のためにその抵当権若しくはその順位を譲渡し、若しくは放棄することができる。",
+     "text_sha256": "025e8e2e0ea73ea255b7e7c9262a42404b859a356b506b37b058597851372cca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "374",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定による順位の変更は、その登記をしなければ、その効力を生じない。",
+     "text_sha256": "1a0f76f973659c2b40fb84f73954f076d29c0a1decabfa5f6ac38ecfac51d6d7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "177",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産に関する物権の得喪及び変更は、不動産登記法（平成十六年法律第百二十三号）その他の登記に関する法律の定めるところに従いその登記をしなければ、第三者に対抗することができない。",
+     "text_sha256": "a27d1e6af866bda6ac153b9ac221bc2d60c83057856e1124591c9d01c2dea305",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "377",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主たる債務者に抵当権の処分を通知し、又は主たる債務者がこれを承諾しなければ、これをもって主たる債務者、保証人、抵当権設定者及びこれらの者の承継人に対抗することができない。",
+     "text_sha256": "27a77931e73d4ac02b51db50a2ea5d728444122c38d46352884d310e03456a57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "順位の譲渡の登記が対抗要件であるとする点は解釈による。"
+   ],
+   "id": "exp-shiho-2021-minpo-q14-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q14-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。順位の放棄を受けたＩはＢに優先するのではなく、ＢとＩは同順位となり、両者が受けるべき配当額の合計を債権額の割合で分けると解されている。",
+   "body": "決め手は「ＩがＢに優先する」という部分である。376条1項は、抵当権者が同一の債務者に対する他の債権者の利益のために「その順位を譲渡し、若しくは放棄することができる」と定めるが、その効果は条文に書かれていない。順位の譲渡では受益者が譲渡人に優先するのに対し、順位の放棄では、放棄した先順位の抵当権者（Ｂ）と受益者（Ｉ）とが同順位となり、両者が本来受けるべき配当額の合計を各自の債権額の割合で分け合うと解されている。したがって、ＩがＢに優先するとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "376",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同一の債務者に対する他の債権者の利益のためにその抵当権若しくはその順位を譲渡し、若しくは放棄することができる。",
+     "text_sha256": "025e8e2e0ea73ea255b7e7c9262a42404b859a356b506b37b058597851372cca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "順位の譲渡・順位の放棄の配当上の効果は条文になく、解釈による。"
+   ],
+   "id": "exp-shiho-2021-minpo-q14-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

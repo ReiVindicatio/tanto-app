@@ -1,0 +1,224 @@
+{
+ "question_id": "shiho-2021-minpo-q08",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q08-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：工事により損害を生ずるおそれがある場合の占有保全の訴えは、工事に着手した時から1年を経過すると提起できない。",
+   "body": "誤りは「工事開始時から１年が経過したときであっても，工事が完成する前であれば」提起できるとする点である。201条2項は、占有保全の訴えは「妨害の危険の存する間は、提起することができる」としつつ、「工事により占有物に損害を生ずるおそれがあるときは、前項ただし書の規定を準用する」と定める。準用される201条1項ただし書は、「その工事に着手した時から一年を経過し、又はその工事が完成したときは、これを提起することができない」とする。したがって、工事の完成前であっても、工事着手から1年を経過すれば、Bは占有保全の訴えを提起できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "201",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "占有保全の訴えは、妨害の危険の存する間は、提起することができる。この場合において、工事により占有物に損害を生ずるおそれがあるときは、前項ただし書の規定を準用する。",
+     "text_sha256": "43aae1a12a0279f57ef6892c3f5f0c8b22b0b66e42379396c6c635302934e7b9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "201",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その工事に着手した時から一年を経過し、又はその工事が完成したときは、これを提起することができない",
+     "text_sha256": "43aae1a12a0279f57ef6892c3f5f0c8b22b0b66e42379396c6c635302934e7b9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q08-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q08-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：占有の訴えについては本権に関する理由に基づいて裁判をすることができないので、Bが所有者であることを理由にAの占有回収の訴えを退けることはできない。",
+   "body": "誤りは、Bが所有者であることが明らかになれば占有回収の訴えは「認められない」とする点である。200条1項は、「占有者がその占有を奪われたときは、占有回収の訴えにより、その物の返還及び損害の賠償を請求することができる」と定める。そして202条2項は、「占有の訴えについては、本権に関する理由に基づいて裁判をすることができない」とする。したがって、占有回収の訴えでは、Bが甲の所有者であるという本権の事情を理由に請求を棄却することはできず、Aの占有が奪われたことが認められれば訴えは認められうる。なお、202条1項は「占有の訴えは本権の訴えを妨げず、また、本権の訴えは占有の訴えを妨げない」とし、Bは別に本権（所有権）に基づく訴えをすることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "200",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有者がその占有を奪われたときは、占有回収の訴えにより、その物の返還及び損害の賠償を請求することができる。",
+     "text_sha256": "37ff60d798383f8e7dcda5ccbd63cc920f93a30bbd1be15f64324882699130d1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "202",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "占有の訴えについては、本権に関する理由に基づいて裁判をすることができない。",
+     "text_sha256": "e5335b0ba1cf3007dea873a86b5920f110f1f7aa74d7982973b739666cc94e42",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "202",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有の訴えは本権の訴えを妨げず、また、本権の訴えは占有の訴えを妨げない。",
+     "text_sha256": "e5335b0ba1cf3007dea873a86b5920f110f1f7aa74d7982973b739666cc94e42",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q08-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q08-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：賃借人Cは所有の意思のない占有者なので、善意であっても損害の全部を賠償しなければならない。",
+   "body": "ポイントは、Cが賃借人として甲を占有しており「所有の意思のない占有者」に当たる点である。191条本文は、占有物が占有者の責めに帰すべき事由によって損傷したとき、「善意の占有者はその滅失又は損傷によって現に利益を受けている限度において賠償をする義務を負う」とする。しかし同条ただし書は、「所有の意思のない占有者は、善意であるときであっても、全部の賠償をしなければならない」と定める。Cは甲の所有者がAであると過失なく信じていたとしても、賃借人として占有している以上ただし書が適用され、回復者Bに対し損害の全部を賠償しなければならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "191",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "善意の占有者はその滅失又は損傷によって現に利益を受けている限度において賠償をする義務を負う",
+     "text_sha256": "25df7f91e4fc692e60648e84da85d872e638855b73ecbef34edbe3ca5dd20ffe",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "191",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "所有の意思のない占有者は、善意であるときであっても、全部の賠償をしなければならない。",
+     "text_sha256": "25df7f91e4fc692e60648e84da85d872e638855b73ecbef34edbe3ca5dd20ffe",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q08-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q08-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：占有改定により、Bは甲の占有権を取得する。",
+   "body": "この肢は占有改定（183条）の場面である。183条は、「代理人が自己の占有物を以後本人のために占有する意思を表示したときは、本人は、これによって占有権を取得する」と定める。Aは自己が占有する甲をBに売却し、以後Bのために占有する旨の意思を表示しているから、Aが代理人、Bが本人に当たり、Bは甲の占有権を取得する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "183",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理人が自己の占有物を以後本人のために占有する意思を表示したときは、本人は、これによって占有権を取得する。",
+     "text_sha256": "372bf794a5af81739ebe105ea3aecf67656fa8a43c60021357ff4df7809dc762",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q08-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2021-minpo-q08-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：賃借人Bが売買という新たな権原により所有の意思をもって占有を始めたので、Bの占有は自主占有となる。",
+   "body": "ポイントは、売買が185条の「新たな権原」に当たる点である。185条は、「権原の性質上占有者に所有の意思がないものとされる場合には、その占有者が、自己に占有をさせた者に対して所有の意思があることを表示し、又は新たな権原により更に所有の意思をもって占有を始めるのでなければ、占有の性質は、変わらない」と定める。賃借人Bの占有は、権原（賃貸借）の性質上、所有の意思のない占有（他主占有）である。しかし、BがAから甲を買い受けて占有権を譲り受けたときは、売買という新たな権原により所有の意思をもって占有を始めたことになり、Bの占有は自主占有に変わる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "185",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "権原の性質上占有者に所有の意思がないものとされる場合には、その占有者が、自己に占有をさせた者に対して所有の意思があることを表示し、又は新たな権原により更に所有の意思をもって占有を始めるのでなければ、占有の性質は、変わらない。",
+     "text_sha256": "fb33b956ff5ddafc86c7407781a8ec594520906b1cc36fcb5641f355587302ec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2021-minpo-q08-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
