@@ -77,25 +77,17 @@
     }
    ],
    "cases": [],
-   "pending_cases": [
-    {
-     "about": "錯誤と故意について、認識と結果が同一の構成要件の範囲内で符合すれば故意を認める（法定的符合説）とした最高裁の判例",
-     "searched": [
-      "courts.py search 錯誤 殺意 強盗殺人未遂 --date 1978-07-28",
-      "courts.py search 錯誤 故意 --date 1978-07-28",
-      "courts.py search 錯誤 殺人未遂 --from 昭和53 --to 昭和53",
-      "courts.py search 打撃の錯誤 --from 昭和50 --to 昭和60"
-     ]
-    }
-   ],
    "notes": [
-    "正犯の客体の錯誤が教唆者にとってどう扱われるか（教唆者の故意を否定しない）は解釈による"
+    "正犯の客体の錯誤が教唆者にとってどう扱われるか（教唆者の故意を否定しない）は解釈による",
+    "同じ判例（最判昭和53年7月28日）が別の問の生成で courts.py で見つかったため、探し直しに戻した（2026-10-21）"
    ],
    "id": "exp-yobi-2012-keiho-q12-2",
-   "status": "published",
+   "status": "flagged",
    "check": {
-    "passed": true,
-    "failures": []
+    "passed": false,
+    "failures": [
+     "本文に「判例あり（要確認）」があるのに pending_cases がない（T041 で確かめ直す）"
+    ]
    }
   },
   {
@@ -168,25 +160,17 @@
     }
    ],
    "cases": [],
-   "pending_cases": [
-    {
-     "about": "方法の錯誤（打撃の錯誤）について、認識と結果が同一の構成要件の範囲内で符合すれば故意を認める（法定的符合説）とした最高裁の判例",
-     "searched": [
-      "courts.py search 錯誤 殺意 強盗殺人未遂 --date 1978-07-28",
-      "courts.py search 錯誤 故意 --date 1978-07-28",
-      "courts.py search 錯誤 殺人未遂 --from 昭和53 --to 昭和53",
-      "courts.py search 打撃の錯誤 --from 昭和50 --to 昭和60"
-     ]
-    }
-   ],
    "notes": [
-    "方法の錯誤を法定的符合説で処理する点は解釈による"
+    "方法の錯誤を法定的符合説で処理する点は解釈による",
+    "同じ判例（最判昭和53年7月28日）が別の問の生成で courts.py で見つかったため、探し直しに戻した（2026-10-21）"
    ],
    "id": "exp-yobi-2012-keiho-q12-4",
-   "status": "published",
+   "status": "flagged",
    "check": {
-    "passed": true,
-    "failures": []
+    "passed": false,
+    "failures": [
+     "本文に「判例あり（要確認）」があるのに pending_cases がない（T041 で確かめ直す）"
+    ]
    }
   },
   {
