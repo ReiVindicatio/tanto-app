@@ -1,0 +1,227 @@
+{
+ "question_id": "yobi-2012-keiho-q02",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-keiho-q02-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、36条の「急迫」とは法益侵害の危険が緊迫したことをいい、被害の現在性を意味するものではないとしている。",
+   "body": "ポイントは、36条1項の「急迫不正の侵害に対して」のうち「急迫」の意味です。最高裁昭和24年8月18日判決は、刑法36条にいう急迫の侵害における「急迫」とは、法益の侵害が間近に押し迫ったこと、すなわち法益侵害の危険が緊迫したことを意味するのであって、被害の現在性を意味するものではないとしました。したがって、実際に被害が生じている必要はなく、侵害の危険が切迫していれば「急迫」に当たります。本肢はこの判例の立場と一致します。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "急迫不正の侵害に対して、自己又は他人の権利を防衛するため、やむを得ずにした行為は、罰しない。",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "刑法36条の「急迫」の意義・公益のための正当防衛",
+     "court": "最高裁判所第一小法廷",
+     "date": "1949-08-18",
+     "case_number": "昭和24(れ)295",
+     "holding": "刑法36条の「急迫」とは、法益の侵害が間近に押し迫ったこと、すなわち法益侵害の危険が緊迫したことを意味し、被害の現在性を意味するものではない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55481/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2012-keiho-q02-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-keiho-q02-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。36条の「不正」とは違法であることをいい、侵害が全体としての法秩序に反することをいうと解されている。",
+   "body": "ポイントは、36条1項の「急迫不正の侵害」のうち「不正」の意味です。条文は「不正」の中身を定めていませんが、「不正」とは違法であることを意味し、侵害が法秩序全体からみて許されないものであることをいうと解されています。そのため、適法な行為（例えば正当防衛として違法性が阻却される行為）は「不正」の侵害に当たりません。本肢はこの理解と一致します。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "急迫不正の侵害に対して、自己又は他人の権利を防衛するため、やむを得ずにした行為は、罰しない。",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「不正」＝違法（全体としての法秩序に反すること）という意味づけは解釈による"
+   ],
+   "id": "exp-yobi-2012-keiho-q02-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-keiho-q02-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、国家的・公共的法益についても正当防衛が許される場合があることを認めている（ただし極めて緊迫した場合に例外的に許容される）から、「含まれない」とする点が誤り。",
+   "body": "誤りは、36条1項の「自己又は他人の権利」を個人的法益に限り、国家的法益や社会的法益は「含まれない」と言い切っている点です。最高裁昭和24年8月18日判決は、国家的、国民的、公共的法益についても正当防衛の許されるべき場合が存することを認めるべきであるとしました。そのうえで、国家的・公共的法益を保全防衛することは本来国家又は公共団体の公的機関の任務であるから、公益のための正当防衛は、公的機関の有効な公的活動を期待し得ない極めて緊迫した場合においてのみ例外的に許容されるとしています。つまり、成立する場面は限られるものの、国家的・社会的法益が一律に除かれるわけではありません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "急迫不正の侵害に対して、自己又は他人の権利を防衛するため、やむを得ずにした行為は、罰しない。",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "公益のための正当防衛の限界",
+     "court": "最高裁判所第一小法廷",
+     "date": "1949-08-18",
+     "case_number": "昭和24(れ)295",
+     "holding": "国家的、国民的、公共的法益についても正当防衛の許されるべき場合が存するが、公益のための正当防衛は、国家公共の機関の有効な公的活動を期待し得ない極めて緊迫した場合においてのみ例外的に許容される。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55481/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2012-keiho-q02-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-keiho-q02-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、防衛するための行為である限り、同時に侵害者に対する攻撃的な意思に出たものであっても36条の防衛行為に当たるとしている。",
+   "body": "ポイントは、36条1項の「権利を防衛するため」という防衛の意思と、攻撃の意思とが併存する場合の扱いです。最高裁昭和50年11月28日判決は、急迫不正の侵害に対し自己又は他人の権利を防衛するためにした行為である限り、同時に侵害者に対する攻撃的な意思に出たものであっても、刑法36条の防衛行為に当たるとしました。したがって、攻撃的な意思があることだけで防衛の意思が否定されるわけではありません。本肢は「認められる場合がある」としており、判例の立場と一致します。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "急迫不正の侵害に対して、自己又は他人の権利を防衛するため、やむを得ずにした行為は、罰しない。",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "防衛の意思と攻撃の意思の併存",
+     "court": "最高裁判所第三小法廷",
+     "date": "1975-11-28",
+     "case_number": "昭和49(あ)2786",
+     "holding": "急迫不正の侵害に対し自己又は他人の権利を防衛するためにした行為である限り、同時に侵害者に対する攻撃的な意思に出たものであっても、刑法36条の防衛行為に当たる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51090/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2012-keiho-q02-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-keiho-q02-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、喧嘩闘争で正当防衛が成立するかは喧嘩闘争を全般的に観察して判断し、闘争行為中の瞬間的な部分の攻防の態様のみによってはならないとしている。",
+   "body": "ポイントは、喧嘩闘争の場面で36条1項の正当防衛をどう判断するかです。最高裁昭和32年1月22日判決は、喧嘩闘争において正当防衛が成立するかどうかを判断するに当たっては喧嘩闘争を全般的に観察することを要し、闘争行為中の瞬間的な部分の攻防の態様のみによってはならないとしました。これに先立つ最高裁昭和23年7月7日大法廷判決も、喧嘩は闘争者双方が攻撃及び防御を繰り返す一団の連続的闘争行為であるから、ある瞬間に一方がもっぱら防御に終始しているように見えても、闘争の全般からみて正当防衛の観念を容れる余地がない場合があるとしています。本肢はこれらの判例の立場と一致します。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "36",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "急迫不正の侵害に対して、自己又は他人の権利を防衛するため、やむを得ずにした行為は、罰しない。",
+     "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "喧嘩闘争と正当防衛（全般的観察）",
+     "court": "最高裁判所第三小法廷",
+     "date": "1957-01-22",
+     "case_number": "昭和29(あ)1808",
+     "holding": "喧嘩闘争において正当防衛が成立するかどうかを判断するに当たっては喧嘩闘争を全般的に観察することを要し、闘争行為中の瞬間的な部分の攻防の態様のみによってはならない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51327/detail2/index.html"
+     ]
+    },
+    {
+     "name": "喧嘩と正当防衛（大法廷）",
+     "court": "最高裁判所大法廷",
+     "date": "1948-07-07",
+     "case_number": "昭和23(れ)73",
+     "holding": "喧嘩は闘争者双方が攻撃及び防御を繰り返す一団の連続的闘争行為であるから、闘争のある瞬間に一方がもっぱら防御に終始し正当防衛を行う観を呈することがあっても、闘争の全般からみては刑法36条の正当防衛の観念を容れる余地がない場合がある。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56594/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-yobi-2012-keiho-q02-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

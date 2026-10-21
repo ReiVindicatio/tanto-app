@@ -1,0 +1,201 @@
+{
+ "question_id": "yobi-2012-minso-q38",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q38-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：証拠調べが終了した後は、裁判所の心証に影響が及んでいるため、証拠の申出を撤回することはできないと解されている。",
+   "body": "ポイントは、証拠の申出を撤回できる時期。証拠の申出は、証拠調べが始まる前であれば自由に撤回できるが、証拠調べが終了した後は、その結果がすでに裁判官の心証形成に用いられうる状態にあり、相手方に有利な結果も含めて証拠共通の原則が働くため、撤回は許されないと解されている。判例もこの立場をとるとされるが、判例あり（要確認）。民事訴訟法に撤回の時期を直接定めた条文はない。",
+   "citations": [],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "証拠調べの終了後に証拠の申出を撤回することの可否（最高裁判例）",
+     "searched": [
+      "courts.py search 撤回 証拠 --from 昭和30 --to 昭和35（2000件超でエラー）",
+      "courts.py search 証拠調 撤回 終了 --from 昭和25 --to 昭和40（41件。民事の候補 66024・65695 を show したが該当せず）",
+      "courts.py search 撤回 証拠調 民事訴訟 --date 1957-06-25（0件）"
+     ]
+    }
+   ],
+   "notes": [
+    "撤回の時期の制限は条文に直接の文言がなく、解釈による。"
+   ],
+   "id": "exp-yobi-2012-minso-q38-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q38-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：争点及び証拠の整理の終了後も攻撃防御方法の提出は禁止されず、相手方の求めがあれば提出できなかった理由を説明する義務を負うにとどまる。",
+   "body": "誤りは「申出をすることはできない」の部分。民事訴訟法167条は、準備的口頭弁論の終了後に攻撃又は防御の方法を提出した当事者は「相手方の求めがあるときは、相手方に対し、準備的口頭弁論の終了前にこれを提出することができなかった理由を説明しなければならない」と定め、174条はこれを弁論準備手続の終結後に準用する。このように、争点及び証拠の整理の終了後の証拠の申出も禁止されてはおらず、説明義務が課されるにとどまる。証人や当事者本人の尋問の申出も同様である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "167",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方の求めがあるときは、相手方に対し、準備的口頭弁論の終了前にこれを提出することができなかった理由を説明しなければならない",
+     "text_sha256": "22bc8aeeddd0eb4e79668dc36e646f15ad783a33fce68beef4c884016c772840",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "174",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百六十七条の規定は、弁論準備手続の終結後に攻撃又は防御の方法を提出した当事者について準用する",
+     "text_sha256": "bf2ac1f3fb57f1bca54e680d463d40215bfff8e724350563da7f913ea2065d1d",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "時機に後れた攻撃防御方法として却下される余地（157条）はあるが、一律に申出ができなくなるわけではない。157条の本文は引用していない。"
+   ],
+   "id": "exp-yobi-2012-minso-q38-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q38-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：証人が住所などの事情により出頭が困難な場合で相当と認めるときは、映像と音声の送受信による方法で証人尋問ができる。",
+   "body": "ポイントは、いわゆるテレビ会議の方法による証人尋問の要件。現行の民事訴訟法204条は、裁判所は、同条各号の場合であって「相当と認めるときは、最高裁判所規則で定めるところにより、映像と音声の送受信により相手の状態を相互に認識しながら通話をすることができる方法によって、証人の尋問をすることができる」と定め、その1号に「証人の住所、年齢又は心身の状態その他の事情により、証人が受訴裁判所に出頭することが困難であると認める場合」を挙げる。証人が遠隔の地に居住しているときは、住所により出頭が困難な場合に当たりうるので、この方法で尋問することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "204",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相当と認めるときは、最高裁判所規則で定めるところにより、映像と音声の送受信により相手の状態を相互に認識しながら通話をすることができる方法によって、証人の尋問をすることができる",
+     "text_sha256": "cf68aeedd03daa4a8fbd440a60971e96a4ce35e1df5802603ef461448e6b4175",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "204",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証人の住所、年齢又は心身の状態その他の事情により、証人が受訴裁判所に出頭することが困難であると認める場合",
+     "text_sha256": "cf68aeedd03daa4a8fbd440a60971e96a4ce35e1df5802603ef461448e6b4175",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の204条1号は「証人の住所、年齢又は心身の状態その他の事情により」と定めており、出題当時の号の文言（遠隔の地に居住する場合）とは異なる可能性がある。改正前の内容は条文の本文で確認していない。",
+    "遠隔地居住が1号の「住所…により…出頭することが困難」に当たるという点は解釈による。"
+   ],
+   "id": "exp-yobi-2012-minso-q38-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q38-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：鑑定人に書面と口頭のいずれで意見を述べさせるかは、裁判長が定めることができる。",
+   "body": "ポイントは、鑑定意見の陳述方式を定める主体。民事訴訟法215条1項は「裁判長は、鑑定人に、書面又は口頭で、意見を述べさせることができる」と定める。条文はどちらの方式によるかの基準を定めていないから、その選択は裁判長の裁量に委ねられていると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "215",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判長は、鑑定人に、書面又は口頭で、意見を述べさせることができる",
+     "text_sha256": "29976dd7cd4697f2c47d2af3d685c61e90b75d83e1a6fe8f4805070ddb1a187b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "裁判長の裁量によるという点は解釈による。"
+   ],
+   "id": "exp-yobi-2012-minso-q38-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q38-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：証拠調べは、当事者が期日に出頭しない場合でもすることができる。",
+   "body": "誤りは「することができない」の部分。民事訴訟法183条は「証拠調べは、当事者が期日に出頭しない場合においても、することができる」と定める。したがって、当事者が欠席しても、裁判所は予定した証拠調べを実施することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "183",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証拠調べは、当事者が期日に出頭しない場合においても、することができる",
+     "text_sha256": "ed848488e5e0d706fb96a0797f523d57892e8e8d2d0116e09201e46e4199e369",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-minso-q38-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

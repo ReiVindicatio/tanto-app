@@ -1,0 +1,259 @@
+{
+ "question_id": "yobi-2012-minso-q45",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q45-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：簡易裁判所では、訴えを口頭で提起することができる。",
+   "body": "ポイントは、簡易裁判所の訴訟手続の特則。民事訴訟法270条は「簡易裁判所においては、簡易な手続により迅速に紛争を解決するものとする」と定め、その特則として271条は「訴えは、口頭で提起することができる」と定める。したがって、簡易裁判所に係属する100万円の貸金返還請求訴訟でも、訴えを口頭で提起することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "270",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "簡易裁判所においては、簡易な手続により迅速に紛争を解決するものとする",
+     "text_sha256": "b9177d5a6f2ad442acbea78c334d546f56ae14f8af146222a038b570fb519bbc",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "271",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴えは、口頭で提起することができる",
+     "text_sha256": "c6e95b1a7040d032fe039fd1c33f149856596fc8dd565e10e3ccd8d28f81ba4c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-minso-q45-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q45-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：簡易裁判所での訴えの提起では、請求の原因に代えて紛争の要点を明らかにすれば足りる。",
+   "body": "ポイントは、簡易裁判所の訴え提起の特則。民事訴訟法272条は「訴えの提起においては、請求の原因に代えて、紛争の要点を明らかにすれば足りる」と定めており、肢はこの条文のとおりである。簡易裁判所では法律の専門家でない当事者が本人で訴えを起こすことも多いため、請求を特定する事実を厳密に示すことまでは求めず、紛争の要点で足りるとしたものと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "272",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴えの提起においては、請求の原因に代えて、紛争の要点を明らかにすれば足りる",
+     "text_sha256": "2a5d2eb27e709beb691034ae6dd19c3c43a2f457120234842cb1bf79938cc386",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "272条の趣旨の説明は解釈による。"
+   ],
+   "id": "exp-yobi-2012-minso-q45-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q45-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：簡易裁判所でも反訴を提起することができる。地方裁判所の管轄に属する反訴が提起されたときの移送の規定まで置かれている。",
+   "body": "誤りは「反訴の提起は，することができない」の部分。反訴は民事訴訟法146条1項により「本訴の係属する裁判所に反訴を提起することができる」とされ、簡易裁判所の手続でもこれを排除する特則はない。かえって274条1項は「被告が反訴で地方裁判所の管轄に属する請求をした場合において、相手方の申立てがあるときは、簡易裁判所は、決定で、本訴及び反訴を地方裁判所に移送しなければならない」と定めており、簡易裁判所で反訴が提起されることを前提としている。369条は「少額訴訟においては、反訴を提起することができない」と定めるが、少額訴訟は368条1項により「訴訟の目的の価額が六十万円以下の金銭の支払の請求を目的とする訴え」に限られ、本問の100万円の請求は少額訴訟の対象ではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "146",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "本訴の係属する裁判所に反訴を提起することができる",
+     "text_sha256": "c23f7c4ce465c3da64ad908f5e7b215e2ddf1de42a3d9fbb46390662ff1a1ddc",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "274",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被告が反訴で地方裁判所の管轄に属する請求をした場合において、相手方の申立てがあるときは、簡易裁判所は、決定で、本訴及び反訴を地方裁判所に移送しなければならない",
+     "text_sha256": "815448db5f9c6792640a4725bf0bed4830d524056e0330028d722f0a051d4cc5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "369",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "少額訴訟においては、反訴を提起することができない",
+     "text_sha256": "582ba08965a267a32be4265383c92d1583fe07403d0ae7d4cc8a91ace3470143",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "368",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の目的の価額が六十万円以下の金銭の支払の請求を目的とする訴え",
+     "text_sha256": "fc53410bc4e1be4d5e1a703f06dfe2e761763ee9570db5cc4decebe86e05180f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-minso-q45-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q45-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：簡易裁判所では、陳述擬制の規定が最初の期日だけでなく続行の期日にも準用されるので、欠席した被告の準備書面を陳述したものとみなせる。",
+   "body": "ポイントは、陳述擬制が続行期日にも及ぶという簡易裁判所の特則。民事訴訟法158条は、当事者が「最初にすべき口頭弁論の期日」に欠席した場合について、裁判所は「その者が提出した訴状又は答弁書その他の準備書面に記載した事項を陳述したものとみなし、出頭した相手方に弁論をさせることができる」と定める。簡易裁判所については277条が「第百五十八条の規定は、原告又は被告が口頭弁論の続行の期日に出頭せず、又は出頭したが本案の弁論をしない場合について準用する」と定める。したがって、被告が続行期日に欠席しても、提出済みの準備書面の記載事項を陳述したものとみなし、原告に弁論をさせることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "158",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "最初にすべき口頭弁論の期日",
+     "text_sha256": "4e64e7a8e7346d213381c6f1c1628ad39ce021ee16eca90dc536051bad2ddb29",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "158",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その者が提出した訴状又は答弁書その他の準備書面に記載した事項を陳述したものとみなし、出頭した相手方に弁論をさせることができる",
+     "text_sha256": "4e64e7a8e7346d213381c6f1c1628ad39ce021ee16eca90dc536051bad2ddb29",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "277",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百五十八条の規定は、原告又は被告が口頭弁論の続行の期日に出頭せず、又は出頭したが本案の弁論をしない場合について準用する",
+     "text_sha256": "4fd034cdabbcb9075d02aafea368bd1d48a752485643c63a0ae197cf4588c6b8",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2012-minso-q45-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q45-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：証拠調べを即時に取り調べることができる証拠に限るのは少額訴訟の特則であり、100万円の請求の通常の簡易裁判所の手続には当てはまらない。",
+   "body": "誤りは、少額訴訟の制限を簡易裁判所の手続一般に当てはめている点。民事訴訟法371条は「証拠調べは、即時に取り調べることができる証拠に限りすることができる」と定めるが、これは第6編の少額訴訟に関する特則である。少額訴訟は、368条1項により「訴訟の目的の価額が六十万円以下の金銭の支払の請求を目的とする訴え」についてだけ利用できる。本問の100万円の貸金返還請求訴訟は少額訴訟によることができず、通常の簡易裁判所の手続で審理されるから、証拠調べがこのように制限されることはない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "371",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証拠調べは、即時に取り調べることができる証拠に限りすることができる",
+     "text_sha256": "89003b20eb79bcb24fdd0f4661cf8da7f845a15458d49bb2551a3d5848279822",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "368",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟の目的の価額が六十万円以下の金銭の支払の請求を目的とする訴え",
+     "text_sha256": "fc53410bc4e1be4d5e1a703f06dfe2e761763ee9570db5cc4decebe86e05180f",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "371条が第6編（少額訴訟に関する特則）に置かれていることは、egov.py の表示では編の見出しまで確認していない。"
+   ],
+   "id": "exp-yobi-2012-minso-q45-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

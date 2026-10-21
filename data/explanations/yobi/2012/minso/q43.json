@@ -1,0 +1,254 @@
+{
+ "question_id": "yobi-2012-minso-q43",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q43-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：給付訴訟の請求棄却判決は、原告の主張する給付請求権が存在しないことを確定するだけの判決であり、確認判決であると解されている。",
+   "body": "ポイントは、給付判決と呼ばれるのは請求を認容して被告に給付を命じる判決だけだという点。給付訴訟で請求を棄却する判決は、被告に何かを命じるものではなく、原告の主張する給付請求権が存在しないことを確定するにとどまる。民事訴訟法114条1項は「確定判決は、主文に包含するものに限り、既判力を有する」と定めており、棄却判決の主文についてはその請求権の不存在が既判力をもって確定される。このように、棄却判決は訴えの類型を問わず請求権・法律関係の不存在を確認する確認判決であると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "114",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決は、主文に包含するものに限り、既判力を有する",
+     "text_sha256": "c610c3ea296754d118ee0a863f99ac7ec29d49374742fb66d08e479e8b66173b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "請求棄却判決が確認判決であるという分類は条文に直接の文言がなく、解釈による。"
+   ],
+   "id": "exp-yobi-2012-minso-q43-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q43-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：形成判決には、認知のように遡って効果が生じるものと、婚姻の取消しや会社の組織に関する訴えの無効・取消しのように将来に向かってのみ効果が生じるものとがある。",
+   "body": "ポイントは、形成の効果がいつから生じるかは法律関係ごとに定められているという点。遡及する例として、認知の訴え（民法787条）による認知は、民法784条により「認知は、出生の時にさかのぼってその効力を生ずる」。将来に向かってのみ生じる例として、家庭裁判所に請求する婚姻の取消し（民法744条1項）は、民法748条1項により「婚姻の取消しは、将来に向かってのみその効力を生ずる」。会社法839条も、会社の組織に関する訴えの一部について、請求を認容する判決が確定したときは無効とされ又は取り消された行為が「将来に向かってその効力を失う」と定める。したがって、形成判決には遡及効のあるものと将来効にとどまるものの両方がある。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "787",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "認知の訴えを提起することができる",
+     "text_sha256": "88ec7c2497f45693b8be10f61194b0e12d210870b2432b59b8201b527c862e8b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "784",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "認知は、出生の時にさかのぼってその効力を生ずる",
+     "text_sha256": "70f9059c4fefb95f9e29830e596074839d9d886fc78b232f31f25e1927ae616b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "744",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その取消しを家庭裁判所に請求することができる",
+     "text_sha256": "cac653b1902e55bfd94bb0bee23f457e7737ce63995acedd539d731f7ca73180",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "748",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "婚姻の取消しは、将来に向かってのみその効力を生ずる",
+     "text_sha256": "277ee731d4fa9a46d7061bd3d7972db65bb26c5f56eda508a3597d0c1df9e47d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "839",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "将来に向かってその効力を失う",
+     "text_sha256": "deba41841b9f81a269df6cf371c0c952cddec128af8d6bfa8ffe935a0741a6dc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "認知の訴え・婚姻取消しの訴えを形成訴訟と分類するのは解釈による。"
+   ],
+   "id": "exp-yobi-2012-minso-q43-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q43-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：債務不存在確認の請求を認容する判決の主文は債務の不存在を確認するものであり、被告の債権が存在しないことが既判力をもって確定される。",
+   "body": "ポイントは、既判力が主文に包含される判断、すなわち訴訟物についての判断に生じるという点。債務不存在確認訴訟の訴訟物は原告の被告に対する当該債務（被告から見れば当該債権）であり、請求を認容する判決の主文はその債務が存在しないことを確認する。民事訴訟法114条1項は「確定判決は、主文に包含するものに限り、既判力を有する」と定めるから、判決が確定すると、被告の当該債権が存在しないことが既判力をもって確定される。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "114",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決は、主文に包含するものに限り、既判力を有する",
+     "text_sha256": "c610c3ea296754d118ee0a863f99ac7ec29d49374742fb66d08e479e8b66173b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「主文に包含するもの」を訴訟物についての判断と理解するのは解釈による。"
+   ],
+   "id": "exp-yobi-2012-minso-q43-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q43-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：所有権確認の請求棄却判決で確定するのは原告の所有権の不存在だけであり、被告の所有権は訴訟物ではないから既判力をもって確定されない。",
+   "body": "ポイントは、訴訟物が「原告の」所有権であるという点。民事訴訟法114条1項は「確定判決は、主文に包含するものに限り、既判力を有する」と定める。原告が提起した土地の所有権確認訴訟の訴訟物は原告の所有権であり、請求棄却判決の主文で確定されるのは原告がその所有権を有しないことにとどまる。被告がその土地の所有権を有するかどうかは訴訟物ではなく、理由中で判断されたとしても既判力は生じないと解されている。被告の所有権を既判力で確定させたいなら、被告が反訴などで自己の所有権の確認を求める必要がある。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "114",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決は、主文に包含するものに限り、既判力を有する",
+     "text_sha256": "c610c3ea296754d118ee0a863f99ac7ec29d49374742fb66d08e479e8b66173b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "理由中の判断に既判力が生じないことは114条1項の解釈による。"
+   ],
+   "id": "exp-yobi-2012-minso-q43-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minso-q43-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：離婚判決は形成判決であり、確定によって婚姻解消の効果が生じる。戸籍法上の届出は確定後に事実を報告するものにすぎない。",
+   "body": "誤りは「戸籍法上の届出がされなければ，婚姻解消の効果は生じない」の部分。離婚の訴え（民法770条）を認容する判決は形成判決であり、判決の確定によって婚姻解消の効果が生じると解されている。戸籍法77条1項は、63条の規定を「離婚又は離婚取消の裁判が確定した場合にこれを準用する」と定め、63条1項は、訴えを提起した者が「裁判が確定した日から十日以内に、裁判の謄本を添附して、その旨を届け出なければならない」とする。この届出は、すでに確定した裁判の内容を報告するものであり（いわゆる報告的届出）、離婚の効果を生じさせる要件ではない。協議離婚のように届出によって効力が生じる場合とは異なる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "770",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "夫婦の一方は、次に掲げる場合に限り、離婚の訴えを提起することができる。",
+     "text_sha256": "85afa96467ed18e9dcfe8e8388adfd9713185700aa0065eec59b49aaa0893e49",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "戸籍法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "離婚又は離婚取消の裁判が確定した場合にこれを準用する",
+     "text_sha256": "fb0b5f7487c599ec5c6700376a36ccdf5b4d6ac82ccf2c32659afb23c7a3e4f2",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%BA%8C%E5%8D%81%E5%9B%9B%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "戸籍法",
+     "article": "63",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判が確定した日から十日以内に、裁判の謄本を添附して、その旨を届け出なければならない",
+     "text_sha256": "e19f9909bdd02293f990b33796241199df4b84a85a626e66b3871fb96ddcb6cf",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%BA%8C%E5%8D%81%E5%9B%9B%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "離婚判決が形成判決であり確定により効果が生じること、戸籍の届出が報告的届出であることは、条文に直接の文言がなく解釈による。",
+    "協議離婚が届出によって効力を生じる旨の民法の規定は、本問では本文を引用していない。"
+   ],
+   "id": "exp-yobi-2012-minso-q43-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
