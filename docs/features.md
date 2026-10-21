@@ -44,6 +44,7 @@
 | 指示（`prompts/explain-v1.md`） | ✅ | |
 | 条文の保存（主要8法令の全文） | ✅ | `pipeline/egov.py`・`data/statutes/`。取得日時点の現行法 |
 | 検査（公式の○×・条文の引用・「」・条番号・判例の確認情報） | ✅ | `pipeline/check_explanations.py` |
+| 判例の確かめ（裁判所のウェブサイト） | ✅ | T041・決定022。判例は `pipeline/courts.py` で courts.go.jp の判決のページを確かめたものだけ載せる。確かめられないものは本文に「判例あり（要確認）」・`pending_cases` に検索の記録（236件、うち大審院とみたもの 110件）。検査：courts.go.jp 以外の URL と、要確認と `pending_cases` の不一致は ❌ |
 | 生成済み | ✅ 民法 R08・R06〜R02（各75肢） | T012（実装レビュー）。改正前の年度 → T013 |
 | 出題後の改正の洗い出し | ✅ | `pipeline/revisions.py`（e-Gov v2 で出題時点の版と現行を条ごとに比較）→ `data/statutes/changes/`。T004・T012 |
 | 問題カード（穴埋め・個数など）の解説 | ❌ | → T018 |

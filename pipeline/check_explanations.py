@@ -32,7 +32,7 @@ ARTICLE_REF_RE = re.compile(r"(\d+)条(?:の(\d+))?")
 PENDING_MARK = "判例あり（要確認）"
 CASE_URL_PREFIX = "https://www.courts.go.jp/"
 STRICT_CASE_URLS = True  # T041：第三者サイトの判例（民法の42問）と旧形式の URL を直し終えた（2026-10-21）
-STRICT_PENDING_FROM = 3   # explain-v3 以降は、要確認と pending_cases の不一致を ❌ にする
+STRICT_PENDING_FROM = 1   # 要確認と pending_cases の不一致を ❌ にする（v3 以降だけだったのを、T041 で古い解説を直し終えたので全部に。2026-10-21）
 
 
 def ws(s: str) -> str:
