@@ -1,0 +1,246 @@
+{
+ "question_id": "shiho-2017-keiho-q09",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-keiho-q09-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。没収の対象となる主物を没収するときは、その従物も主物とともに没収できると解されている。",
+   "body": "ポイントは、19条1項の没収の効力が主物の従物にも及ぶかです。19条1項は「次に掲げる物は、没収することができる。」として没収の対象物を定めていますが、従物の扱いを明文では定めていません。民法87条2項は「従物は、主物の処分に従う。」と定めており、刑法上の没収についても、この考え方から主物を没収するときは従物も没収できると解されています。判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる物は、没収することができる。",
+     "text_sha256": "ab7a883ef1271000df093042cb0dec55ba0fca6bbec0ab7cfc6b36775264a999",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "87",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "従物は、主物の処分に従う。",
+     "text_sha256": "28daf18cc57d735b071d99c10349ca64b3f45613eb4ba27750c56baaef902963",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "主物を没収するときは従物も没収できるとした判例",
+     "searched": [
+      "courts.py search 没収 従物",
+      "courts.py search 没収 主物"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（民法87条2項の考え方を没収に及ぼす理解）",
+    "根拠の判例は courts.py で見つからなかった（大審院の判例の可能性がある）"
+   ],
+   "id": "exp-shiho-2017-keiho-q09-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-keiho-q09-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。没収の言渡しには、対象物が判決時に裁判所に押収されていることは必要ないと解されている。",
+   "body": "ポイントは「押収されている必要がある」という部分です。19条1項は「次に掲げる物は、没収することができる。」と対象物の性質を定めるだけで、裁判所による押収を没収の要件としていません。そのため、判決の時点で押収されていない物であっても、19条の要件を満たす限り没収を言い渡すことができると解されています（言い渡された没収は、その後の執行で実現される）。判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる物は、没収することができる。",
+     "text_sha256": "ab7a883ef1271000df093042cb0dec55ba0fca6bbec0ab7cfc6b36775264a999",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "押収されていない物についても没収の言渡しができるとした判例",
+     "searched": [
+      "courts.py search 没収 押収",
+      "courts.py search 没収 押収されていない",
+      "courts.py search 没収 言渡 押収 必要"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による",
+    "根拠の判例は courts.py で見つからなかった（大審院の判例の可能性がある）"
+   ],
+   "id": "exp-shiho-2017-keiho-q09-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-keiho-q09-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。住居侵入罪が起訴されていなくても、窃盗の手段である侵入に使った鉄棒は、起訴された窃盗との関係で没収できると解されている。",
+   "body": "ポイントは「住居侵入罪について公訴提起されていなければ没収できない」という部分です。19条1項2号は「犯罪行為の用に供し、又は供しようとした物」を没収の対象としています。住居に侵入して行う窃盗では、住居侵入は窃盗の手段であり、侵入に使った道具は窃盗という犯罪行為の用に供した物と評価できるため、住居侵入罪が起訴されていなくても、窃盗の罪について没収できると解されています。判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪行為の用に供し、又は供しようとした物",
+     "text_sha256": "ab7a883ef1271000df093042cb0dec55ba0fca6bbec0ab7cfc6b36775264a999",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "起訴されていない住居侵入に用いた道具を窃盗の用に供した物として没収できるとした判例",
+     "searched": [
+      "courts.py search 没収 起訴されていない",
+      "courts.py search 没収 住居侵入 窃盗 供した",
+      "courts.py search 没収 牽連犯 手段"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による",
+    "根拠の判例は courts.py で見つからなかった"
+   ],
+   "id": "exp-shiho-2017-keiho-q09-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-keiho-q09-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。盗品は19条1項3号の取得物件に当たるが、被害者という犯人以外の者に属する物なので、19条2項により没収できない場合がある。",
+   "body": "ポイントは、19条2項の「犯人以外の者に属しない物に限り」という制限です。盗品は19条1項3号の「犯罪行為によって生じ、若しくはこれによって得た物」に当たる取得物件です。しかし19条2項本文は「没収は、犯人以外の者に属しない物に限り、これをすることができる。」と定めており、窃盗の被害者は盗品の所有権を失わないので、盗品は通常「犯人以外の者に属する物」として没収できません。したがって、取得物件であっても没収できない場合があるという本肢は正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪行為によって生じ、若しくはこれによって得た物",
+     "text_sha256": "ab7a883ef1271000df093042cb0dec55ba0fca6bbec0ab7cfc6b36775264a999",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "19",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "没収は、犯人以外の者に属しない物に限り、これをすることができる。",
+     "text_sha256": "ab7a883ef1271000df093042cb0dec55ba0fca6bbec0ab7cfc6b36775264a999",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "窃盗の被害者が所有権を失わない点は解釈による"
+   ],
+   "id": "exp-shiho-2017-keiho-q09-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-keiho-q09-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、賄賂を没収できずに追徴する場合、授受後の価額の増減にかかわらず、授受当時の価額を追徴額とする。",
+   "body": "ポイントは追徴額の算定の基準時が「没収不能時」かです。197条の5は収受した賄賂について「その全部又は一部を没収することができないときは、その価額を追徴する。」と定めますが、いつの価額かは書いていません。判例（最高裁大法廷昭和43年9月25日判決）は、授受された賄賂が没収不能となりその価額を追徴すべき場合には、授受後にその物の価額の増減があっても、その物の授受当時の価額を追徴額とすべきであるとしました。したがって、没収不能時の価額を追徴するという本肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "197_5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その全部又は一部を没収することができないときは、その価額を追徴する。",
+     "text_sha256": "dccad099586d6f7758bc2f14eefbb43de1b2ee84e5832ed80be938cf00c427e3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "没収に代えて追徴すべき賄賂の価額の算定基準時",
+     "court": "最高裁判所大法廷",
+     "date": "1968-09-25",
+     "case_number": "昭和41(あ)1257",
+     "holding": "授受された賄賂が没収不能となりその価額を追徴すべき場合には、授受後においてその物の価額の増減があつたとしても、その物の授受当時の価額を追徴額とすべきである。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50783/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2017-keiho-q09-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

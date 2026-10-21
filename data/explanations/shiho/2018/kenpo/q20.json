@@ -1,0 +1,208 @@
+{
+ "question_id": "shiho-2018-kenpo-q20",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-kenpo-q20-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。国会法68条の2が衆議院100人以上・参議院50人以上の賛成を、68条の3が関連する事項ごとの区分を定めている。",
+   "body": "賛成者の数と区分発議の2点がどちらも国会法の文言どおりかが決め手である。国会法68条の2は、議員が憲法改正原案を発議するには「衆議院においては議員百人以上、参議院においては議員五十人以上の賛成を要する」と定める。続く68条の3は、憲法改正原案の発議に当たっては「内容において関連する事項ごとに区分して行うものとする」と定める。肢はこの2つの条文の内容と一致するので正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "68_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "衆議院においては議員百人以上、参議院においては議員五十人以上の賛成を要する",
+     "text_sha256": "39f7383f0594f29ebe6902747defe8474263b7e62c4fcc1ba428860b9dd13a87",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "68_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内容において関連する事項ごとに区分して行うものとする",
+     "text_sha256": "f05bf68e5682a64f762342bd5cadae720911d626a9e0994bba8ccb33d3bad9a8",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2018-kenpo-q20-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-kenpo-q20-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。選挙の際に行われる国民投票であっても、国民の承認に係る投票である以上、日本国憲法の改正手続に関する法律が定める手続による。",
+   "body": "誤りは後半の「日本国憲法の改正手続に関する法律は適用されない」の部分である。憲法96条1項は、承認には「特別の国民投票又は国会の定める選挙の際行はれる投票において、その過半数の賛成を必要とする」と定めており、選挙の際の投票による承認自体は憲法上予定されている。しかし、日本国憲法の改正手続に関する法律1条は、同法が憲法96条に定める憲法改正について「国民の承認に係る投票（以下「国民投票」という。）に関する手続を定める」ものとしており、選挙の際に行われるかどうかで区別していない。同法2条1項も、国民投票は「国会の議決した期日に行う」と定めており、国民投票の期日が選挙の期日と重なる場合も同法の手続によると解されている。したがって、選挙の際に行われる場合に同法が適用されないとする点が誤っている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "96",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "特別の国民投票又は国会の定める選挙の際行はれる投票において、その過半数の賛成を必要とする",
+     "text_sha256": "cbbcb2f4a5b1c0f9b73077f6defc12d9104b0bb554ff2283bf6bc9978270f404",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法の改正手続に関する法律",
+     "article": "1",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国民の承認に係る投票（以下「国民投票」という。）に関する手続を定める",
+     "text_sha256": "a226a11f55fbc2bf3356b027b3ea973fc988af267f5f0a4f2f70997cf836fe72",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法の改正手続に関する法律",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国会の議決した期日に行う",
+     "text_sha256": "5bfc47e2b1efdbee95c67d8c04c68df448bae88d6d05a65ed59413f9718d8e35",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "選挙と同じ日に行われる国民投票にも同法の手続が及ぶという点は、1条・2条の文言からの解釈による（同法の全条文を通読して、選挙の際の国民投票を適用除外とする規定がないことまでは確かめていない）"
+   ],
+   "id": "exp-shiho-2018-kenpo-q20-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-kenpo-q20-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。公職選挙法138条は選挙に関する戸別訪問を禁止しているが、改正手続法の国民投票運動の規制には戸別訪問の禁止がない。",
+   "body": "戸別訪問の禁止の有無が決め手である。公職選挙法138条1項は「何人も、選挙に関し、投票を得若しくは得しめ又は得しめない目的をもつて戸別訪問をすることができない」と定める。これに対し、日本国憲法の改正手続に関する法律の国民投票運動に関する規定（101条以下）は、投票事務関係者・特定公務員の国民投票運動の禁止（101条・102条）、公務員等・教育者の地位利用の禁止（103条）、投票日前14日間の広告放送の制限（105条）などを定めるにとどまり、戸別訪問を禁止する規定はない。また同法100条は、これらの規定の適用に当たって「表現の自由、学問の自由及び政治活動の自由その他の日本国憲法の保障する国民の自由と権利を不当に侵害しないように留意しなければならない」と定めている。国民投票運動は、選挙運動と比べて規制が緩和されているといえるので、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "公職選挙法",
+     "article": "138",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "何人も、選挙に関し、投票を得若しくは得しめ又は得しめない目的をもつて戸別訪問をすることができない",
+     "text_sha256": "b38d6d0a45307bec4f4f776c4c60b435ac36f1bee0b49f8754ee1cb2be729f71",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法の改正手続に関する法律",
+     "article": "100",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "表現の自由、学問の自由及び政治活動の自由その他の日本国憲法の保障する国民の自由と権利を不当に侵害しないように留意しなければならない",
+     "text_sha256": "c0a53613f9e25d7052c8ee6f9cf3860a40d26473f2368db151c2abe02362efad",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法の改正手続に関する法律",
+     "article": "101",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "在職中、その関係区域内において、国民投票運動をすることができない",
+     "text_sha256": "d75e139f78601f34dd8672d332f844fab8fae51014410cb816867c3da0a421dc",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法の改正手続に関する法律",
+     "article": "102",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "在職中、国民投票運動をすることができない",
+     "text_sha256": "b9c74feb729da06c55caf1c2fb27b465232838b30b24700ac534f8283c0d2cd0",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法の改正手続に関する法律",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その地位にあるために特に国民投票運動を効果的に行い得る影響力又は便益を利用して、国民投票運動をすることができない",
+     "text_sha256": "d3ce481ba3f973e25997a56e178e5385ccce9ac025e1fb76c9c399eb3aaf73a7",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法の改正手続に関する法律",
+     "article": "105",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国民投票運動のための広告放送をし、又はさせることができない",
+     "text_sha256": "fc0faec380e4ff5fb4ba79e621cab97aef09cfab2ce59edbdfc7775943f51d9e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "戸別訪問の禁止がないことは、改正手続法100条から109条の本文を表示して確かめた（同法の他の箇所はすべてを通読していない）",
+    "現行法の本文で説明している。出題当時（2018年）からの改正の有無・内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2018-kenpo-q20-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,193 @@
+{
+ "question_id": "shiho-2018-kenpo-q16",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-kenpo-q16-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。罷免の訴追は両議院の議案の可決によって国会が行うのではなく、両議院の議員で組織する訴追委員会が行う。",
+   "body": "誤りは「両議院において当該裁判官の罷免を求める議案が可決されることにより，国会が行う」の部分。憲法64条1項は「国会は、罷免の訴追を受けた裁判官を裁判するため、両議院の議員で組織する弾劾裁判所を設ける。」と定め、同条2項は「弾劾に関する事項は、法律でこれを定める。」とする。これを受けた国会法126条1項は「裁判官の罷免の訴追は、各議院においてその議員の中から選挙された同数の訴追委員で組織する訴追委員会がこれを行う。」と定めている。訴追の方法も、裁判官弾劾法14条1項が「罷免の訴追は、弾劾裁判所に訴追状を提出してこれをするものとする。」と定めており、両議院の本会議で議案を可決する手続ではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "64",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国会は、罷免の訴追を受けた裁判官を裁判するため、両議院の議員で組織する弾劾裁判所を設ける。",
+     "text_sha256": "1707f265cc0a8d22e48673be3e9de6cf1cd1b860a9dcca4fcee6297cbcaf74cf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "64",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "弾劾に関する事項は、法律でこれを定める。",
+     "text_sha256": "1707f265cc0a8d22e48673be3e9de6cf1cd1b860a9dcca4fcee6297cbcaf74cf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "126",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判官の罷免の訴追は、各議院においてその議員の中から選挙された同数の訴追委員で組織する訴追委員会がこれを行う。",
+     "text_sha256": "da3fbf752eb9172819cc588327e3458b604f71a97a1a36d1ea81da456df1b8be",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "裁判官弾劾法",
+     "article": "14",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "罷免の訴追は、弾劾裁判所に訴追状を提出してこれをするものとする。",
+     "text_sha256": "df52f7e3964fe4257fc438f0226e37f3fc1b61387d0ea008eb693d1ce4666427",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2018-kenpo-q16-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-kenpo-q16-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。裁判官弾劾法4条により、弾劾裁判所は国会の閉会中でも職権を行うことができる。",
+   "body": "ポイントは「国会が閉会中であっても活動することができる」の部分で、これは法律に明文がある。裁判官弾劾法4条は「弾劾裁判所及び訴追委員会は、国会の閉会中でも職権を行うことができる。」と定めている。弾劾裁判所は、憲法64条1項により「両議院の議員で組織する」ものとされ、国会法125条1項も「各議院においてその議員の中から選挙された同数の裁判員で組織する弾劾裁判所がこれを行う。」と定めるが、国会の会期とは切り離して活動できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "裁判官弾劾法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弾劾裁判所及び訴追委員会は、国会の閉会中でも職権を行うことができる。",
+     "text_sha256": "733c8618d35ec225c4c01628c62a460d0f650d1f6d14ea390052301784ee315c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "64",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "両議院の議員で組織する",
+     "text_sha256": "1707f265cc0a8d22e48673be3e9de6cf1cd1b860a9dcca4fcee6297cbcaf74cf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "125",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各議院においてその議員の中から選挙された同数の裁判員で組織する弾劾裁判所がこれを行う。",
+     "text_sha256": "1b4067409441cd60f9487be1a6e53202d6f3b9b9582a6700a09884a139b3d0e5",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2018-kenpo-q16-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-kenpo-q16-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。弾劾裁判所の罷免の裁判に対して最高裁判所に取消しを求める手続は設けられておらず、救済は弾劾裁判所自身による資格回復の裁判に限られる。",
+   "body": "誤りは「最高裁判所に対し，その裁判を不服として取消しを求めることができる」の部分。弾劾裁判所は憲法64条1項に基づいて国会が設けるもので、裁判官弾劾法37条は「裁判官は、罷免の裁判の宣告により罷免される。」と定める。同法には、罷免の裁判を最高裁判所などの裁判所に不服申立てする規定はなく、罷免の裁判を受けた者のための手続としては、同法38条1項の「弾劾裁判所は左の場合においては、罷免の裁判を受けた者の請求により、資格回復の裁判をすることができる。」があるだけである。このため、弾劾裁判所の裁判は終局的なもので、通常の裁判所に取消しを求めることはできないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "64",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国会は、罷免の訴追を受けた裁判官を裁判するため、両議院の議員で組織する弾劾裁判所を設ける。",
+     "text_sha256": "1707f265cc0a8d22e48673be3e9de6cf1cd1b860a9dcca4fcee6297cbcaf74cf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "裁判官弾劾法",
+     "article": "37",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判官は、罷免の裁判の宣告により罷免される。",
+     "text_sha256": "01708a8f759af0be176caf623ec37048a07727eabd2e196cc7f1ad1870786a88",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "裁判官弾劾法",
+     "article": "38",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弾劾裁判所は左の場合においては、罷免の裁判を受けた者の請求により、資格回復の裁判をすることができる。",
+     "text_sha256": "ff33abca805040fa80dcfc4d5a36a863556c3ac41ee9aac98b542f987da8f7a5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（弾劾裁判所の裁判に対して通常の裁判所への不服申立てができないとする点。裁判官弾劾法の本文で確認したのは4条・10条・14条・37条・38条で、同法の全条を通読して不服申立ての規定がないことを確かめたわけではない）"
+   ],
+   "id": "exp-shiho-2018-kenpo-q16-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
