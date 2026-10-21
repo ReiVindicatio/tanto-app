@@ -4,7 +4,7 @@
 WebSearch の結果（解説サイト・予備校の要約）は素材にしない。
 
 使い方：
-  python3 pipeline/courts.py search 留置権 引換給付                     # 最高裁判例を検索（新しい順に30件）
+  python3 pipeline/courts.py search 留置権 引換給付                     # 最高裁判例を検索（1語目を含み、さらに2語目以降もすべて含むもの。新しい順に30件）
   python3 pipeline/courts.py search 留置権 --date 1972-11-16           # 裁判年月日で絞る（昭和47-11-16 の形も可）
   python3 pipeline/courts.py search 留置権 --from 昭和40 --to 昭和50   # 期間で絞る（西暦の年でも可）
   python3 pipeline/courts.py search 名誉毀損 --all --page 2            # 最高裁以外も含める・次の30件
@@ -13,6 +13,7 @@ WebSearch の結果（解説サイト・予備校の要約）は素材にしな�
 
 - 取ってきたページは .cache/courts/ に置き、同じものを二度取らない。取得の間は1秒あける
 - データベースにあるのは昭和以降（大審院の判決はないとみられる）
+- 全文検索のヒットが2000件を超えると、日付で絞っていても結果が出ない（サイトの仕様）。そのときはエラーを表示するので、語を足す
 """
 from __future__ import annotations
 
@@ -97,7 +98,10 @@ def parse_year(s: str, end: bool) -> tuple[str, int, int, int]:
 
 def search_url(words: list[str], date: str | None = None, start: str | None = None, end: str | None = None,
                all_courts: bool = False, page: int = 1) -> str:
-    params: list[tuple[str, str]] = [("query1", " ".join(words))]
+    # query1 はスペース区切りの「どれかを含む」（OR）。2語目以降は query2（「さらにこの語を含む」）に入れて絞る
+    params: list[tuple[str, str]] = [("query1", words[0])]
+    if len(words) > 1:
+        params.append(("query2", " ".join(words[1:])))
     if not all_courts:
         params.append(("filter[division][]", "1"))  # 最高裁判例
     lo = hi = None
@@ -125,8 +129,15 @@ def _lines(fragment: str) -> list[str]:
     return [x.strip() for x in t.split("\n") if x.strip()]
 
 
+class SearchError(Exception):
+    pass
+
+
 def parse_search(page: str) -> tuple[int, list[dict]]:
-    """検索結果のページ → (件数, 結果の一覧)"""
+    """検索結果のページ → (件数, 結果の一覧)。サイトがエラーを返したら SearchError（2000件を超えた、など）"""
+    err = re.search(r'<ul class="errorMessage">(.*?)</ul>', page, re.S)
+    if err:
+        raise SearchError(" ".join(_lines(err.group(1))))
     m = re.search(r"(\d+)件中", page)
     total = int(m.group(1)) if m else 0
     table = re.search(r'<table class="[^"]*search-result-table[^"]*">(.*?)</table>', page, re.S)
@@ -213,6 +224,8 @@ def main() -> None:
             print(f"保存した：{path}（Read の道具で開く。出典の URL は {pdf_url(args.id)}）")
     except (urllib.error.URLError, TimeoutError) as e:
         sys.exit(f"取得できない：{e}")
+    except SearchError as e:
+        sys.exit(f"検索できなかった（サイトのエラー）：{e}\n→ 語を足して絞る（2語目以降は「すべて含む」で絞り込む。日付だけでは絞れない：全文検索の件数が先に2000件を超えると結果が出ない）")
     except ValueError as e:
         sys.exit(str(e))
 

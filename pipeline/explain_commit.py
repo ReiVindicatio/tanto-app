@@ -34,8 +34,8 @@ SKIPS = ROOT / "data" / "review" / "explain_skips.json"
 RECHECK_SKIPS = ROOT / "data" / "review" / "recheck_skips.json"
 NOW = ROOT / "NOW.md"
 INDEX = ROOT / "app" / "public" / "data" / "index.json"
-PATHS = ["data/explanations", "data/review", "data/statutes", "pipeline/egov.py", "app/public/data", "NOW.md",
-         "prompts/explain-runbook.md", "pipeline/explain_commit.py", ".gitignore"]
+PATHS = ["data/explanations", "data/review", "data/statutes", "pipeline", "app/public/data", "NOW.md",
+         "prompts", ".claude/agents", "tickets", ".gitignore"]
 RECHECK_LINE = "- **判例の確かめ直し（T041）"
 BATCH = ROOT / ".claude" / "current_batch.json"  # 次のバッチ（git には入れない）
 BATCH_SIZE = 18

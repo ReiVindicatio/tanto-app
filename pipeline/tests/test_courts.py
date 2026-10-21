@@ -50,6 +50,19 @@ class CourtsParseTest(unittest.TestCase):
         self.assertEqual(courts.parse_date("2019-05-01"), ("令和", 1, 5, 1))
         self.assertEqual(courts.parse_date("2019-04-30"), ("平成", 31, 4, 30))
 
+    def test_search_url_narrows_with_query2(self):
+        q = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(courts.search_url(["相殺", "差押", "転付"])).query))
+        self.assertEqual(q["query1"], "相殺")  # query1 はスペース区切りが OR になるので1語だけ
+        self.assertEqual(q["query2"], "差押 転付")
+        q = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(courts.search_url(["留置権"])).query))
+        self.assertNotIn("query2", q)
+
+    def test_site_error_is_not_zero_hits(self):
+        page = ('<ul class="errorMessage"><li><span>検索結果が2000件を超えました。'
+                '「全文検索」欄の検索語を追加・変更してください。</span></li></ul>')
+        with self.assertRaises(courts.SearchError):
+            courts.parse_search(page)
+
     def test_search_url_all_courts_and_page(self):
         url = courts.search_url(["名誉毀損"], all_courts=True, page=3)
         q = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(url).query))
