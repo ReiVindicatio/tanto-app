@@ -1,0 +1,182 @@
+{
+ "question_id": "yobi-2011-gyosei-q20",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-gyosei-q20-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。無効確認訴訟にも19条（関連請求の追加的併合）が準用され、損害賠償請求は関連請求に当たる。",
+   "body": "民事訴訟法136条は、数個の請求は「同種の訴訟手続による場合に限り」一の訴えですることができるとするが、行政事件訴訟法はその特則を置いている。同法19条1項は、原告は「取消訴訟の口頭弁論の終結に至るまで、関連請求に係る訴えをこれに併合して提起することができる」と定め、13条1号は関連請求として「当該処分又は裁決に関連する原状回復又は損害賠償の請求」を挙げる。そして38条1項により、13条・19条は取消訴訟以外の抗告訴訟である無効確認訴訟にも準用される。したがって、Xは、本件無効確認訴訟の提起後に、本件建築確認の違法を理由とするY市に対する国家賠償請求の訴えを併合して提起できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "136",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "数個の請求は、同種の訴訟手続による場合に限り、一の訴えですることができる。",
+     "text_sha256": "093299142d1e2eadf254f0cd8457b9733cbc41cd6cf60498dd068b6b39a37004",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "原告は、取消訴訟の口頭弁論の終結に至るまで、関連請求に係る訴えをこれに併合して提起することができる。",
+     "text_sha256": "846834c9a9a478144efb08f04c263ef59f5906a7d933ea20e34fdf0ceeb15abc",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該処分又は裁決に関連する原状回復又は損害賠償の請求",
+     "text_sha256": "33235bdf214c77f4a1ce6044516c0c79326f75b1e8dabbb04740473291e7edc7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "38",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第十一条から第十三条まで、第十六条から第十九条まで、第二十一条から第二十三条まで、第二十四条、第三十三条及び第三十五条の規定は、取消訴訟以外の抗告訴訟について準用する。",
+     "text_sha256": "e858628c3107ea7aebd299b3f3b3a2affe9e00e80029b3a5cce60db27a47a1b7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-gyosei-q20-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-gyosei-q20-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。無効等確認の訴えに準用されるのは32条2項だけで、取消判決の第三者効を定めた32条1項は準用されていない。",
+   "body": "誤りは「無効確認訴訟にも準用される」という前提である。行政事件訴訟法32条1項は「処分又は裁決を取り消す判決は、第三者に対しても効力を有する」と定める。しかし、無効等確認の訴えへの準用を定める38条3項は「第二十三条の二、第二十五条から第二十九条まで及び第三十二条第二項の規定は、無効等確認の訴えについて準用する」とし、準用されるのは執行停止の決定等に関する32条2項だけである。また38条1項の準用規定にも32条は含まれていない。したがって、32条1項が無効確認訴訟に準用されることを理由とする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "32",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "処分又は裁決を取り消す判決は、第三者に対しても効力を有する。",
+     "text_sha256": "eaaaa82dbfd7e8113b7dcb2e677e62d3c3561b7046ab21ac6ea9b082b9dc4cc0",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "38",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第二十三条の二、第二十五条から第二十九条まで及び第三十二条第二項の規定は、無効等確認の訴えについて準用する。",
+     "text_sha256": "e858628c3107ea7aebd299b3f3b3a2affe9e00e80029b3a5cce60db27a47a1b7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "38",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第十一条から第十三条まで、第十六条から第十九条まで、第二十一条から第二十三条まで、第二十四条、第三十三条及び第三十五条の規定は、取消訴訟以外の抗告訴訟について準用する。",
+     "text_sha256": "e858628c3107ea7aebd299b3f3b3a2affe9e00e80029b3a5cce60db27a47a1b7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-gyosei-q20-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-gyosei-q20-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。38条3項により執行停止（25条）は無効等確認の訴えにも準用されるので、効力の停止を申し立てられる。",
+   "body": "誤りは「処分の効力の停止を申し立てることはできない」の部分である。行政事件訴訟法38条3項は「第二十三条の二、第二十五条から第二十九条まで及び第三十二条第二項の規定は、無効等確認の訴えについて準用する」と定め、執行停止を定める25条を無効等確認の訴えに準用している。25条2項は、重大な損害を避けるため緊急の必要があるときは、裁判所は、申立てにより「処分の効力、処分の執行又は手続の続行の全部又は一部の停止（以下「執行停止」という。）をすることができる」とする。したがって、Xは本件無効確認訴訟を提起した上で、要件を満たせば本件建築確認の効力の停止を申し立てることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "38",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第二十三条の二、第二十五条から第二十九条まで及び第三十二条第二項の規定は、無効等確認の訴えについて準用する。",
+     "text_sha256": "e858628c3107ea7aebd299b3f3b3a2affe9e00e80029b3a5cce60db27a47a1b7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "25",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "処分の効力、処分の執行又は手続の続行の全部又は一部の停止（以下「執行停止」という。）をすることができる",
+     "text_sha256": "e34c7fb3e9a688c620b8989d059d09fcde52fab53ff01172d2952a9a092b6870",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-gyosei-q20-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

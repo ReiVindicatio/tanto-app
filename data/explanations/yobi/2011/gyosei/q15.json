@@ -1,0 +1,181 @@
+{
+ "question_id": "yobi-2011-gyosei-q15",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-gyosei-q15-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。審査基準と処分基準の定義が逆であり、処分基準は定めるよう努める義務にとどまる。",
+   "body": "誤りは2点ある。第1に定義が違う。行政手続法2条8号ロは、審査基準を「申請により求められた許認可等をするかどうかをその法令の定めに従って判断するために必要とされる基準」とし、同号ハは、処分基準を「不利益処分をするかどうか又はどのような不利益処分とするかについてその法令の定めに従って判断するために必要とされる基準」としている。審査基準は申請に対する処分の内容の基準であり、処分基準は不利益処分の基準であって、本肢のように「審査手続」と「内容」で分けるものではない。第2に、定める義務の強さが違う。審査基準については、5条1項が「行政庁は、審査基準を定めるものとする。」として定めることを求めているが、処分基準については、12条1項が「行政庁は、処分基準を定め、かつ、これを公にしておくよう努めなければならない。」として努力義務にとどめている。したがって「そのいずれをもあらかじめ定めておかなければならない」とする点も誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "審査基準（申請により求められた許認可等をするかどうかをその法令の定めに従って判断するために必要とされる基準をいう。以下同じ。）",
+     "text_sha256": "0f14b2fd80120df5b7a9ddeb3a5e2eeaa057c2cc84185aad9ddc891d76983c14",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "処分基準（不利益処分をするかどうか又はどのような不利益処分とするかについてその法令の定めに従って判断するために必要とされる基準をいう。以下同じ。）",
+     "text_sha256": "0f14b2fd80120df5b7a9ddeb3a5e2eeaa057c2cc84185aad9ddc891d76983c14",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行政庁は、審査基準を定めるものとする。",
+     "text_sha256": "6944fca98388317c931aec6c68029946e765f2c773441ee3275c03e562489625",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "12",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行政庁は、処分基準を定め、かつ、これを公にしておくよう努めなければならない。",
+     "text_sha256": "6a4b0b3d4e7f2b644b737e7535a090da81871234a2372efbaf1ddba65a525584",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-gyosei-q15-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-gyosei-q15-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。審査基準・処分基準は「命令等」に当たり、定めるときは意見公募手続を経なければならない。",
+   "body": "行政手続法2条8号は「命令等」を「内閣又は行政機関が定める次に掲げるもの」とし、同号ロに審査基準、同号ハに処分基準を掲げている。そして39条1項は、「命令等制定機関は、命令等を定めようとする場合には」、命令等の案や関連資料をあらかじめ公示し、意見提出期間を定めて「広く一般の意見を求めなければならない」としており、これが意見公募手続である。したがって、国の行政庁が審査基準・処分基準を定めるときは、意見公募手続を経なければならない。39条4項各号は意見公募手続を要しない場合を定めているが、本問は適用除外を考慮しなくてよいとしている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "命令等　内閣又は行政機関が定める次に掲げるものをいう。",
+     "text_sha256": "0f14b2fd80120df5b7a9ddeb3a5e2eeaa057c2cc84185aad9ddc891d76983c14",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "命令等制定機関は、命令等を定めようとする場合には、当該命令等の案（命令等で定めようとする内容を示すものをいう。以下同じ。）及びこれに関連する資料をあらかじめ公示し、意見（情報を含む。以下同じ。）の提出先及び意見の提出のための期間（以下「意見提出期間」という。）を定めて広く一般の意見を求めなければならない。",
+     "text_sha256": "638163c240baadf4ee0d218874fb5dcd75017d7d861d298fe0bad8248fbf23f4",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "39",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "次の各号のいずれかに該当するときは、第一項の規定は、適用しない。",
+     "text_sha256": "638163c240baadf4ee0d218874fb5dcd75017d7d861d298fe0bad8248fbf23f4",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-gyosei-q15-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-gyosei-q15-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。処分基準は裁判所を拘束せず、処分の違法は根拠法令に照らして判断されるので、処分基準が無効・取消しとなる必要はない。",
+   "body": "誤りは、処分基準を裁判所も拘束する基準のように扱っている点にある。処分基準は、行政庁が不利益処分を「その法令の定めに従って判断するために必要とされる基準」（行政手続法2条8号ハ）であり、38条1項も、命令等制定機関は命令等を「根拠となる法令の趣旨に適合するものとなるようにしなければならない」としている。一般に、処分基準は行政内部の基準（行政規則）であって、国民や裁判所を法的に拘束するものではないと解されている。そのため、処分が違法かどうかは根拠となる法令に照らして判断され、処分基準に従った処分であっても法令に違反していれば違法として取り消されうる。その際に、処分基準そのものが無効とされたり取り消されたりすることは必要でないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "処分基準（不利益処分をするかどうか又はどのような不利益処分とするかについてその法令の定めに従って判断するために必要とされる基準をいう。以下同じ。）",
+     "text_sha256": "0f14b2fd80120df5b7a9ddeb3a5e2eeaa057c2cc84185aad9ddc891d76983c14",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政手続法",
+     "article": "38",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "命令等を定めるに当たっては、当該命令等がこれを定める根拠となる法令の趣旨に適合するものとなるようにしなければならない。",
+     "text_sha256": "cc664d5c27e5ab7d7e727351045e9cbf1fc4623e145b1ac0b924ea7e37e5a07f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（処分基準の法的性質・裁判所に対する拘束力の有無は条文に書かれていない）"
+   ],
+   "id": "exp-yobi-2011-gyosei-q15-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
