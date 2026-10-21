@@ -1,0 +1,221 @@
+{
+ "question_id": "shiho-2014-shoho-q39",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q39-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。単元株式数の上限は「千及び発行済株式の総数の二百分の一に当たる数」であり、20万株の会社では1000を超えられない。",
+   "body": "会社法188条2項は、単元株式数について「法務省令で定める数を超えることはできない」とする。これを受けた会社法施行規則34条は、その数を「千及び発行済株式の総数の二百分の一に当たる数」とする。発行済株式の総数が20万株であれば、その200分の1は1000であり、上限の1000とも一致するので、単元株式数は1000を超えることができない。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "188",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "法務省令で定める数を超えることはできない",
+     "text_sha256": "e6b79556e0fccda0b595732863626fcd562d3628de08d461f5d75a8efd2ba7fc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法施行規則",
+     "article": "34",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "千及び発行済株式の総数の二百分の一に当たる数",
+     "text_sha256": "0e0c647a414df10b18610154af65008475cc822b7dc31a3cff23e0dfa725c856",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%8B%99%E7%9C%81%E4%BB%A4%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-shoho-q39-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q39-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。単元未満株式については株主総会で議決権を行使できないと法律で定められており、定款で議決権を認める余地はない。",
+   "body": "誤りは「定款に定めがある場合に限り，株主総会において議決権を行使することができる」とする点である。会社法189条1項は、単元未満株主は、その有する単元未満株式について「株主総会及び種類株主総会において議決権を行使することができない」と定める。単元株制度は、一単元の株式に一個の議決権を認める制度であり（188条1項）、単元未満株式に議決権がないことは定款の定めの有無によらない。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "189",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会及び種類株主総会において議決権を行使することができない",
+     "text_sha256": "a5dfddaeb59c88830f4d314c0f79d89be46e0bef9894c29843be3683b800db6c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "188",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一定の数の株式をもって株主が株主総会又は種類株主総会において一個の議決権を行使することができる一単元の株式とする旨を定款で定めることができる",
+     "text_sha256": "e6b79556e0fccda0b595732863626fcd562d3628de08d461f5d75a8efd2ba7fc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-shoho-q39-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q39-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。単元未満株式の買取請求は、定款の定めがなくても法律上認められる権利である。",
+   "body": "誤りは「定款に定めがある場合に限り」とする点である。会社法192条1項は「単元未満株主は、株式会社に対し、自己の有する単元未満株式を買い取ることを請求することができる」と定め、定款の定めを要件としていない。また、189条2項は、定款で単元未満株主の権利を制限できるとしつつ、その対象を同項各号に掲げる権利「以外の権利」としており、192条1項の買取請求権は同項4号に掲げられているので、定款で奪うこともできない。したがって本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "192",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "単元未満株主は、株式会社に対し、自己の有する単元未満株式を買い取ることを請求することができる",
+     "text_sha256": "465056aec7ba4a695cc0c6ae2a52541e154e8abfe93c243f4e16a596457b015f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "189",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "次に掲げる権利以外の権利の全部又は一部を行使することができない旨を定款で定めることができる",
+     "text_sha256": "a5dfddaeb59c88830f4d314c0f79d89be46e0bef9894c29843be3683b800db6c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-shoho-q39-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q39-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。単元株式数の減少は、取締役会設置会社でない会社では取締役の決定でできる。",
+   "body": "誤りは「株主総会の決議が必要である」とする点である。定款の変更は原則として株主総会の決議による（466条）が、会社法195条1項は、その「規定にかかわらず、取締役の決定（取締役会設置会社にあっては、取締役会の決議）によって、定款を変更して単元株式数を減少し」できると定める。単元株式数の減少は株主の議決権を増やす方向の変更であり、株主に不利益がないため、このような扱いになっていると解されている。したがって、取締役会設置会社でない会社では取締役の決定で足り、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "466",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、その成立後、株主総会の決議によって、定款を変更することができる。",
+     "text_sha256": "9de2157a451631e3430eb3e06bc54991bcf788236f1e77c88059db41f8c79826",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "195",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役の決定（取締役会設置会社にあっては、取締役会の決議）によって、定款を変更して単元株式数を減少し",
+     "text_sha256": "bb26075738c05effd3eb7135e9c34fc2d16bfbbc6b3f7a1743512a6e25c2096a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "減少を取締役の決定でできる理由（株主に不利益がない）は解釈による。"
+   ],
+   "id": "exp-shiho-2014-shoho-q39-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-shoho-q39-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。会社法188条3項のとおり、種類株式発行会社では単元株式数を株式の種類ごとに定めなければならない。",
+   "body": "会社法188条3項は「種類株式発行会社においては、単元株式数は、株式の種類ごとに定めなければならない。」と定める。本肢はこの条文の内容そのものであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "188",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "種類株式発行会社においては、単元株式数は、株式の種類ごとに定めなければならない。",
+     "text_sha256": "e6b79556e0fccda0b595732863626fcd562d3628de08d461f5d75a8efd2ba7fc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2014-shoho-q39-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

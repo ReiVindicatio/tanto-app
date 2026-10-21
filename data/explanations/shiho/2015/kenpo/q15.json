@@ -1,0 +1,161 @@
+{
+ "question_id": "shiho-2015-kenpo-q15",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-kenpo-q15-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。憲法62条が国政調査権を与えているのは「両議院」であり、個々の国会議員の権能ではない。",
+   "body": "誤りは、国政調査権を個々の国会議員の権能としている点である。憲法62条は「両議院は、各々国政に関する調査を行ひ、これに関して、証人の出頭及び証言並びに記録の提出を要求することができる。」と定め、調査の主体を各議院としている。したがって、国政調査権は議院（実際にはその委員会を通じて行使されることが多い）に属する権能であって、個々の国会議員が単独で行使できるものではないと解されている。よって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "62",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "両議院は、各々国政に関する調査を行ひ、これに関して、証人の出頭及び証言並びに記録の提出を要求することができる。",
+     "text_sha256": "d8f589c3ad5ffcb731b745191e52d071d3b3b2978ab872f47c27cb30f5ca6a4b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（国政調査権を個々の議員が単独で行使できないとする点は、62条の文言からの一般的な理解である）。"
+   ],
+   "id": "exp-shiho-2015-kenpo-q15-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-kenpo-q15-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。国会法104条は、報告又は記録の提出が国家の重大な利益に悪影響を及ぼす旨の内閣の声明があったときは、内閣は提出する必要がないと定めている。",
+   "body": "誤りは、国家の重大な利益に悪影響を及ぼすときでも拒むことができないとする点である。国会法104条1項は、各議院又はその委員会から報告又は記録の提出を求められたときは「その求めに応じなければならない。」とするが、2項で、内閣又は官公署が応じないときは理由を疎明し、議院等がこれを受諾し得る場合には提出の必要がないとする。さらに3項は、理由を受諾できない場合に議院等が「その報告又は記録の提出が国家の重大な利益に悪影響を及ぼす旨の内閣の声明」を要求でき、「その声明があつた場合は、内閣又は官公署は、その報告又は記録の提出をする必要がない。」と定める。したがって、国家の重大な利益に悪影響を及ぼす場合には内閣は提出を拒むことができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "104",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その求めに応じなければならない。",
+     "text_sha256": "0a6e4bfc9e730ba91a88c150fe3a19b1949eb9fc4a4894b071a09ac9149f0e45",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "104",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その理由をその議院又は委員会において受諾し得る場合には、内閣又は官公署は、その報告又は記録の提出をする必要がない。",
+     "text_sha256": "0a6e4bfc9e730ba91a88c150fe3a19b1949eb9fc4a4894b071a09ac9149f0e45",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "104",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "その報告又は記録の提出が国家の重大な利益に悪影響を及ぼす旨の内閣の声明",
+     "text_sha256": "0a6e4bfc9e730ba91a88c150fe3a19b1949eb9fc4a4894b071a09ac9149f0e45",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "国会法",
+     "article": "104",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "その声明があつた場合は、内閣又は官公署は、その報告又は記録の提出をする必要がない。",
+     "text_sha256": "0a6e4bfc9e730ba91a88c150fe3a19b1949eb9fc4a4894b071a09ac9149f0e45",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "国会法104条は取得日時点の現行法の本文で説明した。出題当時の条文の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2015-kenpo-q15-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-kenpo-q15-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。憲法62条は各議院に証人の出頭及び証言を要求する権限を与え、議院証言法1条は「何人でも」これに応じなければならないとしているから、私人も対象となる。",
+   "body": "ポイントは、証人として出頭・証言を求める相手が公務員に限られるかである。憲法62条は、両議院が国政に関する調査に関して「証人の出頭及び証言並びに記録の提出を要求することができる。」と定め、相手方を公務員に限定していない。これを受けた議院における証人の宣誓及び証言等に関する法律1条は、各議院から国政に関する調査のため証人として出頭及び証言を求められたときは、同法に別段の定めのある場合を除いて「何人でも、これに応じなければならない。」と定める。したがって、私人に対しても証人として出頭・証言を求めることができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "62",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "証人の出頭及び証言並びに記録の提出を要求することができる。",
+     "text_sha256": "d8f589c3ad5ffcb731b745191e52d071d3b3b2978ab872f47c27cb30f5ca6a4b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "議院における証人の宣誓及び証言等に関する法律",
+     "article": "1",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "何人でも、これに応じなければならない。",
+     "text_sha256": "f3544eb1a8e53230cc762ccce71c4d25125d60e72bbad830dc297a1d7d21b3a7",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%BA%8C%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "議院証言法1条は取得日時点の現行法の本文で説明した。出題当時の条文の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2015-kenpo-q15-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
