@@ -9,7 +9,7 @@
   6. 正本の肢のうち○×があるものに、すべて解説がある（問単位）
   7. 本文の「判例あり（要確認）」と pending_cases がそろっている（T041）。explain-v3 より前の解説で pending_cases が
      ないものは、確かめ直しが済むまで ⚠（警告。公開は止めない）
-  8. verified_urls は courts.go.jp のもの（T041）。STRICT_CASE_URLS が False の間は ⚠
+  8. verified_urls は courts.go.jp の今開ける URL（T041）
 
 使い方：
   python3 pipeline/check_explanations.py yobi 2026 minpo 1      # 検査して結果をファイルに書き戻す
@@ -31,7 +31,7 @@ QUOTE_RE = re.compile(r"「([^「」]+)」")
 ARTICLE_REF_RE = re.compile(r"(\d+)条(?:の(\d+))?")
 PENDING_MARK = "判例あり（要確認）"
 CASE_URL_PREFIX = "https://www.courts.go.jp/"
-STRICT_CASE_URLS = False  # T041：第三者サイトで確かめた判例（民法の42問）を直し終えたら True にする
+STRICT_CASE_URLS = True  # T041：第三者サイトの判例（民法の42問）と旧形式の URL を直し終えた（2026-10-21）
 STRICT_PENDING_FROM = 3   # explain-v3 以降は、要確認と pending_cases の不一致を ❌ にする
 
 

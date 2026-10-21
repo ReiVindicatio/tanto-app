@@ -104,10 +104,12 @@ class CaseChecksTest(unittest.TestCase):
     def test_case_urls_outside_courts(self):
         e = exp("本文", cases=[{"name": "x", "verified_urls": ["https://www.law-lib.jp/x"]}])
         fails, warns = ce.case_checks(e, strict_pending=True)
-        self.assertEqual((len(fails), len(warns)), (0, 1))
-        with mock.patch.object(ce, "STRICT_CASE_URLS", True):
+        self.assertEqual((len(fails), len(warns)), (1, 0))  # 2026-10-21 から ❌
+        with mock.patch.object(ce, "STRICT_CASE_URLS", False):
             fails, warns = ce.case_checks(e, strict_pending=True)
-        self.assertEqual((len(fails), len(warns)), (1, 0))
+        self.assertEqual((len(fails), len(warns)), (0, 1))
+        old = exp("本文", cases=[{"name": "x", "verified_urls": ["https://www.courts.go.jp/app/files/hanrei_jp/1/1_hanrei.pdf"]}])
+        self.assertEqual(len(ce.case_checks(old, strict_pending=True)[0]), 1)  # 旧形式の URL も ❌
         ok = exp("本文", cases=[{"name": "x", "verified_urls": ["https://www.courts.go.jp/hanrei/52639/detail2/index.html"]}])
         self.assertEqual(ce.case_checks(ok, strict_pending=True), ([], []))
 
