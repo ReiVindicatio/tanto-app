@@ -1,0 +1,236 @@
+{
+ "question_id": "shiho-2025-minpo-q21",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q21-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。譲渡制限の意思表示がされた債権を差し押さえた差押債権者には、悪意でも466条3項（履行拒絶）が適用されない（466条の4第1項）。",
+   "body": "ポイントは、譲受人に対する場合と差押債権者に対する場合とで扱いが違うことです。譲受人その他の第三者が悪意・重過失のときは、466条3項により「債務者は、その債務の履行を拒むことができ」ます。しかし、466条の4第1項は「第四百六十六条第三項の規定は、譲渡制限の意思表示がされた債権に対する強制執行をした差押債権者に対しては、適用しない。」と定めています。したがって、差押債権者が譲渡制限の意思表示を知っていたとしても、債務者は差押債権者による取立てを拒むことができず、本肢は正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "466_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四百六十六条第三項の規定は、譲渡制限の意思表示がされた債権に対する強制執行をした差押債権者に対しては、適用しない。",
+     "text_sha256": "749e6cf6673dc39fb7c9a1925b3b6879eb045f6431494e1116aa8e9ecf418020",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "466",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "債務者は、その債務の履行を拒むことができ",
+     "text_sha256": "53cc6756b6ec229cfaa95a16773ac9bf62af5b5c72736b876442ab620e04c690",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q21-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q21-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。譲渡制限の意思表示があっても債権の譲渡は効力を妨げられず（466条2項）、債務者の承諾は効力発生の要件ではない。",
+   "body": "誤りは「債務者がその譲渡を承諾したときに限り、その効力を生ずる」の部分です。466条2項は、譲渡制限の意思表示をしたときであっても「債権の譲渡は、その効力を妨げられない。」と定めています。譲渡制限の意思表示の効果は、悪意・重過失の譲受人等に対して債務者が履行を拒むことができる（466条3項）などにとどまり、譲渡そのものは債務者の承諾がなくても有効です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "466",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当事者が債権の譲渡を禁止し、又は制限する旨の意思表示（以下「譲渡制限の意思表示」という。）をしたときであっても、債権の譲渡は、その効力を妨げられない。",
+     "text_sha256": "53cc6756b6ec229cfaa95a16773ac9bf62af5b5c72736b876442ab620e04c690",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "466",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "債務者は、その債務の履行を拒むことができ",
+     "text_sha256": "53cc6756b6ec229cfaa95a16773ac9bf62af5b5c72736b876442ab620e04c690",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q21-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q21-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。債権譲渡の予約についての確定日付のある通知では、予約完結による債権譲渡を第三者に対抗できない（最判平成13年11月27日）。",
+   "body": "誤りは「譲受人は、債権譲渡を第三者に対抗することができる」の部分です。467条2項は、通知又は承諾は「確定日付のある証書によってしなければ、債務者以外の第三者に対抗することができない」と定めています。最高裁は、指名債権譲渡の予約についてされた確定日付のある証書による債務者への通知又は債務者の承諾をもって、予約の完結による債権譲渡の効力を第三者に対抗することはできないとしました。したがって、予約完結後の譲渡そのものについて改めて対抗要件を備える必要があります。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "467",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の通知又は承諾は、確定日付のある証書によってしなければ、債務者以外の第三者に対抗することができない。",
+     "text_sha256": "3ea3b680843790c06eebdfbd14c6c386b02dd512b401d1869219846beeebd54f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "債権譲渡の予約についての確定日付のある通知と対抗力",
+     "court": "最高裁判所第三小法廷",
+     "date": "2001-11-27",
+     "case_number": "平成10(オ)331",
+     "holding": "指名債権譲渡の予約についてされた確定日付のある証書による債務者に対する通知又は債務者の承諾をもって、当該予約の完結による債権譲渡の効力を第三者に対抗することはできない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52223/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q21-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q21-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。確定日付のある各譲渡通知が同時に到達したときは、各譲受人は債務者にそれぞれ譲受債権全額の弁済を請求できる（最判昭和55年1月11日）。",
+   "body": "ポイントは、同時到達の場合に譲受人同士の優劣が決まらないことと、債務者に対する請求の範囲です。467条2項は、第三者への対抗には「確定日付のある証書」による通知又は承諾を要求しています。最高裁は、指名債権が二重に譲渡され、確定日付のある各譲渡通知が同時に債務者に到達したときは、各譲受人は債務者に対しそれぞれの譲受債権全額の弁済を請求することができ、債務者は、他の譲受人に対する弁済その他の債務消滅事由がない限り弁済の責めを免れないとしました。本肢は債務者がいずれにも弁済していない場合なので、ＡＢ共に全額を請求でき、正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "467",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の通知又は承諾は、確定日付のある証書によってしなければ、債務者以外の第三者に対抗することができない。",
+     "text_sha256": "3ea3b680843790c06eebdfbd14c6c386b02dd512b401d1869219846beeebd54f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "確定日付のある譲渡通知の同時到達と譲受人の弁済請求",
+     "court": "最高裁判所第三小法廷",
+     "date": "1980-01-11",
+     "case_number": "昭和53(オ)1199",
+     "holding": "指名債権が二重に譲渡され、確定日付のある各譲渡通知が同時に債務者に到達したときは、各譲受人は債務者に対しそれぞれの譲受債権全額の弁済を請求でき、債務者は他の譲受人に対する弁済その他の債務消滅事由がない限り弁済の責を免れない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53317/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q21-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q21-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。確定日付のない通知でも債務者への対抗要件にはなり（467条1項）、通知のないＢは債務者に対抗できないので、Ａへの弁済で債権は消滅する。",
+   "body": "ポイントは、確定日付が必要なのは「債務者以外の第三者」に対抗する場合だけだという点です。467条1項は、債権の譲渡は「譲渡人が債務者に通知をし、又は債務者が承諾をしなければ、債務者その他の第三者に対抗することができない」と定め、同条2項は確定日付を「債務者以外の第三者」への対抗要件としています。Ａへの譲渡は確定日付のない通知でも債務者に対抗でき、他方、通知のないＢへの譲渡は債務者に対抗できません。したがって、債務者がＡにした弁済は有効な弁済となり、債権は消滅すると解されています。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "467",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "譲渡人が債務者に通知をし、又は債務者が承諾をしなければ、債務者その他の第三者に対抗することができない。",
+     "text_sha256": "3ea3b680843790c06eebdfbd14c6c386b02dd512b401d1869219846beeebd54f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "467",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の通知又は承諾は、確定日付のある証書によってしなければ、債務者以外の第三者に対抗することができない。",
+     "text_sha256": "3ea3b680843790c06eebdfbd14c6c386b02dd512b401d1869219846beeebd54f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "Ａ・Ｂともに確定日付のある通知を備えていない場合の帰結は、条文からの解釈による。"
+   ],
+   "id": "exp-shiho-2025-minpo-q21-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

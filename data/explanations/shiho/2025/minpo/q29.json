@@ -1,0 +1,235 @@
+{
+ "question_id": "shiho-2025-minpo-q29",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q29-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。横領金で弁済を受けた債権者の取得が不当利得となるのは、受領につき悪意又は重大な過失がある場合であり、単なる過失では足りない。",
+   "body": "誤りのポイントは「過失があったとき」という部分である。判例は、甲が乙から騙取又は横領した金銭で自己の債権者丙に弁済した場合について、弁済の受領につき丙に悪意又は重大な過失があるときは、丙の金銭の取得は乙に対する関係において法律上の原因を欠き不当利得となるとした。不当利得の成立には、703条の「法律上の原因なく」という要件を満たす必要があるところ、判例は、軽過失にとどまる受領者についてはこの要件を満たすとしていない。したがって、Ｃが善意で過失があるにとどまる（重大な過失とまではいえない）場合には、Ｃの金銭の取得は不当利得とならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "703",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律上の原因なく他人の財産又は労務によって利益を受け、そのために他人に損失を及ぼした者",
+     "text_sha256": "fb017a70ba1c1abc0152ea2e23f7b910c14c5ab9350071a2788e05db6aa812de",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "騙取金・横領金による弁済と不当利得",
+     "court": "最高裁判所第一小法廷",
+     "date": "1974-09-26",
+     "case_number": "昭和45(オ)540",
+     "holding": "甲が乙から騙取又は横領した金銭により自己の債権者丙に対する債務を弁済した場合において、弁済の受領につき丙に悪意又は重大な過失があるときは、丙の金銭の取得は、乙に対する関係においては法律上の原因を欠き、不当利得となる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54178/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "軽過失の場合に不当利得とならないことは、判例が「悪意又は重大な過失」を要件としたことからの帰結（解釈による）"
+   ],
+   "id": "exp-shiho-2025-minpo-q29-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q29-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、704条後段は悪意の受益者が不法行為の要件を充足する限りで不法行為責任を負うことを注意的に規定したにすぎないとしている。",
+   "body": "704条は「悪意の受益者は、その受けた利益に利息を付して返還しなければならない。この場合において、なお損害があるときは、その賠償の責任を負う。」と定める。この後段の損害賠償責任について、判例は、悪意の受益者が不法行為の要件を充足する限りにおいて不法行為責任を負うことを注意的に規定したものにすぎず、不法行為責任とは異なる特別の責任を負わせたものではないとした。したがって、悪意の受益者が損失者に生じた損害の賠償義務を負うのは不法行為の要件を満たすときに限られ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "704",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "悪意の受益者は、その受けた利益に利息を付して返還しなければならない。この場合において、なお損害があるときは、その賠償の責任を負う。",
+     "text_sha256": "db0fad3e35fb463713be3d864871de05de727a015fdbe3eedc960aaeef97ec7f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "民法704条後段の趣旨",
+     "court": "最高裁判所第二小法廷",
+     "date": "2009-11-09",
+     "case_number": "平成21(受)247",
+     "holding": "民法704条後段の規定は、悪意の受益者が不法行為の要件を充足する限りにおいて不法行為責任を負うことを注意的に規定したものにすぎず、悪意の受益者に対して不法行為責任とは異なる特別の責任を負わせたものではない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/38149/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q29-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q29-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。期限前の弁済は錯誤によるものでも給付したものの返還を請求できず、債権者が得た利益（中間利息等）を返還するにとどまる（706条）。",
+   "body": "誤りのポイントは「給付したものの返還を請求することができる」という部分である。706条本文は「債務者は、弁済期にない債務の弁済として給付をしたときは、その給付したものの返還を請求することができない。」と定める。錯誤による場合について、同条ただし書は「債務者が錯誤によってその給付をしたときは、債権者は、これによって得た利益を返還しなければならない。」と定めるにとどまり、給付したもの自体の返還請求を認めていない。したがって、錯誤による期限前の弁済であっても、給付したものの返還は請求できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "706",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、弁済期にない債務の弁済として給付をしたときは、その給付したものの返還を請求することができない。",
+     "text_sha256": "973d676805d7703d6c772ee5f802f6bfc2c6d7e46001c7c4c00f37cd3f1d15c5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "706",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者が錯誤によってその給付をしたときは、債権者は、これによって得た利益を返還しなければならない。",
+     "text_sha256": "973d676805d7703d6c772ee5f802f6bfc2c6d7e46001c7c4c00f37cd3f1d15c5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q29-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q29-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。債務者でない者が錯誤で弁済し、債権者が善意で証書を滅失させたときは、弁済者は返還を請求できない（707条1項）。",
+   "body": "707条1項は「債務者でない者が錯誤によって債務の弁済をした場合において、債権者が善意で証書を滅失させ若しくは損傷し、担保を放棄し、又は時効によってその債権を失ったときは、その弁済をした者は、返還の請求をすることができない。」と定める。本肢は、債務者でない者が錯誤で弁済し、債権者が善意で債権証書を滅失させた場合であり、同項にそのまま当てはまる。なお、この場合でも同条2項により「弁済をした者から債務者に対する求償権の行使を妨げない」。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "707",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者でない者が錯誤によって債務の弁済をした場合において、債権者が善意で証書を滅失させ若しくは損傷し、担保を放棄し、又は時効によってその債権を失ったときは、その弁済をした者は、返還の請求をすることができない。",
+     "text_sha256": "578524dd465c9330b00a61cdd8bd030543d6902e798eac4286b7cf5148d0c64f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "707",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "弁済をした者から債務者に対する求償権の行使を妨げない",
+     "text_sha256": "578524dd465c9330b00a61cdd8bd030543d6902e798eac4286b7cf5148d0c64f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q29-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q29-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、不法原因給付の返還の特約は有効であるとしている。",
+   "body": "708条本文は「不法な原因のために給付をした者は、その給付したものの返還を請求することができない。」と定める。しかし、判例は、不法原因給付がされた後に当事者間でした返還の特約は有効であるとし、その特約に基づく返還義務の履行のために振り出された手形の請求には708条は適用がないとした。したがって、給付後に返還が合意されたときは、給付をした者はその合意に基づいて返還を請求することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "708",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法な原因のために給付をした者は、その給付したものの返還を請求することができない。",
+     "text_sha256": "a35bbcbbae55af85a9332567d8b0b166d5b8efffcb5a14a2a9cb4320e3160ba1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "不法原因給付の返還の特約の効力",
+     "court": "最高裁判所第一小法廷",
+     "date": "1953-01-22",
+     "case_number": "昭和24(オ)179",
+     "holding": "不法原因給付の返還の特約は有効であり、その特約に基づく返還義務の履行のため振り出された手形の請求には民法708条は適用がない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57131/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q29-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

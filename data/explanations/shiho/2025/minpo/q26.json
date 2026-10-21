@@ -1,0 +1,222 @@
+{
+ "question_id": "shiho-2025-minpo-q26",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q26-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。利息の特約があるときは、貸主は、借主が金銭を受け取った日以後の利息を請求できる（589条2項）ので、受け取った日の当日から利息が生ずる。",
+   "body": "消費貸借では「貸主は、特約がなければ、借主に対して利息を請求することができない」（589条1項）。そして「前項の特約があるときは、貸主は、借主が金銭その他の物を受け取った日以後の利息を請求することができる」（同条2項）。「受け取った日以後」には受け取った日の当日が含まれるので、借主は受け取った日の当日からの利息の支払義務を負う。本肢はこの規定のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "589",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "貸主は、特約がなければ、借主に対して利息を請求することができない。",
+     "text_sha256": "5d60796fb8fff7ad0e16ed6eb2b1c4fbeca03061faecef7daa9d4e1f2a986951",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "589",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の特約があるときは、貸主は、借主が金銭その他の物を受け取った日以後の利息を請求することができる。",
+     "text_sha256": "5d60796fb8fff7ad0e16ed6eb2b1c4fbeca03061faecef7daa9d4e1f2a986951",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q26-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q26-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。確定期限のある債務は、期限の到来した時から遅滞となる（412条1項）が、返還期日の当日中は履行できるので、遅滞となるのは期日を経過した翌日からと解されており、「返還期日当日から」とする点が誤り。",
+   "body": "「債務の履行について確定期限があるときは、債務者は、その期限の到来した時から遅滞の責任を負う」（412条1項）。返還期日を定めた場合、借主は返還期日の当日中に返還すれば期限どおりに履行したことになる。そのため、遅滞の責任を負うのは返還期日を経過した時、すなわち返還期日の翌日からであり、遅延損害金もその日から生ずると解されている。返還期日当日からの遅延損害金の支払義務を負うとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "412",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の履行について確定期限があるときは、債務者は、その期限の到来した時から遅滞の責任を負う。",
+     "text_sha256": "f4fa559cc04ea54ec21234490f08e386ccfdf08e099045e9b123098d7a3c0fc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による。確定期限の当日は遅滞とならず翌日から遅滞となるとの説明は、判例を確認していない（courts.py search 確定期限 遅滞 では該当する判例が見つからなかった）。"
+   ],
+   "id": "exp-shiho-2025-minpo-q26-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q26-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、不法行為に基づく損害賠償債務は、催告を要することなく、損害の発生と同時に遅滞に陥るとするので、事故発生日当日から遅延損害金が生ずる。",
+   "body": "期限の定めのない債務は、「履行の請求を受けた時から遅滞の責任を負う」のが原則である（412条3項）。しかし、最高裁昭和37年9月4日判決は、不法行為に基づく損害賠償債務は、なんらの催告を要することなく、損害の発生と同時に遅滞に陥るものと解すべきであるとした。交通事故による損害は事故の発生と同時に生ずるので、加害者は事故発生日当日からの遅延損害金の支払義務を負う。本肢はこの判例のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "412",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "債務の履行について期限を定めなかったときは、債務者は、履行の請求を受けた時から遅滞の責任を負う。",
+     "text_sha256": "f4fa559cc04ea54ec21234490f08e386ccfdf08e099045e9b123098d7a3c0fc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "不法行為に基づく損害賠償債務の遅滞の時期",
+     "court": "最高裁判所第三小法廷",
+     "date": "1962-09-04",
+     "case_number": "昭和34(オ)117",
+     "holding": "不法行為に基づく損害賠償債務は、なんらの催告を要することなく、損害の発生と同時に遅滞に陥る（裁判要旨二）。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52954/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q26-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q26-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。買主は引渡しの日から代金の利息を支払う義務を負うが、代金の支払について期限があるときは、その期限が到来するまでは利息を支払う必要がない（575条2項ただし書）。",
+   "body": "575条2項本文は「買主は、引渡しの日から、代金の利息を支払う義務を負う」とする。しかし、同項ただし書は「代金の支払について期限があるときは、その期限が到来するまでは、利息を支払うことを要しない」とする。本肢では代金の支払期日が引渡期日より後に定められているので、目的物の引渡しを受けても、支払期日が到来するまでは買主は利息を支払う必要がない。引渡しの当日からの利息の支払義務を負うとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "575",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "買主は、引渡しの日から、代金の利息を支払う義務を負う。",
+     "text_sha256": "d3dc327ab380fecd5985aff54b244d290d79e939ed1df6a466bc03056ba8cd75",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "575",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "代金の支払について期限があるときは、その期限が到来するまでは、利息を支払うことを要しない。",
+     "text_sha256": "d3dc327ab380fecd5985aff54b244d290d79e939ed1df6a466bc03056ba8cd75",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q26-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q26-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。預金契約は消費寄託と解されており、民法には利息の特約がない消費寄託について受寄者に利息の支払義務を負わせる規定はないので、特約がなければ金融機関は利息の支払義務を負わない。",
+   "body": "預金契約は、受寄者が「契約により寄託物を消費することができる場合」（666条1項）に当たる消費寄託であると解されている。利息は当事者の特約又は法律の規定によって生ずるものであり、消費貸借についても「貸主は、特約がなければ、借主に対して利息を請求することができない」（589条1項）とされている。消費寄託について、特約がないのに受寄者に利息の支払義務を負わせる規定は民法にない。したがって、利息の特約がなければ、金融機関は預金者に対して利息の支払義務を負わないと解される。本肢はこのとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "666",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "受寄者が契約により寄託物を消費することができる場合には",
+     "text_sha256": "526aef2e7426c3ad0411cb1c5b4686be760149e56dad8c5f2face2b08e5110da",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "589",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "貸主は、特約がなければ、借主に対して利息を請求することができない。",
+     "text_sha256": "5d60796fb8fff7ad0e16ed6eb2b1c4fbeca03061faecef7daa9d4e1f2a986951",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による。預金契約を消費寄託とする理解と、特約がなければ利息が生じないとする説明は解釈によるもので、判例は確認していない。商法の規定（商人間の法定利息など）の適用は検討していない。"
+   ],
+   "id": "exp-shiho-2025-minpo-q26-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

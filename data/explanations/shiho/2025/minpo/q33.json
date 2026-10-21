@@ -1,0 +1,168 @@
+{
+ "question_id": "shiho-2025-minpo-q33",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q33-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。遺産分割による承継であっても、法定相続分を超える部分は登記を備えなければ第三者に対抗できない（899条の2第1項）。",
+   "body": "899条の2第1項は「相続による権利の承継は、遺産の分割によるものかどうかにかかわらず、次条及び第九百一条の規定により算定した相続分を超える部分については、登記、登録その他の対抗要件を備えなければ、第三者に対抗することができない。」と定める。この規定により、遺産分割によって不動産の所有権を取得した相続人も、法定相続分を超える部分については登記がなければ第三者に対抗できない。遺産分割後に現れた第三者もこの「第三者」に当たる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "899_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続による権利の承継は、遺産の分割によるものかどうかにかかわらず、次条及び第九百一条の規定により算定した相続分を超える部分については、登記、登録その他の対抗要件を備えなければ、第三者に対抗することができない。",
+     "text_sha256": "a75d25ef06bfb5011def995338247cc5ff8cfd5351845a48f7d3ccfa883d6d1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "遺産分割後に現れた第三者が899条の2第1項の「第三者」に当たることは、同項の文言（遺産の分割によるものかどうかにかかわらず）からの理解（解釈による）"
+   ],
+   "id": "exp-shiho-2025-minpo-q33-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q33-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。子が廃除によって相続権を失ったときは、被相続人の直系卑属であるその子が代襲して相続人となる（887条2項）。",
+   "body": "887条2項は「被相続人の子が、相続の開始以前に死亡したとき、又は第八百九十一条の規定に該当し、若しくは廃除によって、その相続権を失ったときは、その者の子がこれを代襲して相続人となる。ただし、被相続人の直系卑属でない者は、この限りでない。」と定める。廃除も代襲原因に含まれており、Ｂの子ＣはＡの直系卑属であるから、ただし書にも当たらない。したがって、ＣはＢを代襲してＡの相続人となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "887",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "被相続人の子が、相続の開始以前に死亡したとき、又は第八百九十一条の規定に該当し、若しくは廃除によって、その相続権を失ったときは、その者の子がこれを代襲して相続人となる。ただし、被相続人の直系卑属でない者は、この限りでない。",
+     "text_sha256": "6eac3c2fc5ddf34f8bb4ef2112c6f22d510ce206b2b194c9870bf454b6e0eb12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q33-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q33-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、相続分の全部を譲渡した共同相続人は遺産全体に対する割合的な持分を全て失い、遺産分割審判の手続等において分割を求めることはできないとしている。",
+   "body": "相続分の譲渡については、905条1項が「共同相続人の一人が遺産の分割前にその相続分を第三者に譲り渡したときは」他の共同相続人が取り戻せると定めるように、遺産分割前に相続分を譲り渡すことが前提とされている。判例は、遺産確認の訴えの当事者適格が問題となった事案で、共同相続人のうち自己の相続分の全部を譲渡した者は、積極財産と消極財産とを包括した遺産全体に対する割合的な持分を全て失うことになり、遺産分割審判の手続等において遺産に属する財産につきその分割を求めることはできないとし、その者は遺産確認の訴えの当事者適格を有しないとした。したがって、相続分の全部を他の共同相続人に譲渡した者は遺産の分割を求めることができず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "905",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共同相続人の一人が遺産の分割前にその相続分を第三者に譲り渡したときは",
+     "text_sha256": "47ad7037c74921728907174d40b51d7e3eaf95aa0f27dcdf969fc9cab10af25a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "相続分の全部を譲渡した者と遺産確認の訴えの当事者適格",
+     "court": "最高裁判所第二小法廷",
+     "date": "2014-02-14",
+     "case_number": "平成23(受)603",
+     "holding": "共同相続人のうち自己の相続分の全部を譲渡した者は、遺産全体に対する割合的な持分を全て失い、遺産分割審判の手続等において遺産に属する財産につきその分割を求めることはできないから、遺産確認の訴えの当事者適格を有しない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/83947/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q33-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q33-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。配偶者と直系尊属が相続人のとき、直系尊属の相続分は3分の1であり、父母2人なら各6分の1となる（900条2号・4号）。",
+   "body": "誤りのポイントは「各４分の１」という数字である。900条2号は「配偶者及び直系尊属が相続人であるときは、配偶者の相続分は、三分の二とし、直系尊属の相続分は、三分の一とする。」と定める。同条4号本文は「子、直系尊属又は兄弟姉妹が数人あるときは、各自の相続分は、相等しいものとする。」と定める。したがって、父母2人の相続分は3分の1を等分した各6分の1であり、各4分の1ではない（各4分の1となるのは、配偶者と子2人が相続人である場合の子の相続分などである）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "900",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "配偶者及び直系尊属が相続人であるときは、配偶者の相続分は、三分の二とし、直系尊属の相続分は、三分の一とする。",
+     "text_sha256": "4f1cbf25a7b665639eb45fbea200926681aad49a1881eadde375777dfd56fa23",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "900",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子、直系尊属又は兄弟姉妹が数人あるときは、各自の相続分は、相等しいものとする。",
+     "text_sha256": "4f1cbf25a7b665639eb45fbea200926681aad49a1881eadde375777dfd56fa23",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q33-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

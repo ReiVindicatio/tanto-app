@@ -1,0 +1,222 @@
+{
+ "question_id": "shiho-2025-minpo-q18",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q18-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。金銭債務は、貨幣価値が変動しても、特約のない限り額面（券面額）どおりの金額を弁済すれば足りるとするのが判例である。",
+   "body": "ポイントは、貨幣価値の変動が金銭債務の額に影響するかである。402条1項は、債権の目的物が金銭であるときは「債務者は、その選択に従い、各種の通貨で弁済をすることができる」と定め、金銭債権では通貨の種類ではなく金額が問題となることを前提としている。判例（最判昭和36年6月20日）は、昭和9年に発行された割増金付割引勧業債券について、別段の特約のない限り、償還時に貨幣価値が下落していても、償還当時の貨幣で券面額を弁済すれば免責されるとした。このように、金銭債務の額は貨幣価値の変動にかかわらず額面によって定まると解されている（名目主義）。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "402",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、その選択に従い、各種の通貨で弁済をすることができる",
+     "text_sha256": "413cf7b4d088d679e86e133af8da5b4dcdb81c8dbe996606765b04898dc067ee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "貨幣価値の下落と債券の券面額による弁済",
+     "court": "最高裁判所第三小法廷",
+     "date": "1961-06-20",
+     "case_number": "昭和33(オ)546",
+     "holding": "昭和9年10月発行の割増金割引勧業債券について、発行売出銀行は、別段の特約のない限り、償還時に貨幣価値が下落していても、償還当時の貨幣で券面額を弁済することにより免責される。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53642/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "「名目主義」として金銭債務一般に及ぼす説明は解釈による（判例の裁判要旨は債券の事案についてのもの）。"
+   ],
+   "id": "exp-shiho-2025-minpo-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q18-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。約定利率が法定利率を超えるときは、損害賠償の額は約定利率による（419条1項ただし書）。",
+   "body": "決め手は、「法定利率によって定める」としている部分である。419条1項本文は、金銭債務の不履行の損害賠償の額は「債務者が遅滞の責任を負った最初の時点における法定利率によって定める」とするが、ただし書で「約定利率が法定利率を超えるときは、約定利率による」と定める。本肢は、約定利率が法定利率を超える場合であるから、ただし書により約定利率によって定めることになる。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "419",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者が遅滞の責任を負った最初の時点における法定利率によって定める",
+     "text_sha256": "b8a6ee23c8b5f8ed367b5143bb8842be7cca284b2c411007cc534b647fe70269",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "419",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "約定利率が法定利率を超えるときは、約定利率による",
+     "text_sha256": "b8a6ee23c8b5f8ed367b5143bb8842be7cca284b2c411007cc534b647fe70269",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q18-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。419条は金銭債務の損害賠償について特則を置くが、過失相殺（418条）の適用を排除していない。",
+   "body": "ポイントは、金銭債務にも418条の過失相殺が及ぶかである。418条は「債務の不履行又はこれによる損害の発生若しくは拡大に関して債権者に過失があったときは、裁判所は、これを考慮して、損害賠償の責任及びその額を定める」と定め、債務の種類を限定していない。419条は、金銭債務について損害賠償の額を法定利率等によって定め（1項）、債権者は「損害の証明をすることを要しない」（2項）、債務者は「不可抗力をもって抗弁とすることができない」（3項）とする特則を置くが、債権者の過失を考慮しないとする定めはない。そのため、金銭債務の不履行にも418条が適用されると解されている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "418",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の不履行又はこれによる損害の発生若しくは拡大に関して債権者に過失があったときは、裁判所は、これを考慮して、損害賠償の責任及びその額を定める",
+     "text_sha256": "d4b70f1ac4260cbcf171a3e732aaa5a2df063faebba10e7b8aeec1f8cfe92565",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "419",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "損害の証明をすることを要しない",
+     "text_sha256": "b8a6ee23c8b5f8ed367b5143bb8842be7cca284b2c411007cc534b647fe70269",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "419",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "不可抗力をもって抗弁とすることができない",
+     "text_sha256": "b8a6ee23c8b5f8ed367b5143bb8842be7cca284b2c411007cc534b647fe70269",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "金銭債務にも418条が適用されるという点は解釈による（判例は courts.py で確かめていない）。"
+   ],
+   "id": "exp-shiho-2025-minpo-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q18-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。金銭債務の不履行については、債務者は不可抗力をもって抗弁とすることができない（419条3項）から、過失がなくても責任を免れない。",
+   "body": "ポイントは419条3項である。同項は、金銭債務の不履行の損害賠償について「債務者は、不可抗力をもって抗弁とすることができない」と定める。不可抗力でさえ抗弁にならない以上、債務者が過失なく真の債権者を確知できなかったという事情も、損害賠償の責任を免れる理由にはならない。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "419",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "債務者は、不可抗力をもって抗弁とすることができない",
+     "text_sha256": "b8a6ee23c8b5f8ed367b5143bb8842be7cca284b2c411007cc534b647fe70269",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q18-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。口座への払込みによる弁済は、債権者が払戻しを「請求する権利を取得した時」に効力を生じ、実際に払戻しを受けた時ではない（477条）。",
+   "body": "決め手は、「払戻しを受けた時に、その効力を生ずる」としている部分である。477条は、債権者の預金又は貯金の口座に対する払込みによってする弁済は「債権者がその預金又は貯金に係る債権の債務者に対してその払込みに係る金額の払戻しを請求する権利を取得した時に、その効力を生ずる」と定める。つまり、効力が生じるのは払戻しを請求する権利を取得した時であり、債権者が現に払戻しを受けた時ではない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "477",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者がその預金又は貯金に係る債権の債務者に対してその払込みに係る金額の払戻しを請求する権利を取得した時に、その効力を生ずる",
+     "text_sha256": "79569b12746084ba5b90147a6a4e6219660a470e84061b4af007530d7b167180",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

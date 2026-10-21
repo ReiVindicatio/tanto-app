@@ -1,0 +1,281 @@
+{
+ "question_id": "shiho-2025-minpo-q01",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q01-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。任意後見監督人を選任する場合に本人が成年被後見人であるときは、家庭裁判所は後見開始の審判を「取り消さなければならない」（任意後見契約に関する法律4条2項）。",
+   "body": "本肢は任意後見契約に関する法律4条2項をそのまま述べたものである。同条1項は、任意後見契約が登記されている場合に本人の事理弁識能力が不十分な状況にあるときは、家庭裁判所が「任意後見監督人を選任する」と定める。そして同条2項は、この選任をする場合において「本人が成年被後見人、被保佐人又は被補助人であるときは、家庭裁判所は、当該本人に係る後見開始、保佐開始又は補助開始の審判（以下「後見開始の審判等」と総称する。）を取り消さなければならない」と定める。任意後見監督人の選任により任意後見契約の効力が生ずる場面では、法定後見の審判は取り消されることになる。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "任意後見契約に関する法律",
+     "article": "4",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "本人が成年被後見人、被保佐人又は被補助人であるときは、家庭裁判所は、当該本人に係る後見開始、保佐開始又は補助開始の審判（以下「後見開始の審判等」と総称する。）を取り消さなければならない",
+     "text_sha256": "7f664a9b36c2ad90a519436b8d907aa96088f4e23d7bb5ba25a0061e58c336bb",
+     "fetched_at": "2026-10-21",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%80%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%BA%94%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "任意後見契約に関する法律",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "任意後見監督人を選任する",
+     "text_sha256": "7f664a9b36c2ad90a519436b8d907aa96088f4e23d7bb5ba25a0061e58c336bb",
+     "fetched_at": "2026-10-21",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%80%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%BA%94%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q01-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q01-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。本人以外の者の請求による審判に本人の同意を要するのは補助開始の審判であり（15条2項）、保佐開始の審判（11条）には本人の同意は要件とされていない。",
+   "body": "決め手は、保佐開始の審判に「本人の同意がなければならない」としている部分である。11条は、事理弁識能力が著しく不十分である者について、本人、配偶者、四親等内の親族等「又は検察官の請求により、保佐開始の審判をすることができる」と定めるだけで、本人の同意を要件としていない。これに対し、15条2項は「本人以外の者の請求により補助開始の審判をするには、本人の同意がなければならない」と定めており、本人の同意が必要なのは補助開始の審判である。本肢は補助開始の審判の規律を保佐開始の審判に当てはめたものである。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "又は検察官の請求により、保佐開始の審判をすることができる",
+     "text_sha256": "3b2fd05df9064c263fe64a69c394e521d618b1e5099cbae7c6f0adb2d07ccc15",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "15",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "本人以外の者の請求により補助開始の審判をするには、本人の同意がなければならない。",
+     "text_sha256": "166ecb63d41f118a41c7cdcf22d9baf379ba7df2e516089a815be64f282af236",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q01-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q01-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。代理人について代理権が消滅するのは「後見開始の審判」を受けたときであり（111条1項2号）、保佐開始の審判を受けても代理権は消滅しない。",
+   "body": "決め手は、保佐開始の審判で法定代理権が「消滅する」としている部分である。111条1項は代理権の消滅事由として、「本人の死亡」のほか「代理人の死亡又は代理人が破産手続開始の決定若しくは後見開始の審判を受けたこと」を挙げており、保佐開始の審判は含まれていない。また、後見人の欠格事由を定める847条も、「未成年者」「破産者」などを挙げるだけで、被保佐人を挙げていない。そのため、成年後見人が保佐開始の審判を受けても、その法定代理権は当然には消滅しない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "111",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理人の死亡又は代理人が破産手続開始の決定若しくは後見開始の審判を受けたこと",
+     "text_sha256": "1571dd1b2bbc9f50c4c3043610b09f2d28f670fa566fe8ae9ac44125a8068e5f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "111",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "本人の死亡",
+     "text_sha256": "1571dd1b2bbc9f50c4c3043610b09f2d28f670fa566fe8ae9ac44125a8068e5f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "847",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者",
+     "text_sha256": "84b2b0296b3c95d09ca3f782c080d27d2f66fa928edaaaa241b0c2cb0be06051",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "847",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "破産者",
+     "text_sha256": "84b2b0296b3c95d09ca3f782c080d27d2f66fa928edaaaa241b0c2cb0be06051",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q01-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q01-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。補助人に代理権を付与する審判（876条の9第1項）は被補助人の行為能力を制限するものではないから、被補助人はその法律行為を自らすることができる。",
+   "body": "ポイントは、代理権付与の審判と同意を要する旨の審判とが別のものであることである。876条の9第1項は、家庭裁判所が「被補助人のために特定の法律行為について補助人に代理権を付与する旨の審判をすることができる」と定めるが、被補助人の行為を制限する文言はない。被補助人の行為が制限されるのは、17条1項の「被補助人が特定の法律行為をするにはその補助人の同意を得なければならない旨の審判」がされた場合であり、その場合に同意を得ずにした行為が「取り消すことができる」とされる（同条4項）。したがって、代理権付与の審判がされただけであれば、被補助人はその法律行為を自らすることができると解されており、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "876_9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被補助人のために特定の法律行為について補助人に代理権を付与する旨の審判をすることができる",
+     "text_sha256": "0a85ba9840c77629af5c4230e0a53556e5aa7a1966571d893e1e74800eb847de",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "17",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被補助人が特定の法律行為をするにはその補助人の同意を得なければならない旨の審判",
+     "text_sha256": "613632a805004cadd78bd89103ca69b2ef1e58af9f3a14b5cf49cb01fc28f237",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "17",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "取り消すことができる",
+     "text_sha256": "613632a805004cadd78bd89103ca69b2ef1e58af9f3a14b5cf49cb01fc28f237",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "代理権付与の審判だけでは被補助人の行為能力が制限されないという説明は解釈による。"
+   ],
+   "id": "exp-shiho-2025-minpo-q01-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q01-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。7条は後見開始の審判の請求権者に「検察官」を挙げている。",
+   "body": "本肢は7条の請求権者の範囲を問うものである。7条は、事理を弁識する能力を欠く常況にある者について、家庭裁判所は「本人、配偶者、四親等内の親族、未成年後見人、未成年後見監督人、保佐人、保佐監督人、補助人、補助監督人又は検察官の請求により、後見開始の審判をすることができる」と定める。このように検察官も後見開始の審判を請求することができる。保佐開始（11条）・補助開始（15条1項）の審判でも、検察官は請求権者に含まれている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "本人、配偶者、四親等内の親族、未成年後見人、未成年後見監督人、保佐人、保佐監督人、補助人、補助監督人又は検察官の請求により、後見開始の審判をすることができる",
+     "text_sha256": "c6910eec444e08b030a00ebe848c0995f8c76e48d8941aa891bb805926d19d26",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "又は検察官の請求により、保佐開始の審判をすることができる",
+     "text_sha256": "3b2fd05df9064c263fe64a69c394e521d618b1e5099cbae7c6f0adb2d07ccc15",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "15",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "又は検察官の請求により、補助開始の審判をすることができる",
+     "text_sha256": "166ecb63d41f118a41c7cdcf22d9baf379ba7df2e516089a815be64f282af236",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q01-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

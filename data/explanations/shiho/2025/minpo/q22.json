@@ -1,0 +1,238 @@
+{
+ "question_id": "shiho-2025-minpo-q22",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q22-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。弁済による代位は求償権を確保するための制度で、代位による権利行使は求償できる範囲内に限られる（501条2項）ため、求償権がなければ代位できない。",
+   "body": "誤りは「求償権を取得しないときであっても、弁済による代位をすることができる」の部分です。501条2項は、代位による権利の行使は「債権者に代位した者が自己の権利に基づいて債務者に対して求償をすることができる範囲内」に限りすることができると定めています。最高裁（昭和59年5月29日判決）も、弁済による代位の制度は、代位弁済者が債務者に対して取得する求償権を確保するために原債権及びその担保権を代位弁済者に移転させ、求償権の範囲内でこれを行使することを認める制度であると述べています。したがって、求償権を取得しない弁済者は代位をすることができないと解されています。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "499",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者のために弁済をした者は、債権者に代位する。",
+     "text_sha256": "b54f0f1ff44e5fcf4711dbaa60c422c8fa936c2965fc141aa442411cfe09ea1c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "501",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権者に代位した者が自己の権利に基づいて債務者に対して求償をすることができる範囲内",
+     "text_sha256": "173268b45b7e8524a5b3b90208061e8868848538142f787f231b67423f03a20d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "弁済による代位の制度趣旨と代位取得した担保権の被担保債権",
+     "court": "最高裁判所第三小法廷",
+     "date": "1984-05-29",
+     "case_number": "昭和55(オ)351",
+     "holding": "弁済による代位の制度は、代位弁済者が債務者に対して取得する求償権を確保するために、原債権及びその担保権を代位弁済者に移転させ、代位弁済者がその求償権の範囲内で原債権及びその担保権を行使することを認める制度である（全文）。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52659/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "求償権がない場合に代位できないとする点は、501条2項と判例の制度趣旨からの解釈による。"
+   ],
+   "id": "exp-shiho-2025-minpo-q22-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q22-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。代位弁済者が代位により取得した担保権を実行する場合の被担保債権は原債権であって求償権ではない（最判昭和59年5月29日）。",
+   "body": "ポイントは、代位で移転するのは「債権者が有していた」権利だという点です。501条1項は、代位者は「債権の効力及び担保としてその債権者が有していた一切の権利を行使することができる」と定めています。最高裁は、弁済による代位の制度は求償権を確保するために原債権及びその担保権を代位弁済者に移転させる制度であり、代位弁済者が代位によって取得した担保権を実行する場合に被担保債権として扱うべきものは原債権であって、求償権ではないとしました（全文）。したがって、本肢は正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "501",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の規定により債権者に代位した者は、債権の効力及び担保としてその債権者が有していた一切の権利を行使することができる。",
+     "text_sha256": "173268b45b7e8524a5b3b90208061e8868848538142f787f231b67423f03a20d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "弁済による代位の制度趣旨と代位取得した担保権の被担保債権",
+     "court": "最高裁判所第三小法廷",
+     "date": "1984-05-29",
+     "case_number": "昭和55(オ)351",
+     "holding": "代位弁済者が弁済による代位によって取得した担保権を実行する場合において、その被担保債権として扱うべきものは原債権であって、保証人の債務者に対する求償権ではない（全文）。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52659/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q22-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q22-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。連帯債務者の一人が弁済したときは他の連帯債務者への求償権（442条1項）を取得し、代位による権利行使はその求償権の範囲内に限られる（501条2項）。",
+   "body": "ポイントは、代位による権利行使の上限が求償権だという点です。442条1項により、弁済をした連帯債務者は他の連帯債務者に対し「各自の負担部分に応じた額の求償権を有する」ことになります。そして501条2項は、代位による権利の行使は「債権者に代位した者が自己の権利に基づいて債務者に対して求償をすることができる範囲内」に限りすることができると定めています。したがって、弁済をした連帯債務者は、他の連帯債務者に対する求償権の範囲内で、代位により取得した債権を行使でき、本肢は正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "442",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各自の負担部分に応じた額の求償権を有する。",
+     "text_sha256": "b1d9a68defbdbd1f6b3baf69ed12f0a99dbe5c736e4062c94c47db90f1729a0f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "501",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権者に代位した者が自己の権利に基づいて債務者に対して求償をすることができる範囲内",
+     "text_sha256": "173268b45b7e8524a5b3b90208061e8868848538142f787f231b67423f03a20d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q22-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q22-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。全部の弁済を受けた債権者は、債権証書だけでなく自己の占有する担保物も代位者に交付しなければならない（503条1項）。",
+   "body": "誤りは「自己の占有する担保物を代位者に交付する必要はない」の部分です。503条1項は「代位弁済によって全部の弁済を受けた債権者は、債権に関する証書及び自己の占有する担保物を代位者に交付しなければならない。」と定めています。債権証書の交付だけでは足りず、担保物の交付も義務付けられています。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "503",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代位弁済によって全部の弁済を受けた債権者は、債権に関する証書及び自己の占有する担保物を代位者に交付しなければならない。",
+     "text_sha256": "6baf04041ad6e852435f27cc3e3e4d9e654eda4c1d4093cf5cda576be311f799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2025-minpo-q22-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2025-minpo-q22-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。担保の喪失について取引上の社会通念に照らして合理的な理由があるときは、504条1項の免責は適用されない（504条2項）。",
+   "body": "ポイントは504条2項の例外です。504条1項は、代位権者がある場合に債権者が故意又は過失によって担保を喪失・減少させたときは、代位権者は「償還を受けることができなくなる限度において、その責任を免れる」と定めています。保証人Ｃは弁済をするについて正当な利益を有する者として代位権者にあたると解されるので、Ａの抵当権放棄は原則としてＣの免責につながります。しかし504条2項は「前項の規定は、債権者が担保を喪失し、又は減少させたことについて取引上の社会通念に照らして合理的な理由があると認められるときは、適用しない。」と定めています。したがって、放棄に合理的な理由があればＣは保証債務を免れず、本肢は正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "504",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "償還を受けることができなくなる限度において、その責任を免れる。",
+     "text_sha256": "f19dc766dda768eec1093a723ed1d2c77e55633b01ad324400c9927a433e7065",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "504",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、債権者が担保を喪失し、又は減少させたことについて取引上の社会通念に照らして合理的な理由があると認められるときは、適用しない。",
+     "text_sha256": "f19dc766dda768eec1093a723ed1d2c77e55633b01ad324400c9927a433e7065",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "保証人が「弁済をするについて正当な利益を有する者」にあたる点は解釈による。"
+   ],
+   "id": "exp-shiho-2025-minpo-q22-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
