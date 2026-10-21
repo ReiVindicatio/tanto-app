@@ -1,0 +1,242 @@
+{
+ "question_id": "shiho-2013-gyosei-q35",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-gyosei-q35-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：1号の差止めの請求は、処分に当たる行為に限られず、住民監査請求の対象となる財務会計上の行為一般について、それがされることが相当の確実さをもって予測される場合にもすることができる。",
+   "body": "誤りは「対象とする行為が処分に当たる場合に限り」の部分である。地方自治法242条の2第1項1号は「当該執行機関又は職員に対する当該行為の全部又は一部の差止めの請求」と定めるだけで、行為が処分であることを求めていない。ここでいう行為は、同法242条1項の住民監査請求の対象である「違法若しくは不当な公金の支出、財産の取得、管理若しくは処分、契約の締結若しくは履行若しくは債務その他の義務の負担」であり、同項は「当該行為がなされることが相当の確実さをもつて予測される場合を含む。」としている。処分であることを求めるのは、2号の「行政処分たる当該行為の取消し又は無効確認の請求」である。したがって、公金の支出が確実となった段階で、処分に当たるかどうかにかかわらず1号の差止めの訴えを提起でき、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "242_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該執行機関又は職員に対する当該行為の全部又は一部の差止めの請求",
+     "text_sha256": "fe0aae65b82be4d57a8b1d6156f608d270158f19e0cba11f147e6d8547706b4f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "242_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行政処分たる当該行為の取消し又は無効確認の請求",
+     "text_sha256": "fe0aae65b82be4d57a8b1d6156f608d270158f19e0cba11f147e6d8547706b4f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "242",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "違法若しくは不当な公金の支出、財産の取得、管理若しくは処分、契約の締結若しくは履行若しくは債務その他の義務の負担",
+     "text_sha256": "968438e9d7917b64f5121fb4e38c7290004f5e5f749d1993ed32cb7c2674df38",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "242",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該行為がなされることが相当の確実さをもつて予測される場合を含む。",
+     "text_sha256": "968438e9d7917b64f5121fb4e38c7290004f5e5f749d1993ed32cb7c2674df38",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2013-gyosei-q35-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-gyosei-q35-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：住民訴訟は自己の法律上の利益にかかわらない資格で提起する民衆訴訟であり、原告自身の事業が受ける損害を避けるための執行停止を申し立てることはできない。",
+   "body": "誤りは「Ｘの経営する事業が受ける重大な損害を避けるため」に執行停止を申し立てられるとする点である。住民訴訟は、行政事件訴訟法5条の民衆訴訟、すなわち「選挙人たる資格その他自己の法律上の利益にかかわらない資格で提起するもの」に当たる。2号の取消請求には、同法43条1項により「第九条及び第十条第一項の規定を除き、取消訴訟に関する規定を準用する」とされ（地方自治法242条の2第11項も同法43条の適用を定める）、執行停止を定める同法25条2項も準用の対象となる。しかし、住民訴訟は住民が地方公共団体の財務会計行為の是正を求めるものであり、執行停止で避けるべき損害も、原告である住民個人の事業上の損害を指すものではないと解されている。したがって、Ｘ自身の事業の損害を理由とする執行停止の申立てを適法とする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "選挙人たる資格その他自己の法律上の利益にかかわらない資格で提起するもの",
+     "text_sha256": "598cce9127590545f788f5963d71fc1a0c5be98a91a6ac082e3a7b46fbad4a1f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第九条及び第十条第一項の規定を除き、取消訴訟に関する規定を準用する",
+     "text_sha256": "0ab0c8232358568a136376ee895a1a886a997772296ac416c3c546c12fe9212c",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "行政事件訴訟法",
+     "article": "25",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "処分の取消しの訴えの提起があつた場合において、処分、処分の執行又は手続の続行により生ずる重大な損害を避けるため緊急の必要があるときは、裁判所は、申立てにより、決定をもつて、処分の効力、処分の執行又は手続の続行の全部又は一部の停止（以下「執行停止」という。）をすることができる。",
+     "text_sha256": "e34c7fb3e9a688c620b8989d059d09fcde52fab53ff01172d2952a9a092b6870",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%89%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "242_2",
+     "paragraphs": [
+      "11"
+     ],
+     "quote": "第一項の規定による訴訟については、行政事件訴訟法第四十三条の規定の適用があるものとする。",
+     "text_sha256": "fe0aae65b82be4d57a8b1d6156f608d270158f19e0cba11f147e6d8547706b4f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "住民訴訟での執行停止の要件となる損害が原告個人の損害を含まないとする点は解釈による",
+    "出題当時の地方自治法242条の2の項番号は、条文の本文で確認していない（現行法では行政事件訴訟法43条の適用を定めるのは11項）"
+   ],
+   "id": "exp-shiho-2013-gyosei-q35-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-gyosei-q35-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：3号の怠る事実は、公金の賦課・徴収や財産の管理を怠る事実（財務会計上のもの）に限られ、許可申請への応答の遅れはこれに当たらない。",
+   "body": "決め手は、3号の「怠る事実」の範囲である。地方自治法242条の2第1項3号は「当該執行機関又は職員に対する当該怠る事実の違法確認の請求」と定め、ここでいう怠る事実は、同法242条1項が「違法若しくは不当に公金の賦課若しくは徴収若しくは財産の管理を怠る事実（以下「怠る事実」という。）」と定義するものである。住民の許可申請に対するＡ市の応答の遅れは、公金の賦課・徴収や財産の管理を怠るものではなく、財務会計上の行為に関しないから、3号の対象にならない。したがって、Ｘはこの不作為について3号の住民訴訟を適法に提起することはできず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "242_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該執行機関又は職員に対する当該怠る事実の違法確認の請求",
+     "text_sha256": "fe0aae65b82be4d57a8b1d6156f608d270158f19e0cba11f147e6d8547706b4f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "242",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "違法若しくは不当に公金の賦課若しくは徴収若しくは財産の管理を怠る事実（以下「怠る事実」という。）",
+     "text_sha256": "968438e9d7917b64f5121fb4e38c7290004f5e5f749d1993ed32cb7c2674df38",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2013-gyosei-q35-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-gyosei-q35-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：4号本文の訴訟で損害賠償の請求を命ずる判決が確定すると、長は相手方に損害賠償金の支払を請求しなければならない（地方自治法242条の3第1項）。",
+   "body": "決め手は、地方自治法242条の3第1項である。同項は、4号本文の訴訟について「損害賠償又は不当利得返還の請求を命ずる判決が確定した場合においては、普通地方公共団体の長は、当該判決が確定した日から六十日以内の日を期限として、当該請求に係る損害賠償金又は不当利得の返還金の支払を請求しなければならない。」と定める。さらに同条2項は、期限までに支払われないときは「当該普通地方公共団体は、当該損害賠償又は不当利得返還の請求を目的とする訴訟を提起しなければならない。」とする。したがって、Ａ市の市長はＣに対して損害賠償金の支払を請求することを義務付けられ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "242_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "損害賠償又は不当利得返還の請求を命ずる判決が確定した場合においては、普通地方公共団体の長は、当該判決が確定した日から六十日以内の日を期限として、当該請求に係る損害賠償金又は不当利得の返還金の支払を請求しなければならない。",
+     "text_sha256": "e15dd2996f458b2f612f64c1bb49b65844f0be6ffb34b1f949a67fc948657306",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "242_3",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該普通地方公共団体は、当該損害賠償又は不当利得返還の請求を目的とする訴訟を提起しなければならない。",
+     "text_sha256": "e15dd2996f458b2f612f64c1bb49b65844f0be6ffb34b1f949a67fc948657306",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2013-gyosei-q35-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

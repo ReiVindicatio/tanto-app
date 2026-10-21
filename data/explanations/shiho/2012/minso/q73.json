@@ -1,0 +1,358 @@
+{
+ "question_id": "shiho-2012-minso-q73",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minso-q73-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。上告と異なり、控訴には控訴理由書の不提出を理由に控訴を却下する旨の規定が民事訴訟法にない。",
+   "body": "誤りのポイントは「決定で，控訴を却下しなければならない」の部分。上告については、315条1項が上告理由書の提出を義務づけ、316条1項2号が「前条第一項の規定に違反して上告理由書を提出せず」というときは原裁判所が「決定で、上告を却下しなければならない」と定める。これに対し、控訴の提起の方式を定める286条2項は控訴状の記載事項に控訴の理由を挙げておらず、民事訴訟法が控訴の却下を定めるのは、控訴が不適法で補正できない場合（287条1項・290条）や呼出費用の予納がない場合（291条1項）である。控訴理由書を出さないことを理由に控訴を却下する規定はないから、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "315",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "上告状に上告の理由の記載がないときは、上告人は、最高裁判所規則で定める期間内に、上告理由書を原裁判所に提出しなければならない。",
+     "text_sha256": "9726c8bbd6c174906e167441006b19c0787953c4f5fedd99402abfb70581a323",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "316",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条第一項の規定に違反して上告理由書を提出せず",
+     "text_sha256": "4ca3d1c18d9b5c26d56b6e7bfe2cb38ae21a960214b1274687e9f9d4fded181b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "316",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "決定で、上告を却下しなければならない。",
+     "text_sha256": "4ca3d1c18d9b5c26d56b6e7bfe2cb38ae21a960214b1274687e9f9d4fded181b",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "286",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第一審判決の表示及びその判決に対して控訴をする旨",
+     "text_sha256": "acc32c8aa9e06f60f1b2e366851b73f96a943af892962328f2bf87b94bba01a8",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "287",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "控訴が不適法でその不備を補正することができないことが明らかであるときは、第一審裁判所は、決定で、控訴を却下しなければならない。",
+     "text_sha256": "f39f16b6528f447958e9c3f4942daf1b19317d243fd63f1cf0c49e44887b6e95",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "290",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "控訴が不適法でその不備を補正することができないときは、控訴裁判所は、口頭弁論を経ないで、判決で、控訴を却下することができる。",
+     "text_sha256": "ebc6b8539e3a18b5c5a33aa4f3a50236be33e2ff36cbb76af341471d5c134603",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "291",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その予納がないときは、決定で、控訴を却下することができる。",
+     "text_sha256": "ca37e571a9fc5e17f510d5e8b56e33bcd75ce7846d1e7a6559c606a347ec6604",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "控訴理由書の提出期間を定める民事訴訟規則は e-Gov になく、本文を確認していない。本解説は民事訴訟法に控訴理由書の不提出を理由とする却下の規定がないことを根拠にしている",
+    "条文は取得日時点の現行法。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minso-q73-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minso-q73-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。一部についてだけ控訴しても、判決全体の確定が遮断され、全体が控訴審に移る（上訴不可分の原則）ので、残りの部分も確定しない。",
+   "body": "誤りのポイントは「その余の部分については，控訴期間の満了により，第一審判決が確定する」の部分。116条2項は「判決の確定は、前項の期間内にした控訴の提起」により「遮断される」と定めるが、一つの請求について一部だけを不服として控訴した場合でも、確定が遮断されて控訴審に移るのは判決の全体であると解されている（上訴不可分の原則）。そのため、控訴人は控訴審で不服の範囲を広げることができ、被控訴人も293条1項により「控訴権が消滅した後であっても、口頭弁論の終結に至るまで、附帯控訴をすることができる」。したがって、不服を申し立てていない200万円の部分も、控訴期間の満了によっては確定しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "116",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "判決の確定は、前項の期間内にした控訴の提起、同項の上告の提起又は同項の申立てにより、遮断される。",
+     "text_sha256": "2f4805e20cbe72aa5a66d2d569fcdf1844516479e5e09798a5c07bf467d93a6c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "293",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "控訴権が消滅した後であっても、口頭弁論の終結に至るまで、附帯控訴をすることができる。",
+     "text_sha256": "d25ec1bae5b0d874dba05ee9c9dfe73ece27f84491c7852470fe419bc2cbbb38",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "上訴不可分の原則（判決全体の確定遮断・移審）と、控訴人による不服の範囲の拡張は解釈による",
+    "条文は取得日時点の現行法。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minso-q73-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minso-q73-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。控訴審の弁論と判決は不服申立ての限度でされ（296条1項・304条）、職権調査事項はその例外とされている。",
+   "body": "296条1項は「口頭弁論は、当事者が第一審判決の変更を求める限度においてのみ、これをする。」と定め、304条は「第一審判決の取消し及び変更は、不服申立ての限度においてのみ、これをすることができる。」と定める。このように、控訴審の審判の対象は当事者の不服申立ての範囲に限られる。ただし、訴訟要件のように裁判所が職権で調査すべき事項は、不服申立ての有無にかかわらず控訴裁判所が調べることができると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "296",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "口頭弁論は、当事者が第一審判決の変更を求める限度においてのみ、これをする。",
+     "text_sha256": "a9e51ca0d115c0cbca14ac7e776c64f0be4e37e85f4bb0546792c132b4ab37ec",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "304",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第一審判決の取消し及び変更は、不服申立ての限度においてのみ、これをすることができる。",
+     "text_sha256": "29b4b8a3090373b8bd149310c4aa086e35c576ef29d96469fec5ec1714521f07",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "職権調査事項が不服申立ての範囲の例外となる点は解釈による",
+    "条文は取得日時点の現行法。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minso-q73-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minso-q73-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。控訴審は第一審の続きとして審理され（続審制）、第一審の口頭弁論終結前に生じた事由に関する攻撃防御方法も新たに提出できる。",
+   "body": "298条1項は「第一審においてした訴訟行為は、控訴審においてもその効力を有する。」と定め、297条は第一審の訴訟手続の規定を控訴審に準用するから、控訴審は第一審の資料を引き継いだうえで審理を続ける仕組み（続審制）とされている。準用される156条は「攻撃又は防御の方法は、訴訟の進行状況に応じ適切な時期に提出しなければならない。」と定めるだけで、控訴審で提出できるものを第一審の口頭弁論終結後に生じた事由に限る規定はない。したがって、第一審で提出できたはずの事由に関するものも、時機に後れたものとして却下されない限り、控訴審で提出できると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "298",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第一審においてした訴訟行為は、控訴審においてもその効力を有する。",
+     "text_sha256": "6d102f928b71684081cdb8b5647b1757df3cb1c15e5ea32add1989221ec5afcb",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "297",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前編第一章から第七章までの規定は、特別の定めがある場合を除き、控訴審の訴訟手続について準用する。",
+     "text_sha256": "557fbe81d3e44ebe70a4c51283a36f5dbc859e4189fcf81f09d413560cb124b9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "156",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "攻撃又は防御の方法は、訴訟の進行状況に応じ適切な時期に提出しなければならない。",
+     "text_sha256": "040b74b51401fe59a5135586fcd5cafbeeb0bee152db0a6edfb669a4eb020f48",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "続審制の理解と、時機に後れた攻撃防御方法の却下による制限は解釈による（157条の本文は表示していない）",
+    "条文は取得日時点の現行法。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minso-q73-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minso-q73-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。差戻しが原則として必要なのは訴え却下判決を取り消す場合だけで（307条）、それ以外の取消しでは控訴裁判所が自判できる。",
+   "body": "305条・306条は控訴裁判所が第一審判決を取り消す場合を定める。そのうえで307条は「訴えを不適法として却下した第一審判決を取り消す場合」に限って差戻しを求め、しかも「事件につき更に弁論をする必要がないときは、この限りでない」とする。308条1項も、更に弁論をする必要があるときは第一審裁判所に「差し戻すことができる」と定めるにとどまる。したがって、控訴裁判所は、第一審判決を取り消す場合でも、差し戻さずに自ら判決（自判）をすることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "305",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "控訴裁判所は、第一審判決を不当とするときは、これを取り消さなければならない。",
+     "text_sha256": "0eab307184b5095c73c19eef86b81d33a2fc5435ee03bd077df88df49c5fdae9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "306",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第一審の判決の手続が法律に違反したときは、控訴裁判所は、第一審判決を取り消さなければならない。",
+     "text_sha256": "8ede104e2b6ea06b36d3df55ef4bff51a20e65df026630801ea6c01bdd75fef5",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "307",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴えを不適法として却下した第一審判決を取り消す場合",
+     "text_sha256": "d961dd806f41f56a14a79091e054fa77687eb5c04a8f5d48bb47b11e0d98aef9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "307",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "事件につき更に弁論をする必要がないときは、この限りでない",
+     "text_sha256": "d961dd806f41f56a14a79091e054fa77687eb5c04a8f5d48bb47b11e0d98aef9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "308",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "差し戻すことができる",
+     "text_sha256": "9a4ed1d061a576690e2f26828fefd60d76ec8a62bc0fd43508db49a474f4a2be",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "条文は取得日時点の現行法。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minso-q73-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,248 @@
+{
+ "question_id": "shiho-2012-minso-q70",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minso-q70-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。一部認容・一部棄却の判決には当事者双方が控訴でき、双方の控訴期間が満了した時に確定する。",
+   "body": "116条1項は、判決は「控訴若しくは上告」の提起について定めた期間の満了前には「確定しないものとする」と定める。一部認容・一部棄却の判決では、原告は棄却部分について、被告は認容部分について、それぞれ不服があり控訴できる。控訴期間は285条により各当事者が判決の「送達を受けた日から二週間の不変期間」であるから、送達の日が異なれば期間の満了日も異なりうる。したがって、双方とも控訴せず、いずれの控訴期間も満了した時に第一審判決が確定すると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "116",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "期間の満了前には、確定しないものとする。",
+     "text_sha256": "2f4805e20cbe72aa5a66d2d569fcdf1844516479e5e09798a5c07bf467d93a6c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "285",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "送達を受けた日から二週間の不変期間内に提起しなければならない。",
+     "text_sha256": "f2c685031feb77848894d695feb6d0ccf4d4896807193dd32c936b131196468c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "双方の控訴期間の満了時に確定するという点は解釈による",
+    "285条は取得日時点の現行法（電子判決書の文言を含む）。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minso-q70-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minso-q70-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。控訴の提起で遮断されていた第一審判決の確定は、控訴棄却判決の確定によって生じる。",
+   "body": "116条2項により、判決の確定は期間内にした「控訴の提起」により「遮断される」。控訴棄却の判決は、第一審判決を取り消さずに維持するものであるから、控訴棄却の判決が確定して控訴審の手続が終わると、第一審判決を取り消す余地がなくなり、第一審判決もその時に確定すると解されている。したがって、控訴棄却判決の確定とともに第一審判決も確定するという本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "116",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "判決の確定は、前項の期間内にした控訴の提起、同項の上告の提起又は同項の申立てにより、遮断される。",
+     "text_sha256": "2f4805e20cbe72aa5a66d2d569fcdf1844516479e5e09798a5c07bf467d93a6c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "控訴棄却判決の確定と同時に第一審判決が確定するという点は解釈による（条文に直接の定めはない）",
+    "条文は取得日時点の現行法。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minso-q70-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minso-q70-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。控訴権は放棄でき（284条）、控訴権を有する全員が放棄すれば、控訴期間の満了を待たずに判決が確定する。",
+   "body": "284条は「控訴をする権利は、放棄することができる。」と定める。116条1項が控訴期間の満了前には判決が確定しないとするのは、その間に控訴される可能性があるからである。控訴権を有する全ての当事者が控訴権を放棄すれば、もはや誰も控訴できず確定を遮断する余地がないから、控訴期間の満了前でもその時点で第一審判決が確定すると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "284",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "控訴をする権利は、放棄することができる。",
+     "text_sha256": "3dc0061a93fd64349c7018cc53f45b36ddb33c08dfa830fbb634abc8dc7cbcb1",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "116",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "期間の満了前には、確定しないものとする。",
+     "text_sha256": "2f4805e20cbe72aa5a66d2d569fcdf1844516479e5e09798a5c07bf467d93a6c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "全員の控訴権放棄の時点で確定するという点は解釈による",
+    "条文は取得日時点の現行法。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minso-q70-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minso-q70-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。通常共同訴訟では共同訴訟人独立の原則（39条）により、一人の控訴は他の共同訴訟人についての判決の確定を遮断しない。",
+   "body": "誤りのポイントは「他の共同訴訟人についても判決の確定が遮断される」の部分。39条は「共同訴訟人の一人の訴訟行為」は「他の共同訴訟人に影響を及ぼさない。」と定める（共同訴訟人独立の原則）。控訴の提起も共同訴訟人の一人の訴訟行為であるから、通常共同訴訟では、控訴した共同訴訟人についてだけ確定が遮断され、控訴しなかった共同訴訟人についての判決は控訴期間の満了により確定すると解されている。これに対し、合一確定が必要な場合には40条1項により一人の訴訟行為が「全員の利益においてのみその効力を生ずる」ため、一人の控訴で全員について確定が遮断されると解されている。判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "39",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共同訴訟人の一人の訴訟行為、共同訴訟人の一人に対する相手方の訴訟行為及び共同訴訟人の一人について生じた事項は、他の共同訴訟人に影響を及ぼさない。",
+     "text_sha256": "ccf55fe5cf58e00bab9c99d303d2932ec7030afe5d3235552e147aee82265722",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "40",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "全員の利益においてのみその効力を生ずる。",
+     "text_sha256": "e30ac9c758c214d9d263d1c4c536115f7a710d36c1819a14c024a0dfb969c560",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "通常共同訴訟で共同訴訟人の一人が上訴しても、他の共同訴訟人の関係では判決の確定が遮断されない（移審しない）とする判例",
+     "searched": [
+      "courts.py search 通常共同訴訟 上訴",
+      "courts.py search 共同訴訟人 上訴 確定",
+      "courts.py search 共同訴訟 控訴 移審"
+     ]
+    }
+   ],
+   "notes": [
+    "控訴の提起が39条の「訴訟行為」に当たり、他の共同訴訟人の判決の確定を遮断しないという点、必要的共同訴訟では全員について遮断されるという点は解釈による",
+    "条文は取得日時点の現行法。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minso-q70-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minso-q70-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。上告審の終局判決には通常の不服申立ての方法がないため、言渡しとともに確定する。",
+   "body": "116条1項は、確定を妨げる期間として控訴・上告等の期間を挙げるが、上告については「第三百二十七条第一項（第三百八十条第二項において準用する場合を含む。）の上告を除く。」としている。上告審の終局判決に対しては更に控訴・上告をする方法がなく、高等裁判所が上告審としてした判決に対する327条1項の特別上告も、116条1項により確定を妨げるものから除かれている。したがって、上告審の終局判決は、その言渡しとともに確定すると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "116",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三百二十七条第一項（第三百八十条第二項において準用する場合を含む。）の上告を除く。",
+     "text_sha256": "2f4805e20cbe72aa5a66d2d569fcdf1844516479e5e09798a5c07bf467d93a6c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "327",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "高等裁判所が上告審としてした終局判決に対しては、その判決に憲法の解釈の誤りがあることその他憲法の違反があることを理由とするときに限り、最高裁判所に更に上告をすることができる。",
+     "text_sha256": "ff6ed8b6506ef880cfc9fe4f4099aac6ea8446b1cafdd85148615248c82b3b22",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "言渡しとともに確定するという点は解釈による（条文に直接の定めはない）",
+    "116条1項は取得日時点の現行法（381条の7などを含む）。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minso-q70-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

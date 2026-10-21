@@ -1,0 +1,266 @@
+{
+ "question_id": "shiho-2012-shoho-q53",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-shoho-q53-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。匿名組合員は「金銭その他の財産のみ」を出資の目的とでき（商法536条2項）、合資会社の有限責任社員の出資の目的も「金銭等に限る」（会社法576条1項6号）。",
+   "body": "匿名組合員について、商法536条2項は「匿名組合員は、金銭その他の財産のみをその出資の目的とすることができる」と定めています。合資会社の有限責任社員について、会社法576条1項6号は定款の記載事項として「社員の出資の目的（有限責任社員にあっては、金銭等に限る。）」を挙げています。どちらも労務や信用による出資は認められず、財産出資に限られるので、記述は正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "536",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "匿名組合員は、金銭その他の財産のみをその出資の目的とすることができる。",
+     "text_sha256": "3438fc217fd493d065ca6ff6215ccc11d50a87407ba17e3cefd6abd2ae5b791b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "576",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "社員の出資の目的（有限責任社員にあっては、金銭等に限る。）",
+     "text_sha256": "ff6d8df6757eee1a46d8e7f5da2f200e8145c188321040bbfb5f4dda3de7a7a0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "「労務や信用による出資は認められない」という言い換えは、条文の「金銭その他の財産のみ」「金銭等に限る」からの解釈による。"
+   ],
+   "id": "exp-shiho-2012-shoho-q53-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-shoho-q53-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。合資会社の有限責任社員は原則として業務を執行するが、匿名組合員は「営業者の業務を執行し…ることができない」（商法536条3項）。",
+   "body": "誤りは、匿名組合員も業務を執行できるとしている点です。合資会社の有限責任社員については、会社法590条1項が「社員は、定款に別段の定めがある場合を除き、持分会社の業務を執行する」と定めており、有限責任社員も業務を執行します。これに対し、匿名組合員については、商法536条3項が「匿名組合員は、営業者の業務を執行し、又は営業者を代表することができない」と定めています。両者を同じに扱っている記述は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "590",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "社員は、定款に別段の定めがある場合を除き、持分会社の業務を執行する。",
+     "text_sha256": "f421a450da42159f3e773a45cfe47ead7cfc7957fc03c818c7ae4c097f828894",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "536",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "匿名組合員は、営業者の業務を執行し、又は営業者を代表することができない。",
+     "text_sha256": "3438fc217fd493d065ca6ff6215ccc11d50a87407ba17e3cefd6abd2ae5b791b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2012-shoho-q53-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-shoho-q53-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。裁判所の許可を得て検査するのは匿名組合員（商法539条2項）であり、合資会社の有限責任社員については裁判所の許可を要件とする規定はない。",
+   "body": "匿名組合員については、商法539条2項が「重要な事由があるときは、いつでも、裁判所の許可を得て、営業者の業務及び財産の状況を検査することができる」と定めており、この部分は正しいです。しかし、合資会社の有限責任社員は、定款に別段の定めがない限り自ら業務を執行し（会社法590条1項）、業務を執行する社員を定款で定めた場合でも、会社法592条1項により「持分会社の業務を執行する権利を有しないときであっても、その業務及び財産の状況を調査することができる」とされています。有限責任社員の調査に裁判所の許可は求められていないので、両者を同じに扱っている記述は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "539",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "重要な事由があるときは、いつでも、裁判所の許可を得て、営業者の業務及び財産の状況を検査することができる",
+     "text_sha256": "d33d833734a78130dc57658d7271699313f08ceb007ffdda656551e6d7434b76",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "590",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "社員は、定款に別段の定めがある場合を除き、持分会社の業務を執行する。",
+     "text_sha256": "f421a450da42159f3e773a45cfe47ead7cfc7957fc03c818c7ae4c097f828894",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "592",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "持分会社の業務を執行する権利を有しないときであっても、その業務及び財産の状況を調査することができる",
+     "text_sha256": "7f448e56a9cc2ee54b03859c0ea115ee921ac135f0c0a95769e8e2c932922f94",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2012-shoho-q53-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-shoho-q53-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。損失填補後でなければ利益配当を請求できないのは匿名組合員（商法538条）であり、合資会社の有限責任社員には同じ制限の規定はない。",
+   "body": "匿名組合員については、商法538条が「出資が損失によって減少したときは、その損失をてん補した後でなければ、匿名組合員は、利益の配当を請求することができない」と定めており、この部分は正しいです。これに対し、合資会社の社員については、会社法621条1項が「社員は、持分会社に対し、利益の配当を請求することができる」と定めるだけで、出資が損失で減少した場合にその填補を先にさせる旨の定めはありません。合資会社の有限責任社員については、利益額を超える配当を受けたときに支払義務を負う仕組み（623条1項）で手当てされていると解されています。両者を同じに扱っている記述は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "538",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "出資が損失によって減少したときは、その損失をてん補した後でなければ、匿名組合員は、利益の配当を請求することができない。",
+     "text_sha256": "d661255c46878f19af9f317ebe2aa7e2aefea28cd4dfe0d476cc04f612748e51",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "621",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "社員は、持分会社に対し、利益の配当を請求することができる。",
+     "text_sha256": "83f5c9e8a188a90bfa79b461c2581d0f058d763ab1e46fbb1c136e59fd23b248",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "623",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該利益の配当を受けた有限責任社員は、当該持分会社に対し、連帯して、当該配当額に相当する金銭を支払う義務を負う",
+     "text_sha256": "4c7b48478c88710464849d26da05d14c3eb83a584c1c06845fd13f4e31f0f471",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "合資会社について538条に当たる規定がないこと、623条1項で手当てされているという位置づけは解釈による。"
+   ],
+   "id": "exp-shiho-2012-shoho-q53-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-shoho-q53-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。匿名組合員の出資は「営業者の財産に属する」（商法536条1項）。合資会社は法人なので（会社法3条）、有限責任社員の出資した財産は会社に属する。",
+   "body": "匿名組合員について、商法536条1項は「匿名組合員の出資は、営業者の財産に属する」と定めています。合資会社については、会社法3条が「会社は、法人とする」と定めており、合資会社は社員とは別の権利主体です。そのため、有限責任社員が出資した財産は、社員ではなく合資会社に属すると解されています。どちらも記述のとおりなので、正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "536",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "匿名組合員の出資は、営業者の財産に属する。",
+     "text_sha256": "3438fc217fd493d065ca6ff6215ccc11d50a87407ba17e3cefd6abd2ae5b791b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "会社は、法人とする。",
+     "text_sha256": "d614d036cdb12c03ed3a5d4f0def5cff31d382323a8d22af29781f8a2876ebbc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "合資会社の社員が出資した財産が会社に属することは、会社が法人であること（会社法3条）からの解釈による。"
+   ],
+   "id": "exp-shiho-2012-shoho-q53-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

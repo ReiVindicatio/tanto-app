@@ -1,0 +1,240 @@
+{
+ "question_id": "shiho-2012-shoho-q43",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-shoho-q43-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。取締役会設置会社でない会社の取締役が自己のために会社と取引をするときは、株主総会の承認を受けなければならず、代表取締役Ａの同意では足りない。",
+   "body": "誤りは「Ａの同意を受けなければならない」とする点である。会社法356条1項は「取締役は、次に掲げる場合には、株主総会において、当該取引につき重要な事実を開示し、その承認を受けなければならない」と定め、同項2号は取締役が自己又は第三者のために株式会社と取引をしようとするときを掲げる。本問の会社は取締役会設置会社でないから、Ｂの自己取引（直接取引）について承認をするのは株主総会であり、他の取締役であるＡの同意によって代えることはできない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "356",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役は、次に掲げる場合には、株主総会において、当該取引につき重要な事実を開示し、その承認を受けなければならない",
+     "text_sha256": "1f519283022020dbb09f21e69d5e5dfc33a50acae50d33e817fb256ed4327990",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2012-shoho-q43-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-shoho-q43-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。取締役会設置会社でない会社は公開会社でないから、定款によって取締役の任期を選任後10年以内に終了する事業年度の最終のものに関する定時株主総会の終結の時まで伸長でき、5年とすることもできる。",
+   "body": "会社法327条1項は「次に掲げる株式会社は、取締役会を置かなければならない」と定め、同項1号に公開会社を掲げる。したがって取締役会設置会社でない本問の会社は公開会社でない。会社法332条2項は、公開会社でない株式会社（監査等委員会設置会社及び指名委員会等設置会社を除く。）において、定款によって「同項の任期を選任後十年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時まで伸長することを妨げない」と定める。5年はこの範囲内であるから、本肢の定款の定めは許される。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "327",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる株式会社は、取締役会を置かなければならない",
+     "text_sha256": "5a773ce772b81078bdf955298b8ce400edd7c0d886c414d3e6afc8c64f2bdd73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "332",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "同項の任期を選任後十年以内に終了する事業年度のうち最終のものに関する定時株主総会の終結の時まで伸長することを妨げない",
+     "text_sha256": "5a7c37b070116a70dc4056ad795ebb6f8e8f4c1d9da3833955c08a37d98ed437",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "問題文は監査等委員会設置会社・指名委員会等設置会社でないことを明示していないが、取締役会を置かない会社はこれらに当たり得ない（会社法327条1項3号・4号）。"
+   ],
+   "id": "exp-shiho-2012-shoho-q43-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-shoho-q43-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。取締役が2人以上ある取締役会非設置会社では、株主総会の招集事項は取締役の過半数で決定し、その決定を各取締役に委任することもできないから、Ａが単独で決定することはできない。",
+   "body": "誤りは「Ａは，単独で」決定できるとする点である。会社法298条1項は、取締役は「株主総会を招集する場合には、次に掲げる事項を定めなければならない」とし、同項1号に株主総会の日時及び場所を掲げる。会社法348条2項は「取締役が二人以上ある場合には、株式会社の業務は、定款に別段の定めがある場合を除き、取締役の過半数をもって決定する」と定め、同条3項は、この場合に「取締役は、次に掲げる事項についての決定を各取締役に委任することができない」とし、同項3号に298条1項各号に掲げる事項を挙げる。したがって、取締役がＡ・Ｂの2名である本問では、招集事項はＡとＢの過半数（2名の一致）で決定する必要があり、代表取締役であるＡでも単独では決定できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "298",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会を招集する場合には、次に掲げる事項を定めなければならない",
+     "text_sha256": "6cf29e7480618de198fa9d58594d5a4ce9fc66387a9a752e3953d185c6c837c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "348",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "取締役が二人以上ある場合には、株式会社の業務は、定款に別段の定めがある場合を除き、取締役の過半数をもって決定する",
+     "text_sha256": "3b3c26bace88164cce359bb7d71cb6a1f22dc5da39e99ef7432db7b25508c75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "348",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "取締役は、次に掲げる事項についての決定を各取締役に委任することができない",
+     "text_sha256": "3b3c26bace88164cce359bb7d71cb6a1f22dc5da39e99ef7432db7b25508c75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2012-shoho-q43-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-shoho-q43-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。会社法350条により、会社は代表取締役がその職務を行うについて第三者に加えた損害を賠償する責任を負う。",
+   "body": "会社法350条は「株式会社は、代表取締役その他の代表者がその職務を行うについて第三者に加えた損害を賠償する責任を負う」と定める。この規定は取締役会設置会社であるかどうかを問わず適用される。Ａは本問の会社の代表取締役であるから、Ａがその職務を行うについて第三者に損害を加えたときは、会社がその損害を賠償する責任を負う。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "350",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、代表取締役その他の代表者がその職務を行うについて第三者に加えた損害を賠償する責任を負う",
+     "text_sha256": "0e30eba9394905219000a90616e9248bbcd198efe752fc273913090d5d42571e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2012-shoho-q43-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-shoho-q43-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。代表取締役Ａが辞任して代表取締役が欠けたときは、Ａは新たな代表取締役が就任するまでなお代表取締役としての権利義務を有するから、Ｂが当然に代表権を持つわけではない。",
+   "body": "誤りは「Ｂは，当然に会社を代表する権限を有する」とする点である。会社法349条1項は「取締役は、株式会社を代表する。ただし、他に代表取締役その他株式会社を代表する者を定めた場合は、この限りでない」と定め、同条3項により、取締役会設置会社でない会社は定款の定めに基づく株主総会の決議によって取締役の中から代表取締役を定めることができる。本問では定款に基づきＡが代表取締役に選定されているから、Ｂは代表権を有しない。Ａが代表取締役を辞任しても、会社法351条1項により「辞任により退任した代表取締役は、新たに選定された代表取締役（次項の一時代表取締役の職務を行うべき者を含む。）が就任するまで、なお代表取締役としての権利義務を有する」。また、定款が代表取締役を株主総会の決議で定めるとしている以上、新たな選定がない限り同条1項ただし書の状態は解消されず、Ｂが当然に代表権を回復するものではないと解されている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "349",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取締役は、株式会社を代表する。ただし、他に代表取締役その他株式会社を代表する者を定めた場合は、この限りでない",
+     "text_sha256": "2605a68d9e1410b45862dc660dce5371ff855940f39317abf1b163d007f5445c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "349",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "株式会社（取締役会設置会社を除く。）は、定款、定款の定めに基づく取締役の互選又は株主総会の決議によって、取締役の中から代表取締役を定めることができる",
+     "text_sha256": "2605a68d9e1410b45862dc660dce5371ff855940f39317abf1b163d007f5445c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "351",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "辞任により退任した代表取締役は、新たに選定された代表取締役（次項の一時代表取締役の職務を行うべき者を含む。）が就任するまで、なお代表取締役としての権利義務を有する",
+     "text_sha256": "a2bf5ba7edfa780380c7a247f71723e7aeaf5f6890c4d31fb1012ba2800b8031",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "解釈による（定款で代表取締役を株主総会の決議で定める旨を定めた会社で、代表取締役が欠けた場合に他の取締役の代表権が当然に復活しないとする点）。"
+   ],
+   "id": "exp-shiho-2012-shoho-q43-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

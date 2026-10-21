@@ -1,0 +1,213 @@
+{
+ "question_id": "shiho-2013-gyosei-q28",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-gyosei-q28-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。本件契約は交付の事務を私人に委託する契約にとどまり、Ａ市長の交付の権限をＢ社に委任したことにはならないと解されている。",
+   "body": "誤りは「交付する権限の一部をＢ社に委任したことになる」とする点である。住民基本台帳法12条1項は、住民基本台帳に記録されている者は「当該市町村の市町村長に対し」住民票の写しの「交付を請求することができる」と定めており、交付の権限は市町村長にある。地方自治法153条は、長が権限に属する事務の一部を委任できる相手として「その補助機関である職員」（1項）や「その管理に属する行政庁」（2項）を定めており、私企業であるＢ社はこれに当たらない。権限の委任は法律の根拠を要し、権限の所在そのものを移すものであるのに対し、本件契約のような私法上の委託契約は、権限を市長に残したまま交付に関する事務の処理を私人に任せるにとどまると解されている。したがって、本件契約によって交付の権限がＢ社に委任されたことにはならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "住民基本台帳法",
+     "article": "12",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該市町村の市町村長に対し",
+     "text_sha256": "d3ce708eb5b578541b0965fc044ad743553bc00ab5af9b82c901b15a61fa4467",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%9B%9B%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "住民基本台帳法",
+     "article": "12",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "交付を請求することができる",
+     "text_sha256": "d3ce708eb5b578541b0965fc044ad743553bc00ab5af9b82c901b15a61fa4467",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%9B%9B%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "153",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その補助機関である職員",
+     "text_sha256": "eed3cfc68626fd6485a699d19c23c91c8d0bc93281e654390eb7c96f4354d845",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "153",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その管理に属する行政庁",
+     "text_sha256": "eed3cfc68626fd6485a699d19c23c91c8d0bc93281e654390eb7c96f4354d845",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "権限の委任と私法上の事務の委託の区別は解釈による。"
+   ],
+   "id": "exp-shiho-2013-gyosei-q28-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-gyosei-q28-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。本件契約は当事者の合意による契約であり、本件条例の求める保護措置として、Ａ市の職員の検査にＢ社が協力する旨を契約で定めることができる。",
+   "body": "ポイントは、法令の根拠がなくても契約で相手方に検査への協力を約束させることができるかどうかである。本件契約はＡ市とＢ社の合意に基づく契約であり、民法521条2項は「契約の当事者は、法令の制限内において、契約の内容を自由に決定することができる」と定める。本件条例も、委託するときは「当該契約において，個人情報の適切な取扱いについて受託者が講ずべき措置を明らかにしなければならない」としており、契約で受託者の義務を定めることを予定している。検査への協力義務は、Ｂ社が合意によって引き受けるものであり、行政が一方的に義務を課すものではないから、契約の条項として定めることができると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "521",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "契約の当事者は、法令の制限内において、契約の内容を自由に決定することができる",
+     "text_sha256": "b80b31d8f17a455e2b867031645fb853ca344b113ba52b1c9640f84423415e44",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "本件条例の該当条項の内容は問題文のリード文による。",
+    "契約による検査協力義務の設定が許されるとするのは解釈による。"
+   ],
+   "id": "exp-shiho-2013-gyosei-q28-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-gyosei-q28-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。条例で刑罰を定められるのは「条例に違反した者」に対してであり、契約の条項に違反したことを処罰の対象とする定めは置けないと解されている。",
+   "body": "誤りは、契約の条項に違反した場合に刑罰を科す旨を条例中に定めることができるとする点である。地方自治法14条3項は、条例中に「条例に違反した者に対し」刑罰を科する旨の規定を設けることができると定めており、処罰の対象となる行為は条例自身が定める義務に違反する行為である。本肢では、何が処罰される行為かが条例ではなく、Ａ市と受託者との契約の条項によって決まることになる。日本国憲法31条は「法律の定める手続によらなければ」刑罰を科せられないと定めており、処罰の対象となる行為を当事者の合意で定まる契約の内容に委ねることは、この趣旨（罪刑法定主義）に反すると解されている。したがって、本肢のような定めは条例中に置くことができない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "14",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "条例に違反した者に対し",
+     "text_sha256": "93483fb29ff14b1566cf416d506a3a169a98bcd03c233ce8efe1905100a767f7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "31",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律の定める手続によらなければ",
+     "text_sha256": "fa09716f55f5abba59506089f9884d1566950024910c14848712f1cb9b11aa17",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "契約条項違反を条例で処罰できないとするのは解釈による。",
+    "地方自治法14条3項の刑の種類は現行法では「拘禁刑」を含む。出題当時の文言は改正前のもので、改正前の内容は条文の本文で確認していない（本肢の結論には影響しない）。"
+   ],
+   "id": "exp-shiho-2013-gyosei-q28-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-gyosei-q28-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。普通地方公共団体は、義務を課す定めを条例で置くことができ、受託者に対する是正命令の根拠を本件条例中に定めることができる。",
+   "body": "ポイントは、是正命令という行政処分の根拠を条例で定めることができるかどうかである。地方自治法14条1項は、普通地方公共団体は「法令に違反しない限りにおいて」その事務に関し条例を制定することができると定める。同条2項は「義務を課し、又は権利を制限するには、法令に特別の定めがある場合を除くほか、条例によらなければならない」と定めており、是正命令のように相手方に義務を課す行政処分は、条例に根拠を置けば行うことができる。したがって、Ａ市は、受託者が保護措置を適切に講じていない場合にＡ市長が是正命令をなし得る旨を本件条例中に定めることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "14",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法令に違反しない限りにおいて",
+     "text_sha256": "93483fb29ff14b1566cf416d506a3a169a98bcd03c233ce8efe1905100a767f7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "地方自治法",
+     "article": "14",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "義務を課し、又は権利を制限するには、法令に特別の定めがある場合を除くほか、条例によらなければならない",
+     "text_sha256": "93483fb29ff14b1566cf416d506a3a169a98bcd03c233ce8efe1905100a767f7",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AD%E5%8D%81%E4%B8%83%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "受託者に対する是正命令が法令に違反しないことは、肢の前提として扱った（解釈による）。"
+   ],
+   "id": "exp-shiho-2013-gyosei-q28-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
