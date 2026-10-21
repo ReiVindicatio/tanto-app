@@ -87,6 +87,14 @@ def dedup_key_text(t: str) -> str:
     return re.sub(r"[\s、，。．,.]", "", unicodedata.normalize("NFKC", t))
 
 
+ANSWER_SLOTS = re.compile(r"[（(]解答欄は[^）)]*[）)]")  # 「（解答欄は、アからオの順に［No.32］から［No.36］）」。試験ごとに番号が違う（T042）
+
+
+def dedup_context(q: dict) -> str:
+    """前提文が要る肢を比べるときのリード文＋前提文（解答欄の番号は除く）"""
+    return dedup_key_text(ANSWER_SLOTS.sub("", q["stem"]) + "".join(c["text"] for c in q["context"]))
+
+
 def dedup(docs: list[dict]) -> tuple[dict[str, str], list[str]]:
     """名寄せ：出典の肢 ID → カード ID（カードの代表でない肢だけ）と、○×が食い違ってまとめなかった組の一覧。
     各肢に card（代表の ID。自分が代表なら付けない）と same_as（まとめた他の出典）を書き込む"""
@@ -97,7 +105,7 @@ def dedup(docs: list[dict]) -> tuple[dict[str, str], list[str]]:
             if not st["truth_at_exam"] or "review_flag" in st:
                 continue
             q = qs[st["question_id"]]
-            ctx = dedup_key_text(q["stem"] + "".join(c["text"] for c in q["context"])) if st["requires_context"] else ""
+            ctx = dedup_context(q) if st["requires_context"] else ""
             groups.setdefault((doc["subject"], dedup_key_text(st["text"]), ctx), []).append((doc, q, st))
     aliases, conflicts = {}, []
     for members in groups.values():
