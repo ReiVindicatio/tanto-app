@@ -1,0 +1,274 @@
+{
+ "question_id": "shiho-2022-minpo-q03",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q03-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：意思表示は相手方に「到達した時」に効力を生じ、相手方が了知するまでを要しない。",
+   "body": "決め手は「了知するまでは」の部分である。民法97条1項は「意思表示は、その通知が相手方に到達した時からその効力を生ずる。」と定めており、効力発生の時期は到達時であって、相手方が内容を了知した時ではない。到達とは、相手方が了知できる状態に置かれること（相手方の支配圏内に入ること）をいい、現実に了知したことまでは要しないと解されている。同条2項も、相手方が正当な理由なく到達を妨げたときは「通常到達すべきであった時に到達したものとみなす」として、相手方の了知にかからせない立場をとっている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "97",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "意思表示は、その通知が相手方に到達した時からその効力を生ずる。",
+     "text_sha256": "d29bdd41ac5f5500bebb9725f87e52d68fc301915306af0ea5719792f455ee54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "97",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "通常到達すべきであった時に到達したものとみなす",
+     "text_sha256": "d29bdd41ac5f5500bebb9725f87e52d68fc301915306af0ea5719792f455ee54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "「到達」の意義（了知を要しない）は解釈による。"
+   ],
+   "id": "exp-shiho-2022-minpo-q03-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q03-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：法定代理人が期間内に確答を発しないときは、追認したものとみなされる（取り消したものとはみなされない）。",
+   "body": "決め手は「取り消したものとみなされる」の部分である。民法20条2項は、制限行為能力者が行為能力者とならない間に、相手方が「その法定代理人、保佐人又は補助人に対し、その権限内の行為について前項に規定する催告をした場合において、これらの者が同項の期間内に確答を発しないときも、同項後段と同様とする。」と定める。そして同条1項後段は「その者がその期間内に確答を発しないときは、その行為を追認したものとみなす。」としている。したがって、未成年者Ａの法定代理人Ｃが期間内に確答を発しないときは、Ｃはその契約を追認したものとみなされる。取り消したものとみなされるのは、特別の方式を要する行為について方式を具備した旨の通知を発しない場合（同条3項）や、被保佐人等に対して催告した場合（同条4項）であり、本肢の場面ではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その者がその期間内に確答を発しないときは、その行為を追認したものとみなす。",
+     "text_sha256": "17820f6804d9e0c7a8dd660161ca60f6721ea4a868df39acb859edc8fc3266c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "20",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その法定代理人、保佐人又は補助人に対し、その権限内の行為について前項に規定する催告をした場合において、これらの者が同項の期間内に確答を発しないときも、同項後段と同様とする。",
+     "text_sha256": "17820f6804d9e0c7a8dd660161ca60f6721ea4a868df39acb859edc8fc3266c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "20",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "特別の方式を要する行為については、前二項の期間内にその方式を具備した旨の通知を発しないときは、その行為を取り消したものとみなす。",
+     "text_sha256": "17820f6804d9e0c7a8dd660161ca60f6721ea4a868df39acb859edc8fc3266c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "20",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "その被保佐人又は被補助人がその期間内にその追認を得た旨の通知を発しないときは、その行為を取り消したものとみなす。",
+     "text_sha256": "17820f6804d9e0c7a8dd660161ca60f6721ea4a868df39acb859edc8fc3266c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q03-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q03-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：心裡留保による無効は「善意の第三者」に対抗できず、第三者に無過失は求められていない。",
+   "body": "決め手は、民法93条2項が第三者に無過失を要求していない点である。同条2項は「前項ただし書の規定による意思表示の無効は、善意の第三者に対抗することができない。」と定め、保護される第三者を善意であることだけで限定している。これに対し、錯誤（95条4項）や詐欺（96条3項）による取消しは「善意でかつ過失がない第三者に対抗することができない」とされ、無過失まで要求されている。この対比からも、心裡留保の場面では、過失があっても善意の第三者には無効を対抗できない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "93",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項ただし書の規定による意思表示の無効は、善意の第三者に対抗することができない。",
+     "text_sha256": "b18c60b8301086ec35f286368118229b4264524f293c63c83306083c24be762b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "95",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "善意でかつ過失がない第三者に対抗することができない。",
+     "text_sha256": "a574178ace21adfb3a580ccce7d7b1d82a142c6d5dec52af686791911776a4b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "善意でかつ過失がない第三者に対抗することができない。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q03-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q03-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：表意者に重大な過失があっても、相手方が同一の錯誤に陥っていたときは取り消すことができる。",
+   "body": "決め手は「取り消すことができない」の部分である。民法95条3項は「錯誤が表意者の重大な過失によるものであった場合には、次に掲げる場合を除き、第一項の規定による意思表示の取消しをすることができない。」と定め、その除外事由の一つとして同項2号で「相手方が表意者と同一の錯誤に陥っていたとき。」を挙げている。つまり、相手方が表意者と同一の錯誤に陥っていた場合には、表意者に重大な過失があっても、重過失による取消しの制限は働かない。したがって、本肢の場合は取り消すことができ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "95",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "錯誤が表意者の重大な過失によるものであった場合には、次に掲げる場合を除き、第一項の規定による意思表示の取消しをすることができない。",
+     "text_sha256": "a574178ace21adfb3a580ccce7d7b1d82a142c6d5dec52af686791911776a4b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "95",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "相手方が表意者と同一の錯誤に陥っていたとき。",
+     "text_sha256": "a574178ace21adfb3a580ccce7d7b1d82a142c6d5dec52af686791911776a4b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q03-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2022-minpo-q03-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：第三者による強迫の場合は、相手方の善意・無過失にかかわらず取り消すことができる。",
+   "body": "決め手は、第三者の詐欺と第三者の強迫の扱いの違いである。民法96条1項は「詐欺又は強迫による意思表示は、取り消すことができる。」と定める。そのうえで同条2項は、第三者が「詐欺」を行った場合に限って「相手方がその事実を知り、又は知ることができたときに限り、その意思表示を取り消すことができる。」と取消しを制限しており、第三者による強迫についてはこのような制限を置いていない。したがって、第三者が強迫を行った場合には、相手方がその事実を知ることができなかったとしても、同条1項により取り消すことができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐欺又は強迫による意思表示は、取り消すことができる。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "相手方がその事実を知り、又は知ることができたときに限り、その意思表示を取り消すことができる。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2022-minpo-q03-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
