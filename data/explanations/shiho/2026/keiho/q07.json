@@ -1,0 +1,317 @@
+{
+ "question_id": "shiho-2026-keiho-q07",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-keiho-q07-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例は、1個の住居侵入と複数の殺人がそれぞれ牽連犯の関係にあるときは全体を一罪として処断するとしており、Ｙに対する殺人罪を併合罪とする点が誤り。",
+   "body": "誤りは「これとＹに対する殺人罪とは併合罪となる」という部分である。54条1項は「犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。」と定める（牽連犯）。住居侵入（130条）は、Ｘの殺害の手段であると同時に、同じ住居内で行われたＹの殺害の手段でもあるとみられる。最高裁昭和29年5月27日決定は、一個の住居侵入行為と三個の殺人行為とがそれぞれ牽連犯の関係にある場合には、54条1項後段等を適用し一罪としてその最も重い刑に従い処断すべきものとした。したがって、本肢でも住居侵入罪がＸ・Ｙに対する各殺人罪をつなぎ、全体が科刑上一罪となると解されるので、Ｙに対する殺人罪を併合罪とする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "130",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正当な理由がないのに、人の住居若しくは人の看守する邸宅、建造物若しくは艦船に侵入し",
+     "text_sha256": "032fa6eaacc129ae4daf39c3f2400afa6523671819f49171677c976b8fe3e355",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "1個の住居侵入と3個の殺人の罪数（かすがい現象）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1954-05-27",
+     "case_number": "昭和29(あ)543",
+     "holding": "一個の住居侵入行為と三個の殺人行為とがそれぞれ牽連犯の関係にある場合には、刑法54条1項後段、10条を適用し一罪としてその最も重い刑に従い処断すべきである。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56927/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "Ｙの殺害が住居侵入と牽連関係に立つとする点は、確認した判例の裁判要旨を本肢の事案にあてはめた解釈による"
+   ],
+   "id": "exp-shiho-2026-keiho-q07-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-keiho-q07-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判例は、常習賭博罪における数個の賭博行為は包括して一罪を構成するとしている。",
+   "body": "ポイントは、常習として繰り返された複数の賭博行為の罪数である。186条1項は「常習として賭博をした者は、三年以下の拘禁刑に処する。」と定め、常習性を構成要件要素としている。常習犯は、性質上、同種の行為の反復を予定した犯罪類型であると解されている。最高裁昭和26年4月10日判決は、常習賭博罪における数個の賭博行為は包括して単純な一罪を構成するとした。したがって、約3か月の間に10回にわたり常習として賭博をした甲には包括して1個の常習賭博罪が成立し、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "186",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "常習として賭博をした者は、三年以下の拘禁刑に処する。",
+     "text_sha256": "388fd8df194b9f5059f5123e4b948ee5e729a2528efec9cef9cdb10e36530dcc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "常習賭博罪における数個の賭博行為の罪数",
+     "court": "最高裁判所第三小法廷",
+     "date": "1951-04-10",
+     "case_number": "昭和25(れ)1453",
+     "holding": "常習賭博罪における数個の賭博行為は、包括して単純な一罪を構成する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55566/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "常習犯が行為の反復を予定した犯罪類型であるという点は解釈による"
+   ],
+   "id": "exp-shiho-2026-keiho-q07-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-keiho-q07-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：死体の所在する家屋に放火して死体とともに焼損させる行為は1個の行為であり、放火罪と死体損壊罪は観念的競合になると解されている。",
+   "body": "ポイントは、家屋への放火と死体の損壊が「一個の行為」といえるかである。190条は「死体、遺骨、遺髪又は棺に納めてある物を損壊し」た者を処罰しており、死体を焼くことは死体の損壊に当たる。本肢では、家屋に放火して焼損させる行為がそのまま死体を焼く行為でもあり、社会的にみて1個の行為と評価できる。54条1項は「一個の行為が二個以上の罪名に触れ」るときは「その最も重い刑により処断する」と定める（観念的競合）。判例も、罪証隠滅のため死体のある家屋に放火した場合について、放火罪と死体損壊罪の観念的競合とする立場をとると解されている（判例あり（要確認））。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "190",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "死体、遺骨、遺髪又は棺に納めてある物を損壊し",
+     "text_sha256": "6bcf6d6dc4b85c6e8e9cfb1b3faf6e5544b2bab119dd3d0f84779d1f8dc924ff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その最も重い刑により処断する",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "死体の所在する家屋に放火して死体とともに焼損させた場合に、放火罪と死体損壊罪を観念的競合とした判例",
+     "searched": [
+      "courts.py search 死体損壊 放火 観念的競合",
+      "courts.py search 死体損壊 放火 --from 昭和22 --to 昭和50",
+      "大審院の判決であれば（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "観念的競合とする判例の立場は解釈による。最高裁のデータベースでは該当する判決を確認できなかった"
+   ],
+   "id": "exp-shiho-2026-keiho-q07-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-keiho-q07-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：判例は、傷害の手段として監禁し傷害を加えた場合でも、監禁罪と傷害罪は牽連犯にならないとしている（併合罪）。",
+   "body": "誤りは「これらは牽連犯となる」という部分である。牽連犯（54条1項後段）は「犯罪の手段若しくは結果である行為が他の罪名に触れるとき」に成立するが、判例・通説は、罪質上通常手段と結果の関係にある場合に限ると解している。監禁（220条）は、通常、傷害（204条）の手段として行われる関係にあるとはいえない。最高裁昭和43年9月17日決定は、傷害の手段として監禁し傷害を加えた場合でも、両者は牽連犯を構成しないとした。したがって、当初から傷害の目的があっても監禁罪と傷害罪は併合罪（45条）となり、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるとき",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "220",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法に人を逮捕し、又は監禁した者は、三月以上七年以下の拘禁刑に処する。",
+     "text_sha256": "d8ef399d30f380f6cab88d03eb7df7918dcbb43ebd2d82339b4ecf5563b90cd1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "204",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の身体を傷害した者は、十五年以下の拘禁刑又は五十万円以下の罰金に処する。",
+     "text_sha256": "6ede21287a797c6f241c77f9e36de03258b58392279dd9ec60ceafb09f7b2af4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "傷害の手段としての監禁と牽連犯の成否",
+     "court": "最高裁判所第三小法廷",
+     "date": "1968-09-17",
+     "case_number": "昭和42(あ)2551",
+     "holding": "傷害の手段として監禁し傷害を加えた場合でも、両者は牽連犯を構成しない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50851/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "牽連犯は罪質上通常手段と結果の関係にある場合に限るという基準は解釈による。併合罪となる点は、判例の参照法条に刑法45条が挙がっていることによる"
+   ],
+   "id": "exp-shiho-2026-keiho-q07-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-keiho-q07-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判例は、熊と誤認して誤射し重傷を負わせた業務上過失傷害罪と、その後殺意をもって射殺した殺人罪とは併合罪になるとしている。",
+   "body": "ポイントは、過失による誤射と、その後の殺意による射撃とが別個の行為と評価されるかである。211条は「業務上必要な注意を怠り、よって人を死傷させた者」を処罰し、199条は「人を殺した者」を処罰する。本肢の誤射と、誤射に気付いた後に新たな決意に基づいて行われた射撃とは、意思決定も行為も別のものである。最高裁昭和53年3月22日決定は、人を熊と誤認して猟銃を発射し瀕死の重傷を負わせた業務上過失傷害の罪と、誤射に気がつき殺意をいだいてさらに猟銃を発射し胸部等に命中させて即死させた殺人の罪とは、併合罪の関係にあるとした。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "211",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "業務上必要な注意を怠り、よって人を死傷させた者",
+     "text_sha256": "2eac2464c840ad0caed297f7baccc92321beb960df7d6e1b87958811f8d8155a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "熊撃ち事件（業務上過失傷害罪と殺人罪の罪数）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1978-03-22",
+     "case_number": "昭和50(あ)1339",
+     "holding": "人を熊と誤認して猟銃を発射し瀕死の重傷を負わせた業務上過失傷害の罪と、誤射に気がつき殺意をいだいてさらに猟銃を発射し即死させた殺人の罪とは、併合罪の関係にある。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51101/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2026-keiho-q07-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

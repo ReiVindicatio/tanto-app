@@ -1,0 +1,252 @@
+{
+ "question_id": "shiho-2026-minpo-q26",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q26-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。民法の定型約款の規定は、取引の相手方が事業者かどうかで適用を分けていない。",
+   "body": "誤りは「事業者間の取引には適用されない」の部分。548条の2第1項は、定型取引を「ある特定の者が不特定多数の者を相手方として行う取引であって、その内容の全部又は一部が画一的であることがその双方にとって合理的なものをいう」と定めており、相手方が消費者であることを要件としていない。したがって、事業者間の取引であっても、この要件を満たせば定型取引に当たり、定型約款の規定が適用されると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "548_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ある特定の者が不特定多数の者を相手方として行う取引であって、その内容の全部又は一部が画一的であることがその双方にとって合理的なものをいう",
+     "text_sha256": "0f2d08658bcafa72f4fc362e98b06bd193b1de7170dfdce1e648405e2b841468",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "事業者間取引にも適用されうるとする点は、条文の文言からの解釈による"
+   ],
+   "id": "exp-shiho-2026-minpo-q26-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q26-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。定型約款を契約の内容とする旨の合意をしたときは、約款を示していなくても個別の条項について合意をしたものとみなされる（548条の2第1項1号）。",
+   "body": "ポイントは、みなし合意に約款の事前の提示が要件とされていないこと。548条の2第1項は、定型取引合意をした者は、「定型約款を契約の内容とする旨の合意をしたとき」には、定型約款「の個別の条項についても合意をしたものとみなす」と定めている（同項1号）。約款の内容を示すことは548条の3第1項の表示義務の問題であり、同条2項により、定型約款準備者が定型取引合意の前に相手方からの表示の請求を拒んだときに限り、548条の2の規定は適用されない。本肢ではＡの請求をＢが拒んだという事情はないので、ＢがＡに約款を示していなくても、甲の定型約款の個別の条項について合意をしたものとみなされる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "548_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "定型約款を契約の内容とする旨の合意をしたとき。",
+     "text_sha256": "0f2d08658bcafa72f4fc362e98b06bd193b1de7170dfdce1e648405e2b841468",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "548_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "の個別の条項についても合意をしたものとみなす",
+     "text_sha256": "0f2d08658bcafa72f4fc362e98b06bd193b1de7170dfdce1e648405e2b841468",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "548_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "定型約款準備者は、定型取引合意の前又は定型取引合意の後相当の期間内に相手方から請求があった場合には、遅滞なく、相当な方法でその定型約款の内容を示さなければならない。",
+     "text_sha256": "0c2f82da626695951a07519205153d53ac18d2ffe1cacfe301588725f0c01903",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "548_3",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "定型約款準備者が定型取引合意の前において前項の請求を拒んだときは、前条の規定は、適用しない。",
+     "text_sha256": "0c2f82da626695951a07519205153d53ac18d2ffe1cacfe301588725f0c01903",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q26-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q26-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。定型約款の変更が相手方の一般の利益に適合するときは、個別の合意なく契約の内容を変更できる（548条の4第1項1号）。",
+   "body": "548条の4第1項は、定型約款準備者は、所定の場合には「定型約款の変更をすることにより、変更後の定型約款の条項について合意があったものとみなし、個別に相手方と合意をすることなく契約の内容を変更することができる」と定め、その場合の一つとして「定型約款の変更が、相手方の一般の利益に適合するとき。」を挙げている（同項1号）。本肢はこの規定のとおりである。なお、変更をするときは、同条2項により効力発生時期を定めて周知しなければならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "548_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "定型約款の変更をすることにより、変更後の定型約款の条項について合意があったものとみなし、個別に相手方と合意をすることなく契約の内容を変更することができる",
+     "text_sha256": "9339fffb41143c01550e7fd4be8e1895021bbb0f969a29758bac324aca113cec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "548_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "定型約款の変更が、相手方の一般の利益に適合するとき。",
+     "text_sha256": "9339fffb41143c01550e7fd4be8e1895021bbb0f969a29758bac324aca113cec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "548_4",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その効力発生時期を定め",
+     "text_sha256": "9339fffb41143c01550e7fd4be8e1895021bbb0f969a29758bac324aca113cec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q26-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q26-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。労働契約は相手方の個性に着目して締結されるため、「不特定多数の者を相手方として行う取引」に当たらず、定型取引には当たらないと解されている。",
+   "body": "548条の2第1項は、定型取引を「ある特定の者が不特定多数の者を相手方として行う取引であって、その内容の全部又は一部が画一的であることがその双方にとって合理的なものをいう」と定めている。労働契約は、使用者が労働者の能力や人柄などの個性に着目して締結するものであるから、不特定多数の者を相手方として行う取引には当たらず、定型取引に当たらないと解されている。したがって、労働契約で用いられるひな型の契約書は、定型約款の規定の対象とならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "548_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ある特定の者が不特定多数の者を相手方として行う取引であって、その内容の全部又は一部が画一的であることがその双方にとって合理的なものをいう",
+     "text_sha256": "0f2d08658bcafa72f4fc362e98b06bd193b1de7170dfdce1e648405e2b841468",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "労働契約が定型取引に当たらないとする点は解釈による（条文に明文はない）"
+   ],
+   "id": "exp-shiho-2026-minpo-q26-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q26-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。不当な条項について合意をしなかったものとみなされるのはその条項だけで、定型約款の全ての条項ではない（548条の2第2項）。",
+   "body": "誤りは「当該定型約款の全ての条項について合意がされなかったものとみなされる」の部分。548条の2第2項は、同条1項の条項のうち、相手方の権利を制限し又は義務を加重する条項であって、「第一条第二項に規定する基本原則に反して相手方の利益を一方的に害すると認められるもの」について、「合意をしなかったものとみなす」と定めている。みなしの対象は、そのような条項そのものに限られ、その他の条項については同条1項によるみなし合意の効果がそのまま残る。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "548_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第一条第二項に規定する基本原則に反して相手方の利益を一方的に害すると認められるもの",
+     "text_sha256": "0f2d08658bcafa72f4fc362e98b06bd193b1de7170dfdce1e648405e2b841468",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "548_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "合意をしなかったものとみなす",
+     "text_sha256": "0f2d08658bcafa72f4fc362e98b06bd193b1de7170dfdce1e648405e2b841468",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q26-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

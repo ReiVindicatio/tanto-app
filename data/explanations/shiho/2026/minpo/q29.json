@@ -1,0 +1,237 @@
+{
+ "question_id": "shiho-2026-minpo-q29",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q29-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。監督義務者がその義務を怠らなかったときは、714条1項ただし書により責任を負わない。",
+   "body": "714条1項本文は、責任無能力者が責任を負わない場合に、「その責任無能力者を監督する法定の義務を負う者は、その責任無能力者が第三者に加えた損害を賠償する責任を負う」と定める。そのうえで、ただし書は「監督義務者がその義務を怠らなかったとき、又はその義務を怠らなくても損害が生ずべきであったときは、この限りでない。」としている。本肢のＣは監督義務を怠らなかったのであるから、このただし書により、ＡがＢに加えた損害を賠償する責任を負わない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "714",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その責任無能力者を監督する法定の義務を負う者は、その責任無能力者が第三者に加えた損害を賠償する責任を負う",
+     "text_sha256": "2d7b095525434f01e33d409a79751fde1beee927bce73da3d7a1790424644264",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "714",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "監督義務者がその義務を怠らなかったとき、又はその義務を怠らなくても損害が生ずべきであったときは、この限りでない。",
+     "text_sha256": "2d7b095525434f01e33d409a79751fde1beee927bce73da3d7a1790424644264",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q29-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q29-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、精神障害者と同居する配偶者であるからといって、714条1項の法定の監督義務者に当たるとすることはできないとしている。",
+   "body": "誤りは、同居の配偶者Ｃを「法定の義務を負う者に当たり」とする部分。714条1項は「責任無能力者を監督する法定の義務を負う者」に責任を負わせるが、最高裁平成28年3月1日判決は、「精神障害者と同居する配偶者であるからといって，その者が民法７１４条１項にいう「責任無能力者を監督する法定の義務を負う者」に当たるとすることはできない」としている。したがって、Ｃが配偶者として同居しているというだけで、ＣがＡの加えた損害について714条1項の責任を負うことにはならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "714",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その責任無能力者を監督する法定の義務を負う者は、その責任無能力者が第三者に加えた損害を賠償する責任を負う",
+     "text_sha256": "2d7b095525434f01e33d409a79751fde1beee927bce73da3d7a1790424644264",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "認知症の者の列車事故と家族の監督義務者責任（JR東海事件）",
+     "court": "最高裁判所第三小法廷",
+     "date": "2016-03-01",
+     "case_number": "平成26(受)1434",
+     "holding": "精神障害者と同居する配偶者であるからといって、その者が民法714条1項にいう「責任無能力者を監督する法定の義務を負う者」に当たるとすることはできない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/85714/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q29-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q29-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、監督義務を引き受けたとみるべき特段の事情がある者を、法定の監督義務者に準ずべき者として714条1項を類推適用するとしている。",
+   "body": "714条1項は「責任無能力者を監督する法定の義務を負う者」の責任を定める。最高裁平成28年3月1日判決は、法定の監督義務者に該当しない者であっても、責任無能力者との身分関係や日常生活における接触状況に照らし、その者が監督を現に行いその態様が単なる事実上の監督を超えているなど監督義務を引き受けたとみるべき特段の事情が認められる場合には、法定の監督義務者に準ずべき者として、714条1項が類推適用されるとしている。本肢はこの判例の趣旨のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "714",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その責任無能力者を監督する法定の義務を負う者は、その責任無能力者が第三者に加えた損害を賠償する責任を負う",
+     "text_sha256": "2d7b095525434f01e33d409a79751fde1beee927bce73da3d7a1790424644264",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "認知症の者の列車事故と家族の監督義務者責任（JR東海事件）",
+     "court": "最高裁判所第三小法廷",
+     "date": "2016-03-01",
+     "case_number": "平成26(受)1434",
+     "holding": "法定の監督義務者に該当しない者であっても、責任無能力者との身分関係や日常生活における接触状況に照らし、監督義務を引き受けたとみるべき特段の事情が認められる場合には、法定の監督義務者に準ずべき者として、民法714条1項が類推適用される。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/85714/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q29-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q29-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。715条1項の使用者・被用者の関係は、契約がなくても、実質的な指揮監督の関係があれば成立しうる。",
+   "body": "誤りは、契約がないことを理由にＢが責任を負わないとする部分。715条1項は「ある事業のために他人を使用する者は、被用者がその事業の執行について第三者に加えた損害を賠償する責任を負う」と定めており、使用者と被用者の間に雇用などの契約があることを要件としていない。使用関係は、契約の有無ではなく、実質的な指揮監督の関係があるかによって判断されると解されている。最高裁昭和56年11月27日判決も、兄が弟に兄所有の自動車を運転させ、助手席で運転上の指示をしていた等の事情の下で、兄弟の間に715条1項の使用者・被用者の関係が成立していたとしている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "715",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ある事業のために他人を使用する者は、被用者がその事業の執行について第三者に加えた損害を賠償する責任を負う",
+     "text_sha256": "ee1bffc67a722815d32711a10969d4bd9e21ccbe43f120f08dd4fdc60932d2f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "兄弟間の自動車運転と使用者責任の使用関係",
+     "court": "最高裁判所第二小法廷",
+     "date": "1981-11-27",
+     "case_number": "昭和56(オ)273",
+     "holding": "兄が出先から弟に兄所有の自動車で迎えに来させ、弟に運転を継続させて同乗し、助手席で運転上の指示をしていた等の事情があるときは、兄を自宅に送り届けるという仕事につき、兄弟間に民法715条1項にいう使用者・被用者の関係が成立していたと解するのが相当である。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54262/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "契約がなくても実質的な指揮監督関係があれば使用関係が認められるとする一般論は解釈による（引いた判例は、その一例として兄弟間に使用関係を認めた事例）"
+   ],
+   "id": "exp-shiho-2026-minpo-q29-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q29-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。使用者が715条の責任を負う場合でも、加害行為をした被用者自身は709条の責任を免れない。",
+   "body": "被用者Ａが故意又は過失によってＣの権利を侵害したのであれば、Ａは709条により「これによって生じた損害を賠償する責任を負う」。715条1項は使用者Ｂにも責任を負わせる規定であり、被用者の責任を免除するものではないと解されている。715条3項が「使用者又は監督者から被用者に対する求償権の行使を妨げない」と定めているのも、被用者自身が責任を負うことを前提としている。したがって、Ｂが使用者責任を負うときも、ＡはＣに対して損害を賠償する責任を負う。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "709",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "これによって生じた損害を賠償する責任を負う",
+     "text_sha256": "8029deadb1259b68934cd034bed9cbaf1c223bbb9c091dfd88dcfb8c638e49ef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "715",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "使用者又は監督者から被用者に対する求償権の行使を妨げない",
+     "text_sha256": "ee1bffc67a722815d32711a10969d4bd9e21ccbe43f120f08dd4fdc60932d2f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "被用者自身の709条責任が併存するとする点は解釈による"
+   ],
+   "id": "exp-shiho-2026-minpo-q29-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -10,6 +10,7 @@ WebSearch の結果（解説サイト・予備校の要約）は素材にしな�
   python3 pipeline/courts.py search 名誉毀損 --all --page 2            # 最高裁以外も含める・次の30件
   python3 pipeline/courts.py show 52639                                # 判決のページの項目（判示事項・裁判要旨など）
   python3 pipeline/courts.py pdf 52639                                 # 判決全文の PDF を保存して、保存先を表示（Read の道具で読む）
+  python3 pipeline/courts.py known 横領 盗品                           # ほかの解説で確かめ済みの判例を、呼び名・判示の語で引く（すべて含むもの）
 
 - 取ってきたページは .cache/courts/ に置き、同じものを二度取らない。取得の間は1秒あける
 - データベースにあるのは昭和以降（大審院の判決はないとみられる）
@@ -178,6 +179,22 @@ def parse_detail(page: str) -> dict[str, str]:
     return out
 
 
+def known_cases(words: list[str]) -> list[dict]:
+    """data/explanations の cases（courts.go.jp で確かめたもの）から、name・holding にすべての語を含むものを返す"""
+    import json
+    seen: dict[str, dict] = {}
+    for path in sorted((ROOT / "data" / "explanations").glob("*/*/*/q*.json")):
+        for e in json.loads(path.read_text(encoding="utf-8"))["explanations"]:
+            for c in e.get("cases", []):
+                urls = [u for u in c.get("verified_urls", []) if u.startswith("https://www.courts.go.jp/")]
+                text = c.get("name", "") + c.get("holding", "")
+                if not urls or not all(w in text for w in words):
+                    continue
+                key = c.get("case_number") or urls[0]
+                seen.setdefault(key, {"case": c, "url": urls[0], "used_in": []})["used_in"].append(e["target"]["id"])
+    return list(seen.values())
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -192,7 +209,17 @@ def main() -> None:
     d.add_argument("id")
     p = sub.add_parser("pdf")
     p.add_argument("id")
+    k = sub.add_parser("known")
+    k.add_argument("words", nargs="+")
     args = ap.parse_args()
+
+    if args.cmd == "known":
+        rows = known_cases(args.words)
+        print(f"確かめ済みの判例 {len(rows)}件（使う前に show で中身を確かめる）")
+        for r in rows[:30]:
+            c = r["case"]
+            print(f"- {c.get('date', '')} {c.get('court', '')} {c.get('case_number', '')} {c.get('name', '')}\n    {r['url']}（使っている肢：{', '.join(r['used_in'][:3])}）")
+        return
 
     try:
         if args.cmd == "search":

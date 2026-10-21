@@ -1,0 +1,271 @@
+{
+ "question_id": "shiho-2026-minpo-q35",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q35-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。子Ｂが欠格で相続権を失っても、Ｂの子ＣがＢを代襲して相続人となり、兄弟姉妹以外の相続人として遺留分権利者となる。",
+   "body": "決め手は、欠格が代襲原因になることと、遺留分権利者の範囲です。887条2項は、被相続人の子が「第八百九十一条の規定に該当し、若しくは廃除によって、その相続権を失ったときは、その者の子がこれを代襲して相続人となる」と定めています（ただし被相続人の直系卑属でない者は除かれますが、ＣはＡの直系卑属です）。そして1042条1項は「兄弟姉妹以外の相続人は、遺留分として」一定の割合の額を受けると定めています。代襲によって相続人となったＣは兄弟姉妹ではない相続人ですから、遺留分権利者となります。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "887",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第八百九十一条の規定に該当し、若しくは廃除によって、その相続権を失ったときは、その者の子がこれを代襲して相続人となる",
+     "text_sha256": "6eac3c2fc5ddf34f8bb4ef2112c6f22d510ce206b2b194c9870bf454b6e0eb12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1042",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "兄弟姉妹以外の相続人は、遺留分として",
+     "text_sha256": "60a0c73a4ab8f4404a81674073589c234b16454869dd86cbaa7b4109f01e7593",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q35-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q35-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。相続人に対する養子縁組のための贈与は、原則として相続開始前の10年間にしたものに限って算入されるので、「時期を問わず」は誤り。",
+   "body": "誤りは「その贈与の時期を問わず」の部分です。1044条1項は「贈与は、相続開始前の一年間にしたものに限り、前条の規定によりその価額を算入する」と定め、同条3項は、相続人に対する贈与については、同項中「一年」とあるのは「十年」と、「価額」とあるのは「価額（婚姻若しくは養子縁組のため又は生計の資本として受けた贈与の価額に限る。）」と読み替えています。したがって、共同相続人の一人に対する養子縁組のための贈与は、相続開始前の10年間にしたものに限って算入されるのが原則です。それより前の贈与が算入されるのは、1044条1項後段の「当事者双方が遺留分権利者に損害を加えることを知って贈与をしたとき」に限られ、時期を問わず算入されるわけではありません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1044",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "贈与は、相続開始前の一年間にしたものに限り、前条の規定によりその価額を算入する",
+     "text_sha256": "06da8b4ed6f4c31d7d6ea988276f5fc5a627d507d3edf56ead5cb712048c9072",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1044",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者双方が遺留分権利者に損害を加えることを知って贈与をしたとき",
+     "text_sha256": "06da8b4ed6f4c31d7d6ea988276f5fc5a627d507d3edf56ead5cb712048c9072",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1044",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "価額（婚姻若しくは養子縁組のため又は生計の資本として受けた贈与の価額に限る。）",
+     "text_sha256": "06da8b4ed6f4c31d7d6ea988276f5fc5a627d507d3edf56ead5cb712048c9072",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q35-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q35-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。1年の時効は、相続の開始に加えて遺留分を侵害する贈与又は遺贈があったことを知った時から進行するので、それを知らなくても消滅するとする点が誤り。",
+   "body": "誤りは「遺留分を侵害する贈与又は遺贈があったことを知らなくても」の部分です。1048条は「遺留分侵害額の請求権は、遺留分権利者が、相続の開始及び遺留分を侵害する贈与又は遺贈があったことを知った時から一年間行使しないときは、時効によって消滅する」と定めています。1年の期間の起算点は、相続の開始と侵害する贈与又は遺贈の両方を知った時であり、相続の開始を知っただけでは進行しません。なお、同条後段は「相続開始の時から十年を経過したときも、同様とする」と定めており、知らない場合でも相続開始から10年を経過すれば行使できなくなります。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1048",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺留分侵害額の請求権は、遺留分権利者が、相続の開始及び遺留分を侵害する贈与又は遺贈があったことを知った時から一年間行使しないときは、時効によって消滅する",
+     "text_sha256": "ad39e747a85a72bf05c2909c9ac113b18eeadf6ab09d5b760007c411c422027f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1048",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続開始の時から十年を経過したときも、同様とする",
+     "text_sha256": "ad39e747a85a72bf05c2909c9ac113b18eeadf6ab09d5b760007c411c422027f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2026-minpo-q35-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q35-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。各相続人は指定相続分を含む相続分に応じて特別寄与料を負担するので、相続分をゼロと指定された相続人は、遺留分侵害額請求をしても負担しない。",
+   "body": "決め手は、特別寄与料の負担割合が遺言で指定された相続分によって決まることです。1050条5項は「相続人が数人ある場合には、各相続人は、特別寄与料の額に第九百条から第九百二条までの規定により算定した当該相続人の相続分を乗じた額を負担する」と定め、902条1項は、被相続人が「遺言で、共同相続人の相続分を定め」ることができるとしています。相続分がないものと指定された相続人の相続分はゼロですから、負担額もゼロになります。遺留分侵害額請求権は、1046条1項のとおり「遺留分侵害額に相当する金銭の支払を請求することができる」権利であり、これを行使しても指定された相続分そのものが変わるわけではないと解されているため、特別寄与料を負担しないことに変わりはありません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1050",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "相続人が数人ある場合には、各相続人は、特別寄与料の額に第九百条から第九百二条までの規定により算定した当該相続人の相続分を乗じた額を負担する",
+     "text_sha256": "e18e5f582feb9da490e547a316d25548e4e31f6cf416052a7ff05d606c56d9ab",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "902",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺言で、共同相続人の相続分を定め",
+     "text_sha256": "2b05a6951a1d212aa44ae4618633ff82e397ff156ac192b32fd59e097818a72c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1046",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺留分侵害額に相当する金銭の支払を請求することができる",
+     "text_sha256": "bee2c013e82d287e432164aa7b6d4effbfc5b76b5317ea4e059ab4b01e52359d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "遺留分侵害額請求をしても相続分が変わらないとする点は解釈による"
+   ],
+   "id": "exp-shiho-2026-minpo-q35-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2026-minpo-q35-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。遺留分の放棄は相続の放棄とは異なり、遺留分を放棄した者も相続人の地位を失わない。",
+   "body": "誤りは「相続人となることができない」の部分です。1049条1項は「相続の開始前における遺留分の放棄は、家庭裁判所の許可を受けたときに限り、その効力を生ずる」と定めていますが、放棄されるのは遺留分という権利だけで、相続人の地位まで失わせる規定はありません。相続人とならなかったものとみなされるのは、939条の「相続の放棄をした者は、その相続に関しては、初めから相続人とならなかったものとみなす」の場合であり、遺留分の放棄はこれと別の制度です。また、891条の欠格事由にも遺留分の放棄は挙げられていません。したがって、遺留分を放棄した者も相続が開始すれば相続人となります（相続の開始前に相続の放棄をすることはできないと解されています）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1049",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続の開始前における遺留分の放棄は、家庭裁判所の許可を受けたときに限り、その効力を生ずる",
+     "text_sha256": "5aa9a936cd0b97e77e2baee23954a263359119be6fb082822978ee503c38058b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "939",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続の放棄をした者は、その相続に関しては、初めから相続人とならなかったものとみなす",
+     "text_sha256": "216f51496d3f22d25f4cbdffdc301b3ced35db37b4b4d6476eff92a0eca2e47f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "891",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる者は、相続人となることができない。",
+     "text_sha256": "e068e33e6343fc5b87f5eaf858616516a9c64d213f728c225e6ccca29315f1f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "相続開始前の相続放棄ができない点は解釈による"
+   ],
+   "id": "exp-shiho-2026-minpo-q35-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

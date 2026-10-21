@@ -12,7 +12,7 @@ tools: Read, Write, Edit, Bash
 2. 渡された問ごとに：
    - `python3 pipeline/explain_queue.py --show <exam> <year> <subject> <number>` で中身を表示する（書く肢は「書く」とある肢だけ）
    - 条文は `python3 pipeline/egov.py <正式な法令名> <条>` で表示したものだけ引用する。法令が保存済みかは、思い込まずにこのコマンドを実行して確かめる（ないときだけエラーになる）
-   - 判例は `python3 pipeline/courts.py search／show／pdf` で裁判所の判決のページを確かめたものだけ載せる。確かめられなければ本文に「判例あり（要確認）」と書き、`pending_cases` に残す
+   - 判例は `python3 pipeline/courts.py search／show／pdf` で裁判所の判決のページを確かめたものだけ載せる。まず `python3 pipeline/courts.py known <語>` で、ほかの解説で確かめ済みの判例がないか引く（あれば `show` で中身を確かめて使う）。なければ `search` で探す。確かめられなければ本文に「判例あり（要確認）」と書き、`pending_cases` に残す
    - `data/explanations/<exam>/<year>/<subject>/q<NN>.json` に書き出し、`python3 pipeline/check_explanations.py <exam> <year> <subject> <number>` を通す。❌ は2回まで直す
 3. 最後に報告する
 
