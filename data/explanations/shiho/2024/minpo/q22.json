@@ -1,0 +1,242 @@
+{
+ "question_id": "shiho-2024-minpo-q22",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q22-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。併存的債務引受の引受人は債務者と連帯して債務を負うので、連帯債務者の一人との更改の規定（438条）により、α債務も消滅する。",
+   "body": "決め手は、470条1項と438条の組合せである。470条1項は、併存的債務引受の引受人は「債務者と連帯して、債務者が債権者に対して負担する債務と同一の内容の債務を負担する」と定めるから、ＢとＣは連帯債務者の関係に立つ。そして438条は「連帯債務者の一人と債権者との間に更改があったときは、債権は、全ての連帯債務者の利益のために消滅する」と定める。したがって、ＡとＣとの間で更改があれば、Ｂのα債務も消滅し、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "470",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者と連帯して、債務者が債権者に対して負担する債務と同一の内容の債務を負担する",
+     "text_sha256": "8cdec78feefb56c6404e3a2f554050f635536790f732790ab0c1c3bb841c540d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "438",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人と債権者との間に更改があったときは、債権は、全ての連帯債務者の利益のために消滅する",
+     "text_sha256": "879c74199baf00e9e31206c702f7022c0899c2c79c1954a4f23ded96454818c7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2024-minpo-q22-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q22-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。債権者と引受人となる者との契約による併存的債務引受は、債務者の意思に反してもすることができる（470条2項は債務者の意思を要件としていない）。",
+   "body": "決め手は、470条2項の要件である。同項は「併存的債務引受は、債権者と引受人となる者との契約によってすることができる」と定め、債務者の同意や、債務者の意思に反しないことを要件としていない。併存的債務引受では債務者は自己の債務を免れず、引受人が連帯して債務を負うにとどまるから、債務者の意思に反しても債務者に不利益はないと解されている。したがって、ＡとＣがＢの意思に反してした併存的債務引受も効力を生じ、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "470",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "併存的債務引受は、債権者と引受人となる者との契約によってすることができる",
+     "text_sha256": "8cdec78feefb56c6404e3a2f554050f635536790f732790ab0c1c3bb841c540d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "債務者の意思に反しても不利益がないという理由づけは解釈による"
+   ],
+   "id": "exp-shiho-2024-minpo-q22-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q22-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。免責的債務引受の引受人は、債務者に対して求償権を取得しない（472条の3）。",
+   "body": "決め手は、472条の3である。同条は「免責的債務引受の引受人は、債務者に対して求償権を取得しない」と定める。免責的債務引受では、引受人は他人の債務を自己の債務として引き受けて負担するのであり、弁済しても債務者に求償できないのが原則である。もっとも、この規定は任意規定であり、ＢＣ間で別段の合意（引受けの対価として求償できるとする合意など）があれば、その合意に従うと解されている。したがって、別段の合意がない限り求償権を取得しないとする本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "免責的債務引受の引受人は、債務者に対して求償権を取得しない",
+     "text_sha256": "42d3158a6e59c5098d58b85ecba18848288deca584be429d59117433b78ef823",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "472条の3が任意規定で別段の合意により求償できるとする点は解釈による"
+   ],
+   "id": "exp-shiho-2024-minpo-q22-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q22-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。免責的債務引受の引受人が履行を拒めるのは、債務者の取消権・解除権による場合であり（472条の2第2項）、債務者の相殺権を理由に履行を拒むことはできない。",
+   "body": "決め手は、472条の2第2項が掲げる権利の範囲である。同項は「債務者が債権者に対して取消権又は解除権を有するときは」引受人は「債権者に対して債務の履行を拒むことができる」と定め、相殺権を挙げていない。保証人について457条3項が「相殺権、取消権又は解除権」を挙げているのと対照的である。免責的債務引受では債務者Ｂは自己の債務を免れて債務関係から離脱し、Ｃが負担するのは自己の債務であるから、Ｂの有するβ債権による相殺の可能性を理由にＣが履行を拒むことはできないと解されている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債務者が債権者に対して取消権又は解除権を有するときは",
+     "text_sha256": "4d957164b73a9f423fd31e4c5ec806c198e0222e44d595111850edf65e07e805",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権者に対して債務の履行を拒むことができる",
+     "text_sha256": "4d957164b73a9f423fd31e4c5ec806c198e0222e44d595111850edf65e07e805",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "457",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "相殺権、取消権又は解除権",
+     "text_sha256": "741dc7411c5661fdbe115a9788141ee4fbcf679b62e6e3fdab5935330503f2aa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "相殺権を理由とする履行拒絶ができないとする理由づけは解釈による"
+   ],
+   "id": "exp-shiho-2024-minpo-q22-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q22-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。債権者は、債務者が免れる債務の担保として設定された担保権を引受人が負担する債務に移すことができ（472条の4第1項本文）、引受人Ｃ自身が設定した抵当権ならＣの承諾も要しない。",
+   "body": "決め手は、472条の4第1項である。同項本文は「債権者は、第四百七十二条第一項の規定により債務者が免れる債務の担保として設定された担保権を引受人が負担する債務に移すことができる」と定め、ただし書は「引受人以外の者がこれを設定した場合には、その承諾を得なければならない」とする。本肢の抵当権は引受人Ｃ自身が設定したものであるから、ただし書の承諾も問題とならない。移転は、同条2項により「あらかじめ又は同時に引受人に対してする意思表示によってしなければならない」が、移すこと自体はできる。したがって、移すことができないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者は、第四百七十二条第一項の規定により債務者が免れる債務の担保として設定された担保権を引受人が負担する債務に移すことができる",
+     "text_sha256": "7acc2c279f7f4b582c6cc074df77dbeffcdeb76235eece54104388fd9162809f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "引受人以外の者がこれを設定した場合には、その承諾を得なければならない",
+     "text_sha256": "7acc2c279f7f4b582c6cc074df77dbeffcdeb76235eece54104388fd9162809f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472_4",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "あらかじめ又は同時に引受人に対してする意思表示によってしなければならない",
+     "text_sha256": "7acc2c279f7f4b582c6cc074df77dbeffcdeb76235eece54104388fd9162809f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2024-minpo-q22-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

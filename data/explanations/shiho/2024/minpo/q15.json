@@ -1,0 +1,290 @@
+{
+ "question_id": "shiho-2024-minpo-q15",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q15-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：第三債務者Ｂ自身も、自己に対する債権甲を目的とする質権の設定を受けることができると解されている。",
+   "body": "民法362条1項は「質権は、財産権をその目的とすることができる。」と定め、債権も質権の目的となる。343条は「質権は、譲り渡すことができない物をその目的とすることができない。」とするが、貸金債権甲は譲渡できる債権であり、第三債務者自身を質権者とすることを禁じる規定もない。そのため、Ｂが自分の負う債務に係る債権甲について、自己のＡに対する代金債権乙を担保するために質権の設定を受けることもできると解されている（判例あり（要確認））。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "362",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権は、財産権をその目的とすることができる。",
+     "text_sha256": "b2907abfcba7eea0f05cb21c8dd7c32b8d205d65458fcf7f9665b5145d30a755",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "343",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権は、譲り渡すことができない物をその目的とすることができない。",
+     "text_sha256": "6ab8097fdd5b14258b84018908016c60cb4af721869f5146462ee869994ed572",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "第三債務者が自己に対する債権を目的とする質権の設定を受けることの可否",
+     "searched": [
+      "courts.py search 質権 第三債務者 自己 債権 質権者",
+      "courts.py search 質権 第三債務者 質権者 --from 昭和22 --to 昭和40",
+      "大審院の判決である可能性（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "第三債務者自身が質権者となれる点は解釈による。"
+   ],
+   "id": "exp-shiho-2024-minpo-q15-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q15-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：譲渡制限の意思表示があっても債権の譲渡（質入れ）の効力は妨げられず、悪意の質権者に対しても質権の設定は効力を生じる。",
+   "body": "民法466条2項は「当事者が債権の譲渡を禁止し、又は制限する旨の意思表示（以下「譲渡制限の意思表示」という。）をしたときであっても、債権の譲渡は、その効力を妨げられない。」と定める。譲渡制限の意思表示があっても債権は譲渡可能な財産権のままであり、343条の「譲り渡すことができない物」には当たらないから、質入れ禁止の合意があっても質権の設定は有効と解されている。悪意の第三者について466条3項が定めるのは、債務者が「その債務の履行を拒むことができ」ることなどであって、質権の設定そのものが無効になるわけではない。したがって、悪意のＣへの質権の設定が効力を生じないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "466",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当事者が債権の譲渡を禁止し、又は制限する旨の意思表示（以下「譲渡制限の意思表示」という。）をしたときであっても、債権の譲渡は、その効力を妨げられない。",
+     "text_sha256": "53cc6756b6ec229cfaa95a16773ac9bf62af5b5c72736b876442ab620e04c690",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "466",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "その債務の履行を拒むことができ",
+     "text_sha256": "53cc6756b6ec229cfaa95a16773ac9bf62af5b5c72736b876442ab620e04c690",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "343",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "譲り渡すことができない物",
+     "text_sha256": "6ab8097fdd5b14258b84018908016c60cb4af721869f5146462ee869994ed572",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "466条2項の規律が質入れ禁止の合意にも及ぶ点は解釈による。",
+    "貸金債権甲は預貯金債権ではない前提（466条の5は検討していない）。",
+    "466条は平成29年改正で変わった。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2024-minpo-q15-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q15-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：同じ債権に複数の質権が設定されても、後れた方は順位が劣後するだけで、質権を失うわけではない。",
+   "body": "民法362条2項により、権利質には「前三節（総則、動産質及び不動産質）の規定を準用する」とされ、動産質の355条は「同一の動産について数個の質権が設定されたときは、その質権の順位は、設定の前後による。」と定める。このように、同一の目的物に数個の質権が成立することが予定されている。債権質の第三者対抗要件は364条の通知又は承諾であり、Ｅが先に対抗要件を備えたときは、ＤはＥに対して優先を主張できず後順位となるにとどまると解されている。Ｄの質権が消滅するとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "362",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前三節（総則、動産質及び不動産質）の規定を準用する",
+     "text_sha256": "b2907abfcba7eea0f05cb21c8dd7c32b8d205d65458fcf7f9665b5145d30a755",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "355",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同一の動産について数個の質権が設定されたときは、その質権の順位は、設定の前後による。",
+     "text_sha256": "4425431b8983968e83d90ab13b01f188423aaad39afef26a72bb2a281f939691",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "364",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三債務者にその質権の設定を通知し、又は第三債務者がこれを承諾しなければ、これをもって第三債務者その他の第三者に対抗することができない",
+     "text_sha256": "f941e2bc3025d8a47c082cc751ead88e7a4654b9f40bac40c7a3dbda58baf7b7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "債権質の順位が対抗要件の先後で決まる点は解釈による。"
+   ],
+   "id": "exp-shiho-2024-minpo-q15-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q15-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：質権設定の通知（対抗要件具備）の後に、別の売買契約によって取得した代金債権丙での相殺は、質権者Ｆに対抗できない。",
+   "body": "債権質の第三者対抗要件は、民法364条により、第三債務者への通知又は承諾である。質権の目的債権の債務者が相殺を質権者に対抗できる範囲は、債権譲渡における469条と同様に考えられている。469条1項は「債務者は、対抗要件具備時より前に取得した譲渡人に対する債権による相殺をもって譲受人に対抗することができる。」とし、2項は対抗要件具備時より後に取得した債権でも「対抗要件具備時より前の原因に基づいて生じた債権」などであれば同様とする。本肢の丙は、質権設定の通知の後にＡとＢが新たに締結した売買契約に基づく債権で、通知より前の原因に基づくものでも、甲の発生原因である契約に基づくものでもないから、Ｂは丙による相殺をＦに対抗できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "364",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四百六十七条の規定に従い、第三債務者にその質権の設定を通知し",
+     "text_sha256": "f941e2bc3025d8a47c082cc751ead88e7a4654b9f40bac40c7a3dbda58baf7b7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "469",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、対抗要件具備時より前に取得した譲渡人に対する債権による相殺をもって譲受人に対抗することができる。",
+     "text_sha256": "2b64582a3e861d4a6965242b9090d4b29a885f56e8d7a90e340328e65e4b3799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "469",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "対抗要件具備時より前の原因に基づいて生じた債権",
+     "text_sha256": "2b64582a3e861d4a6965242b9090d4b29a885f56e8d7a90e340328e65e4b3799",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "469条（債権譲渡における相殺権）の規律を債権質に及ぼす点は解釈による。",
+    "469条は平成29年改正で新設・変更された。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2024-minpo-q15-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q15-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：質権者は目的債権を「直接に」取り立てることができ（366条1項）、自己の名で取り立てられる。Ａの名による必要はない。",
+   "body": "民法366条1項は「質権者は、質権の目的である債権を直接に取り立てることができる。」と定める。これは、質権者が自己の名において第三債務者から取り立てることができるという意味と解されている。また同条2項により、金銭債権のときは「自己の債権額に対応する部分に限り、これを取り立てることができる」。したがって、取立てはＡの名においてしなければならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "366",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権者は、質権の目的である債権を直接に取り立てることができる。",
+     "text_sha256": "e42097ca4d399053915f9860ea27ed0404b5006f516b2ab755b2b9f137ce6580",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "366",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "自己の債権額に対応する部分に限り、これを取り立てることができる",
+     "text_sha256": "e42097ca4d399053915f9860ea27ed0404b5006f516b2ab755b2b9f137ce6580",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「直接に」を自己の名による取立てと読む点は解釈による。"
+   ],
+   "id": "exp-shiho-2024-minpo-q15-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

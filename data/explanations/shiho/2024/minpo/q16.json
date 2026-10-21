@@ -1,0 +1,211 @@
+{
+ "question_id": "shiho-2024-minpo-q16",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q16-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：一括競売ができるのは抵当権の「設定後に」築造された建物であり、設定当時すでに存在していた乙建物は対象にならない。",
+   "body": "民法389条1項は「抵当権の設定後に抵当地に建物が築造されたときは、抵当権者は、土地とともにその建物を競売することができる。」と定める。一括競売が認められるのは、抵当権の設定後に築造された建物に限られる。本肢の乙建物は抵当権の設定当時すでに存在していたから、抵当権者は甲土地の抵当権の実行として乙建物を一緒に競売することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "389",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権の設定後に抵当地に建物が築造されたときは、抵当権者は、土地とともにその建物を競売することができる。",
+     "text_sha256": "1fe66f167c9281bcd20b936374cf3c4c6159d3ad4e0dfdd5900adb8c4ec85d01",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2024-minpo-q16-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q16-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：不動産の上に存する抵当権は売却により消滅する（民事執行法59条1項、188条で担保不動産競売に準用）から、第二順位の抵当権の実行でも第一順位の抵当権は消滅する。",
+   "body": "民事執行法59条1項は「不動産の上に存する先取特権、使用及び収益をしない旨の定めのある質権並びに抵当権は、売却により消滅する。」と定める。この規定は、同法188条により担保不動産競売に準用される（「前章第二節第一款第二目（第八十一条を除く。）の規定は担保不動産競売について」準用）。そのため、第二順位の抵当権の実行として甲土地が売却されたときも、先順位である第一順位の抵当権を含めて抵当権は売却により消滅し、第一順位の抵当権者は売却代金から配当を受けることになる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "59",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産の上に存する先取特権、使用及び収益をしない旨の定めのある質権並びに抵当権は、売却により消滅する。",
+     "text_sha256": "40e7cee1a35dc83737ecb6c349d4eab23de44059759b0075469ea8336fb6b48c",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "188",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前章第二節第一款第二目（第八十一条を除く。）の規定は担保不動産競売について",
+     "text_sha256": "edf3d0b0b1208a347cf4540ac40efadc0f092ca5f72368b5d08c1b0fa6fa5e9b",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "59条1項が民事執行法第二章第二節第一款第二目に属することは、188条の本文と59条の位置から読んでいる（目の見出しは表示していない）。",
+    "第一順位の抵当権者が売却代金から配当を受ける点は解釈による。"
+   ],
+   "id": "exp-shiho-2024-minpo-q16-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q16-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：登記をした賃貸借が先順位の抵当権者に対抗できるには、全ての抵当権者の同意に加えて「その同意の登記」が要る（387条1項）。",
+   "body": "民法387条1項は「登記をした賃貸借は、その登記前に登記をした抵当権を有するすべての者が同意をし、かつ、その同意の登記があるときは、その同意をした抵当権者に対抗することができる。」と定める。全ての抵当権者の同意と、その同意の登記の両方が要件である。したがって、同意があっても同意の登記がなければ、同意をした抵当権者に対抗することができない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "387",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "登記をした賃貸借は、その登記前に登記をした抵当権を有するすべての者が同意をし、かつ、その同意の登記があるときは、その同意をした抵当権者に対抗することができる。",
+     "text_sha256": "c4538812c112520b4f1ff021a041e899e31b6d1fb003ee1ff0bd2c581b394ef9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2024-minpo-q16-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q16-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：建物の共有者の一人が敷地を単独で所有する場合に土地の抵当権が実行されたときは、建物共有者全員のために法定地上権が成立する（昭和46年判決）。",
+   "body": "民法388条は「土地及びその上に存する建物が同一の所有者に属する場合において、その土地又は建物につき抵当権が設定され、その実行により所有者を異にするに至ったときは、その建物について、地上権が設定されたものとみなす。」と定める。本肢では甲土地はＡの単独所有、乙建物はＡとＢの共有で、土地と建物の所有者が完全には一致しない。しかし最高裁昭和46年12月21日判決は、建物の共有者の一人がその敷地を所有する場合において、土地に設定された抵当権が実行され第三者が競落したときは、建物共有者全員のために法定地上権が成立するとした。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "388",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "土地及びその上に存する建物が同一の所有者に属する場合において、その土地又は建物につき抵当権が設定され、その実行により所有者を異にするに至ったときは、その建物について、地上権が設定されたものとみなす。",
+     "text_sha256": "1c78ef41c219bd8b16ae579af125c16f9b1ab7108e30642813515624dbb4a07e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "建物共有者の一人が敷地を所有する場合の法定地上権",
+     "court": "最高裁判所第三小法廷",
+     "date": "1971-12-21",
+     "case_number": "昭和46(オ)844",
+     "holding": "建物の共有者の一人がその敷地を所有する場合において、その土地に設定された抵当権が実行され第三者が競落したときは、土地につき建物共有者全員のために法定地上権が成立する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52063/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2024-minpo-q16-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q16-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：競売手続の開始前から使用する抵当建物使用者は、買受けの時から6か月を経過するまで建物の引渡しを猶予される（395条1項1号）。",
+   "body": "民法395条1項は、抵当権者に対抗することができない賃貸借により抵当権の目的である建物の使用又は収益をする者のうち「競売手続の開始前から使用又は収益をする者」について、「その建物の競売における買受人の買受けの時から六箇月を経過するまでは、その建物を買受人に引き渡すことを要しない。」と定める。したがって、競売手続の開始前から使用していた者は、直ちに引き渡す必要はない。直ちに引き渡さなければならないとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "395",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "競売手続の開始前から使用又は収益をする者",
+     "text_sha256": "19643bb142b35c6b81d2e0cf83e25d178174302361f136cae854f3e3ee6308fc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "395",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その建物の競売における買受人の買受けの時から六箇月を経過するまでは、その建物を買受人に引き渡すことを要しない。",
+     "text_sha256": "19643bb142b35c6b81d2e0cf83e25d178174302361f136cae854f3e3ee6308fc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "同条2項の対価の不払による例外は、問題文に事実がないため検討していない。"
+   ],
+   "id": "exp-shiho-2024-minpo-q16-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

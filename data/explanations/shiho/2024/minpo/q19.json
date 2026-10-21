@@ -1,0 +1,246 @@
+{
+ "question_id": "shiho-2024-minpo-q19",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q19-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。受益者の債権が原状に復するのは、受益者が受けた給付を返還し又はその価額を償還した時であり、判決確定時ではない。",
+   "body": "誤りは「判決が確定した時に、原状に復する」とする点である。425条の3は、債務者がした債務の消滅に関する行為が取り消された場合において、「受益者が債務者から受けた給付を返還し、又はその価額を償還したときは、受益者の債務者に対する債権は、これによって原状に復する。」と定める。本肢の弁済の取消しが認容されても、ＣのＢに対する貸金債権は、Ｃが受けた５００万円を返還（償還）したときに初めて原状に復する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "425_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "受益者が債務者から受けた給付を返還し、又はその価額を償還したときは、受益者の債務者に対する債権は、これによって原状に復する。",
+     "text_sha256": "a8a797a1fb4a3a560886ad932cb60c6329df0c6c56f3c07c794be0c4a3b33e16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2024-minpo-q19-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q19-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、受益者の取消債権者に対する受領済み金員相当額の支払債務は、履行の請求を受けた時に遅滞に陥るとする。",
+   "body": "誤りは「判決が確定した時から、履行遅滞に陥る」とする点である。判例は、詐害行為取消しによる受益者の取消債権者に対する受領済みの金員相当額の支払債務は、履行の請求を受けた時に遅滞に陥るとしている（参照法条に412条3項が挙がっている）。412条3項は「債務の履行について期限を定めなかったときは、債務者は、履行の請求を受けた時から遅滞の責任を負う。」と定める。したがって、Ｄの支払債務は判決確定時ではなく、Ａから履行の請求を受けた時から遅滞に陥る。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "412",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "債務の履行について期限を定めなかったときは、債務者は、履行の請求を受けた時から遅滞の責任を負う。",
+     "text_sha256": "f4fa559cc04ea54ec21234490f08e386ccfdf08e099045e9b123098d7a3c0fc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "詐害行為取消しによる受領金支払債務の遅滞の時期",
+     "court": "最高裁判所第二小法廷",
+     "date": "2018-12-14",
+     "case_number": "平成30(受)44",
+     "holding": "詐害行為取消しによる受益者の取消債権者に対する受領済みの金員相当額の支払債務は、履行の請求を受けた時に遅滞に陥る。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/88184/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判例は改正前の民法424条1項についてのもの。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2024-minpo-q19-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q19-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。認容確定判決の効力が及ぶのは債務者及びその全ての債権者であり、被告とされていない受益者Ｅには及ばない。",
+   "body": "誤りは「確定判決の効力は、Ｅに及ぶ」とする点である。425条は「詐害行為取消請求を認容する確定判決は、債務者及びその全ての債権者に対してもその効力を有する。」と定め、受益者を挙げていない。転得者に対する訴えの被告は、424条の7第1項2号により「その詐害行為取消請求の相手方である転得者」であり、本肢ではＦだけが被告である。したがって、受益者Ｅには判決の効力は及ばないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "425",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐害行為取消請求を認容する確定判決は、債務者及びその全ての債権者に対してもその効力を有する。",
+     "text_sha256": "16eab9017a23dd7d4678c14fc78774f5cb544396292eb0b3014418ac53d19045",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その詐害行為取消請求の相手方である転得者",
+     "text_sha256": "d2c8f7dd0b10714b9615fa2e4c3e90314c9ae3e5e366b765d756474a75d74594",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（425条に受益者が挙がっていないことから、受益者には効力が及ばないとする点）"
+   ],
+   "id": "exp-shiho-2024-minpo-q19-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q19-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。転得者Ｉへの請求には、受益者Ｇの悪意に加え、Ｉ及びその前の全ての転得者Ｈが転得の当時悪意であることが必要である。",
+   "body": "ポイントは、受益者・中間の転得者・最後の転得者の全員の悪意が必要かどうかである。424条の5は、転得者への請求を「受益者に対して詐害行為取消請求をすることができる場合において」に限り、受益者については424条1項ただし書が「受益者」が「その行為の時において債権者を害することを知らなかったときは、この限りでない。」と定める。さらに424条の5第2号は、他の転得者から転得した者に対しては「その転得者及びその前に転得した全ての転得者が、それぞれの転得の当時、債務者がした行為が債権者を害することを知っていたとき。」に限るとする。したがって、受益者Ｇ、転得者Ｈ及びＩの全員が、それぞれ贈与を受けた時に悪意であることが必要である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "受益者に対して詐害行為取消請求をすることができる場合において",
+     "text_sha256": "867f9bcf694896077ed49c5ce4992ac485c8c7a9f9ae05d8b86e14a19496af26",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その転得者及びその前に転得した全ての転得者が、それぞれの転得の当時、債務者がした行為が債権者を害することを知っていたとき。",
+     "text_sha256": "867f9bcf694896077ed49c5ce4992ac485c8c7a9f9ae05d8b86e14a19496af26",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その行為の時において債権者を害することを知らなかったときは、この限りでない。",
+     "text_sha256": "22d988d8231e843109818b8d2f93e8f2bb2ba972e98650a949757943ef28191d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2024-minpo-q19-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q19-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。転得者Ｋは、受益者Ｊが行使できたはずの反対給付２００万円の返還請求権を、自己の反対給付２２０万円を限度として行使できるので、２００万円の限度で請求できる。",
+   "body": "ポイントは、転得者が行使できる権利の中身と上限である。425条の4第1号は、財産の処分に関する行為が転得者に対する詐害行為取消請求によって取り消されたときは、転得者は「その行為が受益者に対する詐害行為取消請求によって取り消されたとすれば同条の規定により生ずべき受益者の債務者に対する反対給付の返還請求権又はその価額の償還請求権」を行使できるとし、ただし書で「その転得者がその前者から財産を取得するためにした反対給付」の価額を限度とする。425条の2により受益者Ｊが行使できたのは、Ｂに支払った代金２００万円の返還請求権である。Ｋの反対給付は２２０万円であり、その限度内なので、ＫはＢに対し２００万円の限度で支払を求めることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "425_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その行為が受益者に対する詐害行為取消請求によって取り消されたとすれば同条の規定により生ずべき受益者の債務者に対する反対給付の返還請求権又はその価額の償還請求権",
+     "text_sha256": "98a0dc6157f39f6b76e049b47a9b93ab27bfb42310e86546c5a9635ab4215778",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "425_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その転得者がその前者から財産を取得するためにした反対給付",
+     "text_sha256": "98a0dc6157f39f6b76e049b47a9b93ab27bfb42310e86546c5a9635ab4215778",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "425_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "受益者は、債務者に対し、その財産を取得するためにした反対給付の返還を請求することができる。",
+     "text_sha256": "7fd4944307136115dc5dc172b76dae0e5e979bc601a0978104949c3f961359db",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2024-minpo-q19-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,229 @@
+{
+ "question_id": "shiho-2024-minpo-q24",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q24-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。承諾は到達した時に効力を生ずる（97条1項）ので、承諾の撤回の通知が承諾の通知より先に到達すれば承諾は効力を生ぜず、契約は成立しない。",
+   "body": "決め手は、承諾の効力発生時期である。97条1項は「意思表示は、その通知が相手方に到達した時からその効力を生ずる」と定め、承諾についても発信の時ではなく到達の時に効力を生ずる。522条1項は、契約は申込みに対して「相手方が承諾をしたときに成立する」とするから、承諾が効力を生ずるまでは契約は成立しない。そして、意思表示の撤回の通知がその意思表示の通知より先に（又は同時に）到達したときは、その意思表示は効力を生じないと解されている。したがって、Ｂの撤回の通知が承諾の通知より先にＡに到達した本肢では契約は成立せず、契約が成立するとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "97",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "意思表示は、その通知が相手方に到達した時からその効力を生ずる",
+     "text_sha256": "d29bdd41ac5f5500bebb9725f87e52d68fc301915306af0ea5719792f455ee54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "522",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方が承諾をしたときに成立する",
+     "text_sha256": "f08d4f757a2a303c3c31ab8ac1445e51ad8cf0d6f905dd191caeab433df30932",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "撤回の通知が先に到達すれば意思表示が効力を生じないとする点は解釈による",
+    "平成29年改正で隔地者間の承諾の効力発生時期に関する規定が変わった。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2024-minpo-q24-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q24-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。対話者に対して承諾の期間を定めないでした申込みは、対話が継続している間はいつでも撤回できる（525条2項）。",
+   "body": "決め手は、525条2項である。承諾の期間を定めないでした申込みは、原則として、525条1項により「申込者が承諾の通知を受けるのに相当な期間を経過するまでは、撤回することができない」。しかし、同条2項は「対話者に対してした前項の申込みは、同項の規定にかかわらず、その対話が継続している間は、いつでも撤回することができる」と定める。したがって、ＡはＢとの対話が継続している間は申込みを撤回でき、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "525",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申込者が承諾の通知を受けるのに相当な期間を経過するまでは、撤回することができない",
+     "text_sha256": "8b490a4bd34fc35b31f233129bde1d53e02fcd46965e19f3140524a0bf1238cc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "525",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "対話者に対してした前項の申込みは、同項の規定にかかわらず、その対話が継続している間は、いつでも撤回することができる",
+     "text_sha256": "8b490a4bd34fc35b31f233129bde1d53e02fcd46965e19f3140524a0bf1238cc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2024-minpo-q24-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q24-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。現行法には延着の通知をしなければ期間内に到達したものとみなす規定はなく、期間内に承諾の通知を受けなかった申込みは効力を失う（523条2項）。",
+   "body": "決め手は、523条2項である。同項は「申込者が前項の申込みに対して同項の期間内に承諾の通知を受けなかったときは、その申込みは、その効力を失う」と定め、承諾の通知が通常なら期間内に到達したはずであったかどうかや、申込者がそれを知っていたかどうかで区別していない。延着した承諾については、524条が「申込者は、遅延した承諾を新たな申込みとみなすことができる」と定めるにとどまる。したがって、Ａが延着の通知をしなかったとしても、期間内に到達したものとして契約が成立することはなく、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "523",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "申込者が前項の申込みに対して同項の期間内に承諾の通知を受けなかったときは、その申込みは、その効力を失う",
+     "text_sha256": "f6bbe3d48447f4772d5177bc76dde9733088da42ca8765b8b155ae0248681fa8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "524",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申込者は、遅延した承諾を新たな申込みとみなすことができる",
+     "text_sha256": "fef9eda25d7b778c8968cc9a3eb823b9115b35f5851da86f6e8e84b026f60c46",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "平成29年改正前には承諾の延着の通知に関する規定があったとされるが、改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2024-minpo-q24-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q24-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。申込者が申込みの通知を発した後に死亡し、相手方が承諾の通知を発するまでにその事実を知ったときは、申込みは効力を有しない（526条）。",
+   "body": "決め手は、526条である。同条は「申込者が申込みの通知を発した後に死亡し」た場合において、「その相手方が承諾の通知を発するまでにその事実が生じたことを知ったときは、その申込みは、その効力を有しない」と定める。本肢では、Ａは申込みの通知を発した後（Ｂに到達した後）に死亡し、Ｂは承諾の通知を発する前にＡの死亡を知っている。したがって、Ａの申込みは効力を有せず、その後にＢが承諾をしても契約は成立しないから、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "526",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申込者が申込みの通知を発した後に死亡し",
+     "text_sha256": "6ca9b4a484b18ffca1981a1a6ef05776910f39306da420e4f81faf8abf22a237",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "526",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その相手方が承諾の通知を発するまでにその事実が生じたことを知ったときは、その申込みは、その効力を有しない",
+     "text_sha256": "6ca9b4a484b18ffca1981a1a6ef05776910f39306da420e4f81faf8abf22a237",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2024-minpo-q24-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q24-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。申込者の意思表示により承諾の通知を必要としない場合は、承諾の意思表示と認めるべき事実があった時に契約が成立し（527条）、申込者がその事実を知ることは要しない。",
+   "body": "決め手は、527条である。同条は「申込者の意思表示又は取引上の慣習により承諾の通知を必要としない場合には、契約は、承諾の意思表示と認めるべき事実があった時に成立する」と定める。本肢では、Ａの申込みにおいてＢが製造に着手すれば承諾の通知がなくても契約が成立するとされていたから、Ｂが製造に着手した時に契約が成立する。同条は申込者がその事実を知ることを要件としていない。したがって、Ａが着手の事実を知るまで契約は成立しないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "527",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申込者の意思表示又は取引上の慣習により承諾の通知を必要としない場合には、契約は、承諾の意思表示と認めるべき事実があった時に成立する",
+     "text_sha256": "71062328acdf5548928a8e364b86da14d506da69d638e8ae9ef32719df972279",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2024-minpo-q24-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

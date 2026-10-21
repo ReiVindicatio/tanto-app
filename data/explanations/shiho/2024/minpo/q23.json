@@ -1,0 +1,204 @@
+{
+ "question_id": "shiho-2024-minpo-q23",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q23-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。債務の免除の意思表示に条件を付けることを禁じる規定はなく、条件を付けることができると解されている。",
+   "body": "決め手は、条件を禁じる規定の有無である。519条は「債権者が債務者に対して債務を免除する意思を表示したときは、その債権は、消滅する」と定めるだけで、条件を付けることを禁じていない。これに対し、相殺については506条1項後段が「その意思表示には、条件又は期限を付することができない」と明文で禁じている。免除は債務者に利益を与える単独行為であり、条件を付けても債務者の地位を不当に不安定にしないから、条件付きの免除（例えば一定額を支払えば残額を免除する）もできると解されている。したがって、条件を付することができないとする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "519",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が債務者に対して債務を免除する意思を表示したときは、その債権は、消滅する",
+     "text_sha256": "2bcdcbd614a9549d058a2e3b7dc62d49720a290e9d6c27aa6e472766e30d14ba",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "506",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その意思表示には、条件又は期限を付することができない",
+     "text_sha256": "062f72fc81d33818472722921e99cdcf21fc04d5302d967ddf05aa708391268e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "免除の意思表示に条件を付けられるとする点は解釈による"
+   ],
+   "id": "exp-shiho-2024-minpo-q23-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q23-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。連帯債権者の一人が免除をしたときは、その者に分与されるべき利益の部分（30万円）について他の連帯債権者は履行を請求できない（433条）。",
+   "body": "決め手は、433条である。同条は「連帯債権者の一人と債務者との間に更改又は免除があったときは、その連帯債権者がその権利を失わなければ分与されるべき利益に係る部分については、他の連帯債権者は、履行を請求することができない」と定める。本肢では、Ａ・Ｂの内部関係の割合は平等であるから、Ａに分与されるべき利益は60万円のうち30万円である。そのため、Ａが免除をすると、Ｂはその30万円の部分について請求できず、残りの30万円の限度でのみＣに支払を請求できる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "433",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債権者の一人と債務者との間に更改又は免除があったときは、その連帯債権者がその権利を失わなければ分与されるべき利益に係る部分については、他の連帯債権者は、履行を請求することができない",
+     "text_sha256": "f1a89c37abe61d33b0bf4dd149653bc8fdd78de208401480c7a3a5fca147cd01",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2024-minpo-q23-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q23-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。連帯債務者の一人に対する免除は他の連帯債務者に効力を生じない（441条本文の相対的効力）ので、ＣはＢに60万円全額を請求できる。",
+   "body": "決め手は、441条である。同条本文は「第四百三十八条、第四百三十九条第一項及び前条に規定する場合を除き、連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない」と定め、免除は例外として挙げられていない。そのため、ＣがＡの債務を免除しても、Ｂの債務には影響せず、別段の意思表示がない限り、ＣはＢに60万円の支払を請求できる。同条ただし書は「債権者及び他の連帯債務者の一人が別段の意思を表示したときは、当該他の連帯債務者に対する効力は、その意思に従う」とするから、ＢとＣが別段の意思を表示した場合に限り異なる扱いとなる。したがって、別段の意思表示がない限り60万円を請求できないとする本肢は、原則と例外を逆にしており誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四百三十八条、第四百三十九条第一項及び前条に規定する場合を除き、連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者及び他の連帯債務者の一人が別段の意思を表示したときは、当該他の連帯債務者に対する効力は、その意思に従う",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "平成29年改正で連帯債務者の一人に対する免除の効力が変わった。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2024-minpo-q23-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q23-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、質権設定者は質権者に対し目的債権の担保価値を維持すべき義務を負い、債権の免除などはこの義務に違反するとしている。",
+   "body": "決め手は、債権質の設定者の担保価値維持義務に関する判例である。最高裁平成18年12月21日判決は、債権が質権の目的とされた場合、質権設定者は質権者に対し当該債権の担保価値を維持すべき義務を負い、債権の放棄、免除、相殺、更改等当該債権を消滅、変更させる一切の行為その他当該債権の担保価値を害するような行為を行うことは、同義務に違反するものとして許されないと判示した。したがって、債権質の設定者が第三債務者に対して目的債権に係る債務を免除することは、担保価値維持義務の違反となり、本肢は正しい。",
+   "citations": [],
+   "cases": [
+    {
+     "name": "債権質の設定者の担保価値維持義務（敷金返還請求権の質権と破産管財人の充当合意）",
+     "court": "最高裁判所第一小法廷",
+     "date": "2006-12-21",
+     "case_number": "平成17(受)276",
+     "holding": "債権が質権の目的とされた場合、質権設定者は質権者に対し当該債権の担保価値を維持すべき義務を負い、債権の放棄、免除、相殺、更改等当該債権を消滅、変更させる一切の行為その他担保価値を害するような行為は同義務に違反し許されない（全文）。破産管財人が敷金を未払賃料等に充当する合意をして質権の設定された敷金返還請求権の発生を阻害したことは、判示の事情の下では同義務に違反する（裁判要旨1）。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/33931/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2024-minpo-q23-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2024-minpo-q23-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。主たる債務が免除によって消滅すれば、保証債務の付従性により、連帯保証人の債務も消滅する。",
+   "body": "決め手は、保証債務の付従性である。519条は「債権者が債務者に対して債務を免除する意思を表示したときは、その債権は、消滅する」と定めるから、主たる債務者に対する免除により主たる債務は消滅する。保証債務は主たる債務を担保するためのものであり、主たる債務が消滅すれば保証債務も消滅すると解されている（付従性）。この点は連帯保証であっても変わらない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "519",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が債務者に対して債務を免除する意思を表示したときは、その債権は、消滅する",
+     "text_sha256": "2bcdcbd614a9549d058a2e3b7dc62d49720a290e9d6c27aa6e472766e30d14ba",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "保証債務の付従性による消滅は解釈による"
+   ],
+   "id": "exp-shiho-2024-minpo-q23-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
