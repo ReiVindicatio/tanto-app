@@ -1,0 +1,246 @@
+{
+ "question_id": "shiho-2018-keiho-q09",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-keiho-q09-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。猶予期間内の再犯で罰金に処せられたときは、刑の全部の執行猶予の取消しは裁量的（取り消すことができる）であり、必ず取り消す必要はない。",
+   "body": "刑法26条の2は「次に掲げる場合においては、刑の全部の執行猶予の言渡しを取り消すことができる。」とし、1号で「猶予の期間内に更に罪を犯し、罰金に処せられたとき。」を挙げる。これに対し、必要的取消しを定める刑法26条1号は「猶予の期間内に更に罪を犯して拘禁刑以上の刑に処せられ、その刑の全部について執行猶予の言渡しがないとき。」であり、罰金はこれに当たらない。したがって、罰金に処せられたときは取り消さなくてもよい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "26_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる場合においては、刑の全部の執行猶予の言渡しを取り消すことができる。",
+     "text_sha256": "b4b081f5aefd5be6246dca8779c2da77f59a3fa5a6f3b0442fd18a846e3b5e0d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "26_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "猶予の期間内に更に罪を犯し、罰金に処せられたとき。",
+     "text_sha256": "b4b081f5aefd5be6246dca8779c2da77f59a3fa5a6f3b0442fd18a846e3b5e0d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "26",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "猶予の期間内に更に罪を犯して拘禁刑以上の刑に処せられ、その刑の全部について執行猶予の言渡しがないとき。",
+     "text_sha256": "4e756ddb235beac01e24a034ee5a49227c52fb6796982df99aca724404e1bc74",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行法の本文（拘禁刑）で説明した。出題当時は「禁錮以上の刑」の文言であったと考えられるが、改正前の内容は条文の本文で確認していない。罰金が必要的取消しに当たらない点は結論に影響しない。"
+   ],
+   "id": "exp-shiho-2018-keiho-q09-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-keiho-q09-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。再犯加重は長期の2倍以下とするが、有期の刑を加重する場合の上限は30年であり、「20年まで」ではない。",
+   "body": "誤りは「懲役２０年までしか上げることができない」の部分。刑法56条1項は、拘禁刑に処せられた者がその執行を終わった日から五年以内に更に罪を犯し有期拘禁刑に処するときを再犯とし、刑法57条は「再犯の刑は、その罪について定めた拘禁刑の長期の二倍以下とする。」と定める。そして刑法14条2項は「有期拘禁刑を加重する場合においては三十年にまで上げることができ」と定めるから、加重の上限は30年である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "56",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "拘禁刑に処せられた者がその執行を終わった日又はその執行の免除を得た日から五年以内に更に罪を犯した場合において、その者を有期拘禁刑に処するときは、再犯とする。",
+     "text_sha256": "ed687d38538b291d8f31ebf870ac83035912bab987eb0b8c8b555500d5bcb3c5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "57",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "再犯の刑は、その罪について定めた拘禁刑の長期の二倍以下とする。",
+     "text_sha256": "bbd7fd2993ba599aebf4d7dd3830c96eb8ae69720ac59e8313d20be7c9230ff7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "14",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "有期拘禁刑を加重する場合においては三十年にまで上げることができ",
+     "text_sha256": "cd903d9273b575ce96450ec63f6b5dbb2812e5d545b54ff0d00dec745eeb9eef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行法の本文は懲役・禁錮を拘禁刑に一本化した後のもの。出題当時は「懲役」の文言であったが、改正前の内容は条文の本文で確認していない。加重の上限（30年）が20年でない点は結論を左右しないと考えられる。"
+   ],
+   "id": "exp-shiho-2018-keiho-q09-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-keiho-q09-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。改悛の状がある者は、無期刑については10年を経過した後、行政官庁の処分により仮釈放できる。",
+   "body": "刑法28条は「拘禁刑に処せられた者に改悛の状があるときは、有期刑についてはその刑期の三分の一を、無期刑については十年を経過した後、行政官庁の処分によって仮に釈放することができる。」と定める。本肢の「無期刑については１０年を経過した後」は条文どおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "拘禁刑に処せられた者に改悛の状があるときは、有期刑についてはその刑期の三分の一を、無期刑については十年を経過した後、行政官庁の処分によって仮に釈放することができる。",
+     "text_sha256": "e78badab357d720e79b855e097261aad169c7f6a9628058886e8f449f94e1939",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行法の本文は「拘禁刑に処せられた者」。出題当時は「懲役又は禁錮に処せられた者」であったと考えられるが、改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2018-keiho-q09-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-keiho-q09-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。観念的競合（1個の行為が2個以上の罪名に触れる場合）は最も重い刑により処断するのであり、長期に2分の1を加えるのは併合罪の加重である。",
+   "body": "誤りは「最も重い罪について定めた刑の長期にその２分の１を加えたものを長期とする」の部分。刑法54条1項は「一個の行為が二個以上の罪名に触れ、又は犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。」と定め、加重はしない。長期に2分の1を加えるのは、刑法47条の「併合罪のうちの二個以上の罪について有期拘禁刑に処するときは、その最も重い罪について定めた刑の長期にその二分の一を加えたものを長期とする。」の場合である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ、又は犯罪の手段若しくは結果である行為が他の罪名に触れるときは、その最も重い刑により処断する。",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "47",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "併合罪のうちの二個以上の罪について有期拘禁刑に処するときは、その最も重い罪について定めた刑の長期にその二分の一を加えたものを長期とする。",
+     "text_sha256": "1fc9596f24bdda7e197397577643ff582af5452eacce91f98980e44d4824d60b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2018-keiho-q09-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-keiho-q09-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。親告罪について告訴権者に自己の犯罪事実を告げ、その措置に委ねたときは、自首と同様に刑を減軽することができる。",
+   "body": "刑法42条1項は「罪を犯した者が捜査機関に発覚する前に自首したときは、その刑を減軽することができる。」と定め、同条2項は「告訴がなければ公訴を提起することができない罪について、告訴をすることができる者に対して自己の犯罪事実を告げ、その措置にゆだねたときも、前項と同様とする。」と定める（いわゆる首服）。本肢は、親告罪について発覚前に告訴権者に自発的に犯罪事実を告げ、告訴するかどうかを告訴権者の措置に委ねた場合であるから、刑を減軽することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "42",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "罪を犯した者が捜査機関に発覚する前に自首したときは、その刑を減軽することができる。",
+     "text_sha256": "bdf53adaf7996c624ac3080cccfa8f8f6ebea16070421960e1c124a7f33cbb5c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "42",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "告訴がなければ公訴を提起することができない罪について、告訴をすることができる者に対して自己の犯罪事実を告げ、その措置にゆだねたときも、前項と同様とする。",
+     "text_sha256": "bdf53adaf7996c624ac3080cccfa8f8f6ebea16070421960e1c124a7f33cbb5c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "2項の「前項と同様とする」により発覚前であることが要件となる点、および「首服」という呼び名は解釈による。"
+   ],
+   "id": "exp-shiho-2018-keiho-q09-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
