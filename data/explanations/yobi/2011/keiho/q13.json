@@ -1,0 +1,313 @@
+{
+ "question_id": "yobi-2011-keiho-q13",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiho-q13-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。郵送による毒殺では、毒物が相手方に到達して食べられる状態になった時に実行の着手があると解されており、小包が配達されずに戻ってきた本肢では殺人の実行の着手がなく、殺人未遂罪は成立しない。",
+   "body": "未遂犯は「犯罪の実行に着手してこれを遂げなかった者」（刑法43条）であり、殺人未遂（刑法203条）が成立するには殺人の実行の着手が必要である。毒物を郵送して人を殺そうとする場合、判例は、郵便物を発送した時ではなく、それが相手方に到達し、相手方が食べられる状態に置かれた時に実行の着手があるとしていると解されている。判例あり（要確認）。本肢では、甲が郵送を申し込んだものの、宛先の住所が存在しなかったため小包はどこにも配達されずに甲宅に戻っており、乙のもとに毒入り菓子が届いていない。したがって、殺人の実行の着手は認められず、殺人未遂罪は成立しない（殺人予備罪（刑法201条）の成否が問題となるにとどまる）から、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の実行に着手してこれを遂げなかった者",
+     "text_sha256": "4a18dd050345c1424dde393ee15554e66bd90bcf59f4f9c932d0ebd372647655",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "203",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百九十九条及び前条の罪の未遂は、罰する。",
+     "text_sha256": "444d9feb63784f62840667912c541157535a64269a2039d9bfd40b010b0d8e86",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "201",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百九十九条の罪を犯す目的で、その予備をした者は",
+     "text_sha256": "fca04f94e3b6ffd7451b30e4de98d6362b8ff120b419fda00a6b7bb7c8a26292",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "毒物を郵送した場合の殺人罪の実行の着手時期（相手方への到達時）",
+     "searched": [
+      "大審院（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "郵送による毒殺の実行の着手時期についての判例の立場は解釈による（判例は確かめていない）。"
+   ],
+   "id": "exp-yobi-2011-keiho-q13-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiho-q13-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。保険金詐取の目的で放火しても、保険会社に保険金を請求していなければ欺く行為が始まっておらず、詐欺の実行の着手がないので、詐欺未遂罪は成立しない。",
+   "body": "詐欺罪（刑法246条1項）は「人を欺いて財物を交付させた者」を処罰する罪であり、その実行の着手は、財物を交付させる目的で人を欺く行為を始めた時に認められると解されている。保険金をだまし取る目的で保険の目的物に放火した場合、判例は、放火しただけでは詐欺の実行の着手はなく、保険会社に保険金の支払を請求した時に着手があるとしていると解されている。判例あり（要確認）。本肢の甲は、建物に放火したが保険金を請求するに至っていないので、保険会社を欺く行為は始まっていない。したがって、詐欺未遂罪は成立せず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "246",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を欺いて財物を交付させた者は",
+     "text_sha256": "c515031b5f484a4ebf537cf5f2eb826a008d119836fd4627833e9cdb1f4a5053",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の実行に着手してこれを遂げなかった者",
+     "text_sha256": "4a18dd050345c1424dde393ee15554e66bd90bcf59f4f9c932d0ebd372647655",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "保険金詐取目的の放火と詐欺罪の実行の着手時期（保険金の請求時）",
+     "searched": [
+      "大審院（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "保険金詐取目的の放火についての判例の立場、および詐欺罪の実行の着手時期は解釈による（判例は確かめていない）。"
+   ],
+   "id": "exp-yobi-2011-keiho-q13-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiho-q13-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。タンスの引き出しを開けて物色した時点で窃盗の実行の着手があり、窃盗未遂の犯人が逮捕を免れるため脅迫したときは、事後強盗の未遂罪が成立する。",
+   "body": "刑法238条は「窃盗が、財物を得てこれを取り返されることを防ぎ、逮捕を免れ、又は罪跡を隠滅するために、暴行又は脅迫をしたときは、強盗として論ずる」と定め、刑法243条はこの罪の未遂も罰している。住居に侵入して金品を物色する行為があれば、窃盗の実行の着手があると解されている。判例あり（要確認）。そして判例は、窃盗が未遂に終わった犯人による事後強盗の行為は、財物を得なかった点で強盗未遂と同じ態様であるから、事後強盗の未遂として処断すべきであるとしている。本肢の甲は、タンスの引き出しを開けるなどして金目の物を探したので窃盗の実行に着手しているが、何も取れないうちに発見され、逮捕を免れるため包丁を示して乙を脅迫している。したがって、甲には事後強盗未遂罪が成立し、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "238",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "窃盗が、財物を得てこれを取り返されることを防ぎ、逮捕を免れ、又は罪跡を隠滅するために、暴行又は脅迫をしたときは、強盗として論ずる",
+     "text_sha256": "32673008aad466f64c68967856be9fb6032e771cf5215eed8414bfab75c3b845",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "243",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百三十八条から第二百四十条まで",
+     "text_sha256": "bb37bccf7c5ac6610a6a71b357963698f384bc57cb344d9383496e7d35f27d3e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "窃盗未遂犯人による事後強盗は事後強盗の未遂",
+     "court": "最高裁判所第二小法廷",
+     "date": "1949-07-09",
+     "case_number": "昭和24(れ)121",
+     "holding": "窃盗が未遂に終わった犯人による準強盗（事後強盗）の行為は、準強盗の未遂として処断すべきであり、準強盗の既遂とするのは違法である。窃盗未遂犯人による準強盗は、財物を得なかった点で強盗の未遂と同一の犯罪態様であるからである。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56624/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [
+    {
+     "about": "住居内で金品を物色した時点での窃盗の実行の着手",
+     "searched": [
+      "大審院（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "物色行為による窃盗の実行の着手は解釈による（判例は確かめていない）。"
+   ],
+   "id": "exp-yobi-2011-keiho-q13-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiho-q13-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。拘禁場の損壊による加重逃走罪は、逃走の手段としての損壊を開始した時に実行の着手があるので、脱出可能な穴を開けるに至らなくても加重逃走未遂罪が成立する。",
+   "body": "刑法98条は、前条（刑法97条）に規定する者が「拘禁場若しくは拘束のための器具を損壊し」て逃走したときを加重逃走罪として処罰し、刑法102条により未遂も罰せられる。判例は、拘禁場の損壊による加重逃走罪については、逃走の手段としての損壊が開始されたときには、逃走行為自体に着手していなくても実行の着手があるとし、未決の囚人が逃走の目的で舎房の換気孔の周辺のモルタル部分を削り取って損壊したが、脱出可能な穴を開けることができなかった事案で、加重逃走罪の実行の着手を認めている。本肢の甲は、拘禁されている未決の被告人で、逃走の目的で換気孔の周辺の壁部分を削り取って損壊しているから、損壊の開始によって実行の着手がある。したがって、甲には加重逃走未遂罪が成立し、「成立しない」とする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "98",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "拘禁場若しくは拘束のための器具を損壊し",
+     "text_sha256": "7d3228e3477808bb7b48955bb3c702682246eac3ce10052fc150bc5bc0352c16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "97",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法令により拘禁された者が逃走したときは",
+     "text_sha256": "8f53dcbc76fee1dbe597d45880fe4a7181e771fad6bb884cc2297b585f9c609a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "102",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この章の罪の未遂は、罰する。",
+     "text_sha256": "886587d31d6f5b2a514fceeead94bea365fc3fbcc09bc476087535a387b64d63",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "加重逃走罪（拘禁場の損壊）の実行の着手",
+     "court": "最高裁判所第三小法廷",
+     "date": "1979-12-25",
+     "case_number": "昭和54(あ)965",
+     "holding": "拘禁場又は械具の損壊による加重逃走罪については、逃走の手段としての損壊が開始されたときには、逃走行為自体に着手した事実がなくとも実行の着手がある。未決の囚人が逃走の目的で舎房の換気孔の周辺のモルタル部分を削り取り損壊したが、脱出可能な穴を開けられず逃走の目的を遂げなかった場合にも、実行の着手があったといえる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51838/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "刑法97条・98条の文言（「法令により拘禁された者」「拘束のための器具」）は出題後の改正によるもので、改正前の内容は条文の本文で確認していない（判例は「械具」の語を用いている）。"
+   ],
+   "id": "exp-yobi-2011-keiho-q13-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiho-q13-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。発火して建物に燃え移るよう設定した時限発火装置を建物に設置すれば、焼損の現実的な危険が生じており放火の実行の着手があるので、発火に至らなくても現住建造物等放火未遂罪が成立する。",
+   "body": "刑法108条は「放火して、現に人が住居に使用し又は現に人がいる建造物」等を焼損した者を処罰し、刑法112条により同条の罪の未遂も罰せられる。実行の着手は、結果発生の現実的な危険性のある行為を開始した時に認められると解されている。時限発火装置を使う場合、設定した時刻に自動的に発火し、導火材を経て建物に燃え移るように仕組んだ装置を建物に設置すれば、あとは時間の経過によって焼損に至るので、その設置の時点で焼損の現実的な危険が生じ、放火の実行の着手があると解されている。本肢の甲は、30分後に発火して導火材を経て現住建造物に燃え移るよう設定した装置を同建物に設置しているので、発火前に発覚しても、現住建造物等放火未遂罪が成立する。したがって、「成立しない」とする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "放火して、現に人が住居に使用し又は現に人がいる建造物",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "112",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百八条及び第百九条第一項の罪の未遂は、罰する。",
+     "text_sha256": "1076d517e8e1b9801473d29d8524ca430e39e70e749b594cc69bda2557c46139",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "時限発火装置の設置による放火の実行の着手は解釈による（判例は確かめていない。courts.py search 時限発火装置 放火 --all では該当する裁判例を見つけられなかった）。"
+   ],
+   "id": "exp-yobi-2011-keiho-q13-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

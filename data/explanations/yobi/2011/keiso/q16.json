@@ -1,0 +1,285 @@
+{
+ "question_id": "yobi-2011-keiso-q16",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiso-q16-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。捜査機関が被疑者を捜索に立ち会わせるかは任意であり（222条6項）、立会いが義務付けられているのは住居主等である（114条2項）。",
+   "body": "誤りは被疑者を「立ち会わせなければならない」という部分である。刑事訴訟法222条6項は、司法警察職員等は差押え・捜索をするについて「必要があるときは、被疑者をこれに立ち会わせることができる」と定めており、被疑者の立会いは義務ではない。義務とされているのは、222条1項で準用される114条2項の「住居主若しくは看守者又はこれらの者に代わるべき者をこれに立ち会わせなければならない」という立会いである。被疑者の住居で同居人の妻が立ち会っていれば、この要件は満たされると解され、さらに被疑者を立ち会わせる必要はない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "被疑者をこれに立ち会わせることができる。",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百十二条、第百十四条、第百十五条",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "114",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "住居主若しくは看守者又はこれらの者に代わるべき者をこれに立ち会わせなければならない。",
+     "text_sha256": "1856a094660fb9b044f6c128984ef7fbd05a97d15553fe51aeee67a7761a735c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "同居人の妻が「これらの者に代わるべき者」（又は住居主）にあたるという点は解釈による。"
+   ],
+   "id": "exp-yobi-2011-keiso-q16-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiso-q16-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。執行の日時の事前通知を定めた113条2項は、捜査機関の捜索には準用されていない。",
+   "body": "誤りは、あらかじめ「その者に執行の日時を通知しなければならない」という部分である。裁判所の差押状・捜索状の執行については、刑事訴訟法113条2項が「あらかじめ、執行の日時及び場所を前項の規定により立ち会うことができる者に通知しなければならない」と定めるが、その対象は同条1項の検察官・被告人・弁護人であり、捜索場所の住居主ではない。しかも、捜査機関の押収・捜索に準用する規定を列挙した222条1項は「第百十二条、第百十四条、第百十五条」などを挙げるものの113条を挙げていない。したがって、司法警察員が被疑者以外の者の住居を捜索する際に、その者へ執行の日時を事前に通知する義務はない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "113",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "あらかじめ、執行の日時及び場所を前項の規定により立ち会うことができる者に通知しなければならない。",
+     "text_sha256": "aa9f1d209c913cea646f5ed7621e51e00dd5216c3391563a8e931de2f38663c0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官、被告人又は弁護人は、差押状又は捜索状の執行に立ち会うことができる。",
+     "text_sha256": "aa9f1d209c913cea646f5ed7621e51e00dd5216c3391563a8e931de2f38663c0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百十二条、第百十四条、第百十五条",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-keiso-q16-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiso-q16-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。日没前に執行に着手すれば、夜間執行の記載がなくても日没後に処分を継続できる（222条3項・116条2項）。",
+   "body": "刑事訴訟法116条1項は、令状に夜間でも執行できる旨の記載がなければ、日出前・日没後に人の住居等に入ることはできないとする一方、同条2項は「日没前に差押状又は捜索状の執行に着手したときは、日没後でも、その処分を継続することができる。」と定める。222条3項は「第百十六条及び第百十七条の規定は、検察官、検察事務官又は司法警察職員が第二百十八条の規定によつてする差押え又は捜索について準用する。」としており、司法警察員が捜索差押許可状によって行う捜索にもこの規定が及ぶ。したがって肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "116",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "日没前に差押状又は捜索状の執行に着手したときは、日没後でも、その処分を継続することができる。",
+     "text_sha256": "de521f987ec1b7b15206fdf90d37e7847bcb04f31295efba711ba268919af776",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "116",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "令状に夜間でも執行することができる旨の記載がなければ",
+     "text_sha256": "de521f987ec1b7b15206fdf90d37e7847bcb04f31295efba711ba268919af776",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第百十六条及び第百十七条の規定は、検察官、検察事務官又は司法警察職員が第二百十八条の規定によつてする差押え又は捜索について準用する。",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-keiso-q16-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiso-q16-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。住居主を立ち会わせることができないときは、住居主に「代わるべき者」としてアパートの管理人を立ち会わせることができる（222条1項・114条2項）。",
+   "body": "刑事訴訟法114条2項は、人の住居で捜索状の執行をするときは「住居主若しくは看守者又はこれらの者に代わるべき者をこれに立ち会わせなければならない」とし、これらの者を立ち会わせることができないときは「隣人又は地方公共団体の職員を立ち会わせなければならない」と定める。この規定は222条1項により司法警察員の捜索に準用される。居室の住居主本人を立ち会わせることができない場合、その居室を含むアパートを管理する管理人は、住居主に代わるべき者として立会人になり得ると解されている。したがって、管理人を立ち会わせて捜索することができ、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "114",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "住居主若しくは看守者又はこれらの者に代わるべき者をこれに立ち会わせなければならない。",
+     "text_sha256": "1856a094660fb9b044f6c128984ef7fbd05a97d15553fe51aeee67a7761a735c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "114",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "隣人又は地方公共団体の職員を立ち会わせなければならない。",
+     "text_sha256": "1856a094660fb9b044f6c128984ef7fbd05a97d15553fe51aeee67a7761a735c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百十二条、第百十四条、第百十五条",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "アパートの管理人が「これらの者に代わるべき者」にあたるという点は解釈による。"
+   ],
+   "id": "exp-yobi-2011-keiso-q16-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiso-q16-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。場所を対象とする捜索差押許可状で、その場所にある金庫内も捜索でき、錠を外すなどの必要な処分もできる。",
+   "body": "誤りは金庫内を「捜索することはできない」という部分である。場所を対象とする捜索の令状は、その場所に存在する物（その場所の管理者が管理する物）にも及ぶと解されており、会社事務所を捜索すべき場所とする許可状で、事務所内の金庫の中を捜索することができる。また、刑事訴訟法111条1項は「差押状又は捜索状の執行については、錠を外し、封を開き、その他必要な処分をすることができる。」と定め、この規定は222条1項（「第百十一条第一項前段及び第二項」）により捜査機関の捜索に準用されるから、施錠された金庫であっても開けて捜索することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "111",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "差押状又は捜索状の執行については、錠を外し、封を開き、その他必要な処分をすることができる。",
+     "text_sha256": "6fdbbef430c83e88b2025b4fdf95610001690dd45396cf952258d9a5e7b58b4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "222",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百十一条第一項前段及び第二項",
+     "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "場所に対する捜索令状がその場所にある金庫等の物に及ぶという点は解釈による。"
+   ],
+   "id": "exp-yobi-2011-keiso-q16-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

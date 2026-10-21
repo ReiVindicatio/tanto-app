@@ -1,0 +1,329 @@
+{
+ "question_id": "yobi-2011-keiho-q08",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiho-q08-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：職務執行中の警察官に対する1個の暴行で傷害を負わせた場合、公務執行妨害罪と傷害罪は1個の行為が2個の罪名に触れるものとして観念的競合となる。",
+   "body": "決め手は、公務執行妨害罪と傷害罪とでは守るものが異なり、1個の暴行が両罪に触れる点である。刑法95条1項は「公務員が職務を執行するに当たり、これに対して暴行又は脅迫を加えた者」を処罰し、刑法204条は「人の身体を傷害した者」を処罰する。前者は公務の円滑な執行を、後者は人の身体を守るものと解されているから、一方が他方に吸収されることはない。甲が職務質問中の乙に加えた暴行は1個の行為であり、刑法54条1項前段の「一個の行為が二個以上の罪名に触れ」る場合に当たるから、両罪は観念的競合となると解されている（判例あり（要確認））。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "95",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公務員が職務を執行するに当たり、これに対して暴行又は脅迫を加えた者",
+     "text_sha256": "f2dcdeeeb33050ac0f85e9e0f0d1b54bbbe404a5a366a9d6b4775616d51f073b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "204",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の身体を傷害した者",
+     "text_sha256": "6ede21287a797c6f241c77f9e36de03258b58392279dd9ec60ceafb09f7b2af4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "公務執行妨害罪と傷害罪が観念的競合となるとした判例",
+     "searched": [
+      "courts.py search 公務執行妨害 傷害 観念的競合（49件。裁判要旨で罪数を扱うものは見つからず）",
+      "大審院（データベースにない）の可能性"
+     ]
+    }
+   ],
+   "notes": [
+    "保護法益の違いと観念的競合とする点は解釈による。"
+   ],
+   "id": "exp-yobi-2011-keiho-q08-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiho-q08-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：通報を受けて臨場した警察官乙は、事情聴取の前であっても職務を執行するに当たる状況にあるから、乙を殴った甲には公務執行妨害罪が成立する。",
+   "body": "誤りは、事情聴取を受ける前であることを理由に公務執行妨害罪の成立を否定した部分である。刑法95条1項は「公務員が職務を執行するに当たり、これに対して暴行又は脅迫を加えた者」を処罰するが、「職務を執行するに当たり」には、現に具体的な職務行為をしている最中だけでなく、これから職務行為に取りかかろうとしている場合も含まれると解されている。乙は店員の通報を受け、無銭飲食の事件に対応する職務として同店に臨場した制服の警察官であり、事情聴取の開始前でも職務を執行するに当たる状況にあったといえる。甲は逃走するために乙を1回殴っており、これは乙に対する暴行に当たる。したがって、甲には公務執行妨害罪が成立し、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "95",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公務員が職務を執行するに当たり、これに対して暴行又は脅迫を加えた者",
+     "text_sha256": "f2dcdeeeb33050ac0f85e9e0f0d1b54bbbe404a5a366a9d6b4775616d51f073b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "「職務を執行するに当たり」の範囲は解釈による。判例は確かめていない。"
+   ],
+   "id": "exp-yobi-2011-keiho-q08-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiho-q08-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：警ら中の警察官が乗るパトロールカーへの投石は、警察官に対する暴行に当たると解されており、甲には器物損壊罪のほか公務執行妨害罪も成立する。",
+   "body": "誤りは、公務執行妨害罪は成立しないとした部分である。刑法95条1項の「暴行」は、公務員の身体に直接加えられるものに限られず、公務員に向けられた有形力の行使であれば、物に対して加えられ間接に公務員に影響を及ぼすものでもよいと解されている。最判昭和33年9月30日は、同条の罪は暴行により現実に職務執行妨害の結果が発生したことを必要とせず妨害となるべきものであれば足りるとし、職務執行中の警察官に対する投石行為はただ1回であっても同条の暴行に該当するとした。乙はパトロールカーに乗って警ら中であり職務執行中といえるから、乙の乗る車両に石を投げ付けた甲の行為は乙に対する暴行に当たり、動機が私怨であっても公務執行妨害罪が成立する。フロントガラスにひびを生じさせた点は刑法261条の「他人の物を損壊し」に当たり、両罪が成立するから、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "95",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公務員が職務を執行するに当たり、これに対して暴行又は脅迫を加えた者",
+     "text_sha256": "f2dcdeeeb33050ac0f85e9e0f0d1b54bbbe404a5a366a9d6b4775616d51f073b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "261",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の物を損壊し",
+     "text_sha256": "4b05878c69d702517a3d9714df8b4517916f6e9799015b3d78d8df4d9b8aa8c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "公務執行妨害罪の暴行と結果発生の要否（投石行為）",
+     "court": "最高裁判所第三小法廷",
+     "date": "1958-09-30",
+     "case_number": "昭和31(あ)2882",
+     "holding": "公務執行妨害罪の暴行・脅迫は、現実に職務執行妨害の結果が発生したことを必要とせず、妨害となるべきものであれば足りる。職務執行中の警察官に対する投石行為は、ただ一回であっても同条の暴行に該当する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56971/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "物に対する有形力が公務員に対する暴行に当たる（間接暴行）とする点は解釈による（最判昭和33年9月30日の裁判要旨は警察官に対する投石の事例）。"
+   ],
+   "id": "exp-yobi-2011-keiho-q08-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiho-q08-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：事後強盗致傷罪と公務執行妨害罪は守るものが異なり、一方が他方に吸収されることはなく、観念的競合となると解されている。",
+   "body": "誤りは、公務執行妨害罪が事後強盗致傷罪に吸収されるとした部分である。刑法238条は窃盗が「逮捕を免れ」るために暴行をしたときは「強盗として論ずる」とし、刑法240条は「強盗が、人を負傷させたとき」を処罰するから、甲には事後強盗致傷罪が成立する。他方、刑法95条1項は「公務員が職務を執行するに当たり、これに対して暴行又は脅迫を加えた者」を処罰しており、守るものは公務の円滑な執行であって、財産や身体を守る事後強盗致傷罪とは異なると解されている。追跡中の制服の警察官乙に対する暴行は1個の行為で両罪に触れるから、刑法54条1項前段の「一個の行為が二個以上の罪名に触れ」る場合として観念的競合になると解されている（判例あり（要確認））。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "238",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "強盗として論ずる",
+     "text_sha256": "32673008aad466f64c68967856be9fb6032e771cf5215eed8414bfab75c3b845",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "238",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "逮捕を免れ",
+     "text_sha256": "32673008aad466f64c68967856be9fb6032e771cf5215eed8414bfab75c3b845",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "240",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "強盗が、人を負傷させたとき",
+     "text_sha256": "606eeb6a25b0c01dd2a8d06824cea550181f8c9024cb24edda30017c5d886eb7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "95",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公務員が職務を執行するに当たり、これに対して暴行又は脅迫を加えた者",
+     "text_sha256": "f2dcdeeeb33050ac0f85e9e0f0d1b54bbbe404a5a366a9d6b4775616d51f073b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "事後強盗（致傷）罪と公務執行妨害罪が観念的競合となるとした判例",
+     "searched": [
+      "courts.py search 公務執行妨害 事後強盗 --all",
+      "courts.py search 強盗致傷 公務執行妨害 観念的競合 --all"
+     ]
+    }
+   ],
+   "notes": [
+    "保護法益の違いと観念的競合とする点は解釈による。"
+   ],
+   "id": "exp-yobi-2011-keiho-q08-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiho-q08-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：逮捕状を示して行う適法な逮捕は警察官の職務の執行であり、これに暴行を加えれば、結局逮捕されて妨害の結果が生じなくても公務執行妨害罪が成立する。",
+   "body": "決め手は、公務執行妨害罪は現実に職務の執行が妨げられたことを必要としない点である。刑事訴訟法199条1項は司法警察職員が「裁判官のあらかじめ発する逮捕状により、これを逮捕することができる」とし、201条1項は「逮捕状により被疑者を逮捕するには、逮捕状を被疑者に示さなければならない」と定めており、乙は逮捕状を示して逮捕に当たっているから、職務を執行するに当たる状況にある。刑法95条1項は「公務員が職務を執行するに当たり、これに対して暴行又は脅迫を加えた者」を処罰するところ、最判昭和33年9月30日は、同条の罪は暴行により現実に職務執行妨害の結果が発生したことを必要とせず妨害となるべきものであれば足りるとした。甲は逮捕を免れるために乙に暴行を加えているから、結局その場で逮捕されたとしても公務執行妨害罪が成立し、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判官のあらかじめ発する逮捕状により、これを逮捕することができる",
+     "text_sha256": "cd5909a122ba9914e9296d9a1df3c86f2382ea6f58616fdbc3d44bf442649c5b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "201",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "逮捕状により被疑者を逮捕するには、逮捕状を被疑者に示さなければならない",
+     "text_sha256": "748e71847d9aee1d4b4aed10c933c21b6443dfd94806dc5c4700c35874f4e990",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "95",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公務員が職務を執行するに当たり、これに対して暴行又は脅迫を加えた者",
+     "text_sha256": "f2dcdeeeb33050ac0f85e9e0f0d1b54bbbe404a5a366a9d6b4775616d51f073b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "公務執行妨害罪の暴行と結果発生の要否",
+     "court": "最高裁判所第三小法廷",
+     "date": "1958-09-30",
+     "case_number": "昭和31(あ)2882",
+     "holding": "公務執行妨害罪は、公務員が職務を執行するに当たりこれに対して暴行または脅迫を加えたときは直ちに成立し、現実に職務執行妨害の結果が発生したことを必要とせず、妨害となるべきものであれば足りる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56971/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "逮捕状による逮捕が適法な職務執行に当たることは、本肢の事実（逮捕状を示しての逮捕）を前提にした。"
+   ],
+   "id": "exp-yobi-2011-keiho-q08-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

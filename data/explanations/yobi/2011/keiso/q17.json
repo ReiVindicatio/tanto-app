@@ -1,0 +1,320 @@
+{
+ "question_id": "yobi-2011-keiso-q17",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-21",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiso-q17-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。受け取りから24時間以内という制限のほか、身体拘束から72時間を超えられないという制限があり、期限は4月4日午前10時である。",
+   "body": "誤りは、受け取った時から24時間後の4月4日午前10時30分までに行えば「足りる」とする点である。刑事訴訟法205条1項は、送致された被疑者を受け取った検察官は「被疑者を受け取つた時から二十四時間以内に裁判官に被疑者の勾留を請求しなければならない」とするが、同条2項は「前項の時間の制限は、被疑者が身体を拘束された時から七十二時間を超えることができない。」と定める。事例では、甲が現行犯逮捕されたのは4月1日午前10時であるから、72時間の制限は4月4日午前10時に満了する。したがって、受け取りから24時間となる同日午前10時30分より前の、同日午前10時までに勾留請求をしなければならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "205",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被疑者を受け取つた時から二十四時間以内に裁判官に被疑者の勾留を請求しなければならない。",
+     "text_sha256": "d27c2d1b2f006955775756376eb8ddd3f8fdae1848951d1fefe93d3c7d854837",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "205",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の時間の制限は、被疑者が身体を拘束された時から七十二時間を超えることができない。",
+     "text_sha256": "d27c2d1b2f006955775756376eb8ddd3f8fdae1848951d1fefe93d3c7d854837",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-keiso-q17-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiso-q17-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。逮捕された軽犯罪法違反の事実に、逮捕されていない窃盗の事実を付け加えて勾留請求することは許されると解されている。",
+   "body": "被疑者の勾留は逮捕を経ていることが前提とされ（刑事訴訟法205条1項など）、勾留請求の基礎となる事実は逮捕の事実と同一であることを要するのが原則と解されている（逮捕前置）。もっとも、逮捕された事実について勾留請求をする際に、逮捕されていない他の事実を併せて勾留請求することは許されると解されている。事例では、甲は軽犯罪法違反で適法に現行犯逮捕されており、その事実を含めて勾留請求をするのであるから、窃盗の事実を付け加えることができる。なお、軽犯罪法違反は「拘留又は科料」に当たる罪であるが、207条1項により被疑者の勾留に適用される60条3項は、こうした罪の事件でも「被告人が定まつた住居を有しない場合に限り」勾留を認めており、甲の住居は判明していない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "205",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官は、第二百三条の規定により送致された被疑者を受け取つたときは",
+     "text_sha256": "d27c2d1b2f006955775756376eb8ddd3f8fdae1848951d1fefe93d3c7d854837",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "60",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "被告人が定まつた住居を有しない場合に限り",
+     "text_sha256": "fc2a80617b4371059a22447a68c6aeab2d2cfc71a0a3b5dca33372f62e77a95c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "207",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前三条の規定による勾留の請求を受けた裁判官は、その処分に関し裁判所又は裁判長と同一の権限を有する。",
+     "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "逮捕前置の原則と、未逮捕の事実を付け加えた勾留請求が許されるという点は、条文に明記がなく、解釈による。"
+   ],
+   "id": "exp-yobi-2011-keiso-q17-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiso-q17-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。略式命令の請求に際して検察官がすべき説明・告知・異議の確認を定めた461条の2のとおりである。",
+   "body": "刑事訴訟法461条の2第1項は「検察官は、略式命令の請求に際し、被疑者に対し、あらかじめ、略式手続を理解させるために必要な事項を説明し、通常の規定に従い審判を受けることができる旨を告げた上、略式手続によることについて異議がないかどうかを確めなければならない。」と定める。軽犯罪法違反は「拘留又は科料」に当たる罪であり、461条は簡易裁判所が略式命令で「百万円以下の罰金又は科料」を科することができるとしているから、科料を求めて略式命令を請求することができる。その請求に際しては、肢のとおりの手続を踏まなければならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "461_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "検察官は、略式命令の請求に際し、被疑者に対し、あらかじめ、略式手続を理解させるために必要な事項を説明し、通常の規定に従い審判を受けることができる旨を告げた上、略式手続によることについて異議がないかどうかを確めなければならない。",
+     "text_sha256": "950abd7304b379505ef70fa6c937c9305c5be475dba92a7d793c7ae5f957d2a3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "461",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "百万円以下の罰金又は科料",
+     "text_sha256": "45d701ba7b8178e2625f04c50d175ef6ecc52f26f7ea2675e7e134ce27701811",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-keiso-q17-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiso-q17-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。逮捕中の被疑者を制限時間内に公判請求するときは、勾留請求は不要で、釈放せずに起訴でき、勾留は裁判官が判断する。",
+   "body": "誤りは「釈放した上で公判請求しなければならない」という部分である。刑事訴訟法205条3項は「前二項の時間の制限内に公訴を提起したときは、勾留の請求をすることを要しない。」と定め、被疑者を釈放しなければならないのは、同条4項により時間の制限内に「勾留の請求又は公訴の提起をしないとき」である。そして280条2項は、現行犯人として逮捕された被疑者でまだ勾留されていないものについて205条の時間の制限内に公訴の提起があった場合には、裁判官が「速やかに、被告事件を告げ、これに関する陳述を聴き、勾留状を発しないときは、直ちにその釈放を命じなければならない」とする。したがって、検察官は甲を釈放しないまま公判請求することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "205",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前二項の時間の制限内に公訴を提起したときは、勾留の請求をすることを要しない。",
+     "text_sha256": "d27c2d1b2f006955775756376eb8ddd3f8fdae1848951d1fefe93d3c7d854837",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "205",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "勾留の請求又は公訴の提起をしないとき",
+     "text_sha256": "d27c2d1b2f006955775756376eb8ddd3f8fdae1848951d1fefe93d3c7d854837",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "280",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "速やかに、被告事件を告げ、これに関する陳述を聴き、勾留状を発しないときは、直ちにその釈放を命じなければならない。",
+     "text_sha256": "6bf02cb32d692154a0b8144fcbad1f29762cecc02e833c5874b9d21346708cf5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-yobi-2011-keiso-q17-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-keiso-q17-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。軽犯罪法違反は簡易裁判所の専属だが、地方裁判所も管轄できる窃盗と関連するので、上級の地方裁判所が併せて管轄できる（刑訴法3条1項・9条1項1号）。",
+   "body": "軽犯罪法違反は問題文の参照条文のとおり「拘留又は科料」に当たる罪であり、刑法9条・10条1項によれば拘留・科料は罰金より軽い刑であるから「罰金以下の刑に当たる罪」として、裁判所法24条2号により地方裁判所の裁判権から除かれ、同法33条1項2号により簡易裁判所が裁判権を持つ。一方、窃盗罪（刑法235条）は「十年以下の拘禁刑又は五十万円以下の罰金」に当たる罪であり、地方裁判所（裁判所法24条2号）と簡易裁判所（同法33条1項2号の「選択刑として罰金が定められている罪」）の双方が裁判権を持つ。刑事訴訟法9条1項1号により「一人が数罪を犯したとき」は事件は関連し、同法3条1項は「事物管轄を異にする数個の事件が関連するときは、上級の裁判所は、併せてこれを管轄することができる。」と定める。したがって、両事実を併せて地方裁判所に公判請求することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "死刑、拘禁刑、罰金、拘留及び科料を主刑とし、没収を付加刑とする。",
+     "text_sha256": "aa2d764e6702b4951a739fa2af6042d0b98888c949cc1dcd996e6fffbeef0848",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "10",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主刑の軽重は、前条に規定する順序による。",
+     "text_sha256": "891534f51d0c0f7c97718c72f4556d738f356838b087a3d8f821ed5b0d1ee4b6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "裁判所法",
+     "article": "24",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第十六条第四号の罪及び罰金以下の刑に当たる罪以外の罪に係る訴訟の第一審",
+     "text_sha256": "a50ed98d87532e8436ff9b3a9d36c531615f48c60ff1cd46ee238e073c4131ed",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "裁判所法",
+     "article": "33",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "罰金以下の刑に当たる罪、選択刑として罰金が定められている罪又は刑法第百八十六条、第二百五十二条若しくは第二百五十六条の罪に係る訴訟",
+     "text_sha256": "59b209226c1ec4be24efdc8806eba95615b2b7cd2fd9acc69c4f03ab612e50ef",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "235",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "十年以下の拘禁刑又は五十万円以下の罰金",
+     "text_sha256": "44f910b87f784daf350f25c4067c5a24e6e862555ec52f35ceea3c0cd53efc1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一人が数罪を犯したとき。",
+     "text_sha256": "dfc89b85b0b8b0a71117d2e9166f68022626f02ea22679e624ca04bef38b39bd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑事訴訟法",
+     "article": "3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "事物管轄を異にする数個の事件が関連するときは、上級の裁判所は、併せてこれを管轄することができる。",
+     "text_sha256": "9c7d8781b4b99b9015419402a7ad691285a23ef055f98c0b66ac8e7e0a63809d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "窃盗罪の法定刑は、現行の刑法235条の本文（拘禁刑）で説明した。出題当時の法定刑の文言は刑法改正で変わっている可能性があり、改正前の内容は条文の本文で確認していない。結論は、罰金が選択刑として定められ、かつ罰金以下の刑に限られない罪であることに依拠している。",
+    "地方裁判所が併せて管轄できるという結論は、刑事訴訟法3条1項・9条1項1号の文言の当てはめによる。"
+   ],
+   "id": "exp-yobi-2011-keiso-q17-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
