@@ -1066,3 +1066,23 @@ button.start {
   stroke: var(--brand);
   stroke-width: 2;
 }
+
+/* 分野ごと（T016） */
+.topics > summary {
+  cursor: pointer;
+}
+.topic-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+.topic {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-top: 1px solid var(--border-subtle);
+}
+.topic.weak .topic-label {
+  font-weight: bold;
+}

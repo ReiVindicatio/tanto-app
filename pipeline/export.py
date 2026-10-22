@@ -23,6 +23,7 @@ import unicodedata
 
 from check_explanations import EXPLANATIONS, check_question
 from common import EXAM_IDS, GROUP_IDS, ROOT, SUBJECT_IDS
+from topics import OTHER, Tocs, topic_of
 
 QUESTIONS = ROOT / "data" / "questions"
 FLAGS = ROOT / "data" / "review" / "flags.json"
@@ -142,6 +143,28 @@ def dedup(docs: list[dict]) -> tuple[dict[str, str], list[str]]:
     return aliases, conflicts
 
 
+def topics(docs: list[dict]) -> dict:
+    """分野（T016）：科目ごとに、分野名と、その分野の肢カードの ID（空白でつなぐ）。並びは法令・目次の順（行政法は肢の多い順）"""
+    tocs = Tocs()
+    by_subject: dict[str, dict[str, dict]] = {}
+    for doc in docs:
+        exp = {e["statement_id"]: e for e in doc["explanations"]}
+        for st in doc["statements"]:
+            if not st["truth_at_exam"] or "review_flag" in st:
+                continue
+            label, key = topic_of(doc["subject"], exp.get(st["id"]), tocs)
+            t = by_subject.setdefault(doc["subject"], {}).setdefault(label, {"label": label, "key": key, "ids": []})
+            t["ids"].append(st["id"])
+    out = {}
+    for subject, ts in by_subject.items():
+        if subject == "gyosei":
+            order = sorted(ts.values(), key=lambda t: (t["label"] == OTHER, -len(t["ids"]), t["label"]))
+        else:
+            order = sorted(ts.values(), key=lambda t: t["key"])
+        out[subject] = [{"label": t["label"], "cards": " ".join(t["ids"])} for t in order]
+    return out
+
+
 def card_list(doc: dict, name: str) -> str:
     """出題できる肢カードの ID（束の ID を除いた「q11-e」の形）を空白でつないだもの（T038）。
     アプリは起動時に index.json だけ読み、枚数・回答済みの数・今日の○問の選び出しに使う。問の ID は「束の ID-q11」"""
@@ -211,6 +234,10 @@ def main() -> None:
             "explanations": len(doc["explanations"]),
             "attribution": doc["attribution"],
         })
+    # 分野の一覧（T016）。科目の画面で分野を開いたときだけ読む（起動時の index.json には入れない）
+    topic_doc = {"note": "分野は、解説が最初に引いている条文の、e-Gov の目次での編・章（T016）。条文を引いていない肢は「その他」",
+                 "subjects": topics(docs)}
+    (OUT / "topics.json").write_text(json.dumps(topic_doc, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     index = {"sets": sets, "aliases": dict(sorted(aliases.items()))}
     (OUT / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     for s in sets:

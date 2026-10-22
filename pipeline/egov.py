@@ -9,6 +9,7 @@
   python3 pipeline/egov.py --fetch-all           # LAWS の全法令
   python3 pipeline/egov.py 民法 5 6 98_2         # 保存済みの条文を表示（未取得なら先に取得する）
   python3 pipeline/egov.py 日本国憲法 前文        # 前文・別表（「別表第一」など）・条のない法令の本文（「本則」）も条と同じに引ける
+  python3 pipeline/egov.py --fetch-toc 民法       # 目次（条ごとの編・章・節）だけを取得して data/statutes/toc/ に保存（分野タグ：T016）
 """
 from __future__ import annotations
 
@@ -24,6 +25,9 @@ import xml.etree.ElementTree as ET
 from common import ROOT
 
 STATUTES = ROOT / "data" / "statutes"
+TOC = STATUTES / "toc"
+# 目次の階層（e-Gov の要素名 → 見出しの要素名）
+TOC_LEVELS = {"Part": "PartTitle", "Chapter": "ChapterTitle", "Section": "SectionTitle", "Subsection": "SubsectionTitle", "Division": "DivisionTitle"}
 # 法令名 → (保存名, 法令番号[, e-Gov 上の法令名])。取得時に e-Gov の法令名と一致するかを確かめる。
 # e-Gov の法令名が通称と違う法令（題名のない古い法律）は、3つ目に e-Gov 上の法令名を書く
 LAWS = {
@@ -228,6 +232,45 @@ def article_record(title: str | None, caption: str | None, paragraphs: list[dict
     }
 
 
+def build_toc(root: ET.Element) -> dict[str, list[str]]:
+    """条番号 → その条がある編・章・節などの見出し（上から順に。「第三編　債権」の形）。前文は ["前文"]"""
+    toc: dict[str, list[str]] = {}
+
+    def walk(el: ET.Element, path: list[str]) -> None:
+        for child in el:
+            if child.tag in TOC_LEVELS:
+                walk(child, path + [(child.findtext(TOC_LEVELS[child.tag]) or "").strip()])
+            elif child.tag == "Article" and child.get("Num"):
+                toc.setdefault(child.get("Num"), path)
+
+    main = root.find(".//LawBody/MainProvision")
+    if main is not None:
+        walk(main, [])
+    if root.find(".//LawBody/Preamble") is not None:
+        toc["前文"] = ["前文"]
+    return toc
+
+
+def fetch_toc(law: str) -> dict:
+    """目次だけを取得して保存する（条の本文のファイルは触らない。本文を取り直すと取得日・改正の取り込みが変わるため）"""
+    law_num = LAWS[law][1]
+    url = f"https://laws.e-gov.go.jp/api/1/lawdata/{urllib.parse.quote(law_num)}"
+    with urllib.request.urlopen(url, timeout=120) as r:
+        xml = r.read()
+    root = ET.fromstring(xml)
+    if root.findtext("Result/Code") != "0":
+        raise ValueError(f"e-Gov API がエラー：{root.findtext('Result/Message')}")
+    rec = {"law": law, "law_num": law_num, "url": url, "fetched_at": datetime.date.today().isoformat(), "toc": build_toc(root)}
+    TOC.mkdir(parents=True, exist_ok=True)
+    (TOC / f"{LAWS[law][0]}.json").write_text(json.dumps(rec, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    return rec
+
+
+def load_toc(law: str) -> dict[str, list[str]] | None:
+    p = TOC / f"{LAWS[law][0]}.json" if law in LAWS else None
+    return json.loads(p.read_text(encoding="utf-8"))["toc"] if p and p.exists() else None
+
+
 def law_path(law: str):
     return STATUTES / f"{LAWS[law][0]}.json"
 
@@ -316,6 +359,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--fetch", nargs="+", choices=sorted(LAWS), metavar="法令", help="法令全体を取得して保存")
     ap.add_argument("--fetch-all", action="store_true")
+    ap.add_argument("--fetch-toc", nargs="+", choices=sorted(LAWS), metavar="法令", help="目次だけを取得して保存（T016）")
     ap.add_argument("law", nargs="?", choices=sorted(LAWS))
     ap.add_argument("articles", nargs="*")
     args = ap.parse_args()
@@ -327,6 +371,13 @@ def main() -> None:
         except Exception as e:  # noqa: BLE001
             sys.exit(f"🔴 {law}：{e}")
         print(f"✅ {law}（{rec['law_num']}）：{rec['article_count']}条を保存（{rec['fetched_at']}）")
+
+    for law in args.fetch_toc or []:
+        try:
+            rec = fetch_toc(law)
+        except Exception as e:  # noqa: BLE001
+            sys.exit(f"🔴 {law}：{e}")
+        print(f"✅ {law}：目次を保存（{len(rec['toc'])}条・{rec['fetched_at']}）")
 
     if args.law:
         rec = load_law(args.law)
