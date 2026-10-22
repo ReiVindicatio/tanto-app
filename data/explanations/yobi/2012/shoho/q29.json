@@ -1,0 +1,192 @@
+{
+ "question_id": "yobi-2012-shoho-q29",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   1
+  ],
+  "conclusion": "正解は1。振出人が第一次的な支払義務を負うかどうかは、約束手形（振出人自身が支払を約束する）と、他人に支払を委託する証券（為替手形・小切手）の仕組みの違いによるもので、為替手形の振出人も担保責任を負うにとどまるから、「信用の手段」と「支払の手段」の違いとは関係がない。",
+  "body": "記述1：約束手形の振出人は、手形法78条1項で「約束手形ノ振出人ハ為替手形ノ引受人ト同一ノ義務ヲ負フ」とされ、第一次的な支払義務を負う。小切手の振出人は「振出人ハ支払ヲ担保ス」（小切手法12条）とされ、支払拒絶を証明したときに遡求を受ける（同法39条）。しかし、同じ手形でも為替手形の振出人は「振出人ハ引受及支払ヲ担保ス」（手形法9条1項）とされ、やはり担保責任を負うにとどまる。したがって記述1の違いは、手形か小切手か（信用か支払か）ではなく、自ら支払を約束する証券か、支払を他人に委託する証券かの違いから生じるもので、リード文と関係がない。\n記述2：小切手法3条本文は、小切手は「振出人ノ処分シ得ル資金アル銀行ニ宛テ」振り出すべきものとし、同法59条は「銀行」に「法令ニ依リテ銀行ト同視セラルル人又ハ施設ヲ含ム」とする。支払の手段として確実に支払われるようにするための制約で、為替手形にはこうした制約がない。\n記述3：為替手形では「支払人ハ引受ニ因リ満期ニ於テ為替手形ノ支払ヲ為ス義務ヲ負フ」（手形法28条1項）が、小切手は「小切手ハ引受ヲ為スコトヲ得ズ」（小切手法4条）とされる。引受は満期までの信用を前提とする制度であり、小切手で引受を認めると信用の手段として使われることになるため禁じられていると解されている。\n記述4：為替手形は一覧払・一覧後定期払・日附後定期払・確定日払のいずれかとして振り出すことができる（手形法33条1項）が、「小切手ハ一覧払ノモノトス」（小切手法28条1項）とされ、これに反する記載は記載しなかったものとみなされる。満期まで支払を猶予する信用の機能を小切手に持たせない趣旨である。\n記述5：国内で振り出し支払う小切手は「十日内ニ支払ノ為之ヲ呈示スルコトヲ要ス」（小切手法29条1項）とされ、起算日は振出の日附として記載した日である（同条4項）。一覧払の為替手形は「其ノ日附ヨリ一年内ニ支払ノ為之ヲ呈示スルコトヲ要ス」（手形法34条1項）とされる。小切手では短期間で支払が行われるようにしている点で、リード文と関係がある。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "手形法",
+    "article": "78",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "約束手形ノ振出人ハ為替手形ノ引受人ト同一ノ義務ヲ負フ",
+    "text_sha256": "2823ef6188b39d7588a7715dbefb70e65caf6adac7e230b63825ba41a966ccba",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "小切手法",
+    "article": "12",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "振出人ハ支払ヲ担保ス",
+    "text_sha256": "1515d6d7ce78dabfc6c45ef3a45493d91079b930a371584726de9d9ad735622e",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "小切手法",
+    "article": "39",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "適法ノ時期ニ呈示シタル小切手ノ支払ナキ場合ニ於テ左ノ何レカニ依リ支払拒絶ヲ証明スルトキハ所持人ハ裏書人、振出人其ノ他ノ債務者ニ対シ其ノ遡求権ヲ行フコトヲ得",
+    "text_sha256": "61c969105dd09c270ad0f408c0ed23673d7916fcbbca0340b45e583f43bb45e9",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "手形法",
+    "article": "9",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "振出人ハ引受及支払ヲ担保ス",
+    "text_sha256": "9b24b11a4cad3c398fdbb83310abaff5a2ba9caaa0f0e35517463d590ec0c4d5",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "小切手法",
+    "article": "3",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "振出人ノ処分シ得ル資金アル銀行ニ宛テ",
+    "text_sha256": "86f1c23d895f30248f160d10978442fbde5c558e3221fcf6d0518178187ebda7",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "小切手法",
+    "article": "59",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "法令ニ依リテ銀行ト同視セラルル人又ハ施設ヲ含ム",
+    "text_sha256": "8623ee9e9a856c645965c8903db370968bb188d82c2474d65f13a979230161c6",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "手形法",
+    "article": "28",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "支払人ハ引受ニ因リ満期ニ於テ為替手形ノ支払ヲ為ス義務ヲ負フ",
+    "text_sha256": "c6986b9d7b0783314856f134c2e1f24d828f6a8c9ecafcc049421e3d8e5e4272",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "小切手法",
+    "article": "4",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "小切手ハ引受ヲ為スコトヲ得ズ",
+    "text_sha256": "0e9e73523cc8f454d70d77b6ee0a0a48d363515d37733e497da691312f287be1",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "手形法",
+    "article": "33",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "為替手形ハ左ノ何レカトシテ之ヲ振出スコトヲ得",
+    "text_sha256": "c39847188434ab26df5af262e1695207c7c7654751fff547111480f48566835d",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "小切手法",
+    "article": "28",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "小切手ハ一覧払ノモノトス",
+    "text_sha256": "64411e87596f39d44d342cbc98d649278e69c34c228d07d5a3e43b6a3a9d8970",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "小切手法",
+    "article": "29",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "十日内ニ支払ノ為之ヲ呈示スルコトヲ要ス",
+    "text_sha256": "2d0b496a8f931b51b9f30885511beedd1b509486f50135d6c520641c41be3157",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "小切手法",
+    "article": "29",
+    "paragraphs": [
+     "4"
+    ],
+    "quote": "本条ニ掲グル期間ノ起算日ハ小切手ニ振出ノ日附トシテ記載シタル日トス",
+    "text_sha256": "2d0b496a8f931b51b9f30885511beedd1b509486f50135d6c520641c41be3157",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "手形法",
+    "article": "34",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "其ノ日附ヨリ一年内ニ支払ノ為之ヲ呈示スルコトヲ要ス",
+    "text_sha256": "3602c959e9dcc379546a98eb4055b5c186584da37f07705f2643757eb88ab8cc",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "記述2〜5の各制度の趣旨（支払の手段としての確実性・信用の機能を持たせない）は解釈による"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}

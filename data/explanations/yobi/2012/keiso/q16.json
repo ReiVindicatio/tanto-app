@@ -1,0 +1,108 @@
+{
+ "question_id": "yobi-2012-keiso-q16",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   5
+  ],
+  "conclusion": "正解は5（エ・オ）。接見の日時の指定は39条3項で「公訴の提起前に限り」、告訴の取消しは237条1項で「公訴の提起があるまで」に限られ、いずれも起訴後はできない。",
+  "body": "ア（勾留の取消し請求）は、87条1項が「勾留されている被告人若しくはその弁護人」等の請求による勾留の取消しを定めており、起訴後に認められる。起訴前の被疑者の勾留についても、207条1項が勾留の請求を受けた裁判官は「その処分に関し裁判所又は裁判長と同一の権限を有する」としていることから、87条が準用されると解されている。したがってアは起訴前だけのものではない。イ（勾留理由開示の請求）も、82条1項が「勾留されている被告人」の請求を定めて起訴後に認められ、207条1項により被疑者の勾留にも及ぶと解されているから、起訴前だけのものではない。ウ（保釈の請求）は、88条1項が「勾留されている被告人」の請求として定め、207条1項ただし書が「保釈については、この限りでない。」として被疑者の勾留には及ぼさないから、起訴後だけに認められ、起訴前には認められない。エ（接見の日時の指定）は、39条3項が「公訴の提起前に限り」指定できるとするので、起訴前だけに認められる。オ（親告罪の告訴の取消し）は、237条1項が「告訴は、公訴の提起があるまでこれを取り消すことができる。」とするので、起訴前だけに認められる。よって、起訴前は認められ起訴後は認められないのはエとオで、5が正解となる。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "87",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "勾留されている被告人若しくはその弁護人",
+    "text_sha256": "c31fe50a78e18dbce1b557128fc05869eb56ac2e3f8364fa35004f3a86da340e",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "82",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "勾留されている被告人は、裁判所に勾留の理由の開示を請求することができる。",
+    "text_sha256": "5264abeb763cbcfc0ff1dd57a0b5d79f77d18c52dc3dfd8b9b77ac38f6ce638e",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "88",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "勾留されている被告人又はその弁護人、法定代理人、保佐人、配偶者、直系の親族若しくは兄弟姉妹は、保釈の請求をすることができる。",
+    "text_sha256": "feac6c75e414ddc41ac0cfda562fe14c735087922c6137fa7b2ee19ad0d7a1d9",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "207",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "その処分に関し裁判所又は裁判長と同一の権限を有する。但し、保釈については、この限りでない。",
+    "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "39",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "公訴の提起前に限り",
+    "text_sha256": "75b89a51ec4fe9018db639cf30e3c9a58ed8ee9aaf563c722c1141fb5cde965a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "237",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "告訴は、公訴の提起があるまでこれを取り消すことができる。",
+    "text_sha256": "bc57c2b6c0dab9c946e950edb42f4414400287b6bf0ebf4e077ad8bb3d60c15d",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "87条・82条が207条1項により被疑者の勾留にも準用されるという点は、解釈による（207条1項の文言から一般にそう解されている）"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}

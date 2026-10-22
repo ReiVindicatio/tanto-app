@@ -9,9 +9,9 @@
 - M1（基盤）完了。M2（拡充）を進行中
 - 公開先：https://tantan.reivindicatio0321.workers.dev/（main に push すると自動で更新）。リポジトリは public。検索エンジン向けの問ごとのページ・サイトマップ・閲覧状況の計測（Cloudflare Web Analytics）まで入っている（T043〜T046）
 - データ：予備（7科目×16年度）・司法（H23〜R08）の短答。カード合計 9,759枚（名寄せ後）
-- **解説の生成（T039）：完了**（2026-10-22 20:33 時点：残り 0問・肢 0・解説のある肢カード 9639・飛ばした問 31（`data/review/explain_skips.json`））。手順は `prompts/explain-runbook.md`
+- **解説の生成（T039）：完了**（2026-10-22 20:41 時点：残り 0問・肢 0・解説のある肢カード 9639・飛ばした問 31（`data/review/explain_skips.json`））。手順は `prompts/explain-runbook.md`
   - 🔴 公式の○×と食い違った解説（公開から外した。法改正かパースの誤りの信号）：shiho-2011-keiho-q12-3、shiho-2013-keiho-q09-e、shiho-2013-minso-q57-2、shiho-2013-shoho-q53-a、shiho-2014-gyosei-q38-b、shiho-2014-shoho-q54-b、yobi-2011-kenpo-q09-c、yobi-2012-gyosei-q24-c、yobi-2012-keiho-q11-1、yobi-2012-keiho-q11-4、yobi-2012-minso-q36-4、yobi-2015-keiso-q22-3、yobi-2016-shoho-q28-a、yobi-2017-keiho-q13-5、yobi-2017-shoho-q20-c、yobi-2019-minso-q40-a、yobi-2019-shoho-q21-4、yobi-2020-minso-q42-a、yobi-2020-minso-q42-b、yobi-2021-keiho-q04-a
-- **問の解説（T018）：`/loop` で連続生成中**（2026-10-22 20:33 時点：残り 208問・問の解説 162問。指示は `prompts/explain-question-v1.md`）
+- **問の解説（T018）：`/loop` で連続生成中**（2026-10-22 20:41 時点：残り 190問・問の解説 180問。指示は `prompts/explain-question-v1.md`）
 - 2026-10-22 に済ませたこと：T048（検査の穴：漢数字の条番号・記述と結論の組合せ問題）、検索結果の要約・記憶の日付で書いていた判例 11肢の確かめ直し、T004 の一部（法改正で○×が変わった 24肢を肢カードから外した）、通信傍受法・非訟事件手続法・国民健康保険法・風営法施行令の保存
 - T026（ブックマーク★）も完了・push 済み（本番の D1 に bookmarks 表を当ててから push）。誤り報告（D1 の reports）は 2026-10-22 に確かめて0件
 - 宿題：司法 R08 は最終合格発表（2026-11-11）後に告知・議事要旨をもう一度確認する。R03 刑法の問題 PDF は告知なく差し替えられている（差し替え前は未入手）

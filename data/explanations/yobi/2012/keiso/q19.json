@@ -1,0 +1,93 @@
+{
+ "question_id": "yobi-2012-keiso-q19",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   2
+  ],
+  "conclusion": "正解は2（①ａ・②ａ・③ｂ）。判例は、巡査が検査・観察で認識した結果の欄（「化学判定」欄・外部的状態の欄・「外観による判定」欄）を321条3項の「検証の結果を記載した書面」とし、被疑者との問答の欄を同巡査作成の捜査報告書として321条1項3号の書面とした。",
+  "body": "①：記述の欄は、巡査が飲酒検知管の着色度や被疑者の言語・動作などを検査・観察して「認識した結果を記載したもの」とされている。判決の全文も、これらの部分は記名押印と相まって刑訴法321条3項の「検証の結果を記載した書面」に当たるとしているので、ａが入る。321条4項は「鑑定の経過及び結果を記載した書面で鑑定人の作成したもの」についての規定であり、判例は鑑識カードを鑑定書とは扱っていないから、ｂは入らない。②：「外観による判定」欄も、巡査が被疑者の外部的状態を観察した結果を記載したものであるから、判決は前の欄と同様に検証の結果を記載したものと認めており、ａ（検証）が入る。③：被疑者との問答の欄は、巡査が質問をして被疑者の応答を簡単に記載したもので、判決は検証の結果の記載とはいえず「同巡査作成の捜査報告書たる性質のもの」として321条1項3号の書面に当たるとしたので、ｂが入る。作成したのは巡査であって被疑者ではないから、被疑者の供述書として322条1項の書面とするａは入らない。以上から①ａ・②ａ・③ｂの組合せの2が正解となる。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "321",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "検察官、検察事務官又は司法警察職員の検証の結果を記載した書面は、その供述者が公判期日において証人として尋問を受け、その真正に作成されたものであることを供述したときは、第一項の規定にかかわらず、これを証拠とすることができる。",
+    "text_sha256": "089e7b092c38ecb71ee686b5ab871df4fb7d53a6e72988a4bc31a0842d83ccc8",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "321",
+    "paragraphs": [
+     "4"
+    ],
+    "quote": "鑑定の経過及び結果を記載した書面で鑑定人の作成したもの",
+    "text_sha256": "089e7b092c38ecb71ee686b5ab871df4fb7d53a6e72988a4bc31a0842d83ccc8",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "321",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "前二号に掲げる書面以外の書面については",
+    "text_sha256": "089e7b092c38ecb71ee686b5ab871df4fb7d53a6e72988a4bc31a0842d83ccc8",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "322",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "被告人が作成した供述書又は被告人の供述を録取した書面で被告人の署名若しくは押印のあるもの",
+    "text_sha256": "5871b2e976f07c1e50dbd4715fec9cfbd5afaf4bd42f22de9feaa94f69cff6a8",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   }
+  ],
+  "cases": [
+   {
+    "name": "酒酔い鑑識カードの証拠能力",
+    "court": "最高裁判所第二小法廷",
+    "date": "1972-06-02",
+    "case_number": "昭和46(あ)2370",
+    "holding": "鑑識カードのうち「化学判定」欄及び被疑者の外部的状態に関する記載のある欄（「外観による判定」欄も同様）は刑訴法321条3項の「検証の結果を記載した書面」に当たり、被疑者との問答の記載のある欄並びに「飲酒日時」「飲酒動機」の両欄は、同巡査作成の捜査報告書たる性質のものとして同条1項3号の書面に当たる。",
+    "verified_urls": [
+     "https://www.courts.go.jp/hanrei/51026/detail2/index.html"
+    ]
+   }
+  ],
+  "pending_cases": [],
+  "notes": [],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}

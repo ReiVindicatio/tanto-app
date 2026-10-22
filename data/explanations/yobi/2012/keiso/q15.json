@@ -1,0 +1,133 @@
+{
+ "question_id": "yobi-2012-keiso-q15",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   4
+  ],
+  "conclusion": "正解は4（Ⅰ：学生Ｂ・Ｃ・Ｄ、Ⅱ：学生Ａ・Ｅ）。条文上の準用規定や呈示による弊害がないことを挙げる発言は呈示必要説（Ⅱ）に、令状のない逮捕との一貫性・逃亡の弊害・被疑者の名誉を挙げる発言は呈示不要説（Ⅰ）に結び付く。",
+  "body": "前提として、220条1項は、逮捕状による逮捕・現行犯逮捕・緊急逮捕の場合に「人の住居又は人の看守する邸宅、建造物若しくは船舶内に入り被疑者の捜索をすること」ができるとし、同条3項は「第一項の処分をするには、令状は、これを必要としない。」と定める。学生Ａは、222条1項が220条による捜索に110条（「差押状又は捜索状は、処分を受ける者にこれを示さなければならない。」）を準用していることを根拠に、これを読み替えて逮捕状を処分を受ける者（住居主）に示すべきだとするので、呈示が必要とするⅡに立つ。学生Ｅは、呈示をしても住居主が被疑者に連絡したり逮捕を妨害したりする弊害はないとするので、呈示を求めるⅡを支える発言である。学生Ｂは、現行犯逮捕（213条「逮捕状なくして」）や緊急逮捕（210条）、逮捕状の緊急執行（201条2項による73条3項の準用）の場合にも220条1項1号の捜索ができ、これらの場合は示すべき逮捕状が手元にないから、それと一貫させるべきだとするので、呈示は不要とするⅠに立つ。学生Ｃは、呈示を求めると追跡中の被疑者に逃亡されるという弊害を挙げており、呈示を不要とするⅠを支える。学生Ｄは被疑者の名誉の保護を挙げており、住居主に逮捕状を示せば被疑事実が第三者である住居主に知られることを避けるという趣旨と読めるので、Ⅰに結び付く（この読み方は問題文の発言から推したもので、公式の正解の組合せとも合う）。以上から、Ⅰに学生Ｂ・Ｃ・Ｄ、Ⅱに学生Ａ・Ｅが対応する4が正解となる。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "220",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "人の住居又は人の看守する邸宅、建造物若しくは船舶内に入り被疑者の捜索をすること",
+    "text_sha256": "164eaabe0976395eb9b592cca0149e4a9c11ae7f398b275869b2423590a3fe2b",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "220",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "第一項の処分をするには、令状は、これを必要としない。",
+    "text_sha256": "164eaabe0976395eb9b592cca0149e4a9c11ae7f398b275869b2423590a3fe2b",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "222",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "検察官、検察事務官又は司法警察職員が第二百十八条、第二百二十条及び前条の規定によつてする押収又は捜索について",
+    "text_sha256": "d2f332a3928f1ebe7dba5d422e70929c67b13aa717ce2a84690f650db287af1a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "110",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "差押状又は捜索状は、処分を受ける者にこれを示さなければならない。",
+    "text_sha256": "593bc08649226ba64090cba7ca4dbad50331cf782a35612001325681fda56e36",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "213",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "逮捕状なくして",
+    "text_sha256": "9ba5e0ad33a98aa4378e52806d654e46f609dc5390a7d2deebd4008c8c1a63c3",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "210",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "その理由を告げて被疑者を逮捕することができる",
+    "text_sha256": "a16b14ff8b4bc7cccbc8fe9f8d83d7024c9488b266bc7fa97583c253f80d917a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "201",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "第七十三条第三項の規定は、逮捕状により被疑者を逮捕する場合にこれを準用する。",
+    "text_sha256": "748e71847d9aee1d4b4aed10c933c21b6443dfd94806dc5c4700c35874f4e990",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "73",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "勾引状又は勾留状を所持しないためこれを示すことができない場合において、急速を要するときは",
+    "text_sha256": "afddd65e0f57210bc39a7308a9aaccc4bc2b077e271ab7ab8660e90b1a1e620f",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "学生Ｄの発言（被疑者の名誉の保護）がⅠに結び付く理由は、問題文の発言からの読み取りによる（解釈による）。組合せは公式の正解に合わせた",
+   "222条1項は出題後の改正で電磁的記録提供命令に関する部分が加わっている。改正前の内容は条文の本文で確認していない（220条の捜索に110条を準用する部分は現行の本文で確認した）"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}
