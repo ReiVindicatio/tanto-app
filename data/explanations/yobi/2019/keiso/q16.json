@@ -1,0 +1,121 @@
+{
+ "question_id": "yobi-2019-keiso-q16",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   2
+  ],
+  "conclusion": "正解は2（正しいものはエの1個）。私人が現行犯人を逮捕したときの引渡しを定める刑事訴訟法214条のとおりのエだけが正しく、軽微事件の特則（217条）・準現行犯（212条2項）・逮捕に伴う捜索差押えの主体（220条1項）に反するア・ウ・オと、既遂を要するとするイは誤り。",
+  "body": "ア：誤り。刑事訴訟法217条は「三十万円（刑法、暴力行為等処罰に関する法律及び経済関係罰則の整備に関する法律の罪以外の罪については、当分の間、二万円）以下の罰金、拘留又は科料に当たる罪の現行犯については、犯人の住居若しくは氏名が明らかでない場合又は犯人が逃亡するおそれがある場合に限り、第二百十三条から前条までの規定を適用する」としており、法定刑の軽い罪では現行犯逮捕の要件が加重されている。\nイ：誤り。212条1項は「現に罪を行い、又は現に罪を行い終つた者を現行犯人とする」と定めるだけで、既遂に達したことを要件としていない。「罪を行い終つた」とは実行行為を終えたことをいい、未遂罪の現行犯人も含まれると解されている。\nウ：誤り。212条2項は、同項各号の一にあたる者が「罪を行い終つてから間がないと明らかに認められるときは、これを現行犯人とみなす」と定めており、この準現行犯人は、逮捕者が犯行を現認していなくても213条により逮捕することができる。\nエ：正しい。214条は「検察官、検察事務官及び司法警察職員以外の者は、現行犯人を逮捕したときは、直ちにこれを地方検察庁若しくは区検察庁の検察官又は司法警察職員に引き渡さなければならない」と定めており、記述はこのとおりである。\nオ：誤り。令状によらない逮捕の現場での差押え・捜索・検証を定める220条は、その主体を「検察官、検察事務官又は司法警察職員は」と定めており（同条3項「第一項の処分をするには、令状は、これを必要としない。」）、現行犯人を逮捕した私人にはこの権限が認められていない。\n以上から、正しい記述はエの1個である。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "217",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "三十万円（刑法、暴力行為等処罰に関する法律及び経済関係罰則の整備に関する法律の罪以外の罪については、当分の間、二万円）以下の罰金、拘留又は科料に当たる罪の現行犯については、犯人の住居若しくは氏名が明らかでない場合又は犯人が逃亡するおそれがある場合に限り、第二百十三条から前条までの規定を適用する",
+    "text_sha256": "12aef5bc87ed75c361fc73208a4bc1e2d7f2d3204e8a2f0fec76c270590a27c8",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "212",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "現に罪を行い、又は現に罪を行い終つた者を現行犯人とする",
+    "text_sha256": "a028b575b22ce7c0c8f0adf3590174d759bdd3ef61bf07d75dcb672735a14a20",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "212",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "罪を行い終つてから間がないと明らかに認められるときは、これを現行犯人とみなす",
+    "text_sha256": "a028b575b22ce7c0c8f0adf3590174d759bdd3ef61bf07d75dcb672735a14a20",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "213",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "現行犯人は、何人でも、逮捕状なくしてこれを逮捕することができる。",
+    "text_sha256": "9ba5e0ad33a98aa4378e52806d654e46f609dc5390a7d2deebd4008c8c1a63c3",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "214",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "検察官、検察事務官及び司法警察職員以外の者は、現行犯人を逮捕したときは、直ちにこれを地方検察庁若しくは区検察庁の検察官又は司法警察職員に引き渡さなければならない",
+    "text_sha256": "2d73c42c717d4dad94fb0c41e6bd686b1399374cbdd0bc689b07b8ea4937af50",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "220",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "検察官、検察事務官又は司法警察職員は",
+    "text_sha256": "164eaabe0976395eb9b592cca0149e4a9c11ae7f398b275869b2423590a3fe2b",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "220",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "第一項の処分をするには、令状は、これを必要としない。",
+    "text_sha256": "164eaabe0976395eb9b592cca0149e4a9c11ae7f398b275869b2423590a3fe2b",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "イの「罪を行い終つた」の意味（実行行為の終了で足り既遂を要しない）は解釈による。",
+   "ウは準現行犯（212条2項）を根拠とした。212条1項の現行犯人について逮捕者の現認を要するかの判例は確かめていない。"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}

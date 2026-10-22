@@ -1,0 +1,132 @@
+{
+ "question_id": "yobi-2020-keiso-q20",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   3
+  ],
+  "conclusion": "正解は3（Ｂ・Ｄ）。付審判決定による公訴提起の擬制（267条）は起訴独占主義の例外であり、検察官は「必要と認めるときは、自ら犯罪を捜査することができる」（191条1項）。Ａは起訴便宜主義（248条）、Ｃは公訴の取消しに裁判所の許可が要らないこと（257条）、Ｅは再審が有罪の言渡しを受けた者の利益のためのものであること（435条）に反する。",
+  "body": "学生Ａ（誤り）：248条は「犯人の性格、年齢及び境遇、犯罪の軽重及び情状並びに犯罪後の情況により訴追を必要としないときは、公訴を提起しないことができる」と定めており（起訴便宜主義）、有罪判決を得られる高度の見込みがあれば公訴を提起しなければならないとする定めはない。学生Ｂ（正しい）：247条は「公訴は、検察官がこれを行う。」と定めるが、付審判請求について裁判所が事件を審判に付する決定（266条2号）をしたときは、267条により「その事件について公訴の提起があつたものとみなす」とされ、起訴独占主義の例外となる。学生Ｃ（誤り）：257条は「公訴は、第一審の判決があるまでこれを取り消すことができる。」と定めるだけで、裁判所の許可を要件としていない。学生Ｄ（正しい）：191条1項は「検察官は、必要と認めるときは、自ら犯罪を捜査することができる。」と定め、捜査の時期を公訴の提起前に限っていない。公訴提起後も一定の範囲で捜査が許されると解されている。学生Ｅ（誤り）：439条1項1号は再審の請求をすることができる者に検察官を挙げており、435条は再審の請求を「有罪の言渡をした確定判決に対して、その言渡を受けた者の利益のために、これをすることができる」と定める。したがって、検察官も有罪の言渡しを受けた者の利益のために再審を請求できる（むしろ利益のためにしか請求できない）。以上から、正しいのはＢとＤで、正解は3である。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "248",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "犯人の性格、年齢及び境遇、犯罪の軽重及び情状並びに犯罪後の情況により訴追を必要としないときは、公訴を提起しないことができる",
+    "text_sha256": "00dcf3e127bce5737ff84cf5edd644d283051a5f947a0d1ae09e02f1a4e2cd30",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "247",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "公訴は、検察官がこれを行う。",
+    "text_sha256": "d33451e84206f9ace3f8abb6db498611f4f5a96ef3c573e302c22982b1414aac",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "266",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "請求が理由のあるときは、事件を管轄地方裁判所の審判に付する。",
+    "text_sha256": "3090886fdab05e70ceb17f30db9cdecb97d37973cbaff45b2beb8307ad1adab1",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "267",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "その事件について公訴の提起があつたものとみなす",
+    "text_sha256": "935b054998292152fe6f2bbc111752e0b77a0d085edbe53cfad82f4cb60ecb99",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "257",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "公訴は、第一審の判決があるまでこれを取り消すことができる。",
+    "text_sha256": "9676f316a0e7cfba6522bd772be33e00faf49cabdafa8cee08d9bb599d1a2c30",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "191",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "検察官は、必要と認めるときは、自ら犯罪を捜査することができる。",
+    "text_sha256": "0ea254588d89db655a2c75775b4eaef11f09651e9351c515ae57cecd87c05b39",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "439",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "検察官",
+    "text_sha256": "b17cb66c7f4d4ec08b83096dc0f12faaa2746e040e7aaf9f4f0527a856fff7c5",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "435",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "有罪の言渡をした確定判決に対して、その言渡を受けた者の利益のために、これをすることができる",
+    "text_sha256": "3bff67a01d320bc4268ab49202a77de6cde97f062dbf74e7d26749ee9ce0e94c",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "Ｄの「公訴提起後も一定の範囲で捜査が許される」は解釈による（条文上は時期の限定がないことだけを根拠とした）。"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}

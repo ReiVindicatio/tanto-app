@@ -1,0 +1,120 @@
+{
+ "question_id": "yobi-2019-keiso-q17",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   3
+  ],
+  "conclusion": "正解は3（正しいものはイ・エの2個）。弁護人があるときの告知不要（刑事訴訟法207条2項ただし書）と軽微事件の勾留の制限（60条3項）は条文どおりで正しく、勾留の裁判の24時間の期限（ア）・被疑者の保釈（ウ）・少年の勾留の全面禁止（オ）は条文に反し誤り。",
+  "body": "ア：誤り。24時間の制限は、検察官が送致された被疑者を「受け取つた時から二十四時間以内に裁判官に被疑者の勾留を請求しなければならない」とする勾留の請求の期限である（205条1項）。勾留の請求を受けた裁判官については、207条5項が「速やかに勾留状を発しなければならない」と定めるだけで、24時間という期限は定められていない。\nイ：正しい。207条2項は、勾留を請求された被疑者に被疑事件を告げる際に弁護人選任権等を告げなければならないとしたうえで、「ただし、被疑者に弁護人があるときは、この限りでない」と定めている。\nウ：誤り。207条1項は、勾留の請求を受けた裁判官は「その処分に関し裁判所又は裁判長と同一の権限を有する。但し、保釈については、この限りでない」と定めており、勾留中の被疑者を保釈することはできない（保釈は被告人についての制度である）。\nエ：正しい。60条3項は、30万円（一定の罪以外は当分の間2万円）以下の罰金、拘留又は科料に当たる事件については「被告人が定まつた住居を有しない場合に限り、第一項の規定を適用する」としており、207条1項により被疑者の勾留にもこの制限が及ぶ。したがって、罪証隠滅や逃亡のおそれがあっても、住居不定でなければ勾留できない。\nオ：誤り。少年法48条1項は「勾留状は、やむを得ない場合でなければ、少年に対して、これを発することはできない」と定めており、やむを得ない場合には少年の被疑者も勾留することができる（同条2項は少年を勾留する場合の拘禁場所を定めている）。\n以上から、正しい記述はイ・エの2個である。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "205",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "受け取つた時から二十四時間以内に裁判官に被疑者の勾留を請求しなければならない",
+    "text_sha256": "d27c2d1b2f006955775756376eb8ddd3f8fdae1848951d1fefe93d3c7d854837",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "207",
+    "paragraphs": [
+     "5"
+    ],
+    "quote": "速やかに勾留状を発しなければならない",
+    "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "207",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "ただし、被疑者に弁護人があるときは、この限りでない",
+    "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "207",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "その処分に関し裁判所又は裁判長と同一の権限を有する。但し、保釈については、この限りでない",
+    "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "60",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "被告人が定まつた住居を有しない場合に限り、第一項の規定を適用する",
+    "text_sha256": "fc2a80617b4371059a22447a68c6aeab2d2cfc71a0a3b5dca33372f62e77a95c",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "少年法",
+    "article": "48",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "勾留状は、やむを得ない場合でなければ、少年に対して、これを発することはできない",
+    "text_sha256": "f0d151a1b42ae319190bfe829fe2e2b977f2859bd983266190140186eda2e894",
+    "fetched_at": "2026-10-19",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E5%85%AD%E5%8D%81%E5%85%AB%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "少年法",
+    "article": "48",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "少年を勾留する場合には、少年鑑別所にこれを拘禁することができる。",
+    "text_sha256": "f0d151a1b42ae319190bfe829fe2e2b977f2859bd983266190140186eda2e894",
+    "fetched_at": "2026-10-19",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E5%85%AD%E5%8D%81%E5%85%AB%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "207条2項〜4項の告知・教示の内容は出題後に改正されている可能性があるが、改正前の内容は条文の本文で確認していない。イの結論（弁護人があるときは告知不要）は現行の本文で説明した。"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}
