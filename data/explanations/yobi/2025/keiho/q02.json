@@ -1,0 +1,85 @@
+{
+ "question_id": "yobi-2025-keiho-q02",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   5
+  ],
+  "conclusion": "正解は5（③ｅ・⑥ｄ・⑧ｋ・⑩ａ・⑪ｐ）。学生Ｂは「不正の侵害」を人の行為に限るので、飼い主に故意・過失がない動物の攻撃には正当防衛を認めず緊急避難（法益均衡と補充性が要件）の成否を問題とし、緊急避難を違法性阻却事由と考えるから、緊急避難に当たる行為に対して正当防衛は成立し得ない。",
+  "body": "①ｂ（ない）・②ｃ（正当防衛）：飼い主の乙に故意・過失がない場合に、乙犬に怪我を負わせた行為（刑法261条の「他人の物を損壊し、又は傷害した」に当たり得る）に正当防衛が成立するかが、いわゆる対物防衛の問題である。③ｅ（不正の侵害）・④ｇ（限られる）・⑤ｊ（認めません）：刑法36条1項は「急迫不正の侵害に対して」の防衛行為を罰しないと定める。学生Ｂは、「不正の侵害」を人間の行為に限るので、乙に故意・過失がなければ正当防衛の成立を認めない。⑥ｄ（緊急避難）：その場合、刑法37条1項の緊急避難の成否が問題になる。⑦ｌ（法益均衡）・⑧ｋ（補充性）：37条1項は「やむを得ずにした行為」（補充性）であることに加え、「これによって生じた害が避けようとした害の程度を超えなかった場合に限り」（法益均衡）罰しないとしており、正当防衛より要件が厳しい。⑨ｍ（甲）：そのため、緊急避難の限度でしか対抗できないのでは、襲われた側の甲の保護が不十分だと学生Ａは指摘する。⑩ａ（ある）：これに対し学生Ｂは、乙に故意・過失がある場合は乙の行為による不正の侵害として正当防衛が成立し得ると答える。⑦法益均衡を要件としていることが、緊急避難を違法性阻却事由と考える理由とされている（解釈による）。⑪ｐ（成立し得ない）：違法性阻却事由と考えると、緊急避難に当たる行為は違法ではなく「不正」の侵害に当たらないので、それに対する正当防衛は成立し得ない。選択肢のうち、5はすべて合う。1は①ａ、2は⑦ｋ、3は⑪ｏ、4は②ｄがそれぞれ誤り。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "36",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "急迫不正の侵害に対して",
+    "text_sha256": "df6040ed7ccaca81d423e5edf396ea6e945c40302d25cd4edcf5bf74d52682b0",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "37",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "やむを得ずにした行為",
+    "text_sha256": "ce24f32acb83ba3817ba41ffeb256a9de0ddcfeef3658de5cd72e5d581fd8049",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "37",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "これによって生じた害が避けようとした害の程度を超えなかった場合に限り",
+    "text_sha256": "ce24f32acb83ba3817ba41ffeb256a9de0ddcfeef3658de5cd72e5d581fd8049",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "261",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "他人の物を損壊し、又は傷害した",
+    "text_sha256": "4b05878c69d702517a3d9714df8b4517916f6e9799015b3d78d8df4d9b8aa8c8",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "「不正の侵害」を人の行為に限る見解、緊急避難の法的性格（違法性阻却事由）と正当防衛の可否の説明は、問題文の会話から導いた解釈による",
+   "「やむを得ずにした行為」を補充性、害の程度の要件を法益均衡と対応させるのは一般的な理解による（解釈による）"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}
