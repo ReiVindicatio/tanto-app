@@ -1,0 +1,121 @@
+{
+ "question_id": "shiho-2014-shoho-q55",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   2
+  ],
+  "conclusion": "正解は2（ア・オ）。イ（文字の金額の優先）・ウ（署名の独立）・エ（善意取得）は手形を取得する者が安心して手形を受け取れるようにして流通を助ける規律と解されているのに対し、ア（振出人の義務の内容）とオ（遡求の要件としての支払呈示）は流通性を高める趣旨とは説明しにくい。",
+  "body": "記述ごとの規律は手形法の本文で確かめられるが、それぞれが流通性を高める趣旨かどうかは条文に書かれておらず、解釈による。アは手形法78条1項の「約束手形ノ振出人ハ為替手形ノ引受人ト同一ノ義務ヲ負フ」のとおりで、振出人が手形の主たる債務者として負う義務の内容を定めたものであり、流通を高めるための特別の規律とは位置づけにくい。オは、為替手形の規定を約束手形に準用する手形法77条1項を通じて、38条1項の「支払ヲ為スベキ日又ハ之ニ次グ二取引日内ニ支払ノ為手形ヲ呈示スルコトヲ要ス」が適用されることなどを指し、所持人に遡求の要件を課して遡求義務者（裏書人）の利益を守る規律と解されているので、流通性を高める趣旨ではない。イは手形法6条1項の「文字ヲ以テ記載シタル金額ヲ手形金額トス」（77条2項で約束手形に準用）で、手形の記載から金額を一律に決めて取得者が手形の内容を確かめやすくするので、流通を助けるものと解されている。ウは手形法7条の「他ノ署名者ノ債務ハ之ガ為其ノ効力ヲ妨ゲラルルコトナシ」（77条2項で準用）で、他の署名に偽造などがあっても取得者が他の署名者の責任を追及できるので、取得者を保護して流通を助けると解されている。エは手形法16条2項（77条1項1号で準用）で、裏書の連続により権利を証明する所持人は、悪意又は重大な過失がない限り手形を返還する義務を負わないので、取得者を保護して流通を助けるものと解されている。公式の正解（組合せ）からも、ふさわしくないものはアとオとなる。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "手形法",
+    "article": "78",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "約束手形ノ振出人ハ為替手形ノ引受人ト同一ノ義務ヲ負フ",
+    "text_sha256": "2823ef6188b39d7588a7715dbefb70e65caf6adac7e230b63825ba41a966ccba",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "手形法",
+    "article": "77",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "支払（第三十八条乃至第四十二条）",
+    "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "手形法",
+    "article": "77",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "支払金額ニ関スル記載ノ差異（第六条）、第七条ニ規定スル条件ノ下ニ為サレタル署名ノ効果",
+    "text_sha256": "7d3102e2ace78630f6cb8c3a2dc416284e7b195e099fcfa9676d95a083ff8e89",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "手形法",
+    "article": "38",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "支払ヲ為スベキ日又ハ之ニ次グ二取引日内ニ支払ノ為手形ヲ呈示スルコトヲ要ス",
+    "text_sha256": "757590c0a8fd359b90db81e0e97bff0a593cb10ee71cd1da8ba83154ebd860b7",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "手形法",
+    "article": "6",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "文字ヲ以テ記載シタル金額ヲ手形金額トス",
+    "text_sha256": "f290dc114aba15b3ebce435f5353dd57593eb464bc440d5985b980d900aec391",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "手形法",
+    "article": "7",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "他ノ署名者ノ債務ハ之ガ為其ノ効力ヲ妨ゲラルルコトナシ",
+    "text_sha256": "2327d558154e2981465df56864220abd382ddd392e754718618aeb44f4581b11",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "手形法",
+    "article": "16",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "所持人ガ前項ノ規定ニ依リ其ノ権利ヲ証明スルトキハ手形ヲ返還スル義務ヲ負フコトナシ但シ所持人ガ悪意又ハ重大ナル過失ニ因リ之ヲ取得シタルトキハ此ノ限ニ在ラズ",
+    "text_sha256": "59a3210e92d16480e70161c0e6931c254b54c90d274659c590b01308760831a7",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "各規律が流通性を高める趣旨かどうか（ア・オはふさわしくない、イ・ウ・エはふさわしい）は条文に書かれておらず、解釈による。ア・オがふさわしくないことは公式の正解（組合せ）とも合う",
+   "オの「これに次ぐ２取引日内」の呈示は38条1項（77条1項3号で準用）による。遡求権の要件の全体（拒絶証書など）は本文で網羅していない"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}

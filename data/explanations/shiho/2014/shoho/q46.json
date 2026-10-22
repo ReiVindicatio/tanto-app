@@ -1,0 +1,134 @@
+{
+ "question_id": "shiho-2014-shoho-q46",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   1,
+   5
+  ],
+  "conclusion": "正解は1と5。取締役会は業務執行の決定を原則として執行役に委任できる（416条4項本文）が、同項ただし書に列挙された事項と、各委員会が決定する事項は委任できず、1（重要な財産の処分）と5（有利発行でない募集事項の決定）はそのどちらにも当たらない。",
+  "body": "416条4項本文は「指名委員会等設置会社の取締役会は、その決議によって、指名委員会等設置会社の業務執行の決定を執行役に委任することができる。」と定め、ただし書で委任できない事項を列挙している。1の重要な財産の処分は、指名委員会等設置会社でない取締役会設置会社では362条4項が「重要な財産の処分及び譲受け」を取締役に委任できないとしているが、416条1項は「第三百六十二条の規定にかかわらず」としており、416条4項ただし書の列挙にも入っていないので、執行役に委任できる。5について、公開会社では有利発行の場合（199条3項）を除き、募集事項は取締役会が定める（201条1項）。この決定も416条4項ただし書に挙げられていないので、執行役に委任できる。2の取締役の報酬は、報酬委員会が「執行役等の個人別の報酬等の内容を決定する」（404条3項）ので、取締役会が執行役に委任できる事項ではない。3の会計監査人の解任の議案は、監査委員会が「株主総会に提出する会計監査人の選任及び解任並びに会計監査人を再任しないことに関する議案の内容の決定」を行う（404条2項2号）ので、これも執行役に委任できない（416条4項5号は株主総会に提出する議案の内容の決定を委任できない事項とし、会計監査人の解任の議案は各委員会が決めるものとして括弧書で除いている）。4の代表執行役の選定は、416条4項12号が「第四百二十条第一項前段の規定による代表執行役の選定」を委任できない事項として挙げている。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "416",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "第三百六十二条の規定にかかわらず",
+    "text_sha256": "bf5a36ceafbacef120a250d476286f26398b926be80addefcad468bcd7a40d1e",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "416",
+    "paragraphs": [
+     "4"
+    ],
+    "quote": "指名委員会等設置会社の取締役会は、その決議によって、指名委員会等設置会社の業務執行の決定を執行役に委任することができる。",
+    "text_sha256": "bf5a36ceafbacef120a250d476286f26398b926be80addefcad468bcd7a40d1e",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "416",
+    "paragraphs": [
+     "4"
+    ],
+    "quote": "第四百二十条第一項前段の規定による代表執行役の選定",
+    "text_sha256": "bf5a36ceafbacef120a250d476286f26398b926be80addefcad468bcd7a40d1e",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "362",
+    "paragraphs": [
+     "4"
+    ],
+    "quote": "重要な財産の処分及び譲受け",
+    "text_sha256": "0c2c40d6cd0d3a3ae0a6e3f00a33298453cecc241308ad598ed1bbbbaf153799",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "201",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "第百九十九条第三項に規定する場合を除き、公開会社における同条第二項の規定の適用については、同項中「株主総会」とあるのは、「取締役会」とする。",
+    "text_sha256": "35cf13fba5ce9c220dfed1584c0b7b2ddb9221249819c22a55d7eaf8ac952769",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "199",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "第一項第二号の払込金額が募集株式を引き受ける者に特に有利な金額である場合には",
+    "text_sha256": "742daaa99f9cbe88601264bf2da62173c9cd6545fb1e9014ffc0988829c6ef7c",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "404",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "執行役等の個人別の報酬等の内容を決定する",
+    "text_sha256": "138d2352d06b181e2ed8ddd2cf7a5b54947bb05e93f29184d3decc31ab07f3e9",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "404",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "株主総会に提出する会計監査人の選任及び解任並びに会計監査人を再任しないことに関する議案の内容の決定",
+    "text_sha256": "138d2352d06b181e2ed8ddd2cf7a5b54947bb05e93f29184d3decc31ab07f3e9",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "リード文の「委員会設置会社」は、現行法では「指名委員会等設置会社」として規定されている。解説は現行法の本文で書いており、改正前の内容は条文の本文で確認していない（416条4項ただし書の号の数・番号は改正で変わっている可能性がある）",
+   "416条4項5号の括弧書が会計監査人の解任の議案を除いている理由（監査委員会が決めるため）は、404条2項2号と照らし合わせた解釈による"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}
