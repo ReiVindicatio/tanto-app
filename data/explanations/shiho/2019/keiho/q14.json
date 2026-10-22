@@ -1,0 +1,97 @@
+{
+ "question_id": "shiho-2019-keiho-q14",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   3
+  ],
+  "conclusion": "正解は3（①ｂ ②ａ ③ａ ④ｂ ⑤ａ ⑥ｂ ⑦ｂ ⑧ａ）。Ｃは占有を店長・登記名義人に認めて甲の占有を否定する立場なので、事例Ⅰ・Ⅱでは窃盗罪、事例Ⅳでは不動産侵奪罪を考え、Ａはこれに対して「侵奪」を否定して背任罪を検討すべきだと応じる、という筋で一貫する。",
+  "body": "①②：Ｃが「反対だ」と述べるので、ＢとＣは占有の帰属と成立する罪で対立している。横領罪は「自己の占有する他人の物を横領した」（252条1項）ときに、窃盗罪は「他人の財物を窃取した」（235条）ときに成立するから、店員に占有を認めるＢは横領罪（①ｂ・②ａ）、店長に占有を認めるＣは窃盗罪（③ａ・④ｂ）となる。事例Ⅱの会話もこれと合う。Ｃは集金した売掛金の持ち逃げにも（④）が成立するとし、Ａはそれが判例の立場と一致しないと述べる。事例Ⅲでは「物を人から借りている場合は別だ」として（④）の成立を否定しており、借主の甲が占有する物の処分には窃盗罪が成立しないという意味で、④を窃盗罪とすると筋が通る。⑤⑥：Ｃは「動産とは異なり」不動産の占有は別に考えるという。現実に使用する者（甲）に占有を認めるのであれば、借りた動産と同じ扱いになり、「異なり」と述べる意味がない。そのため、⑤は登記名義を有する者（ａ）であり、甲は占有者でないから横領罪ではなく、「他人の不動産を侵奪した」（235条の2）として不動産侵奪罪（⑥ｂ）の可能性が問題になる。⑦⑧：Ａは、甲は乙から土地の使用を認められていた者であり、不動産侵奪罪にいう「侵奪」（⑦ｂ）があったとはいえないと反論する。そのうえで、Ｃの見解では甲に占有がない以上、252条1項の「自己の占有する」の要件を欠き横領罪は成立し得ない。そこで、「他人のためにその事務を処理する者」が「その任務に背く行為」をした場合の背任罪（247条）の成否を検討すべきことになる（⑧ａ）。選択肢3と4は⑧だけが違い、Ｃの見解で横領罪を検討することは前提と矛盾するので、3が正解となる。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "235",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "他人の財物を窃取した者は、窃盗の罪とし",
+    "text_sha256": "44f910b87f784daf350f25c4067c5a24e6e862555ec52f35ceea3c0cd53efc1e",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "252",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "自己の占有する他人の物を横領した者は",
+    "text_sha256": "7a83a717a5852bf580d5f795dccc545173151db0ffcd2317b034606297df192f",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "235_2",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "他人の不動産を侵奪した者は",
+    "text_sha256": "75bca0c87a6a0d49552a6605c5afdc9f3f9fe687cb5dc7eebb01514a7d91db97",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "247",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "他人のためにその事務を処理する者が",
+    "text_sha256": "a039b8ba4445addca4224f4a704981f3d62837513355b798a5af869111eba896",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "247",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "その任務に背く行為をし",
+    "text_sha256": "a039b8ba4445addca4224f4a704981f3d62837513355b798a5af869111eba896",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "事例Ⅱの判例の立場は、問題文の学生Ａの発言（Ｃの結論は判例の立場と一致しない）から読み取ったもので、判例そのものは確かめていない。",
+   "⑦の「侵奪」を否定する理由（使用を認められていた者による占有の変更であること）は、会話の流れからの読み取りで、解釈による。"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}
