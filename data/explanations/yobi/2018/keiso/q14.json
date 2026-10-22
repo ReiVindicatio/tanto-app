@@ -1,0 +1,143 @@
+{
+ "question_id": "yobi-2018-keiso-q14",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   4
+  ],
+  "conclusion": "正解は4（3個）。イ・ウ・エが正しく、ア（検視で令状なく血液採取・切開ができるとする点）とオ（警察署への同行を求められないとする点）が誤り。",
+  "body": "アは誤り。229条1項は検察官が「検視をしなければならない」と定めるだけで、死体の解剖のような処分は、鑑定の嘱託を受けた者が「裁判官の許可を受けて」行うものとされている（225条1項・168条1項の「死体を解剖し」）。検視は令状なしにできる外表の検査にとどまり、血液の採取や腹部の切開は令状（鑑定処分許可状など）なしにはできないと解されている。イは正しい。231条1項は「被害者の法定代理人は、独立して告訴をすることができる。」と定め、判例も、被害者の親権者が二人あるときは、その各自が同項の法定代理人として告訴をすることができるとしている。ウは正しい。242条のとおり「司法警察員は、告訴又は告発を受けたときは、速やかにこれに関する書類及び証拠物を検察官に送付しなければならない。」。エは正しい。241条2項は「検察官又は司法警察員は、口頭による告訴又は告発を受けたときは調書を作らなければならない。」と定め、245条がこれを「自首についてこれを準用する」。オは誤り。警察官職務執行法2条2項は、その場での質問が本人に不利であるか交通の妨害になると認められる場合に「質問するため、その者に附近の警察署、派出所又は駐在所に同行することを求めることができる。」と定めている。以上で正しいものはイ・ウ・エの3個となり、公式の正解4と一致する。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "229",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "検視をしなければならない",
+    "text_sha256": "9bff1f80ec36903236d511b3e123b498a2d8d2aee3e3c44f0097f0be6255a5d6",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "225",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "裁判官の許可を受けて",
+    "text_sha256": "3e475a76c4f7ceab639093189a4f3d84dfa97472e72115e62842dd91bc8bef8a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "168",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "死体を解剖し",
+    "text_sha256": "8a15f71519c828cbaf2c187d69bc509a25240d37e3af85d9df2867d0174a4be2",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "231",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "被害者の法定代理人は、独立して告訴をすることができる。",
+    "text_sha256": "58fdd2cc7a9100caed6b3bf6bbbbe35bd19fda0e1c1fcd0427a4d63c40db1493",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "242",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "司法警察員は、告訴又は告発を受けたときは、速やかにこれに関する書類及び証拠物を検察官に送付しなければならない。",
+    "text_sha256": "27d94b67bc50a39d11a1e60a8a54ff5cfb1cd5d9160a416658d6e54d15d6f553",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "241",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "検察官又は司法警察員は、口頭による告訴又は告発を受けたときは調書を作らなければならない。",
+    "text_sha256": "16a893204783f9458d8450425ba3177620c92d7d3ef9c4a50be36a37b4d14cd0",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "245",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "自首についてこれを準用する",
+    "text_sha256": "8c92982c1565d17dc90e8aed976c132605b43fce01c62ec5865521c67a5920dc",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "警察官職務執行法",
+    "article": "2",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "質問するため、その者に附近の警察署、派出所又は駐在所に同行することを求めることができる。",
+    "text_sha256": "5bd8bfd421ff5c7a6f2ee3952d5f006a7b62e59da5ea7c4e14d961009b55aacc",
+    "fetched_at": "2026-10-20",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E5%85%AD%E5%8F%B7"
+   }
+  ],
+  "cases": [
+   {
+    "name": "親権者が二人ある場合の法定代理人の告訴",
+    "court": "最高裁判所第二小法廷",
+    "date": "1959-02-06",
+    "case_number": "昭和31(あ)3265",
+    "holding": "被害者の親権者が二人あるときは、その各自が刑訴法231条1項の被害者の法定代理人として、告訴をすることができる。",
+    "verified_urls": [
+     "https://www.courts.go.jp/hanrei/51501/detail2/index.html"
+    ]
+   }
+  ],
+  "pending_cases": [],
+  "notes": [
+   "アの「検視は令状なしにできる外表の検査にとどまり、血液の採取や切開は令状なしにできない」は解釈による（229条の文言自体は検視の範囲を定めていない）"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}

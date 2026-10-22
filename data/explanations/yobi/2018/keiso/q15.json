@@ -1,0 +1,133 @@
+{
+ "question_id": "yobi-2018-keiso-q15",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   1
+  ],
+  "conclusion": "正解は1（0個）。緊急逮捕は司法巡査もでき（ア）、留置の必要がなければ釈放し（イ）、理由は逮捕の時に告げ（ウ）、請求者の限定はなく（エ）、送致の48時間は身体拘束の時から数える（オ）ので、いずれも誤り。",
+  "body": "アは誤り。210条1項は「検察官、検察事務官又は司法警察職員は」緊急逮捕ができると定め、39条3項は司法警察職員を「司法警察員及び司法巡査をいう」としているから、司法巡査も緊急逮捕ができる。イは誤り。211条は緊急逮捕の場合に「第百九十九条の規定により被疑者が逮捕された場合に関する規定を準用する」とし、準用される203条1項は、司法警察員は「留置の必要がないと思料するときは直ちにこれを釈放し」と定めている。ウは誤り。210条1項は「その理由を告げて被疑者を逮捕することができる」と定めており、理由の告知は逮捕の時に必要で、逮捕状は逮捕の後に求めるものだから、逮捕状を示す際に告げれば足りるわけではない。エは誤り。警部以上の者に限る199条2項の括弧書きは、同条1項の（通常逮捕の）逮捕状の請求についての定めであり、210条1項は「直ちに裁判官の逮捕状を求める手続をしなければならない」とするだけで、請求する者を指定された警部以上の司法警察員に限っていない。オは誤り。211条により準用される203条1項は、送致の手続を「被疑者が身体を拘束された時から四十八時間以内に」しなければならないとしており、逮捕状の発付の時から数えるのではない。以上で正しいものは0個となり、公式の正解1と一致する。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "210",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "検察官、検察事務官又は司法警察職員は",
+    "text_sha256": "a16b14ff8b4bc7cccbc8fe9f8d83d7024c9488b266bc7fa97583c253f80d917a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "210",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "その理由を告げて被疑者を逮捕することができる",
+    "text_sha256": "a16b14ff8b4bc7cccbc8fe9f8d83d7024c9488b266bc7fa97583c253f80d917a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "210",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "直ちに裁判官の逮捕状を求める手続をしなければならない",
+    "text_sha256": "a16b14ff8b4bc7cccbc8fe9f8d83d7024c9488b266bc7fa97583c253f80d917a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "39",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "司法警察員及び司法巡査をいう",
+    "text_sha256": "75b89a51ec4fe9018db639cf30e3c9a58ed8ee9aaf563c722c1141fb5cde965a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "211",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "第百九十九条の規定により被疑者が逮捕された場合に関する規定を準用する",
+    "text_sha256": "c4c4425346cb3297df3f29307bc590eda229a7cae96a3d6f7881b24211640720",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "203",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "留置の必要がないと思料するときは直ちにこれを釈放し",
+    "text_sha256": "af632c87454e65020fa5668fdabda782e75580c7d48705b9653d130b29ca1984",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "203",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "被疑者が身体を拘束された時から四十八時間以内に",
+    "text_sha256": "af632c87454e65020fa5668fdabda782e75580c7d48705b9653d130b29ca1984",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "199",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "警察官たる司法警察員については、国家公安委員会又は都道府県公安委員会が指定する警部以上の者に限る。",
+    "text_sha256": "cd5909a122ba9914e9296d9a1df3c86f2382ea6f58616fdbc3d44bf442649c5b",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "エの「210条の逮捕状の請求には199条2項の警部以上の限定がかからない」は、条文の文言（199条2項が「前項の逮捕状」についての定めであること、210条に限定の文言がないこと）からの解釈による。逮捕状の請求者を定める刑事訴訟規則は e-Gov になく確かめていない",
+   "ウの「理由の告知は逮捕の時に必要」は210条1項の文言からの解釈による"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}

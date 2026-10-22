@@ -1,0 +1,133 @@
+{
+ "question_id": "yobi-2018-keiso-q22",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   2
+  ],
+  "conclusion": "正解は2（1個）。正しいのはオ（刑の全部の執行猶予の告知で勾留状は失効する）だけで、ア（請求が必要）・イ（1か月）・ウ（弁護人との接見も禁止できる）・エ（保釈は一切許されない）は誤り。",
+  "body": "アは誤り。60条1項は「裁判所は、被告人が罪を犯したことを疑うに足りる相当な理由がある場合で、左の各号の一にあたるときは、これを勾留することができる。」と定め、検察官の請求を要件としていないので、被告人の勾留は裁判所が職権で行うものと解されている。イは誤り。60条2項は「勾留の期間は、公訴の提起があつた日から二箇月とする。」と定めており、1か月ではない。ウは誤り。81条が接見を禁じることができるとするのは「第三十九条第一項に規定する者以外の者との接見」であり、39条1項の弁護人（弁護人となろうとする者を含む）との接見は禁じることができない。エは誤り。89条4号の「被告人が罪証を隠滅すると疑うに足りる相当な理由があるとき」は、請求があれば保釈を許さなければならない場合（権利保釈）の除外にあたるにとどまり、90条により、裁判所は諸事情を考慮し「適当と認めるときは、職権で保釈を許すことができる。」から、一切許されないわけではない。オは正しい。345条は「刑の全部の執行猶予」の「裁判の告知があつたときは、勾留状は、その効力を失う。」と定めている。以上で正しいものはオの1個となり、公式の正解2と一致する。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "60",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "裁判所は、被告人が罪を犯したことを疑うに足りる相当な理由がある場合で、左の各号の一にあたるときは、これを勾留することができる。",
+    "text_sha256": "fc2a80617b4371059a22447a68c6aeab2d2cfc71a0a3b5dca33372f62e77a95c",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "60",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "勾留の期間は、公訴の提起があつた日から二箇月とする。",
+    "text_sha256": "fc2a80617b4371059a22447a68c6aeab2d2cfc71a0a3b5dca33372f62e77a95c",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "81",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "第三十九条第一項に規定する者以外の者との接見",
+    "text_sha256": "4bbd1858fef1a7e6a6d39c6f86f0cecf481253ea5489d79fc54b053692b9a7b0",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "39",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "身体の拘束を受けている被告人又は被疑者は、弁護人又は弁護人を選任することができる者の依頼により弁護人となろうとする者",
+    "text_sha256": "75b89a51ec4fe9018db639cf30e3c9a58ed8ee9aaf563c722c1141fb5cde965a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "89",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "被告人が罪証を隠滅すると疑うに足りる相当な理由があるとき",
+    "text_sha256": "7f9f5edf74ddcd4119e9d4734656d33cb5f93efec346f60161b0b15a812e667b",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "90",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "適当と認めるときは、職権で保釈を許すことができる。",
+    "text_sha256": "2890e7cca0fa08c897464174e3a98fc43ecd8005eb02a9623390e2630052daa9",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "345",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "刑の全部の執行猶予",
+    "text_sha256": "4e9783e8307aa4b3ad635623ef36e175d32cdc8f5a7de60537919167686515f4",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "345",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "裁判の告知があつたときは、勾留状は、その効力を失う。",
+    "text_sha256": "4e9783e8307aa4b3ad635623ef36e175d32cdc8f5a7de60537919167686515f4",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "アの「被告人の勾留は裁判所が職権で行う」は、60条1項が請求を要件としていないことからの解釈による",
+   "本文は現行法（2026-10-18 取得）の条文で説明した。改正前の内容は条文の本文で確認していない"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}
