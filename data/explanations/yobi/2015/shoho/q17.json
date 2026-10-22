@@ -1,0 +1,133 @@
+{
+ "question_id": "yobi-2015-shoho-q17",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   3
+  ],
+  "conclusion": "正解は3。剰余金の配当に関する優先株式は「剰余金の配当」について内容の異なる種類の株式（108条1項1号）であり、その株主を優先するのは「株式の内容」に応じた取扱いだから、株主平等の原則の範囲内で、例外ではない。",
+  "body": "109条1項は「株式会社は、株主を、その有する株式の内容及び数に応じて、平等に取り扱わなければならない。」と定める。したがって、株式の内容や数に応じた取扱いの差はこの原則の範囲内であり、例外となるのは、内容と数に比例しない取扱いである。記述3：108条1項は「剰余金の配当」（1号）について「内容の異なる二以上の種類の株式を発行することができる」と定めており、優先株式の株主への優先配当は株式の内容に応じた取扱いにすぎないので、例外としてふさわしくない。記述1：202条2項ただし書は「当該株主が割当てを受ける募集株式の数に一株に満たない端数があるときは、これを切り捨てるものとする」と定め、持株数に厳密に比例した割当てをしない取扱いを認めている。記述2：188条1項により単元株式数を定款で定めることができ、189条1項により単元未満株主は「その有する単元未満株式について、株主総会及び種類株主総会において議決権を行使することができない」ので、株式の数に比例しない取扱いとなる。記述4：297条1項は株主総会の招集請求を「総株主の議決権の百分の三（これを下回る割合を定款で定めた場合にあっては、その割合）以上の議決権」を有する株主に限って認めており、それに満たない株主は持株数があっても請求できない。記述5：109条2項は「公開会社でない株式会社は、第百五条第一項各号に掲げる権利に関する事項について、株主ごとに異なる取扱いを行う旨を定款で定めることができる。」と定め、105条1項2号に「残余財産の分配を受ける権利」が掲げられているので、109条1項の原則の明文の例外にあたる。公式の正解（3）から、1・2・4・5は原則の例外としてふさわしいものとされる。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "109",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "株式会社は、株主を、その有する株式の内容及び数に応じて、平等に取り扱わなければならない。",
+    "text_sha256": "01584d8a74afb0118cf60d1dce59177fd84d838af46e6e4d453120726983fbf1",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "108",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "内容の異なる二以上の種類の株式を発行することができる",
+    "text_sha256": "fef60bc5773a64fa72cfd2243503cdd5ceb008bcfa5426760c207b4f19df6a0e",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "202",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "当該株主が割当てを受ける募集株式の数に一株に満たない端数があるときは、これを切り捨てるものとする",
+    "text_sha256": "ae09ede01521d42345ec1b7346f85f1610297d81422b8cc8e461414b72f8c68f",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "188",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "一定の数の株式をもって株主が株主総会又は種類株主総会において一個の議決権を行使することができる一単元の株式とする旨を定款で定めることができる。",
+    "text_sha256": "e6b79556e0fccda0b595732863626fcd562d3628de08d461f5d75a8efd2ba7fc",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "189",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "その有する単元未満株式について、株主総会及び種類株主総会において議決権を行使することができない",
+    "text_sha256": "a5dfddaeb59c88830f4d314c0f79d89be46e0bef9894c29843be3683b800db6c",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "297",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "総株主の議決権の百分の三（これを下回る割合を定款で定めた場合にあっては、その割合）以上の議決権",
+    "text_sha256": "84174a0abee6d737a61303d24a12af9111d4dc6946537d312e793b2b565a77ec",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "109",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "公開会社でない株式会社は、第百五条第一項各号に掲げる権利に関する事項について、株主ごとに異なる取扱いを行う旨を定款で定めることができる。",
+    "text_sha256": "01584d8a74afb0118cf60d1dce59177fd84d838af46e6e4d453120726983fbf1",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "105",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "残余財産の分配を受ける権利",
+    "text_sha256": "feaa8bbe789898253bebb3bb2bf72ac8a4b04ab592181a41504e0cc84471f259",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "1・2・4が株主平等の原則の例外と位置づけられる点（端数の切捨て・単元株・少数株主権を「内容及び数に応じ」た取扱いの外と見ること）は解釈による。記述ごとの当否は公式の正解（3）からも逆算している",
+   "解説は現行の会社法の本文で書いた。出題時（2015年）以降の改正による違いがあるかは、改正前の内容を条文の本文で確認していない"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}

@@ -1,0 +1,145 @@
+{
+ "question_id": "yobi-2014-shoho-q23",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   1
+  ],
+  "conclusion": "正解は1。自己の株式を取得しても株式は消滅せず会社が自己株式として保有するだけなので発行済株式の総数は変わらず、株式の発行でも資本金の額の減少の手続でもないので資本金の額も変わらない。",
+  "body": "1（自己の株式の取得）：会社法は113条4項で「発行済株式（自己株式（株式会社が有する自己の株式をいう。以下同じ。）を除く。）」と書き分けており、会社が取得した自己株式も発行済株式に含まれる。したがって取得しても発行済株式の総数は変わらない。また、資本金の額は445条1項のとおり「設立又は株式の発行に際して株主となる者が当該株式会社に対して払込み又は給付をした財産の額」であり、減らすには447条1項の「株主総会の決議」による資本金の額の減少の手続が要るので、自己株式の取得だけでは資本金の額は変わらないと解されている。\n2（株式の消却）：178条1項は「株式会社は、自己株式を消却することができる。」と定める。消却した株式は消滅するので発行済株式の総数は減る（資本金の額は、447条の手続をとらない限り変わらないと解されている）。\n3（株式の併合）：182条1項により、株主は効力発生日に、前日に有する株式の数に併合の割合（180条2項1号）を「乗じて得た数の株式の株主となる」ので、株式の数がまとめられて発行済株式の総数は減る。\n4（株式の分割）：184条1項により、株主は基準日に有する株式の数に「同条第二項第一号の割合を乗じて得た数の株式を取得する」ので、発行済株式の総数は増える。\n5（新株予約権の行使。交付する株式の全部が自己株式である場合を除く）：282条1項により新株予約権者は「当該新株予約権の目的である株式の株主となる」。新たに株式を発行するので発行済株式の総数が増え、236条1項5号が新株予約権の内容として「当該新株予約権の行使により株式を発行する場合における増加する資本金及び資本準備金に関する事項」を定めさせているとおり、資本金の額も増えうる。\nよって、資本金の額と発行済株式の総数のどちらも変わらないのは1だけである。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "113",
+    "paragraphs": [
+     "4"
+    ],
+    "quote": "発行済株式（自己株式（株式会社が有する自己の株式をいう。以下同じ。）を除く。）",
+    "text_sha256": "2d3462ae15ac5b9bee9b8bffb3bc77d514f8f36a678c3296cc63d96a6849d218",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "445",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "設立又は株式の発行に際して株主となる者が当該株式会社に対して払込み又は給付をした財産の額",
+    "text_sha256": "96e4c4e13ca75e4f06a3e6da8166bbace9af8037f7f88af2534e23b63a7268c3",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "447",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "株主総会の決議",
+    "text_sha256": "1f9119bc0b062175b70a3c1d195b7427c21a0a2479816ec33ef4aa46c3ab3ed5",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "178",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "株式会社は、自己株式を消却することができる。",
+    "text_sha256": "98d5f471056d09ed46576f0472822ceb6392b4f03b673be8c6303cdf13604dd6",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "180",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "併合の割合",
+    "text_sha256": "c746a1a010e653ebcf92eef7a45833b2cad066b3e8f3426a4c2c08b17efe8aac",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "182",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "乗じて得た数の株式の株主となる",
+    "text_sha256": "9b12a814cca0e2fce8d66be5167c6217446694288e4b2d547f5af0d55110a2a0",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "184",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "同条第二項第一号の割合を乗じて得た数の株式を取得する",
+    "text_sha256": "37fd3abd18281b592cc8f23a7d0ea28109865ee28cd3e93d3a4740cc6ba8d717",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "282",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "当該新株予約権の目的である株式の株主となる",
+    "text_sha256": "b0ea2cd0458a1138883c348ecb81d96dafc10b01458de6af2d1df50c000b4a8d",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "236",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "当該新株予約権の行使により株式を発行する場合における増加する資本金及び資本準備金に関する事項",
+    "text_sha256": "b7c8c3fb47aa3fba75670eedd07fa85056a91930d2cf4e34e5f350b206e27926",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "自己株式の取得・消却・併合・分割で資本金の額が変わらないことは、445条1項（資本金の額の定め）と447条（資本金の額の減少の手続）からの解釈による",
+   "新株予約権の行使で増える資本金の額の細目は法務省令（会社計算規則）によるが、これは e-Gov の保存法令になく確認していない。肢5は発行済株式の総数が増えることだけで正解から外れる"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}

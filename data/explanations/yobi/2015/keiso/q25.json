@@ -1,0 +1,108 @@
+{
+ "question_id": "yobi-2015-keiso-q25",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   2
+  ],
+  "conclusion": "正解は2（ア・オ）。保釈は被告人についての制度で、被疑者の勾留には保釈がなく（207条1項ただし書）、保釈を許す決定には検察官の意見を聴かなければならない（92条1項）から、アとオが法律上許されない。",
+  "body": "アは許されない。保釈の請求ができるのは「勾留されている被告人」等であり（88条1項）、被疑者の勾留について、207条1項は勾留の請求を受けた裁判官に裁判所又は裁判長と同一の権限を与えつつ「但し、保釈については、この限りでない。」と定めているから、殺人の被疑事実で勾留中の被疑者を保釈することはできない。イは許される。殺人罪（刑法199条）は「死刑又は無期若しくは五年以上の拘禁刑に処する」罪であり、権利保釈の除外事由である89条1号の「死刑又は無期若しくは短期一年以上の拘禁刑に当たる罪を犯したものであるとき」に当たるが、それでも裁判所は90条により「適当と認めるときは、職権で保釈を許すことができる」から、保釈の許可そのものは法律上許される。ウも許される。89条の除外事由に逃亡のおそれは挙げられておらず、90条も「被告人が逃亡し又は罪証を隠滅するおそれの程度」を考慮事情の一つとして挙げたうえで職権保釈を認めているから、逃亡のおそれがあることだけで保釈が禁じられるわけではない。エも許される。90条は「職権で保釈を許すことができる」と定めており、保釈の請求がなくても保釈を許すことができる。オは許されない。92条1項は「裁判所は、保釈を許す決定又は保釈の請求を却下する決定をするには、検察官の意見を聴かなければならない。」と定めているから、検察官に意見を述べる機会を与えないまま保釈を許すことはできない。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "88",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "勾留されている被告人又はその弁護人、法定代理人、保佐人、配偶者、直系の親族若しくは兄弟姉妹は、保釈の請求をすることができる。",
+    "text_sha256": "feac6c75e414ddc41ac0cfda562fe14c735087922c6137fa7b2ee19ad0d7a1d9",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "207",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "但し、保釈については、この限りでない。",
+    "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "89",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "被告人が死刑又は無期若しくは短期一年以上の拘禁刑に当たる罪を犯したものであるとき。",
+    "text_sha256": "7f9f5edf74ddcd4119e9d4734656d33cb5f93efec346f60161b0b15a812e667b",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "90",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "裁判所は、保釈された場合に被告人が逃亡し又は罪証を隠滅するおそれの程度のほか、身体の拘束の継続により被告人が受ける健康上、経済上、社会生活上又は防御の準備上の不利益の程度その他の事情を考慮し、適当と認めるときは、職権で保釈を許すことができる。",
+    "text_sha256": "2890e7cca0fa08c897464174e3a98fc43ecd8005eb02a9623390e2630052daa9",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "92",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "裁判所は、保釈を許す決定又は保釈の請求を却下する決定をするには、検察官の意見を聴かなければならない。",
+    "text_sha256": "049d9567526e961f9625b691b44b88410f1eafd59706d58b305701b07fa0bef8",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "199",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "人を殺した者は、死刑又は無期若しくは五年以上の拘禁刑に処する。",
+    "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "現行法の本文で説明している。89条1号・刑法199条の「拘禁刑」、90条の考慮事情の文言は出題後の改正によるもので、改正前の内容は条文の本文で確認していない（いずれの記述の結論にも影響しないと考えられる）。"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}
