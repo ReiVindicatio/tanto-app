@@ -8,6 +8,7 @@
   python3 pipeline/egov.py --fetch 民法 刑法     # 法令全体を取得して保存（取り直しも同じ）
   python3 pipeline/egov.py --fetch-all           # LAWS の全法令
   python3 pipeline/egov.py 民法 5 6 98_2         # 保存済みの条文を表示（未取得なら先に取得する）
+  python3 pipeline/egov.py 日本国憲法 前文        # 前文・別表（「別表第一」など）・条のない法令の本文（「本則」）も条と同じに引ける
 """
 from __future__ import annotations
 
@@ -23,7 +24,8 @@ import xml.etree.ElementTree as ET
 from common import ROOT
 
 STATUTES = ROOT / "data" / "statutes"
-# 法令名 → (保存名, 法令番号)。取得時に e-Gov の法令名と一致するかを確かめる
+# 法令名 → (保存名, 法令番号[, e-Gov 上の法令名])。取得時に e-Gov の法令名と一致するかを確かめる。
+# e-Gov の法令名が通称と違う法令（題名のない古い法律）は、3つ目に e-Gov 上の法令名を書く
 LAWS = {
     "民法": ("minpo", "明治二十九年法律第八十九号"),
     "刑法": ("keiho", "明治四十年法律第四十五号"),
@@ -146,6 +148,7 @@ LAWS = {
     "非訟事件手続法": ("hisho", "平成二十三年法律第五十一号"),
     "国民健康保険法": ("kokuho", "昭和三十三年法律第百九十二号"),
     "風俗営業等の規制及び業務の適正化等に関する法律施行令": ("fueiho_rei", "昭和五十九年政令第三百十九号"),
+    "失火ノ責任ニ関スル法律": ("shikka", "明治三十二年法律第四十号", "明治三十二年法律第四十号（失火ノ責任ニ関スル法律）"),
 }
 
 
@@ -184,7 +187,8 @@ def item_lines(el: ET.Element, title_tag: str, sentence_tag: str) -> list[str]:
     return lines
 
 
-def parse_article(art: ET.Element) -> dict:
+def parse_article(art: ET.Element, title: str | None = None) -> dict:
+    """条（Article）。前文（Preamble）・条のない本則（MainProvision）も、項（Paragraph）を持つので同じに読む"""
     paragraphs = []
     for p in art.findall("Paragraph"):
         lines = [texts(p.find("ParagraphSentence"), "Sentence")]
@@ -197,10 +201,27 @@ def parse_article(art: ET.Element) -> dict:
                 if any(cols):
                     lines.append("　".join(c for c in cols if c))
         paragraphs.append({"num": p.get("Num"), "text": "\n".join(lines)})
+    return article_record(title or art.findtext("ArticleTitle"), art.findtext("ArticleCaption"), paragraphs)
+
+
+def parse_appendix(at: ET.Element, name: str) -> dict:
+    """別表（AppdxTable）。号の並び・表を1行ずつにし、1つの項（"1"）として持つ"""
+    lines = []
+    for item in at.findall("Item"):
+        lines += item_lines(item, "ItemTitle", "ItemSentence")
+    for row in at.iter("TableRow"):
+        cols = [texts(c, "Sentence").strip("　 ") for c in row.findall("TableColumn")]
+        if any(cols):
+            lines.append("　".join(c for c in cols if c))
+    related = (at.findtext("RelatedArticleNum") or "").strip() or None
+    return article_record(name, related, [{"num": "1", "text": "\n".join(lines)}])
+
+
+def article_record(title: str | None, caption: str | None, paragraphs: list[dict]) -> dict:
     body = "\n".join(p["text"] for p in paragraphs)
     return {
-        "title": art.findtext("ArticleTitle"),
-        "caption": art.findtext("ArticleCaption"),
+        "title": title,
+        "caption": caption,
         "paragraphs": paragraphs,
         "text": body,
         "text_sha256": hashlib.sha256(body.encode("utf-8")).hexdigest(),
@@ -212,7 +233,8 @@ def law_path(law: str):
 
 
 def fetch_law(law: str) -> dict:
-    law_id, law_num = LAWS[law]
+    law_num = LAWS[law][1]
+    egov_title = LAWS[law][2] if len(LAWS[law]) > 2 else law
     url = f"https://laws.e-gov.go.jp/api/1/lawdata/{urllib.parse.quote(law_num)}"
     with urllib.request.urlopen(url, timeout=120) as r:
         xml = r.read()
@@ -220,8 +242,8 @@ def fetch_law(law: str) -> dict:
     if root.findtext("Result/Code") != "0":
         raise ValueError(f"e-Gov API がエラー：{root.findtext('Result/Message')}")
     title = (root.findtext(".//LawBody/LawTitle") or "").strip()
-    if title != law:
-        raise ValueError(f"法令番号 {law_num} の法令名が「{title}」で、「{law}」と一致しない")
+    if title != egov_title:
+        raise ValueError(f"法令番号 {law_num} の法令名が「{title}」で、「{egov_title}」と一致しない")
     main = root.find(".//LawBody/MainProvision")
     articles = {}
     for art in main.iter("Article"):
@@ -229,6 +251,17 @@ def fetch_law(law: str) -> dict:
         if num in articles:
             raise ValueError(f"条番号が重複：{num}")
         articles[num] = parse_article(art)
+    # 条に分かれていない法令（失火ノ責任ニ関スル法律など）：本則の項を「本則」として持つ
+    if not articles and main.findall("Paragraph"):
+        articles["本則"] = parse_article(main, title="本則")
+    # 前文（日本国憲法など）・別表（通信傍受法の対象犯罪など）も、条と同じ形で「前文」「別表第一」として持つ
+    pre = root.find(".//LawBody/Preamble")
+    if pre is not None:
+        articles["前文"] = parse_article(pre, title="前文")
+    for at in root.findall(".//LawBody/AppdxTable"):
+        name = (at.findtext("AppdxTableTitle") or "").strip().split("（")[0]
+        if name and name not in articles:
+            articles[name] = parse_appendix(at, name)
     # 附則：改正法の附則（AmendLawNum のあるもの）は含めない。制定時の附則のうち、本則と条番号が重ならない条だけ含める
     # （手形法の附則 82条「署名には記名捺印を含む」のように、本則に続く番号で中身の規定を置く法令がある。T039）
     for sp in root.findall(".//LawBody/SupplProvision"):
