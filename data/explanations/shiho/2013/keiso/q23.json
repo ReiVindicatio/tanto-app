@@ -1,0 +1,97 @@
+{
+ "question_id": "shiho-2013-keiso-q23",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   4
+  ],
+  "conclusion": "正解は4（イ・オ）。緊急逮捕の後は裁判官の逮捕状が要り（210条1項）、逮捕中に起訴された者を勾留するには裁判官が勾留状を発する必要がある（280条2項）。ア・ウ・エは裁判官の裁判を経ずに手続が進む。",
+  "body": "ア（不要）：213条は「現行犯人は、何人でも、逮捕状なくしてこれを逮捕することができる」と定めており、私人による現行犯逮捕に裁判官の裁判は要らない。\nイ（必要）：210条1項は、緊急逮捕をした場合について「直ちに裁判官の逮捕状を求める手続をしなければならない」と定め、逮捕状が発せられないときは直ちに釈放しなければならないとしている。緊急逮捕では事後に裁判官の逮捕状の発付という裁判が必要になる。\nウ（不要）：205条1項は、送致された被疑者を受け取った検察官が「留置の必要がないと思料するときは直ちにこれを釈放し」と定めており、釈放は検察官の判断で行い、裁判官の裁判は要らない。\nエ（不要）：60条2項は「勾留の期間は、公訴の提起があつた日から二箇月とする」と定めている。被疑者として勾留されている者が同じ事実で起訴された場合には、その勾留がそのまま被告人の勾留として続き、改めて勾留の裁判をする必要はないと解されている。\nオ（必要）：280条2項は、逮捕された被疑者でまだ勾留されていないものについて逮捕後の時間の制限内に公訴の提起があった場合には、「裁判官は、速やかに、被告事件を告げ、これに関する陳述を聴き、勾留状を発しないときは、直ちにその釈放を命じなければならない」と定める。逮捕中に起訴された者を勾留するには、裁判官が勾留状を発するという裁判が必要である。\nしたがって、裁判官の裁判が必要なのはイとオで、正解は4となる。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "213",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "現行犯人は、何人でも、逮捕状なくしてこれを逮捕することができる",
+    "text_sha256": "9ba5e0ad33a98aa4378e52806d654e46f609dc5390a7d2deebd4008c8c1a63c3",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "210",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "直ちに裁判官の逮捕状を求める手続をしなければならない",
+    "text_sha256": "a16b14ff8b4bc7cccbc8fe9f8d83d7024c9488b266bc7fa97583c253f80d917a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "205",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "留置の必要がないと思料するときは直ちにこれを釈放し",
+    "text_sha256": "d27c2d1b2f006955775756376eb8ddd3f8fdae1848951d1fefe93d3c7d854837",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "60",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "勾留の期間は、公訴の提起があつた日から二箇月とする",
+    "text_sha256": "fc2a80617b4371059a22447a68c6aeab2d2cfc71a0a3b5dca33372f62e77a95c",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "280",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "裁判官は、速やかに、被告事件を告げ、これに関する陳述を聴き、勾留状を発しないときは、直ちにその釈放を命じなければならない",
+    "text_sha256": "6bf02cb32d692154a0b8144fcbad1f29762cecc02e833c5874b9d21346708cf5",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "エで、被疑者勾留中に同じ事実で起訴されると改めて勾留の裁判をせずに被告人勾留に移るとする点は、60条2項の文言からの説明で、解釈による",
+   "210条1項の法定刑の文言（拘禁刑）は現行法の本文で、出題後の改正で変わっている。本問の結論には影響しない。改正前の内容は条文の本文で確認していない"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}
