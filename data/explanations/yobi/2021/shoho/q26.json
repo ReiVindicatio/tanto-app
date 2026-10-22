@@ -1,0 +1,145 @@
+{
+ "question_id": "yobi-2021-shoho-q26",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   4
+  ],
+  "conclusion": "正解は4（イ・エ）。株式交換の反対株主の買取価格の決定（イ）と株主総会の招集手続等に関する検査役の選任（エ）は、裁判所への「申立て」による非訟事件であり、ア・ウ・オは訴えによる訴訟手続である。",
+  "body": "見分けるポイントは、会社法の条文が裁判所への「申立て」と定めているか、「訴え」と定めているかである。会社法868条1項は「この法律の規定による非訟事件」の管轄を定めており、申立てによる裁判がこれに当たる。イ：株式交換で反対株主が株式買取請求をし、価格の協議が調わないときは、株主又は会社は「裁判所に対し、価格の決定の申立てをすることができる」（株式交換完全子会社につき786条2項、株式交換完全親会社につき798条2項）。870条2項2号はこれらの価格の決定を非訟事件の裁判として審問の期日を開いて陳述を聴く対象に挙げており、非訟事件である。エ：306条1項により株式会社又は一定の株主は「裁判所に対し、検査役の選任の申立てをすることができる」とされ、これも申立てによる非訟事件である。ウ：自己株式の処分の無効は、828条1項3号により「訴えをもってのみ主張することができる」とされ、会社の組織に関する訴え（834条3号の「自己株式の処分の無効の訴え」）として訴訟手続による。オ：役員の解任は、854条1項により株主が「訴えをもって当該役員の解任を請求することができる」とされ、訴訟手続による。ア：株式の発行の差止めは、210条により株主が株式会社に対し「株式の発行又は自己株式の処分をやめることを請求することができる」とされる実体法上の請求権であり、会社法に申立てによる非訟の手続の定めはなく、差止めの訴え（及びこれを本案とする仮処分）によると解されている。したがって非訟事件の手続によるものはイとエで、正解は4となる。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "868",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "この法律の規定による非訟事件",
+    "text_sha256": "c00836ab7189269e738a342056b12dfd4e983e247b63c6404ab04734a19ea532",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "786",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "裁判所に対し、価格の決定の申立てをすることができる",
+    "text_sha256": "e935afa5023d34afeb6a47ff4f4bf579d82a88a0206da71218321a3f79783189",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "798",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "裁判所に対し、価格の決定の申立てをすることができる",
+    "text_sha256": "aa2159c8b0d89478ca463c1cfa1ddd819037dce32c9349b73a1614af7bf5282e",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "870",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "第七百八十六条第二項、第七百八十八条第二項、第七百九十八条第二項",
+    "text_sha256": "689453bddbcd984740719e7eadd0df245b3e512a086569ec8e271e019be2f4f9",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "306",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "裁判所に対し、検査役の選任の申立てをすることができる",
+    "text_sha256": "8601a447359a08aa8d4fd614eb2112f8d959c3942e4454ad4e5cf09e8da494c4",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "828",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "訴えをもってのみ主張することができる",
+    "text_sha256": "6ccf707076f8f65006e5122cfeb818b76028bb33fb8e44e27a5a0d37ad18a49c",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "834",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "自己株式の処分の無効の訴え",
+    "text_sha256": "b9ec18c29c714b3875ebe6b6556166976d4123088dd30445292e2e17ad8b773c",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "854",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "訴えをもって当該役員の解任を請求することができる",
+    "text_sha256": "5322d30d1d6e632d1cb9866bde147c4f1c82553e6da33bf10a9d278fe3202736",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "210",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "株式の発行又は自己株式の処分をやめることを請求することができる",
+    "text_sha256": "08f5d5762ba05c79991271b3d26e84a060806d41bfc7a915535032969b80f68d",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "株式の発行の差止め（ア）が訴え（及び仮処分）によって実現されるという点は、会社法の条文に直接の定めがなく、解釈による。",
+   "イの「株式交換」がどちらの会社の反対株主かは問題文にないため、完全子会社側（786条2項）と完全親会社側（798条2項）の両方を挙げた。"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}
