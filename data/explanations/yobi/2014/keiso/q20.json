@@ -1,0 +1,108 @@
+{
+ "question_id": "yobi-2014-keiso-q20",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   2
+  ],
+  "conclusion": "正解は2（1個：アだけが正しい）。アは296条のとおり正しいが、イは主張を明らかにする時期が「第二百九十六条の手続に引き続き」（316条の30）である点で誤り、オは356条により被告人の明示した意思に反する上訴ができない点で誤り、ウ・エは禁じる規定がなく誤りとなる。",
+  "body": "ア：296条は「証拠調のはじめに、検察官は、証拠により証明すべき事実を明らかにしなければならない。」と定める（冒頭陳述）。正しい。\nイ：316条の30は「公判前整理手続に付された事件については、被告人又は弁護人は、証拠により証明すべき事実その他の事実上及び法律上の主張があるときは、第二百九十六条の手続に引き続き、これを明らかにしなければならない。」と定める。明らかにする時期は検察官の冒頭陳述に引き続いてであり、検察官請求証拠が取り調べられた後ではないので、誤り。\nウ：293条1項は「証拠調が終つた後、検察官は、事実及び法律の適用について意見を陳述しなければならない。」と定めるだけで、意見の内容を有罪の主張に限る規定はない。検察官が証拠調べの結果を踏まえて無罪の意見を述べることも禁じられていないと解されており、誤り。\nエ：293条2項は「被告人及び弁護人は、意見を陳述することができる。」と定め、弁護人が量刑について具体的な刑の内容を述べることを禁じる規定はない。誤り。\nオ：355条は「原審における代理人又は弁護人は、被告人のため上訴をすることができる。」とするが、356条は「前三条の上訴は、被告人の明示した意思に反してこれをすることができない。」と定める。弁護人の上訴は被告人の明示した意思に反してはできないので、誤り。\n以上から、正しいのはアの1個で、正解は2。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "296",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "証拠調のはじめに、検察官は、証拠により証明すべき事実を明らかにしなければならない。",
+    "text_sha256": "165ce773d05f983c3b5b17de7decfe0c44a9d0d2f1c6577fa4c01bf25e9327b8",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "316_30",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "公判前整理手続に付された事件については、被告人又は弁護人は、証拠により証明すべき事実その他の事実上及び法律上の主張があるときは、第二百九十六条の手続に引き続き、これを明らかにしなければならない。",
+    "text_sha256": "d4ca402482af24c808950bc917c32cd732ce94e401b2eca5c870c446f0b54abf",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "293",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "証拠調が終つた後、検察官は、事実及び法律の適用について意見を陳述しなければならない。",
+    "text_sha256": "5ec34b530fea3aa8ab24a5cbd8abf660c3ced11c3d3bd9ba8ebbd74515d276b5",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "293",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "被告人及び弁護人は、意見を陳述することができる。",
+    "text_sha256": "5ec34b530fea3aa8ab24a5cbd8abf660c3ced11c3d3bd9ba8ebbd74515d276b5",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "355",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "原審における代理人又は弁護人は、被告人のため上訴をすることができる。",
+    "text_sha256": "be936ece010ae4e6a55114667a99cd1aa36e0d01aff826fd00c97f1afc23b6df",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "356",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "前三条の上訴は、被告人の明示した意思に反してこれをすることができない。",
+    "text_sha256": "79e299c05f5f660f4adebbd7bd5e99469bbfbc18d4b3629466a460dc807f1427",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "ウ・エは、禁じる規定が刑事訴訟法の本文にないことを根拠にしており、意見陳述の内容の限界は解釈による。刑事訴訟規則は e-Gov になく確認していない。"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}

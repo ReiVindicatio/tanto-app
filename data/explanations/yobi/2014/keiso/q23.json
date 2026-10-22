@@ -1,0 +1,108 @@
+{
+ "question_id": "yobi-2014-keiso-q23",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   2
+  ],
+  "conclusion": "正解は2（ア→イ→オ→エ→ウ）。各条文が前の手続を前提として書かれていること（類型証拠開示は検察官請求証拠を、主張明示は証明予定事実記載書面の送付と類型証拠の開示を、主張関連証拠開示は主張の明示を前提とする）と、整理結果の確認が手続の終了に当たって行われることが決め手。",
+  "body": "まず、事件が公判前整理手続に付されると、検察官は316条の13第1項により証明予定事実を記載した書面を「裁判所に提出し、及び被告人又は弁護人に送付しなければならない」とされ、同条2項により「前項の証明予定事実を証明するために用いる証拠の取調べを請求しなければならない」（ア）。次に、類型証拠の開示請求（イ）は、316条の15第1項で「特定の検察官請求証拠の証明力を判断するために重要であると認められるもの」が対象とされており、検察官の証拠調べ請求（ア）がされた後の手続である。被告人側の主張の明示（オ）は、316条の17第1項が「第三百十六条の十三第一項の書面の送付を受け、かつ、第三百十六条の十四第一項並びに第三百十六条の十五第一項及び第二項の規定による開示をすべき証拠の開示を受けた場合」に行うものとしているので、ア・イの後になる。主張関連証拠の開示請求（エ）は、316条の20第1項で「第三百十六条の十七第一項の主張に関連すると認められるもの」が対象であり、オの後になる。最後に、事件の争点及び証拠の整理の結果の確認（ウ）は、316条の24により裁判所が「公判前整理手続を終了するに当たり」行うものである。したがって順序はアイオエウとなり、正解は2である。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "316_13",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "裁判所に提出し、及び被告人又は弁護人に送付しなければならない",
+    "text_sha256": "d76aa9b9e13a62a592f63019baa4631fa141eb757281e746ad22365e77e2dab7",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "316_13",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "前項の証明予定事実を証明するために用いる証拠の取調べを請求しなければならない",
+    "text_sha256": "d76aa9b9e13a62a592f63019baa4631fa141eb757281e746ad22365e77e2dab7",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "316_15",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "特定の検察官請求証拠の証明力を判断するために重要であると認められるもの",
+    "text_sha256": "57b0e6f6fcf358c7e345c83259adaab27deec03f0679c8849e7641f10c1d7fc7",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "316_17",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "第三百十六条の十三第一項の書面の送付を受け、かつ、第三百十六条の十四第一項並びに第三百十六条の十五第一項及び第二項の規定による開示をすべき証拠の開示を受けた場合",
+    "text_sha256": "2aa21f39d58c8eb65c20a65991e9ebd9c0f46f68a14a62b6f0398149c13a0d66",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "316_20",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "第三百十六条の十七第一項の主張に関連すると認められるもの",
+    "text_sha256": "82440a3343240000ac39fdae89509af6251965420f5bbda8e69a88eba0083d3b",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "316_24",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "公判前整理手続を終了するに当たり",
+    "text_sha256": "1fdd86927063bb4e5c9392e40dbce5f4ee9d11f4d4265bb3413644f2abf43eaa",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "条文は取得日時点の現行法。出題当時（2014年）の316条の15・316条の17・316条の20の文言が現行法と同じかは確かめていない（改正前の内容は条文の本文で確認していない）。手続の順序（ア→イ→オ→エ→ウ）は現行法の本文から導いた。"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}
