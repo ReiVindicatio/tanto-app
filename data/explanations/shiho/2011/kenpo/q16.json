@@ -1,0 +1,200 @@
+{
+ "question_id": "shiho-2011-kenpo-q16",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-kenpo-q16-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。憲法66条3項は内閣の連帯責任を定めるが、個々の国務大臣が所管事項について単独で責任を負うことまで否定するものではないと解されている。",
+   "body": "憲法66条3項は、内閣は「行政権の行使について、国会に対し連帯して責任を負ふ」と定める。この規定は内閣が一体として責任を負うことを定めたものであるが、個々の国務大臣の責任を排除する文言はない。憲法74条は、法律及び政令には「主任の国務大臣が署名し、内閣総理大臣が連署することを必要とする」と定めており、国務大臣が所管事項について個別の責任を負う立場にあることを前提としている。そのため、各国務大臣が所管事項について単独の責任（例えば議院による個別の国務大臣の不信任・問責）を負うことも否定されていないと解されている。肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "66",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "行政権の行使について、国会に対し連帯して責任を負ふ",
+     "text_sha256": "d85cadf632b959526c603fb4d9d162be04533a5126acd874d196f12811c25170",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "74",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主任の国務大臣が署名し、内閣総理大臣が連署することを必要とする",
+     "text_sha256": "49fdad7a5cc87ac208edc647a13e657700ba71b8539205b9454b73e906d4ff7e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "個々の国務大臣の単独責任が否定されないという点は、条文に明記されたものではなく解釈による。"
+   ],
+   "id": "exp-shiho-2011-kenpo-q16-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-kenpo-q16-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。「内閣総理大臣が欠けたとき」は、死亡と除名による議員資格の喪失に限られず、辞職や、資格争訟の裁判など除名以外の事由で国会議員の地位を失った場合も含むと解されている。",
+   "body": "誤りは「限られる」とする点である。憲法70条は「内閣総理大臣が欠けたとき」は内閣は総辞職をしなければならないと定めるが、その事由を限定していない。内閣総理大臣は「国会議員の中から国会の議決で、これを指名する」（67条1項）ので、国会議員であることは在職の要件と解され、国会議員の地位を失えば内閣総理大臣も欠けることになる。国会議員の地位を失う事由は、除名（58条2項ただし書）に限られず、資格争訟の裁判で議席を失う場合（55条）などもある。また、内閣総理大臣が自ら辞職した場合も「欠けたとき」に当たると解されている。したがって、死亡と除名に限るとする肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "70",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣総理大臣が欠けたとき",
+     "text_sha256": "e1dffb676d29ec59706012c9a9fb3c3cc6f5ae8bcbb9ffed720e96a747b7a9aa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "67",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国会議員の中から国会の議決で、これを指名する",
+     "text_sha256": "f25ffcbc7f075a4c2f8d1c567e53b025773e6458db65cdec8c03b1bccdab9215",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "58",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "議員を除名するには、出席議員の三分の二以上の多数による議決を必要とする",
+     "text_sha256": "05d333cd7f56080e71054daf4a71167ae4e12dcf263d994de7b00f8b5e5a77ba",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "55",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "両議院は、各々その議員の資格に関する争訟を裁判する",
+     "text_sha256": "7c43c4c20e36a1007fea24e81725e3cbabd7055db8dd2b2a2b8927c5021b230a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "「欠けたとき」に辞職や除名以外の議員資格喪失が含まれるという点は、条文に明記されたものではなく解釈による。"
+   ],
+   "id": "exp-shiho-2011-kenpo-q16-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-kenpo-q16-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。内閣が法律を違憲と判断しても、その法律を廃止する案を国会に提出することはできると解されている。廃止案の提出もできないとする点が誤り。",
+   "body": "憲法73条1号は、内閣の事務として「法律を誠実に執行し、国務を総理すること」を定める。内閣が違憲と考える法律であっても、国会が制定した法律である以上、内閣はこれを誠実に執行すべきであり、独自の判断で執行を拒むことはできないと一般に解されている。しかし、そのことは内閣が法律の改廃を求めることを妨げない。憲法72条は、内閣総理大臣が「内閣を代表して議案を国会に提出し」と定め、内閣法5条も内閣総理大臣が「内閣を代表して内閣提出の法律案、予算その他の議案を国会に提出し」と定めている。また、憲法99条は国務大臣に「この憲法を尊重し擁護する義務」を課している。したがって、内閣が違憲と考える法律の廃止案を国会に提出することはでき、これもできないとする肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "73",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律を誠実に執行し、国務を総理すること",
+     "text_sha256": "edd0bc44219efd4b718ab6544896bf6639962cb675ee319ccae43a433f235998",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "72",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣を代表して議案を国会に提出し",
+     "text_sha256": "21c3bac0a7a0f5be992f1668ebe7b6cad9d673a536aa33f4b91ff40acb59d7a3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "内閣法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "内閣を代表して内閣提出の法律案、予算その他の議案を国会に提出し",
+     "text_sha256": "c4105f9c55719523566a050226a40295521c529f886db846b473fb2d3c951321",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "99",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この憲法を尊重し擁護する義務",
+     "text_sha256": "5691e43db8b738bc96df412aa5cfdc4f5a606b9f79c1de4eaa217c70c712013a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "違憲と考える法律でも内閣に執行義務があること、廃止案の提出ができることは、条文に明記されたものではなく解釈による。"
+   ],
+   "id": "exp-shiho-2011-kenpo-q16-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

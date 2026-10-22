@@ -1,0 +1,231 @@
+{
+ "question_id": "shiho-2011-kenpo-q17",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-kenpo-q17-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、国民審査は実質において解職の制度であり、任命を完成させるか否かを審査するものではないとして、白票（×印のない票）を罷免を可としない票に数えることを合憲とした。任命を国民が確認する意味を含むという肢の前提が判例と異なる。",
+   "body": "憲法79条2項・3項は、最高裁判所の裁判官の任命を国民の審査に付し、「投票者の多数が裁判官の罷免を可とするときは、その裁判官は、罷免される」と定める。昭和27年の大法廷判決は、国民審査の制度は、国民が裁判官を罷免すべきか否かを決定する趣旨であって、裁判官の任命を完成させるか否かを審査するものではないとした（裁判要旨）。判決は、国民審査はその実質において解職の制度であるから、積極的に罷免を可とする者とそうでない者とに分かれるのであり、罷免すべきか分からない者の票は後者に入るのが当然であるとして、何も記さない票を罷免を可としない票の数に算える法の仕組みは国民審査制度の趣旨に合すると述べている（判決全文）。肢は、国民審査が任命を確認する意味を含むことを前提としている点で判例と異なる。また、判例は白票を罷免を可としない票として扱っており、肢の結論はそれ自体としては判例に反しないが、判例の理由づけと異なるため、肢全体は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "79",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "投票者の多数が裁判官の罷免を可とするときは、その裁判官は、罷免される",
+     "text_sha256": "4efb604a292e64eefee636401af53ed6944581e109447d03eec1180a130b7c1b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [
+    {
+     "name": "最高裁判所裁判官国民審査の法的性格（解職制度）",
+     "court": "最高裁判所大法廷",
+     "date": "1952-02-20",
+     "case_number": "昭和24(オ)332",
+     "holding": "最高裁判所裁判官任命に関する国民審査の制度は、国民が裁判官を罷免すべきか否かを決定する趣旨であって、裁判官の任命を完成させるか否かを審査するものではない。国民審査はその実質において解職の制度であり、×印のない票を罷免を可としない票に数える最高裁判所裁判官国民審査法は、憲法79条、19条、21条に違反しない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57143/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "白票の扱いについての判示は判決全文（courts.py pdf 57143）による。"
+   ],
+   "id": "exp-shiho-2011-kenpo-q17-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-kenpo-q17-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。憲法76条2項は特別裁判所の設置を禁止しているが、64条は国会に弾劾裁判所を設けることを定めており、弾劾裁判所は憲法自身が認めた例外である。",
+   "body": "憲法76条2項は「特別裁判所は、これを設置することができない」と明文で定める。他方、憲法64条1項は「国会は、罷免の訴追を受けた裁判官を裁判するため、両議院の議員で組織する弾劾裁判所を設ける」と定める。弾劾裁判所は、最高裁判所を頂点とする司法裁判所の系列に属さない機関が裁判官の罷免について裁判するものであるが、憲法自らが設置を定めているので、76条2項の禁止に対する憲法上の例外と解されている。肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "76",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "特別裁判所は、これを設置することができない",
+     "text_sha256": "fa7a04f2178c4f26fb84b6737798af1ef79517893f109bad74160c08cb9ef717",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "64",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国会は、罷免の訴追を受けた裁判官を裁判するため、両議院の議員で組織する弾劾裁判所を設ける",
+     "text_sha256": "1707f265cc0a8d22e48673be3e9de6cf1cd1b860a9dcca4fcee6297cbcaf74cf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "弾劾裁判所を76条2項の例外と位置づける点は解釈による。"
+   ],
+   "id": "exp-shiho-2011-kenpo-q17-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-kenpo-q17-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、憲法は審級制度について81条以外に何ら規定していないから、それ以外の審級制度は立法で適宜定めるべきものとしている。最高裁判所を頂点とする二審制も、それだけで違憲にはならない。",
+   "body": "憲法76条1項は、司法権は「最高裁判所及び法律の定めるところにより設置する下級裁判所に属する」と定め、審級の数を定めていない。憲法81条は、最高裁判所が「一切の法律、命令、規則又は処分が憲法に適合するかしないかを決定する権限を有する終審裁判所である」と定める。昭和23年3月10日の大法廷判決は、憲法は審級制度をいかにすべきかについては81条以外何ら規定するところがないから、この点以外の審級制度は立法をもって適宜にこれを定めるべきものであるとした（裁判要旨）。したがって、最高裁判所を頂点とする二審制を法律で導入しても、それだけで違憲とはいえず、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "76",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "最高裁判所及び法律の定めるところにより設置する下級裁判所に属する",
+     "text_sha256": "fa7a04f2178c4f26fb84b6737798af1ef79517893f109bad74160c08cb9ef717",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "81",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一切の法律、命令、規則又は処分が憲法に適合するかしないかを決定する権限を有する終審裁判所である",
+     "text_sha256": "d4021bb6f522918173f217b43805be7db06420458edecd1ba7b5b210568da21f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    }
+   ],
+   "cases": [
+    {
+     "name": "審級制度は81条以外は立法に委ねられるとした判例",
+     "court": "最高裁判所大法廷",
+     "date": "1948-03-10",
+     "case_number": "昭和22(れ)43",
+     "holding": "憲法は審級制度をいかにすべきかについては81条以外何ら規定するところがないから、この点以外の審級制度は立法をもって適宜に定めるべきものである。上告審で事実審査をしないこととした刑訴応急措置法13条2項は違憲ではない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56452/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [],
+   "id": "exp-shiho-2011-kenpo-q17-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-kenpo-q17-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。憲法には司法行政権の帰属を直接定めた規定はないが、司法権の独立の観点から、裁判所自身が司法行政権を担うと解されており、裁判所法80条も裁判所に司法行政の監督権を与えている。",
+   "body": "憲法は、司法行政権が誰に属するかを直接定めた規定を置いていない。もっとも、憲法77条1項は最高裁判所に「訴訟に関する手続、弁護士、裁判所の内部規律及び司法事務処理に関する事項について、規則を定める権限」を与え、80条1項は下級裁判所の裁判官を「最高裁判所の指名した者の名簿によつて、内閣でこれを任命する」と定めて、裁判所の自律を前提としている。これらを踏まえ、司法権の独立を確保する観点から、司法行政権は行政機関ではなく最高裁判所及び下級裁判所が担うと解されている。法律上も、裁判所法80条は「司法行政の監督権」について、最高裁判所が「最高裁判所の職員並びに下級裁判所及びその職員を監督する」などと定めている。肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "訴訟に関する手続、弁護士、裁判所の内部規律及び司法事務処理に関する事項について、規則を定める権限",
+     "text_sha256": "9a14d1828e3060c98eb8c49989e5ed09a93204acc713e5aebb77b4837e96046d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "日本国憲法",
+     "article": "80",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "最高裁判所の指名した者の名簿によつて、内閣でこれを任命する",
+     "text_sha256": "2d6f9d35c17e41ad5ed2d19e315a41d4c9f1ac9cad86d3cdda042e61df4a2921",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%80%E5%B9%B4%E6%86%B2%E6%B3%95"
+    },
+    {
+     "type": "statute",
+     "law": "裁判所法",
+     "article": "80",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "司法行政の監督権",
+     "text_sha256": "f1caf899cedce68377417887d589c19d23cd64dd2bf6cf6114993cce9d2cdea9",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "裁判所法",
+     "article": "80",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "最高裁判所の職員並びに下級裁判所及びその職員を監督する",
+     "text_sha256": "f1caf899cedce68377417887d589c19d23cd64dd2bf6cf6114993cce9d2cdea9",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "司法行政権が司法権の独立の観点から裁判所に属するという点は解釈による。"
+   ],
+   "id": "exp-shiho-2011-kenpo-q17-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

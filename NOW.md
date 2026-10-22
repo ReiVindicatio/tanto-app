@@ -20,9 +20,9 @@
 - T011（司法試験の短答 H27〜R08）も完了・push 済み。名寄せ（決定018）と予備／司法の切り替えも入れた。カード合計 8,390枚
 - T036（司法 H23〜H26）・T037（今日の○問：同じ日のうちの短い間隔の復習を切る）も完了・push 済み。**カード合計 9,759枚**
 - 宿題：司法 R08 は最終合格発表（2026-11-11）後に告知・議事要旨をもう一度確認する。R03 刑法の問題 PDF は告知なく差し替えられている（差し替え前は未入手）
-- **解説の生成（T039）：`/loop` で連続生成中**（2026-10-22 09:48 時点：残り 23問・肢 87・解説のある肢カード 9552・飛ばした問 30（`data/review/explain_skips.json`））。手順は `prompts/explain-runbook.md`
+- **解説の生成（T039）：`/loop` で連続生成中**（2026-10-22 09:57 時点：残り 5問・肢 20・解説のある肢カード 9619・飛ばした問 30（`data/review/explain_skips.json`））。手順は `prompts/explain-runbook.md`
   - 🔴 公式の○×と食い違った解説（公開から外した。法改正かパースの誤りの信号）：shiho-2011-keiho-q12-3、shiho-2013-keiho-q09-e、shiho-2013-minso-q57-2、shiho-2013-shoho-q53-a、shiho-2014-gyosei-q38-b、shiho-2014-shoho-q54-b、yobi-2011-kenpo-q09-c、yobi-2012-gyosei-q24-c、yobi-2012-keiho-q11-1、yobi-2012-keiho-q11-4、yobi-2012-minso-q36-4、yobi-2015-keiso-q22-3、yobi-2016-shoho-q28-a、yobi-2017-keiho-q13-5、yobi-2017-shoho-q20-c、yobi-2019-minso-q40-a、yobi-2019-shoho-q21-4、yobi-2020-minso-q42-a、yobi-2020-minso-q42-b、yobi-2021-keiho-q04-a
-- **判例の確かめ直し（T041）**（2026-10-22 09:48 時点：残り 0問（① 第三者サイトの判例 0問・② 要確認 0問）。手順は `prompts/explain-runbook.md` の「判例の確かめ直し」）
+- **判例の確かめ直し（T041）**（2026-10-22 09:57 時点：残り 0問（① 第三者サイトの判例 0問・② 要確認 0問）。手順は `prompts/explain-runbook.md` の「判例の確かめ直し」）
 
 ## 解説のキューが空になったら片付ける課題（2026-10-21 のループ中に見つけたもの。ループは 19:51 に再開）
 
