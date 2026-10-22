@@ -9,9 +9,9 @@
 - M1（基盤）完了。M2（拡充）を進行中
 - 公開先：https://tantan.reivindicatio0321.workers.dev/（main に push すると自動で更新）。リポジトリは public。検索エンジン向けの問ごとのページ・サイトマップ・閲覧状況の計測（Cloudflare Web Analytics）まで入っている（T043〜T046）
 - データ：予備（7科目×16年度）・司法（H23〜R08）の短答。カード合計 9,759枚（名寄せ後）
-- **解説の生成（T039）：完了**（2026-10-22 22:30 時点：残り 0問・肢 0・解説のある肢カード 9639・飛ばした問 34（`data/review/explain_skips.json`））。手順は `prompts/explain-runbook.md`
+- **解説の生成（T039）：完了**（2026-10-22 22:38 時点：残り 0問・肢 0・解説のある肢カード 9639・飛ばした問 34（`data/review/explain_skips.json`））。手順は `prompts/explain-runbook.md`
   - 🔴 公式の○×と食い違った解説（公開から外した。法改正かパースの誤りの信号）：shiho-2011-keiho-q12-3、shiho-2012-gyosei-q23（問の解説）、shiho-2013-keiho-q09-e、shiho-2013-minso-q57-2、shiho-2013-shoho-q53-a、shiho-2014-gyosei-q38-b、shiho-2014-shoho-q54-b、yobi-2011-kenpo-q09-c、yobi-2012-gyosei-q24-c、yobi-2012-keiho-q11-1、yobi-2012-keiho-q11-4、yobi-2012-minso-q36-4、yobi-2015-keiso-q22-3、yobi-2016-shoho-q28-a、yobi-2017-keiho-q13-5、yobi-2017-shoho-q20-c、yobi-2019-minso-q40-a、yobi-2019-shoho-q21-4、yobi-2020-minso-q42-a、yobi-2020-minso-q42-b、yobi-2021-keiho-q04-a
-- **問の解説（T018）：`/loop` で連続生成中**（2026-10-22 22:30 時点：残り 10問・問の解説 358問。指示は `prompts/explain-question-v1.md`）
+- **問の解説（T018）：完了**（2026-10-22 22:38 時点：残り 0問・問の解説 368問。指示は `prompts/explain-question-v1.md`）
 - 2026-10-22 に済ませたこと：T048（検査の穴：漢数字の条番号・記述と結論の組合せ問題）、検索結果の要約・記憶の日付で書いていた判例 11肢の確かめ直し、T004 の一部（法改正で○×が変わった 24肢を肢カードから外した）、通信傍受法・非訟事件手続法・国民健康保険法・風営法施行令の保存
 - T026（ブックマーク★）も完了・push 済み（本番の D1 に bookmarks 表を当ててから push）。誤り報告（D1 の reports）は 2026-10-22 に確かめて0件
 - 宿題：司法 R08 は最終合格発表（2026-11-11）後に告知・議事要旨をもう一度確認する。R03 刑法の問題 PDF は告知なく差し替えられている（差し替え前は未入手）
@@ -25,7 +25,7 @@
 ## 解説の後片付けの課題
 
 - **人の確認の候補**（記憶・学説だけで書いた・理由が推定）：yobi-2014 kenpo q11・gyosei q20、yobi-2013 shoho q18オ・minso q37-1・keiho q13-5・keiso q20エ・kenpo q06イ／q07ア、yobi-2024 minso q43-c、yobi-2026 minso q36-e、yobi-2012 kenpo q02、yobi-2019 keiho q01-5／q05-5、shiho-2025 minpo q23-オ・kenpo q14-c、yobi-2020 minso q33-4、shiho-2026 kenpo q11-c、shiho-2024 kenpo q14 ア・ウ、shiho-2015-kenpo-q11、shiho-2014-keiso-q25 ア・オ、shiho-2011-kenpo-q02・kenpo-q13・gyosei-q28・kenpo-q19 ア・minso-q58 肢2・肢4
-- **問の解説（T018）：`/loop` で連続生成中**（2026-10-22 22:30 時点：残り 10問・問の解説 358問。指示は `prompts/explain-question-v1.md`）
+- **問の解説（T018）：完了**（2026-10-22 22:38 時点：残り 0問・問の解説 368問。指示は `prompts/explain-question-v1.md`）
 - **前提文の改行が消えている**：会話・事例の前提文で発言ごとの改行が抜け、①などの印が次の発言の頭に付いて見える（例：yobi-2011-keiso-q20。並びは PDF どおりで、パースの誤りではない）。サブエージェントが位置を読み違えた
 - ~~egov.py が取り出せない部分~~ → 2026-10-22 に前文・別表・条のない本則（「前文」「別表第一」「本則」で引ける）を取り出せるようにし、引けずに書いていた解説 11肢に引用を足した。改正法の附則は今も取り出さない
 - ~~失火ノ責任ニ関スル法律~~ → 2026-10-22 に保存した（`egov.py 失火ノ責任ニ関スル法律 本則`）

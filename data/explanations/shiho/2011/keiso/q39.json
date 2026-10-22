@@ -1,0 +1,95 @@
+{
+ "question_id": "shiho-2011-keiso-q39",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   2
+  ],
+  "conclusion": "正解は2（①ａ職権調査・⑦ｉ職権の発動）。空欄は①職権調査・②当事者・③職権・④訴因・⑤公訴事実・⑥事後・⑦職権の発動で、これと合う組合せは2だけである。",
+  "body": "①：控訴趣意を中心とした審査に対して「補充的なもの」とされ、控訴審が起訴事実の全部に「加える」ものなので、ａ（職権調査）が入る。392条2項は控訴趣意書に包含されない事項でも「職権で調査をすることができる」と定める。ｂ（当事者の申立てに基づく調査）は、控訴趣意を中心とする本来の審査の側であり、①には入らない。\n②・③：審判の対象設定を「（②）の手に委ね」、「（②）の公正な訴訟活動を期待した」とあるので②はｃ（当事者）、それを補充的・後見的に補うのが③のｄ（職権）主義である。\n④・⑤：「（⑤）を記載した起訴状を裁判所に提出しなければならず」「（⑤）は（④）を明示してこれを記載しなければならない」とあり、256条2項・3項の「公訴事実」「公訴事実は、訴因を明示してこれを記載しなければならない」に対応するので、④はｅ（訴因）、⑤はｆ（公訴事実）。\n⑥：控訴審は「第一審と同じ立場で事件そのものを審理するのではなく」、第一審判決を対象に審査するとあるので、ｈ（事後）が入る。ｇ（事実）では文意が通らない。\n⑦：被告人控訴だけの場合に職権調査で無罪部分を有罪と自判することは「（⑦）として許される限度をこえた」とされ、ｉ（職権の発動）が入る。これはこの決定の裁判要旨の言い回しとも一致する。\n選択肢を見ると、1は①をｂ、3は②をｄ、4は⑥をｇ、5は③をｃとしていて誤りで、2だけが正しい。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "392",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "職権で調査をすることができる",
+    "text_sha256": "3b685e9aa95412f77ee373b6bb2b92dcc62cd9db38eba7cd6601a47e1f09ad1c",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "256",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "公訴事実",
+    "text_sha256": "fc5be8653b9dab80cae6f4e69f2764078f5656a91012259654f23d915922d93f",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "256",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "公訴事実は、訴因を明示してこれを記載しなければならない",
+    "text_sha256": "fc5be8653b9dab80cae6f4e69f2764078f5656a91012259654f23d915922d93f",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "402",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "原判決の刑より重い刑を言い渡すことはできない",
+    "text_sha256": "66fece6efaebb10a3f096326a2afe8f7e5c6a686a75335675f695a484af6b18a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   }
+  ],
+  "cases": [
+   {
+    "name": "新島ミサイル事件（被告人控訴のみの場合の控訴審の職権調査の範囲）",
+    "court": "最高裁判所大法廷",
+    "date": "1971-03-24",
+    "case_number": "昭和41(あ)2101",
+    "holding": "牽連犯または包括一罪として起訴された事実の一部を理由中で無罪とした第一審判決に被告人だけが控訴した場合、控訴審が職権調査により事実誤認ありとして破棄自判し、起訴事実の全部を有罪とすることは、職権の発動として許される限度をこえ違法である。",
+    "verified_urls": [
+     "https://www.courts.go.jp/hanrei/50798/detail2/index.html"
+    ]
+   }
+  ],
+  "pending_cases": [],
+  "notes": [
+   "②〜⑥の空欄の埋め方は、問題文（決定の要旨）の前後の文脈と256条・392条2項の文言による。決定の全文との照合は裁判要旨の範囲で行った"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}
