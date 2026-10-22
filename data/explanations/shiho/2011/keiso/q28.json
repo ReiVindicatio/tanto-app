@@ -1,0 +1,175 @@
+{
+ "question_id": "shiho-2011-keiso-q28",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   2,
+   1,
+   1,
+   1,
+   2
+  ],
+  "conclusion": "正解は甲2・乙1・丙1・丁1・戊2。罪証隠滅（89条4号）と加害・畏怖（5号）のおそれは事例で否定されているので、1号（起訴された罪の法定刑）・2号（前科の罪の法定刑）・3号（常習）・6号（住居）に当たるかで分かれ、乙は2号、丙は3号、丁は6号に当たる。",
+  "body": "89条は、保釈の請求があったときは「次の場合を除いては、これを許さなければならない」とし、除外事由を1号から6号まで挙げる。事例では4号・5号の事情は認められないとされており、逃亡のおそれは89条の除外事由にない。また、5名が起訴された住居侵入（130条「三年以下の拘禁刑」）・窃盗（235条「十年以下の拘禁刑」）は、1号の「死刑又は無期若しくは短期一年以上の拘禁刑に当たる罪」に当たらない。\n甲（2）：前科の詐欺は246条1項で「十年以下の拘禁刑」であり、2号の「長期十年を超える拘禁刑に当たる罪」に当たらない（2号は法定刑で判断するので、宣告された刑が懲役8年であることは関係しない）。ほかの号にも当たらず、権利保釈が認められないとはいえない。\n乙（1）：前科の強盗致傷は240条で「無期又は六年以上の拘禁刑」であり、2号の「無期若しくは長期十年を超える拘禁刑に当たる罪につき有罪の宣告を受けたことがあるとき」に当たる。\n丙（1）：前科の器物損壊は261条で「三年以下の拘禁刑」なので2号には当たらない。しかし、余罪として公判請求された、問題文の参照条文に掲げられた暴力行為等処罰に関する法律の罪は、タイヤをパンクさせた器物損壊（刑法261条）を常習として犯したもので、人を傷害した場合ではないから、問題文の参照条文によれば「３月以上５年以下ノ懲役」に当たる。短期が1年未満なので1号には当たらないが、3号の「常習として長期三年以上の拘禁刑に当たる罪を犯したものであるとき」に当たる。\n丁（1）：前科も余罪もないが、住居不定とされているので、6号の「被告人の氏名又は住居が分からないとき」に当たると解される（公式の正解とも合う）。\n戊（2）：余罪について逮捕・勾留されたのは殺人未遂の事実だが、公判請求されたのは傷害の事実であり、傷害は204条で「十五年以下の拘禁刑」と短期の定めがないので1号に当たらない。前科はなく、常習の罪でもなく、Ｈ市内に住居を有するので、2号・3号・6号にも当たらない。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "89",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "次の場合を除いては、これを許さなければならない",
+    "text_sha256": "7f9f5edf74ddcd4119e9d4734656d33cb5f93efec346f60161b0b15a812e667b",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "89",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "死刑又は無期若しくは短期一年以上の拘禁刑に当たる罪",
+    "text_sha256": "7f9f5edf74ddcd4119e9d4734656d33cb5f93efec346f60161b0b15a812e667b",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "89",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "無期若しくは長期十年を超える拘禁刑に当たる罪につき有罪の宣告を受けたことがあるとき",
+    "text_sha256": "7f9f5edf74ddcd4119e9d4734656d33cb5f93efec346f60161b0b15a812e667b",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "89",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "常習として長期三年以上の拘禁刑に当たる罪を犯したものであるとき",
+    "text_sha256": "7f9f5edf74ddcd4119e9d4734656d33cb5f93efec346f60161b0b15a812e667b",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "89",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "被告人の氏名又は住居が分からないとき",
+    "text_sha256": "7f9f5edf74ddcd4119e9d4734656d33cb5f93efec346f60161b0b15a812e667b",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "130",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "三年以下の拘禁刑",
+    "text_sha256": "032fa6eaacc129ae4daf39c3f2400afa6523671819f49171677c976b8fe3e355",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "235",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "十年以下の拘禁刑",
+    "text_sha256": "44f910b87f784daf350f25c4067c5a24e6e862555ec52f35ceea3c0cd53efc1e",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "246",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "十年以下の拘禁刑",
+    "text_sha256": "c515031b5f484a4ebf537cf5f2eb826a008d119836fd4627833e9cdb1f4a5053",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "240",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "無期又は六年以上の拘禁刑",
+    "text_sha256": "606eeb6a25b0c01dd2a8d06824cea550181f8c9024cb24edda30017c5d886eb7",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "261",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "三年以下の拘禁刑",
+    "text_sha256": "4b05878c69d702517a3d9714df8b4517916f6e9799015b3d78d8df4d9b8aa8c8",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "204",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "十五年以下の拘禁刑",
+    "text_sha256": "6ede21287a797c6f241c77f9e36de03258b58392279dd9ec60ceafb09f7b2af4",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "e-Gov の本文は現行法で、刑法・刑事訴訟法89条の『拘禁刑』は出題当時は『懲役』『禁錮』（89条は『懲役若しくは禁錮』）だった。改正前の内容は条文の本文で確認していない。法定刑の上限・下限の数字は現行法の本文によるが、本問の結論は変わらないとみられる。",
+   "暴力行為等処罰に関する法律の当該条の中身は、問題文の参照条文による（e-Gov の本文では確かめていない）。",
+   "丁の『住居不定』が89条6号の『住居が分からないとき』に当たることは解釈による（公式の正解（丁＝1）とも合う）。",
+   "2号が前科の罪の法定刑で判断することは、条文の『拘禁刑に当たる罪につき有罪の宣告を受けた』の文言からの読みである（解釈による）。"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}

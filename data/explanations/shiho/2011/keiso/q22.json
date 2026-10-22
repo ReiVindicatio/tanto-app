@@ -1,0 +1,137 @@
+{
+ "question_id": "shiho-2011-keiso-q22",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   1,
+   2,
+   2,
+   2,
+   1
+  ],
+  "conclusion": "正解はア1・イ2・ウ2・エ2・オ1。法定代理人は被害者の意思に反しても独立して告訴でき、告訴期間も法定代理人が犯人を知った日から数える（ア・オ有効）一方、司法巡査への申告（イ）、取消し後の再告訴（ウ）、犯人を知った日から6か月経過後の告訴（エ）は無効である。",
+  "body": "名誉毀損罪は親告罪であり（刑法232条1項「告訴がなければ公訴を提起することができない」）、告訴は「犯人を知つた日から六箇月を経過したときは、これをすることができない」（刑事訴訟法235条）。（ア）有効：15歳のＶの母親Ａは法定代理人として「独立して告訴をすることができる」（231条1項）。判例も法定代理人の告訴権を固有権としており、Ｖが申告や処罰を望んでいなくても告訴は有効である（被害者の明示した意思に反することができないとする231条2項ただし書は、被害者が死亡した場合の規定）。犯人が判明する前の告訴であることや、司法警察員Ｘに口頭でして調書を作成してもらったことも妨げにならない（241条）。（イ）無効：告訴は「検察官又は司法警察員にこれをしなければならない」（241条1項）ところ、Ｖが口頭で申告した相手は司法巡査Ｙであり、告訴として効力を生じない。（ウ）無効：Ａは7月20日に告訴を取り消しており、「告訴の取消をした者は、更に告訴をすることができない」（237条2項）。（エ）無効：Ｖは2月10日にＡから犯人が甲であると伝えられて犯人を知っており、8月20日はその日から6か月を経過しているから、235条により告訴をすることができない。（オ）有効：父親Ｂも法定代理人として独立して告訴でき、判例は、被害者が犯人を知った時から6か月を経過していても、法定代理人がこれを知った時から6か月以内にした告訴は有効であるとしている。Ｂは9月1日に初めて被害と犯人を知り、翌日に司法警察員Ｚ宛てに告訴状を提出しているから有効であり、Ａの取消しによる再告訴の禁止（237条2項）は取り消した者に限られるのでＢには及ばない。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "232",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "告訴がなければ公訴を提起することができない",
+    "text_sha256": "fd239975ad9fad36cc41650c18c9f04e1c85dc34d77b45f6343b399fe0f8a39b",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "235",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "犯人を知つた日から六箇月を経過したときは、これをすることができない",
+    "text_sha256": "4ba08001b4dc107d94572abacbcfb0a84c7e1297ef861af44e1a34344c6fab00",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "231",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "独立して告訴をすることができる",
+    "text_sha256": "58fdd2cc7a9100caed6b3bf6bbbbe35bd19fda0e1c1fcd0427a4d63c40db1493",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "231",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "但し、被害者の明示した意思に反することはできない",
+    "text_sha256": "58fdd2cc7a9100caed6b3bf6bbbbe35bd19fda0e1c1fcd0427a4d63c40db1493",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "241",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "検察官又は司法警察員にこれをしなければならない",
+    "text_sha256": "16a893204783f9458d8450425ba3177620c92d7d3ef9c4a50be36a37b4d14cd0",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "241",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "検察官又は司法警察員は、口頭による告訴又は告発を受けたときは調書を作らなければならない",
+    "text_sha256": "16a893204783f9458d8450425ba3177620c92d7d3ef9c4a50be36a37b4d14cd0",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "237",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "告訴の取消をした者は、更に告訴をすることができない",
+    "text_sha256": "bc57c2b6c0dab9c946e950edb42f4414400287b6bf0ebf4e077ad8bb3d60c15d",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   }
+  ],
+  "cases": [
+   {
+    "name": "法定代理人の告訴権の性質と告訴期間の起算点",
+    "court": "最高裁判所第二小法廷",
+    "date": "1953-05-29",
+    "case_number": "昭和28(あ)283",
+    "holding": "被害者の法定代理人の告訴権は固有権である。被害者が犯人を知った時から6か月を経過していても、法定代理人がこれを知った時から6か月の期間内にした親告罪の告訴は有効である。",
+    "verified_urls": [
+     "https://www.courts.go.jp/hanrei/54726/detail2/index.html"
+    ]
+   }
+  ],
+  "pending_cases": [],
+  "notes": [
+   "母親Ａ・父親Ｂが未成年者Ｖの親権者として法定代理人に当たることは、問題文の事実（Ｖが15歳でＡ・Ｂがその父母）から前提とした（解釈による）。",
+   "記述ごとの有効・無効は公式の正解（解答欄ごと）と一致する。各記述の理由は条文・判例による。",
+   "（エ）の期間の数え方は、初日を算入するかにかかわらず8月20日が6か月経過後となるため、期間計算の条文は引用していない。"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}
