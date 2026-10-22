@@ -1,0 +1,103 @@
+{
+ "question_id": "shiho-2012-keiho-q13",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   4
+  ],
+  "conclusion": "正解は4（誤っているのはア・イ・ウ・エの4個）。刑法41条は行為時の年齢だけで決まり、刑法39条2項の減軽は必要的で、心神耗弱は弁識能力・制御能力のどちらかが著しく減退すれば足りる一方、飲酒時に酒酔い運転の意思があったオは判例上減軽されない。",
+  "body": "ア（誤り）：刑法41条は「十四歳に満たない者の行為は、罰しない。」と定め、行為の時点の年齢を基準とするから、犯行時に14歳未満であれば公訴提起の時点で14歳に達していても処罰されない。イ（誤り）：刑法41条は年齢という形式的な基準で一律に責任能力を否定する規定であり、成年者の知能程度が低いことは同条の準用ではなく、刑法39条の心神喪失・心神耗弱の問題として判断されると解されている。ウ（誤り）：刑法39条2項は「心神耗弱者の行為は、その刑を減軽する。」と定めており、減軽は必要的で、任意的ではない（刑法43条本文の「減軽することができる」と対比）。エ（誤り）：心神耗弱は、事物の是非善悪を弁識する能力又はこれに従って行動する能力が著しく減退した状態をいうと解されており、弁識能力が著しく減退していれば制御能力が保たれていても心神耗弱にあたるから、完全責任能力は認められない（この定義を示した判例あり（要確認））。オ（正しい）：判例は、酒酔い運転の行為当時に飲酒酩酊により心神耗弱の状態にあったとしても、飲酒の際に酒酔い運転の意思が認められる場合には刑法39条2項を適用して刑を減軽すべきではないとしている（最決昭和43年2月27日）。以上から、誤っているのはア・イ・ウ・エの4個で、正解は4となる。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "41",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "十四歳に満たない者の行為は、罰しない。",
+    "text_sha256": "6596f758086ea14251ded9cb64ecdb663d19193f8673c5a9635b2c20d9c2b604",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "39",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "心神喪失者の行為は、罰しない。",
+    "text_sha256": "4236e15d1f95ac4b17dcb57ed3f40e51cdea371d6f25530312c8881f35fac335",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "39",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "心神耗弱者の行為は、その刑を減軽する。",
+    "text_sha256": "4236e15d1f95ac4b17dcb57ed3f40e51cdea371d6f25530312c8881f35fac335",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "43",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "その刑を減軽することができる。",
+    "text_sha256": "4a18dd050345c1424dde393ee15554e66bd90bcf59f4f9c932d0ebd372647655",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   }
+  ],
+  "cases": [
+   {
+    "name": "酒酔い運転と刑法39条2項（原因において自由な行為）",
+    "court": "最高裁判所第三小法廷",
+    "date": "1968-02-27",
+    "case_number": "昭和42(あ)1814",
+    "holding": "酒酔い運転の行為当時に飲酒酩酊により心神耗弱の状態にあったとしても、飲酒の際酒酔い運転の意思が認められる場合には、刑法39条2項を適用して刑の減軽をすべきではない。",
+    "verified_urls": [
+     "https://www.courts.go.jp/hanrei/50838/detail2/index.html"
+    ]
+   }
+  ],
+  "pending_cases": [
+   {
+    "about": "心神喪失・心神耗弱の意義（弁識能力・制御能力のいずれかの欠如・著しい減退）を示した判例",
+    "searched": [
+     "大審院（データベースにない）"
+    ]
+   }
+  ],
+  "notes": [
+   "イで刑法41条が知能程度の低い成年者に準用されないこと、エの心神耗弱の意義は、一般的な理解による（解釈による）",
+   "アで行為時の年齢を基準とする点は、刑法41条の「者の行為は」という文言からの説明（解釈による）"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}

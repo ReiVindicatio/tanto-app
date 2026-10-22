@@ -1,0 +1,145 @@
+{
+ "question_id": "shiho-2012-keiso-q25",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   2
+  ],
+  "conclusion": "正解は2（1個）。検察官に認められていないのはウだけ。39条3項の接見指定は「公訴の提起前に限り」できるので、起訴された被告事件だけで勾留されている被告人の接見は指定できない。",
+  "body": "アは認められる。210条1項は「検察官、検察事務官又は司法警察職員は」、所定の要件があるときは「その理由を告げて被疑者を逮捕することができる」と定め、緊急逮捕の主体に検察官を含めている。イも認められる。247条は「公訴は、検察官がこれを行う。」とし、248条は訴追を必要としないときは「公訴を提起しないことができる。」と定めており、罪名による限定はないので、殺人事件の被疑者でも公訴を提起しないことができる。ウは認められない。39条3項は「検察官、検察事務官又は司法警察職員」が接見の日時等を指定できるとしつつ、それを「公訴の提起前に限り」としているので、起訴された被告事件のみで勾留されている被告人については、検察官も接見を指定できない。エは認められる。351条1項は「検察官又は被告人は、上訴をすることができる。」と定め、372条は控訴が「第一審の判決に対してこれをすることができる」としている。オも認められる。472条1項は「裁判の執行は、その裁判をした裁判所に対応する検察庁の検察官がこれを指揮する。」と定めている。以上から、認められていないものはウの1個となる。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "210",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "検察官、検察事務官又は司法警察職員は",
+    "text_sha256": "a16b14ff8b4bc7cccbc8fe9f8d83d7024c9488b266bc7fa97583c253f80d917a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "210",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "その理由を告げて被疑者を逮捕することができる",
+    "text_sha256": "a16b14ff8b4bc7cccbc8fe9f8d83d7024c9488b266bc7fa97583c253f80d917a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "247",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "公訴は、検察官がこれを行う。",
+    "text_sha256": "d33451e84206f9ace3f8abb6db498611f4f5a96ef3c573e302c22982b1414aac",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "248",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "公訴を提起しないことができる。",
+    "text_sha256": "00dcf3e127bce5737ff84cf5edd644d283051a5f947a0d1ae09e02f1a4e2cd30",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "39",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "検察官、検察事務官又は司法警察職員",
+    "text_sha256": "75b89a51ec4fe9018db639cf30e3c9a58ed8ee9aaf563c722c1141fb5cde965a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "39",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "公訴の提起前に限り",
+    "text_sha256": "75b89a51ec4fe9018db639cf30e3c9a58ed8ee9aaf563c722c1141fb5cde965a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "351",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "検察官又は被告人は、上訴をすることができる。",
+    "text_sha256": "8af283d471c59ebc7232385f2ebe593b047e471af06928af50aaa29e54f3cc20",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "372",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "第一審の判決に対してこれをすることができる",
+    "text_sha256": "af7bacc06ba8f190223cb73d51adb2d01ca178ae03cf44d5201f25340db1dd02",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "472",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "裁判の執行は、その裁判をした裁判所に対応する検察庁の検察官がこれを指揮する。",
+    "text_sha256": "a5852825fd59de9d95855c493cc2128ab6d12cf3758dda4b538cc09562224f8e",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "210条1項の法定刑の文言（現行は「拘禁刑」）は出題後の改正で変わっている。改正前の内容は条文の本文で確認していない（本問の結論には影響しない部分）",
+   "記述ごとの○×は条文の文言から導いたもので、公式の正解（1個）と一致する"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}
