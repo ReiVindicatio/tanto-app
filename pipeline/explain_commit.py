@@ -13,9 +13,10 @@
   python3 pipeline/explain_commit.py --skip-recheck yobi-2026-minpo-q02 "判決と公式の○×が合わない（肢e）"
   python3 pipeline/explain_commit.py --no-push      # commit まで（確認用）
   python3 pipeline/explain_commit.py --recheck      # 今のバッチを判例の確かめ直し（T041）として扱う（ふつうは .claude/current_batch.json の記録に従う）
+  python3 pipeline/explain_commit.py --next-only    # commit せず、次のバッチを決めて表示するだけ
 
 次のバッチは、判例の確かめ直しの ①（第三者サイトの判例）が残っている間は確かめ直し、それ以後は解説の生成と確かめ直しを
-交互に出し、.claude/current_batch.json に書く（pipeline/batch_status.py が進み具合を見る）。
+交互に出し、どちらも空になったら問の解説（T018）を出す。.claude/current_batch.json に書く（pipeline/batch_status.py が進み具合を見る）。
 """
 from __future__ import annotations
 
@@ -27,7 +28,7 @@ import subprocess
 import sys
 
 from common import ROOT
-from explain_queue import queue
+from explain_queue import question_queue, queue
 import case_queue
 
 SKIPS = ROOT / "data" / "review" / "explain_skips.json"
@@ -37,6 +38,7 @@ INDEX = ROOT / "app" / "public" / "data" / "index.json"
 PATHS = ["data/explanations", "data/review", "data/statutes", "pipeline", "app/public/data", "NOW.md",
          "prompts", ".claude/agents", "tickets", ".gitignore"]
 RECHECK_LINE = "- **判例の確かめ直し（T041）"
+QUESTION_LINE = "- **問の解説（T018）"
 BATCH = ROOT / ".claude" / "current_batch.json"  # 次のバッチ（git には入れない）
 BATCH_SIZE = 18
 CO_AUTHOR = "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
@@ -76,7 +78,8 @@ def update_now() -> str:
     skips = len(json.loads(SKIPS.read_text(encoding="utf-8"))["skips"])
     explained = sum(s["explanations"] for s in json.loads(INDEX.read_text(encoding="utf-8"))["sets"])
     stamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
-    line = (f"- **解説の生成（T039）：`/loop` で連続生成中**（{stamp} 時点：残り {len(q)}問・肢 {sum(x[4] for x in q)}・"
+    state = "`/loop` で連続生成中" if q else "完了"
+    line = (f"- **解説の生成（T039）：{state}**（{stamp} 時点：残り {len(q)}問・肢 {sum(x[4] for x in q)}・"
             f"解説のある肢カード {explained}・飛ばした問 {skips}（`data/review/explain_skips.json`））。"
             f"手順は `prompts/explain-runbook.md`\n")
     s = NOW.read_text(encoding="utf-8")
@@ -92,6 +95,15 @@ def update_now() -> str:
             s = re.sub(re.escape(RECHECK_LINE) + r".*\n", lambda _: rline, s)
         else:
             s = s.replace(line, line + rline)
+    if (qq := question_queue()) or QUESTION_LINE in s:
+        made = sum(1 for p in (ROOT / "data" / "explanations").rglob("q*.json")
+                   if json.loads(p.read_text(encoding="utf-8")).get("question_explanation"))
+        qline = (f"{QUESTION_LINE}：{'`/loop` で連続生成中' if qq else '完了'}**（{stamp} 時点：残り {len(qq)}問・問の解説 {made}問。"
+                 f"指示は `prompts/explain-question-v1.md`）\n")
+        if QUESTION_LINE in s:
+            s = re.sub(re.escape(QUESTION_LINE) + r".*\n", lambda _: qline, s)
+        else:
+            s = re.sub(r"(- \*\*解説の生成（T039）：.*\n)", lambda m: m.group(1) + qline, s, count=1)
     NOW.write_text(s, encoding="utf-8")
     return line.strip()
 
@@ -99,9 +111,13 @@ def update_now() -> str:
 def mismatches() -> list[str]:
     out = []
     for p in sorted((ROOT / "data" / "explanations").rglob("*.json")):
-        for e in json.loads(p.read_text(encoding="utf-8")).get("explanations", []):
+        d = json.loads(p.read_text(encoding="utf-8"))
+        for e in d.get("explanations", []):
             if any("食い違う" in f for f in e.get("check", {}).get("failures", [])):
                 out.append(e["target"]["id"])
+        qe = d.get("question_explanation")
+        if qe and any("食い違う" in f for f in qe.get("check", {}).get("failures", [])):
+            out.append(f"{d['question_id']}（問の解説）")
     return out
 
 
@@ -134,12 +150,16 @@ def main() -> None:
                     help="判例の確かめ直しのキューから外す（判決と公式の○×が合わない、など）")
     ap.add_argument("--no-push", action="store_true")
     ap.add_argument("--recheck", action="store_true", help="判例の確かめ直し（T041）のバッチ")
+    ap.add_argument("--next-only", action="store_true", help="commit せず、次のバッチを決めて表示するだけ")
     ap.add_argument("--window", nargs=2, metavar=("RESET_AT", "USED_PERCENT"),
                     help="5時間枠を合わせるだけ（例 2026-10-20T14:41 18）。commit はしない")
     args = ap.parse_args()
 
     if args.window:
         count_window(args.window[0], int(args.window[1]))
+        return
+    if args.next_only:
+        next_batch("explain")
         return
     cur = json.loads(BATCH.read_text(encoding="utf-8")) if BATCH.exists() else {}
     mode = "recheck" if args.recheck else cur.get("mode", "explain")
@@ -151,7 +171,7 @@ def main() -> None:
     run("git", "add", *PATHS)
     if run("git", "diff", "--cached", "--name-only").strip():
         what = f"{qs[0]}〜{qs[-1]}（{len(qs)}問）" if qs else "記録の更新"
-        title = "判例の確かめ直し" if mode == "recheck" else "解説"
+        title = {"recheck": "判例の確かめ直し", "question": "問の解説"}.get(mode, "解説")
         run("git", "commit", "-q", "-m", f"{title}：{what}\n\n{CO_AUTHOR}")
         print(run("git", "log", "--oneline", "-1").strip())
         if not args.no_push:
@@ -170,17 +190,22 @@ def next_batch(prev: str) -> None:
         mode = "recheck"
     elif cq and eq:
         mode = "recheck" if prev == "explain" else "explain"
-    else:
+    elif cq or eq:
         mode = "recheck" if cq else "explain"
-    qs = [list(x[1:5]) for x in cq] if mode == "recheck" else [list(x[:4]) for x in eq]
+    else:
+        mode = "question"  # 肢の解説と確かめ直しが済んだら、問の解説（T018）
+    qq = question_queue() if mode == "question" else []
+    qs = ([list(x[1:5]) for x in cq] if mode == "recheck" else [list(x[:4]) for x in eq] if mode == "explain"
+          else [list(x[:4]) for x in qq])
     qs = qs[:BATCH_SIZE]
     BATCH.write_text(json.dumps({"mode": mode, "questions": qs, "written_at": datetime.datetime.now().isoformat(timespec="seconds")},
                                 ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     if not qs:
-        print("🏁 解説の生成・判例の確かめ直しのキューがどちらも空")
+        print("🏁 解説の生成・判例の確かめ直し・問の解説のキューがどれも空")
         return
-    agent = "case-rechecker" if mode == "recheck" else "explain-writer"
-    print(f"次のバッチ：{'判例の確かめ直し' if mode == 'recheck' else '解説の生成'}（サブエージェント {agent}）{len(qs)}問：")
+    agent = {"recheck": "case-rechecker", "question": "explain-question-writer"}.get(mode, "explain-writer")
+    kind = {"recheck": "判例の確かめ直し", "question": "問の解説"}.get(mode, "解説の生成")
+    print(f"次のバッチ：{kind}（サブエージェント {agent}）{len(qs)}問：")
     for exam, year, subj, num in qs:
         print(f"  {exam} {year} {subj} {num}")
 

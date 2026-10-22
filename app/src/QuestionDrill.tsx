@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import ReportLink from "./ReportLink";
-import type { DataSet, Question, SetInfo } from "./types";
+import type { DataSet, Question, QuestionExplanation, SetInfo } from "./types";
+import ExplanationView from "./ExplanationView";
 import QuestionBody from "./QuestionBody";
 import { grade, slotOptions, type Grade } from "./grade";
 import LawNote from "./LawNote";
@@ -16,6 +17,7 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
   const [finishedAt, setFinishedAt] = useState<number | null>(null);
   const sById = useMemo(() => new Map(data.statements.map((s) => [s.id, s])), [data]);
   const expById = useMemo(() => new Map(data.explanations.map((e) => [e.statement_id, e])), [data]);
+  const qexpById = useMemo(() => new Map((data.question_explanations ?? []).map((e) => [e.question_id, e])), [data]);
 
   if (i >= data.questions.length) {
     return (
@@ -131,7 +133,13 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
               <div className="small law-note">この問は、法務省の採点上の取扱いにより全員正答として扱われました。</div>
             )}
             <LawNote q={q} />
-            <ReportLink target={q.id} context={{ screen: "question" }} />
+            {qexpById.has(q.id) && (
+              <details className="question-explanation" open>
+                <summary>この問の解説</summary>
+                <ExplanationView e={qexpById.get(q.id)!} />
+              </details>
+            )}
+            <ReportLink target={q.id} context={reportContext(qexpById.get(q.id))} />
           </div>
           <div className="actionbar">
             <button onClick={next}>次へ</button>
@@ -157,4 +165,9 @@ function answerText(q: Question, k: number): string {
     return c ? `${v}（${c.label}）` : String(v);
   }
   return String(v);
+}
+
+/** 誤り報告に自動で付ける情報（T040・T018）：どの版の問の解説を見て報告したか */
+function reportContext(e: QuestionExplanation | undefined): Record<string, unknown> {
+  return { screen: "question", explanation: e ? { model: e.model, prompt_version: e.prompt_version, generated_at: e.generated_at } : null };
 }

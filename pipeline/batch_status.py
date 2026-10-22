@@ -25,6 +25,8 @@ def pending(mode: str) -> set[tuple[str, int, str, int]]:
         import case_queue
         return {x[1:5] for x in case_queue.queue()}
     import explain_queue
+    if mode == "question":  # 問の解説（T018）
+        return {x[:4] for x in explain_queue.question_queue()}
     return {x[:4] for x in explain_queue.queue()}
 
 
@@ -55,7 +57,7 @@ def main() -> None:
             last = mtime
         lines.append(f"  {'✅' if ok else '…'} {exam} {year} {subj} {num}" + (f"（{mtime:%H:%M} 更新）" if mtime else ""))
     idle = int((now - last).total_seconds() // 60)
-    kind = "確かめ直し" if b["mode"] == "recheck" else "解説の生成"
+    kind = {"recheck": "確かめ直し", "question": "問の解説"}.get(b["mode"], "解説の生成")
     print(f"バッチ（{kind}）：{done}/{len(qs)} 問 済み。最後の動き {last:%H:%M}（{idle}分前）")
     print("\n".join(lines))
     if done == len(qs):

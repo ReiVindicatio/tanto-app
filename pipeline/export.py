@@ -50,10 +50,10 @@ def validated(doc: dict) -> bool:
     return r.returncode == 0
 
 
-def collect_explanations(doc: dict) -> tuple[list[dict], list[str]]:
-    """検査を通った解説（肢ごと）と、通らなかった肢の ID を返す。"""
+def collect_explanations(doc: dict) -> tuple[list[dict], list[str], list[dict]]:
+    """検査を通った解説（肢ごと）と、通らなかった肢・問の ID と、検査を通った問の解説（T018）を返す。"""
     exam, subj = doc["exam"], doc["subject"]
-    out, held = [], []
+    out, held, questions = [], [], []
     for path in sorted((EXPLANATIONS / exam["type"] / str(exam["year"]) / subj).glob("q*.json")):
         number = int(path.stem[1:])
         edoc, failures, _ = check_question(exam["type"], exam["year"], subj, number)
@@ -75,9 +75,27 @@ def collect_explanations(doc: dict) -> tuple[list[dict], list[str]]:
                 "generated_at": edoc["generated_at"],
                 "model": edoc["generated_by"]["model"],
             })
+        qe = edoc.get("question_explanation")
+        if qe is not None:
+            if failures[edoc["question_id"]]:
+                held.append(edoc["question_id"])
+            else:
+                questions.append({
+                    "id": f"qexp-{edoc['question_id']}",
+                    "question_id": edoc["question_id"],
+                    "version": qe["version"],
+                    "answer": qe["stated_answer"],
+                    "conclusion": qe["conclusion"],
+                    "body": qe["body"],
+                    "citations": qe["citations"],
+                    "cases": [{k: c[k] for k in ("name", "court", "date", "holding")} for c in qe.get("cases", [])],
+                    "prompt_version": qe["prompt_version"],
+                    "generated_at": qe["generated_at"],
+                    "model": qe["generated_by"]["model"],
+                })
     for sid in held:
         print(f"⏭️  解説 {sid}：検査に通らないので書き出さない")
-    return out, held
+    return out, held, questions
 
 
 EXAM_ORDER = {"yobi": 0, "shiho": 1}
@@ -210,7 +228,7 @@ def main() -> None:
         if not validated(doc):
             skipped.append(name)
             continue
-        doc["explanations"], _ = collect_explanations(doc)
+        doc["explanations"], _, doc["question_explanations"] = collect_explanations(doc)
         for st in doc["statements"]:
             if st["id"] in open_flags:
                 st["review_flag"] = open_flags[st["id"]]
@@ -232,6 +250,7 @@ def main() -> None:
             "statement_cards": sum(1 for s in doc["statements"] if s["truth_at_exam"] and "review_flag" not in s),
             "cards": card_list(doc, name),
             "explanations": len(doc["explanations"]),
+            "question_explanations": len(doc["question_explanations"]),
             "attribution": doc["attribution"],
         })
     # 分野の一覧（T016）。科目の画面で分野を開いたときだけ読む（起動時の index.json には入れない）

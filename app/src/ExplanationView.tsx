@@ -1,4 +1,4 @@
-import type { Explanation } from "./types";
+import type { Explanation, QuestionExplanation } from "./types";
 
 function articleName(article: string): string {
   const [main, sub] = article.split("_");
@@ -6,7 +6,8 @@ function articleName(article: string): string {
 }
 
 /** AI 生成の解説。AI が作ったものだと分かる表示を必ず付ける */
-export default function ExplanationView({ e }: { e: Explanation }) {
+export default function ExplanationView({ e }: { e: Explanation | QuestionExplanation }) {
+  const question = "question_id" in e; // 問の解説（T018）は、公式の正解との一致を検査している
   return (
     <div className="explanation">
       <div className="ai-badge">AI が生成した解説</div>
@@ -46,7 +47,7 @@ export default function ExplanationView({ e }: { e: Explanation }) {
         </details>
       )}
       <div className="muted small">
-        {e.model}・{e.prompt_version}・{e.generated_at} 生成。公式の○×との一致と、条文の引用の照合を通ったものだけを表示しています。誤りがありうるので、条文・判例は原典で確かめてください。
+        {e.model}・{e.prompt_version}・{e.generated_at} 生成。{question ? "公式の正解との一致" : "公式の○×との一致"}と、条文の引用の照合を通ったものだけを表示しています。誤りがありうるので、条文・判例は原典で確かめてください。
       </div>
     </div>
   );

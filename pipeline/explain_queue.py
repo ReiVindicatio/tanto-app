@@ -11,6 +11,12 @@
   python3 pipeline/explain_queue.py            # 残りの数と、次の20問
   python3 pipeline/explain_queue.py --next 9   # 次の9問を「exam year subject number」の形で
   python3 pipeline/explain_queue.py --show yobi 2026 shoho 16   # 解説を書くための1問の中身（書く肢・書かない肢の区別つき）
+  python3 pipeline/explain_queue.py --questions                # 問の解説（T018）のキュー：残りの数と次の20問
+  python3 pipeline/explain_queue.py --questions --next 18      # 次の18問
+
+問の解説（T018）の対象：肢ごとの○×が決まらない問（statement_truth_derivable が false。穴埋め・個数・区分など）のうち、
+公式の正解があり（没問・全員正解でない）、まだ問の解説（解説ファイルの question_explanation）がなく、
+data/review/explain_skips.json に載っていない問。順は肢の解説と同じ。
 """
 from __future__ import annotations
 
@@ -60,6 +66,33 @@ def queue() -> list[tuple[str, int, str, int, int]]:
     return out
 
 
+def question_explained() -> set[str]:
+    out = set()
+    for path in EXPLANATIONS.glob("*/*/*/q*.json"):
+        d = json.loads(path.read_text(encoding="utf-8"))
+        if d.get("question_explanation"):
+            out.add(d["question_id"])
+    return out
+
+
+def question_queue() -> list[tuple[str, int, str, int, int]]:
+    """問の解説（T018）のキュー。最後の値は解答欄の数"""
+    skips = {s["question_id"] for s in json.loads(SKIPS.read_text(encoding="utf-8"))["skips"]} if SKIPS.exists() else set()
+    done = question_explained()
+    out = []
+    for path in QUESTIONS.glob("*/*/*.json"):
+        doc = json.loads(path.read_text(encoding="utf-8"))
+        exam, year, subj = doc["exam"]["type"], doc["exam"]["year"], doc["subject"]
+        for q in doc["questions"]:
+            official = [a.get("official_answer") for a in q["answer_slots"]]
+            if (q["statement_truth_derivable"] or q["status"]["voided"] or q["status"]["all_correct"] or None in official
+                    or q["id"] in done or q["id"] in skips):
+                continue
+            out.append((exam, year, subj, q["number"], len(official)))
+    out.sort(key=lambda x: (EXAM_ORDER.index(x[0]), -x[1], SUBJECT_ORDER.index(x[2]), x[3]))
+    return out
+
+
 def show(exam: str, year: int, subject: str, number: int) -> None:
     aliases = json.loads(INDEX.read_text(encoding="utf-8")).get("aliases", {}) if INDEX.exists() else {}
     doc = json.loads((QUESTIONS / exam / str(year) / f"{subject}.json").read_text(encoding="utf-8"))
@@ -72,7 +105,13 @@ def show(exam: str, year: int, subject: str, number: int) -> None:
     for k, sq in enumerate(q.get("sub_questions", [])):
         print(f"【小問{sq['marker']}】{sq['stem']}")
     if q["choices"]:
-        print("【選択肢】" + " ／ ".join(f"{c['number']}．{c['text']}" for c in q["choices"]))
+        print("【選択肢】" + " ／ ".join(f"{c['number']}．{c.get('text', '')}" for c in q["choices"]))
+    slots = " ／ ".join(f"№{a['no']}" + (f"（{a['statement_label']}）" if a.get("statement_label") else "") + f"＝{a.get('official_answer')}"
+                       for a in q["answer_slots"])
+    print(f"【公式の正解】{slots}（{'順不同' if q.get('unordered') else '解答欄の順'}）")
+    if not q["statement_truth_derivable"]:
+        mark = "解説あり" if q["id"] in question_explained() else "書く"
+        print(f"【問の解説（T018）】{mark}：肢ごとの○×が決まらない問。stated_answer に公式の正解を解答欄の順に書く")
     print("【肢】")
     for st in doc["statements"]:
         if st["question_id"] != q["id"]:
@@ -95,19 +134,21 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--next", type=int, default=None)
     ap.add_argument("--show", nargs=4, metavar=("EXAM", "YEAR", "SUBJECT", "NUMBER"))
+    ap.add_argument("--questions", action="store_true", help="問の解説（T018）のキュー")
     args = ap.parse_args()
     if args.show:
         e, y, sj, n = args.show
         show(e, int(y), sj, int(n))
         return
-    q = queue()
+    q = question_queue() if args.questions else queue()
     if args.next is not None:
         for exam, year, subj, num, _ in q[:args.next]:
             print(exam, year, subj, num)
         return
-    print(f"残り {len(q)}問・肢 {sum(x[4] for x in q)}")
+    unit = "解答欄" if args.questions else "肢"
+    print(f"残り {len(q)}問・{unit} {sum(x[4] for x in q)}")
     for exam, year, subj, num, n in q[:20]:
-        print(f"  {exam} {year} {subj} q{num:02d}（肢 {n}）")
+        print(f"  {exam} {year} {subj} q{num:02d}（{unit} {n}）")
 
 
 if __name__ == "__main__":

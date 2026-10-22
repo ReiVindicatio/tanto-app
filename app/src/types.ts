@@ -103,6 +103,13 @@ export type Explanation = {
   model: string;
 };
 
+/** 問の解説（T018）：肢ごとの○×が決まらない問（穴埋め・個数・区分など）に問ごとに1つ。検査を通ったものだけが入る */
+export type QuestionExplanation = Omit<Explanation, "statement_id"> & {
+  question_id: string;
+  /** 公式の正解（解答欄の順） */
+  answer: number[];
+};
+
 export type DataSet = {
   attribution: Attribution;
   exam: Exam;
@@ -110,6 +117,8 @@ export type DataSet = {
   questions: Question[];
   statements: Statement[];
   explanations: Explanation[];
+  /** T018。古い束にはない */
+  question_explanations?: QuestionExplanation[];
 };
 
 export type SetInfo = {
@@ -124,5 +133,7 @@ export type SetInfo = {
   /** 出題できる肢カードの ID（束の ID を除いた「q11-e」の形）を空白でつないだもの（T038）。古い index.json にはない */
   cards?: string;
   explanations: number;
+  /** 問の解説の数（T018）。古い index.json にはない */
+  question_explanations?: number;
   attribution: Attribution;
 };

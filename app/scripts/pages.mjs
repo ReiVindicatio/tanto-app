@@ -123,7 +123,7 @@ blockquote{margin:.3em 0 .6em;padding-left:10px;border-left:3px solid var(--line
 ul.list{padding-left:1.2em}ul.list li{margin:.3em 0}
 `;
 
-function renderExplanation(e) {
+function renderExplanation(e, question = false) {
   const cites = e.citations.length
     ? `<details><summary class="muted">引用した条文（e-Gov 法令 API から取得した現行条文）</summary>${e.citations
         .map(
@@ -141,7 +141,7 @@ function renderExplanation(e) {
         })
         .join("")}</ul></details>`
     : "";
-  return `<div class="exp"><span class="ai">AI が生成した解説</span>${para(e.conclusion)}${para(e.body)}${cites}${cases}<p class="muted">${esc(e.model)}・${esc(e.prompt_version)}・${esc(e.generated_at)} 生成。公式の○×との一致と条文の引用の照合を通ったものです。誤りがありうるので、条文・判例は原典で確かめてください。</p></div>`;
+  return `<div class="exp"><span class="ai">AI が生成した解説</span>${para(e.conclusion)}${para(e.body)}${cites}${cases}<p class="muted">${esc(e.model)}・${esc(e.prompt_version)}・${esc(e.generated_at)} 生成。${question ? "公式の正解との一致" : "公式の○×との一致"}と条文の引用の照合を通ったものです。誤りがありうるので、条文・判例は原典で確かめてください。</p></div>`;
 }
 
 function officialAnswer(q) {
@@ -155,6 +155,8 @@ function officialAnswer(q) {
 export function renderQuestion(info, data, q, { prev, next } = {}) {
   const sts = (q.statements ?? []).map((id) => data.statements.find((s) => s.id === id)).filter(Boolean);
   const exps = new Map(data.explanations.map((e) => [e.statement_id, e]));
+  // 問の解説（T018）：肢ごとの○×が決まらない問
+  const qe = (data.question_explanations ?? []).find((x) => x.question_id === q.id);
   const title = `${setTitle(info)} 第${q.number}問｜${APP}`;
   const subs = (q.sub_questions ?? []).map((s) => para(`${s.marker} ${s.stem}`)).join("");
   const ctx = (q.context ?? []).map((c) => `<div class="ctx">${c.kind ? `<div class="muted">【${esc(c.kind)}】</div>` : ""}${para(c.text)}</div>`).join("");
@@ -180,6 +182,7 @@ ${list}
 ${choices}
 <details class="answer"><summary>正解と解説を見る</summary>
 ${officialAnswer(q)}
+${qe ? `<h2>この問の解説</h2>${renderExplanation(qe, true)}` : ""}
 ${answers}
 </details>
 <a class="cta" href="/subjects/${esc(info.subject)}">アプリで${esc(info.subject_name)}を解く</a>

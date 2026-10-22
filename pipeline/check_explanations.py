@@ -10,6 +10,8 @@
   7. 本文の「判例あり（要確認）」と pending_cases がそろっている（T041）。explain-v3 より前の解説で pending_cases が
      ないものは、確かめ直しが済むまで ⚠（警告。公開は止めない）
   8. verified_urls は courts.go.jp の今開ける URL（T041）
+  9. 問の解説（question_explanation。T018：肢ごとの○×が決まらない問）は、stated_answer が公式の正解（解答欄の順）と一致し、
+     2〜5・7・8 も肢の解説と同じに通る
 
 使い方：
   python3 pipeline/check_explanations.py yobi 2026 minpo 1      # 検査して結果をファイルに書き戻す
@@ -118,6 +120,65 @@ def case_checks(e: dict, strict_pending: bool) -> tuple[list[str], list[str]]:
     return fails, warns
 
 
+def check_content(e: dict, own_text: str, question_text: str, strict_pending: bool) -> tuple[list[str], list[str]]:
+    """肢の解説・問の解説に共通の検査（2〜5・7・8）。own_text は肢の文（問の解説なら肢・選択肢・小問の文の全部）。
+    引用の取得情報（text_sha256・fetched_at・source_url）を e の citations に書き足す。(失敗, 警告) を返す"""
+    f: list[str] = []
+    cited_texts: list[str] = []
+    cited_articles: set[str] = set()
+    for c in e.get("citations", []):
+        if c.get("type") != "statute":
+            f.append(f"未知の引用の種類：{c.get('type')}")
+            continue
+        st = load_article(c["law"], c["article"])
+        if st is None:
+            f.append(f"条文が保存されていない：{c['law']} {c['article']}（pipeline/egov.py --fetch で取得する）")
+            continue
+        paras = {p["num"]: p["text"] for p in st["paragraphs"]}
+        missing = [n for n in c.get("paragraphs", []) if n not in paras]
+        if missing or not c.get("paragraphs"):
+            f.append(f"{c['law']} {st['title']}：項の指定が不正 {c.get('paragraphs')}")
+            continue
+        scope = "".join(paras[n] for n in c["paragraphs"])
+        if ws(c["quote"]) not in ws(scope):
+            f.append(f"{c['law']} {st['title']}：引用が保存した本文と一致しない「{c['quote'][:30]}…」"
+                     + first_mismatch(c["quote"], scope))
+        cited_texts.append(st["text"])
+        cited_articles.add(c["article"])
+        c["text_sha256"] = st["text_sha256"]
+        c["fetched_at"] = st["fetched_at"]
+        c["source_url"] = st["url"]
+
+    haystack = ws("".join(cited_texts) + own_text + question_text)
+    for field in ("conclusion", "body"):
+        for quote in QUOTE_RE.findall(e.get(field, "")):
+            for part in re.split(r"…+", quote):
+                if len(part) >= 6 and ws(part) not in haystack:
+                    f.append(f"{field} の「{part[:20]}」が条文・肢・問題文にない")
+
+    for m in ARTICLE_REF_RE.finditer(e.get("body", "")):
+        # 全角数字の条番号（「３９条」。問題文の文言をそのまま引くと出る）も半角にそろえて照合する
+        art = str(int(m.group(1))) + (f"_{int(m.group(2))}" if m.group(2) else "")
+        if art not in cited_articles:
+            f.append(f"本文で触れた {m.group(0)} が citations にない")
+    # 漢数字の条番号（T048）：「」の中は検査3で見ているので外す。問題文・肢にある番号（参照条文）は通す
+    in_question = article_numbers(question_text + own_text)
+    for m in KANJI_ARTICLE_RE.finditer(strip_quotes(e.get("body", ""))):
+        art = str(kanji_to_int(m.group(1))) + (f"_{kanji_to_int(m.group(2))}" if m.group(2) else "")
+        if art not in cited_articles and art not in in_question:
+            f.append(f"本文で触れた {m.group(0)} が citations にない")
+
+    for case in e.get("cases", []):
+        lack = [k for k in ("name", "court", "date", "holding", "verified_urls") if not case.get(k)]
+        if lack:
+            f.append(f"判例 {case.get('name', '?')}：{lack} がない（確認できない判例は載せない）")
+
+    cf, cw = case_checks(e, strict_pending=strict_pending)
+    f.extend(cf)
+
+    return f, cw
+
+
 def check_question(exam: str, year: int, subject: str, number: int,
                    warnings: dict[str, list[str]] | None = None) -> tuple[dict, dict[str, list[str]], list[str]]:
     """(解説ファイル, 肢ID→失敗の一覧, 問単位の失敗) を返す。warnings を渡すと、肢ID→警告の一覧を入れる。"""
@@ -143,59 +204,27 @@ def check_question(exam: str, year: int, subject: str, number: int,
         elif e.get("stated_truth") is not truth["value"]:
             f.append(f"🔴 公式の○×と食い違う（公式 {'○' if truth['value'] else '×'}／解説 {e.get('stated_truth')}）")
 
-        cited_texts: list[str] = []
-        cited_articles: set[str] = set()
-        for c in e.get("citations", []):
-            if c.get("type") != "statute":
-                f.append(f"未知の引用の種類：{c.get('type')}")
-                continue
-            st = load_article(c["law"], c["article"])
-            if st is None:
-                f.append(f"条文が保存されていない：{c['law']} {c['article']}（pipeline/egov.py --fetch で取得する）")
-                continue
-            paras = {p["num"]: p["text"] for p in st["paragraphs"]}
-            missing = [n for n in c.get("paragraphs", []) if n not in paras]
-            if missing or not c.get("paragraphs"):
-                f.append(f"{c['law']} {st['title']}：項の指定が不正 {c.get('paragraphs')}")
-                continue
-            scope = "".join(paras[n] for n in c["paragraphs"])
-            if ws(c["quote"]) not in ws(scope):
-                f.append(f"{c['law']} {st['title']}：引用が保存した本文と一致しない「{c['quote'][:30]}…」"
-                         + first_mismatch(c["quote"], scope))
-            cited_texts.append(st["text"])
-            cited_articles.add(c["article"])
-            c["text_sha256"] = st["text_sha256"]
-            c["fetched_at"] = st["fetched_at"]
-            c["source_url"] = st["url"]
-
-        haystack = ws("".join(cited_texts) + s["text"] + question_text)
-        for field in ("conclusion", "body"):
-            for quote in QUOTE_RE.findall(e.get(field, "")):
-                for part in re.split(r"…+", quote):
-                    if len(part) >= 6 and ws(part) not in haystack:
-                        f.append(f"{field} の「{part[:20]}」が条文・肢・問題文にない")
-
-        for m in ARTICLE_REF_RE.finditer(e.get("body", "")):
-            # 全角数字の条番号（「３９条」。問題文の文言をそのまま引くと出る）も半角にそろえて照合する
-            art = str(int(m.group(1))) + (f"_{int(m.group(2))}" if m.group(2) else "")
-            if art not in cited_articles:
-                f.append(f"本文で触れた {m.group(0)} が citations にない")
-        # 漢数字の条番号（T048）：「」の中は検査3で見ているので外す。問題文・肢にある番号（参照条文）は通す
-        in_question = article_numbers(question_text + s["text"])
-        for m in KANJI_ARTICLE_RE.finditer(strip_quotes(e.get("body", ""))):
-            art = str(kanji_to_int(m.group(1))) + (f"_{kanji_to_int(m.group(2))}" if m.group(2) else "")
-            if art not in cited_articles and art not in in_question:
-                f.append(f"本文で触れた {m.group(0)} が citations にない")
-
-        for case in e.get("cases", []):
-            lack = [k for k in ("name", "court", "date", "holding", "verified_urls") if not case.get(k)]
-            if lack:
-                f.append(f"判例 {case.get('name', '?')}：{lack} がない（確認できない判例は載せない）")
-
-        cf, cw = case_checks(e, strict_pending=prompt_major(doc) >= STRICT_PENDING_FROM)
+        cf, cw = check_content(e, s["text"], question_text, strict_pending=prompt_major(doc) >= STRICT_PENDING_FROM)
         f.extend(cf)
         if warnings is not None:
             warnings[sid] = cw
+
+    # 問の解説（T018）：肢ごとの○×が決まらない問（穴埋め・個数・区分など）に、問ごとに1つ
+    qe = doc.get("question_explanation")
+    if qe is not None:
+        f = []
+        failures[q["id"]] = f
+        official = [slot.get("official_answer") for slot in q["answer_slots"]]
+        if q["status"]["voided"] or q["status"]["all_correct"] or None in official:
+            f.append("公式の正解がない問（没問・全員正解）には問の解説を書かない")
+        elif (sorted if q.get("unordered") else list)(qe.get("stated_answer") or []) != (sorted if q.get("unordered") else list)(official):
+            f.append(f"🔴 公式の正解と食い違う（公式 {official}／解説 {qe.get('stated_answer')}）")
+        own = "".join(x["text"] for x in sts.values()) + "".join(c.get("text", "") for c in q["choices"]) \
+            + "".join(sq.get("stem", "") for sq in q.get("sub_questions", []))
+        cf, cw = check_content(qe, own, question_text, strict_pending=True)
+        f.extend(cf)
+        if warnings is not None:
+            warnings[q["id"]] = cw
 
     q_fail = []
     have = {e["target"]["id"] for e in doc["explanations"]}
@@ -220,6 +249,11 @@ def main() -> None:
         e["id"] = f"exp-{sid}"
         e["status"] = "published" if not failures[sid] else "flagged"
         e["check"] = {"passed": not failures[sid], "failures": failures[sid]}
+    qe = doc.get("question_explanation")
+    if qe is not None:
+        qf = failures[doc["question_id"]]
+        qe["status"] = "published" if not qf else "flagged"
+        qe["check"] = {"passed": not qf, "failures": qf}
     path = EXPLANATIONS / args.exam / str(args.year) / args.subject / f"q{args.number:02d}.json"
     path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
@@ -230,6 +264,14 @@ def main() -> None:
         for x in f:
             print(f"    {x}")
         for x in warnings.get(e["target"]["id"], []):
+            print(f"    ⚠ {x}")
+        bad += bool(f)
+    if qe is not None:
+        f = failures[doc["question_id"]]
+        print(f"{'✅' if not f else '❌'} {doc['question_id']}（問の解説）")
+        for x in f:
+            print(f"    {x}")
+        for x in warnings.get(doc["question_id"], []):
             print(f"    ⚠ {x}")
         bad += bool(f)
     for x in q_fail:

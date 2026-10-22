@@ -64,6 +64,10 @@
 
 （2026-10-20〜21 の運用で足した注意：探していない判例を「確認できなかった」と書かない／保存済みの法令を「ない」と思い込まない／旧商法の利率を記憶で書いた例／検索結果の要約から判例の理由づけを書いた例。explain-v3 と上の指示に織り込み済み）
 
+## 問の解説（T018）
+
+「1回分」と同じ回し方で、肢の解説と確かめ直しのキューが空になったあと、`explain_commit.py` が問の解説のバッチ（「問の解説（サブエージェント explain-question-writer）」）を出す。キューは `python3 pipeline/explain_queue.py --questions`、指示は `prompts/explain-question-v1.md`。サブエージェントは `subagent_type: "explain-question-writer"`（一覧にないときは `general-purpose` に `.claude/agents/explain-question-writer.md` を読ませる）。報告の「🔴 公式の正解と食い違う」は直さずに `--skip <問 ID> "<理由>"` を付けて後始末する。
+
 ## 判例の確かめ直し（T041）
 
 「1回分」と同じ回し方で、`explain_commit.py` が確かめ直しのバッチを出したときに回す（キューは `python3 pipeline/case_queue.py`）。利用上限の枠は解説の生成と共通。

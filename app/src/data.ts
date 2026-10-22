@@ -25,6 +25,7 @@ export function merge(sets: DataSet[]): DataSet {
     questions: sets.flatMap((d) => d.questions),
     statements: sets.flatMap((d) => d.statements),
     explanations: sets.flatMap((d) => d.explanations),
+    question_explanations: sets.flatMap((d) => d.question_explanations ?? []),
   };
 }
 
