@@ -1,0 +1,96 @@
+{
+ "question_id": "yobi-2011-shoho-q27",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   2
+  ],
+  "conclusion": "正解は2（ア・エ）。会社法911条3項は、資本金の額（5号）と取締役会設置会社である旨（15号）を登記事項に掲げるが、事業年度は掲げず、取締役は氏名だけ（住所は代表取締役のみ）、監査役会設置会社では社外監査役である旨（常勤監査役である旨ではない）を登記させる。",
+  "body": "株式会社の登記事項は911条3項に列挙されている。ア：同項5号は「資本金の額」を掲げており、登記事項である。イ：同項各号に事業年度は掲げられておらず、登記事項ではない。ウ：同項13号は「取締役（監査等委員会設置会社の取締役を除く。）の氏名」とし、住所まで登記するのは14号の「代表取締役の氏名及び住所」である。取締役の住所は登記事項ではないので、ウは誤り。エ：同項15号は「取締役会設置会社であるときは、その旨」を掲げており、登記事項である。オ：同項18号は「監査役会設置会社であるときは、その旨及び監査役のうち社外監査役であるものについて社外監査役である旨」とする。登記するのは社外監査役である旨であって、常勤監査役である旨ではないので、オは誤り。したがって登記事項はアとエであり、正解は2である。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "911",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "資本金の額",
+    "text_sha256": "56343fd3641b8d54245c3b12bab878cbdf7e9de83d41e9e0d92349ec4858cda2",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "911",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "取締役（監査等委員会設置会社の取締役を除く。）の氏名",
+    "text_sha256": "56343fd3641b8d54245c3b12bab878cbdf7e9de83d41e9e0d92349ec4858cda2",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "911",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "代表取締役の氏名及び住所",
+    "text_sha256": "56343fd3641b8d54245c3b12bab878cbdf7e9de83d41e9e0d92349ec4858cda2",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "911",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "取締役会設置会社であるときは、その旨",
+    "text_sha256": "56343fd3641b8d54245c3b12bab878cbdf7e9de83d41e9e0d92349ec4858cda2",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "会社法",
+    "article": "911",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "監査役会設置会社であるときは、その旨及び監査役のうち社外監査役であるものについて社外監査役である旨",
+    "text_sha256": "56343fd3641b8d54245c3b12bab878cbdf7e9de83d41e9e0d92349ec4858cda2",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "現行法（2026-10-18 取得）の本文で説明した。出題当時（2011年）の911条3項の号の番号・文言（13号の括弧書き・22号など監査等委員会設置会社に関する部分を含む）は、改正前の内容は条文の本文で確認していない。ア〜オの結論は現行法でも公式の正解と整合する。"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}

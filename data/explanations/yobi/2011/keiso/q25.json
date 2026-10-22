@@ -1,0 +1,158 @@
+{
+ "question_id": "yobi-2011-keiso-q25",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   4
+  ],
+  "conclusion": "正解は4（4個：イ・ウ・オ・カ）。被疑者の勾留には保釈がなく（207条1項ただし書）、被告人の勾留には検察官の勾留請求という手続がないため、ア・エを除く4つが両方に認められる。",
+  "body": "被疑者の勾留は、207条1項が「前三条の規定による勾留の請求を受けた裁判官は、その処分に関し裁判所又は裁判長と同一の権限を有する。」と定め、被告人の勾留の規定が被疑者の勾留に準用される形をとる。ア（保釈）は、同項ただし書が「但し、保釈については、この限りでない。」とするので、被疑者の勾留には認められず、被告人の勾留（88条）だけの手続である。エ（検察官による勾留請求）は、被疑者については205条1項が検察官は「裁判官に被疑者の勾留を請求しなければならない」と定めるが、被告人の勾留は60条1項が「裁判所は、…これを勾留することができる。」とする形で、検察官の請求を要件とする規定はなく、裁判所が職権で行うものと解されている。したがって被告人の勾留には認められない。イ（勾留の取消し、87条）、ウ（勾留理由開示、82条）、オ（弁護人等以外の者との接見等の制限、81条）、カ（勾留の執行停止、95条）は、いずれも被告人の勾留について定められた手続で、207条1項により被疑者の勾留にも及ぶと解されている。以上から、両方に認められるのはイ・ウ・オ・カの4個で、公式の正解4と一致する。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "207",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "前三条の規定による勾留の請求を受けた裁判官は、その処分に関し裁判所又は裁判長と同一の権限を有する。",
+    "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "207",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "但し、保釈については、この限りでない。",
+    "text_sha256": "bc2c7f9d0100d0d2a7640d3bb54a3d437e26b3568df686e6d005a5261753ffca",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "205",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "裁判官に被疑者の勾留を請求しなければならない",
+    "text_sha256": "d27c2d1b2f006955775756376eb8ddd3f8fdae1848951d1fefe93d3c7d854837",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "60",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "裁判所は、",
+    "text_sha256": "fc2a80617b4371059a22447a68c6aeab2d2cfc71a0a3b5dca33372f62e77a95c",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "60",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "これを勾留することができる。",
+    "text_sha256": "fc2a80617b4371059a22447a68c6aeab2d2cfc71a0a3b5dca33372f62e77a95c",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "88",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "勾留されている被告人又はその弁護人、法定代理人、保佐人、配偶者、直系の親族若しくは兄弟姉妹は、保釈の請求をすることができる。",
+    "text_sha256": "feac6c75e414ddc41ac0cfda562fe14c735087922c6137fa7b2ee19ad0d7a1d9",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "87",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "決定を以て勾留を取り消さなければならない。",
+    "text_sha256": "c31fe50a78e18dbce1b557128fc05869eb56ac2e3f8364fa35004f3a86da340e",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "82",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "勾留されている被告人は、裁判所に勾留の理由の開示を請求することができる。",
+    "text_sha256": "5264abeb763cbcfc0ff1dd57a0b5d79f77d18c52dc3dfd8b9b77ac38f6ce638e",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "81",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "勾留されている被告人と第三十九条第一項に規定する者以外の者との接見を禁じ",
+    "text_sha256": "4bbd1858fef1a7e6a6d39c6f86f0cecf481253ea5489d79fc54b053692b9a7b0",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "95",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "勾留の執行を停止することができる。",
+    "text_sha256": "9019a57f53059deccf9b47fd9397b459ff7a4a3c0d1654411d3840ffa85951ef",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "解釈による：81条・82条・87条・95条が207条1項により被疑者の勾留に及ぶこと、被告人の勾留が裁判所の職権によることは、条文の構造からの一般的な理解として書いた。",
+   "記述ごとの個別の○×は公式に示されていない。上の振り分けは条文から説明したもので、個数は公式の正解4と一致する。",
+   "条文は取得日時点の現行法の本文で説明した。出題当時（2011年）との違いの有無を含め、改正前の内容は条文の本文で確認していない。"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}

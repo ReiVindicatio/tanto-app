@@ -1,0 +1,146 @@
+{
+ "question_id": "yobi-2011-shoho-q28",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   1
+  ],
+  "conclusion": "正解は1（ア・ウ）。ウは商法513条1項が「商人間において」と当事者双方が商人であることを要件とし、イ・エ・オは行為者が商人であることや「商行為によって生じた債権」であることで足りる（3条1項）。アは現行法では削除されており、公式の正解から出題当時は商人間に限る規律だったとなる。",
+  "body": "条文の文言上、当事者双方が商人であることを要件とする規律を選ぶ問である。ウ：商法513条1項は「商人間において金銭の消費貸借をしたときは、貸主は、法定利息を請求することができる。」と定め、双方が商人であることを要件とする。民法589条1項は「貸主は、特約がなければ、借主に対して利息を請求することができない。」としているので、約定がなくても利息を請求できるのは商人間の特則である（ウの「年６分」の利率を定めていた規定は、現行の商法514条が「削除」のため本文で確かめられない）。ア：現行の商法507条は「削除」で、対話者間の申込みは民法525条3項が「対話者に対してした第一項の申込みに対して対話が継続している間に申込者が承諾の通知を受けなかったときは、その申込みは、その効力を失う。」と当事者を限らずに定めている。出題当時の商法の規定の文言は確認していないが、公式の正解（ア・ウ）から、アは出題当時、当事者双方が商人である場合に限り適用される規律だったとなる。イ：商法512条は「商人がその営業の範囲内において他人のために行為をしたときは、相当な報酬を請求することができる。」と定め、行為をする側が商人であればよく、「他人」が商人であることを求めていない。エ：「商行為によって生じた債権」についての規律であり、商法3条1項が「当事者の一方のために商行為となる行為については、この法律をその双方に適用する。」と定めるから、一方的商行為でも足りる（エの規律にあたる規定は現行の商法にはなく、その文言は確認していない）。オ：商法515条は「民法第三百四十九条の規定は、商行為によって生じた債権を担保するために設定した質権については、適用しない。」と定めて民法349条の流質の禁止を外すが、要件は「商行為によって生じた債権」であり双方が商人であることを求めていない。よって、双方が商人である場合に限るのはアとウで、正解は1となる。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "商法",
+    "article": "513",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "商人間において金銭の消費貸借をしたときは、貸主は、法定利息を請求することができる。",
+    "text_sha256": "d35857a7c77e3543a1c2077ef05e994bda7e1b6c4e30b0be4ca5716c6583a7b3",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "民法",
+    "article": "589",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "貸主は、特約がなければ、借主に対して利息を請求することができない。",
+    "text_sha256": "5d60796fb8fff7ad0e16ed6eb2b1c4fbeca03061faecef7daa9d4e1f2a986951",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "商法",
+    "article": "514",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "削除",
+    "text_sha256": "e9653dc3edcbc072d033d200b3aa56539fde84e9b7cc80287fedc9f91cbe03ad",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "商法",
+    "article": "507",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "削除",
+    "text_sha256": "e9653dc3edcbc072d033d200b3aa56539fde84e9b7cc80287fedc9f91cbe03ad",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "民法",
+    "article": "525",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "対話者に対してした第一項の申込みに対して対話が継続している間に申込者が承諾の通知を受けなかったときは、その申込みは、その効力を失う。",
+    "text_sha256": "8b490a4bd34fc35b31f233129bde1d53e02fcd46965e19f3140524a0bf1238cc",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "商法",
+    "article": "512",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "商人がその営業の範囲内において他人のために行為をしたときは、相当な報酬を請求することができる。",
+    "text_sha256": "fd35dfe454e605238c69e6c65cf9dd1589d4ca78ab799c1e1cc3e5cd7c864e49",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "商法",
+    "article": "3",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "当事者の一方のために商行為となる行為については、この法律をその双方に適用する。",
+    "text_sha256": "f0d2411af89218eedd0659ab3193f19d8bc642e3a6c33739845118bba4ff795e",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "商法",
+    "article": "515",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "民法第三百四十九条の規定は、商行為によって生じた債権を担保するために設定した質権については、適用しない。",
+    "text_sha256": "ab53068865fd88698a0c72bc29f252bcfbc9a825e9f346171024a1959cfd8e50",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "民法",
+    "article": "349",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "質権設定者は、設定行為又は債務の弁済期前の契約において、質権者に弁済として質物の所有権を取得させ、その他法律に定める方法によらないで質物を処分させることを約することができない。",
+    "text_sha256": "36d62bd6dd61bf1b04cc6cca39e96aaf7361de67b16729b35866de37fa76b34d",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "アの規律（対話者間の申込みの失効）を定めていた出題当時の商法の規定、ウの年6分の利率を定めていた規定、エの商事消滅時効の規定は、現行の商法では削除されているか見当たらない。改正前の内容は条文の本文で確認していない。",
+   "アが出題当時「当事者双方が商人である場合に限り適用される」規律だったことは、条文で確かめたものではなく、公式の正解（ア・ウ）から逆算したもの。",
+   "エ・オが一方的商行為でも適用されることは、商法3条1項の文言による説明（エは現行法に対応する規定がないため、出題当時の規定への当てはめは確認していない）。"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}
