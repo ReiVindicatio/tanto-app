@@ -1,0 +1,124 @@
+{
+ "question_id": "yobi-2016-keiso-q18",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   2,
+   1,
+   1,
+   2,
+   2
+  ],
+  "conclusion": "正解はア2・イ1・ウ1・エ2・オ2。検察官が自ら逮捕したときの勾留請求は48時間以内（204条1項）、勾留延長は通じて10日まで（208条2項）、緊急逮捕は長期3年以上（210条1項）、起訴後の勾留期間は2箇月（60条2項）、控訴期間は14日（373条）である。",
+  "body": "ア（№24）はｂ（48）。204条1項は、検察官が逮捕状により被疑者を逮捕したときは、留置の必要があると思料するときは「被疑者が身体を拘束された時から四十八時間以内に裁判官に被疑者の勾留を請求しなければならない。」と定める。24時間は、司法警察員から送致された被疑者を検察官が受け取った場合の期限であり（205条1項の「被疑者を受け取つた時から二十四時間以内」）、検察官自身が逮捕した場合ではない。イ（№25）はａ（10）。208条2項は勾留期間の延長について「この期間の延長は、通じて十日を超えることができない。」と定める（同条1項の勾留期間10日と合わせると最長20日になるが、延長の上限は10日である）。ウ（№26）はａ（3）。210条1項は緊急逮捕の要件として、死刑又は無期若しくは「長期三年以上の拘禁刑に当たる罪」を犯したことを疑うに足りる十分な理由がある場合と定める。エ（№27）はｂ（2）。60条2項は「勾留の期間は、公訴の提起があつた日から二箇月とする。」と定め、1箇月ごとの更新はその後の話である。オ（№28）はｂ（14）。373条は「控訴の提起期間は、十四日とする。」と定める。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "204",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "被疑者が身体を拘束された時から四十八時間以内に裁判官に被疑者の勾留を請求しなければならない。",
+    "text_sha256": "d481bd68528fc7d44906fbcdd1954a4044bba9c9f10e4b437f639c15738adb0a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "205",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "被疑者を受け取つた時から二十四時間以内",
+    "text_sha256": "d27c2d1b2f006955775756376eb8ddd3f8fdae1848951d1fefe93d3c7d854837",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "208",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "勾留の請求をした日から十日以内に公訴を提起しないときは",
+    "text_sha256": "025e1115fa564e91ca1651cb0202a325c51c7173ec9356942e130704a0b8a017",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "208",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "この期間の延長は、通じて十日を超えることができない。",
+    "text_sha256": "025e1115fa564e91ca1651cb0202a325c51c7173ec9356942e130704a0b8a017",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "210",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "長期三年以上の拘禁刑に当たる罪",
+    "text_sha256": "a16b14ff8b4bc7cccbc8fe9f8d83d7024c9488b266bc7fa97583c253f80d917a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "60",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "勾留の期間は、公訴の提起があつた日から二箇月とする。",
+    "text_sha256": "fc2a80617b4371059a22447a68c6aeab2d2cfc71a0a3b5dca33372f62e77a95c",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "373",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "控訴の提起期間は、十四日とする。",
+    "text_sha256": "ec8324aeece198df7d30d37ba498a81c7f767e8b83a73e933ea9608170ddffa7",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "ウについて、現行の210条1項は「拘禁刑」と定める（問題文は出題当時の「懲役若しくは禁錮」）。刑の名称の改正による違いで、長期3年以上という数字は現行の本文で確かめた。改正前の内容は条文の本文で確認していない"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}

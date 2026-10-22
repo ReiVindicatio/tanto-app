@@ -1,0 +1,121 @@
+{
+ "question_id": "yobi-2016-keiso-q15",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   2
+  ],
+  "conclusion": "正解は2（正しいものは1個）。203条1項の文言どおりのアだけが正しく、イは204条1項ただし書（勾留請求に代えて公訴提起ができる）、オは216条（現行犯逮捕に通常逮捕の規定を準用）により誤りとなる。",
+  "body": "アは正しい。203条1項は、司法警察員が逮捕状により被疑者を逮捕したときは、弁解の機会を与え、「留置の必要がないと思料するときは直ちにこれを釈放し」と定めており、検察官への送致は留置の必要があるときの手続である。イは誤り。204条1項は検察官が逮捕した被疑者について勾留請求の期限を定めた上で、「但し、その時間の制限内に公訴を提起したときは、勾留の請求をすることを要しない。」としており、逮捕中の被疑者を起訴することは予定されている（205条3項も同旨）。ウは誤り。212条1項は「現に罪を行い、又は現に罪を行い終つた者を現行犯人とする。」と定めるだけで、実行行為の全部を完了したことを要件とする文言はなく、犯罪の実行を終えた直後の者（実行を途中でやめた者を含む）も当たると解されている。エは誤り。212条1項・213条は、逮捕者が犯行を現認したことを要件として書いておらず、逮捕者が直接見ていなくても、逮捕の時点の状況から犯人と犯罪が明白であれば現行犯逮捕ができると解されている。オは誤り。216条は「現行犯人が逮捕された場合には、第百九十九条の規定により被疑者が逮捕された場合に関する規定を準用する。」と定めるので、私人から現行犯人の引渡しを受けた司法警察員は203条の手続（48時間以内の送致など）によればよい。逮捕後に「直ちに裁判官の逮捕状を求める手続をしなければならない」のは緊急逮捕（210条1項）であり、現行犯逮捕には当てはまらない。以上で正しいのはアの1個となり、公式の正解（2）と合う。なお、ウ・エが誤りであることは、条文の文言と、ア○・イ×・オ×に公式の正解（1個）を合わせて導いたもので、判例の確認はしていない。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "203",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "留置の必要がないと思料するときは直ちにこれを釈放し",
+    "text_sha256": "af632c87454e65020fa5668fdabda782e75580c7d48705b9653d130b29ca1984",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "204",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "但し、その時間の制限内に公訴を提起したときは、勾留の請求をすることを要しない。",
+    "text_sha256": "d481bd68528fc7d44906fbcdd1954a4044bba9c9f10e4b437f639c15738adb0a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "205",
+    "paragraphs": [
+     "3"
+    ],
+    "quote": "前二項の時間の制限内に公訴を提起したときは、勾留の請求をすることを要しない。",
+    "text_sha256": "d27c2d1b2f006955775756376eb8ddd3f8fdae1848951d1fefe93d3c7d854837",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "212",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "現に罪を行い、又は現に罪を行い終つた者を現行犯人とする。",
+    "text_sha256": "a028b575b22ce7c0c8f0adf3590174d759bdd3ef61bf07d75dcb672735a14a20",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "213",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "現行犯人は、何人でも、逮捕状なくしてこれを逮捕することができる。",
+    "text_sha256": "9ba5e0ad33a98aa4378e52806d654e46f609dc5390a7d2deebd4008c8c1a63c3",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "216",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "現行犯人が逮捕された場合には、第百九十九条の規定により被疑者が逮捕された場合に関する規定を準用する。",
+    "text_sha256": "09caf5fc7cceddf2e2b81bac32b457ea58b4fc316474072b893783005f42b111",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "210",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "直ちに裁判官の逮捕状を求める手続をしなければならない",
+    "text_sha256": "a16b14ff8b4bc7cccbc8fe9f8d83d7024c9488b266bc7fa97583c253f80d917a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "ウ（「現に罪を行い終つた者」に実行行為の全部の完了は要らない）とエ（犯行の現認は要件でない）は解釈による。判例は確かめていない（courts.py search 現行犯人 現認 では該当する判例を見つけられなかった）",
+   "ウ・エの○×は、ア・イ・オの条文上の○×と公式の正解（1個）から逆算したものでもある"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}

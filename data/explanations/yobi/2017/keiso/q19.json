@@ -1,0 +1,157 @@
+{
+ "question_id": "yobi-2017-keiso-q19",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   4
+  ],
+  "conclusion": "正解は4（3個）。人を死亡させた罪で死刑に当たるもの（殺人・強盗致死）は刑訴法250条の期間の定めがなく時効が完成しないが、殺人未遂・保護責任者遺棄致死・傷害致死は同条の期間の経過で時効が完成する。",
+  "body": "刑訴法250条1項は「時効は、人を死亡させた罪であつて拘禁刑に当たるものについては、次に掲げる期間を経過することによつて完成する。」とし、2項は「人を死亡させた罪であつて拘禁刑以上の刑に当たるもの以外の罪」について期間を定める。人を死亡させた罪で死刑に当たるものはどちらの項にも当たらず、期間の定めがないため公訴時効は完成しない。また251条は「二以上の主刑中その一を科すべき罪については、その重い刑に従つて、前条の規定を適用する。」とする。ア（殺人）は、199条の法定刑が「死刑又は無期若しくは五年以上の拘禁刑」で、重い刑である死刑に当たる人を死亡させた罪なので、時効は完成しない。イ（殺人未遂）は、人を死亡させた罪ではないので250条2項により、「死刑に当たる罪については二十五年」で時効が完成する。ウ（強盗致死）は、240条で「死亡させたときは死刑又は無期拘禁刑に処する」とされ、死刑に当たる人を死亡させた罪なので、時効は完成しない。エ（保護責任者遺棄致死）は、219条が「傷害の罪と比較して、重い刑により処断する」としており、傷害致死（205条「三年以上の有期拘禁刑」）と比べて重い刑によるので、死刑に当たらない人を死亡させた罪として250条1項の期間の経過で時効が完成する。オ（傷害致死）も同様に、有期拘禁刑（刑法12条1項「有期拘禁刑は、一月以上二十年以下とする。」）に当たる人を死亡させた罪なので、250条1項2号の「長期二十年の拘禁刑に当たる罪については二十年」で時効が完成する。したがって時効が完成するのはイ・エ・オの3個である。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "250",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "時効は、人を死亡させた罪であつて拘禁刑に当たるものについては、次に掲げる期間を経過することによつて完成する。",
+    "text_sha256": "01149dc5d5365173ebcfea277949feaa22fc5a501869e0a2edf7b5b2d5814915",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "250",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "長期二十年の拘禁刑に当たる罪については二十年",
+    "text_sha256": "01149dc5d5365173ebcfea277949feaa22fc5a501869e0a2edf7b5b2d5814915",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "250",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "人を死亡させた罪であつて拘禁刑以上の刑に当たるもの以外の罪",
+    "text_sha256": "01149dc5d5365173ebcfea277949feaa22fc5a501869e0a2edf7b5b2d5814915",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "250",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "死刑に当たる罪については二十五年",
+    "text_sha256": "01149dc5d5365173ebcfea277949feaa22fc5a501869e0a2edf7b5b2d5814915",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "251",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "二以上の主刑中その一を科すべき罪については、その重い刑に従つて、前条の規定を適用する。",
+    "text_sha256": "b45a724f9706131ecccf62eca9cbefe729ab2a55ed2c23edde7b0008ddff41f0",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "199",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "死刑又は無期若しくは五年以上の拘禁刑",
+    "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "240",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "死亡させたときは死刑又は無期拘禁刑に処する",
+    "text_sha256": "606eeb6a25b0c01dd2a8d06824cea550181f8c9024cb24edda30017c5d886eb7",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "219",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "傷害の罪と比較して、重い刑により処断する",
+    "text_sha256": "00a3a496cbc643eb2771d295943b28c3a2417250ce809991eb218f820a360d35",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "205",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "三年以上の有期拘禁刑",
+    "text_sha256": "960a4d341d2e03804b55d34a45e7198077c0616adbacf517c88e73a9ab8a2d81",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑法",
+    "article": "12",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "有期拘禁刑は、一月以上二十年以下とする。",
+    "text_sha256": "353e9be5368f4d0fe8a1ac33c657142a5099fb984fafe571b6b57e54bf346147",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "出題時（2017年）の条文は「禁錮」「懲役」の語を用いていた（現行の本文は拘禁刑への改正後）。改正前の内容は条文の本文で確認していない。",
+   "死刑に当たる人を死亡させた罪について時効が完成しないことは、250条1項・2項のいずれにも当たらないことから導いた（解釈による）。"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}
