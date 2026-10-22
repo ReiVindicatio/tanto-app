@@ -1,7 +1,9 @@
 // サーバーの API（/api/*）を呼ぶ（T003）。DB が何かは知らない（決定012）
 import type { Answer } from "./store";
+import type { BookmarkEvent } from "./bookmarks";
 
 export type StoredAnswer = Answer & { received_at: string };
+export type StoredBookmark = BookmarkEvent & { received_at: string };
 /** 誤り報告（T040）。context はアプリが自動で付ける JSON 文字列 */
 export type Report = { id: string; target: string; kind: "question" | "truth" | "explanation" | "other"; body: string; context: string };
 
@@ -13,9 +15,9 @@ export class RateLimitedError extends Error {
 }
 
 export interface ApiClient {
-  /** keepalive：画面を閉じても送信を続ける（本文64KBまで） */
-  push(answers: Answer[], opts?: { keepalive?: boolean }): Promise<{ inserted: number; received_at: string }>;
-  pull(since?: string): Promise<StoredAnswer[]>;
+  /** keepalive：画面を閉じても送信を続ける（本文64KBまで）。bookmarks：★の操作も同じ呼び出しで送る（T026） */
+  push(answers: Answer[], opts?: { keepalive?: boolean; bookmarks?: BookmarkEvent[] }): Promise<{ inserted: number; received_at: string }>;
+  pull(since?: string): Promise<{ answers: StoredAnswer[]; bookmarks: StoredBookmark[] }>;
   deleteMe(): Promise<void>;
   report(r: Report): Promise<void>;
 }
@@ -37,13 +39,15 @@ export class HttpApiClient implements ApiClient {
     return res.json();
   }
 
-  async push(answers: Answer[], opts: { keepalive?: boolean } = {}) {
-    return (await this.call("POST", "/api/answers", { answers }, opts.keepalive ?? false)) as { inserted: number; received_at: string };
+  async push(answers: Answer[], opts: { keepalive?: boolean; bookmarks?: BookmarkEvent[] } = {}) {
+    const body = opts.bookmarks?.length ? { answers, bookmarks: opts.bookmarks } : { answers };
+    return (await this.call("POST", "/api/answers", body, opts.keepalive ?? false)) as { inserted: number; received_at: string };
   }
 
   async pull(since?: string) {
     const q = since ? `?since=${encodeURIComponent(since)}` : "";
-    return ((await this.call("GET", `/api/answers${q}`)) as { answers: StoredAnswer[] }).answers;
+    const r = (await this.call("GET", `/api/answers${q}`)) as { answers: StoredAnswer[]; bookmarks?: StoredBookmark[] };
+    return { answers: r.answers, bookmarks: r.bookmarks ?? [] };
   }
 
   async deleteMe() {

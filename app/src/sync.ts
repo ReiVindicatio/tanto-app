@@ -8,11 +8,13 @@
 import { RateLimitedError, type ApiClient, type Report } from "./api";
 import type { AuthClient, User } from "./auth";
 import type { Answer, LocalStorageStore, RecordStore } from "./store";
+import { LocalBookmarkStore, type BookmarkEvent, type BookmarkSink } from "./bookmarks";
 
 const OUTBOX = "tanto.outbox.v1"; // 未送信の回答
 const CURSOR = "tanto.sync.cursor.v1"; // サーバーから受け取った最後の received_at
 const LINKED = "tanto.sync.user.v1"; // この端末の記録を引き継いだアカウント
 const REPORTS = "tanto.reports.outbox.v1"; // 未送信の誤り報告（T040）
+const MARKBOX = "tanto.bookmarks.outbox.v1"; // 未送信の★の操作（T026）
 const BATCH = 1000;
 const OVERLAP_MS = 5 * 60 * 1000; // 受け取りの取りこぼしを防ぐため、前回の続きより少し前から取り直す（重複は除く）
 
@@ -46,7 +48,7 @@ const realClock: Clock = {
   clearTimeout: (h) => clearTimeout(h as ReturnType<typeof setTimeout>),
 };
 
-export class SyncedStore implements RecordStore {
+export class SyncedStore implements RecordStore, BookmarkSink {
   private status: SyncStatus;
   private tail: Promise<unknown> = Promise.resolve(); // 操作を1本の列に並べ、順に実行する（重ならないように）
   private flushTimer: unknown = null;
@@ -62,8 +64,10 @@ export class SyncedStore implements RecordStore {
     private readonly onPulled: (count: number) => Promise<void> | void = () => {},
     private readonly isOnline: () => boolean = () => (typeof navigator === "undefined" ? true : navigator.onLine),
     private readonly clock: Clock = realClock,
+    /** ★の操作（T026）。回答と同じ通信で送り、受け取る */
+    private readonly marks: LocalBookmarkStore = new LocalBookmarkStore(storage),
   ) {
-    this.status = { user: auth.current(), pending: this.outbox().length, state: "idle", lastSyncedAt: null };
+    this.status = { user: auth.current(), pending: this.pendingCount(), state: "idle", lastSyncedAt: null };
   }
 
   load(): Promise<Answer[]> {
@@ -83,6 +87,18 @@ export class SyncedStore implements RecordStore {
     } else {
       this.scheduleFlush();
     }
+  }
+
+  loadBookmarks(): BookmarkEvent[] {
+    return this.marks.load();
+  }
+
+  /** ★の操作を記録する（T026）。送り方は回答と同じ（ためてまとめて送る） */
+  async appendBookmark(e: BookmarkEvent): Promise<void> {
+    this.marks.appendMany([e]);
+    if (!this.auth.current()) return;
+    this.setMarkbox([...this.markbox(), e]);
+    this.scheduleFlush();
   }
 
   /** FLUSH_DELAY_MS 後に送る（すでに予約があれば何もしない） */
@@ -137,14 +153,15 @@ export class SyncedStore implements RecordStore {
    * 未送信が残っているときは、まず送ってみて、送れなければ confirm で確かめる。消さずにやめたら false
    */
   async logout(confirm: (message: string) => boolean = (m) => window.confirm(m)): Promise<boolean> {
-    if (this.outbox().length > 0) await this.flush();
-    const pending = this.outbox().length;
-    if (pending > 0 && !confirm(`まだサーバーに送れていない回答が ${pending} 件あります。ログアウトすると、この端末からは消えます。ログアウトしますか？`)) {
+    if (this.pendingCount() > 0) await this.flush();
+    const pending = this.pendingCount();
+    if (pending > 0 && !confirm(`まだサーバーに送れていない記録（回答・★）が ${pending} 件あります。ログアウトすると、この端末からは消えます。ログアウトしますか？`)) {
       return false;
     }
     this.cancelTimer();
     await this.auth.signOut();
     await this.local.clear();
+    this.marks.clear();
     this.clearDevice();
     await this.onPulled(0);
     return true;
@@ -171,11 +188,13 @@ export class SyncedStore implements RecordStore {
           await this.auth.signOut().catch(() => undefined);
         }
         await this.local.clear();
+        this.marks.clear();
         this.clearDevice();
         await this.onPulled(0);
         return result;
       }
       await this.local.clear();
+      this.marks.clear();
       this.clearDevice();
       await this.onPulled(0);
       return "done" as const;
@@ -215,7 +234,7 @@ export class SyncedStore implements RecordStore {
 
   /** 端末の同期の印を消し、ログアウトの状態にする（記録そのものは呼ぶ側で消す） */
   private clearDevice(): void {
-    for (const k of [OUTBOX, CURSOR, LINKED, REPORTS]) this.storage.removeItem(k);
+    for (const k of [OUTBOX, CURSOR, LINKED, REPORTS, MARKBOX]) this.storage.removeItem(k);
     this.lastPullAt = 0;
     this.update({ user: this.auth.current(), pending: 0, state: "idle", lastSyncedAt: null, message: undefined });
   }
@@ -230,7 +249,7 @@ export class SyncedStore implements RecordStore {
   /** 未送信を送る。ログインしていなければ何もしない。送り切れたら true */
   private async flushOnce(opts: { keepalive?: boolean; limit?: number } = {}): Promise<boolean> {
     const user = this.auth.current();
-    this.update({ user, pending: this.outbox().length });
+    this.update({ user, pending: this.pendingCount() });
     if (!user) return false;
     this.cancelTimer();
     this.update({ state: "syncing", message: undefined });
@@ -240,21 +259,27 @@ export class SyncedStore implements RecordStore {
         const all = await this.local.load();
         const have = new Set(this.outbox().map((a) => a.id));
         this.setOutbox([...this.outbox(), ...all.filter((a) => !have.has(a.id))]);
+        const haveMarks = new Set(this.markbox().map((e) => e.id));
+        this.setMarkbox([...this.markbox(), ...this.marks.load().filter((e) => !haveMarks.has(e.id))]);
         this.storage.setItem(LINKED, user.uid);
         this.storage.removeItem(CURSOR);
       }
       const limit = opts.limit ?? Number.POSITIVE_INFINITY;
       let sentTotal = 0;
-      for (let box = this.outbox(); box.length > 0 && sentTotal < limit; box = this.outbox()) {
-        const batch = box.slice(0, Math.min(BATCH, limit - sentTotal));
-        await this.api.push(batch, { keepalive: opts.keepalive });
+      while ((this.outbox().length > 0 || this.markbox().length > 0) && sentTotal < limit) {
+        const batch = this.outbox().slice(0, Math.min(BATCH, limit - sentTotal));
+        const marks = this.markbox().slice(0, Math.min(BATCH, limit - sentTotal - batch.length));
+        if (batch.length === 0 && marks.length === 0) break;
+        await this.api.push(batch, { keepalive: opts.keepalive, bookmarks: marks });
         const sent = new Set(batch.map((a) => a.id));
         this.setOutbox(this.outbox().filter((a) => !sent.has(a.id)));
-        sentTotal += batch.length;
+        const sentMarks = new Set(marks.map((e) => e.id));
+        this.setMarkbox(this.markbox().filter((e) => !sentMarks.has(e.id)));
+        sentTotal += batch.length + marks.length;
       }
       this.update({ state: "idle", lastSyncedAt: new Date(this.clock.now()).toISOString() });
       if (!opts.keepalive) await this.sendReportsOnce();
-      return this.outbox().length === 0;
+      return this.pendingCount() === 0;
     } catch (e) {
       if (e instanceof RateLimitedError) {
         // サーバーの使いすぎの制限（T040）：エラーとして見せず、少し待って送り直す（記録は未送信の箱に残っている）
@@ -265,7 +290,7 @@ export class SyncedStore implements RecordStore {
       this.update({ state: this.isOnline() ? "error" : "offline", message: e instanceof Error ? e.message : String(e) });
       return false;
     } finally {
-      this.update({ pending: this.outbox().length });
+      this.update({ pending: this.pendingCount() });
     }
   }
 
@@ -276,15 +301,16 @@ export class SyncedStore implements RecordStore {
     try {
       const cursor = this.storage.getItem(CURSOR);
       const since = cursor ? new Date(new Date(cursor).getTime() - OVERLAP_MS).toISOString() : undefined;
-      const pulled = await this.api.pull(since);
+      const { answers: pulled, bookmarks: pulledMarks } = await this.api.pull(since);
       const have = new Set((await this.local.load()).map((a) => a.id));
       const news = pulled.filter((a) => !have.has(a.id)).map(({ id, s, ok, at }) => ({ id, s, ok, at }));
       if (news.length > 0) await this.local.appendMany(news);
-      const maxReceived = pulled.reduce((m, a) => (a.received_at > m ? a.received_at : m), cursor ?? "");
+      const newMarks = this.marks.appendMany(pulledMarks.map(({ id, s, on, at }) => ({ id, s, on, at })));
+      const maxReceived = [...pulled, ...pulledMarks].reduce((m, a) => (a.received_at > m ? a.received_at : m), cursor ?? "");
       if (maxReceived) this.storage.setItem(CURSOR, maxReceived);
       this.lastPullAt = this.clock.now();
       this.update({ state: "idle", lastSyncedAt: new Date(this.clock.now()).toISOString() });
-      if (news.length > 0) await this.onPulled(news.length);
+      if (news.length + newMarks.length > 0) await this.onPulled(news.length + newMarks.length);
       return news.length;
     } catch (e) {
       if (e instanceof RateLimitedError) {
@@ -313,7 +339,25 @@ export class SyncedStore implements RecordStore {
 
   private setOutbox(box: Answer[]): void {
     this.storage.setItem(OUTBOX, JSON.stringify(box));
-    this.update({ pending: box.length });
+    this.update({ pending: this.pendingCount() });
+  }
+
+  private markbox(): BookmarkEvent[] {
+    try {
+      return JSON.parse(this.storage.getItem(MARKBOX) ?? "[]") as BookmarkEvent[];
+    } catch {
+      return [];
+    }
+  }
+
+  private setMarkbox(box: BookmarkEvent[]): void {
+    this.storage.setItem(MARKBOX, JSON.stringify(box));
+    this.update({ pending: this.pendingCount() });
+  }
+
+  /** 未送信の記録の数（回答・★の操作） */
+  private pendingCount(): number {
+    return this.outbox().length + this.markbox().length;
   }
 
   private update(patch: Partial<SyncStatus>): void {

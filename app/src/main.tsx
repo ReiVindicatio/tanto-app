@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import { initLearning, reloadLearning } from "./learning";
+import { initBookmarks, reloadBookmarks } from "./bookmarks";
 import { LocalStorageStore } from "./store";
 import { createAuthClient } from "./auth";
 import { HttpApiClient } from "./api";
@@ -15,7 +16,11 @@ watchSystemTheme();
 
 // 学習記録（回答ログ）：端末に保存し、ログインしていればサーバー（/api）と同期する（T003）
 const auth = createAuthClient();
-const sync = new SyncedStore(new LocalStorageStore(), new HttpApiClient(() => auth.getToken()), auth, localStorage, () => reloadLearning());
+const sync = new SyncedStore(new LocalStorageStore(), new HttpApiClient(() => auth.getToken()), auth, localStorage, async () => {
+  await reloadLearning();
+  reloadBookmarks();
+});
+initBookmarks(sync); // ★（T026）も端末に保存し、回答と同じ通信で同期する
 
 initLearning(sync).finally(() => {
   createRoot(document.getElementById("root")!).render(

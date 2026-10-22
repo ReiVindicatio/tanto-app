@@ -93,6 +93,12 @@ export async function startReview(infos: SetInfo[], title: string): Promise<void
   start({ kind: "statements", title, data, cards, origin: originOf(infos) });
 }
 
+/** 選んだ肢カードで解く（★を付けた肢：T026）。シャッフルして出す */
+export async function startChosen(infos: SetInfo[], chosen: CardRef[], title: string): Promise<void> {
+  const { data, cards } = await loadChosen(infos, shuffle(chosen));
+  start({ kind: "statements", title, data, cards, origin: originOf(infos) });
+}
+
 /** 問で解く（本番形式） */
 export async function startQuestions(info: SetInfo): Promise<void> {
   start({ kind: "questions", info, data: await loadSet(info) });

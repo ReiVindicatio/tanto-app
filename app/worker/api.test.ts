@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { createLocalJWKSet, exportJWK, generateKeyPair, SignJWT } from "jose";
-import { DAILY_ANSWERS, DAILY_REPORTS, handleApi, MAX_BATCH, REPORT_BODY_MAX } from "./api";
+import { DAILY_ANSWERS, DAILY_BOOKMARKS, DAILY_REPORTS, handleApi, MAX_BATCH, REPORT_BODY_MAX } from "./api";
 import { firebaseVerifier, testVerifier } from "./auth";
 import { MemoryAnswerRepository } from "./repository";
 
@@ -174,6 +174,52 @@ describe("使いすぎの制限（T040）", () => {
     expect(await repo.countAnswersSince("test-alice", "2026-10-20T00:00:00.000Z")).toBe(DAILY_ANSWERS);
     const tomorrow = { ...d, now: () => new Date("2026-10-21T00:00:01.000Z") };
     expect((await handleApi(req("POST", "/api/answers", "test:alice", { answers: [a("over")] }), tomorrow)).status).toBe(200);
+  });
+});
+
+describe("★の操作（T026）", () => {
+  const deps = () => ({ repo: new MemoryAnswerRepository(), verify: testVerifier(), now: () => new Date("2026-10-22T12:00:00.000Z") });
+  const b = (id: string, on = true, s = "yobi-2026-minpo-q01-a", at = "2026-10-22T00:00:00.000Z") => ({ id, s, on, at });
+
+  it("回答と同じ呼び出しで送り、受け取れる。同じ操作 ID は二重にならない", async () => {
+    const d = deps();
+    const r1 = await handleApi(req("POST", "/api/answers", "test:alice", { answers: [a("1")], bookmarks: [b("m1"), b("m2", false)] }), d);
+    expect(await r1.json()).toMatchObject({ inserted: 1, bookmarks_inserted: 2 });
+    const r2 = await handleApi(req("POST", "/api/answers", "test:alice", { answers: [], bookmarks: [b("m2", false), b("m3")] }), d);
+    expect(await r2.json()).toMatchObject({ inserted: 0, bookmarks_inserted: 1 });
+    const list = await (await handleApi(req("GET", "/api/answers", "test:alice"), d)).json();
+    expect(list.bookmarks.map((x: { id: string; on: boolean }) => [x.id, x.on])).toEqual([["m1", true], ["m2", false], ["m3", true]]);
+  });
+
+  it("bookmarks は省略できる（古いアプリからの送信）", async () => {
+    const r = await handleApi(req("POST", "/api/answers", "test:alice", { answers: [a("1")] }), deps());
+    expect(await r.json()).toMatchObject({ inserted: 1, bookmarks_inserted: 0 });
+  });
+
+  it("入力を検査する", async () => {
+    const d = deps();
+    for (const marks of [[{ ...b("1"), on: "yes" }], [{ ...b("1"), s: "drop table" }], [{ ...b("1"), at: "昨日" }], "x", Array.from({ length: MAX_BATCH + 1 }, (_, k) => b(`m${k}`))]) {
+      expect((await handleApi(req("POST", "/api/answers", "test:alice", { answers: [], bookmarks: marks }), d)).status).toBe(400);
+    }
+  });
+
+  it(`1日に ${DAILY_BOOKMARKS} 件を超える送信は 429`, async () => {
+    const d = deps();
+    for (let k = 0; k < DAILY_BOOKMARKS / MAX_BATCH; k++) {
+      const marks = Array.from({ length: MAX_BATCH }, (_, j) => b(`m${k}-${j}`));
+      expect((await handleApi(req("POST", "/api/answers", "test:alice", { answers: [], bookmarks: marks }), d)).status).toBe(200);
+    }
+    expect((await handleApi(req("POST", "/api/answers", "test:alice", { answers: [], bookmarks: [b("over")] }), d)).status).toBe(429);
+    // 回答だけの送信は止めない
+    expect((await handleApi(req("POST", "/api/answers", "test:alice", { answers: [a("1")] }), d)).status).toBe(200);
+  });
+
+  it("退会で★の操作も消える", async () => {
+    const d = deps();
+    await handleApi(req("POST", "/api/answers", "test:alice", { answers: [], bookmarks: [b("m1")] }), d);
+    await handleApi(req("DELETE", "/api/me", "test:alice"), d);
+    const list = await (await handleApi(req("GET", "/api/answers", "test:alice"), d)).json();
+    expect(list.bookmarks).toEqual([]);
   });
 });
 

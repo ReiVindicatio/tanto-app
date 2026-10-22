@@ -58,6 +58,36 @@ test("2つのブラウザで同じ利用者なら、片方で解いた記録が�
   await expect(allYears(other)).toContainText("回答済み 0枚");
 });
 
+test("★（T026）：片方のブラウザで付けた★が、同じ利用者のもう片方に出る。外すと消える", async ({ browser }) => {
+  const phone = await openAs(browser, "frank");
+  await expect(phone.locator(".sync-status")).toContainText("同期済み");
+  await allYears(phone).getByRole("button", { name: /肢で解く/ }).click();
+  await phone.getByRole("button", { name: "○", exact: true }).click();
+  await phone.getByRole("button", { name: "あとで見直す（★を付ける）" }).click();
+  await phone.getByRole("button", { name: "← 戻る" }).click();
+  await expect(phone.locator(".sync-status")).toContainText("未送信 2 件"); // 回答1件と★の操作1件
+  await hideAndShow(phone);
+  await expect(phone.locator(".sync-status")).toContainText("同期済み");
+
+  const pc = await openAs(browser, "frank");
+  await expect(pc.locator(".sync-status")).toContainText("同期済み");
+  await pc.locator("nav.tabbar").getByRole("button", { name: "ホーム" }).click();
+  await expect(pc.getByRole("button", { name: "★を付けた肢を解く（1枚）" })).toBeVisible();
+
+  // PC で外す → スマホにも反映される
+  await pc.getByRole("button", { name: "★を付けた肢を解く（1枚）" }).click();
+  await pc.getByRole("button", { name: "○", exact: true }).click();
+  await pc.getByRole("button", { name: "★を外す" }).click();
+  await pc.getByRole("button", { name: "← 戻る" }).click();
+  await hideAndShow(pc);
+  await expect(pc.locator(".sync-status")).toContainText("同期済み");
+  const phone2 = await openAs(browser, "frank");
+  await expect(phone2.locator(".sync-status")).toContainText("同期済み");
+  await phone2.locator("nav.tabbar").getByRole("button", { name: "ホーム" }).click();
+  await expect(phone2.locator("main")).toContainText("今日の");
+  await expect(phone2.getByRole("button", { name: /★を付けた肢を解く/ })).toHaveCount(0);
+});
+
 test("ログイン前に解いた記録は、ログインするとアカウントに引き継がれ、ログアウトで端末から消える", async ({ browser }) => {
   const page = await openAs(browser, null);
   await answer(page, 2);

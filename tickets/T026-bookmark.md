@@ -1,6 +1,6 @@
 # T026 ブックマーク（あとで見直す）
 
-- 状態：実装レビュー（設計レビュー：保存先＝端末＋サーバーで同期を 2026-10-22 にユーザーが選んだ）
+- 状態：完了（設計レビュー：保存先＝端末＋サーバーで同期を 2026-10-22 にユーザーが選んだ）
 - マイルストーン：M2 拡充
 - 優先度：中
 - 依存：
@@ -64,5 +64,5 @@ CREATE TABLE bookmarks (
 - サーバー：`migrations/0003_bookmarks.sql`、`worker/repository.ts`（`listBookmarks`・`insertBookmarks`・`countBookmarksSince`。退会で消す）、`worker/api.ts`（`POST /api/answers` の `bookmarks`・`GET` の応答に `bookmarks`・1日5,000件）
 - アプリ：`src/bookmarks.ts`（記録と判定）・`src/Bookmark.tsx`（☆／★のボタン）・`src/sync.ts`（未送信の★を回答と一緒に送る・受け取る・引き継ぎ・ログアウト／退会で消す。「未送信 N 件」に★も数える）・ホームの「★を付けた肢を解く」・プライバシーポリシー（★を追加、2026-10-22 改定）
 - テスト：API（★の送受信・入力の検査・1日の上限・退会）・D1 の SQL 回数・同期（引き継ぎ・まとめて送る・2台で付け外し・ログアウト／退会）・★の判定（日時・同時刻・名寄せ）・E2E（★を付けてホームから解く・再読み込み）・同期の E2E（2つのブラウザで★が届き、外すと消える）
-- **本番に出す前に**：本番の D1 に `npx wrangler d1 migrations apply DB --remote` を当てる（表がないまま新しい API が動くと、`GET /api/answers` が失敗して同期が止まる）
+- 本番の D1 に `0003_bookmarks.sql` を当てた（2026-10-22。表がないまま新しい API が動くと `GET /api/answers` が失敗して同期が止まるので、push の前に当てた）
 

@@ -1,13 +1,15 @@
 import { describe, expect, it } from "vitest";
 import { FLUSH_COUNT, FLUSH_DELAY_MS, HIDE_BATCH, PULL_INTERVAL_MS, SyncedStore, type Clock } from "./sync";
 import { LocalStorageStore, type Answer } from "./store";
-import { RateLimitedError, type ApiClient, type Report, type StoredAnswer } from "./api";
+import { RateLimitedError, type ApiClient, type Report, type StoredAnswer, type StoredBookmark } from "./api";
+import { markedCards, type BookmarkEvent } from "./bookmarks";
 import type { AuthClient, User } from "./auth";
 import { MemoryStorage } from "./test/fakes";
 
 /** サーバーの代わり：利用者ごとの回答ログ。received_at は送られた順の連番の時刻 */
 class FakeServer {
   rows = new Map<string, StoredAnswer[]>();
+  marks = new Map<string, StoredBookmark[]>();
   offline = false;
   limited = false; // 使いすぎの制限に当たっている（429）
   deleteFails = false;
@@ -23,7 +25,7 @@ class FakeServer {
       return u.uid;
     };
     return {
-      push: async (answers: Answer[], opts?: { keepalive?: boolean }) => {
+      push: async (answers: Answer[], opts?: { keepalive?: boolean; bookmarks?: BookmarkEvent[] }) => {
         this.calls.push({ method: "push", count: answers.length, keepalive: opts?.keepalive });
         const id = uid();
         const mine = this.rows.get(id) ?? [];
@@ -32,12 +34,23 @@ class FakeServer {
         let inserted = 0;
         for (const a of answers) if (!have.has(a.id)) { mine.push({ ...a, received_at }); inserted++; }
         this.rows.set(id, mine);
+        const myMarks = this.marks.get(id) ?? [];
+        const haveMarks = new Set(myMarks.map((e) => e.id));
+        for (const e of opts?.bookmarks ?? []) if (!haveMarks.has(e.id)) myMarks.push({ ...e, received_at });
+        this.marks.set(id, myMarks);
         return { inserted, received_at };
       },
-      pull: async (since?: string) => (this.calls.push({ method: "pull" }), this.rows.get(uid()) ?? []).filter((a) => !since || a.received_at > since),
+      pull: async (since?: string) => {
+        this.calls.push({ method: "pull" });
+        const id = uid();
+        const after = <T extends { received_at: string }>(xs: T[]) => xs.filter((a) => !since || a.received_at > since);
+        return { answers: after(this.rows.get(id) ?? []), bookmarks: after(this.marks.get(id) ?? []) };
+      },
       deleteMe: async () => {
         if (this.deleteFails) throw new Error("API DELETE /api/me：500");
-        this.rows.delete(uid());
+        const id = uid();
+        this.rows.delete(id);
+        this.marks.delete(id);
       },
       report: async (r: Report) => { uid(); this.reports.push(r); },
     };
@@ -353,5 +366,68 @@ describe("SyncedStore：退会・誤り報告・使いすぎの制限（T040）"
     await d.store.report(report("r1"));
     await d.store.report(report("r1"));
     expect(d.store.pendingReports()).toBe(1);
+  });
+});
+
+describe("★の同期（T026）", () => {
+  const mark = (id: string, on: boolean, at: string, s = "yobi-2026-minpo-q01-a"): BookmarkEvent => ({ id, s, on, at });
+  const marked = (d: ReturnType<typeof device>) => [...markedCards(d.store.loadBookmarks(), (x) => x)].sort();
+
+  it("ログインしていなければ端末にだけ記録し、初めてログインしたときにアカウントへ引き継ぐ", async () => {
+    const server = new FakeServer();
+    const d = device(server, null);
+    await d.store.appendBookmark(mark("m1", true, "2026-10-22T00:00:00.000Z"));
+    expect(server.marks.size).toBe(0);
+    expect(d.storage.getItem("tanto.bookmarks.outbox.v1")).toBeNull();
+    d.auth.set({ uid: "alice", name: "A" });
+    await d.store.sync();
+    expect(server.marks.get("alice")!.map((e) => e.id)).toEqual(["m1"]);
+    expect(d.store.getStatus().pending).toBe(0);
+  });
+
+  it("★だけの操作も、回答と同じ呼び出しで送る（ためてまとめて送る）", async () => {
+    const server = new FakeServer();
+    const clock = new FakeClock();
+    const d = device(server, { uid: "alice", name: "A" }, clock);
+    await d.store.sync();
+    server.calls = [];
+    await d.store.appendBookmark(mark("m1", true, "2026-10-22T00:00:00.000Z"));
+    expect(server.calls).toEqual([]);
+    await clock.advance(FLUSH_DELAY_MS);
+    expect(server.calls).toEqual([{ method: "push", count: 0, keepalive: undefined }]);
+    expect(server.marks.get("alice")).toHaveLength(1);
+  });
+
+  it("2台で付け外ししても、最後の操作に合わせて同じ結果になる", async () => {
+    const server = new FakeServer();
+    const phone = device(server, { uid: "alice", name: "A" });
+    const pc = device(server, { uid: "alice", name: "A" });
+    await phone.store.appendBookmark(mark("p1", true, "2026-10-22T01:00:00.000Z"));
+    await phone.store.appendBookmark(mark("p2", true, "2026-10-22T01:00:00.000Z", "yobi-2026-minpo-q01-b"));
+    await phone.store.sync();
+    await pc.store.sync();
+    expect(marked(pc)).toEqual(["yobi-2026-minpo-q01-a", "yobi-2026-minpo-q01-b"]);
+    await pc.store.appendBookmark(mark("c1", false, "2026-10-22T02:00:00.000Z")); // PC で外す（あとの操作）
+    await pc.store.sync();
+    await phone.store.sync();
+    expect(marked(phone)).toEqual(["yobi-2026-minpo-q01-b"]);
+    expect(marked(pc)).toEqual(["yobi-2026-minpo-q01-b"]);
+    await phone.store.sync();
+    expect(phone.store.loadBookmarks()).toHaveLength(3); // 何度合わせても増えない
+  });
+
+  it("ログアウト・退会で端末の★も消え、退会ではサーバーの★も消える", async () => {
+    const server = new FakeServer();
+    const d = device(server, { uid: "alice", name: "A" });
+    await d.store.appendBookmark(mark("m1", true, "2026-10-22T00:00:00.000Z"));
+    await d.store.sync();
+    expect(await d.store.deleteAll()).toBe("done");
+    expect(d.store.loadBookmarks()).toEqual([]);
+    expect(server.marks.get("alice")).toBeUndefined();
+    const e = device(server, { uid: "bob", name: "B" });
+    await e.store.appendBookmark(mark("m2", true, "2026-10-22T00:00:00.000Z"));
+    await e.store.sync();
+    expect(await e.store.logout(() => true)).toBe(true);
+    expect(e.store.loadBookmarks()).toEqual([]);
   });
 });

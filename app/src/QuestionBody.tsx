@@ -1,5 +1,6 @@
 import type { Explanation, Question, Statement } from "./types";
 import ExplanationView from "./ExplanationView";
+import StarButton from "./Bookmark";
 
 export function Context({ q }: { q: Question }) {
   if (q.context.length === 0) return null;
@@ -57,6 +58,7 @@ export default function QuestionBody({
               {showTruth && s.truth_at_exam && (
                 <span className={`truth ${s.truth_at_exam.value ? "ok" : "ng"}`}>{truthMark(s)}</span>
               )}
+              {showTruth && s.truth_at_exam && !s.review_flag && <StarButton id={s.id} compact />}
               {showTruth && s.review_flag && (
                 <span className="small law-note">
                   {s.review_flag.kind === "law_changed"

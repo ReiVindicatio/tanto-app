@@ -1,11 +1,13 @@
 // /api/* の処理（T003・T040）。保存処理（AnswerRepository）と検証（Verifier）を受け取るだけで、
 // D1 や Firebase を直接は知らない（テストでは偽物を渡す）。
-import type { Answer, AnswerRepository, Report } from "./repository";
+import type { Answer, AnswerRepository, Bookmark, Report } from "./repository";
 import type { Verifier } from "./auth";
 
 export const MAX_BATCH = 1000;
 /** 1日（UTC）に受け取る回答の上限（T040）。初めてログインした端末の記録をまとめて送る（引き継ぎ）のを止めない値。超えた分は翌日に送られる */
 export const DAILY_ANSWERS = 20_000;
+/** 1日（UTC）に受け取る★の操作の上限（T026） */
+export const DAILY_BOOKMARKS = 5_000;
 /** 1日（UTC）に受け取る誤り報告の上限（T040） */
 export const DAILY_REPORTS = 50;
 export const REPORT_BODY_MAX = 500;
@@ -37,6 +39,17 @@ export function validAnswer(a: unknown): a is Answer {
     typeof x.id === "string" && ANSWER_ID.test(x.id) &&
     typeof x.s === "string" && STATEMENT_ID.test(x.s) &&
     typeof x.ok === "boolean" &&
+    typeof x.at === "string" && ISO.test(x.at) && !Number.isNaN(Date.parse(x.at))
+  );
+}
+
+export function validBookmark(b: unknown): b is Bookmark {
+  if (!b || typeof b !== "object") return false;
+  const x = b as Record<string, unknown>;
+  return (
+    typeof x.id === "string" && ANSWER_ID.test(x.id) &&
+    typeof x.s === "string" && STATEMENT_ID.test(x.s) &&
+    typeof x.on === "boolean" &&
     typeof x.at === "string" && ISO.test(x.at) && !Number.isNaN(Date.parse(x.at))
   );
 }
@@ -82,7 +95,8 @@ export async function handleApi(req: Request, deps: Deps): Promise<Response> {
     const since = url.searchParams.get("since") ?? undefined;
     if (since && !ISO.test(since)) return json({ error: "bad since" }, 400);
     const answers = await deps.repo.list(userId, since);
-    return json({ answers });
+    const bookmarks = await deps.repo.listBookmarks(userId, since);
+    return json({ answers, bookmarks });
   }
 
   if (url.pathname === "/api/answers" && req.method === "POST") {
@@ -92,10 +106,18 @@ export async function handleApi(req: Request, deps: Deps): Promise<Response> {
     if (!Array.isArray(list)) return json({ error: "answers must be an array" }, 400);
     if (list.length > MAX_BATCH) return json({ error: `too many answers (max ${MAX_BATCH})` }, 400);
     if (!list.every(validAnswer)) return json({ error: "invalid answer" }, 400);
-    if ((await deps.repo.countAnswersSince(userId, startOfDay(now))) + list.length > DAILY_ANSWERS) return tooMany();
+    // ★の操作（T026）は回答と同じ呼び出しで送る（API の呼び出しを増やさない：T021）。省略してよい
+    const marks = (body as { bookmarks?: unknown })?.bookmarks ?? [];
+    if (!Array.isArray(marks)) return json({ error: "bookmarks must be an array" }, 400);
+    if (marks.length > MAX_BATCH) return json({ error: `too many bookmarks (max ${MAX_BATCH})` }, 400);
+    if (!marks.every(validBookmark)) return json({ error: "invalid bookmark" }, 400);
+    const today = startOfDay(now);
+    if (list.length > 0 && (await deps.repo.countAnswersSince(userId, today)) + list.length > DAILY_ANSWERS) return tooMany();
+    if (marks.length > 0 && (await deps.repo.countBookmarksSince(userId, today)) + marks.length > DAILY_BOOKMARKS) return tooMany();
     const receivedAt = now.toISOString();
     const inserted = await deps.repo.insert(userId, list, receivedAt);
-    return json({ inserted, received_at: receivedAt });
+    const bookmarksInserted = await deps.repo.insertBookmarks(userId, marks, receivedAt);
+    return json({ inserted, bookmarks_inserted: bookmarksInserted, received_at: receivedAt });
   }
 
   if (url.pathname === "/api/reports" && req.method === "POST") {

@@ -7,6 +7,9 @@ export type Answer = { id: string; s: string; ok: boolean; at: string };
 export type StoredAnswer = Answer & { received_at: string };
 /** 誤り報告（T040） */
 export type Report = { id: string; target: string; kind: string; body: string; context: string };
+/** ★の操作1件（T026）。on：true＝付けた、false＝外した */
+export type Bookmark = { id: string; s: string; on: boolean; at: string };
+export type StoredBookmark = Bookmark & { received_at: string };
 
 export interface AnswerRepository {
   /** その利用者の回答ログ。since を渡すと、それより後に受け取った分だけ */
@@ -21,6 +24,12 @@ export interface AnswerRepository {
   insertReport(userId: string, report: Report, createdAt: string): Promise<void>;
   /** since 以降に受け取った、その利用者の報告の数（T040） */
   countReportsSince(userId: string, since: string): Promise<number>;
+  /** ★の操作。since を渡すと、それより後に受け取った分だけ（T026） */
+  listBookmarks(userId: string, since?: string): Promise<StoredBookmark[]>;
+  /** ★の操作を保存する。同じ操作 ID はすでにあれば無視する。保存した件数を返す（T026） */
+  insertBookmarks(userId: string, bookmarks: Bookmark[], receivedAt: string): Promise<number>;
+  /** since 以降に受け取った、その利用者の★の操作の数（1日の上限：T026） */
+  countBookmarksSince(userId: string, since: string): Promise<number>;
 }
 
 /** 1つの SQL で保存する回答の数（1,000件でも SQL は5回。D1 の無料プランの上限50回に収まる） */
@@ -30,7 +39,13 @@ const INSERT_SQL =
   "SELECT ?1, json_extract(value, '$.id'), json_extract(value, '$.s'), json_extract(value, '$.ok'), json_extract(value, '$.at'), ?2 " +
   "FROM json_each(?3)";
 
+const INSERT_BOOKMARKS_SQL =
+  "INSERT OR IGNORE INTO bookmarks (user_id, id, statement_id, marked, marked_at, received_at) " +
+  "SELECT ?1, json_extract(value, '$.id'), json_extract(value, '$.s'), json_extract(value, '$.on'), json_extract(value, '$.at'), ?2 " +
+  "FROM json_each(?3)";
+
 type Row = { id: string; statement_id: string; ok: number; answered_at: string; received_at: string };
+type BookmarkRow = { id: string; statement_id: string; marked: number; marked_at: string; received_at: string };
 
 export class D1AnswerRepository implements AnswerRepository {
   constructor(private readonly db: D1Database) {}
@@ -62,6 +77,7 @@ export class D1AnswerRepository implements AnswerRepository {
   async deleteAll(userId: string): Promise<void> {
     await this.db.batch([
       this.db.prepare("DELETE FROM answers WHERE user_id = ?").bind(userId),
+      this.db.prepare("DELETE FROM bookmarks WHERE user_id = ?").bind(userId),
       this.db.prepare("UPDATE reports SET user_id = NULL WHERE user_id = ?").bind(userId),
     ]);
   }
@@ -82,11 +98,38 @@ export class D1AnswerRepository implements AnswerRepository {
     const r = await this.db.prepare("SELECT COUNT(*) AS n FROM reports WHERE user_id = ? AND created_at >= ?").bind(userId, since).first<{ n: number }>();
     return r?.n ?? 0;
   }
+
+  async listBookmarks(userId: string, since?: string): Promise<StoredBookmark[]> {
+    const cols = "SELECT id, statement_id, marked, marked_at, received_at FROM bookmarks WHERE user_id = ?";
+    const stmt = since
+      ? this.db.prepare(`${cols} AND received_at > ? ORDER BY received_at, id`).bind(userId, since)
+      : this.db.prepare(`${cols} ORDER BY received_at, id`).bind(userId);
+    const { results } = await stmt.all<BookmarkRow>();
+    return results.map((r) => ({ id: r.id, s: r.statement_id, on: r.marked === 1, at: r.marked_at, received_at: r.received_at }));
+  }
+
+  async insertBookmarks(userId: string, bookmarks: Bookmark[], receivedAt: string): Promise<number> {
+    if (bookmarks.length === 0) return 0;
+    // 回答と同じく、JSON 文字列1つで渡して json_each で展開する（D1 の SQL 回数・値の数の上限）
+    const stmts = [];
+    for (let i = 0; i < bookmarks.length; i += INSERT_CHUNK) {
+      const chunk = bookmarks.slice(i, i + INSERT_CHUNK).map((b) => ({ id: b.id, s: b.s, on: b.on ? 1 : 0, at: b.at }));
+      stmts.push(this.db.prepare(INSERT_BOOKMARKS_SQL).bind(userId, receivedAt, JSON.stringify(chunk)));
+    }
+    const res = await this.db.batch(stmts);
+    return res.reduce((n, r) => n + (r.meta?.changes ?? 0), 0);
+  }
+
+  async countBookmarksSince(userId: string, since: string): Promise<number> {
+    const r = await this.db.prepare("SELECT COUNT(*) AS n FROM bookmarks WHERE user_id = ? AND received_at >= ?").bind(userId, since).first<{ n: number }>();
+    return r?.n ?? 0;
+  }
 }
 
 /** テスト用：メモリ上の実装 */
 export class MemoryAnswerRepository implements AnswerRepository {
   rows = new Map<string, StoredAnswer[]>();
+  bookmarks = new Map<string, StoredBookmark[]>();
   reports: (Report & { user_id: string | null; created_at: string })[] = [];
 
   async list(userId: string, since?: string): Promise<StoredAnswer[]> {
@@ -109,6 +152,7 @@ export class MemoryAnswerRepository implements AnswerRepository {
 
   async deleteAll(userId: string): Promise<void> {
     this.rows.delete(userId);
+    this.bookmarks.delete(userId);
     for (const r of this.reports) if (r.user_id === userId) r.user_id = null;
   }
 
@@ -123,5 +167,27 @@ export class MemoryAnswerRepository implements AnswerRepository {
 
   async countReportsSince(userId: string, since: string): Promise<number> {
     return this.reports.filter((r) => r.user_id === userId && r.created_at >= since).length;
+  }
+
+  async listBookmarks(userId: string, since?: string): Promise<StoredBookmark[]> {
+    return (this.bookmarks.get(userId) ?? []).filter((r) => !since || r.received_at > since);
+  }
+
+  async insertBookmarks(userId: string, bookmarks: Bookmark[], receivedAt: string): Promise<number> {
+    const mine = this.bookmarks.get(userId) ?? [];
+    const have = new Set(mine.map((r) => r.id));
+    let n = 0;
+    for (const b of bookmarks) {
+      if (have.has(b.id)) continue;
+      mine.push({ ...b, received_at: receivedAt });
+      have.add(b.id);
+      n++;
+    }
+    this.bookmarks.set(userId, mine);
+    return n;
+  }
+
+  async countBookmarksSince(userId: string, since: string): Promise<number> {
+    return (this.bookmarks.get(userId) ?? []).filter((r) => r.received_at >= since).length;
   }
 }

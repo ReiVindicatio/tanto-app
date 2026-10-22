@@ -4,6 +4,7 @@ import QuestionBody, { Context } from "./QuestionBody";
 import ExplanationView from "./ExplanationView";
 import ReportLink from "./ReportLink";
 import LawNote from "./LawNote";
+import StarButton from "./Bookmark";
 import { shuffle } from "./shuffle";
 import { recordAnswer } from "./learning";
 import { Progress } from "./screens/common";
@@ -169,6 +170,7 @@ export default function StatementDrill({
               </div>
             )}
             <div className="row">
+              <StarButton id={s.id} />
               <button className="secondary small" onClick={() => setShowQuestion(!showQuestion)}>
                 {showQuestion ? "元の問題を閉じる" : "元の問題を見る"}
               </button>

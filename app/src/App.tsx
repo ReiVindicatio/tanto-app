@@ -7,6 +7,7 @@ import { SyncBadge } from "./AuthBar";
 import type { AuthClient } from "./auth";
 import type { SyncedStore } from "./sync";
 import { onLearningChange } from "./learning";
+import { onBookmarksChange } from "./bookmarks";
 import { groupBySubject, useSets } from "./data";
 import { back, navigate, tabOf, useRoute } from "./router";
 import { currentPlay } from "./play";
@@ -23,6 +24,7 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
   // 回答・同期で学習の状態が変わったら、集計を描き直す
   const [, setVersion] = useState(0);
   useEffect(() => onLearningChange(() => setVersion((v) => v + 1)), []);
+  useEffect(() => onBookmarksChange(() => setVersion((v) => v + 1)), []);
   const route = useRoute();
   const { sets, cardIds, error } = useSets();
   const [filter, setFilter] = useState<Filter>("all");

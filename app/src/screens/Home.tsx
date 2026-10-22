@@ -2,7 +2,9 @@
 import { useState } from "react";
 import type { CardRef, SubjectGroup } from "../data";
 import { navigate } from "../router";
-import { startDaily } from "../play";
+import { startChosen, startDaily } from "../play";
+import { bookmarkedCards } from "../bookmarks";
+import { cardIdOf } from "../learning";
 import { buildDaily, DAILY_SIZES, describeCounts, getDailyPrefs, setDailyPrefs, type DailyPrefs } from "../daily";
 import { cardsOf, poolOf } from "./common";
 
@@ -78,6 +80,20 @@ function QuickStart({
   );
 }
 
+/** ★を付けた肢を解く（T026）。民法の改正前の年度も含める（自分で選んだ肢なので） */
+function BookmarkStart({ groups, cardIds }: { groups: SubjectGroup[]; cardIds: Map<string, CardRef[]> }) {
+  const marked = bookmarkedCards();
+  if (marked.size === 0 || cardIds.size === 0) return null;
+  const infos = groups.flatMap((g) => g.sets);
+  const chosen = cardsOf(infos, cardIds).filter((c) => marked.has(cardIdOf(c.id)));
+  if (chosen.length === 0) return null;
+  return (
+    <button className="secondary wide" onClick={() => startChosen(infos, chosen, "★を付けた肢")}>
+      ★を付けた肢を解く（{chosen.length}枚）
+    </button>
+  );
+}
+
 export default function Home({
   groups,
   cardIds,
@@ -90,6 +106,8 @@ export default function Home({
   return (
     <section>
       <QuickStart groups={groups} cardIds={cardIds} includePreReform={includePreReform} />
+
+      <BookmarkStart groups={groups} cardIds={cardIds} />
 
       <button className="secondary wide" onClick={() => navigate({ name: "subjects" })}>
         科目・年度を選んで解く

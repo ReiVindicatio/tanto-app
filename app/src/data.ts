@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import type { DataSet, SetInfo } from "./types";
 import { subjectRank } from "./subjectsMeta";
 import { cardIdOf, setAliases } from "./learning";
+import { reloadBookmarks } from "./bookmarks";
 
 const cache = new Map<string, DataSet>();
 
@@ -79,6 +80,7 @@ export function useSets(): { sets: SetInfo[] | null; cardIds: Map<string, CardRe
       .then((r) => r.json())
       .then(async (d: { sets: SetInfo[]; aliases?: Record<string, string> }) => {
         await setAliases(d.aliases ?? {});
+        reloadBookmarks(); // ★の判定もカード ID で行うので、名寄せの対応表が入ったら作り直す（T026）
         setSets(d.sets);
         const pairs = await Promise.all(
           d.sets.map(async (s) => {
