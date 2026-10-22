@@ -52,6 +52,15 @@ class DedupTest(unittest.TestCase):
         self.assertEqual(aliases, {})
         self.assertEqual(len(conflicts), 1)
 
+    def test_review_flag_is_inherited_by_same_statement(self):
+        # T004：法改正で正誤が変わる肢と同じ文の肢も、肢カードから外す（まとめずにフラグを引き継ぐ）
+        y = doc("yobi", 2023, "（解答欄は、［№15］）")
+        s = doc("shiho", 2023, "（解答欄は、［No.32］）")
+        y["statements"][0]["review_flag"] = {"kind": "law_changed", "reason": "改正"}
+        aliases, _ = dedup([y, s])
+        self.assertEqual(aliases, {})
+        self.assertEqual(s["statements"][0]["review_flag"]["kind"], "law_changed")
+
 
 if __name__ == "__main__":
     unittest.main()

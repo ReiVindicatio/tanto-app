@@ -60,7 +60,7 @@ export default function QuestionBody({
               {showTruth && s.review_flag && (
                 <span className="small law-note">
                   {s.review_flag.kind === "law_changed"
-                    ? "要確認：出題後の法改正で正誤が変わる肢です。○×は出題時点の正解です（肢カードには出していません）"
+                    ? "要確認：出題後の法改正（判例の変更を含む）で正誤が変わる肢です。○×は出題時点の正解です（肢カードには出していません）"
                     : "要確認：この肢の○×は導出の根拠が弱く、確認中です（肢カードには出していません）"}
                 </span>
               )}

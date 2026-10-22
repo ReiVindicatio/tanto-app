@@ -110,7 +110,7 @@ def dedup(docs: list[dict]) -> tuple[dict[str, str], list[str]]:
     for doc in docs:
         qs = {q["id"]: q for q in doc["questions"]}
         for st in doc["statements"]:
-            if not st["truth_at_exam"] or "review_flag" in st:
+            if not st["truth_at_exam"]:
                 continue
             q = qs[st["question_id"]]
             ctx = dedup_context(q) if st["requires_context"] else ""
@@ -121,6 +121,14 @@ def dedup(docs: list[dict]) -> tuple[dict[str, str], list[str]]:
             continue
         if len({m[2]["truth_at_exam"]["value"] for m in members}) > 1:
             conflicts.append("・".join(m[2]["id"] for m in members))
+            continue
+        flagged = [m[2] for m in members if "review_flag" in m[2]]
+        if flagged:
+            # 同じ文・同じ○×の肢は、法改正などの影響も同じ。フラグのない肢にも引き継いで肢カードから外す（T004）
+            for doc, q, st in members:
+                if "review_flag" not in st:
+                    st["review_flag"] = flagged[0]["review_flag"]
+                    print(f"⚠️  {flagged[0]['id']} のフラグを、同じ文の {st['id']} に引き継いだ（data/review/flags.json にも足す）")
             continue
         members.sort(key=lambda m: (EXAM_ORDER[m[0]["exam"]["type"]], m[0]["exam"]["year"], m[2]["id"]))
         card = members[0][2]["id"]
