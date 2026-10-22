@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import subprocess
 import sys
 
@@ -17,6 +18,7 @@ from common import EXAM_IDS, GROUP_IDS, PARSED, ROOT, SUBJECT_IDS, errata_for_qu
 
 QUESTIONS = ROOT / "data" / "questions"
 SITE_URL = "https://www.moj.go.jp/jinji/shihoushiken/"
+MATCHING_CHOICE_RE = re.compile(r"[アイウエオカキクケコ][ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ]")
 DERIVABLE = {"combination", "single_choice", "multi_select_unordered", "true_false_each", "compound", "mark_combination"}
 
 
@@ -71,6 +73,9 @@ def derive_by_label(q: dict, answers: list[int]) -> dict[str, dict] | None:
     side = pol == "correct"  # 選ばれた肢の○×
 
     if fmt == "combination":
+        if any(MATCHING_CHOICE_RE.search(c["text"]) for c in q["choices"]):
+            # 【記述】と【結論】を対応させる問（選択肢「アⅠ－イⅡ」）。記述に正誤がないので導かない（T048）
+            return None
         chosen = q["choices"][answers[0] - 1]["labels"]
         others_basis = {}
         for lab in labels:

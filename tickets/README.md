@@ -106,4 +106,5 @@
 | [T045](T045-static-question-pages.md) | 問ごとの静的ページ（検索で見つかるように） | 完了 | M3 | **高** | T044 |
 | [T046](T046-web-analytics.md) | 閲覧状況の計測（Cloudflare Web Analytics） | 完了 | M3 | 中 | T045 |
 | [T047](T047-parse-half-width-choice.md) | パースの誤り：選択肢の先頭の番号だけが半角（H26 司法 刑事系 問39） | 完了 | M2 | **高** | |
+| [T048](T048-check-loopholes.md) | 検査の穴：漢数字の条番号・記述と結論の組合せ問題・引用の不一致の手がかり | 完了 | M2 | 中 | |
 
