@@ -76,7 +76,7 @@
 | [T015](T015-report.md) | 誤り報告（T040 に含めた） | T040 へ | M3 | 低 | T003 |
 | [T016](T016-topics.md) | 分野タグと「苦手な分野だけ」モード | 完了 | M2 | 中 | |
 | [T017](T017-fsrs-improve.md) | 復習の改善（自己評価・学習統計） | 起票 | M2 | 低 | |
-| [T018](T018-explain-question-cards.md) | 問題カード（穴埋め・個数など）の解説 | 実装中 | M2 | 中 | |
+| [T018](T018-explain-question-cards.md) | 問題カード（穴埋め・個数など）の解説 | 完了 | M2 | 中 | |
 | [T019](T019-capacitor.md) | スマホアプリ（Capacitor） | 起票 | M3 | 低 | T002 |
 | [T020](T020-record-store.md) | 学習記録の保存層（DB に切り替えやすくする） | 完了 | M1 | 高 | |
 | [T021](T021-sync-batching.md) | 同期の回数を減らす（まとめて送る） | 完了 | M2 | **高** | |

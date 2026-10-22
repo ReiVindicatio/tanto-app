@@ -101,7 +101,7 @@ def update_now() -> str:
         qline = (f"{QUESTION_LINE}：{'`/loop` で連続生成中' if qq else '完了'}**（{stamp} 時点：残り {len(qq)}問・問の解説 {made}問。"
                  f"指示は `prompts/explain-question-v1.md`）\n")
         if QUESTION_LINE in s:
-            s = re.sub(re.escape(QUESTION_LINE) + r".*\n", lambda _: qline, s)
+            s = re.sub(re.escape(QUESTION_LINE) + r"：.*\n", lambda _: qline, s, count=1)
         else:
             s = re.sub(r"(- \*\*解説の生成（T039）：.*\n)", lambda m: m.group(1) + qline, s, count=1)
     NOW.write_text(s, encoding="utf-8")
