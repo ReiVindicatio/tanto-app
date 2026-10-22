@@ -1,0 +1,235 @@
+{
+ "question_id": "shiho-2011-minso-q66",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minso-q66-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。原告の使用貸借契約締結の陳述は自己に不利益な事実の陳述（先行自白）だが、被告がまだ援用していないので自白は成立しておらず、原告は撤回できる。",
+   "body": "使用貸借契約の締結は被告の占有権原を基礎づける事実で、所有権に基づく明渡しを求める原告にとって不利益な事実である。このような事実を相手方の主張より先に陳述しても、相手方がそれを援用して主張が一致するまでは裁判上の自白は成立せず、陳述した当事者は自由に撤回できると解されている。被告は「請求棄却を求め事実に対する認否は追って行う旨の答弁書」を提出しただけで、最初の期日に欠席しているから、158条によりその答弁書の「記載した事項を陳述したものとみなし」ても、使用貸借契約締結の事実を認める陳述は存在しない。次の期日にも被告は出頭していないので援用はされておらず、原告はその期日に陳述を撤回することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "158",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "記載した事項を陳述したものとみなし",
+     "text_sha256": "4e64e7a8e7346d213381c6f1c1628ad39ce021ee16eca90dc536051bad2ddb29",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（先行自白は相手方の援用があるまで撤回できるとする理解）"
+   ],
+   "id": "exp-shiho-2011-minso-q66-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minso-q66-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。認知の訴えは人事訴訟であり、人事訴訟では民事訴訟法179条のうち自白に関する部分が適用されないので、裁判所は被告の陳述に拘束されない。",
+   "body": "人事訴訟法2条2号は「認知の訴え」を人事に関する訴えに挙げている。同法19条1項は、人事訴訟の訴訟手続においては「同法第百七十九条の規定中裁判所において当事者が自白した事実に関する部分は、適用しない。」と定める。さらに同法20条は「裁判所は、当事者が主張しない事実をしん酌し、かつ、職権で証拠調べをすることができる。」と定める。したがって、被告が父子関係の存在を認めても裁判上の自白としての拘束力はなく、裁判所はその陳述に反する事実を認定できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "認知の訴え",
+     "text_sha256": "46b7eed1594490f7decba334e4d1801896fc1193ff300d199b3e299528795dac",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同法第百七十九条の規定中裁判所において当事者が自白した事実に関する部分は、適用しない。",
+     "text_sha256": "e98bace53f6736946533aec8c5f42a3070d1eb79ce2c0a850f459a29e4cf5d07",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、当事者が主張しない事実をしん酌し、かつ、職権で証拠調べをすることができる。",
+     "text_sha256": "7adbfa83e0cae91fd4bb0543a19fee1240ed02e66dac416f43736e7f167a753d",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所において当事者が自白した事実及び顕著な事実は、証明することを要しない。",
+     "text_sha256": "e4130832ddcc944ae8217b0dfe25450d37e4b37e266687c920672f76e51a6a54",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2011-minso-q66-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minso-q66-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。当事者本人の尋問における陳述は証拠資料であって弁論としての陳述ではないから、裁判上の自白にあたらず、裁判所は拘束されない。",
+   "body": "民事訴訟法179条は「裁判所において当事者が自白した事実」は証明を要しないと定めるが、裁判上の自白は口頭弁論又は弁論準備手続における当事者の弁論としての陳述であると解されている。当事者本人の尋問（207条1項「裁判所は、申立てにより又は職権で、当事者本人を尋問することができる。」）は証拠調べであり、そこでの供述は証拠資料にとどまる。したがって、原告が本人尋問で賃貸借契約締結の事実を認める供述をしても自白は成立せず、裁判所は証拠調べの結果などをしん酌して（247条）その供述に反する事実を認定できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所において当事者が自白した事実",
+     "text_sha256": "e4130832ddcc944ae8217b0dfe25450d37e4b37e266687c920672f76e51a6a54",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "207",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所は、申立てにより又は職権で、当事者本人を尋問することができる。",
+     "text_sha256": "b3f82aa4129925a6e3489e6e8fdc71d034b9a454cbd19e7ac2a8166ddfdbe4cb",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "247",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "口頭弁論の全趣旨及び証拠調べの結果をしん酌して",
+     "text_sha256": "68945b851f13280cf28281954839d6509cbf9b3b52df68a0c6657b2a890ce6c9",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（裁判上の自白は弁論としての陳述に限られ、本人尋問での供述は自白にならないとする理解）"
+   ],
+   "id": "exp-shiho-2011-minso-q66-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minso-q66-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、書証の成立の真正についての自白は裁判所を拘束しないとし、その撤回を許した原審の措置を是認している。",
+   "body": "最判昭和52年4月15日は、委任状などの書証の成立の真正についての自白が裁判所を拘束するとの前提に立って自白の撤回を許した原審の措置を非難する上告論旨に対し、書証の成立の真正についての自白は裁判所を拘束するものではないと解するのが相当であるとして論旨を退けた。したがって、被告が委任状の成立の真正を認めても、裁判所は証拠に基づき委任状が真正に成立したものではないと認めることができる。また、裁判所を拘束しない以上、その陳述の撤回も制限されないと解されており、判例も撤回を許した原審の措置を違法としていない。",
+   "citations": [],
+   "cases": [
+    {
+     "name": "書証の成立の真正についての自白の拘束力",
+     "court": "最高裁判所第二小法廷",
+     "date": "1977-04-15",
+     "case_number": "昭和51(オ)1174",
+     "holding": "書証の成立の真正についての自白は裁判所を拘束しない。全文では、委任状の成立の真正についての自白の撤回を許した原審の措置を非難する論旨を、自白が裁判所を拘束するとの前提を欠くとして退けた。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56324/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（撤回を自由にできるとする点は、判例が撤回を許した原審を是認したことからの理解）"
+   ],
+   "id": "exp-shiho-2011-minso-q66-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minso-q66-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、原告が主張した自己に不利益な使用許諾の事実は、相手方が援用しなくても、裁判所が請求の当否の判断でしんしゃくすべきであるとしている。",
+   "body": "弁論主義のもとでも、事実がいずれかの当事者により主張されていれば、主張した当事者に不利益な事実であっても判決の基礎にできる（主張共通の原則）と解されている。最判昭和41年9月8日は、所有権に基づき土地の明渡しを求めた当事者が相手方にその土地の使用を許した事実を主張し、裁判所がこれを確定した場合には、相手方がその事実を自己の利益に援用しなかったときでも、裁判所はその当事者の請求の当否を判断するについてその事実をしんしゃくすべきであるとした。本肢でも、原告自身が使用貸借契約締結の事実を陳述している以上、証拠調べによりその事実が認められれば、被告が援用しなくても判決の基礎とすることができる。",
+   "citations": [],
+   "cases": [
+    {
+     "name": "当事者が主張した自己に不利益な事実で相手方が援用しないものの斟酌",
+     "court": "最高裁判所第一小法廷",
+     "date": "1966-09-08",
+     "case_number": "昭和38(オ)1227",
+     "holding": "所有権に基づき土地の明渡を求めた当事者が相手方にその土地の使用を許した事実を主張し、裁判所がこれを確定した場合には、相手方が右事実を自己の利益に援用しなかったときでも、裁判所は、その当事者の請求の当否を判断するについてその事実をしんしゃくすべきである。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53850/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（主張共通の原則）"
+   ],
+   "id": "exp-shiho-2011-minso-q66-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

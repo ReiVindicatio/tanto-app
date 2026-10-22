@@ -1,0 +1,323 @@
+{
+ "question_id": "shiho-2011-shoho-q47",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-shoho-q47-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。清算人会は定款の定めによって置くことができる機関であり、解散前に取締役会設置会社であったことから設置が義務づけられることはない（会社法477条2項・3項）。",
+   "body": "誤りの決め手は「清算人会を置かなければならない」の部分である。会社法477条2項は「清算株式会社は、定款の定めによって、清算人会、監査役又は監査役会を置くことができる」と定め、清算人会の設置を任意としている。清算人会の設置が義務づけられるのは、同条3項の「監査役会を置く旨の定款の定めがある清算株式会社は、清算人会を置かなければならない」場合である。また、同条7項は「第四章第二節の規定は、清算株式会社については、適用しない」と定める。したがって、解散前に取締役会設置会社であったことだけを理由に清算人会を置く義務は生じない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "477",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "清算株式会社は、定款の定めによって、清算人会、監査役又は監査役会を置くことができる。",
+     "text_sha256": "5511094f42194a5ce69a3d50e0ab8430be297228da5af338377fe81f533d1a34",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "477",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "監査役会を置く旨の定款の定めがある清算株式会社は、清算人会を置かなければならない。",
+     "text_sha256": "5511094f42194a5ce69a3d50e0ab8430be297228da5af338377fe81f533d1a34",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "477",
+     "paragraphs": [
+      "7"
+     ],
+     "quote": "第四章第二節の規定は、清算株式会社については、適用しない。",
+     "text_sha256": "5511094f42194a5ce69a3d50e0ab8430be297228da5af338377fe81f533d1a34",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "477条は出題後の改正で監査等委員会設置会社に関する項が加わり、項番号が動いている可能性がある。改正前の内容は条文の本文で確認していない（現行の2項・3項で肢は説明できる）"
+   ],
+   "id": "exp-shiho-2011-shoho-q47-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-shoho-q47-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。清算株式会社は、債権者に対する公告・催告で定めた債権申出の期間内は、原則として債務の弁済をすることができない（会社法499条1項・500条1項）。",
+   "body": "誤りの決め手は「速やかに，債務の弁済をしなければならない」の部分である。会社法499条1項は、清算株式会社は清算開始原因に該当することとなった後、遅滞なく、債権者に対し「一定の期間内にその債権を申し出るべき旨を官報に公告し、かつ、知れている債権者には、各別にこれを催告しなければならない」とし、「当該期間は、二箇月を下ることができない」と定める。そして同法500条1項は「清算株式会社は、前条第一項の期間内は、債務の弁済をすることができない」と定める。例外は、同条2項により、裁判所の許可を得て少額の債権等を弁済する場合に限られる。したがって、解散後速やかに弁済しなければならないとはいえない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "499",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一定の期間内にその債権を申し出るべき旨を官報に公告し、かつ、知れている債権者には、各別にこれを催告しなければならない。",
+     "text_sha256": "5fbd93c170f592b8be8ee80ed910537162c8f73fb3223232d18aabf5044261e6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "499",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該期間は、二箇月を下ることができない。",
+     "text_sha256": "5fbd93c170f592b8be8ee80ed910537162c8f73fb3223232d18aabf5044261e6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "500",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "清算株式会社は、前条第一項の期間内は、債務の弁済をすることができない。",
+     "text_sha256": "210743f67d8a002c20ee25a44579a6f5f660a78f8ec31db7255e2f5d62e666f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "500",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判所の許可を得て、少額の債権",
+     "text_sha256": "210743f67d8a002c20ee25a44579a6f5f660a78f8ec31db7255e2f5d62e666f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2011-shoho-q47-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-shoho-q47-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。株主総会の決議で解散した会社は、清算が結了するまで、株主総会の特別決議によって会社を継続できる（会社法471条3号・473条・309条2項11号）。",
+   "body": "株主総会の決議は会社法471条3号の解散事由である。同法473条は、同法「第四百七十一条第一号から第三号までに掲げる事由によって解散した場合」には、「次章の規定による清算が結了するまで」、「株主総会の決議によって、株式会社を継続することができる」と定める。この継続の決議は、同法309条2項11号の「第六章から第八章までの規定により株主総会の決議を要する場合における当該株主総会」の決議にあたり、同項の特別決議によることとなる。したがって、肢のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "471",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の決議",
+     "text_sha256": "1cc51ec8073d5799d2dc3a99306a875a0c6a31d99e39a31261db167ae36e8138",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "473",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四百七十一条第一号から第三号までに掲げる事由によって解散した場合",
+     "text_sha256": "d9b8b1cb4e9506c580397deb74125783eb7398575b34273fde65436bbb922a24",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "473",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次章の規定による清算が結了するまで",
+     "text_sha256": "d9b8b1cb4e9506c580397deb74125783eb7398575b34273fde65436bbb922a24",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "473",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株主総会の決議によって、株式会社を継続することができる。",
+     "text_sha256": "d9b8b1cb4e9506c580397deb74125783eb7398575b34273fde65436bbb922a24",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "309",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第六章から第八章までの規定により株主総会の決議を要する場合における当該株主総会",
+     "text_sha256": "56ffbd6451793882d47ba533193af3dd09d3d0c791034f12f0f7f32cf6456aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "473条が第2編第8章（解散）に置かれていることは条文の本文からは表示されていない。特別決議によることは309条2項11号の適用による理解である（解釈による）"
+   ],
+   "id": "exp-shiho-2011-shoho-q47-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-shoho-q47-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。清算株式会社は「清算が結了するまでは」存続するものとみなされるにとどまり、法人格は清算の結了によって消滅し、清算結了の登記を待たない（会社法476条・929条）。",
+   "body": "誤りの決め手は「清算結了の登記をするまでは，消滅しない」の部分である。会社法476条は、清算株式会社は「清算の目的の範囲内において、清算が結了するまではなお存続するものとみなす」と定めており、法人格の存続の終期を清算の結了に置いている。清算結了の登記について、同法929条は「清算が結了したときは」所定の日（清算株式会社では同法507条3項の決算報告の承認の日）から二週間以内に登記をしなければならないと定めており、登記は清算の結了の後にされるものである。そのため、清算結了の登記は法人格を消滅させる効力をもつものではなく、清算が結了すれば登記前でも法人格は消滅すると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "476",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "清算の目的の範囲内において、清算が結了するまではなお存続するものとみなす。",
+     "text_sha256": "c98368b45e4058cb9af5c24bf5157fb53c804494b4b79559dfdc28527aa57511",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "929",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "清算が結了したときは",
+     "text_sha256": "ed42789fdad5d41b378e62b3522f5069b0d09a150e01059b8dc20f76881b5993",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "507",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "清算人は、決算報告（前項の規定の適用がある場合にあっては、同項の承認を受けたもの）を株主総会に提出し、又は提供し、その承認を受けなければならない。",
+     "text_sha256": "a6ad167f19de630a2097e8ead0522c50cc1799a1509ee9bb1f79b891cdeb3a2e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "清算結了の登記に法人格を消滅させる効力がないことは、476条・929条の文言からの解釈による"
+   ],
+   "id": "exp-shiho-2011-shoho-q47-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-shoho-q47-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。公開会社であった指名委員会等設置会社（出題当時の委員会設置会社）が清算株式会社となると監査役を置かなければならず、監査委員が監査役となる（会社法477条4項・6項）。",
+   "body": "会社法477条4項は、清算開始原因に該当することとなった時において「公開会社又は大会社であった清算株式会社は、監査役を置かなければならない」と定める。そして同条6項は、その時において「指名委員会等設置会社であった清算株式会社であって、第四項の規定の適用があるものにおいては、監査委員が監査役となる」と定める。肢の会社は公開会社であるから同条4項が適用され、監査委員が監査役となる。なお、出題当時の「委員会設置会社」は、出題後の改正で「指名委員会等設置会社」と呼ばれるようになっている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "477",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "公開会社又は大会社であった清算株式会社は、監査役を置かなければならない。",
+     "text_sha256": "5511094f42194a5ce69a3d50e0ab8430be297228da5af338377fe81f533d1a34",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "477",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "指名委員会等設置会社であった清算株式会社であって、第四項の規定の適用があるものにおいては、監査委員が監査役となる。",
+     "text_sha256": "5511094f42194a5ce69a3d50e0ab8430be297228da5af338377fe81f533d1a34",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題当時の「委員会設置会社」は、出題後の改正で「指名委員会等設置会社」となり、477条の項番号も動いている可能性がある。改正前の内容は条文の本文で確認していない（現行の4項・6項で肢は説明できる）"
+   ],
+   "id": "exp-shiho-2011-shoho-q47-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,229 @@
+{
+ "question_id": "shiho-2011-shoho-q52",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-shoho-q52-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。代理商は「商人のために」取引の代理又は媒介をする者であり、商人でないＢのために媒介をするＡは代理商にあたらない（商法27条）。",
+   "body": "誤りの決め手は「Ｂの代理商に該当する」の部分である。商法27条は、代理商を「商人のためにその平常の営業の部類に属する取引の代理又は媒介をする者で、その商人の使用人でないもの」と定義している。リード文のとおりＢは商人ではないから、ＡがＢのためにレンタカー契約の締結を媒介しても、商人のために平常の営業の部類に属する取引を媒介する者にはあたらない。したがって、ＡはＢの代理商ではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "27",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "商人のためにその平常の営業の部類に属する取引の代理又は媒介をする者で、その商人の使用人でないもの",
+     "text_sha256": "004d4c248fefd42c927290e0c6f3b0e465b7a6474ef5d25e20336583f62dd879",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2011-shoho-q52-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-shoho-q52-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。自己の名で他人のために物品の販売・買入れ以外の行為（旅客運送契約の締結）をすることを業とする者は、準問屋にあたる（商法558条）。",
+   "body": "商法558条は、問屋の章の規定を「自己の名をもって他人のために販売又は買入れ以外の行為をすることを業とする者」に準用すると定めており、この者が準問屋と呼ばれる。ＡはＢのために自己の名でバス会社と旅客運送契約を締結しており、これは物品の販売又は買入れ（同法551条の問屋）ではない。また、運送取扱人は同法559条1項により「自己の名をもって物品運送の取次ぎをすることを業とする者」であり、旅客運送の取次ぎは含まれない。したがって、Ａは準問屋にあたる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "558",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己の名をもって他人のために販売又は買入れ以外の行為をすることを業とする者",
+     "text_sha256": "b3dc7d7d3f17421a1981214f935ee0e65160ff2c93619db48f94c2e4dd3c4e98",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "551",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己の名をもって他人のために物品の販売又は買入れをすることを業とする者",
+     "text_sha256": "44c3098ffdb6526f4124fcef22505f31dc591917732d652858750cdf082d3a03",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "559",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己の名をもって物品運送の取次ぎをすることを業とする者",
+     "text_sha256": "fcab692c925574fa012674210081342b81140c0ddcefc51cf6579c2187432a12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "559条は出題後の改正（運送・海商関係の改正）で文言が改められている可能性がある。改正前の内容は条文の本文で確認していない（物品運送の取次ぎに限る点は現行の本文で説明できる）"
+   ],
+   "id": "exp-shiho-2011-shoho-q52-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-shoho-q52-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。仲立人は「他人間の商行為の媒介」を業とする者であり、相手方のホテル会社から委託を受けていなくても、ホテル会社にとって商行為である宿泊契約を媒介するＡは仲立人にあたる（商法543条）。",
+   "body": "誤りの決め手は「ホテル会社からその媒介の委託を受けていないときは，Ａは，仲立人に該当しない」の部分である。商法543条は、仲立人を「他人間の商行為の媒介をすることを業とする者」と定義しており、媒介の委託を当事者の双方から受けることを要件としていない。宿泊契約は、ホテル会社にとって「客の来集を目的とする場屋における取引」（同法502条7号）であり、また会社法5条により会社が「その事業としてする行為」は商行為とされる。仲立人の定義にいう「商行為」は、当事者の一方にとって商行為であれば足り、媒介の委託も一方の当事者からのもので足りると解されている。したがって、Ａは、Ｂからのみ委託を受けていても仲立人にあたる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "543",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人間の商行為の媒介をすることを業とする者",
+     "text_sha256": "3e0296d41bcbdd1008622247e850485af4ccdc11fe29dce800adf0c968403763",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "502",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "客の来集を目的とする場屋における取引",
+     "text_sha256": "274138f0c8279c76ff2c71b65075c0b8c6d773e7ad8dafd44c5360f3ccd0ef7f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その事業としてする行為",
+     "text_sha256": "cbf359b0d57f795b96399d1557ef535f3d8136c3dcb794ed6a2e3ea80b89dee4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "当事者の一方にとっての商行為で足りること、一方当事者からの委託で足りることは解釈による",
+    "543条は出題後の改正（運送・海商関係の改正）で条番号・文言が改められている可能性がある。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2011-shoho-q52-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-shoho-q52-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。運送取扱人は「自己の名をもって」物品運送の取次ぎをする者であり、Ｂ自身が運送会社と契約する場合にあっせんしたにすぎないＡは運送取扱人にあたらない（商法559条1項）。",
+   "body": "誤りの決め手は「Ｂと運送会社との間で物品運送契約が締結された場合，Ａは，運送取扱人に該当する」の部分である。商法559条1項は、運送取扱人を「自己の名をもって物品運送の取次ぎをすることを業とする者」と定義する。取次ぎとは自己の名をもって他人の計算で法律行為をすることであり、運送契約の当事者は運送取扱人自身となると解されている。肢では、物品運送契約はＢと運送会社との間で締結されており、Ａは自己の名で運送契約を締結していない。したがって、Ａは運送取扱人にあたらない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "559",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己の名をもって物品運送の取次ぎをすることを業とする者",
+     "text_sha256": "fcab692c925574fa012674210081342b81140c0ddcefc51cf6579c2187432a12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "取次ぎの意味（自己の名をもって他人の計算で法律行為をすること）は解釈による",
+    "559条は出題後の改正（運送・海商関係の改正）で文言が改められている可能性がある。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2011-shoho-q52-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-shoho-q52-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。飲食店は「客の来集を目的とする場屋」の例として挙げられており、喫茶店で飲食物を有料で提供するＡは場屋の主人（現行法の「場屋営業者」）にあたる（商法596条1項）。",
+   "body": "商法596条1項は、「旅館、飲食店、浴場その他の客の来集を目的とする場屋における取引をすることを業とする者」を「場屋営業者」としている。Ａは店舗の半分のスペースで喫茶店を営み、飲食物を有料で提供しているから、飲食店という客の来集を目的とする場屋における取引を業としているといえる。旅行の手配の業務をあわせて営んでいることや、客が旅程の相談を終えたＢであることは、この結論を左右しない。したがって、Ａは場屋の主人にあたる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "596",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "旅館、飲食店、浴場その他の客の来集を目的とする場屋における取引をすることを業とする者",
+     "text_sha256": "3833617c748bfd64117caaece92c65d203fd1ae773742f438646fb517e7bb093",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "出題当時の「場屋の主人」は、出題後の改正（運送・海商関係の改正）で「場屋営業者」と定義されるようになっている。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2011-shoho-q52-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

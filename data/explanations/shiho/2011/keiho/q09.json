@@ -1,0 +1,309 @@
+{
+ "question_id": "shiho-2011-keiho-q09",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-keiho-q09-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：延焼罪は自己所有の物への放火（109条2項・110条2項）を前提とする罪であり、他人（乙）所有の自動二輪車に放火した本件では成立しない。",
+   "body": "誤りは「延焼罪が成立する」という部分である。刑法111条1項の延焼罪は、「第百九条第二項又は前条第二項の罪を犯し、よって第百八条又は第百九条第一項に規定する物に延焼させたとき」に成立し、109条2項・110条2項はいずれも焼損した物が「自己の所有に係るとき」の規定である。本件で甲が火を放った自動二輪車は乙の所有であるから、甲の行為は他人所有の建造物等以外放火（刑法110条1項）であって、110条2項の罪ではない。したがって延焼罪の前提を欠き、家屋への延焼を認識・認容していなかった場合には、甲には刑法110条1項の罪が成立するにとどまり、家屋の焼損はその「公共の危険」の結果として評価されると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "111",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百九条第二項又は前条第二項の罪を犯し、よって第百八条又は第百九条第一項に規定する物に延焼させたとき",
+     "text_sha256": "1e2aa657cbca5269c1d6b407c48d316a45f78f61e720dbc59390ffd2e68cbba6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "109",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の物が自己の所有に係るときは",
+     "text_sha256": "326d774ec2f98dbdafb0b8f657f6202a0b84b7f679959effbd50cd3ad527d210",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "110",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の物が自己の所有に係るときは",
+     "text_sha256": "e57ef09fc88cc82d4cf26b2048ff8150accb7212af342ee6d7680ec59a521152",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "110",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "放火して、前二条に規定する物以外の物を焼損し、よって公共の危険を生じさせた者は",
+     "text_sha256": "e57ef09fc88cc82d4cf26b2048ff8150accb7212af342ee6d7680ec59a521152",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（延焼の認識がない場合に110条1項の罪のみが成立し、家屋の焼損を同項の結果として評価する点）"
+   ],
+   "id": "exp-shiho-2011-keiho-q09-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-keiho-q09-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：客観的には現住建造物（108条）に放火したが、甲は非現住建造物（109条1項）と誤信していたので、軽い109条1項の罪の限度で成立する。",
+   "body": "乙が単身で居住している家屋は刑法108条の「現に人が住居に使用し」ている建造物であるが、甲はこれを空き家で誰もいないと誤信しており、認識していたのは刑法109条1項の「現に人が住居に使用せず、かつ、現に人がいない建造物」への放火である。刑法38条2項は、「重い罪に当たるべき行為をしたのに、行為の時にその重い罪に当たることとなる事実を知らなかった者は、その重い罪によって処断することはできない」と定める。両罪は構成要件が重なり合うから、その重なり合う軽い罪の限度で故意犯が成立し、甲には他人所有非現住建造物等放火罪（109条1項）が成立すると解されている。家屋は乙の所有であるから、109条2項（自己所有）ではなく同条1項となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現に人が住居に使用し",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "109",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現に人が住居に使用せず、かつ、現に人がいない建造物",
+     "text_sha256": "326d774ec2f98dbdafb0b8f657f6202a0b84b7f679959effbd50cd3ad527d210",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "38",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "重い罪に当たるべき行為をしたのに、行為の時にその重い罪に当たることとなる事実を知らなかった者は、その重い罪によって処断することはできない",
+     "text_sha256": "d5cc162963f0d1038efe34868f6bc7f1ca4f6b5888032218d23d667074c890fa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（抽象的事実の錯誤で構成要件が重なり合う軽い罪の限度で故意犯を認める点）"
+   ],
+   "id": "exp-shiho-2011-keiho-q09-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-keiho-q09-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：唯一の居住者である乙は放火の共謀者（犯人）であり、108条の「人」は犯人以外の者を指すから、家屋は現住建造物にあたらず、非現住建造物等放火罪となる。",
+   "body": "誤りは「他人所有現住建造物等放火罪が成立する」という部分である。最判昭和32年6月21日は、刑法108条にいう「人」とは犯人以外の者を指すとした。本件家屋に居住しているのは乙だけであり、乙は甲と放火を共謀しているから犯人にあたり、家屋は犯人以外の者が「現に人が住居に使用し」ている建造物ではない。また、家屋には火災保険が掛けられており、刑法115条により、自己の所有に係るものであっても「保険に付したものである場合において、これを焼損したときは、他人の物を焼損した者の例による」。したがって、甲には現住建造物等放火罪ではなく、刑法109条1項の非現住建造物等放火罪が成立する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現に人が住居に使用し",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "115",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保険に付したものである場合において、これを焼損したときは、他人の物を焼損した者の例による",
+     "text_sha256": "331d95531d3dca6d49bf5fc39c1071e054334b0a9cd4fad4e7259d652dba8d5b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "109",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現に人が住居に使用せず、かつ、現に人がいない建造物",
+     "text_sha256": "326d774ec2f98dbdafb0b8f657f6202a0b84b7f679959effbd50cd3ad527d210",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "刑法108条の「人」の意義（犯人以外の者）",
+     "court": "最高裁判所第二小法廷",
+     "date": "1957-06-21",
+     "case_number": "昭和29(あ)805",
+     "holding": "刑法108条にいう「人」とは、犯人以外の者を指称する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51386/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（共謀者である所有者乙の家屋を115条の適用上どう扱うか。自己所有とみても115条により他人の物の例によるので、109条1項となる結論は変わらない）"
+   ],
+   "id": "exp-shiho-2011-keiho-q09-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-keiho-q09-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：乙が住居として使用していることを認識していれば、108条の「現に人が住居に使用し」ている建造物の認識があり、乙が在宅していないと誤信していても現住建造物等放火罪が成立する。",
+   "body": "刑法108条は、客体を「現に人が住居に使用し又は現に人がいる建造物」と定めており、住居として使用されていることと人が現在することとは択一的な要件である。甲は、家屋に乙が居住していること（現に人が住居に使用していること）を認識・認容していたから、108条の客体についての故意に欠けるところはない。乙が外出中で家屋内に誰もいないと誤信していたとしても、それは「現に人がいる」という別の要件についての誤信にすぎず、故意を否定しないと解されている。したがって、甲には現住建造物等放火罪が成立する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現に人が住居に使用し又は現に人がいる建造物",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（住居としての使用の認識があれば、人の現在についての誤信は108条の故意を否定しないとする点）"
+   ],
+   "id": "exp-shiho-2011-keiho-q09-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-keiho-q09-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：放火によって人を殺害した場合、現住建造物等放火罪と殺人罪はともに成立して観念的競合となり、殺人罪が放火罪に吸収されることはない。",
+   "body": "誤りは「後者は前者に吸収される」という部分である。現住建造物等放火罪（刑法108条）は公共の安全を守る罪であり、殺人罪（刑法199条）は個人の生命を守る罪であって、保護する利益が異なるから、一方が他方を包括的に評価し尽くすことはないと解されている。放火して家屋を焼損するとともに乙を焼死させた行為は一個の行為であるから、両罪は刑法54条1項の「一個の行為が二個以上の罪名に触れ」る場合として観念的競合となる。判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "108",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "現に人が住居に使用し又は現に人がいる建造物",
+     "text_sha256": "4a12ee2a9c55c82a57594f60bedf76b9946f7d38975589d987b9a77d468dbc68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "放火による殺人で現住建造物等放火罪と殺人罪を観念的競合とした判例",
+     "searched": [
+      "courts.py search 放火 殺人 観念的競合（50件。罪名だけが一致する事件ばかりで、罪数を判示事項とするものは見つからなかった）",
+      "大審院（データベースにない）の可能性がある"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（保護法益の違いから吸収関係を否定し、観念的競合とする点）"
+   ],
+   "id": "exp-shiho-2011-keiho-q09-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

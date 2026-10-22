@@ -1,0 +1,386 @@
+{
+ "question_id": "shiho-2011-keiho-q06",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-keiho-q06-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：ロープを張って車道を閉塞した一個の行為によって往来妨害と傷害が生じているので、両罪は牽連犯ではなく観念的競合となる。",
+   "body": "誤りは「両罪は牽連犯となる」という部分である。刑法54条1項は、「一個の行為が二個以上の罪名に触れ」る場合（観念的競合）と、「犯罪の手段若しくは結果である行為が他の罪名に触れるとき」（牽連犯）とを分けて定めている。本肢では、車道にロープを張って閉塞した行為が、刑法124条1項の「陸路、水路又は橋を損壊し、又は閉塞して往来の妨害を生じさせた」行為であると同時に、乙を負傷させた傷害の実行行為でもあり、行為は一個である。牽連犯は手段と結果の関係にある別個の行為を前提とするから、一個の行為で二つの罪が成立する本肢は観念的競合として扱われると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるとき",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "陸路、水路又は橋を損壊し、又は閉塞して往来の妨害を生じさせた",
+     "text_sha256": "419fe886b3719d8a13019840b4f6babb2c7a3c296574a015d81e91083d2cfbbd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "204",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の身体を傷害した者",
+     "text_sha256": "6ede21287a797c6f241c77f9e36de03258b58392279dd9ec60ceafb09f7b2af4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（一個の行為による往来妨害と傷害を観念的競合とする点）",
+    "傷害の故意がある場合に成立するのが往来妨害罪と傷害罪か、往来妨害致傷罪（124条2項）と傷害罪かについて、この点を直接扱った判例は courts.py で確かめていない。いずれにせよ一個の行為であり牽連犯にはならない、という肢の決め手には影響しない"
+   ],
+   "id": "exp-shiho-2011-keiho-q06-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-keiho-q06-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：一個の住居侵入と三個の殺人はそれぞれ牽連犯の関係にあり、全体が一罪として処断される（いわゆるかすがい現象）ので、併合罪にはならない。",
+   "body": "誤りは「丙及び丁に対する殺人罪と併合罪になる」という部分である。住居侵入（刑法130条）は、その住居内で行われた殺人（刑法199条）の手段であり、刑法54条1項の「犯罪の手段若しくは結果である行為が他の罪名に触れるとき」にあたる。最決昭和29年5月27日は、一個の住居侵入行為と三個の殺人行為とがそれぞれ牽連犯の関係にある場合には、刑法54条1項後段等を適用して一罪としてその最も重い刑に従い処断すべきものとした。したがって、本肢でも乙・丙・丁に対する各殺人罪は、いずれも住居侵入罪と牽連犯の関係に立ち、住居侵入罪を介して全体が科刑上一罪となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるとき",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "130",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "正当な理由がないのに、人の住居若しくは人の看守する邸宅、建造物若しくは艦船に侵入し",
+     "text_sha256": "032fa6eaacc129ae4daf39c3f2400afa6523671819f49171677c976b8fe3e355",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "199",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を殺した者",
+     "text_sha256": "07138e00b7628642c213275b51d165972f7025f0156c8e03974bc4e8a56fb559",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "1個の住居侵入と3個の殺人の罪数（かすがい現象）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1954-05-27",
+     "case_number": "昭和29(あ)543",
+     "holding": "一個の住居侵入行為と三個の殺人行為とがそれぞれ牽連犯の関係にある場合には、刑法54条1項後段等を適用し一罪としてその最も重い刑に従い処断すべきである。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56927/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判決の要旨は刑法54条1項後段とともに刑の軽重の規定（10条）も適用条文に挙げている"
+   ],
+   "id": "exp-shiho-2011-keiho-q06-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-keiho-q06-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：眼鏡の上から一回殴打した一個の行為で傷害と器物損壊が生じているので、両罪は併合罪ではなく観念的競合となる。",
+   "body": "誤りは「両罪は併合罪となる」という部分である。甲が眼鏡の上から乙の顔面を殴打した行為は、乙に顔面打撲の傷害を負わせた点で刑法204条の「人の身体を傷害した」行為にあたり、同時に眼鏡を損壊した点で刑法261条の「他人の物を損壊し」た行為にあたる。このように一個の行為が二つの罪に触れる場合は、刑法54条1項の「一個の行為が二個以上の罪名に触れ」る場合として、その最も重い刑により処断される観念的競合となると解されている。刑法45条の併合罪は、確定裁判を経ていない「二個以上の罪」を対象とするもので、行為が一個の場合に併合罪とはならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "204",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人の身体を傷害した",
+     "text_sha256": "6ede21287a797c6f241c77f9e36de03258b58392279dd9ec60ceafb09f7b2af4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "261",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の物を損壊し",
+     "text_sha256": "4b05878c69d702517a3d9714df8b4517916f6e9799015b3d78d8df4d9b8aa8c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一個の行為が二個以上の罪名に触れ",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二個以上の罪",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（一回の殴打を一個の行為とみて観念的競合とする点）",
+    "この類型を直接扱った判例は courts.py で確かめていない"
+   ],
+   "id": "exp-shiho-2011-keiho-q06-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-keiho-q06-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×：詐欺は振込みの時点で終わっており、その数日後の質権設定承諾書の偽造・行使は詐欺の手段でも結果でもないから、詐欺罪とは牽連犯にならず併合罪となる。",
+   "body": "誤りは、詐欺罪と有印私文書偽造・同行使罪を「これらは牽連犯として一罪となる」とした部分である。甲は嘘を言って乙に2000万円を振り込ませた時点で詐欺罪（刑法246条）を遂げており、質権設定承諾書の偽造・行使はその数日後に行われたもので、乙を欺いて振り込ませるための手段として使われたものではない。刑法54条1項の牽連犯は「犯罪の手段若しくは結果である行為が他の罪名に触れるとき」に限られるから、詐欺の既遂後にされた偽造・行使は詐欺罪と牽連犯の関係に立たないと解される。したがって、有印私文書偽造罪（刑法159条1項）と同行使罪（刑法161条1項）は互いに牽連犯となるが、これと詐欺罪とは刑法45条の併合罪となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "246",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を欺いて財物を交付させた者",
+     "text_sha256": "c515031b5f484a4ebf537cf5f2eb826a008d119836fd4627833e9cdb1f4a5053",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるとき",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "159",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行使の目的で、次の各号に掲げるいずれかの行為をした者は",
+     "text_sha256": "4692c5d57b76d54088002bc3ffe8f3c006b0d157c4ba2c817e4b82da7a134a14",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "161",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の文書等又は電磁的記録文書等を行使した者は",
+     "text_sha256": "678e86310d0342525c44a65ceeecee4ecb08155f34e55c7a5653d68908ced709",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（詐欺既遂後の偽造・行使を詐欺罪と牽連犯にしない点、偽造と行使を牽連犯とする点）",
+    "本肢の事案を直接扱った判例は courts.py で確かめていない（courts.py search 質権設定承諾書 詐欺 は0件）",
+    "現行の159条・161条は「印章等」「文書等」「電磁的記録文書等」の文言を含み、出題当時から改正されている。改正前の内容は条文の本文で確認していない",
+    "詐欺が246条1項か2項（預金債権の取得）かは本文で特定していない。罪数の結論には影響しない"
+   ],
+   "id": "exp-shiho-2011-keiho-q06-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-keiho-q06-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○：判例は、恐喝の手段として監禁が行われた場合でも監禁罪と恐喝罪は牽連犯の関係にないとしており、両罪は併合罪となる。",
+   "body": "甲には、乙をマンションの一室に監禁した点で監禁罪（刑法220条）が、暴行・脅迫を加えて現金を脅し取った点で恐喝罪（刑法249条1項）が成立する。監禁は恐喝の手段として行われているが、最判平成17年4月14日は、恐喝の手段として監禁が行われた場合であっても両罪は牽連犯の関係にはないとした。したがって、刑法54条1項後段の牽連犯にはならず、両罪は刑法45条の併合罪となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "220",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法に人を逮捕し、又は監禁した者",
+     "text_sha256": "d8ef399d30f380f6cab88d03eb7df7918dcbb43ebd2d82339b4ecf5563b90cd1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "249",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人を恐喝して財物を交付させた者",
+     "text_sha256": "f84054d582866a7a23723a5ea55c12662213907cea3051a5145dc29f346ed71b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "54",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "犯罪の手段若しくは結果である行為が他の罪名に触れるとき",
+     "text_sha256": "f90d9bf8e5ed4aaada04755ad7ace97a734715acf582b321ff5706f4d7acb7fb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "刑法",
+     "article": "45",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定裁判を経ていない二個以上の罪を併合罪とする。",
+     "text_sha256": "cfd5aa2487ce23db54dbcdc544349be9a408ae0397d010d80ba722fe93045ec3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "恐喝の手段として監禁が行われた場合の罪数関係",
+     "court": "最高裁判所第一小法廷",
+     "date": "2005-04-14",
+     "case_number": "平成16(あ)2077",
+     "holding": "恐喝の手段として監禁が行われた場合であっても、両罪は牽連犯の関係にはない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/50078/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2011-keiho-q06-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

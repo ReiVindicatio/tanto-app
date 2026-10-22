@@ -1,0 +1,319 @@
+{
+ "question_id": "shiho-2011-shoho-q49",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-shoho-q49-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。新設分割計画の承認の株主総会決議は特別決議によらなければならない（会社法804条1項・309条2項12号）。",
+   "body": "誤りの決め手は「普通決議」の部分である。会社法804条1項は「消滅株式会社等は、株主総会の決議によって、新設合併契約等の承認を受けなければならない」と定め、同法803条1項2号により新設分割株式会社の「新設合併契約等」は新設分割計画である。この決議は新設分割について定める第五編の規定による決議であるから、同法309条2項12号の「第五編の規定により株主総会の決議を要する場合における当該株主総会」にあたり、同項の特別決議によることになる。したがって、普通決議で足りるとする点が誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "804",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "消滅株式会社等は、株主総会の決議によって、新設合併契約等の承認を受けなければならない。",
+     "text_sha256": "c46f3ac2e6be452fd6e5ccd10ec1e7342dd3be7ad5941cbbe83cdc397722c06f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "803",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "新設分割株式会社　新設分割計画",
+     "text_sha256": "9cf0482746bc75c6bf1809fa41732e3311dfe1e779c5ec7c85583fc10fd0ed43",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "309",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第五編の規定により株主総会の決議を要する場合における当該株主総会",
+     "text_sha256": "56ffbd6451793882d47ba533193af3dd09d3d0c791034f12f0f7f32cf6456aaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "簡易な新設分割（805条）では株主総会の承認自体が不要となる場合があるが、805条の本文は確認していないため本文では触れていない"
+   ],
+   "id": "exp-shiho-2011-shoho-q49-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-shoho-q49-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。異議を述べた債権者に対する弁済・担保提供・信託は、新設分割をしてもその債権者を害するおそれがないときは要しない（会社法810条5項ただし書）。",
+   "body": "会社法810条5項本文は、債権者が異議を述べたときは、消滅株式会社等は「当該債権者に対し、弁済し、若しくは相当の担保を提供し、又は当該債権者に弁済を受けさせることを目的として信託会社等に相当の財産を信託しなければならない」と定める。そのうえで、同項ただし書は「当該新設合併等をしても当該債権者を害するおそれがないときは、この限りでない」と定める。同法804条4項により「新設合併等」には新設分割が含まれる。したがって、肢のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "810",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "当該債権者に対し、弁済し、若しくは相当の担保を提供し、又は当該債権者に弁済を受けさせることを目的として信託会社等に相当の財産を信託しなければならない。",
+     "text_sha256": "816b75efa8af48cd646a86087bb23a81e0c29d5478c1dce62322f8bb9e6f6845",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "810",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "当該新設合併等をしても当該債権者を害するおそれがないときは、この限りでない。",
+     "text_sha256": "816b75efa8af48cd646a86087bb23a81e0c29d5478c1dce62322f8bb9e6f6845",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "804",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "新設合併、新設分割又は株式移転（以下この節において「新設合併等」という。）",
+     "text_sha256": "c46f3ac2e6be452fd6e5ccd10ec1e7342dd3be7ad5941cbbe83cdc397722c06f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2011-shoho-q49-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-shoho-q49-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。新設分割設立株式会社の設立には、創立総会の招集を定める規定を含む設立の規定の多くが適用されず、創立総会は招集されない（会社法814条1項・65条1項）。",
+   "body": "誤りの決め手は「創立総会を招集しなければならない」の部分である。会社法814条1項は、第二編第一章の規定（同項のかっこ書に掲げる規定を除く。）は「新設合併設立株式会社、新設分割設立株式会社又は株式移転設立完全親会社（以下この目において「設立株式会社」という。）の設立については、適用しない」と定める。創立総会の招集を定める同法65条1項は、「第五十七条第一項の募集をする場合」に発起人が創立総会を招集するとする設立の規定であり、814条1項かっこ書の除外には掲げられていない。新設分割設立会社の設立は、分割会社が作成する新設分割計画（同条2項により定款も消滅会社等が作成する）に基づいて行われ、創立総会を開くことは予定されていないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "814",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "新設合併設立株式会社、新設分割設立株式会社又は株式移転設立完全親会社（以下この目において「設立株式会社」という。）の設立については、適用しない。",
+     "text_sha256": "b8188641f7c5504137712e4b7368725cdbb83f852715d1389d23980f68f83822",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "814",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "設立株式会社の定款は、消滅会社等が作成する。",
+     "text_sha256": "b8188641f7c5504137712e4b7368725cdbb83f852715d1389d23980f68f83822",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "65",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第五十七条第一項の募集をする場合",
+     "text_sha256": "e3406aa398123916db02ad75df4ddb334ca069ef0d2c5661dfe2e23299e59b7a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "65条が第二編第一章の規定であり、814条1項かっこ書の「第六節」に含まれないことは、条文の本文からは節の範囲が表示されないため確認していない（解釈による）"
+   ],
+   "id": "exp-shiho-2011-shoho-q49-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-shoho-q49-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。新設分割設立株式会社は、本店の所在地で設立の登記をすることによって成立する（会社法814条1項・49条）。",
+   "body": "誤りの決め手は「新設分割計画に新設分割がその効力を生ずる日を定めたときは，その日に，成立する」の部分である。会社法814条1項は、第二編第一章の規定のうち「第四十九条」を、新設分割設立株式会社に適用しない規定から除いている。そして同法49条は「株式会社は、その本店の所在地において設立の登記をすることによって成立する」と定める。新設分割の効力も、同法764条1項により「新設分割設立株式会社は、その成立の日に、新設分割計画の定めに従い、新設分割会社の権利義務を承継する」とされ、設立会社の成立（設立の登記）の日に生じる。設立の登記をすべき時期は同法924条1項が定める。したがって、計画で定めた日に成立するのではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "814",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四十九条を除く。",
+     "text_sha256": "b8188641f7c5504137712e4b7368725cdbb83f852715d1389d23980f68f83822",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "49",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "株式会社は、その本店の所在地において設立の登記をすることによって成立する。",
+     "text_sha256": "0dfb913725fccd73080d98d66c7255c2ae05484041d2db5fa5ddfb44881c6006",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "764",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "新設分割設立株式会社は、その成立の日に、新設分割計画の定めに従い、新設分割会社の権利義務を承継する。",
+     "text_sha256": "e6f6f05eda82c1825dda31901075c7a8f5442712f4603be16d800cb3e28268c1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "924",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "新設分割により設立する会社については設立の登記をしなければならない。",
+     "text_sha256": "0b82c3adf2cf067c14e6440261231dbe9932b0631b44ad5488cf20fb3ca8c9cd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2011-shoho-q49-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-shoho-q49-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。子会社による親会社株式の取得の禁止は、新設分割により他の会社から親会社株式を承継する場合には適用されない（会社法135条2項4号）。",
+   "body": "会社法135条1項は「子会社は、その親会社である株式会社の株式（以下この条において「親会社株式」という。）を取得してはならない」と定める。しかし同条2項は「前項の規定は、次に掲げる場合には、適用しない」とし、その4号に「新設分割により他の会社から親会社株式を承継する場合」を掲げる。したがって、設立会社は、新設分割によって分割会社から親会社の株式を承継することができる。ただし、同条3項により、子会社は「相当の時期にその有する親会社株式を処分しなければならない」。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "135",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子会社は、その親会社である株式会社の株式（以下この条において「親会社株式」という。）を取得してはならない。",
+     "text_sha256": "57fd9700994e501063b255cd853fafab53fcbae756c0d2baa2e74940648c1170",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "135",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、次に掲げる場合には、適用しない。",
+     "text_sha256": "57fd9700994e501063b255cd853fafab53fcbae756c0d2baa2e74940648c1170",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "135",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "新設分割により他の会社から親会社株式を承継する場合",
+     "text_sha256": "57fd9700994e501063b255cd853fafab53fcbae756c0d2baa2e74940648c1170",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "会社法",
+     "article": "135",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "相当の時期にその有する親会社株式を処分しなければならない。",
+     "text_sha256": "57fd9700994e501063b255cd853fafab53fcbae756c0d2baa2e74940648c1170",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%B8%83%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E5%85%AD%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2011-shoho-q49-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

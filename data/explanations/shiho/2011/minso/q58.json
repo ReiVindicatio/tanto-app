@@ -1,0 +1,226 @@
+{
+ "question_id": "shiho-2011-minso-q58",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minso-q58-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。独立当事者参加をした者は、当事者の双方又は一方を相手方として、独立の当事者として参加するのであり、原告又は被告の共同訴訟人となるのではない。",
+   "body": "民事訴訟法47条1項は、第三者が「その訴訟の当事者の双方又は一方を相手方として、当事者としてその訴訟に参加することができる。」と定める。参加人は既存の当事者を相手方として自らの請求を立てる独立の当事者であり、原告側・被告側のいずれかに加わる共同訴訟人ではない。共同訴訟人として加わる形の参加は共同訴訟参加（52条）であり、独立当事者参加とは別の制度である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "47",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その訴訟の当事者の双方又は一方を相手方として、当事者としてその訴訟に参加することができる。",
+     "text_sha256": "eabfcfd2afc146ac9b32a0de3c3390a3c5eb44d5e313f0c34165494a7daadc48",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "52",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共同訴訟人としてその訴訟に参加することができる",
+     "text_sha256": "442a39ec427e156103fbf5d5cd9ba480a1c62d67ff0029a3dd9df4758bc45ac4",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [],
+   "id": "exp-shiho-2011-minso-q58-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minso-q58-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。独立当事者参加は係属中の「その訴訟に参加する」ものであり、参加人の請求は本訴の係属する裁判所で審理されるので、別訴として提起した場合にその裁判所に管轄があることは求められていない。",
+   "body": "民事訴訟法47条1項は、第三者が「当事者としてその訴訟に参加することができる。」と定め、参加人の請求は本訴と一つの手続で審理される。参加人の請求について、別訴を提起したならばその裁判所に管轄があるかどうかを問う規定はなく、本訴の係属する裁判所に申し出ればよいと解されている（専属管轄の定めがある場合などは別に問題となる）。肢のように、別訴を提起したときに管轄がある請求に限るとするのは誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "47",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者としてその訴訟に参加することができる。",
+     "text_sha256": "eabfcfd2afc146ac9b32a0de3c3390a3c5eb44d5e313f0c34165494a7daadc48",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（参加人の請求について本訴の裁判所の管轄が生じるとする理解。管轄の根拠条文の本文は確認していない）"
+   ],
+   "id": "exp-shiho-2011-minso-q58-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minso-q58-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。補助参加についての異議と許否の決定（44条）は、独立当事者参加には準用されていない（47条4項が準用するのは40条1項〜3項と43条だけ）。",
+   "body": "民事訴訟法44条1項は「当事者が補助参加について異議を述べたときは、裁判所は、補助参加の許否について、決定で、裁判をする。」と定めるが、これは補助参加についての規定である。独立当事者参加について47条4項は「第四十条第一項から第三項までの規定は第一項の訴訟の当事者及び同項の規定によりその訴訟に参加した者について、第四十三条の規定は同項の規定による参加の申出について準用する。」と定め、44条を準用していない。独立当事者参加は参加人が自らの請求を立てる訴えの性質を持つので、その適否は決定ではなく判決で判断されると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "44",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が補助参加について異議を述べたときは、裁判所は、補助参加の許否について、決定で、裁判をする。",
+     "text_sha256": "e7f80622d0ea628b00229af0c614e72e865f2f7b175eeb3927309af4fe6c4c65",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "47",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "第四十条第一項から第三項までの規定は第一項の訴訟の当事者及び同項の規定によりその訴訟に参加した者について、第四十三条の規定は同項の規定による参加の申出について準用する。",
+     "text_sha256": "eabfcfd2afc146ac9b32a0de3c3390a3c5eb44d5e313f0c34165494a7daadc48",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（参加の適否は判決で判断されるとする理解）"
+   ],
+   "id": "exp-shiho-2011-minso-q58-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minso-q58-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。独立当事者参加の申出を第一審の口頭弁論の終結までに限る規定はなく、控訴審でも申出ができると解されている。",
+   "body": "民事訴訟法47条は、参加の申出の時期を第一審の口頭弁論の終結の時までに限っていない。47条4項が準用する43条1項は、申出を「補助参加により訴訟行為をすべき裁判所にしなければならない。」と定めており、訴訟が係属している裁判所に申し出ることになる。独立当事者参加は訴訟が係属している限り控訴審でもすることができると解されている（事実審でない上告審ではできないと解されている）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "43",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "補助参加により訴訟行為をすべき裁判所にしなければならない。",
+     "text_sha256": "68b3a655c5b4338224b80accb8ae8481da0b870de005a8f96ff757eb50b8441e",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "47",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "第四十三条の規定は同項の規定による参加の申出について準用する。",
+     "text_sha256": "eabfcfd2afc146ac9b32a0de3c3390a3c5eb44d5e313f0c34165494a7daadc48",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（控訴審での参加を認め、上告審での参加は認めないとする理解）"
+   ],
+   "id": "exp-shiho-2011-minso-q58-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minso-q58-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。独立当事者参加の申出は参加人の請求を立てる訴えであって「攻撃又は防御の方法」ではないから、157条による却下の対象にならない。",
+   "body": "民事訴訟法157条1項が却下の対象とするのは、当事者が「時機に後れて提出した攻撃又は防御の方法」である。独立当事者参加では、参加人は当該訴訟で裁判を受けるべき請求を提出しなければならないとされており（最判昭和45年1月22日）、その申出は新たな請求を立てる訴えの性質を持つ。したがって、参加の申出そのものは攻撃防御方法にあたらず、時機に後れた攻撃防御方法として却下されることはないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "157",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時機に後れて提出した攻撃又は防御の方法",
+     "text_sha256": "86734f9acb55f35bb28d1d94f7e0c95b01f49fb26483dfe95e818b2e0afaab28",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "独立当事者参加には参加人の請求の提出が必要とした判例",
+     "court": "最高裁判所第一小法廷",
+     "date": "1970-01-22",
+     "case_number": "昭和42(オ)867",
+     "holding": "独立当事者参加の申出は、参加人が当該訴訟において裁判を受けるべき請求を提出しなければならず、単に当事者一方の請求に対して訴却下または請求棄却の判決を求めるのみの参加の申出は許されない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54100/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による（参加の申出は攻撃防御方法にあたらず157条の対象外とする理解。判例は参加に請求の提出が必要とした点を示すもので、157条の適用を直接判断したものではない）"
+   ],
+   "id": "exp-shiho-2011-minso-q58-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
