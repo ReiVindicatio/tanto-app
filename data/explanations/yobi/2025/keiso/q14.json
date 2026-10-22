@@ -1,0 +1,168 @@
+{
+ "question_id": "yobi-2025-keiso-q14",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   5
+  ],
+  "conclusion": "正解は5（4個）。ア・イ・ウ・エは241条・231条・245条・229条の文言どおりで正しく、死体の切開（解剖）は鑑定処分許可状など裁判官の許可を要する処分であり検視としてはできないから、オだけが誤りである。",
+  "body": "ア：241条1項は「告訴又は告発は、書面又は口頭で検察官又は司法警察員にこれをしなければならない。」と定めており、記述どおりで正しい。イ：231条1項は「被害者の法定代理人は、独立して告訴をすることができる。」と定めており、正しい。ウ：241条2項は「検察官又は司法警察員は、口頭による告訴又は告発を受けたときは調書を作らなければならない。」と定め、245条が「第二百四十一条及び第二百四十二条の規定は、自首についてこれを準用する。」としているので、口頭による自首を受けた司法警察員は調書を作らなければならず、正しい。エ：229条1項は、変死者又は変死の疑いのある死体があるときは検察官が「検視をしなければならない。」とし、同条2項は「検察官は、検察事務官又は司法警察員に前項の処分をさせることができる。」としており、正しい。オ：死体の解剖は、168条1項で鑑定人が「裁判所の許可を受けて」行う処分として挙げられ（「死体を解剖し」）、捜査段階では225条1項により鑑定の嘱託を受けた者が「裁判官の許可を受けて」行うものとされている（検証としての死体の解剖も129条・218条1項により「裁判官の発する令状により」行う）。検視は死体の外表から状況を調べる処分にとどまり、令状なく死体を切開して胃の内容物を採取することはできないと解されているから、オは誤りである。以上から正しいものはア〜エの4個で、公式の正解5と一致する。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "241",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "告訴又は告発は、書面又は口頭で検察官又は司法警察員にこれをしなければならない。",
+    "text_sha256": "16a893204783f9458d8450425ba3177620c92d7d3ef9c4a50be36a37b4d14cd0",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "241",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "検察官又は司法警察員は、口頭による告訴又は告発を受けたときは調書を作らなければならない。",
+    "text_sha256": "16a893204783f9458d8450425ba3177620c92d7d3ef9c4a50be36a37b4d14cd0",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "231",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "被害者の法定代理人は、独立して告訴をすることができる。",
+    "text_sha256": "58fdd2cc7a9100caed6b3bf6bbbbe35bd19fda0e1c1fcd0427a4d63c40db1493",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "245",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "第二百四十一条及び第二百四十二条の規定は、自首についてこれを準用する。",
+    "text_sha256": "8c92982c1565d17dc90e8aed976c132605b43fce01c62ec5865521c67a5920dc",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "229",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "検視をしなければならない。",
+    "text_sha256": "9bff1f80ec36903236d511b3e123b498a2d8d2aee3e3c44f0097f0be6255a5d6",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "229",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "検察官は、検察事務官又は司法警察員に前項の処分をさせることができる。",
+    "text_sha256": "9bff1f80ec36903236d511b3e123b498a2d8d2aee3e3c44f0097f0be6255a5d6",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "168",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "裁判所の許可を受けて",
+    "text_sha256": "8a15f71519c828cbaf2c187d69bc509a25240d37e3af85d9df2867d0174a4be2",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "168",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "死体を解剖し",
+    "text_sha256": "8a15f71519c828cbaf2c187d69bc509a25240d37e3af85d9df2867d0174a4be2",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "225",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "裁判官の許可を受けて",
+    "text_sha256": "3e475a76c4f7ceab639093189a4f3d84dfa97472e72115e62842dd91bc8bef8a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "129",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "検証については、身体の検査、死体の解剖、墳墓の発掘、物の破壊その他必要な処分をすることができる。",
+    "text_sha256": "9ceb388726f661d218d5377dd08aa1c6fb77092209dc1c1cce21df2a1d542b75",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "218",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "裁判官の発する令状により",
+    "text_sha256": "954073f263edaa60047b785f6d0ee41b4ebde20c340041083ed979aa3578ed9f",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "解釈による：検視が死体の外表の検査にとどまり、令状なく死体を切開することはできないという点は条文に明示がなく、168条・225条・129条・218条の構造からの一般的な理解による。"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}

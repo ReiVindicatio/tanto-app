@@ -1,0 +1,157 @@
+{
+ "question_id": "yobi-2025-keiso-q24",
+ "prompt_version": "explain-v3",
+ "generated_at": "2026-10-22",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [],
+ "question_explanation": {
+  "prompt_version": "explain-question-v1",
+  "generated_at": "2026-10-22",
+  "generated_by": {
+   "model": "claude-opus-5-5",
+   "via": "Claude Code セッション（サブエージェント）"
+  },
+  "version": 1,
+  "stated_answer": [
+   5
+  ],
+  "conclusion": "正解は5（ウ・オ）。弁解の機会を与えるのは203条1項の司法警察員（司法巡査は202条で引致するだけ）であり、第1回公判期日前の証人尋問を請求できるのは226条・227条1項の検察官だけなので、ウとオは適法となる余地がない。",
+  "body": "ア：215条1項は「司法巡査は、現行犯人を受け取つたときは、速やかにこれを司法警察員に引致しなければならない。」と定めており、私人から現行犯人を受け取った司法巡査が司法警察員に引致するのは法の定めどおりで、適法となる余地がある。イ：210条1項は緊急逮捕の主体を「検察官、検察事務官又は司法警察職員」とし、「この場合には、直ちに裁判官の逮捕状を求める手続をしなければならない。」としているから、緊急逮捕をした検察事務官が逮捕状を請求することは条文上排除されておらず、適法となる余地がある（通常逮捕の逮捕状の請求者を「検察官又は司法警察員」に限る199条2項とは異なる）。ウ：202条は司法巡査が逮捕状により被疑者を逮捕したときは「司法巡査はこれを司法警察員に引致しなければならない。」とし、犯罪事実の要旨を告げて「弁解の機会を与え」るのは203条1項の「司法警察員」である。司法巡査が自ら弁解録取手続を行う規定はなく、適法となる余地がない。エ：218条は捜索差押えの令状について「検察官、検察事務官又は司法警察員の請求により、これを発する。」と定めており、検察事務官は請求できるので、適法となる余地がある。オ：226条・227条1項の第1回公判期日前の証人尋問は、いずれも「第一回の公判期日前に限り、検察官は、裁判官にその者の証人尋問を請求することができる。」とされ、請求者は検察官に限られる。司法警察員が請求する余地はない。したがって、適法となる余地のないものはウとオで、正解は5となる。",
+  "citations": [
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "215",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "司法巡査は、現行犯人を受け取つたときは、速やかにこれを司法警察員に引致しなければならない。",
+    "text_sha256": "75d7851e263b6ad7cb3c5b818b5359921697c8bcdea1ef7efd7e05a5d6aa6047",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "210",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "検察官、検察事務官又は司法警察職員",
+    "text_sha256": "a16b14ff8b4bc7cccbc8fe9f8d83d7024c9488b266bc7fa97583c253f80d917a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "210",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "この場合には、直ちに裁判官の逮捕状を求める手続をしなければならない。",
+    "text_sha256": "a16b14ff8b4bc7cccbc8fe9f8d83d7024c9488b266bc7fa97583c253f80d917a",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "199",
+    "paragraphs": [
+     "2"
+    ],
+    "quote": "検察官又は司法警察員",
+    "text_sha256": "cd5909a122ba9914e9296d9a1df3c86f2382ea6f58616fdbc3d44bf442649c5b",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "202",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "司法巡査はこれを司法警察員に引致しなければならない。",
+    "text_sha256": "3b120242ec575c877708668c866796656b10192ec902bda1df2d4b37518b89d2",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "203",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "弁解の機会を与え",
+    "text_sha256": "af632c87454e65020fa5668fdabda782e75580c7d48705b9653d130b29ca1984",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "203",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "司法警察員",
+    "text_sha256": "af632c87454e65020fa5668fdabda782e75580c7d48705b9653d130b29ca1984",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "218",
+    "paragraphs": [
+     "5"
+    ],
+    "quote": "検察官、検察事務官又は司法警察員の請求により、これを発する。",
+    "text_sha256": "954073f263edaa60047b785f6d0ee41b4ebde20c340041083ed979aa3578ed9f",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "226",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "第一回の公判期日前に限り、検察官は、裁判官にその者の証人尋問を請求することができる。",
+    "text_sha256": "387f4b8e69ad658befb998994932a4405ef05286704bc76c5e05e9291ee2445f",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   },
+   {
+    "type": "statute",
+    "law": "刑事訴訟法",
+    "article": "227",
+    "paragraphs": [
+     "1"
+    ],
+    "quote": "第一回の公判期日前に限り、検察官は、裁判官にその者の証人尋問を請求することができる。",
+    "text_sha256": "44fab26769b134bc6b45e42b3787cacff0346c8cd5dbeb436f538fea28a1d808",
+    "fetched_at": "2026-10-18",
+    "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B8%89%E5%8D%81%E4%B8%80%E5%8F%B7"
+   }
+  ],
+  "cases": [],
+  "pending_cases": [],
+  "notes": [
+   "218条の令状の請求者の定めは、取得日時点の現行法では第5項にある（電磁的記録提供命令に関する項が加わったため）。出題当時の項番号は条文の本文で確認していない（改正前の内容は条文の本文で確認していない）",
+   "イで緊急逮捕をした検察事務官が逮捕状を請求できるとする点は、210条1項の文言（主体に検察事務官を含み、請求者を限定していない）による。解釈による"
+  ],
+  "status": "published",
+  "check": {
+   "passed": true,
+   "failures": []
+  }
+ }
+}
