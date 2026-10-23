@@ -25,7 +25,11 @@
     <title>たんたん｜予備・司法 短答の一問一答（非公式）</title>
   </head>
   <body>
-    <div id="root"></div>
+    <!-- 検索エンジン向け：アプリが立ち上がると中身ごと置き換わる。JavaScript を動かす前の HTML から問ごとのページをたどれるように -->
+    <div id="root">
+      <p>たんたん：予備試験・司法試験の短答式過去問を一問一答で解く非公式の無料アプリ。</p>
+      <p><a href="/q/">過去問の一覧（問題文・正解・解説）</a></p>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
     <!-- 閲覧状況の集計（Cloudflare Web Analytics。Cookie を使わない。T046）。手元の開発・E2E では送らない -->
     <script>if(location.hostname==="tantan.reivindicatio0321.workers.dev"){var s=document.createElement("script");s.type="module";s.src="https://static.cloudflareinsights.com/beacon.min.js";s.setAttribute("data-cf-beacon",'{"token": "614c933eedb240309d4d28f5d262cd94"}');document.head.appendChild(s);}</script>
