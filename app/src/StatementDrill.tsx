@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { DataSet, Explanation, Statement } from "./types";
 import QuestionBody, { Context } from "./QuestionBody";
 import ExplanationView from "./ExplanationView";
@@ -10,6 +10,7 @@ import { recordAnswer } from "./learning";
 import { Progress } from "./screens/common";
 import { StatementResult, type StatementResultItem } from "./ResultView";
 import type { OriginOf } from "./play";
+import { prefersReducedMotion, swipeThreshold, useSwipe, type SwipeDir } from "./swipe";
 
 const BASIS_NOTE: Record<string, string> = {
   convention: "この肢の○×は、出題形式の慣行（正解の組合せ＝該当する肢の全部）から導いたものです。",
@@ -37,15 +38,51 @@ export default function StatementDrill({
   const [startedAt, setStartedAt] = useState(() => Date.now());
   const [finishedAt, setFinishedAt] = useState<number | null>(null);
   const [showQuestion, setShowQuestion] = useState(false);
+  /** 答え合わせの後にはじいたカードが飛んでいく向き（飛び終わったら次の肢へ） */
+  const [leaving, setLeaving] = useState<SwipeDir | null>(null);
 
   const qById = useMemo(() => new Map(data.questions.map((q) => [q.id, q])), [data]);
   const sById = useMemo(() => new Map(data.statements.map((s) => [s.id, s])), [data]);
   const expById = useMemo(() => new Map(data.explanations.map((e) => [e.statement_id, e])), [data]);
 
+  // はじく・キーボードの操作から呼ぶ。中身は描画のたびに下で差し替える（フックを早期の return より前に置くため）
+  const actions = useRef<{ choose: (v: boolean) => void; advance: (dir: SwipeDir) => void } | null>(null);
+  const playing = i < order.length && leaving === null;
+  const swipe = useSwipe((dir) => {
+    if (answer === null) actions.current?.choose(dir === "right");
+    else actions.current?.advance(dir);
+  }, playing);
+
+  // PC はキーボードだけで解き続けられる：→／O で○、←／X で×、答え合わせの後は → ← Enter で次へ
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (!playing || e.metaKey || e.ctrlKey || e.altKey || e.isComposing) return;
+      const t = e.target as HTMLElement | null;
+      if (t?.closest?.("input, textarea, select, [contenteditable]")) return;
+      const a = actions.current;
+      if (!a) return;
+      if (answer === null) {
+        if (e.key === "ArrowRight" || e.key === "o" || e.key === "O") a.choose(true);
+        else if (e.key === "ArrowLeft" || e.key === "x" || e.key === "X") a.choose(false);
+        else return;
+      } else {
+        if (e.key === "ArrowRight") a.advance("right");
+        else if (e.key === "ArrowLeft") a.advance("left");
+        // ボタンやリンクの上の Enter は、そのボタンの操作に任せる
+        else if (e.key === "Enter" && !t?.closest?.("button, a, summary")) a.advance("left");
+        else return;
+      }
+      e.preventDefault();
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [playing, answer]);
+
   function restart(next: Statement[], shuffled: boolean) {
     setOrder(shuffled ? shuffle(next) : next);
     setI(0);
     setAnswer(null);
+    setLeaving(null);
     setResults([]);
     setStartedAt(Date.now());
     setFinishedAt(null);
@@ -100,8 +137,31 @@ export default function StatementDrill({
     if (i + 1 >= order.length) setFinishedAt(Date.now());
     setI(i + 1);
     setAnswer(null);
+    setLeaving(null);
     setShowQuestion(false);
+    window.scrollTo(0, 0);
   }
+
+  /** 答え合わせの後にはじいたら、カードを飛ばしてから次の肢へ */
+  function advance(dir: SwipeDir) {
+    if (prefersReducedMotion()) return next();
+    setLeaving(dir);
+    window.setTimeout(next, 180);
+  }
+
+  actions.current = { choose, advance };
+
+  // 続けて正解した数（まちがえたら0に戻る）。3から出す
+  let streak = 0;
+  for (let k = results.length - 1; k >= 0 && results[k].correct; k--) streak++;
+
+  const threshold = swipeThreshold(typeof window === "undefined" ? 360 : window.innerWidth);
+  const lean = Math.max(-1, Math.min(1, swipe.dx / threshold));
+  const cardStyle = leaving
+    ? { transform: `translateX(${leaving === "right" ? 110 : -110}vw)`, transition: "transform 0.18s ease-in", opacity: 0.6 }
+    : swipe.dx !== 0
+      ? { transform: `translateX(${swipe.dx}px) rotate(${answer === null ? swipe.dx / 30 : 0}deg)`, transition: swipe.dragging ? "none" : undefined }
+      : undefined;
 
   return (
     <section>
@@ -122,31 +182,46 @@ export default function StatementDrill({
         <Progress value={(i + (answer === null ? 0 : 1)) / order.length} />
       </div>
 
-      <div className="muted small">
-        {o.examName} {o.subjectName} {q.exam.era}（{q.exam.year}） 第{q.number}問
-      </div>
-      <p className="stem small muted">{q.stem}</p>
-      {s.requires_context && <Context q={q} />}
-      {s.sub !== undefined && (
-        <p className="stem small">
-          {q.sub_questions[s.sub].marker} {q.sub_questions[s.sub].stem}
-        </p>
-      )}
-      <p className="statement">{s.text}</p>
-
-      {answer === null ? (
-        <div className="actionbar">
-          <button className="mark" onClick={() => choose(true)}>
-            ○
-          </button>
-          <button className="mark" onClick={() => choose(false)}>
-            ×
-          </button>
+      <div
+        key={s.id}
+        className={`swipe-card${swipe.dragging ? " dragging" : ""}`}
+        style={cardStyle}
+        {...swipe.handlers}
+      >
+        {swipe.dragging && (
+          <div
+            className={`swipe-stamp ${answer !== null ? "next" : lean > 0 ? "maru" : "batsu"}`}
+            style={{ opacity: Math.abs(lean) }}
+            aria-hidden="true"
+          >
+            {answer !== null ? "次へ" : lean > 0 ? "○" : "×"}
+          </div>
+        )}
+        <div className="muted small">
+          {o.examName} {o.subjectName} {q.exam.era}（{q.exam.year}） 第{q.number}問
         </div>
-      ) : (
-        <>
+        <p className="stem small muted">{q.stem}</p>
+        {s.requires_context && <Context q={q} />}
+        {s.sub !== undefined && (
+          <p className="stem small">
+            {q.sub_questions[s.sub].marker} {q.sub_questions[s.sub].stem}
+          </p>
+        )}
+        <p className="statement">{s.text}</p>
+
+        {answer === null && i === 0 && (
+          <p className="swipe-hint muted small">
+            <span className="hint-touch">右にはじくと○・左にはじくと×</span>
+            <span className="hint-keys">キーボード：→ か O で○、← か X で×（答えの後は Enter で次へ）</span>
+          </p>
+        )}
+
+        {answer !== null && (
           <div className={`result ${answer === truth ? "ok" : "ng"}`}>
-            <div className="big">{answer === truth ? "正解" : "不正解"}</div>
+            <div className="big">
+              {answer === truth ? "正解" : "不正解"}
+              {answer === truth && streak >= 3 && <span className="combo">{streak}連続正解</span>}
+            </div>
             <div>
               この記述は <strong>{truth ? "○（正しい）" : "×（誤り）"}</strong>
               <span className="muted small">　出題時点の公式の解答による</span>
@@ -185,10 +260,24 @@ export default function StatementDrill({
               />
             )}
           </div>
-          <div className="actionbar">
-            <button onClick={next}>次へ</button>
-          </div>
-        </>
+        )}
+      </div>
+
+      {answer === null ? (
+        <div className="actionbar">
+          <button className="mark" onClick={() => choose(false)}>
+            ×
+          </button>
+          <button className="mark" onClick={() => choose(true)}>
+            ○
+          </button>
+        </div>
+      ) : (
+        <div className="actionbar">
+          <button onClick={next} disabled={leaving !== null}>
+            次へ
+          </button>
+        </div>
       )}
     </section>
   );
