@@ -27,7 +27,7 @@ test("記述を説明した選択肢から選ぶ問（民訴 H23 問38）を採�
   await expect(page.locator(".slot").first().locator("button.opt")).toHaveCount(target.choices.length);
   await page.locator(".slot").first().locator("button.opt", { hasText: String(target.answer_slots[0].official_answer) }).click();
   await page.getByRole("button", { name: "採点する" }).click();
-  await expect(page.locator(".result .big")).toHaveText(`${target.points} / ${target.points} 点`);
+  await expect(page.locator(".page .result .big")).toHaveText(`${target.points} / ${target.points} 点`);
 });
 
 test("7科目とも科目に出る（T009・T033・T010：各16年度）", async ({ page }) => {
@@ -50,7 +50,7 @@ test("刑訴 R02 を問で解く：肢のない問（人数・発言者の組合
       await page.locator(".slot").nth(k).locator("button.opt", { hasText: new RegExp(`^${q.answer_slots[k].official_answer}`) }).click();
     }
     await page.getByRole("button", { name: "採点する" }).click();
-    await expect(page.locator(".result .big")).toHaveText(`${q.points} / ${q.points} 点`);
+    await expect(page.locator(".page .result .big")).toHaveText(`${q.points} / ${q.points} 点`);
     await page.getByRole("button", { name: "次へ" }).click();
   }
   await expect(page.getByText("30 / 30 点")).toBeVisible();
@@ -77,7 +77,7 @@ test("区分を選ぶ形式（刑法 H24 問4）：区分の一覧が出て、�
     await page.locator(".slot").nth(k).locator("button.opt", { hasText: String(target.answer_slots[k].official_answer) }).click();
   }
   await page.getByRole("button", { name: "採点する" }).click();
-  await expect(page.locator(".result .big")).toHaveText(`${target.points} / ${target.points} 点`);
+  await expect(page.locator(".page .result .big")).toHaveText(`${target.points} / ${target.points} 点`);
   await expect(page.locator(".law-note")).toContainText("拘禁刑の導入");
 });
 
@@ -101,7 +101,7 @@ test("○×の組合せの問（行政法 H29）：肢カードになり、問�
       await page.locator(".slot").nth(k).locator("button.opt", { hasText: new RegExp(`^${q.answer_slots[k].official_answer}`) }).click();
     }
     await page.getByRole("button", { name: "採点する" }).click();
-    await expect(page.locator(".result .big")).toHaveText(`${q.points} / ${q.points} 点`);
+    await expect(page.locator(".page .result .big")).toHaveText(`${q.points} / ${q.points} 点`);
     await page.getByRole("button", { name: "次へ" }).click();
   }
   await expect(page.getByText(`${total} / ${total} 点`)).toBeVisible();

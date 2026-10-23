@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { swipeDecision, swipeThreshold } from "./swipe";
+import { lockAxis, swipeDecision, swipeThreshold } from "./swipe";
 
 describe("はじく操作の判定（T051）", () => {
   it("はじいたとみなす距離は画面の幅の4分の1、狭い画面でも 80px", () => {
@@ -21,8 +21,16 @@ describe("はじく操作の判定（T051）", () => {
     expect(swipeDecision(30, 0, 10, 400)).toBeNull();
   });
 
-  it("斜めに大きく動いたもの（縦の動きが大きい）は確定しない", () => {
-    expect(swipeDecision(120, 100, 300, 400)).toBeNull();
+  it("縦の動きのほうが大きいものは確定しない", () => {
+    expect(swipeDecision(100, 120, 300, 400)).toBeNull();
+    expect(swipeDecision(120, 100, 300, 400)).toBe("right");
+  });
+
+  it("動き始めの向きで横か縦かを決める。少し斜めなら横に寄せる", () => {
+    expect(lockAxis(3, 4)).toBeNull();
+    expect(lockAxis(10, 2)).toBe("x");
+    expect(lockAxis(9, 10)).toBe("x");
+    expect(lockAxis(4, 12)).toBe("y");
   });
 
   it("途中で戻して離したら確定しない（迷ったら元の位置へ）", () => {

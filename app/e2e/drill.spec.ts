@@ -10,9 +10,9 @@ test("肢で解く：データの○×どおりに答えると全問正解（民
   await openYear(page, "民法", "R08", "肢で解く");
   const n = truth.size;
   for (let k = 0; k < n; k++) {
-    const text = await page.locator(".statement").innerText();
+    const text = await page.locator(".page .statement").innerText();
     await page.getByRole("button", { name: truth.get(text) ? "○" : "×", exact: true }).click();
-    await expect(page.locator(".result")).toBeVisible();
+    await expect(page.locator(".page .result")).toBeVisible();
     if (k === 0) {
       await expect(page.locator(".ai-badge")).toHaveText("AI が生成した解説"); // 解説と AI 生成の表示
     }
@@ -35,7 +35,7 @@ test("問で解く：誤答・順不同の逆順・部分点の採点（刑法 R
       await page.locator(".slot").nth(k).locator("button.opt", { hasText: new RegExp(`^${picks[k]}`) }).click();
     }
     await page.getByRole("button", { name: "採点する" }).click();
-    scores.push(await page.locator(".result .big").innerText());
+    scores.push(await page.locator(".page .result .big").innerText());
     await page.getByRole("button", { name: "次へ" }).click();
   }
   expect(scores[0]).toBe("0 / 2 点");
@@ -58,6 +58,6 @@ test("小問つきの問（民法 H26 問5）：小問ごとに選んで採点�
   await page.locator(".slot").nth(0).locator("button.opt", { hasText: "2" }).click();
   await page.locator(".slot").nth(1).locator("button.opt", { hasText: "3" }).click();
   await page.getByRole("button", { name: "採点する" }).click();
-  await expect(page.locator(".result .big")).toHaveText("2 / 2 点");
+  await expect(page.locator(".page .result .big")).toHaveText("2 / 2 点");
   await expect(page.locator(".law-note")).toContainText("債権関係"); // 改正前の注意
 });

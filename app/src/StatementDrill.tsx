@@ -10,7 +10,7 @@ import { recordAnswer } from "./learning";
 import { Progress } from "./screens/common";
 import { StatementResult, type StatementResultItem } from "./ResultView";
 import type { OriginOf } from "./play";
-import { prefersReducedMotion, swipeThreshold, useSwipe, type SwipeDir } from "./swipe";
+import { flyAway, swipeThreshold, useSwipe, type SwipeDir } from "./swipe";
 
 const BASIS_NOTE: Record<string, string> = {
   convention: "この肢の○×は、出題形式の慣行（正解の組合せ＝該当する肢の全部）から導いたものです。",
@@ -38,19 +38,17 @@ export default function StatementDrill({
   const [startedAt, setStartedAt] = useState(() => Date.now());
   const [finishedAt, setFinishedAt] = useState<number | null>(null);
   const [showQuestion, setShowQuestion] = useState(false);
-  /** 答え合わせの後にはじいたカードが飛んでいく向き（飛び終わったら次の肢へ） */
-  const [leaving, setLeaving] = useState<SwipeDir | null>(null);
 
   const qById = useMemo(() => new Map(data.questions.map((q) => [q.id, q])), [data]);
   const sById = useMemo(() => new Map(data.statements.map((s) => [s.id, s])), [data]);
   const expById = useMemo(() => new Map(data.explanations.map((e) => [e.statement_id, e])), [data]);
 
   // はじく・キーボードの操作から呼ぶ。中身は描画のたびに下で差し替える（フックを早期の return より前に置くため）
-  const actions = useRef<{ choose: (v: boolean) => void; advance: (dir: SwipeDir) => void } | null>(null);
-  const playing = i < order.length && leaving === null;
-  const swipe = useSwipe((dir) => {
-    if (answer === null) actions.current?.choose(dir === "right");
-    else actions.current?.advance(dir);
+  const actions = useRef<{ choose: (v: boolean, dx?: number) => void; advance: (dir: SwipeDir, dx?: number) => void } | null>(null);
+  const playing = i < order.length;
+  const swipe = useSwipe<HTMLDivElement>((dir, dx) => {
+    if (answer === null) actions.current?.choose(dir === "right", dx);
+    else actions.current?.advance(dir, dx);
   }, playing);
 
   // PC はキーボードだけで解き続けられる：→／O で○、←／X で×、答え合わせの後は → ← Enter で次へ
@@ -82,7 +80,6 @@ export default function StatementDrill({
     setOrder(shuffled ? shuffle(next) : next);
     setI(0);
     setAnswer(null);
-    setLeaving(null);
     setResults([]);
     setStartedAt(Date.now());
     setFinishedAt(null);
@@ -126,8 +123,10 @@ export default function StatementDrill({
   const truth = s.truth_at_exam!.value;
   const o = origin(q);
 
-  function choose(v: boolean) {
+  /** 答える：カードを答えの向き（○は右・×は左）に飛ばし、後ろから答え合わせのカードを出す */
+  function choose(v: boolean, dx = 0) {
     if (answer !== null) return;
+    if (swipe.el) flyAway(swipe.el, v ? "right" : "left", dx, v ? { text: "○", className: "maru" } : { text: "×", className: "batsu" });
     setAnswer(v);
     recordAnswer(s.id, v === truth);
     setResults((r) => [...r, { statement: s, question: q, correct: v === truth }]);
@@ -137,16 +136,14 @@ export default function StatementDrill({
     if (i + 1 >= order.length) setFinishedAt(Date.now());
     setI(i + 1);
     setAnswer(null);
-    setLeaving(null);
     setShowQuestion(false);
     window.scrollTo(0, 0);
   }
 
-  /** 答え合わせの後にはじいたら、カードを飛ばしてから次の肢へ */
-  function advance(dir: SwipeDir) {
-    if (prefersReducedMotion()) return next();
-    setLeaving(dir);
-    window.setTimeout(next, 180);
+  /** 答え合わせの後にはじいたら、カードを飛ばして次の肢へ */
+  function advance(dir: SwipeDir, dx = 0) {
+    if (swipe.el) flyAway(swipe.el, dir, dx);
+    next();
   }
 
   actions.current = { choose, advance };
@@ -157,9 +154,8 @@ export default function StatementDrill({
 
   const threshold = swipeThreshold(typeof window === "undefined" ? 360 : window.innerWidth);
   const lean = Math.max(-1, Math.min(1, swipe.dx / threshold));
-  const cardStyle = leaving
-    ? { transform: `translateX(${leaving === "right" ? 110 : -110}vw)`, transition: "transform 0.18s ease-in", opacity: 0.6 }
-    : swipe.dx !== 0
+  const cardStyle =
+    swipe.dx !== 0
       ? { transform: `translateX(${swipe.dx}px) rotate(${answer === null ? swipe.dx / 30 : 0}deg)`, transition: swipe.dragging ? "none" : undefined }
       : undefined;
 
@@ -183,10 +179,11 @@ export default function StatementDrill({
       </div>
 
       <div
-        key={s.id}
+        // 答えたらカードを作り直し、後ろから浮かび上がるように出す
+        key={`${s.id}:${answer === null ? "q" : "a"}`}
+        ref={swipe.ref}
         className={`swipe-card${swipe.dragging ? " dragging" : ""}`}
         style={cardStyle}
-        {...swipe.handlers}
       >
         {swipe.dragging && (
           <div
@@ -274,7 +271,7 @@ export default function StatementDrill({
         </div>
       ) : (
         <div className="actionbar">
-          <button onClick={next} disabled={leaving !== null}>
+          <button onClick={next}>
             次へ
           </button>
         </div>

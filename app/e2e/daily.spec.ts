@@ -31,7 +31,7 @@ test("結果画面：正答率・科目ごと・まちがえた肢の一覧が�
     for (const s of d.statements) if (s.truth_at_exam) truths.set(s.text, s.truth_at_exam.value);
   }
   for (let k = 0; k < 10; k++) {
-    const text = await page.locator(".statement").innerText();
+    const text = await page.locator(".page .statement").innerText();
     if (truths.get(text) === false) wrong++;
     await page.getByRole("button", { name: "○", exact: true }).click();
     await page.getByRole("button", { name: "次へ" }).click();

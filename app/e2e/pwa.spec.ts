@@ -15,7 +15,7 @@ test("一度開いた年度は、通信を切って再読み込みしても解�
   await expect(page.locator(".hero-breakdown")).not.toContainText("読み込み中");
   await openYear(page, "刑事訴訟法", "R05", "肢で解く");
   await page.getByRole("button", { name: "○", exact: true }).click();
-  await expect(page.locator(".result")).toBeVisible();
+  await expect(page.locator(".page .result")).toBeVisible();
   await context.setOffline(false);
 });
 

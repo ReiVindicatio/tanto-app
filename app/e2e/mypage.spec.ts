@@ -16,7 +16,7 @@ test("マイページ：学習の軌跡・科目ごと・まちがえた肢を�
   // 民法 R08 を3枚：1枚目と2枚目はわざとまちがえ、3枚目は正しく答える
   await openYear(page, "民法", "R08", "肢で解く");
   for (let k = 0; k < 3; k++) {
-    const t = truth.get(await page.locator(".statement").innerText())!;
+    const t = truth.get(await page.locator(".page .statement").innerText())!;
     await page.getByRole("button", { name: (k < 2 ? !t : t) ? "○" : "×", exact: true }).click();
     await page.getByRole("button", { name: "次へ" }).click();
   }
