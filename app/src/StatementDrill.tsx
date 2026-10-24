@@ -16,8 +16,27 @@ import type { OriginOf } from "./play";
 import { flyAway, swipeThreshold, useSwipe, type SwipeDir } from "./swipe";
 
 const BASIS_NOTE: Record<string, string> = {
-  convention: "この肢の○×は、出題形式の慣行（正解の組合せ＝該当する肢の全部）から導いたものです。",
+  convention: "公式の解答は組合せの番号だけです。この肢の○×は、その組合せに入っているかどうかから導いたものです。",
 };
+
+/**
+ * 問のリード文（T049）。肢カードでは○×を聞くので、「誤っているものを組み合わせたものは」のような問の指示と食い違う。
+ * 前提（「判例の立場に従って」など）が入っているので消さずに、2行までに畳んで小さく出す。押すと全文
+ */
+function Stem({ text }: { text: string }) {
+  const [open, setOpen] = useState(false);
+  const long = text.length > 50;
+  return (
+    <div className="card-stem">
+      <p className={`stem small muted${long && !open ? " clamped" : ""}`}>{text}</p>
+      {long && (
+        <button className="link small" onClick={() => setOpen(!open)}>
+          {open ? "問の文を畳む" : "問の文の全文"}
+        </button>
+      )}
+    </div>
+  );
+}
 
 /** 肢カード。cards は出題する肢（○×のあるもの）、data はその肢の問・解説を含む束 */
 export default function StatementDrill({
@@ -206,13 +225,14 @@ export default function StatementDrill({
         <div className="muted small">
           {o.examName} {o.subjectName} {q.exam.era}（{q.exam.year}） 第{q.number}問
         </div>
-        <p className="stem small muted">{q.stem}</p>
+        <Stem text={q.stem} />
         {s.requires_context && <Context q={q} />}
         {s.sub !== undefined && (
           <p className="stem small">
             {q.sub_questions[s.sub].marker} {q.sub_questions[s.sub].stem}
           </p>
         )}
+        {answer === null && <p className="ask">この記述は正しい（○）か、誤り（×）か</p>}
         <p className="statement">{s.text}</p>
 
         {answer === null && i === 0 && (

@@ -98,6 +98,8 @@ function Heatmap({ weeks }: { weeks: HeatCell[][] }) {
 /** 累計の回答数の伸び（climb chart）：最初に解いた日から今日まで（T034） */
 function ClimbChart({ points }: { points: { date: string; total: number }[] }) {
   if (points.length === 0) return null;
+  // 記録が1日だけのときは、その日の累計の高さで横に引く（1点だけだと右下がりの三角になる）
+  if (points.length === 1) points = [points[0], points[0]];
   const max = Math.max(...points.map((p) => p.total), 1);
   const n = Math.max(points.length - 1, 1);
   const xy = points.map((p, i) => [(i / n) * 100, 40 - (p.total / max) * 36] as const);

@@ -829,8 +829,16 @@ details > summary {
 .footer-links,
 .legal-links {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 4px 16px;
   margin-top: 8px !important;
+}
+
+/* リンクは語の途中で折り返さず、入らなければ次の行へ */
+.footer-links > *,
+.legal-links > * {
+  white-space: nowrap;
+  word-break: keep-all;
 }
 
 .footer-links .link,
@@ -892,6 +900,13 @@ button.danger {
   background: var(--ng);
   border-color: var(--ng);
   color: #fff;
+}
+
+/* 文字だけのボタン（「この端末の記録を消す」）は赤地にしない。button.danger のほうが強く当たるので打ち消す */
+button.link.danger {
+  background: none;
+  border: none;
+  color: var(--ng);
 }
 
 .delete-confirm p {
@@ -1271,4 +1286,31 @@ mark.twin-diff {
   color: inherit;
   border-radius: 3px;
   padding: 0 1px;
+}
+
+/* 肢カードの問のリード文は2行までに畳む（T049）。○×の聞き方は「この記述は正しい（○）か、誤り（×）か」で示す */
+.card-stem {
+  margin: 4px 0 8px;
+}
+
+.card-stem .stem {
+  margin: 0;
+}
+
+.card-stem .stem.clamped {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-stem .link {
+  padding: 2px 0;
+  color: var(--text-secondary);
+}
+
+.ask {
+  margin: 12px 0 6px;
+  font-weight: bold;
+  color: var(--text-strong);
 }
