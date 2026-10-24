@@ -5,14 +5,18 @@ import { EXAM_SHORT, cardRefsOf, loadSet, merge, uniqueCards, type CardRef } fro
 import { applyFilter, getHistory, type Filter } from "./history";
 import { shuffle } from "./shuffle";
 import { buildSession } from "./srs";
-import { buildDaily } from "./daily";
+import { buildDaily, ENDLESS_BATCH } from "./daily";
+import { cardIdOf } from "./learning";
 import { navigate } from "./router";
 
 /** 問の出典の名前（試験名・科目名）。今日の○問では科目がまざるので、問ごとに引く */
 export type OriginOf = (q: Question) => { examName: string; subjectName: string };
 
+/** エンドレス：まだ出していない肢（exclude はこのあと出す予定の肢カード）から、次のひとまとまりを選んで読む */
+export type More = (exclude: Set<string>) => Promise<{ data: DataSet; cards: Statement[] }>;
+
 export type PlaySession =
-  | { kind: "statements"; title: string; data: DataSet; cards: Statement[]; origin: OriginOf }
+  | { kind: "statements"; title: string; data: DataSet; cards: Statement[]; origin: OriginOf; more?: More }
   | { kind: "questions"; info: SetInfo; data: DataSet };
 
 let current: PlaySession | null = null;
@@ -79,6 +83,16 @@ export async function startDaily(infos: SetInfo[], size: number, title: string):
   const data = merge(await Promise.all(infos.map(loadSet)));
   const { cards } = buildDaily(poolOf(data, infos), size);
   start({ kind: "statements", title, data, cards, origin: originOf(infos) });
+}
+
+/** エンドレス：今日の○問と同じ選び方で20問ずつ選び、残りが少なくなったら次を足す。「終わる」で結果を出す */
+export async function startEndless(infos: SetInfo[], title: string): Promise<void> {
+  const next: More = (exclude) => {
+    const pool = refPool(infos).filter((c) => !exclude.has(cardIdOf(c.id)));
+    return loadChosen(infos, buildDaily(pool, ENDLESS_BATCH).cards);
+  };
+  const { data, cards } = await next(new Set());
+  start({ kind: "statements", title, data, cards, origin: originOf(infos), more: next });
 }
 
 /** 今日の復習（FSRS）。新規カードは新しい年度から順に入れる */

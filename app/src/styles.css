@@ -850,9 +850,12 @@ details > summary {
 
 .report-link {
   margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
 }
 
-.report-link .link,
 .report-done {
   color: var(--text-secondary);
 }

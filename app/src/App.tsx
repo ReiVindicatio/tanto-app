@@ -76,6 +76,7 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
               data={play.data}
               cards={play.cards}
               origin={play.origin}
+              more={play.more}
               onExit={() => back()}
             />
           )}

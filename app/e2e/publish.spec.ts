@@ -51,6 +51,8 @@ test("誤り報告：答え合わせのあとに出る。ログインしてい�
   await allYearsSet(page).getByRole("button", { name: /肢で解く/ }).click();
   await expect(page.getByRole("button", { name: "誤りを報告" })).toHaveCount(0); // 答える前は出さない
   await page.getByRole("button", { name: "○", exact: true }).click();
+  // 文字だけのリンクではなく、枠のあるボタン（ボタンと分かるように）
+  await expect(page.getByRole("button", { name: "誤りを報告" })).toHaveClass(/secondary/);
   await page.getByRole("button", { name: "誤りを報告" }).click();
   await expect(page.locator(".report-form")).toContainText("ログインすると、誤りを報告できます");
   await expect(page.locator(".report-form textarea")).toHaveCount(0);

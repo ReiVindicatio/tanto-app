@@ -4,7 +4,11 @@ import { currentState, localDate, subjectOf } from "./learning";
 import { shuffle } from "./shuffle";
 
 export type DailyKind = "due" | "wrong" | "fresh" | "again";
-export const DAILY_SIZES = [10, 20, 30, 50] as const;
+/** エンドレス（終わるまで続ける）を表す問題数 */
+export const ENDLESS = 0;
+export const DAILY_SIZES = [10, 20, 30, 50, ENDLESS] as const;
+/** エンドレスで一度に選ぶ数（残りが少なくなったら、同じ選び方で次を足す） */
+export const ENDLESS_BATCH = 20;
 export const DAILY_DEFAULT = 30;
 
 type Item = { id: string; question_id: string };

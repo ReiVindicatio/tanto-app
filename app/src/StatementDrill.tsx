@@ -12,7 +12,8 @@ import { shuffle } from "./shuffle";
 import { recordAnswer } from "./learning";
 import { Progress } from "./screens/common";
 import { StatementResult, type StatementResultItem } from "./ResultView";
-import type { OriginOf } from "./play";
+import type { More, OriginOf } from "./play";
+import { merge } from "./data";
 import { flyAway, swipeThreshold, useSwipe, type SwipeDir } from "./swipe";
 
 const BASIS_NOTE: Record<string, string> = {
@@ -44,6 +45,7 @@ export default function StatementDrill({
   data,
   cards,
   origin,
+  more,
   onExit,
 }: {
   title: string;
@@ -51,6 +53,8 @@ export default function StatementDrill({
   cards: Statement[];
   /** 問ごとの試験名・科目名（今日の○問では科目がまざる） */
   origin: OriginOf;
+  /** エンドレス：残りが少なくなったら次のひとまとまりを読む */
+  more?: More;
   onExit: () => void;
 }) {
   const [order, setOrder] = useState<Statement[]>(cards);
@@ -60,10 +64,29 @@ export default function StatementDrill({
   const [startedAt, setStartedAt] = useState(() => Date.now());
   const [finishedAt, setFinishedAt] = useState<number | null>(null);
   const [showQuestion, setShowQuestion] = useState(false);
+  /** 「終わる」を押した（答えた分だけで結果を出す） */
+  const [ended, setEnded] = useState(false);
+  // エンドレス：読み足した肢の束。解き直し（まちがえた肢だけなど）に入ったら、もう読み足さない
+  const [ds, setDs] = useState(data);
+  const [endless, setEndless] = useState(more !== undefined);
+  const [exhausted, setExhausted] = useState(false);
+  const loadingMore = useRef(false);
+  useEffect(() => {
+    if (!endless || !more || exhausted || loadingMore.current || ended || order.length - i > 3) return;
+    loadingMore.current = true;
+    more(new Set(order.slice(i).map((x) => cardIdOf(x.id))))
+      .then(({ data: d, cards: next }) => {
+        if (next.length === 0) return setExhausted(true);
+        setDs((prev) => merge([prev, d]));
+        setOrder((o) => [...o, ...next]);
+      })
+      .catch(() => setExhausted(true)) // 読めなければ（通信なしなど）、いまある分で終わる
+      .finally(() => (loadingMore.current = false));
+  }, [endless, more, exhausted, ended, i, order]);
 
-  const qById = useMemo(() => new Map(data.questions.map((q) => [q.id, q])), [data]);
-  const sById = useMemo(() => new Map(data.statements.map((s) => [s.id, s])), [data]);
-  const expById = useMemo(() => new Map(data.explanations.map((e) => [e.statement_id, e])), [data]);
+  const qById = useMemo(() => new Map(ds.questions.map((q) => [q.id, q])), [ds]);
+  const sById = useMemo(() => new Map(ds.statements.map((s) => [s.id, s])), [ds]);
+  const expById = useMemo(() => new Map(ds.explanations.map((e) => [e.statement_id, e])), [ds]);
   // よく似た肢（T050）は肢カードを開いたときに読んでおく。読めなくても解くのには困らないので黙って出さない
   const [twinsReady, setTwinsReady] = useState(twinsIfLoaded() !== null);
   useEffect(() => {
@@ -73,7 +96,7 @@ export default function StatementDrill({
 
   // はじく・キーボードの操作から呼ぶ。中身は描画のたびに下で差し替える（フックを早期の return より前に置くため）
   const actions = useRef<{ choose: (v: boolean, dx?: number) => void; advance: (dir: SwipeDir, dx?: number) => void } | null>(null);
-  const playing = i < order.length;
+  const playing = i < order.length && !ended;
   const swipe = useSwipe<HTMLDivElement>((dir, dx) => {
     if (answer === null) actions.current?.choose(dir === "right", dx);
     else actions.current?.advance(dir, dx);
@@ -108,6 +131,8 @@ export default function StatementDrill({
     setOrder(shuffled ? shuffle(next) : next);
     setI(0);
     setAnswer(null);
+    setEnded(false);
+    setEndless(false);
     setResults([]);
     setStartedAt(Date.now());
     setFinishedAt(null);
@@ -127,7 +152,7 @@ export default function StatementDrill({
     );
   }
 
-  if (i >= order.length) {
+  if (i >= order.length || ended) {
     return (
       <StatementResult
         items={results}
@@ -140,7 +165,7 @@ export default function StatementDrill({
             true,
           )
         }
-        onRetryAll={() => restart(order, true)}
+        onRetryAll={() => restart(ended || endless ? results.map((x) => x.statement) : order, true)}
         onExit={onExit}
       />
     );
@@ -194,17 +219,34 @@ export default function StatementDrill({
           ← 戻る
         </button>
         <span className="muted small">
-          {title}　{i + 1} / {order.length}
+          {endless ? `${title}　${i + 1}問目` : `${title}　${i + 1} / ${order.length}`}
         </span>
-        {i === 0 && answer === null && (
-          <button className="link" onClick={() => restart(cards, true)}>
-            シャッフル
+        {results.length > 0 ? (
+          // 途中で終わって、答えた分の結果を見る
+          <button
+            className="link"
+            onClick={() => {
+              setFinishedAt(Date.now());
+              setEnded(true);
+            }}
+          >
+            終わる
           </button>
+        ) : (
+          i === 0 &&
+          answer === null &&
+          !endless && (
+            <button className="link" onClick={() => restart(cards, true)}>
+              シャッフル
+            </button>
+          )
         )}
       </div>
-      <div className="play-progress">
-        <Progress value={(i + (answer === null ? 0 : 1)) / order.length} />
-      </div>
+      {!endless && (
+        <div className="play-progress">
+          <Progress value={(i + (answer === null ? 0 : 1)) / order.length} />
+        </div>
+      )}
 
       <div
         // 答えたらカードを作り直し、後ろから浮かび上がるように出す

@@ -39,10 +39,12 @@ export default function ReportLink({ target, context }: { target: string; contex
   if (sent) return <p className="small muted report-done">報告を受け付けました。ありがとうございます。</p>;
   if (!open) {
     return (
+      // 文字だけのリンクだとボタンに見えなかった（T049 の後のユーザーの指摘）ので、枠のあるボタンにして一言添える
       <div className="report-link">
-        <button className="link small" onClick={() => setOpen(true)}>
-          誤りを報告
+        <button className="secondary small report-button" aria-label="誤りを報告" onClick={() => setOpen(true)}>
+          <span aria-hidden="true">⚑</span> 誤りを報告
         </button>
+        <span className="muted small">解説・○×・問題文がおかしいと思ったら</span>
       </div>
     );
   }
