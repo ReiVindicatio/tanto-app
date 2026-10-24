@@ -283,7 +283,8 @@ export default function StatementDrill({
         </div>
       ) : (
         <div className="actionbar">
-          <button onClick={next}>
+          {/* はじいたときと同じく、カードを左へめくって次の肢へ（単語帳のように） */}
+          <button onClick={() => advance("left")}>
             次へ
           </button>
         </div>
