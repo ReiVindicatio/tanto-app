@@ -5,6 +5,8 @@
 出力：
   app/public/data/index.json                  … 書き出した束の一覧と、名寄せの対応表（aliases：出典の肢 ID → カード ID）
   app/public/data/<exam>-<year>-<subject>.json … 正本と同じ形（名寄せした肢に card・same_as を足す）
+  app/public/data/topics.json                 … 分野ごとの肢カード（T016）
+  app/public/data/twins.json                  … よく似ているのに○×が逆の肢カードの組（T050）
 
 名寄せ（決定018）：同じ科目で、本文が同じ（全角半角・空白・句読点をならす）で、出題時点の○×も同じ肢を
 1枚のカードにまとめる。前提文が要る肢は、前提文とリード文も同じときだけ。カード ID は予備（同じ試験なら古い年度）の肢 ID。
@@ -24,6 +26,7 @@ import unicodedata
 from check_explanations import EXPLANATIONS, check_question
 from common import EXAM_IDS, GROUP_IDS, ROOT, SUBJECT_IDS
 from topics import OTHER, Tocs, topic_of
+from twins import display_text, find_pairs
 
 QUESTIONS = ROOT / "data" / "questions"
 FLAGS = ROOT / "data" / "review" / "flags.json"
@@ -183,6 +186,31 @@ def topics(docs: list[dict]) -> dict:
     return out
 
 
+def twins(docs: list[dict]) -> dict:
+    """よく似た肢（T050）：組と、組に出てくる肢カードの本文・○×・出典（答え合わせの後に、別の年度の束を読まずに出せるように）"""
+    cards, info = [], {}
+    for doc in docs:
+        qs = {q["id"]: q for q in doc["questions"]}
+        for st in doc["statements"]:
+            if not st["truth_at_exam"] or "review_flag" in st or "card" in st or st["requires_context"]:
+                continue
+            q = qs[st["question_id"]]
+            sub = f" 小問{q['sub_questions'][st['sub']]['marker']}" if st.get("sub") is not None else ""
+            text = display_text(st["text"])
+            cards.append({"id": st["id"], "subject": doc["subject"], "text": text, "truth": st["truth_at_exam"]["value"]})
+            # ids：このカードにまとめた出典の肢（名寄せ）。アプリは、絞り込みに入っている年度の肢を選んで出す
+            info[st["id"]] = {"text": text, "truth": st["truth_at_exam"]["value"],
+                              "src": f"{EXAM_SHORT[doc['exam']['type']]} {doc['exam']['era']} 第{q['number']}問{sub} 肢{st['label']}",
+                              "ids": [st["id"]] + [o["id"] for o in st.get("same_as", [])]}
+    pairs = find_pairs(cards)
+    for p in pairs:
+        if info[p["a"]]["truth"] is not True or info[p["b"]]["truth"] is not False:
+            raise SystemExit(f"よく似た肢の組の○×が逆になっていない：{p['a']}・{p['b']}")
+    used = sorted({p[k] for p in pairs for k in ("a", "b")})
+    return {"note": "同じ科目で、文がよく似ているのに出題時点の○×が逆の肢カードの組（T050）。a が○、b が×。ad・bd は違う部分の文字の範囲",
+            "pairs": pairs, "cards": {i: info[i] for i in used}}
+
+
 def card_list(doc: dict, name: str) -> str:
     """出題できる肢カードの ID（束の ID を除いた「q11-e」の形）を空白でつないだもの（T038）。
     アプリは起動時に index.json だけ読み、枚数・回答済みの数・今日の○問の選び出しに使う。問の ID は「束の ID-q11」"""
@@ -257,11 +285,14 @@ def main() -> None:
     topic_doc = {"note": "分野は、解説が最初に引いている条文の、e-Gov の目次での編・章（T016）。条文を引いていない肢は「その他」",
                  "subjects": topics(docs)}
     (OUT / "topics.json").write_text(json.dumps(topic_doc, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    twin_doc = twins(docs)
+    (OUT / "twins.json").write_text(json.dumps(twin_doc, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     index = {"sets": sets, "aliases": dict(sorted(aliases.items()))}
     (OUT / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     for s in sets:
         print(f"✅ {s['id']}：{s['questions']}問・肢カード {s['statement_cards']}・解説 {s['explanations']}")
     print(f"名寄せ：{len(aliases)}肢を他の肢と同じカードに（解説の共有 {shared}）")
+    print(f"よく似た肢：{len(twin_doc['pairs'])}組・{len(twin_doc['cards'])}枚")
     for c in conflicts:
         print(f"⚠️  本文が同じで○×が食い違うのでまとめない：{c}")
     for name in skipped:

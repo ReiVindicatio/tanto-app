@@ -99,6 +99,12 @@ export async function startChosen(infos: SetInfo[], chosen: CardRef[], title: st
   start({ kind: "statements", title, data, cards, origin: originOf(infos) });
 }
 
+/** よく似た肢を続けて解く（T050）：並びは決めてある（組の2枚を続けて出す）のでシャッフルしない */
+export async function startInOrder(infos: SetInfo[], chosen: CardRef[], title: string): Promise<void> {
+  const { data, cards } = await loadChosen(infos, chosen);
+  start({ kind: "statements", title, data, cards, origin: originOf(infos) });
+}
+
 /** 問で解く（本番形式） */
 export async function startQuestions(info: SetInfo): Promise<void> {
   start({ kind: "questions", info, data: await loadSet(info) });

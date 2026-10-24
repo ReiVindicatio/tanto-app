@@ -10,6 +10,7 @@ import { startQuestions, startReview, startStatements } from "../play";
 import { subjectColor } from "../subjectsMeta";
 import { cardsOf, Progress, poolOf } from "./common";
 import TopicSection from "./TopicSection";
+import TwinSection from "./TwinSection";
 
 const FILTER_LABELS: Record<Filter, string> = { all: "すべて", unanswered: "未回答だけ", wrong: "前回まちがえたものだけ" };
 
@@ -65,6 +66,7 @@ export default function SubjectPage({
       </div>
 
       <TopicSection subject={g.subject} name={g.name} pool={reviewPool} />
+      <TwinSection subject={g.subject} name={g.name} pool={reviewPool} />
 
       {g.exams.length > 1 && (
         <div className="segmented exam-switch" role="group" aria-label="試験">

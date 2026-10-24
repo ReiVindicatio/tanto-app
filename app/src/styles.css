@@ -20,6 +20,7 @@
   --ng-bg: #fef3f2;
   --note-bg: #fffbeb;
   --highlight: #fffbeb;
+  --diff: #fde68a;
   color-scheme: light;
 }
 
@@ -42,6 +43,7 @@
   --ng-bg: rgba(220, 38, 38, 0.14);
   --note-bg: rgba(202, 138, 4, 0.14);
   --highlight: rgba(202, 138, 4, 0.18);
+  --diff: rgba(250, 204, 21, 0.35);
   color-scheme: dark;
 }
 
@@ -1218,4 +1220,55 @@ button.start {
 }
 .topic.weak .topic-label {
   font-weight: bold;
+}
+
+/* よく似た肢（T050）：答え合わせの後に、こちらの肢と相手の肢を並べ、違う部分に色を付ける */
+.twins {
+  margin: 12px 0;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+}
+
+.twins-title {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.twin-pair + .twin-pair {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.twin-row {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin: 6px 0;
+  line-height: 1.6;
+}
+
+.twin-mark {
+  flex: none;
+  width: 1.6em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.twin-mark.maru {
+  color: var(--ok);
+}
+
+.twin-mark.batsu {
+  color: var(--ng);
+}
+
+mark.twin-diff {
+  background: var(--diff);
+  color: inherit;
+  border-radius: 3px;
+  padding: 0 1px;
 }

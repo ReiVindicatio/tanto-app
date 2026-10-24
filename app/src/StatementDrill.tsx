@@ -5,6 +5,9 @@ import ExplanationView from "./ExplanationView";
 import ReportLink from "./ReportLink";
 import LawNote from "./LawNote";
 import StarButton from "./Bookmark";
+import TwinsView from "./TwinsView";
+import { loadTwinsWhenIdle, twinsIfLoaded, twinsOf } from "./twins";
+import { cardIdOf } from "./learning";
 import { shuffle } from "./shuffle";
 import { recordAnswer } from "./learning";
 import { Progress } from "./screens/common";
@@ -42,6 +45,12 @@ export default function StatementDrill({
   const qById = useMemo(() => new Map(data.questions.map((q) => [q.id, q])), [data]);
   const sById = useMemo(() => new Map(data.statements.map((s) => [s.id, s])), [data]);
   const expById = useMemo(() => new Map(data.explanations.map((e) => [e.statement_id, e])), [data]);
+  // よく似た肢（T050）は肢カードを開いたときに読んでおく。読めなくても解くのには困らないので黙って出さない
+  const [twinsReady, setTwinsReady] = useState(twinsIfLoaded() !== null);
+  useEffect(() => {
+    if (!twinsReady) return loadTwinsWhenIdle(() => setTwinsReady(true));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // はじく・キーボードの操作から呼ぶ。中身は描画のたびに下で差し替える（フックを早期の return より前に置くため）
   const actions = useRef<{ choose: (v: boolean, dx?: number) => void; advance: (dir: SwipeDir, dx?: number) => void } | null>(null);
@@ -229,6 +238,9 @@ export default function StatementDrill({
               <ExplanationView e={expById.get(s.id)!} />
             ) : (
               <p className="muted small">この肢の解説はまだありません。</p>
+            )}
+            {twinsReady && (
+              <TwinsView twins={twinsOf(twinsIfLoaded()!, s.id, new Set(order.slice(i + 1).map((x) => cardIdOf(x.id))))} />
             )}
             <div className="muted small">
               出典の位置：{o.examName} {q.exam.era} {o.subjectName} 第{q.number}問
