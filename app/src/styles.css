@@ -1317,3 +1317,51 @@ mark.twin-diff {
   font-weight: bold;
   color: var(--text-strong);
 }
+
+/* 聞き流し（T057） */
+.listen-start {
+  margin-top: 8px;
+}
+
+.listen-card .statement {
+  font-size: 1.15rem;
+}
+
+.listen-phase {
+  margin: 12px 0;
+  font-weight: bold;
+  color: var(--text-secondary);
+  min-height: 1.6em;
+}
+
+.listen-phase.answer {
+  color: var(--text-strong);
+}
+
+.listen-phase .ok {
+  color: var(--ok);
+}
+
+.listen-phase .ng {
+  color: var(--ng);
+}
+
+.listen-controls {
+  margin: 8px 0;
+}
+
+.listen-controls > button {
+  flex: 1;
+}
+
+.listen-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 16px;
+}
+
+.listen-summary {
+  font-size: 1.2rem;
+  font-weight: bold;
+}

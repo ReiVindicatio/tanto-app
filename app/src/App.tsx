@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import StatementDrill from "./StatementDrill";
+import ListenPlayer from "./ListenPlayer";
 import QuestionDrill from "./QuestionDrill";
 import Footer from "./Footer";
 import type { Filter } from "./history";
@@ -72,6 +73,16 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
           {route.name === "terms" && <Terms />}
           {play?.kind === "statements" && (
             <StatementDrill
+              title={play.title}
+              data={play.data}
+              cards={play.cards}
+              origin={play.origin}
+              more={play.more}
+              onExit={() => back()}
+            />
+          )}
+          {play?.kind === "listen" && (
+            <ListenPlayer
               title={play.title}
               data={play.data}
               cards={play.cards}

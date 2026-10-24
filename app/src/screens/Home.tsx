@@ -2,7 +2,7 @@
 import { useState } from "react";
 import type { CardRef, SubjectGroup } from "../data";
 import { navigate } from "../router";
-import { startChosen, startDaily, startEndless } from "../play";
+import { startChosen, startDaily, startEndless, startListen } from "../play";
 import { bookmarkedCards } from "../bookmarks";
 import { cardIdOf } from "../learning";
 import { buildDaily, DAILY_SIZES, describeCounts, ENDLESS, ENDLESS_BATCH, getDailyPrefs, setDailyPrefs, type DailyPrefs } from "../daily";
@@ -90,6 +90,10 @@ function QuickStart({
         onClick={() => (endless ? startEndless(infos, "エンドレス") : startDaily(infos, prefs.size, `今日の${prefs.size}問`))}
       >
         はじめる
+      </button>
+      {/* 聞き流し（T057）：範囲は上で選んだもの、選び方は今日の○問と同じ。止めるまで続ける */}
+      <button className="secondary wide listen-start" disabled={preview.cards.length === 0} onClick={() => startListen(infos, "聞き流し")}>
+        🎧 聞き流す（読み上げ）
       </button>
       <p className="muted small hero-note">
         忘れかけた肢・まちがえた肢を先に、残りを新しい肢で埋めて出します。

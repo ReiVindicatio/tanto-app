@@ -17,6 +17,7 @@ export type More = (exclude: Set<string>) => Promise<{ data: DataSet; cards: Sta
 
 export type PlaySession =
   | { kind: "statements"; title: string; data: DataSet; cards: Statement[]; origin: OriginOf; more?: More }
+  | { kind: "listen"; title: string; data: DataSet; cards: Statement[]; origin: OriginOf; more: More }
   | { kind: "questions"; info: SetInfo; data: DataSet };
 
 let current: PlaySession | null = null;
@@ -87,12 +88,28 @@ export async function startDaily(infos: SetInfo[], size: number, title: string):
 
 /** エンドレス：今日の○問と同じ選び方で20問ずつ選び、残りが少なくなったら次を足す。「終わる」で結果を出す */
 export async function startEndless(infos: SetInfo[], title: string): Promise<void> {
-  const next: More = (exclude) => {
-    const pool = refPool(infos).filter((c) => !exclude.has(cardIdOf(c.id)));
-    return loadChosen(infos, buildDaily(pool, ENDLESS_BATCH).cards);
-  };
+  const next = endlessSource(infos);
   const { data, cards } = await next(new Set());
   start({ kind: "statements", title, data, cards, origin: originOf(infos), more: next });
+}
+
+/** 今日の○問の選び方で、exclude を除いて次の20問を選んで読む（エンドレス・聞き流し） */
+function endlessSource(infos: SetInfo[], keep: (s: Statement) => boolean = () => true): More {
+  return async (exclude) => {
+    const pool = refPool(infos).filter((c) => !exclude.has(cardIdOf(c.id)));
+    const { data, cards } = await loadChosen(infos, buildDaily(pool, ENDLESS_BATCH).cards);
+    return { data, cards: cards.filter(keep) };
+  };
+}
+
+/**
+ * 聞き流し（T057）：エンドレスと同じ選び方。読み上げだけで分かる肢にする
+ * （前提文の要る肢・小問の肢は、肢だけ読んでも意味が通らないので除く）
+ */
+export async function startListen(infos: SetInfo[], title: string): Promise<void> {
+  const next = endlessSource(infos, (s) => !s.requires_context && s.sub === undefined);
+  const { data, cards } = await next(new Set());
+  start({ kind: "listen", title, data, cards, origin: originOf(infos), more: next });
 }
 
 /** 今日の復習（FSRS）。新規カードは新しい年度から順に入れる */
