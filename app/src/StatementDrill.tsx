@@ -7,6 +7,7 @@ import LawNote from "./LawNote";
 import StarButton from "./Bookmark";
 import TwinsView from "./TwinsView";
 import { loadTwinsWhenIdle, twinsIfLoaded, twinsOf } from "./twins";
+import { loadTrapsWhenIdle, trapOf, trapsIfLoaded } from "./traps";
 import { cardIdOf } from "./learning";
 import { shuffle } from "./shuffle";
 import { recordAnswer } from "./learning";
@@ -89,6 +90,12 @@ export default function StatementDrill({
   const expById = useMemo(() => new Map(ds.explanations.map((e) => [e.statement_id, e])), [ds]);
   // よく似た肢（T050）は肢カードを開いたときに読んでおく。読めなくても解くのには困らないので黙って出さない
   const [twinsReady, setTwinsReady] = useState(twinsIfLoaded() !== null);
+  // ひっかけの型（T059）も同じく、手が空いてから読む
+  const [trapsReady, setTrapsReady] = useState(trapsIfLoaded() !== null);
+  useEffect(() => {
+    if (!trapsReady) return loadTrapsWhenIdle(() => setTrapsReady(true));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   useEffect(() => {
     if (!twinsReady) return loadTwinsWhenIdle(() => setTwinsReady(true));
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -295,6 +302,7 @@ export default function StatementDrill({
               <span className="muted small">　出題時点の公式の解答による</span>
             </div>
             <LawNote q={q} />
+            {trapsReady && !truth && <TrapNote statementId={s.id} />}
             {BASIS_NOTE[s.truth_at_exam!.basis] && <p className="small muted">{BASIS_NOTE[s.truth_at_exam!.basis]}</p>}
             {expById.has(s.id) ? (
               <ExplanationView e={expById.get(s.id)!} />
@@ -358,4 +366,17 @@ export default function StatementDrill({
 /** 誤り報告に自動で付ける情報（T040）：どの版の解説を見て報告したか */
 function reportContext(e: Explanation | undefined): Record<string, unknown> {
   return { screen: "statement", explanation: e ? { model: e.model, prompt_version: e.prompt_version, generated_at: e.generated_at } : null };
+}
+
+/** ×の肢のひっかけの型（T059。AI による分類） */
+function TrapNote({ statementId }: { statementId: string }) {
+  const t = trapsIfLoaded();
+  const trap = t ? trapOf(t, statementId) : null;
+  if (!trap) return null;
+  return (
+    <div className="trap-note small">
+      <span className="trap-label">ひっかけの型</span> <strong>{trap.name}</strong>
+      <span className="muted">　{trap.why}（AI による分類）</span>
+    </div>
+  );
 }

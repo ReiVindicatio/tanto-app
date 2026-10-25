@@ -1,4 +1,5 @@
-// 聞き流しモード（T057）：肢を読み上げ、考える間を置いて、○×と解説の結論を読む。止めるまで続ける。
+// 聞き流しモード（T057・T058）：肢を読み上げ、考える間を置いて、○×と解説の結論を読む。止めるまで続ける。
+// 声は手元で作っておいた音声（Google Cloud Text-to-Speech）。音声がない肢は端末の読み上げで読む。
 // ○×を言う前に画面の○×を押したときだけ、普段の回答と同じに記録する（押さなければ記録しない）
 import { useEffect, useRef, useState } from "react";
 import type { DataSet, Statement } from "./types";
@@ -6,8 +7,12 @@ import type { More, OriginOf } from "./play";
 import { merge } from "./data";
 import { cardIdOf, recordAnswer } from "./learning";
 import {
+  audioUrl,
   canSpeak,
+  clipUrl,
   either,
+  play,
+  silenceUrl,
   getListenPrefs,
   japaneseVoice,
   keepScreenOn,
@@ -58,18 +63,40 @@ export default function ListenPlayer({
   const loading = useRef<Promise<void> | null>(null);
   const exhausted = useRef(false);
   const releaseScreen = useRef<() => void>(() => {});
+  // 音声の再生に使う1つの <audio>（iPhone は、押した操作の中で一度再生した要素なら、あとから続けて再生できる）
+  const audio = useRef<HTMLAudioElement | null>(null);
+  const el = () => (audio.current ??= new Audio());
   const [, rerender] = useState(0);
+  const actions = useRef<{ pause: () => void; resume: () => void; skip: () => void } | null>(null);
+  useEffect(() => {
+    if (!("mediaSession" in navigator)) return;
+    const ms = navigator.mediaSession;
+    const set = (a: MediaSessionAction, f: (() => void) | null) => {
+      try {
+        ms.setActionHandler(a, f);
+      } catch {
+        // 端末が対応していない操作は飛ばす
+      }
+    };
+    set("pause", () => actions.current?.pause());
+    set("play", () => actions.current?.resume());
+    set("nexttrack", () => actions.current?.skip());
+    return () => ["pause", "play", "nexttrack"].forEach((a) => set(a as MediaSessionAction, null));
+  }, []);
 
   useEffect(() => {
-    if (!canSpeak()) return;
-    void japaneseVoice().then((v) => {
-      voice.current = v;
-      setNoVoice(v === null);
-    });
+    // 端末の読み上げは、作っておいた音声がない肢のときだけ使う
+    if (canSpeak())
+      void japaneseVoice().then((v) => {
+        voice.current = v;
+        setNoVoice(v === null);
+      });
     return () => {
       cardCtl.current?.abort();
-      window.speechSynthesis.cancel();
+      if (canSpeak()) window.speechSynthesis.cancel();
+      audio.current?.pause();
       releaseScreen.current();
+      if ("mediaSession" in navigator) navigator.mediaSession.metadata = null;
     };
   }, []);
 
@@ -95,10 +122,35 @@ export default function ListenPlayer({
     return loading.current;
   }
 
-  function answerText(s: Statement): string {
+  /** 作っておいた音声で読む。音声がなければ端末の読み上げで text を読む */
+  async function say(cardId: string, part: "q" | "a", text: string, signal: AbortSignal) {
+    const rate = prefsRef.current.rate;
+    if (await play(el(), audioUrl(cardId, part), rate, signal)) return;
+    if (!signal.aborted && canSpeak()) await speak(text, rate, voice.current, signal);
+  }
+
+  /** 次の肢の音声を先に取っておく（切り替わりの待ちを減らす。失敗してもかまわない） */
+  function prefetch(s: Statement | undefined) {
+    if (!s) return;
+    for (const part of ["q", "a"] as const) void fetch(audioUrl(cardIdOf(s.id), part)).catch(() => {});
+  }
+
+  /** ロック画面・通知の表示と操作（Media Session） */
+  function mediaInfo(s: Statement) {
+    if (!("mediaSession" in navigator) || typeof MediaMetadata === "undefined") return;
+    const q = ds.current.questions.find((x) => x.id === s.question_id);
+    const o = q ? origin(q) : null;
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: o && q ? `${o.examName} ${o.subjectName} ${q.exam.era} 第${q.number}問 肢${s.label}` : "聞き流し",
+      artist: "たんたん（聞き流し）",
+    });
+  }
+
+  /** 端末の読み上げで読むときの答えの文。withMark：押した答えの「正解。」「不正解。」を頭に付ける */
+  function answerText(s: Statement, withMark = true): string {
     const truth = s.truth_at_exam!.value;
     const exp = ds.current.explanations.find((e) => e.statement_id === s.id);
-    const mark = answeredRef.current === null ? "" : answeredRef.current ? "正解。" : "不正解。";
+    const mark = !withMark || answeredRef.current === null ? "" : answeredRef.current ? "正解。" : "不正解。";
     return `${mark}正解は、${truth ? "まる" : "ばつ"}。${exp ? exp.conclusion : "この肢の解説はありません。"}`;
   }
 
@@ -117,33 +169,50 @@ export default function ListenPlayer({
         }
       }
       const s = order.current[k];
+      const cid = cardIdOf(s.id);
       setI(k);
       answeredRef.current = null;
       setAnswered(null);
+      mediaInfo(s);
+      prefetch(order.current[k + 1]);
       const step = new AbortController();
       phaseCtl.current = step;
       const either_ = either(card.signal, step.signal);
       setPhase("reading");
-      await speak(s.text, prefsRef.current.rate, voice.current, either_);
+      await say(cid, "q", s.text, either_);
       if (card.signal.aborted) return;
       if (!step.signal.aborted) {
         setPhase("thinking");
-        await wait(prefsRef.current.pause, either_, setLeft);
+        setLeft(prefsRef.current.pause);
+        // 考える間は無音を流して作る（タイマーは画面を消すと止められることがある）。流せなければタイマーで待つ
+        if (!(await play(el(), silenceUrl(prefsRef.current.pause), 1, either_, setLeft)) && !either_.aborted) {
+          await wait(prefsRef.current.pause, either_, setLeft);
+        }
         if (card.signal.aborted) return;
       }
       setPhase("answer");
-      await speak(answerText(s), prefsRef.current.rate, voice.current, card.signal);
+      if (answeredRef.current !== null) await play(el(), clipUrl(answeredRef.current ? "seikai" : "fuseikai"), prefsRef.current.rate, card.signal);
+      if (card.signal.aborted) return;
+      await say(cid, "a", answerText(s, false), card.signal);
       if (card.signal.aborted) return;
       setStats((x) => ({ ...x, heard: x.heard + 1 }));
-      await wait(0.8, card.signal);
+      if (!(await play(el(), silenceUrl(1), 1, card.signal)) && !card.signal.aborted) await wait(0.8, card.signal);
       k++;
     }
   }
 
-  /** はじめる・再開する。iPhone は押した操作の中で読み上げを始めないと声が出ないので、ここで最初の一言を読む */
+  /**
+   * はじめる・再開する。iPhone は押した操作の中で再生を始めないと音が出ないので、ここで <audio> に短い無音を流し、
+   * 端末の読み上げにも空の一言を読ませておく（音声がない肢のため）
+   */
   async function begin(from: number) {
-    window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(new SpeechSynthesisUtterance(""));
+    const a = el();
+    a.src = silenceUrl(1);
+    void a.play().catch(() => {});
+    if (canSpeak()) {
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(new SpeechSynthesisUtterance(""));
+    }
     releaseScreen.current();
     releaseScreen.current = await keepScreenOn();
     void run(from);
@@ -162,6 +231,7 @@ export default function ListenPlayer({
 
   function pause() {
     cardCtl.current?.abort();
+    audio.current?.pause();
     setPhase("paused");
     releaseScreen.current();
   }
@@ -173,22 +243,14 @@ export default function ListenPlayer({
 
   function stop() {
     cardCtl.current?.abort();
-    window.speechSynthesis.cancel();
+    audio.current?.pause();
+    if (canSpeak()) window.speechSynthesis.cancel();
     releaseScreen.current();
     setPhase("done");
   }
 
-  if (!canSpeak()) {
-    return (
-      <section>
-        <h1>聞き流し</h1>
-        <p>このブラウザは読み上げに対応していません。</p>
-        <button className="secondary" onClick={onExit}>
-          戻る
-        </button>
-      </section>
-    );
-  }
+  // ロック画面の操作（Media Session）から呼ぶ。中身は描画のたびに差し替える
+  actions.current = { pause, resume: () => void begin(i), skip };
 
   if (phase === "done") {
     return (
@@ -220,7 +282,7 @@ export default function ListenPlayer({
         <span />
       </div>
 
-      {noVoice && <p className="error small">この端末に日本語の読み上げの声が見つかりません。声が英語になることがあります。</p>}
+
 
       {phase === "ready" ? (
         <div className="listen-intro">
@@ -229,9 +291,10 @@ export default function ListenPlayer({
             ○×を言う前に画面の○×を押すと、その答えを記録します。押さなければ記録しません。
           </p>
           <p className="muted small">
-            画面を消したり別のアプリに切り替えたりすると、読み上げが止まります。画面は点けたまま使ってください。
-            声は端末の読み上げ機能のもので、法律用語を読み間違えることがあります。
+            音声は Google Cloud Text-to-Speech で作ったもの（AI 音声）で、法律用語を読み間違えることがあります。
+            ロック画面から一時停止・次の肢へができます。画面を消すと止まる端末もあります（ホーム画面に追加したアプリでは特に）。
           </p>
+          {noVoice && <p className="muted small">音声のない肢は端末の読み上げで読みますが、この端末には日本語の声が見つかりません。</p>}
         </div>
       ) : (
         s && (
@@ -242,6 +305,7 @@ export default function ListenPlayer({
               </div>
             )}
             <p className="statement">{s.text}</p>
+            <p className="muted small">音声：Google Cloud Text-to-Speech で作成（AI 音声）</p>
             <div className={`listen-phase ${phase}`} aria-live="polite">
               {phase === "reading" && "読み上げ中…"}
               {phase === "thinking" && `考える時間　あと ${left} 秒`}

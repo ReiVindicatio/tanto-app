@@ -2,6 +2,7 @@
 import { handleApi, type Limiter } from "./api";
 import { firebaseVerifier, testVerifier } from "./auth";
 import { D1AnswerRepository } from "./repository";
+import { serveAudio } from "./audio";
 
 /** Cloudflare Workers の Rate Limiting（wrangler.jsonc の ratelimits） */
 type RateLimit = { limit(opts: { key: string }): Promise<{ success: boolean }> };
@@ -15,6 +16,8 @@ export interface Env {
   /** 使いすぎの制限（T040）。IP ごと・利用者ごと。設定がなければ制限しない */
   RL_IP?: RateLimit;
   RL_USER?: RateLimit;
+  /** 聞き流しの音声（T058）。設定がなければ /audio/* は 404（アプリは端末の読み上げに戻る） */
+  AUDIO?: R2Bucket;
 }
 
 function limiter(rl?: RateLimit): Limiter | undefined {
@@ -29,8 +32,12 @@ function limiter(rl?: RateLimit): Limiter | undefined {
 }
 
 export default {
-  async fetch(req: Request, env: Env): Promise<Response> {
+  async fetch(req: Request, env: Env, ctx?: ExecutionContext): Promise<Response> {
     const url = new URL(req.url);
+    if (url.pathname.startsWith("/audio/")) {
+      const cache = typeof caches !== "undefined" ? (caches as unknown as { default: Cache }).default : undefined;
+      return serveAudio(req, env.AUDIO, cache, ctx ? (p) => ctx.waitUntil(p) : undefined);
+    }
     if (!url.pathname.startsWith("/api/")) return env.ASSETS.fetch(req);
 
     const testMode = env.AUTH_MODE === "test";

@@ -9,8 +9,10 @@
     "directory": "./dist",
     "binding": "ASSETS",
     "not_found_handling": "single-page-application",
-    "run_worker_first": ["/api/*"]
+    "run_worker_first": ["/api/*", "/audio/*"]
   },
+  // 聞き流しの音声（T058）。pipeline/tts_upload.py で上げる
+  "r2_buckets": [{ "binding": "AUDIO", "bucket_name": "tantan-audio" }],
   "d1_databases": [
     {
       "binding": "DB",

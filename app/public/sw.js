@@ -54,6 +54,8 @@ self.addEventListener("fetch", (event) => {
   if (url.origin !== location.origin || url.pathname.startsWith("/api/")) return;
   // 問ごとの静的ページ（T045）・サイトマップはアプリの画面ではないので、保存も差し替えもしない
   if (url.pathname.startsWith("/q/") || url.pathname === "/sitemap.xml" || url.pathname === "/robots.txt") return;
+  // 聞き流しの音声（T058）は大きく数も多いので保存しない（Range の取得もそのまま通す）
+  if (url.pathname.startsWith("/audio/") || url.pathname.startsWith("/sounds/")) return;
 
   if (req.mode === "navigate") {
     event.respondWith(

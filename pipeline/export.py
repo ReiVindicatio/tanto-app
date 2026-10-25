@@ -8,6 +8,7 @@
   app/public/data/topics.json                 … 分野ごとの肢カード（T016）
   app/public/data/twins.json                  … よく似ているのに○×が逆の肢カードの組（T050）
   app/public/data/exams.json                  … 模試（T028）の試験時間・合格点・平均点・得点別人員（data/exams/short_answer.json から）
+  app/public/data/traps.json                  … ×の肢のひっかけの型（T059。AI による分類。data/traps/traps.json から）
 
 名寄せ（決定018）：同じ科目で、本文が同じ（全角半角・空白・句読点をならす）で、出題時点の○×も同じ肢を
 1枚のカードにまとめる。前提文が要る肢は、前提文とリード文も同じときだけ。カード ID は予備（同じ試験なら古い年度）の肢 ID。
@@ -31,6 +32,26 @@ from twins import display_text, find_pairs
 
 QUESTIONS = ROOT / "data" / "questions"
 EXAMS = ROOT / "data" / "exams" / "short_answer.json"
+TRAPS = ROOT / "data" / "traps" / "traps.json"
+# ひっかけの型の画面の名前と短い説明（prompts/trap-types-v2.md・trap-scope-split-v1.md の定義を縮めたもの）
+TRAP_TYPES = {
+    "exception": ("ただし書・例外の見落とし", "例外やただし書があるのに、原則だけで言い切る"),
+    "add_requirement": ("要件の付け足し", "条文・判例にない要件や条件を足して狭める"),
+    "drop_requirement": ("要件の抜き取り", "必要な要件や前置を外して広げる"),
+    "existence": ("制度・手続の有無の取り違え", "ある制度・手続を「ない」、ないものを「ある」とする"),
+    "transplant": ("隣の制度の持ち込み", "似た別の制度・条文の決まりを当てはめる"),
+    "subject_swap": ("主体・対象のすり替え", "権限の主体や当事者、対象を入れ替える"),
+    "scope_wide": ("範囲の広げすぎ", "対象外のもの・場面にまで決まりや判例を及ぼす"),
+    "scope_narrow": ("範囲の狭めすぎ", "対象になるものを外す、「〜に限られる」と絞る"),
+    "scope": ("範囲・射程の取り違え", "決まりや判例の及ぶ範囲を広げたり狭めたりする"),
+    "degree": ("強さ・程度の取り違え", "義務と任意、全員と過半数、必要的と任意的などを入れ替える"),
+    "effect_nature": ("効果・性質・分類の取り違え", "無効と取消し、罪数、問題の段階などを取り違える"),
+    "number_order": ("数字・期間・順序の取り違え", "期間・年齢・金額や、手続の先後を変える"),
+    "case_reverse": ("判例の結論の逆転", "判例の結論をそのまま逆にする"),
+    "case_reasoning": ("判例の理由づけのずらし", "判例の考慮要素・審査基準・論理をずらす"),
+    "theory": ("学説・見解の取り違え", "見解どうしの関係や帰結を取り違える"),
+    "other": ("その他", "どの型にも当てはまらない・複合"),
+}
 FLAGS = ROOT / "data" / "review" / "flags.json"
 OUT = ROOT / "app" / "public" / "data"
 
@@ -234,6 +255,19 @@ def exams() -> dict:
     }
 
 
+def traps() -> dict:
+    """ひっかけの型（T059）をアプリの形にする：肢 ID → [型, 理由]。「範囲・射程」は向き（scope_dir）で広げすぎ・狭めすぎに分ける"""
+    src = json.loads(TRAPS.read_text(encoding="utf-8")) if TRAPS.exists() else {}
+    items = {}
+    for sid, v in src.items():
+        t = v["type"]
+        if t == "scope" and v.get("scope_dir") in ("wide", "narrow"):
+            t = f"scope_{v['scope_dir']}"
+        items[sid] = [t, v["why"]]
+    return {"note": "×の肢がどう誤りにしてあるかの型（AI による分類。prompts/trap-types-v2.md）。公式の○×は変えない",
+            "types": {k: {"name": n, "desc": d} for k, (n, d) in TRAP_TYPES.items()}, "items": items}
+
+
 def card_list(doc: dict, name: str) -> str:
     """出題できる肢カードの ID（束の ID を除いた「q11-e」の形）を空白でつないだもの（T038）。
     アプリは起動時に index.json だけ読み、枚数・回答済みの数・今日の○問の選び出しに使う。問の ID は「束の ID-q11」"""
@@ -308,6 +342,8 @@ def main() -> None:
     topic_doc = {"note": "分野は、解説が最初に引いている条文の、e-Gov の目次での編・章（T016）。条文を引いていない肢は「その他」",
                  "subjects": topics(docs)}
     (OUT / "topics.json").write_text(json.dumps(topic_doc, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    # ひっかけの型（T059）
+    (OUT / "traps.json").write_text(json.dumps(traps(), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     # 模試（T028）の材料
     (OUT / "exams.json").write_text(json.dumps(exams(), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     twin_doc = twins(docs)

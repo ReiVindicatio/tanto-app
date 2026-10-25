@@ -1,5 +1,6 @@
-// 聞き流しモード（T057）の読み上げ。端末の音声合成（Web Speech API の speechSynthesis）で、日本語の声で読む。
-// 外部のサービスは使わない。画面を消す・別のアプリに切り替えると止まる（特に iPhone）ので、画面は点けたまま使う
+// 聞き流しモード（T057・T058）の読み上げ。肢カードごとに手元で作っておいた音声（Google Cloud Text-to-Speech・Chirp 3 HD）を
+// 再生する（/audio/tts/<声>/<カード ID>.q.mp3・.a.mp3。worker/audio.ts が R2 から返す）。音声がないときは、
+// 端末の音声合成（Web Speech API の speechSynthesis）で読む
 
 /** 読み間違えやすい語の読み替え。読み間違いに気づいたら足す */
 export const READINGS: [string, string][] = [
@@ -14,7 +15,8 @@ const SLOT_MARK = /\s*[［[]\s*(?:№|No\.?|Ｎｏ．?)\s*[0-9０-９]+\s*[］\]
 
 /** 読み上げる文：解答欄の番号（［№11］）を除き、読み替えの表を当てる */
 export function speechText(text: string): string {
-  let t = text.replace(SLOT_MARK, "").trim();
+  // 古い年度の問題文は読点が「，」「．」。読み上げの区切りが分かるように「、」「。」にそろえる（pipeline/tts_sample.py と同じ）
+  let t = text.replace(SLOT_MARK, "").trim().replace(/，/g, "、").replace(/．/g, "。");
   for (const [from, to] of READINGS) t = t.split(from).join(to);
   return t;
 }
@@ -157,4 +159,60 @@ export async function keepScreenOn(): Promise<() => void> {
     document.removeEventListener("visibilitychange", onVisible);
     void lock?.release();
   };
+}
+
+// ---- 作っておいた音声の再生（T058） ----
+
+/** 音声を作った声（pipeline/tts.py の VOICE と同じ） */
+export const VOICE = "ja-JP-Chirp3-HD-Achernar";
+const BASE = import.meta.env.BASE_URL;
+
+export function audioUrl(cardId: string, part: "q" | "a"): string {
+  return `${BASE}audio/tts/${VOICE}/${cardId}.${part}.mp3`;
+}
+
+/** 考える間などの無音（1・3・5・8秒。アプリに同梱）。タイマーではなく再生の終わりで次へ進むため（画面を消してもタイマーに頼らない） */
+export function silenceUrl(seconds: number): string {
+  return `${BASE}sounds/silence-${seconds}.mp3`;
+}
+
+export function clipUrl(name: "seikai" | "fuseikai"): string {
+  return `${BASE}sounds/${name}.mp3`;
+}
+
+/**
+ * el で src を流す。終わるか止められたら true、読めない（音声がない・再生できない）ときは false。
+ * tick は残り秒（切り上げ）を知らせる（考える間の表示）
+ */
+export function play(el: HTMLAudioElement, src: string, rate: number, signal: AbortSignal, tick?: (left: number) => void): Promise<boolean> {
+  return new Promise((resolve) => {
+    if (signal.aborted) return resolve(true);
+    let settled = false;
+    const done = (ok: boolean) => {
+      if (settled) return;
+      settled = true;
+      el.removeEventListener("ended", onEnded);
+      el.removeEventListener("error", onError);
+      el.removeEventListener("timeupdate", onTime);
+      signal.removeEventListener("abort", onAbort);
+      resolve(ok);
+    };
+    const onEnded = () => done(true);
+    const onError = () => done(false);
+    const onAbort = () => {
+      el.pause();
+      done(true);
+    };
+    const onTime = () => {
+      if (tick && Number.isFinite(el.duration)) tick(Math.max(0, Math.ceil(el.duration - el.currentTime)));
+    };
+    el.addEventListener("ended", onEnded);
+    el.addEventListener("error", onError);
+    el.addEventListener("timeupdate", onTime);
+    signal.addEventListener("abort", onAbort);
+    el.src = src;
+    el.defaultPlaybackRate = rate;
+    el.playbackRate = rate;
+    el.play().catch(() => done(false));
+  });
 }

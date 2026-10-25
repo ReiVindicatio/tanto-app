@@ -1,12 +1,34 @@
-import { expect, test } from "@playwright/test";
+import { readFileSync } from "node:fs";
+import { expect, test, type Page } from "@playwright/test";
 import { openHome } from "./helpers";
 
-// 聞き流し（T057）。端末の読み上げは作り物に差し替える（読んだ文を記録し、少し待って読み終わる）
+// 聞き流し（T057・T058）。再生（<audio>）と端末の読み上げは作り物に差し替え、何をどの順に流したかを記録する
 
-test.beforeEach(async ({ page }) => {
-  await page.addInitScript(() => {
+async function stub(page: Page, opts: { audioMissing: boolean }) {
+  // 作っておいた音声の代わりに、同梱の無音を返す（<audio> が実際に読み込むので、ないと error になる）
+  const silence = readFileSync(new URL("../public/sounds/silence-1.mp3", import.meta.url));
+  await page.route("**/audio/tts/**", (route) =>
+    opts.audioMissing ? route.fulfill({ status: 404 }) : route.fulfill({ status: 200, contentType: "audio/mpeg", body: silence }),
+  );
+  await page.addInitScript((audioMissing) => {
     const w = window as any;
+    w.__played = [];
     w.__spoken = [];
+    // <audio>：src を記録し、少し待って ended を出す（考える間の無音は長めにして、画面の段階を確かめられるように）
+    const timers = new WeakMap<HTMLMediaElement, number>();
+    HTMLMediaElement.prototype.play = function (this: HTMLMediaElement) {
+      const src = this.src;
+      w.__played.push(src.replace(location.origin, ""));
+      window.clearTimeout(timers.get(this));
+      const missing = audioMissing && src.includes("/audio/tts/");
+      const wait = src.includes("silence-3") ? 700 : 120;
+      timers.set(this, window.setTimeout(() => this.dispatchEvent(new Event(missing ? "error" : "ended")), missing ? 10 : wait));
+      return Promise.resolve();
+    };
+    HTMLMediaElement.prototype.pause = function (this: HTMLMediaElement) {
+      window.clearTimeout(timers.get(this));
+    };
+    // 端末の読み上げ（音声がない肢のとき）
     class U {
       text: string;
       lang = "";
@@ -41,39 +63,57 @@ test.beforeEach(async ({ page }) => {
     Object.defineProperty(window, "speechSynthesis", { value: synth, configurable: true });
     Object.defineProperty(window, "SpeechSynthesisUtterance", { value: U, configurable: true });
     if (!localStorage.getItem("tanto.listen.v1")) localStorage.setItem("tanto.listen.v1", JSON.stringify({ rate: 1, pause: 3 }));
-  });
-});
+  }, opts.audioMissing);
+}
 
-const logLength = (page: any) => page.evaluate(() => JSON.parse(localStorage.getItem("tanto.log.v1") ?? "[]").length);
+const logLength = (page: Page) => page.evaluate(() => JSON.parse(localStorage.getItem("tanto.log.v1") ?? "[]").length);
+const played = (page: Page) => page.evaluate(() => (window as any).__played as string[]);
+const spoken = (page: Page) => page.evaluate(() => (window as any).__spoken as string[]);
 
-test("肢を読み、○×を押したらその答えだけ記録して答えを読む。押さなければ記録せずに次へ進む", async ({ page }) => {
+async function start(page: Page) {
   await openHome(page);
   await page.getByRole("button", { name: /聞き流す/ }).click();
   await page.getByRole("button", { name: "▶ 聞きはじめる" }).click();
-  await expect(page.locator(".listen-phase")).toContainText(/読み上げ中|考える時間/);
-  const first = await page.locator(".listen-card .statement").innerText();
-  expect(await page.evaluate(() => (window as any).__spoken[0])).toContain(first.slice(0, 10));
+}
 
-  // 1肢目は○を押す → 記録して、待たずに答えを読む
+test("作っておいた音声で、肢 → 考える間（無音）→ 答えの順に流す。○を押したら「正解／不正解」と答えに進み、その答えだけ記録する", async ({ page }) => {
+  await stub(page, { audioMissing: false });
+  await start(page);
+  await expect(page.locator(".listen-phase")).toContainText(/読み上げ中|考える時間/);
   await page.locator(".listen-actions").getByRole("button", { name: "○", exact: true }).click();
   await expect(page.locator(".listen-phase")).toContainText("正解は");
   expect(await logLength(page)).toBe(1);
-  await expect.poll(() => page.evaluate(() => (window as any).__spoken.some((t: string) => t.includes("正解は、")))).toBe(true);
-
-  // 2肢目は押さない → 考える時間のあと答えを読み、3肢目へ。記録は増えない
+  // 2肢目は押さない：考える間の無音が流れてから答えへ
   await expect(page.locator(".toolbar")).toContainText("2肢目", { timeout: 5000 });
   await expect(page.locator(".listen-phase")).toContainText("考える時間", { timeout: 5000 });
   await expect(page.locator(".toolbar")).toContainText("3肢目", { timeout: 8000 });
   expect(await logLength(page)).toBe(1);
 
+  const p = (await played(page)).filter((x) => !x.endsWith("silence-1.mp3"));
+  // 1肢目：q → （○を押した）正解／不正解 → a。2肢目：q → 無音3秒 → a
+  expect(p[0]).toMatch(/^\/audio\/tts\/ja-JP-Chirp3-HD-Achernar\/.+\.q\.mp3$/);
+  expect(p[1]).toMatch(/^\/sounds\/(seikai|fuseikai)\.mp3$/);
+  expect(p[2]).toBe(p[0].replace(".q.mp3", ".a.mp3"));
+  expect(p[3]).toMatch(/\.q\.mp3$/);
+  expect(p[4]).toBe("/sounds/silence-3.mp3");
+  expect(p[5]).toBe(p[3].replace(".q.mp3", ".a.mp3"));
+  expect(await spoken(page)).toEqual([]); // 端末の読み上げは使っていない
+
   await page.getByRole("button", { name: "止める" }).click();
   await expect(page.locator(".listen-summary")).toContainText("聞いた 2 肢・答えた 1 肢");
 });
 
+test("音声がない肢は、端末の読み上げで肢と答えを読む", async ({ page }) => {
+  await stub(page, { audioMissing: true });
+  await start(page);
+  const first = await page.locator(".listen-card .statement").innerText();
+  await expect.poll(async () => (await spoken(page))[0] ?? "").toContain(first.slice(0, 10));
+  await expect.poll(async () => (await spoken(page)).some((t) => t.includes("正解は、")), { timeout: 8000 }).toBe(true);
+});
+
 test("一時停止と再開、次の肢へ", async ({ page }) => {
-  await openHome(page);
-  await page.getByRole("button", { name: /聞き流す/ }).click();
-  await page.getByRole("button", { name: "▶ 聞きはじめる" }).click();
+  await stub(page, { audioMissing: false });
+  await start(page);
   await page.getByRole("button", { name: "❚❚ 一時停止" }).click();
   await expect(page.locator(".listen-phase")).toHaveText("一時停止中");
   await page.getByRole("button", { name: "▶ 再開" }).click();

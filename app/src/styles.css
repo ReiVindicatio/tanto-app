@@ -1468,3 +1468,34 @@ mark.twin-diff {
 .mock-questions li.ng {
   border-left-color: var(--ng);
 }
+
+/* ひっかけの型（T059） */
+.trap-note {
+  margin: 6px 0;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: var(--note-bg);
+}
+
+.trap-label {
+  font-size: 0.75rem;
+  padding: 1px 6px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  margin-right: 4px;
+  color: var(--text-secondary);
+}
+
+.trap-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+.trap-list li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 0;
+  border-top: 1px solid var(--border-subtle);
+}

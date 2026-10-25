@@ -1,4 +1,5 @@
 // マイページ（T025・T024・T034）：学習の軌跡（ヒートマップ・累計の伸び）・科目ごと・まちがえた肢・アカウント・表示
+import TrapSection from "./TrapSection";
 import { useState } from "react";
 import type { AuthClient } from "../auth";
 import type { SyncedStore } from "../sync";
@@ -204,6 +205,8 @@ export default function MyPage({
           全科目・全年度から、前回まちがえた肢だけをシャッフルして出します。正解すると一覧から外れます。
         </p>
       </div>
+
+      <TrapSection sets={allSets} pool={cardsOf(allSets, cardIds)} />
 
       <InstallHint />
 
