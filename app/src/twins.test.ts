@@ -29,9 +29,9 @@ describe("答え合わせの後に出すよく似た肢（T050）", () => {
     expect(fromB[0].other.truth).toBe(true);
   });
 
-  it("相手がこのあと出題されるなら出さない（答えが先に分かってしまう）", () => {
-    const v = twinsOf(T, "yobi-2021-keiho-q01-4", new Set(["yobi-2021-keiho-q01-5"]));
-    expect(v.map((x) => x.otherId)).toEqual(["shiho-2023-keiho-q07-2"]);
+  it("組の相手が1つでもこのあと出題されるなら、別の組の相手も含めて出さない（答えのヒントになる）", () => {
+    expect(twinsOf(T, "yobi-2021-keiho-q01-4", new Set(["yobi-2021-keiho-q01-5"]))).toEqual([]);
+    expect(twinsOf(T, "yobi-2021-keiho-q01-4", new Set(["yobi-2099-keiho-q01-1"])).length).toBe(2);
   });
 
   it("民法の改正前の年度にしか出ていない相手は、こちらが改正後なら出さない", () => {

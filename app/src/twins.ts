@@ -53,16 +53,19 @@ const onlyPreReformMinpo = (c: TwinCard) => (c.ids ?? []).every((id) => id.inclu
 
 /**
  * 答え合わせの後に出す、よく似た肢（似ている順に max まで）。
- * upcoming：このあと出題する肢カード（相手が入っていたら出さない。答えが先に分かってしまうため）。
+ * upcoming：このあと出題する肢カード（組の相手が1つでも入っていたら、どれも出さない。答えが先に分かってしまうため）。
  * 民法の改正前の年度にしか出ていない相手は、こちらも改正前のときだけ出す
  */
 export function twinsOf(t: Twins, statementId: string, upcoming: Set<string>, max = 2): TwinView[] {
   const id = cardIdOf(statementId);
   const mine = t.cards[id];
   if (!mine) return [];
+  const mine_ = t.pairs.filter((p) => p.a === id || p.b === id);
+  // 組の相手が1つでもこのあと出るなら、どれも出さない。別の組の相手は、このあと出る肢と○×が同じで文も似ていることがあり、
+  // 答えのヒントになる（よく似た肢を続けて解くモードの1枚目で起きた。2026-10-25 の CI）
+  if (mine_.some((p) => upcoming.has(p.a === id ? p.b : p.a))) return [];
   const out: TwinView[] = [];
-  for (const p of t.pairs) {
-    if (p.a !== id && p.b !== id) continue;
+  for (const p of mine_) {
     const [otherId, mineDiff, otherDiff] = p.a === id ? [p.b, p.ad, p.bd] : [p.a, p.bd, p.ad];
     const other = t.cards[otherId];
     if (!other || upcoming.has(otherId)) continue;
