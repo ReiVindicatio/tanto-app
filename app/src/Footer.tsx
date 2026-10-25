@@ -2,7 +2,18 @@ import type { Attribution } from "./types";
 import { navigate } from "./router";
 
 // 出典の表記（公共データ利用規約 第1.0版の条件）。法務省が作成したかのような見せ方をしない
-export default function Footer({ attribution }: { attribution?: Attribution }) {
+export default function Footer({ attribution, compact = false }: { attribution?: Attribution; compact?: boolean }) {
+  // 解いている間は1段落に縮める（出典・加工したこと・非公式は必ず残す。2026-10-25）
+  if (compact) {
+    return (
+      <footer className="footer footer-compact">
+        <p>
+          {attribution?.text ?? "出典：法務省ウェブサイト（https://www.moj.go.jp/jinji/shihoushiken/）"}
+          。問題文・正解は法務省が公開する PDF からこのアプリが抽出・編集・加工したもので、肢ごとの○×は公式の解答から導いたものです。法務省とは関係のない個人が作成した非公式のアプリです。
+        </p>
+      </footer>
+    );
+  }
   return (
     <footer className="footer">
       <p>{attribution?.text ?? "出典：法務省ウェブサイト（https://www.moj.go.jp/jinji/shihoushiken/）"}</p>

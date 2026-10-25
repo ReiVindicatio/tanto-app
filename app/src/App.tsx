@@ -103,7 +103,7 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
           )}
           {play?.kind === "questions" && <QuestionDrill info={play.info} data={play.data} onExit={() => back()} />}
         </main>
-        <Footer attribution={attribution} />
+        <Footer attribution={attribution} compact={tab === null} />
         {tab && <TabBar active={tab} />}
       </div>
     </SyncContext.Provider>

@@ -1470,12 +1470,6 @@ mark.twin-diff {
 }
 
 /* ひっかけの型（T059） */
-.trap-note {
-  margin: 6px 0;
-  padding: 6px 10px;
-  border-radius: 8px;
-  background: var(--note-bg);
-}
 
 .trap-label {
   font-size: 0.75rem;
@@ -1538,4 +1532,43 @@ mark.twin-diff {
   gap: 10px;
   align-items: center;
   margin: 12px 0 8px;
+}
+
+/* 答え合わせの画面の整理（2026-10-25）：型・よく似た肢・出典などは見出しだけ出して押すと開く */
+.answer-extra {
+  margin: 6px 0;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: var(--note-bg);
+}
+
+.answer-extra > summary {
+  cursor: pointer;
+  list-style-position: outside;
+}
+
+.answer-extra[open] > summary {
+  margin-bottom: 4px;
+}
+
+.answer-extra .twins {
+  margin: 4px 0 0;
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.answer-more {
+  margin-top: 8px;
+}
+
+.answer-more > summary,
+.explanation-about > summary {
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.explanation-about {
+  margin-top: 6px;
 }

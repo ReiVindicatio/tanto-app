@@ -46,9 +46,13 @@ export default function ExplanationView({ e }: { e: Explanation | QuestionExplan
           </ul>
         </details>
       )}
-      <div className="muted small">
-        {e.model}・{e.prompt_version}・{e.generated_at} 生成。{question ? "公式の正解との一致" : "公式の○×との一致"}と、条文の引用の照合を通ったものだけを表示しています。誤りがありうるので、条文・判例は原典で確かめてください。
-      </div>
+      {/* 生成の情報と注意書きは畳む（答え合わせの画面を短くする：2026-10-25）。AI が作った印（上の ai-badge）はいつも見せる */}
+      <details className="explanation-about">
+        <summary>この解説について</summary>
+        <div className="muted small">
+          {e.model}・{e.prompt_version}・{e.generated_at} 生成。{question ? "公式の正解との一致" : "公式の○×との一致"}と、条文の引用の照合を通ったものだけを表示しています。誤りがありうるので、条文・判例は原典で確かめてください。
+        </div>
+      </details>
     </div>
   );
 }

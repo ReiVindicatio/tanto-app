@@ -34,6 +34,9 @@ test("年度ごとに解く：組の1枚目では相手を出さず、2枚目に
     await expect(page.locator(".page .result")).toBeVisible();
     if (k === best!.first) await expect(page.locator(".page .twins")).toHaveCount(0); // 相手はこのあと出る
     if (k === best!.second) {
+      // 見出し（よく似た肢 ○×が逆の肢 N件）を押すと開く
+      await expect(page.locator(".page .twins-details summary")).toContainText("○×が逆の肢");
+      await page.locator(".page .twins-details summary").click();
       const tw = page.locator(".page .twins");
       await expect(tw).toBeVisible();
       await expect(tw.locator(".twin-row")).toHaveCount(2);
@@ -62,6 +65,7 @@ test("科目の画面から、よく似た肢を2枚続けて解く。2枚目の
   await page.getByRole("button", { name: "次へ" }).click();
 
   await page.getByRole("button", { name: "○", exact: true }).click();
+  await page.locator(".page .twins-details summary").click();
   const tw = page.locator(".page .twins");
   await expect(tw).toBeVisible();
   // 相手（1枚目）の本文が並ぶ（解答欄の番号は除いて比べる）

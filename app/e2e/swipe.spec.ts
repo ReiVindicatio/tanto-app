@@ -47,25 +47,30 @@ test.describe("スマホ", () => {
     await expect(page.locator(".page .combo")).toHaveText("4連続正解");
   });
 
-  test("少し斜めにはじいても答えになり、その間ページは縦にスクロールしない", async ({ page }) => {
-    await openHome(page);
-    await openYear(page, "民法", "R08", "肢で解く");
-    // 一番上から、指を上へ斜めに動かす（スクロールを止めなければ下へスクロールするページ。縦のテストで確かめた）
-    await page.evaluate(() => window.scrollTo(0, 0));
-    await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
-    await drag(page, 160, -60);
-    await expect(page.locator(".page .result")).toBeVisible();
-    expect(await page.evaluate(() => window.scrollY)).toBe(0);
-  });
+  test.describe("スクロールできる高さ", () => {
+    // 高さを低くして、ページが縦にスクロールできる状態で確かめる（解く画面は短いので、高い画面だとスクロールしない）
+    test.use({ viewport: { width: 390, height: 480 }, hasTouch: true });
 
-  test("縦に動かしたら答えにならない（スクロール）", async ({ page }) => {
-    await openHome(page);
-    await openYear(page, "民法", "R08", "肢で解く");
-    await page.evaluate(() => window.scrollTo(0, 0));
-    await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
-    await drag(page, 20, -200);
-    await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(0); // ページはスクロールする
-    await expect(page.locator(".page .result")).toHaveCount(0);
+    test("少し斜めにはじいても答えになり、その間ページは縦にスクロールしない", async ({ page }) => {
+      await openHome(page);
+      await openYear(page, "民法", "R08", "肢で解く");
+      // 一番上から、指を上へ斜めに動かす（スクロールを止めなければ下へスクロールするページ。縦のテストで確かめた）
+      await page.evaluate(() => window.scrollTo(0, 0));
+      await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
+      await drag(page, 160, -60);
+      await expect(page.locator(".page .result")).toBeVisible();
+      expect(await page.evaluate(() => window.scrollY)).toBe(0);
+    });
+
+    test("縦に動かしたら答えにならない（スクロール）", async ({ page }) => {
+      await openHome(page);
+      await openYear(page, "民法", "R08", "肢で解く");
+      await page.evaluate(() => window.scrollTo(0, 0));
+      await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
+      await drag(page, 20, -200);
+      await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(0); // ページはスクロールする
+      await expect(page.locator(".page .result")).toHaveCount(0);
+    });
   });
 
   test("少しだけ動かして離したら答えにならない", async ({ page }) => {

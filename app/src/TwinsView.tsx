@@ -20,11 +20,12 @@ export function Highlighted({ text, ranges }: { text: string; ranges: Range[] })
   return <>{parts}</>;
 }
 
-export default function TwinsView({ twins }: { twins: TwinView[] }) {
+/** bare：見出しを出さない（答え合わせでは、開閉の見出しの中に入れる） */
+export default function TwinsView({ twins, bare = false }: { twins: TwinView[]; bare?: boolean }) {
   if (twins.length === 0) return null;
   return (
     <div className="twins">
-      <div className="twins-title">よく似た肢（○×が逆）</div>
+      {!bare && <div className="twins-title">よく似た肢（○×が逆）</div>}
       {twins.map((t) => (
         <div key={t.otherId} className="twin-pair">
           <div className="twin-row">

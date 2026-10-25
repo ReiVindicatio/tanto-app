@@ -41,7 +41,8 @@ test("結果画面：正答率・科目ごと・まちがえた肢の一覧が�
   await expect(page.locator(".wrong-item")).toHaveCount(wrong);
   test.skip(wrong === 0, "今回の10枚にまちがえる肢がなかった");
   await page.locator(".wrong-item").first().locator(":scope > summary").click();
-  await expect(page.locator(".wrong-item").first().locator(".explanation, .muted.small").last()).toBeVisible();
+  // 解説（結論）か「この肢の解説はまだありません」が見える（生成情報は「この解説について」に畳んである）
+  await expect(page.locator(".wrong-item").first().locator(".explanation .conclusion, :scope > .muted.small").first()).toBeVisible();
   await page.getByRole("button", { name: /まちがえた肢だけもう一度/ }).click();
   await expect(page.locator(".toolbar")).toContainText(`1 / ${wrong}`);
 });

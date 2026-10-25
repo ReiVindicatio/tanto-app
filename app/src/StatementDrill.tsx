@@ -315,33 +315,35 @@ export default function StatementDrill({
               <span className="muted small">　出題時点の公式の解答による</span>
             </div>
             <LawNote q={q} />
-            {trapsReady && !truth && <TrapNote statementId={s.id} />}
-            {BASIS_NOTE[s.truth_at_exam!.basis] && <p className="small muted">{BASIS_NOTE[s.truth_at_exam!.basis]}</p>}
             {expById.has(s.id) ? (
               <ExplanationView e={expById.get(s.id)!} />
             ) : (
               <p className="muted small">この肢の解説はまだありません。</p>
             )}
-            {twinsReady && (
-              <TwinsView twins={twinsOf(twinsIfLoaded()!, s.id, new Set(order.slice(i + 1).map((x) => cardIdOf(x.id))))} />
-            )}
-            <div className="muted small">
-              出典の位置：{o.examName} {q.exam.era} {o.subjectName} 第{q.number}問
-              {s.sub !== undefined && ` 小問${q.sub_questions[s.sub].marker}`} 肢{s.label}
-            </div>
-            <ReportLink target={s.id} context={reportContext(expById.get(s.id))} />
-            {s.same_as && s.same_as.length > 0 && (
-              <div className="muted small same-as">
-                同じ肢：{s.same_as.map((x) => `${x.exam} ${x.era} 第${x.number}問 肢${x.label}`).join("・")}
-                （1枚のカードとして記録します）
-              </div>
-            )}
+            {/* ひっかけの型・よく似た肢は、1行の見出しだけ出して押すと開く（答え合わせの画面を短くする：2026-10-25） */}
+            {trapsReady && !truth && <TrapNote statementId={s.id} />}
+            {twinsReady && <TwinsDetails twins={twinsOf(twinsIfLoaded()!, s.id, new Set(order.slice(i + 1).map((x) => cardIdOf(x.id))))} />}
             <div className="row">
               <StarButton id={s.id} />
               <button className="secondary small" onClick={() => setShowQuestion(!showQuestion)}>
                 {showQuestion ? "元の問題を閉じる" : "元の問題を見る"}
               </button>
             </div>
+            <ReportLink target={s.id} context={reportContext(expById.get(s.id))} />
+            <details className="answer-more">
+              <summary>出典など</summary>
+              <div className="muted small">
+                出典の位置：{o.examName} {q.exam.era} {o.subjectName} 第{q.number}問
+                {s.sub !== undefined && ` 小問${q.sub_questions[s.sub].marker}`} 肢{s.label}
+              </div>
+              {s.same_as && s.same_as.length > 0 && (
+                <div className="muted small same-as">
+                  同じ肢：{s.same_as.map((x) => `${x.exam} ${x.era} 第${x.number}問 肢${x.label}`).join("・")}
+                  （1枚のカードとして記録します）
+                </div>
+              )}
+              {BASIS_NOTE[s.truth_at_exam!.basis] && <p className="small muted">{BASIS_NOTE[s.truth_at_exam!.basis]}</p>}
+            </details>
             {showQuestion && (
               <QuestionBody
                 q={q}
@@ -381,15 +383,32 @@ function reportContext(e: Explanation | undefined): Record<string, unknown> {
   return { screen: "statement", explanation: e ? { model: e.model, prompt_version: e.prompt_version, generated_at: e.generated_at } : null };
 }
 
-/** ×の肢のひっかけの型（T059。AI による分類） */
+/** ×の肢のひっかけの型（T059。AI による分類）。見出しに型の名前、開くと理由と型の説明 */
 function TrapNote({ statementId }: { statementId: string }) {
   const t = trapsIfLoaded();
   const trap = t ? trapOf(t, statementId) : null;
   if (!trap) return null;
   return (
-    <div className="trap-note small">
-      <span className="trap-label">ひっかけの型</span> <strong>{trap.name}</strong>
-      <span className="muted">　{trap.why}（AI による分類）</span>
-    </div>
+    <details className="trap-note answer-extra">
+      <summary>
+        <span className="trap-label">ひっかけの型</span> <strong>{trap.name}</strong>
+        <span className="muted small">（AI による分類）</span>
+      </summary>
+      <div className="small">{trap.why}</div>
+      <div className="muted small">{trap.desc}</div>
+    </details>
+  );
+}
+
+/** よく似た肢（T050）。見出しに件数、開くと並べて違う部分に色 */
+function TwinsDetails({ twins }: { twins: ReturnType<typeof twinsOf> }) {
+  if (twins.length === 0) return null;
+  return (
+    <details className="twins-details answer-extra">
+      <summary>
+        <span className="trap-label">よく似た肢</span> <strong>○×が逆の肢 {twins.length}件</strong>
+      </summary>
+      <TwinsView twins={twins} bare />
+    </details>
   );
 }
