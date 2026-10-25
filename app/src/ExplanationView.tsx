@@ -1,4 +1,5 @@
 import type { Explanation, QuestionExplanation } from "./types";
+import { navigate } from "./router";
 
 function articleName(article: string): string {
   const [main, sub] = article.split("_");
@@ -20,8 +21,11 @@ export default function ExplanationView({ e }: { e: Explanation | QuestionExplan
             {e.citations.map((c, i) => (
               <li key={i}>
                 <div className="small">
-                  {c.law}
-                  {articleName(c.article)}
+                  {/* 押すと条文の画面（T060）：条の全文と、その条を引いた過去の肢 */}
+                  <button className="link small article-link" onClick={() => navigate({ name: "article", law: c.law, article: c.article })}>
+                    {c.law}
+                    {articleName(c.article)}
+                  </button>
                   {c.paragraphs.join("・")}項
                   <span className="muted">（{c.fetched_at} 取得の現行条文）</span>
                 </div>

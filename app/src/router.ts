@@ -9,6 +9,7 @@ export type Route =
   | { name: "me" }
   | { name: "play" }
   | { name: "mock" }
+  | { name: "article"; law: string; article: string }
   | { name: "privacy" }
   | { name: "terms" };
 
@@ -25,6 +26,8 @@ export function parse(pathname: string): Route {
   if (p === "/me") return { name: "me" };
   if (p === "/play") return { name: "play" };
   if (p === "/mock") return { name: "mock" };
+  const a = p.match(/^\/articles\/([^/]+)\/([^/]+)$/);
+  if (a) return { name: "article", law: decodeURIComponent(a[1]), article: decodeURIComponent(a[2]) };
   if (p === "/privacy") return { name: "privacy" };
   if (p === "/terms") return { name: "terms" };
   return { name: "home" };
@@ -32,6 +35,7 @@ export function parse(pathname: string): Route {
 
 export function toPath(r: Route): string {
   const p = { home: "/", subjects: "/subjects", me: "/me", play: "/play", mock: "/mock", privacy: "/privacy", terms: "/terms" } as const;
+  if (r.name === "article") return `${BASE}/articles/${encodeURIComponent(r.law)}/${encodeURIComponent(r.article)}`;
   return BASE + (r.name === "subject" ? `/subjects/${r.subject}` : p[r.name]);
 }
 
@@ -41,6 +45,7 @@ export function tabOf(r: Route): Tab | null {
   if (r.name === "play") return null;
   if (r.name === "privacy" || r.name === "terms") return "me"; // マイページ・フッターから開く
   if (r.name === "mock") return "home"; // 模試を選ぶ画面はホームから開く
+  if (r.name === "article") return "subjects"; // 条文の画面（T060）
   return r.name;
 }
 

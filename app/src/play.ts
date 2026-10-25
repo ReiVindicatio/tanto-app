@@ -23,6 +23,12 @@ export type PlaySession =
   | { kind: "questions"; info: SetInfo; data: DataSet };
 
 let current: PlaySession | null = null;
+/** 始めた回の通し番号（解く画面の作り直しの目印。条文の画面などから新しく始めたとき、前の回の画面を使い回さない） */
+let seq = 0;
+
+export function playSeq(): number {
+  return seq;
+}
 
 export function currentPlay(): PlaySession | null {
   return current;
@@ -65,6 +71,7 @@ function hasCardLists(infos: SetInfo[]): boolean {
 
 function start(s: PlaySession): void {
   current = s;
+  seq++;
   navigate({ name: "play" });
 }
 

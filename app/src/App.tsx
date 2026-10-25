@@ -13,7 +13,8 @@ import { onLearningChange } from "./learning";
 import { onBookmarksChange } from "./bookmarks";
 import { groupBySubject, useSets } from "./data";
 import { back, navigate, tabOf, useRoute } from "./router";
-import { currentPlay } from "./play";
+import { currentPlay, playSeq } from "./play";
+import ArticlePage from "./screens/ArticlePage";
 import TabBar from "./TabBar";
 import StreakChip from "./StreakChip";
 import Home from "./screens/Home";
@@ -35,7 +36,9 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
   const [includePreReform, setIncludePreReform] = useState(false);
 
   const groups = groupBySubject(sets ?? []);
-  const play = route.name === "play" ? currentPlay() : null;
+  // 解いている途中に条文の画面（T060）へ行っても、解く画面は裏に残して状態を消さない（戻ると続きから）
+  const play = route.name === "play" || route.name === "article" ? currentPlay() : null;
+  const playHidden = route.name !== "play";
   const group = route.name === "subject" ? groups.find((g) => g.subject === route.subject) : undefined;
 
   // 再読み込みなどで解く中身がない／存在しない科目のときは、行き先を直す
@@ -45,7 +48,7 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
   }, [route, sets, group]);
 
   const tab = tabOf(route);
-  const attribution = play ? play.data.attribution : sets?.[0]?.attribution;
+  const attribution = play && !playHidden ? play.data.attribution : sets?.[0]?.attribution;
 
   return (
     <SyncContext.Provider value={sync}>
@@ -77,31 +80,37 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
           {route.name === "me" && <MyPage auth={auth} sync={sync} groups={groups} cardIds={cardIds} />}
           {route.name === "privacy" && <Privacy />}
           {route.name === "terms" && <Terms />}
-          {play?.kind === "statements" && (
-            <StatementDrill
-              title={play.title}
-              data={play.data}
-              cards={play.cards}
-              origin={play.origin}
-              more={play.more}
-              onExit={() => back()}
-            />
-          )}
+          {sets && route.name === "article" && <ArticlePage law={route.law} article={route.article} sets={sets} />}
           {sets && route.name === "mock" && <MockHome sets={sets} />}
-          {play?.kind === "mock" && (
-            <MockDrill unit={play.unit} minutes={play.minutes} data={play.data} exams={play.exams} onExit={() => back({ name: "mock" })} />
+          {/* 解く画面。条文の画面（T060）を開いている間は隠して残す。新しく始めた回は作り直す（key） */}
+          {play && (
+            <div hidden={playHidden} key={playSeq()}>
+              {play.kind === "statements" && (
+                <StatementDrill
+                  title={play.title}
+                  data={play.data}
+                  cards={play.cards}
+                  origin={play.origin}
+                  more={play.more}
+                  onExit={() => back()}
+                />
+              )}
+              {play.kind === "mock" && (
+                <MockDrill unit={play.unit} minutes={play.minutes} data={play.data} exams={play.exams} onExit={() => back({ name: "mock" })} />
+              )}
+              {play.kind === "listen" && (
+                <ListenPlayer
+                  title={play.title}
+                  data={play.data}
+                  cards={play.cards}
+                  origin={play.origin}
+                  more={play.more}
+                  onExit={() => back()}
+                />
+              )}
+              {play.kind === "questions" && <QuestionDrill info={play.info} data={play.data} onExit={() => back()} />}
+            </div>
           )}
-          {play?.kind === "listen" && (
-            <ListenPlayer
-              title={play.title}
-              data={play.data}
-              cards={play.cards}
-              origin={play.origin}
-              more={play.more}
-              onExit={() => back()}
-            />
-          )}
-          {play?.kind === "questions" && <QuestionDrill info={play.info} data={play.data} onExit={() => back()} />}
         </main>
         <Footer attribution={attribution} compact={tab === null} />
         {tab && <TabBar active={tab} />}

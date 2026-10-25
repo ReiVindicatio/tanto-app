@@ -9,6 +9,8 @@
   app/public/data/twins.json                  … よく似ているのに○×が逆の肢カードの組（T050）
   app/public/data/exams.json                  … 模試（T028）の試験時間・合格点・平均点・得点別人員（data/exams/short_answer.json から）
   app/public/data/traps.json                  … ×の肢のひっかけの型（T059。AI による分類。data/traps/traps.json から）
+  app/public/data/articles.json               … 条 → その条を解説が引いた肢カード（T060）
+  app/public/data/articles/<法令の ID>.json   … その法令の、解説が引いた条だけの全文（T060。data/statutes/ から）
 
 名寄せ（決定018）：同じ科目で、本文が同じ（全角半角・空白・句読点をならす）で、出題時点の○×も同じ肢を
 1枚のカードにまとめる。前提文が要る肢は、前提文とリード文も同じときだけ。カード ID は予備（同じ試験なら古い年度）の肢 ID。
@@ -29,6 +31,7 @@ from check_explanations import EXPLANATIONS, check_question
 from common import EXAM_IDS, GROUP_IDS, ROOT, SUBJECT_IDS
 from topics import OTHER, Tocs, topic_of
 from twins import display_text, find_pairs
+from egov import LAWS, load_law
 
 QUESTIONS = ROOT / "data" / "questions"
 EXAMS = ROOT / "data" / "exams" / "short_answer.json"
@@ -268,6 +271,42 @@ def traps() -> dict:
             "types": {k: {"name": n, "desc": d} for k, (n, d) in TRAP_TYPES.items()}, "items": items}
 
 
+def articles(docs: list[dict]) -> tuple[dict, dict[str, dict]]:
+    """条文から逆引き（T060）：条 → その条を解説が引いた肢カード（名寄せの代表・肢カードから外していないもの。引用のすべてを数える）と、
+    法令ごとの、引かれた条だけの全文（e-Gov から保存した現行法）"""
+    links: dict[str, dict[str, set[str]]] = {}
+    for doc in docs:
+        exp = {e["statement_id"]: e for e in doc["explanations"]}
+        for st in doc["statements"]:
+            if not st["truth_at_exam"] or "review_flag" in st or "card" in st or st["id"] not in exp:
+                continue
+            for c in exp[st["id"]]["citations"]:
+                if c.get("type") == "statute":
+                    links.setdefault(c["law"], {}).setdefault(c["article"], set()).add(st["id"])
+    def art_key(a: str):
+        # 条の番号の順（枝番は後ろ。前文・別表など数字でないものは最後）
+        return (tuple(int(x) if x.isdigit() else 10**9 for x in a.split("_")), a)
+    index = {"note": "条 → その条を解説が引いた肢カード（解説が引いた条文から数えたもの。AI 生成の解説に基づき、公式の分類ではない。T060）", "laws": {}}
+    texts: dict[str, dict] = {}
+    for law in sorted(links, key=lambda l: -sum(len(v) for v in links[l].values())):
+        lid = LAWS[law][0] if law in LAWS else None
+        arts = {a: " ".join(sorted(ids)) for a, ids in sorted(links[law].items(), key=lambda kv: art_key(kv[0]))}
+        index["laws"][law] = {"id": lid, "articles": arts}
+        if lid:
+            try:
+                full = load_law(law)
+            except FileNotFoundError:
+                continue
+            # 条の見出し（「（虚偽表示）」）。よく出る条文の一覧に出す（全文を読まずに済むように）
+            index["laws"][law]["captions"] = {a: (full["articles"][a].get("caption") or "").strip("（）()")
+                                              for a in arts if a in full["articles"] and full["articles"][a].get("caption")}
+            texts[lid] = {"law": law, "fetched_at": full.get("fetched_at"), "source": full.get("url"),
+                          "articles": {a: {"title": full["articles"][a].get("title"), "caption": full["articles"][a].get("caption"),
+                                           "paragraphs": full["articles"][a].get("paragraphs", [])}
+                                       for a in arts if a in full["articles"]}}
+    return index, texts
+
+
 def card_list(doc: dict, name: str) -> str:
     """出題できる肢カードの ID（束の ID を除いた「q11-e」の形）を空白でつないだもの（T038）。
     アプリは起動時に index.json だけ読み、枚数・回答済みの数・今日の○問の選び出しに使う。問の ID は「束の ID-q11」"""
@@ -342,6 +381,12 @@ def main() -> None:
     topic_doc = {"note": "分野は、解説が最初に引いている条文の、e-Gov の目次での編・章（T016）。条文を引いていない肢は「その他」",
                  "subjects": topics(docs)}
     (OUT / "topics.json").write_text(json.dumps(topic_doc, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    # 条文から逆引き（T060）
+    art_index, art_texts = articles(docs)
+    (OUT / "articles.json").write_text(json.dumps(art_index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    (OUT / "articles").mkdir(exist_ok=True)
+    for lid, t in art_texts.items():
+        (OUT / "articles" / f"{lid}.json").write_text(json.dumps(t, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     # ひっかけの型（T059）
     (OUT / "traps.json").write_text(json.dumps(traps(), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     # 模試（T028）の材料
