@@ -8,6 +8,7 @@ import { buildSession } from "./srs";
 import { buildDaily, ENDLESS_BATCH } from "./daily";
 import { cardIdOf } from "./learning";
 import { navigate } from "./router";
+import type { Exams, MockUnit } from "./mock";
 
 /** 問の出典の名前（試験名・科目名）。今日の○問では科目がまざるので、問ごとに引く */
 export type OriginOf = (q: Question) => { examName: string; subjectName: string };
@@ -18,6 +19,7 @@ export type More = (exclude: Set<string>) => Promise<{ data: DataSet; cards: Sta
 export type PlaySession =
   | { kind: "statements"; title: string; data: DataSet; cards: Statement[]; origin: OriginOf; more?: More }
   | { kind: "listen"; title: string; data: DataSet; cards: Statement[]; origin: OriginOf; more: More }
+  | { kind: "mock"; unit: MockUnit; minutes: number; data: DataSet; exams: Exams | null }
   | { kind: "questions"; info: SetInfo; data: DataSet };
 
 let current: PlaySession | null = null;
@@ -134,6 +136,12 @@ export async function startChosen(infos: SetInfo[], chosen: CardRef[], title: st
 export async function startInOrder(infos: SetInfo[], chosen: CardRef[], title: string): Promise<void> {
   const { data, cards } = await loadChosen(infos, chosen);
   start({ kind: "statements", title, data, cards, origin: originOf(infos) });
+}
+
+/** 模試（T028）：単位（科目群・科目）の束を全部読んで、本番の時間で解く */
+export async function startMock(unit: MockUnit, minutes: number, exams: Exams | null): Promise<void> {
+  const data = merge(await Promise.all(unit.sets.map(loadSet)));
+  start({ kind: "mock", unit, minutes, data, exams });
 }
 
 /** 問で解く（本番形式） */

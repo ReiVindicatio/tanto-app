@@ -135,6 +135,10 @@ export default function Home({
       <button className="secondary wide" onClick={() => navigate({ name: "subjects" })}>
         科目・年度を選んで解く
       </button>
+
+      <button className="secondary wide" onClick={() => navigate({ name: "mock" })}>
+        ⏱ 模試（本番の時間で解く）
+      </button>
     </section>
   );
 }

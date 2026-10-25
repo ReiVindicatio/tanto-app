@@ -7,6 +7,7 @@
   app/public/data/<exam>-<year>-<subject>.json … 正本と同じ形（名寄せした肢に card・same_as を足す）
   app/public/data/topics.json                 … 分野ごとの肢カード（T016）
   app/public/data/twins.json                  … よく似ているのに○×が逆の肢カードの組（T050）
+  app/public/data/exams.json                  … 模試（T028）の試験時間・合格点・平均点・得点別人員（data/exams/short_answer.json から）
 
 名寄せ（決定018）：同じ科目で、本文が同じ（全角半角・空白・句読点をならす）で、出題時点の○×も同じ肢を
 1枚のカードにまとめる。前提文が要る肢は、前提文とリード文も同じときだけ。カード ID は予備（同じ試験なら古い年度）の肢 ID。
@@ -29,6 +30,7 @@ from topics import OTHER, Tocs, topic_of
 from twins import display_text, find_pairs
 
 QUESTIONS = ROOT / "data" / "questions"
+EXAMS = ROOT / "data" / "exams" / "short_answer.json"
 FLAGS = ROOT / "data" / "review" / "flags.json"
 OUT = ROOT / "app" / "public" / "data"
 
@@ -211,6 +213,27 @@ def twins(docs: list[dict]) -> dict:
             "pairs": pairs, "cards": {i: info[i] for i in used}}
 
 
+def exams() -> dict:
+    """模試（T028）の材料をアプリの形にする。得点別人員は 0 点からの人数の並びにする（読み込みを小さく）"""
+    src = json.loads(EXAMS.read_text(encoding="utf-8"))
+    results = {}
+    for key, r in src["results"].items():
+        out = {"pass_total": r["pass_total"], "total_full": r["total"]["full"], "scored": r["scored"],
+               "subjects": {s: {"full": v["full"], "avg": v["avg"]} for s, v in r["subjects"].items()}}
+        if "min_line_rate" in r:
+            out["min_line_rate"] = r["min_line_rate"]
+        if r.get("distribution"):
+            out["distribution"] = {s: [d[str(k)] for k in range(len(d))] for s, d in r["distribution"].items()}
+        results[key] = out
+    return {
+        "note": "出典：法務省ウェブサイト「司法試験予備試験の結果について」「司法試験の結果について」（短答式試験の結果）・各受験案内。"
+                "このアプリが PDF から読み取ったもの（pipeline/exam_info.py）",
+        "times": {e: {"year": t["year"], "minutes": t["minutes"]} for e, t in src["times"].items()},
+        "results": results,
+        "unreadable": sorted(src.get("unreadable", {})),
+    }
+
+
 def card_list(doc: dict, name: str) -> str:
     """出題できる肢カードの ID（束の ID を除いた「q11-e」の形）を空白でつないだもの（T038）。
     アプリは起動時に index.json だけ読み、枚数・回答済みの数・今日の○問の選び出しに使う。問の ID は「束の ID-q11」"""
@@ -285,6 +308,8 @@ def main() -> None:
     topic_doc = {"note": "分野は、解説が最初に引いている条文の、e-Gov の目次での編・章（T016）。条文を引いていない肢は「その他」",
                  "subjects": topics(docs)}
     (OUT / "topics.json").write_text(json.dumps(topic_doc, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    # 模試（T028）の材料
+    (OUT / "exams.json").write_text(json.dumps(exams(), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     twin_doc = twins(docs)
     (OUT / "twins.json").write_text(json.dumps(twin_doc, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     index = {"sets": sets, "aliases": dict(sorted(aliases.items()))}

@@ -1365,3 +1365,106 @@ mark.twin-diff {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+/* 模試（T028） */
+.mock-clock {
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+}
+
+.mock-clock.warn {
+  color: var(--ng);
+}
+
+.mock-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 8px 0 12px;
+}
+
+.mock-palette button {
+  min-width: 2.2em;
+  padding: 2px 4px;
+  font-size: 0.8rem;
+  background: var(--bg);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+.mock-palette button.answered {
+  background: var(--bg-subtle);
+  color: var(--text-strong);
+}
+
+.mock-palette button.current {
+  border-color: var(--brand);
+  color: var(--brand);
+  font-weight: bold;
+}
+
+.mock-units {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mock-units button {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  text-align: left;
+}
+
+.mock-total {
+  margin: 12px 0;
+  font-size: 1.1rem;
+}
+
+.mock-total .big {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.mock-subjects {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin: 8px 0;
+}
+
+.mock-subjects th,
+.mock-subjects td {
+  white-space: nowrap;
+  padding: 6px 4px;
+  border-bottom: 1px solid var(--border-subtle);
+  text-align: left;
+}
+
+.mock-subjects td.ok {
+  color: var(--ok);
+}
+
+.mock-subjects td.ng {
+  color: var(--ng);
+}
+
+.mock-questions {
+  list-style: none;
+  padding: 0;
+}
+
+.mock-questions li {
+  border-left: 3px solid var(--border);
+  padding: 4px 8px;
+  margin: 6px 0;
+}
+
+.mock-questions li.ok {
+  border-left-color: var(--ok);
+}
+
+.mock-questions li.ng {
+  border-left-color: var(--ng);
+}

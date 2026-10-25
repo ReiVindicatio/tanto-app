@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import StatementDrill from "./StatementDrill";
 import ListenPlayer from "./ListenPlayer";
+import MockDrill from "./MockDrill";
+import MockHome from "./screens/MockHome";
 import QuestionDrill from "./QuestionDrill";
 import Footer from "./Footer";
 import type { Filter } from "./history";
@@ -80,6 +82,10 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
               more={play.more}
               onExit={() => back()}
             />
+          )}
+          {sets && route.name === "mock" && <MockHome sets={sets} />}
+          {play?.kind === "mock" && (
+            <MockDrill unit={play.unit} minutes={play.minutes} data={play.data} exams={play.exams} onExit={() => back({ name: "mock" })} />
           )}
           {play?.kind === "listen" && (
             <ListenPlayer

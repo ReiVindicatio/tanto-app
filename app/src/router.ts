@@ -8,6 +8,7 @@ export type Route =
   | { name: "subject"; subject: string }
   | { name: "me" }
   | { name: "play" }
+  | { name: "mock" }
   | { name: "privacy" }
   | { name: "terms" };
 
@@ -23,13 +24,14 @@ export function parse(pathname: string): Route {
   if (m) return { name: "subject", subject: m[1] };
   if (p === "/me") return { name: "me" };
   if (p === "/play") return { name: "play" };
+  if (p === "/mock") return { name: "mock" };
   if (p === "/privacy") return { name: "privacy" };
   if (p === "/terms") return { name: "terms" };
   return { name: "home" };
 }
 
 export function toPath(r: Route): string {
-  const p = { home: "/", subjects: "/subjects", me: "/me", play: "/play", privacy: "/privacy", terms: "/terms" } as const;
+  const p = { home: "/", subjects: "/subjects", me: "/me", play: "/play", mock: "/mock", privacy: "/privacy", terms: "/terms" } as const;
   return BASE + (r.name === "subject" ? `/subjects/${r.subject}` : p[r.name]);
 }
 
@@ -38,6 +40,7 @@ export function tabOf(r: Route): Tab | null {
   if (r.name === "subject") return "subjects";
   if (r.name === "play") return null;
   if (r.name === "privacy" || r.name === "terms") return "me"; // マイページ・フッターから開く
+  if (r.name === "mock") return "home"; // 模試を選ぶ画面はホームから開く
   return r.name;
 }
 
