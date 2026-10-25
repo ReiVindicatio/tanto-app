@@ -1,5 +1,6 @@
 // マイページ（T025・T024・T034）：学習の軌跡（ヒートマップ・累計の伸び）・科目ごと・まちがえた肢・アカウント・表示
 import TrapSection from "./TrapSection";
+import { getGoal, GOALS, progressNow, setGoal } from "../progress";
 import { useState } from "react";
 import type { AuthClient } from "../auth";
 import type { SyncedStore } from "../sync";
@@ -132,6 +133,8 @@ export default function MyPage({
   cardIds: Map<string, CardRef[]>;
 }) {
   const [theme, setTheme] = useState<ThemePref>(getThemePref());
+  const [goal, setGoalState] = useState(getGoal());
+  const p = progressNow();
   const state = currentState();
   const t = totals(state.daily);
 
@@ -167,6 +170,37 @@ export default function MyPage({
           </span>
         </div>
         <ClimbChart points={cumulative(state.daily)} />
+        <div className="level-row">
+          <span className="ps-big">Lv.{p.level}</span>
+          <div className="grow">
+            <Progress value={p.into / p.need} />
+            <div className="muted small">
+              経験値 {p.xp.toLocaleString()}（次のレベルまで {p.need - p.into}）。1回答えると1、正解なら2
+            </div>
+          </div>
+        </div>
+        <div className="today-goal">
+          <span className="small">
+            今日 <strong>{p.today}</strong> / {goal} 肢{p.today >= goal && "　目標達成 ✓"}
+          </span>
+          <Progress value={Math.min(1, p.today / goal)} />
+        </div>
+        <div className="muted small">1日の目標</div>
+        <div className="segmented" role="group" aria-label="1日の目標">
+          {GOALS.map((n) => (
+            <button
+              key={n}
+              className={goal === n ? "chosen" : ""}
+              aria-pressed={goal === n}
+              onClick={() => {
+                setGoal(n);
+                setGoalState(n);
+              }}
+            >
+              {n}肢
+            </button>
+          ))}
+        </div>
       </div>
 
       <h2>科目ごと</h2>

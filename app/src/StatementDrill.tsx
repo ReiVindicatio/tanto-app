@@ -9,6 +9,7 @@ import TwinsView from "./TwinsView";
 import { loadTwinsWhenIdle, twinsIfLoaded, twinsOf } from "./twins";
 import { loadTrapsWhenIdle, trapOf, trapsIfLoaded } from "./traps";
 import { cardIdOf } from "./learning";
+import { milestones, progressNow } from "./progress";
 import { shuffle } from "./shuffle";
 import { recordAnswer } from "./learning";
 import { Progress } from "./screens/common";
@@ -65,6 +66,8 @@ export default function StatementDrill({
   const [startedAt, setStartedAt] = useState(() => Date.now());
   const [finishedAt, setFinishedAt] = useState<number | null>(null);
   const [showQuestion, setShowQuestion] = useState(false);
+  /** 答えたときに、レベルが上がった・今日の目標に届いた（T029） */
+  const [celebrate, setCelebrate] = useState<{ levelUp: number | null; goalReached: boolean } | null>(null);
   /** 「終わる」を押した（答えた分だけで結果を出す） */
   const [ended, setEnded] = useState(false);
   // エンドレス：読み足した肢の束。解き直し（まちがえた肢だけなど）に入ったら、もう読み足さない
@@ -188,7 +191,10 @@ export default function StatementDrill({
     if (answer !== null) return;
     if (swipe.el) flyAway(swipe.el, v ? "right" : "left", dx, v ? { text: "○", className: "maru" } : { text: "×", className: "batsu" });
     setAnswer(v);
+    const before = progressNow();
     recordAnswer(s.id, v === truth);
+    const m = milestones(before, progressNow());
+    setCelebrate(m.levelUp || m.goalReached ? m : null);
     setResults((r) => [...r, { statement: s, question: q, correct: v === truth }]);
   }
 
@@ -196,6 +202,7 @@ export default function StatementDrill({
     if (i + 1 >= order.length) setFinishedAt(Date.now());
     setI(i + 1);
     setAnswer(null);
+    setCelebrate(null);
     setShowQuestion(false);
     window.scrollTo(0, 0);
   }
@@ -297,6 +304,12 @@ export default function StatementDrill({
               {answer === truth ? "正解" : "不正解"}
               {answer === truth && streak >= 3 && <span className="combo">{streak}連続正解</span>}
             </div>
+            {celebrate && (
+              <div className="celebrate">
+                {celebrate.levelUp && <span>🎉 レベルアップ！ Lv.{celebrate.levelUp}</span>}
+                {celebrate.goalReached && <span>✅ 今日の目標達成！</span>}
+              </div>
+            )}
             <div>
               この記述は <strong>{truth ? "○（正しい）" : "×（誤り）"}</strong>
               <span className="muted small">　出題時点の公式の解答による</span>

@@ -1499,3 +1499,43 @@ mark.twin-diff {
   padding: 8px 0;
   border-top: 1px solid var(--border-subtle);
 }
+
+/* 継続とレベル（T029） */
+.appbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.streak-chip {
+  font-weight: bold;
+  color: var(--text-strong);
+  padding: 2px 0;
+}
+
+.ps-big {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: var(--text-strong);
+}
+
+.today-goal {
+  margin: 4px 0 10px;
+}
+
+.celebrate {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 6px 0;
+  font-weight: bold;
+  animation: combo-pop 0.4s ease-out;
+}
+
+.level-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 12px 0 8px;
+}

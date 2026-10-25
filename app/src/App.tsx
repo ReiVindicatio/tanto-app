@@ -15,6 +15,7 @@ import { groupBySubject, useSets } from "./data";
 import { back, navigate, tabOf, useRoute } from "./router";
 import { currentPlay } from "./play";
 import TabBar from "./TabBar";
+import StreakChip from "./StreakChip";
 import Home from "./screens/Home";
 import SubjectList from "./screens/SubjectList";
 import SubjectPage from "./screens/SubjectPage";
@@ -53,7 +54,10 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
           <button className="link brand" onClick={() => navigate({ name: "home" })}>
             たんたん<span className="muted">（短答の一問一答・非公式）</span>
           </button>
-          {sync && <SyncBadge sync={sync} />}
+          <div className="appbar-right">
+            {tab && <StreakChip />}
+            {sync && <SyncBadge sync={sync} />}
+          </div>
         </header>
         <main>
           {error && <p className="error">データを読めませんでした：{error}</p>}
