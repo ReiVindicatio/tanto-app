@@ -1,0 +1,257 @@
+{
+ "question_id": "yobi-2015-minpo-q06",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-minpo-q06-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。一般の先取特権は債務者の総財産を目的とするので、売却で債務者が取得した代金債権もそれ自体が目的財産となり、物上代位の差押えをしなくても行使できると解されている（306条）。",
+   "body": "ポイントは、304条1項ただし書の差押えが一般の先取特権にも要るかである。304条1項は、先取特権は目的物の売却等によって「債務者が受けるべき金銭その他の物に対しても、行使することができる。ただし、先取特権者は、その払渡し又は引渡しの前に差押えをしなければならない。」と定める。しかし、一般の先取特権者は「債務者の総財産について先取特権を有する」（306条）。動産が売却されて債務者が代金債権を取得すれば、その代金債権も債務者の総財産に含まれるから、一般の先取特権者は物上代位によらずに代金債権そのものについて先取特権を行使でき、払渡し前の差押えは要らないと解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "304",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者が受けるべき金銭その他の物に対しても、行使することができる。ただし、先取特権者は、その払渡し又は引渡しの前に差押えをしなければならない。",
+     "text_sha256": "b1d11df2a52bc9d5d50b2080a81c4513959c0d738f906fbf8ec831ddcca44d4d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "306",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者の総財産について先取特権を有する",
+     "text_sha256": "d27b31ff01628e5c4a6bef413294b683bafca5562f9c2181db4a221d8072b6c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない（2016年10月より前の版は e-Gov にない）",
+    "代金債権を総財産の一部として直接行使でき差押えが不要とする点は解釈による"
+   ],
+   "id": "exp-yobi-2015-minpo-q06-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-minpo-q06-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。先取特権は被担保債権を担保するための権利であり、被担保債権が譲渡されれば先取特権もこれに伴って移転する（随伴性）と解されている。",
+   "body": "ポイントは、担保物権の随伴性である。303条は、先取特権者は「その債務者の財産について、他の債権者に先立って自己の債権の弁済を受ける権利を有する。」と定めており、先取特権は債権の弁済を確保するための権利である。このため、先取特権は被担保債権に従たる権利として、被担保債権が第三者に譲渡されれば、これとともに第三者に移転すると解されている（随伴性）。動産売買の先取特権（311条5号「動産の売買」）も同じであり、代金債権の譲受人が先取特権を取得する。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "303",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その債務者の財産について、他の債権者に先立って自己の債権の弁済を受ける権利を有する。",
+     "text_sha256": "6a8e595db5fb16129340e97f53d147d3079f19abafbb0571155fc83639196ed4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "311",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "動産の売買",
+     "text_sha256": "165463f0f8097eaabbfdacae6ea254f72006f8e1cf677f5a8f1f59af4a8aa4d6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない（2016年10月より前の版は e-Gov にない）",
+    "随伴性は条文に明記がなく、解釈による"
+   ],
+   "id": "exp-yobi-2015-minpo-q06-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-minpo-q06-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。動産質権者は第一順位の先取特権者と同一の権利を有するが、債権取得の時に第三順位の動産売買先取特権者があることを知っていたときは優先権を行使できないので、常に先順位となるわけではない（334条・330条2項）。",
+   "body": "誤りは、動産質権が動産売買先取特権より常に先順位になるとした点である。334条は「先取特権と動産質権とが競合する場合には、動産質権者は、第三百三十条の規定による第一順位の先取特権者と同一の権利を有する。」と定め、330条1項は動産の売買の先取特権を第三順位としている。そのため原則として動産質権が優先するが、330条2項は「第一順位の先取特権者は、その債権取得の時において第二順位又は第三順位の先取特権者があることを知っていたときは、これらの者に対して優先権を行使することができない。」と定める。質権者が債権取得の時に動産売買先取特権者がいることを知っていたときは動産質権は優先しないので、一律に先順位とする本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "334",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "先取特権と動産質権とが競合する場合には、動産質権者は、第三百三十条の規定による第一順位の先取特権者と同一の権利を有する。",
+     "text_sha256": "0d2b455ee5d475deb9ef368272780b9bf1b2cf8b21bc491e505c5f29e9b70ddd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "330",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "動産の売買、種苗又は肥料の供給、農業の労務及び工業の労務の先取特権",
+     "text_sha256": "22f7a1410b0c34b57477cd539caad8b5b11392fb492eba54bc911ba07bc8ea24",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "330",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第一順位の先取特権者は、その債権取得の時において第二順位又は第三順位の先取特権者があることを知っていたときは、これらの者に対して優先権を行使することができない。",
+     "text_sha256": "22f7a1410b0c34b57477cd539caad8b5b11392fb492eba54bc911ba07bc8ea24",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない（2016年10月より前の版は e-Gov にない）",
+    "334条により質権者に330条2項も及ぶとして説明した点は解釈による"
+   ],
+   "id": "exp-yobi-2015-minpo-q06-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-minpo-q06-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。保存行為の完了後直ちに登記をした不動産保存の先取特権は、抵当権に先立って行使することができる（337条・339条）。",
+   "body": "誤りは、先に登記された抵当権に先立って行使できないとした点である。337条は「不動産の保存の先取特権の効力を保存するためには、保存行為が完了した後直ちに登記をしなければならない。」と定める。そして339条は「前二条の規定に従って登記をした先取特権は、抵当権に先立って行使することができる。」と定めており、抵当権の登記が先であるかどうかを問わない。本肢の先取特権は保存行為の完了後直ちに登記されているから、先に登記された抵当権にも優先し、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "337",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産の保存の先取特権の効力を保存するためには、保存行為が完了した後直ちに登記をしなければならない。",
+     "text_sha256": "65e5f39ff317b9ed7bc49a30742e3285a79f7369b30ee34aa44741d399042b0d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "339",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の規定に従って登記をした先取特権は、抵当権に先立って行使することができる。",
+     "text_sha256": "9f665c11efde9628326ad9f768336fe3fea3310615e6c2a2c6e5f1f05f779ec0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない（2016年10月より前の版は e-Gov にない）",
+    "339条が抵当権の登記の先後を問わないとする点は解釈による"
+   ],
+   "id": "exp-yobi-2015-minpo-q06-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2015-minpo-q06-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。不動産工事の先取特権の効力を保存するには、工事を始める前にその費用の予算額を登記しなければならない（338条1項）。",
+   "body": "ポイントは、登記の時期と内容である。338条1項は「不動産の工事の先取特権の効力を保存するためには、工事を始める前にその費用の予算額を登記しなければならない。」と定めている。本肢はこの文言のとおりであり、正しい。なお、同項は「工事の費用が予算額を超えるときは、先取特権は、その超過額については存在しない。」とも定めている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "338",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産の工事の先取特権の効力を保存するためには、工事を始める前にその費用の予算額を登記しなければならない。",
+     "text_sha256": "3ea3709a7efd621fb876118483b5d98413d03337482f28b4562ef8143911da9e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "338",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "工事の費用が予算額を超えるときは、先取特権は、その超過額については存在しない。",
+     "text_sha256": "3ea3709a7efd621fb876118483b5d98413d03337482f28b4562ef8143911da9e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない（2016年10月より前の版は e-Gov にない）"
+   ],
+   "id": "exp-yobi-2015-minpo-q06-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,236 @@
+{
+ "question_id": "yobi-2016-minpo-q12",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q12-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。委任の解除は、652条が準用する620条により、将来に向かってのみ効力を生ずる。",
+   "body": "652条は「第六百二十条の規定は、委任について準用する」と定める。620条は、解除をした場合には「その解除は、将来に向かってのみその効力を生ずる」と定める。652条は解除の原因を限っていないので、債務不履行を理由に委任契約を解除したときも、解除の効力は将来に向かってのみ生ずる。継続的な契約である委任で、すでに処理された事務まで遡ってなかったことにしないための規定である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "652",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第六百二十条の規定は、委任について準用する。",
+     "text_sha256": "8e8e22f2b9eba6e48179e646a373b2e8607d1f8761a4ad82a89f1b788c5e0ea3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "620",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その解除は、将来に向かってのみその効力を生ずる",
+     "text_sha256": "89b3d2ae05c6774a66b5ad831647a6ea43b119d8c0cf17e9c6b2f4f76162dd36",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "620条は出題後に改正されている可能性がある（後段の損害賠償の部分）。改正前の内容は条文の本文で確認していない。肢の論点（将来に向かってのみ効力を生ずること）は今の本文で説明できる。"
+   ],
+   "id": "exp-yobi-2016-minpo-q12-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q12-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。委任も書面を要しない諾成契約であり、委任契約は書面でしなければ効力を生じないとする点が誤り。",
+   "body": "643条は「委任は、当事者の一方が法律行為をすることを相手方に委託し、相手方がこれを承諾することによって、その効力を生ずる」と定め、書面を要件としていない。準委任についても、656条が「この節の規定は、法律行為でない事務の委託について準用する」と定めるので、同じく書面は要らない。契約一般についても522条2項が、契約の成立には法令に特別の定めがある場合を除き「書面の作成その他の方式を具備することを要しない」と定める。したがって、準委任と委任を書面の要否で区別する肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "643",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "委任は、当事者の一方が法律行為をすることを相手方に委託し、相手方がこれを承諾することによって、その効力を生ずる。",
+     "text_sha256": "da5757c857a3eb3b248c64459d2162342fa7490dac1c8275ff7ce5e0fac6eb25",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "656",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この節の規定は、法律行為でない事務の委託について準用する。",
+     "text_sha256": "3a13d82060c353e2594a8b3a0a3f809dbe98b234e0d37e05a2f73cf70750b2db",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "522",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "書面の作成その他の方式を具備することを要しない",
+     "text_sha256": "f08d4f757a2a303c3c31ab8ac1445e51ad8cf0d6f905dd191caeab433df30932",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "522条2項は出題後の改正で置かれた規定で、改正前の内容は条文の本文で確認していない。643条・656条だけでも結論は同じ。"
+   ],
+   "id": "exp-yobi-2016-minpo-q12-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q12-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、受任者の代弁済請求権に対し、委任者は受任者に対する債権で相殺できないとする。",
+   "body": "650条2項は、受任者が委任事務を処理するのに必要と認められる債務を負担したときは「委任者に対し、自己に代わってその弁済をすることを請求することができる」と定める（代弁済請求権）。判例（最判昭和47年12月22日）は、受任者が650条2項前段に基づいて有する代弁済請求権に対しては、委任者は、受任者に対する債権をもって相殺することはできないとした。代弁済請求権は受任者の債権者への弁済に向けられたもので、委任者が自分の債権と相殺してしまうとその目的が果たせないためと解されている。したがって、委任者はこれを受働債権として相殺できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "650",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "委任者に対し、自己に代わってその弁済をすることを請求することができる",
+     "text_sha256": "c8d7dac2ae2fa48748a033348ac0168d2d83ef658e54c7b3244cb55094342a4a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "受任者の代弁済請求権を受働債権とする相殺",
+     "court": "最高裁判所第二小法廷",
+     "date": "1972-12-22",
+     "case_number": "昭和44(オ)135",
+     "holding": "受任者が民法650条2項前段に基づいて有する代弁済請求権に対しては、委任者は、受任者に対する債権をもって相殺することはできない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52637/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "相殺できない理由（代弁済請求権の目的）は解釈による。判例の理由づけは全文で確認していない。"
+   ],
+   "id": "exp-yobi-2016-minpo-q12-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q12-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。委任は受任者の死亡だけでなく、委任者の死亡によっても終了する。",
+   "body": "653条は、委任は次の事由によって終了するとし、1号に「委任者又は受任者の死亡」を挙げる。したがって、委任者が死亡したときも委任は終了するので、「委任者の死亡によっては終了しない」とする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "653",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "委任者又は受任者の死亡",
+     "text_sha256": "d5fd08a24dfabded2ae84afd489a38d8782a7badf15f0b07ddceac3f3b8a298f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。"
+   ],
+   "id": "exp-yobi-2016-minpo-q12-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q12-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。受任者は、特約がなければ報酬を請求できない。",
+   "body": "648条1項は「受任者は、特約がなければ、委任者に対して報酬を請求することができない」と定める。民法上の委任は無償が原則で、報酬を請求するには特約が要る。したがって、「特約がなくとも」報酬を請求できるとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "648",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "受任者は、特約がなければ、委任者に対して報酬を請求することができない。",
+     "text_sha256": "83bd312be69131df0ddf21a00dbd04c5fdfa35b4f464a2cd505efc76a3ca10be",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。"
+   ],
+   "id": "exp-yobi-2016-minpo-q12-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

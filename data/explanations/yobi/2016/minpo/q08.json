@@ -1,0 +1,253 @@
+{
+ "question_id": "yobi-2016-minpo-q08",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q08-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は、不可分債権を「債権の目的がその性質上不可分である場合」に限って定め（428条）、性質上可分な債権を当事者の意思表示によって数人が有する場合は「当事者の意思表示によって数人が連帯して債権を有するとき」として連帯債権の規定（432条）で扱う。肢の前提の、当事者の意思表示によって金銭債権を不可分債権とする規律は今の条文にない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "428",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権の目的がその性質上不可分である場合",
+     "text_sha256": "0a4fb084367cff7ed522b4be4573f1ec7cc01552934bb8c5eaa82cfa16ee6ca6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "432",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の意思表示によって数人が連帯して債権を有するとき",
+     "text_sha256": "6a7e02702e3fe1cc889527cd32b003a3c5d39634c5a91ae46637c1be8fc38eac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題は債権法改正（2020年4月施行）の前。改正前の内容は条文の本文で確認していない（H28 の問のため e-Gov の過去の版もない）。"
+   ],
+   "id": "exp-yobi-2016-minpo-q08-1",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q08-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。履行の場所の定めがなければ債権者の住所で弁済すべき持参債務になり、目的物を発送しただけでは給付に必要な行為を完了したとはいえず、その時に特定するのではない。",
+   "body": "401条2項は、種類債権について「債務者が物の給付をするのに必要な行為を完了し」たときは「以後その物を債権の目的物とする」と定める。弁済の場所について別段の意思表示がないときは、484条1項により、特定物の引渡し以外の弁済は「債権者の現在の住所において」しなければならない（持参債務）。持参債務では、債務者が目的物を債権者の住所に持参して提供したときに給付に必要な行為を完了したといえ、発送しただけでは足りないと解されている（判例あり（要確認））。したがって、発送した時に特定するとする肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "401",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債務者が物の給付をするのに必要な行為を完了し",
+     "text_sha256": "05b63d037465cb704344c8098943c37dc0f57fc5b76f6e5aeece1f4484bab30f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "401",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "以後その物を債権の目的物とする",
+     "text_sha256": "05b63d037465cb704344c8098943c37dc0f57fc5b76f6e5aeece1f4484bab30f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "484",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者の現在の住所において",
+     "text_sha256": "f5349d95a4743c7bd0cd6b3bf1eb4e70f8c43b7209930f3d3ced5ab11e6eb2bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "持参債務である種類債権の目的物は、債権者の住所で現実に提供した時に特定する（発送では特定しない）とする判例",
+     "searched": [
+      "courts.py search 種類債権 特定（ヒットは取立債務についての昭和30年10月18日判決などで、持参債務の判例は見つからなかった）",
+      "大審院（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "持参債務で特定が生じる時期は条文に書いていない解釈による。"
+   ],
+   "id": "exp-yobi-2016-minpo-q08-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q08-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。不可分債権者の一人と債務者との間に免除があっても、他の不可分債権者は債務の全部の履行を請求することができる。",
+   "body": "429条は「不可分債権者の一人と債務者との間に更改又は免除があった場合においても、他の不可分債権者は、債務の全部の履行を請求することができる。」と定める。そのうえで、その場合には「その一人の不可分債権者がその権利を失わなければ分与されるべき利益を債務者に償還しなければならない」として、債務者との調整を図っている。したがって、免除があっても他の不可分債権者は全部の履行を請求できるとする肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "429",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不可分債権者の一人と債務者との間に更改又は免除があった場合においても、他の不可分債権者は、債務の全部の履行を請求することができる。",
+     "text_sha256": "54390277264f86d8514c798992da71dc520cccdfc79be2ca3fe00d34f5d5057f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "429",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その一人の不可分債権者がその権利を失わなければ分与されるべき利益を債務者に償還しなければならない",
+     "text_sha256": "54390277264f86d8514c798992da71dc520cccdfc79be2ca3fe00d34f5d5057f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2016-minpo-q08-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q08-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。債権は譲り渡すことができるのが原則で、生命・身体の侵害による不法行為の損害賠償請求権も、その性質上譲渡できない債権には当たらない。",
+   "body": "466条1項は「債権は、譲り渡すことができる。ただし、その性質がこれを許さないときは、この限りでない。」と定める。生命又は身体の侵害によって生じた不法行為の損害賠償請求権は金銭の支払を目的とする債権であり、その性質上譲渡が許されない債権には当たらないと解されている。今の509条も、人の生命又は身体の侵害による損害賠償の債務について相殺を禁じつつ、ただし書で「その債権者がその債務に係る債権を他人から譲り受けたときは、この限りでない。」と定めており、この種の債権が譲渡されうることを前提にしている。したがって、性質上譲渡できないとする肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "466",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権は、譲り渡すことができる。ただし、その性質がこれを許さないときは、この限りでない。",
+     "text_sha256": "53cc6756b6ec229cfaa95a16773ac9bf62af5b5c72736b876442ab620e04c690",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "509",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その債権者がその債務に係る債権を他人から譲り受けたときは、この限りでない。",
+     "text_sha256": "33ae841cfbbd7882090f31eb28d87b669c78e01e112e96279a6a0f3600313680",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "生命・身体の侵害による損害賠償請求権が性質上譲渡を許さない債権に当たらないことは、条文に書いていない解釈による。",
+    "509条は出題後の改正で今の形になったと考えられるが、改正前の内容は条文の本文で確認していない。決め手は466条1項で、509条は補足として挙げた。"
+   ],
+   "id": "exp-yobi-2016-minpo-q08-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q08-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。選択債権の選択権は、債権者ではなく債務者に属する。",
+   "body": "406条は「債権の目的が数個の給付の中から選択によって定まるときは、その選択権は、債務者に属する。」と定める。肢はこの条文と前半が同じで、選択権が「債権者に属する」としている点だけが異なる。したがって、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "406",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権の目的が数個の給付の中から選択によって定まるときは、その選択権は、債務者に属する。",
+     "text_sha256": "3073b8aa6c328b90a1be710caec4c34c9c4233f24bf11f26c3c55a6683be11b3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2016-minpo-q08-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
