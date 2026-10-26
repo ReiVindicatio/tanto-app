@@ -46,20 +46,21 @@
 
 ```
 あなたは司法試験・予備試験の短答の過去問の解説を書く。リポジトリは作業ディレクトリ（このリポジトリの一番上）。
-まず CLAUDE.md の禁止事項と prompts/explain-v3.md を読み（Read の道具で）、その指示どおりに、次の問の解説を1問ずつ書き出して検査を通す：
+まず CLAUDE.md の禁止事項と prompts/explain-v4.md を読み（Read の道具で）、その指示どおりに、次の問の解説を1問ずつ書き出して検査を通す：
   <exam> <year> <subject> <number>（3問）
 - 問の中身は python3 pipeline/explain_queue.py --show <exam> <year> <subject> <number> で表示する（リード文・前提文・小問・選択肢・肢と公式の○×）
 - 書く肢は、その表示で「書く」とある肢だけ（名寄せ・解説済み・○×なしの肢は書かない）
 - 条文は python3 pipeline/egov.py <正式な法令名> <条> で表示したものだけ引用する。法令が保存済みかは、思い込まずにこのコマンドを実行して確かめる（ないときだけエラーになる）。刑事訴訟規則・民事訴訟規則・大日本帝国憲法は e-Gov になく使えない。日本国憲法の前文は egov.py で取り出せない
-- 判例は python3 pipeline/courts.py search／show／pdf で裁判所の判決のページを確かめたものだけ載せる（explain-v3 の規則3）。確かめられなければ本文に「判例あり（要確認）」と書き、pending_cases に残す。WebSearch・解説サイト・検索結果の要約は判例の確かめに使わない
+- 判例は python3 pipeline/courts.py search／show／pdf で裁判所の判決のページを確かめたものだけ載せる（explain-v4 の規則3）。確かめられなければ本文に「判例あり（要確認）」と書き、pending_cases に残す。WebSearch・解説サイト・検索結果の要約は判例の確かめに使わない
 - 出題当時の旧法（改正前）の文言・数字・条番号の中身を記憶で書かない。現行法の e-Gov の本文で説明し、改正で変わった点は「改正前の内容は条文の本文で確認していない」と notes に書く
 - 問題文に参照条文として載っている法令の中身は、その問題文を根拠にしてよい
+- 民法の2019年以前の問は explain-v4 の「民法の2019年以前の問」に従う（今の条文で公式の○×を説明できない肢・前提の制度がなくなった肢は、解説を書かずに law_changed に理由。検査で ⚖️ と出れば正しい。H29〜R01 は python3 pipeline/egov.py 民法 <条> --asof <年>-05-01 で出題時点の本文を読める。引用はしない）
 - 書いたら python3 pipeline/check_explanations.py <exam> <year> <subject> <number> を通す。❌ は2回まで直す
 - 書いてよいのは data/explanations/ の担当の問のファイルだけ。git の操作はしない
 - 使ってよい道具は次だけ（人が見ていない間に動くので、許可の要る操作をすると止まってしまう）：
   ファイルの読み書きは Read・Write・Edit の道具／Bash は「python3 pipeline/explain_queue.py --show …」「python3 pipeline/egov.py …」「python3 pipeline/courts.py …」「python3 pipeline/check_explanations.py …」の単独のコマンドだけ（&& やパイプでつながない。ls・cat・grep・curl・その場で書く python も使わない。ファイルがあるかは Read で確かめる）
 - generated_by.model は実行しているモデルの ID、generated_at は今日の日付
-最後に、問ごとに1行で報告する：「<question_id>：検査 ✅ N肢／❌ M肢（理由の要約）／判例 確かめた N件・要確認 M件／法令がない：<法令名>（あれば）」。記憶で書いた箇所が残っていればそれも報告する。許可を求められて止まった操作があれば、そのコマンドも報告する
+最後に、問ごとに1行で報告する：「<question_id>：検査 ✅ N肢／⚖️ L肢（law_changed）／❌ M肢（理由の要約）／判例 確かめた N件・要確認 M件／法令がない：<法令名>（あれば）」。記憶で書いた箇所が残っていればそれも報告する。許可を求められて止まった操作があれば、そのコマンドも報告する
 ```
 
 （2026-10-20〜21 の運用で足した注意：探していない判例を「確認できなかった」と書かない／保存済みの法令を「ない」と思い込まない／旧商法の利率を記憶で書いた例／検索結果の要約から判例の理由づけを書いた例。explain-v3 と上の指示に織り込み済み）

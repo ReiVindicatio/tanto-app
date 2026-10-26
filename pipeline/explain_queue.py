@@ -3,7 +3,7 @@
 対象：肢カード（出題時点の○×があり、人の確認待ちでない肢）のうち、名寄せの代表（app/public/data/index.json の aliases で
 他のカードに読み替えられない肢）で、まだ解説ファイルに入っていない肢を持つ問。
 - 同じカードの他の出典の肢には、書き出し（export.py）が解説を共有するので作らない
-- 民法の改正前の年度（2019年以前）は今は作らない（現行の条文で書くと出題時点の○×と食い違いやすい。T013 で扱いを決める）
+- 民法の改正前の年度（2019年以前）も作る（T013・決定024：現行の条文で説明できない肢は、解説の代わりに law_changed を書く）
 - data/review/explain_skips.json に載せた問（検査に通らず飛ばした問など）は出さない
 順：予備 → 司法、新しい年度から、科目は決まった順、問番号の順。
 
@@ -31,7 +31,6 @@ INDEX = ROOT / "app" / "public" / "data" / "index.json"
 SKIPS = ROOT / "data" / "review" / "explain_skips.json"
 SUBJECT_ORDER = ["minpo", "shoho", "minso", "keiho", "keiso", "kenpo", "gyosei"]
 EXAM_ORDER = ["yobi", "shiho"]
-MINPO_REFORM_YEAR = 2020
 
 
 def explained_ids() -> set[str]:
@@ -53,8 +52,6 @@ def queue() -> list[tuple[str, int, str, int, int]]:
     for path in QUESTIONS.glob("*/*/*.json"):
         doc = json.loads(path.read_text(encoding="utf-8"))
         exam, year, subj = doc["exam"]["type"], doc["exam"]["year"], doc["subject"]
-        if subj == "minpo" and year < MINPO_REFORM_YEAR:
-            continue
         by_q: dict[str, int] = {}
         for s in doc["statements"]:
             if s["truth_at_exam"] and s["id"] not in flagged and s["id"] not in aliases and s["id"] not in done:

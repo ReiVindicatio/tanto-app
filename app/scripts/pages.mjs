@@ -141,7 +141,15 @@ function renderExplanation(e, question = false) {
         })
         .join("")}</ul></details>`
     : "";
-  return `<div class="exp"><span class="ai">AI が生成した解説</span>${para(e.conclusion)}${para(e.body)}${cites}${cases}<p class="muted">${esc(e.model)}・${esc(e.prompt_version)}・${esc(e.generated_at)} 生成。${question ? "公式の正解との一致" : "公式の○×との一致"}と条文の引用の照合を通ったものです。誤りがありうるので、条文・判例は原典で確かめてください。</p></div>`;
+  return `<div class="exp"><span class="ai">AI が生成した解説</span>${para(e.conclusion)}${para(e.body)}${cites}${cases}<p class="muted">${esc(e.model)}・${esc(e.prompt_version)}・${esc(e.generated_at)} 生成。${question ? "公式の正解との一致" : "公式の○×との一致"}と条文の引用の照合を通ったものです。誤りがありうるので、条文・判例は原典で確かめてください。${currentLawNote(question ? e.question_id : e.statement_id)}</p></div>`;
+}
+
+/** 民法の債権法改正より前の出題の解説は、現行の条文で説明している（T013。アプリの ExplanationView と同じ文） */
+function currentLawNote(id) {
+  const m = /^(?:yobi|shiho)-(\d{4})-minpo-/.exec(id ?? "");
+  return m && Number(m[1]) < 2020
+    ? "この問は民法（債権関係）の改正（2020年4月施行）より前の出題で、解説は現行の条文で説明しています（出題時点の条文とは異なることがあります）。"
+    : "";
 }
 
 function officialAnswer(q) {

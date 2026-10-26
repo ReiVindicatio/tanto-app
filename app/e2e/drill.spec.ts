@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "@playwright/test";
 import { openHome, openYear } from "./helpers";
 
 test("肢で解く：データの○×どおりに答えると全問正解（民法 R08）", async ({ page, request }) => {
@@ -60,4 +60,22 @@ test("小問つきの問（民法 H26 問5）：小問ごとに選んで採点�
   await page.getByRole("button", { name: "採点する" }).click();
   await expect(page.locator(".page .result .big")).toHaveText("2 / 2 点");
   await expect(page.locator(".law-note")).toContainText("債権関係"); // 改正前の注意
+});
+
+/** 問で解く：すべての解答欄で最初の選択肢を選んで採点する（解答欄が描かれるのを待ってから） */
+async function answerAll(page: Page) {
+  await expect(page.locator(".slot").first()).toBeVisible();
+  for (const slot of await page.locator(".slot").all()) await slot.locator("button.opt").first().click();
+  await page.getByRole("button", { name: "採点する" }).click();
+}
+
+test("出題後の改正で正誤が変わる可能性がある肢（予備 R03 民法 問13エ）：問で解くの採点後に、言い切らない形の要確認を出す（T013）", async ({ page }) => {
+  await openHome(page);
+  await openYear(page, "民法", "R03", "問で解く");
+  for (let n = 1; n < 13; n++) {
+    await answerAll(page);
+    await page.getByRole("button", { name: "次へ" }).click();
+  }
+  await answerAll(page);
+  await expect(page.locator(".law-note").filter({ hasText: "要確認" })).toContainText("正誤が変わっている可能性があります");
 });

@@ -1,9 +1,16 @@
 import type { Explanation, QuestionExplanation } from "./types";
 import { navigate } from "./router";
+import { MINPO_REFORM_YEAR } from "./LawNote";
 
 function articleName(article: string): string {
   const [main, sub] = article.split("_");
   return sub ? `${main}条の${sub}` : `${main}条`;
+}
+
+/** 民法の債権法改正より前の出題か（T013：その解説は現行の条文で説明している）。ID は <試験>-<年>-<科目>-q… */
+export function explainedUnderCurrentLaw(id: string): boolean {
+  const m = /^(?:yobi|shiho)-(\d{4})-minpo-/.exec(id);
+  return m !== null && Number(m[1]) < MINPO_REFORM_YEAR;
 }
 
 /** AI 生成の解説。AI が作ったものだと分かる表示を必ず付ける */
@@ -55,6 +62,8 @@ export default function ExplanationView({ e }: { e: Explanation | QuestionExplan
         <summary>この解説について</summary>
         <div className="muted small">
           {e.model}・{e.prompt_version}・{e.generated_at} 生成。{question ? "公式の正解との一致" : "公式の○×との一致"}と、条文の引用の照合を通ったものだけを表示しています。誤りがありうるので、条文・判例は原典で確かめてください。
+          {explainedUnderCurrentLaw("question_id" in e ? e.question_id : e.statement_id) &&
+            " この問は民法（債権関係）の改正（2020年4月施行）より前の出題で、解説は現行の条文で説明しています（出題時点の条文とは異なることがあります）。"}
         </div>
       </details>
     </div>

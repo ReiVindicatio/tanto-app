@@ -143,6 +143,34 @@ def count_window(start_end: str | None, start_used: int | None) -> None:
         print(f"⏸ 上限の目安に達した：{end + datetime.timedelta(minutes=5):%H:%M} まで待ってから次のバッチへ")
 
 
+FLAGS = ROOT / "data" / "review" / "flags.json"
+LAW_CHANGED_BY = "T013：解説の生成中に、現行の条文で公式の○×を説明できなかった肢"
+
+
+def add_law_changed_flags(explanations=None, flags_path=None) -> list[str]:
+    """T013：解説ファイルで status が law_changed の肢を、flags.json に kind: law_changed で足す（足した肢 ID を返す）。
+    書き出し（export.py）がこの印で肢カードから外し、問の画面に「要確認」を出す。truth_at_exam は変えない"""
+    explanations = explanations or ROOT / "data" / "explanations"
+    flags_path = flags_path or FLAGS
+    doc = json.loads(flags_path.read_text(encoding="utf-8"))
+    have = {(f["statement_id"], f["kind"]) for f in doc["flags"]}
+    added = []
+    for p in sorted(explanations.rglob("q*.json")):
+        for e in json.loads(p.read_text(encoding="utf-8")).get("explanations", []):
+            sid = e["target"]["id"]
+            if e.get("status") != "law_changed" or (sid, "law_changed") in have:
+                continue
+            doc["flags"].append({
+                "statement_id": sid, "kind": "law_changed", "status": "open",
+                "raised_at": datetime.date.today().isoformat(), "raised_by": LAW_CHANGED_BY,
+                "reason": e["law_changed"],
+            })
+            added.append(sid)
+    if added:
+        flags_path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    return added
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--skip", nargs=2, action="append", default=[], metavar=("QUESTION_ID", "REASON"))
@@ -165,6 +193,8 @@ def main() -> None:
     mode = "recheck" if args.recheck else cur.get("mode", "explain")
     add_skips(args.skip)
     add_skips(args.skip_recheck, RECHECK_SKIPS)
+    if lc := add_law_changed_flags():
+        print(f"⚖️ 現行の条文で説明できない肢 {len(lc)}件を flags.json に足した（肢カードから外れる）：{'、'.join(lc)}")
     print(run(sys.executable, str(ROOT / "pipeline" / "regen.py")).strip().splitlines()[-1])
     qs = changed_questions()
     print(update_now())

@@ -10,6 +10,7 @@
   python3 pipeline/egov.py 民法 5 6 98_2         # 保存済みの条文を表示（未取得なら先に取得する）
   python3 pipeline/egov.py 日本国憲法 前文        # 前文・別表（「別表第一」など）・条のない法令の本文（「本則」）も条と同じに引ける
   python3 pipeline/egov.py --fetch-toc 民法       # 目次（条ごとの編・章・節）だけを取得して data/statutes/toc/ に保存（分野タグ：T016）
+  python3 pipeline/egov.py 民法 570 --asof 2018-05-01   # 出題時点の本文（T013。revisions.py --with-old-text で保存した版。読むだけで引用しない）
 """
 from __future__ import annotations
 
@@ -358,6 +359,28 @@ def load_article(law: str, article: str) -> dict | None:
     return {**a, "law": law, "article": article, "url": rec["url"], "fetched_at": rec["fetched_at"]}
 
 
+def show_asof(law: str, asof: str, articles: list[str]) -> None:
+    """出題時点の本文（T013）。本文が変わっていない条は「現行と同じ」と出す"""
+    path = STATUTES / "changes" / f"{LAWS[law][0]}-{asof}.json"
+    if not path.exists():
+        sys.exit(f"🔴 {path.relative_to(STATUTES.parent.parent)} がない（python3 pipeline/revisions.py {law} {asof} --with-old-text で作る）")
+    rec = json.loads(path.read_text(encoding="utf-8"))
+    if "removed_text" not in rec:
+        sys.exit(f"🔴 {path.name} に出題時点の本文がない（--with-old-text で作り直す）")
+    print(f"⚠ {law} の {asof} 時点の本文（e-Gov の過去の版）。読むだけで、解説に引用しない（引用は現行の本文から）")
+    for art in articles:
+        if art in rec["changed"]:
+            print(f"■ {art}条（{asof} 時点。出題後に本文が変わった）\n   " + rec["changed"][art]["old_text"].replace("\n", "\n   "))
+        elif art in rec["removed_text"]:
+            print(f"■ {art}条（{asof} 時点。今はない）\n   " + rec["removed_text"][art].replace("\n", "\n   "))
+        elif art in rec["added"]:
+            print(f"■ {art}条：{asof} 時点にはなかった（出題後に増えた条）")
+        elif art in load_law(law)["articles"]:
+            print(f"■ {art}条：{asof} 時点から本文は変わっていない（現行の本文と同じ）")
+        else:
+            print(f"🔴 {law} に条番号 {art} がない（枝番は 98_2 の形）")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--fetch", nargs="+", choices=sorted(LAWS), metavar="法令", help="法令全体を取得して保存")
@@ -365,6 +388,7 @@ def main() -> None:
     ap.add_argument("--fetch-toc", nargs="+", choices=sorted(LAWS), metavar="法令", help="目次だけを取得して保存（T016）")
     ap.add_argument("law", nargs="?", choices=sorted(LAWS))
     ap.add_argument("articles", nargs="*")
+    ap.add_argument("--asof", help="出題時点の本文を表示する（data/statutes/changes/<保存名>-<日付>.json。引用には使わない）")
     args = ap.parse_args()
 
     targets = sorted(LAWS) if args.fetch_all else (args.fetch or [])
@@ -382,7 +406,9 @@ def main() -> None:
             sys.exit(f"🔴 {law}：{e}")
         print(f"✅ {law}：目次を保存（{len(rec['toc'])}条・{rec['fetched_at']}）")
 
-    if args.law:
+    if args.law and args.asof:
+        show_asof(args.law, args.asof, args.articles)
+    elif args.law:
         rec = load_law(args.law)
         for art in args.articles:
             a = rec["articles"].get(art)

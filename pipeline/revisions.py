@@ -53,6 +53,8 @@ def main() -> None:
     ap.add_argument("law")
     ap.add_argument("asof", help="出題時点の日付（YYYY-MM-DD）")
     ap.add_argument("--show", nargs="*", default=[], help="新旧の本文を表示する条（枝番は 98_2）")
+    ap.add_argument("--with-old-text", action="store_true",
+                    help="変わった条・消えた条の出題時点の本文も書く（T013：解説を書くときに読む。引用には使わない）")
     args = ap.parse_args()
     if args.law not in LAW_IDS or args.law not in LAWS:
         sys.exit(f"🔴 未対応の法令：{args.law}")
@@ -73,11 +75,15 @@ def main() -> None:
                         "fetched_at": datetime.date.today().isoformat()},
         "current_fetched_at": current["fetched_at"],
         "note": "出題時点（asof）の版と、保存済みの現行の版で、本文が変わった条。本文の文字列の比較だけで、改正の中身は判断していない",
-        "changed": {n: {"title": cur[n]["title"], "old_sha256": old[n]["text_sha256"], "new_sha256": cur[n]["text_sha256"]}
+        "changed": {n: {"title": cur[n]["title"], "old_sha256": old[n]["text_sha256"], "new_sha256": cur[n]["text_sha256"],
+                        **({"old_text": old[n]["text"]} if args.with_old_text else {})}
                     for n in changed},
         "added": added,
         "removed": removed,
     }
+    if args.with_old_text:
+        rec["removed_text"] = {n: old[n]["text"] for n in removed}
+        rec["note"] += "。old_text・removed_text は出題時点の本文（e-Gov の過去の版）。解説で読むだけで、引用には使わない（引用は現行の本文から）"
     out.write_text(json.dumps(rec, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"{args.law}：{args.asof} 時点から本文が変わった条 {len(changed)}・増えた条 {len(added)}・消えた条 {len(removed)} → {out.relative_to(STATUTES.parent.parent)}")
     print("変わった条：", " ".join(changed))

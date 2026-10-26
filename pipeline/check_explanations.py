@@ -12,6 +12,8 @@
   8. verified_urls は courts.go.jp の今開ける URL（T041）
   9. 問の解説（question_explanation。T018：肢ごとの○×が決まらない問）は、stated_answer が公式の正解（解答欄の順）と一致し、
      2〜5・7・8 も肢の解説と同じに通る
+  10. law_changed（T013・explain-v4：民法の2019年以前で、現行の条文では公式の○×を説明できない肢）は、解説の本文を書かず、
+     理由と根拠の条文（引用は 2・4 と同じに照合）だけ。stated_truth は公式の○×のまま。status は law_changed（公開しない）
 
 使い方：
   python3 pipeline/check_explanations.py yobi 2026 minpo 1      # 検査して結果をファイルに書き戻す
@@ -38,6 +40,9 @@ PENDING_MARK = "判例あり（要確認）"
 CASE_URL_PREFIX = "https://www.courts.go.jp/"
 STRICT_CASE_URLS = True  # T041：第三者サイトの判例（民法の42問）と旧形式の URL を直し終えた（2026-10-21）
 STRICT_PENDING_FROM = 1   # 要確認と pending_cases の不一致を ❌ にする（v3 以降だけだったのを、T041 で古い解説を直し終えたので全部に。2026-10-21）
+MINPO_REFORM_YEAR = 2020  # 債権法改正の施行。law_changed を使えるのは、民法のこれより前の年度だけ（T013）
+# law_changed の肢の「失敗」の欄に入れる印。これだけなら status は law_changed（公開しないが、直すものではない）
+LAW_CHANGED = "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
 
 
 def ws(s: str) -> str:
@@ -204,6 +209,9 @@ def check_question(exam: str, year: int, subject: str, number: int,
         elif e.get("stated_truth") is not truth["value"]:
             f.append(f"🔴 公式の○×と食い違う（公式 {'○' if truth['value'] else '×'}／解説 {e.get('stated_truth')}）")
 
+        if "law_changed" in e:
+            f.extend(check_law_changed(e, s["text"], question_text, subject, year))
+            continue
         cf, cw = check_content(e, s["text"], question_text, strict_pending=prompt_major(doc) >= STRICT_PENDING_FROM)
         f.extend(cf)
         if warnings is not None:
@@ -234,6 +242,30 @@ def check_question(exam: str, year: int, subject: str, number: int,
     return doc, failures, q_fail
 
 
+def check_law_changed(e: dict, own_text: str, question_text: str, subject: str, year: int) -> list[str]:
+    """検査10：law_changed の肢。問題がなければ [LAW_CHANGED] を返す"""
+    f: list[str] = []
+    reason = e.get("law_changed")
+    if not (subject == "minpo" and year < MINPO_REFORM_YEAR):
+        f.append(f"law_changed は民法の{MINPO_REFORM_YEAR - 1}年以前の肢だけに使える（T013）")
+    if not isinstance(reason, str) or len(reason.strip()) < 10:
+        f.append("law_changed に理由（どの条がどう変わったか）を書く")
+    if e.get("conclusion") or e.get("body"):
+        f.append("law_changed の肢には conclusion・body を書かない（現行法での結論を言わない）")
+    if not e.get("citations"):
+        f.append("law_changed の理由の根拠の条文を citations に入れる")
+    # 理由の文を本文と見なして、引用・条番号・「」を照合する
+    cf, _ = check_content({**e, "body": reason if isinstance(reason, str) else ""}, own_text, question_text, strict_pending=True)
+    f.extend(cf)
+    return f or [LAW_CHANGED]
+
+
+def status_of(fails: list[str]) -> str:
+    if not fails:
+        return "published"
+    return "law_changed" if fails == [LAW_CHANGED] else "flagged"
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("exam")
@@ -247,8 +279,8 @@ def main() -> None:
     for e in doc["explanations"]:
         sid = e["target"]["id"]
         e["id"] = f"exp-{sid}"
-        e["status"] = "published" if not failures[sid] else "flagged"
-        e["check"] = {"passed": not failures[sid], "failures": failures[sid]}
+        e["status"] = status_of(failures[sid])
+        e["check"] = {"passed": e["status"] != "flagged", "failures": failures[sid]}
     qe = doc.get("question_explanation")
     if qe is not None:
         qf = failures[doc["question_id"]]
@@ -260,12 +292,13 @@ def main() -> None:
     bad = 0
     for e in doc["explanations"]:
         f = failures[e["target"]["id"]]
-        print(f"{'✅' if not f else '❌'} {e['target']['id']}")
+        st = status_of(f)
+        print(f"{ {'published': '✅', 'law_changed': '⚖️', 'flagged': '❌'}[st]} {e['target']['id']}")
         for x in f:
             print(f"    {x}")
         for x in warnings.get(e["target"]["id"], []):
             print(f"    ⚠ {x}")
-        bad += bool(f)
+        bad += st == "flagged"
     if qe is not None:
         f = failures[doc["question_id"]]
         print(f"{'✅' if not f else '❌'} {doc['question_id']}（問の解説）")

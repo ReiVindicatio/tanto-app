@@ -27,7 +27,7 @@ import subprocess
 import sys
 import unicodedata
 
-from check_explanations import EXPLANATIONS, check_question
+from check_explanations import EXPLANATIONS, LAW_CHANGED, check_question
 from common import EXAM_IDS, GROUP_IDS, ROOT, SUBJECT_IDS
 from topics import OTHER, Tocs, topic_of
 from twins import display_text, find_pairs
@@ -88,6 +88,8 @@ def collect_explanations(doc: dict) -> tuple[list[dict], list[str], list[dict]]:
         edoc, failures, _ = check_question(exam["type"], exam["year"], subj, number)
         for e in edoc["explanations"]:
             sid = e["target"]["id"]
+            if failures[sid] == [LAW_CHANGED]:
+                continue  # T013：現行の条文で説明できない肢。解説は出さない（flags.json の law_changed で肢カードからも外れる）
             if failures[sid]:
                 held.append(sid)
                 continue
