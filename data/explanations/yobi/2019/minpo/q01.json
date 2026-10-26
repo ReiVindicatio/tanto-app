@@ -1,0 +1,262 @@
+{
+ "question_id": "yobi-2019-minpo-q01",
+ "prompt_version": "explain-v4",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q01-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。日常生活に関する行為を取消しの対象から外す規定は成年被後見人についてのもので（9条ただし書）、未成年者には当てはまらない。",
+   "body": "決め手は「日常生活に関するもの」という例外が未成年者にあるかどうかである。5条1項は、未成年者が法律行為をするには「その法定代理人の同意を得なければならない」とし、例外は「単に権利を得、又は義務を免れる法律行為」に限っている。同意を得ないでした行為について、同条2項は「前項の規定に反する法律行為は、取り消すことができる。」と定める。「日用品の購入その他日常生活に関する行為については、この限りでない」という例外は9条ただし書にあり、成年被後見人についての規定である。したがって、未成年者が同意なくした売買契約は、日常生活に関するものでも取り消すことができ、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者が法律行為をするには、その法定代理人の同意を得なければならない。ただし、単に権利を得、又は義務を免れる法律行為については、この限りでない。",
+     "text_sha256": "41659855924ba702729f1bdac3f46add3ca097fdcda242a6f5e99f0d612d0360",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "5",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定に反する法律行為は、取り消すことができる。",
+     "text_sha256": "41659855924ba702729f1bdac3f46add3ca097fdcda242a6f5e99f0d612d0360",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、日用品の購入その他日常生活に関する行為については、この限りでない。",
+     "text_sha256": "67a383e068a02c1e4aadf954b4d75d4e2514d25083fac514027e71a066d7e892",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。5条・9条は出題時点（2019-05-01）から本文は変わっていない。"
+   ],
+   "id": "exp-yobi-2019-minpo-q01-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q01-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。成年被後見人の法律行為は、日常生活に関する行為を除き、成年後見人の同意の有無を問わず取り消すことができる（9条）。",
+   "body": "9条は「成年被後見人の法律行為は、取り消すことができる。」とし、例外を「日用品の購入その他日常生活に関する行為」に限っている。未成年者（5条1項）や被保佐人（13条1項）と違い、成年被後見人については同意を得れば取り消せなくなるという規定がない。成年被後見人は同意のとおりに行為できるとは限らないため、成年後見人には同意権がなく、同意を得てした行為も取り消すことができると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "成年被後見人の法律行為は、取り消すことができる。ただし、日用品の購入その他日常生活に関する行為については、この限りでない。",
+     "text_sha256": "67a383e068a02c1e4aadf954b4d75d4e2514d25083fac514027e71a066d7e892",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者が法律行為をするには、その法定代理人の同意を得なければならない。",
+     "text_sha256": "41659855924ba702729f1bdac3f46add3ca097fdcda242a6f5e99f0d612d0360",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被保佐人が次に掲げる行為をするには、その保佐人の同意を得なければならない。",
+     "text_sha256": "c8aa95cbe2fe90c33a5a7efa56fd4ff66cd3c8e78478b1efc6963b1ca101c458",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。9条・5条は出題時点（2019-05-01）から本文は変わっていない。13条は出題後に1項10号が加わったが、引用した柱書は同じ（結論は同じ）。",
+    "成年後見人に同意権がなく、同意を得た行為も取り消せるという点は解釈による。"
+   ],
+   "id": "exp-yobi-2019-minpo-q01-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q01-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。保証は保佐人の同意を要する行為で（13条1項2号）、同意を得てした場合は取消しの対象にならない（13条4項）。",
+   "body": "13条1項は、被保佐人が同項各号の行為をするには「その保佐人の同意を得なければならない」とし、2号に「借財又は保証をすること。」を挙げている。取り消すことができるのは、同条4項のとおり「その同意又はこれに代わる許可を得ないでしたもの」である。保佐人の同意を得て保証契約をした場合は、この要件に当たらないので、行為能力の制限を理由に取り消すことはできない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二　借財又は保証をすること。",
+     "text_sha256": "c8aa95cbe2fe90c33a5a7efa56fd4ff66cd3c8e78478b1efc6963b1ca101c458",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "13",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "保佐人の同意を得なければならない行為であって、その同意又はこれに代わる許可を得ないでしたものは、取り消すことができる。",
+     "text_sha256": "c8aa95cbe2fe90c33a5a7efa56fd4ff66cd3c8e78478b1efc6963b1ca101c458",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。出題後に13条の本文が変わった（1項10号が加わった）が、2号と4項は同じで、結論は同じ。"
+   ],
+   "id": "exp-yobi-2019-minpo-q01-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q01-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。補助人の同意を要する行為を同意又は家庭裁判所の許可なくした場合は取り消すことができる（17条4項）。",
+   "body": "17条1項により、家庭裁判所は被補助人が特定の法律行為をするには補助人の同意を得なければならない旨の審判をすることができる。同条3項は、補助人が同意をしないときに家庭裁判所が「補助人の同意に代わる許可」を与えることができるとする。そのうえで同条4項は「補助人の同意を得なければならない行為であって、その同意又はこれに代わる許可を得ないでしたものは、取り消すことができる。」と定める。本肢はこの条文どおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "17",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "補助人の同意に代わる許可",
+     "text_sha256": "613632a805004cadd78bd89103ca69b2ef1e58af9f3a14b5cf49cb01fc28f237",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "17",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "補助人の同意を得なければならない行為であって、その同意又はこれに代わる許可を得ないでしたものは、取り消すことができる。",
+     "text_sha256": "613632a805004cadd78bd89103ca69b2ef1e58af9f3a14b5cf49cb01fc28f237",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。17条は出題時点（2019-05-01）から本文は変わっていない。"
+   ],
+   "id": "exp-yobi-2019-minpo-q01-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q01-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。取消権の消滅時効は「追認をすることができる時」から進み、成年被後見人が追認できるのは行為能力者となっただけでなく取消権があることを知った後である（126条・124条1項）。",
+   "body": "誤りは、起算点を「行為能力者となった時」としている点である。126条は「取消権は、追認をすることができる時から五年間行使しないときは、時効によって消滅する。」と定める。追認ができる時について、124条1項は「取消しの原因となっていた状況が消滅し、かつ、取消権を有することを知った後にしなければ、その効力を生じない。」とする。成年被後見人の場合、行為能力者となれば取消しの原因となっていた状況は消滅するが、それに加えて取消権を有することを知らなければ追認はできない。したがって、行為能力者となった時を起算点とする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "126",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取消権は、追認をすることができる時から五年間行使しないときは、時効によって消滅する。",
+     "text_sha256": "08de5b54256bc4f0b89a0a490a8145e89df5e954fdb6483343fd3e9824268e3e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取消しの原因となっていた状況が消滅し、かつ、取消権を有することを知った後にしなければ、その効力を生じない。",
+     "text_sha256": "677818a6b672c91db3f1a099712b8131501fc569736e787b9b0be8a9a8d4c258",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。126条は出題時点（2019-05-01）から本文は変わっていない。",
+    "出題後に124条の本文が変わった（結論は同じ。行為能力者となっただけでは追認できないという点は出題時点の本文でも同じであることを --asof で読んで確かめた）。改正前の内容は解説に引用していない。"
+   ],
+   "id": "exp-yobi-2019-minpo-q01-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,248 @@
+{
+ "question_id": "yobi-2019-minpo-q10",
+ "prompt_version": "explain-v4",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q10-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。死因贈与に負担を付けることを禁じる条文はなく、負担付死因贈与もすることができる。",
+   "body": "誤りは「負担付ですることができない」の部分である。554条は死因贈与について「その性質に反しない限り、遺贈に関する規定を準用する」とし、準用される遺贈の規定の中にも1002条の「負担付遺贈」がある。また553条は贈与一般について「負担付贈与」を予定しており、死因贈与に負担を付けることを禁じる条文はない。判例も、負担の履行期が贈与者の生前と定められた負担付死因贈与で受贈者が負担の全部又はこれに類する程度の履行をした場合には、特段の事情がない限り遺言の撤回に関する規定は準用されないとしており、負担付死因贈与ができることを前提にしている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "554",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "贈与者の死亡によって効力を生ずる贈与については、その性質に反しない限り、遺贈に関する規定を準用する。",
+     "text_sha256": "79b73a16e22f1cb1cc9a573d09a1016fd03639b152e7d246d4fd84f0cc775872",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "553",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "負担付贈与については、この節に定めるもののほか、その性質に反しない限り、双務契約に関する規定を準用する。",
+     "text_sha256": "10e8a7c6f1c8154f7f4afe8dae03a2a425cbb6f8959a3ca861b6588f6701402a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1002",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "負担付遺贈を受けた者は、遺贈の目的の価額を超えない限度においてのみ、負担した義務を履行する責任を負う。",
+     "text_sha256": "74b1420aaa3aeb0c16ec92d612d6dcdbe1d7c8579d943bee245c6cf84fa17838",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "負担付死因贈与と遺言の撤回の規定の準用",
+     "court": "最高裁判所第二小法廷",
+     "date": "1982-04-30",
+     "case_number": "昭和56(オ)487",
+     "holding": "負担の履行期が贈与者の生前と定められた負担付死因贈与の受贈者が負担の全部又はこれに類する程度の履行をした場合には、契約の全部又は一部を取り消すことがやむをえないと認められる特段の事情がない限り、遺言の撤回に関する規定は準用されない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54266/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。553条・554条・1002条は出題時点から本文が変わっていない。"
+   ],
+   "id": "exp-yobi-2019-minpo-q10-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q10-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。準消費貸借は、既存の給付義務の目的物を消費貸借の目的とする合意によって成立し、目的物の引渡しは要らない。",
+   "body": "誤りは「目的物の引渡しがなければ成立しない」の部分である。588条は、金銭その他の物を給付する義務を負う者がある場合に「当事者がその物を消費貸借の目的とすることを約したときは、消費貸借は、これによって成立したものとみなす」と定める。成立の要件は、既存の給付義務があることと、それを消費貸借の目的とする合意であり、新たに目的物を引き渡すことは求められていない。587条の消費貸借が「金銭その他の物を受け取ることによって」効力を生ずるのとは異なる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "588",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者がその物を消費貸借の目的とすることを約したときは、消費貸借は、これによって成立したものとみなす",
+     "text_sha256": "69b1c24b432792184eb6ee35008537d3a5ae6e322018e367453a2770e82426b6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "587",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "金銭その他の物を受け取ることによって",
+     "text_sha256": "0e46b5913fa56743adb085f9db6583607289a72004ae00853df8d13d17abc5fd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。出題後に588条の本文が変わった（結論は同じ）。改正前の内容は条文の本文で確認していない（解説には引用していない）。"
+   ],
+   "id": "exp-yobi-2019-minpo-q10-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q10-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。使用貸借は書面を成立の要件とする契約ではない。",
+   "body": "誤りは「書面でしなければ成立しない」の部分である。593条は、使用貸借は「当事者の一方がある物を引き渡すことを約し、相手方がその受け取った物について無償で使用及び収益をして契約が終了したときに返還をすることを約することによって、その効力を生ずる」と定めており、書面を作ることを成立の要件としていない。したがって、口頭の合意でも使用貸借は成立する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "593",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "使用貸借は、当事者の一方がある物を引き渡すことを約し、相手方がその受け取った物について無償で使用及び収益をして契約が終了したときに返還をすることを約することによって、その効力を生ずる。",
+     "text_sha256": "322945ba8d6c135d97380314d2ca8caef138153fdc62626c4369fa0a9011df32",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。出題後に593条の本文が変わった（結論は同じ：出題時点の本文でも書面は成立の要件ではない）。改正前の内容は条文の本文で確認していない（解説には引用していない）。"
+   ],
+   "id": "exp-yobi-2019-minpo-q10-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q10-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。寄託は報酬の定めがなくても成立し、無報酬の寄託も認められている。",
+   "body": "誤りは「報酬を定めなければ成立しない」の部分である。657条は、寄託は「当事者の一方がある物を保管することを相手方に委託し、相手方がこれを承諾することによって、その効力を生ずる」と定めており、報酬の定めを成立の要件としていない。さらに659条は「無報酬の受寄者は、自己の財産に対するのと同一の注意をもって、寄託物を保管する義務を負う」と定め、報酬のない寄託があることを前提にしている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "657",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "寄託は、当事者の一方がある物を保管することを相手方に委託し、相手方がこれを承諾することによって、その効力を生ずる。",
+     "text_sha256": "812fbcb0510b54d857dfdbd0d724003737b15cea5292110a67f42f484ccf7478",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "659",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "無報酬の受寄者は、自己の財産に対するのと同一の注意をもって、寄託物を保管する義務を負う。",
+     "text_sha256": "c88c5e681d4051a4e0e7b1272a5d9be242b1837080630dd131b77cf16af0837d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。出題後に657条・659条の本文が変わった（結論は同じ：出題時点の本文でも報酬は成立の要件ではなく、無報酬の寄託を予定している）。改正前の内容は条文の本文で確認していない（解説には引用していない）。"
+   ],
+   "id": "exp-yobi-2019-minpo-q10-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q10-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。組合の出資は労務を目的とすることもでき、金銭に限られない。",
+   "body": "667条1項は、組合契約は「各当事者が出資をして共同の事業を営むことを約することによって、その効力を生ずる」とし、同条2項は「出資は、労務をその目的とすることができる」と定める。出資の目的は金銭に限られず、労務でもよいことが条文から明らかである。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "667",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各当事者が出資をして共同の事業を営むことを約することによって、その効力を生ずる",
+     "text_sha256": "3be15f0b48fa865a077d78b44625968847039d0b9d93aaab603ddf525e77af46",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "667",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "出資は、労務をその目的とすることができる。",
+     "text_sha256": "3be15f0b48fa865a077d78b44625968847039d0b9d93aaab603ddf525e77af46",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。667条は出題時点から本文が変わっていない。"
+   ],
+   "id": "exp-yobi-2019-minpo-q10-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,227 @@
+{
+ "question_id": "yobi-2019-minpo-q05",
+ "prompt_version": "explain-v4",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q05-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。留置権は留置物の占有を失うことによって消滅する（302条）。",
+   "body": "民法は「留置権は、留置権者が留置物の占有を失うことによって、消滅する。」（302条）と定めています。留置権は物を留置する（手元にとどめる）ことで弁済を促す権利であり、占有はその存続の要件です。留置権者が目的物を紛失すれば占有を失うので、留置権は消滅します。なお、同条ただし書の例外（留置物を賃貸し、又は質権の目的とした場合）は、紛失にはあたりません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "302",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "留置権は、留置権者が留置物の占有を失うことによって、消滅する。",
+     "text_sha256": "bef404466d6d802fadae642bcffc4975f35d13faa77b25b9956f01a726090c05",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "302条は 2019-05-01 時点から本文が変わっていない（egov.py --asof で確認）"
+   ],
+   "id": "exp-yobi-2019-minpo-q05-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q05-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。被担保債権が弁済期にないときは留置権は成立しない（295条1項ただし書）。",
+   "body": "誤りは「弁済期にないときであっても」留置できるとする部分です。民法は「他人の物の占有者は、その物に関して生じた債権を有するときは、その債権の弁済を受けるまで、その物を留置することができる。」としたうえで、「ただし、その債権が弁済期にないときは、この限りでない。」（295条1項）と定めています。したがって、債権が弁済期にないときは、その物を留置することはできません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "295",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の物の占有者は、その物に関して生じた債権を有するときは、その債権の弁済を受けるまで、その物を留置することができる。",
+     "text_sha256": "5c120d320238e83f832ef9e2f8c7e848a8fd3c0499a6d5e4aabf099e22e7bdee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "295",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、その債権が弁済期にないときは、この限りでない。",
+     "text_sha256": "5c120d320238e83f832ef9e2f8c7e848a8fd3c0499a6d5e4aabf099e22e7bdee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "295条は 2019-05-01 時点から本文が変わっていない（egov.py --asof で確認）"
+   ],
+   "id": "exp-yobi-2019-minpo-q05-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q05-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。債務者は相当の担保を供して留置権の消滅を請求できる（301条）。",
+   "body": "民法は「債務者は、相当の担保を供して、留置権の消滅を請求することができる。」（301条）と定めています。肢はこの条文のとおりです。留置権は目的物の価値に比べて被担保債権が少額でも物全体を留置できるため、債務者が代わりの担保を提供して留置権を消滅させる手段が用意されています。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "301",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、相当の担保を供して、留置権の消滅を請求することができる。",
+     "text_sha256": "0e37a2364d5926cc9d92fc4957706795cd77f2a06b7dd7598348e2abe68e00c4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "301条は 2019-05-01 時点から本文が変わっていない（egov.py --asof で確認）"
+   ],
+   "id": "exp-yobi-2019-minpo-q05-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q05-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。留置権者は留置権に基づいて競売を申し立てることができる（民事執行法195条）。",
+   "body": "誤りは「競売を申し立てることはできない」とする部分です。民事執行法は「留置権による競売及び民法、商法その他の法律の規定による換価のための競売については、担保権の実行としての競売の例による。」（195条）と定め、留置権による競売を認めています。留置権には優先弁済権はないと解されていますが、目的物を換価するための競売を申し立てることはできます。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "195",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "留置権による競売及び民法、商法その他の法律の規定による換価のための競売については、担保権の実行としての競売の例による。",
+     "text_sha256": "4340d1f7c4836580db1434fd3285b9df92ec6aba3e33b75f028ac67da4e75d66",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "留置権に優先弁済権がない点は解釈による",
+    "民事執行法195条の出題時点の本文は確かめていない（egov.py の --asof は民法だけで使う手順のため）。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2019-minpo-q05-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q05-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。二重譲渡で登記を得た第二買主Ｃの明渡請求に対し、第一買主Ｂは、売主Ａに対する債務不履行の損害賠償請求権を被担保債権として留置権を主張できないと解されている。",
+   "body": "留置権が成立するのは「その物に関して生じた債権を有するとき」（295条1項）です。Ｂの損害賠償請求権は、Ａが甲建物をＣにも売却して登記をしたことによる債務不履行（415条1項）から生じたものですが、この債権は、物の引渡しを拒むことで債務者に弁済を促すという関係にない（甲建物の明渡しを求めているのは債務者Ａではなく所有者Ｃである）ため、甲建物に関して生じた債権とはいえないと解されています。この点については判例あり（要確認）。したがって、Ｂは甲建物を留置することはできません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "295",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の物の占有者は、その物に関して生じた債権を有するときは、その債権の弁済を受けるまで、その物を留置することができる。",
+     "text_sha256": "5c120d320238e83f832ef9e2f8c7e848a8fd3c0499a6d5e4aabf099e22e7bdee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "415",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者がその債務の本旨に従った履行をしないとき又は債務の履行が不能であるときは、債権者は、これによって生じた損害の賠償を請求することができる。",
+     "text_sha256": "17591c49fffea4a95a4b10a3ff4b37bcd321771faa36b15176b72ce9b46cf6c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "不動産の二重売買で、第一買主が売主の債務不履行による損害賠償請求権を被担保債権として第二買主に留置権を主張できるか",
+     "searched": [
+      "courts.py search 留置権 二重 --from 昭和43 --to 昭和43",
+      "courts.py search 留置権 損害賠償 --from 昭和40 --to 昭和50",
+      "courts.py search 留置権 物に関して生じた債権 --from 昭和40 --to 昭和45"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に415条の本文が変わった（結論は同じ。債務不履行による損害賠償請求権が生じる点は変わらない）",
+    "295条は 2019-05-01 時点から本文が変わっていない（egov.py --asof で確認）",
+    "牽連性を否定する理由づけは解釈による"
+   ],
+   "id": "exp-yobi-2019-minpo-q05-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

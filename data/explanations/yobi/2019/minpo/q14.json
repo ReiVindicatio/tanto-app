@@ -1,0 +1,224 @@
+{
+ "question_id": "yobi-2019-minpo-q14",
+ "prompt_version": "explain-v4",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q14-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。特別養子縁組は、家庭裁判所が「養親となる者の請求により」成立させるものであり、D及びEの請求が必要である。",
+   "body": "ポイントは、特別養子縁組の成立に誰の請求が要るかである。民法817条の2第1項は、家庭裁判所は、要件があるときは「養親となる者の請求により、実方の血族との親族関係が終了する縁組（以下この款において「特別養子縁組」という。）を成立させることができる」と定める。本問で養親となる者はD及びEであるから、家庭裁判所が特別養子縁組を成立させるにはD及びEの請求が必要であり、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "817_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "養親となる者の請求により、実方の血族との親族関係が終了する縁組（以下この款において「特別養子縁組」という。）を成立させることができる。",
+     "text_sha256": "24d1e08f9e7b717defe167c965b8cc21a4b772ebd1dff474aadd583262199044",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。817条の2は出題時点から本文が変わっていない"
+   ],
+   "id": "exp-yobi-2019-minpo-q14-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q14-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。「養親となる者は、配偶者のある者でなければならない」（民法817条の3第1項）ので、D及びEが婚姻していなければ特別養子縁組は成立させられない。",
+   "body": "ポイントは、養親が夫婦であることが特別養子縁組の要件かである。民法817条の3第1項は「養親となる者は、配偶者のある者でなければならない」と定め、同条2項本文は「夫婦の一方は、他の一方が養親とならないときは、養親となることができない」と定める。したがって、D及びEが婚姻していない場合には、家庭裁判所はCとの特別養子縁組を成立させることができず、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "817_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "養親となる者は、配偶者のある者でなければならない。",
+     "text_sha256": "0e40ec300e224fcdf4ba2afc4f2569df3267df4c6ea44597362889176ec0fed9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "817_3",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "夫婦の一方は、他の一方が養親とならないときは、養親となることができない。",
+     "text_sha256": "0e40ec300e224fcdf4ba2afc4f2569df3267df4c6ea44597362889176ec0fed9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。817条の3は出題時点から本文が変わっていない"
+   ],
+   "id": "exp-yobi-2019-minpo-q14-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q14-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。父母の同意が原則として必要だが、「父母による虐待」がある場合は同意が要らない（民法817条の6ただし書）。",
+   "body": "ポイントは、実父母の同意が不要となる場合に虐待が含まれるかである。民法817条の6は「特別養子縁組の成立には、養子となる者の父母の同意がなければならない」と定めたうえで、ただし書で「父母がその意思を表示することができない場合又は父母による虐待、悪意の遺棄その他養子となる者の利益を著しく害する事由がある場合は、この限りでない」とする。CはA及びBの実子であり、A及びBがCを虐待していた場合には、A及びBの同意を得る必要はないから、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "817_6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "特別養子縁組の成立には、養子となる者の父母の同意がなければならない。",
+     "text_sha256": "79c8c9c79c5d463ac4e49165554e7bd26500bf4c91cdab9a91af2a9b15ee8856",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "817_6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "父母がその意思を表示することができない場合又は父母による虐待、悪意の遺棄その他養子となる者の利益を著しく害する事由がある場合は、この限りでない。",
+     "text_sha256": "79c8c9c79c5d463ac4e49165554e7bd26500bf4c91cdab9a91af2a9b15ee8856",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。817条の6は出題時点から本文が変わっていない"
+   ],
+   "id": "exp-yobi-2019-minpo-q14-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q14-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。「養子と実方の父母及びその血族との親族関係は、特別養子縁組によって終了する」（民法817条の9本文）。",
+   "body": "ポイントは、特別養子縁組によって実父母との親族関係がどうなるかである。民法817条の9本文は「養子と実方の父母及びその血族との親族関係は、特別養子縁組によって終了する」と定める。同条ただし書は、817条の3第2項ただし書の場合（夫婦の一方が他の一方の嫡出子の養親となる場合）の他の一方との親族関係を除外しているが、本問の養親D及びEは実父母A及びBとは別人であり、ただし書の場面ではない。したがって、特別養子縁組が成立すると、A及びBとCとの親族関係は終了し、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "817_9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "養子と実方の父母及びその血族との親族関係は、特別養子縁組によって終了する。",
+     "text_sha256": "1ce523c270917c3781b8ed69d5d31053126829c3006cb597efe522a722dc1e8f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "817_3",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "ただし、夫婦の一方が他の一方の嫡出である子（特別養子縁組以外の縁組による養子を除く。）の養親となる場合は、この限りでない。",
+     "text_sha256": "0e40ec300e224fcdf4ba2afc4f2569df3267df4c6ea44597362889176ec0fed9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。817条の9・817条の3は出題時点から本文が変わっていない"
+   ],
+   "id": "exp-yobi-2019-minpo-q14-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2019-minpo-q14-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。特別養子縁組の離縁を請求できるのは「養子、実父母又は検察官」に限られ（民法817条の10第1項）、養親であるD及びEは離縁を請求できない。",
+   "body": "ポイントは、特別養子縁組の離縁の請求権者に養親が含まれるかである。民法817条の10第1項は、所定の要件を満たし養子の利益のため特に必要があると認めるときは「家庭裁判所は、養子、実父母又は検察官の請求により、特別養子縁組の当事者を離縁させることができる」と定め、同条2項は「離縁は、前項の規定による場合のほか、これをすることができない」と定める。請求権者に養親は含まれておらず、ほかの方法による離縁もできないから、D及びEは離縁を請求することができない。したがって、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "817_10",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "家庭裁判所は、養子、実父母又は検察官の請求により、特別養子縁組の当事者を離縁させることができる。",
+     "text_sha256": "a54ea3fdc12f001199d24fc56eeeb99722a70d32421e60fde4a72bc235594684",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "817_10",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "離縁は、前項の規定による場合のほか、これをすることができない。",
+     "text_sha256": "a54ea3fdc12f001199d24fc56eeeb99722a70d32421e60fde4a72bc235594684",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。817条の10は出題時点から本文が変わっていない"
+   ],
+   "id": "exp-yobi-2019-minpo-q14-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
