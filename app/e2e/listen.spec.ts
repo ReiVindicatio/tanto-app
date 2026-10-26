@@ -167,7 +167,12 @@ test("年度の行の🎧で、その年度の肢だけを聞き流す", async (
   await expect(page.locator(".toolbar")).toContainText("司法 H23 民法 聞き流し");
   await page.getByRole("button", { name: "▶ 聞きはじめる" }).click();
   await expect.poll(async () => (await played(page)).filter((x) => x.includes("/audio/tts/")).length).toBeGreaterThan(0);
-  expect((await played(page)).filter((x) => x.includes("/audio/tts/")).every((x) => x.includes("/shiho-2011-minpo-"))).toBe(true);
+  // 音声はカード（名寄せの代表）の ID で取りに行くので、予備の肢と同じ文なら yobi-2011-… になる。出典は画面で確かめる
+  await expect(page.locator(".listen-card .muted").first()).toContainText(/司法.*民法.*H23（2011）/);
+  for (let k = 0; k < 3; k++) {
+    await page.getByRole("button", { name: "次の肢へ ▶▶" }).click();
+    await expect(page.locator(".listen-card .muted").first()).toContainText(/司法.*民法.*H23（2011）/);
+  }
 });
 
 test("読む速さは、いま流している音声にもすぐ当たる（考える間の無音は変えない）", async ({ page }) => {
