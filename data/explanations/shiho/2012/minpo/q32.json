@@ -1,0 +1,255 @@
+{
+ "question_id": "shiho-2012-minpo-q32",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q32-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。遺言による認知は、遺言の効力が生じる遺言者の死亡の時に効力を生じ（985条1項）、遺言執行者の届出の時からではない。",
+   "body": "誤りは「遺言執行者が認知の届出をした時から効力を生ずる」の部分。781条2項は「認知は、遺言によっても、することができる。」と定め、遺言は「遺言者の死亡の時からその効力を生ずる。」（985条1項）ので、遺言による認知も遺言者の死亡の時に効力を生じる。戸籍法64条は「遺言による認知の場合には、遺言執行者は、その就職の日から十日以内に、認知に関する遺言の謄本を添附して、第六十条又は第六十一条の規定に従つて、その届出をしなければならない。」と定めるが、この届出は、すでに効力を生じた認知を報告するためのものと解されている。届出によって効力が生じる生前の認知（781条1項「認知は、戸籍法の定めるところにより届け出ることによってする。」）とは異なる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "781",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "認知は、遺言によっても、することができる。",
+     "text_sha256": "145e98c2b9afc73b2fac1982a2b1a43f6bb0995984a48983ad36890b81c4f55d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "985",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺言者の死亡の時からその効力を生ずる。",
+     "text_sha256": "cb013798b0ac8a729766d544731e1127aecba0fae91e7f6c2dad4fa25e4f19a1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "戸籍法",
+     "article": "64",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺言による認知の場合には、遺言執行者は、その就職の日から十日以内に、認知に関する遺言の謄本を添附して、第六十条又は第六十一条の規定に従つて、その届出をしなければならない。",
+     "text_sha256": "95a1b48210e4c936811889655b910e72cbf153ef82bc9e399e7e7e1fdcbc4446",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E7%99%BE%E4%BA%8C%E5%8D%81%E5%9B%9B%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "781",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "認知は、戸籍法の定めるところにより届け出ることによってする。",
+     "text_sha256": "145e98c2b9afc73b2fac1982a2b1a43f6bb0995984a48983ad36890b81c4f55d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない",
+    "遺言執行者の届出が報告的なものであることは解釈による"
+   ],
+   "id": "exp-shiho-2012-minpo-q32-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q32-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。子の承諾が要るのは成年の子を認知する場合だけで（782条）、未成年の子は意思能力があっても承諾なく認知できる。",
+   "body": "782条は「成年の子は、その承諾がなければ、これを認知することができない。」と定め、子の承諾を要するのは子が成年である場合に限っている。未成年の子については、意思能力の有無を問わず承諾を要件とする規定はないので、父は子の承諾なく認知することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "782",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "成年の子は、その承諾がなければ、これを認知することができない。",
+     "text_sha256": "2aa4e07363db6891b4261a7817d0883bf189922c69227160343c4ae1a2e264df",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない（成年年齢は出題後に20歳から18歳に変わったが、未成年の子の認知に子の承諾が要らないという結論は変わらない）"
+   ],
+   "id": "exp-shiho-2012-minpo-q32-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q32-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。母の承諾が要るのは胎児を認知する場合で（783条1項）、出生した未成年の子の認知には母の承諾は要らない。",
+   "body": "783条1項は「父は、胎内に在る子でも、認知することができる。この場合においては、母の承諾を得なければならない。」と定め、母の承諾を要するのは胎児認知の場合である。出生した未成年の子を認知する場合に母の承諾を要する規定はなく、子の承諾も成年の子についてだけ要求されている（782条「成年の子は、その承諾がなければ、これを認知することができない。」）。したがって、未成年の子の認知には母の承諾を得る必要はない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "783",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "父は、胎内に在る子でも、認知することができる。この場合においては、母の承諾を得なければならない。",
+     "text_sha256": "58480cd8fdc9daa6682f39b365ae116a49807a119529bdd6bd91a23bacea730b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "782",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "成年の子は、その承諾がなければ、これを認知することができない。",
+     "text_sha256": "2aa4e07363db6891b4261a7817d0883bf189922c69227160343c4ae1a2e264df",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q32-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q32-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。認知されても嫡出でない子は母の氏のままで（790条2項）、父の氏を称するには家庭裁判所の許可を得て届け出る必要がある（791条1項）。",
+   "body": "誤りは「認知と同時に届け出ることにより，父の氏を称することができる」の部分。790条2項は「嫡出でない子は、母の氏を称する。」と定め、認知によって子の氏は変わらない。子が父の氏を称するには、791条1項により「家庭裁判所の許可を得て、戸籍法の定めるところにより届け出ることによって、その父又は母の氏を称することができる。」とされており、家庭裁判所の許可が必要である。父が認知と同時に届け出るだけで父の氏を称することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "790",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "嫡出でない子は、母の氏を称する。",
+     "text_sha256": "4ac814639863c83fea4975b477d912200e606fb405a88aa4e1ed150deb0c15db",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "791",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "家庭裁判所の許可を得て、戸籍法の定めるところにより届け出ることによって、その父又は母の氏を称することができる。",
+     "text_sha256": "9888e184f43943163ed9be164a3c4e0bef39a8ca2212c1d081bb35a0b71cb795",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q32-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q32-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。母が認知の訴えを提起できるのは子の法定代理人としてであり（787条）、子が成年に達すると母は法定代理人でなくなるので提起できない。",
+   "body": "誤りは「その子が成年に達した後も」の部分。787条は「子、その直系卑属又はこれらの者の法定代理人は、認知の訴えを提起することができる。」と定め、母自身は訴えを提起できる者に挙げられていない。母が認知の訴えを提起できるのは、親権者として子の法定代理人である場合であり、親権は「成年に達しない子について」のものである（818条1項）。子が成年に達すると母は法定代理人でなくなるため、母は認知の訴えを提起することができず、成年の子自身が提起することになる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "787",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子、その直系卑属又はこれらの者の法定代理人は、認知の訴えを提起することができる。",
+     "text_sha256": "88ec7c2497f45693b8be10f61194b0e12d210870b2432b59b8201b527c862e8b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "818",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "成年に達しない子について",
+     "text_sha256": "4da65c3dc327782a0b1bfcf7e68ba4f9db8bec67337e94fc6bea7fd6c12e41dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない（818条1項の文言は出題後に変わっているが、親権が未成年の子についてのものである点は肢の結論に関わる範囲で変わらないものとして説明した）",
+    "母が親権者として子の法定代理人となり、子の成年後は法定代理人でなくなる点は解釈による"
+   ],
+   "id": "exp-shiho-2012-minpo-q32-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

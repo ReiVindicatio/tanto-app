@@ -1,0 +1,251 @@
+{
+ "question_id": "shiho-2011-minpo-q05",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q05-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。相手方が確定している行為の取消しは、相手方に対する意思表示によってする（123条）。",
+   "body": "未成年者が法定代理人の同意を得ないでした法律行為は、5条2項により「取り消すことができる。」。その取消しの方法について、123条は「取り消すことができる行為の相手方が確定している場合には、その取消し又は追認は、相手方に対する意思表示によってする。」と定める。したがって、相手方が確定しているときは、裁判所への請求などによらず、相手方に対する意思表示によって取り消す。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "5",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "取り消すことができる。",
+     "text_sha256": "41659855924ba702729f1bdac3f46add3ca097fdcda242a6f5e99f0d612d0360",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "123",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取り消すことができる行為の相手方が確定している場合には、その取消し又は追認は、相手方に対する意思表示によってする。",
+     "text_sha256": "f0870cab524529116c2b563ab3fe4d28ffa550ed6cdf04dfdc2437263c88a6b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2011-minpo-q05-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q05-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。取消しは「相手方に対する意思表示」によってする（123条）ので、第三者のためにする契約の諾約者が詐欺を理由に取り消すときも、契約の相手方に対してする。",
+   "body": "誤りは「その第三者に対する意思表示によって行う」の部分。第三者のためにする契約は、537条1項のとおり「契約により当事者の一方が第三者に対してある給付をすることを約した」ものであり、第三者は契約の当事者ではない。給付を約した者が相手方の詐欺を理由に意思表示を取り消す（96条1項）場合、123条により「相手方に対する意思表示によってする」ことになり、ここでいう相手方は契約の相手方（要約者）であると解されている。第三者が受益の意思表示をして権利が発生した後でも、取消しの意思表示の相手が第三者に変わるわけではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "537",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "契約により当事者の一方が第三者に対してある給付をすることを約した",
+     "text_sha256": "10cd4a6dd77645f052d9e71bca44a9551c4ffc405e771ee6d34f07cebe6caae5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐欺又は強迫による意思表示は、取り消すことができる。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "123",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方に対する意思表示によってする",
+     "text_sha256": "f0870cab524529116c2b563ab3fe4d28ffa550ed6cdf04dfdc2437263c88a6b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "取消しの意思表示の相手方が契約の相手方（要約者）であり、受益の意思表示後も第三者ではないという点は解釈による"
+   ],
+   "id": "exp-shiho-2011-minpo-q05-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q05-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。詐害行為の取消しは、債権者が裁判所に請求して行う（424条1項）。",
+   "body": "424条1項は「債権者は、債務者が債権者を害することを知ってした行為の取消しを裁判所に請求することができる。」と定める。詐害行為の取消しは、意思表示によって行う通常の取消し（123条）と異なり、債権者の請求に基づいて裁判所が行う。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者は、債務者が債権者を害することを知ってした行為の取消しを裁判所に請求することができる。",
+     "text_sha256": "22d988d8231e843109818b8d2f93e8f2bb2ba972e98650a949757943ef28191d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "123",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方に対する意思表示によってする",
+     "text_sha256": "f0870cab524529116c2b563ab3fe4d28ffa550ed6cdf04dfdc2437263c88a6b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない（詐害行為取消権の規定は債権法改正で変わっているが、取消しを裁判所に請求するという肢の結論を分ける点は今の424条1項で説明できる）"
+   ],
+   "id": "exp-shiho-2011-minpo-q05-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q05-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。婚姻適齢（731条）に違反した婚姻は、各当事者、その親族又は検察官から、家庭裁判所に取消しを請求することができる（744条1項）。",
+   "body": "744条1項は「第七百三十一条、第七百三十二条及び第七百三十四条から第七百三十六条までの規定に違反した婚姻は、各当事者、その親族又は検察官から、その取消しを家庭裁判所に請求することができる。」と定めており、婚姻適齢を定める731条違反の婚姻がこれに含まれる。したがって、その取消しは各当事者・親族・検察官の請求に基づき家庭裁判所が行う。なお、同項ただし書により、検察官は当事者の一方が死亡した後は請求できず、745条1項により不適齢者が適齢に達したときは取消しを請求できなくなる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "744",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第七百三十一条、第七百三十二条及び第七百三十四条から第七百三十六条までの規定に違反した婚姻は、各当事者、その親族又は検察官から、その取消しを家庭裁判所に請求することができる。",
+     "text_sha256": "cac653b1902e55bfd94bb0bee23f457e7737ce63995acedd539d731f7ca73180",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "731",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "婚姻は、十八歳にならなければ、することができない。",
+     "text_sha256": "b3d0de9ccf5cf560a6894bf2c51b032e283542cfcf2575d23f487827015a4bfa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "745",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第七百三十一条の規定に違反した婚姻は、不適齢者が適齢に達したときは、その取消しを請求することができない。",
+     "text_sha256": "4a641b6ff0a1fef3019b532420e2abf917bc5272ea65739088aaccff3cca6231",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない（731条の婚姻適齢の年齢や744条1項が挙げる条は出題後に変わっているが、婚姻適齢違反の婚姻の取消しを各当事者・親族・検察官が家庭裁判所に請求するという肢の結論を分ける点は今の744条1項で説明できる）"
+   ],
+   "id": "exp-shiho-2011-minpo-q05-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q05-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。負担付遺贈に係る遺言の取消しは、相続人が家庭裁判所に請求して行う（1027条）。受遺者に対する意思表示によるのではない。",
+   "body": "誤りは「受遺者に対する意思表示によって行う」の部分。1027条は、負担付遺贈を受けた者が義務を履行しないときは相続人が相当の期間を定めて履行を催告でき、「その期間内に履行がないときは、その負担付遺贈に係る遺言の取消しを家庭裁判所に請求することができる。」と定める。したがって、この取消しは相続人の請求に基づき家庭裁判所が行う。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1027",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その期間内に履行がないときは、その負担付遺贈に係る遺言の取消しを家庭裁判所に請求することができる。",
+     "text_sha256": "ad6bea59a026cb529d9d8132ba5e3bfc3feade9b0181c460f2f609f85a9b6bb2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2011-minpo-q05-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

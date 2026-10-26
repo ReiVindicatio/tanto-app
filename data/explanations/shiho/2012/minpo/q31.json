@@ -1,0 +1,57 @@
+{
+ "question_id": "shiho-2012-minpo-q31",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q31-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の731条は「婚姻は、十八歳にならなければ、することができない。」と定め、4条は「年齢十八歳をもって、成年とする。」と定めているので、婚姻をする者が未成年者であることはなく、肢の前提の「２０歳未満で婚姻」した者についての規律は今の条文にない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "731",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "婚姻は、十八歳にならなければ、することができない。",
+     "text_sha256": "b3d0de9ccf5cf560a6894bf2c51b032e283542cfcf2575d23f487827015a4bfa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "年齢十八歳をもって、成年とする。",
+     "text_sha256": "1971671d4fa76e8fa449652a4020d78a9e1b3cb2d87b63dabb7c98e81429695b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "メインで修正：同じ文の yobi-2012-minpo-q13-b（law_changed）にそろえた（前提の「20歳未満で婚姻」の制度が今の条文にない）"
+   ],
+   "id": "exp-shiho-2012-minpo-q31-b",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

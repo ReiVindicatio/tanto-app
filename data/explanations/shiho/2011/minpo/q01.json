@@ -1,0 +1,240 @@
+{
+ "question_id": "shiho-2011-minpo-q01",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q01-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、強迫による意思表示の成立に、表意者が畏怖の結果完全に選択の自由を失ったことまでは要しないとしている。",
+   "body": "誤りは「完全に意思の自由を失ったといえなければならない」の部分。96条1項は「詐欺又は強迫による意思表示は、取り消すことができる。」と定める。判例は、強迫による意思表示が成立するためには、表意者が畏怖の結果完全に選択の自由を失ったことを要するものではないとしている（最判昭和33年7月1日）。したがって、畏怖を感じて意思表示をしたことで足り、完全に意思の自由を失ったことまでは要求されない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐欺又は強迫による意思表示は、取り消すことができる。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "強迫による意思表示と選択の自由",
+     "court": "最高裁判所第三小法廷",
+     "date": "1958-07-01",
+     "case_number": "昭和31(オ)1100",
+     "holding": "強迫による意思表示が成立するためには、表意者が畏怖の結果完全に選択の自由を失ったことを要するものではない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52846/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2011-minpo-q01-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q01-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。相手方の主観で取消しが制限されるのは第三者による詐欺の場合だけで（96条2項）、第三者による強迫では相手方が知らなくても取り消すことができる。",
+   "body": "誤りは「取り消すことができない」の部分。96条2項は「相手方に対する意思表示について第三者が詐欺を行った場合においては、相手方がその事実を知り、又は知ることができたときに限り、その意思表示を取り消すことができる。」と定め、第三者による「詐欺」の場合だけを制限している。第三者による強迫にはこのような制限がないので、96条1項（「詐欺又は強迫による意思表示は、取り消すことができる。」）により、相手方が強迫の事実を知らなくても、表意者は意思表示を取り消すことができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "相手方に対する意思表示について第三者が詐欺を行った場合においては、相手方がその事実を知り、又は知ることができたときに限り、その意思表示を取り消すことができる。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐欺又は強迫による意思表示は、取り消すことができる。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない（96条2項の相手方の主観の要件は出題後の改正で変わった可能性があるが、強迫には制限がないという肢の結論を分ける点は同じ）"
+   ],
+   "id": "exp-shiho-2011-minpo-q01-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q01-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。詐欺の故意がなくても、相手方の過失による虚偽の説明については不法行為による損害賠償（709条）などの救済を受ける余地がある。",
+   "body": "誤りは「民事上の救済を受けることはない」の部分。詐欺取消し（96条1項）には相手方の欺く故意が要るとされているが、救済はそれに限られない。709条は「故意又は過失によって他人の権利又は法律上保護される利益を侵害した者は、これによって生じた損害を賠償する責任を負う。」と定めており、相手方が過失により虚偽の説明をして表意者に損害を与えたときは、損害賠償を請求する余地がある。また、虚偽の説明を信じたことで錯誤に陥っていれば、要件を満たす限り、錯誤による取消し（95条1項）が問題となることもある。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "709",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "故意又は過失によって他人の権利又は法律上保護される利益を侵害した者は、これによって生じた損害を賠償する責任を負う。",
+     "text_sha256": "8029deadb1259b68934cd034bed9cbaf1c223bbb9c091dfd88dcfb8c638e49ef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐欺又は強迫による意思表示は、取り消すことができる。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "95",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "意思表示は、次に掲げる錯誤に基づくものであって、その錯誤が法律行為の目的及び取引上の社会通念に照らして重要なものであるときは、取り消すことができる。",
+     "text_sha256": "a574178ace21adfb3a580ccce7d7b1d82a142c6d5dec52af686791911776a4b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "詐欺に欺く故意が要る点は解釈による",
+    "改正前の内容は条文の本文で確認していない（錯誤の規定（95条）は出題後の改正で効果・要件が変わっているので、決め手には709条を使い、95条は補足にとどめた）"
+   ],
+   "id": "exp-shiho-2011-minpo-q01-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q01-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。詐欺による意思表示は取り消すことができるにとどまり（96条1項）、取り消すまでは契約は有効なので、詐欺を理由に自らの債務の履行を拒むには取消しが要る。",
+   "body": "96条1項は「詐欺又は強迫による意思表示は、取り消すことができる。」と定めており、詐欺による意思表示は当然に無効になるのではなく、取り消されるまでは有効である。取り消してはじめて「取り消された行為は、初めから無効であったものとみなす。」（121条）という効果が生じる。したがって、取り消さないままでは契約は有効に存続しているので、相手方の債務が未履行であっても、表意者は詐欺を理由として自らの債務の履行を拒絶することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐欺又は強迫による意思表示は、取り消すことができる。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "121",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取り消された行為は、初めから無効であったものとみなす。",
+     "text_sha256": "e818d517a33aa79042b48d476962e388d6714c91741aecfe62af52cbca6e1c51",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2011-minpo-q01-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q01-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。96条3項は詐欺による取消しを一定の第三者に「対抗することができない」とするだけで、取消しそのものを禁じていない。",
+   "body": "96条3項は「前二項の規定による詐欺による意思表示の取消しは、善意でかつ過失がない第三者に対抗することができない。」と定める。この規定は、取消しの効果をその第三者に主張できないとするものであり、取消しをすること自体を妨げるものではない。したがって、取消し前に詐欺の事実を知らずに抵当権の設定を受けた者がいても、売主は詐欺による意思表示を取り消すことができる（その抵当権者に取消しを対抗できるかは別の問題である）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前二項の規定による詐欺による意思表示の取消しは、善意でかつ過失がない第三者に対抗することができない。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない（96条3項の第三者の要件は出題後の改正で変わった可能性があるが、取消し自体はできるという肢の結論を分ける点は同じ）"
+   ],
+   "id": "exp-shiho-2011-minpo-q01-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

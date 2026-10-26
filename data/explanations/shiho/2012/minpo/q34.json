@@ -1,0 +1,229 @@
+{
+ "question_id": "shiho-2012-minpo-q34",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q34-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。父母の一方が親権を行うことができないときは、他の一方が単独で親権を行う（824条の2第1項2号）。",
+   "body": "824条の2第1項は「親権は、父母が共同して行う。ただし、次に掲げるときは、その一方が行う。」とし、その2号に「他の一方が親権を行うことができないとき。」を挙げている。この「親権を行うことができないとき」には、親権喪失などの法律上の場合だけでなく、長期間の海外滞在などで事実上親権を行えない場合も含まれると解されている。したがって、父が長期間海外にいて事実上親権を行えないときは、母が単独で親権を行うことができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "824_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "親権は、父母が共同して行う。ただし、次に掲げるときは、その一方が行う。",
+     "text_sha256": "593d967d97dbb8e26cf9c8db131e64d014b72e65154eb1994234835e50476bd8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "824_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の一方が親権を行うことができないとき。",
+     "text_sha256": "593d967d97dbb8e26cf9c8db131e64d014b72e65154eb1994234835e50476bd8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない（親権の行使方法の規定は、出題後の改正で今の824条の2に置かれている。一方が親権を行えないときに他方が単独で行うという結論は今の条文でも同じ）",
+    "事実上親権を行えない場合も「親権を行うことができないとき」に含まれる点は解釈による"
+   ],
+   "id": "exp-shiho-2012-minpo-q34-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q34-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。子の出生前に父母が離婚したときは、親権は母が行い、父母の協議で父などを親権者と定めるのは子の出生後である（819条3項）。",
+   "body": "誤りは「その協議で，その一方を，子の出生後の親権者と定めなければならない」の部分。819条3項は「子の出生前に父母が離婚した場合には、親権は、母が行う。ただし、子の出生後に、父母の協議で、父母の双方又は父を親権者と定めることができる。」と定めている。このように、出生前に離婚した場合は法律上当然に母が親権を行うので、離婚の協議で出生後の親権者を定める必要はない。父などを親権者とする協議も、子の出生後にすることができるとされているにとどまる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "819",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "子の出生前に父母が離婚した場合には、親権は、母が行う。ただし、子の出生後に、父母の協議で、父母の双方又は父を親権者と定めることができる。",
+     "text_sha256": "c64e308686bb7b205715f4ba1f7b5628cd9b5c6379cdcdb7b43b58ad73ab22b2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない（今の819条3項ただし書は「父母の双方又は父」と定めており、出題後の改正で父母の双方を親権者とする選択肢が加わっている可能性がある。出生前の離婚では母が親権を行い、離婚の協議で定める必要はないという結論は同じ）"
+   ],
+   "id": "exp-shiho-2012-minpo-q34-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q34-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。無償で子に財産を与える第三者が親権者の一方に管理させない意思を表示したときは、その財産はその親の管理に属しない（830条1項）。",
+   "body": "830条1項は「無償で子に財産を与える第三者が、親権を行う父又は母にこれを管理させない意思を表示したときは、その財産は、父又は母の管理に属しないものとする。」と定めている。遺贈も無償で財産を与えるものであり、遺言者は遺言でこの意思を表示することができると解されている。条文は「父又は母」としているので、父母の一方（ここでは父）だけに管理させない意思を表示することもでき、その場合、遺贈の効力が生じた後、父は遺贈された財産の管理権を有しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "830",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "無償で子に財産を与える第三者が、親権を行う父又は母にこれを管理させない意思を表示したときは、その財産は、父又は母の管理に属しないものとする。",
+     "text_sha256": "34581e37fbae96dd377ca8104b726aa5c2f9284151b4cfc78d8f936f01b45578",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "遺贈が830条1項の「無償で子に財産を与える」に当たり、遺言でその意思を表示できる点は解釈による"
+   ],
+   "id": "exp-shiho-2012-minpo-q34-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q34-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。肢は837条1項の文言のとおりである。",
+   "body": "837条1項は「親権を行う父又は母は、やむを得ない事由があるときは、家庭裁判所の許可を得て、親権又は管理権を辞することができる。」と定めており、肢はこの条文と同じ内容である。なお、同条2項により、その事由が消滅したときは、家庭裁判所の許可を得て親権又は管理権を回復することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "837",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "親権を行う父又は母は、やむを得ない事由があるときは、家庭裁判所の許可を得て、親権又は管理権を辞することができる。",
+     "text_sha256": "1ef227d53d39da70dafa477651bd8a068bfdacd29827f378308a2d49ddeb235b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "837",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の事由が消滅したときは、父又は母は、家庭裁判所の許可を得て、親権又は管理権を回復することができる。",
+     "text_sha256": "1ef227d53d39da70dafa477651bd8a068bfdacd29827f378308a2d49ddeb235b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2012-minpo-q34-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q34-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。特別養子縁組によって実方の父母との親族関係は終了する（817条の9）ので、養子は実方の父母の相続人としての地位を失う。",
+   "body": "誤りは「実方の父母の相続人としての地位を失わない」の部分。817条の9は「養子と実方の父母及びその血族との親族関係は、特別養子縁組によって終了する。」と定めている（同条ただし書の場合を除く）。887条1項は「被相続人の子は、相続人となる。」と定めるが、特別養子は実方の父母との親子関係が終了しているので、実方の父母の子として相続人となることはない。前半の、未成年の間は養親の親権に服する点は、818条3項（「子が養子であるときは、次に掲げる者を親権者とする。」）のとおり正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "817_9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "養子と実方の父母及びその血族との親族関係は、特別養子縁組によって終了する。",
+     "text_sha256": "1ce523c270917c3781b8ed69d5d31053126829c3006cb597efe522a722dc1e8f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "887",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被相続人の子は、相続人となる。",
+     "text_sha256": "6eac3c2fc5ddf34f8bb4ef2112c6f22d510ce206b2b194c9870bf454b6e0eb12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "818",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "子が養子であるときは、次に掲げる者を親権者とする。",
+     "text_sha256": "4da65c3dc327782a0b1bfcf7e68ba4f9db8bec67337e94fc6bea7fd6c12e41dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない（養子の親権者の規定は今は818条3項に置かれている）"
+   ],
+   "id": "exp-shiho-2012-minpo-q34-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

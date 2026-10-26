@@ -1,0 +1,240 @@
+{
+ "question_id": "shiho-2011-minpo-q02",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q02-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法には承諾の効力発生時期についての特則がなく、承諾も意思表示一般と同じく「その通知が相手方に到達した時からその効力を生ずる」（97条1項）ので、今の条文では隔地者間の契約は承諾の到達時に成立することになる。今の条文では、肢を誤りとする公式の×に行き着かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "97",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その通知が相手方に到達した時からその効力を生ずる",
+     "text_sha256": "d29bdd41ac5f5500bebb9725f87e52d68fc301915306af0ea5719792f455ee54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題は債権法改正前。承諾の効力発生時期（契約の成立時期）の規律が改正で変わったため、解説を書かずに law_changed とした"
+   ],
+   "id": "exp-shiho-2011-minpo-q02-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q02-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。催告に対する確答は期間内に「発」すれば足りる（20条2項・1項）ので、期間内に追認拒絶の通知を発していれば、到達が期間経過後でも追認したものとはみなされない。",
+   "body": "誤りは「追認したものとみなされる」の部分。20条1項後段は「その者がその期間内に確答を発しないときは、その行為を追認したものとみなす。」と定め、同条2項は、法定代理人等に催告をした場合において「これらの者が同項の期間内に確答を発しないときも、同項後段と同様とする。」と定めている。このように、追認とみなされるのは期間内に確答を「発しない」ときであり、確答の発信が期間内であれば足りる。したがって、法定代理人が期間内に追認拒絶の通知を発していれば、その到達が期間経過後であっても、追認したものとはみなされない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その者がその期間内に確答を発しないときは、その行為を追認したものとみなす。",
+     "text_sha256": "17820f6804d9e0c7a8dd660161ca60f6721ea4a868df39acb859edc8fc3266c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "20",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "これらの者が同項の期間内に確答を発しないときも、同項後段と同様とする。",
+     "text_sha256": "17820f6804d9e0c7a8dd660161ca60f6721ea4a868df39acb859edc8fc3266c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2011-minpo-q02-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q02-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。意思表示は通知が相手方に到達した時に効力を生じ（97条1項）、同居の内縁の妻が受領して相手方の支配圏内に入れば到達があったとされる（判例あり（要確認））。",
+   "body": "97条1項は「意思表示は、その通知が相手方に到達した時からその効力を生ずる。」と定める。ここでいう到達は、相手方が現実に読んだことまでは要せず、通知が相手方の支配圏内に置かれ、相手方が了知できる状態になれば足りると解されている。Ａの事務所兼自宅に配達された書面を、Ａと同居している内縁の妻が受領した場合には、Ａがたまたま不在であっても、書面はＡの支配圏内に入ったといえるので、意思表示の効力が生ずる。肢のような事案で到達を認めた判例あり（要確認）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "97",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "意思表示は、その通知が相手方に到達した時からその効力を生ずる。",
+     "text_sha256": "d29bdd41ac5f5500bebb9725f87e52d68fc301915306af0ea5719792f455ee54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "pending_cases": [
+    {
+     "about": "相手方と同居する内縁の妻が書面を受領した場合に意思表示の到達を認めた判例",
+     "searched": [
+      "courts.py search 意思表示 到達 内縁",
+      "courts.py search 内縁の妻 受領 到達 --from 昭和22 --to 昭和50",
+      "courts.py search 意思表示 到達 了知 --from 昭和22 --to 昭和50"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "到達の意味（相手方の支配圏内に入り了知できる状態になること）は解釈による",
+    "肢の判例は大審院の判決である可能性があり、データベースで確かめられなかった"
+   ],
+   "id": "exp-shiho-2011-minpo-q02-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q02-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法では承諾も「その通知が相手方に到達した時からその効力を生ずる」（97条1項）ので、肢の事例では契約は承諾者の死亡後の到達時に成立することになる。今の条文では「意思表示は、表意者が通知を発した後に死亡し、意思能力を喪失し、又は行為能力の制限を受けたときであっても、そのためにその効力を妨げられない。」（97条3項）により×の結論にはなるが、申込者についての特則（526条）しかない今の規律で説明すると、契約の成立時期の点で出題時と別の理由になるおそれがある。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "97",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その通知が相手方に到達した時からその効力を生ずる",
+     "text_sha256": "d29bdd41ac5f5500bebb9725f87e52d68fc301915306af0ea5719792f455ee54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "97",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "意思表示は、表意者が通知を発した後に死亡し、意思能力を喪失し、又は行為能力の制限を受けたときであっても、そのためにその効力を妨げられない。",
+     "text_sha256": "d29bdd41ac5f5500bebb9725f87e52d68fc301915306af0ea5719792f455ee54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "526",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申込者が申込みの通知を発した後に死亡し",
+     "text_sha256": "6ca9b4a484b18ffca1981a1a6ef05776910f39306da420e4f81faf8abf22a237",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題は債権法改正前。承諾の効力発生時期（契約の成立時期）の規律が改正で変わっており、結論は同じでも理由が変わるおそれがあるため、迷う場合の扱い（手順7）に従い law_changed とした"
+   ],
+   "id": "exp-shiho-2011-minpo-q02-d",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q02-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。申込みは到達するまで効力を生じない（97条1項）ので、承諾期間の定めのある申込みでも、到達前または到達と同時に撤回の通知が届けば撤回できる。",
+   "body": "523条1項本文は「承諾の期間を定めてした申込みは、撤回することができない。」と定めるが、これは効力を生じた申込みについての規定と解されている。意思表示は「その通知が相手方に到達した時からその効力を生ずる。」（97条1項）ので、申込みは相手方に到達するまで効力を生じていない。したがって、申込みの到達前または到達と同時に撤回の通知が相手方に到達すれば、申込みは効力を生じず、承諾期間の定めがあっても撤回することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "523",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "承諾の期間を定めてした申込みは、撤回することができない。",
+     "text_sha256": "f6bbe3d48447f4772d5177bc76dde9733088da42ca8765b8b155ae0248681fa8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "97",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "意思表示は、その通知が相手方に到達した時からその効力を生ずる。",
+     "text_sha256": "d29bdd41ac5f5500bebb9725f87e52d68fc301915306af0ea5719792f455ee54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "523条1項が効力発生前の申込みの撤回を妨げない点は解釈による",
+    "改正前の内容は条文の本文で確認していない（今の523条1項にはただし書（撤回する権利の留保）がある）"
+   ],
+   "id": "exp-shiho-2011-minpo-q02-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

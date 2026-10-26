@@ -1,0 +1,244 @@
+{
+ "question_id": "shiho-2011-minpo-q13",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q13-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法の363条は「削除」とされ、債権を目的とする質権については364条が対抗要件（「第三債務者にその質権の設定を通知し、又は第三債務者がこれを承諾しなければ」）を定めるだけで、証書の交付と質権設定の効力との関係を定めた規定は今の条文にない。肢はその規定を前提に証書の交付の要否を問うものであり、決め手の規定がなくなっているため、今の条文では出題の趣旨どおりに説明できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "363",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "削除",
+     "text_sha256": "e9653dc3edcbc072d033d200b3aa56539fde84e9b7cc80287fedc9f91cbe03ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "364",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第三債務者にその質権の設定を通知し、又は第三債務者がこれを承諾しなければ",
+     "text_sha256": "f941e2bc3025d8a47c082cc751ead88e7a4654b9f40bac40c7a3dbda58baf7b7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題時点の363条（削除前）の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2011-minpo-q13-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q13-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。債権質の質権者は、質権の目的である債権を直接に取り立てることができる（366条1項）。",
+   "body": "366条1項は「質権者は、質権の目的である債権を直接に取り立てることができる。」と定める。同条3項は、目的債権の弁済期が質権者の債権（被担保債権）の弁済期より前に来た場合について、質権者は「第三債務者にその弁済をすべき金額を供託させることができる。」と定めるにとどまる。肢は被担保債権と甲債権の双方の弁済期が来ている場合であるから、3項の場面ではなく、1項により甲債権を直接取り立てることができる。なお、甲債権が金銭債権であれば、取り立てられるのは「自己の債権額に対応する部分に限り」とされる（同条2項）。肢の「指名債権」は、今の民法では単に「債権」として定められている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "366",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権者は、質権の目的である債権を直接に取り立てることができる。",
+     "text_sha256": "e42097ca4d399053915f9860ea27ed0404b5006f516b2ab755b2b9f137ce6580",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "366",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第三債務者にその弁済をすべき金額を供託させることができる。",
+     "text_sha256": "e42097ca4d399053915f9860ea27ed0404b5006f516b2ab755b2b9f137ce6580",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "366",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "自己の債権額に対応する部分に限り",
+     "text_sha256": "e42097ca4d399053915f9860ea27ed0404b5006f516b2ab755b2b9f137ce6580",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "名前が変わった（規律と結論は同じ）：「指名債権」は今の条文では「債権」。"
+   ],
+   "id": "exp-shiho-2011-minpo-q13-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q13-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の466条2項は「譲渡制限の意思表示」があっても「債権の譲渡は、その効力を妨げられない。」とし、同条3項で、悪意又は重過失の第三者に対しては債務者が「その債務の履行を拒むことができ」るとする仕組みを定めている。肢が前提にしている譲渡禁止特約の効力についての規律が今の条文では別の形に変わっており、今の条文では公式の○×に行き着かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "466",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当事者が債権の譲渡を禁止し、又は制限する旨の意思表示（以下「譲渡制限の意思表示」という。）をしたときであっても、債権の譲渡は、その効力を妨げられない。",
+     "text_sha256": "53cc6756b6ec229cfaa95a16773ac9bf62af5b5c72736b876442ab620e04c690",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "466",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "その債務の履行を拒むことができ",
+     "text_sha256": "53cc6756b6ec229cfaa95a16773ac9bf62af5b5c72736b876442ab620e04c690",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題時点の466条の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2011-minpo-q13-c",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q13-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。債権質の設定は467条に従った通知又は承諾が対抗要件であり（364条）、第三債務者以外の第三者に対抗するには確定日付のある証書による通知又は承諾が要る（467条2項）。",
+   "body": "364条は、債権を目的とする質権の設定は「第四百六十七条の規定に従い、第三債務者にその質権の設定を通知し、又は第三債務者がこれを承諾しなければ、これをもって第三債務者その他の第三者に対抗することができない。」と定める。そして467条2項は「前項の通知又は承諾は、確定日付のある証書によってしなければ、債務者以外の第三者に対抗することができない。」と定める。したがって、第三債務者以外の第三者に質権設定を対抗するには確定日付のある証書による通知又は承諾が必要であり、肢は正しい。肢の「指名債権」は、今の民法では単に「債権」として定められている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "364",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四百六十七条の規定に従い、第三債務者にその質権の設定を通知し、又は第三債務者がこれを承諾しなければ、これをもって第三債務者その他の第三者に対抗することができない。",
+     "text_sha256": "f941e2bc3025d8a47c082cc751ead88e7a4654b9f40bac40c7a3dbda58baf7b7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "467",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の通知又は承諾は、確定日付のある証書によってしなければ、債務者以外の第三者に対抗することができない。",
+     "text_sha256": "3ea3b680843790c06eebdfbd14c6c386b02dd512b401d1869219846beeebd54f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "名前が変わった（規律と結論は同じ）：「指名債権」は今の条文では「債権」。",
+    "肢が「債権者が個人である」場合に限っている理由は、民法以外の法律に関わるため本文では扱っていない。"
+   ],
+   "id": "exp-shiho-2011-minpo-q13-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q13-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の468条1項は「債務者は、対抗要件具備時までに譲渡人に対して生じた事由をもって譲受人に対抗することができる。」と定めるだけで、債務者が異議をとどめないで承諾したことにより抗弁を対抗できなくなるという、肢の前提の規定は今の条文にない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "468",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、対抗要件具備時までに譲渡人に対して生じた事由をもって譲受人に対抗することができる。",
+     "text_sha256": "128edb01a7454acf824569bca8ccd003b404dfddaf155a4d9de0a546621b1043",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題時点の468条の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2011-minpo-q13-e",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,147 @@
+{
+ "question_id": "shiho-2011-minpo-q18",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q18-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の424条3項は「債権者は、その債権が第一項に規定する行為の前の原因に基づいて生じたものである場合に限り、同項の規定による請求（以下「詐害行為取消請求」という。）をすることができる。」と定め、取消しができるかを債権の成立の時ではなく債権の発生原因が行為の前にあるかで分けている。肢は「債権成立前」の譲渡かどうかで結論を決めており、今の条文では、債権の成立が譲渡の後でもその原因が譲渡の前にあれば取消しの対象となりうるので、肢の前提の規律と違う。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "債権者は、その債権が第一項に規定する行為の前の原因に基づいて生じたものである場合に限り、同項の規定による請求（以下「詐害行為取消請求」という。）をすることができる。",
+     "text_sha256": "22d988d8231e843109818b8d2f93e8f2bb2ba972e98650a949757943ef28191d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "債権成立前の譲渡について、成立後にされた所有権移転登記も詐害行為とならないとした判例があるが、確かめていない（law_changed のため探していない）"
+   ],
+   "id": "exp-shiho-2011-minpo-q18-1",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q18-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の424条の5は、転得者に対する詐害行為取消請求を「受益者に対して詐害行為取消請求をすることができる場合において」に限っている。受益者が債権者を害すべき事実を知らない場合には受益者に対する取消請求ができない（424条1項ただし書「受益者」が「その行為の時において債権者を害することを知らなかったときは、この限りでない。」）ので、今の条文では転得者が知っていても取消請求ができず、公式の×に行き着かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "受益者に対して詐害行為取消請求をすることができる場合において",
+     "text_sha256": "867f9bcf694896077ed49c5ce4992ac485c8c7a9f9ae05d8b86e14a19496af26",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その行為の時において債権者を害することを知らなかったときは、この限りでない。",
+     "text_sha256": "22d988d8231e843109818b8d2f93e8f2bb2ba972e98650a949757943ef28191d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2011-minpo-q18-3",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q18-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の424条の7は、被告を受益者又は転得者とする（1項）一方で、2項で「債権者は、詐害行為取消請求に係る訴えを提起したときは、遅滞なく、債務者に対し、訴訟告知をしなければならない。」と定め、425条で認容判決の効力が「債務者及びその全ての債権者に対しても」及ぶとしている。債務者を被告としない点は同じでも、受益者又は転得者を相手に訴えを提起すれば「足り」るという肢の前提とは規律が違い、今の条文で説明すると出題の趣旨と別の理由になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_7",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権者は、詐害行為取消請求に係る訴えを提起したときは、遅滞なく、債務者に対し、訴訟告知をしなければならない。",
+     "text_sha256": "d2c8f7dd0b10714b9615fa2e4c3e90314c9ae3e5e366b765d756474a75d74594",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐害行為取消請求に係る訴えについては、次の各号に掲げる区分に応じ、それぞれ当該各号に定める者を被告とする。",
+     "text_sha256": "d2c8f7dd0b10714b9615fa2e4c3e90314c9ae3e5e366b765d756474a75d74594",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "425",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者及びその全ての債権者に対しても",
+     "text_sha256": "16eab9017a23dd7d4678c14fc78774f5cb544396292eb0b3014418ac53d19045",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "迷ったので law_changed にした（債務者を被告としない結論は今の424条の7第1項でも同じだが、訴訟告知の義務と認容判決の効力の規定が加わっており、「足り」るとする肢の前提と規律が同じとは言い切れない）"
+   ],
+   "id": "exp-shiho-2011-minpo-q18-4",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}
