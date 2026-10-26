@@ -1,0 +1,264 @@
+{
+ "question_id": "shiho-2018-minpo-q34",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q34-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。相続財産全部の包括受遺者がいる場合は「相続人のあることが明らかでないとき」に当たらず、相続財産法人は成立しないとするのが判例である。",
+   "body": "951条は「相続人のあることが明らかでないときは、相続財産は、法人とする。」と定める。判例は、遺言者に相続人は存在しないが相続財産全部の包括受遺者が存在する場合は、951条にいう相続人のあることが明らかでない場合に当たらないとした。したがって、この場合には相続財産法人は成立しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "951",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続人のあることが明らかでないときは、相続財産は、法人とする。",
+     "text_sha256": "b425c1489dab527359077e8f9f2529dd33680cd23b6b1d2f7058d12a929748d3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "相続財産全部の包括受遺者がいる場合と相続財産法人の成否",
+     "court": "最高裁判所第二小法廷",
+     "date": "1997-09-12",
+     "case_number": "平成6(オ)2052",
+     "holding": "遺言者に相続人は存在しないが相続財産全部の包括受遺者が存在する場合は、民法951条にいう「相続人のあることが明かでないとき」に当たらない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52539/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。951条は2018-05-01時点から本文は変わっていない"
+   ],
+   "id": "exp-shiho-2018-minpo-q34-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q34-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。代理権が消滅するのは相続人のあることが明らかになった時ではなく、「相続人が相続の承認をした時」である（956条1項）。",
+   "body": "956条1項は「相続財産の清算人の代理権は、相続人が相続の承認をした時に消滅する。」と定める。相続人のあることが明らかになっただけでは代理権は消滅せず、その相続人が相続の承認をした時に消滅する。「相続人のあることが明らかになった」「その時点で」消滅するとする点が誤り。なお、肢の「相続財産の管理人」は、今の民法では「相続財産の清算人」（952条1項・956条1項）として定められている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "956",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続財産の清算人の代理権は、相続人が相続の承認をした時に消滅する。",
+     "text_sha256": "3b1be2531bbad81f12493faf2d8aff293dd7a2f1776e219471b0e0d7f713b497",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "952",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "家庭裁判所は、利害関係人又は検察官の請求によって、相続財産の清算人を選任しなければならない。",
+     "text_sha256": "c953091202e9f12ea615bc4bb0907cd51d75216e890af6d248617acebd8b84c7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "名前が変わった（規律と結論は同じ）。出題後に956条の本文が変わった（「相続財産の管理人」が「相続財産の清算人」になった。代理権が相続の承認の時に消滅する点は同じ）"
+   ],
+   "id": "exp-shiho-2018-minpo-q34-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q34-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、清算手続が終了した共有持分は、まず特別縁故者に対する財産分与の対象となり、分与されないときに255条により他の共有者に帰属するとしている。",
+   "body": "255条は「共有者の一人が、その持分を放棄したとき、又は死亡して相続人がないときは、その持分は、他の共有者に帰属する。」と定める。一方、958条の2第1項は、家庭裁判所が特別縁故者に「清算後残存すべき相続財産の全部又は一部を与えることができる。」と定める。判例は、共有者の一人が死亡し、相続人の不存在が確定し、相続債権者や受遺者に対する清算手続が終了したときは、その持分は特別縁故者に対する財産分与の対象となり、財産分与がされないときに255条により他の共有者に帰属するとした。「特別縁故者への財産分与の対象にはならない」とする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "255",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "共有者の一人が、その持分を放棄したとき、又は死亡して相続人がないときは、その持分は、他の共有者に帰属する。",
+     "text_sha256": "31b6c379bb91b4e0913aaac5be0ad7c97e024b7bcd9265d630d4ccc919ecb2a6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "958_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "清算後残存すべき相続財産の全部又は一部を与えることができる。",
+     "text_sha256": "1ba7d1c21e323ff13f25a43e055a481d705fd95ab7c6427b2d31e95d6ef2bb93",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "相続人なく死亡した共有者の持分と特別縁故者への財産分与",
+     "court": "最高裁判所第二小法廷",
+     "date": "1989-11-24",
+     "case_number": "昭和63(行ツ)40",
+     "holding": "共有者の一人が死亡し、相続人の不存在が確定し、相続債権者や受遺者に対する清算手続が終了したときは、その持分は、特別縁故者に対する財産分与の対象となり、財産分与がされないときに、255条により他の共有者に帰属する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52769/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。255条は2018-05-01時点から本文は変わっていない",
+    "出題後に特別縁故者への分与の規定の条番号が変わった（判例が引く958条の3が今の958条の2。分与の対象を定める1項の本文は同じで、結論は同じ）"
+   ],
+   "id": "exp-shiho-2018-minpo-q34-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q34-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。公告の期間内に権利を主張しなかった相続人は権利を行使できなくなり、判例は、特別縁故者への分与後の残余財産についても相続権を有しないとしている。",
+   "body": "958条は「第九百五十二条第二項の期間内に相続人としての権利を主張する者がないときは、相続人並びに相続財産の清算人に知れなかった相続債権者及び受遺者は、その権利を行使することができない。」と定める。分与されなかった相続財産は「国庫に帰属する。」（959条）。判例も、相続人捜索の公告期間を徒過した相続人は、特別縁故者に対する相続財産分与後の残余財産についても相続権を有しないとした。なお、肢の「相続人の捜索の公告」は、今の民法では、相続財産の清算人の選任の際に家庭裁判所がする「相続人があるならば一定の期間内にその権利を主張すべき旨」の公告（952条2項）として定められている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "958",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第九百五十二条第二項の期間内に相続人としての権利を主張する者がないときは、相続人並びに相続財産の清算人に知れなかった相続債権者及び受遺者は、その権利を行使することができない。",
+     "text_sha256": "e48fa51289618aee11247e738b5a4e3450a7383639f38dc8db0b5580e21ddb0e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "959",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "国庫に帰属する。",
+     "text_sha256": "1cbc37a589358e170975f3707abbd9c7f8f1bcb990033c515badd9e602085e40",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "952",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "相続人があるならば一定の期間内にその権利を主張すべき旨",
+     "text_sha256": "c953091202e9f12ea615bc4bb0907cd51d75216e890af6d248617acebd8b84c7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "公告期間を徒過した相続人と特別縁故者への分与後の残余財産",
+     "court": "最高裁判所第二小法廷",
+     "date": "1981-10-30",
+     "case_number": "昭和52(オ)360",
+     "holding": "民法958条（当時）の規定による公告期間を徒過した相続人は、特別縁故者に対する相続財産分与後の残余財産についても相続権を有しない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54232/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。959条は2018-05-01時点から本文は変わっていない",
+    "名前が変わった（規律と結論は同じ）。出題後に952条・958条の本文と条番号が変わった（相続人の捜索の公告が952条2項の公告にまとめられ、失権を定める規定が今の958条になった。公告期間内に権利を主張しなかった相続人が権利を行使できない点は同じ）。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2018-minpo-q34-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q34-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。家庭裁判所は、特別縁故者に「清算後残存すべき相続財産の全部又は一部」を与えることができる（958条の2第1項）。",
+   "body": "958条の2第1項は、相当と認めるときは、家庭裁判所は、特別縁故者の請求によって、これらの者に「清算後残存すべき相続財産の全部又は一部を与えることができる。」と定める。条文上、全部を与えることも認められているので、「全部を与えることはできない」とする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "958_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "清算後残存すべき相続財産の全部又は一部を与えることができる。",
+     "text_sha256": "1ba7d1c21e323ff13f25a43e055a481d705fd95ab7c6427b2d31e95d6ef2bb93",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に条番号が変わった（出題時の958条の3第1項と今の958条の2第1項は本文が同じで、結論は同じ）"
+   ],
+   "id": "exp-shiho-2018-minpo-q34-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

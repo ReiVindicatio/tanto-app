@@ -1,0 +1,349 @@
+{
+ "question_id": "shiho-2018-minpo-q30",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q30-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法774条は、子が嫡出であることの否認を「父又は子」に認め（1項）、さらに「母」（3項）と「前夫」（4項）にも否認権を認めている。否認できる者の範囲が出題後に変わっており、今の条文で説明すると出題の趣旨と別の理由になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "774",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第七百七十二条の規定により子の父が定められる場合において、父又は子は、子が嫡出であることを否認することができる。",
+     "text_sha256": "aae95bd183b07170970333d34a80d46d99beb3ebaffe9f8de52c4bb2e8c26cf7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "774",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "母は、子が嫡出であることを否認することができる。",
+     "text_sha256": "aae95bd183b07170970333d34a80d46d99beb3ebaffe9f8de52c4bb2e8c26cf7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "774",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "子の父以外のもの（以下「前夫」という。）は、子が嫡出であることを否認することができる。",
+     "text_sha256": "aae95bd183b07170970333d34a80d46d99beb3ebaffe9f8de52c4bb2e8c26cf7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に774条の本文が変わった（否認権者の範囲が広がった）。血縁上の父に否認権がない点は今の条文でも同じに読めるが、決め手の条文の中身が変わっているため解説を書かずに law_changed とした。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2018-minpo-q30-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q30-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。妻以外の女性が生んだ子には772条の嫡出の推定が及ばないので、嫡出否認の訴えではなく親子関係不存在確認の訴えで争う。",
+   "body": "嫡出の推定は「妻が婚姻中に懐胎した子は、当該婚姻における夫の子と推定する。」（772条1項）と定められ、妻が懐胎したことが前提である。嫡出否認は「第七百七十二条の規定により子の父が定められる場合において」認められるもの（774条1項）なので、妻以外の第三者が生んだ子は、戸籍上嫡出子とされていても嫡出の推定を受けず、嫡出否認の訴えの対象にならないと解されている。この場合の父子関係は、人事訴訟法2条2号の「実親子関係の存否の確認の訴え」で争うことになる。判例も、戸籍上夫婦の嫡出子として記載されているが実子でない者について、実親子関係不存在確認請求ができることを前提に、それが権利の濫用に当たるかを検討している。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "772",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "妻が婚姻中に懐胎した子は、当該婚姻における夫の子と推定する。",
+     "text_sha256": "99efe67baa1c7a7aa568fe69b0d7a59a22934f8013ef6a03333b52dcfe964d42",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "774",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第七百七十二条の規定により子の父が定められる場合において",
+     "text_sha256": "aae95bd183b07170970333d34a80d46d99beb3ebaffe9f8de52c4bb2e8c26cf7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "実親子関係の存否の確認の訴え",
+     "text_sha256": "46b7eed1594490f7decba334e4d1801896fc1193ff300d199b3e299528795dac",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "戸籍上の嫡出子と実親子関係不存在確認請求の権利濫用",
+     "court": "最高裁判所第二小法廷",
+     "date": "2006-07-07",
+     "case_number": "平成17(受)833",
+     "holding": "戸籍上夫婦の嫡出子として記載されているが同夫婦の実子ではない者について、長女が実親子関係不存在確認を求めた事案で、判示の事情を十分検討せずに権利の濫用に当たらないとした原審の判断には違法があるとした。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/33298/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に772条・774条の本文が変わった（結論は同じ）。改正前の内容は条文の本文で確認していない",
+    "妻以外の者が生んだ子に嫡出否認の訴えが使えないという点は解釈による"
+   ],
+   "id": "exp-shiho-2018-minpo-q30-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q30-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。妻が夫の子を懐胎することが不可能だった時期に懐胎した子は、判例上772条の推定を受けない子とされ、嫡出否認の訴えによらずに親子関係不存在確認の訴えで争える。",
+   "body": "嫡出否認の訴え（775条）は、「第七百七十二条の規定により子の父が定められる場合」（774条1項）に使うものである。判例は、母と夫が事実上の離婚をして夫婦の実態が失われていた場合には、子は772条による嫡出の推定を受けないとし、また、懐胎の時期に夫が出征中で妻が夫の子を懐胎することが不可能であったことが明らかな子は、実質的には772条の推定を受けない嫡出子であるとして、親子関係不存在確認の訴えを適法とした。夫の長期の服役で懐胎が不可能であった場合も同じく推定が及ばないと解されており、夫は嫡出否認の訴えに限られず、親子関係不存在確認の訴え（人事訴訟法2条2号の「実親子関係の存否の確認の訴え」）で争うことができる。「嫡出否認の訴えによらなければならない」とする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "772",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "妻が婚姻中に懐胎した子は、当該婚姻における夫の子と推定する。",
+     "text_sha256": "99efe67baa1c7a7aa568fe69b0d7a59a22934f8013ef6a03333b52dcfe964d42",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "774",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第七百七十二条の規定により子の父が定められる場合において",
+     "text_sha256": "aae95bd183b07170970333d34a80d46d99beb3ebaffe9f8de52c4bb2e8c26cf7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "775",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次の各号に掲げる否認権は、それぞれ当該各号に定める者に対する嫡出否認の訴えによって行う。",
+     "text_sha256": "b8f58800c9b225d253fccd759b6456eb0bcaf5bac82ba406bfc78660bdd8939a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "実親子関係の存否の確認の訴え",
+     "text_sha256": "46b7eed1594490f7decba334e4d1801896fc1193ff300d199b3e299528795dac",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "事実上の離婚と嫡出の推定（推定の及ばない子）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1969-05-29",
+     "case_number": "昭和43(オ)1184",
+     "holding": "離婚による婚姻解消後300日以内に出生した子でも、母と夫が離婚届出の約2年半前から事実上の離婚をして別居し、交渉を絶って夫婦の実態が失われていた場合には、772条による嫡出の推定を受けない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54117/detail2/index.html"
+     ]
+    },
+    {
+     "name": "夫の出征中に懐胎した子と親子関係不存在確認の訴え",
+     "court": "最高裁判所第二小法廷",
+     "date": "1998-08-31",
+     "case_number": "平成7(オ)2178",
+     "holding": "懐胎の時期に夫が出征中で妻が夫の子を懐胎することが不可能であったことが明らかな子は、実質的には772条の推定を受けない嫡出子であり、判示の事情の下では親子関係不存在確認の訴えは適法である。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/76124/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に772条・774条・775条の本文が変わった（推定の及ばない子についての判例の考え方による結論は同じ）。改正前の内容は条文の本文で確認していない",
+    "服役の場合も推定が及ばないとする点は判例の考え方を当てはめた解釈による（服役そのものを扱った判例は確かめていない）"
+   ],
+   "id": "exp-shiho-2018-minpo-q30-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q30-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。第三者が提起する親子関係の存否確認の訴えは、当事者の一方が死亡した後は他の一方を被告として提起でき、双方が死亡していても検察官を被告として提起できる。",
+   "body": "人事訴訟法12条2項は、身分関係の当事者以外の者が提起する人事に関する訴えについて、「当該身分関係の当事者の双方を被告とし、その一方が死亡した後は、他の一方を被告とする。」と定める。さらに同条3項は、被告とすべき者が死亡して被告とすべき者がないときは「検察官を被告とする。」と定める。実親子関係の存否の確認の訴えは人事訴訟（同法2条2号）に当たるので、母と子の一方が死亡した後でも、第三者は訴えを提起できる。判例も、親子の一方が死亡した後でも、生存する一方は検察官を相手方として親子関係存否確認の訴えを提起できるとしている。「提起することができない」とする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "12",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当該身分関係の当事者の双方を被告とし、その一方が死亡した後は、他の一方を被告とする。",
+     "text_sha256": "6c20a0cd84a210ba2ed2e9f546f68a56f6a0c3906164d75ef63531f7d56ea18f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "12",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "検察官を被告とする。",
+     "text_sha256": "6c20a0cd84a210ba2ed2e9f546f68a56f6a0c3906164d75ef63531f7d56ea18f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "実親子関係の存否の確認の訴え",
+     "text_sha256": "46b7eed1594490f7decba334e4d1801896fc1193ff300d199b3e299528795dac",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "親子の一方の死亡後の親子関係存否確認の訴え",
+     "court": "最高裁判所大法廷",
+     "date": "1970-07-15",
+     "case_number": "昭和43(オ)179",
+     "holding": "父母の両者または子のいずれか一方が死亡した後でも、生存する一方は、検察官を相手方として、死亡した一方との間の親子関係の存否確認の訴えを提起することができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54123/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "人事訴訟法12条の出題時点（2018年）の本文は過去の版で確かめていない（現行の本文で説明した）",
+    "掲げた判例は親子の一方（当事者）が提起する場合のもので、第三者が提起する場合は人事訴訟法12条2項・3項で説明した"
+   ],
+   "id": "exp-shiho-2018-minpo-q30-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q30-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法733条は「削除」とされ、773条は「第七百三十二条の規定に違反して婚姻をした女が出産した場合」に裁判所が父を定めると定めている。肢の前提である再婚禁止期間の規定は今の民法にない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "733",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "削除",
+     "text_sha256": "e9653dc3edcbc072d033d200b3aa56539fde84e9b7cc80287fedc9f91cbe03ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "773",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第七百三十二条の規定に違反して婚姻をした女が出産した場合",
+     "text_sha256": "9aa831714561a5b301eb44ea08f7e4d10c03cdd00b3c0b67957b8cf60a567181",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に733条が削除され、773条の本文が変わった。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2018-minpo-q30-e",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,276 @@
+{
+ "question_id": "shiho-2018-minpo-q22",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q22-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。免除は債権者の一方的な意思表示で効力を生じ、債務者が利益を享受する意思を表示する必要はない。",
+   "body": "誤りは「債務者が…免除の利益を享受する意思を表示した時に発生する」の部分である。519条は「債権者が債務者に対して債務を免除する意思を表示したときは、その債権は、消滅する」と定める。免除は債権者の単独の意思表示で効力を生じ、債務者の承諾や受益の意思表示を要件としていない。したがって、免除の効果は債権者の免除の意思表示によって生ずる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "519",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が債務者に対して債務を免除する意思を表示したときは、その債権は、消滅する。",
+     "text_sha256": "2bcdcbd614a9549d058a2e3b7dc62d49720a290e9d6c27aa6e472766e30d14ba",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。519条は出題時点（2018-05-01）から本文が変わっていない。"
+   ],
+   "id": "exp-shiho-2018-minpo-q22-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q22-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。免除を受けたことを忘れて弁済した債務者は、債務がないことを知らずに弁済したのだから、返還を求めることができる。",
+   "body": "誤りは「返還を求めることはできない」の部分である。免除により債務は消滅しているので、その後の弁済は存在しない債務の弁済になる。705条は「債務の弁済として給付をした者は、その時において債務の存在しないことを知っていたときは、その給付したものの返還を請求することができない」と定め、返還請求ができなくなるのは、弁済の時に債務の不存在を知っていた場合に限られる。免除を受けたことを忘れていた債務者は、弁済の時に債務がないことを知らなかったので、この制限は及ばず、返還を求めることができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "705",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の弁済として給付をした者は、その時において債務の存在しないことを知っていたときは、その給付したものの返還を請求することができない。",
+     "text_sha256": "509b0bc6fc5faf9c6859f2a7165dd2f5cb57e586f38899c8e04d4abf1852659b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。705条は出題時点（2018-05-01）から本文が変わっていない。",
+    "解釈による：免除を忘れていた場合を「知っていた」に当たらないとする当てはめ。"
+   ],
+   "id": "exp-shiho-2018-minpo-q22-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q22-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。Ｃについての連帯の免除は、Ｃの債務を負担部分に限るだけで、Ｂ及びＤには効力が及ばず、ＢとＤは引き続き300万円の連帯債務を負う。",
+   "body": "連帯の免除は、債権者が特定の連帯債務者について、その負担部分を超えて請求しないとする意思表示であり、債務そのものを免除するものではないと解されている。441条は「第四百三十八条、第四百三十九条第一項及び前条に規定する場合を除き、連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない」と定める。Ｃについての連帯の免除はこの例外に当たらないので、Ｂ及びＤの債務には影響しない。したがって、Ｃは自己の負担部分100万円だけを負うことになるが、Ｂ及びＤは、Ａに対し、引き続き300万円の連帯債務を負う。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四百三十八条、第四百三十九条第一項及び前条に規定する場合を除き、連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない。",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "438",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人と債権者との間に更改があったときは、債権は、全ての連帯債務者の利益のために消滅する。",
+     "text_sha256": "879c74199baf00e9e31206c702f7022c0899c2c79c1954a4f23ded96454818c7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "439",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人が債権者に対して債権を有する場合において、その連帯債務者が相殺を援用したときは、債権は、全ての連帯債務者の利益のために消滅する。",
+     "text_sha256": "9865589dc071ab8a21dc7f95c2b91135853d8a405ec1208d9086444f336456b1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "440",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人と債権者との間に混同があったときは、その連帯債務者は、弁済をしたものとみなす。",
+     "text_sha256": "a5c02ef9bcb72b69e3f86ab73a4d17db3c913ed965caed6ccb184bf5eae8395b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。出題後に441条の本文が変わった（出題時点では相対的効力の原則は440条に置かれていた。egov.py --asof 2018-05-01 で確認）。結論は同じ。改正前の内容は解説には引用していない。",
+    "解釈による：連帯の免除の意味（負担部分を超えて請求しないとする意思表示）。「連帯の免除」の語は今の民法の条文にない（出題時点では445条にこの語があった）。制度を定める条文はもともとなく、結論は今の441条の相対的効力で説明できると判断して書いた。メインでの確認を求める。"
+   ],
+   "id": "exp-shiho-2018-minpo-q22-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q22-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は、連帯債務者の一人について生じた事由は、438条（更改）・439条1項（相殺）・440条（混同）の場合を除き「他の連帯債務者に対してその効力を生じない」（441条）とし、免除をこの例外に挙げていない。445条も「連帯債務者の一人に対して債務の免除がされ」た場合に他の連帯債務者が求償権を行使できることを定めるだけで、肢の前提である、一人に対する免除が他の連帯債務者の債務を減らす規律は今の条文になく、今の条文では公式の○×に行き着かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の連帯債務者に対してその効力を生じない",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "438",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人と債権者との間に更改があったときは",
+     "text_sha256": "879c74199baf00e9e31206c702f7022c0899c2c79c1954a4f23ded96454818c7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "439",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その連帯債務者が相殺を援用したときは",
+     "text_sha256": "9865589dc071ab8a21dc7f95c2b91135853d8a405ec1208d9086444f336456b1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "440",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人と債権者との間に混同があったときは",
+     "text_sha256": "a5c02ef9bcb72b69e3f86ab73a4d17db3c913ed965caed6ccb184bf5eae8395b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "445",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人に対して債務の免除がされ",
+     "text_sha256": "11bf976c1eb867f4d1d4240d0a6b5b5a1c3c7df6017cdf45fa6e6ab18fdd78e5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "437条・440条・441条・445条は出題後に本文が変わった（egov.py --asof 2018-05-01 で確認）。改正前の内容は条文の本文で確認していない（解説には引用していない）。"
+   ],
+   "id": "exp-shiho-2018-minpo-q22-d",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q22-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。保証債務は主たる債務に付従するので、主たる債務が免除によって消滅すれば、連帯保証人の債務も消滅する。",
+   "body": "446条1項は「保証人は、主たる債務者がその債務を履行しないときに、その履行をする責任を負う」と定め、保証債務は主たる債務の履行を担保するためのものである。そのため、保証債務は主たる債務に付従し、主たる債務が消滅すれば保証債務も消滅すると解されている（付従性）。連帯保証も保証の一種であり、この点は同じである。主たる債務者について債務の免除があれば、519条により主たる債務は消滅するので、連帯保証人の債務も消滅する。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "446",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保証人は、主たる債務者がその債務を履行しないときに、その履行をする責任を負う。",
+     "text_sha256": "e6424d2253d050b253f231250108620ef1fd1a4b00c809e69d5ad83b52a83e72",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "519",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が債務者に対して債務を免除する意思を表示したときは、その債権は、消滅する。",
+     "text_sha256": "2bcdcbd614a9549d058a2e3b7dc62d49720a290e9d6c27aa6e472766e30d14ba",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。446条1項・519条は出題時点（2018-05-01）から文言が変わっていない（446条で出題後に変わったのは3項）。",
+    "解釈による：保証債務の付従性（主たる債務の消滅により保証債務も消滅する）。"
+   ],
+   "id": "exp-shiho-2018-minpo-q22-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

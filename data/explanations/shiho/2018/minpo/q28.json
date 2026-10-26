@@ -1,0 +1,273 @@
+{
+ "question_id": "shiho-2018-minpo-q28",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q28-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。民法は事務管理の管理者に費用の償還請求を認める（702条）が、報酬の請求を認める規定はなく、管理者は報酬を請求できないと解されている。",
+   "body": "702条1項は「管理者は、本人のために有益な費用を支出したときは、本人に対し、その償還を請求することができる。」と定め、同条2項は有益な債務を負担した場合について650条2項を準用する。しかし、事務管理について報酬の請求を認める規定はない。事務管理は「義務なく他人のために事務の管理を始めた」（697条1項）ものであり、管理者は本人に報酬を請求できないと解されている。したがって、Bは自ら生け垣を修理しても、Aに報酬の支払を請求することはできず、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "702",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管理者は、本人のために有益な費用を支出したときは、本人に対し、その償還を請求することができる。",
+     "text_sha256": "3a941f810c7c266639da18e42f68a143f6d20b89842d12970bcba33e950c5dec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "702",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第六百五十条第二項の規定は、管理者が本人のために有益な債務を負担した場合について準用する。",
+     "text_sha256": "3a941f810c7c266639da18e42f68a143f6d20b89842d12970bcba33e950c5dec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "697",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "義務なく他人のために事務の管理を始めた",
+     "text_sha256": "af2fed21d1e2b3f147659f646914f859978277be9a4d6cddf248034f0a14e1e1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "650",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "受任者は、委任事務を処理するのに必要と認められる債務を負担したときは、委任者に対し、自己に代わってその弁済をすることを請求することができる。",
+     "text_sha256": "c8d7dac2ae2fa48748a033348ac0168d2d83ef658e54c7b3244cb55094342a4a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "事務管理の管理者は報酬を請求できないという点は解釈による",
+    "現行の条文で説明した（出題は改正前）。697条・702条・650条の本文は2018-05-01時点から変わっていない"
+   ],
+   "id": "exp-shiho-2018-minpo-q28-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q28-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。702条2項が650条2項を準用するので、管理者Bは本人Aに対し、本人のために負担した有益な債務である請負代金を自己に代わって弁済するよう請求できる。",
+   "body": "702条2項は「第六百五十条第二項の規定は、管理者が本人のために有益な債務を負担した場合について準用する。」と定める。650条2項は「受任者は、委任事務を処理するのに必要と認められる債務を負担したときは、委任者に対し、自己に代わってその弁済をすることを請求することができる。」と定めている。Bが造園業者に生け垣の修理を依頼して負った請負代金債務は、Aのために負担した有益な債務に当たるので、BはAに対し、造園業者への未払の請負代金を自己に代わって支払うよう請求できる。請求できないとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "702",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第六百五十条第二項の規定は、管理者が本人のために有益な債務を負担した場合について準用する。",
+     "text_sha256": "3a941f810c7c266639da18e42f68a143f6d20b89842d12970bcba33e950c5dec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "650",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "受任者は、委任事務を処理するのに必要と認められる債務を負担したときは、委任者に対し、自己に代わってその弁済をすることを請求することができる。",
+     "text_sha256": "c8d7dac2ae2fa48748a033348ac0168d2d83ef658e54c7b3244cb55094342a4a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。702条・650条の本文は2018-05-01時点から変わっていない"
+   ],
+   "id": "exp-shiho-2018-minpo-q28-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q28-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。本人の意思に反する事務管理では、費用の償還は本人が現に利益を受けている限度に限られ（702条3項）、台風で生け垣全体が倒壊してAに現存する利益がないので、Bは費用を請求できない。",
+   "body": "702条3項は「管理者が本人の意思に反して事務管理をしたときは、本人が現に利益を受けている限度においてのみ、前二項の規定を適用する。」と定める。肢では、Bの修理はAの意思に反しており、その後に台風で生け垣全体が倒壊しているので、修理によってAが現に受けている利益はない。したがって、BはAに対し、修理に要した費用の支払を請求することができず、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "702",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "管理者が本人の意思に反して事務管理をしたときは、本人が現に利益を受けている限度においてのみ、前二項の規定を適用する。",
+     "text_sha256": "3a941f810c7c266639da18e42f68a143f6d20b89842d12970bcba33e950c5dec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。702条の本文は2018-05-01時点から変わっていない"
+   ],
+   "id": "exp-shiho-2018-minpo-q28-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q28-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。管理者は本人が管理できるようになるまで事務管理を継続する義務を負う（700条）ので、途中で放置して生け垣全体を枯らしたBはAに損害賠償の責任を負う。",
+   "body": "700条本文は「管理者は、本人又はその相続人若しくは法定代理人が管理をすることができるに至るまで、事務管理を継続しなければならない。」と定め、697条1項は管理者に「最も本人の利益に適合する方法によって」事務管理をすることを求めている。Bは自ら生け垣の修理を始めた以上、Aが管理できるようになるまで管理を続ける義務を負い、途中で放置して生け垣全体を枯らしたことはこの義務に反する。肢は本人の財産に対する急迫の危害を免れさせるための緊急事務管理（698条）の事情でもない。したがって、AはBに対し、生け垣が枯れた分の損害の賠償を請求でき、請求できないとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "700",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管理者は、本人又はその相続人若しくは法定代理人が管理をすることができるに至るまで、事務管理を継続しなければならない。",
+     "text_sha256": "1a445048ae4731eeed7e8db7e47ade519b849406feb6b2051f11596173ee1a5d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "697",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "最も本人の利益に適合する方法によって",
+     "text_sha256": "af2fed21d1e2b3f147659f646914f859978277be9a4d6cddf248034f0a14e1e1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "698",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管理者は、本人の身体、名誉又は財産に対する急迫の危害を免れさせるために事務管理をしたときは、悪意又は重大な過失があるのでなければ、これによって生じた損害を賠償する責任を負わない。",
+     "text_sha256": "6eaf036df296eb97f31d81702817dd8d46ee3e4d078986c200ec584907129f57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "管理継続義務に反した管理者が本人に損害賠償責任を負うという点は解釈による",
+    "現行の条文で説明した（出題は改正前）。697条・698条・700条の本文は2018-05-01時点から変わっていない"
+   ],
+   "id": "exp-shiho-2018-minpo-q28-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q28-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。他人のためにする意思は、自己のためにする意思と併存していてもよいと解されており、Bの修理は事務管理に当たるので、Bは702条1項により有益な費用の償還を請求できる。",
+   "body": "事務管理は「義務なく他人のために事務の管理を始めた」（697条1項）ときに成立する。ここでいう他人のためにする意思は、自己の利益を図る意思と併存していてもよいと解されている。Bは、Aの居宅の防犯とともにBの居宅の防犯も目的として生け垣を修理しているが、Aのためにする意思がある以上、事務管理が成立する。したがって、Bは702条1項によりAに対して修理に要した有益な費用の償還を請求でき、請求できないとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "697",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "義務なく他人のために事務の管理を始めた",
+     "text_sha256": "af2fed21d1e2b3f147659f646914f859978277be9a4d6cddf248034f0a14e1e1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "702",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管理者は、本人のために有益な費用を支出したときは、本人に対し、その償還を請求することができる。",
+     "text_sha256": "3a941f810c7c266639da18e42f68a143f6d20b89842d12970bcba33e950c5dec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "他人のためにする意思と自己のためにする意思が併存してもよいという点は解釈による",
+    "現行の条文で説明した（出題は改正前）。697条・702条の本文は2018-05-01時点から変わっていない"
+   ],
+   "id": "exp-shiho-2018-minpo-q28-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

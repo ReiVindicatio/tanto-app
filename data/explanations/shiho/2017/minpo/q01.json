@@ -1,0 +1,314 @@
+{
+ "question_id": "shiho-2017-minpo-q01",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q01-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は「年齢十八歳をもって、成年とする。」（4条）と定め、親権は「成年に達しない子について」行使するもの（818条1項）であるから、問の前提の「１９歳で，親権に服する」Aは今の条文では成り立たない。19歳のAは成年者であり、未成年者の法律行為の取消し（5条2項）や営業の許可（6条1項）の規律で肢の○×を説明できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "年齢十八歳をもって、成年とする。",
+     "text_sha256": "1971671d4fa76e8fa449652a4020d78a9e1b3cb2d87b63dabb7c98e81429695b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "818",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "親権は、成年に達しない子について、その子の利益のために行使しなければならない。",
+     "text_sha256": "4da65c3dc327782a0b1bfcf7e68ba4f9db8bec67337e94fc6bea7fd6c12e41dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "5",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定に反する法律行為は、取り消すことができる。",
+     "text_sha256": "41659855924ba702729f1bdac3f46add3ca097fdcda242a6f5e99f0d612d0360",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一種又は数種の営業を許された未成年者は、その営業に関しては、成年者と同一の行為能力を有する。",
+     "text_sha256": "fa77777932ba8a9dc6a0edc963eca634aba0dbbddcfd396dbbc79cb41cd07335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に4条・818条の本文が変わった（出題時点（2017-05-01）の4条は成年の年齢が今と異なり、19歳のAは未成年者だった）。今の条文では問の前提が成り立たないため law_changed とした"
+   ],
+   "id": "exp-shiho-2017-minpo-q01-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q01-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法は「年齢十八歳をもって、成年とする。」（4条）と定め、親権は「成年に達しない子について」行使するもの（818条1項）であるから、問の前提の「１９歳で，親権に服する」Aは今の条文では成り立たない。19歳のAは成年者であり、今の条文では処分を許された財産の規律（5条3項）ではなく成年者であることが理由になるため、出題の趣旨どおりに説明できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "年齢十八歳をもって、成年とする。",
+     "text_sha256": "1971671d4fa76e8fa449652a4020d78a9e1b3cb2d87b63dabb7c98e81429695b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "818",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "親権は、成年に達しない子について、その子の利益のために行使しなければならない。",
+     "text_sha256": "4da65c3dc327782a0b1bfcf7e68ba4f9db8bec67337e94fc6bea7fd6c12e41dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "5",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "法定代理人が目的を定めて処分を許した財産は、その目的の範囲内において、未成年者が自由に処分することができる。",
+     "text_sha256": "41659855924ba702729f1bdac3f46add3ca097fdcda242a6f5e99f0d612d0360",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に4条・818条の本文が変わった（出題時点（2017-05-01）の4条は成年の年齢が今と異なり、19歳のAは未成年者だった）。今の条文では問の前提が成り立たないため law_changed とした"
+   ],
+   "id": "exp-shiho-2017-minpo-q01-b",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q01-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法は「年齢十八歳をもって、成年とする。」（4条）と定め、親権は「成年に達しない子について」行使するもの（818条1項）であるから、問の前提の「１９歳で，親権に服する」Aは今の条文では成り立たない。19歳のAは成年者であり、今の条文では未成年者の認知に法定代理人の同意を要しないとする780条ではなく成年者であることが理由になるため、出題の趣旨どおりに説明できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "年齢十八歳をもって、成年とする。",
+     "text_sha256": "1971671d4fa76e8fa449652a4020d78a9e1b3cb2d87b63dabb7c98e81429695b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "818",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "親権は、成年に達しない子について、その子の利益のために行使しなければならない。",
+     "text_sha256": "4da65c3dc327782a0b1bfcf7e68ba4f9db8bec67337e94fc6bea7fd6c12e41dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "780",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "認知をするには、父又は母が未成年者又は成年被後見人であるときであっても、その法定代理人の同意を要しない。",
+     "text_sha256": "f96c7d5cf3e3bef2b4050403465d1ea8285651d649dee1aefe2d9a4153849440",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に4条・818条の本文が変わった（出題時点（2017-05-01）の4条は成年の年齢が今と異なり、19歳のAは未成年者だった）。今の条文では問の前提が成り立たないため law_changed とした"
+   ],
+   "id": "exp-shiho-2017-minpo-q01-c",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q01-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は「年齢十八歳をもって、成年とする。」（4条）と定め、親権は「成年に達しない子について」行使するもの（818条1項）であるから、問の前提の「１９歳で，親権に服する」Aは今の条文では成り立たない。19歳のAはすでに成年に達しており、未成年者について後見開始の審判ができるか（7条が請求権者に「未成年後見人」を挙げる点）を問う肢の趣旨を今の条文で説明できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "年齢十八歳をもって、成年とする。",
+     "text_sha256": "1971671d4fa76e8fa449652a4020d78a9e1b3cb2d87b63dabb7c98e81429695b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "818",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "親権は、成年に達しない子について、その子の利益のために行使しなければならない。",
+     "text_sha256": "4da65c3dc327782a0b1bfcf7e68ba4f9db8bec67337e94fc6bea7fd6c12e41dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年後見人",
+     "text_sha256": "c6910eec444e08b030a00ebe848c0995f8c76e48d8941aa891bb805926d19d26",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に4条・818条の本文が変わった（出題時点（2017-05-01）の4条は成年の年齢が今と異なり、19歳のAは未成年者だった）。今の条文では問の前提が成り立たないため law_changed とした"
+   ],
+   "id": "exp-shiho-2017-minpo-q01-d",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q01-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は「年齢十八歳をもって、成年とする。」（4条）と定め、親権は「成年に達しない子について」行使するもの（818条1項）であるから、問の前提の「１９歳で，親権に服する」Aは今の条文では成り立たない。19歳のAは成年者であり、未成年者が単に義務を免れる法律行為には同意を要しないとする5条1項ただし書の規律で肢の○×を説明できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "年齢十八歳をもって、成年とする。",
+     "text_sha256": "1971671d4fa76e8fa449652a4020d78a9e1b3cb2d87b63dabb7c98e81429695b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "818",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "親権は、成年に達しない子について、その子の利益のために行使しなければならない。",
+     "text_sha256": "4da65c3dc327782a0b1bfcf7e68ba4f9db8bec67337e94fc6bea7fd6c12e41dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、単に権利を得、又は義務を免れる法律行為については、この限りでない。",
+     "text_sha256": "41659855924ba702729f1bdac3f46add3ca097fdcda242a6f5e99f0d612d0360",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に4条・818条の本文が変わった（出題時点（2017-05-01）の4条は成年の年齢が今と異なり、19歳のAは未成年者だった）。今の条文では問の前提が成り立たないため law_changed とした",
+    "肢の「撤回」は今の550条では「解除」とされている（名前の変更）が、問の前提が成り立たない点で law_changed とした"
+   ],
+   "id": "exp-shiho-2017-minpo-q01-e",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

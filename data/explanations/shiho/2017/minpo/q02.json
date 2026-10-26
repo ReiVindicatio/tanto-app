@@ -1,0 +1,342 @@
+{
+ "question_id": "shiho-2017-minpo-q02",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q02-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。保佐人に催告して期間内に確答がなければ、取消しではなく追認したものとみなされ（20条2項）、保佐人の追認に保佐監督人の同意は要らないので20条3項の「特別の方式を要する行為」にもあたらない。",
+   "body": "誤りは、保佐監督人の同意を得た確答がなければ「取り消したものとみなされる」とする点である。保佐人の同意を得ずにした甲土地の売却は、13条1項3号の「不動産その他重要な財産に関する権利の得喪を目的とする行為をすること。」にあたり、13条4項により取り消すことができ、保佐人は120条1項の「同意をすることができる者」として取消しや追認をすることができる。20条2項は、相手方が「その法定代理人、保佐人又は補助人に対し、その権限内の行為について前項に規定する催告をした場合において、これらの者が同項の期間内に確答を発しないときも、同項後段と同様とする。」と定め、1項後段は「その行為を追認したものとみなす。」としている。20条3項は「特別の方式を要する行為については、前二項の期間内にその方式を具備した旨の通知を発しないときは、その行為を取り消したものとみなす。」と定めるが、監督人の同意を要求する864条は「後見人が」する行為についての規定であり、保佐監督人についての準用を定める876条の3第2項にも864条は挙がっていない。したがって保佐人の追認に保佐監督人の同意は要らず、20条3項ではなく20条2項により追認したものとみなされると解される。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産その他重要な財産に関する権利の得喪を目的とする行為をすること。",
+     "text_sha256": "c8aa95cbe2fe90c33a5a7efa56fd4ff66cd3c8e78478b1efc6963b1ca101c458",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "13",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "保佐人の同意を得なければならない行為であって、その同意又はこれに代わる許可を得ないでしたものは、取り消すことができる。",
+     "text_sha256": "c8aa95cbe2fe90c33a5a7efa56fd4ff66cd3c8e78478b1efc6963b1ca101c458",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "120",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同意をすることができる者",
+     "text_sha256": "56eb3f1eb7eeec97bc2a6957269e75cf5da9252e385a9cd0ed96a521dfef7a6b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "20",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その法定代理人、保佐人又は補助人に対し、その権限内の行為について前項に規定する催告をした場合において、これらの者が同項の期間内に確答を発しないときも、同項後段と同様とする。",
+     "text_sha256": "17820f6804d9e0c7a8dd660161ca60f6721ea4a868df39acb859edc8fc3266c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その行為を追認したものとみなす。",
+     "text_sha256": "17820f6804d9e0c7a8dd660161ca60f6721ea4a868df39acb859edc8fc3266c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "20",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "特別の方式を要する行為については、前二項の期間内にその方式を具備した旨の通知を発しないときは、その行為を取り消したものとみなす。",
+     "text_sha256": "17820f6804d9e0c7a8dd660161ca60f6721ea4a868df39acb859edc8fc3266c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "864",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "後見人が",
+     "text_sha256": "c07ff83c07de6a44961be8184b35e8ef65e38ab3831a9824aac337c33c9ce6f9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "876_3",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第六百四十四条、第六百五十四条、第六百五十五条、第八百四十三条第四項、第八百四十四条、第八百四十六条、第八百四十七条、第八百五十条、第八百五十一条、第八百五十九条の二、第八百五十九条の三、第八百六十一条第二項及び第八百六十二条の規定は、保佐監督人について準用する。",
+     "text_sha256": "9834cb7cf2ac9a7a786415d999916af2b160d8f12c8f2baf05f5f5a08f4fa27c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に20条・13条・120条の本文が変わった（結論は同じ）",
+    "保佐人の追認に保佐監督人の同意が要らず20条3項にあたらないことは、864条と876条の3第2項の文言からの解釈による"
+   ],
+   "id": "exp-shiho-2017-minpo-q02-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q02-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。被保佐人本人に保佐人の追認を得るよう催告し、期間内に追認を得た旨の通知がなければ、取り消したものとみなされる（20条4項）。",
+   "body": "20条4項は「制限行為能力者の相手方は、被保佐人又は第十七条第一項の審判を受けた被補助人に対しては、第一項の期間内にその保佐人又は補助人の追認を得るべき旨の催告をすることができる。」と定め、続けて「この場合において、その被保佐人又は被補助人がその期間内にその追認を得た旨の通知を発しないときは、その行為を取り消したものとみなす。」としている。ＢはＡに対し１か月の期間を定めて保佐人の追認を得るよう催告しており、これは20条1項の「一箇月以上の期間」の定めを満たす。Ａがその期間内に追認を得た旨の通知を発しなければ、売買契約は取り消したものとみなされるから、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "20",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "制限行為能力者の相手方は、被保佐人又は第十七条第一項の審判を受けた被補助人に対しては、第一項の期間内にその保佐人又は補助人の追認を得るべき旨の催告をすることができる。",
+     "text_sha256": "17820f6804d9e0c7a8dd660161ca60f6721ea4a868df39acb859edc8fc3266c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "20",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "この場合において、その被保佐人又は被補助人がその期間内にその追認を得た旨の通知を発しないときは、その行為を取り消したものとみなす。",
+     "text_sha256": "17820f6804d9e0c7a8dd660161ca60f6721ea4a868df39acb859edc8fc3266c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一箇月以上の期間",
+     "text_sha256": "17820f6804d9e0c7a8dd660161ca60f6721ea4a868df39acb859edc8fc3266c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に20条の本文が変わった（結論は同じ）"
+   ],
+   "id": "exp-shiho-2017-minpo-q02-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q02-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。行為能力者となった後の本人に催告し、期間内に確答がなければ、追認したものとみなされる（20条1項）。",
+   "body": "20条1項は、制限行為能力者の相手方は「その制限行為能力者が行為能力者（行為能力の制限を受けない者をいう。以下同じ。）となった後、その者に対し、一箇月以上の期間を定めて、その期間内にその取り消すことができる行為を追認するかどうかを確答すべき旨の催告をすることができる。」と定め、「この場合において、その者がその期間内に確答を発しないときは、その行為を追認したものとみなす。」としている。Ａが行為能力者となった後にＢがＡに１か月の期間を定めて催告し、Ａが確答を発しなければ、売買契約を追認したものとみなされる。行為能力者となった本人は自分で判断できるので、黙っていれば追認と扱われ、行為能力者となる前の被保佐人本人に催告する20条4項（取消しとみなす）とは結論が逆になる点に注意する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その制限行為能力者が行為能力者（行為能力の制限を受けない者をいう。以下同じ。）となった後、その者に対し、一箇月以上の期間を定めて、その期間内にその取り消すことができる行為を追認するかどうかを確答すべき旨の催告をすることができる。",
+     "text_sha256": "17820f6804d9e0c7a8dd660161ca60f6721ea4a868df39acb859edc8fc3266c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この場合において、その者がその期間内に確答を発しないときは、その行為を追認したものとみなす。",
+     "text_sha256": "17820f6804d9e0c7a8dd660161ca60f6721ea4a868df39acb859edc8fc3266c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に20条の本文が変わった（結論は同じ）"
+   ],
+   "id": "exp-shiho-2017-minpo-q02-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q02-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。125条2号の「履行の請求」は取消権者の側が請求した場合を指すと解されており、ＡがＢから請求を受けただけでは法定追認にならない。",
+   "body": "誤りは、Ａが相手方Ｂから登記手続の請求を「受けた」ことで追認とみなされるとする点である。125条は「追認をすることができる時以後に、取り消すことができる行為について次に掲げる事実があったときは、追認をしたものとみなす。」と定め、2号に「履行の請求」を挙げる。法定追認は、取消権者自身が取り消すことができる行為を前提とする行動をとったことに追認と同じ効果を結びつけるものであるから、2号の「履行の請求」は取消権者が相手方に履行を請求した場合をいい、取消権者が相手方から請求を受けた場合は含まないと解されている（判例あり（要確認））。請求を受けただけのＡは何も行動していないから、追認したものとはみなされない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "125",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "追認をすることができる時以後に、取り消すことができる行為について次に掲げる事実があったときは、追認をしたものとみなす。",
+     "text_sha256": "926b59bc88d192c20863ac2dfb921415dc8151306fb0c2deef891d3a47d96cf8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "125",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "履行の請求",
+     "text_sha256": "926b59bc88d192c20863ac2dfb921415dc8151306fb0c2deef891d3a47d96cf8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "125条2号の「履行の請求」は取消権者が請求した場合に限り、相手方から請求を受けた場合を含まないとする判例",
+     "searched": [
+      "大審院（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に125条の本文が変わった（2号の「履行の請求」の文言と、この肢の結論は同じ）",
+    "「履行の請求」が取消権者からの請求に限られることは解釈による"
+   ],
+   "id": "exp-shiho-2017-minpo-q02-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q02-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の124条1項は追認を「取消しの原因となっていた状況が消滅し、かつ、取消権を有することを知った後にしなければ、その効力を生じない。」とし、125条は「追認をすることができる時以後」の事実を法定追認とする。肢はＡが行為能力者となった後であることしか示さず、Ａが取消権を有することを知っていたかが書かれていないので、今の条文では肢の事実だけで法定追認にあたると言い切れない（124条1項の本文は出題後に変わっている）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "124",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取消しの原因となっていた状況が消滅し、かつ、取消権を有することを知った後にしなければ、その効力を生じない。",
+     "text_sha256": "677818a6b672c91db3f1a099712b8131501fc569736e787b9b0be8a9a8d4c258",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "125",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "追認をすることができる時以後",
+     "text_sha256": "926b59bc88d192c20863ac2dfb921415dc8151306fb0c2deef891d3a47d96cf8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "124条1項の本文が出題後に変わっており、125条の「追認をすることができる時」の要件が肢の前提と同じかを今の条文と肢の文から言い切れないため、手順3（解説を出さない方）にした"
+   ],
+   "id": "exp-shiho-2017-minpo-q02-e",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

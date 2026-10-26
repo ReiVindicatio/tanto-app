@@ -1,0 +1,45 @@
+{
+ "question_id": "shiho-2018-minpo-q23",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q23-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は、587条の2第1項で「書面でする消費貸借は、当事者の一方が金銭その他の物を引き渡すことを約し、相手方がその受け取った物と種類、品質及び数量の同じ物をもって返還をすることを約することによって、その効力を生ずる」と定め、合意だけで成立する消費貸借に書面を求める規定を出題後に設けた。肢が問う「金銭消費貸借の予約」に書面が要るかは、この規定との関係で決まることになり、出題時点の規律とは前提が異なる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "587_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "書面でする消費貸借は、当事者の一方が金銭その他の物を引き渡すことを約し、相手方がその受け取った物と種類、品質及び数量の同じ物をもって返還をすることを約することによって、その効力を生ずる",
+     "text_sha256": "5a0ea6ae149d823c70a121ec5d42cdd6f84a4111fefa76b5fe21084696a45fa1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "587条の2は出題時点（2018-05-01）にはなかった条（egov.py --asof で確認）。改正前の内容は条文の本文で確認していない（解説には引用していない）。同じ論点の yobi-2018-minpo-q10-a も law_changed としている。"
+   ],
+   "id": "exp-shiho-2018-minpo-q23-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}
