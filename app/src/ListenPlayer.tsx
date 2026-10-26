@@ -26,11 +26,6 @@ import {
   type ListenPrefs,
 } from "./listen";
 
-const CREDIT = {
-  1: "Google の Gemini の音声合成（作れなかった一部の肢は Google Cloud Text-to-Speech）",
-  2: "Google Cloud Text-to-Speech",
-} as const;
-
 type Phase = "ready" | "reading" | "thinking" | "answer" | "paused" | "done";
 /** 残りがこれだけになったら次を読み足す */
 const REFILL_AT = 3;
@@ -314,7 +309,7 @@ export default function ListenPlayer({
             ○×を言う前に画面の○×を押すと、その答えを記録します。押さなければ記録しません。
           </p>
           <p className="muted small">
-            音声は {CREDIT[prefs.voice]} で作ったもの（AI 音声）で、法律用語を読み間違えることがあります。
+            答えのあとに読む結論は AI が生成した解説で、誤りがありえます。音声は法律用語を読み間違えることがあります。
             ロック画面から一時停止・次の肢へができます。画面を消しても続けて聞くなら、ブラウザ（Safari・Chrome）で開くのが確実です。
           </p>
           {noVoice && <p className="muted small">音声のない肢は端末の読み上げで読みますが、この端末には日本語の声が見つかりません。</p>}
@@ -328,7 +323,6 @@ export default function ListenPlayer({
               </div>
             )}
             <p className="statement">{s.text}</p>
-            <p className="muted small">音声：{CREDIT[prefs.voice]} で作成（AI 音声）</p>
             <div className={`listen-phase ${phase}`} aria-live="polite">
               {phase === "reading" && "読み上げ中…"}
               {phase === "thinking" && `考える時間　あと ${left} 秒`}
