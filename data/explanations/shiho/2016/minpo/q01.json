@@ -1,0 +1,226 @@
+{
+ "question_id": "shiho-2016-minpo-q01",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q01-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。養親となるには一定の年齢に達していることが必要で、未成年者はその年齢に達していないので養親となることができない。",
+   "body": "決め手は、養親となる者の年齢の要件です。今の民法792条は「二十歳に達した者は、養子をすることができる。」と定め、4条は「年齢十八歳をもって、成年とする。」と定めています。未成年者はこの年齢に達していないので、養子をすること（養親となること）ができません。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "792",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二十歳に達した者は、養子をすることができる。",
+     "text_sha256": "c5aae2142a9c926930a28d4eacdfc36525790ba52444dc749297795fc1a1245a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "年齢十八歳をもって、成年とする。",
+     "text_sha256": "1971671d4fa76e8fa449652a4020d78a9e1b3cb2d87b63dabb7c98e81429695b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "出題後に成年年齢・養親の年齢要件の規定が改正されている。改正前の内容は条文の本文で確認していない（結論は今の条文でも同じ）。"
+   ],
+   "id": "exp-shiho-2016-minpo-q01-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q01-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。未成年者は年齢にかかわらず遺言の証人となることができない（974条1号）。",
+   "body": "誤りは「１５歳に達した未成年者は，遺言の証人となることができる」の部分です。974条は「次に掲げる者は、遺言の証人又は立会人となることができない。」とし、その1号に「未成年者」を掲げています。15歳に達しているかどうかで区別はしていないので、15歳以上の未成年者も遺言の証人になれません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "974",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる者は、遺言の証人又は立会人となることができない。",
+     "text_sha256": "989ebd481071193a35cf23dd3185b86beeeede274e3995e12bb82a3d7af2798d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。"
+   ],
+   "id": "exp-shiho-2016-minpo-q01-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q01-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。6条1項の文言どおりの記述である。",
+   "body": "6条1項は「一種又は数種の営業を許された未成年者は、その営業に関しては、成年者と同一の行為能力を有する。」と定めており、肢はこの条文のとおりです。営業を許された範囲では、法定代理人の同意（5条1項）なしに単独で有効な法律行為をすることができます。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一種又は数種の営業を許された未成年者は、その営業に関しては、成年者と同一の行為能力を有する。",
+     "text_sha256": "fa77777932ba8a9dc6a0edc963eca634aba0dbbddcfd396dbbc79cb41cd07335",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者が法律行為をするには、その法定代理人の同意を得なければならない。",
+     "text_sha256": "41659855924ba702729f1bdac3f46add3ca097fdcda242a6f5e99f0d612d0360",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。"
+   ],
+   "id": "exp-shiho-2016-minpo-q01-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q01-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。取消権者には制限行為能力者本人が含まれ、未成年者は単独で取り消すことができる（120条1項）。",
+   "body": "法定代理人の同意を得ずにした未成年者の法律行為は、5条2項により「取り消すことができる。」とされています。取り消すことができる者について、120条1項は「制限行為能力者（…）又はその代理人、承継人若しくは同意をすることができる者に限り、取り消すことができる。」と定め、制限行為能力者本人を取消権者に含めています。取消しに法定代理人の同意を要するとはしていないので、未成年者は単独で取り消すことができます。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "5",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定に反する法律行為は、取り消すことができる。",
+     "text_sha256": "41659855924ba702729f1bdac3f46add3ca097fdcda242a6f5e99f0d612d0360",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "120",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "又はその代理人、承継人若しくは同意をすることができる者に限り、取り消すことができる。",
+     "text_sha256": "56eb3f1eb7eeec97bc2a6957269e75cf5da9252e385a9cd0ed96a521dfef7a6b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "取消しに法定代理人の同意が要らないことは、120条1項が本人を取消権者に挙げていることからの解釈による。"
+   ],
+   "id": "exp-shiho-2016-minpo-q01-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q01-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。民法は制限行為能力者が代理人となることを前提にした規定（102条）を置いており、未成年者も代理人となることができる。",
+   "body": "誤りは「代理人となることができない」の部分です。102条は「制限行為能力者が代理人としてした行為は、行為能力の制限によっては取り消すことができない。」と定めています。この規定は、未成年者などの制限行為能力者が代理人となることを前提にしていると解されています。代理行為の効果は本人に帰属し、代理人自身が不利益を受けるわけではないため、代理人に行為能力は要求されていません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "102",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "制限行為能力者が代理人としてした行為は、行為能力の制限によっては取り消すことができない。",
+     "text_sha256": "f045e74643cdc96082b9bfbfa8d834ad92c938765dcd95fa3da078cf7032c58a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "102条は出題後に改正されている。改正前の内容は条文の本文で確認していない（未成年者が代理人となれるという結論は今の条文でも同じ）。",
+    "102条が制限行為能力者が代理人となることを前提にしているという点、代理人に行為能力が要らない理由は解釈による。"
+   ],
+   "id": "exp-shiho-2016-minpo-q01-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

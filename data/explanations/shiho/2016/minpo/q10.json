@@ -1,0 +1,235 @@
+{
+ "question_id": "shiho-2016-minpo-q10",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q10-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。分割で生じた袋地の通行権は、他の分割者の所有地が売買されても消滅しないとするのが判例であり、「消滅する」とする部分が誤り。",
+   "body": "213条1項は「分割によって公道に通じない土地が生じたときは、その土地の所有者は、公道に至るため、他の分割者の所有地のみを通行することができる。」とし、「この場合においては、償金を支払うことを要しない。」と定める。したがって、他の分割者の所有地についてのみ無償の通行権を有するという前半は正しい。しかし判例は、民法213条の囲繞地通行権は、通行の対象となる土地に特定承継が生じた場合にも消滅しないとした（最判平成2年11月20日）。他の分割者の所有地が売買されても通行権は消滅しないので、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "213",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "分割によって公道に通じない土地が生じたときは、その土地の所有者は、公道に至るため、他の分割者の所有地のみを通行することができる。",
+     "text_sha256": "0726b79b0df261d8302a14e6ef6006b67afd9dad2f6ac2e98d13cd6ef2db1d9a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "213",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この場合においては、償金を支払うことを要しない。",
+     "text_sha256": "0726b79b0df261d8302a14e6ef6006b67afd9dad2f6ac2e98d13cd6ef2db1d9a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "213条の通行権の対象地の特定承継と通行権",
+     "court": "最高裁判所第三小法廷",
+     "date": "1990-11-20",
+     "case_number": "昭和61(オ)181",
+     "holding": "民法213条の規定する囲繞地通行権は、通行の対象となる土地に特定承継が生じた場合にも消滅しない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52725/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2016-minpo-q10-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q10-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。袋地の所有権を取得した者は、登記がなくても囲繞地の所有者・利用権者に通行権を主張できるとするのが判例である。",
+   "body": "210条1項は「他の土地に囲まれて公道に通じない土地の所有者は、公道に至るため、その土地を囲んでいる他の土地を通行することができる。」と定める。判例は、袋地の所有権を取得した者は、所有権取得登記を経由していなくても、囲繞地の所有者ないし利用権者に対して、囲繞地通行権を主張することができるとした（最判昭和47年4月14日）。肢はこの判例のとおりで正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "210",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の土地に囲まれて公道に通じない土地の所有者は、公道に至るため、その土地を囲んでいる他の土地を通行することができる。",
+     "text_sha256": "4128b035fe88c7f73f08e5ab2f689b2baf83113f81f96f5de67725df3339b219",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "袋地の未登記所有者と囲繞地通行権",
+     "court": "最高裁判所第二小法廷",
+     "date": "1972-04-14",
+     "case_number": "昭和46(オ)630",
+     "holding": "袋地の所有権を取得した者は、所有権取得登記を経由していなくても、囲繞地の所有者ないし利用権者に対して、囲繞地通行権を主張することができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52056/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2016-minpo-q10-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q10-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。通行地役権の時効取得には、要役地の所有者自身による通路の開設が必要とするのが判例であり、賃借人Ｂが開設した通路では足りない。",
+   "body": "283条は「地役権は、継続的に行使され、かつ、外形上認識することができるものに限り、時効によって取得することができる。」と定める。判例は、通行地役権の時効取得に関する「継続」の要件として、承役地たるべき他人所有の土地の上に通路の開設を要し、その開設は要役地所有者によってなされることを要するとした（最判昭和30年12月26日）。肢では通路を開設したのは甲土地の賃借人Ｂで、要役地の所有者Ａではないから、Ａが20年間利用を続けても時効取得を主張することはできず、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "283",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地役権は、継続的に行使され、かつ、外形上認識することができるものに限り、時効によって取得することができる。",
+     "text_sha256": "5412d45c40fbc90e3dae1ffa3d8ac837409e1fedb613d66f1b3a968dc7a73c8c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "通行地役権の時効取得と通路の開設",
+     "court": "最高裁判所第三小法廷",
+     "date": "1955-12-26",
+     "case_number": "昭和28(オ)1178",
+     "holding": "通行地役権の時効取得に関する「継続」の要件としては、承役地たるべき他人所有の土地の上に通路の開設を要し、その開設は要役地所有者によってなされることを要する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57381/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2016-minpo-q10-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q10-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。地役権は要役地の所有権とともに移転するので、所有権移転の登記を経たＣは、設定の当事者であるＢに対して通行地役権を主張できる。",
+   "body": "281条1項は、地役権は「要役地（地役権者の土地であって、他人の土地から便益を受けるものをいう。以下同じ。）の所有権に従たるものとして、その所有権とともに移転し」と定める（設定行為に別段の定めがある場合を除く）。そのため、Ａから甲土地を譲り受けたＣは、甲土地の所有権とともに通行地役権も取得する。承役地の所有者Ｂは地役権設定の合意の当事者であって、地役権の設定登記がなくても地役権の負担を免れることはできず、要役地の所有権移転の登記を経たＣは、Ｂに対して地役権の移転を主張できると解されている（判例あり（要確認））。したがって「主張することができない」とする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "281",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "要役地（地役権者の土地であって、他人の土地から便益を受けるものをいう。以下同じ。）の所有権に従たるものとして、その所有権とともに移転し",
+     "text_sha256": "059dd1274a7043b9670f56f239ad797d86e05c52cecb73afe964abf81ab810bc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "要役地の所有権移転の登記があれば、地役権の移転も承役地の所有者に対抗できるとする判例",
+     "searched": [
+      "大審院（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "設定当事者Ｂに対する主張に地役権設定登記が要らない点は解釈による"
+   ],
+   "id": "exp-shiho-2016-minpo-q10-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q10-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。土地の共有者の一人が時効によって地役権を取得すれば、他の共有者もこれを取得する（284条1項）。",
+   "body": "284条1項は「土地の共有者の一人が時効によって地役権を取得したときは、他の共有者も、これを取得する。」と定める。甲土地の共有者Ｂが、甲土地を要役地、乙土地を承役地とする通行地役権を時効取得したときは、もう一人の共有者Ａも同じ通行地役権を取得する。肢は条文のとおりで正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "284",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "土地の共有者の一人が時効によって地役権を取得したときは、他の共有者も、これを取得する。",
+     "text_sha256": "461f6a4d7b64ffd1158b96f0297d2a9092cbf44626a329151fa42c7dfa9b4fa6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2016-minpo-q10-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

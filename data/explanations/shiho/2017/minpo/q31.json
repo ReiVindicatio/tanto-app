@@ -1,0 +1,271 @@
+{
+ "question_id": "shiho-2017-minpo-q31",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q31-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。ＥはＡの配偶者Ｂの姉Ｃの配偶者（配偶者の血族の配偶者）であり、姻族に当たらないと解されているので、Ａの親族ではない。",
+   "body": "決め手は、配偶者の血族の配偶者が姻族に当たるかどうかである。725条は親族を「六親等内の血族」「配偶者」「三親等内の姻族」と定める。姻族は、配偶者の血族と血族の配偶者をいい、配偶者の血族の配偶者は姻族に含まれないと解されている。ＣはＡの配偶者Ｂの血族（姉）なのでＡの姻族であるが、ＥはそのＣの配偶者であり、Ａの血族でも配偶者でもなく、姻族にも当たらない。したがって、ＥはＡの親族ではなく、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "725",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "六親等内の血族",
+     "text_sha256": "b31a628cfa086b6edbdf8def49c2d8a588c9fa8cf13eb4a7e08b365aa06fe33e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "725",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "三親等内の姻族",
+     "text_sha256": "b31a628cfa086b6edbdf8def49c2d8a588c9fa8cf13eb4a7e08b365aa06fe33e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。725条は出題時点（2017-05-01）から本文が変わっていない",
+    "姻族の範囲（配偶者の血族の配偶者を含まない）は解釈による"
+   ],
+   "id": "exp-shiho-2017-minpo-q31-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q31-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。養子縁組で親族関係が生じるのは養子と養親及びその血族との間であり、縁組前に生まれていた養子の子Ｇと養親Ａとの間には親族関係は生じない。",
+   "body": "決め手は、縁組前から存在した養子の子が養親の親族になるかどうかである。727条は「養子と養親及びその血族との間においては、養子縁組の日から、血族間におけるのと同一の親族関係を生ずる。」と定め、親族関係が生じる範囲を養子と養親の側との間に限っている。そのため、縁組前に生まれていた養子の子と養親との間には血族関係は生じないと解されている（判例あり（要確認））。ＧはＡの血族ではなく、Ａの配偶者Ｂの血族やＡの血族の配偶者でもないので、725条のいずれにも当たらない。したがって、ＧはＡの親族ではなく、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "727",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "養子と養親及びその血族との間においては、養子縁組の日から、血族間におけるのと同一の親族関係を生ずる。",
+     "text_sha256": "f9377bee83f40518ca0ba4eecce223625fac9f860012683452203ba71c3a36c5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "725",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "六親等内の血族",
+     "text_sha256": "b31a628cfa086b6edbdf8def49c2d8a588c9fa8cf13eb4a7e08b365aa06fe33e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "pending_cases": [
+    {
+     "about": "養子縁組前に生まれた養子の子と養親との間には血族関係が生じないとした判例",
+     "searched": [
+      "大審院（データベースにない）",
+      "courts.py search 縁組前 養子 血族"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。725条・727条は出題時点（2017-05-01）から本文が変わっていない",
+    "縁組前の養子の子と養親との間に血族関係が生じないという点は解釈による"
+   ],
+   "id": "exp-shiho-2017-minpo-q31-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q31-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。夫婦の一方の死亡では姻族関係は当然には終了せず、生存配偶者Ａが終了させる意思を表示したときに終了する。",
+   "body": "ＣはＡの配偶者Ｂの姉であり、ＡとＣとの親族関係は姻族関係である。728条1項は「姻族関係は、離婚によって終了する。」と定める一方、同条2項は「夫婦の一方が死亡した場合において、生存配偶者が姻族関係を終了させる意思を表示したときも、前項と同様とする。」と定める。したがって、Ｂが死亡しても姻族関係は当然には終了せず、生存配偶者Ａが終了させる意思を表示しない限りＡとＣとの親族関係は続くので、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "728",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "姻族関係は、離婚によって終了する。",
+     "text_sha256": "ea9cb50eede3c6b3e4aa35c3078c004ed6daf868adbcc93bec1aed443e3bdb4b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "728",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "夫婦の一方が死亡した場合において、生存配偶者が姻族関係を終了させる意思を表示したときも、前項と同様とする。",
+     "text_sha256": "ea9cb50eede3c6b3e4aa35c3078c004ed6daf868adbcc93bec1aed443e3bdb4b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。728条は出題時点（2017-05-01）から本文が変わっていない"
+   ],
+   "id": "exp-shiho-2017-minpo-q31-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q31-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。近親婚の禁止は血族間と直系姻族間に限られ、配偶者の妹Ｄのような傍系姻族との婚姻を禁ずる規定はないので、離婚後のＡはＤと婚姻できる。",
+   "body": "決め手は、ＡとＤ（配偶者Ｂの妹）との婚姻を禁ずる規定があるかどうかである。734条1項は「直系血族又は三親等内の傍系血族の間では、婚姻をすることができない。」と定めるが、ＤはＡの血族ではない。735条は「直系姻族の間では、婚姻をすることができない。」と定めるが、配偶者の妹は直系ではなく傍系の姻族である。また、728条1項により「姻族関係は、離婚によって終了する。」。傍系姻族の間の婚姻を禁ずる規定はないので、ＡはＢと離婚した後、Ｄと婚姻することができ、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "734",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "直系血族又は三親等内の傍系血族の間では、婚姻をすることができない。",
+     "text_sha256": "1682ff260ec641fa849a479be9edb711121ac1c2b4397f121b32a50f46430971",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "735",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "直系姻族の間では、婚姻をすることができない。",
+     "text_sha256": "d1fcc75871ba6a3f744e47e3020c676cafd9f9fc44b4bfcc13f9452c4bdcb7e6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "728",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "姻族関係は、離婚によって終了する。",
+     "text_sha256": "ea9cb50eede3c6b3e4aa35c3078c004ed6daf868adbcc93bec1aed443e3bdb4b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。728条・734条・735条は出題時点（2017-05-01）から本文が変わっていない"
+   ],
+   "id": "exp-shiho-2017-minpo-q31-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q31-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。ＤはＡの二親等の姻族で三親等内の親族に当たるので、家庭裁判所は特別の事情があるときはＡにＤの扶養義務を負わせることができる。",
+   "body": "ＤはＡの配偶者Ｂの妹であり、Ａの姻族として725条の「三親等内の姻族」に当たり、Ａの親族である。877条1項は「直系血族及び兄弟姉妹は、互いに扶養をする義務がある。」と定め、ＡとＤはこれに当たらない。しかし同条2項は「家庭裁判所は、特別の事情があるときは、前項に規定する場合のほか、三親等内の親族間においても扶養の義務を負わせることができる。」と定める。したがって、家庭裁判所は、特別の事情があるときはＤを扶養する義務をＡに負わせることができ、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "725",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "三親等内の姻族",
+     "text_sha256": "b31a628cfa086b6edbdf8def49c2d8a588c9fa8cf13eb4a7e08b365aa06fe33e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "877",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "直系血族及び兄弟姉妹は、互いに扶養をする義務がある。",
+     "text_sha256": "f03357c70958f36325c8c608eb32065a0faa61a45b551dba4bbcf7c87b61aa59",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "877",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "家庭裁判所は、特別の事情があるときは、前項に規定する場合のほか、三親等内の親族間においても扶養の義務を負わせることができる。",
+     "text_sha256": "f03357c70958f36325c8c608eb32065a0faa61a45b551dba4bbcf7c87b61aa59",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。725条・877条は出題時点（2017-05-01）から本文が変わっていない"
+   ],
+   "id": "exp-shiho-2017-minpo-q31-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

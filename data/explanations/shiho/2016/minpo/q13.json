@@ -1,0 +1,302 @@
+{
+ "question_id": "shiho-2016-minpo-q13",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q13-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。敷金を受け取っている賃貸人は、敷金で弁済を受けない部分についてのみ先取特権を有するので、未払賃料が敷金の範囲内なら先取特権を行使できない。",
+   "body": "313条2項は「建物の賃貸人の先取特権は、賃借人がその建物に備え付けた動産について存在する。」と定める。しかし316条は「賃貸人は、第六百二十二条の二第一項に規定する敷金を受け取っている場合には、その敷金で弁済を受けない債権の部分についてのみ先取特権を有する。」と定める。未払賃料額が敷金額の範囲内であれば、敷金で弁済を受けない部分はないから、賃貸人は先取特権を行使できない。したがって肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "313",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "建物の賃貸人の先取特権は、賃借人がその建物に備え付けた動産について存在する。",
+     "text_sha256": "cc8a9f948963638a90aebd1920f5567834731c3d15f6183163eb6bc279f28b0c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "316",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賃貸人は、第六百二十二条の二第一項に規定する敷金を受け取っている場合には、その敷金で弁済を受けない債権の部分についてのみ先取特権を有する。",
+     "text_sha256": "46e84b9e376fe3bb068b2eca8796e2e28beb8cb48036eac38d60f807d7803dae",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "316条は今の本文で説明した。改正前の内容は条文の本文で確認していない（2016年の版は e-Gov にない）"
+   ],
+   "id": "exp-shiho-2016-minpo-q13-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q13-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。同一の動産について競合するときは、不動産の賃貸の先取特権が第一順位、動産の売買の先取特権が第三順位であり、家具店が優先するのではない。",
+   "body": "建物の賃貸人は賃借人が建物に備え付けた動産について先取特権を有し（313条2項）、家具店はタンスの代価について動産売買の先取特権を有する（321条）。330条1項は、同一の動産について特別の先取特権が競合する場合の順位を定め、第一順位を「不動産の賃貸、旅館の宿泊及び運輸の先取特権」、第三順位を「動産の売買、種苗又は肥料の供給、農業の労務及び工業の労務の先取特権」とする。したがって賃貸人の先取特権が家具店の先取特権に優先し、家具店が優先するとする肢は誤り。なお、330条2項により、第一順位の先取特権者が債権取得の時に第三順位の先取特権者があることを知っていたときは優先権を行使できないが、肢にはそのような事情は書かれていない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "313",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "建物の賃貸人の先取特権は、賃借人がその建物に備え付けた動産について存在する。",
+     "text_sha256": "cc8a9f948963638a90aebd1920f5567834731c3d15f6183163eb6bc279f28b0c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "321",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "動産の売買の先取特権は、動産の代価及びその利息に関し、その動産について存在する。",
+     "text_sha256": "1f5461d8b1529628b4f19e0acc4924bae848eb512ce8997ad84c7415843c21d2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "330",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産の賃貸、旅館の宿泊及び運輸の先取特権",
+     "text_sha256": "22f7a1410b0c34b57477cd539caad8b5b11392fb492eba54bc911ba07bc8ea24",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "330",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "動産の売買、種苗又は肥料の供給、農業の労務及び工業の労務の先取特権",
+     "text_sha256": "22f7a1410b0c34b57477cd539caad8b5b11392fb492eba54bc911ba07bc8ea24",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "330",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第一順位の先取特権者は、その債権取得の時において第二順位又は第三順位の先取特権者があることを知っていたときは、これらの者に対して優先権を行使することができない。",
+     "text_sha256": "22f7a1410b0c34b57477cd539caad8b5b11392fb492eba54bc911ba07bc8ea24",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2016-minpo-q13-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q13-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。雇用関係の先取特権は、給料その他雇用関係に基づいて生じた債権について、期間の限定なく債務者の総財産に存在する。",
+   "body": "306条は、「雇用関係」によって生じた債権を有する者は「債務者の総財産について先取特権を有する。」と定める（同条2号）。308条は「雇用関係の先取特権は、給料その他債務者と使用人との間の雇用関係に基づいて生じた債権について存在する。」と定め、未払の期間による限定を置いていない。したがって会社の従業員は、未払となっている期間にかかわらず、給料債権について会社の総財産に先取特権を有し、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "306",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者の総財産について先取特権を有する。",
+     "text_sha256": "d27b31ff01628e5c4a6bef413294b683bafca5562f9c2181db4a221d8072b6c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "306",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "雇用関係",
+     "text_sha256": "d27b31ff01628e5c4a6bef413294b683bafca5562f9c2181db4a221d8072b6c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "308",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "雇用関係の先取特権は、給料その他債務者と使用人との間の雇用関係に基づいて生じた債権について存在する。",
+     "text_sha256": "918c73b148e0fcd37a98a8b53ddf49aadc83239fa366763104e320f8a1936729",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2016-minpo-q13-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q13-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。一般の先取特権と特別の先取特権が競合するときは特別の先取特権が優先するので、電器店の動産売買の先取特権が従業員の一般の先取特権に優先する。",
+   "body": "電器店は冷蔵庫の代価について動産売買の先取特権（特別の先取特権）を有し（321条）、従業員は給料債権について会社の総財産に雇用関係の一般の先取特権を有する（306条・308条）。329条2項は「一般の先取特権と特別の先取特権とが競合する場合には、特別の先取特権は、一般の先取特権に優先する。」と定める（共益の費用の先取特権は除かれる）。したがって電器店の先取特権が従業員の先取特権に優先し、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "321",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "動産の売買の先取特権は、動産の代価及びその利息に関し、その動産について存在する。",
+     "text_sha256": "1f5461d8b1529628b4f19e0acc4924bae848eb512ce8997ad84c7415843c21d2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "306",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者の総財産について先取特権を有する。",
+     "text_sha256": "d27b31ff01628e5c4a6bef413294b683bafca5562f9c2181db4a221d8072b6c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "308",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "雇用関係の先取特権は、給料その他債務者と使用人との間の雇用関係に基づいて生じた債権について存在する。",
+     "text_sha256": "918c73b148e0fcd37a98a8b53ddf49aadc83239fa366763104e320f8a1936729",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "329",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "一般の先取特権と特別の先取特権とが競合する場合には、特別の先取特権は、一般の先取特権に優先する。",
+     "text_sha256": "be7869baa1be0dd2e6e9aa132a22325c30936897a3449c9ab61f8f83dae7602c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2016-minpo-q13-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q13-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。一般の先取特権者は、まず不動産以外の財産から弁済を受け、不足があるときに不動産から弁済を受けるので、順序が逆である。",
+   "body": "335条1項は「一般の先取特権者は、まず不動産以外の財産から弁済を受け、なお不足があるのでなければ、不動産から弁済を受けることができない。」と定める。したがって、特別担保の目的とされていない不動産と動産があるときは、まず動産から弁済を受け、なお不足がある場合に不動産から弁済を受けることになる。まず不動産から弁済を受けるとする肢は、順序が逆で誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "335",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一般の先取特権者は、まず不動産以外の財産から弁済を受け、なお不足があるのでなければ、不動産から弁済を受けることができない。",
+     "text_sha256": "311de753d699015e8b490efdc84025a74113cd34ab2079a0e476e27960f49ae2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2016-minpo-q13-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

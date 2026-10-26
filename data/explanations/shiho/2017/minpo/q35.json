@@ -1,0 +1,91 @@
+{
+ "question_id": "shiho-2017-minpo-q35",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q35-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は、遺留分権利者の権利を、受遺者又は受贈者に対し「遺留分侵害額に相当する金銭の支払を請求することができる」権利として定めており（1046条1項）、肢の前提である、行為そのものの減殺を請求する規定は今の条文にない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1046",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺留分侵害額に相当する金銭の支払を請求することができる",
+     "text_sha256": "bee2c013e82d287e432164aa7b6d4effbfc5b76b5317ea4e059ab4b01e52359d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "e-Gov の 2017-05-01 時点の版（1031条の減殺の請求）と比べ、遺留分権利者の権利の効果が出題後に変わっている（現行法は金銭の支払請求）ため、名前だけの変更ではないと判断した。死亡保険金の受取人変更が遺留分の対象となるかについての判例は、今の条文での当てはめを確かめていないため解説を書かない（同旨の yobi-2017-minpo-q14-2 と同じ扱い）。"
+   ],
+   "id": "exp-shiho-2017-minpo-q35-2",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q35-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法は、相続人に対する贈与を遺留分を算定するための財産の価額に算入する範囲を、1044条1項の「相続開始前の一年間にしたものに限り」を同条3項で読み替えて相続開始前の十年間に限り、かつ「婚姻若しくは養子縁組のため又は生計の資本として受けた贈与の価額に限る。」と定めている。特別受益に当たる贈与を期間の限定なく算入するという肢の前提の規律と違う。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1044",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続開始前の一年間にしたものに限り",
+     "text_sha256": "06da8b4ed6f4c31d7d6ea988276f5fc5a627d507d3edf56ead5cb712048c9072",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1044",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "婚姻若しくは養子縁組のため又は生計の資本として受けた贈与の価額に限る。",
+     "text_sha256": "06da8b4ed6f4c31d7d6ea988276f5fc5a627d507d3edf56ead5cb712048c9072",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "e-Gov の 2017-05-01 時点の版（1030条・1044条）と比べ、相続人に対する贈与の算入の範囲（十年の限定）が出題後に定められたため、解説を書かない（同旨の yobi-2017-minpo-q14-3 と同じ扱い）。"
+   ],
+   "id": "exp-shiho-2017-minpo-q35-3",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}
