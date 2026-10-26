@@ -169,3 +169,24 @@ test("年度の行の🎧で、その年度の肢だけを聞き流す", async (
   await expect.poll(async () => (await played(page)).filter((x) => x.includes("/audio/tts/")).length).toBeGreaterThan(0);
   expect((await played(page)).filter((x) => x.includes("/audio/tts/")).every((x) => x.includes("/shiho-2011-minpo-"))).toBe(true);
 });
+
+test("読む速さは、いま流している音声にもすぐ当たる（考える間の無音は変えない）", async ({ page }) => {
+  await stub(page, { audioMissing: "none" });
+  await page.addInitScript(() => {
+    const A = window.Audio;
+    (window as any).Audio = function (...args: unknown[]) {
+      const a = new A(...(args as []));
+      (window as any).__audio = a;
+      return a;
+    };
+  });
+  await start(page);
+  await page.getByRole("button", { name: "❚❚ 一時停止" }).waitFor();
+  for (let k = 0; k < 3; k++) {
+    await page.getByRole("button", { name: "1.5倍" }).click();
+    const { src, rate } = await page.evaluate(() => ({ src: (window as any).__audio.src as string, rate: (window as any).__audio.playbackRate as number }));
+    expect(rate).toBe(src.includes("/sounds/silence-") ? 1 : 1.5);
+    await page.getByRole("button", { name: "1倍", exact: true }).click();
+    await page.waitForTimeout(150);
+  }
+});

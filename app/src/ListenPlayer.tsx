@@ -110,6 +110,12 @@ export default function ListenPlayer({
   const setPrefs = (p: ListenPrefs) => {
     setPrefsState(p);
     setListenPrefs(p);
+    // 読む速さは、いま流している音声にもすぐ当てる（考える間の無音は変えない。変えると考える時間が縮む）
+    const a = audio.current;
+    if (a && !a.src.includes("/sounds/silence-")) {
+      a.defaultPlaybackRate = p.rate;
+      a.playbackRate = p.rate;
+    }
   };
 
   /** この回にすでに出した肢を全部除いて、次の20問を読み足す（聞いただけの肢は記録されないので、除かないとまた出る） */
