@@ -1,0 +1,261 @@
+{
+ "question_id": "shiho-2013-minpo-q14",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q14-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。登記の先後を問わず抵当権に先立つのは不動産の保存・工事の先取特権（民法339条）だけで、不動産売買の先取特権と抵当権の優劣は登記の前後による。",
+   "body": "民法339条は「前二条の規定に従って登記をした先取特権は、抵当権に先立って行使することができる。」と定めています。「前二条」は不動産保存の先取特権の登記（337条）と不動産工事の先取特権の登記（338条）であり、不動産売買の先取特権（登記は340条）は含まれていません。不動産売買の先取特権には、民法341条により「その性質に反しない限り、抵当権に関する規定を準用する」ので、抵当権との優劣は民法373条の「登記の前後による」と同じく登記の先後で決まると解されています。したがって、「登記の先後を問わず」抵当権に先立つとする肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "339",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の規定に従って登記をした先取特権は、抵当権に先立って行使することができる。",
+     "text_sha256": "9f665c11efde9628326ad9f768336fe3fea3310615e6c2a2c6e5f1f05f779ec0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "337",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産の保存の先取特権の効力を保存するためには、保存行為が完了した後直ちに登記をしなければならない。",
+     "text_sha256": "65e5f39ff317b9ed7bc49a30742e3285a79f7369b30ee34aa44741d399042b0d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "338",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産の工事の先取特権の効力を保存するためには、工事を始める前にその費用の予算額を登記しなければならない。",
+     "text_sha256": "3ea3709a7efd621fb876118483b5d98413d03337482f28b4562ef8143911da9e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "340",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産の売買の先取特権の効力を保存するためには、売買契約と同時に、不動産の代価又はその利息の弁済がされていない旨を登記しなければならない。",
+     "text_sha256": "157072443a20b91408173c6456943cecadeff9690373913c8e3f178845f77ce0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "341",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その性質に反しない限り、抵当権に関する規定を準用する",
+     "text_sha256": "b25b417204d2650660d80d2ea44dcd1c0dc06bc712597cd95bc442093ce2006d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "373",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "登記の前後による",
+     "text_sha256": "a63d8d47f55aa6358b02a700f5e17f08a68fadcca49f8929c813ab9e5ee69df3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "解釈による（不動産売買の先取特権と抵当権の優劣を登記の先後で決めることは、341条・373条による一般的な理解）"
+   ],
+   "id": "exp-shiho-2013-minpo-q14-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q14-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。民法333条により、動産の先取特権は、債務者が目的物を第三取得者に引き渡した後はその動産について行使できない。",
+   "body": "民法333条は「先取特権は、債務者がその目的である動産をその第三取得者に引き渡した後は、その動産について行使することができない。」と定めています。動産売買の先取特権の目的物が転売されて第三者に引き渡されれば、その第三者は同条の「第三取得者」に当たり、先取特権者はその動産について先取特権を行使できなくなります。肢は条文のとおりで正しいです（転売代金への物上代位ができるかは別の問題です）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "333",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "先取特権は、債務者がその目的である動産をその第三取得者に引き渡した後は、その動産について行使することができない。",
+     "text_sha256": "670e038ae0f481d8783d37ab1fd8e66e7a18465d7197da5c0a927d7446ac4272",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2013-minpo-q14-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q14-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。民法308条の文言そのままで正しい。",
+   "body": "民法306条は一般の先取特権の原因の一つとして「雇用関係」を挙げ、民法308条は「雇用関係の先取特権は、給料その他債務者と使用人との間の雇用関係に基づいて生じた債権について存在する。」と定めています。肢はこの条文の文言どおりなので正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "308",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "雇用関係の先取特権は、給料その他債務者と使用人との間の雇用関係に基づいて生じた債権について存在する。",
+     "text_sha256": "918c73b148e0fcd37a98a8b53ddf49aadc83239fa366763104e320f8a1936729",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "306",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "雇用関係",
+     "text_sha256": "d27b31ff01628e5c4a6bef413294b683bafca5562f9c2181db4a221d8072b6c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2013-minpo-q14-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q14-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。民法336条ただし書により、登記をしていない一般の先取特権は登記をした第三者に対抗できないので、登記をした不動産売買の先取特権者に優先しない。",
+   "body": "民法336条本文は「一般の先取特権は、不動産について登記をしなくても、特別担保を有しない債権者に対抗することができる。」と定めていますが、同条ただし書は「ただし、登記をした第三者に対しては、この限りでない。」としています。不動産売買の先取特権について登記をした者は、特別担保をもち登記もした第三者に当たります。したがって、登記をしていない一般の先取特権者は、その者に優先して弁済を受けることはできず、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "336",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一般の先取特権は、不動産について登記をしなくても、特別担保を有しない債権者に対抗することができる。ただし、登記をした第三者に対しては、この限りでない。",
+     "text_sha256": "948ace16803ef84d8c49c7c282c4c830df6df2a9576209332fb0cb1c91da6ff0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2013-minpo-q14-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q14-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。最高裁昭和46年10月21日判決は、法人は民法310条にいう債務者に含まれないとした。",
+   "body": "民法310条は、日用品の供給の先取特権が「債務者又はその扶養すべき同居の親族及びその家事使用人の生活に必要な最後の六箇月間の飲食料品、燃料及び電気の供給について存在する。」と定めています。この「債務者」について、最高裁昭和46年10月21日判決は、法人は同条にいう債務者に含まれないとしました。したがって、日用品供給の先取特権の債務者は自然人に限られ、法人は含まれないとする肢は正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "310",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者又はその扶養すべき同居の親族及びその家事使用人の生活に必要な最後の六箇月間の飲食料品、燃料及び電気の供給について存在する。",
+     "text_sha256": "e8e61f9aa3d5af0191ee463c48b69d6931bd2d343c7f65b1676d65747b16acfb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "法人と日用品供給の先取特権（310条の債務者）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1971-10-21",
+     "case_number": "昭和44(オ)1254",
+     "holding": "法人は、民法310条にいう債務者に含まれない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51952/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2013-minpo-q14-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

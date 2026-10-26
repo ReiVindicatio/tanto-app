@@ -1,0 +1,270 @@
+{
+ "question_id": "shiho-2013-minpo-q17",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q17-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。建物の全部が滅失して引渡債務が履行不能になった以上，買主は引渡しを請求できず，売主は引渡請求を拒絶できる（滅失が売主の責めによるかどうかで変わらない）。",
+   "body": "決め手は，引渡債務が履行不能になっていることである。民法は「債務の履行が契約その他の債務の発生原因及び取引上の社会通念に照らして不能であるときは、債権者は、その債務の履行を請求することができない。」（412条の2第1項）と定める。目的物である建物の全部が滅失すれば，その建物を引き渡す債務は履行できないから，債権者である買主は引渡しを請求できず，売主はこれを拒絶できる。滅失が売主の責めに帰すべき事由によるときは，買主は引渡しに代えて損害賠償を求めたり契約を解除したりすることになるが，引渡しそのものを求めることはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "412_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の履行が契約その他の債務の発生原因及び取引上の社会通念に照らして不能であるときは、債権者は、その債務の履行を請求することができない。",
+     "text_sha256": "df50c8bec71e91034aec91977f8df0df045f842d2c80fcd3dfa7c054cd67439b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q17-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q17-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。滅失が債権者である買主の責めに帰すべき事由によるときは，買主は代金の支払を拒めないから，売主は代金の支払を請求できる。",
+   "body": "誤りの決め手は，売主が代金を請求できないとしている点である。建物の引渡債務については買主が債権者であり，その反対給付が代金の支払である。民法は「債権者の責めに帰すべき事由によって債務を履行することができなくなったときは、債権者は、反対給付の履行を拒むことができない。」（536条2項）と定める。したがって，買主の責めに帰すべき事由で建物が滅失したときは，買主は代金の支払を拒めず，売主は代金の支払を請求できる。なお，売主が引渡債務を免れたことで利益を得たときは，それを買主に償還しなければならない（同項後段）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "536",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権者の責めに帰すべき事由によって債務を履行することができなくなったときは、債権者は、反対給付の履行を拒むことができない。",
+     "text_sha256": "07238591347b0008a936f1e6eb7f8c43291d972cb540de8dd607128c70eb8bc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q17-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q17-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。売主の責めによる滅失で引渡債務の全部が履行不能になったのだから，買主は催告なしに契約を解除でき，原状回復として支払済みの代金の返還を請求できる。",
+   "body": "決め手は，全部の履行不能による解除と，その効果としての原状回復である。民法は，「債務の全部の履行が不能であるとき」は「債権者は、前条の催告をすることなく、直ちに契約の解除をすることができる。」（542条1項1号）と定める。建物の全部の滅失で引渡債務は全部が履行不能となり，その原因は売主の責めに帰すべき事由であって債権者である買主の責めによるものではないから，543条の制限も受けない。解除をすると「各当事者は、その相手方を原状に復させる義務を負う。」（545条1項）から，売主は受け取った代金を返還しなければならず，その際は「その受領の時から利息を付さなければならない。」（同条2項）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "542",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる場合には、債権者は、前条の催告をすることなく、直ちに契約の解除をすることができる。",
+     "text_sha256": "021dce87813fcae2438db5c4ffc2afe591887076d1cccb4bc6a499a271622b73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "542",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の全部の履行が不能であるとき。",
+     "text_sha256": "021dce87813fcae2438db5c4ffc2afe591887076d1cccb4bc6a499a271622b73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "543",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の不履行が債権者の責めに帰すべき事由によるものであるときは、債権者は、前二条の規定による契約の解除をすることができない。",
+     "text_sha256": "cecc8b1ad379fcfd168281936bdaf0082f499828b1a0e40c54ccb58c5e1d28dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "545",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各当事者は、その相手方を原状に復させる義務を負う。",
+     "text_sha256": "403613b135cfeb822522f37759878cd51de512f787c46c64bc9458e9b822f3b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "545",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その受領の時から利息を付さなければならない。",
+     "text_sha256": "403613b135cfeb822522f37759878cd51de512f787c46c64bc9458e9b822f3b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q17-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q17-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。滅失が債権者である買主の責めによるときは，買主は契約を解除できず，代金の支払も拒めないから，支払済みの代金の返還は請求できない。",
+   "body": "決め手は，債権者の責めによる不履行では解除ができないことである。民法は「債務の不履行が債権者の責めに帰すべき事由によるものであるときは、債権者は、前二条の規定による契約の解除をすることができない。」（543条）と定める。建物の滅失が買主の責めによるときは，買主は542条による解除ができず，解除による原状回復として代金の返還を求めることはできない。また，「債権者の責めに帰すべき事由によって債務を履行することができなくなったときは、債権者は、反対給付の履行を拒むことができない。」（536条2項）から，買主は代金を支払うべき立場にあり，支払済みの代金は返還されない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "543",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の不履行が債権者の責めに帰すべき事由によるものであるときは、債権者は、前二条の規定による契約の解除をすることができない。",
+     "text_sha256": "cecc8b1ad379fcfd168281936bdaf0082f499828b1a0e40c54ccb58c5e1d28dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "542",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の全部の履行が不能であるとき。",
+     "text_sha256": "021dce87813fcae2438db5c4ffc2afe591887076d1cccb4bc6a499a271622b73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "536",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権者の責めに帰すべき事由によって債務を履行することができなくなったときは、債権者は、反対給付の履行を拒むことができない。",
+     "text_sha256": "07238591347b0008a936f1e6eb7f8c43291d972cb540de8dd607128c70eb8bc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q17-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q17-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は，当事者双方の責めに帰することができない事由で債務を履行できなくなったときは「債権者は、反対給付の履行を拒むことができる。」（536条1項）とし，債務の全部の履行が不能であるときは催告なしに解除できる（542条1項1号）と定めている。不可抗力による滅失の危険を誰が負うかの規律は出題後に変わっており，今の条文で説明すると，出題当時の×の理由とは別の理由になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "536",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者双方の責めに帰することができない事由によって債務を履行することができなくなったときは、債権者は、反対給付の履行を拒むことができる。",
+     "text_sha256": "07238591347b0008a936f1e6eb7f8c43291d972cb540de8dd607128c70eb8bc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "542",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の全部の履行が不能であるとき。",
+     "text_sha256": "021dce87813fcae2438db5c4ffc2afe591887076d1cccb4bc6a499a271622b73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "今の条文でも「契約時にさかのぼって無効となる」とする点は誤りだが，出題当時の×の決め手である危険負担の規律が改正で変わったため，解説を書かずに law_changed とした（迷ったら手順3）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q17-e",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

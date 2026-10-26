@@ -1,0 +1,243 @@
+{
+ "question_id": "shiho-2013-minpo-q06",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q06-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は無権代理人の責任を「相手方の選択に従い、相手方に対して履行又は損害賠償の責任を負う。」（117条1項）と定め，債権の消滅時効を「債権者が権利を行使することができることを知った時から五年間行使しないとき」「権利を行使することができる時から十年間行使しないとき」（166条1項）としている。肢の正誤を分ける無権代理人の責任の時効期間と起算点は，出題後に改正された消滅時効の期間の規律を前提にしており，今の条文で説明すると出題の趣旨と別の理由になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "117",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方の選択に従い、相手方に対して履行又は損害賠償の責任を負う。",
+     "text_sha256": "9470800840b6b66f80d3d4c5a8ff53a5a8a4fbf45036dc9b79d484b788815ec4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "166",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が権利を行使することができることを知った時から五年間行使しないとき",
+     "text_sha256": "1486101bc71d3c4203815fde63101bc9f784105f2a086ecbe1b4b91126c82bcd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "166",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "権利を行使することができる時から十年間行使しないとき",
+     "text_sha256": "1486101bc71d3c4203815fde63101bc9f784105f2a086ecbe1b4b91126c82bcd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "債権の消滅時効の期間・起算点が出題後に変わったため解説を書かない。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q06-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q06-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。時効完成後に債務を承認した債務者はその完成した時効を援用できなくなるが，その後ふたたび時効が進行して再度完成すれば，その時効は援用できる。",
+   "body": "決め手は，援用できなくなるのは承認前に完成していた時効だけで，承認後に改めて完成した時効は別だという点である。時効は「当事者（消滅時効にあっては、保証人、物上保証人、第三取得者その他権利の消滅について正当な利益を有する者を含む。）が援用しなければ、裁判所がこれによって裁判をすることができない。」（145条）。判例は，債務者が消滅時効完成後に債務を承認した場合には，時効完成の事実を知らなかったときでも，その後その時効を援用することは許されないとする（最大判昭和41年4月20日）。そのうえで，この場合でも以後ふたたび時効は進行し，債務者は再度完成した消滅時効を援用することができるとしている（最判昭和45年5月21日）。肢は，承認後にさらに消滅時効の期間が経過した場合に援用できるとしているから，この判例の趣旨のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "145",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者（消滅時効にあっては、保証人、物上保証人、第三取得者その他権利の消滅について正当な利益を有する者を含む。）が援用しなければ、裁判所がこれによって裁判をすることができない。",
+     "text_sha256": "e5fa226ad26d710e216e9e61b648d93464274a60e523576250a29d3094a91a4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "消滅時効完成後の債務の承認と時効の援用",
+     "court": "最高裁判所大法廷",
+     "date": "1966-04-20",
+     "case_number": "昭和37(オ)1316",
+     "holding": "債務者が，消滅時効完成後に債権者に対し当該債務の承認をした場合には，時効完成の事実を知らなかったときでも，その後その時効の援用をすることは許されない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57740/detail2/index.html"
+     ]
+    },
+    {
+     "name": "時効完成後の債務承認と再度完成した消滅時効の援用",
+     "court": "最高裁判所第一小法廷",
+     "date": "1970-05-21",
+     "case_number": "昭和44(オ)1131",
+     "holding": "債務者が，消滅時効の完成後に債権者に対し当該債務を承認した場合においても，以後ふたたび時効は進行し，債務者は，再度完成した消滅時効を援用することができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55124/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "消滅時効の期間の長さは出題後の改正で変わったが，肢は期間の長さを問うていない。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q06-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q06-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法は売主の担保責任を契約の内容に適合しない目的物の引渡しとして定め，その期間の制限を「買主がその不適合を知った時から一年以内にその旨を売主に通知しないとき」（566条）としたうえで，債権の消滅時効を「権利を行使することができる時から十年間行使しないとき」のほか「債権者が権利を行使することができることを知った時から五年間行使しないとき」にも完成するとしている（166条1項）。肢の前提の隠れた瑕疵を理由とする損害賠償請求権の規定は今の条文になく，消滅時効の期間の規律も出題後に変わっている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "566",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "買主がその不適合を知った時から一年以内にその旨を売主に通知しないとき",
+     "text_sha256": "4ed0acaed9db9f251d115841a128eec8b851d66912c0d612c6eb666584dfa533",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "166",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "権利を行使することができる時から十年間行使しないとき",
+     "text_sha256": "1486101bc71d3c4203815fde63101bc9f784105f2a086ecbe1b4b91126c82bcd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "166",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が権利を行使することができることを知った時から五年間行使しないとき",
+     "text_sha256": "1486101bc71d3c4203815fde63101bc9f784105f2a086ecbe1b4b91126c82bcd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "瑕疵担保責任の規定がなくなり，消滅時効の期間（5年の時効の追加）も変わったため，名前だけの変更ではないとして解説を書かない。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q06-c",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q06-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。確定判決と同一の効力を有するもので確定した権利の時効期間を10年とする規定は，確定の時に弁済期の到来していない債権には適用されないから，弁済期が和解の1年後とされた請求権が和解の時から10年の時効にかかるとはいえない（169条2項）。",
+   "body": "誤りの決め手は，確定の時に弁済期が来ていない債権にも10年の時効期間が当てはまるとしている点である。訴訟上の和解は，その調書（今の民事訴訟法では電子調書）が作成・記録されると「確定判決と同一の効力を有する。」（民事訴訟法267条1項）。民法は「確定判決又は確定判決と同一の効力を有するものによって確定した権利については、十年より短い時効期間の定めがあるものであっても、その時効期間は、十年とする。」（169条1項）と定めるが，同時に「前項の規定は、確定の時に弁済期の到来していない債権については、適用しない。」（169条2項）としている。肢の請求権は，和解の時から1年後が弁済期とされており，確定の時に弁済期が到来していない債権であるから，169条1項は適用されず，和解が調書に記載された時から10年の時効にかかるとはいえない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "267",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決と同一の効力を有する。",
+     "text_sha256": "5bff013f863e84860a0a1588b4dcfbb058f5ca29e223b5ab659be98aefffb0ee",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "169",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決又は確定判決と同一の効力を有するものによって確定した権利については、十年より短い時効期間の定めがあるものであっても、その時効期間は、十年とする。",
+     "text_sha256": "0051df65b5084547127a4b849af7dd677d439928713f0fd7ba630f16e586839a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "169",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、確定の時に弁済期の到来していない債権については、適用しない。",
+     "text_sha256": "0051df65b5084547127a4b849af7dd677d439928713f0fd7ba630f16e586839a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない（判決で確定した権利の時効期間の規定の条番号・文言が出題当時と同じかは確かめていない）",
+    "民事訴訟法267条は今の本文では電子調書についての規定になっている。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q06-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

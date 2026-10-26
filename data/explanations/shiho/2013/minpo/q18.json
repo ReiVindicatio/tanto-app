@@ -1,0 +1,269 @@
+{
+ "question_id": "shiho-2013-minpo-q18",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q18-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は，遺産分割までの間に相続不動産から生ずる賃料債権は遺産とは別の財産で，各共同相続人が相続分に応じて分割単独債権として確定的に取得するとしている。",
+   "body": "決め手は，相続開始後に生じた賃料債権が遺産分割の対象となる相続財産に含まれるかどうかである。民法は「相続人が数人あるときは、相続財産は、その共有に属する。」（898条1項）と定め，可分な債権については「別段の意思表示がないときは、各債権者又は各債務者は、それぞれ等しい割合で権利を有し、又は義務を負う。」（427条）とする。判例は，相続開始から遺産分割までの間に共同相続に係る不動産から生ずる金銭債権たる賃料債権は，各共同相続人がその相続分に応じて分割単独債権として確定的に取得し，その帰属は後にされた遺産分割の影響を受けないとしている（最判平成17年9月8日）。肢はこの判例のとおりである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "898",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続人が数人あるときは、相続財産は、その共有に属する。",
+     "text_sha256": "91a22b1e4cfbb21c01539efe0ced8e3af18ccb75842259568b00aba4d376113d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "427",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "別段の意思表示がないときは、各債権者又は各債務者は、それぞれ等しい割合で権利を有し、又は義務を負う。",
+     "text_sha256": "9f8ca5bc7a3ca0744fa167c80923a9ce74d05d13a22dce16ef149f63563eb758",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "遺産分割前に相続不動産から生じた賃料債権の帰属",
+     "court": "最高裁判所第一小法廷",
+     "date": "2005-09-08",
+     "case_number": "平成16(受)1222",
+     "holding": "相続開始から遺産分割までの間に共同相続に係る不動産から生ずる金銭債権たる賃料債権は，各共同相続人がその相続分に応じて分割単独債権として確定的に取得し，その帰属は，後にされた遺産分割の影響を受けない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52401/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q18-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。債務引受では分割債務にならない。併存的債務引受なら引受人は債務者と連帯して同一内容の債務を負い，免責的債務引受なら原債務者は債務を免れる。",
+   "body": "誤りの決め手は，原債務者と引受人が分割債務を負うとしている点である。民法は，併存的債務引受について「併存的債務引受の引受人は、債務者と連帯して、債務者が債権者に対して負担する債務と同一の内容の債務を負担する。」（470条1項）と定める。また，免責的債務引受については「免責的債務引受の引受人は債務者が債権者に対して負担する債務と同一の内容の債務を負担し、債務者は自己の債務を免れる。」（472条1項）とする。どちらの場合も，原債務者と引受人が債務を分け合う分割債務にはならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "470",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "併存的債務引受の引受人は、債務者と連帯して、債務者が債権者に対して負担する債務と同一の内容の債務を負担する。",
+     "text_sha256": "8cdec78feefb56c6404e3a2f554050f635536790f732790ab0c1c3bb841c540d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "免責的債務引受の引受人は債務者が債権者に対して負担する債務と同一の内容の債務を負担し、債務者は自己の債務を免れる。",
+     "text_sha256": "43b16c10ebd6f4e46a8e8af0e9feb8dcf627456777f33a5b2d70bef51fa55eff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない（債務引受の規定は出題後の改正で置かれたもので，出題当時の根拠は条文の本文で確認していない）"
+   ],
+   "id": "exp-shiho-2013-minpo-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q18-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は，共同不法行為者が「各自が連帯してその損害を賠償する責任を負う。」（719条1項）とし，連帯債務者の一人について生じた事由は原則として「他の連帯債務者に対してその効力を生じない。」（441条本文），別段の意思による効力は「債権者及び他の連帯債務者の一人が別段の意思を表示したとき」に限る（441条ただし書）と定める。肢が前提とする出題当時の免除の効力の規定と，それを前提にした判例の枠組みは今の条文になく，今の条文で説明すると出題の趣旨と別の理由になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "719",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各自が連帯してその損害を賠償する責任を負う。",
+     "text_sha256": "d6621dcf13fc139d8533852212627c8850fb7c86592bbf6f3ceed52d1a70c8c2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の連帯債務者に対してその効力を生じない。",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者及び他の連帯債務者の一人が別段の意思を表示したとき",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題当時の判例（最判平成10年9月10日，平成9(オ)448，https://www.courts.go.jp/hanrei/52813/detail2/index.html）は，被害者が他の共同不法行為者の残債務をも免除する意思を有していると認められるときに免除の効力が及ぶとしたもので，参照法条に旧437条が挙がっている。今の441条ただし書は他の連帯債務者の意思表示も求めており要件が異なるため，law_changed とした（迷ったら手順3）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q18-c",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q18-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。全部の履行をする義務を負う者が数人いてそれぞれ破産したときは，債権者は債権の全額についてそれぞれの破産手続に参加できるから，Ｃは各100万円で配当に加入できる。",
+   "body": "誤りの決め手は，それぞれ50万円の限度でしか配当に加入できないとしている点である。連帯債務では，債権者は「その連帯債務者の一人に対し、又は同時に若しくは順次に全ての連帯債務者に対し、全部又は一部の履行を請求することができる。」（民法436条）。そして破産法は「数人が各自全部の履行をする義務を負う場合において、その全員又はそのうちの数人若しくは一人について破産手続開始の決定があったときは、債権者は、破産手続開始の時において有する債権の全額についてそれぞれの破産手続に参加することができる。」（破産法104条1項）と定める。したがって，ＡとＢがともに破産したときは，Ｃは100万円の全額についてＡの破産手続にもＢの破産手続にも参加できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "436",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その連帯債務者の一人に対し、又は同時に若しくは順次に全ての連帯債務者に対し、全部又は一部の履行を請求することができる。",
+     "text_sha256": "ec6cbe7596a1f7fe197f0fbf8f3d1d3416aa042d6dc7f60a15fcaaeb409f0b38",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "破産法",
+     "article": "104",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "数人が各自全部の履行をする義務を負う場合において、その全員又はそのうちの数人若しくは一人について破産手続開始の決定があったときは、債権者は、破産手続開始の時において有する債権の全額についてそれぞれの破産手続に参加することができる。",
+     "text_sha256": "3b331bc12d27058944f50bb456979f2f5881f32f58e020e27e65e89e2b00b04c",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AD%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B8%83%E5%8D%81%E4%BA%94%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない（出題当時の民法の規定は本文で確認していない）"
+   ],
+   "id": "exp-shiho-2013-minpo-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q18-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法は時効の「中断」に代えて完成猶予と更新を定め（147条1項「時効は、完成しない。」），連帯債務者の一人について生じた事由は原則として「他の連帯債務者に対してその効力を生じない。」（441条本文）とする。肢の前提である時効の中断と，出題当時の請求の効力の規定を前提にした判例の枠組みは今の条文になく，今の条文で説明すると出題の趣旨と別の理由になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "147",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効は、完成しない。",
+     "text_sha256": "3137736c35f135564d0162881d4fffef7103e15e30ac5aaa61cc08bfef94449c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の連帯債務者に対してその効力を生じない。",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題当時の判例（最判昭和57年3月4日，昭和56(オ)173，https://www.courts.go.jp/hanrei/66887/detail2/index.html）は，共謀による共同不法行為であっても民法434条（当時）の規定は適用されないとした。この434条の規律が改正で変わったため，law_changed とした（迷ったら手順3）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q18-e",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

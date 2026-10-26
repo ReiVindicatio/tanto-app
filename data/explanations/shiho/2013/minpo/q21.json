@@ -1,0 +1,289 @@
+{
+ "question_id": "shiho-2013-minpo-q21",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q21-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の502条1項は、一部弁済をした代位者が権利を行使するには「債権者の同意を得て」いることを要するとし、同条3項は債権者の権利が売却代金などについて「代位者が行使する権利に優先する」と定める。肢の前提である、一部弁済者が単独で抵当権を行使できるか・配当を按分するかを判例の趣旨で問う規律は、出題後の改正で条文の中身が変わっており、今の条文で説明すると出題の趣旨と別の理由になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "502",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代位者は、債権者の同意を得て、その弁済をした価額に応じて、債権者とともにその権利を行使することができる",
+     "text_sha256": "5075f51e3eead1a46f678d80d9be88eb7b3b01edaeed2a46d5087e84c199c225",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "502",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "代位者が行使する権利に優先する",
+     "text_sha256": "5075f51e3eead1a46f678d80d9be88eb7b3b01edaeed2a46d5087e84c199c225",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題は債権法改正（2020年4月施行）前。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q21-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q21-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。共同抵当の目的不動産が同一の物上保証人の所有である場合も、甲土地の後順位抵当権者は392条2項後段により乙土地の抵当権に代位できるとするのが判例である。",
+   "body": "392条2項は、ある不動産の代価のみを配当すべきときは抵当権者がその代価から債権の全部の弁済を受けられるとしたうえで、「次順位の抵当権者は、その弁済を受ける抵当権者が前項の規定に従い他の不動産の代価から弁済を受けるべき金額を限度として、その抵当権者に代位して抵当権を行使することができる」と定める。判例（最判平成4年11月6日）は、共同抵当権の目的たる甲・乙不動産が同一の物上保証人の所有に属する場合に甲不動産の代価のみを配当するときも、甲不動産の後順位抵当権者は392条2項後段に基づき先順位の共同抵当権者に代位して乙不動産の抵当権を行使できるとした。肢は、この代位を同項の定める限度で認めるもので、判例の趣旨に合う。後順位抵当権者が甲土地の配当で全額の弁済を受けたときは代位の必要がないので、肢はその場合を除いている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "392",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "次順位の抵当権者は、その弁済を受ける抵当権者が前項の規定に従い他の不動産の代価から弁済を受けるべき金額を限度として、その抵当権者に代位して抵当権を行使することができる",
+     "text_sha256": "2235509ee3f73be590b34657f505f4e8ef35120b6a445896a0730e41c0e997db",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "共同抵当の目的不動産が同一の物上保証人の所有である場合の後順位抵当権者の代位",
+     "court": "最高裁判所第二小法廷",
+     "date": "1992-11-06",
+     "case_number": "平成1(オ)1688",
+     "holding": "共同抵当権の目的たる甲・乙不動産が同一の物上保証人の所有に属する場合に甲不動産の代価のみを配当するときは、甲不動産の後順位抵当権者は、民法392条2項後段に基づき、先順位の共同抵当権者に代位して乙不動産に対する抵当権を行使できる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53499/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2013-minpo-q21-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q21-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。抵当権の実行で甲土地を失った物上保証人は債務者に求償権を持ち、弁済による代位により、求償できる範囲内で債務者所有の乙土地の抵当権を行使できる。",
+   "body": "351条は、他人の債務を担保するため質権を設定した者が「質権の実行によって質物の所有権を失ったときは、保証債務に関する規定に従い、債務者に対して求償権を有する」と定め、372条がこれを抵当権に準用する。そして499条は「債務者のために弁済をした者は、債権者に代位する」とし、501条1項は代位者が「担保としてその債権者が有していた一切の権利を行使することができる」と定める。その行使は、501条2項により「自己の権利に基づいて債務者に対して求償をすることができる範囲内」に限られる。したがって、甲土地の代価の配当で債務が消滅した物上保証人は、求償権の範囲内で乙土地の第一順位の抵当権を行使でき、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "351",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権の実行によって質物の所有権を失ったときは、保証債務に関する規定に従い、債務者に対して求償権を有する",
+     "text_sha256": "388d0ae8654d72b55d890d6eb71b24b4ed1f949c53879e979d730262380be809",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "372",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百九十六条、第三百四条及び第三百五十一条の規定は、抵当権について準用する。",
+     "text_sha256": "8425da3902ddc690c551ae65b8a6e0edd78d749eea824d1e2c5ab95e4e8b7d7c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "499",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者のために弁済をした者は、債権者に代位する。",
+     "text_sha256": "b54f0f1ff44e5fcf4711dbaa60c422c8fa936c2965fc141aa442411cfe09ea1c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "501",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "担保としてその債権者が有していた一切の権利を行使することができる",
+     "text_sha256": "173268b45b7e8524a5b3b90208061e8868848538142f787f231b67423f03a20d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "501",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "自己の権利に基づいて債務者に対して求償をすることができる範囲内",
+     "text_sha256": "173268b45b7e8524a5b3b90208061e8868848538142f787f231b67423f03a20d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q21-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q21-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。保証人と物上保証人との間では「その数に応じて」代位するので、保証人は求償権の全額について甲土地の抵当権を行使することはできない。",
+   "body": "保証債務を履行した保証人は、499条・501条1項により債権者に代位し、債権者が有していた抵当権を行使できる。しかし、501条3項4号は「保証人と物上保証人との間においては、その数に応じて、債権者に代位する」と定める。保証人1人と物上保証人1人の肢の場合、保証人が物上保証人所有の甲土地の抵当権に代位できるのは、頭数で割った分に限られる。肢は求償権の全額について行使できるとする点で誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "499",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者のために弁済をした者は、債権者に代位する。",
+     "text_sha256": "b54f0f1ff44e5fcf4711dbaa60c422c8fa936c2965fc141aa442411cfe09ea1c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "501",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "担保としてその債権者が有していた一切の権利を行使することができる",
+     "text_sha256": "173268b45b7e8524a5b3b90208061e8868848538142f787f231b67423f03a20d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "501",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "保証人と物上保証人との間においては、その数に応じて、債権者に代位する",
+     "text_sha256": "173268b45b7e8524a5b3b90208061e8868848538142f787f231b67423f03a20d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q21-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q21-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。債権者が担保を喪失させたときの代位権者の保護は「その責任を免れる」こと（免責）であり、放棄された抵当権を放棄されていないものとして行使できるわけではない。",
+   "body": "504条1項は、弁済をするについて正当な利益を有する者（代位権者）がある場合に、債権者が故意又は過失によって担保を喪失させたときは、「その代位権者は、代位をするに当たって担保の喪失又は減少によって償還を受けることができなくなる限度において、その責任を免れる」と定める。保証人は代位権者に当たるので、債権者が甲土地の抵当権を放棄したときの保証人の保護は、この限度での免責である（同条2項の合理的な理由がある場合を除く）。放棄された抵当権は消滅しており、保証人が後に保証債務を履行しても、それを放棄されていないものとして行使できるとする規定はないと解される。したがって肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "504",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その代位権者は、代位をするに当たって担保の喪失又は減少によって償還を受けることができなくなる限度において、その責任を免れる",
+     "text_sha256": "f19dc766dda768eec1093a723ed1d2c77e55633b01ad324400c9927a433e7065",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "504",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権者が担保を喪失し、又は減少させたことについて取引上の社会通念に照らして合理的な理由があると認められるときは、適用しない",
+     "text_sha256": "f19dc766dda768eec1093a723ed1d2c77e55633b01ad324400c9927a433e7065",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない",
+    "放棄された抵当権を行使できないとする点は解釈による"
+   ],
+   "id": "exp-shiho-2013-minpo-q21-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

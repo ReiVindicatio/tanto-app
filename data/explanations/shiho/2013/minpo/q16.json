@@ -1,0 +1,218 @@
+{
+ "question_id": "shiho-2013-minpo-q16",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q16-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。畳は抵当権設定者Ａの所有物ではなく賃借人Ｂの所有物なので、甲建物の従物とはいえず、Ｃの抵当権の効力は及ばない。",
+   "body": "建物の畳のような物に抵当権の効力が及ぶかは、民法370条の「付加して一体となっている物」や、民法87条の従物に当たるかで考えます。民法87条1項は、従物を「物の所有者が、その物の常用に供するため、自己の所有に属する他の物をこれに附属させたとき」の附属物としており、主物と同じ所有者に属することが前提です。肢の畳は、甲建物の所有者Ａではなく賃借人Ｂの所有物であり、Ｂが自分の使用のために置いているにすぎません。抵当権は設定者Ａの所有する不動産について設定されるものなので、第三者Ｂの所有物である畳には、Ｃの抵当権の効力は及ばないと解されています。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "87",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "物の所有者が、その物の常用に供するため、自己の所有に属する他の物をこれに附属させたとき",
+     "text_sha256": "28daf18cc57d735b071d99c10349ca64b3f45613eb4ba27750c56baaef902963",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "370",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "付加して一体となっている物",
+     "text_sha256": "854276796c8c6353138b8e691ef004f5dc446b6dadda1af47cd01b822dbaddac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "解釈による（他人の所有物に抵当権の効力が及ばないことは、87条1項の文言と抵当権の性質からの一般的な理解）"
+   ],
+   "id": "exp-shiho-2013-minpo-q16-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q16-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。抵当権の効力が土地賃借権に及び買受人Ｄに移転するところまでは判例のとおりだが、賃借権の移転には賃貸人Ｂの承諾（またはこれに代わる裁判所の許可）が要るので、「Ｂの承諾がなくても」Ｂに主張できるとする点が誤り。",
+   "body": "最高裁昭和40年5月4日判決は、土地賃借人がその土地上に所有する建物に抵当権を設定した場合、原則として抵当権の効力は土地の賃借権に及び、建物の競落人と賃借人との関係では建物の所有権とともに土地の賃借権も競落人に移転するとしました。もっとも、この移転は賃借権の譲渡に当たり、民法612条1項は「賃借人は、賃貸人の承諾を得なければ、その賃借権を譲り渡し、又は賃借物を転貸することができない。」と定めています。そのため、買受人Ｄが賃借権を賃貸人Ｂに主張するには、Ｂの承諾が必要と解されています。Ｂが承諾しないときは、借地借家法20条1項により、Ｄは裁判所に「借地権設定者の承諾に代わる許可」を求めることができます（同条3項により「建物の代金を支払った後二月以内に限り」）。したがって、Ｂの承諾がなくてもＢに主張できるとする肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "612",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賃借人は、賃貸人の承諾を得なければ、その賃借権を譲り渡し、又は賃借物を転貸することができない。",
+     "text_sha256": "61de741aa9b7bc44450830e5a1e3e9eebbb3da19a1f0bacee45b0a37dd5454c9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "借地借家法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "借地権設定者の承諾に代わる許可",
+     "text_sha256": "6286677e825700bcadc63a9b5d4407a02d2a11eaaf1d11ebfa399c4d83311e29",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B9%9D%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "借地借家法",
+     "article": "20",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "建物の代金を支払った後二月以内に限り",
+     "text_sha256": "6286677e825700bcadc63a9b5d4407a02d2a11eaaf1d11ebfa399c4d83311e29",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B9%9D%E5%8D%81%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "借地上の建物の抵当権の効力と土地賃借権",
+     "court": "最高裁判所第三小法廷",
+     "date": "1965-05-04",
+     "case_number": "昭和39(オ)1033",
+     "holding": "土地賃借人が土地上に所有する建物に抵当権を設定した場合、原則として抵当権の効力は土地の賃借権に及び、建物の競落人と賃借人との関係では、建物の所有権とともに土地の賃借権も競落人に移転する。賃借人は、賃貸人が賃借権の移転を承諾しないときでも、賃貸人に代位して競落人に土地の明渡しを請求することはできない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56284/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "解釈による（買受人が賃貸人に賃借権を主張するのに賃貸人の承諾が要ることは、612条1項による一般的な理解。判例は賃借人と競落人の関係での移転を判示したもの）"
+   ],
+   "id": "exp-shiho-2013-minpo-q16-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q16-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。民法398条の3第1項のとおりで、根抵当権は利息・損害金も含めて極度額まで全部を担保する。",
+   "body": "民法398条の3第1項は「根抵当権者は、確定した元本並びに利息その他の定期金及び債務の不履行によって生じた損害の賠償の全部について、極度額を限度として、その根抵当権を行使することができる。」と定めています。普通の抵当権では、民法375条1項により利息その他の定期金は「その満期となった最後の二年分についてのみ」抵当権を行使できるとされていますが、根抵当権では極度額の範囲内であれば全部について行使できます。肢はこの条文の内容どおりなので正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "根抵当権者は、確定した元本並びに利息その他の定期金及び債務の不履行によって生じた損害の賠償の全部について、極度額を限度として、その根抵当権を行使することができる。",
+     "text_sha256": "3d1c3209b892156ccec456c9603730174d5f4e8529efe3a5b51c3ade4bbb2871",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "375",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その満期となった最後の二年分についてのみ",
+     "text_sha256": "f107b60752dc2f052e9aacfb4f337f2133f027b1bcd42f1cf881feb2e7b52bbd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2013-minpo-q16-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q16-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。民法370条は抵当地の上に存する建物を土地の抵当権の効力の範囲から除いており、別段の定めをしても建物に土地の抵当権の効力は及ばない。",
+   "body": "民法370条本文は「抵当権は、抵当地の上に存する建物を除き、その目的である不動産（以下「抵当不動産」という。）に付加して一体となっている物に及ぶ。」と定めています。土地と建物は別個の不動産であり、土地の抵当権の効力は地上の建物には及びません。同条ただし書の「設定行為に別段の定めがある場合」は、付加一体物に効力を及ぼさないとする定めについての例外であり、建物に効力を及ぼすための定めではありません。建物にも抵当権の効力を及ぼしたければ、建物にも別に抵当権を設定する必要があります。したがって、別段の定めをした場合に限り建物に効力が及ぶとする肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "370",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権は、抵当地の上に存する建物を除き、その目的である不動産（以下「抵当不動産」という。）に付加して一体となっている物に及ぶ。",
+     "text_sha256": "854276796c8c6353138b8e691ef004f5dc446b6dadda1af47cd01b822dbaddac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "370",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設定行為に別段の定めがある場合",
+     "text_sha256": "854276796c8c6353138b8e691ef004f5dc446b6dadda1af47cd01b822dbaddac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "370条ただし書の詐害行為取消しの部分は肢の結論に関わらない。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q16-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

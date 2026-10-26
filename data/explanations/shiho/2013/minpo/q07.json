@@ -1,0 +1,241 @@
+{
+ "question_id": "shiho-2013-minpo-q07",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q07-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。代表者を別に定めていなければ理事が法人を代表し、理事が二人以上なら各自が代表する（一般法人法77条1項・2項）。",
+   "body": "一般社団法人及び一般財団法人に関する法律77条1項は「理事は、一般社団法人を代表する。ただし、他に代表理事その他一般社団法人を代表する者を定めた場合は、この限りでない。」と定める。同条2項は「前項本文の理事が二人以上ある場合には、理事は、各自、一般社団法人を代表する。」とする。したがって、代表理事その他の代表者を定めていない場合には、各理事が単独で一般社団法人を代表するので、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "77",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "理事は、一般社団法人を代表する。ただし、他に代表理事その他一般社団法人を代表する者を定めた場合は、この限りでない。",
+     "text_sha256": "7f10c6052f39ac97aa3de03b52457d3c513098278d0cbd92a672c95f9a4d09ef",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "77",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項本文の理事が二人以上ある場合には、理事は、各自、一般社団法人を代表する。",
+     "text_sha256": "7f10c6052f39ac97aa3de03b52457d3c513098278d0cbd92a672c95f9a4d09ef",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "e-Gov の現行の本文で説明した。出題当時の本文は確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q07-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q07-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。「責任を負うことはない」が誤り。代表者でない被用者の加害については、法人も使用者として民法715条1項の責任を負いうる。",
+   "body": "一般社団法人及び一般財団法人に関する法律78条は「一般社団法人は、代表理事その他の代表者がその職務を行うについて第三者に加えた損害を賠償する責任を負う。」と定め、代表者の行為についての責任を定める。しかし、代表者でない者の行為について法人が責任を負わないとする規定はない。民法715条1項は「ある事業のために他人を使用する者は、被用者がその事業の執行について第三者に加えた損害を賠償する責任を負う。」と定めており、一般社団法人が使用者である場合には、被用者が事業の執行について第三者に加えた損害について、同項により賠償責任を負うことがある。したがって、およそ責任を負うことはないとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "78",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一般社団法人は、代表理事その他の代表者がその職務を行うについて第三者に加えた損害を賠償する責任を負う。",
+     "text_sha256": "6d0edce66c758476cca39b5e20c261d5711d3ce9a80bedc596d11a59ac2a4815",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "715",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ある事業のために他人を使用する者は、被用者がその事業の執行について第三者に加えた損害を賠償する責任を負う。",
+     "text_sha256": "ee1bffc67a722815d32711a10969d4bd9e21ccbe43f120f08dd4fdc60932d2f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "e-Gov の現行の本文で説明した。出題当時の本文は確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q07-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q07-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。「必ず理事会を置かなければならない」が誤り。理事会は理事の数にかかわらず定款の定めによって置くことができる任意の機関である（一般法人法60条）。",
+   "body": "一般社団法人及び一般財団法人に関する法律60条1項は「一般社団法人には、一人又は二人以上の理事を置かなければならない。」とし、理事が二人以上いることを予定している。そのうえで同条2項は「一般社団法人は、定款の定めによって、理事会、監事又は会計監査人を置くことができる。」と定め、理事会の設置を定款による任意のものとしている。理事が複数ある場合に理事会の設置を義務づける規定はないから、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "60",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一般社団法人には、一人又は二人以上の理事を置かなければならない。",
+     "text_sha256": "0870cd5ab5731d1f8db967b4c63c7700831cd9c34ee3995353b099cedb5324f5",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "60",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "一般社団法人は、定款の定めによって、理事会、監事又は会計監査人を置くことができる。",
+     "text_sha256": "0870cd5ab5731d1f8db967b4c63c7700831cd9c34ee3995353b099cedb5324f5",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "e-Gov の現行の本文で説明した。出題当時の本文は確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q07-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q07-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。理事会を置かない一般社団法人でも代表理事を定めることができる（一般法人法77条3項）ので、「必ず理事会を置かなければならない」は誤り。",
+   "body": "一般社団法人及び一般財団法人に関する法律77条3項は「一般社団法人（理事会設置一般社団法人を除く。）は、定款、定款の定めに基づく理事の互選又は社員総会の決議によって、理事の中から代表理事を定めることができる。」と定める。つまり、理事会を置かない一般社団法人も、定款・理事の互選・社員総会の決議によって代表理事を定めることができる。なお、理事会設置一般社団法人では、90条3項により「理事会は、理事の中から代表理事を選定しなければならない。」とされるが、これは理事会を置いた場合の規律であり、代表理事を定めたら理事会を置かなければならないという意味ではない。したがって、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "77",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "一般社団法人（理事会設置一般社団法人を除く。）は、定款、定款の定めに基づく理事の互選又は社員総会の決議によって、理事の中から代表理事を定めることができる。",
+     "text_sha256": "7f10c6052f39ac97aa3de03b52457d3c513098278d0cbd92a672c95f9a4d09ef",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "90",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "理事会は、理事の中から代表理事を選定しなければならない。",
+     "text_sha256": "c5e664b941cbbe602e1926db4ebc3f334973dccc93af778434b8276e90df386c",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "e-Gov の現行の本文で説明した。出題当時の本文は確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q07-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q07-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。理事会設置一般社団法人は監事を置かなければならない（一般法人法61条）。",
+   "body": "一般社団法人及び一般財団法人に関する法律60条2項により、理事会・監事・会計監査人はいずれも定款の定めによって置くことができる機関である。もっとも、61条は「理事会設置一般社団法人及び会計監査人設置一般社団法人は、監事を置かなければならない。」と定める。したがって、理事会を設置した一般社団法人は必ず監事を置かなければならず、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "60",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "一般社団法人は、定款の定めによって、理事会、監事又は会計監査人を置くことができる。",
+     "text_sha256": "0870cd5ab5731d1f8db967b4c63c7700831cd9c34ee3995353b099cedb5324f5",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "一般社団法人及び一般財団法人に関する法律",
+     "article": "61",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "理事会設置一般社団法人及び会計監査人設置一般社団法人は、監事を置かなければならない。",
+     "text_sha256": "c9765d1289c7ef275f385bd781c6849571ed4a8fdc449b3d259a4b752f5a7ebc",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "e-Gov の現行の本文で説明した。出題当時の本文は確認していない"
+   ],
+   "id": "exp-shiho-2013-minpo-q07-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,243 @@
+{
+ "question_id": "shiho-2014-minpo-q35",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q35-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。遺産4000万円から寄与分800万円を控除した3200万円を相続財産とみなし、法定相続分で分けたうえでＣに寄与分を加えると、Ｂ1600万円・Ｃ1600万円・Ｄ800万円となる。",
+   "body": "ポイントは、寄与分をいったん控除してから法定相続分で分け、寄与者の相続分に寄与分を加えるという計算の順序である。904条の2第1項は、寄与をした者があるときは「被相続人が相続開始の時において有した財産の価額から共同相続人の協議で定めたその者の寄与分を控除したものを相続財産とみなし、第九百条から第九百二条までの規定により算定した相続分に寄与分を加えた額をもってその者の相続分とする。」と定める。寄与分を800万円とすると、みなし相続財産は4000万円−800万円＝3200万円である。900条1号は「子及び配偶者が相続人であるときは、子の相続分及び配偶者の相続分は、各二分の一とする。」とし、同条4号により子Ｃ・Ｄの相続分は「相等しい」から、Ｂは3200万円×1/2＝1600万円、Ｃ・Ｄは各3200万円×1/4＝800万円となる。Ｃには寄与分800万円が加わって1600万円となり、Ｄは800万円であるから、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "904_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被相続人が相続開始の時において有した財産の価額から共同相続人の協議で定めたその者の寄与分を控除したものを相続財産とみなし、第九百条から第九百二条までの規定により算定した相続分に寄与分を加えた額をもってその者の相続分とする。",
+     "text_sha256": "483919df63710cbae21202da0d19e9aad42ca70e0a1a8caf86c7f8bb76a65d94",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "900",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子及び配偶者が相続人であるときは、子の相続分及び配偶者の相続分は、各二分の一とする。",
+     "text_sha256": "4f1cbf25a7b665639eb45fbea200926681aad49a1881eadde375777dfd56fa23",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "900",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子、直系尊属又は兄弟姉妹が数人あるときは、各自の相続分は、相等しいものとする。",
+     "text_sha256": "4f1cbf25a7b665639eb45fbea200926681aad49a1881eadde375777dfd56fa23",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "肢の「800万円相当の特別の寄与」を寄与分800万円として計算した（問題文の前提による）"
+   ],
+   "id": "exp-shiho-2014-minpo-q35-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q35-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。遺産4000万円に生計の資本としての贈与1000万円を加えた5000万円を相続財産とみなして法定相続分で分け、Ｄの分から贈与額を控除すると、Ｂ2500万円・Ｃ1250万円・Ｄ250万円となる。",
+   "body": "ポイントは、生計の資本としての贈与（特別受益）を相続財産に持ち戻して計算することである。903条1項は、共同相続人中に「生計の資本として贈与を受けた者があるときは、被相続人が相続開始の時において有した財産の価額にその贈与の価額を加えたものを相続財産とみなし、第九百条から第九百二条までの規定により算定した相続分の中からその遺贈又は贈与の価額を控除した残額をもってその者の相続分とする。」と定める。みなし相続財産は4000万円＋1000万円＝5000万円であり、900条1号・4号により、Ｂは5000万円×1/2＝2500万円、Ｃ・Ｄは各5000万円×1/4＝1250万円となる。Ｄは1250万円から贈与1000万円を控除した250万円となるから、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "903",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "生計の資本として贈与を受けた者があるときは、被相続人が相続開始の時において有した財産の価額にその贈与の価額を加えたものを相続財産とみなし、第九百条から第九百二条までの規定により算定した相続分の中からその遺贈又は贈与の価額を控除した残額をもってその者の相続分とする。",
+     "text_sha256": "4909b7339de670942dcd2888c74066bf58d9f59f2fdf2271cda5cefd8d233664",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "900",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子及び配偶者が相続人であるときは、子の相続分及び配偶者の相続分は、各二分の一とする。",
+     "text_sha256": "4f1cbf25a7b665639eb45fbea200926681aad49a1881eadde375777dfd56fa23",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2014-minpo-q35-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q35-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。被相続人が贈与を相続分の算定から除外する意思（持戻しの免除）を表示しているので、その意思に従い遺産4000万円をそのまま法定相続分で分け、Ｂ2000万円・Ｃ1000万円・Ｄ1000万円となる。",
+   "body": "ポイントは、被相続人が特別受益の持戻しをしない意思を表示したときはその意思に従うことである。903条3項は「被相続人が前二項の規定と異なった意思を表示したときは、その意思に従う。」と定める。Ａは遺言でＣへの贈与を各自の相続分の算定から除外するよう指示しているから、同条1項の持戻しはせず、相続開始時の遺産4000万円を基に計算する。900条1号・4号により、Ｂは4000万円×1/2＝2000万円、Ｃ・Ｄは各4000万円×1/4＝1000万円となるから、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "903",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "被相続人が前二項の規定と異なった意思を表示したときは、その意思に従う。",
+     "text_sha256": "4909b7339de670942dcd2888c74066bf58d9f59f2fdf2271cda5cefd8d233664",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "903",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被相続人が相続開始の時において有した財産の価額にその贈与の価額を加えたものを相続財産とみなし、",
+     "text_sha256": "4909b7339de670942dcd2888c74066bf58d9f59f2fdf2271cda5cefd8d233664",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "900",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子及び配偶者が相続人であるときは、子の相続分及び配偶者の相続分は、各二分の一とする。",
+     "text_sha256": "4f1cbf25a7b665639eb45fbea200926681aad49a1881eadde375777dfd56fa23",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "903条3項の文言が出題後の相続法改正で変わったかは確認していない。改正前の内容は条文の本文で確認していない（持戻しの免除の意思に従うという結論は今の条文でも同じ）"
+   ],
+   "id": "exp-shiho-2014-minpo-q35-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q35-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の1046条1項は、遺留分権利者は受遺者又は受贈者に対し「遺留分侵害額に相当する金銭の支払を請求することができる。」と定めており、肢の前提の甲土地及び乙建物という財産について遺留分減殺請求をするという規律は今の条文にない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1046",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺留分侵害額に相当する金銭の支払を請求することができる。",
+     "text_sha256": "bee2c013e82d287e432164aa7b6d4effbfc5b76b5317ea4e059ab4b01e52359d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "遺留分の制度（減殺請求から金銭の支払の請求へ）と、遺留分を算定するための財産に算入する贈与の範囲（1044条）が出題後の相続法改正で変わったため、解説を書かずに law_changed とした。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2014-minpo-q35-d",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q35-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の1046条1項は、遺留分権利者は受遺者（特定財産承継遺言により財産を承継した相続人を含む）に対し「遺留分侵害額に相当する金銭の支払を請求することができる。」と定めており、遺留分減殺請求を受けた者が財産の返還に代えて価額による弁償をするという肢の前提の規律は今の条文にない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1046",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺留分侵害額に相当する金銭の支払を請求することができる。",
+     "text_sha256": "bee2c013e82d287e432164aa7b6d4effbfc5b76b5317ea4e059ab4b01e52359d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "遺留分減殺請求と価額弁償の制度が出題後の相続法改正で金銭の支払の請求に改められたため、解説を書かずに law_changed とした。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2014-minpo-q35-e",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,226 @@
+{
+ "question_id": "shiho-2013-minpo-q11",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q11-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。民法369条2項は地上権も抵当権の目的とすることができると定めており、「できない」とする点が誤り。",
+   "body": "抵当権の目的は不動産が基本ですが、民法369条2項は「地上権及び永小作権も、抵当権の目的とすることができる。」と定めています。したがって、地上権を抵当権の目的とすることはできます。この場合には同項後段により「この章の規定を準用する」とされ、抵当権に関する規定が地上権を目的とする抵当権にも準用されます。肢は「できない」としているので誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "369",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "地上権及び永小作権も、抵当権の目的とすることができる。この場合においては、この章の規定を準用する。",
+     "text_sha256": "d6b78d480b2f8cc38269bf4edd902590ef68b3386bc5d121e5b4b9ccdb6522e4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2013-minpo-q11-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q11-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。地上権は物権として自由に譲渡でき、譲渡禁止の特約は当事者間で効力をもつにとどまるので、譲受人は地上権を取得すると解されている。",
+   "body": "地上権は、民法265条のとおり「他人の土地において工作物又は竹木を所有するため、その土地を使用する権利」であり、物権です。永小作権については民法272条が譲渡できるとしたうえで「ただし、設定行為で禁じたときは、この限りでない。」と定めていますが、地上権にはこれに当たる規定がありません。そのため、地上権は土地所有者の承諾なく自由に譲渡でき、譲渡を禁ずる特約があっても、その特約は土地所有者と地上権者の間で債権的な効力をもつにとどまり、譲渡そのものの効力は妨げられないと解されています。したがって、特約に反して譲渡を受けた第三者も地上権を取得できます（特約違反について地上権者が土地所有者に責任を負うかは別の問題です）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "265",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の土地において工作物又は竹木を所有するため、その土地を使用する権利",
+     "text_sha256": "2094168b43153d58b26898c30eba33b4d7575c57aa36a95109a8493efcdab658",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "272",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、設定行為で禁じたときは、この限りでない。",
+     "text_sha256": "9e72348e391e6a412aebaaf5855e2ae65c3b8354a6ba0b94d3af06f5a7e07c4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "解釈による（地上権の譲渡禁止特約の効力は条文に定めがなく、一般的な理解による）"
+   ],
+   "id": "exp-shiho-2013-minpo-q11-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q11-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。地役権は対価の支払を要件としておらず、無償で設定することもできるので、「必ず」対価を支払わなければならないとする点が誤り。",
+   "body": "民法280条本文は、地役権の内容を「地役権者は、設定行為で定めた目的に従い、他人の土地を自己の土地の便益に供する権利を有する。」と定めるだけで、対価の支払を地役権の要素としていません。地上権については地代を支払う場合の規定（民法266条）がありますが、地役権にはそのような規定もありません。そのため、地役権は有償でも無償でも設定でき、対価を払うかどうかは設定行為で決めることだと解されています。肢は「必ず」支払わなければならないとしているので誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "280",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地役権者は、設定行為で定めた目的に従い、他人の土地を自己の土地の便益に供する権利を有する。",
+     "text_sha256": "c67f7e56d4dd8e753aac0ff0238ef54fdab1ad9979d47b46329c2e091fecffd8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "266",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地上権者が土地の所有者に定期の地代を支払わなければならない場合について準用する。",
+     "text_sha256": "1e11eeb397c322d7f0e7419c2aa60588ccefea372df6b549e148f8102ce399a0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "解釈による（地役権が無償でもよいことは条文に明記がなく、一般的な理解による）"
+   ],
+   "id": "exp-shiho-2013-minpo-q11-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q11-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。民法388条後段は法定地上権の地代を裁判所が定めるとしており、法定地上権者は地代を支払う義務を負うので、「負わない」とする点が誤り。",
+   "body": "民法388条前段は、土地と建物が同一の所有者に属する場合に抵当権の実行で所有者が異なるに至ったとき、「その建物について、地上権が設定されたものとみなす。」と定めています。そして同条後段は「この場合において、地代は、当事者の請求により、裁判所が定める。」としています。これは法定地上権が有償であること、すなわち法定地上権者が土地の所有者に地代を支払う義務を負うことを前提とした規定です。したがって、地代を支払う義務を負わないとする肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "388",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この場合において、地代は、当事者の請求により、裁判所が定める。",
+     "text_sha256": "1c78ef41c219bd8b16ae579af125c16f9b1ab7108e30642813515624dbb4a07e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "388",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その建物について、地上権が設定されたものとみなす。",
+     "text_sha256": "1c78ef41c219bd8b16ae579af125c16f9b1ab7108e30642813515624dbb4a07e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2013-minpo-q11-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q11-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。民法266条1項が永小作権の消滅請求の規定（276条）を定期の地代を支払う地上権に準用しているので、2年以上の地代不払で土地所有者は地上権の消滅を請求できる。",
+   "body": "民法276条は「永小作人が引き続き二年以上小作料の支払を怠ったときは、土地の所有者は、永小作権の消滅を請求することができる。」と定めています。民法266条1項は「第二百七十四条から第二百七十六条までの規定は、地上権者が土地の所有者に定期の地代を支払わなければならない場合について準用する。」としています。したがって、定期の地代を支払うべき地上権者が引き続き2年以上地代の支払を怠ったときは、土地の所有者は地上権の消滅を請求できます。肢は条文のとおりで正しいです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "276",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "永小作人が引き続き二年以上小作料の支払を怠ったときは、土地の所有者は、永小作権の消滅を請求することができる。",
+     "text_sha256": "97dcb453e846f79a466743d8a256bb795b6345161eb1fe98838a638bfd462310",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "266",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百七十四条から第二百七十六条までの規定は、地上権者が土地の所有者に定期の地代を支払わなければならない場合について準用する。",
+     "text_sha256": "1e11eeb397c322d7f0e7419c2aa60588ccefea372df6b549e148f8102ce399a0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2013-minpo-q11-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
