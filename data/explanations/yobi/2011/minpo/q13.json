@@ -1,0 +1,259 @@
+{
+ "question_id": "yobi-2011-minpo-q13",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q13-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法は「父母が協議上の離婚をするときは、その協議で、その双方又は一方を親権者と定める。」（819条1項）と定め、協議上の離婚の際に父母の双方を親権者と定めることができる。肢の前提にしている、協議上の離婚の際は父母の一方だけを親権者と定める規律は今の条文になく、今の条文では公式の○に行き着かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "819",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "父母が協議上の離婚をするときは、その協議で、その双方又は一方を親権者と定める。",
+     "text_sha256": "c64e308686bb7b205715f4ba1f7b5628cd9b5c6379cdcdb7b43b58ad73ab22b2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後の改正で離婚後も父母の双方を親権者と定めることができるようになったため、解説を書かずに law_changed とした。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-minpo-q13-1",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q13-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。協議で定めた親権者も、子の利益のため必要があれば、子の親族の請求により家庭裁判所が変更でき（819条6項）、親権者とならなかった親も子の親族として請求できる。",
+   "body": "誤りは、他の一方が親権者の変更を請求できないとしている点である。819条6項は「子の利益のため必要があると認めるときは、家庭裁判所は、子又はその親族の請求によって、親権者を変更することができる。」と定めている。親族には「六親等内の血族」が含まれ（725条1号）、親権者とならなかった親は子の一親等の血族なので、子の親族として変更を請求できる。また819条8項は「家庭裁判所は、父母の協議により定められた親権者を変更することが子の利益のため必要であるか否かを判断するに当たっては」と定めており、協議で定めた親権者も変更の対象になる。したがって、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "819",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "子の利益のため必要があると認めるときは、家庭裁判所は、子又はその親族の請求によって、親権者を変更することができる。",
+     "text_sha256": "c64e308686bb7b205715f4ba1f7b5628cd9b5c6379cdcdb7b43b58ad73ab22b2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "819",
+     "paragraphs": [
+      "8"
+     ],
+     "quote": "家庭裁判所は、父母の協議により定められた親権者を変更することが子の利益のため必要であるか否かを判断するに当たっては",
+     "text_sha256": "c64e308686bb7b205715f4ba1f7b5628cd9b5c6379cdcdb7b43b58ad73ab22b2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "725",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "六親等内の血族",
+     "text_sha256": "b31a628cfa086b6edbdf8def49c2d8a588c9fa8cf13eb4a7e08b365aa06fe33e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "819条は出題後の改正で本文が変わった（子も変更を請求できる・8項の考慮事項など）が、親権者とならなかった親が家庭裁判所に変更を請求できるという結論は同じ。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-minpo-q13-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q13-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。親権者を定めることは親子関係を変えるものではなく、親権者とならなかった親も子の直系尊属として相続人となりうる（889条1項1号）ので、推定相続人の地位を失わない。",
+   "body": "誤りは、親権者とならなかった親が推定相続人の地位を失うとしている点である。819条1項は「その協議で、その双方又は一方を親権者と定める。」と定めるだけで、親権者を定めることで親子関係がなくなるとはしていない。子が死亡したときの相続人については、889条1項が子の相続人となるべき者がない場合に「被相続人の直系尊属」を相続人としており、親権者であるかどうかで区別していない。親権者とならなかった親も子の直系尊属であることに変わりはないので、子の推定相続人としての地位を失わないと解されている。したがって、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "819",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その協議で、その双方又は一方を親権者と定める。",
+     "text_sha256": "c64e308686bb7b205715f4ba1f7b5628cd9b5c6379cdcdb7b43b58ad73ab22b2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "889",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被相続人の直系尊属",
+     "text_sha256": "ce3bf97346d38a785f02668e37d9ec52f4068bc9ba9034464cf1b0245d6f317c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "親権者の定めが親子関係・相続権に影響しないことは解釈による",
+    "819条1項は出題後の改正で父母の双方を親権者と定めることもできるようになったが、親権者とならなかった親が推定相続人の地位を失わないという結論は同じ。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-minpo-q13-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q13-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。嫡出子の身分は婚姻中の懐胎などによって決まり（772条1項）、父母が後に離婚しても子が嫡出子の身分を失う定めはない。",
+   "body": "772条1項は「妻が婚姻中に懐胎した子は、当該婚姻における夫の子と推定する。」と定め、嫡出子の身分は子の懐胎・出生の時点の父母の婚姻によって決まる。離婚によって婚姻は将来に向かって解消されるが、民法には、すでに生まれた子がそれによって嫡出子の身分を失うとする規定はない。790条1項も「嫡出である子は、父母の氏を称する。ただし、子の出生前に父母が離婚したときは、離婚の際における父母の氏を称する。」として、父母が離婚した後も子が嫡出である子であることを前提にしている。したがって、父母が協議上の離婚をしても子は嫡出子の身分を失わないと解されており、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "772",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "妻が婚姻中に懐胎した子は、当該婚姻における夫の子と推定する。",
+     "text_sha256": "99efe67baa1c7a7aa568fe69b0d7a59a22934f8013ef6a03333b52dcfe964d42",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "790",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "嫡出である子は、父母の氏を称する。ただし、子の出生前に父母が離婚したときは、離婚の際における父母の氏を称する。",
+     "text_sha256": "4ac814639863c83fea4975b477d912200e606fb405a88aa4e1ed150deb0c15db",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "離婚が子の嫡出子の身分に影響しないことは解釈による",
+    "772条は出題後の改正で本文が変わったが、肢の結論は同じ。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-minpo-q13-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q13-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。協議上の離婚の際の親権者は父母の協議で定める（819条1項）ものであり、子が15歳に達していても、子が自ら親権者を定めることはできない。",
+   "body": "誤りは、15歳に達した子が自ら親権者となるべき者を定めることができるとしている点である。819条1項は「父母が協議上の離婚をするときは、その協議で、その双方又は一方を親権者と定める。」と定め、親権者を定めるのは父母の協議である。協議が調わないときなどは、819条5項により「家庭裁判所は、父又は母の請求によって、協議に代わる審判をすることができる。」とされている。今の819条6項は子も家庭裁判所に親権者の変更を請求できるとしているが、変更するのは家庭裁判所であり、子の年齢によって子自身が親権者を定めるとする規定はない。したがって、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "819",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "父母が協議上の離婚をするときは、その協議で、その双方又は一方を親権者と定める。",
+     "text_sha256": "c64e308686bb7b205715f4ba1f7b5628cd9b5c6379cdcdb7b43b58ad73ab22b2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "819",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "家庭裁判所は、父又は母の請求によって、協議に代わる審判をすることができる。",
+     "text_sha256": "c64e308686bb7b205715f4ba1f7b5628cd9b5c6379cdcdb7b43b58ad73ab22b2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "819",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "子の利益のため必要があると認めるときは、家庭裁判所は、子又はその親族の請求によって、親権者を変更することができる。",
+     "text_sha256": "c64e308686bb7b205715f4ba1f7b5628cd9b5c6379cdcdb7b43b58ad73ab22b2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "819条は出題後の改正で父母の双方を親権者と定めることができるようになり、子も変更を請求できるようになったが、協議上の離婚の際に親権者を定めるのは父母の協議であって子ではないという結論は同じ。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-minpo-q13-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

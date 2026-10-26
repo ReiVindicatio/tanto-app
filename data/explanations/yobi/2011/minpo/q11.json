@@ -1,0 +1,258 @@
+{
+ "question_id": "yobi-2011-minpo-q11",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q11-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は使用貸借について「第五百五十一条の規定は、使用貸借について準用する。」（596条）とし、551条1項は「贈与者は、贈与の目的である物又は権利を、贈与の目的として特定した時の状態で引き渡し、又は移転することを約したものと推定する。」と定める。肢の前提にしている、貸主が瑕疵を知っていたか・知らないことに過失があるかで担保責任の有無を分ける規律は今の条文になく、今の条文で説明すると出題の趣旨と別の理由になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "596",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第五百五十一条の規定は、使用貸借について準用する。",
+     "text_sha256": "80d4d23264e1ba5a2a8b1e98d498f5bde4d481c2309de6871f58a53fe6c9a380",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "551",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "贈与者は、贈与の目的である物又は権利を、贈与の目的として特定した時の状態で引き渡し、又は移転することを約したものと推定する。",
+     "text_sha256": "cee803ab76b1d93723d34c8d093cd279261a9128dc7d59f487e6ec374cafc018",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "債権法改正で贈与者・貸主の担保責任の定め方が引渡義務の推定に変わり、肢の「瑕疵」「担保責任」を前提にした知・不知と過失による区別が今の条文にないため、解説を書かずに law_changed とした。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-minpo-q11-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q11-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。借主は借用物の通常の必要費を負担する（595条1項）ので、切れた蛍光灯の交換の代金を貸主に請求することはできない。",
+   "body": "誤りは、Ｂが蛍光灯の代金をＡに請求できるとしている点である。595条1項は「借主は、借用物の通常の必要費を負担する。」と定めている。建物内の切れた蛍光灯を新しいものに交換する費用は、建物を使ううえで通常かかる費用であり、通常の必要費に当たると解されている。したがって、その費用はＢが負担し、Ａに請求することはできないので、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "595",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "借主は、借用物の通常の必要費を負担する。",
+     "text_sha256": "eaef23fd8eca0c1337f6cae60321dac50b16974c4a531b393289776a657c599d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "蛍光灯の交換費用が通常の必要費に当たることは解釈による",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-minpo-q11-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q11-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。使用貸借の借主が支出した有益費は196条2項に従って償還され（595条2項・583条2項）、支出した金額か増価額かは回復者である貸主が選ぶ。",
+   "body": "595条2項は「第五百八十三条第二項の規定は、前項の通常の必要費以外の費用について準用する。」と定め、583条2項は「買主又は転得者が不動産について費用を支出したときは、売主は、第百九十六条の規定に従い、その償還をしなければならない。」と定めている。そして196条2項は、有益費について「その価格の増加が現存する場合に限り、回復者の選択に従い、その支出した金額又は増価額を償還させることができる。」としている。したがって、どちらを償還するかを選ぶのは返還を受ける貸主Ａであり、Ｂが支出した金額を求めても、Ａは増価額を支払うことができる。肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "595",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第五百八十三条第二項の規定は、前項の通常の必要費以外の費用について準用する。",
+     "text_sha256": "eaef23fd8eca0c1337f6cae60321dac50b16974c4a531b393289776a657c599d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "583",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "買主又は転得者が不動産について費用を支出したときは、売主は、第百九十六条の規定に従い、その償還をしなければならない。",
+     "text_sha256": "2a5f725cb5fb8a667784b317514d2519ec573d0f7dc31f50ecf61532151c80de",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "196",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その価格の増加が現存する場合に限り、回復者の選択に従い、その支出した金額又は増価額を償還させることができる。",
+     "text_sha256": "4b66d092ab7d5c1951f6b67a0276ee3f29090be681da4c9e59226f7c91c1a38d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-minpo-q11-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q11-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。期間を定めず使用収益の目的を定めた使用貸借では、目的に従い使用収益をするのに足りる期間を経過すれば、貸主は契約を解除できる（598条1項）。現実に目的を果たしたかは問われない。",
+   "body": "597条2項は「当事者が使用貸借の期間を定めなかった場合において、使用及び収益の目的を定めたときは、使用貸借は、借主がその目的に従い使用及び収益を終えることによって終了する。」と定め、598条1項は「貸主は、前条第二項に規定する場合において、同項の目的に従い借主が使用及び収益をするのに足りる期間を経過したときは、契約の解除をすることができる。」と定めている。肢の契約は返還の時期を定めず、Ｂが他の適当な建物に移るまでの住居として使う目的を定めたものなので、597条2項の場合に当たる。判例も、住居に窮した借主が適当な家屋を見付けるまでの間一時的に住居として使うことを目的とした建物の使用貸借について、契約から6年余りを経てされた解約告知は、現実に適当な家屋が見付かったか否かに関係なく有効であるとしている。したがって、Ｂが現実に適当な建物を見つけられなくても、それに必要な期間を経過すればＡは契約を終わらせることができ、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "597",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当事者が使用貸借の期間を定めなかった場合において、使用及び収益の目的を定めたときは、使用貸借は、借主がその目的に従い使用及び収益を終えることによって終了する。",
+     "text_sha256": "eb103fe512c138a917c45917629b2f48bb91c05b701a6a0baf40d915783a4872",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "598",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "貸主は、前条第二項に規定する場合において、同項の目的に従い借主が使用及び収益をするのに足りる期間を経過したときは、契約の解除をすることができる。",
+     "text_sha256": "fe3338e9051116d3c6c110fbbdba7b70ae936006eea0090206d416a40fd8df0e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "一時的な住居とする建物使用貸借の解約告知",
+     "court": "最高裁判所第三小法廷",
+     "date": "1959-08-18",
+     "case_number": "昭和32(オ)765",
+     "holding": "所有家屋の焼失により住居に窮した借主が適当な家屋を見付けるまでの間一時的に住居として使用収益することを目的として結ばれた建物の使用貸借契約について、契約成立後六年余を経過した後になされた解約告知は、現実に適当な家屋が見付かったか否かに関係なく有効であるとした。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/74268/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "今の598条1項は「契約の解除」と定めており、肢や判例の「解約」と言葉が違う。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-minpo-q11-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q11-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。使用貸借が当事者の死亡で終了するのは借主が死亡したときであり（597条3項）、貸主Ａの死亡では終了しない。",
+   "body": "誤りは、貸主Ａの死亡で使用貸借が効力を失うとしている点である。597条3項は「使用貸借は、借主の死亡によって終了する。」と定めており、終了事由として挙げているのは借主の死亡だけで、貸主の死亡は挙げていない。貸主が死亡したときは、896条の「相続人は、相続開始の時から、被相続人の財産に属した一切の権利義務を承継する。」により、貸主の地位は相続人に引き継がれると解されている。したがって、Ａの死亡によって使用貸借が効力を失うことはなく、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "597",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "使用貸借は、借主の死亡によって終了する。",
+     "text_sha256": "eb103fe512c138a917c45917629b2f48bb91c05b701a6a0baf40d915783a4872",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "896",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続人は、相続開始の時から、被相続人の財産に属した一切の権利義務を承継する。",
+     "text_sha256": "26569775cea382b249232c76910772008f279f0ab8c399f2d8a8d991820a167f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "貸主の地位が相続されることは解釈による",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-minpo-q11-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

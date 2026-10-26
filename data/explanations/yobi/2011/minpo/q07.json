@@ -1,0 +1,242 @@
+{
+ "question_id": "yobi-2011-minpo-q07",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q07-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の424条3項は「債権者は、その債権が第一項に規定する行為の前の原因に基づいて生じたものである場合に限り」詐害行為取消請求ができると定め、債権の成立の時ではなく、債権の発生の原因が行為の前にあるかで区切る。肢の前提の「債権成立前」の譲渡かどうかで決まる規律とは要件が違う。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "債権者は、その債権が第一項に規定する行為の前の原因に基づいて生じたものである場合に限り",
+     "text_sha256": "22d988d8231e843109818b8d2f93e8f2bb2ba972e98650a949757943ef28191d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-minpo-q07-1",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q07-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、相続の放棄は詐害行為取消権行使の対象とならないとする。相続人が無資力でも、その債権者は相続放棄を取り消せない。",
+   "body": "424条2項は、詐害行為取消請求の規定は「財産権を目的としない行為については、適用しない。」と定める。最高裁昭和49年9月20日判決は、相続の放棄は詐害行為取消権行使の対象とならないとした。理由として、取消しの対象は積極的に債務者の財産を減少させる行為であることを要し、相続の放棄は消極的にその増加を妨げる行為にすぎないこと、また相続の放棄のような身分行為は他人の意思で強制すべきでなく、取り消しうるとすれば相続の承認を強制するのと同じ結果になることを挙げている。よって、相続人が無資力でも、その債権者は相続放棄について詐害行為取消権を行使できず、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "財産権を目的としない行為については、適用しない。",
+     "text_sha256": "22d988d8231e843109818b8d2f93e8f2bb2ba972e98650a949757943ef28191d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "相続の放棄と詐害行為取消権",
+     "court": "最高裁判所第二小法廷",
+     "date": "1974-09-20",
+     "case_number": "昭和47(オ)1194",
+     "holding": "相続の放棄は、民法424条の詐害行為取消権行使の対象とならない。取消しの対象は積極的に債務者の財産を減少させる行為であることを要し、相続の放棄は消極的にその増加を妨げる行為にすぎず、また身分行為は他人の意思で強制すべきでないことを理由とする。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54191/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。424条2項は出題後の改正で文言が変わった可能性がある。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-minpo-q07-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q07-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の424条の5は、債権者が「受益者に対して詐害行為取消請求をすることができる場合において」に限って転得者に対する詐害行為取消請求を認めており、受益者が善意で受益者に対する請求ができないとき（424条1項ただし書）は転得者に対しても請求できない。肢の前提（受益者が善意でも悪意の転得者には行使できるとする規律）と今の条文の要件が違う。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "受益者に対して詐害行為取消請求をすることができる場合において",
+     "text_sha256": "867f9bcf694896077ed49c5ce4992ac485c8c7a9f9ae05d8b86e14a19496af26",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その行為の時において債権者を害することを知らなかったときは、この限りでない。",
+     "text_sha256": "22d988d8231e843109818b8d2f93e8f2bb2ba972e98650a949757943ef28191d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2011-minpo-q07-3",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q07-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の424条の7は被告を受益者又は転得者と定める一方、2項で「債権者は、詐害行為取消請求に係る訴えを提起したときは、遅滞なく、債務者に対し、訴訟告知をしなければならない。」とし、425条で認容判決の効力が「債務者及びその全ての債権者」に及ぶとする。債務者を被告としない点は同じでも、債務者への訴訟告知と判決の効力の規律が加わっており、受益者・転得者を相手に「訴えを提起すれば足り」るとする出題の趣旨とは決め手の規律が違う。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_7",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権者は、詐害行為取消請求に係る訴えを提起したときは、遅滞なく、債務者に対し、訴訟告知をしなければならない。",
+     "text_sha256": "d2c8f7dd0b10714b9615fa2e4c3e90314c9ae3e5e366b765d756474a75d74594",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "425",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者及びその全ての債権者",
+     "text_sha256": "16eab9017a23dd7d4678c14fc78774f5cb544396292eb0b3014418ac53d19045",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "改正前の内容は条文の本文で確認していない",
+    "迷ったため解説を出さない方に倒した（explain-v5 手順7）"
+   ],
+   "id": "exp-yobi-2011-minpo-q07-4",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q07-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。不動産の譲渡を取り消す債権者は、直接自己への所有権移転登記を求めることはできない。債権者が自己への引渡しを求められるのは金銭・動産に限られる（424条の9）。",
+   "body": "424条の6第1項は、債権者は受益者に対する詐害行為取消請求において「その行為によって受益者に移転した財産の返還を請求することができる。」と定め、取り消された財産は債務者のもとに戻すのが原則である。債権者が自己への支払・引渡しを求められるのは、424条の9第1項により、返還の請求が「金銭の支払又は動産の引渡しを求めるものであるとき」に限られ、不動産は含まれない。判例（最高裁昭和53年10月5日判決）も、不動産の引渡請求権者が目的不動産についての債務者の処分行為を詐害行為として取り消す場合に、直接自己に対する所有権移転登記手続を請求することはできないとしている。よって肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その行為によって受益者に移転した財産の返還を請求することができる。",
+     "text_sha256": "1c10ed6a848af7a1bf9172b6277d41d5757f592dd4b6e8cf4d1b75b12ed53687",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424_9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "金銭の支払又は動産の引渡しを求めるものであるとき",
+     "text_sha256": "de7d81c7097ef1e527e9afa1f6a3155d590bca6424cfbbe960b4eb92d51e9dfa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "詐害行為取消しと取消債権者自身への所有権移転登記請求の可否",
+     "court": "最高裁判所第一小法廷",
+     "date": "1978-10-05",
+     "case_number": "昭和51(オ)1215",
+     "holding": "不動産の引渡請求権者は、目的不動産についてされた債務者の処分行為を詐害行為として取り消す場合に、直接自己に対する所有権移転登記手続を請求することはできない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53269/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。424条の6・424条の9が出題当時にあったかは条文の本文で確認していない（改正前の内容は条文の本文で確認していない）"
+   ],
+   "id": "exp-yobi-2011-minpo-q07-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

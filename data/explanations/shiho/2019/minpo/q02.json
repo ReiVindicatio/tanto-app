@@ -1,0 +1,324 @@
+{
+ "question_id": "shiho-2019-minpo-q02",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q02-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。土地の売却は保存行為でも性質を変えない範囲の利用・改良行為でもなく103条の権限を超えるので、不在者の財産の管理人は家庭裁判所の許可を得なければならない（28条）。",
+   "body": "28条は「管理人は、第百三条に規定する権限を超える行為を必要とするときは、家庭裁判所の許可を得て、その行為をすることができる。」と定めている。103条は「権限の定めのない代理人は、次に掲げる行為のみをする権限を有する。」として、「保存行為」と「代理の目的である物又は権利の性質を変えない範囲内において、その利用又は改良を目的とする行為」を挙げている。甲土地をＣに売却することは、Ａの所有権を失わせる処分行為であり、保存行為にも利用・改良行為にも当たらないと解されている。したがって、Ｂが売却するには家庭裁判所の許可が要り、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管理人は、第百三条に規定する権限を超える行為を必要とするときは、家庭裁判所の許可を得て、その行為をすることができる。",
+     "text_sha256": "336f497192b37d8d0477c1f0dc9f1f3cfa8413408466ee0c51e5de02c37e0a02",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "権限の定めのない代理人は、次に掲げる行為のみをする権限を有する。",
+     "text_sha256": "bb1d43f0bd61997f7529311c9a50c263f3839eaddc372fff4dcdfb435faf7465",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保存行為",
+     "text_sha256": "bb1d43f0bd61997f7529311c9a50c263f3839eaddc372fff4dcdfb435faf7465",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理の目的である物又は権利の性質を変えない範囲内において、その利用又は改良を目的とする行為",
+     "text_sha256": "bb1d43f0bd61997f7529311c9a50c263f3839eaddc372fff4dcdfb435faf7465",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "28条・103条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）",
+    "売却が103条の範囲を超える処分行為に当たるという点は解釈による"
+   ],
+   "id": "exp-shiho-2019-minpo-q02-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q02-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。発見された現金を本人名義の普通預金口座に預け入れることは、財産を保全し、その性質を変えない範囲で管理する行為として103条の権限内にあるので、家庭裁判所の許可は要らない（28条）。",
+   "body": "28条は「管理人は、第百三条に規定する権限を超える行為を必要とするときは、家庭裁判所の許可を得て、その行為をすることができる。」と定めており、103条の権限内の行為であれば許可は要らない。103条は「保存行為」と「代理の目的である物又は権利の性質を変えない範囲内において、その利用又は改良を目的とする行為」を挙げている。Ａの現金をＤ銀行のＡ名義普通預金口座に預け入れることは、財産の紛失などを防いで保全する行為であり、また、いつでも払い戻せる普通預金にするだけで財産の性質を変えない範囲の利用行為ともいえるので、103条の範囲内と解されている。したがって、家庭裁判所の許可は要らず、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管理人は、第百三条に規定する権限を超える行為を必要とするときは、家庭裁判所の許可を得て、その行為をすることができる。",
+     "text_sha256": "336f497192b37d8d0477c1f0dc9f1f3cfa8413408466ee0c51e5de02c37e0a02",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保存行為",
+     "text_sha256": "bb1d43f0bd61997f7529311c9a50c263f3839eaddc372fff4dcdfb435faf7465",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理の目的である物又は権利の性質を変えない範囲内において、その利用又は改良を目的とする行為",
+     "text_sha256": "bb1d43f0bd61997f7529311c9a50c263f3839eaddc372fff4dcdfb435faf7465",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "28条・103条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）",
+    "預金への預け入れが103条の範囲内に当たるという点は解釈による"
+   ],
+   "id": "exp-shiho-2019-minpo-q02-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q02-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。弁済期にある債務の弁済は、財産の現状を維持する保存行為として103条の権限内にあるので、家庭裁判所の許可は要らない（28条）。",
+   "body": "28条により家庭裁判所の許可が要るのは「第百三条に規定する権限を超える行為」であり、103条1号は「保存行為」を挙げている。既に弁済期にある債務を弁済することは、新たな負担を生じさせるものではなく、履行の遅れによる不利益を防いで財産の現状を維持する行為であるから、保存行為に当たると解されている。したがって、ＢがＡのためにＥに弁済するには家庭裁判所の許可は要らず、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百三条に規定する権限を超える行為",
+     "text_sha256": "336f497192b37d8d0477c1f0dc9f1f3cfa8413408466ee0c51e5de02c37e0a02",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保存行為",
+     "text_sha256": "bb1d43f0bd61997f7529311c9a50c263f3839eaddc372fff4dcdfb435faf7465",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "28条・103条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）",
+    "弁済期にある債務の弁済が保存行為に当たるという点は解釈による"
+   ],
+   "id": "exp-shiho-2019-minpo-q02-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q02-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。協議による遺産分割は、相続財産についてのＡの権利の帰属を確定させる処分的な行為で103条の権限を超えるので、家庭裁判所の許可が要る（28条）。",
+   "body": "誤りは、遺産分割協議に家庭裁判所の許可が要らないとしている点である。28条は「管理人は、第百三条に規定する権限を超える行為を必要とするときは、家庭裁判所の許可を得て、その行為をすることができる。」と定め、103条の権限は「保存行為」と「代理の目的である物又は権利の性質を変えない範囲内において、その利用又は改良を目的とする行為」に限られている。遺産分割協議は、共同相続人の間で遺産をだれがどのように取得するかを決め、Ａの相続分に当たる権利の内容を確定・変更する行為であり、保存行為にも性質を変えない利用・改良行為にも当たらないと解されている。したがって、ＢがＡを代理して遺産分割協議をするには家庭裁判所の許可が要り、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管理人は、第百三条に規定する権限を超える行為を必要とするときは、家庭裁判所の許可を得て、その行為をすることができる。",
+     "text_sha256": "336f497192b37d8d0477c1f0dc9f1f3cfa8413408466ee0c51e5de02c37e0a02",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保存行為",
+     "text_sha256": "bb1d43f0bd61997f7529311c9a50c263f3839eaddc372fff4dcdfb435faf7465",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理の目的である物又は権利の性質を変えない範囲内において、その利用又は改良を目的とする行為",
+     "text_sha256": "bb1d43f0bd61997f7529311c9a50c263f3839eaddc372fff4dcdfb435faf7465",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "28条・103条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）",
+    "遺産分割協議が103条の権限を超えるという点は解釈による"
+   ],
+   "id": "exp-shiho-2019-minpo-q02-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q02-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。贈与はＡの財産を無償で手放させる処分行為で103条の権限を超えるので、家庭裁判所の許可が要る（28条）。",
+   "body": "誤りは、Ｇへの結婚資金の贈与に家庭裁判所の許可が要らないとしている点である。549条は「贈与は、当事者の一方がある財産を無償で相手方に与える意思を表示し、相手方が受諾をすることによって、その効力を生ずる。」と定めており、贈与はＡの財産を対価なしに失わせる行為である。これは103条の「保存行為」にも「代理の目的である物又は権利の性質を変えない範囲内において、その利用又は改良を目的とする行為」にも当たらず、28条の「第百三条に規定する権限を超える行為」に当たると解されている。贈与の相手方がＡの子であることや、資金の使い道が結婚であることで、この点は変わらない。したがって、Ｂが贈与をするには家庭裁判所の許可が要り、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "549",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "贈与は、当事者の一方がある財産を無償で相手方に与える意思を表示し、相手方が受諾をすることによって、その効力を生ずる。",
+     "text_sha256": "8992575dc0fa5aff60252080d85e9e6812e56263db9b2e59c1a86fc3a3ae6692",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保存行為",
+     "text_sha256": "bb1d43f0bd61997f7529311c9a50c263f3839eaddc372fff4dcdfb435faf7465",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "103",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理の目的である物又は権利の性質を変えない範囲内において、その利用又は改良を目的とする行為",
+     "text_sha256": "bb1d43f0bd61997f7529311c9a50c263f3839eaddc372fff4dcdfb435faf7465",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "28",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百三条に規定する権限を超える行為",
+     "text_sha256": "336f497192b37d8d0477c1f0dc9f1f3cfa8413408466ee0c51e5de02c37e0a02",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "28条・103条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）",
+    "出題後に549条の本文が変わった（結論は同じ）。贈与が無償で財産を与える行為である点は変わらない",
+    "贈与が103条の権限を超えるという点は解釈による"
+   ],
+   "id": "exp-shiho-2019-minpo-q02-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

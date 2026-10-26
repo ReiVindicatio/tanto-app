@@ -1,0 +1,260 @@
+{
+ "question_id": "yobi-2011-minpo-q06",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q06-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。抵当権の実行で買受人Ｃが所有権を取得すれば、Ａは所有権を失い占有の権原もないので、ＣはＡに所有権に基づいて引渡しを請求できる。",
+   "body": "抵当権は「占有を移転しないで債務の担保に供した不動産」について優先弁済を受ける権利であり（369条1項）、設定者Ａは実行まで土地を占有している。抵当権が実行され、Ｃが買受人として所有権を取得すると（民事執行法79条は「買受人は、代金を納付した時に不動産を取得する。」と定める）、Ａはもはや所有者ではなく、土地を占有する権原を持たない。所有者は「その所有物の使用、収益及び処分をする権利」を有するので（206条）、Ｃは占有するＡに対し、所有権に基づいて土地の引渡しを請求できると解されている。よって肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "369",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有を移転しないで債務の担保に供した不動産",
+     "text_sha256": "d6b78d480b2f8cc38269bf4edd902590ef68b3386bc5d121e5b4b9ccdb6522e4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "79",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "買受人は、代金を納付した時に不動産を取得する。",
+     "text_sha256": "cf39b048b683d4017959a037febd2fbc8846f262f194799741faffe86cbb40cc",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "206",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その所有物の使用、収益及び処分をする権利",
+     "text_sha256": "ec0097a7df1c66b005345a32594577fcca0650be0647de0fb1aaa917003a9fea",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "所有権に基づく返還（引渡し）請求権は条文に明記がなく、解釈による"
+   ],
+   "id": "exp-yobi-2011-minpo-q06-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q06-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。抵当権設定登記の後に登記された賃借権は、抵当権者の同意の登記（387条）がない限り抵当権者・買受人に対抗できず、Ｄは引渡しを拒めない。",
+   "body": "不動産の賃貸借は登記すれば「その不動産について物権を取得した者その他の第三者に対抗することができる。」（605条）が、対抗の優劣は登記の先後で決まり、先に登記された抵当権には後れる。そのため抵当権設定登記の後に登記された賃借権は、抵当権の実行による買受人Ｃに対抗できないと解されている。例外として387条1項は、登記をした賃貸借は「その登記前に登記をした抵当権を有するすべての者が同意をし、かつ、その同意の登記があるときは、その同意をした抵当権者に対抗することができる。」と定めるが、肢にこの同意の登記はない。また、395条の引渡しの猶予は「抵当権の目的である建物」の使用者についての規定で、土地の賃借人Ｄには当たらない。よってＤは賃貸借契約を理由に引渡しを拒めず、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "605",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その不動産について物権を取得した者その他の第三者に対抗することができる。",
+     "text_sha256": "3207df7c55bcfef11acab299d03dd958e76f23a440d13531617ebe50e23672df",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "387",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その登記前に登記をした抵当権を有するすべての者が同意をし、かつ、その同意の登記があるときは、その同意をした抵当権者に対抗することができる。",
+     "text_sha256": "c4538812c112520b4f1ff021a041e899e31b6d1fb003ee1ff0bd2c581b394ef9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "395",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権の目的である建物",
+     "text_sha256": "19643bb142b35c6b81d2e0cf83e25d178174302361f136cae854f3e3ee6308fc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。605条は出題後の改正で文言が変わった可能性がある。改正前の内容は条文の本文で確認していない",
+    "抵当権に後れる賃借権が買受人に対抗できないことは解釈による"
+   ],
+   "id": "exp-yobi-2011-minpo-q06-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q06-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。抵当権は被担保債権の不履行の後に生じた抵当不動産の果実に及び（371条）、賃料債権は法定果実に当たる。",
+   "body": "371条は「抵当権は、その担保する債権について不履行があったときは、その後に生じた抵当不動産の果実に及ぶ。」と定める。土地の賃料は「物の使用の対価として受けるべき金銭」であり法定果実に当たる（88条2項）。よって、ＡがＥに対して有する賃料債権のうち被担保債権の不履行の後に生じたものには、抵当権の効力が及ぶ。肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "371",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権は、その担保する債権について不履行があったときは、その後に生じた抵当不動産の果実に及ぶ。",
+     "text_sha256": "5119fff32fdcc316206934d96ae0d191ccdeb8e014a7b84835a8961593c46954",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "88",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "物の使用の対価として受けるべき金銭",
+     "text_sha256": "d5ee4ec3a8619d9672dcc66b205c9e08397a9297782045c448ceaaa84b6aa33f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-yobi-2011-minpo-q06-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q06-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。抵当不動産の所有権を買い受けた第三者が、抵当権者の請求に応じて代価を弁済すれば、抵当権はその第三者のために消滅する（代価弁済・378条）。",
+   "body": "378条は「抵当不動産について所有権又は地上権を買い受けた第三者が、抵当権者の請求に応じてその抵当権者にその代価を弁済したときは、抵当権は、その第三者のために消滅する。」と定める。Ｆは抵当権の付いた土地の所有権をＡから買い受けた第三者であり、ＡＦ間で定めた代価をＢの請求に応じてＢに支払っている。よって抵当権はＦのために消滅し、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "378",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当不動産について所有権又は地上権を買い受けた第三者が、抵当権者の請求に応じてその抵当権者にその代価を弁済したときは、抵当権は、その第三者のために消滅する。",
+     "text_sha256": "455ddf22d7f68e8db774acfa048b502be191327b9c0f68a8d9ee6d29b28b0c76",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-yobi-2011-minpo-q06-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2011-minpo-q06-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。誤りは「土地及び建物の代価について」の部分。一括競売をしても、抵当権者の優先権は「土地の代価についてのみ」行使できる（389条1項ただし書）。",
+   "body": "389条1項は「抵当権の設定後に抵当地に建物が築造されたときは、抵当権者は、土地とともにその建物を競売することができる。」と定め、肢のＢは土地と建物を一括して競売できる。しかし同項ただし書は「その優先権は、土地の代価についてのみ行使することができる。」と定める。建物は抵当権の目的ではないので、建物の代価について優先権は行使できない。よって肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "389",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権の設定後に抵当地に建物が築造されたときは、抵当権者は、土地とともにその建物を競売することができる。",
+     "text_sha256": "1fe66f167c9281bcd20b936374cf3c4c6159d3ad4e0dfdd5900adb8c4ec85d01",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "389",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その優先権は、土地の代価についてのみ行使することができる。",
+     "text_sha256": "1fe66f167c9281bcd20b936374cf3c4c6159d3ad4e0dfdd5900adb8c4ec85d01",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-yobi-2011-minpo-q06-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
