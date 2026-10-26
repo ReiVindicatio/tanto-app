@@ -1,0 +1,276 @@
+{
+ "question_id": "shiho-2015-minpo-q28",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q28-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。生命を侵害した者は、711条により被害者の父母・配偶者・子に対しても固有の慰謝料を支払う義務を負うので、「相続人に対してのみ」とする点が誤り。",
+   "body": "711条は「他人の生命を侵害した者は、被害者の父母、配偶者及び子に対しては、その財産権が侵害されなかった場合においても、損害の賠償をしなければならない。」と定め、被害者の近親者に自己の権利としての慰謝料請求を認めている。父母・配偶者・子は、相続人であるかどうかにかかわらずこの請求ができる。他方、判例は、被害者自身の慰謝料請求権も、被害者が生前に請求の意思を表明しなくても相続の対象となるとしている。したがって、加害者が慰謝料を支払う相手は相続人に限られない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "711",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の生命を侵害した者は、被害者の父母、配偶者及び子に対しては、その財産権が侵害されなかった場合においても、損害の賠償をしなければならない。",
+     "text_sha256": "fc48d541cbd1c5feafddd0024a9cfa141f71b2242ee38863c1fb91e6fc9c1ae9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "慰謝料請求権の相続",
+     "court": "最高裁判所大法廷",
+     "date": "1967-11-01",
+     "case_number": "昭和38(オ)1408",
+     "holding": "不法行為による慰謝料請求権は、被害者が生前に請求の意思を表明しなくても、相続の対象となる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56279/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "父母が相続人でない場合の例は、相続の順位についての一般的な理解による（相続の条文は引用していない）",
+    "メインで修正：相続の順位の条文を引かずに書いた括弧書き（被害者に子がいるとき父母は相続人ではない）を本文から外した"
+   ],
+   "id": "exp-shiho-2015-minpo-q28-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q28-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、身体を害された被害者の近親者も、死亡にも比肩すべき精神上の苦痛を受けたときは自己の権利として慰謝料を請求できるとしている。",
+   "body": "711条は「他人の生命を侵害した者は」として、被害者が死亡した場合の近親者の慰謝料を定めている。しかし、判例は、不法行為により身体を害された者の母が、被害者が生命を害されたときにも比肩すべき精神上の苦痛を受けた場合には、自己の権利として慰謝料を請求できるとした（参照法条は709条・710条・711条）。709条は「他人の権利又は法律上保護される利益を侵害した者は、これによって生じた損害を賠償する責任を負う。」と定め、710条は「財産以外の損害に対しても、その賠償をしなければならない。」と定めている。したがって、被害者が死亡していなくても近親者が慰謝料を請求できる場合があり、「請求することができない」とする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "711",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の生命を侵害した者は",
+     "text_sha256": "fc48d541cbd1c5feafddd0024a9cfa141f71b2242ee38863c1fb91e6fc9c1ae9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "709",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の権利又は法律上保護される利益を侵害した者は、これによって生じた損害を賠償する責任を負う。",
+     "text_sha256": "8029deadb1259b68934cd034bed9cbaf1c223bbb9c091dfd88dcfb8c638e49ef",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "710",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "財産以外の損害に対しても、その賠償をしなければならない。",
+     "text_sha256": "9662ebd96b81f32dbe79b54238219dd84122d81903b15877a9f3526602ace95d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "身体を害された被害者の母の慰謝料請求",
+     "court": "最高裁判所第三小法廷",
+     "date": "1958-08-05",
+     "case_number": "昭和31(オ)215",
+     "holding": "不法行為により身体を害された者の母は、被害者が生命を害されたときにも比肩すべき精神上の苦痛を受けた場合、自己の権利として慰謝料を請求できる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52849/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2015-minpo-q28-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q28-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。715条1項の使用者責任は、被用者に賠償の資力がないことを要件としておらず、被用者に資力があっても使用者は責任を免れない。",
+   "body": "715条1項本文は「ある事業のために他人を使用する者は、被用者がその事業の執行について第三者に加えた損害を賠償する責任を負う。」と定める。責任を免れる場合として同項ただし書が挙げるのは、使用者が「被用者の選任及びその事業の監督について相当の注意をしたとき、又は相当の注意をしても損害が生ずべきであったとき」だけであり、被用者に資力があることは免責の事由に含まれていない。使用者責任は、被用者の賠償の資力がない場合に限って補充的に負う責任ではないと解されている。使用者が賠償したときは、715条3項のとおり「被用者に対する求償権の行使を妨げない」ことで調整される。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "715",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ある事業のために他人を使用する者は、被用者がその事業の執行について第三者に加えた損害を賠償する責任を負う。",
+     "text_sha256": "ee1bffc67a722815d32711a10969d4bd9e21ccbe43f120f08dd4fdc60932d2f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "715",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被用者の選任及びその事業の監督について相当の注意をしたとき、又は相当の注意をしても損害が生ずべきであったとき",
+     "text_sha256": "ee1bffc67a722815d32711a10969d4bd9e21ccbe43f120f08dd4fdc60932d2f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "715",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "被用者に対する求償権の行使を妨げない",
+     "text_sha256": "ee1bffc67a722815d32711a10969d4bd9e21ccbe43f120f08dd4fdc60932d2f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "使用者責任が補充的な責任ではないとする点は解釈による"
+   ],
+   "id": "exp-shiho-2015-minpo-q28-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q28-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。選任・監督について相当の注意をしたことは、715条1項ただし書の免責事由として使用者の側が主張・立証すべきもので、被害者が相当の注意をしなかったことを主張・立証する必要はない。",
+   "body": "715条1項は、本文で「ある事業のために他人を使用する者は、被用者がその事業の執行について第三者に加えた損害を賠償する責任を負う。」と定め、ただし書で「使用者が被用者の選任及びその事業の監督について相当の注意をしたとき、又は相当の注意をしても損害が生ずべきであったときは、この限りでない。」と定める。このように相当の注意をしたことは責任を免れる例外としてただし書に置かれているので、その主張・立証の責任は使用者が負うと解されている。被害者は、使用関係、事業の執行についてされたこと、被用者の不法行為などを主張・立証すれば足りる。被害者が使用者の注意義務違反まで主張・立証しなければならないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "715",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ある事業のために他人を使用する者は、被用者がその事業の執行について第三者に加えた損害を賠償する責任を負う。",
+     "text_sha256": "ee1bffc67a722815d32711a10969d4bd9e21ccbe43f120f08dd4fdc60932d2f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "715",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "使用者が被用者の選任及びその事業の監督について相当の注意をしたとき、又は相当の注意をしても損害が生ずべきであったときは、この限りでない。",
+     "text_sha256": "ee1bffc67a722815d32711a10969d4bd9e21ccbe43f120f08dd4fdc60932d2f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "主張・立証責任の分配は条文の構造からの解釈による"
+   ],
+   "id": "exp-shiho-2015-minpo-q28-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q28-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。713条ただし書により、故意又は過失によって一時的に責任弁識能力を欠く状態を招いた者は、その間に加えた損害について賠償責任を免れない。",
+   "body": "713条本文は「精神上の障害により自己の行為の責任を弁識する能力を欠く状態にある間に他人に損害を加えた者は、その賠償の責任を負わない。」と定める。しかし、同条ただし書は「故意又は過失によって一時的にその状態を招いたときは、この限りでない。」と定めている。肢は過失によって一時的に責任弁識能力を欠く状態を招いた場合なので、ただし書に当たり、本文の免責は受けず、賠償の責任を負う。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "713",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "精神上の障害により自己の行為の責任を弁識する能力を欠く状態にある間に他人に損害を加えた者は、その賠償の責任を負わない。",
+     "text_sha256": "374bd8fd9b9e9dcd291def843072a5d6c72bd6899f6086ce8407dabed794670c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "713",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "故意又は過失によって一時的にその状態を招いたときは、この限りでない。",
+     "text_sha256": "374bd8fd9b9e9dcd291def843072a5d6c72bd6899f6086ce8407dabed794670c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2015-minpo-q28-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

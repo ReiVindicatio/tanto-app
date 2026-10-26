@@ -1,0 +1,289 @@
+{
+ "question_id": "shiho-2015-minpo-q30",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q30-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法772条1項は、妻が婚姻中に懐胎した子に加えて「女が婚姻前に懐胎した子であって、婚姻が成立した後に生まれたものも、同様とする。」と定め、婚姻成立後200日以内に生まれた子も夫の子と推定される（同条2項）。肢は婚姻成立後200日以内に生まれた子が嫡出の推定を受けるかを問うもので、その前提の規律が今の条文と異なり、今の条文で説明すると出題の趣旨と別の結論になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "772",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "女が婚姻前に懐胎した子であって、婚姻が成立した後に生まれたものも、同様とする。",
+     "text_sha256": "99efe67baa1c7a7aa568fe69b0d7a59a22934f8013ef6a03333b52dcfe964d42",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "772",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "婚姻の成立の日から二百日以内に生まれた子は、婚姻前に懐胎したものと推定し",
+     "text_sha256": "99efe67baa1c7a7aa568fe69b0d7a59a22934f8013ef6a03333b52dcfe964d42",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に772条の本文が変わった（婚姻前に懐胎し婚姻成立後に生まれた子にも推定が及ぶようになった）。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2015-minpo-q30-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q30-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、父が嫡出でない子について嫡出子としての出生届をし、それが受理されたときは、その届は認知届としての効力を有するとしている。",
+   "body": "嫡出でない子は「その父又は母がこれを認知することができる。」（779条）とされ、認知は「戸籍法の定めるところにより届け出ることによってする。」（781条1項）。判例は、嫡出でない子につき、父から嫡出子とする出生届がされ、又は嫡出でない子としての出生届がされた場合に、その届が戸籍事務管掌者によって受理されたときは、その各届は認知届としての効力を有するとした。したがって、「認知の届出としての効力を有しない」とする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "779",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "嫡出でない子は、その父又は母がこれを認知することができる。",
+     "text_sha256": "9cade6c9bd53f52284bea8c656af49c72f5fc89abf4248b64531c8ebb0b4e396",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "781",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "認知は、戸籍法の定めるところにより届け出ることによってする。",
+     "text_sha256": "145e98c2b9afc73b2fac1982a2b1a43f6bb0995984a48983ad36890b81c4f55d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "父がした嫡出子出生届と認知の効力",
+     "court": "最高裁判所第二小法廷",
+     "date": "1978-02-24",
+     "case_number": "昭和51(オ)361",
+     "holding": "嫡出でない子につき、父から嫡出子とする出生届又は嫡出でない子としての出生届がされ、戸籍事務管掌者によって受理されたときは、その各届は認知届としての効力を有する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53273/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2015-minpo-q30-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q30-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。離婚後300日以内に生まれた子でも、夫婦の実態が失われていたなどで772条の嫡出の推定が及ばないときは、子は血縁上の父に対して認知の訴えを提起できる。",
+   "body": "772条2項は「婚姻の解消若しくは取消しの日から三百日以内に生まれた子は、婚姻中に懐胎したものと推定する。」と定め、同条1項により「妻が婚姻中に懐胎した子は、当該婚姻における夫の子と推定する。」。認知できるのは「嫡出でない子」（779条）なので、推定を受ける子は、そのままでは血縁上の父の認知を受けられない。しかし判例は、離婚による婚姻解消後300日以内に出生した子でも、母と夫が離婚の届出の約2年半前から事実上の離婚をして別居し、交渉を絶って夫婦の実態が失われていた場合には、772条による嫡出の推定を受けないとした（認知請求の事件）。このように推定が及ばない子は、787条により「子、その直系卑属又はこれらの者の法定代理人は、認知の訴えを提起することができる。」とされるとおり、血縁上の父に対して認知の訴えを提起できると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "772",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "婚姻の解消若しくは取消しの日から三百日以内に生まれた子は、婚姻中に懐胎したものと推定する。",
+     "text_sha256": "99efe67baa1c7a7aa568fe69b0d7a59a22934f8013ef6a03333b52dcfe964d42",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "772",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "妻が婚姻中に懐胎した子は、当該婚姻における夫の子と推定する。",
+     "text_sha256": "99efe67baa1c7a7aa568fe69b0d7a59a22934f8013ef6a03333b52dcfe964d42",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "779",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "嫡出でない子",
+     "text_sha256": "9cade6c9bd53f52284bea8c656af49c72f5fc89abf4248b64531c8ebb0b4e396",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "787",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子、その直系卑属又はこれらの者の法定代理人は、認知の訴えを提起することができる。",
+     "text_sha256": "88ec7c2497f45693b8be10f61194b0e12d210870b2432b59b8201b527c862e8b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "事実上の離婚と嫡出の推定（推定の及ばない子）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1969-05-29",
+     "case_number": "昭和43(オ)1184",
+     "holding": "離婚による婚姻解消後300日以内に出生した子でも、母と夫が離婚届出の約2年半前から事実上の離婚をして別居し、交渉を絶って夫婦の実態が失われていた場合には、772条による嫡出の推定を受けない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54117/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に772条の本文が変わった（離婚後300日以内に生まれた子を婚姻中に懐胎したものと推定する点と、推定の及ばない子についての判例の考え方による結論は同じ）。改正前の内容は条文の本文で確認していない",
+    "推定の及ばない子が血縁上の父に認知の訴えを提起できるとする点は、判例の考え方を当てはめた解釈による（判例は事件名が認知請求であることと裁判要旨で確かめた）"
+   ],
+   "id": "exp-shiho-2015-minpo-q30-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q30-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、他人の卵子を用いた生殖補助医療により子を懐胎・出産した場合でも、出生した子の母はその子を懐胎し出産した女性であるとしている。",
+   "body": "民法には実親子関係のうち母子関係の成立を直接定める規定がなく、判例は、女性が自己以外の女性の卵子を用いた生殖補助医療により子を懐胎し出産した場合においても、出生した子の母はその子を懐胎し出産した女性であり、懐胎・出産していない女性との間には、その女性が卵子を提供していたとしても母子関係の成立は認められないとした（参照法条に772条1項）。肢はこの判例のとおりなので正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "772",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "妻が婚姻中に懐胎した子は、当該婚姻における夫の子と推定する。",
+     "text_sha256": "99efe67baa1c7a7aa568fe69b0d7a59a22934f8013ef6a03333b52dcfe964d42",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "他人の卵子を用いた生殖補助医療により出生した子の母",
+     "court": "最高裁判所第二小法廷",
+     "date": "2007-03-23",
+     "case_number": "平成18(許)47",
+     "holding": "女性が自己以外の女性の卵子を用いた生殖補助医療により子を懐胎し出産した場合においても、出生した子の母は、その子を懐胎し出産した女性であり、懐胎・出産していない女性との間には、卵子を提供していたとしても母子関係の成立は認められない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/34390/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "民法に母子関係の成立を直接定める規定がないとする点は解釈による",
+    "出題後の生殖補助医療に関する特別の法律（生殖補助医療の提供等及びこれにより出生した子の親子関係に関する民法の特例に関する法律）は egov.py の LAWS になく、本文を確認していない。判例だけで説明した"
+   ],
+   "id": "exp-shiho-2015-minpo-q30-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q30-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、保存された男性の精子を用いてその死亡後に行われた人工生殖により出生した子とその男性との間に、法律上の親子関係の形成は認められないとしている。",
+   "body": "認知の訴えについて、787条は「子、その直系卑属又はこれらの者の法定代理人は、認知の訴えを提起することができる。」と定める。死後に懐胎された子が、精子を提供した死亡した男性について認知を求めた事件で、判例は、保存された男性の精子を用いて当該男性の死亡後に行われた人工生殖により女性が懐胎し出産した子と当該男性との間に、法律上の親子関係の形成は認められないとした（参照法条は787条）。肢はこの判例のとおりなので正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "787",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子、その直系卑属又はこれらの者の法定代理人は、認知の訴えを提起することができる。",
+     "text_sha256": "88ec7c2497f45693b8be10f61194b0e12d210870b2432b59b8201b527c862e8b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "死後懐胎子と死後認知",
+     "court": "最高裁判所第二小法廷",
+     "date": "2006-09-04",
+     "case_number": "平成16(受)1748",
+     "holding": "保存された男性の精子を用いて当該男性の死亡後に行われた人工生殖により女性が懐胎し出産した子と当該男性との間に、法律上の親子関係の形成は認められない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/33488/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2015-minpo-q30-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

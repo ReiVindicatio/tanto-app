@@ -1,0 +1,219 @@
+{
+ "question_id": "shiho-2015-minpo-q34",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q34-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は、遺留分権利者の権利を受遺者又は受贈者に対し「遺留分侵害額に相当する金銭の支払を請求することができる」権利として定めており（1046条1項）、肢の前提の遺留分減殺請求権の規定はない。肢は減殺請求権が債権者代位（423条1項ただし書の「債務者の一身に専属する権利」に当たるか）の目的となるかを問うもので、権利の性質と効果が変わった今の条文では同じ前提で説明できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1046",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺留分侵害額に相当する金銭の支払を請求することができる",
+     "text_sha256": "bee2c013e82d287e432164aa7b6d4effbfc5b76b5317ea4e059ab4b01e52359d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者の一身に専属する権利",
+     "text_sha256": "bd8ef03d0c0f16adfbbafda7db96a6bd402b3335529029bed09a72be6c3b987a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2015-minpo-q34-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q34-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法では、遺留分権利者は受遺者又は受贈者に対し「遺留分侵害額に相当する金銭の支払を請求することができる」にとどまり（1046条1項）、減殺請求によって遺贈の目的である権利が遺留分権利者に帰属するという肢の前提の規律がない。そのため、帰属した権利が遺産分割の対象となるかという問い自体が今の条文では成り立たない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1046",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺留分侵害額に相当する金銭の支払を請求することができる",
+     "text_sha256": "bee2c013e82d287e432164aa7b6d4effbfc5b76b5317ea4e059ab4b01e52359d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2015-minpo-q34-b",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q34-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。遺留分を有するのは「兄弟姉妹以外の相続人」であり、遺贈の種類を問わず兄弟姉妹は遺留分を有しない（1042条1項）。",
+   "body": "1042条1項は「兄弟姉妹以外の相続人は、遺留分として」一定の額を受けると定めており、兄弟姉妹は遺留分権利者から除かれている。この定めは、侵害の原因が包括遺贈か特定遺贈か贈与かによって区別していない。したがって、包括遺贈の場合でも、相続人である兄弟姉妹は遺留分を有しないので、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1042",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "兄弟姉妹以外の相続人は、遺留分として",
+     "text_sha256": "60a0c73a4ab8f4404a81674073589c234b16454869dd86cbaa7b4109f01e7593",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "遺留分の条文は出題後に条番号・文言が変わった（兄弟姉妹が遺留分を有しない点で結論は同じ）。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2015-minpo-q34-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q34-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は、遺留分権利者の権利を「遺留分侵害額に相当する金銭の支払を請求することができる」権利（1046条1項）、「遺留分侵害額の請求権」（1048条）として定めており、肢の前提の遺留分減殺請求権の規定はない。行使の効果が変わっているので名前だけの変更とはいえず、減殺請求権の行使方法についての判例を前提とする肢を今の条文で説明すると出題の趣旨と別の理由になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1046",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺留分侵害額に相当する金銭の支払を請求することができる",
+     "text_sha256": "bee2c013e82d287e432164aa7b6d4effbfc5b76b5317ea4e059ab4b01e52359d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1048",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺留分侵害額の請求権",
+     "text_sha256": "ad39e747a85a72bf05c2909c9ac113b18eeadf6ab09d5b760007c411c422027f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2015-minpo-q34-d",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q34-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法では、遺留分権利者が請求できるのは受遺者又は受贈者に対する「遺留分侵害額に相当する金銭の支払」であり（1046条1項）、受遺者又は受贈者が「遺留分侵害額を負担する」（1047条1項）と定められている。贈与の目的物の譲受人に対して減殺請求をするかという肢の前提の規律は、今の条文にない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1046",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺留分侵害額に相当する金銭の支払",
+     "text_sha256": "bee2c013e82d287e432164aa7b6d4effbfc5b76b5317ea4e059ab4b01e52359d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1047",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺留分侵害額を負担する",
+     "text_sha256": "fa18eb8e021257095e72512e259c8727f317b4be2964b4c7e5c8299e54833ebf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2015-minpo-q34-e",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

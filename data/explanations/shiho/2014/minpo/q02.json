@@ -1,0 +1,45 @@
+{
+ "question_id": "shiho-2014-minpo-q02",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q02-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "肢は錯誤の効果を「無効」とする前提で、錯誤無効の主張と詐欺取消しの選択を問うているが、今の民法95条1項は錯誤による意思表示について「取り消すことができる」と定め、錯誤の効果は無効ではなく取消しになっている。肢の前提の効果（錯誤無効）が今の条文にないため、今の条文では出題の趣旨どおりに説明できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "95",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その錯誤が法律行為の目的及び取引上の社会通念に照らして重要なものであるときは、取り消すことができる。",
+     "text_sha256": "a574178ace21adfb3a580ccce7d7b1d82a142c6d5dec52af686791911776a4b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題は債権法改正（2020年4月施行）前。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-minpo-q02-d",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

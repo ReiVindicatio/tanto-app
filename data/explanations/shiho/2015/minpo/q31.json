@@ -1,0 +1,248 @@
+{
+ "question_id": "shiho-2015-minpo-q31",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q31-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。後見人は、正当な事由があるときに家庭裁判所の許可を得て辞任できる（844条）。",
+   "body": "844条は「後見人は、正当な事由があるときは、家庭裁判所の許可を得て、その任務を辞することができる。」と定めている。肢はこの条文のとおりであり、正しい。後見人は、正当な事由と家庭裁判所の許可の両方がそろって初めて辞任できるのであり、自由に辞めることはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "844",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "後見人は、正当な事由があるときは、家庭裁判所の許可を得て、その任務を辞することができる。",
+     "text_sha256": "b2269f56b5aec5867c3c3d7fd0153ceacb71c1f91dc6c3294c40defb5f5e3b9f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2015-minpo-q31-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q31-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。親権を行う者が管理権を有しない場合の未成年後見人は、財産に関する権限のみを有し、身上監護権は有しない（868条）。",
+   "body": "誤りは「身上監護権も有する」の部分である。838条1号により、親権を行う者が管理権を有しないときも後見が開始するが、この場合について868条は「親権を行う者が管理権を有しない場合には、未成年後見人は、財産に関する権限のみを有する。」と定めている。身上監護は引き続き親権を行う者が担うので、この未成年後見人は身上監護権を有しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "868",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "親権を行う者が管理権を有しない場合には、未成年後見人は、財産に関する権限のみを有する。",
+     "text_sha256": "18ee8718589546e10e611e1520538347004854dc554380bf797f72b8bdeb1724",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "838",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者に対して親権を行う者がないとき、又は親権を行う者が管理権を有しないとき。",
+     "text_sha256": "066385bb0bfe2d49f08519b302633f6be744832cd31c808cf797841681429f48",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2015-minpo-q31-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q31-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。親権者の変更は家庭裁判所が請求によって行うもので、父母の協議ではできない（819条6項）。",
+   "body": "誤りは「父母の協議により親権者を変更することができる」の部分である。819条1項は協議上の離婚のときに「その協議で、その双方又は一方を親権者と定める」とするが、いったん定めた親権者の変更については、6項が「子の利益のため必要があると認めるときは、家庭裁判所は、子又はその親族の請求によって、親権者を変更することができる。」と定めている。同条8項も「父母の協議により定められた親権者を変更する」場合を家庭裁判所の判断として定めている。したがって、協議で親権者を定めた場合でも、その変更は家庭裁判所によらなければならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "819",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その協議で、その双方又は一方を親権者と定める",
+     "text_sha256": "c64e308686bb7b205715f4ba1f7b5628cd9b5c6379cdcdb7b43b58ad73ab22b2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "819",
+     "paragraphs": [
+      "6"
+     ],
+     "quote": "子の利益のため必要があると認めるときは、家庭裁判所は、子又はその親族の請求によって、親権者を変更することができる。",
+     "text_sha256": "c64e308686bb7b205715f4ba1f7b5628cd9b5c6379cdcdb7b43b58ad73ab22b2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "819",
+     "paragraphs": [
+      "8"
+     ],
+     "quote": "父母の協議により定められた親権者を変更する",
+     "text_sha256": "c64e308686bb7b205715f4ba1f7b5628cd9b5c6379cdcdb7b43b58ad73ab22b2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に819条の本文が変わった（父母の双方を親権者と定める規定などが加わった）。親権者の変更は家庭裁判所によるという点で結論は同じ。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2015-minpo-q31-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q31-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。親権停止の審判で親権を行う者がいなくなれば、「未成年者に対して親権を行う者がないとき」に当たり後見が開始する（838条1号）。",
+   "body": "834条の2第1項は、家庭裁判所が父又は母について「親権停止の審判をすることができる」と定める。親権停止の審判によって未成年者に対して親権を行う者がいなくなれば、838条1号の「未成年者に対して親権を行う者がないとき」に当たる。838条は、この場合に後見が開始すると定めているので、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "834_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "親権停止の審判をすることができる",
+     "text_sha256": "0689e68393cf21af80728d681a4421ee1f17c8c7b55f252e26e4291bcc3f80eb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "838",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者に対して親権を行う者がないとき",
+     "text_sha256": "066385bb0bfe2d49f08519b302633f6be744832cd31c808cf797841681429f48",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2015-minpo-q31-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q31-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。養子の親権者は養親であり、実親と養親の共同親権に一般的に服するわけではない（818条3項）。",
+   "body": "誤りは「実親及び養親の共同親権に服する」の部分である。818条3項は「子が養子であるときは、次に掲げる者を親権者とする。」とし、1号で「養親」を掲げている。実親が親権者となるのは、2号の「子の父母であって、前号に掲げる養親の配偶者であるもの」に当たるときに限られる。したがって、普通養子が一般に実親及び養親の共同親権に服するとはいえない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "818",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "子が養子であるときは、次に掲げる者を親権者とする。",
+     "text_sha256": "4da65c3dc327782a0b1bfcf7e68ba4f9db8bec67337e94fc6bea7fd6c12e41dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "818",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "子の父母であって、前号に掲げる養親の配偶者であるもの",
+     "text_sha256": "4da65c3dc327782a0b1bfcf7e68ba4f9db8bec67337e94fc6bea7fd6c12e41dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に818条の本文が変わった（養子の親権者の定め方が条文で明示された）。養子は養親の親権に服し、実親と養親の共同親権に一般に服するのではないという点で結論は同じ。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2015-minpo-q31-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

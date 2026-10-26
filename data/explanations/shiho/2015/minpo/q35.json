@@ -1,0 +1,330 @@
+{
+ "question_id": "shiho-2015-minpo-q35",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q35-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。制限行為能力者の相手方が保佐人に対してその権限内の行為について1か月以上の期間を定めて催告し、保佐人が期間内に確答を発しないときは、追認したものとみなされる（20条2項・1項後段）。",
+   "body": "決め手は、保佐人に催告して確答がないときの効果が「追認」か「取消し」かです。不動産の売買は、13条1項3号の「不動産その他重要な財産に関する権利の得喪を目的とする行為をすること。」に当たり、保佐人の同意を要する行為で、同意なくしたものは「取り消すことができる。」（13条4項）とされ、保佐人は同意をすることができる者として取消し・追認ができます（120条1項、122条）。そして20条2項は、相手方が制限行為能力者が行為能力者とならない間に「その法定代理人、保佐人又は補助人に対し、その権限内の行為について前項に規定する催告をした場合において、これらの者が同項の期間内に確答を発しないときも、同項後段と同様とする。」と定め、20条1項後段は「その者がその期間内に確答を発しないときは、その行為を追認したものとみなす。」としています。したがって、保佐人が期間内に確答を発しなければ追認したものとみなされ、肢は正しい記述です。なお、被保佐人本人に対して保佐人の追認を得るよう催告した場合（20条4項）は、通知がなければ「取り消したものとみなす。」とされ、効果が逆になる点と区別します。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産その他重要な財産に関する権利の得喪を目的とする行為をすること。",
+     "text_sha256": "c8aa95cbe2fe90c33a5a7efa56fd4ff66cd3c8e78478b1efc6963b1ca101c458",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "13",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "取り消すことができる。",
+     "text_sha256": "c8aa95cbe2fe90c33a5a7efa56fd4ff66cd3c8e78478b1efc6963b1ca101c458",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "120",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "又はその代理人、承継人若しくは同意をすることができる者に限り、取り消すことができる。",
+     "text_sha256": "56eb3f1eb7eeec97bc2a6957269e75cf5da9252e385a9cd0ed96a521dfef7a6b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "122",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取り消すことができる行為は、第百二十条に規定する者が追認したときは、以後、取り消すことができない。",
+     "text_sha256": "205b2426b06c253ca931929147a0dc99e9ca848d71b669c4223996f4c8f501af",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "20",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その法定代理人、保佐人又は補助人に対し、その権限内の行為について前項に規定する催告をした場合において、これらの者が同項の期間内に確答を発しないときも、同項後段と同様とする。",
+     "text_sha256": "17820f6804d9e0c7a8dd660161ca60f6721ea4a868df39acb859edc8fc3266c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "20",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その者がその期間内に確答を発しないときは、その行為を追認したものとみなす。",
+     "text_sha256": "17820f6804d9e0c7a8dd660161ca60f6721ea4a868df39acb859edc8fc3266c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "20",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "取り消したものとみなす。",
+     "text_sha256": "17820f6804d9e0c7a8dd660161ca60f6721ea4a868df39acb859edc8fc3266c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2015-minpo-q35-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q35-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。無権代理の相手方の催告に本人が期間内に確答しないときは、追認を拒絶したものとみなされる（114条）のであって、追認したものとはみなされない。",
+   "body": "誤りのポイントは、確答がないときの効果を「追認したものとみなされる」としている点です。114条は、相手方は本人に対し「相当の期間を定めて、その期間内に追認をするかどうかを確答すべき旨の催告をすることができる。」としたうえで、「本人がその期間内に確答をしないときは、追認を拒絶したものとみなす。」と定めています。無権代理行為は、本人が追認しなければ本人に効力を生じないので（113条1項）、本人が黙っている場合は効力が生じない方向（追認拒絶）に確定させるものです。制限行為能力者の法定代理人等に催告した場合に追認とみなされる20条2項とは、効果が逆になります。したがって、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "114",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相当の期間を定めて、その期間内に追認をするかどうかを確答すべき旨の催告をすることができる。",
+     "text_sha256": "8d384ebf873421dee91a6385cb8496bf565de1e384f97acf94b58ce88de87bfb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "114",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "本人がその期間内に確答をしないときは、追認を拒絶したものとみなす。",
+     "text_sha256": "8d384ebf873421dee91a6385cb8496bf565de1e384f97acf94b58ce88de87bfb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理権を有しない者が他人の代理人としてした契約は、本人がその追認をしなければ、本人に対してその効力を生じない。",
+     "text_sha256": "94916a1f09225da541bb996a4a974034241260a7a0c7699fb637b91a90934aa5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "20",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "これらの者が同項の期間内に確答を発しないときも、同項後段と同様とする。",
+     "text_sha256": "17820f6804d9e0c7a8dd660161ca60f6721ea4a868df39acb859edc8fc3266c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2015-minpo-q35-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q35-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。債権者があらかじめ受領を拒んでいるときは、弁済の準備をしたことを通知して受領の催告をすれば弁済の提供となり（493条ただし書）、債務者はその時から債務不履行の責任を免れる（492条）。",
+   "body": "決め手は、受領拒絶の場合の口頭の提供で弁済の提供の効果が生じるかです。493条は、弁済の提供は現実にしなければならないとしつつ、ただし書で「債権者があらかじめその受領を拒み、又は債務の履行について債権者の行為を要するときは、弁済の準備をしたことを通知してその受領の催告をすれば足りる。」と定めています。そして492条は「債務者は、弁済の提供の時から、債務を履行しないことによって生ずべき責任を免れる。」と定めています。したがって、受領をあらかじめ拒んでいる債権者に対して、弁済の準備をしたことを通知して受領の催告をすれば、債務者は債務不履行責任を免れ、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "493",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者があらかじめその受領を拒み、又は債務の履行について債権者の行為を要するときは、弁済の準備をしたことを通知してその受領の催告をすれば足りる。",
+     "text_sha256": "7d648685cba1a7afaa23d6f8e5082aefada838a828ceff7d283bf09e13658b68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "492",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、弁済の提供の時から、債務を履行しないことによって生ずべき責任を免れる。",
+     "text_sha256": "2970969bf40f4c31c85509f6921d5d76f57e66b29130e8eb609e9a11a8981b21",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2015-minpo-q35-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q35-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。解除権の相手方は相当の期間を定めて解除をするかどうか確答するよう催告でき、期間内に解除の通知を受けないときは解除権は消滅する（547条）。",
+   "body": "決め手は、催告に対して解除の通知がないときに解除権が消滅するかです。547条は「解除権の行使について期間の定めがないときは、相手方は、解除権を有する者に対し、相当の期間を定めて、その期間内に解除をするかどうかを確答すべき旨の催告をすることができる。」とし、「その期間内に解除の通知を受けないときは、解除権は、消滅する。」と定めています。この規定は債務不履行に基づいて発生した解除権にも及びます。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "547",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "解除権の行使について期間の定めがないときは、相手方は、解除権を有する者に対し、相当の期間を定めて、その期間内に解除をするかどうかを確答すべき旨の催告をすることができる。",
+     "text_sha256": "d78cc3cd4f193258334ab76ebce1302d6bdbd50445160cde8e240904b28ff040",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "547",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その期間内に解除の通知を受けないときは、解除権は、消滅する。",
+     "text_sha256": "d78cc3cd4f193258334ab76ebce1302d6bdbd50445160cde8e240904b28ff040",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2015-minpo-q35-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q35-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。遺贈義務者の催告に受遺者が期間内に意思を表示しないときは、遺贈を承認したものとみなされる（987条）のであって、放棄したものとはみなされない。",
+   "body": "誤りのポイントは、意思表示がないときの効果を「放棄したものとみなされる」としている点です。987条は、遺贈義務者その他の利害関係人は、受遺者に対し「相当の期間を定めて、その期間内に遺贈の承認又は放棄をすべき旨の催告をすることができる。」としたうえで、「受遺者がその期間内に遺贈義務者に対してその意思を表示しないときは、遺贈を承認したものとみなす。」と定めています。したがって、期間内に意思表示がなければ遺贈は承認したものとみなされ、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "987",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相当の期間を定めて、その期間内に遺贈の承認又は放棄をすべき旨の催告をすることができる。",
+     "text_sha256": "7512215c208fd5b3d070af09630a7531bdcba7ff7bf9146764ed3abdf33cb890",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "987",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "受遺者がその期間内に遺贈義務者に対してその意思を表示しないときは、遺贈を承認したものとみなす。",
+     "text_sha256": "7512215c208fd5b3d070af09630a7531bdcba7ff7bf9146764ed3abdf33cb890",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2015-minpo-q35-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

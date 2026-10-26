@@ -1,0 +1,294 @@
+{
+ "question_id": "shiho-2014-minpo-q01",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q01-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は「年齢十八歳をもって、成年とする。」（4条）とし、婚姻も「婚姻は、十八歳にならなければ、することができない。」（731条）と定めるので、未成年者が婚姻をする場面そのものがない。未成年者の婚姻の同意についての737条は「削除」とされており、肢の前提の規定は今の条文にない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "年齢十八歳をもって、成年とする。",
+     "text_sha256": "1971671d4fa76e8fa449652a4020d78a9e1b3cb2d87b63dabb7c98e81429695b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "731",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "婚姻は、十八歳にならなければ、することができない。",
+     "text_sha256": "b3d0de9ccf5cf560a6894bf2c51b032e283542cfcf2575d23f487827015a4bfa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "737",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "削除",
+     "text_sha256": "e9653dc3edcbc072d033d200b3aa56539fde84e9b7cc80287fedc9f91cbe03ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "成年年齢・婚姻適齢の改正で、未成年者の婚姻の同意の規定が今の条文にない。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-minpo-q01-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q01-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。成年被後見人の法律行為を取り消すことができるとする9条は遺言には適用されない（962条）ので、成年後見人は成年被後見人の遺言を取り消すことができない。",
+   "body": "誤りのポイントは、成年被後見人の遺言を成年後見人が取り消せるとしている点です。9条本文は「成年被後見人の法律行為は、取り消すことができる。」と定めていますが、962条は「第五条、第九条、第十三条及び第十七条の規定は、遺言については、適用しない。」と定めています。遺言については、成年被後見人も「事理を弁識する能力を一時回復した時」に、医師二人以上の立会いのもとですることができるとされています（973条1項）。このように遺言には行為能力の制限による取消しの規定が及ばないので、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "成年被後見人の法律行為は、取り消すことができる。",
+     "text_sha256": "67a383e068a02c1e4aadf954b4d75d4e2514d25083fac514027e71a066d7e892",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "962",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第五条、第九条、第十三条及び第十七条の規定は、遺言については、適用しない。",
+     "text_sha256": "be50e2ac6aa60c140b1e7359a6eda26916ff205a3e634f621d606160618b5a8f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "973",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "事理を弁識する能力を一時回復した時",
+     "text_sha256": "fd2cc88a169a18c51f3cbdcc144ee8a98ac89b7266bf8a1167d2d65f1476f7f7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-minpo-q01-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q01-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。保佐開始の審判（11条）には、補助開始の審判のような本人の同意の要件（15条2項）が定められておらず、本人の同意がなくてもすることができる。",
+   "body": "決め手は、本人の同意を要件とする規定が保佐開始の審判にあるかです。11条は、事理を弁識する能力が著しく不十分である者について「家庭裁判所は、本人、配偶者、四親等内の親族、後見人、後見監督人、補助人、補助監督人又は検察官の請求により、保佐開始の審判をすることができる。」と定め、本人の同意を求めていません。これに対し、補助開始の審判については15条2項が「本人以外の者の請求により補助開始の審判をするには、本人の同意がなければならない。」と定めています。保佐でも、保佐人に代理権を付与する審判には本人以外の者の請求の場合に本人の同意が要りますが（876条の4第2項）、これは保佐開始の審判そのものとは別の審判です。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "家庭裁判所は、本人、配偶者、四親等内の親族、後見人、後見監督人、補助人、補助監督人又は検察官の請求により、保佐開始の審判をすることができる。",
+     "text_sha256": "3b2fd05df9064c263fe64a69c394e521d618b1e5099cbae7c6f0adb2d07ccc15",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "15",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "本人以外の者の請求により補助開始の審判をするには、本人の同意がなければならない。",
+     "text_sha256": "166ecb63d41f118a41c7cdcf22d9baf379ba7df2e516089a815be64f282af236",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "876_4",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "本人以外の者の請求によって前項の審判をするには、本人の同意がなければならない。",
+     "text_sha256": "3bf9541bd4e279e2b258e9ffce5dab42da1812d267fc885730624cf85b88e214",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-minpo-q01-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q01-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。保佐人が被保佐人の利益を害するおそれがないのに同意しないときは、家庭裁判所は被保佐人の請求により同意に代わる許可を与えることができる（13条3項）。",
+   "body": "決め手は、13条3項の同意に代わる許可の規定です。13条3項は「保佐人の同意を得なければならない行為について、保佐人が被保佐人の利益を害するおそれがないにもかかわらず同意をしないときは、家庭裁判所は、被保佐人の請求により、保佐人の同意に代わる許可を与えることができる。」と定めています。肢はこの規定をそのまま述べています。なお、同意もこれに代わる許可も得ないでした行為は取り消すことができます（13条4項）。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "13",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "保佐人の同意を得なければならない行為について、保佐人が被保佐人の利益を害するおそれがないにもかかわらず同意をしないときは、家庭裁判所は、被保佐人の請求により、保佐人の同意に代わる許可を与えることができる。",
+     "text_sha256": "c8aa95cbe2fe90c33a5a7efa56fd4ff66cd3c8e78478b1efc6963b1ca101c458",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "13",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "保佐人の同意を得なければならない行為であって、その同意又はこれに代わる許可を得ないでしたものは、取り消すことができる。",
+     "text_sha256": "c8aa95cbe2fe90c33a5a7efa56fd4ff66cd3c8e78478b1efc6963b1ca101c458",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-minpo-q01-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q01-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。本人以外の者の請求により補助開始の審判をするには、本人の同意がなければならない（15条2項）。",
+   "body": "決め手は、15条2項の本人の同意の要件です。15条2項は「本人以外の者の請求により補助開始の審判をするには、本人の同意がなければならない。」と定めています。補助は、事理を弁識する能力が「不十分である者」（15条1項）を対象とする比較的軽い類型であり、本人の意思を尊重するためにこの要件が置かれていると解されています。保佐開始の審判（11条）にはこのような要件がない点と区別します。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "15",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "本人以外の者の請求により補助開始の審判をするには、本人の同意がなければならない。",
+     "text_sha256": "166ecb63d41f118a41c7cdcf22d9baf379ba7df2e516089a815be64f282af236",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "15",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不十分である者",
+     "text_sha256": "166ecb63d41f118a41c7cdcf22d9baf379ba7df2e516089a815be64f282af236",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "11",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保佐開始の審判をすることができる。",
+     "text_sha256": "3b2fd05df9064c263fe64a69c394e521d618b1e5099cbae7c6f0adb2d07ccc15",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "同意の要件の趣旨（本人の意思の尊重）は解釈による。"
+   ],
+   "id": "exp-shiho-2014-minpo-q01-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

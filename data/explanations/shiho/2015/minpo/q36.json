@@ -1,0 +1,259 @@
+{
+ "question_id": "shiho-2015-minpo-q36",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q36-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。留置物の果実は、まず利息に充当し、なお残余があるときは元本に充当しなければならない（297条2項）ので、元本に充当できないとする点が誤り。",
+   "body": "誤りのポイントは、果実に剰余があっても「元本に充当することはできない」としている点です。297条1項は「留置権者は、留置物から生ずる果実を収取し、他の債権者に先立って、これを自己の債権の弁済に充当することができる。」と定めており、肢の前半はこのとおりです。しかし、297条2項は「前項の果実は、まず債権の利息に充当し、なお残余があるときは元本に充当しなければならない。」と定めています。したがって、利息に充当してなお剰余があれば元本に充当することになり、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "297",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "留置権者は、留置物から生ずる果実を収取し、他の債権者に先立って、これを自己の債権の弁済に充当することができる。",
+     "text_sha256": "1077eb9fea572505a65743a557d68b6e90f6ad1be6704e7fe3604e2e4c1f37f0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "297",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の果実は、まず債権の利息に充当し、なお残余があるときは元本に充当しなければならない。",
+     "text_sha256": "1077eb9fea572505a65743a557d68b6e90f6ad1be6704e7fe3604e2e4c1f37f0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2015-minpo-q36-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q36-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。利息の支払が1年分以上延滞し、催告をしても支払われないときは、債権者は利息を元本に組み入れることができる（405条）。",
+   "body": "決め手は、利息の元本組入れの要件（1年分以上の延滞と催告）です。405条は「利息の支払が一年分以上延滞した場合において、債権者が催告をしても、債務者がその利息を支払わないときは、債権者は、これを元本に組み入れることができる。」と定めています。肢はこの要件と効果をそのまま述べています。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "405",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "利息の支払が一年分以上延滞した場合において、債権者が催告をしても、債務者がその利息を支払わないときは、債権者は、これを元本に組み入れることができる。",
+     "text_sha256": "b37f9aba5a3ac98f038c4cd0e4423e3620475f2e72214b23996ed691f8708aa2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2015-minpo-q36-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q36-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。弁済後の法定利息を求償できるのは委託を受けた保証人であり（459条2項・442条2項）、委託を受けない保証人は、主たる債務者がその当時利益を受けた限度で求償できるにとどまる（462条1項・459条の2第1項）。",
+   "body": "誤りのポイントは、委託を受けない保証人にも弁済の日以後の法定利息の支払を認めている点です。委託を受けた保証人については、459条2項が「第四百四十二条第二項の規定は、前項の場合について準用する。」と定め、442条2項は求償が「弁済その他免責があった日以後の法定利息及び避けることができなかった費用その他の損害の賠償を包含する。」としています。これに対し、委託を受けない保証人について、462条1項は「第四百五十九条の二第一項の規定は、主たる債務者の委託を受けないで保証をした者が債務の消滅行為をした場合について準用する。」と定め、459条の2第1項は求償権の範囲を「主たる債務者がその当時利益を受けた限度において」としています。法定利息を含める442条2項の準用は、委託を受けない保証人には定められていません。したがって、主たる債務者は委託を受けない保証人に弁済の日以後の法定利息を支払う必要はなく、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "459",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第四百四十二条第二項の規定は、前項の場合について準用する。",
+     "text_sha256": "3867107bb4cf2104b9ccf7bf5724bf3606ffa00bc7367dd08108efb098d48635",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "442",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "弁済その他免責があった日以後の法定利息及び避けることができなかった費用その他の損害の賠償を包含する。",
+     "text_sha256": "b1d9a68defbdbd1f6b3baf69ed12f0a99dbe5c736e4062c94c47db90f1729a0f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "462",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四百五十九条の二第一項の規定は、主たる債務者の委託を受けないで保証をした者が債務の消滅行為をした場合について準用する。",
+     "text_sha256": "192d5e061f81ce258ba215679ee5dc72198edf01c3333eee0c7628ad196c63b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "459_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主たる債務者がその当時利益を受けた限度において",
+     "text_sha256": "8ae862a6756a9bd513e3086b4655988ce8f90950f666ed1969e39ba15e06776e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "保証人の求償権の規定（459条・459条の2・462条）は出題後の債権法改正で条文の構成が変わっている。今の条文でも、委託を受けない保証人の求償は「その当時利益を受けた限度」で、法定利息を含める442条2項の準用がない点で、肢が問う規律と結論は同じと判断した。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2015-minpo-q36-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q36-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。解除による原状回復で金銭を返還するときは、その受領の時から利息を付さなければならない（545条2項）。",
+   "body": "決め手は、解除で返還する金銭の利息がいつから付くかです。545条1項本文は、解除権が行使されたときは「各当事者は、その相手方を原状に復させる義務を負う。」と定め、2項は「前項本文の場合において、金銭を返還するときは、その受領の時から利息を付さなければならない。」と定めています。解除の原因が買主の債務不履行であっても、売主が受領した代金の一部を返還するときは、この規定によって受領の時からの利息を付すことになります。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "545",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各当事者は、その相手方を原状に復させる義務を負う。",
+     "text_sha256": "403613b135cfeb822522f37759878cd51de512f787c46c64bc9458e9b822f3b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "545",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項本文の場合において、金銭を返還するときは、その受領の時から利息を付さなければならない。",
+     "text_sha256": "403613b135cfeb822522f37759878cd51de512f787c46c64bc9458e9b822f3b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2015-minpo-q36-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q36-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。買主は引渡しの日から代金の利息を支払う義務を負うが、代金の支払に期限があるときは、その期限が到来するまでは利息を支払うことを要しない（575条2項）。",
+   "body": "決め手は、575条2項ただし書の、代金の支払に期限がある場合の扱いです。575条2項は「買主は、引渡しの日から、代金の利息を支払う義務を負う。」と定めたうえで、ただし書で「代金の支払について期限があるときは、その期限が到来するまでは、利息を支払うことを要しない。」としています。肢は、目的物の引渡しが先履行で、代金の支払に期限がある場合なので、引渡しを受けた後でも期限が到来するまでは利息を支払う必要がありません。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "575",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "買主は、引渡しの日から、代金の利息を支払う義務を負う。",
+     "text_sha256": "d3dc327ab380fecd5985aff54b244d290d79e939ed1df6a466bc03056ba8cd75",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "575",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "代金の支払について期限があるときは、その期限が到来するまでは、利息を支払うことを要しない。",
+     "text_sha256": "d3dc327ab380fecd5985aff54b244d290d79e939ed1df6a466bc03056ba8cd75",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2015-minpo-q36-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

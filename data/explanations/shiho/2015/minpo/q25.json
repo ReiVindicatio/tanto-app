@@ -1,0 +1,214 @@
+{
+ "question_id": "shiho-2015-minpo-q25",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q25-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。転貸借ではＢがＣに対する賃貸人であり、賃貸人は賃貸物の使用及び収益に必要な修繕をする義務を負う（606条1項）。",
+   "body": "決め手は、ＢＣ間の転貸借も賃貸借であり、Ｃとの関係ではＢが賃貸人の立場に立つ点である。606条1項本文は、「賃貸人は、賃貸物の使用及び収益に必要な修繕をする義務を負う」と定める。雨漏りによって甲建物の2階部分が使えなくなっているから、屋根の修繕は使用及び収益に必要な修繕に当たる。同項ただし書は「賃借人の責めに帰すべき事由によってその修繕が必要となったとき」を除いているが、本問の事実にそのような事情は示されていない。したがって、Ｃは転貸人であるＢに修繕を請求でき、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "606",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賃貸人は、賃貸物の使用及び収益に必要な修繕をする義務を負う",
+     "text_sha256": "955dc821f205a8186a8357481e6081f848ddc194d59735a4f23f6e5e35e577c5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "606",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賃借人の責めに帰すべき事由によってその修繕が必要となったとき",
+     "text_sha256": "955dc821f205a8186a8357481e6081f848ddc194d59735a4f23f6e5e35e577c5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない（606条1項ただし書が出題当時にあったかは確認していない）。"
+   ],
+   "id": "exp-shiho-2015-minpo-q25-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q25-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。613条1項は転借人が賃貸人に対して直接義務を負うことを定めるだけで、賃貸人が転借人に対して修繕義務などを直接負うとは定めていない。",
+   "body": "決め手は、ＡとＣの間には契約がなく、613条1項が定める直接の関係は転借人の義務の側だけである点である。同項は、「転借人は、賃貸人と賃借人との間の賃貸借に基づく賃借人の債務の範囲を限度として、賃貸人に対して転貸借に基づく債務を直接履行する義務を負う」と定める。これは転借人Ｃが賃貸人Ａに賃料などを直接支払う義務を負うことを定めたもので、逆に賃貸人Ａが転借人Ｃに対して修繕などの義務を負うとは定めていない。そのため、Ａの修繕義務はＢに対するものであって、Ｃは、Ｂが修繕を拒んだとしても、Ａに対して直接修繕を請求することはできないと解されている。したがって、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "613",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "転借人は、賃貸人と賃借人との間の賃貸借に基づく賃借人の債務の範囲を限度として、賃貸人に対して転貸借に基づく債務を直接履行する義務を負う",
+     "text_sha256": "afd590a253a8d79de76fa457c87cd3396ab5d3f00656d10d1a796d9c92d57281",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "解釈による（賃貸人が転借人に直接の義務を負わないことは条文に明記されておらず、613条1項の定め方からの一般的な理解として書いた）。",
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2015-minpo-q25-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q25-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法611条1項は、賃借物の一部が「滅失その他の事由により使用及び収益をすることができなくなった場合」に、賃借人の責めに帰することができない事由によるときは、賃料は「その使用及び収益をすることができなくなった部分の割合に応じて、減額される」と定め、賃料が当然に減る。肢は賃借人が賃料の一部の支払を拒絶できるかを問うており、決め手の611条は出題後に中身が変わった条であるため、今の条文で説明すると出題の趣旨と別の理由（当然の減額）になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "611",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "滅失その他の事由により使用及び収益をすることができなくなった場合",
+     "text_sha256": "1e447c3a510b7f9e58a402c17410fd91dbd4e4c03df385a9a58b9b1e083337b9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "611",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その使用及び収益をすることができなくなった部分の割合に応じて、減額される",
+     "text_sha256": "1e447c3a510b7f9e58a402c17410fd91dbd4e4c03df385a9a58b9b1e083337b9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2015-minpo-q25-c",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q25-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法では、転借人Ｃが賃貸人Ａに直接負う義務は613条1項により「賃借人の債務の範囲を限度として」の転貸借に基づく債務であり、ＡＢ間・ＢＣ間の賃料はいずれも611条1項により「その使用及び収益をすることができなくなった部分の割合に応じて、減額される」。肢の結論を決めるのは出題後に中身が変わった611条であり、今の条文で説明すると出題の趣旨と別の理由（当然の減額）になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "613",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賃借人の債務の範囲を限度として",
+     "text_sha256": "afd590a253a8d79de76fa457c87cd3396ab5d3f00656d10d1a796d9c92d57281",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "611",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その使用及び収益をすることができなくなった部分の割合に応じて、減額される",
+     "text_sha256": "1e447c3a510b7f9e58a402c17410fd91dbd4e4c03df385a9a58b9b1e083337b9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [],
+   "id": "exp-shiho-2015-minpo-q25-d",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q25-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法415条1項ただし書は、債務不履行が「契約その他の債務の発生原因及び取引上の社会通念に照らして債務者の責めに帰することができない事由によるもの」かどうかで損害賠償責任の有無を決める。肢の前提の判例（転借人の責めに帰すべき事由を賃借人の責任として扱う考え方）は改正前の帰責事由の枠組みによるもので、今の条文で説明すると出題の趣旨と別の理由になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "415",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "契約その他の債務の発生原因及び取引上の社会通念に照らして債務者の責めに帰することができない事由によるもの",
+     "text_sha256": "17591c49fffea4a95a4b10a3ff4b37bcd321771faa36b15176b72ce9b46cf6c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "肢の前提の判例は大審院のもの（データベースにない）と考えられ、確かめていない。"
+   ],
+   "id": "exp-shiho-2015-minpo-q25-e",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}
