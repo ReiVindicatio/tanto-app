@@ -156,3 +156,16 @@ test("科目の画面からも聞き流せる（その科目の肢だけ）", as
   await expect.poll(async () => (await played(page)).filter((x) => x.includes("/audio/tts/")).length).toBeGreaterThan(0);
   expect((await played(page)).filter((x) => x.includes("/audio/tts/")).every((x) => x.includes("-minpo-"))).toBe(true);
 });
+
+test("年度の行の🎧で、その年度の肢だけを聞き流す", async ({ page }) => {
+  await stub(page, { audioMissing: "none" });
+  await openHome(page);
+  await gotoSubject(page, "民法");
+  await page.getByRole("button", { name: /^司法/ }).click();
+  const set = page.locator(".set.year").filter({ has: page.locator(".set-title", { hasText: "H23" }) });
+  await set.getByRole("button", { name: "聞き流す" }).click();
+  await expect(page.locator(".toolbar")).toContainText("司法 H23 民法 聞き流し");
+  await page.getByRole("button", { name: "▶ 聞きはじめる" }).click();
+  await expect.poll(async () => (await played(page)).filter((x) => x.includes("/audio/tts/")).length).toBeGreaterThan(0);
+  expect((await played(page)).filter((x) => x.includes("/audio/tts/")).every((x) => x.includes("/shiho-2011-minpo-"))).toBe(true);
+});

@@ -117,7 +117,7 @@ export default function SubjectPage({
       </div>
 
       <h2>年度</h2>
-      <p className="muted small">肢で解く＝1肢ずつ○×で答える。問で解く＝本番と同じ形式で1問ずつ答えて採点する。</p>
+      <p className="muted small">肢で解く＝1肢ずつ○×で答える。問で解く＝本番と同じ形式で1問ずつ答えて採点する。🎧＝その年度の肢を聞き流す。</p>
       <div className="years">
         {examSets.map((s) => {
           const y = summarize((cardIds.get(s.id) ?? []).map((x) => x.id));
@@ -149,6 +149,15 @@ export default function SubjectPage({
                   </button>
                   <button className="secondary" onClick={() => startQuestions(s)}>
                     問で解く
+                  </button>
+                  {/* 聞き流し（T061）：この年度の肢から、ホームの聞き流しと同じ選び方で */}
+                  <button
+                    className="secondary"
+                    aria-label="聞き流す"
+                    disabled={s.statement_cards === 0}
+                    onClick={() => startListen([s], `${g.exams.length > 1 ? EXAM_SHORT[s.exam.type] + " " : ""}${s.exam.era} ${g.name} 聞き流し`)}
+                  >
+                    🎧
                   </button>
                 </div>
               </div>
