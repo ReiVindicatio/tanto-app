@@ -1,0 +1,273 @@
+{
+ "question_id": "yobi-2018-minpo-q11",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q11-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。所有者から明渡しを求められた賃借人は、それ以後、賃料の支払を拒むことができる（判例）。",
+   "body": "559条は売買の節の規定を「売買以外の有償契約について準用する」とし、576条は、売買の目的について権利を主張する者があることなどにより買主が権利を「失うおそれがあるときは、買主は、その危険の程度に応じて、代金の全部又は一部の支払を拒むことができる」と定める。判例は、土地又は建物の賃借人は、賃借物に対する権利に基づき自分に明渡しを請求できる第三者からその明渡しを求められた場合には、それ以後、賃料の支払を拒絶することができるとした。所有者の承諾のない他人物賃貸借で所有者から明渡しを求められた賃借人はこれに当たるので、それ以後、賃貸人に賃料の支払を拒める。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "559",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "売買以外の有償契約について準用する",
+     "text_sha256": "6c56107d8120407988ea7e701faa86b72acef76985acdaf20c35d63b5021cdaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "576",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "失うおそれがあるときは、買主は、その危険の程度に応じて、代金の全部又は一部の支払を拒むことができる",
+     "text_sha256": "bae40da51096cbca659bc0b64824ae5227d6557ce55b47151b6df19badf97e4b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "第三者から明渡しを求められた賃借人の賃料支払拒絶",
+     "court": "最高裁判所第二小法廷",
+     "date": "1975-04-25",
+     "case_number": "昭和49(オ)161",
+     "holding": "土地又は建物の賃借人は、賃借物に対する権利に基づき自己に対して明渡を請求することができる第三者からその明渡を求められた場合には、それ以後、賃料の支払を拒絶することができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52125/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。出題後に576条の本文が変わった（結論は同じ：権利を失うおそれがあるときの代金支払拒絶は出題時点の本文にもある）。559条は出題時点から本文が変わっていない。改正前の内容は条文の本文で確認していない（解説には引用していない）。"
+   ],
+   "id": "exp-yobi-2018-minpo-q11-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q11-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。賃借権に対抗力があっても、賃借権の譲渡・転貸には賃貸人の承諾が要る。",
+   "body": "誤りは「賃貸人の承諾を得ずに…譲渡し，又は…転貸することができる」の部分である。612条1項は「賃借人は、賃貸人の承諾を得なければ、その賃借権を譲り渡し、又は賃借物を転貸することができない」と定め、賃借権に対抗力があるかどうかで区別していない。対抗力は、賃借権を不動産について物権を取得した者などの第三者に主張できるかの問題であり（605条）、賃貸人との関係で譲渡・転貸に承諾が要るかとは別の問題である。承諾を得ずに第三者に使用・収益をさせたときは、同条2項により賃貸人は契約を解除できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "612",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賃借人は、賃貸人の承諾を得なければ、その賃借権を譲り渡し、又は賃借物を転貸することができない。",
+     "text_sha256": "61de741aa9b7bc44450830e5a1e3e9eebbb3da19a1f0bacee45b0a37dd5454c9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "612",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "賃借人が前項の規定に違反して第三者に賃借物の使用又は収益をさせたときは、賃貸人は、契約の解除をすることができる。",
+     "text_sha256": "61de741aa9b7bc44450830e5a1e3e9eebbb3da19a1f0bacee45b0a37dd5454c9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "605",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産の賃貸借は、これを登記したときは、その不動産について物権を取得した者その他の第三者に対抗することができる。",
+     "text_sha256": "3207df7c55bcfef11acab299d03dd958e76f23a440d13531617ebe50e23672df",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。612条は出題時点から本文が変わっていない。出題後に605条の本文が変わった（612条の結論には関わらない）。改正前の内容は条文の本文で確認していない（解説には引用していない）。"
+   ],
+   "id": "exp-yobi-2018-minpo-q11-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q11-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。対抗力のある賃借権が付いた不動産が譲渡されると、賃貸人たる地位は当然に新所有者に移り、賃借人への通知は要らない（賃借人に主張するには所有権移転の登記が要る）。",
+   "body": "誤りは「賃借人に対して承継の通知をしなければならない」の部分である。605条の2第1項は、賃貸借の対抗要件を備えた場合において、その不動産が譲渡されたときは「その不動産の賃貸人たる地位は、その譲受人に移転する」と定め、移転の要件に賃借人への通知を挙げていない。新所有者が賃貸人たる地位の移転を賃借人に主張するために要るのは、同条3項の「所有権の移転の登記」である。判例も、賃貸中の宅地を譲り受けた者は、所有権の移転につき登記を経由しない限り、賃貸人たる地位の取得を賃借人に対抗することができないとしており、求められるのは登記であって通知ではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "605_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その不動産の賃貸人たる地位は、その譲受人に移転する",
+     "text_sha256": "be6f1ec3a34a181cc9a39179bfa12a10278e40fe318160b79f65775aa269b1f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "605_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項又は前項後段の規定による賃貸人たる地位の移転は、賃貸物である不動産について所有権の移転の登記をしなければ、賃借人に対抗することができない。",
+     "text_sha256": "be6f1ec3a34a181cc9a39179bfa12a10278e40fe318160b79f65775aa269b1f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "賃貸中の宅地の譲受人が賃貸人たる地位を賃借人に対抗する要件",
+     "court": "最高裁判所第三小法廷",
+     "date": "1974-03-19",
+     "case_number": "昭和47(オ)1121",
+     "holding": "賃貸中の宅地を譲り受けた者は、その所有権の移転につき登記を経由しないかぎり、賃貸人たる地位の取得を賃借人に対抗することができない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52074/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。605条の2は出題時点になかった条（出題後に設けられた）。今の条文でも出題時点の判例（登記が要り、通知は要らない）でも結論は同じ。改正前の内容は条文の本文で確認していない（解説には引用していない）。"
+   ],
+   "id": "exp-yobi-2018-minpo-q11-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q11-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。賃借人の意思に反する保存行為で賃借の目的を達せなくなるときは、賃借人は解除できる（607条）。",
+   "body": "607条は「賃貸人が賃借人の意思に反して保存行為をしようとする場合において、そのために賃借人が賃借をした目的を達することができなくなるときは、賃借人は、契約の解除をすることができる」と定める。肢はこの条文のとおりである。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "607",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賃貸人が賃借人の意思に反して保存行為をしようとする場合において、そのために賃借人が賃借をした目的を達することができなくなるときは、賃借人は、契約の解除をすることができる。",
+     "text_sha256": "95580c81b74b6a13f59c18c3dea94dd3d053a37afa6b8791da3b0af22a91fd93",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。607条は出題時点から本文が変わっていない。"
+   ],
+   "id": "exp-yobi-2018-minpo-q11-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q11-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。借主の死亡で終了するのは使用貸借であり（597条3項）、賃貸借はどちらの当事者が死亡しても当然には終了せず、相続される。",
+   "body": "597条3項は「使用貸借は、借主の死亡によって終了する」と定めるが、賃貸借についてこれに当たる規定はなく、616条が賃貸借に準用するのも「第五百九十四条第一項の規定」だけで、597条3項は準用されていない。賃貸人や賃借人が死亡したときは、896条により相続人が「被相続人の財産に属した一切の権利義務を承継する」。賃貸人の地位や賃借権は被相続人の一身に専属するものではないと解されており、相続人に引き継がれる。したがって、賃貸借は当事者の死亡によって当然には終了しない。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "597",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "使用貸借は、借主の死亡によって終了する。",
+     "text_sha256": "eb103fe512c138a917c45917629b2f48bb91c05b701a6a0baf40d915783a4872",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "616",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第五百九十四条第一項の規定は、賃貸借について準用する。",
+     "text_sha256": "936c8395994b226ee7ce276599273fc0e7c2fca31d364b031952bd360913219b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "896",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続人は、相続開始の時から、被相続人の財産に属した一切の権利義務を承継する。",
+     "text_sha256": "26569775cea382b249232c76910772008f279f0ab8c399f2d8a8d991820a167f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。出題後に597条・616条の本文が変わった（結論は同じ：出題時点も借主の死亡による終了は使用貸借の規定で、賃貸借には準用されていない）。896条は出題時点から本文が変わっていない。改正前の内容は条文の本文で確認していない（解説には引用していない）。",
+    "賃貸人の地位・賃借権が一身専属でないとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2018-minpo-q11-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

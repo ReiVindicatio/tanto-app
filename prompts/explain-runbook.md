@@ -7,7 +7,7 @@
 
 | 止まった原因 | 決まり |
 |---|---|
-| サブエージェントが許可の要るコマンドを使い、承認待ちのまま約11時間止まった | サブエージェントは**専用の種類**（`explain-writer`・`case-rechecker`。`.claude/agents/`）で起動する。使える道具は Read・Write・Edit・Bash だけで、Bash で使ってよいコマンドは定義に書いてある。起動の文には問の一覧だけを書く |
+| サブエージェントが許可の要るコマンドを使い、承認待ちのまま約11時間止まった | サブエージェントは**専用の種類**（`explain-writer`・`case-rechecker`。`.claude/agents/`）で起動する。使える道具は Read・Write・Edit・Bash だけで、Bash で使ってよいコマンドは定義に書いてある。起動の文には問の一覧と、指示の版（「指示は prompts/explain-v5.md」）を書く |
 | 止まったサブエージェントに気づけなかった | 起こされるたびに `python3 pipeline/batch_status.py` を実行する。「⏰ 動きがない」と出たら、戻っていない1本を `TaskStop` で打ち切って後始末へ進む |
 | メインがヒアドキュメント・`&&`・その場で書く python・単独の `git push` を使い、承認待ちで止まった | メインが使うコマンドは、`python3 pipeline/explain_commit.py …`・`python3 pipeline/batch_status.py …`・`python3 pipeline/egov.py …`・`python3 pipeline/case_queue.py`・`python3 pipeline/explain_queue.py` の**単独のコマンドだけ**。git は `explain_commit.py` の中だけ |
 | サブエージェントを同時に起動したら判定が返らなかった | **1本ずつ起動する**（6回に分けて Agent を呼ぶ） |
@@ -42,7 +42,7 @@
 
 ## 参考：サブエージェントへの指示の全文（解説の生成）
 
-> ふだんは `.claude/agents/explain-writer.md` が同じ内容を持つので、起動の文には問の一覧だけを書く。これは定義が使えないときの控え。
+> ふだんは `.claude/agents/explain-writer.md` が同じ内容を持つので、起動の文には問の一覧と指示の版（「指示は prompts/explain-v5.md」）を書く（2026-10-26：セッションの途中で定義を変えると、そのセッションのサブエージェントは古い定義のまま動いた）。これは定義が使えないときの控え。
 
 ```
 あなたは司法試験・予備試験の短答の過去問の解説を書く。リポジトリは作業ディレクトリ（このリポジトリの一番上）。

@@ -1,0 +1,326 @@
+{
+ "question_id": "yobi-2018-minpo-q14",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q14-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。兄弟姉妹が相続人となる場合にも代襲相続の規定が準用されるので、兄Ｂの子ＣはＡの代襲相続人となりうる（889条2項・887条2項）。",
+   "body": "誤りは「代襲相続人となることはない」とした点である。889条1項2号は、子がいない場合などに「被相続人の兄弟姉妹」を相続人とし、同条2項は「第八百八十七条第二項の規定は、前項第二号の場合について準用する。」と定める。887条2項は、相続人となるべき者が「相続の開始以前に死亡したとき」などに「その者の子がこれを代襲して相続人となる」とする。したがって、Ａの兄Ｂが相続の開始以前に死亡した場合などには、Ｂの子ＣがＡの代襲相続人となるから、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "889",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "二　被相続人の兄弟姉妹",
+     "text_sha256": "ce3bf97346d38a785f02668e37d9ec52f4068bc9ba9034464cf1b0245d6f317c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "889",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第八百八十七条第二項の規定は、前項第二号の場合について準用する。",
+     "text_sha256": "ce3bf97346d38a785f02668e37d9ec52f4068bc9ba9034464cf1b0245d6f317c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "887",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "相続の開始以前に死亡したとき",
+     "text_sha256": "6eac3c2fc5ddf34f8bb4ef2112c6f22d510ce206b2b194c9870bf454b6e0eb12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "887",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その者の子がこれを代襲して相続人となる",
+     "text_sha256": "6eac3c2fc5ddf34f8bb4ef2112c6f22d510ce206b2b194c9870bf454b6e0eb12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。887条・889条は出題時点（2018-05-01）から本文が変わっていない"
+   ],
+   "id": "exp-yobi-2018-minpo-q14-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q14-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。祖父は直系尊属であり、子がなく親等の近い直系尊属（父母）もいないときは相続人となる（889条1項1号）。",
+   "body": "誤りは「相続人となることはない」とした点である。889条1項は、887条により相続人となるべき者（子など）がない場合に、1号「被相続人の直系尊属。ただし、親等の異なる者の間では、その近い者を先にする。」を相続人とする。祖父Ｂは直系尊属であるから、Ａに子（代襲者を含む）がなく、より親等の近い父母も相続人とならないときは、ＢがＡの相続人となる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "889",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一　被相続人の直系尊属。ただし、親等の異なる者の間では、その近い者を先にする。",
+     "text_sha256": "ce3bf97346d38a785f02668e37d9ec52f4068bc9ba9034464cf1b0245d6f317c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "887",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被相続人の子は、相続人となる。",
+     "text_sha256": "6eac3c2fc5ddf34f8bb4ef2112c6f22d510ce206b2b194c9870bf454b6e0eb12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。889条は出題時点（2018-05-01）から本文が変わっていない"
+   ],
+   "id": "exp-yobi-2018-minpo-q14-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q14-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。欠格は代襲原因であり、Ａの死亡前にＢの養子となったＣはＡの直系卑属となるので、ＣはＡの代襲相続人となる（887条2項・727条）。",
+   "body": "決め手は、欠格が代襲原因であることと、ＣがＡの「直系卑属」にあたることである。887条2項は、被相続人の子が「第八百九十一条の規定に該当し、若しくは廃除によって、その相続権を失ったとき」も「その者の子がこれを代襲して相続人となる」とし、ただし書で「被相続人の直系卑属でない者は、この限りでない。」とする。727条は「養子と養親及びその血族との間においては、養子縁組の日から、血族間におけるのと同一の親族関係を生ずる。」と定めるので、Ａの死亡前にＢの養子となったＣは、縁組の日からＡ（養親Ｂの血族）の孫にあたる直系卑属となる。887条2項は代襲者が欠格の時点ですでに子であったことを求めていないから、欠格の後に縁組をした子でも、相続開始時に直系卑属であれば代襲相続人となると解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "887",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第八百九十一条の規定に該当し、若しくは廃除によって、その相続権を失ったとき",
+     "text_sha256": "6eac3c2fc5ddf34f8bb4ef2112c6f22d510ce206b2b194c9870bf454b6e0eb12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "887",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その者の子がこれを代襲して相続人となる",
+     "text_sha256": "6eac3c2fc5ddf34f8bb4ef2112c6f22d510ce206b2b194c9870bf454b6e0eb12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "887",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "被相続人の直系卑属でない者は、この限りでない。",
+     "text_sha256": "6eac3c2fc5ddf34f8bb4ef2112c6f22d510ce206b2b194c9870bf454b6e0eb12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "727",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "養子と養親及びその血族との間においては、養子縁組の日から、血族間におけるのと同一の親族関係を生ずる。",
+     "text_sha256": "f9377bee83f40518ca0ba4eecce223625fac9f860012683452203ba71c3a36c5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "891",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる者は、相続人となることができない。",
+     "text_sha256": "e068e33e6343fc5b87f5eaf858616516a9c64d213f728c225e6ccca29315f1f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。887条・891条は出題時点（2018-05-01）から本文が変わっていない",
+    "解釈による：欠格の後に縁組をした子も代襲相続人となる点は、887条2項の文言からの解釈として書いた"
+   ],
+   "id": "exp-yobi-2018-minpo-q14-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q14-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。胎児は相続については既に生まれたものとみなされるので、出生した子ＣはＡの相続人となる（886条1項）。",
+   "body": "誤りは「Ａの相続人とならない」とした点である。886条1項は「胎児は、相続については、既に生まれたものとみなす。」と定め、同条2項は「前項の規定は、胎児が死体で生まれたときは、適用しない。」とする。Ａの死亡時に胎児であったＣは生きて生まれているから、相続についてはＡの死亡時に既に生まれていたものとみなされ、Ａの子として相続人となる（887条1項「被相続人の子は、相続人となる。」）。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "886",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "胎児は、相続については、既に生まれたものとみなす。",
+     "text_sha256": "352b45cb024974dcb1a56b431e32e53155bcc2be2b632e043f2b26e9085b5119",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "886",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、胎児が死体で生まれたときは、適用しない。",
+     "text_sha256": "352b45cb024974dcb1a56b431e32e53155bcc2be2b632e043f2b26e9085b5119",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "887",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被相続人の子は、相続人となる。",
+     "text_sha256": "6eac3c2fc5ddf34f8bb4ef2112c6f22d510ce206b2b194c9870bf454b6e0eb12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。886条・887条は出題時点（2018-05-01）から本文が変わっていない"
+   ],
+   "id": "exp-yobi-2018-minpo-q14-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q14-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。相続の放棄は代襲原因に含まれないので、放棄したＢの子ＣはＡの代襲相続人とならない（887条2項・939条）。",
+   "body": "決め手は、887条2項が代襲原因を相続開始以前の死亡、欠格（891条）、廃除に限っている点である。887条2項は、被相続人の子が「相続の開始以前に死亡したとき、又は第八百九十一条の規定に該当し、若しくは廃除によって、その相続権を失ったとき」に代襲を認めており、相続の放棄は挙げられていない。また939条は「相続の放棄をした者は、その相続に関しては、初めから相続人とならなかったものとみなす。」と定める。したがって、Ｂが相続の放棄をしても、Ｂの子ＣはＡの代襲相続人とならず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "887",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "相続の開始以前に死亡したとき、又は第八百九十一条の規定に該当し、若しくは廃除によって、その相続権を失ったとき",
+     "text_sha256": "6eac3c2fc5ddf34f8bb4ef2112c6f22d510ce206b2b194c9870bf454b6e0eb12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "891",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる者は、相続人となることができない。",
+     "text_sha256": "e068e33e6343fc5b87f5eaf858616516a9c64d213f728c225e6ccca29315f1f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "939",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続の放棄をした者は、その相続に関しては、初めから相続人とならなかったものとみなす。",
+     "text_sha256": "216f51496d3f22d25f4cbdffdc301b3ced35db37b4b4d6476eff92a0eca2e47f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。887条・939条は出題時点（2018-05-01）から本文が変わっていない"
+   ],
+   "id": "exp-yobi-2018-minpo-q14-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,207 @@
+{
+ "question_id": "yobi-2018-minpo-q13",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q13-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。父が成年被後見人であっても、認知に法定代理人（成年後見人）の同意は要らない（780条）。",
+   "body": "決め手は、認知に成年後見人の同意が要るかどうかである。780条は「認知をするには、父又は母が未成年者又は成年被後見人であるときであっても、その法定代理人の同意を要しない。」と定める。成年被後見人Ａの法定代理人は成年後見人であるから、ＡがＣを認知するのに成年後見人の同意は要らない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "780",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "認知をするには、父又は母が未成年者又は成年被後見人であるときであっても、その法定代理人の同意を要しない。",
+     "text_sha256": "f96c7d5cf3e3bef2b4050403465d1ea8285651d649dee1aefe2d9a4153849440",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。780条は出題時点（2018-05-01）から本文が変わっていない"
+   ],
+   "id": "exp-yobi-2018-minpo-q13-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q13-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。認知後の子の監護に必要な事項は、まず父母の協議で定め、家庭裁判所が定めるのは協議が調わないとき等に限られる（788条・766条）。",
+   "body": "誤りは「家庭裁判所がこれを定める」とした点である。788条は「第七百六十六条から第七百六十六条の三までの規定は、父が認知する場合について準用する。」と定める。準用される766条1項は、子の監護について必要な事項は「その協議で定める」とし、同条2項は「前項の協議が調わないとき、又は協議をすることができないときは、家庭裁判所が、同項の事項を定める。」とする。したがって、ＡがＣを認知した場合も、Ｃの監護について必要な事項はまずＡとＢの協議で定めるのであって、はじめから家庭裁判所が定めるわけではないから、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "788",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第七百六十六条から第七百六十六条の三までの規定は、父が認知する場合について準用する。",
+     "text_sha256": "1e3102b6b01507ce64c057990ee1459afa5edf0f3a8114640aaccc8dd0d222a1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "766",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その協議で定める",
+     "text_sha256": "37bd138969ab751026ca5ad59d17aa1fb14c337507bcc747555897f5cc731fb9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "766",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の協議が調わないとき、又は協議をすることができないときは、家庭裁判所が、同項の事項を定める。",
+     "text_sha256": "37bd138969ab751026ca5ad59d17aa1fb14c337507bcc747555897f5cc731fb9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に766条・788条の本文が変わった（結論は同じ：協議で定め、協議が調わないとき等に家庭裁判所が定める点は出題時点の本文でも同じ）"
+   ],
+   "id": "exp-yobi-2018-minpo-q13-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q13-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。父が死亡しても、その死亡の日から3年を経過するまでは、子は認知の訴えを提起できる（787条）。",
+   "body": "誤りは「認知の訴えを提起することができない」とした点である。787条は「子、その直系卑属又はこれらの者の法定代理人は、認知の訴えを提起することができる。ただし、父又は母の死亡の日から三年を経過したときは、この限りでない。」と定める。ただし書は父の死亡後3年を経過したときに訴えを封じるものであり、裏返せば、父Ａが死亡した後でも、死亡の日から3年を経過するまではＣは認知の訴えを提起できる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "787",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子、その直系卑属又はこれらの者の法定代理人は、認知の訴えを提起することができる。ただし、父又は母の死亡の日から三年を経過したときは、この限りでない。",
+     "text_sha256": "88ec7c2497f45693b8be10f61194b0e12d210870b2432b59b8201b527c862e8b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。787条は出題時点（2018-05-01）から本文が変わっていない"
+   ],
+   "id": "exp-yobi-2018-minpo-q13-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q13-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。父が認知した子は、その後の父母の婚姻によって嫡出子の身分を取得する（789条1項・婚姻準正）。",
+   "body": "誤りは「嫡出子の身分を取得することはない」とした点である。789条1項は「父が認知した子は、その父母の婚姻によって嫡出子の身分を取得する。」と定める。ＡがＣを認知した後にＡとＢが婚姻すれば、Ｃはこの規定により嫡出子の身分を取得する。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "789",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "父が認知した子は、その父母の婚姻によって嫡出子の身分を取得する。",
+     "text_sha256": "6f241206994d9b5e8101c713b0d1def7d6997bfe7151b46e9c8aa8826c3031e3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。789条は出題時点（2018-05-01）から本文が変わっていない"
+   ],
+   "id": "exp-yobi-2018-minpo-q13-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q13-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。死亡した子の認知に直系卑属の承諾が要るのは、その直系卑属が成年者であるときだけで、未成年の子Ｄの承諾は要らない（783条3項）。",
+   "body": "決め手は、承諾が要るのが「成年者」の直系卑属に限られる点である。783条3項は「父又は母は、死亡した子でも、その直系卑属があるときに限り、認知することができる。この場合において、その直系卑属が成年者であるときは、その承諾を得なければならない。」と定める。死亡したＣには直系卑属Ｄがいるので、ＡはＣを認知することができ、Ｄは未成年者であるからＤの承諾は要らない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "783",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "父又は母は、死亡した子でも、その直系卑属があるときに限り、認知することができる。この場合において、その直系卑属が成年者であるときは、その承諾を得なければならない。",
+     "text_sha256": "58480cd8fdc9daa6682f39b365ae116a49807a119529bdd6bd91a23bacea730b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に783条の本文が変わった（新しい項が加わり、死亡した子の認知の規定の項番号が変わった。死亡した子の認知の規定の文言は出題時点の本文と同じで、結論は同じ）"
+   ],
+   "id": "exp-yobi-2018-minpo-q13-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

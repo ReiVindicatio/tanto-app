@@ -1,0 +1,225 @@
+{
+ "question_id": "yobi-2018-minpo-q10",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q10-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は、587条の2第1項で「書面でする消費貸借は、当事者の一方が金銭その他の物を引き渡すことを約し、相手方がその受け取った物と種類、品質及び数量の同じ物をもって返還をすることを約することによって、その効力を生ずる」と定め、合意だけで成立する消費貸借に書面を求める規定を出題後に設けた。肢が問う「消費貸借の予約」に書面が要るかは、この規定との関係で決まることになり、出題時点の規律とは前提が異なる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "587_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "書面でする消費貸借は、当事者の一方が金銭その他の物を引き渡すことを約し、相手方がその受け取った物と種類、品質及び数量の同じ物をもって返還をすることを約することによって、その効力を生ずる",
+     "text_sha256": "5a0ea6ae149d823c70a121ec5d42cdd6f84a4111fefa76b5fe21084696a45fa1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "587条の2は出題時点（2018-05-01）にはなかった条（egov.py --asof で確認）。出題時点の589条は消費貸借の予約についての条だったが、今の589条は利息の条に変わっている。改正前の内容は条文の本文で確認していない（解説には引用していない）。"
+   ],
+   "id": "exp-yobi-2018-minpo-q10-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q10-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。貸主が借主の指示した第三者に金銭を交付した場合も、借主が金銭を受け取ったものとして消費貸借は効力を生ずると解されている。",
+   "body": "587条は、消費貸借は、借主が「相手方から金銭その他の物を受け取ることによって、その効力を生ずる」と定める。借主の指示に従って貸主が第三者に金銭を交付したときは、借主はその金銭を自分の指図どおりに使ったことになり、借主自身が受け取ったのと同じ経済的な利益を得ている。そのため、この場合も借主が金銭を受け取ったものとして消費貸借の効力が生ずると解されている（判例あり（要確認））。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "587",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方から金銭その他の物を受け取ることによって、その効力を生ずる",
+     "text_sha256": "0e46b5913fa56743adb085f9db6583607289a72004ae00853df8d13d17abc5fd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "pending_cases": [
+    {
+     "about": "貸主が借主の指示する第三者に金銭を交付した場合にも金銭消費貸借が成立するとした判例",
+     "searched": [
+      "courts.py search 消費貸借 第三者 交付",
+      "courts.py search 消費貸借 借主 指示 第三者 交付 成立 --to 昭和50",
+      "大審院の判例である可能性（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。587条は出題時点から本文が変わっていない。",
+    "第三者への交付で受け取りに当たるとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2018-minpo-q10-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q10-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。消費貸借では、特約がなければ貸主は利息を請求できない。利息が付かないのが原則である。",
+   "body": "誤りは「反対の意思の表示がない限り…利息を請求することができる」の部分である。589条1項は「貸主は、特約がなければ、借主に対して利息を請求することができない」と定めており、利息を請求するには利息を付ける特約が要る。肢は原則と例外を逆にしている。なお、404条1項の法定利率は「利息を生ずべき債権について別段の意思表示がないとき」の利率の定めであり、利息が生ずるかどうかを決める規定ではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "589",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "貸主は、特約がなければ、借主に対して利息を請求することができない。",
+     "text_sha256": "5d60796fb8fff7ad0e16ed6eb2b1c4fbeca03061faecef7daa9d4e1f2a986951",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "404",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "利息を生ずべき債権について別段の意思表示がないとき",
+     "text_sha256": "a965ab244f1899590e357ae4b69ae913cb61204d19b4a05890de73a42965addc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。出題後に589条・404条の本文が変わった（結論は同じ：消費貸借は特約がなければ利息を請求できない）。改正前の内容は条文の本文で確認していない（解説には引用していない）。"
+   ],
+   "id": "exp-yobi-2018-minpo-q10-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q10-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。利息の特約があるとき、借主は金銭を受け取った日から利息を支払う。受け取った日も含まれる。",
+   "body": "589条2項は、利息の特約があるときは「貸主は、借主が金銭その他の物を受け取った日以後の利息を請求することができる」と定める。「以後」なので、元本を受け取った当日の利息も含まれる。判例も、消費貸借の借主は、特約のない限り、契約成立の日から約定利息を支払う義務があるとしている。587条の消費貸借は金銭を受け取ることで効力を生ずるので、契約成立の日は元本を受け取った日と重なる。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "589",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の特約があるときは、貸主は、借主が金銭その他の物を受け取った日以後の利息を請求することができる。",
+     "text_sha256": "5d60796fb8fff7ad0e16ed6eb2b1c4fbeca03061faecef7daa9d4e1f2a986951",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "587",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "金銭その他の物を受け取ることによって、その効力を生ずる",
+     "text_sha256": "0e46b5913fa56743adb085f9db6583607289a72004ae00853df8d13d17abc5fd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "消費貸借の利息の発生時期",
+     "court": "最高裁判所第二小法廷",
+     "date": "1958-06-06",
+     "case_number": "昭和30(オ)911",
+     "holding": "消費貸借における借主は、特約のない限り、契約成立の日から約定利息を支払うべき義務がある。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52836/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。出題後に589条の本文が変わった（結論は同じ：受け取った日を含めて利息が生ずる）。587条は出題時点から本文が変わっていない。改正前の内容は条文の本文で確認していない（解説には引用していない）。",
+    "解釈による：判例の「契約成立の日」を、587条により元本を受け取った日と重ねたのは当てはめ（メインで追記）"
+   ],
+   "id": "exp-yobi-2018-minpo-q10-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q10-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。弁済の場所の定めがなければ、金銭の返還は債権者（貸主）の現在の住所でする持参債務となる。",
+   "body": "484条1項は「弁済をすべき場所について別段の意思表示がないときは、特定物の引渡しは債権発生の時にその物が存在した場所において、その他の弁済は債権者の現在の住所において、それぞれしなければならない」と定める。金銭の返還は特定物の引渡しではないので「その他の弁済」に当たり、債権者である貸主の「現在の住所」でしなければならない。したがって、借主は貸主の現在の住所に弁済金を持参して返還する。よって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "484",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁済をすべき場所について別段の意思表示がないときは、特定物の引渡しは債権発生の時にその物が存在した場所において、その他の弁済は債権者の現在の住所において、それぞれしなければならない。",
+     "text_sha256": "f5349d95a4743c7bd0cd6b3bf1eb4e70f8c43b7209930f3d3ced5ab11e6eb2bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。出題後に484条の本文が変わった（1項の文言は出題時点と同じで、結論は同じ）。"
+   ],
+   "id": "exp-yobi-2018-minpo-q10-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

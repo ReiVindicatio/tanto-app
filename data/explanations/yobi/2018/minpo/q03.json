@@ -1,0 +1,249 @@
+{
+ "question_id": "yobi-2018-minpo-q03",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q03-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。占有保持の訴えは、妨害の存する間だけでなく、妨害が消滅した後1年以内にも提起できる（201条1項）。",
+   "body": "誤りは「妨害の存する間のみ」とする点である。201条1項本文は「占有保持の訴えは、妨害の存する間又はその消滅した後一年以内に提起しなければならない。」と定める。占有保持の訴えでは妨害の停止のほか損害の賠償も請求できる（198条）ので、妨害が消滅した後も1年以内なら提起することができる。したがって、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "201",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有保持の訴えは、妨害の存する間又はその消滅した後一年以内に提起しなければならない。",
+     "text_sha256": "43aae1a12a0279f57ef6892c3f5f0c8b22b0b66e42379396c6c635302934e7b9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "198",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有者がその占有を妨害されたときは、占有保持の訴えにより、その妨害の停止及び損害の賠償を請求することができる。",
+     "text_sha256": "33990023edb7ddfa5d25d7db4e1f86c5e28a85571072a4659764e5893ec156d0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。201条は出題時点（2018-05-01）から本文は変わっていない。"
+   ],
+   "id": "exp-yobi-2018-minpo-q03-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q03-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。所有者と同居する未成年の子は、所有者の占有を補助する者（占有補助者）として建物を所持しているにすぎず、独立の占有権を有しないと解されている。",
+   "body": "180条は「占有権は、自己のためにする意思をもって物を所持することによって取得する。」と定める。所有者Ａと同居するＡの未成年の子Ｂは、甲建物に住んでいても、Ａの占有を補助する者（占有補助者）として所持しているにすぎず、自己のためにする独立の占有はなく、甲建物の占有者はＡであると解されている（判例あり（要確認））。したがって、Ｂは甲建物の占有権を有せず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "180",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有権は、自己のためにする意思をもって物を所持することによって取得する。",
+     "text_sha256": "36ba3b957032ffcbefaf5197c62b740f6b7132102fee0d7d0a035be580527b02",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "pending_cases": [
+    {
+     "about": "建物の所有者と同居する家族（子）は占有補助者にすぎず独立の占有を有しないとする判例",
+     "searched": [
+      "courts.py search 占有補助者",
+      "courts.py search 占有 同居 家族 --from 昭和22 --to 昭和50",
+      "courts.py search 占有 子 独立の占有"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。180条は出題時点（2018-05-01）から本文は変わっていない。",
+    "同居の子が占有補助者にすぎないという点は解釈による（判例は確かめられなかった）。"
+   ],
+   "id": "exp-yobi-2018-minpo-q03-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q03-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、解除条件付売買契約に基づいて開始された自主占有は、解除条件の成就により契約が失効しても、それだけでは他主占有に変わらないとしている。",
+   "body": "誤りは、解除条件の成就により自主占有でなくなるとする点である。127条2項は「解除条件付法律行為は、解除条件が成就した時からその効力を失う。」と定めるので、条件成就によって売買契約は効力を失う。しかし、最高裁昭和60年3月28日判決は、売買契約に基づいて開始される占有は解除条件が付されていても自主占有であり、その自主占有は、解除条件の成就により売買契約が失効しても、それだけでは他主占有に変わるものではないとした。したがって、Ａの占有は解除条件の成就だけでは自主占有でなくならず、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "127",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "解除条件付法律行為は、解除条件が成就した時からその効力を失う。",
+     "text_sha256": "312a17a815ec5a8f1e1f4ea30717be64478b62be1eb12d80c115a49388081d91",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "解除条件付売買に基づく自主占有と条件成就",
+     "court": "最高裁判所第一小法廷",
+     "date": "1985-03-28",
+     "case_number": "昭和56(オ)292",
+     "holding": "売買契約に基づいて開始される占有は、残代金不払いを解除条件とする場合でも自主占有であり、その自主占有は、解除条件の成就により売買契約が失効しても、それだけでは他主占有に変わるものではない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/62869/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。127条は出題時点（2018-05-01）から本文は変わっていない。",
+    "判例の事案の解除条件は残代金を約定期限までに支払わないことであり、本肢は条件の内容を特定していない。"
+   ],
+   "id": "exp-yobi-2018-minpo-q03-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q03-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、権利能力なき社団が法人格を取得し、その占有していた不動産を法人が引き継いで占有している場合にも187条1項の適用があるとしている。",
+   "body": "187条1項は「占有者の承継人は、その選択に従い、自己の占有のみを主張し、又は自己の占有に前の占有者の占有を併せて主張することができる。」と定める。最高裁平成元年12月22日判決は、この規定が、権利能力なき社団等の占有する不動産を、法人格を取得した以後その法人が引き継いで占有している場合にも適用されるとした。したがって、一般社団法人は、甲土地の取得時効を主張するに際して、権利能力なき社団として占有した期間を併せて主張することができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "187",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有者の承継人は、その選択に従い、自己の占有のみを主張し、又は自己の占有に前の占有者の占有を併せて主張することができる。",
+     "text_sha256": "06753206064c8da8c7f91e585a16cb19f76f24e9d65777388ebc5d5cf5823bae",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "権利能力なき社団が法人格を取得した場合と占有の承継（187条1項）",
+     "court": "最高裁判所第二小法廷",
+     "date": "1989-12-22",
+     "case_number": "平成1(オ)1382",
+     "holding": "民法187条1項は、権利能力なき社団等の占有する不動産を法人格を取得した以後当該法人が引き継いで占有している場合にも適用がある。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/62633/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。187条は出題時点（2018-05-01）から本文は変わっていない。"
+   ],
+   "id": "exp-yobi-2018-minpo-q03-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q03-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、占有の訴えに対して本権に基づく反訴を提起することができるとしている。",
+   "body": "誤りは、本権に基づく反訴を提起できないとする点である。202条2項は「占有の訴えについては、本権に関する理由に基づいて裁判をすることができない。」と定めるが、これは占有の訴えそのものを本権に関する理由で退けることを禁じるもので、同条1項も「占有の訴えは本権の訴えを妨げず、また、本権の訴えは占有の訴えを妨げない。」としている。最高裁昭和40年3月4日判決は、占有の訴えに対しては本権に基づく反訴を提起することができるとした。したがって、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "202",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "占有の訴えについては、本権に関する理由に基づいて裁判をすることができない。",
+     "text_sha256": "e5335b0ba1cf3007dea873a86b5920f110f1f7aa74d7982973b739666cc94e42",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "202",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有の訴えは本権の訴えを妨げず、また、本権の訴えは占有の訴えを妨げない。",
+     "text_sha256": "e5335b0ba1cf3007dea873a86b5920f110f1f7aa74d7982973b739666cc94e42",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "占有の訴えに対する本権に基づく反訴",
+     "court": "最高裁判所第一小法廷",
+     "date": "1965-03-04",
+     "case_number": "昭和38(オ)654",
+     "holding": "占有の訴えに対しては、本権に基づく反訴を提起することができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53131/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。202条は出題時点（2018-05-01）から本文は変わっていない。",
+    "202条2項が占有の訴えそのものを本権に関する理由で退けることを禁じる趣旨であるという説明は解釈による。"
+   ],
+   "id": "exp-yobi-2018-minpo-q03-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
