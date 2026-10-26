@@ -192,6 +192,66 @@
     "passed": true,
     "failures": []
    }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q15-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法969条は公正証書遺言の方式として証人の立会いと口授だけを掲げ、公正証書は「公証人法（明治四十一年法律第五十三号）の定めるところにより作成するものとする。」としていて、肢の「遺言者が署名することができない場合には，公証人がその事由を付記して，署名に代えることができる」という定めは民法の条文にない。公証人法40条5項も、列席者に「署名又はこれに代わる措置として法務省令で定めるもの」を求めるだけで、署名に代わる措置の中身は法務省令に委ねられており、今の条文の本文からは肢の内容を確かめられない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "969",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公正証書によって遺言をするには、次に掲げる方式に従わなければならない。",
+     "text_sha256": "c73a1d4e4b86de4d538b65805c854a5daa2f957827f71c4fc47caa29a3f625f4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "969",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の公正証書は、公証人法（明治四十一年法律第五十三号）の定めるところにより作成するものとする。",
+     "text_sha256": "c73a1d4e4b86de4d538b65805c854a5daa2f957827f71c4fc47caa29a3f625f4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "公証人法",
+     "article": "40",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "列席者は、第一項の承認をしたときは、前項の公正証書について、署名又はこれに代わる措置として法務省令で定めるものを講じなければならない。",
+     "text_sha256": "f53661a982257e6bf2fdffc9c1af9673ebaeb3d599cfbb78a9d0290c87aedd1d",
+     "fetched_at": "2026-10-26",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E4%B8%80%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%89%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題時点（2018-05-01）の969条の本文には肢と同じ内容の号があったが、出題後に969条の本文が変わり、今の民法・公証人法の条文に肢の定めがない（決め手の規定が法務省令に委ねられた）ため law_changed とした",
+    "公証人法の出題時点の版は確かめていない（data/statutes/changes に版がない）",
+    "法務省令（公証人法施行規則など）は保存されておらず確かめていない"
+   ],
+   "id": "exp-yobi-2018-minpo-q15-c",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
   }
  ]
 }

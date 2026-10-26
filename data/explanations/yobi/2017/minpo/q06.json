@@ -1,0 +1,307 @@
+{
+ "question_id": "yobi-2017-minpo-q06",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minpo-q06-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、宅地の抵当権の効力は、特段の事情のないかぎり、抵当権設定当時に宅地の従物であった石灯籠にも及ぶとしている。",
+   "body": "誤りは「その石灯籠には及ばない」とする点である。87条2項は「従物は、主物の処分に従う。」と定め、370条は抵当権が「抵当不動産」に「付加して一体となっている物に及ぶ」と定める。最高裁昭和44年3月28日判決は、宅地に対する抵当権の効力は、特段の事情のないかぎり、抵当権設定当時その宅地の従物であった石燈籠及び庭石にも及び、抵当権の設定登記による対抗力は、その従物についても生ずるとした。本肢の石灯籠は抵当権の設定前に備え付けられた従物なので、本件抵当権の効力はこれに及ぶ。したがって、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "87",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "従物は、主物の処分に従う。",
+     "text_sha256": "28daf18cc57d735b071d99c10349ca64b3f45613eb4ba27750c56baaef902963",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "370",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権は、抵当地の上に存する建物を除き、その目的である不動産（以下「抵当不動産」という。）に付加して一体となっている物に及ぶ。",
+     "text_sha256": "854276796c8c6353138b8e691ef004f5dc446b6dadda1af47cd01b822dbaddac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "宅地の抵当権の効力と従物（石燈籠・庭石）",
+     "court": "最高裁判所第二小法廷",
+     "date": "1969-03-28",
+     "case_number": "昭和43(オ)1250",
+     "holding": "宅地に対する抵当権の効力は、特段の事情のないかぎり、抵当権設定当時その宅地の従物であった石燈籠及び庭石にも及び、抵当権の設定登記による対抗力は、その従物についても生ずる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55098/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。87条は出題時点（2017-05-01）から本文は変わっていない。出題後に370条の本文が変わった（ただし書の詐害行為取消しに関する部分）が、本肢にかかわる本文の部分は同じで、結論は同じ。"
+   ],
+   "id": "exp-yobi-2017-minpo-q06-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minpo-q06-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、抵当権者は、抵当不動産の賃借人を所有者と同視することを相当とする場合を除き、賃借人が取得する転貸賃料債権について物上代位権を行使できないとしている。",
+   "body": "抵当権には、372条により先取特権の物上代位の規定（304条）が準用され、304条1項は目的物の「売却、賃貸、滅失又は損傷によって債務者が受けるべき金銭その他の物に対しても、行使することができる。」と定める。最高裁平成12年4月14日決定は、抵当権者は、抵当不動産の賃借人を所有者と同視することを相当とする場合を除き、その賃借人が取得する転貸賃料債権について物上代位権を行使することができないとした。本肢のＤは甲土地の賃借人で、Ｅに転貸しているので、ＤをＣと同視することを相当とする場合を除き、ＡはＤの転貸賃料債権に物上代位できない。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "372",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百九十六条、第三百四条及び第三百五十一条の規定は、抵当権について準用する。",
+     "text_sha256": "8425da3902ddc690c551ae65b8a6e0edd78d749eea824d1e2c5ab95e4e8b7d7c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "304",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "売却、賃貸、滅失又は損傷によって債務者が受けるべき金銭その他の物に対しても、行使することができる。",
+     "text_sha256": "b1d11df2a52bc9d5d50b2080a81c4513959c0d738f906fbf8ec831ddcca44d4d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "転貸賃料債権への物上代位",
+     "court": "最高裁判所第二小法廷",
+     "date": "2000-04-14",
+     "case_number": "平成11(許)23",
+     "holding": "抵当権者は、抵当不動産の賃借人を所有者と同視することを相当とする場合を除き、その賃借人が取得する転貸賃料債権について物上代位権を行使することができない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52280/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。372条・304条は出題時点（2017-05-01）から本文は変わっていない。"
+   ],
+   "id": "exp-yobi-2017-minpo-q06-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minpo-q06-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。375条の「最後の二年分」の制限は後順位の抵当権者など他の債権者を保護するためのもので、物上保証人Ｃは、元本と利息の全額を弁済しなければ抵当権を消滅させられないと解されている。",
+   "body": "誤りは、元本と最後の2年分の利息を弁済すれば抵当権を消滅させられるとする点である。375条1項は、抵当権者は利息その他の定期金を請求する権利を有するときは「その満期となった最後の二年分についてのみ、その抵当権を行使することができる。」と定めるが、この制限は、後順位の抵当権者など抵当不動産について利害関係を持つ他の債権者を保護するためのものと解されている。そのため、債務者や物上保証人との関係ではこの制限は働かず、抵当権者は被担保債権の全部の弁済を受けるまで抵当権を行使できるとされており、これを示した判例あり（要確認）。抵当権には372条により296条が準用され、「債権の全部の弁済を受けるまでは、留置物の全部についてその権利を行使することができる。」という不可分性が及ぶことも、この理解に沿う。したがって、Ｃは3年分の利息の全部を弁済しなければ本件抵当権を消滅させられず、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "375",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その満期となった最後の二年分についてのみ、その抵当権を行使することができる。",
+     "text_sha256": "f107b60752dc2f052e9aacfb4f337f2133f027b1bcd42f1cf881feb2e7b52bbd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "372",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百九十六条、第三百四条及び第三百五十一条の規定は、抵当権について準用する。",
+     "text_sha256": "8425da3902ddc690c551ae65b8a6e0edd78d749eea824d1e2c5ab95e4e8b7d7c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "296",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権の全部の弁済を受けるまでは、留置物の全部についてその権利を行使することができる。",
+     "text_sha256": "591c473127ae5548228930858ba9bfe29ef95525034ce2d0b1637dca0eed8550",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "pending_cases": [
+    {
+     "about": "375条の利息の制限は債務者・物上保証人との関係では働かず、全額の弁済を受けるまで抵当権を行使できるとした判例",
+     "searched": [
+      "大審院（データベースにない）",
+      "courts.py search 三七五条 抵当権",
+      "courts.py search 抵当権 最後の二年分"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。375条・372条・296条は出題時点（2017-05-01）から本文は変わっていない。",
+    "375条の制限が他の債権者の保護のためのもので物上保証人には及ばないという点は解釈による（条文に直接の定めはない）。"
+   ],
+   "id": "exp-yobi-2017-minpo-q06-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minpo-q06-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、物上保証人は、被担保債権の弁済期が到来しても、あらかじめ求償権を行使することはできないとしている。",
+   "body": "物上保証人の求償権は、372条で準用する351条により、物上保証人が「その債務を弁済し、又は質権の実行によって質物の所有権を失ったときは、保証債務に関する規定に従い、債務者に対して求償権を有する。」とされ、弁済や担保の実行によって財産を失ったことが前提になっている。委託を受けた保証人には事前の求償権を認める460条があり、2号は「債務が弁済期にあるとき。」を挙げるが、最高裁平成2年12月18日判決は、物上保証人は、被担保債権の弁済期が到来しても、あらかじめ求償権を行使することはできないとした。したがって、ＣはＡによる抵当権の実行前にあらかじめ求償権を行使することはできず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "372",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百九十六条、第三百四条及び第三百五十一条の規定は、抵当権について準用する。",
+     "text_sha256": "8425da3902ddc690c551ae65b8a6e0edd78d749eea824d1e2c5ab95e4e8b7d7c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "351",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その債務を弁済し、又は質権の実行によって質物の所有権を失ったときは、保証債務に関する規定に従い、債務者に対して求償権を有する。",
+     "text_sha256": "388d0ae8654d72b55d890d6eb71b24b4ed1f949c53879e979d730262380be809",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "460",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務が弁済期にあるとき。",
+     "text_sha256": "88cab01e4b4f7a2a27f687c5478e22a945dbf626f2eb9c10c92f7b4ff6ab2ab8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "物上保証人の事前求償権",
+     "court": "最高裁判所第三小法廷",
+     "date": "1990-12-18",
+     "case_number": "平成2(オ)801",
+     "holding": "物上保証人は、被担保債権の弁済期が到来しても、あらかじめ求償権を行使することはできない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52472/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。372条・351条は出題時点（2017-05-01）から本文は変わっていない。出題後に460条の本文が変わった（3号）が、本肢で触れた2号の文言は同じで、結論は同じ。"
+   ],
+   "id": "exp-yobi-2017-minpo-q06-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minpo-q06-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。抵当権の設定後に抵当地に建物が築造されたときは、建物の所有者が抵当権者に対抗できる占有権原を有しない限り、抵当権者は土地とともに建物を競売できる（389条）。",
+   "body": "389条1項は「抵当権の設定後に抵当地に建物が築造されたときは、抵当権者は、土地とともにその建物を競売することができる。」と定め、同条2項は「前項の規定は、その建物の所有者が抵当地を占有するについて抵当権者に対抗することができる権利を有する場合には、適用しない。」と定める。建物の築造者が抵当地の所有者であることは要件とされていない。本肢では、本件抵当権の登記後にＤが乙建物を建築し、Ｄは甲土地の占有についてＡに対抗できる権利を有しないので、Ａは、Ｄの承諾の有無にかかわらず、甲土地と乙建物を一括して競売できる。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "389",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権の設定後に抵当地に建物が築造されたときは、抵当権者は、土地とともにその建物を競売することができる。",
+     "text_sha256": "1fe66f167c9281bcd20b936374cf3c4c6159d3ad4e0dfdd5900adb8c4ec85d01",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "389",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、その建物の所有者が抵当地を占有するについて抵当権者に対抗することができる権利を有する場合には、適用しない。",
+     "text_sha256": "1fe66f167c9281bcd20b936374cf3c4c6159d3ad4e0dfdd5900adb8c4ec85d01",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。389条は出題時点（2017-05-01）から本文は変わっていない。"
+   ],
+   "id": "exp-yobi-2017-minpo-q06-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

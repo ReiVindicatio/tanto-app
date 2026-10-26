@@ -1,0 +1,279 @@
+{
+ "question_id": "yobi-2018-minpo-q05",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q05-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。留置権の目的は「他人の物」であり、債務者の物に限られない（295条1項）。",
+   "body": "ポイントは、留置権の目的物が債務者の所有物に限られるかである。295条1項は「他人の物の占有者は、その物に関して生じた債権を有するときは、その債権の弁済を受けるまで、その物を留置することができる。」と定め、目的物を債務者の物に限っていない。判例も、甲所有の物を買い受けた乙が代金を支払わないまま丙に譲渡した場合、甲は丙からの引渡請求に対し、未払代金債権を被担保債権とする留置権を主張できるとしており（最高裁判所第一小法廷昭和47年11月16日判決）、債務者でない者の物についても留置権が成り立つ場面を認めている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "295",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の物の占有者は、その物に関して生じた債権を有するときは、その債権の弁済を受けるまで、その物を留置することができる。",
+     "text_sha256": "5c120d320238e83f832ef9e2f8c7e848a8fd3c0499a6d5e4aabf099e22e7bdee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "売主の留置権と代金未払のまま目的物を譲り受けた者",
+     "court": "最高裁判所第一小法廷",
+     "date": "1972-11-16",
+     "case_number": "昭和45(オ)1055",
+     "holding": "甲所有の物を買い受けた乙が売買代金を支払わないままこれを丙に譲渡した場合、甲は、丙からの物の引渡請求に対して、未払代金債権を被担保債権とする留置権の抗弁権を主張することができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52639/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。295条は出題時点（2018-05-01）から本文が変わっていない",
+    "判例を「債務者以外の者の物についても成立する」場面の例として挙げたのは解釈による"
+   ],
+   "id": "exp-yobi-2018-minpo-q05-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q05-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。一般の先取特権は「債務者の総財産」について成立し、債務者以外の者の財産には成立しない（306条）。",
+   "body": "誤りは「債務者以外の者の財産についても成立する」とした点である。306条は、共益の費用などの原因によって生じた債権を有する者は「債務者の総財産について先取特権を有する。」と定めている。一般の先取特権の目的は債務者の総財産であり、債務者以外の者の財産はその対象にならない。この点で、他人の物について成立する留置権（295条1項）とは異なる。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "306",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者の総財産について先取特権を有する。",
+     "text_sha256": "d27b31ff01628e5c4a6bef413294b683bafca5562f9c2181db4a221d8072b6c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "295",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の物の占有者は、その物に関して生じた債権を有するときは、その債権の弁済を受けるまで、その物を留置することができる。",
+     "text_sha256": "5c120d320238e83f832ef9e2f8c7e848a8fd3c0499a6d5e4aabf099e22e7bdee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に306条の本文が変わった（各号に「子の監護の費用」が加わった。「債務者の総財産について先取特権を有する」の部分は出題時点の本文と同じで、結論は同じ）"
+   ],
+   "id": "exp-yobi-2018-minpo-q05-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q05-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。質権は債務者だけでなく第三者の物にも設定できる（342条・351条）。",
+   "body": "誤りは「債務者の財産についてのみ」とした点である。342条は、質権者は「債務者又は第三者から受け取った物」を占有し、優先して弁済を受ける権利を有すると定めており、第三者も質権を設定することができる。351条も「他人の債務を担保するため質権を設定した者」（物上保証人）の求償権を定めており、債務者以外の者が質権を設定することを前提にしている。したがって、本肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "342",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権者は、その債権の担保として債務者又は第三者から受け取った物を占有し、かつ、その物について他の債権者に先立って自己の債権の弁済を受ける権利を有する。",
+     "text_sha256": "9cb77e3a6bbd8629babc4d277f612ea8d47aea09301b084204663b02a52c2350",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "351",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の債務を担保するため質権を設定した者は、その債務を弁済し、又は質権の実行によって質物の所有権を失ったときは、保証債務に関する規定に従い、債務者に対して求償権を有する。",
+     "text_sha256": "388d0ae8654d72b55d890d6eb71b24b4ed1f949c53879e979d730262380be809",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。342条・351条は出題時点（2018-05-01）から本文が変わっていない"
+   ],
+   "id": "exp-yobi-2018-minpo-q05-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q05-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。永小作権は抵当権の目的とすることができる（369条2項）。",
+   "body": "本肢は369条2項のとおりである。抵当権の目的は原則として不動産であるが（369条1項）、同条2項は「地上権及び永小作権も、抵当権の目的とすることができる。」と定めている。したがって、永小作権を目的として抵当権を設定することができ、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "369",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "地上権及び永小作権も、抵当権の目的とすることができる。",
+     "text_sha256": "d6b78d480b2f8cc38269bf4edd902590ef68b3386bc5d121e5b4b9ccdb6522e4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "369",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権者は、債務者又は第三者が占有を移転しないで債務の担保に供した不動産について、他の債権者に先立って自己の債権の弁済を受ける権利を有する。",
+     "text_sha256": "d6b78d480b2f8cc38269bf4edd902590ef68b3386bc5d121e5b4b9ccdb6522e4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。369条は出題時点（2018-05-01）から本文が変わっていない"
+   ],
+   "id": "exp-yobi-2018-minpo-q05-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2018-minpo-q05-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。土地と分離して立木に抵当権を設定できるのは立木ニ関スル法律により所有権保存の登記を受けた立木であり、明認方法では抵当権を第三者に対抗できない（同法1条・2条）。",
+   "body": "ポイントは、立木の抵当権の公示方法が明認方法で足りるかである。立木ニ関スル法律1条1項は、同法の「立木」を、樹木の集団で「其ノ所有者カ本法ニ依リ所有権保存ノ登記ヲ受ケタルモノヲ謂フ」と定め、同法2条は「立木ハ之ヲ不動産ト看做ス」としたうえで、「立木ノ所有者ハ土地ト分離シテ立木ヲ譲渡シ又ハ之ヲ以テ抵当権ノ目的ト為スコトヲ得」と定める。つまり、土地と分離した立木への抵当権は、同法の登記を受けた立木について認められるもので、その対抗は登記による（民法177条）と解されている。明認方法は、判例上、立木の所有権の公示方法として認められてきたもの（最高裁判所第二小法廷昭和37年3月2日判決は、立札による公示を立木所有権の明認方法として有効とした）であり、抵当権の対抗要件とはならないと解されている。したがって、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "立木ニ関スル法律",
+     "article": "1",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "其ノ所有者カ本法ニ依リ所有権保存ノ登記ヲ受ケタルモノヲ謂フ",
+     "text_sha256": "a624935eec4b5b818e9fbc4a692c9db690fb05b213489ed9a0a4bb1a3402bddc",
+     "fetched_at": "2026-10-26",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "立木ニ関スル法律",
+     "article": "2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "立木ハ之ヲ不動産ト看做ス",
+     "text_sha256": "31cb727372e26788e3e4dc3dae20c43440ef5cb7e50283224501aa69ac7842e5",
+     "fetched_at": "2026-10-26",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "立木ニ関スル法律",
+     "article": "2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "立木ノ所有者ハ土地ト分離シテ立木ヲ譲渡シ又ハ之ヲ以テ抵当権ノ目的ト為スコトヲ得",
+     "text_sha256": "31cb727372e26788e3e4dc3dae20c43440ef5cb7e50283224501aa69ac7842e5",
+     "fetched_at": "2026-10-26",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E5%9B%9B%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "177",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産に関する物権の得喪及び変更は、不動産登記法（平成十六年法律第百二十三号）その他の登記に関する法律の定めるところに従いその登記をしなければ、第三者に対抗することができない。",
+     "text_sha256": "a27d1e6af866bda6ac153b9ac221bc2d60c83057856e1124591c9d01c2dea305",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "立札による明認方法を有効とした事例",
+     "court": "最高裁判所第二小法廷",
+     "date": "1962-03-02",
+     "case_number": "昭和35(オ)86",
+     "holding": "山林内の3か所の立木に、名義人が買い受けたから伐採を禁ずる旨を記載した立札を打ち付けたことなどの事実があるときは、その立札による公示は、山林内の立木所有権の明認方法として有効である。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/74330/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。民法177条は出題時点（2018-05-01）から本文が変わっていない",
+    "立木ニ関スル法律は出題時点の版を確かめていない（e-Gov の過去の版の確かめは民法だけ）",
+    "明認方法が抵当権の対抗要件とならない点・登記で対抗する点は解釈による（判決で直接確かめていない）"
+   ],
+   "id": "exp-yobi-2018-minpo-q05-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

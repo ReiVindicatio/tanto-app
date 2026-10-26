@@ -1,0 +1,244 @@
+{
+ "question_id": "yobi-2016-minpo-q01",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q01-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。日用品の購入は成年被後見人の取消しの対象から除かれているので、成年後見人Cは取り消すことができない。",
+   "body": "9条は「成年被後見人の法律行為は、取り消すことができる。」としたうえで、ただし書で「日用品の購入その他日常生活に関する行為については、この限りでない。」と定める。Aが日用品を買い受けた売買契約はこのただし書に当たるため、取り消すことができない。Bが、Aが成年被後見人であることを知らなかったかどうかは、この結論に関係しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "成年被後見人の法律行為は、取り消すことができる。ただし、日用品の購入その他日常生活に関する行為については、この限りでない。",
+     "text_sha256": "67a383e068a02c1e4aadf954b4d75d4e2514d25083fac514027e71a066d7e892",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。"
+   ],
+   "id": "exp-yobi-2016-minpo-q01-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q01-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。成年被後見人に対する意思表示は、その成年後見人（法定代理人）が知るまでは相手方に対抗できない。",
+   "body": "98条の2は、意思表示の相手方がその意思表示を受けた時に「未成年者若しくは成年被後見人であったときは、その意思表示をもってその相手方に対抗することができない。」と定め、ただし書で「次に掲げる者がその意思表示を知った後は、この限りでない。」として1号に「相手方の法定代理人」を挙げる。Aが解除の意思表示を受けた時に成年被後見人であったから、Bは、Aの成年後見人Cがその意思表示を知るまでは、解除の意思表示をAに対抗できない。肢の「効力は生じない」は、この対抗できないことをいうものとして正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "98_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者若しくは成年被後見人であったときは、その意思表示をもってその相手方に対抗することができない。ただし、次に掲げる者がその意思表示を知った後は、この限りでない。",
+     "text_sha256": "3711b07fcb7df1aa7da1013ccf7fd53c5d49cac1258efb28a0619b7ec2ac021b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "98_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方の法定代理人",
+     "text_sha256": "3711b07fcb7df1aa7da1013ccf7fd53c5d49cac1258efb28a0619b7ec2ac021b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。98条の2は出題後に改正されている可能性があるが、改正前の内容は条文の本文で確認していない。",
+    "条文は「対抗することができない」と定めており、肢の「効力は生じない」をこの意味に読んだ（公式の正解は○）。"
+   ],
+   "id": "exp-yobi-2016-minpo-q01-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q01-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。申込みの通知を発した後に申込者が行為能力の制限を受けたことを相手方が知ったときは、その申込みは効力を有しない。",
+   "body": "意思表示は、97条3項により、表意者が通知を発した後に「行為能力の制限を受けたときであっても、そのためにその効力を妨げられない」のが原則である。しかし、申込みについては526条が例外を定め、申込者が申込みの通知を発した後に行為能力の制限を受けた場合において「その相手方が承諾の通知を発するまでにその事実が生じたことを知ったときは、その申込みは、その効力を有しない。」とする。Bが、Aが行為能力を喪失した事実を知っていたのであれば申込みは効力を有しないので、効力が生じるとする肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "97",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "行為能力の制限を受けたときであっても、そのためにその効力を妨げられない",
+     "text_sha256": "d29bdd41ac5f5500bebb9725f87e52d68fc301915306af0ea5719792f455ee54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "526",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その相手方が承諾の通知を発するまでにその事実が生じたことを知ったときは、その申込みは、その効力を有しない。",
+     "text_sha256": "6ca9b4a484b18ffca1981a1a6ef05776910f39306da420e4f81faf8abf22a237",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "肢の「行為能力を喪失した」を、現行の97条3項・526条の「行為能力の制限を受けた」場合に当たるものとして説明した。肢は相手方が知った時期を示していないが、承諾の通知を発するまでに知っていたものとして読んだ。"
+   ],
+   "id": "exp-yobi-2016-minpo-q01-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q01-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。通知を発した後に表意者が行為能力の制限を受けても意思表示の効力は妨げられず、解除については相手方の知・不知で効力を失わせる規定はない。",
+   "body": "97条3項は「意思表示は、表意者が通知を発した後に死亡し、意思能力を喪失し、又は行為能力の制限を受けたときであっても、そのためにその効力を妨げられない。」と定める。相手方が事実を知っていたときに効力を失うとする526条は「申込者が申込みの通知を発した後に」の場合についての規定であり、契約解除の意思表示には当たらない。したがって、Bが事実を知っていたとしても、Aの契約解除は効力を生じる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "97",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "意思表示は、表意者が通知を発した後に死亡し、意思能力を喪失し、又は行為能力の制限を受けたときであっても、そのためにその効力を妨げられない。",
+     "text_sha256": "d29bdd41ac5f5500bebb9725f87e52d68fc301915306af0ea5719792f455ee54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "526",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申込者が申込みの通知を発した後に",
+     "text_sha256": "6ca9b4a484b18ffca1981a1a6ef05776910f39306da420e4f81faf8abf22a237",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2016-minpo-q01-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q01-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。承諾の通知を発した後に承諾者が行為能力の制限を受けても承諾の効力は妨げられず、申込みについての例外（526条）は承諾には当たらないので、契約は成立する。",
+   "body": "契約は、522条1項により申込みに対して「相手方が承諾をしたときに成立する」。承諾も意思表示であり、97条3項により、表意者が通知を発した後に「行為能力の制限を受けたときであっても、そのためにその効力を妨げられない」。相手方が事実を知っていたときに効力を失うとする526条は「申込者が申込みの通知を発した後に」の場合についての規定で、承諾には当たらない。したがって、Bが事実を知っていたとしてもAの承諾は効力を生じ、契約は成立する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "522",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方が承諾をしたときに成立する",
+     "text_sha256": "f08d4f757a2a303c3c31ab8ac1445e51ad8cf0d6f905dd191caeab433df30932",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "97",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "行為能力の制限を受けたときであっても、そのためにその効力を妨げられない",
+     "text_sha256": "d29bdd41ac5f5500bebb9725f87e52d68fc301915306af0ea5719792f455ee54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "526",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "申込者が申込みの通知を発した後に",
+     "text_sha256": "6ca9b4a484b18ffca1981a1a6ef05776910f39306da420e4f81faf8abf22a237",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "出題後の改正で、隔地者間の契約の成立時期に関する規定が変わっている可能性があるが、改正前の内容は条文の本文で確認していない（H28 の問のため e-Gov の過去の版もない）。現行の条文でも公式の○に行き着くので解説を書いた。"
+   ],
+   "id": "exp-yobi-2016-minpo-q01-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

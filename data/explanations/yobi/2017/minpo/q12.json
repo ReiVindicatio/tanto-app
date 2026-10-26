@@ -1,0 +1,266 @@
+{
+ "question_id": "yobi-2017-minpo-q12",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minpo-q12-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は時効の「中断」の制度を置かず、裁判上の請求があれば「時効は、完成しない」とする完成猶予と更新の仕組みに改め（147条）、連帯債務者の一人について生じた事由は原則として「他の連帯債務者に対してその効力を生じない」と定めている（441条）。また、人の身体を害する不法行為による損害賠償請求権は、知った時からの期間が「五年間」とされ（724条の2）、肢の前提の3年の期間とも異なる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "147",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効は、完成しない",
+     "text_sha256": "3137736c35f135564d0162881d4fffef7103e15e30ac5aaa61cc08bfef94449c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の連帯債務者に対してその効力を生じない",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "724_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "五年間",
+     "text_sha256": "ac22a1a0e2f13ddf0a87c01bb903149b4f014309e68254cb71960f6ff34942ba",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に147条・441条・724条の本文が変わり、724条の2が置かれた。改正前の内容は条文の本文で確認していない（過去の版は読んだが引用していない）。"
+   ],
+   "id": "exp-yobi-2017-minpo-q12-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minpo-q12-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は、共同不法行為者が「各自が連帯して」責任を負うとし（719条1項）、連帯債務者の求償について、弁済した者は「その免責を得た額が自己の負担部分を超えるかどうかにかかわらず」各自の負担部分に応じた額を求償できると定めている（442条1項）。今の条文をそのまま当てはめると、自己の負担部分を超えない弁済では求償できないという肢の前提（公式の×の理由）に行き着かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "719",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各自が連帯してその損害を賠償する責任を負う",
+     "text_sha256": "d6621dcf13fc139d8533852212627c8850fb7c86592bbf6f3ceed52d1a70c8c2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "442",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その免責を得た額が自己の負担部分を超えるかどうかにかかわらず",
+     "text_sha256": "b1d9a68defbdbd1f6b3baf69ed12f0a99dbe5c736e4062c94c47db90f1729a0f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に442条の本文が変わった。改正前の内容は条文の本文で確認していない（過去の版は読んだが引用していない）。"
+   ],
+   "id": "exp-yobi-2017-minpo-q12-b",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minpo-q12-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は、連帯債務者の一人について生じた事由は原則として「他の連帯債務者に対してその効力を生じない」とし、例外を「債権者及び他の連帯債務者の一人が別段の意思を表示したとき」と定めている（441条）。肢の和解はCとBとの間のものであり、Aの債務の免除がAに効力を及ぼすかを今の条文の本文から言い切ることができず、出題時の考え方と同じ理由で公式の×を説明できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の連帯債務者に対してその効力を生じない",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者及び他の連帯債務者の一人が別段の意思を表示したとき",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に441条の本文が変わった。改正前の内容は条文の本文で確認していない。迷ったため解説を出さない方に倒した（T013 手順7）。"
+   ],
+   "id": "exp-yobi-2017-minpo-q12-c",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minpo-q12-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。使用者責任を負って賠償した使用者は被用者に求償できるが、判例上、その範囲は信義則上相当と認められる限度に制限される。",
+   "body": "715条3項は、使用者責任の規定は「使用者又は監督者から被用者に対する求償権の行使を妨げない。」と定め、Ｃに300万円を支払ったＤはＡに求償できる。もっとも、判例は、使用者が被用者の起こした事故により第三者への賠償をして損害を被った場合に、諸事情のもとで、使用者は信義則上、損害の一部（その事案では4分の1）を限度として被用者に求償できるにすぎないとした。したがって、ＤはＡに対し、信義則上相当と認められる限度で求償できるとする肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "715",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "使用者又は監督者から被用者に対する求償権の行使を妨げない。",
+     "text_sha256": "ee1bffc67a722815d32711a10969d4bd9e21ccbe43f120f08dd4fdc60932d2f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "使用者から被用者への求償の信義則による制限",
+     "court": "最高裁判所第一小法廷",
+     "date": "1976-07-08",
+     "case_number": "昭和49(オ)1073",
+     "holding": "使用者が業務中の被用者の起こした自動車事故により直接損害を被り、また第三者への損害賠償義務の履行により損害を被った場合に、判示の事実関係のもとでは、使用者は信義則上、損害のうち4分の1を限度として被用者に賠償及び求償を請求できるにすぎない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54209/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。715条は2017-05-01時点から本文が変わっていない。",
+    "求償の信義則による制限は判例の解釈による。"
+   ],
+   "id": "exp-yobi-2017-minpo-q12-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2017-minpo-q12-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。自己の負担部分（120万円）を超えて賠償した第三者Ａは、被用者Ｂの負担部分（180万円）について使用者Ｅに求償できる（判例）。",
+   "body": "ＡとＢは共同不法行為者として「各自が連帯してその損害を賠償する責任を負う」（719条1項）。Ｅは、被用者Ｂが事業の執行について第三者に加えた損害を賠償する責任を負う（715条1項）。判例は、被用者と第三者との共同不法行為で、第三者が過失割合に従って定められる自己の負担部分を超えて被害者に賠償したときは、第三者は被用者の負担部分について使用者に求償できるとした。過失割合はＡが4割、Ｂが6割なので、300万円のうちＡの負担部分は120万円、Ｂの負担部分は180万円であり、300万円を支払ったＡはＥに180万円を求償できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "719",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各自が連帯してその損害を賠償する責任を負う",
+     "text_sha256": "d6621dcf13fc139d8533852212627c8850fb7c86592bbf6f3ceed52d1a70c8c2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "715",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被用者がその事業の執行について第三者に加えた損害を賠償する責任を負う",
+     "text_sha256": "ee1bffc67a722815d32711a10969d4bd9e21ccbe43f120f08dd4fdc60932d2f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "被用者と第三者の共同不法行為で賠償した第三者から使用者への求償",
+     "court": "最高裁判所第二小法廷",
+     "date": "1988-07-01",
+     "case_number": "昭和60(オ)1145",
+     "holding": "被用者と第三者との共同不法行為により他人に損害を加えた場合に、第三者が自己と被用者との過失割合に従って定められるべき自己の負担部分を超えて被害者に賠償したときは、第三者は被用者の負担部分について使用者に求償できる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52196/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。715条・719条は2017-05-01時点から本文が変わっていない。",
+    "出題後に442条（連帯債務者間の求償）の本文が変わったが、本肢はＡが自己の負担部分を超えて弁済した場合で、判例の要件を満たし、結論は同じ。改正前の内容は条文の本文で確認していない。",
+    "使用者への求償は判例の解釈による。"
+   ],
+   "id": "exp-yobi-2017-minpo-q12-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

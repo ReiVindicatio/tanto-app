@@ -1,0 +1,230 @@
+{
+ "question_id": "yobi-2016-minpo-q02",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q02-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法117条2項2号は、相手方が過失によって知らなかったときに無権代理人の責任を否定しつつ、「ただし、他人の代理人として契約をした者が自己に代理権がないことを知っていたときは、この限りでない。」との例外を置いている。肢は相手方に過失があれば一律に責任を追及できないとしており、今の条文ではこの例外があるため、肢の規律と結論がそのままは当てはまらない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "117",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "他人の代理人として契約をした者が代理権を有しないことを相手方が過失によって知らなかったとき。ただし、他人の代理人として契約をした者が自己に代理権がないことを知っていたときは、この限りでない。",
+     "text_sha256": "9470800840b6b66f80d3d4c5a8ff53a5a8a4fbf45036dc9b79d484b788815ec4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題は改正前。改正前の内容は条文の本文で確認していない（H28 の版は e-Gov にない）。今の条文には例外（ただし書）があるため、迷ったら解説を出さない方に倒した。"
+   ],
+   "id": "exp-yobi-2016-minpo-q02-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q02-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。成年後見人は法定代理人であり、法定代理人は「自己の責任で復代理人を選任することができる」（105条）から、やむを得ない事由がなくても復代理人を選任できる。",
+   "body": "誤りは、成年後見人について「やむを得ない事由があるときでなければ」復代理人を選任できないとしている点である。やむを得ない事由を要件とするのは「委任による代理人」についての104条であり、同条は「委任による代理人は、本人の許諾を得たとき、又はやむを得ない事由があるときでなければ、復代理人を選任することができない。」と定める。成年後見人は、859条1項により「被後見人の財産を管理し、かつ、その財産に関する法律行為について被後見人を代表する」者であり、本人の委任によらない法定代理人である。法定代理人については、105条が「法定代理人は、自己の責任で復代理人を選任することができる。」と定め、やむを得ない事由は、選任した後の責任を「選任及び監督についての責任のみ」に軽くする場面で問題になるにとどまる。したがって、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "104",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "委任による代理人は、本人の許諾を得たとき、又はやむを得ない事由があるときでなければ、復代理人を選任することができない。",
+     "text_sha256": "af9e90f8e586ce3aa586ffb444cddb3cfcecd424172986771369e91f991f2424",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "105",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法定代理人は、自己の責任で復代理人を選任することができる。",
+     "text_sha256": "bffa30fd835cc2b6671b4584fdf18cd081138acd9543a3e989795b670d824fad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "105",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "選任及び監督についての責任のみ",
+     "text_sha256": "bffa30fd835cc2b6671b4584fdf18cd081138acd9543a3e989795b670d824fad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "859",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被後見人の財産を管理し、かつ、その財産に関する法律行為について被後見人を代表する",
+     "text_sha256": "e528819985367c4d0e9d57c09f80b79dd2fdc03cc38469ec76791f00849110da",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない（H28 の版は e-Gov にない。条番号が出題当時と異なる可能性がある）。"
+   ],
+   "id": "exp-yobi-2016-minpo-q02-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q02-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。復代理人は本人に対して「代理人と同一の権利を有し、義務を負う」（106条2項）ので、委任による代理人が持つ費用償還請求権（650条1項）と同じく、本人に直接費用の償還を請求できる。",
+   "body": "誤りは、復代理人が本人に対し費用の償還を「直接請求することはできない」としている点である。106条2項は「復代理人は、本人及び第三者に対して、その権限の範囲内において、代理人と同一の権利を有し、義務を負う。」と定める。委任による代理人は受任者として、650条1項により「委任事務を処理するのに必要と認められる費用を支出したときは、委任者に対し、その費用及び支出の日以後におけるその利息の償還を請求することができる。」。そうすると、復代理人も、復代理の委任事務を処理するのに必要な費用を支出したときは、本人に対し直接その償還を請求できると解されている。したがって、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "106",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "復代理人は、本人及び第三者に対して、その権限の範囲内において、代理人と同一の権利を有し、義務を負う。",
+     "text_sha256": "9f6b76f7e621bc4fcd9f9fdfa70d15734da89f851d619500402a554c1a3d9e22",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "650",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "委任事務を処理するのに必要と認められる費用を支出したときは、委任者に対し、その費用及び支出の日以後におけるその利息の償還を請求することができる。",
+     "text_sha256": "c8d7dac2ae2fa48748a033348ac0168d2d83ef658e54c7b3244cb55094342a4a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない（H28 の版は e-Gov にない。条番号が出題当時と異なる可能性がある）。",
+    "106条2項と650条1項を組み合わせて復代理人が本人に直接費用償還を請求できるとする点は解釈による。"
+   ],
+   "id": "exp-yobi-2016-minpo-q02-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2016-minpo-q02-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。詐欺の有無は代理人Bについて決するが（101条1項）、契約の効果は本人Aに帰属し（99条1項）、詐欺による取消しの権利はAが行使できるから、「Ａは当該売買契約を取り消すことができない」とする点が誤り。",
+   "body": "誤りは、本人Aが売買契約を取り消すことができないとしている点である。101条1項は、代理人が相手方に対してした意思表示の効力が「詐欺」によって影響を受けるべき場合には「その事実の有無は、代理人について決するものとする。」と定めるから、Bが詐欺を受けた以上、契約は96条1項により「取り消すことができる」ものとなる。他方、代理人が権限内でした意思表示は「本人に対して直接にその効力を生ずる」（99条1項）から、契約の当事者として取消権を持つのは本人Aであると解されている。120条2項も、取消権者を「瑕疵ある意思表示をした者又はその代理人若しくは承継人」としている。代理人Bが取り消せるのは、取消しについての代理権がある場合に限られると解されている。したがって、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "101",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その事実の有無は、代理人について決するものとする。",
+     "text_sha256": "1ff6344ed83a1695addad9369ee1c345ee56d6f377464e7b1c102787bcffec99",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐欺又は強迫による意思表示は、取り消すことができる。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "99",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "本人に対して直接にその効力を生ずる。",
+     "text_sha256": "9c8b3f6bd25c35ab69d70aa092a5abae356f98679350a80fbaf6018171d401f3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "120",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "瑕疵ある意思表示をした者又はその代理人若しくは承継人",
+     "text_sha256": "56eb3f1eb7eeec97bc2a6957269e75cf5da9252e385a9cd0ed96a521dfef7a6b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない（H28 の版は e-Gov にない）。",
+    "取消権が本人に帰属し、代理人は取消しの代理権がある場合に限り取り消せるという点は解釈による。"
+   ],
+   "id": "exp-yobi-2016-minpo-q02-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
