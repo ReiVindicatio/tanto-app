@@ -1,0 +1,281 @@
+{
+ "question_id": "shiho-2018-minpo-q03",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q03-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、土地の仮装譲受人からその建築した土地上の建物を賃借した者は94条2項の第三者に当たらないとしている。",
+   "body": "94条は1項で「相手方と通じてした虚偽の意思表示は、無効とする。」と定め、2項で「前項の規定による意思表示の無効は、善意の第三者に対抗することができない。」と定める。判例は、土地の仮装譲受人からその建築にかかる土地上の建物を賃借した者は、94条2項所定の第三者に当たらないとしている。建物賃借人が利害関係を持つのは仮装譲受人が建てた建物であって、仮装譲渡の目的となった土地そのものではないと解されている。したがって肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "94",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方と通じてした虚偽の意思表示は、無効とする。",
+     "text_sha256": "105c9d4fbb68ec2579ae06b999f43358ff5b9d704b76cbbd85fa434cca25e16d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "94",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定による意思表示の無効は、善意の第三者に対抗することができない。",
+     "text_sha256": "105c9d4fbb68ec2579ae06b999f43358ff5b9d704b76cbbd85fa434cca25e16d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "土地の仮装譲受人から建物を賃借した者と94条2項の第三者",
+     "court": "最高裁判所第三小法廷",
+     "date": "1982-06-08",
+     "case_number": "昭和56(オ)988",
+     "holding": "土地の仮装譲受人からその建築にかかる右土地上の建物を賃借した者は、民法94条2項所定の第三者に当たらない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/70440/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "94条は 2018-05-01 版から本文が変わっていない（egov --asof で確認）",
+    "建物賃借人の利害関係が土地そのものに及ばないという理由づけは解釈による"
+   ],
+   "id": "exp-shiho-2018-minpo-q03-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q03-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、強迫による意思表示が成立するには、表意者が畏怖の結果完全に選択の自由を失ったことを要しないとしている。",
+   "body": "誤りは、表意者が「完全に意思の自由を失ったこと」を要するとしている点である。96条1項は「詐欺又は強迫による意思表示は、取り消すことができる。」と定める。判例は、強迫による意思表示が成立するためには、表意者が畏怖の結果完全に選択の自由を失ったことを要するものではないとしている。強迫により畏怖して意思表示をすれば足り、意思の自由を完全に失うことまでは取消しの要件ではないから、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐欺又は強迫による意思表示は、取り消すことができる。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "強迫による意思表示と選択の自由",
+     "court": "最高裁判所第三小法廷",
+     "date": "1958-07-01",
+     "case_number": "昭和31(オ)1100",
+     "holding": "強迫による意思表示が成立するためには、表意者が畏怖の結果完全に選択の自由を失ったことを要するものではない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52846/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "96条1項は 2018-05-01 版から本文が変わっていない（egov --asof で確認。変わったのは2項・3項）"
+   ],
+   "id": "exp-shiho-2018-minpo-q03-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q03-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、農地の売買契約上の権利を譲り受けて仮登記移転の付記登記をした者は96条3項の第三者に当たるとしている。",
+   "body": "96条3項は、詐欺による意思表示の取消しを第三者に対抗することができない場合を定めている。判例は、甲を欺罔してその農地を買い受けた乙が、農地法上の許可を条件とする所有権移転仮登記を得たうえ、売買契約上の権利を善意の丙に譲渡して仮登記移転の附記登記をした場合には、丙は96条3項にいう第三者に当たるとしている。農地法の許可がまだなく所有権が移転していない段階でも、仮登記を経た売買契約上の権利を譲り受けた者は、詐欺による取消し前に新たに利害関係に入った者として保護の対象になると解されている。肢のＣはこの丙に当たるから、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前二項の規定による詐欺による意思表示の取消しは、善意でかつ過失がない第三者に対抗することができない。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "農地の仮登記の移転の付記登記を得た者と96条3項の第三者",
+     "court": "最高裁判所第一小法廷",
+     "date": "1974-09-26",
+     "case_number": "昭和45(オ)344",
+     "holding": "甲を欺罔してその農地を買い受けた乙が、農地法上の許可を条件とする所有権移転仮登記を得たうえ、右売買契約上の権利を善意の丙に譲渡して右仮登記移転の附記登記をした場合には、丙は民法96条3項にいう第三者にあたる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54177/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に96条3項の本文が変わった（保護される第三者に無過失が加わった。肢は「第三者」に当たるかを問うもので、結論は同じ）",
+    "改正前の内容は条文の本文で確認していない（問題文の参照条文のほかは egov --asof で読んだのみで引用していない）",
+    "取消し前に利害関係に入った者が保護の対象になるという理由づけは解釈による"
+   ],
+   "id": "exp-shiho-2018-minpo-q03-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q03-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の95条は錯誤の効果を「取り消すことができる」と定め、「表意者が法律行為の基礎とした事情についてのその認識が真実に反する錯誤」による取消しは「その事情が法律行為の基礎とされていることが表示されていたときに限り、することができる。」としている。肢は錯誤による「無効」を主張できるかを問うもので、今の条文では錯誤の効果が取消しに変わり、動機の表示の要件も条文で定められているため、今の条文で説明すると出題の前提と別の規律になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "95",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取り消すことができる",
+     "text_sha256": "a574178ace21adfb3a580ccce7d7b1d82a142c6d5dec52af686791911776a4b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "95",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "表意者が法律行為の基礎とした事情についてのその認識が真実に反する錯誤",
+     "text_sha256": "a574178ace21adfb3a580ccce7d7b1d82a142c6d5dec52af686791911776a4b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "95",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その事情が法律行為の基礎とされていることが表示されていたときに限り、することができる。",
+     "text_sha256": "a574178ace21adfb3a580ccce7d7b1d82a142c6d5dec52af686791911776a4b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に95条の本文が変わった（egov --asof 2018-05-01 で確認。錯誤の効果が無効から取消しに変わった）"
+   ],
+   "id": "exp-shiho-2018-minpo-q03-d",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q03-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、内容証明郵便が留置期間の経過により還付された場合でも、受取人が内容を十分に推知でき受領も困難でなかったなどの事情の下では、意思表示の到達を認めている。",
+   "body": "誤りは、到達が認められることは「ない」と言い切っている点である。97条1項は「意思表示は、その通知が相手方に到達した時からその効力を生ずる。」と定める。判例は、遺留分減殺の意思表示が記載された内容証明郵便が留置期間の経過により差出人に還付された場合でも、受取人が不在配達通知書の記載その他の事情からその内容を十分に推知することができ、受領の意思があればさしたる労力、困難を伴うことなく受領できたなどの事情の下では、意思表示は社会通念上受取人の了知可能な状態に置かれ、遅くとも留置期間が満了した時点で到達したものと認められるとしている。したがって肢は誤りである。なお、今の97条2項は「相手方が正当な理由なく意思表示の通知が到達することを妨げたときは、その通知は、通常到達すべきであった時に到達したものとみなす。」と定めている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "97",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "意思表示は、その通知が相手方に到達した時からその効力を生ずる。",
+     "text_sha256": "d29bdd41ac5f5500bebb9725f87e52d68fc301915306af0ea5719792f455ee54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "97",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "相手方が正当な理由なく意思表示の通知が到達することを妨げたときは、その通知は、通常到達すべきであった時に到達したものとみなす。",
+     "text_sha256": "d29bdd41ac5f5500bebb9725f87e52d68fc301915306af0ea5719792f455ee54",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "留置期間の経過で還付された内容証明郵便と意思表示の到達",
+     "court": "最高裁判所第一小法廷",
+     "date": "1998-06-11",
+     "case_number": "平成9(オ)685",
+     "holding": "遺留分減殺の意思表示が記載された内容証明郵便が留置期間の経過により差出人に還付された場合でも、受取人がその内容を十分に推知することができ、受領の意思があればさしたる労力、困難を伴うことなく受領できたなど判示の事情の下では、意思表示は社会通念上受取人の了知可能な状態に置かれ、遅くとも留置期間が満了した時点で受取人に到達したものと認められる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52615/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に97条の本文が変わった（1項の「隔地者に対する」がなくなり、2項が加わった。結論は同じ。説明は判例による到達の判断で行った）",
+    "改正前の内容は条文の本文で確認していない（egov --asof で読んだのみで引用していない）"
+   ],
+   "id": "exp-shiho-2018-minpo-q03-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

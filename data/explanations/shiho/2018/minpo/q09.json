@@ -1,0 +1,198 @@
+{
+ "question_id": "shiho-2018-minpo-q09",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q09-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。地上権の内容に地代の支払は含まれておらず、民法は地代を支払わなければならない場合を前提に規定を置くにとどまるので、無償の地上権も設定できる。",
+   "body": "誤りは「設定することはできない」の部分である。265条は「地上権者は、他人の土地において工作物又は竹木を所有するため、その土地を使用する権利を有する。」と定め、地代の支払を地上権の内容としていない。266条1項も「第二百七十四条から第二百七十六条までの規定は、地上権者が土地の所有者に定期の地代を支払わなければならない場合について準用する。」と、地代を支払う場合とそうでない場合があることを前提にしている。そのため、地代の定めのない無償の地上権も設定できると解されており、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "265",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地上権者は、他人の土地において工作物又は竹木を所有するため、その土地を使用する権利を有する。",
+     "text_sha256": "2094168b43153d58b26898c30eba33b4d7575c57aa36a95109a8493efcdab658",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "266",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百七十四条から第二百七十六条までの規定は、地上権者が土地の所有者に定期の地代を支払わなければならない場合について準用する。",
+     "text_sha256": "1e11eeb397c322d7f0e7419c2aa60588ccefea372df6b549e148f8102ce399a0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。265条・266条は 2018-05-01 時点から本文が変わっていない（egov.py --asof で確認）",
+    "地代が地上権の要素でないという点は解釈による"
+   ],
+   "id": "exp-shiho-2018-minpo-q09-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q09-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。民法は設定行為で存続期間を定めなかった地上権について規定を置いており、存続期間を定めないで地上権を設定できる。",
+   "body": "決め手は268条である。268条1項は「設定行為で地上権の存続期間を定めなかった場合において、別段の慣習がないときは、地上権者は、いつでもその権利を放棄することができる。」と定め、存続期間を定めない地上権があることを前提にしている。さらに同条2項は、地上権者が放棄しないときは「裁判所は、当事者の請求により、二十年以上五十年以下の範囲内において、工作物又は竹木の種類及び状況その他地上権の設定当時の事情を考慮して、その存続期間を定める。」としている。したがって、存続期間を定めないで地上権を設定することができ、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "268",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設定行為で地上権の存続期間を定めなかった場合において、別段の慣習がないときは、地上権者は、いつでもその権利を放棄することができる。",
+     "text_sha256": "700e5fa4c6fe1791109e1deacfd553395adfcb1d455661dfc1d0d182784d9519",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "268",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "裁判所は、当事者の請求により、二十年以上五十年以下の範囲内において、工作物又は竹木の種類及び状況その他地上権の設定当時の事情を考慮して、その存続期間を定める。",
+     "text_sha256": "700e5fa4c6fe1791109e1deacfd553395adfcb1d455661dfc1d0d182784d9519",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。268条は 2018-05-01 時点から本文が変わっていない（egov.py --asof で確認）"
+   ],
+   "id": "exp-shiho-2018-minpo-q09-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q09-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。永小作権は「小作料を支払って」耕作又は牧畜をする権利と定められており、小作料の支払が内容に含まれるので、無償の永小作権は設定できない。",
+   "body": "決め手は270条の「小作料を支払って」という文言である。270条は「永小作人は、小作料を支払って他人の土地において耕作又は牧畜をする権利を有する。」と定め、小作料の支払を永小作権の内容としている。地代の支払を内容としない地上権（265条）とはこの点が異なる。そのため、小作料を支払わない無償の永小作権は設定できないと解されており、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "270",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "永小作人は、小作料を支払って他人の土地において耕作又は牧畜をする権利を有する。",
+     "text_sha256": "f0c266b20b093678a23f80061816f5191cee7d02dd7ecafd9c988a93a7ab7a9d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "265",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地上権者は、他人の土地において工作物又は竹木を所有するため、その土地を使用する権利を有する。",
+     "text_sha256": "2094168b43153d58b26898c30eba33b4d7575c57aa36a95109a8493efcdab658",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。265条・270条は 2018-05-01 時点から本文が変わっていない（egov.py --asof で確認）",
+    "小作料が永小作権の要素であるという点は解釈による"
+   ],
+   "id": "exp-shiho-2018-minpo-q09-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q09-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。地役権の内容に対価の支払は含まれておらず、無償の地役権も設定できる。",
+   "body": "誤りは「設定することはできない」の部分である。280条は「地役権者は、設定行為で定めた目的に従い、他人の土地を自己の土地の便益に供する権利を有する。」と定め、対価の支払を地役権の内容としていない。永小作権について270条が「小作料を支払って」と定めているのとは異なる。そのため、地役権は対価を定めて有償で設定することも、無償で設定することもできると解されており、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "280",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "地役権者は、設定行為で定めた目的に従い、他人の土地を自己の土地の便益に供する権利を有する。",
+     "text_sha256": "c67f7e56d4dd8e753aac0ff0238ef54fdab1ad9979d47b46329c2e091fecffd8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "270",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "小作料を支払って",
+     "text_sha256": "f0c266b20b093678a23f80061816f5191cee7d02dd7ecafd9c988a93a7ab7a9d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。270条・280条は 2018-05-01 時点から本文が変わっていない（egov.py --asof で確認）",
+    "地役権を無償で設定できる点は解釈による"
+   ],
+   "id": "exp-shiho-2018-minpo-q09-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,246 @@
+{
+ "question_id": "shiho-2018-minpo-q06",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q06-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。確定判決によって確定した権利は、10年より短い時効期間の定めがあるものでも時効期間が10年となるので、判決で確定した不法行為の損害賠償請求権の消滅時効期間は10年である。",
+   "body": "不法行為による損害賠償請求権については、724条が「被害者又はその法定代理人が損害及び加害者を知った時から三年間行使しないとき。」に時効によって消滅すると定めており、10年より短い時効期間が定められている。しかし169条1項は「確定判決又は確定判決と同一の効力を有するものによって確定した権利については、十年より短い時効期間の定めがあるものであっても、その時効期間は、十年とする。」と定める。したがって、判決により確定した不法行為に基づく損害賠償請求権の消滅時効期間は10年であり、肢は正しい。肢の規律は、今の民法では169条として定められている（出題時点では条番号が異なっていた）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "724",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被害者又はその法定代理人が損害及び加害者を知った時から三年間行使しないとき。",
+     "text_sha256": "ef09e527bf1538d00a533a74fc91d841d976b2aa3715a76118de19f1cc424dad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "169",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "確定判決又は確定判決と同一の効力を有するものによって確定した権利については、十年より短い時効期間の定めがあるものであっても、その時効期間は、十年とする。",
+     "text_sha256": "0051df65b5084547127a4b849af7dd677d439928713f0fd7ba630f16e586839a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題時点では同じ規律が別の条番号にあった（egov --asof 2018-05-01 で確認。今の169条1項と規律・結論は同じ）",
+    "出題後に724条の本文が変わった（知った時から3年の期間は同じで、結論は同じ）",
+    "改正前の内容は条文の本文で確認していない（egov --asof で読んだのみで引用していない）"
+   ],
+   "id": "exp-shiho-2018-minpo-q06-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q06-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、訴訟上の相殺の主張で受働債権について債務の承認がされたと認められる場合、その後相殺の主張が撤回されても、承認による時効の効力は失われないとしている。",
+   "body": "誤りは、相殺の主張の撤回により承認の効力が「失われる」としている点である。152条1項は「時効は、権利の承認があったときは、その時から新たにその進行を始める。」と定める。判例は、訴訟上相殺の主張をするにあたり、受働債権につき債務の承認がなされたものと認められる場合、その後相殺の主張が撤回されても承認による時効中断の効力は失われないとしている。承認は、権利の存在を認める観念の通知であり、いったん承認があれば時効はその時から新たに進行し、相殺の主張の撤回によってこれが覆るものではないと解されている。肢の「承認による時効中断」は、今の民法では承認による時効の更新（152条）として定められている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "152",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効は、権利の承認があったときは、その時から新たにその進行を始める。",
+     "text_sha256": "73d4963338a58831e6d78d5e89746df7e38d0b86ae408813dba435462e740c5d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "訴訟上の相殺の主張の撤回と受働債権の承認による時効中断",
+     "court": "最高裁判所第二小法廷",
+     "date": "1960-12-23",
+     "case_number": "昭和33(オ)494",
+     "holding": "訴訟上相殺の主張をするにあたり、受働債権につき時効中断事由たる債務の承認がなされたものと認められる場合、その後相殺の主張が撤回されても承認による時効中断の効力は失われない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54888/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "名前が変わった（規律と結論は同じ）：承認による時効の中断は、今の民法では承認による時効の更新として定められている。承認の時から時効が新たに進行する点は同じ（egov --asof 2018-05-01 で出題時点の本文を読んで確認した）",
+    "改正前の内容は条文の本文で確認していない（egov --asof で読んだのみで引用していない）",
+    "承認が観念の通知であり撤回で覆らないという理由づけは解釈による"
+   ],
+   "id": "exp-shiho-2018-minpo-q06-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q06-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の147条は、裁判上の請求がある場合には事由が終了するまでの間は「時効は、完成しない。」とし（1項）、権利が確定したときは「時効は、同項各号に掲げる事由が終了した時から新たにその進行を始める。」とし（2項）、裁判上の請求の効果を完成猶予と更新に分けて定めている。肢は裁判上の請求による「時効中断の効力」が一部請求の残部に及ぶかを問うもので、今の条文には中断という効果がなく、今の条文で残部の扱いを説明すると出題の前提と別の規律になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "147",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効は、完成しない。",
+     "text_sha256": "3137736c35f135564d0162881d4fffef7103e15e30ac5aaa61cc08bfef94449c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "147",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "時効は、同項各号に掲げる事由が終了した時から新たにその進行を始める。",
+     "text_sha256": "3137736c35f135564d0162881d4fffef7103e15e30ac5aaa61cc08bfef94449c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に147条の本文が変わった（egov --asof 2018-05-01 で確認。時効の中断が完成猶予と更新に分かれた）"
+   ],
+   "id": "exp-shiho-2018-minpo-q06-c",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q06-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の149条は仮差押えについて「その事由が終了した時から六箇月を経過するまでの間は、時効は、完成しない。」と定め、仮差押えに時効の完成猶予の効力だけを認めている。肢は仮差押えによる「時効中断の効力」がいつ消滅するかを問うもので、今の条文には仮差押えによって時効が中断（更新）されるという前提の規律がない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "149",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その事由が終了した時から六箇月を経過するまでの間は、時効は、完成しない。",
+     "text_sha256": "16cb3f447f6ceec331cb906b3d3ecbff07ab421c46f74d0996b99babc42cc87a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に時効の規定が変わった（egov --asof 2018-05-01 で、出題時点では仮差押えが時効の中断事由とされていたことを確認した）"
+   ],
+   "id": "exp-shiho-2018-minpo-q06-d",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q06-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の147条は裁判上の請求の効果を、事由が終了するまで「時効は、完成しない。」とする完成猶予（1項）と、権利が確定したときに「時効は、同項各号に掲げる事由が終了した時から新たにその進行を始める。」とする更新（2項）に分け、催告には150条1項で「催告があったときは、その時から六箇月を経過するまでの間は、時効は、完成しない。」とする完成猶予だけを認めている。肢は留置権の抗弁が裁判上の請求による「時効中断の効力」を生ずるかを問うもので、中断という効果は今の条文になく、今の条文で説明すると出題の前提と別の規律になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "147",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効は、完成しない。",
+     "text_sha256": "3137736c35f135564d0162881d4fffef7103e15e30ac5aaa61cc08bfef94449c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "147",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "時効は、同項各号に掲げる事由が終了した時から新たにその進行を始める。",
+     "text_sha256": "3137736c35f135564d0162881d4fffef7103e15e30ac5aaa61cc08bfef94449c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "150",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "催告があったときは、その時から六箇月を経過するまでの間は、時効は、完成しない。",
+     "text_sha256": "1753a773f9839d056b35ccf67dd42b66b843d1eaf60bf94365abfe6d879b6f49",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に147条の本文が変わった（egov --asof 2018-05-01 で確認。時効の中断が完成猶予と更新に分かれた）"
+   ],
+   "id": "exp-shiho-2018-minpo-q06-e",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

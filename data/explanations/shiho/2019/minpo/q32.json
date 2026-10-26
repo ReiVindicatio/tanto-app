@@ -1,0 +1,237 @@
+{
+ "question_id": "shiho-2019-minpo-q32",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q32-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "肢は離婚前の別居中の父母の間での面会交流について家庭裁判所が処分を命じられるかを判例の趣旨に照らして問うが、今の民法では出題後に新設された817条の13が「子と別居する父又は母その他の親族と当該子との交流について必要な事項は、父母の協議で定める。」とし、協議が調わないときは「家庭裁判所が、父又は母の請求により、同項の事項を定める。」と直接定めている。結論は公式の×と合うが、今の条文で説明すると、出題時点の判例による説明とは別の理由（新設された条文）になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "817_13",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子と別居する父又は母その他の親族と当該子との交流について必要な事項は、父母の協議で定める。",
+     "text_sha256": "97f23b6f8568e72c0b5d722727373cc6b7aa9c723df286248a5dc9fe3041ecab",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "817_13",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "家庭裁判所が、父又は母の請求により、同項の事項を定める。",
+     "text_sha256": "97f23b6f8568e72c0b5d722727373cc6b7aa9c723df286248a5dc9fe3041ecab",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "817条の13は2019-05-01時点にはなかった（出題後に増えた条）。決め手が判例から新設の条文に変わったため解説を書かない"
+   ],
+   "id": "exp-shiho-2019-minpo-q32-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q32-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×（誤っている記述）。766条3項により、家庭裁判所は協議で定めた監護者の定めを変更することができる。",
+   "body": "766条1項は、父母が協議上の離婚をするときは「子の監護をすべき者」などを「その協議で定める。」とする。そのうえで同条3項は「家庭裁判所は、必要があると認めるときは、前二項の規定による定めを変更し、その他子の監護について相当な処分を命ずることができる。」と定める。協議で定めた監護者も「前二項の規定による定め」に当たるから、家庭裁判所はこれを変更できる。したがって、変更することができないとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "766",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子の監護をすべき者",
+     "text_sha256": "37bd138969ab751026ca5ad59d17aa1fb14c337507bcc747555897f5cc731fb9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "766",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その協議で定める。",
+     "text_sha256": "37bd138969ab751026ca5ad59d17aa1fb14c337507bcc747555897f5cc731fb9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "766",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "家庭裁判所は、必要があると認めるときは、前二項の規定による定めを変更し、その他子の監護について相当な処分を命ずることができる。",
+     "text_sha256": "37bd138969ab751026ca5ad59d17aa1fb14c337507bcc747555897f5cc731fb9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に766条の本文が変わった（結論は同じ）。e-Gov の2019-05-01版でも、1項で子の監護をすべき者を協議で定め、3項で家庭裁判所がその定めを変更できる点は同じであることを確かめた（引用は現行の本文から）"
+   ],
+   "id": "exp-shiho-2019-minpo-q32-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q32-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○（正しい記述）。791条1項により、母と氏を異にする子が母の氏を称するには、家庭裁判所の許可を得て届け出る必要がある。",
+   "body": "791条1項は「子が父又は母と氏を異にする場合には、子は、家庭裁判所の許可を得て、戸籍法の定めるところにより届け出ることによって、その父又は母の氏を称することができる。」と定める。父母の離婚によって子が母と氏を異にすることになった場合も、この「子が父又は母と氏を異にする場合」に当たる。なお、同条2項の許可なしの届出は「父母の婚姻中に限り」認められるもので、離婚後の場面には当たらない。したがって、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "791",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子が父又は母と氏を異にする場合には、子は、家庭裁判所の許可を得て、戸籍法の定めるところにより届け出ることによって、その父又は母の氏を称することができる。",
+     "text_sha256": "9888e184f43943163ed9be164a3c4e0bef39a8ca2212c1d081bb35a0b71cb795",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "791",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "父母の婚姻中に限り",
+     "text_sha256": "9888e184f43943163ed9be164a3c4e0bef39a8ca2212c1d081bb35a0b71cb795",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。791条の本文は2019-05-01時点から変わっていない"
+   ],
+   "id": "exp-shiho-2019-minpo-q32-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q32-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○（正しい記述）。819条3項により、出生前に離婚したときは母が親権を行うが、出生後に父母の協議で父を親権者と定めることができる。",
+   "body": "819条3項は「子の出生前に父母が離婚した場合には、親権は、母が行う。ただし、子の出生後に、父母の協議で、父母の双方又は父を親権者と定めることができる。」と定める。肢は、母が親権者となるが、子の出生後に父母の協議によって父を親権者と定めることができるとしており、この条文のとおりである。したがって、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "819",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "子の出生前に父母が離婚した場合には、親権は、母が行う。ただし、子の出生後に、父母の協議で、父母の双方又は父を親権者と定めることができる。",
+     "text_sha256": "c64e308686bb7b205715f4ba1f7b5628cd9b5c6379cdcdb7b43b58ad73ab22b2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に819条の本文が変わった（結論は同じ）。e-Gov の2019-05-01版でも、3項で出生前の離婚では母が親権を行い、出生後に父母の協議で父を親権者と定められる点は同じであることを確かめた。今の本文では「父母の双方」を親権者と定めることもできるようになっている（引用は現行の本文から）"
+   ],
+   "id": "exp-shiho-2019-minpo-q32-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q32-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×（誤っている記述）。単独の親権者である母が死亡すると親権を行う者がなくなり後見が開始するので、生存する父が直ちに親権者となるのではない。",
+   "body": "838条は、後見が開始する場合として「未成年者に対して親権を行う者がないとき」を挙げる（1号）。離婚の際に母だけが親権者と定められていた場合、その母が死亡すると、子に対して親権を行う者がいなくなるから、後見が開始する。生存している父が親権者となる旨を定めた規定はなく、父が親権者となるには家庭裁判所の手続を経る必要があると解されている。したがって、父が直ちに親権者となるとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "838",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者に対して親権を行う者がないとき",
+     "text_sha256": "066385bb0bfe2d49f08519b302633f6be744832cd31c808cf797841681429f48",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。838条の本文は2019-05-01時点から変わっていない",
+    "出題後に819条の本文が変わり、今は離婚の際に父母の双方を親権者と定めることもできる。解説は肢のとおり母だけが親権者と定められた場合として書いた",
+    "父が親権者となるには家庭裁判所の手続を経る必要がある点は解釈による"
+   ],
+   "id": "exp-shiho-2019-minpo-q32-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

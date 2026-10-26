@@ -1,0 +1,215 @@
+{
+ "question_id": "shiho-2019-minpo-q36",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q36-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。111条1項1号により、本人の死亡は代理権の消滅事由である。",
+   "body": "111条1項は「代理権は、次に掲げる事由によって消滅する。」と定め、その1号に「本人の死亡」を挙げる。したがって、代理権を授与した本人が死亡すれば、代理権は消滅する。代理権は消滅しないとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "111",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理権は、次に掲げる事由によって消滅する。",
+     "text_sha256": "1571dd1b2bbc9f50c4c3043610b09f2d28f670fa566fe8ae9ac44125a8068e5f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "111",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "本人の死亡",
+     "text_sha256": "1571dd1b2bbc9f50c4c3043610b09f2d28f670fa566fe8ae9ac44125a8068e5f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。111条の本文は2019-05-01時点から変わっていない"
+   ],
+   "id": "exp-shiho-2019-minpo-q36-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q36-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。返還時期の定めがあるときは、受寄者はやむを得ない事由がなければ期限前に返還できず、寄託者の死亡で寄託が終わる定めもない。",
+   "body": "663条2項は「返還の時期の定めがあるときは、受寄者は、やむを得ない事由がなければ、その期限前に返還をすることができない。」と定める。民法には、寄託者の死亡によって寄託が終了するという規定はなく、寄託者が死亡しても寄託契約は相続人との間で続く。そのため、返還時期の定めがある以上、寄託者が死亡したというだけでは、受寄者は期限前に寄託物を返還することはできない。返還できるとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "663",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "返還の時期の定めがあるときは、受寄者は、やむを得ない事由がなければ、その期限前に返還をすることができない。",
+     "text_sha256": "cc7c8ae0bb0aa0dc67eb433eb83cafa676715f78dcdb2e182df514c20ac3cbaf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "寄託者の死亡がそれだけでは「やむを得ない事由」に当たらず、契約が相続人との間で続くという点は解釈による",
+    "現行の条文で説明した（出題は改正前）。663条の本文は2019-05-01時点から変わっていない"
+   ],
+   "id": "exp-shiho-2019-minpo-q36-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q36-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。使用貸借は借主の死亡によって終了するが、貸主の死亡は終了事由とされていない。",
+   "body": "597条3項は「使用貸借は、借主の死亡によって終了する。」と定める。使用貸借は借主との個人的な関係に基づく無償の貸借なので、借主の死亡だけが終了事由とされており、貸主の死亡を終了事由とする規定はない。貸主が死亡しても、使用貸借は貸主の相続人との間で続く。したがって、貸主の死亡によっても効力を失わないとする肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "597",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "使用貸借は、借主の死亡によって終了する。",
+     "text_sha256": "eb103fe512c138a917c45917629b2f48bb91c05b701a6a0baf40d915783a4872",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "使用貸借が借主との個人的な関係に基づくという趣旨は解釈による",
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に597条・599条の本文が変わった（借主の死亡を終了事由とする規定は、出題時点は599条にあり今は597条3項にある。貸主の死亡を終了事由としない点は同じで、結論は同じ）。改正前の内容は引用していない"
+   ],
+   "id": "exp-shiho-2019-minpo-q36-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q36-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。679条1号により、組合員は死亡によって脱退する。",
+   "body": "679条は「前条の場合のほか、組合員は、次に掲げる事由によって脱退する。」と定め、その1号に「死亡」を挙げる。組合員の地位は相続されず、組合員が死亡すれば当然に脱退となる。したがって、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "679",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条の場合のほか、組合員は、次に掲げる事由によって脱退する。",
+     "text_sha256": "b86fa496e5297f92cfbb8766aad1f474695acefba3ad25090b753c000ba86c37",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "組合員の地位が相続されないという点は解釈による",
+    "現行の条文で説明した（出題は改正前）。679条の本文は2019-05-01時点から変わっていない"
+   ],
+   "id": "exp-shiho-2019-minpo-q36-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q36-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。受遺者が遺言者の死亡以前に死亡したときは遺贈は効力を生じないので、受遺者の地位が相続人に承継されることはない。",
+   "body": "994条1項は「遺贈は、遺言者の死亡以前に受遺者が死亡したときは、その効力を生じない。」と定める。遺贈は遺言者の死亡の時に効力を生じるものであり、その時に受遺者がいなければ、受遺者の相続人が代わりに受遺者となること（代襲）はない。そして995条は、遺贈が効力を生じないときは「受遺者が受けるべきであったものは、相続人に帰属する。」と定めており、ここでいう相続人は遺言者の相続人である。したがって、受遺者の地位が受遺者の相続人に承継されるとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "994",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺贈は、遺言者の死亡以前に受遺者が死亡したときは、その効力を生じない。",
+     "text_sha256": "192f65e84bf341fbe4716435649e2e6bfd9baeec8d355a723ae782709f8b85a3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "995",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "受遺者が受けるべきであったものは、相続人に帰属する。",
+     "text_sha256": "c3fa0b1e2ab30dca6ad88f1d54431b5ced5980a21d95b49af5ffd783f310f096",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "995条の「相続人」が遺言者の相続人を指すという点は解釈による",
+    "現行の条文で説明した（出題は改正前）。994条・995条の本文は2019-05-01時点から変わっていない"
+   ],
+   "id": "exp-shiho-2019-minpo-q36-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

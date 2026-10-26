@@ -1,0 +1,45 @@
+{
+ "question_id": "shiho-2018-minpo-q18",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2018-minpo-q18-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法457条3項は、主たる債務者が債権者に対して相殺権を有するときの保証人の地位を「これらの権利の行使によって主たる債務者がその債務を免れるべき限度において、保証人は、債権者に対して債務の履行を拒むことができる」と、履行を拒む権利として定めている。この項は出題後に設けられたもので、出題時点の457条とは効果の定め方が異なるため、今の条文で説明すると出題時点と別の理由になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "457",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "これらの権利の行使によって主たる債務者がその債務を免れるべき限度において、保証人は、債権者に対して債務の履行を拒むことができる",
+     "text_sha256": "741dc7411c5661fdbe115a9788141ee4fbcf679b62e6e3fdab5935330503f2aa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題時点の457条の本文を e-Gov の過去の版（2018-05-01）で読み、今の457条3項と効果の定め方が違うことを確かめた（古い本文は引用していない）。結論（保証人がそのまま履行しなければならないわけではない）は今の条文でも同じだが、決め手の効果が変わったため解説を書かない。同じ論点の yobi-2018-minpo-q08-c も law_changed としている。"
+   ],
+   "id": "exp-shiho-2018-minpo-q18-c",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}
