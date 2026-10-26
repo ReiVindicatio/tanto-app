@@ -1,0 +1,260 @@
+{
+ "question_id": "yobi-2014-minpo-q10",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-minpo-q10-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。引渡しの場所で代金を支払うのは引渡しと同時に代金を支払うべきときであり、引渡しを先に受けた場合は弁済の場所の一般原則による。",
+   "body": "決め手は、引渡しを先に受けた場合でも引渡しの場所で支払わなければならないとする部分。574条は「売買の目的物の引渡しと同時に代金を支払うべきときは、その引渡しの場所において支払わなければならない。」と定め、引渡しと代金の支払が同時である場合に限った規定である。引渡しを先に受けた場合には同条は適用されず、484条1項の「その他の弁済は債権者の現在の住所において」するという原則により、買主は売主の現在の住所で代金を支払うことになると解されている（別段の意思表示がない場合）。よって、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "574",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "売買の目的物の引渡しと同時に代金を支払うべきときは、その引渡しの場所において支払わなければならない。",
+     "text_sha256": "0863a72e9651f5e1f8b9c7cacf1257269f8d1bfd068ea1b5db769822e3501ef6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "484",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その他の弁済は債権者の現在の住所において",
+     "text_sha256": "f5349d95a4743c7bd0cd6b3bf1eb4e70f8c43b7209930f3d3ced5ab11e6eb2bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "引渡しを先に受けた場合に484条1項によるとする点は解釈による（判例は確かめていない）。"
+   ],
+   "id": "exp-yobi-2014-minpo-q10-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-minpo-q10-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。引き渡されていない目的物の果実は、売主が引渡しを遅滞していても売主に帰属するが、買主が代金を支払った後は売主は果実を取得できないと解されている。",
+   "body": "575条1項は「まだ引き渡されていない売買の目的物が果実を生じたときは、その果実は、売主に帰属する。」と定め、2項は「買主は、引渡しの日から、代金の利息を支払う義務を負う。」と定める。これは、引渡しまでの果実と代金の利息とを差し引きして決済を簡単にする趣旨と解されており、売主が引渡しを遅滞していても、引渡しまでは売主が目的物を使用し果実を取得できるとされている（判例あり（要確認））。他方、買主が代金を支払った後は、売主が果実を取得すると売主だけが代金の利益と果実の両方を得ることになるので、売主は果実を取得できないと解されている（判例あり（要確認））。よって、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "575",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "まだ引き渡されていない売買の目的物が果実を生じたときは、その果実は、売主に帰属する。",
+     "text_sha256": "d3dc327ab380fecd5985aff54b244d290d79e939ed1df6a466bc03056ba8cd75",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "575",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "買主は、引渡しの日から、代金の利息を支払う義務を負う。",
+     "text_sha256": "d3dc327ab380fecd5985aff54b244d290d79e939ed1df6a466bc03056ba8cd75",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "売主が引渡しを遅滞していても、引渡しまでは575条により果実を取得できること",
+     "searched": [
+      "courts.py search 果実 売主 代金 引渡",
+      "大審院（データベースにない）の判例である可能性がある"
+     ]
+    },
+    {
+     "about": "買主が代金を支払った後は、売主は引渡し前でも果実を取得できないこと",
+     "searched": [
+      "courts.py search 果実 売主 代金 引渡",
+      "大審院（データベースにない）の判例である可能性がある"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "575条の趣旨、遅滞中でも売主が果実を取得できること、代金支払後は取得できないことは解釈による。"
+   ],
+   "id": "exp-yobi-2014-minpo-q10-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-minpo-q10-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の577条1項は、代金の支払を拒めるのを「契約の内容に適合しない抵当権の登記があるとき」とし、2項も「契約の内容に適合しない先取特権又は質権の登記がある場合」について準用する。肢は抵当権等の登記があれば足りるとしており、今の条文には肢にない「契約の内容に適合しない」という要件が加わっている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "577",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "契約の内容に適合しない抵当権の登記があるとき",
+     "text_sha256": "7a5a71512e2bfb8838d747f22ea41e5dc6150643d07dc0bf159bc14457d595c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "577",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "契約の内容に適合しない先取特権又は質権の登記がある場合",
+     "text_sha256": "7a5a71512e2bfb8838d747f22ea41e5dc6150643d07dc0bf159bc14457d595c8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "577条の要件の文言が出題後に変わっているため（手順3：要件が変わった）、解説を書かなかった。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2014-minpo-q10-c",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-minpo-q10-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。売主が手付の倍額を償還して解除するには、口頭で告げて受領を催告するだけでは足りず、倍額の現実の提供を要する。",
+   "body": "決め手は、口頭で倍額を償還する旨を告げ受領を催告すれば足りるとする部分。557条1項は「買主が売主に手付を交付したときは、買主はその手付を放棄し、売主はその倍額を現実に提供して、契約の解除をすることができる。」と定める。判例（最判平成6年3月22日）も、売主が手付の倍額を償還して売買契約を解除するためには、買主に対してその額の現実の提供をすることを要するとした。したがって、口頭で告げて受領を催告するだけでは足りず、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "557",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "買主が売主に手付を交付したときは、買主はその手付を放棄し、売主はその倍額を現実に提供して、契約の解除をすることができる。",
+     "text_sha256": "d8ab6a1ed923e644103bd509b8c6185252839d4e9cc8ae1508b4b7bd95bd41c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "手付の倍額償還による解除と現実の提供",
+     "court": "最高裁判所第三小法廷",
+     "date": "1994-03-22",
+     "case_number": "平成4(オ)1929",
+     "holding": "売主が手付の倍額を償還して売買契約を解除するためには、買主に対してその額の現実の提供をすることを要する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52501/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。557条1項の改正前の文言は条文の本文で確認していない。出題当時の規律は判例（最判平成6年3月22日）で説明でき、今の条文の「現実に提供」と結論は同じ。"
+   ],
+   "id": "exp-yobi-2014-minpo-q10-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2014-minpo-q10-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。賃借地上の建物の売主は、特別の事情のない限り、敷地の賃借権も譲渡したものとして、その譲渡につき賃貸人の承諾を得る義務を負う。",
+   "body": "612条1項は「賃借人は、賃貸人の承諾を得なければ、その賃借権を譲り渡し、又は賃借物を転貸することができない。」と定める。判例（最判昭和47年3月9日）は、賃借地上にある建物の売買契約が締結された場合においては、特別の事情のない限り、売主は買主に対し、その建物の敷地の賃借権をも譲渡したものであって、それに伴い、その賃借権の譲渡につき賃貸人の承諾を得る義務を負うとした。よって、売主が賃貸人の承諾を得て敷地の賃借権を買主に移転する義務を負うとする肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "612",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賃借人は、賃貸人の承諾を得なければ、その賃借権を譲り渡し、又は賃借物を転貸することができない。",
+     "text_sha256": "61de741aa9b7bc44450830e5a1e3e9eebbb3da19a1f0bacee45b0a37dd5454c9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "借地上の建物の売主と敷地賃借権の譲渡の承諾を得る義務",
+     "court": "最高裁判所第一小法廷",
+     "date": "1972-03-09",
+     "case_number": "昭和45(オ)803",
+     "holding": "賃借地上にある建物の売買契約が締結された場合においては、特別の事情のないかぎり、売主は、買主に対し、その建物の敷地の賃借権をも譲渡したものであって、それに伴い、その賃借権譲渡につき賃貸人の承諾を得る義務を負う。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52018/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2014-minpo-q10-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
