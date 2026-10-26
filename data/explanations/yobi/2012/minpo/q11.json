@@ -1,0 +1,246 @@
+{
+ "question_id": "yobi-2012-minpo-q11",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q11-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の657条は「寄託は、当事者の一方がある物を保管することを相手方に委託し、相手方がこれを承諾することによって、その効力を生ずる。」と定め、有償か無償かを問わず合意によって効力を生ずるとしている。寄託がいつ効力を生ずるかの規律が出題後の債権法改正で変わっており、今の条文で説明すると、肢のどの部分が誤りかが出題の趣旨と別のものになるおそれがある。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "657",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "寄託は、当事者の一方がある物を保管することを相手方に委託し、相手方がこれを承諾することによって、その効力を生ずる。",
+     "text_sha256": "812fbcb0510b54d857dfdbd0d724003737b15cea5292110a67f42f484ccf7478",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "寄託の成立（効力の発生）の規律が出題後の債権法改正で変わったため、解説を書かずに law_changed とした。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2012-minpo-q11-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q11-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。返還の時期を定めた寄託でも、寄託者はいつでも寄託物の返還を請求することができる（662条1項）。",
+   "body": "662条1項は「当事者が寄託物の返還の時期を定めたときであっても、寄託者は、いつでもその返還を請求することができる。」と定めており、肢はこの規定のとおりである。寄託は寄託者のために物を保管する契約であるから、返還の時期の定めは寄託者の返還請求を妨げないとされている。なお、同条2項は、時期の前に返還を請求されたことによって受寄者が損害を受けたときは「寄託者に対し、その賠償を請求することができる。」と定めるが、これは返還請求ができることを前提に損害の賠償を定めるもので、返還請求そのものを制限するものではない。したがって、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "662",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が寄託物の返還の時期を定めたときであっても、寄託者は、いつでもその返還を請求することができる。",
+     "text_sha256": "eee7821f8471a6270f90cf5ffa15e3f94de4ac63fccbd53a28bdb1d239db8183",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "662",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "寄託者に対し、その賠償を請求することができる。",
+     "text_sha256": "eee7821f8471a6270f90cf5ffa15e3f94de4ac63fccbd53a28bdb1d239db8183",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "662条2項（期限前の返還請求による損害の賠償）が出題当時にあったかを含め、改正前の内容は条文の本文で確認していない（寄託者がいつでも返還を請求できるという結論は今の条文でも同じ）"
+   ],
+   "id": "exp-yobi-2012-minpo-q11-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q11-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。商人が営業の範囲内で寄託を受けたときは、報酬を受けなくても善良な管理者の注意をもって保管しなければならない（商法595条）。",
+   "body": "民法659条は「無報酬の受寄者は、自己の財産に対するのと同一の注意をもって、寄託物を保管する義務を負う。」と定め、無報酬の受寄者の注意義務を軽くしている。しかし、商法595条は「商人がその営業の範囲内において寄託を受けた場合には、報酬を受けないときであっても、善良な管理者の注意をもって、寄託物を保管しなければならない。」と定め、商人が営業の範囲内で受けた寄託については、無報酬でも善良な管理者の注意義務を負わせている。したがって、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "659",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "無報酬の受寄者は、自己の財産に対するのと同一の注意をもって、寄託物を保管する義務を負う。",
+     "text_sha256": "c88c5e681d4051a4e0e7b1272a5d9be242b1837080630dd131b77cf16af0837d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "商法",
+     "article": "595",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "商人がその営業の範囲内において寄託を受けた場合には、報酬を受けないときであっても、善良な管理者の注意をもって、寄託物を保管しなければならない。",
+     "text_sha256": "019fb82a48d863c2df3d0190bd2ab463909f29c243bc7fb2d2a4523e6f7a3218",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%B8%89%E5%8D%81%E4%BA%8C%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "民法659条・商法595条の出題当時の文言は確認していない。改正前の内容は条文の本文で確認していない（無報酬でも商人は善管注意義務を負うという結論は今の条文でも同じ）"
+   ],
+   "id": "exp-yobi-2012-minpo-q11-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q11-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。消費寄託には、消費貸借の貸主に相当の期間を定めた催告を求める591条1項が準用されておらず、寄託者は催告をしなくても返還を請求することができる。",
+   "body": "誤りは、返還時期の定めのない消費寄託で寄託者が返還を請求するには相当の期間を定めて催告することを要するとしている点である。消費貸借では、591条1項が「当事者が返還の時期を定めなかったときは、貸主は、相当の期間を定めて返還の催告をすることができる。」と定める。これに対し、消費寄託について666条2項は「第五百九十条及び第五百九十二条の規定は、前項に規定する場合について準用する。」とし、同条3項も預金・貯金について「第五百九十一条第二項及び第三項の規定」を準用するだけで、591条1項は準用していない。そのため消費寄託の返還請求には寄託の規定が適用され、662条1項は「当事者が寄託物の返還の時期を定めたときであっても、寄託者は、いつでもその返還を請求することができる。」と定めるから、返還の時期の定めがないときも、寄託者は催告をせずにいつでも返還を請求できると解される。したがって、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "591",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が返還の時期を定めなかったときは、貸主は、相当の期間を定めて返還の催告をすることができる。",
+     "text_sha256": "704a67c829396d775585933838613e9ac0431f10273ee7ddcf8472e87919784f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "666",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第五百九十条及び第五百九十二条の規定は、前項に規定する場合について準用する。",
+     "text_sha256": "526aef2e7426c3ad0411cb1c5b4686be760149e56dad8c5f2face2b08e5110da",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "666",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第五百九十一条第二項及び第三項の規定",
+     "text_sha256": "526aef2e7426c3ad0411cb1c5b4686be760149e56dad8c5f2face2b08e5110da",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "662",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が寄託物の返還の時期を定めたときであっても、寄託者は、いつでもその返還を請求することができる。",
+     "text_sha256": "eee7821f8471a6270f90cf5ffa15e3f94de4ac63fccbd53a28bdb1d239db8183",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "666条（消費寄託）は出題後の債権法改正で書き改められたと解される。改正前の内容は条文の本文で確認していない（催告を要せずいつでも返還を請求できるという結論は今の条文でも同じ）",
+    "返還の時期の定めがない場合にも662条1項によりいつでも返還を請求できるとする点は解釈による"
+   ],
+   "id": "exp-yobi-2012-minpo-q11-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q11-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。寄託者は寄託物の瑕疵によって生じた損害を受寄者に賠償しなければならないが、過失なくその瑕疵を知らなかったときは賠償しなくてよい（661条）。",
+   "body": "661条は「寄託者は、寄託物の性質又は瑕疵によって生じた損害を受寄者に賠償しなければならない。ただし、寄託者が過失なくその性質若しくは瑕疵を知らなかったとき、又は受寄者がこれを知っていたときは、この限りでない。」と定める。本文が寄託物の瑕疵による損害の賠償義務という原則を定め、ただし書が寄託者が過失なく瑕疵を知らなかったときの免責を定めているので、肢はこの規定のとおりである。したがって、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "661",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "寄託者は、寄託物の性質又は瑕疵によって生じた損害を受寄者に賠償しなければならない。ただし、寄託者が過失なくその性質若しくは瑕疵を知らなかったとき、又は受寄者がこれを知っていたときは、この限りでない。",
+     "text_sha256": "1c7de8ec136b55fa96587067cdcbf29e06004c7988098a2b519684a65929cdcc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "661条の出題当時の文言は確認していない。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2012-minpo-q11-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

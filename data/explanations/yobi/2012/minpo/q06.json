@@ -1,0 +1,221 @@
+{
+ "question_id": "yobi-2012-minpo-q06",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q06-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。動産が第三取得者に引き渡された後は先取特権を行使できず（333条）、売主と買主の特約で転買主に対する効力を広げることはできない。",
+   "body": "決め手は333条で、「先取特権は、債務者がその目的である動産をその第三取得者に引き渡した後は、その動産について行使することができない。」と定め、第三取得者の善意・悪意で区別していない。売主は動産の売買によって生じた債権について先取特権を持つが（311条5号、321条）、買主が目的物を転売して転買主に引き渡せば、その動産には行使できなくなる。肢の特約は売主と買主の間の合意にすぎず、当事者の合意で法律の定める物権の効力を変えて第三者に及ぼすことはできないと解されている（175条は「物権は、この法律その他の法律に定めるもののほか、創設することができない。」とする）。したがって、転買主が特約を知っていても、売主は転買主が占有する目的物に先取特権を行使できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "333",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "先取特権は、債務者がその目的である動産をその第三取得者に引き渡した後は、その動産について行使することができない。",
+     "text_sha256": "670e038ae0f481d8783d37ab1fd8e66e7a18465d7197da5c0a927d7446ac4272",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "311",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "動産の売買",
+     "text_sha256": "165463f0f8097eaabbfdacae6ea254f72006f8e1cf677f5a8f1f59af4a8aa4d6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "321",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "動産の売買の先取特権は、動産の代価及びその利息に関し、その動産について存在する。",
+     "text_sha256": "1f5461d8b1529628b4f19e0acc4924bae848eb512ce8997ad84c7415843c21d2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "175",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "物権は、この法律その他の法律に定めるもののほか、創設することができない。",
+     "text_sha256": "40cfd941bf9c26cd0a5d40788bd7d28f0b57079a58fbb3ae2360b3b125227a5a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない",
+    "当事者間の特約で先取特権の効力を第三取得者に及ぼせないとの説明は解釈による"
+   ],
+   "id": "exp-yobi-2012-minpo-q06-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q06-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。質権の被担保債権の範囲は「設定行為に別段の定めがあるときは、この限りでない」（346条ただし書）ので、利息を除く特約は有効で、利息は担保されない。",
+   "body": "誤りは「利息は，質権の被担保債権に含まれる」の部分である。346条本文は「質権は、元本、利息、違約金、質権の実行の費用、質物の保存の費用及び債務の不履行又は質物の隠れた瑕疵によって生じた損害の賠償を担保する。」と定めるが、ただし書で「設定行為に別段の定めがあるときは、この限りでない。」とする。したがって、質権者と質権設定者が利息は担保されないと特約すれば、その特約に従い、利息は質権の被担保債権に含まれない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "346",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権は、元本、利息、違約金、質権の実行の費用、質物の保存の費用及び債務の不履行又は質物の隠れた瑕疵によって生じた損害の賠償を担保する。",
+     "text_sha256": "8fc83f101a1fc8bdf809606d4f9b0fe2b46579a44b6965056fd25553e475f592",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "346",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設定行為に別段の定めがあるときは、この限りでない。",
+     "text_sha256": "8fc83f101a1fc8bdf809606d4f9b0fe2b46579a44b6965056fd25553e475f592",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2012-minpo-q06-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q06-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。不動産質権者の使用収益権（356条）は、設定行為に別段の定めがあるときは適用されない（359条）ので、特約で排除できる。",
+   "body": "誤りは「その使用収益権を排除することはできない」の部分である。356条は「不動産質権者は、質権の目的である不動産の用法に従い、その使用及び収益をすることができる。」と定める。しかし359条は「前三条の規定は、設定行為に別段の定めがあるとき、又は担保不動産収益執行（民事執行法第百八十条第二号に規定する担保不動産収益執行をいう。以下同じ。）の開始があったときは、適用しない。」とし、356条もこの「前三条」に含まれる。したがって、質権者と質権設定者の特約で使用収益権を排除することができる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "356",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産質権者は、質権の目的である不動産の用法に従い、その使用及び収益をすることができる。",
+     "text_sha256": "79e91856d245b0909cd9d6b6c984611ba1fc3fc8c1759c0b89d5489adc3e0c7a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "359",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前三条の規定は、設定行為に別段の定めがあるとき、又は担保不動産収益執行（民事執行法第百八十条第二号に規定する担保不動産収益執行をいう。以下同じ。）の開始があったときは、適用しない。",
+     "text_sha256": "c1306379a4538fd58845eafa642861e8a35bbbf9a474cdd505c386c0959cd5d4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2012-minpo-q06-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q06-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。土地の抵当権の効力は「抵当地の上に存する建物を除き」及ぶ（370条）ので、特約をしても土地の抵当権が建物に及ぶことはない。",
+   "body": "誤りは「その土地の抵当権は，土地の上に存するその建物にも及ぶ」の部分である。370条本文は「抵当権は、抵当地の上に存する建物を除き、その目的である不動産（以下「抵当不動産」という。）に付加して一体となっている物に及ぶ。」と定め、土地の上の建物を土地の抵当権の効力の範囲から外している。370条ただし書の「設定行為に別段の定めがある場合」は、付加一体物に効力を及ぼさない定めを許すものと解されており、別個の不動産である建物に土地の抵当権を及ぼすことまで認めるものではないと解されている。建物に抵当権の効力を及ぼしたければ、建物そのものに抵当権を設定する必要がある。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "370",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権は、抵当地の上に存する建物を除き、その目的である不動産（以下「抵当不動産」という。）に付加して一体となっている物に及ぶ。",
+     "text_sha256": "854276796c8c6353138b8e691ef004f5dc446b6dadda1af47cd01b822dbaddac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "370",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設定行為に別段の定めがある場合",
+     "text_sha256": "854276796c8c6353138b8e691ef004f5dc446b6dadda1af47cd01b822dbaddac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。370条ただし書の詐害行為取消請求の文言は債権法改正で変わったが、本肢の結論には関係しない",
+    "370条ただし書の「別段の定め」の意味、建物が土地とは別個の不動産であるとの説明は解釈による"
+   ],
+   "id": "exp-yobi-2012-minpo-q06-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

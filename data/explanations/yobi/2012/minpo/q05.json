@@ -1,0 +1,342 @@
+{
+ "question_id": "yobi-2012-minpo-q05",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q05-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。所有者（債務者）の承諾を得て留置物を賃貸したときは、占有を失っても留置権は消滅しない（302条ただし書）。",
+   "body": "誤りは「所有者の同意を得ていても，留置権は消滅する」の部分である。298条2項は「留置権者は、債務者の承諾を得なければ、留置物を使用し、賃貸し、又は担保に供することができない。」と定め、承諾があれば賃貸できることを前提にしている。そして302条は「留置権は、留置権者が留置物の占有を失うことによって、消滅する。」としつつ、ただし書で「第二百九十八条第二項の規定により留置物を賃貸し、又は質権の目的としたときは、この限りでない。」と定める。したがって、承諾を得て第三者に賃貸した場合には留置権は消滅しない。なお、賃借人を通じて留置権者が間接に占有を続けていると説明されることが多い（解釈による）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "298",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "留置権者は、債務者の承諾を得なければ、留置物を使用し、賃貸し、又は担保に供することができない。",
+     "text_sha256": "a61b1780dbdd816fb30c10413d5379bf275d6e1120431a4f6081e746a0cb65a7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "302",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "留置権は、留置権者が留置物の占有を失うことによって、消滅する。",
+     "text_sha256": "bef404466d6d802fadae642bcffc4975f35d13faa77b25b9956f01a726090c05",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "302",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百九十八条第二項の規定により留置物を賃貸し、又は質権の目的としたときは、この限りでない。",
+     "text_sha256": "bef404466d6d802fadae642bcffc4975f35d13faa77b25b9956f01a726090c05",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない",
+    "肢の「所有者の同意」を、298条2項の「債務者の承諾」に当たるものとして読んだ",
+    "間接占有による説明は解釈による"
+   ],
+   "id": "exp-yobi-2012-minpo-q05-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q05-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。占有回収の訴えで勝訴し現実に占有を回復すれば占有は継続していたものとされ、占有の喪失による留置権の消滅（302条）は生じない。",
+   "body": "302条は「留置権は、留置権者が留置物の占有を失うことによって、消滅する。」と定める。もっとも、203条は占有権が「占有物の所持を失うことによって消滅する」としつつ、ただし書で「占有者が占有回収の訴えを提起したときは、この限りでない。」と定め、占有を奪われた者は200条1項により「占有回収の訴えにより、その物の返還及び損害の賠償を請求することができる。」。最高裁昭和44年12月2日判決は、203条ただし書は、占有を奪われた者が占有回収の訴えを提起して勝訴し、現実にその物の占有を回復した場合に、占有の継続を擬制する趣旨であるとした。そのため、勝訴して現実に占有を回復した留置権者は占有を失わなかったことになり、留置権は消滅しないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "302",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "留置権は、留置権者が留置物の占有を失うことによって、消滅する。",
+     "text_sha256": "bef404466d6d802fadae642bcffc4975f35d13faa77b25b9956f01a726090c05",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "203",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有物の所持を失うことによって消滅する",
+     "text_sha256": "a43fde6568eecf2f600f3a34ab406af441595f7eab699541405fe523080edce5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "203",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有者が占有回収の訴えを提起したときは、この限りでない。",
+     "text_sha256": "a43fde6568eecf2f600f3a34ab406af441595f7eab699541405fe523080edce5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "200",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有回収の訴えにより、その物の返還及び損害の賠償を請求することができる。",
+     "text_sha256": "37ff60d798383f8e7dcda5ccbd63cc920f93a30bbd1be15f64324882699130d1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "占有回収の訴えによる占有の回復と占有の継続（203条ただし書の趣旨）",
+     "court": "最高裁判所第三小法廷",
+     "date": "1969-12-02",
+     "case_number": "昭和42(オ)301",
+     "holding": "民法203条ただし書は、占有を奪われた者が、占有回収の訴えを提起して勝訴し、現実にその物の占有を回復した場合に、占有の継続を擬制する趣旨と解するのが相当である。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51897/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない",
+    "判例は203条ただし書の趣旨についてのもので、これを留置権の存続（302条）に当てはめるのは解釈による"
+   ],
+   "id": "exp-yobi-2012-minpo-q05-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q05-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。物上代位を定める304条は抵当権に準用される（372条）が、留置権には準用する規定がない。",
+   "body": "304条1項は先取特権について「その目的物の売却、賃貸、滅失又は損傷によって債務者が受けるべき金銭その他の物に対しても、行使することができる。」と定め、372条は「第二百九十六条、第三百四条及び第三百五十一条の規定は、抵当権について準用する。」とする。したがって、抵当権者は、目的物が第三者の行為で滅失したとき、所有者がその第三者に対して有する損害賠償請求権に物上代位でき、払渡し前に差押えをすれば優先弁済を受けられる。これに対し、留置権の規定（295条から302条まで）には304条を準用する規定がない（質権には350条で準用されている）。留置権は目的物を留置して弁済を促す権利で、優先弁済を受ける効力（297条の果実の充当を除く）を持たないため、物上代位は認められないと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "304",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その目的物の売却、賃貸、滅失又は損傷によって債務者が受けるべき金銭その他の物に対しても、行使することができる。",
+     "text_sha256": "b1d11df2a52bc9d5d50b2080a81c4513959c0d738f906fbf8ec831ddcca44d4d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "304",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "先取特権者は、その払渡し又は引渡しの前に差押えをしなければならない。",
+     "text_sha256": "b1d11df2a52bc9d5d50b2080a81c4513959c0d738f906fbf8ec831ddcca44d4d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "372",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百九十六条、第三百四条及び第三百五十一条の規定は、抵当権について準用する。",
+     "text_sha256": "8425da3902ddc690c551ae65b8a6e0edd78d749eea824d1e2c5ab95e4e8b7d7c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "350",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百九十六条から第三百条まで及び第三百四条の規定は、質権について準用する。",
+     "text_sha256": "f1e3b2cebdf54f6474e2883fe0b05ba5e6243ca64ee25faf744b68109735c1d9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "295",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その債権の弁済を受けるまで、その物を留置することができる。",
+     "text_sha256": "5c120d320238e83f832ef9e2f8c7e848a8fd3c0499a6d5e4aabf099e22e7bdee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "297",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "留置権者は、留置物から生ずる果実を収取し、他の債権者に先立って、これを自己の債権の弁済に充当することができる。",
+     "text_sha256": "1077eb9fea572505a65743a557d68b6e90f6ad1be6704e7fe3604e2e4c1f37f0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "302",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "留置権は、留置権者が留置物の占有を失うことによって、消滅する。",
+     "text_sha256": "bef404466d6d802fadae642bcffc4975f35d13faa77b25b9956f01a726090c05",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない",
+    "留置権の規定（295条〜302条）に304条の準用がないことは、各条の本文を表示して確かめた",
+    "留置権に優先弁済的効力がなく物上代位が認められないとの説明は解釈による"
+   ],
+   "id": "exp-yobi-2012-minpo-q05-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q05-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。留置権者も留置権による競売を申し立てることができる（民事執行法195条）。",
+   "body": "誤りは「留置権者は，目的物の競売を申し立てることはできない」の部分である。留置権は295条1項のとおり「その債権の弁済を受けるまで、その物を留置することができる」権利で、優先弁済を受ける効力はない。しかし、民事執行法195条は「留置権による競売及び民法、商法その他の法律の規定による換価のための競売については、担保権の実行としての競売の例による。」と定め、留置権による競売を予定している。したがって、留置権者も目的物の競売を申し立てることができる。この競売は、長く留置を続ける負担から留置権者を解放するための換価の手続（いわゆる形式的競売）と解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "295",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その債権の弁済を受けるまで、その物を留置することができる",
+     "text_sha256": "5c120d320238e83f832ef9e2f8c7e848a8fd3c0499a6d5e4aabf099e22e7bdee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "195",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "留置権による競売及び民法、商法その他の法律の規定による換価のための競売については、担保権の実行としての競売の例による。",
+     "text_sha256": "4340d1f7c4836580db1434fd3285b9df92ec6aba3e33b75f028ac67da4e75d66",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない",
+    "形式的競売の趣旨の説明は解釈による"
+   ],
+   "id": "exp-yobi-2012-minpo-q05-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q05-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。「留置権の行使は、債権の消滅時効の進行を妨げない」（300条）ため、目的物を占有していても被担保債権は時効で消滅しうる。",
+   "body": "誤りは「債権者が目的物を占有している限り，被担保債権が時効消滅することはない」の部分である。300条は「留置権の行使は、債権の消滅時効の進行を妨げない。」と定める。目的物を留置しているだけでは、被担保債権そのものについて権利を行使したことにはならず、消滅時効は進行する。したがって、占有を続けていても被担保債権は時効で消滅しうる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "300",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "留置権の行使は、債権の消滅時効の進行を妨げない。",
+     "text_sha256": "abaf6bf8faf53d0b82be4b421b4c2ba4c05c2b552b55a2db6a9587b715826b77",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。時効の完成猶予・更新の制度は出題後に改正されたが、300条の本文で結論が決まる"
+   ],
+   "id": "exp-yobi-2012-minpo-q05-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

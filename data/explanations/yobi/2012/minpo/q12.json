@@ -1,0 +1,258 @@
+{
+ "question_id": "yobi-2012-minpo-q12",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q12-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、事務管理者が本人の名でした法律行為の効果は当然には本人に及ばないとしている。",
+   "body": "誤りは、事務管理の効力として法律行為の効果が直接本人に帰属するとしている点である。事務管理の規定（697条以下）は、管理者と本人との間の義務や費用の償還などを定めるもので、管理者に本人を代理する権限を与える規定はない。最高裁昭和36年11月30日判決は、事務管理者が本人の名でした法律行為の効果は、当然には本人に及ぶものではないとした。代理権を有しない者が本人の名でした契約については、113条1項が「代理権を有しない者が他人の代理人としてした契約は、本人がその追認をしなければ、本人に対してその効力を生じない。」と定めており、本人に効果を帰属させるには本人の追認などが必要と解されている。したがって、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "697",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "義務なく他人のために事務の管理を始めた者",
+     "text_sha256": "af2fed21d1e2b3f147659f646914f859978277be9a4d6cddf248034f0a14e1e1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "113",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理権を有しない者が他人の代理人としてした契約は、本人がその追認をしなければ、本人に対してその効力を生じない。",
+     "text_sha256": "94916a1f09225da541bb996a4a974034241260a7a0c7699fb637b91a90934aa5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "事務管理者が本人の名でした法律行為の効果",
+     "court": "最高裁判所第一小法廷",
+     "date": "1961-11-30",
+     "case_number": "昭和36(オ)342",
+     "holding": "事務管理者が本人の名でした法律行為の効果は、当然には本人に及ぶものではない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53758/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "本人に効果を帰属させるには追認などが必要とする点（無権代理の規定による扱い）は解釈による"
+   ],
+   "id": "exp-yobi-2012-minpo-q12-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q12-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。本人の意思に反して事務管理をした管理者は、本人が現に利益を受けている限度においてのみ有益な費用の償還を請求できる（702条3項）。",
+   "body": "702条1項は「管理者は、本人のために有益な費用を支出したときは、本人に対し、その償還を請求することができる。」と定める。そのうえで同条3項は「管理者が本人の意思に反して事務管理をしたときは、本人が現に利益を受けている限度においてのみ、前二項の規定を適用する。」と定め、本人の意思に反する事務管理では償還の範囲を現存利益に限っている。肢はこの規定のとおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "702",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管理者は、本人のために有益な費用を支出したときは、本人に対し、その償還を請求することができる。",
+     "text_sha256": "3a941f810c7c266639da18e42f68a143f6d20b89842d12970bcba33e950c5dec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "702",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "管理者が本人の意思に反して事務管理をしたときは、本人が現に利益を受けている限度においてのみ、前二項の規定を適用する。",
+     "text_sha256": "3a941f810c7c266639da18e42f68a143f6d20b89842d12970bcba33e950c5dec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "702条の出題当時の文言は確認していない。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2012-minpo-q12-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q12-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。管理者が本人のために有益な債務を負担したときは、650条2項の準用により、自己に代わって弁済することを本人に請求できる（702条2項）。",
+   "body": "702条2項は「第六百五十条第二項の規定は、管理者が本人のために有益な債務を負担した場合について準用する。」と定める。準用される650条2項は、受任者が債務を負担したときは「委任者に対し、自己に代わってその弁済をすることを請求することができる。」と定めている。したがって、事務管理によって本人のために有益な債務を負担した管理者は、自己に代わってその弁済をすることを本人に請求でき、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "702",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第六百五十条第二項の規定は、管理者が本人のために有益な債務を負担した場合について準用する。",
+     "text_sha256": "3a941f810c7c266639da18e42f68a143f6d20b89842d12970bcba33e950c5dec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "650",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "委任者に対し、自己に代わってその弁済をすることを請求することができる。",
+     "text_sha256": "c8d7dac2ae2fa48748a033348ac0168d2d83ef658e54c7b3244cb55094342a4a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "702条・650条の出題当時の文言は確認していない。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-yobi-2012-minpo-q12-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q12-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。管理者は報酬を請求できるかどうかにかかわらず善良な管理者の注意をもって事務を処理すべきと解されており、そもそも事務管理には報酬を請求できる旨の規定がない。",
+   "body": "誤りは、報酬を請求できる場合に限って善良な管理者の注意義務を負うとしている点である。697条1項は、管理者は「その事務の性質に従い、最も本人の利益に適合する方法によって、その事務の管理（以下「事務管理」という。）をしなければならない。」と定め、報酬の有無によって管理の仕方を区別していない。そして698条が、急迫の危害を免れさせるための事務管理に限って「悪意又は重大な過失があるのでなければ、これによって生じた損害を賠償する責任を負わない。」と責任を軽くしていることから、それ以外の事務管理では、管理者は報酬の有無にかかわらず善良な管理者の注意義務を負うと解されている。また、702条は費用の償還などを定めるだけで、事務管理に報酬の請求を認める規定はない。したがって、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "697",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その事務の性質に従い、最も本人の利益に適合する方法によって、その事務の管理（以下「事務管理」という。）をしなければならない。",
+     "text_sha256": "af2fed21d1e2b3f147659f646914f859978277be9a4d6cddf248034f0a14e1e1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "698",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "悪意又は重大な過失があるのでなければ、これによって生じた損害を賠償する責任を負わない。",
+     "text_sha256": "6eaf036df296eb97f31d81702817dd8d46ee3e4d078986c200ec584907129f57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "702",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管理者は、本人のために有益な費用を支出したときは、本人に対し、その償還を請求することができる。",
+     "text_sha256": "3a941f810c7c266639da18e42f68a143f6d20b89842d12970bcba33e950c5dec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "管理者が報酬の有無にかかわらず善良な管理者の注意義務を負うこと、事務管理では原則として報酬を請求できないことは解釈による"
+   ],
+   "id": "exp-yobi-2012-minpo-q12-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q12-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。本人の身体・名誉・財産に対する急迫の危害を免れさせるための事務管理（緊急事務管理）では、管理者は悪意又は重大な過失がなければ損害賠償の責任を負わない（698条）。",
+   "body": "698条は「管理者は、本人の身体、名誉又は財産に対する急迫の危害を免れさせるために事務管理をしたときは、悪意又は重大な過失があるのでなければ、これによって生じた損害を賠償する責任を負わない。」と定める。肢はこの規定のとおりであり、緊急の場面で他人のために事務を管理した者の責任を軽くする趣旨と解されている。したがって、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "698",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管理者は、本人の身体、名誉又は財産に対する急迫の危害を免れさせるために事務管理をしたときは、悪意又は重大な過失があるのでなければ、これによって生じた損害を賠償する責任を負わない。",
+     "text_sha256": "6eaf036df296eb97f31d81702817dd8d46ee3e4d078986c200ec584907129f57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "698条の出題当時の文言は確認していない。改正前の内容は条文の本文で確認していない",
+    "規定の趣旨は解釈による"
+   ],
+   "id": "exp-yobi-2012-minpo-q12-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

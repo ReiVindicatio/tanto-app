@@ -1,0 +1,266 @@
+{
+ "question_id": "yobi-2012-minpo-q09",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q09-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法457条3項は、主たる債務者が債権者に対して相殺権を有するときは、「保証人は、債権者に対して債務の履行を拒むことができる」と定め、保証人が主たる債務者の債権による相殺をもって債権者に対抗するという形をとっていない。肢は保証人が主たる債務者の債権で相殺して対抗できるかを問うものであり、その前提の規律が今の条文では履行拒絶に変わっているため、今の条文では公式の○×を説明できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "457",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "保証人は、債権者に対して債務の履行を拒むことができる",
+     "text_sha256": "741dc7411c5661fdbe115a9788141ee4fbcf679b62e6e3fdab5935330503f2aa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2012-minpo-q09-1",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q09-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法458条は連帯保証人について生じた事由に441条などを準用し、441条は「連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない」と定めるため、連帯保証人に対する履行の請求は、別段の意思表示がない限り主たる債務の時効に影響しない。肢は連帯保証人への裁判上の請求が主たる債務の時効を中断させることを前提としており、今の条文では公式の○×に行き着かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "458",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四百三十八条、第四百三十九条第一項、第四百四十条及び第四百四十一条の規定は、主たる債務者と連帯して債務を負担する保証人について生じた事由について準用する",
+     "text_sha256": "fbc8a6d220ee582ace835fb1f1ccdc6643d44d9f5f8f1ba9318134d1a3522908",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "肢の「時効が中断する」は今の民法では時効の完成猶予・更新に当たるが、それ以前に請求の効力が及ぶ範囲が変わっている。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2012-minpo-q09-2",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q09-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。連帯保証人がした承認は、主たる債務者には効力が及ばず、主たる債務の消滅時効を中断（今の民法でいう更新）させない。",
+   "body": "決め手は、連帯保証人の承認で「主たる債務についての消滅時効が中断する」としている部分である。承認があれば時効は「その時から新たにその進行を始める」（152条1項）が、それは承認をした者の債務についてである。458条は連帯保証人について生じた事由に441条を準用し、441条は「連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない」と定めるから、連帯保証人の承認は主たる債務者に効力を生じない。逆向きの457条1項（主たる債務者について生じた時効の完成猶予・更新は保証人にも及ぶ）とは異なり、保証人側の事由が主たる債務に及ぶ規定はない。委託を受けたかどうかもこの結論を左右しない。したがって本肢は誤り。肢の「時効の中断」は、今の民法では承認による「時効の更新」（152条）として定められている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "152",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その時から新たにその進行を始める",
+     "text_sha256": "73d4963338a58831e6d78d5e89746df7e38d0b86ae408813dba435462e740c5d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "458",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四百三十八条、第四百三十九条第一項、第四百四十条及び第四百四十一条の規定は、主たる債務者と連帯して債務を負担する保証人について生じた事由について準用する",
+     "text_sha256": "fbc8a6d220ee582ace835fb1f1ccdc6643d44d9f5f8f1ba9318134d1a3522908",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "457",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主たる債務者に対する履行の請求その他の事由による時効の完成猶予及び更新は、保証人に対しても、その効力を生ずる",
+     "text_sha256": "741dc7411c5661fdbe115a9788141ee4fbcf679b62e6e3fdab5935330503f2aa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "名前が変わった（規律と結論は同じ）。肢の「時効の中断」は今の民法では承認による時効の更新（152条）。",
+    "現行の条文で説明した（出題は改正前）。458条の準用の範囲は出題後に改正されているが、承認が主たる債務者に及ばないという結論は今の条文でも同じ。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2012-minpo-q09-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q09-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。負担部分に限って求償できるのは「他の債務者」に対してであり、委託をした連帯債務者本人に対しては、弁済した全額について求償できる。",
+   "body": "決め手は、委託をした連帯債務者本人に対する求償を「その者の負担部分についてのみ」としている部分である。464条は、「連帯債務者又は不可分債務者の一人のために保証をした者は、他の債務者に対し、その負担部分のみについて求償権を有する」と定めており、負担部分に限られるのは保証をしていない他の連帯債務者に対する求償である。保証をしてもらった連帯債務者本人との関係では、その者が主たる債務者であり、委託を受けた保証人は459条1項により「主たる債務者に対し、そのために支出した財産の額…の求償権を有する」。したがって、全額を弁済した保証人は、委託をした連帯債務者に対して全額を求償でき、本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "464",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者又は不可分債務者の一人のために保証をした者は、他の債務者に対し、その負担部分のみについて求償権を有する",
+     "text_sha256": "4407171cba156e834592b7f582b6e698c291fe907ed53336a65cff7a42be053b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "459",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主たる債務者に対し、そのために支出した財産の額",
+     "text_sha256": "3867107bb4cf2104b9ccf7bf5724bf3606ffa00bc7367dd08108efb098d48635",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。459条1項は出題後に改正されており、改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2012-minpo-q09-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q09-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。主たる債務者に資力があり執行が容易であることを証明して先に主たる債務者へ向かわせる検索の抗弁は、保証人が債権者に対して主張するものであり、共同保証人間の求償では主張できない。",
+   "body": "決め手は、求償を受けた共同保証人が検索の抗弁と同じ主張をできるとしている部分である。453条は、保証人が「主たる債務者に弁済をする資力があり、かつ、執行が容易であることを証明したときは、債権者は、まず主たる債務者の財産について執行をしなければならない」と定めるが、これは債権者と保証人との間の規定である。共同保証人間の求償は465条が定め、1項・2項とも求償の規定を準用するのみで、求償を受けた保証人が主たる債務者への求償を先にさせる旨の規定はない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "453",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主たる債務者に弁済をする資力があり、かつ、執行が容易であることを証明したときは、債権者は、まず主たる債務者の財産について執行をしなければならない",
+     "text_sha256": "5a254cda0cc46e06aed818b477f5cc132c6efafb0e2e354ac98ec8f6eb4e90bf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "465",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四百四十二条から第四百四十四条までの規定は、数人の保証人がある場合において",
+     "text_sha256": "70d620f2e7be2805362bad8b422188926a957a3d93e6d13b0ffa4f3ca4ef1e44",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "465",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第四百六十二条の規定は、前項に規定する場合を除き、互いに連帯しない保証人の一人が全額又は自己の負担部分を超える額を弁済したときについて準用する",
+     "text_sha256": "70d620f2e7be2805362bad8b422188926a957a3d93e6d13b0ffa4f3ca4ef1e44",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2012-minpo-q09-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,230 @@
+{
+ "question_id": "yobi-2012-minpo-q08",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q08-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。代位訴訟で請求を認容する判決が確定しただけで、被代位権利が弁済により消滅したものとみなされることはない。",
+   "body": "決め手は「判決が確定すれば…弁済により消滅したものとみなされる」の部分である。423条の3は、被代位権利が金銭の支払を目的とするときは、債権者は相手方に「その支払又は引渡しを自己に対してすることを求めることができる」とし、「相手方が債権者に対してその支払又は引渡しをしたときは、被代位権利は、これによって消滅する」と定める。被代位権利が消滅するのは相手方Ｂが現実に支払ったときであり、認容判決の確定によって弁済があったとみなす規定はない。判決が確定しても、Ｂが支払わなければＡのＢに対する売買代金債権は残る。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その支払又は引渡しを自己に対してすることを求めることができる",
+     "text_sha256": "3242a2c55b8931f518a3b0df09b0506136982b1e91c25f1da20580741bc633df",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方が債権者に対してその支払又は引渡しをしたときは、被代位権利は、これによって消滅する",
+     "text_sha256": "3242a2c55b8931f518a3b0df09b0506136982b1e91c25f1da20580741bc633df",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。423条の3は債権法改正で設けられた規定であり、改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2012-minpo-q08-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q08-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法423条の5は、「債権者が被代位権利を行使した場合であっても、債務者は、被代位権利について、自ら取立てその他の処分をすることを妨げられない」と定め、債権者の代位権行使によって債務者の処分権限が制限されることを前提としていない。肢は、代位権行使の着手を知った債務者の処分が制限されるかどうか（通知の要否）を問うものであり、その前提の規律が今の条文にはないため、今の条文では公式の○×を説明できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423_5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が被代位権利を行使した場合であっても、債務者は、被代位権利について、自ら取立てその他の処分をすることを妨げられない",
+     "text_sha256": "fbe1117303ceee1bfb2ede34aab3463821ca492bde345a3017910d78b75cf86d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題当時の判例（代位権行使に着手した事実を債務者が知った後の処分の制限）は、courts.py で確かめていない。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2012-minpo-q08-2",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q08-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。前半（自己の名で行使する）は正しいが、代位債権者は善良な管理者の注意をもって権利を行使すべきであり、「自己の財産におけるのと同一の注意」で足りるのではないと解されている。",
+   "body": "決め手は後半の「自己の財産におけるのと同一の注意をもって権利を行使すれば足りる」の部分である。423条1項は、債権者は「債務者に属する権利（以下「被代位権利」という。）を行使することができる」と定め、債権者は債務者の代理人としてではなく、自己の名で被代位権利を行使する。もっとも、代位債権者は他人である債務者の権利を管理・行使するものであるから、委任の受任者に関する644条の「善良な管理者の注意」に準じた注意義務を負うと解されている。したがって、自己の財産と同一の注意で足りるとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者に属する権利（以下「被代位権利」という。）を行使することができる",
+     "text_sha256": "bd8ef03d0c0f16adfbbafda7db96a6bd402b3335529029bed09a72be6c3b987a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "644",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "善良な管理者の注意",
+     "text_sha256": "adddd2441564a6bc9d5cb5ccef2fba4ab88a9c29eb692736c1868db91388a8bc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "代位債権者が自己の名で権利を行使すること、善管注意義務を負うことは条文に明記がなく、解釈による。",
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2012-minpo-q08-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q08-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。判例は、協議・審判等で具体的内容が形成される前の財産分与請求権は代位行使の目的とならないとしており、審判で具体的内容が確定した後は代位の目的とすることができる。",
+   "body": "423条1項ただし書は、「債務者の一身に専属する権利及び差押えを禁じられた権利は、この限りでない」とし、これらを代位行使の対象から除いている。最高裁昭和55年7月11日判決は、離婚後協議あるいは審判等によって具体的内容が形成される前の財産分与請求権を保全するために債権者代位権を行使することは許されないとした。具体的内容が形成される前は、768条3項のとおり家庭裁判所が「分与をさせるべきかどうか並びに分与の額及び方法を定める」までは権利の範囲・内容が定まらないためと解されている。これに対し、審判により具体的内容が確定すれば、通常の金銭債権等と同様に代位の目的とすることができると解されている。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者の一身に専属する権利及び差押えを禁じられた権利は、この限りでない",
+     "text_sha256": "bd8ef03d0c0f16adfbbafda7db96a6bd402b3335529029bed09a72be6c3b987a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "768",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "分与をさせるべきかどうか並びに分与の額及び方法を定める",
+     "text_sha256": "f9bbe6469e675d32da1bc6bc1df1dc9dc7208af280a71b99fa84d8aeb1836b9a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "具体的内容形成前の財産分与請求権と債権者代位権",
+     "court": "最高裁判所第二小法廷",
+     "date": "1980-07-11",
+     "case_number": "昭和53(オ)321",
+     "holding": "離婚後協議あるいは審判等によって具体的内容が形成される前の財産分与請求権を保全するために債権者代位権を行使することは許されない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53326/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "判決は具体的内容の形成前の代位を否定したもの。形成後に代位できること、その理由づけは解釈による（判決全文は今回読んでいない。判示事項・裁判要旨で確認）。",
+    "現行の条文で説明した（出題は改正前）。768条は出題後に改正されており、改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2012-minpo-q08-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2012-minpo-q08-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。金銭債権のように目的が可分な権利を代位行使するときは、自己の債権の額が限度であり、他の債権者の債権の総額に占める割合で按分した額に限られるわけではない。",
+   "body": "決め手は「複数の債権者が有する債権の総額に占める代位債権者の債権の額の割合に応じて算出された額を限度とする」の部分である。423条の2は、「被代位権利の目的が可分であるときは、自己の債権の額の限度においてのみ、被代位権利を行使することができる」と定める。限度は代位債権者自身の債権の額であり、他の債権者の存在や債権額によって按分した額に縮減されるという規定はない。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被代位権利の目的が可分であるときは、自己の債権の額の限度においてのみ、被代位権利を行使することができる",
+     "text_sha256": "b0ec09cab37ca8f759681d0bebd38c71d662d609d1789a8caa0f5de529cb7fa8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。423条の2は債権法改正で設けられた規定であり、改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-yobi-2012-minpo-q08-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
