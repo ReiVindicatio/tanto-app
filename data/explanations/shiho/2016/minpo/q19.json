@@ -1,0 +1,243 @@
+{
+ "question_id": "shiho-2016-minpo-q19",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q19-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。代位債権者が自己への直接の給付を求められるのは、被代位権利が金銭の支払又は動産の引渡しを目的とするときに限られ、登記を自己へ直接移転するよう求めることはできない。",
+   "body": "決め手は、債権者が相手方に「自己に対して」給付を求められる場合の範囲です。民法423条の3は、「被代位権利が金銭の支払又は動産の引渡しを目的とするものであるときは、相手方に対し、その支払又は引渡しを自己に対してすることを求めることができる」と定め、直接の給付を求められる場合を金銭と動産に限っています。登記の移転はこれに当たらないので、債権者は債務者の権利を代位行使して、第三債務者から債務者へ登記を移転するよう求めることになり、第三債務者から直接自己へ登記を移転するよう求めることはできないと解されています。同じ趣旨の判例あり（要確認）。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被代位権利が金銭の支払又は動産の引渡しを目的とするものであるときは、相手方に対し、その支払又は引渡しを自己に対してすることを求めることができる",
+     "text_sha256": "3242a2c55b8931f518a3b0df09b0506136982b1e91c25f1da20580741bc633df",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "pending_cases": [
+    {
+     "about": "登記請求権の代位行使で、代位債権者が第三債務者から直接自己への移転登記を求めることはできないとする判例",
+     "searched": [
+      "courts.py search 債権者代位 登記 直接 --from 昭和22 --to 平成10（該当する判示事項は見当たらず）",
+      "大審院の判決であれば、データベースにない"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "民法423条の3の反対解釈として登記の直接移転を否定するのは解釈による"
+   ],
+   "id": "exp-shiho-2016-minpo-q19-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q19-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、債務者が既に自ら権利を行使している場合には、その行使の方法又は結果の良否にかかわらず、債権者は代位権を行使できないとしている。",
+   "body": "決め手は、債務者自身が権利を行使している場合の扱いです。民法423条1項は、債権者は「自己の債権を保全するため必要があるとき」に被代位権利を行使できると定めています。最高裁昭和28年12月14日判決は、債務者がすでに自ら権利を行使している場合には、その行使の方法又は結果の良いと否とにかかわらず、債権者は債権者代位権を行使することはできないとしました。肢はこの判例のとおりなので正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己の債権を保全するため必要があるとき",
+     "text_sha256": "bd8ef03d0c0f16adfbbafda7db96a6bd402b3335529029bed09a72be6c3b987a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "債務者が自ら権利を行使している場合の債権者代位権行使の否定",
+     "court": "最高裁判所第一小法廷",
+     "date": "1953-12-14",
+     "case_number": "昭和24(オ)58",
+     "holding": "債務者がすでに自ら権利を行使している場合には、その行使の方法または結果の良いと否とにかかわらず、債権者は債権者代位権を行使することはできない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55986/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2016-minpo-q19-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q19-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。第三債務者は、債務者に対して主張できる抗弁（同時履行の抗弁を含む）をもって代位債権者に対抗できる。",
+   "body": "誤りは「Ａに対しては，同時履行の抗弁を主張することはできない」の部分です。民法423条の4は「債権者が被代位権利を行使したときは、相手方は、債務者に対して主張することができる抗弁をもって、債権者に対抗することができる。」と定めています。代位債権者Ａは債務者Ｂの権利を行使しているにすぎないので、第三債務者ＣがＢに対して主張できる同時履行の抗弁（533条）は、Ａに対しても主張できます。したがって、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が被代位権利を行使したときは、相手方は、債務者に対して主張することができる抗弁をもって、債権者に対抗することができる。",
+     "text_sha256": "ba97a8915a59b8ad173d3ca6b340ac2489b1ce4f8d9ff776a65a142d71a7bc0a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "533",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "双務契約の当事者の一方は、相手方がその債務の履行（債務の履行に代わる損害賠償の債務の履行を含む。）を提供するまでは、自己の債務の履行を拒むことができる。",
+     "text_sha256": "95fda827e77316b7aae0167132d09d24763b8a7bcc53a41b785f0fa63eff6774",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2016-minpo-q19-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q19-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。金銭債権を保全するための代位では、保全の必要性として債務者の無資力が要件とされ、代位債権者がこれを主張・立証しなければならないと解されている。",
+   "body": "誤りは「Ｂの無資力を主張・立証する必要はない」の部分です。民法423条1項は、債権者が被代位権利を行使できるのは「自己の債権を保全するため必要があるとき」と定めています。被保全債権が金銭債権（ＡのＢに対する100万円の債権）である場合、この保全の必要性は、債務者Ｂが無資力であること（Ｂの財産では債権を弁済するのに足りないこと）を意味すると解されており、代位行使する債権者Ａが請求原因として主張・立証すべきものとされています。同じ趣旨の判例あり（要確認）。被代位債権が被保全債権より少額（50万円）であっても、この要件が不要になるわけではないので、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己の債権を保全するため必要があるとき",
+     "text_sha256": "bd8ef03d0c0f16adfbbafda7db96a6bd402b3335529029bed09a72be6c3b987a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "pending_cases": [
+    {
+     "about": "金銭債権を被保全債権とする債権者代位権の行使には債務者の無資力が必要とする判例",
+     "searched": [
+      "courts.py search 債権者代位権 無資力",
+      "courts.py search 債権者代位権 資力 --from 昭和22 --to 昭和60",
+      "courts.py search 債権者代位権 金銭債権 保全 --from 昭和22 --to 平成10"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "「保全するため必要」を金銭債権では無資力と読むこと、及びその主張立証責任は解釈による"
+   ],
+   "id": "exp-shiho-2016-minpo-q19-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q19-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。債権者代位権には、被保全債権が代位行使される権利より前に成立していることを求める定めはない。",
+   "body": "決め手は、被保全債権の成立時期が要件になっているかどうかです。民法423条は、要件として「自己の債権を保全するため必要があるとき」（1項）や、期限の到来（2項）などを定めていますが、被保全債権が被代位権利より先に成立していることは求めていません。これに対し、詐害行為取消請求では、424条3項が「その債権が第一項に規定する行為の前の原因に基づいて生じたものである場合に限り」と、被保全債権の発生原因が詐害行為より前にあることを求めています。債権者代位権は債務者の権利を行使して責任財産を保全する制度であり、被保全債権の成立の前後を問わないと解されています。同じ趣旨の判例あり（要確認）。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "423",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己の債権を保全するため必要があるとき",
+     "text_sha256": "bd8ef03d0c0f16adfbbafda7db96a6bd402b3335529029bed09a72be6c3b987a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "424",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "その債権が第一項に規定する行為の前の原因に基づいて生じたものである場合に限り",
+     "text_sha256": "22d988d8231e843109818b8d2f93e8f2bb2ba972e98650a949757943ef28191d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "pending_cases": [
+    {
+     "about": "債権者代位権の行使には被保全債権が被代位権利より先に成立している必要はないとする判例",
+     "searched": [
+      "courts.py search 債権者代位 債権 成立 前後",
+      "courts.py search 代位 被保全債権 成立"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "被保全債権の成立の前後を問わないことは解釈による"
+   ],
+   "id": "exp-shiho-2016-minpo-q19-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

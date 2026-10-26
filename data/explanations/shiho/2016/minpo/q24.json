@@ -1,0 +1,282 @@
+{
+ "question_id": "shiho-2016-minpo-q24",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q24-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。手付解除が封じられるのは「相手方」が履行に着手した後であり、買主が自ら履行に着手していても、売主が着手するまでは手付を放棄して解除できる（557条1項ただし書）。",
+   "body": "557条1項は「買主が売主に手付を交付したときは、買主はその手付を放棄し、売主はその倍額を現実に提供して、契約の解除をすることができる。ただし、その相手方が契約の履行に着手した後は、この限りでない。」と定めています。解除ができなくなるのは解除される側（相手方）が履行に着手した後なので、買主が自ら履行に着手しただけでは、売主が着手するまで手付放棄による解除ができます。判例も、解約手付の授受された売買契約において、当事者の一方は、自ら履行に着手した場合でも、相手方が履行に着手するまでは557条1項の解除権を行使することができるとしています。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "557",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "買主が売主に手付を交付したときは、買主はその手付を放棄し、売主はその倍額を現実に提供して、契約の解除をすることができる。ただし、その相手方が契約の履行に着手した後は、この限りでない。",
+     "text_sha256": "d8ab6a1ed923e644103bd509b8c6185252839d4e9cc8ae1508b4b7bd95bd41c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "自ら履行に着手した当事者からの手付解除",
+     "court": "最高裁判所大法廷",
+     "date": "1965-11-24",
+     "case_number": "昭和37(オ)760",
+     "holding": "解約手附の授受された売買契約において、当事者の一方は、自ら履行に着手した場合でも、相手方が履行に着手するまでは、民法557条1項に定める解除権を行使することができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53822/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "557条1項は出題後に改正されている。改正前の内容は条文の本文で確認していない（結論は今の条文でも同じ）。"
+   ],
+   "id": "exp-shiho-2016-minpo-q24-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q24-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。他人の物の売買が解除された場合でも、引渡しを受けていた買主は、原状回復義務の内容として解除までの使用利益を売主に返還しなければならない。",
+   "body": "561条は、他人の権利を売買の目的としたときは「売主は、その権利を取得して買主に移転する義務を負う。」と定めており、Ａがこれを果たせないことを理由にＢは契約を解除できます。解除がされると、545条1項により「各当事者は、その相手方を原状に復させる義務を負う。」とされ、同条3項は物を返還するときは「その受領の時以後に生じた果実をも返還しなければならない。」と定めています。判例は、売買契約に基づき目的物の引渡しを受けていた買主は、他人の物の売買であることを理由に契約を解除した場合でも、原状回復義務の内容として、解除までの間目的物を使用したことによる利益を売主に返還しなければならないとしています。売主Ａが甲土地の所有者でなかったことは、この返還義務を妨げません。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "561",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "売主は、その権利を取得して買主に移転する義務を負う。",
+     "text_sha256": "f7d19b6defb3d8a288047cb80c492f7bbbf26ee6c5eb6989829288f89b140c57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "545",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各当事者は、その相手方を原状に復させる義務を負う。",
+     "text_sha256": "403613b135cfeb822522f37759878cd51de512f787c46c64bc9458e9b822f3b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "545",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "その受領の時以後に生じた果実をも返還しなければならない。",
+     "text_sha256": "403613b135cfeb822522f37759878cd51de512f787c46c64bc9458e9b822f3b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "他人の物の売買の解除と買主の使用利益返還義務",
+     "court": "最高裁判所第二小法廷",
+     "date": "1976-02-13",
+     "case_number": "昭和49(オ)1152",
+     "holding": "売買契約に基づき目的物の引渡を受けていた買主は、民法561条により契約を解除した場合でも、原状回復義務の内容として、解除までの間目的物を使用したことによる利益を売主に返還しなければならない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53224/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "判例は改正前の561条による解除の事案である。561条・545条は出題後に改正されている。改正前の内容は条文の本文で確認していない（解除後の原状回復として使用利益を返還するという結論は今の条文でも同じ）。",
+    "今の民法で、他人物売買で権利を移転できないときにどの規定（541条・542条など）で解除するかは、本文では特定していない。使用利益の返還が原状回復義務に含まれることは判例による。"
+   ],
+   "id": "exp-shiho-2016-minpo-q24-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q24-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は売買の目的物についての売主の責任を、「引き渡された目的物が種類、品質又は数量に関して契約の内容に適合しないものであるとき」の責任（562条1項）として定めており、肢が前提にしている「隠れた瑕疵」を要件とする瑕疵担保責任の規定はない。敷地の欠陥が敷地賃借権付き建物の売買で契約の内容への不適合に当たるかは今の条文の文言からは決まらず、肢が問う出題当時の枠組みのままでは説明できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "562",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "引き渡された目的物が種類、品質又は数量に関して契約の内容に適合しないものであるとき",
+     "text_sha256": "4596856b9aee4f26d8523bb47e98749638a06b0d016eb4267dd51c9391aaa683",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "law_changed のため、出題当時の判例は探していない。",
+    "改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2016-minpo-q24-c",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q24-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法566条は、種類・品質の不適合について、買主が「その不適合を知った時から一年以内にその旨を売主に通知しないとき」に請求ができなくなると定め、1年以内に求めるのは損害賠償の請求ではなく通知である。損害賠償請求権の消滅時効も166条1項の「権利を行使することができることを知った時から五年間行使しないとき」と「権利を行使することができる時から十年間行使しないとき」の二つで定まり、肢が前提にしている、瑕疵があることを「知った時から１年以内に瑕疵担保による損害賠償の請求をした」かどうかで決まる期間制限の仕組みとは違う。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "566",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その不適合を知った時から一年以内にその旨を売主に通知しないとき",
+     "text_sha256": "4ed0acaed9db9f251d115841a128eec8b851d66912c0d612c6eb666584dfa533",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "166",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "権利を行使することができることを知った時から五年間行使しないとき",
+     "text_sha256": "1486101bc71d3c4203815fde63101bc9f784105f2a086ecbe1b4b91126c82bcd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "166",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "権利を行使することができる時から十年間行使しないとき",
+     "text_sha256": "1486101bc71d3c4203815fde63101bc9f784105f2a086ecbe1b4b91126c82bcd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "law_changed のため、出題当時の判例は探していない。",
+    "改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2016-minpo-q24-d",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q24-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法568条1項は、競売の買受人は「第五百四十一条及び第五百四十二条の規定並びに第五百六十三条（第五百六十五条において準用する場合を含む。）の規定により」契約の解除等をすることができると定め、解除の要件は541条・542条による。肢は借地権の不存在で買受人が「目的を達することができず」に解除するという出題当時の担保責任の枠組みを前提にしており、今の条文で説明すると出題の趣旨と別の理由になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "568",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第五百四十一条及び第五百四十二条の規定並びに第五百六十三条（第五百六十五条において準用する場合を含む。）の規定により",
+     "text_sha256": "d3a764e355ef30252c4fdf3c93715c86a7278817c06b5f7ffc3f71356050f144",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "541",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の一方がその債務を履行しない場合において、相手方が相当の期間を定めてその履行の催告をし、その期間内に履行がないときは、相手方は、契約の解除をすることができる。",
+     "text_sha256": "a382a1658957144d4c987e49868819b6be4b6636386e22d7b69646163926ab07",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "542",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる場合には、債権者は、前条の催告をすることなく、直ちに契約の解除をすることができる。",
+     "text_sha256": "021dce87813fcae2438db5c4ffc2afe591887076d1cccb4bc6a499a271622b73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "law_changed のため、出題当時の判例は探していない。",
+    "改正前の内容は条文の本文で確認していない。",
+    "568条2項（債務者が無資力のときの配当を受けた債権者への代金返還請求）は今の条文にもあるが、解除の要件の部分が変わっているため手順3にした。"
+   ],
+   "id": "exp-shiho-2016-minpo-q24-e",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

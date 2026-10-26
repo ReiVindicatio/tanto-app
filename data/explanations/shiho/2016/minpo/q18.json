@@ -1,0 +1,252 @@
+{
+ "question_id": "shiho-2016-minpo-q18",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q18-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、不作為債務の間接強制には、債務者が不作為義務に違反するおそれの立証で足り、現に違反していることの立証は要らないとしている。",
+   "body": "決め手は、間接強制の申立てで債権者が何を立証すべきかです。間接強制は、民事執行法172条1項で「作為又は不作為を目的とする債務で前条第一項の強制執行ができないものについての強制執行」の方法として定められています。最高裁平成17年12月9日決定は、不作為を目的とする債務の強制執行として間接強制決定をするには、債権者において、債務者がその不作為義務に違反するおそれがあることを立証すれば足り、債務者が現にその不作為義務に違反していることを立証する必要はないとしました。肢はこの判例のとおりなので正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "172",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "作為又は不作為を目的とする債務で前条第一項の強制執行ができないものについての強制執行",
+     "text_sha256": "5b05e3c4fc4ecbfd5180ea048054426683ebf9fc33b5a151392b46cdf59a3b7c",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "不作為債務の間接強制と義務違反の立証",
+     "court": "最高裁判所第二小法廷",
+     "date": "2005-12-09",
+     "case_number": "平成17(許)18",
+     "holding": "不作為を目的とする債務の強制執行として間接強制決定をするには、債権者において、債務者がその不作為義務に違反するおそれがあることを立証すれば足り、債務者が現にその不作為義務に違反していることを立証する必要はない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52437/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2016-minpo-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q18-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、単に事態の真相を告白し陳謝の意を表明する程度の謝罪広告を命ずる判決は、代替執行をすることができるとしている。",
+   "body": "誤りは「間接強制によらなければならず，代替執行をすることはできない」の部分です。最高裁昭和31年7月4日大法廷判決は、新聞紙に謝罪広告を掲載することを命ずる判決は、その広告の内容が単に事態の真相を告白し陳謝の意を表明する程度のものにあっては、代替執行をすることができるとしました。今の民事執行法では、代替執行は171条1項1号の「作為を目的とする債務についての強制執行　債務者の費用で第三者に当該作為をさせること。」として定められています。したがって、代替執行ができないとする肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "171",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "作為を目的とする債務についての強制執行　債務者の費用で第三者に当該作為をさせること。",
+     "text_sha256": "e3ea2449db5a8bec00db245810b661e1bffbe338e1efddb8e73562e61e353b1f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "謝罪広告事件（謝罪広告を命ずる判決と強制執行）",
+     "court": "最高裁判所大法廷",
+     "date": "1956-07-04",
+     "case_number": "昭和28(オ)1241",
+     "holding": "新聞紙に謝罪広告を掲載することを命ずる判決は、その広告の内容が単に事態の真相を告白し陳謝の意を表明する程度のものにあっては、代替執行をなし得る（当時の民訴733条による）。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57386/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "判例は当時の民事訴訟法733条による代替執行について判断したもの。今の代替執行の規定（民事執行法171条）に当てはめたのは解釈による"
+   ],
+   "id": "exp-shiho-2016-minpo-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q18-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。不作為債務の強制執行として、債務者の費用で債務者がした行為の結果を除去することを命ずる方法（代替執行）が定められている。",
+   "body": "決め手は、不作為債務の代替執行の内容です。今の民法414条1項は、債権者は「民事執行法その他強制執行の手続に関する法令の規定に従い、直接強制、代替執行、間接強制その他の方法による履行の強制を裁判所に請求することができる」と定めています。そして民事執行法171条1項2号は、不作為を目的とする債務についての強制執行の方法を「債務者の費用で、債務者がした行為の結果を除去し、又は将来のため適当な処分をすべきこと」と定めています。したがって、不作為債務について、債務者の費用で債務者がした行為の結果を除去することを裁判所に請求できるとする肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "414",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "民事執行法その他強制執行の手続に関する法令の規定に従い、直接強制、代替執行、間接強制その他の方法による履行の強制を裁判所に請求することができる",
+     "text_sha256": "830ae6e475cc780513747b09bf457e2fff012fae729a65ec6aba375c93e57c86",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "171",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者の費用で、債務者がした行為の結果を除去し、又は将来のため適当な処分をすべきこと",
+     "text_sha256": "e3ea2449db5a8bec00db245810b661e1bffbe338e1efddb8e73562e61e353b1f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に民法414条の本文が変わった（規律と結論は同じ）。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2016-minpo-q18-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q18-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。工作物の撤去を命ずる判決は代替執行によって執行できるうえ、債権者の申立てがあれば間接強制によることもできる。",
+   "body": "誤りは「間接強制によることはできない」の部分です。工作物の撤去は作為を目的とする債務で、民事執行法171条1項1号により「債務者の費用で第三者に当該作為をさせること」（代替執行）ができます。さらに同法173条1項は、171条1項に規定する強制執行は「第百六十八条から第百七十一条までの規定により行うほか、債権者の申立てがあるときは、執行裁判所が前条第一項に規定する方法により行う」と定めており、代替執行のできる債務でも間接強制（172条1項の方法）によることができます。したがって、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "171",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者の費用で第三者に当該作為をさせること",
+     "text_sha256": "e3ea2449db5a8bec00db245810b661e1bffbe338e1efddb8e73562e61e353b1f",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "173",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第百六十八条から第百七十一条までの規定により行うほか、債権者の申立てがあるときは、執行裁判所が前条第一項に規定する方法により行う",
+     "text_sha256": "f7d417a747e693a7fce9ec8b50c99c93321c466ccf104b18f298e6b02e6d86af",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "172",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "執行裁判所が、債務者に対し、遅延の期間に応じ、又は相当と認める一定の期間内に履行しないときは直ちに、債務の履行を確保するために相当と認める一定の額の金銭を債権者に支払うべき旨を命ずる方法により行う",
+     "text_sha256": "5b05e3c4fc4ecbfd5180ea048054426683ebf9fc33b5a151392b46cdf59a3b7c",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "工作物の撤去が作為を目的とする債務に当たることは解釈による"
+   ],
+   "id": "exp-shiho-2016-minpo-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q18-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。登記手続を命ずる判決は意思表示を命ずる判決として扱われ、確定の時に意思表示をしたものとみなされるので、間接強制による必要はない。",
+   "body": "誤りは「間接強制によらなければならない」の部分です。民事執行法177条1項は、「意思表示をすべきことを債務者に命ずる判決その他の裁判が確定し」たときは、「債務者は、その確定又は成立の時に意思表示をしたものとみなす」と定めています（意思表示の擬制）。登記義務者に所有権移転登記手続を命ずる判決は、登記申請という意思表示を命ずる判決に当たると解されており、判決の確定によって登記義務者が登記申請の意思表示をしたものとみなされます。したがって、間接強制によらなければならないとする肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "177",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "意思表示をすべきことを債務者に命ずる判決その他の裁判が確定し",
+     "text_sha256": "6b43cd89a5cc59e463a5bb89ecf287d86b39f62e1c98cf6046bb28c9d4a63580",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "177",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、その確定又は成立の時に意思表示をしたものとみなす",
+     "text_sha256": "6b43cd89a5cc59e463a5bb89ecf287d86b39f62e1c98cf6046bb28c9d4a63580",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "登記手続を命ずる判決が意思表示を命ずる判決に当たることは解釈による"
+   ],
+   "id": "exp-shiho-2016-minpo-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

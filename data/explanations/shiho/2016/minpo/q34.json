@@ -1,0 +1,232 @@
+{
+ "question_id": "shiho-2016-minpo-q34",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q34-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。遺言で廃除の意思を表示しても、それだけで廃除の効力は生じず、遺言執行者が家庭裁判所に廃除を請求する必要がある。",
+   "body": "誤りのポイントは、遺言の意思表示「により」廃除の効力が生ずるとする点です。民法893条は「被相続人が遺言で推定相続人を廃除する意思を表示したときは、遺言執行者は、その遺言が効力を生じた後、遅滞なく、その推定相続人の廃除を家庭裁判所に請求しなければならない。」と定めています。つまり、遺言による廃除も家庭裁判所への請求を経て行われるもので、遺言の意思表示だけで効力が生ずるわけではありません。なお、廃除がされたときは「被相続人の死亡の時にさかのぼってその効力を生ずる」とされています。したがって、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "893",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被相続人が遺言で推定相続人を廃除する意思を表示したときは、遺言執行者は、その遺言が効力を生じた後、遅滞なく、その推定相続人の廃除を家庭裁判所に請求しなければならない。",
+     "text_sha256": "f96d17f1031765477cf0923aa09853c5aae0d60047f199a02ff31df924b0c1ea",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "893",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被相続人の死亡の時にさかのぼってその効力を生ずる",
+     "text_sha256": "f96d17f1031765477cf0923aa09853c5aae0d60047f199a02ff31df924b0c1ea",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。"
+   ],
+   "id": "exp-shiho-2016-minpo-q34-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q34-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、遺言書の破棄・隠匿が相続に関して不当な利益を目的としないときは、相続欠格事由にあたらないとしている。",
+   "body": "決め手は、民法891条5号の欠格事由に、不当な利益を目的とすることが必要かです。同条は「次に掲げる者は、相続人となることができない。」とし、5号で「相続に関する被相続人の遺言書を偽造し、変造し、破棄し、又は隠匿した者」を挙げています。文言上は目的を問いませんが、最高裁平成9年1月28日判決は、相続人が遺言書を破棄又は隠匿した場合でも、その行為が相続に関して不当な利益を目的とするものでなかったときは、891条5号の相続欠格者にあたらないとしました。肢はこの判例のとおりなので、正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "891",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる者は、相続人となることができない。",
+     "text_sha256": "e068e33e6343fc5b87f5eaf858616516a9c64d213f728c225e6ccca29315f1f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "891",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続に関する被相続人の遺言書を偽造し、変造し、破棄し、又は隠匿した者",
+     "text_sha256": "e068e33e6343fc5b87f5eaf858616516a9c64d213f728c225e6ccca29315f1f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "不当な利益を目的としない遺言書の破棄隠匿と相続欠格",
+     "court": "最高裁判所第三小法廷",
+     "date": "1997-01-28",
+     "case_number": "平成6(オ)804",
+     "holding": "相続人が相続に関する被相続人の遺言書を破棄又は隠匿した場合において、その行為が相続に関して不当な利益を目的とするものでなかったときは、その相続人は民法891条5号所定の相続欠格者に当たらない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52549/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。"
+   ],
+   "id": "exp-shiho-2016-minpo-q34-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q34-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。被相続人は、遺言で、遺産の分割の方法を定めることを第三者に委託することができると民法908条が定めている。",
+   "body": "肢は民法908条1項の内容どおりです。同項は「被相続人は、遺言で、遺産の分割の方法を定め、若しくはこれを定めることを第三者に委託し、又は相続開始の時から五年を超えない期間を定めて、遺産の分割を禁ずることができる。」と定めています。遺産分割の方法を自ら定めるだけでなく、その指定を第三者に委託することも遺言でできます。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "908",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被相続人は、遺言で、遺産の分割の方法を定め、若しくはこれを定めることを第三者に委託し、又は相続開始の時から五年を超えない期間を定めて、遺産の分割を禁ずることができる。",
+     "text_sha256": "fd7a1236ab17485dddb76cdf8ead6480848e594efff9de809b348d1bf101ab74",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。"
+   ],
+   "id": "exp-shiho-2016-minpo-q34-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q34-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。民法975条は共同遺言を禁止しており、夫婦であっても同一の証書で遺言をすることはできない。",
+   "body": "誤りのポイントは、夫婦なら同一の証書で遺言ができるとする点です。民法975条は「遺言は、二人以上の者が同一の証書ですることができない。」と定め、夫婦について例外を設けていません。夫婦も「二人以上の者」にあたるので、同一の証書で遺言をすることはできません。したがって、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "975",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺言は、二人以上の者が同一の証書ですることができない。",
+     "text_sha256": "d47294ce3c3b27dc2784adacfeaaec1c2404b603af21e02795590a6d104ac25a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。"
+   ],
+   "id": "exp-shiho-2016-minpo-q34-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q34-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法は遺留分の侵害を「遺留分侵害額に相当する金銭の支払を請求することができる」（1046条1項）とする金銭の請求として定め、受遺者が複数あるときは各受遺者が遺留分侵害額を「負担する」（1047条1項）としており、肢の前提の遺留分減殺請求と遺贈の減殺の規定はない。請求の効果が遺贈の減殺から金銭の支払の請求に変わっているので、名前だけの変更ではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1046",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺留分侵害額に相当する金銭の支払を請求することができる",
+     "text_sha256": "bee2c013e82d287e432164aa7b6d4effbfc5b76b5317ea4e059ab4b01e52359d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1047",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺留分侵害額を負担する",
+     "text_sha256": "fa18eb8e021257095e72512e259c8727f317b4be2964b4c7e5c8299e54833ebf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後の相続法改正で遺留分減殺請求が遺留分侵害額請求に改められた。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2016-minpo-q34-e",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

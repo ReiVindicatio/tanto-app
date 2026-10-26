@@ -1,0 +1,251 @@
+{
+ "question_id": "shiho-2016-minpo-q27",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q27-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。組合の債権者は、債権の発生の時に損失分担の割合を知っていたときを除き、各組合員に対して等しい割合で権利を行使することができる（675条2項）。",
+   "body": "決め手は、損失分担の割合を知らなかった組合の債権者が、どの割合で組合員に権利を行使できるかです。675条2項は「組合の債権者は、その選択に従い、各組合員に対して損失分担の割合又は等しい割合でその権利を行使することができる。」と定め、ただし書で「組合の債権者がその債権の発生の時に各組合員の損失分担の割合を知っていたときは、その割合による。」としています。債権の発生の時に損失分担の割合を知らなかった債権者には、ただし書は当てはまらないので、等しい割合で権利を行使することができます。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "675",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "組合の債権者は、その選択に従い、各組合員に対して損失分担の割合又は等しい割合でその権利を行使することができる。",
+     "text_sha256": "e8fd90f2821112d369392f48b1e0239f5c91cbfbf4d8d252a771ae94c9ed37c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "675",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "組合の債権者がその債権の発生の時に各組合員の損失分担の割合を知っていたときは、その割合による。",
+     "text_sha256": "e8fd90f2821112d369392f48b1e0239f5c91cbfbf4d8d252a771ae94c9ed37c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "675条は出題後に改正されている。改正前の内容は条文の本文で確認していない（損失分担の割合を知らなかった債権者が等しい割合で権利を行使できるという結論は今の条文でも同じ）。"
+   ],
+   "id": "exp-shiho-2016-minpo-q27-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q27-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。組合に対する債務は組合財産である債権に対応し、組合員の債権者は組合財産についてその権利を行使できないので、組合の債務者は組合員に対する債権との相殺をすることができない（677条）。",
+   "body": "誤りは「相殺することができる」の部分です。組合の債務者が負う債務は、組合から見れば組合の債権であり、668条により「各組合員の出資その他の組合財産は、総組合員の共有に属する。」とされる組合財産に当たります。一方、組合員に対して債権を持つ者は組合員の債権者であり、677条は「組合員の債権者は、組合財産についてその権利を行使することができない。」と定めています。組合の債務者が組合員に対する債権を自働債権として相殺すると、組合員個人に対する債権を組合財産である債権から回収することになるので、この相殺はできないと解されています。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "668",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各組合員の出資その他の組合財産は、総組合員の共有に属する。",
+     "text_sha256": "91c71a4bc5723196273db8340fb472ff67495a0fbd4dab8f03149d099277dc1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "677",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "組合員の債権者は、組合財産についてその権利を行使することができない。",
+     "text_sha256": "b50ca50f6a5662d89c217bba30d2da68bcca62774f7e6cd76793caf6799b5bdf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "677条は出題後に改正されている。改正前の内容は条文の本文で確認していない（相殺できないという結論は今の条文でも同じ）。",
+    "組合の債務者による相殺が677条の「組合財産についてその権利を行使すること」に当たるという点は解釈による。"
+   ],
+   "id": "exp-shiho-2016-minpo-q27-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q27-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。民法上の組合は法人ではなく権利の主体とならないので、組合名義で所有権移転登記をすることはできないと解されている。",
+   "body": "決め手は、民法上の組合に法人格があるかどうかです。33条1項は「法人は、この法律その他の法律の規定によらなければ、成立しない。」と定めており、民法は組合を法人とする規定を置いていません。組合の財産について、668条は「各組合員の出資その他の組合財産は、総組合員の共有に属する。」と定め、権利は組合ではなく組合員に帰属するとしています。このため、組合は不動産の登記名義人となることができず、組合名義の所有権移転登記を備えることはできないと解されています。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "33",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法人は、この法律その他の法律の規定によらなければ、成立しない。",
+     "text_sha256": "be79ad8914f4011464b7a0ba95b7f17fd2dc3331b5f9088841f9289e65de20f5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "668",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各組合員の出資その他の組合財産は、総組合員の共有に属する。",
+     "text_sha256": "91c71a4bc5723196273db8340fb472ff67495a0fbd4dab8f03149d099277dc1e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "組合名義の登記ができないという点は解釈による（登記の手続の法令は引いていない）。"
+   ],
+   "id": "exp-shiho-2016-minpo-q27-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q27-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。除名は脱退の事由の一つであり、脱退した組合員の持分は金銭で払い戻すことができる（679条4号、681条）。",
+   "body": "誤りは「持分の払戻しを受けることができない」の部分です。679条は「組合員は、次に掲げる事由によって脱退する。」とし、その4号に「除名」を掲げているので、除名された組合員は脱退した組合員に当たります。681条1項は「脱退した組合員と他の組合員との間の計算は、脱退の時における組合財産の状況に従ってしなければならない。」とし、2項は「脱退した組合員の持分は、その出資の種類を問わず、金銭で払い戻すことができる。」と定めています。除名による脱退を払戻しの対象から外す規定はないので、除名された組合員も持分の払戻しを受けることができます。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "679",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "組合員は、次に掲げる事由によって脱退する。",
+     "text_sha256": "b86fa496e5297f92cfbb8766aad1f474695acefba3ad25090b753c000ba86c37",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "681",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "脱退した組合員と他の組合員との間の計算は、脱退の時における組合財産の状況に従ってしなければならない。",
+     "text_sha256": "856dfef7dbdc59c7ba24c7a4402e66725a7402e758a1a8f113decf8b4e4045e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "681",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "脱退した組合員の持分は、その出資の種類を問わず、金銭で払い戻すことができる。",
+     "text_sha256": "856dfef7dbdc59c7ba24c7a4402e66725a7402e758a1a8f113decf8b4e4045e2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。"
+   ],
+   "id": "exp-shiho-2016-minpo-q27-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q27-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。組合は、その目的である事業の成功によって解散する（682条1号）。",
+   "body": "682条は「組合は、次に掲げる事由によって解散する。」とし、その1号に「組合の目的である事業の成功又はその成功の不能」を掲げています。肢は、このうち事業の成功を解散事由として挙げたもので、条文のとおりです。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "682",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "組合は、次に掲げる事由によって解散する。",
+     "text_sha256": "c0c45abc83a34d80b844feac8226818f80b0769b9c495a2aed4eb6101ad4d5a6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "682条は出題後に改正されている。改正前の内容は条文の本文で確認していない（事業の成功が解散事由であるという結論は今の条文でも同じ）。"
+   ],
+   "id": "exp-shiho-2016-minpo-q27-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

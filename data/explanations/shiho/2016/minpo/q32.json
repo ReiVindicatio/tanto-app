@@ -1,0 +1,259 @@
+{
+ "question_id": "shiho-2016-minpo-q32",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q32-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。家庭裁判所は、特別の事情があるときは三親等内の親族間にも扶養義務を負わせることができ、甥と叔母は三親等の親族にあたる。",
+   "body": "決め手は、甥と叔母が「三親等内の親族」にあたるかです。民法877条1項は「直系血族及び兄弟姉妹は、互いに扶養をする義務がある。」と定め、甥と叔母はこれにはあたりません。しかし同条2項は「家庭裁判所は、特別の事情があるときは、前項に規定する場合のほか、三親等内の親族間においても扶養の義務を負わせることができる。」と定めています。甥と叔母は傍系の三親等の血族なので、家庭裁判所は特別の事情があれば扶養の義務を負わせることができます。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "877",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "直系血族及び兄弟姉妹は、互いに扶養をする義務がある。",
+     "text_sha256": "f03357c70958f36325c8c608eb32065a0faa61a45b551dba4bbcf7c87b61aa59",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "877",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "家庭裁判所は、特別の事情があるときは、前項に規定する場合のほか、三親等内の親族間においても扶養の義務を負わせることができる。",
+     "text_sha256": "f03357c70958f36325c8c608eb32065a0faa61a45b551dba4bbcf7c87b61aa59",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。"
+   ],
+   "id": "exp-shiho-2016-minpo-q32-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q32-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。扶養の程度・方法は当事者の協議で定めるのが基本で、審判がされた後でも、当事者間の協議で変更することはできないとまではいえない。",
+   "body": "誤りのポイントは「当事者間の協議によってその変更又は取消しをすることはできない」とする点です。民法879条は、扶養の程度又は方法について「当事者間に協議が調わないとき、又は協議をすることができないときは」家庭裁判所がこれを定めるとしており、まず当事者の協議で定めることを前提にしています。880条は、協議又は審判の後に事情の変更があったときに「家庭裁判所は、その協議又は審判の変更又は取消しをすることができる。」と定めていますが、当事者が協議で変更することを禁じる文言はありません。審判の後に事情が変わったときも、当事者が改めて協議をして変更・取消しをすることは妨げられないと解されています。したがって、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "879",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者間に協議が調わないとき、又は協議をすることができないときは",
+     "text_sha256": "4f923f12e0f7f278f833e96300de266404bfc0e486d2f78526a9c9fafe4159f3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "880",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "家庭裁判所は、その協議又は審判の変更又は取消しをすることができる。",
+     "text_sha256": "7b08a631e105c5b1cebf10eef59e2abe54a2dbde9ca934b1963cb52008bfa7ea",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "審判後も当事者の協議で変更できるとする点は解釈による。"
+   ],
+   "id": "exp-shiho-2016-minpo-q32-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q32-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、扶養義務者間の求償での各自の分担額は、協議が調わない限り家庭裁判所が審判で定めるべきで、通常裁判所が判決手続で定めることはできないとしている。",
+   "body": "決め手は、分担額を定めるのが家庭裁判所か通常の裁判所かです。民法878条・879条は、扶養の順序や程度・方法について当事者間に協議が調わないときは家庭裁判所がこれを定めるとしています。最高裁昭和42年2月17日判決は、扶養権利者を扶養してきた扶養義務者が他の扶養義務者に対して求償する場合の各自の扶養分担額は、協議がととのわない限り家庭裁判所が審判で定めるべきであって、通常裁判所が判決手続で定めることはできないとしました。地方裁判所は通常裁判所なので、分担額を定めることはできません。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "878",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者間に協議が調わないとき、又は協議をすることができないときは、家庭裁判所が、これを定める。",
+     "text_sha256": "b0a77886296ca217c36ac982717a666bdd0563773f3e18e323ed65ca619688c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "879",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "扶養権利者の需要、扶養義務者の資力その他一切の事情を考慮して、家庭裁判所が、これを定める。",
+     "text_sha256": "4f923f12e0f7f278f833e96300de266404bfc0e486d2f78526a9c9fafe4159f3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "過去の扶養料の求償と家庭裁判所の審判",
+     "court": "最高裁判所第二小法廷",
+     "date": "1967-02-17",
+     "case_number": "昭和41(オ)783",
+     "holding": "扶養権利者を扶養してきた扶養義務者が他の扶養義務者に対して求償する場合の各自の扶養分担額は、協議がととのわない限り家庭裁判所が審判で定めるべきであって、通常裁判所が判決手続で定めることはできない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54040/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。"
+   ],
+   "id": "exp-shiho-2016-minpo-q32-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q32-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。認知により父と子は直系血族となり、親権者でなくても互いに扶養をする義務を負う。",
+   "body": "誤りのポイントは、親権者でない父は扶養義務を負わないとする点です。民法779条は「嫡出でない子は、その父又は母がこれを認知することができる。」と定め、784条は「認知は、出生の時にさかのぼってその効力を生ずる。」と定めています。認知によって父と子の間に法律上の親子関係が生じ、両者は直系血族となります。877条1項は「直系血族及び兄弟姉妹は、互いに扶養をする義務がある。」と定めており、扶養義務は親権の有無とは関係なく直系血族であることから生じます。したがって、親権者でない父も子を扶養する義務を負い、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "779",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "嫡出でない子は、その父又は母がこれを認知することができる。",
+     "text_sha256": "9cade6c9bd53f52284bea8c656af49c72f5fc89abf4248b64531c8ebb0b4e396",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "784",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "認知は、出生の時にさかのぼってその効力を生ずる。",
+     "text_sha256": "70f9059c4fefb95f9e29830e596074839d9d886fc78b232f31f25e1927ae616b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "877",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "直系血族及び兄弟姉妹は、互いに扶養をする義務がある。",
+     "text_sha256": "f03357c70958f36325c8c608eb32065a0faa61a45b551dba4bbcf7c87b61aa59",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "扶養義務が親権の有無と関係しないとする点は、877条1項の文言からの理解（解釈による）。"
+   ],
+   "id": "exp-shiho-2016-minpo-q32-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q32-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。扶養をすべき者の順序について当事者間に協議が調わないときなどは、家庭裁判所がこれを定めると民法878条が定めている。",
+   "body": "肢は民法878条前段の内容そのままです。同条は「扶養をする義務のある者が数人ある場合において、扶養をすべき者の順序について、当事者間に協議が調わないとき、又は協議をすることができないときは、家庭裁判所が、これを定める。」と定めています。肢の場面（扶養義務者が数人あり、順序について協議が調わない・協議ができない）はこれにあたり、家庭裁判所が順序を定めます。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "878",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "扶養をする義務のある者が数人ある場合において、扶養をすべき者の順序について、当事者間に協議が調わないとき、又は協議をすることができないときは、家庭裁判所が、これを定める。",
+     "text_sha256": "b0a77886296ca217c36ac982717a666bdd0563773f3e18e323ed65ca619688c3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。"
+   ],
+   "id": "exp-shiho-2016-minpo-q32-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

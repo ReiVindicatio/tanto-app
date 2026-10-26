@@ -1,0 +1,207 @@
+{
+ "question_id": "shiho-2016-minpo-q31",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q31-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。民法に、養子が離縁しなければ他の者の養子になれないとする規定はなく、養子がさらに別の者の養子となること（転縁組）もできると解されている。",
+   "body": "民法が養子となることを禁じているのは、例えば「尊属又は年長者は、これを養子とすることができない。」（793条）のような場合であり、すでに養子であることを理由に縁組を禁じる規定はない。今の民法818条3項も「子が養子であるときは、次に掲げる者を親権者とする。」とし、その1号で「当該子を養子とする縁組が二以上あるとき」を想定しており、一人の子について縁組が重ねてされることを前提としている。したがって、養子は離縁しなくても他の者の養子となることができると解されており、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "793",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "尊属又は年長者は、これを養子とすることができない。",
+     "text_sha256": "50de6d16969cc377d522179959568e4e0bd1d9b184231fb94b07c76679e332f2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "818",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "子が養子であるときは、次に掲げる者を親権者とする。",
+     "text_sha256": "4da65c3dc327782a0b1bfcf7e68ba4f9db8bec67337e94fc6bea7fd6c12e41dd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "転縁組ができることは解釈による。",
+    "818条3項（縁組が二以上ある場合の親権者）は出題後の改正後の本文で説明した。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2016-minpo-q31-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q31-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。民法795条のとおり、配偶者の嫡出子を養子とする場合又は配偶者が意思を表示できない場合を除き、配偶者とともに縁組をしなければならない。",
+   "body": "民法795条は「配偶者のある者が未成年者を養子とするには、配偶者とともにしなければならない。ただし、配偶者の嫡出である子を養子とする場合又は配偶者がその意思を表示することができない場合は、この限りでない。」と定める。肢は原則（夫婦共同縁組）と2つの例外のいずれも条文どおりに述べており、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "795",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "配偶者のある者が未成年者を養子とするには、配偶者とともにしなければならない。ただし、配偶者の嫡出である子を養子とする場合又は配偶者がその意思を表示することができない場合は、この限りでない。",
+     "text_sha256": "fe25f7d1cb4ae195fa59eb4ef8928f755d9f20dc11a406b8bd38ae81b8bc4a3c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。"
+   ],
+   "id": "exp-shiho-2016-minpo-q31-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q31-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。後見人が被後見人を養子とする許可（794条）と未成年者を養子とする許可（798条）は別の規定による許可であり、一方を得れば他方が不要になるとする規定はない。",
+   "body": "民法794条は「後見人が被後見人（未成年被後見人及び成年被後見人をいう。以下同じ。）を養子とするには、家庭裁判所の許可を得なければならない。」と定め、民法798条は別に「未成年者を養子とするには、家庭裁判所の許可を得なければならない。」と定める。798条の許可を得れば794条の許可が不要になるとする規定はなく、両者は別個の要件と解されている。民法817条の2第2項も「第七百九十四条又は第七百九十八条の許可」と両者を区別して書いている。したがって、未成年の被後見人を養子とするときは794条の許可も必要であり、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "794",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "後見人が被後見人（未成年被後見人及び成年被後見人をいう。以下同じ。）を養子とするには、家庭裁判所の許可を得なければならない。",
+     "text_sha256": "40ad839f191dea4d2574be410998bf6037135d63441f4815b0cc01d5dbc11123",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "798",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者を養子とするには、家庭裁判所の許可を得なければならない。",
+     "text_sha256": "3a2513fa019cbc7a500cbab3c1c4e324368d9e7053f9fc996ec288d7d93999e0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "817_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項に規定する請求をするには、第七百九十四条又は第七百九十八条の許可を得ることを要しない。",
+     "text_sha256": "24d1e08f9e7b717defe167c965b8cc21a4b772ebd1dff474aadd583262199044",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "794条と798条の許可がそれぞれ必要であることは解釈による。"
+   ],
+   "id": "exp-shiho-2016-minpo-q31-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2016-minpo-q31-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。父母の共同親権に服する未成年者でも祖父母と養子縁組をすることを禁じる規定はなく、民法798条ただし書は自己の直系卑属を養子とする場合を許可の例外としている。",
+   "body": "民法798条は「未成年者を養子とするには、家庭裁判所の許可を得なければならない。ただし、自己又は配偶者の直系卑属を養子とする場合は、この限りでない。」と定め、祖父母が孫を養子とすることを想定した例外を置いている。民法793条が禁じるのは「尊属又は年長者」を養子とすることで、孫は祖父母の尊属でも年長者でもない。養子となる者が十五歳未満であれば、民法797条1項により「その法定代理人が、これに代わって、縁組の承諾をすることができる。」とされ、父母の親権に服していることは縁組の妨げにならないと解されている。したがって、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "798",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者を養子とするには、家庭裁判所の許可を得なければならない。ただし、自己又は配偶者の直系卑属を養子とする場合は、この限りでない。",
+     "text_sha256": "3a2513fa019cbc7a500cbab3c1c4e324368d9e7053f9fc996ec288d7d93999e0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "793",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "尊属又は年長者は、これを養子とすることができない。",
+     "text_sha256": "50de6d16969cc377d522179959568e4e0bd1d9b184231fb94b07c76679e332f2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "797",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "養子となる者が十五歳未満であるときは、その法定代理人が、これに代わって、縁組の承諾をすることができる。",
+     "text_sha256": "dbcde29219dcdb97463501d93119f67f500e9ca152c8bfec92f72189c1ccfbb5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "共同親権に服する未成年者も祖父母と縁組できることは解釈による。"
+   ],
+   "id": "exp-shiho-2016-minpo-q31-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
