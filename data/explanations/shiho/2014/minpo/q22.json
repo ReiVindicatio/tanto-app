@@ -1,0 +1,213 @@
+{
+ "question_id": "shiho-2014-minpo-q22",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q22-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。贈与は、与える意思の表示に加えて相手方が受諾をすることによって効力を生ずる契約であり（549条）、単独行為ではない。",
+   "body": "誤りのポイントは、贈与を意思表示だけで成立する「単独行為」としている点です。549条は「贈与は、当事者の一方がある財産を無償で相手方に与える意思を表示し、相手方が受諾をすることによって、その効力を生ずる。」と定めています。贈与者の意思表示だけでなく、相手方の「受諾」が必要とされているので、贈与は当事者双方の意思表示の合致による契約です。遺贈のように相手方の受諾なしに効力を生ずる単独行為とは区別されます。したがって、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "549",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "贈与は、当事者の一方がある財産を無償で相手方に与える意思を表示し、相手方が受諾をすることによって、その効力を生ずる。",
+     "text_sha256": "8992575dc0fa5aff60252080d85e9e6812e56263db9b2e59c1a86fc3a3ae6692",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "肢の「自己の財産」は今の549条では「ある財産」となっているが、肢の誤りの決め手（受諾が要る契約であること）は今の条文でも同じ。",
+    "遺贈が単独行為であるとの対比は解釈による。"
+   ],
+   "id": "exp-shiho-2014-minpo-q22-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q22-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。書面によらない贈与でも、履行の終わった部分については解除（肢の「撤回」）をすることができない（550条ただし書）。",
+   "body": "誤りのポイントは、履行の終わった部分についても撤回できるとしている点です。550条は「書面によらない贈与は、各当事者が解除をすることができる。ただし、履行の終わった部分については、この限りでない。」と定めています。肢の「撤回」は、今の民法では「解除」（550条）として定められています。書面によらない贈与でも、履行の終わった部分は解除の対象から外れます。したがって、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "550",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "書面によらない贈与は、各当事者が解除をすることができる。ただし、履行の終わった部分については、この限りでない。",
+     "text_sha256": "7cb02bb2f66b160f472eaf07830a7bbc15363edd63e754fa1c56545ab2675e85",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "名前が変わった（規律と結論は同じ）：肢の「撤回」は今の550条では「解除」。"
+   ],
+   "id": "exp-shiho-2014-minpo-q22-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q22-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。特定物の引渡しを目的とする債権の債務者は、引渡しをするまで善良な管理者の注意をもってその物を保存しなければならず（400条）、特定物の贈与者もこの義務を負う。",
+   "body": "決め手は、400条が特定物の引渡債務一般に適用されることです。400条は「債権の目的が特定物の引渡しであるときは、債務者は、その引渡しをするまで、契約その他の債権の発生原因及び取引上の社会通念に照らして定まる善良な管理者の注意をもって、その物を保存しなければならない。」と定めています。特定物の贈与者は、その物を受贈者に引き渡す債務を負う債務者なので、この規定が適用されます。贈与が無償であることを理由に注意義務を軽くする規定は、贈与の節（549条以下）には置かれていません。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "400",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権の目的が特定物の引渡しであるときは、債務者は、その引渡しをするまで、契約その他の債権の発生原因及び取引上の社会通念に照らして定まる善良な管理者の注意をもって、その物を保存しなければならない。",
+     "text_sha256": "57736a554949c28906ec88ef56433065fde2d9facddef5a9a3183021b2306c30",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "549",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "贈与は、当事者の一方がある財産を無償で相手方に与える意思を表示し、相手方が受諾をすることによって、その効力を生ずる。",
+     "text_sha256": "8992575dc0fa5aff60252080d85e9e6812e56263db9b2e59c1a86fc3a3ae6692",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "400条の「契約その他の債権の発生原因及び取引上の社会通念に照らして定まる」の部分は出題後の改正によるものとみられるが、善良な管理者の注意をもって保存する義務という結論は同じ。"
+   ],
+   "id": "exp-shiho-2014-minpo-q22-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q22-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は、贈与者の責任を「贈与者は、贈与の目的である物又は権利を、贈与の目的として特定した時の状態で引き渡し、又は移転することを約したものと推定する。」（551条1項）という契約の内容の推定として定めており、肢の前提の「瑕疵」についての担保責任の規律とは要件・効果の立て方が異なる。名前だけの違いではないため、今の条文では説明しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "551",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "贈与者は、贈与の目的である物又は権利を、贈与の目的として特定した時の状態で引き渡し、又は移転することを約したものと推定する。",
+     "text_sha256": "cee803ab76b1d93723d34c8d093cd279261a9128dc7d59f487e6ec374cafc018",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "債権法改正で、売主の瑕疵担保責任が契約不適合責任に改められ、贈与者の責任の規定（551条）も変わった。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-minpo-q22-4",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q22-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の549条は贈与の目的を「ある財産」とし、「相手方が受諾をすることによって、その効力を生ずる。」と定めている。他人の物を目的とする贈与の扱いは、出題後に変わったこの条の文言のもとで決まることになり、出題当時の決め手（判例。確かめていない）とは説明の理由が異なるため、今の条文では説明しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "549",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ある財産",
+     "text_sha256": "8992575dc0fa5aff60252080d85e9e6812e56263db9b2e59c1a86fc3a3ae6692",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "549",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方が受諾をすることによって、その効力を生ずる。",
+     "text_sha256": "8992575dc0fa5aff60252080d85e9e6812e56263db9b2e59c1a86fc3a3ae6692",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "他人の物の贈与の効力についての判例を探したが確かめられなかった（courts.py search 贈与 他人の物／search 他人の財産 贈与／search 贈与 他人の所有 --from 昭和40 --to 昭和50）。",
+    "改正前の内容は条文の本文で確認していない。今の549条の文言だけでも公式の×と同じ結論になりうるが、理由が出題当時と異なるおそれがあるため手順3に倒した。"
+   ],
+   "id": "exp-shiho-2014-minpo-q22-5",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,229 @@
+{
+ "question_id": "shiho-2014-minpo-q12",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q12-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法209条1項は「土地の所有者は、次に掲げる目的のため必要な範囲内で、隣地を使用することができる。」として隣地を使用する権利そのものを定め、同条3項で事前の通知を求めており、肢の前提である「隣地の使用を請求することができる」という請求の形の規律ではなくなっている。償金も「隣地の所有者又は隣地使用者が損害を受けたときは、その償金を請求することができる。」（同条4項）と定め直されており、今の条文で説明すると出題時と別の規律による説明になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "209",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "土地の所有者は、次に掲げる目的のため必要な範囲内で、隣地を使用することができる。",
+     "text_sha256": "40c05f339d4c7e0a546a6cac5d8d1607f96c347bcb1ef76079a3cd8f83a24fb7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "209",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の規定により隣地を使用する者は、あらかじめ、その目的、日時、場所及び方法を隣地の所有者及び隣地使用者に通知しなければならない。",
+     "text_sha256": "40c05f339d4c7e0a546a6cac5d8d1607f96c347bcb1ef76079a3cd8f83a24fb7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "209",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "第一項の場合において、隣地の所有者又は隣地使用者が損害を受けたときは、その償金を請求することができる。",
+     "text_sha256": "40c05f339d4c7e0a546a6cac5d8d1607f96c347bcb1ef76079a3cd8f83a24fb7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に209条の本文が変わった（隣地使用の請求から隣地を使用する権利へ）。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2014-minpo-q12-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q12-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。分割によって袋地が生じたときは，他の分割者の所有地のみを通行でき，償金も要らない（213条1項）。",
+   "body": "決め手は，分割によって生じた袋地の通行の範囲と償金の要否である。民法は「分割によって公道に通じない土地が生じたときは、その土地の所有者は、公道に至るため、他の分割者の所有地のみを通行することができる。この場合においては、償金を支払うことを要しない。」（213条1項）と定める。分割で公道に通じない土地が生じたのは分割の当事者の事情によるものであるから，通行は他の分割者の所有地に限られ，その代わり償金は不要とされている。肢はこの条文のとおりであり，正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "213",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "分割によって公道に通じない土地が生じたときは、その土地の所有者は、公道に至るため、他の分割者の所有地のみを通行することができる。この場合においては、償金を支払うことを要しない。",
+     "text_sha256": "0726b79b0df261d8302a14e6ef6006b67afd9dad2f6ac2e98d13cd6ef2db1d9a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2014-minpo-q12-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q12-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。直接に雨水を隣地に注ぐ構造の屋根は設けてはならず，やむを得ない事由があれば償金を払って設けられるという例外は定められていない（218条）。",
+   "body": "誤りの決め手は，やむを得ない事由があれば償金を支払って設けられるとしている点である。民法は「土地の所有者は、直接に雨水を隣地に注ぐ構造の屋根その他の工作物を設けてはならない。」（218条）と定めるだけで，やむを得ない事由がある場合の例外や，償金を支払えば設置できるという定めは置いていない。したがって，土地の所有者は，やむを得ない事由があっても，直接に雨水を隣地に注ぐ構造の屋根を設けることはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "218",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "土地の所有者は、直接に雨水を隣地に注ぐ構造の屋根その他の工作物を設けてはならない。",
+     "text_sha256": "0b22f60f18ecaa6be0ec267ebdd2058e194c52e44979e4075cd8d6b7a983636f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2014-minpo-q12-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q12-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。境界線から50センチメートル以上の距離を保たずに建築をしようとする者があるときは，隣地の所有者はその建築を中止させ，又は変更させることができる（234条2項）。",
+   "body": "誤りの決め手は，隣地の所有者が建築を中止・変更させることが「できない」としている点である。民法は「建物を築造するには、境界線から五十センチメートル以上の距離を保たなければならない。」（234条1項）としたうえで，「前項の規定に違反して建築をしようとする者があるときは、隣地の所有者は、その建築を中止させ、又は変更させることができる。」（234条2項本文）と定める。境界線に接して建築をしようとする者は同条1項に違反して建築をしようとする者に当たるから，隣地の所有者はその建築を中止させ，又は変更させることができる。なお，「建築に着手した時から一年を経過し、又はその建物が完成した後は、損害賠償の請求のみをすることができる。」（234条2項ただし書）とされているが，肢はこれから建築をしようとする場面である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "234",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "建物を築造するには、境界線から五十センチメートル以上の距離を保たなければならない。",
+     "text_sha256": "8d311af6220033f4aae833fc971ea80c7bf3ea97be509a26bf14012371e0cc01",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "234",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定に違反して建築をしようとする者があるときは、隣地の所有者は、その建築を中止させ、又は変更させることができる。ただし、建築に着手した時から一年を経過し、又はその建物が完成した後は、損害賠償の請求のみをすることができる。",
+     "text_sha256": "8d311af6220033f4aae833fc971ea80c7bf3ea97be509a26bf14012371e0cc01",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2014-minpo-q12-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q12-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法233条1項は越境した枝について「その竹木の所有者に、その枝を切除させることができる。」とする一方、同条3項で、催告をしたのに相当の期間内に切除しないときなど一定の場合には「土地の所有者は、その枝を切り取ることができる。」と定めており、土地の所有者が自ら枝を切れるかという肢の前提の規律が出題後に変わっている。今の条文で説明すると、自ら切り取れる場合があることを前提にした、出題時と別の理由になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "233",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "土地の所有者は、隣地の竹木の枝が境界線を越えるときは、その竹木の所有者に、その枝を切除させることができる。",
+     "text_sha256": "771bba2504e9f8d37b917cc4a974d5501fdaf9d9f30ab64cacf72d5e73c35de4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "233",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の場合において、次に掲げるときは、土地の所有者は、その枝を切り取ることができる。",
+     "text_sha256": "771bba2504e9f8d37b917cc4a974d5501fdaf9d9f30ab64cacf72d5e73c35de4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に233条の本文が変わった（土地の所有者が自ら枝を切り取れる場合の追加）。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2014-minpo-q12-e",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

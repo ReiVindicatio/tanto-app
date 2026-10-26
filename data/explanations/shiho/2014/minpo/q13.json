@@ -1,0 +1,297 @@
+{
+ "question_id": "shiho-2014-minpo-q13",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q13-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。留置権も先取特権と同じく法律の定める要件を満たすと当然に生じる法定担保物権であり、合意によって設定を受けることはできない。",
+   "body": "誤りのポイントは、合意により留置権の設定を受けることができるとしている点です。295条1項は「他人の物の占有者は、その物に関して生じた債権を有するときは、その債権の弁済を受けるまで、その物を留置することができる。」と定め、留置権は要件を満たせば法律上当然に生じます。先取特権も「この法律その他の法律の規定に従い」生じる権利です（303条）。そして175条は「物権は、この法律その他の法律に定めるもののほか、創設することができない。」と定めており、当事者の合意で留置権を設定することはできないと解されています。肢の前半（先取特権）は正しいものの、後半が誤りなので、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "295",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の物の占有者は、その物に関して生じた債権を有するときは、その債権の弁済を受けるまで、その物を留置することができる。",
+     "text_sha256": "5c120d320238e83f832ef9e2f8c7e848a8fd3c0499a6d5e4aabf099e22e7bdee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "303",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この法律その他の法律の規定に従い",
+     "text_sha256": "6a8e595db5fb16129340e97f53d147d3079f19abafbb0571155fc83639196ed4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "175",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "物権は、この法律その他の法律に定めるもののほか、創設することができない。",
+     "text_sha256": "40cfd941bf9c26cd0a5d40788bd7d28f0b57079a58fbb3ae2360b3b125227a5a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "留置権・先取特権を合意で設定できないこと（法定担保物権）は解釈による。"
+   ],
+   "id": "exp-shiho-2014-minpo-q13-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q13-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。留置権者は留置権による競売を申し立てることはできるが、留置権には優先弁済を受ける効力がなく、換価金から優先的に弁済を受けることはできない。",
+   "body": "誤りのポイントは、換価金から優先的に弁済を受けられるとしている点です。民事執行法195条は「留置権による競売」を「担保権の実行としての競売の例による」と定めており、競売の申立て自体はできます。しかし、留置権の内容を定める民法295条1項は「その物を留置することができる」とするだけで、先取特権（303条）や質権（342条）のように「他の債権者に先立って自己の債権の弁済を受ける権利」を定めていません。このため、留置権による競売は換価のためのものにとどまり、留置権者は換価金から優先弁済を受けることはできないと解されています。したがって、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "195",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "留置権による競売",
+     "text_sha256": "4340d1f7c4836580db1434fd3285b9df92ec6aba3e33b75f028ac67da4e75d66",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "195",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "担保権の実行としての競売の例による",
+     "text_sha256": "4340d1f7c4836580db1434fd3285b9df92ec6aba3e33b75f028ac67da4e75d66",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "295",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その物を留置することができる",
+     "text_sha256": "5c120d320238e83f832ef9e2f8c7e848a8fd3c0499a6d5e4aabf099e22e7bdee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "303",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の債権者に先立って自己の債権の弁済を受ける権利",
+     "text_sha256": "6a8e595db5fb16129340e97f53d147d3079f19abafbb0571155fc83639196ed4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "342",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の債権者に先立って自己の債権の弁済を受ける権利",
+     "text_sha256": "9cb77e3a6bbd8629babc4d277f612ea8d47aea09301b084204663b02a52c2350",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "留置権による競売が換価のためのもので優先弁済効がないことは解釈による。"
+   ],
+   "id": "exp-shiho-2014-minpo-q13-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q13-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。留置権者は債務者の承諾なしに留置物を賃貸できず（298条2項）、これに違反したときは債務者は留置権の消滅を請求できる（298条3項）。",
+   "body": "決め手は298条2項・3項です。298条2項は「留置権者は、債務者の承諾を得なければ、留置物を使用し、賃貸し、又は担保に供することができない。」と定めています。そして298条3項は「留置権者が前二項の規定に違反したときは、債務者は、留置権の消滅を請求することができる。」と定めています。承諾を得ずに留置物を賃貸することは2項に違反するので、債務者は留置権の消滅を請求できます。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "298",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "留置権者は、債務者の承諾を得なければ、留置物を使用し、賃貸し、又は担保に供することができない。",
+     "text_sha256": "a61b1780dbdd816fb30c10413d5379bf275d6e1120431a4f6081e746a0cb65a7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "298",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "留置権者が前二項の規定に違反したときは、債務者は、留置権の消滅を請求することができる。",
+     "text_sha256": "a61b1780dbdd816fb30c10413d5379bf275d6e1120431a4f6081e746a0cb65a7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-minpo-q13-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q13-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。留置権を行使して目的物の引渡しを拒んでいても、被担保債権の消滅時効の進行は妨げられない（300条）。",
+   "body": "決め手は300条です。300条は「留置権の行使は、債権の消滅時効の進行を妨げない。」と定めています。請負人が報酬債権を被担保債権として仕事の目的物を留置していても、それだけでは報酬債権の時効は進行し続けます。肢はこの規定のとおりの内容です。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "300",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "留置権の行使は、債権の消滅時効の進行を妨げない。",
+     "text_sha256": "abaf6bf8faf53d0b82be4b421b4c2ba4c05c2b552b55a2db6a9587b715826b77",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-minpo-q13-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q13-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。物上代位を定める304条は先取特権の規定で、質権（350条）・抵当権（372条）には準用されるが、留置権には準用されておらず、留置権者は物上代位をすることができない。",
+   "body": "誤りのポイントは、留置権者に物上代位を認めている点です。304条1項は「先取特権は、その目的物の売却、賃貸、滅失又は損傷によって債務者が受けるべき金銭その他の物に対しても、行使することができる。」と定め、先取特権についての規定です。この規定は質権について350条で、抵当権について372条で準用されていますが、留置権について準用する規定はありません。留置権は物を留置する権利で優先弁済を受ける効力がないため、目的物に代わる金銭等に権利を及ぼす物上代位も認められないと解されています。したがって、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "304",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "先取特権は、その目的物の売却、賃貸、滅失又は損傷によって債務者が受けるべき金銭その他の物に対しても、行使することができる。",
+     "text_sha256": "b1d11df2a52bc9d5d50b2080a81c4513959c0d738f906fbf8ec831ddcca44d4d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "350",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百九十六条から第三百条まで及び第三百四条の規定は、質権について準用する。",
+     "text_sha256": "f1e3b2cebdf54f6474e2883fe0b05ba5e6243ca64ee25faf744b68109735c1d9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "372",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百九十六条、第三百四条及び第三百五十一条の規定は、抵当権について準用する。",
+     "text_sha256": "8425da3902ddc690c551ae65b8a6e0edd78d749eea824d1e2c5ab95e4e8b7d7c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "留置権に物上代位が認められない理由（優先弁済効がないこと）は解釈による。"
+   ],
+   "id": "exp-shiho-2014-minpo-q13-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

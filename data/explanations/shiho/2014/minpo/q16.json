@@ -1,0 +1,308 @@
+{
+ "question_id": "shiho-2014-minpo-q16",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q16-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。受領遅滞の後でも、売主が故意にワインを滅失させれば、その履行不能は売主の責めに帰すべき事由によるので、売主は損害賠償責任を負う（415条1項）。",
+   "body": "誤りのポイントは、故意に滅失させても損害賠償責任を負わないとしている点です。売主が債務の本旨に従ってワインを持参したことで、ワインは特定し（401条2項「債務者が物の給付をするのに必要な行為を完了し」）、その後の故意の滅失によって引渡債務は履行不能となります。弁済の提供の効果は「債務を履行しないことによって生ずべき責任を免れる」（492条）ことであり、提供後に債務者自身が故意に目的物を滅失させたことによる責任まで免れさせるものではないと解されています。受領遅滞により保存の注意が「自己の財産に対するのと同一の注意」に軽くなるとしても（413条1項）、故意の滅失はこの注意にも反します。また、受領遅滞中の履行不能を債権者の責めに帰すべき事由によるものとみなす413条の2第2項は「当事者双方の責めに帰することができない事由」による不能の場合に限られます。したがって、売主は415条1項により損害賠償責任を負い、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "401",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債務者が物の給付をするのに必要な行為を完了し",
+     "text_sha256": "05b63d037465cb704344c8098943c37dc0f57fc5b76f6e5aeece1f4484bab30f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "492",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務を履行しないことによって生ずべき責任を免れる",
+     "text_sha256": "2970969bf40f4c31c85509f6921d5d76f57e66b29130e8eb609e9a11a8981b21",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "413",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己の財産に対するのと同一の注意",
+     "text_sha256": "c4c9c14f593e97e4e47fcbff6aba47587cf0e04c9b2f3dd84ca3824c90f41fb7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "413_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当事者双方の責めに帰することができない事由",
+     "text_sha256": "603bcb35c2720d06875a76b154ecb832aeaa377c41e9fc1dd6cddd794e750107",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "415",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者がその債務の本旨に従った履行をしないとき又は債務の履行が不能であるときは、債権者は、これによって生じた損害の賠償を請求することができる。",
+     "text_sha256": "17591c49fffea4a95a4b10a3ff4b37bcd321771faa36b15176b72ce9b46cf6c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "413条の2が出題当時にあったか、改正前の内容は条文の本文で確認していない。売主の故意による履行不能で責任を負うという結論は現行の条文で説明した。",
+    "492条の効果が提供後の債務者の故意による滅失に及ばないこと、特定した種類物にも413条1項の注意の軽減が及ぶかは解釈による。"
+   ],
+   "id": "exp-shiho-2014-minpo-q16-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q16-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。持参によりワインは特定し（401条2項）、その後、当事者双方の責めに帰することができない第三者の放火で滅失すれば引渡債務は履行不能となり、売主は引渡債務を免れる（412条の2第1項）。",
+   "body": "決め手は、特定後の滅失による履行不能です。売主が買主の住所にワインを持参して債務の本旨に従った提供をしたことで、「債務者が物の給付をするのに必要な行為を完了し」たことになり、以後そのワインが債権の目的物となります（401条2項）。そのワインが第三者の放火で滅失すると、引渡債務は履行不能となり、412条の2第1項により「債権者は、その債務の履行を請求することができない」ので、売主は別のワインを調達して引き渡す必要がありません。しかも、受領拒絶の後に当事者双方の責めに帰することができない事由で履行不能となったときは「その履行の不能は、債権者の責めに帰すべき事由によるものとみなす」（413条の2第2項）ので、売主が損害賠償責任を負うこともありません。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "401",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債務者が物の給付をするのに必要な行為を完了し",
+     "text_sha256": "05b63d037465cb704344c8098943c37dc0f57fc5b76f6e5aeece1f4484bab30f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "412_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者は、その債務の履行を請求することができない",
+     "text_sha256": "df50c8bec71e91034aec91977f8df0df045f842d2c80fcd3dfa7c054cd67439b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "413_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その履行の不能は、債権者の責めに帰すべき事由によるものとみなす",
+     "text_sha256": "603bcb35c2720d06875a76b154ecb832aeaa377c41e9fc1dd6cddd794e750107",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "412条の2・413条の2が出題当時にあったか、改正前の内容は条文の本文で確認していない。特定後の当事者双方の責めに帰することができない滅失で売主が引渡債務を免れるという結論は現行の条文で説明した。"
+   ],
+   "id": "exp-shiho-2014-minpo-q16-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q16-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。ワインが買主の過失で滅失したときは、債権者である買主の責めに帰すべき事由による履行不能なので、買主は代金の支払を拒むことができない（536条2項）。",
+   "body": "決め手は536条2項です。ワインの引渡債務について、買主は債権者の立場にあります。536条2項前段は「債権者の責めに帰すべき事由によって債務を履行することができなくなったときは、債権者は、反対給付の履行を拒むことができない。」と定めています。持参により特定したワイン（401条2項）が買主の過失により滅失したのは、債権者である買主の責めに帰すべき事由による履行不能に当たるので、買主は反対給付である代金の支払を拒めません。したがって、買主は代金債務を免れず、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "536",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権者の責めに帰すべき事由によって債務を履行することができなくなったときは、債権者は、反対給付の履行を拒むことができない。",
+     "text_sha256": "07238591347b0008a936f1e6eb7f8c43291d972cb540de8dd607128c70eb8bc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "401",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債務者が物の給付をするのに必要な行為を完了し",
+     "text_sha256": "05b63d037465cb704344c8098943c37dc0f57fc5b76f6e5aeece1f4484bab30f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-minpo-q16-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q16-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。一度履行の提供を受けても、その提供が継続されない限り、相手方は同時履行の抗弁権を失わない（最判昭和34年5月14日）。",
+   "body": "誤りのポイントは、一度受領を拒んだ買主は以後同時履行の抗弁を主張できないとしている点です。533条は「双務契約の当事者の一方は、相手方がその債務の履行（債務の履行に代わる損害賠償の債務の履行を含む。）を提供するまでは、自己の債務の履行を拒むことができる。」と定めています。判例は、双務契約の当事者の一方は、相手方の履行の提供があっても、その提供が継続されない限り、同時履行の抗弁権を失うものではないとしています。肢の事案では、売主は1週間前に一度ワインを持参したにとどまり、代金の支払を求める時点で改めて提供をしているとの事情はないので、買主はワインの引渡しとの同時履行の抗弁を主張できます。したがって、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "533",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "双務契約の当事者の一方は、相手方がその債務の履行（債務の履行に代わる損害賠償の債務の履行を含む。）を提供するまでは、自己の債務の履行を拒むことができる。",
+     "text_sha256": "95fda827e77316b7aae0167132d09d24763b8a7bcc53a41b785f0fa63eff6774",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "履行の提供の継続と同時履行の抗弁権",
+     "court": "最高裁判所第一小法廷",
+     "date": "1959-05-14",
+     "case_number": "昭和32(オ)391",
+     "holding": "双務契約の当事者の一方は、相手方の履行の提供があっても、その提供が継続されない限り、同時履行の抗弁権を失うものではない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54858/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-minpo-q16-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q16-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。債権者があらかじめ受領を拒んでいるときは、弁済の準備をしたことを通知して受領を催告すれば弁済の提供として足り（493条ただし書）、その時から債務不履行の責任を免れる（492条）。",
+   "body": "決め手は、口頭の提供を定める493条ただし書です。493条は本文で「弁済の提供は、債務の本旨に従って現実にしなければならない。」としつつ、ただし書で「債権者があらかじめその受領を拒み、又は債務の履行について債権者の行為を要するときは、弁済の準備をしたことを通知してその受領の催告をすれば足りる。」と定めています。買主があらかじめ受領を拒んでいる肢の事案では、売主が弁済の準備をしたことを通知して受領を催告すれば、ワインを持参しなくても弁済の提供になります。そして492条は「債務者は、弁済の提供の時から、債務を履行しないことによって生ずべき責任を免れる。」と定めているので、売主は引渡債務の不履行を理由とする損害賠償責任を負いません。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "493",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁済の提供は、債務の本旨に従って現実にしなければならない。",
+     "text_sha256": "7d648685cba1a7afaa23d6f8e5082aefada838a828ceff7d283bf09e13658b68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "493",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者があらかじめその受領を拒み、又は債務の履行について債権者の行為を要するときは、弁済の準備をしたことを通知してその受領の催告をすれば足りる。",
+     "text_sha256": "7d648685cba1a7afaa23d6f8e5082aefada838a828ceff7d283bf09e13658b68",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "492",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、弁済の提供の時から、債務を履行しないことによって生ずべき責任を免れる。",
+     "text_sha256": "2970969bf40f4c31c85509f6921d5d76f57e66b29130e8eb609e9a11a8981b21",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-minpo-q16-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

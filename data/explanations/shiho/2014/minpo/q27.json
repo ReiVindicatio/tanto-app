@@ -1,0 +1,334 @@
+{
+ "question_id": "shiho-2014-minpo-q27",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q27-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。事務管理の管理者に認められるのは有益な費用の償還請求（702条1項）などで、報酬を請求する規定はなく、報酬は請求できないと解されている。",
+   "body": "決め手は、事務管理の管理者が本人に何を請求できると定められているかです。Ａは義務なく飼い主のために犬の世話を始めているので、697条1項の「義務なく他人のために事務の管理を始めた者」（管理者）にあたります。管理者が本人に請求できるものとして民法が定めているのは、702条1項の「管理者は、本人のために有益な費用を支出したときは、本人に対し、その償還を請求することができる。」と、有益な債務の代弁済の請求（702条2項）であり、報酬の請求を認める規定はありません。また、701条が事務管理に準用する委任の規定は「第六百四十五条から第六百四十七条までの規定」に限られています。そのため、管理者は報酬を請求できないと解されており、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "697",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "義務なく他人のために事務の管理を始めた者",
+     "text_sha256": "af2fed21d1e2b3f147659f646914f859978277be9a4d6cddf248034f0a14e1e1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "702",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管理者は、本人のために有益な費用を支出したときは、本人に対し、その償還を請求することができる。",
+     "text_sha256": "3a941f810c7c266639da18e42f68a143f6d20b89842d12970bcba33e950c5dec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "702",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第六百五十条第二項の規定は、管理者が本人のために有益な債務を負担した場合について準用する。",
+     "text_sha256": "3a941f810c7c266639da18e42f68a143f6d20b89842d12970bcba33e950c5dec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "701",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第六百四十五条から第六百四十七条までの規定",
+     "text_sha256": "dbf9ef286e0710163b9c06f19cc540e90a9d3be04c2f6f94a51c1011262f6c16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "事務管理の管理者が報酬を請求できないことは、規定がないことからの解釈による。"
+   ],
+   "id": "exp-shiho-2014-minpo-q27-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q27-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。注意義務が軽くなるのは急迫の危害を免れさせるための緊急事務管理（698条）の場合で、通常の事務管理では「最も本人の利益に適合する方法」（697条1項）で管理しなければならず、善良な管理者の注意が求められると解されている。",
+   "body": "誤りのポイントは、自己の財産に対するのと同一の注意で足りるとしている点です。697条1項は、管理者は「その事務の性質に従い、最も本人の利益に適合する方法によって、その事務の管理（以下「事務管理」という。）をしなければならない。」と定めており、通常の事務管理では管理者は善良な管理者の注意を尽くす義務を負うと解されています。管理者の責任が軽くなるのは、698条が定める「本人の身体、名誉又は財産に対する急迫の危害を免れさせるために事務管理をしたとき」（悪意又は重大な過失がなければ損害賠償責任を負わない）の場合です。肢の場面は、犬を自宅に連れ帰って世話をしているだけで急迫の危害を免れさせる場面ではありません。したがって、自己の財産に対するのと同一の注意で足りるとはいえず、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "697",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その事務の性質に従い、最も本人の利益に適合する方法によって、その事務の管理（以下「事務管理」という。）をしなければならない。",
+     "text_sha256": "af2fed21d1e2b3f147659f646914f859978277be9a4d6cddf248034f0a14e1e1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "698",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "本人の身体、名誉又は財産に対する急迫の危害を免れさせるために事務管理をしたとき",
+     "text_sha256": "6eaf036df296eb97f31d81702817dd8d46ee3e4d078986c200ec584907129f57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "通常の事務管理で善良な管理者の注意が求められることは解釈による。"
+   ],
+   "id": "exp-shiho-2014-minpo-q27-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q27-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。受任者の無過失損害の賠償請求を定める650条3項は事務管理に準用されていない（701条）ので、Ａは犬の飼い主に損害賠償を請求できないと解されている。",
+   "body": "誤りのポイントは、事務管理の管理者が過失なく受けた損害の賠償を本人に請求できるとしている点です。委任では、650条3項が「受任者は、委任事務を処理するため自己に過失なく損害を受けたときは、委任者に対し、その賠償を請求することができる。」と定めています。しかし、701条が事務管理に準用するのは「第六百四十五条から第六百四十七条までの規定」だけで、650条3項は準用されていません。事務管理の管理者が請求できるのは、有益な費用の償還（702条1項）と有益な債務の代弁済（702条2項）です。そのため、管理者が事務管理の際に受けた損害の賠償は本人に請求できないと解されており、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "650",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "受任者は、委任事務を処理するため自己に過失なく損害を受けたときは、委任者に対し、その賠償を請求することができる。",
+     "text_sha256": "c8d7dac2ae2fa48748a033348ac0168d2d83ef658e54c7b3244cb55094342a4a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "701",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第六百四十五条から第六百四十七条までの規定",
+     "text_sha256": "dbf9ef286e0710163b9c06f19cc540e90a9d3be04c2f6f94a51c1011262f6c16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "702",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管理者は、本人のために有益な費用を支出したときは、本人に対し、その償還を請求することができる。",
+     "text_sha256": "3a941f810c7c266639da18e42f68a143f6d20b89842d12970bcba33e950c5dec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "702",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第六百五十条第二項の規定は、管理者が本人のために有益な債務を負担した場合について準用する。",
+     "text_sha256": "3a941f810c7c266639da18e42f68a143f6d20b89842d12970bcba33e950c5dec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "650条3項が準用されないことから管理者の損害賠償請求を否定するのは解釈による。"
+   ],
+   "id": "exp-shiho-2014-minpo-q27-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q27-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。占有は「自己のためにする意思」で足り所有の意思は要らない（180条）うえ、占有者に代わって動物を管理する者も718条の責任を負う（同条2項）ので、Ａは同条1項ただし書の注意を尽くしたことを示さない限り責任を負い、Ｂが過失を立証する必要はない。",
+   "body": "誤りのポイントは、所有の意思がないことを理由に動物の占有者としての責任を否定し、Ｂに過失の立証を求めている点です。占有は「占有権は、自己のためにする意思をもって物を所持することによって取得する。」（180条）とされ、所有の意思は要件ではありません。718条1項は「動物の占有者は、その動物が他人に加えた損害を賠償する責任を負う。」とし、免責されるのは「動物の種類及び性質に従い相当の注意をもってその管理をしたとき」に限られます（同項ただし書）。さらに同条2項は「占有者に代わって動物を管理する者も、前項の責任を負う。」と定めています。このように、相当の注意をしたことは責任を免れようとする側（Ａ）が立証すべきものと解されており、ＢがＡの過失を立証しなければならないとする肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "180",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有権は、自己のためにする意思をもって物を所持することによって取得する。",
+     "text_sha256": "36ba3b957032ffcbefaf5197c62b740f6b7132102fee0d7d0a035be580527b02",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "718",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "動物の占有者は、その動物が他人に加えた損害を賠償する責任を負う。",
+     "text_sha256": "52f7ad4cd55ac985005b6e5cc78cb1a6312e446391d178c543afcd4386e50c03",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "718",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "動物の種類及び性質に従い相当の注意をもってその管理をしたとき",
+     "text_sha256": "52f7ad4cd55ac985005b6e5cc78cb1a6312e446391d178c543afcd4386e50c03",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "718",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "占有者に代わって動物を管理する者も、前項の責任を負う。",
+     "text_sha256": "52f7ad4cd55ac985005b6e5cc78cb1a6312e446391d178c543afcd4386e50c03",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "718条1項ただし書の注意を尽くしたことの立証責任が占有者側にあることは解釈による。"
+   ],
+   "id": "exp-shiho-2014-minpo-q27-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q27-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。Ａが支払った治療費は本人のための有益な費用として償還を請求でき（702条1項）、これは犬に関して生じた債権なので、Ａは留置権（295条1項）により償還を受けるまで犬の引渡しを拒める。",
+   "body": "決め手は、治療費の償還請求権と留置権です。怪我をした犬に獣医の治療を受けさせることは飼い主のための事務管理にあたり、702条1項は「管理者は、本人のために有益な費用を支出したときは、本人に対し、その償還を請求することができる。」と定めています。そして295条1項は「他人の物の占有者は、その物に関して生じた債権を有するときは、その債権の弁済を受けるまで、その物を留置することができる。」と定めています。治療費の償還請求権は犬そのものに関して生じた債権であり、Ａの占有は不法行為によって始まったものでもない（295条2項）ので、Ａは償還を受けるまで犬を留置できます。したがって、肢は正しい記述です。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "702",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "管理者は、本人のために有益な費用を支出したときは、本人に対し、その償還を請求することができる。",
+     "text_sha256": "3a941f810c7c266639da18e42f68a143f6d20b89842d12970bcba33e950c5dec",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "295",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の物の占有者は、その物に関して生じた債権を有するときは、その債権の弁済を受けるまで、その物を留置することができる。",
+     "text_sha256": "5c120d320238e83f832ef9e2f8c7e848a8fd3c0499a6d5e4aabf099e22e7bdee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "295",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、占有が不法行為によって始まった場合には、適用しない。",
+     "text_sha256": "5c120d320238e83f832ef9e2f8c7e848a8fd3c0499a6d5e4aabf099e22e7bdee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-minpo-q27-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

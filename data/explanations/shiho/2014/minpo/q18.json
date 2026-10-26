@@ -1,0 +1,227 @@
+{
+ "question_id": "shiho-2014-minpo-q18",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q18-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は、更改・相殺・混同の場合を除き「連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない。」（441条）と定め、履行の請求を他の連帯債務者に効力が及ぶ事由としていない。このため今の条文では、Ｂへの請求の効力はＣ・Ｄに及ばないことになり、公式の×に行き着かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない。",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "債権法改正で、連帯債務者の一人に対する履行の請求の効力が他の連帯債務者に及ぶかの規律が変わった。時効の「中断」も今の民法では完成猶予・更新として定められている。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-minpo-q18-1",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q18-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。連帯債務者の一人が債権者に対する債権で相殺を援用したときは、債権は全ての連帯債務者の利益のために消滅する（439条1項）ので、相殺の効力はＣ・Ｄにも及ぶ。",
+   "body": "誤りのポイントは、Ｂのした相殺の効力がＣ・Ｄに及ばないとしている点です。439条1項は「連帯債務者の一人が債権者に対して債権を有する場合において、その連帯債務者が相殺を援用したときは、債権は、全ての連帯債務者の利益のために消滅する。」と定めています。441条も、連帯債務者の一人について生じた事由は他の連帯債務者に効力を生じないという原則から「第四百三十九条第一項」の場合を除いています。したがって、ＢがＡに対する金銭債権で相殺をすれば、その相殺によって消滅した額の限度で、Ｃ及びＤの債務も消滅します。肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "439",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人が債権者に対して債権を有する場合において、その連帯債務者が相殺を援用したときは、債権は、全ての連帯債務者の利益のために消滅する。",
+     "text_sha256": "9865589dc071ab8a21dc7f95c2b91135853d8a405ec1208d9086444f336456b1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第四百三十九条第一項",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-minpo-q18-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q18-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法は、免除を他の連帯債務者に効力が及ぶ事由としておらず、「連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない。」（441条）と定める。また「連帯債務者の一人に対して債務の免除がされ」た場合でも他の連帯債務者が求償権を行使できるとする（445条）。このため今の条文では、Ｂへの免除があってもＣ・Ｄの債務は300万円のままとなり、公式の○に行き着かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない。",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "445",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人に対して債務の免除がされ",
+     "text_sha256": "11bf976c1eb867f4d1d4240d0a6b5b5a1c3c7df6017cdf45fa6e6ab18fdd78e5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "債権法改正で、連帯債務者の一人に対する免除の効力が他の連帯債務者に及ぶかの規律が変わった。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-minpo-q18-3",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q18-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は、連帯債務者の一人のための時効の完成を他の連帯債務者に効力が及ぶ事由としておらず、「連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない。」（441条）と定める。また「連帯債務者の一人のために時効が完成した場合においても」他の連帯債務者が求償権を行使できるとする（445条）。このため今の条文では、Ｃ・Ｄは300万円の債務を負うことになり、公式の×に行き着かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない。",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "445",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人のために時効が完成した場合においても",
+     "text_sha256": "11bf976c1eb867f4d1d4240d0a6b5b5a1c3c7df6017cdf45fa6e6ab18fdd78e5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "債権法改正で、連帯債務者の一人のための時効の完成の効力が他の連帯債務者に及ぶかの規律が変わった。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2014-minpo-q18-4",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2014-minpo-q18-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。連帯債務者の一人が弁済をしたときは、免責を得た額が自己の負担部分を超えるかどうかにかかわらず、他の連帯債務者に対し各自の負担部分に応じた額を求償できる（442条1項）ので、Ｂは60万円の弁済でもＣ・Ｄに求償できる。",
+   "body": "誤りのポイントは、負担部分の範囲内の弁済では求償できないとしている点です。肢は判例の立場を問うものですが、出題当時の判例は大審院のもので、判例あり（要確認）です。今の民法では、442条1項が「連帯債務者の一人が弁済をし、その他自己の財産をもって共同の免責を得たときは、その連帯債務者は、その免責を得た額が自己の負担部分を超えるかどうかにかかわらず、他の連帯債務者に対し、その免責を得るために支出した財産の額（その財産の額が共同の免責を得た額を超える場合にあっては、その免責を得た額）のうち各自の負担部分に応じた額の求償権を有する。」と定めています。ＢＣＤの負担部分は等しいので、Ｂが60万円を弁済すれば、Ｃ及びＤにそれぞれ20万円を求償することができます。したがって、肢は誤りです。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "442",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人が弁済をし、その他自己の財産をもって共同の免責を得たときは、その連帯債務者は、その免責を得た額が自己の負担部分を超えるかどうかにかかわらず、他の連帯債務者に対し、その免責を得るために支出した財産の額（その財産の額が共同の免責を得た額を超える場合にあっては、その免責を得た額）のうち各自の負担部分に応じた額の求償権を有する。",
+     "text_sha256": "b1d9a68defbdbd1f6b3baf69ed12f0a99dbe5c736e4062c94c47db90f1729a0f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "連帯債務者の一人が自己の負担部分を超えない額を弁済した場合にも他の連帯債務者に負担部分の割合で求償できるとした判例",
+     "searched": [
+      "大審院（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。",
+    "肢が問う判例の結論は、今の442条1項の本文と同じ結論である。判例そのものは確かめていない。"
+   ],
+   "id": "exp-shiho-2014-minpo-q18-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
