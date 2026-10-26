@@ -1,0 +1,219 @@
+{
+ "question_id": "shiho-2012-minpo-q01",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q01-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。補助開始の審判は「本人」も請求できる（15条1項）。",
+   "body": "誤りは「自ら補助開始の審判を請求することができない」の部分。15条1項は、精神上の障害により事理を弁識する能力が不十分である者について、家庭裁判所は「本人、配偶者、四親等内の親族、後見人、後見監督人、保佐人、保佐監督人又は検察官の請求により、補助開始の審判をすることができる。」と定め、請求できる者の最初に本人を挙げている。なお、本人以外の者が請求するときは、15条2項により「本人の同意がなければならない」。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "15",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "本人、配偶者、四親等内の親族、後見人、後見監督人、保佐人、保佐監督人又は検察官の請求により、補助開始の審判をすることができる。",
+     "text_sha256": "166ecb63d41f118a41c7cdcf22d9baf379ba7df2e516089a815be64f282af236",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "15",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "本人の同意がなければならない",
+     "text_sha256": "166ecb63d41f118a41c7cdcf22d9baf379ba7df2e516089a815be64f282af236",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q01-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q01-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。成年被後見人が認知をするのに、法定代理人（成年後見人）の同意は要らない（780条）。",
+   "body": "780条は「認知をするには、父又は母が未成年者又は成年被後見人であるときであっても、その法定代理人の同意を要しない。」と定めている。成年被後見人の法定代理人は成年後見人なので、肢のとおり成年後見人の同意は不要である。認知のような身分行為では、本人の意思を尊重する趣旨と解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "780",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "認知をするには、父又は母が未成年者又は成年被後見人であるときであっても、その法定代理人の同意を要しない。",
+     "text_sha256": "f96c7d5cf3e3bef2b4050403465d1ea8285651d649dee1aefe2d9a4153849440",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない",
+    "身分行為で本人の意思を尊重する趣旨という点は解釈による"
+   ],
+   "id": "exp-shiho-2012-minpo-q01-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q01-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。保佐人が被保佐人の利益を害するおそれがないのに同意しないとき、被保佐人は家庭裁判所に同意に代わる許可を請求できる（13条3項）。",
+   "body": "13条3項は「保佐人の同意を得なければならない行為について、保佐人が被保佐人の利益を害するおそれがないにもかかわらず同意をしないときは、家庭裁判所は、被保佐人の請求により、保佐人の同意に代わる許可を与えることができる。」と定めている。肢はこの文言どおりで、請求するのが「被保佐人」である点も条文と一致する。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "13",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "保佐人の同意を得なければならない行為について、保佐人が被保佐人の利益を害するおそれがないにもかかわらず同意をしないときは、家庭裁判所は、被保佐人の請求により、保佐人の同意に代わる許可を与えることができる。",
+     "text_sha256": "c8aa95cbe2fe90c33a5a7efa56fd4ff66cd3c8e78478b1efc6963b1ca101c458",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q01-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q01-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。被補助人について後見開始の審判をするときは、補助開始の審判を取り消さなければならない（19条1項）。",
+   "body": "誤りは「補助開始の審判を取り消さずに」の部分。19条1項は「後見開始の審判をする場合において、本人が被保佐人又は被補助人であるときは、家庭裁判所は、その本人に係る保佐開始又は補助開始の審判を取り消さなければならない。」と定めている。後見・保佐・補助の審判が重ならないようにするための規定であり、補助開始の審判を残したまま後見開始の審判をすることはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "19",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "後見開始の審判をする場合において、本人が被保佐人又は被補助人であるときは、家庭裁判所は、その本人に係る保佐開始又は補助開始の審判を取り消さなければならない。",
+     "text_sha256": "6f86e2c8e83db4d692df55bf5285458b90735a87d2065a1d24e8590b23d8fbfa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない",
+    "審判が重ならないようにする趣旨という点は解釈による"
+   ],
+   "id": "exp-shiho-2012-minpo-q01-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q01-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。補助開始の審判は、同意権を付与する審判（17条1項）か代理権を付与する審判（876条の9第1項）とともにしなければならない（15条3項）。",
+   "body": "誤りは「同意権も代理権も付与されない補助人を選任することができる」の部分。15条3項は「補助開始の審判は、第十七条第一項の審判又は第八百七十六条の九第一項の審判とともにしなければならない。」と定めている。17条1項の審判は補助人の同意を要する旨の審判、876条の9第1項の審判は「補助人に代理権を付与する旨の審判」であり、少なくともどちらかがなければ補助開始の審判はできない。したがって、同意権も代理権もない補助人だけを置くことはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "15",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "補助開始の審判は、第十七条第一項の審判又は第八百七十六条の九第一項の審判とともにしなければならない。",
+     "text_sha256": "166ecb63d41f118a41c7cdcf22d9baf379ba7df2e516089a815be64f282af236",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "17",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被補助人が特定の法律行為をするにはその補助人の同意を得なければならない旨の審判をすることができる。",
+     "text_sha256": "613632a805004cadd78bd89103ca69b2ef1e58af9f3a14b5cf49cb01fc28f237",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "876_9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被補助人のために特定の法律行為について補助人に代理権を付与する旨の審判をすることができる。",
+     "text_sha256": "0a85ba9840c77629af5c4230e0a53556e5aa7a1966571d893e1e74800eb847de",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q01-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

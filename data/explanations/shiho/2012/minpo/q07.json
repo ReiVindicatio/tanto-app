@@ -1,0 +1,290 @@
+{
+ "question_id": "shiho-2012-minpo-q07",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q07-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。遺産分割が終わっていないことを理由に消滅時効が止まる規定はなく、金銭債務は相続分に応じて各相続人に承継されるので、遺産分割まで時効が中断するという点が誤り。",
+   "body": "誤りは「遺産分割によってその金銭債務を負う者が決定するまでの間は，その債務について消滅時効は中断する」とする点である。肢の「中断」は、今の民法では時効の完成猶予・更新（147条以下）として定められているが、遺産分割が終わっていないことはそのどの事由にも当たらない。899条は「各共同相続人は、その相続分に応じて被相続人の権利義務を承継する」と定め、金銭債務のような可分の債務は、遺産分割を待たずに相続分に応じて分割されて各相続人に承継されると解されている。判例も、連帯債務者の一人が死亡して相続人が数人ある場合に、相続人らは被相続人の債務の分割されたものを承継するとしている（最判昭和34年6月19日）。相続財産に関する時効の完成猶予の規定（160条）も、「相続人が確定した時、管理人が選任された時又は破産手続開始の決定があった時から六箇月を経過するまでの間は、時効は、完成しない」とするもので、遺産分割の時まで時効を止めるものではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "147",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効は、完成しない",
+     "text_sha256": "3137736c35f135564d0162881d4fffef7103e15e30ac5aaa61cc08bfef94449c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "899",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各共同相続人は、その相続分に応じて被相続人の権利義務を承継する",
+     "text_sha256": "24fe9f1480fcf7ea1c57ccd2798f8f071bf62b4d1805ff1f4cd51264fe88f477",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "160",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続人が確定した時、管理人が選任された時又は破産手続開始の決定があった時から六箇月を経過するまでの間は、時効は、完成しない",
+     "text_sha256": "7162d41498131ba43670fc82b66f4d357536e3d02f7c4086cec30cfc59c34d42",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "連帯債務の相続（分割承継）",
+     "court": "最高裁判所第二小法廷",
+     "date": "1959-06-19",
+     "case_number": "昭和32(オ)477",
+     "holding": "連帯債務者の一人が死亡し、その相続人が数人ある場合に、相続人らは、被相続人の債務の分割されたものを承継し、各自その承継した範囲において、本来の債務者とともに連帯債務者となる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54861/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。名前が変わった（規律と結論は同じ）：肢の「中断」は今の民法では完成猶予・更新として定められている。遺産分割の未了で時効が止まる規定がないという結論は変わらない",
+    "金銭債務が相続分に応じて当然に分割承継されるという点は解釈による（引いた判例は連帯債務の事案）",
+    "改正前の時効の中断・停止の規定の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q07-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q07-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法は担保権の実行を時効の完成猶予・更新の事由とし（148条1項・2項）、時効の利益を受ける者に対してしない手続は「その者に通知をした後でなければ、第百四十八条又は第百四十九条の規定による時効の完成猶予又は更新の効力を生じない」（154条）と定める。肢の前提の時効の「中断」の規定は今の条文になく、送達の時に生じるのは完成猶予で、時効が「新たにその進行を始める」のは手続が終了した時である（148条2項）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "148",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "担保権の実行",
+     "text_sha256": "a84676e93fee781cc022148186828096413761bff7118b22140bf10a920a1539",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "148",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "時効は、同項各号に掲げる事由が終了した時から新たにその進行を始める",
+     "text_sha256": "a84676e93fee781cc022148186828096413761bff7118b22140bf10a920a1539",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "154",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その者に通知をした後でなければ、第百四十八条又は第百四十九条の規定による時効の完成猶予又は更新の効力を生じない",
+     "text_sha256": "efa1ae7153e4e8a02f14534a598a0c1ac09bacf65ae9c4a280e6aa23517e7e0a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "時効の中断が出題後の債権法改正で完成猶予と更新に分けられ、効果（いつ何が生じるか、取下げ等の場合の扱い）も変わったため、名前だけの変更とは言い切れず law_changed とした。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q07-b",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q07-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。連帯保証人の弁済によって主たる債務はその時に消滅しており、その後に10年が経過しても主たる債務が時効で消滅することはないから、求償権を行使できないとする点が誤り。",
+   "body": "誤りは「主たる債務の履行期から１０年が経過したときは，主たる債務が時効により消滅するので」求償できないとする点である。連帯保証人が履行期から7年後に保証債務の履行として弁済すれば、それは主たる債務を消滅させる行為であり、主たる債務は時効期間の満了前に弁済によって消滅する。すでに消滅した主たる債務がその後に時効によって消滅することはなく、10年の経過を理由に求償を拒むことはできないと解されている。委託を受けた保証人は、「主たる債務者に代わって弁済その他自己の財産をもって債務を消滅させる行為（以下「債務の消滅行為」という。）をしたときは、その保証人は、主たる債務者に対し、そのために支出した財産の額」の求償権を有し（459条1項）、委託を受けない保証人も、主たる債務者の委託を受けないで保証をした者が「債務の消滅行為をした場合」について求償権が定められている（462条）。この求償権は弁済の時に保証人について生じる権利であり、その消滅時効は主たる債務とは別に進行すると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "459",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主たる債務者に代わって弁済その他自己の財産をもって債務を消滅させる行為（以下「債務の消滅行為」という。）をしたときは、その保証人は、主たる債務者に対し、そのために支出した財産の額",
+     "text_sha256": "3867107bb4cf2104b9ccf7bf5724bf3606ffa00bc7367dd08108efb098d48635",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "462",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の消滅行為をした場合",
+     "text_sha256": "192d5e061f81ce258ba215679ee5dc72198edf01c3333eee0c7628ad196c63b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。保証人の求償権の規定（459条・462条）は出題後の債権法改正で本文が変わっているが、弁済で主たる債務が消滅し求償権が生じるという結論は同じ。改正前の内容は条文の本文で確認していない",
+    "弁済後に主たる債務が時効で消滅しないこと、求償権の時効が別に進行することは解釈による"
+   ],
+   "id": "exp-shiho-2012-minpo-q07-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q07-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法は、連帯債務者の一人について生じた事由は、一部の例外を除き「他の連帯債務者に対してその効力を生じない」とし（441条）、連帯債務者の一人のために時効が完成した場合も、他の連帯債務者の債務が消滅するとは定めず、他の連帯債務者が「その一人の連帯債務者に対し、第四百四十二条第一項の求償権を行使することができる」とする（445条）。肢の前提の、全部の負担部分を有する者の時効の完成によって他の連帯債務者も債務を免れるという規律は今の条文になく、時効の「中断」の規定もない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の連帯債務者に対してその効力を生じない",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "445",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その一人の連帯債務者に対し、第四百四十二条第一項の求償権を行使することができる",
+     "text_sha256": "11bf976c1eb867f4d1d4240d0a6b5b5a1c3c7df6017cdf45fa6e6ab18fdd78e5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "連帯債務者の一人についての時効の完成の効力が出題後の債権法改正で変わったため、解説を書かずに law_changed とした。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q07-d",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q07-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法は、日常の家事に関する債務について他の一方が「連帯してその責任を負う」とする（761条）が、連帯債務者の一人について生じた事由は原則として「他の連帯債務者に対してその効力を生じない」とし（441条）、裁判上の請求による時効の完成猶予・更新も「完成猶予又は更新の事由が生じた当事者及びその承継人の間においてのみ、その効力を有する」（153条1項）。肢の前提の、一方に対する裁判上の請求で他方に対する債権の時効も中断するという規律は今の条文にない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "761",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯してその責任を負う",
+     "text_sha256": "252588f1fce4b671f9ca20e50363c3f33332ad86a37606ac26305ffda3ea588a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の連帯債務者に対してその効力を生じない",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "153",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "完成猶予又は更新の事由が生じた当事者及びその承継人の間においてのみ、その効力を有する",
+     "text_sha256": "dab1597eff52ec04bf1ff41c8a5c788dfe8e36d1f0a9847dec31e107b6e00f52",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "連帯債務者の一人に対する履行の請求の効力と時効の中断の規律が出題後の債権法改正で変わったため、解説を書かずに law_changed とした。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q07-e",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

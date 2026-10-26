@@ -1,0 +1,224 @@
+{
+ "question_id": "shiho-2013-minpo-q33",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q33-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。未成年者は後見人の欠格事由に当たるので、遺言で指定されても未成年のＢは未成年後見人になれない。",
+   "body": "最後に親権を行う者は、839条1項により「遺言で、未成年後見人を指定することができる」。しかし847条は「次に掲げる者は、後見人となることができない」とし、1号に「未成年者」を挙げている。この欠格事由は、遺言で指定された未成年後見人にも及ぶ。したがって、未成年者Ｂは遺言で指定されてもＡの未成年後見人とはならず、「Ｂは未成年であってもＡの未成年後見人となる」とする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "839",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺言で、未成年後見人を指定することができる",
+     "text_sha256": "bed14f6bb4da7e76701a57ac42935555b2216a10103f1a3d11684c5ed5ed554c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "847",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次に掲げる者は、後見人となることができない。",
+     "text_sha256": "84b2b0296b3c95d09ca3f782c080d27d2f66fa928edaaaa241b0c2cb0be06051",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "847",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者",
+     "text_sha256": "84b2b0296b3c95d09ca3f782c080d27d2f66fa928edaaaa241b0c2cb0be06051",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2013-minpo-q33-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q33-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。成年後見人が選任されていても、家庭裁判所は必要があれば請求により又は職権で更に成年後見人を選任できる（843条3項）。",
+   "body": "843条3項は「成年後見人が選任されている場合においても、家庭裁判所は、必要があると認めるときは、前項に規定する者若しくは成年後見人の請求により又は職権で、更に成年後見人を選任することができる」と定める。成年後見人は複数選任できることになり、肢はこの条文どおりで正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "843",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "成年後見人が選任されている場合においても、家庭裁判所は、必要があると認めるときは、前項に規定する者若しくは成年後見人の請求により又は職権で、更に成年後見人を選任することができる",
+     "text_sha256": "fe7bf0af88f43e4796a4e13e23a91a17fd2d7817567eef8f583ab503d976a49d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2013-minpo-q33-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q33-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。後見人の辞任には正当な事由に加えて家庭裁判所の許可が必要で、「許可を得ずに」辞任できるとする点が誤り。",
+   "body": "844条は「後見人は、正当な事由があるときは、家庭裁判所の許可を得て、その任務を辞することができる」と定める。成年後見人もこの「後見人」に当たるので、正当な事由があっても、辞任するには家庭裁判所の許可を得なければならない。したがって、家庭裁判所の許可を得ずに辞任できるとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "844",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "後見人は、正当な事由があるときは、家庭裁判所の許可を得て、その任務を辞することができる",
+     "text_sha256": "b2269f56b5aec5867c3c3d7fd0153ceacb71c1f91dc6c3294c40defb5f5e3b9f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2013-minpo-q33-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q33-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。後見人は被後見人の財産を管理・代表し（859条1項）、被後見人の行為を目的とする債務を生ずべき場合は本人の同意が要る（同条2項による824条ただし書の準用）。",
+   "body": "859条1項は「後見人は、被後見人の財産を管理し、かつ、その財産に関する法律行為について被後見人を代表する」と定める。同条2項は「第八百二十四条ただし書の規定は、前項の場合について準用する」とし、824条ただし書は「その子の行為を目的とする債務を生ずべき場合には、本人の同意を得なければならない」と定める。未成年後見人にもこれらが当てはまるので、未成年被後見人の行為を目的とする債務を生ずべき場合には未成年被後見人の同意を得なければならず、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "859",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "後見人は、被後見人の財産を管理し、かつ、その財産に関する法律行為について被後見人を代表する",
+     "text_sha256": "e528819985367c4d0e9d57c09f80b79dd2fdc03cc38469ec76791f00849110da",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "859",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "第八百二十四条ただし書の規定は、前項の場合について準用する",
+     "text_sha256": "e528819985367c4d0e9d57c09f80b79dd2fdc03cc38469ec76791f00849110da",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "824",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その子の行為を目的とする債務を生ずべき場合には、本人の同意を得なければならない",
+     "text_sha256": "b3e4d6dab9bcc850b1d9cbb8a89fbe8b7fd3d91be42308097716a720be76295d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2013-minpo-q33-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2013-minpo-q33-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。後見人の直系血族も後見監督人になれないので、成年後見人の父が成年後見監督人になれるとする点が誤り。",
+   "body": "850条は「後見人の配偶者、直系血族及び兄弟姉妹は、後見監督人となることができない」と定める。成年後見人の配偶者が成年後見監督人になれないという前半は正しいが、成年後見人の父は成年後見人の直系血族に当たるので、やはり成年後見監督人になれない。したがって、父は成年後見監督人となることができるとする後半が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "850",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "後見人の配偶者、直系血族及び兄弟姉妹は、後見監督人となることができない",
+     "text_sha256": "297a8fffddd00200809f43820a42fc53584098c50e397eac6f18c8f57bb91732",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2013-minpo-q33-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

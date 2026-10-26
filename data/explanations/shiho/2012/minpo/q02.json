@@ -1,0 +1,230 @@
+{
+ "question_id": "shiho-2012-minpo-q02",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q02-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。行為能力の制限による取消権を持つのは制限行為能力者の側の者に限られ、契約の相手方は取消権を有しない。",
+   "body": "誤りは「契約の相手方も取消権を有する」の部分である。120条1項は、行為能力の制限によって取り消すことができる行為は、「制限行為能力者（他の制限行為能力者の法定代理人としてした行為にあっては、当該他の制限行為能力者を含む。）又はその代理人、承継人若しくは同意をすることができる者に限り、取り消すことができる。」と定める。取消権者は「限り」とされており、相手方はこれに含まれない。したがって、制限行為能力者や法定代理人が取消権を有していても、相手方が取消権を有することにはならない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "120",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "制限行為能力者（他の制限行為能力者の法定代理人としてした行為にあっては、当該他の制限行為能力者を含む。）又はその代理人、承継人若しくは同意をすることができる者に限り、取り消すことができる。",
+     "text_sha256": "56eb3f1eb7eeec97bc2a6957269e75cf5da9252e385a9cd0ed96a521dfef7a6b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2012-minpo-q02-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q02-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。9条で取り消せるのは「成年被後見人の法律行為」であり、後見開始の審判を受ける前にした契約は、後見開始の事由がその当時あったことを証明しても9条によっては取り消せない。",
+   "body": "誤りは、審判前の契約を後見開始の事由の存在を証明して「取り消すことができる」とする部分である。8条は「後見開始の審判を受けた者は、成年被後見人とし」と定めており、成年被後見人となるのは後見開始の審判を受けた時からである。9条は「成年被後見人の法律行為は、取り消すことができる。」と定めるので、取消しの対象は成年被後見人となった後の法律行為であり、審判前にした契約はこれに当たらない。審判前の契約について、事理を弁識する能力を欠く常況にあったこと（7条の後見開始の事由）を証明しても、9条による取消しはできないと解されている。なお、契約の時に意思能力を有しなかったのであれば、3条の2により「その法律行為は、無効とする。」とされ、無効の主張の問題となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "8",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "後見開始の審判を受けた者は、成年被後見人とし",
+     "text_sha256": "927f5116d5bcca3c56c582a448e0d550c3134d9f93b9a8ba9912156a7f75128a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "9",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "成年被後見人の法律行為は、取り消すことができる。",
+     "text_sha256": "67a383e068a02c1e4aadf954b4d75d4e2514d25083fac514027e71a066d7e892",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "精神上の障害により事理を弁識する能力を欠く常況にある者については、家庭裁判所は",
+     "text_sha256": "c6910eec444e08b030a00ebe848c0995f8c76e48d8941aa891bb805926d19d26",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "3_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その法律行為は、無効とする。",
+     "text_sha256": "5e6481a97eb6b27abac1d5301b863bd7a2a6654c54b7a3f723da52acbd0566f5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "審判前の行為が9条の取消しの対象にならない点は、条文の文言からの解釈による",
+    "3条の2（意思無能力による無効）は出題後の債権法改正で置かれた条文。改正前の内容は条文の本文で確認していない。肢の結論（9条による取消しができない）はこの条に依らない"
+   ],
+   "id": "exp-shiho-2012-minpo-q02-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q02-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。法定代理人の同意を得ない未成年者の法律行為は取り消すことができ、未成年者が取り消せることを知っていたかどうかは問われない。",
+   "body": "5条1項本文は「未成年者が法律行為をするには、その法定代理人の同意を得なければならない。」とし、同条2項は「前項の規定に反する法律行為は、取り消すことができる。」と定める。取消しの要件は法定代理人の同意がないことであり、未成年者が取り消せることを知っていたかどうかは要件にない。また、120条1項により、制限行為能力者である未成年者自身も取消権者である。取消しが封じられるのは、21条のように「行為能力者であることを信じさせるため詐術を用いたとき」であり、取り消せることを知っていたというだけではこれに当たらない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "5",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "未成年者が法律行為をするには、その法定代理人の同意を得なければならない。",
+     "text_sha256": "41659855924ba702729f1bdac3f46add3ca097fdcda242a6f5e99f0d612d0360",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "5",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定に反する法律行為は、取り消すことができる。",
+     "text_sha256": "41659855924ba702729f1bdac3f46add3ca097fdcda242a6f5e99f0d612d0360",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "120",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "制限行為能力者（他の制限行為能力者の法定代理人としてした行為にあっては、当該他の制限行為能力者を含む。）又はその代理人、承継人若しくは同意をすることができる者に限り、取り消すことができる。",
+     "text_sha256": "56eb3f1eb7eeec97bc2a6957269e75cf5da9252e385a9cd0ed96a521dfef7a6b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "21",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "行為能力者であることを信じさせるため詐術を用いたとき",
+     "text_sha256": "fb8659e334c4bb674c7db0137bc4a6bfa6a021b498927d9789332e7bf51ac85a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2012-minpo-q02-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q02-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の95条1項は、錯誤が「法律行為の目的及び取引上の社会通念に照らして重要なものであるときは、取り消すことができる。」と定めており、肢の前提の「要素に錯誤」があるときの「錯誤による無効」の主張という規律は今の条文にない。今の条文では、21条の「その行為を取り消すことができない」と錯誤による取消しとの関係を問うことになり、出題の趣旨と別の問題になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "95",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律行為の目的及び取引上の社会通念に照らして重要なものであるときは、取り消すことができる。",
+     "text_sha256": "a574178ace21adfb3a580ccce7d7b1d82a142c6d5dec52af686791911776a4b0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "21",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その行為を取り消すことができない",
+     "text_sha256": "fb8659e334c4bb674c7db0137bc4a6bfa6a021b498927d9789332e7bf51ac85a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "錯誤の効果（無効か取消しか）と要件が出題後の債権法改正で変わったため、解説を書かずに law_changed とした。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q02-4",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}
