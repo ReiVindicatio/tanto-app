@@ -1,0 +1,236 @@
+{
+ "question_id": "yobi-2013-minpo-q06",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minpo-q06-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。留置権の不可分性を定めた296条の文言どおりである。",
+   "body": "肢は、留置権の不可分性をそのまま述べている。296条は「留置権者は、債権の全部の弁済を受けるまでは、留置物の全部についてその権利を行使することができる。」と定める。したがって、債権の一部の弁済を受けても、留置権者は留置物の全部を留置し続けることができ、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "296",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "留置権者は、債権の全部の弁済を受けるまでは、留置物の全部についてその権利を行使することができる。",
+     "text_sha256": "591c473127ae5548228930858ba9bfe29ef95525034ce2d0b1637dca0eed8550",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-yobi-2013-minpo-q06-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minpo-q06-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。一般の先取特権者はまず不動産以外の財産から弁済を受けるのが原則で、不動産以外の財産の代価に先立って不動産の代価を配当する場合はその例外である（335条1項・4項）。",
+   "body": "肢は、335条1項の原則と4項の例外を合わせて述べている。335条1項は「一般の先取特権者は、まず不動産以外の財産から弁済を受け、なお不足があるのでなければ、不動産から弁済を受けることができない。」と定める。同条4項は、この規定を含む前三項について「不動産以外の財産の代価に先立って不動産の代価を配当し、又は他の不動産の代価に先立って特別担保の目的である不動産の代価を配当する場合には、適用しない。」としている。したがって、不動産以外の財産の代価に先立って不動産の代価が配当される場合を除けば、一般の先取特権者は、まず不動産以外の財産から弁済を受けなければならず、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "335",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "一般の先取特権者は、まず不動産以外の財産から弁済を受け、なお不足があるのでなければ、不動産から弁済を受けることができない。",
+     "text_sha256": "311de753d699015e8b490efdc84025a74113cd34ab2079a0e476e27960f49ae2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "335",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "不動産以外の財産の代価に先立って不動産の代価を配当し、又は他の不動産の代価に先立って特別担保の目的である不動産の代価を配当する場合には、適用しない。",
+     "text_sha256": "311de753d699015e8b490efdc84025a74113cd34ab2079a0e476e27960f49ae2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-yobi-2013-minpo-q06-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minpo-q06-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。金銭債権を目的とする質権の質権者が取り立てられるのは、自己の債権額に対応する部分に限られる（366条2項）。",
+   "body": "誤りは「その被担保債権の額にかかわらず，当該金銭債権の全額を取り立てることができる」の部分である。366条1項は「質権者は、質権の目的である債権を直接に取り立てることができる。」と定めるが、同条2項は「債権の目的物が金銭であるときは、質権者は、自己の債権額に対応する部分に限り、これを取り立てることができる。」と限定している。したがって、質権者は被担保債権の額を超えて金銭債権の全額を取り立てることはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "366",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権者は、質権の目的である債権を直接に取り立てることができる。",
+     "text_sha256": "e42097ca4d399053915f9860ea27ed0404b5006f516b2ab755b2b9f137ce6580",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "366",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権の目的物が金銭であるときは、質権者は、自己の債権額に対応する部分に限り、これを取り立てることができる。",
+     "text_sha256": "e42097ca4d399053915f9860ea27ed0404b5006f516b2ab755b2b9f137ce6580",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-yobi-2013-minpo-q06-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minpo-q06-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。抵当不動産の代価に先立って他の財産の代価を配当すべき場合、他の各債権者は抵当権者に配当すべき金額の供託を請求できる（394条2項）。",
+   "body": "肢は394条2項の内容である。394条1項は「抵当権者は、抵当不動産の代価から弁済を受けない債権の部分についてのみ、他の財産から弁済を受けることができる。」と定め、同条2項は、この規定は「抵当不動産の代価に先立って他の財産の代価を配当すべき場合には、適用しない。」としたうえで、「この場合において、他の各債権者は、抵当権者に同項の規定による弁済を受けさせるため、抵当権者に配当すべき金額の供託を請求することができる。」と定める。抵当権の実行としての競売の前に抵当不動産以外の財産の代価を配当すべき場合は、これに当たる。したがって、当該抵当権者以外の債権者は供託を請求でき、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "394",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権者は、抵当不動産の代価から弁済を受けない債権の部分についてのみ、他の財産から弁済を受けることができる。",
+     "text_sha256": "fa6d1c8af1e3f9bf65cbad9d5bc4e35031e35326b8f035ad3b939eef9ab91f06",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "394",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "この場合において、他の各債権者は、抵当権者に同項の規定による弁済を受けさせるため、抵当権者に配当すべき金額の供託を請求することができる。",
+     "text_sha256": "fa6d1c8af1e3f9bf65cbad9d5bc4e35031e35326b8f035ad3b939eef9ab91f06",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "394",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "抵当不動産の代価に先立って他の財産の代価を配当すべき場合には、適用しない。",
+     "text_sha256": "fa6d1c8af1e3f9bf65cbad9d5bc4e35031e35326b8f035ad3b939eef9ab91f06",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-yobi-2013-minpo-q06-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "yobi-2013-minpo-q06-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。物上保証人は、元本確定後の債務額が極度額を超えるとき、極度額に相当する金額を払い渡し又は供託して根抵当権の消滅請求ができる（398条の22第1項）。",
+   "body": "肢は398条の22第1項の内容である。同項は「元本の確定後において現に存する債務の額が根抵当権の極度額を超えるときは、他人の債務を担保するためその根抵当権を設定した者」などは「その極度額に相当する金額を払い渡し又は供託して、その根抵当権の消滅請求をすることができる。」と定める。他人の債務を担保するため根抵当権を設定した者（物上保証人）は、これに当たる。したがって、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_22",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "元本の確定後において現に存する債務の額が根抵当権の極度額を超えるときは、他人の債務を担保するためその根抵当権を設定した者",
+     "text_sha256": "872691a003b95dee5ce002d15be8570b06819efa8644417fbcf4d48433176b64",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_22",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その極度額に相当する金額を払い渡し又は供託して、その根抵当権の消滅請求をすることができる。",
+     "text_sha256": "872691a003b95dee5ce002d15be8570b06819efa8644417fbcf4d48433176b64",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-yobi-2013-minpo-q06-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
