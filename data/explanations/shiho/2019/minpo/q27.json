@@ -1,0 +1,267 @@
+{
+ "question_id": "shiho-2019-minpo-q27",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q27-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。法規に違反した給付でも、708条の「不法な原因」に当たるとは限らないとするのが判例である。",
+   "body": "708条本文は「不法な原因のために給付をした者は、その給付したものの返還を請求することができない。」と定める。ここでいう「不法」は、単に法規に違反することではなく、公序良俗に反するような反社会性の強いものをいうと解されている。判例も、石油製品配給規則に違反して配給割当公文書と引換えでなしにされた揮発油の譲渡について、必ずしも708条の不法原因給付に当たるとはいえないとした。したがって、強行法規に違反してされた給付でも、不法原因給付に該当しないことがあり、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "708",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法な原因のために給付をした者は、その給付したものの返還を請求することができない。",
+     "text_sha256": "a35bbcbbae55af85a9332567d8b0b166d5b8efffcb5a14a2a9cb4320e3160ba1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "統制法規（石油製品配給規則）違反の給付と不法原因給付",
+     "court": "最高裁判所第一小法廷",
+     "date": "1962-03-08",
+     "case_number": "昭和32(オ)651",
+     "holding": "石油製品配給規則に違反し配給割当公文書と引換えでなしにされた揮発油の譲渡も、必ずしも民法708条の不法原因給付に当たるとはいえない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56219/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "708条の「不法」を公序良俗違反の程度のものとみる点は解釈による",
+    "現行の条文で説明した（出題は改正前）。708条の本文は2019-05-01時点から変わっていない"
+   ],
+   "id": "exp-shiho-2019-minpo-q27-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q27-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。既登記建物は引渡しだけでは708条の「給付」に当たらないので、贈与者の返還（明渡し）請求は708条で妨げられない。",
+   "body": "708条本文は「不法な原因のために給付をした者は、その給付したものの返還を請求することができない。」と定めるが、その適用には「給付」があったことが必要である。判例は、不法の原因により既登記建物を贈与した場合、その引渡しをしただけでは708条にいう給付があったとはいえないとした（未登記建物については引渡しが給付に当たるとした判例がある）。肢の建物は登記された建物で、所有権移転登記手続はされていないから、708条の給付はまだなく、贈与者は同条によって返還請求を拒まれない。したがって、建物の明渡請求をすることができないとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "708",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法な原因のために給付をした者は、その給付したものの返還を請求することができない。",
+     "text_sha256": "a35bbcbbae55af85a9332567d8b0b166d5b8efffcb5a14a2a9cb4320e3160ba1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "既登記建物の不法原因贈与と引渡し（708条の給付）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1971-10-28",
+     "case_number": "昭和45(オ)10",
+     "holding": "不法の原因により既登記建物を贈与した場合、その引渡しをしただけでは、民法708条にいう給付があったとはいえない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51994/detail2/index.html"
+     ]
+    },
+    {
+     "name": "未登記建物の不法原因贈与と所有権の帰属（反射的効果）",
+     "court": "最高裁判所大法廷",
+     "date": "1970-10-21",
+     "case_number": "昭和41(オ)436",
+     "holding": "不法の原因により未登記建物を贈与した場合、その引渡しは民法708条にいう給付に当たる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53161/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。708条の本文は2019-05-01時点から変わっていない"
+   ],
+   "id": "exp-shiho-2019-minpo-q27-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q27-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。不法原因給付として返還を請求できない以上、所有権に基づいて返還を請求することもできないとするのが判例である。",
+   "body": "708条本文は「不法な原因のために給付をした者は、その給付したものの返還を請求することができない。」と定める。判例は、建物の贈与に基づく引渡しが不法原因給付に当たる場合、贈与者は目的物の所有権が自己にあることを理由としてその返還を請求することはできないとし、その反射的効果として所有権は受贈者に帰属するとした。この趣旨は、不当利得による返還請求だけでなく所有権に基づく返還請求も708条によって封じられるというもので、動産の贈与でも同じと解されている。したがって、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "708",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法な原因のために給付をした者は、その給付したものの返還を請求することができない。",
+     "text_sha256": "a35bbcbbae55af85a9332567d8b0b166d5b8efffcb5a14a2a9cb4320e3160ba1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "不法原因給付と所有権に基づく返還請求（反射的効果）",
+     "court": "最高裁判所大法廷",
+     "date": "1970-10-21",
+     "case_number": "昭和41(オ)436",
+     "holding": "建物の贈与に基づく引渡しが不法原因給付に当たる場合、贈与者は所有権が自己にあることを理由として建物の返還を請求することはできず、その反射的効果として建物の所有権は受贈者に帰属する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53161/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "判例は建物の事案であり、動産にも同じく及ぶとする点は解釈による",
+    "現行の条文で説明した（出題は改正前）。708条の本文は2019-05-01時点から変わっていない"
+   ],
+   "id": "exp-shiho-2019-minpo-q27-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q27-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。給付後にされた不法原因給付の返還の特約は有効で、給付者はその特約に基づいて返還を請求できる。",
+   "body": "708条本文は「不法な原因のために給付をした者は、その給付したものの返還を請求することができない。」と定め、法律上は給付者の返還請求を認めない。しかし判例は、不法原因給付の返還の特約は有効であるとし、その特約に基づく返還義務の履行のために振り出された手形の請求には708条の適用がないとした。給付後に当事者が任意に返還を合意することは、708条の趣旨に反しないと解されている。したがって、返還の特約をしても返還を請求できないとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "708",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法な原因のために給付をした者は、その給付したものの返還を請求することができない。",
+     "text_sha256": "a35bbcbbae55af85a9332567d8b0b166d5b8efffcb5a14a2a9cb4320e3160ba1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "不法原因給付の返還の特約の効力",
+     "court": "最高裁判所第一小法廷",
+     "date": "1953-01-22",
+     "case_number": "昭和24(オ)179",
+     "holding": "不法原因給付の返還の特約は有効であり、その特約に基づく返還義務の履行のため振り出された手形の請求には民法708条の適用がない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57131/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "特約が708条の趣旨に反しないとする理由づけは解釈による",
+    "現行の条文で説明した（出題は改正前）。708条の本文は2019-05-01時点から変わっていない"
+   ],
+   "id": "exp-shiho-2019-minpo-q27-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q27-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。貸主の不法が借主の不法に比べてきわめて微弱なときは、貸主は貸金の返還を請求できるとするのが判例である。",
+   "body": "708条は、本文で「不法な原因のために給付をした者は、その給付したものの返還を請求することができない。」としつつ、ただし書で「不法な原因が受益者についてのみ存したときは、この限りでない。」と定める。判例は、消費貸借成立のいきさつにおいて貸主の側に多少の不法があっても、借主の側にも不法の点があり、貸主の不法性が借主のそれに比べてきわめて微弱なものにすぎない場合には、90条・708条は適用がなく、貸主は貸金の返還を請求できるとした。したがって、貸主に少しでも不法があれば返還を請求できないとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "708",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法な原因のために給付をした者は、その給付したものの返還を請求することができない。ただし、不法な原因が受益者についてのみ存したときは、この限りでない。",
+     "text_sha256": "a35bbcbbae55af85a9332567d8b0b166d5b8efffcb5a14a2a9cb4320e3160ba1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "90",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公の秩序又は善良の風俗に反する法律行為は、無効とする。",
+     "text_sha256": "e2476aba73077c1ce2fe8a6e6b71f6708a1daca4eb5f7ab5f6c5a9d1da5a8c37",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "消費貸借の不法性の比較と貸金返還請求",
+     "court": "最高裁判所第三小法廷",
+     "date": "1954-08-31",
+     "case_number": "昭和27(オ)13",
+     "holding": "消費貸借成立のいきさつにおいて貸主の側に多少の不法があっても、借主の側にも不法の点があり、前者の不法性が後者に比しきわめて微弱なものにすぎない場合には、民法90条・708条は適用がなく、貸主は貸金の返還を請求できる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57301/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。708条の本文は2019-05-01時点から変わっていない",
+    "出題後に90条の本文が変わった（結論は同じ）"
+   ],
+   "id": "exp-shiho-2019-minpo-q27-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,253 @@
+{
+ "question_id": "shiho-2019-minpo-q18",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q18-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、債権譲渡の予約についての確定日付のある証書による通知・承諾をもって、予約完結による債権譲渡の効力を第三者に対抗することはできないとする。",
+   "body": "467条2項は、債権譲渡の通知又は承諾は「確定日付のある証書によってしなければ、債務者以外の第三者に対抗することができない。」と定める。判例（最判平成13年11月27日）は、指名債権譲渡の予約についてされた確定日付のある証書による債務者に対する通知又は債務者の承諾をもって、当該予約の完結による債権譲渡の効力を第三者に対抗することはできないとする。肢はこの判例のとおりである。リード文の「指名債権」は、今の民法では単に「債権」（467条1項）として定められている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "467",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "確定日付のある証書によってしなければ、債務者以外の第三者に対抗することができない。",
+     "text_sha256": "3ea3b680843790c06eebdfbd14c6c386b02dd512b401d1869219846beeebd54f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "467",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権の譲渡（現に発生していない債権の譲渡を含む。）は、譲渡人が債務者に通知をし、又は債務者が承諾をしなければ、債務者その他の第三者に対抗することができない。",
+     "text_sha256": "3ea3b680843790c06eebdfbd14c6c386b02dd512b401d1869219846beeebd54f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "債権譲渡の予約についての確定日付のある通知・承諾と対抗力",
+     "court": "最高裁判所第三小法廷",
+     "date": "2001-11-27",
+     "case_number": "平成10(オ)331",
+     "holding": "指名債権譲渡の予約についてされた確定日付のある証書による債務者に対する通知又は債務者の承諾をもって、当該予約の完結による債権譲渡の効力を第三者に対抗することはできない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52223/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "名前が変わった（規律と結論は同じ）：「指名債権」の語は今の467条にない",
+    "出題後に467条の本文が変わった（結論は同じ。egov.py --asof 2019-05-01 で確認）"
+   ],
+   "id": "exp-shiho-2019-minpo-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q18-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、契約締結時に目的債権の発生の可能性が低かったことは、将来債権譲渡契約の効力を当然には左右しないとする。",
+   "body": "判例（最判平成11年1月29日）は、将来発生すべき債権を目的とする債権譲渡契約の締結時において目的債権の発生の可能性が低かったことは、その契約の効力を当然には左右しないとする。したがって、締結時に目的債権の発生が確実に期待されるものでなければ効力を生じない、とする肢は誤り。今の民法466条の6第1項も「債権の譲渡は、その意思表示の時に債権が現に発生していることを要しない。」と定めている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "466_6",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権の譲渡は、その意思表示の時に債権が現に発生していることを要しない。",
+     "text_sha256": "eae0f2c4b832cda2d725fe83b928da9c15e38f6b7b2b6b709aeb2c119be101ff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "将来債権の譲渡契約と目的債権の発生の可能性",
+     "court": "最高裁判所第三小法廷",
+     "date": "1999-01-29",
+     "case_number": "平成9(オ)219",
+     "holding": "将来発生すべき債権を目的とする債権譲渡契約の締結時において目的債権の発生の可能性が低かったことは、その契約の効力を当然には左右しない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52610/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "466条の6は2019-05-01 時点の版にはなく、出題後に設けられた条（egov.py --asof で確認）。肢の結論の決め手は判例"
+   ],
+   "id": "exp-shiho-2019-minpo-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q18-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法468条1項は「債務者は、対抗要件具備時までに譲渡人に対して生じた事由をもって譲受人に対抗することができる。」と定めるだけで、肢の前提にしている「異議をとどめない承諾」によって債務者が抗弁を対抗できなくなるという規律を置いていない。肢は異議をとどめない承諾の効力の限界を問うものであり、その前提の制度が今の条文にない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "468",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、対抗要件具備時までに譲渡人に対して生じた事由をもって譲受人に対抗することができる。",
+     "text_sha256": "128edb01a7454acf824569bca8ccd003b404dfddaf155a4d9de0a546621b1043",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に468条の本文が変わった（egov.py --asof 2019-05-01 で確認）。前提の制度（異議をとどめない承諾）が今の条文にないため、解説を書かずに law_changed とした"
+   ],
+   "id": "exp-shiho-2019-minpo-q18-c",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q18-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、債権譲渡と差押えの優劣を、確定日付のある通知の到達（又は確定日付のある承諾）の日時と、差押命令が第三債務者に「送達」された日時の先後で決めるとする。",
+   "body": "判例（最判昭和58年10月4日）は、債権の譲受人と同一債権について債権差押命令及び転付命令を得た者との優劣は、確定日付ある通知が債務者に到達した日時又は確定日付ある債務者の承諾の日時と、債権差押命令が第三債務者たる債務者に送達された日時の先後によって決すべきであるとする。民事執行法145条5項も「差押えの効力は、差押命令が第三債務者に送達された時に生ずる。」と定める。肢は、差押命令が「発令された時」を基準とする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民事執行法",
+     "article": "145",
+     "paragraphs": [
+      "5"
+     ],
+     "quote": "差押えの効力は、差押命令が第三債務者に送達された時に生ずる。",
+     "text_sha256": "bb40c870c77139a907034758c9d4fd9a7e9cbd8c0da8a0cbb45cb40af87de450",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%AD%E5%92%8C%E4%BA%94%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%9B%9B%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "債権譲渡と債権差押え・転付命令との優劣の基準",
+     "court": "最高裁判所第三小法廷",
+     "date": "1983-10-04",
+     "case_number": "昭和56(オ)1230",
+     "holding": "債権の譲受人と同一債権に対し債権差押命令及び転付命令を得た者との間の優劣は、確定日付ある通知が債務者に到達した日時又は確定日付ある債務者の承諾の日時と債権差押命令が第三債務者たる債務者に送達された日時の先後によって決すべきである。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/74563/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "民事執行法145条の出題時点の本文（項の番号を含む）は確認していない"
+   ],
+   "id": "exp-shiho-2019-minpo-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q18-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。二重譲渡の譲受人相互の優劣は、確定日付の日付の先後ではなく、確定日付のある通知が債務者に到達した日時の先後で決まると解されている。",
+   "body": "467条2項は、通知又は承諾は「確定日付のある証書によってしなければ、債務者以外の第三者に対抗することができない。」と定めるが、優劣を確定日付そのものの先後で決めるとは定めていない。債権が二重に譲渡された場合の譲受人相互の優劣は、確定日付のある通知が債務者に到達した日時の先後によって決まると解されている（判例あり（要確認））。債権譲渡と差押えとの優劣についても、判例（最判昭和58年10月4日）は確定日付ある通知が債務者に到達した日時を基準としている。本肢では第一の譲渡の通知が先に到達しているから、第一の譲受人は第二の譲受人に債権の取得を対抗でき、対抗できないとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "467",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "確定日付のある証書によってしなければ、債務者以外の第三者に対抗することができない。",
+     "text_sha256": "3ea3b680843790c06eebdfbd14c6c386b02dd512b401d1869219846beeebd54f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "債権譲渡と債権差押え・転付命令との優劣の基準（到達時基準）",
+     "court": "最高裁判所第三小法廷",
+     "date": "1983-10-04",
+     "case_number": "昭和56(オ)1230",
+     "holding": "債権の譲受人と同一債権に対し債権差押命令及び転付命令を得た者との間の優劣は、確定日付ある通知が債務者に到達した日時又は確定日付ある債務者の承諾の日時と債権差押命令が第三債務者たる債務者に送達された日時の先後によって決すべきである。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/74563/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [
+    {
+     "about": "債権の二重譲渡における譲受人相互の優劣を、確定日付のある通知の債務者への到達の日時の先後で決めるとした判例",
+     "searched": [
+      "courts.py search 確定日付 債権 --date 1974-03-07（0件）",
+      "courts.py search 確定日付 到達 --from 昭和49 --to 昭和49（0件）",
+      "courts.py search 指名債権 確定日付 先後 --from 昭和40 --to 昭和60（該当する判示事項なし）"
+     ]
+    }
+   ],
+   "notes": [
+    "解釈による",
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に467条の本文が変わった（2項は同じ。egov.py --asof 2019-05-01 で確認）"
+   ],
+   "id": "exp-shiho-2019-minpo-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

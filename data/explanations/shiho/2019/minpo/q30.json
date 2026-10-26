@@ -1,0 +1,234 @@
+{
+ "question_id": "shiho-2019-minpo-q30",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q30-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○（誤っている記述ではない）。738条により、成年被後見人の婚姻に成年後見人の同意は要らない。",
+   "body": "738条は「成年被後見人が婚姻をするには、その成年後見人の同意を要しない。」と定める。婚姻のような身分行為は本人の意思を尊重すべきものなので、成年被後見人も意思能力があれば単独で婚姻できるとされている。したがって、成年後見人の同意がなくても婚姻をすることができるとする肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "738",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "成年被後見人が婚姻をするには、その成年後見人の同意を要しない。",
+     "text_sha256": "4ce1cf635835db1236212b6f4c4d7b642fd1f60ea729472291a1b473f2b133e0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "身分行為で本人の意思を尊重するという趣旨・意思能力が要る点は解釈による",
+    "現行の条文で説明した（出題は改正前）。738条の本文は2019-05-01時点から変わっていない"
+   ],
+   "id": "exp-shiho-2019-minpo-q30-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q30-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○（誤っている記述ではない）。他の目的のための便法として仮託された婚姻届は、婚姻意思を欠き無効とするのが判例である。",
+   "body": "742条は、婚姻を無効とする場合として「人違いその他の事由によって当事者間に婚姻をする意思がないとき。」を挙げる（1号）。判例は、この「婚姻をする意思がないとき」とは、当事者間に真に社会観念上夫婦であると認められる関係の設定を欲する効果意思を有しない場合を指し、たとえ婚姻の届出自体について意思の合致があっても、それが単に他の目的を達するための便法として仮託されたものにすぎないときは、婚姻は効力を生じないとした。肢はこの判例の内容のとおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "742",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人違いその他の事由によって当事者間に婚姻をする意思がないとき。",
+     "text_sha256": "197419afdee9fb1c73fd732c9df9b66ed1921868793dc8a17c150dd60620041c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "婚姻意思の意義（便法としての婚姻届）",
+     "court": "最高裁判所第二小法廷",
+     "date": "1969-10-31",
+     "case_number": "昭和42(オ)1108",
+     "holding": "742条1号の「婚姻をする意思がないとき」とは、真に社会観念上夫婦であると認められる関係の設定を欲する効果意思を有しない場合を指し、届出自体に意思の合致があっても、単に他の目的を達するための便法として仮託されたにすぎないときは、婚姻は効力を生じない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51893/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。742条の本文は2019-05-01時点から変わっていない"
+   ],
+   "id": "exp-shiho-2019-minpo-q30-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q30-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×（誤っている記述）。736条により、養親と養子は離縁して親族関係が終了した後でも婚姻できない。",
+   "body": "729条は、養子と養親及びその血族との親族関係は「離縁によって終了する。」と定める。しかし736条は、養子と養親などとの間では「第七百二十九条の規定により親族関係が終了した後でも、婚姻をすることができない。」と定める。したがって、養親は養子と離縁した後も、その者と婚姻することはできず、婚姻できるとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "729",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "離縁によって終了する。",
+     "text_sha256": "16c3ad335b57b82a8da1e7b349864269faab3e16f7ecb87d9e9da472c22750d5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "736",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第七百二十九条の規定により親族関係が終了した後でも、婚姻をすることができない。",
+     "text_sha256": "20c174ad06b8fc0f5d7a53aa6a3f4193098badda26b1787db8863565a2400077",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。736条の本文は2019-05-01時点から変わっていない"
+   ],
+   "id": "exp-shiho-2019-minpo-q30-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q30-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "肢は女性の再婚禁止期間の規定とその例外を前提にしているが、今の民法では733条は「削除」とされ、再婚禁止期間の規定そのものがない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "733",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "削除",
+     "text_sha256": "e9653dc3edcbc072d033d200b3aa56539fde84e9b7cc80287fedc9f91cbe03ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に733条の本文が変わった（削除）。前提の制度がなくなったため解説を書かない"
+   ],
+   "id": "exp-shiho-2019-minpo-q30-d",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q30-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×（誤っている記述）。婚姻の取消しは将来に向かってのみ効力を生じるので、婚姻中に懐胎した子は夫の子と推定される。",
+   "body": "747条1項は「詐欺又は強迫によって婚姻をした者は、その婚姻の取消しを家庭裁判所に請求することができる。」と定め、748条1項は「婚姻の取消しは、将来に向かってのみその効力を生ずる。」と定める。そのため、取り消されるまでの婚姻は有効な婚姻として扱われ、772条1項の「妻が婚姻中に懐胎した子は、当該婚姻における夫の子と推定する。」がそのまま及ぶ。肢のＢ女は婚姻中に懐胎しているから、出生した子はＡ男の子と推定される。したがって、Ａ男の子とは推定されないとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "747",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐欺又は強迫によって婚姻をした者は、その婚姻の取消しを家庭裁判所に請求することができる。",
+     "text_sha256": "41b6d8521db8d980840db5ac3d76359ab7c662acd65b946ffa0d5d9d16f761c4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "748",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "婚姻の取消しは、将来に向かってのみその効力を生ずる。",
+     "text_sha256": "277ee731d4fa9a46d7061bd3d7972db65bb26c5f56eda508a3597d0c1df9e47d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "772",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "妻が婚姻中に懐胎した子は、当該婚姻における夫の子と推定する。",
+     "text_sha256": "99efe67baa1c7a7aa568fe69b0d7a59a22934f8013ef6a03333b52dcfe964d42",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に772条の本文が変わった（結論は同じ）。e-Gov の2019-05-01版でも、婚姻中に懐胎した子を夫の子と推定する点は同じであることを確かめた（引用は現行の本文から）"
+   ],
+   "id": "exp-shiho-2019-minpo-q30-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

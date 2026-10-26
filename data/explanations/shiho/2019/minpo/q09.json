@@ -1,0 +1,246 @@
+{
+ "question_id": "shiho-2019-minpo-q09",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q09-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。分割によって公道に通じない土地が生じたときは、213条1項により「他の分割者の所有地のみ」を通行できるので、Ａは第三者Ｃの丙土地を通行することはできない。",
+   "body": "誤りは、Ａが損害の最も少ない丙土地（Ｃ所有）を通行できるとしている点である。213条1項は「分割によって公道に通じない土地が生じたときは、その土地の所有者は、公道に至るため、他の分割者の所有地のみを通行することができる。この場合においては、償金を支払うことを要しない。」と定める。210条1項・211条1項の一般の囲繞地通行権であれば損害が最も少ない場所を選ぶことになるが、共有地の分割によって袋地が生じた場合は213条1項が適用され、通行できるのは他の分割者であるＢの乙土地に限られる。したがって、Ａは丙土地を通行することはできず、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "213",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "分割によって公道に通じない土地が生じたときは、その土地の所有者は、公道に至るため、他の分割者の所有地のみを通行することができる。この場合においては、償金を支払うことを要しない。",
+     "text_sha256": "0726b79b0df261d8302a14e6ef6006b67afd9dad2f6ac2e98d13cd6ef2db1d9a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "213",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の分割者の所有地のみ",
+     "text_sha256": "0726b79b0df261d8302a14e6ef6006b67afd9dad2f6ac2e98d13cd6ef2db1d9a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "210",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の土地に囲まれて公道に通じない土地の所有者は、公道に至るため、その土地を囲んでいる他の土地を通行することができる。",
+     "text_sha256": "4128b035fe88c7f73f08e5ab2f689b2baf83113f81f96f5de67725df3339b219",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "211",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の土地のために損害が最も少ないものを選ばなければならない。",
+     "text_sha256": "e79f467bd60897a36a526c07bfcc812503eec0af429004c9a207046dea9d169b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "210条・211条・213条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）"
+   ],
+   "id": "exp-shiho-2019-minpo-q09-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q09-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。他の土地に設けられた排水のための工作物の破壊・閉塞で自己の土地に損害が及ぶときは、216条により、その土地の所有者に修繕又は障害の除去をさせることができる。",
+   "body": "216条は「他の土地に貯水、排水又は引水のために設けられた工作物の破壊又は閉塞により、自己の土地に損害が及び、又は及ぶおそれがある場合には、その土地の所有者は、当該他の土地の所有者に、工作物の修繕若しくは障害の除去をさせ、又は必要があるときは予防工事をさせることができる。」と定める。隣地の所有者が隣地に設置した排水溝は「排水」のために設けられた工作物であり、その破壊又は閉塞により自己の土地に損害が及んでいるのであるから、土地の所有者は隣地の所有者に排水溝の修繕又は障害の除去をさせることができる。したがって、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "216",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の土地に貯水、排水又は引水のために設けられた工作物の破壊又は閉塞により、自己の土地に損害が及び、又は及ぶおそれがある場合には、その土地の所有者は、当該他の土地の所有者に、工作物の修繕若しくは障害の除去をさせ、又は必要があるときは予防工事をさせることができる。",
+     "text_sha256": "8bc298f21179f2db9423d048a7d2534bddca4ba70b37198abaebe60567a81ce6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "216",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "排水",
+     "text_sha256": "8bc298f21179f2db9423d048a7d2534bddca4ba70b37198abaebe60567a81ce6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "216条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）"
+   ],
+   "id": "exp-shiho-2019-minpo-q09-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q09-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法233条は、1項で竹木の所有者に「その枝を切除させることができる」とする一方、3項で「第一項の場合において、次に掲げるときは、土地の所有者は、その枝を切り取ることができる。」として、催告後も相当の期間内に切除しないときなどに土地の所有者が自ら枝を切り取れる場合を定めている。233条の本文は出題後に変わっており（egov --asof 2019-05-01 で確認）、土地の所有者が自ら枝を切り取れるかという肢の論点そのものの規律が変わったため、今の条文で説明すると出題の趣旨と別の理由になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "233",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その枝を切除させることができる",
+     "text_sha256": "771bba2504e9f8d37b917cc4a974d5501fdaf9d9f30ab64cacf72d5e73c35de4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "233",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の場合において、次に掲げるときは、土地の所有者は、その枝を切り取ることができる。",
+     "text_sha256": "771bba2504e9f8d37b917cc4a974d5501fdaf9d9f30ab64cacf72d5e73c35de4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に233条の本文が変わった（egov --asof 2019-05-01 で確認）。改正前の内容は引用していない",
+    "迷う場合は解説を出さない方に倒す（explain-v5 の手順7）"
+   ],
+   "id": "exp-shiho-2019-minpo-q09-c",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q09-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。229条は、境界線上に設けた境界標を相隣者の共有に属するものと推定している。",
+   "body": "229条は「境界線上に設けた境界標、囲障、障壁、溝及び堀は、相隣者の共有に属するものと推定する。」と定める。肢は、境界線上に設けられた境界標が相隣者の共有に属するものと推定されるとしており、229条の内容そのままである。したがって、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "229",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "境界線上に設けた境界標、囲障、障壁、溝及び堀は、相隣者の共有に属するものと推定する。",
+     "text_sha256": "425838a126bc6f7ad4a13631f3bf21f8183bc5806487d2e98034ec8a6955d4c0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "229条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）"
+   ],
+   "id": "exp-shiho-2019-minpo-q09-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q09-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。223条は、土地の所有者が隣地の所有者と共同の費用で境界標を設けることができると定めている。",
+   "body": "223条は「土地の所有者は、隣地の所有者と共同の費用で、境界標を設けることができる。」と定める。肢はこの条文の内容そのままであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "223",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "土地の所有者は、隣地の所有者と共同の費用で、境界標を設けることができる。",
+     "text_sha256": "3e4c441a46eea56790759a4c27f192c193f7f620141988c6e18932290881f3f5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "223条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）"
+   ],
+   "id": "exp-shiho-2019-minpo-q09-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

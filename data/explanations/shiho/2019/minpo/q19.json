@@ -1,0 +1,57 @@
+{
+ "question_id": "shiho-2019-minpo-q19",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q19-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法514条1項は、債務者の交替による更改を「債権者と更改後に債務者となる者との契約によってすることができる。」とし、「債権者が更改前の債務者に対してその契約をした旨を通知した時に、その効力を生ずる。」と定めるだけで、更改前の債務者の意思に反するときはできないとする定めを置いていない。今の条文では、肢の結論（Ａの意思に反しては更改できない）に行き着かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "514",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者の交替による更改は、債権者と更改後に債務者となる者との契約によってすることができる。",
+     "text_sha256": "8f66cefb58c0625d8942d0a4546797107dfe4814dbf132723679467674b34f3d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "514",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が更改前の債務者に対してその契約をした旨を通知した時に、その効力を生ずる。",
+     "text_sha256": "8f66cefb58c0625d8942d0a4546797107dfe4814dbf132723679467674b34f3d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に514条の本文が変わった（egov.py --asof 2019-05-01 で確認）。今の条文では公式の○（正しい）に行き着かないため、解説を書かずに law_changed とした"
+   ],
+   "id": "exp-shiho-2019-minpo-q19-d",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

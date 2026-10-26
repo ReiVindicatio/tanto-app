@@ -1,0 +1,302 @@
+{
+ "question_id": "shiho-2019-minpo-q15",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q15-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。抵当権の効力が抵当不動産の果実に及ぶのは、被担保債権に不履行があった後に生じた果実についてである（371条）。",
+   "body": "誤りは、被担保債権に不履行がなくても抵当権の効力が賃料債権に及ぶとしている点である。371条は「抵当権は、その担保する債権について不履行があったときは、その後に生じた抵当不動産の果実に及ぶ。」と定めている。土地の賃料はその土地から生ずる果実であり、抵当権の効力がこれに及ぶのは不履行があった後に生じたものに限られる。抵当権は369条1項のとおり設定者から「占有を移転しないで」設定されるもので、不履行までは設定者が抵当不動産を使用・収益できると解されている。したがって、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "371",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権は、その担保する債権について不履行があったときは、その後に生じた抵当不動産の果実に及ぶ。",
+     "text_sha256": "5119fff32fdcc316206934d96ae0d191ccdeb8e014a7b84835a8961593c46954",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "369",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "占有を移転しないで",
+     "text_sha256": "d6b78d480b2f8cc38269bf4edd902590ef68b3386bc5d121e5b4b9ccdb6522e4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "369条・371条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）",
+    "賃料が果実に当たる点、不履行までは設定者が使用・収益できる点は解釈による",
+    "賃料債権への物上代位（372条が準用する304条）との関係には触れていない"
+   ],
+   "id": "exp-shiho-2019-minpo-q15-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q15-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。土地の所有者が植栽した立木は土地に付合して土地と一体となり、抵当権設定後に植えたものでも370条により抵当権の効力が及ぶ。",
+   "body": "370条は「抵当権は、抵当地の上に存する建物を除き、その目的である不動産（以下「抵当不動産」という。）に付加して一体となっている物に及ぶ。」と定めている。土地の所有者が自分の土地に植えた立木は、242条の「不動産の所有者は、その不動産に従として付合した物の所有権を取得する。」により土地に付合し、土地の一部（86条1項の「土地及びその定着物」）となると解されている。370条は付加の時期を限っておらず、抵当権設定後に付加された物にも効力が及ぶと解されている。したがって、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "370",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権は、抵当地の上に存する建物を除き、その目的である不動産（以下「抵当不動産」という。）に付加して一体となっている物に及ぶ。",
+     "text_sha256": "854276796c8c6353138b8e691ef004f5dc446b6dadda1af47cd01b822dbaddac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "242",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不動産の所有者は、その不動産に従として付合した物の所有権を取得する。",
+     "text_sha256": "df5476e9543ebad077b3ef37bd27add64614e6ab384d3d5e207a853501dd8238",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "86",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "土地及びその定着物",
+     "text_sha256": "2d089d5a5ebb96a49e7c20a031e4848afbdfbdf4ddd3b461637812f2677e3f64",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "242条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）",
+    "出題後に370条の本文が変わった（ただし書の詐害行為取消しの引き方だけで、付加一体物に及ぶという本文の規律と結論は同じ）",
+    "出題後に86条の本文が変わった（無記名債権の項が削られただけで、1項は同じ）",
+    "立木が土地に付合する点、設定後の付加物にも及ぶ点は解釈による"
+   ],
+   "id": "exp-shiho-2019-minpo-q15-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q15-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。建物内で保管しているだけの宝石は、建物に付加して一体となった物でも建物の従物でもないので、抵当権の効力は及ばない。",
+   "body": "誤りは、建物に持ち込んだ宝石にも抵当権の効力が及ぶとしている点である。370条が抵当権の効力を及ぼすのは「抵当不動産」に「付加して一体となっている物」である。宝石は建物の中に置かれているだけで、建物に付合したものではない。また、87条1項の従物は「物の所有者が、その物の常用に供するため、自己の所有に属する他の物をこれに附属させたとき」のものであり、宝石は建物の常用に供するために附属させた物ともいえないと解されている。したがって、宝石には抵当権の効力が及ばず、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "370",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "付加して一体となっている物",
+     "text_sha256": "854276796c8c6353138b8e691ef004f5dc446b6dadda1af47cd01b822dbaddac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "370",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当不動産",
+     "text_sha256": "854276796c8c6353138b8e691ef004f5dc446b6dadda1af47cd01b822dbaddac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "87",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "物の所有者が、その物の常用に供するため、自己の所有に属する他の物をこれに附属させたとき",
+     "text_sha256": "28daf18cc57d735b071d99c10349ca64b3f45613eb4ba27750c56baaef902963",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "87条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）",
+    "出題後に370条の本文が変わった（ただし書の詐害行為取消しの引き方だけで、結論は同じ）",
+    "宝石が付加一体物にも従物にも当たらないという点は解釈による"
+   ],
+   "id": "exp-shiho-2019-minpo-q15-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q15-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。抵当権の目的である建物が崩壊して動産となれば、抵当権は目的物を失って消滅し、その動産には及ばないとされている（判例あり（要確認））。",
+   "body": "誤りは、崩壊後の動産にも抵当権の効力が及ぶとしている点である。369条1項のとおり、抵当権は「不動産」について優先弁済を受ける権利であり、86条2項は「不動産以外の物は、すべて動産とする。」と定めている。建物が天災で崩壊して木材などの動産になれば、抵当権の目的である不動産そのものがなくなり、抵当権は消滅して、その動産には及ばないとするのが判例であるとされている（判例あり（要確認））。したがって、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "369",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権者は、債務者又は第三者が占有を移転しないで債務の担保に供した不動産について、他の債権者に先立って自己の債権の弁済を受ける権利を有する。",
+     "text_sha256": "d6b78d480b2f8cc38269bf4edd902590ef68b3386bc5d121e5b4b9ccdb6522e4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "86",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "不動産以外の物は、すべて動産とする。",
+     "text_sha256": "2d089d5a5ebb96a49e7c20a031e4848afbdfbdf4ddd3b461637812f2677e3f64",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "抵当権の目的である建物が崩壊して動産となったときは抵当権が消滅し、その動産に効力が及ばないとする判例",
+     "searched": [
+      "courts.py search 抵当権 建物 滅失 動産（443件。最高裁の判示事項から絞り込めず）",
+      "大審院（データベースにない）"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "369条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）",
+    "出題後に86条の本文が変わった（無記名債権の項が削られただけで、2項は同じ）",
+    "崩壊により抵当権が消滅し動産に及ばないという点は解釈・判例による"
+   ],
+   "id": "exp-shiho-2019-minpo-q15-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q15-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。賃借人が所有する取り外し可能なエアコンは、建物に付合しておらず、建物所有者の物でもないので従物にも当たらず、抵当権の効力は及ばない。",
+   "body": "370条は抵当権の効力が「抵当不動産」に「付加して一体となっている物」に及ぶと定める。取り外しのできるエアコンは建物の構成部分となっておらず、建物に付合したとはいえないと解されている。また、87条1項の従物は「物の所有者が、その物の常用に供するため、自己の所有に属する他の物をこれに附属させたとき」のものであり、建物の所有者（抵当権設定者）ではない賃借人が所有するエアコンは、この要件を満たさない。したがって、エアコンには抵当権の効力が及ばず、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "370",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当不動産",
+     "text_sha256": "854276796c8c6353138b8e691ef004f5dc446b6dadda1af47cd01b822dbaddac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "370",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "付加して一体となっている物",
+     "text_sha256": "854276796c8c6353138b8e691ef004f5dc446b6dadda1af47cd01b822dbaddac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "87",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "物の所有者が、その物の常用に供するため、自己の所有に属する他の物をこれに附属させたとき",
+     "text_sha256": "28daf18cc57d735b071d99c10349ca64b3f45613eb4ba27750c56baaef902963",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "87条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）",
+    "出題後に370条の本文が変わった（ただし書の詐害行為取消しの引き方だけで、結論は同じ）",
+    "取り外し可能なエアコンが付合しないという点は解釈による"
+   ],
+   "id": "exp-shiho-2019-minpo-q15-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,271 @@
+{
+ "question_id": "shiho-2019-minpo-q07",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q07-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。登録を抹消された自動車は一般の動産として192条の適用を受けるので、Ｃは即時取得により所有権を取得することができる。",
+   "body": "誤りは、登録を抹消された自動車について即時取得ができないとしている点である。192条は「取引行為によって、平穏に、かつ、公然と動産の占有を始めた者は、善意であり、かつ、過失がないときは、即時にその動産について行使する権利を取得する。」と定める。判例は、道路運送車両法による登録を受けていない自動車には192条の適用があるとし、この理は登録を受けた自動車が抹消登録を受けた場合も同様であるとしている。Ｃは売買という取引行為により、甲がＢの所有物であると過失なく信じて現実の引渡しを受けているから、甲の所有権を即時取得することができ、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "192",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取引行為によって、平穏に、かつ、公然と動産の占有を始めた者は、善意であり、かつ、過失がないときは、即時にその動産について行使する権利を取得する。",
+     "text_sha256": "8af1415ed2efccdfc0690b29f5e636498b6cf499f8169794c3bdec6e23d8ae4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "登録を受けていない自動車（抹消登録を受けた自動車を含む）と即時取得",
+     "court": "最高裁判所第二小法廷",
+     "date": "1970-12-04",
+     "case_number": "昭和45(オ)827",
+     "holding": "道路運送車両法による登録を受けていない自動車については192条の適用がある。全文では、この理は登録を受けた自動車が抹消登録を受けた場合も同様であるとしている。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53202/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "192条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）",
+    "抹消登録を受けた自動車にも同じ理が及ぶ点は判決全文（courts.py pdf 53202）で確認した"
+   ],
+   "id": "exp-shiho-2019-minpo-q07-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q07-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。相続による占有の取得は192条の「取引行為」によるものではないので、Ｄは即時取得により甲の所有権を取得しない。",
+   "body": "誤りは、相続人Ｄが即時取得により所有権を取得するとしている点である。192条が即時取得を認めるのは「取引行為によって」動産の占有を始めた者に限られる。896条は「相続人は、相続開始の時から、被相続人の財産に属した一切の権利義務を承継する。」と定めており、相続は被相続人の地位を包括的に承継するものであって、取引行為には当たらないと解されている。したがって、Ｄが甲を相続財産に属すると過失なく信じて現実に占有を始めても、192条による即時取得は認められず、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "192",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取引行為によって",
+     "text_sha256": "8af1415ed2efccdfc0690b29f5e636498b6cf499f8169794c3bdec6e23d8ae4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "896",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続人は、相続開始の時から、被相続人の財産に属した一切の権利義務を承継する。",
+     "text_sha256": "26569775cea382b249232c76910772008f279f0ab8c399f2d8a8d991820a167f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "192条・896条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）",
+    "相続が取引行為に当たらないという点は解釈による"
+   ],
+   "id": "exp-shiho-2019-minpo-q07-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q07-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。贈与も192条の「取引行為」に当たり、Ｅは善意無過失で現実の引渡しを受けているので、宝石である甲の所有権を即時取得する。",
+   "body": "192条は「取引行為によって、平穏に、かつ、公然と動産の占有を始めた者は、善意であり、かつ、過失がないときは、即時にその動産について行使する権利を取得する。」と定め、取引行為を有償のものに限っていない。贈与は無償ではあるが、譲渡人と譲受人の間の取引行為であり、192条の「取引行為」に含まれると解されている。Ｅは贈与によって、甲がＢの所有物であると過失なく信じて現実の引渡しを受けているから、甲の所有権を即時取得し、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "192",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取引行為によって、平穏に、かつ、公然と動産の占有を始めた者は、善意であり、かつ、過失がないときは、即時にその動産について行使する権利を取得する。",
+     "text_sha256": "8af1415ed2efccdfc0690b29f5e636498b6cf499f8169794c3bdec6e23d8ae4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "192",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取引行為",
+     "text_sha256": "8af1415ed2efccdfc0690b29f5e636498b6cf499f8169794c3bdec6e23d8ae4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "192条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）",
+    "無償の贈与も取引行為に含まれるという点は解釈による"
+   ],
+   "id": "exp-shiho-2019-minpo-q07-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q07-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、執行債務者の所有に属さない動産が強制競売に付された場合でも、競落人は192条により所有権を取得できるとしている。",
+   "body": "192条は「取引行為によって、平穏に、かつ、公然と動産の占有を始めた者は、善意であり、かつ、過失がないときは、即時にその動産について行使する権利を取得する。」と定める。判例は、執行債務者の所有に属さない動産が強制競売に付された場合であっても、競落人は192条によってその動産の所有権を取得することができるとしている。Ｆは、甲がＢの所有物であると過失なく信じて競落し、現実の引渡しを受けているから、甲の所有権を即時取得し、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "192",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取引行為によって、平穏に、かつ、公然と動産の占有を始めた者は、善意であり、かつ、過失がないときは、即時にその動産について行使する権利を取得する。",
+     "text_sha256": "8af1415ed2efccdfc0690b29f5e636498b6cf499f8169794c3bdec6e23d8ae4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "強制競売による動産の競落と即時取得",
+     "court": "最高裁判所第三小法廷",
+     "date": "1967-05-30",
+     "case_number": "昭和41(オ)851",
+     "holding": "執行債務者の所有に属さない動産が強制競売に付された場合であっても、競落人は、192条によって右動産の所有権を取得することができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55054/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "192条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）"
+   ],
+   "id": "exp-shiho-2019-minpo-q07-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q07-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。192条で即時に取得するのは「その動産について行使する権利」であり、所有権に限られないので、Ｇは質権を即時取得する。",
+   "body": "192条は「取引行為によって、平穏に、かつ、公然と動産の占有を始めた者は、善意であり、かつ、過失がないときは、即時にその動産について行使する権利を取得する。」と定めており、取得する権利は所有権に限られず、質権も含まれると解されている。質権の設定は取引行為であり、344条は「質権の設定は、債権者にその目的物を引き渡すことによって、その効力を生ずる。」と定める。Ｇは、甲がＢの所有物であると過失なく信じて質入れを受け、現実の引渡しを受けているから、甲を目的とする質権を即時取得し、肢は正しい。なお、自動車について質権の設定を受けて占有を始めた者に192条の適用を認めた判例もある。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "192",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取引行為によって、平穏に、かつ、公然と動産の占有を始めた者は、善意であり、かつ、過失がないときは、即時にその動産について行使する権利を取得する。",
+     "text_sha256": "8af1415ed2efccdfc0690b29f5e636498b6cf499f8169794c3bdec6e23d8ae4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "192",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その動産について行使する権利",
+     "text_sha256": "8af1415ed2efccdfc0690b29f5e636498b6cf499f8169794c3bdec6e23d8ae4f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "344",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権の設定は、債権者にその目的物を引き渡すことによって、その効力を生ずる。",
+     "text_sha256": "71db390c579a0d2e610455af139d2954da111a09b5994656c51b580ac651533a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "登録を受けていない自動車と即時取得（質権の設定を受けた者）",
+     "court": "最高裁判所第二小法廷",
+     "date": "1970-12-04",
+     "case_number": "昭和45(オ)827",
+     "holding": "道路運送車両法による登録を受けていない自動車については192条の適用がある。全文によれば、本件は自動車について質権の設定を受けてその占有を始めた者が192条の適用を主張した事案で、その善意無過失を認めた原判示を正当とした。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53202/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "192条・344条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）",
+    "192条の「その動産について行使する権利」に質権が含まれるという点は解釈による"
+   ],
+   "id": "exp-shiho-2019-minpo-q07-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

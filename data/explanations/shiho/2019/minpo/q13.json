@@ -1,0 +1,293 @@
+{
+ "question_id": "shiho-2019-minpo-q13",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q13-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。債権質の質権者は、目的の債権が金銭債権でなくても直接に取り立てることができ、弁済として受けた物について質権を持つ（366条1項・4項）。",
+   "body": "誤りは、金銭債権でなければ直接に取り立てられないとしている点である。366条1項は「質権者は、質権の目的である債権を直接に取り立てることができる。」と定め、目的の債権の種類を限っていない。そのうえで同条4項は「債権の目的物が金銭でないときは、質権者は、弁済として受けた物について質権を有する。」と定め、金銭でない債権を取り立てたときの扱いを決めている。したがって、金銭債権でない場合も直接の取立てはでき、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "366",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権者は、質権の目的である債権を直接に取り立てることができる。",
+     "text_sha256": "e42097ca4d399053915f9860ea27ed0404b5006f516b2ab755b2b9f137ce6580",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "366",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "債権の目的物が金銭でないときは、質権者は、弁済として受けた物について質権を有する。",
+     "text_sha256": "e42097ca4d399053915f9860ea27ed0404b5006f516b2ab755b2b9f137ce6580",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "366条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）"
+   ],
+   "id": "exp-shiho-2019-minpo-q13-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q13-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。350条が準用する297条1項により、動産質権者は質物の果実を収取し、他の債権者に先立って弁済に充当できる。",
+   "body": "350条は「第二百九十六条から第三百条まで及び第三百四条の規定は、質権について準用する。」と定めている。準用される297条1項は「留置権者は、留置物から生ずる果実を収取し、他の債権者に先立って、これを自己の債権の弁済に充当することができる。」と定めている。したがって、動産質権者も質物から生ずる果実を収取して、他の債権者に優先して被担保債権の弁済に充当することができ、肢は正しい。なお、充当の順序は297条2項により「まず債権の利息に充当し、なお残余があるときは元本に充当しなければならない。」。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "350",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百九十六条から第三百条まで及び第三百四条の規定は、質権について準用する。",
+     "text_sha256": "f1e3b2cebdf54f6474e2883fe0b05ba5e6243ca64ee25faf744b68109735c1d9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "297",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "留置権者は、留置物から生ずる果実を収取し、他の債権者に先立って、これを自己の債権の弁済に充当することができる。",
+     "text_sha256": "1077eb9fea572505a65743a557d68b6e90f6ad1be6704e7fe3604e2e4c1f37f0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "297",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "まず債権の利息に充当し、なお残余があるときは元本に充当しなければならない。",
+     "text_sha256": "1077eb9fea572505a65743a557d68b6e90f6ad1be6704e7fe3604e2e4c1f37f0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "297条・350条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）"
+   ],
+   "id": "exp-shiho-2019-minpo-q13-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q13-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。質権者は、質権の存続期間内であれば、自己の責任で質物を転質することができ（348条）、質権設定者の承諾は要件とされていない。",
+   "body": "誤りは、質権設定者の承諾がなければ転質できないとしている点である。348条は「質権者は、その権利の存続期間内において、自己の責任で、質物について、転質をすることができる。」と定め、設定者の承諾を要件としていない。その代わり、同条は「転質をしたことによって生じた損失については、不可抗力によるものであっても、その責任を負う。」として、質権者に重い責任を負わせている。350条は留置権の298条を質権に準用しているが、転質については348条が承諾なしの転質を認めた特則であると解されている。したがって、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "348",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権者は、その権利の存続期間内において、自己の責任で、質物について、転質をすることができる。",
+     "text_sha256": "2b6eec33d5c0f598deea00da5abf5352255ec280611233551d950e9b8b9819c4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "348",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "転質をしたことによって生じた損失については、不可抗力によるものであっても、その責任を負う。",
+     "text_sha256": "2b6eec33d5c0f598deea00da5abf5352255ec280611233551d950e9b8b9819c4",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "350",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百九十六条から第三百条まで及び第三百四条の規定は、質権について準用する。",
+     "text_sha256": "f1e3b2cebdf54f6474e2883fe0b05ba5e6243ca64ee25faf744b68109735c1d9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "298",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "留置権者は、債務者の承諾を得なければ、留置物を使用し、賃貸し、又は担保に供することができない。",
+     "text_sha256": "a61b1780dbdd816fb30c10413d5379bf275d6e1120431a4f6081e746a0cb65a7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "298条・348条・350条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）",
+    "348条が設定者の承諾のない転質（責任転質）を認めたもので298条2項の準用に優先するという点は解釈による"
+   ],
+   "id": "exp-shiho-2019-minpo-q13-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q13-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。346条本文は、質物の隠れた瑕疵によって生じた損害の賠償も質権の被担保債権に含めており、設定行為の定めは除外するときに要るものである。",
+   "body": "誤りは、設定行為に定めがなければ隠れた瑕疵による損害の賠償を担保しないとしている点である。346条は「質権は、元本、利息、違約金、質権の実行の費用、質物の保存の費用及び債務の不履行又は質物の隠れた瑕疵によって生じた損害の賠償を担保する。」と定めている。同条ただし書は「設定行為に別段の定めがあるときは、この限りでない。」としており、設定行為の定めは、これらを担保の範囲から外すときに意味を持つ。したがって、定めがなければ隠れた瑕疵による損害の賠償も担保され、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "346",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権は、元本、利息、違約金、質権の実行の費用、質物の保存の費用及び債務の不履行又は質物の隠れた瑕疵によって生じた損害の賠償を担保する。",
+     "text_sha256": "8fc83f101a1fc8bdf809606d4f9b0fe2b46579a44b6965056fd25553e475f592",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "346",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "設定行為に別段の定めがあるときは、この限りでない。",
+     "text_sha256": "8fc83f101a1fc8bdf809606d4f9b0fe2b46579a44b6965056fd25553e475f592",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "346条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）"
+   ],
+   "id": "exp-shiho-2019-minpo-q13-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q13-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。債権者が、自分を債務者とする債権を目的として質権の設定を受けることもできると解されている（判例あり（要確認））。",
+   "body": "362条1項は「質権は、財産権をその目的とすることができる。」と定めており、ＢのＡに対する債権も財産権として質権の目的となり得る。この場合、Ａは質権者であると同時に目的の債権の債務者（第三債務者）となるが、質権の設定を受けてもＡが目的の債権そのものを取得するわけではないので、520条の「債権及び債務が同一人に帰属したとき」には当たらず、混同による消滅は起きないと解されている。このような自己に対する債権への質権の設定を有効とするのが判例であるとされている（判例あり（要確認））。したがって、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "362",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権は、財産権をその目的とすることができる。",
+     "text_sha256": "b2907abfcba7eea0f05cb21c8dd7c32b8d205d65458fcf7f9665b5145d30a755",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "520",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権及び債務が同一人に帰属したとき",
+     "text_sha256": "a2e410b520170a5739ab46af6604b623a55107e4f2dec2ce55ae43e8fefce1c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [
+    {
+     "about": "債権者が自己に対する債権（自分が債務者となっている債権）を目的として質権の設定を受けられるとする判例",
+     "searched": [
+      "courts.py search 質権 自己に対する債権（1件。昭和39年大法廷判決は相殺の判例で無関係）",
+      "courts.py search 質権 第三債務者 同一人（9件。判示事項に該当なし）"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "362条・520条は 2019-05-01 版から本文が変わっていない（egov --asof で確認）",
+    "自己に対する債権への質権設定が有効で混同が生じないという点は解釈・判例による"
+   ],
+   "id": "exp-shiho-2019-minpo-q13-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

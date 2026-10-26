@@ -1,0 +1,203 @@
+{
+ "question_id": "shiho-2019-minpo-q25",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q25-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。賃貸借は当事者の約束だけで効力を生ずる諾成契約であり、書面は効力の要件ではない（601条）。",
+   "body": "決め手は「書面でしなければ，その効力を生じない」とする部分である。601条は、賃貸借は、当事者の一方が物の使用及び収益を相手方にさせることを約し、相手方が賃料を支払うこと及び引渡しを受けた物を契約が終了したときに返還することを「約することによって、その効力を生ずる」と定める。書面の作成を効力の要件とする定めはない。リード文の賃貸借は資材置場とするための建物所有を目的としない土地の賃貸借であるから、民法の賃貸借の規定によることになる。したがって肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "601",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "約することによって、その効力を生ずる",
+     "text_sha256": "74e184d7b22f8a354be3696b22e142b307107a756c6bed036bee073043e9337b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に601条の本文が変わった（結論は同じ）。賃借人が引渡しを受けた物を返還することを約する旨が加わったが、当事者が約することによって効力を生じ、書面を要しないことは同じと確かめた（改正前の本文は引用していない）"
+   ],
+   "id": "exp-shiho-2019-minpo-q25-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q25-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の604条1項は「賃貸借の存続期間は、五十年を超えることができない。」と定めており、肢の前提の「２０年」という上限は今の条文にない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "604",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賃貸借の存続期間は、五十年を超えることができない。",
+     "text_sha256": "ed8626b1937b73aade8b2329ec27491b644f3b7a79946d5255e393aa8fc0f732",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題は債権法改正前。出題後に604条の本文が変わり、存続期間の上限の年数が変わった。改正前の内容は条文の本文で確認していない（解説には引用していない）"
+   ],
+   "id": "exp-shiho-2019-minpo-q25-b",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q25-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。期間の定めがあっても解約をする権利を留保したときは、期間の定めのない賃貸借の規定が準用され、いつでも解約の申入れができる（618条・617条1項）。",
+   "body": "決め手は、解約権の留保があれば期間の定めのない賃貸借と同じ扱いになる点である。618条は「当事者が賃貸借の期間を定めた場合であっても、その一方又は双方がその期間内に解約をする権利を留保したときは、前条の規定を準用する」と定める。前条である617条1項は「当事者が賃貸借の期間を定めなかったときは、各当事者は、いつでも解約の申入れをすることができる」とする。したがって、賃貸人が期間内に解約をする権利を合意により留保したときは、賃貸人はいつでも解約の申入れをすることができ、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "618",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が賃貸借の期間を定めた場合であっても、その一方又は双方がその期間内に解約をする権利を留保したときは、前条の規定を準用する。",
+     "text_sha256": "ddc283f3564de1477107cca56ac00c0c6496ae951876546bb766d40b3b0f87d6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "617",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が賃貸借の期間を定めなかったときは、各当事者は、いつでも解約の申入れをすることができる。",
+     "text_sha256": "c31446d36f51849ce553299d5d82f271a55909d18cff05fb189908b35e7455bc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。617条・618条は2019-05-01時点の版から本文が変わっていない"
+   ],
+   "id": "exp-shiho-2019-minpo-q25-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q25-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。期間満了後の使用の継続を賃貸人が知りながら異議を述べないときは、従前と同一の条件で更に賃貸借をしたものと推定される（619条1項）。",
+   "body": "決め手は、黙示の更新が「推定」される点である。619条1項は「賃貸借の期間が満了した後賃借人が賃借物の使用又は収益を継続する場合において、賃貸人がこれを知りながら異議を述べないときは、従前の賃貸借と同一の条件で更に賃貸借をしたものと推定する」と定める。肢は、賃借人が期間満了後に土地の使用を継続し、賃貸人がこれを知りながら異議を述べない場合について、従前の賃貸借と同一の条件で更に賃貸借をしたものと推定されるとしており、同項のとおりである。したがって肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "619",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賃貸借の期間が満了した後賃借人が賃借物の使用又は収益を継続する場合において、賃貸人がこれを知りながら異議を述べないときは、従前の賃貸借と同一の条件で更に賃貸借をしたものと推定する。",
+     "text_sha256": "2498db047f691749d84d6647ded619603936c6593a452fd4579913a620b500aa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に619条の本文が変わった（結論は同じ）。変わったのは2項の敷金についての部分で、1項の更新の推定は同じと確かめた（改正前の本文は引用していない）"
+   ],
+   "id": "exp-shiho-2019-minpo-q25-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2019-minpo-q25-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。期間の定めのない土地の賃貸借は、解約の申入れの日から1年を経過することによって終了するのであり、申入れが到達した時に終了するのではない（617条1項1号）。",
+   "body": "決め手は「解約申入れの意思表示が相手方に到達した時に終了する」とする部分である。617条1項は、期間の定めのない賃貸借では各当事者はいつでも解約の申入れをすることができるとしたうえで、「次の各号に掲げる賃貸借は、解約の申入れの日からそれぞれ当該各号に定める期間を経過することによって終了する」と定め、1号で「土地の賃貸借　一年」とする。リード文の賃貸借は土地の賃貸借であるから、解約の申入れの日から1年を経過することによって終了する。したがって肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "617",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次の各号に掲げる賃貸借は、解約の申入れの日からそれぞれ当該各号に定める期間を経過することによって終了する。",
+     "text_sha256": "c31446d36f51849ce553299d5d82f271a55909d18cff05fb189908b35e7455bc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "617",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "土地の賃貸借　一年",
+     "text_sha256": "c31446d36f51849ce553299d5d82f271a55909d18cff05fb189908b35e7455bc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。617条は2019-05-01時点の版から本文が変わっていない"
+   ],
+   "id": "exp-shiho-2019-minpo-q25-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
