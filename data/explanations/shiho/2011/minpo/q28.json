@@ -1,0 +1,196 @@
+{
+ "question_id": "shiho-2011-minpo-q28",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q28-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法466条2項は「当事者が債権の譲渡を禁止し、又は制限する旨の意思表示（以下「譲渡制限の意思表示」という。）をしたときであっても、債権の譲渡は、その効力を妨げられない。」と定め、譲渡制限の意思表示について悪意の譲受人への譲渡も有効としている。肢の前提である、悪意の譲受人への譲渡が無効で債務者の承諾によって遡って有効になるという規律が今の条文にない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "466",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "当事者が債権の譲渡を禁止し、又は制限する旨の意思表示（以下「譲渡制限の意思表示」という。）をしたときであっても、債権の譲渡は、その効力を妨げられない。",
+     "text_sha256": "53cc6756b6ec229cfaa95a16773ac9bf62af5b5c72736b876442ab620e04c690",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2011-minpo-q28-1",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q28-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。解除前の第三者Ｃが545条1項ただし書で保護されるには、権利の取得について対抗要件（登記）を備えている必要がある（判例）。",
+   "body": "民法545条1項は、解除による原状回復義務を定めたうえで「ただし、第三者の権利を害することはできない。」とする。判例は、取得した権利について対抗要件を具備していない第三者は、545条1項ただし書にいう第三者にあたらないとした（最判昭和40年2月23日）。本肢のＣは、ＡＢ間の売買が解除される前にＢから不動産を買い受けた者であり、ただし書によって保護されるには、自己の権利の取得について登記を備えていることを要する。したがって肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "545",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ただし、第三者の権利を害することはできない。",
+     "text_sha256": "403613b135cfeb822522f37759878cd51de512f787c46c64bc9458e9b822f3b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "対抗要件を備えない者と545条1項ただし書の第三者",
+     "court": "最高裁判所第三小法廷",
+     "date": "1965-02-23",
+     "case_number": "昭和39(オ)416",
+     "holding": "取得した権利について対抗要件を具備していない第三者は、民法545条1項但書にいう第三者にあたらない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/77742/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2011-minpo-q28-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q28-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。借地上の建物の賃借人は地代の弁済について法律上の利害関係を有する（判例）ので、借地人の意思に反しても地代を弁済できる。",
+   "body": "誤りは「法律上の利害関係を有するとはいえない」の部分である。「債務の弁済は、第三者もすることができる。」（474条1項）が、「弁済をするについて正当な利益を有する者でない第三者は、債務者の意思に反して弁済をすることができない。」（同条2項）とされる。判例は、借地上の建物の賃借人は、地代の弁済について法律上の利害関係を有するとした（最判昭和63年7月1日）。建物の賃借人は、地代の不払で土地の賃貸借が解除されれば建物を使い続けられなくなるおそれがあり、今の条文の「正当な利益を有する者」にあたると解されている。したがって、建物の賃借人は借地人の意思に反しても地代を弁済でき、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "474",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の弁済は、第三者もすることができる。",
+     "text_sha256": "e74267d8643752e11c0a9a08befe902b689810b558efc7a252153c10a2cbb852",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "474",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "弁済をするについて正当な利益を有する者でない第三者は、債務者の意思に反して弁済をすることができない。",
+     "text_sha256": "e74267d8643752e11c0a9a08befe902b689810b558efc7a252153c10a2cbb852",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "借地上の建物の賃借人と地代の弁済についての利害関係",
+     "court": "最高裁判所第二小法廷",
+     "date": "1988-07-01",
+     "case_number": "昭和62(オ)1577",
+     "holding": "借地上の建物の賃借人は、地代の弁済について法律上の利害関係を有する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/62367/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "判例の「法律上の利害関係」を持つ者が今の474条2項の「正当な利益を有する者」にあたるという説明は解釈による",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2011-minpo-q28-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q28-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。相手方との関係で権限外の行為の表見代理が成立すれば、売買の効果は本人に帰属し、転得者は相手方から有効に権利を承継するので、本人は転得者に効果の不帰属を主張できない。",
+   "body": "決め手は、表見代理の成否は直接の相手方について判断され、それが成立すれば相手方が有効に権利を取得するという点である。民法110条は「前条第一項本文の規定は、代理人がその権限外の行為をした場合において、第三者が代理人の権限があると信ずべき正当な理由があるときについて準用する。」と定め、準用される109条1項本文により、本人は代理人のした行為について「その責任を負う」。そのため、相手方について表見代理の要件が満たされていれば、本人は相手方に対して売買の効果を否定できず、相手方は売買によって権利を取得する。転得者はその相手方から権利を承継する者であるから、本人は転得者に対しても、当該行為の効果が自分に帰属しないと主張することはできないと解されている。したがって肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "110",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条第一項本文の規定は、代理人がその権限外の行為をした場合において、第三者が代理人の権限があると信ずべき正当な理由があるときについて準用する。",
+     "text_sha256": "63ff876fb6e58f26dc2c691f8ec2dcf175940fff0b8595dab8e258c48a04ffd7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "109",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その責任を負う",
+     "text_sha256": "64ad3e6649576e54b123477fa39e73a5b61ec75858485e3bfaff019b9df5bebd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "相手方について表見代理が成立すれば転得者に対しても効果の不帰属を主張できないという説明は解釈による（判例は courts.py search 表見代理 転得者 で見つからず、本文では判例を挙げていない）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2011-minpo-q28-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,196 @@
+{
+ "question_id": "shiho-2011-minpo-q21",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q21-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。受取証書の交付は弁済と引換えに請求できるので、弁済の提供をしたうえで受取証書の交付を拒まれた弁済者は、目的物を引き渡さなくても遅滞の責任を負わない。",
+   "body": "486条1項は「弁済をする者は、弁済と引換えに、弁済を受領する者に対して受取証書の交付を請求することができる。」と定め、弁済と受取証書の交付とを引換えの関係に置いている。そのため、弁済受領者が受取証書の交付に応じないときは、弁済者は目的物の引渡しを拒むことができる。また、492条は「債務者は、弁済の提供の時から、債務を履行しないことによって生ずべき責任を免れる。」と定めており、履行期に目的物を提供した弁済者は、引渡しをしていなくても遅滞の責任を負わない。肢はこのとおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "486",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁済をする者は、弁済と引換えに、弁済を受領する者に対して受取証書の交付を請求することができる。",
+     "text_sha256": "27ab9c594146aac3ddf4aaab07dd7825c158d08384bc32c7fdc9b83de30c0466",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "492",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、弁済の提供の時から、債務を履行しないことによって生ずべき責任を免れる。",
+     "text_sha256": "2970969bf40f4c31c85509f6921d5d76f57e66b29130e8eb609e9a11a8981b21",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない（486条1項の「弁済と引換えに」の文言が出題当時にあったかは確かめていない）"
+   ],
+   "id": "exp-shiho-2011-minpo-q21-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q21-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。債権者が弁済として受領した他人の物を善意で消費し、又は譲り渡したときは、その弁済は有効となる（476条）ので、「有効となることはない」とはいえない。",
+   "body": "475条は、弁済として他人の物を引き渡した者は「更に有効な弁済をしなければ、その物を取り戻すことができない。」と定め、他人の物による弁済がそのままでは有効な弁済とならないことを前提にしている。しかし、476条は「前条の場合において、債権者が弁済として受領した物を善意で消費し、又は譲り渡したときは、その弁済は、有効とする。」と定めている。したがって、他人の物の交付による弁済でも有効となる場合があり、肢は誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "475",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "更に有効な弁済をしなければ、その物を取り戻すことができない。",
+     "text_sha256": "95a8a9806cf67910a9cc64acacebaae7822a8c72c4d65954a5a1fa36f7b08c6d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "476",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条の場合において、債権者が弁済として受領した物を善意で消費し、又は譲り渡したときは、その弁済は、有効とする。",
+     "text_sha256": "3db8fa2acbd9d515fb1eb3eab3b8d8c93a0a6f66fdbaa6285b5bf1d85a85e235",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない（出題当時の条番号は確かめていない）"
+   ],
+   "id": "exp-shiho-2011-minpo-q21-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q21-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。受領権者としての外観を有する者に対する弁済が有効となるには、弁済者が善意で、かつ過失がなかったことが必要であり、重過失がないだけでは足りない。",
+   "body": "肢の「債権の準占有者」に対する弁済は、今の民法では、受領権者としての外観を有する者に対する弁済（478条）として定められている。478条は、受領権者以外の者であって「取引上の社会通念に照らして受領権者としての外観を有するもの」に対してした弁済は、「その弁済をした者が善意であり、かつ、過失がなかったときに限り、その効力を有する。」と定める。要件は善意かつ無過失であり、肢は「重過失がなかった場合」に有効となるとしている点で誤りである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "478",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取引上の社会通念に照らして受領権者としての外観を有するもの",
+     "text_sha256": "5cba43c2041487d21b38b723706c297da47249d63f72c47cbf5d8420943e616c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "478",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その弁済をした者が善意であり、かつ、過失がなかったときに限り、その効力を有する。",
+     "text_sha256": "5cba43c2041487d21b38b723706c297da47249d63f72c47cbf5d8420943e616c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "名前が変わった（規律と結論は同じ）：「債権の準占有者」→ 受領権者としての外観を有する者（478条）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2011-minpo-q21-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q21-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "肢は受取証書の持参人を弁済受領の権限があるものとみなす規定を前提にしているが、今の民法480条は「削除」となっており、その規定は今の条文にない。今は478条の「取引上の社会通念に照らして受領権者としての外観を有するもの」に対する弁済の問題となる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "480",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "削除",
+     "text_sha256": "e9653dc3edcbc072d033d200b3aa56539fde84e9b7cc80287fedc9f91cbe03ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "478",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取引上の社会通念に照らして受領権者としての外観を有するもの",
+     "text_sha256": "5cba43c2041487d21b38b723706c297da47249d63f72c47cbf5d8420943e616c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2011-minpo-q21-4",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

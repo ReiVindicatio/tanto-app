@@ -1,0 +1,215 @@
+{
+ "question_id": "shiho-2011-minpo-q29",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q29-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。騙取金で弁済を受けた債権者に悪意又は重大な過失があるときは、その取得は被騙取者との関係で法律上の原因を欠き不当利得となるので、「重大な過失があったとしても」不当利得にならないとする点が誤り。",
+   "body": "不当利得は「法律上の原因なく他人の財産又は労務によって利益を受け、そのために他人に損失を及ぼした」ときに成立する（703条）。判例は、甲が乙から騙取又は横領した金銭で自己の債権者丙に弁済した場合、弁済の受領につき丙に悪意又は重大な過失があるときは、丙の金銭の取得は乙に対する関係では法律上の原因を欠き、不当利得となるとする。肢はＣに重大な過失がある場合なので、Ｃの受けた利益はＢとの関係で不当利得となり得る。したがって、重過失があっても不当利得にならないとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "703",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律上の原因なく他人の財産又は労務によって利益を受け、そのために他人に損失を及ぼした",
+     "text_sha256": "fb017a70ba1c1abc0152ea2e23f7b910c14c5ab9350071a2788e05db6aa812de",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "騙取金・横領金による弁済と不当利得",
+     "court": "最高裁判所第一小法廷",
+     "date": "1974-09-26",
+     "case_number": "昭和45(オ)540",
+     "holding": "甲が乙から騙取又は横領した金銭により自己の債権者丙に対する債務を弁済した場合において、弁済の受領につき丙に悪意又は重大な過失があるときは、丙の金銭の取得は、乙に対する関係においては法律上の原因を欠き、不当利得となる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54178/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2011-minpo-q29-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q29-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。期限前の弁済で債権者が得た利益の返還が問題になるのは債務者が錯誤によって給付したときだけであり、弁済期前と知りながら弁済したＡとの関係では不当利得とならない。",
+   "body": "706条本文は「債務者は、弁済期にない債務の弁済として給付をしたときは、その給付したものの返還を請求することができない」と定める。同条ただし書は「債務者が錯誤によってその給付をしたときは、債権者は、これによって得た利益を返還しなければならない」とし、利益の返還を錯誤による給付の場合に限っている。肢のＡは弁済期前であることを知りながら全額を弁済しており、錯誤による給付ではない。したがって、Ｂが弁済期までの運用で得た利益はＡとの関係で不当利得とならず、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "706",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、弁済期にない債務の弁済として給付をしたときは、その給付したものの返還を請求することができない",
+     "text_sha256": "973d676805d7703d6c772ee5f802f6bfc2c6d7e46001c7c4c00f37cd3f1d15c5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "706",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者が錯誤によってその給付をしたときは、債権者は、これによって得た利益を返還しなければならない",
+     "text_sha256": "973d676805d7703d6c772ee5f802f6bfc2c6d7e46001c7c4c00f37cd3f1d15c5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2011-minpo-q29-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q29-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。登記のある不動産の不法原因による贈与では、引渡しをしただけでは708条の「給付」があったとはいえず、Ａは返還請求を拒まれないので、Ａの請求は認められる。",
+   "body": "大麻の栽培・密売のための贈与は公序良俗に反し、90条により「公の秩序又は善良の風俗に反する法律行為は、無効とする」とされる。708条本文は「不法な原因のために給付をした者は、その給付したものの返還を請求することができない」と定めるが、これは「給付」があったことが前提である。判例は、不法の原因により既登記建物を贈与した場合、その引渡しをしただけでは708条にいう給付があったとはいえないとする（未登記建物では引渡しが給付に当たるとする判例と対比される）。この考え方は登記名義が贈与者に残っている土地にも当てはまると解されており、肢では引渡しのみで登記名義はＡのままなので、給付は終わっておらず、Ａの引渡請求は708条によって妨げられない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "90",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "公の秩序又は善良の風俗に反する法律行為は、無効とする。",
+     "text_sha256": "e2476aba73077c1ce2fe8a6e6b71f6708a1daca4eb5f7ab5f6c5a9d1da5a8c37",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "708",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法な原因のために給付をした者は、その給付したものの返還を請求することができない。",
+     "text_sha256": "a35bbcbbae55af85a9332567d8b0b166d5b8efffcb5a14a2a9cb4320e3160ba1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "既登記建物の不法原因贈与と引渡し（708条の給付）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1971-10-28",
+     "case_number": "昭和45(オ)10",
+     "holding": "不法の原因により既登記建物を贈与した場合、その引渡をしただけでは、民法708条にいう給付があったとはいえない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/51994/detail2/index.html"
+     ]
+    },
+    {
+     "name": "未登記建物の不法原因贈与と所有権の帰属",
+     "court": "最高裁判所大法廷",
+     "date": "1970-10-21",
+     "case_number": "昭和41(オ)436",
+     "holding": "不法の原因により未登記建物を贈与した場合、その引渡は民法708条にいう給付にあたり、贈与者は所有権が自己にあることを理由として建物の返還を請求することはできない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53161/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "解釈による：判例は既登記建物についてのもので、登記名義が残る土地にも同じに当てはまるという点は解釈による"
+   ],
+   "id": "exp-shiho-2011-minpo-q29-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q29-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は不法原因給付の返還の特約を有効とするので、返還の合意を無効とする点が誤り。",
+   "body": "708条本文は「不法な原因のために給付をした者は、その給付したものの返還を請求することができない」と定め、給付者からの返還請求を封じる。しかし判例は、不法原因給付の返還の特約は有効であるとする。肢は、給付後に当事者間で贈与契約を解除して土地を贈与者に返還する旨を合意した場面であり、この合意は有効と扱われる。したがって、合意を無効とする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "708",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "不法な原因のために給付をした者は、その給付したものの返還を請求することができない。",
+     "text_sha256": "a35bbcbbae55af85a9332567d8b0b166d5b8efffcb5a14a2a9cb4320e3160ba1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "不法原因給付の返還の特約の効力",
+     "court": "最高裁判所第一小法廷",
+     "date": "1953-01-22",
+     "case_number": "昭和24(オ)179",
+     "holding": "不法原因給付の返還の特約は有効であり、その特約に基づく返還義務の履行のため振り出された手形の請求には民法708条は適用がない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57131/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2011-minpo-q29-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

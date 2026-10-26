@@ -1,0 +1,302 @@
+{
+ "question_id": "shiho-2011-minpo-q32",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q32-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、婚姻解消後300日以内の出生でも、離婚前から事実上の離婚状態で夫婦の実態が失われていた場合には、772条による嫡出の推定を受けないとする。",
+   "body": "772条1項は「妻が婚姻中に懐胎した子は、当該婚姻における夫の子と推定する」とし、同条2項は「婚姻の解消若しくは取消しの日から三百日以内に生まれた子は、婚姻中に懐胎したものと推定する」と定める。条文だけを見れば、離婚後300日以内に生まれた子は夫の子と推定されることになる。しかし判例は、離婚による婚姻解消後300日以内に出生した子であっても、母とその夫とが離婚の届出に先立ち約2年半以前から事実上の離婚をして別居し、まったく交渉を絶って夫婦の実態が失われていた場合には、772条による嫡出の推定を受けないとする。肢はこの判例の内容のとおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "772",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "妻が婚姻中に懐胎した子は、当該婚姻における夫の子と推定する。",
+     "text_sha256": "99efe67baa1c7a7aa568fe69b0d7a59a22934f8013ef6a03333b52dcfe964d42",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "772",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "婚姻の解消若しくは取消しの日から三百日以内に生まれた子は、婚姻中に懐胎したものと推定する。",
+     "text_sha256": "99efe67baa1c7a7aa568fe69b0d7a59a22934f8013ef6a03333b52dcfe964d42",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "事実上の離婚と嫡出の推定（推定の及ばない子）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1969-05-29",
+     "case_number": "昭和43(オ)1184",
+     "holding": "離婚による婚姻解消後300日以内に出生した子であっても、母とその夫とが離婚の届出に先だち約2年半以前から事実上の離婚をして別居し、まったく交渉を絶って夫婦の実態が失われていた場合には、民法772条による嫡出の推定を受けない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54117/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "772条は出題後に改正されている（現行の本文には再婚の場合の3項・4項がある）。改正前の内容は条文の本文で確認していない。婚姻解消後300日以内の出生を婚姻中の懐胎と推定する点は、判決の裁判要旨にも同じ前提が示されている"
+   ],
+   "id": "exp-shiho-2011-minpo-q32-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q32-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。未成年者である父も法定代理人の同意なしに認知でき（780条）、法定代理人が未成年を理由に認知を取り消すことはできない。",
+   "body": "780条は「認知をするには、父又は母が未成年者又は成年被後見人であるときであっても、その法定代理人の同意を要しない」と定める。5条2項が取消しを認めるのは、同条1項の法定代理人の同意を要する法律行為を同意なくした場合であり、同意を要しない認知にはこの取消しは及ばないと解される。さらに785条は「認知をした父又は母は、その認知を取り消すことができない」と定めている。したがって、未成年者の父がした認知を法定代理人が取り消すことができるとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "780",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "認知をするには、父又は母が未成年者又は成年被後見人であるときであっても、その法定代理人の同意を要しない。",
+     "text_sha256": "f96c7d5cf3e3bef2b4050403465d1ea8285651d649dee1aefe2d9a4153849440",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "5",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定に反する法律行為は、取り消すことができる。",
+     "text_sha256": "41659855924ba702729f1bdac3f46add3ca097fdcda242a6f5e99f0d612d0360",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "785",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "認知をした父又は母は、その認知を取り消すことができない。",
+     "text_sha256": "d4c2f43f2112854fa336f3493a5ca62858faf0947b08a9b416482db99d6b3e33",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "解釈による：5条2項の取消しが同意を要しない認知に及ばないという点"
+   ],
+   "id": "exp-shiho-2011-minpo-q32-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q32-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、母と嫡出でない子との親子関係は原則として母の認知をまたず分娩の事実により当然発生するとしており、母の認知の時から発生するとする点が誤り。",
+   "body": "779条は「嫡出でない子は、その父又は母がこれを認知することができる」と定め、文言上は母も認知をすることが予定されている。しかし判例は、母と非嫡出子間の親子関係は、原則として、母の認知をまたず、分娩の事実により当然発生するとする。また、認知がされる場合でも、784条本文は「認知は、出生の時にさかのぼってその効力を生ずる」と定めており、「認知の時から」発生するという点もこれと合わない。したがって、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "779",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "嫡出でない子は、その父又は母がこれを認知することができる。",
+     "text_sha256": "9cade6c9bd53f52284bea8c656af49c72f5fc89abf4248b64531c8ebb0b4e396",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "784",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "認知は、出生の時にさかのぼってその効力を生ずる。",
+     "text_sha256": "70f9059c4fefb95f9e29830e596074839d9d886fc78b232f31f25e1927ae616b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "母と非嫡出子の親子関係は分娩の事実により当然発生する",
+     "court": "最高裁判所第二小法廷",
+     "date": "1962-04-27",
+     "case_number": "昭和35(オ)1189",
+     "holding": "母と非嫡出子間の親子関係は、原則として、母の認知をまたず、分娩の事実により当然発生する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57715/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2011-minpo-q32-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q32-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。認知は戸籍法の定めるところによる届出（又は遺言）によってするもので、届出がなければ父の認知の意思が客観的に明らかでも認知の効力は生じない。",
+   "body": "781条1項は「認知は、戸籍法の定めるところにより届け出ることによってする」と定め、同条2項は「認知は、遺言によっても、することができる」とする。認知は届出又は遺言という方式によってするものであり、父の生前の認知の意思が客観的に明らかであっても、それだけで父の死亡時に認知の効力が生ずるという規定はない。父の死後に父子関係を確定させるには、787条の認知の訴えによることになり、同条は「子、その直系卑属又はこれらの者の法定代理人は、認知の訴えを提起することができる」とし、ただし書で「父又は母の死亡の日から三年を経過したときは、この限りでない」と定める。したがって、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "781",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "認知は、戸籍法の定めるところにより届け出ることによってする。",
+     "text_sha256": "145e98c2b9afc73b2fac1982a2b1a43f6bb0995984a48983ad36890b81c4f55d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "781",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "認知は、遺言によっても、することができる。",
+     "text_sha256": "145e98c2b9afc73b2fac1982a2b1a43f6bb0995984a48983ad36890b81c4f55d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "787",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "子、その直系卑属又はこれらの者の法定代理人は、認知の訴えを提起することができる。",
+     "text_sha256": "88ec7c2497f45693b8be10f61194b0e12d210870b2432b59b8201b527c862e8b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "787",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "父又は母の死亡の日から三年を経過したときは、この限りでない。",
+     "text_sha256": "88ec7c2497f45693b8be10f61194b0e12d210870b2432b59b8201b527c862e8b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2011-minpo-q32-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q32-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、正当な当事者間で確定した認知の判決は第三者にも効力を有するので、再審で争うのは別として、第三者も反対の事実を主張して認知無効の訴えを提起できないとする。",
+   "body": "判例は、認知の判決が正当な当事者の間に確定している以上、その判決は第三者に対しても効力を有するから、これに対し再審の手続で争うのは格別、もはや第三者も反対の事実を主張して認知無効の訴えを提起することはできないとする。肢はこの判例の内容そのものである。現行法では、人事訴訟法24条1項が「人事訴訟の確定判決は、民事訴訟法第百十五条第一項の規定にかかわらず、第三者に対してもその効力を有する」と定めており、認知の判決が第三者に及ぶという判例の前提はこの規定で裏付けられる。したがって、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "人事訴訟法",
+     "article": "24",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "人事訴訟の確定判決は、民事訴訟法第百十五条第一項の規定にかかわらず、第三者に対してもその効力を有する。",
+     "text_sha256": "92948f373a5df4473480b4cd692e186aa8ee341388d9a4f5813677080a418898",
+     "fetched_at": "2026-10-19",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%8D%81%E4%BA%94%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "認知の確定判決と第三者による認知無効の訴え",
+     "court": "最高裁判所第二小法廷",
+     "date": "1953-06-26",
+     "case_number": "昭和26(オ)808",
+     "holding": "認知の判決が正当な当事者の間に確定している以上、その判決は第三者に対しても効力を有するから、再審の手続で争うのは格別、もはや第三者も反対の事実を主張して認知無効の訴えを提起することはできない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56082/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "判決の参照法条は判決当時の人事訴訟の法令の条で、その本文は確認していない。現行の人事訴訟法24条1項で説明した",
+    "民法786条（認知の無効の訴え）は出題後に改正されている（現行の本文には提訴権者の列挙と7年の期間がある）。改正前の内容は条文の本文で確認していない。肢は認知の判決の効力を問うもので、結論は判決の第三者効による"
+   ],
+   "id": "exp-shiho-2011-minpo-q32-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

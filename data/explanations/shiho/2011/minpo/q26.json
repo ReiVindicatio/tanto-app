@@ -1,0 +1,281 @@
+{
+ "question_id": "shiho-2011-minpo-q26",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q26-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法は、目的物が数量に関して契約の内容に適合しない場合を契約不適合として扱い（562条1項「引き渡された目的物が種類、品質又は数量に関して契約の内容に適合しないものであるときは」）、その損害賠償は415条によるとしている（564条「前二条の規定は、第四百十五条の規定による損害賠償の請求並びに第五百四十一条及び第五百四十二条の規定による解除権の行使を妨げない。」）。肢が前提にしている、数量不足の担保責任として賠償される損害の範囲を限る規律は今の条文と異なり、今の条文で説明すると出題の趣旨と別の理由になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "562",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "引き渡された目的物が種類、品質又は数量に関して契約の内容に適合しないものであるときは",
+     "text_sha256": "4596856b9aee4f26d8523bb47e98749638a06b0d016eb4267dd51c9391aaa683",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "564",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の規定は、第四百十五条の規定による損害賠償の請求並びに第五百四十一条及び第五百四十二条の規定による解除権の行使を妨げない。",
+     "text_sha256": "9b9246eeb8b690b7b89c4b9a9a5f8b40c4e0f341d15fe1382dccd3a7c464110d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "415",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者がその債務の本旨に従った履行をしないとき又は債務の履行が不能であるときは、債権者は、これによって生じた損害の賠償を請求することができる。",
+     "text_sha256": "17591c49fffea4a95a4b10a3ff4b37bcd321771faa36b15176b72ce9b46cf6c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2011-minpo-q26-1",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q26-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。売主の責めに帰すべき事由で他人の権利を移転できなくなれば、買主は売主の無権利を知っていても、債務不履行による損害賠償を請求できる（415条1項、判例）。",
+   "body": "決め手は、買主が売主の無権利を知っていたことは、債務不履行による損害賠償を妨げないという点である。民法561条は「他人の権利（権利の一部が他人に属する場合におけるその権利の一部を含む。）を売買の目的としたときは、売主は、その権利を取得して買主に移転する義務を負う。」と定め、この義務が履行できなくなれば、415条1項により「債務の履行が不能であるときは、債権者は、これによって生じた損害の賠償を請求することができる。」。同項ただし書が除くのは、不履行が債務者の責めに帰することができない事由によるときだけであり、買主の善意は要件になっていない。判例も、他人の権利の売主がその責めに帰すべき事由によって権利を取得して買主に移転できない場合、担保責任としての損害賠償の請求ができないときでも、債務不履行一般の規定に従って損害賠償を請求できるとしていた（最判昭和41年9月8日）。本肢は売主の責めに帰すべき事由による履行不能であるから、悪意の買主も損害賠償を請求でき、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "561",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の権利（権利の一部が他人に属する場合におけるその権利の一部を含む。）を売買の目的としたときは、売主は、その権利を取得して買主に移転する義務を負う。",
+     "text_sha256": "f7d19b6defb3d8a288047cb80c492f7bbbf26ee6c5eb6989829288f89b140c57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "415",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の履行が不能であるときは、債権者は、これによって生じた損害の賠償を請求することができる。",
+     "text_sha256": "17591c49fffea4a95a4b10a3ff4b37bcd321771faa36b15176b72ce9b46cf6c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "他人の権利の売買における売主の担保責任と債務不履行責任",
+     "court": "最高裁判所第一小法廷",
+     "date": "1966-09-08",
+     "case_number": "昭和40(オ)210",
+     "holding": "他人の権利を目的とする売買の売主が、その責に帰すべき事由によって権利を取得して買主に移転できない場合、買主は、担保責任としての損害賠償の請求ができないときでも、債務不履行一般の規定に従って損害賠償を請求できる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53972/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "判例は出題当時の担保責任の規定を前提にしたもの。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2011-minpo-q26-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q26-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。権利の一部が他人に属しその部分を移転できないときは、買主は悪意でも、不適合の程度に応じた代金の減額を請求できる（565条・563条）。",
+   "body": "誤りは「代金の減額を請求することはできない」の部分である。民法565条は、562条から564条までの規定を「売主が買主に移転した権利が契約の内容に適合しないものである場合（権利の一部が他人に属する場合においてその権利の一部を移転しないときを含む。）について準用する。」と定める。準用される563条1項により、買主は「その不適合の程度に応じて代金の減額を請求することができる」し、売主が移転できず追完が不能なときは、催告なしに直ちに請求できる（同条2項1号「履行の追完が不能であるとき。」）。これらの規定は買主の善意を要件としておらず、売主は他人に属する部分についても「その権利を取得して買主に移転する義務を負う」（561条）から、買主が契約締結時にその事実を知っていても減額請求は妨げられない。したがって肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "565",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "売主が買主に移転した権利が契約の内容に適合しないものである場合（権利の一部が他人に属する場合においてその権利の一部を移転しないときを含む。）について準用する。",
+     "text_sha256": "f8ecc094b407869ddfae10801aec0ec6ab3f196564759fd35a9e6ee2af2aeaa5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "563",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その不適合の程度に応じて代金の減額を請求することができる",
+     "text_sha256": "01bf383ee4d16f3d3ec96d349bed160475698675a93a56972d801d79cfb22e7e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "563",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "履行の追完が不能であるとき。",
+     "text_sha256": "01bf383ee4d16f3d3ec96d349bed160475698675a93a56972d801d79cfb22e7e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "561",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その権利を取得して買主に移転する義務を負う",
+     "text_sha256": "f7d19b6defb3d8a288047cb80c492f7bbbf26ee6c5eb6989829288f89b140c57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "562",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "引き渡された目的物が種類、品質又は数量に関して契約の内容に適合しないものであるときは",
+     "text_sha256": "4596856b9aee4f26d8523bb47e98749638a06b0d016eb4267dd51c9391aaa683",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "564",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の規定は、第四百十五条の規定による損害賠償の請求並びに第五百四十一条及び第五百四十二条の規定による解除権の行使を妨げない。",
+     "text_sha256": "9b9246eeb8b690b7b89c4b9a9a5f8b40c4e0f341d15fe1382dccd3a7c464110d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "悪意の買主も減額請求できるという説明は、条文に善意の要件がないことからの解釈による",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2011-minpo-q26-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2011-minpo-q26-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。数量指示売買で数量が超過しても、売主は代金の増額を請求できない（判例）。",
+   "body": "誤りは、売主が「超過した部分の割合に応じて代金の増額を請求することができる」とする部分である。民法562条・563条は、引き渡された目的物が「種類、品質又は数量に関して契約の内容に適合しないものであるとき」に、買主が履行の追完や「その不適合の程度に応じて代金の減額を請求することができる」と定めるもので、買主の側の救済である。数量が超過する場合に売主が代金の増額を請求できるとする規定は置かれていない。判例も、いわゆる数量指示売買において数量が超過する場合、売主は当時の民法の担保責任の規定の類推適用を根拠として代金の増額を請求することはできないとした（最判平成13年11月27日）。売主が超過を知らなかったとしても、増額を請求する根拠はなく、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "562",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "種類、品質又は数量に関して契約の内容に適合しないものであるとき",
+     "text_sha256": "4596856b9aee4f26d8523bb47e98749638a06b0d016eb4267dd51c9391aaa683",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "563",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その不適合の程度に応じて代金の減額を請求することができる",
+     "text_sha256": "01bf383ee4d16f3d3ec96d349bed160475698675a93a56972d801d79cfb22e7e",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "数量指示売買で数量が超過する場合の売主の代金増額請求",
+     "court": "最高裁判所第三小法廷",
+     "date": "2001-11-27",
+     "case_number": "平成12(受)375",
+     "holding": "いわゆる数量指示売買において数量が超過する場合、売主は民法565条（当時）の類推適用を根拠として代金の増額を請求することはできない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52295/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "判例は改正前の565条の類推適用を否定したもの。今の条文でも売主の増額請求の根拠がないという説明は解釈による",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2011-minpo-q26-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
