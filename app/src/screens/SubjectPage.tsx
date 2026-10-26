@@ -6,7 +6,7 @@ import { summarize, type Filter } from "../history";
 import { MINPO_REFORM_YEAR } from "../LawNote";
 import { dueSummary, NEW_PER_DAY } from "../srs";
 import { back } from "../router";
-import { startQuestions, startReview, startStatements } from "../play";
+import { startListen, startQuestions, startReview, startStatements } from "../play";
 import { subjectColor } from "../subjectsMeta";
 import { cardsOf, Progress, poolOf } from "./common";
 import TopicSection from "./TopicSection";
@@ -62,6 +62,10 @@ export default function SubjectPage({
         <div className="row">
           <button disabled={reviewPool.length === 0} onClick={() => startReview(reviewPool, `${g.name} 今日の復習`)}>
             復習をはじめる
+          </button>
+          {/* 聞き流し（T057・T061）：この科目の全年度から、ホームの聞き流しと同じ選び方で */}
+          <button className="secondary" disabled={reviewPool.length === 0} onClick={() => startListen(reviewPool, `${g.name} 聞き流し`)}>
+            🎧 聞き流す
           </button>
         </div>
       </div>

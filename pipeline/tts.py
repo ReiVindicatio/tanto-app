@@ -109,6 +109,8 @@ def main() -> None:
             if manifest.get(name) == sha(prompt + c[part]) and (out / name).exists():
                 continue
             jobs.append((name, c[part]))
+    # 新しい年度から作る（アプリは、まだ答えていない肢を新しい年度から出すので、途中でも使われる肢から音声がそろう）
+    jobs.sort(key=lambda j: -int(j[0].split("-")[1]))
     if a.limit:
         jobs = jobs[:a.limit]
     chars = sum(len(t) for _, t in jobs)

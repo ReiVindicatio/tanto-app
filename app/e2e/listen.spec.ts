@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { expect, test, type Page } from "@playwright/test";
-import { openHome } from "./helpers";
+import { gotoSubject, openHome } from "./helpers";
 
 // 聞き流し（T057・T058）。再生（<audio>）と端末の読み上げは作り物に差し替え、何をどの順に流したかを記録する
 
@@ -144,4 +144,15 @@ test("一時停止と再開、次の肢へ", async ({ page }) => {
   await expect(page.locator(".listen-phase")).toContainText(/読み上げ中|考える時間/);
   await page.getByRole("button", { name: "次の肢へ ▶▶" }).click();
   await expect(page.locator(".toolbar")).toContainText("2肢目");
+});
+
+test("科目の画面からも聞き流せる（その科目の肢だけ）", async ({ page }) => {
+  await stub(page, { audioMissing: "none" });
+  await openHome(page);
+  await gotoSubject(page, "民法");
+  await page.getByRole("button", { name: "🎧 聞き流す" }).click();
+  await expect(page.locator(".toolbar")).toContainText("民法 聞き流し");
+  await page.getByRole("button", { name: "▶ 聞きはじめる" }).click();
+  await expect.poll(async () => (await played(page)).filter((x) => x.includes("/audio/tts/")).length).toBeGreaterThan(0);
+  expect((await played(page)).filter((x) => x.includes("/audio/tts/")).every((x) => x.includes("-minpo-"))).toBe(true);
 });
