@@ -1,0 +1,263 @@
+{
+ "question_id": "shiho-2017-minpo-q27",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q27-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、所有者に譲渡の意思がなく売主が権利を取得できない場合でも、他人の物の売買は有効に成立するとしている。",
+   "body": "決め手は、所有者Ａに譲渡の意思がなくても他人の物の売買が有効に成立するかどうかである。561条は「他人の権利（権利の一部が他人に属する場合におけるその権利の一部を含む。）を売買の目的としたときは、売主は、その権利を取得して買主に移転する義務を負う。」と定め、他人の権利の売買が有効であることを前提としている。判例は、他人の物の売買は、目的物の所有者が売買成立当時からその物を他に譲渡する意思がなく、売主がこれを取得し買主に移転することができないような場合であっても、有効に成立するとした。したがって、ＢＣ間の本件売買契約は有効に成立し、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "561",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の権利（権利の一部が他人に属する場合におけるその権利の一部を含む。）を売買の目的としたときは、売主は、その権利を取得して買主に移転する義務を負う。",
+     "text_sha256": "f7d19b6defb3d8a288047cb80c492f7bbbf26ee6c5eb6989829288f89b140c57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "他人の物の売買の有効性（所有者に譲渡の意思がない場合）",
+     "court": "最高裁判所第一小法廷",
+     "date": "1950-10-26",
+     "case_number": "昭和24(オ)306",
+     "holding": "他人の物の売買は、目的物の所有者が売買成立当時からその物を他に譲渡する意思がなく、売主がこれを取得し買主に移転することができないような場合であっても、有効に成立する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55966/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に561条の本文が変わった（他人の権利の売買の売主の義務は出題時点では560条に定められていた。売主が権利を取得して移転する義務を負う点で結論は同じ）"
+   ],
+   "id": "exp-shiho-2017-minpo-q27-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q27-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、権利者が他人の権利の売主を相続して履行義務を承継しても、信義則に反する特別の事情のない限り、履行を拒否できるとしている。",
+   "body": "誤りは「履行を拒むことはできない」の部分である。896条は「相続人は、相続開始の時から、被相続人の財産に属した一切の権利義務を承継する。」と定め、ＡはＢの売主としての義務（561条の、権利を取得して買主に移転する義務）を承継する。しかし判例は、他人の権利の売主をその権利者が相続し売主としての履行義務を承継した場合でも、権利者は、信義則に反すると認められるような特別の事情のないかぎり、その履行義務を拒否することができるとした。したがって、ＡはＣに対して甲土地の売主としての履行を拒むことができ、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "896",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続人は、相続開始の時から、被相続人の財産に属した一切の権利義務を承継する。",
+     "text_sha256": "26569775cea382b249232c76910772008f279f0ab8c399f2d8a8d991820a167f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "561",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "売主は、その権利を取得して買主に移転する義務を負う。",
+     "text_sha256": "f7d19b6defb3d8a288047cb80c492f7bbbf26ee6c5eb6989829288f89b140c57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "他人の権利の売主を権利者が相続した場合の履行拒絶",
+     "court": "最高裁判所大法廷",
+     "date": "1974-09-04",
+     "case_number": "昭和44(オ)23",
+     "holding": "他人の権利の売主をその権利者が相続し売主としての履行義務を承継した場合でも、権利者は、信義則に反すると認められるような特別の事情のないかぎり、右履行義務を拒否することができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54160/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。896条は出題時点（2017-05-01）から本文が変わっていない",
+    "出題後に561条の本文が変わった（判例の参照法条の560条の内容は今の561条に定められている。結論は同じ）"
+   ],
+   "id": "exp-shiho-2017-minpo-q27-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q27-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。解除による代金返還請求権は売主Ｂに対する債権で、甲土地「に関して生じた債権」には当たらないと解されているので、Ｃは所有者Ａに対して留置権を主張できない。",
+   "body": "決め手は、Ｃの代金返還請求権が295条1項の「その物に関して生じた債権」に当たるかどうかである。295条1項は「他人の物の占有者は、その物に関して生じた債権を有するときは、その債権の弁済を受けるまで、その物を留置することができる。」と定める。Ｃの代金返還請求権は、ＢＣ間の売買契約の解除によってＣが売主Ｂに対して取得する債権であり、甲土地そのものから生じた債権ではない。他人の物の売買の買主が売主に対して取得する債権に基づいて、所有者からの引渡請求に対し留置権を主張することはできないと解されている（判例あり（要確認））。したがって、ＣはＡの引渡請求に対して甲土地を留置することができず、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "295",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他人の物の占有者は、その物に関して生じた債権を有するときは、その債権の弁済を受けるまで、その物を留置することができる。",
+     "text_sha256": "5c120d320238e83f832ef9e2f8c7e848a8fd3c0499a6d5e4aabf099e22e7bdee",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "pending_cases": [
+    {
+     "about": "他人の物の売買の買主が、売主に対する代金返還請求権・損害賠償請求権を被担保債権として、所有者からの引渡請求に対し留置権を主張できないとした判例",
+     "searched": [
+      "courts.py search 留置権 他人の物の売買",
+      "courts.py search 留置権 他人 売買 代金",
+      "courts.py search 留置権 損害賠償請求権 その物に関して生じた"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。295条は出題時点（2017-05-01）から本文が変わっていない",
+    "代金返還請求権が「その物に関して生じた債権」に当たらないという点は解釈による"
+   ],
+   "id": "exp-shiho-2017-minpo-q27-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q27-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法には、他人の権利を売った売主の側から契約を解除できるとする規定がなく、562条は「引き渡された目的物が種類、品質又は数量に関して契約の内容に適合しないものであるときは、買主は、売主に対し、目的物の修補、代替物の引渡し又は不足分の引渡しによる履行の追完を請求することができる。」と買主の追完請求権を定める。561条は売主が「その権利を取得して買主に移転する義務を負う。」と定めるだけで、肢の前提の売主による解除・通知の規律は今の条文にない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "562",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "引き渡された目的物が種類、品質又は数量に関して契約の内容に適合しないものであるときは、買主は、売主に対し、目的物の修補、代替物の引渡し又は不足分の引渡しによる履行の追完を請求することができる。",
+     "text_sha256": "4596856b9aee4f26d8523bb47e98749638a06b0d016eb4267dd51c9391aaa683",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "561",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その権利を取得して買主に移転する義務を負う。",
+     "text_sha256": "f7d19b6defb3d8a288047cb80c492f7bbbf26ee6c5eb6989829288f89b140c57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に562条の本文が変わった（出題時点（2017-05-01）の562条は今とは別の内容だった。古い条文の中身は書かない）。肢の前提の規定が今の条文にないため law_changed とした"
+   ],
+   "id": "exp-shiho-2017-minpo-q27-d",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q27-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の民法では、他人の権利の売主が権利を移転できないときの買主の解除は、売主の「その権利を取得して買主に移転する義務」（561条）の不履行として、「債務の全部の履行が不能であるとき」の解除（542条1項1号）などの一般の規定によることになり、1年の期間制限を定める566条は「種類又は品質に関して契約の内容に適合しない目的物」の場合に限られる。出題時点の、他人の権利の売買についての売主の担保責任の規定（解除権とその行使の期間）は今の条文になく、今の条文で説明すると出題の趣旨と別の理由になる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "561",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その権利を取得して買主に移転する義務",
+     "text_sha256": "f7d19b6defb3d8a288047cb80c492f7bbbf26ee6c5eb6989829288f89b140c57",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "542",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の全部の履行が不能であるとき。",
+     "text_sha256": "021dce87813fcae2438db5c4ffc2afe591887076d1cccb4bc6a499a271622b73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "566",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "種類又は品質に関して契約の内容に適合しない目的物",
+     "text_sha256": "4ed0acaed9db9f251d115841a128eec8b851d66912c0d612c6eb666584dfa533",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に561条・564条の本文が変わった（e-Gov の過去の版で出題時点（2017-05-01）の本文を見て確かめた。古い条文の中身は書かない）。今の条文でも1年の期間制限はかからないが、決め手の条文が変わり理由が別になるため law_changed とした"
+   ],
+   "id": "exp-shiho-2017-minpo-q27-e",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,282 @@
+{
+ "question_id": "shiho-2017-minpo-q20",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q20-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。併存的債務引受は債権者と引受人となる者との契約によってすることができ（470条2項）、債務者の意思に反しても効力を生じる。",
+   "body": "誤りは「その効力は生じない」の部分。470条2項は「併存的債務引受は、債権者と引受人となる者との契約によってすることができる」と定め、債務者の同意や、債務者の意思に反しないことを要件としていない。併存的債務引受では債務者は債務を免れず、引受人が「債務者と連帯して」同一内容の債務を負担する（470条1項）だけなので、債務者に不利益はなく、その意思に反しても効力を生じると解されている。したがって、AC間の契約は、Bの意思に反していても効力を生じる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "470",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "併存的債務引受は、債権者と引受人となる者との契約によってすることができる",
+     "text_sha256": "8cdec78feefb56c6404e3a2f554050f635536790f732790ab0c1c3bb841c540d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "470",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者と連帯して",
+     "text_sha256": "8cdec78feefb56c6404e3a2f554050f635536790f732790ab0c1c3bb841c540d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に470条の本文が変わった（2017-05-01 時点の470条は指図債権の規定で、併存的債務引受の条文はなかった。結論は同じ）",
+    "解釈による（債務者の意思に反しても効力を生じる理由づけ）"
+   ],
+   "id": "exp-shiho-2017-minpo-q20-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q20-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の470条1項は引受人が「債務者と連帯して」債務を負担すると定め、連帯債務では今の441条本文により「連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない」ので、Bの債務の時効消滅はCに及ばず、今の条文では公式の結論（全額は請求できない）に行き着かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "470",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者と連帯して",
+     "text_sha256": "8cdec78feefb56c6404e3a2f554050f635536790f732790ab0c1c3bb841c540d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に連帯債務の時効の効力に関する規定が変わった。改正前の内容は解説に引用していない"
+   ],
+   "id": "exp-shiho-2017-minpo-q20-b",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q20-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の472条2項は債権者と引受人となる者との契約による免責的債務引受について、債務者の意思に反しないことを要件とせず、「債権者が債務者に対してその契約をした旨を通知した時に、その効力を生ずる」と定めており、肢が前提とする「債務者Ｂの意思に反しない場合」という要件と規律が異なる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権者が債務者に対してその契約をした旨を通知した時に、その効力を生ずる",
+     "text_sha256": "43b16c10ebd6f4e46a8e8af0e9feb8dcf627456777f33a5b2d70bef51fa55eff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に免責的債務引受の条文が設けられた（2017-05-01 時点の472条は指図債権の規定）。改正前の規律（判例）は解説に引用していない",
+    "今の条文でも二者間の契約で免責的債務引受ができる点で○は合うが、要件が変わっているため手順3とした"
+   ],
+   "id": "exp-shiho-2017-minpo-q20-c",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q20-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。第三者が設定した担保権を引受人の債務に移すには、その設定者の承諾を得なければならず（472条の4第1項ただし書）、移さなければ担保権は消滅する。",
+   "body": "免責的債務引受により「債務者は自己の債務を免れる」（472条1項）。債権者はBの債務の担保として設定された担保権を引受人Cの債務に移すことができるが、「引受人以外の者がこれを設定した場合には、その承諾を得なければならない」（472条の4第1項ただし書）。Dは引受人以外の者なので、Dの承諾がなければ抵当権をCの債務に移すことはできず、担保していたBの債務が消えることにより抵当権も消滅すると解されている（付従性）。なお、移転には、そのほかに「あらかじめ又は同時に引受人に対してする意思表示」も要る（472条の4第2項）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は自己の債務を免れる",
+     "text_sha256": "43b16c10ebd6f4e46a8e8af0e9feb8dcf627456777f33a5b2d70bef51fa55eff",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "引受人以外の者がこれを設定した場合には、その承諾を得なければならない",
+     "text_sha256": "7acc2c279f7f4b582c6cc074df77dbeffcdeb76235eece54104388fd9162809f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472_4",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "あらかじめ又は同時に引受人に対してする意思表示",
+     "text_sha256": "7acc2c279f7f4b582c6cc074df77dbeffcdeb76235eece54104388fd9162809f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に472条の4が設けられた（2017-05-01 時点にはなかった条。設定者の承諾がない限り担保が消滅するという結論は同じ）",
+    "解釈による（担保権が移されないときに付従性により消滅すること）"
+   ],
+   "id": "exp-shiho-2017-minpo-q20-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q20-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。引受人は売買契約の当事者ではなく解除権を持たず、債務者が解除権を有するときに、その限度で債務の履行を拒むことができるにとどまる（472条の2第2項）。",
+   "body": "誤りは「Ｃはその売買契約を解除することができる」の部分。解除権は売買契約の当事者である買主Bにあり、免責的債務引受によって代金債務を引き受けたにすぎないCは契約の当事者にならないと解されている。472条の2第2項は「債務者が債権者に対して取消権又は解除権を有するときは、引受人は、免責的債務引受がなければこれらの権利の行使によって債務者がその債務を免れることができた限度において、債権者に対して債務の履行を拒むことができる」と定め、引受人に解除そのものは認めていない。なお、肢の「隠れた瑕疵」は、今の民法では目的物が「契約の内容に適合しないもの」（562条1項）として定められ、買主の解除は564条により541条・542条によるが、仮にBに解除権があっても、Cが解除できないことに変わりはない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "472_2",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債務者が債権者に対して取消権又は解除権を有するときは、引受人は、免責的債務引受がなければこれらの権利の行使によって債務者がその債務を免れることができた限度において、債権者に対して債務の履行を拒むことができる",
+     "text_sha256": "4d957164b73a9f423fd31e4c5ec806c198e0222e44d595111850edf65e07e805",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "562",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "契約の内容に適合しないもの",
+     "text_sha256": "4596856b9aee4f26d8523bb47e98749638a06b0d016eb4267dd51c9391aaa683",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "564",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第五百四十一条及び第五百四十二条の規定による解除権の行使を妨げない",
+     "text_sha256": "9b9246eeb8b690b7b89c4b9a9a5f8b40c4e0f341d15fe1382dccd3a7c464110d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "541",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方は、契約の解除をすることができる",
+     "text_sha256": "a382a1658957144d4c987e49868819b6be4b6636386e22d7b69646163926ab07",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "542",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "直ちに契約の解除をすることができる",
+     "text_sha256": "021dce87813fcae2438db5c4ffc2afe591887076d1cccb4bc6a499a271622b73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "名前が変わった（規律と結論は同じ）：「隠れた瑕疵」は今の民法では契約不適合。引受人が解除できないという肢の論点の規律と結論は同じ",
+    "出題後に472条の2が設けられた（2017-05-01 時点にはなかった条。結論は同じ）",
+    "解釈による（引受人が売買契約の当事者にならないこと）"
+   ],
+   "id": "exp-shiho-2017-minpo-q20-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

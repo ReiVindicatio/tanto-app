@@ -1,0 +1,258 @@
+{
+ "question_id": "shiho-2017-minpo-q18",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q18-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。連帯債務者の各債務は別個独立の債務と解されており、一人について他の連帯債務者と弁済期を異にすることもできる。",
+   "body": "誤りは「弁済期を他の連帯債務者と異にすることはできない」の部分。連帯債務では、債権者は「その連帯債務者の一人に対し、又は同時に若しくは順次に全ての連帯債務者に対し、全部又は一部の履行を請求することができる」（436条）とされ、各連帯債務者は債権者に対してそれぞれ別個の債務を負うと解されている。そのため、一人の債務についてだけ「法律行為の無効又は取消しの原因があっても、他の連帯債務者の債務は、その効力を妨げられない」（437条）とされるように、債務ごとに態様が異なることも予定されている。弁済期についても、連帯債務者ごとに異なる定めをすることができると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "436",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その連帯債務者の一人に対し、又は同時に若しくは順次に全ての連帯債務者に対し、全部又は一部の履行を請求することができる",
+     "text_sha256": "ec6cbe7596a1f7fe197f0fbf8f3d1d3416aa042d6dc7f60a15fcaaeb409f0b38",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "437",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律行為の無効又は取消しの原因があっても、他の連帯債務者の債務は、その効力を妨げられない",
+     "text_sha256": "5e1c08be7b12db2810200b3cddd6783f517a620d7a6207365061054986494bc6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "解釈による（連帯債務者ごとに弁済期を異にできることは条文に直接の定めがない）",
+    "出題後に436条・437条の本文が変わった（2017-05-01 時点の433条が現行437条と同じ内容。結論は同じ）"
+   ],
+   "id": "exp-shiho-2017-minpo-q18-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q18-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。連帯債務者の一人と債権者との間に更改があると、債権は全ての連帯債務者の利益のために消滅する（438条）。",
+   "body": "438条は「連帯債務者の一人と債権者との間に更改があったときは、債権は、全ての連帯債務者の利益のために消滅する」と定める（更改の絶対的効力）。そのため、他の連帯債務者は従来の債務を免れる。更改によって新たに発生した債務は、更改をした連帯債務者と債権者との間のものであり、他の連帯債務者がこれについて責任を負うことはない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "438",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人と債権者との間に更改があったときは、債権は、全ての連帯債務者の利益のために消滅する",
+     "text_sha256": "879c74199baf00e9e31206c702f7022c0899c2c79c1954a4f23ded96454818c7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に条番号と表記が変わった（2017-05-01 時点の435条が現行438条にあたり、「すべて」が「全て」になった。結論は同じ）"
+   ],
+   "id": "exp-shiho-2017-minpo-q18-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q18-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の443条は事前・事後の通知の制度をいずれも「他の連帯債務者があることを知りながら」怠った場合に限っており、肢はA・Bが互いに他の連帯債務者がいることを知っていたかを示していないため、今の条文では肢の事実だけから公式の結論に行き着かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "443",
+     "paragraphs": [
+      "1",
+      "2"
+     ],
+     "quote": "他の連帯債務者があることを知りながら",
+     "text_sha256": "04d497af33f83c15867bb94610aca41972b2378f6f0e025c75bb1b5ff70a2687",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に443条の本文が変わり、通知の要件に他の連帯債務者の存在を知っていたことが加わった。改正前の内容は解説に引用していない",
+    "肢の結論を支える判例（先の弁済者が事後の通知を怠り、後の弁済者が事前の通知を怠った場合の扱い）は確かめていない（解説を書かないため探していない）"
+   ],
+   "id": "exp-shiho-2017-minpo-q18-c",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q18-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。承認による時効の更新（出題当時の「時効中断」）は、承認をした連帯債務者についてだけ生じ、他の連帯債務者には及ばない（441条本文）。",
+   "body": "肢の「時効中断」は、今の民法では時効の更新として定められており、「時効は、権利の承認があったときは、その時から新たにその進行を始める」（152条1項）。連帯債務では、更改・相殺・混同の場合（438条・439条1項・440条）を除き、「連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない」（441条本文）。承認はこの例外にあたらないので、連帯債務者の一人が債務を承認しても、その効力は他の連帯債務者には及ばない。ただし、債権者と他の連帯債務者が別段の意思を表示したときはそれに従う（441条ただし書）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "152",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "時効は、権利の承認があったときは、その時から新たにその進行を始める",
+     "text_sha256": "73d4963338a58831e6d78d5e89746df7e38d0b86ae408813dba435462e740c5d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "438",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人と債権者との間に更改があったときは",
+     "text_sha256": "879c74199baf00e9e31206c702f7022c0899c2c79c1954a4f23ded96454818c7",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "439",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その連帯債務者が相殺を援用したときは、債権は、全ての連帯債務者の利益のために消滅する",
+     "text_sha256": "9865589dc071ab8a21dc7f95c2b91135853d8a405ec1208d9086444f336456b1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "440",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人と債権者との間に混同があったときは、その連帯債務者は、弁済をしたものとみなす",
+     "text_sha256": "a5c02ef9bcb72b69e3f86ab73a4d17db3c913ed965caed6ccb184bf5eae8395b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "名前が変わった（規律と結論は同じ）：時効の「中断」は今の民法では時効の「更新」",
+    "出題後に441条・152条の本文が変わった（2017-05-01 時点では440条が相対的効力、147条が承認による中断を定めていた。結論は同じ）"
+   ],
+   "id": "exp-shiho-2017-minpo-q18-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q18-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。連帯債務者の一人について法律行為の無効の原因があっても、他の連帯債務者の債務は効力を妨げられない（437条）ので、Bは負担部分について債務を免れない。",
+   "body": "誤りは「Ｂは，Ａの負担部分について債務を免れる」の部分。意思表示をした時に意思能力を有しなかったときは「その法律行為は、無効とする」（3条の2）ので、Aの債務は無効となる。しかし437条は「連帯債務者の一人について法律行為の無効又は取消しの原因があっても、他の連帯債務者の債務は、その効力を妨げられない」と定める。したがって、Bの債務は全部について有効に成立しており、Aの負担部分について免れることはない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "3_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その法律行為は、無効とする",
+     "text_sha256": "5e6481a97eb6b27abac1d5301b863bd7a2a6654c54b7a3f723da52acbd0566f5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "437",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人について法律行為の無効又は取消しの原因があっても、他の連帯債務者の債務は、その効力を妨げられない",
+     "text_sha256": "5e1c08be7b12db2810200b3cddd6783f517a620d7a6207365061054986494bc6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "出題後に条番号が変わった（2017-05-01 時点の433条が現行437条と同じ本文。結論は同じ）",
+    "3条の2は出題後に設けられた条（出題当時は意思無能力による無効に条文がなかった。結論は同じ）"
+   ],
+   "id": "exp-shiho-2017-minpo-q18-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

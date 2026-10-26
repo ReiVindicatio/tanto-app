@@ -1,0 +1,277 @@
+{
+ "question_id": "shiho-2017-minpo-q14",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q14-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。民法は同一の動産に数個の質権が設定されることを前提に順位を定めており、「複数の質権を設定することはできない」とする前段が誤り。",
+   "body": "ポイントは、同一の動産に複数の質権を設定できるかである。民法355条は「同一の動産について数個の質権が設定されたときは、その質権の順位は、設定の前後による。」と定め、同一の動産に数個の質権が設定されることを予定している。したがって、前段の「同一の動産について複数の質権を設定することはできない」は誤りである。なお、後段の譲渡担保については、判例（最判平成18年7月20日）が、動産譲渡担保が同一の目的物に重複して設定されている場合の後順位譲渡担保権者について、私的実行をすることができないと判断しており、重複して設定されることを前提にしていると解されている。前段が誤りなので、肢は全体として誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "355",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同一の動産について数個の質権が設定されたときは、その質権の順位は、設定の前後による。",
+     "text_sha256": "4425431b8983968e83d90ab13b01f188423aaad39afef26a72bb2a281f939691",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "動産譲渡担保の重複設定と後順位譲渡担保権者の私的実行",
+     "court": "最高裁判所第一小法廷",
+     "date": "2006-07-20",
+     "case_number": "平成17(受)948",
+     "holding": "動産譲渡担保が同一の目的物に重複して設定されている場合、後順位譲渡担保権者は私的実行をすることができない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/33334/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。355条は出題時点から本文が変わっていない",
+    "譲渡担保の重複設定ができる点は、判例が重複設定を前提に判断していることからの理解（解釈による）"
+   ],
+   "id": "exp-shiho-2017-minpo-q14-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q14-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。質権は質権設定者に代理占有させることができず占有改定では効力を生じないが、動産譲渡担保は占有改定による引渡しで対抗要件を備えることができる。",
+   "body": "ポイントは、占有改定が質権と譲渡担保でそれぞれどう扱われるかである。民法344条は「質権の設定は、債権者にその目的物を引き渡すことによって、その効力を生ずる。」と定め、345条は「質権者は、質権設定者に、自己に代わって質物の占有をさせることができない。」と定める。占有改定（183条「代理人が自己の占有物を以後本人のために占有する意思を表示したときは、本人は、これによって占有権を取得する。」）は設定者に占有を続けさせる方法なので、質権の設定の引渡しにはならないと解されている。これに対し、譲渡担保は設定契約によって設定され、動産の物権の譲渡として178条の「その動産の引渡し」が対抗要件となり、判例（最判昭和62年11月10日）も、集合動産の譲渡担保について、占有改定の方法によって占有権を取得する旨の合意により譲渡担保権者が対抗要件を具備するとしている。したがって、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "344",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権の設定は、債権者にその目的物を引き渡すことによって、その効力を生ずる。",
+     "text_sha256": "71db390c579a0d2e610455af139d2954da111a09b5994656c51b580ac651533a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "345",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権者は、質権設定者に、自己に代わって質物の占有をさせることができない。",
+     "text_sha256": "9c52147d8c16825683937bd655389aef7a1568687ee10b7c840ecd5e9f6c3d18",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "183",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "代理人が自己の占有物を以後本人のために占有する意思を表示したときは、本人は、これによって占有権を取得する。",
+     "text_sha256": "372bf794a5af81739ebe105ea3aecf67656fa8a43c60021357ff4df7809dc762",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "178",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その動産の引渡し",
+     "text_sha256": "35e2958ba94fa00d9e8fff70a551fb50c621f3d657b1ae752bc9c041170517ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "集合動産譲渡担保の占有改定による対抗要件の具備",
+     "court": "最高裁判所第三小法廷",
+     "date": "1987-11-10",
+     "case_number": "昭和57(オ)1408",
+     "holding": "集合動産の譲渡担保において、設定者が構成部分である動産の占有を取得したときは譲渡担保権者が占有改定の方法によって占有権を取得する旨の合意があり、設定者が現に存在する動産の占有を取得した場合には、譲渡担保権者は対抗要件を具備するに至る。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55185/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。344条・345条・183条は出題時点から本文が変わっていない",
+    "占有改定が質権設定の引渡しにならない点、譲渡担保が設定契約で設定され178条の引渡しが対抗要件となる点は解釈による。判例は集合動産譲渡担保についてのもの"
+   ],
+   "id": "exp-shiho-2017-minpo-q14-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q14-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。目的債権の弁済期が被担保債権の弁済期より前に到来したときは、質権者は第三債務者に供託させることができるにとどまり、直接取り立てることはできない。",
+   "body": "ポイントは、被担保債権の弁済期前に目的債権の弁済期が来たときの質権者の権能である。民法366条1項は「質権者は、質権の目的である債権を直接に取り立てることができる。」と定めるが、同条3項は「前項の債権の弁済期が質権者の債権の弁済期前に到来したときは、質権者は、第三債務者にその弁済をすべき金額を供託させることができる。この場合において、質権は、その供託金について存在する。」と定める。被担保債権の弁済期前は、質権者は供託を求めることができるだけで、直接に取り立てることはできないと解されている。したがって、被担保債権の弁済期が到来していなくても直接に取り立てられるとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "366",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権者は、質権の目的である債権を直接に取り立てることができる。",
+     "text_sha256": "e42097ca4d399053915f9860ea27ed0404b5006f516b2ab755b2b9f137ce6580",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "366",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "前項の債権の弁済期が質権者の債権の弁済期前に到来したときは、質権者は、第三債務者にその弁済をすべき金額を供託させることができる。この場合において、質権は、その供託金について存在する。",
+     "text_sha256": "e42097ca4d399053915f9860ea27ed0404b5006f516b2ab755b2b9f137ce6580",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。366条は出題時点から本文が変わっていない",
+    "被担保債権の弁済期前は直接の取立てができないという点は、366条3項の読み方（解釈による）"
+   ],
+   "id": "exp-shiho-2017-minpo-q14-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q14-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法では363条は「削除」とされ、証券を目的とする質権の設定は、指図証券について520条の7が「第五百二十条の二から前条までの規定は、指図証券を目的とする質権の設定について準用する。」と定めるように、有価証券の規定による。肢の前提の、譲り渡すのに証書の交付を要する債権を質権の目的とする場合の規定は今の条文にない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "363",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "削除",
+     "text_sha256": "e9653dc3edcbc072d033d200b3aa56539fde84e9b7cc80287fedc9f91cbe03ad",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "520_7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第五百二十条の二から前条までの規定は、指図証券を目的とする質権の設定について準用する。",
+     "text_sha256": "562cb0d17df588416d5d3a35199604331fab2436b9590a7dc5475366473d0e00",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "egov.py --asof 2017-05-01 で、363条は出題後に本文が変わった（今は削除）ことを確かめた。改正前の内容は解説に引用していない"
+   ],
+   "id": "exp-shiho-2017-minpo-q14-d",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q14-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。判例は、譲渡担保の設定者は正当な権原なく目的物件を占有する者に対しその返還を請求することができるとしている。",
+   "body": "ポイントは、譲渡担保の設定者が不法占有者に返還請求できるかである。判例（最判昭和57年9月28日）は、譲渡担保の設定者は、正当な権原なく目的物件を占有する者に対し、その返還を請求することができるとしている。この判例は民法206条（所有権の内容）と譲渡担保を参照法条に挙げており、設定者にも目的物について返還請求ができるだけの権利が残っているという考え方によると解されている。したがって、設定者は返還を請求することができないとする肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "206",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "所有者は、法令の制限内において、自由にその所有物の使用、収益及び処分をする権利を有する。",
+     "text_sha256": "ec0097a7df1c66b005345a32594577fcca0650be0647de0fb1aaa917003a9fea",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "譲渡担保の設定者による不法占有者に対する返還請求",
+     "court": "最高裁判所第三小法廷",
+     "date": "1982-09-28",
+     "case_number": "昭和56(オ)1209",
+     "holding": "譲渡担保の設定者は、正当な権原なく目的物件を占有する者に対し、その返還を請求することができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/70430/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。肢の結論は判例による",
+    "設定者に返還請求の根拠となる権利が残るという説明は解釈による"
+   ],
+   "id": "exp-shiho-2017-minpo-q14-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

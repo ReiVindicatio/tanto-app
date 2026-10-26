@@ -1,0 +1,282 @@
+{
+ "question_id": "shiho-2017-minpo-q22",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q22-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。不動産の代物弁済では、代物弁済契約の意思表示によって所有権移転の効果が生じ（判例）、所有権の取得に対抗要件の具備は要らない。",
+   "body": "決め手は、所有権の取得に「対抗要件を具備する必要がある」とする点である。176条は「物権の設定及び移転は、当事者の意思表示のみによって、その効力を生ずる。」と定める。判例（最高裁昭和57年6月4日判決）は、不動産を目的とする代物弁済契約の意思表示がされたときは、これにより当該不動産の所有権移転の効果が生ずるとした。債務が消滅するのは482条のとおり「当該他の給付をしたとき」であるが、所有権の移転時期はこれとは別の問題である。したがって、Ｂが甲土地の所有権を取得するのに対抗要件の具備が必要であるとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "176",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "物権の設定及び移転は、当事者の意思表示のみによって、その効力を生ずる。",
+     "text_sha256": "0d4db9753f3f876f0ab1ac4018603b94373421f5140191a2316c3af8219cdcab",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "482",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該他の給付をしたとき",
+     "text_sha256": "87f60911ac0b43d2deb8f6a68d2345b014a8d5fe89acdf6c46fe2cc6e2d7ebb3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "代物弁済による不動産所有権の移転時期",
+     "court": "最高裁判所第二小法廷",
+     "date": "1982-06-04",
+     "case_number": "昭和57(オ)111",
+     "holding": "不動産を目的とする代物弁済契約の意思表示がされたときは、これにより当該不動産の所有権移転の効果が生ずる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/70442/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "出題後に482条の本文が変わった（所有権の移転時期についての結論は同じ）。判例は改正前の482条のもとでのもの。改正前の内容は解説に引用していない。"
+   ],
+   "id": "exp-shiho-2017-minpo-q22-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q22-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の482条は、代物弁済を「債務者の負担した給付に代えて他の給付をすることにより債務を消滅させる旨の契約」として定め、その契約をした場合に弁済者が「当該他の給付をしたときは」弁済と同一の効力を有するとする。この規定は出題後に本文が変わっており、代物弁済の合意の後、給付の完了前に本来の債務を弁済できるかの理由づけが、今の条文では出題時点と別のものになるため、解説を書かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "482",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者の負担した給付に代えて他の給付をすることにより債務を消滅させる旨の契約",
+     "text_sha256": "87f60911ac0b43d2deb8f6a68d2345b014a8d5fe89acdf6c46fe2cc6e2d7ebb3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "482",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その弁済者が当該他の給付をしたときは、その給付は、弁済と同一の効力を有する。",
+     "text_sha256": "87f60911ac0b43d2deb8f6a68d2345b014a8d5fe89acdf6c46fe2cc6e2d7ebb3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に482条の本文が変わった。改正前の内容は解説に引用していない。"
+   ],
+   "id": "exp-shiho-2017-minpo-q22-b",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q22-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。強迫による取消しは第三者Ｂにも対抗でき、ＡはＣとの売買の初めから甲土地の所有者でなかったことになるため、甲土地の所有権を移転する給付がされたとはいえず、本件債務は消滅しない。",
+   "body": "96条1項は「詐欺又は強迫による意思表示は、取り消すことができる。」とし、同条3項は「詐欺による意思表示の取消しは、善意でかつ過失がない第三者に対抗することができない。」と定めて、第三者の保護を詐欺の場合に限っている。121条は「取り消された行為は、初めから無効であったものとみなす。」と定めるから、ＣがＡの強迫を理由に売買契約を取り消すと、Ａは初めから甲土地の所有者でなかったことになり、Ｂも甲土地の所有権を取得できない。482条は、弁済者が「当該他の給付をしたときは、その給付は、弁済と同一の効力を有する。」と定めるが、甲土地の所有権を移転するという給付がされなかったことになる以上、本件債務は消滅しないと解されている。したがって、ＡはＢに対し本件債務の消滅を主張できず、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "詐欺又は強迫による意思表示は、取り消すことができる。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "96",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "詐欺による意思表示の取消しは、善意でかつ過失がない第三者に対抗することができない。",
+     "text_sha256": "122a617e70dbfcb2e53f13eea676f11dc10fea6dff952a6b3d5fe00b71f2e538",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "121",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取り消された行為は、初めから無効であったものとみなす。",
+     "text_sha256": "e818d517a33aa79042b48d476962e388d6714c91741aecfe62af52cbca6e1c51",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "482",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該他の給付をしたときは、その給付は、弁済と同一の効力を有する。",
+     "text_sha256": "87f60911ac0b43d2deb8f6a68d2345b014a8d5fe89acdf6c46fe2cc6e2d7ebb3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "出題後に96条・121条・482条の本文が変わった（強迫による取消しが第三者に対抗できる点、取消しの遡及効、給付がなければ債務が消滅しない点で結論は同じ）。改正前の内容は解説に引用していない。",
+    "目的物の所有権が移転しなかったことになると代物弁済による債務消滅の効果が生じないという点は解釈による。"
+   ],
+   "id": "exp-shiho-2017-minpo-q22-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q22-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。本件債務の発生原因である契約が解除されると、代物弁済は消滅させるべき債務を欠いて効力を失い、甲土地の所有権はＡに復帰すると解されている。",
+   "body": "決め手は、解除の後も「甲土地の所有権はＢに帰属する」とする点である。代物弁済は、482条のとおり「債務者の負担した給付に代えて他の給付をすることにより債務を消滅させる旨の契約」であり、消滅させるべき債務の存在を前提とする。本件債務の発生原因となった契約が解除されると、本件債務は初めから存在しなかったことになり、これを消滅させるための代物弁済も効力を失って、甲土地の所有権はＡに復帰すると解されている。545条1項本文も、解除権が行使されたときは「各当事者は、その相手方を原状に復させる義務を負う。」と定める。したがって、甲土地の所有権がＢに帰属するとする本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "482",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者の負担した給付に代えて他の給付をすることにより債務を消滅させる旨の契約",
+     "text_sha256": "87f60911ac0b43d2deb8f6a68d2345b014a8d5fe89acdf6c46fe2cc6e2d7ebb3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "545",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各当事者は、その相手方を原状に復させる義務を負う。",
+     "text_sha256": "403613b135cfeb822522f37759878cd51de512f787c46c64bc9458e9b822f3b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "出題後に482条・545条の本文が変わった（債務の発生原因の解除により代物弁済が効力を失う点で結論は同じ）。改正前の内容は解説に引用していない。",
+    "解除により債務が初めから存在しなかったことになり、代物弁済も効力を失って所有権が復帰するという点は解釈による。"
+   ],
+   "id": "exp-shiho-2017-minpo-q22-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q22-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。登記手続に必要な一切の書類の受領によって直ちに代物弁済による債務消滅の効力を生じさせる特約があれば、書類を受領した時に債務消滅の効力が生ずる（判例）。",
+   "body": "482条は、弁済者が「当該他の給付をしたときは、その給付は、弁済と同一の効力を有する。」と定め、債務が消滅する時期を他の給付をした時としている。判例（最高裁昭和43年11月19日判決）は、不動産所有権の譲渡をもって代物弁済をする場合でも、債権者が所有権移転登記手続に必要な一切の書類を債務者から受領しただけで直ちに代物弁済による債務消滅の効力を生じさせる旨の特約があるときは、債権者がその書類を受領した時に債務消滅の効力が生ずるとした。本肢はこの特約がある場合であり、ＢがＡから書類を受領した時に本件債務の消滅の効果が生じるから、本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "482",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当該他の給付をしたときは、その給付は、弁済と同一の効力を有する。",
+     "text_sha256": "87f60911ac0b43d2deb8f6a68d2345b014a8d5fe89acdf6c46fe2cc6e2d7ebb3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "代物弁済による債務消滅の時期についての特約（登記書類の受領時）",
+     "court": "最高裁判所第三小法廷",
+     "date": "1968-11-19",
+     "case_number": "昭和43(オ)822",
+     "holding": "不動産所有権の譲渡をもって代物弁済をする場合でも、債権者が所有権移転登記手続に必要な一切の書類を債務者から受領しただけで直ちに債務消滅の効力を生じさせる旨の特約があるときは、その書類を受領した時に代物弁済による債務消滅の効力が生ずる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/55114/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。",
+    "出題後に482条の本文が変わった（特約により書類の受領時に債務が消滅する点で結論は同じ）。判例は改正前の482条のもとでのもの。改正前の内容は解説に引用していない。",
+    "判例の特約の効力が今の482条のもとでも同じく認められるという点は解釈による。"
+   ],
+   "id": "exp-shiho-2017-minpo-q22-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "question_id": "shiho-2017-minpo-q06",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q06-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法は売主の責任を「引き渡された目的物が種類、品質又は数量に関して契約の内容に適合しないものであるときは」として契約不適合の責任で定め（562条）、債権の消滅時効も166条1項で「債権者が権利を行使することができることを知った時から五年間行使しないとき。」と「権利を行使することができる時から十年間行使しないとき。」の二つの起算点を置く。166条の本文は出題後に変わっており（出題時点では起算点は権利を行使することができる時の一つ）、引渡しの時から進行する一つの時効という肢の前提の規律と、今の条文の起算点の組み立ては同じではない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "562",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "引き渡された目的物が種類、品質又は数量に関して契約の内容に適合しないものであるときは",
+     "text_sha256": "4596856b9aee4f26d8523bb47e98749638a06b0d016eb4267dd51c9391aaa683",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "166",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が権利を行使することができることを知った時から五年間行使しないとき。",
+     "text_sha256": "1486101bc71d3c4203815fde63101bc9f784105f2a086ecbe1b4b91126c82bcd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "166",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "権利を行使することができる時から十年間行使しないとき。",
+     "text_sha256": "1486101bc71d3c4203815fde63101bc9f784105f2a086ecbe1b4b91126c82bcd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "起算点が変わったので名前だけの変更ではないとして law_changed にした（瑕疵担保→契約不適合の責任）。改正前の内容は条文の本文で確認していない（166条の2017-05-01時点の本文は egov.py --asof で読んだだけで引用していない）"
+   ],
+   "id": "exp-shiho-2017-minpo-q06-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q06-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法は遺留分権利者の権利を「遺留分侵害額に相当する金銭の支払を請求することができる。」とする金銭の請求として定め（1046条1項）、減殺請求によって目的物の所有権を取得するという肢の前提の制度は今の条文にない。1046条は出題時点（2017-05-01）にはなかった条である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1046",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺留分侵害額に相当する金銭の支払を請求することができる。",
+     "text_sha256": "bee2c013e82d287e432164aa7b6d4effbfc5b76b5317ea4e059ab4b01e52359d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "前提の制度（遺留分減殺請求による所有権の取得）が今の条文にないため law_changed にした。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2017-minpo-q06-b",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

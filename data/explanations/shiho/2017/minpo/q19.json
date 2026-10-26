@@ -1,0 +1,81 @@
+{
+ "question_id": "shiho-2017-minpo-q19",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q19-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の466条2項は、譲渡制限の意思表示をしたときでも「債権の譲渡は、その効力を妨げられない」と定めており、肢の前提である、譲渡禁止の特約に反する譲渡が無効となるという規律が今の条文にない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "466",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権の譲渡は、その効力を妨げられない",
+     "text_sha256": "53cc6756b6ec229cfaa95a16773ac9bf62af5b5c72736b876442ab620e04c690",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に466条の本文が変わった。改正前の内容は解説に引用していない",
+    "肢の結論を支える判例（特約に反して譲渡した債権者自身が無効を主張できるか）は確かめていない（解説を書かないため探していない）"
+   ],
+   "id": "exp-shiho-2017-minpo-q19-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q19-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "肢の前提である、債務者が「異議をとどめないで債権譲渡を承諾」したときの効果を定める制度は今の条文になく、今の468条1項は「債務者は、対抗要件具備時までに譲渡人に対して生じた事由をもって譲受人に対抗することができる」と定めるだけである。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "468",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、対抗要件具備時までに譲渡人に対して生じた事由をもって譲受人に対抗することができる",
+     "text_sha256": "128edb01a7454acf824569bca8ccd003b404dfddaf155a4d9de0a546621b1043",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に468条の本文が変わり、異議をとどめない承諾の規定がなくなった。改正前の内容は解説に引用していない",
+    "肢の結論を支える判例（異議をとどめない承諾と抵当権の復活・第三取得者）は確かめていない（解説を書かないため探していない）"
+   ],
+   "id": "exp-shiho-2017-minpo-q19-c",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

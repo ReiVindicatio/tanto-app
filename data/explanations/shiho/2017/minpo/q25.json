@@ -1,0 +1,225 @@
+{
+ "question_id": "shiho-2017-minpo-q25",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q25-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。占有改定による引渡しでも「履行の終わった部分」に当たると解されているので、贈与者は書面によらない贈与を撤回（今の民法では解除）できない。",
+   "body": "決め手は、占有改定による引渡しが「履行の終わった」に当たるかどうかである。550条は「書面によらない贈与は、各当事者が解除をすることができる。」としつつ、「ただし、履行の終わった部分については、この限りでない。」と定める。肢の「撤回」は、今の民法では「解除」（550条）として定められている。動産の贈与では引渡しがされれば履行が終わったものとされ、その引渡しは占有改定によるものでもよいと解されている（判例あり（要確認））。したがって、占有改定により引渡しがされた以上、贈与者は贈与を撤回（解除）できず、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "550",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "書面によらない贈与は、各当事者が解除をすることができる。ただし、履行の終わった部分については、この限りでない。",
+     "text_sha256": "7cb02bb2f66b160f472eaf07830a7bbc15363edd63e754fa1c56545ab2675e85",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "pending_cases": [
+    {
+     "about": "書面によらない動産の贈与で、占有改定による引渡しも「履行の終わった」に当たるとした判例",
+     "searched": [
+      "courts.py search 贈与 占有改定",
+      "courts.py search 書面によらない贈与 履行 引渡",
+      "courts.py search 贈与 履行の終わつた 引渡"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "名前が変わった（規律と結論は同じ）：出題時点（2017-05-01）の550条は「撤回」、今は「解除」。ただし書の「履行の終わった部分」は同じ",
+    "占有改定が履行に当たるという点は解釈による"
+   ],
+   "id": "exp-shiho-2017-minpo-q25-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q25-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法551条1項は「贈与者は、贈与の目的である物又は権利を、贈与の目的として特定した時の状態で引き渡し、又は移転することを約したものと推定する。」と定め、549条は「ある財産を無償で相手方に与える意思を表示し」とするだけで、贈与者が他人の物であることを「知りながら受贈者に告げなかった」かどうかで責任を分ける規定は今の条文にない。肢が前提にする、贈与者の知・不知による場合分けを今の条文で説明できない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "551",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "贈与者は、贈与の目的である物又は権利を、贈与の目的として特定した時の状態で引き渡し、又は移転することを約したものと推定する。",
+     "text_sha256": "cee803ab76b1d93723d34c8d093cd279261a9128dc7d59f487e6ec374cafc018",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "549",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "ある財産を無償で相手方に与える意思を表示し",
+     "text_sha256": "8992575dc0fa5aff60252080d85e9e6812e56263db9b2e59c1a86fc3a3ae6692",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "出題後に549条・551条の本文が変わった（出題時点（2017-05-01）の本文と今の本文で、贈与者の責任の定め方が異なる）。決め手の条文の中身が変わったため law_changed とした"
+   ],
+   "id": "exp-shiho-2017-minpo-q25-b",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q25-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。定期贈与は受贈者の死亡だけでなく、贈与者の死亡によっても効力を失う。",
+   "body": "誤りは「贈与者が死亡しても，その効力は失われない」の部分である。552条は「定期の給付を目的とする贈与は、贈与者又は受贈者の死亡によって、その効力を失う。」と定め、贈与者の死亡も受贈者の死亡と同じく効力を失わせる事由としている。したがって、贈与者が死亡すれば定期贈与は効力を失い、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "552",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "定期の給付を目的とする贈与は、贈与者又は受贈者の死亡によって、その効力を失う。",
+     "text_sha256": "11645a1dc6636f438e733c8a1889e677c8a2e786c2c20459e8e007fb034e4acc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。552条は出題時点（2017-05-01）から本文が変わっていない"
+   ],
+   "id": "exp-shiho-2017-minpo-q25-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q25-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。負担付贈与には、その性質に反しない限り、双務契約に関する規定が準用される。",
+   "body": "誤りは「負担付きのものであっても，双務契約に関する規定は準用されない」の部分である。553条は「負担付贈与については、この節に定めるもののほか、その性質に反しない限り、双務契約に関する規定を準用する。」と定める。したがって、負担付贈与には双務契約に関する規定（同時履行の抗弁など）が準用されうるので、肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "553",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "負担付贈与については、この節に定めるもののほか、その性質に反しない限り、双務契約に関する規定を準用する。",
+     "text_sha256": "10e8a7c6f1c8154f7f4afe8dae03a2a425cbb6f8959a3ca861b6588f6701402a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。553条は出題時点（2017-05-01）から本文が変わっていない"
+   ],
+   "id": "exp-shiho-2017-minpo-q25-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2017-minpo-q25-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。死因贈与には遺言の撤回に関する1022条が方式に関する部分を除いて準用されるので、書面による死因贈与でも贈与者は生前いつでも撤回できる。",
+   "body": "決め手は、死因贈与に1022条が準用されるかどうかである。554条は「贈与者の死亡によって効力を生ずる贈与については、その性質に反しない限り、遺贈に関する規定を準用する。」と定め、1022条は「遺言者は、いつでも、遺言の方式に従って、その遺言の全部又は一部を撤回することができる。」と定める。判例は、死因贈与の取消しについて1022条がその方式に関する部分を除いて準用されるとした。したがって、書面によってされた死因贈与でも、贈与者は生前いつでも撤回でき、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "554",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "贈与者の死亡によって効力を生ずる贈与については、その性質に反しない限り、遺贈に関する規定を準用する。",
+     "text_sha256": "79b73a16e22f1cb1cc9a573d09a1016fd03639b152e7d246d4fd84f0cc775872",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "1022",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "遺言者は、いつでも、遺言の方式に従って、その遺言の全部又は一部を撤回することができる。",
+     "text_sha256": "264f61d1a42c248d67faa8cb78c681e79ef133f8b68a52b024fde018401a04be",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "死因贈与の撤回と1022条の準用",
+     "court": "最高裁判所第一小法廷",
+     "date": "1972-05-25",
+     "case_number": "昭和46(オ)1166",
+     "holding": "死因贈与の取消については、民法1022条がその方式に関する部分を除いて準用される。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52030/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。554条・1022条は出題時点（2017-05-01）から本文が変わっていない"
+   ],
+   "id": "exp-shiho-2017-minpo-q25-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
