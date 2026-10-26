@@ -4,11 +4,13 @@ import { openHome } from "./helpers";
 
 // 聞き流し（T057・T058）。再生（<audio>）と端末の読み上げは作り物に差し替え、何をどの順に流したかを記録する
 
-async function stub(page: Page, opts: { audioMissing: boolean }) {
+// audioMissing：all＝作っておいた音声がひとつもない、voice1＝声1（アニメ風）だけない、none＝全部ある
+async function stub(page: Page, opts: { audioMissing: "all" | "voice1" | "none" }) {
   // 作っておいた音声の代わりに、同梱の無音を返す（<audio> が実際に読み込むので、ないと error になる）
   const silence = readFileSync(new URL("../public/sounds/silence-1.mp3", import.meta.url));
+  const missing = (url: string) => opts.audioMissing === "all" || (opts.audioMissing === "voice1" && url.includes("/gemini-leda/"));
   await page.route("**/audio/tts/**", (route) =>
-    opts.audioMissing ? route.fulfill({ status: 404 }) : route.fulfill({ status: 200, contentType: "audio/mpeg", body: silence }),
+    missing(route.request().url()) ? route.fulfill({ status: 404 }) : route.fulfill({ status: 200, contentType: "audio/mpeg", body: silence }),
   );
   await page.addInitScript((audioMissing) => {
     const w = window as any;
@@ -20,7 +22,7 @@ async function stub(page: Page, opts: { audioMissing: boolean }) {
       const src = this.src;
       w.__played.push(src.replace(location.origin, ""));
       window.clearTimeout(timers.get(this));
-      const missing = audioMissing && src.includes("/audio/tts/");
+      const missing = src.includes("/audio/tts/") && (audioMissing === "all" || (audioMissing === "voice1" && src.includes("/gemini-leda/")));
       const wait = src.includes("silence-3") ? 700 : 120;
       timers.set(this, window.setTimeout(() => this.dispatchEvent(new Event(missing ? "error" : "ended")), missing ? 10 : wait));
       return Promise.resolve();
@@ -76,8 +78,8 @@ async function start(page: Page) {
   await page.getByRole("button", { name: "▶ 聞きはじめる" }).click();
 }
 
-test("作っておいた音声で、肢 → 考える間（無音）→ 答えの順に流す。○を押したら「正解／不正解」と答えに進み、その答えだけ記録する", async ({ page }) => {
-  await stub(page, { audioMissing: false });
+test("作っておいた音声（既定は声1）で、肢 → 考える間（無音）→ 答えの順に流す。○を押したら「正解／不正解」と答えに進み、その答えだけ記録する", async ({ page }) => {
+  await stub(page, { audioMissing: "none" });
   await start(page);
   await expect(page.locator(".listen-phase")).toContainText(/読み上げ中|考える時間/);
   await page.locator(".listen-actions").getByRole("button", { name: "○", exact: true }).click();
@@ -91,8 +93,8 @@ test("作っておいた音声で、肢 → 考える間（無音）→ 答え�
 
   const p = (await played(page)).filter((x) => !x.endsWith("silence-1.mp3"));
   // 1肢目：q → （○を押した）正解／不正解 → a。2肢目：q → 無音3秒 → a
-  expect(p[0]).toMatch(/^\/audio\/tts\/ja-JP-Chirp3-HD-Achernar\/.+\.q\.mp3$/);
-  expect(p[1]).toMatch(/^\/sounds\/(seikai|fuseikai)\.mp3$/);
+  expect(p[0]).toMatch(/^\/audio\/tts\/gemini-leda\/.+\.q\.mp3$/);
+  expect(p[1]).toMatch(/^\/sounds\/gemini-leda\/(seikai|fuseikai)\.mp3$/);
   expect(p[2]).toBe(p[0].replace(".q.mp3", ".a.mp3"));
   expect(p[3]).toMatch(/\.q\.mp3$/);
   expect(p[4]).toBe("/sounds/silence-3.mp3");
@@ -103,8 +105,30 @@ test("作っておいた音声で、肢 → 考える間（無音）→ 答え�
   await expect(page.locator(".listen-summary")).toContainText("聞いた 2 肢・答えた 1 肢");
 });
 
+test("声1がない肢は声2で流す。声2を選ぶと声2だけを流す", async ({ page }) => {
+  await stub(page, { audioMissing: "voice1" });
+  await openHome(page);
+  await page.getByRole("button", { name: /聞き流す/ }).click();
+  await expect(page.getByRole("button", { name: "声1" })).toHaveAttribute("aria-pressed", "true");
+  await page.getByRole("button", { name: "▶ 聞きはじめる" }).click();
+  await expect.poll(async () => (await played(page)).some((x) => x.includes("/ja-JP-Chirp3-HD-Achernar/"))).toBe(true);
+  const p = (await played(page)).filter((x) => x.includes("/audio/tts/"));
+  expect(p[0]).toMatch(/\/gemini-leda\/.+\.q\.mp3$/);
+  expect(p[1]).toBe(p[0].replace("/gemini-leda/", "/ja-JP-Chirp3-HD-Achernar/"));
+  expect(await spoken(page)).toEqual([]);
+
+  await page.getByRole("button", { name: "止める" }).click();
+  await page.getByRole("button", { name: "戻る" }).click();
+  await page.getByRole("button", { name: /聞き流す/ }).click();
+  await page.getByRole("button", { name: "声2" }).click();
+  await page.evaluate(() => ((window as any).__played = []));
+  await page.getByRole("button", { name: "▶ 聞きはじめる" }).click();
+  await expect.poll(async () => (await played(page)).filter((x) => x.includes("/audio/tts/")).length).toBeGreaterThan(0);
+  expect((await played(page)).filter((x) => x.includes("/audio/tts/")).every((x) => x.includes("/ja-JP-Chirp3-HD-Achernar/"))).toBe(true);
+});
+
 test("音声がない肢は、端末の読み上げで肢と答えを読む", async ({ page }) => {
-  await stub(page, { audioMissing: true });
+  await stub(page, { audioMissing: "all" });
   await start(page);
   const first = await page.locator(".listen-card .statement").innerText();
   await expect.poll(async () => (await spoken(page))[0] ?? "").toContain(first.slice(0, 10));
@@ -112,7 +136,7 @@ test("音声がない肢は、端末の読み上げで肢と答えを読む", as
 });
 
 test("一時停止と再開、次の肢へ", async ({ page }) => {
-  await stub(page, { audioMissing: false });
+  await stub(page, { audioMissing: "none" });
   await start(page);
   await page.getByRole("button", { name: "❚❚ 一時停止" }).click();
   await expect(page.locator(".listen-phase")).toHaveText("一時停止中");

@@ -1,5 +1,6 @@
 // 聞き流しモード（T057・T058）：肢を読み上げ、考える間を置いて、○×と解説の結論を読む。止めるまで続ける。
-// 声は手元で作っておいた音声（Google Cloud Text-to-Speech）。音声がない肢は端末の読み上げで読む。
+// 声は手元で作っておいた音声（声1：Gemini の音声合成・T061、声2：Google Cloud Text-to-Speech・T058）。
+// 声1がない肢は声2で、どちらもない肢は端末の読み上げで読む。
 // ○×を言う前に画面の○×を押したときだけ、普段の回答と同じに記録する（押さなければ記録しない）
 import { useEffect, useRef, useState } from "react";
 import type { DataSet, Statement } from "./types";
@@ -7,7 +8,7 @@ import type { More, OriginOf } from "./play";
 import { merge } from "./data";
 import { cardIdOf, recordAnswer } from "./learning";
 import {
-  audioUrl,
+  audioUrls,
   canSpeak,
   clipUrl,
   either,
@@ -21,8 +22,14 @@ import {
   setListenPrefs,
   speak,
   wait,
+  VOICE_NOS,
   type ListenPrefs,
 } from "./listen";
+
+const CREDIT = {
+  1: "Google の Gemini の音声合成（作れなかった一部の肢は Google Cloud Text-to-Speech）",
+  2: "Google Cloud Text-to-Speech",
+} as const;
 
 type Phase = "ready" | "reading" | "thinking" | "answer" | "paused" | "done";
 /** 残りがこれだけになったら次を読み足す */
@@ -122,17 +129,27 @@ export default function ListenPlayer({
     return loading.current;
   }
 
-  /** 作っておいた音声で読む。音声がなければ端末の読み上げで text を読む */
+  /** 作っておいた音声で読む（声1なら 声1 → 声2 の順に試す）。音声がなければ端末の読み上げで text を読む */
   async function say(cardId: string, part: "q" | "a", text: string, signal: AbortSignal) {
     const rate = prefsRef.current.rate;
-    if (await play(el(), audioUrl(cardId, part), rate, signal)) return;
-    if (!signal.aborted && canSpeak()) await speak(text, rate, voice.current, signal);
+    for (const url of audioUrls(cardId, part, prefsRef.current.voice)) {
+      if (await play(el(), url, rate, signal)) return;
+      if (signal.aborted) return;
+    }
+    if (canSpeak()) await speak(text, rate, voice.current, signal);
+  }
+
+  /** 押した答えの「正解。」「不正解。」を、選んだ声で（なければ声2で）流す */
+  async function sayClip(ok: boolean, signal: AbortSignal) {
+    const name = ok ? "seikai" : "fuseikai";
+    if (await play(el(), clipUrl(name, prefsRef.current.voice), prefsRef.current.rate, signal)) return;
+    if (!signal.aborted && prefsRef.current.voice !== 2) await play(el(), clipUrl(name, 2), prefsRef.current.rate, signal);
   }
 
   /** 次の肢の音声を先に取っておく（切り替わりの待ちを減らす。失敗してもかまわない） */
   function prefetch(s: Statement | undefined) {
     if (!s) return;
-    for (const part of ["q", "a"] as const) void fetch(audioUrl(cardIdOf(s.id), part)).catch(() => {});
+    for (const part of ["q", "a"] as const) void fetch(audioUrls(cardIdOf(s.id), part, prefsRef.current.voice)[0]).catch(() => {});
   }
 
   /** ロック画面・通知の表示と操作（Media Session） */
@@ -191,7 +208,7 @@ export default function ListenPlayer({
         if (card.signal.aborted) return;
       }
       setPhase("answer");
-      if (answeredRef.current !== null) await play(el(), clipUrl(answeredRef.current ? "seikai" : "fuseikai"), prefsRef.current.rate, card.signal);
+      if (answeredRef.current !== null) await sayClip(answeredRef.current, card.signal);
       if (card.signal.aborted) return;
       await say(cid, "a", answerText(s, false), card.signal);
       if (card.signal.aborted) return;
@@ -291,8 +308,8 @@ export default function ListenPlayer({
             ○×を言う前に画面の○×を押すと、その答えを記録します。押さなければ記録しません。
           </p>
           <p className="muted small">
-            音声は Google Cloud Text-to-Speech で作ったもの（AI 音声）で、法律用語を読み間違えることがあります。
-            ロック画面から一時停止・次の肢へができます。画面を消すと止まる端末もあります（ホーム画面に追加したアプリでは特に）。
+            音声は {CREDIT[prefs.voice]} で作ったもの（AI 音声）で、法律用語を読み間違えることがあります。
+            ロック画面から一時停止・次の肢へができます。画面を消しても続けて聞くなら、ブラウザ（Safari・Chrome）で開くのが確実です。
           </p>
           {noVoice && <p className="muted small">音声のない肢は端末の読み上げで読みますが、この端末には日本語の声が見つかりません。</p>}
         </div>
@@ -305,7 +322,7 @@ export default function ListenPlayer({
               </div>
             )}
             <p className="statement">{s.text}</p>
-            <p className="muted small">音声：Google Cloud Text-to-Speech で作成（AI 音声）</p>
+            <p className="muted small">音声：{CREDIT[prefs.voice]} で作成（AI 音声）</p>
             <div className={`listen-phase ${phase}`} aria-live="polite">
               {phase === "reading" && "読み上げ中…"}
               {phase === "thinking" && `考える時間　あと ${left} 秒`}
@@ -339,6 +356,14 @@ export default function ListenPlayer({
       )}
 
       <div className="listen-settings">
+        <div className="muted small">声</div>
+        <div className="segmented" role="group" aria-label="声">
+          {VOICE_NOS.map((v) => (
+            <button key={v} className={prefs.voice === v ? "chosen" : ""} aria-pressed={prefs.voice === v} onClick={() => setPrefs({ ...prefs, voice: v })}>
+              声{v}
+            </button>
+          ))}
+        </div>
         <div className="muted small">読む速さ</div>
         <div className="segmented" role="group" aria-label="読む速さ">
           {RATES.map((r) => (

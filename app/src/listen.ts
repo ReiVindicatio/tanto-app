@@ -45,9 +45,12 @@ export function chunks(text: string, max = 80): string[] {
   return out;
 }
 
-export type ListenPrefs = { rate: number; pause: number };
+/** 声：1＝Gemini の音声合成（T061。アニメ風。既定）、2＝Chirp 3 HD（T058） */
+export type VoiceNo = 1 | 2;
+export type ListenPrefs = { rate: number; pause: number; voice: VoiceNo };
 export const RATES = [0.8, 1, 1.2, 1.5] as const;
 export const PAUSES = [3, 5, 8] as const;
+export const VOICE_NOS = [1, 2] as const;
 const KEY = "tanto.listen.v1";
 
 export function getListenPrefs(): ListenPrefs {
@@ -56,9 +59,10 @@ export function getListenPrefs(): ListenPrefs {
     return {
       rate: RATES.includes(p.rate as (typeof RATES)[number]) ? (p.rate as number) : 1,
       pause: PAUSES.includes(p.pause as (typeof PAUSES)[number]) ? (p.pause as number) : 5,
+      voice: p.voice === 2 ? 2 : 1,
     };
   } catch {
-    return { rate: 1, pause: 5 };
+    return { rate: 1, pause: 5, voice: 1 };
   }
 }
 
@@ -163,12 +167,17 @@ export async function keepScreenOn(): Promise<() => void> {
 
 // ---- 作っておいた音声の再生（T058） ----
 
-/** 音声を作った声（pipeline/tts.py の VOICE と同じ） */
-export const VOICE = "ja-JP-Chirp3-HD-Achernar";
+/** 音声を作った声（pipeline/tts.py の VOICE・GEMINI_VOICE と同じ） */
+export const VOICES: Record<VoiceNo, string> = { 1: "gemini-leda", 2: "ja-JP-Chirp3-HD-Achernar" };
 const BASE = import.meta.env.BASE_URL;
 
-export function audioUrl(cardId: string, part: "q" | "a"): string {
-  return `${BASE}audio/tts/${VOICE}/${cardId}.${part}.mp3`;
+/**
+ * 流す音声の候補を、先に試す順に返す。声1は、作れなかった肢（安全フィルターで止められた・同じ文を繰り返した）があるので、
+ * なければ声2で流す
+ */
+export function audioUrls(cardId: string, part: "q" | "a", voice: VoiceNo): string[] {
+  const url = (v: VoiceNo) => `${BASE}audio/tts/${VOICES[v]}/${cardId}.${part}.mp3`;
+  return voice === 1 ? [url(1), url(2)] : [url(2)];
 }
 
 /** 考える間などの無音（1・3・5・8秒。アプリに同梱）。タイマーではなく再生の終わりで次へ進むため（画面を消してもタイマーに頼らない） */
@@ -176,8 +185,9 @@ export function silenceUrl(seconds: number): string {
   return `${BASE}sounds/silence-${seconds}.mp3`;
 }
 
-export function clipUrl(name: "seikai" | "fuseikai"): string {
-  return `${BASE}sounds/${name}.mp3`;
+/** 押した答えの「正解。」「不正解。」（声ごと。声2は T058 で同梱した最初のもの） */
+export function clipUrl(name: "seikai" | "fuseikai", voice: VoiceNo): string {
+  return voice === 1 ? `${BASE}sounds/${VOICES[1]}/${name}.mp3` : `${BASE}sounds/${name}.mp3`;
 }
 
 /**

@@ -2,12 +2,14 @@
 
   python3 pipeline/tts.py            # 足りない・文が変わった音声だけ作る（キーは GOOGLE_TTS_API_KEY か .secrets/google-tts-key）
   python3 pipeline/tts.py --dry-run  # 作る数と文字数だけ数える
+  python3 pipeline/tts.py --voice gemini-leda --workers 4   # 声2（T061：Gemini の音声合成。キーは .secrets/google-vertex-key）
 
 - 1枚につき2本：<カード ID>.q.mp3（肢）と <カード ID>.a.mp3（「正解は、まる（ばつ）。」＋解説の結論）。
   アプリは q → 考える間 → a の順に流し、間に○×を押されたら a に進む
 - 対象はアプリの聞き流しと同じ：名寄せの代表の肢カードで、○×があり、肢カードから外していない、前提文も小問も要らないもの
 - 読む文はアプリと同じに作る（解答欄の番号を除き、読み間違えやすい語を読み替える。tts_sample.py と共有）
 - audio/tts/<声>/manifest.json に、ファイルごとの読んだ文の sha256 を残す。文が同じなら作り直さない
+  （声2は読み方の指示も含めて sha256 を取る。指示を変えたら全部作り直しになる）
 - 出力は audio/（git では管理しない）。置き場所（R2 など）に上げるのは別の手順
 """
 from __future__ import annotations
@@ -15,6 +17,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import subprocess
 import sys
 import threading
 import time
@@ -23,11 +26,43 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 from common import ROOT
+import tts_gemini
 from tts_sample import DATA, speech_text, synth
 
 VOICE = "ja-JP-Chirp3-HD-Achernar"  # 2026-10-25 に見本を聞いて決めた（Chirp 3 HD・女性）
-OUT = ROOT / "audio" / "tts" / VOICE
-WORKERS = 12  # 1本ずつの応答待ちが長い（約2.6秒）ので並べる。混みすぎたら 429 が返り、待ってやり直す
+GEMINI_VOICE = "gemini-leda"  # 声2（T061）。2026-10-26 に見本を聞いて決めた（Gemini の Leda ＋舌足らずの指示）
+VOICES = [VOICE, GEMINI_VOICE]
+OUT = ROOT / "audio" / "tts" / VOICE  # 声ごとの置き場所は out_dir(声)
+WORKERS = 12  # 1本ずつの応答待ちが長い（約2.6秒）ので並べる。混みすぎたら 429 が返り、待ってやり直す（声2は4が目安）
+
+
+def out_dir(voice: str) -> Path:
+    return ROOT / "audio" / "tts" / voice
+
+
+def prompt_of(voice: str) -> str:
+    return tts_gemini.LEDA_PROMPT if voice == GEMINI_VOICE else ""
+
+
+MAX_RATIO = 1.8  # 声2が今の声の何倍より長ければ作り直すか（同じ文を2回読む失敗がある：2026-10-26 の100肢で2本。ふだんは約1.2倍）
+
+
+def duration(p: Path) -> float:
+    r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(p)], capture_output=True, text=True)
+    return float(r.stdout.strip() or 0)
+
+
+def synth_voice(text: str, voice: str, path: Path) -> None:
+    if voice != GEMINI_VOICE:
+        synth(text, voice, path)
+        return
+    ref = out_dir(VOICE) / path.name
+    for _ in range(3):
+        tts_gemini.synth(text, tts_gemini.LEDA_VOICE, tts_gemini.LEDA_PROMPT, path)
+        if not ref.exists() or duration(path) <= duration(ref) * MAX_RATIO:
+            return
+    path.unlink()  # 3回とも長すぎる：作らない（アプリは今の声で流す）
+    raise RuntimeError(f"3回とも今の声の{MAX_RATIO}倍より長い（同じ文を繰り返して読んだらしい）")
 
 
 def listen_cards() -> list[dict]:
@@ -60,22 +95,24 @@ def main() -> None:
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--limit", type=int, default=0, help="作る本数の上限（試しに少しだけ作るとき）")
     ap.add_argument("--workers", type=int, default=WORKERS)
+    ap.add_argument("--voice", choices=VOICES, default=VOICE)
     a = ap.parse_args()
 
-    OUT.mkdir(parents=True, exist_ok=True)
-    mpath = OUT / "manifest.json"
+    voice, out, prompt = a.voice, out_dir(a.voice), prompt_of(a.voice)
+    out.mkdir(parents=True, exist_ok=True)
+    mpath = out / "manifest.json"
     manifest: dict[str, str] = json.loads(mpath.read_text(encoding="utf-8")) if mpath.exists() else {}
     jobs = []
     for c in listen_cards():
         for part in ("q", "a"):
             name = f"{c['id']}.{part}.mp3"
-            if manifest.get(name) == sha(c[part]) and (OUT / name).exists():
+            if manifest.get(name) == sha(prompt + c[part]) and (out / name).exists():
                 continue
             jobs.append((name, c[part]))
     if a.limit:
         jobs = jobs[:a.limit]
     chars = sum(len(t) for _, t in jobs)
-    print(f"作る音声 {len(jobs)}本・{chars:,}字（声 {VOICE}）")
+    print(f"作る音声 {len(jobs)}本・{chars:,}字（声 {voice}）")
     if a.dry_run or not jobs:
         return
 
@@ -86,7 +123,7 @@ def main() -> None:
     def work(name: str, text: str) -> str:
         for attempt in range(6):
             try:
-                synth(text, VOICE, OUT / name)
+                synth_voice(text, voice, out / name)
                 return name
             except urllib.error.HTTPError as e:
                 if e.code in (429, 500, 502, 503, 504) and attempt < 5:
@@ -109,7 +146,7 @@ def main() -> None:
                 failed.append(f"{futures[f]}：{e}")
                 continue
             with lock:
-                manifest[name] = sha(texts[name])
+                manifest[name] = sha(prompt + texts[name])
                 done += 1
                 if done % 50 == 0 or done == len(jobs):
                     save()
@@ -118,7 +155,9 @@ def main() -> None:
     save()
     for x in failed:
         print(f"❌ {x}")
-    print(f"{'⚠️' if failed else '✅'} {OUT.relative_to(ROOT)}：{len(manifest)}本（失敗 {len(failed)}本）")
+    print(f"{'⚠️' if failed else '✅'} {out.relative_to(ROOT)}：{len(manifest)}本（失敗 {len(failed)}本）")
+    if tts_gemini.usage:
+        print(f"  使ったトークン {tts_gemini.usage}（{chars:,}字ぶん）")
 
 
 if __name__ == "__main__":
