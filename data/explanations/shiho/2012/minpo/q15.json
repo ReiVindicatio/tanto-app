@@ -1,0 +1,293 @@
+{
+ "question_id": "shiho-2012-minpo-q15",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q15-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。肢は371条の文言どおりである。",
+   "body": "371条は「抵当権は、その担保する債権について不履行があったときは、その後に生じた抵当不動産の果実に及ぶ。」と定めている。肢はこの条文と同じ内容である。抵当権は設定者に使用収益を任せる担保なので、果実には原則として及ばず、債務不履行の後に生じた果実にだけ効力が及ぶ仕組みと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "371",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権は、その担保する債権について不履行があったときは、その後に生じた抵当不動産の果実に及ぶ。",
+     "text_sha256": "5119fff32fdcc316206934d96ae0d191ccdeb8e014a7b84835a8961593c46954",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない",
+    "果実に原則として及ばない趣旨の説明は解釈による"
+   ],
+   "id": "exp-shiho-2012-minpo-q15-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q15-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。借地上の建物に設定された抵当権の効力は、原則として敷地の借地権（賃借権）に及ぶ（昭和40年判決）。",
+   "body": "370条は抵当権が「抵当不動産」に「付加して一体となっている物に及ぶ。」と定め、87条2項は「従物は、主物の処分に従う。」と定める。判例は、これらを参照条文として、土地賃借人がその土地上に所有する建物に抵当権を設定した場合には、原則として抵当権の効力は土地の賃借権に及び、建物の競落人と賃借人との関係では、建物の所有権とともに土地の賃借権も競落人に移転するとした。借地権は建物の敷地利用権として建物に従たる権利であるとの理解によるものと解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "370",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "付加して一体となっている物に及ぶ。",
+     "text_sha256": "854276796c8c6353138b8e691ef004f5dc446b6dadda1af47cd01b822dbaddac",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "87",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "従物は、主物の処分に従う。",
+     "text_sha256": "28daf18cc57d735b071d99c10349ca64b3f45613eb4ba27750c56baaef902963",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "借地上の建物の抵当権の効力と敷地の賃借権",
+     "court": "最高裁判所第三小法廷",
+     "date": "1965-05-04",
+     "case_number": "昭和39(オ)1033",
+     "holding": "土地賃借人が該土地上に所有する建物について抵当権を設定した場合には、原則として、抵当権の効力は当該土地の賃借権に及び、建物の競落人と賃借人との関係においては、建物の所有権とともに土地の賃借権も競落人に移転する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56284/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない",
+    "判決の事案は土地の賃借権。借地権を建物に従たる権利とみる説明は解釈による"
+   ],
+   "id": "exp-shiho-2012-minpo-q15-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q15-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。主たる債務者だけでなく保証人も抵当権消滅請求をすることができない（380条）。",
+   "body": "誤りは、連帯保証人は「抵当権消滅請求を行うことができる」とする部分。379条は「抵当不動産の第三取得者は、第三百八十三条の定めるところにより、抵当権消滅請求をすることができる。」と定める一方、380条は「主たる債務者、保証人及びこれらの者の承継人は、抵当権消滅請求をすることができない。」と定めている。連帯保証人も保証人であるから、たとえ抵当不動産を取得していても抵当権消滅請求はできない。債務の全額を弁済すべき立場の者が、代価等の提供で抵当権を消すことを認めるべきでないという趣旨と解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "379",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当不動産の第三取得者は、第三百八十三条の定めるところにより、抵当権消滅請求をすることができる。",
+     "text_sha256": "797059bccb3e4ef311480cb3af01b57b8faf5cacb525898604a32f570d208842",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "380",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "主たる債務者、保証人及びこれらの者の承継人は、抵当権消滅請求をすることができない。",
+     "text_sha256": "4806ba36d71ac3ebea891fa469185ae0042c82b1b4cd778b74cc03bc01f12c16",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない",
+    "連帯保証人が380条の「保証人」に含まれる点、規定の趣旨の説明は解釈による"
+   ],
+   "id": "exp-shiho-2012-minpo-q15-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q15-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。明渡しの猶予は使用の対価を払わなくてよいという制度ではなく、対価の支払の催告に応じなければ猶予は受けられない（395条2項）。また猶予を受けるのは賃貸借により使用収益をする者に限られる（395条1項）。",
+   "body": "誤りは「使用の対価を支払うことなく」の部分。395条1項は「抵当権者に対抗することができない賃貸借により抵当権の目的である建物の使用又は収益をする者」で「競売手続の開始前から使用又は収益をする者」は、買受人の買受けの時から「六箇月を経過するまでは、その建物を買受人に引き渡すことを要しない。」と定める。しかし同条2項は、買受けの時より後に「建物の使用をしたことの対価について」、買受人が相当の期間を定めて「その一箇月分以上の支払の催告をし、その相当の期間内に履行がない場合には、適用しない。」と定めており、猶予期間中も使用の対価は支払うべきものとされている。さらに、1項が猶予の対象を賃貸借により使用収益をする者に限っているので、引渡しを受けて占有しているだけの者が当然に猶予を受けるわけでもない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "395",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権者に対抗することができない賃貸借により抵当権の目的である建物の使用又は収益をする者",
+     "text_sha256": "19643bb142b35c6b81d2e0cf83e25d178174302361f136cae854f3e3ee6308fc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "395",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "競売手続の開始前から使用又は収益をする者",
+     "text_sha256": "19643bb142b35c6b81d2e0cf83e25d178174302361f136cae854f3e3ee6308fc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "395",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "六箇月を経過するまでは、その建物を買受人に引き渡すことを要しない。",
+     "text_sha256": "19643bb142b35c6b81d2e0cf83e25d178174302361f136cae854f3e3ee6308fc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "395",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "建物の使用をしたことの対価について",
+     "text_sha256": "19643bb142b35c6b81d2e0cf83e25d178174302361f136cae854f3e3ee6308fc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "395",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "その一箇月分以上の支払の催告をし、その相当の期間内に履行がない場合には、適用しない。",
+     "text_sha256": "19643bb142b35c6b81d2e0cf83e25d178174302361f136cae854f3e3ee6308fc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない",
+    "猶予期間中も対価を支払うべきとする点は395条2項の読み方（解釈による）"
+   ],
+   "id": "exp-shiho-2012-minpo-q15-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q15-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。抵当権の設定後に抵当地に建物が築造されたときは、築造したのが第三者でも、抵当権者は土地とともに建物を競売できる（389条1項）。",
+   "body": "389条1項は「抵当権の設定後に抵当地に建物が築造されたときは、抵当権者は、土地とともにその建物を競売することができる。」と定め、建物を築造した者を設定者に限っていない。したがって、第三者が築造した建物でも一括して競売できる。ただし「その優先権は、土地の代価についてのみ行使することができる。」（同項ただし書）。また2項により、建物の所有者が抵当地の占有について抵当権者に対抗できる権利を有する場合は一括競売できないが、肢にはそのような事情は示されていない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "389",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "抵当権の設定後に抵当地に建物が築造されたときは、抵当権者は、土地とともにその建物を競売することができる。",
+     "text_sha256": "1fe66f167c9281bcd20b936374cf3c4c6159d3ad4e0dfdd5900adb8c4ec85d01",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "389",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その優先権は、土地の代価についてのみ行使することができる。",
+     "text_sha256": "1fe66f167c9281bcd20b936374cf3c4c6159d3ad4e0dfdd5900adb8c4ec85d01",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "389",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の規定は、その建物の所有者が抵当地を占有するについて抵当権者に対抗することができる権利を有する場合には、適用しない。",
+     "text_sha256": "1fe66f167c9281bcd20b936374cf3c4c6159d3ad4e0dfdd5900adb8c4ec85d01",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q15-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,314 @@
+{
+ "question_id": "shiho-2012-minpo-q22",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q22-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。供託は「債務の履行地の供託所」にしなければならず（495条1項）、賃料の履行地は原則として債権者である賃貸人の住所なので、賃借人の住所地の供託所には供託できない。",
+   "body": "誤りは「賃借人の住所地の供託所」でも供託できるとする部分。賃貸人が受領を拒んでいるときは、494条1項により「弁済者は、次に掲げる場合には、債権者のために弁済の目的物を供託することができる。」（1号「弁済の提供をした場合において、債権者がその受領を拒んだとき。」）。ただし、供託の場所について495条1項は「前条の規定による供託は、債務の履行地の供託所にしなければならない。」と定める。賃料の支払のような金銭債務の弁済の場所は、484条1項により、別段の意思表示がない限り「その他の弁済は債権者の現在の住所において」すべきものとされるので、履行地は賃貸人の住所地である。したがって、賃借人の住所地の供託所に供託することはできない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "494",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁済者は、次に掲げる場合には、債権者のために弁済の目的物を供託することができる。",
+     "text_sha256": "da95989997d46bfa07b58fbed6485436c28ce925aaf34447f9db46244397f35a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "494",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁済の提供をした場合において、債権者がその受領を拒んだとき。",
+     "text_sha256": "da95989997d46bfa07b58fbed6485436c28ce925aaf34447f9db46244397f35a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "495",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条の規定による供託は、債務の履行地の供託所にしなければならない。",
+     "text_sha256": "1f52312db32d0c547efd8ccf1839fc647b24a450020b0020bf00eab4236f815a",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "484",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その他の弁済は債権者の現在の住所において",
+     "text_sha256": "f5349d95a4743c7bd0cd6b3bf1eb4e70f8c43b7209930f3d3ced5ab11e6eb2bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q22-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q22-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。更改なら契約の時に旧債務が消滅するが、不動産による代物弁済では、債務消滅の効力は原則として所有権移転登記手続の完了によって生じる（最判昭和40年4月30日）。",
+   "body": "誤りは「代物弁済又は更改のいずれと解しても，合意成立の時点で旧債務は消滅する」の部分。更改については、513条が「当事者が従前の債務に代えて、新たな債務であって次に掲げるものを発生させる契約をしたときは、従前の債務は、更改によって消滅する。」と定め、契約の時に旧債務が消滅する。これに対し代物弁済は、482条により、代物弁済の契約をした場合において「その弁済者が当該他の給付をしたときは、その給付は、弁済と同一の効力を有する。」とされ、合意だけでは債務は消えない。判例も、不動産所有権の譲渡による代物弁済の債務消滅の効力は、原則として所有権移転登記手続の完了によって生じるとしている（最判昭和40年4月30日）。なお、代物弁済の目的不動産の所有権の移転そのものは、代物弁済契約の意思表示によって生じるとした判例がある（最判昭和57年6月4日）が、これは所有権移転の時期の話で、債務消滅の時期とは別である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "513",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者が従前の債務に代えて、新たな債務であって次に掲げるものを発生させる契約をしたときは、従前の債務は、更改によって消滅する。",
+     "text_sha256": "75b267811ffb4dd13c04891df2eee629151da75178778fa040604c1388c5271c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "482",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その弁済者が当該他の給付をしたときは、その給付は、弁済と同一の効力を有する。",
+     "text_sha256": "87f60911ac0b43d2deb8f6a68d2345b014a8d5fe89acdf6c46fe2cc6e2d7ebb3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "不動産による代物弁済と債務消滅の時期（登記完了時）",
+     "court": "最高裁判所第二小法廷",
+     "date": "1965-04-30",
+     "case_number": "昭和39(オ)665",
+     "holding": "不動産所有権の譲渡をもってする代物弁済の債務消滅の効力は、原則として、所有権移転の意思表示だけでは足りず、所有権移転登記手続の完了によって生ずる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53143/detail2/index.html"
+     ]
+    },
+    {
+     "name": "代物弁済による不動産所有権の移転時期",
+     "court": "最高裁判所第二小法廷",
+     "date": "1982-06-04",
+     "case_number": "昭和57(オ)111",
+     "holding": "不動産を目的とする代物弁済契約の意思表示がされたときは、これにより当該不動産の所有権移転の効果が生ずる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/70442/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない",
+    "判例は改正前の482条のもとでのもの。今の482条は代物弁済を契約として定めたうえで、給付をしたときに弁済と同一の効力を認めており、合意だけでは債務が消滅しない点で結論は同じ"
+   ],
+   "id": "exp-shiho-2012-minpo-q22-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q22-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。相続によりAのBに対する債権は混同で消滅し（520条）、被担保債権を失ったAの抵当権も消滅する。",
+   "body": "決め手は、所有権と抵当権の混同（179条1項）ではなく、被担保債権そのものの混同（520条）である点。AはBを単独で相続し、896条により「被相続人の財産に属した一切の権利義務を承継する」ので、AのBに対する債権の債務者もAとなる。520条は「債権及び債務が同一人に帰属したときは、その債権は、消滅する。」と定め、ただし書の「その債権が第三者の権利の目的であるとき」にも当たらないので、Aの債権は消滅する。抵当権は被担保債権が消滅すれば付従性によって消滅すると解されている。179条1項ただし書は「その物又は当該他の物権が第三者の権利の目的であるときは、この限りでない。」とし、後順位抵当権者Cがいれば所有権と抵当権の混同だけでは抵当権は消えないが、本肢では被担保債権が消滅する以上、Aの抵当権は存続しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "896",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被相続人の財産に属した一切の権利義務を承継する",
+     "text_sha256": "26569775cea382b249232c76910772008f279f0ab8c399f2d8a8d991820a167f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "520",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権及び債務が同一人に帰属したときは、その債権は、消滅する。",
+     "text_sha256": "a2e410b520170a5739ab46af6604b623a55107e4f2dec2ce55ae43e8fefce1c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "520",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その債権が第三者の権利の目的であるとき",
+     "text_sha256": "a2e410b520170a5739ab46af6604b623a55107e4f2dec2ce55ae43e8fefce1c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その物又は当該他の物権が第三者の権利の目的であるときは、この限りでない。",
+     "text_sha256": "0222497d61a192fd618b225a5ea9c051766d7c0b9da1f448681d24e57d2fc848",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない",
+    "被担保債権の消滅により抵当権が付従性で消滅するという点は解釈による"
+   ],
+   "id": "exp-shiho-2012-minpo-q22-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q22-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。全部を消滅させるのに足りない給付は、順次に費用、利息及び元本に充当する（489条1項）。",
+   "body": "489条1項は「債務者が一個又は数個の債務について元本のほか利息及び費用を支払うべき場合」において「弁済をする者がその債務の全部を消滅させるのに足りない給付をしたときは、これを順次に費用、利息及び元本に充当しなければならない。」と定めており、肢はこの内容どおりである。なお、今の条文は、数個の債務を負担する場合について「同一の債権者に対して同種の給付を目的とする数個の債務を負担するときに限る。」との括弧書きを置いている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "489",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者が一個又は数個の債務について元本のほか利息及び費用を支払うべき場合",
+     "text_sha256": "539b3ed0f13f3072a315ebb00d339981665c4a1fe067afcdd1f5d9b9654cb74d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "489",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁済をする者がその債務の全部を消滅させるのに足りない給付をしたときは、これを順次に費用、利息及び元本に充当しなければならない。",
+     "text_sha256": "539b3ed0f13f3072a315ebb00d339981665c4a1fe067afcdd1f5d9b9654cb74d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "489",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "同一の債権者に対して同種の給付を目的とする数個の債務を負担するときに限る。",
+     "text_sha256": "539b3ed0f13f3072a315ebb00d339981665c4a1fe067afcdd1f5d9b9654cb74d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q22-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q22-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。免除は債権者が債務を免除する意思を表示すれば効果を生じ、債務者の同意は要らない（519条）。",
+   "body": "誤りは「債務者の同意がなければ，免除の効果は発生しない」の部分。519条は「債権者が債務者に対して債務を免除する意思を表示したときは、その債権は、消滅する。」と定め、債権者の意思表示だけで債権が消滅するとしている。債務者の同意を要件とする文言はなく、免除は債権者の単独行為と解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "519",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が債務者に対して債務を免除する意思を表示したときは、その債権は、消滅する。",
+     "text_sha256": "2bcdcbd614a9549d058a2e3b7dc62d49720a290e9d6c27aa6e472766e30d14ba",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない",
+    "免除が単独行為であるという点は解釈による"
+   ],
+   "id": "exp-shiho-2012-minpo-q22-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,304 @@
+{
+ "question_id": "shiho-2012-minpo-q23",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q23-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。委託を受けた保証人が過失なく弁済をすべき旨の裁判の言渡しを受けたときは、主たる債務者に対して求償権を行使できる（460条3号）。",
+   "body": "460条は「保証人は、主たる債務者の委託を受けて保証をした場合において、次に掲げるときは、主たる債務者に対して、あらかじめ、求償権を行使することができる。」と定め、その3号に「保証人が過失なく債権者に弁済をすべき旨の裁判の言渡しを受けたとき。」を挙げている。肢の保証人は委託を受けており、過失なく弁済をすべき旨の裁判の言渡しを受けているので、弁済の前でも主たる債務者に対して求償権を有する。なお、実際に弁済その他の「債務の消滅行為」をしたときの求償権は459条1項が定めている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "460",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保証人は、主たる債務者の委託を受けて保証をした場合において、次に掲げるときは、主たる債務者に対して、あらかじめ、求償権を行使することができる。",
+     "text_sha256": "88cab01e4b4f7a2a27f687c5478e22a945dbf626f2eb9c10c92f7b4ff6ab2ab8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "460",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保証人が過失なく債権者に弁済をすべき旨の裁判の言渡しを受けたとき。",
+     "text_sha256": "88cab01e4b4f7a2a27f687c5478e22a945dbf626f2eb9c10c92f7b4ff6ab2ab8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "459",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の消滅行為",
+     "text_sha256": "3867107bb4cf2104b9ccf7bf5724bf3606ffa00bc7367dd08108efb098d48635",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q23-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q23-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。物上保証人は、被担保債権の弁済期が到来しても、あらかじめ求償権を行使することはできない（最判平成2年12月18日）。",
+   "body": "物上保証人の求償権は、372条が抵当権に準用する351条により、「その債務を弁済し、又は質権の実行によって質物の所有権を失ったときは、保証債務に関する規定に従い、債務者に対して求償権を有する。」とされ、弁済や担保権の実行で財産を失ったときに生じる。これに対し、460条の事前の求償権は「保証人は、主たる債務者の委託を受けて保証をした場合において」認められるもので、物上保証人について定めた規定ではない。判例も、物上保証人は被担保債権の弁済期が到来しても、あらかじめ求償権を行使することはできないとしている（最判平成2年12月18日）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "372",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第二百九十六条、第三百四条及び第三百五十一条の規定は、抵当権について準用する。",
+     "text_sha256": "8425da3902ddc690c551ae65b8a6e0edd78d749eea824d1e2c5ab95e4e8b7d7c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "351",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その債務を弁済し、又は質権の実行によって質物の所有権を失ったときは、保証債務に関する規定に従い、債務者に対して求償権を有する。",
+     "text_sha256": "388d0ae8654d72b55d890d6eb71b24b4ed1f949c53879e979d730262380be809",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "460",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "保証人は、主たる債務者の委託を受けて保証をした場合において",
+     "text_sha256": "88cab01e4b4f7a2a27f687c5478e22a945dbf626f2eb9c10c92f7b4ff6ab2ab8",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "物上保証人の事前求償権",
+     "court": "最高裁判所第三小法廷",
+     "date": "1990-12-18",
+     "case_number": "平成2(オ)801",
+     "holding": "物上保証人は、被担保債権の弁済期が到来しても、あらかじめ求償権を行使することはできない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52472/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q23-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q23-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法443条1項は、通知をしないで共同の免責を得た連帯債務者に他の連帯債務者が対抗できるのを、その連帯債務者が「他の連帯債務者があることを知りながら」通知しなかった場合に限り、対抗できる範囲も「その負担部分について」と定めている。肢はCがAの存在を知っていたかに触れていないため、今の条文だけでは肢の結論を言い切れない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "443",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の連帯債務者があることを知りながら",
+     "text_sha256": "04d497af33f83c15867bb94610aca41972b2378f6f0e025c75bb1b5ff70a2687",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "443",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その負担部分について",
+     "text_sha256": "04d497af33f83c15867bb94610aca41972b2378f6f0e025c75bb1b5ff70a2687",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "今の443条1項の要件（他の連帯債務者があることを知っていること）が肢に現れておらず、出題時点の条文と要件が同じかを本文で確認できないため、解説を書かずに law_changed とした",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q23-3",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q23-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。求償権は、弁済その他自己の財産をもって共同の免責を得た連帯債務者に生じる（442条1項）。免除を受けただけのAは何も出えんしておらず、求償権を取得しない。",
+   "body": "誤りは「Ａは，Ｂ及びＣに対し，各自の負担部分について求償権を取得する」の部分。442条1項は「連帯債務者の一人が弁済をし、その他自己の財産をもって共同の免責を得たときは」その連帯債務者が他の連帯債務者に求償権を有すると定めている。Aは債権者から免除を受けただけで、自己の財産を支出して共同の免責を得たわけではないから、求償権を取得しない。また、441条により「連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない。」ので、Aへの免除でB・Cの債務は消えない。むしろ445条は、免除がされた場合でも「他の連帯債務者は、その一人の連帯債務者に対し、第四百四十二条第一項の求償権を行使することができる。」と定め、B・Cが弁済したときはAに求償できるとしている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "442",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人が弁済をし、その他自己の財産をもって共同の免責を得たときは",
+     "text_sha256": "b1d9a68defbdbd1f6b3baf69ed12f0a99dbe5c736e4062c94c47db90f1729a0f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "441",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "連帯債務者の一人について生じた事由は、他の連帯債務者に対してその効力を生じない。",
+     "text_sha256": "eb87ebafaba64f64d4d2da53966fa528d15665bd75a74f2e9369ed53006ab75f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "445",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "他の連帯債務者は、その一人の連帯債務者に対し、第四百四十二条第一項の求償権を行使することができる。",
+     "text_sha256": "11bf976c1eb867f4d1d4240d0a6b5b5a1c3c7df6017cdf45fa6e6ab18fdd78e5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない",
+    "連帯債務者の一人への免除が他の連帯債務者にどう効くかは出題後に改正された可能性があるが、肢の決め手（免除を受けただけの者には求償権が生じない）は今の442条1項で説明した"
+   ],
+   "id": "exp-shiho-2012-minpo-q23-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q23-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。被用者と第三者の共同不法行為で、第三者が自己の負担部分を超えて賠償したときは、被用者の負担部分について使用者に求償できる（最判昭和63年7月1日）。",
+   "body": "Aは使用者Bの事業の執行について損害を加えているので、Bは715条1項により「被用者がその事業の執行について第三者に加えた損害を賠償する責任を負う」。AとCは719条1項により「各自が連帯してその損害を賠償する責任を負う」。判例は、被用者と第三者との共同不法行為で、第三者が被用者との過失割合で定まる自己の負担部分を超えて賠償したときは、第三者は被用者の負担部分について使用者に求償できるとした（最判昭和63年7月1日）。この判決は、使用者に過失がないから負担部分がないとして求償を否定した原審を破棄しており、使用者と被用者とは一体をなすものとみて、第三者との関係でも使用者は被用者と同じ内容の責任を負うとの理由を示している。したがって、Bに過失がなくても、CはAの負担部分についてBに求償できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "715",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被用者がその事業の執行について第三者に加えた損害を賠償する責任を負う",
+     "text_sha256": "ee1bffc67a722815d32711a10969d4bd9e21ccbe43f120f08dd4fdc60932d2f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "719",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各自が連帯してその損害を賠償する責任を負う",
+     "text_sha256": "d6621dcf13fc139d8533852212627c8850fb7c86592bbf6f3ceed52d1a70c8c2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "被用者と第三者の共同不法行為で賠償した第三者から使用者への求償",
+     "court": "最高裁判所第二小法廷",
+     "date": "1988-07-01",
+     "case_number": "昭和60(オ)1145",
+     "holding": "被用者と第三者との共同不法行為により他人に損害を加えた場合に、第三者が被用者との過失割合に従って定められる自己の負担部分を超えて賠償したときは、第三者は被用者の負担部分について使用者に求償できる。使用者に過失がないとして求償を否定した原審を、使用者と被用者とは一体をなすものとみて使用者も被用者と同じ内容の責任を負うとの理由で破棄した。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/52196/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない",
+    "使用者に過失がなくても求償できる点は、判決全文（原審を破棄した理由）による"
+   ],
+   "id": "exp-shiho-2012-minpo-q23-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

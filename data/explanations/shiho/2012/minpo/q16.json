@@ -1,0 +1,256 @@
+{
+ "question_id": "shiho-2012-minpo-q16",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q16-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。債務者との取引によらないで取得する手形上・小切手上の請求権（第三者が振り出し債務者が裏書した手形など）も、根抵当権の被担保債権とすることができる（398条の2第3項・398条の3第2項）。",
+   "body": "誤りは「被担保債権とすることはできない」の部分。398条の2第3項は「手形上若しくは小切手上の請求権」を「根抵当権の担保すべき債権とすることができる。」と定め、債務者との取引から生じたものに限っていない。398条の3第2項は「債務者との取引によらないで取得する手形上若しくは小切手上の請求権」を根抵当権の担保すべき債権とした場合を前提に、債務者の支払の停止などの事由があったときの行使の範囲を制限している。第三者が振り出し債務者が裏書した手形上の請求権は、根抵当権者が債務者との取引によらずに取得するものにあたり得るので、被担保債権とすること自体はできる（行使できる範囲が398条の3第2項で制限されるだけである）。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "手形上若しくは小切手上の請求権",
+     "text_sha256": "deb454f15655bac75478a46ffa49de91e247c051f7e52930ecf453acd07dbbaf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "根抵当権の担保すべき債権とすることができる。",
+     "text_sha256": "deb454f15655bac75478a46ffa49de91e247c051f7e52930ecf453acd07dbbaf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_3",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債務者との取引によらないで取得する手形上若しくは小切手上の請求権",
+     "text_sha256": "3d1c3209b892156ccec456c9603730174d5f4e8529efe3a5b51c3ade4bbb2871",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない",
+    "第三者振出し・債務者裏書の手形が「債務者との取引によらないで取得する」請求権にあたるという当てはめは解釈による"
+   ],
+   "id": "exp-shiho-2012-minpo-q16-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q16-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。肢は398条の7第1項前段の文言どおりである。",
+   "body": "398条の7第1項は「元本の確定前に根抵当権者から債権を取得した者は、その債権について根抵当権を行使することができない。」と定めている。元本確定前の根抵当権は個々の債権との結び付きがなく（随伴性がない）、債権が譲渡されても根抵当権は移らないと解されている。肢はこの条文と同じ内容である。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_7",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "元本の確定前に根抵当権者から債権を取得した者は、その債権について根抵当権を行使することができない。",
+     "text_sha256": "25d5fc9d936f7cc18839c375791728a2b4cd9222fbba5d19d45ec2924ecc9f2d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない",
+    "随伴性がないという説明は解釈による"
+   ],
+   "id": "exp-shiho-2012-minpo-q16-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q16-3"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。元本確定前の被担保債権の範囲・債務者の変更に、後順位の抵当権者の承諾は要らない（398条の4第2項）。",
+   "body": "誤りは「その承諾を得なければすることができない」の部分。398条の4第1項は「元本の確定前においては、根抵当権の担保すべき債権の範囲の変更をすることができる。債務者の変更についても、同様とする。」と定め、同条2項は「前項の変更をするには、後順位の抵当権者その他の第三者の承諾を得ることを要しない。」と定めている。根抵当権は極度額の限度で優先弁済を受けるにすぎず、範囲や債務者が変わっても後順位抵当権者の負担は極度額を超えないためと解されている。なお、同条3項により、変更について元本の確定前に登記をしなかったときは、変更をしなかったものとみなされる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "元本の確定前においては、根抵当権の担保すべき債権の範囲の変更をすることができる。債務者の変更についても、同様とする。",
+     "text_sha256": "ccfe4f8190d4e17dfaf2f02eec287c9a22419258b7b5dfabd50937e60e11820d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_4",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "前項の変更をするには、後順位の抵当権者その他の第三者の承諾を得ることを要しない。",
+     "text_sha256": "ccfe4f8190d4e17dfaf2f02eec287c9a22419258b7b5dfabd50937e60e11820d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_4",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "第一項の変更について元本の確定前に登記をしなかったときは、その変更をしなかったものとみなす。",
+     "text_sha256": "ccfe4f8190d4e17dfaf2f02eec287c9a22419258b7b5dfabd50937e60e11820d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない",
+    "承諾が要らない理由の説明は解釈による"
+   ],
+   "id": "exp-shiho-2012-minpo-q16-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q16-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。承継する相続人の合意がなければ（合意の登記が相続開始後6か月以内にされなければ）、元本は相続開始の時に確定したものとみなされる（398条の8第1項・4項）。",
+   "body": "398条の8第1項は、元本の確定前に根抵当権者について相続が開始したときは、根抵当権は「相続開始の時に存する債権のほか、相続人と根抵当権設定者との合意により定めた相続人が相続の開始後に取得する債権を担保する。」と定める。同条4項は「第一項及び第二項の合意について相続の開始後六箇月以内に登記をしないときは、担保すべき元本は、相続開始の時に確定したものとみなす。」と定めている。合意がなければ、相続開始後に取得する債権を担保させる根拠がなく、合意の登記もされないので、元本は相続開始の時に確定することになる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_8",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相続開始の時に存する債権のほか、相続人と根抵当権設定者との合意により定めた相続人が相続の開始後に取得する債権を担保する。",
+     "text_sha256": "17a5cddeda87f81e733f6cac4153a6d48be0eae9e02e858d143799705c612e5f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_8",
+     "paragraphs": [
+      "4"
+     ],
+     "quote": "第一項及び第二項の合意について相続の開始後六箇月以内に登記をしないときは、担保すべき元本は、相続開始の時に確定したものとみなす。",
+     "text_sha256": "17a5cddeda87f81e733f6cac4153a6d48be0eae9e02e858d143799705c612e5f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q16-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q16-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。根抵当権は、確定した元本と利息・損害金の「全部」について極度額を限度に行使でき、普通抵当権の最後の2年分の制限（375条）はない（398条の3第1項）。",
+   "body": "398条の3第1項は「根抵当権者は、確定した元本並びに利息その他の定期金及び債務の不履行によって生じた損害の賠償の全部について、極度額を限度として、その根抵当権を行使することができる。」と定めている。普通抵当権では、375条1項が利息その他の定期金について「その満期となった最後の二年分についてのみ、その抵当権を行使することができる。」と定め、同条2項が損害賠償にも同じ制限を及ぼしているが、根抵当権にはこの制限がない。したがって、極度額の範囲内であれば、2年を超える利息・遅延損害金についても根抵当権を行使できる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "398_3",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "根抵当権者は、確定した元本並びに利息その他の定期金及び債務の不履行によって生じた損害の賠償の全部について、極度額を限度として、その根抵当権を行使することができる。",
+     "text_sha256": "3d1c3209b892156ccec456c9603730174d5f4e8529efe3a5b51c3ade4bbb2871",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "375",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その満期となった最後の二年分についてのみ、その抵当権を行使することができる。",
+     "text_sha256": "f107b60752dc2f052e9aacfb4f337f2133f027b1bcd42f1cf881feb2e7b52bbd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q16-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

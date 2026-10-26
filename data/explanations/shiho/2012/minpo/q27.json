@@ -1,0 +1,244 @@
+{
+ "question_id": "shiho-2012-minpo-q27",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q27-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の634条は「注文者の責めに帰することができない事由によって仕事を完成することができなくなったとき」などに、可分な部分の給付で注文者が利益を受ければ「注文者が受ける利益の割合に応じて報酬を請求することができる」と定め、仕事が途中で終わった場合の割合的な報酬の規定を請負に置いている。肢の誤りは出題時点に請負にこうした規定がないことによるものであり、今の条文では公式の○×に行き着かないため、解説を書かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "634",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "注文者の責めに帰することができない事由によって仕事を完成することができなくなったとき",
+     "text_sha256": "d7406a0e5ebd5fc5b3c00f0c4b76fe27ee1ea7c89886847ecda92e672d1ea785",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "634",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "注文者が受ける利益の割合に応じて報酬を請求することができる",
+     "text_sha256": "d7406a0e5ebd5fc5b3c00f0c4b76fe27ee1ea7c89886847ecda92e672d1ea785",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2012-minpo-q27-a",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q27-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。民法は、委任については当事者の死亡を終了事由とする（653条1号）が、請負には注文者の死亡を終了事由とする規定がなく、注文者が死亡しても請負契約は終了しない。",
+   "body": "決め手は「注文者が死亡したときは，請負契約は終了する」という部分である。当事者の死亡で契約が終わる旨の規定は、委任について653条が「委任は、次に掲げる事由によって終了する」とし、1号で「委任者又は受任者の死亡」を挙げているものであり、請負の節（632条以下）には同様の規定はない。請負の節で注文者側の事情による終了を定めるのは、注文者の任意解除（641条）と注文者の破産手続開始による解除（642条1項）であり、いずれも解除の権利を与えるもので、当然に終了させるものではない。注文者の地位は、896条の「被相続人の財産に属した一切の権利義務」として相続人に承継されると解されている。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "653",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "委任は、次に掲げる事由によって終了する。",
+     "text_sha256": "d5fd08a24dfabded2ae84afd489a38d8782a7badf15f0b07ddceac3f3b8a298f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "653",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "委任者又は受任者の死亡",
+     "text_sha256": "d5fd08a24dfabded2ae84afd489a38d8782a7badf15f0b07ddceac3f3b8a298f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "632",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "請負は、当事者の一方がある仕事を完成することを約し、相手方がその仕事の結果に対してその報酬を支払うことを約することによって、その効力を生ずる。",
+     "text_sha256": "e8e664e4c7804ff3702cd7b1134ccdee64068f0f8c808923333aec625d84bc12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "641",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "請負人が仕事を完成しない間は、注文者は、いつでも損害を賠償して契約の解除をすることができる。",
+     "text_sha256": "44a129079c52598425bd8e96c499549dfd46ed1ed9a37ca064ef77856835199f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "642",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "注文者が破産手続開始の決定を受けたときは、請負人又は破産管財人は、契約の解除をすることができる。",
+     "text_sha256": "62e1debf44895cfad123303adc2405e5e0d15fc5b3c8e112a5f72adc722be046",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "896",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "被相続人の財産に属した一切の権利義務",
+     "text_sha256": "26569775cea382b249232c76910772008f279f0ab8c399f2d8a8d991820a167f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "注文者の地位が相続人に承継される（一身専属でない）という点は解釈による。",
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2012-minpo-q27-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q27-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法は、請負の仕事の目的物の不具合を契約不適合として扱い、修補は売買の規定（「目的物の修補、代替物の引渡し又は不足分の引渡しによる履行の追完を請求することができる」）を559条で準用して求めるもので、修補を求められない場合は「取引上の社会通念に照らして不能であるとき」（412条の2第1項）という一般の規定による。肢の「瑕疵が重要でなく，その修補に過分の費用を要するとき」という請負に固有の要件は今の条文になく、要件が変わっているため、解説を書かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "562",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "目的物の修補、代替物の引渡し又は不足分の引渡しによる履行の追完を請求することができる",
+     "text_sha256": "4596856b9aee4f26d8523bb47e98749638a06b0d016eb4267dd51c9391aaa683",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "559",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "この節の規定は、売買以外の有償契約について準用する。",
+     "text_sha256": "6c56107d8120407988ea7e701faa86b72acef76985acdaf20c35d63b5021cdaa",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "412_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "取引上の社会通念に照らして不能であるとき",
+     "text_sha256": "df50c8bec71e91034aec91977f8df0df045f842d2c80fcd3dfa7c054cd67439b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2012-minpo-q27-d",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q27-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の637条1項は「注文者がその不適合を知った時から一年以内にその旨を請負人に通知しないときは」履行の追完の請求などができないと定め、期間の起算点を注文者が不適合を知った時とし、期間内にすべきことも請負人への通知としている。肢の「目的物を引き渡した時から１年以内」に修補を請求しなければならないという起算点・内容とは違うため、解説を書かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "637",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "注文者がその不適合を知った時から一年以内にその旨を請負人に通知しないときは",
+     "text_sha256": "bb4bfcb9bf1604036b29853662b101cdea67a4a907932647dcbda06677459bce",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2012-minpo-q27-e",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

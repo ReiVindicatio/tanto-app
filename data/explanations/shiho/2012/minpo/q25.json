@@ -1,0 +1,218 @@
+{
+ "question_id": "shiho-2012-minpo-q25",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q25-1"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。587条は消費貸借の目的物を「金銭その他の物」としており、金銭に限られない。",
+   "body": "決め手は、消費貸借の目的物が金銭に限られるかどうかである。587条は、消費貸借を「当事者の一方が種類、品質及び数量の同じ物をもって返還をすることを約して相手方から金銭その他の物を受け取ることによって、その効力を生ずる」ものと定めている。目的物は「金銭その他の物」であり、借りた物と種類・品質・数量の同じ物を返せばよいから、米などの金銭でない代替物も消費貸借の目的とすることができる。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "587",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の一方が種類、品質及び数量の同じ物をもって返還をすることを約して相手方から金銭その他の物を受け取ることによって、その効力を生ずる",
+     "text_sha256": "0e46b5913fa56743adb085f9db6583607289a72004ae00853df8d13d17abc5fd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2012-minpo-q25-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q25-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "誤り。消費貸借は、金銭その他の物を受け取ることによって効力を生ずる（587条）のであり、無利息の金銭消費貸借でも書面は効力の要件ではない。",
+   "body": "決め手は「書面でしなければ，その効力を生じない」という部分である。587条は、消費貸借は返還を約して「相手方から金銭その他の物を受け取ることによって、その効力を生ずる」と定めており、書面を要件としていない。利息の有無で区別する規定もなく、589条1項も「貸主は、特約がなければ、借主に対して利息を請求することができない」として無利息を原則としている。今の民法には、書面によって物の受け取り前に効力を生じさせる「書面でする消費貸借」（587条の2第1項）もあるが、これは「前条の規定にかかわらず」とする別の成立の方法であり、書面によらない消費貸借も、物の受け取りによって効力を生ずる。したがって本肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "587",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方から金銭その他の物を受け取ることによって、その効力を生ずる",
+     "text_sha256": "0e46b5913fa56743adb085f9db6583607289a72004ae00853df8d13d17abc5fd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "589",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "貸主は、特約がなければ、借主に対して利息を請求することができない",
+     "text_sha256": "5d60796fb8fff7ad0e16ed6eb2b1c4fbeca03061faecef7daa9d4e1f2a986951",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "587_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条の規定にかかわらず、書面でする消費貸借は",
+     "text_sha256": "5a0ea6ae149d823c70a121ec5d42cdd6f84a4111fefa76b5fe21084696a45fa1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）。587条の2（書面でする消費貸借）は出題後の改正で設けられた規定と理解しているが、改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2012-minpo-q25-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q25-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "正しい。確定期限の到来は返還請求の要件として原告が主張すべき事実であるが、暦日の到来は顕著な事実であり、民事訴訟法179条により証明を要しない。",
+   "body": "本肢は、主張の要否と証明の要否を分けて問うている。民法135条1項は「法律行為に始期を付したときは、その法律行為の履行は、期限が到来するまで、これを請求することができない」と定めており、返還時期の定めがある消費貸借で返還を求めるには、その期限が到来したことが必要になる。そのため、貸主（原告）は返還時期の合意とその到来を主張しなければならないと解されている。他方、民事訴訟法179条は「裁判所において当事者が自白した事実及び顕著な事実は、証明することを要しない」と定めており、ある暦日が到来したことは裁判所にとって顕著な事実であるから、証明は要らない。したがって本肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "135",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "法律行為に始期を付したときは、その法律行為の履行は、期限が到来するまで、これを請求することができない",
+     "text_sha256": "fbb3efc9fa30481cc760cd4311e7c15b027efeb2a10980397e13359bd56a4198",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民事訴訟法",
+     "article": "179",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "裁判所において当事者が自白した事実及び顕著な事実は、証明することを要しない",
+     "text_sha256": "e4130832ddcc944ae8217b0dfe25450d37e4b37e266687c920672f76e51a6a54",
+     "fetched_at": "2026-10-20",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E5%85%AB%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E7%99%BE%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "notes": [
+    "原告が返還時期の合意とその到来を主張すべきこと（主張責任の所在）、暦日の到来が顕著な事実に当たることは解釈による。",
+    "現行の条文で説明した（出題は改正前）。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2012-minpo-q25-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q25-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の588条は「金銭その他の物を給付する義務を負う者がある場合において」と定めて給付義務の発生原因を限っておらず、消費貸借に基づく返還義務を目的とする準消費貸借ができることは今の条文の文言から直接に出てくる。肢は出題時点の条文の下での判例の立場を問うものであり、今の条文で説明すると判例ではなく条文の文言が理由になって出題の趣旨と別の説明になるため、解説を書かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "588",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "金銭その他の物を給付する義務を負う者がある場合において、当事者がその物を消費貸借の目的とすることを約したときは、消費貸借は、これによって成立したものとみなす。",
+     "text_sha256": "69b1c24b432792184eb6ee35008537d3a5ae6e322018e367453a2770e82426b6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "588条の本文は出題後の改正で変わったと理解しているが、改正前の内容は条文の本文で確認していない（H23〜H28 は e-Gov に過去の版がない）。判例は大審院のもの（データベースにない）と理解しており、確かめていない。"
+   ],
+   "id": "exp-shiho-2012-minpo-q25-4",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q25-5"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "law_changed": "今の民法には消費貸借の予約についての規定がなく、当事者の破産手続開始の決定で効力を失うと定めているのは「書面でする消費貸借は、借主が貸主から金銭その他の物を受け取る前に当事者の一方が破産手続開始の決定を受けたときは、その効力を失う。」（587条の2第3項）である。肢の前提にしている「消費貸借の予約」の規定が今の条文にないため、解説を書かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "587_2",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "書面でする消費貸借は、借主が貸主から金銭その他の物を受け取る前に当事者の一方が破産手続開始の決定を受けたときは、その効力を失う。",
+     "text_sha256": "5a0ea6ae149d823c70a121ec5d42cdd6f84a4111fefa76b5fe21084696a45fa1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2012-minpo-q25-5",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

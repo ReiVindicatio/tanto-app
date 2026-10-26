@@ -1,0 +1,58 @@
+{
+ "question_id": "shiho-2012-minpo-q26",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q26-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の166条1項は債権の消滅時効を「債権者が権利を行使することができることを知った時から五年間行使しないとき」と「権利を行使することができる時から十年間行使しないとき」の二本立てで定めており、肢が問う「知った時」からの時効（主観的起算点）を今の条文は5年として置いている。肢は出題時点の時効の規定の下で解除権の時効の起算点（判例）を問うものであり、期間と起算点の定め方が出題後に変わったため、今の条文で説明すると出題の趣旨と別の理由（期間の長さ）が混じるので、解説を書かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "166",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者が権利を行使することができることを知った時から五年間行使しないとき",
+     "text_sha256": "1486101bc71d3c4203815fde63101bc9f784105f2a086ecbe1b4b91126c82bcd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "166",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "権利を行使することができる時から十年間行使しないとき",
+     "text_sha256": "1486101bc71d3c4203815fde63101bc9f784105f2a086ecbe1b4b91126c82bcd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "関連判例として、最高裁昭和62年10月8日第一小法廷判決（昭和58(オ)457、無断転貸を理由とする土地賃貸借契約の解除権の消滅時効は、転借人が転貸借契約に基づき当該土地の使用収益を開始した時から進行する）を courts.py show 55194 で確かめた（https://www.courts.go.jp/hanrei/55194/detail2/index.html）。参照法条は改正前の民法166条1項・612条2項。",
+    "解除権（形成権）に今の166条1項・2項のどちらが及ぶかは解釈が分かれうるため、今の条文での○×は言わない。改正前の内容は条文の本文で確認していない。"
+   ],
+   "id": "exp-shiho-2012-minpo-q26-e",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

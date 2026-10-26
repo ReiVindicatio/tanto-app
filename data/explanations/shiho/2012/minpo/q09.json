@@ -1,0 +1,278 @@
+{
+ "question_id": "shiho-2012-minpo-q09",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-27",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q09-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。所有権は時効で消滅しないが、所有権以外の物権（地上権など）は消滅時効にかかる（166条2項）。",
+   "body": "誤りは「物権は時効により消滅することはない」の部分。166条2項は「債権又は所有権以外の財産権は、権利を行使することができる時から二十年間行使しないときは、時効によって消滅する。」と定めている。時効で消滅しないとされているのは所有権であり、地上権・地役権などの所有権以外の物権は、この規定により時効で消滅することがある。前半の、債権が時効で消滅することがある点は、166条1項のとおり正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "166",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "債権又は所有権以外の財産権は、権利を行使することができる時から二十年間行使しないときは、時効によって消滅する。",
+     "text_sha256": "1486101bc71d3c4203815fde63101bc9f784105f2a086ecbe1b4b91126c82bcd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "166",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権は、次に掲げる場合には、時効によって消滅する。",
+     "text_sha256": "1486101bc71d3c4203815fde63101bc9f784105f2a086ecbe1b4b91126c82bcd",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない（消滅時効の規定は債権法改正で変わっているが、所有権以外の物権が時効で消滅しうるという肢の結論を分ける点は今の166条2項で説明できる）"
+   ],
+   "id": "exp-shiho-2012-minpo-q09-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q09-2"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。対抗要件を備えた不動産の賃借人は、賃借権に基づいて第三者に妨害の停止を求めることができる（605条の4第1号）。",
+   "body": "誤りは「賃借権に基づいて妨害排除を求めることはできない」の部分。建物の賃貸借は、借地借家法31条により「建物の引渡しがあったときは、その後その建物について物権を取得した者に対し、その効力を生ずる。」ので、引渡しを受けた建物賃借人は対抗要件を備えている。605条の4は、不動産の賃借人が「第六百五条の二第一項に規定する対抗要件を備えた場合」に、「その不動産の占有を第三者が妨害しているとき　その第三者に対する妨害の停止の請求」をすることができると定め、605条の2第1項の対抗要件には借地借家法31条によるものが含まれる。判例も、第三者に対抗できる借地権を有する者は、その土地に建物を建てて使用する者に対し直接建物の収去・土地の明渡しを請求できるとしている（最判昭和28年12月18日）。なお、前半の占有権に基づく妨害排除は、198条の占有保持の訴え（「その妨害の停止及び損害の賠償を請求することができる。」）として認められる。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "借地借家法",
+     "article": "31",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "建物の引渡しがあったときは、その後その建物について物権を取得した者に対し、その効力を生ずる。",
+     "text_sha256": "71a7ab46fa2f761ed27a658cef916a8d39b6aaaa0cc9878ff8d7f37c470b72fc",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E5%B9%B3%E6%88%90%E4%B8%89%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E4%B9%9D%E5%8D%81%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "605_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第六百五条の二第一項に規定する対抗要件を備えた場合",
+     "text_sha256": "c0a5c13a1772835507a3da43fc04fcd0e8143a41d4dfcfd9170e39995603e663",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "605_4",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その不動産の占有を第三者が妨害しているとき　その第三者に対する妨害の停止の請求",
+     "text_sha256": "c0a5c13a1772835507a3da43fc04fcd0e8143a41d4dfcfd9170e39995603e663",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "605_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前条、借地借家法（平成三年法律第九十号）第十条又は第三十一条その他の法令の規定による賃貸借の対抗要件を備えた場合",
+     "text_sha256": "be6f1ec3a34a181cc9a39179bfa12a10278e40fe318160b79f65775aa269b1f1",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "198",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "その妨害の停止及び損害の賠償を請求することができる。",
+     "text_sha256": "33990023edb7ddfa5d25d7db4e1f86c5e28a85571072a4659764e5893ec156d0",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "対抗力のある借地権に基づく妨害排除請求",
+     "court": "最高裁判所第二小法廷",
+     "date": "1953-12-18",
+     "case_number": "昭和27(オ)883",
+     "holding": "第三者に対抗できる借地権を有する者は、その土地に建物を建ててこれを使用する者に対し直接その建物の収去、土地の明渡を請求することができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/56138/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない（出題時に605条の4に当たる規定があったかは本文で確認していない。問は「判例の趣旨に照らし」て問うており、対抗要件を備えた不動産賃借権に基づく妨害排除を認めるという判例の規律と結論は今の605条の4と同じなので、解説を書いた。迷う場合はメインで law_changed への切り替えを判断してほしい）",
+    "判例は借地権（土地の賃借権）についてのもので、建物賃借権への当てはめは解釈による"
+   ],
+   "id": "exp-shiho-2012-minpo-q09-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q09-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。一筆の土地の一部でも、特定されていれば所有権の目的となり（判例）、賃貸借などの債権の目的ともなる。",
+   "body": "判例は、一筆の土地の一部であっても売買の目的とすることができ、その部分が具体的に特定しているかぎり、分筆手続未了前でも買主はその部分の所有権を取得できるとしている（最判昭和30年6月24日）。したがって、物権が一筆の土地の一部について成立することがある。債権についても、たとえば賃貸借は「当事者の一方がある物の使用及び収益を相手方にさせることを約し」て成立する契約であり（601条）、一筆の土地の一部を賃貸の目的とすることもできると解されている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "601",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の一方がある物の使用及び収益を相手方にさせることを約し",
+     "text_sha256": "74e184d7b22f8a354be3696b22e142b307107a756c6bed036bee073043e9337b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "一筆の土地の一部の売買と所有権の取得",
+     "court": "最高裁判所第二小法廷",
+     "date": "1955-06-24",
+     "case_number": "昭和28(オ)847",
+     "holding": "一筆の土地の一部といえども売買の目的とすることができ、その部分が具体的に特定しているかぎり、分筆手続未了前においても、買主はその部分につき所有権を取得することができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/57460/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "一筆の土地の一部を賃貸借など債権の目的とできる点は解釈による"
+   ],
+   "id": "exp-shiho-2012-minpo-q09-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q09-4"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。質権は財産権を目的とすることができ（362条1項）、債権を目的とする物権（債権質）がある。",
+   "body": "誤りは「物権は債権を目的とすることはできない」の部分。362条1項は「質権は、財産権をその目的とすることができる。」と定めており、債権も財産権であるから、物権である質権は債権を目的として設定することができる（債権質）。したがって、物権が債権を目的とすることはある。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "362",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "質権は、財産権をその目的とすることができる。",
+     "text_sha256": "b2907abfcba7eea0f05cb21c8dd7c32b8d205d65458fcf7f9665b5145d30a755",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q09-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2012-minpo-q09-5"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。所有権以外の財産権も時効取得でき（163条）、判例は土地賃借権の時効取得を認めている。",
+   "body": "誤りは「債権は時効により取得することはできない」の部分。163条は「所有権以外の財産権を、自己のためにする意思をもって、平穏に、かつ、公然と行使する者は、前条の区別に従い二十年又は十年を経過した後、その権利を取得する。」と定める。判例は、土地の継続的な用益という外形的事実が存在し、かつ、それが賃借の意思に基づくことが客観的に表現されているときは、土地賃借権を時効により取得することができるとしている（最判昭和43年10月8日）。したがって、債権である賃借権も時効により取得することがある。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "163",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "所有権以外の財産権を、自己のためにする意思をもって、平穏に、かつ、公然と行使する者は、前条の区別に従い二十年又は十年を経過した後、その権利を取得する。",
+     "text_sha256": "881a1e57d004c74aff7e0c0442133191082826a33b5853f0a3548fe6c7a31f30",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "土地賃借権の時効取得の要件",
+     "court": "最高裁判所第三小法廷",
+     "date": "1968-10-08",
+     "case_number": "昭和42(オ)954",
+     "holding": "土地の継続的な用益という外形的事実が存在し、かつ、それが賃借の意思に基づくことが客観的に表現されているときは、土地賃借権を時効により取得することができる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54105/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2012-minpo-q09-5",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
