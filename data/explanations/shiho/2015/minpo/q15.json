@@ -1,0 +1,59 @@
+{
+ "question_id": "shiho-2015-minpo-q15",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q15-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "law_changed": "今の420条1項は「当事者は、債務の不履行について損害賠償の額を予定することができる。」と定めるだけで、肢の前半の前提である、裁判所が予定額を増減することができないとする定めは今の条文にない。肢の前半を今の条文で説明できず、過失相殺（418条）の部分だけで説明すると出題当時と前提が変わるため、解説を書かない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "420",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者は、債務の不履行について損害賠償の額を予定することができる。",
+     "text_sha256": "8257bc006ddc631ace3579d4b6fd947d1a7f82ba6849d104ff651d287411b8d3",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "418",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の不履行又はこれによる損害の発生若しくは拡大に関して債権者に過失があったときは、裁判所は、これを考慮して、損害賠償の責任及びその額を定める。",
+     "text_sha256": "d4b70f1ac4260cbcf171a3e732aaa5a2df063faebba10e7b8aeec1f8cfe92565",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "改正前の内容は条文の本文で確認していない。",
+    "同じ論点の yobi-2015-minpo-q08-d と同じ扱いにした。",
+    "賠償額の予定と過失相殺についての判例は、law_changed のため載せていない（試した courts.py search 損害賠償額の予定 過失相殺／賠償額の予定 過失相殺 はいずれも0件）。"
+   ],
+   "id": "exp-shiho-2015-minpo-q15-d",
+   "status": "law_changed",
+   "check": {
+    "passed": true,
+    "failures": [
+     "⚖️ 現行の条文では公式の○×を説明できない肢（law_changed。公開しない）"
+    ]
+   }
+  }
+ ]
+}

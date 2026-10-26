@@ -1,0 +1,274 @@
+{
+ "question_id": "shiho-2015-minpo-q21",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q21-a"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。判例は、家屋の賃貸借終了に伴う家屋明渡債務と敷金返還債務とは、特別の約定のないかぎり同時履行の関係に立たないとしている。",
+   "body": "最高裁昭和49年9月2日判決は、家屋の賃貸借終了に伴う賃借人の家屋明渡債務と賃貸人の敷金返還債務とは、特別の約定のないかぎり、同時履行の関係に立たないとした。今の民法も622条の2第1項で、賃貸人が敷金の残額を返還すべき時期を「賃貸借が終了し、かつ、賃貸物の返還を受けたとき」と定めており、明渡し（賃貸物の返還）が先で、敷金の返還はその後になる。したがって、賃借人は敷金の返還がないことを理由に533条の同時履行の抗弁で明渡しを拒むことはできず、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "622_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賃貸借が終了し、かつ、賃貸物の返還を受けたとき",
+     "text_sha256": "51fc3446ae44c06999991b0b9b245fa9ce9463b088790add8332765dabe5b9cf",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "533",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "双務契約の当事者の一方は、相手方がその債務の履行（債務の履行に代わる損害賠償の債務の履行を含む。）を提供するまでは、自己の債務の履行を拒むことができる。",
+     "text_sha256": "95fda827e77316b7aae0167132d09d24763b8a7bcc53a41b785f0fa63eff6774",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "家屋明渡債務と敷金返還債務の同時履行",
+     "court": "最高裁判所第一小法廷",
+     "date": "1974-09-02",
+     "case_number": "昭和48(オ)30",
+     "holding": "家屋の賃貸借終了に伴う賃借人の家屋明渡債務と賃貸人の敷金返還債務とは、特別の約定のないかぎり、同時履行の関係に立たない。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/54200/detail2/index.html"
+     ]
+    }
+   ],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "622条の2は出題後の改正で置かれた条文。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2015-minpo-q21-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q21-b"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。譲渡の通知を受けただけの債務者は、通知（対抗要件具備）の時までに譲渡人に対して生じた事由を譲受人に対抗できるので、同時履行の抗弁を主張できる。",
+   "body": "債権譲渡は、467条1項により「譲渡人が債務者に通知をし、又は債務者が承諾をしなければ」債務者に対抗できず、本問では譲渡人の通知で対抗要件が備わっている。そして468条1項は「債務者は、対抗要件具備時までに譲渡人に対して生じた事由をもって譲受人に対抗することができる」と定める。双務契約から生じた同時履行の抗弁は、契約の時から反対債権に付着しているので、通知の時までに生じた事由として譲受人に対抗できると解されている。債務者が通知に対して遅滞なく異議を述べなかったことは、抗弁を失わせる事情として条文に定められていない。したがって、同時履行の抗弁を主張できないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "467",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "譲渡人が債務者に通知をし、又は債務者が承諾をしなければ",
+     "text_sha256": "3ea3b680843790c06eebdfbd14c6c386b02dd512b401d1869219846beeebd54f",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "468",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者は、対抗要件具備時までに譲渡人に対して生じた事由をもって譲受人に対抗することができる",
+     "text_sha256": "128edb01a7454acf824569bca8ccd003b404dfddaf155a4d9de0a546621b1043",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "同時履行の抗弁が対抗要件具備時までに生じた事由に当たることは解釈による",
+    "468条は出題後に改正された。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2015-minpo-q21-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q21-c"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。履行期が同じ双務契約では相手方に同時履行の抗弁があるので、自己の債務の弁済又は提供をして相手方の抗弁を失わせなければ、履行遅滞を理由に解除することはできないと解されている。",
+   "body": "533条により、双務契約の当事者の一方は「相手方がその債務の履行（債務の履行に代わる損害賠償の債務の履行を含む。）を提供するまでは、自己の債務の履行を拒むことができる」。履行期が同じ売買では、履行期が過ぎても、こちらが弁済も提供もしていない限り、相手方は同時履行の抗弁により履行を拒むことができ、その不履行は違法な債務不履行（履行遅滞）とはならないと解されている。541条の解除は「当事者の一方がその債務を履行しない場合」にできるものであり、相手方の不履行が抗弁で正当化されている間は、催告をしても解除できない。したがって、解除するには自己の債務の弁済又は提供が必要であり、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "533",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "相手方がその債務の履行（債務の履行に代わる損害賠償の債務の履行を含む。）を提供するまでは、自己の債務の履行を拒むことができる",
+     "text_sha256": "95fda827e77316b7aae0167132d09d24763b8a7bcc53a41b785f0fa63eff6774",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "541",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の一方がその債務を履行しない場合",
+     "text_sha256": "a382a1658957144d4c987e49868819b6be4b6636386e22d7b69646163926ab07",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "同時履行の抗弁がある間は履行遅滞にならず、解除には自己の債務の提供が要ることは解釈による"
+   ],
+   "id": "exp-shiho-2015-minpo-q21-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q21-d"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。解除による双方の原状回復義務には、546条により533条（同時履行の抗弁）が準用されるので、同時履行の関係にある。",
+   "body": "契約が解除されると、545条1項により「各当事者は、その相手方を原状に復させる義務を負う」。そして546条は「第五百三十三条の規定は、前条の場合について準用する」と定め、原状回復義務についても同時履行の抗弁を認めている。したがって、売買契約の解除による両当事者の原状回復義務は同時履行の関係に立ち、同時履行の関係にないとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "545",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "各当事者は、その相手方を原状に復させる義務を負う",
+     "text_sha256": "403613b135cfeb822522f37759878cd51de512f787c46c64bc9458e9b822f3b5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "546",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第五百三十三条の規定は、前条の場合について準用する。",
+     "text_sha256": "80fd7745b827183b67506e22b82c04649f41a1bcec0a1d461c20c3aee74b5560",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "533",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "自己の債務の履行を拒むことができる",
+     "text_sha256": "95fda827e77316b7aae0167132d09d24763b8a7bcc53a41b785f0fa63eff6774",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）"
+   ],
+   "id": "exp-shiho-2015-minpo-q21-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q21-e"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。自働債権（Aの代金債権）に相手方Bの同時履行の抗弁が付いているときは、相殺するとBの抗弁を一方的に奪うことになるので、Aは自己の引渡債務の弁済又は提供をしない限り相殺できないと解されている。",
+   "body": "AがBに対する代金債権を自働債権として相殺するには、505条1項本文の「双方の債務が弁済期にある」ことなどが必要である。履行期が同一なので、Bは533条により、Aが美術品の引渡しを「提供するまでは、自己の債務の履行を拒むことができる」。自働債権に相手方の同時履行の抗弁が付いている場合に相殺を認めると、BはAの引渡しを受けないまま代金を支払ったのと同じことになり、抗弁を一方的に奪われるため、相殺は許されないと解されている。したがって、Aは引渡債務の弁済又は提供をしていない限り相殺できず、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "505",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "双方の債務が弁済期にある",
+     "text_sha256": "2c6fb46bb0752e6158d87dbdbfad4540a36db31dd72f7bc87c02c04ea73b245b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "533",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "提供するまでは、自己の債務の履行を拒むことができる",
+     "text_sha256": "95fda827e77316b7aae0167132d09d24763b8a7bcc53a41b785f0fa63eff6774",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "抗弁権の付着した債権を自働債権とする相殺が許されないことは解釈による"
+   ],
+   "id": "exp-shiho-2015-minpo-q21-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

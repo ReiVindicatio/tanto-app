@@ -1,0 +1,266 @@
+{
+ "question_id": "shiho-2015-minpo-q22",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q22-1"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。売主の責めに帰すべき事由による履行不能でも売買契約は当然には失効せず、買主は契約を解除してはじめて代金支払義務を免れる。",
+   "body": "履行不能のときは、412条の2第1項により「債権者は、その債務の履行を請求することができない」が、契約が当然に効力を失うとする規定はない。買主は、542条1項1号の「債務の全部の履行が不能であるとき」として、催告をすることなく直ちに契約の解除をすることができ、解除によって代金支払義務を免れる。また、売主に帰責事由があるので、415条により損害賠償も請求できる。なお、536条1項の反対給付の履行拒絶は「当事者双方の責めに帰することができない事由」による場合のもので、本肢には当たらない。したがって、契約の効力が法律上当然に失われるとする点が誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "412_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債権者は、その債務の履行を請求することができない",
+     "text_sha256": "df50c8bec71e91034aec91977f8df0df045f842d2c80fcd3dfa7c054cd67439b",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "542",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の全部の履行が不能であるとき",
+     "text_sha256": "021dce87813fcae2438db5c4ffc2afe591887076d1cccb4bc6a499a271622b73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "415",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の履行が不能であるときは、債権者は、これによって生じた損害の賠償を請求することができる",
+     "text_sha256": "17591c49fffea4a95a4b10a3ff4b37bcd321771faa36b15176b72ce9b46cf6c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "536",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者双方の責めに帰することができない事由",
+     "text_sha256": "07238591347b0008a936f1e6eb7f8c43291d972cb540de8dd607128c70eb8bc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "履行不能・解除・危険負担の条文は出題後に改正された。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2015-minpo-q22-1",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q22-2"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。賃借物の全部が滅失して使用収益ができなくなれば、賃借人の帰責事由の有無にかかわらず賃貸借は当然に終了し、以後の賃料債務は生じない。",
+   "body": "616条の2は「賃借物の全部が滅失その他の事由により使用及び収益をすることができなくなった場合には、賃貸借は、これによって終了する」と定め、滅失の原因が誰にあるかを問わない。したがって、賃借人の責めに帰すべき事由で建物が滅失した場合でも、賃貸借は法律上当然に終了し、賃借人はそれ以降の賃料を支払う義務を負わない。賃借人の責任は、建物を滅失させたことによる損害賠償（415条）の問題として扱われると解されている。肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "616_2",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "賃借物の全部が滅失その他の事由により使用及び収益をすることができなくなった場合には、賃貸借は、これによって終了する",
+     "text_sha256": "5f5899b79e40c94f83428e5284d54d4a38aa2aba597f4f6207124f7ad120cb73",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "415",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務者がその債務の本旨に従った履行をしないとき又は債務の履行が不能であるときは、債権者は、これによって生じた損害の賠償を請求することができる",
+     "text_sha256": "17591c49fffea4a95a4b10a3ff4b37bcd321771faa36b15176b72ce9b46cf6c6",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "616条の2は出題後の改正で置かれた条文。改正前の内容は条文の本文で確認していない",
+    "賃借人の責任が損害賠償の問題になることは解釈による"
+   ],
+   "id": "exp-shiho-2015-minpo-q22-2",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q22-3"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。建築途中の建物が滅失しても、なお建物を建築できる限り請負人の仕事完成義務は残り、報酬全額は仕事を完成して目的物を引き渡すときでなければ請求できない。",
+   "body": "請負は、632条のとおり「当事者の一方がある仕事を完成することを約し、相手方がその仕事の結果に対してその報酬を支払うことを約する」契約であり、報酬は633条により「仕事の目的物の引渡しと同時に」支払うものとされる。建築途中の建物が滅失しても、改めて建築することが可能であれば仕事の完成は不能になっておらず、請負人は仕事完成義務を負い続けると解されている。634条の注文者が受ける利益の割合に応じた報酬は「仕事を完成することができなくなったとき」などの場合のものであり、完成がなお可能な本肢には当たらない。したがって、請負人は新たに建物を完成させなければ請負代金全額を請求できず、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "632",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "当事者の一方がある仕事を完成することを約し、相手方がその仕事の結果に対してその報酬を支払うことを約する",
+     "text_sha256": "e8e664e4c7804ff3702cd7b1134ccdee64068f0f8c808923333aec625d84bc12",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "633",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "仕事の目的物の引渡しと同時に",
+     "text_sha256": "e1e8254502018fa645a8aae5fcd2bf56db66fa0ef68d89180146fbb9ef568dda",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "634",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "仕事を完成することができなくなったとき",
+     "text_sha256": "d7406a0e5ebd5fc5b3c00f0c4b76fe27ee1ea7c89886847ecda92e672d1ea785",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "完成が可能な限り仕事完成義務が残ることは解釈による",
+    "634条は出題後の改正で置かれた条文。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2015-minpo-q22-3",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q22-4"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。寄託者にも帰責事由がない前提では、受寄者は既にした履行の割合に応じた報酬しか請求できず、履行不能になった後の期間の報酬は請求できない。",
+   "body": "寄託には、665条により受任者の報酬に関する648条が準用される。648条3項は、「委任者の責めに帰することができない事由によって委任事務の履行をすることができなくなったとき」に、受任者は「既にした履行の割合に応じて報酬を請求することができる」と定めるので、受寄者が請求できるのは履行不能になるまでの期間に対応する報酬に限られる。また、当事者双方の責めに帰することができない事由による履行不能であれば、536条1項により寄託者は「反対給付の履行を拒むことができる」。肢は寄託者の帰責事由に触れておらず、双方に帰責事由がない場合を前提とすると、履行不能後の期間の報酬は請求できず、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "665",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "第六百四十六条から第六百四十八条まで、第六百四十九条並びに第六百五十条第一項及び第二項の規定は、寄託について準用する。",
+     "text_sha256": "1b9b2d591b887064a129c447fcb9f805549aa4d5fbda52b3d66a23398e8713e9",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "648",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "既にした履行の割合に応じて報酬を請求することができる",
+     "text_sha256": "83bd312be69131df0ddf21a00dbd04c5fdfa35b4f464a2cd505efc76a3ca10be",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "648",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "委任者の責めに帰することができない事由によって委任事務の履行をすることができなくなったとき",
+     "text_sha256": "83bd312be69131df0ddf21a00dbd04c5fdfa35b4f464a2cd505efc76a3ca10be",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "536",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "反対給付の履行を拒むことができる",
+     "text_sha256": "07238591347b0008a936f1e6eb7f8c43291d972cb540de8dd607128c70eb8bc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [],
+   "pending_cases": [],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "寄託者にも帰責事由がない場合を前提とした（肢は寄託者の帰責事由に触れていない）",
+    "648条3項・665条・536条は出題後に改正された。改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2015-minpo-q22-4",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}

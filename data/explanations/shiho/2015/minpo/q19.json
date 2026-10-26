@@ -1,0 +1,242 @@
+{
+ "question_id": "shiho-2015-minpo-q19",
+ "prompt_version": "explain-v5",
+ "generated_at": "2026-10-26",
+ "generated_by": {
+  "model": "claude-opus-5-5",
+  "via": "Claude Code セッション（サブエージェント）"
+ },
+ "explanations": [
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q19-a"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。安全配慮義務違反による債務不履行の損害賠償債務は期限の定めのない債務であり、損害発生時ではなく債権者から履行の請求を受けた時に遅滞に陥る（判例）。",
+   "body": "誤りは「損害が発生した時から遅滞に陥る」の部分である。判例は、安全保証義務違背を理由とする債務不履行に基づく損害賠償債務は期限の定めのない債務であり、債権者から履行の請求を受けた時に履行遅滞となるとした（最判昭和55年12月18日）。期限の定めのない債務については「債務の履行について期限を定めなかったときは、債務者は、履行の請求を受けた時から遅滞の責任を負う。」（412条3項）。したがって肢は誤り。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "412",
+     "paragraphs": [
+      "3"
+     ],
+     "quote": "債務の履行について期限を定めなかったときは、債務者は、履行の請求を受けた時から遅滞の責任を負う。",
+     "text_sha256": "f4fa559cc04ea54ec21234490f08e386ccfdf08e099045e9b123098d7a3c0fc2",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "安全配慮義務違反による損害賠償債務の遅滞時期",
+     "court": "最高裁判所第一小法廷",
+     "date": "1980-12-18",
+     "case_number": "昭和51(オ)1089",
+     "holding": "安全保証義務違背を理由とする債務不履行に基づく損害賠償債務は、期限の定めのない債務であり、債権者から履行の請求を受けた時に履行遅滞となる。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/53262/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2015-minpo-q19-a",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q19-b"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。弁済の場所は、特定物の引渡しは債権発生時にその物が存在した場所、その他の弁済は債権者の現在の住所である（484条1項）。",
+   "body": "484条1項は「弁済をすべき場所について別段の意思表示がないときは、特定物の引渡しは債権発生の時にその物が存在した場所において、その他の弁済は債権者の現在の住所において、それぞれしなければならない。」と定める。肢はこの規定のとおりであり、正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "484",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁済をすべき場所について別段の意思表示がないときは、特定物の引渡しは債権発生の時にその物が存在した場所において、その他の弁済は債権者の現在の住所において、それぞれしなければならない。",
+     "text_sha256": "f5349d95a4743c7bd0cd6b3bf1eb4e70f8c43b7209930f3d3ced5ab11e6eb2bb",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2015-minpo-q19-b",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q19-c"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。弁済の費用は、別段の意思表示がなければ債務者の負担であり、債権者と債務者が等しい割合で負担するのではない（485条）。",
+   "body": "誤りは「債権者と債務者の双方が等しい割合でその費用を負担する」の部分である。485条は「弁済の費用について別段の意思表示がないときは、その費用は、債務者の負担とする。ただし、債権者が住所の移転その他の行為によって弁済の費用を増加させたときは、その増加額は、債権者の負担とする。」と定める。後半の増加額を債権者が負担する点は条文どおりだが、原則を等分の負担とする点が誤っている。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "485",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁済の費用について別段の意思表示がないときは、その費用は、債務者の負担とする。ただし、債権者が住所の移転その他の行為によって弁済の費用を増加させたときは、その増加額は、債権者の負担とする。",
+     "text_sha256": "9c4f3d78488b2618919c0687d5ee0864cd18018c4777a148ccea42a69958bed5",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2015-minpo-q19-c",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q19-d"
+   },
+   "version": 1,
+   "stated_truth": true,
+   "conclusion": "○。借地上の建物の賃借人Ｃは地代の弁済について法律上の利害関係を有するので（判例）、借地人Ｂが支払を拒んでいても、Ａに地代を弁済できる。",
+   "body": "「債務の弁済は、第三者もすることができる。」（474条1項）が、「弁済をするについて正当な利益を有する者でない第三者は、債務者の意思に反して弁済をすることができない。」（同条2項）とされる。判例は、借地上の建物の賃借人は、地代の弁済について法律上の利害関係を有するとした（最判昭和63年7月1日）。建物賃借人Ｃは、地代の不払で土地賃貸借が解除されれば建物の使用を続けられなくなるおそれがあり、今の条文の「正当な利益を有する者」にあたると解されている。したがって、Ｂが賃料の支払を拒絶していても、ＣはＡに甲土地の賃料を支払うことができ、肢は正しい。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "474",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "債務の弁済は、第三者もすることができる。",
+     "text_sha256": "e74267d8643752e11c0a9a08befe902b689810b558efc7a252153c10a2cbb852",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "474",
+     "paragraphs": [
+      "2"
+     ],
+     "quote": "弁済をするについて正当な利益を有する者でない第三者は、債務者の意思に反して弁済をすることができない。",
+     "text_sha256": "e74267d8643752e11c0a9a08befe902b689810b558efc7a252153c10a2cbb852",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "cases": [
+    {
+     "name": "借地上の建物の賃借人と地代の弁済についての利害関係",
+     "court": "最高裁判所第二小法廷",
+     "date": "1988-07-01",
+     "case_number": "昭和62(オ)1577",
+     "holding": "借地上の建物の賃借人は、地代の弁済について法律上の利害関係を有する。",
+     "verified_urls": [
+      "https://www.courts.go.jp/hanrei/62367/detail2/index.html"
+     ]
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "判例の「法律上の利害関係」を持つ者が今の474条2項の「正当な利益を有する者」にあたるという説明は解釈による",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2015-minpo-q19-d",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  },
+  {
+   "target": {
+    "type": "statement",
+    "id": "shiho-2015-minpo-q19-e"
+   },
+   "version": 1,
+   "stated_truth": false,
+   "conclusion": "×。元本・利息・費用の全部に足りない弁済は、費用・利息・元本の順に充当しなければならず、弁済者が一方的に元本への充当を指定することはできない（489条1項）。",
+   "body": "誤りは、借主が「まず元本に充当することを指定することができ」、貸主が直ちに異議を述べない限り効力を有するとする部分である。489条1項は、元本のほか利息及び費用を支払うべき場合に「弁済をする者がその債務の全部を消滅させるのに足りない給付をしたときは、これを順次に費用、利息及び元本に充当しなければならない。」と定める。弁済をする者による充当の指定を認める488条1項は「次条第一項に規定する場合を除く」としていて、この場面には及ばない。当事者間で充当の順序について合意があればそれに従うが（490条）、肢のような借主の一方的な指定は効力を有しない。",
+   "citations": [
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "489",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "弁済をする者がその債務の全部を消滅させるのに足りない給付をしたときは、これを順次に費用、利息及び元本に充当しなければならない。",
+     "text_sha256": "539b3ed0f13f3072a315ebb00d339981665c4a1fe067afcdd1f5d9b9654cb74d",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "488",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "次条第一項に規定する場合を除く",
+     "text_sha256": "a5dd9e0c39c43543240176fad5e48e73072ec85140eaa28915757124c584fb3c",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    },
+    {
+     "type": "statute",
+     "law": "民法",
+     "article": "490",
+     "paragraphs": [
+      "1"
+     ],
+     "quote": "前二条の規定にかかわらず、弁済をする者と弁済を受領する者との間に弁済の充当の順序に関する合意があるときは、その順序に従い、その弁済を充当する。",
+     "text_sha256": "211a651aa59b8181b51a33ba31a1fccdd7c70ec40f5d02c33d7f20a91f06e916",
+     "fetched_at": "2026-10-18",
+     "source_url": "https://laws.e-gov.go.jp/api/1/lawdata/%E6%98%8E%E6%B2%BB%E4%BA%8C%E5%8D%81%E4%B9%9D%E5%B9%B4%E6%B3%95%E5%BE%8B%E7%AC%AC%E5%85%AB%E5%8D%81%E4%B9%9D%E5%8F%B7"
+    }
+   ],
+   "notes": [
+    "現行の条文で説明した（出題は改正前）",
+    "改正前の内容は条文の本文で確認していない"
+   ],
+   "id": "exp-shiho-2015-minpo-q19-e",
+   "status": "published",
+   "check": {
+    "passed": true,
+    "failures": []
+   }
+  }
+ ]
+}
