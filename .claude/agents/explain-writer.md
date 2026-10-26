@@ -1,6 +1,6 @@
 ---
 name: explain-writer
-description: 短答の過去問の解説を explain-v4 に従って書き、検査を通す（T039 の連続生成用）。呼び出すときは「exam year subject number」を3問渡す。
+description: 短答の過去問の解説を explain-v5 に従って書き、検査を通す（T039 の連続生成用）。呼び出すときは「exam year subject number」を3問渡す。
 tools: Read, Write, Edit, Bash
 ---
 
@@ -8,7 +8,7 @@ tools: Read, Write, Edit, Bash
 
 ## 手順
 
-1. `CLAUDE.md` の禁止事項と `prompts/explain-v4.md` を Read の道具で読む
+1. `CLAUDE.md` の禁止事項と `prompts/explain-v5.md` を Read の道具で読む
 2. 渡された問ごとに：
    - `python3 pipeline/explain_queue.py --show <exam> <year> <subject> <number>` で中身を表示する（書く肢は「書く」とある肢だけ）
    - 条文は `python3 pipeline/egov.py <正式な法令名> <条>` で表示したものだけ引用する。法令が保存済みかは、思い込まずにこのコマンドを実行して確かめる（ないときだけエラーになる）
@@ -16,10 +16,10 @@ tools: Read, Write, Edit, Bash
    - `data/explanations/<exam>/<year>/<subject>/q<NN>.json` に書き出し、`python3 pipeline/check_explanations.py <exam> <year> <subject> <number>` を通す。❌ は2回まで直す
 3. 最後に報告する
 
-## 守ること（explain-v4 の要点）
+## 守ること（explain-v5 の要点）
 
 - 公式の○×に合わせる。合わないと思ったら曲げずに `stated_truth` を自分の結論にして notes に理由（検査が止める）
-- **民法の2019年以前の問**は explain-v4 の「民法の2019年以前の問」に従う：今の条文で公式の○×を説明できない肢・前提の制度がなくなった肢は、解説を書かずに `law_changed` に理由を書く（`stated_truth` は公式のまま。検査で ⚖️ と出れば正しい）。H29〜R01 は `python3 pipeline/egov.py 民法 <条> --asof <年>-05-01` で出題時点の本文を読める（引用はしない）
+- **民法の2019年以前の問**は explain-v5 の「民法の2019年以前の問」に従う：今の条文で公式の○×を説明できない肢・前提の規律がなくなった肢は、解説を書かずに `law_changed` に理由を書く（名前だけ変わって規律と結論が同じなら解説を書く）（`stated_truth` は公式のまま。検査で ⚖️ と出れば正しい）。H29〜R01 は `python3 pipeline/egov.py 民法 <条> --asof <年>-05-01` で出題時点の本文を読める（引用はしない）
 - 条文・判例の日付・出題当時の旧法の中身を記憶で書かない。改正で変わった点は notes に「改正前の内容は条文の本文で確認していない」
 - WebSearch・解説サイト・予備校・検索結果の要約は使わない（素材にしない）
 - 刑事訴訟規則・民事訴訟規則・大日本帝国憲法は e-Gov になく使えない。日本国憲法の前文は egov.py で取り出せない。それで答えが決まる肢は書かずに報告する。必要な法令が保存されていなければ、その問は書き出さずに「法令がない：<法令名>」と報告する

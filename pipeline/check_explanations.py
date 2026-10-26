@@ -12,7 +12,7 @@
   8. verified_urls は courts.go.jp の今開ける URL（T041）
   9. 問の解説（question_explanation。T018：肢ごとの○×が決まらない問）は、stated_answer が公式の正解（解答欄の順）と一致し、
      2〜5・7・8 も肢の解説と同じに通る
-  10. law_changed（T013・explain-v4：民法の2019年以前で、現行の条文では公式の○×を説明できない肢）は、解説の本文を書かず、
+  10. law_changed（T013・explain-v4 以降：民法の2019年以前で、現行の条文では公式の○×を説明できない肢）は、解説の本文を書かず、
      理由と根拠の条文（引用は 2・4 と同じに照合）だけ。stated_truth は公式の○×のまま。status は law_changed（公開しない）
 
 使い方：
