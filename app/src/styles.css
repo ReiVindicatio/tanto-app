@@ -1691,6 +1691,22 @@ mark.twin-diff {
   gap: 14px;
   margin: 0.2rem 0 0.4rem;
 }
+/* 背景つき（T065：律のページと同じ背景） */
+.vn-stage.with-bg {
+  margin: 0.2rem -16px 0.6rem;
+  padding: 0 12px;
+  background-size: cover;
+  background-position: center;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.vn-stage.with-bg .vn-bubble {
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+}
+.vn-stage.with-bg .vn-sprite {
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.18));
+  margin-top: 12px;
+}
 .vn-sprite {
   height: 240px;
   width: auto;
@@ -1739,8 +1755,8 @@ mark.twin-diff {
 }
 /* 寝そべる絵は横長。頭の大きさが腰かける絵とそろう幅にする（縁の線は絵の下から幅の 8%） */
 .dock-ritsu.lie {
-  width: 105px;
-  bottom: -8px;
+  width: 132px;
+  bottom: -10px;
 }
 .hop {
   animation: ritsu-hop 0.8s ease-out;
@@ -1952,6 +1968,18 @@ body:has(.home-dock) .footer {
 .ritsu-level {
   margin: 6px 0 4px;
 }
+.ritsu-level-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ritsu-level-row .lv {
+  font-weight: bold;
+  color: var(--text-strong);
+}
+.ritsu-level-row .grow {
+  flex: 1;
+}
 .ritsu-tabs {
   display: flex;
   gap: 6px;
@@ -2085,7 +2113,7 @@ body:has(.home-dock) .footer {
   --w: 100px;
 }
 .dock-ritsu.lie {
-  --w: 105px;
+  --w: 132px;
 }
 .perch-body {
   display: block;
@@ -2113,29 +2141,32 @@ body:has(.home-dock) .footer {
 }
 /* 足をバタバタ（腰かける）・パタパタ（寝そべる）：足の違う2コマを交互に。コマを出している間は元の絵を隠す
    （コマの、元の足があったところは透明なので、重ねたままだと元の足が透けて足が4本に見える） */
+/* ゆっくり、間をあけて（「落ち着きがなさすぎる」：ユーザー）：3.6秒のうち、振る・戻す・逆に振る・戻すのあと、しばらく休む */
 .perch.swing.has-kick .perch-body {
-  animation: kick-base 1.1s steps(1) infinite;
+  animation: kick-base 3.6s steps(1) infinite;
 }
 @keyframes kick-base {
   0% { opacity: 1; }
-  25% { opacity: 0; }
-  50% { opacity: 1; }
-  75% { opacity: 0; }
+  12% { opacity: 0; }
+  24% { opacity: 1; }
+  36% { opacity: 0; }
+  48% { opacity: 1; }
 }
 .perch.swing .perch-frame.k1 {
-  animation: kick-1 1.1s steps(1) infinite;
+  animation: kick-1 3.6s steps(1) infinite;
 }
 .perch.swing .perch-frame.k2 {
-  animation: kick-2 1.1s steps(1) infinite;
+  animation: kick-2 3.6s steps(1) infinite;
 }
 @keyframes kick-1 {
   0% { opacity: 0; }
-  25% { opacity: 1; }
-  50% { opacity: 0; }
+  12% { opacity: 1; }
+  24% { opacity: 0; }
 }
 @keyframes kick-2 {
   0% { opacity: 0; }
-  75% { opacity: 1; }
+  36% { opacity: 1; }
+  48% { opacity: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
   .perch .perch-body,
@@ -2320,4 +2351,9 @@ body:has(.home-dock) .footer {
 }
 .me-tabs {
   margin: 0 0 8px;
+}
+/* 寝そべると横に長いので、吹き出しを少し左へ */
+.listen-dock:has(.dock-ritsu.lie) .dock-bubble,
+.bar-dock:has(.dock-ritsu.lie) .dock-bubble {
+  right: 144px;
 }

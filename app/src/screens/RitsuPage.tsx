@@ -133,9 +133,7 @@ export default function RitsuPage() {
         <button className="link" onClick={() => back({ name: "me" })}>
           ← 戻る
         </button>
-        <span className="muted small">
-          Lv.{p.level}・次まで {p.need - p.into}
-        </span>
+        <span />
         <span />
       </div>
 
@@ -157,7 +155,13 @@ export default function RitsuPage() {
         </button>
       </div>
       <div className="ritsu-level">
-        <Progress value={p.into / p.need} />
+        <div className="ritsu-level-row">
+          <span className="lv">Lv.{p.level}</span>
+          <div className="grow">
+            <Progress value={p.into / p.need} />
+          </div>
+          <span className="muted small">次まで {p.need - p.into}</span>
+        </div>
         {next && <div className="muted small">Lv.{next.level} で「{next.name}」が開きます</div>}
       </div>
 

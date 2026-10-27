@@ -30,6 +30,7 @@ import {
 } from "./listen";
 import { characterImage, characterOn, listenFace, markTipSeen, tipSeen, type Expression } from "./character";
 import { ALL_LINES, pickLine } from "./ritsu/lines";
+import { bgFor, currentTheme } from "./ritsu/themes";
 import { progressNow } from "./progress";
 import { Bubble, RitsuDock } from "./Ritsu";
 
@@ -46,8 +47,9 @@ const PEEK_FACES: Expression[] = ["normal", "think", "happy", "sad", "sleepy", "
  */
 /** 始める前・おわりの律：立ち絵を右に、吹き出しを左に分けて置く（幅が狭くても重ならない） */
 function Stage({ face, children }: { face: Expression; children: React.ReactNode }) {
+  const theme = currentTheme();
   return (
-    <div className="vn-stage">
+    <div className="vn-stage with-bg" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}chars/bg/${bgFor(theme)}.webp)` }}>
       {children}
       <img className="vn-sprite" src={characterImage("base", face)} alt="" data-face={face} />
     </div>
