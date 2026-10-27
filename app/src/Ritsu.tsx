@@ -166,23 +166,32 @@ export function RitsuDock({
   const speaking = useSpeaking();
   const motion = motionOf(currentTheme());
   const [gesture, setGesture] = useState<string | null>(null);
-  // 待っている間の仕草：14〜30秒にいちど、2秒ほど
+  // 待っている間の仕草：最初は4〜8秒、そのあと7〜14秒ごとに2秒ほど。衣装の動作は多めに（4割）。
+  // 寝そべる（しばらく操作がない）までに何度か見られるように（30秒で寝そべっていて、ほとんど見られなかった：ユーザー）
   useEffect(() => {
     if (!lively || pose !== "sit") return;
     const idleGestures = motion.gestures.filter((g) => ["yawn", "stretch", "rub", "sip", "signature"].includes(g));
     if (!idleGestures.length) return;
     let t: number;
     let end: number;
-    const schedule = () => {
-      t = window.setTimeout(() => {
-        setGesture(idleGestures[Math.floor(Math.random() * idleGestures.length)]);
-        end = window.setTimeout(() => {
-          setGesture(null);
-          schedule();
-        }, 2000);
-      }, 14000 + Math.random() * 16000);
+    const others = idleGestures.filter((g) => g !== "signature");
+    const pick = () =>
+      idleGestures.includes("signature") && (Math.random() < 0.4 || !others.length)
+        ? "signature"
+        : others[Math.floor(Math.random() * others.length)];
+    const schedule = (first: boolean) => {
+      t = window.setTimeout(
+        () => {
+          setGesture(pick());
+          end = window.setTimeout(() => {
+            setGesture(null);
+            schedule(false);
+          }, 2200);
+        },
+        first ? 4000 + Math.random() * 4000 : 7000 + Math.random() * 7000,
+      );
     };
-    schedule();
+    schedule(true);
     return () => {
       window.clearTimeout(t);
       window.clearTimeout(end);
@@ -292,7 +301,7 @@ export function useIdle(ms: number): boolean {
  */
 export function TabRitsu() {
   const level = progressNow().level;
-  const idle = useIdle(30000);
+  const idle = useIdle(75000);
   const [line, setLine] = useState<Line | undefined>(undefined);
   const theme = currentTheme();
   return (

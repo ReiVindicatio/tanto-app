@@ -15,7 +15,7 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
   const [picks, setPicks] = useState<(number | null)[]>(() => emptyPicks(data.questions[0]));
   const [result, setResult] = useState<Grade | null>(null);
   const [showChar] = useState(characterOn);
-  const idle = useIdle(60000);
+  const idle = useIdle(120000);
   const [scores, setScores] = useState<QuestionResultItem[]>([]);
   const [startedAt, setStartedAt] = useState(() => Date.now());
   const [finishedAt, setFinishedAt] = useState<number | null>(null);

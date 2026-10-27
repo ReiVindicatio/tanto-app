@@ -46,7 +46,7 @@ export const THEMES: Theme[] = [
     level: 3,
     bg: "window",
     desc: "冬のはじめのお休みの日。日の当たる窓辺で、ココアを飲みながら小さな六法を読む。いつものベストを脱いだ、初めての私服",
-    motion: { blink: ["normal", "smile", "think", "sad", "smug", "jito"], swing: ["normal", "think", "smile"], kick: true, hop: [], mid: true, gestures: [], talk: [], talkBase: [] },
+    motion: { ...FULL_MOTION },
   },
 ];
 

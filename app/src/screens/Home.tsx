@@ -38,7 +38,7 @@ function QuickStart({
   const scopeName = scoped.length > 0 ? scoped[0].name : "全科目";
   const [showChar] = useState(characterOn);
   const p = progressNow();
-  const idle = useIdle(30000); // しばらく触らないと寝そべって本を読む
+  const idle = useIdle(75000); // しばらく触らないと寝そべって本を読む（その前に仕草を何度か見せる）
   // 律のひとこと（T065）。描き直しても変わらないよう、種から選ぶ。律を押すと種を変えて、声つきで言い直す
   const [seed, setSeed] = useState(() => Math.floor(Math.random() * 233280));
   const lineFor = (sd: number) =>

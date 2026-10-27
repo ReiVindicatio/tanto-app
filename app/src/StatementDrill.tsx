@@ -47,7 +47,7 @@ export default function StatementDrill({
   const [showChar] = useState(characterOn);
   // はじき方の案内は、律の吹き出しで1回だけ（答えたら覚える）。2回目からは今までどおりの小さな文字
   const [swipeTip] = useState(() => showChar && !tipSeen("swipe"));
-  const idle = useIdle(40000);
+  const idle = useIdle(90000);
   const [order, setOrder] = useState<Statement[]>(cards);
   const [i, setI] = useState(0);
   const [answer, setAnswer] = useState<boolean | null>(null);
