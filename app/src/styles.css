@@ -2070,3 +2070,166 @@ body:has(.home-dock) .footer {
     animation: none !important;
   }
 }
+
+/* ---- お披露目（T065） ---- */
+.reveal-invite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+  margin: 8px 0 12px;
+  padding: 14px 16px;
+  border: 1.5px solid var(--brand);
+  background: linear-gradient(135deg, #fff0f3, #fff7ec);
+  color: var(--text-strong);
+  font-weight: normal;
+}
+[data-theme="dark"] .reveal-invite {
+  background: linear-gradient(135deg, #3a2a30, #3a3128);
+}
+.reveal-invite-kicker {
+  font-size: 0.8rem;
+  color: var(--brand);
+  font-weight: bold;
+  letter-spacing: 0.08em;
+}
+.reveal-invite-name {
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+.reveal-kicker {
+  margin: 4px 0 0;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  color: var(--brand);
+}
+.reveal-title {
+  margin: 2px 0 10px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.reveal-stage {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #2b2024;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.reveal-stage img {
+  display: block;
+  width: 100%;
+  height: auto;
+  animation: reveal-zoom 2.2s ease-out;
+}
+@keyframes reveal-zoom {
+  from {
+    transform: scale(1.08);
+    filter: brightness(0.7);
+  }
+}
+/* 幕：左右に開いて消える */
+.curtain {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 51%;
+  background: repeating-linear-gradient(90deg, #c2415a 0 14px, #a8344c 14px 28px);
+  box-shadow: inset 0 -30px 40px rgba(0, 0, 0, 0.25);
+  animation: curtain-open 1.2s cubic-bezier(0.6, 0, 0.3, 1) 0.15s forwards;
+}
+.curtain.left {
+  left: 0;
+}
+.curtain.right {
+  right: 0;
+  animation-name: curtain-open-right;
+}
+@keyframes curtain-open {
+  to {
+    transform: translateX(-102%);
+  }
+}
+@keyframes curtain-open-right {
+  to {
+    transform: translateX(102%);
+  }
+}
+.reveal-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-height: 78px;
+  margin: 14px 0 4px;
+}
+.reveal-bubble {
+  font-size: 1.05rem;
+}
+.reveal-bubble.tail-down::before,
+.reveal-bubble.tail-down::after {
+  right: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.reveal-desc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  text-align: center;
+}
+.reveal-actions {
+  justify-content: center;
+  margin: 10px 0 24px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .curtain {
+    display: none;
+  }
+  .reveal-stage img {
+    animation: none;
+  }
+}
+.theme-tile {
+  position: relative;
+}
+.theme-new {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--brand);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.album-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--text-strong);
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+.album-tile img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+}

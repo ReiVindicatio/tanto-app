@@ -73,3 +73,29 @@ test("律のページ（T065）：上の帯の Lv から開き、律を押すと
   await page.locator(".streak-chip").click();
   await expect(page).toHaveURL(/\/me$/);
 });
+
+test("お披露目（T065）：Lv.3 でニットが開くと、ホームに案内。幕が開いてセリフを最後まで聞くと着てもらえ、アルバムに並ぶ", async ({ page }) => {
+  // 初めての肢を25問正解（経験値50）＝ Lv.3
+  await page.addInitScript(() => {
+    if (localStorage.getItem("tanto.log.v1")) return;
+    const now = new Date().toISOString();
+    const log = Array.from({ length: 25 }, (_, i) => ({ id: `r${i}`, s: `yobi-2026-minpo-q${String(i + 1).padStart(2, "0")}-a`, ok: true, at: now }));
+    localStorage.setItem("tanto.log.v1", JSON.stringify(log));
+  });
+  await openHome(page);
+  await expect(page.locator(".streak-chip")).toContainText("Lv.3");
+  await page.locator(".reveal-invite").click();
+  await expect(page).toHaveURL(/\/ritsu\/reveal\/knit$/);
+  await expect(page.locator(".reveal-title")).toHaveText("ひだまりニット");
+  const bubble = page.locator(".reveal-bubble");
+  await expect(bubble).toHaveText("じゃーん……ど、どうかな", { timeout: 5000 });
+  for (let k = 0; k < 4; k++) await page.getByRole("button", { name: "次のセリフ" }).click();
+  await expect(bubble).toHaveText("ココア、いれたよ。一緒に飲も");
+  await page.getByRole("button", { name: "着てもらう" }).click();
+  await expect(page).toHaveURL(/\/ritsu$/);
+  await expect(page.locator(".ritsu-stage .vn-sprite")).toHaveAttribute("src", /\/chars\/ritsu\/knit\/base-/);
+  await expect(page.locator(".album-tile")).toHaveCount(1);
+  // 一度見たら、ホームの案内は出ない
+  await tab(page, "ホーム").click();
+  await expect(page.locator(".reveal-invite")).toHaveCount(0);
+});

@@ -9,6 +9,7 @@ import { buildDaily, DAILY_SIZES, describeCounts, ENDLESS, ENDLESS_BATCH, getDai
 import { cardsOf, poolOf } from "./common";
 import { characterOn } from "../character";
 import { homeLine, playLine, seeded } from "../ritsu/lines";
+import { pendingReveal } from "../ritsu/themes";
 import { progressNow } from "../progress";
 import { RitsuDock } from "../Ritsu";
 
@@ -43,7 +44,18 @@ function QuickStart({
     homeLine(preview.counts.due, p.today >= p.goal, p.level, { subject: scoped.length > 0 ? (prefs.subject ?? undefined) : undefined, rand: seeded(sd) });
   const said = lineFor(seed);
 
+  const reveal = showChar ? pendingReveal(p.level) : undefined;
+
   return (
+    <>
+    {/* 新しい衣装が開いていて、まだお披露目を見ていなければ（T065） */}
+    {reveal && (
+      <button className="card reveal-invite" onClick={() => navigate({ name: "reveal", theme: reveal.id })}>
+        <span className="reveal-invite-kicker">新しい衣装のお披露目</span>
+        <span className="reveal-invite-name">「{reveal.name}」</span>
+        <span className="muted small">押すと律が見せてくれます</span>
+      </button>
+    )}
     <div className="card hero">
       {/* 律の今日の案内（T063・T065）：タブの縁からのぞく（画面の下に固定）。急かさない・連続記録で脅さない */}
       {showChar && cardIds.size > 0 && (
@@ -127,6 +139,7 @@ function QuickStart({
         {endless && "エンドレスは、右上の「終わる」を押すまで続きます。"}
       </p>
     </div>
+    </>
   );
 }
 

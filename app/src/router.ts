@@ -12,7 +12,8 @@ export type Route =
   | { name: "article"; law: string; article: string }
   | { name: "privacy" }
   | { name: "terms" }
-  | { name: "ritsu" };
+  | { name: "ritsu" }
+  | { name: "reveal"; theme: string };
 
 export type Tab = "home" | "subjects" | "me";
 
@@ -32,12 +33,15 @@ export function parse(pathname: string): Route {
   if (p === "/privacy") return { name: "privacy" };
   if (p === "/terms") return { name: "terms" };
   if (p === "/ritsu") return { name: "ritsu" };
+  const rv = p.match(/^\/ritsu\/reveal\/([a-z0-9-]+)$/);
+  if (rv) return { name: "reveal", theme: rv[1] };
   return { name: "home" };
 }
 
 export function toPath(r: Route): string {
   const p = { home: "/", subjects: "/subjects", me: "/me", play: "/play", mock: "/mock", privacy: "/privacy", terms: "/terms", ritsu: "/ritsu" } as const;
   if (r.name === "article") return `${BASE}/articles/${encodeURIComponent(r.law)}/${encodeURIComponent(r.article)}`;
+  if (r.name === "reveal") return `${BASE}/ritsu/reveal/${r.theme}`;
   return BASE + (r.name === "subject" ? `/subjects/${r.subject}` : p[r.name]);
 }
 
@@ -45,7 +49,7 @@ export function toPath(r: Route): string {
 export function tabOf(r: Route): Tab | null {
   if (r.name === "subject") return "subjects";
   if (r.name === "play") return null;
-  if (r.name === "privacy" || r.name === "terms" || r.name === "ritsu") return "me"; // 律のページ（T065）は上の帯の Lv から // マイページ・フッターから開く
+  if (r.name === "privacy" || r.name === "terms" || r.name === "ritsu" || r.name === "reveal") return "me"; // 律のページ（T065）は上の帯の Lv から // マイページ・フッターから開く
   if (r.name === "mock") return "home"; // 模試を選ぶ画面はホームから開く
   if (r.name === "article") return "subjects"; // 条文の画面（T060）
   return r.name;

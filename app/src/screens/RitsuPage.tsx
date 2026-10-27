@@ -1,12 +1,13 @@
 // 律のページ（T065）：立ち絵（押すとひとこと）・レベル・テーマ（着替え）・表情・セリフ帳・プロフィール。
 // 律の言葉は ritsu/lines.json の決まった言葉だけ。声は押したときだけ鳴らす
 import { useState } from "react";
-import { back } from "../router";
+import { back, navigate } from "../router";
 import { progressNow } from "../progress";
 import { characterImage, FACES, type Expression } from "../character";
 import { Bubble } from "../Ritsu";
-import { currentTheme, isUnlocked, nextTheme, setTheme, THEMES } from "../ritsu/themes";
-import { ALL_LINES, lineText, pickLine, playLine, type Line } from "../ritsu/lines";
+import { currentTheme, isRevealed, isUnlocked, nextTheme, setTheme, THEMES } from "../ritsu/themes";
+import { ALL_LINES, lineText, linesOf, pickLine, playLine, type Line } from "../ritsu/lines";
+import { CHAR_BASE } from "../character";
 import { Progress } from "./common";
 
 const FACE_NAMES: Record<Expression, string> = {
@@ -23,6 +24,7 @@ const FACE_NAMES: Record<Expression, string> = {
 
 const SCENE_NAMES: Record<string, string> = {
   tap: "おしゃべり",
+  wear_knit: "ひだまりニットのとき",
   morning: "朝",
   day: "昼",
   evening: "夜",
@@ -45,6 +47,7 @@ const SCENE_NAMES: Record<string, string> = {
 
 function sceneName(scene: string): string {
   if (scene.startsWith("subject_")) return "科目";
+  if (scene.startsWith("reveal_")) return "お披露目";
   return SCENE_NAMES[scene] ?? scene;
 }
 
@@ -62,7 +65,19 @@ export default function RitsuPage() {
     playLine(l);
   }
 
+  /** 押したときのひとこと：着ている衣装のときだけのセリフも混ぜる（3回に1回くらい） */
+  function talk() {
+    const wearLines = linesOf(`wear_${theme}`, p.level);
+    if (wearLines.length && Math.random() < 0.35) say(wearLines[Math.floor(Math.random() * wearLines.length)]);
+    else say(pickLine("tap", p.level));
+  }
+
   function wear(id: string) {
+    // まだお披露目を見ていない衣装は、お披露目から
+    if (id !== "default" && !isRevealed(id)) {
+      navigate({ name: "reveal", theme: id });
+      return;
+    }
     setTheme(id);
     setThemeState(id);
     if (id !== theme) say(pickLine("theme", p.level));
@@ -88,7 +103,7 @@ export default function RitsuPage() {
         ) : (
           <span />
         )}
-        <button className="ritsu-sprite-button" aria-label="律に話しかける" onClick={() => say(pickLine("tap", p.level))}>
+        <button className="ritsu-sprite-button" aria-label="律に話しかける" onClick={talk}>
           <img className="vn-sprite" src={characterImage("base", face, theme)} alt="" data-face={face} />
         </button>
       </div>
@@ -119,10 +134,25 @@ export default function RitsuPage() {
             >
               <img src={characterImage("base", "smile", t.id)} alt="" loading="lazy" />
               <span>{ok ? t.name : `Lv.${t.level} で開く`}</span>
+              {ok && t.id !== "default" && !isRevealed(t.id) && <span className="theme-new">NEW</span>}
             </button>
           );
         })}
       </div>
+
+      {THEMES.some((t) => t.id !== "default" && isRevealed(t.id)) && (
+        <>
+          <h2>アルバム</h2>
+          <div className="album-grid">
+            {THEMES.filter((t) => t.id !== "default" && isRevealed(t.id)).map((t) => (
+              <button key={t.id} className="album-tile" onClick={() => navigate({ name: "reveal", theme: t.id })}>
+                <img src={`${CHAR_BASE}${t.id}/reveal.webp`} alt="" loading="lazy" />
+                <span>{t.name}</span>
+              </button>
+            ))}
+          </div>
+        </>
+      )}
 
       <h2>表情</h2>
       <div className="face-grid">

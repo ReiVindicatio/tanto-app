@@ -3,11 +3,19 @@ import { progressNow } from "../progress";
 
 /** 動きのコマ（T065）。あるものだけ動かす：blink＝目を閉じた絵がある表情、kick＝寝そべりの足のコマ、hop＝跳ねたところの絵がある表情、mid＝座る→寝そべるの間の絵 */
 export type Motion = { blink: string[]; kick: boolean; hop: string[]; mid: boolean };
-export type Theme = { id: string; name: string; level: number; motion?: Motion };
+/** desc＝どんなときの衣装か（お披露目で見せる。docs/ritsu-costumes.md の設計書から） */
+export type Theme = { id: string; name: string; level: number; desc?: string; motion?: Motion };
 
 /** 開くレベルの順。絵をそろえたテーマだけを載せる */
 export const THEMES: Theme[] = [
   { id: "default", name: "いつもの", level: 1, motion: { blink: ["normal", "smile", "think", "sad", "smug", "jito"], kick: true, hop: [], mid: true } },
+  {
+    id: "knit",
+    name: "ひだまりニット",
+    level: 3,
+    desc: "冬のはじめのお休みの日。日の当たる窓辺で、ココアを飲みながら小さな六法を読む。いつものベストを脱いだ、初めての私服",
+    motion: { blink: ["normal", "smile", "think", "sad", "smug", "jito"], kick: true, hop: [], mid: true },
+  },
 ];
 
 const NO_MOTION: Motion = { blink: [], kick: false, hop: [], mid: false };
@@ -49,4 +57,34 @@ export function setTheme(id: string): void {
 /** 次に開くテーマ */
 export function nextTheme(level: number): Theme | undefined {
   return THEMES.find((t) => t.level > level);
+}
+
+// ---- お披露目（T065）：新しいテーマが開いたら、一枚絵と律のセリフで見せる。見たかどうかは端末に覚える ----
+
+const REVEALED = "tanto.character.revealed.v1";
+
+function revealedList(): string[] {
+  try {
+    return JSON.parse(localStorage.getItem(REVEALED) ?? "[]") as string[];
+  } catch {
+    return [];
+  }
+}
+
+export function isRevealed(id: string): boolean {
+  return revealedList().includes(id);
+}
+
+export function markRevealed(id: string): void {
+  try {
+    const l = revealedList();
+    if (!l.includes(id)) localStorage.setItem(REVEALED, JSON.stringify([...l, id]));
+  } catch {
+    // 覚えられなくても、お披露目がもう一度出るだけ
+  }
+}
+
+/** 開いたのにまだお披露目を見ていないテーマ（開く順で最初の1つ） */
+export function pendingReveal(level: number): Theme | undefined {
+  return THEMES.find((t) => t.id !== "default" && isUnlocked(t, level) && !isRevealed(t.id));
 }

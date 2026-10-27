@@ -1,4 +1,5 @@
 import RitsuPage from "./screens/RitsuPage";
+import RevealPage from "./screens/RevealPage";
 import { useEffect, useState } from "react";
 import StatementDrill from "./StatementDrill";
 import ListenPlayer from "./ListenPlayer";
@@ -82,6 +83,7 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
           {route.name === "privacy" && <Privacy />}
           {route.name === "terms" && <Terms />}
           {route.name === "ritsu" && <RitsuPage />}
+          {route.name === "reveal" && <RevealPage theme={route.theme} />}
           {sets && route.name === "article" && <ArticlePage law={route.law} article={route.article} sets={sets} />}
           {sets && route.name === "mock" && <MockHome sets={sets} />}
           {/* 解く画面。条文の画面（T060）を開いている間は隠して残す。新しく始めた回は作り直す（key） */}

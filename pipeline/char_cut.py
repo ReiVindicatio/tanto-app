@@ -224,6 +224,12 @@ def main() -> None:
                 frames.append(patch(lie, src / f"lie-kick-{k}.png", KICK_BOX))
                 dsts.append(dst / f"lie-kick-{k}.webp")
         sit_group(frames, dsts, width=320, below=0.08, union=True)
+    if (src / "reveal.png").exists():  # お披露目の一枚絵（背景ごと。幅 960）
+        r = Image.open(src / "reveal.png").convert("RGB")
+        r = r.resize((960, round(r.height * 960 / r.width)), Image.LANCZOS)
+        with tempfile.NamedTemporaryFile(suffix=".png") as f:
+            r.save(f.name)
+            subprocess.run(["cwebp", "-quiet", "-q", "82", f.name, "-o", str(dst / "reveal.webp")], check=True)
     print(f"✅ {dst.relative_to(ROOT)}")
 
 

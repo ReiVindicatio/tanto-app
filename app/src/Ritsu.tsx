@@ -42,7 +42,9 @@ export function PerchFigure({
 }) {
   const theme = currentTheme();
   const m = motionOf(theme);
-  const src = pose === "lie" ? characterImage("lie", "sleepy", theme) : characterImage("sit", face, theme);
+  // 腰かける絵に「びっくり」はない（8表情）。ふつうで代わりに出す
+  const f: Expression = face === "surprised" ? "normal" : face;
+  const src = pose === "lie" ? characterImage("lie", "sleepy", theme) : characterImage("sit", f, theme);
   const frame = (name: string, cls: string) => <img className={`perch-frame ${cls}`} src={`${CHAR_BASE}${theme}/${name}.webp`} alt="" aria-hidden="true" />;
   return (
     <div
@@ -51,8 +53,8 @@ export function PerchFigure({
       data-face={face}
     >
       <img className="perch-body" src={src} alt="" />
-      {pose === "sit" && m.blink.includes(face) && frame(`sit-${face}-blink`, "blink")}
-      {pose === "sit" && hop && m.hop.includes(face) && frame(`hop-${face}`, "apex")}
+      {pose === "sit" && m.blink.includes(f) && frame(`sit-${f}-blink`, "blink")}
+      {pose === "sit" && hop && m.hop.includes(f) && frame(`hop-${f}`, "apex")}
       {pose === "sit" ? (
         <>
           <img className="perch-leg left" src={src} alt="" aria-hidden="true" />

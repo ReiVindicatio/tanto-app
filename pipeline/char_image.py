@@ -289,6 +289,8 @@ def theme_set(name: str, src: Path) -> None:
         if not out.exists():
             generate([_img(master), {"text": SAME_THEME + text + ". Keep it a chibi / super-deformed figure, 2 heads tall, full body. " + COMMON}], out)
             print(f"  {out.name}", flush=True)
+    if "--peek" not in sys.argv:  # のぞく絵（T063）は今は使わない（腰かける絵に替えた）
+        return
     pose = OUT / "g5" / "peek-happy.png"
     for face, text in THEME_FACES.items():
         if face == "surprised":
@@ -309,20 +311,38 @@ LIE = ("Image 1 shows the pose: a chibi girl LYING on her stomach on top of a fl
        "framing, size and ledge of image 1, sleepy relaxed face. ")
 
 
+def outfit(g: Path) -> str:
+    """テーマの衣装の説明（themes/<テーマ>/outfit.txt。docs/ritsu-costumes.md の設計書から書く）。
+    姿勢の見本（いつもの服）に引っぱられて、髪型や服の色が変わるのを防ぐ（2026-10-27：ニットでツインテール・黄色いベストに戻った）"""
+    f = g / "outfit.txt"
+    return (" IMPORTANT – the outfit and hairstyle must be exactly this, taken from the character image, NOT from the pose image: "
+            + f.read_text(encoding="utf-8").strip() + " ") if f.exists() else ""
+
+
+# 最初の1枚（腰かける・寝そべる）は、姿勢の見本の絵を渡さず、そのテーマのちびキャラと文章だけで作る。
+# いつもの服の絵を見本に渡すと、髪型（ツインテール）や服の色がそちらに引っぱられた（2026-10-27 ニット）
+LEDGE = ("Draw the SAME chibi character as in the reference image (same 2-heads-tall chibi style, same face, same hairstyle, same outfit and colors, "
+         "same art style; leave out handheld props unless stated). There is a flat horizontal ledge across the full width at the bottom of the image: "
+         "a thin dark top line with a plain light grey band below it. Plain white background above the ledge, no text. The whole outfit must be clearly visible. ")
+SIT_FIRST = "She SITS on the edge of the ledge with both legs dangling down in front of the grey band, hands on the ledge beside her, gentle closed-mouth smile. "
+LIE_FIRST = ("She LIES on her stomach on top of the ledge, reading a small plain book (no letters) propped in front of her, legs bent up behind her and "
+             "crossed at the ankles, relaxed sleepy face with closed eyes; her whole body is above the ledge line. ")
+
+
 def sit_set(name: str) -> None:
     g = OUT / "themes" / name
     pose, lie = g / "sit-smile.png", g / "lie-sleepy.png"
     if not pose.exists():
-        generate([_img(OUT / "themes" / "default" / "sit-smile.png"), _img(g / "chibi-smile.png"), {"text": SIT + THEME_FACES["smile"] + ". No text. " + COMMON}], pose)
+        generate([_img(g / "chibi-smile.png"), {"text": LEDGE + SIT_FIRST + outfit(g) + COMMON}], pose)
         print(f"  {pose.name}", flush=True)
     for face, text in THEME_FACES.items():
         out = g / f"sit-{face}.png"
         if face == "surprised" or out.exists():
             continue
-        generate([_img(pose), _img(g / f"chibi-{face}.png"), {"text": SIT + text + ". No text. " + COMMON}], out)
+        generate([_img(pose), _img(g / f"chibi-{face}.png"), {"text": SIT + text + "." + outfit(g) + "No text. " + COMMON}], out)
         print(f"  {out.name}", flush=True)
     if not lie.exists():
-        generate([_img(OUT / "themes" / "default" / "lie-sleepy.png"), _img(g / "chibi-smile.png"), {"text": LIE + "No text. " + COMMON}], lie)
+        generate([_img(g / "chibi-smile.png"), {"text": LEDGE + LIE_FIRST + outfit(g) + COMMON}], lie)
         print(f"  {lie.name}", flush=True)
 
 
@@ -351,14 +371,14 @@ def motion_set(name: str) -> None:
     for k, text in KICKS.items():
         out = g / f"lie-kick-{k}.png"
         if not out.exists():
-            generate([_img(g / "lie-sleepy.png"), {"text": KICK + text + ". Everything else must stay identical. No text. " + COMMON}], out)
+            generate([_img(g / "lie-sleepy.png"), {"text": KICK + text + ". Everything else must stay identical." + outfit(g) + "No text. " + COMMON}], out)
             print(f"  {out.name}", flush=True)
     for face in BLINK_FACES:
         out = g / f"blink-{face}.png"
         if not out.exists():
-            generate([_img(g / f"sit-{face}.png"), {"text": BLINK + "No text. " + COMMON}], out)
+            generate([_img(g / f"sit-{face}.png"), {"text": BLINK + outfit(g) + "No text. " + COMMON}], out)
             print(f"  {out.name}", flush=True)
-    for face in ("happy", "smug"):
+    for face in ("happy", "smug") if "--hop" in sys.argv else ():  # 跳ねたところの絵は大きさがそろわず使っていない（2026-10-27）
         out = g / f"hop-{face}.png"
         if not out.exists():
             generate([_img(g / f"sit-{face}.png"), {"text": HOP + THEME_FACES[face] + ". No text. " + COMMON}], out)
@@ -366,7 +386,7 @@ def motion_set(name: str) -> None:
     for k in (1, 2):
         out = g / f"mid-lie-{k}.png"
         if not out.exists():
-            generate([_img(g / "sit-smile.png"), _img(g / "lie-sleepy.png"), {"text": MID + "No text. " + COMMON}], out)
+            generate([_img(g / "sit-smile.png"), _img(g / "lie-sleepy.png"), {"text": MID + outfit(g) + "No text. " + COMMON}], out)
             print(f"  {out.name}", flush=True)
 
 
