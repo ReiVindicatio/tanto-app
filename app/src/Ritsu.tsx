@@ -49,6 +49,33 @@ export function RitsuSays({ face, children, className = "" }: { face: Expression
  * 足のバタバタ（腰かける・寝そべる）とまばたきは、足や目だけを描き直したコマを重ねて切り替える（テーマの motion にあるものだけ）。
  * 足を縦に縮めて見せるやり方は「伸び縮み」に見えたのでやめた（2026-10-27 ユーザー）
  */
+// 動きの絵は、律が初めて出たときに裏でまとめて読み込んでおく（その瞬間に読み込むと、初回だけ一瞬消えた：ユーザー）
+const preloaded = new Set<string>();
+const keep: HTMLImageElement[] = [];
+function preloadMotion(theme: string) {
+  if (preloaded.has(theme) || typeof Image === "undefined") return;
+  preloaded.add(theme);
+  const m = motionOf(theme);
+  const names = [
+    ...m.gestures.map((g) => `gesture-${g}`),
+    ...m.talk.map((f) => `sit-${f}-talk`),
+    ...m.blink.map((f) => `sit-${f}-blink`),
+    ...m.swing.flatMap((f) => [`sit-${f}-swing-1`, `sit-${f}-swing-2`]),
+    ...(m.kick ? ["lie-kick-1", "lie-kick-2"] : []),
+    ...(m.mid ? ["mid-lie"] : []),
+    "lie-sleepy",
+    ...["normal", "smile", "think", "happy", "sad", "sleepy", "smug", "jito"].map((f) => `sit-${f}`),
+  ];
+  // 少し遅らせて、画面の表示を先に（すき間の時間に読む）
+  window.setTimeout(() => {
+    for (const n of names) {
+      const img = new Image();
+      img.src = `${CHAR_BASE}${theme}/${n}.webp`;
+      keep.push(img);
+    }
+  }, 800);
+}
+
 /** 感情の記号（頭の右上にぽんと出す）。考え中＝？・喜び＝！・得意げ＝♪・残念＝汗・ジト目＝…・眠い・寝そべり＝zzz */
 const EMOTE: Partial<Record<Expression, string>> = { think: "？", happy: "！", smug: "♪", sad: "💧", jito: "…", sleepy: "z" };
 
@@ -76,17 +103,21 @@ export function PerchFigure({
 }) {
   const theme = currentTheme();
   const m = motionOf(theme);
+  useEffect(() => preloadMotion(theme), [theme]);
+  // 仕草の絵が読み込み終わるまでは、元の絵を隠さない
+  const [ready, setReady] = useState<string | null>(null);
   // 腰かける絵に「びっくり」はない（8表情）。ふつうで代わりに出す
   const f: Expression = face === "surprised" ? "normal" : face;
   const src = pose === "lie" ? characterImage("lie", "sleepy", theme) : characterImage("sit", f, theme);
   const frame = (name: string, cls: string) => <img className={`perch-frame ${cls}`} src={`${CHAR_BASE}${theme}/${name}.webp`} alt="" aria-hidden="true" />;
   const g = pose === "sit" && gesture && m.gestures.includes(gesture) ? gesture : null;
+  const gShown = g && ready === g;
   const talking = pose === "sit" && talk && !g && m.talk.includes(f);
   const mark = !emote ? undefined : pose === "lie" ? "z" : g ? undefined : EMOTE[f];
   return (
     <div
       key={hop ? `hop-${face}` : "still"}
-      className={`perch ${pose}${swing && !g && !talking ? " swing" : ""}${hop ? " hop" : ""}${g ? " gesturing" : ""}${talking ? " talking" : ""}${(pose === "lie" && m.kick) || (pose === "sit" && m.swing.includes(f)) ? " has-kick" : ""} ${className}`}
+      className={`perch ${pose}${swing && !g && !talking ? " swing" : ""}${hop ? " hop" : ""}${gShown ? " gesturing" : ""}${talking ? " talking" : ""}${(pose === "lie" && m.kick) || (pose === "sit" && m.swing.includes(f)) ? " has-kick" : ""} ${className}`}
       data-face={face}
       data-gesture={g ?? undefined}
     >
@@ -102,7 +133,18 @@ export function PerchFigure({
           </>
         )}
         {talking && frame(`sit-${f}-talk`, "talk")}
-        {g && frame(`gesture-${g}`, "gesture")}
+        {g && (
+          <img
+            className={`perch-frame gesture${gShown ? "" : " loading"}`}
+            src={`${CHAR_BASE}${theme}/gesture-${g}.webp`}
+            alt=""
+            aria-hidden="true"
+            onLoad={() => setReady(g)}
+            ref={(el) => {
+              if (el?.complete && el.naturalWidth && ready !== g) setReady(g);
+            }}
+          />
+        )}
         {pose === "lie" && m.kick && (
           <>
             {frame("lie-kick-1", "k1")}

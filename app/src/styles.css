@@ -2422,6 +2422,9 @@ body:has(.home-dock) .footer {
 .perch-frame.gesture {
   opacity: 1;
 }
+.perch-frame.gesture.loading {
+  opacity: 0;
+}
 /* 口パク：声が流れている間、口を開けた絵を出したり消したり */
 .perch.talking .perch-frame.talk {
   animation: talk-flap 0.34s steps(1) infinite;
