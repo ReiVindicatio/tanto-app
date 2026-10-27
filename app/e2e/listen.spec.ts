@@ -217,7 +217,7 @@ test("律：始める前は立ち絵と案内の吹き出し。聞いている�
   await expect(page.locator(".vn-stage")).not.toContainText("律");
   await page.getByRole("button", { name: "▶ 聞きはじめる" }).click();
   await expect(page.locator(".vn-stage")).toHaveCount(0);
-  const face = page.locator(".listen-actions .listen-dock .dock-peek");
+  const face = page.locator(".listen-actions .listen-dock .dock-ritsu");
   await expect(face).toHaveAttribute("data-face", /normal|think/);
   await expect(face).toHaveAttribute("data-face", "think", { timeout: 5000 });
   await page.locator(".listen-actions").getByRole("button", { name: "○", exact: true }).click();

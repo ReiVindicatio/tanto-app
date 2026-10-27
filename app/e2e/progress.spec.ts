@@ -1,12 +1,14 @@
 import { expect, test } from "@playwright/test";
-import { openHome, openYear } from "./helpers";
+import { openHome, openYear, tab } from "./helpers";
 
 // 継続とレベル（T029）
 
-test("上の帯に「🔥0 Lv.1」、押すとマイページで今日 0 / 20。目標はマイページで変えられる", async ({ page }) => {
+test("上の帯に「🔥0 Lv.1」、押すと律のページ（T065）。マイページで今日 0 / 20。目標はマイページで変えられる", async ({ page }) => {
   await openHome(page);
   await expect(page.locator(".streak-chip")).toHaveText("🔥0 Lv.1");
   await page.locator(".streak-chip").click();
+  await expect(page).toHaveURL(/\/ritsu$/);
+  await tab(page, "マイページ").click();
   await expect(page.locator(".today-goal")).toContainText("今日 0 / 20 肢");
   await page.getByRole("group", { name: "1日の目標" }).getByRole("button", { name: "10肢" }).click();
   await expect(page.locator(".today-goal")).toContainText("今日 0 / 10 肢");

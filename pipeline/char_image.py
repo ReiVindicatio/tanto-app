@@ -3,6 +3,10 @@
   python3 pipeline/char_image.py base                  # 見た目の候補を作る（audio/samples_char/base-*.png）
   python3 pipeline/char_image.py faces <見本の png>     # 見本と同じ人物で表情違いを作る（audio/samples_char/face-*.png）
   python3 pipeline/char_image.py gallery               # LOOKS の見た目ごとに、ふつうの絵と2頭身のちびキャラを作る（audio/samples_char/g/）
+  python3 pipeline/char_image.py themes                # 律の衣装と髪型のテーマの候補（T065。audio/samples_char/g6/）
+  python3 pipeline/char_image.py theme_set <テーマ> <見本の png>   # 選んだ見本から、そのテーマの絵をひとそろい作る（audio/samples_char/themes/<テーマ>/）
+  python3 pipeline/char_image.py sit_set <テーマ>      # 縁に腰かけるちびキャラ 8表情と、寝そべる絵（sit-smile.png と lie-sleepy.png の見本から）
+                                                       # 背景を抜いて webp にするのは pipeline/char_cut.py
 
 - キーは .secrets/google-vertex-key（声1と同じ）。請求は Google Cloud のクレジット
 - 実在の人物・既存のキャラクターに似せない（指示に書く）
@@ -12,6 +16,7 @@ from __future__ import annotations
 
 import base64
 import json
+import random
 import sys
 import time
 import urllib.error
@@ -48,7 +53,7 @@ FACES = {
 
 def generate(parts: list[dict], path: Path) -> None:
     body = {"contents": [{"role": "user", "parts": parts}], "generationConfig": {"responseModalities": ["TEXT", "IMAGE"]}}
-    for attempt in range(6):
+    for attempt in range(15):
         req = urllib.request.Request(URL, data=json.dumps(body).encode(),
                                      headers={"Content-Type": "application/json", "x-goog-api-key": vertex_key()})
         try:
@@ -56,8 +61,9 @@ def generate(parts: list[dict], path: Path) -> None:
                 res = json.loads(r.read())
             break
         except urllib.error.HTTPError as e:
-            if e.code in (429, 500, 503) and attempt < 5:
-                time.sleep(10 * 2 ** attempt)  # 1分あたりの回数が少ない。混んでいたら待ってやり直す
+            # 1分あたりの回数が少ない（2026-10-27：何百枚も続けて作ると 429 が続く）。混んでいたら待ってやり直す
+            if e.code in (429, 500, 503) and attempt < 14:
+                time.sleep(min(300, 15 * 2 ** attempt) + random.uniform(0, 10))
                 continue
             raise
     for p in res["candidates"][0]["content"]["parts"]:
@@ -207,6 +213,118 @@ def faces2() -> None:
                                   "<h1>01 の表情（上：ふつうの絵、下：ちびキャラ。AI 生成）</h1>" + rows, encoding="utf-8")
 
 
+# 2026-10-27：律の衣装と髪型（T065）。1枚絵なので付け替えはせず、衣装と髪型を組にした「テーマ」ごとに絵をそろえる
+THEMES = {
+    "knit": "oversized cream cable-knit sweater with long sleeves covering her hands, hair down in loose soft waves, holding a warm mug",
+    "hoodie": "pastel lavender hoodie, hair in a messy high bun with a few loose strands, holding a highlighter pen",
+    "pajama": "pastel mint pajamas with a small star pattern, hair in one loose side braid over her shoulder, hugging a pillow, sleepy cozy night mood",
+    "summer": "light blue short-sleeve blouse with a small ribbon, a straw hat, hair in a high ponytail, holding a paper fan",
+    "rain": "pastel yellow raincoat with the hood down, hair in two braids, holding a small clear umbrella",
+    "yukata": "pastel pink yukata with a soft floral pattern, hair up in a bun with a small flower hair ornament, holding a round uchiwa fan",
+    "blazer": "navy school blazer with a soft red ribbon, hair half-up with a small bow, holding a pocket law book",
+    "library": "beige knit cardigan over a white blouse, round thin glasses, hair in a low side ponytail, hugging a stack of books",
+    "winter": "camel duffle coat, fluffy white earmuffs and a pastel pink scarf, the same low twin tails, breath slightly visible",
+    "autumn": "mustard cardigan and a brown beret, hair in two low buns, holding a fallen maple leaf",
+    "christmas": "red and white knit sweater with a snowflake pattern, a small santa hat, the same low twin tails, holding a small wrapped present",
+    "halloween": "cute little witch outfit with a short purple cape and a witch hat, the same low twin tails, holding a small pumpkin lantern",
+    "spring": "light pink cardigan over a white dress, a cherry-blossom hair clip, hair down and straight, a few cherry petals",
+    "jersey": "pastel mint track jacket zipped up, hair in a high ponytail, holding a water bottle",
+    "exam": "neat white blouse with a navy cardigan, hair in a neat low ponytail, holding a pencil case and a clear file folder, determined gentle smile",
+}
+THEME = ("Draw the SAME character as in the reference image: same face, same eye shape and eye color, same pink-brown hair color, "
+         "same age and body, same art style and colors, same framing (upper body, same size and position). "
+         "Change ONLY the outfit, hairstyle and props to: ")
+
+
+def themes() -> None:
+    g = OUT / "g6"
+    g.mkdir(parents=True, exist_ok=True)
+    ref = OUT / "g3" / "base-smile.png"
+    img = {"inlineData": {"mimeType": "image/png", "data": base64.b64encode(ref.read_bytes()).decode()}}
+    for name, look in THEMES.items():
+        for k in (1, 2):
+            out = g / f"{name}-{k}.png"
+            if out.exists():
+                continue
+            generate([img, {"text": THEME + look + ". Gentle closed-mouth smile. " + COMMON}], out)
+            print(f"  {out.name}", flush=True)
+    rows = "".join(f'<div style="display:inline-block;margin:8px;text-align:center"><img src="{n}-1.png" style="height:300px;border:1px solid #ddd">'
+                   f'<img src="{n}-2.png" style="height:300px;border:1px solid #ddd"><br>{n}</div>' for n in THEMES)
+    (g / "index.html").write_text("<!doctype html><meta charset=utf-8><title>律のテーマ</title><body style='font-family:sans-serif'>"
+                                  "<h1>律の衣装と髪型のテーマの候補（AI 生成）</h1>" + rows, encoding="utf-8")
+
+
+# テーマのひとそろい（T065）：ふつうの絵 9表情・ちびキャラ 9表情・のぞく絵 8表情
+THEME_FACES = {**EXPRESSIONS, "jito": "jito-me: half-lidded eyes (upper eyelids lowered over the top of the irises), deadpan unimpressed face, small flat mouth, no smile"}
+SAME_THEME = ("Draw the SAME character as in the reference image: same face, same hairstyle, same outfit and props, same colors and art style, "
+              "same framing and size. Change ONLY the facial expression (and hands if needed) to: ")
+PEEK = ("Image 1 shows the pose: a chibi girl PEEKING over a flat grey ledge at the bottom, both forearms resting on top of the ledge, "
+        "only head, shoulders and arms above it, plain white background above, plain light grey band below. Image 2 shows the character. "
+        "Draw the character of image 2 (same chibi style, same hairstyle, same outfit and colors; leave out handheld props) in exactly the pose, "
+        "framing and ledge of image 1. Expression: ")
+
+
+def _img(path: Path) -> dict:
+    return {"inlineData": {"mimeType": "image/png", "data": base64.b64encode(path.read_bytes()).decode()}}
+
+
+def theme_set(name: str, src: Path) -> None:
+    g = OUT / "themes" / name
+    g.mkdir(parents=True, exist_ok=True)
+    base = g / "base-smile.png"
+    if not base.exists():
+        base.write_bytes(src.read_bytes())
+    for face, text in THEME_FACES.items():
+        out = g / f"base-{face}.png"
+        if not out.exists():
+            generate([_img(base), {"text": SAME_THEME + text + ". " + COMMON}], out)
+            print(f"  {out.name}", flush=True)
+    master = g / "chibi-smile.png"
+    if not master.exists():
+        generate([_img(base), {"text": CHIBI + " The hairstyle must be clearly visible. Gentle closed-mouth smile. " + COMMON}], master)
+        print(f"  {master.name}", flush=True)
+    for face, text in THEME_FACES.items():
+        out = g / f"chibi-{face}.png"
+        if not out.exists():
+            generate([_img(master), {"text": SAME_THEME + text + ". Keep it a chibi / super-deformed figure, 2 heads tall, full body. " + COMMON}], out)
+            print(f"  {out.name}", flush=True)
+    pose = OUT / "g5" / "peek-happy.png"
+    for face, text in THEME_FACES.items():
+        if face == "surprised":
+            continue
+        out = g / f"peek-{face}.png"
+        if not out.exists():
+            generate([_img(pose), _img(g / f"chibi-{face}.png"), {"text": PEEK + text + ". No text. " + COMMON}], out)
+            print(f"  {out.name}", flush=True)
+
+
+# 縁に腰かける（T065）：ちびキャラが○×の欄・タブ・結果の欄の縁に腰かけ、足をぶら下げる。のぞく絵より服がよく見える
+SIT = ("Image 1 shows the pose: a chibi girl SITTING on the edge of a flat ledge (thin dark top line, plain light grey band below), "
+       "both legs dangling down in front of the grey band, hands on the ledge beside her, plain white background above. "
+       "Image 2 shows the character with the target expression. Draw the character of image 2 (same chibi style, same face, hairstyle, "
+       "outfit and colors; leave out handheld props) in exactly the pose, framing, size and ledge of image 1. Expression: ")
+LIE = ("Image 1 shows the pose: a chibi girl LYING on her stomach on top of a flat ledge, reading a small book, legs bent up behind her. "
+       "Image 2 shows the character. Draw the character of image 2 (same chibi style, face, hairstyle, outfit and colors) in exactly the pose, "
+       "framing, size and ledge of image 1, sleepy relaxed face. ")
+
+
+def sit_set(name: str) -> None:
+    g = OUT / "themes" / name
+    pose, lie = g / "sit-smile.png", g / "lie-sleepy.png"
+    if not pose.exists():
+        generate([_img(OUT / "themes" / "default" / "sit-smile.png"), _img(g / "chibi-smile.png"), {"text": SIT + THEME_FACES["smile"] + ". No text. " + COMMON}], pose)
+        print(f"  {pose.name}", flush=True)
+    for face, text in THEME_FACES.items():
+        out = g / f"sit-{face}.png"
+        if face == "surprised" or out.exists():
+            continue
+        generate([_img(pose), _img(g / f"chibi-{face}.png"), {"text": SIT + text + ". No text. " + COMMON}], out)
+        print(f"  {out.name}", flush=True)
+    if not lie.exists():
+        generate([_img(OUT / "themes" / "default" / "lie-sleepy.png"), _img(g / "chibi-smile.png"), {"text": LIE + "No text. " + COMMON}], lie)
+        print(f"  {lie.name}", flush=True)
+
+
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     what = sys.argv[1] if len(sys.argv) > 1 else "base"
@@ -223,6 +341,12 @@ def main() -> None:
         gallery2()
     elif what == "faces2":
         faces2()
+    elif what == "themes":
+        themes()
+    elif what == "sit_set":
+        sit_set(sys.argv[2])
+    elif what == "theme_set":
+        theme_set(sys.argv[2], Path(sys.argv[3]))
     elif what == "faces":
         ref = Path(sys.argv[2])
         img = {"inlineData": {"mimeType": "image/png", "data": base64.b64encode(ref.read_bytes()).decode()}}

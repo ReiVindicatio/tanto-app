@@ -1,9 +1,12 @@
 // 聞き流しと答え合わせのキャラクター（T063）。絵は Gemini の画像モデルで作った（pipeline/char_image.py）。
-// 律が言うのは、ここに書いた決まった言葉だけ。○×と解説の見せ方は変えない（解説を「彼女の発言」にしない）
+// 律が言うのは、ここと ritsu/lines.json に書いた決まった言葉だけ。○×と解説の見せ方は変えない（解説を「彼女の発言」にしない）
+
+import { currentTheme } from "./ritsu/themes";
 
 export type Expression = "normal" | "smile" | "think" | "happy" | "sad" | "sleepy" | "surprised" | "smug" | "jito";
-/** base＝立ち絵（聞き流し）、chibi＝ちびキャラ（ナビゲーター）、peek＝欄の縁からのぞくちびキャラ（答え合わせ。reactionFace の4つだけ） */
-export type CharacterKind = "base" | "chibi" | "peek";
+/** base＝立ち絵、chibi＝ちびキャラ（全身）、sit＝欄の縁に腰かけるちびキャラ（T065。驚き以外の8表情）、lie＝縁に寝そべって本を読む（sleepy だけ）、
+ *  peek＝欄の縁からのぞくちびキャラ（T063。いつもの服だけ。予備） */
+export type CharacterKind = "base" | "chibi" | "sit" | "lie" | "peek";
 
 /** キャラクターの表。あとで足せるように、絵の置き場所はキャラクターごとに分ける（public/chars/<id>/） */
 export const CHARACTERS = {
@@ -14,9 +17,12 @@ export const CHARACTER: CharacterId = "ritsu";
 
 const BASE = import.meta.env.BASE_URL;
 
-export function characterImage(kind: CharacterKind, face: Expression, id: CharacterId = CHARACTER): string {
-  return `${BASE}chars/${id}/${kind}-${face}.webp`;
+/** 絵の URL。theme は衣装と髪型の組（T065。省くと選んでいるテーマ） */
+export function characterImage(kind: CharacterKind, face: Expression, theme: string = currentTheme(), id: CharacterId = CHARACTER): string {
+  return `${BASE}chars/${id}/${theme}/${kind}-${face}.webp`;
 }
+
+export const FACES: Expression[] = ["normal", "smile", "think", "happy", "sad", "sleepy", "surprised", "smug", "jito"];
 
 /** 連続正解がこれ以上なら得意げ、連続不正解がこれ以上ならジト目 */
 export const SMUG_STREAK = 3;
@@ -68,17 +74,8 @@ export function setCharacterOn(on: boolean): void {
 
 // ---- 律の言葉（決まった言葉だけ。解説や○×の判断を律に言わせない） ----
 
-/** ホームの今日の案内。急かす・連続記録で脅す言い方はしない */
-export function homeLine(due: number, goalReached: boolean): string {
-  if (goalReached) return "今日の分、おわってるよ。えらいえらい";
-  if (due > 0) return `復習の肢が ${due} 枚あるよ。ちょっとずつやろ`;
-  return "今日はどこからやる？";
-}
-
+/** 場面が決まっている言葉（ほかは ritsu/lines.json から選ぶ） */
 export const LINES = {
-  listenIntro: "肢を読むね。考えたら○×を押してもいいし、聞くだけでもいいよ",
-  listenDone: "おつかれさま。また聞こうね",
-  resultDone: "おつかれさま",
   swipeTip: "右にはじくと○、左にはじくと×だよ",
   noReview: "復習する肢は、今はないよ",
 } as const;

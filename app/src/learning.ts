@@ -34,6 +34,8 @@ export type LearningState = {
   newCount: Map<string, number>;
   /** "YYYY-MM-DD"（端末の現地日付）→ その日の回答数・正解数（T034：マイページの学習の軌跡） */
   daily: Map<string, { answered: number; correct: number }>;
+  /** 経験値（T065）：答える前の FSRS の期限と比べて数える（xpGain） */
+  xp: number;
 };
 
 // 同じ日のうちの短い間隔の復習（正解でも10分後・不正解なら1分後にまた出る）は使わない。
@@ -41,7 +43,7 @@ export type LearningState = {
 const scheduler = fsrs({ enable_short_term: false });
 
 export function emptyState(): LearningState {
-  return { history: new CardMap(), cards: new CardMap(), newCount: new Map(), daily: new Map() };
+  return { history: new CardMap(), cards: new CardMap(), newCount: new Map(), daily: new Map(), xp: 0 };
 }
 
 /** 肢 ID（yobi-2026-minpo-q01-a）から科目を取り出す */
@@ -53,6 +55,16 @@ export function subjectOf(statementId: string): string {
 export function localDate(d: Date): string {
   const pad = (n: number) => String(n).padStart(2, "0");
   return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+}
+
+/**
+ * 1回答えたときの経験値（T065）。量ではなく学習の質に出す：
+ * 初めての肢は正解2・不正解1、期限が来た肢（FSRS の復習）は正解3・不正解1、期限の前の解き直しは0
+ */
+export function xpGain(prev: Card | undefined, at: Date, ok: boolean): number {
+  if (!prev) return ok ? 2 : 1;
+  if (prev.due <= at) return ok ? 3 : 1;
+  return 0;
 }
 
 /** 回答1件を状態に反映する（state を書き換える） */
@@ -72,7 +84,9 @@ export function apply(state: LearningState, a: Answer): void {
     last: a.ok,
     at: a.at,
   });
-  const card: Card = state.cards.get(a.s) ?? createEmptyCard<Card>(at);
+  const before = state.cards.get(a.s);
+  state.xp += xpGain(before, at, a.ok);
+  const card: Card = before ?? createEmptyCard<Card>(at);
   state.cards.set(a.s, scheduler.next(card, at, a.ok ? Rating.Good : Rating.Again).card);
 }
 

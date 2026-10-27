@@ -1728,13 +1728,33 @@ mark.twin-diff {
   height: 0;
   pointer-events: none;
 }
-.dock-peek {
+/* 腰かける絵は、縁の線が絵の下から「幅の 25%」の高さにある（pipeline/char_cut.py の sit）。その分だけ下にずらして縁に座らせる */
+.dock-ritsu {
   position: absolute;
   right: 0;
-  bottom: -7px;
-  width: 92px;
+  bottom: -25px;
+  width: 100px;
   height: auto;
   user-select: none;
+}
+.dock-ritsu.lie {
+  width: 128px;
+  bottom: -10px;
+}
+.hop {
+  animation: ritsu-hop 0.7s ease-out;
+}
+@keyframes ritsu-hop {
+  0% { transform: translateY(0); }
+  30% { transform: translateY(-26px); }
+  55% { transform: translateY(0); }
+  72% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hop {
+    animation: none;
+  }
 }
 .ritsu-dock .dock-bubble {
   position: absolute;
@@ -1764,10 +1784,10 @@ mark.twin-diff {
   pointer-events: auto;
   cursor: pointer;
 }
-.dock-peek-button .dock-peek {
+.dock-peek-button .dock-ritsu {
   position: static;
   display: block;
-  margin-bottom: -7px;
+  margin-bottom: -25px;
 }
 /* 聞いている間：○×の欄の縁 */
 .listen-dock {
@@ -1779,26 +1799,33 @@ mark.twin-diff {
 }
 .listen-dock .dock-bubble {
   font-weight: bold;
+  bottom: 30px;
 }
 /* ホーム：タブの縁 */
 .home-dock {
   position: fixed;
   z-index: 11;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 720px;
+  left: 0;
+  right: 0;
   bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom));
 }
+/* タブのアイコンに足がかからないよう、「科目」と「マイページ」のあいだに座る（タブの幅は min(画面の1/3, 240px)） */
 .home-dock .dock-peek-button {
-  right: 16px;
+  right: auto;
+  left: calc(50% + min(16.667vw, 120px) - 50px);
 }
 .home-dock .dock-bubble {
-  right: 128px;
-  max-width: calc(100% - 156px);
+  right: calc(50% - min(16.667vw, 120px) + 62px);
+  max-width: calc(50% + min(16.667vw, 120px) - 78px);
+  bottom: 34px;
 }
-section:has(> .card.hero .home-dock) {
-  padding-bottom: 96px;
+/* 律がタブの縁に座る分、ホームの一番下（フッター）を上げて、律にかぶらないようにする */
+body:has(.home-dock) .footer {
+  margin-bottom: 110px;
+}
+/* 足をぶら下げる分、○×の欄の上を広げる（ボタンに足がかからないように） */
+.listen.with-dock .listen-actions {
+  padding-top: 26px;
 }
 .listen.with-dock {
   /* 律と吹き出しの分だけ、下に余白（設定が隠れないように） */
@@ -1813,15 +1840,18 @@ section:has(> .card.hero .home-dock) {
   position: relative;
   margin-top: 104px;
 }
-.peek-chibi {
+/* 結果の欄の縁に腰かける。足の分だけ欄の上を広げる */
+.perch-chibi {
   position: absolute;
-  left: 8px;
-  bottom: calc(100% - 8px);
-  width: 108px;
+  left: 10px;
+  bottom: calc(100% - 25px);
+  width: 100px;
   height: auto;
   pointer-events: none;
   user-select: none;
-  animation: peek-in 0.25s ease-out;
+}
+.result.with-peek {
+  padding-top: 26px;
 }
 .result.with-peek > .peek-bubble {
   position: absolute;
@@ -1832,17 +1862,8 @@ section:has(> .card.hero .home-dock) {
   max-width: calc(100% - 140px);
   font-size: 1.25rem;
 }
-@keyframes peek-in {
-  from {
-    transform: translateY(14px);
-    opacity: 0;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .peek-chibi {
-    animation: none;
-  }
-}
+
+
 /* はじき方の初回案内（吹き出し）。キーボードとタッチの出し分けは .swipe-hint のまま */
 .ritsu-says.swipe-hint .ritsu-bubble {
   font-size: 0.92rem;
@@ -1853,4 +1874,93 @@ section:has(> .card.hero .home-dock) {
   margin-top: 12px;
   padding-top: 10px;
   border-top: 1px solid var(--border-subtle);
+}
+
+/* ---- 律のページ（T065） ---- */
+.ritsu-sprite-button,
+.theme-tile,
+.face-tile {
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--text-strong);
+  font-weight: normal;
+}
+.ritsu-stage .vn-sprite {
+  height: 300px;
+  display: block;
+}
+.ritsu-level {
+  margin: 8px 0 16px;
+}
+.theme-grid,
+.face-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.face-grid {
+  grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+}
+.theme-tile,
+.face-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 4px;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: 12px;
+  background: var(--bg-subtle);
+  font-size: 0.8rem;
+}
+.theme-tile img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top;
+}
+.face-tile img {
+  height: 72px;
+  width: auto;
+}
+.theme-tile.chosen,
+.face-tile.chosen {
+  border-color: var(--brand);
+}
+.theme-tile.locked img {
+  filter: brightness(0) opacity(0.15);
+}
+.theme-tile:disabled {
+  opacity: 1;
+  cursor: default;
+}
+.line-book {
+  margin: 4px 0;
+}
+.line-book summary {
+  cursor: pointer;
+  padding: 6px 0;
+}
+.line-book ul {
+  list-style: none;
+  padding-left: 8px;
+  margin: 0 0 8px;
+}
+.line-book li button {
+  text-align: left;
+  color: var(--text-strong);
+}
+.ritsu-profile {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6px 14px;
+  margin-bottom: 24px;
+}
+.ritsu-profile dt {
+  color: var(--text-secondary);
+}
+.ritsu-profile dd {
+  margin: 0;
 }

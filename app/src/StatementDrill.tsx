@@ -304,11 +304,11 @@ export default function StatementDrill({
 
         {answer !== null && (
           <div className={`result ${answer === truth ? "ok" : "ng"}${showChar ? " with-peek" : ""}`}>
-            {/* キャラクター（T063）：律が結果の欄の縁からのぞいて、吹き出しで「正解！」「不正解…」。○×と解説の見せ方は変えない */}
+            {/* キャラクター（T063・T065）：律が結果の欄の縁に腰かけ（正解ならぴょんと跳ねる）、吹き出しで「正解！」「不正解…」。○×と解説の見せ方は変えない */}
             {showChar && (
               <img
-                className="peek-chibi drill-char"
-                src={characterImage("peek", reactionFace(answer === truth, streak, wrongStreak))}
+                className={`perch-chibi drill-char${answer === truth ? " hop" : ""}`}
+                src={characterImage("sit", reactionFace(answer === truth, streak, wrongStreak))}
                 alt=""
                 data-face={reactionFace(answer === truth, streak, wrongStreak)}
               />

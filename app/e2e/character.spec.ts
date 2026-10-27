@@ -37,7 +37,7 @@ test("答え合わせ：正解で喜び・不正解で残念、2問続けて不�
   await expect(page.locator(".page .ritsu-says")).toHaveCount(0);
   await page.getByRole("button", { name: "← 戻る" }).click();
   await tab(page, "ホーム").click();
-  await expect(page.locator(".home-dock .ritsu-bubble")).toContainText(/今日はどこからやる|復習の肢が|今日の分、おわってる/);
+  await expect(page.locator(".home-dock .ritsu-bubble")).not.toBeEmpty();
   await tab(page, "マイページ").click();
   await page.getByRole("group", { name: "キャラクター" }).getByRole("button", { name: "出さない" }).click();
   await openYear(page, "民法", "R08", "肢で解く");
@@ -48,4 +48,28 @@ test("答え合わせ：正解で喜び・不正解で残念、2問続けて不�
   await page.getByRole("button", { name: "← 戻る" }).click();
   await tab(page, "ホーム").click();
   await expect(page.locator(".ritsu-says, .ritsu-dock")).toHaveCount(0);
+});
+
+test("律のページ（T065）：上の帯の Lv から開き、律を押すとひとこと。セリフ帳から選んでも言う。出さない設定なら Lv はマイページへ", async ({ page }) => {
+  await openHome(page);
+  await page.locator(".streak-chip").click();
+  await expect(page).toHaveURL(/\/ritsu$/);
+  const bubble = page.locator(".ritsu-stage .ritsu-bubble");
+  await page.getByRole("button", { name: "律に話しかける" }).click();
+  await expect(bubble).not.toBeEmpty();
+  await expect(page.locator(".ritsu-stage .vn-sprite")).toHaveAttribute("src", /\/chars\/ritsu\/default\/base-/);
+  // セリフ帳：おしゃべりを開いて1つ選ぶ
+  await page.locator(".line-book summary", { hasText: "おしゃべり" }).click();
+  const first = page.locator(".line-book[open] li button").first();
+  const text = (await first.innerText()).replace(/^\S+\s/, "");
+  await first.click();
+  await expect(bubble).toHaveText(text);
+  // 表情を押すと立ち絵が変わる
+  await page.locator(".face-tile", { hasText: "ジト目" }).click();
+  await expect(page.locator(".ritsu-stage .vn-sprite")).toHaveAttribute("data-face", "jito");
+
+  await tab(page, "マイページ").click();
+  await page.getByRole("group", { name: "キャラクター" }).getByRole("button", { name: "出さない" }).click();
+  await page.locator(".streak-chip").click();
+  await expect(page).toHaveURL(/\/me$/);
 });

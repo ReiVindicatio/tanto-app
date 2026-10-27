@@ -1,12 +1,6 @@
-// 継続とレベル（T029）：連続日数・1日の目標・レベル。どれも回答ログから作った日ごとの集計（learning.ts の daily）から計算する
+// 継続とレベル（T029）：連続日数・1日の目標・レベル。どれも回答ログから作った状態（learning.ts）から計算する。経験値の数え方は learning.ts の xpGain（T065）
 import { currentState, localDate } from "./learning";
-import { streak, totals, type Daily } from "./stats";
-
-/** 経験値：1回答えると1、正解なら2（同じ肢の復習も数える） */
-export function xpOf(daily: Daily): number {
-  const t = totals(daily);
-  return t.answered + t.correct;
-}
+import { streak } from "./stats";
 
 /** Lv.L から L+1 に上がるのに要る経験値（上がるほど長くなる） */
 export function levelCost(level: number): number {
@@ -45,8 +39,7 @@ export type Progress = { streak: number; xp: number; level: number; into: number
 
 /** いまの連続日数・レベル・今日の回答数 */
 export function progressNow(now = new Date()): Progress {
-  const daily = currentState().daily;
-  const xp = xpOf(daily);
+  const { daily, xp } = currentState();
   return { streak: streak(daily, now), xp, ...levelOf(xp), today: daily.get(localDate(now))?.answered ?? 0, goal: getGoal() };
 }
 

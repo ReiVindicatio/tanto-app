@@ -20,9 +20,9 @@ describe("キャラクターの表情（T063）", () => {
     expect(listenFace("done", null, 5, 0)).toBe("smile");
   });
 
-  it("絵の置き場所はキャラクターごと", () => {
-    expect(characterImage("base", "think")).toBe("/chars/ritsu/base-think.webp");
-    expect(characterImage("chibi", "jito")).toBe("/chars/ritsu/chibi-jito.webp");
+  it("絵の置き場所はキャラクターとテーマごと", () => {
+    expect(characterImage("base", "think", "default")).toBe("/chars/ritsu/default/base-think.webp");
+    expect(characterImage("chibi", "jito", "knit")).toBe("/chars/ritsu/knit/chibi-jito.webp");
   });
 });
 

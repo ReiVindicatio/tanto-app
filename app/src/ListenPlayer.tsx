@@ -28,14 +28,16 @@ import {
   VOICE_NOS,
   type ListenPrefs,
 } from "./listen";
-import { characterImage, characterOn, LINES, listenFace, type Expression } from "./character";
+import { characterImage, characterOn, listenFace, markTipSeen, tipSeen, type Expression } from "./character";
+import { ALL_LINES, pickLine } from "./ritsu/lines";
+import { progressNow } from "./progress";
 import { Bubble, RitsuDock } from "./Ritsu";
 
 type Phase = "ready" | "reading" | "thinking" | "answer" | "paused" | "done";
 /** 残りがこれだけになったら次を読み足す */
 const REFILL_AT = 3;
 
-/** 聞いている間に使う表情（のぞく絵） */
+/** 聞いている間に使う表情（腰かける絵） */
 const PEEK_FACES: Expression[] = ["normal", "think", "happy", "sad", "sleepy", "smug", "jito"];
 
 /**
@@ -52,14 +54,15 @@ function Stage({ face, children }: { face: Expression; children: React.ReactNode
   );
 }
 
-/** 聞いている間の律：画面の下の○×の欄の縁からのぞき、横の吹き出しで今の状態を言う（スクロールしても見える） */
-function Dock({ face, phase, children }: { face: Expression; phase: Phase; children: React.ReactNode }) {
+/** 聞いている間の律：画面の下の○×の欄の縁に腰かけ（一時停止中は寝そべる）、横の吹き出しで今の状態を言う（スクロールしても見える） */
+function Dock({ face, phase, hop, children }: { face: Expression; phase: Phase; hop: boolean; children: React.ReactNode }) {
   // 表情を切り替えたときに白くならないよう、使う絵は最初にまとめて読み込んでおく
   useEffect(() => {
-    for (const f of PEEK_FACES) new Image().src = characterImage("peek", f);
+    for (const f of PEEK_FACES) new Image().src = characterImage("sit", f);
+    new Image().src = characterImage("lie", "sleepy");
   }, []);
   return (
-    <RitsuDock face={face} className={`listen-dock listen-phase ${phase}`}>
+    <RitsuDock face={face} className={`listen-dock listen-phase ${phase}`} pose={phase === "paused" ? "lie" : "sit"} hop={hop}>
       {children}
     </RitsuDock>
   );
@@ -84,6 +87,11 @@ export default function ListenPlayer({
   const [phase, setPhase] = useState<Phase>("ready");
   const [i, setI] = useState(0);
   const [left, setLeft] = useState(0);
+  // 律のひとこと（T065）。はじめの案内は、初めての1回だけ使い方の説明（listen_start-001）、2回目からは選ぶ
+  const [introLine] = useState(() =>
+    tipSeen("listen") ? pickLine("listen_start", progressNow().level) : ALL_LINES.find((l) => l.id === "listen_start-001"),
+  );
+  const [doneLine] = useState(() => pickLine("listen_done", progressNow().level));
   // 答えを読んだ肢（答えと解説を画面に出す。一時停止しても出したまま）
   const [revealed, setRevealed] = useState<string | null>(null);
   const [answered, setAnswered] = useState<boolean | null>(null);
@@ -265,6 +273,7 @@ export default function ListenPlayer({
    * 端末の読み上げにも空の一言を読ませておく（音声がない肢のため）
    */
   async function begin(from: number) {
+    markTipSeen("listen");
     const a = el();
     a.src = silenceUrl(1);
     void a.play().catch(() => {});
@@ -317,7 +326,7 @@ export default function ListenPlayer({
       <section className="listen">
         {showChar && (
           <Stage face={listenFace("done", null, streaks.correct, streaks.wrong)}>
-            <Bubble tail="right" className="vn-bubble">{LINES.listenDone}</Bubble>
+            <Bubble tail="right" className="vn-bubble">{doneLine?.text}</Bubble>
           </Stage>
         )}
         <h1>おわり</h1>
@@ -381,7 +390,7 @@ export default function ListenPlayer({
         <>
           {showChar && (
             <Stage face={listenFace("ready", null, 0, 0)}>
-              <Bubble tail="right" className="vn-bubble">{LINES.listenIntro}</Bubble>
+              <Bubble tail="right" className="vn-bubble">{introLine?.text}</Bubble>
             </Stage>
           )}
           {showChar ? <details className="listen-intro listen-more"><summary className="muted small">くわしく</summary>{intro}</details> : <div className="listen-intro">{intro}</div>}
@@ -466,7 +475,7 @@ export default function ListenPlayer({
 
       <div className="actionbar listen-actions">
         {showChar && phase !== "ready" && s && (
-          <Dock face={listenFace(phase, answered, streaks.correct, streaks.wrong)} phase={phase}>
+          <Dock face={listenFace(phase, answered, streaks.correct, streaks.wrong)} phase={phase} hop={phase === "answer" && answered === true}>
             {phaseText}
           </Dock>
         )}

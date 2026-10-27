@@ -177,7 +177,7 @@ export default function MyPage({
           <div className="grow">
             <Progress value={p.into / p.need} />
             <div className="muted small">
-              経験値 {p.xp.toLocaleString()}（次のレベルまで {p.need - p.into}）。1回答えると1、正解なら2
+              経験値 {p.xp.toLocaleString()}（次のレベルまで {p.need - p.into}）。初めての肢は正解2・不正解1、期限が来た復習は正解3・不正解1、期限の前の解き直しは0
             </div>
           </div>
         </div>

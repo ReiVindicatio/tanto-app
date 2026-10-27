@@ -3,15 +3,19 @@ import type { Explanation, Question, Statement } from "./types";
 import ExplanationView from "./ExplanationView";
 import { subjectColor, subjectRank } from "./subjectsMeta";
 import type { OriginOf } from "./play";
-import { characterOn, LINES } from "./character";
+import { useState } from "react";
+import { characterOn } from "./character";
 import { RitsuSays } from "./Ritsu";
+import { resultLine } from "./ritsu/lines";
+import { progressNow } from "./progress";
 
-/** 結果画面の律（T063）。点数には触れない */
-function ResultRitsu() {
-  if (!characterOn()) return null;
+/** 結果画面の律（T063・T065）。正答率でセリフを選ぶ（点数そのものには触れない） */
+function ResultRitsu({ rate }: { rate: number }) {
+  const [line] = useState(() => resultLine(rate, progressNow().level));
+  if (!characterOn() || !line) return null;
   return (
-    <RitsuSays face="smile" className="result-ritsu">
-      {LINES.resultDone}
+    <RitsuSays face={line.face} className="result-ritsu">
+      {line.text}
     </RitsuSays>
   );
 }
@@ -88,7 +92,7 @@ export function StatementResult({
   return (
     <section className="result-screen">
       <h1>おわり</h1>
-      <ResultRitsu />
+      <ResultRitsu rate={items.length ? correct / items.length : 0} />
       <div className="result-summary">
         <Donut
           value={items.length ? correct / items.length : 0}
@@ -175,7 +179,7 @@ export function QuestionResult({
   return (
     <section className="result-screen">
       <h1>おわり</h1>
-      <ResultRitsu />
+      <ResultRitsu rate={points ? earned / points : 0} />
       <div className="result-summary">
         <Donut value={points ? earned / points : 0} label={`得点率 ${points ? Math.round((earned / points) * 100) : 0}%`} />
         <div>

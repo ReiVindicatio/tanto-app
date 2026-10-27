@@ -7,7 +7,8 @@ import { bookmarkedCards } from "../bookmarks";
 import { cardIdOf } from "../learning";
 import { buildDaily, DAILY_SIZES, describeCounts, ENDLESS, ENDLESS_BATCH, getDailyPrefs, setDailyPrefs, type DailyPrefs } from "../daily";
 import { cardsOf, poolOf } from "./common";
-import { characterOn, homeLine } from "../character";
+import { characterOn } from "../character";
+import { homeLine, playLine, seeded } from "../ritsu/lines";
 import { progressNow } from "../progress";
 import { RitsuDock } from "../Ritsu";
 
@@ -36,13 +37,28 @@ function QuickStart({
   const scopeName = scoped.length > 0 ? scoped[0].name : "全科目";
   const [showChar] = useState(characterOn);
   const p = progressNow();
+  // 律のひとこと（T065）。描き直しても変わらないよう、種から選ぶ。律を押すと種を変えて、声つきで言い直す
+  const [seed, setSeed] = useState(() => Math.floor(Math.random() * 233280));
+  const lineFor = (sd: number) =>
+    homeLine(preview.counts.due, p.today >= p.goal, p.level, { subject: scoped.length > 0 ? (prefs.subject ?? undefined) : undefined, rand: seeded(sd) });
+  const said = lineFor(seed);
 
   return (
     <div className="card hero">
-      {/* 律の今日の案内（T063）：タブの縁からのぞく（画面の下に固定）。急かさない・連続記録で脅さない */}
+      {/* 律の今日の案内（T063・T065）：タブの縁からのぞく（画面の下に固定）。急かさない・連続記録で脅さない */}
       {showChar && cardIds.size > 0 && (
-        <RitsuDock face={p.today >= p.goal ? "happy" : "smile"} className="home-dock" fadeAfter={6000}>
-          {homeLine(preview.counts.due, p.today >= p.goal)}
+        <RitsuDock
+          face={said?.line.face ?? "smile"}
+          className="home-dock"
+          fadeAfter={6000}
+          onPeek={() => {
+            const sd = (seed + 7919) % 233280;
+            setSeed(sd);
+            const l = lineFor(sd);
+            if (l) playLine(l.line);
+          }}
+        >
+          {said?.text}
         </RitsuDock>
       )}
       <div className="hero-title">
