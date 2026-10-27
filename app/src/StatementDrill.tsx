@@ -12,7 +12,7 @@ import { loadTrapsWhenIdle, trapOf, trapsIfLoaded } from "./traps";
 import { cardIdOf } from "./learning";
 import SpeakButton from "./SpeakButton";
 import { characterOn, LINES, markTipSeen, reactionFace, tipSeen } from "./character";
-import { PerchFigure, RitsuSays } from "./Ritsu";
+import { PerchFigure, RitsuDock, useIdle } from "./Ritsu";
 import { milestones, progressNow } from "./progress";
 import { shuffle } from "./shuffle";
 import { recordAnswer } from "./learning";
@@ -47,6 +47,7 @@ export default function StatementDrill({
   const [showChar] = useState(characterOn);
   // はじき方の案内は、律の吹き出しで1回だけ（答えたら覚える）。2回目からは今までどおりの小さな文字
   const [swipeTip] = useState(() => showChar && !tipSeen("swipe"));
+  const idle = useIdle(40000);
   const [order, setOrder] = useState<Statement[]>(cards);
   const [i, setI] = useState(0);
   const [answer, setAnswer] = useState<boolean | null>(null);
@@ -289,12 +290,6 @@ export default function StatementDrill({
           </div>
         )}
 
-        {answer === null && i === 0 && swipeTip && (
-          <RitsuSays face="smile" className="swipe-hint">
-            <span className="hint-touch">{LINES.swipeTip}</span>
-            <span className="hint-keys">キーボードなら、→ か O で○、← か X で×。答えのあとは Enter で次へ進むよ</span>
-          </RitsuSays>
-        )}
         {answer === null && i === 0 && !swipeTip && (
           <p className="swipe-hint muted small">
             <span className="hint-touch">右にはじくと○・左にはじくと×</span>
@@ -371,7 +366,18 @@ export default function StatementDrill({
       </div>
 
       {answer === null ? (
-        <div className="actionbar">
+        <div className={`actionbar${showChar ? " with-ritsu" : ""}`}>
+          {/* 答える前の律（T065）：○×の欄の縁に座って足をバタバタ。しばらく答えないと寝そべって本を読む。答えると結果の欄へ移る */}
+          {showChar && (
+            <RitsuDock face={idle ? "sleepy" : "think"} pose={idle ? "lie" : "sit"} swing className="bar-dock drill-dock">
+              {i === 0 && swipeTip ? (
+                <span className="swipe-hint">
+                  <span className="hint-touch">{LINES.swipeTip}</span>
+                  <span className="hint-keys">キーボードなら、→ か O で○、← か X で×。答えのあとは Enter で次へ進むよ</span>
+                </span>
+              ) : null}
+            </RitsuDock>
+          )}
           <button className="mark" onClick={() => choose(false)}>
             ×
           </button>

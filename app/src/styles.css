@@ -1797,8 +1797,9 @@ mark.twin-diff {
   display: block;
   margin-bottom: -25px;
 }
-/* 聞いている間：○×の欄の縁 */
-.listen-dock {
+/* 聞いている間・肢で解くの答える前：○×の欄の縁 */
+.listen-dock,
+.bar-dock {
   position: absolute;
   left: 16px;
   right: 16px;
@@ -1894,12 +1895,118 @@ body:has(.home-dock) .footer {
   color: var(--text-strong);
   font-weight: normal;
 }
+/* 立ち絵の舞台：背景つきで上に残す（選んだものがすぐ見える） */
+.ritsu-stage {
+  --stage-h: min(36vh, 300px);
+  position: sticky;
+  top: 56px; /* 上の帯（.appbar）の下に残す */
+  z-index: 4;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+  height: var(--stage-h);
+  margin: 0 -16px;
+  padding: 0 12px;
+  overflow: hidden;
+  background-color: var(--bg-subtle);
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.ritsu-stage .stage-bubble {
+  align-self: start;
+  margin-top: 18px;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+}
+.ritsu-sprite-button {
+  align-self: end;
+}
 .ritsu-stage .vn-sprite {
-  height: 300px;
   display: block;
+  height: calc(var(--stage-h) * 0.94);
+  width: auto;
+  max-width: 62vw;
+  object-fit: contain;
+  object-position: bottom;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.18));
+  transform-origin: 50% 100%;
+}
+.ritsu-stage .vn-sprite.bump {
+  animation: sprite-bump 0.45s ease-out;
+}
+@keyframes sprite-bump {
+  0% { transform: scale(1, 1); }
+  30% { transform: scale(1.03, 0.97); }
+  60% { transform: scale(0.98, 1.03) translateY(-6px); }
+  100% { transform: scale(1, 1); }
+}
+/* 眠そうなときは、ゆっくり息をする */
+.ritsu-stage .vn-sprite.dozing {
+  animation: sprite-breathe 3.2s ease-in-out infinite;
+}
+@keyframes sprite-breathe {
+  0%, 100% { transform: scale(1, 1); }
+  50% { transform: scale(1.006, 1.015); }
 }
 .ritsu-level {
-  margin: 8px 0 16px;
+  margin: 6px 0 4px;
+}
+.ritsu-tabs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  margin: 8px 0 12px;
+  padding-bottom: 2px;
+  scrollbar-width: none;
+}
+.ritsu-tabs button {
+  flex: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-strong);
+  font-weight: normal;
+  font-size: 0.85rem;
+}
+.ritsu-tabs button.chosen {
+  border-color: var(--brand);
+  background: var(--brand);
+  color: #fff;
+  font-weight: bold;
+}
+.bg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.bg-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 4px;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: 12px;
+  background: var(--bg-subtle);
+  color: var(--text-strong);
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+.bg-tile img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.bg-tile.chosen {
+  border-color: var(--brand);
+}
+@media (prefers-reduced-motion: reduce) {
+  .ritsu-stage .vn-sprite {
+    animation: none !important;
+  }
 }
 .theme-grid,
 .face-grid {
@@ -1985,39 +2092,6 @@ body:has(.home-dock) .footer {
   width: 100%;
   height: auto;
 }
-.perch-leg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
-}
-/* 腰かける：座る線（絵の下から幅の 25%）の少し下から足。左右に分けて、交互に縮める（前に振り上げたように見える） */
-.perch.sit .perch-body {
-  clip-path: inset(0 0 calc(var(--w) * 0.23) 0);
-}
-.perch.sit .perch-leg.left {
-  clip-path: inset(calc(100% - var(--w) * 0.23) 54% 0 0);
-  transform-origin: 35% calc(100% - var(--w) * 0.23);
-}
-.perch.sit .perch-leg.right {
-  clip-path: inset(calc(100% - var(--w) * 0.23) 0 0 46%);
-  transform-origin: 60% calc(100% - var(--w) * 0.23);
-}
-.perch.sit.swing .perch-leg {
-  animation: leg-kick 0.9s ease-in-out infinite alternate;
-}
-.perch.sit.swing .perch-leg.right {
-  animation-delay: -0.9s;
-}
-@keyframes leg-kick {
-  from {
-    transform: scaleY(1);
-  }
-  to {
-    transform: scaleY(0.7);
-  }
-}
 /* 動きのコマ：元の絵とは目や足先だけが違う絵（pipeline/char_cut.py の patch）を重ね、見せる・隠すを切り替える */
 .perch-frame {
   position: absolute;
@@ -2037,9 +2111,9 @@ body:has(.home-dock) .footer {
   93% { opacity: 1; }
   96% { opacity: 0; }
 }
-/* 寝そべって足をパタパタ：足先の違う2コマを交互に。コマを出している間は元の絵を隠す
+/* 足をバタバタ（腰かける）・パタパタ（寝そべる）：足の違う2コマを交互に。コマを出している間は元の絵を隠す
    （コマの、元の足があったところは透明なので、重ねたままだと元の足が透けて足が4本に見える） */
-.perch.lie.swing.has-kick .perch-body {
+.perch.swing.has-kick .perch-body {
   animation: kick-base 1.1s steps(1) infinite;
 }
 @keyframes kick-base {
@@ -2048,10 +2122,10 @@ body:has(.home-dock) .footer {
   50% { opacity: 1; }
   75% { opacity: 0; }
 }
-.perch.lie.swing .perch-frame.k1 {
+.perch.swing .perch-frame.k1 {
   animation: kick-1 1.1s steps(1) infinite;
 }
-.perch.lie.swing .perch-frame.k2 {
+.perch.swing .perch-frame.k2 {
   animation: kick-2 1.1s steps(1) infinite;
 }
 @keyframes kick-1 {
@@ -2064,7 +2138,6 @@ body:has(.home-dock) .footer {
   75% { opacity: 1; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .perch .perch-leg,
   .perch .perch-body,
   .perch .perch-frame {
     animation: none !important;
@@ -2232,4 +2305,19 @@ body:has(.home-dock) .footer {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 10px;
+}
+
+/* 肢で解くの答える前（T065）：律が○×の欄の縁に座る。足の分だけ欄の上を広げ、ページの下も空ける */
+.actionbar.with-ritsu {
+  padding-top: 26px;
+}
+.page.playing:has(.bar-dock) {
+  padding-bottom: calc(190px + env(safe-area-inset-bottom));
+}
+.bar-dock .dock-bubble {
+  bottom: 30px;
+  font-size: 0.9rem;
+}
+.me-tabs {
+  margin: 0 0 8px;
 }

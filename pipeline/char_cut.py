@@ -188,11 +188,28 @@ def sit(src: Path, dst: Path, width: int = 240, below: float = 0.25) -> None:
 
 
 BLINK_BOX = (0.25, 0.33, 0.75, 0.52)  # 腰かける絵の目のあたり（幅・高さに対する割合）
+SWING_BOX = (0.25, 0.70, 0.75, 1.0)  # 腰かける絵のぶら下げた足のあたり
 KICK_BOX = (0.55, 0.15, 1.0, 0.8)  # 寝そべる絵の上げた足先のあたり
+
+
+def backgrounds() -> None:
+    """律のページの背景（audio/samples_char/bg/*.png → app/public/chars/bg/*.webp。幅 960）"""
+    out = DST.parent / "bg"
+    out.mkdir(parents=True, exist_ok=True)
+    for f in sorted((SRC.parent / "bg").glob("*.png")):
+        r = Image.open(f).convert("RGB")
+        r = r.resize((960, round(r.height * 960 / r.width)), Image.LANCZOS)
+        with tempfile.NamedTemporaryFile(suffix=".png") as t:
+            r.save(t.name)
+            subprocess.run(["cwebp", "-quiet", "-q", "78", t.name, "-o", str(out / f"{f.stem}.webp")], check=True)
+    print(f"✅ {out.relative_to(ROOT)}")
 
 
 def main() -> None:
     name = sys.argv[1]
+    if name == "bg":
+        backgrounds()
+        return
     src, dst = SRC / name, DST / name
     dst.mkdir(parents=True, exist_ok=True)
     only_motion = "--sit" in sys.argv  # 腰かける・寝そべる・動きの絵だけ（ふつうの絵・ちびキャラは作り直さない）
@@ -210,6 +227,10 @@ def main() -> None:
         if (src / f"blink-{n}.png").exists():
             frames.append(patch(s, src / f"blink-{n}.png", BLINK_BOX))
             dsts.append(dst / f"sit-{n}-blink.webp")
+        for k in (1, 2):  # 足のバタバタ（足を振ったコマ）
+            if (src / f"swing-{n}-{k}.png").exists():
+                frames.append(patch(s, src / f"swing-{n}-{k}.png", SWING_BOX))
+                dsts.append(dst / f"sit-{n}-swing-{k}.webp")
         if (src / f"hop-{n}.png").exists():
             frames.append(Image.open(src / f"hop-{n}.png"))
             dsts.append(dst / f"hop-{n}.webp")

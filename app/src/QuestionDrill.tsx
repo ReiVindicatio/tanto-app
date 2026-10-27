@@ -7,11 +7,15 @@ import { grade, slotOptions, type Grade } from "./grade";
 import LawNote from "./LawNote";
 import { Progress } from "./screens/common";
 import { QuestionResult, type QuestionResultItem } from "./ResultView";
+import { RitsuDock, useIdle } from "./Ritsu";
+import { characterOn } from "./character";
 
 export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; data: DataSet; onExit: () => void }) {
   const [i, setI] = useState(0);
   const [picks, setPicks] = useState<(number | null)[]>(() => emptyPicks(data.questions[0]));
   const [result, setResult] = useState<Grade | null>(null);
+  const [showChar] = useState(characterOn);
+  const idle = useIdle(60000);
   const [scores, setScores] = useState<QuestionResultItem[]>([]);
   const [startedAt, setStartedAt] = useState(() => Date.now());
   const [finishedAt, setFinishedAt] = useState<number | null>(null);
@@ -117,7 +121,9 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
       </div>
 
       {!result ? (
-        <div className="actionbar">
+        <div className={`actionbar${showChar ? " with-ritsu" : ""}`}>
+          {/* 律（T065）：答える前は○×の欄の縁で考え中（しばらく採点しないと寝そべる）。採点したら満点で喜んで跳ねる */}
+          {showChar && <RitsuDock face={idle ? "sleepy" : "think"} pose={idle ? "lie" : "sit"} swing className="bar-dock" />}
           <button disabled={picks.some((p) => p === null)} onClick={submit}>
             採点する
           </button>
@@ -141,7 +147,8 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
             )}
             <ReportLink target={q.id} context={reportContext(qexpById.get(q.id))} />
           </div>
-          <div className="actionbar">
+          <div className={`actionbar${showChar ? " with-ritsu" : ""}`}>
+            {showChar && <RitsuDock face={result.full ? "happy" : "sad"} hop={result.full} className="bar-dock" />}
             <button onClick={next}>次へ</button>
           </div>
         </>

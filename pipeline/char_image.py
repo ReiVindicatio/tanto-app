@@ -6,7 +6,8 @@
   python3 pipeline/char_image.py themes                # 律の衣装と髪型のテーマの候補（T065。audio/samples_char/g6/）
   python3 pipeline/char_image.py theme_set <テーマ> <見本の png>   # 選んだ見本から、そのテーマの絵をひとそろい作る（audio/samples_char/themes/<テーマ>/）
   python3 pipeline/char_image.py sit_set <テーマ>      # 縁に腰かけるちびキャラ 8表情と、寝そべる絵（sit-smile.png と lie-sleepy.png の見本から）
-  python3 pipeline/char_image.py motion_set <テーマ>   # 動きの絵：まばたき（目を閉じた絵）・跳ねたところ・寝転びかけ
+  python3 pipeline/char_image.py motion_set <テーマ>   # 動きの絵：まばたき・足のバタバタ・寝そべりの足・寝転びかけ
+  python3 pipeline/char_image.py backgrounds           # 律のページの背景（audio/samples_char/bg/）
                                                        # 背景を抜いて webp にするのは pipeline/char_cut.py
 
 - キーは .secrets/google-vertex-key（声1と同じ）。請求は Google Cloud のクレジット
@@ -16,12 +17,14 @@
 from __future__ import annotations
 
 import base64
+import itertools
 import json
 import random
 import sys
 import time
 import urllib.error
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from common import ROOT
@@ -29,9 +32,18 @@ from tts_gemini import vertex_key
 
 OUT = ROOT / "audio" / "samples_char"
 MODEL = "gemini-2.5-flash-image"
-# グローバルの口だとアジアの地域に振られて画像のモデルが見つからない（2026-10-27）。us-central1 に固定する
-URL = ("https://us-central1-aiplatform.googleapis.com/v1/projects/344821173333/locations/us-central1/"
-       f"publishers/google/models/{MODEL}:generateContent")
+# グローバルの口だとアジアの地域に振られて画像のモデルが見つからない（2026-10-27）。地域を決めて呼ぶ。
+# 1分あたりの回数の制限は地域ごとなので、使える地域を順に回して並べて作る（2026-10-27：us-central1 だけだと 429 が続いた）。
+# アジアの地域（asia-northeast1）にはこのモデルがない
+REGIONS = ["us-central1", "us-east4", "us-east5", "us-west1", "us-west4", "us-south1", "europe-west1", "europe-west4", "europe-north1"]
+_next_region = itertools.count()
+WORKERS = 6  # 並べて作る数
+
+
+def url(region: str) -> str:
+    return (f"https://{region}-aiplatform.googleapis.com/v1/projects/344821173333/locations/{region}/"
+            f"publishers/google/models/{MODEL}:generateContent")
+
 
 COMMON = ("Original anime-style character illustration for a study app, clean line art, soft pastel colors, "
           "plain very light background, no text, no watermark. Must be an original design, "
@@ -54,19 +66,24 @@ FACES = {
 
 def generate(parts: list[dict], path: Path) -> None:
     body = {"contents": [{"role": "user", "parts": parts}], "generationConfig": {"responseModalities": ["TEXT", "IMAGE"]}}
-    for attempt in range(15):
-        req = urllib.request.Request(URL, data=json.dumps(body).encode(),
+    for attempt in range(30):
+        region = REGIONS[next(_next_region) % len(REGIONS)]
+        req = urllib.request.Request(url(region), data=json.dumps(body).encode(),
                                      headers={"Content-Type": "application/json", "x-goog-api-key": vertex_key()})
         try:
             with urllib.request.urlopen(req, timeout=180) as r:
                 res = json.loads(r.read())
-            break
+            if "parts" in res["candidates"][0].get("content", {}):
+                break
+            time.sleep(2)  # 絵のない応答がまれに返る。作り直す
         except urllib.error.HTTPError as e:
-            # 1分あたりの回数が少ない（2026-10-27：何百枚も続けて作ると 429 が続く）。混んでいたら待ってやり直す
-            if e.code in (429, 500, 503) and attempt < 14:
-                time.sleep(min(300, 15 * 2 ** attempt) + random.uniform(0, 10))
+            if e.code in (429, 500, 503) and attempt < 29:
+                # 混んでいたら次の地域へ。地域をひと回りしたら少し待つ
+                time.sleep(2 if (attempt + 1) % len(REGIONS) else min(120, 10 * (attempt // len(REGIONS) + 1)) + random.uniform(0, 5))
                 continue
             raise
+    else:
+        raise RuntimeError("絵が返ってこなかった（何度やり直しても）")
     for p in res["candidates"][0]["content"]["parts"]:
         if "inlineData" in p:
             path.write_bytes(base64.b64decode(p["inlineData"]["data"]))
@@ -265,6 +282,19 @@ PEEK = ("Image 1 shows the pose: a chibi girl PEEKING over a flat grey ledge at 
         "framing and ledge of image 1. Expression: ")
 
 
+def run_all(jobs: list[tuple[list[dict], Path]]) -> None:
+    """まだない絵を並べて作る（地域を回すので速い）。jobs は (parts, 出力先)"""
+    todo = [(parts, out) for parts, out in jobs if not out.exists()]
+
+    def one(job: tuple[list[dict], Path]) -> str:
+        generate(*job)
+        return job[1].name
+
+    with ThreadPoolExecutor(WORKERS) as ex:
+        for name in ex.map(one, todo):
+            print(f"  {name}", flush=True)
+
+
 def _img(path: Path) -> dict:
     return {"inlineData": {"mimeType": "image/png", "data": base64.b64encode(path.read_bytes()).decode()}}
 
@@ -275,30 +305,15 @@ def theme_set(name: str, src: Path) -> None:
     base = g / "base-smile.png"
     if not base.exists():
         base.write_bytes(src.read_bytes())
-    for face, text in THEME_FACES.items():
-        out = g / f"base-{face}.png"
-        if not out.exists():
-            generate([_img(base), {"text": SAME_THEME + text + ". " + COMMON}], out)
-            print(f"  {out.name}", flush=True)
     master = g / "chibi-smile.png"
-    if not master.exists():
-        generate([_img(base), {"text": CHIBI + " The hairstyle must be clearly visible. Gentle closed-mouth smile. " + COMMON}], master)
-        print(f"  {master.name}", flush=True)
-    for face, text in THEME_FACES.items():
-        out = g / f"chibi-{face}.png"
-        if not out.exists():
-            generate([_img(master), {"text": SAME_THEME + text + ". Keep it a chibi / super-deformed figure, 2 heads tall, full body. " + COMMON}], out)
-            print(f"  {out.name}", flush=True)
-    if "--peek" not in sys.argv:  # のぞく絵（T063）は今は使わない（腰かける絵に替えた）
-        return
-    pose = OUT / "g5" / "peek-happy.png"
-    for face, text in THEME_FACES.items():
-        if face == "surprised":
-            continue
-        out = g / f"peek-{face}.png"
-        if not out.exists():
-            generate([_img(pose), _img(g / f"chibi-{face}.png"), {"text": PEEK + text + ". No text. " + COMMON}], out)
-            print(f"  {out.name}", flush=True)
+    run_all([([_img(base), {"text": SAME_THEME + t + ". " + COMMON}], g / f"base-{f}.png") for f, t in THEME_FACES.items()]
+            + [([_img(base), {"text": CHIBI + " The hairstyle must be clearly visible. Gentle closed-mouth smile. " + COMMON}], master)])
+    run_all([([_img(master), {"text": SAME_THEME + t + ". Keep it a chibi / super-deformed figure, 2 heads tall, full body. " + COMMON}],
+              g / f"chibi-{f}.png") for f, t in THEME_FACES.items()])
+    if "--peek" in sys.argv:  # のぞく絵（T063）は今は使わない（腰かける絵に替えた）
+        pose = OUT / "g5" / "peek-happy.png"
+        run_all([([_img(pose), _img(g / f"chibi-{f}.png"), {"text": PEEK + t + ". No text. " + COMMON}], g / f"peek-{f}.png")
+                 for f, t in THEME_FACES.items() if f != "surprised"])
 
 
 # 縁に腰かける（T065）：ちびキャラが○×の欄・タブ・結果の欄の縁に腰かけ、足をぶら下げる。のぞく絵より服がよく見える
@@ -332,18 +347,10 @@ LIE_FIRST = ("She LIES on her stomach on top of the ledge, reading a small plain
 def sit_set(name: str) -> None:
     g = OUT / "themes" / name
     pose, lie = g / "sit-smile.png", g / "lie-sleepy.png"
-    if not pose.exists():
-        generate([_img(g / "chibi-smile.png"), {"text": LEDGE + SIT_FIRST + outfit(g) + COMMON}], pose)
-        print(f"  {pose.name}", flush=True)
-    for face, text in THEME_FACES.items():
-        out = g / f"sit-{face}.png"
-        if face == "surprised" or out.exists():
-            continue
-        generate([_img(pose), _img(g / f"chibi-{face}.png"), {"text": SIT + text + "." + outfit(g) + "No text. " + COMMON}], out)
-        print(f"  {out.name}", flush=True)
-    if not lie.exists():
-        generate([_img(g / "chibi-smile.png"), {"text": LEDGE + LIE_FIRST + outfit(g) + COMMON}], lie)
-        print(f"  {lie.name}", flush=True)
+    run_all([([_img(g / "chibi-smile.png"), {"text": LEDGE + SIT_FIRST + outfit(g) + COMMON}], pose),
+             ([_img(g / "chibi-smile.png"), {"text": LEDGE + LIE_FIRST + outfit(g) + COMMON}], lie)])
+    run_all([([_img(pose), _img(g / f"chibi-{f}.png"), {"text": SIT + t + "." + outfit(g) + "No text. " + COMMON}], g / f"sit-{f}.png")
+             for f, t in THEME_FACES.items() if f != "surprised"])
 
 
 # 動き（T065）：細かい動き（足のバタバタ）は絵を切り分けて動かす。絵を足すのは、まばたき・跳ねる・座る→寝そべるの間だけ
@@ -366,28 +373,48 @@ KICKS = {1: "the lower legs swung further back and lower, feet pointing back, le
          2: "the lower legs swung further forward and higher, nearly upright, ankles crossed the other way"}
 
 
+# 座って足をバタバタ（2026-10-27）：足を縦に縮めるだけだと「伸び縮み」に見えた（ユーザー）。足を前に振り上げた・後ろに引いたコマを作り、
+# 足のまわりだけ貼って切り替える。コマは表情ごとに要るので、バタバタする場面の表情（読み上げ中＝ふつう・考え中・ホームのにっこり）だけ
+SWING_FACES = ["normal", "think", "smile"]
+SWING = ("Redraw the reference image EXACTLY (same pose, same size and position, same face, hair, outfit, colors and ledge), "
+         "changing ONLY her lower legs and feet that dangle below the ledge: ")
+SWINGS = {1: "both lower legs swung forward and up, knees bent, the soles of the shoes tilted toward the viewer, feet a little apart",
+          2: "the left lower leg swung forward and up, the right lower leg swung back under the ledge, like kicking her feet alternately"}
+
+
 def motion_set(name: str) -> None:
     g = OUT / "themes" / name
-    for k, text in KICKS.items():
-        out = g / f"lie-kick-{k}.png"
-        if not out.exists():
-            generate([_img(g / "lie-sleepy.png"), {"text": KICK + text + ". Everything else must stay identical." + outfit(g) + "No text. " + COMMON}], out)
-            print(f"  {out.name}", flush=True)
-    for face in BLINK_FACES:
-        out = g / f"blink-{face}.png"
-        if not out.exists():
-            generate([_img(g / f"sit-{face}.png"), {"text": BLINK + outfit(g) + "No text. " + COMMON}], out)
-            print(f"  {out.name}", flush=True)
-    for face in ("happy", "smug") if "--hop" in sys.argv else ():  # 跳ねたところの絵は大きさがそろわず使っていない（2026-10-27）
-        out = g / f"hop-{face}.png"
-        if not out.exists():
-            generate([_img(g / f"sit-{face}.png"), {"text": HOP + THEME_FACES[face] + ". No text. " + COMMON}], out)
-            print(f"  {out.name}", flush=True)
-    for k in (1, 2):
-        out = g / f"mid-lie-{k}.png"
-        if not out.exists():
-            generate([_img(g / "sit-smile.png"), _img(g / "lie-sleepy.png"), {"text": MID + outfit(g) + "No text. " + COMMON}], out)
-            print(f"  {out.name}", flush=True)
+    jobs = [([_img(g / "lie-sleepy.png"), {"text": KICK + t + ". Everything else must stay identical." + outfit(g) + "No text. " + COMMON}],
+             g / f"lie-kick-{k}.png") for k, t in KICKS.items()]
+    jobs += [([_img(g / f"sit-{f}.png"), {"text": BLINK + outfit(g) + "No text. " + COMMON}], g / f"blink-{f}.png") for f in BLINK_FACES]
+    jobs += [([_img(g / f"sit-{f}.png"), {"text": SWING + t + ". Everything else must stay identical." + outfit(g) + "No text. " + COMMON}],
+              g / f"swing-{f}-{k}.png") for f in SWING_FACES for k, t in SWINGS.items()]
+    jobs += [([_img(g / "sit-smile.png"), _img(g / "lie-sleepy.png"), {"text": MID + outfit(g) + "No text. " + COMMON}], g / f"mid-lie-{k}.png")
+             for k in (1, 2)]
+    if "--hop" in sys.argv:  # 跳ねたところの絵は大きさがそろわず使っていない（2026-10-27）
+        jobs += [([_img(g / f"sit-{f}.png"), {"text": HOP + THEME_FACES[f] + ". No text. " + COMMON}], g / f"hop-{f}.png") for f in ("happy", "smug")]
+    run_all(jobs)
+
+
+# 律のページの背景（T065）：律が目立つよう、淡くやわらかい背景。人物は描かない
+BACKGROUNDS = {
+    "room": "a cozy girl's study room in the daytime: a wooden desk with a small stack of books and a mug, a bookshelf, soft curtains, a potted plant",
+    "window": "a sunny window seat on an early-winter afternoon: cushions, a knitted blanket, warm sunlight, a tree with the last autumn leaves outside",
+    "library": "a quiet old library: tall wooden bookshelves, a reading table with a lamp, soft light through tall windows",
+    "night": "a desk at night: a warm desk lamp, an open notebook and pens, a window with a starry night sky, a sleepy cozy mood",
+    "studyhall": "a calm self-study room: rows of wooden desks, large windows, soft morning light, a clock on the wall",
+    "sakura": "a path lined with cherry blossom trees in spring, petals falling, soft blue sky",
+    "engawa": "a Japanese house veranda (engawa) in summer: a wind chime, a glass of barley tea, green garden, blue sky with clouds",
+    "snow": "a window with snow falling outside at dusk: frosty glass, a warm room with fairy lights, a cup of cocoa on the sill",
+}
+BG = ("A background illustration only, with NO people and NO characters. Soft pastel anime background art, gentle light, slightly blurred and low "
+      "contrast so that a character placed in front stands out, no text, no letters, wide 4:3 composition. Scene: ")
+
+
+def backgrounds() -> None:
+    g = OUT / "bg"
+    g.mkdir(parents=True, exist_ok=True)
+    run_all([([{"text": BG + t + "."}], g / f"{n}.png") for n, t in BACKGROUNDS.items()])
 
 
 def main() -> None:
@@ -408,6 +435,8 @@ def main() -> None:
         faces2()
     elif what == "themes":
         themes()
+    elif what == "backgrounds":
+        backgrounds()
     elif what == "motion_set":
         motion_set(sys.argv[2])
     elif what == "sit_set":

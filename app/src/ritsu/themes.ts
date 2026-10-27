@@ -1,24 +1,26 @@
 // 律のテーマ（衣装と髪型の組。T065）。絵は public/chars/ritsu/<テーマ>/。レベルで開き、選んだテーマは端末に覚える（学習記録ではない）
 import { progressNow } from "../progress";
 
-/** 動きのコマ（T065）。あるものだけ動かす：blink＝目を閉じた絵がある表情、kick＝寝そべりの足のコマ、hop＝跳ねたところの絵がある表情、mid＝座る→寝そべるの間の絵 */
-export type Motion = { blink: string[]; kick: boolean; hop: string[]; mid: boolean };
+/** 動きのコマ（T065）。あるものだけ動かす：blink＝目を閉じた絵がある表情、swing＝足を振ったコマがある表情、kick＝寝そべりの足のコマ、
+ *  hop＝跳ねたところの絵がある表情、mid＝座る→寝そべるの間の絵 */
+export type Motion = { blink: string[]; swing: string[]; kick: boolean; hop: string[]; mid: boolean };
 /** desc＝どんなときの衣装か（お披露目で見せる。docs/ritsu-costumes.md の設計書から） */
-export type Theme = { id: string; name: string; level: number; desc?: string; motion?: Motion };
+export type Theme = { id: string; name: string; level: number; desc?: string; motion?: Motion; bg?: string };
 
 /** 開くレベルの順。絵をそろえたテーマだけを載せる */
 export const THEMES: Theme[] = [
-  { id: "default", name: "いつもの", level: 1, motion: { blink: ["normal", "smile", "think", "sad", "smug", "jito"], kick: true, hop: [], mid: true } },
+  { id: "default", name: "いつもの", level: 1, bg: "room", motion: { blink: ["normal", "smile", "think", "sad", "smug", "jito"], swing: ["normal", "think", "smile"], kick: true, hop: [], mid: true } },
   {
     id: "knit",
     name: "ひだまりニット",
     level: 3,
+    bg: "window",
     desc: "冬のはじめのお休みの日。日の当たる窓辺で、ココアを飲みながら小さな六法を読む。いつものベストを脱いだ、初めての私服",
-    motion: { blink: ["normal", "smile", "think", "sad", "smug", "jito"], kick: true, hop: [], mid: true },
+    motion: { blink: ["normal", "smile", "think", "sad", "smug", "jito"], swing: ["normal", "think", "smile"], kick: true, hop: [], mid: true },
   },
 ];
 
-const NO_MOTION: Motion = { blink: [], kick: false, hop: [], mid: false };
+const NO_MOTION: Motion = { blink: [], swing: [], kick: false, hop: [], mid: false };
 
 export function motionOf(id: string): Motion {
   return themeById(id)?.motion ?? NO_MOTION;
@@ -87,4 +89,42 @@ export function markRevealed(id: string): void {
 /** 開いたのにまだお披露目を見ていないテーマ（開く順で最初の1つ） */
 export function pendingReveal(level: number): Theme | undefined {
   return THEMES.find((t) => t.id !== "default" && isUnlocked(t, level) && !isRevealed(t.id));
+}
+
+// ---- 律のページの背景（T065）。「衣装に合わせる」なら衣装ごとの背景（Theme.bg）----
+
+export const BACKGROUNDS = [
+  { id: "room", name: "律の部屋" },
+  { id: "window", name: "ひだまりの窓辺" },
+  { id: "library", name: "図書館" },
+  { id: "night", name: "夜の机" },
+  { id: "studyhall", name: "自習室" },
+  { id: "sakura", name: "桜並木" },
+  { id: "engawa", name: "夏の縁側" },
+  { id: "snow", name: "雪の窓辺" },
+] as const;
+
+const BG_KEY = "tanto.character.bg.v1";
+
+/** 選んだ背景（"auto"＝衣装に合わせる） */
+export function chosenBg(): string {
+  try {
+    return localStorage.getItem(BG_KEY) ?? "auto";
+  } catch {
+    return "auto";
+  }
+}
+
+export function setBg(id: string): void {
+  try {
+    localStorage.setItem(BG_KEY, id);
+  } catch {
+    // 覚えられなくても、今の画面では変わる
+  }
+}
+
+/** 実際に出す背景 */
+export function bgFor(theme: string, chosen = chosenBg()): string {
+  if (chosen !== "auto" && BACKGROUNDS.some((b) => b.id === chosen)) return chosen;
+  return themeById(theme)?.bg ?? "room";
 }

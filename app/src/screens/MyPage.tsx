@@ -1,4 +1,5 @@
 // マイページ（T025・T024・T034）：学習の軌跡（ヒートマップ・累計の伸び）・科目ごと・まちがえた肢・アカウント・表示
+import { TabRitsu } from "../Ritsu";
 import TrapSection from "./TrapSection";
 import { getGoal, GOALS, progressNow, setGoal } from "../progress";
 import { useState } from "react";
@@ -142,11 +143,16 @@ export default function MyPage({
 
   const allSets = groups.flatMap((g) => g.sets);
   const wrongTotal = applyFilter(cardsOf(allSets, cardIds), "wrong").length;
+  // 縦に長くなりすぎたので、「記録」と「設定」に分ける（T065）
+  const [view, setView] = useState<"record" | "settings">("record");
+  const VIEWS = [
+    ["record", "記録"],
+    ["settings", "設定"],
+  ] as const;
 
-  return (
-    <section>
-      <h1>マイページ</h1>
-
+  function record() {
+    return (
+      <>
       <h2>学習の軌跡</h2>
       <div className="card">
         <div className="today-stats">
@@ -244,6 +250,13 @@ export default function MyPage({
 
       <TrapSection sets={allSets} pool={cardsOf(allSets, cardIds)} />
 
+      </>
+    );
+  }
+
+  function settings() {
+    return (
+      <>
       <InstallHint />
 
       <h2>アカウント</h2>
@@ -270,7 +283,7 @@ export default function MyPage({
             </button>
           ))}
         </div>
-        <div className="muted small">キャラクター（聞き流しの画面と答え合わせ）</div>
+        <div className="muted small">キャラクター（律）</div>
         <div className="segmented" role="group" aria-label="キャラクター">
           {([true, false] as const).map((on) => (
             <button
@@ -287,6 +300,27 @@ export default function MyPage({
           ))}
         </div>
       </div>
+
+      </>
+    );
+  }
+
+  return (
+    <section>
+      {/* 律（T065）：タブの縁に座っているだけ。押すとひとこと */}
+      {showChar && <TabRitsu />}
+      <h1>マイページ</h1>
+      <div className="segmented me-tabs" role="tablist" aria-label="マイページ">
+        {VIEWS.map(([v, label]) => (
+          <button key={v} role="tab" aria-selected={view === v} className={view === v ? "chosen" : ""} onClick={() => setView(v)}>
+            {label}
+          </button>
+        ))}
+      </div>
+
+      {/* 関数として呼ぶ（部品にすると、描き直しのたびに中の状態が消える） */}
+      {view === "record" && record()}
+      {view === "settings" && settings()}
 
       <p className="legal-links small">
         <button className="link small" onClick={() => navigate({ name: "terms" })}>

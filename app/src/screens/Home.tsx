@@ -11,7 +11,7 @@ import { characterOn } from "../character";
 import { homeLine, playLine, seeded } from "../ritsu/lines";
 import { pendingReveal } from "../ritsu/themes";
 import { progressNow } from "../progress";
-import { RitsuDock } from "../Ritsu";
+import { RitsuDock, useIdle } from "../Ritsu";
 
 function QuickStart({
   groups,
@@ -38,6 +38,7 @@ function QuickStart({
   const scopeName = scoped.length > 0 ? scoped[0].name : "全科目";
   const [showChar] = useState(characterOn);
   const p = progressNow();
+  const idle = useIdle(30000); // しばらく触らないと寝そべって本を読む
   // 律のひとこと（T065）。描き直しても変わらないよう、種から選ぶ。律を押すと種を変えて、声つきで言い直す
   const [seed, setSeed] = useState(() => Math.floor(Math.random() * 233280));
   const lineFor = (sd: number) =>
@@ -60,7 +61,9 @@ function QuickStart({
       {/* 律の今日の案内（T063・T065）：タブの縁からのぞく（画面の下に固定）。急かさない・連続記録で脅さない */}
       {showChar && cardIds.size > 0 && (
         <RitsuDock
-          face={said?.line.face ?? "smile"}
+          face={idle ? "sleepy" : (said?.line.face ?? "smile")}
+          pose={idle ? "lie" : "sit"}
+          swing
           className="home-dock"
           fadeAfter={6000}
           onPeek={() => {

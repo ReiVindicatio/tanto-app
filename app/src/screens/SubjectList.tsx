@@ -1,4 +1,6 @@
 // 科目の一覧（T025）：科目ごとのカード。タップで科目の画面へ
+import { TabRitsu } from "../Ritsu";
+import { characterOn } from "../character";
 import { EXAM_SHORT, type CardRef, type SubjectGroup } from "../data";
 import { summarize } from "../history";
 import { navigate } from "../router";
@@ -8,6 +10,8 @@ import { cardsOf, Progress } from "./common";
 export default function SubjectList({ groups, cardIds }: { groups: SubjectGroup[]; cardIds: Map<string, CardRef[]> }) {
   return (
     <section>
+      {/* 律（T065）：タブの縁に座っているだけ。押すとひとこと */}
+      {characterOn() && <TabRitsu />}
       <h1>科目</h1>
       <div className="subject-cards">
         {groups.map((g) => {

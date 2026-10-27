@@ -3,6 +3,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { DataSet, Question } from "./types";
 import QuestionBody from "./QuestionBody";
+import { RitsuDock } from "./Ritsu";
+import { characterOn } from "./character";
 import ExplanationView from "./ExplanationView";
 import LawNote from "./LawNote";
 import { grade, slotOptions } from "./grade";
@@ -161,7 +163,9 @@ export default function MockDrill({
         ))}
       </div>
 
-      <div className="actionbar">
+      <div className={`actionbar${characterOn() ? " with-ritsu" : ""}`}>
+        {/* 律（T065）：模試の間は静かに考え中で座っているだけ（話さない・寝そべらない） */}
+        {characterOn() && <RitsuDock face="think" className="bar-dock" />}
         <button className="secondary" disabled={i === 0} onClick={() => go(i - 1)}>
           前へ
         </button>

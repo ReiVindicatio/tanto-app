@@ -9,6 +9,7 @@ test("下のタブで3つの画面を行き来でき、戻る操作で前の画�
   await expect(page.getByRole("heading", { name: "科目" })).toBeVisible();
   await tab(page, "マイページ").click();
   await expect(page).toHaveURL(/\/me$/);
+  await page.getByRole("tab", { name: "設定" }).click(); // マイページは「記録」「設定」に分けた（T065）
   await expect(page.getByRole("button", { name: "Google でログイン" })).toBeVisible();
   await page.goBack();
   await expect(page).toHaveURL(/\/subjects$/);
@@ -42,10 +43,12 @@ test("科目の画面の URL を直接開ける。存在しない科目は科目
 test("テーマ：ダークに切り替えると保存され、再読み込みしても続く。端末に合わせるに戻すと保存を消す", async ({ page }) => {
   await openHome(page);
   await tab(page, "マイページ").click();
+  await page.getByRole("tab", { name: "設定" }).click(); // マイページは「記録」「設定」に分けた（T065）
   await page.getByRole("button", { name: "ダーク" }).click();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
   await page.reload();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await page.getByRole("tab", { name: "設定" }).click(); // マイページは「記録」「設定」に分けた（T065）
   await page.getByRole("button", { name: "端末に合わせる" }).click();
   expect(await page.evaluate(() => localStorage.getItem("tanto.theme.v1"))).toBeNull();
 });

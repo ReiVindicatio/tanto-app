@@ -23,11 +23,13 @@ test("マイページ：記録を消すボタンの文字が見える。記録�
   await page.getByRole("button", { name: "○", exact: true }).click();
   await page.getByRole("button", { name: "← 戻る" }).click();
   await tab(page, "マイページ").click();
+  await page.getByRole("tab", { name: "設定" }).click(); // マイページは「記録」「設定」に分けた（T065）
   const del = page.getByRole("button", { name: "この端末の記録を消す" });
   const [color, bg] = await del.evaluate((el) => [getComputedStyle(el).color, getComputedStyle(el).backgroundColor]);
   expect(color).not.toBe(bg);
   expect(bg).toMatch(/rgba\(0, 0, 0, 0\)|transparent/);
-  // 線（climb-line）の始めと終わりが同じ高さ
+  // 線（climb-line）の始めと終わりが同じ高さ（グラフは「記録」）
+  await page.getByRole("tab", { name: "記録" }).click();
   const d = await page.locator(".climb-line").getAttribute("d");
   const ys = [...d!.matchAll(/[ML][\d.]+,([\d.]+)/g)].map((m) => m[1]);
   expect(ys.length).toBe(2);

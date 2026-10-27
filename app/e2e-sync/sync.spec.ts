@@ -36,7 +36,8 @@ async function answer(page: Page, n: number) {
 
 test("2つのブラウザで同じ利用者なら、片方で解いた記録がもう片方に出る", async ({ browser }) => {
   const phone = await openAs(browser, "alice");
-  await myPage(phone).click(); // ログイン中の名前はマイページに出る
+  await myPage(phone).click(); // ログイン中の名前はマイページ（設定）に出る
+  await phone.getByRole("tab", { name: "設定" }).click(); // マイページは「記録」「設定」に分けた（T065）
   await expect(phone.locator(".authbar")).toContainText("テスト利用者 alice");
   await phone.goBack();
   await expect(phone.locator(".sync-status")).toContainText("同期済み"); // 起動時の同期が終わってから数える
@@ -93,6 +94,7 @@ test("ログイン前に解いた記録は、ログインするとアカウン�
   await answer(page, 2);
   await expect(allYears(page)).toContainText("回答済み 2枚");
   await myPage(page).click();
+  await page.getByRole("tab", { name: "設定" }).click(); // マイページは「記録」「設定」に分けた（T065）
   page.once("dialog", (d) => d.accept("carol")); // テスト用ログインの利用者 ID
   await page.getByRole("button", { name: "Google でログイン" }).click();
   await expect(page.locator(".sync-status")).toContainText("同期済み");
@@ -125,6 +127,7 @@ test("退会：サーバーの記録とアカウントを消し、別の端末�
   await expect(phone.locator(".sync-status")).toContainText("同期済み");
   await answer(phone, 3);
   await myPage(phone).click();
+  await phone.getByRole("tab", { name: "設定" }).click(); // マイページは「記録」「設定」に分けた（T065）
   await hideAndShow(phone); // 未送信を送る
   await expect(phone.locator(".sync-status")).toContainText("同期済み");
 

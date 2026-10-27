@@ -32,16 +32,21 @@ test("ログインしていなければ「この端末の記録を消す」で�
   await expect(allYearsSet(page)).toContainText("回答済み 2枚");
 
   await tab(page, "マイページ").click();
+  await page.getByRole("tab", { name: "設定" }).click(); // マイページは「記録」「設定」に分けた（T065）
   await expect(page.getByRole("button", { name: "記録を全部消す（退会）" })).toHaveCount(0);
   await page.getByRole("button", { name: "この端末の記録を消す" }).click();
   await expect(page.locator(".delete-confirm")).toContainText("回答 2 件");
   page.once("dialog", (d) => d.dismiss()); // 2回目の確認でやめると、消さない
   await page.locator(".delete-confirm").getByRole("button", { name: "消す" }).click();
+  await page.getByRole("tab", { name: "記録" }).click();
   await expect(page.locator(".card").first()).toContainText("累計 2 肢");
+  await page.getByRole("tab", { name: "設定" }).click();
+  await page.getByRole("button", { name: "この端末の記録を消す" }).click();
 
   page.once("dialog", (d) => d.accept());
   await page.locator(".delete-confirm").getByRole("button", { name: "消す" }).click();
   await expect(page.locator(".delete-data")).toContainText("記録を全部消しました");
+  await page.getByRole("tab", { name: "記録" }).click();
   await expect(page.locator(".card").first()).toContainText("累計 0 肢");
 });
 
