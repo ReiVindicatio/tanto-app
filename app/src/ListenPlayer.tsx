@@ -32,21 +32,33 @@ type Phase = "ready" | "reading" | "thinking" | "answer" | "paused" | "done";
 /** 残りがこれだけになったら次を読み足す */
 const REFILL_AT = 3;
 
-const FACES: Expression[] = ["normal", "smile", "think", "happy", "sad", "sleepy", "smug", "jito"];
+/** 聞いている間に使う表情（のぞく絵） */
+const PEEK_FACES: Expression[] = ["normal", "think", "happy", "sad", "sleepy", "smug", "jito"];
 
 /**
  * 律の舞台（ノベルゲーム風）：背景を抜いた立ち絵を大きく出し、頭の横の吹き出しで今の状態を言う。
  * 下に重ねる文字の枠（肢の文）は呼ぶ側で置く
  */
+/** 始める前・おわりの律：立ち絵を右に、吹き出しを左に分けて置く（幅が狭くても重ならない） */
 function Stage({ face, children }: { face: Expression; children: React.ReactNode }) {
-  // 表情を切り替えたときに白くならないよう、使う絵は最初にまとめて読み込んでおく
-  useEffect(() => {
-    for (const f of FACES) new Image().src = characterImage("base", f);
-  }, []);
   return (
     <div className="vn-stage">
-      <img className="vn-sprite" src={characterImage("base", face)} alt="" data-face={face} />
       {children}
+      <img className="vn-sprite" src={characterImage("base", face)} alt="" data-face={face} />
+    </div>
+  );
+}
+
+/** 聞いている間の律：画面の下の○×の欄の縁からのぞき、横の吹き出しで今の状態を言う（スクロールしても見える） */
+function Dock({ face, children }: { face: Expression; children: React.ReactNode }) {
+  // 表情を切り替えたときに白くならないよう、使う絵は最初にまとめて読み込んでおく
+  useEffect(() => {
+    for (const f of PEEK_FACES) new Image().src = characterImage("peek", f);
+  }, []);
+  return (
+    <div className="listen-dock">
+      {children}
+      <img className="dock-peek" src={characterImage("peek", face)} alt="" data-face={face} />
     </div>
   );
 }
@@ -300,7 +312,7 @@ export default function ListenPlayer({
       <section className="listen">
         {showChar && (
           <Stage face={listenFace("done", null, streaks.correct, streaks.wrong)}>
-            <Bubble tail="down" className="vn-bubble">{LINES.listenDone}</Bubble>
+            <Bubble tail="right" className="vn-bubble">{LINES.listenDone}</Bubble>
           </Stage>
         )}
         <h1>おわり</h1>
@@ -346,7 +358,7 @@ export default function ListenPlayer({
   );
 
   return (
-    <section className="listen">
+    <section className={`listen${showChar && phase !== "ready" ? " with-dock" : ""}`}>
       <div className="toolbar">
         <button className="link" onClick={() => (phase === "ready" ? onExit() : stop())}>
           {phase === "ready" ? "← 戻る" : "止める"}
@@ -363,7 +375,7 @@ export default function ListenPlayer({
         <>
           {showChar && (
             <Stage face={listenFace("ready", null, 0, 0)}>
-              <Bubble tail="down" className="vn-bubble">{LINES.listenIntro}</Bubble>
+              <Bubble tail="right" className="vn-bubble">{LINES.listenIntro}</Bubble>
             </Stage>
           )}
           {showChar ? <details className="listen-intro listen-more"><summary className="muted small">くわしく</summary>{intro}</details> : <div className="listen-intro">{intro}</div>}
@@ -371,12 +383,7 @@ export default function ListenPlayer({
       ) : (
         s && (
           <>
-            {showChar && (
-              <Stage face={listenFace(phase, answered, streaks.correct, streaks.wrong)}>
-                <Bubble tail="down" className={`vn-bubble listen-phase ${phase}`}>{phaseText}</Bubble>
-              </Stage>
-            )}
-            <div className={`listen-card${showChar ? " vn-textbox" : ""}`}>
+            <div className="listen-card">
               {o && q && (
                 <div className="muted small">
                   {o.examName} {o.subjectName} {q.exam.era}（{q.exam.year}） 第{q.number}問 肢{s.label}
@@ -438,6 +445,11 @@ export default function ListenPlayer({
       </div>
 
       <div className="actionbar listen-actions">
+        {showChar && phase !== "ready" && s && (
+          <Dock face={listenFace(phase, answered, streaks.correct, streaks.wrong)}>
+            <Bubble tail="right" className={`dock-bubble listen-phase ${phase}`}>{phaseText}</Bubble>
+          </Dock>
+        )}
         {phase === "ready" ? (
           <button onClick={() => void begin(0)}>▶ 聞きはじめる</button>
         ) : (

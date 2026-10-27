@@ -196,20 +196,21 @@ test("読む速さは、いま流している音声にもすぐ当たる（考�
   }
 });
 
-test("律の立ち絵（ノベルゲーム風）：始める前はにっこりで案内、読み上げ中はふつう、考える間は考え中、正解で喜び、一時停止で眠そう。名前は出さない（T063）", async ({ page }) => {
+test("律：始める前は立ち絵と案内の吹き出し。聞いている間は○×の欄の縁からのぞいて、読み上げ中はふつう、考える間は考え中、正解で喜び、一時停止で眠そう。名前は出さない（T063）", async ({ page }) => {
   await stub(page, { audioMissing: "none" });
   await openHome(page);
   await page.getByRole("button", { name: /聞き流す/ }).click();
-  const face = page.locator(".vn-stage .vn-sprite");
-  await expect(face).toHaveAttribute("data-face", "smile");
+  await expect(page.locator(".vn-stage .vn-sprite")).toHaveAttribute("data-face", "smile");
   await expect(page.locator(".vn-stage .ritsu-bubble")).toContainText("肢を読むね");
   await expect(page.locator(".vn-stage")).not.toContainText("律");
   await page.getByRole("button", { name: "▶ 聞きはじめる" }).click();
+  await expect(page.locator(".vn-stage")).toHaveCount(0);
+  const face = page.locator(".listen-actions .listen-dock .dock-peek");
   await expect(face).toHaveAttribute("data-face", /normal|think/);
   await expect(face).toHaveAttribute("data-face", "think", { timeout: 5000 });
   await page.locator(".listen-actions").getByRole("button", { name: "○", exact: true }).click();
   await expect(face).toHaveAttribute("data-face", /happy|sad/);
   await page.getByRole("button", { name: "❚❚ 一時停止" }).click();
   await expect(face).toHaveAttribute("data-face", "sleepy");
-  await expect(page.locator(".vn-stage .ritsu-bubble")).toContainText("一時停止中");
+  await expect(page.locator(".listen-dock .ritsu-bubble")).toContainText("一時停止中");
 });

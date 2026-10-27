@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import { characterImage, type Expression } from "./character";
 
 /** 吹き出し。tail は吹き出しのしっぽの向き（律がいる側） */
-export function Bubble({ children, tail = "left", className = "" }: { children: ReactNode; tail?: "left" | "down"; className?: string }) {
+export function Bubble({ children, tail = "left", className = "" }: { children: ReactNode; tail?: "left" | "right" | "down"; className?: string }) {
   return (
     <div className={`ritsu-bubble tail-${tail} ${className}`} role="status" aria-live="polite">
       {children}

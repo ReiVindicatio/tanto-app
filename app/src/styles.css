@@ -1683,61 +1683,76 @@ mark.twin-diff {
   flex: 1;
 }
 
-/* 聞き流し（ノベルゲーム風）：立ち絵の上に吹き出し、下に文字の枠を重ねる */
+/* 聞き流しの始める前・おわり：吹き出しを左、立ち絵を右に分けて置く（重ならない） */
 .vn-stage {
-  position: relative;
-  height: 270px;
-  margin: 0.2rem 0 0;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+  margin: 0.2rem 0 0.4rem;
 }
 .vn-sprite {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  height: 300px;
+  height: 240px;
   width: auto;
-  transform: translateX(-38%);
   pointer-events: none;
   user-select: none;
 }
 .vn-bubble {
-  position: absolute;
-  left: 0;
-  top: 0.6rem;
-  max-width: 54%;
   font-size: 0.95rem;
-  z-index: 1;
 }
-.ritsu-bubble.tail-down::before,
-.ritsu-bubble.tail-down::after {
+.ritsu-bubble.tail-right::before,
+.ritsu-bubble.tail-right::after {
   content: "";
   position: absolute;
-  right: 24px;
+  top: 50%;
   border: 8px solid transparent;
+  transform: translateY(-50%);
 }
-.ritsu-bubble.tail-down::before {
-  bottom: -17px;
-  border-top-color: var(--border);
+.ritsu-bubble.tail-right::before {
+  right: -17px;
+  border-left-color: var(--border);
 }
-.ritsu-bubble.tail-down::after {
-  bottom: -14px;
-  border-top-color: var(--bg);
+.ritsu-bubble.tail-right::after {
+  right: -14px;
+  border-left-color: var(--bg);
 }
-.vn-bubble .ok {
+.ritsu-bubble .ok {
   color: var(--ok);
 }
-.vn-bubble .ng {
+.ritsu-bubble .ng {
   color: var(--ng);
 }
-.listen-card.vn-textbox {
-  position: relative;
-  z-index: 2;
-  margin-top: -64px;
-  background: color-mix(in srgb, var(--bg) 92%, transparent);
-  border: 1.5px solid var(--border);
-  border-radius: 14px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  backdrop-filter: blur(4px);
+
+/* 聞いている間：律が画面の下の○×の欄の縁からのぞき、左の吹き出しで今の状態を言う */
+.listen-dock {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 100%;
+  height: 0;
+  pointer-events: none;
+}
+.dock-peek {
+  position: absolute;
+  right: 0;
+  bottom: -7px;
+  width: 92px;
+  height: auto;
+  user-select: none;
+}
+.listen-dock .dock-bubble {
+  position: absolute;
+  right: 112px;
+  bottom: 18px;
+  width: max-content;
+  max-width: calc(100% - 124px);
+  margin: 0;
+  min-height: 0;
+  font-size: 0.95rem;
+}
+.listen.with-dock {
+  /* 律と吹き出しの分だけ、下に余白（設定が隠れないように） */
+  padding-bottom: 90px;
 }
 .listen-more summary {
   cursor: pointer;
@@ -1781,8 +1796,4 @@ mark.twin-diff {
 /* はじき方の初回案内（吹き出し）。キーボードとタッチの出し分けは .swipe-hint のまま */
 .ritsu-says.swipe-hint .ritsu-bubble {
   font-size: 0.92rem;
-}
-.vn-bubble.listen-phase {
-  margin: 0;
-  min-height: 0;
 }
