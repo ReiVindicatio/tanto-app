@@ -9,6 +9,7 @@ import TwinsView from "./TwinsView";
 import { loadTwinsWhenIdle, twinsIfLoaded, twinsOf } from "./twins";
 import { loadTrapsWhenIdle, trapOf, trapsIfLoaded } from "./traps";
 import { cardIdOf } from "./learning";
+import SpeakButton from "./SpeakButton";
 import { milestones, progressNow } from "./progress";
 import { shuffle } from "./shuffle";
 import { recordAnswer } from "./learning";
@@ -184,6 +185,7 @@ export default function StatementDrill({
   const s = order[i];
   const q = qById.get(s.question_id)!;
   const truth = s.truth_at_exam!.value;
+  const speakable = !s.requires_context && s.sub === undefined;
   const o = origin(q);
 
   /** 答える：カードを答えの向き（○は右・×は左）に飛ばし、後ろから答え合わせのカードを出す */
@@ -290,6 +292,12 @@ export default function StatementDrill({
         )}
         {answer === null && <p className="ask">この記述は正しい（○）か、誤り（×）か</p>}
         <p className="statement">{s.text}</p>
+        {/* 読み上げ（T062）：聞き流し用の音声があるのは、前提文も小問も要らない肢だけ。肢の文の要素の外に置く（文の文字を変えない） */}
+        {speakable && (
+          <div className="speak-row">
+            <SpeakButton cardId={cardIdOf(s.id)} part="q" label="肢を読み上げる" />
+          </div>
+        )}
 
         {answer === null && i === 0 && (
           <p className="swipe-hint muted small">
@@ -312,6 +320,7 @@ export default function StatementDrill({
             )}
             <div>
               この記述は <strong>{truth ? "○（正しい）" : "×（誤り）"}</strong>
+              {speakable && <SpeakButton cardId={cardIdOf(s.id)} part="a" label="答えと解説の結論を読み上げる" />}
               <span className="muted small">　出題時点の公式の解答による</span>
             </div>
             <LawNote q={q} />

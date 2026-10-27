@@ -185,9 +185,17 @@ export function silenceUrl(seconds: number): string {
   return `${BASE}sounds/silence-${seconds}.mp3`;
 }
 
-/** 押した答えの「正解。」「不正解。」（声ごと。声2は T058 で同梱した最初のもの） */
-export function clipUrl(name: "seikai" | "fuseikai", voice: VoiceNo): string {
-  return voice === 1 ? `${BASE}sounds/${VOICES[1]}/${name}.mp3` : `${BASE}sounds/${name}.mp3`;
+/** 声1の「正解」は、せ↓いかい↑の読みで作った6本からランダムに流す（2026-10-27 ユーザーが選んだ。seikai-1〜6.mp3） */
+export const SEIKAI_VARIANTS = 6;
+
+/**
+ * 押した答えの「正解」「不正解」（声ごと。声2は T058 で同梱した最初のもの）。
+ * pick は 0 以上 1 未満（テストで固定するため。ふだんは Math.random）
+ */
+export function clipUrl(name: "seikai" | "fuseikai", voice: VoiceNo, pick = Math.random()): string {
+  if (voice !== 1) return `${BASE}sounds/${name}.mp3`;
+  if (name === "fuseikai") return `${BASE}sounds/${VOICES[1]}/fuseikai.mp3`;
+  return `${BASE}sounds/${VOICES[1]}/seikai-${Math.floor(pick * SEIKAI_VARIANTS) + 1}.mp3`;
 }
 
 /**

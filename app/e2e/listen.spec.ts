@@ -94,7 +94,7 @@ test("作っておいた音声（既定は声1）で、肢 → 考える間（�
   const p = (await played(page)).filter((x) => !x.endsWith("silence-1.mp3"));
   // 1肢目：q → （○を押した）正解／不正解 → a。2肢目：q → 無音3秒 → a
   expect(p[0]).toMatch(/^\/audio\/tts\/gemini-leda\/.+\.q\.mp3$/);
-  expect(p[1]).toMatch(/^\/sounds\/gemini-leda\/(seikai|fuseikai)\.mp3$/);
+  expect(p[1]).toMatch(/^\/sounds\/gemini-leda\/(seikai-[1-6]|fuseikai)\.mp3$/);
   expect(p[2]).toBe(p[0].replace(".q.mp3", ".a.mp3"));
   expect(p[3]).toMatch(/\.q\.mp3$/);
   expect(p[4]).toBe("/sounds/silence-3.mp3");

@@ -45,7 +45,15 @@ describe("聞き流しの声（T061）", () => {
   });
 
   it("「正解。」「不正解。」は声ごとの置き場所", () => {
-    expect(clipUrl("seikai", 1)).toBe("/sounds/gemini-leda/seikai.mp3");
+    expect(clipUrl("fuseikai", 1)).toBe("/sounds/gemini-leda/fuseikai.mp3");
     expect(clipUrl("fuseikai", 2)).toBe("/sounds/fuseikai.mp3");
+    expect(clipUrl("seikai", 2)).toBe("/sounds/seikai.mp3");
+  });
+
+  it("声1の「正解」は6本からランダム（端も含めて範囲に収まる）", () => {
+    expect(clipUrl("seikai", 1, 0)).toBe("/sounds/gemini-leda/seikai-1.mp3");
+    expect(clipUrl("seikai", 1, 0.5)).toBe("/sounds/gemini-leda/seikai-4.mp3");
+    expect(clipUrl("seikai", 1, 0.9999)).toBe("/sounds/gemini-leda/seikai-6.mp3");
+    for (let k = 0; k < 50; k++) expect(clipUrl("seikai", 1)).toMatch(/^\/sounds\/gemini-leda\/seikai-[1-6]\.mp3$/);
   });
 });
