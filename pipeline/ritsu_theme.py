@@ -23,6 +23,7 @@ import char_image as ci
 DESIGN = ROOT / "pipeline" / "ritsu_costumes.json"
 APP_LIST = ROOT / "app" / "src" / "ritsu" / "costumes.json"
 LINES = ROOT / "app" / "src" / "ritsu" / "lines.json"
+PICKS = ROOT / "pipeline" / "ritsu_picks"  # 選んだ見本と一枚絵（別の端末でも続きから作れるように git に入れる）
 CHAR_PY = os.environ.get("CHAR_PY", "python3")
 
 SAME = ("Draw the SAME character as in the reference image: exactly the same young round face of a 15-year-old, same eye shape and brown eye color, "
@@ -80,8 +81,13 @@ def build(cid: str) -> None:
         raise SystemExit(f"{cid}：設計に pick（選んだ見本の番号）がない")
     g8, g = ci.OUT / "g8" / cid, ci.OUT / "themes" / cid
     g.mkdir(parents=True, exist_ok=True)
-    shutil.copy(g8 / f"look-{pick['look']}.png", g / "base-smile.png")
-    shutil.copy(g8 / f"reveal-{pick['reveal']}.png", g / "reveal.png")
+    for src, dst in ((f"look-{pick['look']}", "base-smile"), (f"reveal-{pick['reveal']}", "reveal")):
+        if (g8 / f"{src}.png").exists():
+            shutil.copy(g8 / f"{src}.png", g / f"{dst}.png")
+        else:  # 別の端末：選んだ見本は git に入れてある（pipeline/ritsu_picks/。audio/samples_char/ は git に入らない）
+            kind = "look" if src.startswith("look") else "reveal"
+            subprocess.run([CHAR_PY, "-c", "import sys;from PIL import Image;Image.open(sys.argv[1]).save(sys.argv[2])",
+                            str(PICKS / f"{cid}-{kind}.webp"), str(g / f"{dst}.png")], check=True)
     (g / "outfit.txt").write_text(c["outfit"] + "\n", encoding="utf-8")
     (g / "signature.txt").write_text(c["signature"] + "\n", encoding="utf-8")
     for step in (lambda: ci.theme_set(cid, g / "base-smile.png"), lambda: ci.sit_set(cid), lambda: ci.motion_set(cid), lambda: ci.extras_set(cid)):
