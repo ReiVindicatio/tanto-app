@@ -13,6 +13,7 @@ import { cumulative, heatLevel, heatmapWeeks, streak, totals, type HeatCell } fr
 import { startStatements } from "../play";
 import { subjectColor } from "../subjectsMeta";
 import { getThemePref, setThemePref, type ThemePref } from "../theme";
+import { characterOn, setCharacterOn } from "../character";
 import { cardsOf, Dot, Progress } from "./common";
 
 const THEMES: { value: ThemePref; label: string }[] = [
@@ -133,6 +134,7 @@ export default function MyPage({
   cardIds: Map<string, CardRef[]>;
 }) {
   const [theme, setTheme] = useState<ThemePref>(getThemePref());
+  const [showChar, setShowChar] = useState(characterOn);
   const [goal, setGoalState] = useState(getGoal());
   const p = progressNow();
   const state = currentState();
@@ -265,6 +267,22 @@ export default function MyPage({
               }}
             >
               {th.label}
+            </button>
+          ))}
+        </div>
+        <div className="muted small">キャラクター（聞き流しの画面と答え合わせ）</div>
+        <div className="segmented" role="group" aria-label="キャラクター">
+          {([true, false] as const).map((on) => (
+            <button
+              key={String(on)}
+              className={showChar === on ? "chosen" : ""}
+              aria-pressed={showChar === on}
+              onClick={() => {
+                setCharacterOn(on);
+                setShowChar(on);
+              }}
+            >
+              {on ? "出す" : "出さない"}
             </button>
           ))}
         </div>

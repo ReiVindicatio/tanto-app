@@ -25,10 +25,27 @@ import {
   VOICE_NOS,
   type ListenPrefs,
 } from "./listen";
+import { CHARACTER, CHARACTERS, characterImage, characterOn, listenFace, type Expression } from "./character";
 
 type Phase = "ready" | "reading" | "thinking" | "answer" | "paused" | "done";
 /** 残りがこれだけになったら次を読み足す */
 const REFILL_AT = 3;
+
+const FACES: Expression[] = ["normal", "smile", "think", "happy", "sad", "sleepy", "smug", "jito"];
+
+/** 律の立ち絵（角の丸い枠に入れる。下に名前） */
+function CharacterFigure({ face }: { face: Expression }) {
+  // 表情を切り替えたときに白くならないよう、使う絵は最初にまとめて読み込んでおく
+  useEffect(() => {
+    for (const f of FACES) new Image().src = characterImage("base", f);
+  }, []);
+  return (
+    <figure className="listen-char">
+      <img src={characterImage("base", face)} alt={`${CHARACTERS[CHARACTER].name}（${face}）`} data-face={face} />
+      <figcaption className="muted small">{CHARACTERS[CHARACTER].name}</figcaption>
+    </figure>
+  );
+}
 
 export default function ListenPlayer({
   title,
@@ -52,6 +69,9 @@ export default function ListenPlayer({
   const [answered, setAnswered] = useState<boolean | null>(null);
   const [stats, setStats] = useState({ heard: 0, answered: 0, correct: 0 });
   const [noVoice, setNoVoice] = useState(false);
+  // キャラクター（T063）：答えの連続正解・連続不正解で表情を変える
+  const [showChar] = useState(characterOn);
+  const [streaks, setStreaks] = useState({ correct: 0, wrong: 0 });
 
   // 読み上げは async の流れで進むので、最新の値は ref から読む
   const order = useRef<Statement[]>(cards);
@@ -241,6 +261,7 @@ export default function ListenPlayer({
     const s = order.current[i];
     const ok = v === s.truth_at_exam!.value;
     recordAnswer(s.id, ok);
+    setStreaks((x) => (ok ? { correct: x.correct + 1, wrong: 0 } : { correct: 0, wrong: x.wrong + 1 }));
     answeredRef.current = ok;
     setAnswered(ok);
     setStats((x) => ({ ...x, answered: x.answered + 1, correct: x.correct + (ok ? 1 : 0) }));
@@ -273,6 +294,7 @@ export default function ListenPlayer({
   if (phase === "done") {
     return (
       <section className="listen">
+        {showChar && <CharacterFigure face={listenFace("done", null, streaks.correct, streaks.wrong)} />}
         <h1>おわり</h1>
         <p className="listen-summary">
           聞いた {stats.heard} 肢・答えた {stats.answered} 肢・正解 {stats.correct}
@@ -301,6 +323,8 @@ export default function ListenPlayer({
       </div>
 
 
+
+      {showChar && <CharacterFigure face={listenFace(phase, answered, streaks.correct, streaks.wrong)} />}
 
       {phase === "ready" ? (
         <div className="listen-intro">

@@ -10,6 +10,7 @@ import { loadTwinsWhenIdle, twinsIfLoaded, twinsOf } from "./twins";
 import { loadTrapsWhenIdle, trapOf, trapsIfLoaded } from "./traps";
 import { cardIdOf } from "./learning";
 import SpeakButton from "./SpeakButton";
+import { characterImage, characterOn, reactionFace } from "./character";
 import { milestones, progressNow } from "./progress";
 import { shuffle } from "./shuffle";
 import { recordAnswer } from "./learning";
@@ -60,6 +61,7 @@ export default function StatementDrill({
   more?: More;
   onExit: () => void;
 }) {
+  const [showChar] = useState(characterOn);
   const [order, setOrder] = useState<Statement[]>(cards);
   const [i, setI] = useState(0);
   const [answer, setAnswer] = useState<boolean | null>(null);
@@ -220,6 +222,8 @@ export default function StatementDrill({
   // 続けて正解した数（まちがえたら0に戻る）。3から出す
   let streak = 0;
   for (let k = results.length - 1; k >= 0 && results[k].correct; k--) streak++;
+  let wrongStreak = 0;
+  for (let k = results.length - 1; k >= 0 && !results[k].correct; k--) wrongStreak++;
 
   const threshold = swipeThreshold(typeof window === "undefined" ? 360 : window.innerWidth);
   const lean = Math.max(-1, Math.min(1, swipe.dx / threshold));
@@ -309,6 +313,15 @@ export default function StatementDrill({
         {answer !== null && (
           <div className={`result ${answer === truth ? "ok" : "ng"}`}>
             <div className="big">
+              {/* キャラクター（T063）：ちびキャラで小さく反応する。絵だけで、○×と解説の見せ方は変えない */}
+              {showChar && (
+                <img
+                  className="drill-char"
+                  src={characterImage("chibi", reactionFace(answer === truth, streak, wrongStreak))}
+                  alt=""
+                  data-face={reactionFace(answer === truth, streak, wrongStreak)}
+                />
+              )}
               {answer === truth ? "正解" : "不正解"}
               {answer === truth && streak >= 3 && <span className="combo">{streak}連続正解</span>}
             </div>
