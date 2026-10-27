@@ -1,0 +1,1053 @@
+{
+  "_": "律の衣装の設計（T065・docs/ritsu-costumes.md）。pipeline/ritsu_theme.py が読む。outfit・signature・look・scene は画像の指示（英語）、ほかは画面に出す日本語。pick は選んだ見本の番号（look-N・reveal-N）",
+  "costumes": [
+    {
+      "id": "hoodie",
+      "name": "ゆるふわパーカー",
+      "level": 5,
+      "bg": "room",
+      "desc": "休みの日の午前。部屋でごろごろしながら、スマホで一問一答。いちばん気がゆるんでいる日の部屋着",
+      "outfit": "Her 'Yurufuwa Parka' outfit: an oversized pastel lavender hoodie with small cat-ear shapes on the hood (hood down), long sleeves, white drawstrings with small pom-poms, light grey shorts over black tights, fluffy lavender room shoes. Her hair is in a messy high bun with a few loose strands (NOT twin tails), with a small white cat-face hair clip.",
+      "look": "She holds a smartphone in both hands, relaxed and sleepy.",
+      "signature": "pulling the cat-ear hood over her head and peeking out shyly from under it with a playful smile",
+      "scene": "On a lazy holiday morning in her room, she lies on a big cushion on the floor with a smartphone in her hands, wearing her lavender cat-ear hoodie and a messy bun, looking up at the viewer with a relaxed sleepy smile. Morning sunlight through the curtains, scattered cushions, a mug on a low table.",
+      "reveal": [
+        [
+          "……今日はお休みモードなの",
+          "sleepy"
+        ],
+        [
+          "このパーカー、フードにねこの耳がついてるんだよ",
+          "smile"
+        ],
+        [
+          "髪、おだんごにしてみた。ゆるいでしょ",
+          "happy"
+        ],
+        [
+          "ごろごろしながら一問一答、さいこう",
+          "smug"
+        ],
+        [
+          "……見なかったことにしてね",
+          "jito"
+        ]
+      ],
+      "wear": [
+        [
+          "ふわぁ……今日はゆっくりでいいよね",
+          "sleepy"
+        ],
+        [
+          "フード、かぶってみる？……にゃ",
+          "happy"
+        ],
+        [
+          "お休みの日も、一問だけ",
+          "smile"
+        ],
+        [
+          "この服、ずっと着てたい",
+          "smile"
+        ],
+        [
+          "ごろごろ……",
+          "sleepy"
+        ],
+        [
+          "袖のぽんぽん、さわっていいよ",
+          "happy"
+        ],
+        [
+          "パーカーだと、つい寝ちゃう",
+          "sleepy"
+        ],
+        [
+          "今日はのんびり、ね",
+          "smile"
+        ],
+        [
+          "おだんご、くずれてない？",
+          "think"
+        ],
+        [
+          "あ、まだパジャマじゃないよ。部屋着だよ",
+          "smug"
+        ]
+      ],
+      "pick": {
+        "look": 3,
+        "reveal": 1,
+        "mid": 2
+      }
+    },
+    {
+      "id": "library",
+      "name": "図書館の日",
+      "level": 5,
+      "bg": "library",
+      "desc": "放課後の図書館。大きな机に判例集を広げて、静かに調べものをする。少し背伸びした、大人っぽい日",
+      "outfit": "Her 'Library Day' outfit: a soft beige knit cardigan over a white blouse with a small dark-green ribbon tie, a dark-green pleated skirt, black loafers, round thin gold-rimmed glasses. Her hair is in a low side ponytail tied with a dark-green ribbon (NOT twin tails).",
+      "look": "She hugs a stack of thick books with plain covers (no letters).",
+      "signature": "pushing up her round glasses with one finger, a slightly smug clever smile",
+      "scene": "In a quiet old library after school, she sits at a large wooden reading table covered with open books with plain pages, wearing round glasses and a beige cardigan, resting her cheek on one hand and looking at the viewer with a small clever smile. Tall bookshelves, warm lamp light, soft light through tall windows.",
+      "reveal": [
+        [
+          "しーっ……ここ、図書館だよ",
+          "smug"
+        ],
+        [
+          "眼鏡、似合う？……ちょっと大人っぽいでしょ",
+          "smile"
+        ],
+        [
+          "調べものするときは、この服なの",
+          "normal"
+        ],
+        [
+          "本のにおい、落ち着くね",
+          "happy"
+        ],
+        [
+          "静かに、一緒に読も",
+          "smile"
+        ]
+      ],
+      "wear": [
+        [
+          "しーっ",
+          "smug"
+        ],
+        [
+          "眼鏡、くもっちゃった",
+          "surprised"
+        ],
+        [
+          "この本、重い……",
+          "sad"
+        ],
+        [
+          "静かだと、集中できるね",
+          "smile"
+        ],
+        [
+          "ふふ、今日のわたし、かしこそうでしょ",
+          "smug"
+        ],
+        [
+          "図書館って、時間を忘れちゃう",
+          "happy"
+        ],
+        [
+          "ページをめくる音、すき",
+          "smile"
+        ],
+        [
+          "眼鏡をかけると、気が引きしまるの",
+          "normal"
+        ],
+        [
+          "閉館まで、あと少しだけ",
+          "think"
+        ],
+        [
+          "本は、そっと閉じようね",
+          "smile"
+        ]
+      ],
+      "pick": {
+        "look": 1,
+        "reveal": 1,
+        "mid": 2
+      }
+    },
+    {
+      "id": "blazer",
+      "name": "模試の朝",
+      "level": 5,
+      "bg": "studyhall",
+      "desc": "はじめての模試の日の朝。きちんとしたブレザーで、少しどきどきしながら会場へ向かう",
+      "outfit": "Her 'Mock Exam Morning' outfit: a navy school blazer with a small gold emblem, a white shirt with a soft red ribbon tie, a grey pleated skirt, navy socks, brown loafers, a small school bag. Her hair is half-up with a small navy bow at the back, the rest let down in soft waves (NOT twin tails).",
+      "look": "She holds a small pocket law book with a plain cover (no letters) to her chest, a little nervous but determined.",
+      "signature": "making a small determined fist pump in front of her chest, 'I can do it'",
+      "scene": "On the morning of her first mock exam, she stands at the entrance of a calm study hall, wearing a navy blazer with a red ribbon and a half-up hairstyle, holding her school bag, turning back to the viewer with a slightly nervous but determined smile. Soft morning light, rows of desks inside, a clock on the wall.",
+      "reveal": [
+        [
+          "今日は、はじめての模試なの",
+          "normal"
+        ],
+        [
+          "ブレザー、きちんとして見える？",
+          "smile"
+        ],
+        [
+          "ちょっと、どきどきする……",
+          "sad"
+        ],
+        [
+          "でも、いっぱい練習したもんね",
+          "smug"
+        ],
+        [
+          "いってきます。……一緒に来てくれる？",
+          "happy"
+        ]
+      ],
+      "wear": [
+        [
+          "リボン、まがってない？",
+          "think"
+        ],
+        [
+          "深呼吸、すー、はー",
+          "normal"
+        ],
+        [
+          "だいじょうぶ、いつもどおりにね",
+          "smile"
+        ],
+        [
+          "ブレザーだと、背すじがのびるの",
+          "smug"
+        ],
+        [
+          "時間配分、気をつけようね",
+          "think"
+        ],
+        [
+          "わからない問題は、あとまわし",
+          "normal"
+        ],
+        [
+          "模試は、練習の本番だよ",
+          "smile"
+        ],
+        [
+          "見直しの時間も、とっておこうね",
+          "think"
+        ],
+        [
+          "終わったら、ココア飲もうね",
+          "happy"
+        ],
+        [
+          "よし、がんばる",
+          "smug"
+        ]
+      ],
+      "pick": {
+        "look": 1,
+        "reveal": 1,
+        "mid": 2
+      }
+    },
+    {
+      "id": "spring",
+      "name": "さくら色の春",
+      "level": 5,
+      "bg": "sakura",
+      "desc": "新しい学年がはじまる春。桜並木を歩いて、いつもの図書館へ。新しいノートをおろす日",
+      "outfit": "Her 'Sakura Spring' outfit: a light pink knit cardigan over a white lace-collared dress, a small pink ribbon at the collar, white socks, pale pink shoes. Her hair is let down straight and long (NOT twin tails), with a cherry-blossom hair clip above her ear.",
+      "look": "She holds a new notebook with a plain cover (no letters), a few cherry petals floating around her.",
+      "signature": "catching a falling cherry petal in her open palm, delighted",
+      "scene": "On a spring morning, she walks along a path lined with blooming cherry trees, wearing a light pink cardigan over a white dress with a cherry-blossom hair clip, holding a new notebook, turning to the viewer with a bright gentle smile as petals fall around her. Soft blue sky.",
+      "reveal": [
+        [
+          "見て、桜が咲いたよ",
+          "happy"
+        ],
+        [
+          "新しいノート、おろしたの",
+          "smile"
+        ],
+        [
+          "髪、まっすぐにしてみた",
+          "smug"
+        ],
+        [
+          "春は、なんだかわくわくするね",
+          "happy"
+        ],
+        [
+          "今年も、一緒にがんばろうね",
+          "smile"
+        ]
+      ],
+      "wear": [
+        [
+          "花びら、ついてるよ。……わたしにも？",
+          "surprised"
+        ],
+        [
+          "春はねむくなるの……",
+          "sleepy"
+        ],
+        [
+          "新しいノート、なにから書こうかな",
+          "think"
+        ],
+        [
+          "桜、もうすぐ散っちゃうね",
+          "sad"
+        ],
+        [
+          "あったかくて、気持ちいいね",
+          "smile"
+        ],
+        [
+          "春の風、すき",
+          "happy"
+        ],
+        [
+          "この髪飾り、お気に入りなの",
+          "smug"
+        ],
+        [
+          "新しいことを始めるのに、いい季節だね",
+          "smile"
+        ],
+        [
+          "お花見しながら一問、どう？",
+          "happy"
+        ],
+        [
+          "春休み、なにしよっか",
+          "think"
+        ]
+      ],
+      "pick": {
+        "look": 1,
+        "reveal": 1,
+        "mid": 2
+      }
+    },
+    {
+      "id": "rain",
+      "name": "雨の日のおさんぽ",
+      "level": 5,
+      "bg": "rain",
+      "desc": "梅雨の放課後。レインコートと長ぐつで、雨の音を聞きながら図書館までおさんぽ",
+      "outfit": "Her 'Rainy Day Stroll' outfit: a pastel yellow raincoat with the hood down and white buttons, a light blue skirt, yellow rain boots with small white dots. Her hair is in two braids (NOT low twin tails), with small yellow raindrop hair pins.",
+      "look": "She holds a small clear plastic umbrella over her shoulder.",
+      "signature": "twirling her clear umbrella happily with raindrops flying",
+      "scene": "On a rainy afternoon in the rainy season, she walks on a wet street holding a clear umbrella, wearing a pastel yellow raincoat and rain boots, hair in two braids, and turns to the viewer with a cheerful smile. Soft rain, puddles with reflections, hydrangeas by the roadside.",
+      "reveal": [
+        [
+          "雨、ふってきちゃったね",
+          "normal"
+        ],
+        [
+          "でも、このレインコートがあるから平気",
+          "smug"
+        ],
+        [
+          "長ぐつで、水たまりをぴちゃって",
+          "happy"
+        ],
+        [
+          "あじさい、きれいだね",
+          "smile"
+        ],
+        [
+          "雨の音を聞きながら、勉強しよ",
+          "smile"
+        ]
+      ],
+      "wear": [
+        [
+          "雨の音、落ち着くね",
+          "smile"
+        ],
+        [
+          "傘、くるくる",
+          "happy"
+        ],
+        [
+          "長ぐつ、ちょっと重い",
+          "sad"
+        ],
+        [
+          "あじさいの色って、毎日ちがうの",
+          "think"
+        ],
+        [
+          "梅雨は、おうちで勉強の季節だね",
+          "smile"
+        ],
+        [
+          "かみなり……は、ちょっとこわい",
+          "sad"
+        ],
+        [
+          "雨やどりしながら、一問",
+          "normal"
+        ],
+        [
+          "レインコートの黄色、目立つでしょ",
+          "smug"
+        ],
+        [
+          "明日は晴れるかな",
+          "think"
+        ],
+        [
+          "ぴちゃぴちゃ",
+          "happy"
+        ]
+      ],
+      "pick": {
+        "look": 1,
+        "reveal": 2,
+        "mid": 2
+      }
+    },
+    {
+      "id": "summer",
+      "name": "夏休みのひまわり",
+      "level": 5,
+      "bg": "engawa",
+      "desc": "夏休みの午後。縁側で麦茶を飲みながら、少しだけ過去問。セミの声と、風鈴の音",
+      "outfit": "Her 'Summer Vacation' outfit: a light blue short-sleeve blouse with a small white ribbon, a white flared skirt, a straw hat with a sunflower ribbon, white sandals. Her hair is in a high ponytail (NOT twin tails).",
+      "look": "She holds a round paper fan (uchiwa) with a plain pattern.",
+      "signature": "fanning herself with a round paper fan, a little hot but smiling",
+      "scene": "On a summer vacation afternoon, she sits on the wooden veranda (engawa) of a Japanese house wearing a straw hat and a light blue blouse, holding a glass of barley tea, smiling at the viewer. A wind chime, green garden, big white clouds and blue sky.",
+      "reveal": [
+        [
+          "夏休みだー",
+          "happy"
+        ],
+        [
+          "麦わら帽子、似合う？",
+          "smile"
+        ],
+        [
+          "あついね……でも、風鈴の音がすずしいの",
+          "sleepy"
+        ],
+        [
+          "夏休みこそ、こつこつだよ",
+          "smug"
+        ],
+        [
+          "麦茶、どうぞ",
+          "smile"
+        ]
+      ],
+      "wear": [
+        [
+          "あつい……",
+          "sleepy"
+        ],
+        [
+          "セミの声、聞こえる？",
+          "normal"
+        ],
+        [
+          "アイス、半分こしよ",
+          "happy"
+        ],
+        [
+          "夏休みの宿題、まだ残ってる……",
+          "sad"
+        ],
+        [
+          "日焼け止め、ぬった？",
+          "think"
+        ],
+        [
+          "風鈴の音、すき",
+          "smile"
+        ],
+        [
+          "ひまわりみたいに、上を向いてこ",
+          "happy"
+        ],
+        [
+          "夏は、朝のうちに勉強するの",
+          "smug"
+        ],
+        [
+          "かき氷、なに味がすき？",
+          "think"
+        ],
+        [
+          "夕立、来そうだね",
+          "surprised"
+        ]
+      ],
+      "pick": {
+        "look": 4,
+        "reveal": 2,
+        "mid": 2
+      }
+    },
+    {
+      "id": "jersey",
+      "name": "朝のジョギング",
+      "level": 5,
+      "bg": "park",
+      "desc": "早起きした朝。公園を軽く走って、頭をすっきりさせてから勉強する日",
+      "outfit": "Her 'Morning Jog' outfit: a pastel mint track jacket zipped up with white stripes on the sleeves, black running shorts over black leggings, white sneakers, a white sweatband on her wrist. Her hair is in a high ponytail (NOT twin tails) with a mint scrunchie.",
+      "look": "She holds a water bottle, a little out of breath but refreshed.",
+      "signature": "stretching one arm across her chest like a warm-up, energetic",
+      "scene": "On an early morning in a park, she stands on a path after a short jog, wearing a mint track jacket and a high ponytail, holding a water bottle and wiping her forehead, smiling at the viewer. Fresh morning light, green trees, a little mist.",
+      "reveal": [
+        [
+          "おはよ。ちょっと走ってきたの",
+          "happy"
+        ],
+        [
+          "朝に体を動かすと、頭がすっきりするんだよ",
+          "smug"
+        ],
+        [
+          "ジャージ、意外とかわいいでしょ",
+          "smile"
+        ],
+        [
+          "……はぁ、はぁ。ちょっと休憩",
+          "sad"
+        ],
+        [
+          "よし、今日も一問からいこ",
+          "happy"
+        ]
+      ],
+      "wear": [
+        [
+          "いち、に、いち、に",
+          "normal"
+        ],
+        [
+          "汗かいちゃった",
+          "surprised"
+        ],
+        [
+          "水分補給、だいじだよ",
+          "smile"
+        ],
+        [
+          "体を動かすと、眠気がとぶの",
+          "smug"
+        ],
+        [
+          "ストレッチ、一緒にやろ",
+          "happy"
+        ],
+        [
+          "朝の空気、気持ちいいね",
+          "smile"
+        ],
+        [
+          "……筋肉痛かも",
+          "sad"
+        ],
+        [
+          "勉強も体力だよ",
+          "smug"
+        ],
+        [
+          "ポニーテール、ゆれるでしょ",
+          "happy"
+        ],
+        [
+          "今日はもう、走らないからね",
+          "jito"
+        ]
+      ],
+      "pick": {
+        "look": 3,
+        "reveal": 1,
+        "mid": 2
+      }
+    },
+    {
+      "id": "yukata",
+      "name": "夏祭りの浴衣",
+      "level": 5,
+      "bg": "festival",
+      "desc": "夏祭りの夜。浴衣を着て、ちょっとだけ息抜き。ちょうちんの明かりと、遠くの花火",
+      "outfit": "Her 'Summer Festival Yukata' outfit: a pastel pink yukata with a soft white and light-blue morning-glory pattern, a yellow obi sash tied in a bow at the back, wooden geta sandals. Her hair is up in a bun with a small pink flower hair ornament (NOT twin tails).",
+      "look": "She holds a round paper fan (uchiwa) and a red candy apple.",
+      "signature": "holding up a shiny red candy apple happily",
+      "scene": "On a summer festival night, she stands among glowing paper lanterns and food stalls, wearing a pastel pink yukata with a morning-glory pattern and her hair up in a bun with a flower ornament, holding a candy apple, looking back at the viewer with a happy smile. Fireworks blooming in the dark sky.",
+      "reveal": [
+        [
+          "……じゃーん、浴衣だよ",
+          "happy"
+        ],
+        [
+          "きょうは夏祭りなの",
+          "smile"
+        ],
+        [
+          "髪、おだんごにしてもらったの",
+          "smug"
+        ],
+        [
+          "りんご飴、半分こしよ",
+          "happy"
+        ],
+        [
+          "今日だけは、勉強おやすみ……かな？",
+          "think"
+        ]
+      ],
+      "wear": [
+        [
+          "花火、きれいだね",
+          "happy"
+        ],
+        [
+          "げた、歩きにくい……",
+          "sad"
+        ],
+        [
+          "りんご飴、あまい",
+          "smile"
+        ],
+        [
+          "ちょうちんの明かり、すき",
+          "smile"
+        ],
+        [
+          "金魚すくい、やりたいな",
+          "think"
+        ],
+        [
+          "浴衣だと、歩き方がおしとやかになるの",
+          "smug"
+        ],
+        [
+          "帰ったら、一問だけね",
+          "normal"
+        ],
+        [
+          "夏の夜って、ちょっとさびしいね",
+          "sad"
+        ],
+        [
+          "また来年も、来ようね",
+          "smile"
+        ],
+        [
+          "わたあめ、ふわふわ",
+          "happy"
+        ]
+      ],
+      "pick": {
+        "look": 2,
+        "reveal": 2,
+        "mid": 2
+      }
+    },
+    {
+      "id": "autumn",
+      "name": "読書の秋",
+      "level": 5,
+      "bg": "autumn",
+      "desc": "秋の公園のベンチ。落ち葉の中で、ゆっくり本を読む。秋の夜長に向けて、少しずつ",
+      "outfit": "Her 'Autumn Reading' outfit: a mustard-yellow knit cardigan over a cream blouse, a brown plaid skirt, brown tights, brown ankle boots, a brown beret. Her hair is in two low buns (NOT twin tails).",
+      "look": "She holds a book with a plain cover (no letters) and a red maple leaf as a bookmark.",
+      "signature": "holding a red maple leaf up to the light and looking at it with a soft smile",
+      "scene": "On an autumn afternoon, she sits on a wooden bench in a park covered with red and yellow fallen leaves, wearing a mustard cardigan and a brown beret, reading a book with a plain cover, and looks up at the viewer with a gentle smile. Golden trees, soft warm light.",
+      "reveal": [
+        [
+          "秋は、読書の季節だね",
+          "smile"
+        ],
+        [
+          "ベレー帽、かぶってみたの",
+          "smug"
+        ],
+        [
+          "落ち葉、ふかふかだよ",
+          "happy"
+        ],
+        [
+          "もみじ、しおりにしよ",
+          "smile"
+        ],
+        [
+          "秋の夜長は、一緒に勉強しよ",
+          "happy"
+        ]
+      ],
+      "wear": [
+        [
+          "落ち葉、かさかさ",
+          "happy"
+        ],
+        [
+          "秋って、少しさびしいね",
+          "sad"
+        ],
+        [
+          "さつまいも、食べたいな",
+          "happy"
+        ],
+        [
+          "読書の秋、勉強の秋",
+          "smug"
+        ],
+        [
+          "ベレー帽、ずれてない？",
+          "think"
+        ],
+        [
+          "夕焼けが、早くなったね",
+          "normal"
+        ],
+        [
+          "風が、つめたくなってきたね",
+          "sleepy"
+        ],
+        [
+          "もみじ、きれいでしょ",
+          "smile"
+        ],
+        [
+          "栗ごはん、すき",
+          "happy"
+        ],
+        [
+          "秋の夜は、長いよ",
+          "smile"
+        ]
+      ],
+      "pick": {
+        "look": 1,
+        "reveal": 1,
+        "mid": 2
+      }
+    },
+    {
+      "id": "winter",
+      "name": "雪の日のおでかけ",
+      "level": 5,
+      "bg": "snow",
+      "desc": "雪の降る日。コートと耳あてで、ほっぺを赤くしながら図書館へ。帰りに雪だるまを作る",
+      "outfit": "Her 'Snowy Day Out' outfit: a camel duffle coat with wooden toggles, a pastel pink knitted scarf, fluffy white earmuffs, white mittens, a dark red skirt, brown boots. Her hair is in her usual low twin tails, with snowflakes in her hair.",
+      "look": "She holds her mittened hands together, breath slightly visible, cheeks pink from the cold.",
+      "signature": "breathing warm air into her mittened hands with pink cheeks",
+      "scene": "On a snowy day, she stands in front of a snow-covered house, wearing a camel duffle coat, a pink scarf and fluffy earmuffs, next to a small snowman she made, smiling at the viewer with pink cheeks. Snow gently falling, soft evening light from windows.",
+      "reveal": [
+        [
+          "雪だよ、雪",
+          "happy"
+        ],
+        [
+          "耳あて、ふわふわでしょ",
+          "smug"
+        ],
+        [
+          "さむいけど、雪の日はすき",
+          "smile"
+        ],
+        [
+          "雪だるま、作ったの",
+          "happy"
+        ],
+        [
+          "帰ったら、ココアで温まろ",
+          "smile"
+        ]
+      ],
+      "wear": [
+        [
+          "さむい……",
+          "sad"
+        ],
+        [
+          "息が白いね",
+          "surprised"
+        ],
+        [
+          "手袋、あったかい",
+          "smile"
+        ],
+        [
+          "雪、つもるかな",
+          "think"
+        ],
+        [
+          "ほっぺ、つめたい",
+          "sad"
+        ],
+        [
+          "こたつで勉強、したい",
+          "sleepy"
+        ],
+        [
+          "雪の日は、静かだね",
+          "smile"
+        ],
+        [
+          "すべらないように、気をつけてね",
+          "normal"
+        ],
+        [
+          "雪だるま、もう一個作る？",
+          "happy"
+        ],
+        [
+          "マフラー、半分こする？",
+          "smile"
+        ]
+      ],
+      "pick": {
+        "look": 2,
+        "reveal": 2,
+        "mid": 2
+      }
+    },
+    {
+      "id": "halloween",
+      "name": "ハロウィンの魔女っ子",
+      "level": 5,
+      "bg": "halloween",
+      "desc": "ハロウィンの夜。魔女の格好で、かぼちゃのランタンを持って。お菓子をくれないと、いたずらしちゃう",
+      "outfit": "Her 'Halloween Little Witch' outfit: a cute short purple cape with an orange lining, a black dress with a white collar, a purple witch hat with an orange ribbon and a small star, striped orange and black tights, black shoes. Her hair is in her usual low twin tails.",
+      "look": "She holds a small glowing jack-o'-lantern basket.",
+      "signature": "waving a small star-tipped wand with a playful wink",
+      "scene": "On Halloween night, she stands on a street decorated with glowing jack-o'-lanterns, wearing a cute purple witch hat and cape, holding a pumpkin lantern basket full of candy, winking playfully at the viewer. A big orange moon, small bats, warm candle light.",
+      "reveal": [
+        [
+          "トリック・オア・トリート",
+          "happy"
+        ],
+        [
+          "魔女っ子だよ。……こわい？",
+          "smug"
+        ],
+        [
+          "ぼうし、大きすぎたかも",
+          "surprised"
+        ],
+        [
+          "お菓子をくれないと、いたずらしちゃうよ",
+          "smug"
+        ],
+        [
+          "……うそ。一緒にお菓子、食べよ",
+          "smile"
+        ]
+      ],
+      "wear": [
+        [
+          "まじかる……えいっ",
+          "happy"
+        ],
+        [
+          "かぼちゃ、光ってるでしょ",
+          "smug"
+        ],
+        [
+          "お菓子、もらえた？",
+          "think"
+        ],
+        [
+          "魔法で、問題が解けたらいいのにね",
+          "sad"
+        ],
+        [
+          "……やっぱり、自分で解こ",
+          "smile"
+        ],
+        [
+          "マント、ひらひら",
+          "happy"
+        ],
+        [
+          "こうもり、こわくないよ",
+          "smug"
+        ],
+        [
+          "今夜は、ちょっとだけ夜ふかし",
+          "sleepy"
+        ],
+        [
+          "ぼうし、落ちちゃう",
+          "surprised"
+        ],
+        [
+          "いたずらは、しないよ。たぶん",
+          "jito"
+        ]
+      ],
+      "pick": {
+        "look": 2,
+        "reveal": 1,
+        "mid": 2
+      }
+    },
+    {
+      "id": "christmas",
+      "name": "クリスマスのおくりもの",
+      "level": 5,
+      "bg": "christmas",
+      "desc": "クリスマスの夜。ツリーの前で、小さなプレゼントを用意して待っている。今年もがんばったね",
+      "outfit": "Her 'Christmas Gift' outfit: a red and white knit sweater with a snowflake pattern, a white fluffy-trimmed red skirt, white tights, red shoes, a small red santa hat with a white pom-pom. Her hair is in her usual low twin tails tied with small green ribbons.",
+      "look": "She holds a small wrapped present with a green ribbon.",
+      "signature": "holding out a small wrapped present to the viewer with both hands, shy and happy",
+      "scene": "On Christmas night, she sits in front of a decorated Christmas tree with warm fairy lights in a cozy room, wearing a red and white snowflake sweater and a small santa hat, holding out a small wrapped present to the viewer with a shy happy smile. Snow outside the window.",
+      "reveal": [
+        [
+          "メリークリスマス",
+          "happy"
+        ],
+        [
+          "サンタさんのぼうし、かぶってみたの",
+          "smug"
+        ],
+        [
+          "今年も、いっぱいがんばったね",
+          "smile"
+        ],
+        [
+          "これ……プレゼント。中身はないしょ",
+          "smile"
+        ],
+        [
+          "来年も、一緒にいてね",
+          "happy"
+        ]
+      ],
+      "wear": [
+        [
+          "ツリー、きらきら",
+          "happy"
+        ],
+        [
+          "サンタさん、来るかな",
+          "think"
+        ],
+        [
+          "ケーキ、いちごが乗ってるのがいい",
+          "happy"
+        ],
+        [
+          "プレゼント、あけてみて",
+          "smile"
+        ],
+        [
+          "今年も、あと少しだね",
+          "normal"
+        ],
+        [
+          "クリスマスでも、一問だけ",
+          "smug"
+        ],
+        [
+          "雪、降ってきたね",
+          "surprised"
+        ],
+        [
+          "ぼうしのぽんぽん、ゆれるでしょ",
+          "happy"
+        ],
+        [
+          "今日は、ゆっくりしようね",
+          "smile"
+        ],
+        [
+          "……ありがと",
+          "smile"
+        ]
+      ],
+      "pick": {
+        "look": 2,
+        "reveal": 2,
+        "mid": 2
+      }
+    },
+    {
+      "id": "exam",
+      "name": "試験の日",
+      "level": 5,
+      "bg": "studyhall",
+      "desc": "本番の朝。いつもより早く起きて、きちんとした服に着替えた。今までの全部を持って、会場へ",
+      "outfit": "Her 'Exam Day' outfit: a neat white blouse with a navy cardigan, a navy knee-length skirt, black tights, black loafers, a small watch on her wrist. Her hair is in a neat low ponytail with a navy hair tie (NOT twin tails).",
+      "look": "She holds a pencil case and a clear file folder to her chest, a determined gentle smile.",
+      "signature": "holding a pencil case to her chest and nodding firmly with a determined face",
+      "scene": "On the morning of the exam, she stands at a quiet entrance with morning light, wearing a neat white blouse and navy cardigan with a low ponytail, holding a pencil case and a clear file folder, looking at the viewer with a calm determined smile. A calm clear sky and the entrance of a building.",
+      "reveal": [
+        [
+          "……今日は、本番の日",
+          "normal"
+        ],
+        [
+          "いつもより早起きしたの",
+          "smile"
+        ],
+        [
+          "今までやってきたこと、全部ここにあるよ",
+          "smug"
+        ],
+        [
+          "……どきどきするけど、だいじょうぶ",
+          "sad"
+        ],
+        [
+          "いってきます。応援しててね",
+          "happy"
+        ]
+      ],
+      "wear": [
+        [
+          "いつもどおりに、ね",
+          "smile"
+        ],
+        [
+          "深呼吸して",
+          "normal"
+        ],
+        [
+          "見直しの時間、とっておこうね",
+          "think"
+        ],
+        [
+          "わからない問題で、止まらないで",
+          "normal"
+        ],
+        [
+          "ここまで、よくがんばったね",
+          "smile"
+        ],
+        [
+          "時計、ちゃんと見てね",
+          "think"
+        ],
+        [
+          "忘れ物、ない？",
+          "think"
+        ],
+        [
+          "だいじょうぶ。積み重ねてきたもん",
+          "smug"
+        ],
+        [
+          "終わったら、ゆっくり休もうね",
+          "smile"
+        ],
+        [
+          "……がんばれ",
+          "happy"
+        ]
+      ],
+      "pick": {
+        "look": 1,
+        "reveal": 1,
+        "mid": 2
+      }
+    }
+  ],
+  "backgrounds": {
+    "rain": "a quiet street on a rainy afternoon in the rainy season: wet pavement with reflections, soft rain, puddles, blue and purple hydrangeas by the roadside, a cozy shop window",
+    "park": "a park path on an early fresh morning: green trees, soft morning light and a little mist, a bench, dew on the grass",
+    "festival": "a Japanese summer festival at night: rows of glowing paper lanterns, food stalls, fireworks blooming in the dark sky",
+    "autumn": "an autumn park: a wooden bench, red and yellow maple trees, fallen leaves on the path, warm golden afternoon light",
+    "halloween": "a Halloween night street: glowing jack-o'-lanterns, a big orange moon, small cute bats, warm candle light in windows",
+    "christmas": "a cozy room on Christmas night: a decorated Christmas tree with warm fairy lights, wrapped presents, snow falling outside the window"
+  }
+}

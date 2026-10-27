@@ -1,5 +1,6 @@
 // 律のテーマ（衣装と髪型の組。T065）。絵は public/chars/ritsu/<テーマ>/。レベルで開き、選んだテーマは端末に覚える（学習記録ではない）
 import { progressNow } from "../progress";
+import costumes from "./costumes.json";
 
 /** 動きのコマ（T065）。あるものだけ動かす：blink＝目を閉じた絵がある表情、swing＝足を振ったコマがある表情、kick＝寝そべりの足のコマ、
  *  hop＝跳ねたところの絵がある表情、mid＝座る→寝そべるの間の絵 */
@@ -31,31 +32,10 @@ const FULL_MOTION: Motion = {
   talkBase: ["normal", "smile", "think", "happy", "sad", "sleepy", "surprised", "smug", "jito"],
 };
 
-/** 開くレベルの順。絵をそろえたテーマだけを載せる */
+/** 開くレベルの順。絵をそろえたテーマだけを載せる。いつもの服のほかは costumes.json（pipeline/ritsu_theme.py build が足す） */
 export const THEMES: Theme[] = [
-  {
-    id: "default",
-    name: "いつもの",
-    level: 1,
-    bg: "room",
-    motion: { ...FULL_MOTION },
-  },
-  {
-    id: "knit",
-    name: "ひだまりニット",
-    level: 3,
-    bg: "window",
-    desc: "冬のはじめのお休みの日。日の当たる窓辺で、ココアを飲みながら小さな六法を読む。いつものベストを脱いだ、初めての私服",
-    motion: { ...FULL_MOTION },
-  },
-  {
-    id: "pajama",
-    name: "ほしぞらパジャマ",
-    level: 5,
-    bg: "night",
-    desc: "試験の前の夜。寝る前に「もう一問だけ」と、布団の上で過去問を開く。眠いけど、もうちょっとだけがんばる",
-    motion: { ...FULL_MOTION },
-  },
+  { id: "default", name: "いつもの", level: 1, bg: "room", motion: { ...FULL_MOTION } },
+  ...(costumes as Omit<Theme, "motion">[]).map((c) => ({ ...c, motion: { ...FULL_MOTION } })),
 ];
 
 const NO_MOTION: Motion = { blink: [], swing: [], kick: false, hop: [], mid: false, gestures: [], talk: [], talkBase: [] };
@@ -140,6 +120,12 @@ export const BACKGROUNDS = [
   { id: "sakura", name: "桜並木" },
   { id: "engawa", name: "夏の縁側" },
   { id: "snow", name: "雪の窓辺" },
+  { id: "rain", name: "雨の日の通り" },
+  { id: "park", name: "朝の公園" },
+  { id: "festival", name: "夏祭りの夜" },
+  { id: "autumn", name: "秋の公園" },
+  { id: "halloween", name: "ハロウィンの夜" },
+  { id: "christmas", name: "クリスマスの夜" },
 ] as const;
 
 const BG_KEY = "tanto.character.bg.v1";
