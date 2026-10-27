@@ -5,7 +5,7 @@ import { back, navigate } from "../router";
 import { progressNow } from "../progress";
 import { characterImage, FACES, type Expression } from "../character";
 import { Bubble } from "../Ritsu";
-import { BACKGROUNDS, bgFor, chosenBg, currentTheme, isRevealed, isUnlocked, motionOf, nextTheme, setBg, setTheme, THEMES } from "../ritsu/themes";
+import { BACKGROUNDS, bgFor, chosenBg, currentTheme, isRevealed, isUnlocked, motionOf, nextTheme, setBg, setTheme, themeById, THEMES } from "../ritsu/themes";
 import { ALL_LINES, lineText, linesOf, pickLine, playLine, useSpeaking, type Line } from "../ritsu/lines";
 import { CHAR_BASE } from "../character";
 import { useMouthOpen } from "../ritsu/lipsync";
@@ -27,7 +27,6 @@ const SCENE_NAMES: Record<string, string> = {
   tap: "おしゃべり",
   pat_head: "頭をなでたとき",
   poke_cheek: "ほっぺをつついたとき",
-  wear_knit: "ひだまりニットのとき",
   morning: "朝",
   day: "昼",
   evening: "夜",
@@ -51,6 +50,7 @@ const SCENE_NAMES: Record<string, string> = {
 function sceneName(scene: string): string {
   if (scene.startsWith("subject_")) return "科目";
   if (scene.startsWith("reveal_")) return "お披露目";
+  if (scene.startsWith("wear_")) return `${themeById(scene.slice(5))?.name ?? "衣装"}のとき`;
   return SCENE_NAMES[scene] ?? scene;
 }
 

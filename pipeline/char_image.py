@@ -411,8 +411,9 @@ EXTRAS = {  # (元の絵, 指示)
     "clap": ("sit-happy", "clapping her hands together in front of her chest, very happy, eyes curved in joy"),
     "pout": ("sit-jito", "sulking with puffed-out cheeks, half-lidded jito eyes, a little pouty"),
 }
-TALK = ("Redraw the reference image EXACTLY, changing ONLY the mouth: the mouth open as if in the middle of speaking a word "
-        "(a small, natural open mouth). Everything else must stay pixel-identical. No text. ")
+TALK = ("Redraw the reference image EXACTLY, changing ONLY the mouth: the mouth CLEARLY OPEN as if saying 'ah' in the middle of speaking "
+        "(an obviously open mouth, larger than in the reference). Everything else must stay pixel-identical: same face, eyes, hair, outfit, pose and position. No text. ")
+# 2026-10-27：「小さく自然に開けた口」の指示では、口がほとんど変わらない絵が多かった（口パクが見えない）。はっきり開ける指示に
 TALK_SIT = ["normal", "smile", "happy", "sad", "think"]
 
 

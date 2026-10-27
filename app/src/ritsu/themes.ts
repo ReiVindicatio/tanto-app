@@ -48,6 +48,14 @@ export const THEMES: Theme[] = [
     desc: "冬のはじめのお休みの日。日の当たる窓辺で、ココアを飲みながら小さな六法を読む。いつものベストを脱いだ、初めての私服",
     motion: { ...FULL_MOTION },
   },
+  {
+    id: "pajama",
+    name: "ほしぞらパジャマ",
+    level: 5,
+    bg: "night",
+    desc: "試験の前の夜。寝る前に「もう一問だけ」と、布団の上で過去問を開く。眠いけど、もうちょっとだけがんばる",
+    motion: { ...FULL_MOTION },
+  },
 ];
 
 const NO_MOTION: Motion = { blink: [], swing: [], kick: false, hop: [], mid: false, gestures: [], talk: [], talkBase: [] };

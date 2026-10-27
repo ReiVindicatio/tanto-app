@@ -115,7 +115,9 @@ def ledge_cut(im: Image.Image) -> tuple[Image.Image, int, int]:
         edge = [(px[2, y][i] + px[w - 3, y][i]) / 2 for i in range(3)]
         for x in range(w):
             c = px[x, y]
-            if sum(abs(c[i] - edge[i]) for i in range(3)) > 45:
+            # 帯は灰色（色みがない）。色みのあるところ（ミントのズボン・肌など）は、明るさが帯に近くても残す（2026-10-27 パジャマで足が欠けた）
+            colorful = max(c) - min(c) > 14 and max(edge) - min(edge) < 10
+            if sum(abs(c[i] - edge[i]) for i in range(3)) > 45 or colorful:
                 fp[x, y] = (*c, 255)
             else:
                 fp[x, y] = (0, 0, 0, 0)
@@ -193,9 +195,10 @@ def patch(base: Path, frame: Path, box: tuple[float, float, float, float], thres
     return out
 
 
-def sit_group(srcs: list[Image.Image], dsts: list[Path], width: int = 240, below: float = 0.25, union: bool = False) -> None:
+def sit_group(srcs: list[Image.Image], dsts: list[Path], width: int = 240, below: float = 0.35, union: bool = False) -> None:
     """同じ姿勢のコマを、同じ範囲で切りそろえる（重ねて切り替えても動かない）。
-    出力は、縁の線が下から width*below の高さにくるようにそろえる（画面では、その分だけ欄の縁より下にずらして置く）"""
+    出力は、縁の線が下から width*below の高さにくるようにそろえる（画面では、その分だけ欄の縁より下にずらして置く）。
+    below は 0.35（2026-10-27：0.25 だと、パジャマのズボンで足先が切れた）"""
     cuts = [ledge_cut(im) for im in srcs]
     top, bot = cuts[0][1], cuts[0][2]
     # 範囲は1枚目（元の絵）で決める。コマの側がはみ出しても元の絵の大きさを変えない。union なら全部が収まる範囲（足先が外へ動くコマ）
@@ -213,7 +216,7 @@ def sit_group(srcs: list[Image.Image], dsts: list[Path], width: int = 240, below
         webp(canvas, dst)
 
 
-def sit(src: Path, dst: Path, width: int = 240, below: float = 0.25) -> None:
+def sit(src: Path, dst: Path, width: int = 240, below: float = 0.35) -> None:
     sit_group([Image.open(src)], [dst], width, below)
 
 
