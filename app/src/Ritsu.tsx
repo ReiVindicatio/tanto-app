@@ -271,7 +271,12 @@ export function RitsuDock({
         );
       }, nod),
     );
-    return () => timers.forEach((t) => window.clearTimeout(t));
+    return () => {
+      timers.forEach((t) => window.clearTimeout(t));
+      // こっくりの途中で座り直したら（一時停止→すぐ再開）、こっくりの絵も消す（目を閉じたまま残っていた）
+      if (nod) setGesture(null);
+      setBetween(false);
+    };
   }, [pose, shownPose]);
   const img = between ? (
     <div className="perch mid dock-ritsu" data-face={face}>

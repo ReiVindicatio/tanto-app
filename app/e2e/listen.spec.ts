@@ -226,3 +226,14 @@ test("律：始める前は立ち絵と案内の吹き出し。聞いている�
   await expect(face).toHaveAttribute("data-face", "sleepy");
   await expect(page.locator(".listen-dock .ritsu-bubble")).toContainText("一時停止中");
 });
+
+test("一時停止してすぐ再開すると、律はこっくり（目を閉じた絵）のまま残らず、座り直す（T065）", async ({ page }) => {
+  await stub(page, { audioMissing: "none" });
+  await start(page);
+  await page.getByRole("button", { name: "❚❚ 一時停止" }).click();
+  const perch = page.locator(".listen-dock .perch");
+  await expect(perch).toHaveAttribute("data-gesture", "nod");
+  await page.getByRole("button", { name: "▶ 再開" }).click();
+  await expect(perch).not.toHaveAttribute("data-gesture", /.+/, { timeout: 3000 });
+  await expect(perch).toHaveClass(/\bsit\b/);
+});
