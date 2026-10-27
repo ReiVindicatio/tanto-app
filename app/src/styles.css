@@ -1723,12 +1723,8 @@ mark.twin-diff {
   color: var(--ng);
 }
 
-/* 聞いている間：律が画面の下の○×の欄の縁からのぞき、左の吹き出しで今の状態を言う */
-.listen-dock {
-  position: absolute;
-  left: 16px;
-  right: 16px;
-  bottom: 100%;
+/* 画面の下に固定した欄（○×の欄・タブ）の縁からのぞく律と、左の吹き出し */
+.ritsu-dock {
   height: 0;
   pointer-events: none;
 }
@@ -1740,7 +1736,7 @@ mark.twin-diff {
   height: auto;
   user-select: none;
 }
-.listen-dock .dock-bubble {
+.ritsu-dock .dock-bubble {
   position: absolute;
   right: 112px;
   bottom: 18px;
@@ -1749,6 +1745,60 @@ mark.twin-diff {
   margin: 0;
   min-height: 0;
   font-size: 0.95rem;
+  font-weight: normal;
+  color: var(--text-strong);
+}
+.ritsu-dock .dock-bubble {
+  transition: opacity 0.4s ease;
+}
+.ritsu-dock .dock-bubble.faded {
+  opacity: 0;
+}
+.dock-peek-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  pointer-events: auto;
+  cursor: pointer;
+}
+.dock-peek-button .dock-peek {
+  position: static;
+  display: block;
+  margin-bottom: -7px;
+}
+/* 聞いている間：○×の欄の縁 */
+.listen-dock {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 100%;
+  margin: 0;
+}
+.listen-dock .dock-bubble {
+  font-weight: bold;
+}
+/* ホーム：タブの縁 */
+.home-dock {
+  position: fixed;
+  z-index: 11;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 720px;
+  bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom));
+}
+.home-dock .dock-peek-button {
+  right: 16px;
+}
+.home-dock .dock-bubble {
+  right: 128px;
+  max-width: calc(100% - 156px);
+}
+section:has(> .card.hero .home-dock) {
+  padding-bottom: 96px;
 }
 .listen.with-dock {
   /* 律と吹き出しの分だけ、下に余白（設定が隠れないように） */
@@ -1796,4 +1846,11 @@ mark.twin-diff {
 /* はじき方の初回案内（吹き出し）。キーボードとタッチの出し分けは .swipe-hint のまま */
 .ritsu-says.swipe-hint .ritsu-bubble {
   font-size: 0.92rem;
+}
+/* 聞き流しで答えを読んだあとの答えと解説（T064） */
+.listen-answer {
+  margin-bottom: 12px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-subtle);
 }

@@ -105,6 +105,18 @@ test("作っておいた音声（既定は声1）で、肢 → 考える間（�
   await expect(page.locator(".listen-summary")).toContainText("聞いた 2 肢・答えた 1 肢");
 });
 
+test("問の文は読み上げないが画面に出し、答えを読んだら答えと解説を下に出す（T064）", async ({ page }) => {
+  await stub(page, { audioMissing: "none" });
+  await start(page);
+  await expect(page.locator(".listen-card .card-stem")).toBeVisible();
+  await expect(page.locator(".listen-answer")).toHaveCount(0);
+  await page.locator(".listen-actions").getByRole("button", { name: "○", exact: true }).click();
+  await expect(page.locator(".listen-phase")).toContainText("正解は");
+  await expect(page.locator(".listen-answer")).toContainText("出題時点の公式の解答による");
+  await expect(page.locator(".toolbar")).toContainText("2肢目", { timeout: 5000 });
+  await expect(page.locator(".listen-answer")).toHaveCount(0); // 次の肢に移ったら消える
+});
+
 test("声1がない肢は声2で流す。声2を選ぶと声2だけを流す", async ({ page }) => {
   await stub(page, { audioMissing: "voice1" });
   await openHome(page);

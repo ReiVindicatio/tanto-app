@@ -6,6 +6,9 @@ import { useEffect, useRef, useState } from "react";
 import type { DataSet, Statement } from "./types";
 import type { More, OriginOf } from "./play";
 import { merge } from "./data";
+import Stem from "./Stem";
+import LawNote from "./LawNote";
+import ExplanationView from "./ExplanationView";
 import { cardIdOf, recordAnswer } from "./learning";
 import {
   audioUrls,
@@ -26,7 +29,7 @@ import {
   type ListenPrefs,
 } from "./listen";
 import { characterImage, characterOn, LINES, listenFace, type Expression } from "./character";
-import { Bubble } from "./Ritsu";
+import { Bubble, RitsuDock } from "./Ritsu";
 
 type Phase = "ready" | "reading" | "thinking" | "answer" | "paused" | "done";
 /** 残りがこれだけになったら次を読み足す */
@@ -50,16 +53,15 @@ function Stage({ face, children }: { face: Expression; children: React.ReactNode
 }
 
 /** 聞いている間の律：画面の下の○×の欄の縁からのぞき、横の吹き出しで今の状態を言う（スクロールしても見える） */
-function Dock({ face, children }: { face: Expression; children: React.ReactNode }) {
+function Dock({ face, phase, children }: { face: Expression; phase: Phase; children: React.ReactNode }) {
   // 表情を切り替えたときに白くならないよう、使う絵は最初にまとめて読み込んでおく
   useEffect(() => {
     for (const f of PEEK_FACES) new Image().src = characterImage("peek", f);
   }, []);
   return (
-    <div className="listen-dock">
+    <RitsuDock face={face} className={`listen-dock listen-phase ${phase}`}>
       {children}
-      <img className="dock-peek" src={characterImage("peek", face)} alt="" data-face={face} />
-    </div>
+    </RitsuDock>
   );
 }
 
@@ -82,6 +84,8 @@ export default function ListenPlayer({
   const [phase, setPhase] = useState<Phase>("ready");
   const [i, setI] = useState(0);
   const [left, setLeft] = useState(0);
+  // 答えを読んだ肢（答えと解説を画面に出す。一時停止しても出したまま）
+  const [revealed, setRevealed] = useState<string | null>(null);
   const [answered, setAnswered] = useState<boolean | null>(null);
   const [stats, setStats] = useState({ heard: 0, answered: 0, correct: 0 });
   const [noVoice, setNoVoice] = useState(false);
@@ -245,6 +249,7 @@ export default function ListenPlayer({
         if (card.signal.aborted) return;
       }
       setPhase("answer");
+      setRevealed(s.id);
       if (answeredRef.current !== null) await sayClip(answeredRef.current, card.signal);
       if (card.signal.aborted) return;
       await say(cid, "a", answerText(s, false), card.signal);
@@ -328,6 +333,7 @@ export default function ListenPlayer({
   const s = order.current[Math.min(i, order.current.length - 1)];
   const q = ds.current.questions.find((x) => x.id === s?.question_id);
   const o = q ? origin(q) : null;
+  const exp = s ? ds.current.explanations.find((e) => e.statement_id === s.id) : undefined;
   const canAnswer = (phase === "reading" || phase === "thinking") && answered === null;
   const intro = (
     <>
@@ -389,6 +395,8 @@ export default function ListenPlayer({
                   {o.examName} {o.subjectName} {q.exam.era}（{q.exam.year}） 第{q.number}問 肢{s.label}
                 </div>
               )}
+              {/* 問の文は読み上げないが、肢だけでは関係が分からない問があるので画面には出す（T064） */}
+              {q && <Stem text={q.stem} />}
               <p className="statement">{s.text}</p>
               {!showChar && (
                 <div className={`listen-phase ${phase}`} aria-live="polite">
@@ -414,6 +422,18 @@ export default function ListenPlayer({
           <button className="secondary" onClick={skip}>
             次の肢へ ▶▶
           </button>
+        </div>
+      )}
+
+      {/* 答えを読んだら、答えと解説を出す（T064）。一時停止・次へのボタンが動かないよう、その下に置く */}
+      {s && revealed === s.id && (phase === "answer" || phase === "paused") && (
+        <div className="listen-answer">
+          <div>
+            この記述は <strong>{s.truth_at_exam!.value ? "○（正しい）" : "×（誤り）"}</strong>
+            <span className="muted small">　出題時点の公式の解答による</span>
+          </div>
+          {q && <LawNote q={q} />}
+          {exp ? <ExplanationView e={exp} /> : <p className="muted small">この肢の解説はまだありません。</p>}
         </div>
       )}
 
@@ -446,8 +466,8 @@ export default function ListenPlayer({
 
       <div className="actionbar listen-actions">
         {showChar && phase !== "ready" && s && (
-          <Dock face={listenFace(phase, answered, streaks.correct, streaks.wrong)}>
-            <Bubble tail="right" className={`dock-bubble listen-phase ${phase}`}>{phaseText}</Bubble>
+          <Dock face={listenFace(phase, answered, streaks.correct, streaks.wrong)} phase={phase}>
+            {phaseText}
           </Dock>
         )}
         {phase === "ready" ? (

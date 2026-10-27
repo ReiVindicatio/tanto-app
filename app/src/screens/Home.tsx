@@ -9,7 +9,7 @@ import { buildDaily, DAILY_SIZES, describeCounts, ENDLESS, ENDLESS_BATCH, getDai
 import { cardsOf, poolOf } from "./common";
 import { characterOn, homeLine } from "../character";
 import { progressNow } from "../progress";
-import { RitsuSays } from "../Ritsu";
+import { RitsuDock } from "../Ritsu";
 
 function QuickStart({
   groups,
@@ -39,11 +39,11 @@ function QuickStart({
 
   return (
     <div className="card hero">
-      {/* 律の今日の案内（T063）。急かさない・連続記録で脅さない */}
+      {/* 律の今日の案内（T063）：タブの縁からのぞく（画面の下に固定）。急かさない・連続記録で脅さない */}
       {showChar && cardIds.size > 0 && (
-        <RitsuSays face={p.today >= p.goal ? "happy" : "smile"} className="hero-ritsu">
+        <RitsuDock face={p.today >= p.goal ? "happy" : "smile"} className="home-dock" fadeAfter={6000}>
           {homeLine(preview.counts.due, p.today >= p.goal)}
-        </RitsuSays>
+        </RitsuDock>
       )}
       <div className="hero-title">
         {endless ? (

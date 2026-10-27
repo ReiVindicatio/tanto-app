@@ -37,7 +37,7 @@ test("答え合わせ：正解で喜び・不正解で残念、2問続けて不�
   await expect(page.locator(".page .ritsu-says")).toHaveCount(0);
   await page.getByRole("button", { name: "← 戻る" }).click();
   await tab(page, "ホーム").click();
-  await expect(page.locator(".hero .ritsu-bubble")).toContainText(/今日はどこからやる|復習の肢が|今日の分、おわってる/);
+  await expect(page.locator(".home-dock .ritsu-bubble")).toContainText(/今日はどこからやる|復習の肢が|今日の分、おわってる/);
   await tab(page, "マイページ").click();
   await page.getByRole("group", { name: "キャラクター" }).getByRole("button", { name: "出さない" }).click();
   await openYear(page, "民法", "R08", "肢で解く");
@@ -47,5 +47,5 @@ test("答え合わせ：正解で喜び・不正解で残念、2問続けて不�
   await expect(page.locator(".page .result .big")).toHaveText(/^(不)?正解$/);
   await page.getByRole("button", { name: "← 戻る" }).click();
   await tab(page, "ホーム").click();
-  await expect(page.locator(".ritsu-says")).toHaveCount(0);
+  await expect(page.locator(".ritsu-says, .ritsu-dock")).toHaveCount(0);
 });

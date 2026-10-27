@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { DataSet, Explanation, Statement } from "./types";
 import QuestionBody, { Context } from "./QuestionBody";
 import ExplanationView from "./ExplanationView";
+import Stem from "./Stem";
 import ReportLink from "./ReportLink";
 import LawNote from "./LawNote";
 import StarButton from "./Bookmark";
@@ -24,25 +25,6 @@ import { flyAway, swipeThreshold, useSwipe, type SwipeDir } from "./swipe";
 const BASIS_NOTE: Record<string, string> = {
   convention: "公式の解答は組合せの番号だけです。この肢の○×は、その組合せに入っているかどうかから導いたものです。",
 };
-
-/**
- * 問のリード文（T049）。肢カードでは○×を聞くので、「誤っているものを組み合わせたものは」のような問の指示と食い違う。
- * 前提（「判例の立場に従って」など）が入っているので消さずに、2行までに畳んで小さく出す。押すと全文
- */
-function Stem({ text }: { text: string }) {
-  const [open, setOpen] = useState(false);
-  const long = text.length > 50;
-  return (
-    <div className="card-stem">
-      <p className={`stem small muted${long && !open ? " clamped" : ""}`}>{text}</p>
-      {long && (
-        <button className="link small" onClick={() => setOpen(!open)}>
-          {open ? "問の文を畳む" : "問の文の全文"}
-        </button>
-      )}
-    </div>
-  );
-}
 
 /** 肢カード。cards は出題する肢（○×のあるもの）、data はその肢の問・解説を含む束 */
 export default function StatementDrill({
