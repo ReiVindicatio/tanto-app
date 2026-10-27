@@ -11,8 +11,8 @@ import { loadTwinsWhenIdle, twinsIfLoaded, twinsOf } from "./twins";
 import { loadTrapsWhenIdle, trapOf, trapsIfLoaded } from "./traps";
 import { cardIdOf } from "./learning";
 import SpeakButton from "./SpeakButton";
-import { characterImage, characterOn, LINES, markTipSeen, reactionFace, tipSeen } from "./character";
-import { RitsuSays } from "./Ritsu";
+import { characterOn, LINES, markTipSeen, reactionFace, tipSeen } from "./character";
+import { PerchFigure, RitsuSays } from "./Ritsu";
 import { milestones, progressNow } from "./progress";
 import { shuffle } from "./shuffle";
 import { recordAnswer } from "./learning";
@@ -306,11 +306,10 @@ export default function StatementDrill({
           <div className={`result ${answer === truth ? "ok" : "ng"}${showChar ? " with-peek" : ""}`}>
             {/* キャラクター（T063・T065）：律が結果の欄の縁に腰かけ（正解ならぴょんと跳ねる）、吹き出しで「正解！」「不正解…」。○×と解説の見せ方は変えない */}
             {showChar && (
-              <img
-                className={`perch-chibi drill-char${answer === truth ? " hop" : ""}`}
-                src={characterImage("sit", reactionFace(answer === truth, streak, wrongStreak))}
-                alt=""
-                data-face={reactionFace(answer === truth, streak, wrongStreak)}
+              <PerchFigure
+                face={reactionFace(answer === truth, streak, wrongStreak)}
+                hop={answer === truth}
+                className="perch-chibi drill-char"
               />
             )}
             <div className={showChar ? "big ritsu-bubble tail-left peek-bubble" : "big"}>

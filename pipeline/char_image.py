@@ -6,6 +6,7 @@
   python3 pipeline/char_image.py themes                # 律の衣装と髪型のテーマの候補（T065。audio/samples_char/g6/）
   python3 pipeline/char_image.py theme_set <テーマ> <見本の png>   # 選んだ見本から、そのテーマの絵をひとそろい作る（audio/samples_char/themes/<テーマ>/）
   python3 pipeline/char_image.py sit_set <テーマ>      # 縁に腰かけるちびキャラ 8表情と、寝そべる絵（sit-smile.png と lie-sleepy.png の見本から）
+  python3 pipeline/char_image.py motion_set <テーマ>   # 動きの絵：まばたき（目を閉じた絵）・跳ねたところ・寝転びかけ
                                                        # 背景を抜いて webp にするのは pipeline/char_cut.py
 
 - キーは .secrets/google-vertex-key（声1と同じ）。請求は Google Cloud のクレジット
@@ -325,6 +326,50 @@ def sit_set(name: str) -> None:
         print(f"  {lie.name}", flush=True)
 
 
+# 動き（T065）：細かい動き（足のバタバタ）は絵を切り分けて動かす。絵を足すのは、まばたき・跳ねる・座る→寝そべるの間だけ
+BLINK_FACES = ["normal", "smile", "think", "sad", "smug", "jito"]
+BLINK = ("Redraw the reference image EXACTLY (same pose, same size and position, same outfit, same colors, same ledge), "
+         "changing ONLY the eyes: both eyes gently closed as in a blink (curved closed eyelids). Everything else must stay identical. ")
+HOP = ("Image 1 shows the character sitting on the edge of a ledge. Draw the SAME character (same chibi style, face, hair, outfit and colors) "
+       "hopping up a little from the ledge: the whole body just above the ledge line, both arms raised happily, legs together and slightly bent, "
+       "the same ledge (thin dark line, light grey band) at the bottom, plain white background. IMPORTANT: keep her EXACTLY the same size as in "
+       "image 1 (same head size, same position left-right); do not shrink her; the hop is small. Expression: ")
+# 2026-10-27：最初の指示では、座る絵より小さく（頭が75%ほど）描いた。大きさを強く指示した
+MID = ("Image 1 shows the character sitting on the edge of a ledge, image 2 shows the same character lying on her stomach on top of the ledge reading. "
+       "Draw the in-between moment: she is leaning forward and lowering herself onto the ledge, both hands and knees on top of the ledge, "
+       "about to lie down, holding the small book in one hand. Same chibi style, face, hair, outfit, colors and size, the same ledge, plain white background. ")
+
+
+KICK = ("Redraw the reference image EXACTLY (same pose, same size and position, same face, hair, outfit, colors, book and ledge), "
+        "changing ONLY her lower legs and feet that are raised behind her: ")
+KICKS = {1: "the lower legs swung further back and lower, feet pointing back, legs slightly apart",
+         2: "the lower legs swung further forward and higher, nearly upright, ankles crossed the other way"}
+
+
+def motion_set(name: str) -> None:
+    g = OUT / "themes" / name
+    for k, text in KICKS.items():
+        out = g / f"lie-kick-{k}.png"
+        if not out.exists():
+            generate([_img(g / "lie-sleepy.png"), {"text": KICK + text + ". Everything else must stay identical. No text. " + COMMON}], out)
+            print(f"  {out.name}", flush=True)
+    for face in BLINK_FACES:
+        out = g / f"blink-{face}.png"
+        if not out.exists():
+            generate([_img(g / f"sit-{face}.png"), {"text": BLINK + "No text. " + COMMON}], out)
+            print(f"  {out.name}", flush=True)
+    for face in ("happy", "smug"):
+        out = g / f"hop-{face}.png"
+        if not out.exists():
+            generate([_img(g / f"sit-{face}.png"), {"text": HOP + THEME_FACES[face] + ". No text. " + COMMON}], out)
+            print(f"  {out.name}", flush=True)
+    for k in (1, 2):
+        out = g / f"mid-lie-{k}.png"
+        if not out.exists():
+            generate([_img(g / "sit-smile.png"), _img(g / "lie-sleepy.png"), {"text": MID + "No text. " + COMMON}], out)
+            print(f"  {out.name}", flush=True)
+
+
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     what = sys.argv[1] if len(sys.argv) > 1 else "base"
@@ -343,6 +388,8 @@ def main() -> None:
         faces2()
     elif what == "themes":
         themes()
+    elif what == "motion_set":
+        motion_set(sys.argv[2])
     elif what == "sit_set":
         sit_set(sys.argv[2])
     elif what == "theme_set":

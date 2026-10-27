@@ -90,10 +90,9 @@ def peek(src: Path, dst: Path, width: int = 240) -> None:
     webp(o.resize((width, round(o.height * width / o.width)), Image.LANCZOS), dst)  # 幅（おさげの端から端）でそろえる
 
 
-def sit(src: Path, dst: Path, width: int = 240, below: float = 0.25) -> None:
-    """縁に腰かける・寝そべる絵：縁の線と灰色の帯を消し、ぶら下げた足は残す。
-    出力は、縁の線が下から width*below の高さにくるようにそろえる（画面では、その分だけ欄の縁より下にずらして置く）"""
-    im = Image.open(src).convert("RGB")
+def ledge_cut(im: Image.Image) -> tuple[Image.Image, int, int]:
+    """縁に腰かける・寝そべる絵の背景を抜く：縁の線と灰色の帯を消し、ぶら下げた足は残す。（全体の大きさの絵, 縁の線の上端, 下端）"""
+    im = im.convert("RGB")
     w, h = im.size
     g = im.convert("L").load()
     dark = lambda y: g[5, y] < 150 and g[w - 6, y] < 150  # 左右の端（キャラの外）が暗い行＝縁の線
@@ -141,33 +140,90 @@ def sit(src: Path, dst: Path, width: int = 240, below: float = 0.25) -> None:
             for x in range(w):
                 if mp[x, y] != 128:
                     fp[x, y] = (0, 0, 0, 0)
-    o = full
-    x0, y0, x1, y1 = bbox(o)
-    o = o.crop((x0, y0, x1, max(y1, bot + 1)))
-    line = top - y0  # 切り抜いた絵の中での縁の線の高さ
-    scale = width / o.width
-    o = o.resize((width, round(o.height * scale)), Image.LANCZOS)
-    line = round(line * scale)
-    b = round(width * below)
-    canvas = Image.new("RGBA", (width, line + b), (0, 0, 0, 0))
-    canvas.paste(o.crop((0, 0, width, min(o.height, line + b))), (0, 0))
-    webp(canvas, dst)
+    return full, top, bot
+
+
+def patch(base: Path, frame: Path, box: tuple[float, float, float, float], thresh: int = 60) -> Image.Image:
+    """動きのコマ（T065）：frame のうち、box（幅・高さに対する割合）の中で base と大きく違うところだけを base に貼る。
+    体はまったく動かず、目や足先だけが描き直される（コマごとに描き直すと線や位置がずれてちらつくため）"""
+    b = Image.open(base).convert("RGB")
+    f = Image.open(frame).convert("RGB").resize(b.size)
+    w, h = b.size
+    x0, y0, x1, y1 = int(box[0] * w), int(box[1] * h), int(box[2] * w), int(box[3] * h)
+    bp, fp = b.load(), f.load()
+    mask = Image.new("L", (w, h), 0)
+    mp = mask.load()
+    for y in range(y0, y1):
+        for x in range(x0, x1):
+            if sum(abs(bp[x, y][i] - fp[x, y][i]) for i in range(3)) > thresh:
+                mp[x, y] = 255
+    mask = mask.filter(ImageFilter.MaxFilter(9)).filter(ImageFilter.GaussianBlur(2))  # 少し広げてなじませる
+    out = b.copy()
+    out.paste(f, (0, 0), mask)
+    return out
+
+
+def sit_group(srcs: list[Image.Image], dsts: list[Path], width: int = 240, below: float = 0.25, union: bool = False) -> None:
+    """同じ姿勢のコマを、同じ範囲で切りそろえる（重ねて切り替えても動かない）。
+    出力は、縁の線が下から width*below の高さにくるようにそろえる（画面では、その分だけ欄の縁より下にずらして置く）"""
+    cuts = [ledge_cut(im) for im in srcs]
+    top, bot = cuts[0][1], cuts[0][2]
+    # 範囲は1枚目（元の絵）で決める。コマの側がはみ出しても元の絵の大きさを変えない。union なら全部が収まる範囲（足先が外へ動くコマ）
+    boxes = [bbox(c[0]) for c in (cuts if union else cuts[:1])]
+    x0, y0, x1, y1 = min(b[0] for b in boxes), min(b[1] for b in boxes), max(b[2] for b in boxes), max(b[3] for b in boxes)
+    for (full, _, _), dst in zip(cuts, dsts):
+        o = full.crop((x0, y0, x1, max(y1, bot + 1)))
+        line = top - y0  # 切り抜いた絵の中での縁の線の高さ
+        scale = width / o.width
+        o = o.resize((width, round(o.height * scale)), Image.LANCZOS)
+        line = round(line * scale)
+        b = round(width * below)
+        canvas = Image.new("RGBA", (width, line + b), (0, 0, 0, 0))
+        canvas.paste(o.crop((0, 0, width, min(o.height, line + b))), (0, 0))
+        webp(canvas, dst)
+
+
+def sit(src: Path, dst: Path, width: int = 240, below: float = 0.25) -> None:
+    sit_group([Image.open(src)], [dst], width, below)
+
+
+BLINK_BOX = (0.25, 0.33, 0.75, 0.52)  # 腰かける絵の目のあたり（幅・高さに対する割合）
+KICK_BOX = (0.55, 0.15, 1.0, 0.8)  # 寝そべる絵の上げた足先のあたり
 
 
 def main() -> None:
     name = sys.argv[1]
     src, dst = SRC / name, DST / name
     dst.mkdir(parents=True, exist_ok=True)
-    base_set(src, dst)
+    only_motion = "--sit" in sys.argv  # 腰かける・寝そべる・動きの絵だけ（ふつうの絵・ちびキャラは作り直さない）
+    if not only_motion:
+        base_set(src, dst)
     for n in FACES:
-        chibi(src / f"chibi-{n}.png", dst / f"chibi-{n}.webp")
-        if n != "surprised":
-            if (src / f"peek-{n}.png").exists():
+        if not only_motion:
+            chibi(src / f"chibi-{n}.png", dst / f"chibi-{n}.webp")
+            if n != "surprised" and (src / f"peek-{n}.png").exists():
                 peek(src / f"peek-{n}.png", dst / f"peek-{n}.webp")
-            if (src / f"sit-{n}.png").exists():
-                sit(src / f"sit-{n}.png", dst / f"sit-{n}.webp")
-    if (src / "lie-sleepy.png").exists():
-        sit(src / "lie-sleepy.png", dst / "lie-sleepy.webp", width=320, below=0.08)
+        s = src / f"sit-{n}.png"
+        if n == "surprised" or not s.exists():
+            continue
+        frames, dsts = [Image.open(s)], [dst / f"sit-{n}.webp"]
+        if (src / f"blink-{n}.png").exists():
+            frames.append(patch(s, src / f"blink-{n}.png", BLINK_BOX))
+            dsts.append(dst / f"sit-{n}-blink.webp")
+        if (src / f"hop-{n}.png").exists():
+            frames.append(Image.open(src / f"hop-{n}.png"))
+            dsts.append(dst / f"hop-{n}.webp")
+        sit_group(frames, dsts)
+    if (src / "mid-lie.png").exists():  # 座る→寝そべるの間（選んだ1枚を mid-lie.png にする）
+        sit(src / "mid-lie.png", dst / "mid-lie.webp")
+    lie = src / "lie-sleepy.png"
+    if lie.exists():
+        frames, dsts = [Image.open(lie)], [dst / "lie-sleepy.webp"]
+        for k in (1, 2):
+            if (src / f"lie-kick-{k}.png").exists():
+                frames.append(patch(lie, src / f"lie-kick-{k}.png", KICK_BOX))
+                dsts.append(dst / f"lie-kick-{k}.webp")
+        sit_group(frames, dsts, width=320, below=0.08, union=True)
     print(f"✅ {dst.relative_to(ROOT)}")
 
 

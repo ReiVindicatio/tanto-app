@@ -17,6 +17,9 @@ export const CHARACTER: CharacterId = "ritsu";
 
 const BASE = import.meta.env.BASE_URL;
 
+/** 律の絵の置き場所（テーマのフォルダの親） */
+export const CHAR_BASE = `${BASE}chars/${CHARACTER}/`;
+
 /** 絵の URL。theme は衣装と髪型の組（T065。省くと選んでいるテーマ） */
 export function characterImage(kind: CharacterKind, face: Expression, theme: string = currentTheme(), id: CharacterId = CHARACTER): string {
   return `${BASE}chars/${id}/${theme}/${kind}-${face}.webp`;

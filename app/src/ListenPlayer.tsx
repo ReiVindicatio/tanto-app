@@ -62,7 +62,7 @@ function Dock({ face, phase, hop, children }: { face: Expression; phase: Phase; 
     new Image().src = characterImage("lie", "sleepy");
   }, []);
   return (
-    <RitsuDock face={face} className={`listen-dock listen-phase ${phase}`} pose={phase === "paused" ? "lie" : "sit"} hop={hop}>
+    <RitsuDock face={face} className={`listen-dock listen-phase ${phase}`} pose={phase === "paused" ? "lie" : "sit"} hop={hop} swing={phase === "reading" || phase === "thinking" || phase === "paused"}>
       {children}
     </RitsuDock>
   );
