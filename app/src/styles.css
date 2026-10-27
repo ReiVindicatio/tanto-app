@@ -2037,7 +2037,17 @@ body:has(.home-dock) .footer {
   93% { opacity: 1; }
   96% { opacity: 0; }
 }
-/* 寝そべって足をパタパタ：足先の違う2コマを交互に */
+/* 寝そべって足をパタパタ：足先の違う2コマを交互に。コマを出している間は元の絵を隠す
+   （コマの、元の足があったところは透明なので、重ねたままだと元の足が透けて足が4本に見える） */
+.perch.lie.swing.has-kick .perch-body {
+  animation: kick-base 1.1s steps(1) infinite;
+}
+@keyframes kick-base {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  75% { opacity: 0; }
+}
 .perch.lie.swing .perch-frame.k1 {
   animation: kick-1 1.1s steps(1) infinite;
 }
@@ -2055,6 +2065,7 @@ body:has(.home-dock) .footer {
 }
 @media (prefers-reduced-motion: reduce) {
   .perch .perch-leg,
+  .perch .perch-body,
   .perch .perch-frame {
     animation: none !important;
   }

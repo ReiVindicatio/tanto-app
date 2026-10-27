@@ -47,7 +47,7 @@ export function PerchFigure({
   return (
     <div
       key={hop ? `hop-${face}` : "still"}
-      className={`perch ${pose}${swing ? " swing" : ""}${hop ? " hop" : ""} ${className}`}
+      className={`perch ${pose}${swing ? " swing" : ""}${hop ? " hop" : ""}${pose === "lie" && m.kick ? " has-kick" : ""} ${className}`}
       data-face={face}
     >
       <img className="perch-body" src={src} alt="" />
