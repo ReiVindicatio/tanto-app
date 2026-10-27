@@ -1,6 +1,7 @@
 // 聞き流しモード（T057・T058）の読み上げ。肢カードごとに手元で作っておいた音声（Google Cloud Text-to-Speech・Chirp 3 HD）を
 // 再生する（/audio/tts/<声>/<カード ID>.q.mp3・.a.mp3。worker/audio.ts が R2 から返す）。音声がないときは、
 // 端末の音声合成（Web Speech API の speechSynthesis）で読む
+import { trackVoice } from "./ritsu/lipsync";
 
 /** 読み間違えやすい語の読み替え。読み間違いに気づいたら足す */
 export const READINGS: [string, string][] = [
@@ -231,6 +232,7 @@ export function play(el: HTMLAudioElement, src: string, rate: number, signal: Ab
     el.src = src;
     el.defaultPlaybackRate = rate;
     el.playbackRate = rate;
+    trackVoice(el, src); // 律の口パクを声に合わせる（T065）
     el.play().catch(() => done(false));
   });
 }

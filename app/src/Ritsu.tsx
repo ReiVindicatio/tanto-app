@@ -3,6 +3,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { CHAR_BASE, characterImage, type Expression } from "./character";
 import { currentTheme, motionOf } from "./ritsu/themes";
 import { linesOf, pickLine, playLine, useSpeaking, type Line } from "./ritsu/lines";
+import { useMouthOpen } from "./ritsu/lipsync";
 import { progressNow } from "./progress";
 
 /** 律の言葉を1文字ずつ出す（ノベルゲームのように）。まだ出ていない文字は透明で置いておく（吹き出しの大きさが途中で変わらない。文字としては最初から全文） */
@@ -113,11 +114,12 @@ export function PerchFigure({
   const g = pose === "sit" && gesture && m.gestures.includes(gesture) ? gesture : null;
   const gShown = g && ready === g;
   const talking = pose === "sit" && talk && !g && m.talk.includes(f);
+  const mouthOpen = useMouthOpen(talking); // 声が出ているときだけ口を開ける
   const mark = !emote ? undefined : pose === "lie" ? "z" : g ? undefined : EMOTE[f];
   return (
     <div
       key={hop ? `hop-${face}` : "still"}
-      className={`perch ${pose}${swing && !g && !talking ? " swing" : ""}${hop ? " hop" : ""}${gShown ? " gesturing" : ""}${talking ? " talking" : ""}${(pose === "lie" && m.kick) || (pose === "sit" && m.swing.includes(f)) ? " has-kick" : ""} ${className}`}
+      className={`perch ${pose}${swing && !g && !talking ? " swing" : ""}${hop ? " hop" : ""}${gShown ? " gesturing" : ""}${talking ? " talking" : ""}${mouthOpen ? " mouth-open" : ""}${(pose === "lie" && m.kick) || (pose === "sit" && m.swing.includes(f)) ? " has-kick" : ""} ${className}`}
       data-face={face}
       data-gesture={g ?? undefined}
     >

@@ -2,6 +2,7 @@
 // 声は pipeline/ritsu_voice.py で作った public/voices/ritsu/<id>.mp3。押したときだけ鳴らす
 import { useEffect, useState } from "react";
 import data from "./lines.json";
+import { trackVoice } from "./lipsync";
 import type { Expression } from "../character";
 
 export type Line = { id: string; scene: string; text: string; face: Expression; level: number; voice?: boolean };
@@ -85,6 +86,7 @@ export function playLine(l: Line): void {
   if (!url) return;
   const a = new Audio(url);
   playing = a;
+  trackVoice(a, url); // 口パクを声に合わせる
   a.onplaying = () => setSpeaking(true);
   a.onended = a.onpause = a.onerror = () => {
     if (playing === a) setSpeaking(false);

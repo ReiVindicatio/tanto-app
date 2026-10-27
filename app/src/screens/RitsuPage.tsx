@@ -8,6 +8,7 @@ import { Bubble } from "../Ritsu";
 import { BACKGROUNDS, bgFor, chosenBg, currentTheme, isRevealed, isUnlocked, motionOf, nextTheme, setBg, setTheme, THEMES } from "../ritsu/themes";
 import { ALL_LINES, lineText, linesOf, pickLine, playLine, useSpeaking, type Line } from "../ritsu/lines";
 import { CHAR_BASE } from "../character";
+import { useMouthOpen } from "../ritsu/lipsync";
 import { Progress } from "./common";
 
 const FACE_NAMES: Record<Expression, string> = {
@@ -79,6 +80,7 @@ export default function RitsuPage() {
   const doze = useRef<number | undefined>(undefined);
   const speaking = useSpeaking();
   const m = motionOf(theme);
+  const mouthOpen = useMouthOpen(speaking && m.talkBase.includes(face));
 
   // しばらく触らないと眠そうな顔になる（押すと起きる）
   function wake() {
@@ -158,11 +160,11 @@ export default function RitsuPage() {
           </Bubble>
         )}
         <button className="ritsu-sprite-button" aria-label="律に話しかける" onClick={touch}>
-          <span key={bump} className={`sprite-wrap${bump ? " bump" : ""}${face === "sleepy" ? " dozing" : ""}${speaking && m.talkBase.includes(face) ? " talking" : ""}`}>
+          <span key={bump} className={`sprite-wrap${bump ? " bump" : ""}${face === "sleepy" ? " dozing" : ""}${speaking && m.talkBase.includes(face) ? " talking" : ""}${mouthOpen ? " mouth-open" : ""}`}>
             <img className="vn-sprite" src={characterImage("base", face, theme)} alt="" data-face={face} />
             {/* 口パク：律の声が流れている間 */}
             {speaking && m.talkBase.includes(face) && (
-              <img className="vn-sprite talk" src={`${CHAR_BASE}${theme}/base-${face}-talk.webp`} alt="" aria-hidden="true" />
+              <img className="sprite-talk" src={`${CHAR_BASE}${theme}/base-${face}-talk.webp`} alt="" aria-hidden="true" />
             )}
           </span>
         </button>

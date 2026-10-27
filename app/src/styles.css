@@ -1953,17 +1953,20 @@ body:has(.home-dock) .footer {
   display: block;
   transform-origin: 50% 100%;
 }
-.sprite-wrap .vn-sprite.talk {
+/* 口パクの絵は立ち絵（.vn-sprite）とは別の名前（テストや選び方が立ち絵だけに当たるように） */
+.sprite-wrap .sprite-talk {
   position: absolute;
   left: 0;
   top: 0;
-  margin-top: 0;
+  height: calc(var(--stage-h) * 0.94);
+  width: auto;
+  max-width: 62vw;
+  object-fit: contain;
+  object-position: bottom;
+  opacity: 0;
 }
-.ritsu-stage .vn-sprite.talk {
-  filter: none;
-}
-.sprite-wrap.talking .vn-sprite.talk {
-  animation: talk-flap 0.34s steps(1) infinite;
+.sprite-wrap.talking.mouth-open .sprite-talk {
+  opacity: 1;
 }
 .sprite-wrap.bump {
   animation: sprite-bump 0.45s ease-out;
@@ -2426,12 +2429,9 @@ body:has(.home-dock) .footer {
   opacity: 0;
 }
 /* 口パク：声が流れている間、口を開けた絵を出したり消したり */
-.perch.talking .perch-frame.talk {
-  animation: talk-flap 0.34s steps(1) infinite;
-}
-@keyframes talk-flap {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
+/* 声が出ているときだけ口を開けた絵（ritsu/lipsync.ts。読み終わり・句読点の間は閉じる） */
+.perch.talking.mouth-open .perch-frame.talk {
+  opacity: 1;
 }
 /* 感情の記号：頭の右上にぽんと出る */
 .perch-emote {
@@ -2481,8 +2481,7 @@ body:has(.home-dock) .footer {
 @media (prefers-reduced-motion: reduce) {
   .perch .perch-inner,
   .perch-emote,
-  .perch-emote.zzz i,
-  .perch.talking .perch-frame.talk {
+  .perch-emote.zzz i {
     animation: none !important;
   }
 }
