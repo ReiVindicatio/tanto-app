@@ -25,7 +25,8 @@ import {
   VOICE_NOS,
   type ListenPrefs,
 } from "./listen";
-import { CHARACTER, CHARACTERS, characterImage, characterOn, listenFace, type Expression } from "./character";
+import { characterImage, characterOn, LINES, listenFace, type Expression } from "./character";
+import { Bubble } from "./Ritsu";
 
 type Phase = "ready" | "reading" | "thinking" | "answer" | "paused" | "done";
 /** 残りがこれだけになったら次を読み足す */
@@ -33,17 +34,20 @@ const REFILL_AT = 3;
 
 const FACES: Expression[] = ["normal", "smile", "think", "happy", "sad", "sleepy", "smug", "jito"];
 
-/** 律の立ち絵（角の丸い枠に入れる。下に名前） */
-function CharacterFigure({ face }: { face: Expression }) {
+/**
+ * 律の舞台（ノベルゲーム風）：背景を抜いた立ち絵を大きく出し、頭の横の吹き出しで今の状態を言う。
+ * 下に重ねる文字の枠（肢の文）は呼ぶ側で置く
+ */
+function Stage({ face, children }: { face: Expression; children: React.ReactNode }) {
   // 表情を切り替えたときに白くならないよう、使う絵は最初にまとめて読み込んでおく
   useEffect(() => {
     for (const f of FACES) new Image().src = characterImage("base", f);
   }, []);
   return (
-    <figure className="listen-char">
-      <img src={characterImage("base", face)} alt={`${CHARACTERS[CHARACTER].name}（${face}）`} data-face={face} />
-      <figcaption className="muted small">{CHARACTERS[CHARACTER].name}</figcaption>
-    </figure>
+    <div className="vn-stage">
+      <img className="vn-sprite" src={characterImage("base", face)} alt="" data-face={face} />
+      {children}
+    </div>
   );
 }
 
@@ -294,7 +298,11 @@ export default function ListenPlayer({
   if (phase === "done") {
     return (
       <section className="listen">
-        {showChar && <CharacterFigure face={listenFace("done", null, streaks.correct, streaks.wrong)} />}
+        {showChar && (
+          <Stage face={listenFace("done", null, streaks.correct, streaks.wrong)}>
+            <Bubble tail="down" className="vn-bubble">{LINES.listenDone}</Bubble>
+          </Stage>
+        )}
         <h1>おわり</h1>
         <p className="listen-summary">
           聞いた {stats.heard} 肢・答えた {stats.answered} 肢・正解 {stats.correct}
@@ -309,6 +317,33 @@ export default function ListenPlayer({
   const q = ds.current.questions.find((x) => x.id === s?.question_id);
   const o = q ? origin(q) : null;
   const canAnswer = (phase === "reading" || phase === "thinking") && answered === null;
+  const intro = (
+    <>
+      <p>
+        肢を読み上げ、考える間を置いてから、○×と解説の結論を読みます。止めるまで続けます。
+        ○×を言う前に画面の○×を押すと、その答えを記録します。押さなければ記録しません。
+      </p>
+      <p className="muted small">
+        答えのあとに読む結論は AI が生成した解説で、誤りがありえます。音声は法律用語を読み間違えることがあります。
+        ロック画面から一時停止・次の肢へができます。画面を消しても続けて聞くなら、ブラウザ（Safari・Chrome）で開くのが確実です。
+      </p>
+      {noVoice && <p className="muted small">音声のない肢は端末の読み上げで読みますが、この端末には日本語の声が見つかりません。</p>}
+    </>
+  );
+  // 今の状態の表示（律を出すときは律の吹き出しに入れる）
+  const phaseText = s && (
+    <>
+      {phase === "reading" && "読み上げ中…"}
+      {phase === "thinking" && `考える時間　あと ${left} 秒`}
+      {phase === "answer" && (
+        <>
+          {answered !== null && <strong className={answered ? "ok" : "ng"}>{answered ? "正解！" : "不正解…"}　</strong>}
+          正解は {s.truth_at_exam!.value ? "○" : "×"}
+        </>
+      )}
+      {phase === "paused" && "一時停止中"}
+    </>
+  );
 
   return (
     <section className="listen">
@@ -324,41 +359,37 @@ export default function ListenPlayer({
 
 
 
-      {showChar && <CharacterFigure face={listenFace(phase, answered, streaks.correct, streaks.wrong)} />}
-
       {phase === "ready" ? (
-        <div className="listen-intro">
-          <p>
-            肢を読み上げ、考える間を置いてから、○×と解説の結論を読みます。止めるまで続けます。
-            ○×を言う前に画面の○×を押すと、その答えを記録します。押さなければ記録しません。
-          </p>
-          <p className="muted small">
-            答えのあとに読む結論は AI が生成した解説で、誤りがありえます。音声は法律用語を読み間違えることがあります。
-            ロック画面から一時停止・次の肢へができます。画面を消しても続けて聞くなら、ブラウザ（Safari・Chrome）で開くのが確実です。
-          </p>
-          {noVoice && <p className="muted small">音声のない肢は端末の読み上げで読みますが、この端末には日本語の声が見つかりません。</p>}
-        </div>
+        <>
+          {showChar && (
+            <Stage face={listenFace("ready", null, 0, 0)}>
+              <Bubble tail="down" className="vn-bubble">{LINES.listenIntro}</Bubble>
+            </Stage>
+          )}
+          {showChar ? <details className="listen-intro listen-more"><summary className="muted small">くわしく</summary>{intro}</details> : <div className="listen-intro">{intro}</div>}
+        </>
       ) : (
         s && (
-          <div className="listen-card">
-            {o && q && (
-              <div className="muted small">
-                {o.examName} {o.subjectName} {q.exam.era}（{q.exam.year}） 第{q.number}問 肢{s.label}
-              </div>
+          <>
+            {showChar && (
+              <Stage face={listenFace(phase, answered, streaks.correct, streaks.wrong)}>
+                <Bubble tail="down" className={`vn-bubble listen-phase ${phase}`}>{phaseText}</Bubble>
+              </Stage>
             )}
-            <p className="statement">{s.text}</p>
-            <div className={`listen-phase ${phase}`} aria-live="polite">
-              {phase === "reading" && "読み上げ中…"}
-              {phase === "thinking" && `考える時間　あと ${left} 秒`}
-              {phase === "answer" && (
-                <>
-                  {answered !== null && <strong className={answered ? "ok" : "ng"}>{answered ? "正解" : "不正解"}　</strong>}
-                  正解は {s.truth_at_exam!.value ? "○" : "×"}
-                </>
+            <div className={`listen-card${showChar ? " vn-textbox" : ""}`}>
+              {o && q && (
+                <div className="muted small">
+                  {o.examName} {o.subjectName} {q.exam.era}（{q.exam.year}） 第{q.number}問 肢{s.label}
+                </div>
               )}
-              {phase === "paused" && "一時停止中"}
+              <p className="statement">{s.text}</p>
+              {!showChar && (
+                <div className={`listen-phase ${phase}`} aria-live="polite">
+                  {phaseText}
+                </div>
+              )}
             </div>
-          </div>
+          </>
         )
       )}
 

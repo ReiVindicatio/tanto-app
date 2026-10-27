@@ -7,6 +7,9 @@ import { bookmarkedCards } from "../bookmarks";
 import { cardIdOf } from "../learning";
 import { buildDaily, DAILY_SIZES, describeCounts, ENDLESS, ENDLESS_BATCH, getDailyPrefs, setDailyPrefs, type DailyPrefs } from "../daily";
 import { cardsOf, poolOf } from "./common";
+import { characterOn, homeLine } from "../character";
+import { progressNow } from "../progress";
+import { RitsuSays } from "../Ritsu";
 
 function QuickStart({
   groups,
@@ -31,9 +34,17 @@ function QuickStart({
   // 中身の見込み（エンドレスは20問ずつ選ぶので、最初のひとまとまりの見込み）
   const preview = buildDaily(pool, endless ? ENDLESS_BATCH : prefs.size, new Date(), false);
   const scopeName = scoped.length > 0 ? scoped[0].name : "全科目";
+  const [showChar] = useState(characterOn);
+  const p = progressNow();
 
   return (
     <div className="card hero">
+      {/* 律の今日の案内（T063）。急かさない・連続記録で脅さない */}
+      {showChar && cardIds.size > 0 && (
+        <RitsuSays face={p.today >= p.goal ? "happy" : "smile"} className="hero-ritsu">
+          {homeLine(preview.counts.due, p.today >= p.goal)}
+        </RitsuSays>
+      )}
       <div className="hero-title">
         {endless ? (
           <span className="hero-count">エンドレス</span>

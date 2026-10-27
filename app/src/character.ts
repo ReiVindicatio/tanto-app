@@ -1,8 +1,9 @@
 // 聞き流しと答え合わせのキャラクター（T063）。絵は Gemini の画像モデルで作った（pipeline/char_image.py）。
-// 律が出すのは絵と名前だけ。○×と解説の見せ方は変えない（解説を「彼女の発言」にしない）
+// 律が言うのは、ここに書いた決まった言葉だけ。○×と解説の見せ方は変えない（解説を「彼女の発言」にしない）
 
 export type Expression = "normal" | "smile" | "think" | "happy" | "sad" | "sleepy" | "surprised" | "smug" | "jito";
-export type CharacterKind = "base" | "chibi";
+/** base＝立ち絵（聞き流し）、chibi＝ちびキャラ（ナビゲーター）、peek＝欄の縁からのぞくちびキャラ（答え合わせ。reactionFace の4つだけ） */
+export type CharacterKind = "base" | "chibi" | "peek";
 
 /** キャラクターの表。あとで足せるように、絵の置き場所はキャラクターごとに分ける（public/chars/<id>/） */
 export const CHARACTERS = {
@@ -62,5 +63,42 @@ export function setCharacterOn(on: boolean): void {
     localStorage.setItem(KEY, on ? "on" : "off");
   } catch {
     // 保存できなくても画面はそのまま
+  }
+}
+
+// ---- 律の言葉（決まった言葉だけ。解説や○×の判断を律に言わせない） ----
+
+/** ホームの今日の案内。急かす・連続記録で脅す言い方はしない */
+export function homeLine(due: number, goalReached: boolean): string {
+  if (goalReached) return "今日の分、おわってるよ。えらいえらい";
+  if (due > 0) return `復習の肢が ${due} 枚あるよ。ちょっとずつやろ`;
+  return "今日はどこからやる？";
+}
+
+export const LINES = {
+  listenIntro: "肢を読むね。考えたら○×を押してもいいし、聞くだけでもいいよ",
+  listenDone: "おつかれさま。また聞こうね",
+  resultDone: "おつかれさま",
+  swipeTip: "右にはじくと○、左にはじくと×だよ",
+  noReview: "復習する肢は、今はないよ",
+} as const;
+
+/** 初めて使う機能の案内は1回だけ（端末に覚える） */
+const TIPS_KEY = "tanto.character.tips.v1";
+
+export function tipSeen(name: string): boolean {
+  try {
+    return (JSON.parse(localStorage.getItem(TIPS_KEY) ?? "[]") as string[]).includes(name);
+  } catch {
+    return true;
+  }
+}
+
+export function markTipSeen(name: string): void {
+  try {
+    const seen = JSON.parse(localStorage.getItem(TIPS_KEY) ?? "[]") as string[];
+    if (!seen.includes(name)) localStorage.setItem(TIPS_KEY, JSON.stringify([...seen, name]));
+  } catch {
+    // 覚えられなくても案内が出続けるだけ
   }
 }

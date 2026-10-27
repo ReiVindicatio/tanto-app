@@ -48,7 +48,8 @@ test("今日の復習：新規20枚・同じ問は1枚まで・回答ログか�
   await gotoSubject(page, "民法");
   await page.reload();
   await expect(reviewSet(page)).toContainText("期限が来た肢 0枚・今日の新規の残り 0枚");
-  expect(await page.evaluate(() => Object.keys(localStorage))).toEqual(["tanto.log.v1"]);
+  // 学習記録は回答ログだけ（キャラクターの出す・出さないと初回の案内を見たかは、端末の表示の設定で学習記録ではない：T063）
+  expect(await page.evaluate(() => Object.keys(localStorage).filter((k) => !k.startsWith("tanto.character.")))).toEqual(["tanto.log.v1"]);
   // 回答ログの日時を30日前にずらすと、FSRS の期限と新規の数がログから作り直される
   await page.evaluate(() => {
     const log = JSON.parse(localStorage.getItem("tanto.log.v1")!);

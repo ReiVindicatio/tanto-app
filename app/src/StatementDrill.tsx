@@ -10,7 +10,8 @@ import { loadTwinsWhenIdle, twinsIfLoaded, twinsOf } from "./twins";
 import { loadTrapsWhenIdle, trapOf, trapsIfLoaded } from "./traps";
 import { cardIdOf } from "./learning";
 import SpeakButton from "./SpeakButton";
-import { characterImage, characterOn, reactionFace } from "./character";
+import { characterImage, characterOn, LINES, markTipSeen, reactionFace, tipSeen } from "./character";
+import { RitsuSays } from "./Ritsu";
 import { milestones, progressNow } from "./progress";
 import { shuffle } from "./shuffle";
 import { recordAnswer } from "./learning";
@@ -62,6 +63,8 @@ export default function StatementDrill({
   onExit: () => void;
 }) {
   const [showChar] = useState(characterOn);
+  // はじき方の案内は、律の吹き出しで1回だけ（答えたら覚える）。2回目からは今までどおりの小さな文字
+  const [swipeTip] = useState(() => showChar && !tipSeen("swipe"));
   const [order, setOrder] = useState<Statement[]>(cards);
   const [i, setI] = useState(0);
   const [answer, setAnswer] = useState<boolean | null>(null);
@@ -195,6 +198,7 @@ export default function StatementDrill({
     if (answer !== null) return;
     if (swipe.el) flyAway(swipe.el, v ? "right" : "left", dx, v ? { text: "○", className: "maru" } : { text: "×", className: "batsu" });
     setAnswer(v);
+    if (swipeTip) markTipSeen("swipe");
     const before = progressNow();
     recordAnswer(s.id, v === truth);
     const m = milestones(before, progressNow());
@@ -303,7 +307,13 @@ export default function StatementDrill({
           </div>
         )}
 
-        {answer === null && i === 0 && (
+        {answer === null && i === 0 && swipeTip && (
+          <RitsuSays face="smile" className="swipe-hint">
+            <span className="hint-touch">{LINES.swipeTip}</span>
+            <span className="hint-keys">キーボードなら、→ か O で○、← か X で×。答えのあとは Enter で次へ進むよ</span>
+          </RitsuSays>
+        )}
+        {answer === null && i === 0 && !swipeTip && (
           <p className="swipe-hint muted small">
             <span className="hint-touch">右にはじくと○・左にはじくと×</span>
             <span className="hint-keys">キーボード：→ か O で○、← か X で×（答えの後は Enter で次へ）</span>
@@ -311,18 +321,18 @@ export default function StatementDrill({
         )}
 
         {answer !== null && (
-          <div className={`result ${answer === truth ? "ok" : "ng"}`}>
-            <div className="big">
-              {/* キャラクター（T063）：ちびキャラで小さく反応する。絵だけで、○×と解説の見せ方は変えない */}
-              {showChar && (
-                <img
-                  className="drill-char"
-                  src={characterImage("chibi", reactionFace(answer === truth, streak, wrongStreak))}
-                  alt=""
-                  data-face={reactionFace(answer === truth, streak, wrongStreak)}
-                />
-              )}
-              {answer === truth ? "正解" : "不正解"}
+          <div className={`result ${answer === truth ? "ok" : "ng"}${showChar ? " with-peek" : ""}`}>
+            {/* キャラクター（T063）：律が結果の欄の縁からのぞいて、吹き出しで「正解！」「不正解…」。○×と解説の見せ方は変えない */}
+            {showChar && (
+              <img
+                className="peek-chibi drill-char"
+                src={characterImage("peek", reactionFace(answer === truth, streak, wrongStreak))}
+                alt=""
+                data-face={reactionFace(answer === truth, streak, wrongStreak)}
+              />
+            )}
+            <div className={showChar ? "big ritsu-bubble tail-left peek-bubble" : "big"}>
+              {answer === truth ? (showChar ? "正解！" : "正解") : showChar ? "不正解…" : "不正解"}
               {answer === truth && streak >= 3 && <span className="combo">{streak}連続正解</span>}
             </div>
             {celebrate && (

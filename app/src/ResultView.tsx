@@ -3,6 +3,18 @@ import type { Explanation, Question, Statement } from "./types";
 import ExplanationView from "./ExplanationView";
 import { subjectColor, subjectRank } from "./subjectsMeta";
 import type { OriginOf } from "./play";
+import { characterOn, LINES } from "./character";
+import { RitsuSays } from "./Ritsu";
+
+/** 結果画面の律（T063）。点数には触れない */
+function ResultRitsu() {
+  if (!characterOn()) return null;
+  return (
+    <RitsuSays face="smile" className="result-ritsu">
+      {LINES.resultDone}
+    </RitsuSays>
+  );
+}
 
 /** 円グラフ（0〜1）。中央に％ */
 export function Donut({ value, label }: { value: number; label?: string }) {
@@ -76,6 +88,7 @@ export function StatementResult({
   return (
     <section className="result-screen">
       <h1>おわり</h1>
+      <ResultRitsu />
       <div className="result-summary">
         <Donut
           value={items.length ? correct / items.length : 0}
@@ -162,6 +175,7 @@ export function QuestionResult({
   return (
     <section className="result-screen">
       <h1>おわり</h1>
+      <ResultRitsu />
       <div className="result-summary">
         <Donut value={points ? earned / points : 0} label={`得点率 ${points ? Math.round((earned / points) * 100) : 0}%`} />
         <div>
