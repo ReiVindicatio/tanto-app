@@ -1,5 +1,6 @@
 // 律のセリフ（T065）。文は lines.json（こちらで書いた決まった言葉だけ。法律の中身は言わせない）。
 // 声は pipeline/ritsu_voice.py で作った public/voices/ritsu/<id>.mp3。押したときだけ鳴らす
+import { useEffect, useState } from "react";
 import data from "./lines.json";
 import type { Expression } from "../character";
 
@@ -56,13 +57,39 @@ export function seasonScene(d: Date): "spring" | "summer" | "autumn" | "winter" 
 
 let playing: HTMLAudioElement | null = null;
 
+// 律の声が流れているか（口パクに使う）
+let speaking = false;
+const speakingSubs = new Set<() => void>();
+function setSpeaking(v: boolean) {
+  speaking = v;
+  speakingSubs.forEach((f) => f());
+}
+
+/** 律の声が流れている間 true */
+export function useSpeaking(): boolean {
+  const [v, setV] = useState(speaking);
+  useEffect(() => {
+    const f = () => setV(speaking);
+    speakingSubs.add(f);
+    return () => {
+      speakingSubs.delete(f);
+    };
+  }, []);
+  return v;
+}
+
 /** 律の声を流す（同時に流すのは1つ）。声がなければ何もしない */
 export function playLine(l: Line): void {
   const url = voiceUrl(l);
   playing?.pause();
   if (!url) return;
-  playing = new Audio(url);
-  void playing.play().catch(() => {});
+  const a = new Audio(url);
+  playing = a;
+  a.onplaying = () => setSpeaking(true);
+  a.onended = a.onpause = a.onerror = () => {
+    if (playing === a) setSpeaking(false);
+  };
+  void a.play().catch(() => setSpeaking(false));
 }
 
 /**

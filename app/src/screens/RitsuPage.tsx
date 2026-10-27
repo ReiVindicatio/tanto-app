@@ -5,8 +5,8 @@ import { back, navigate } from "../router";
 import { progressNow } from "../progress";
 import { characterImage, FACES, type Expression } from "../character";
 import { Bubble } from "../Ritsu";
-import { BACKGROUNDS, bgFor, chosenBg, currentTheme, isRevealed, isUnlocked, nextTheme, setBg, setTheme, THEMES } from "../ritsu/themes";
-import { ALL_LINES, lineText, linesOf, pickLine, playLine, type Line } from "../ritsu/lines";
+import { BACKGROUNDS, bgFor, chosenBg, currentTheme, isRevealed, isUnlocked, motionOf, nextTheme, setBg, setTheme, THEMES } from "../ritsu/themes";
+import { ALL_LINES, lineText, linesOf, pickLine, playLine, useSpeaking, type Line } from "../ritsu/lines";
 import { CHAR_BASE } from "../character";
 import { Progress } from "./common";
 
@@ -24,6 +24,8 @@ const FACE_NAMES: Record<Expression, string> = {
 
 const SCENE_NAMES: Record<string, string> = {
   tap: "おしゃべり",
+  pat_head: "頭をなでたとき",
+  poke_cheek: "ほっぺをつついたとき",
   wear_knit: "ひだまりニットのとき",
   morning: "朝",
   day: "昼",
@@ -75,6 +77,8 @@ export default function RitsuPage() {
   const [bump, setBump] = useState(0); // 押したときの小さな跳ね（描き直しのきっかけ）
   const next = nextTheme(p.level);
   const doze = useRef<number | undefined>(undefined);
+  const speaking = useSpeaking();
+  const m = motionOf(theme);
 
   // しばらく触らないと眠そうな顔になる（押すと起きる）
   function wake() {
@@ -96,6 +100,15 @@ export default function RitsuPage() {
     setBump((n) => n + 1);
     playLine(l);
     wake();
+  }
+
+  /** 押したときのひとこと：押した場所で変える（頭＝照れる・ほっぺ＝むくれる・ほか＝おしゃべり。衣装のときだけのセリフも混ぜる） */
+  function touch(e: React.MouseEvent<HTMLButtonElement>) {
+    const r = e.currentTarget.getBoundingClientRect();
+    const y = (e.clientY - r.top) / r.height;
+    if (e.clientY && y < 0.2) return say(pickLine("pat_head", p.level));
+    if (e.clientY && y < 0.34) return say(pickLine("poke_cheek", p.level));
+    talk();
   }
 
   /** 押したときのひとこと：着ている衣装のときだけのセリフも混ぜる（3回に1回くらい） */
@@ -144,14 +157,14 @@ export default function RitsuPage() {
             {lineText(said, { n: "いくつか" })}
           </Bubble>
         )}
-        <button className="ritsu-sprite-button" aria-label="律に話しかける" onClick={talk}>
-          <img
-            key={bump}
-            className={`vn-sprite${bump ? " bump" : ""}${face === "sleepy" ? " dozing" : ""}`}
-            src={characterImage("base", face, theme)}
-            alt=""
-            data-face={face}
-          />
+        <button className="ritsu-sprite-button" aria-label="律に話しかける" onClick={touch}>
+          <span key={bump} className={`sprite-wrap${bump ? " bump" : ""}${face === "sleepy" ? " dozing" : ""}${speaking && m.talkBase.includes(face) ? " talking" : ""}`}>
+            <img className="vn-sprite" src={characterImage("base", face, theme)} alt="" data-face={face} />
+            {/* 口パク：律の声が流れている間 */}
+            {speaking && m.talkBase.includes(face) && (
+              <img className="vn-sprite talk" src={`${CHAR_BASE}${theme}/base-${face}-talk.webp`} alt="" aria-hidden="true" />
+            )}
+          </span>
         </button>
       </div>
       <div className="ritsu-level">

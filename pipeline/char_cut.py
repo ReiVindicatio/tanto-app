@@ -16,7 +16,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageChops, ImageDraw, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "audio" / "samples_char" / "themes"
@@ -68,6 +68,12 @@ def base_set(src: Path, dst: Path, width: int = 480) -> None:
     for n, o in outs.items():
         c = o.crop(box)
         webp(c.resize((width, round(c.height * width / c.width)), Image.LANCZOS), dst / f"base-{n}.webp")
+    # 口パク（口を開けた絵）：口のまわりだけ貼って、同じ範囲で切る
+    for n in FACES:
+        t = src / f"talk-base-{n}.png"
+        if t.exists():
+            o = cutout(patch(src / f"base-{n}.png", t, MOUTH_BASE, aligned=True), edges(*outs[n].size)).crop(box)
+            webp(o.resize((width, round(o.height * width / o.width)), Image.LANCZOS), dst / f"base-{n}-talk.webp")
 
 
 def chibi(src: Path, dst: Path, width: int = 240) -> None:
@@ -143,11 +149,35 @@ def ledge_cut(im: Image.Image) -> tuple[Image.Image, int, int]:
     return full, top, bot
 
 
-def patch(base: Path, frame: Path, box: tuple[float, float, float, float], thresh: int = 60) -> Image.Image:
+def align(b: Image.Image, f: Image.Image, box: tuple[float, float, float, float], reach: int = 24) -> Image.Image:
+    """frame が絵全体ごと少しずれて描かれていることがある（口パクの絵で起きた）。box のまわりで、base といちばん重なる位置へずらす"""
+    w, h = b.size
+    x0, y0, x1, y1 = int(box[0] * w) - reach, int(box[1] * h) - reach, int(box[2] * w) + reach, int(box[3] * h) + reach
+    x0, y0, x1, y1 = max(0, x0), max(0, y0), min(w, x1), min(h, y1)
+    small = 4  # 縮めて粗く探してから
+    bg = b.convert("L").crop((x0, y0, x1, y1)).resize(((x1 - x0) // small, (y1 - y0) // small))
+    best, bd = (0, 0), None
+    for dy in range(-reach, reach + 1, small):
+        for dx in range(-reach, reach + 1, small):
+            fg = f.convert("L").crop((x0 + dx, y0 + dy, x1 + dx, y1 + dy)).resize(bg.size)
+            d = sum(ImageChops.difference(bg, fg).getdata())
+            if bd is None or d < bd:
+                best, bd = (dx, dy), d
+    if best == (0, 0):
+        return f
+    out = Image.new("RGB", f.size, (255, 255, 255))
+    out.paste(f, (-best[0], -best[1]))
+    return out
+
+
+def patch(base: Path, frame: Path, box: tuple[float, float, float, float], thresh: int = 60, aligned: bool = False) -> Image.Image:
     """動きのコマ（T065）：frame のうち、box（幅・高さに対する割合）の中で base と大きく違うところだけを base に貼る。
-    体はまったく動かず、目や足先だけが描き直される（コマごとに描き直すと線や位置がずれてちらつくため）"""
+    体はまったく動かず、目や足先だけが描き直される（コマごとに描き直すと線や位置がずれてちらつくため）。
+    aligned なら、先に frame のずれを打ち消す（絵全体ごとずれて描かれたとき）"""
     b = Image.open(base).convert("RGB")
     f = Image.open(frame).convert("RGB").resize(b.size)
+    if aligned:
+        f = align(b, f, box)
     w, h = b.size
     x0, y0, x1, y1 = int(box[0] * w), int(box[1] * h), int(box[2] * w), int(box[3] * h)
     bp, fp = b.load(), f.load()
@@ -189,6 +219,10 @@ def sit(src: Path, dst: Path, width: int = 240, below: float = 0.25) -> None:
 
 BLINK_BOX = (0.25, 0.33, 0.75, 0.52)  # 腰かける絵の目のあたり（幅・高さに対する割合）
 SWING_BOX = (0.25, 0.70, 0.75, 1.0)  # 腰かける絵のぶら下げた足のあたり
+MOUTH_SIT = (0.38, 0.43, 0.62, 0.60)  # 腰かける絵の口のあたり
+MOUTH_BASE = (0.37, 0.28, 0.63, 0.44)  # 立ち絵の口のあたり
+GESTURE_BOX = (0.0, 0.0, 1.0, 0.78)  # 仕草：座る線より上（足は元の絵のまま）
+GESTURES = {"yawn": "smile", "stretch": "smile", "rub": "smile", "sip": "smile", "signature": "smile", "nod": "normal", "clap": "happy", "pout": "jito"}
 KICK_BOX = (0.55, 0.15, 1.0, 0.8)  # 寝そべる絵の上げた足先のあたり
 
 
@@ -231,6 +265,13 @@ def main() -> None:
             if (src / f"swing-{n}-{k}.png").exists():
                 frames.append(patch(s, src / f"swing-{n}-{k}.png", SWING_BOX))
                 dsts.append(dst / f"sit-{n}-swing-{k}.webp")
+        if (src / f"talk-sit-{n}.png").exists():  # 口パク
+            frames.append(patch(s, src / f"talk-sit-{n}.png", MOUTH_SIT, aligned=True))
+            dsts.append(dst / f"sit-{n}-talk.webp")
+        for g, from_face in GESTURES.items():  # 仕草（その表情の絵から作ったもの）
+            if from_face == n and (src / f"gesture-{g}.png").exists():
+                frames.append(patch(s, src / f"gesture-{g}.png", GESTURE_BOX, thresh=40))
+                dsts.append(dst / f"gesture-{g}.webp")
         if (src / f"hop-{n}.png").exists():
             frames.append(Image.open(src / f"hop-{n}.png"))
             dsts.append(dst / f"hop-{n}.webp")

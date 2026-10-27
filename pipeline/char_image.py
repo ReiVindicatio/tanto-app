@@ -8,6 +8,7 @@
   python3 pipeline/char_image.py sit_set <テーマ>      # 縁に腰かけるちびキャラ 8表情と、寝そべる絵（sit-smile.png と lie-sleepy.png の見本から）
   python3 pipeline/char_image.py motion_set <テーマ>   # 動きの絵：まばたき・足のバタバタ・寝そべりの足・寝転びかけ
   python3 pipeline/char_image.py backgrounds           # 律のページの背景（audio/samples_char/bg/）
+  python3 pipeline/char_image.py extras_set <テーマ>   # 仕草（あくび・伸び・目をこする・ココア・衣装の動作・こっくり）・拍手・むくれ・口パク
                                                        # 背景を抜いて webp にするのは pipeline/char_cut.py
 
 - キーは .secrets/google-vertex-key（声1と同じ）。請求は Google Cloud のクレジット
@@ -37,7 +38,7 @@ MODEL = "gemini-2.5-flash-image"
 # アジアの地域（asia-northeast1）にはこのモデルがない
 REGIONS = ["us-central1", "us-east4", "us-east5", "us-west1", "us-west4", "us-south1", "europe-west1", "europe-west4", "europe-north1"]
 _next_region = itertools.count()
-WORKERS = 6  # 並べて作る数
+WORKERS = 3  # 並べて作る数（6 だと、地域ごととは別の全体の制限に当たって 429 が続いた：2026-10-27）
 
 
 def url(region: str) -> str:
@@ -66,7 +67,7 @@ FACES = {
 
 def generate(parts: list[dict], path: Path) -> None:
     body = {"contents": [{"role": "user", "parts": parts}], "generationConfig": {"responseModalities": ["TEXT", "IMAGE"]}}
-    for attempt in range(30):
+    for attempt in range(60):
         region = REGIONS[next(_next_region) % len(REGIONS)]
         req = urllib.request.Request(url(region), data=json.dumps(body).encode(),
                                      headers={"Content-Type": "application/json", "x-goog-api-key": vertex_key()})
@@ -77,9 +78,9 @@ def generate(parts: list[dict], path: Path) -> None:
                 break
             time.sleep(2)  # 絵のない応答がまれに返る。作り直す
         except urllib.error.HTTPError as e:
-            if e.code in (429, 500, 503) and attempt < 29:
+            if e.code in (429, 500, 503) and attempt < 59:
                 # 混んでいたら次の地域へ。地域をひと回りしたら少し待つ
-                time.sleep(2 if (attempt + 1) % len(REGIONS) else min(120, 10 * (attempt // len(REGIONS) + 1)) + random.uniform(0, 5))
+                time.sleep(2 if (attempt + 1) % len(REGIONS) else min(180, 20 * (attempt // len(REGIONS) + 1)) + random.uniform(0, 5))
                 continue
             raise
     else:
@@ -396,6 +397,40 @@ def motion_set(name: str) -> None:
     run_all(jobs)
 
 
+# 仕草・口パク・拍手など（T065：「もっと動いてほしい」ユーザー）。どれも元の絵の一部だけを描き直したコマ
+KEEP = (" Everything else must stay identical: same pose of the legs, same size and position, same face shape, hair, outfit, colors and ledge. "
+        "No text. ")
+GESTURES = {  # 腰かける絵（にっこり）から。待っている間にときどき出す
+    "yawn": "a big yawn: mouth wide open, eyes closed, one hand covering her mouth",
+    "stretch": "stretching both arms straight up above her head, eyes closed, relaxed and comfortable",
+    "rub": "sleepily rubbing one eye with the back of her hand, the other hand on the ledge",
+    "sip": "holding a mug of cocoa in both hands and sipping from it, eyes closed happily",
+}
+EXTRAS = {  # (元の絵, 指示)
+    "nod": ("sit-normal", "dozing off: her head drooping forward and a little to the side, eyes closed, very sleepy"),
+    "clap": ("sit-happy", "clapping her hands together in front of her chest, very happy, eyes curved in joy"),
+    "pout": ("sit-jito", "sulking with puffed-out cheeks, half-lidded jito eyes, a little pouty"),
+}
+TALK = ("Redraw the reference image EXACTLY, changing ONLY the mouth: the mouth open as if in the middle of speaking a word "
+        "(a small, natural open mouth). Everything else must stay pixel-identical. No text. ")
+TALK_SIT = ["normal", "smile", "happy", "sad", "think"]
+
+
+def extras_set(name: str) -> None:
+    g = OUT / "themes" / name
+    sig = g / "signature.txt"  # 衣装ごとの特有の動作（docs/ritsu-costumes.md の設計書から）
+    jobs = [([_img(g / "sit-smile.png"), {"text": "Redraw the reference image, changing her arms, hands and expression to: " + t + "." + KEEP + outfit(g) + COMMON}],
+             g / f"gesture-{n}.png") for n, t in GESTURES.items()]
+    if sig.exists():
+        jobs.append(([_img(g / "sit-smile.png"), {"text": "Redraw the reference image, changing her arms, hands and expression to: "
+                      + sig.read_text(encoding="utf-8").strip() + "." + KEEP + outfit(g) + COMMON}], g / "gesture-signature.png"))
+    jobs += [([_img(g / f"{src}.png"), {"text": "Redraw the reference image, changing her pose of the upper body and expression to: " + t + "." + KEEP
+               + outfit(g) + COMMON}], g / f"gesture-{n}.png") for n, (src, t) in EXTRAS.items()]
+    jobs += [([_img(g / f"sit-{f}.png"), {"text": TALK + outfit(g) + COMMON}], g / f"talk-sit-{f}.png") for f in TALK_SIT]
+    jobs += [([_img(g / f"base-{f}.png"), {"text": TALK + outfit(g) + COMMON}], g / f"talk-base-{f}.png") for f in THEME_FACES]
+    run_all(jobs)
+
+
 # 律のページの背景（T065）：律が目立つよう、淡くやわらかい背景。人物は描かない
 BACKGROUNDS = {
     "room": "a cozy girl's study room in the daytime: a wooden desk with a small stack of books and a mug, a bookshelf, soft curtains, a potted plant",
@@ -435,6 +470,8 @@ def main() -> None:
         faces2()
     elif what == "themes":
         themes()
+    elif what == "extras_set":
+        extras_set(sys.argv[2])
     elif what == "backgrounds":
         backgrounds()
     elif what == "motion_set":

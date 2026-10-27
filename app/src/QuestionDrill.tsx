@@ -123,7 +123,7 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
       {!result ? (
         <div className={`actionbar${showChar ? " with-ritsu" : ""}`}>
           {/* 律（T065）：答える前は○×の欄の縁で考え中（しばらく採点しないと寝そべる）。採点したら満点で喜んで跳ねる */}
-          {showChar && <RitsuDock face={idle ? "sleepy" : "think"} pose={idle ? "lie" : "sit"} swing className="bar-dock" />}
+          {showChar && <RitsuDock face={idle ? "sleepy" : "think"} pose={idle ? "lie" : "sit"} swing lively className="bar-dock" />}
           <button disabled={picks.some((p) => p === null)} onClick={submit}>
             採点する
           </button>

@@ -1948,7 +1948,24 @@ body:has(.home-dock) .footer {
   filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.18));
   transform-origin: 50% 100%;
 }
-.ritsu-stage .vn-sprite.bump {
+.sprite-wrap {
+  position: relative;
+  display: block;
+  transform-origin: 50% 100%;
+}
+.sprite-wrap .vn-sprite.talk {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 0;
+}
+.ritsu-stage .vn-sprite.talk {
+  filter: none;
+}
+.sprite-wrap.talking .vn-sprite.talk {
+  animation: talk-flap 0.34s steps(1) infinite;
+}
+.sprite-wrap.bump {
   animation: sprite-bump 0.45s ease-out;
 }
 @keyframes sprite-bump {
@@ -1958,7 +1975,7 @@ body:has(.home-dock) .footer {
   100% { transform: scale(1, 1); }
 }
 /* 眠そうなときは、ゆっくり息をする */
-.ritsu-stage .vn-sprite.dozing {
+.sprite-wrap.dozing {
   animation: sprite-breathe 3.2s ease-in-out infinite;
 }
 @keyframes sprite-breathe {
@@ -2032,7 +2049,8 @@ body:has(.home-dock) .footer {
   border-color: var(--brand);
 }
 @media (prefers-reduced-motion: reduce) {
-  .ritsu-stage .vn-sprite {
+  .ritsu-stage .vn-sprite,
+  .sprite-wrap {
     animation: none !important;
   }
 }
@@ -2356,4 +2374,115 @@ body:has(.home-dock) .footer {
 .listen-dock:has(.dock-ritsu.lie) .dock-bubble,
 .bar-dock:has(.dock-ritsu.lie) .dock-bubble {
   right: 144px;
+}
+.ritsu-link {
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin: 0 0 12px;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-strong);
+  font-weight: normal;
+  text-align: left;
+}
+.ritsu-link img {
+  height: 56px;
+  width: auto;
+}
+.ritsu-link .grow {
+  display: flex;
+  flex-direction: column;
+}
+.ritsu-link-title {
+  font-weight: bold;
+}
+
+/* ---- 律の仕草・口パク・感情の記号・息（T065） ---- */
+.perch-inner {
+  position: relative;
+}
+/* 息をする：座っているあいだ、ごくわずかに上下（足元を軸に） */
+.perch.sit .perch-inner {
+  transform-origin: 50% 100%;
+  animation: perch-breathe 4.2s ease-in-out infinite;
+}
+@keyframes perch-breathe {
+  0%, 100% { transform: scale(1, 1); }
+  50% { transform: scale(1.004, 1.012); }
+}
+/* 仕草：出している間は、元の絵とほかのコマを隠して、その絵だけ */
+.perch.gesturing .perch-body,
+.perch.gesturing .perch-frame:not(.gesture) {
+  visibility: hidden;
+}
+.perch-frame.gesture {
+  opacity: 1;
+}
+/* 口パク：声が流れている間、口を開けた絵を出したり消したり */
+.perch.talking .perch-frame.talk {
+  animation: talk-flap 0.34s steps(1) infinite;
+}
+@keyframes talk-flap {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+}
+/* 感情の記号：頭の右上にぽんと出る */
+.perch-emote {
+  position: absolute;
+  top: 2%;
+  right: 4%;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--brand);
+  text-shadow: 0 0 3px var(--bg), 0 0 3px var(--bg);
+  pointer-events: none;
+  animation: emote-pop 0.35s ease-out;
+}
+@keyframes emote-pop {
+  from {
+    transform: scale(0.3) translateY(6px);
+    opacity: 0;
+  }
+}
+/* 寝ているときの zzz：小さな z が順に浮かんで消える */
+.perch-emote.zzz {
+  top: -6%;
+  right: 18%;
+  color: var(--text-secondary);
+  font-size: 13px;
+  animation: none;
+}
+.perch-emote.zzz i {
+  position: absolute;
+  font-style: normal;
+  opacity: 0;
+  animation: zzz-float 3s ease-out infinite;
+}
+.perch-emote.zzz i:nth-child(2) {
+  animation-delay: 1s;
+  font-size: 15px;
+}
+.perch-emote.zzz i:nth-child(3) {
+  animation-delay: 2s;
+  font-size: 17px;
+}
+@keyframes zzz-float {
+  0% { opacity: 0; transform: translate(0, 0); }
+  20% { opacity: 1; }
+  100% { opacity: 0; transform: translate(14px, -26px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .perch .perch-inner,
+  .perch-emote,
+  .perch-emote.zzz i,
+  .perch.talking .perch-frame.talk {
+    animation: none !important;
+  }
+}
+.type-rest {
+  color: transparent;
 }

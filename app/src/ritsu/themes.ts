@@ -3,24 +3,54 @@ import { progressNow } from "../progress";
 
 /** 動きのコマ（T065）。あるものだけ動かす：blink＝目を閉じた絵がある表情、swing＝足を振ったコマがある表情、kick＝寝そべりの足のコマ、
  *  hop＝跳ねたところの絵がある表情、mid＝座る→寝そべるの間の絵 */
-export type Motion = { blink: string[]; swing: string[]; kick: boolean; hop: string[]; mid: boolean };
+export type Motion = {
+  blink: string[];
+  swing: string[];
+  kick: boolean;
+  hop: string[];
+  mid: boolean;
+  /** 仕草の絵があるもの（yawn・stretch・rub・sip・signature＝衣装の動作・nod・clap・pout） */
+  gestures: string[];
+  /** 口パクの絵がある表情（腰かける絵） */
+  talk: string[];
+  /** 口パクの絵がある表情（立ち絵） */
+  talkBase: string[];
+};
 /** desc＝どんなときの衣装か（お披露目で見せる。docs/ritsu-costumes.md の設計書から） */
 export type Theme = { id: string; name: string; level: number; desc?: string; motion?: Motion; bg?: string };
 
+/** 絵をひととおりそろえたテーマの動き（2026-10-27 の作り方。char_image.py の motion_set・extras_set） */
+const FULL_MOTION: Motion = {
+  blink: ["normal", "smile", "think", "sad", "smug", "jito"],
+  swing: ["normal", "think", "smile"],
+  kick: true,
+  hop: [],
+  mid: true,
+  gestures: ["yawn", "stretch", "rub", "sip", "signature", "nod", "clap", "pout"],
+  talk: ["normal", "smile", "happy", "sad", "think"],
+  talkBase: ["normal", "smile", "think", "happy", "sad", "sleepy", "surprised", "smug", "jito"],
+};
+
 /** 開くレベルの順。絵をそろえたテーマだけを載せる */
 export const THEMES: Theme[] = [
-  { id: "default", name: "いつもの", level: 1, bg: "room", motion: { blink: ["normal", "smile", "think", "sad", "smug", "jito"], swing: ["normal", "think", "smile"], kick: true, hop: [], mid: true } },
+  {
+    id: "default",
+    name: "いつもの",
+    level: 1,
+    bg: "room",
+    motion: { ...FULL_MOTION },
+  },
   {
     id: "knit",
     name: "ひだまりニット",
     level: 3,
     bg: "window",
     desc: "冬のはじめのお休みの日。日の当たる窓辺で、ココアを飲みながら小さな六法を読む。いつものベストを脱いだ、初めての私服",
-    motion: { blink: ["normal", "smile", "think", "sad", "smug", "jito"], swing: ["normal", "think", "smile"], kick: true, hop: [], mid: true },
+    motion: { blink: ["normal", "smile", "think", "sad", "smug", "jito"], swing: ["normal", "think", "smile"], kick: true, hop: [], mid: true, gestures: [], talk: [], talkBase: [] },
   },
 ];
 
-const NO_MOTION: Motion = { blink: [], swing: [], kick: false, hop: [], mid: false };
+const NO_MOTION: Motion = { blink: [], swing: [], kick: false, hop: [], mid: false, gestures: [], talk: [], talkBase: [] };
 
 export function motionOf(id: string): Motion {
   return themeById(id)?.motion ?? NO_MOTION;

@@ -304,6 +304,9 @@ export default function StatementDrill({
               <PerchFigure
                 face={reactionFace(answer === truth, streak, wrongStreak)}
                 hop={answer === truth}
+                // 3問続けて正解なら拍手、2問続けてまちがえたら頬をふくらませる
+                gesture={answer === truth && streak >= 3 ? "clap" : answer !== truth && wrongStreak >= 2 ? "pout" : null}
+                emote
                 className="perch-chibi drill-char"
               />
             )}
@@ -369,7 +372,7 @@ export default function StatementDrill({
         <div className={`actionbar${showChar ? " with-ritsu" : ""}`}>
           {/* 答える前の律（T065）：○×の欄の縁に座って足をバタバタ。しばらく答えないと寝そべって本を読む。答えると結果の欄へ移る */}
           {showChar && (
-            <RitsuDock face={idle ? "sleepy" : "think"} pose={idle ? "lie" : "sit"} swing className="bar-dock drill-dock">
+            <RitsuDock face={idle ? "sleepy" : "think"} pose={idle ? "lie" : "sit"} swing lively className="bar-dock drill-dock">
               {i === 0 && swipeTip ? (
                 <span className="swipe-hint">
                   <span className="hint-touch">{LINES.swipeTip}</span>

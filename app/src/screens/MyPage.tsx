@@ -1,5 +1,6 @@
 // マイページ（T025・T024・T034）：学習の軌跡（ヒートマップ・累計の伸び）・科目ごと・まちがえた肢・アカウント・表示
 import { TabRitsu } from "../Ritsu";
+import { characterImage } from "../character";
 import TrapSection from "./TrapSection";
 import { getGoal, GOALS, progressNow, setGoal } from "../progress";
 import { useState } from "react";
@@ -310,6 +311,17 @@ export default function MyPage({
       {/* 律（T065）：タブの縁に座っているだけ。押すとひとこと */}
       {showChar && <TabRitsu />}
       <h1>マイページ</h1>
+      {/* 律のページへの入口（上の帯の Lv からも開ける。それだけだと気づきにくい：ユーザー） */}
+      {showChar && (
+        <button className="ritsu-link" onClick={() => navigate({ name: "ritsu" })}>
+          <img src={characterImage("chibi", "smile")} alt="" />
+          <span className="grow">
+            <span className="ritsu-link-title">律のページ</span>
+            <span className="muted small">衣装・背景・表情・セリフ・お披露目のアルバム</span>
+          </span>
+          <span aria-hidden="true">›</span>
+        </button>
+      )}
       <div className="segmented me-tabs" role="tablist" aria-label="マイページ">
         {VIEWS.map(([v, label]) => (
           <button key={v} role="tab" aria-selected={view === v} className={view === v ? "chosen" : ""} onClick={() => setView(v)}>

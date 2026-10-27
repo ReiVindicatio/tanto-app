@@ -2,14 +2,34 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { CHAR_BASE, characterImage, type Expression } from "./character";
 import { currentTheme, motionOf } from "./ritsu/themes";
-import { linesOf, pickLine, playLine, type Line } from "./ritsu/lines";
+import { linesOf, pickLine, playLine, useSpeaking, type Line } from "./ritsu/lines";
 import { progressNow } from "./progress";
 
-/** 吹き出し。tail は吹き出しのしっぽの向き（律がいる側） */
+/** 律の言葉を1文字ずつ出す（ノベルゲームのように）。まだ出ていない文字は透明で置いておく（吹き出しの大きさが途中で変わらない。文字としては最初から全文） */
+export function TypeText({ text }: { text: string }) {
+  const [n, setN] = useState(0);
+  useEffect(() => {
+    setN(0);
+    if (typeof window !== "undefined" && window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) {
+      setN(text.length);
+      return;
+    }
+    const t = window.setInterval(() => setN((k) => (k >= text.length ? (window.clearInterval(t), k) : k + 1)), 38);
+    return () => window.clearInterval(t);
+  }, [text]);
+  return (
+    <>
+      {text.slice(0, n)}
+      <span className="type-rest">{text.slice(n)}</span>
+    </>
+  );
+}
+
+/** 吹き出し。tail は吹き出しのしっぽの向き（律がいる側）。中身が文字だけなら1文字ずつ出す */
 export function Bubble({ children, tail = "left", className = "" }: { children: ReactNode; tail?: "left" | "right" | "down"; className?: string }) {
   return (
     <div className={`ritsu-bubble tail-${tail} ${className}`} role="status" aria-live="polite">
-      {children}
+      {typeof children === "string" ? <TypeText text={children} /> : children}
     </div>
   );
 }
@@ -29,17 +49,29 @@ export function RitsuSays({ face, children, className = "" }: { face: Expression
  * 足のバタバタ（腰かける・寝そべる）とまばたきは、足や目だけを描き直したコマを重ねて切り替える（テーマの motion にあるものだけ）。
  * 足を縦に縮めて見せるやり方は「伸び縮み」に見えたのでやめた（2026-10-27 ユーザー）
  */
+/** 感情の記号（頭の右上にぽんと出す）。考え中＝？・喜び＝！・得意げ＝♪・残念＝汗・ジト目＝…・眠い・寝そべり＝zzz */
+const EMOTE: Partial<Record<Expression, string>> = { think: "？", happy: "！", smug: "♪", sad: "💧", jito: "…", sleepy: "z" };
+
 export function PerchFigure({
   face,
   pose = "sit",
   swing = false,
   hop = false,
+  talk = false,
+  gesture = null,
+  emote = false,
   className = "",
 }: {
   face: Expression;
   pose?: "sit" | "lie";
   swing?: boolean;
   hop?: boolean;
+  /** 口パク（声が流れている間） */
+  talk?: boolean;
+  /** 仕草（あくび・伸び・ココア・衣装の動作・こっくり・拍手・むくれ）。出している間は元の絵の代わりにその絵 */
+  gesture?: string | null;
+  /** 感情の記号を出す */
+  emote?: boolean;
   className?: string;
 }) {
   const theme = currentTheme();
@@ -48,26 +80,48 @@ export function PerchFigure({
   const f: Expression = face === "surprised" ? "normal" : face;
   const src = pose === "lie" ? characterImage("lie", "sleepy", theme) : characterImage("sit", f, theme);
   const frame = (name: string, cls: string) => <img className={`perch-frame ${cls}`} src={`${CHAR_BASE}${theme}/${name}.webp`} alt="" aria-hidden="true" />;
+  const g = pose === "sit" && gesture && m.gestures.includes(gesture) ? gesture : null;
+  const talking = pose === "sit" && talk && !g && m.talk.includes(f);
+  const mark = !emote ? undefined : pose === "lie" ? "z" : g ? undefined : EMOTE[f];
   return (
     <div
       key={hop ? `hop-${face}` : "still"}
-      className={`perch ${pose}${swing ? " swing" : ""}${hop ? " hop" : ""}${(pose === "lie" && m.kick) || (pose === "sit" && m.swing.includes(f)) ? " has-kick" : ""} ${className}`}
+      className={`perch ${pose}${swing && !g && !talking ? " swing" : ""}${hop ? " hop" : ""}${g ? " gesturing" : ""}${talking ? " talking" : ""}${(pose === "lie" && m.kick) || (pose === "sit" && m.swing.includes(f)) ? " has-kick" : ""} ${className}`}
       data-face={face}
+      data-gesture={g ?? undefined}
     >
-      <img className="perch-body" src={src} alt="" />
-      {pose === "sit" && m.blink.includes(f) && frame(`sit-${f}-blink`, "blink")}
-      {pose === "sit" && hop && m.hop.includes(f) && frame(`hop-${f}`, "apex")}
-      {pose === "sit" && swing && m.swing.includes(f) && (
-        <>
-          {frame(`sit-${f}-swing-1`, "k1")}
-          {frame(`sit-${f}-swing-2`, "k2")}
-        </>
-      )}
-      {pose === "lie" && m.kick && (
-        <>
-          {frame("lie-kick-1", "k1")}
-          {frame("lie-kick-2", "k2")}
-        </>
+      {/* 息をする（ごくわずかに上下）。跳ねる動きは外側、息は内側にかける */}
+      <div className="perch-inner">
+        <img className="perch-body" src={src} alt="" />
+        {pose === "sit" && m.blink.includes(f) && frame(`sit-${f}-blink`, "blink")}
+        {pose === "sit" && hop && m.hop.includes(f) && frame(`hop-${f}`, "apex")}
+        {pose === "sit" && swing && !g && !talking && m.swing.includes(f) && (
+          <>
+            {frame(`sit-${f}-swing-1`, "k1")}
+            {frame(`sit-${f}-swing-2`, "k2")}
+          </>
+        )}
+        {talking && frame(`sit-${f}-talk`, "talk")}
+        {g && frame(`gesture-${g}`, "gesture")}
+        {pose === "lie" && m.kick && (
+          <>
+            {frame("lie-kick-1", "k1")}
+            {frame("lie-kick-2", "k2")}
+          </>
+        )}
+      </div>
+      {mark && (
+        <span key={`${f}-${pose}`} className={`perch-emote${mark === "z" ? " zzz" : ""}`} aria-hidden="true">
+          {mark === "z" ? (
+            <>
+              <i>z</i>
+              <i>z</i>
+              <i>z</i>
+            </>
+          ) : (
+            mark
+          )}
+        </span>
       )}
     </div>
   );
@@ -86,11 +140,20 @@ export function RitsuDock({
   hop = false,
   swing = false,
   startHidden = false,
+  talk = false,
+  lively = false,
+  act = null,
 }: {
+  /** 決まった仕草をさせる（拍手・むくれなど。待っている間の仕草より優先） */
+  act?: string | null;
   face: Expression;
   pose?: "sit" | "lie";
   hop?: boolean;
   swing?: boolean;
+  /** 口パク（聞き流しの読み上げなど。律のセリフの声が流れている間は、言わなくても口パクする） */
+  talk?: boolean;
+  /** 待っている間に、ときどき仕草をする（あくび・伸び・目をこする・ココア・衣装の動作） */
+  lively?: boolean;
   children?: ReactNode;
   className?: string;
   fadeAfter?: number;
@@ -100,6 +163,32 @@ export function RitsuDock({
 }) {
   const [shown, setShown] = useState(!startHidden);
   const [tapped, setTapped] = useState(0); // 押したら、その場で跳ねて応える
+  const speaking = useSpeaking();
+  const motion = motionOf(currentTheme());
+  const [gesture, setGesture] = useState<string | null>(null);
+  // 待っている間の仕草：14〜30秒にいちど、2秒ほど
+  useEffect(() => {
+    if (!lively || pose !== "sit") return;
+    const idleGestures = motion.gestures.filter((g) => ["yawn", "stretch", "rub", "sip", "signature"].includes(g));
+    if (!idleGestures.length) return;
+    let t: number;
+    let end: number;
+    const schedule = () => {
+      t = window.setTimeout(() => {
+        setGesture(idleGestures[Math.floor(Math.random() * idleGestures.length)]);
+        end = window.setTimeout(() => {
+          setGesture(null);
+          schedule();
+        }, 2000);
+      }, 14000 + Math.random() * 16000);
+    };
+    schedule();
+    return () => {
+      window.clearTimeout(t);
+      window.clearTimeout(end);
+      setGesture(null);
+    };
+  }, [lively, pose, motion]);
   useEffect(() => {
     if (!fadeAfter || !shown) return;
     const t = setTimeout(() => setShown(false), fadeAfter);
@@ -110,23 +199,45 @@ export function RitsuDock({
   const [between, setBetween] = useState(false);
   useEffect(() => {
     if (pose === shownPose) return;
-    if (!motionOf(currentTheme()).mid) {
-      setShownPose(pose);
-      return;
-    }
-    setBetween(true);
-    const t = setTimeout(() => {
-      setBetween(false);
-      setShownPose(pose);
-    }, 260);
-    return () => clearTimeout(t);
+    const m = motionOf(currentTheme());
+    // 座る→寝そべる：こっくり（首がかくっと落ちる）をしてから、間の絵をはさんで寝そべる
+    const nod = pose === "lie" && m.gestures.includes("nod") ? 1500 : 0;
+    if (nod) setGesture("nod");
+    const timers: number[] = [];
+    timers.push(
+      window.setTimeout(() => {
+        setGesture(null);
+        if (!m.mid) {
+          setShownPose(pose);
+          return;
+        }
+        setBetween(true);
+        timers.push(
+          window.setTimeout(() => {
+            setBetween(false);
+            setShownPose(pose);
+          }, 260),
+        );
+      }, nod),
+    );
+    return () => timers.forEach((t) => window.clearTimeout(t));
   }, [pose, shownPose]);
   const img = between ? (
     <div className="perch mid dock-ritsu" data-face={face}>
       <img className="perch-body" src={`${CHAR_BASE}${currentTheme()}/mid-lie.webp`} alt="" />
     </div>
   ) : (
-    <PerchFigure key={tapped} face={face} pose={shownPose} hop={hop || (tapped > 0 && shownPose === "sit")} swing={swing} className="dock-ritsu" />
+    <PerchFigure
+      key={tapped}
+      face={face}
+      pose={shownPose}
+      hop={hop || (tapped > 0 && shownPose === "sit")}
+      swing={swing}
+      talk={talk || speaking}
+      gesture={act ?? gesture}
+      emote
+      className="dock-ritsu"
+    />
   );
   return (
     <div className={`ritsu-dock ${className}`}>
@@ -142,6 +253,7 @@ export function RitsuDock({
           onClick={() => {
             setShown(true);
             setTapped((n) => n + 1);
+            setGesture(null);
             onPeek?.();
           }}
         >
@@ -188,6 +300,7 @@ export function TabRitsu() {
       face={idle ? "sleepy" : (line?.face ?? "smile")}
       pose={idle ? "lie" : "sit"}
       swing
+      lively
       className="home-dock tab-dock"
       fadeAfter={5000}
       startHidden

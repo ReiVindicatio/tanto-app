@@ -64,6 +64,7 @@ function QuickStart({
           face={idle ? "sleepy" : (said?.line.face ?? "smile")}
           pose={idle ? "lie" : "sit"}
           swing
+          lively
           className="home-dock"
           fadeAfter={6000}
           onPeek={() => {

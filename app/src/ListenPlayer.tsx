@@ -57,14 +57,15 @@ function Stage({ face, children }: { face: Expression; children: React.ReactNode
 }
 
 /** 聞いている間の律：画面の下の○×の欄の縁に腰かけ（一時停止中は寝そべる）、横の吹き出しで今の状態を言う（スクロールしても見える） */
-function Dock({ face, phase, hop, children }: { face: Expression; phase: Phase; hop: boolean; children: React.ReactNode }) {
+function Dock({ face, phase, hop, act, children }: { face: Expression; phase: Phase; hop: boolean; act: string | null; children: React.ReactNode }) {
+  // 読み上げ中・答えを読んでいる間は口パク（読んでいるのは律の声）
   // 表情を切り替えたときに白くならないよう、使う絵は最初にまとめて読み込んでおく
   useEffect(() => {
     for (const f of PEEK_FACES) new Image().src = characterImage("sit", f);
     new Image().src = characterImage("lie", "sleepy");
   }, []);
   return (
-    <RitsuDock face={face} className={`listen-dock listen-phase ${phase}`} pose={phase === "paused" ? "lie" : "sit"} hop={hop} swing={phase === "reading" || phase === "thinking" || phase === "paused"}>
+    <RitsuDock face={face} className={`listen-dock listen-phase ${phase}`} pose={phase === "paused" ? "lie" : "sit"} hop={hop} swing={phase === "thinking" || phase === "paused"} talk={(phase === "reading" || phase === "answer") && !act} act={act}>
       {children}
     </RitsuDock>
   );
@@ -477,7 +478,13 @@ export default function ListenPlayer({
 
       <div className="actionbar listen-actions">
         {showChar && phase !== "ready" && s && (
-          <Dock face={listenFace(phase, answered, streaks.correct, streaks.wrong)} phase={phase} hop={phase === "answer" && answered === true}>
+          <Dock
+            face={listenFace(phase, answered, streaks.correct, streaks.wrong)}
+            phase={phase}
+            hop={phase === "answer" && answered === true}
+            // 3問続けて正解なら拍手、2問続けてまちがえたら頬をふくらませる
+            act={phase !== "answer" || answered === null ? null : answered ? (streaks.correct >= 3 ? "clap" : null) : streaks.wrong >= 2 ? "pout" : null}
+          >
             {phaseText}
           </Dock>
         )}
