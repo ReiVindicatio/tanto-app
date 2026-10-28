@@ -385,6 +385,9 @@ KICK = ("Redraw the reference image EXACTLY (same pose, same size and position, 
         "changing ONLY her lower legs and feet that are raised behind her: ")
 KICKS = {1: "the lower legs swung further back and lower, feet pointing back, legs slightly apart",
          2: "the lower legs swung further forward and higher, nearly upright, ankles crossed the other way"}
+# 2026-10-28 図書館：足がほとんど動かない絵（元の絵とほぼ同じ）が2回続いた。動きをはっきり指示する
+KICK_CLEAR = (" The change of the legs must be CLEARLY visible at a glance: the feet move by at least the height of her head compared with the "
+              "reference image. ")
 
 
 # 座って足をバタバタ（2026-10-27）：足を縦に縮めるだけだと「伸び縮み」に見えた（ユーザー）。足を前に振り上げた・後ろに引いたコマを作り、
@@ -395,7 +398,7 @@ SWING = ("Redraw the reference image EXACTLY (same pose, same size and position,
 SWINGS = {1: "both lower legs swung forward and up, knees bent, the soles of the shoes tilted toward the viewer, feet a little apart",
           2: "the left lower leg swung forward and up, the right lower leg swung back under the ledge, like kicking her feet alternately"}
 
-
+" + KICK_CLEAR + "
 def motion_set(name: str) -> None:
     g = OUT / "themes" / name
     jobs = [([_img(g / "lie-sleepy.png"), {"text": KICK + t + ". Everything else must stay identical." + LIMBS + outfit(g) + "No text. " + COMMON}],
