@@ -148,7 +148,50 @@ def ledge_cut(im: Image.Image) -> tuple[Image.Image, int, int]:
             for x in range(w):
                 if mp[x, y] != 128:
                     fp[x, y] = (0, 0, 0, 0)
+        # 縁より下で、体の横の範囲より外にあるもの（帯の消し残しが足につながったもの）も消す（2026-10-28 パーカー）
+        above = mask.point(lambda v: 255 if v == 128 else 0).crop((0, 0, w, top - 4)).getbbox()
+        if above:
+            for y in range(top - 6, h):
+                for x in list(range(0, max(0, above[0] - 12))) + list(range(min(w, above[2] + 12), w)):
+                    fp[x, y] = (0, 0, 0, 0)
     return full, top, bot
+
+
+def body_above(full: Image.Image, top: int) -> tuple[int, int, int, int] | None:
+    """縁の線より上で、体につながった部分の範囲（離れたキラキラ・帯の消し残しは入れない）"""
+    mask = full.getchannel("A").point(lambda v: 255 if v > 40 else 0).crop((0, 0, full.width, top - 4))
+    xs = [x for x in range(full.width) if mask.getpixel((x, top - 10)) == 255]
+    if not xs:
+        return None
+    ImageDraw.floodfill(mask, (xs[len(xs) // 2], top - 10), 128)
+    return mask.point(lambda v: 255 if v == 128 else 0).getbbox()
+
+
+# 腰かける絵の、画面での大きさ（幅 240 の絵の中で、縁の線から頭のてっぺんまでの高さ）。どの衣装・表情・仕草もこの大きさにそろえる
+SIT_HEIGHT = 270
+SIT_TOP_MARGIN = 16  # 頭の上のすき間（伸びをした手など）
+
+
+def sit_ref(src: Path) -> tuple[float, float, dict[str, float]]:
+    """その衣装の腰かける絵の縮め方（倍率）と、体の中心の x。全部の表情の絵のまんなかの値（一枚だけ大きく描かれた絵に引っぱられない）。
+    3つめは表情ごとの倍率：まんなかより 5% を超えて大きく（小さく）描かれた表情だけ、その表情の倍率でそろえる（いつもの服の「ふつう」は 16% 大きく描かれていた）。
+    2026-10-28：表情ごとに絵の範囲で切っていたので、キラキラや帯の消し残しで範囲が広がった表情だけ小さくなり、
+    表情や仕草が変わるたびに大きさと位置が変わった（パーカーで 202〜375。ユーザー）"""
+    hs: dict[str, int] = {}
+    cs = []
+    for n in FACES:
+        p = src / f"sit-{n}.png"
+        if n == "surprised" or not p.exists():
+            continue
+        full, top, _ = ledge_cut(Image.open(p))
+        b = body_above(full, top)
+        if b:
+            hs[n] = top - b[1]
+            cs.append((b[0] + b[2]) / 2)
+    mid = sorted(hs.values())[len(hs) // 2]
+    cs.sort()
+    per = {n: SIT_HEIGHT / h for n, h in hs.items() if abs(h / mid - 1) > 0.05}
+    return SIT_HEIGHT / mid, cs[len(cs) // 2], per
 
 
 def align(b: Image.Image, f: Image.Image, box: tuple[float, float, float, float], reach: int = 24) -> Image.Image:
@@ -195,11 +238,24 @@ def patch(base: Path, frame: Path, box: tuple[float, float, float, float], thres
     return out
 
 
-def sit_group(srcs: list[Image.Image], dsts: list[Path], width: int = 240, below: float = 0.35, union: bool = False) -> None:
+def sit_group(srcs: list[Image.Image], dsts: list[Path], width: int = 240, below: float = 0.35, union: bool = False,
+              ref: tuple[float, float] | None = None) -> None:
     """同じ姿勢のコマを、同じ範囲で切りそろえる（重ねて切り替えても動かない）。
     出力は、縁の線が下から width*below の高さにくるようにそろえる（画面では、その分だけ欄の縁より下にずらして置く）。
-    below は 0.35（2026-10-27：0.25 だと、パジャマのズボンで足先が切れた）"""
+    below は 0.35（2026-10-27：0.25 だと、パジャマのズボンで足先が切れた）。
+    ref（sit_ref の倍率と中心）を渡すと、絵の範囲ではなくその倍率・中心で切る（衣装の中のどの表情・仕草も同じ大きさと位置）"""
     cuts = [ledge_cut(im) for im in srcs]
+    if ref:
+        scale, cx = ref
+        b = round(width * below)
+        for (full, top, _), dst in zip(cuts, dsts):
+            sw = width / scale  # 元の絵での幅
+            x0 = cx - sw / 2
+            y0 = top - (SIT_HEIGHT + SIT_TOP_MARGIN) / scale
+            y1 = top + b / scale
+            o = full.crop((round(x0), round(y0), round(x0 + sw), round(y1)))  # はみ出したところは透明
+            webp(o.resize((width, SIT_HEIGHT + SIT_TOP_MARGIN + b), Image.LANCZOS), dst)
+        return
     top, bot = cuts[0][1], cuts[0][2]
     # 範囲は1枚目（元の絵）で決める。コマの側がはみ出しても元の絵の大きさを変えない。union なら全部が収まる範囲（足先が外へ動くコマ）
     boxes = [bbox(c[0]) for c in (cuts if union else cuts[:1])]
@@ -252,6 +308,7 @@ def main() -> None:
     only_motion = "--sit" in sys.argv  # 腰かける・寝そべる・動きの絵だけ（ふつうの絵・ちびキャラは作り直さない）
     if not only_motion:
         base_set(src, dst)
+    ref = sit_ref(src) if (src / "sit-smile.png").exists() else None
     for n in FACES:
         if not only_motion:
             chibi(src / f"chibi-{n}.png", dst / f"chibi-{n}.webp")
@@ -278,7 +335,7 @@ def main() -> None:
         if (src / f"hop-{n}.png").exists():
             frames.append(Image.open(src / f"hop-{n}.png"))
             dsts.append(dst / f"hop-{n}.webp")
-        sit_group(frames, dsts)
+        sit_group(frames, dsts, ref=(ref[2].get(n, ref[0]), ref[1]) if ref else None)
     if (src / "mid-lie.png").exists():  # 座る→寝そべるの間（選んだ1枚を mid-lie.png にする）
         sit(src / "mid-lie.png", dst / "mid-lie.webp")
     lie = src / "lie-sleepy.png"
