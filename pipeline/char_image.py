@@ -65,8 +65,10 @@ FACES = {
 }
 
 
-def generate(parts: list[dict], path: Path) -> None:
+def generate(parts: list[dict], path: Path) -> int:
+    """絵を1枚作る。返り値は 429 などで断られた回数（時間がどこにかかったかを見るため）"""
     body = {"contents": [{"role": "user", "parts": parts}], "generationConfig": {"responseModalities": ["TEXT", "IMAGE"]}}
+    refused = 0
     for attempt in range(60):
         region = REGIONS[next(_next_region) % len(REGIONS)]
         req = urllib.request.Request(url(region), data=json.dumps(body).encode(),
@@ -79,7 +81,9 @@ def generate(parts: list[dict], path: Path) -> None:
             time.sleep(2)  # 絵のない応答がまれに返る。作り直す
         except urllib.error.HTTPError as e:
             if e.code in (429, 500, 503) and attempt < 59:
-                # 混んでいたら次の地域へ。地域をひと回りしたら少し待つ
+                refused += 1
+                # 混んでいたら次の地域へ。地域をひと回りしたら少し待つ。
+                # 2026-10-28：どの地域も同時に 429 を返すことが多い（地域ごとではなく、プロジェクト全体の制限）。そのときは待つしかない
                 time.sleep(2 if (attempt + 1) % len(REGIONS) else min(180, 20 * (attempt // len(REGIONS) + 1)) + random.uniform(0, 5))
                 continue
             raise
@@ -88,7 +92,7 @@ def generate(parts: list[dict], path: Path) -> None:
     for p in res["candidates"][0]["content"]["parts"]:
         if "inlineData" in p:
             path.write_bytes(base64.b64decode(p["inlineData"]["data"]))
-            return
+            return refused
     raise RuntimeError(f"絵が返ってこなかった：{res['candidates'][0].get('finishReason')}")
 
 
@@ -288,12 +292,16 @@ def run_all(jobs: list[tuple[list[dict], Path]]) -> None:
     todo = [(parts, out) for parts, out in jobs if not out.exists()]
 
     def one(job: tuple[list[dict], Path]) -> str:
-        generate(*job)
-        return job[1].name
+        t = time.time()
+        refused = generate(*job)
+        return f"{job[1].name}  {time.time() - t:.0f}秒" + (f"（断られた {refused} 回）" if refused else "")
 
+    start = time.time()
     with ThreadPoolExecutor(WORKERS) as ex:
-        for name in ex.map(one, todo):
-            print(f"  {name}", flush=True)
+        for line in ex.map(one, todo):
+            print(f"  {line}", flush=True)
+    if todo:
+        print(f"  → {len(todo)} 枚 {time.time() - start:.0f}秒", flush=True)
 
 
 def _img(path: Path) -> dict:
@@ -340,9 +348,13 @@ def outfit(g: Path) -> str:
 LEDGE = ("Draw the SAME chibi character as in the reference image (same 2-heads-tall chibi style, same face, same hairstyle, same outfit and colors, "
          "same art style; leave out handheld props unless stated). There is a flat horizontal ledge across the full width at the bottom of the image: "
          "a thin dark top line with a plain light grey band below it. Plain white background above the ledge, no text. The whole outfit must be clearly visible. ")
-SIT_FIRST = "She SITS on the edge of the ledge with both legs dangling down in front of the grey band, hands on the ledge beside her, gentle closed-mouth smile. "
+# 手足の数（2026-10-28：パーカーで、寝そべる絵と寝転びかけの絵の足が3本に描かれた。足を描き直させる指示で、元の足を残したまま新しい足を足しやすい）。
+# 全身の絵の指示にはすべて付ける
+LIMBS = (" ANATOMY CHECK: she has exactly TWO legs and TWO arms in total – count them. Never draw a third leg, a third arm, or duplicated feet "
+         "or hands. When legs or arms are moved, the old ones are REPLACED, not kept. ")
+SIT_FIRST = "She SITS on the edge of the ledge with both legs dangling down in front of the grey band, hands on the ledge beside her, gentle closed-mouth smile. " + LIMBS
 LIE_FIRST = ("She LIES on her stomach on top of the ledge, reading a small plain book (no letters) propped in front of her, legs bent up behind her and "
-             "crossed at the ankles, relaxed sleepy face with closed eyes; her whole body is above the ledge line. ")
+             "crossed at the ankles, relaxed sleepy face with closed eyes; her whole body is above the ledge line. " + LIMBS)
 
 
 def sit_set(name: str) -> None:
@@ -350,7 +362,7 @@ def sit_set(name: str) -> None:
     pose, lie = g / "sit-smile.png", g / "lie-sleepy.png"
     run_all([([_img(g / "chibi-smile.png"), {"text": LEDGE + SIT_FIRST + outfit(g) + COMMON}], pose),
              ([_img(g / "chibi-smile.png"), {"text": LEDGE + LIE_FIRST + outfit(g) + COMMON}], lie)])
-    run_all([([_img(pose), _img(g / f"chibi-{f}.png"), {"text": SIT + t + "." + outfit(g) + "No text. " + COMMON}], g / f"sit-{f}.png")
+    run_all([([_img(pose), _img(g / f"chibi-{f}.png"), {"text": SIT + t + "." + LIMBS + outfit(g) + "No text. " + COMMON}], g / f"sit-{f}.png")
              for f, t in THEME_FACES.items() if f != "surprised"])
 
 
@@ -365,7 +377,8 @@ HOP = ("Image 1 shows the character sitting on the edge of a ledge. Draw the SAM
 # 2026-10-27：最初の指示では、座る絵より小さく（頭が75%ほど）描いた。大きさを強く指示した
 MID = ("Image 1 shows the character sitting on the edge of a ledge, image 2 shows the same character lying on her stomach on top of the ledge reading. "
        "Draw the in-between moment: she is leaning forward and lowering herself onto the ledge, both hands and knees on top of the ledge, "
-       "about to lie down, holding the small book in one hand. Same chibi style, face, hair, outfit, colors and size, the same ledge, plain white background. ")
+       "about to lie down, holding the small book in one hand. Same chibi style, face, hair, outfit, colors and size, the same ledge, plain white background. "
+       "Do not keep the dangling legs of image 1: both legs are now kneeling on the ledge. ")  # 2026-10-28 座った足を残したまま膝の足を足した（足3本）
 
 
 KICK = ("Redraw the reference image EXACTLY (same pose, same size and position, same face, hair, outfit, colors, book and ledge), "
@@ -385,12 +398,12 @@ SWINGS = {1: "both lower legs swung forward and up, knees bent, the soles of the
 
 def motion_set(name: str) -> None:
     g = OUT / "themes" / name
-    jobs = [([_img(g / "lie-sleepy.png"), {"text": KICK + t + ". Everything else must stay identical." + outfit(g) + "No text. " + COMMON}],
+    jobs = [([_img(g / "lie-sleepy.png"), {"text": KICK + t + ". Everything else must stay identical." + LIMBS + outfit(g) + "No text. " + COMMON}],
              g / f"lie-kick-{k}.png") for k, t in KICKS.items()]
     jobs += [([_img(g / f"sit-{f}.png"), {"text": BLINK + outfit(g) + "No text. " + COMMON}], g / f"blink-{f}.png") for f in BLINK_FACES]
-    jobs += [([_img(g / f"sit-{f}.png"), {"text": SWING + t + ". Everything else must stay identical." + outfit(g) + "No text. " + COMMON}],
+    jobs += [([_img(g / f"sit-{f}.png"), {"text": SWING + t + ". Everything else must stay identical." + LIMBS + outfit(g) + "No text. " + COMMON}],
               g / f"swing-{f}-{k}.png") for f in SWING_FACES for k, t in SWINGS.items()]
-    jobs += [([_img(g / "sit-smile.png"), _img(g / "lie-sleepy.png"), {"text": MID + outfit(g) + "No text. " + COMMON}], g / f"mid-lie-{k}.png")
+    jobs += [([_img(g / "sit-smile.png"), _img(g / "lie-sleepy.png"), {"text": MID + LIMBS + outfit(g) + "No text. " + COMMON}], g / f"mid-lie-{k}.png")
              for k in (1, 2)]
     if "--hop" in sys.argv:  # 跳ねたところの絵は大きさがそろわず使っていない（2026-10-27）
         jobs += [([_img(g / f"sit-{f}.png"), {"text": HOP + THEME_FACES[f] + ". No text. " + COMMON}], g / f"hop-{f}.png") for f in ("happy", "smug")]
@@ -399,7 +412,7 @@ def motion_set(name: str) -> None:
 
 # 仕草・口パク・拍手など（T065：「もっと動いてほしい」ユーザー）。どれも元の絵の一部だけを描き直したコマ
 KEEP = (" Everything else must stay identical: same pose of the legs, same size and position, same face shape, hair, outfit, colors and ledge. "
-        "No text. ")
+        "No text. " + LIMBS)
 GESTURES = {  # 腰かける絵（にっこり）から。待っている間にときどき出す
     "yawn": "a big yawn: mouth wide open, eyes closed, one hand covering her mouth",
     "stretch": "stretching both arms straight up above her head, eyes closed, relaxed and comfortable",

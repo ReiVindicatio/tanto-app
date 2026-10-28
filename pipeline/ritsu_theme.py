@@ -3,6 +3,7 @@
   python3 pipeline/ritsu_theme.py looks [ID ...]   # 見本4案・お披露目の一枚絵2案（audio/samples_char/g8/<ID>/）。省くと全部
   python3 pipeline/ritsu_theme.py build ID         # 選んだ見本（設計の pick）から、絵ひとそろい → 切り抜き → セリフと声 → アプリの衣装の表へ
   python3 pipeline/ritsu_theme.py bg               # 設計にある背景のうち、まだないもの
+  python3 pipeline/ritsu_theme.py sheet ID         # 人が確かめる絵を 1 枚に並べる（/tmp/ritsu-<ID>.png。build の最後にも作る）
 
 - 選ぶ（pick）のは人か Claude が絵を見て決める。設計の pick に {"look": N, "reveal": M, "mid": K} を書く
 - 口パクの絵で口がほとんど変わらなかったものは、作り直す（2回まで）
@@ -101,9 +102,10 @@ def build(cid: str) -> None:
     if mid.exists():
         shutil.copy(mid, g / "mid-lie.png")
     cut(cid)
-    # 口パクの絵で、口がほとんど変わらなかったもの（600点未満）は作り直す
+    # 口パクの絵で、口がほとんど変わらなかったもの（600点未満）は作り直す。
+    # 腰かける絵（sit-）は絵が小さく、どの衣装でも 600 点に届かず作り直しても変わらないので対象にしない（2026-10-28）
     for _ in range(2):
-        weak = [n for n, v in talk_strength(cid).items() if v < 600]
+        weak = [n for n, v in talk_strength(cid).items() if v < 600 and n.startswith("base-")]
         if not weak:
             break
         print(f"  口パクを作り直す：{weak}", flush=True)
@@ -114,7 +116,28 @@ def build(cid: str) -> None:
         cut(cid)
     add_lines(c)
     register(c)
+    sheet(cid)
     print(f"✅ {cid}", flush=True)
+
+
+def sheet(cid: str) -> None:
+    """人が確かめる絵（見本・お披露目・腰かける・寝そべる・寝転びかけ・足を動かす絵）を 1 枚に並べる（/tmp/ritsu-<ID>.png）。
+    足が3本・寝そべる向き・髪型・足先の切れを見る"""
+    names = ["base-smile", "reveal", "gesture-signature", "chibi-smile", "sit-smile", "sit-normal", "sit-happy", "sit-jito",
+             "lie-sleepy", "lie-kick-1", "lie-kick-2", "mid-lie", "sit-normal-swing-1", "sit-normal-swing-2", "sit-smile-swing-1", "sit-smile-swing-2"]
+    code = ("import sys;from PIL import Image,ImageDraw,ImageFont\n"
+            "D,out=sys.argv[1],sys.argv[2];names=sys.argv[3:];W=360;cols=4;rows=(len(names)+cols-1)//cols\n"
+            "F=ImageFont.truetype('/System/Library/Fonts/ヒラギノ角ゴシック W3.ttc',18)\n"
+            "s=Image.new('RGB',(W*cols,(W+26)*rows),(170,190,210));d=ImageDraw.Draw(s)\n"
+            "for i,n in enumerate(names):\n"
+            "  x,y=i%cols*W,i//cols*(W+26);d.text((x+6,y+4),n,fill=(0,0,0),font=F)\n"
+            "  try: im=Image.open(f'{D}/{n}.webp').convert('RGBA')\n"
+            "  except FileNotFoundError: continue\n"
+            "  im.thumbnail((W-8,W-8));s.paste(im,(x+4,y+26),im);d.rectangle([x+4,y+26,x+4+im.width,y+26+im.height],outline=(255,0,0))\n"
+            "s.save(out)")
+    out = f"/tmp/ritsu-{cid}.png"
+    subprocess.run([CHAR_PY, "-c", code, str(ROOT / "app" / "public" / "chars" / "ritsu" / cid), out, *names], check=True)
+    print(f"  確かめる絵：{out}", flush=True)
 
 
 def add_lines(c: dict) -> None:
@@ -151,6 +174,8 @@ def main() -> None:
         build(sys.argv[2])
     elif what == "bg":
         backgrounds()
+    elif what == "sheet":
+        sheet(sys.argv[2])
 
 
 if __name__ == "__main__":
