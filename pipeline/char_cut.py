@@ -238,11 +238,11 @@ def patch(base: Path, frame: Path, box: tuple[float, float, float, float], thres
     return out
 
 
-def sit_group(srcs: list[Image.Image], dsts: list[Path], width: int = 240, below: float = 0.35, union: bool = False,
+def sit_group(srcs: list[Image.Image], dsts: list[Path], width: int = 240, below: float = 0.40, union: bool = False,
               ref: tuple[float, float] | None = None) -> None:
     """同じ姿勢のコマを、同じ範囲で切りそろえる（重ねて切り替えても動かない）。
     出力は、縁の線が下から width*below の高さにくるようにそろえる（画面では、その分だけ欄の縁より下にずらして置く）。
-    below は 0.35（2026-10-27：0.25 だと、パジャマのズボンで足先が切れた）。
+    below は 0.40（2026-10-27：0.25 だと、パジャマのズボンで足先が切れた。0.35 でも、パジャマの足をぶらぶらさせるコマで切れた）。
     ref（sit_ref の倍率と中心）を渡すと、絵の範囲ではなくその倍率・中心で切る（衣装の中のどの表情・仕草も同じ大きさと位置）"""
     cuts = [ledge_cut(im) for im in srcs]
     if ref:
@@ -272,12 +272,23 @@ def sit_group(srcs: list[Image.Image], dsts: list[Path], width: int = 240, below
         webp(canvas, dst)
 
 
-def sit(src: Path, dst: Path, width: int = 240, below: float = 0.35) -> None:
+def sit(src: Path, dst: Path, width: int = 240, below: float = 0.40) -> None:
     sit_group([Image.open(src)], [dst], width, below)
 
 
 BLINK_BOX = (0.25, 0.33, 0.75, 0.52)  # 腰かける絵の目のあたり（幅・高さに対する割合）
-SWING_BOX = (0.25, 0.70, 0.75, 1.0)  # 腰かける絵のぶら下げた足のあたり
+SWING_BOX = (0.25, 0.70, 0.75, 1.0)  # 腰かける絵のぶら下げた足のあたり（今は swing_box で絵ごとに決める）
+
+
+def swing_box(sit_png: Path) -> tuple[float, float, float, float]:
+    """足を振ったコマを貼る範囲：縁の線の少し上から下まで、横は体の幅に左右 15% ずつ足す。
+    2026-10-28：決まった範囲（高さの 70% より下・幅のまんなか半分）だと、縁が高い絵（パジャマ）で膝から上が、
+    前へ振った足先が範囲の外に出て貼られず、足が欠けて見えた（ユーザー）"""
+    im = Image.open(sit_png)
+    w, h = im.size
+    full, top, _ = ledge_cut(im)
+    b = body_above(full, top) or (int(0.25 * w), 0, int(0.75 * w), top)
+    return (max(0.0, b[0] / w - 0.15), (top - 12) / h, min(1.0, b[2] / w + 0.15), 1.0)
 MOUTH_SIT = (0.38, 0.43, 0.62, 0.60)  # 腰かける絵の口のあたり
 MOUTH_BASE = (0.37, 0.28, 0.63, 0.44)  # 立ち絵の口のあたり
 GESTURE_BOX = (0.0, 0.0, 1.0, 0.78)  # 仕草：座る線より上（足は元の絵のまま）
@@ -323,7 +334,7 @@ def main() -> None:
             dsts.append(dst / f"sit-{n}-blink.webp")
         for k in (1, 2):  # 足のバタバタ（足を振ったコマ）
             if (src / f"swing-{n}-{k}.png").exists():
-                frames.append(patch(s, src / f"swing-{n}-{k}.png", SWING_BOX))
+                frames.append(patch(s, src / f"swing-{n}-{k}.png", swing_box(s)))
                 dsts.append(dst / f"sit-{n}-swing-{k}.webp")
         if (src / f"talk-sit-{n}.png").exists():  # 口パク
             frames.append(patch(s, src / f"talk-sit-{n}.png", MOUTH_SIT, aligned=True))

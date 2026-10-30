@@ -1744,11 +1744,11 @@ mark.twin-diff {
   height: 0;
   pointer-events: none;
 }
-/* 腰かける絵は、縁の線が絵の下から「幅の 35%」の高さにある（pipeline/char_cut.py の sit）。その分だけ下にずらして縁に座らせる */
+/* 腰かける絵は、縁の線が絵の下から「幅の 40%」の高さにある（pipeline/char_cut.py の sit）。その分だけ下にずらして縁に座らせる */
 .dock-ritsu {
   position: absolute;
   right: 0;
-  bottom: -35px;
+  bottom: -40px;
   width: 100px;
   height: auto;
   user-select: none;
@@ -1811,7 +1811,7 @@ mark.twin-diff {
 .dock-peek-button .dock-ritsu {
   position: static;
   display: block;
-  margin-bottom: -35px;
+  margin-bottom: -40px;
 }
 /* 聞いている間・肢で解くの答える前：○×の欄の縁 */
 .listen-dock,
@@ -1869,7 +1869,7 @@ body:has(.home-dock) .footer {
 .perch-chibi {
   position: absolute;
   left: 10px;
-  bottom: calc(100% - 35px);
+  bottom: calc(100% - 40px);
   width: 100px;
   height: auto;
   pointer-events: none;
@@ -2152,7 +2152,7 @@ body:has(.home-dock) .footer {
 }
 /* まばたき：4.5秒ごとに一瞬だけ目を閉じる。足の動きと重ならないよう、座る線より上だけ */
 .perch.sit .perch-frame.blink {
-  clip-path: inset(0 0 calc(var(--w) * 0.33) 0);
+  clip-path: inset(0 0 calc(var(--w) * 0.38) 0);
   animation: ritsu-blink 4.5s steps(1) infinite;
 }
 @keyframes ritsu-blink {
