@@ -2,14 +2,14 @@
 
 > **このファイルは毎回上書きする。**作業のリストは `tickets/README.md`（ボード）、機能の一覧は `docs/features.md`、履歴は git と `docs/decisions/`。
 
-**更新：2026-10-28（昼）**
+**更新：2026-10-30**
 
 ## 現在地
 
 - M1（基盤）完了。M2（拡充）を進行中
 - 公開先：https://tantan.reivindicatio0321.workers.dev/（main に push すると自動で更新）。リポジトリは public
 - データ：予備（7科目×16年度）・司法（H23〜R08）の短答。カード合計 9,759枚（名寄せ後）。解説のある肢カード 11,612（民法の2019年以前も含む）・問の解説 367問
-- **2026-10-27：キャラクター「律」（T063 完了・T064 完了・T065 実装中）**。律は画面の下の欄の縁に腰かけ、聞き流し・肢で解く・問で解く・模試・ホーム・科目・マイページに出る。律のページ（`/ritsu`：衣装・表情・背景・セリフ帳・アルバム）、お披露目の画面、セリフ（`app/src/ritsu/lines.json`）と声（`app/public/voices/ritsu/`）、動き（足・まばたき・仕草・こっくり・口パクは声の大きさに合わせる・感情の記号）。経験値の式を変えた（初めての肢は正解2・不正解1、期限が来た復習は正解3・不正解1、解き直しは0）。マイページを「記録」「設定」に分けた。衣装は いつもの・ひだまりニット・ほしぞらパジャマ・ゆるふわパーカー・図書館の日 の5着ができている（2026-10-28 にパーカーと図書館を push 済み）
+- **2026-10-27：キャラクター「律」（T063 完了・T064 完了・T065 実装中）**。律は画面の下の欄の縁に腰かけ、聞き流し・肢で解く・問で解く・模試・ホーム・科目・マイページに出る。律のページ（`/ritsu`：衣装・表情・背景・セリフ帳・アルバム）、お披露目の画面、セリフ（`app/src/ritsu/lines.json`）と声（`app/public/voices/ritsu/`）、動き（足・まばたき・仕草・こっくり・口パクは声の大きさに合わせる・感情の記号）。経験値の式を変えた（初めての肢は正解2・不正解1、期限が来た復習は正解3・不正解1、解き直しは0）。マイページを「記録」「設定」に分けた。衣装は いつもの・ひだまりニット・ほしぞらパジャマ・ゆるふわパーカー・図書館の日・模試の朝（ブレザー） の6着ができている（2026-10-28〜30 にパーカー・図書館・ブレザーを push 済み）
 - 2026-10-26〜27 に済ませたこと（push 済み）
   - T061 聞き流しのアニメ風の声：既定の声1は Gemini の音声合成（Agent Platform の `gemini-3.8-flash-tts`・Leda・舌足らずの指示。キーは `.secrets/google-vertex-key`）、声2は今までの Chirp。各 17,246本を R2 に（声1は安全フィルターなどで作れない17本が声2で流れる）。科目の画面・年度の行（🎧）からも聞き流せる。「AI 音声」の表示は消した（ユーザー）
   - T013 民法の2019年以前の解説：現行の条文で書き、説明できない肢 270 は law_changed（解説なし・肢カードから外し、問の画面に「正誤が変わっている可能性」）。解説 1,497 肢。指示 explain-v5、📖 決定024・025。聞き流しの答えの音声も作り直した
@@ -30,9 +30,9 @@
 
 ## 次の一手（提案）
 
-0. **T065 の続き：残り11着の衣装を作る**（2026-10-28 昼、パーカー・図書館の2着を作って push したところで、ユーザーが「いったん次の生成はしない」と止めた）
-   - 設計（11着ぶん）：`pipeline/ritsu_costumes.json`。選んだ見本（pick）も書いてある。選んだ見本と一枚絵の絵は `pipeline/ritsu_picks/`（`audio/samples_char/` は git に入らないので、別の端末ではこちらを使う。選ばなかった案は元の端末の `audio/samples_char/g8/` だけ）
-   - 1着ずつ：`CHAR_PY=<Pillow のある python> python3 pipeline/ritsu_theme.py build <ID>`（絵ひとそろい約60枚 → 切り抜き → 弱い口パクの作り直し（ふつうの絵だけ） → セリフと声 → `app/src/ritsu/costumes.json` に追加 → 確認用の一覧画像 `/tmp/ritsu-<ID>.png`）。残りの順番は blazer spring rain summer jersey yukata autumn winter halloween christmas exam
+0. **T065 の続き：残り10着の衣装を作る**（2026-10-30、ブレザーを作って push した。ユーザーは「1着ずつ、頼まれたら次へ」）
+   - 設計（10着ぶん）：`pipeline/ritsu_costumes.json`。選んだ見本（pick）も書いてある。選んだ見本と一枚絵の絵は `pipeline/ritsu_picks/`（`audio/samples_char/` は git に入らないので、別の端末ではこちらを使う。選ばなかった案は元の端末の `audio/samples_char/g8/` だけ）
+   - 1着ずつ：`CHAR_PY=<Pillow のある python> python3 pipeline/ritsu_theme.py build <ID>`（絵ひとそろい約60枚 → 切り抜き → 弱い口パクの作り直し（ふつうの絵だけ） → セリフと声 → `app/src/ritsu/costumes.json` に追加 → 確認用の一覧画像 `/tmp/ritsu-<ID>.png`）。残りの順番は spring rain summer jersey yukata autumn winter halloween christmas exam
      - Pillow：`python3 -m venv /tmp/ritsu-venv && /tmp/ritsu-venv/bin/pip install pillow`（この端末では /tmp/ritsu-venv に作った。/tmp なので再起動で消える）。cwebp（`brew install webp`）と ffmpeg も要る。キーは `.secrets/google-vertex-key`（git に入っていないので、別の端末には手で置く）
      - 作ったら一覧画像をユーザーに見てもらう：足が3本になっていないか（パーカーで寝そべる絵・寝転びかけの絵に出た）、寝そべる絵の向き（足が右）、足先が切れていないか、髪型・服が見本と同じか、寝転びかけの絵（pick の mid）、寝そべって足を動かす2枚（lie-kick）で足がちゃんと動いているか（図書館は動きが小さいまま採用）
      - だめな絵は消さずに `audio/samples_char/themes/<ID>/rejected-N/` へ動かし、その絵だけ作り直す（`char_image.sit_set`／`motion_set` は、ない絵だけを作る）。寝そべる絵を作り直したら、それを元にした lie-kick・mid-lie も作り直す
