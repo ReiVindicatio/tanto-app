@@ -1,0 +1,120 @@
+{
+  "_": "律の特別な衣装の骨子（docs/ritsu-special-costumes.md）。pipeline/ritsu_theme.py looks --special が読む。outfit・look・scene・moves は画像と動画の指示（英語）。pick は選んだ見本の番号",
+  "costumes": [
+    {
+      "id": "hoshiyomi", "name": "星詠みの裁定者", "unlock": "paid", "motif": "天秤と星",
+      "desc": "夜空のふちで、星の重さを量る見習い。天秤の片方に願いを、もう片方に積み重ねた時間を。律がいちばん背のびをした姿",
+      "voice_style": "A little theatrical and calm, like a young storyteller reciting under the stars, soft but clear; shy moments slip through.",
+      "outfit": "Her 'Hoshiyomi' outfit: a long midnight-navy cape with a star-map pattern and a gold clasp shaped like a small star, a white and pale-gold high-collared dress with a long layered skirt, gold star-shaped earrings, long white gloves. Her hair is let down very long and flowing (NOT twin tails), with a thin gold crescent-and-star circlet.",
+      "look": "She holds a delicate fantasy brass scale in one hand (an imaginary ornate scale with small glowing stars on its pans, not any real institution's emblem), the cape spreading behind her, small stars floating around her.",
+      "signature": "lifting the small star scale and gently blowing a floating star onto one of its pans, eyes half closed",
+      "story": ["An ordinary evening: wearing her usual clothes, she finds a fallen glowing star on her open law book at her desk by the window.", "On a high tower under a huge starry sky, wearing the midnight cape and white-gold dress, she holds up a fantasy scale with glowing stars on its pans, her long hair and cape flowing in the wind, looking at the viewer with a calm confident smile.", "After it ends: back in her room at dawn, still in the cape but yawning, the small star resting on her mug of cocoa."],
+      "scene": "On a high tower under a huge starry sky, she holds up a fantasy scale with glowing stars on its pans, her long hair and midnight cape flowing in the wind, looking at the viewer with a calm confident smile. Countless stars, a crescent moon, soft gold light around the scale.",
+      "bg": "tower",
+      "moves": {
+        "entrance": "Falling stars gather and swirl around her, the cape unfurls and spreads wide in the wind, she slowly opens her eyes and raises the star scale, gold light; camera slowly pushes in. Her face and outfit stay exactly the same.",
+        "finish": "She raises the star scale overhead, the pans level out and a burst of small gold stars rises around her, her hair and cape billow, she smiles confidently at the viewer.",
+        "small": "She tilts the scale and one star hops from pan to pan, then she gives a small proud nod."
+      },
+      "screen": { "particle": "ゆっくり落ちる金の星", "bubble": "夜空色の枠に金の細い線", "correct": "天秤が水平になって星が1つ光る" },
+      "reveal": [["……この姿を見せるのは、はじめて", "smile"], ["星の重さを量るの。願いと、積み重ねた時間と", "think"], ["どっちも、ちゃんと釣り合ってるよ", "smug"], ["……って言ってみたかったの。えへへ", "happy"], ["今夜も、一緒に星を集めよう", "smile"]]
+    },
+    {
+      "id": "hakama", "name": "合格の袴", "unlock": "paid", "motif": "桜と袴",
+      "desc": "いつか来る春の日の、未来の律。桜の下で袴を着て、振り返って笑う。ここまで来たよ、と言うための服",
+      "voice_style": "Warm and a little teary with joy, gentle and grown-up, speaking slowly.",
+      "outfit": "Her 'Graduation Hakama' outfit: a soft pink kimono with a cherry-blossom pattern, a deep navy-purple hakama skirt with a gold embroidered hem, a large white ribbon in her hair, brown lace-up boots. Her hair is half-up with long waves (NOT twin tails), with small cherry-blossom hair ornaments.",
+      "look": "She holds a rolled graduation certificate tube (plain, no letters) and a small bouquet of cherry blossoms, petals floating around her.",
+      "signature": "holding the rolled certificate to her chest and wiping a happy tear with her sleeve",
+      "story": ["The morning of a long-awaited spring day: she ties the large white ribbon in front of a mirror, nervous.", "Under a storm of cherry blossoms, in her pink kimono and navy hakama, she turns back toward the viewer holding the certificate tube high, with a radiant happy smile and a small tear.", "Afterwards: she sits on a bench under the trees with her boots off, petals in her hair, a thermos of cocoa beside her."],
+      "scene": "Under a storm of cherry blossoms, in her pink kimono and navy hakama, she turns back toward the viewer holding a plain certificate tube high, with a radiant happy smile and a small tear of joy.",
+      "bg": "sakura",
+      "moves": {
+        "entrance": "A storm of cherry petals sweeps across, she turns around toward the viewer, her ribbon and long sleeves fluttering, and smiles radiantly, slow camera push in. Her face and outfit stay exactly the same.",
+        "finish": "She raises the certificate tube high and laughs with joy as cherry petals burst around her.",
+        "small": "She gives a small bow, her ribbon bouncing, then smiles."
+      },
+      "screen": { "particle": "舞う桜の花びら", "bubble": "桜色の枠", "correct": "花びらがひとひら舞う" },
+      "reveal": [["見て。……ちょっと、未来の服", "smile"], ["いつかの春に、着る約束の服なの", "normal"], ["ここまで来たよ、って言うためのね", "happy"], ["泣いてないよ。花びらが目に入っただけ", "sad"], ["その日まで、一緒に行こうね", "smile"]]
+    },
+    {
+      "id": "diva", "name": "舞台の歌姫", "unlock": "paid", "motif": "光のリボンと照明",
+      "desc": "一夜だけの舞台。ライトを浴びて、光のリボンをまとう律。いつもは眠そうな子の、とっておきの姿",
+      "voice_style": "Bright, sparkling and confident like a stage performer, with shy pauses between lines.",
+      "outfit": "Her 'Stage Diva' outfit: a white and iridescent pastel stage dress with a layered tulle skirt and long translucent ribbons of light flowing from her waist and wrists, silver heeled boots, a small silver headset microphone. Her hair is in high twin tails with long iridescent ribbons (high, not low), with small crystal hair ornaments.",
+      "look": "She holds out one hand to the audience, translucent ribbons of light flowing around her, soft stage light.",
+      "signature": "doing a little spin with the light ribbons trailing around her, then a playful finger point at the viewer",
+      "story": ["Backstage: in the dark wings, she takes a deep breath with her eyes closed, holding her small law book for luck.", "On a big dark stage under colorful spotlights, in her iridescent dress with ribbons of light flowing around her, she reaches a hand out to the audience with a brilliant smile, sea of glowing lights below.", "After the show: sitting on the edge of the empty stage, shoes off, drinking cocoa, smiling tiredly."],
+      "scene": "On a big dark stage under colorful spotlights, in her iridescent dress with ribbons of light flowing around her, she reaches a hand out toward the viewer with a brilliant smile, a sea of glowing lights below.",
+      "bg": "stage",
+      "moves": {
+        "entrance": "The stage lights snap on one by one, ribbons of light swirl up around her, she spins once and strikes a pose reaching toward the viewer with a brilliant smile. Her face and outfit stay exactly the same.",
+        "finish": "She spins with the ribbons of light trailing, spotlights sweep across, she ends with a wink and a raised hand.",
+        "small": "She gives a little hop and a peace sign, the ribbons fluttering."
+      },
+      "screen": { "particle": "ゆれる光の粒", "bubble": "虹色にうすく光る枠", "correct": "スポットライトが一瞬あたる" },
+      "reveal": [["今夜だけ、舞台に立つの", "smile"], ["……ちょっと、緊張してる", "sad"], ["光のリボン、きれいでしょ", "happy"], ["客席の一番前で、見ててね", "smug"], ["いつもの眠そうな律とは、ひみつだよ", "smile"]]
+    },
+    {
+      "id": "nocturne", "name": "夜想の司書", "unlock": "paid", "motif": "浮かぶ本と銀の鍵",
+      "desc": "真夜中だけ開く大図書館の主。黒いドレスで、ひとりでに開く本たちを読み聞かせる。少しこわくて、やさしい夜",
+      "voice_style": "Quiet, low and mysterious like reading a bedtime story in a silent library, slow and velvety, still gentle.",
+      "outfit": "Her 'Nocturne Librarian' outfit: an elegant modest high-necked black gothic dress with long sleeves, silver embroidery and a layered lace skirt, a deep violet short cape, a silver key on a long chain necklace, black lace gloves. Her hair is in a long single low braid with a black ribbon (NOT twin tails), with a small silver moon hair ornament.",
+      "look": "Several old books with plain covers (no letters) float around her, pages turning by themselves; she holds a silver key.",
+      "signature": "turning a floating book's page with one finger without touching it, a small mysterious smile",
+      "story": ["At midnight, in her pajamas, she follows a floating book down a dark corridor to a huge door and finds a silver key in her hand.", "In a vast dark library with endless shelves, in her black gothic dress, she stands in a circle of floating books with pages turning by themselves, holding up a silver key, looking at the viewer with a small mysterious smile. Pale moonlight from a great round window.", "At dawn: asleep at the big desk with her cheek on an open book, the black cape over her shoulders, books resting in neat stacks around her."],
+      "scene": "In a vast dark library with endless shelves, in her black gothic dress, she stands in a circle of floating books with pages turning by themselves, holding up a silver key, looking at the viewer with a small mysterious smile. Pale moonlight from a great round window.",
+      "bg": "nightlib",
+      "moves": {
+        "entrance": "Candles light one by one in the dark, books rise and circle around her with pages fluttering, she slowly raises the silver key and looks at the viewer. Her face and outfit stay exactly the same.",
+        "finish": "All the floating books snap shut at once and settle in a circle, moonlight brightens, she smiles quietly.",
+        "small": "One floating book opens beside her, she glances at it and nods."
+      },
+      "screen": { "particle": "ただよう銀のほこり", "bubble": "黒に銀の細い線", "correct": "本が1冊ぱたんと閉じる" },
+      "reveal": [["……ようこそ。ここは真夜中だけの図書館", "normal"], ["本たちは、読まれるのを待ってるの", "think"], ["この鍵？……ひみつ", "smug"], ["こわくないよ。……たぶん", "jito"], ["今夜は、どの本から開く？", "smile"]]
+    },
+    {
+      "id": "miko", "name": "春告げの巫女", "unlock": "paid", "motif": "鈴と梅の花",
+      "desc": "年のはじめの神社で、鈴を鳴らして春を呼ぶ。合格を願う人たちを、遠くからそっと応援している",
+      "voice_style": "Pure, serene and soft like a shrine maiden, a clear gentle tone with small playful moments.",
+      "outfit": "Her 'Spring-Calling Shrine Maiden' outfit: a white kimono top with long sleeves and a vivid red hakama skirt, a sheer white over-robe with a plum-blossom pattern and gold trim, white tabi socks and sandals. Her hair is in one long low ponytail tied with red and white paper cords (NOT twin tails), with a small gold plum-blossom hair ornament.",
+      "look": "She holds a kagura ceremonial bell staff with small gold bells and long colorful ribbons.",
+      "signature": "shaking the bell staff gently so the bells ring, with her eyes closed and a peaceful smile",
+      "story": ["Before dawn at a quiet shrine, she sweeps the stone path, breath white, the first plum buds opening.", "On a shrine stage at sunrise, in her white and red robes, she raises the bell staff with its ribbons flowing, plum petals and golden light around her, smiling gently at the viewer.", "Later: sitting on the shrine steps, eating a sweet rice cake, the bell staff leaning beside her."],
+      "scene": "On a shrine stage at sunrise, in her white and red robes, she raises a bell staff with its ribbons flowing, plum petals and golden light around her, smiling gently at the viewer. No text on any sign or plaque.",
+      "bg": "shrine",
+      "moves": {
+        "entrance": "Golden morning light spreads, she raises the bell staff and shakes it once, the ribbons and sheer sleeves flow, plum petals rise around her, she smiles gently. Her face and outfit stay exactly the same.",
+        "finish": "She turns in a slow dance with the bell staff, ribbons spiraling and petals rising, ending in a calm graceful pose.",
+        "small": "She shakes the bell staff once and bows slightly."
+      },
+      "screen": { "particle": "舞う梅の花びら", "bubble": "白に朱の細い線", "correct": "鈴がひとつ光って揺れる" },
+      "reveal": [["あけまして……あ、もう春だった？", "surprised"], ["鈴を鳴らして、春を呼ぶの", "smile"], ["がんばってる人のところに、届くように", "normal"], ["おみくじ？ ……大吉にしといたよ", "smug"], ["今年も、そばにいるね", "smile"]]
+    },
+    {
+      "id": "yukihana", "name": "雪花の姫君", "unlock": "paid", "motif": "氷の結晶",
+      "desc": "冬の城の、雪の結晶でできたドレス。ひとりで長い冬を越えた人にだけ見せる、静かできれいな姿",
+      "voice_style": "Cool, elegant and quiet like falling snow, a little distant at first but warm underneath.",
+      "outfit": "Her 'Snow Crystal Princess' outfit: a pale ice-blue long ball gown with a modest high neckline and long sheer sleeves, layered with crystal snowflake patterns, a sheer silver-white long train, a small ice-crystal tiara, silver shoes. Her hair is up in an elegant braided crown with long loose strands (NOT twin tails).",
+      "look": "Ice crystals and snowflakes float around her, she holds out one hand with a glowing snowflake above her palm.",
+      "signature": "blowing softly on a glowing snowflake above her palm so it spins and sparkles",
+      "story": ["On a long winter night at her desk, she falls asleep; frost slowly draws a crystal pattern on the window.", "In a grand ice palace hall with tall frosted windows, in her ice-blue gown with a long sheer train, she holds a glowing snowflake above her palm, snow falling softly around her, looking at the viewer with a quiet elegant smile.", "Morning: she wakes up at her desk in the gown, confused, snow melting on her notebook, sunlight outside."],
+      "scene": "In a grand ice palace hall with tall frosted windows, in her ice-blue gown with a long sheer train, she holds a glowing snowflake above her palm, snow falling softly around her, looking at the viewer with a quiet elegant smile.",
+      "bg": "icepalace",
+      "moves": {
+        "entrance": "Frost spreads across the view and shatters into glittering crystals, she stands revealed with snow swirling and her long train flowing, and slowly raises a glowing snowflake on her palm. Her face and outfit stay exactly the same.",
+        "finish": "She lifts her hand and a ring of ice crystals spreads outward, snow glitters and falls, she smiles quietly.",
+        "small": "A snowflake spins above her palm and she blows it softly."
+      },
+      "screen": { "particle": "静かに降る雪の結晶", "bubble": "氷色に銀の細い線", "correct": "結晶がひとつ咲く" },
+      "reveal": [["……静かでしょう。雪の音しかしないの", "normal"], ["このドレス、さわるとつめたいよ", "smile"], ["長い冬を越えた人にだけ、見せるの", "smug"], ["……本当はちょっと寒い。ココアほしい", "sleepy"], ["春まで、一緒にいようね", "smile"]]
+    }
+  ],
+  "backgrounds": {
+    "tower": "the top of a high stone tower under a huge starry night sky: countless stars, a crescent moon, faint golden constellations, soft clouds below",
+    "stage": "a big dark concert stage: colorful spotlights, a sea of glowing lights in the audience, soft haze",
+    "nightlib": "a vast dark gothic library at midnight: endless tall bookshelves, candles, pale moonlight from a great round window",
+    "shrine": "a Japanese shrine at sunrise: a wooden stage, plum blossom trees, golden morning light, stone lanterns; no text on any plaque",
+    "icepalace": "a grand ice palace hall: tall frosted windows, ice pillars, soft blue light, gently falling snow"
+  }
+}

@@ -1,6 +1,6 @@
 """律の衣装を、設計（pipeline/ritsu_costumes.json）から1着ずつ作る（T065）。
 
-  python3 pipeline/ritsu_theme.py looks [ID ...]   # 見本4案・お披露目の一枚絵2案（audio/samples_char/g8/<ID>/）。省くと全部
+  python3 pipeline/ritsu_theme.py looks [ID ...]   # 見本4案・お披露目の一枚絵2案（audio/samples_char/g8/<ID>/）。省くと全部。--special で特別な衣装（ritsu_special.json）
   python3 pipeline/ritsu_theme.py build ID         # 選んだ見本（設計の pick）から、絵ひとそろい → 切り抜き → セリフと声 → アプリの衣装の表へ
   python3 pipeline/ritsu_theme.py bg               # 設計にある背景のうち、まだないもの
   python3 pipeline/ritsu_theme.py sheet ID         # 人が確かめる絵を 1 枚に並べる（/tmp/ritsu-<ID>.png。build の最後にも作る）
@@ -36,7 +36,9 @@ SCENE_TAIL = (" Cozy pastel anime illustration, wide 4:3 composition. Absolutely
 
 
 def design() -> dict:
-    return json.loads(DESIGN.read_text(encoding="utf-8"))
+    # --special：特別な衣装の骨子（pipeline/ritsu_special.json）
+    path = DESIGN.with_name("ritsu_special.json") if "--special" in sys.argv else DESIGN
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def costume(cid: str) -> dict:
@@ -169,7 +171,7 @@ def backgrounds() -> None:
 def main() -> None:
     what = sys.argv[1]
     if what == "looks":
-        looks(sys.argv[2:])
+        looks([x for x in sys.argv[2:] if not x.startswith("--")])
     elif what == "build":
         build(sys.argv[2])
     elif what == "bg":

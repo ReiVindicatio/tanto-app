@@ -76,6 +76,8 @@ def generate(parts: list[dict], path: Path) -> int:
         try:
             with urllib.request.urlopen(req, timeout=180) as r:
                 res = json.loads(r.read())
+            if not res.get("candidates"):  # 安全フィルターなどで断られた。同じ指示でくり返しても変わらない
+                raise RuntimeError(f"断られた：{json.dumps(res.get('promptFeedback', res), ensure_ascii=False)[:300]}")
             if "parts" in res["candidates"][0].get("content", {}):
                 break
             time.sleep(2)  # 絵のない応答がまれに返る。作り直す
@@ -293,7 +295,10 @@ def run_all(jobs: list[tuple[list[dict], Path]]) -> None:
 
     def one(job: tuple[list[dict], Path]) -> str:
         t = time.time()
-        refused = generate(*job)
+        try:
+            refused = generate(*job)
+        except RuntimeError as e:  # 1枚作れなくても、残りは続ける
+            return f"{job[1].parent.name}/{job[1].name}  作れなかった：{e}"
         return f"{job[1].name}  {time.time() - t:.0f}秒" + (f"（断られた {refused} 回）" if refused else "")
 
     start = time.time()
