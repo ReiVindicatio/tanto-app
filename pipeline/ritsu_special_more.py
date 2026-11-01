@@ -63,7 +63,6 @@ def images(cid: str) -> None:
     same = " The SAME character as in the reference image: exactly the same young face of a 15-year-old, same eyes, EXACTLY the same soft pink-brown hair color, same art style." + TAIL
     keep = "Same upper-body framing, same size and same pose as the reference image, plain white background. "
     jobs = {
-        "moon-seat": ([{"text": "Only a single empty golden crescent moon, nothing else: absolutely NO people, NO girl, NO character, NO animals, nobody sitting on it. The crescent lies on its back with both tips pointing up, like an empty little boat. Soft glow, pastel anime style, front view, " + GREEN + TAIL}], "key", 480, None),
         "star-pal": ([{"text": "A tiny cute star spirit mascot: a plump pale gold five-pointed star with a tiny sleepy smiling face and a soft glow, pastel anime style, " + GREEN + TAIL}], "key", 160, None),
         "bg-nomoon": ([{"text": ci.BG + c["backgrounds"][c["bg"]].replace(", a crescent moon", "") + ". There is NO moon in the sky."}], "plain", 960, None),
         "base-smile-evo2": ([base, {"text": "Same character with an upgraded outfit: the same cape now has brighter glowing constellations and a soft gold trim, and a slightly larger golden crescent hair ornament. " + keep + same}], "cut", 480, None),

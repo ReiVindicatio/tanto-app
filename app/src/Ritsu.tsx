@@ -1,7 +1,7 @@
 // 律（T063）の部品：ちびキャラ＋吹き出し（ナビゲーター）、画面の下の欄の縁からのぞく律、吹き出し単体
 import { useEffect, useState, type ReactNode } from "react";
 import { charDir, characterImage, type Expression } from "./character";
-import { StarFall, StarPal } from "./ritsu/special";
+import { MoonSeat, StarFall, StarPal } from "./ritsu/special";
 import { fxOn } from "./ritsu/fx";
 import { currentTheme, motionOf, isSpecial } from "./ritsu/themes";
 import { linesOf, pickLine, playLine, useSpeaking, type Line } from "./ritsu/lines";
@@ -129,7 +129,7 @@ export function PerchFigure({
       {special && <StarFall />}
       {special && fxOn("pal") && pose === "sit" && <StarPal theme={theme} />}
       <div className="perch-float">
-      {special && fxOn("moon") && pose === "sit" && <img className="moon-seat" src={`${charDir(theme)}moon-seat.webp`} alt="" aria-hidden="true" />}
+      {special && fxOn("moon") && pose === "sit" && <MoonSeat />}
       {/* 息をする（ごくわずかに上下）。跳ねる動きは外側、息は内側にかける */}
       <div className="perch-inner">
         <img className="perch-body" src={src} alt="" />

@@ -396,3 +396,20 @@ function ScaleFx({ correct }: { correct: boolean }) {
     </svg>
   );
 }
+
+/** 律が腰かける三日月（#1）。形が単純なのでコードで描く（AI の絵は頼んでいない人物が入った） */
+export function MoonSeat() {
+  return (
+    <svg className="moon-seat" viewBox="0 0 200 110" aria-hidden="true">
+      <defs>
+        <linearGradient id="moon-seat-gold" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#fff3bd" />
+          <stop offset="1" stopColor="#e6b94f" />
+        </linearGradient>
+      </defs>
+      <path d="M 4 6 C 22 62 178 62 196 6 C 200 136 0 136 4 6 Z" fill="url(#moon-seat-gold)" stroke="#c99a35" strokeWidth="1.5" strokeLinejoin="round" />
+      <text x="24" y="16" fontSize="11" fill="#ffe9a0">★</text>
+      <text x="170" y="12" fontSize="8" fill="#ffe9a0">★</text>
+    </svg>
+  );
+}
