@@ -269,3 +269,19 @@ test("読む速さの既定は基準の速さ（1倍＝今までの1.25倍）。
     .poll(() => page.evaluate(() => ({ src: (window as any).__audio.src as string, rate: (window as any).__audio.playbackRate as number })).then((a) => (a.src.includes("/audio/tts/") ? a.rate : null)))
     .toBe(1.5);
 });
+
+test("一時停止して再開すると、肢を読み直さず止めた位置から続く（T067）", async ({ page }) => {
+  await stub(page, { audioMissing: "none" });
+  await start(page);
+  const phase = page.locator(".listen-phase");
+  await expect(phase).toContainText("考える時間", { timeout: 5000 });
+  const qs = () => page.evaluate(() => (window as any).__played.filter((x: string) => x.endsWith(".q.mp3")).length);
+  const before = await qs();
+  await page.getByRole("button", { name: "❚❚ 一時停止" }).click();
+  await expect(phase).toHaveText("一時停止中");
+  await page.getByRole("button", { name: "▶ 再開" }).click();
+  await expect(phase).toContainText("考える時間"); // 読み上げに戻らない
+  expect(await qs()).toBe(before);
+  await expect(page.locator(".toolbar")).toContainText("1肢目");
+  await expect(page.locator(".toolbar")).toContainText("2肢目", { timeout: 5000 }); // 続きが進む
+});

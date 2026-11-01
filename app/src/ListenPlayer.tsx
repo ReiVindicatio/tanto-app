@@ -138,6 +138,36 @@ export default function ListenPlayer({
   const el = () => (audio.current ??= new Audio());
   const [, rerender] = useState(0);
   const actions = useRef<{ pause: () => void; resume: () => void; skip: () => void } | null>(null);
+  // 一時停止（T067）：読み上げの流れは中止せず、音声を止めて待たせる。再開すると同じ位置から続く
+  const held = useRef(false);
+  const heldWaiter = useRef<(() => void) | null>(null); // 次の音声の前で待っている流れを進める
+  const stepPhase = useRef<Phase>("ready"); // 流れの今の段階（一時停止中も覚えておく）
+  const speakingNow = useRef(false); // 端末の読み上げで読んでいる（途中から再開できない機種があるので、肢の頭から読み直す）
+
+  function whileHeld(signal: AbortSignal): Promise<void> {
+    if (!held.current || signal.aborted) return Promise.resolve();
+    return new Promise((resolve) => {
+      const go = () => {
+        signal.removeEventListener("abort", go);
+        heldWaiter.current = null;
+        resolve();
+      };
+      heldWaiter.current = go;
+      signal.addEventListener("abort", go);
+    });
+  }
+
+  /** 流れの段階を変える。一時停止中は画面の表示を変えず、再開のときに出す */
+  function show(p: Phase) {
+    stepPhase.current = p;
+    if (!held.current) setPhase(p);
+  }
+
+  /** 一時停止中なら再開まで待ってから流す */
+  async function playHeld(src: string, rate: number, signal: AbortSignal, tick?: (left: number) => void): Promise<boolean> {
+    await whileHeld(signal);
+    return play(el(), src, rate, signal, tick);
+  }
   useEffect(() => {
     if (!("mediaSession" in navigator)) return;
     const ms = navigator.mediaSession;
@@ -202,18 +232,23 @@ export default function ListenPlayer({
   async function say(cardId: string, part: "q" | "a", text: string, signal: AbortSignal) {
     const rate = speechRate(prefsRef.current.rate);
     for (const url of audioUrls(cardId, part, prefsRef.current.voice)) {
-      if (await play(el(), url, rate, signal)) return;
+      if (await playHeld(url, rate, signal)) return;
       if (signal.aborted) return;
     }
-    if (canSpeak()) await speak(text, rate, voice.current, signal);
+    await whileHeld(signal);
+    if (canSpeak()) {
+      speakingNow.current = true;
+      await speak(text, rate, voice.current, signal);
+      speakingNow.current = false;
+    }
   }
 
   /** 押した答えの「正解。」「不正解。」を、選んだ声で（なければ声2で）流す */
   async function sayClip(ok: boolean, signal: AbortSignal) {
     const name = ok ? "seikai" : "fuseikai";
     const rate = speechRate(prefsRef.current.rate);
-    if (await play(el(), clipUrl(name, prefsRef.current.voice), rate, signal)) return;
-    if (!signal.aborted && prefsRef.current.voice !== 2) await play(el(), clipUrl(name, 2), rate, signal);
+    if (await playHeld(clipUrl(name, prefsRef.current.voice), rate, signal)) return;
+    if (!signal.aborted && prefsRef.current.voice !== 2) await playHeld(clipUrl(name, 2), rate, signal);
   }
 
   /** 次の肢の音声を先に取っておく（切り替わりの待ちを減らす。失敗してもかまわない） */
@@ -250,7 +285,7 @@ export default function ListenPlayer({
       if (k >= order.current.length) {
         await (loading.current ?? refill());
         if (k >= order.current.length) {
-          setPhase("done");
+          show("done");
           releaseScreen.current();
           return;
         }
@@ -265,26 +300,26 @@ export default function ListenPlayer({
       const step = new AbortController();
       phaseCtl.current = step;
       const either_ = either(card.signal, step.signal);
-      setPhase("reading");
+      show("reading");
       await say(cid, "q", s.text, either_);
       if (card.signal.aborted) return;
       if (!step.signal.aborted) {
-        setPhase("thinking");
+        show("thinking");
         setLeft(prefsRef.current.pause);
         // 考える間は無音を流して作る（タイマーは画面を消すと止められることがある）。流せなければタイマーで待つ
-        if (!(await play(el(), silenceUrl(prefsRef.current.pause), 1, either_, setLeft)) && !either_.aborted) {
+        if (!(await playHeld(silenceUrl(prefsRef.current.pause), 1, either_, setLeft)) && !either_.aborted) {
           await wait(prefsRef.current.pause, either_, setLeft);
         }
         if (card.signal.aborted) return;
       }
-      setPhase("answer");
+      show("answer");
       setRevealed(s.id);
       if (answeredRef.current !== null) await sayClip(answeredRef.current, card.signal);
       if (card.signal.aborted) return;
       await say(cid, "a", answerText(s, false), card.signal);
       if (card.signal.aborted) return;
       setStats((x) => ({ ...x, heard: x.heard + 1 }));
-      if (!(await play(el(), silenceUrl(1), 1, card.signal)) && !card.signal.aborted) await wait(0.8, card.signal);
+      if (!(await playHeld(silenceUrl(1), 1, card.signal)) && !card.signal.aborted) await wait(0.8, card.signal);
       k++;
     }
   }
@@ -294,6 +329,7 @@ export default function ListenPlayer({
    * 端末の読み上げにも空の一言を読ませておく（音声がない肢のため）
    */
   async function begin(from: number) {
+    held.current = false;
     markTipSeen("listen");
     const a = el();
     a.src = silenceUrl(1);
@@ -320,18 +356,38 @@ export default function ListenPlayer({
   }
 
   function pause() {
-    cardCtl.current?.abort();
+    if (speakingNow.current) cardCtl.current?.abort(); // 端末の読み上げは、再開で肢の頭から
+    else held.current = true;
     audio.current?.pause();
     setPhase("paused");
     releaseScreen.current();
   }
 
+  /** 再開：止めた位置から続ける（端末の読み上げで止めたときは肢の頭から） */
+  function resume() {
+    if (!held.current) {
+      void begin(i);
+      return;
+    }
+    held.current = false;
+    setPhase(stepPhase.current);
+    // 次の音声の前で待っていたならそれを進める。音声の途中なら、そのまま続きを流す（押した操作の中で再生する：iPhone）
+    if (heldWaiter.current) heldWaiter.current();
+    else void audio.current?.play().catch(() => {});
+    void keepScreenOn().then((release) => {
+      releaseScreen.current();
+      releaseScreen.current = release;
+    });
+  }
+
   function skip() {
+    held.current = false;
     cardCtl.current?.abort();
     void begin(i + 1);
   }
 
   function stop() {
+    held.current = false;
     cardCtl.current?.abort();
     audio.current?.pause();
     if (canSpeak()) window.speechSynthesis.cancel();
@@ -340,7 +396,7 @@ export default function ListenPlayer({
   }
 
   // ロック画面の操作（Media Session）から呼ぶ。中身は描画のたびに差し替える
-  actions.current = { pause, resume: () => void begin(i), skip };
+  actions.current = { pause, resume, skip };
 
   if (phase === "done") {
     return (
@@ -441,7 +497,7 @@ export default function ListenPlayer({
       {phase !== "ready" && (
         <div className="row listen-controls">
           {phase === "paused" ? (
-            <button className="secondary" onClick={() => void begin(i)}>
+            <button className="secondary" onClick={resume}>
               ▶ 再開
             </button>
           ) : (

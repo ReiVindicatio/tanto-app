@@ -254,6 +254,9 @@ export function play(el: HTMLAudioElement, src: string, rate: number, signal: Ab
     el.defaultPlaybackRate = rate;
     el.playbackRate = rate;
     trackVoice(el, src); // 律の口パクを声に合わせる（T065）
-    el.play().catch(() => done(false));
+    // 読み込み中に一時停止すると AbortError になる。音声がないわけではないので、失敗にしない（再開で続きを流す）
+    el.play().catch((e: unknown) => {
+      if ((e as { name?: string } | null)?.name !== "AbortError") done(false);
+    });
   });
 }
