@@ -2514,3 +2514,112 @@ body:has(.home-dock) .footer {
   line-height: 1.6;
   white-space: nowrap;
 }
+
+/* 特別な衣装（T069）：全画面の演出 */
+.special-move {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: #0b0f26;
+}
+.special-move video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-aspect-ratio: 3/4) {
+  .special-move video {
+    object-fit: contain;
+  }
+}
+.special-move-line {
+  position: absolute;
+  left: 50%;
+  bottom: 12%;
+  width: min(86%, 26rem);
+  transform: translateX(-50%);
+  text-align: left;
+}
+.special-skip {
+  position: absolute;
+  right: 0.8rem;
+  bottom: calc(0.8rem + env(safe-area-inset-bottom));
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font-size: 0.75rem;
+}
+/* 小さな決めポーズ：画面の隅に数秒。押せない（下の解説や○×を押せるまま） */
+.special-small {
+  position: fixed;
+  right: 0.4rem;
+  bottom: calc(5.5rem + env(safe-area-inset-bottom));
+  z-index: 900;
+  width: min(38vw, 170px);
+  pointer-events: none;
+  animation: special-small 4s ease both;
+}
+@keyframes special-small {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  8%,
+  90% {
+    opacity: 1;
+    transform: none;
+  }
+}
+/* 律のまわりの落ちる星 */
+.star-fall {
+  position: absolute;
+  inset: -50px -10px 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.star-fall i {
+  position: absolute;
+  top: -1.2em;
+  color: #e8c35a;
+  font-size: 0.7rem;
+  font-style: normal;
+  opacity: 0;
+  text-shadow: 0 0 6px rgba(232, 195, 90, 0.9);
+  animation: star-fall 9s linear infinite;
+}
+.star-fall i:nth-child(1) { left: 8%; animation-delay: 0s; }
+.star-fall i:nth-child(2) { left: 24%; animation-delay: 3.4s; font-size: 0.5rem; }
+.star-fall i:nth-child(3) { left: 38%; animation-delay: 6.1s; }
+.star-fall i:nth-child(4) { left: 53%; animation-delay: 1.7s; font-size: 0.9rem; }
+.star-fall i:nth-child(5) { left: 66%; animation-delay: 4.8s; font-size: 0.5rem; }
+.star-fall i:nth-child(6) { left: 80%; animation-delay: 7.5s; }
+.star-fall i:nth-child(7) { left: 92%; animation-delay: 2.6s; font-size: 0.6rem; }
+@keyframes star-fall {
+  0% { opacity: 0; transform: translateY(0) rotate(0); }
+  12% { opacity: 0.9; }
+  85% { opacity: 0.7; }
+  100% { opacity: 0; transform: translateY(320px) rotate(160deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .star-fall { display: none; }
+  .special-small { animation: none; }
+}
+/* 星詠みの裁定者：律の吹き出しだけ夜空の色に。肢の文や解説の文字には触らない */
+html[data-costume="hoshiyomi"] .ritsu-bubble {
+  --bg: #1d2447;
+  --border: #d9b45a;
+  color: #f7efd8;
+}
+html[data-costume="hoshiyomi"] .perch-emote {
+  color: #e8c35a;
+  text-shadow: 0 0 8px rgba(232, 195, 90, 0.9);
+}

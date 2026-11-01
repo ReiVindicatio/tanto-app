@@ -1,7 +1,8 @@
 // 律（T063）の部品：ちびキャラ＋吹き出し（ナビゲーター）、画面の下の欄の縁からのぞく律、吹き出し単体
 import { useEffect, useState, type ReactNode } from "react";
-import { CHAR_BASE, characterImage, type Expression } from "./character";
-import { currentTheme, motionOf } from "./ritsu/themes";
+import { charDir, characterImage, type Expression } from "./character";
+import { StarFall } from "./ritsu/special";
+import { currentTheme, motionOf, isSpecial } from "./ritsu/themes";
 import { linesOf, pickLine, playLine, useSpeaking, type Line } from "./ritsu/lines";
 import { useMouthOpen } from "./ritsu/lipsync";
 import { progressNow } from "./progress";
@@ -71,7 +72,7 @@ function preloadMotion(theme: string) {
   window.setTimeout(() => {
     for (const n of names) {
       const img = new Image();
-      img.src = `${CHAR_BASE}${theme}/${n}.webp`;
+      img.src = `${charDir(theme)}${n}.webp`;
       keep.push(img);
     }
   }, 800);
@@ -110,12 +111,13 @@ export function PerchFigure({
   // 腰かける絵に「びっくり」はない（8表情）。ふつうで代わりに出す
   const f: Expression = face === "surprised" ? "normal" : face;
   const src = pose === "lie" ? characterImage("lie", "sleepy", theme) : characterImage("sit", f, theme);
-  const frame = (name: string, cls: string) => <img className={`perch-frame ${cls}`} src={`${CHAR_BASE}${theme}/${name}.webp`} alt="" aria-hidden="true" />;
+  const frame = (name: string, cls: string) => <img className={`perch-frame ${cls}`} src={`${charDir(theme)}${name}.webp`} alt="" aria-hidden="true" />;
   const g = pose === "sit" && gesture && m.gestures.includes(gesture) ? gesture : null;
   const gShown = g && ready === g;
   const talking = pose === "sit" && talk && !g && m.talk.includes(f);
   const mouthOpen = useMouthOpen(talking); // 声が出ているときだけ口を開ける
-  const mark = !emote ? undefined : pose === "lie" ? "z" : g ? undefined : EMOTE[f];
+  const special = isSpecial(theme);
+  const mark = !emote ? undefined : pose === "lie" ? "z" : g ? undefined : special && (f === "happy" || f === "smug") ? "★" : EMOTE[f];
   return (
     <div
       key={hop ? `hop-${face}` : "still"}
@@ -123,6 +125,7 @@ export function PerchFigure({
       data-face={face}
       data-gesture={g ?? undefined}
     >
+      {special && <StarFall />}
       {/* 息をする（ごくわずかに上下）。跳ねる動きは外側、息は内側にかける */}
       <div className="perch-inner">
         <img className="perch-body" src={src} alt="" />
@@ -138,7 +141,7 @@ export function PerchFigure({
         {g && (
           <img
             className={`perch-frame gesture${gShown ? "" : " loading"}`}
-            src={`${CHAR_BASE}${theme}/gesture-${g}.webp`}
+            src={`${charDir(theme)}gesture-${g}.webp`}
             alt=""
             aria-hidden="true"
             onLoad={() => setReady(g)}
@@ -282,7 +285,7 @@ export function RitsuDock({
   }, [pose, shownPose]);
   const img = between ? (
     <div className="perch mid dock-ritsu" data-face={face}>
-      <img className="perch-body" src={`${CHAR_BASE}${currentTheme()}/mid-lie.webp`} alt="" />
+      <img className="perch-body" src={`${charDir(currentTheme())}mid-lie.webp`} alt="" />
     </div>
   ) : (
     <PerchFigure

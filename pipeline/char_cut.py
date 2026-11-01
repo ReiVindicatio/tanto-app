@@ -11,6 +11,7 @@
 """
 from __future__ import annotations
 
+import os
 import subprocess
 import sys
 import tempfile
@@ -20,7 +21,8 @@ from PIL import Image, ImageChops, ImageDraw, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "audio" / "samples_char" / "themes"
-DST = ROOT / "app" / "public" / "chars" / "ritsu"
+# 出力先。特別な衣装（T069）は CHAR_DST で公開フォルダの外へ（R2 に上げる。git にも入れない）
+DST = Path(os.environ["CHAR_DST"]) if os.environ.get("CHAR_DST") else ROOT / "app" / "public" / "chars" / "ritsu"
 FACES = "normal smile think happy sad sleepy surprised smug jito".split()
 KEY = (255, 0, 255)
 
@@ -363,6 +365,18 @@ def main() -> None:
         with tempfile.NamedTemporaryFile(suffix=".png") as f:
             r.save(f.name)
             subprocess.run(["cwebp", "-quiet", "-q", "82", f.name, "-o", str(dst / "reveal.webp")], check=True)
+    for f in sorted(src.glob("story-*.png")):  # 特別な衣装の連作の一枚絵（T069）
+        r = Image.open(f).convert("RGB")
+        r = r.resize((960, round(r.height * 960 / r.width)), Image.LANCZOS)
+        with tempfile.NamedTemporaryFile(suffix=".png") as t:
+            r.save(t.name)
+            subprocess.run(["cwebp", "-quiet", "-q", "82", t.name, "-o", str(dst / f"{f.stem}.webp")], check=True)
+    if (src / "bg.png").exists():  # 特別な衣装の専用の背景（T069）
+        r = Image.open(src / "bg.png").convert("RGB")
+        r = r.resize((960, round(r.height * 960 / r.width)), Image.LANCZOS)
+        with tempfile.NamedTemporaryFile(suffix=".png") as t:
+            r.save(t.name)
+            subprocess.run(["cwebp", "-quiet", "-q", "78", t.name, "-o", str(dst / "bg.webp")], check=True)
     print(f"✅ {dst.relative_to(ROOT)}")
 
 

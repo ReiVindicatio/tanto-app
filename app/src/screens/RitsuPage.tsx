@@ -3,11 +3,12 @@
 import { useEffect, useRef, useState } from "react";
 import { back, navigate } from "../router";
 import { progressNow } from "../progress";
-import { characterImage, FACES, type Expression } from "../character";
+import { bgUrl, charDir, characterImage, FACES, type Expression } from "../character";
 import { Bubble } from "../Ritsu";
-import { BACKGROUNDS, bgFor, chosenBg, currentTheme, isRevealed, isUnlocked, motionOf, nextTheme, setBg, setTheme, themeById, THEMES, unlockLabel } from "../ritsu/themes";
+import { BACKGROUNDS, chosenBg, currentTheme, isRevealed, isSpecial, isUnlocked, motionOf, nextTheme, setBg, setTheme, themeById, THEMES, unlockLabel } from "../ritsu/themes";
 import { ALL_LINES, lineText, linesOf, pickLine, playLine, useSpeaking, type Line } from "../ritsu/lines";
-import { CHAR_BASE } from "../character";
+import { useAdmin } from "../admin";
+import { playMove, smallMove, StarFall } from "../ritsu/special";
 import { useMouthOpen } from "../ritsu/lipsync";
 import { Progress } from "./common";
 
@@ -50,6 +51,8 @@ const SCENE_NAMES: Record<string, string> = {
 function sceneName(scene: string): string {
   if (scene.startsWith("subject_")) return "科目";
   if (scene.startsWith("reveal_")) return "お披露目";
+  if (scene.startsWith("levelup_")) return "レベルアップ（特別な衣装）";
+  if (scene.startsWith("goal_")) return "今日の目標（特別な衣装）";
   if (scene.startsWith("wear_")) return `${themeById(scene.slice(5))?.name ?? "衣装"}のとき`;
   return SCENE_NAMES[scene] ?? scene;
 }
@@ -64,12 +67,13 @@ const TABS: { id: Tab; name: string }[] = [
   { id: "profile", name: "プロフィール" },
 ];
 
-const BG_BASE = `${import.meta.env.BASE_URL}chars/bg/`;
+const BG_BASE = `${import.meta.env.BASE_URL}chars/bg/`; // 選べる背景の一覧
 /** しばらく触らないと眠そうになる（ミリ秒） */
 const DOZE_AFTER = 25000;
 
 export default function RitsuPage() {
   const p = progressNow();
+  const admin = useAdmin();
   const [theme, setThemeState] = useState(() => currentTheme(p.level));
   const [bg, setBgState] = useState(chosenBg);
   const [face, setFace] = useState<Expression>("smile");
@@ -137,10 +141,13 @@ export default function RitsuPage() {
     wake();
   }
 
-  const open = ALL_LINES.filter((l) => l.level <= p.level);
+  // 特別な衣装（T069）は、開いている人にだけ見せる（買えるようになるまで）
+  const shownThemes = THEMES.filter((t) => !isSpecial(t.id) || isUnlocked(t, p.level));
+  const lineBook = ALL_LINES.filter((l) => !l.special || admin);
+  const open = lineBook.filter((l) => l.level <= p.level);
   const scenes = [...new Set(open.map((l) => sceneName(l.scene)))];
-  const locked = ALL_LINES.length - open.length;
-  const revealed = THEMES.filter((t) => t.id !== "default" && isRevealed(t.id));
+  const locked = lineBook.length - open.length;
+  const revealed = shownThemes.filter((t) => t.id !== "default" && isRevealed(t.id));
 
   return (
     <section className="ritsu-page">
@@ -153,7 +160,8 @@ export default function RitsuPage() {
       </div>
 
       {/* 立ち絵：背景つきで上に残す（スクロールしても、選んだ衣装・表情・背景がすぐ見える） */}
-      <div className="ritsu-stage" style={{ backgroundImage: `url(${BG_BASE}${bgFor(theme, bg)}.webp)` }}>
+      <div className="ritsu-stage" style={{ backgroundImage: `url(${bgUrl(theme, bg)})` }}>
+        {isSpecial(theme) && <StarFall />}
         {said && (
           <Bubble tail="right" className="vn-bubble stage-bubble">
             {lineText(said, { n: "いくつか" })}
@@ -164,11 +172,19 @@ export default function RitsuPage() {
             <img className="vn-sprite" src={characterImage("base", face, theme)} alt="" data-face={face} />
             {/* 口パク：律の声が流れている間 */}
             {speaking && m.talkBase.includes(face) && (
-              <img className="sprite-talk" src={`${CHAR_BASE}${theme}/base-${face}-talk.webp`} alt="" aria-hidden="true" />
+              <img className="sprite-talk" src={`${charDir(theme)}base-${face}-talk.webp`} alt="" aria-hidden="true" />
             )}
           </span>
         </button>
       </div>
+      {admin && isSpecial(theme) && (
+        <div className="row special-preview">
+          <span className="muted small">管理者：演出を確かめる</span>
+          <button className="secondary" onClick={() => playMove(theme, "entrance")}>登場</button>
+          <button className="secondary" onClick={() => playMove(theme, "finish", { line: pickLine(`levelup_${theme}`, Infinity) })}>決め</button>
+          <button className="secondary" onClick={() => smallMove(theme)}>小さな決め</button>
+        </div>
+      )}
       <div className="ritsu-level">
         <div className="ritsu-level-row">
           <span className="lv">Lv.{p.level}</span>
@@ -190,7 +206,7 @@ export default function RitsuPage() {
 
       {tab === "theme" && (
         <div className="theme-grid">
-          {THEMES.map((t) => {
+          {shownThemes.map((t) => {
             const ok = isUnlocked(t, p.level);
             return (
               <button
@@ -231,7 +247,7 @@ export default function RitsuPage() {
       {tab === "bg" && (
         <div className="bg-grid">
           <button className={`bg-tile auto${bg === "auto" ? " chosen" : ""}`} aria-pressed={bg === "auto"} onClick={() => chooseBg("auto")}>
-            <img src={`${BG_BASE}${bgFor(theme, "auto")}.webp`} alt="" loading="lazy" />
+            <img src={bgUrl(theme, "auto")} alt="" loading="lazy" />
             <span>衣装に合わせる</span>
           </button>
           {BACKGROUNDS.map((b) => (
@@ -273,7 +289,7 @@ export default function RitsuPage() {
         <div className="album-grid">
           {revealed.map((t) => (
             <button key={t.id} className="album-tile" onClick={() => navigate({ name: "reveal", theme: t.id })}>
-              <img src={`${CHAR_BASE}${t.id}/reveal.webp`} alt="" loading="lazy" />
+              <img src={`${charDir(t.id)}reveal.webp`} alt="" loading="lazy" />
               <span>{t.name}</span>
             </button>
           ))}

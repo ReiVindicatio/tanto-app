@@ -1,6 +1,7 @@
 """律の特別な衣装の動き（docs/ritsu-special-costumes.md）：選んだ絵から、動画モデル（Veo）で数秒の動画を作る。
 
   python3 pipeline/ritsu_video.py <衣装ID> <entrance|finish|small> <元の絵の png> [--seconds 6] [--aspect 9:16]
+  python3 pipeline/ritsu_video.py sources <衣装ID>   # 動画の元の絵を作る（全画面用の縦長・小さな決めポーズ用の単色の背景。audio/samples_char/video/src/）
 
 - キーは .secrets/google-vertex-key（声1・画像と同じ）。請求は Google Cloud のクレジット
 - 出力は audio/samples_char/video/（git では管理しない）
@@ -17,6 +18,7 @@ import urllib.request
 from pathlib import Path
 
 from common import ROOT
+import char_image as ci
 from tts_gemini import vertex_key
 
 OUT = ROOT / "audio" / "samples_char" / "video"
@@ -68,7 +70,24 @@ def generate(prompt: str, image: Path, out: Path, seconds: int, aspect: str) -> 
     print(f"✅ {out.relative_to(ROOT)}（{out.stat().st_size // 1024}KB・{seconds}秒）", flush=True)
 
 
+def sources(cid: str) -> None:
+    """正方形の絵から縦長の動画を作ると上下が黒くなる（2026-11-01 に試した）ので、全画面の動画の元は最初から 9:16 で作る"""
+    c = next(x for x in json.loads((ROOT / "pipeline" / "ritsu_special.json").read_text(encoding="utf-8"))["costumes"] if x["id"] == cid)
+    src = OUT / "src"
+    src.mkdir(parents=True, exist_ok=True)
+    g = ci.OUT / "themes" / cid
+    same = (" The SAME character as in the reference image: exactly the same young face of a 15-year-old, same eyes, EXACTLY the same soft pink-brown hair color, "
+            "same outfit, same art style. Absolutely no text or letters anywhere. Original design, not resembling any existing anime character, VTuber or real person.")
+    tall = ("A vertical full-body illustration filling the whole frame from top to bottom, no borders. " + c["outfit"] + " " + c["story"][1] + same)
+    ci.generate([ci._img(g / "base-smile.png"), {"text": tall}], src / f"{cid}-tall.png", "9:16")
+    ci.generate([ci._img(g / "chibi-smile.png"), {"text": "The same chibi character in the same pose, full body, centered with space around her, on a completely flat pure bright green "
+                 "background (#00FF00) with no shadow, no gradient and no objects on the background. Green must not appear on the character." + same}], src / f"{cid}-small.png", "9:16")  # Veo は正方形を作れない
+    print(f"✅ {src.relative_to(ROOT)}", flush=True)
+
+
 def main() -> None:
+    if sys.argv[1] == "sources":
+        return sources(sys.argv[2])
     cid, move, image = sys.argv[1], sys.argv[2], Path(sys.argv[3])
     opt = lambda name, default: sys.argv[sys.argv.index(name) + 1] if name in sys.argv else default
     design = json.loads((ROOT / "pipeline" / "ritsu_special.json").read_text(encoding="utf-8"))

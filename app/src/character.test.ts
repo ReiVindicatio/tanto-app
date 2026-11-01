@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it } from "vitest";
-import { characterImage, characterOn, listenFace, reactionFace, setCharacterOn } from "./character";
+import { bgUrl, characterImage, characterOn, listenFace, reactionFace, setCharacterOn } from "./character";
 
 describe("キャラクターの表情（T063）", () => {
   it("答えたとき：正解は喜び、3問続けて正解なら得意げ。不正解は残念、2問続けて不正解ならジト目", () => {
@@ -23,6 +23,13 @@ describe("キャラクターの表情（T063）", () => {
   it("絵の置き場所はキャラクターとテーマごと", () => {
     expect(characterImage("base", "think", "default")).toBe("/chars/ritsu/default/base-think.webp");
     expect(characterImage("chibi", "jito", "knit")).toBe("/chars/ritsu/knit/chibi-jito.webp");
+  });
+
+  it("特別な衣装（T069）の絵は公開フォルダではなく /special/ から。専用の背景も", () => {
+    expect(characterImage("base", "smile", "hoshiyomi")).toBe("/special/hoshiyomi/base-smile.webp");
+    expect(bgUrl("hoshiyomi", "auto")).toBe("/special/hoshiyomi/bg.webp");
+    expect(bgUrl("hoshiyomi", "room")).toBe("/chars/bg/room.webp"); // 背景を選んでいればそれ
+    expect(bgUrl("knit", "auto")).toMatch(/^\/chars\/bg\//);
   });
 });
 

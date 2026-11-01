@@ -61,6 +61,25 @@ def looks(ids: list[str]) -> None:
     ci.run_all(jobs)
 
 
+SPECIAL_OUT = ROOT / "audio" / "samples_char" / "special"  # 特別な衣装の出来上がり（git に入れない。R2 に上げる）
+
+
+def chars_dir(theme: str) -> Path:
+    return SPECIAL_OUT / theme if "--special" in sys.argv else ROOT / "app" / "public" / "chars" / "ritsu" / theme
+
+
+def special_extras(c: dict) -> None:
+    """特別な衣装だけの絵：連作の一枚絵（導入・余韻）と専用の背景。変身の絵は選んだお披露目の一枚絵"""
+    g = ci.OUT / "themes" / c["id"]
+    same = (" The SAME character as in the reference image (exactly the same young face of a 15-year-old, same eyes, EXACTLY the same soft pink-brown "
+            "hair color, same art style).") + SCENE_TAIL
+    ci.run_all([([ci._img(ci.OUT / "g3" / "base-smile.png"), {"text": "A full illustration. " + c["story"][0] + same}], g / "story-1.png"),
+                ([ci._img(g / "base-smile.png"), {"text": "A full illustration. " + c["outfit"] + " " + c["story"][2] + same}], g / "story-3.png"),
+                ([{"text": ci.BG + design()["backgrounds"][c["bg"]] + "."}], g / "bg.png")])
+    if not (g / "story-2.png").exists():
+        shutil.copy(g / "reveal.png", g / "story-2.png")
+
+
 def talk_strength(theme: str) -> dict[str, int]:
     """切り抜いた口パクの絵が、元の絵とどれだけ違うか（点の数）"""
     code = ("import sys,json;from PIL import Image,ImageChops;D=sys.argv[1];out={}\n"
@@ -69,12 +88,13 @@ def talk_strength(theme: str) -> dict[str, int]:
             "  b=t.replace('-talk.webp','.webp');a=Image.open(b).convert('RGB');c=Image.open(t).convert('RGB')\n"
             "  d=ImageChops.difference(a,c).convert('L').point(lambda v:255 if v>40 else 0);out[os.path.basename(t)]=sum(1 for v in d.getdata() if v)\n"
             "print(json.dumps(out))")
-    r = subprocess.run([CHAR_PY, "-c", code, str(ROOT / "app" / "public" / "chars" / "ritsu" / theme)], capture_output=True, text=True, check=True)
+    r = subprocess.run([CHAR_PY, "-c", code, str(chars_dir(theme))], capture_output=True, text=True, check=True)
     return json.loads(r.stdout)
 
 
 def cut(theme: str) -> None:
-    subprocess.run([CHAR_PY, str(ROOT / "pipeline" / "char_cut.py"), theme], check=True)
+    env = {**os.environ, "CHAR_DST": str(SPECIAL_OUT)} if "--special" in sys.argv else None  # 特別な衣装は公開フォルダに置かない
+    subprocess.run([CHAR_PY, str(ROOT / "pipeline" / "char_cut.py"), theme], check=True, env=env)
 
 
 def build(cid: str) -> None:
@@ -100,6 +120,8 @@ def build(cid: str) -> None:
                 break
             except Exception as e:  # noqa: BLE001
                 print(f"  やり直し（{e}）", flush=True)
+    if "--special" in sys.argv:
+        special_extras(c)
     mid = g / f"mid-lie-{pick.get('mid', 2)}.png"
     if mid.exists():
         shutil.copy(mid, g / "mid-lie.png")
@@ -138,26 +160,33 @@ def sheet(cid: str) -> None:
             "  im.thumbnail((W-8,W-8));s.paste(im,(x+4,y+26),im);d.rectangle([x+4,y+26,x+4+im.width,y+26+im.height],outline=(255,0,0))\n"
             "s.save(out)")
     out = f"/tmp/ritsu-{cid}.png"
-    subprocess.run([CHAR_PY, "-c", code, str(ROOT / "app" / "public" / "chars" / "ritsu" / cid), out, *names], check=True)
+    subprocess.run([CHAR_PY, "-c", code, str(chars_dir(cid)), out, *names], check=True)
     print(f"  確かめる絵：{out}", flush=True)
 
 
 def add_lines(c: dict) -> None:
     lines = json.loads(LINES.read_text(encoding="utf-8"))
-    lines = [l for l in lines if l["scene"] not in (f"reveal_{c['id']}", f"wear_{c['id']}")]
-    for scene, items in ((f"reveal_{c['id']}", c["reveal"]), (f"wear_{c['id']}", c["wear"])):
+    special = "--special" in sys.argv
+    scenes = {f"reveal_{c['id']}": c["reveal"], f"wear_{c['id']}": c["wear"], **{f"{k}_{c['id']}": v for k, v in c.get("special_lines", {}).items()}}
+    lines = [l for l in lines if l["scene"] not in scenes]
+    for scene, items in scenes.items():
         for k, (text, face) in enumerate(items, 1):
-            lines.append({"id": f"{scene}-{k:03d}", "scene": scene, "text": text, "face": face, "level": 1})
+            line = {"id": f"{scene}-{k:03d}", "scene": scene, "text": text, "face": face, "level": 1}
+            if special:  # 声は公開フォルダの外（R2）。演技の指示も衣装ごと
+                line |= {"special": c["id"], "style": c["voice_style"]}
+            lines.append(line)
     LINES.write_text(json.dumps(lines, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    subprocess.run([sys.executable, str(ROOT / "pipeline" / "ritsu_voice.py")], check=True)
+    env = {**os.environ, "RITSU_SPECIAL": c["id"], "RITSU_VOICE_OUT": str(SPECIAL_OUT / c["id"] / "voices")} if special else None
+    subprocess.run([sys.executable, str(ROOT / "pipeline" / "ritsu_voice.py")], check=True, env=env)
 
 
 def register(c: dict) -> None:
     """アプリの衣装の表（app/src/ritsu/costumes.json）に足す（設計の並び順）"""
     have = json.loads(APP_LIST.read_text(encoding="utf-8")) if APP_LIST.exists() else []
     have = [h for h in have if h["id"] != c["id"]] + [{k: c[k] for k in ("id", "name", "level", "unlock", "bg", "desc") if k in c}]
-    order = ["knit", "pajama"] + [x["id"] for x in design()["costumes"]]
-    have.sort(key=lambda h: order.index(h["id"]) if h["id"] in order else 99)
+    if "--special" not in sys.argv:  # 特別な衣装は末尾に足すだけ
+        order = ["knit", "pajama"] + [x["id"] for x in design()["costumes"]]
+        have.sort(key=lambda h: order.index(h["id"]) if h["id"] in order else 99)
     APP_LIST.write_text(json.dumps(have, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 

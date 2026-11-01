@@ -33,6 +33,7 @@ export async function refreshAdmin(getToken: () => Promise<string | null>, doFet
   try {
     const token = await getToken();
     if (!token) {
+      if (isAdmin()) void doFetch("/special/logout", { method: "POST" }); // 特別な衣装の通行証（T069）を消す
       localStorage.removeItem(KEY);
       changed();
       return;

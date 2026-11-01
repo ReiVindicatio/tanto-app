@@ -56,6 +56,8 @@ self.addEventListener("fetch", (event) => {
   if (url.pathname.startsWith("/q/") || url.pathname === "/sitemap.xml" || url.pathname === "/robots.txt") return;
   // 聞き流しの音声（T058）は大きく数も多いので保存しない（Range の取得もそのまま通す）
   if (url.pathname.startsWith("/audio/") || url.pathname.startsWith("/sounds/")) return;
+  // 特別な衣装（T069）は Worker が通行証を確かめて渡す。保存しない
+  if (url.pathname.startsWith("/special/")) return;
 
   if (req.mode === "navigate") {
     event.respondWith(

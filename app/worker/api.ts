@@ -2,6 +2,7 @@
 // D1 や Firebase を直接は知らない（テストでは偽物を渡す）。
 import type { Answer, AnswerRepository, Bookmark, Report } from "./repository";
 import { isAdminEmail, type EmailOf, type Verifier } from "./auth";
+import { CLEAR_PASS, passCookie } from "./special";
 
 export const MAX_BATCH = 1000;
 /** 1日（UTC）に受け取る回答の上限（T040）。初めてログインした端末の記録をまとめて送る（引き継ぎ）のを止めない値。超えた分は翌日に送られる */
@@ -32,6 +33,8 @@ export type Deps = {
   /** 管理者の判定（T068）。トークンからメールを取る関数と、管理者のメール（秘密の設定） */
   emailOf?: EmailOf;
   adminEmails?: string;
+  /** 特別な衣装の通行証の署名の鍵（T069） */
+  specialKey?: string;
 };
 
 function json(body: unknown, status = 200): Response {
@@ -142,7 +145,11 @@ export async function handleApi(req: Request, deps: Deps): Promise<Response> {
   // 自分の情報（T068）：管理者か（衣装を全部開いて動作を確かめる）。メールアドレスは返さない
   if (url.pathname === "/api/me" && req.method === "GET") {
     const email = deps.emailOf ? await deps.emailOf(token) : null;
-    return json({ admin: isAdminEmail(email, deps.adminEmails) });
+    const admin = isAdminEmail(email, deps.adminEmails);
+    const res = json({ admin });
+    // 特別な衣装の通行証（T069）：今は管理者だけ。外れたら消す
+    res.headers.set("set-cookie", admin && deps.specialKey ? await passCookie(userId, deps.specialKey, now) : CLEAR_PASS);
+    return res;
   }
 
   if (url.pathname === "/api/me" && req.method === "DELETE") {

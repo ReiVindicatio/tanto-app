@@ -65,9 +65,11 @@ FACES = {
 }
 
 
-def generate(parts: list[dict], path: Path) -> int:
-    """絵を1枚作る。返り値は 429 などで断られた回数（時間がどこにかかったかを見るため）"""
+def generate(parts: list[dict], path: Path, aspect: str | None = None) -> int:
+    """絵を1枚作る。返り値は 429 などで断られた回数（時間がどこにかかったかを見るため）。aspect は縦横比（例 "9:16"。省くと正方形）"""
     body = {"contents": [{"role": "user", "parts": parts}], "generationConfig": {"responseModalities": ["TEXT", "IMAGE"]}}
+    if aspect:
+        body["generationConfig"]["imageConfig"] = {"aspectRatio": aspect}
     refused = 0
     for attempt in range(60):
         region = REGIONS[next(_next_region) % len(REGIONS)]

@@ -67,10 +67,16 @@ export function themeById(id: string): Theme | undefined {
   return THEMES.find((t) => t.id === id);
 }
 
+/** 特別な衣装（T069）。絵・声・動画は R2 にあり、Worker が通行証を確かめて渡す */
+export function isSpecial(id: string): boolean {
+  return themeById(id)?.unlock === "paid";
+}
+
 /** 開いているか。管理者は全部。一度お披露目を見た衣装は、条件を見直しても開いたまま */
 export function isUnlocked(t: Theme, level: number): boolean {
-  if (t.id === "default" || isAdmin() || isRevealed(t.id)) return true;
-  if (t.unlock === "paid") return false;
+  if (t.id === "default" || isAdmin()) return true;
+  if (t.unlock === "paid") return false; // 端末の値（見た印）では開かない。絵もサーバーが渡さない
+  if (isRevealed(t.id)) return true;
   const m = t.unlock?.match(/^mock(\d+)$/);
   if (m) return mockSubmits() >= Number(m[1]);
   return level >= t.level;
@@ -102,6 +108,14 @@ export function setTheme(id: string): void {
   } catch {
     // 覚えられなくても、今の画面では着替えられる
   }
+  applyCostume();
+}
+
+/** 特別な衣装を着ている間、画面の飾りを変える（html の data-costume。styles.css） */
+export function applyCostume(): void {
+  const id = currentTheme();
+  if (isSpecial(id)) document.documentElement.dataset.costume = id;
+  else delete document.documentElement.dataset.costume;
 }
 
 /** 次に開くテーマ */

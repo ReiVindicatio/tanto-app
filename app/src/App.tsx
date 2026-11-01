@@ -1,3 +1,4 @@
+import { SpecialMoveLayer } from "./ritsu/special";
 import RitsuPage from "./screens/RitsuPage";
 import RevealPage from "./screens/RevealPage";
 import { useEffect, useState } from "react";
@@ -56,6 +57,7 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
 
   return (
     <SyncContext.Provider value={sync}>
+      <SpecialMoveLayer />
       <div className={`page ${tab ? "with-tabs" : "playing"}`}>
         <header className="appbar">
           <button className="link brand" onClick={() => navigate({ name: "home" })}>

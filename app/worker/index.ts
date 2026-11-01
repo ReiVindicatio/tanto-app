@@ -3,6 +3,7 @@ import { handleApi, type Limiter } from "./api";
 import { firebaseEmail, firebaseVerifier, testVerifier } from "./auth";
 import { D1AnswerRepository } from "./repository";
 import { serveAudio } from "./audio";
+import { serveSpecial } from "./special";
 
 /** Cloudflare Workers の Rate Limiting（wrangler.jsonc の ratelimits） */
 type RateLimit = { limit(opts: { key: string }): Promise<{ success: boolean }> };
@@ -20,6 +21,8 @@ export interface Env {
   AUDIO?: R2Bucket;
   /** 管理者のメール（T068。カンマ区切り）。リポジトリが公開なので wrangler secret で置き、コードに書かない */
   ADMIN_EMAILS?: string;
+  /** 特別な衣装の通行証の署名の鍵（T069。wrangler secret）。なければ /special/* はだれにも渡さない */
+  SPECIAL_KEY?: string;
 }
 
 function limiter(rl?: RateLimit): Limiter | undefined {
@@ -40,6 +43,7 @@ export default {
       const cache = typeof caches !== "undefined" ? (caches as unknown as { default: Cache }).default : undefined;
       return serveAudio(req, env.AUDIO, cache, ctx ? (p) => ctx.waitUntil(p) : undefined);
     }
+    if (url.pathname.startsWith("/special/")) return serveSpecial(req, env.AUDIO, env.SPECIAL_KEY);
     if (!url.pathname.startsWith("/api/")) return env.ASSETS.fetch(req);
 
     const testMode = env.AUTH_MODE === "test";
@@ -55,6 +59,7 @@ export default {
       limitUser: limiter(env.RL_USER),
       emailOf: testMode ? undefined : firebaseEmail(env.FIREBASE_PROJECT_ID),
       adminEmails: env.ADMIN_EMAILS,
+      specialKey: env.SPECIAL_KEY,
     });
   },
 } satisfies ExportedHandler<Env>;

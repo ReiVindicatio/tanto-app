@@ -155,3 +155,59 @@ test("衣装の開き方（T068）：未開放はレベルや模試の条件を�
   await expect(tile("ひだまりニット")).toHaveCount(1);
   await expect(page.locator(".appbar .admin-badge")).toHaveText("管理者");
 });
+
+/** ログインせずに管理者の画面を見る（ログインしていないと起動時に印が消えるので、消えないようにする） */
+async function beAdmin(page: any) {
+  await page.addInitScript(() => {
+    const remove = Storage.prototype.removeItem;
+    Storage.prototype.removeItem = function (k: string) {
+      if (k !== "tanto.admin.v1") remove.call(this, k);
+    };
+    localStorage.setItem("tanto.admin.v1", "1");
+  });
+}
+
+test("特別な衣装（T069）：管理者でなければ一覧に出ない。管理者は着られて、演出を確かめて飛ばせる", async ({ page }) => {
+  await page.route("**/special/**", () => {}); // 動画の読み込み中のまま（押して飛ばせることを見る）
+  await openHome(page);
+  await page.evaluate(() => {
+    localStorage.setItem("tanto.character.theme.v1", "hoshiyomi");
+    localStorage.setItem("tanto.character.revealed.v1", JSON.stringify(["hoshiyomi"])); // 端末の値を書き換えても開かない
+  });
+  await page.goto("/ritsu");
+  await expect(page.locator(".theme-tile").first()).toBeVisible();
+  await expect(page.locator(".theme-tile", { hasText: "星詠み" })).toHaveCount(0);
+  await expect(page.locator(".theme-tile", { hasText: "特別な衣装" })).toHaveCount(0);
+  await expect(page.locator(".special-preview")).toHaveCount(0);
+  await expect(page.locator("html")).not.toHaveAttribute("data-costume", "hoshiyomi");
+
+  await beAdmin(page);
+  await page.goto("/ritsu");
+  await expect(page.locator(".theme-tile.chosen")).toContainText("星詠み");
+  await expect(page.locator("html")).toHaveAttribute("data-costume", "hoshiyomi");
+  await expect(page.locator(".ritsu-stage .star-fall")).toBeAttached();
+
+  // 絵は公開フォルダではなく /special/ から
+  await expect(page.locator(".ritsu-stage .vn-sprite")).toHaveAttribute("src", /\/special\/hoshiyomi\/base-smile\.webp$/);
+
+  await page.locator(".special-preview button", { hasText: "登場" }).click();
+  await expect(page.locator(".special-move video")).toHaveAttribute("src", /\/special\/hoshiyomi\/entrance\.mp4$/);
+  await page.locator(".special-move").click();
+  await expect(page.locator(".special-move")).toHaveCount(0);
+});
+
+test("特別な衣装（T069）：視差効果を減らす設定なら全画面の演出を流さない", async ({ browser }) => {
+  const context = await browser.newContext({ reducedMotion: "reduce" });
+  const page = await context.newPage();
+  await page.route("**/special/**", () => {});
+  await beAdmin(page);
+  await page.goto("/");
+  await page.evaluate(() => {
+    localStorage.setItem("tanto.character.theme.v1", "hoshiyomi");
+    localStorage.setItem("tanto.character.revealed.v1", JSON.stringify(["hoshiyomi"]));
+  });
+  await page.goto("/ritsu");
+  await page.locator(".special-preview button", { hasText: "登場" }).click();
+  await expect(page.locator(".special-move")).toHaveCount(0);
+  await context.close();
+});

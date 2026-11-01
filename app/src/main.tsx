@@ -6,6 +6,7 @@ import { initBookmarks, reloadBookmarks } from "./bookmarks";
 import { LocalStorageStore } from "./store";
 import { createAuthClient } from "./auth";
 import { refreshAdmin } from "./admin";
+import { applyCostume } from "./ritsu/themes";
 import { HttpApiClient } from "./api";
 import { SyncedStore } from "./sync";
 import { applyTheme, watchSystemTheme } from "./theme";
@@ -14,6 +15,7 @@ import "./styles.css";
 // テーマ（ダークモード）は描画の前に当てる（T025）
 applyTheme();
 watchSystemTheme();
+applyCostume();
 
 // 学習記録（回答ログ）：端末に保存し、ログインしていればサーバー（/api）と同期する（T003）
 const auth = createAuthClient();
@@ -31,7 +33,7 @@ initLearning(sync).finally(() => {
   );
   auth.onChange(() => {
     void sync.sync(); // 起動時・ログイン時：送って受け取る
-    void refreshAdmin(() => auth.getToken()); // 管理者か（T068）
+    void refreshAdmin(() => auth.getToken()).then(applyCostume); // 管理者か（T068）
   });
   window.addEventListener("online", () => void sync.sync()); // オンラインに戻ったとき
   // 画面を隠したら未送信を送り、戻ったら（前回から5分以上たっていれば）受け取る（T021）

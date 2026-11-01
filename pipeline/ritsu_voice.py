@@ -10,6 +10,7 @@
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -20,7 +21,9 @@ from common import ROOT
 from tts_gemini import LEDA_VOICE, TONGUE, TONGUE_STYLE, script, synth_one, usage
 
 LINES = ROOT / "app" / "src" / "ritsu" / "lines.json"
-OUT = ROOT / "app" / "public" / "voices" / "ritsu"
+# 特別な衣装（T069）のセリフは RITSU_VOICE_OUT（公開フォルダの外）へ。ふつうに流すと特別な衣装のセリフは作らない
+SPECIAL = os.environ.get("RITSU_SPECIAL")  # 作る特別な衣装の ID
+OUT = Path(os.environ["RITSU_VOICE_OUT"]) if os.environ.get("RITSU_VOICE_OUT") else ROOT / "app" / "public" / "voices" / "ritsu"
 
 MOOD = {
     "normal": "",
@@ -48,7 +51,7 @@ def duration(path: Path) -> float:
 
 def make(line: dict) -> str:
     out = OUT / f"{line['id']}.mp3"
-    prompt = script(TONGUE_STYLE + MOOD.get(line["face"], ""), TONGUE)
+    prompt = script(TONGUE_STYLE + MOOD.get(line["face"], "") + (" " + line["style"] if line.get("style") else ""), TONGUE)
     text = spoken(line["text"])
     limit = 2.5 + 0.35 * len(text)  # これより長ければ、くり返したとみて作り直す
     for attempt in range(4):
@@ -64,7 +67,7 @@ def make(line: dict) -> str:
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    lines = [l for l in json.loads(LINES.read_text(encoding="utf-8")) if l.get("voice") is not False]
+    lines = [l for l in json.loads(LINES.read_text(encoding="utf-8")) if l.get("voice") is not False and l.get("special") == SPECIAL]
     if "--redo" in sys.argv:
         ids = set(sys.argv[sys.argv.index("--redo") + 1:])
         todo = [l for l in lines if l["id"] in ids]

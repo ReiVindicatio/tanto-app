@@ -6,7 +6,8 @@ import { trackVoice } from "./lipsync";
 import { BASE_RATE } from "../listen";
 import type { Expression } from "../character";
 
-export type Line = { id: string; scene: string; text: string; face: Expression; level: number; voice?: boolean };
+/** special＝特別な衣装（T069）のセリフ。声は R2 にあり、許された人にだけ渡る。style は声を作るときの演技の指示 */
+export type Line = { id: string; scene: string; text: string; face: Expression; level: number; voice?: boolean; special?: string; style?: string };
 
 export const ALL_LINES = data as Line[];
 
@@ -37,7 +38,8 @@ export function lineText(l: Line, vars: Record<string, string | number> = {}): s
 }
 
 export function voiceUrl(l: Line): string | null {
-  return l.voice === false ? null : `${BASE}voices/ritsu/${l.id}.mp3`;
+  if (l.voice === false) return null;
+  return l.special ? `${BASE}special/${l.special}/voices/${l.id}.mp3` : `${BASE}voices/ritsu/${l.id}.mp3`;
 }
 
 /** 時間帯のあいさつの場面（端末の時刻） */

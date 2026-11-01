@@ -20,14 +20,25 @@ export async function serveAudio(req: Request, bucket: Bucket | undefined, cache
   const obj = await bucket.get(key, range ? { range: req.headers } : undefined);
   if (!obj) return new Response("not found", { status: 404 });
 
+  const res = objectResponse(req, obj, "audio/mpeg", CACHE_CONTROL);
+  if (cache && req.method === "GET" && res.status === 200) {
+    const put = cache.put(req, res.clone());
+    if (wait) wait(put);
+    else await put;
+  }
+  return res;
+}
+
+/** R2 のものを返す。Range の取得には 206 で答える */
+export function objectResponse(req: Request, obj: R2Object | R2ObjectBody, contentType: string, cacheControl: string): Response {
   const headers = new Headers({
-    "content-type": "audio/mpeg",
+    "content-type": contentType,
     "accept-ranges": "bytes",
-    "cache-control": CACHE_CONTROL,
+    "cache-control": cacheControl,
     etag: obj.httpEtag,
   });
   const body = req.method === "HEAD" ? null : (obj as R2ObjectBody).body;
-  if (range && obj.range) {
+  if (req.headers.get("range") && obj.range) {
     const r = obj.range as { offset?: number; length?: number; suffix?: number };
     const offset = r.suffix !== undefined ? obj.size - r.suffix : (r.offset ?? 0);
     const length = r.suffix !== undefined ? r.suffix : (r.length ?? obj.size - offset);
@@ -36,11 +47,5 @@ export async function serveAudio(req: Request, bucket: Bucket | undefined, cache
     return new Response(body, { status: 206, headers });
   }
   headers.set("content-length", String(obj.size));
-  const res = new Response(body, { headers });
-  if (cache && req.method === "GET") {
-    const put = cache.put(req, res.clone());
-    if (wait) wait(put);
-    else await put;
-  }
-  return res;
+  return new Response(body, { headers });
 }

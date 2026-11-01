@@ -13,6 +13,7 @@ import { cardIdOf } from "./learning";
 import SpeakButton from "./SpeakButton";
 import { characterOn, LINES, markTipSeen, reactionFace, tipSeen } from "./character";
 import { PerchFigure, RitsuDock, useIdle } from "./Ritsu";
+import { celebrateMove, smallMove } from "./ritsu/special";
 import { milestones, progressNow } from "./progress";
 import { shuffle } from "./shuffle";
 import { recordAnswer } from "./learning";
@@ -194,6 +195,9 @@ export default function StatementDrill({
     recordAnswer(s.id, v === truth);
     const m = milestones(before, progressNow());
     setCelebrate(m.levelUp || m.goalReached ? m : null);
+    // 特別な衣装（T069）：節目は全画面の決めの演出、3問続けて正解は小さな決めポーズ
+    if (m.levelUp || m.goalReached) celebrateMove(m.levelUp ? "levelup" : "goal");
+    else if (v === truth && (streak + 1) % 3 === 0) smallMove();
     setResults((r) => [...r, { statement: s, question: q, correct: v === truth }]);
   }
 

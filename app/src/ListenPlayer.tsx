@@ -29,9 +29,9 @@ import {
   VOICE_NOS,
   type ListenPrefs,
 } from "./listen";
-import { characterImage, characterOn, listenFace, markTipSeen, tipSeen, type Expression } from "./character";
+import { characterImage, characterOn, listenFace, markTipSeen, tipSeen, type Expression, bgUrl } from "./character";
 import { ALL_LINES, pickLine } from "./ritsu/lines";
-import { bgFor, currentTheme } from "./ritsu/themes";
+import { currentTheme } from "./ritsu/themes";
 import { progressNow } from "./progress";
 import { revealBelow } from "./scrollReveal";
 import { Bubble, RitsuDock } from "./Ritsu";
@@ -51,7 +51,7 @@ const PEEK_FACES: Expression[] = ["normal", "think", "happy", "sad", "sleepy", "
 function Stage({ face, children }: { face: Expression; children: React.ReactNode }) {
   const theme = currentTheme();
   return (
-    <div className="vn-stage with-bg" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}chars/bg/${bgFor(theme)}.webp)` }}>
+    <div className="vn-stage with-bg" style={{ backgroundImage: `url(${bgUrl(theme)})` }}>
       {children}
       <img className="vn-sprite" src={characterImage("base", face)} alt="" data-face={face} />
     </div>
