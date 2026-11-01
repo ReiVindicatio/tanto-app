@@ -156,7 +156,25 @@ def ledge_cut(im: Image.Image) -> tuple[Image.Image, int, int]:
             for y in range(top - 6, h):
                 for x in list(range(0, max(0, above[0] - 12))) + list(range(min(w, above[2] + 12), w)):
                     fp[x, y] = (0, 0, 0, 0)
+    fill_holes(full, im, top)
     return full, top, bot
+
+
+def fill_holes(full: Image.Image, im: Image.Image, top: int) -> None:
+    """縁より下で、体に囲まれた穴を元の絵で埋める。帯と近い色を行ごとに消すので、白い服が透けた（2026-11-01 星詠みのドレス）。
+    線の切れ目から外の透明が入り込まないよう、体を少し太らせて外側を求め、同じだけ戻す"""
+    w, h = full.size
+    grow = 7
+    closed = full.getchannel("A").point(lambda v: 255 if v > 40 else 0).filter(ImageFilter.MaxFilter(grow))
+    pad = Image.new("L", (w + 2, h + 2), 0)  # まわりに1列足して、外側を1回で塗る
+    pad.paste(closed, (1, 1))
+    ImageDraw.floodfill(pad, (0, 0), 128)
+    outside = pad.crop((1, 1, w + 1, h + 1)).point(lambda v: 255 if v == 128 else 0).filter(ImageFilter.MaxFilter(grow))
+    op, fp, px = outside.load(), full.load(), im.load()
+    for y in range(max(0, top - 6), h):
+        for x in range(w):
+            if fp[x, y][3] <= 40 and op[x, y] == 0:
+                fp[x, y] = (*px[x, y], 255)
 
 
 def body_above(full: Image.Image, top: int) -> tuple[int, int, int, int] | None:
@@ -377,7 +395,7 @@ def main() -> None:
         with tempfile.NamedTemporaryFile(suffix=".png") as t:
             r.save(t.name)
             subprocess.run(["cwebp", "-quiet", "-q", "78", t.name, "-o", str(dst / "bg.webp")], check=True)
-    print(f"✅ {dst.relative_to(ROOT)}")
+    print(f"✅ {dst}")
 
 
 if __name__ == "__main__":
