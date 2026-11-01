@@ -50,13 +50,34 @@ export function chunks(text: string, max = 80): string[] {
 export type VoiceNo = 1 | 2;
 export type ListenPrefs = { rate: number; pause: number; voice: VoiceNo };
 export const RATES = [0.8, 1, 1.2, 1.5] as const;
+/**
+ * 声の基準の速さ（T066）。作っておいた音声はゆっくりめで、ちょうどいいのが今までの 1.25 倍くらいだった（ユーザー）。
+ * 画面の「1倍」はこの速さ。律のセリフもこの速さで流す。音声は作り直さず、再生の速さだけ変える
+ */
+export const BASE_RATE = 1.25;
+
+/** 画面で選んだ速さ → 実際に流す速さ */
+export function speechRate(rate: number): number {
+  return rate * BASE_RATE;
+}
+
 export const PAUSES = [3, 5, 8] as const;
 export const VOICE_NOS = [1, 2] as const;
-const KEY = "tanto.listen.v1";
+const KEY = "tanto.listen.v2";
+const OLD_KEY = "tanto.listen.v1";
+
+/** 基準の速さを上げる前に覚えた速さ（T066）。1.5倍で聞いていた人は、同じ速さの1.2倍に（そのままだと 1.875 倍で流れる）。1倍は新しい1倍のまま */
+function migrateRate(rate: unknown): unknown {
+  if (rate === 1.5) return 1.2;
+  if (rate === 1.2) return 1;
+  return rate;
+}
 
 export function getListenPrefs(): ListenPrefs {
   try {
-    const p = JSON.parse(localStorage.getItem(KEY) ?? "{}") as Partial<ListenPrefs>;
+    const now = localStorage.getItem(KEY);
+    const old = now === null ? (JSON.parse(localStorage.getItem(OLD_KEY) ?? "{}") as Partial<ListenPrefs>) : null;
+    const p = old ? { ...old, rate: migrateRate(old.rate) as number } : (JSON.parse(now ?? "{}") as Partial<ListenPrefs>);
     return {
       rate: RATES.includes(p.rate as (typeof RATES)[number]) ? (p.rate as number) : 1,
       pause: PAUSES.includes(p.pause as (typeof PAUSES)[number]) ? (p.pause as number) : 5,

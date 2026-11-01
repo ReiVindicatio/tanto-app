@@ -1,7 +1,7 @@
 // 肢で解くの読み上げボタン（T062）：聞き流し用に作っておいた音声（声1。なければ声2）を流す。押すともう一度で止まる。
 // 画面で同時に流れるのは1つだけ（別のボタンを押すと前のを止める）。肢が変わったら止める
 import { useEffect, useState } from "react";
-import { audioUrls, getListenPrefs, play } from "./listen";
+import { audioUrls, getListenPrefs, play, speechRate } from "./listen";
 
 let current: { el: HTMLAudioElement; ctl: AbortController; owner: symbol } | null = null;
 
@@ -35,7 +35,7 @@ export default function SpeakButton({ cardId, part, label }: { cardId: string; p
     const el = new Audio();
     current = { el, ctl, owner: me };
     setState("playing");
-    const rate = getListenPrefs().rate;
+    const rate = speechRate(getListenPrefs().rate);
     let ok = false;
     for (const url of audioUrls(cardId, part, 1)) {
       ok = await play(el, url, rate, ctl.signal);

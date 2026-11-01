@@ -21,6 +21,7 @@ import { StatementResult, type StatementResultItem } from "./ResultView";
 import type { More, OriginOf } from "./play";
 import { merge } from "./data";
 import { flyAway, swipeThreshold, useSwipe, type SwipeDir } from "./swipe";
+import { revealBelow } from "./scrollReveal";
 
 const BASIS_NOTE: Record<string, string> = {
   convention: "公式の解答は組合せの番号だけです。この肢の○×は、その組合せに入っているかどうかから導いたものです。",
@@ -51,6 +52,13 @@ export default function StatementDrill({
   const [order, setOrder] = useState<Statement[]>(cards);
   const [i, setI] = useState(0);
   const [answer, setAnswer] = useState<boolean | null>(null);
+  // ○×を押したら、答え合わせが見える位置まで送る（肢の文が長いと、押しても画面が変わっていないように見えた：T066）
+  const resultEl = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (answer === null) return;
+    const f = requestAnimationFrame(() => revealBelow(resultEl.current));
+    return () => cancelAnimationFrame(f);
+  }, [answer]);
   const [results, setResults] = useState<StatementResultItem[]>([]);
   const [startedAt, setStartedAt] = useState(() => Date.now());
   const [finishedAt, setFinishedAt] = useState<number | null>(null);
@@ -298,7 +306,7 @@ export default function StatementDrill({
         )}
 
         {answer !== null && (
-          <div className={`result ${answer === truth ? "ok" : "ng"}${showChar ? " with-peek" : ""}`}>
+          <div ref={resultEl} className={`result ${answer === truth ? "ok" : "ng"}${showChar ? " with-peek" : ""}`}>
             {/* キャラクター（T063・T065）：律が結果の欄の縁に腰かけ（正解ならぴょんと跳ねる）、吹き出しで「正解！」「不正解…」。○×と解説の見せ方は変えない */}
             {showChar && (
               <PerchFigure

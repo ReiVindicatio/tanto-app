@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it } from "vitest";
-import { audioUrls, chunks, clipUrl, getListenPrefs, speechText } from "./listen";
+import { audioUrls, BASE_RATE, chunks, clipUrl, getListenPrefs, speechRate, speechText } from "./listen";
 
 describe("聞き流しの読み上げる文（T057）", () => {
   it("解答欄の番号は読まない", () => {
@@ -37,6 +37,28 @@ describe("聞き流しの声（T061）", () => {
     expect(getListenPrefs().voice).toBe(2);
     store(JSON.stringify({ voice: 3 }));
     expect(getListenPrefs().voice).toBe(1);
+  });
+
+  it("読む速さ（T066）：画面の1倍は基準の速さ。前に覚えた1.5倍は同じ速さの1.2倍に移す。新しい設定はそのまま", () => {
+    expect(BASE_RATE).toBe(1.25);
+    expect(speechRate(1)).toBe(1.25);
+    expect(speechRate(1.2)).toBe(1.5);
+    const two = (v1: string | null, v2: string | null) => {
+      (globalThis as { localStorage?: unknown }).localStorage = {
+        getItem: (k: string) => (k === "tanto.listen.v1" ? v1 : k === "tanto.listen.v2" ? v2 : null),
+        setItem: () => {},
+      };
+    };
+    two(JSON.stringify({ rate: 1.5, pause: 8, voice: 2 }), null);
+    expect(getListenPrefs()).toEqual({ rate: 1.2, pause: 8, voice: 2 });
+    two(JSON.stringify({ rate: 1.2 }), null);
+    expect(getListenPrefs().rate).toBe(1);
+    two(JSON.stringify({ rate: 1 }), null);
+    expect(getListenPrefs().rate).toBe(1);
+    two(JSON.stringify({ rate: 1.5 }), JSON.stringify({ rate: 1.5 })); // 新しい設定の1.5倍は移さない
+    expect(getListenPrefs().rate).toBe(1.5);
+    two(null, null);
+    expect(getListenPrefs().rate).toBe(1);
   });
 
   it("声1は声1 → 声2 の順に試し、声2は声2だけ", () => {

@@ -117,3 +117,23 @@ test("律のページの背景（T065）：既定は衣装に合わせる。選�
   await page.reload();
   await expect(page.locator(".ritsu-stage")).toHaveAttribute("style", /chars\/bg\/library\.webp/);
 });
+
+test("○×を押すと、答え合わせが見える位置まで送る。もう見えていれば動かさない（T066）", async ({ page, request }) => {
+  const truth = await truthOf(request);
+  await openHome(page);
+  await openYear(page, "民法", "R08", "肢で解く");
+  // 高い画面：答え合わせがもう見えているので、動かさない
+  await page.setViewportSize({ width: 390, height: 1400 });
+  let text = await page.locator(".page .statement").innerText();
+  await page.keyboard.press(truth.get(text) ? "ArrowRight" : "ArrowLeft");
+  await expect(page.locator(".page .result")).toBeInViewport();
+  expect(await page.evaluate(() => window.scrollY)).toBe(0);
+  await page.keyboard.press("Enter");
+  // 低い画面：肢の文の下に隠れるので、見える位置まで送る
+  await page.setViewportSize({ width: 390, height: 460 });
+  await expect(page.locator(".page .statement")).not.toHaveText(text);
+  text = await page.locator(".page .statement").innerText();
+  await page.keyboard.press(truth.get(text) ? "ArrowRight" : "ArrowLeft");
+  await expect(page.locator(".page .result")).toBeInViewport();
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(0);
+});

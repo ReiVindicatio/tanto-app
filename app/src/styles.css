@@ -2488,3 +2488,15 @@ body:has(.home-dock) .footer {
 .type-rest {
   color: transparent;
 }
+
+/* 答え合わせ・解説へ送るときの止まる位置（T066）：上の帯の分 */
+.result {
+  scroll-margin-top: 68px;
+}
+/* 聞き流しは、一時停止・次へのボタンが見えたまま止まる */
+.listen-answer {
+  scroll-margin-top: 132px;
+}
+.result.with-peek {
+  scroll-margin-top: 190px; /* 縁に腰かける律の分も */
+}

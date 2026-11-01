@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import ReportLink from "./ReportLink";
 import type { DataSet, Question, QuestionExplanation, SetInfo } from "./types";
 import ExplanationView from "./ExplanationView";
@@ -8,12 +8,20 @@ import LawNote from "./LawNote";
 import { Progress } from "./screens/common";
 import { QuestionResult, type QuestionResultItem } from "./ResultView";
 import { RitsuDock, useIdle } from "./Ritsu";
+import { revealBelow } from "./scrollReveal";
 import { characterOn } from "./character";
 
 export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; data: DataSet; onExit: () => void }) {
   const [i, setI] = useState(0);
   const [picks, setPicks] = useState<(number | null)[]>(() => emptyPicks(data.questions[0]));
   const [result, setResult] = useState<Grade | null>(null);
+  // 採点したら、結果が見える位置まで送る（T066）
+  const resultEl = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!result) return;
+    const f = requestAnimationFrame(() => revealBelow(resultEl.current));
+    return () => cancelAnimationFrame(f);
+  }, [result]);
   const [showChar] = useState(characterOn);
   const idle = useIdle(120000);
   const [scores, setScores] = useState<QuestionResultItem[]>([]);
@@ -130,7 +138,7 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
         </div>
       ) : (
         <>
-          <div className={`result ${result.full ? "ok" : "ng"}`}>
+          <div ref={resultEl} className={`result ${result.full ? "ok" : "ng"}`}>
             <div className="big">
               {result.earned} / {q.points} 点
             </div>

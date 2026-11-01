@@ -23,6 +23,7 @@ import {
   PAUSES,
   RATES,
   setListenPrefs,
+  speechRate,
   speak,
   wait,
   VOICE_NOS,
@@ -32,6 +33,7 @@ import { characterImage, characterOn, listenFace, markTipSeen, tipSeen, type Exp
 import { ALL_LINES, pickLine } from "./ritsu/lines";
 import { bgFor, currentTheme } from "./ritsu/themes";
 import { progressNow } from "./progress";
+import { revealBelow } from "./scrollReveal";
 import { Bubble, RitsuDock } from "./Ritsu";
 
 type Phase = "ready" | "reading" | "thinking" | "answer" | "paused" | "done";
@@ -97,6 +99,21 @@ export default function ListenPlayer({
   const [doneLine] = useState(() => pickLine("listen_done", progressNow().level));
   // 答えを読んだ肢（答えと解説を画面に出す。一時停止しても出したまま）
   const [revealed, setRevealed] = useState<string | null>(null);
+  // 答えを読みはじめたら、解説が見える位置まで送る。次の肢（読み上げ）に移ったら、送った分を上へ戻す（T066）
+  const answerEl = useRef<HTMLDivElement>(null);
+  const scrolled = useRef(false);
+  useEffect(() => {
+    if (phase === "answer") {
+      const f = requestAnimationFrame(() => {
+        if (revealBelow(answerEl.current)) scrolled.current = true;
+      });
+      return () => cancelAnimationFrame(f);
+    }
+    if (phase === "reading" && scrolled.current) {
+      scrolled.current = false;
+      window.scrollTo({ top: 0, behavior: window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    }
+  }, [phase]);
   const [answered, setAnswered] = useState<boolean | null>(null);
   const [stats, setStats] = useState({ heard: 0, answered: 0, correct: 0 });
   const [noVoice, setNoVoice] = useState(false);
@@ -159,8 +176,8 @@ export default function ListenPlayer({
     // 読む速さは、いま流している音声にもすぐ当てる（考える間の無音は変えない。変えると考える時間が縮む）
     const a = audio.current;
     if (a && !a.src.includes("/sounds/silence-")) {
-      a.defaultPlaybackRate = p.rate;
-      a.playbackRate = p.rate;
+      a.defaultPlaybackRate = speechRate(p.rate);
+      a.playbackRate = speechRate(p.rate);
     }
   };
 
@@ -183,7 +200,7 @@ export default function ListenPlayer({
 
   /** 作っておいた音声で読む（声1なら 声1 → 声2 の順に試す）。音声がなければ端末の読み上げで text を読む */
   async function say(cardId: string, part: "q" | "a", text: string, signal: AbortSignal) {
-    const rate = prefsRef.current.rate;
+    const rate = speechRate(prefsRef.current.rate);
     for (const url of audioUrls(cardId, part, prefsRef.current.voice)) {
       if (await play(el(), url, rate, signal)) return;
       if (signal.aborted) return;
@@ -194,8 +211,9 @@ export default function ListenPlayer({
   /** 押した答えの「正解。」「不正解。」を、選んだ声で（なければ声2で）流す */
   async function sayClip(ok: boolean, signal: AbortSignal) {
     const name = ok ? "seikai" : "fuseikai";
-    if (await play(el(), clipUrl(name, prefsRef.current.voice), prefsRef.current.rate, signal)) return;
-    if (!signal.aborted && prefsRef.current.voice !== 2) await play(el(), clipUrl(name, 2), prefsRef.current.rate, signal);
+    const rate = speechRate(prefsRef.current.rate);
+    if (await play(el(), clipUrl(name, prefsRef.current.voice), rate, signal)) return;
+    if (!signal.aborted && prefsRef.current.voice !== 2) await play(el(), clipUrl(name, 2), rate, signal);
   }
 
   /** 次の肢の音声を先に取っておく（切り替わりの待ちを減らす。失敗してもかまわない） */
@@ -439,7 +457,7 @@ export default function ListenPlayer({
 
       {/* 答えを読んだら、答えと解説を出す（T064）。一時停止・次へのボタンが動かないよう、その下に置く */}
       {s && revealed === s.id && (phase === "answer" || phase === "paused") && (
-        <div className="listen-answer">
+        <div className="listen-answer" ref={answerEl}>
           <div>
             この記述は <strong>{s.truth_at_exam!.value ? "○（正しい）" : "×（誤り）"}</strong>
             <span className="muted small">　出題時点の公式の解答による</span>

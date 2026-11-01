@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import data from "./lines.json";
 import { trackVoice } from "./lipsync";
+import { BASE_RATE } from "../listen";
 import type { Expression } from "../character";
 
 export type Line = { id: string; scene: string; text: string; face: Expression; level: number; voice?: boolean };
@@ -85,6 +86,8 @@ export function playLine(l: Line): void {
   playing?.pause();
   if (!url) return;
   const a = new Audio(url);
+  a.defaultPlaybackRate = BASE_RATE; // 読み上げと同じ基準の速さ（T066）。セリフは聞き流しの「読む速さ」の設定には合わせない
+  a.playbackRate = BASE_RATE;
   playing = a;
   trackVoice(a, url); // 口パクを声に合わせる
   a.onplaying = () => setSpeaking(true);

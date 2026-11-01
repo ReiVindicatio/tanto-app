@@ -64,7 +64,7 @@ async function stub(page: Page, opts: { audioMissing: "all" | "voice1" | "none" 
     };
     Object.defineProperty(window, "speechSynthesis", { value: synth, configurable: true });
     Object.defineProperty(window, "SpeechSynthesisUtterance", { value: U, configurable: true });
-    if (!localStorage.getItem("tanto.listen.v1")) localStorage.setItem("tanto.listen.v1", JSON.stringify({ rate: 1, pause: 3 }));
+    if (!localStorage.getItem("tanto.listen.v2")) localStorage.setItem("tanto.listen.v2", JSON.stringify({ rate: 1, pause: 3 }));
   }, opts.audioMissing);
 }
 
@@ -202,7 +202,7 @@ test("読む速さは、いま流している音声にもすぐ当たる（考�
   for (let k = 0; k < 3; k++) {
     await page.getByRole("button", { name: "1.5倍" }).click();
     const { src, rate } = await page.evaluate(() => ({ src: (window as any).__audio.src as string, rate: (window as any).__audio.playbackRate as number }));
-    expect(rate).toBe(src.includes("/sounds/silence-") ? 1 : 1.5);
+    expect(rate).toBe(src.includes("/sounds/silence-") ? 1 : 1.875); // 画面の1.5倍 × 基準の速さ 1.25（T066）
     await page.getByRole("button", { name: "1倍", exact: true }).click();
     await page.waitForTimeout(150);
   }
@@ -236,4 +236,36 @@ test("一時停止してすぐ再開すると、律はこっくり（目を閉�
   await page.getByRole("button", { name: "▶ 再開" }).click();
   await expect(perch).not.toHaveAttribute("data-gesture", /.+/, { timeout: 3000 });
   await expect(perch).toHaveClass(/\bsit\b/);
+});
+
+test("答えを読みはじめると解説が見える位置まで送り、次の肢で上へ戻す（T066）", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 460 });
+  await stub(page, { audioMissing: "none" });
+  await start(page);
+  await page.locator(".listen-actions").getByRole("button", { name: "○", exact: true }).click();
+  await expect(page.locator(".listen-answer")).toBeInViewport();
+  await expect(page.locator(".toolbar")).toContainText("2肢目", { timeout: 8000 });
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
+});
+
+test("読む速さの既定は基準の速さ（1倍＝今までの1.25倍）。前に覚えた1.5倍は同じ速さの1.2倍に移す（T066）", async ({ page }) => {
+  await stub(page, { audioMissing: "none" });
+  await page.addInitScript(() => {
+    localStorage.removeItem("tanto.listen.v2");
+    localStorage.setItem("tanto.listen.v1", JSON.stringify({ rate: 1.5, pause: 3 }));
+    const Orig = window.Audio;
+    (window as any).Audio = function (...args: any[]) {
+      const a = new Orig(...args);
+      (window as any).__audio = a;
+      return a;
+    };
+  });
+  await openHome(page);
+  await page.getByRole("button", { name: /聞き流す/ }).click();
+  await expect(page.getByRole("group", { name: "読む速さ" }).getByRole("button", { name: "1.2倍" })).toHaveAttribute("aria-pressed", "true");
+  await page.getByRole("button", { name: "▶ 聞きはじめる" }).click();
+  // 読み上げの音声は 1.2 × 1.25 ＝ 1.5（考える間の無音は1のまま）
+  await expect
+    .poll(() => page.evaluate(() => ({ src: (window as any).__audio.src as string, rate: (window as any).__audio.playbackRate as number })).then((a) => (a.src.includes("/audio/tts/") ? a.rate : null)))
+    .toBe(1.5);
 });
