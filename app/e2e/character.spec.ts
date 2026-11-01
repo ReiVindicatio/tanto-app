@@ -211,3 +211,27 @@ test("特別な衣装（T069）：視差効果を減らす設定なら全画面�
   await expect(page.locator(".special-move")).toHaveCount(0);
   await context.close();
 });
+
+test("特別な衣装の試作：案のタブで切り替えると、画面の飾りが変わる。夜空のタブが出る", async ({ page }) => {
+  await page.route("**/special/**", (r) => r.fulfill({ status: 404 }));
+  await beAdmin(page);
+  await page.goto("/");
+  await page.evaluate(() => {
+    localStorage.setItem("tanto.character.theme.v1", "hoshiyomi");
+    localStorage.setItem("tanto.character.revealed.v1", JSON.stringify(["hoshiyomi"]));
+    localStorage.setItem("tanto.special.daily.v1", new Date().toDateString());
+  });
+  await page.goto("/ritsu");
+  const html = page.locator("html");
+  await expect(html).toHaveAttribute("data-fx", /\bworld\b/);
+  await expect(html).toHaveAttribute("data-theme", "dark");
+  await page.locator(".ritsu-tabs button", { hasText: "夜空" }).click();
+  await expect(page.locator(".sky-svg")).toBeVisible();
+  await page.locator(".ritsu-tabs button", { hasText: "案" }).click();
+  await page.locator(".ideas-list label", { hasText: "アプリ全体が夜空" }).locator("input").uncheck();
+  await expect(html).not.toHaveAttribute("data-fx", /\bworld\b/);
+  await page.locator(".ideas-list label", { hasText: "自分の夜空" }).locator("input").uncheck();
+  await expect(page.locator(".ritsu-tabs button", { hasText: "夜空" })).toHaveCount(0);
+  await page.locator(".ideas-tab button", { hasText: "全部オフ" }).click();
+  await expect(html).toHaveAttribute("data-fx", "");
+});

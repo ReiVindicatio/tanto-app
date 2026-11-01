@@ -2629,7 +2629,7 @@ html[data-costume="hoshiyomi"] .perch-emote {
 .perch-float {
   position: relative;
 }
-html[data-fx~="moon"] .perch.sit {
+html[data-fx~="moon"] .perch.dock-ritsu.sit {
   transform: translateY(-34px);
 }
 html[data-fx~="moon"] .perch.sit .perch-float {
@@ -2669,7 +2669,10 @@ html[data-fx~="bar"] .tabbar {
   background-image: radial-gradient(1px 1px at 12% 30%, #fff6d8, transparent), radial-gradient(1px 1px at 37% 70%, #fff6d8, transparent), radial-gradient(1.5px 1.5px at 63% 25%, #ffe9a0, transparent), radial-gradient(1px 1px at 88% 60%, #fff6d8, transparent), linear-gradient(#141a3d, #1d2447);
 }
 html[data-fx~="bar"] .tabbar button {
-  color: #f1e6c6;
+  color: #cfd3e6;
+}
+html[data-fx~="bar"] .tabbar button.active {
+  color: #e8c35a;
 }
 /* #5 相棒の星の子 */
 .star-pal {
@@ -2875,17 +2878,22 @@ html[data-fx~="world"] {
   --border: #3d4678;
   --border-subtle: #30386a;
 }
-html[data-fx~="world"] button:not(.link):not(.secondary):not(.mark):not(.special-move) {
+/* 金の地の文字は濃い色に（:where で詳しさを上げず、ボタンごとの色の指定はそのまま） */
+:where(html[data-fx~="world"]) button {
+  color: #1d2447;
+}
+html[data-fx~="world"] .card.hero .segmented button.chosen,
+html[data-fx~="world"] .ritsu-tabs button.chosen {
   color: #1d2447;
 }
 /* #17 本物の月 */
 .real-moon {
   position: absolute;
-  top: 10px;
-  left: 14px;
+  bottom: 10px;
+  left: 12px;
   z-index: 1;
-  width: 54px;
-  height: 54px;
+  width: 46px;
+  height: 46px;
   padding: 0;
   border: none;
   background: none;
@@ -2895,9 +2903,14 @@ html[data-fx~="world"] button:not(.link):not(.secondary):not(.mark):not(.special
   display: block;
 }
 /* #2 立ち絵の動画 */
+.ritsu-stage .stage-bubble {
+  position: relative;
+  z-index: 2;
+}
 .stage-video {
   position: absolute;
   inset: 0;
+  z-index: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
