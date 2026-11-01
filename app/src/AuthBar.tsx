@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { AuthClient } from "./auth";
+import { useAdmin } from "./admin";
 import type { DeleteResult, SyncedStore, SyncStatus } from "./sync";
 
 function useSyncStatus(sync: SyncedStore): SyncStatus {
@@ -34,6 +35,7 @@ export function SyncBadge({ sync }: { sync: SyncedStore }) {
 /** マイページのアカウント欄：ログイン・ログアウトと同期の状態（T003・T025） */
 export default function AuthPanel({ auth, sync }: { auth: AuthClient; sync: SyncedStore }) {
   const status = useSyncStatus(sync);
+  const admin = useAdmin();
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -74,6 +76,7 @@ export default function AuthPanel({ auth, sync }: { auth: AuthClient; sync: Sync
     <div className="authbar">
       <div>
         <strong>{status.user.name}</strong>
+        {admin && <span className="admin-badge">管理者</span>}
         <span className="small muted account-sync">　{statusLabel(status)}</span>
       </div>
       <button className="secondary" disabled={busy} onClick={signOut}>

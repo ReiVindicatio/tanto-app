@@ -2500,3 +2500,17 @@ body:has(.home-dock) .footer {
 .result.with-peek {
   scroll-margin-top: 190px; /* 縁に腰かける律の分も */
 }
+
+/* 管理者の印（T068） */
+.admin-badge {
+  display: inline-block;
+  margin: 0 6px;
+  padding: 0 7px;
+  border-radius: 999px;
+  border: 1px solid var(--brand);
+  color: var(--brand);
+  font-size: 0.72rem;
+  font-weight: bold;
+  line-height: 1.6;
+  white-space: nowrap;
+}

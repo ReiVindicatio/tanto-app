@@ -153,4 +153,5 @@ test("衣装の開き方（T068）：未開放はレベルや模試の条件を�
   await page.reload();
   await expect(page.locator(".theme-tile.locked")).toHaveCount(0);
   await expect(tile("ひだまりニット")).toHaveCount(1);
+  await expect(page.locator(".appbar .admin-badge")).toHaveText("管理者");
 });
