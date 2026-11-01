@@ -22,18 +22,20 @@ TYPES = {".webp": "image/webp", ".mp4": "video/mp4", ".mp3": "audio/mpeg"}
 
 
 def key_out(frame, green: tuple[int, int, int]):
-    """背景の色に近いところを透明にし、縁に残る色を抑える"""
-    from PIL import Image
-
+    """背景の色で緑が勝っているところを透明にし、縁に残る緑を抑える。
+    色の近さだけで抜くと、金の天秤のような近い色まで消えた（2026-11-01）ので、緑が赤と青より強いことを条件にする"""
     im = frame.convert("RGBA")
     px = im.load()
+    full = green[1] - max(green[0], green[2])  # 背景で緑がどれだけ勝っているか
     for y in range(im.height):
         for x in range(im.width):
             r, g, b, _ = px[x, y]
-            d = abs(r - green[0]) + abs(g - green[1]) + abs(b - green[2])
-            over = g - max(r, b)  # 緑がどれだけ勝っているか
-            a = 0 if d < 120 or over > 90 else min(255, int(max(0, 90 - over) * 255 / 60)) if over > 30 else 255
-            if over > 0 and a:  # 縁の緑を抑える
+            over = g - max(r, b)
+            near = abs(r - green[0]) + abs(g - green[1]) + abs(b - green[2]) < 150
+            a = 255
+            if near and over > 0:
+                a = round(255 * (1 - min(1, over / (full * 0.6))))
+            if over > 0 and a:
                 g = max(r, b)
             px[x, y] = (r, g, b, a)
     return im
