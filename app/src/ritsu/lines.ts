@@ -5,6 +5,8 @@ import data from "./lines.json";
 import { trackVoice } from "./lipsync";
 import { BASE_RATE } from "../listen";
 import type { Expression } from "../character";
+import { currentTheme, isSpecial, isUnlocked, THEMES } from "./themes";
+import { fxOn } from "./fx";
 
 /** special＝特別な衣装（T069）のセリフ。声は R2 にあり、許された人にだけ渡る。style は声を作るときの演技の指示 */
 export type Line = { id: string; scene: string; text: string; face: Expression; level: number; voice?: boolean; special?: string; style?: string };
@@ -24,10 +26,22 @@ export function seeded(seed: number): () => number {
 
 /** その場面で、今のレベルで開いているセリフ */
 export function linesOf(scene: string, level: number): Line[] {
+  // 役になりきる（特別な衣装の試作）：着ている間は、その場面のセリフを差し替える
+  const worn = currentTheme(Infinity);
+  if (isSpecial(worn) && fxOn("role")) {
+    const role = ALL_LINES.filter((l) => l.scene === `as_${worn}_${scene}`);
+    if (role.length) return role;
+  }
   return ALL_LINES.filter((l) => l.scene === scene && l.level <= level);
 }
 
 export function pickLine(scene: string, level: number, rand = Math.random): Line | undefined {
+  // ふつうの服の律が、持っている特別な衣装のことを話す（たまに）
+  if (scene === "tap" && !isSpecial(currentTheme(Infinity)) && fxOn("remember") && rand() < 0.15) {
+    const t = THEMES.find((x) => isSpecial(x.id) && isUnlocked(x, Infinity));
+    const ls = t ? ALL_LINES.filter((l) => l.scene === `remember_${t.id}`) : [];
+    if (ls.length) return ls[Math.floor(rand() * ls.length)];
+  }
   const ls = linesOf(scene, level);
   return ls.length ? ls[Math.floor(rand() * ls.length)] : undefined;
 }

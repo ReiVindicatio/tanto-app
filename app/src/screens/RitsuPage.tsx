@@ -8,7 +8,11 @@ import { Bubble } from "../Ritsu";
 import { BACKGROUNDS, chosenBg, currentTheme, isRevealed, isSpecial, isUnlocked, motionOf, nextTheme, setBg, setTheme, themeById, THEMES, unlockLabel } from "../ritsu/themes";
 import { ALL_LINES, lineText, linesOf, pickLine, playLine, useSpeaking, type Line } from "../ritsu/lines";
 import { useAdmin } from "../admin";
-import { playMove, smallMove, StarFall } from "../ritsu/special";
+import { playMove, smallMove, StarFall, TowerWind } from "../ritsu/special";
+import { fxOn, useFx } from "../ritsu/fx";
+import { moonKind, moonPath } from "../ritsu/moon";
+import { evoStage, EVO_NAMES } from "../ritsu/themes";
+import { IdeasTab, Showcase, SkyTab, StoryTab } from "./RitsuSpecial";
 import { useMouthOpen } from "../ritsu/lipsync";
 import { Progress } from "./common";
 
@@ -57,7 +61,7 @@ function sceneName(scene: string): string {
   return SCENE_NAMES[scene] ?? scene;
 }
 
-type Tab = "theme" | "face" | "bg" | "lines" | "album" | "profile";
+type Tab = "theme" | "face" | "bg" | "lines" | "album" | "profile" | "sky" | "story" | "ideas";
 const TABS: { id: Tab; name: string }[] = [
   { id: "theme", name: "衣装" },
   { id: "face", name: "表情" },
@@ -74,11 +78,13 @@ const DOZE_AFTER = 25000;
 export default function RitsuPage() {
   const p = progressNow();
   const admin = useAdmin();
+  useFx();
   const [theme, setThemeState] = useState(() => currentTheme(p.level));
   const [bg, setBgState] = useState(chosenBg);
   const [face, setFace] = useState<Expression>("smile");
   const [said, setSaid] = useState<Line | undefined>(() => pickLine("tap", 1));
   const [tab, setTab] = useState<Tab>("theme");
+  const [videoOk, setVideoOk] = useState(true);
   const [bump, setBump] = useState(0); // 押したときの小さな跳ね（描き直しのきっかけ）
   const next = nextTheme(p.level);
   const doze = useRef<number | undefined>(undefined);
@@ -141,6 +147,15 @@ export default function RitsuPage() {
     wake();
   }
 
+  const wearing = isSpecial(theme);
+  const special = THEMES.find((t) => isSpecial(t.id) && isUnlocked(t, p.level));
+  const useRealMoon = wearing && fxOn("realmoon") && bg === "auto";
+  const showVideo = wearing && fxOn("stagevideo") && videoOk && !speaking && face === "smile";
+  // 立ち絵のにっこりは、色違いと進化の段階で変わる
+  const sprite = !wearing || face !== "smile" ? characterImage("base", face, theme)
+    : fxOn("dawn") ? `${charDir(theme)}base-smile-dawn.webp`
+    : fxOn("evolve") && evoStage() > 0 ? `${charDir(theme)}base-smile-evo${evoStage() + 1}.webp`
+    : characterImage("base", face, theme);
   // 特別な衣装（T069）は、開いている人にだけ見せる（買えるようになるまで）
   const shownThemes = THEMES.filter((t) => !isSpecial(t.id) || isUnlocked(t, p.level));
   const lineBook = ALL_LINES.filter((l) => !l.special || admin);
@@ -160,8 +175,18 @@ export default function RitsuPage() {
       </div>
 
       {/* 立ち絵：背景つきで上に残す（スクロールしても、選んだ衣装・表情・背景がすぐ見える） */}
-      <div className="ritsu-stage" style={{ backgroundImage: `url(${bgUrl(theme, bg)})` }}>
-        {isSpecial(theme) && <StarFall />}
+      {wearing && fxOn("wind") && <TowerWind />}
+      <div className="ritsu-stage" style={{ backgroundImage: `url(${useRealMoon ? `${charDir(theme)}bg-nomoon.webp` : bgUrl(theme, bg)})` }}>
+        {wearing && <StarFall />}
+        {useRealMoon && (
+          <button className="real-moon" aria-label="今夜の月" onClick={() => say(ALL_LINES.filter((l) => l.scene === `moon_${theme}`)[moonKind(new Date())])}>
+            <svg viewBox="-24 -24 48 48" aria-hidden="true">
+              <circle r="20" fill="#39426e" opacity="0.5" />
+              <path d={moonPath(new Date(), 20)} fill="#fff4c9" />
+            </svg>
+          </button>
+        )}
+        {showVideo && <video className="stage-video" src={`${charDir(theme)}idle-stage.mp4`} autoPlay loop muted playsInline onError={() => setVideoOk(false)} />}
         {said && (
           <Bubble tail="right" className="vn-bubble stage-bubble">
             {lineText(said, { n: "いくつか" })}
@@ -169,7 +194,7 @@ export default function RitsuPage() {
         )}
         <button className="ritsu-sprite-button" aria-label="律に話しかける" onClick={touch}>
           <span key={bump} className={`sprite-wrap${bump ? " bump" : ""}${face === "sleepy" ? " dozing" : ""}${speaking && m.talkBase.includes(face) ? " talking" : ""}${mouthOpen ? " mouth-open" : ""}`}>
-            <img className="vn-sprite" src={characterImage("base", face, theme)} alt="" data-face={face} />
+            <img className={`vn-sprite${showVideo ? " under-video" : ""}`} src={sprite} alt="" data-face={face} />
             {/* 口パク：律の声が流れている間 */}
             {speaking && m.talkBase.includes(face) && (
               <img className="sprite-talk" src={`${charDir(theme)}base-${face}-talk.webp`} alt="" aria-hidden="true" />
@@ -177,6 +202,7 @@ export default function RitsuPage() {
           </span>
         </button>
       </div>
+      {wearing && fxOn("evolve") && <div className="evo-name">{EVO_NAMES[evoStage()]}の{themeById(theme)?.name.replace(/^.*の/, "")}</div>}
       {admin && isSpecial(theme) && (
         <div className="row special-preview">
           <span className="muted small">管理者：演出を確かめる</span>
@@ -197,13 +223,17 @@ export default function RitsuPage() {
       </div>
 
       <div className="ritsu-tabs" role="tablist">
-        {TABS.filter((t) => t.id !== "album" || revealed.length > 0).map((t) => (
+        {[...TABS, ...(wearing && fxOn("sky") ? [{ id: "sky" as Tab, name: "夜空" }] : []), ...(wearing && fxOn("story") ? [{ id: "story" as Tab, name: "物語" }] : []), ...(admin && special ? [{ id: "ideas" as Tab, name: "案" }] : [])].filter((t) => t.id !== "album" || revealed.length > 0).map((t) => (
           <button key={t.id} role="tab" aria-selected={tab === t.id} className={tab === t.id ? "chosen" : ""} onClick={() => setTab(t.id)}>
             {t.name}
           </button>
         ))}
       </div>
 
+      {tab === "sky" && <SkyTab theme={theme} />}
+      {tab === "story" && <StoryTab theme={theme} admin={admin} />}
+      {tab === "ideas" && <IdeasTab theme={special?.id ?? theme} />}
+      {tab === "theme" && admin && special && fxOn("showcase") && <Showcase theme={special.id} name={special.name} desc={special.desc} />}
       {tab === "theme" && (
         <div className="theme-grid">
           {shownThemes.map((t) => {

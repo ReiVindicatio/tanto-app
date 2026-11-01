@@ -8,6 +8,7 @@
 """
 from __future__ import annotations
 
+import json
 import subprocess
 import sys
 import tempfile
@@ -79,13 +80,18 @@ def put(args: tuple[Path, str]) -> str:
 
 def upload(cid: str) -> None:
     src = SPECIAL / cid
-    files = [f for f in sorted(src.rglob("*")) if f.suffix in TYPES]
-    print(f"{len(files)} 個を上げる", flush=True)
+    done_path = SPECIAL / f"{cid}.uploaded.json"  # 上げたものの更新時刻（変わったものだけ上げ直す）
+    done = json.loads(done_path.read_text(encoding="utf-8")) if done_path.exists() else {}
+    all_files = [f for f in sorted(src.rglob("*")) if f.suffix in TYPES]
+    files = [f for f in all_files if done.get(str(f.relative_to(src))) != f.stat().st_mtime]
+    print(f"{len(files)} 個を上げる（全 {len(all_files)} 個）", flush=True)
     jobs = [(f, f"special/{cid}/{f.relative_to(src).as_posix()}") for f in files]
     with ThreadPoolExecutor(6) as ex:
         for n, _ in enumerate(ex.map(put, jobs), 1):
             if n % 20 == 0:
                 print(f"  {n}/{len(jobs)}", flush=True)
+    done.update({str(f.relative_to(src)): f.stat().st_mtime for f in files})
+    done_path.write_text(json.dumps(done), encoding="utf-8")
     print("✅ 上げた", flush=True)
 
 

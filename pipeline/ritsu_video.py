@@ -35,11 +35,14 @@ def post(url: str, body: dict) -> dict:
         return json.loads(r.read())
 
 
-def generate(prompt: str, image: Path, out: Path, seconds: int, aspect: str) -> None:
+def generate(prompt: str, image: Path, out: Path, seconds: int, aspect: str, last: Path | None = None) -> None:
+    """last：最後のコマの絵（最初と同じ絵を渡すと、ループのつなぎ目が目立たない）"""
     body = {
         "instances": [{"prompt": prompt, "image": {"bytesBase64Encoded": base64.b64encode(image.read_bytes()).decode(), "mimeType": "image/png"}}],
         "parameters": {"sampleCount": 1, "durationSeconds": seconds, "aspectRatio": aspect, "generateAudio": False, "resolution": "720p"},
     }
+    if last:
+        body["instances"][0]["lastFrame"] = {"bytesBase64Encoded": base64.b64encode(last.read_bytes()).decode(), "mimeType": "image/png"}
     base = f"https://{REGION}-aiplatform.googleapis.com/v1/projects/{PROJECT}/locations/{REGION}/publishers/google/models/"
     for model in MODELS:
         try:

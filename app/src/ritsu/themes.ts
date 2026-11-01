@@ -3,6 +3,9 @@ import { progressNow } from "../progress";
 import costumes from "./costumes.json";
 import { isAdmin } from "../admin";
 import { mockSubmits } from "../extraXp";
+import { currentState } from "../learning";
+import { forceDark } from "../theme";
+import { fxOn, IDEAS, onFxChange } from "./fx";
 
 /** 動きのコマ（T065）。あるものだけ動かす：blink＝目を閉じた絵がある表情、swing＝足を振ったコマがある表情、kick＝寝そべりの足のコマ、
  *  hop＝跳ねたところの絵がある表情、mid＝座る→寝そべるの間の絵 */
@@ -114,8 +117,61 @@ export function setTheme(id: string): void {
 /** 特別な衣装を着ている間、画面の飾りを変える（html の data-costume。styles.css） */
 export function applyCostume(): void {
   const id = currentTheme();
-  if (isSpecial(id)) document.documentElement.dataset.costume = id;
-  else delete document.documentElement.dataset.costume;
+  const root = document.documentElement;
+  if (isSpecial(id)) {
+    root.dataset.costume = id;
+    root.dataset.fx = IDEAS.filter((i) => fxOn(i.id)).map((i) => i.id).join(" ");
+    root.dataset.evo = String(fxOn("evolve") ? evoStage() : 0);
+    root.style.setProperty("--costume-bg", `url(${import.meta.env.BASE_URL}special/${id}/bg-nomoon.webp)`);
+    forceDark(fxOn("world"));
+  } else {
+    delete root.dataset.costume;
+    delete root.dataset.fx;
+    delete root.dataset.evo;
+    root.style.removeProperty("--costume-bg");
+    forceDark(false);
+  }
+}
+onFxChange(applyCostume);
+
+// ---- 衣装の進化（docs/ritsu-special-ideas.md の12）：正解した肢の数で段階が上がる。減らない ----
+
+export const EVO_NAMES = ["見習い", "星読み", "裁定者"];
+const EVO_AT = [0, 300, 1000];
+const EVO_KEY = "tanto.special.evo.v1";
+
+/** 一度でも正解した肢の数 */
+export function solvedCount(): number {
+  let n = 0;
+  for (const r of currentState().history.values()) if (r.correct > 0) n++;
+  return n;
+}
+
+/** 確かめるために段階を指定する（null＝実際の数） */
+export function evoOverride(): number | null {
+  try {
+    const v = localStorage.getItem(EVO_KEY);
+    return v === null ? null : Number(v);
+  } catch {
+    return null;
+  }
+}
+
+export function setEvoOverride(v: number | null): void {
+  try {
+    if (v === null) localStorage.removeItem(EVO_KEY);
+    else localStorage.setItem(EVO_KEY, String(v));
+  } catch {
+    // 覚えられなくても動く
+  }
+  applyCostume();
+}
+
+export function evoStage(): number {
+  const o = evoOverride();
+  if (o !== null) return o;
+  const n = solvedCount();
+  return EVO_AT.reduce((s, at, k) => (n >= at ? k : s), 0);
 }
 
 /** 次に開くテーマ */

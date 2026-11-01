@@ -35,6 +35,7 @@ import { currentTheme } from "./ritsu/themes";
 import { progressNow } from "./progress";
 import { revealBelow } from "./scrollReveal";
 import { Bubble, RitsuDock } from "./Ritsu";
+import { answerFx } from "./ritsu/special";
 
 type Phase = "ready" | "reading" | "thinking" | "answer" | "paused" | "done";
 /** 残りがこれだけになったら次を読み足す */
@@ -347,6 +348,7 @@ export default function ListenPlayer({
     if ((phase !== "reading" && phase !== "thinking") || answeredRef.current !== null) return;
     const s = order.current[i];
     const ok = v === s.truth_at_exam!.value;
+    answerFx(ok, ok ? streaks.correct + 1 : 0, null, false);
     recordAnswer(s.id, ok);
     setStreaks((x) => (ok ? { correct: x.correct + 1, wrong: 0 } : { correct: 0, wrong: x.wrong + 1 }));
     answeredRef.current = ok;

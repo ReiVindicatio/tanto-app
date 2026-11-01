@@ -13,10 +13,10 @@ import { cardIdOf } from "./learning";
 import SpeakButton from "./SpeakButton";
 import { characterOn, LINES, markTipSeen, reactionFace, tipSeen } from "./character";
 import { PerchFigure, RitsuDock, useIdle } from "./Ritsu";
-import { celebrateMove, smallMove } from "./ritsu/special";
+import { answerFx, celebrateMove, redeemLine, smallMove } from "./ritsu/special";
 import { milestones, progressNow } from "./progress";
 import { shuffle } from "./shuffle";
-import { recordAnswer } from "./learning";
+import { currentState, recordAnswer } from "./learning";
 import { Progress } from "./screens/common";
 import { StatementResult, type StatementResultItem } from "./ResultView";
 import type { More, OriginOf } from "./play";
@@ -66,6 +66,7 @@ export default function StatementDrill({
   const [showQuestion, setShowQuestion] = useState(false);
   /** 答えたときに、レベルが上がった・今日の目標に届いた（T029） */
   const [celebrate, setCelebrate] = useState<{ levelUp: number | null; goalReached: boolean } | null>(null);
+  const [redeem, setRedeem] = useState<string | undefined>(undefined);
   /** 「終わる」を押した（答えた分だけで結果を出す） */
   const [ended, setEnded] = useState(false);
   // エンドレス：読み足した肢の束。解き直し（まちがえた肢だけなど）に入ったら、もう読み足さない
@@ -192,6 +193,9 @@ export default function StatementDrill({
     setAnswer(v);
     if (swipeTip) markTipSeen("swipe");
     const before = progressNow();
+    const wasWrong = currentState().history.get(cardIdOf(s.id))?.last === false;
+    setRedeem(v === truth && wasWrong ? redeemLine() : undefined);
+    answerFx(v === truth, v === truth ? streak + 1 : 0, swipe.el);
     recordAnswer(s.id, v === truth);
     const m = milestones(before, progressNow());
     setCelebrate(m.levelUp || m.goalReached ? m : null);
@@ -206,6 +210,7 @@ export default function StatementDrill({
     setI(i + 1);
     setAnswer(null);
     setCelebrate(null);
+    setRedeem(undefined);
     setShowQuestion(false);
     window.scrollTo(0, 0);
   }
@@ -326,6 +331,7 @@ export default function StatementDrill({
               {answer === truth ? (showChar ? "正解！" : "正解") : showChar ? "不正解…" : "不正解"}
               {answer === truth && streak >= 3 && <span className="combo">{streak}連続正解</span>}
             </div>
+            {redeem && <div className="redeem-line">★ {redeem}</div>}
             {celebrate && (
               <div className="celebrate">
                 {celebrate.levelUp && <span>🎉 レベルアップ！ Lv.{celebrate.levelUp}</span>}
