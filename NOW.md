@@ -92,3 +92,5 @@
 - 11-02 03:35 winter を作って push した（絵は人の目で確かめていない。audio/samples_char/sheets/ritsu-winter.png）
 - 11-02 04:44 halloween を作って push した（絵は人の目で確かめていない。audio/samples_char/sheets/ritsu-halloween.png）
 - 11-02 05:48 christmas を作って push した（絵は人の目で確かめていない。audio/samples_char/sheets/ritsu-christmas.png）
+- 11-02 06:57 exam を作れなかった（/private/tmp/claude-502/-Users-masato-b-saito-work-other-law-tanto-app/ba0ef277-cbeb-4d89-a1dc-faf8d38a5519/scratchpad/night-exam.log）
+- 11-02 06:57 夜の作業がすべて終わった
