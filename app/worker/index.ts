@@ -1,6 +1,6 @@
 // Cloudflare Worker の入口（T003）。/api/* だけを処理し、それ以外は静的ファイル（アプリ）を返す。
 import { handleApi, type Limiter } from "./api";
-import { firebaseVerifier, testVerifier } from "./auth";
+import { firebaseEmail, firebaseVerifier, testVerifier } from "./auth";
 import { D1AnswerRepository } from "./repository";
 import { serveAudio } from "./audio";
 
@@ -18,6 +18,8 @@ export interface Env {
   RL_USER?: RateLimit;
   /** 聞き流しの音声（T058）。設定がなければ /audio/* は 404（アプリは端末の読み上げに戻る） */
   AUDIO?: R2Bucket;
+  /** 管理者のメール（T068。カンマ区切り）。リポジトリが公開なので wrangler secret で置き、コードに書かない */
+  ADMIN_EMAILS?: string;
 }
 
 function limiter(rl?: RateLimit): Limiter | undefined {
@@ -51,6 +53,8 @@ export default {
       verify,
       limitIp: limiter(env.RL_IP),
       limitUser: limiter(env.RL_USER),
+      emailOf: testMode ? undefined : firebaseEmail(env.FIREBASE_PROJECT_ID),
+      adminEmails: env.ADMIN_EMAILS,
     });
   },
 } satisfies ExportedHandler<Env>;

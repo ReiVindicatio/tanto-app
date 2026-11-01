@@ -5,7 +5,7 @@ import { back, navigate } from "../router";
 import { progressNow } from "../progress";
 import { characterImage, FACES, type Expression } from "../character";
 import { Bubble } from "../Ritsu";
-import { BACKGROUNDS, bgFor, chosenBg, currentTheme, isRevealed, isUnlocked, motionOf, nextTheme, setBg, setTheme, themeById, THEMES } from "../ritsu/themes";
+import { BACKGROUNDS, bgFor, chosenBg, currentTheme, isRevealed, isUnlocked, motionOf, nextTheme, setBg, setTheme, themeById, THEMES, unlockLabel } from "../ritsu/themes";
 import { ALL_LINES, lineText, linesOf, pickLine, playLine, useSpeaking, type Line } from "../ritsu/lines";
 import { CHAR_BASE } from "../character";
 import { useMouthOpen } from "../ritsu/lipsync";
@@ -201,7 +201,7 @@ export default function RitsuPage() {
                 onClick={() => wear(t.id)}
               >
                 <img src={characterImage("base", "smile", t.id)} alt="" loading="lazy" />
-                <span>{ok ? t.name : `Lv.${t.level} で開く`}</span>
+                <span>{ok ? t.name : unlockLabel(t)}</span>
                 {ok && t.id !== "default" && !isRevealed(t.id) && <span className="theme-new">NEW</span>}
               </button>
             );

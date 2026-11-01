@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { createLocalJWKSet, exportJWK, generateKeyPair, SignJWT } from "jose";
 import { DAILY_ANSWERS, DAILY_BOOKMARKS, DAILY_REPORTS, handleApi, MAX_BATCH, REPORT_BODY_MAX } from "./api";
-import { firebaseVerifier, testVerifier } from "./auth";
+import { firebaseEmail, firebaseVerifier, isAdminEmail, testVerifier } from "./auth";
 import { MemoryAnswerRepository } from "./repository";
 
 const PROJECT = "tantan-test";
@@ -239,6 +239,27 @@ describe("Firebase の ID トークンの検証", async () => {
 
   it("正しいトークンなら利用者 ID を返す", async () => {
     expect(await verify(await sign({}))).toBe("uid-123");
+  });
+  it("管理者の判定（T068）：確認済みのメールだけ。設定にないメール・未確認は管理者にしない。API はメールを返さない", async () => {
+    const emailOf = firebaseEmail(PROJECT, createLocalJWKSet({ keys: [jwk] }));
+    const signEmail = (email: string, verified: boolean) =>
+      new SignJWT({ email, email_verified: verified })
+        .setProtectedHeader({ alg: "RS256", kid: "k1" })
+        .setIssuer(`https://securetoken.google.com/${PROJECT}`)
+        .setAudience(PROJECT)
+        .setSubject("uid-123")
+        .setIssuedAt()
+        .setExpirationTime("1h")
+        .sign(privateKey);
+    const me = async (token: string, adminEmails?: string) => {
+      const r = await handleApi(new Request("https://x/api/me", { headers: { authorization: `Bearer ${token}` } }), { repo: new MemoryAnswerRepository(), verify, emailOf, adminEmails });
+      return (await r.json()) as Record<string, unknown>;
+    };
+    expect(await me(await signEmail("Owner@Example.com", true), "other@example.com, owner@example.com")).toEqual({ admin: true });
+    expect(await me(await signEmail("owner@example.com", false), "owner@example.com")).toEqual({ admin: false }); // 未確認
+    expect(await me(await signEmail("someone@example.com", true), "owner@example.com")).toEqual({ admin: false });
+    expect(await me(await signEmail("owner@example.com", true))).toEqual({ admin: false }); // 設定なし
+    expect(isAdminEmail(null, "a@b")).toBe(false);
   });
   it("発行者・対象が違う、期限切れ、別の鍵で署名したトークンは拒否する", async () => {
     expect(await verify(await sign({ iss: "https://securetoken.google.com/other" }))).toBeNull();

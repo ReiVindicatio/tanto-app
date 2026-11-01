@@ -1,6 +1,8 @@
 // 律のテーマ（衣装と髪型の組。T065）。絵は public/chars/ritsu/<テーマ>/。レベルで開き、選んだテーマは端末に覚える（学習記録ではない）
 import { progressNow } from "../progress";
 import costumes from "./costumes.json";
+import { isAdmin } from "../admin";
+import { mockSubmits } from "../extraXp";
 
 /** 動きのコマ（T065）。あるものだけ動かす：blink＝目を閉じた絵がある表情、swing＝足を振ったコマがある表情、kick＝寝そべりの足のコマ、
  *  hop＝跳ねたところの絵がある表情、mid＝座る→寝そべるの間の絵 */
@@ -18,7 +20,22 @@ export type Motion = {
   talkBase: string[];
 };
 /** desc＝どんなときの衣装か（お披露目で見せる。docs/ritsu-costumes.md の設計書から） */
-export type Theme = { id: string; name: string; level: number; desc?: string; motion?: Motion; bg?: string };
+export type Theme = {
+  id: string;
+  name: string;
+  /** 開くレベル（unlock がないとき）。買う衣装・節目の衣装では並びにだけ使う */
+  level: number;
+  /** 開き方（T068）。なければレベル。mockN＝模試を N 回提出。paid＝購入（買えるようになるまで開かない） */
+  unlock?: string;
+  desc?: string;
+  motion?: Motion;
+  bg?: string;
+};
+
+/** 並び：レベルで開くものをレベルの順に、そのあとに節目の衣装 */
+function byUnlock(a: Theme, b: Theme): number {
+  return Number(!!a.unlock) - Number(!!b.unlock) || a.level - b.level;
+}
 
 /** 絵をひととおりそろえたテーマの動き（2026-10-27 の作り方。char_image.py の motion_set・extras_set） */
 const FULL_MOTION: Motion = {
@@ -35,7 +52,7 @@ const FULL_MOTION: Motion = {
 /** 開くレベルの順。絵をそろえたテーマだけを載せる。いつもの服のほかは costumes.json（pipeline/ritsu_theme.py build が足す） */
 export const THEMES: Theme[] = [
   { id: "default", name: "いつもの", level: 1, bg: "room", motion: { ...FULL_MOTION } },
-  ...(costumes as Omit<Theme, "motion">[]).map((c) => ({ ...c, motion: { ...FULL_MOTION } })),
+  ...(costumes as Omit<Theme, "motion">[]).map((c) => ({ ...c, motion: { ...FULL_MOTION } })).sort(byUnlock),
 ];
 
 const NO_MOTION: Motion = { blink: [], swing: [], kick: false, hop: [], mid: false, gestures: [], talk: [], talkBase: [] };
@@ -50,8 +67,21 @@ export function themeById(id: string): Theme | undefined {
   return THEMES.find((t) => t.id === id);
 }
 
+/** 開いているか。管理者は全部。一度お披露目を見た衣装は、条件を見直しても開いたまま */
 export function isUnlocked(t: Theme, level: number): boolean {
+  if (t.id === "default" || isAdmin() || isRevealed(t.id)) return true;
+  if (t.unlock === "paid") return false;
+  const m = t.unlock?.match(/^mock(\d+)$/);
+  if (m) return mockSubmits() >= Number(m[1]);
   return level >= t.level;
+}
+
+/** まだ開いていない衣装の案内 */
+export function unlockLabel(t: Theme): string {
+  if (t.unlock === "paid") return "特別な衣装";
+  const m = t.unlock?.match(/^mock(\d+)$/);
+  if (m) return `模試を${m[1]}回提出で開く`;
+  return `Lv.${t.level} で開く`;
 }
 
 /** 選んだテーマ（まだ開いていない・なくなったテーマなら「いつもの」） */
@@ -76,7 +106,7 @@ export function setTheme(id: string): void {
 
 /** 次に開くテーマ */
 export function nextTheme(level: number): Theme | undefined {
-  return THEMES.find((t) => t.level > level);
+  return THEMES.find((t) => !t.unlock && t.level > level);
 }
 
 // ---- お披露目（T065）：新しいテーマが開いたら、一枚絵と律のセリフで見せる。見たかどうかは端末に覚える ----

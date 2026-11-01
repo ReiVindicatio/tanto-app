@@ -5,6 +5,7 @@ import { initLearning, reloadLearning } from "./learning";
 import { initBookmarks, reloadBookmarks } from "./bookmarks";
 import { LocalStorageStore } from "./store";
 import { createAuthClient } from "./auth";
+import { refreshAdmin } from "./admin";
 import { HttpApiClient } from "./api";
 import { SyncedStore } from "./sync";
 import { applyTheme, watchSystemTheme } from "./theme";
@@ -28,7 +29,10 @@ initLearning(sync).finally(() => {
       <App auth={auth} sync={sync} />
     </StrictMode>,
   );
-  auth.onChange(() => void sync.sync()); // 起動時・ログイン時：送って受け取る
+  auth.onChange(() => {
+    void sync.sync(); // 起動時・ログイン時：送って受け取る
+    void refreshAdmin(() => auth.getToken()); // 管理者か（T068）
+  });
   window.addEventListener("online", () => void sync.sync()); // オンラインに戻ったとき
   // 画面を隠したら未送信を送り、戻ったら（前回から5分以上たっていれば）受け取る（T021）
   document.addEventListener("visibilitychange", () => {

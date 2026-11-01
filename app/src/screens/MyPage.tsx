@@ -184,7 +184,7 @@ export default function MyPage({
           <div className="grow">
             <Progress value={p.into / p.need} />
             <div className="muted small">
-              経験値 {p.xp.toLocaleString()}（次のレベルまで {p.need - p.into}）。初めての肢は正解2・不正解1、期限が来た復習は正解3・不正解1、期限の前の解き直しは0
+              経験値 {p.xp.toLocaleString()}（次のレベルまで {p.need - p.into}）。初めての肢は正解2・不正解1、期限が来た復習は正解3・不正解1、期限の前の解き直しは0。問で解くは満点3・それ以外1、模試の提出は50
             </div>
           </div>
         </div>

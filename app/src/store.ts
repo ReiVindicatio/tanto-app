@@ -75,6 +75,9 @@ export class LocalStorageStore implements RecordStore {
   /** 端末の回答ログを消す（ログアウトのとき。T003） */
   async clear(): Promise<void> {
     this.storage.setItem(LOG_KEY, "[]");
+    // 問で解く・模試の経験値の元（T068）。消すと経験値からも消える
+    this.storage.removeItem("tanto.qxp.v1");
+    this.storage.removeItem("tanto.mock.v1");
   }
 
   /** 旧形式の記録があれば回答ログに変換し、旧キーは tanto.legacy.* に名前を変えて残す */

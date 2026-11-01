@@ -9,6 +9,7 @@ import { Progress } from "./screens/common";
 import { QuestionResult, type QuestionResultItem } from "./ResultView";
 import { RitsuDock, useIdle } from "./Ritsu";
 import { revealBelow } from "./scrollReveal";
+import { addQuestionResult } from "./extraXp";
 import { characterOn } from "./character";
 
 export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; data: DataSet; onExit: () => void }) {
@@ -61,6 +62,7 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
   function submit() {
     const g = grade(q, picks);
     setResult(g);
+    addQuestionResult(q.id, g.full); // 経験値（T068）
     setScores((sc) => [...sc, { question: q, earned: g.earned }]);
   }
 

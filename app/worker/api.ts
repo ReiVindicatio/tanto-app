@@ -1,7 +1,7 @@
 // /api/* の処理（T003・T040）。保存処理（AnswerRepository）と検証（Verifier）を受け取るだけで、
 // D1 や Firebase を直接は知らない（テストでは偽物を渡す）。
 import type { Answer, AnswerRepository, Bookmark, Report } from "./repository";
-import type { Verifier } from "./auth";
+import { isAdminEmail, type EmailOf, type Verifier } from "./auth";
 
 export const MAX_BATCH = 1000;
 /** 1日（UTC）に受け取る回答の上限（T040）。初めてログインした端末の記録をまとめて送る（引き継ぎ）のを止めない値。超えた分は翌日に送られる */
@@ -23,7 +23,16 @@ export const REPORT_KINDS = ["question", "truth", "explanation", "other"] as con
  * 本番は Cloudflare の Rate Limiting（拠点ごとの概算）。人の手では届かない値にしてある
  */
 export type Limiter = (key: string) => Promise<boolean>;
-export type Deps = { repo: AnswerRepository; verify: Verifier; now?: () => Date; limitIp?: Limiter; limitUser?: Limiter };
+export type Deps = {
+  repo: AnswerRepository;
+  verify: Verifier;
+  now?: () => Date;
+  limitIp?: Limiter;
+  limitUser?: Limiter;
+  /** 管理者の判定（T068）。トークンからメールを取る関数と、管理者のメール（秘密の設定） */
+  emailOf?: EmailOf;
+  adminEmails?: string;
+};
 
 function json(body: unknown, status = 200): Response {
   return new Response(JSON.stringify(body), { status, headers: { "content-type": "application/json; charset=utf-8" } });
@@ -128,6 +137,12 @@ export async function handleApi(req: Request, deps: Deps): Promise<Response> {
     const { id, target, kind, body: text, context } = body;
     await deps.repo.insertReport(userId, { id, target, kind, body: text.trim(), context }, now.toISOString());
     return json({ received: true });
+  }
+
+  // 自分の情報（T068）：管理者か（衣装を全部開いて動作を確かめる）。メールアドレスは返さない
+  if (url.pathname === "/api/me" && req.method === "GET") {
+    const email = deps.emailOf ? await deps.emailOf(token) : null;
+    return json({ admin: isAdminEmail(email, deps.adminEmails) });
   }
 
   if (url.pathname === "/api/me" && req.method === "DELETE") {

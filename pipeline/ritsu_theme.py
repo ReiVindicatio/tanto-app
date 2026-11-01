@@ -153,7 +153,7 @@ def add_lines(c: dict) -> None:
 def register(c: dict) -> None:
     """アプリの衣装の表（app/src/ritsu/costumes.json）に足す（設計の並び順）"""
     have = json.loads(APP_LIST.read_text(encoding="utf-8")) if APP_LIST.exists() else []
-    have = [h for h in have if h["id"] != c["id"]] + [{k: c[k] for k in ("id", "name", "level", "bg", "desc")}]
+    have = [h for h in have if h["id"] != c["id"]] + [{k: c[k] for k in ("id", "name", "level", "unlock", "bg", "desc") if k in c}]
     order = ["knit", "pajama"] + [x["id"] for x in design()["costumes"]]
     have.sort(key=lambda h: order.index(h["id"]) if h["id"] in order else 99)
     APP_LIST.write_text(json.dumps(have, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

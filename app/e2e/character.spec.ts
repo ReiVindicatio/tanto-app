@@ -80,7 +80,7 @@ test("律のページ（T065）：上の帯の Lv から開き、律を押すと
 });
 
 test("お披露目（T065）：Lv.5 で衣装が開くと、ホームに案内（開く順でニットから）。幕が開いてセリフを最後まで聞くと着てもらえ、アルバムに並ぶ", async ({ page }) => {
-  // 初めての肢を75問正解（経験値150）＝ Lv.5（衣装は今は全部 Lv.5 で開く。レベルの付け方はあとで見直す）
+  // 初めての肢を75問正解（経験値150）＝ Lv.5
   await page.addInitScript(() => {
     if (localStorage.getItem("tanto.log.v1")) return;
     const now = new Date().toISOString();
@@ -101,9 +101,9 @@ test("お披露目（T065）：Lv.5 で衣装が開くと、ホームに案内�
   await expect(page.locator(".ritsu-stage .vn-sprite")).toHaveAttribute("src", /\/chars\/ritsu\/knit\/base-/);
   await page.getByRole("tab", { name: "アルバム" }).click();
   await expect(page.locator(".album-tile")).toHaveCount(1);
-  // 一度見たら、ニットの案内は出ない（次の衣装の案内に替わる）
+  // 一度見たら、案内は出ない（次の衣装は Lv.10）
   await tab(page, "ホーム").click();
-  await expect(page.locator(".reveal-invite")).not.toContainText("ひだまりニット");
+  await expect(page.locator(".reveal-invite")).toHaveCount(0);
 });
 
 test("律のページの背景（T065）：既定は衣装に合わせる。選ぶと立ち絵の後ろが変わり、覚える", async ({ page }) => {
@@ -136,4 +136,21 @@ test("○×を押すと、答え合わせが見える位置まで送る。もう
   await page.keyboard.press(truth.get(text) ? "ArrowRight" : "ArrowLeft");
   await expect(page.locator(".page .result")).toBeInViewport();
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(0);
+});
+
+test("衣装の開き方（T068）：未開放はレベルや模試の条件を出す。模試を提出すると節目の衣装が開く。管理者は全部開く", async ({ page }) => {
+  await openHome(page);
+  await page.locator(".streak-chip").click();
+  const tile = (name: string) => page.locator(".theme-tile").filter({ hasText: name });
+  await expect(tile("Lv.5 で開く")).toHaveCount(1);
+  await expect(tile("模試を1回提出で開く")).toHaveCount(1);
+  await page.evaluate(() => {
+    localStorage.setItem("tanto.mock.v1", JSON.stringify([{ key: "yobi-a", earned: 10, full: 30, elapsedMs: 1, timedOut: false, at: new Date().toISOString() }]));
+  });
+  await page.reload();
+  await expect(tile("模試の朝")).toHaveCount(1);
+  await page.evaluate(() => localStorage.setItem("tanto.admin.v1", "1"));
+  await page.reload();
+  await expect(page.locator(".theme-tile.locked")).toHaveCount(0);
+  await expect(tile("ひだまりニット")).toHaveCount(1);
 });

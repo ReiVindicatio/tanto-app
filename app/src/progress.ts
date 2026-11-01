@@ -1,6 +1,7 @@
 // 継続とレベル（T029）：連続日数・1日の目標・レベル。どれも回答ログから作った状態（learning.ts）から計算する。経験値の数え方は learning.ts の xpGain（T065）
 import { currentState, localDate } from "./learning";
 import { streak } from "./stats";
+import { extraXp } from "./extraXp";
 
 /** Lv.L から L+1 に上がるのに要る経験値（上がるほど長くなる） */
 export function levelCost(level: number): number {
@@ -39,7 +40,8 @@ export type Progress = { streak: number; xp: number; level: number; into: number
 
 /** いまの連続日数・レベル・今日の回答数 */
 export function progressNow(now = new Date()): Progress {
-  const { daily, xp } = currentState();
+  const { daily, xp: answersXp } = currentState();
+  const xp = answersXp + extraXp(); // 問で解く・模試の分も（T068）
   return { streak: streak(daily, now), xp, ...levelOf(xp), today: daily.get(localDate(now))?.answered ?? 0, goal: getGoal() };
 }
 
