@@ -90,3 +90,4 @@
 - 11-02 01:24 yukata を作って push した（絵は人の目で確かめていない。audio/samples_char/sheets/ritsu-yukata.png）
 - 11-02 02:31 autumn を作って push した（絵は人の目で確かめていない。audio/samples_char/sheets/ritsu-autumn.png）
 - 11-02 03:35 winter を作って push した（絵は人の目で確かめていない。audio/samples_char/sheets/ritsu-winter.png）
+- 11-02 04:44 halloween を作って push した（絵は人の目で確かめていない。audio/samples_char/sheets/ritsu-halloween.png）
