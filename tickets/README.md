@@ -128,4 +128,4 @@
 | [T066](T066-reveal-scroll-speech-rate.md) | ○×のあとに解説まで送る・読み上げの基準の速さ | 実装レビュー | M2 | 中 | T057・T065 |
 | [T067](T067-listen-pause-resume.md) | 聞き流しの一時停止：再開で読み直さない | 実装レビュー | M2 | 中 | T057 |
 | [T068](T068-costume-unlock-admin.md) | 衣装の開き方・問で解くと模試の経験値・管理者 | 実装レビュー | M2 | 中 | T065 |
-| [T069](T069-special-costumes.md) | 律の特別な衣装 | 実装中 | M2 | 中 | T065・T068 |
+| [T069](T069-special-costumes.md) | 律の特別な衣装 | 実装レビュー | M2 | 中 | T065・T068 |
