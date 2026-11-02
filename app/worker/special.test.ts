@@ -10,7 +10,7 @@ const asked: string[] = [];
 const bucket = {
   async get(key: string, opts?: { range?: Headers }) {
     asked.push(key);
-    if (key !== "special/hoshiyomi/entrance.mp4" && key !== "special/hoshiyomi/voices/wear_hoshiyomi-001.mp3") return null;
+    if (key !== "special/hoshiyomi/wind-map.png" && key !== "special/hoshiyomi/entrance.mp4" && key !== "special/hoshiyomi/voices/wear_hoshiyomi-001.mp3") return null;
     const h = opts?.range?.get("range");
     if (h) {
       const [a, b] = h.replace("bytes=", "").split("-").map(Number);
@@ -59,6 +59,12 @@ describe("特別な衣装の配信（T069）", () => {
     ];
     expect(cases.map((r) => r.status)).toEqual([403, 403, 403, 403, 403, 403]);
     expect(asked).toEqual([]);
+  });
+
+  it("布を動かす範囲の地図（png）も渡す（これが 404 だと、風を受ける座り絵がふつうの絵に戻る）", async () => {
+    const res = await serveSpecial(req("/special/hoshiyomi/wind-map.png", await cookieOf()), bucket, "k", NOW);
+    expect(res.status).toBe(200);
+    expect(res.headers.get("content-type")).toBe("image/png");
   });
 
   it("形の違うパス・ないファイルは 404。special/ の外は読めない", async () => {

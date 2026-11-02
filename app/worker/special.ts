@@ -5,8 +5,8 @@ import { objectResponse } from "./audio";
 
 const COOKIE = "tanto_special";
 const PASS_SECONDS = 7 * 24 * 3600;
-const KEY = /^[a-z0-9-]+\/(voices\/)?[A-Za-z0-9_.-]+\.(webp|mp4|mp3)$/;
-const TYPES: Record<string, string> = { webp: "image/webp", mp4: "video/mp4", mp3: "audio/mpeg" };
+const KEY = /^[a-z0-9-]+\/(voices\/)?[A-Za-z0-9_.-]+\.(webp|png|mp4|mp3)$/;
+const TYPES: Record<string, string> = { webp: "image/webp", png: "image/png", mp4: "video/mp4", mp3: "audio/mpeg" };
 // 共有のキャッシュ（Cloudflare）には載せない。端末のブラウザにだけ残す
 const CACHE_CONTROL = "private, max-age=86400";
 
