@@ -3142,11 +3142,19 @@ html[data-world] .appbar {
 .cape-spacer {
   visibility: hidden;
 }
+.perch.caped .moon-seat {
+  bottom: 4%;
+  width: 118%;
+}
+/* セリフはマントより手前（マントが文字にかぶって読めなかった：ユーザー） */
+.ritsu-dock:has(.perch.caped) .dock-bubble {
+  z-index: 2;
+}
 .cape-figure {
   position: absolute;
-  right: -6%;
-  bottom: 18%;
-  width: 195%;
+  right: 4%;
+  bottom: 21%;
+  width: 160%;
   max-width: none;
   height: auto;
   transform: scaleX(-1);
