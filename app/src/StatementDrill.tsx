@@ -13,7 +13,7 @@ import { cardIdOf } from "./learning";
 import SpeakButton from "./SpeakButton";
 import { characterOn, LINES, markTipSeen, reactionFace, tipSeen } from "./character";
 import { PerchFigure, RitsuDock, useIdle } from "./Ritsu";
-import { answerFx, celebrateMove, redeemLine, setCombo, smallMove } from "./ritsu/special";
+import { answerFx, celebrateMove, playSignature, redeemLine, setCombo, smallMove } from "./ritsu/special";
 import { milestones, progressNow } from "./progress";
 import { shuffle } from "./shuffle";
 import { currentState, recordAnswer } from "./learning";
@@ -107,6 +107,11 @@ export default function StatementDrill({
   // はじく・キーボードの操作から呼ぶ。中身は描画のたびに下で差し替える（フックを早期の return より前に置くため）
   const actions = useRef<{ choose: (v: boolean, dx?: number) => void; advance: (dir: SwipeDir, dx?: number) => void } | null>(null);
   const playing = i < order.length && !ended;
+  // 全問正解で解き終えたら、全画面の技（5問未満は軽すぎるので出さない）
+  useEffect(() => {
+    if (!playing && results.length >= 5 && results.every((x) => x.correct)) playSignature();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [playing]);
   const swipe = useSwipe<HTMLDivElement>((dir, dx) => {
     if (answer === null) actions.current?.choose(dir === "right", dx);
     else actions.current?.advance(dir, dx);

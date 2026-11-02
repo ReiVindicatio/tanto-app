@@ -1,7 +1,9 @@
 // 律（T063）の部品：ちびキャラ＋吹き出し（ナビゲーター）、画面の下の欄の縁からのぞく律、吹き出し単体
 import { useEffect, useState, type ReactNode } from "react";
 import { charDir, characterImage, type Expression } from "./character";
-import { CostumeSeat, StarFall, StarPal } from "./ritsu/special";
+import { CostumeSeat, playSignature, StarFall, StarPal } from "./ritsu/special";
+import { CapeFigure } from "./ritsu/CapeFigure";
+import { signatureSeen } from "./ritsu/Signature";
 import { kitOf } from "./ritsu/kits";
 import { fxOn } from "./ritsu/fx";
 import { currentTheme, motionOf, isSpecial } from "./ritsu/themes";
@@ -80,6 +82,12 @@ function preloadMotion(theme: string) {
   }, 800);
 }
 
+/** 風を受ける座り絵を出すか。絵が読めなかった衣装は、ふつうの座り絵に戻す */
+const capeFailed = new Set<string>();
+function capeOn(theme: string): boolean {
+  return isSpecial(theme) && Boolean(kitOf(theme).cape) && fxOn("cape") && !capeFailed.has(theme);
+}
+
 /** 感情の記号（頭の右上にぽんと出す）。考え中＝？・喜び＝！・得意げ＝♪・残念＝汗・ジト目＝…・眠い・寝そべり＝zzz */
 const EMOTE: Partial<Record<Expression, string>> = { think: "？", happy: "！", smug: "♪", sad: "💧", jito: "…", sleepy: "z" };
 
@@ -119,11 +127,13 @@ export function PerchFigure({
   const talking = pose === "sit" && talk && !g && m.talk.includes(f);
   const mouthOpen = useMouthOpen(talking); // 声が出ているときだけ口を開ける
   const special = isSpecial(theme);
+  const [, setFailed] = useState(0);
+  const cape = pose === "sit" && capeOn(theme);
   const mark = !emote ? undefined : pose === "lie" ? "z" : g ? undefined : special && (f === "happy" || f === "smug") ? "★" : EMOTE[f];
   return (
     <div
       key={hop ? `hop-${face}` : "still"}
-      className={`perch ${pose}${swing && !g && !talking ? " swing" : ""}${hop ? " hop" : ""}${gShown ? " gesturing" : ""}${talking ? " talking" : ""}${mouthOpen ? " mouth-open" : ""}${(pose === "lie" && m.kick) || (pose === "sit" && m.swing.includes(f)) ? " has-kick" : ""} ${className}`}
+      className={`perch ${pose}${cape ? " caped" : ""}${swing && !g && !talking ? " swing" : ""}${hop ? " hop" : ""}${gShown ? " gesturing" : ""}${talking ? " talking" : ""}${mouthOpen ? " mouth-open" : ""}${(pose === "lie" && m.kick) || (pose === "sit" && m.swing.includes(f)) ? " has-kick" : ""} ${className}`}
       data-face={face}
       data-gesture={g ?? undefined}
     >
@@ -132,6 +142,26 @@ export function PerchFigure({
       <div className="perch-float">
       {special && fxOn("moon") && pose === "sit" && <CostumeSeat kind={kitOf(theme).seat} />}
       {/* 息をする（ごくわずかに上下）。跳ねる動きは外側、息は内側にかける */}
+      {cape ? (
+        <div
+          className="perch-inner"
+          onClick={() => {
+            playSignature(theme);
+            setFailed((n) => n + 1); // 押せる印を消す
+          }}
+        >
+          <img className="perch-body cape-spacer" src={src} alt="" />
+          <CapeFigure
+            theme={theme}
+            face={face}
+            onFail={() => {
+              capeFailed.add(theme);
+              setFailed((n) => n + 1);
+            }}
+          />
+          {fxOn("signature") && !signatureSeen() && <span className="cape-hint">押してみて</span>}
+        </div>
+      ) : (
       <div className="perch-inner">
         <img className="perch-body" src={src} alt="" />
         {special && kitOf(theme).sitLoop && fxOn("sitvideo") && pose === "sit" && f === "smile" && !g && !talking && <img className="perch-frame sit-loop" src={`${charDir(theme)}idle-sit.webp`} alt="" aria-hidden="true" />}
@@ -163,6 +193,7 @@ export function PerchFigure({
           </>
         )}
       </div>
+      )}
       </div>
       {mark && (
         <span key={`${f}-${pose}`} className={`perch-emote${mark === "z" ? " zzz" : ""}`} aria-hidden="true">
@@ -190,7 +221,7 @@ export function RitsuDock({
   className = "",
   fadeAfter,
   onPeek,
-  pose = "sit",
+  pose: wantedPose = "sit",
   hop = false,
   swing = false,
   startHidden = false,
@@ -215,6 +246,7 @@ export function RitsuDock({
   /** 吹き出しを最初は出さない（押したら出す） */
   startHidden?: boolean;
 }) {
+  const pose = capeOn(currentTheme()) ? "sit" : wantedPose; // 風を受ける衣装は寝そべらず、いつも月に座っている（ユーザー）
   const [shown, setShown] = useState(!startHidden);
   const [tapped, setTapped] = useState(0); // 押したら、その場で跳ねて応える
   const speaking = useSpeaking();

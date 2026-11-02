@@ -27,6 +27,8 @@ export type Kit = {
   realMoon?: boolean;
   dawn?: boolean;
   sitLoop?: boolean;
+  /** 風を受ける座り絵と全画面の技がある（星詠み） */
+  cape?: boolean;
 };
 
 export const KITS: Record<string, Kit> = {
@@ -45,6 +47,7 @@ export const KITS: Record<string, Kit> = {
     realMoon: true,
     dawn: true,
     sitLoop: true,
+    cape: true,
   },
   hakama: {
     particle: "❀",

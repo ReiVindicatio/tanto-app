@@ -7,6 +7,7 @@ import { currentTheme, isSpecial, setTheme, themeById } from "./themes";
 import { fxOn, type IdeaId } from "./fx";
 import { kitOf, type Reaction, type Seat } from "./kits";
 import { lineText, pickLine, playLine, type Line } from "./lines";
+import { SignatureLayer } from "./Signature";
 
 export type MoveName = "entrance" | "finish";
 type Playing = { theme: string; name: MoveName; line?: Line; onEnd?: () => void };
@@ -19,6 +20,7 @@ const GIVE_UP = 15000;
 
 let playing: Playing | null = null;
 let small: { theme: string; at: number } | null = null;
+let signature: string | null = null;
 const listeners = new Set<() => void>();
 const changed = () => listeners.forEach((f) => f());
 
@@ -34,6 +36,13 @@ export function playMove(theme: string, name: MoveName, opts: { line?: Line; onE
   }
   playing = { theme, name, ...opts };
   if (opts.line) playLine(opts.line);
+  changed();
+}
+
+/** 全画面の技（律を押したとき・全問正解のとき）。視差効果を減らす設定なら流さない */
+export function playSignature(theme = currentTheme()): void {
+  if (reducedMotion() || !kitOf(theme).cape || !fxOn("signature")) return;
+  signature = theme;
   changed();
 }
 
@@ -116,6 +125,16 @@ export function SpecialMoveLayer() {
   const left = tryOnLeft();
   return (
     <>
+      {signature && (
+        <SignatureLayer
+          key={signature}
+          theme={signature}
+          onEnd={() => {
+            signature = null;
+            changed();
+          }}
+        />
+      )}
       {scale && <ReactionFx key={scale.at} kind={scale.kind} correct={scale.correct} />}
       {left > 0 && <div className="tryon-badge">試着中　あと {Math.ceil(left / 60000)} 分</div>}
       {farewell && <div className="tryon-badge">{farewell}</div>}

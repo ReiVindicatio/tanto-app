@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 VIDEO = ROOT / "audio" / "samples_char" / "video"
 SPECIAL = ROOT / "audio" / "samples_char" / "special"
 BUCKET = "tantan-audio"
-TYPES = {".webp": "image/webp", ".mp4": "video/mp4", ".mp3": "audio/mpeg"}
+TYPES = {".webp": "image/webp", ".png": "image/png", ".mp4": "video/mp4", ".mp3": "audio/mpeg"}
 
 
 def key_out(frame, green: tuple[int, int, int]):

@@ -403,10 +403,12 @@ SWING_FACES = ["normal", "think", "smile"]
 SWING = ("Redraw the reference image EXACTLY (same pose, same size and position, same face, hair, outfit, colors and ledge), "
          "changing ONLY her lower legs and feet that dangle below the ledge: ")
 # 2026-11-02：「前へ振り上げる」を強く言うと、足が真横に伸びて縁に乗る・足首が折れる絵が十数枚できた（ユーザー「足がひん曲がってる」）。下にぶら下げたまま、小さく振る
-SWING_KEEP = ("Her knees stay at the ledge exactly as in the reference and both lower legs keep hanging DOWN below the ledge. Never lay a leg on top of the ledge, "
-              "never stick a leg out sideways, keep the knees and ankles natural with both feet the same size as in the reference, and keep the ledge lines exactly as they are")
-SWINGS = {1: "both lower legs swing a little forward toward the viewer, about 20 degrees, feet a little apart. " + SWING_KEEP,
-          2: "the left lower leg swings about 25 degrees to the outside and the right lower leg swings about 15 degrees the other way, like gently kicking her feet alternately. " + SWING_KEEP}
+SWING_KEEP = ("Her knees stay at the ledge exactly as in the reference and both lower legs stay below the ledge. Exactly two legs and two feet. Never lay a leg on top of the ledge, "
+              "never stick a leg straight out sideways, keep the knees and ankles natural with both feet the same size as in the reference, and keep the ledge lines exactly as they are")
+# 2026-11-02（2回目）：小さく振る指示では、ほとんど動かないコマが増えた（ユーザー「ただ座っている絵が多い」）。「外へ大きく蹴る」と足が真横に伸びる絵に戻るので、手前へ振る
+SWING_WIDTH = "Both feet stay within the width of her body and below the ledge. "
+SWINGS = {1: "both lower legs swung forward toward the viewer, knees bent, the soles of the shoes tilted toward the viewer, feet a little apart. The difference from the reference must be easy to see. " + SWING_WIDTH + SWING_KEEP,
+          2: "one lower leg swung forward toward the viewer so that its foot is clearly higher than the other, the other lower leg swung back under the ledge, like kicking her feet alternately. The difference from the reference must be easy to see. " + SWING_WIDTH + SWING_KEEP}
 
 " + KICK_CLEAR + "
 def motion_set(name: str) -> None:

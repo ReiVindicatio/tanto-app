@@ -99,6 +99,7 @@ def peek(src: Path, dst: Path, width: int = 240) -> None:
 
 
 THIN_LINE = 12  # 縁の消し残しとみなす、縦の厚さ（元の絵の点）
+LONG_LINE = 40  # 帯の下のほうの線とみなす、横の長さ（元の絵の点）
 
 
 def ledge_cut(im: Image.Image) -> tuple[Image.Image, int, int]:
@@ -146,12 +147,18 @@ def ledge_cut(im: Image.Image) -> tuple[Image.Image, int, int]:
             if al[x, up] <= 40 and al[x, down] <= 40:
                 for y in range(max(0, y0 - 3), min(h, y1 + 4)):
                     fp[x, y] = (0, 0, 0, 0)
+            elif al[x, up] > 40 and al[x, down] > 40:  # 線と同じ色の服は、線の行で背景として消え、体が上下に切れて下半身ごと消えた（2026-11-02 夜想の司書の黒いスカート）
+                for y in range(max(0, y0 - 3), min(h, y1 + 4)):
+                    fp[x, y] = (*px[x, y], 255)
     # 体につながっていない点（影など）を消す：縁の少し上の体から塗って、届かなかった下の点は消す
     mask = full.getchannel("A").point(lambda v: 255 if v > 40 else 0)
     row = top - 10
     xs = [x for x in range(w) if mask.getpixel((x, row)) == 255]
     if xs:
-        ImageDraw.floodfill(mask, (xs[len(xs) // 2], row), 128)
+        # その行にかかるものは全部、体として塗る。1点だけだと、レースの小さな模様に当たると体をたどれず、下半身が消えた（2026-11-02 夜想の司書）
+        for x in xs:
+            if mask.getpixel((x, row)) == 255:
+                ImageDraw.floodfill(mask, (x, row), 128)
         mp = mask.load()
         for y in range(top - 6, h):
             for x in range(w):
@@ -176,6 +183,29 @@ def ledge_cut(im: Image.Image) -> tuple[Image.Image, int, int]:
                 for v in run:
                     fp[x, v] = (0, 0, 0, 0)
             run = []
+    # 帯の下のほうにも線がある絵がある（2026-11-02 試験の日・冬）。縦に薄く、横に長いものだけ消す（靴のつま先は横に短いので残る）
+    al = full.getchannel("A").load()
+    thin = [[False] * w for _ in range(h)]
+    for x in range(w):
+        run = []
+        for y in [*range(band[-1], h), -1]:
+            if y >= 0 and al[x, y] > 40:
+                run.append(y)
+                continue
+            if run and len(run) <= THIN_LINE:
+                for v in run:
+                    thin[v][x] = True
+            run = []
+    for y in range(band[-1], h):
+        x = 0
+        while x < w:
+            x1 = x
+            while x1 < w and thin[y][x1]:
+                x1 += 1
+            if x1 - x >= LONG_LINE:
+                for v in range(x, x1):
+                    fp[v, y] = (0, 0, 0, 0)
+            x = max(x1, x + 1)
     fill_holes(full, im, top)
     return full, top, bot
 
@@ -203,7 +233,9 @@ def body_above(full: Image.Image, top: int) -> tuple[int, int, int, int] | None:
     xs = [x for x in range(full.width) if mask.getpixel((x, top - 10)) == 255]
     if not xs:
         return None
-    ImageDraw.floodfill(mask, (xs[len(xs) // 2], top - 10), 128)
+    for x in xs:
+        if mask.getpixel((x, top - 10)) == 255:
+            ImageDraw.floodfill(mask, (x, top - 10), 128)
     return mask.point(lambda v: 255 if v == 128 else 0).getbbox()
 
 
@@ -276,6 +308,29 @@ def patch(base: Path, frame: Path, box: tuple[float, float, float, float], thres
     out = b.copy()
     out.paste(f, (0, 0), mask)
     return out
+
+
+def patch_swing(base: Path, frame: Path, box: tuple[float, float, float, float]) -> Image.Image:
+    """足を振るコマ：コマ自身を切り抜いて足だけを元の絵に貼る。コマの縁は元の絵と少しずれて描かれるので、
+    差分をそのまま貼ると縁の線や帯まで貼られ、消し残しになった（2026-11-02 パーカー・試験の日など）。
+    コマで背景のところは元の絵に戻す。元の絵で足があったところだけ、近くの背景の色で消す"""
+    b = Image.open(base).convert("RGB")
+    f = Image.open(frame).convert("RGB").resize(b.size)
+    fa = ledge_cut(f)[0].getchannel("A").load()
+    ba = ledge_cut(b)[0].getchannel("A").load()
+    w, h = b.size
+    clean = f.copy()
+    cp, bp = clean.load(), b.load()
+    for y in range(h):
+        last = None  # その行で、左から見て最後の背景の色（縁は傾いているので、行の端の色は使えない）
+        for x in range(w):
+            if ba[x, y] <= 40:
+                last = bp[x, y]
+            if fa[x, y] <= 40:
+                cp[x, y] = bp[x, y] if ba[x, y] <= 40 or last is None else last
+    with tempfile.NamedTemporaryFile(suffix=".png") as t:
+        clean.save(t.name)
+        return patch(base, Path(t.name), box)
 
 
 def sit_group(srcs: list[Image.Image], dsts: list[Path], width: int = 240, below: float = 0.40, union: bool = False,
@@ -374,7 +429,7 @@ def main() -> None:
             dsts.append(dst / f"sit-{n}-blink.webp")
         for k in (1, 2):  # 足のバタバタ（足を振ったコマ）
             if (src / f"swing-{n}-{k}.png").exists():
-                frames.append(patch(s, src / f"swing-{n}-{k}.png", swing_box(s)))
+                frames.append(patch_swing(s, src / f"swing-{n}-{k}.png", swing_box(s)))
                 dsts.append(dst / f"sit-{n}-swing-{k}.webp")
         if (src / f"talk-sit-{n}.png").exists():  # 口パク
             frames.append(patch(s, src / f"talk-sit-{n}.png", MOUTH_SIT, aligned=True))
