@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 import { charDir } from "../character";
 import { loadImage, makeWarp, makeWind, type Warp } from "./cape";
+import { fxOn } from "./fx";
 
 const SEEN_KEY = "tanto.special.signature.seen.v1";
 
@@ -60,6 +61,74 @@ function drawSky(canvas: HTMLCanvasElement): void {
   c.globalAlpha = 1;
 }
 
+/** 音は手元で合成する（素材を使わない）。切り込みの風切り音 → 決めの衝撃 → のぼる鈴 → 最後の和音。止める関数を返す */
+function playSound(): () => void {
+  let c: AudioContext;
+  try {
+    c = new AudioContext();
+    void c.resume();
+  } catch {
+    return () => undefined;
+  }
+  const master = c.createGain();
+  master.gain.value = 0.5;
+  master.connect(c.destination);
+  const t0 = c.currentTime + 0.02;
+  const noise = (at: number, dur: number, from: number, to: number, peak: number) => {
+    const len = Math.ceil(c.sampleRate * dur);
+    const buf = c.createBuffer(1, len, c.sampleRate);
+    const d = buf.getChannelData(0);
+    for (let i = 0; i < len; i++) d[i] = Math.random() * 2 - 1;
+    const src = c.createBufferSource();
+    src.buffer = buf;
+    const f = c.createBiquadFilter();
+    f.type = "bandpass";
+    f.Q.value = 1.1;
+    f.frequency.setValueAtTime(from, t0 + at);
+    f.frequency.exponentialRampToValueAtTime(to, t0 + at + dur);
+    const g = c.createGain();
+    g.gain.setValueAtTime(0.0001, t0 + at);
+    g.gain.exponentialRampToValueAtTime(peak, t0 + at + dur * 0.3);
+    g.gain.exponentialRampToValueAtTime(0.0001, t0 + at + dur);
+    src.connect(f).connect(g).connect(master);
+    src.start(t0 + at);
+  };
+  const bell = (at: number, hz: number, dur: number, peak: number) => {
+    for (const [ratio, level] of [[1, 1], [2.01, 0.35], [3.02, 0.12]]) {
+      const o = c.createOscillator();
+      o.type = "sine";
+      o.frequency.value = hz * ratio;
+      const g = c.createGain();
+      g.gain.setValueAtTime(0.0001, t0 + at);
+      g.gain.exponentialRampToValueAtTime(peak * level, t0 + at + 0.012);
+      g.gain.exponentialRampToValueAtTime(0.0001, t0 + at + dur);
+      o.connect(g).connect(master);
+      o.start(t0 + at);
+      o.stop(t0 + at + dur + 0.02);
+    }
+  };
+  noise(0.18, 0.42, 500, 3400, 0.5); // 顔が切り込む
+  // 決めの衝撃：低い音が落ちる
+  const low = c.createOscillator();
+  const lowGain = c.createGain();
+  low.type = "sine";
+  low.frequency.setValueAtTime(110, t0 + 1.13);
+  low.frequency.exponentialRampToValueAtTime(38, t0 + 1.6);
+  lowGain.gain.setValueAtTime(0.0001, t0 + 1.13);
+  lowGain.gain.exponentialRampToValueAtTime(0.9, t0 + 1.15);
+  lowGain.gain.exponentialRampToValueAtTime(0.0001, t0 + 1.75);
+  low.connect(lowGain).connect(master);
+  low.start(t0 + 1.13);
+  low.stop(t0 + 1.8);
+  noise(1.13, 0.4, 2600, 500, 0.45);
+  [659, 784, 988, 1175, 1319, 1568, 1976].forEach((hz, i) => bell(1.25 + i * 0.2, hz, 1.1, 0.16)); // のぼる鈴
+  [523, 784, 1047, 1319].forEach((hz) => bell(2.9, hz, 1.4, 0.14)); // 最後の和音
+  return () => {
+    master.gain.setTargetAtTime(0, c.currentTime, 0.04);
+    window.setTimeout(() => void c.close().catch(() => undefined), 400);
+  };
+}
+
 type Meteor = { x: number; y: number; v: number; len: number; w: number };
 
 export function SignatureLayer({ theme, onEnd }: { theme: string; onEnd: () => void }) {
@@ -77,6 +146,7 @@ export function SignatureLayer({ theme, onEnd }: { theme: string; onEnd: () => v
     let stop = false;
     let raf = 0;
     let warp: Warp | null = null;
+    let stopSound: (() => void) | undefined;
     const timers: number[] = [];
     const later = (ms: number, f: () => void) => timers.push(window.setTimeout(f, ms));
     const fit = (c: HTMLCanvasElement | null) => {
@@ -165,6 +235,7 @@ export function SignatureLayer({ theme, onEnd }: { theme: string; onEnd: () => v
         raf = requestAnimationFrame(tick);
       };
       raf = requestAnimationFrame(tick);
+      if (fxOn("sound")) stopSound = playSound();
       const anim = (el: Element | null, kf: Keyframe[], o: KeyframeAnimationOptions) => el?.animate(kf, { fill: "forwards", easing: "cubic-bezier(.2,.8,.2,1)", ...o });
       anim(sky.current, [{ opacity: 0 }, { opacity: 1 }], { duration: 220 });
       // 1. 顔が切り込む
@@ -215,6 +286,7 @@ export function SignatureLayer({ theme, onEnd }: { theme: string; onEnd: () => v
       cancelAnimationFrame(raf);
       timers.forEach((t) => window.clearTimeout(t));
       warp?.dispose();
+      stopSound?.();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dir]);

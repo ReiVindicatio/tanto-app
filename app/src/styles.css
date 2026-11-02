@@ -3090,14 +3090,6 @@ html[data-fx~="listenstage"] .listen::before {
   line-height: 1;
   opacity: 0.45;
 }
-.world-pick {
-  margin: 0.6rem 0;
-}
-.world-pick .row {
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  margin-top: 0.25rem;
-}
 /* 管理者の印：押して切り替える */
 button.admin-badge {
   width: auto;
@@ -3258,4 +3250,18 @@ html[data-world] .appbar {
   bottom: calc(14px + env(safe-area-inset-bottom, 0px));
   color: #ffffff80;
   font-size: 0.75rem;
+}
+
+/* 夜空の案内：あることに気づけなかった（ユーザー）。一度開けば消える */
+.tab-new {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-left: 4px;
+  border-radius: 50%;
+  background: #e8c35a;
+  vertical-align: 0.15em;
+}
+.sky-note {
+  margin: 10px 0 0;
 }

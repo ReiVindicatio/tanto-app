@@ -27,9 +27,8 @@ describe("キャラクターの表情（T063）", () => {
 
   it("特別な衣装（T069）の絵は公開フォルダではなく /special/ から。専用の背景も", () => {
     expect(characterImage("base", "smile", "hoshiyomi")).toBe("/special/hoshiyomi/base-smile.webp");
-    expect(bgUrl("hoshiyomi", "auto")).toBe("/special/hoshiyomi/bg.webp");
-    expect(bgUrl("hoshiyomi", "room")).toBe("/chars/bg/room.webp"); // 背景を選んでいればそれ
-    expect(bgUrl("knit", "auto")).toMatch(/^\/chars\/bg\//);
+    expect(bgUrl("hoshiyomi")).toBe("/special/hoshiyomi/bg.webp");
+    expect(bgUrl("knit")).toMatch(/^\/chars\/bg\//);
   });
 });
 

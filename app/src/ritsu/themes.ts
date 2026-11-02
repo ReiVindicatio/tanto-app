@@ -138,27 +138,10 @@ export function applyCostume(): void {
   forceTheme(world ? (kitOf(world).world.dark ? "dark" : "light") : null);
 }
 
-const WORLD_KEY = "tanto.special.world.v1";
-
-/** 選んでいる画面のテーマ（衣装の ID。なければ空。開いていない衣装のものは使わない） */
+/** 画面のテーマ：着ている特別な衣装で決まる（衣装の ID。ふつうの衣装なら空） */
 export function currentWorld(): string {
-  try {
-    const id = localStorage.getItem(WORLD_KEY) ?? "";
-    const t = themeById(id);
-    return t && t.unlock === "paid" && isUnlocked(t, Infinity) ? id : "";
-  } catch {
-    return "";
-  }
-}
-
-export function setWorld(id: string): void {
-  try {
-    if (id) localStorage.setItem(WORLD_KEY, id);
-    else localStorage.removeItem(WORLD_KEY);
-  } catch {
-    // 覚えられなくても、今の画面では変わらないだけ
-  }
-  applyCostume();
+  const id = currentTheme();
+  return isSpecial(id) ? id : "";
 }
 onFxChange(applyCostume);
 
@@ -238,44 +221,7 @@ export function pendingReveal(level: number): Theme | undefined {
 
 // ---- 律のページの背景（T065）。「衣装に合わせる」なら衣装ごとの背景（Theme.bg）----
 
-export const BACKGROUNDS = [
-  { id: "room", name: "律の部屋" },
-  { id: "window", name: "ひだまりの窓辺" },
-  { id: "library", name: "図書館" },
-  { id: "night", name: "夜の机" },
-  { id: "studyhall", name: "自習室" },
-  { id: "sakura", name: "桜並木" },
-  { id: "engawa", name: "夏の縁側" },
-  { id: "snow", name: "雪の窓辺" },
-  { id: "rain", name: "雨の日の通り" },
-  { id: "park", name: "朝の公園" },
-  { id: "festival", name: "夏祭りの夜" },
-  { id: "autumn", name: "秋の公園" },
-  { id: "halloween", name: "ハロウィンの夜" },
-  { id: "christmas", name: "クリスマスの夜" },
-] as const;
-
-const BG_KEY = "tanto.character.bg.v1";
-
-/** 選んだ背景（"auto"＝衣装に合わせる） */
-export function chosenBg(): string {
-  try {
-    return localStorage.getItem(BG_KEY) ?? "auto";
-  } catch {
-    return "auto";
-  }
-}
-
-export function setBg(id: string): void {
-  try {
-    localStorage.setItem(BG_KEY, id);
-  } catch {
-    // 覚えられなくても、今の画面では変わる
-  }
-}
-
-/** 実際に出す背景 */
-export function bgFor(theme: string, chosen = chosenBg()): string {
-  if (chosen !== "auto" && BACKGROUNDS.some((b) => b.id === chosen)) return chosen;
+/** 背景は衣装で決まる（選ぶ場所は分かりにくく、衣装の印象にも合わなかった：ユーザー 2026-11-02） */
+export function bgFor(theme: string): string {
   return themeById(theme)?.bg ?? "room";
 }

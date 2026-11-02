@@ -125,10 +125,10 @@ export function PerchFigure({
   const g = pose === "sit" && gesture && m.gestures.includes(gesture) ? gesture : null;
   const gShown = g && ready === g;
   const talking = pose === "sit" && talk && !g && m.talk.includes(f);
-  const mouthOpen = useMouthOpen(talking); // 声が出ているときだけ口を開ける
   const special = isSpecial(theme);
   const [, setFailed] = useState(0);
   const cape = pose === "sit" && capeOn(theme);
+  const mouthOpen = useMouthOpen(talking || (cape && talk)); // 声が出ているときだけ口を開ける
   const mark = !emote ? undefined : pose === "lie" ? "z" : g ? undefined : special && (f === "happy" || f === "smug") ? "★" : EMOTE[f];
   return (
     <div
@@ -154,6 +154,7 @@ export function PerchFigure({
           <CapeFigure
             theme={theme}
             face={face}
+            mouth={talk && mouthOpen}
             onFail={() => {
               capeFailed.add(theme);
               setFailed((n) => n + 1);

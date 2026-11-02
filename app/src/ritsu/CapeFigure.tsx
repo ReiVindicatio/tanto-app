@@ -5,13 +5,16 @@ import { loadImage, makeWarp, makeWind, type Warp } from "./cape";
 
 /** 風の強さ。ユーザーが試作で「強い」を選んだ */
 const STRENGTH = 1.7;
+/** 口パクの絵がある表情 */
+const TALK_FACES = ["normal", "smile", "think", "happy", "sad"];
 
 const reduced = () => typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-export function CapeFigure({ theme, face, onFail }: { theme: string; face: string; onFail: () => void }) {
+export function CapeFigure({ theme, face, mouth = false, onFail }: { theme: string; face: string; mouth?: boolean; onFail: () => void }) {
   const canvas = useRef<HTMLCanvasElement>(null);
   const warp = useRef<Warp | null>(null);
-  const faceRef = useRef(face);
+  const shown = mouth && TALK_FACES.includes(face) ? `${face}-talk` : face;
+  const faceRef = useRef(shown);
   const images = useRef(new Map<string, HTMLImageElement>());
   const dir = charDir(theme);
 
@@ -32,7 +35,7 @@ export function CapeFigure({ theme, face, onFail }: { theme: string; face: strin
     const wind = makeWind();
     void (async () => {
       try {
-        const [img, map] = await Promise.all([image(face), loadImage(`${dir}wind-map.png`)]);
+        const [img, map] = await Promise.all([image(shown), loadImage(`${dir}wind-map.png`)]);
         if (stop || !canvas.current) return;
         warp.current = makeWarp(canvas.current, img, map, [1, 0]);
         if (!warp.current) throw new Error("webgl");
@@ -71,12 +74,14 @@ export function CapeFigure({ theme, face, onFail }: { theme: string; face: strin
   }, [dir]);
 
   useEffect(() => {
-    faceRef.current = face;
-    void image(face)
+    faceRef.current = shown;
+    void image(shown)
       .then((i) => warp.current?.setImage(i))
       .catch(() => undefined);
+    // 声が出たときに待たないよう、この表情の口パクも先に読む
+    if (TALK_FACES.includes(face)) void image(`${face}-talk`).catch(() => undefined);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [face]);
+  }, [shown]);
 
   return <canvas ref={canvas} className="cape-figure" aria-hidden="true" />;
 }

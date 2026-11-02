@@ -106,16 +106,11 @@ test("お披露目（T065）：Lv.5 で衣装が開くと、ホームに案内�
   await expect(page.locator(".reveal-invite")).toHaveCount(0);
 });
 
-test("律のページの背景（T065）：既定は衣装に合わせる。選ぶと立ち絵の後ろが変わり、覚える", async ({ page }) => {
+test("背景は衣装で決まり、選ぶタブはない", async ({ page }) => {
   await openHome(page);
   await page.locator(".streak-chip").click();
-  const stage = page.locator(".ritsu-stage");
-  await expect(stage).toHaveAttribute("style", /chars\/bg\/room\.webp/);
-  await page.getByRole("tab", { name: "背景" }).click();
-  await page.locator(".bg-tile", { hasText: "図書館" }).click();
-  await expect(stage).toHaveAttribute("style", /chars\/bg\/library\.webp/);
-  await page.reload();
-  await expect(page.locator(".ritsu-stage")).toHaveAttribute("style", /chars\/bg\/library\.webp/);
+  await expect(page.locator(".ritsu-stage")).toHaveAttribute("style", /chars\/bg\/room\.webp/);
+  await expect(page.getByRole("tab", { name: "背景" })).toHaveCount(0);
 });
 
 test("○×を押すと、答え合わせが見える位置まで送る。もう見えていれば動かさない（T066）", async ({ page, request }) => {
@@ -228,13 +223,16 @@ test("特別な衣装の試作：案のタブで切り替えると、画面の�
   });
   await page.goto("/ritsu");
   const html = page.locator("html");
-  // アプリ全体の色は、最初はいつもの。自分で選ぶと変わり、衣装を替えてもそのまま
-  await expect(html).not.toHaveAttribute("data-world", /.+/);
-  await page.locator(".world-pick button", { hasText: "夜空" }).click();
+  // アプリ全体の色は、着ている衣装で決まる。選ぶ場所はない
   await expect(html).toHaveAttribute("data-world", "hoshiyomi");
   await expect(html).toHaveAttribute("data-theme", "dark");
-  await page.locator(".world-pick button", { hasText: "いつもの" }).click();
-  await expect(html).not.toHaveAttribute("data-world", /.+/);
+  await expect(page.locator(".world-pick")).toHaveCount(0);
+  // 夜空は、まだ開いていなければ案内が出て、開くと消える
+  await expect(page.locator(".sky-note")).toBeVisible();
+  await page.locator(".sky-note button").click();
+  await expect(page.locator(".sky-svg")).toBeVisible();
+  await page.locator(".ritsu-tabs button", { hasText: "衣装" }).click();
+  await expect(page.locator(".sky-note")).toHaveCount(0);
   await page.locator(".ritsu-tabs button", { hasText: "夜空" }).click();
   await expect(page.locator(".sky-svg")).toBeVisible();
   await page.locator(".ritsu-tabs button", { hasText: "案" }).click();

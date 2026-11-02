@@ -1,7 +1,7 @@
 // 聞き流しと答え合わせのキャラクター（T063）。絵は Gemini の画像モデルで作った（pipeline/char_image.py）。
 // 律が言うのは、ここと ritsu/lines.json に書いた決まった言葉だけ。○×と解説の見せ方は変えない（解説を「彼女の発言」にしない）
 
-import { bgFor, chosenBg, currentTheme, isSpecial } from "./ritsu/themes";
+import { bgFor, currentTheme, isSpecial } from "./ritsu/themes";
 
 export type Expression = "normal" | "smile" | "think" | "happy" | "sad" | "sleepy" | "surprised" | "smug" | "jito";
 /** base＝立ち絵、chibi＝ちびキャラ（全身）、sit＝欄の縁に腰かけるちびキャラ（T065。驚き以外の8表情）、lie＝縁に寝そべって本を読む（sleepy だけ）、
@@ -22,10 +22,9 @@ export function charDir(theme: string, id: CharacterId = CHARACTER): string {
   return isSpecial(theme) ? `${BASE}special/${theme}/` : `${BASE}chars/${id}/${theme}/`;
 }
 
-/** 背景の URL。「衣装に合わせる」のとき、特別な衣装は専用の背景（T069） */
-export function bgUrl(theme: string, chosen: string = chosenBg()): string {
-  const bg = bgFor(theme, chosen);
-  return isSpecial(theme) && bg === bgFor(theme, "auto") ? `${charDir(theme)}bg.webp` : `${BASE}chars/bg/${bg}.webp`;
+/** 背景の URL。特別な衣装は専用の背景（T069） */
+export function bgUrl(theme: string): string {
+  return isSpecial(theme) ? `${charDir(theme)}bg.webp` : `${BASE}chars/bg/${bgFor(theme)}.webp`;
 }
 
 /** 絵の URL。theme は衣装と髪型の組（T065。省くと選んでいるテーマ） */

@@ -5,7 +5,7 @@ import { back, navigate } from "../router";
 import { progressNow } from "../progress";
 import { bgUrl, charDir, characterImage, FACES, type Expression } from "../character";
 import { Bubble } from "../Ritsu";
-import { BACKGROUNDS, chosenBg, currentTheme, currentWorld, isRevealed, isSpecial, isUnlocked, motionOf, nextTheme, setBg, setTheme, setWorld, themeById, THEMES, unlockLabel } from "../ritsu/themes";
+import { currentTheme, isRevealed, isSpecial, isUnlocked, motionOf, nextTheme, setTheme, themeById, THEMES, unlockLabel } from "../ritsu/themes";
 import { ALL_LINES, lineText, linesOf, pickLine, playLine, useSpeaking, type Line } from "../ritsu/lines";
 import { useAdmin } from "../admin";
 import { playMove, smallMove, StarFall, TowerWind } from "../ritsu/special";
@@ -62,17 +62,16 @@ function sceneName(scene: string): string {
   return SCENE_NAMES[scene] ?? scene;
 }
 
-type Tab = "theme" | "face" | "bg" | "lines" | "album" | "profile" | "sky" | "story" | "ideas";
+const SKY_SEEN = "tanto.special.sky.seen.v1";
+type Tab = "theme" | "face" | "lines" | "album" | "profile" | "sky" | "story" | "ideas";
 const TABS: { id: Tab; name: string }[] = [
   { id: "theme", name: "衣装" },
   { id: "face", name: "表情" },
-  { id: "bg", name: "背景" },
   { id: "lines", name: "セリフ" },
   { id: "album", name: "アルバム" },
   { id: "profile", name: "プロフィール" },
 ];
 
-const BG_BASE = `${import.meta.env.BASE_URL}chars/bg/`; // 選べる背景の一覧
 /** しばらく触らないと眠そうになる（ミリ秒） */
 const DOZE_AFTER = 25000;
 
@@ -81,12 +80,27 @@ export default function RitsuPage() {
   const admin = useAdmin();
   useFx();
   const [theme, setThemeState] = useState(() => currentTheme(p.level));
-  const [bg, setBgState] = useState(chosenBg);
   const [face, setFace] = useState<Expression>("smile");
   const [said, setSaid] = useState<Line | undefined>(() => pickLine("tap", 1));
   const [tab, setTab] = useState<Tab>("theme");
+  const [skySeen, setSkySeen] = useState(() => {
+    try {
+      return localStorage.getItem(SKY_SEEN) === "1";
+    } catch {
+      return true;
+    }
+  });
+  function openTab(id: Tab) {
+    setTab(id);
+    if (id !== "sky") return;
+    setSkySeen(true);
+    try {
+      localStorage.setItem(SKY_SEEN, "1");
+    } catch {
+      // 覚えられなくても動く
+    }
+  }
   const [videoOk, setVideoOk] = useState(true);
-  const [world, setWorldState] = useState(currentWorld);
   const [bump, setBump] = useState(0); // 押したときの小さな跳ね（描き直しのきっかけ）
   const next = nextTheme(p.level);
   const doze = useRef<number | undefined>(undefined);
@@ -143,16 +157,11 @@ export default function RitsuPage() {
     if (id !== theme) say(pickLine("theme", p.level));
   }
 
-  function chooseBg(id: string) {
-    setBg(id);
-    setBgState(id);
-    wake();
-  }
 
   const wearing = isSpecial(theme);
   const special = THEMES.find((t) => isSpecial(t.id) && isUnlocked(t, p.level));
   const kit = kitOf(theme);
-  const useRealMoon = wearing && kit.realMoon && fxOn("realmoon") && bg === "auto";
+  const useRealMoon = wearing && kit.realMoon && fxOn("realmoon");
   const showVideo = wearing && fxOn("stagevideo") && videoOk && !speaking && face === "smile";
   // 立ち絵のにっこりは、色違いと進化の段階で変わる
   const sprite = !wearing || face !== "smile" ? characterImage("base", face, theme)
@@ -162,7 +171,6 @@ export default function RitsuPage() {
   // 特別な衣装（T069）の絵は、開いている人にだけ渡す。開いていなければ鍵の印と名前だけ
   const shownThemes = THEMES.filter((t) => !isSpecial(t.id) || isUnlocked(t, p.level));
   const specialThemes = THEMES.filter((t) => isSpecial(t.id));
-  const ownedSpecial = specialThemes.filter((t) => isUnlocked(t, p.level));
   const lineBook = ALL_LINES.filter((l) => !l.special || admin);
   const open = lineBook.filter((l) => l.level <= p.level);
   const scenes = [...new Set(open.map((l) => sceneName(l.scene)))];
@@ -181,7 +189,7 @@ export default function RitsuPage() {
 
       {/* 立ち絵：背景つきで上に残す（スクロールしても、選んだ衣装・表情・背景がすぐ見える） */}
       {wearing && fxOn("wind") && <TowerWind />}
-      <div className="ritsu-stage" style={{ backgroundImage: `url(${useRealMoon ? `${charDir(theme)}bg-nomoon.webp` : bgUrl(theme, bg)})` }}>
+      <div className="ritsu-stage" style={{ backgroundImage: `url(${useRealMoon ? `${charDir(theme)}bg-nomoon.webp` : bgUrl(theme)})` }}>
         {wearing && <StarFall />}
         {useRealMoon && (
           <button className="real-moon" aria-label="今夜の月" onClick={() => say(ALL_LINES.filter((l) => l.scene === `moon_${theme}`)[moonKind(new Date())])}>
@@ -229,8 +237,9 @@ export default function RitsuPage() {
 
       <div className="ritsu-tabs" role="tablist">
         {[...TABS, ...(wearing && fxOn("sky") ? [{ id: "sky" as Tab, name: kit.growName }] : []), ...(wearing && fxOn("story") ? [{ id: "story" as Tab, name: "物語" }] : []), ...(admin && special ? [{ id: "ideas" as Tab, name: "案" }] : [])].filter((t) => t.id !== "album" || revealed.length > 0).map((t) => (
-          <button key={t.id} role="tab" aria-selected={tab === t.id} className={tab === t.id ? "chosen" : ""} onClick={() => setTab(t.id)}>
+          <button key={t.id} role="tab" aria-selected={tab === t.id} className={tab === t.id ? "chosen" : ""} onClick={() => openTab(t.id)}>
             {t.name}
+            {t.id === "sky" && !skySeen && <span className="tab-new" aria-label="新しい" />}
           </button>
         ))}
       </div>
@@ -286,25 +295,11 @@ export default function RitsuPage() {
               );
             })}
           </div>
-          {ownedSpecial.length > 0 && (
-            <div className="world-pick">
-              <span className="small muted">アプリ全体の色</span>
-              <div className="row">
-                {[{ id: "", name: "いつもの" }, ...ownedSpecial.map((t) => ({ id: t.id, name: kitOf(t.id).world.name }))].map((w) => (
-                  <button
-                    key={w.id}
-                    className={world === w.id ? "chosen" : "secondary"}
-                    aria-pressed={world === w.id}
-                    onClick={() => {
-                      setWorld(w.id);
-                      setWorldState(w.id);
-                    }}
-                  >
-                    {w.name}
-                  </button>
-                ))}
-              </div>
-            </div>
+          {wearing && kit.cape && fxOn("sky") && !skySeen && (
+            <p className="sky-note small">
+              星詠みを着ているあいだは、解くほど星が増える「{kit.growName}」が見られます。{" "}
+              <button className="link" onClick={() => openTab("sky")}>見に行く</button>
+            </p>
           )}
         </>
       )}
@@ -323,21 +318,6 @@ export default function RitsuPage() {
             >
               <img src={characterImage("chibi", f, theme)} alt="" loading="lazy" />
               <span>{FACE_NAMES[f]}</span>
-            </button>
-          ))}
-        </div>
-      )}
-
-      {tab === "bg" && (
-        <div className="bg-grid">
-          <button className={`bg-tile auto${bg === "auto" ? " chosen" : ""}`} aria-pressed={bg === "auto"} onClick={() => chooseBg("auto")}>
-            <img src={bgUrl(theme, "auto")} alt="" loading="lazy" />
-            <span>衣装に合わせる</span>
-          </button>
-          {BACKGROUNDS.map((b) => (
-            <button key={b.id} className={`bg-tile${bg === b.id ? " chosen" : ""}`} aria-pressed={bg === b.id} onClick={() => chooseBg(b.id)}>
-              <img src={`${BG_BASE}${b.id}.webp`} alt="" loading="lazy" />
-              <span>{b.name}</span>
             </button>
           ))}
         </div>

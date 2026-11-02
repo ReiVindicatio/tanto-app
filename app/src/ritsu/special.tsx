@@ -62,12 +62,20 @@ function underFinishLimit(today = new Date().toISOString().slice(0, 10)): boolea
 export function celebrateMove(kind: "levelup" | "goal"): void {
   const theme = currentTheme();
   if (!isSpecial(theme) || !underFinishLimit()) return;
-  playMove(theme, "finish", { line: pickLine(`${kind}_${theme}`, Infinity) });
+  const line = pickLine(`${kind}_${theme}`, Infinity);
+  // 全画面の技がある衣装は、古い動画ではなく技を出す
+  if (kitOf(theme).cape && fxOn("signature")) {
+    if (line) playLine(line);
+    playSignature(theme);
+    return;
+  }
+  playMove(theme, "finish", { line });
 }
 
 /** 小さな決めポーズ（3問続けて正解など）。画面の隅に数秒だけ出す。押せないので、解説を読むじゃまをしない */
 export function smallMove(theme = currentTheme()): void {
   if (!isSpecial(theme) || reducedMotion()) return;
+  if (kitOf(theme).cape && fxOn("cape")) return; // 小さな決めポーズは昔のマントのままなので、風を受ける絵とは混ぜない
   small = { theme, at: Date.now() };
   changed();
 }

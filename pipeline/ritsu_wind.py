@@ -1,6 +1,7 @@
 """星詠みの「風を受ける座り絵」と全画面の技の絵を、配信の形にする（2026-11-02。絵はユーザーが試作で選んだもの）。
 
-  CHAR_PY の python で：python pipeline/ritsu_wind.py hoshiyomi   # themes/<ID>/proto/ → special/<ID>/（wind-*.webp・cutin.webp・keypose.webp と動かす範囲の地図）
+  CHAR_PY の python で：python pipeline/ritsu_wind.py faces hoshiyomi  # 表情と口パクの絵（顔だけ差し替えるのでマントは動かない）。themes/<ID>/proto/ へ
+                        python pipeline/ritsu_wind.py hoshiyomi        # themes/<ID>/proto/ → special/<ID>/（wind-*.webp・cutin.webp・keypose.webp と動かす範囲の地図）
   そのあと python3 pipeline/ritsu_special_finish.py upload <ID>
 
 - 緑の背景で描いた絵を、背景の色の強さで抜く
@@ -9,6 +10,8 @@
 from __future__ import annotations
 
 import sys
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
 
 import numpy as np
 from PIL import Image, ImageFilter
@@ -21,7 +24,17 @@ SPECIAL = ROOT / "audio" / "samples_char" / "special"
 PAD = 40
 SETS = {"hoshiyomi": {"wind": dict(neck=(269, 525), head=(269, 320), headr=170, reach=730, right=190, file="sit-wind-smile.png"),
                       "keypose": dict(neck=(537, 285), head=(537, 180), headr=85, reach=560, right=0, file="key-pose.png")}}
-FACES = "normal think happy sad sleepy surprised smug jito blink".split()
+# 口パクは、声が流れる表情（5つ）だけ
+TALK = "normal smile think happy sad".split()
+FACES = "normal think happy sad sleepy surprised smug jito blink".split() + [f"{f}-talk" for f in TALK]
+FACE_BOX = (100 / 1024, 250 / 1024, 445 / 1024, 515 / 1024)
+EXPRESSION = {"normal": "a neutral relaxed expression with a small open mouth, as if about to speak", "think": "a thoughtful expression, eyes looking slightly upward, mouth small",
+              "happy": "a very happy expression, eyes closed in joyful arcs, wide open smiling mouth", "sad": "a little sad expression, eyebrows lowered, small frown",
+              "sleepy": "a very sleepy expression, eyes half closed, small mouth", "surprised": "a surprised expression, eyes wide open, small round open mouth",
+              "smug": "a proud smug expression, eyes half closed, one corner of the mouth up",
+              "jito": "a deadpan sulky stare: the upper eyelids lowered straight across, covering the top third of her eyes, with her brown irises and dark pupils still clearly visible and looking at the viewer, and a small straight mouth",
+              "blink": "the same gentle smile but both eyes closed in a blink"}
+TALKING = "the same eyes and eyebrows as in the reference, but her mouth is open in the middle of speaking a word, a small soft open mouth with the tongue barely visible"
 
 
 def crop_box(im: Image.Image, pad: int) -> tuple[int, int, int, int]:
@@ -64,6 +77,31 @@ def save(im: Image.Image, path, width: int) -> None:
     cc.webp(im.resize((width, round(im.height * width / im.width)), Image.LANCZOS), path)
 
 
+def faces(cid: str) -> None:
+    """顔のところだけ差し替えた絵を作る。口パクは、その表情の絵をもとに口だけ開ける"""
+    import char_image as ci
+    src = cc.SRC / cid / "proto"
+    base = src / "sit-wind-smile.png"
+    tail = ". Everything else must stay identical. No text. Original anime-style character, 15 years old, not resembling any existing character."
+    head = "Redraw the reference image EXACTLY, with the same pose, size, position, hair, outfit, cape, colors and the same plain green background, changing ONLY "
+
+    def one(job: tuple[str, Path, str]) -> str:
+        name, ref, words = job
+        out = src / f"{name}-patched.png"
+        if not out.exists():
+            raw = src / f"{name}-raw.png"
+            ci.generate([ci._img(ref), {"text": head + words + tail}], raw)
+            cc.patch(base, raw, FACE_BOX, aligned=True).save(out)
+        return name
+
+    first = [(n, base, "her facial expression to " + t) for n, t in EXPRESSION.items()]
+    with ThreadPoolExecutor(3) as ex:
+        print(list(ex.map(one, first)), flush=True)
+    talk = [(f"{f}-talk", base if f == "smile" else src / f"{f}-patched.png", "her mouth: " + TALKING) for f in TALK]
+    with ThreadPoolExecutor(3) as ex:
+        print(list(ex.map(one, talk)), flush=True)
+
+
 def main(cid: str) -> None:
     src, dst = cc.SRC / cid / "proto", SPECIAL / cid
     conf = SETS[cid]
@@ -89,4 +127,7 @@ def main(cid: str) -> None:
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    if sys.argv[1] == "faces":
+        faces(sys.argv[2])
+    else:
+        main(sys.argv[1])
