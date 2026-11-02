@@ -99,3 +99,10 @@
 - 11-02 06:57 exam を作れなかった（/private/tmp/claude-502/-Users-masato-b-saito-work-other-law-tanto-app/ba0ef277-cbeb-4d89-a1dc-faf8d38a5519/scratchpad/night-exam.log）
 - 11-02 06:57 夜の作業がすべて終わった
 - 11-02 10:38 試験の日の服と、足を振るコマの作り直しを push した（絵は人の目で確かめていない。audio/samples_char/sheets/ritsu-exam.png・swing-all.png）
+- 11-02 10:04 星詠みの登場を作り直した
+- 11-02 10:57 hakama の一式を作れなかった（/private/tmp/claude-502/-Users-masato-b-saito-work-other-law-tanto-app/ba0ef277-cbeb-4d89-a1dc-faf8d38a5519/scratchpad/job2-hakama.log）
+- 11-02 12:56 nocturne を作って R2 に上げた（179 個）
+- 11-02 14:53 yukihana の一式を作れなかった（/private/tmp/claude-502/-Users-masato-b-saito-work-other-law-tanto-app/ba0ef277-cbeb-4d89-a1dc-faf8d38a5519/scratchpad/job2-yukihana.log）
+- 11-02 16:20 diva を作って R2 に上げた（178 個）
+- 11-02 16:20 すべて終わった
+- 11-02 16:21 残りの特別な衣装のセリフと衣装の表を push した（絵と声と動画は R2。人の目で確かめていない。audio/samples_char/sheets/ritsu-<ID>.png）
