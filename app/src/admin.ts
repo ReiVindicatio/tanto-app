@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 const KEY = "tanto.admin.v1";
+const AS_USER = "tanto.admin.asuser.v1";
 const listeners = new Set<() => void>();
 const changed = () => listeners.forEach((f) => f());
 
@@ -20,7 +21,13 @@ export function useAdmin(): boolean {
   return v;
 }
 
+/** 管理者の表示か。一般の見え方に切り替えている間は、管理者でも false */
 export function isAdmin(): boolean {
+  return isRealAdmin() && !asUser();
+}
+
+/** サーバーが管理者と判定したか（表示の切り替えに関係なく） */
+export function isRealAdmin(): boolean {
   try {
     return localStorage.getItem(KEY) === "1";
   } catch {
@@ -28,12 +35,45 @@ export function isAdmin(): boolean {
   }
 }
 
+/** 管理者が、一般の人の見え方を確かめているか */
+export function asUser(): boolean {
+  try {
+    return localStorage.getItem(AS_USER) === "1";
+  } catch {
+    return false;
+  }
+}
+
+export function setAsUser(on: boolean): void {
+  try {
+    if (on) localStorage.setItem(AS_USER, "1");
+    else localStorage.removeItem(AS_USER);
+  } catch {
+    // 覚えられなければ切り替わらない
+  }
+  changed();
+}
+
+/** 管理者の印を出すか（一般の見え方の間も出して、戻せるようにする） */
+export function useRealAdmin(): boolean {
+  const [v, setV] = useState(isRealAdmin);
+  useEffect(() => {
+    const f = () => setV(isRealAdmin());
+    listeners.add(f);
+    f();
+    return () => {
+      listeners.delete(f);
+    };
+  }, []);
+  return v;
+}
+
 /** ログイン状態が変わったら呼ぶ。ログインしていなければ外し、通信に失敗したら今の値のまま */
 export async function refreshAdmin(getToken: () => Promise<string | null>, doFetch: typeof fetch = fetch): Promise<void> {
   try {
     const token = await getToken();
     if (!token) {
-      if (isAdmin()) void doFetch("/special/logout", { method: "POST" }); // 特別な衣装の通行証（T069）を消す
+      if (isRealAdmin()) void doFetch("/special/logout", { method: "POST" }); // 特別な衣装の通行証（T069）を消す
       localStorage.removeItem(KEY);
       changed();
       return;

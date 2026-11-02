@@ -15,17 +15,17 @@ export function setThemePref(p: ThemePref): void {
   applyTheme();
 }
 
-let forcedDark = false;
-/** 夜空の衣装を着ている間だけ、設定によらず暗い表示にする（特別な衣装の試作） */
-export function forceDark(on: boolean): void {
-  forcedDark = on;
+let forced: "light" | "dark" | null = null;
+/** 特別な衣装の画面のテーマを選んでいる間は、設定によらずその明るさにする */
+export function forceTheme(v: "light" | "dark" | null): void {
+  forced = v;
   applyTheme();
 }
 
 /** <html data-theme="light|dark"> を付ける。端末の設定が変わったら付け直す */
 export function applyTheme(): void {
   const p = getThemePref();
-  const dark = forcedDark || p === "dark" || (p === "system" && !!media?.matches);
+  const dark = forced ? forced === "dark" : p === "dark" || (p === "system" && !!media?.matches);
   document.documentElement.dataset.theme = dark ? "dark" : "light";
 }
 

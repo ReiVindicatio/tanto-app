@@ -1,3 +1,4 @@
+import { KITS } from "./kits";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { isUnlocked, markRevealed, nextTheme, themeById, THEMES, unlockLabel } from "./themes";
 import { refreshAdmin, isAdmin } from "../admin";
@@ -79,5 +80,11 @@ describe("問で解く・模試の経験値（T068）", () => {
     expect(extraXp()).toBe(QUESTION_XP.full + QUESTION_XP.other);
     store.set("tanto.mock.v1", JSON.stringify([mock("yobi-a", 10)]));
     expect(extraXp()).toBe(QUESTION_XP.full + QUESTION_XP.other + MOCK_XP);
+  });
+});
+
+describe("特別な衣装の仕組み", () => {
+  it("買う衣装はどれも固有の仕組み（KITS）を持つ", () => {
+    for (const t of THEMES.filter((x) => x.unlock === "paid")) expect(Object.keys(KITS)).toContain(t.id);
   });
 });

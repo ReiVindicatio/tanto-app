@@ -98,12 +98,19 @@ def peek(src: Path, dst: Path, width: int = 240) -> None:
     webp(o.resize((width, round(o.height * width / o.width)), Image.LANCZOS), dst)  # 幅（おさげの端から端）でそろえる
 
 
+THIN_LINE = 12  # 縁の消し残しとみなす、縦の厚さ（元の絵の点）
+
+
 def ledge_cut(im: Image.Image) -> tuple[Image.Image, int, int]:
     """縁に腰かける・寝そべる絵の背景を抜く：縁の線と灰色の帯を消し、ぶら下げた足は残す。（全体の大きさの絵, 縁の線の上端, 下端）"""
     im = im.convert("RGB")
     w, h = im.size
     g = im.convert("L").load()
     dark = lambda y: g[5, y] < 150 and g[w - 6, y] < 150  # 左右の端（キャラの外）が暗い行＝縁の線
+    side = 2  # 行の背景の色を見る位置（端からの距離）
+    if not any(dark(y) for y in range(h // 3, h)):  # 縁の線が端まで届いていない絵（2026-11-02 試験の日の寝そべり）は、少し内側で見る
+        side = w // 20
+        dark = lambda y: g[side, y] < 150 and g[w - side, y] < 150
     top = next(y for y in range(h // 3, h) if dark(y))
     bot = top
     while bot + 1 < h and dark(bot + 1):
@@ -114,7 +121,7 @@ def ledge_cut(im: Image.Image) -> tuple[Image.Image, int, int]:
     # 縁の線から下：縁は横にどこまでも同じ色なので、行ごとに端の色と近いところを消す（足だけが残る）
     px, fp = im.load(), full.load()
     for y in range(max(0, top - 6), h):
-        edge = [(px[2, y][i] + px[w - 3, y][i]) / 2 for i in range(3)]
+        edge = [(px[side, y][i] + px[w - side - 1, y][i]) / 2 for i in range(3)]
         for x in range(w):
             c = px[x, y]
             # 帯は灰色（色みがない）。色みのあるところ（ミントのズボン・肌など）は、明るさが帯に近くても残す（2026-10-27 パジャマで足が欠けた）
@@ -125,7 +132,7 @@ def ledge_cut(im: Image.Image) -> tuple[Image.Image, int, int]:
                 fp[x, y] = (0, 0, 0, 0)
     # 縁の線（帯の上の端・下の端など、左右の端まで暗い行）：その列の線のすぐ上とすぐ下がどちらも背景なら消す（手・足がまたぐ列は残す）
     al = full.getchannel("A").load()
-    rows = [y for y in range(max(0, top - 2), h) if g[5, y] < 200 and g[w - 6, y] < 200]
+    rows = [y for y in range(max(0, top - 2), h) if g[max(5, side), y] < 200 and g[w - max(6, side + 1), y] < 200]
     runs: list[list[int]] = []
     for y in rows:
         if runs and y - runs[-1][-1] <= 1:
@@ -156,6 +163,19 @@ def ledge_cut(im: Image.Image) -> tuple[Image.Image, int, int]:
             for y in range(top - 6, h):
                 for x in list(range(0, max(0, above[0] - 12))) + list(range(min(w, above[2] + 12), w)):
                     fp[x, y] = (0, 0, 0, 0)
+    # 縁のあたりに細く残った線を消す：縦に薄い帯（足や手はこれより厚い）。2026-11-02 足を振るコマや試験の日の服で、白や灰の線が残った
+    al = full.getchannel("A").load()
+    band = range(max(0, top - 10), min(h, bot + 40))
+    for x in range(w):
+        run: list[int] = []
+        for y in [*band, -1]:
+            if y >= 0 and al[x, y] > 40:
+                run.append(y)
+                continue
+            if run and len(run) <= THIN_LINE and run[0] > band[0]:
+                for v in run:
+                    fp[x, v] = (0, 0, 0, 0)
+            run = []
     fill_holes(full, im, top)
     return full, top, bot
 

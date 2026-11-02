@@ -1,6 +1,6 @@
 """律の特別な衣装の動き（docs/ritsu-special-costumes.md）：選んだ絵から、動画モデル（Veo）で数秒の動画を作る。
 
-  python3 pipeline/ritsu_video.py <衣装ID> <entrance|finish|small> <元の絵の png> [--seconds 6] [--aspect 9:16]
+  python3 pipeline/ritsu_video.py <衣装ID> <entrance|finish|small> <元の絵の png> [--seconds 6] [--aspect 9:16] [--loop]
   python3 pipeline/ritsu_video.py sources <衣装ID>   # 動画の元の絵を作る（全画面用の縦長・小さな決めポーズ用の単色の背景。audio/samples_char/video/src/）
 
 - キーは .secrets/google-vertex-key（声1・画像と同じ）。請求は Google Cloud のクレジット
@@ -95,7 +95,8 @@ def main() -> None:
     opt = lambda name, default: sys.argv[sys.argv.index(name) + 1] if name in sys.argv else default
     design = json.loads((ROOT / "pipeline" / "ritsu_special.json").read_text(encoding="utf-8"))
     c = next(x for x in design["costumes"] if x["id"] == cid)
-    generate(STYLE + c["moves"][move], image, OUT / f"{cid}-{move}.mp4", int(opt("--seconds", "6")), opt("--aspect", "9:16"))
+    generate(STYLE + c["moves"][move], image, OUT / f"{cid}-{move}.mp4", int(opt("--seconds", "6")), opt("--aspect", "9:16"),
+             last=image if "--loop" in sys.argv else None)  # 動きを抑えた動画は、最初と最後を同じ絵にする
 
 
 if __name__ == "__main__":

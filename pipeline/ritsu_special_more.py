@@ -33,7 +33,7 @@ def design(cid: str) -> dict:
 
 def lines(cid: str) -> None:
     c = design(cid)
-    scenes = json.loads(MORE.read_text(encoding="utf-8"))
+    scenes = {k: v for k, v in json.loads(MORE.read_text(encoding="utf-8")).items() if k.endswith(f"_{cid}") or k.startswith(f"as_{cid}_")}
     all_lines = [l for l in json.loads(LINES.read_text(encoding="utf-8")) if l["scene"] not in scenes]
     for scene, items in scenes.items():
         for k, (text, face) in enumerate(items, 1):
@@ -62,7 +62,14 @@ def images(cid: str) -> None:
     base = ci._img(ci.OUT / "themes" / cid / "base-smile.png")
     same = " The SAME character as in the reference image: exactly the same young face of a 15-year-old, same eyes, EXACTLY the same soft pink-brown hair color, same art style." + TAIL
     keep = "Same upper-body framing, same size and same pose as the reference image, plain white background. "
+    more = c.get("more")
     jobs = {
+        "star-pal": ([{"text": "" + more["pal"] + GREEN + TAIL}], "key", 160, None),
+        "base-smile-evo2": ([base, {"text": more["evo2"] + " " + keep + same}], "cut", 480, None),
+        "base-smile-evo3": ([base, {"text": more["evo3"] + " " + keep + same}], "cut", 480, None),
+        **{f"ch{k}": ([base, {"text": t + same}], "plain", 960, None) for k, t in enumerate(more["ch"], 1)},
+        "stage-wide": ([base, {"text": "A wide illustration: " + more["stage"] + " " + c["outfit"] + same}], "src", 0, "16:9"),
+    } if more else {
         "star-pal": ([{"text": "A tiny cute star spirit mascot: a plump pale gold five-pointed star with a tiny sleepy smiling face and a soft glow, pastel anime style, " + GREEN + TAIL}], "key", 160, None),
         "bg-nomoon": ([{"text": ci.BG + c["backgrounds"][c["bg"]].replace(", a crescent moon", "") + ". There is NO moon in the sky."}], "plain", 960, None),
         "base-smile-evo2": ([base, {"text": "Same character with an upgraded outfit: the same cape now has brighter glowing constellations and a soft gold trim, and a slightly larger golden crescent hair ornament. " + keep + same}], "cut", 480, None),
@@ -106,9 +113,10 @@ def sit_source(cid: str, out: Path) -> None:
 
 
 def videos(cid: str) -> None:
+    c = design(cid)
     g = ci.OUT / "themes" / cid / "more"
     dst = fin.SPECIAL / cid
-    idle = ("Seamless looping idle animation: the cape and long hair sway softly in a gentle breeze, she blinks slowly once, stars twinkle. "
+    idle = c["more"]["idle"] + " " if c.get("more") else ("Seamless looping idle animation: the cape and long hair sway softly in a gentle breeze, she blinks slowly once, stars twinkle. "
             "She stays in exactly the same place and pose, the camera does not move, the last frame matches the first frame. ")
     wide = rv.OUT / f"{cid}-idle-stage.mp4"
     try:
@@ -119,6 +127,9 @@ def videos(cid: str) -> None:
         print(f"  idle-stage.mp4 {(dst / 'idle-stage.mp4').stat().st_size // 1024}KB", flush=True)
     except (Exception, SystemExit) as e:  # noqa: BLE001
         print(f"  ✗ idle-stage：{e}", flush=True)
+    if c.get("more"):  # 腰かけのループ動画は星詠みだけ（容量が大きく、動画モデルが勝手に飾りを足した）
+        print("✅ 動画", flush=True)
+        return
     sit = rv.OUT / f"{cid}-idle-sit.mp4"
     try:
         if not sit.exists():

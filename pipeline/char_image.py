@@ -402,8 +402,11 @@ KICK_CLEAR = (" The change of the legs must be CLEARLY visible at a glance: the 
 SWING_FACES = ["normal", "think", "smile"]
 SWING = ("Redraw the reference image EXACTLY (same pose, same size and position, same face, hair, outfit, colors and ledge), "
          "changing ONLY her lower legs and feet that dangle below the ledge: ")
-SWINGS = {1: "both lower legs swung forward and up, knees bent, the soles of the shoes tilted toward the viewer, feet a little apart",
-          2: "the left lower leg swung forward and up, the right lower leg swung back under the ledge, like kicking her feet alternately"}
+# 2026-11-02：「前へ振り上げる」を強く言うと、足が真横に伸びて縁に乗る・足首が折れる絵が十数枚できた（ユーザー「足がひん曲がってる」）。下にぶら下げたまま、小さく振る
+SWING_KEEP = ("Her knees stay at the ledge exactly as in the reference and both lower legs keep hanging DOWN below the ledge. Never lay a leg on top of the ledge, "
+              "never stick a leg out sideways, keep the knees and ankles natural with both feet the same size as in the reference, and keep the ledge lines exactly as they are")
+SWINGS = {1: "both lower legs swing a little forward toward the viewer, about 20 degrees, feet a little apart. " + SWING_KEEP,
+          2: "the left lower leg swings about 25 degrees to the outside and the right lower leg swings about 15 degrees the other way, like gently kicking her feet alternately. " + SWING_KEEP}
 
 " + KICK_CLEAR + "
 def motion_set(name: str) -> None:

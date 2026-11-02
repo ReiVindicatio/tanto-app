@@ -5,14 +5,15 @@ import { back, navigate } from "../router";
 import { progressNow } from "../progress";
 import { bgUrl, charDir, characterImage, FACES, type Expression } from "../character";
 import { Bubble } from "../Ritsu";
-import { BACKGROUNDS, chosenBg, currentTheme, isRevealed, isSpecial, isUnlocked, motionOf, nextTheme, setBg, setTheme, themeById, THEMES, unlockLabel } from "../ritsu/themes";
+import { BACKGROUNDS, chosenBg, currentTheme, currentWorld, isRevealed, isSpecial, isUnlocked, motionOf, nextTheme, setBg, setTheme, setWorld, themeById, THEMES, unlockLabel } from "../ritsu/themes";
 import { ALL_LINES, lineText, linesOf, pickLine, playLine, useSpeaking, type Line } from "../ritsu/lines";
 import { useAdmin } from "../admin";
 import { playMove, smallMove, StarFall, TowerWind } from "../ritsu/special";
 import { fxOn, useFx } from "../ritsu/fx";
 import { moonKind, moonPath } from "../ritsu/moon";
-import { evoStage, EVO_NAMES } from "../ritsu/themes";
-import { IdeasTab, Showcase, SkyTab, StoryTab } from "./RitsuSpecial";
+import { evoStage } from "../ritsu/themes";
+import { kitOf } from "../ritsu/kits";
+import { GrowTab, IdeasTab, Showcase, StoryTab } from "./RitsuSpecial";
 import { useMouthOpen } from "../ritsu/lipsync";
 import { Progress } from "./common";
 
@@ -85,6 +86,7 @@ export default function RitsuPage() {
   const [said, setSaid] = useState<Line | undefined>(() => pickLine("tap", 1));
   const [tab, setTab] = useState<Tab>("theme");
   const [videoOk, setVideoOk] = useState(true);
+  const [world, setWorldState] = useState(currentWorld);
   const [bump, setBump] = useState(0); // 押したときの小さな跳ね（描き直しのきっかけ）
   const next = nextTheme(p.level);
   const doze = useRef<number | undefined>(undefined);
@@ -149,15 +151,18 @@ export default function RitsuPage() {
 
   const wearing = isSpecial(theme);
   const special = THEMES.find((t) => isSpecial(t.id) && isUnlocked(t, p.level));
-  const useRealMoon = wearing && fxOn("realmoon") && bg === "auto";
+  const kit = kitOf(theme);
+  const useRealMoon = wearing && kit.realMoon && fxOn("realmoon") && bg === "auto";
   const showVideo = wearing && fxOn("stagevideo") && videoOk && !speaking && face === "smile";
   // 立ち絵のにっこりは、色違いと進化の段階で変わる
   const sprite = !wearing || face !== "smile" ? characterImage("base", face, theme)
-    : fxOn("dawn") ? `${charDir(theme)}base-smile-dawn.webp`
+    : kit.dawn && fxOn("dawn") ? `${charDir(theme)}base-smile-dawn.webp`
     : fxOn("evolve") && evoStage() > 0 ? `${charDir(theme)}base-smile-evo${evoStage() + 1}.webp`
     : characterImage("base", face, theme);
-  // 特別な衣装（T069）は、開いている人にだけ見せる（買えるようになるまで）
+  // 特別な衣装（T069）の絵は、開いている人にだけ渡す。開いていなければ鍵の印と名前だけ
   const shownThemes = THEMES.filter((t) => !isSpecial(t.id) || isUnlocked(t, p.level));
+  const specialThemes = THEMES.filter((t) => isSpecial(t.id));
+  const ownedSpecial = specialThemes.filter((t) => isUnlocked(t, p.level));
   const lineBook = ALL_LINES.filter((l) => !l.special || admin);
   const open = lineBook.filter((l) => l.level <= p.level);
   const scenes = [...new Set(open.map((l) => sceneName(l.scene)))];
@@ -165,7 +170,7 @@ export default function RitsuPage() {
   const revealed = shownThemes.filter((t) => t.id !== "default" && isRevealed(t.id));
 
   return (
-    <section className="ritsu-page">
+    <section className={`ritsu-page${tab === "sky" ? " grow-open" : ""}`}>
       <div className="toolbar">
         <button className="link" onClick={() => back({ name: "me" })}>
           ← 戻る
@@ -202,7 +207,7 @@ export default function RitsuPage() {
           </span>
         </button>
       </div>
-      {wearing && fxOn("evolve") && <div className="evo-name">{EVO_NAMES[evoStage()]}の{themeById(theme)?.name.replace(/^.*の/, "")}</div>}
+      {wearing && fxOn("evolve") && <div className="evo-name">{kit.evo[evoStage()]}</div>}
       {admin && isSpecial(theme) && (
         <div className="row special-preview">
           <span className="muted small">管理者：演出を確かめる</span>
@@ -223,20 +228,20 @@ export default function RitsuPage() {
       </div>
 
       <div className="ritsu-tabs" role="tablist">
-        {[...TABS, ...(wearing && fxOn("sky") ? [{ id: "sky" as Tab, name: "夜空" }] : []), ...(wearing && fxOn("story") ? [{ id: "story" as Tab, name: "物語" }] : []), ...(admin && special ? [{ id: "ideas" as Tab, name: "案" }] : [])].filter((t) => t.id !== "album" || revealed.length > 0).map((t) => (
+        {[...TABS, ...(wearing && fxOn("sky") ? [{ id: "sky" as Tab, name: kit.growName }] : []), ...(wearing && fxOn("story") ? [{ id: "story" as Tab, name: "物語" }] : []), ...(admin && special ? [{ id: "ideas" as Tab, name: "案" }] : [])].filter((t) => t.id !== "album" || revealed.length > 0).map((t) => (
           <button key={t.id} role="tab" aria-selected={tab === t.id} className={tab === t.id ? "chosen" : ""} onClick={() => setTab(t.id)}>
             {t.name}
           </button>
         ))}
       </div>
 
-      {tab === "sky" && <SkyTab theme={theme} />}
+      {tab === "sky" && <GrowTab theme={theme} />}
       {tab === "story" && <StoryTab theme={theme} admin={admin} />}
-      {tab === "ideas" && <IdeasTab theme={special?.id ?? theme} />}
-      {tab === "theme" && admin && special && fxOn("showcase") && <Showcase theme={special.id} name={special.name} desc={special.desc} />}
+      {tab === "ideas" && <IdeasTab theme={wearing ? theme : (special?.id ?? theme)} />}
+      {tab === "theme" && <h3 className="theme-section">いつもの衣装</h3>}
       {tab === "theme" && (
         <div className="theme-grid">
-          {shownThemes.map((t) => {
+          {THEMES.filter((t) => !isSpecial(t.id)).map((t) => {
             const ok = isUnlocked(t, p.level);
             return (
               <button
@@ -247,12 +252,61 @@ export default function RitsuPage() {
                 onClick={() => wear(t.id)}
               >
                 <img src={characterImage("base", "smile", t.id)} alt="" loading="lazy" />
+                {!ok && <span className="lock-mark" aria-label="未開放">🔒</span>}
                 <span>{ok ? t.name : unlockLabel(t)}</span>
                 {ok && t.id !== "default" && !isRevealed(t.id) && <span className="theme-new">NEW</span>}
               </button>
             );
           })}
         </div>
+      )}
+      {tab === "theme" && specialThemes.length > 0 && (
+        <>
+          <h3 className="theme-section">特別な衣装</h3>
+          {admin && special && fxOn("showcase") && <Showcase theme={special.id} name={special.name} desc={special.desc} />}
+          <div className="theme-grid">
+            {specialThemes.map((t) => {
+              const ok = isUnlocked(t, p.level);
+              if (!ok) {
+                return (
+                  <button key={t.id} className={`theme-tile locked special-locked kit-${t.id}`} disabled>
+                    <span className="special-locked-art" aria-hidden="true">{kitOf(t.id).particle}</span>
+                    <span className="lock-mark" aria-label="未開放">🔒</span>
+                    <span>{t.name}</span>
+                    <span className="muted small">{unlockLabel(t)}</span>
+                  </button>
+                );
+              }
+              return (
+                <button key={t.id} className={`theme-tile${t.id === theme ? " chosen" : ""}`} aria-pressed={t.id === theme} onClick={() => wear(t.id)}>
+                  <img src={characterImage("base", "smile", t.id)} alt="" loading="lazy" />
+                  <span>{t.name}</span>
+                  {!isRevealed(t.id) && <span className="theme-new">NEW</span>}
+                </button>
+              );
+            })}
+          </div>
+          {ownedSpecial.length > 0 && (
+            <div className="world-pick">
+              <span className="small muted">アプリ全体の色</span>
+              <div className="row">
+                {[{ id: "", name: "いつもの" }, ...ownedSpecial.map((t) => ({ id: t.id, name: kitOf(t.id).world.name }))].map((w) => (
+                  <button
+                    key={w.id}
+                    className={world === w.id ? "chosen" : "secondary"}
+                    aria-pressed={world === w.id}
+                    onClick={() => {
+                      setWorld(w.id);
+                      setWorldState(w.id);
+                    }}
+                  >
+                    {w.name}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+        </>
       )}
 
       {tab === "face" && (

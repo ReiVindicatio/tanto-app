@@ -167,7 +167,7 @@ async function beAdmin(page: any) {
   });
 }
 
-test("特別な衣装（T069）：管理者でなければ一覧に出ない。管理者は着られて、演出を確かめて飛ばせる", async ({ page }) => {
+test("特別な衣装（T069）：管理者でなければ鍵の印で着られない。管理者は着られて、演出を確かめて飛ばせる", async ({ page }) => {
   await page.route("**/special/**", () => {}); // 動画の読み込み中のまま（押して飛ばせることを見る）
   await openHome(page);
   await page.evaluate(() => {
@@ -176,8 +176,13 @@ test("特別な衣装（T069）：管理者でなければ一覧に出ない。�
   });
   await page.goto("/ritsu");
   await expect(page.locator(".theme-tile").first()).toBeVisible();
-  await expect(page.locator(".theme-tile", { hasText: "星詠み" })).toHaveCount(0);
-  await expect(page.locator(".theme-tile", { hasText: "特別な衣装" })).toHaveCount(0);
+  // 絵は渡さず、鍵の印と名前だけ。いつもの衣装と分かれている
+  const locked = page.locator(".special-locked", { hasText: "星詠み" });
+  await expect(locked).toBeDisabled();
+  await expect(locked.locator(".lock-mark")).toBeVisible();
+  await expect(locked.locator("img")).toHaveCount(0);
+  await expect(page.locator(".theme-section", { hasText: "特別な衣装" })).toBeVisible();
+  await expect(page.locator(".theme-tile.locked:not(.special-locked) .lock-mark").first()).toBeVisible();
   await expect(page.locator(".special-preview")).toHaveCount(0);
   await expect(page.locator("html")).not.toHaveAttribute("data-costume", "hoshiyomi");
 
@@ -223,15 +228,43 @@ test("特別な衣装の試作：案のタブで切り替えると、画面の�
   });
   await page.goto("/ritsu");
   const html = page.locator("html");
-  await expect(html).toHaveAttribute("data-fx", /\bworld\b/);
+  // アプリ全体の色は、最初はいつもの。自分で選ぶと変わり、衣装を替えてもそのまま
+  await expect(html).not.toHaveAttribute("data-world", /.+/);
+  await page.locator(".world-pick button", { hasText: "夜空" }).click();
+  await expect(html).toHaveAttribute("data-world", "hoshiyomi");
   await expect(html).toHaveAttribute("data-theme", "dark");
+  await page.locator(".world-pick button", { hasText: "いつもの" }).click();
+  await expect(html).not.toHaveAttribute("data-world", /.+/);
   await page.locator(".ritsu-tabs button", { hasText: "夜空" }).click();
   await expect(page.locator(".sky-svg")).toBeVisible();
   await page.locator(".ritsu-tabs button", { hasText: "案" }).click();
-  await page.locator(".ideas-list label", { hasText: "アプリ全体が夜空" }).locator("input").uncheck();
-  await expect(html).not.toHaveAttribute("data-fx", /\bworld\b/);
-  await page.locator(".ideas-list label", { hasText: "自分の夜空" }).locator("input").uncheck();
+  await page.locator(".ideas-list label", { hasText: "育つもの" }).locator("input").uncheck();
   await expect(page.locator(".ritsu-tabs button", { hasText: "夜空" })).toHaveCount(0);
   await page.locator(".ideas-tab button", { hasText: "全部オフ" }).click();
   await expect(html).toHaveAttribute("data-fx", "");
+});
+
+test("管理者の印：押すと一般の見え方になり、もう一度押すと戻る", async ({ page }) => {
+  await page.route("**/special/**", (r) => r.fulfill({ status: 404 }));
+  await beAdmin(page);
+  await page.goto("/");
+  await page.evaluate(() => {
+    localStorage.setItem("tanto.character.theme.v1", "hoshiyomi");
+    localStorage.setItem("tanto.character.revealed.v1", JSON.stringify(["hoshiyomi", "pajama"]));
+    localStorage.setItem("tanto.special.daily.v1", new Date().toDateString());
+  });
+  await page.goto("/ritsu");
+  const html = page.locator("html");
+  const badge = page.locator(".appbar .admin-badge");
+  await expect(html).toHaveAttribute("data-costume", "hoshiyomi");
+  await expect(page.locator(".theme-tile.locked")).toHaveCount(0);
+  await badge.click();
+  await expect(badge).toHaveText("一般で表示中");
+  await expect(html).not.toHaveAttribute("data-costume", /.+/);
+  await expect(page.locator(".special-locked", { hasText: "星詠み" })).toBeDisabled();
+  await expect(page.locator(".ritsu-tabs button", { hasText: "案" })).toHaveCount(0);
+  await expect(page.locator(".special-preview")).toHaveCount(0);
+  await badge.click();
+  await expect(badge).toHaveText("管理者");
+  await expect(html).toHaveAttribute("data-costume", "hoshiyomi");
 });

@@ -13,7 +13,7 @@ import { cardIdOf } from "./learning";
 import SpeakButton from "./SpeakButton";
 import { characterOn, LINES, markTipSeen, reactionFace, tipSeen } from "./character";
 import { PerchFigure, RitsuDock, useIdle } from "./Ritsu";
-import { answerFx, celebrateMove, redeemLine, smallMove } from "./ritsu/special";
+import { answerFx, celebrateMove, redeemLine, setCombo, smallMove } from "./ritsu/special";
 import { milestones, progressNow } from "./progress";
 import { shuffle } from "./shuffle";
 import { currentState, recordAnswer } from "./learning";
@@ -55,6 +55,7 @@ export default function StatementDrill({
   const [answer, setAnswer] = useState<boolean | null>(null);
   // ○×を押したら、答え合わせが見える位置まで送る（肢の文が長いと、押しても画面が変わっていないように見えた：T066）
   const resultEl = useRef<HTMLDivElement>(null);
+  useEffect(() => () => setCombo(0), []); // 連続正解の覚醒は、その回の間だけ
   useEffect(() => {
     if (answer === null) return;
     const f = requestAnimationFrame(() => revealBelow(resultEl.current));

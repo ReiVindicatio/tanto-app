@@ -20,7 +20,7 @@ import { currentPlay, playSeq } from "./play";
 import ArticlePage from "./screens/ArticlePage";
 import TabBar from "./TabBar";
 import StreakChip from "./StreakChip";
-import { useAdmin } from "./admin";
+import { AdminBadge } from "./AdminBadge";
 import Home from "./screens/Home";
 import SubjectList from "./screens/SubjectList";
 import SubjectPage from "./screens/SubjectPage";
@@ -30,7 +30,6 @@ import { SyncContext } from "./ReportLink";
 
 // 画面の切り替え（T025）。画面ごとに URL を持ち、下のタブ（ホーム・科目・マイページ）で行き来する
 export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedStore }) {
-  const admin = useAdmin(); // 管理者（T068）は、全部の衣装が開いていることが分かるように上の帯に出す
   // 回答・同期で学習の状態が変わったら、集計を描き直す
   const [, setVersion] = useState(0);
   useEffect(() => onLearningChange(() => setVersion((v) => v + 1)), []);
@@ -64,7 +63,7 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
             たんたん<span className="muted">（短答の一問一答・非公式）</span>
           </button>
           <div className="appbar-right">
-            {admin && <span className="admin-badge">管理者</span>}
+            <AdminBadge />
             {tab && <StreakChip />}
             {sync && <SyncBadge sync={sync} />}
           </div>

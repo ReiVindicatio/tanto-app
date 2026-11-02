@@ -1,10 +1,11 @@
 // 律のテーマ（衣装と髪型の組。T065）。絵は public/chars/ritsu/<テーマ>/。レベルで開き、選んだテーマは端末に覚える（学習記録ではない）
 import { progressNow } from "../progress";
 import costumes from "./costumes.json";
-import { isAdmin } from "../admin";
+import { asUser, isAdmin } from "../admin";
+import { kitOf } from "./kits";
 import { mockSubmits } from "../extraXp";
 import { currentState } from "../learning";
-import { forceDark } from "../theme";
+import { forceTheme } from "../theme";
 import { fxOn, IDEAS, onFxChange } from "./fx";
 
 /** 動きのコマ（T065）。あるものだけ動かす：blink＝目を閉じた絵がある表情、swing＝足を振ったコマがある表情、kick＝寝そべりの足のコマ、
@@ -79,7 +80,7 @@ export function isSpecial(id: string): boolean {
 export function isUnlocked(t: Theme, level: number): boolean {
   if (t.id === "default" || isAdmin()) return true;
   if (t.unlock === "paid") return false; // 端末の値（見た印）では開かない。絵もサーバーが渡さない
-  if (isRevealed(t.id)) return true;
+  if (!asUser() && isRevealed(t.id)) return true; // 一般の見え方を確かめている間は、見た印を数えない
   const m = t.unlock?.match(/^mock(\d+)$/);
   if (m) return mockSubmits() >= Number(m[1]);
   return level >= t.level;
@@ -87,7 +88,7 @@ export function isUnlocked(t: Theme, level: number): boolean {
 
 /** まだ開いていない衣装の案内 */
 export function unlockLabel(t: Theme): string {
-  if (t.unlock === "paid") return "特別な衣装";
+  if (t.unlock === "paid") return "準備中";
   const m = t.unlock?.match(/^mock(\d+)$/);
   if (m) return `模試を${m[1]}回提出で開く`;
   return `Lv.${t.level} で開く`;
@@ -122,21 +123,47 @@ export function applyCostume(): void {
     root.dataset.costume = id;
     root.dataset.fx = IDEAS.filter((i) => fxOn(i.id)).map((i) => i.id).join(" ");
     root.dataset.evo = String(fxOn("evolve") ? evoStage() : 0);
-    root.style.setProperty("--costume-bg", `url(${import.meta.env.BASE_URL}special/${id}/bg-nomoon.webp)`);
-    forceDark(fxOn("world"));
+    root.style.setProperty("--costume-bg", `url(${import.meta.env.BASE_URL}special/${id}/${kitOf(id).worldBg})`);
   } else {
     delete root.dataset.costume;
     delete root.dataset.fx;
     delete root.dataset.evo;
     root.style.removeProperty("--costume-bg");
-    forceDark(false);
+    delete root.dataset.combo;
   }
+  // 画面のテーマは衣装と別に選ぶ（開いている特別な衣装のものだけ）
+  const world = currentWorld();
+  if (world) root.dataset.world = world;
+  else delete root.dataset.world;
+  forceTheme(world ? (kitOf(world).world.dark ? "dark" : "light") : null);
+}
+
+const WORLD_KEY = "tanto.special.world.v1";
+
+/** 選んでいる画面のテーマ（衣装の ID。なければ空。開いていない衣装のものは使わない） */
+export function currentWorld(): string {
+  try {
+    const id = localStorage.getItem(WORLD_KEY) ?? "";
+    const t = themeById(id);
+    return t && t.unlock === "paid" && isUnlocked(t, Infinity) ? id : "";
+  } catch {
+    return "";
+  }
+}
+
+export function setWorld(id: string): void {
+  try {
+    if (id) localStorage.setItem(WORLD_KEY, id);
+    else localStorage.removeItem(WORLD_KEY);
+  } catch {
+    // 覚えられなくても、今の画面では変わらないだけ
+  }
+  applyCostume();
 }
 onFxChange(applyCostume);
 
 // ---- 衣装の進化（docs/ritsu-special-ideas.md の12）：正解した肢の数で段階が上がる。減らない ----
 
-export const EVO_NAMES = ["見習い", "星読み", "裁定者"];
 const EVO_AT = [0, 300, 1000];
 const EVO_KEY = "tanto.special.evo.v1";
 

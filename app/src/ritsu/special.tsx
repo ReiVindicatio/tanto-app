@@ -3,8 +3,9 @@
 import { useEffect, useState } from "react";
 import { charDir } from "../character";
 import { Bubble } from "../Ritsu";
-import { currentTheme, isSpecial, setTheme } from "./themes";
+import { currentTheme, isSpecial, setTheme, themeById } from "./themes";
 import { fxOn, type IdeaId } from "./fx";
+import { kitOf, type Reaction, type Seat } from "./kits";
 import { lineText, pickLine, playLine, type Line } from "./lines";
 
 export type MoveName = "entrance" | "finish";
@@ -115,13 +116,7 @@ export function SpecialMoveLayer() {
   const left = tryOnLeft();
   return (
     <>
-      {scale && <ScaleFx key={scale.at} correct={scale.correct} />}
-      {crossing && (
-        <span key={crossing.at} className="cross-star" aria-hidden="true">
-          <img src={`${charDir(crossing.theme)}chibi-happy.webp`} alt="" />
-          <i>★</i>
-        </span>
-      )}
+      {scale && <ReactionFx key={scale.at} kind={scale.kind} correct={scale.correct} />}
       {left > 0 && <div className="tryon-badge">試着中　あと {Math.ceil(left / 60000)} 分</div>}
       {farewell && <div className="tryon-badge">{farewell}</div>}
       {small && <img key={small.at} className="special-small" src={`${charDir(small.theme)}small.webp`} alt="" aria-hidden="true" />}
@@ -136,6 +131,8 @@ export function SpecialMoveLayer() {
             onEnded={end}
             onError={end}
           />
+          <StarFall theme={playing.theme} />
+          {playing.name === "entrance" && themeById(playing.theme) && <span className="special-move-title">{themeById(playing.theme)?.name}</span>}
           {playing.line && (
             <Bubble tail="down" className="special-move-line">
               {lineText(playing.line)}
@@ -148,12 +145,13 @@ export function SpecialMoveLayer() {
   );
 }
 
-/** 律のまわりに、ゆっくり落ちる星 */
-export function StarFall() {
+/** 律のまわりに、ゆっくり落ちる粒（星・花びら・光・ほこり・雪） */
+export function StarFall({ theme = currentTheme(Infinity) }: { theme?: string }) {
+  const c = kitOf(theme).particle;
   return (
     <span className="star-fall" aria-hidden="true">
       {Array.from({ length: 7 }, (_, k) => (
-        <i key={k}>★</i>
+        <i key={k}>{c}</i>
       ))}
     </span>
   );
@@ -173,7 +171,7 @@ export function answerFx(correct: boolean, streak: number, cardEl: HTMLElement |
   if (reducedMotion()) return;
   if (fxOn("shoot")) shootStar(correct, cardEl);
   if (fxOn("scale")) {
-    scale = { correct, at: Date.now() };
+    scale = { kind: kitOf(currentTheme(Infinity)).reaction, correct, at: Date.now() };
     changed();
   }
 }
@@ -194,7 +192,7 @@ function shootStar(correct: boolean, cardEl: HTMLElement | null): void {
   const y1 = correct ? (to ? to.top + to.height / 3 : innerHeight - 120) : innerHeight + 30;
   const el = document.createElement("span");
   el.className = `shoot-star${correct ? "" : " fallen"}`;
-  el.textContent = "★";
+  el.textContent = kitOf(currentTheme(Infinity)).particle;
   el.setAttribute("aria-hidden", "true");
   document.body.appendChild(el);
   const midX = (x0 + (correct ? x1 : x0)) / 2 + (correct ? -40 : 30);
@@ -288,7 +286,7 @@ export function StarPal({ theme }: { theme: string }) {
         if (l) playLine(l);
       }}
     >
-      <img src={`${charDir(theme)}star-pal.webp`} alt="星の子" />
+      <img src={`${charDir(theme)}star-pal.webp`} alt={kitOf(theme).pal} />
     </span>
   );
 }
@@ -349,40 +347,52 @@ function useAmbient(tick: () => void): void {
         // 覚えられなければ流さない
       }
     }
-    let t: number;
-    const schedule = () => {
-      t = window.setTimeout(() => {
-        const now = currentTheme(Infinity);
-        if (isSpecial(now) && fxOn("cross") && !reducedMotion() && document.visibilityState === "visible") {
-          crossing = { theme: now, at: Date.now() };
-          changed();
-          window.setTimeout(() => {
-            crossing = null;
-            changed();
-          }, 7000);
-        }
-        schedule();
-      }, 45000 + Math.random() * 45000);
-    };
-    schedule();
     const clock = window.setInterval(() => {
       if (tryOn() && tryOnLeft() <= 0) endTryOn();
       else if (tryOn()) tick();
     }, 15000);
     return () => {
-      window.clearTimeout(t);
       window.clearInterval(clock);
     };
   }, []);
 }
 
 const DAILY_KEY = "tanto.special.daily.v1";
-let crossing: { theme: string; at: number } | null = null;
-let scale: { correct: boolean; at: number } | null = null;
+let scale: { kind: Reaction; correct: boolean; at: number } | null = null;
 let farewell: string | null = null;
 
-/** 答えたときの天秤（#8）：正解で釣り合い、不正解で少し傾いて戻る */
-function ScaleFx({ correct }: { correct: boolean }) {
+/** 答えたときの反応（#8）：衣装ごとに違う。正解で明るく、不正解は責めない形で小さく */
+function ReactionFx({ kind, correct }: { kind: Reaction; correct: boolean }) {
+  if (kind === "petals") {
+    return (
+      <span className={`react-petals ${correct ? "ok" : "ng"}`} aria-hidden="true">
+        {Array.from({ length: correct ? 10 : 3 }, (_, k) => (
+          <i key={k} style={{ "--a": `${k * 36}deg` } as React.CSSProperties}>❀</i>
+        ))}
+      </span>
+    );
+  }
+  if (kind === "light") return <span className={`react-light ${correct ? "ok" : "ng"}`} aria-hidden="true" />;
+  if (kind === "page") {
+    return (
+      <svg className={`react-page ${correct ? "ok" : "ng"}`} viewBox="-50 -36 100 72" aria-hidden="true">
+        <path d="M 0 -26 C -14 -34 -32 -32 -42 -26 L -42 26 C -32 20 -14 18 0 26 Z" fill="#f3ead6" stroke="#8b86b5" strokeWidth="1.5" />
+        <path d="M 0 -26 C 14 -34 32 -32 42 -26 L 42 26 C 32 20 14 18 0 26 Z" fill="#f3ead6" stroke="#8b86b5" strokeWidth="1.5" />
+        <path className="turning" d="M 0 -26 C 14 -34 32 -32 42 -26 L 42 26 C 32 20 14 18 0 26 Z" fill="#fff" stroke="#8b86b5" strokeWidth="1.5" />
+      </svg>
+    );
+  }
+  if (kind === "crystal") {
+    return (
+      <svg className={`react-crystal ${correct ? "ok" : "ng"}`} viewBox="-50 -50 100 100" aria-hidden="true">
+        {Array.from({ length: 6 }, (_, k) => (
+          <g key={k} transform={`rotate(${k * 60})`} stroke="#9fd4ee" strokeWidth="3" strokeLinecap="round" fill="none">
+            <path d="M 0 0 L 0 -42 M 0 -18 L -10 -28 M 0 -18 L 10 -28 M 0 -30 L -7 -37 M 0 -30 L 7 -37" />
+          </g>
+        ))}
+      </svg>
+    );
+  }
   return (
     <svg className={`scale-fx ${correct ? "ok" : "ng"}`} viewBox="-50 -40 100 90" aria-hidden="true">
       <circle cx="0" cy="-32" r="4" fill="#ffe9a0" />
@@ -397,8 +407,51 @@ function ScaleFx({ correct }: { correct: boolean }) {
   );
 }
 
-/** 律が腰かける三日月（#1）。形が単純なのでコードで描く（AI の絵は頼んでいない人物が入った） */
-export function MoonSeat() {
+/** 律が腰かけるもの（#1）。形が単純なのでコードで描く（AI の絵は頼んでいない人物が入った） */
+export function CostumeSeat({ kind }: { kind: Seat }) {
+  if (kind === "branch") {
+    return (
+      <svg className="moon-seat seat-branch" viewBox="0 0 200 110" aria-hidden="true">
+        <path d="M 2 62 C 50 40 130 72 198 44 L 198 56 C 130 86 50 54 2 76 Z" fill="#8a5a44" stroke="#6d4433" strokeWidth="1.5" strokeLinejoin="round" />
+        <path d="M 150 58 C 165 40 175 34 190 22" stroke="#6d4433" strokeWidth="4" fill="none" strokeLinecap="round" />
+        {[[22, 48], [46, 44], [160, 42], [186, 22], [176, 50], [10, 70], [190, 62], [70, 76], [128, 84]].map(([x, y], k) => (
+          <text key={k} x={x} y={y} fontSize={k % 2 ? 16 : 20} textAnchor="middle" fill="#f8bcd0" stroke="#e38fae" strokeWidth="0.5">❀</text>
+        ))}
+      </svg>
+    );
+  }
+  if (kind === "spot") {
+    return (
+      <svg className="moon-seat seat-spot" viewBox="0 0 200 110" aria-hidden="true">
+        <ellipse cx="100" cy="60" rx="94" ry="20" fill="#2a2350" stroke="#e7c6ff" strokeWidth="2.5" />
+        <ellipse cx="100" cy="60" rx="74" ry="13" fill="none" stroke="#9fe8ff" strokeWidth="1.5" opacity="0.8" />
+        <ellipse cx="100" cy="83" rx="70" ry="9" fill="#e7c6ff" opacity="0.25" />
+      </svg>
+    );
+  }
+  if (kind === "book") {
+    return (
+      <svg className="moon-seat seat-book" viewBox="0 0 200 110" aria-hidden="true">
+        <path d="M 100 52 C 70 38 30 40 6 50 L 6 84 C 30 74 70 72 100 88 C 130 72 170 74 194 84 L 194 50 C 170 40 130 38 100 52 Z" fill="#3a2f58" stroke="#cfc8e8" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M 100 52 C 74 42 38 44 14 52 L 14 76 C 38 66 74 66 100 80 C 126 66 162 66 186 76 L 186 52 C 162 44 126 42 100 52 Z" fill="#f3ead6" />
+        <path d="M 100 52 L 100 80" stroke="#b5ab90" strokeWidth="1.5" />
+      </svg>
+    );
+  }
+  if (kind === "ice") {
+    return (
+      <svg className="moon-seat seat-ice" viewBox="0 0 200 110" aria-hidden="true">
+        <defs>
+          <linearGradient id="seat-ice" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f2fbff" />
+            <stop offset="1" stopColor="#9fd4ee" />
+          </linearGradient>
+        </defs>
+        <path d="M 6 44 L 44 36 L 100 42 L 158 36 L 194 44 L 170 74 L 132 100 L 100 88 L 66 102 L 30 74 Z" fill="url(#seat-ice)" stroke="#6fb6d8" strokeWidth="1.5" strokeLinejoin="round" />
+        <path d="M 44 36 L 66 102 M 100 42 L 100 88 M 158 36 L 132 100" stroke="#fff" strokeWidth="1.2" opacity="0.8" />
+      </svg>
+    );
+  }
   return (
     <svg className="moon-seat" viewBox="0 0 200 110" aria-hidden="true">
       <defs>
