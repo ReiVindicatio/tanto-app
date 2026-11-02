@@ -8,6 +8,7 @@ import { fxOn, type IdeaId } from "./fx";
 import { kitOf, type Reaction, type Seat } from "./kits";
 import { lineText, pickLine, playLine, type Line } from "./lines";
 import { SignatureLayer } from "./Signature";
+import { PagesLayer } from "./SignaturePages";
 
 export type MoveName = "entrance" | "finish";
 type Playing = { theme: string; name: MoveName; line?: Line; onEnd?: () => void };
@@ -41,7 +42,7 @@ export function playMove(theme: string, name: MoveName, opts: { line?: Line; onE
 
 /** 全画面の技（律を押したとき・全問正解のとき）。視差効果を減らす設定なら流さない */
 export function playSignature(theme = currentTheme()): void {
-  if (reducedMotion() || !kitOf(theme).cape || !fxOn("signature")) return;
+  if (reducedMotion() || !kitOf(theme).live || !fxOn("signature")) return;
   signature = theme;
   changed();
 }
@@ -64,7 +65,7 @@ export function celebrateMove(kind: "levelup" | "goal"): void {
   if (!isSpecial(theme) || !underFinishLimit()) return;
   const line = pickLine(`${kind}_${theme}`, Infinity);
   // 全画面の技がある衣装は、古い動画ではなく技を出す
-  if (kitOf(theme).cape && fxOn("signature")) {
+  if (kitOf(theme).live && fxOn("signature")) {
     if (line) playLine(line);
     playSignature(theme);
     return;
@@ -75,7 +76,7 @@ export function celebrateMove(kind: "levelup" | "goal"): void {
 /** 小さな決めポーズ（3問続けて正解など）。画面の隅に数秒だけ出す。押せないので、解説を読むじゃまをしない */
 export function smallMove(theme = currentTheme()): void {
   if (!isSpecial(theme) || reducedMotion()) return;
-  if (kitOf(theme).cape && fxOn("cape")) return; // 小さな決めポーズは昔のマントのままなので、風を受ける絵とは混ぜない
+  if (kitOf(theme).live && fxOn("cape")) return; // 小さな決めポーズは昔のマントのままなので、風を受ける絵とは混ぜない
   small = { theme, at: Date.now() };
   changed();
 }
@@ -133,16 +134,20 @@ export function SpecialMoveLayer() {
   const left = tryOnLeft();
   return (
     <>
-      {signature && (
-        <SignatureLayer
-          key={signature}
-          theme={signature}
-          onEnd={() => {
-            signature = null;
-            changed();
-          }}
-        />
-      )}
+      {signature &&
+        (() => {
+          const Layer = kitOf(signature).live?.signature === "pages" ? PagesLayer : SignatureLayer;
+          return (
+            <Layer
+              key={signature}
+              theme={signature}
+              onEnd={() => {
+                signature = null;
+                changed();
+              }}
+            />
+          );
+        })()}
       {scale && <ReactionFx key={scale.at} kind={scale.kind} correct={scale.correct} />}
       {left > 0 && <div className="tryon-badge">試着中　あと {Math.ceil(left / 60000)} 分</div>}
       {farewell && <div className="tryon-badge">{farewell}</div>}

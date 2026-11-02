@@ -22,7 +22,9 @@ describe("風", () => {
     expect(Math.max(...seen) - Math.min(...seen)).toBeGreaterThan(0.3); // 突風が来て、弱まる
   });
 
-  it("風を受ける絵があるのは星詠みだけ", () => {
-    expect(Object.entries(KITS).filter(([, k]) => k.cape).map(([id]) => id)).toEqual(["hoshiyomi"]);
+  it("生きた座り絵があるのは、作り終えた衣装だけ。全画面の技は衣装ごとに別", () => {
+    const live = Object.entries(KITS).filter(([, k]) => k.live);
+    expect(live.map(([id]) => id).sort()).toEqual(["hoshiyomi", "nocturne"]);
+    expect(new Set(live.map(([, k]) => k.live?.signature)).size).toBe(live.length);
   });
 });

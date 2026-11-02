@@ -2,9 +2,8 @@
 import { useEffect, useRef } from "react";
 import { charDir } from "../character";
 import { loadImage, makeWarp, makeWind, type Warp } from "./cape";
+import { kitOf } from "./kits";
 
-/** 風の強さ。ユーザーが試作で「強い」を選んだ */
-const STRENGTH = 1.7;
 /** 口パクの絵がある表情 */
 const TALK_FACES = ["normal", "smile", "think", "happy", "sad"];
 
@@ -17,6 +16,8 @@ export function CapeFigure({ theme, face, mouth = false, onFail }: { theme: stri
   const faceRef = useRef(shown);
   const images = useRef(new Map<string, HTMLImageElement>());
   const dir = charDir(theme);
+  const live = kitOf(theme).live;
+  const strength = live?.strength ?? 1;
 
   const image = async (name: string) => {
     const known = images.current.get(name);
@@ -37,25 +38,29 @@ export function CapeFigure({ theme, face, mouth = false, onFail }: { theme: stri
       try {
         const [img, map] = await Promise.all([image(shown), loadImage(`${dir}wind-map.png`)]);
         if (stop || !canvas.current) return;
-        warp.current = makeWarp(canvas.current, img, map, [1, 0]);
+        warp.current = makeWarp(canvas.current, img, map, live?.dir ?? [1, 0]);
         if (!warp.current) throw new Error("webgl");
         const tick = (now: number) => {
           if (stop) return;
           const dt = Math.min(0.05, (now - last) / 1000);
           last = now;
-          const { gust, phi } = wind.step(dt, STRENGTH);
+          const { gust, phi } = wind.step(dt, Math.max(0.5, strength));
           if (faceRef.current === "smile" && !blinking && now > blinkAt && !reduced()) {
             blinking = true;
-            void image("blink").then((b) => {
-              warp.current?.setImage(b);
-              window.setTimeout(() => {
-                void image(faceRef.current).then((s) => warp.current?.setImage(s));
-                blinking = false;
-                blinkAt = performance.now() + 2500 + Math.random() * 3500;
-              }, 130);
-            });
+            void image("blink")
+              .then((b) => {
+                warp.current?.setImage(b);
+                window.setTimeout(() => {
+                  void image(faceRef.current).then((s) => warp.current?.setImage(s));
+                  blinking = false;
+                  blinkAt = performance.now() + 2500 + Math.random() * 3500;
+                }, 130);
+              })
+              .catch(() => {
+                blinkAt = Infinity; // まばたきの絵がなければ、まばたきしない
+              });
           }
-          warp.current?.draw(gust, phi, reduced() ? 0 : STRENGTH);
+          warp.current?.draw(gust, phi, reduced() ? 0 : strength);
           raf = requestAnimationFrame(tick);
         };
         raf = requestAnimationFrame(tick);
@@ -83,5 +88,5 @@ export function CapeFigure({ theme, face, mouth = false, onFail }: { theme: stri
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [shown]);
 
-  return <canvas ref={canvas} className="cape-figure" aria-hidden="true" />;
+  return <canvas ref={canvas} className={`cape-figure fig-${live?.kind ?? "cape"}${live?.flip ? " flip" : ""}`} aria-hidden="true" />;
 }

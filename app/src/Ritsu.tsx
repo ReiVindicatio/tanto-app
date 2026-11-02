@@ -2,6 +2,7 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { charDir, characterImage, type Expression } from "./character";
 import { CostumeSeat, playSignature, StarFall, StarPal } from "./ritsu/special";
+import { BookAttendants } from "./ritsu/BookAttendants";
 import { CapeFigure } from "./ritsu/CapeFigure";
 import { signatureSeen } from "./ritsu/Signature";
 import { kitOf } from "./ritsu/kits";
@@ -85,7 +86,7 @@ function preloadMotion(theme: string) {
 /** 風を受ける座り絵を出すか。絵が読めなかった衣装は、ふつうの座り絵に戻す */
 const capeFailed = new Set<string>();
 function capeOn(theme: string): boolean {
-  return isSpecial(theme) && Boolean(kitOf(theme).cape) && fxOn("cape") && !capeFailed.has(theme);
+  return isSpecial(theme) && Boolean(kitOf(theme).live) && fxOn("cape") && !capeFailed.has(theme);
 }
 
 /** 感情の記号（頭の右上にぽんと出す）。考え中＝？・喜び＝！・得意げ＝♪・残念＝汗・ジト目＝…・眠い・寝そべり＝zzz */
@@ -133,7 +134,7 @@ export function PerchFigure({
   return (
     <div
       key={hop ? `hop-${face}` : "still"}
-      className={`perch ${pose}${cape ? " caped" : ""}${swing && !g && !talking ? " swing" : ""}${hop ? " hop" : ""}${gShown ? " gesturing" : ""}${talking ? " talking" : ""}${mouthOpen ? " mouth-open" : ""}${(pose === "lie" && m.kick) || (pose === "sit" && m.swing.includes(f)) ? " has-kick" : ""} ${className}`}
+      className={`perch ${pose}${cape ? ` caped ${kitOf(theme).live?.kind}` : ""}${swing && !g && !talking ? " swing" : ""}${hop ? " hop" : ""}${gShown ? " gesturing" : ""}${talking ? " talking" : ""}${mouthOpen ? " mouth-open" : ""}${(pose === "lie" && m.kick) || (pose === "sit" && m.swing.includes(f)) ? " has-kick" : ""} ${className}`}
       data-face={face}
       data-gesture={g ?? undefined}
     >
@@ -151,6 +152,7 @@ export function PerchFigure({
           }}
         >
           <img className="perch-body cape-spacer" src={src} alt="" />
+          {kitOf(theme).live?.kind === "books" && <BookAttendants theme={theme} />}
           <CapeFigure
             theme={theme}
             face={face}

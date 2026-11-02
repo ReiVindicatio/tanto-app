@@ -23,18 +23,23 @@ from ritsu_sit_plate import key
 SPECIAL = ROOT / "audio" / "samples_char" / "special"
 PAD = 40
 SETS = {"hoshiyomi": {"wind": dict(neck=(269, 525), head=(269, 320), headr=170, reach=730, right=190, file="sit-wind-smile.png"),
-                      "keypose": dict(neck=(537, 285), head=(537, 180), headr=85, reach=560, right=0, file="key-pose.png")}}
+                      "keypose": dict(neck=(537, 285), head=(537, 180), headr=85, reach=560, right=0, file="key-pose.png"),
+                      "face_box": (100 / 1024, 250 / 1024, 445 / 1024, 515 / 1024), "width": 780},
+        "nocturne": {"wind": dict(neck=(512, 585), head=(512, 344), headr=215, reach=520, right=0, file="sit-wind-smile.png"),
+                     "keypose": dict(neck=(516, 224), head=(516, 138), headr=70, reach=640, right=0, file="key-pose.png"),
+                     "face_box": (300 / 1024, 240 / 1024, 730 / 1024, 545 / 1024), "width": 560,
+                     "sprites": {"book-closed": 170, "book-closed2": 170, "book-open": 220, "page": 120}}}
 # 口パクは、声が流れる表情（5つ）だけ
 TALK = "normal smile think happy sad".split()
 FACES = "normal think happy sad sleepy surprised smug jito blink".split() + [f"{f}-talk" for f in TALK]
-FACE_BOX = (100 / 1024, 250 / 1024, 445 / 1024, 515 / 1024)
 EXPRESSION = {"normal": "a neutral relaxed expression with a small open mouth, as if about to speak", "think": "a thoughtful expression, eyes looking slightly upward, mouth small",
               "happy": "a very happy expression, eyes closed in joyful arcs, wide open smiling mouth", "sad": "a little sad expression, eyebrows lowered, small frown",
               "sleepy": "a very sleepy expression, eyes half closed, small mouth", "surprised": "a surprised expression, eyes wide open, small round open mouth",
               "smug": "a proud smug expression, eyes half closed, one corner of the mouth up",
               "jito": "a deadpan sulky stare: the upper eyelids lowered straight across, covering the top third of her eyes, with her brown irises and dark pupils still clearly visible and looking at the viewer, and a small straight mouth",
               "blink": "the same gentle smile but both eyes closed in a blink"}
-TALKING = "the same eyes and eyebrows as in the reference, but her mouth is open in the middle of speaking a word, a small soft open mouth with the tongue barely visible"
+TALKING = {"normal": "a clearly open mouth as if saying the sound 'ah', noticeably wider than in the reference", "smile": "a soft open mouth in the middle of speaking a word, with the tongue barely visible",
+           "think": "a small open round mouth as if saying 'oh'", "happy": "a big wide open laughing mouth, noticeably wider than in the reference", "sad": "a small soft open mouth in the middle of speaking a word"}
 
 
 def crop_box(im: Image.Image, pad: int) -> tuple[int, int, int, int]:
@@ -91,13 +96,13 @@ def faces(cid: str) -> None:
         if not out.exists():
             raw = src / f"{name}-raw.png"
             ci.generate([ci._img(ref), {"text": head + words + tail}], raw)
-            cc.patch(base, raw, FACE_BOX, aligned=True).save(out)
+            cc.patch(base, raw, SETS[cid]["face_box"], aligned=True).save(out)
         return name
 
     first = [(n, base, "her facial expression to " + t) for n, t in EXPRESSION.items()]
     with ThreadPoolExecutor(3) as ex:
         print(list(ex.map(one, first)), flush=True)
-    talk = [(f"{f}-talk", base if f == "smile" else src / f"{f}-patched.png", "her mouth: " + TALKING) for f in TALK]
+    talk = [(f"{f}-talk", base if f == "smile" else src / f"{f}-patched.png", "her mouth to " + TALKING[f] + ". Keep both eyes and both eyebrows exactly as they are in the reference, fully drawn") for f in TALK]
     with ThreadPoolExecutor(3) as ex:
         print(list(ex.map(one, talk)), flush=True)
 
@@ -109,13 +114,17 @@ def main(cid: str) -> None:
     full = key(src / w["file"], False)
     box = crop_box(full, PAD)
     im = full.crop(box)
-    save(im, dst / "wind-smile.webp", 780)
+    width = conf["width"]
+    save(im, dst / "wind-smile.webp", width)
     weight(im, box, w["neck"], w["head"], w["headr"], w["reach"], w["right"]).save(dst / "wind-map.png")
     for f in FACES:
+        if not (src / f"{f}-patched.png").exists():
+            print("まだない：", f, flush=True)
+            continue
         o = key(src / f"{f}-patched.png", False).crop(box)
         o.putalpha(im.getchannel("A"))  # 顔のまわり以外は同じ絵。輪郭も同じにする
-        save(o, dst / f"wind-{f}.webp", 780)
-    print("wind", im.size, "体の中心", (w["neck"][0] - box[0]) / im.width, "縦横", 780, round(im.height * 780 / im.width), flush=True)
+        save(o, dst / f"wind-{f}.webp", width)
+    print("wind", im.size, "体の中心", (w["neck"][0] - box[0]) / im.width, "縦横", width, round(im.height * width / im.width), flush=True)
     k = conf["keypose"]
     full = key(src / k["file"], False)
     box = crop_box(full, 60)
@@ -124,6 +133,9 @@ def main(cid: str) -> None:
     weight(im, box, k["neck"], k["head"], k["headr"], k["reach"], k["right"]).save(dst / "keypose-map.png")
     print("keypose", 900, round(im.height * 900 / im.width), flush=True)
     save(key(src / "cutin-face.png", False), dst / "cutin.webp", 800)
+    for name, sw in conf.get("sprites", {}).items():
+        sp = key(src / f"{name}.png", False)
+        save(sp.crop(crop_box(sp, 6)), dst / f"{name}.webp", sw)
 
 
 if __name__ == "__main__":

@@ -26,8 +26,8 @@ export const IDEAS = [
   { id: "tryon", no: 22, name: "試着（10分）" },
   { id: "showcase", no: 23, name: "飾り棚（買う前の見え方）" },
   { id: "card", no: 24, name: "今日の成果カード" },
-  { id: "cape", no: 31, name: "風を受ける座り絵（星詠み。いつも月に座り、マントがたなびく）" },
-  { id: "signature", no: 32, name: "押すと出る全画面の技（星詠み：裁定の流星）" },
+  { id: "cape", no: 31, name: "生きた座り絵（星詠み：風を受けるマント。司書：控える本）" },
+  { id: "signature", no: 32, name: "押すと出る全画面の技（星詠み：裁定の流星。司書：万巻の開架）" },
 ] as const;
 
 export type IdeaId = (typeof IDEAS)[number]["id"];

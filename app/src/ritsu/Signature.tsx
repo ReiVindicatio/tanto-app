@@ -15,7 +15,7 @@ export function signatureSeen(): boolean {
   }
 }
 
-function markSeen(): void {
+export function markSignatureSeen(): void {
   try {
     localStorage.setItem(SEEN_KEY, "1");
   } catch {
@@ -142,7 +142,7 @@ export function SignatureLayer({ theme, onEnd }: { theme: string; onEnd: () => v
   const dir = charDir(theme);
 
   useEffect(() => {
-    markSeen();
+    markSignatureSeen();
     let stop = false;
     let raf = 0;
     let warp: Warp | null = null;

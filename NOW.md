@@ -4,6 +4,20 @@
 
 **更新：2026-11-02（昼）**
 
+## 再開メモ（2026-11-02 夜。T069 の続き。ここから読む）
+
+**方針（ユーザー）**：課金衣装は1着ずつ確認しながら作る。衣装ごとに全く別の固有要素（カードのレアリティ演出の方向）。背景とアプリの色は衣装に紐づけ、選ぶ場所はなくした。📖 `docs/ritsu-special-ideas.md`
+
+- **星詠み：push 済み**（`02a8c6c`）。音と口パクはユーザー OK。特別な衣装の「準備中」は一般の人に見せたままでよい（ユーザー）。夜空の中身（暗い星）と全画面の見直しは未着手
+- **司書：push 済み**。全画面「万巻の開架」と、左右に控える本6冊。ユーザーの実機確認待ち。残り：立ち絵が太ももで切れている（`g8/nocturne/look-1.png` を base-smile にして base-* と talk-base-* を作り直し、切り抜いて R2 へ）
+- **歌姫：服を相談中**。ユーザーは旧案6（青緑とローズゴールド）の形でピンク主役を希望。候補は `audio/samples_char/g8/diva2/look-q*.png`（p1〜p6 はスカートの前が開いて太ももが見えたので使わない）（0/6 枚）。見せるページは scratchpad の `diva/page.py`、公開先 https://claude.ai/artifact/WkhHM865jDRheZSy8moSvD 。決まったら全画面「幕が下りて開く」の試作へ。`pipeline/ritsu_special.json` の歌姫の手元変更（薄紫の服）は未 commit で、捨ててよい
+- **通常衣装の足のコマ：作業中**（`pipeline/ritsu_sit_plate.py`。約220枚中 86 枚）。止まっていたら make を同じ ID で流し直せば続きから。全部できたら apply → 点検ページ（scratchpad の `reviewpage.py`、公開先 https://claude.ai/artifact/5KfaE8WDyEdJUwrCtNScHN ）をユーザーに出す。×の絵を直してから `app/public/chars/` を push
+- **歌姫の全画面**：幕が下りて開く「アンコール」（仮の名前）はユーザー OK。https://claude.ai/artifact/JF7mppGQCiDrGvawLB6uVU 。律が幕にかぶる点は直した
+- **袴と雪花の素案（夜の作業）**：全画面の試作は仮の絵で動く（袴：桜吹雪が画面を吹き飛ばす https://claude.ai/artifact/ — 下に記入。雪花：画面が凍って本物の画面が破片になって割れる）。絵の候補は `themes/<ID>/proto/`（sit/pose/face の -1 -2）。できたら scratchpad の `night/build.py <S> <ID> sit=sit-1 pose=pose-2 face=face-1` で組み直して公開し、ユーザーに見せる。本番には入れない
+- **その後**：最後に赤黒のロック衣装（`docs/ritsu-special-costumes.md` のメモ）
+
+scratchpad は消えることがある。作業の絵は `audio/samples_char/themes/<ID>/proto/` と `g8/` にある（git の外）。
+
 ## 2026-11-02 ユーザーが外出中に進めていること
 
 ユーザーの指示：足の壊れた絵の直し・管理者の表示の切り替え・衣装の一覧の分割と鍵の印・テーマを選べるように・横切るのをやめる・登場の動画を抑える・残りの衣装を一気に作る・固有の仕組み。結果は下の「夜の作業の記録」の末尾に無人のスクリプトが足す。戻ったら `docs/ritsu-special-ideas.md` の表の案を見てもらい、残すものを決める。人の目で見ていない絵は `audio/samples_char/sheets/`（`ritsu-<ID>.png`）

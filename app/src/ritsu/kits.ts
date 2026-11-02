@@ -27,8 +27,8 @@ export type Kit = {
   realMoon?: boolean;
   dawn?: boolean;
   sitLoop?: boolean;
-  /** 風を受ける座り絵と全画面の技がある（星詠み） */
-  cape?: boolean;
+  /** 生きた座り絵と全画面の技がある衣装（1着ずつ作る）。strength・dir は絵の動く強さと向き、flip は左右反転（律は画面の右端にいるので、右へ流れる絵は反転する）。 */
+  live?: { kind: "cape" | "books"; signature: "meteor" | "pages"; strength: number; dir: [number, number]; flip: boolean };
 };
 
 export const KITS: Record<string, Kit> = {
@@ -47,7 +47,7 @@ export const KITS: Record<string, Kit> = {
     realMoon: true,
     dawn: true,
     sitLoop: true,
-    cape: true,
+    live: { kind: "cape", signature: "meteor", strength: 1.7, dir: [1, 0], flip: true },
   },
   hakama: {
     particle: "❀",
@@ -76,6 +76,7 @@ export const KITS: Record<string, Kit> = {
     worldBg: "bg.webp",
   },
   nocturne: {
+    live: { kind: "books", signature: "pages", strength: 0.35, dir: [0, -1], flip: false },
     particle: "✧",
     seat: "book",
     reaction: "page",
