@@ -32,7 +32,7 @@ SETS = {"hoshiyomi": {"wind": dict(neck=(269, 525), head=(269, 320), headr=170, 
         "yukihana": {"wind": dict(neck=(500, 485), head=(515, 333), headr=197, reach=420, right=0, file="sit-wind-smile.png"),
                      "keypose": dict(neck=(508, 316), head=(498, 240), headr=86, reach=560, right=0, file="key-pose.png"),
                      "face_box": (390 / 1024, 300 / 1024, 715 / 1024, 515 / 1024), "width": 620, "cloth": False, "clean": True,
-                     "ear": "h1-ear-patched.png", "ring": "r1-cut.png"}}
+                     "ear": "h1-ear-patched.png", "ear_box": (0.3, 0.42, 0.72, 0.6), "ring": "r1-cut.png"}}
 # 口パクは、声が流れる表情（5つ）だけ
 TALK = "normal smile think happy sad".split()
 FACES = "normal think happy sad sleepy surprised smug jito blink".split() + [f"{f}-talk" for f in TALK]
@@ -131,6 +131,7 @@ def main(cid: str) -> None:
         o.putalpha(im.getchannel("A"))  # 顔のまわり以外は同じ絵。輪郭も同じにする
         save(o, dst / f"wind-{f}.webp", width)
     print("wind", im.size, "体の中心", (w["neck"][0] - box[0]) / im.width, "縦横", width, round(im.height * width / im.width), flush=True)
+    sit_full, sit_box, sit_im = full, box, im  # 耳の絵は座り絵に重ねるので、決めの絵で上書きする前に覚えておく
     k = conf["keypose"]
     full = key(src / k["file"], False)
     if conf.get("clean"):
@@ -141,11 +142,15 @@ def main(cid: str) -> None:
     weight(im, box, k["neck"], k["head"], k["headr"], k["reach"], k["right"], conf.get("cloth", True)).save(dst / "keypose-map.png")
     print("keypose", 900, round(im.height * 900 / im.width), flush=True)
     save(key(src / "cutin-face.png", False), dst / "cutin.webp", 800)
-    if "ear" in conf:  # 耳を折った絵は、変わるところだけ重ねる（表情を替えても使える）
-        e = key(src / conf["ear"], False).crop(box)
-        d = np.abs(np.asarray(e.convert("RGB")).astype(int) - np.asarray(im.convert("RGB")).astype(int)).sum(2) > 40
-        m = Image.fromarray((d * 255).astype("uint8")).filter(ImageFilter.MaxFilter(7)).filter(ImageFilter.GaussianBlur(2))
-        e.putalpha(Image.fromarray((np.asarray(m).astype(float) * (np.asarray(e.getchannel("A")).astype(float) / 255)).astype("uint8")))
+    if "ear" in conf:  # 耳を折った絵は、耳のまわりだけ重ねる。絵全体を重ねると律が二重に見えた（ユーザー）。表情を替えても使える
+        ex0, ey0, ex1, ey1 = conf["ear_box"]
+        e = key(src / conf["ear"], False).resize(sit_full.size).crop(sit_box)
+        e.putalpha(Image.fromarray(np.maximum(np.asarray(e.getchannel("A")), np.asarray(sit_im.getchannel("A")))))
+        d = np.abs(np.asarray(e.convert("RGB")).astype(int) - np.asarray(sit_im.convert("RGB")).astype(int)).sum(2) > 40
+        area = np.zeros(d.shape, bool)
+        area[round(ey0 * sit_im.height) : round(ey1 * sit_im.height), round(ex0 * sit_im.width) : round(ex1 * sit_im.width)] = True
+        m = Image.fromarray(((d & area) * 255).astype("uint8")).filter(ImageFilter.MaxFilter(7)).filter(ImageFilter.GaussianBlur(2))
+        e.putalpha(m)
         save(e, dst / "ear.webp", width)
     if "ring" in conf:  # 背中の輪は切り抜いた絵をそのまま
         ring = Image.open(src / conf["ring"]).convert("RGBA")
