@@ -190,10 +190,44 @@ test("特別な衣装（T069）：管理者でなければ鍵の印で着られ�
   // 絵は公開フォルダではなく /special/ から
   await expect(page.locator(".ritsu-stage .vn-sprite")).toHaveAttribute("src", /\/special\/hoshiyomi\/base-smile\.webp$/);
 
+  // 全画面の技がある衣装は、動画ではなく技を出す
   await page.locator(".special-preview button", { hasText: "登場" }).click();
-  await expect(page.locator(".special-move video")).toHaveAttribute("src", /\/special\/hoshiyomi\/entrance\.mp4$/);
+  await expect(page.locator(".signature")).toBeVisible();
+  await expect(page.locator(".special-move")).toHaveCount(0);
+  await page.locator(".signature").click();
+  await expect(page.locator(".signature")).toHaveCount(0);
+
+  // 技がまだない衣装は動画のまま
+  await page.evaluate(() => {
+    localStorage.setItem("tanto.character.theme.v1", "hakama");
+    localStorage.setItem("tanto.character.revealed.v1", JSON.stringify(["hakama"]));
+  });
+  await page.goto("/ritsu");
+  await page.locator(".special-preview button", { hasText: "登場" }).click();
+  await expect(page.locator(".special-move video")).toHaveAttribute("src", /\/special\/hakama\/entrance\.mp4$/);
   await page.locator(".special-move").click();
   await expect(page.locator(".special-move")).toHaveCount(0);
+});
+
+test("特別な衣装のお披露目：全画面の技がある衣装は、途中で動画ではなく技を出し、飛ばすと次のセリフへ進む", async ({ page }) => {
+  await page.route("**/special/**", () => {});
+  await beAdmin(page);
+  await page.goto("/");
+  await page.evaluate(() => {
+    localStorage.setItem("tanto.character.theme.v1", "hoshiyomi");
+    localStorage.setItem("tanto.character.revealed.v1", JSON.stringify(["hoshiyomi"]));
+  });
+  await page.goto("/ritsu/reveal/hoshiyomi");
+  const stage = page.locator(".reveal-stage");
+  await expect(stage).toBeAttached(); // 絵を渡していないので大きさがない
+  await page.waitForTimeout(1500); // 幕が開いて最初のセリフが出るまで
+  await stage.dispatchEvent("click");
+  await stage.dispatchEvent("click");
+  await expect(page.locator(".signature")).toBeVisible();
+  await expect(page.locator(".special-move")).toHaveCount(0);
+  await page.locator(".signature").click();
+  await expect(page.locator(".signature")).toHaveCount(0);
+  await expect(stage.locator("img")).toHaveAttribute("src", /\/special\/hoshiyomi\/reveal\.webp$/);
 });
 
 test("特別な衣装（T069）：視差効果を減らす設定なら全画面の演出を流さない", async ({ browser }) => {

@@ -22,6 +22,7 @@ const GIVE_UP = 15000;
 let playing: Playing | null = null;
 let small: { theme: string; at: number } | null = null;
 let signature: string | null = null;
+let signatureEnd: (() => void) | null = null;
 const listeners = new Set<() => void>();
 const changed = () => listeners.forEach((f) => f());
 
@@ -29,10 +30,14 @@ function reducedMotion(): boolean {
   return typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
 
-/** 全画面の演出を流す。流せないときは、すぐ onEnd を呼ぶ */
+/** 全画面の演出を流す。流せないときは、すぐ onEnd を呼ぶ。全画面の技がある衣装は、動画ではなく技を出す */
 export function playMove(theme: string, name: MoveName, opts: { line?: Line; onEnd?: () => void } = {}): void {
   if (reducedMotion()) {
     opts.onEnd?.();
+    return;
+  }
+  if (playSignature(theme, opts.onEnd)) {
+    if (opts.line) playLine(opts.line);
     return;
   }
   playing = { theme, name, ...opts };
@@ -41,10 +46,12 @@ export function playMove(theme: string, name: MoveName, opts: { line?: Line; onE
 }
 
 /** 全画面の技（律を押したとき・全問正解のとき）。視差効果を減らす設定なら流さない */
-export function playSignature(theme = currentTheme()): void {
-  if (reducedMotion() || !kitOf(theme).live || !fxOn("signature")) return;
+export function playSignature(theme = currentTheme(), onEnd?: () => void): boolean {
+  if (reducedMotion() || !kitOf(theme).live || !fxOn("signature")) return false;
   signature = theme;
+  signatureEnd = onEnd ?? null;
   changed();
+  return true;
 }
 
 function underFinishLimit(today = new Date().toISOString().slice(0, 10)): boolean {
@@ -64,12 +71,6 @@ export function celebrateMove(kind: "levelup" | "goal"): void {
   const theme = currentTheme();
   if (!isSpecial(theme) || !underFinishLimit()) return;
   const line = pickLine(`${kind}_${theme}`, Infinity);
-  // 全画面の技がある衣装は、古い動画ではなく技を出す
-  if (kitOf(theme).live && fxOn("signature")) {
-    if (line) playLine(line);
-    playSignature(theme);
-    return;
-  }
   playMove(theme, "finish", { line });
 }
 
@@ -142,8 +143,11 @@ export function SpecialMoveLayer() {
               key={signature}
               theme={signature}
               onEnd={() => {
+                const done = signatureEnd;
                 signature = null;
+                signatureEnd = null;
                 changed();
+                done?.();
               }}
             />
           );
@@ -368,7 +372,8 @@ function endTryOn(): void {
 function useAmbient(tick: () => void): void {
   useEffect(() => {
     const theme = currentTheme(Infinity);
-    if (isSpecial(theme) && fxOn("daily") && !reducedMotion() && !location.pathname.includes("/reveal/")) {
+    // 全画面の技がある衣装は、1日1回の自動の登場を出さない（自動で出すのは全問正解などのときだけ）
+    if (isSpecial(theme) && !kitOf(theme).live && fxOn("daily") && !reducedMotion() && !location.pathname.includes("/reveal/")) {
       const today = new Date().toDateString();
       try {
         if (localStorage.getItem(DAILY_KEY) !== today) {

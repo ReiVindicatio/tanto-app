@@ -26,9 +26,10 @@ export function BookAttendants({ theme }: { theme: string }) {
       refs.current.forEach((el, i) => {
         if (!el) return;
         const s = seeds[i];
-        const x = Math.sin(t * 0.8 + s) * 5;
-        const y = Math.cos(t * 0.63 + s * 1.7) * 6;
-        const r = Math.sin(t * 0.7 + s) * 7 + (i % 2 ? 6 : -6);
+        // 本の幅に対する %。律の絵が小さく、数 % では止まって見えた（ユーザー）。2つの波を重ねて、同じ動きをくり返さない
+        const x = Math.sin(t * 0.9 + s) * 30 + Math.sin(t * 1.7 + s * 2.3) * 12;
+        const y = Math.cos(t * 0.73 + s * 1.7) * 34 + Math.cos(t * 1.9 + s * 3.1) * 12;
+        const r = Math.sin(t * 0.8 + s) * 12 + (i % 2 ? 6 : -6);
         el.style.transform = `translate(-50%, 50%) translate(${x.toFixed(1)}%, ${y.toFixed(1)}%) rotate(${r.toFixed(1)}deg)`;
       });
       raf = requestAnimationFrame(tick);

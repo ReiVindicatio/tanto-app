@@ -99,6 +99,22 @@ def fit(plate: Image.Image, base: Image.Image, cid: str, face: str) -> tuple[Ima
     return out, float(v)
 
 
+def from_line(mask: np.ndarray) -> np.ndarray:
+    """縁のすぐ上の行から、つながっているところだけを残す"""
+    seen = np.zeros_like(mask)
+    seen[LINE - 8 : LINE - 2] = mask[LINE - 8 : LINE - 2]
+    while True:
+        grown = seen.copy()
+        grown[1:] |= seen[:-1]
+        grown[:-1] |= seen[1:]
+        grown[:, 1:] |= seen[:, :-1]
+        grown[:, :-1] |= seen[:, 1:]
+        grown &= mask
+        if (grown == seen).all():
+            return seen
+        seen = grown
+
+
 def compose(base: Image.Image, plate: Image.Image, top: Image.Image | None = None, raised: bool = True) -> Image.Image:
     """縁より上は top（省くと base）のまま、縁より下は plate。縁より上でも、上げた足など base にないものは足す"""
     top = top or base
@@ -123,15 +139,20 @@ def compose(base: Image.Image, plate: Image.Image, top: Image.Image | None = Non
     diff = np.abs(pc[..., :3] - b[..., :3]).sum(2)
     add = (pc[..., 3] > 128) & ((b[..., 3] < 60) | (diff > 90))
     add[:y0] = False
+    # 体の上に貼るのは、縁のすぐ上（ひざ）まで。それより上は、はみ出た足だけ（描き直した腕や服が体の上に残った）
+    add[:LINE - 20] &= b[:LINE - 20, :, 3] < 60
     add[LINE - 2:] = False
-    m = Image.fromarray((add * 255).astype("uint8")).filter(ImageFilter.MinFilter(5)).filter(ImageFilter.MaxFilter(7)).filter(ImageFilter.GaussianBlur(1))
+    # 足は縁の下から続いている。縁につながっていない差（顎の下・襟の線のずれ）は貼らない。貼ると四角い跡が残った（ユーザー）
+    core = np.asarray(Image.fromarray((add * 255).astype("uint8")).filter(ImageFilter.MinFilter(5))) > 128
+    core = from_line(core)
+    m = Image.fromarray((core * 255).astype("uint8")).filter(ImageFilter.MaxFilter(7)).filter(ImageFilter.GaussianBlur(1))
     a = (np.asarray(m).astype(float) / 255)[..., None]
     return Image.fromarray((out * (1 - a) + pc * a).astype("uint8"))
 
 
 D = ROOT / "app" / "public" / "chars" / "ritsu"
 GOOD_FIT = 0.86  # 上半身の形がこれ以上重なれば、位置が合っている
-TRIES = 3
+TRIES = 4
 
 
 def plate_dir(cid: str) -> Path:
@@ -144,8 +165,14 @@ def bg_words(cid: str) -> dict:
     return {"name": "bright magenta", "hex": "#FF00FF"} if cid in MAGENTA else {"name": "green", "hex": "#00C040"}
 
 
+def kept_ledge(plate: Image.Image) -> bool:
+    """描き直しても台を消さない絵がある（1割ほど）。単色の背景なら、下の端は抜けて透明になり、下半分に幅いっぱいの行もない"""
+    a = np.asarray(plate.getchannel("A")) > 128
+    return bool(a[-8:].mean() > 0.15 or (a[a.shape[0] // 2:].mean(axis=1) > 0.8).sum() >= 3)
+
+
 def make_one(cid: str, face: str, name: str, parts: list) -> str:
-    """単色の背景の絵を作る。位置が合わなければ作り直す。一番合った絵を残す"""
+    """単色の背景の絵を作る。台が残っていれば捨て、位置が合わなければ作り直す。一番合った絵を残す"""
     out = plate_dir(cid) / f"{name}.png"
     if out.exists():
         return f"{cid} {name} ある"
@@ -157,7 +184,11 @@ def make_one(cid: str, face: str, name: str, parts: list) -> str:
         except (Exception, SystemExit) as e:  # noqa: BLE001
             print(f"    {cid} {name}：{e}", flush=True)
             continue
-        v = fit(key(tmp, cid in MAGENTA), base, cid, face)[1]
+        plate = key(tmp, cid in MAGENTA)
+        if kept_ledge(plate):
+            print(f"    {cid} {name}：台が残った", flush=True)
+            continue
+        v = fit(plate, base, cid, face)[1]
         if v > best_v:
             best, best_v = tmp.read_bytes(), v
         if v >= GOOD_FIT:
@@ -206,7 +237,10 @@ def apply(cid: str) -> None:
     def get(face: str, name: str) -> tuple[Image.Image, Image.Image]:
         b = base.setdefault(face, Image.open(d / f"sit-{face}.webp").convert("RGBA").copy())
         if name not in plates:
-            plates[name], v = fit(key(pd / f"{name}.png", magenta), b, cid, face)
+            raw = key(pd / f"{name}.png", magenta)
+            if kept_ledge(raw):
+                raise SystemExit(f"{cid} {name}：台が残っている絵は貼らない。作り直すこと")
+            plates[name], v = fit(raw, b, cid, face)
             if v < GOOD_FIT:
                 low.append(f"{name} {v:.2f}")
         return b, plates[name]

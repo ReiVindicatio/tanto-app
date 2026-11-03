@@ -106,8 +106,7 @@ export default function RitsuPage() {
   const doze = useRef<number | undefined>(undefined);
   const speaking = useSpeaking();
   const m = motionOf(theme);
-  const mouthOpen = useMouthOpen(speaking && m.talkBase.includes(face));
-
+  
   // しばらく触らないと眠そうな顔になる（押すと起きる）
   function wake() {
     window.clearTimeout(doze.current);
@@ -168,6 +167,9 @@ export default function RitsuPage() {
     : kit.dawn && fxOn("dawn") ? `${charDir(theme)}base-smile-dawn.webp`
     : fxOn("evolve") && evoStage() > 0 ? `${charDir(theme)}base-smile-evo${evoStage() + 1}.webp`
     : characterImage("base", face, theme);
+  // 口パクの絵はふつうの立ち絵に合わせてある。色違い・進化の絵に重ねると、色と位置の違う2枚が入れ替わって見える（ユーザー）
+  const canTalk = m.talkBase.includes(face) && sprite === characterImage("base", face, theme);
+  const mouthOpen = useMouthOpen(speaking && canTalk);
   // 特別な衣装（T069）の絵は、開いている人にだけ渡す。開いていなければ鍵の印と名前だけ
   const shownThemes = THEMES.filter((t) => !isSpecial(t.id) || isUnlocked(t, p.level));
   const specialThemes = THEMES.filter((t) => isSpecial(t.id));
@@ -206,10 +208,10 @@ export default function RitsuPage() {
           </Bubble>
         )}
         <button className="ritsu-sprite-button" aria-label="律に話しかける" onClick={touch}>
-          <span key={bump} className={`sprite-wrap${bump ? " bump" : ""}${face === "sleepy" ? " dozing" : ""}${speaking && m.talkBase.includes(face) ? " talking" : ""}${mouthOpen ? " mouth-open" : ""}`}>
+          <span key={bump} className={`sprite-wrap${bump ? " bump" : ""}${face === "sleepy" ? " dozing" : ""}${speaking && canTalk ? " talking" : ""}${mouthOpen ? " mouth-open" : ""}`}>
             <img className={`vn-sprite${showVideo ? " under-video" : ""}`} src={sprite} alt="" data-face={face} />
             {/* 口パク：律の声が流れている間 */}
-            {speaking && m.talkBase.includes(face) && (
+            {speaking && canTalk && (
               <img className="sprite-talk" src={`${charDir(theme)}base-${face}-talk.webp`} alt="" aria-hidden="true" />
             )}
           </span>

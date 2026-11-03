@@ -9,7 +9,7 @@ import { Bubble } from "../Ritsu";
 import { isSpecial, isUnlocked, markRevealed, setTheme, themeById } from "../ritsu/themes";
 import { linesOf, playLine } from "../ritsu/lines";
 
-/** 特別な衣装のお披露目は連作（T069）。導入 → 変身（全画面の動画のあと、決めの絵）→ 余韻。何本目のセリフでどの絵か */
+/** 特別な衣装のお披露目は連作（T069）。導入 → 変身（全画面の演出のあと、決めの絵）→ 余韻。何本目のセリフでどの絵か */
 const VIDEO_AT = 2;
 function storyFrame(k: number): string {
   return k < VIDEO_AT ? "story-1" : k < 4 ? "reveal" : "story-3";
@@ -48,7 +48,7 @@ export default function RevealPage({ theme }: { theme: string }) {
       setK(k + 1);
       playLine(lines[k + 1]);
     };
-    if (special && k + 1 === VIDEO_AT) playMove(theme, "entrance", { onEnd: say }); // 変身：動画のあとに決めの絵
+    if (special && k + 1 === VIDEO_AT) playMove(theme, "entrance", { onEnd: say }); // 変身：全画面の演出のあとに決めの絵
     else say();
   }
 
