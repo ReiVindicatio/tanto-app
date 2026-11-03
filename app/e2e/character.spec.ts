@@ -216,7 +216,7 @@ test("雪花の姫君：背中に結晶の輪があり、押すと固有モー�
   await page.locator(".perch.ring .perch-inner").first().dispatchEvent("click");
   await expect(page.locator(".pages-catch")).toHaveCount(0); // 押すと全画面の技ではなく固有モーション
   await page.goto("/ritsu");
-  await page.locator(".special-preview button", { hasText: "決め" }).click();
+  await page.getByRole("button", { name: "決め", exact: true }).click();
   await expect(page.locator(".pages-catch")).toBeAttached();
   await page.locator(".pages-catch").click();
   await expect(page.locator(".pages-catch")).toHaveCount(0);
