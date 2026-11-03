@@ -13,6 +13,7 @@ import { cardIdOf } from "./learning";
 import SpeakButton from "./SpeakButton";
 import { characterOn, LINES, markTipSeen, reactionFace, tipSeen } from "./character";
 import { PerchFigure, RitsuDock, useIdle } from "./Ritsu";
+import { birdReact } from "./ritsu/ScreenBird";
 import { answerFx, celebrateMove, playSignature, redeemLine, setCombo, smallMove } from "./ritsu/special";
 import { milestones, progressNow } from "./progress";
 import { shuffle } from "./shuffle";
@@ -202,6 +203,7 @@ export default function StatementDrill({
     const wasWrong = currentState().history.get(cardIdOf(s.id))?.last === false;
     setRedeem(v === truth && wasWrong ? redeemLine() : undefined);
     answerFx(v === truth, v === truth ? streak + 1 : 0, swipe.el);
+    birdReact(v === truth, v);
     recordAnswer(s.id, v === truth);
     const m = milestones(before, progressNow());
     setCelebrate(m.levelUp || m.goalReached ? m : null);

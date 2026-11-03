@@ -2624,6 +2624,10 @@ html[data-costume] .ritsu-bubble {
   --border: var(--kit-a);
   color: var(--kit-on);
 }
+/* 不正解の赤が、吹き出しの色に沈んで読めなかった */
+html[data-costume] .result > .peek-bubble {
+  color: var(--kit-on);
+}
 html[data-costume] .perch-emote {
   color: var(--kit-b);
   text-shadow: 0 0 8px var(--kit-b);
@@ -3350,6 +3354,120 @@ html[data-world] .appbar {
     animation: none;
   }
 }
+/* 袴：桜の枝に座る。枝は画面の右へ続く。小鳥は画面の上に住む（ScreenBird.tsx） */
+.cape-figure.fig-branch {
+  right: -16%;
+  bottom: 12%;
+  width: 225%;
+  z-index: 1;
+}
+/* 答えのあとは、結果の欄の左上に座る。枝の絵の右端で切れるので、薄くして消す */
+.result .perch.branch .cape-figure.fig-branch {
+  right: auto;
+  left: -27%;
+  bottom: 10%;
+  width: 190%;
+  -webkit-mask-image: linear-gradient(to right, #000 78%, transparent 96%);
+  mask-image: linear-gradient(to right, #000 78%, transparent 96%);
+}
+.result.with-peek:has(.perch.branch) > .peek-bubble {
+  left: 176px;
+  max-width: calc(100% - 184px);
+}
+.perch.branch.caped .perch-inner {
+  pointer-events: none;
+}
+.branch-hit {
+  position: absolute;
+  right: 40%;
+  bottom: 22%;
+  z-index: 2;
+  width: 100%;
+  height: 130%;
+  pointer-events: auto;
+  cursor: pointer;
+}
+.perch.branch .moon-seat {
+  display: none;
+}
+.ritsu-dock:has(.perch.branch) .dock-bubble {
+  right: 158px;
+  max-width: calc(100% - 170px);
+  z-index: 2;
+}
+.screen-bird {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 30;
+  width: 54px;
+  height: 54px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  will-change: transform;
+}
+.screen-bird img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 50% 100%;
+  visibility: hidden;
+}
+.bird-petal {
+  position: fixed;
+  z-index: 29;
+  width: 6px;
+  height: 8px;
+  border-radius: 60% 60% 60% 10%;
+  background: #f6b4c8;
+  pointer-events: none;
+}
+.pages-bg.sakura-bg {
+  filter: none;
+}
+.sakura-pose {
+  width: min(84vw, 56vh);
+}
+.sakura-round {
+  position: absolute;
+  right: 6%;
+  top: 50%;
+  width: min(66vw, 46vh);
+  height: min(66vw, 46vh);
+  margin-top: calc(min(66vw, 46vh) / -2);
+  overflow: hidden;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  background: #ffeef3;
+  box-shadow: 0 0 0 2px #c79a58, 0 16px 40px #5b2a4366;
+  opacity: 0;
+}
+.sakura-round img {
+  position: absolute;
+  left: -6%;
+  top: -4%;
+  width: 112%;
+  max-width: none;
+}
+.sakura-name {
+  position: absolute;
+  left: 8%;
+  top: 50%;
+  color: #fff;
+  font: 700 min(11vw, 54px) / 1.2 var(--mincho, "Hiragino Mincho ProN", serif);
+  letter-spacing: 0.14em;
+  text-shadow: 0 2px 0 #a02a58, 0 0 16px #e58fae;
+  writing-mode: vertical-rl;
+  opacity: 0;
+  transform: translateY(-50%);
+}
+.sakura-flash {
+  background: #fff4f8;
+}
 /* 雪花の全画面の技 */
 .ice-tint {
   position: fixed;
@@ -3407,6 +3525,7 @@ html[data-world] .appbar {
   transform: translateX(-50%);
 }
 .ice-flash-top {
+  position: fixed;
   z-index: 22;
   background: #f4fbff;
 }

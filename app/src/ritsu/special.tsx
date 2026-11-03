@@ -10,6 +10,8 @@ import { lineText, pickLine, playLine, type Line } from "./lines";
 import { SignatureLayer } from "./Signature";
 import { PagesLayer } from "./SignaturePages";
 import { IceLayer } from "./SignatureIce";
+import { SakuraLayer } from "./SignatureSakura";
+import { ScreenBirdHost } from "./ScreenBird";
 
 export type MoveName = "entrance" | "finish";
 type Playing = { theme: string; name: MoveName; line?: Line; onEnd?: () => void };
@@ -139,7 +141,7 @@ export function SpecialMoveLayer() {
       {signature &&
         (() => {
           const kind = kitOf(signature).live?.signature;
-          const Layer = kind === "pages" ? PagesLayer : kind === "ice" ? IceLayer : SignatureLayer;
+          const Layer = kind === "pages" ? PagesLayer : kind === "ice" ? IceLayer : kind === "sakura" ? SakuraLayer : SignatureLayer;
           return (
             <Layer
               key={signature}
@@ -154,6 +156,7 @@ export function SpecialMoveLayer() {
             />
           );
         })()}
+      <ScreenBirdHost theme="hakama" />
       {scale && <ReactionFx key={scale.at} kind={scale.kind} correct={scale.correct} />}
       {left > 0 && <div className="tryon-badge">試着中　あと {Math.ceil(left / 60000)} 分</div>}
       {farewell && <div className="tryon-badge">{farewell}</div>}

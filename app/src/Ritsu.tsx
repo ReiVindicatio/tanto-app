@@ -140,7 +140,7 @@ export function PerchFigure({
       data-gesture={g ?? undefined}
     >
       {special && <StarFall />}
-      {special && fxOn("pal") && pose === "sit" && kitOf(theme).live?.kind !== "ring" && <StarPal theme={theme} />}
+      {special && fxOn("pal") && pose === "sit" && !["ring", "branch"].includes(kitOf(theme).live?.kind ?? "") && <StarPal theme={theme} />}
       <div className="perch-float">
       {special && fxOn("moon") && pose === "sit" && <CostumeSeat kind={kitOf(theme).seat} />}
       {/* 息をする（ごくわずかに上下）。跳ねる動きは外側、息は内側にかける */}
@@ -155,6 +155,7 @@ export function PerchFigure({
           <img className="perch-body cape-spacer" src={src} alt="" />
           {kitOf(theme).live?.kind === "books" && <BookAttendants theme={theme} />}
           {kitOf(theme).live?.kind === "ring" && <IceHalo theme={theme} />}
+          {kitOf(theme).live?.kind === "branch" && <i className="branch-hit" />}
           <CapeFigure
             theme={theme}
             face={face}

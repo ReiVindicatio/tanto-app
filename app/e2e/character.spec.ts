@@ -199,12 +199,12 @@ test("特別な衣装（T069）：管理者でなければ鍵の印で着られ�
 
   // 技がまだない衣装は動画のまま
   await page.evaluate(() => {
-    localStorage.setItem("tanto.character.theme.v1", "hakama");
-    localStorage.setItem("tanto.character.revealed.v1", JSON.stringify(["hakama"]));
+    localStorage.setItem("tanto.character.theme.v1", "diva");
+    localStorage.setItem("tanto.character.revealed.v1", JSON.stringify(["diva"]));
   });
   await page.goto("/ritsu");
   await page.locator(".special-preview button", { hasText: "登場" }).click();
-  await expect(page.locator(".special-move video")).toHaveAttribute("src", /\/special\/hakama\/entrance\.mp4$/);
+  await expect(page.locator(".special-move video")).toHaveAttribute("src", /\/special\/diva\/entrance\.mp4$/);
   await page.locator(".special-move").click();
   await expect(page.locator(".special-move")).toHaveCount(0);
 });
@@ -223,6 +223,32 @@ test("雪花の姫君：背中に結晶の輪があり、押すと全画面の�
   await expect(page.locator(".perch.ring .star-pal")).toHaveCount(0);
   await expect(page.locator("html")).toHaveAttribute("data-world", "yukihana");
   await page.locator(".perch.ring .perch-inner").dispatchEvent("click");
+  await expect(page.locator(".pages-catch")).toBeAttached();
+  await page.locator(".pages-catch").click();
+  await expect(page.locator(".pages-catch")).toHaveCount(0);
+});
+
+test("合格の袴：小鳥が画面にいて、答えると押したボタンのところへ飛ぶ。律を押すと全画面の技が出る", async ({ page }) => {
+  await page.route("**/special/**", () => {});
+  await beAdmin(page);
+  await page.goto("/");
+  await page.evaluate(() => {
+    localStorage.setItem("tanto.character.theme.v1", "hakama");
+    localStorage.setItem("tanto.character.revealed.v1", JSON.stringify(["hakama"]));
+    localStorage.removeItem("tanto.special.signature.seen.v1");
+  });
+  await page.goto("/");
+  await page.locator("button", { hasText: "はじめる" }).first().click();
+  const bird = page.locator(".screen-bird");
+  await expect(bird).toBeAttached();
+  const button = await page.locator("button.mark").nth(1).boundingBox();
+  await page.locator("button.mark").nth(1).click();
+  await expect(bird).toBeAttached(); // 答えて律の絵が替わっても、小鳥は残る
+  await expect.poll(async () => {
+    const box = await bird.boundingBox();
+    return box && Math.abs(box.x + box.width / 2 - (button!.x + button!.width / 2));
+  }, { timeout: 3000 }).toBeLessThan(4);
+  await page.locator(".branch-hit").first().dispatchEvent("click");
   await expect(page.locator(".pages-catch")).toBeAttached();
   await page.locator(".pages-catch").click();
   await expect(page.locator(".pages-catch")).toHaveCount(0);

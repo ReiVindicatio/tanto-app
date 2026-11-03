@@ -32,7 +32,11 @@ SETS = {"hoshiyomi": {"wind": dict(neck=(269, 525), head=(269, 320), headr=170, 
         "yukihana": {"wind": dict(neck=(500, 485), head=(515, 333), headr=197, reach=420, right=0, file="sit-wind-smile.png"),
                      "keypose": dict(neck=(508, 316), head=(498, 240), headr=86, reach=560, right=0, file="key-pose.png"),
                      "face_box": (390 / 1024, 300 / 1024, 715 / 1024, 515 / 1024), "width": 620, "cloth": False, "clean": True,
-                     "ear": "h1-ear-patched.png", "ear_box": (0.3, 0.42, 0.72, 0.6), "ring": "r1-cut.png"}}
+                     "ear": "h1-ear-patched.png", "ear_box": (0.3, 0.42, 0.72, 0.6), "ring": "r1-cut.png"},
+        "hakama": {"wind": dict(neck=(490, 590), head=(490, 450), headr=170, reach=360, right=0, file="sit-wind-smile.png"),
+                   "keypose": dict(neck=(520, 345), head=(527, 270), headr=90, reach=560, right=0, file="key-pose.png"),
+                   "face_box": (340 / 1024, 360 / 1024, 640 / 1024, 590 / 1024), "width": 900, "cloth": False, "clean": True,
+                   "birds": {"stand": ("bird", False, 0, True), "up": ("bird-up", True, 0, False), "down": ("bird-down", False, 0, False), "tilt": ("bird", False, -13, True), "happy": ("bird-happy", False, 0, True)}}}
 # 口パクは、声が流れる表情（5つ）だけ
 TALK = "normal smile think happy sad".split()
 FACES = "normal think happy sad sleepy surprised smug jito blink".split() + [f"{f}-talk" for f in TALK]
@@ -152,6 +156,18 @@ def main(cid: str) -> None:
         m = Image.fromarray(((d & area) * 255).astype("uint8")).filter(ImageFilter.MaxFilter(7)).filter(ImageFilter.GaussianBlur(2))
         e.putalpha(m)
         save(e, dst / "ear.webp", width)
+    for name, (file, flip, rot, ground) in conf.get("birds", {}).items():  # 小鳥：コマごとに同じ大きさの枠に置く（足元か中央にそろえる）
+        r = key(src / f"{file}.png", False)
+        r.putalpha(r.getchannel("A").point(lambda v: 0 if v < 90 else v))
+        if flip:
+            r = r.transpose(Image.FLIP_LEFT_RIGHT)
+        c = r.crop(r.getchannel("A").getbbox())
+        if rot:
+            c = c.rotate(rot, expand=True, resample=Image.BICUBIC)
+            c = c.crop(c.getchannel("A").getbbox())
+        can = Image.new("RGBA", (600, 600), (0, 0, 0, 0))
+        can.alpha_composite(c, ((600 - c.width) // 2, 600 - c.height if ground else (600 - c.height) // 2))
+        save(can, dst / f"bird-{name}.webp", 150)
     if "ring" in conf:  # 背中の輪は切り抜いた絵をそのまま
         ring = Image.open(src / conf["ring"]).convert("RGBA")
         save(ring, dst / "ring.webp", 560)

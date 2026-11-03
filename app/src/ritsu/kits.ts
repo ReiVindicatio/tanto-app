@@ -28,7 +28,7 @@ export type Kit = {
   dawn?: boolean;
   sitLoop?: boolean;
   /** 生きた座り絵と全画面の技がある衣装（1着ずつ作る）。strength・dir は絵の動く強さと向き、flip は左右反転（律は画面の右端にいるので、右へ流れる絵は反転する）。 */
-  live?: { kind: "cape" | "books" | "ring"; signature: "meteor" | "pages" | "ice"; strength: number; dir: [number, number]; flip: boolean };
+  live?: { kind: "cape" | "books" | "ring" | "branch"; signature: "meteor" | "pages" | "ice" | "sakura"; strength: number; dir: [number, number]; flip: boolean };
 };
 
 export const KITS: Record<string, Kit> = {
@@ -61,6 +61,7 @@ export const KITS: Record<string, Kit> = {
     chapters: ["第一話　冬の校庭", "第二話　春の雨", "第三話　満開の朝"],
     world: { name: "桜", dark: false },
     worldBg: "bg.webp",
+    live: { kind: "branch", signature: "sakura", strength: 0.5, dir: [1, 0], flip: false },
   },
   diva: {
     particle: "✦",
