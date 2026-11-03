@@ -30,7 +30,7 @@ SETS = {"hoshiyomi": {"wind": dict(neck=(269, 525), head=(269, 320), headr=170, 
                      "face_box": (300 / 1024, 240 / 1024, 730 / 1024, 545 / 1024), "width": 560,
                      "sprites": {"book-closed": 170, "book-closed2": 170, "book-open": 220, "page": 120}},
         "yukihana": {"wind": dict(neck=(500, 485), head=(515, 333), headr=197, reach=420, right=0, file="sit-wind-smile.png"),
-                     "keypose": dict(neck=(470, 372), head=(486, 243), headr=110, reach=560, right=0, file="key-pose.png"),
+                     "keypose": dict(neck=(508, 316), head=(498, 240), headr=86, reach=560, right=0, file="key-pose.png"),
                      "face_box": (390 / 1024, 300 / 1024, 715 / 1024, 515 / 1024), "width": 620, "cloth": False, "clean": True,
                      "ear": "h1-ear-patched.png", "ring": "r1-cut.png"}}
 # 口パクは、声が流れる表情（5つ）だけ
