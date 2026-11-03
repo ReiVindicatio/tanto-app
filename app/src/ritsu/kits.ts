@@ -50,7 +50,7 @@ export const KITS: Record<string, Kit> = {
     worldBg: "bg-nomoon.webp",
     realMoon: true,
     noStageVideo: true,
-    motions: { clips: [{ name: "weigh" }, { name: "stars" }, { name: "sphere" }, { name: "foxhat" }, { name: "cosmos" }], geo: [-0.0899, -0.9307, 1.1708] },
+    motions: { clips: [{ name: "weigh" }, { name: "stars" }, { name: "gavel" }, { name: "sphere" }, { name: "foxhat" }, { name: "cosmos" }, { name: "hourglass" }, { name: "hatdown", rare: true }, { name: "bite", rare: true }], geo: [-0.0899, -0.9307, 1.1708] },
     live: { kind: "cape", signature: "meteor", strength: 1.7, dir: [1, 0], flip: true, scale: true },
   },
   hakama: {
