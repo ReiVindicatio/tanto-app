@@ -85,7 +85,7 @@ export const KITS: Record<string, Kit> = {
     live: { kind: "stage", signature: "curtain", strength: 0.5, dir: [1, 0], flip: false },
   },
   nocturne: {
-    motions: { clips: [{ name: "read" }, { name: "chomp", rare: true }], geo: [-0.6351, -1.9713, 2.2667] },
+    motions: { clips: [{ name: "orbit" }, { name: "read" }, { name: "shh" }, { name: "twirl" }, { name: "door" }, { name: "portal" }, { name: "dust", rare: true }, { name: "chomp", rare: true }], geo: [-0.6351, -1.9713, 2.2667] },
     live: { kind: "books", signature: "pages", strength: 0.35, dir: [0, -1], flip: false },
     particle: "✧",
     seat: "book",
@@ -111,7 +111,7 @@ export const KITS: Record<string, Kit> = {
     chapters: ["第一話　最初の氷", "第二話　吹雪の夜", "第三話　小さな城"],
     world: { name: "氷の城", dark: true },
     worldBg: "bg.webp",
-    motions: { clips: [{ name: "swing" }, { name: "bloom" }, { name: "rabbit" }, { name: "breath" }, { name: "freeze" }, { name: "mirror" }, { name: "bunnies" }, { name: "sneeze", rare: true }, { name: "snowball", rare: true }], geo: [-0.2493, -1.0278, 1.4986] },
+    motions: { clips: [{ name: "swing" }, { name: "bloom" }, { name: "rabbit" }, { name: "breath" }, { name: "freeze" }, { name: "mirror" }, { name: "bunnies" }, { name: "return" }, { name: "sneeze", rare: true }, { name: "snowball", rare: true }], geo: [-0.2493, -1.0278, 1.4986] },
     live: { kind: "ring", signature: "ice", strength: 0.5, dir: [1, 0], flip: false },
   },
 };
