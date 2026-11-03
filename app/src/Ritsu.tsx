@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { charDir, characterImage, type Expression } from "./character";
 import { CostumeSeat, playSignature, StarFall, StarPal } from "./ritsu/special";
-import { BookAttendants } from "./ritsu/BookAttendants";
+import { BookAttendants, FloatScale } from "./ritsu/BookAttendants";
 import { IceHalo } from "./ritsu/IceHalo";
 import { MotionClip, preloadClip } from "./ritsu/MotionClip";
 import { markSignatureSeen } from "./ritsu/Signature";
@@ -198,6 +198,7 @@ export function PerchFigure({
           <img className="perch-body cape-spacer" src={src} alt="" />
           {kitOf(theme).live?.kind === "books" && <BookAttendants theme={theme} rest={!!clip} />}
           {kitOf(theme).live?.kind === "ring" && <IceHalo theme={theme} />}
+          {kitOf(theme).live?.scale && <FloatScale theme={theme} rest={!!clip} />}
           {kitOf(theme).live?.kind === "branch" && <i className="branch-hit" />}
           <CapeFigure
             theme={theme}
@@ -213,7 +214,7 @@ export function PerchFigure({
               url={clip}
               geo={motions.geo}
               flip={!!kitOf(theme).live?.flip}
-              delay={kitOf(theme).live?.kind === "books" ? 500 : 0}
+              delay={kitOf(theme).live?.kind === "books" || kitOf(theme).live?.scale ? 500 : 0}
               onStart={() => setClipShown(true)}
               onEnding={() => setClipShown(false)}
               onEnd={() => {

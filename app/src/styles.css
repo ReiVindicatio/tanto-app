@@ -3161,6 +3161,31 @@ html[data-world] .appbar {
 .cape-figure.flip {
   transform: scaleX(-1);
 }
+/* 星詠み：吹き出しが天秤にかぶらないよう、左へ寄せる */
+.ritsu-dock:has(.perch.cape) .dock-bubble {
+  right: 168px;
+  max-width: calc(100% - 180px);
+}
+/* 星詠みの天秤：.cape-figure と同じ箱に置く（絵の幅 780・高さ 725） */
+.float-scale {
+  position: absolute;
+  right: 4%;
+  bottom: 21%;
+  z-index: 1;
+  width: 160%;
+  aspect-ratio: 780 / 725;
+  transform: scaleX(-1);
+  pointer-events: none;
+}
+.float-scale img {
+  position: absolute;
+  left: 54.4%;
+  top: 18%;
+  width: 23.4%;
+  max-width: none;
+  height: auto;
+  transform-origin: 50% 20%;
+}
 /* 司書：体の横に本が控えるので、律を少し内側に寄せ、吹き出しもその分ずらす */
 .cape-figure.fig-books {
   right: 4%;
@@ -3376,6 +3401,7 @@ html[data-world] .appbar {
   transform: scaleX(-1);
 }
 .perch.in-motion .cape-figure,
+.perch.in-motion .float-scale,
 .perch.in-motion .book-attendant,
 .perch.in-motion .ice-front {
   visibility: hidden;

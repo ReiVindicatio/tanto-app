@@ -62,3 +62,30 @@ export function BookAttendants({ theme, rest = false }: { theme: string; rest?: 
     </>
   );
 }
+
+/** 星詠みの金の天秤：横に浮かんで、ゆっくり揺れる。置き場所は動画の最初のコマと同じ（ritsu_motion.py の SCALE） */
+export function FloatScale({ theme, rest = false }: { theme: string; rest?: boolean }) {
+  const el = useRef<HTMLImageElement>(null);
+  const restRef = useRef(rest);
+  restRef.current = rest;
+  useEffect(() => {
+    if (reduced()) return;
+    let raf = 0;
+    let amp = 1;
+    let last = performance.now();
+    const tick = (now: number) => {
+      const t = now / 1000;
+      amp += Math.max(-1, Math.min(1, (restRef.current ? 0 : 1) - amp)) * Math.min(1, ((now - last) / 1000) * 6);
+      last = now;
+      if (el.current) el.current.style.transform = `translateY(${(Math.sin(t * 0.9) * 3 * amp).toFixed(2)}%) rotate(${(Math.sin(t * 0.7) * 2.5 * amp).toFixed(2)}deg)`;
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, []);
+  return (
+    <div className="float-scale" aria-hidden="true">
+      <img ref={el} src={`${charDir(theme)}scale.webp`} alt="" />
+    </div>
+  );
+}

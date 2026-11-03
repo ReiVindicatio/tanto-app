@@ -32,7 +32,7 @@ export type Kit = {
   /** 律のページの動画が古い服のままなので、流さない */
   noStageVideo?: boolean;
   /** 生きた座り絵と全画面の技がある衣装（1着ずつ作る）。strength・dir は絵の動く強さと向き、flip は左右反転（律は画面の右端にいるので、右へ流れる絵は反転する）。 */
-  live?: { kind: "cape" | "books" | "ring" | "branch" | "stage"; signature: "meteor" | "pages" | "ice" | "sakura" | "curtain"; strength: number; dir: [number, number]; flip: boolean };
+  live?: { kind: "cape" | "books" | "ring" | "branch" | "stage"; signature: "meteor" | "pages" | "ice" | "sakura" | "curtain"; strength: number; dir: [number, number]; flip: boolean; scale?: boolean };
 };
 
 export const KITS: Record<string, Kit> = {
@@ -49,9 +49,9 @@ export const KITS: Record<string, Kit> = {
     world: { name: "夜空", dark: true },
     worldBg: "bg-nomoon.webp",
     realMoon: true,
-    dawn: true,
-    sitLoop: true,
-    live: { kind: "cape", signature: "meteor", strength: 1.7, dir: [1, 0], flip: true },
+    noStageVideo: true,
+    motions: { clips: [{ name: "weigh" }, { name: "stars" }, { name: "sphere" }, { name: "foxhat" }, { name: "cosmos" }], geo: [-0.0899, -0.9307, 1.1708] },
+    live: { kind: "cape", signature: "meteor", strength: 1.7, dir: [1, 0], flip: true, scale: true },
   },
   hakama: {
     particle: "❀",

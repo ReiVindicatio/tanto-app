@@ -27,6 +27,7 @@ MOTIONS = ROOT / "pipeline" / "ritsu_motions.json"
 W, H = 720, 1280  # Veo の 9:16
 FIG = 420  # 律の幅。動きや光が見切れないよう、まわりに余白をとる（ユーザー）
 FIGS = {"hakama": 560, "hoshiyomi": 600, "nocturne": 270}  # 枝やマントで横に広い絵。司書はまわりの本も入る
+SCALE = (0.55, 0.151, 0.62)  # 星詠みの天秤：体の範囲に対する左・上・高さ
 # 司書のまわりの本（app/src/ritsu/BookAttendants.tsx の BOOKS と同じ）。律の絵の幅に対する位置。動画の最初と最後は、この並びで止まっている
 BOOKS = [(-70, 80, "book-closed", 27, False), (-80, 48, "book-open", 36, True), (-62, 22, "book-closed2", 26, False),
          (70, 76, "book-closed", 24, True), (78, 45, "book-closed2", 30, False), (61, 19, "book-open", 29, True)]
@@ -68,6 +69,12 @@ def first_frame(cid: str, out: Path) -> list[float]:
         bg.paste(fig, (x, y), fig)
         for sp, a, b in layers[True]:
             bg.paste(sp, (a, b), sp)
+    elif cid == "hoshiyomi":  # 横に浮かぶ金の天秤（app/src/ritsu/kits.ts の live.scale と同じ置き場所）
+        bg.paste(fig, (x, y), fig)
+        sp = Image.open(SPECIAL / cid / "scale.webp").convert("RGBA")
+        h = round(fig.height * SCALE[2])
+        sp = sp.resize((round(sp.width * h / sp.height), h), Image.LANCZOS)
+        bg.paste(sp, (x + round(size * SCALE[0]), y + round(fig.height * SCALE[1])), sp)
     else:
         bg.paste(fig, (x, y), fig)
     bg.save(out)
