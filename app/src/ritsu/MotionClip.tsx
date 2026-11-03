@@ -22,13 +22,17 @@ export function preloadClip(url: string): Promise<string> {
 const VS = "attribute vec2 p;varying vec2 v;void main(){v=vec2(p.x*.5+.5,.5-p.y*.5);gl_Position=vec4(p,0.,1.);}";
 const FS = "precision mediump float;uniform sampler2D t;varying vec2 v;void main(){vec3 c=texture2D(t,vec2(v.x*.5,v.y)).rgb;float a=texture2D(t,vec2(v.x*.5+.5,v.y)).r;gl_FragColor=vec4(min(c,vec3(a)),a);}";
 
-export function MotionClip({ url, geo, flip, onStart, onEnd }: { url: string; geo: [number, number, number]; flip: boolean; onStart: () => void; onEnd: () => void }) {
+/** ふだんの絵との入れ替えを重ねて見せる時間（ミリ秒）。ここで切り替えが分からなくなる */
+const BLEND = 200;
+
+export function MotionClip({ url, geo, flip, onStart, onEnding, onEnd }: { url: string; geo: [number, number, number]; flip: boolean; onStart: () => void; onEnding: () => void; onEnd: () => void }) {
   const canvas = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     let stop = false;
     let raf = 0;
     let started = false;
+    let ending = false;
     const video = document.createElement("video");
     video.muted = true;
     video.playsInline = true;
@@ -88,12 +92,20 @@ export function MotionClip({ url, geo, flip, onStart, onEnd }: { url: string; ge
         gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
         if (!started) {
           started = true;
-          onStart();
+          // 上にふわっと重ねてから、下のふだんの絵を隠す
+          cv.animate([{ opacity: 0 }, { opacity: 1 }], { duration: BLEND, fill: "forwards" }).onfinish = () => {
+            if (!stop && !ending) onStart();
+          };
+        }
+        if (!ending && video.duration && video.currentTime >= video.duration - BLEND / 1000) {
+          ending = true;
+          onEnding();
+          const fade = cv.animate([{ opacity: 1 }, { opacity: 0 }], { duration: BLEND, fill: "forwards" });
+          fade.onfinish = finish;
         }
       }
       raf = requestAnimationFrame(draw);
     };
-    video.onended = finish;
     video.onerror = finish;
     void preloadClip(url)
       .then((src) => {
@@ -116,5 +128,5 @@ export function MotionClip({ url, geo, flip, onStart, onEnd }: { url: string; ge
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [url]);
 
-  return <canvas ref={canvas} className={`motion-clip${flip ? " flip" : ""}`} aria-hidden="true" />;
+  return <canvas ref={canvas} className={`motion-clip${flip ? " flip" : ""}`} style={{ opacity: 0 }} aria-hidden="true" />;
 }

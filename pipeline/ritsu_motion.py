@@ -4,7 +4,7 @@
   そのあと python3 pipeline/ritsu_special_finish.py upload <ID>
 
 - 緑の背景の動画から色を抜く。透明は mp4 に持てないので、左に色・右に透明度を並べて1本にする（再生は app/src/ritsu/MotionClip.tsx）
-- 最初と最後は同じ絵なので、ふだんの座り絵とつながる。動き終わったあとの静止は切り落とす
+- 最初と最後は同じ絵なので、ふだんの座り絵とつながる。動き終わったあとの静止と、最後のずれたコマは切り落とす
 """
 from __future__ import annotations
 
@@ -28,7 +28,8 @@ W, H = 720, 1280  # Veo の 9:16
 FIG = 560  # 律の幅
 BOTTOM = 160
 OUT_W, OUT_H, FPS = 360, 640, 20
-STILL = 6.0  # 最後のコマとの差がこれより小さければ、動き終わったとみなす
+STILL = 6.0  # 最初のコマとの差がこれより小さければ、動き終わったとみなす
+GOOD = 0.985  # 元の絵との形の重なり
 STYLE = ("Keep the exact anime illustration style, flat clean line art and colors of the input image; her face, hair, outfit and proportions stay exactly the same throughout. "
          "Fixed camera, no zoom, no camera movement. The background stays a perfectly flat pure bright green with nothing on it. She stays in the same place at the same size. "
          "Exactly two arms. No text, no letters, no extra people. Modest clothing, she is about 15 years old. ")
@@ -65,12 +66,25 @@ def frames_of(src: Path) -> list[np.ndarray]:
     return out
 
 
-def encode(frames: list[np.ndarray], out: Path) -> None:
-    last = frames[-1]
-    end = len(frames) - 1
-    while end > 1 and np.abs(frames[end] - last).mean() < STILL:
+def overlap(a: np.ndarray, b: np.ndarray) -> float:
+    x, y = a[..., 3] > 128, b[..., 3] > 128
+    return float((x & y).sum() / max(1, (x | y).sum()))
+
+
+def encode(frames: list[np.ndarray], out: Path) -> list[np.ndarray]:
+    """動画の最後の数コマは、絵が大きくずれることがある（最後のコマの指定に飛びつく）。最初のコマと重なるところまで戻して、そこで終える"""
+    first = frames[0]
+    n = len(frames)
+    while n > 2 and overlap(frames[n - 1], first) < GOOD:
+        n -= 1
+    end = n - 1
+    while end > 1 and np.abs(frames[end] - first).mean() < STILL:
         end -= 1
-    keep = frames[: min(len(frames), end + FPS // 5)] + [last]
+    while end < n - 1 and overlap(frames[end], first) < GOOD:  # 戻りきるまで待つ
+        end += 1
+    keep = frames[: min(n, end + FPS // 4)]
+    if overlap(keep[-1], first) < GOOD:
+        print(f"  ⚠ {out.name}：最後が元の絵に重ならない（{overlap(keep[-1], first):.3f}）", flush=True)
     p = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{OUT_W * 2}x{OUT_H}", "-r", str(FPS), "-i", "-", "-an", "-c:v", "libx264", "-crf", "24", "-preset", "slow", "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(out)], stdin=subprocess.PIPE)
     for a in keep:
         al = a[..., 3:] / 255
@@ -78,7 +92,8 @@ def encode(frames: list[np.ndarray], out: Path) -> None:
         p.stdin.write(pair.astype("uint8").tobytes())
     p.stdin.close()
     p.wait()
-    print(f"  {out.name} {out.stat().st_size // 1024}KB {len(keep) / FPS:.1f}秒", flush=True)
+    print(f"  {out.name} {out.stat().st_size // 1024}KB {len(keep) / FPS:.1f}秒 重なり {overlap(keep[-1], first):.3f}", flush=True)
+    return keep
 
 
 def make(cid: str) -> None:

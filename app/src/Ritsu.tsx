@@ -97,11 +97,14 @@ const AUTO_MOTION_EVERY = 30000;
 let lastAutoMotion = 0;
 const RARE_RATE = 0.06;
 const motionCalm = () => typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches;
+let lastMotion = "";
+/** 同じ動きが続かないように選ぶ */
 function pickMotion(clips: { name: string; rare?: boolean }[]): string {
-  const rare = clips.filter((c) => c.rare);
-  const usual = clips.filter((c) => !c.rare);
-  const from = rare.length && (Math.random() < RARE_RATE || !usual.length) ? rare : usual;
-  return from[Math.floor(Math.random() * from.length)].name;
+  const rare = clips.filter((c) => c.rare && c.name !== lastMotion);
+  const usual = clips.filter((c) => !c.rare && c.name !== lastMotion);
+  const from = rare.length && (Math.random() < RARE_RATE || !usual.length) ? rare : usual.length ? usual : clips;
+  lastMotion = from[Math.floor(Math.random() * from.length)].name;
+  return lastMotion;
 }
 
 /** 感情の記号（頭の右上にぽんと出す）。考え中＝？・喜び＝！・得意げ＝♪・残念＝汗・ジト目＝…・眠い・寝そべり＝zzz */
@@ -169,7 +172,7 @@ export function PerchFigure({
   const mark = !emote ? undefined : pose === "lie" ? "z" : g ? undefined : special && (f === "happy" || f === "smug") ? "★" : EMOTE[f];
   return (
     <div
-      key={hop ? `hop-${face}` : "still"}
+      key={hop && !cape ? `hop-${face}` : "still"}
       className={`perch ${pose}${cape ? ` caped ${kitOf(theme).live?.kind}` : ""}${clipShown ? " in-motion" : ""}${swing && !g && !talking ? " swing" : ""}${hop ? " hop" : ""}${gShown ? " gesturing" : ""}${talking ? " talking" : ""}${mouthOpen ? " mouth-open" : ""}${(pose === "lie" && m.kick) || (pose === "sit" && m.swing.includes(f)) ? " has-kick" : ""} ${className}`}
       data-face={face}
       data-gesture={g ?? undefined}
@@ -211,6 +214,7 @@ export function PerchFigure({
               geo={motions.geo}
               flip={!!kitOf(theme).live?.flip}
               onStart={() => setClipShown(true)}
+              onEnding={() => setClipShown(false)}
               onEnd={() => {
                 setClip(null);
                 setClipShown(false);
@@ -308,6 +312,8 @@ export function RitsuDock({
   const pose = capeOn(currentTheme()) ? "sit" : wantedPose; // 風を受ける衣装は寝そべらず、いつも月に座っている（ユーザー）
   const [shown, setShown] = useState(!startHidden);
   const [tapped, setTapped] = useState(0); // 押したら、その場で跳ねて応える
+  // 固有モーションがある衣装は、押して跳ねない（絵を作り直すと、流れ始めた動きが消えた：ユーザー）
+  const motionsOn = capeOn(currentTheme()) && !!kitOf(currentTheme()).motions;
   const speaking = useSpeaking();
   const motion = motionOf(currentTheme());
   const [gesture, setGesture] = useState<string | null>(null);
@@ -387,10 +393,10 @@ export function RitsuDock({
     </div>
   ) : (
     <PerchFigure
-      key={tapped}
+      key={motionsOn ? "motion" : tapped}
       face={face}
       pose={shownPose}
-      hop={hop || (tapped > 0 && shownPose === "sit")}
+      hop={hop || (!motionsOn && tapped > 0 && shownPose === "sit")}
       swing={swing}
       talk={talk || speaking}
       gesture={act ?? gesture}
