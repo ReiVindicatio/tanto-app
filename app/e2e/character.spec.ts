@@ -144,7 +144,8 @@ test("衣装の開き方（T068）：未開放はレベルや模試の条件を�
   });
   await page.reload();
   await expect(tile("模試の朝")).toHaveCount(1);
-  await page.evaluate(() => localStorage.setItem("tanto.admin.v1", "1"));
+  // ログインしていないと起動時に印が消える。消える時機によって落ちたので、消えないようにしてから確かめる（2026-11-03 CI）
+  await beAdmin(page);
   await page.reload();
   await expect(page.locator(".theme-tile.locked")).toHaveCount(0);
   await expect(tile("ひだまりニット")).toHaveCount(1);
