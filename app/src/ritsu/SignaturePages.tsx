@@ -4,7 +4,7 @@ import { createPortal } from "react-dom";
 import { charDir } from "../character";
 import { loadImage, makeWarp, makeWind, type Warp } from "./cape";
 import { fxOn } from "./fx";
-import { markSignatureSeen } from "./Signature";
+import { HOLD, markSignatureSeen } from "./Signature";
 
 /** 音は手元で合成する（素材を使わない）。紙のめくれる音と鈴 */
 function playSound(): () => void {
@@ -63,7 +63,7 @@ function playSound(): () => void {
 
 /** 画面全体をめくれる形にする。#root に transform をかけると中の position: fixed（タブなど）が #root 基準になるので、
  *  #root を画面の大きさに固定し、中身だけスクロールの分ずらす。戻す関数を返す */
-function holdPage(): { root: HTMLElement; shade: HTMLElement; release: () => void } | null {
+export function holdPage(): { root: HTMLElement; shade: HTMLElement; release: () => void } | null {
   const root = document.getElementById("root");
   const inner = root?.firstElementChild as HTMLElement | null;
   if (!root || !inner) return null;
@@ -225,23 +225,23 @@ export function PagesLayer({ theme, onEnd }: { theme: string; onEnd: () => void 
           poseWrap.current,
           [
             { opacity: 0, transform: "translate(-50%,-44%) scale(.92)" },
-            { opacity: 1, transform: "translate(-50%,-50%) scale(1)", offset: 0.22 },
+            { opacity: 1, transform: "translate(-50%,-50%) scale(1)", offset: 0.11 },
             { opacity: 1, transform: "translate(-50%,-51.5%) scale(1.03)" },
           ],
-          { duration: 1500 },
+          { duration: 1500 + HOLD },
         );
         for (let i = 0; i < 10; i++) later(i * 70, addBook);
       });
       for (let i = 0; i < 10; i++) later(2100 + i * 100, () => (amp = Math.max(0.4, amp - 0.05)));
       // 4. 紙が舞い上がって画面をおおい、ページが閉じて戻る
-      later(3050, () => {
+      later(3050 + HOLD, () => {
         for (let i = 0; i < 46; i++) later(i * 12, () => addPage(true));
       });
-      later(3320, () => {
+      later(3320 + HOLD, () => {
         anim(page?.root, [{ transform: flip(-118) }, { transform: flip(0) }], { duration: 560, easing: "cubic-bezier(.3,.7,.4,1)" });
         anim(page?.shade, [{ opacity: 1 }, { opacity: 0 }], { duration: 560 });
       });
-      later(3900, () => {
+      later(3900 + HOLD, () => {
         if (!stop) onEnd();
       });
     })();

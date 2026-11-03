@@ -6,6 +6,9 @@ import { fxOn } from "./fx";
 
 const SEEN_KEY = "tanto.special.signature.seen.v1";
 
+/** 決めの絵を見せる時間をのばす（ミリ秒）。一瞬で終わりすぎた（ユーザー） */
+export const HOLD = 1500;
+
 /** 押せることを知らせる印を、まだ出すか */
 export function signatureSeen(): boolean {
   try {
@@ -260,26 +263,26 @@ export function SignatureLayer({ theme, onEnd }: { theme: string; onEnd: () => v
           poseWrap.current,
           [
             { opacity: 0, transform: "translate(-50%,-50%) scale(1.28)" },
-            { opacity: 1, transform: "translate(-50%,-50%) scale(1)", offset: 0.16 },
+            { opacity: 1, transform: "translate(-50%,-50%) scale(1)", offset: 0.09 },
             { opacity: 1, transform: "translate(-50%,-50%) scale(.965)" },
           ],
-          { duration: 2000 },
+          { duration: 2000 + HOLD },
         );
         rainOn = true;
       });
       for (let i = 0; i < 14; i++) later(1250 + i * 90, () => (amp = Math.max(0.75, amp - 0.09)));
       // 3. 最後に光って戻る
-      later(2900, () => {
+      later(2900 + HOLD, () => {
         rainOn = false;
         anim(flash.current, [{ opacity: 0 }, { opacity: 0.9 }], { duration: 240 });
       });
-      later(3140, () => {
+      later(3140 + HOLD, () => {
         if (poseWrap.current) poseWrap.current.style.visibility = "hidden";
         const a = root.current?.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 360, fill: "forwards" });
         if (a) a.onfinish = finishNow;
         else finishNow();
       });
-      later(6000, finishNow); // 止まったときの見切り
+      later(6000 + HOLD, finishNow); // 止まったときの見切り
     })();
     return () => {
       stop = true;
