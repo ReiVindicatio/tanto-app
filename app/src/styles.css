@@ -3354,6 +3354,16 @@ html[data-world] .appbar {
     animation: none;
   }
 }
+/* 固有モーション：吹き出しが動きにかぶるので、流れている間は引っ込める */
+.dock-bubble,
+.peek-bubble {
+  transition: opacity 0.2s;
+}
+.ritsu-dock:has(.motion-clip) .dock-bubble,
+.result:has(.motion-clip) > .peek-bubble {
+  opacity: 0;
+  pointer-events: none;
+}
 /* 固有モーション：流れている間は、ふだんの絵と重ねた飾りを隠す */
 .motion-clip {
   position: absolute;
@@ -3595,34 +3605,41 @@ html[data-world="diva"]:has(.stage-lights) body {
 }
 /* 袴：桜の枝に座る。枝は画面の右へ続く。小鳥は画面の上に住む（ScreenBird.tsx） */
 .cape-figure.fig-branch {
-  right: -16%;
-  bottom: 12%;
-  width: 225%;
+  right: -14%;
+  bottom: 16%;
+  width: 165%;
+  /* 枝の絵は右端で切れる。ホームでは画面の中に端が来るので、薄くして消す */
+  -webkit-mask-image: linear-gradient(to right, #000 86%, transparent 99%);
+  mask-image: linear-gradient(to right, #000 86%, transparent 99%);
   z-index: 1;
 }
 /* 答えのあとは、結果の欄の左上に座る。枝の絵の右端で切れるので、薄くして消す */
 .result .perch.branch .cape-figure.fig-branch {
   right: auto;
-  left: -27%;
-  bottom: 10%;
-  width: 190%;
+  left: -18%;
+  bottom: 14%;
+  width: 150%;
   -webkit-mask-image: linear-gradient(to right, #000 78%, transparent 96%);
   mask-image: linear-gradient(to right, #000 78%, transparent 96%);
 }
 .result.with-peek:has(.perch.branch) > .peek-bubble {
-  left: 176px;
-  max-width: calc(100% - 184px);
+  left: 150px;
+  max-width: calc(100% - 158px);
+}
+.perch.branch .motion-clip {
+  -webkit-mask-image: linear-gradient(to right, #000 77%, transparent 89%);
+  mask-image: linear-gradient(to right, #000 77%, transparent 89%);
 }
 .perch.branch.caped .perch-inner {
   pointer-events: none;
 }
 .branch-hit {
   position: absolute;
-  right: 40%;
+  right: 30%;
   bottom: 22%;
   z-index: 2;
-  width: 100%;
-  height: 130%;
+  width: 76%;
+  height: 100%;
   pointer-events: auto;
   cursor: pointer;
 }
@@ -3630,8 +3647,8 @@ html[data-world="diva"]:has(.stage-lights) body {
   display: none;
 }
 .ritsu-dock:has(.perch.branch) .dock-bubble {
-  right: 158px;
-  max-width: calc(100% - 170px);
+  right: 118px;
+  max-width: calc(100% - 130px);
   z-index: 2;
 }
 .screen-bird {
