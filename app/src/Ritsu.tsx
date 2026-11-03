@@ -178,7 +178,7 @@ export function PerchFigure({
       data-gesture={g ?? undefined}
     >
       {special && <StarFall />}
-      {special && fxOn("pal") && pose === "sit" && !["ring", "branch", "stage"].includes(kitOf(theme).live?.kind ?? "") && <StarPal theme={theme} />}
+      {special && fxOn("pal") && pose === "sit" && !["ring", "branch", "stage", "books"].includes(kitOf(theme).live?.kind ?? "") && <StarPal theme={theme} />}
       <div className="perch-float">
       {special && fxOn("moon") && pose === "sit" && <CostumeSeat kind={kitOf(theme).seat} />}
       {/* 息をする（ごくわずかに上下）。跳ねる動きは外側、息は内側にかける */}
@@ -196,7 +196,7 @@ export function PerchFigure({
           }}
         >
           <img className="perch-body cape-spacer" src={src} alt="" />
-          {kitOf(theme).live?.kind === "books" && <BookAttendants theme={theme} />}
+          {kitOf(theme).live?.kind === "books" && <BookAttendants theme={theme} rest={!!clip} />}
           {kitOf(theme).live?.kind === "ring" && <IceHalo theme={theme} />}
           {kitOf(theme).live?.kind === "branch" && <i className="branch-hit" />}
           <CapeFigure
@@ -213,6 +213,7 @@ export function PerchFigure({
               url={clip}
               geo={motions.geo}
               flip={!!kitOf(theme).live?.flip}
+              delay={kitOf(theme).live?.kind === "books" ? 500 : 0}
               onStart={() => setClipShown(true)}
               onEnding={() => setClipShown(false)}
               onEnd={() => {

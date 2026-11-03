@@ -65,6 +65,7 @@ export const KITS: Record<string, Kit> = {
     chapters: ["第一話　冬の校庭", "第二話　春の雨", "第三話　満開の朝"],
     world: { name: "桜", dark: false },
     worldBg: "bg.webp",
+    motions: { clips: [{ name: "twirl" }, { name: "wave" }, { name: "petalize" }, { name: "magic" }, { name: "split" }, { name: "bloom" }, { name: "gust", rare: true }, { name: "crack", rare: true }], geo: [-0.1429, -1.2093, 1.2857] },
     live: { kind: "branch", signature: "sakura", strength: 0.5, dir: [1, 0], flip: false },
   },
   diva: {
@@ -80,9 +81,11 @@ export const KITS: Record<string, Kit> = {
     world: { name: "舞台", dark: true },
     worldBg: "bg.webp",
     noStageVideo: true,
+    motions: { clips: [{ name: "heart" }, { name: "point" }, { name: "sing" }, { name: "boomerang" }, { name: "change" }, { name: "dancers" }, { name: "resonate" }, { name: "tiara", rare: true }, { name: "popper", rare: true }], geo: [-0.2631, -1.2234, 1.5263] },
     live: { kind: "stage", signature: "curtain", strength: 0.5, dir: [1, 0], flip: false },
   },
   nocturne: {
+    motions: { clips: [{ name: "read" }, { name: "chomp", rare: true }], geo: [-0.6351, -1.9713, 2.2667] },
     live: { kind: "books", signature: "pages", strength: 0.35, dir: [0, -1], flip: false },
     particle: "✧",
     seat: "book",
@@ -108,7 +111,7 @@ export const KITS: Record<string, Kit> = {
     chapters: ["第一話　最初の氷", "第二話　吹雪の夜", "第三話　小さな城"],
     world: { name: "氷の城", dark: true },
     worldBg: "bg.webp",
-    motions: { clips: [{ name: "swing" }, { name: "bloom" }], geo: [-0.0625, -0.4453, 1.125] },
+    motions: { clips: [{ name: "swing" }, { name: "bloom" }, { name: "rabbit" }, { name: "breath" }, { name: "freeze" }, { name: "mirror" }, { name: "bunnies" }, { name: "sneeze", rare: true }, { name: "snowball", rare: true }], geo: [-0.2493, -1.0278, 1.4986] },
     live: { kind: "ring", signature: "ice", strength: 0.5, dir: [1, 0], flip: false },
   },
 };

@@ -222,7 +222,7 @@ test("雪花の姫君：背中に結晶の輪があり、押すと固有モー�
   await expect(page.locator(".pages-catch")).toHaveCount(0);
 });
 
-test("舞台の歌姫：照明が画面の奥にあり、押すと幕の全画面の技が出る", async ({ page }) => {
+test("舞台の歌姫：照明が画面の奥にあり、押すと固有モーション、決めで幕の全画面の技が出る", async ({ page }) => {
   await page.route("**/special/**", () => {});
   await beAdmin(page);
   await page.goto("/");
@@ -234,12 +234,15 @@ test("舞台の歌姫：照明が画面の奥にあり、押すと幕の全画�
   await page.locator("button", { hasText: "はじめる" }).first().click();
   await expect(page.locator(".stage-lights")).toBeAttached();
   await page.locator(".perch.stage .perch-inner").first().dispatchEvent("click");
+  await expect(page.locator(".curtain-fx")).toHaveCount(0); // 押すと固有モーション
+  await page.goto("/ritsu");
+  await page.getByRole("button", { name: "決め", exact: true }).click();
   await expect(page.locator(".curtain-fx")).toBeAttached();
   await page.locator(".curtain-fx").click({ force: true });
   await expect(page.locator(".curtain-fx")).toHaveCount(0);
 });
 
-test("合格の袴：小鳥が画面にいて、答えると押したボタンのところへ飛ぶ。律を押すと全画面の技が出る", async ({ page }) => {
+test("合格の袴：小鳥が画面にいて、答えると押したボタンのところへ飛ぶ。律を押すと固有モーション、決めで全画面の技が出る", async ({ page }) => {
   await page.route("**/special/**", () => {});
   await beAdmin(page);
   await page.goto("/");
@@ -260,6 +263,9 @@ test("合格の袴：小鳥が画面にいて、答えると押したボタン�
     return box && Math.abs(box.x + box.width / 2 - (button!.x + button!.width / 2));
   }, { timeout: 3000 }).toBeLessThan(4);
   await page.locator(".branch-hit").first().dispatchEvent("click");
+  await expect(page.locator(".pages-catch")).toHaveCount(0); // 押すと固有モーション
+  await page.goto("/ritsu");
+  await page.getByRole("button", { name: "決め", exact: true }).click();
   await expect(page.locator(".pages-catch")).toBeAttached();
   await page.locator(".pages-catch").click();
   await expect(page.locator(".pages-catch")).toHaveCount(0);

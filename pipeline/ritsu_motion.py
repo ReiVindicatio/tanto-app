@@ -25,14 +25,18 @@ from ritsu_wind import PAD, SETS, SPECIAL, crop_box
 VIDEO = ROOT / "audio" / "samples_char" / "video" / "motions"
 MOTIONS = ROOT / "pipeline" / "ritsu_motions.json"
 W, H = 720, 1280  # Veo の 9:16
-FIG = 560  # 律の幅
+FIG = 420  # 律の幅。動きや光が見切れないよう、まわりに余白をとる（ユーザー）
+FIGS = {"hakama": 560, "hoshiyomi": 600, "nocturne": 270}  # 枝やマントで横に広い絵。司書はまわりの本も入る
+# 司書のまわりの本（app/src/ritsu/BookAttendants.tsx の BOOKS と同じ）。律の絵の幅に対する位置。動画の最初と最後は、この並びで止まっている
+BOOKS = [(-70, 80, "book-closed", 27, False), (-80, 48, "book-open", 36, True), (-62, 22, "book-closed2", 26, False),
+         (70, 76, "book-closed", 24, True), (78, 45, "book-closed2", 30, False), (61, 19, "book-open", 29, True)]
 BOTTOM = 160
-OUT_W, OUT_H, FPS = 360, 640, 20
+OUT_W, OUT_H, FPS = 480, 854, 20
 STILL = 6.0  # 最初のコマとの差がこれより小さければ、動き終わったとみなす
 GOOD = 0.985  # 元の絵との形の重なり
 STYLE = ("Keep the exact anime illustration style, flat clean line art and colors of the input image; her face, hair, outfit and proportions stay exactly the same throughout. "
          "Fixed camera, no zoom, no camera movement. The background stays a perfectly flat pure bright green with nothing on it. She stays in the same place at the same size. "
-         "Exactly two arms. No text, no letters, no extra people. Modest clothing, she is about 15 years old. ")
+         "Everything stays inside the frame and never touches its edges: big effects go above her or to her left. Exactly two arms. No text, no letters, no extra people. Her modest clothing stays exactly the same. ")
 
 
 def first_frame(cid: str, out: Path) -> list[float]:
@@ -42,25 +46,61 @@ def first_frame(cid: str, out: Path) -> list[float]:
     full.putalpha(full.getchannel("A").point(lambda v: 0 if v < 64 else v))
     box = crop_box(full, PAD)
     body = full.crop(full.getchannel("A").getbbox())
-    k = FIG / body.width
-    fig = body.resize((FIG, round(body.height * k)), Image.LANCZOS)
+    size = FIGS.get(cid, FIG)
+    k = size / body.width
+    fig = body.resize((size, round(body.height * k)), Image.LANCZOS)
     bg = Image.new("RGB", (W, H), (0, 255, 0))
-    x, y = (W - FIG) // 2, H - fig.height - BOTTOM
-    bg.paste(fig, (x, y), fig)
-    bg.save(out)
+    x, y = (W - size) // 2, H - fig.height - BOTTOM
     fw = (box[2] - box[0]) * k
-    return [round(-(x - PAD * k) / fw, 4), round(-(y - PAD * k) / fw, 4), round(W / fw, 4)]
+    if cid == "nocturne":
+        fh = (box[3] - box[1]) * k
+        pw = fw / 0.92  # .cape-figure.fig-books の幅
+        ph = pw * 382 / 240
+        left = x - PAD * k + fw + 0.04 * pw - pw
+        bottom = y - PAD * k + fh + 0.22 * ph
+        layers = {False: [], True: []}
+        for i, (bx, by, name, bw, front) in enumerate(BOOKS):
+            sp = Image.open(SPECIAL / cid / f"{name}.webp").convert("RGBA")
+            sp = sp.resize((round(pw * bw / 100), round(sp.height * pw * bw / 100 / sp.width)), Image.LANCZOS).rotate(-(6 if i % 2 else -6), expand=True, resample=Image.BICUBIC)
+            layers[front].append((sp, round(left + pw * (0.5 + bx / 100) - sp.width / 2), round(bottom - ph * (0.25 + by / 100) - sp.height / 2)))
+        for sp, a, b in layers[False]:
+            bg.paste(sp, (a, b), sp)
+        bg.paste(fig, (x, y), fig)
+        for sp, a, b in layers[True]:
+            bg.paste(sp, (a, b), sp)
+    else:
+        bg.paste(fig, (x, y), fig)
+    bg.save(out)
+    # 位置は、配信している絵（wind-smile.webp）の体の範囲に合わせて求める。切り抜きの余白の計算がずれると、動画との継ぎ目がずれる
+    shown = Image.open(SPECIAL / cid / "wind-smile.webp").convert("RGBA")
+    sx0, sy0, sx1, _ = shown.getchannel("A").point(lambda v: 255 if v > 64 else 0).getbbox()
+    per = (sx1 - sx0) / size  # 動画の1ピクセルが、配信の絵の何ピクセルか
+    return [round((sx0 - x * per) / shown.width, 4), round((sy0 - y * per) / shown.width, 4), round(W * per / shown.width, 4)]
 
 
-def frames_of(src: Path) -> list[np.ndarray]:
-    """色を抜いて、透明度をかけた色（premultiplied）にする。縁の緑は全体で抑える（衣装に緑はない）"""
+# 動画の端で光や破片がぷつっと切れないよう、上と左右の端で薄くして消す
+_ramp = lambda n: np.clip(np.minimum(np.arange(n), np.arange(n)[::-1]) / 36, 0, 1)
+EDGE = np.outer(np.clip(np.arange(OUT_H) / 36, 0, 1), _ramp(OUT_W))
+
+
+def frames_of(src: Path, old_fig: int | None = None) -> list[np.ndarray]:
+    """色を抜いて、透明度をかけた色（premultiplied）にする。縁の緑は全体で抑える（衣装に緑はない）。
+    old_fig：前の置き方（律の幅）で作った動画を、今の置き方に縮めて直す"""
     with tempfile.TemporaryDirectory() as t:
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(src), "-vf", f"fps={FPS}", f"{t}/%03d.png"], check=True)
         out = []
         for f in sorted(Path(t).glob("*.png")):
-            im = key(f, False).resize((OUT_W, OUT_H), Image.LANCZOS)
+            im = key(f, False)
+            if old_fig:
+                k = FIG / old_fig
+                small = im.resize((round(im.width * k), round(im.height * k)), Image.LANCZOS)
+                can = Image.new("RGBA", im.size, (0, 0, 0, 0))
+                # 足元の高さと左右の中央をそろえる
+                can.paste(small, ((W - small.width) // 2, round((H - BOTTOM) * (1 - k))))
+                im = can
+            im = im.resize((OUT_W, OUT_H), Image.LANCZOS)
             a = np.asarray(im).astype(float)
-            a[..., 3] = np.where(a[..., 3] < 64, 0, a[..., 3])
+            a[..., 3] = np.where(a[..., 3] < 64, 0, a[..., 3]) * EDGE
             a[..., 1] = np.minimum(a[..., 1], np.maximum(a[..., 0], a[..., 2]) + 6)
             out.append(a)
     return out
@@ -106,8 +146,8 @@ def make(cid: str) -> None:
     for m in json.loads(MOTIONS.read_text(encoding="utf-8"))[cid]:
         src = g / f"{m['name']}.mp4"
         if not src.exists():
-            rv.generate(STYLE + m["text"], first, src, 6, "9:16", last=first)
-        encode(frames_of(src), SPECIAL / cid / f"motion-{m['name']}.mp4")
+            rv.generate(STYLE + m["text"], first, src, m.get("seconds", 6), "9:16", last=first)
+        encode(frames_of(src, m.get("old_fig")), SPECIAL / cid / f"motion-{m['name']}.mp4")
 
 
 if __name__ == "__main__":

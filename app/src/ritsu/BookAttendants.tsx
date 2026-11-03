@@ -14,22 +14,29 @@ const BOOKS: { x: number; y: number; name: string; width: number; front: boolean
 
 const reduced = () => typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-export function BookAttendants({ theme }: { theme: string }) {
+/** rest：固有モーションの間、決まった並びに止める。動画の最初と最後がこの並びなので、そこにそろえて入れ替える */
+export function BookAttendants({ theme, rest = false }: { theme: string; rest?: boolean }) {
+  const restRef = useRef(rest);
+  restRef.current = rest;
   const refs = useRef<(HTMLImageElement | null)[]>([]);
   const dir = charDir(theme);
   useEffect(() => {
     if (reduced()) return;
     let raf = 0;
     const seeds = BOOKS.map((_, i) => i * 1.7 + 0.4);
+    let amp = 1;
+    let last = performance.now();
     const tick = (now: number) => {
       const t = now / 1000;
+      amp += Math.max(-1, Math.min(1, (restRef.current ? 0 : 1) - amp)) * Math.min(1, ((now - last) / 1000) * 6);
+      last = now;
       refs.current.forEach((el, i) => {
         if (!el) return;
         const s = seeds[i];
         // 本の幅に対する %。律の絵が小さく、数 % では止まって見えた（ユーザー）。2つの波を重ねて、同じ動きをくり返さない
-        const x = Math.sin(t * 0.9 + s) * 30 + Math.sin(t * 1.7 + s * 2.3) * 12;
-        const y = Math.cos(t * 0.73 + s * 1.7) * 34 + Math.cos(t * 1.9 + s * 3.1) * 12;
-        const r = Math.sin(t * 0.8 + s) * 12 + (i % 2 ? 6 : -6);
+        const x = (Math.sin(t * 0.9 + s) * 30 + Math.sin(t * 1.7 + s * 2.3) * 12) * amp;
+        const y = (Math.cos(t * 0.73 + s * 1.7) * 34 + Math.cos(t * 1.9 + s * 3.1) * 12) * amp;
+        const r = Math.sin(t * 0.8 + s) * 12 * amp + (i % 2 ? 6 : -6);
         el.style.transform = `translate(-50%, 50%) translate(${x.toFixed(1)}%, ${y.toFixed(1)}%) rotate(${r.toFixed(1)}deg)`;
       });
       raf = requestAnimationFrame(tick);

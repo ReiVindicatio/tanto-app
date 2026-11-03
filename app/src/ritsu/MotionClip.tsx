@@ -25,7 +25,7 @@ const FS = "precision mediump float;uniform sampler2D t;varying vec2 v;void main
 /** ふだんの絵との入れ替えを重ねて見せる時間（ミリ秒）。ここで切り替えが分からなくなる */
 const BLEND = 200;
 
-export function MotionClip({ url, geo, flip, onStart, onEnding, onEnd }: { url: string; geo: [number, number, number]; flip: boolean; onStart: () => void; onEnding: () => void; onEnd: () => void }) {
+export function MotionClip({ url, geo, flip, delay = 0, onStart, onEnding, onEnd }: { url: string; geo: [number, number, number]; flip: boolean; delay?: number; onStart: () => void; onEnding: () => void; onEnd: () => void }) {
   const canvas = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -54,7 +54,8 @@ export function MotionClip({ url, geo, flip, onStart, onEnding, onEnd }: { url: 
     }
     const w = fig.width * geo[2];
     cv.style.width = `${w}px`;
-    cv.style.left = `${fig.left - box.left + fig.width * geo[0]}px`;
+    const fromLeft = fig.width * geo[0];
+    cv.style.left = `${fig.left - box.left + (flip ? fig.width - fromLeft - w : fromLeft)}px`;
     cv.style.top = `${fig.top - box.top + fig.width * geo[1]}px`;
     const prog = gl.createProgram();
     for (const [type, src] of [[gl.VERTEX_SHADER, VS], [gl.FRAGMENT_SHADER, FS]] as [number, string][]) {
@@ -107,8 +108,8 @@ export function MotionClip({ url, geo, flip, onStart, onEnding, onEnd }: { url: 
       raf = requestAnimationFrame(draw);
     };
     video.onerror = finish;
-    void preloadClip(url)
-      .then((src) => {
+    void Promise.all([preloadClip(url), new Promise((ok) => window.setTimeout(ok, delay))])
+      .then(([src]) => {
         if (stop) return;
         video.src = src;
         return video.play();
