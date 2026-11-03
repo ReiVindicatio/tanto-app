@@ -11,6 +11,8 @@ import { SignatureLayer } from "./Signature";
 import { PagesLayer } from "./SignaturePages";
 import { IceLayer } from "./SignatureIce";
 import { SakuraLayer } from "./SignatureSakura";
+import { CurtainLayer } from "./SignatureCurtain";
+import { StageLightsHost, stageCheer } from "./StageLights";
 import { ScreenBirdHost } from "./ScreenBird";
 
 export type MoveName = "entrance" | "finish";
@@ -141,7 +143,7 @@ export function SpecialMoveLayer() {
       {signature &&
         (() => {
           const kind = kitOf(signature).live?.signature;
-          const Layer = kind === "pages" ? PagesLayer : kind === "ice" ? IceLayer : kind === "sakura" ? SakuraLayer : SignatureLayer;
+          const Layer = kind === "pages" ? PagesLayer : kind === "ice" ? IceLayer : kind === "sakura" ? SakuraLayer : kind === "curtain" ? CurtainLayer : SignatureLayer;
           return (
             <Layer
               key={signature}
@@ -157,6 +159,7 @@ export function SpecialMoveLayer() {
           );
         })()}
       <ScreenBirdHost theme="hakama" />
+      <StageLightsHost />
       {scale && <ReactionFx key={scale.at} kind={scale.kind} correct={scale.correct} />}
       {left > 0 && <div className="tryon-badge">試着中　あと {Math.ceil(left / 60000)} 分</div>}
       {farewell && <div className="tryon-badge">{farewell}</div>}
@@ -208,6 +211,7 @@ function wearingFx(id: IdeaId): boolean {
 export function answerFx(correct: boolean, streak: number, cardEl: HTMLElement | null, chimeOn = true): void {
   if (!isSpecial(currentTheme(Infinity))) return;
   if (wearingFx("combo")) setCombo(streak);
+  stageCheer(streak);
   if (chimeOn && fxOn("sound")) chime(correct);
   if (reducedMotion()) return;
   if (fxOn("shoot")) shootStar(correct, cardEl);

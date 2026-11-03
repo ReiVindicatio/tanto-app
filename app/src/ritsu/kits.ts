@@ -27,8 +27,10 @@ export type Kit = {
   realMoon?: boolean;
   dawn?: boolean;
   sitLoop?: boolean;
+  /** 律のページの動画が古い服のままなので、流さない */
+  noStageVideo?: boolean;
   /** 生きた座り絵と全画面の技がある衣装（1着ずつ作る）。strength・dir は絵の動く強さと向き、flip は左右反転（律は画面の右端にいるので、右へ流れる絵は反転する）。 */
-  live?: { kind: "cape" | "books" | "ring" | "branch"; signature: "meteor" | "pages" | "ice" | "sakura"; strength: number; dir: [number, number]; flip: boolean };
+  live?: { kind: "cape" | "books" | "ring" | "branch" | "stage"; signature: "meteor" | "pages" | "ice" | "sakura" | "curtain"; strength: number; dir: [number, number]; flip: boolean };
 };
 
 export const KITS: Record<string, Kit> = {
@@ -75,6 +77,8 @@ export const KITS: Record<string, Kit> = {
     chapters: ["第一話　小さな部屋", "第二話　はじめての舞台", "第三話　光の海"],
     world: { name: "舞台", dark: true },
     worldBg: "bg.webp",
+    noStageVideo: true,
+    live: { kind: "stage", signature: "curtain", strength: 0.5, dir: [1, 0], flip: false },
   },
   nocturne: {
     live: { kind: "books", signature: "pages", strength: 0.35, dir: [0, -1], flip: false },

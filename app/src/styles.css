@@ -3354,6 +3354,229 @@ html[data-world] .appbar {
     animation: none;
   }
 }
+/* 歌姫：舞台照明は画面の奥（問題文の後ろ）を通る（StageLights.tsx）。全画面の幕は SignatureCurtain.tsx */
+.cape-figure.fig-stage {
+  right: -6%;
+  bottom: 14%;
+  width: 122%;
+  z-index: 1;
+}
+.perch.stage .moon-seat {
+  display: none;
+}
+.perch.stage.dock-ritsu,
+.dock-peek-button:has(.perch.stage) {
+  right: 12px;
+}
+.ritsu-dock:has(.perch.stage) .dock-bubble {
+  right: 128px;
+  max-width: calc(100% - 140px);
+  z-index: 2;
+}
+/* body の色があると、奥の照明が隠れる。舞台の色は html に移す */
+html[data-world="diva"]:has(.stage-lights) {
+  background: #0f0b26;
+}
+html[data-world="diva"]:has(.stage-lights) body {
+  background: none;
+}
+/* 文字が読めるよう、舞台の絵は暗くする。問題文の枠の外にも文字があるので、照明も抑える */
+.stage-lights {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: linear-gradient(rgba(15, 11, 38, 0.74), rgba(15, 11, 38, 0.88)), var(--costume-bg) center / cover no-repeat;
+  pointer-events: none;
+}
+.stage-beam {
+  position: absolute;
+  top: -6%;
+  width: 44%;
+  height: 112%;
+  clip-path: polygon(44% 0, 56% 0, 100% 100%, 0 100%);
+  filter: blur(2px);
+  mix-blend-mode: screen;
+  opacity: 0.34;
+  transform-origin: 50% 0;
+}
+.stage-beam.b1 {
+  left: -8%;
+  background: linear-gradient(180deg, #ff7eb6cc, transparent 88%);
+  animation: stage-1 9s ease-in-out infinite;
+}
+.stage-beam.b2 {
+  left: 30%;
+  background: linear-gradient(180deg, #9fe8ffbb, transparent 88%);
+  animation: stage-2 12s ease-in-out infinite;
+}
+.stage-beam.b3 {
+  right: -8%;
+  background: linear-gradient(180deg, #d2b4ffcc, transparent 88%);
+  animation: stage-3 7.5s ease-in-out infinite;
+}
+.stage-spot {
+  position: absolute;
+  top: 0;
+  background: linear-gradient(180deg, #fff4d688, #fff4d622 92%);
+  clip-path: polygon(42% 0, 58% 0, 100% 100%, 0 100%);
+  filter: blur(3px);
+  mix-blend-mode: screen;
+}
+.stage-tape {
+  position: fixed;
+  inset: 0;
+  z-index: 28;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+@keyframes stage-1 {
+  0%,
+  100% {
+    transform: rotate(-22deg);
+  }
+  50% {
+    transform: rotate(14deg);
+  }
+}
+@keyframes stage-2 {
+  0%,
+  100% {
+    transform: rotate(18deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+}
+@keyframes stage-3 {
+  0%,
+  100% {
+    transform: rotate(24deg);
+  }
+  50% {
+    transform: rotate(-12deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stage-beam {
+    animation: none;
+  }
+}
+.curtain-fx {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  overflow: hidden;
+  cursor: pointer;
+}
+.curtain-stage {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 30%, #3a2a6a 0%, #17102f 52%, #07050f 100%);
+  opacity: 0;
+}
+.curtain-stage canvas:not(.curtain-pose canvas) {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.curtain-floor {
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  bottom: 21%;
+  height: 8%;
+  background: linear-gradient(#5a3a22, #2a1a10);
+  box-shadow: 0 -2px 18px #ffcf8e55;
+}
+.curtain-pose {
+  position: absolute;
+  left: 50%;
+  bottom: 19%;
+  width: min(88vw, 56vh);
+  filter: drop-shadow(0 0 22px #ffd9f0aa);
+  opacity: 0;
+  transform: translateX(-50%);
+}
+.curtain-pose canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.curtain-cloth {
+  position: absolute;
+  inset: 0;
+  transform: translateY(-104%);
+}
+.curtain-side {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50.5%;
+  background: repeating-linear-gradient(90deg, #5e0a1f 0, #a11430 22px, #d32442 38px, #8e1029 58px, #5e0a1f 74px);
+  box-shadow: inset 0 -70px 60px -30px #00000099;
+}
+.curtain-side::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 12px;
+  background: repeating-linear-gradient(90deg, #e9c66a 0 5px, #b98f33 5px 8px);
+}
+.curtain-side.left {
+  left: 0;
+}
+.curtain-side.right {
+  right: 0;
+}
+.curtain-valance {
+  position: absolute;
+  left: -2%;
+  right: -2%;
+  top: 0;
+  z-index: 3;
+  height: 76px;
+  border-bottom: 5px solid #e9c66a;
+  border-radius: 0 0 46% 46% / 0 0 26px 26px;
+  background: repeating-linear-gradient(90deg, #7a0c23 0, #c21f3c 34px, #7a0c23 68px);
+  box-shadow: 0 8px 20px #000a;
+  transform: translateY(-110%);
+}
+.curtain-spot {
+  position: absolute;
+  left: 50%;
+  top: 44%;
+  width: min(120vw, 620px);
+  height: min(120vw, 620px);
+  margin: calc(min(120vw, 620px) / -2) 0 0 calc(min(120vw, 620px) / -2);
+  background: radial-gradient(circle, #fff3c8cc 0%, #fff3c844 34%, #0000 62%);
+  mix-blend-mode: screen;
+  opacity: 0;
+}
+.curtain-name {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 44%;
+  color: #fff3cf;
+  font: 700 min(13vw, 62px) / 1.2 var(--mincho, "Hiragino Mincho ProN", serif);
+  letter-spacing: 0.12em;
+  text-align: center;
+  text-shadow: 0 2px 0 #7a4a10, 0 0 24px #000;
+  opacity: 0;
+  transform: translateY(-50%);
+}
+.curtain-flash {
+  position: absolute;
+  inset: 0;
+  background: #fff8ec;
+  opacity: 0;
+  pointer-events: none;
+}
 /* 袴：桜の枝に座る。枝は画面の右へ続く。小鳥は画面の上に住む（ScreenBird.tsx） */
 .cape-figure.fig-branch {
   right: -16%;

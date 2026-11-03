@@ -197,16 +197,6 @@ test("特別な衣装（T069）：管理者でなければ鍵の印で着られ�
   await page.locator(".signature").click();
   await expect(page.locator(".signature")).toHaveCount(0);
 
-  // 技がまだない衣装は動画のまま
-  await page.evaluate(() => {
-    localStorage.setItem("tanto.character.theme.v1", "diva");
-    localStorage.setItem("tanto.character.revealed.v1", JSON.stringify(["diva"]));
-  });
-  await page.goto("/ritsu");
-  await page.locator(".special-preview button", { hasText: "登場" }).click();
-  await expect(page.locator(".special-move video")).toHaveAttribute("src", /\/special\/diva\/entrance\.mp4$/);
-  await page.locator(".special-move").click();
-  await expect(page.locator(".special-move")).toHaveCount(0);
 });
 
 test("雪花の姫君：背中に結晶の輪があり、押すと全画面の技が出る", async ({ page }) => {
@@ -226,6 +216,23 @@ test("雪花の姫君：背中に結晶の輪があり、押すと全画面の�
   await expect(page.locator(".pages-catch")).toBeAttached();
   await page.locator(".pages-catch").click();
   await expect(page.locator(".pages-catch")).toHaveCount(0);
+});
+
+test("舞台の歌姫：照明が画面の奥にあり、押すと幕の全画面の技が出る", async ({ page }) => {
+  await page.route("**/special/**", () => {});
+  await beAdmin(page);
+  await page.goto("/");
+  await page.evaluate(() => {
+    localStorage.setItem("tanto.character.theme.v1", "diva");
+    localStorage.setItem("tanto.character.revealed.v1", JSON.stringify(["diva"]));
+  });
+  await page.goto("/");
+  await page.locator("button", { hasText: "はじめる" }).first().click();
+  await expect(page.locator(".stage-lights")).toBeAttached();
+  await page.locator(".perch.stage .perch-inner").first().dispatchEvent("click");
+  await expect(page.locator(".curtain-fx")).toBeAttached();
+  await page.locator(".curtain-fx").click({ force: true });
+  await expect(page.locator(".curtain-fx")).toHaveCount(0);
 });
 
 test("合格の袴：小鳥が画面にいて、答えると押したボタンのところへ飛ぶ。律を押すと全画面の技が出る", async ({ page }) => {

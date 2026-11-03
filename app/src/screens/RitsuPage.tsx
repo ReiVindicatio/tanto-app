@@ -161,7 +161,7 @@ export default function RitsuPage() {
   const special = THEMES.find((t) => isSpecial(t.id) && isUnlocked(t, p.level));
   const kit = kitOf(theme);
   const useRealMoon = wearing && kit.realMoon && fxOn("realmoon");
-  const showVideo = wearing && fxOn("stagevideo") && videoOk && !speaking && face === "smile";
+  const showVideo = wearing && !kit.noStageVideo && fxOn("stagevideo") && videoOk && !speaking && face === "smile";
   // 立ち絵のにっこりは、色違いと進化の段階で変わる
   const sprite = !wearing || face !== "smile" ? characterImage("base", face, theme)
     : kit.dawn && fxOn("dawn") ? `${charDir(theme)}base-smile-dawn.webp`
