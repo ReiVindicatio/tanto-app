@@ -85,7 +85,7 @@ export const KITS: Record<string, Kit> = {
     live: { kind: "stage", signature: "curtain", strength: 0.5, dir: [1, 0], flip: false },
   },
   nocturne: {
-    motions: { clips: [{ name: "orbit" }, { name: "read" }, { name: "shh" }, { name: "twirl" }, { name: "door" }, { name: "portal" }, { name: "dust", rare: true }, { name: "chomp", rare: true }], geo: [-0.6351, -1.9713, 2.2667] },
+    motions: { clips: [{ name: "orbit" }, { name: "read" }, { name: "shh" }, { name: "twirl" }, { name: "door" }, { name: "portal" }, { name: "domino" }, { name: "ink" }, { name: "chomp", rare: true }], geo: [-0.6351, -1.9713, 2.2667] },
     live: { kind: "books", signature: "pages", strength: 0.35, dir: [0, -1], flip: false },
     particle: "✧",
     seat: "book",
