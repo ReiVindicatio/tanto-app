@@ -209,6 +209,25 @@ test("特別な衣装（T069）：管理者でなければ鍵の印で着られ�
   await expect(page.locator(".special-move")).toHaveCount(0);
 });
 
+test("雪花の姫君：背中に結晶の輪があり、押すと全画面の技が出る", async ({ page }) => {
+  await page.route("**/special/**", () => {});
+  await beAdmin(page);
+  await page.goto("/");
+  await page.evaluate(() => {
+    localStorage.setItem("tanto.character.theme.v1", "yukihana");
+    localStorage.setItem("tanto.character.revealed.v1", JSON.stringify(["yukihana"]));
+  });
+  await page.goto("/");
+  await page.locator("button", { hasText: "はじめる" }).first().click();
+  await expect(page.locator(".perch.ring .ice-halo")).toBeAttached();
+  await expect(page.locator(".perch.ring .star-pal")).toHaveCount(0);
+  await expect(page.locator("html")).toHaveAttribute("data-world", "yukihana");
+  await page.locator(".perch.ring .perch-inner").dispatchEvent("click");
+  await expect(page.locator(".pages-catch")).toBeAttached();
+  await page.locator(".pages-catch").click();
+  await expect(page.locator(".pages-catch")).toHaveCount(0);
+});
+
 test("特別な衣装のお披露目：全画面の技がある衣装は、途中で動画ではなく技を出し、飛ばすと次のセリフへ進む", async ({ page }) => {
   await page.route("**/special/**", () => {});
   await beAdmin(page);

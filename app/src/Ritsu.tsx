@@ -3,6 +3,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { charDir, characterImage, type Expression } from "./character";
 import { CostumeSeat, playSignature, StarFall, StarPal } from "./ritsu/special";
 import { BookAttendants } from "./ritsu/BookAttendants";
+import { IceHalo } from "./ritsu/IceHalo";
 import { CapeFigure } from "./ritsu/CapeFigure";
 import { signatureSeen } from "./ritsu/Signature";
 import { kitOf } from "./ritsu/kits";
@@ -139,7 +140,7 @@ export function PerchFigure({
       data-gesture={g ?? undefined}
     >
       {special && <StarFall />}
-      {special && fxOn("pal") && pose === "sit" && <StarPal theme={theme} />}
+      {special && fxOn("pal") && pose === "sit" && kitOf(theme).live?.kind !== "ring" && <StarPal theme={theme} />}
       <div className="perch-float">
       {special && fxOn("moon") && pose === "sit" && <CostumeSeat kind={kitOf(theme).seat} />}
       {/* 息をする（ごくわずかに上下）。跳ねる動きは外側、息は内側にかける */}
@@ -153,6 +154,7 @@ export function PerchFigure({
         >
           <img className="perch-body cape-spacer" src={src} alt="" />
           {kitOf(theme).live?.kind === "books" && <BookAttendants theme={theme} />}
+          {kitOf(theme).live?.kind === "ring" && <IceHalo theme={theme} />}
           <CapeFigure
             theme={theme}
             face={face}

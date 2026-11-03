@@ -24,7 +24,7 @@ describe("風", () => {
 
   it("生きた座り絵があるのは、作り終えた衣装だけ。全画面の技は衣装ごとに別", () => {
     const live = Object.entries(KITS).filter(([, k]) => k.live);
-    expect(live.map(([id]) => id).sort()).toEqual(["hoshiyomi", "nocturne"]);
+    expect(live.map(([id]) => id).sort()).toEqual(["hoshiyomi", "nocturne", "yukihana"]);
     expect(new Set(live.map(([, k]) => k.live?.signature)).size).toBe(live.length);
   });
 });

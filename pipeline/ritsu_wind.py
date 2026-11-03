@@ -28,7 +28,11 @@ SETS = {"hoshiyomi": {"wind": dict(neck=(269, 525), head=(269, 320), headr=170, 
         "nocturne": {"wind": dict(neck=(512, 585), head=(512, 344), headr=215, reach=520, right=0, file="sit-wind-smile.png"),
                      "keypose": dict(neck=(516, 224), head=(516, 138), headr=70, reach=640, right=0, file="key-pose.png"),
                      "face_box": (300 / 1024, 240 / 1024, 730 / 1024, 545 / 1024), "width": 560,
-                     "sprites": {"book-closed": 170, "book-closed2": 170, "book-open": 220, "page": 120}}}
+                     "sprites": {"book-closed": 170, "book-closed2": 170, "book-open": 220, "page": 120}},
+        "yukihana": {"wind": dict(neck=(500, 485), head=(515, 333), headr=197, reach=420, right=0, file="sit-wind-smile.png"),
+                     "keypose": dict(neck=(470, 372), head=(486, 243), headr=110, reach=560, right=0, file="key-pose.png"),
+                     "face_box": (390 / 1024, 300 / 1024, 715 / 1024, 515 / 1024), "width": 620, "cloth": False, "clean": True,
+                     "ear": "h1-ear-patched.png", "ring": "r1-cut.png"}}
 # 口パクは、声が流れる表情（5つ）だけ
 TALK = "normal smile think happy sad".split()
 FACES = "normal think happy sad sleepy surprised smug jito blink".split() + [f"{f}-talk" for f in TALK]
@@ -47,7 +51,7 @@ def crop_box(im: Image.Image, pad: int) -> tuple[int, int, int, int]:
     return max(0, x0 - pad), max(0, y0 - pad), min(im.width, x1 + pad), min(im.height, y1 + pad)
 
 
-def weight(im: Image.Image, box: tuple, neck: tuple, head: tuple, headr: int, reach: int, right: int) -> Image.Image:
+def weight(im: Image.Image, box: tuple, neck: tuple, head: tuple, headr: int, reach: int, right: int, cloth: bool = True) -> Image.Image:
     a = np.asarray(im).astype(float)
     h, w, _ = a.shape
     r, g, b, al = a[..., 0], a[..., 1], a[..., 2], a[..., 3]
@@ -72,7 +76,7 @@ def weight(im: Image.Image, box: tuple, neck: tuple, head: tuple, headr: int, re
         out = np.asarray(i.filter(ImageFilter.MaxFilter(n * 2 + 1))) > 128  # 布の外へも広げて、輪郭ごと動かす
         return np.asarray(Image.fromarray(((core | (out & (al < 40))) * 255).astype("uint8")).filter(ImageFilter.GaussianBlur(blur))).astype(float) / 255
 
-    c = grow(cape) * ss(dn, 50, reach) * ss(dh, headr * 1.15, headr * 1.35)
+    c = (grow(cape) * ss(dn, 50, reach) * ss(dh, headr * 1.15, headr * 1.35)) if cloth else np.zeros((h, w))  # 雪花の服は動かさず、髪だけ
     hr = grow(hair) * ss(dh, headr, headr + reach * 0.8)
     m = np.dstack([c * 255, hr * 255, np.zeros_like(c)]).astype("uint8")
     return Image.fromarray(m).resize((256, round(256 * h / w)), Image.BILINEAR)
@@ -112,11 +116,13 @@ def main(cid: str) -> None:
     conf = SETS[cid]
     w = conf["wind"]
     full = key(src / w["file"], False)
+    if conf.get("clean"):  # 背景の色むらが薄く残る絵は、それも抜く（そうしないと切り抜きが画面いっぱいになる）
+        full.putalpha(full.getchannel("A").point(lambda v: 0 if v < 64 else v))
     box = crop_box(full, PAD)
     im = full.crop(box)
     width = conf["width"]
     save(im, dst / "wind-smile.webp", width)
-    weight(im, box, w["neck"], w["head"], w["headr"], w["reach"], w["right"]).save(dst / "wind-map.png")
+    weight(im, box, w["neck"], w["head"], w["headr"], w["reach"], w["right"], conf.get("cloth", True)).save(dst / "wind-map.png")
     for f in FACES:
         if not (src / f"{f}-patched.png").exists():
             print("まだない：", f, flush=True)
@@ -127,12 +133,23 @@ def main(cid: str) -> None:
     print("wind", im.size, "体の中心", (w["neck"][0] - box[0]) / im.width, "縦横", width, round(im.height * width / im.width), flush=True)
     k = conf["keypose"]
     full = key(src / k["file"], False)
+    if conf.get("clean"):
+        full.putalpha(full.getchannel("A").point(lambda v: 0 if v < 64 else v))
     box = crop_box(full, 60)
     im = full.crop(box)
     save(im, dst / "keypose.webp", 900)
-    weight(im, box, k["neck"], k["head"], k["headr"], k["reach"], k["right"]).save(dst / "keypose-map.png")
+    weight(im, box, k["neck"], k["head"], k["headr"], k["reach"], k["right"], conf.get("cloth", True)).save(dst / "keypose-map.png")
     print("keypose", 900, round(im.height * 900 / im.width), flush=True)
     save(key(src / "cutin-face.png", False), dst / "cutin.webp", 800)
+    if "ear" in conf:  # 耳を折った絵は、変わるところだけ重ねる（表情を替えても使える）
+        e = key(src / conf["ear"], False).crop(box)
+        d = np.abs(np.asarray(e.convert("RGB")).astype(int) - np.asarray(im.convert("RGB")).astype(int)).sum(2) > 40
+        m = Image.fromarray((d * 255).astype("uint8")).filter(ImageFilter.MaxFilter(7)).filter(ImageFilter.GaussianBlur(2))
+        e.putalpha(Image.fromarray((np.asarray(m).astype(float) * (np.asarray(e.getchannel("A")).astype(float) / 255)).astype("uint8")))
+        save(e, dst / "ear.webp", width)
+    if "ring" in conf:  # 背中の輪は切り抜いた絵をそのまま
+        ring = Image.open(src / conf["ring"]).convert("RGBA")
+        save(ring, dst / "ring.webp", 560)
     for name, sw in conf.get("sprites", {}).items():
         sp = key(src / f"{name}.png", False)
         save(sp.crop(crop_box(sp, 6)), dst / f"{name}.webp", sw)

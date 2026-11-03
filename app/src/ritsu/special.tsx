@@ -9,6 +9,7 @@ import { kitOf, type Reaction, type Seat } from "./kits";
 import { lineText, pickLine, playLine, type Line } from "./lines";
 import { SignatureLayer } from "./Signature";
 import { PagesLayer } from "./SignaturePages";
+import { IceLayer } from "./SignatureIce";
 
 export type MoveName = "entrance" | "finish";
 type Playing = { theme: string; name: MoveName; line?: Line; onEnd?: () => void };
@@ -137,7 +138,8 @@ export function SpecialMoveLayer() {
     <>
       {signature &&
         (() => {
-          const Layer = kitOf(signature).live?.signature === "pages" ? PagesLayer : SignatureLayer;
+          const kind = kitOf(signature).live?.signature;
+          const Layer = kind === "pages" ? PagesLayer : kind === "ice" ? IceLayer : SignatureLayer;
           return (
             <Layer
               key={signature}

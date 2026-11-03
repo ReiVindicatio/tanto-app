@@ -28,7 +28,7 @@ export type Kit = {
   dawn?: boolean;
   sitLoop?: boolean;
   /** 生きた座り絵と全画面の技がある衣装（1着ずつ作る）。strength・dir は絵の動く強さと向き、flip は左右反転（律は画面の右端にいるので、右へ流れる絵は反転する）。 */
-  live?: { kind: "cape" | "books"; signature: "meteor" | "pages"; strength: number; dir: [number, number]; flip: boolean };
+  live?: { kind: "cape" | "books" | "ring"; signature: "meteor" | "pages" | "ice"; strength: number; dir: [number, number]; flip: boolean };
 };
 
 export const KITS: Record<string, Kit> = {
@@ -99,8 +99,9 @@ export const KITS: Record<string, Kit> = {
     pal: "とけない雪",
     evo: ["雪の子", "雪姫", "雪花の姫君"],
     chapters: ["第一話　最初の氷", "第二話　吹雪の夜", "第三話　小さな城"],
-    world: { name: "氷の城", dark: false },
+    world: { name: "氷の城", dark: true },
     worldBg: "bg.webp",
+    live: { kind: "ring", signature: "ice", strength: 0.5, dir: [1, 0], flip: false },
   },
 };
 
