@@ -1,9 +1,11 @@
 // 律（T063）の部品：ちびキャラ＋吹き出し（ナビゲーター）、画面の下の欄の縁からのぞく律、吹き出し単体
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { charDir, characterImage, type Expression } from "./character";
 import { CostumeSeat, playSignature, StarFall, StarPal } from "./ritsu/special";
 import { BookAttendants } from "./ritsu/BookAttendants";
 import { IceHalo } from "./ritsu/IceHalo";
+import { MotionClip, preloadClip } from "./ritsu/MotionClip";
+import { markSignatureSeen } from "./ritsu/Signature";
 import { CapeFigure } from "./ritsu/CapeFigure";
 import { signatureSeen } from "./ritsu/Signature";
 import { kitOf } from "./ritsu/kits";
@@ -90,6 +92,18 @@ function capeOn(theme: string): boolean {
   return isSpecial(theme) && Boolean(kitOf(theme).live) && fxOn("cape") && !capeFailed.has(theme);
 }
 
+/** 固有モーションの自動の間隔（勉強のじゃまにならないよう、仕草より少なく） */
+const AUTO_MOTION_EVERY = 30000;
+let lastAutoMotion = 0;
+const RARE_RATE = 0.06;
+const motionCalm = () => typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches;
+function pickMotion(clips: { name: string; rare?: boolean }[]): string {
+  const rare = clips.filter((c) => c.rare);
+  const usual = clips.filter((c) => !c.rare);
+  const from = rare.length && (Math.random() < RARE_RATE || !usual.length) ? rare : usual;
+  return from[Math.floor(Math.random() * from.length)].name;
+}
+
 /** 感情の記号（頭の右上にぽんと出す）。考え中＝？・喜び＝！・得意げ＝♪・残念＝汗・ジト目＝…・眠い・寝そべり＝zzz */
 const EMOTE: Partial<Record<Expression, string>> = { think: "？", happy: "！", smug: "♪", sad: "💧", jito: "…", sleepy: "z" };
 
@@ -130,12 +144,33 @@ export function PerchFigure({
   const special = isSpecial(theme);
   const [, setFailed] = useState(0);
   const cape = pose === "sit" && capeOn(theme);
+  // 固有モーション（課金衣装）：次の動きを先に読んでおき、押すか、ときどき自動で流す
+  const motions = cape ? kitOf(theme).motions : undefined;
+  const [clip, setClip] = useState<string | null>(null);
+  const [clipShown, setClipShown] = useState(false);
+  const nextClip = useRef<string | null>(null);
+  const prepareClip = () => {
+    if (!motions) return;
+    const url = `${charDir(theme)}motion-${pickMotion(motions.clips)}.mp4`;
+    nextClip.current = url;
+    preloadClip(url).catch(() => undefined);
+  };
+  const startClip = () => {
+    if (!nextClip.current || clip || motionCalm()) return;
+    lastAutoMotion = Date.now();
+    setClip(nextClip.current);
+  };
+  useEffect(prepareClip, [theme, !!motions]);
+  useEffect(() => {
+    if (gesture && !talk && Date.now() - lastAutoMotion > AUTO_MOTION_EVERY) startClip();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gesture]);
   const mouthOpen = useMouthOpen(talking || (cape && talk)); // 声が出ているときだけ口を開ける
   const mark = !emote ? undefined : pose === "lie" ? "z" : g ? undefined : special && (f === "happy" || f === "smug") ? "★" : EMOTE[f];
   return (
     <div
       key={hop ? `hop-${face}` : "still"}
-      className={`perch ${pose}${cape ? ` caped ${kitOf(theme).live?.kind}` : ""}${swing && !g && !talking ? " swing" : ""}${hop ? " hop" : ""}${gShown ? " gesturing" : ""}${talking ? " talking" : ""}${mouthOpen ? " mouth-open" : ""}${(pose === "lie" && m.kick) || (pose === "sit" && m.swing.includes(f)) ? " has-kick" : ""} ${className}`}
+      className={`perch ${pose}${cape ? ` caped ${kitOf(theme).live?.kind}` : ""}${clipShown ? " in-motion" : ""}${swing && !g && !talking ? " swing" : ""}${hop ? " hop" : ""}${gShown ? " gesturing" : ""}${talking ? " talking" : ""}${mouthOpen ? " mouth-open" : ""}${(pose === "lie" && m.kick) || (pose === "sit" && m.swing.includes(f)) ? " has-kick" : ""} ${className}`}
       data-face={face}
       data-gesture={g ?? undefined}
     >
@@ -148,7 +183,12 @@ export function PerchFigure({
         <div
           className="perch-inner"
           onClick={() => {
-            playSignature(theme);
+            if (motions) {
+              markSignatureSeen();
+              startClip();
+            } else {
+              playSignature(theme);
+            }
             setFailed((n) => n + 1); // 押せる印を消す
           }}
         >
@@ -165,6 +205,19 @@ export function PerchFigure({
               setFailed((n) => n + 1);
             }}
           />
+          {clip && motions && (
+            <MotionClip
+              url={clip}
+              geo={motions.geo}
+              flip={!!kitOf(theme).live?.flip}
+              onStart={() => setClipShown(true)}
+              onEnd={() => {
+                setClip(null);
+                setClipShown(false);
+                prepareClip();
+              }}
+            />
+          )}
           {fxOn("signature") && !signatureSeen() && <span className="cape-hint">押してみて</span>}
         </div>
       ) : (

@@ -200,7 +200,7 @@ test("特別な衣装（T069）：管理者でなければ鍵の印で着られ�
 
 });
 
-test("雪花の姫君：背中に結晶の輪があり、押すと全画面の技が出る", async ({ page }) => {
+test("雪花の姫君：背中に結晶の輪があり、押すと固有モーション、決めで全画面の技が出る", async ({ page }) => {
   await page.route("**/special/**", () => {});
   await beAdmin(page);
   await page.goto("/");
@@ -213,7 +213,10 @@ test("雪花の姫君：背中に結晶の輪があり、押すと全画面の�
   await expect(page.locator(".perch.ring .ice-halo")).toBeAttached();
   await expect(page.locator(".perch.ring .star-pal")).toHaveCount(0);
   await expect(page.locator("html")).toHaveAttribute("data-world", "yukihana");
-  await page.locator(".perch.ring .perch-inner").dispatchEvent("click");
+  await page.locator(".perch.ring .perch-inner").first().dispatchEvent("click");
+  await expect(page.locator(".pages-catch")).toHaveCount(0); // 押すと全画面の技ではなく固有モーション
+  await page.goto("/ritsu");
+  await page.locator(".special-preview button", { hasText: "決め" }).click();
   await expect(page.locator(".pages-catch")).toBeAttached();
   await page.locator(".pages-catch").click();
   await expect(page.locator(".pages-catch")).toHaveCount(0);

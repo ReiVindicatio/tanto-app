@@ -27,6 +27,8 @@ export type Kit = {
   realMoon?: boolean;
   dawn?: boolean;
   sitLoop?: boolean;
+  /** 固有モーション（押すと出る。ときどき自動でも出る）。rare はたまにしか出ない。geo はふだんの絵の幅に対する動画の位置 [左, 上, 幅]（ritsu_motion.py が表示する） */
+  motions?: { clips: { name: string; rare?: boolean }[]; geo: [number, number, number] };
   /** 律のページの動画が古い服のままなので、流さない */
   noStageVideo?: boolean;
   /** 生きた座り絵と全画面の技がある衣装（1着ずつ作る）。strength・dir は絵の動く強さと向き、flip は左右反転（律は画面の右端にいるので、右へ流れる絵は反転する）。 */
@@ -106,6 +108,7 @@ export const KITS: Record<string, Kit> = {
     chapters: ["第一話　最初の氷", "第二話　吹雪の夜", "第三話　小さな城"],
     world: { name: "氷の城", dark: true },
     worldBg: "bg.webp",
+    motions: { clips: [{ name: "swing" }, { name: "bloom" }], geo: [-0.0625, -0.4453, 1.125] },
     live: { kind: "ring", signature: "ice", strength: 0.5, dir: [1, 0], flip: false },
   },
 };

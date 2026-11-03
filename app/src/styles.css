@@ -3354,6 +3354,21 @@ html[data-world] .appbar {
     animation: none;
   }
 }
+/* 固有モーション：流れている間は、ふだんの絵と重ねた飾りを隠す */
+.motion-clip {
+  position: absolute;
+  z-index: 1;
+  height: auto;
+  aspect-ratio: 360 / 640;
+  pointer-events: none;
+}
+.motion-clip.flip {
+  transform: scaleX(-1);
+}
+.perch.in-motion .cape-figure,
+.perch.in-motion .ice-front {
+  visibility: hidden;
+}
 /* 歌姫：舞台照明は画面の奥（問題文の後ろ）を通る（StageLights.tsx）。全画面の幕は SignatureCurtain.tsx */
 .cape-figure.fig-stage {
   right: -6%;
