@@ -2,12 +2,15 @@
 
   CHAR_PY の python で：python pipeline/ritsu_special_finish.py pack <衣装ID>   # 動画・縦長の絵・小さな決めポーズを audio/samples_char/special/<ID>/ へ
   python3 pipeline/ritsu_special_finish.py upload <衣装ID>                       # 一式を R2（special/<ID>/）へ。絵と声と動画は git にも app/public/ にも置かない
+  python3 pipeline/ritsu_special_finish.py download <衣装ID|all> [置き先]          # 新しい環境で R2 から取り戻す（一覧は ritsu_special_files.json。sha256 も確かめる）
+  python3 pipeline/ritsu_special_finish.py files                                 # 手元の一式から一覧を作り直す（upload のあとは自動）
 
 - 全画面の動画：音を外し（声はセリフとして別に流す）、途中から再生できる形にする
 - 小さな決めポーズ：単色の背景の動画から色を抜き、透明つきのアニメーション webp にする（1回だけ流れる）
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import subprocess
 import sys
@@ -18,6 +21,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 VIDEO = ROOT / "audio" / "samples_char" / "video"
 SPECIAL = ROOT / "audio" / "samples_char" / "special"
+FILES = ROOT / "pipeline" / "ritsu_special_files.json"
 BUCKET = "tantan-audio"
 TYPES = {".webp": "image/webp", ".png": "image/png", ".mp4": "video/mp4", ".mp3": "audio/mpeg"}
 
@@ -92,8 +96,48 @@ def upload(cid: str) -> None:
                 print(f"  {n}/{len(jobs)}", flush=True)
     done.update({str(f.relative_to(src)): f.stat().st_mtime for f in files})
     done_path.write_text(json.dumps(done), encoding="utf-8")
+    files_list()
     print("✅ 上げた", flush=True)
 
 
+def files_list(_: str = "") -> None:
+    """R2 の中身の一覧を git に残す（wrangler では R2 の一覧を取れないので、新しい環境で取り戻すのに要る。ファイル名と sha256 だけで、絵は入らない）"""
+    out = {}
+    for d in sorted(p for p in SPECIAL.iterdir() if p.is_dir()):
+        out[d.name] = {f.relative_to(d).as_posix(): hashlib.sha256(f.read_bytes()).hexdigest() for f in sorted(d.rglob("*")) if f.suffix in TYPES}
+    FILES.write_text(json.dumps(out, ensure_ascii=False, indent=0) + "\n", encoding="utf-8")
+    print(f"一覧：{sum(len(v) for v in out.values())} 個", flush=True)
+
+
+def download(cid: str, to: str = "") -> None:
+    """R2 から一式を取り戻す。手元に同じ中身があれば取らない。1個でも合わなければ止める"""
+    listing = json.loads(FILES.read_text(encoding="utf-8"))
+    dest = Path(to) if to else SPECIAL
+    jobs = [(c, name, sha) for c in (sorted(listing) if cid == "all" else [cid]) for name, sha in listing[c].items()]
+
+    def get(job: tuple) -> str:
+        c, name, sha = job
+        f = dest / c / name
+        if f.exists() and hashlib.sha256(f.read_bytes()).hexdigest() == sha:
+            return ""
+        f.parent.mkdir(parents=True, exist_ok=True)
+        for _ in range(4):  # たまに通信で失敗する
+            r = subprocess.run(["npx", "wrangler", "r2", "object", "get", f"tantan-audio/special/{c}/{name}", "--remote", "--file", str(f)], cwd=ROOT / "app", capture_output=True, text=True)
+            if r.returncode == 0 and f.exists() and hashlib.sha256(f.read_bytes()).hexdigest() == sha:
+                return ""
+        return f"{c}/{name}"
+
+    bad = []
+    with ThreadPoolExecutor(6) as ex:
+        for n, miss in enumerate(ex.map(get, jobs), 1):
+            if miss:
+                bad.append(miss)
+            if n % 100 == 0:
+                print(f"  {n}/{len(jobs)}", flush=True)
+    if bad:
+        raise SystemExit(f"❌ {len(bad)} 個を取り戻せなかった：\n" + "\n".join(bad))
+    print(f"✅ {len(jobs)} 個そろった（{dest}）", flush=True)
+
+
 if __name__ == "__main__":
-    {"pack": pack, "upload": upload}[sys.argv[1]](sys.argv[2])
+    {"pack": pack, "upload": upload, "download": download, "files": files_list}[sys.argv[1]](*sys.argv[2:])

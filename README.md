@@ -2,7 +2,9 @@
 
 予備試験・司法試験の**短答式過去問を一問一答で学ぶ**、無料の学習 Web アプリ。将来はアプリ化（Capacitor）と広告収入を想定。自分の学習用も兼ねる。
 
-> 状態：**基盤（M1）が完了した段階**（📖 [docs/features.md](docs/features.md)・[tickets/README.md](tickets/README.md)）。📖 [docs/design.md](docs/design.md)／PDF の棚卸し [docs/inventory.md](docs/inventory.md)
+> 状態：**M2（拡充）を進行中**。公開中（📖 [NOW.md](NOW.md)・[docs/features.md](docs/features.md)・[tickets/README.md](tickets/README.md)）。📖 [docs/design.md](docs/design.md)／PDF の棚卸し [docs/inventory.md](docs/inventory.md)
+>
+> **新しい環境で始めるときは [docs/setup.md](docs/setup.md) から。**
 
 ## パイプラインの実行
 
@@ -36,7 +38,7 @@ GitHub Actions（`.github/workflows/ci.yml`）が push ごとに同じものを�
 
 ## 公開先（T002）
 
-- **https://tantan.reivindicatio0321.workers.dev/**（Cloudflare Workers の静的配信。当面は検索エンジンに載せない）
+- **https://tantan.reivindicatio0321.workers.dev/**（Cloudflare Workers の静的配信。Search Console・Bing に登録済み）
 - main に push すると、Cloudflare が `app/` で `npm ci && npm run build` を流し、`app/dist/` を配信する（設定は `app/wrangler.jsonc`、Node の版は `app/.node-version`）
 - 公開先に向けて E2E を流す：`cd app && BASE_URL=https://tantan.reivindicatio0321.workers.dev npm run e2e`
 
@@ -66,8 +68,7 @@ cd app && npm install && npm run dev      # http://localhost:5173/
 - 正答は公式データで担保する。**AI の役割は「OCR・抽出ミスの補正」と「解説生成」に限る**
 - 誤りはユーザーからの報告で直す（報告タブ）
 - Web（React 等）で作り、後から Capacitor で iOS／Android にできる構成にする
-- 生成は一気にやらず、学習の進捗に合わせて科目ごとに少しずつ流す
-- 最初のスコープ：**予備試験・刑法・直近1年度（R08-2026）**を、PDF → 構造化データ → 問題カード表示まで一気通貫で通す
+- 解説の生成は全科目が対象（📖 [docs/decisions/](docs/decisions/) の 021）
 
 ## 出典
 

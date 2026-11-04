@@ -96,11 +96,14 @@ def main() -> None:
     ap.add_argument("--limit", type=int, default=0, help="作る本数の上限（試しに少しだけ作るとき）")
     ap.add_argument("--workers", type=int, default=WORKERS)
     ap.add_argument("--voice", choices=VOICES, default=VOICE)
+    ap.add_argument("--from-scratch", action="store_true", help="manifest.json がないときに、全部作ることを認める（有料）")
     a = ap.parse_args()
 
     voice, out, prompt = a.voice, out_dir(a.voice), prompt_of(a.voice)
     out.mkdir(parents=True, exist_ok=True)
     mpath = out / "manifest.json"
+    if not mpath.exists() and not a.dry_run and not a.from_scratch:
+        raise SystemExit(f"{mpath} がない。このまま流すと全部を作り直す（有料）ので止めた。docs/setup.md の「費用がかかるコマンド」を読む。本当に全部作るなら --from-scratch")
     manifest: dict[str, str] = json.loads(mpath.read_text(encoding="utf-8")) if mpath.exists() else {}
     jobs = []
     for c in listen_cards():

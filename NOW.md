@@ -6,7 +6,7 @@
 
 ## 再開メモ（2026-11-04。T069 の続き。ここから読む）
 
-**方針（ユーザー）**：課金衣装は1着ずつ確認しながら作る。衣装ごとに全く別の固有要素を持たせる。絵・声・動画は git にも `app/public/` にも入れず R2 だけ（リポジトリは public）。📖 `docs/ritsu-special-ideas.md`・`docs/ritsu-special-costumes.md`
+**方針（ユーザー）**：課金衣装は1着ずつ確認しながら作る。衣装ごとに全く別の固有要素を持たせる。絵・声・動画は git にも `app/public/` にも入れず R2 だけ（リポジトリは public）。📖 `docs/ritsu-special-costumes.md`
 
 **5着（星詠み・司書・雪花・袴・歌姫）は全部組み込み済みで配信中（`4bbc5a5` まで。CI 成功）。**今は管理者だけが着られる。
 
@@ -21,7 +21,7 @@
 - 歌姫：「光のリボン」のセリフ4本の書き換えと声の作り直し（新しい衣装に合っていない）
 - 確認待ちの小件：雪花に顔のカットインを足すか、自動モーションが案内の吹き出しを消す件、司書の本が「はじめる」の文字に少しかかる件
 - 動画まわりの古いコードの整理（全着がカットインになった）。星詠みの古い `base-smile-dawn`・`tall`・動画は未使用
-- `docs/features.md` の T069 の行とチケット `tickets/T069-special-costumes.md` が古い（固有モーション・動く背景が書かれていない）
+- **`audio/` のバックアップがない**：課金衣装の原本は今の Mac にしかなく、失うとモーションを作り足せなくなる（`docs/setup.md` の「失うと困るもの」）。置き場所はユーザーの判断待ち
 - 販売まわりは未着手：試着、決済、AI 絵の表示
 - あとで：赤黒のロック衣装（レザー・ロングブーツ・ストリート）、マーチングバンド
 
@@ -31,7 +31,7 @@
 - push はテストの結果を終了コードで確かめてから。`gh` はないので、CI は GitHub の API を curl で見る
 - 確認ページ（private）：モーション https://claude.ai/artifact/R6WAeGh7qAbh6eifwmnDV9 、背景 https://claude.ai/artifact/UwXLyhWk6KyxQMyeDQZnix
 
-scratchpad は消えることがある。作業の絵は `audio/samples_char/themes/<ID>/` と `g8/` にある（git の外）。
+環境を変えるときは `docs/setup.md`。作業の元データ（`audio/`）は git の外で、今の Mac にしかない。
 
 ## 現在地
 

@@ -2,7 +2,7 @@
 
 予備試験・司法試験の**短答式過去問を一問一答で学ぶ Web アプリ**の開発リポジトリ。自分専用で使い始めるが、**いつでも公開できる状態を保つ**。
 
-📖 設計 → `docs/design.md`　📖 今どこか・次に何をするか → `NOW.md`　📖 作るもの（チケット） → `tickets/README.md`　📖 できていること・いないこと → `docs/features.md`　📖 決めた経緯 → `docs/decisions/`
+📖 設計 → `docs/design.md`　📖 今どこか・次に何をするか → `NOW.md`　📖 作るもの（チケット） → `tickets/README.md`　📖 できていること・いないこと → `docs/features.md`　📖 決めた経緯 → `docs/decisions/`　📖 **新しい環境で始める・どこに何があるか → `docs/setup.md`**　📖 これまでに決まった進め方と好み → `docs/working-agreements.md`
 
 ## ユーザー像
 
@@ -32,6 +32,7 @@
 - 秘密情報（API キー・トークン）を commit しない
 - 法務省の PDF は `data/raw/` に置き、**git で管理する**（法務省が古い PDF を消しても手元に原本が残るように）。取得元 URL・取得日・sha256 は `sources/manifest.json`。**`data/raw/` の PDF は編集しない**（📖 `docs/decisions/002`）
 - 検証（`pipeline/validate`）が ✅ のデータだけを `app/` に書き出す
+- **課金衣装の絵・声・動画は git にも `app/public/` にも入れない**（R2 だけ。リポジトリは public）。管理者のメールアドレスをコードに書かない（Cloudflare の secret `ADMIN_EMAILS`）
 
 ## 条文の確認（e-Gov 法令 API）
 
@@ -47,6 +48,7 @@ python3 pipeline/egov.py --fetch 民法       # 取り直す（本文が変わ�
 
 ## 進め方
 
+- **返答は日本語で書く**
 - **セッション開始時は `NOW.md` を読み、次の一手を Claude から提案する**
 - **セッション開始時に、誤り報告（D1 の `reports`）がたまっていないか確かめる**（通知がないため。手順は `docs/reports.md`。`wrangler login` が要るときはユーザーに頼む）
 - **機能の追加・変更はチケット（`tickets/`）で進める。**状態（起票→議論中→設計中→設計レビュー→実装中→実装レビュー→完了）とレビューの要否は `tickets/README.md`。状態を変えたらボードを更新する。機能ができたら `docs/features.md` を更新する

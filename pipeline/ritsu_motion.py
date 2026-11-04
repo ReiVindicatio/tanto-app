@@ -153,6 +153,9 @@ def make(cid: str) -> None:
     for m in json.loads(MOTIONS.read_text(encoding="utf-8"))[cid]:
         src = g / f"{m['name']}.mp4"
         if not src.exists():
+            # 動画は作るたびに違う。元の動画がない環境でも、配信中の動きを別の出来で上書きしない（作り直すなら motion-<名前>.mp4 を消す）
+            if (SPECIAL / cid / f"motion-{m['name']}.mp4").exists():
+                continue
             rv.generate(STYLE + m["text"], first, src, m.get("seconds", 6), "9:16", last=first)
         encode(frames_of(src, m.get("old_fig")), SPECIAL / cid / f"motion-{m['name']}.mp4")
 
