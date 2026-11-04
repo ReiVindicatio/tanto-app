@@ -9,8 +9,14 @@ test("下のタブで3つの画面を行き来でき、戻る操作で前の画�
   await expect(page.getByRole("heading", { name: "科目" })).toBeVisible();
   await tab(page, "マイページ").click();
   await expect(page).toHaveURL(/\/me$/);
+  // ログインしていなければ、マイページを開いてすぐの一番上に出る（T071）。設定に切り替えても見えていて、ボタンは1つだけ
+  const login = page.getByRole("button", { name: "Google でログイン" });
+  await expect(login).toBeInViewport();
+  const linkBox = await page.locator(".ritsu-link").boundingBox();
+  expect((await login.boundingBox())!.y).toBeLessThan(linkBox!.y);
   await page.getByRole("tab", { name: "設定" }).click(); // マイページは「記録」「設定」に分けた（T065）
-  await expect(page.getByRole("button", { name: "Google でログイン" })).toBeVisible();
+  await expect(login).toHaveCount(1);
+  await expect(page.locator(".card", { hasText: "ログインしていません" })).toBeVisible();
   await page.goBack();
   await expect(page).toHaveURL(/\/subjects$/);
   await page.goBack();
@@ -64,5 +70,5 @@ test("解いている間はタブがなく、答えた肢はマイページの�
   await expect(page.locator("nav.tabbar")).toHaveCount(0); // 解いている間はタブがない
   await page.getByRole("button", { name: "← 戻る" }).click();
   await tab(page, "マイページ").click();
-  await expect(page.locator(".card").first()).toContainText("累計 2 肢");
+  await expect(page.locator(".card:has(.today-stats)")).toContainText("累計 2 肢");
 });

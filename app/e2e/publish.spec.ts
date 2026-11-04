@@ -39,7 +39,7 @@ test("ログインしていなければ「この端末の記録を消す」で�
   page.once("dialog", (d) => d.dismiss()); // 2回目の確認でやめると、消さない
   await page.locator(".delete-confirm").getByRole("button", { name: "消す" }).click();
   await page.getByRole("tab", { name: "記録" }).click();
-  await expect(page.locator(".card").first()).toContainText("累計 2 肢");
+  await expect(page.locator(".card:has(.today-stats)")).toContainText("累計 2 肢");
   await page.getByRole("tab", { name: "設定" }).click();
   await page.getByRole("button", { name: "この端末の記録を消す" }).click();
 
@@ -47,7 +47,7 @@ test("ログインしていなければ「この端末の記録を消す」で�
   await page.locator(".delete-confirm").getByRole("button", { name: "消す" }).click();
   await expect(page.locator(".delete-data")).toContainText("記録を全部消しました");
   await page.getByRole("tab", { name: "記録" }).click();
-  await expect(page.locator(".card").first()).toContainText("累計 0 肢");
+  await expect(page.locator(".card:has(.today-stats)")).toContainText("累計 0 肢");
 });
 
 test("誤り報告：答え合わせのあとに出る。ログインしていなければログインを促す", async ({ page }) => {

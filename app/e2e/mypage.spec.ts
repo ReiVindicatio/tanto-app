@@ -8,7 +8,7 @@ test("マイページ：学習の軌跡・科目ごと・まちがえた肢を�
   );
   await openHome(page);
   await tab(page, "マイページ").click();
-  await expect(page.locator(".card").first()).toContainText("連続 0 日");
+  await expect(page.locator(".card:has(.today-stats)")).toContainText("連続 0 日");
   await expect(page.locator(".subject-stat").filter({ hasText: "民法" })).toContainText("回答済み 0 / ");
   await expect(page.getByText("正答率")).toHaveCount(0); // T034：マイページに正答率は出さない
   await expect(page.locator(".heatmap rect").first()).toBeVisible();
@@ -22,8 +22,8 @@ test("マイページ：学習の軌跡・科目ごと・まちがえた肢を�
   }
   await page.getByRole("button", { name: "← 戻る" }).click();
   await tab(page, "マイページ").click();
-  await expect(page.locator(".card").first()).toContainText("連続 1 日");
-  await expect(page.locator(".card").first()).toContainText("累計 3 肢");
+  await expect(page.locator(".card:has(.today-stats)")).toContainText("連続 1 日");
+  await expect(page.locator(".card:has(.today-stats)")).toContainText("累計 3 肢");
   await expect(page.locator(".heatmap rect.heat-1")).toHaveCount(1); // 今日のマス
   await expect(page.locator(".climb")).toBeVisible();
   await expect(page.locator(".subject-stat").filter({ hasText: "民法" })).toContainText("回答済み 3 / ");

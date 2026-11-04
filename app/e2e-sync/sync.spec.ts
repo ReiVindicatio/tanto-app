@@ -94,14 +94,15 @@ test("ログイン前に解いた記録は、ログインするとアカウン�
   await answer(page, 2);
   await expect(allYears(page)).toContainText("回答済み 2枚");
   await myPage(page).click();
-  await page.getByRole("tab", { name: "設定" }).click(); // マイページは「記録」「設定」に分けた（T065）
   page.once("dialog", (d) => d.accept("carol")); // テスト用ログインの利用者 ID
   await page.getByRole("button", { name: "Google でログイン" }).click();
   await expect(page.locator(".sync-status")).toContainText("同期済み");
+  await expect(page.getByRole("button", { name: "Google でログイン" })).toHaveCount(0); // ログインしたら一番上の欄は消える
 
   const second = await openAs(browser, "carol");
   await expect(allYears(second)).toContainText("回答済み 2枚");
 
+  await page.getByRole("tab", { name: "設定" }).click();
   await page.getByRole("button", { name: "ログアウト" }).click();
   await expect(page.getByRole("button", { name: "Google でログイン" })).toBeVisible();
   await page.goBack();

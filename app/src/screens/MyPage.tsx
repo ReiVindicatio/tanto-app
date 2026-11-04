@@ -311,7 +311,9 @@ export default function MyPage({
       {/* 律（T065）：タブの縁に座っているだけ。押すとひとこと */}
       {showChar && <TabRitsu />}
       <h1>マイページ</h1>
-      {/* 律のページへの入口（上の帯の Lv からも開ける。それだけだと気づきにくい：ユーザー） */}
+      {/* ログインしていなければ一番上に（設定の奥だと気づかない：ユーザー。T071） */}
+      {auth && sync && <AuthPanel auth={auth} sync={sync} top />}
+      {/* 律のページへの入口 */}
       {showChar && (
         <button className="ritsu-link" onClick={() => navigate({ name: "ritsu" })}>
           <img src={characterImage("chibi", "smile")} alt="" />

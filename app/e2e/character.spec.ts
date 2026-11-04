@@ -55,6 +55,7 @@ test("答え合わせ：正解で喜び・不正解で残念、2問続けて不�
 test("律のページ（T065）：上の帯の Lv から開き、律を押すとひとこと。セリフ帳から選んでも言う。出さない設定なら Lv はマイページへ", async ({ page }) => {
   await openHome(page);
   await page.locator(".streak-chip").click();
+  await page.locator(".ritsu-link").click();
   await expect(page).toHaveURL(/\/ritsu$/);
   const bubble = page.locator(".ritsu-stage .ritsu-bubble");
   await page.getByRole("button", { name: "律に話しかける" }).click();
@@ -109,6 +110,7 @@ test("お披露目（T065）：Lv.5 で衣装が開くと、ホームに案内�
 test("背景は衣装で決まり、選ぶタブはない", async ({ page }) => {
   await openHome(page);
   await page.locator(".streak-chip").click();
+  await page.locator(".ritsu-link").click();
   await expect(page.locator(".ritsu-stage")).toHaveAttribute("style", /chars\/bg\/room\.webp/);
   await expect(page.getByRole("tab", { name: "背景" })).toHaveCount(0);
 });
@@ -136,6 +138,7 @@ test("○×を押すと、答え合わせが見える位置まで送る。もう
 test("衣装の開き方（T068）：未開放はレベルや模試の条件を出す。模試を提出すると節目の衣装が開く。管理者は全部開く", async ({ page }) => {
   await openHome(page);
   await page.locator(".streak-chip").click();
+  await page.locator(".ritsu-link").click();
   const tile = (name: string) => page.locator(".theme-tile").filter({ hasText: name });
   await expect(tile("Lv.5 で開く")).toHaveCount(1);
   await expect(tile("模試を1回提出で開く")).toHaveCount(1);

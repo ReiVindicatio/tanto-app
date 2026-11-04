@@ -32,8 +32,8 @@ export function SyncBadge({ sync }: { sync: SyncedStore }) {
   );
 }
 
-/** マイページのアカウント欄：ログイン・ログアウトと同期の状態（T003・T025） */
-export default function AuthPanel({ auth, sync }: { auth: AuthClient; sync: SyncedStore }) {
+/** ログイン・ログアウトと同期の状態（T003・T025）。ログインしていないときはマイページの一番上（top）に出し、ログイン中は設定のアカウント欄に出す（T071） */
+export default function AuthPanel({ auth, sync, top = false }: { auth: AuthClient; sync: SyncedStore; top?: boolean }) {
   const status = useSyncStatus(sync);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -60,9 +60,11 @@ export default function AuthPanel({ auth, sync }: { auth: AuthClient; sync: Sync
     }
   }
 
+  if (top && status.user) return null;
   if (!status.user) {
+    if (!top) return <p className="small muted">ログインしていません。ログインは、このページの一番上からできます。</p>;
     return (
-      <div className="authbar">
+      <div className="card authbar">
         <p className="small muted">ログインすると、スマホと PC で学習の記録を共有できます。ログインしなくても、この端末で使えます。</p>
         <button disabled={busy} onClick={signIn}>
           Google でログイン

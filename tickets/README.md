@@ -130,3 +130,4 @@
 | [T068](T068-costume-unlock-admin.md) | 衣装の開き方・問で解くと模試の経験値・管理者 | 実装レビュー | M2 | 中 | T065 |
 | [T069](T069-special-costumes.md) | 律の特別な衣装 | 実装レビュー | M2 | 中 | T065・T068 |
 | [T070](T070-special-costume-trial.md) | 課金衣装のお試しと、買う前の見せ方 | 完了 | M2 | 中 | T069 |
+| [T071](T071-login-and-level-chip.md) | ログインの場所と、上の帯の Lv の行き先 | 完了 | M2 | 中 | T025・T065 |
