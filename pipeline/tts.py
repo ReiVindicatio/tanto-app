@@ -105,11 +105,14 @@ def main() -> None:
     if not mpath.exists() and not a.dry_run and not a.from_scratch:
         raise SystemExit(f"{mpath} がない。このまま流すと全部を作り直す（有料）ので止めた。docs/setup.md の「費用がかかるコマンド」を読む。本当に全部作るなら --from-scratch")
     manifest: dict[str, str] = json.loads(mpath.read_text(encoding="utf-8")) if mpath.exists() else {}
+    upath = out / "uploaded.json"  # 別の端末では mp3 が手元になくても、同じ文のものが R2 にあれば作らない
+    uploaded: dict[str, str] = json.loads(upath.read_text(encoding="utf-8")) if upath.exists() else {}
     jobs = []
     for c in listen_cards():
         for part in ("q", "a"):
             name = f"{c['id']}.{part}.mp3"
-            if manifest.get(name) == sha(prompt + c[part]) and (out / name).exists():
+            h = sha(prompt + c[part])
+            if manifest.get(name) == h and ((out / name).exists() or uploaded.get(name) == h):
                 continue
             jobs.append((name, c[part]))
     # 新しい年度から作る（アプリは、まだ答えていない肢を新しい年度から出すので、途中でも使われる肢から音声がそろう）

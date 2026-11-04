@@ -10,6 +10,20 @@
 4. `docs/working-agreements.md`：コードから分からない、これまでに決まった進め方と好み
 5. 必要なときに：`docs/features.md`（できていること）、`tickets/README.md`（チケット）、`docs/design.md`（設計）、`docs/decisions/`（決めた経緯）、`docs/ritsu-special-costumes.md`（課金衣装の作り方）
 
+## 別の端末へ移る（最短）
+
+作業の元データは R2 に控えてある（`pipeline/backup.py`）。
+
+1. 下の「手順」の 1・2 で道具と clone を済ませる
+2. `cd app && npx wrangler login`（Cloudflare のアカウントで承認）
+3. `python3 pipeline/backup.py restore`：`audio/` の元データを取り戻し（約 3.3GB）、Claude Code のメモリも置く
+4. 鍵を置く：`.secrets/` に `google-vertex-key` と `google-tts-key`（「鍵と秘密」）。**鍵は控えに入っていない。**生成をしない開発なら要らない
+5. 「手順」の 3 で動くか確かめる
+
+メモリは作業パスごとのフォルダに置かれる。Claude Code を別のパスで開いたら、`audio/home-backup/memory/` を `~/.claude/projects/<作業パスの英数字以外を - にした名前>/memory/` へコピーする。`audio/home-backup/` には Claude Code の設定と、これまでの作業用スクリプトもある。
+
+`audio/` を増やしたら（絵を作ったら）、古い端末がなくなる前に `python3 pipeline/backup.py make` を流して `pipeline/backup_manifest.json` を commit する。
+
 ## どこに何があるか
 
 | もの | 置き場所 | 新しい環境で |
@@ -20,9 +34,9 @@
 | **課金衣装の絵・声・動画** | R2 `tantan-audio` の `special/<ID>/`（1,133 個）。**リポジトリは public なので git に入れない** | `download` で取り戻す（下） |
 | 聞き流しの音声 | R2 `tantan-audio` の `tts/<声>/`（約 34,000 本） | 開発には要らない。アプリは本番の R2 を使う |
 | 回答ログ・誤り報告 | Cloudflare D1 `tantan` | 手元の開発は `e2e:sync` が手元の D1 を作る |
-| 秘密の鍵 | `.secrets/`（git の外）と Cloudflare の secret | 作り直す（下） |
-| **作業の元データ**（`audio/`。6.3GB：生成した絵の原本・候補・元の動画・音声の原本と manifest） | **今の Mac にしかない** | 持ってくる（「失うと困るもの」） |
-| Claude Code のメモリ | `~/.claude/projects/<作業パスの / を - にした名前>/memory/` | 持ってくる（下） |
+| 秘密の鍵 | `.secrets/`（git の外。**控えなし**）と Cloudflare の secret | 自分で移すか作り直す（下） |
+| **作業の元データ**（`audio/samples_char` 3.3GB：生成した絵の原本・候補・元の動画。音声の manifest） | R2 の `backup/<日付>/`（非公開。Worker から読めない）。一覧は `pipeline/backup_manifest.json` | `backup.py restore` |
+| Claude Code のメモリ | `~/.claude/projects/<作業パスの英数字以外を - にした名前>/memory/`。控えは R2 の `backup/<日付>/home.tar` | `backup.py restore` |
 
 ## 手順
 
@@ -87,8 +101,8 @@ node scripts/special-preview.cjs hoshiyomi                     # 窓が開く。
 
 ### 6. Claude Code
 
-- **メモリを持ってくる**：今の Mac の `~/.claude/projects/-Users-...-tanto-app/memory/` を、新しい環境の同じ場所へコピーする。フォルダ名は作業パスで変わる。ユーザー個人のことはリポジトリに書かない決まりなので（public にするときに CLAUDE.md から外した）、メモリにしかない。持ってこられないときは、ユーザーに聞き直す
-- **権限の設定**：`.claude/settings.local.json` は git に入らない。必要なら作り直す
+- **メモリ**：`backup.py restore` が置く。ユーザー個人のことはリポジトリに書かない決まりなので（public にするときに CLAUDE.md から外した）、メモリにしかない。控えより新しいことはユーザーに聞き直す
+- **権限の設定**：`.claude/settings.local.json` は git に入らない。控えが `audio/home-backup/settings.local.json` にある（パスが違えば直す）
 - **解説の連続生成**：`prompts/explain-runbook.md`。状態のファイル（`.claude/current_batch.json` など）は git の外で、なくても動く
 
 ## 鍵と秘密
@@ -126,29 +140,26 @@ node scripts/special-preview.cjs hoshiyomi                     # 窓が開く。
 
 | コマンド | 元データがないと | 守り |
 |---|---|---|
-| `pipeline/tts.py` | 約 34,000 本を作り直す（声1は約85ドルの見込み） | manifest がなければ止まる。`--from-scratch` でだけ進む |
+| `pipeline/tts.py` | manifest がなければ約 34,000 本を作り直す（声1は約85ドルの見込み）。`backup.py restore` のあとなら、文が変わった分だけ作る | manifest がなければ止まる。`--from-scratch` でだけ進む |
 | `pipeline/ritsu_motion.py <ID>` | 原本（`themes/<ID>/proto/sit-wind-*.png`）がないと止まる。原本があれば、`ritsu_motions.json` にあって配信していない動きだけ作る | 配信中の `motion-*.mp4` があれば、別の出来で上書きしない |
 | `pipeline/ritsu_theme.py build <ID>` | その衣装の絵約60枚を別の絵で作り直す | **守りなし。元データなしでは流さない** |
 
 どれも流す前に、ユーザーに見込みの費用を伝える。
 
-## 失うと困るもの
+## 控えの範囲
 
-**今の Mac が壊れると、次のものは戻らない。**git にも R2 にもない。
-
-アプリそのものは止まらない（配信に要るものは R2 と git にある）。止まるのは**課金衣装を作り足す作業**。
-
-| もの | 大きさ | なくなると |
+| もの | 控え | なくなると |
 |---|---|---|
-| `audio/samples_char/themes/<ID>/proto/`（課金衣装の原本） | 387MB | **新しいモーションも、表情を足すことも、作れなくなる。**`ritsu_motion.py`・`ritsu_wind.py` はこの PNG から作るので、R2 の配信用の webp では代わりにならない。一番大事 |
-| `audio/samples_char/themes/`・`g8/` のほかの絵 | 全部で約3.3GB | 絵の原本と選ばなかった候補が消える。切り抜きからやり直せなくなる |
-| `audio/samples_char/video/` | 236MB | 元の動画が消える。切り直せなくなるが、配信用の動画は R2 にある |
-| `audio/tts/*/manifest.json`・`uploaded.json` | 数MB | どの文で音声を作ったかが分からなくなり、解説を直しても差分だけ作れない。音声そのものは R2 にある |
-| `audio/tts/` の mp3 | 3GB | R2 にあるので、なくても配信は止まらない |
+| `audio/samples_char/themes/<ID>/proto/`（課金衣装の原本、387MB） | R2 `backup/` | **新しいモーションも、表情を足すことも、作れなくなる。**`ritsu_motion.py`・`ritsu_wind.py` はこの PNG から作るので、配信用の webp では代わりにならない。一番大事 |
+| `audio/samples_char` のほかの絵と元の動画（全部で 3.3GB） | R2 `backup/` | 絵の原本と選ばなかった候補が消える |
+| `audio/tts/*/manifest.json`・`uploaded.json` | R2 `backup/` | どの文で音声を作ったかが分からなくなり、解説を直したときに差分だけ作れない |
+| `audio/tts/` の mp3（3GB） | R2 `tts/` が本体。控えには入れない。手元になくても `tts.py` は作り直さない | 配信は止まらない |
+| `.secrets/` の鍵 | **なし**（平文で置かない） | Google Cloud で作り直せる。パスワード管理のツールなどに自分で移してもよい |
+| Cloudflare の `ADMIN_EMAILS`・`SPECIAL_KEY` | Cloudflare にある | 端末が変わっても消えない |
 
-**消えても大丈夫なもの**：`.cache/courts/`（裁判所のページの控え。取り直せる）、`screenshots/`、`app/dist/`、Claude Code の scratchpad。
+**消えても大丈夫なもの**：`.cache/courts/`（裁判所のページの控え。要るときに取り直す）、`screenshots/`、`app/dist/`、Claude Code の scratchpad。
 
-**新しい端末へ移るときは、`audio/` と `.secrets/` とメモリをコピーする。**
+R2 の無料枠は 10GB（控えを入れて約 6.5GB）。`backup.py make` を流すたびに日付ごとに増えるので、古い `backup/<日付>/` は確かめてから消す。
 
 ## はまりどころ
 
