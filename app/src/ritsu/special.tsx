@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { charDir } from "../character";
 import { Bubble } from "../Ritsu";
-import { currentTheme, isSpecial, setTheme, themeById } from "./themes";
+import { currentTheme, isSpecial, themeById } from "./themes";
 import { fxOn, type IdeaId } from "./fx";
 import { kitOf, type Reaction, type Seat } from "./kits";
 import { lineText, pickLine, playLine, type Line } from "./lines";
@@ -15,6 +15,7 @@ import { CurtainLayer } from "./SignatureCurtain";
 import { StageLightsHost, stageCheer } from "./StageLights";
 import { ScreenBirdHost } from "./ScreenBird";
 import { BackdropHost } from "./Backdrop";
+import { trialAnswered } from "./trial";
 
 export type MoveName = "entrance" | "finish";
 type Playing = { theme: string; name: MoveName; line?: Line; onEnd?: () => void };
@@ -99,7 +100,7 @@ export function SpecialMoveLayer() {
     };
   }, []);
 
-  useAmbient(() => tick((n) => n + 1));
+  useAmbient();
 
   const end = () => {
     const done = playing?.onEnd;
@@ -129,16 +130,6 @@ export function SpecialMoveLayer() {
     }, 1500);
     return () => clearTimeout(timer);
   }, [scale]);
-  useEffect(() => {
-    if (!farewell) return;
-    const timer = setTimeout(() => {
-      farewell = null;
-      changed();
-    }, 5000);
-    return () => clearTimeout(timer);
-  }, [farewell]);
-
-  const left = tryOnLeft();
   return (
     <>
       {signature &&
@@ -163,8 +154,6 @@ export function SpecialMoveLayer() {
       <StageLightsHost />
       <BackdropHost />
       {scale && <ReactionFx key={scale.at} kind={scale.kind} correct={scale.correct} />}
-      {left > 0 && <div className="tryon-badge">試着中　あと {Math.ceil(left / 60000)} 分</div>}
-      {farewell && <div className="tryon-badge">{farewell}</div>}
       {small && <img key={small.at} className="special-small" src={`${charDir(small.theme)}small.webp`} alt="" aria-hidden="true" />}
       {playing && (
         <button className="special-move" aria-label="演出を飛ばす" onClick={end}>
@@ -211,6 +200,7 @@ function wearingFx(id: IdeaId): boolean {
 
 /** 答えた瞬間の演出（#7 流れ星・#8 天秤・#9 覚醒・#16 チャイム）。chimeOn：聞き流しは正解の音がもうあるので鳴らさない */
 export function answerFx(correct: boolean, streak: number, cardEl: HTMLElement | null, chimeOn = true): void {
+  trialAnswered();
   if (!isSpecial(currentTheme(Infinity))) return;
   if (wearingFx("combo")) setCombo(streak);
   stageCheer(streak);
@@ -338,49 +328,8 @@ export function StarPal({ theme }: { theme: string }) {
   );
 }
 
-// 試着（#22）：今は管理者が流れを確かめるだけ（買っていない人の通行証はサーバーがまだ出さない）
-const TRYON_KEY = "tanto.special.tryon.v1";
-const TRYON_MS = 10 * 60 * 1000;
-type TryOn = { theme: string; prev: string; until: number };
-
-function tryOn(): TryOn | null {
-  try {
-    return JSON.parse(localStorage.getItem(TRYON_KEY) ?? "null") as TryOn | null;
-  } catch {
-    return null;
-  }
-}
-
-export function tryOnLeft(): number {
-  const t = tryOn();
-  return t ? Math.max(0, t.until - Date.now()) : 0;
-}
-
-export function startTryOn(theme: string): void {
-  try {
-    localStorage.setItem(TRYON_KEY, JSON.stringify({ theme, prev: currentTheme(Infinity), until: Date.now() + TRYON_MS }));
-  } catch {
-    return;
-  }
-  setTheme(theme);
-  changed();
-}
-
-function endTryOn(): void {
-  const t = tryOn();
-  if (!t) return;
-  localStorage.removeItem(TRYON_KEY);
-  setTheme(t.prev === t.theme ? "default" : t.prev);
-  const l = pickLine(`tryon_${t.theme}`, Infinity);
-  if (l) {
-    farewell = l.text;
-    playLine(l);
-  }
-  changed();
-}
-
-/** App の一番外の常駐の処理：1日1回の登場（#19）・横切る律（#6）・試着の残り時間（#22） */
-function useAmbient(tick: () => void): void {
+/** App の一番外の常駐の処理：1日1回の登場（#19） */
+function useAmbient(): void {
   useEffect(() => {
     const theme = currentTheme(Infinity);
     // 全画面の技がある衣装は、1日1回の自動の登場を出さない（自動で出すのは全問正解などのときだけ）
@@ -395,19 +344,11 @@ function useAmbient(tick: () => void): void {
         // 覚えられなければ流さない
       }
     }
-    const clock = window.setInterval(() => {
-      if (tryOn() && tryOnLeft() <= 0) endTryOn();
-      else if (tryOn()) tick();
-    }, 15000);
-    return () => {
-      window.clearInterval(clock);
-    };
   }, []);
 }
 
 const DAILY_KEY = "tanto.special.daily.v1";
 let scale: { kind: Reaction; correct: boolean; at: number } | null = null;
-let farewell: string | null = null;
 
 /** 答えたときの反応（#8）：衣装ごとに違う。正解で明るく、不正解は責めない形で小さく */
 function ReactionFx({ kind, correct }: { kind: Reaction; correct: boolean }) {

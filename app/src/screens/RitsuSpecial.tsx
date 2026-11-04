@@ -1,9 +1,9 @@
 // 特別な衣装の律のページのタブ（docs/ritsu-special-ideas.md）：衣装ごとに育つもの（夜空・桜の木・客席・本棚・氷の城）・物語・案の切り替え・飾り棚・成果カード
+import { playMove } from "../ritsu/special";
 import { useMemo, useState } from "react";
 import { charDir } from "../character";
 import { currentState, localDate, subjectOf } from "../learning";
 import { Bubble } from "../Ritsu";
-import { playMove, startTryOn, tryOnLeft } from "../ritsu/special";
 import { fxOn, IDEAS, setAllFx, setFx, useFx, type IdeaId } from "../ritsu/fx";
 import { linesOf, playLine, type Line } from "../ritsu/lines";
 import { evoOverride, evoStage, setEvoOverride, solvedCount } from "../ritsu/themes";
@@ -378,29 +378,6 @@ export function IdeasTab({ theme }: { theme: string }) {
           </button>
         ))}
       </p>
-      {fxOn("tryon") && (
-        <p className="small">
-          <button className="secondary" onClick={() => startTryOn(theme)}>試着を確かめる（{tryOnLeft() ? "試着中" : "10分"}）</button>
-        </p>
-      )}
-    </div>
-  );
-}
-
-/** 飾り棚：買う前の見え方（いまは管理者にだけ見せる。絵を一般に渡すには、見本だけ公開するかを決める） */
-export function Showcase({ theme, name, desc }: { theme: string; name: string; desc?: string }) {
-  return (
-    <div className="showcase">
-      <img src={`${charDir(theme)}tall.webp`} alt="" loading="lazy" />
-      <div>
-        <div className="showcase-kicker">特別な衣装（管理者だけの見本）</div>
-        <strong>{name}</strong>
-        {desc && <p className="small muted">{desc}</p>}
-        <div className="row">
-          <button className="secondary" onClick={() => playMove(theme, "entrance")}>登場を見る</button>
-          {fxOn("tryon") && <button onClick={() => startTryOn(theme)}>10分だけ試着</button>}
-        </div>
-      </div>
     </div>
   );
 }

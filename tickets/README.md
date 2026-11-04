@@ -129,3 +129,4 @@
 | [T067](T067-listen-pause-resume.md) | 聞き流しの一時停止：再開で読み直さない | 実装レビュー | M2 | 中 | T057 |
 | [T068](T068-costume-unlock-admin.md) | 衣装の開き方・問で解くと模試の経験値・管理者 | 実装レビュー | M2 | 中 | T065 |
 | [T069](T069-special-costumes.md) | 律の特別な衣装 | 実装レビュー | M2 | 中 | T065・T068 |
+| [T070](T070-special-costume-trial.md) | 課金衣装のお試しと、買う前の見せ方 | 実装レビュー | M2 | 中 | T069 |

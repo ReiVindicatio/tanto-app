@@ -1,3 +1,4 @@
+import { trialAnswered } from "./ritsu/trial";
 import { useEffect, useMemo, useRef, useState } from "react";
 import ReportLink from "./ReportLink";
 import type { DataSet, Question, QuestionExplanation, SetInfo } from "./types";
@@ -63,6 +64,7 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
     const g = grade(q, picks);
     setResult(g);
     addQuestionResult(q.id, g.full); // 経験値（T068）
+    trialAnswered(); // お試しの残り（T070）
     setScores((sc) => [...sc, { question: q, earned: g.earned }]);
   }
 

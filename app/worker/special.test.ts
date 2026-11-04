@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { passCookie, serveSpecial, validPass } from "./special";
+import { passCookie, serveSpecial, trialCookie, validPass, validTrial } from "./special";
 import { handleApi } from "./api";
 import { testVerifier } from "./auth";
 import { MemoryAnswerRepository } from "./repository";
@@ -98,5 +98,104 @@ describe("特別な衣装の配信（T069）", () => {
     const other = await handleApi(me(), deps("someone@example.com"));
     expect(await other.json()).toEqual({ admin: false });
     expect(other.headers.get("set-cookie")).toContain("Max-Age=0");
+  });
+});
+
+describe("特別な衣装のお試しと、買う前に見せる絵（T070）", () => {
+  const LATER = new Date(NOW.getTime() + 48 * 3600 * 1000);
+  const trial = async (costume = "hoshiyomi", expires = LATER, key = "k") => (await trialCookie("alice", costume, expires, key, NOW)).split(";")[0];
+  const pub = {
+    async get(key: string) {
+      asked.push(key);
+      return { size: 8, httpEtag: '"e"', body: new Blob([bytes]).stream() };
+    },
+  } as unknown as R2Bucket;
+
+  it("全身の絵だけは通行証なしで渡す。ほかの絵・声・動画は渡さない", async () => {
+    expect((await serveSpecial(req("/special/diva/base-smile.webp"), pub, "k", NOW)).status).toBe(200);
+    asked.length = 0;
+    for (const f of ["base-smug.webp", "base-smile-evo2.webp", "base-smile-talk.webp", "reveal.webp", "motion-a.mp4", "voices/a.mp3"]) {
+      expect((await serveSpecial(req(`/special/diva/${f}`), pub, "k", NOW)).status).toBe(403);
+    }
+    expect((await serveSpecial(req("/special/diva/base-smile.webp"), pub, undefined, NOW)).status).toBe(403); // 鍵の設定がなければ、だれにも渡さない
+    expect(asked).toEqual([]);
+  });
+
+  it("お試しの通行証は、その1着のファイルだけ開く", async () => {
+    const c = await trial();
+    expect((await serveSpecial(req("/special/hoshiyomi/motion-a.mp4", c), pub, "k", NOW)).status).toBe(200);
+    expect((await serveSpecial(req("/special/diva/motion-a.mp4", c), pub, "k", NOW)).status).toBe(403);
+    expect((await serveSpecial(req("/special/hoshiyomi-x/motion-a.mp4", c), pub, "k", NOW)).status).toBe(403);
+  });
+
+  it("お試しの通行証：期限切れ・書き換え・別の鍵は断る。全着の通行証としては使えない", async () => {
+    const c = await trial();
+    const path = "hoshiyomi/a.webp";
+    expect(await validTrial(c, path, "k", NOW)).toBe(true);
+    expect(await validTrial(c, path, "k", LATER)).toBe(false);
+    expect(await validTrial(c, path, "other", NOW)).toBe(false);
+    expect(await validTrial(c.replace("hoshiyomi", "diva"), "diva/a.webp", "k", NOW)).toBe(false);
+    const [body, costume, exp, mac] = c.split(".");
+    expect(await validTrial(`${body}.${costume}.${Number(exp) + 999}.${mac}`, path, "k", NOW)).toBe(false);
+    expect(await validPass(c.replace("tanto_trial", "tanto_special"), "k", NOW)).toBe(false);
+    // 全着の通行証を、お試しの通行証に見せかけても通らない（署名の対象が違う）
+    const pass = (await passCookie("alice", "k", NOW)).split(";")[0].replace("tanto_special=", "");
+    const [u, e, m] = pass.split(".");
+    expect(await validTrial(`tanto_trial=${u}.hoshiyomi.${e}.${m}`, path, "k", NOW)).toBe(false);
+  });
+
+  it("ログアウトでお試しの通行証も消す", async () => {
+    const res = await serveSpecial(new Request("https://x.test/special/logout", { method: "POST" }), bucket, "k", NOW);
+    const cookies = res.headers.getSetCookie();
+    expect(cookies.some((c) => c.startsWith("tanto_special=;"))).toBe(true);
+    expect(cookies.some((c) => c.startsWith("tanto_trial=;"))).toBe(true);
+  });
+
+  const api = (repo = new MemoryAnswerRepository(), at = NOW, specialKey: string | null = "k") => ({ repo, verify: testVerifier(), specialKey: specialKey ?? undefined, now: () => at });
+  const post = (path: string, body?: unknown, user = "alice") =>
+    new Request(`https://x.test${path}`, { method: "POST", headers: { authorization: `Bearer test:${user}` }, body: body === undefined ? undefined : JSON.stringify(body) });
+
+  it("/api/special/trial：1人1回。48時間の内は通行証を出し直し、過ぎたら出さない。ログインが要る", async () => {
+    const repo = new MemoryAnswerRepository();
+    const first = await handleApi(post("/api/special/trial"), api(repo));
+    expect(await first.json()).toEqual({ available: true, costume: "hoshiyomi", until: LATER.toISOString() });
+    expect(await validTrial(first.headers.get("set-cookie")!.split(";")[0], "hoshiyomi/a.webp", "k", NOW)).toBe(true);
+
+    // 途中で別の端末から：期限は最初のまま
+    const soon = new Date(NOW.getTime() + 3600 * 1000);
+    expect(await (await handleApi(post("/api/special/trial"), api(repo, soon))).json()).toMatchObject({ available: true, until: LATER.toISOString() });
+
+    const over = await handleApi(post("/api/special/trial"), api(repo, LATER));
+    expect(await over.json()).toEqual({ available: false });
+    expect(over.headers.get("set-cookie")).toBeNull();
+
+    // 別の人は別に数える
+    expect(await (await handleApi(post("/api/special/trial", undefined, "bob"), api(repo, LATER))).json()).toMatchObject({ available: true });
+    expect((await handleApi(new Request("https://x.test/api/special/trial", { method: "POST" }), api(repo))).status).toBe(401);
+  });
+
+  it("/api/special/trial：鍵の設定がないときは、回数を使わせない", async () => {
+    const repo = new MemoryAnswerRepository();
+    expect(await (await handleApi(post("/api/special/trial"), api(repo, NOW, null))).json()).toEqual({ available: false });
+    expect(repo.interest.size).toBe(0);
+  });
+
+  it("/api/special/want：記録と取り消し。知らない衣装は断る。お試しの回数に影響しない。退会で消える", async () => {
+    const repo = new MemoryAnswerRepository();
+    expect((await handleApi(post("/api/special/want", { costume: "diva", want: true }), api(repo))).status).toBe(200);
+    expect(repo.interest.get("test-alice\ndiva")).toEqual({ wanted_at: NOW.toISOString() });
+    await handleApi(post("/api/special/want", { costume: "diva", want: false }), api(repo));
+    expect(repo.interest.get("test-alice\ndiva")?.wanted_at).toBeNull();
+
+    await handleApi(post("/api/special/want", { costume: "hoshiyomi", want: true }), api(repo));
+    expect(await (await handleApi(post("/api/special/trial"), api(repo))).json()).toMatchObject({ available: true });
+    await handleApi(post("/api/special/want", { costume: "hoshiyomi", want: false }), api(repo));
+    expect(repo.interest.get("test-alice\nhoshiyomi")?.tried_at).toBe(NOW.toISOString());
+
+    for (const bad of [{ costume: "default", want: true }, { costume: "diva" }, { want: true }, "x"]) {
+      expect((await handleApi(post("/api/special/want", bad), api(repo))).status).toBe(400);
+    }
+    await handleApi(new Request("https://x.test/api/me", { method: "DELETE", headers: { authorization: "Bearer test:alice" } }), api(repo));
+    expect(repo.interest.size).toBe(0);
   });
 });

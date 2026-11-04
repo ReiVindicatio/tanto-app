@@ -142,3 +142,87 @@ test("退会：サーバーの記録とアカウントを消し、別の端末�
   await expect(pc.locator(".sync-status")).toContainText("同期済み");
   await expect(allYears(pc)).toContainText("回答済み 0枚");
 });
+
+/** 模試3回でレベル5（お試しが勝手に始まる条件） */
+async function seedLevel5(page: Page) {
+  await page.evaluate(() => {
+    const at = new Date().toISOString();
+    localStorage.setItem("tanto.mock.v1", JSON.stringify(["a", "b", "c"].map((key) => ({ key, earned: 10, full: 30, elapsedMs: 1, timedOut: false, at }))));
+  });
+}
+
+test("お試し（T070）：Lv.5 でホームに戻ると勝手に着替わり、20問で終わって元の服に戻る。2回目はない。ほかの衣装の絵は届かない", async ({ browser }) => {
+  const page = await openAs(browser, "tessa");
+  const html = page.locator("html");
+  await page.goto("/");
+  await expect(page.locator(".card.hero")).toBeVisible();
+  await expect(page.locator(".trial-bar")).toHaveCount(0); // Lv.1 では始まらない
+  await seedLevel5(page);
+  await page.goto("/");
+  await expect(html).toHaveAttribute("data-costume", "hoshiyomi");
+  await expect(page.locator(".trial-bar")).toContainText("あと20問");
+
+  // 通行証は見本の1着だけ
+  const status = (path: string) => page.evaluate(async (p) => (await fetch(p)).status, path);
+  expect(await status("/special/hoshiyomi/motion-none.mp4")).toBe(404); // 通行証は通り、ファイルがないだけ
+  expect(await status("/special/diva/motion-none.mp4")).toBe(403);
+
+  // 肢で解く：20問で残りが0になっても、解いている間は着替えない
+  await page.locator(".signature").click({ timeout: 3000 }).catch(() => {});
+  await page.goto("/subjects/minpo");
+  await allYears(page).getByRole("button", { name: /肢で解く/ }).click();
+  for (let k = 0; k < 20; k++) {
+    await page.getByRole("button", { name: "○", exact: true }).click();
+    await expect(page.locator(".trial-bar")).toContainText(`あと${19 - k}問`);
+    await page.getByRole("button", { name: "次へ" }).click();
+  }
+  await expect(html).toHaveAttribute("data-costume", "hoshiyomi");
+  await expect(page.locator(".trial-end")).toHaveCount(0);
+  await page.getByRole("button", { name: "← 戻る" }).click();
+  await expect(page.locator(".trial-end")).toContainText("お試しはここまで");
+  await expect(html).not.toHaveAttribute("data-costume", /.+/);
+
+  // 欲しい
+  await page.locator(".trial-end").getByRole("button", { name: "♡ 欲しい" }).click();
+  await expect(page.locator(".trial-end").getByRole("button", { name: /押しました/ })).toBeVisible();
+  await page.locator(".trial-end").getByRole("button", { name: "閉じる" }).click();
+  await expect(page.locator(".trial-bar")).toHaveCount(0);
+
+  // 2回目はない
+  await page.goto("/ritsu");
+  await expect(page.locator(".special-locked", { hasText: "星詠み" })).toContainText("お試しは終わりました");
+  await expect(html).not.toHaveAttribute("data-costume", /.+/);
+});
+
+test("お試し（T070）：一覧のボタンから始められ、途中で終えられる", async ({ browser }) => {
+  const page = await openAs(browser, "uma");
+  await page.goto("/ritsu");
+  const html = page.locator("html");
+  await page.locator(".special-locked", { hasText: "星詠み" }).getByRole("button", { name: /20問だけ試す/ }).click();
+  await expect(html).toHaveAttribute("data-costume", "hoshiyomi");
+  await page.locator(".signature").click({ timeout: 3000 }).catch(() => {});
+  await expect(page.locator(".theme-tile.chosen")).toContainText("星詠み");
+
+  page.once("dialog", (d) => d.accept());
+  await page.locator(".trial-bar").getByRole("button", { name: "元の服に戻す" }).click();
+  await expect(page.locator(".trial-end")).toBeVisible();
+  await expect(html).not.toHaveAttribute("data-costume", /.+/);
+});
+
+test("お試し（T070）：ログアウトすると元の服に戻り、通行証も消える", async ({ browser }) => {
+  const page = await openAs(browser, "vera");
+  await page.goto("/ritsu");
+  const html = page.locator("html");
+  await page.locator(".special-locked", { hasText: "星詠み" }).getByRole("button", { name: /20問だけ試す/ }).click();
+  await expect(html).toHaveAttribute("data-costume", "hoshiyomi");
+  const status = () => page.evaluate(async () => (await fetch("/special/hoshiyomi/motion-none.mp4")).status);
+  expect(await status()).toBe(404);
+  await page.locator(".signature").click({ timeout: 3000 }).catch(() => {});
+
+  await page.goto("/me");
+  await page.getByRole("tab", { name: "設定" }).click();
+  await page.getByRole("button", { name: "ログアウト" }).click();
+  await expect(html).not.toHaveAttribute("data-costume", /.+/);
+  await expect(page.locator(".trial-end")).toHaveCount(0);
+  await expect.poll(status).toBe(403);
+});

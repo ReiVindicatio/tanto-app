@@ -13,7 +13,9 @@ import { fxOn, useFx } from "../ritsu/fx";
 import { moonKind, moonPath } from "../ritsu/moon";
 import { evoStage } from "../ritsu/themes";
 import { kitOf } from "../ritsu/kits";
-import { GrowTab, IdeasTab, Showcase, StoryTab } from "./RitsuSpecial";
+import { GrowTab, IdeasTab, StoryTab } from "./RitsuSpecial";
+import { TrialButton, WantButton } from "../ritsu/TrialLayer";
+import { TRIAL_THEME, useTrial } from "../ritsu/trial";
 import { useMouthOpen } from "../ritsu/lipsync";
 import { Progress } from "./common";
 
@@ -80,6 +82,9 @@ export default function RitsuPage() {
   const admin = useAdmin();
   useFx();
   const [theme, setThemeState] = useState(() => currentTheme(p.level));
+  // お試し（T070）が始まった・終わったら、着ている服を取り直す
+  const trialStatus = useTrial().status;
+  useEffect(() => setThemeState(currentTheme(p.level)), [trialStatus]);
   const [face, setFace] = useState<Expression>("smile");
   const [said, setSaid] = useState<Line | undefined>(() => pickLine("tap", 1));
   const [tab, setTab] = useState<Tab>("theme");
@@ -274,28 +279,29 @@ export default function RitsuPage() {
       {tab === "theme" && specialThemes.length > 0 && (
         <>
           <h3 className="theme-section">特別な衣装</h3>
-          {admin && special && fxOn("showcase") && <Showcase theme={special.id} name={special.name} desc={special.desc} />}
+          {/* 買う前に見せるのは全身の絵1枚・名前・紹介文だけ（T070）。見本の1着だけ試せる */}
+          <div className="special-cards">
+            {specialThemes.filter((t) => !isUnlocked(t, p.level)).sort((a, b) => Number(b.id === TRIAL_THEME) - Number(a.id === TRIAL_THEME)).map((t) => (
+              <div key={t.id} className={`special-locked kit-${t.id}`}>
+                <img src={characterImage("base", "smile", t.id)} alt="" loading="lazy" />
+                <div className="special-locked-body">
+                  <strong>{t.name}</strong>
+                  <p className="muted small">{t.desc}</p>
+                  <span className="muted small"><span aria-label="未開放">🔒</span> {unlockLabel(t)}</span>
+                  {t.id === TRIAL_THEME && <TrialButton onStart={() => setThemeState(TRIAL_THEME)} />}
+                  <WantButton theme={t.id} />
+                </div>
+              </div>
+            ))}
+          </div>
           <div className="theme-grid">
-            {specialThemes.map((t) => {
-              const ok = isUnlocked(t, p.level);
-              if (!ok) {
-                return (
-                  <button key={t.id} className={`theme-tile locked special-locked kit-${t.id}`} disabled>
-                    <span className="special-locked-art" aria-hidden="true">{kitOf(t.id).particle}</span>
-                    <span className="lock-mark" aria-label="未開放">🔒</span>
-                    <span>{t.name}</span>
-                    <span className="muted small">{unlockLabel(t)}</span>
-                  </button>
-                );
-              }
-              return (
-                <button key={t.id} className={`theme-tile${t.id === theme ? " chosen" : ""}`} aria-pressed={t.id === theme} onClick={() => wear(t.id)}>
-                  <img src={characterImage("base", "smile", t.id)} alt="" loading="lazy" />
-                  <span>{t.name}</span>
-                  {!isRevealed(t.id) && <span className="theme-new">NEW</span>}
-                </button>
-              );
-            })}
+            {specialThemes.filter((t) => isUnlocked(t, p.level)).map((t) => (
+              <button key={t.id} className={`theme-tile${t.id === theme ? " chosen" : ""}`} aria-pressed={t.id === theme} onClick={() => wear(t.id)}>
+                <img src={characterImage("base", "smile", t.id)} alt="" loading="lazy" />
+                <span>{t.name}</span>
+                {!isRevealed(t.id) && <span className="theme-new">NEW</span>}
+              </button>
+            ))}
           </div>
           {wearing && kit.grow === "sky" && fxOn("sky") && !skySeen && (
             <p className="sky-note small">

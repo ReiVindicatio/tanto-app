@@ -50,7 +50,7 @@ GitHub Actions（`.github/workflows/ci.yml`）が push ごとに同じものを�
        └→ DB（Cloudflare D1：tantan）─ 保存処理は app/worker/repository.ts の AnswerRepository だけ
 ```
 
-- サーバーに置くのは回答ログと誤り報告だけ（利用者 ID は Firebase の uid。メールアドレスは置かない）。FSRS の状態は端末で作る
+- サーバーに置くのは回答ログ・★・誤り報告・課金衣装のお試しと「欲しい」の記録だけ（利用者 ID は Firebase の uid。メールアドレスは置かない）。FSRS の状態は端末で作る
 - 誤り報告の処理は 📖 `docs/reports.md`。使いすぎの制限（`wrangler.jsonc` の `ratelimits` と、1日の上限）は超えても画面に出さない（T040）
 - DB を入れ替えるときは `AnswerRepository` の実装を足して `app/worker/index.ts` で渡す（アプリ側は変わらない）
 - D1 の表を変えるときは `app/migrations/` に SQL を足し、`cd app && npx wrangler d1 migrations apply DB --remote`（要 `npx wrangler login`）

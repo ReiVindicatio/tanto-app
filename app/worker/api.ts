@@ -2,7 +2,7 @@
 // D1 や Firebase を直接は知らない（テストでは偽物を渡す）。
 import type { Answer, AnswerRepository, Bookmark, Report } from "./repository";
 import { isAdminEmail, type EmailOf, type Verifier } from "./auth";
-import { CLEAR_PASS, passCookie } from "./special";
+import { CLEAR_PASS, passCookie, SPECIAL_COSTUMES, trialCookie, TRIAL_COSTUME, TRIAL_SECONDS } from "./special";
 
 export const MAX_BATCH = 1000;
 /** 1日（UTC）に受け取る回答の上限（T040）。初めてログインした端末の記録をまとめて送る（引き継ぎ）のを止めない値。超えた分は翌日に送られる */
@@ -150,6 +150,24 @@ export async function handleApi(req: Request, deps: Deps): Promise<Response> {
     // 特別な衣装の通行証（T069）：今は管理者だけ。外れたら消す
     res.headers.set("set-cookie", admin && deps.specialKey ? await passCookie(userId, deps.specialKey, now) : CLEAR_PASS);
     return res;
+  }
+
+  // お試し（T070）：見本の1着を、1人1回。始めてから48時間の内なら通行証を出し直す（別の端末でも着られる）。鍵の設定がなければ、回数を使わせない
+  if (url.pathname === "/api/special/trial" && req.method === "POST") {
+    if (!deps.specialKey) return json({ available: false });
+    const until = new Date(Date.parse(await deps.repo.startTrial(userId, TRIAL_COSTUME, now.toISOString())) + TRIAL_SECONDS * 1000);
+    if (until.getTime() <= now.getTime()) return json({ available: false });
+    const res = json({ available: true, costume: TRIAL_COSTUME, until: until.toISOString() });
+    res.headers.set("set-cookie", await trialCookie(userId, TRIAL_COSTUME, until, deps.specialKey, now));
+    return res;
+  }
+
+  // 「欲しい」（T070）：買えるようになる前に、衣装ごとの人気を見る
+  if (url.pathname === "/api/special/want" && req.method === "POST") {
+    const body = (await readJson(req)) as { costume?: unknown; want?: unknown } | undefined;
+    if (!body || typeof body.costume !== "string" || !SPECIAL_COSTUMES.includes(body.costume) || typeof body.want !== "boolean") return json({ error: "invalid want" }, 400);
+    await deps.repo.setWanted(userId, body.costume, body.want ? now.toISOString() : null);
+    return json({ want: body.want });
   }
 
   if (url.pathname === "/api/me" && req.method === "DELETE") {

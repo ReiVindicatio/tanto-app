@@ -1,4 +1,5 @@
 import { SpecialMoveLayer } from "./ritsu/special";
+import { TrialBar, TrialLayer } from "./ritsu/TrialLayer";
 import RitsuPage from "./screens/RitsuPage";
 import RevealPage from "./screens/RevealPage";
 import { useEffect, useState } from "react";
@@ -57,6 +58,7 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
   return (
     <SyncContext.Provider value={sync}>
       <SpecialMoveLayer />
+      <TrialLayer />
       <div className={`page ${tab ? "with-tabs" : "playing"}`}>
         <header className="appbar">
           <button className="link brand" onClick={() => navigate({ name: "home" })}>
@@ -68,6 +70,7 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
             {sync && <SyncBadge sync={sync} />}
           </div>
         </header>
+        <TrialBar />
         <main>
           {error && <p className="error">データを読めませんでした：{error}</p>}
           {!sets && !error && !["me", "privacy", "terms"].includes(route.name) && <p className="muted">読み込み中…</p>}

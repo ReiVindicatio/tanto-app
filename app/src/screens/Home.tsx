@@ -1,5 +1,5 @@
 // ホーム（T025・T022）：今日の○問・科目へのリンク（今日の成績は T034 でやめた）
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { CardRef, SubjectGroup } from "../data";
 import { navigate } from "../router";
 import { startChosen, startDaily, startEndless, startListen } from "../play";
@@ -7,9 +7,12 @@ import { bookmarkedCards } from "../bookmarks";
 import { cardIdOf } from "../learning";
 import { buildDaily, DAILY_SIZES, describeCounts, ENDLESS, ENDLESS_BATCH, getDailyPrefs, setDailyPrefs, type DailyPrefs } from "../daily";
 import { cardsOf, poolOf } from "./common";
-import { characterOn } from "../character";
 import { homeLine, playLine, seeded } from "../ritsu/lines";
-import { pendingReveal } from "../ritsu/themes";
+import { pendingReveal, themeById } from "../ritsu/themes";
+import { closeTrialInvite, trialAccount, trialInviteClosed, TRIAL_ANSWERS, TRIAL_LEVEL, TRIAL_THEME, useTrial } from "../ritsu/trial";
+import { startTrial } from "../ritsu/TrialLayer";
+import { useAdmin } from "../admin";
+import { characterImage, characterOn } from "../character";
 import { progressNow } from "../progress";
 import { RitsuDock, useIdle } from "../Ritsu";
 
@@ -47,8 +50,31 @@ function QuickStart({
 
   const reveal = showChar ? pendingReveal(p.level) : undefined;
 
+  // お試し（T070）：レベルが届いていて、まだなら、ホームに戻ったときに勝手に着替える（解いている途中では始めない）。ログインしていなければ案内を1回だけ
+  const trial = useTrial();
+  const admin = useAdmin();
+  const account = trialAccount();
+  const trialDue = showChar && !admin && p.level >= TRIAL_LEVEL && trial.status === "none";
+  useEffect(() => {
+    if (trialDue && account === "in") void startTrial();
+  }, [trialDue, account]);
+  const invite = trialDue && account === "out" && !trialInviteClosed();
+
   return (
     <>
+    {invite && (
+      <div className="card trial-invite">
+        <img src={characterImage("base", "smile", TRIAL_THEME)} alt="" />
+        <div className="grow">
+          <strong>{themeById(TRIAL_THEME)?.name}</strong>
+          <p className="muted small">特別な衣装を{TRIAL_ANSWERS}問だけ試せます（ログインが必要です）</p>
+          <div className="row">
+            <button className="secondary" onClick={() => navigate({ name: "me" })}>ログインする</button>
+            <button className="link" onClick={closeTrialInvite}>閉じる</button>
+          </div>
+        </div>
+      </div>
+    )}
     {/* 新しい衣装が開いていて、まだお披露目を見ていなければ（T065） */}
     {reveal && (
       <button className="card reveal-invite" onClick={() => navigate({ name: "reveal", theme: reveal.id })}>

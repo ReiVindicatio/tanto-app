@@ -15,7 +15,7 @@ export default defineConfig({
   webServer: {
     command:
       `rm -rf ${STATE} && npx wrangler d1 migrations apply DB --local --persist-to ${STATE} && ` +
-      `npx wrangler dev --port ${PORT} --persist-to ${STATE} --var ENVIRONMENT:development --var AUTH_MODE:test`,
+      `npx wrangler dev --port ${PORT} --persist-to ${STATE} --var ENVIRONMENT:development --var AUTH_MODE:test --var SPECIAL_KEY:e2e-only-key`,
     url: `http://localhost:${PORT}`,
     reuseExistingServer: false,
     timeout: 120_000,

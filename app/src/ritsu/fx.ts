@@ -23,8 +23,6 @@ export const IDEAS = [
   { id: "daily", no: 19, name: "1日1回、最初に開いたときに登場" },
   { id: "role", no: 20, name: "全場面のセリフが役になりきる" },
   { id: "remember", no: 21, name: "ふつうの服の律が、特別な衣装のことを話す" },
-  { id: "tryon", no: 22, name: "試着（10分）" },
-  { id: "showcase", no: 23, name: "飾り棚（買う前の見え方）" },
   { id: "card", no: 24, name: "今日の成果カード" },
   { id: "cape", no: 31, name: "生きた座り絵（星詠み：風を受けるマント。司書：控える本）" },
   { id: "signature", no: 32, name: "押すと出る全画面の技（星詠み：裁定の流星。司書：万巻の開架）" },

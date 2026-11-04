@@ -24,6 +24,10 @@ export interface AnswerRepository {
   insertReport(userId: string, report: Report, createdAt: string): Promise<void>;
   /** since 以降に受け取った、その利用者の報告の数（T040） */
   countReportsSince(userId: string, since: string): Promise<number>;
+  /** お試しを始めた記録（T070）。すでにあれば変えない。最初に始めた日時を返す */
+  startTrial(userId: string, costume: string, at: string): Promise<string>;
+  /** 「欲しい」を記録する（T070）。null なら取り消す */
+  setWanted(userId: string, costume: string, at: string | null): Promise<void>;
   /** ★の操作。since を渡すと、それより後に受け取った分だけ（T026） */
   listBookmarks(userId: string, since?: string): Promise<StoredBookmark[]>;
   /** ★の操作を保存する。同じ操作 ID はすでにあれば無視する。保存した件数を返す（T026） */
@@ -78,8 +82,24 @@ export class D1AnswerRepository implements AnswerRepository {
     await this.db.batch([
       this.db.prepare("DELETE FROM answers WHERE user_id = ?").bind(userId),
       this.db.prepare("DELETE FROM bookmarks WHERE user_id = ?").bind(userId),
+      this.db.prepare("DELETE FROM special_interest WHERE user_id = ?").bind(userId),
       this.db.prepare("UPDATE reports SET user_id = NULL WHERE user_id = ?").bind(userId),
     ]);
+  }
+
+  async startTrial(userId: string, costume: string, at: string): Promise<string> {
+    const r = await this.db
+      .prepare("INSERT INTO special_interest (user_id, costume, tried_at) VALUES (?, ?, ?) ON CONFLICT (user_id, costume) DO UPDATE SET tried_at = COALESCE(tried_at, excluded.tried_at) RETURNING tried_at")
+      .bind(userId, costume, at)
+      .first<{ tried_at: string }>();
+    return r?.tried_at ?? at;
+  }
+
+  async setWanted(userId: string, costume: string, at: string | null): Promise<void> {
+    await this.db
+      .prepare("INSERT INTO special_interest (user_id, costume, wanted_at) VALUES (?, ?, ?) ON CONFLICT (user_id, costume) DO UPDATE SET wanted_at = excluded.wanted_at")
+      .bind(userId, costume, at)
+      .run();
   }
 
   async countAnswersSince(userId: string, since: string): Promise<number> {
@@ -131,6 +151,7 @@ export class MemoryAnswerRepository implements AnswerRepository {
   rows = new Map<string, StoredAnswer[]>();
   bookmarks = new Map<string, StoredBookmark[]>();
   reports: (Report & { user_id: string | null; created_at: string })[] = [];
+  interest = new Map<string, { tried_at?: string; wanted_at?: string | null }>();
 
   async list(userId: string, since?: string): Promise<StoredAnswer[]> {
     return (this.rows.get(userId) ?? []).filter((r) => !since || r.received_at > since);
@@ -154,6 +175,20 @@ export class MemoryAnswerRepository implements AnswerRepository {
     this.rows.delete(userId);
     this.bookmarks.delete(userId);
     for (const r of this.reports) if (r.user_id === userId) r.user_id = null;
+    for (const k of this.interest.keys()) if (k.startsWith(`${userId}\n`)) this.interest.delete(k);
+  }
+
+  async startTrial(userId: string, costume: string, at: string): Promise<string> {
+    const k = `${userId}\n${costume}`;
+    const row = this.interest.get(k) ?? {};
+    row.tried_at ??= at;
+    this.interest.set(k, row);
+    return row.tried_at;
+  }
+
+  async setWanted(userId: string, costume: string, at: string | null): Promise<void> {
+    const k = `${userId}\n${costume}`;
+    this.interest.set(k, { ...this.interest.get(k), wanted_at: at });
   }
 
   async countAnswersSince(userId: string, since: string): Promise<number> {

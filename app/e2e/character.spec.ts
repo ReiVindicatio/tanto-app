@@ -172,11 +172,14 @@ test("特別な衣装（T069）：管理者でなければ鍵の印で着られ�
   });
   await page.goto("/ritsu");
   await expect(page.locator(".theme-tile").first()).toBeVisible();
-  // 絵は渡さず、鍵の印と名前だけ。いつもの衣装と分かれている
+  // 買う前に見えるのは、全身の絵1枚・名前・紹介文。いつもの衣装と分かれている（T070）
   const locked = page.locator(".special-locked", { hasText: "星詠み" });
-  await expect(locked).toBeDisabled();
-  await expect(locked.locator(".lock-mark")).toBeVisible();
-  await expect(locked.locator("img")).toHaveCount(0);
+  await expect(locked.locator("img")).toHaveCount(1);
+  await expect(locked.locator("img")).toHaveAttribute("src", /\/special\/hoshiyomi\/base-smile\.webp$/);
+  await expect(locked).toContainText("金の大天秤");
+  await expect(locked).toContainText("準備中");
+  await expect(locked.getByRole("button", { name: /ログインすると20問だけ試せます/ })).toBeVisible();
+  await expect(page.locator(".special-locked", { hasText: "舞台の歌姫" }).getByRole("button")).toHaveCount(0); // 見本の1着のほかは試せない
   await expect(page.locator(".theme-section", { hasText: "特別な衣装" })).toBeVisible();
   await expect(page.locator(".theme-tile.locked:not(.special-locked) .lock-mark").first()).toBeVisible();
   await expect(page.locator(".special-preview")).toHaveCount(0);
@@ -355,7 +358,7 @@ test("管理者の印：押すと一般の見え方になり、もう一度押�
   await badge.click();
   await expect(badge).toHaveText("一般で表示中");
   await expect(html).not.toHaveAttribute("data-costume", /.+/);
-  await expect(page.locator(".special-locked", { hasText: "星詠み" })).toBeDisabled();
+  await expect(page.locator(".special-locked", { hasText: "星詠み" })).toBeVisible();
   await expect(page.locator(".ritsu-tabs button", { hasText: "案" })).toHaveCount(0);
   await expect(page.locator(".special-preview")).toHaveCount(0);
   await badge.click();
@@ -439,3 +442,22 @@ for (const id of ["hoshiyomi", "diva"]) {
     expect(bubbleBox.x + bubbleBox.width).toBeLessThanOrEqual(buttonBox.x);
   });
 }
+
+test("お試し（T070）：ログインしていない人には、レベルが届いたらホームで案内を1回だけ出す", async ({ page }) => {
+  await page.route("**/special/**", (r) => r.fulfill({ status: 404 }));
+  await openHome(page);
+  await expect(page.locator(".trial-invite")).toHaveCount(0); // Lv.1 では出さない
+  await page.evaluate(() => {
+    const at = new Date().toISOString();
+    localStorage.setItem("tanto.mock.v1", JSON.stringify(["a", "b", "c"].map((key) => ({ key, earned: 10, full: 30, elapsedMs: 1, timedOut: false, at })))); // 模試3回＝Lv.5
+  });
+  await page.goto("/");
+  const invite = page.locator(".trial-invite");
+  await expect(invite).toContainText("20問だけ試せます");
+  await invite.getByRole("button", { name: "閉じる" }).click();
+  await expect(invite).toHaveCount(0);
+  await page.goto("/");
+  await expect(page.locator(".card.hero")).toBeVisible();
+  await expect(invite).toHaveCount(0);
+  await expect(page.locator("html")).not.toHaveAttribute("data-costume", /.+/);
+});

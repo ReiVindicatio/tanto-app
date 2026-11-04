@@ -1,4 +1,5 @@
 // 律のテーマ（衣装と髪型の組。T065）。絵は public/chars/ritsu/<テーマ>/。レベルで開き、選んだテーマは端末に覚える（学習記録ではない）
+import { inTrial } from "./trial";
 import { progressNow } from "../progress";
 import costumes from "./costumes.json";
 import { asUser, isAdmin } from "../admin";
@@ -79,7 +80,7 @@ export function isSpecial(id: string): boolean {
 /** 開いているか。管理者は全部。一度お披露目を見た衣装は、条件を見直しても開いたまま */
 export function isUnlocked(t: Theme, level: number): boolean {
   if (t.id === "default" || isAdmin()) return true;
-  if (t.unlock === "paid") return false; // 端末の値（見た印）では開かない。絵もサーバーが渡さない
+  if (t.unlock === "paid") return inTrial(t.id); // 端末の値（見た印）では開かない。絵もサーバーが渡さない。お試しの1着だけサーバーが48時間渡す（T070）
   if (!asUser() && isRevealed(t.id)) return true; // 一般の見え方を確かめている間は、見た印を数えない
   const m = t.unlock?.match(/^mock(\d+)$/);
   if (m) return mockSubmits() >= Number(m[1]);

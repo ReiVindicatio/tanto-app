@@ -7,6 +7,7 @@ import { LocalStorageStore } from "./store";
 import { createAuthClient } from "./auth";
 import { refreshAdmin } from "./admin";
 import { applyCostume } from "./ritsu/themes";
+import { setTrialAccount } from "./ritsu/trial";
 import { HttpApiClient } from "./api";
 import { SyncedStore } from "./sync";
 import { applyTheme, watchSystemTheme } from "./theme";
@@ -31,7 +32,8 @@ initLearning(sync).finally(() => {
       <App auth={auth} sync={sync} />
     </StrictMode>,
   );
-  auth.onChange(() => {
+  auth.onChange((user) => {
+    setTrialAccount(() => auth.getToken(), !!user); // お試し（T070）
     void sync.sync(); // 起動時・ログイン時：送って受け取る
     void refreshAdmin(() => auth.getToken()).then(applyCostume); // 管理者か（T068）
   });
