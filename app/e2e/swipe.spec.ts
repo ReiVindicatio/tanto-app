@@ -13,6 +13,11 @@ async function truthOf(request: any) {
 
 /** 指でカードを動かして離す（Chromium の CDP で本物のタッチを送る。ブラウザのスクロールも本物どおりに動く） */
 async function drag(page: Page, dx: number, dy = 0) {
+  await dragPath(page, [0.1, 0.25, 0.5, 0.75, 1].map((k) => [dx * k, dy * k]));
+}
+
+/** 指の通り道（始点からのずれ）を指定して動かす。beforeRelease は指を離す直前に呼ぶ */
+async function dragPath(page: Page, path: number[][], beforeRelease?: () => Promise<void>) {
   const box = (await page.locator(".page .swipe-card .statement").boundingBox())!;
   const x = box.x + box.width / 2;
   const y = box.y + box.height / 2;
@@ -20,8 +25,10 @@ async function drag(page: Page, dx: number, dy = 0) {
   const send = (type: string, px: number, py: number) =>
     cdp.send("Input.dispatchTouchEvent", { type, touchPoints: type === "touchEnd" ? [] : [{ x: px, y: py }] });
   await send("touchStart", x, y);
-  for (const k of [0.1, 0.25, 0.5, 0.75, 1]) await send("touchMove", x + dx * k, y + dy * k);
-  await send("touchEnd", x + dx, y + dy);
+  for (const [dx, dy] of path) await send("touchMove", x + dx, y + dy);
+  await beforeRelease?.();
+  const [ex, ey] = path[path.length - 1];
+  await send("touchEnd", x + ex, y + ey);
   await cdp.detach();
 }
 
@@ -57,9 +64,15 @@ test.describe("スマホ", () => {
       // 一番上から、指を上へ斜めに動かす（スクロールを止めなければ下へスクロールするページ。縦のテストで確かめた）
       await page.evaluate(() => window.scrollTo(0, 0));
       await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
-      await drag(page, 160, -60);
+      // 動き始めが縦寄りの斜め：横と判定されるぎりぎり（lockAxis）で、ブラウザは止めなければ縦にスクロールする。真横に近いとブラウザが自分で横に固定するので、守りを確かめられない
+      // 測るのは指を離す前。答えたあとは解説まで滑らかに送る（T066）ので、離したあとの scrollY は 0 でなくてよい
+      let scrolled = -1;
+      await dragPath(page, [[16, -18], [40, -45], [100, -55], [160, -60]], async () => {
+        await page.waitForTimeout(100); // スクロールが始まっていれば反映されるまで待つ
+        scrolled = await page.evaluate(() => window.scrollY);
+      });
       await expect(page.locator(".page .result")).toBeVisible();
-      expect(await page.evaluate(() => window.scrollY)).toBe(0);
+      expect(scrolled).toBe(0);
     });
 
     test("縦に動かしたら答えにならない（スクロール）", async ({ page }) => {

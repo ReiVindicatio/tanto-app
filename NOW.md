@@ -28,7 +28,7 @@
 
 **気をつけること**
 
-- CI：`86e5170` で `e2e/swipe.spec.ts` の「少し斜めにはじいても」が1回落ちた（スクロール量が 0 でなく 2px）。手元で90回流しても再現せず、次の push では通った。原因は不明。また落ちたら調べる
+- CI：`e2e/swipe.spec.ts` の「少し斜めにはじいても」が2回落ちた（`86e5170`・`af9f093`）。原因はテストの測り方で、答えたあとの自動スクロール（T066）の始まりを拾っていた。指を離す前に測るように直した
 - push はテストの結果を終了コードで確かめてから。`gh` はないので、CI は GitHub の API を curl で見る
 - 確認ページ（private）：モーション https://claude.ai/artifact/R6WAeGh7qAbh6eifwmnDV9 、背景 https://claude.ai/artifact/UwXLyhWk6KyxQMyeDQZnix
 
