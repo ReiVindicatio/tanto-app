@@ -28,6 +28,7 @@ export const IDEAS = [
   { id: "card", no: 24, name: "今日の成果カード" },
   { id: "cape", no: 31, name: "生きた座り絵（星詠み：風を受けるマント。司書：控える本）" },
   { id: "signature", no: 32, name: "押すと出る全画面の技（星詠み：裁定の流星。司書：万巻の開架）" },
+  { id: "backdrop", no: 33, name: "動く背景（星・本のほこりと紙・雪とオーロラ・花びら）" },
 ] as const;
 
 export type IdeaId = (typeof IDEAS)[number]["id"];

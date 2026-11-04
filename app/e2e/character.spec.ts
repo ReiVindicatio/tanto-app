@@ -362,3 +362,80 @@ test("管理者の印：押すと一般の見え方になり、もう一度押�
   await expect(badge).toHaveText("管理者");
   await expect(html).toHaveAttribute("data-costume", "hoshiyomi");
 });
+
+test("動く背景（T069）：課金衣装を着ている間だけ奥に出て、ふつうの衣装では出ない。歌姫は舞台照明なので出さない", async ({ page }) => {
+  await page.route("**/special/**", () => {});
+  await openHome(page);
+  await expect(page.locator(".world-backdrop")).toHaveCount(0);
+  await page.evaluate(() => {
+    localStorage.setItem("tanto.character.theme.v1", "hoshiyomi");
+    localStorage.setItem("tanto.character.revealed.v1", JSON.stringify(["hoshiyomi"]));
+  });
+  await page.goto("/");
+  // 管理者でなければ着られないので、背景も出ない
+  await expect(page.locator("html")).not.toHaveAttribute("data-costume", "hoshiyomi");
+  await expect(page.locator(".world-backdrop")).toHaveCount(0);
+
+  await beAdmin(page);
+  await page.goto("/");
+  await expect(page.locator("html")).toHaveAttribute("data-costume", "hoshiyomi");
+  const canvas = page.locator(".world-backdrop canvas");
+  await expect(canvas).toBeAttached();
+  // 奥にあり、押す操作をじゃましない
+  expect(await page.locator(".world-backdrop").evaluate((el) => getComputedStyle(el).pointerEvents)).toBe("none");
+  expect(await page.locator(".world-backdrop").evaluate((el) => getComputedStyle(el).zIndex)).toBe("-1");
+  // 色がのっている（絵が描かれている）
+  await expect
+    .poll(() =>
+      canvas.evaluate((cv: HTMLCanvasElement) => {
+        const d = cv.getContext("2d")!.getImageData(0, 0, cv.width, cv.height).data;
+        for (let i = 3; i < d.length; i += 4) if (d[i]) return true;
+        return false;
+      }),
+    )
+    .toBe(true);
+});
+
+test("動く背景（T069）：視差効果を減らす設定なら、1コマだけ描いて止まる", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.route("**/special/**", () => {});
+  await openHome(page);
+  await page.evaluate(() => {
+    localStorage.setItem("tanto.character.theme.v1", "hoshiyomi");
+    localStorage.setItem("tanto.character.revealed.v1", JSON.stringify(["hoshiyomi"]));
+  });
+  await beAdmin(page);
+  await page.goto("/");
+  const canvas = page.locator(".world-backdrop canvas");
+  await expect(canvas).toBeAttached();
+  const shot = () => canvas.evaluate((cv: HTMLCanvasElement) => cv.toDataURL());
+  await expect.poll(async () => (await shot()).length).toBeGreaterThan(5000);
+  const first = await shot();
+  await page.waitForTimeout(600);
+  expect(await shot()).toBe(first);
+});
+
+for (const id of ["hoshiyomi", "diva"]) {
+  test(`ホーム（T069）：${id} の律は右端に座り、吹き出しが律にかぶらない`, async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 760 });
+    // 特別な衣装の絵はリポジトリにない。律の大きさが決まるよう、小さな絵を返す
+    const dot = Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==", "base64");
+    await page.route("**/special/**", (route) => route.fulfill({ status: 200, contentType: "image/png", body: dot }));
+    await openHome(page);
+    await page.evaluate((theme) => {
+      localStorage.setItem("tanto.character.theme.v1", theme);
+      localStorage.setItem("tanto.character.revealed.v1", JSON.stringify([theme]));
+    }, id);
+    await beAdmin(page);
+    await page.goto("/");
+    const button = page.locator(".home-dock .dock-peek-button");
+    const bubble = page.locator(".home-dock .dock-bubble");
+    await expect(button).toBeVisible();
+    await expect(bubble).toBeVisible();
+    const buttonBox = (await button.boundingBox())!;
+    const bubbleBox = (await bubble.boundingBox())!;
+    // ふつうの衣装はタブのアイコンを避けて内側に座るので、右端（画面の右から 12px 以内）にいれば課金衣装の位置
+    expect(buttonBox.x + buttonBox.width).toBeGreaterThanOrEqual(390 - 12);
+    expect(bubbleBox.x + bubbleBox.width).toBeLessThanOrEqual(buttonBox.x);
+  });
+}

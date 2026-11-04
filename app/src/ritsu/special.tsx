@@ -14,6 +14,7 @@ import { SakuraLayer } from "./SignatureSakura";
 import { CurtainLayer } from "./SignatureCurtain";
 import { StageLightsHost, stageCheer } from "./StageLights";
 import { ScreenBirdHost } from "./ScreenBird";
+import { BackdropHost } from "./Backdrop";
 
 export type MoveName = "entrance" | "finish";
 type Playing = { theme: string; name: MoveName; line?: Line; onEnd?: () => void };
@@ -160,6 +161,7 @@ export function SpecialMoveLayer() {
         })()}
       <ScreenBirdHost theme="hakama" />
       <StageLightsHost />
+      <BackdropHost />
       {scale && <ReactionFx key={scale.at} kind={scale.kind} correct={scale.correct} />}
       {left > 0 && <div className="tryon-badge">試着中　あと {Math.ceil(left / 60000)} 分</div>}
       {farewell && <div className="tryon-badge">{farewell}</div>}

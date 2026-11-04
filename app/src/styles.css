@@ -1844,6 +1844,17 @@ mark.twin-diff {
   max-width: calc(50% + min(16.667vw, 120px) - 78px);
   bottom: 34px;
 }
+/* 課金衣装の律はタブのアイコンにかからないので、解く画面と同じ右端に座る（吹き出しは右端にいる前提の位置）。広い画面では本文の幅に収める */
+.home-dock:has(.perch.cape, .perch.branch, .perch.stage, .perch.books, .perch.ring) {
+  left: max(0px, calc(50% - 360px));
+  right: max(0px, calc(50% - 360px));
+}
+.home-dock .dock-peek-button:has(.perch.cape, .perch.branch, .perch.stage, .perch.books, .perch.ring) {
+  left: auto;
+}
+.home-dock .dock-peek-button:has(.perch.cape, .perch.branch) {
+  right: 0;
+}
 /* 律がタブの縁に座る分、ホームの一番下（フッター）を上げて、律にかぶらないようにする */
 body:has(.home-dock) .footer {
   margin-bottom: 110px;
@@ -3515,6 +3526,41 @@ html[data-world="diva"]:has(.stage-lights) body {
     animation: none;
   }
 }
+/* 動く背景：body の色があると奥の絵が隠れるので、色は html に移し、グラデーションは背景の層に持たせる（舞台の照明と同じ） */
+html[data-world]:has(.world-backdrop) body {
+  background: none;
+}
+html[data-world="hoshiyomi"]:has(.world-backdrop) { background: #0d1230; }
+html[data-world="nocturne"]:has(.world-backdrop) { background: #0d0a14; }
+html[data-world="yukihana"]:has(.world-backdrop) { background: #090f26; }
+html[data-world="hakama"]:has(.world-backdrop) { background: #fff4f8; }
+.world-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+html[data-world="hoshiyomi"] .world-backdrop { background: linear-gradient(#0d1230, #1d2447 60%, #27305f); }
+html[data-world="nocturne"] .world-backdrop { background: linear-gradient(#0d0a14, #211a30 70%, #2c2240); }
+html[data-world="yukihana"] .world-backdrop { background: linear-gradient(#090f26, #142048 70%, #1f2d5e); }
+html[data-world="hakama"] .world-backdrop { background: linear-gradient(#fff4f8, #fdeef3); }
+.world-backdrop canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* 上の帯：幅が本文と同じなので、奥が動くと帯が途中で切れて見える。色だけ画面の端まで伸ばす */
+html:has(.world-backdrop) .appbar {
+  box-shadow: 0 0 0 100vmax color-mix(in srgb, var(--bg) 72%, transparent);
+  clip-path: inset(0 -100vmax);
+}
+/* 解いている画面：粒が文字の横に来ると点や読点に見えるので、内容の後ろに下地を敷いて、粒を文字に紛れない濃さまで落とす */
+html:has(.world-backdrop) .page.playing main {
+  background: color-mix(in srgb, var(--bg) 74%, transparent);
+  box-shadow: 0 0 0 8px color-mix(in srgb, var(--bg) 74%, transparent);
+  border-radius: 2px;
+}
 .curtain-fx {
   position: fixed;
   inset: 0;
@@ -3673,8 +3719,8 @@ html[data-world="diva"]:has(.stage-lights) body {
   display: none;
 }
 .ritsu-dock:has(.perch.branch) .dock-bubble {
-  right: 118px;
-  max-width: calc(100% - 130px);
+  right: 152px;
+  max-width: calc(100% - 164px);
   z-index: 2;
 }
 .screen-bird {
