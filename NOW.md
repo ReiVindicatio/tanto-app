@@ -2,32 +2,43 @@
 
 > **このファイルは毎回上書きする。**作業のリストは `tickets/README.md`（ボード）、機能の一覧は `docs/features.md`、履歴は git と `docs/decisions/`。
 
-**更新：2026-11-02（昼）**
+**更新：2026-11-04**
 
-## 再開メモ（2026-11-02 夜。T069 の続き。ここから読む）
+## 再開メモ（2026-11-04。T069 の続き。ここから読む）
 
-**方針（ユーザー）**：課金衣装は1着ずつ確認しながら作る。衣装ごとに全く別の固有要素（カードのレアリティ演出の方向）。背景とアプリの色は衣装に紐づけ、選ぶ場所はなくした。📖 `docs/ritsu-special-ideas.md`
+**方針（ユーザー）**：課金衣装は1着ずつ確認しながら作る。衣装ごとに全く別の固有要素を持たせる。絵・声・動画は git にも `app/public/` にも入れず R2 だけ（リポジトリは public）。📖 `docs/ritsu-special-ideas.md`・`docs/ritsu-special-costumes.md`
 
-- **星詠み：push 済み**（`02a8c6c`）。音と口パクはユーザー OK。特別な衣装の「準備中」は一般の人に見せたままでよい（ユーザー）。夜空の中身（暗い星）と全画面の見直しは未着手
-- **司書：push 済み**。全画面「万巻の開架」と、左右に控える本6冊。ユーザーの実機確認待ち。残り：立ち絵が太ももで切れている（`g8/nocturne/look-1.png` を base-smile にして base-* と talk-base-* を作り直し、切り抜いて R2 へ）
-- **歌姫：服を相談中**。ユーザーは旧案6（青緑とローズゴールド）の形でピンク主役を希望。候補は `audio/samples_char/g8/diva2/look-q*.png`（p1〜p6 はスカートの前が開いて太ももが見えたので使わない）（0/6 枚）。見せるページは scratchpad の `diva/page.py`、公開先 https://claude.ai/artifact/WkhHM865jDRheZSy8moSvD 。決まったら全画面「幕が下りて開く」の試作へ。`pipeline/ritsu_special.json` の歌姫の手元変更（薄紫の服）は未 commit で、捨ててよい
-- **通常衣装の足のコマ：作業中**（`pipeline/ritsu_sit_plate.py`。約220枚中 86 枚）。止まっていたら make を同じ ID で流し直せば続きから。全部できたら apply → 点検ページ（scratchpad の `reviewpage.py`、公開先 https://claude.ai/artifact/5KfaE8WDyEdJUwrCtNScHN ）をユーザーに出す。×の絵を直してから `app/public/chars/` を push
-- **歌姫の全画面**：幕が下りて開く「アンコール」（仮の名前）はユーザー OK。https://claude.ai/artifact/JF7mppGQCiDrGvawLB6uVU 。律が幕にかぶる点は直した
-- **袴と雪花の素案（夜の作業）**：全画面の試作は仮の絵で動く（袴：桜吹雪が画面を吹き飛ばす https://claude.ai/artifact/ — 下に記入。雪花：画面が凍って本物の画面が破片になって割れる）。絵の候補は `themes/<ID>/proto/`（sit/pose/face の -1 -2）。できたら scratchpad の `night/build.py <S> <ID> sit=sit-1 pose=pose-2 face=face-1` で組み直して公開し、ユーザーに見せる。本番には入れない
-- **その後**：最後に赤黒のロック衣装（`docs/ritsu-special-costumes.md` のメモ）
+**5着（星詠み・司書・雪花・袴・歌姫）は全部組み込み済みで配信中（`4bbc5a5` まで。CI 成功）。**今は管理者だけが着られる。
 
-scratchpad は消えることがある。作業の絵は `audio/samples_char/themes/<ID>/proto/` と `g8/` にある（git の外）。
+- **固有モーション**：動画 AI（Veo）で律ごと動かす。律を押すとモーション、全画面の技は節目（全問正解・レベルアップ・お披露目）と律のページの「決め」だけ。本数は雪花10・司書10・星詠み9・歌姫9・袴8（どれもレア2を含む）。作り方は `pipeline/ritsu_motion.py`、指示は `pipeline/ritsu_motions.json`、案は `docs/ritsu-motion-ideas.md`。見切れは禁止、継ぎ目はピタッと重ねる
+- **動く背景（2026-11-04、ユーザー OK）**：星詠み＝星と流れ星、司書＝ほこりと紙、雪花＝雪とオーロラ、袴＝花びら、歌姫＝今の舞台照明。`app/src/ritsu/Backdrop.tsx`・`backdropScenes.ts`。解く画面は粒が文字に紛れないよう下地を敷いて薄くした。実機の電池・発熱は未確認
+- **ホーム**：課金衣装の律は右端に座る（吹き出しのかぶりを直した。2026-11-04）
 
-## 2026-11-02 ユーザーが外出中に進めていること
+**残っていること**
 
-ユーザーの指示：足の壊れた絵の直し・管理者の表示の切り替え・衣装の一覧の分割と鍵の印・テーマを選べるように・横切るのをやめる・登場の動画を抑える・残りの衣装を一気に作る・固有の仕組み。結果は下の「夜の作業の記録」の末尾に無人のスクリプトが足す。戻ったら `docs/ritsu-special-ideas.md` の表の案を見てもらい、残すものを決める。人の目で見ていない絵は `audio/samples_char/sheets/`（`ritsu-<ID>.png`）
+- ユーザーの実機確認で出たものを直す（モーションの継ぎ目、背景の重さ）。私の確認はスマホ幅のブラウザまでで、iPhone 実機では見ていない
+- 星詠み：`tip`（帽子のつばを上げる）は保留（天秤が急に大きくなる）。`gavel` は天秤が少し大きくなる。`bite` は月が分かりにくい。立ち絵の smug・jito に消し残しの点。セリフと声が新衣装（帽子と金の天秤）に合うか未確認
+- 歌姫：「光のリボン」のセリフ4本の書き換えと声の作り直し（新しい衣装に合っていない）
+- 確認待ちの小件：雪花に顔のカットインを足すか、自動モーションが案内の吹き出しを消す件、司書の本が「はじめる」の文字に少しかかる件
+- 動画まわりの古いコードの整理（全着がカットインになった）。星詠みの古い `base-smile-dawn`・`tall`・動画は未使用
+- `docs/features.md` の T069 の行とチケット `tickets/T069-special-costumes.md` が古い（固有モーション・動く背景が書かれていない）
+- 販売まわりは未着手：試着、決済、AI 絵の表示
+- あとで：赤黒のロック衣装（レザー・ロングブーツ・ストリート）、マーチングバンド
+
+**気をつけること**
+
+- CI：`86e5170` で `e2e/swipe.spec.ts` の「少し斜めにはじいても」が1回落ちた（スクロール量が 0 でなく 2px）。手元で90回流しても再現せず、次の push では通った。原因は不明。また落ちたら調べる
+- push はテストの結果を終了コードで確かめてから。`gh` はないので、CI は GitHub の API を curl で見る
+- 確認ページ（private）：モーション https://claude.ai/artifact/R6WAeGh7qAbh6eifwmnDV9 、背景 https://claude.ai/artifact/UwXLyhWk6KyxQMyeDQZnix
+
+scratchpad は消えることがある。作業の絵は `audio/samples_char/themes/<ID>/` と `g8/` にある（git の外）。
 
 ## 現在地
 
 - M1（基盤）完了。M2（拡充）を進行中
 - 公開先：https://tantan.reivindicatio0321.workers.dev/（main に push すると自動で更新）。リポジトリは public
 - データ：予備（7科目×16年度）・司法（H23〜R08）の短答。カード合計 9,759枚（名寄せ後）。解説のある肢カード 11,612（民法の2019年以前も含む）・問の解説 367問
-- **2026-10-27：キャラクター「律」（T063 完了・T064 完了・T065 実装中）**。律は画面の下の欄の縁に腰かけ、聞き流し・肢で解く・問で解く・模試・ホーム・科目・マイページに出る。律のページ（`/ritsu`：衣装・表情・背景・セリフ帳・アルバム）、お披露目の画面、セリフ（`app/src/ritsu/lines.json`）と声（`app/public/voices/ritsu/`）、動き（足・まばたき・仕草・こっくり・口パクは声の大きさに合わせる・感情の記号）。経験値の式を変えた（初めての肢は正解2・不正解1、期限が来た復習は正解3・不正解1、解き直しは0）。マイページを「記録」「設定」に分けた。衣装は いつもの・ひだまりニット・ほしぞらパジャマ・ゆるふわパーカー・図書館の日・模試の朝（ブレザー）・春（spring）・雨の日のおさんぽ（rain）・夏休みのひまわり（summer）・朝のジョギング（jersey） の10着ができている（2026-10-28〜11-01 にパーカー・図書館・ブレザー・春・雨・夏・ジャージを push 済み）
+- **2026-10-27：キャラクター「律」（T063 完了・T064 完了・T065 実装中）**。律は画面の下の欄の縁に腰かけ、聞き流し・肢で解く・問で解く・模試・ホーム・科目・マイページに出る。律のページ（`/ritsu`：衣装・表情・背景・セリフ帳・アルバム）、お披露目の画面、セリフ（`app/src/ritsu/lines.json`）と声（`app/public/voices/ritsu/`）、動き（足・まばたき・仕草・こっくり・口パクは声の大きさに合わせる・感情の記号）。経験値の式を変えた（初めての肢は正解2・不正解1、期限が来た復習は正解3・不正解1、解き直しは0）。マイページを「記録」「設定」に分けた。衣装は いつもの・ひだまりニット・ほしぞらパジャマ・ゆるふわパーカー・図書館の日・模試の朝（ブレザー）・春（spring）・雨の日のおさんぽ（rain）・夏休みのひまわり（summer）・朝のジョギング（jersey）・浴衣（yukata）・秋（autumn）・冬（winter）・ハロウィン（halloween）・クリスマス（christmas）・試験の日（exam） の16着（push 済み）。ほかに課金衣装が5着
 - 2026-10-26〜27 に済ませたこと（push 済み）
   - T061 聞き流しのアニメ風の声：既定の声1は Gemini の音声合成（Agent Platform の `gemini-3.8-flash-tts`・Leda・舌足らずの指示。キーは `.secrets/google-vertex-key`）、声2は今までの Chirp。各 17,246本を R2 に（声1は安全フィルターなどで作れない17本が声2で流れる）。科目の画面・年度の行（🎧）からも聞き流せる。「AI 音声」の表示は消した（ユーザー）
   - T013 民法の2019年以前の解説：現行の条文で書き、説明できない肢 270 は law_changed（解説なし・肢カードから外し、問の画面に「正誤が変わっている可能性」）。解説 1,497 肢。指示 explain-v5、📖 決定024・025。聞き流しの答えの音声も作り直した
@@ -43,38 +54,16 @@ scratchpad は消えることがある。作業の絵は `audio/samples_char/the
   - CI の修正：よく似た肢を続けて解くモードの1枚目に別の組の相手が出て、2枚目のヒントになっていた（7fc8247）
   - 検索エンジン：トップの生の HTML に `/q/` へのリンク。Search Console・Bing Webmaster Tools に登録
 - ユーザーが「やらない」と決めたもの：T004 の残り（現行法での○×）、解説の人の確認（誤り報告が来たら対応）、早押し・2択などのゲーム系、聞き流しの読み間違いの細かい直し（「方」の ほう／かた など文脈で決まるもの）、条文・判例の穴埋めカード（オリジナル問題になるため）、Duolingo 風の仕組み（学習の道・毎日のクエスト・ストリークのお守り・実績）、プッシュ通知・一般教養の取り込み・スマホアプリ化（2026-10-25 時点で「微妙」）
-- 外部サービス：Google Cloud（無料トライアル。2027-01-24 まで・残り約45,000円（2026-10-26 時点、声1の生成の前）。Cloud TTS のキーは `.secrets/google-tts-key`、Gemini の音声合成のキーは `.secrets/google-vertex-key`。どちらも git に入れない）、Cloudflare R2（ユーザーが有効にした。無料枠の範囲）
-- 誤り報告（D1 の reports）は 2026-10-25 に確かめて0件
+- 外部サービス：Google Cloud（無料トライアル。2027-01-24 まで・残り約15,000円（2026-11-03 時点、ユーザーの確認。衣装の絵と動画で減った）。Cloud TTS のキーは `.secrets/google-tts-key`、Gemini の音声合成のキーは `.secrets/google-vertex-key`。どちらも git に入れない）、Cloudflare R2（ユーザーが有効にした。無料枠の範囲）
+- 誤り報告（D1 の reports）は 2026-10-25 に確かめて0件（それ以降は確かめていない）
 
 ## 次の一手（提案）
 
-00. **T069 特別な衣装：ユーザーが「星詠みの裁定者」を確かめる（2026-11-02 の予定）**
-   - 管理者でログインして 律のページ → 衣装 → 星詠み。お披露目（連作の絵と全画面の動画）のあと、律のページの「管理者：演出を確かめる」で 登場・決め・小さな決め を流せる
-   - ユーザーに見てほしい点：動画の登場の後半で光が強く顔が白くなる（作り直すか）／小さな決めポーズの切り抜き（ふつうの絵の出来は `audio/samples_char/sheets/` の一覧画像）／画面の飾り（落ちる星・吹き出し）
-   - 絵・声・動画は R2 の `special/hoshiyomi/`。git にも `app/public/` にも入れない。手順は `docs/ritsu-special-costumes.md`
-   - **舞台の歌姫の見本を、長いスカートで作り直した**（`audio/samples_char/g8/diva/`。古い案は `g8/diva-old-short-skirt/`）。ユーザーに見せて次の特別な衣装を決める
-   - 夜の間に動いたものの記録はこのファイルの末尾。**コードの続きは残っていない**（途中で止まっても、`T065` の残りの衣装は下の手順で1着ずつ作り直せる。作った絵は残っていて、ない絵だけを作る）
-   - ユーザーの感想（2026-11-02）：現状はとても良い。ただ普段の画面の差が星くらいなので、根本から違う要素がほしい。案は `docs/ritsu-special-ideas.md`
-   - **ユーザーの依頼で、星詠みで24案を全部試作した（管理者にだけ見える）。律のページの「案」タブで切り替えられる。ユーザーが見て、残すものを決める**（残すと決めたものを本番の形に直し、ほかの衣装へ広げるのはそのあと）
-   - 素材の作り直し：`pipeline/ritsu_special_more.py`（あるものは作らない。だめな絵は `themes/<ID>/more/` の png を動かしてから流す）。上げるのは `ritsu_special_finish.py upload <ID>`（変わったものだけ）
-   - T066・T067・T068 はユーザーの確認待ち（実装レビュー）
-
-0. **T065 の続き：残り6着の衣装を作る**（2026-11-01、ジャージ（jersey）を作って push した。ユーザーは「1着ずつ、頼まれたら次へ」。次は yukata。夏・ジャージは寝そべって足をばたつかせる動きが小さく、寝そべる向きがこれまでと逆かもしれないが、ユーザーが受け入れた）
-   - 設計（10着ぶん）：`pipeline/ritsu_costumes.json`。選んだ見本（pick）も書いてある。選んだ見本と一枚絵の絵は `pipeline/ritsu_picks/`（`audio/samples_char/` は git に入らないので、別の端末ではこちらを使う。選ばなかった案は元の端末の `audio/samples_char/g8/` だけ）
-   - 1着ずつ：`CHAR_PY=<Pillow のある python> python3 pipeline/ritsu_theme.py build <ID>`（絵ひとそろい約60枚 → 切り抜き → 弱い口パクの作り直し（ふつうの絵だけ） → セリフと声 → `app/src/ritsu/costumes.json` に追加 → 確認用の一覧画像 `/tmp/ritsu-<ID>.png`）。残りの順番は yukata autumn winter halloween christmas exam
-     - Pillow：`python3 -m venv /tmp/ritsu-venv && /tmp/ritsu-venv/bin/pip install pillow`（この端末では /tmp/ritsu-venv に作った。/tmp なので再起動で消える）。cwebp（`brew install webp`）と ffmpeg も要る。キーは `.secrets/google-vertex-key`（git に入っていないので、別の端末には手で置く）
-     - 作ったら一覧画像をユーザーに見てもらう：足が3本になっていないか（パーカーで寝そべる絵・寝転びかけの絵に出た）、寝そべる絵の向き（足が右）、足先が切れていないか、髪型・服が見本と同じか、寝転びかけの絵（pick の mid）、寝そべって足を動かす2枚（lie-kick）で足がちゃんと動いているか（図書館は動きが小さいまま採用）
-     - だめな絵は消さずに `audio/samples_char/themes/<ID>/rejected-N/` へ動かし、その絵だけ作り直す（`char_image.sit_set`／`motion_set` は、ない絵だけを作る）。寝そべる絵を作り直したら、それを元にした lie-kick・mid-lie も作り直す
-     - 2026-10-28 に指示を直した：全身の絵に手足の数の指示（`char_image.py` の LIMBS）、寝転びかけの絵は「座った足を残さない」、足を動かす絵は「動きをはっきり」。直したあとのブレザー・春・雨・夏・ジャージでは、足が3本の絵は出なかった
-     - 2026-10-30 に足を振るコマの見切れを直した（`char_cut.py` の swing_box：足を貼り替える範囲を縁の少し上から・体の幅＋左右15%に。縁より下の余白を幅の35%→40%、CSS も -40px）。既存の衣装も切り直した
-   - **生成が遅い原因**（2026-10-28 に調べた）：画像のモデルの回数の制限（429）は地域ごとではなくプロジェクト全体で、9地域を回してもほぼ同時に断られる。1枚の生成は5〜15秒で、残りは待ち時間。パーカーは約9分（制限の前）、図書館は約70分かかった。速くするには、Google Cloud のコンソール（IAM と管理 → 割り当て、`gemini-2.5-flash-image`）で上限を上げる申請をするしかない（無料トライアルでは上げられないかもしれない）。ログに1枚ごとの秒数と断られた回数が出る
-   - **腰かける絵の大きさと位置**（2026-10-28 に直して公開）：表情や仕草が変わるたびに大きさと位置が跳ねていたのを、衣装ごとに1つの倍率・中心で切るようにした（`char_cut.py` の sit_ref）。新しい衣装も build で同じように切られる。確かめるときは、表情と仕草を同じ場所で順に出す GIF を作ると分かりやすい。寝そべる絵・寝転びかけの絵の頭の大きさは衣装によって少し違うが、そろえると絵の幅からはみ出すので、そのまま（気になれば画面側の幅も含めて直す）
-   - 開く条件は今は全部 Lv.5。そろったら、レベルの付け方（経験値の線形・どのレベルで開くか）とまとめて見直す（ユーザー）
-   - 設計書・作り方の注意：`docs/ritsu-costumes.md`、経緯：`tickets/T065-ritsu-room.md`
+0. **T069：上の再開メモの「残っていること」から、ユーザーの実機確認の結果を見て決める。**T066・T067・T068・T069 はユーザーの確認待ち（実装レビュー）
 1. **ユーザーがしばらく使ってみて、引っかかったことから決める**（2026-10-25：機能はかなりそろったので、案を出し続けるより実際の使い心地から決める、で区切った）
 2. **確かめごと（待ち）**
    - Google Cloud の請求で、声1の生成費用を確かめる（使ったトークン：出力 約818万・入力 約302万。2.5 Flash の単価なら約85ドル）
-   - 検索：2026-10-30 ごろに `site:tantan.reivindicatio0321.workers.dev` の件数、Search Console のサイトマップの状態・「ページ」の数を見る
+   - 検索（2026-10-30 ごろの予定を過ぎた。結果の記録なし）：`site:tantan.reivindicatio0321.workers.dev` の件数、Search Console のサイトマップの状態・「ページ」の数を見る
    - 司法 R08 は最終合格発表（2026-11-11）後に告知・議事要旨をもう一度確認する
    - 誤り報告がたまっていないか（`docs/reports.md`）
 3. **解説の仕組みの直し**（T013 で見つけた。頼まれたら）：検査で全角カンマ「，」と読点「、」を同じ文字とみなす／同じ文の肢には同じ law_changed を自動で付ける。474条2項（「利害関係を有する第三者」→「正当な利益を有する者」）の扱いの揺れ（名前の変更として書いた肢3・law_changed 1：shiho-2018-minpo-q20-a）
@@ -83,6 +72,17 @@ scratchpad は消えることがある。作業の絵は `audio/samples_char/the
 
 ## 作ったものの手入れ
 
+- **ふつうの衣装（T065。16着そろった）を作り直すとき**：開く条件は `app/src/ritsu/costumes.json`（Lv.5〜70。ブレザーと試験の日は模試）
+  - 設計（10着ぶん）：`pipeline/ritsu_costumes.json`。選んだ見本（pick）も書いてある。選んだ見本と一枚絵の絵は `pipeline/ritsu_picks/`（`audio/samples_char/` は git に入らないので、別の端末ではこちらを使う。選ばなかった案は元の端末の `audio/samples_char/g8/` だけ）
+  - 1着ずつ：`CHAR_PY=<Pillow のある python> python3 pipeline/ritsu_theme.py build <ID>`（絵ひとそろい約60枚 → 切り抜き → 弱い口パクの作り直し（ふつうの絵だけ） → セリフと声 → `app/src/ritsu/costumes.json` に追加 → 確認用の一覧画像 `/tmp/ritsu-<ID>.png`）
+    - Pillow：`python3 -m venv /tmp/ritsu-venv && /tmp/ritsu-venv/bin/pip install pillow`（この端末では /tmp/ritsu-venv に作った。/tmp なので再起動で消える）。cwebp（`brew install webp`）と ffmpeg も要る。キーは `.secrets/google-vertex-key`（git に入っていないので、別の端末には手で置く）
+    - 作ったら一覧画像をユーザーに見てもらう：足が3本になっていないか（パーカーで寝そべる絵・寝転びかけの絵に出た）、寝そべる絵の向き（足が右）、足先が切れていないか、髪型・服が見本と同じか、寝転びかけの絵（pick の mid）、寝そべって足を動かす2枚（lie-kick）で足がちゃんと動いているか（図書館は動きが小さいまま採用）
+    - だめな絵は消さずに `audio/samples_char/themes/<ID>/rejected-N/` へ動かし、その絵だけ作り直す（`char_image.sit_set`／`motion_set` は、ない絵だけを作る）。寝そべる絵を作り直したら、それを元にした lie-kick・mid-lie も作り直す
+    - 2026-10-28 に指示を直した：全身の絵に手足の数の指示（`char_image.py` の LIMBS）、寝転びかけの絵は「座った足を残さない」、足を動かす絵は「動きをはっきり」。直したあとのブレザー・春・雨・夏・ジャージでは、足が3本の絵は出なかった
+    - 2026-10-30 に足を振るコマの見切れを直した（`char_cut.py` の swing_box：足を貼り替える範囲を縁の少し上から・体の幅＋左右15%に。縁より下の余白を幅の35%→40%、CSS も -40px）。既存の衣装も切り直した
+  - **生成が遅い原因**（2026-10-28 に調べた）：画像のモデルの回数の制限（429）は地域ごとではなくプロジェクト全体で、9地域を回してもほぼ同時に断られる。1枚の生成は5〜15秒で、残りは待ち時間。パーカーは約9分（制限の前）、図書館は約70分かかった。速くするには、Google Cloud のコンソール（IAM と管理 → 割り当て、`gemini-2.5-flash-image`）で上限を上げる申請をするしかない（無料トライアルでは上げられないかもしれない）。ログに1枚ごとの秒数と断られた回数が出る
+  - **腰かける絵の大きさと位置**（2026-10-28 に直して公開）：表情や仕草が変わるたびに大きさと位置が跳ねていたのを、衣装ごとに1つの倍率・中心で切るようにした（`char_cut.py` の sit_ref）。新しい衣装も build で同じように切られる。確かめるときは、表情と仕草を同じ場所で順に出す GIF を作ると分かりやすい。寝そべる絵・寝転びかけの絵の頭の大きさは衣装によって少し違うが、そろえると絵の幅からはみ出すので、そのまま（気になれば画面側の幅も含めて直す）
+    - 設計書・作り方の注意：`docs/ritsu-costumes.md`、経緯：`tickets/T065-ritsu-room.md`
 - **聞き流しの音声**：解説を直したら声ごとに作り直す：`python3 pipeline/tts.py`（声2）と `python3 pipeline/tts.py --voice gemini-leda --workers 4`（声1。費用はクレジットから。同じ文を2回読む失敗は今の声の1.8倍で検出して作り直す）→ `tts_upload.py`（声1は `--voice gemini-leda`）。以下は声2の注意：`python3 pipeline/tts.py`（変わった肢だけ作る。同時に送る数は4が安全。12だと Google 側で 429）→ `python3 pipeline/tts_upload.py`（R2 に上げる。`wrangler` のログインを使う）。読み替えの表は `pipeline/tts_sample.py` と `app/src/listen.ts` の READINGS（同じにする）
 - **ひっかけの型**：指示は `prompts/trap-types-v2.md`・`trap-scope-split-v2.md`、結果は `data/traps/traps.json`、取りまとめは `pipeline/traps.py`。2回分類の一致 87%（κ=0.85）。境目（判例の結論の逆転／範囲／制度の有無）で揺れやすい
 - **模試の材料**：試験時間は R08 の受験案内のもの。司法 H23〜H26 は時間の資料がなく模試にしていない。予備 H29 の結果は文字化け、司法 R07 の科目別得点別人員調は文字が図形で読めない。毎年8月の結果の発表のあと `python3 pipeline/exam_info.py --fetch`
@@ -100,25 +100,3 @@ scratchpad は消えることがある。作業の絵は `audio/samples_char/the
 - R2：保存 10GB・読み出し月1,000万回・配信の転送量は無料（いま約1GB）
 - Workers Builds（デプロイ）：月3,000分・同時1本（無料）
 - Google Cloud TTS（Chirp 3 HD）：毎月100万字まで無料、超えると100万字あたり30ドル（全部作り直すと約132万字）
-
-## 夜の作業の記録（2026-11-01〜02。無人のスクリプトが1行ずつ足す）
-
-- 11-01 23:48 星詠みの一式を作って R2 に上げた（114 個）
-- 11-01 23:53 舞台の歌姫の見本を作り直した（audio/samples_char/g8/diva/）
-- 11-02 01:24 yukata を作って push した（絵は人の目で確かめていない。audio/samples_char/sheets/ritsu-yukata.png）
-- 11-02 02:31 autumn を作って push した（絵は人の目で確かめていない。audio/samples_char/sheets/ritsu-autumn.png）
-- 11-02 03:35 winter を作って push した（絵は人の目で確かめていない。audio/samples_char/sheets/ritsu-winter.png）
-- 11-02 04:44 halloween を作って push した（絵は人の目で確かめていない。audio/samples_char/sheets/ritsu-halloween.png）
-- 11-02 05:48 christmas を作って push した（絵は人の目で確かめていない。audio/samples_char/sheets/ritsu-christmas.png）
-- 11-02 06:57 exam を作れなかった（/private/tmp/claude-502/-Users-masato-b-saito-work-other-law-tanto-app/ba0ef277-cbeb-4d89-a1dc-faf8d38a5519/scratchpad/night-exam.log）
-- 11-02 06:57 夜の作業がすべて終わった
-- 11-02 10:38 試験の日の服と、足を振るコマの作り直しを push した（絵は人の目で確かめていない。audio/samples_char/sheets/ritsu-exam.png・swing-all.png）
-- 11-02 10:04 星詠みの登場を作り直した
-- 11-02 10:57 hakama の一式を作れなかった（/private/tmp/claude-502/-Users-masato-b-saito-work-other-law-tanto-app/ba0ef277-cbeb-4d89-a1dc-faf8d38a5519/scratchpad/job2-hakama.log）
-- 11-02 12:56 nocturne を作って R2 に上げた（179 個）
-- 11-02 14:53 yukihana の一式を作れなかった（/private/tmp/claude-502/-Users-masato-b-saito-work-other-law-tanto-app/ba0ef277-cbeb-4d89-a1dc-faf8d38a5519/scratchpad/job2-yukihana.log）
-- 11-02 16:20 diva を作って R2 に上げた（178 個）
-- 11-02 16:20 すべて終わった
-- 11-02 16:21 残りの特別な衣装のセリフと衣装の表を push した（絵と声と動画は R2。人の目で確かめていない。audio/samples_char/sheets/ritsu-<ID>.png）
-- 11-02 12:15 hakama を作って R2 に上げた（179 個）
-- 11-02 16:23 無人の作業がすべて終わった
