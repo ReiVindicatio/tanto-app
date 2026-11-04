@@ -32,8 +32,11 @@
 
 ## まだ確かめていないこと
 
-- 本番の Cookie でのお試し、iPhone 実機
-- 本番には未反映。push の前に `cd app && npx wrangler d1 migrations apply DB --remote` が要る
+- ログインした本番のアカウントでのお試し、iPhone 実機
+
+## 本番への反映（2026-11-04）
+
+D1 に `special_interest` を追加（ユーザーが実行）し、`cac2ae2` を push。CI 成功。未ログインの確認：全身の絵は 200、ほかの絵・動画・声は 403、お試しと「欲しい」の API は 401。立ち絵を直したので `backup.py make` も流し直した。
 
 ## 完了条件
 

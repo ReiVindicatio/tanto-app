@@ -8,9 +8,9 @@
 
 **方針（ユーザー）**：課金衣装は1着ずつ確認しながら作る。衣装ごとに全く別の固有要素を持たせる。絵・声・動画は git にも `app/public/` にも入れず R2 だけ（リポジトリは public）。📖 `docs/ritsu-special-costumes.md`
 
-**5着（星詠み・司書・雪花・袴・歌姫）は全部組み込み済みで配信中（`4bbc5a5` まで。CI 成功）。**今は管理者だけが着られる。
+**5着（星詠み・司書・雪花・袴・歌姫）は全部組み込み済みで配信中（`4bbc5a5` まで。CI 成功）。**管理者は全着を着られる。
 
-**T070（お試し。2026-11-04）は実装レビュー中。手元に commit 済みで、push も本番反映もまだ。**見本は星詠み（1人1回、20問か48時間、Lv.5 で勝手に着替わる、ログイン必須）。残りの4着は全身の絵1枚・名前・紹介文と「欲しい」。📖 `tickets/T070-special-costume-trial.md`・`docs/decisions/026`。**push の前に必ず `cd app && npx wrangler d1 migrations apply DB --remote`**（表がないまま出すと、退会の処理が失敗する）。push のあと `python3 pipeline/backup.py make` を流し、`pipeline/backup_manifest.json` を commit する（立ち絵4枚を直したため）。
+**T070（お試し。2026-11-04）は本番に反映済みで、ユーザーの実機確認待ち（実装レビュー）。**見本は星詠み（1人1回、20問か48時間、Lv.5 で勝手に着替わる、ログイン必須）。残りの4着は全身の絵1枚・名前・紹介文と「欲しい」。管理者は印を押して「一般で表示中」にすると試せる（自分のアカウントの1回を使う。やり直すには D1 の `special_interest` のその人の行を消し、端末の `tanto.special.trial.v2` も消す）。📖 `tickets/T070-special-costume-trial.md`・`docs/decisions/026`
 
 - **固有モーション**：動画 AI（Veo）で律ごと動かす。律を押すとモーション、全画面の技は節目（全問正解・レベルアップ・お披露目）と律のページの「決め」だけ。本数は雪花10・司書10・星詠み9・歌姫9・袴8（どれもレア2を含む）。作り方は `pipeline/ritsu_motion.py`、指示は `pipeline/ritsu_motions.json`、案は `docs/ritsu-motion-ideas.md`。見切れは禁止、継ぎ目はピタッと重ねる
 - **動く背景（2026-11-04、ユーザー OK）**：星詠み＝星と流れ星、司書＝ほこりと紙、雪花＝雪とオーロラ、袴＝花びら、歌姫＝今の舞台照明。`app/src/ritsu/Backdrop.tsx`・`backdropScenes.ts`。解く画面は粒が文字に紛れないよう下地を敷いて薄くした。実機の電池・発熱は未確認
