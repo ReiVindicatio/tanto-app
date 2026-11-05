@@ -217,7 +217,47 @@ function CastleArt(p: ArtProps) {
   );
 }
 
-const ARTS = { sky: SkyArt, tree: TreeArt, crowd: CrowdArt, shelf: ShelfArt, castle: CastleArt };
+const STICKER_COLORS: Record<string, string> = { kenpo: "#ffd24d", minpo: "#ff4d5e", shoho: "#58c7ff", minso: "#c58bff", keiho: "#ff8a3d", keiso: "#6fe08a", gyosei: "#f5f1ea" };
+const STICKER_SHAPES = [
+  "M 2 -10 L -6 1 L -1 1 L -3 10 L 7 -3 L 1 -3 Z", // 稲妻
+  "M 0 -9 L 2.6 -3 L 9 -2.8 L 4 1.4 L 5.6 8 L 0 4.4 L -5.6 8 L -4 1.4 L -9 -2.8 L -2.6 -3 Z", // 星
+  "M 0 8 C -11 0 -7 -8 0 -4 C 7 -8 11 0 0 8 Z", // ハート
+  "M -8 -6 L 8 -6 L 8 6 L -8 6 Z", // 四角
+  "M 0 -8 A 8 8 0 1 0 0.01 -8 Z", // 丸
+];
+
+/** ギターケースのステッカー：正解した肢 8 個で、科目の色のステッカーが1枚増える。文字は入れない */
+function StickerArt(p: ArtProps) {
+  return (
+    <>
+      <rect width="360" height="460" fill="#120a0c" />
+      <path d="M 180 18 C 206 18 214 34 214 56 L 214 150 C 214 176 262 194 262 262 C 262 300 250 318 250 346 C 250 404 216 442 180 442 C 144 442 110 404 110 346 C 110 318 98 300 98 262 C 98 194 146 176 146 150 L 146 56 C 146 34 154 18 180 18 Z" fill="#1d1a1e" stroke="#4d454c" strokeWidth="2" />
+      <path d="M 180 30 C 198 30 204 42 204 56 L 204 150 C 204 182 250 198 250 262 C 250 298 238 318 238 346 C 238 398 210 430 180 430 C 150 430 122 398 122 346 C 122 318 110 298 110 262 C 110 198 156 182 156 150 L 156 56 C 156 42 162 30 180 30 Z" fill="none" stroke="#3a3338" strokeWidth="1.2" strokeDasharray="4 3" />
+      {SUBJECT_ORDER.map((s, k) => {
+        const n = Math.min(15, Math.floor(countOf(p, s) / 8));
+        return (
+          <g key={s} onClick={() => p.pick(s)} className="sky-group">
+            <rect x={k * (360 / 7)} y="0" width={360 / 7} height="460" fill="transparent" />
+            {Array.from({ length: n }, (_, b) => {
+              const h = hash(`${s}${b}`);
+              const a = ((h % 628) / 100) as number;
+              const rr = 0.2 + ((h >>> 9) % 80) / 100;
+              const low = (h >>> 3) % 5 !== 0; // 胴の広いところに多く
+              const x = 180 + Math.cos(a) * rr * (low ? 68 : 22);
+              const y = (low ? 320 : 100) + Math.sin(a) * rr * (low ? 100 : 62);
+              return <path key={b} d={STICKER_SHAPES[(h >>> 5) % STICKER_SHAPES.length]} transform={`translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${(h >>> 7) % 50 - 25}) scale(${(1 + ((h >>> 11) % 8) / 10).toFixed(2)})`} fill={STICKER_COLORS[s]} stroke="#fff" strokeWidth="1" strokeLinejoin="round" />;
+            })}
+          </g>
+        );
+      })}
+      {SUBJECT_ORDER.map((s, k) => (
+        <text key={s} x={k * (360 / 7) + 26} y="454" fontSize="8" textAnchor="middle" fill={STICKER_COLORS[s]}>{SUBJECT_NAME[s].slice(0, 2)}</text>
+      ))}
+    </>
+  );
+}
+
+const ARTS = { sky: SkyArt, tree: TreeArt, crowd: CrowdArt, shelf: ShelfArt, castle: CastleArt, stickers: StickerArt };
 
 /** 衣装ごとに育つもの：正解した肢から作る。解かなくても減らない。見た目だけで、学習の内容は変わらない */
 export function GrowTab({ theme }: { theme: string }) {

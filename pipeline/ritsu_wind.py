@@ -34,6 +34,9 @@ SETS = {"hoshiyomi": {"wind": dict(neck=(264, 542), head=(280, 409), headr=155, 
                      "keypose": dict(neck=(508, 316), head=(498, 240), headr=86, reach=560, right=0, file="key-pose.png"),
                      "face_box": (390 / 1024, 300 / 1024, 715 / 1024, 515 / 1024), "width": 620, "cloth": False, "clean": True,
                      "ear": "h1-ear-patched.png", "ear_box": (0.3, 0.42, 0.72, 0.6), "ring": "r1-cut.png"},
+        "rock": {"wind": dict(neck=(486, 435), head=(499, 282), headr=150, reach=420, right=0, hair_to=430, file="sit-wind-smile.png"),
+                 "keypose": dict(neck=(504, 235), head=(481, 135), headr=85, reach=560, right=0, hair_to=235, file="key-pose.png"),
+                 "face_box": (330 / 1024, 200 / 1024, 625 / 1024, 410 / 1024), "width": 620, "cloth": False, "clean": True},
         "diva": {"wind": dict(neck=(515, 480), head=(515, 318), headr=190, reach=420, right=0, file="sit-wind-smile.png"),
                  "keypose": dict(neck=(503, 245), head=(503, 187), headr=60, reach=560, right=0, file="key-pose.png"),
                  "face_box": (340 / 1024, 305 / 1024, 690 / 1024, 525 / 1024), "width": 620, "cloth": False, "clean": True},
@@ -59,7 +62,7 @@ def crop_box(im: Image.Image, pad: int) -> tuple[int, int, int, int]:
     return max(0, x0 - pad), max(0, y0 - pad), min(im.width, x1 + pad), min(im.height, y1 + pad)
 
 
-def weight(im: Image.Image, box: tuple, neck: tuple, head: tuple, headr: int, reach: int, right: int, cloth: bool = True, limit: tuple | None = None) -> Image.Image:
+def weight(im: Image.Image, box: tuple, neck: tuple, head: tuple, headr: int, reach: int, right: int, cloth: bool = True, limit: tuple | None = None, hair_to: int | None = None) -> Image.Image:
     a = np.asarray(im).astype(float)
     h, w, _ = a.shape
     r, g, b, al = a[..., 0], a[..., 1], a[..., 2], a[..., 3]
@@ -79,6 +82,8 @@ def weight(im: Image.Image, box: tuple, neck: tuple, head: tuple, headr: int, re
     if limit:  # マントのある範囲だけ（紺のドレスや帽子もマントと同じ色なので、色だけでは分けられない）
         cape &= (xx > nx + limit[0]) & (yy > ny + limit[1]) & (yy < ny + limit[2])
     hair = hairish & (al > 128) & (dh > headr * 0.8)
+    if hair_to is not None:  # 髪より下に赤い服があると、色だけでは髪と分けられない（ロッカーのタータン）
+        hair &= yy < hair_to - box[1]
 
     def grow(m, n=25, blur=9):
         i = Image.fromarray((m * 255).astype("uint8")).filter(ImageFilter.MaxFilter(9)).filter(ImageFilter.MinFilter(5))
@@ -132,7 +137,7 @@ def main(cid: str) -> None:
     im = full.crop(box)
     width = conf["width"]
     save(im, dst / "wind-smile.webp", width)
-    weight(im, box, w["neck"], w["head"], w["headr"], w["reach"], w["right"], conf.get("cloth", True), w.get("limit")).save(dst / "wind-map.png")
+    weight(im, box, w["neck"], w["head"], w["headr"], w["reach"], w["right"], conf.get("cloth", True), w.get("limit"), w.get("hair_to")).save(dst / "wind-map.png")
     for f in FACES:
         if not (src / f"{f}-patched.png").exists():
             print("まだない：", f, flush=True)
@@ -149,7 +154,7 @@ def main(cid: str) -> None:
     box = crop_box(full, 60)
     im = full.crop(box)
     save(im, dst / "keypose.webp", 900)
-    weight(im, box, k["neck"], k["head"], k["headr"], k["reach"], k["right"], k.get("cloth", conf.get("cloth", True))).save(dst / "keypose-map.png")
+    weight(im, box, k["neck"], k["head"], k["headr"], k["reach"], k["right"], k.get("cloth", conf.get("cloth", True)), None, k.get("hair_to")).save(dst / "keypose-map.png")
     print("keypose", 900, round(im.height * 900 / im.width), flush=True)
     save(key(src / "cutin-face.png", False), dst / "cutin.webp", 800)
     if "ear" in conf:  # 耳を折った絵は、耳のまわりだけ重ねる。絵全体を重ねると律が二重に見えた（ユーザー）。表情を替えても使える

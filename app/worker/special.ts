@@ -11,7 +11,7 @@ const TRIAL_COOKIE = "tanto_trial";
 export const TRIAL_COSTUME = "hoshiyomi";
 export const TRIAL_SECONDS = 48 * 3600;
 /** 特別な衣装の ID（「欲しい」で受け付けるもの） */
-export const SPECIAL_COSTUMES = ["hoshiyomi", "hakama", "diva", "nocturne", "yukihana"];
+export const SPECIAL_COSTUMES = ["hoshiyomi", "hakama", "diva", "nocturne", "yukihana", "rock"];
 const PUBLIC = /^[a-z0-9-]+\/base-smile\.webp$/;
 const KEY = /^[a-z0-9-]+\/(voices\/)?[A-Za-z0-9_.-]+\.(webp|png|mp4|mp3)$/;
 const TYPES: Record<string, string> = { webp: "image/webp", png: "image/png", mp4: "video/mp4", mp3: "audio/mpeg" };

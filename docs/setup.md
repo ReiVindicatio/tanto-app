@@ -95,7 +95,7 @@ cd app && npm run build && npx vite preview --port 4176 --strictPort   # 別の�
 node scripts/special-preview.cjs hoshiyomi                     # 窓が開く。--shots <フォルダ> なら撮って終わる
 ```
 
-衣装の ID は `hoshiyomi`（星詠み）`nocturne`（司書）`yukihana`（雪花）`hakama`（袴）`diva`（歌姫）。本番の通行証は使わず、スクリプトが `/special/*` を手元のファイルで返す。
+衣装の ID は `hoshiyomi`（星詠み）`nocturne`（司書）`yukihana`（雪花）`hakama`（袴）`diva`（歌姫）`rock`（ロッカー）。本番の通行証は使わず、スクリプトが `/special/*` を手元のファイルで返す。
 
 実機や本番で見るときは、`ADMIN_EMAILS` に入っているアカウントでログインする。
 

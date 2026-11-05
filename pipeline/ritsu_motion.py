@@ -90,9 +90,20 @@ _ramp = lambda n: np.clip(np.minimum(np.arange(n), np.arange(n)[::-1]) / 36, 0, 
 EDGE = np.outer(np.clip(np.arange(OUT_H) / 36, 0, 1), _ramp(OUT_W))
 
 
-def frames_of(src: Path, old_fig: int | None = None) -> list[np.ndarray]:
+def unmix_red(a: np.ndarray) -> np.ndarray:
+    """赤い光が緑の背景に混ざった黄緑のふちを、赤と透明に分け直す。肌・髪・銀は青が多いので当たらない"""
+    r, g, b = a[..., 0], a[..., 1], a[..., 2]
+    mixed = (r > 60) & (g > 60) & (g > r * 0.35) & (b < g * 0.45)
+    keep = r / np.maximum(r + g, 1)
+    a[..., 0] = np.where(mixed, np.minimum(r + g, 255), r)
+    a[..., 1] = np.where(mixed, b, g)
+    a[..., 3] = np.where(mixed, a[..., 3] * keep, a[..., 3])
+    return a
+
+
+def frames_of(src: Path, old_fig: int | None = None, red_fx: bool = False) -> list[np.ndarray]:
     """色を抜いて、透明度をかけた色（premultiplied）にする。縁の緑は全体で抑える（衣装に緑はない）。
-    old_fig：前の置き方（律の幅）で作った動画を、今の置き方に縮めて直す"""
+    old_fig：前の置き方（律の幅）で作った動画を、今の置き方に縮めて直す。red_fx：光が赤だけの動画の黄緑のふちを消す"""
     with tempfile.TemporaryDirectory() as t:
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(src), "-vf", f"fps={FPS}", f"{t}/%03d.png"], check=True)
         out = []
@@ -109,7 +120,7 @@ def frames_of(src: Path, old_fig: int | None = None) -> list[np.ndarray]:
             a = np.asarray(im).astype(float)
             a[..., 3] = np.where(a[..., 3] < 64, 0, a[..., 3]) * EDGE
             a[..., 1] = np.minimum(a[..., 1], np.maximum(a[..., 0], a[..., 2]) + 6)
-            out.append(a)
+            out.append(unmix_red(a) if red_fx else a)
     return out
 
 
@@ -157,7 +168,7 @@ def make(cid: str) -> None:
             if (SPECIAL / cid / f"motion-{m['name']}.mp4").exists():
                 continue
             rv.generate(STYLE + m["text"], first, src, m.get("seconds", 6), "9:16", last=first)
-        encode(frames_of(src, m.get("old_fig")), SPECIAL / cid / f"motion-{m['name']}.mp4")
+        encode(frames_of(src, m.get("old_fig"), m.get("red_fx", False)), SPECIAL / cid / f"motion-{m['name']}.mp4")
 
 
 if __name__ == "__main__":

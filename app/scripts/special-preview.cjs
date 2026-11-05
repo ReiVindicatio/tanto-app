@@ -8,7 +8,7 @@ const fs = require("fs");
 const path = require("path");
 
 const [id, flag, dir] = process.argv.slice(2);
-if (!id) throw new Error("衣装の ID を渡す（hoshiyomi nocturne yukihana hakama diva）");
+if (!id) throw new Error("衣装の ID を渡す（hoshiyomi nocturne yukihana hakama diva rock）");
 const ROOT = path.resolve(__dirname, "../../audio/samples_char/special");
 if (!fs.existsSync(path.join(ROOT, id))) throw new Error(`${ROOT}/${id} がない。python3 pipeline/ritsu_special_finish.py download ${id} で R2 から取り戻す`);
 const TYPES = { webp: "image/webp", png: "image/png", mp4: "video/mp4", mp3: "audio/mpeg" };

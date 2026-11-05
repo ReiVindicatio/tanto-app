@@ -11,6 +11,7 @@ import { SignatureLayer } from "./Signature";
 import { PagesLayer } from "./SignaturePages";
 import { IceLayer } from "./SignatureIce";
 import { SakuraLayer } from "./SignatureSakura";
+import { BoltLayer } from "./SignatureBolt";
 import { CurtainLayer } from "./SignatureCurtain";
 import { StageLightsHost, stageCheer } from "./StageLights";
 import { ScreenBirdHost } from "./ScreenBird";
@@ -135,7 +136,7 @@ export function SpecialMoveLayer() {
       {signature &&
         (() => {
           const kind = kitOf(signature).live?.signature;
-          const Layer = kind === "pages" ? PagesLayer : kind === "ice" ? IceLayer : kind === "sakura" ? SakuraLayer : kind === "curtain" ? CurtainLayer : SignatureLayer;
+          const Layer = kind === "pages" ? PagesLayer : kind === "ice" ? IceLayer : kind === "sakura" ? SakuraLayer : kind === "curtain" ? CurtainLayer : kind === "bolt" ? BoltLayer : SignatureLayer;
           return (
             <Layer
               key={signature}
@@ -362,6 +363,13 @@ function ReactionFx({ kind, correct }: { kind: Reaction; correct: boolean }) {
     );
   }
   if (kind === "light") return <span className={`react-light ${correct ? "ok" : "ng"}`} aria-hidden="true" />;
+  if (kind === "bolt") {
+    return (
+      <svg className={`react-bolt ${correct ? "ok" : "ng"}`} viewBox="-30 -50 60 100" aria-hidden="true">
+        <path d="M 10 -46 L -20 6 L -3 6 L -12 46 L 22 -10 L 4 -10 Z" fill={correct ? "#ff3b4e" : "#6d6470"} stroke={correct ? "#ffd2d6" : "#39343c"} strokeWidth="2" strokeLinejoin="round" />
+      </svg>
+    );
+  }
   if (kind === "page") {
     return (
       <svg className={`react-page ${correct ? "ok" : "ng"}`} viewBox="-50 -36 100 72" aria-hidden="true">
@@ -398,6 +406,7 @@ function ReactionFx({ kind, correct }: { kind: Reaction; correct: boolean }) {
 
 /** 律が腰かけるもの（#1）。形が単純なのでコードで描く（AI の絵は頼んでいない人物が入った） */
 export function CostumeSeat({ kind }: { kind: Seat }) {
+  if (kind === "amp") return null; // アンプは座り絵に描いてある
   if (kind === "branch") {
     return (
       <svg className="moon-seat seat-branch" viewBox="0 0 200 110" aria-hidden="true">

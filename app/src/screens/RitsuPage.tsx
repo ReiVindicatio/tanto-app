@@ -243,7 +243,7 @@ export default function RitsuPage() {
       </div>
 
       <div className="ritsu-tabs" role="tablist">
-        {[...TABS, ...(wearing && kit.grow === "sky" && fxOn("sky") ? [{ id: "sky" as Tab, name: kit.growName }] : []), ...(wearing && fxOn("story") ? [{ id: "story" as Tab, name: "物語" }] : []), ...(admin && special ? [{ id: "ideas" as Tab, name: "案" }] : [])].filter((t) => t.id !== "album" || revealed.length > 0).map((t) => (
+        {[...TABS, ...(wearing && (kit.grow === "sky" || kit.grow === "stickers") && fxOn("sky") ? [{ id: "sky" as Tab, name: kit.growName }] : []), ...(wearing && fxOn("story") ? [{ id: "story" as Tab, name: "物語" }] : []), ...(admin && special ? [{ id: "ideas" as Tab, name: "案" }] : [])].filter((t) => t.id !== "album" || revealed.length > 0).map((t) => (
           <button key={t.id} role="tab" aria-selected={tab === t.id} className={tab === t.id ? "chosen" : ""} onClick={() => openTab(t.id)}>
             {t.name}
             {t.id === "sky" && !skySeen && <span className="tab-new" aria-label="新しい" />}

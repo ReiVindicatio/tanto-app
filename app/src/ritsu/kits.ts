@@ -1,7 +1,7 @@
 // 特別な衣装の固有の仕組み（docs/ritsu-special-ideas.md）：絵だけでなく、座る場所・粒・答えたときの反応・育つもの・画面の色を衣装ごとに持つ
-export type Seat = "moon" | "branch" | "spot" | "book" | "ice";
-export type Reaction = "scale" | "petals" | "light" | "page" | "crystal";
-export type Grow = "sky" | "tree" | "crowd" | "shelf" | "castle";
+export type Seat = "moon" | "branch" | "spot" | "book" | "ice" | "amp";
+export type Reaction = "scale" | "petals" | "light" | "page" | "crystal" | "bolt";
+export type Grow = "sky" | "tree" | "crowd" | "shelf" | "castle" | "stickers";
 
 export type Kit = {
   /** 律のまわりの粒・答えたときに飛ぶもの */
@@ -32,7 +32,7 @@ export type Kit = {
   /** 律のページの動画が古い服のままなので、流さない */
   noStageVideo?: boolean;
   /** 生きた座り絵と全画面の技がある衣装（1着ずつ作る）。strength・dir は絵の動く強さと向き、flip は左右反転（律は画面の右端にいるので、右へ流れる絵は反転する）。 */
-  live?: { kind: "cape" | "books" | "ring" | "branch" | "stage"; signature: "meteor" | "pages" | "ice" | "sakura" | "curtain"; strength: number; dir: [number, number]; flip: boolean; scale?: boolean };
+  live?: { kind: "cape" | "books" | "ring" | "branch" | "stage" | "amp"; signature: "meteor" | "pages" | "ice" | "sakura" | "curtain" | "bolt"; strength: number; dir: [number, number]; flip: boolean; scale?: boolean };
 };
 
 export const KITS: Record<string, Kit> = {
@@ -98,6 +98,22 @@ export const KITS: Record<string, Kit> = {
     chapters: ["第一話　銀の鍵", "第二話　崩れた本の山", "第三話　夜明けの閉館"],
     world: { name: "真夜中の図書館", dark: true },
     worldBg: "bg.webp",
+  },
+  rock: {
+    particle: "⚡",
+    seat: "amp",
+    reaction: "bolt",
+    grow: "stickers",
+    growName: "ステッカー",
+    unit: "ステッカー",
+    pal: "ピックの子",
+    evo: ["路上", "ライブハウス", "主役"],
+    chapters: ["第一話　赤いギター", "第二話　はじめての路上", "第三話　雨上がりのアンコール"],
+    world: { name: "夜の路地", dark: true },
+    worldBg: "bg.webp",
+    noStageVideo: true,
+    motions: { clips: [{ name: "guitar" }, { name: "nod" }, { name: "pick" }, { name: "bolt" }, { name: "amp" }, { name: "sticker" }, { name: "cocoa" }, { name: "neon" }, { name: "feedback", rare: true }, { name: "cat", rare: true }], geo: [-0.2327, -0.8108, 1.4654] },
+    live: { kind: "amp", signature: "bolt", strength: 0.45, dir: [1, 0], flip: false },
   },
   yukihana: {
     particle: "❄",

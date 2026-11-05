@@ -199,7 +199,7 @@ function ScreenBird({ theme }: { theme: string }) {
     listeners.add(react);
     // スクロールや画面の切り替えのあとも、とまっている物についていく。全画面の技の間は隠す
     const follow = window.setInterval(() => {
-      const hide = !!document.querySelector(".pages-catch, .signature, .curtain-fx");
+      const hide = !!document.querySelector(".pages-catch, .signature, .curtain-fx, .bolt-fx");
       if (button.current) button.current.style.visibility = hide ? "hidden" : "visible";
       if (flying) return;
       if (fixedSpot) {

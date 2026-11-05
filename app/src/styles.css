@@ -1845,11 +1845,11 @@ mark.twin-diff {
   bottom: 34px;
 }
 /* 課金衣装の律はタブのアイコンにかからないので、解く画面と同じ右端に座る（吹き出しは右端にいる前提の位置）。広い画面では本文の幅に収める */
-.home-dock:has(.perch.cape, .perch.branch, .perch.stage, .perch.books, .perch.ring) {
+.home-dock:has(.perch.cape, .perch.branch, .perch.stage, .perch.amp, .perch.books, .perch.ring) {
   left: max(0px, calc(50% - 360px));
   right: max(0px, calc(50% - 360px));
 }
-.home-dock .dock-peek-button:has(.perch.cape, .perch.branch, .perch.stage, .perch.books, .perch.ring) {
+.home-dock .dock-peek-button:has(.perch.cape, .perch.branch, .perch.stage, .perch.amp, .perch.books, .perch.ring) {
   left: auto;
 }
 .home-dock .dock-peek-button:has(.perch.cape, .perch.branch) {
@@ -2628,6 +2628,7 @@ body:has(.home-dock) .footer {
 html[data-costume="hoshiyomi"] { --kit-a: #d9b45a; --kit-b: #e8c35a; --kit-deep: #141a3d; --kit-deep2: #1d2447; --kit-on: #f7efd8; }
 html[data-costume="hakama"] { --kit-a: #e58fae; --kit-b: #f49bb9; --kit-deep: #5b2a43; --kit-deep2: #7a3a5c; --kit-on: #fff1f6; }
 html[data-costume="diva"] { --kit-a: #c9a7ff; --kit-b: #9fe8ff; --kit-deep: #1b1640; --kit-deep2: #2a2350; --kit-on: #f6efff; }
+html[data-costume="rock"] { --kit-a: #ff4d5e; --kit-b: #ff8b95; --kit-deep: #160a0c; --kit-deep2: #2a1215; --kit-on: #fff0f1; }
 html[data-costume="nocturne"] { --kit-a: #b9b5d6; --kit-b: #dcd8ef; --kit-deep: #14101f; --kit-deep2: #241c36; --kit-on: #ece8f7; }
 html[data-costume="yukihana"] { --kit-a: #8ccbe8; --kit-b: #c6ecff; --kit-deep: #16264f; --kit-deep2: #22386a; --kit-on: #eef9ff; }
 html[data-costume] .ritsu-bubble {
@@ -2862,6 +2863,8 @@ html[data-world="diva"] { --brand: #d2b4ff; --brand-hover: #e3cfff; --brand-soft
 html[data-world="diva"] body { background: linear-gradient(#0f0b26, #231c48 65%, #3a2a5e) fixed; }
 html[data-world="nocturne"] { --brand: #c7c2e6; --brand-hover: #dcd8ef; --brand-soft: rgba(199, 194, 230, 0.14); --bg: #181322; --bg-subtle: #211a30; --chrome: #120e1b; --border: #3f3555; --border-subtle: #30283f; }
 html[data-world="nocturne"] body { background: linear-gradient(#0d0a14, #211a30 70%, #2c2240) fixed; }
+html[data-world="rock"] { --brand: #ff5a68; --brand-hover: #ff8b95; --brand-soft: rgba(255, 90, 104, 0.15); --bg: #150b0d; --bg-subtle: #211114; --chrome: #0e0708; --border: #5a2a30; --border-subtle: #3e1e22; }
+html[data-world="rock"] body { background: linear-gradient(#090506, #1c0d10 70%, #2c1216) fixed; }
 html[data-world="hakama"] { --brand: #bf4f76; --brand-hover: #a84066; --brand-soft: rgba(191, 79, 118, 0.12); --bg: #fffafb; --bg-subtle: #fdf0f4; --chrome: #fff3f7; --border: #f0cdd8; --border-subtle: #f6dfe6; }
 html[data-world="hakama"] body { background: linear-gradient(#fff4f8, #fdeef3) fixed; }
 html[data-world="yukihana"] { --brand: #a9dcff; --brand-hover: #c6ecff; --brand-soft: rgba(169, 220, 255, 0.14); --bg: #0f1a38; --bg-subtle: #162347; --chrome: #0b1330; --border: #2c3c6c; --border-subtle: #223058; }
@@ -2870,11 +2873,14 @@ html[data-world="yukihana"] body { background: linear-gradient(#090f26, #142048 
 :where(html[data-world="hoshiyomi"]) button { color: #1d2447; }
 :where(html[data-world="diva"]) button { color: #1b1640; }
 :where(html[data-world="nocturne"]) button { color: #14101f; }
+:where(html[data-world="rock"]) button { color: #160a0c; }
 :where(html[data-world="yukihana"]) button { color: #0d1430; }
 html[data-world="hoshiyomi"] .card.hero .segmented button.chosen,
 html[data-world="hoshiyomi"] .ritsu-tabs button.chosen { color: #1d2447; }
 html[data-world="diva"] .card.hero .segmented button.chosen,
 html[data-world="diva"] .ritsu-tabs button.chosen { color: #1b1640; }
+html[data-world="rock"] .card.hero .segmented button.chosen,
+html[data-world="rock"] .ritsu-tabs button.chosen { color: #160a0c; }
 html[data-world="nocturne"] .card.hero .segmented button.chosen,
 html[data-world="nocturne"] .ritsu-tabs button.chosen { color: #14101f; }
 html[data-world="yukihana"] .card.hero .segmented button.chosen,
@@ -2973,6 +2979,7 @@ html[data-fx~="listenstage"] .listen::before {
   0%, 100% { opacity: 0; }
   20%, 60% { opacity: 1; }
 }
+.react-bolt,
 .react-page,
 .react-crystal {
   position: fixed;
@@ -3174,6 +3181,7 @@ button.admin-badge.off {
 @media (prefers-reduced-motion: reduce) {
   .react-petals,
   .react-light,
+  .react-bolt,
   .react-page,
   .react-crystal,
   .special-move-title {
@@ -3469,6 +3477,22 @@ html[data-world] .appbar {
   visibility: hidden;
 }
 /* 歌姫：舞台照明は画面の奥（問題文の後ろ）を通る（StageLights.tsx）。全画面の幕は SignatureCurtain.tsx */
+/* ロッカー：アンプごと描いた絵。縦に長いので、歌姫より小さく置く */
+.cape-figure.fig-amp {
+  right: -4%;
+  bottom: 13%;
+  width: 104%;
+  z-index: 1;
+}
+.perch.amp.dock-ritsu,
+.dock-peek-button:has(.perch.amp) {
+  right: 12px;
+}
+.ritsu-dock:has(.perch.amp) .dock-bubble {
+  right: 128px;
+  max-width: calc(100% - 140px);
+  z-index: 2;
+}
 .cape-figure.fig-stage {
   right: -6%;
   bottom: 14%;
@@ -4125,4 +4149,69 @@ html:has(.world-backdrop) .page.playing main {
   letter-spacing: 0.2em;
   white-space: nowrap;
   writing-mode: vertical-rl;
+}
+
+/* 全画面の技（ロッカー「紅雷の一撃」） */
+.bolt-fx {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  overflow: hidden;
+  cursor: pointer;
+  background: #070304;
+  opacity: 0;
+  transition: opacity 0.18s;
+}
+.bolt-fx.on {
+  opacity: 1;
+}
+.bolt-stage {
+  position: absolute;
+  inset: 0;
+}
+.bolt-stage > canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.bolt-alley {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.55;
+}
+.bolt-pose {
+  position: absolute;
+  left: 50%;
+  bottom: 6%;
+  width: min(96vw, 62vh);
+  transform: translateX(-50%);
+  opacity: 0;
+}
+.bolt-pose canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.bolt-name {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 11%;
+  text-align: center;
+  color: #fff;
+  font-size: clamp(1.8rem, 9vw, 2.8rem);
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-shadow: 0 0 6px #ff3b4e, 0 0 22px #ff3b4e, 0 2px 0 #4a0a12;
+  opacity: 0;
+}
+.bolt-flash {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  opacity: 0;
+  pointer-events: none;
 }

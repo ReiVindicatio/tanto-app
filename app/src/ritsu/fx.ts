@@ -3,16 +3,16 @@
 import { useEffect, useState } from "react";
 
 export const IDEAS = [
-  { id: "moon", no: 1, name: "座る場所が違う（三日月・桜の枝・光の輪・浮かぶ本・氷の結晶）" },
+  { id: "moon", no: 1, name: "座る場所が違う（三日月・桜の枝・光の輪・浮かぶ本・氷の結晶・アンプ）" },
   { id: "stagevideo", no: 2, name: "律のページの立ち絵が動画で動く" },
   { id: "sitvideo", no: 3, name: "ちびキャラがマントを揺らし続ける（にっこりのとき）" },
   { id: "bar", no: 4, name: "○×の欄とタブの縁が衣装の色になる" },
   { id: "pal", no: 5, name: "相棒（押すと反応）" },
   { id: "shoot", no: 7, name: "答えると肢が衣装の粒になって飛ぶ" },
-  { id: "scale", no: 8, name: "答えたときの反応（天秤・花びら・照明・本・結晶）" },
+  { id: "scale", no: 8, name: "答えたときの反応（天秤・花びら・照明・本・結晶・稲妻）" },
   { id: "combo", no: 9, name: "連続正解で覚醒（3・5・10問）" },
   { id: "redeem", no: 10, name: "前に間違えた肢を解けたときの専用のひとこと" },
-  { id: "sky", no: 11, name: "育つもの（夜空・桜の木・客席・本棚・氷の城のタブ）" },
+  { id: "sky", no: 11, name: "育つもの（夜空・桜の木・客席・本棚・氷の城・ステッカーのタブ）" },
   { id: "evolve", no: 12, name: "解いた数で衣装が進化する" },
   { id: "story", no: 13, name: "解いた数で開く物語（「物語」タブ）" },
   { id: "dawn", no: 14, name: "色違い：夜明けのマント（星詠みの立ち絵のにっこり）" },
@@ -26,7 +26,7 @@ export const IDEAS = [
   { id: "card", no: 24, name: "今日の成果カード" },
   { id: "cape", no: 31, name: "生きた座り絵（星詠み：風を受けるマント。司書：控える本）" },
   { id: "signature", no: 32, name: "押すと出る全画面の技（星詠み：裁定の流星。司書：万巻の開架）" },
-  { id: "backdrop", no: 33, name: "動く背景（星・本のほこりと紙・雪とオーロラ・花びら）" },
+  { id: "backdrop", no: 33, name: "動く背景（星・本のほこりと紙・雪とオーロラ・花びら・雨とネオン）" },
 ] as const;
 
 export type IdeaId = (typeof IDEAS)[number]["id"];

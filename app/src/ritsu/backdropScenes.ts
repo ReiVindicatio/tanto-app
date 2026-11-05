@@ -1,4 +1,4 @@
-// 課金衣装の動く背景を描く（docs/ritsu-special-ideas.md）。星詠み＝星のまたたきと流れ星、司書＝ほこりと紙、雪花＝雪とオーロラ、袴＝花びら。
+// 課金衣装の動く背景を描く（docs/ritsu-special-ideas.md）。星詠み＝星のまたたきと流れ星、司書＝ほこりと紙、雪花＝雪とオーロラ、袴＝花びら、ロッカー＝雨とネオンの路地。
 // 問題文の後ろを通るので、どれも淡く、数を絞る。端末の負担を抑えるため 30fps まで。画面が隠れている間は止まる
 type Size = { w: number; h: number };
 type Scene = (c: CanvasRenderingContext2D, s: Size, now: number, dt: number) => void;
@@ -197,7 +197,82 @@ function petals(size: Size): Scene {
   };
 }
 
-const SCENES: Record<string, (size: Size) => Scene> = { hoshiyomi: stars, nocturne: library, yukihana: snow, hakama: petals };
+/** 深紅のロッカー：雨上がりの夜の路地。絵の上に、雨の筋とネオンの稲妻のまたたきを重ねる。文字の後ろを通るので暗く保つ */
+function alley(size: Size): Scene {
+  const photo = new Image();
+  photo.src = `${import.meta.env.BASE_URL}special/rock/bg.webp`;
+  const rain = Array.from({ length: countFor(size, 9000, 30, 90) }, () => ({ x: Math.random(), y: Math.random(), len: rand(8, 22), v: rand(0.5, 0.9), a: rand(0.06, 0.2) }));
+  // 両側の壁のネオン。左右の端に寄せて、問題文の後ろを避ける
+  const neon = [
+    { x: 0.05, y: 0.12, s: 0.13, p: rand(0, 6) },
+    { x: 0.95, y: 0.2, s: 0.16, p: rand(0, 6) },
+    { x: 0.04, y: 0.68, s: 0.11, p: rand(0, 6) },
+    { x: 0.96, y: 0.74, s: 0.12, p: rand(0, 6) },
+  ];
+  const bolt = (c: CanvasRenderingContext2D, x: number, y: number, s: number) => {
+    c.beginPath();
+    for (const [i, [dx, dy]] of ([[0.2, -1], [-0.45, 0.1], [0, 0.1], [-0.25, 1], [0.5, -0.2], [0.08, -0.2], [0.2, -1]] as const).entries()) {
+      if (i) c.lineTo(x + dx * s, y + dy * s);
+      else c.moveTo(x + dx * s, y + dy * s);
+    }
+    c.closePath();
+  };
+  let surge = 0;
+  let wait = rand(3, 8);
+  return (c, { w, h }, now, dt) => {
+    const t = now / 1000;
+    c.fillStyle = "#0b0608";
+    c.fillRect(0, 0, w, h);
+    if (photo.complete && photo.naturalWidth) {
+      const k = Math.max(w / photo.naturalWidth, h / photo.naturalHeight);
+      c.globalAlpha = 0.42;
+      c.drawImage(photo, (w - photo.naturalWidth * k) / 2, (h - photo.naturalHeight * k) / 2, photo.naturalWidth * k, photo.naturalHeight * k);
+      c.globalAlpha = 1;
+    }
+    wait -= dt;
+    if (wait <= 0) {
+      surge = 1;
+      wait = rand(6, 14);
+    }
+    surge = Math.max(0, surge - dt * 2.4);
+    c.lineJoin = "round";
+    for (const n of neon) {
+      const buzz = Math.sin(t * 2.1 + n.p) > -0.86 ? 1 : 0.35; // ときどき、ネオンがちらつく
+      const on = Math.min(1, (0.34 + 0.08 * Math.sin(t * 7 + n.p)) * buzz + surge * 0.5);
+      const s = n.s * Math.min(w, h * 0.6);
+      bolt(c, n.x * w, n.y * h, s);
+      c.strokeStyle = `rgba(255, 60, 80, ${on * 0.55})`;
+      c.lineWidth = 7;
+      c.stroke();
+      c.strokeStyle = `rgba(255, 190, 196, ${on})`;
+      c.lineWidth = 1.6;
+      c.stroke();
+    }
+    c.strokeStyle = "#cfd8e6";
+    c.lineWidth = 1;
+    for (const d of rain) {
+      d.y += d.v * dt;
+      if (d.y > 1.05) {
+        d.y = -0.05;
+        d.x = Math.random();
+      }
+      c.globalAlpha = d.a;
+      c.beginPath();
+      c.moveTo(d.x * w, d.y * h);
+      c.lineTo(d.x * w - d.len * 0.12, d.y * h + d.len);
+      c.stroke();
+    }
+    c.globalAlpha = 1;
+    // 足もとに映るネオン
+    const floor = c.createLinearGradient(0, h * 0.82, 0, h);
+    floor.addColorStop(0, "rgba(255, 50, 70, 0)");
+    floor.addColorStop(1, `rgba(255, 50, 70, ${0.14 + surge * 0.14})`);
+    c.fillStyle = floor;
+    c.fillRect(0, h * 0.82, w, h * 0.18);
+  };
+}
+
+const SCENES: Record<string, (size: Size) => Scene> = { hoshiyomi: stars, nocturne: library, yukihana: snow, hakama: petals, rock: alley };
 
 /** 動く背景のある衣装か（歌姫は舞台照明がその役をする） */
 export const hasBackdrop = (theme: string) => theme in SCENES;
