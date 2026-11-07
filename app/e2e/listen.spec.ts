@@ -102,7 +102,8 @@ test("作っておいた音声（既定は声1）で、肢 → 考える間（�
   expect(await spoken(page)).toEqual([]); // 端末の読み上げは使っていない
 
   await page.getByRole("button", { name: "止める" }).click();
-  await expect(page.locator(".listen-summary")).toContainText("聞いた 2 肢・答えた 1 肢");
+  // 3肢目に入ってから止めるまでに、テスト用の短い音声（0.12秒）で3肢目を聞き終えることがある（並列で重いとき）。記録は答えた1肢だけ
+  await expect(page.locator(".listen-summary")).toContainText(/聞いた [23] 肢・答えた 1 肢/);
 });
 
 test("問の文は読み上げないが画面に出し、答えを読んだら答えと解説を下に出す（T064）", async ({ page }) => {

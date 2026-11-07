@@ -130,7 +130,7 @@ node scripts/special-preview.cjs hoshiyomi                     # 窓が開く。
 | Cloudflare D1 `tantan`・R2 `tantan-audio` | 回答ログ・音声と衣装 | 設定は `app/wrangler.jsonc`。表の変更は `app/migrations/`（README） |
 | Firebase `tantan-adce9` | Google ログイン | サーバーの鍵は要らない（公開鍵で ID トークンを検証する） |
 | Google Cloud（プロジェクト番号は `char_image.py`） | 絵・動画・声の生成 | 無料トライアルのクレジット。**期限は 2027-01-24**。残りは `NOW.md` |
-| Search Console・Bing Webmaster Tools | 検索の登録 | ユーザーのアカウント |
+| Search Console・Bing Webmaster Tools | 検索の登録 | ユーザーのアカウント。Bing などへは IndexNow でも URL を知らせる：配信のあと `cd app && node scripts/indexnow.mjs --since <YYYY-MM-DD>`（初回だけ全件。T073） |
 
 無料枠の上限は `NOW.md` の「上限のメモ」。
 

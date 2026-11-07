@@ -132,3 +132,4 @@
 | [T070](T070-special-costume-trial.md) | 課金衣装のお試しと、買う前の見せ方 | 完了 | M2 | 中 | T069 |
 | [T071](T071-login-and-level-chip.md) | ログインの場所と、上の帯の Lv の行き先 | 完了 | M2 | 中 | T025・T065 |
 | [T072](T072-search-indexing.md) | 検索に載るページを増やす（サイトマップを読ませる・タイトル） | 完了 | M3 | **高** | T044・T045 |
+| [T073](T073-indexnow.md) | IndexNow で Bing などに URL を知らせる | 完了 | M3 | 中 | T072 |

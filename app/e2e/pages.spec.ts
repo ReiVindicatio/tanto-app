@@ -57,3 +57,13 @@ test("検索エンジン向け：robots.txt は /api/ だけ止め、サイト�
   await expect(page.locator('meta[name="description"]')).toHaveAttribute("content", /非公式/);
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", /workers\.dev\/$/);
 });
+
+test("IndexNow の鍵のファイルが配信され、サイトマップの目次から全部の URL を数えられる（T073）", async ({ request }) => {
+  const { KEY, parseSitemap } = await import("../scripts/indexnow.mjs");
+  expect((await (await request.get(`/${KEY}.txt`)).text()).trim()).toBe(KEY);
+  const children = parseSitemap(await (await request.get("/sitemap.xml")).text());
+  expect(children.length).toBeGreaterThan(10);
+  const year = parseSitemap(await (await request.get(new URL(children.at(-1)![0]).pathname)).text());
+  expect(year.length).toBeGreaterThan(0);
+  expect(year[0][1]).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+});
