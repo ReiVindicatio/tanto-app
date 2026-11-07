@@ -59,11 +59,41 @@ export function setPath(info) {
   return `/q/${info.id}/`;
 }
 
-export function setTitle(info) {
-  return `${info.exam_name} ${info.exam.era}（${info.exam.year}年） ${info.subject_name}`;
+/** 和暦の年（H24 → 平成24年、R01 → 令和元年）。検索では「平成24年 司法試験」のように書かれる（T072） */
+export function wareki(exam) {
+  const m = /^([HR])(\d+)$/.exec(exam.era ?? "");
+  if (!m) return exam.era;
+  const n = Number(m[2]);
+  return `${m[1] === "H" ? "平成" : "令和"}${n === 1 ? "元" : n}年`;
 }
 
-function page({ title, description, path, body, noteLinks = "" }) {
+export function setTitle(info) {
+  return `${info.exam_name} ${wareki(info.exam)}（${info.exam.year}年） ${info.subject_name}`;
+}
+
+/** 問のテーマ。問題文が「〇〇に関する次の…」の形のときだけ取り出す（T072）。「ＡとＢの婚姻」のような事例の当事者名を含むものは、テーマにならないので使わない */
+export function topic(q) {
+  const m = /^([^。、，,【】「」（）()\s]{1,20}?)に関する/.exec(q.stem.trim());
+  return m && !m[1].startsWith("次の") && !/[Ａ-Ｚ甲乙丙丁]/.test(m[1]) ? m[1] : "";
+}
+
+/** 問の見出し（h1・タイトル・パンくずで同じもの） */
+export function questionHeading(info, q) {
+  const t = topic(q);
+  return `${setTitle(info)} 第${q.number}問${t ? `（${t}）` : ""}`;
+}
+
+/** パンくずの構造化データ（T072） */
+function breadcrumbs(items) {
+  const ld = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map(([name, path], i) => ({ "@type": "ListItem", position: i + 1, name, item: SITE + path })),
+  };
+  return `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, "\\u003c")}</script>`;
+}
+
+function page({ title, description, path, body, noteLinks = "", head = "" }) {
   const url = SITE + path;
   return `<!doctype html>
 <html lang="ja">
@@ -81,7 +111,7 @@ function page({ title, description, path, body, noteLinks = "" }) {
 <meta property="og:image" content="${SITE}/icons/icon-512.png">
 <meta name="twitter:card" content="summary">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<style>${CSS}</style>
+${head}<style>${CSS}</style>
 </head>
 <body>
 <header><a class="brand" href="/">${APP}<span>（${SUBTITLE}）</span></a></header>
@@ -165,7 +195,8 @@ export function renderQuestion(info, data, q, { prev, next } = {}) {
   const exps = new Map(data.explanations.map((e) => [e.statement_id, e]));
   // 問の解説（T018）：肢ごとの○×が決まらない問
   const qe = (data.question_explanations ?? []).find((x) => x.question_id === q.id);
-  const title = `${setTitle(info)} 第${q.number}問｜${APP}`;
+  const heading = questionHeading(info, q);
+  const title = `${heading}の過去問と解説｜${APP}`;
   const subs = (q.sub_questions ?? []).map((s) => para(`${s.marker} ${s.stem}`)).join("");
   const ctx = (q.context ?? []).map((c) => `<div class="ctx">${c.kind ? `<div class="muted">【${esc(c.kind)}】</div>` : ""}${para(c.text)}</div>`).join("");
   const list = sts.length ? `<ol class="st">${sts.map((s) => `<li><span class="lbl">${esc(s.label)}</span>${esc(s.text)}</li>`).join("")}</ol>` : "";
@@ -181,7 +212,7 @@ export function renderQuestion(info, data, q, { prev, next } = {}) {
     })
     .join("");
   const body = `<div class="crumbs"><a href="/q/">過去問の一覧</a> › <a href="${setPath(info)}">${esc(setTitle(info))}</a> › 第${q.number}問</div>
-<h1>${esc(setTitle(info))} 第${q.number}問</h1>
+<h1>${esc(heading)}</h1>
 ${lawNote(q)}
 ${para(q.stem)}
 ${subs}
@@ -202,18 +233,37 @@ ${answers}
     path: questionPath(q),
     body,
     noteLinks: pdfs ? `<p>元の PDF：<br>${pdfs}</p>` : "",
+    head: breadcrumbs([
+      ["過去問の一覧", "/q/"],
+      [setTitle(info), setPath(info)],
+      [`第${q.number}問`, questionPath(q)],
+    ]),
   });
 }
 
 /** 年度・科目ごとの問の一覧 */
 export function renderSet(info, data) {
-  const items = data.questions.map((q) => `<li><a href="${questionPath(q)}">第${q.number}問</a>　<span class="muted">${esc(summary(q, 60))}</span></li>`).join("");
+  const items = data.questions
+    .map((q) => {
+      const t = topic(q);
+      return `<li><a href="${questionPath(q)}">第${q.number}問${t ? `（${esc(t)}）` : ""}</a>　<span class="muted">${esc(summary(q, 60))}</span></li>`;
+    })
+    .join("");
   const body = `<div class="crumbs"><a href="/q/">過去問の一覧</a> › ${esc(setTitle(info))}</div>
 <h1>${esc(setTitle(info))}（短答式）</h1>
 <p>${data.questions.length}問。問ごとに問題文と、公式の正解・AI が生成した解説を見られます。</p>
 <a class="cta" href="/subjects/${esc(info.subject)}">アプリで解く</a>
 <ul class="list">${items}</ul>`;
-  return page({ title: `${setTitle(info)}の短答式過去問｜${APP}`, description: `${setTitle(info)}の短答式試験の全${data.questions.length}問。問題文・公式の正解・解説。`, path: setPath(info), body });
+  return page({
+    title: `${setTitle(info)}の短答式過去問と解説｜${APP}`,
+    description: `${setTitle(info)}の短答式試験の全${data.questions.length}問。問題文・公式の正解・解説。`,
+    path: setPath(info),
+    body,
+    head: breadcrumbs([
+      ["過去問の一覧", "/q/"],
+      [setTitle(info), setPath(info)],
+    ]),
+  });
 }
 
 /** 一覧の入口（科目 → 試験 → 年度） */
@@ -239,13 +289,37 @@ ${blocks}`;
   return page({ title: `予備試験・司法試験 短答式の過去問一覧｜${APP}`, description: "予備試験・司法試験の短答式過去問を年度・科目ごとに。問題文・公式の正解・AI 生成の解説。", path: "/q/", body });
 }
 
-export function sitemap(paths) {
+const lastmod = (d) => (d ? `<lastmod>${esc(d)}</lastmod>` : "");
+
+/** URL の一覧。entries は [path, 更新日（YYYY-MM-DD か空）] */
+export function sitemap(entries) {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${paths.map((p) => `<url><loc>${esc(SITE + p)}</loc></url>`).join("\n")}
+${entries.map(([p, d]) => `<url><loc>${esc(SITE + p)}</loc>${lastmod(d)}</url>`).join("\n")}
 </urlset>
 `;
 }
+
+/** サイトマップの目次（T072）。1枚の大きなサイトマップが「取得できませんでした」のまま読まれなかったので、試験・年度ごとに分ける */
+export function sitemapIndex(entries) {
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${entries.map(([p, d]) => `<sitemap><loc>${esc(SITE + p)}</loc>${lastmod(d)}</sitemap>`).join("\n")}
+</sitemapindex>
+`;
+}
+
+/** 問の更新日：その問の解説の生成日のうち新しいもの */
+function questionDate(data, q) {
+  const ids = new Set(q.statements ?? []);
+  const dates = [
+    ...data.explanations.filter((e) => ids.has(e.statement_id)).map((e) => e.generated_at),
+    ...(data.question_explanations ?? []).filter((e) => e.question_id === q.id).map((e) => e.generated_at),
+  ].filter(Boolean);
+  return dates.sort().at(-1) ?? "";
+}
+
+const newest = (ds) => ds.filter(Boolean).sort().at(-1) ?? "";
 
 function write(dist, path, html) {
   const file = join(dist, path, "index.html");
@@ -255,25 +329,35 @@ function write(dist, path, html) {
 
 export function build(dist) {
   const index = JSON.parse(readFileSync(join(dist, "data", "index.json"), "utf-8"));
-  const paths = ["/", "/subjects", "/q/"];
   write(dist, "/q/", renderIndex(index.sets));
+  // 試験・年度ごとのサイトマップ（アプリの画面の URL は入れない。/ と同じページとして canonical を付けている）
+  const groups = new Map();
   let n = 0;
   for (const info of index.sets) {
     const data = JSON.parse(readFileSync(join(dist, "data", info.file), "utf-8"));
+    const key = `${info.exam.type}-${info.exam.year}`;
+    const group = groups.get(key) ?? [];
+    groups.set(key, group);
     write(dist, setPath(info), renderSet(info, data));
-    paths.push(setPath(info));
+    const dates = data.questions.map((q) => questionDate(data, q));
+    group.push([setPath(info), newest(dates)]);
     data.questions.forEach((q, i) => {
       write(dist, questionPath(q), renderQuestion(info, data, q, { prev: data.questions[i - 1], next: data.questions[i + 1] }));
-      paths.push(questionPath(q));
+      group.push([questionPath(q), dates[i]]);
       n++;
     });
   }
-  writeFileSync(join(dist, "sitemap.xml"), sitemap(paths));
-  return { sets: index.sets.length, questions: n, urls: paths.length };
+  const all = [...groups.values()].flat();
+  const files = [["/sitemaps/top.xml", [["/", ""], ["/q/", newest(all.map(([, d]) => d))]]]];
+  for (const [key, entries] of [...groups].sort()) files.push([`/sitemaps/${key}.xml`, entries]);
+  mkdirSync(join(dist, "sitemaps"), { recursive: true });
+  for (const [path, entries] of files) writeFileSync(join(dist, path), sitemap(entries));
+  writeFileSync(join(dist, "sitemap.xml"), sitemapIndex(files.map(([path, entries]) => [path, newest(entries.map(([, d]) => d))])));
+  return { sets: index.sets.length, questions: n, urls: all.length + 2, sitemaps: files.length };
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const dist = fileURLToPath(new URL("../dist/", import.meta.url));
   const r = build(dist);
-  console.log(`問ごとのページ：${r.questions}問・一覧 ${r.sets}件・サイトマップ ${r.urls} URL`);
+  console.log(`問ごとのページ：${r.questions}問・一覧 ${r.sets}件・サイトマップ ${r.sitemaps}枚 ${r.urls} URL`);
 }

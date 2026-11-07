@@ -6,8 +6,12 @@ test("問のページ：問題文が見え、正解と解説は折りたたま�
   const data = await (await request.get("/data/yobi-2023-minpo.json")).json();
   const q = data.questions.find((x: { number: number }) => x.number === 11);
   await page.goto(`/q/${q.id}/`);
-  await expect(page).toHaveTitle(/予備試験 R05（2023年） 民法 第11問｜たんたん/);
-  await expect(page.locator("h1")).toHaveText("予備試験 R05（2023年） 民法 第11問");
+  // 和暦で書く（T072）
+  await expect(page).toHaveTitle("予備試験 令和5年（2023年） 民法 第11問の過去問と解説｜たんたん");
+  await expect(page.locator("h1")).toHaveText("予備試験 令和5年（2023年） 民法 第11問");
+  const crumbs = JSON.parse((await page.locator('script[type="application/ld+json"]').textContent()) ?? "{}");
+  expect(crumbs["@type"]).toBe("BreadcrumbList");
+  expect(crumbs.itemListElement.at(-1).item).toMatch(new RegExp(`/q/${q.id}/$`));
   await expect(page.locator("main")).toContainText(data.statements.find((s: { id: string }) => s.id === q.statements[0]).text);
   const answer = page.locator("details.answer");
   await expect(answer.locator(".ai").first()).toBeHidden();
@@ -19,23 +23,37 @@ test("問のページ：問題文が見え、正解と解説は折りたたま�
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", new RegExp(`/q/${q.id}/$`));
 });
 
+test("問題文が「〇〇に関する次の…」なら、テーマを見出しとタイトルに入れる", async ({ page }) => {
+  await page.goto("/q/shiho-2012-keiso-q24/");
+  await expect(page.locator("h1")).toHaveText("司法試験 平成24年（2012年） 刑事訴訟法 第24問（告訴）");
+  await expect(page).toHaveTitle("司法試験 平成24年（2012年） 刑事訴訟法 第24問（告訴）の過去問と解説｜たんたん");
+});
+
 test("一覧から年度・問へたどれ、アプリへ戻れる", async ({ page }) => {
   await page.goto("/q/");
   await page.getByRole("link", { name: "R05" }).first().click();
-  await expect(page.locator("h1")).toContainText("R05");
+  await expect(page.locator("h1")).toContainText("令和5年");
   await page.locator("ul.list a").first().click();
   await expect(page.locator("h1")).toContainText(/第\d+問/); // 行政法は憲法の続きの番号から始まる
   await page.locator("a.cta").click();
   await expect(page.locator(".appbar")).toContainText("たんたん");
 });
 
-test("検索エンジン向け：robots.txt は /api/ だけ止め、サイトマップに問のページがあり、アプリに noindex がない", async ({ page, request }) => {
+test("検索エンジン向け：robots.txt は /api/ だけ止め、サイトマップの目次から問のページへたどれ、アプリに noindex がない", async ({ page, request }) => {
   const robots = await (await request.get("/robots.txt")).text();
   expect(robots).toContain("Disallow: /api/");
   expect(robots).not.toMatch(/Disallow: \/\s*$/m);
-  const sitemap = await (await request.get("/sitemap.xml")).text();
-  expect(sitemap).toContain("/q/yobi-2023-minpo-q11/</loc>");
+  // 目次（T072）→ 試験・年度ごとのサイトマップ → 問のページ。アプリの画面の URL は入れない
+  const index = await (await request.get("/sitemap.xml")).text();
+  expect(index).toContain("<sitemapindex");
+  expect(index).toContain("/sitemaps/yobi-2023.xml</loc>");
+  const child = await request.get("/sitemaps/yobi-2023.xml");
+  expect(child.headers()["content-type"]).toContain("xml");
+  const year = await child.text();
+  expect(year).toMatch(/\/q\/yobi-2023-minpo-q11\/<\/loc><lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/);
+  expect(await (await request.get("/sitemaps/top.xml")).text()).not.toContain("/subjects");
   await page.goto("/");
   await expect(page.locator('meta[name="robots"]')).toHaveCount(0);
   await expect(page.locator('meta[name="description"]')).toHaveAttribute("content", /非公式/);
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", /workers\.dev\/$/);
 });
