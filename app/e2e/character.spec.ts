@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
 import { openHome, openYear, tab } from "./helpers";
+import { inEarlyAccess } from "../src/earlyAccess";
 
 // キャラクター（T063）：肢で解くの答え合わせ（欄の縁からのぞく律と吹き出し）・ホームの案内・はじき方の初回案内と、マイページの出す・出さない
 
@@ -456,7 +457,8 @@ test("お試し（T070）：ログインしていない人には、レベルが�
   });
   await page.goto("/");
   const invite = page.locator(".trial-invite");
-  await expect(invite).toContainText("20問だけ試せます");
+  // ベータ版の間は、お試しではなく特典（ログインすればずっと着られる）を案内する（T074）
+  await expect(invite).toContainText(inEarlyAccess(new Date()) ? "ベータ版の間にログインすると" : "20問だけ試せます");
   await invite.getByRole("button", { name: "閉じる" }).click();
   await expect(invite).toHaveCount(0);
   await page.goto("/");

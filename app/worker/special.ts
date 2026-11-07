@@ -1,12 +1,14 @@
 // 特別な衣装（T069）：絵・声・動画は R2 の special/ に置き、許された人にだけ渡す（リポジトリも app/public/ も公開なので、そこには置かない）。
 // /api/me が通行証（署名つきの Cookie）を出し、/special/<衣装>/<ファイル> がそれを確かめる。img・video・audio は Authorization を付けられないので Cookie にする。
-// 今許すのは管理者（全着）と、お試し中の人（T070。見本の1着だけ・48時間）。買えるようにするときは、/api/me で購入を確かめて通行証を出す
+// 今許すのは管理者（全着）と、お試し中の人（T070。見本の1着だけ・48時間）と、持っている人（T074。ベータ版の特典。持っている衣装だけ）。
+// 買えるようにするときは、購入を special_owned に入れれば、同じ通行証で渡せる
 // 全身の絵（PUBLIC）だけは通行証なしで渡す。買う前に見せるのは、この1枚と名前と紹介文（docs/decisions/026）
 import { objectResponse } from "./audio";
 
 const COOKIE = "tanto_special";
 const PASS_SECONDS = 7 * 24 * 3600;
 const TRIAL_COOKIE = "tanto_trial";
+const OWN_COOKIE = "tanto_own";
 /** お試しできる見本の1着（T070） */
 export const TRIAL_COSTUME = "hoshiyomi";
 export const TRIAL_SECONDS = 48 * 3600;
@@ -40,9 +42,16 @@ export async function trialCookie(userId: string, costume: string, expires: Date
   return `${TRIAL_COOKIE}=${body}.${await sign(`trial.${body}`, key)}; Path=/special; Max-Age=${maxAge}; HttpOnly; Secure; SameSite=Lax`;
 }
 
+/** 持っている衣装の通行証の Set-Cookie（T074）。衣装の一覧は「~」でつなぐ（ID は英小文字・数字・「-」だけ）。署名はほかの通行証と別の文字列にかける */
+export async function ownCookie(userId: string, costumes: string[], key: string, now: Date): Promise<string> {
+  const body = `${encodeURIComponent(userId)}.${costumes.join("~")}.${Math.floor(now.getTime() / 1000) + PASS_SECONDS}`;
+  return `${OWN_COOKIE}=${body}.${await sign(`own.${body}`, key)}; Path=/special; Max-Age=${PASS_SECONDS}; HttpOnly; Secure; SameSite=Lax`;
+}
+
 /** 通行証を消す Set-Cookie */
 export const CLEAR_PASS = `${COOKIE}=; Path=/special; Max-Age=0; HttpOnly; Secure; SameSite=Lax`;
 const CLEAR_TRIAL = `${TRIAL_COOKIE}=; Path=/special; Max-Age=0; HttpOnly; Secure; SameSite=Lax`;
+export const CLEAR_OWN = `${OWN_COOKIE}=; Path=/special; Max-Age=0; HttpOnly; Secure; SameSite=Lax`;
 
 function cookieValue(cookieHeader: string | null, name: string): string | undefined {
   return (cookieHeader ?? "").split(/;\s*/).find((c) => c.startsWith(`${name}=`))?.slice(name.length + 1);
@@ -75,6 +84,15 @@ export async function validTrial(cookieHeader: string | null, path: string, key:
   return sameMac(`trial.${m[1]}`, m[4], key);
 }
 
+/** 持っている衣装の通行証が本物で、期限の内で、持っている衣装のファイルか（T074） */
+export async function validOwned(cookieHeader: string | null, path: string, key: string, now: Date): Promise<boolean> {
+  const value = cookieValue(cookieHeader, OWN_COOKIE);
+  const m = value && /^([^.]+\.([a-z0-9~-]+)\.(\d+))\.([A-Za-z0-9_-]+)$/.exec(value);
+  if (!m || !m[2].split("~").some((c) => path.startsWith(`${c}/`))) return false;
+  if (Number(m[3]) * 1000 <= now.getTime()) return false;
+  return sameMac(`own.${m[1]}`, m[4], key);
+}
+
 /** key が設定されていなければ、だれにも渡さない */
 export async function serveSpecial(req: Request, bucket: Bucket | undefined, key: string | undefined, now = new Date()): Promise<Response> {
   const path = new URL(req.url).pathname.replace(/^\/special\//, "");
@@ -83,11 +101,13 @@ export async function serveSpecial(req: Request, bucket: Bucket | undefined, key
     const headers = new Headers();
     headers.append("set-cookie", CLEAR_PASS);
     headers.append("set-cookie", CLEAR_TRIAL);
+    headers.append("set-cookie", CLEAR_OWN);
     return new Response(null, { status: 204, headers });
   }
   if (req.method !== "GET" && req.method !== "HEAD") return new Response("method not allowed", { status: 405 });
   const cookie = req.headers.get("cookie");
-  if (!key || !(PUBLIC.test(path) || (await validPass(cookie, key, now)) || (await validTrial(cookie, path, key, now)))) return new Response("forbidden", { status: 403 });
+  const allowed = key && (PUBLIC.test(path) || (await validPass(cookie, key, now)) || (await validTrial(cookie, path, key, now)) || (await validOwned(cookie, path, key, now)));
+  if (!allowed) return new Response("forbidden", { status: 403 });
   if (!bucket || !KEY.test(path) || path.includes("..")) return new Response("not found", { status: 404 });
 
   const range = req.headers.get("range");

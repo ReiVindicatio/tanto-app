@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { passCookie, serveSpecial, trialCookie, validPass, validTrial } from "./special";
+import { ownCookie, passCookie, serveSpecial, trialCookie, validOwned, validPass, validTrial } from "./special";
 import { handleApi } from "./api";
 import { testVerifier } from "./auth";
 import { MemoryAnswerRepository } from "./repository";
@@ -91,12 +91,12 @@ describe("特別な衣装の配信（T069）", () => {
     });
     const me = () => new Request("https://x.test/api/me", { headers: { authorization: "Bearer test:alice" } });
     const admin = await handleApi(me(), deps("boss@example.com"));
-    expect(await admin.json()).toEqual({ admin: true });
+    expect(await admin.json()).toEqual({ admin: true, owned: [] }); // NOW はベータ版の特典の前
     expect(await validPass(admin.headers.get("set-cookie")!.split(";")[0], "k", NOW)).toBe(true);
     expect(admin.headers.get("set-cookie")).toContain("HttpOnly");
 
     const other = await handleApi(me(), deps("someone@example.com"));
-    expect(await other.json()).toEqual({ admin: false });
+    expect(await other.json()).toEqual({ admin: false, owned: [] });
     expect(other.headers.get("set-cookie")).toContain("Max-Age=0");
   });
 });
@@ -197,5 +197,79 @@ describe("特別な衣装のお試しと、買う前に見せる絵（T070）", 
     }
     await handleApi(new Request("https://x.test/api/me", { method: "DELETE", headers: { authorization: "Bearer test:alice" } }), api(repo));
     expect(repo.interest.size).toBe(0);
+  });
+});
+
+describe("ベータ版の特典で持っている衣装（T074）", () => {
+  const BETA = { costume: "hoshiyomi", from: "2026-11-07T00:00:00+09:00", until: null as string | null };
+  const IN = new Date("2026-11-08T00:00:00Z");
+  const own = async (costumes = ["hoshiyomi"], key = "k", at = IN) => (await ownCookie("alice", costumes, key, at)).split(";")[0];
+  const deps = (repo: MemoryAnswerRepository, at: Date, earlyAccess: typeof BETA | null = BETA, specialKey: string | null = "k") => ({
+    repo,
+    verify: testVerifier(),
+    specialKey: specialKey ?? undefined,
+    earlyAccess,
+    now: () => at,
+  });
+  const me = (user = "alice") => new Request("https://x.test/api/me", { headers: { authorization: `Bearer test:${user}` } });
+  const ownOf = (res: Response) => res.headers.getSetCookie().find((c) => c.startsWith("tanto_own="))!.split(";")[0];
+
+  it("持っている衣装の通行証は、その衣装のファイルだけ開く", async () => {
+    const c = await own();
+    expect((await serveSpecial(req("/special/hoshiyomi/entrance.mp4", c), bucket, "k", IN)).status).toBe(200);
+    expect((await serveSpecial(req("/special/diva/reveal.webp", c), bucket, "k", IN)).status).toBe(403);
+    expect(await validOwned(await own(["diva", "hoshiyomi"]), "hoshiyomi/a.webp", "k", IN)).toBe(true);
+  });
+
+  it("書き換え・別の鍵・期限切れは断る。全着の通行証やお試しの通行証としては使えない", async () => {
+    const c = await own();
+    const [body, list, exp, mac] = c.split(".");
+    expect(await validOwned(`${body}.hoshiyomi~diva.${exp}.${mac}`, "diva/a.webp", "k", IN)).toBe(false); // 衣装を書き足した
+    expect(await validOwned(await own(["hoshiyomi"], "other"), "hoshiyomi/a.webp", "k", IN)).toBe(false);
+    expect(await validOwned(c, "hoshiyomi/a.webp", "k", new Date("2026-11-20T00:00:00Z"))).toBe(false);
+    expect(list).toBe("hoshiyomi");
+    expect(await validPass(c.replace("tanto_own=", "tanto_special="), "k", IN)).toBe(false);
+    expect(await validTrial(c.replace("tanto_own=", "tanto_trial="), "hoshiyomi/a.webp", "k", IN)).toBe(false);
+  });
+
+  it("/api/me：期間の内にログインすると星詠みを渡し、通行証を出す。2回目で重ならない", async () => {
+    const repo = new MemoryAnswerRepository();
+    const first = await handleApi(me(), deps(repo, IN));
+    expect(await first.json()).toEqual({ admin: false, owned: ["hoshiyomi"] });
+    expect(await validOwned(ownOf(first), "hoshiyomi/a.webp", "k", IN)).toBe(true);
+    expect(await validOwned(ownOf(first), "diva/a.webp", "k", IN)).toBe(false);
+    await handleApi(me(), deps(repo, IN));
+    expect(repo.owned.get("test-alice")).toHaveLength(1);
+  });
+
+  it("/api/me：期間の前・後、特典を止めたとき、鍵の設定がないときは渡さない", async () => {
+    const after = { ...BETA, until: "2027-01-01T00:00:00+09:00" };
+    const cases = [
+      deps(new MemoryAnswerRepository(), new Date("2026-11-06T00:00:00Z")),
+      deps(new MemoryAnswerRepository(), new Date("2027-01-02T00:00:00Z"), after),
+      deps(new MemoryAnswerRepository(), IN, null),
+      deps(new MemoryAnswerRepository(), IN, BETA, null),
+    ];
+    for (const d of cases) {
+      const res = await handleApi(me(), d);
+      expect(await res.json()).toEqual({ admin: false, owned: [] });
+      expect(ownOf(res)).toBe("tanto_own=");
+    }
+  });
+
+  it("期間の内にもらった衣装は、期間のあとも持っている。退会で消える", async () => {
+    const repo = new MemoryAnswerRepository();
+    await handleApi(me(), deps(repo, IN));
+    const later = new Date("2027-02-01T00:00:00Z");
+    const res = await handleApi(me(), deps(repo, later, { ...BETA, until: "2027-01-01T00:00:00+09:00" }));
+    expect(await res.json()).toEqual({ admin: false, owned: ["hoshiyomi"] });
+    expect(await validOwned(ownOf(res), "hoshiyomi/a.webp", "k", later)).toBe(true);
+    await handleApi(new Request("https://x.test/api/me", { method: "DELETE", headers: { authorization: "Bearer test:alice" } }), deps(repo, later, null));
+    expect(await repo.listOwned("test-alice")).toEqual([]);
+  });
+
+  it("ログアウトで持っている衣装の通行証も消す", async () => {
+    const res = await serveSpecial(new Request("https://x.test/special/logout", { method: "POST" }), bucket, "k", IN);
+    expect(res.headers.getSetCookie().some((c) => c.startsWith("tanto_own=;") && c.includes("Max-Age=0"))).toBe(true);
   });
 });

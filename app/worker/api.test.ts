@@ -255,10 +255,10 @@ describe("Firebase の ID トークンの検証", async () => {
       const r = await handleApi(new Request("https://x/api/me", { headers: { authorization: `Bearer ${token}` } }), { repo: new MemoryAnswerRepository(), verify, emailOf, adminEmails });
       return (await r.json()) as Record<string, unknown>;
     };
-    expect(await me(await signEmail("Owner@Example.com", true), "other@example.com, owner@example.com")).toEqual({ admin: true });
-    expect(await me(await signEmail("owner@example.com", false), "owner@example.com")).toEqual({ admin: false }); // 未確認
-    expect(await me(await signEmail("someone@example.com", true), "owner@example.com")).toEqual({ admin: false });
-    expect(await me(await signEmail("owner@example.com", true))).toEqual({ admin: false }); // 設定なし
+    expect(await me(await signEmail("Owner@Example.com", true), "other@example.com, owner@example.com")).toEqual({ admin: true, owned: [] });
+    expect(await me(await signEmail("owner@example.com", false), "owner@example.com")).toEqual({ admin: false, owned: [] }); // 未確認
+    expect(await me(await signEmail("someone@example.com", true), "owner@example.com")).toEqual({ admin: false, owned: [] });
+    expect(await me(await signEmail("owner@example.com", true))).toEqual({ admin: false, owned: [] }); // 設定なし
     expect(isAdminEmail(null, "a@b")).toBe(false);
   });
   it("発行者・対象が違う、期限切れ、別の鍵で署名したトークンは拒否する", async () => {

@@ -1,5 +1,6 @@
 // お試しの画面（T070）：残り数の行、終わりの画面、衣装の一覧のボタン。状態は trial.ts
 import { useEffect, useState } from "react";
+import { isOwned } from "../admin";
 import { characterImage } from "../character";
 import { navigate, useRoute } from "../router";
 import { lineText, pickLine, playLine, type Line } from "./lines";
@@ -116,7 +117,7 @@ export function TrialBar() {
 export function WantButton({ theme }: { theme: string }) {
   useTrial();
   const [failed, setFailed] = useState(false);
-  if (trialAccount() !== "in") return null;
+  if (trialAccount() !== "in" || isOwned(theme)) return null; // 持っている衣装（T074）には出さない
   const on = wanted(theme);
   return (
     <>
@@ -139,6 +140,7 @@ export function TrialButton({ onStart }: { onStart: () => void }) {
   const t = useTrial();
   const [failed, setFailed] = useState(false);
   const account = trialAccount();
+  if (isOwned(TRIAL_THEME)) return null; // ベータ版の特典（T074）で持っている
   if (t.status === "done") return <span className="muted small">お試しは終わりました</span>;
   if (t.status === "on") return null;
   if (account !== "in") {

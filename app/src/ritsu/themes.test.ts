@@ -1,7 +1,7 @@
 import { KITS } from "./kits";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { isUnlocked, markRevealed, nextTheme, themeById, THEMES, unlockLabel } from "./themes";
-import { refreshAdmin, isAdmin } from "../admin";
+import { refreshAdmin, isAdmin, isOwned } from "../admin";
 import { addQuestionResult, extraXp, MOCK_XP, mockSubmits, QUESTION_XP } from "../extraXp";
 
 const store = new Map<string, string>();
@@ -68,6 +68,23 @@ describe("管理者の判定（T068）", () => {
     store.set("tanto.admin.v1", "1");
     await refreshAdmin(async () => null, res({ admin: true }));
     expect(isAdmin()).toBe(false);
+  });
+});
+
+describe("ベータ版の特典で持っている衣装（T074）", () => {
+  const res = (body: unknown, ok = true) => (async () => ({ ok, json: async () => body })) as unknown as typeof fetch;
+  it("/api/me が返した衣装だけ開き、ログアウトで閉じる。ほかの課金衣装は開かない", async () => {
+    const hoshi = themeById("hoshiyomi")!;
+    const diva = themeById("diva")!;
+    expect(isUnlocked(hoshi, 1)).toBe(false);
+    await refreshAdmin(async () => "t", res({ admin: false, owned: ["hoshiyomi"] }));
+    expect(isOwned("hoshiyomi")).toBe(true);
+    expect(isUnlocked(hoshi, 1)).toBe(true);
+    expect(isUnlocked(diva, 1)).toBe(false);
+    await refreshAdmin(async () => "t", res({}, false)); // 通信に失敗したら今の値のまま
+    expect(isUnlocked(hoshi, 1)).toBe(true);
+    await refreshAdmin(async () => null, res({}));
+    expect(isUnlocked(hoshi, 1)).toBe(false);
   });
 });
 

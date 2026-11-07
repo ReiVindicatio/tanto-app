@@ -2,7 +2,8 @@
 // D1 や Firebase を直接は知らない（テストでは偽物を渡す）。
 import type { Answer, AnswerRepository, Bookmark, Report } from "./repository";
 import { isAdminEmail, type EmailOf, type Verifier } from "./auth";
-import { CLEAR_PASS, passCookie, SPECIAL_COSTUMES, trialCookie, TRIAL_COSTUME, TRIAL_SECONDS } from "./special";
+import { CLEAR_OWN, CLEAR_PASS, ownCookie, passCookie, SPECIAL_COSTUMES, trialCookie, TRIAL_COSTUME, TRIAL_SECONDS } from "./special";
+import { EARLY_ACCESS, inEarlyAccess, type EarlyAccess } from "../src/earlyAccess";
 
 export const MAX_BATCH = 1000;
 /** 1日（UTC）に受け取る回答の上限（T040）。初めてログインした端末の記録をまとめて送る（引き継ぎ）のを止めない値。超えた分は翌日に送られる */
@@ -35,6 +36,8 @@ export type Deps = {
   adminEmails?: string;
   /** 特別な衣装の通行証の署名の鍵（T069） */
   specialKey?: string;
+  /** ベータ版の特典（T074）。null なら渡さない（同期の E2E は、お試しを確かめるので止める） */
+  earlyAccess?: EarlyAccess | null;
 };
 
 function json(body: unknown, status = 200): Response {
@@ -142,13 +145,18 @@ export async function handleApi(req: Request, deps: Deps): Promise<Response> {
     return json({ received: true });
   }
 
-  // 自分の情報（T068）：管理者か（衣装を全部開いて動作を確かめる）。メールアドレスは返さない
+  // 自分の情報（T068）：管理者か（衣装を全部開いて動作を確かめる）と、持っている衣装（T074）。メールアドレスは返さない。ログインのたびに呼ばれる
   if (url.pathname === "/api/me" && req.method === "GET") {
     const email = deps.emailOf ? await deps.emailOf(token) : null;
     const admin = isAdminEmail(email, deps.adminEmails);
-    const res = json({ admin });
-    // 特別な衣装の通行証（T069）：今は管理者だけ。外れたら消す
-    res.headers.set("set-cookie", admin && deps.specialKey ? await passCookie(userId, deps.specialKey, now) : CLEAR_PASS);
+    // ベータ版の特典（T074）：期間の内にログインしたら渡す。鍵の設定がなければ渡さない（着られないものを渡さない）
+    const early = deps.earlyAccess === undefined ? EARLY_ACCESS : deps.earlyAccess;
+    if (early && deps.specialKey && inEarlyAccess(now, early)) await deps.repo.grantOwned(userId, early.costume, "early", now.toISOString());
+    const owned = await deps.repo.listOwned(userId);
+    const res = json({ admin, owned });
+    // 特別な衣装の通行証（T069）：管理者は全着、持っている人はその衣装だけ。外れたら消す
+    res.headers.append("set-cookie", admin && deps.specialKey ? await passCookie(userId, deps.specialKey, now) : CLEAR_PASS);
+    res.headers.append("set-cookie", owned.length && deps.specialKey ? await ownCookie(userId, owned, deps.specialKey, now) : CLEAR_OWN);
     return res;
   }
 

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import type { AuthClient } from "./auth";
 import { AdminBadge } from "./AdminBadge";
+import { inEarlyAccess } from "./earlyAccess";
 import type { DeleteResult, SyncedStore, SyncStatus } from "./sync";
 
 function useSyncStatus(sync: SyncedStore): SyncStatus {
@@ -66,6 +67,8 @@ export default function AuthPanel({ auth, sync, top = false }: { auth: AuthClien
     return (
       <div className="card authbar">
         <p className="small muted">ログインすると、スマホと PC で学習の記録を共有できます。ログインしなくても、この端末で使えます。</p>
+        {/* ベータ版の特典（T074） */}
+        {inEarlyAccess(new Date()) && <p className="small early-access">ベータ版の間にログインすると、特別な衣装「星詠みの裁定者」をずっと着られます。</p>}
         <button disabled={busy} onClick={signIn}>
           Google でログイン
         </button>

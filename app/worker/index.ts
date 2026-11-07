@@ -23,6 +23,8 @@ export interface Env {
   ADMIN_EMAILS?: string;
   /** 特別な衣装の通行証の署名の鍵（T069。wrangler secret）。なければ /special/* はだれにも渡さない */
   SPECIAL_KEY?: string;
+  /** "off" ならベータ版の特典（T074）を渡さない。同期の E2E だけで使う（お試しを確かめるため） */
+  EARLY_ACCESS?: string;
 }
 
 function limiter(rl?: RateLimit): Limiter | undefined {
@@ -60,6 +62,7 @@ export default {
       emailOf: testMode ? undefined : firebaseEmail(env.FIREBASE_PROJECT_ID),
       adminEmails: env.ADMIN_EMAILS,
       specialKey: env.SPECIAL_KEY,
+      earlyAccess: env.EARLY_ACCESS === "off" ? null : undefined,
     });
   },
 } satisfies ExportedHandler<Env>;

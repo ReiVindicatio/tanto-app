@@ -118,6 +118,25 @@ main {
   font-size: 0.8rem;
 }
 
+/* ベータ版の印（T074）。バグがありうることを先に伝える */
+.appbar .brand .beta-badge {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 0 5px;
+  border-radius: 4px;
+  background: var(--brand-soft);
+  color: var(--brand);
+  font-size: 0.68rem;
+  font-weight: bold;
+  vertical-align: 2px;
+}
+
+/* ベータ版の特典の案内（T074） */
+.authbar .early-access {
+  color: var(--brand);
+  font-weight: bold;
+}
+
 .sync-status {
   color: var(--text-secondary);
   white-space: nowrap;

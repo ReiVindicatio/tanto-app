@@ -28,6 +28,10 @@ export interface AnswerRepository {
   startTrial(userId: string, costume: string, at: string): Promise<string>;
   /** 「欲しい」を記録する（T070）。null なら取り消す */
   setWanted(userId: string, costume: string, at: string | null): Promise<void>;
+  /** 衣装を渡す（T074）。すでに持っていれば変えない */
+  grantOwned(userId: string, costume: string, source: string, at: string): Promise<void>;
+  /** 持っている衣装（T074） */
+  listOwned(userId: string): Promise<string[]>;
   /** ★の操作。since を渡すと、それより後に受け取った分だけ（T026） */
   listBookmarks(userId: string, since?: string): Promise<StoredBookmark[]>;
   /** ★の操作を保存する。同じ操作 ID はすでにあれば無視する。保存した件数を返す（T026） */
@@ -83,8 +87,21 @@ export class D1AnswerRepository implements AnswerRepository {
       this.db.prepare("DELETE FROM answers WHERE user_id = ?").bind(userId),
       this.db.prepare("DELETE FROM bookmarks WHERE user_id = ?").bind(userId),
       this.db.prepare("DELETE FROM special_interest WHERE user_id = ?").bind(userId),
+      this.db.prepare("DELETE FROM special_owned WHERE user_id = ?").bind(userId),
       this.db.prepare("UPDATE reports SET user_id = NULL WHERE user_id = ?").bind(userId),
     ]);
+  }
+
+  async grantOwned(userId: string, costume: string, source: string, at: string): Promise<void> {
+    await this.db
+      .prepare("INSERT OR IGNORE INTO special_owned (user_id, costume, source, granted_at) VALUES (?, ?, ?, ?)")
+      .bind(userId, costume, source, at)
+      .run();
+  }
+
+  async listOwned(userId: string): Promise<string[]> {
+    const { results } = await this.db.prepare("SELECT costume FROM special_owned WHERE user_id = ? ORDER BY costume").bind(userId).all<{ costume: string }>();
+    return results.map((r) => r.costume);
   }
 
   async startTrial(userId: string, costume: string, at: string): Promise<string> {
@@ -152,6 +169,7 @@ export class MemoryAnswerRepository implements AnswerRepository {
   bookmarks = new Map<string, StoredBookmark[]>();
   reports: (Report & { user_id: string | null; created_at: string })[] = [];
   interest = new Map<string, { tried_at?: string; wanted_at?: string | null }>();
+  owned = new Map<string, { costume: string; source: string; granted_at: string }[]>();
 
   async list(userId: string, since?: string): Promise<StoredAnswer[]> {
     return (this.rows.get(userId) ?? []).filter((r) => !since || r.received_at > since);
@@ -176,6 +194,17 @@ export class MemoryAnswerRepository implements AnswerRepository {
     this.bookmarks.delete(userId);
     for (const r of this.reports) if (r.user_id === userId) r.user_id = null;
     for (const k of this.interest.keys()) if (k.startsWith(`${userId}\n`)) this.interest.delete(k);
+    this.owned.delete(userId);
+  }
+
+  async grantOwned(userId: string, costume: string, source: string, at: string): Promise<void> {
+    const mine = this.owned.get(userId) ?? [];
+    if (!mine.some((o) => o.costume === costume)) mine.push({ costume, source, granted_at: at });
+    this.owned.set(userId, mine);
+  }
+
+  async listOwned(userId: string): Promise<string[]> {
+    return (this.owned.get(userId) ?? []).map((o) => o.costume).sort();
   }
 
   async startTrial(userId: string, costume: string, at: string): Promise<string> {

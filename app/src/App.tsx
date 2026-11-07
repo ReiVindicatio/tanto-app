@@ -62,7 +62,7 @@ export default function App({ auth, sync }: { auth?: AuthClient; sync?: SyncedSt
       <div className={`page ${tab ? "with-tabs" : "playing"}`}>
         <header className="appbar">
           <button className="link brand" onClick={() => navigate({ name: "home" })}>
-            たんたん<span className="muted">（短答の一問一答・非公式）</span>
+            たんたん<span className="beta-badge">β版</span><span className="muted">（短答の一問一答・非公式）</span>
           </button>
           <div className="appbar-right">
             <AdminBadge />

@@ -11,7 +11,8 @@ import { homeLine, playLine, seeded } from "../ritsu/lines";
 import { pendingReveal, themeById } from "../ritsu/themes";
 import { closeTrialInvite, trialAccount, trialInviteClosed, TRIAL_ANSWERS, TRIAL_LEVEL, TRIAL_THEME, useTrial } from "../ritsu/trial";
 import { startTrial } from "../ritsu/TrialLayer";
-import { useAdmin } from "../admin";
+import { isOwned, useAdmin } from "../admin";
+import { inEarlyAccess } from "../earlyAccess";
 import { characterImage, characterOn } from "../character";
 import { progressNow } from "../progress";
 import { RitsuDock, useIdle } from "../Ritsu";
@@ -54,7 +55,8 @@ function QuickStart({
   const trial = useTrial();
   const admin = useAdmin();
   const account = trialAccount();
-  const trialDue = showChar && !admin && p.level >= TRIAL_LEVEL && trial.status === "none";
+  // ベータ版の特典（T074）で持っている人は、お試しをしない
+  const trialDue = showChar && !admin && !isOwned(TRIAL_THEME) && p.level >= TRIAL_LEVEL && trial.status === "none";
   useEffect(() => {
     if (trialDue && account === "in") void startTrial();
   }, [trialDue, account]);
@@ -67,7 +69,9 @@ function QuickStart({
         <img src={characterImage("base", "smile", TRIAL_THEME)} alt="" />
         <div className="grow">
           <strong>{themeById(TRIAL_THEME)?.name}</strong>
-          <p className="muted small">特別な衣装を{TRIAL_ANSWERS}問だけ試せます（ログインが必要です）</p>
+          <p className="muted small">
+            {inEarlyAccess(new Date()) ? "ベータ版の間にログインすると、この特別な衣装をずっと着られます" : `特別な衣装を${TRIAL_ANSWERS}問だけ試せます（ログインが必要です）`}
+          </p>
           <div className="row">
             <button className="secondary" onClick={() => navigate({ name: "me" })}>ログインする</button>
             <button className="link" onClick={closeTrialInvite}>閉じる</button>

@@ -22,13 +22,13 @@ export default function Footer({ attribution, compact = false }: { attribution?:
       </p>
       <p>このアプリは法務省とは関係のない個人が作成した非公式のものです。</p>
       {/* ポリシーの改定のお知らせ（ポリシーの5.「本アプリの中でお知らせします」。T046）。1か月出す */}
-      {Date.now() < Date.parse("2026-11-22T00:00:00+09:00") && (
+      {Date.now() < Date.parse("2026-12-07T00:00:00+09:00") && (
         <p className="small">
-          お知らせ：2026年10月21日・22日に
+          お知らせ：2026年10月21日・22日・11月7日に
           <button className="link small" onClick={() => navigate({ name: "privacy" })}>
             プライバシーポリシー
           </button>
-          を改定しました（閲覧状況の集計・★の記録を追加）。
+          を改定しました（閲覧状況の集計・★の記録・ベータ版の特典の記録を追加）。
         </p>
       )}
       <p className="footer-links">
