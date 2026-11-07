@@ -1,0 +1,11 @@
+# セキュリティの基本のヘッダー（T075）。静的なファイル（アプリ・問のページ）に付く。
+# Worker が返す /api/*・/audio/*・/special/* には worker/index.ts の SECURITY_HEADERS で同じものを付ける（ここを変えたら、あちらも変える）
+# - 他のサイトの枠に埋め込ませない（クリックジャッキング）
+# - ファイルの種類を推測させない
+# - 他のサイトへ移るとき、URL の道筋を渡さない（サイト名だけ）
+# - カメラ・マイク・位置情報・支払いは使わない
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()

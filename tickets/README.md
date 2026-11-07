@@ -134,3 +134,4 @@
 | [T072](T072-search-indexing.md) | 検索に載るページを増やす（サイトマップを読ませる・タイトル） | 完了 | M3 | **高** | T044・T045 |
 | [T073](T073-indexnow.md) | IndexNow で Bing などに URL を知らせる | 完了 | M3 | 中 | T072 |
 | [T074](T074-early-access-costume.md) | ベータ版の特典：ベータ版の間にログインした人に星詠みを渡す | 完了 | M3 | 中 | T070 |
+| [T075](T075-security-headers.md) | セキュリティの基本のヘッダー | 完了 | M3 | 中 | — |

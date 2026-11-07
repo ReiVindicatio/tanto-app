@@ -227,3 +227,12 @@ test("お試し（T070）：ログアウトすると元の服に戻り、通行�
   await expect(page.locator(".trial-end")).toHaveCount(0);
   await expect.poll(status).toBe(403);
 });
+
+test("セキュリティの基本のヘッダー（T075）：静的なページ・問のページ・API のどれにも付く", async ({ request }) => {
+  for (const path of ["/", "/q/", "/api/me"]) {
+    const res = await request.get(path);
+    expect(res.headers()["x-frame-options"], path).toBe("DENY");
+    expect(res.headers()["x-content-type-options"], path).toBe("nosniff");
+    expect(res.headers()["referrer-policy"], path).toBe("strict-origin-when-cross-origin");
+  }
+});

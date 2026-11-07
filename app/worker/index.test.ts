@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import worker, { type Env } from "./index";
+import worker, { SECURITY_HEADERS, type Env } from "./index";
 
 const env = (over: Partial<Env>): Env =>
   ({
@@ -30,5 +30,22 @@ describe("Worker の入口", () => {
       env({}),
     );
     expect(res.status).toBe(401);
+  });
+
+  it("Worker が返す応答（API・衣装の配信）にもセキュリティのヘッダーを付ける。通行証の Cookie は消えない（T075）", async () => {
+    const api = await worker.fetch(new Request("https://x.test/api/answers"), env({}));
+    const logout = await worker.fetch(new Request("https://x.test/special/logout", { method: "POST" }), env({}));
+    for (const res of [api, logout]) {
+      for (const [k, v] of Object.entries(SECURITY_HEADERS)) expect(res.headers.get(k)).toBe(v);
+    }
+    expect(api.status).toBe(401);
+    expect(logout.headers.getSetCookie()).toHaveLength(3);
+  });
+
+  it("静的なファイルの public/_headers と、Worker のヘッダーが同じ", async () => {
+    const { readFileSync } = await import("node:fs");
+    const text = readFileSync(new URL("../public/_headers", import.meta.url), "utf-8");
+    const lines = text.split("\n").filter((l) => /^\s+\S+:/.test(l)).map((l) => l.trim());
+    expect(lines.sort()).toEqual(Object.entries(SECURITY_HEADERS).map(([k, v]) => `${k}: ${v}`).sort());
   });
 });

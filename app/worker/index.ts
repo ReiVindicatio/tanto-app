@@ -38,14 +38,29 @@ function limiter(rl?: RateLimit): Limiter | undefined {
   };
 }
 
+/** セキュリティの基本のヘッダー（T075）。静的なファイルには public/_headers で同じものを付ける（ここを変えたら、あちらも変える） */
+export const SECURITY_HEADERS: Record<string, string> = {
+  "X-Frame-Options": "DENY",
+  "X-Content-Type-Options": "nosniff",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  "Permissions-Policy": "camera=(), microphone=(), geolocation=(), payment=()",
+};
+
+/** Worker が作った応答にヘッダーを足す。キャッシュから返した応答は書き換えられないので、作り直す */
+function secured(res: Response): Response {
+  const out = new Response(res.body, res);
+  for (const [k, v] of Object.entries(SECURITY_HEADERS)) out.headers.set(k, v);
+  return out;
+}
+
 export default {
   async fetch(req: Request, env: Env, ctx?: ExecutionContext): Promise<Response> {
     const url = new URL(req.url);
     if (url.pathname.startsWith("/audio/")) {
       const cache = typeof caches !== "undefined" ? (caches as unknown as { default: Cache }).default : undefined;
-      return serveAudio(req, env.AUDIO, cache, ctx ? (p) => ctx.waitUntil(p) : undefined);
+      return secured(await serveAudio(req, env.AUDIO, cache, ctx ? (p) => ctx.waitUntil(p) : undefined));
     }
-    if (url.pathname.startsWith("/special/")) return serveSpecial(req, env.AUDIO, env.SPECIAL_KEY);
+    if (url.pathname.startsWith("/special/")) return secured(await serveSpecial(req, env.AUDIO, env.SPECIAL_KEY));
     if (!url.pathname.startsWith("/api/")) return env.ASSETS.fetch(req);
 
     const testMode = env.AUTH_MODE === "test";
@@ -54,7 +69,7 @@ export default {
       return new Response("misconfigured: test auth in production", { status: 500 });
     }
     const verify = testMode ? testVerifier() : firebaseVerifier(env.FIREBASE_PROJECT_ID);
-    return handleApi(req, {
+    return secured(await handleApi(req, {
       repo: new D1AnswerRepository(env.DB),
       verify,
       limitIp: limiter(env.RL_IP),
@@ -63,6 +78,6 @@ export default {
       adminEmails: env.ADMIN_EMAILS,
       specialKey: env.SPECIAL_KEY,
       earlyAccess: env.EARLY_ACCESS === "off" ? null : undefined,
-    });
+    }));
   },
 } satisfies ExportedHandler<Env>;
