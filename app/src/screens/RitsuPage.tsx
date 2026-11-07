@@ -279,6 +279,19 @@ export default function RitsuPage() {
       {tab === "theme" && specialThemes.length > 0 && (
         <>
           <h3 className="theme-section">特別な衣装</h3>
+          {/* 着られる衣装（持っている・お試し中）を先に。下に並べると、まだ持っていない衣装のカードに埋もれた（ユーザー。T074） */}
+          <div className="theme-grid">
+            {specialThemes.filter((t) => isUnlocked(t, p.level)).map((t) => (
+              <button key={t.id} className={`theme-tile${t.id === theme ? " chosen" : ""}`} aria-pressed={t.id === theme} onClick={() => wear(t.id)}>
+                <img src={characterImage("base", "smile", t.id)} alt="" loading="lazy" />
+                <span>{t.name}</span>
+                {!isRevealed(t.id) && <span className="theme-new">NEW</span>}
+              </button>
+            ))}
+          </div>
+          {specialThemes.some((t) => isUnlocked(t, p.level)) && specialThemes.some((t) => !isUnlocked(t, p.level)) && (
+            <p className="muted small special-unowned">まだ持っていない衣装</p>
+          )}
           {/* 買う前に見せるのは全身の絵1枚・名前・紹介文だけ（T070）。見本の1着だけ試せる */}
           <div className="special-cards">
             {specialThemes.filter((t) => !isUnlocked(t, p.level)).sort((a, b) => Number(b.id === TRIAL_THEME) - Number(a.id === TRIAL_THEME)).map((t) => (
@@ -292,15 +305,6 @@ export default function RitsuPage() {
                   <WantButton theme={t.id} />
                 </div>
               </div>
-            ))}
-          </div>
-          <div className="theme-grid">
-            {specialThemes.filter((t) => isUnlocked(t, p.level)).map((t) => (
-              <button key={t.id} className={`theme-tile${t.id === theme ? " chosen" : ""}`} aria-pressed={t.id === theme} onClick={() => wear(t.id)}>
-                <img src={characterImage("base", "smile", t.id)} alt="" loading="lazy" />
-                <span>{t.name}</span>
-                {!isRevealed(t.id) && <span className="theme-new">NEW</span>}
-              </button>
             ))}
           </div>
           {wearing && kit.grow === "sky" && fxOn("sky") && !skySeen && (

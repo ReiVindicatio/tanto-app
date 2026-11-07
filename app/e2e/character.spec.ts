@@ -182,7 +182,8 @@ test("特別な衣装（T069）：管理者でなければ鍵の印で着られ�
   await expect(locked.locator("img")).toHaveAttribute("src", /\/special\/hoshiyomi\/base-smile\.webp$/);
   await expect(locked).toContainText("金の大天秤");
   await expect(locked).toContainText("準備中");
-  await expect(locked.getByRole("button", { name: /ログインすると20問だけ試せます/ })).toBeVisible();
+  // ベータ版の間は、ログインすればずっと着られる案内（T074）
+  await expect(locked.getByRole("button", { name: inEarlyAccess(new Date()) ? /ベータ版の間にログインすると、ずっと着られます/ : /ログインすると20問だけ試せます/ })).toBeVisible();
   await expect(page.locator(".special-locked", { hasText: "舞台の歌姫" }).getByRole("button")).toHaveCount(0); // 見本の1着のほかは試せない
   await expect(page.locator(".theme-section", { hasText: "特別な衣装" })).toBeVisible();
   await expect(page.locator(".theme-tile.locked:not(.special-locked) .lock-mark").first()).toBeVisible();

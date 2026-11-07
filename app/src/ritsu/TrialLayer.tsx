@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { isOwned } from "../admin";
 import { characterImage } from "../character";
+import { inEarlyAccess } from "../earlyAccess";
 import { navigate, useRoute } from "../router";
 import { lineText, pickLine, playLine, type Line } from "./lines";
 import { playMove } from "./special";
@@ -146,7 +147,8 @@ export function TrialButton({ onStart }: { onStart: () => void }) {
   if (account !== "in") {
     return (
       <button className="link" onClick={() => navigate({ name: "me" })}>
-        ログインすると{TRIAL_ANSWERS}問だけ試せます
+        {/* ベータ版の間は、ログインすればお試しではなく特典として渡る（T074） */}
+        {inEarlyAccess(new Date()) ? "ベータ版の間にログインすると、ずっと着られます" : `ログインすると${TRIAL_ANSWERS}問だけ試せます`}
       </button>
     );
   }
