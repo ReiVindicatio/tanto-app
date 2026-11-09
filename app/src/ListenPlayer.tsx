@@ -143,6 +143,7 @@ export default function ListenPlayer({
   const held = useRef(false);
   const heldWaiter = useRef<(() => void) | null>(null); // 次の音声の前で待っている流れを進める
   const stepPhase = useRef<Phase>("ready"); // 流れの今の段階（一時停止中も覚えておく）
+  const at = useRef(0); // 流れが今いる肢（続けて押したとき、描画を待たずに次へ進められるように）
   const speakingNow = useRef(false); // 端末の読み上げで読んでいる（途中から再開できない機種があるので、肢の頭から読み直す）
 
   function whileHeld(signal: AbortSignal): Promise<void> {
@@ -183,6 +184,27 @@ export default function ListenPlayer({
     set("play", () => actions.current?.resume());
     set("nexttrack", () => actions.current?.skip());
     return () => ["pause", "play", "nexttrack"].forEach((a) => set(a as MediaSessionAction, null));
+  }, []);
+
+  useEffect(() => {
+    // 電話・通知・ほかのアプリの音などで、外から音声を止められたら一時停止にする（止まったまま「読み上げ中」と出し続けていた。
+    // 再開を押せば止まった位置から続く）。読み終わり（ended）や、自分で止めてすぐ次を流したとき（○×を押した・次の肢へ）は数えない。
+    // 自分で止めたときは、流れがすぐ次の音声を流しはじめるので、一呼吸おいてから確かめる
+    const a = el();
+    let timer = 0;
+    const onPause = () => {
+      window.clearTimeout(timer);
+      timer = window.setTimeout(() => {
+        // 端末の読み上げで読んでいる間（音声がなかった肢）・音声が読めなかったときも数えない
+        if (a.ended || !a.paused || a.error || speakingNow.current || held.current || !cardCtl.current || cardCtl.current.signal.aborted) return;
+        actions.current?.pause();
+      }, 50);
+    };
+    a.addEventListener("pause", onPause);
+    return () => {
+      window.clearTimeout(timer);
+      a.removeEventListener("pause", onPause);
+    };
   }, []);
 
   useEffect(() => {
@@ -293,6 +315,7 @@ export default function ListenPlayer({
       }
       const s = order.current[k];
       const cid = cardIdOf(s.id);
+      at.current = k;
       setI(k);
       answeredRef.current = null;
       setAnswered(null);
@@ -329,7 +352,9 @@ export default function ListenPlayer({
    * はじめる・再開する。iPhone は押した操作の中で再生を始めないと音が出ないので、ここで <audio> に短い無音を流し、
    * 端末の読み上げにも空の一言を読ませておく（音声がない肢のため）
    */
-  async function begin(from: number) {
+  function begin(from: number) {
+    // 流れは1本だけ。前の流れが残っていれば止める（2本が同じ <audio> を取り合うと、どちらも進まなくなる）
+    cardCtl.current?.abort();
     held.current = false;
     markTipSeen("listen");
     const a = el();
@@ -339,9 +364,22 @@ export default function ListenPlayer({
       window.speechSynthesis.cancel();
       window.speechSynthesis.speak(new SpeechSynthesisUtterance(""));
     }
-    releaseScreen.current();
-    releaseScreen.current = await keepScreenOn();
+    // 画面を消さない仕組み（Wake Lock）は返事を待たずに始める。待つと、スマホではその間「再開」のまま音が出ず、
+    // もう一度押すと流れが2本になっていた
+    holdScreen();
     void run(from);
+  }
+
+  /** 画面が消えないようにする。返事が来る前に解除されたら、来たときに解除する */
+  function holdScreen() {
+    releaseScreen.current();
+    let released = false;
+    let release: (() => void) | null = null;
+    releaseScreen.current = () => {
+      released = true;
+      release?.();
+    };
+    void keepScreenOn().then((r) => (released ? r() : (release = r)));
   }
 
   function choose(v: boolean) {
@@ -368,7 +406,9 @@ export default function ListenPlayer({
   /** 再開：止めた位置から続ける（端末の読み上げで止めたときは肢の頭から） */
   function resume() {
     if (!held.current) {
-      void begin(i);
+      // 流れが動いているとき（ロック画面の再生ボタンを、流している最中に押したなど）は何もしない
+      if (cardCtl.current && !cardCtl.current.signal.aborted) return;
+      begin(at.current);
       return;
     }
     held.current = false;
@@ -376,16 +416,11 @@ export default function ListenPlayer({
     // 次の音声の前で待っていたならそれを進める。音声の途中なら、そのまま続きを流す（押した操作の中で再生する：iPhone）
     if (heldWaiter.current) heldWaiter.current();
     else void audio.current?.play().catch(() => {});
-    void keepScreenOn().then((release) => {
-      releaseScreen.current();
-      releaseScreen.current = release;
-    });
+    holdScreen();
   }
 
   function skip() {
-    held.current = false;
-    cardCtl.current?.abort();
-    void begin(i + 1);
+    begin(at.current + 1);
   }
 
   function stop() {
@@ -565,7 +600,7 @@ export default function ListenPlayer({
           </Dock>
         )}
         {phase === "ready" ? (
-          <button onClick={() => void begin(0)}>▶ 聞きはじめる</button>
+          <button onClick={() => begin(0)}>▶ 聞きはじめる</button>
         ) : (
           <>
             <button className="mark" disabled={!canAnswer} onClick={() => choose(false)}>

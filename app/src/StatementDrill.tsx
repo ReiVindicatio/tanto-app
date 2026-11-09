@@ -24,6 +24,7 @@ import type { More, OriginOf } from "./play";
 import { merge } from "./data";
 import { flyAway, swipeThreshold, useSwipe, type SwipeDir } from "./swipe";
 import { revealBelow } from "./scrollReveal";
+import { useSwapGuard } from "./swapGuard";
 
 const BASIS_NOTE: Record<string, string> = {
   convention: "公式の解答は組合せの番号だけです。この肢の○×は、その組合せに入っているかどうかから導いたものです。",
@@ -54,6 +55,7 @@ export default function StatementDrill({
   const [order, setOrder] = useState<Statement[]>(cards);
   const [i, setI] = useState(0);
   const [answer, setAnswer] = useState<boolean | null>(null);
+  const settling = useSwapGuard(`${i}:${answer === null}`); // 二度押しで、入れ替わった先のボタンまで押さない
   // ○×を押したら、答え合わせが見える位置まで送る（肢の文が長いと、押しても画面が変わっていないように見えた：T066）
   const resultEl = useRef<HTMLDivElement>(null);
   useEffect(() => () => setCombo(0), []); // 連続正解の覚醒は、その回の間だけ
@@ -395,7 +397,7 @@ export default function StatementDrill({
       </div>
 
       {answer === null ? (
-        <div className={`actionbar${showChar ? " with-ritsu" : ""}`}>
+        <div className={`actionbar${showChar ? " with-ritsu" : ""}${settling ? " settling" : ""}`}>
           {/* 答える前の律（T065）：○×の欄の縁に座って足をバタバタ。しばらく答えないと寝そべって本を読む。答えると結果の欄へ移る */}
           {showChar && (
             <RitsuDock face={idle ? "sleepy" : "think"} pose={idle ? "lie" : "sit"} swing lively className="bar-dock drill-dock">
@@ -415,7 +417,7 @@ export default function StatementDrill({
           </button>
         </div>
       ) : (
-        <div className="actionbar">
+        <div className={`actionbar${settling ? " settling" : ""}`}>
           {/* はじいたときと同じく、カードを左へめくって次の肢へ（単語帳のように） */}
           <button onClick={() => advance("left")}>
             次へ

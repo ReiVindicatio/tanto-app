@@ -135,3 +135,4 @@
 | [T073](T073-indexnow.md) | IndexNow で Bing などに URL を知らせる | 完了 | M3 | 中 | T072 |
 | [T074](T074-early-access-costume.md) | ベータ版の特典：ベータ版の間にログインした人に星詠みを渡す | 完了 | M3 | 中 | T070 |
 | [T075](T075-security-headers.md) | セキュリティの基本のヘッダー | 完了 | M3 | 中 | — |
+| [T076](T076-tap-and-listen-bugs.md) | 聞き流しが止まる・二度押しで入れ替わった先まで押すバグ | 完了 | M3 | 高 | — |

@@ -12,11 +12,13 @@ import { RitsuDock, useIdle } from "./Ritsu";
 import { revealBelow } from "./scrollReveal";
 import { addQuestionResult } from "./extraXp";
 import { characterOn } from "./character";
+import { useSwapGuard } from "./swapGuard";
 
 export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; data: DataSet; onExit: () => void }) {
   const [i, setI] = useState(0);
   const [picks, setPicks] = useState<(number | null)[]>(() => emptyPicks(data.questions[0]));
   const [result, setResult] = useState<Grade | null>(null);
+  const settling = useSwapGuard(`${i}:${result === null}`); // 二度押しで、採点するのあとの次へまで押さない
   // 採点したら、結果が見える位置まで送る（T066）
   const resultEl = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -133,7 +135,7 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
       </div>
 
       {!result ? (
-        <div className={`actionbar${showChar ? " with-ritsu" : ""}`}>
+        <div className={`actionbar${showChar ? " with-ritsu" : ""}${settling ? " settling" : ""}`}>
           {/* 律（T065）：答える前は○×の欄の縁で考え中（しばらく採点しないと寝そべる）。採点したら満点で喜んで跳ねる */}
           {showChar && <RitsuDock face={idle ? "sleepy" : "think"} pose={idle ? "lie" : "sit"} swing lively className="bar-dock" />}
           <button disabled={picks.some((p) => p === null)} onClick={submit}>
@@ -159,7 +161,7 @@ export default function QuestionDrill({ info, data, onExit }: { info: SetInfo; d
             )}
             <ReportLink target={q.id} context={reportContext(qexpById.get(q.id))} />
           </div>
-          <div className={`actionbar${showChar ? " with-ritsu" : ""}`}>
+          <div className={`actionbar${showChar ? " with-ritsu" : ""}${settling ? " settling" : ""}`}>
             {showChar && <RitsuDock face={result.full ? "happy" : "sad"} hop={result.full} className="bar-dock" />}
             <button onClick={next}>次へ</button>
           </div>

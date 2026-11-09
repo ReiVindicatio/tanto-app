@@ -535,6 +535,11 @@ button.link.star.compact {
   flex: 1;
 }
 
+/* ボタンが入れ替わった直後は押せなくする（二度押しで入れ替わった先まで押さないように。swapGuard.ts）。見た目は変えない */
+.actionbar.settling button {
+  pointer-events: none;
+}
+
 /* ○と×は正誤の色やブランド色を使わない（答える前に色で印象を与えないように） */
 .actionbar button.mark {
   font-size: 1.8rem;
