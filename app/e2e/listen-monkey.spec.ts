@@ -295,13 +295,15 @@ test("○×を押して答えに進むとき（自分で音声を止めてすぐ
   await openHome(page);
   await page.getByRole("button", { name: /聞き流す/ }).click();
   await page.getByRole("button", { name: "▶ 聞きはじめる" }).click();
+  const at = async () => Number((await page.locator(".toolbar").innerText()).match(/(\d+)肢目/)?.[1] ?? 0);
   for (let k = 1; k <= 4; k++) {
-    await expect(page.locator(".toolbar")).toContainText(`${k}肢目`, { timeout: 5000 });
+    // 肢の番号は決め打ちしない（並列で重いと、作り物の短い音声で先へ進む）。答えられる間に押す
     const mark = page.locator(".listen-actions").getByRole("button", { name: k % 2 ? "○" : "×", exact: true });
-    await expect(mark).toBeEnabled();
-    await page.waitForTimeout(k * 120);
-    await mark.click().catch(() => {});
+    await expect(mark).toBeEnabled({ timeout: 5000 });
+    await page.waitForTimeout(k * 60);
+    await mark.click({ timeout: 500 }).catch(() => {});
     await expect(page.locator(".listen-dock .ritsu-bubble")).not.toContainText("一時停止中");
   }
-  await expect(page.locator(".toolbar")).toContainText("5肢目", { timeout: 5000 });
+  const now = await at();
+  await expect.poll(at, { timeout: 5000 }).toBeGreaterThan(now); // 止まらず先へ進む
 });

@@ -13,9 +13,45 @@ void main(){vec4 m=texture2D(map,v);vec2 o=flow(v,m.r,0.)+flow(v,m.g*.42,.35);gl
 
 export type Warp = { draw: (gust: number, phi: number, amp: number) => void; setImage: (img: HTMLImageElement) => void; dispose: () => void };
 
+/**
+ * 画面に出す大きさ（CSS の幅 × 画面の細かさ）の絵の幅。WebGL の絵は縮めるときに間引くだけなので、元の大きさ（星詠みは幅 780）のまま
+ * 描いて画面で縮めると、PC の等倍の画面（5分の1ほどに縮む）で輪郭がガビガビになっていた（ユーザー）。元より大きくはしない
+ */
+export function drawWidth(cssWidth: number, ratio: number, natural: number): number {
+  if (!(cssWidth > 0) || !(ratio > 0)) return natural;
+  return Math.min(natural, Math.ceil(cssWidth * ratio));
+}
+
+/** 絵を幅 w まできれいに縮める。半分ずつ縮めてから仕上げる（一度に大きく縮めると粗くなるブラウザがある） */
+function fitted(el: HTMLImageElement, w: number): TexImageSource {
+  const h = Math.round((w * el.naturalHeight) / el.naturalWidth);
+  if (w >= el.naturalWidth) return el;
+  let src: HTMLImageElement | HTMLCanvasElement = el as HTMLImageElement | HTMLCanvasElement;
+  let sw = el.naturalWidth;
+  let sh = el.naturalHeight;
+  const step = (tw: number, th: number) => {
+    const c = document.createElement("canvas");
+    c.width = tw;
+    c.height = th;
+    const x = c.getContext("2d");
+    if (!x) return false;
+    x.imageSmoothingEnabled = true;
+    x.imageSmoothingQuality = "high";
+    x.drawImage(src, 0, 0, tw, th);
+    src = c;
+    sw = tw;
+    sh = th;
+    return true;
+  };
+  while (sw / 2 >= w) if (!step(Math.round(sw / 2), Math.round(sh / 2))) return el;
+  if (sw !== w && !step(w, h)) return el;
+  return src;
+}
+
 export function makeWarp(canvas: HTMLCanvasElement, img: HTMLImageElement, map: HTMLImageElement, dir: [number, number]): Warp | null {
-  canvas.width = img.naturalWidth;
-  canvas.height = img.naturalHeight;
+  const w = drawWidth(canvas.getBoundingClientRect().width, window.devicePixelRatio || 1, img.naturalWidth);
+  canvas.width = w;
+  canvas.height = Math.round((w * img.naturalHeight) / img.naturalWidth);
   const gl = canvas.getContext("webgl", { premultipliedAlpha: true, alpha: true, antialias: false });
   if (!gl) return null;
   const shader = (type: number, src: string) => {
@@ -39,7 +75,7 @@ export function makeWarp(canvas: HTMLCanvasElement, img: HTMLImageElement, map: 
   const at = gl.getAttribLocation(program, "p");
   gl.enableVertexAttribArray(at);
   gl.vertexAttribPointer(at, 2, gl.FLOAT, false, 0, 0);
-  const texture = (unit: number, name: string, el: HTMLImageElement, premultiply: boolean) => {
+  const texture = (unit: number, name: string, el: TexImageSource, premultiply: boolean) => {
     gl.activeTexture(gl.TEXTURE0 + unit);
     const t = gl.createTexture();
     gl.bindTexture(gl.TEXTURE_2D, t);
@@ -52,9 +88,9 @@ export function makeWarp(canvas: HTMLCanvasElement, img: HTMLImageElement, map: 
     gl.uniform1i(gl.getUniformLocation(program, name), unit);
     return t;
   };
-  const picture = texture(0, "img", img, true);
+  const picture = texture(0, "img", fitted(img, w), true);
   texture(1, "map", map, false);
-  gl.uniform1f(gl.getUniformLocation(program, "asp"), canvas.width / canvas.height);
+  gl.uniform1f(gl.getUniformLocation(program, "asp"), img.naturalWidth / img.naturalHeight);
   gl.uniform2fv(gl.getUniformLocation(program, "wdir"), dir);
   const ug = gl.getUniformLocation(program, "gust");
   const up = gl.getUniformLocation(program, "phi");
@@ -73,7 +109,7 @@ export function makeWarp(canvas: HTMLCanvasElement, img: HTMLImageElement, map: 
       gl.activeTexture(gl.TEXTURE0);
       gl.bindTexture(gl.TEXTURE_2D, picture);
       gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, true);
-      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, el);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, fitted(el, w));
     },
     dispose() {
       gl.getExtension("WEBGL_lose_context")?.loseContext();

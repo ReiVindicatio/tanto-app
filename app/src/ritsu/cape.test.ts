@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { makeWind } from "./cape";
+import { drawWidth, makeWind } from "./cape";
 import { KITS } from "./kits";
 
 describe("風", () => {
@@ -26,5 +26,18 @@ describe("風", () => {
     const live = Object.entries(KITS).filter(([, k]) => k.live);
     expect(live.map(([id]) => id).sort()).toEqual(["diva", "hakama", "hoshiyomi", "nocturne", "rock", "yukihana"]);
     expect(new Set(live.map(([, k]) => k.live?.signature)).size).toBe(live.length);
+  });
+});
+
+describe("drawWidth（風を受ける絵を描く幅）", () => {
+  it("画面に出す大きさ（CSS の幅 × 画面の細かさ）。PC の等倍なら元の絵よりずっと小さく", () => {
+    expect(drawWidth(160, 1, 780)).toBe(160);
+    expect(drawWidth(160, 3, 780)).toBe(480);
+    expect(drawWidth(160.4, 1.25, 780)).toBe(201);
+  });
+  it("元の絵より大きくはしない。大きさが分からないときは元のまま", () => {
+    expect(drawWidth(400, 3, 780)).toBe(780);
+    expect(drawWidth(0, 1, 780)).toBe(780);
+    expect(drawWidth(160, 0, 780)).toBe(780);
   });
 });
