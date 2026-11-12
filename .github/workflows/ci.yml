@@ -7,7 +7,8 @@ on:
 jobs:
   pipeline:
     # 段階2以降を保存済みファイルだけから作り直し、コミット済みの結果と差分がないことを確かめる
-    runs-on: ubuntu-latest
+    # ubuntu-latest（2026-10 から Ubuntu 26.04）には Python 3.9 がないので、24.04 に固定する
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
